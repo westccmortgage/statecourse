@@ -29,13 +29,16 @@
 - Module NC-05 now separates the broker's independent material-fact duty from the owner disclosure
   form, uses the current federal lead, radon, asbestos, CERCLA, Clean Air Act and Clean Water Act
   authorities, and retains NCAR Form 2A9-T as an honest unresolved Required Activity.
+- Module NC-06 now restores the missing deed-type Required Activity and uses current North Carolina
+  statutes for co-ownership, periodic-tenancy notice, mechanics' liens, condominium transactions,
+  recording, intestacy and adverse possession. Parallel stale statements in Module NC-15 were corrected.
 
 - Official-source Phase 0 covers personal broker licensure, instructor qualification, education
   provider, education director, PPD, course approval, distance delivery, completion/proctoring,
   reporting, records, renewals, postlicense/CE products, foreign-LLC route and current market scale.
 - The machine manifest records authority class, exact URL, revision/effective date, retrieval date,
   pinpoint, evidence, supersession check and source-integrity state for each source.
-- Twenty-one claims are separated into confirmed, interpretation and regulator-confirmation states.
+- Thirty-three claims are separated into confirmed, interpretation and regulator-confirmation states.
 - Filing index, provider/course datasheets, personal path, instructor dossier, regulator email draft,
   PPD draft, distance control plan, course guide, records SOP, timing report, product roadmap and
   certificate specimen are prepared.
@@ -71,9 +74,9 @@ the record; equivalency therefore needs NCREC preclearance.
 Rule 58H .0401 measures self-paced course time at 225 words per minute plus actual audio/video
 duration. Rule .0101(7) defines an instructional hour as 50 instructional minutes plus 10 break
 minutes, so the 72-hour non-exam syllabus allocation is 3,600 actual instructional minutes, not the
-previously reported 4,320. The sixteen curriculum files contain 55,174 audit-tokenized words, or at
-most 245.22 minutes/4.09 elapsed hours; they include nonstudent author notes. Adding the entire
-question-bank source gives a generous 336.02-minute ceiling including code. Neither is validated
+previously reported 4,320. The sixteen curriculum files contain 56,334 audit-tokenized words, or at
+most 250.37 minutes/4.17 elapsed hours; they include nonstudent author notes. Adding the entire
+question-bank source gives a generous 341.50-minute/5.69-hour ceiling including code. Neither is validated
 student time. There is no media ledger. Planned “72-hour” module labels prove nothing. The course
 must not be submitted or advertised as 75 hours until its student-visible content and unit/media
 ledger actually demonstrate the required time.
@@ -140,5 +143,5 @@ The branch was first pushed at commit `748a8bbde4adcaa39ba325c8fb6235bfd6887d50`
 Carolina work continues on the same remote branch. The strict `--require-source-capture` command
 intentionally exits 1 while sources are incomplete;
 the normal command checks structure and reports source failures without claiming a lock. These are
-offline as-of-capture checks; re-fetch before filing. Current focused tests: 84/84 passing; complete
-repository build and test suite: 1,292/1,292 passing.
+offline as-of-capture checks; re-fetch before filing. Current focused tests: 85/85 passing; complete
+repository build and test suite: 1,293/1,293 passing after the Module NC-06 slice.

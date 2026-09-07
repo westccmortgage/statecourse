@@ -469,14 +469,39 @@ test("no module claims approval or offers credit", () => {
 test("the North Carolina departures from the national rules are stated in the curriculum", () => {
   const six = readModule("module-06");
   const fifteen = readModule("module-15");
-  /* Survivorship is NOT automatic in a NC joint tenancy. */
-  assert.match(fifteen, /In NC, survivorship not automatic/i);
-  assert.match(fifteen, /Attorney must draft exact wording/i);
-  /* But it IS automatic, unwaivable and will-overriding in a tenancy by the entirety. */
-  assert.match(fifteen, /Automatic right of survivorship that cannot be waived; overrides a will/i);
-  /* Unequal interests are permitted. */
-  assert.match(fifteen, /percentage of ownership interest can be unequal/i);
-  assert.match(six, /survivorship/i);
+  assert.match(fifteen, /tenancy in common is the default/i);
+  assert.match(fifteen, /expressly unequal ownership shares are permitted/i);
+  assert.match(fifteen, /the conveyance must create it under G\.S\. 41-71/i);
+  assert.match(fifteen, /G\.S\. 41-63 expressly lists ways to end the estate/i);
+  assert.match(six, /written joinder of the other spouse/i);
+  assert.doesNotMatch(`${six}\n${fifteen}`, /Automatic right of survivorship that cannot be waived/i);
+});
+
+test("Module NC-06 restores the deed activity and reconciles ownership, leases, liens and condominiums", () => {
+  const six = readModule("module-06");
+  const fifteen = readModule("module-15");
+  for (const required of [
+    /one month.*year-to-year/is,
+    /seven days.*month-to-month/is,
+    /two days.*week-to-week/is,
+    /G\.S\. 41-72.*equal unless the instrument provides otherwise/is,
+    /120 days after the claimant's last furnishing/i,
+    /180-day.*commence enforcement/i,
+    /public offering statement.*seven-calendar-day/is,
+    /G\.S\. 47C-4-109.*no statutory cancellation right/is,
+    /General warranty deed/i,
+    /Special warranty deed/i,
+    /Quitclaim deed/i,
+    /Bargain-and-sale deed/i
+  ]) assert.match(six, required);
+  const activities = NORTH_CAROLINA_REQUIRED_ACTIVITIES.filter((activity) => activity.section === "VI");
+  assert.equal(activities.length, 3);
+  assert.equal(activities.every((activity) => activity.status === "delivered" && activity.evidencePath), true);
+  assert.match(activities[2].activity, /differentiate the deed types/i);
+  assert.doesNotMatch(six, /assessment determining whether the student can differentiate between the types of hybrid ownership/i);
+  assert.match(fifteen, /Notice to Lien Agent.*does not.*itself\s+serve or perfect/is);
+  assert.match(fifteen, /no later than 15 days after first furnishing/i);
+  assert.doesNotMatch(fifteen, /All service providers must \*\*file a Notice to Lien Agent/i);
 });
 
 test("the two contract-structure facts a broker cannot get wrong are stated in Module NC-11", () => {

@@ -30,6 +30,8 @@ Types and Transfers.
 11. Describe special assessments and lis pendens.
 12. Name the methods of transferring title. *(Level 1)*
 13. State the essential elements of a valid deed and explain why recordation is not one of them.
+14. Distinguish general warranty, special warranty, quitclaim, bargain-and-sale, and special-purpose
+    deeds by the warranties and authority actually shown in the instrument.
 
 ---
 
@@ -95,9 +97,12 @@ HOW THEY END.**
 - **Tenancy (or estate) at sufferance.** **Instructor Note:** *"**Unlike trespassing, this estate began
   legally.**"* A holdover — possession that started lawfully and outlived its right.
 
-**This course states no North Carolina notice period for any of them**, because the governing statutes
-were not read from primary text for this project. **Which estate exists** is what the Commission asks a
-student to identify; **what notice ends it goes to the lease and to counsel.**
+**North Carolina periodic-tenancy notice rule.** Current G.S. 42-14 sets the statutory minimum notice
+to quit at **one month before the end of the current rental year** for a year-to-year tenancy,
+**seven days** for month-to-month, and **two days** for week-to-week. Rental of only a manufactured-home
+space has a separate **60-day** minimum before the end of the current rental period. These are default
+statutory rules for the tenancies the section names; the lease, another applicable statute, and counsel
+still control a particular termination or eviction.
 
 ### A.5 Leases
 
@@ -134,8 +139,10 @@ breakpoint is the sales figure at which the percentage rent alone would equal th
 > lease**. Tenant has **Implied Covenant of Quiet Enjoyment**; **lessor has no right to enter premises
 > during lease term unless granted in the lease**."*
 
-**Read the last clause.** A landlord's right of entry is **not implied** — it exists only if the lease
-grants it.
+The last clause is the Syllabus's general lease instruction, not a complete North Carolina entry code.
+Do not convert it into an absolute answer for emergencies, repairs, court process, or another statute.
+For an actual property, read the lease and current law and obtain legal advice where the right of entry
+is disputed.
 
 **Assignments and subleases:** **assignment**; **sublease**; **assignee versus assignor**;
 **novation**; **renewal and termination**. And two stated rules:
@@ -165,16 +172,21 @@ item.
 
 **Joint tenancy:**
 
-- **Title must intentionally create joint tenancy.**
-- **Four required unities — possession, interest, time, title — must be equal.**
-- **Right of survivorship.** **And here is the North Carolina point, transcribed from the Syllabus:
-  survivorship is "Automatic in states other than NC."**
-- **Termination:** by agreement; by **partition suit**.
+- **Tenancy in common is the default** when a conveyance leaves two or more people owning property.
+- Under current G.S. 41-71, the instrument creates a **joint tenancy with right of survivorship** when
+  it expresses that intent. The statute recognizes several phrases, including “joint tenants,” “joint
+  tenancy,” and “with right of survivorship,” unless the instrument provides otherwise.
+- Under G.S. 41-72, interests are **equal unless the instrument provides otherwise**. North Carolina
+  therefore permits an expressly stated unequal percentage; the old “four equal unities” mnemonic is
+  not a safe statement of current North Carolina law.
+- G.S. 41-73 lists collective and unilateral termination events, including specified conveyances or
+  instruments and a partition petition. A unilateral self-conveyance that expresses termination must
+  be recorded before the joint tenant's death.
 
-**That parenthesis is the most important six words in Part B for a North Carolina licensee.** In most
-states a joint tenancy carries survivorship automatically. **In North Carolina it does not — the
-survivorship must be intentionally created.** A deed that would create survivorship elsewhere may not
-here.
+**North Carolina's transaction point:** survivorship is not supplied merely because multiple people
+take title. The conveyance must create it under G.S. 41-71. The statute, amended in 2025, now states
+which wording expresses that intent; the broker still routes drafting and title advice to the closing
+attorney.
 
 **Which is emphatically not a licensee's judgment to make.** How a buyer takes title is a legal and tax
 question for counsel. **What a licensee must do is know that the question exists, raise it early, and
@@ -182,18 +194,25 @@ route it** — and never assure a buying couple that "joint tenancy means the su
 
 **Tenancy by the entirety:**
 
-- **Available only to legally married couples in some states.**
+- **Available to two people legally married to each other.**
+- Under G.S. 41-56, a conveyance to spouses creates the estate **unless the conveyance expresses a
+  contrary intention**.
 - **Instructor Note:** *"Other types of ownership **do not automatically convert** to tenancy by the
-  entirety if property owners marry each other later."*
+  entirety if property owners marry each other later."* Current G.S. 41-82(c) confirms that result for
+  cotenants who later marry unless a separate instrument changes the estate.
 - **Equal undivided interest.**
-- **Four required unities must be equal.**
-- **Automatic right of survivorship that CANNOT BE WAIVED; overrides a will.**
-- **Conveyance requires the signatures of BOTH spouses.** **Instructor Note:** *"A spouse **cannot
-  convey ½ interest**."*
-- **Termination:** by agreement; **divorce**; **death of a spouse**.
+- **Survivorship while the estate remains in place.** At death, G.S. 41-64 gives the survivor title and
+  leaves no descendable share in the deceased spouse, subject to the statute's slayer exception.
+- **Neither spouse may unilaterally sell, lease, mortgage, transfer, convey, or encumber the estate.**
+  G.S. 41-58 generally requires the written joinder of the other spouse, subject to its listed statutory
+  exceptions.
+- **It can be terminated.** G.S. 41-63 lists joint sale, voluntary partition, specified involuntary
+  transfers, conveyance from one spouse to the other, absolute divorce, and forfeiture; death is treated
+  separately in G.S. 41-64. “Cannot be waived” must not be taught as though spouses can never end it.
 
-**"Overrides a will" and "conveyance requires both signatures" are the two consequences that reach a
-transaction.** A listing taken from one spouse on entirety property cannot be closed on that signature.
+**The practical consequences:** a will cannot transfer the deceased spouse's former share while the
+estate survives to death, and one spouse ordinarily cannot convey or encumber the estate alone. A
+broker verifies title and signatories with the closing attorney rather than drafting an ownership result.
 
 > **Required Activity — prescribed by the Commission:** *"Provide an assessment to determine if student
 > can **differentiate between these types of hybrid ownership**."*
@@ -207,11 +226,20 @@ take on **additional responsibilities by agreement**. **Governed by covenants an
 
 **Condominium ownership:**
 
-- **Governed by horizontal property acts.**
-- **The individual unit owner holds fee simple "title to airspace" for a single storey unit.**
-- **Unit owners own an undivided share of common elements**, held **as tenants in common without right
-  of partition**, with **periodic fees/assessments** and **possible exclusive use of limited common
-  elements**.
+- **Governed in North Carolina by Chapter 47C** for condominiums created under that Act, with older or
+  specially situated projects requiring document and counsel review.
+- A unit is real estate whose boundaries are fixed by the declaration. “Title to airspace” is a useful
+  classroom picture, but it is not a substitute for those recorded boundaries.
+- The unit owner also owns the unit's allocated undivided interest in the common elements. Chapter 47C
+  generally prevents partition of the common elements while the condominium exists and recognizes
+  limited common elements allocated for fewer than all units.
+- For a sale requiring a **public offering statement** under G.S. 47C-4-102(c), G.S. 47C-4-108 gives
+  the purchaser an absolute **seven-calendar-day** cancellation period following execution and bars
+  conveyance during that period. This is not correctly summarized as “every new condo.”
+- For an ordinary resale not requiring a public offering statement and not exempt under
+  G.S. 47C-4-101(b), G.S. 47C-4-109 requires the unit owner to provide, before conveyance, a statement
+  of monthly common expenses and other owner fees. That section supplies **no statutory cancellation
+  right**; any contractual right must be read from the actual contract.
 - **Instructor Note:** *"Nationally, a **townhouse is generally a multi-story condo**."*
 
 **Cooperative ownership** *(Level 1)*:
@@ -228,8 +256,10 @@ take on **additional responsibilities by agreement**. **Governed by covenants an
 - **The interest may be leasehold or deeded ownership.**
 - **Buyers receive the right to occupy for a specific time period.**
 
-*(North Carolina's Timeshare Act is named in Section XV and is taken up in Module NC-15, where the gap
-is recorded.)*
+**Townhouse is a physical description, not an ownership form.** A townhouse may be a condominium,
+planned community, or another structure. Chapter 47C or 47F applies from the recorded legal regime and
+statutory coverage, not from the building's appearance. *(North Carolina's Timeshare Act is named in
+Section XV and is taken up in Module NC-15, where the gap is recorded.)*
 
 ### B.4 Trusts *(Level 1 — this subtopic)*
 
@@ -280,13 +310,15 @@ covenants** — both of which run to the new owner.
 - The general rule is **order of recordation**.
 - **Exceptions to the "pure race system":**
   - **Real property and special assessment liens hold superior priority.**
-  - **Mechanic's liens — effective from the 1st day of providing services or materials.**
+  - **A perfected claim of lien on real property relates back to the claimant's first furnishing of
+    labor or materials at the site** under G.S. 44A-10 and -11.
   - **Voluntary subordination of a superior lien.**
 
-**The mechanic's lien exception is the dangerous one and the Commission states it plainly: effective
-from the first day services or materials were provided**, not from the day it was filed. So a claim
-that is not yet in the records can outrank one that is — which is why **recent or ongoing construction
-is a question asked at listing**, routed to the closing attorney.
+The relation-back point matters, but it does **not** mean every contractor automatically has an
+enforceable first-day lien. The statutory service, filing, and enforcement steps still control.
+G.S. 44A-12 permits filing no later than **120 days after the claimant's last furnishing**, and
+G.S. 44A-13 sets a separate **180-day** outside limit to commence enforcement. Recent or ongoing
+construction is therefore a listing and closing question routed to the closing attorney.
 
 **Writ of attachment** *(Level 1)*.
 
@@ -313,9 +345,10 @@ is a question asked at listing**, routed to the closing attorney.
 **The note on wills matters and it connects to B.2.** Tenancy by the entirety's survivorship **overrides
 a will**, and a survivorship clause in a deed is not defeated by a testamentary gift.
 
-**This course states no North Carolina intestate share, adverse possession period or foreclosure
-procedure**, because NCGS Chapter 29 and North Carolina's foreclosure and limitations provisions were
-not read from primary text for this project.
+Current Chapter 29 supplies the intestate succession framework. It distinguishes the surviving
+spouse's share under G.S. 29-14 from the shares of other heirs under G.S. 29-15 and applies a 120-hour
+survival rule through G.S. 29-13. A broker identifies intestacy and routes the actual heir and share
+determination to the estate attorney. Foreclosure procedure is outside this module.
 
 ---
 
@@ -352,6 +385,24 @@ Note too what is **not** essential: **the grantee's signature**, **consideration
 **a seal**, **witnesses**, and **acknowledgement** — though acknowledgement is what makes an instrument
 recordable in practice.
 
+### D.3 Deed types — the missing required-activity instruction
+
+The deed type changes the grantor's promises; recording does not upgrade those promises:
+
+| Deed | What the student must distinguish |
+|---|---|
+| **General warranty deed** | The grantor conveys the described estate with title covenants reaching beyond the grantor's own period of ownership. It offers the broadest ordinary deed warranty, but still does not replace a title search or policy. |
+| **Special warranty deed** | The grantor limits title covenants to claims arising by, through, or under that grantor. It does not warrant the entire earlier chain of title. |
+| **Quitclaim deed** | Conveys whatever present interest, if any, the grantor has, without promising that the grantor owns the property or that title is clear. It does not release a mortgage debt or make a concealed “subject-to” transaction safe. |
+| **Bargain-and-sale deed** | Indicates a conveyance for value but, without express warranties, does not supply the broad covenants of a general warranty deed. Read the instrument instead of deciding from its caption. |
+| **Special-purpose deed** | Trustee's, executor's, administrator's, guardian's, commissioner's, and similar deeds depend on the signer’s legal authority and the governing proceeding. Refer authority and drafting questions to the attorney. |
+
+**Required deed-classification exercise.** For each instrument, identify (1) who signs and under what
+authority, (2) the estate described, (3) the warranties actually stated, (4) whether delivery and
+acceptance occurred, and (5) whether it has been recorded for third-party priority. A recorded
+quitclaim deed is still a quitclaim deed; a general warranty deed does not become valid against a
+prior protected interest merely because its caption says “general warranty.”
+
 ---
 
 ## Required Activities in this section — all three must be completed
@@ -359,8 +410,7 @@ recordable in practice.
 1. **Real world examples of each type of estate**, noting that **leasehold estates differ in how they
    end**. *(A.1)*
 2. **Explain the real world use of each type of lease.** *(A.5)*
-3. **An assessment determining whether the student can differentiate between the types of hybrid
-   ownership** — condominium, cooperative and time share. *(B.2/B.3)*
+3. **An assessment determining whether the student can differentiate the deed types.** *(D.3)*
 
 ## Module NC-06 engagement check
 
@@ -375,12 +425,14 @@ Commission's, under Commission Rule 58H .0207 as the Syllabus quotes it.
 Drawn from **Section VI** of the Commission's Prelicensing Course Syllabus, March 2024 Edition amended
 May 2026, read on 2026-08-20. Every Instructor Note and Required Activity above is **transcribed from
 the Syllabus** — including the statement that the joint tenancy right of survivorship is *"Automatic in
-states other than NC"*, the entirety rules on waiver and on both spouses' signatures, the mechanic's
-lien priority date, the water rights note, the trust routing, and the deed recordation note.
+states other than NC"*, the entirety and deed notes, the mechanic's-lien priority concept, the water
+rights note, the trust routing, and the deed recordation note. Where that shorthand conflicts with or
+overstates current statutory text, the current statute is taught and the conflict is identified.
 
-**Not read, and therefore stated nowhere in this module:** **NCGS Chapter 29**, intestate succession;
-**NCGS Chapter 93A**; **21 NCAC Chapter 58** in its own text; North Carolina's condominium, timeshare,
-landlord-tenant, mechanic's lien, foreclosure and limitations provisions; and the **Connor Act** and
-**Marketable Title Act**, which Section XV names and Module NC-15 records. **No notice period, intestate
-share, lien filing deadline, adverse possession period or recording rule is stated.** The percentage
-lease figures are invented for arithmetic and are not market data.
+**Current primary text read on September 7, 2026:** Chapter 41 Articles 5-7 (tenancy by the entirety,
+joint tenancy, tenancy in common); G.S. 42-14 (periodic-tenancy notice); Chapter 44A §§44A-10 through
+-13 (claim relation-back, perfection, filing and enforcement); Chapter 47C Article 4 (condominium
+purchaser protection); G.S. 47-18 (recording priority); and Chapter 29 Articles 1-2 (intestacy).
+**Still not read for this module:** the current Timeshare Act, Chapter 47F in full, foreclosure law,
+special-purpose deed statutes, and local instruments. The percentage-lease figures are invented for
+arithmetic and are not market data.

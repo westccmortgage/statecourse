@@ -1,7 +1,7 @@
 # North Carolina official-source ledger
 
 **Control date:** 2026-09-07
-**Manifest:** `NC-PHASE0-2026-09-07-v4`
+**Manifest:** `NC-PHASE0-2026-09-07-v5`
 **Regulatory status:** Not approved. Enrollment and credit delivery are closed.
 
 The machine-readable controlling record is
@@ -47,6 +47,11 @@ No commercial school, law-firm summary, aggregator, or search snippet is control
 | Radon and asbestos | EPA; NC DHHS | current mitigation recommendation, condition/disturbance risk, accredited-professional route | [EPA radon](https://www.epa.gov/radon/what-epas-action-level-radon-and-what-does-it-mean), [EPA asbestos](https://www.epa.gov/asbestos/what-are-health-risks-if-i-have-asbestos-my-home-building-apartment-or-school), [NC DHHS asbestos](https://epi.dph.ncdhhs.gov/asbestos/ahmp.html) |
 | CERCLA and environmental inquiry | EPA | current-owner exposure, landowner protections, AAI before acquisition | [Liability protections](https://www.epa.gov/enforcement/superfund-landowner-liability-protections), [All Appropriate Inquiries](https://www.epa.gov/brownfields/brownfields-all-appropriate-inquiries) |
 | Air, water and underground tanks | EPA; NC DEQ | federal frameworks and fact-specific state tank route | [Clean Air Act](https://www.epa.gov/laws-regulations/summary-clean-air-act), [Clean Water Act](https://www.epa.gov/laws-regulations/summary-clean-water-act), [NC DEQ UST rule](https://www.deq.nc.gov/waste-management/dwm/ust/law-rules-memos/15a-ncac-2n) |
+| Co-ownership estates | G.S. Chapter 41 Articles 5-7 | creation, shares, control, survivorship, termination | [Entireties](https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/ByArticle/Chapter_41/Article_5.html), [Joint tenancy](https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/ByArticle/Chapter_41/Article_6.html), [Tenancy in common](https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/ByArticle/Chapter_41/Article_7.html) |
+| Periodic tenancy notice | G.S. 42-14 | year, month, week and manufactured-home-space periods | [§42-14](https://www.ncleg.gov/enactedlegislation/statutes/html/bysection/chapter_42/gs_42-14.html) |
+| Mechanics' liens | G.S. Chapter 44A §§ 44A-10 through -13 | lien-agent designation/notice, relation-back, perfection, filing and enforcement | [Chapter 44A](https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/ByChapter/Chapter_44A.html) |
+| Recording, intestacy and adverse possession | G.S. 47-18; Chapters 29 and 1 | recording priority, succession framework, 7/20-year periods | [§47-18](https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_47/GS_47-18.html), [Chapter 29](https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/ByChapter/Chapter_29.html), [Chapter 1](https://www.ncleg.gov/enactedlegislation/statutes/html/bychapter/chapter_1.html) |
+| Condominium purchaser protection | G.S. Chapter 47C Article 4 | public-offering cancellation and ordinary resale statement | [Article 4](https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/ByArticle/Chapter_47C/Article_4.html) |
 
 ## Verification limitations and conflict resolution
 
@@ -77,6 +82,13 @@ recommendation applies at 4 pCi/L or more rather than only above 4; and North Ca
 accreditation terminology for covered asbestos professionals. It also quarantines the Syllabus's stale
 $750 state and $32,500 federal lead-penalty figures. The current NCAR Form 2A9-T remains unobtained, so
 the Commission's specific Required Activity is still outstanding.
+
+Module NC-06 was reconciled on September 7 to current co-ownership, periodic-tenancy, mechanics'-lien,
+condominium, recording, intestacy and adverse-possession statutes. The review restored the missing
+deed-type Required Activity and corrected three misleading shortcuts: equal interests are not mandatory
+for an expressly unequal joint tenancy; tenancy by the entirety has statutory lifetime termination
+routes; and Chapter 47C's seven-day cancellation trigger is the public-offering-statement transaction,
+not physical “newness” by itself.
 
 The live RELINC replaced April 2025 at the same Pearson URL. Its April 2026 edition now agrees with
 Rule 58A .0302 on $105 application and publishes $53 single-section / $63 comprehensive exam fees

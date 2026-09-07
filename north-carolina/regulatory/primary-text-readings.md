@@ -376,6 +376,37 @@ rules or the remaining federal deduction/exchange provisions. Those remain expli
 The current NCAR Form 2A9-T remains unobtained. The federal statute, regulation and HUD/EPA form do not
 substitute for the Commission's specific Required Activity.
 
+## Module NC-06 reconciliation — current primary text read 2026-09-07
+
+- **Chapter 41, Articles 5-7:** tenancy in common is the ordinary multiple-owner default; a joint
+  tenancy with right of survivorship requires expressed intent but may carry expressly unequal shares;
+  the current statute enumerates collective and unilateral termination events. A conveyance to spouses
+  presumptively creates tenancy by the entirety unless contrary intent appears; joinder, lifetime
+  termination events, and the survivorship consequence at death are separate rules.
+- **G.S. 42-14:** one month for year-to-year, seven days for month-to-month and two days for
+  week-to-week notice to quit; rental of only a manufactured-home space has a 60-day rule.
+- **Chapter 44A §§44A-10 through -13:** a covered $40,000 improvement generally requires owner
+  designation of a lien agent, subject to the narrow existing owner-occupied-dwelling exception in
+  §44A-11.1(a). Timely claimant notice protects the positions described in §44A-11.2(l)-(m), but the
+  notice does not itself perfect a claim. A perfected claim relates back to first furnishing; filing and
+  enforcement outside limits are 120 and 180 days after last furnishing.
+- **Chapter 47C Article 4:** the seven-calendar-day cancellation right follows a transaction requiring
+  a public offering statement under §§47C-4-102(c) and -108. An ordinary nonexempt resale receives the
+  §47C-4-109 fee statement, which supplies no statutory cancellation right.
+- **G.S. 47-18:** the listed land instruments gain priority against protected lien creditors and
+  purchasers for value upon registration in the county where the land lies; registration order
+  generally controls.
+- **Chapter 29 Articles 1-2:** identifies intestacy, escheat, the 120-hour survival rule, and separate
+  statutory shares for the surviving spouse and other heirs; the broker routes the actual determination.
+- **G.S. 1-38 and 1-40:** seven years under color of title and 20 years under known and visible
+  boundaries are the principal adverse-possession periods; disabilities and all elements still matter.
+
+This review found four course defects: the deed-type Required Activity had been replaced by an
+unprescribed hybrid-ownership activity; the four-equal-unities statement contradicted §41-72; the
+entireties “cannot be waived” shorthand hid statutory termination routes; and “new condo” was used as
+the seven-day trigger instead of the public-offering-statement transaction. Modules NC-06 and NC-15 and
+their assessments now carry the current distinctions.
+
 ### Original curriculum gaps — current Phase 0 disposition
 
 Named explicitly, because an unnamed gap becomes an invented fact. **The North Carolina gap list is
@@ -410,12 +441,13 @@ documents rather than a substitute for them.**
   stated.
 - **The Real Estate Agent Safety Guide.**
 - **The Residential Property and Owners' Association Disclosure Statement (RPOADS)**, the **Tenant
-  Security Deposit Act**, the **Vacation Rental Act**, the **Connor Act**, the **Marketable Title Act**,
+  Security Deposit Act**, the **Vacation Rental Act**, the **Marketable Title Act**,
   the **Timeshare Act**, the **Unfair and Deceptive Trade Practices Act**, and North Carolina's
   **statute of frauds**, **onsite septic**, **street disclosure** and **subdivision** provisions — all
-  named in Sections XIV and XV. Except for the current lead-based-paint provisions now reconciled in
-  Module NC-05, these sources remain unread. No requirement, deadline, form, exemption or figure from
-  an unread source is treated as current law.
+  named in Sections XIV and XV. These sources remain unread. The Connor Act, cited co-ownership,
+  periodic-tenancy notice, condominium purchaser-protection, mechanics'-lien, intestacy and adverse-
+  possession provisions are now reconciled in Module NC-06. No requirement, deadline, form, exemption
+  or figure from an unread source is treated as current law.
 - **The full text of Sections II through VII and IX through XVI of the Syllabus** was extracted and is
   available, but this readings file transcribes in full only the front matter, the hour table, the
   section and item table, the Instructional Levels, the completion standards and Section VIII. The

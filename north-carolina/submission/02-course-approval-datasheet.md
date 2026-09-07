@@ -27,7 +27,7 @@
 | hardware/software | PPD/control plan | exact supported matrix missing |
 | technical support | PPD/control plan | contact/SLA missing |
 | reviewer hardware/software | control plan | access package missing |
-| 225-wpm/media time outline | timing report | upper bound 245.22 actual minutes of source text vs 3,600 required instruction minutes; student time unvalidated |
+| 225-wpm/media time outline | timing report | upper bound 250.37 actual minutes of source text vs 3,600 required instruction minutes; student time unvalidated |
 
 The course may not be offered, advertised, or represented as approved or potentially approved before
 written approval. Even after provider certification, course approval and self-paced delivery approval

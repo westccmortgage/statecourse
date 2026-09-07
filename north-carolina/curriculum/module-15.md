@@ -19,18 +19,16 @@ category in the course.*
 > ### A submission gate stated at the top of this module
 >
 > This section is a list of **twenty-odd North Carolina statutes and Commission rules cited by number**.
-> **This project has obtained none of their texts** — the hosts carrying the North Carolina General
-> Statutes and the North Carolina Administrative Code are outside this environment's egress allowlist, as
-> recorded in `north-carolina/regulatory/primary-text-readings.md`.
+> Modules NC-04 through NC-06 and the related portions below have now been reconciled to current
+> primary text. Many other authorities named by this section remain unread and are listed at the end.
 >
-> **Every statement below is transcribed from the Commission's own Syllabus**, which was obtained and
-> read, and **every statutory citation printed here is the Syllabus's citation, reproduced so the
-> instructor knows where to go.** Where the Syllabus names a subtopic without stating its content — the
+> Syllabus quotations remain visibly marked, and current statutory text controls when it differs.
+> Where the Syllabus names a subtopic without stating its content — the
 > Timeshare Act's escrow requirements, the Marketable Title Act, the RPOADS exemptions — **this module
 > names the subtopic and routes to the statute rather than inventing the answer.**
 >
-> **Obtaining these statutes and rules, and completing the named-but-unstated subtopics from their own
-> text, is a submission gate for this course.**
+> **Obtaining the remaining statutes and rules, and completing the named-but-unstated subtopics from
+> their own text, is still a submission gate for this course.**
 
 ## Learning objectives
 
@@ -60,37 +58,42 @@ That note is an examination instruction. The student must learn **two** versions
 national section tests, and the North Carolina rule the state section tests. Module NC-06 introduced this;
 here it is completed.
 
-- ***"Title must intentionally create joint tenancy."***
-- **Four required unities/elements** — *"possession, interest, time, title."*
-  - **Note:** *"**In NC, percentage of ownership interest can be unequal, if clearly stated in title.**"*
-- **Right of survivorship:**
-  - ***"In NC, survivorship not automatic."***
-  - ***"Attorney must draft exact wording in title required for right of survivorship."***
-- **Termination:** *by agreement*; *partition suit.*
+- **Current G.S. 41-71:** tenancy in common is the default; a joint tenancy with right of survivorship
+  exists when the instrument expresses that intent. The statute now recognizes phrases including
+  “joint tenants,” “joint tenancy,” and “with right of survivorship” unless the instrument provides
+  otherwise.
+- **Current G.S. 41-72:** interests are equal unless the instrument provides otherwise; expressly
+  unequal ownership shares are permitted.
+- **Current G.S. 41-73:** specified collective or unilateral conveyances and instruments, and a
+  partition petition, may terminate survivorship. A unilateral self-conveyance must express the intent
+  and be recorded before the joint tenant's death.
 
 Two North Carolina departures from the common form, and both are examinable:
 
-**Unequal interests are permitted** if the title says so — even though "interest" is one of the four
-unities. And **survivorship is not automatic**; it must be created by exact language drafted by an
-**attorney**. Elsewhere, a joint tenancy carries survivorship by definition. In North Carolina it does
-not, and a student who assumes it does will answer the state section wrongly.
+The Syllabus's four-unities mnemonic is useful history, but **equal interests are not a safe statement
+of current North Carolina law**. Survivorship is not supplied merely because two people own together;
+the conveyance must create it under G.S. 41-71. An attorney drafts the instrument. A broker identifies
+the objective and routes it, rather than inventing language or promising the legal result.
 
 Note also who does the drafting: **an attorney.** This is the drafting prohibition from Module NC-09
 appearing in the ownership context. A broker does not supply survivorship language.
 
 ### A.2 Tenancy by the entirety
 
-- ***"Available only to legally married couples."***
-  - ***"In NC, this is default ownership for buyers married at the time of purchase."***
+- **Available to two people legally married to each other.**
+  - Under **G.S. 41-56**, a conveyance to spouses creates the estate unless the conveyance expresses a
+    contrary intention.
   - *"Buyer should **consult with a real estate attorney** to explore what ownership type is desired."*
   - ***"Other types of ownership do not automatically convert to tenancy by the entirety if property
     owners marry each other later."***
 - **Equal undivided interest.**
-- **Four required equal unities/elements** — *"possession, interest, time, title."*
-- ***"Automatic right of survivorship that cannot be waived; overrides a will."***
-- *"Conveyance requires **voluntary signatures of both spouses**."*
-  - **Note:** ***"A spouse cannot convey ½ interest."***
-- **Termination:** *by agreement*; *divorce*; *death of a spouse.*
+- **At death while the estate remains in place**, G.S. 41-64 gives title to the survivor and leaves no
+  descendable share in the deceased spouse, subject to the slayer exception.
+- Under G.S. 41-58, neither spouse generally may unilaterally sell, lease, mortgage, transfer, convey,
+  or encumber the estate; written joinder is required subject to the statute's listed exceptions.
+- G.S. 41-63 expressly lists ways to end the estate, including joint sale, voluntary partition,
+  specified involuntary transfers, conveyance from one spouse to the other, and absolute divorce.
+  Therefore “cannot be waived” must not be presented as “can never be terminated.”
 
 Set this against A.1 and the contrast is the examinable structure:
 
@@ -98,12 +101,13 @@ Set this against A.1 and the contrast is the examinable structure:
 |---|---|---|
 | Who may hold it | Anyone | **Legally married couples only** |
 | Interests | **May be unequal** if stated in title | **Equal undivided interest** |
-| Right of survivorship | ***Not automatic*** — attorney-drafted wording required | ***Automatic, cannot be waived, overrides a will*** |
+| Right of survivorship | Must be created by the instrument under G.S. 41-71 | Operates automatically at death while the estate remains in place |
 | Default for married buyers | No | ***Yes, if married at the time of purchase*** |
 
-**"Overrides a will"** is worth its own sentence. A spouse who devises entireties property to a third
-party devises nothing — survivorship takes it first. And the **conversion rule** runs one way only:
-buying as tenants in common and marrying afterwards does **not** convert the ownership.
+**A will does not displace the survivorship result while the entireties estate remains in place.** The
+deceased spouse then has no descendable share. The estate can nevertheless end during life through
+the events G.S. 41-63 lists. And the **conversion rule** runs one way only: buying as tenants in common
+and marrying afterwards does **not** convert the ownership.
 
 Module NC-12's spousal signature rule connects here. Because a spouse **cannot convey a half interest**,
 both spouses must sign the deed of trust even where only one signed the note.
@@ -118,8 +122,12 @@ Governed by **horizontal property acts, such as the North Carolina Condominium A
 - **Application**
 - **Developer's disclosure requirements**
 - **Public offering statement**
-- ***"Buyer's 7-day rescission period on purchase of new condo"***
-- ***"Resale certificate for resale condos; no right of rescission"***
+- **G.S. 47C-4-108:** for a sale in which G.S. 47C-4-102(c) requires delivery of a public offering
+  statement, the purchaser receives an absolute seven-calendar-day cancellation period after contract
+  execution and conveyance may not occur during it.
+- **G.S. 47C-4-109:** an ordinary nonexempt resale not requiring a public offering statement carries a
+  pre-conveyance statement of monthly common expenses and other owner fees, but that section supplies
+  no statutory cancellation right.
 
 Ownership structure:
 
@@ -130,11 +138,10 @@ Ownership structure:
   - *"Periodic fees/assessments charged to unit owners."*
   - *"Possible **exclusive use of limited common elements**."*
 
-Three points a broker uses constantly. **New condo: 7-day rescission. Resale condo: resale certificate,
-no rescission.** The buyer of a resale unit does not get the developer's cooling-off period, and a broker
-who tells them otherwise has misstated the Act. **Tenants in common *without* right of partition** — the
-ordinary tenancy in common carries a partition right; here it is removed, because a co-owner suing to
-partition the hallway would end the building.
+The seven-day rule turns on the seller and public-offering-statement requirement, not simply whether a
+unit feels “new.” An ordinary resale gets the statutory fee statement but no cancellation right from
+§47C-4-109; the actual contract may separately create one. **Common elements are not freely partitioned
+while the condominium exists**, because doing so would dismantle the legal regime.
 
 #### A.3.b Townhouse ownership
 
@@ -143,10 +150,9 @@ partition the hallway would end the building.
 - Common elements *"**owned by the HOA**"*, maintenance funded by periodic fees/assessments.
 - *"Most townhouse developments are subject to the **NC Planned Community Act [NCGS Chapter 47F]**."*
 
-The line between the two is **who owns what.** A condominium owner owns **airspace** and an **undivided
-share** of the common elements. A townhouse owner owns **land**, and the **HOA** owns the common
-elements. Different structures, different Acts — **47C** for condominiums, **47F** for planned
-communities.
+**Townhouse is a physical description, not a legal ownership form.** Some townhouse projects are
+condominiums; others are planned communities. The declaration, plat, deed, and statutory coverage —
+not the building's appearance — determine whether Chapter 47C, Chapter 47F, or another regime applies.
 
 ### A.4 Manufactured (factory built) housing *(Level 1 — this subtopic)*
 
@@ -703,24 +709,35 @@ will not support a septic system**, and **straight-piping**, which is also **ill
 
 **a. Mechanics' lien (materialman's lien):**
 
-> - *"On all NC residential or commercial construction projects **where the cost equals or exceeds
->   $40,000**"*
-> - *"**A lien agent must be appointed**"*
-> - *"**Owner-occupied single family residences are exempt**"*
-> - *"All service providers must **file a Notice to Lien Agent**"*
->   - *"Ability to file a mechanics' lien **within 120 days after last day of providing services or
->     materials**"*
->   - ***"Lien priority effective from 1st day of providing services or materials"***
+The Syllabus compresses several separate rules into four bullets. Current G.S. 44A-11.1 and -11.2
+require a more exact sequence:
 
-The last line is why this appears in a prelicensing course. **A mechanics' lien takes priority from the
-first day work began** — which can be **before** a deed of trust was recorded, and before a buyer ever
-saw the property. In a pure race state, this is the one lien that can beat the recording race, because its
-priority date is not its filing date.
+- The owner must designate a lien agent for a covered improvement when the undertaking costs
+  **$40,000 or more**, measured when the original building permit issues or, if no permit is required,
+  when the owner enters the improvement contract.
+- The designation exception is narrower than “all owner-occupied single-family residences.” It covers
+  an improvement to an **existing** single-family dwelling occupied by the owner as a residence and an
+  incidental accessory building or structure described by G.S. 44A-11.1(a).
+- For a covered improvement, a potential lien claimant ordinarily protects the ability to perfect and
+  the priority described in G.S. 44A-11.2(l)-(m) by making sure the lien agent receives a **Notice to
+  Lien Agent no later than 15 days after first furnishing**, or before the protected conveyance,
+  mortgage or deed-of-trust event specified by the statute. The rule contains fact-specific alternatives
+  and exceptions; it is not accurately stated as “all service providers must file.”
+- A Notice to Lien Agent is **not filed with the clerk** and, under G.S. 44A-11.2(j), does **not** itself
+  serve or perfect a Claim of Lien on Real Property or the other lien notices named there.
+
+A claimant who satisfies the statutory perfection requirements receives the relation-back rule: the
+perfected claim relates to the claimant's **first furnishing of labor or materials at the site**. That
+priority date can precede later-recorded interests, but the broker must not describe every construction
+bill as an automatically perfected first-day lien. G.S. 44A-12 permits a claim to be filed no later than
+**120 days after the claimant's last furnishing**, and G.S. 44A-13 requires an enforcement action no
+later than **180 days after last furnishing**. Lien-agent notice, claim service and filing, enforcement,
+priority, and discharge are distinct questions for the closing attorney.
 
 > **Required Activity, transcribed:** *"**Provide a timeline example of how mechanic's liens may take
-> priority over other recorded liens.**"* **Delivered** — worked as a dated sequence in this module, using
-> only the **$40,000 threshold**, the **120-day filing window** and the **first-day priority rule** stated
-> above, with all other dates supplied inside the example.
+> priority over other recorded liens.**"* **Delivered** — worked as a dated sequence in this module,
+> separating the covered-project/lien-agent step, timely notice, the **120-day filing window**, the
+> **180-day enforcement window**, and the perfected claim's first-furnishing relation-back rule.
 >
 > *(Source note: this Required Activity is printed at a page boundary in the Syllabus, adjacent to a second
 > Required Activity concerning commission and property management fee calculations. The lien timeline is
@@ -786,20 +803,26 @@ Drawn from **Section XV** of the Commission's Prelicensing Course Syllabus, Marc
 May 2026, read on 2026-08-20. Every Instructor Note, Required Activity, figure, citation and structural
 statement above is **transcribed from the Syllabus.**
 
+**Current primary text now read for the ownership and recording portions:** **Chapter 41 Articles 5-7,
+Chapter 47C Article 4, G.S. 47-18, Chapter 44A §§44A-10 through -13, G.S. 42-14, Chapter 29 Articles
+1-2, and G.S. 1-38 and 1-40.** These sources supersede any conflicting syllabus shorthand.
+
 **Not read in their own text, and therefore not the source of any statement in this module:** **NCGS
-Chapters 47B, 47C, 47E, 47F, 41A, 42A, 43, 45A, 93A** (including Article 4, the Timeshare Act) and
-**160D**; **NCGS 22-2, 25-9-313, 39-50, 42-14.2, 47-18, 47-20.6, 75-1.1, 105-164.3, 105-273, 136-102.6,
+Chapters 47B, 47E, 47F, 41A, 42A, 43, 45A, 93A** (including Article 4, the Timeshare Act) and
+**160D**; **NCGS 22-2, 25-9-313, 39-50, 42-14.2, 47-20.6, 75-1.1, 105-164.3, 105-273, 136-102.6,
 143-139.1, 143-143.9 and 14-395.1**; **21 NCAC 58A**, including **Rules .0019, .0114 and .0120**; **21
 NCAC 58B**, Sections **.0400, .0500 and .0600**; the **NCREC Residential Square Footage Guidelines**;
 **forms REC 4.22 (RPOADS) and REC 4.25 (MOG)**; the Commission's **Residential Subdivisions and Planned
 Communities** Q&A brochure; the **North Carolina Uniform Residential Building Code**; and the **federal
 Fair Housing Act** and **EPA lead-based paint regulations**.
 
-**The figures transcribed from the Syllabus and stated in this module are:** the **four unities**; the
-**7-day new condominium rescission**; **20-year and 7-year adverse possession**; the **3-year Statute of
+**The figures retained after current-law review are:** the Syllabus's **four-unities mnemonic**, with
+the current unequal-interest correction; the **7-calendar-day public-offering-statement condominium
+cancellation period**; **20-year and 7-year adverse possession**; the **3-year Statute of
 Frauds lease rule**; **1 year** for both fair housing enforcement routes; **5 separated times over 5
 years** for a timeshare; **treble damages** under NCGS 75-1.1; **R-13 walls, R-30 ceilings, R-19 floors**;
-the **$40,000** mechanics' lien threshold, the **120-day** filing window and **first-day** priority; and
+the **$40,000** lien-agent threshold, **15-day** notice timing, **120-day** filing window,
+**180-day** enforcement window and a perfected claim's first-furnishing relation-back rule; and
 **2 persons per permitted bedroom**. The Syllabus's **$750 per day** state and **$32,500 per day** EPA
 lead-paint figures are retained only as a documented curriculum conflict; current G.S. 130A-22(b3)
 supplies the state ceiling described above, and no stale federal amount is taught as current law.
