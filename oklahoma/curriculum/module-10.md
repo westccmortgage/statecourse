@@ -340,3 +340,25 @@ Committee's promulgated forms and every provision, deadline, contingency structu
 them; Oklahoma's escrow and trust account provisions; and Oklahoma's mineral title provisions. The
 structure of a purchase contract described here is general to residential practice, and how each element
 is implemented in the Oklahoma promulgated forms must be learned from the forms themselves.
+
+<!-- OK-SOURCE-SUPPLEMENT:START -->
+
+## Supplemental source review — 2026-09-06
+
+This required reading clarifies the existing topics; no additional clock-hour credit or regulator approval is claimed.
+
+### trust
+
+Related modules 10, §59.2 and 16, §90.1. Trust money belongs to the entitled party, not to the firm.
+Commingling and failure to account/remit are distinct concerns under 59 O.S. 858-312(16) and (6).
+OAC 605:10-13-1 requires bookkeeping that identifies ownership, receipts, disbursements and balances.
+If three separate ledgers hold $3,100, $2,400 and $1,200, their liability total is $6,700; an unrelated
+firm expense cannot properly reduce a client's balance. This arithmetic example prescribes no
+deadline or deposit rule. Reconcile the bank and transaction ledgers, investigate discrepancies and
+preserve records. For a disputed deposit, preserve funds and use authorized disposition procedures,
+including the applicable rule or interpleader route; do not decide a party's legal entitlement by
+preference or pay office expenses while waiting.
+
+Sources: [OREC License Code and Rules, as of November 1, 2025](https://oklahoma.gov/content/dam/ok/en/orec/documents/meetings/Nov%201%202025%20Oklahoma%20Real%20Estate%20Commission%20Code%20and%20Rules%20Book.pdf).
+
+<!-- OK-SOURCE-SUPPLEMENT:END -->

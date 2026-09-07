@@ -1,0 +1,2329 @@
+{
+  "version": "OK-FINAL-2026-09-06-v3",
+  "forms": [
+    {
+      "form": "A",
+      "items": 150,
+      "areaCounts": {
+        "OK-01": 4,
+        "OK-02": 4,
+        "OK-03": 7,
+        "OK-04": 4,
+        "OK-05": 8,
+        "OK-06": 6,
+        "OK-07": 6,
+        "OK-08": 6,
+        "OK-09": 7,
+        "OK-10": 6,
+        "OK-11": 6,
+        "OK-12": 6,
+        "OK-13": 8,
+        "OK-14": 9,
+        "OK-15": 11,
+        "OK-16": 7,
+        "OK-17": 10,
+        "OK-18": 7,
+        "OK-19": 7,
+        "OK-20": 5,
+        "OK-21": 6,
+        "OK-22": 10
+      },
+      "keyCounts": [
+        38,
+        38,
+        37,
+        37
+      ],
+      "uniquelyLongestCorrect": 55,
+      "topicCoverage": [
+        {
+          "topicId": "OK-01.01",
+          "objective": "Economic characteristics of real estate",
+          "itemIds": [
+            "OK-FINAL-A-001"
+          ]
+        },
+        {
+          "topicId": "OK-01.02",
+          "objective": "Supply and demand",
+          "itemIds": [
+            "OK-FINAL-A-002"
+          ]
+        },
+        {
+          "topicId": "OK-01.03",
+          "objective": "Market cycles",
+          "itemIds": [
+            "OK-FINAL-A-002"
+          ]
+        },
+        {
+          "topicId": "OK-01.04",
+          "objective": "Neighborhood and market analysis",
+          "itemIds": [
+            "OK-FINAL-A-003"
+          ]
+        },
+        {
+          "topicId": "OK-01.05",
+          "objective": "Investment and tax orientation",
+          "itemIds": [
+            "OK-FINAL-A-004"
+          ]
+        },
+        {
+          "topicId": "OK-02.01",
+          "objective": "Land and improvements",
+          "itemIds": [
+            "OK-FINAL-A-005"
+          ]
+        },
+        {
+          "topicId": "OK-02.02",
+          "objective": "Real versus personal property",
+          "itemIds": [
+            "OK-FINAL-A-006"
+          ]
+        },
+        {
+          "topicId": "OK-02.03",
+          "objective": "Fixtures",
+          "itemIds": [
+            "OK-FINAL-A-007"
+          ]
+        },
+        {
+          "topicId": "OK-02.04",
+          "objective": "Physical and economic characteristics",
+          "itemIds": [
+            "OK-FINAL-A-008"
+          ]
+        },
+        {
+          "topicId": "OK-02.05",
+          "objective": "Property classifications",
+          "itemIds": [
+            "OK-FINAL-A-005"
+          ]
+        },
+        {
+          "topicId": "OK-03.01",
+          "objective": "Bundle of rights",
+          "itemIds": [
+            "OK-FINAL-A-009"
+          ]
+        },
+        {
+          "topicId": "OK-03.02",
+          "objective": "Freehold estates",
+          "itemIds": [
+            "OK-FINAL-A-010"
+          ]
+        },
+        {
+          "topicId": "OK-03.03",
+          "objective": "Leasehold estates",
+          "itemIds": [
+            "OK-FINAL-A-011"
+          ]
+        },
+        {
+          "topicId": "OK-03.04",
+          "objective": "Concurrent ownership",
+          "itemIds": [
+            "OK-FINAL-A-012"
+          ]
+        },
+        {
+          "topicId": "OK-03.05",
+          "objective": "Easements",
+          "itemIds": [
+            "OK-FINAL-A-013"
+          ]
+        },
+        {
+          "topicId": "OK-03.06",
+          "objective": "Liens and encumbrances",
+          "itemIds": [
+            "OK-FINAL-A-014"
+          ]
+        },
+        {
+          "topicId": "OK-03.07",
+          "objective": "Mineral-interest exclusion orientation",
+          "itemIds": [
+            "OK-FINAL-A-015"
+          ]
+        },
+        {
+          "topicId": "OK-04.01",
+          "objective": "Metes and bounds",
+          "itemIds": [
+            "OK-FINAL-A-016"
+          ]
+        },
+        {
+          "topicId": "OK-04.02",
+          "objective": "Rectangular survey",
+          "itemIds": [
+            "OK-FINAL-A-017"
+          ]
+        },
+        {
+          "topicId": "OK-04.03",
+          "objective": "Lot and block",
+          "itemIds": [
+            "OK-FINAL-A-018"
+          ]
+        },
+        {
+          "topicId": "OK-04.04",
+          "objective": "Measurements and description review",
+          "itemIds": [
+            "OK-FINAL-A-019"
+          ]
+        },
+        {
+          "topicId": "OK-05.01",
+          "objective": "Public records",
+          "itemIds": [
+            "OK-FINAL-A-020"
+          ]
+        },
+        {
+          "topicId": "OK-05.02",
+          "objective": "Title search",
+          "itemIds": [
+            "OK-FINAL-A-021"
+          ]
+        },
+        {
+          "topicId": "OK-05.03",
+          "objective": "Title defects",
+          "itemIds": [
+            "OK-FINAL-A-022"
+          ]
+        },
+        {
+          "topicId": "OK-05.04",
+          "objective": "Liens",
+          "itemIds": [
+            "OK-FINAL-A-023"
+          ]
+        },
+        {
+          "topicId": "OK-05.05",
+          "objective": "Easements and covenants",
+          "itemIds": [
+            "OK-FINAL-A-024"
+          ]
+        },
+        {
+          "topicId": "OK-05.06",
+          "objective": "Government powers",
+          "itemIds": [
+            "OK-FINAL-A-025"
+          ]
+        },
+        {
+          "topicId": "OK-05.07",
+          "objective": "Zoning",
+          "itemIds": [
+            "OK-FINAL-A-025"
+          ]
+        },
+        {
+          "topicId": "OK-05.08",
+          "objective": "Subdivision controls",
+          "itemIds": [
+            "OK-FINAL-A-026"
+          ]
+        },
+        {
+          "topicId": "OK-05.09",
+          "objective": "Oklahoma land-use case",
+          "itemIds": [
+            "OK-FINAL-A-027"
+          ]
+        },
+        {
+          "topicId": "OK-06.01",
+          "objective": "Deeds",
+          "itemIds": [
+            "OK-FINAL-A-028"
+          ]
+        },
+        {
+          "topicId": "OK-06.02",
+          "objective": "Delivery and acceptance",
+          "itemIds": [
+            "OK-FINAL-A-029"
+          ]
+        },
+        {
+          "topicId": "OK-06.03",
+          "objective": "Recording",
+          "itemIds": [
+            "OK-FINAL-A-030"
+          ]
+        },
+        {
+          "topicId": "OK-06.04",
+          "objective": "Title evidence",
+          "itemIds": [
+            "OK-FINAL-A-031"
+          ]
+        },
+        {
+          "topicId": "OK-06.05",
+          "objective": "Voluntary transfer",
+          "itemIds": [
+            "OK-FINAL-A-029"
+          ]
+        },
+        {
+          "topicId": "OK-06.06",
+          "objective": "Involuntary transfer",
+          "itemIds": [
+            "OK-FINAL-A-032"
+          ]
+        },
+        {
+          "topicId": "OK-06.07",
+          "objective": "Probate orientation",
+          "itemIds": [
+            "OK-FINAL-A-033"
+          ]
+        },
+        {
+          "topicId": "OK-07.01",
+          "objective": "Brokerage service contracts",
+          "itemIds": [
+            "OK-FINAL-A-034"
+          ]
+        },
+        {
+          "topicId": "OK-07.02",
+          "objective": "Listing agreements",
+          "itemIds": [
+            "OK-FINAL-A-035"
+          ]
+        },
+        {
+          "topicId": "OK-07.03",
+          "objective": "Buyer agreements",
+          "itemIds": [
+            "OK-FINAL-A-036"
+          ]
+        },
+        {
+          "topicId": "OK-07.04",
+          "objective": "Property management agreements",
+          "itemIds": [
+            "OK-FINAL-A-037"
+          ]
+        },
+        {
+          "topicId": "OK-07.05",
+          "objective": "Termination",
+          "itemIds": [
+            "OK-FINAL-A-038"
+          ]
+        },
+        {
+          "topicId": "OK-07.06",
+          "objective": "Compensation terms",
+          "itemIds": [
+            "OK-FINAL-A-039"
+          ]
+        },
+        {
+          "topicId": "OK-08.01",
+          "objective": "Buyer costs",
+          "itemIds": [
+            "OK-FINAL-A-040"
+          ]
+        },
+        {
+          "topicId": "OK-08.02",
+          "objective": "Seller costs",
+          "itemIds": [
+            "OK-FINAL-A-041"
+          ]
+        },
+        {
+          "topicId": "OK-08.03",
+          "objective": "Prorations",
+          "itemIds": [
+            "OK-FINAL-A-042"
+          ]
+        },
+        {
+          "topicId": "OK-08.04",
+          "objective": "Commissions",
+          "itemIds": [
+            "OK-FINAL-A-043"
+          ]
+        },
+        {
+          "topicId": "OK-08.05",
+          "objective": "Tax and recording items",
+          "itemIds": [
+            "OK-FINAL-A-044"
+          ]
+        },
+        {
+          "topicId": "OK-08.06",
+          "objective": "Net proceeds",
+          "itemIds": [
+            "OK-FINAL-A-045"
+          ]
+        },
+        {
+          "topicId": "OK-09.01",
+          "objective": "Value principles",
+          "itemIds": [
+            "OK-FINAL-A-046"
+          ]
+        },
+        {
+          "topicId": "OK-09.02",
+          "objective": "Highest and best use",
+          "itemIds": [
+            "OK-FINAL-A-047"
+          ]
+        },
+        {
+          "topicId": "OK-09.03",
+          "objective": "Sales comparison",
+          "itemIds": [
+            "OK-FINAL-A-048"
+          ]
+        },
+        {
+          "topicId": "OK-09.04",
+          "objective": "Cost approach",
+          "itemIds": [
+            "OK-FINAL-A-049"
+          ]
+        },
+        {
+          "topicId": "OK-09.05",
+          "objective": "Income approach",
+          "itemIds": [
+            "OK-FINAL-A-050"
+          ]
+        },
+        {
+          "topicId": "OK-09.06",
+          "objective": "Depreciation",
+          "itemIds": [
+            "OK-FINAL-A-051"
+          ]
+        },
+        {
+          "topicId": "OK-09.07",
+          "objective": "CMA scope",
+          "itemIds": [
+            "OK-FINAL-A-052"
+          ]
+        },
+        {
+          "topicId": "OK-10.01",
+          "objective": "Property marketing plans",
+          "itemIds": [
+            "OK-FINAL-A-053"
+          ]
+        },
+        {
+          "topicId": "OK-10.02",
+          "objective": "Advertising standards",
+          "itemIds": [
+            "OK-FINAL-A-054"
+          ]
+        },
+        {
+          "topicId": "OK-10.03",
+          "objective": "Prospecting",
+          "itemIds": [
+            "OK-FINAL-A-055"
+          ]
+        },
+        {
+          "topicId": "OK-10.04",
+          "objective": "Showing practices",
+          "itemIds": [
+            "OK-FINAL-A-056"
+          ]
+        },
+        {
+          "topicId": "OK-10.05",
+          "objective": "Offers and communication",
+          "itemIds": [
+            "OK-FINAL-A-057"
+          ]
+        },
+        {
+          "topicId": "OK-10.06",
+          "objective": "Records",
+          "itemIds": [
+            "OK-FINAL-A-058"
+          ]
+        },
+        {
+          "topicId": "OK-11.01",
+          "objective": "Federal protected classes",
+          "itemIds": [
+            "OK-FINAL-A-059"
+          ]
+        },
+        {
+          "topicId": "OK-11.02",
+          "objective": "Prohibited conduct",
+          "itemIds": [
+            "OK-FINAL-A-060"
+          ]
+        },
+        {
+          "topicId": "OK-11.03",
+          "objective": "Advertising",
+          "itemIds": [
+            "OK-FINAL-A-061"
+          ]
+        },
+        {
+          "topicId": "OK-11.04",
+          "objective": "Steering and redlining",
+          "itemIds": [
+            "OK-FINAL-A-062"
+          ]
+        },
+        {
+          "topicId": "OK-11.05",
+          "objective": "Disability accommodations",
+          "itemIds": [
+            "OK-FINAL-A-063"
+          ]
+        },
+        {
+          "topicId": "OK-11.06",
+          "objective": "Fair service case",
+          "itemIds": [
+            "OK-FINAL-A-064"
+          ]
+        },
+        {
+          "topicId": "OK-12.01",
+          "objective": "Contract classifications",
+          "itemIds": [
+            "OK-FINAL-A-065"
+          ]
+        },
+        {
+          "topicId": "OK-12.02",
+          "objective": "Formation",
+          "itemIds": [
+            "OK-FINAL-A-066"
+          ]
+        },
+        {
+          "topicId": "OK-12.03",
+          "objective": "Capacity",
+          "itemIds": [
+            "OK-FINAL-A-067"
+          ]
+        },
+        {
+          "topicId": "OK-12.04",
+          "objective": "Consideration",
+          "itemIds": [
+            "OK-FINAL-A-068"
+          ]
+        },
+        {
+          "topicId": "OK-12.05",
+          "objective": "Lawful purpose",
+          "itemIds": [
+            "OK-FINAL-A-067"
+          ]
+        },
+        {
+          "topicId": "OK-12.06",
+          "objective": "Statute of Frauds",
+          "itemIds": [
+            "OK-FINAL-A-069"
+          ]
+        },
+        {
+          "topicId": "OK-12.07",
+          "objective": "Electronic contracting",
+          "itemIds": [
+            "OK-FINAL-A-070"
+          ]
+        },
+        {
+          "topicId": "OK-13.01",
+          "objective": "Performance",
+          "itemIds": [
+            "OK-FINAL-A-071"
+          ]
+        },
+        {
+          "topicId": "OK-13.02",
+          "objective": "Assignment and novation",
+          "itemIds": [
+            "OK-FINAL-A-072"
+          ]
+        },
+        {
+          "topicId": "OK-13.03",
+          "objective": "Default",
+          "itemIds": [
+            "OK-FINAL-A-073"
+          ]
+        },
+        {
+          "topicId": "OK-13.04",
+          "objective": "Breach",
+          "itemIds": [
+            "OK-FINAL-A-074"
+          ]
+        },
+        {
+          "topicId": "OK-13.05",
+          "objective": "Remedies",
+          "itemIds": [
+            "OK-FINAL-A-075"
+          ]
+        },
+        {
+          "topicId": "OK-13.06",
+          "objective": "Contingencies",
+          "itemIds": [
+            "OK-FINAL-A-076"
+          ]
+        },
+        {
+          "topicId": "OK-13.07",
+          "objective": "Termination",
+          "itemIds": [
+            "OK-FINAL-A-077"
+          ]
+        },
+        {
+          "topicId": "OK-13.08",
+          "objective": "Contract case",
+          "itemIds": [
+            "OK-FINAL-A-078"
+          ]
+        },
+        {
+          "topicId": "OK-14.01",
+          "objective": "Oklahoma contract forms",
+          "itemIds": [
+            "OK-FINAL-A-079"
+          ]
+        },
+        {
+          "topicId": "OK-14.02",
+          "objective": "Offer preparation",
+          "itemIds": [
+            "OK-FINAL-A-080"
+          ]
+        },
+        {
+          "topicId": "OK-14.03",
+          "objective": "Counteroffers",
+          "itemIds": [
+            "OK-FINAL-A-081"
+          ]
+        },
+        {
+          "topicId": "OK-14.04",
+          "objective": "Acceptance",
+          "itemIds": [
+            "OK-FINAL-A-082"
+          ]
+        },
+        {
+          "topicId": "OK-14.05",
+          "objective": "Addenda",
+          "itemIds": [
+            "OK-FINAL-A-083"
+          ]
+        },
+        {
+          "topicId": "OK-14.06",
+          "objective": "Amendments",
+          "itemIds": [
+            "OK-FINAL-A-083"
+          ]
+        },
+        {
+          "topicId": "OK-14.07",
+          "objective": "Notices",
+          "itemIds": [
+            "OK-FINAL-A-084"
+          ]
+        },
+        {
+          "topicId": "OK-14.08",
+          "objective": "Inspection contingencies",
+          "itemIds": [
+            "OK-FINAL-A-085"
+          ]
+        },
+        {
+          "topicId": "OK-14.09",
+          "objective": "Financing contingencies",
+          "itemIds": [
+            "OK-FINAL-A-086"
+          ]
+        },
+        {
+          "topicId": "OK-14.10",
+          "objective": "Transaction timeline",
+          "itemIds": [
+            "OK-FINAL-A-087"
+          ]
+        },
+        {
+          "topicId": "OK-15.01",
+          "objective": "Notes and mortgages",
+          "itemIds": [
+            "OK-FINAL-A-088"
+          ]
+        },
+        {
+          "topicId": "OK-15.02",
+          "objective": "Loan markets",
+          "itemIds": [
+            "OK-FINAL-A-089"
+          ]
+        },
+        {
+          "topicId": "OK-15.03",
+          "objective": "Conventional loans",
+          "itemIds": [
+            "OK-FINAL-A-090"
+          ]
+        },
+        {
+          "topicId": "OK-15.04",
+          "objective": "FHA and VA orientation",
+          "itemIds": [
+            "OK-FINAL-A-091"
+          ]
+        },
+        {
+          "topicId": "OK-15.05",
+          "objective": "Qualification",
+          "itemIds": [
+            "OK-FINAL-A-092"
+          ]
+        },
+        {
+          "topicId": "OK-15.06",
+          "objective": "LTV and ratios",
+          "itemIds": [
+            "OK-FINAL-A-093"
+          ]
+        },
+        {
+          "topicId": "OK-15.07",
+          "objective": "Interest and amortization",
+          "itemIds": [
+            "OK-FINAL-A-094"
+          ]
+        },
+        {
+          "topicId": "OK-15.08",
+          "objective": "Points",
+          "itemIds": [
+            "OK-FINAL-A-094"
+          ]
+        },
+        {
+          "topicId": "OK-15.09",
+          "objective": "Mortgage insurance",
+          "itemIds": [
+            "OK-FINAL-A-095"
+          ]
+        },
+        {
+          "topicId": "OK-15.10",
+          "objective": "Default",
+          "itemIds": [
+            "OK-FINAL-A-096"
+          ]
+        },
+        {
+          "topicId": "OK-15.11",
+          "objective": "Financing fraud",
+          "itemIds": [
+            "OK-FINAL-A-097"
+          ]
+        },
+        {
+          "topicId": "OK-15.12",
+          "objective": "Finance case",
+          "itemIds": [
+            "OK-FINAL-A-098"
+          ]
+        },
+        {
+          "topicId": "OK-16.01",
+          "objective": "Pre-closing process",
+          "itemIds": [
+            "OK-FINAL-A-099"
+          ]
+        },
+        {
+          "topicId": "OK-16.02",
+          "objective": "Title work",
+          "itemIds": [
+            "OK-FINAL-A-100"
+          ]
+        },
+        {
+          "topicId": "OK-16.03",
+          "objective": "Settlement documents",
+          "itemIds": [
+            "OK-FINAL-A-101"
+          ]
+        },
+        {
+          "topicId": "OK-16.04",
+          "objective": "Prorations",
+          "itemIds": [
+            "OK-FINAL-A-102"
+          ]
+        },
+        {
+          "topicId": "OK-16.05",
+          "objective": "Closing Disclosure",
+          "itemIds": [
+            "OK-FINAL-A-103"
+          ]
+        },
+        {
+          "topicId": "OK-16.06",
+          "objective": "Possession and keys",
+          "itemIds": [
+            "OK-FINAL-A-104"
+          ]
+        },
+        {
+          "topicId": "OK-16.07",
+          "objective": "File closeout",
+          "itemIds": [
+            "OK-FINAL-A-105"
+          ]
+        },
+        {
+          "topicId": "OK-17.01",
+          "objective": "Oklahoma License Code",
+          "itemIds": [
+            "OK-FINAL-A-106"
+          ]
+        },
+        {
+          "topicId": "OK-17.02",
+          "objective": "Commission authority",
+          "itemIds": [
+            "OK-FINAL-A-107"
+          ]
+        },
+        {
+          "topicId": "OK-17.03",
+          "objective": "License categories",
+          "itemIds": [
+            "OK-FINAL-A-108"
+          ]
+        },
+        {
+          "topicId": "OK-17.04",
+          "objective": "Broker supervision",
+          "itemIds": [
+            "OK-FINAL-A-109"
+          ]
+        },
+        {
+          "topicId": "OK-17.05",
+          "objective": "Trust accounts",
+          "itemIds": [
+            "OK-FINAL-A-110"
+          ]
+        },
+        {
+          "topicId": "OK-17.06",
+          "objective": "Advertising",
+          "itemIds": [
+            "OK-FINAL-A-111"
+          ]
+        },
+        {
+          "topicId": "OK-17.07",
+          "objective": "Records",
+          "itemIds": [
+            "OK-FINAL-A-112"
+          ]
+        },
+        {
+          "topicId": "OK-17.08",
+          "objective": "Discipline",
+          "itemIds": [
+            "OK-FINAL-A-113"
+          ]
+        },
+        {
+          "topicId": "OK-17.09",
+          "objective": "Wholesaler provisions",
+          "itemIds": [
+            "OK-FINAL-A-114"
+          ]
+        },
+        {
+          "topicId": "OK-17.10",
+          "objective": "Required pre-enrollment notices",
+          "itemIds": [
+            "OK-FINAL-A-115"
+          ]
+        },
+        {
+          "topicId": "OK-18.01",
+          "objective": "Property-condition disclosure",
+          "itemIds": [
+            "OK-FINAL-A-116"
+          ]
+        },
+        {
+          "topicId": "OK-18.02",
+          "objective": "Material facts",
+          "itemIds": [
+            "OK-FINAL-A-117"
+          ]
+        },
+        {
+          "topicId": "OK-18.03",
+          "objective": "Lead-based paint",
+          "itemIds": [
+            "OK-FINAL-A-118"
+          ]
+        },
+        {
+          "topicId": "OK-18.04",
+          "objective": "Radon and asbestos",
+          "itemIds": [
+            "OK-FINAL-A-119"
+          ]
+        },
+        {
+          "topicId": "OK-18.05",
+          "objective": "Flood and environmental risk",
+          "itemIds": [
+            "OK-FINAL-A-120"
+          ]
+        },
+        {
+          "topicId": "OK-18.06",
+          "objective": "Expert referral",
+          "itemIds": [
+            "OK-FINAL-A-121"
+          ]
+        },
+        {
+          "topicId": "OK-18.07",
+          "objective": "Disclosure case",
+          "itemIds": [
+            "OK-FINAL-A-122"
+          ]
+        },
+        {
+          "topicId": "OK-19.01",
+          "objective": "Lease formation",
+          "itemIds": [
+            "OK-FINAL-A-123"
+          ]
+        },
+        {
+          "topicId": "OK-19.02",
+          "objective": "Landlord and tenant duties",
+          "itemIds": [
+            "OK-FINAL-A-124"
+          ]
+        },
+        {
+          "topicId": "OK-19.03",
+          "objective": "Management agreements",
+          "itemIds": [
+            "OK-FINAL-A-125"
+          ]
+        },
+        {
+          "topicId": "OK-19.04",
+          "objective": "Rent and deposits",
+          "itemIds": [
+            "OK-FINAL-A-126"
+          ]
+        },
+        {
+          "topicId": "OK-19.05",
+          "objective": "Maintenance",
+          "itemIds": [
+            "OK-FINAL-A-127"
+          ]
+        },
+        {
+          "topicId": "OK-19.06",
+          "objective": "Risk management",
+          "itemIds": [
+            "OK-FINAL-A-128"
+          ]
+        },
+        {
+          "topicId": "OK-19.07",
+          "objective": "Fair housing in management",
+          "itemIds": [
+            "OK-FINAL-A-129"
+          ]
+        },
+        {
+          "topicId": "OK-20.01",
+          "objective": "Errors and omissions",
+          "itemIds": [
+            "OK-FINAL-A-130"
+          ]
+        },
+        {
+          "topicId": "OK-20.02",
+          "objective": "Documentation",
+          "itemIds": [
+            "OK-FINAL-A-131"
+          ]
+        },
+        {
+          "topicId": "OK-20.03",
+          "objective": "Safety",
+          "itemIds": [
+            "OK-FINAL-A-132"
+          ]
+        },
+        {
+          "topicId": "OK-20.04",
+          "objective": "Fraud prevention",
+          "itemIds": [
+            "OK-FINAL-A-133"
+          ]
+        },
+        {
+          "topicId": "OK-20.05",
+          "objective": "Cyber and wire risk",
+          "itemIds": [
+            "OK-FINAL-A-134"
+          ]
+        },
+        {
+          "topicId": "OK-20.06",
+          "objective": "Escalation",
+          "itemIds": [
+            "OK-FINAL-A-131"
+          ]
+        },
+        {
+          "topicId": "OK-21.01",
+          "objective": "Competence",
+          "itemIds": [
+            "OK-FINAL-A-135"
+          ]
+        },
+        {
+          "topicId": "OK-21.02",
+          "objective": "Honesty and disclosure",
+          "itemIds": [
+            "OK-FINAL-A-136"
+          ]
+        },
+        {
+          "topicId": "OK-21.03",
+          "objective": "Conflicts",
+          "itemIds": [
+            "OK-FINAL-A-137"
+          ]
+        },
+        {
+          "topicId": "OK-21.04",
+          "objective": "Confidentiality",
+          "itemIds": [
+            "OK-FINAL-A-138"
+          ]
+        },
+        {
+          "topicId": "OK-21.05",
+          "objective": "Cooperation",
+          "itemIds": [
+            "OK-FINAL-A-139"
+          ]
+        },
+        {
+          "topicId": "OK-21.06",
+          "objective": "Disciplinary scenarios",
+          "itemIds": [
+            "OK-FINAL-A-140"
+          ]
+        },
+        {
+          "topicId": "OK-22.01",
+          "objective": "Agency creation",
+          "itemIds": [
+            "OK-FINAL-A-141"
+          ]
+        },
+        {
+          "topicId": "OK-22.02",
+          "objective": "Oklahoma Broker Relationships Act",
+          "itemIds": [
+            "OK-FINAL-A-142"
+          ]
+        },
+        {
+          "topicId": "OK-22.03",
+          "objective": "Duties",
+          "itemIds": [
+            "OK-FINAL-A-143"
+          ]
+        },
+        {
+          "topicId": "OK-22.04",
+          "objective": "Clients and customers",
+          "itemIds": [
+            "OK-FINAL-A-144"
+          ]
+        },
+        {
+          "topicId": "OK-22.05",
+          "objective": "Brokerage relationships",
+          "itemIds": [
+            "OK-FINAL-A-145"
+          ]
+        },
+        {
+          "topicId": "OK-22.06",
+          "objective": "Consent",
+          "itemIds": [
+            "OK-FINAL-A-146"
+          ]
+        },
+        {
+          "topicId": "OK-22.07",
+          "objective": "Confidentiality",
+          "itemIds": [
+            "OK-FINAL-A-147"
+          ]
+        },
+        {
+          "topicId": "OK-22.08",
+          "objective": "Compensation",
+          "itemIds": [
+            "OK-FINAL-A-148"
+          ]
+        },
+        {
+          "topicId": "OK-22.09",
+          "objective": "Termination",
+          "itemIds": [
+            "OK-FINAL-A-149"
+          ]
+        },
+        {
+          "topicId": "OK-22.10",
+          "objective": "Integrated agency case",
+          "itemIds": [
+            "OK-FINAL-A-150"
+          ]
+        }
+      ]
+    },
+    {
+      "form": "B",
+      "items": 150,
+      "areaCounts": {
+        "OK-01": 4,
+        "OK-02": 4,
+        "OK-03": 7,
+        "OK-04": 4,
+        "OK-05": 8,
+        "OK-06": 6,
+        "OK-07": 6,
+        "OK-08": 6,
+        "OK-09": 7,
+        "OK-10": 6,
+        "OK-11": 6,
+        "OK-12": 6,
+        "OK-13": 8,
+        "OK-14": 9,
+        "OK-15": 11,
+        "OK-16": 7,
+        "OK-17": 10,
+        "OK-18": 7,
+        "OK-19": 7,
+        "OK-20": 5,
+        "OK-21": 6,
+        "OK-22": 10
+      },
+      "keyCounts": [
+        38,
+        38,
+        37,
+        37
+      ],
+      "uniquelyLongestCorrect": 56,
+      "topicCoverage": [
+        {
+          "topicId": "OK-01.01",
+          "objective": "Economic characteristics of real estate",
+          "itemIds": [
+            "OK-FINAL-B-001"
+          ]
+        },
+        {
+          "topicId": "OK-01.02",
+          "objective": "Supply and demand",
+          "itemIds": [
+            "OK-FINAL-B-002"
+          ]
+        },
+        {
+          "topicId": "OK-01.03",
+          "objective": "Market cycles",
+          "itemIds": [
+            "OK-FINAL-B-002"
+          ]
+        },
+        {
+          "topicId": "OK-01.04",
+          "objective": "Neighborhood and market analysis",
+          "itemIds": [
+            "OK-FINAL-B-003"
+          ]
+        },
+        {
+          "topicId": "OK-01.05",
+          "objective": "Investment and tax orientation",
+          "itemIds": [
+            "OK-FINAL-B-004"
+          ]
+        },
+        {
+          "topicId": "OK-02.01",
+          "objective": "Land and improvements",
+          "itemIds": [
+            "OK-FINAL-B-005"
+          ]
+        },
+        {
+          "topicId": "OK-02.02",
+          "objective": "Real versus personal property",
+          "itemIds": [
+            "OK-FINAL-B-006"
+          ]
+        },
+        {
+          "topicId": "OK-02.03",
+          "objective": "Fixtures",
+          "itemIds": [
+            "OK-FINAL-B-007"
+          ]
+        },
+        {
+          "topicId": "OK-02.04",
+          "objective": "Physical and economic characteristics",
+          "itemIds": [
+            "OK-FINAL-B-008"
+          ]
+        },
+        {
+          "topicId": "OK-02.05",
+          "objective": "Property classifications",
+          "itemIds": [
+            "OK-FINAL-B-005"
+          ]
+        },
+        {
+          "topicId": "OK-03.01",
+          "objective": "Bundle of rights",
+          "itemIds": [
+            "OK-FINAL-B-009"
+          ]
+        },
+        {
+          "topicId": "OK-03.02",
+          "objective": "Freehold estates",
+          "itemIds": [
+            "OK-FINAL-B-010"
+          ]
+        },
+        {
+          "topicId": "OK-03.03",
+          "objective": "Leasehold estates",
+          "itemIds": [
+            "OK-FINAL-B-011"
+          ]
+        },
+        {
+          "topicId": "OK-03.04",
+          "objective": "Concurrent ownership",
+          "itemIds": [
+            "OK-FINAL-B-012"
+          ]
+        },
+        {
+          "topicId": "OK-03.05",
+          "objective": "Easements",
+          "itemIds": [
+            "OK-FINAL-B-013"
+          ]
+        },
+        {
+          "topicId": "OK-03.06",
+          "objective": "Liens and encumbrances",
+          "itemIds": [
+            "OK-FINAL-B-014"
+          ]
+        },
+        {
+          "topicId": "OK-03.07",
+          "objective": "Mineral-interest exclusion orientation",
+          "itemIds": [
+            "OK-FINAL-B-015"
+          ]
+        },
+        {
+          "topicId": "OK-04.01",
+          "objective": "Metes and bounds",
+          "itemIds": [
+            "OK-FINAL-B-016"
+          ]
+        },
+        {
+          "topicId": "OK-04.02",
+          "objective": "Rectangular survey",
+          "itemIds": [
+            "OK-FINAL-B-017"
+          ]
+        },
+        {
+          "topicId": "OK-04.03",
+          "objective": "Lot and block",
+          "itemIds": [
+            "OK-FINAL-B-018"
+          ]
+        },
+        {
+          "topicId": "OK-04.04",
+          "objective": "Measurements and description review",
+          "itemIds": [
+            "OK-FINAL-B-019"
+          ]
+        },
+        {
+          "topicId": "OK-05.01",
+          "objective": "Public records",
+          "itemIds": [
+            "OK-FINAL-B-020"
+          ]
+        },
+        {
+          "topicId": "OK-05.02",
+          "objective": "Title search",
+          "itemIds": [
+            "OK-FINAL-B-021"
+          ]
+        },
+        {
+          "topicId": "OK-05.03",
+          "objective": "Title defects",
+          "itemIds": [
+            "OK-FINAL-B-022"
+          ]
+        },
+        {
+          "topicId": "OK-05.04",
+          "objective": "Liens",
+          "itemIds": [
+            "OK-FINAL-B-023"
+          ]
+        },
+        {
+          "topicId": "OK-05.05",
+          "objective": "Easements and covenants",
+          "itemIds": [
+            "OK-FINAL-B-024"
+          ]
+        },
+        {
+          "topicId": "OK-05.06",
+          "objective": "Government powers",
+          "itemIds": [
+            "OK-FINAL-B-025"
+          ]
+        },
+        {
+          "topicId": "OK-05.07",
+          "objective": "Zoning",
+          "itemIds": [
+            "OK-FINAL-B-025"
+          ]
+        },
+        {
+          "topicId": "OK-05.08",
+          "objective": "Subdivision controls",
+          "itemIds": [
+            "OK-FINAL-B-026"
+          ]
+        },
+        {
+          "topicId": "OK-05.09",
+          "objective": "Oklahoma land-use case",
+          "itemIds": [
+            "OK-FINAL-B-027"
+          ]
+        },
+        {
+          "topicId": "OK-06.01",
+          "objective": "Deeds",
+          "itemIds": [
+            "OK-FINAL-B-028"
+          ]
+        },
+        {
+          "topicId": "OK-06.02",
+          "objective": "Delivery and acceptance",
+          "itemIds": [
+            "OK-FINAL-B-029"
+          ]
+        },
+        {
+          "topicId": "OK-06.03",
+          "objective": "Recording",
+          "itemIds": [
+            "OK-FINAL-B-030"
+          ]
+        },
+        {
+          "topicId": "OK-06.04",
+          "objective": "Title evidence",
+          "itemIds": [
+            "OK-FINAL-B-031"
+          ]
+        },
+        {
+          "topicId": "OK-06.05",
+          "objective": "Voluntary transfer",
+          "itemIds": [
+            "OK-FINAL-B-029"
+          ]
+        },
+        {
+          "topicId": "OK-06.06",
+          "objective": "Involuntary transfer",
+          "itemIds": [
+            "OK-FINAL-B-032"
+          ]
+        },
+        {
+          "topicId": "OK-06.07",
+          "objective": "Probate orientation",
+          "itemIds": [
+            "OK-FINAL-B-033"
+          ]
+        },
+        {
+          "topicId": "OK-07.01",
+          "objective": "Brokerage service contracts",
+          "itemIds": [
+            "OK-FINAL-B-034"
+          ]
+        },
+        {
+          "topicId": "OK-07.02",
+          "objective": "Listing agreements",
+          "itemIds": [
+            "OK-FINAL-B-035"
+          ]
+        },
+        {
+          "topicId": "OK-07.03",
+          "objective": "Buyer agreements",
+          "itemIds": [
+            "OK-FINAL-B-036"
+          ]
+        },
+        {
+          "topicId": "OK-07.04",
+          "objective": "Property management agreements",
+          "itemIds": [
+            "OK-FINAL-B-037"
+          ]
+        },
+        {
+          "topicId": "OK-07.05",
+          "objective": "Termination",
+          "itemIds": [
+            "OK-FINAL-B-038"
+          ]
+        },
+        {
+          "topicId": "OK-07.06",
+          "objective": "Compensation terms",
+          "itemIds": [
+            "OK-FINAL-B-039"
+          ]
+        },
+        {
+          "topicId": "OK-08.01",
+          "objective": "Buyer costs",
+          "itemIds": [
+            "OK-FINAL-B-040"
+          ]
+        },
+        {
+          "topicId": "OK-08.02",
+          "objective": "Seller costs",
+          "itemIds": [
+            "OK-FINAL-B-041"
+          ]
+        },
+        {
+          "topicId": "OK-08.03",
+          "objective": "Prorations",
+          "itemIds": [
+            "OK-FINAL-B-042"
+          ]
+        },
+        {
+          "topicId": "OK-08.04",
+          "objective": "Commissions",
+          "itemIds": [
+            "OK-FINAL-B-043"
+          ]
+        },
+        {
+          "topicId": "OK-08.05",
+          "objective": "Tax and recording items",
+          "itemIds": [
+            "OK-FINAL-B-044"
+          ]
+        },
+        {
+          "topicId": "OK-08.06",
+          "objective": "Net proceeds",
+          "itemIds": [
+            "OK-FINAL-B-045"
+          ]
+        },
+        {
+          "topicId": "OK-09.01",
+          "objective": "Value principles",
+          "itemIds": [
+            "OK-FINAL-B-046"
+          ]
+        },
+        {
+          "topicId": "OK-09.02",
+          "objective": "Highest and best use",
+          "itemIds": [
+            "OK-FINAL-B-047"
+          ]
+        },
+        {
+          "topicId": "OK-09.03",
+          "objective": "Sales comparison",
+          "itemIds": [
+            "OK-FINAL-B-048"
+          ]
+        },
+        {
+          "topicId": "OK-09.04",
+          "objective": "Cost approach",
+          "itemIds": [
+            "OK-FINAL-B-049"
+          ]
+        },
+        {
+          "topicId": "OK-09.05",
+          "objective": "Income approach",
+          "itemIds": [
+            "OK-FINAL-B-050"
+          ]
+        },
+        {
+          "topicId": "OK-09.06",
+          "objective": "Depreciation",
+          "itemIds": [
+            "OK-FINAL-B-051"
+          ]
+        },
+        {
+          "topicId": "OK-09.07",
+          "objective": "CMA scope",
+          "itemIds": [
+            "OK-FINAL-B-052"
+          ]
+        },
+        {
+          "topicId": "OK-10.01",
+          "objective": "Property marketing plans",
+          "itemIds": [
+            "OK-FINAL-B-053"
+          ]
+        },
+        {
+          "topicId": "OK-10.02",
+          "objective": "Advertising standards",
+          "itemIds": [
+            "OK-FINAL-B-054"
+          ]
+        },
+        {
+          "topicId": "OK-10.03",
+          "objective": "Prospecting",
+          "itemIds": [
+            "OK-FINAL-B-055"
+          ]
+        },
+        {
+          "topicId": "OK-10.04",
+          "objective": "Showing practices",
+          "itemIds": [
+            "OK-FINAL-B-056"
+          ]
+        },
+        {
+          "topicId": "OK-10.05",
+          "objective": "Offers and communication",
+          "itemIds": [
+            "OK-FINAL-B-057"
+          ]
+        },
+        {
+          "topicId": "OK-10.06",
+          "objective": "Records",
+          "itemIds": [
+            "OK-FINAL-B-058"
+          ]
+        },
+        {
+          "topicId": "OK-11.01",
+          "objective": "Federal protected classes",
+          "itemIds": [
+            "OK-FINAL-B-059"
+          ]
+        },
+        {
+          "topicId": "OK-11.02",
+          "objective": "Prohibited conduct",
+          "itemIds": [
+            "OK-FINAL-B-060"
+          ]
+        },
+        {
+          "topicId": "OK-11.03",
+          "objective": "Advertising",
+          "itemIds": [
+            "OK-FINAL-B-061"
+          ]
+        },
+        {
+          "topicId": "OK-11.04",
+          "objective": "Steering and redlining",
+          "itemIds": [
+            "OK-FINAL-B-062"
+          ]
+        },
+        {
+          "topicId": "OK-11.05",
+          "objective": "Disability accommodations",
+          "itemIds": [
+            "OK-FINAL-B-063"
+          ]
+        },
+        {
+          "topicId": "OK-11.06",
+          "objective": "Fair service case",
+          "itemIds": [
+            "OK-FINAL-B-064"
+          ]
+        },
+        {
+          "topicId": "OK-12.01",
+          "objective": "Contract classifications",
+          "itemIds": [
+            "OK-FINAL-B-065"
+          ]
+        },
+        {
+          "topicId": "OK-12.02",
+          "objective": "Formation",
+          "itemIds": [
+            "OK-FINAL-B-066"
+          ]
+        },
+        {
+          "topicId": "OK-12.03",
+          "objective": "Capacity",
+          "itemIds": [
+            "OK-FINAL-B-067"
+          ]
+        },
+        {
+          "topicId": "OK-12.04",
+          "objective": "Consideration",
+          "itemIds": [
+            "OK-FINAL-B-068"
+          ]
+        },
+        {
+          "topicId": "OK-12.05",
+          "objective": "Lawful purpose",
+          "itemIds": [
+            "OK-FINAL-B-067"
+          ]
+        },
+        {
+          "topicId": "OK-12.06",
+          "objective": "Statute of Frauds",
+          "itemIds": [
+            "OK-FINAL-B-069"
+          ]
+        },
+        {
+          "topicId": "OK-12.07",
+          "objective": "Electronic contracting",
+          "itemIds": [
+            "OK-FINAL-B-070"
+          ]
+        },
+        {
+          "topicId": "OK-13.01",
+          "objective": "Performance",
+          "itemIds": [
+            "OK-FINAL-B-071"
+          ]
+        },
+        {
+          "topicId": "OK-13.02",
+          "objective": "Assignment and novation",
+          "itemIds": [
+            "OK-FINAL-B-072"
+          ]
+        },
+        {
+          "topicId": "OK-13.03",
+          "objective": "Default",
+          "itemIds": [
+            "OK-FINAL-B-073"
+          ]
+        },
+        {
+          "topicId": "OK-13.04",
+          "objective": "Breach",
+          "itemIds": [
+            "OK-FINAL-B-074"
+          ]
+        },
+        {
+          "topicId": "OK-13.05",
+          "objective": "Remedies",
+          "itemIds": [
+            "OK-FINAL-B-075"
+          ]
+        },
+        {
+          "topicId": "OK-13.06",
+          "objective": "Contingencies",
+          "itemIds": [
+            "OK-FINAL-B-076"
+          ]
+        },
+        {
+          "topicId": "OK-13.07",
+          "objective": "Termination",
+          "itemIds": [
+            "OK-FINAL-B-077"
+          ]
+        },
+        {
+          "topicId": "OK-13.08",
+          "objective": "Contract case",
+          "itemIds": [
+            "OK-FINAL-B-078"
+          ]
+        },
+        {
+          "topicId": "OK-14.01",
+          "objective": "Oklahoma contract forms",
+          "itemIds": [
+            "OK-FINAL-B-079"
+          ]
+        },
+        {
+          "topicId": "OK-14.02",
+          "objective": "Offer preparation",
+          "itemIds": [
+            "OK-FINAL-B-080"
+          ]
+        },
+        {
+          "topicId": "OK-14.03",
+          "objective": "Counteroffers",
+          "itemIds": [
+            "OK-FINAL-B-081"
+          ]
+        },
+        {
+          "topicId": "OK-14.04",
+          "objective": "Acceptance",
+          "itemIds": [
+            "OK-FINAL-B-082"
+          ]
+        },
+        {
+          "topicId": "OK-14.05",
+          "objective": "Addenda",
+          "itemIds": [
+            "OK-FINAL-B-083"
+          ]
+        },
+        {
+          "topicId": "OK-14.06",
+          "objective": "Amendments",
+          "itemIds": [
+            "OK-FINAL-B-083"
+          ]
+        },
+        {
+          "topicId": "OK-14.07",
+          "objective": "Notices",
+          "itemIds": [
+            "OK-FINAL-B-084"
+          ]
+        },
+        {
+          "topicId": "OK-14.08",
+          "objective": "Inspection contingencies",
+          "itemIds": [
+            "OK-FINAL-B-085"
+          ]
+        },
+        {
+          "topicId": "OK-14.09",
+          "objective": "Financing contingencies",
+          "itemIds": [
+            "OK-FINAL-B-086"
+          ]
+        },
+        {
+          "topicId": "OK-14.10",
+          "objective": "Transaction timeline",
+          "itemIds": [
+            "OK-FINAL-B-087"
+          ]
+        },
+        {
+          "topicId": "OK-15.01",
+          "objective": "Notes and mortgages",
+          "itemIds": [
+            "OK-FINAL-B-088"
+          ]
+        },
+        {
+          "topicId": "OK-15.02",
+          "objective": "Loan markets",
+          "itemIds": [
+            "OK-FINAL-B-089"
+          ]
+        },
+        {
+          "topicId": "OK-15.03",
+          "objective": "Conventional loans",
+          "itemIds": [
+            "OK-FINAL-B-090"
+          ]
+        },
+        {
+          "topicId": "OK-15.04",
+          "objective": "FHA and VA orientation",
+          "itemIds": [
+            "OK-FINAL-B-091"
+          ]
+        },
+        {
+          "topicId": "OK-15.05",
+          "objective": "Qualification",
+          "itemIds": [
+            "OK-FINAL-B-092"
+          ]
+        },
+        {
+          "topicId": "OK-15.06",
+          "objective": "LTV and ratios",
+          "itemIds": [
+            "OK-FINAL-B-093"
+          ]
+        },
+        {
+          "topicId": "OK-15.07",
+          "objective": "Interest and amortization",
+          "itemIds": [
+            "OK-FINAL-B-094"
+          ]
+        },
+        {
+          "topicId": "OK-15.08",
+          "objective": "Points",
+          "itemIds": [
+            "OK-FINAL-B-094"
+          ]
+        },
+        {
+          "topicId": "OK-15.09",
+          "objective": "Mortgage insurance",
+          "itemIds": [
+            "OK-FINAL-B-095"
+          ]
+        },
+        {
+          "topicId": "OK-15.10",
+          "objective": "Default",
+          "itemIds": [
+            "OK-FINAL-B-096"
+          ]
+        },
+        {
+          "topicId": "OK-15.11",
+          "objective": "Financing fraud",
+          "itemIds": [
+            "OK-FINAL-B-097"
+          ]
+        },
+        {
+          "topicId": "OK-15.12",
+          "objective": "Finance case",
+          "itemIds": [
+            "OK-FINAL-B-098"
+          ]
+        },
+        {
+          "topicId": "OK-16.01",
+          "objective": "Pre-closing process",
+          "itemIds": [
+            "OK-FINAL-B-099"
+          ]
+        },
+        {
+          "topicId": "OK-16.02",
+          "objective": "Title work",
+          "itemIds": [
+            "OK-FINAL-B-100"
+          ]
+        },
+        {
+          "topicId": "OK-16.03",
+          "objective": "Settlement documents",
+          "itemIds": [
+            "OK-FINAL-B-101"
+          ]
+        },
+        {
+          "topicId": "OK-16.04",
+          "objective": "Prorations",
+          "itemIds": [
+            "OK-FINAL-B-102"
+          ]
+        },
+        {
+          "topicId": "OK-16.05",
+          "objective": "Closing Disclosure",
+          "itemIds": [
+            "OK-FINAL-B-103"
+          ]
+        },
+        {
+          "topicId": "OK-16.06",
+          "objective": "Possession and keys",
+          "itemIds": [
+            "OK-FINAL-B-104"
+          ]
+        },
+        {
+          "topicId": "OK-16.07",
+          "objective": "File closeout",
+          "itemIds": [
+            "OK-FINAL-B-105"
+          ]
+        },
+        {
+          "topicId": "OK-17.01",
+          "objective": "Oklahoma License Code",
+          "itemIds": [
+            "OK-FINAL-B-106"
+          ]
+        },
+        {
+          "topicId": "OK-17.02",
+          "objective": "Commission authority",
+          "itemIds": [
+            "OK-FINAL-B-107"
+          ]
+        },
+        {
+          "topicId": "OK-17.03",
+          "objective": "License categories",
+          "itemIds": [
+            "OK-FINAL-B-108"
+          ]
+        },
+        {
+          "topicId": "OK-17.04",
+          "objective": "Broker supervision",
+          "itemIds": [
+            "OK-FINAL-B-109"
+          ]
+        },
+        {
+          "topicId": "OK-17.05",
+          "objective": "Trust accounts",
+          "itemIds": [
+            "OK-FINAL-B-110"
+          ]
+        },
+        {
+          "topicId": "OK-17.06",
+          "objective": "Advertising",
+          "itemIds": [
+            "OK-FINAL-B-111"
+          ]
+        },
+        {
+          "topicId": "OK-17.07",
+          "objective": "Records",
+          "itemIds": [
+            "OK-FINAL-B-112"
+          ]
+        },
+        {
+          "topicId": "OK-17.08",
+          "objective": "Discipline",
+          "itemIds": [
+            "OK-FINAL-B-113"
+          ]
+        },
+        {
+          "topicId": "OK-17.09",
+          "objective": "Wholesaler provisions",
+          "itemIds": [
+            "OK-FINAL-B-114"
+          ]
+        },
+        {
+          "topicId": "OK-17.10",
+          "objective": "Required pre-enrollment notices",
+          "itemIds": [
+            "OK-FINAL-B-115"
+          ]
+        },
+        {
+          "topicId": "OK-18.01",
+          "objective": "Property-condition disclosure",
+          "itemIds": [
+            "OK-FINAL-B-116"
+          ]
+        },
+        {
+          "topicId": "OK-18.02",
+          "objective": "Material facts",
+          "itemIds": [
+            "OK-FINAL-B-117"
+          ]
+        },
+        {
+          "topicId": "OK-18.03",
+          "objective": "Lead-based paint",
+          "itemIds": [
+            "OK-FINAL-B-118"
+          ]
+        },
+        {
+          "topicId": "OK-18.04",
+          "objective": "Radon and asbestos",
+          "itemIds": [
+            "OK-FINAL-B-119"
+          ]
+        },
+        {
+          "topicId": "OK-18.05",
+          "objective": "Flood and environmental risk",
+          "itemIds": [
+            "OK-FINAL-B-120"
+          ]
+        },
+        {
+          "topicId": "OK-18.06",
+          "objective": "Expert referral",
+          "itemIds": [
+            "OK-FINAL-B-121"
+          ]
+        },
+        {
+          "topicId": "OK-18.07",
+          "objective": "Disclosure case",
+          "itemIds": [
+            "OK-FINAL-B-122"
+          ]
+        },
+        {
+          "topicId": "OK-19.01",
+          "objective": "Lease formation",
+          "itemIds": [
+            "OK-FINAL-B-123"
+          ]
+        },
+        {
+          "topicId": "OK-19.02",
+          "objective": "Landlord and tenant duties",
+          "itemIds": [
+            "OK-FINAL-B-124"
+          ]
+        },
+        {
+          "topicId": "OK-19.03",
+          "objective": "Management agreements",
+          "itemIds": [
+            "OK-FINAL-B-125"
+          ]
+        },
+        {
+          "topicId": "OK-19.04",
+          "objective": "Rent and deposits",
+          "itemIds": [
+            "OK-FINAL-B-126"
+          ]
+        },
+        {
+          "topicId": "OK-19.05",
+          "objective": "Maintenance",
+          "itemIds": [
+            "OK-FINAL-B-127"
+          ]
+        },
+        {
+          "topicId": "OK-19.06",
+          "objective": "Risk management",
+          "itemIds": [
+            "OK-FINAL-B-128"
+          ]
+        },
+        {
+          "topicId": "OK-19.07",
+          "objective": "Fair housing in management",
+          "itemIds": [
+            "OK-FINAL-B-129"
+          ]
+        },
+        {
+          "topicId": "OK-20.01",
+          "objective": "Errors and omissions",
+          "itemIds": [
+            "OK-FINAL-B-130"
+          ]
+        },
+        {
+          "topicId": "OK-20.02",
+          "objective": "Documentation",
+          "itemIds": [
+            "OK-FINAL-B-131"
+          ]
+        },
+        {
+          "topicId": "OK-20.03",
+          "objective": "Safety",
+          "itemIds": [
+            "OK-FINAL-B-132"
+          ]
+        },
+        {
+          "topicId": "OK-20.04",
+          "objective": "Fraud prevention",
+          "itemIds": [
+            "OK-FINAL-B-133"
+          ]
+        },
+        {
+          "topicId": "OK-20.05",
+          "objective": "Cyber and wire risk",
+          "itemIds": [
+            "OK-FINAL-B-134"
+          ]
+        },
+        {
+          "topicId": "OK-20.06",
+          "objective": "Escalation",
+          "itemIds": [
+            "OK-FINAL-B-131"
+          ]
+        },
+        {
+          "topicId": "OK-21.01",
+          "objective": "Competence",
+          "itemIds": [
+            "OK-FINAL-B-135"
+          ]
+        },
+        {
+          "topicId": "OK-21.02",
+          "objective": "Honesty and disclosure",
+          "itemIds": [
+            "OK-FINAL-B-136"
+          ]
+        },
+        {
+          "topicId": "OK-21.03",
+          "objective": "Conflicts",
+          "itemIds": [
+            "OK-FINAL-B-137"
+          ]
+        },
+        {
+          "topicId": "OK-21.04",
+          "objective": "Confidentiality",
+          "itemIds": [
+            "OK-FINAL-B-138"
+          ]
+        },
+        {
+          "topicId": "OK-21.05",
+          "objective": "Cooperation",
+          "itemIds": [
+            "OK-FINAL-B-139"
+          ]
+        },
+        {
+          "topicId": "OK-21.06",
+          "objective": "Disciplinary scenarios",
+          "itemIds": [
+            "OK-FINAL-B-140"
+          ]
+        },
+        {
+          "topicId": "OK-22.01",
+          "objective": "Agency creation",
+          "itemIds": [
+            "OK-FINAL-B-141"
+          ]
+        },
+        {
+          "topicId": "OK-22.02",
+          "objective": "Oklahoma Broker Relationships Act",
+          "itemIds": [
+            "OK-FINAL-B-142"
+          ]
+        },
+        {
+          "topicId": "OK-22.03",
+          "objective": "Duties",
+          "itemIds": [
+            "OK-FINAL-B-143"
+          ]
+        },
+        {
+          "topicId": "OK-22.04",
+          "objective": "Clients and customers",
+          "itemIds": [
+            "OK-FINAL-B-144"
+          ]
+        },
+        {
+          "topicId": "OK-22.05",
+          "objective": "Brokerage relationships",
+          "itemIds": [
+            "OK-FINAL-B-145"
+          ]
+        },
+        {
+          "topicId": "OK-22.06",
+          "objective": "Consent",
+          "itemIds": [
+            "OK-FINAL-B-146"
+          ]
+        },
+        {
+          "topicId": "OK-22.07",
+          "objective": "Confidentiality",
+          "itemIds": [
+            "OK-FINAL-B-147"
+          ]
+        },
+        {
+          "topicId": "OK-22.08",
+          "objective": "Compensation",
+          "itemIds": [
+            "OK-FINAL-B-148"
+          ]
+        },
+        {
+          "topicId": "OK-22.09",
+          "objective": "Termination",
+          "itemIds": [
+            "OK-FINAL-B-149"
+          ]
+        },
+        {
+          "topicId": "OK-22.10",
+          "objective": "Integrated agency case",
+          "itemIds": [
+            "OK-FINAL-B-150"
+          ]
+        }
+      ]
+    }
+  ],
+  "finalItems": 300,
+  "formativeItems": 176,
+  "exactFormativePromptMatches": [],
+  "exactFormativeChoiceSetMatches": [],
+  "referenceErrors": [],
+  "lexicalReview": {
+    "metric": "Jaccard of normalized stem words longer than three characters",
+    "reportThreshold": 0.35,
+    "nearPairs": [
+      {
+        "score": 0.4706,
+        "finalId": "OK-FINAL-B-028",
+        "formativeId": "module-05:engagement:2"
+      },
+      {
+        "score": 0.3571,
+        "finalId": "OK-FINAL-B-094",
+        "formativeId": "module-11:remediation:3"
+      },
+      {
+        "score": 0.35,
+        "finalId": "OK-FINAL-A-128",
+        "formativeId": "module-16:engagement:4"
+      }
+    ],
+    "limitation": "A low score cannot prove absence of semantic reuse. Flagged pairs require human review; source-based concept overlap is expected and is not itself a reused fact pattern."
+  },
+  "itemWritingControl": {
+    "uniquelyLongestCorrectMaximumPerForm": 60,
+    "characterization": "Provider regression limit, not a regulator-prescribed or psychometric standard",
+    "repair": "75 distractors revised; correct answers, stems, rationales, IDs and objective assignments preserved"
+  },
+  "limits": [
+    "No SME signoff",
+    "No psychometric equivalence evidence",
+    "No final administration authorization",
+    "The observed above-limit longest-answer cue is repaired and guarded; technical item-writing controls do not establish distractor performance or substantive approval"
+  ]
+}

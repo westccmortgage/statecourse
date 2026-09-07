@@ -330,3 +330,41 @@ record retention rule; the Commission's rules implementing § 858-364 and the fo
 notification; and the Oklahoma Real Estate Contract Form Committee's promulgated forms. The RESPA and TRID
 material is stated at the level of principle from the general body of pre-license knowledge and every
 specific is routed to the lender and the closing agent.
+
+<!-- OK-SOURCE-SUPPLEMENT:START -->
+
+## Supplemental source review — 2026-09-06
+
+This required reading clarifies the existing topics; no additional clock-hour credit or regulator approval is claimed.
+
+### closing
+
+Related module 12, §§71.2–71.3. The Closing Disclosure must be distinguished from an earlier estimate
+and reconciled to the actual contract, lender instructions and settlement figures. Under Regulation
+Z, 12 CFR 1026.19(f)(2)(ii), a new three-business-day waiting period is triggered by an inaccurate APR,
+a loan-product change, or addition of a prepayment penalty. Other corrections can require a corrected
+disclosure without automatically restarting that period. The lender determines the applicable APR
+tolerance and timing; do not substitute the phrase "every correction restarts the clock."
+
+In a settlement worksheet, a seller credit reduces buyer cash needed and seller proceeds. Recording
+it twice understates both amounts. Reconcile credits, deposits, payoff figures and prorations against
+their source; do not fix an imbalance by inventing a fee. Possession follows the agreement, not merely
+the delivery of keys or a signature. Under 59 O.S. 858-364 a broker gives the required deed-theft notice
+at closing and obtains the buyer's signed acknowledgment. Account and confidentiality duties can
+survive termination under 858-358; closing does not erase them.
+
+Sources: [Regulation Z, 12 CFR 1026.19](https://www.consumerfinance.gov/rules-policy/regulations/1026/19/); [OREC License Code and Rules, as of November 1, 2025](https://oklahoma.gov/content/dam/ok/en/orec/documents/meetings/Nov%201%202025%20Oklahoma%20Real%20Estate%20Commission%20Code%20and%20Rules%20Book.pdf).
+
+### records
+
+Related module 12, §72.4. OAC 605:10-13-1(l) requires transaction records for at least five years from
+consummation or termination, and trust records for five years from disbursal. The different triggering
+events matter. Paragraph (m) addresses original trust documents, later retention of qualifying copies
+and record accessibility. Five years is a minimum, not permission to destroy material subject to a
+longer legal hold. Preserve legible, retrievable files and audit trails rather than merely an empty
+folder. Section 858-312(26) addresses an adequate written response to a Commission request within
+fifteen days; acknowledgment alone is not necessarily adequate.
+
+Sources: [OREC License Code and Rules, as of November 1, 2025](https://oklahoma.gov/content/dam/ok/en/orec/documents/meetings/Nov%201%202025%20Oklahoma%20Real%20Estate%20Commission%20Code%20and%20Rules%20Book.pdf).
+
+<!-- OK-SOURCE-SUPPLEMENT:END -->

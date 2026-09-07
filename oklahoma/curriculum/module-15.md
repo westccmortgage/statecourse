@@ -340,3 +340,68 @@ the federal Residential Lead-Based Paint Hazard Reduction Act and its rule in th
 oil and gas, seismicity, floodplain and environmental provisions; and any insurance requirement. **No
 Oklahoma environmental standard, threshold, testing requirement or remediation standard appears anywhere
 in this module.**
+
+<!-- OK-SOURCE-SUPPLEMENT:START -->
+
+## Supplemental source review — 2026-09-06
+
+This required reading clarifies the existing topics; no additional clock-hour credit or regulator approval is claimed.
+
+### disclosure
+
+Related module 15, §§83.1 and 83.4. Oklahoma's Residential Property Condition Disclosure Act distinguishes
+a disclosure statement from a disclaimer. Under 60 O.S. 833(A)(1), a disclaimer route requires both
+that the seller has never occupied the property and that the seller has no actual knowledge of a
+defect. "I did not live there" alone does not erase known defects. Under 832(10), the disclosure is
+based on actual knowledge and is not a warranty. The broker's own actual knowledge of an omitted
+defect requires disclosure under 836(C). Section 836(E) does not impose an independent property
+inspection or independent verification duty on the licensee; referral to an inspector is not a reason
+to conceal known facts.
+
+Timing is part of the duty. Under 834(B), if the buyer receives the disclosure or disclaimer after
+making the offer, acknowledgment and confirmation are required before acceptance. Under 834(C), a
+newly discovered defect before acceptance requires prompt written, signed and dated information;
+paragraph (D) requires buyer acknowledgment. Retain the delivered version, update and receipt, not
+just a note saying "disclosures done." An out-of-date assertion cannot be treated as current merely
+because it once appeared in the file.
+
+Sources: [Oklahoma Legislature, Title 60 — Property](https://www.oklegislature.gov/OK_Statutes/CompleteTitles/os60.pdf); [OREC License Code and Rules, as of November 1, 2025](https://oklahoma.gov/content/dam/ok/en/orec/documents/meetings/Nov%201%202025%20Oklahoma%20Real%20Estate%20Commission%20Code%20and%20Rules%20Book.pdf).
+
+### lead
+
+Related module 15, §85.1. For covered pre-1978 housing, federal lead disclosure requires the applicable
+pamphlet, known information, available records/reports and contractual warning/acknowledgments before
+the buyer or tenant becomes obligated. Relevant common-area reports can matter in multifamily
+housing. A purchaser generally receives a ten-day opportunity for a lead inspection or risk assessment;
+the parties can change that period by written agreement and a buyer may waive the opportunity. The
+rule does not itself require the seller to test or guarantee absence of lead. Do not treat a seller's
+lack of knowledge as permission to omit the required paperwork. Source: EPA real-estate lead disclosure
+guidance and its linked federal disclosure rule.
+
+Sources: [EPA — Real Estate Disclosures About Potential Lead Hazards](https://www.epa.gov/lead/real-estate-disclosures-about-potential-lead-hazards).
+
+### environment
+
+Related module 15, §§84.1–84.3. Radon cannot be reliably detected by ordinary senses; testing is the
+way to determine its level (EPA Home Buyer's and Seller's Guide to Radon). A seller's inability to
+smell it is not evidence of absence. Do not disturb suspect asbestos material to make a showing look
+better; professional evaluation is appropriate because disturbance can release fibers (EPA asbestos
+guidance). Flood risk is not zero outside a mapped high-risk zone; FEMA explains that maps, insurance
+requirements and actual exposure are related but different questions. Refer detailed determinations
+to qualified sources and disclose known facts. Do not guarantee environmental safety from appearance.
+
+Sources: [EPA — Home Buyer’s and Seller’s Guide to Radon](https://www.epa.gov/sites/default/files/2015-05/documents/hmbuygud.pdf); [EPA — Protect Your Family from Exposures to Asbestos](https://www.epa.gov/asbestos/protect-your-family-exposures-asbestos); [FEMA NFIP — Flood Zones and Maps](https://www.floodsmart.gov/flood-zones-and-maps/what-is-my-flood-zone).
+
+### wire
+
+Related module 15, §86.2. A changed wire instruction received by email may be business-email compromise.
+Verify independently using a previously established number or other trusted channel, not the contact
+details in the suspect message. A convincing sender name or logo does not establish authenticity. If
+funds have been sent, immediately contact the financial institution and follow its fraud-response
+instructions, preserve evidence and report through the appropriate law-enforcement channels. The FBI
+recommends immediate bank contact; neither investigation nor recovery is guaranteed. Never ask a
+customer to post account numbers publicly to prove a transfer.
+
+Sources: [FBI — Business Email Compromise](https://www.fbi.gov/how-we-can-help-you/common-frauds-and-scams/business-email-compromise).
+
+<!-- OK-SOURCE-SUPPLEMENT:END -->

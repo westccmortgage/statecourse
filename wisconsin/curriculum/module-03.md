@@ -114,8 +114,7 @@ contract is a Board-approved form**, and the licensee **completes** it rather th
 
 Module WI-06 takes the whole regime, including what a licensee may and may not do to an approved
 form. What belongs here is the habit: use the current approved form, complete every blank the
-transaction requires, attach every addendum the form references, and never alter the form's printed
-provisions.
+transaction requires and attach every referenced addendum. Apply the current REEB 16.06 rules: legible crossing-out is permitted by (3), and addenda or other changes must satisfy their specific conditions. Do not hide deletions in a reproduced form or assume unrestricted drafting authority.
 
 ### 14.2 The three types
 
@@ -397,3 +396,5 @@ and no rule from ch. 766 is stated.
 
 Federal lead-based paint requirements and the federal solicitation rules named in Hour 13.2 are
 federal law and are stated at the level of the well-settled requirement.
+
+> Legal-source update, 2026-09-06: the targeted current-rule corrections below supersede the earlier “not read” statements for those provisions. See `wisconsin/regulatory/legal-source-review-2026-09-06.md`. This is not regulator approval or an instructor sign-off.

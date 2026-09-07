@@ -125,13 +125,16 @@ Death or incapacity of a party before acceptance also terminates an offer.
 
 Acceptance must be **unqualified** — the mirror image of the offer — and it must be **communicated in
 the manner the offer requires.** Signature and delivery are different events and may fall on different
-days. **Every deadline in the contract runs from the moment the contract is formed**, and getting that
-moment wrong shifts every subsequent date.
+days. **The formation date anchors provisions that expressly measure time from formation or the
+effective date; it is not the trigger for every contractual deadline.** Other provisions may use
+receipt of a document, delivery of a notice, a specified event, or a fixed calendar date.
 
-The practical discipline: when acceptance is delivered, **write the date down on the contract in the
-place the contract provides, and calculate every deadline from it that same day.** Deadlines
-miscounted from the wrong anchor are among the most common and most avoidable failures in residential
-practice.
+The practical discipline: when acceptance is delivered, **record the date in the place the contract
+provides and build a deadline calendar using each provision's own trigger.** Check calendar versus
+business days, the counting convention, cut-off time, permitted delivery method, designated recipient,
+and any amendment. Record the receipt evidence when a period begins on receipt. Do not replace a
+clause-specific trigger with the signature or formation date. Ask the designated broker and, where
+interpretation is required, counsel about ambiguous terms before a deadline passes.
 
 ### 19.4 Counter-offers
 

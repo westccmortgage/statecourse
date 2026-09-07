@@ -70,8 +70,10 @@ A contract is a legally enforceable agreement to do or refrain from doing a lega
 
 ### 47.2 Where a licensee supplies the defect
 
-**Almost always at element 5.** A misrepresentation — even an innocent one, even one the licensee
-believed, even one merely repeated from a tax record — can undermine the assent the contract depends on.
+One avoidable defect is at element 5: a false material representation may undermine genuine assent.
+Do not infer a frequency claim or that every honestly attributed third-party figure is unlawful.
+For area figures, 59 O.S. 858-515.1 specifically permits identified sources such as tax-assessor
+records and imposes no independent verification duty; this is not a general immunity for other conduct.
 
 Which is why **attribute or verify, never assert** is a contract-formation rule and not merely a
 courtesy, and why § 858-312(2) makes substantial misrepresentations in the conduct of business a ground
@@ -88,7 +90,10 @@ for suspension or revocation.
 **Void** — never had legal effect at all. There is nothing to enforce and nothing to disaffirm.
 
 **Voidable** — **valid and binding unless and until** a party with the power to disaffirm elects to do
-so. A contract with a minor is the standard example: binding on the adult, disaffirmable by the minor.
+so. Consent induced by fraud may supply a ground for rescission under 15 O.S. 233. Do not apply the
+generic "minor's contract is voidable" example to Oklahoma real-property transactions: **15 O.S. 17
+restricts a minor's capacity to contract concerning real property**, except as specially provided by
+statute. A judicial incapacity determination also raises 15 O.S. 24. Refer capacity questions to counsel.
 
 **Unenforceable** — has the elements but cannot be enforced in court, typically because it is not in
 writing or a limitation period has run.
@@ -110,18 +115,14 @@ standard examples.
 
 ### 48.3 The statute of frauds
 
-Certain contracts must be **in writing and signed by the party to be charged** to be enforceable.
-Contracts for the sale of an interest in real estate are within it, as are leases beyond a stated
-duration.
-
-Two consequences. **An oral real estate contract is not void — it is unenforceable**, which is a
-different thing producing different arguments. And the writing must contain the essential terms: the
-parties, an adequate description, the price, and the signature of the party against whom enforcement is
-sought.
-
-**This course states no Oklahoma lease-duration threshold** for the writing requirement, because
-Oklahoma's statute of frauds was not read from primary text for this project. **The practice rule does
-not depend on the threshold: get it in writing.**
+**15 O.S. 136(4)** generally requires a writing subscribed by the party to be charged (or the party's
+agent) for a sale of real property or an interest in it and for a lease **longer than one year**.
+The same subsection requires written authority for an agent making such an agreement for that party.
+The statute uses the word "invalid" for agreements within its rule; do not promise that every oral
+land agreement has one automatic legal outcome without considering the facts and possible exceptions.
+The writing must identify the essential agreement. Counsel determines enforceability where a writing,
+signature, description or authority is disputed. The practical rule is to document terms and signatures
+before relying on a covered agreement, not to assume an oral promise is an adequate substitute.
 
 And in Oklahoma the practice rule has a statutory partner. **§ 858-353(A)(2)(b)** requires a broker to
 **reduce offers or counteroffers to a written form upon request of any party to a transaction.** Not your
@@ -417,9 +418,86 @@ Commission's, from 605:10-5-3(f).
 Oklahoma citations in this module — 59 O.S. §§ 858-312 and 858-353, and 605:10-3-1 and 605:10-5-3 — were
 read on 2026-08-20 and are recorded in `oklahoma/regulatory/primary-text-readings.md`.
 
-**Not read, and therefore stated nowhere in this module:** **the Oklahoma Real Estate Contract Form
-Committee's promulgated forms**, whose existence and use ARE stated because they are a fact of Oklahoma
-practice, but none of whose content, structure, deadlines or provisions is described; Oklahoma's statute
-of frauds; Oklahoma's escrow and trust account provisions; and Oklahoma's limitations periods. Every
-contract-law statement in this module is general law from the body of pre-license knowledge, and the
-course must be reconciled against the promulgated forms before submission.
+**Supplemental review on 2026-09-06:** Oklahoma Legislature Title 15, including capacity, consent,
+formation, writing and rescission provisions, and the January 2026 OREC Residential Sale form were
+read for the assessment repair. Sections 47.2, 48.1 and 48.3 above supersede the previous unqualified
+tax-record, minor-capacity and oral-agreement statements. The assessment-source supplement identifies
+the limited current-form terms taught; illustrative deadlines elsewhere are not promulgated deadlines.
+No comprehensive limitations-period review or legal approval is claimed by this update.
+
+<!-- OK-SOURCE-SUPPLEMENT:START -->
+
+## Supplemental source review — 2026-09-06
+
+This required reading clarifies the existing topics; no additional clock-hour credit or regulator approval is claimed.
+
+### capacity
+
+Related module 09, §47.1 and §48.1. A contract requires capable parties, consent, a lawful object and
+consideration under 15 O.S. 2. Capacity is not established merely by a signature. Oklahoma's 15 O.S. 17
+restricts a minor's power to contract about real property, except as specially provided. Under 15 O.S.
+24, a judicially determined incapacity is not cured by an informal statement that the person now feels
+competent; judicial restoration and the actual order matter. Do not import the generic claim that
+every minor's real-property contract is simply voidable. Seek legal guidance on authority to sign.
+A single unlawful contractual object is not made lawful by payment (15 O.S. 102–104). Fraud, duress
+and qualifying mistake may undermine consent (15 O.S. 53, 58, 63); remedy and rescission depend on facts.
+
+Sources: [Oklahoma Legislature, Title 15 — Contracts](https://www.oklegislature.gov/OK_Statutes/CompleteTitles/os15.pdf).
+
+### writing
+
+Related module 09, §48.3. Under 15 O.S. 136(4), real-property sales and leases longer than one year
+generally require a signed writing; agent authority for such an agreement must also be written.
+For example, a proposed eighteen-month tenancy raises this writing requirement. This is not a rule
+that every oral promise is enforceable or that every disputed oral transaction has the same remedy.
+Read the actual agreement and refer exceptions and enforcement to counsel. Acceptance must conform
+to the offer (15 O.S. 71). If the offer prescribes a particular method, evaluate compliance with that
+method (15 O.S. 68); do not confuse a hypothetical receipt deadline with a universal receipt rule.
+Section 69 addresses when properly transmitted consent is deemed communicated.
+
+An assignment transfers contractual rights; it does not by itself establish the original obligor's
+release. A novation case expressly supplies substitution and release with required consent. That
+distinction is taught as a contractual concept, not falsely attributed to an unrelated statutory
+novation section. Written amendments record changed terms. Under 15 O.S. 237, a written contract can
+also be altered by an executed oral agreement; that exception is not advice to rely on unperformed
+oral changes. Stipulated damages require lawful entitlement, not simply a broker's preference. In
+real-estate sales, 15 O.S. 215(B) distinguishes amounts at or below five percent of the price from
+larger amounts whose reasonableness must be established. This is not an automatic right to disburse
+escrow. Counsel resolves disputed remedies and the holder follows applicable escrow requirements.
+
+Sources: [Oklahoma Legislature, Title 15 — Contracts](https://www.oklegislature.gov/OK_Statutes/CompleteTitles/os15.pdf).
+
+### electronic
+
+Related module 09, §48.3. The January 2026 OREC Residential Sale form, printed page 1, states that
+electronic signatures have the same force and effect as original signatures and permits identical
+contract counterparts, including electronic copies. This is a
+specific current-form term, not a claim that every electronic message forms a contract. The parties,
+material terms, assent, signature and delivery still must be established. A screenshot of negotiations
+does not substitute for the agreed executed instrument. Preserve the final version and its delivery
+record. Never enter a signature for another person without authority.
+
+Sources: [OREC Residential Sale, January 1, 2026](https://oklahoma.gov/content/dam/ok/en/orec/documents/contracts-and-forms-page/2026-contract-forms/2026%20Residential%20Sale.pdf).
+
+### forms
+
+Related module 09, §53.2. The January 2026 Residential Sale PDF begins with a separate one-page
+acknowledgment of disclosures, followed by the seven-page Residential Contract. Its first printed
+contract page lists supplemental agreements and addenda to identify which are part of the agreement;
+the listed or attached documents must be read together. The Parties clause makes signatures with
+delivery to their respective brokers, if applicable, binding. It supersedes prior negotiations and
+requires a further written agreement of buyer and seller for modification or assignment. Negotiation, counteroffer,
+execution, delivery, notice, amendment and closing are distinct events. An addendum supplies terms;
+an amendment changes existing terms; a notice communicates or exercises an existing right. In an
+assessment that explicitly supplies a different deadline or clock convention, calculate from those
+stated facts rather than inventing an OREC deadline.
+
+OREC develops standardized forms for voluntary use under 59 O.S. 858-208(14). Availability of a form
+does not make every form mandatory or make a licensee qualified to draft custom legal clauses. Select
+the suitable current form, complete factual fields accurately, attach applicable documents and refer
+unfamiliar legal drafting to counsel. Neither a published form nor a course draft is evidence that
+StateCourse has provider, instructor or course approval.
+
+Sources: [OREC Residential Sale, January 1, 2026](https://oklahoma.gov/content/dam/ok/en/orec/documents/contracts-and-forms-page/2026-contract-forms/2026%20Residential%20Sale.pdf); [OREC License Code and Rules, as of November 1, 2025](https://oklahoma.gov/content/dam/ok/en/orec/documents/meetings/Nov%201%202025%20Oklahoma%20Real%20Estate%20Commission%20Code%20and%20Rules%20Book.pdf).
+
+<!-- OK-SOURCE-SUPPLEMENT:END -->

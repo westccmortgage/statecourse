@@ -1,5 +1,11 @@
 # Missouri — primary text readings
 
+## Dated addendum — 2026-09-06
+
+The regulator-hosted [PSI Missouri Real Estate Candidate Handbook](https://pr.mo.gov/boards/realestate/MOREP-handbook.pdf) was successfully opened in a normal browser. Its printed pages 12–14 (PDF pages 13–15 of 17) were inspected: the national salesperson outline has eleven subject groups and the state salesperson outline six groups totaling forty questions. This supersedes the historical statement below that the outline had never been read. The browser observation does not establish the handbook's revision date or that it represents the latest contracted job analysis; the attempted direct download did not pass TLS verification, so no upstream PDF digest is asserted. Full lesson-by-lesson reconciliation remains required. The new protected final forms cover all nine authored modules using provider-designed weights, not claimed PSI-equivalent weights.
+
+The original August 20 reading record follows unchanged as historical provenance.
+
 **Read on 2026-08-20.** Every section below was read from the operative text, not from a summary.
 Sources: the Secretary of State's current Code of State Regulations PDFs at `sos.mo.gov`, and the
 Revisor of Statutes at `revisor.mo.gov`.

@@ -1,7 +1,11 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
 import {servePublicAssets} from '../worker/public-assets.mjs';
 const origin='https://statecourse-course.crdpartners2020.chatgpt.site';
+test('root favicon cannot shadow the StateCourse icon with a starter-template asset',()=>{
+ assert.equal(readFileSync(new URL('../public/favicon.svg',import.meta.url),'utf8'),readFileSync(new URL('../public/statecourse/favicon.svg',import.meta.url),'utf8'));
+});
 test('both namespaces resolve pages, CSS, JS, lesson files and JSON to the same assets',async()=>{
  for(const route of ['/','/national.css','/free-practice.js','/free-practice/','/real-estate/michigan/','/free-practice/courses/example.json','/free-practice/lessons/example/module-01.md'])
  for(const prefix of ['','/statecourse']){

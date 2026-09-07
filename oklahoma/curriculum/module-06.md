@@ -74,7 +74,9 @@ there is no agency relationship underneath them. What exists is a **brokerage ag
 A **net** arrangement is one in which the owner receives a fixed net amount and the broker keeps whatever
 is above it.
 
-The structural problem is that **the broker is compensated more the worse the owner does on price.**
+The potential conflict is that **the broker receives the increase above a fixed seller net**, so the
+owner may not appreciate how much market value is being allocated to the broker. The owner's stated
+net does not fall merely because the sale price rises; the previous inverse-price description was wrong.
 Under § 858-353(A)(1) a broker owes **honesty and reasonable skill and care to all parties**, and under
 § 858-353(A)(7) compensation must be disclosed in writing before the contract's effective date — an
 arrangement whose amount is unknown until the sale price is known makes that disclosure difficult to
@@ -259,8 +261,10 @@ else's figure. School assignment changes. Zoning is the municipality's determina
 determination, not a glance at a map.
 
 *"The county record shows 1,940 square feet; if the exact figure matters to you, have it measured."*
-That sentence costs nothing and is complete protection, and it is what § 858-353(A)(1) — honesty and
-reasonable skill and care to all parties — looks like in a listing description.
+That sentence identifies the source. Section 858-515.1 permits specified third-party area sources,
+including tax-assessor records, with source identification and without independent verification. Its
+limited protection is not a guarantee of accuracy or immunity for every marketing statement. Honesty
+and reasonable care under 858-353(A)(1) still matter. This clarification was source-reviewed 2026-09-06.
 
 ### 34.3 Showings and feedback
 

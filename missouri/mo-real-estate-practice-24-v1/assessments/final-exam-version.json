@@ -1,0 +1,12 @@
+{
+  "courseId": "mo-real-estate-practice-24-v1",
+  "version": "2026-09-06-substantive-replacement-v1",
+  "authoredContentSha256": "0d068c76306de2eb2638c500920361632f935ab64b12294e10ff3f4a4d8f9d47",
+  "renderedBankSha256": "99261591928bcba8143b3323197a0c9c53ac34c6bb127c4ab4e2abc0292c80ac",
+  "forms": 2,
+  "questionsPerForm": 50,
+  "approved": false,
+  "instructorSigned": false,
+  "public": false,
+  "blueprintBasis": "Provider-designed item allocation covering all sixteen Commission MREP topics in each form."
+}

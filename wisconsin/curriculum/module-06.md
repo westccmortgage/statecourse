@@ -273,29 +273,23 @@ contract becomes a drafting question.
 
 ### 32.2 What a licensee may do
 
-**Use the current approved form** for the transaction.
-**Complete the blanks** with what the parties have agreed — names, property, price, dates, amounts,
-selections among the form's own options.
-**Select and attach the addenda** the transaction requires.
-**Explain, in ordinary language, what a provision of the form provides.**
+**Use the latest applicable approved form.** REEB 16.06(7) controls the version; 16.04 identifies when approved forms are required and its exceptions. Under 16.04(2), when no approved contractual form exists for the purpose, a licensee may use a party- or attorney-drafted form with the drafter identified. Under 16.04(3), a licensee acting as agent may negotiate an agreement and permit the parties or their attorney to prepare the agreement containing the negotiated terms.
 
-That is licensed activity, and refusing to help a client complete an approved form would itself be a
-failure of the duties in § 452.133(2).
+**Complete the blanks and options to accomplish the party's contractual instructions.** Under 16.06(3), provisions may be crossed out if the deleted text remains legible. This is not the same as secretly deleting printed text from a reproduced standard form. Reproduction must comply with 16.06(1); the forms identified in 16.06(2) have a separate no-modification restriction.
+
+**Use pre-prepared addenda only under the applicable rule.** An addendum covered by 16.06(4) must be prepared by an identified firm or attorney, properly incorporated, and relate to blanks or optional provisions. An addendum altering printed provisions under 16.06(5) must be prepared by an identified attorney, have no optional or multiple-choice provisions, and no blanks except the limited permitted items. Sections 16.06(6) and (9) allow the specified listing and buyer-agreement conversions.
+
+**Give a general explanation, not a legal ruling.** REEB 16.05(2) permits a general explanation of approved-form provisions at completion or delivery for acceptance. Paragraph (1) prohibits advice or opinions on legal rights, obligations, the effect of a specific contract or conveyance, or title. Paragraph (3) limits use to incidental real-estate practice; (4) prohibits a separate form-completion charge.
+
+**Give the signer a copy promptly.** REEB 15.02(1) requires an exact and complete copy promptly when the person signs; do not wait automatically for closing.
+
+**Do not conceal part of the parties' bargain from the lender.** If a licensee knows the entire agreement has not been disclosed to the financial institution or other lender financing the purchase, REEB 24.07(4) requires timely written disclosure of that fact to the lender.
 
 ### 32.3 What a licensee may not do
 
-**Alter the form's printed provisions.**
-**Draft bespoke legal language** to solve a legal problem — however sensible the sentence would be.
-**Advise on the legal effect** of a provision, or on whether a party is in default, or on what a
-remedy would be.
-**Prepare a deed**, or advise which deed to use.
-**Use a form the Board has not approved** where an approved form exists for the transaction.
+A licensee may not give the legal advice prohibited by REEB 16.05(1), disguise an altered reproduction as the unchanged approved form, make a separate form-completion charge, or ignore the addendum and version conditions. **A blanket ban on every alteration of printed provisions is incorrect:** legible crossing-out and the specific permitted conversions are addressed in 16.06.
 
-**§ 452.133(2)(am)** supplies the line: the duty to advise runs to matters **within the scope of the
-knowledge, skills and training required under ch. 452**. **REEB 24.03** — competence in area of
-service — carries the same idea as an ethics rule. And **§ 452.135**'s own printed disclosure says it
-to the consumer directly: *if you need legal advice, tax advice, or a professional home inspection,
-contact an attorney, tax advisor, or home inspector.*
+The approved additional forms under 16.03 differ for brokers and salespersons. For example, the State Bar conveyance forms in 16.03(1)(a) are among the broker approvals and are not included in the additional forms granted to salespersons by (2). A salesperson must not infer deed-preparation authority from the broker provision. Consult the complete rule and supervising broker for the actual transaction.
 
 ### 32.4 The practical discipline
 
@@ -312,8 +306,7 @@ parties have not decided. An undecided term is a term to be decided, not a blank
 **Control the version.** Where several signed counterparts circulate by email, the question of which
 document is the contract must never be genuinely open.
 
-**This course does not reproduce any approved form, and states no provision of one**, because ch. REEB
-16 and the forms themselves have not been read from primary text for this project. A student is taught
+This course does not reproduce the Board-approved forms. The targeted current REEB 16 form-use rules were read on 2026-09-06; the actual current form must still be obtained for each transaction. A student is taught
 the **structure and the discipline**; the forms in use are the Board's current versions, obtained from
 the Board.
 
@@ -885,7 +878,7 @@ A file that shows all of that answers a complaint. A file assembled afterwards a
 **Leaving a blank because the parties have not decided.** An undecided term is a term to decide.
 **Referencing an addendum that is not attached.**
 **Using a superseded version of an approved form.**
-**Altering an approved form's printed provisions.**
+**Altering approved forms outside the permitted methods or hiding the original printed text.**
 **Writing a clause to solve a legal problem.** Route it.
 **Advising on default or on entitlement to earnest money.** Legal conclusions.
 **Letting a contingency lapse without notice.** The protection is gone.
@@ -905,8 +898,7 @@ effective 9-1-24 — counter-offers, multiple counter-proposals, cancellation ag
 releases, options, bills of sale, and exchanges. Hours 34 and 37 teach the amended paragraphs and say
 so at each one.
 
-**This module reproduces no Board-approved form and states no provision of one.** **Ch. REEB 16 and the
-forms themselves have not been read from primary text for this project.** Hour 32 teaches the regime —
+**This module reproduces no Board-approved form and states no provision of one.** The targeted REEB 16 provisions were read on 2026-09-06; the course does not claim an exhaustive review of every individual Board-approved form. Hour 32 teaches the regime —
 what a licensee may and may not do with an approved form — and Hours 33 through 38 teach the structure
 and the discipline. Every reference to what "the approved offer addresses" is a statement that the form
 deals with the subject, not a statement of what it says. **An instructor supplementing this module with
@@ -925,3 +917,5 @@ Federal statements — the statute of frauds principle, section 1031 exchanges, 
 disclosure and its ten-day opportunity, and the Closing Disclosure delivery requirement — are federal
 law or general contract law and are stated at the level of the well-settled requirement. **No TRID
 waiting period is given in days.**
+
+> Legal-source update, 2026-09-06: the targeted current-rule corrections below supersede the earlier “not read” statements for those provisions. See `wisconsin/regulatory/legal-source-review-2026-09-06.md`. This is not regulator approval or an instructor sign-off.

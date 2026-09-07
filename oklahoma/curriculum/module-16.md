@@ -167,14 +167,16 @@ or other property coming into possession of the licensee which belong to others.
 money or property of others is received by the licensee and held in an escrow account that contains only
 money or property of others.**
 
-**Read (16) carefully: the exception requires an account containing ONLY other people's money.** An
-operating account with careful internal bookkeeping does not satisfy it.
+Read the Code with **OAC 605:10-13-1(b)**: the rule permits personal funds sufficient to maintain the
+account's integrity and cover the financial institution's servicing charges. This narrow exception is
+not permission to pay operating expenses or store arbitrary company reserves in trust. An operating
+account with careful internal bookkeeping does not become a compliant trust account.
 
 **An owner who says "just put the deposits in the operating account, it's simpler" is asking you to commit
 the conduct § 858-312(16) names.** The answer is no, and it does not become yes because the owner is the
 client or because a spreadsheet tracks each balance.
 
-**This course states no Oklahoma trust or escrow account threshold, deadline or procedure**, because those
+**Original review limitation, superseded in part by the 2026-09-06 assessment-source supplement:** those
 provisions were not read from primary text for this project. **Read them and your broker's written
 procedures before you touch a deposit.**
 
@@ -282,3 +284,42 @@ Oklahoma citations in this module — 59 O.S. §§ 858-302, 858-312, 858-351 to 
 notice period, security deposit rule, remedy and eviction procedure in them; Oklahoma's trust and escrow
 account provisions; and the Oklahoma Real Estate Contract Form Committee's promulgated forms. **Every
 dollar figure is an invented arithmetic illustration and is not Oklahoma market data.**
+
+<!-- OK-SOURCE-SUPPLEMENT:START -->
+
+## Supplemental source review — 2026-09-06
+
+This required reading clarifies the existing topics; no additional clock-hour credit or regulator approval is claimed.
+
+### trust
+
+Related modules 10, §59.2 and 16, §90.1. Trust money belongs to the entitled party, not to the firm.
+Commingling and failure to account/remit are distinct concerns under 59 O.S. 858-312(16) and (6).
+OAC 605:10-13-1 requires bookkeeping that identifies ownership, receipts, disbursements and balances.
+If three separate ledgers hold $3,100, $2,400 and $1,200, their liability total is $6,700; an unrelated
+firm expense cannot properly reduce a client's balance. This arithmetic example prescribes no
+deadline or deposit rule. Reconcile the bank and transaction ledgers, investigate discrepancies and
+preserve records. For a disputed deposit, preserve funds and use authorized disposition procedures,
+including the applicable rule or interpleader route; do not decide a party's legal entitlement by
+preference or pay office expenses while waiting.
+
+Sources: [OREC License Code and Rules, as of November 1, 2025](https://oklahoma.gov/content/dam/ok/en/orec/documents/meetings/Nov%201%202025%20Oklahoma%20Real%20Estate%20Commission%20Code%20and%20Rules%20Book.pdf).
+
+### tenancy
+
+Related module 16, §§89.2 and 90.1. Read the Oklahoma Residential Landlord and Tenant Act, not only the
+management contract. Under 41 O.S. 118(A), landlord obligations include specified habitability and
+maintenance duties; supplied plumbing and common areas in covered multifamily premises cannot simply
+be ignored. The section has qualifications and limited written-agreement provisions, not a blanket
+rule that every conceivable repair is always landlord-paid. Under 41 O.S. 127, the tenant has duties
+concerning cleanliness, proper use, damage and peaceful enjoyment. A complaint is evaluated under the
+applicable duty and facts, without retaliatory or discriminatory treatment. Security deposits are
+handled under 41 O.S. 115; where an assessment expressly supplies lawful deductions, subtract those
+amounts without inventing another fee. This example does not establish deduction eligibility or a
+return deadline. Federal fair-housing accommodation obligations can apply during an existing tenancy,
+not just at application. Evaluate a disability-related request individually rather than imposing an
+automatic no-exceptions rule; a request is not automatically granted regardless of reasonableness.
+
+Sources: [Oklahoma Legislature, Title 41 — Landlord and Tenant](https://www.oklegislature.gov/OK_Statutes/CompleteTitles/os41.pdf); [U.S. Code (2024), Title 42, Chapter 45 — Fair Housing](https://www.govinfo.gov/content/pkg/USCODE-2024-title42/pdf/USCODE-2024-title42-chap45.pdf); [HUD/DOJ — Reasonable Accommodations](https://www.hud.gov/sites/documents/huddojstatement.pdf).
+
+<!-- OK-SOURCE-SUPPLEMENT:END -->

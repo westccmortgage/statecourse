@@ -137,12 +137,12 @@ intention through:
 ### 2.2 Trade fixtures
 
 A **trade fixture** is an item a tenant attaches for the conduct of their business — a walk-in cooler,
-a hydraulic lift, shelving fitted to a shop floor. Trade fixtures **remain the tenant's personal
-property and may be removed before the term ends**, with the tenant repairing damage from removal.
-
-**The right expires with the term.** Property left behind after the lease ends generally becomes the
-landlord's by **accession**. A departing business that abandons its equipment has usually made a gift
-of it.
+a hydraulic lift, shelving fitted to a shop floor. **60 O.S. 334** allows a tenant, during the term,
+to remove qualifying items affixed for trade, manufacture, ornament or domestic use if removal can
+occur without injury to the premises and the item has not become an integral part of them. An
+agreement permitting removal or an owner's permission can also matter. Do not assume every attached
+business item is removable or that leaving it behind automatically proves a gift. Review the lease,
+attachment, damage and timing; refer disputed ownership or removal rights to counsel.
 
 ### 2.3 Three patterns, all preventable at listing
 
@@ -269,7 +269,9 @@ Two rules govern every piece of it, and both come back in Module OK-13 on Fair H
 - **Attribute or verify. Never assert.** Every figure in a listing came from somewhere. Square footage
   from a tax record is an assessment record and not a measurement; acreage from a prior listing is
   somebody else's figure. *"The county record shows 1,940 square feet; if the exact figure matters to
-  you, have it measured"* costs nothing and is complete protection.
+  you, have it measured"* identifies a source. Under 59 O.S. 858-515.1, permitted third-party area
+  sources must be identified; independent verification is not required. This does not guarantee area
+  accuracy or create blanket protection for unrelated false statements. See the assessment supplement.
 
 ### 5.2 The Oklahoma path to a licence
 

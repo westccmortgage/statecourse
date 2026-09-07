@@ -401,7 +401,7 @@ later module develops:
 **§ 452.139** — revisions to common law duties and responsibilities. Module WI-02.
 **§ 452.136** — advertising. Module WI-10.
 **§ 452.13** — trust accounts, and the rules promulgated under § 452.13(5). Module WI-13.
-**§ 452.23** — investigations and inspections. Module WI-10.
+**§ 452.23** — disclosures and inspections by brokers and salespersons, including particular disclosure limits, third-party-report conditions, contradictory facts, and the prudent-licensee standard of care. This is not the Department's investigation-power statute. Module WI-10, section 62.1.
 **§ 452.05(1)(b)** — the Board's power to approve forms, which is why Wisconsin brokerage runs on
 approved forms at all. Module WI-06.
 

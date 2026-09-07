@@ -278,8 +278,9 @@ which for condominiums is a live question and not a formality.
 **closing back to it**. A description that does not close does not describe a parcel.
 
 **Rectangular survey, or government survey.** A grid built from **principal meridians** running north
-and south and **base lines** running east and west. **Oklahoma's is the Indian Meridian and the Indian
-Base Line**, and most Oklahoma land outside the platted towns is described from it. **Townships** run
+and south and **base lines** running east and west. **Most of Oklahoma uses the Indian Meridian and
+Indian Base Line; the Panhandle uses the Cimarron Meridian and Cimarron Base Line.** Identify the
+applicable survey system from the actual description rather than assuming one statewide origin. **Townships** run
 in horizontal tiers and vertical **ranges**; each township is six miles square and holds **36
 sections**, each one mile square and **640 acres**. Sections are numbered 1 through 36 beginning in the
 north-east corner and running back and forth, so section 36 lands in the south-east corner.
@@ -325,9 +326,12 @@ Recognising 43,560 on sight saves time on the examination and in practice.
 seller's recollection.** It comes from the **deed** or from the **title company**, and it is copied
 exactly, character for character.
 
-The same discipline covers acreage. The assessment roll is an assessment record, not a survey.
-Repeating it as fact is a representation about a measurement nobody verified. Route acreage, boundaries
-and anything near a water line to a **surveyor**.
+Distinguish a legal description from an attributed size figure. Under **59 O.S. 858-515.1**, a licensee
+is not required to provide an area figure. If the licensee supplies one from a permitted third-party
+source, including tax-assessor records, the source must be identified. The statute does not impose an
+independent duty to investigate or verify that figure. An assessor figure is not thereby a boundary
+survey. Recommend a qualified surveyor where exact acreage or boundaries matter; do not claim that
+source attribution guarantees accuracy or immunizes unrelated misrepresentations.
 
 **And in Oklahoma, add one more:** a legal description of the surface says nothing about who owns the
 minerals. That is a separate title question and it is routed with the rest of the title work.
@@ -349,6 +353,9 @@ Commission's Code and Rules effective 1 November 2025 and are recorded in
 **Not read, and therefore stated nowhere in this module:** Oklahoma's limitations, mechanic's lien,
 concurrent ownership, marital property, condominium and subdivision provisions; its oil, gas and
 mineral title provisions; and the Oklahoma Real Estate Contract Form Committee's promulgated forms. No
-period, threshold or figure from any of them appears. The Indian Meridian and Indian Base Line are
-named as the Oklahoma reference points of the federal rectangular survey system, which is a fact of
-surveying rather than a provision of Oklahoma law.
+period, threshold or figure from those unreviewed subjects appears. On 2026-09-06 the survey-system
+description was corrected against the Oklahoma Corporation Commission's Royalty Owners Booklet and
+USGS Oklahoma public-land-survey metadata (Indian system for most land; Cimarron for the Panhandle).
+The same repair reviewed 59 O.S. 858-515.1 in the November 2025 OREC Code and Rules and corrected the
+distinction between source attribution for a size figure and verification of a legal description.
+The source supplement and final-exam source manifest record this later review separately.

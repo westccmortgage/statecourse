@@ -1,3 +1,7 @@
+# Current correction notice
+
+The 2026-08-20 text below is a historical reading record. For current corrected provisions, read [the 2026-09-06 review](legal-source-review-2026-09-06.md), especially the repeal of REEB 24.07(3), the REEB 15/17/23 chapter labels, and current REEB 16/18 conditions. Historical “not read” statements do not override the later documented readings.
+
 # Wisconsin — primary text read directly
 
 **Read:** 2026-08-20, from `docs.legis.wisconsin.gov`, the Wisconsin Legislature's publication of the

@@ -33,58 +33,35 @@ By the end of this module the student will be able to:
 
 ### 70.1 What this topic is for
 
-**REEB 25.033(19)** gathers the parts of Wisconsin's regulatory scheme a salesperson meets that do not
-sit inside another topic. It is the module that tells a licensee **where things are**, and its value is
-navigational.
+REEB 25.033(19) groups miscellaneous Wisconsin license-law topics. The chapter names are substantive navigation: REEB 15 is records and copies; REEB 16 is forms; REEB 17 is firm association; REEB 18 is trust accounts; and REEB 23 is changes of name, address, trade name, or organization. They are not interchangeable.
 
-**This course names each chapter and states what it governs. It does not state the text of any of them**,
-because **chs. REEB 15, 16, 17, 18, 23 and 24 have not been read from primary text for this project.** A
-student must read them, and an instructor supplementing this module must obtain and date the reading.
+Current primary text for those chapters and REEB 24 was reviewed on 2026-09-06. The dated source record identifies the exact provisions used. This brokerage-record discussion must not be confused with the school's separate student-record retention controls.
 
 ### 70.2 Ch. REEB 15 — REEB 25.033(19)(a)
 
-**Ch. REEB 15** governs **licensure** — the requirements, procedures and conditions attaching to a real
-estate licence in Wisconsin.
+**REEB 15 — Obligation to furnish copies and maintain records.** REEB 15.02 requires prompt exact and complete copies for signers and addresses delivery of completed transaction documents. A signer is not required to wait until closing for a copy.
 
-What a salesperson needs from it: how the licence is obtained and renewed; what continuing education is
-required and when; what must be reported to the department and within what period; what happens to a
-licence on lapse; and the mechanics of association with a firm and of leaving one.
+Under **REEB 15.04(1)**, the firm retains transaction documents and correspondence for **at least two years** after closing; if the transaction is not consummated, the period runs from termination of the agency agreement or listing contract. Applicable federal requirements may require longer retention. Records involved in an active Board investigation must be kept until the investigation is completed. Electronic storage is allowed under the rule. Associated licensees must submit transaction documents to the firm in a timely manner under (2).
 
-**This course states no education hour count, fee, renewal date or reporting deadline.** They change,
-and a licensee's own obligations must be read from ch. REEB 15 and the department's current publication
-rather than from a course.
+Example: a consummated transaction closing June 10, 2026 has a two-year minimum through June 10, 2028, absent a longer applicable requirement. The firm's own longer retention policy may exceed this floor. This is a brokerage-file rule, not a reduction of any student-record retention policy.
 
 ### 70.3 Ch. REEB 16 — REEB 25.033(19)(b)
 
-**Ch. REEB 16** governs the **forms** used in real estate transactions, under the Board's power at
-**§ 452.05(1)(b)**. Module WI-06 took the regime: a licensee **completes** an approved form rather than
-drafting one, may not alter its printed provisions, and may not use a non-approved form where an approved
-one exists.
+**REEB 16 — Forms.** Sections 16.03 and 16.04 specify approved forms and exceptions; brokers and salespersons do not have identical additional-form authority. Section 16.05 prohibits legal advice about specific rights, obligations, legal effects, or title, while permitting general explanation of approved-form provisions. A separate form-completion charge is prohibited by 16.05(4).
+
+Under 16.06(3), a licensee may cross out a provision to reflect a party's agreement **if it remains legible**. Pre-prepared addenda must satisfy (4) or (5); an addendum altering printed provisions under (5) requires an identified attorney and the stated restrictions. The chapter also permits the listing and buyer-agreement conversions in (6) and (9). This is controlled form use, not unrestricted legal drafting. See Module WI-06, sections 32.2–32.3.
 
 ### 70.4 Ch. REEB 17 — REEB 25.033(19)(c)
 
-**Ch. REEB 17** governs **business practices** — the operational requirements a firm and its licensees
-must meet.
+**REEB 17 — Licensees associated with a firm.** REEB 17.03(4) permits a salesperson to engage in real-estate practice only when associated with a firm. Its provisions also address broker association and assistants; the applicable exceptions must be read before relying on them.
 
-The subjects a salesperson should expect to find there and must read: the firm's **office and
-supervision** requirements; **records** — what must be kept, in what form, and **for how long**; the
-handling of documents and copies to the parties; and the operational obligations that sit alongside the
-conduct rules in ch. REEB 24.
-
-**This course states no record retention period**, because ch. REEB 17 has not been read. It is exactly
-the kind of figure a course invents by carrying it from another state, and a licensee must read the
-current rule.
+The firm's duties of supervision are addressed separately in **Wis. Stat. 452.132**. Transaction-copy and record-retention requirements are in **REEB 15**, not REEB 17. Obtaining an individual salesperson credential does not by itself establish authority to operate an independent brokerage.
 
 ### 70.5 Ch. REEB 23 — REEB 25.033(19)(e)
 
-**Ch. REEB 23** governs **disciplinary proceedings and the Board's disciplinary authority** — the
-procedural chapter behind **§ 452.14**, which Module WI-10 Hour 62.1 set out.
+**REEB 23 — Change of name or address on license, trade name or form of organization.** Under **23.02**, notify the Department in writing within **30 days** of a name or address change. Under **23.03**, notify the Department of a trade name before its use. Under **23.04**, a licensed business entity changing its type of business organization must obtain a new license before conducting real-estate business under the new type.
 
-What a licensee carries: **discipline is a real process with notice, a response period, and a hearing
-right**, and the correct response to a complaint is to notify the supervising broker immediately,
-preserve every record and change nothing, respond within the time given, and obtain counsel.
-
----
+REEB 23 is not the continuing-education chapter and is not a chapter of disciplinary procedures. Disciplinary authority must be traced to the applicable statute and procedural rules, rather than inferred from this chapter number.
 
 ## Hour 71 — Ch. REEB 18: trust accounts and trust funds
 
@@ -116,56 +93,29 @@ whatever was repaid.
 
 ### 71.3 Interest-bearing and non-interest bearing — REEB 25.033(19)(d)2
 
-The rule requires instruction on both. The substantive questions a licensee must be able to identify:
-**whether an account bears interest**; **who is entitled to the interest**, which is not automatically the
-firm; **what the parties may agree**; and **what documentation is required.**
+**REEB 18.031(3)** distinguishes client funds from other trust funds. The common interest-bearing client-funds account described in (3)(a) names the **Department of Administration as beneficial owner of the interest**, after the permitted service charges. The firm may not use or maintain client funds for its own benefit.
 
-**This course states no rule about which account must be used or to whom interest belongs**, because
-ch. REEB 18 has not been read. What a licensee must never do is **assume the interest belongs to the
-firm.**
+For other trust funds, (3)(b) permits an interest-bearing arrangement with the specified written authorization and identification of the interest beneficiary; the interest may not inure to the firm's benefit. Identify the funds and the applicable paragraph before opening or using an account. “The account is in the firm's name” does not make its interest the firm's revenue.
 
 ### 71.4 Definition of trust funds — REEB 25.033(19)(d)3
 
-**Trust funds** are money belonging to others that comes into the firm's hands in connection with a real
-estate transaction. In practice: **earnest money**; **rents collected for an owner**; **tenant security
-deposits**; money advanced for expenses of a transaction; and other money the firm holds for a party.
+**REEB 18.02** defines client funds and trust funds. Trust funds include cash, checks, and notes belonging to others that come into the firm's hands in connection with real-estate practice, including earnest money and the specified rents or deposits. The definitions and rental exceptions matter; not every category is handled identically.
 
-**§ 452.133(1)(f) makes safeguarding them a duty owed to every party**, so the tenant whose deposit the
-firm holds is owed it as much as the owner is.
+**Wis. Stat. 452.133(1)(f)** requires safeguarding trust funds and other property held. A firm's operating account is not a substitute for legally required trust handling.
 
 ### 71.5 When a trust account is required — REEB 25.033(19)(d)4
 
-The rule requires instruction on **when** an account is required, which implies circumstances in which
-one is not — for example where a firm never holds trust funds because another party always does.
+The account and permitted holder depend on the type of funds and the rule. **REEB 18.031(4)** applies to a licensee having an ownership interest in the rental property: the licensee must place those security deposits in a real-estate trust account or provide in the lease for an account maintained in the owners' names. Separately, **REEB 18.031(5)(b)** permits a firm to deposit rental application deposits, rents, and security deposits made payable to one or more owners directly into an owner's account. Firm or associated-licensee disbursements from that account require the owner's written authorization.
 
-**This course states no threshold or exception**, because the chapter has not been read. The operational
-consequence a salesperson must know: **if you are handed money that is not the firm's, you must know
-where it goes and by when, before you take it.**
+These limited owner-account provisions do not permit the firm's operating account to be used as an informal substitute. Read the exact conditions, owner authorization, payment direction, and lease before applying an exception; do not teach that every owner account is either always permitted or always forbidden.
 
 ### 71.6 Deposit of trust funds — REEB 25.033(19)(d)5
 
-The rule requires instruction on the **deposit** of trust funds, which in every state's scheme means:
-**by when**, **into which account**, and **with what record**.
+**REEB 18.031(2)** requires the licensee promptly to submit trust funds to the firm. A salesperson does not delay submission for personal convenience, use a personal account, or choose a recipient based on one party's unsupported request.
 
-**This course states no deadline.** What it states is the discipline, which does not depend on the
-figure:
+Under **18.031(1)**, the firm generally deposits trust funds within **48 hours of receipt by the firm or an associated licensee**, subject to the rule's holiday/banking-closure timing. If receipt occurs on the day before a holiday or another bank-closure day, the rule requires deposit within the next two business days. A check not depositable in the firm's trust account must be forwarded to the payee or returned to the payer no later than one business day after receipt. The actual payee and applicable exception must be checked rather than assuming every check follows the same route.
 
-**A cheque received is delivered promptly** to the account or to the holder the contract names. A cheque
-carried in a bag over a weekend is a problem in the making, and a cheque held to "see whether the deal
-firms up" is worse.
-
-**Every dollar is traceable**: from whom it was received, when, into which account it was deposited,
-when, and its final disposition.
-
-**Every owner and every deposit has its own running balance**, and the account's sufficiency is measured
-against the **sum of the ledgers**, not the bank balance — Module WI-11 Hour 66.3.
-
-**Reconcile monthly** and retain the reconciliation.
-
-**A disputed deposit is never resolved by the licensee choosing a side.** It goes to the supervising
-broker and, where necessary, to counsel, and it is disbursed only as the contract and the rules permit.
-
----
+Record receipt, source, transaction, account, deposit, and disposition. Keep individual balances and reconciliations; one owner's funds cannot finance another owner's property. A disputed deposit is handled under the agreement and applicable disbursement rule, with supervising-broker and legal review where needed—not by a salesperson choosing a side. This section does not replace the full REEB 18 account, bookkeeping, and disbursement requirements.
 
 ## Hour 72 — Marital property, mortgage banking, and escrow
 
@@ -307,12 +257,7 @@ recorded in `wisconsin/regulatory/primary-text-readings.md`: **REEB 25.033(19)(a
 including the five ch. REEB 18 elements and the five escrow elements, and **REEB 25.033(5)(k)**; and
 **§ 452.133(1)(c), (1)(f), (2)(am), (3)(a) and (3)(c)**, **§ 452.14**, and **§ 452.05(1)(b)** as cited.
 
-**Chs. REEB 15, 16, 17, 18, 23 and 24 have not been read from primary text for this project, and no text
-of any of them is quoted or paraphrased.** Hours 70 and 71 name each chapter, state what it governs from
-its own title and from the citing rule, explain the practice consequence, and instruct the student to
-read the chapter. **No record retention period, education hour count, fee, renewal date, reporting
-deadline, trust-account deposit deadline, or interest rule is stated**, and each is identified as
-something the licensee must read from the current rule.
+The 2026-09-06 source review supersedes the original unread-source limitation for the REEB provisions corrected in Hours 70–71. See the dated review for scope; it does not certify all other laws cited in this module.
 
 **Ch. 766 has not been read, and Hour 72.1 states the marital property regime as a practice consequence
 rather than as a rule** — that a spouse may hold an interest and may need to sign even where not on the
@@ -323,3 +268,5 @@ is likewise named and not stated.
 **The escrow content in Hour 72.3 is organised around the distinction REEB 25.033(19)(h) itself draws** —
 which escrows require a separate agreement and which do not — and stops at element 5, drafting, which is
 where the licensee stops.
+
+> Legal-source update, 2026-09-06: the targeted current-rule corrections below supersede the earlier “not read” statements for those provisions. See `wisconsin/regulatory/legal-source-review-2026-09-06.md`. This is not regulator approval or an instructor sign-off.
