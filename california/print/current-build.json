@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "status": "newly-paginated-review-copy; not a course approval or professor certification",
+  "courses": [
+    {
+      "courseId": "ca-real-estate-principles-45-v1",
+      "pages": 524,
+      "pdf": "california/print/ca-real-estate-principles-45-v1-course-text.pdf",
+      "pdfSha256": "965d5445b479ae8e2d6e3c8dd15d845f05ddb1905941418a794f99b8326f8706",
+      "html": "california/print/ca-real-estate-principles-45-v1-course-text.html",
+      "htmlSha256": "13b2591b3a750b81fc7e088bb3d3e3694eac5d794d768b89ca732e0ad9176d9f"
+    },
+    {
+      "courseId": "ca-real-estate-practice-45-v1",
+      "pages": 444,
+      "pdf": "california/print/ca-real-estate-practice-45-v1-course-text.pdf",
+      "pdfSha256": "8142ee953363fcc4445ef9c92c56916321aa41515d97df6c29af51d6eb4041a6",
+      "html": "california/print/ca-real-estate-practice-45-v1-course-text.html",
+      "htmlSha256": "9eb690e6b1713d0a855bcf6569daf589996da6199491228d4425ec70c9232ffd"
+    },
+    {
+      "courseId": "ca-mortgage-loan-brokering-lending-45-v1",
+      "pages": 434,
+      "pdf": "california/print/ca-mortgage-loan-brokering-lending-45-v1-course-text.pdf",
+      "pdfSha256": "8749f5f37c292ce7beb8aec00dc6982db1e9c09dbbe5d523e78967891117fb7e",
+      "html": "california/print/ca-mortgage-loan-brokering-lending-45-v1-course-text.html",
+      "htmlSha256": "c21afa6a9511b34aa45809e748a55de00d75faa1180336334e18c9c89694f46d"
+    }
+  ],
+  "archivalPrinciples": {
+    "file": "california/print/final/Real_Estate_Principles_45_Hour_Final_458pp.pdf",
+    "sha256": "f9968a7d2fad6bec8e4d233541912bcbca24c7cdcabddaa6997f7bbab8eab4ef",
+    "pages": 458,
+    "disposition": "Preserved separately. Do not replace or represent this new build as the already-reviewed archive."
+  }
+}

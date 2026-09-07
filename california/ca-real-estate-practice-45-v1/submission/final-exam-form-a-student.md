@@ -559,12 +559,12 @@ B. Giving a client an inaccurate answer to a question.
 C. Failing to document a conversation that later matters.
 D. Falsifying a record — creating or altering a document to say something it did not say.
 
-**79.** What distinguishes implicit bias from explicit bias?
+**79.** A brokerage review finds two different problems. One agent openly says that he dislikes working with families who have children. A referral-only marketing policy repeatedly reaches the same narrow population even when staff apply it without personal prejudice. Which classification best distinguishes the two findings?
 
-A. Implicit bias applies to advertising and explicit bias to client selection.
-B. Implicit bias is unlawful while explicit bias is merely unprofessional.
-C. Implicit bias operates outside conscious awareness and can affect the conduct of a person who holds no discriminatory belief.
-D. Implicit bias occurs only in organizations, not in individuals.
+A. The agent expresses systemic bias, while the marketing policy expresses explicit bias because it is written down.
+B. Both are implicit bias because neither finding names a particular rejected applicant.
+C. The agent expresses explicit bias; the recurring pattern built into the marketing policy is a potential systemic bias that warrants review.
+D. Neither finding raises a bias concern unless someone admits intending an unlawful result.
 
 **80.** Why does the professional response emphasize structure over effort?
 

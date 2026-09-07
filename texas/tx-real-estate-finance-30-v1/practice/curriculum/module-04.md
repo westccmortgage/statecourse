@@ -1,0 +1,11 @@
+## Review disclosures and close responsibly
+
+Cash to close is not the same as down payment and is not the same as closing costs. Start with the actual worksheet. In a simplified example: $40,000 down payment + $11,000 closing costs − $5,000 already-paid deposit − $3,000 seller credit = $43,000 remaining. Adding the deposit again would double-count cash already paid. Real disclosures include additional adjustments that must also be reconciled.
+
+Compare the Closing Disclosure with the latest Loan Estimate: borrower name, amount, purpose, term, product, interest rate, principal and interest, mortgage insurance, escrow, cash to close, and any prepayment penalty or balloon. Investigate material changes with the lender. An agent must not privately alter the lender’s disclosure or represent an unexplained change as necessarily required by law.
+
+For covered transactions, [Regulation Z section 1026.19(f)](https://www.consumerfinance.gov/rules-policy/regulations/1026/19/) generally requires receipt of the initial Closing Disclosure at least three business days before consummation. Timing depends on actual or deemed receipt and the applicable business-day definition. Certain changes require a corrected disclosure and another waiting period, including adding a prepayment penalty. The contract closing date does not override that federal timing rule. Coordinate promptly if the two schedules conflict.
+
+Referral compensation is another financing issue. A settlement provider’s offer of $250 for each covered mortgage-settlement referral, with no actual service performed, is not made lawful by calling it marketing. [Regulation X section 1024.14](https://www.consumerfinance.gov/rules-policy/regulations/1024/14/) prohibits covered referral kickbacks and unearned fees, while describing limited permissible payments. Disclosure alone is not a universal cure. Escalate questionable arrangements for legal review before accepting them.
+
+For each practice problem, separate three questions: Is the arithmetic correct? What does the relevant document require? What decision belongs to the lender, the parties or their legal adviser? A good calculation is evidence of understanding, not permission to skip the other two questions.

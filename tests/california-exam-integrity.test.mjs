@@ -1,9 +1,9 @@
 /*
- * The four examination gates, held in the test suite.
+ * The examination gates, held in the test suite.
  *
  * scripts/exam-integrity.mjs is where the gates are implemented and where a reader goes to see
  * what each one means. This file runs it, and then adds the assertions that are about the
- * gates themselves rather than about the banks — that all four still exist, that none has been
+ * gates themselves rather than about the banks — that every required gate exists, that none has been
  * softened into a percentage, and that the two defects the gates were built to find would be
  * found again.
  *
@@ -36,12 +36,13 @@ const report = (() => {
 const GATE_NAMES = [
   "NO_UNSOURCED_EXAM_QUESTIONS",
   "NO_DUPLICATE_A_B_QUESTIONS",
+  "NO_FORMATIVE_FINAL_OVERLAP",
   "100_PERCENT_ANSWER_KEY_TRACEABILITY",
   "100_PERCENT_REQUIRED_TOPIC_COVERAGE",
   "EXAM_DOCUMENTS_MATCH_THE_BANK",
 ];
 
-test("all four gates exist, and none has quietly disappeared", () => {
+test("every required examination gate exists, including formative/final separation", () => {
   for (const name of GATE_NAMES) {
     assert.ok(Object.hasOwn(report.gates, name), `${name} is no longer reported`);
   }

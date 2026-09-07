@@ -317,13 +317,25 @@ export const AUTHORITIES = Object.freeze([
           "A pre-license course approval submission consists of the completed RE 306 and fee, corporation documents and a fictitious business name statement if applicable, RE 304 if the school is out of state, copies of all student instructional materials with copyright authorizations, a textbook certification letter from a college or university professor, RE 336 with supporting documentation, a General Information Page, a timed course outline, student final examination instructions, examination proctor instructions, the student version of the final examination, the instructor version with its answer key, student and regulator log-ins for a course offered online, and a course completion certificate.",
         reliedOnBy: ["REQUIRED_DELIVERABLES"],
       },
-      {
-        id: "handbook-first-filing",
-        claim:
-          "A first-time applicant is advised to submit one course first, so that a deficiency is not repeated across every course filed at once.",
-        reliedOnBy: ["FIRST_FILING"],
-      },
     ],
+  }),
+  source({
+    id: "re303-first-filing",
+    citation: "RE 303, General Information, page 1",
+    title: "Statutory/Pre-License Course Checklist and Instructions — first application",
+    publisher: "California Department of Real Estate",
+    revision: "Rev. 1/26",
+    effectiveDate: null,
+    obtainedVia: "california/dre-sources/RE303.pdf",
+    url: "https://www.dre.ca.gov/files/pdf/forms/re303.pdf",
+    localCopy: "california/dre-sources/RE303.pdf",
+    contentHash: "c2f38d72fafc3067",
+    verifiedAsOf: "2026-09-06",
+    materialClaims: [{
+      id: "re303-single-first-application",
+      claim: "DRE suggests that first-time applicants submit one course application before multiple others to avoid repeating the same deficiencies on subsequent applications.",
+      reliedOnBy: ["FIRST_FILING"],
+    }],
   }),
   source({
     id: "faq-sb1495",
@@ -625,8 +637,8 @@ export const FIRST_FILING = Object.freeze({
   courseId: "ca-real-estate-principles-45-v1",
   packageDir: "01_Real_Estate_Principles",
   title: "Real Estate Principles",
-  authorityId: "handbook-required-items",
-  claimId: "handbook-first-filing",
+  authorityId: "re303-first-filing",
+  claimId: "re303-single-first-application",
 });
 
 const deliverable = (record) =>

@@ -78,7 +78,7 @@ The Commission asks for the **purpose** of appraisal as its own subtopic.
 - *"Developed appraisal standards"*
 - *"Established minimum qualifications for appraisers"*
 
-**State.** **"State licensing and certification by NC Appraisal Board"** (http://www.ncappraisalboard.org/).
+**State.** **"State licensing and certification by NC Appraisal Board"** (https://www.ncappraisalboard.org/).
 
 **Standards.** **"Uniform Standards of Professional Appraisal Practice (USPAP) appraisal form."**
 

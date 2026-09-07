@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /*
- * The four examination gates.
+ * The examination gates.
  *
  * RE 303 asks for four documents per course — a student version, an instructor version with an
  * answer key that references where in the course material each answer is found, and the
@@ -23,6 +23,11 @@
  *     retake exists so that a student who failed has to know the material rather than to
  *     remember which letter they picked. So the check runs three ways — the same prompt, the
  *     same correct answer at the same subsection, and the same set of choices.
+ *
+ *   NO_FORMATIVE_FINAL_OVERLAP
+ *     A protected final item must not reuse a same-course formative prompt or the same
+ *     choice set with a different order. Normalising punctuation and whitespace prevents
+ *     cosmetic edits from defeating this separation check.
  *
  *   100_PERCENT_ANSWER_KEY_TRACEABILITY
  *     Every reference resolves. Not "looks like a section number" — resolves, to a heading that
@@ -70,6 +75,18 @@ const BANKS = {
   "ca-real-estate-practice-45": "config/california/practice-final-exam-bank.mjs",
   "ca-mortgage-loan-brokering-lending-45": "config/california/mortgage-final-exam-bank.mjs",
 };
+const FORMATIVE_BANKS = {
+  "ca-real-estate-principles-45": "config/california/principles-question-bank.mjs",
+  "ca-real-estate-practice-45": "config/california/practice-question-bank.mjs",
+  "ca-mortgage-loan-brokering-lending-45": "config/california/mortgage-question-bank.mjs",
+};
+
+function authoredQuestions(value, result = []) {
+  if (!value || typeof value !== "object") return result;
+  if (typeof value.prompt === "string" && Array.isArray(value.choices)) result.push(value);
+  else for (const child of Object.values(value)) authoredQuestions(child, result);
+  return result;
+}
 
 /* Whitespace, punctuation and case are not what makes two questions the same question. */
 const normalise = (text) =>
@@ -100,7 +117,7 @@ function courseStructure(program) {
   return { topics, subsections };
 }
 
-const failures = { unsourced: [], duplicate: [], traceability: [], coverage: [], documents: [] };
+const failures = { unsourced: [], duplicate: [], formativeOverlap: [], traceability: [], coverage: [], documents: [] };
 const counts = { items: 0, forms: 0, topics: 0 };
 
 for (const program of PROGRAMS) {
@@ -114,7 +131,15 @@ for (const program of PROGRAMS) {
   counts.topics += structure.topics.length;
 
   const forms = Object.entries(bank.forms);
+  const formative = authoredQuestions((await import(path.join(root, FORMATIVE_BANKS[program.catalogId]))).default);
+  const formativePrompts = new Set(formative.map((item) => normalise(item.prompt)));
+  const formativeChoices = new Set(formative.map((item) => item.choices.map(normalise).sort().join("|")));
   for (const [form, items] of forms) {
+    for (const [index, item] of items.entries()) {
+      if (formativePrompts.has(normalise(item.prompt)) || formativeChoices.has(item.choices.map(normalise).sort().join("|"))) {
+        failures.formativeOverlap.push(`${program.title} form ${form} item ${index + 1}: repeats a formative prompt or answer-choice set`);
+      }
+    }
     counts.forms += 1;
     counts.items += items.length;
 
@@ -238,6 +263,14 @@ for (const program of PROGRAMS) {
       if (printed.length !== items.length) {
         failures.documents.push(`${program.title} form ${form} ${suffix}: prints ${printed.length} items against ${items.length} authored`);
       }
+      for (const [index, item] of items.entries()) {
+        if (printed[index]?.[2] !== item.prompt) {
+          failures.documents.push(`${program.title} form ${form} ${suffix}: item ${index + 1} prompt differs from the bank`);
+        }
+        if (secure && !text.includes(item.rationale)) {
+          failures.documents.push(`${program.title} form ${form} answer-key: item ${index + 1} rationale differs from the bank`);
+        }
+      }
       /* The provider's legal name, in a document that goes to the Department. "StateCourse"
          and "StateCourse LLC" are not the same entity, and RE 336 was corrected for exactly
          this a fortnight ago; the examination documents were not. */
@@ -259,6 +292,7 @@ for (const program of PROGRAMS) {
 const GATES = [
   ["NO_UNSOURCED_EXAM_QUESTIONS", failures.unsourced],
   ["NO_DUPLICATE_A_B_QUESTIONS", failures.duplicate],
+  ["NO_FORMATIVE_FINAL_OVERLAP", failures.formativeOverlap],
   ["100_PERCENT_ANSWER_KEY_TRACEABILITY", failures.traceability],
   ["100_PERCENT_REQUIRED_TOPIC_COVERAGE", failures.coverage],
   ["EXAM_DOCUMENTS_MATCH_THE_BANK", failures.documents],

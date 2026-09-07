@@ -1,4 +1,6 @@
 import fs from "node:fs";
+import { buildFreePractice } from "./generate-free-practice.mjs";
+import { PRACTICE_SOURCES } from "../config/free-practice-sources.mjs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { deriveJurisdictionRecord, JURISDICTION_APPROVAL_LABELS } from "../config/jurisdiction-record.mjs";
@@ -11,24 +13,7 @@ const catalog = JSON.parse(fs.readFileSync(path.join(publicRoot, "data/course-ca
 const catalogCourses = catalog.categories.flatMap((category) => category.programs ?? []).flatMap((program) => program.courses ?? []);
 const studentPortalUrl = "https://statecourse.com/student/sign-in/";
 const studentRegisterUrl = "https://statecourse.com/student/register/";
-// Deliberate public allowlist: copy only these student-facing curriculum lessons.
-// Never infer paths or publish assessment banks, final exams, or answer keys.
-const freePracticeSamples = [
-  ["AK", "ak-salesperson-prelicense-40-v1", "alaska/ak-salesperson-prelicense-40-v1/curriculum/module-01.md"],
-  ["AZ", "az-salesperson-prelicense-90", "arizona/az-salesperson-prelicense-90-v1/curriculum/module-01.md"],
-  ["CA", "ca-real-estate-principles-45", "california/ca-real-estate-principles-45-v1/curriculum/lesson-01.md"],
-  ["CO", "co-real-estate-law-practice-48", "colorado/co-real-estate-law-and-practice-48-v1/curriculum/module-01.md"],
-  ["ME", "me-sales-agent-v1", "maine/curriculum/module-01.md"],
-  ["MI", "mi-salesperson-prelicensure-40-v1", "michigan/mi-salesperson-prelicensure-40-v1/curriculum/module-01.md"],
-  ["MO", "mo-salesperson-preexam-48", "missouri/mo-salesperson-preexam-48-v1/curriculum/module-01.md"],
-  ["NC", "nc-broker-prelicensing-75", "north-carolina/curriculum/module-01.md"],
-  ["OK", "ok-basic-prelicense-90", "oklahoma/curriculum/module-01.md"],
-  ["PA", "pa-real-estate-fundamentals-30", "pennsylvania/pa-real-estate-fundamentals-30-v1/curriculum/module-01.md"],
-  ["TX", "tx-law-of-agency-30", "texas/tx-law-of-agency-30-v1/curriculum/module-01.md"],
-  ["VA", "va-principles-practices-v1", "virginia/curriculum/module-01.md"],
-  ["WA", "wa-real-estate-fundamentals-60", "washington/wa-real-estate-fundamentals-60-v1/curriculum/module-01.md"],
-  ["WI", "wi-salesperson", "wisconsin/curriculum/module-01.md"],
-].map(([stateCode, courseId, sourcePath]) => ({ stateCode, courseId, sourcePath }));
+const freePracticeSamples = PRACTICE_SOURCES;
 const freePracticeByState = new Map(freePracticeSamples.map((sample) => [sample.stateCode, sample]));
 
 const dc = {
@@ -101,7 +86,7 @@ function footer(prefix) {
 }
 
 function document({ title, description, prefix = "../", active = "", body, scripts = "" }) {
-  return `<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><meta name="description" content="${esc(description)}"/><meta name="theme-color" content="#08102b"/><title>${esc(title)} | StateCourse</title><link rel="icon" href="${prefix}favicon.svg" type="image/svg+xml"/><link rel="stylesheet" href="${prefix}national.css?v=20260906-free-practice"/></head><body>${header(prefix, active)}<main id="main-content">${body}</main>${footer(prefix)}${scripts}</body></html>`;
+  return `<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><meta name="description" content="${esc(description)}"/><meta name="theme-color" content="#08102b"/><title>${esc(title)} | StateCourse</title><link rel="icon" href="${prefix}favicon.svg" type="image/svg+xml"/><link rel="stylesheet" href="${prefix}national.css?v=20260907-practice-repair"/></head><body>${header(prefix, active)}<main id="main-content">${body}</main>${footer(prefix)}${scripts}</body></html>`;
 }
 
 function pageHero(overline, title, lede, state = false) {
@@ -112,60 +97,40 @@ function finderForm() {
   return `<form class="licensing-finder" id="licensing-finder"><fieldset class="intent-tabs"><legend>What do you need to do?</legend><label><input type="radio" name="intent" value="licensed" checked/><span><strong>Get Licensed</strong><small>I need pre-license education</small></span></label><label><input type="radio" name="intent" value="exam"/><span><strong>Pass My Exam</strong><small>I need exam preparation</small></span></label><label><input type="radio" name="intent" value="renew"/><span><strong>Renew My License</strong><small>I need continuing education</small></span></label></fieldset><div class="finder-fields"><label><span>Start with your state</span><select id="homeStateSelect" aria-describedby="finderStatusGuide finderMessage" required><option value="">Choose your state</option></select></label><label><span>Licensing goal</span><select id="homeGoalSelect"><option value="first-license">First real estate license</option><option value="broker">Broker education</option><option value="requirements">Understand requirements</option></select></label><button type="submit">View My Licensing Path <span aria-hidden="true">→</span></button></div><div class="finder-status-guide" id="finderStatusGuide" aria-label="State availability key"><span class="status-key status-available">Available</span><span class="status-key status-development">In development · Free practice</span><span class="status-key status-coming">Coming soon</span></div><p id="finderMessage" class="finder-message" aria-live="polite">Choose an Available or In development state. Coming soon states are listed but cannot be selected.</p></form>`;
 }
 
-const practiceManifest = {
-  schema_version: "1.0",
-  generated_from: ["state-registry.json", "course-catalog.json", "explicit curriculum allowlist"],
-  disclosure: "Free preview and formative practice only. No enrollment, regulated study time, licensing credit, certificate, or access to a course final examination is created.",
-  samples: freePracticeSamples.map((sample) => {
-    const state = states.find((entry) => entry.state_code === sample.stateCode);
-    const course = catalogCourses.find((entry) => entry.course_id === sample.courseId);
-    if (!state || !course) throw new Error(`Free-practice record is not backed by the registry and catalog: ${sample.stateCode}/${sample.courseId}`);
-    const source = path.resolve(root, sample.sourcePath);
-    if (!source.startsWith(`${root}${path.sep}`) || !sample.sourcePath.includes("/curriculum/") || !fs.existsSync(source)) {
-      throw new Error(`Free-practice source is missing or outside a curriculum directory: ${sample.sourcePath}`);
-    }
-    const content = fs.readFileSync(source, "utf8");
-    if (/instructor version and answer key|Items, with the material reference for each answer|__statecourse_private_export/i.test(content)) {
-      throw new Error(`Free-practice source contains protected assessment material: ${sample.sourcePath}`);
-    }
-    const publicPath = `free-practice/content/${sample.stateCode.toLowerCase()}.md`;
-    write(publicPath, content);
-    return {
-      state_code: sample.stateCode,
-      state_name: state.state_name,
-      course_id: sample.courseId,
-      course_title: course.course_title,
-      public_status: state.public_status,
-      content_url: publicPath,
-    };
-  }),
-};
-write("data/free-practice-catalog.json", `${JSON.stringify(practiceManifest, null, 2)}\n`);
+const practiceManifest = await buildFreePractice({root,states,catalogCourses,write});
 
-const freePracticeBody = `${pageHero("Free practice", "Practice with real StateCourse lesson material.", "Choose a state that is already in development. Read a complete sample lesson and work through its examples and formative practice without payment or enrollment.")}<section class="page-body practice-page" data-free-practice>
+const freePracticeBody = `${pageHero("Free practice", "Practice with real StateCourse lesson material.", "Choose a state that is already in development. Choose a course, read its lessons, and answer practice questions with instant explanations. Free to use while courses are in development.")}<section class="page-body practice-page" data-free-practice>
   <div class="notice"><strong>Practice-only access:</strong> This preview is free and does not create enrollment, regulated study time, licensing credit, a completion certificate, or access to any protected course final examination.</div>
   <div class="practice-layout">
     <aside class="practice-controls">
       <label for="practiceStateSelect">Choose a state</label>
       <select id="practiceStateSelect" aria-describedby="practiceDisclosure"><option value="">Choose a state</option></select>
-      <p id="practiceDisclosure">Only states with built lesson material are listed. Every sample remains clearly separate from an approved licensing course.</p>
+      <label for="practiceCourseSelect">Choose a course</label>
+      <select id="practiceCourseSelect" disabled><option value="">Choose a state first</option></select>
+      <label for="practiceLessonSelect">Choose a lesson</label>
+      <select id="practiceLessonSelect" disabled><option value="">Choose a course first</option></select>
+      <p id="practiceDisclosure">Free practice. Your place and answers are saved on this device only.</p>
       <dl id="practiceRecord"><div><dt>Status</dt><dd>Choose a state to begin</dd></div></dl>
       <a class="cta-secondary" id="practiceStatePath" href="../state-requirements/" hidden>View state licensing path</a>
     </aside>
-    <article class="practice-reader" aria-live="polite">
+    <article class="practice-reader">
       <p class="overline" id="practiceStateLabel">Free lesson and formative practice</p>
       <h2 id="practiceCourseTitle">Choose a state to open its practice lesson.</h2>
-      <p class="practice-message" id="practiceMessage">No account or payment is required.</p>
+      <p class="practice-message" id="practiceMessage" role="status">No account or payment is required.</p>
       <nav class="practice-section-nav" id="practiceSectionNav" aria-label="Practice lesson sections" hidden>
         <button id="practicePrevious" type="button">← Previous</button>
         <span id="practiceSectionLabel"></span>
         <button id="practiceNext" type="button">Next →</button>
       </nav>
-      <div class="textbook-body practice-content" id="practiceContent"></div>
+      <div class="practice-mode" id="practiceMode" role="group" aria-label="Study mode" hidden><button type="button" id="practiceReadMode" aria-pressed="true">Read lesson</button><button type="button" id="practiceQuizMode" aria-pressed="false">Practice questions</button></div>
+      <p id="practiceProgress" role="status"></p>
+      <div class="textbook-body practice-content" id="practiceContent" tabindex="-1"></div>
+      <section id="practiceQuiz" aria-label="Practice questions" hidden></section>
+      <div class="practice-bottom-nav" id="practiceBottomNav" hidden><button type="button" id="practicePreviousLesson">← Previous lesson</button><button type="button" id="practiceNextLesson">Next lesson →</button></div>
     </article>
   </div>
 </section>`;
-write("free-practice/index.html", document({ title: "Free Real Estate Practice", description: "Free StateCourse lesson and formative-practice previews for states currently in development.", body: freePracticeBody, scripts: '<script type="module" src="../free-practice.js?v=20260906-free-practice"></script>' }));
+write("free-practice/index.html", document({ title: "Free Real Estate Practice", description: "Free StateCourse lesson and formative-practice previews for states currently in development.", body: freePracticeBody, scripts: '<script type="module" src="../free-practice.js?v=20260907-practice-repair"></script>' }));
 
 const getLicensedBody = `${pageHero("Get Licensed", "Build your state licensing path.", "Start with your jurisdiction and license goal. StateCourse will show verified requirements, available education, examinations, application milestones, and the next action.")}<section class="page-body"><div style="max-width:820px;margin:auto">${finderForm()}</div><div class="content-grid" style="margin-top:55px"><article class="content-card"><p class="overline">Step 1</p><h2>Choose your state</h2><p>Licensing titles, required education, regulators, exams, and application procedures are jurisdiction-specific.</p><a href="../state-requirements/">Compare requirements →</a></article><article class="content-card"><p class="overline">Step 2</p><h2>Review your path</h2><p>See education, examination, application, background-check, and renewal information before choosing a product.</p><a href="../courses/">View current programs →</a></article><article class="content-card"><p class="overline">Step 3</p><h2>Enroll only when approved</h2><p>Regulated course enrollment stays disabled until the exact approval record and required disclosures are active.</p><a href="${studentPortalUrl}">Returning student sign in →</a></article></div></section>`;
 write("get-licensed/index.html", document({ title: "Get Licensed", description: "Build a state-specific real estate licensing path.", active: "licensed", body: getLicensedBody, scripts: '<script src="../national.js?v=20260906-state-status" defer></script>' }));
@@ -328,7 +293,7 @@ for (const area of serviceAreas) {
     <div class="content-grid" style="margin-top:34px">${cards}</div>
     <div class="source-box"><h2>${esc(area.sourceHeading)}</h2><p>${esc(area.sourceCopy)} Compare every jurisdiction on the <a href="../state-requirements/">State Requirements</a> directory.</p></div>
   </section>`;
-  write(`${area.route}/index.html`, document({ title: area.overline, description: area.lede, active: area.active, body, scripts: '<script src="../service-area.js?v=20260906-free-practice" defer></script>' }));
+  write(`${area.route}/index.html`, document({ title: area.overline, description: area.lede, active: area.active, body, scripts: '<script src="../service-area.js?v=20260907-practice-repair" defer></script>' }));
 }
 
 write("my-statecourse/index.html", document({ title: "My StateCourse", description: "Return to your StateCourse licensing path and courses.", body: `${pageHero("Returning student", "Continue where you left off.", "Sign in to view active courses, progress, assessments, instructor support, payments, and certificates tied to your exact course version.")}<section class="page-body"><div class="content-grid"><article class="content-card"><p class="overline">My Licensing Path</p><h2>See the next required action</h2><p>Your education, exam preparation, application milestones, and renewal path remain organized in one account.</p><a href="${studentPortalUrl}">Student sign in →</a></article><article class="content-card"><p class="overline">My Courses</p><h2>Return to active education</h2><p>Continue only the courses connected to your verified enrollment record.</p><a href="${studentPortalUrl}">Open course dashboard →</a></article><article class="content-card"><p class="overline">Records</p><h2>Preserve completed education</h2><p>Eligible certificates always point to the exact approved course and version completed.</p><a href="${studentPortalUrl}">View my records →</a></article></div></section>` }));
@@ -430,16 +395,16 @@ for (const course of catalogCourses) {
           <li><h3>Complete Stripe Checkout</h3><p>Payment is processed by Stripe. Enrollment is created only after a verified paid webhook.</p></li>
           <li><h3>Open the purchased course</h3><p>Only the exact purchased course and version appear in the student cabinet.</p></li>
         </ol></div>`;
-  const practiceUrl = `${prefix}free-practice/?state=${encodeURIComponent(course.state_id)}`;
+  const practiceUrl = `${prefix}free-practice/?state=${encodeURIComponent(course.state_id)}&amp;course=${encodeURIComponent(course.course_id)}`;
   const courseActions = isMichigan
     ? `<div class="content-grid">
-        <article class="content-card"><p class="overline">Free practice</p><h2>Open a Michigan sample lesson</h2><p>Read and practice without an account, payment, enrollment, credit, or certificate.</p><a href="${practiceUrl}">Start Free Practice →</a></article>
+        <article class="content-card"><p class="overline">Free practice</p><h2>Open Michigan lessons and practice</h2><p>Read lessons and answer questions with explanations. Free practice, with no account or payment required.</p><a href="${practiceUrl}">Start Free Practice →</a></article>
         <article class="content-card"><p class="overline">Regulatory status</p><h2>Review the no-approval record</h2><p>No account is needed. StateCourse publishes the current Michigan status and direct agency links without representing approval or availability.</p><a href="${prefix}approvals/">Review Approval Status →</a></article>
         <article class="content-card"><p class="overline">Course review</p><h2>Review the proposed course record</h2><p>Inspect the instructional organization without creating progress, payment, enrollment, or regulatory credit.</p><a href="${prefix}courses/">Return to Course Catalog →</a></article>
         <article class="content-card"><p class="overline">Official sources</p><h2>Verify the Michigan path</h2><p>Compare the current education requirements and regulator identities before relying on any school claim.</p><a href="${prefix}state-requirements/">Review State Requirements →</a></article>
       </div>`
     : `<div class="content-grid">
-        <article class="content-card"><p class="overline">Free practice</p><h2>Open a sample lesson</h2><p>Read and practice without an account, payment, enrollment, credit, or certificate.</p><a href="${practiceUrl}">Start Free Practice →</a></article>
+        <article class="content-card"><p class="overline">Free practice</p><h2>Open lessons and practice</h2><p>Read lessons and answer questions with explanations. Free practice, with no account or payment required.</p><a href="${practiceUrl}">Start Free Practice →</a></article>
         <article class="content-card"><p class="overline">Course review</p><h2>Inspect the course structure</h2><p>Review instructional organization without creating progress or regulatory credit.</p>${preview || `<a href="${prefix}courses/">Return to Course Catalog →</a>`}</article>
         <article class="content-card"><p class="overline">Returning student</p><h2>Resume from your cabinet</h2><p>Sign in to view purchased courses, progress, records, and certificates.</p><a href="${studentPortalUrl}?return_to=${encodeURIComponent("/student/")}">Student Sign In →</a></article>
       </div>`;

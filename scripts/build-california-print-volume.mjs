@@ -5,8 +5,8 @@
  * RE 303, Internet Courses: "Hard copies of all course material to be viewed by student on
  * the Internet must be submitted with the application." So the whole text is printed. This
  * produces one bound volume per course — cover, publication page, table of contents, then
- * the fifteen lesson assignments in order — as HTML with print CSS, which Chromium renders
- * to PDF.
+ * the fifteen lesson assignments in order — as HTML with print CSS and a PDF. ReportLab is
+ * the browser-free default; STATECOURSE_PDF_RENDERER=chrome selects Chromium explicitly.
  *
  * Why a bound volume rather than fifteen loose files: RE 303 also asks for a textbook's
  * "cover", "publication page" and "table of contents". Our text is not a published textbook,
@@ -14,15 +14,17 @@
  * it as a proper volume answers both instructions at once and gives RE 313's "Pages" field
  * a real number to hold.
  *
- * No npm dependencies: a focused markdown renderer for the constructs the lessons actually
- * use, and headless Chromium via --print-to-pdf.
+ * No npm dependencies. The default renderer uses Python with pypdf, reportlab and DejaVu
+ * fonts; select a configured interpreter with STATECOURSE_PYTHON_BIN when needed.
  */
 
 import { execFileSync } from "node:child_process";
 import fs from "node:fs";
+import os from "node:os";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { COURSES, COURSE_DESIGN, INSTRUCTOR, PROVIDER, STATUS_LINE } from "../config/california/submission-facts.mjs";
+import { californiaDocumentEnvironment, pdfPageCount } from "./lib/california-document-runtime.mjs";
 
 /*
  * The assessment banks, printed with the lessons.
@@ -46,9 +48,25 @@ const LETTERS = ["A", "B", "C", "D", "E", "F"];
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const outDir = path.join(root, "california/print");
-const CHROME = ["/opt/pw-browsers/chromium-1194/chrome-linux/chrome",
-  "/opt/pw-browsers/chromium_headless_shell-1194/chrome-linux/headless_shell"]
-  .find((p) => fs.existsSync(p));
+const renderer = process.env.STATECOURSE_PDF_RENDERER ?? "reportlab";
+if (!["reportlab", "chrome"].includes(renderer)) throw new Error(`Unknown PDF renderer: ${renderer}`);
+const runtime = californiaDocumentEnvironment();
+if (renderer === "reportlab") {
+  execFileSync(runtime.executable, ["-c", "import reportlab"], { env: runtime.env });
+}
+const CHROME = [
+  process.env.STATECOURSE_CHROME_BIN,
+  "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+  "/Applications/Chromium.app/Contents/MacOS/Chromium",
+  "/usr/bin/chromium",
+  "/usr/bin/chromium-browser",
+  "/usr/bin/google-chrome",
+  "/opt/pw-browsers/chromium-1194/chrome-linux/chrome",
+  "/opt/pw-browsers/chromium_headless_shell-1194/chrome-linux/headless_shell",
+].find((candidate) => candidate && fs.existsSync(candidate));
+if (renderer === "chrome" && !CHROME) {
+  throw new Error("Cannot build California print PDFs: install Chrome/Chromium or set STATECOURSE_CHROME_BIN to its executable. No print package was produced.");
+}
 
 const esc = (s) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 
@@ -286,17 +304,23 @@ ${bodies.join("\n")}
 
   let pages = null;
   const pdfPath = path.join(outDir, `${course.courseId}-course-text.pdf`);
-  if (CHROME) {
-    execFileSync(CHROME, [
-      "--headless", "--disable-gpu", "--no-sandbox", "--no-pdf-header-footer",
-      `--print-to-pdf=${pdfPath}`, `file://${htmlPath}`
-    ], { stdio: "pipe", timeout: 300000 });
-    const buf = fs.readFileSync(pdfPath);
-    const counts = [...buf.toString("latin1").matchAll(/\/Type\s*\/Page[^s]/g)];
-    pages = counts.length || null;
+  if (renderer === "reportlab") {
+    execFileSync(runtime.executable, [path.join(root, "scripts/lib/render-california-course-pdf.py"), htmlPath, pdfPath], { env: runtime.env, stdio: "inherit", timeout: 300000 });
+    execFileSync(runtime.executable, [path.join(root, "scripts/lib/verify-california-course-pdf.py"), htmlPath, pdfPath], { env: runtime.env, stdio: "inherit", timeout: 300000 });
+  } else {
+    const profile = fs.mkdtempSync(path.join(os.tmpdir(), "statecourse-print-"));
+    try {
+      execFileSync(CHROME, [
+        "--headless", "--disable-gpu", "--no-sandbox", "--no-pdf-header-footer",
+        `--user-data-dir=${profile}`, `--print-to-pdf=${pdfPath}`, `file://${htmlPath}`
+      ], { stdio: "pipe", timeout: 300000 });
+    } finally {
+      fs.rmSync(profile, { recursive: true, force: true });
+    }
   }
+  pages = pdfPageCount(pdfPath, runtime);
 
-  summary.push({ course: course.title, lessons: files.length, pdf: path.relative(root, pdfPath), pages });
+  summary.push({ course: course.title, lessons: files.length, pdf: path.relative(root, pdfPath), pages, renderer });
 }
 
 console.log(`\nPrint-ready volumes — ${outDir.replace(root + "/", "")}\n`);

@@ -45,13 +45,13 @@ five-item remediation set covering the same concepts a second way for students w
 | Lesson assignments | 15 |
 | Lessons written as distinct instruction | 15 of 15 |
 | Words of instructional text | 166,323 |
-| Printed volume | **458 pages**, measured from the bound PDF submitted with this application |
+| Printed volume | **524 pages**, measured from the bound PDF submitted with this application |
 | Scored assessment items | 165 |
 
 RE 303 states that *"approximately 450 pages of text/instructional material is equivalent to
 textbooks offered by a California college or university"* for a 45-hour course.
 
-This course is at **458 pages, measured from the bound volume**, meeting the benchmark. The volume contains the complete student-viewable instructional text together with the applied exercise, engagement check and remediation set for every assignment — all of the material RE 303 item 6 asks for.
+This course is at **524 pages, measured from the bound volume**, meeting the benchmark. The volume contains the complete student-viewable instructional text together with the applied exercise, engagement check and remediation set for every assignment — all of the material RE 303 item 6 asks for.
 
 ## Timed course outline
 
@@ -72,7 +72,7 @@ This course is at **458 pages, measured from the bound volume**, meeting the ben
 | 13 | Taxation, investment, and real estate mathematics | 180 | ~37.7 | Written |
 | 14 | Fair housing, civil rights, and consumer protection | 180 | ~37.0 | Written |
 | 15 | Leasing, property management, license law, and integrated transaction | 180 | ~40.0 | Written |
-| | **Total** | **2700 minutes = 45 hours** | **~458** | |
+| | **Total** | **2700 minutes = 45 hours** | **~524** | |
 
 ## Lesson detail
 
@@ -1574,4 +1574,3 @@ retake using different questions.
 6. What is **missing or thin** relative to a college course in this field?
 
 Question 6 is the one most wanted. A list of gaps is more useful than an endorsement.
-

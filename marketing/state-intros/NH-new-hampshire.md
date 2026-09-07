@@ -52,7 +52,7 @@
 | Open | StateCourse · StateCourse LLC |
 | Requirement | 40 hours pre-license education |
 | Status | Not approved — no credit available |
-| Close | https://www.oplc.nh.gov/real-estate-commission |
+| Close | https://www.oplc.nh.gov/find-board/nh-real-estate-commission/ |
 
 ## Recording notes
 

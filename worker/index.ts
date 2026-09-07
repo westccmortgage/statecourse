@@ -1,6 +1,7 @@
 /** Cloudflare Worker entry point for the vinext-starter template. */
 import { handleImageOptimization, DEFAULT_DEVICE_SIZES, DEFAULT_IMAGE_SIZES } from "vinext/server/image-optimization";
 import handler from "vinext/server/app-router-entry";
+import { servePublicAssets } from "./public-assets.mjs";
 
 interface Env {
   ASSETS: Fetcher;
@@ -28,23 +29,8 @@ interface ExecutionContext {
 const worker = {
   async fetch(request: Request, env: Env, ctx: ExecutionContext): Promise<Response> {
     const url = new URL(request.url);
-
-    // The StateCourse platform is a generated static site nested under /statecourse.
-    // Sites' asset binding serves files exactly, so resolve its extensionless directory
-    // URLs to the checked-in index.html files before handing the request to the app router.
-    if (
-      (request.method === "GET" || request.method === "HEAD") &&
-      (url.pathname === "/statecourse" || url.pathname.startsWith("/statecourse/")) &&
-      !url.pathname.split("/").at(-1)?.includes(".")
-    ) {
-      const assetUrl = new URL(url);
-      assetUrl.pathname = `${url.pathname.replace(/\/$/, "")}/index.html`;
-      const assetResponse = await env.ASSETS.fetch(new Request(assetUrl, request));
-      if (assetResponse.status !== 404) {
-        return assetResponse;
-      }
-    }
-
+    const publicResponse = await servePublicAssets(request, env.ASSETS);
+    if (publicResponse) return publicResponse;
     if (url.pathname === "/_vinext/image") {
       const allowedWidths = [...DEFAULT_DEVICE_SIZES, ...DEFAULT_IMAGE_SIZES];
       return handleImageOptimization(request, {

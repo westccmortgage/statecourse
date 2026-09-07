@@ -16,6 +16,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import * as engine from "../config/california-course-engine.mjs";
 import { PROVIDER } from "../config/california/submission-facts.mjs";
+import { californiaDocumentEnvironment, pdfPageCount } from "./lib/california-document-runtime.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const outDir = path.join(root, "california/dre-sources/instructor-equivalence");
@@ -38,8 +39,7 @@ const LINES_PER_PAGE = 40;
 function renderedPages(folder) {
   const pdf = path.join(root, "california/print", `${folder}-course-text.pdf`);
   if (!fs.existsSync(pdf)) return null;
-  const counts = [...fs.readFileSync(pdf).toString("latin1").matchAll(/\/Type\s*\/Page[^s]/g)];
-  return counts.length || null;
+  return pdfPageCount(pdf, californiaDocumentEnvironment());
 }
 
 function estimatePages(markdown) {

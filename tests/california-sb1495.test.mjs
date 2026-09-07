@@ -198,8 +198,8 @@ test("the submitted response is never rendered back into an editable box", () =>
 /* ── the matrix ────────────────────────────────────────────────────────────────────────── */
 
 test("the traceability matrix regenerates cleanly from the course", () => {
-  /* The generator exits non-zero if any element cannot be traced, so running it is the test. */
-  execFileSync("node", ["scripts/generate-sb1495-traceability.mjs"], { cwd: ROOT, encoding: "utf8", stdio: ["ignore", "pipe", "pipe"] });
+  /* Check mode refuses stale or untraceable output without rewriting the tracked artifact. */
+  execFileSync("node", ["scripts/generate-sb1495-traceability.mjs", "--check"], { cwd: ROOT, encoding: "utf8", stdio: ["ignore", "pipe", "pipe"] });
 });
 
 test("every element in the matrix resolves to a section, a page and an examination item", () => {

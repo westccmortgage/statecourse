@@ -313,7 +313,7 @@ const modules = {
         rationale: "Recording gives notice; delivery makes the deed effective. A signed deed left in a drawer conveys nothing."
       },
       {
-        prompt: "What does a quit claim deed convey?",
+        prompt: "A Michigan owner uses a quit claim deed to transfer an interest in a family property without promising clear title. What can the recipient receive through that deed?",
         choices: [
           "Whatever interest the grantor has, if any, with no warranty of title.",
           "A fee simple absolute free of encumbrances.",
