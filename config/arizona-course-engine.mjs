@@ -55,6 +55,7 @@
  */
 
 import PRELICENSE_BANK from "./arizona/prelicense-90-question-bank.mjs";
+import { parseCalendarDate, addCalendarMonths } from "./calendar-date.mjs";
 import CONTRACT_WRITING_BANK from "./arizona/contract-writing-6-question-bank.mjs";
 
 /* The regulator's figures. */
@@ -693,20 +694,18 @@ export function arizonaEducationReadiness(courseCredits = [], options = {}) {
  * APPLICATION. completedOn and applicationDate are ISO date strings.
  */
 export function arizonaEducationValidity(completedOn, applicationDate = null) {
-  if (typeof completedOn !== "string") return null;
-  const completed = new Date(completedOn);
-  if (Number.isNaN(completed.valueOf())) return null;
+  const completed = parseCalendarDate(completedOn);
+  if (!completed) return null;
 
-  const expiresOn = new Date(completed);
-  expiresOn.setFullYear(expiresOn.getFullYear() + EDUCATION_VALIDITY_YEARS);
+  const expiresOn = addCalendarMonths(completed, EDUCATION_VALIDITY_YEARS * 12);
 
   let withinWindow = null;
   let application = null;
   if (typeof applicationDate === "string") {
-    const parsed = new Date(applicationDate);
-    if (!Number.isNaN(parsed.valueOf())) {
+    const parsed = parseCalendarDate(applicationDate);
+    if (parsed) {
       application = parsed;
-      withinWindow = parsed <= expiresOn;
+      withinWindow = parsed >= completed && parsed <= expiresOn;
     }
   }
 
@@ -718,8 +717,10 @@ export function arizonaEducationValidity(completedOn, applicationDate = null) {
     withinWindow,
     measuredTo: "the date of the application — A.R.S. § 32-2124(B), the ten years immediately preceding it",
     blockedBy: withinWindow === false
-      ? `The course was completed on ${completed.toISOString().slice(0, 10)}. Under A.R.S. § 32-2124(B) it counts only towards an application made by ${expiresOn.toISOString().slice(0, 10)}.`
-      : null
+      ? application < completed
+        ? "Course completion cannot occur after the application date."
+        : `The ordinary ten-year education window ends on ${expiresOn.toISOString().slice(0, 10)}. A.R.S. § 32-2124(B) separately permits the Commissioner to determine an experience-and-education equivalency exception.`
+      : applicationDate !== null && !application ? "Enter a valid application date (YYYY-MM-DD)." : null
   };
 }
 

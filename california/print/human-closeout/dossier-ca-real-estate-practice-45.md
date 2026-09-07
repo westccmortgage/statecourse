@@ -45,13 +45,13 @@ five-item remediation set covering the same concepts a second way for students w
 | Lesson assignments | 15 |
 | Lessons written as distinct instruction | 15 of 15 |
 | Words of instructional text | 135,445 |
-| Printed volume | **383 pages**, measured from the bound PDF submitted with this application |
+| Printed volume | **444 pages**, measured from the bound PDF submitted with this application |
 | Scored assessment items | 165 |
 
 RE 303 states that *"approximately 450 pages of text/instructional material is equivalent to
 textbooks offered by a California college or university"* for a 45-hour course.
 
-**This course is at 383 pages (measured), against that ~450-page benchmark.**
+**This course is at 444 pages (measured), against that ~450-page benchmark.**
 The material is written instruction rather than placeholder text, but it is not yet at the depth
 the benchmark implies, and it is presented here as work in progress. A reviewing instructor is
 being asked to evaluate the approach, the coverage, and the quality of what exists — and their
@@ -76,7 +76,7 @@ comments are wanted while the remaining depth is being written, not afterwards.
 | 13 | Ethics, risk management, and dispute prevention | 180 | ~31.2 | Written |
 | 14 | Implicit bias and fair housing participatory practicum | 180 | ~33.6 | Written |
 | 15 | Integrated California residential transaction | 180 | ~30.8 | Written |
-| | **Total** | **2700 minutes = 45 hours** | **~383** | |
+| | **Total** | **2700 minutes = 45 hours** | **~444** | |
 
 ## Lesson detail
 
@@ -1211,4 +1211,3 @@ retake using different questions.
 6. What is **missing or thin** relative to a college course in this field?
 
 Question 6 is the one most wanted. A list of gaps is more useful than an endorsement.
-

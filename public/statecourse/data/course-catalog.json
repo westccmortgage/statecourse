@@ -237,7 +237,14 @@
               "certificate_template": "az-contract-writing-6-draft",
               "reporting_rules": "Separate course certificate and ADRE audit record",
               "route": "/real-estate/arizona/pre-license/contract-writing/"
-            },
+            }
+          ]
+        },
+        {
+          "program_id": "tx-sales-agent-qualifying-education",
+          "state_code": "TX",
+          "program_type": "Sales Agent Qualifying Education",
+          "courses": [
             {
               "approved_hours": null,
               "approval_status": "In Development",

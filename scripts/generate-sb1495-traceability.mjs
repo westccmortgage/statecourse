@@ -385,16 +385,25 @@ any kind has been issued. The statement *${SB1495.statement}* describes the cour
 against the statute; it is not a claim of Departmental approval.
 `;
 
-fs.writeFileSync(path.join(root, OUTPUT), document);
-console.log(`Wrote ${OUTPUT}`);
-console.log(
-  `  ${implicitBiasRows.length} implicit bias elements, ${fairHousingRows.length} fair housing elements, ` +
-    `${roleRows.length} roles, ${enforcementRows.filter((row) => row.proved).length}/${enforcementRows.length} properties proved, ` +
-    `${examItems.length} examination items.`,
-);
 if (problems.length > 0) {
   console.error("\n  SB 1495 traceability is incomplete:");
   for (const problem of problems) console.error(`    - ${problem}`);
   console.error("");
   process.exit(1);
 }
+const target = path.join(root, OUTPUT);
+if (process.argv.includes("--check")) {
+  if (!fs.existsSync(target) || fs.readFileSync(target, "utf8") !== document) {
+    console.error(`${OUTPUT} is stale. Regenerate it after building the current print volume.`);
+    process.exit(1);
+  }
+  console.log(`Verified ${OUTPUT}`);
+} else {
+  fs.writeFileSync(target, document);
+  console.log(`Wrote ${OUTPUT}`);
+}
+console.log(
+  `  ${implicitBiasRows.length} implicit bias elements, ${fairHousingRows.length} fair housing elements, ` +
+    `${roleRows.length} roles, ${enforcementRows.filter((row) => row.proved).length}/${enforcementRows.length} properties proved, ` +
+    `${examItems.length} examination items.`,
+);

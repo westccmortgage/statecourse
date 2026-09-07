@@ -493,7 +493,7 @@ const modules = {
         rationale: "Delivery is the failing element and the consequence is large. A licensee recognises the issue and routes it; the answer belongs to counsel."
       },
       {
-        prompt: "What does a quitclaim deed convey?",
+        prompt: "An Alaska co-owner signs a quitclaim deed to release an uncertain interest to the other co-owner, making no title warranties. What interest passes under that deed?",
         choices: [
           "Whatever interest the grantor has, which may be nothing, with no warranty.",
           "Nothing; a quitclaim deed is void as a conveyance.",

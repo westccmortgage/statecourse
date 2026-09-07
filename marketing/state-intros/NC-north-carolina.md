@@ -53,7 +53,7 @@
 | Open | StateCourse · StateCourse LLC |
 | Requirement | 75 hours pre-license education |
 | Status | Not approved — no credit available |
-| Close | https://www.ncrec.gov/Education/ |
+| Close | https://www.ncrec.gov/ |
 
 ## Courses referenced
 

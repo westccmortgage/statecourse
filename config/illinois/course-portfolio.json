@@ -1,0 +1,48 @@
+{
+  "snapshotId": "IL-PORTFOLIO-FOUNDATION-2026-09-06-v1",
+  "status": "course_level_architecture_complete; detailed_topic_objective_mapping_incomplete; teaching_materials_not_authored",
+  "firstCommercialProduct": "IL-BROKER-60 + IL-BROKER-15 (75-hour entry-level Broker package)",
+  "personalLicenseProduct": "External approved 30-hour Broker Endorsement course; distinct from StateCourse first product",
+  "requiredPortfolioHours": 165,
+  "delivery": "Online Distance LMS; requires course-specific license and verified participation",
+  "creditHourInstructionMinutes": 50,
+  "objectiveStatus": "StateCourse proposed measurable outcomes derived from official scope; not IDFPR-approved",
+  "courses": [
+    {"id":"IL-BROKER-60","buildOrder":1,"hours":60,"instructionMinutes":3000,"name":"Broker Pre-License Topics","sourceIds":["IL-CURR-75","IL-RULE-1450"],"pinpoint":"75h PDF pp.2-6 Parts1-2; 1450.1105(b)(1)","finalPolicy":"online_distance_exemption_1450_1175","blocks":[
+      {"name":"License Law","hours":0.5,"page":2,"objective":"Distinguish licensed activities, exemptions and the roles of IDFPR and its Board."},
+      {"name":"Real Property","hours":4.5,"page":2,"objective":"Analyze title interests, descriptions, encumbrances, land-use limits and defects in a property scenario."},
+      {"name":"Federal Laws","hours":3,"page":2,"objective":"Apply fair housing, accessibility, competition and disclosure obligations to brokerage decisions."},
+      {"name":"Structure of Agency","hours":6,"page":3,"objective":"Select the correct agency status, duties, disclosures and confidentiality treatment."},
+      {"name":"Seller Relationships and Counseling","hours":9,"page":3,"objective":"Prepare a compliant seller representation workflow including equity, disclosures and compensation."},
+      {"name":"Buyer Relationships and Counseling","hours":7,"page":3,"objective":"Apply current written buyer brokerage, compensation, disclosure and termination requirements."},
+      {"name":"Illinois Law","hours":3,"page":4,"objective":"Apply Illinois licensing, consumer protection and unauthorized-practice boundaries."},
+      {"name":"Advertising and Technology","hours":2,"page":4,"objective":"Evaluate advertising and electronic communications for Illinois and federal compliance."},
+      {"name":"Appraisal and Comparative Market Analysis","hours":3,"page":4,"objective":"Distinguish appraisal from CMA and explain supported comparable adjustments."},
+      {"name":"Financing","hours":6,"page":5,"objective":"Compare loan structures, lending disclosures and credit risks using current primary law."},
+      {"name":"Real Estate Calculations","hours":3,"page":5,"objective":"Calculate transaction costs, prorations, financing quantities and net proceeds."},
+      {"name":"Contracts in Real Estate","hours":8,"page":5,"objective":"Evaluate formation, contingencies, escrow, negotiation and termination in a transaction."},
+      {"name":"Transfer of Title","hours":3,"page":6,"objective":"Explain deeds, title defects, closing documents and recording consequences."},
+      {"name":"Leasing and Property Management","hours":2,"page":6,"objective":"Apply leasing duties, tenant protections and property-management fiduciary requirements."}
+    ]},
+    {"id":"IL-BROKER-15","buildOrder":2,"hours":15,"instructionMinutes":750,"name":"Broker Pre-License Applied Real Estate Principles","sourceIds":["IL-CURR-75","IL-RULE-1450"],"pinpoint":"75h PDF pp.6-7 Part3; 1450.1105(b)(2)","finalPolicy":"online_distance_exemption_1450_1175","timeAllocationStatus":"15-hour total official; per-case allocation to be authored","objective":"Resolve applied listing, buyer representation, agency, contract, financing, closing and disclosure cases across all prelicense learning objectives.","materialCoverage":"Map every numbered practicum example on pp.6-7 to distinct cases; preserve complete primary text as topic inventory; no home study."},
+    {"id":"IL-POST-APPLIED","buildOrder":3,"hours":15,"instructionMinutes":750,"name":"Broker Post-License Applied Brokerage Principles","sourceIds":["IL-CURR-45POST","IL-RULE-1450"],"pinpoint":"45post PDF pp.2-7 before Risk Management heading; 1450.1105(c)(1),(4)","finalPolicy":"required_50_questions_minimum_75_percent","recommendedConceptualPercent":25,"timeAllocationStatus":"15-hour total official; detailed topic timing to be authored","objective":"Apply brokerage law, agency, escrow, advertising, property types, taxes, business planning and client responsibilities to practical brokerage files.","materialCoverage":"Brokerage Review Legal Requirements I-IV; Practical Brokerage Application I-II; recommended case scenarios pp.6-7."},
+    {"id":"IL-POST-RISK","buildOrder":4,"hours":15,"instructionMinutes":750,"name":"Broker Post-License Risk Management/Discipline","sourceIds":["IL-CURR-45POST","IL-RULE-1450"],"pinpoint":"45post PDF pp.7-9 before Transactional heading; 1450.1105(c)(2),(4)","finalPolicy":"required_50_questions_minimum_75_percent","recommendedConceptualPercent":25,"timeAllocationStatus":"15-hour total official; detailed topic timing to be authored","objective":"Identify and resolve fair housing, antitrust, escrow, insurance, disclosure, harassment, safety and cyber risks; follow discipline from complaint through disposition.","minimumDisciplineCaseStudies":3,"sexualHarassmentInstructionMinutes":50,"materialCoverage":"Risk Management I.A-K; Discipline II.A-B; preserve separate one-credit-hour sexual-harassment training within portfolio as described on PDF p.1."},
+    {"id":"IL-POST-TRANSACTIONS","buildOrder":5,"hours":15,"instructionMinutes":750,"name":"Broker Post-License Transactional Issues","sourceIds":["IL-CURR-45POST","IL-RULE-1450"],"pinpoint":"45post PDF pp.9-12; 1450.1105(c)(3),(4)","finalPolicy":"required_50_questions_minimum_75_percent","recommendedConceptualPercent":25,"timeAllocationStatus":"15-hour total official; detailed topic timing to be authored","objective":"Resolve seller and buyer representation, disclosure, marketing, offers, contingencies, settlement and terminated-transaction scenarios under current law.","materialCoverage":"Seller Issues I.A-G; Buyer Issues II.A-D; supersede p.11 oral-agreement implication with current 1450.770 and Act 1-10."},
+    {"id":"IL-MB-30","buildOrder":6,"hours":30,"instructionMinutes":1500,"name":"Managing Broker Pre-License Topics","sourceIds":["IL-CURR-45MB","IL-RULE-1450"],"pinpoint":"45MB PDF p.1 left column; 1450.1105(d)(1)","finalPolicy":"online_distance_exemption_1450_1175","blocks":[
+      {"name":"Licensing","hours":2,"page":1,"objective":"Plan compliant entity, sponsor, personnel and office licensing procedures."},
+      {"name":"Operations","hours":3,"page":1,"objective":"Evaluate employment classification, insurance, records security and business budgeting."},
+      {"name":"Handling the Money","hours":3,"page":1,"objective":"Design escrow and compensation controls with auditable records."},
+      {"name":"Recruiting","hours":1,"page":1,"objective":"Apply lawful recruiting, interviewing and career counseling practices."},
+      {"name":"Brokerage Support","hours":2,"page":1,"objective":"Design training, compensation and office policy support for licensees."},
+      {"name":"Transaction Supervision","hours":2,"page":1,"objective":"Supervise agreements, agency disclosures and appropriate closing documents."},
+      {"name":"Marketing and Advertising","hours":3,"page":1,"objective":"Audit team, electronic and conventional marketing against current law."},
+      {"name":"Dispute Resolution","hours":2,"page":1,"objective":"Choose a lawful resolution path for commission and escrow disputes."},
+      {"name":"Company Policies","hours":6,"page":1,"objective":"Implement fair housing, antitrust, harassment, agency and RESPA controls."},
+      {"name":"Disclosure Issues","hours":3,"page":1,"objective":"Distinguish federal, state, local and license-law disclosure obligations."},
+      {"name":"Industry Issues","hours":3,"page":1,"objective":"Manage distressed-property, property-management, mortgage-fraud and unlicensed-activity risk."}
+    ]},
+    {"id":"IL-MB-15","buildOrder":7,"hours":15,"instructionMinutes":750,"name":"Managing Broker Applied Management and Supervision","sourceIds":["IL-CURR-45MB","IL-RULE-1450"],"pinpoint":"45MB PDF p.1 right column; 1450.1105(d)(2)","finalPolicy":"online_distance_exemption_1450_1175","timeAllocationStatus":"15-hour total official; per-case allocation to be authored","objective":"Resolve brokerage contract, minimum-service, team, commission, dual-agency, escrow, title, confidentiality, ethics and social-media supervision cases.","materialCoverage":"Use all right-column practicum topics and relevant managing-broker learning objectives; no home study; legacy transition footnote is not the current authority for delivery."}
+  ],
+  "optionalLaterCourses":[{"id":"IL-END-BROKER-30","hours":30,"sourceId":"IL-CURR-END-BROKER","status":"existing_blueprint_only"},{"id":"IL-END-MB-30","hours":30,"sourceId":"IL-CURR-END-MB","status":"foundation_only"}],
+  "openEvidenceGaps":["Current primary statute/regulation/form citations for every substantive teaching topic, including federal and municipal topics", "Full original paginated teaching materials and instructor guides", "Detailed applied/postlicense topic-minute ledgers", "Original case/assessment banks and three separate postlicense finals with page-cited answer keys", "Operational LMS exemption evidence and course-specific approval", "Instructor credential and written IDFPR answer on applicant-specific expertise route", "Illinois SOS/provider/virtual-office/course credentials"]
+}

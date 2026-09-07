@@ -1,0 +1,1627 @@
+PAGE 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    IDFPR | Real Estate Brokerage
+
+
+
+
+
+
+
+
+
+
+
+
+
+	var mode =  true;
+	var servername = "";
+	const headers = {};
+    var name = htmlDecode("null:IDFPR | Real Estate Brokerage");
+    var pageName = htmlDecode("IDFPR | Real Estate Brokerage");
+    var siteSection1 = htmlDecode("Illinois Department of Financial & Professional Regulation");
+    var siteSection2 = htmlDecode("Profs");
+    var siteSection3 = htmlDecode("");
+    var siteSection4 = htmlDecode("");
+	window.adobeDataLayer = window.adobeDataLayer || [];
+	xmlhttp = new XMLHttpRequest();
+	xmlhttp.open("HEAD", document.URL, true);
+	xmlhttp.onreadystatechange = function() {
+		if (xmlhttp.readyState == 4) {
+			xmlhttp.getAllResponseHeaders().trim().split(/[\r\n]+/).map(value => value.split(/: /)).forEach(keyValue => {
+			headers[keyValue[0].trim()] = keyValue[1].trim();
+			});
+		if (headers.hasOwnProperty("x-dispatcher")) {
+			servername=headers["x-dispatcher"];
+			window.adobeDataLayer.push({
+				"event": "Page Loaded",
+				"xdm": {
+					"web": {
+						"webPageDetails": {
+							"server": servername
+                            }
+                        }
+                    }
+                });
+			}
+		}
+	}
+	xmlhttp.send();
+	window.adobeDataLayer.push({
+		"event": "Page Loaded",
+		"xdm": {
+			"web": {
+				"webPageDetails": {
+					"siteSection": "idfpr", //home is for the root directory
+					"language": "en",
+					"name": name, //name is [directory level 1]:[page title]
+					"pageType": "agency-full-width-open-page", //the template name or id
+					"server": servername,
+					"pageName": pageName,
+					"ErrorPage": "", // incase of 404 error page only
+					"publishDate": "08/05/2026",
+					"originalPublishDate": "08/05/2026",
+					"errorCode": "",
+					"contentType":"general",
+					"errorType": "",
+				},
+				"category": {
+					"siteSection1": siteSection1,
+					"siteSection2": siteSection2,
+					"siteSection3": siteSection3,
+					"siteSection4": siteSection4
+
+				},
+				"aem": {
+					"environment": "prod",
+					"authorVsPublish": "publish",
+					"version": "6.5.21.0",
+					"buildDate": "2026-04-01T18:59:40Z",
+					"authorId": "anonymous",
+					"previewMode": mode
+
+				}
+			}
+		}
+	});
+
+	// Function to decode the encoded html String
+	function htmlDecode(input) {
+	    if (input) {
+	        var doc = new DOMParser().parseFromString(input, "text/html");
+	        return doc.documentElement.textContent;
+	    } else {
+	        return "";
+	    }
+	}
+
+
+
+      //(function(g,b,d,f){(function(a,c,d){if(a){var e=b.createElement("style");e.id=c;e.innerHTML=d;a.appendChild(e)}})(b.getElementsByTagName("head")[0],"at-body-style",d);setTimeout(function(){var a=b.getElementsByTagName("head")[0];if(a){var c=b.getElementById("at-body-style");c&&a.removeChild(c)}},f)})(window,document,"body {opacity: 0 !important}",3E3);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          window.adobeDataLayer = window.adobeDataLayer || [];
+          adobeDataLayer.push({
+              page: JSON.parse("{\x22open\u002Dpage\u002Db1de280b26\x22:{\x22@type\x22:\x22soi\/components\/structure\/open\u002Dpage\x22,\x22repo:modifyDate\x22:\x222026\u002D08\u002D05T19:01:59Z\x22,\x22dc:title\x22:\x22IDFPR | Real Estate Brokerage\x22,\x22dc:description\x22:\x22Real Estate Branch Office Real Estate Broker Real Estate Corporation Real Estate Partnership Real Estate CE Instructor Real Estate CE School Real Estate Leasing Agent Real Estate Leasing Agent Student Real Estate LLC Real Estate Managing Broker \u002D Renewal\x22,\x22xdm:template\x22:\x22\/conf\/soi\/settings\/wcm\/templates\/agency\u002Dfull\u002Dwidth\u002Dopen\u002Dpage\x22,\x22xdm:language\x22:\x22en\x22,\x22xdm:tags\x22:[],\x22repo:path\x22:\x22\/content\/soi\/idfpr\/en\/profs\/realest.html\x22}}"),
+              event:'cmp:show',
+              eventInfo: {
+                  path: 'page.open\u002Dpage\u002Db1de280b26'
+              }
+          });
+
+
+
+
+
+
+  Skip to main content
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                     Agencies
+
+
+
+
+
+                     Services
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                  Mario Treto, Jr., Secretary
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                {{#if values.length}}
+
+                    {{#each values}}
+                        {{#ifLess @index ../limit}}
+
+                                 {{../this.suggestion}}
+
+                        {{/ifLess}}
+                    {{/each}}
+
+                {{/if}}
+
+
+
+
+            {{#if options.length}}
+
+
+                     Search In
+
+                        {{#each options}}
+                             {{this.label}}
+                        {{/each}}
+
+
+
+            {{/if}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                     About IDFPR
+
+
+
+
+
+                                           Welcome From the Secretary
+
+
+
+                                           Our Mission
+
+
+
+                                           History
+
+
+
+                                           A History of Licensing in Illinois America 250
+
+
+
+                                           Leadership
+
+
+
+                                           Regulated Professions & Industries
+
+
+
+                                           Professional Licensing in Illinois
+
+
+
+                                           Consumer Portal
+
+
+
+                                           Reports & Publications
+
+
+
+                                           Language Assistance Services
+
+
+
+                                           Department FAQs
+
+
+
+                                           Acts & Rules
+
+
+
+                                           Boards & Committees
+
+
+
+                                           Latest News
+
+
+
+
+
+
+
+                                     Divisions & Offices
+
+
+
+
+
+                                           Banking
+
+
+
+                                           Financial Institutions
+
+
+
+                                           Professional Regulation
+
+
+
+                                           Real Estate
+
+
+
+                                           Office of Innovation
+
+
+
+                                           Office of Legislative Affairs
+
+
+
+                                           Cannabis Regulation Oversight Office
+
+
+
+
+
+
+
+                                     Cannabis Programs
+
+
+
+
+
+                                           Adult Use Cannabis Program
+
+
+
+                                           Medical Cannabis Patient Program
+
+
+
+                                           Cannabis Regulation Oversight Office
+
+
+
+
+
+
+
+                                     Help Center
+
+
+
+
+
+                                           Apply for a License
+
+
+
+                                           Renew My License
+
+
+
+                                           Check a License
+
+
+
+                                           Print My License
+
+
+
+                                           Active License Report
+
+
+
+                                           Online Resources
+
+
+
+                                           COVID-19 Information
+
+
+
+                                           File a Complaint
+
+
+
+                                           Self-Report
+
+
+
+                                           Review Enforcement Actions
+
+
+
+                                           Submit a Freedom of Information Act (FOIA) Request
+
+
+
+                                           Licensing Assistance for Military Members
+
+
+
+                                           Voter Registration
+
+
+
+                                           See IDFPR Job Openings
+
+
+
+
+
+
+
+                                     Newsroom
+
+
+
+
+
+                                           The Hub
+
+
+
+                                           News Releases
+
+
+
+                                           Media Kit
+
+
+
+                                           "Fake Dentist, Real Risk" Campaign
+
+
+
+
+
+
+
+                                     Contact Us
+
+
+
+
+
+
+
+
+
+
+                                    More
+
+
+
+
+
+
+
+
+
+
+                                  Mario Treto, Jr., Secretary
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+             IDFPR
+
+
+
+
+
+
+             Real Estate Brokerage
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      Real Estate Brokerage
+
+
+
+
+
+
+        Attention Students:         Effective December 16, 2025 all courses offered by ABR Real Estate Corporation DBA Real Estate School of Illinois will no longer satisfy the Illinois Real Estate education requirements until further notice.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          License Renewals
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          License Look Up
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          File a Complaint
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          License Maintenance
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      Professions Licensed by IDFPR:
+
+
+
+
+
+
+
+ Real Estate Branch Office  - Renewal Available!  
+ Real Estate Broker 
+ Real Estate Corporation  - Renewal Available!
+ Real Estate Partnership  - Renewal Available!
+ Real Estate CE Instructor
+ Real Estate Education Provider
+ Residential Leasing Agent  - Renewal Available!
+ Residential Leasing Agent Permit
+ Real Estate LLC  - Renewal Available!
+ Real Estate Managing Broker
+ Real Estate Pre-License Instructor
+ Real Estate Virtual Office  - Renewal Available!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      License Information
+
+
+
+
+
+
+
+      Online Renewal & Instructions
+
+
+
+
+
+
+
+    Online Renewal Instructions
+   Click Here to Start Your Online Renewal!
+Please allow 2-4 business days for your license to post in our systems and your license status to update.
+   NOTE:   If an applicant misses the renewal window and the online portal does not allow you to renew after it concludes, you must reinstate their license by  requesting a Reinstatement application from IDFPR .
+
+
+
+
+
+
+
+
+
+      Approved Education Providers and Courses
+
+
+
+
+
+
+
+  Approved Pre-License/Post-License Education Provider
+  Approved Pre-License/Post-License Courses
+  Approved CE Education Provider
+  Approved CE Courses
+
+
+
+
+
+
+
+
+
+
+      Real Estate Broker, Managing Broker, and Leasing Agent
+
+
+
+
+
+
+
+  Real Estate Application for Licensure by Endorsement   (FOR OUT OF STATE APPLICANTS ONLY)
+  Real Estate Exam Candidate Bulletin
+  Consent to Examine and Audit Special Accounts
+  Broker - Online Examination
+  Managing Broker - Online Examination
+  Leasing Agent - Online Examination
+  Non-Resident Consent Form
+  Affidavit of Non-Participation
+  Residential Leasing Agent Permit/Application
+
+
+
+
+
+
+
+
+
+      Real Estate Firm Application
+
+
+
+
+
+
+
+  Real Estate Virtual Office Registration and Checklist
+  Real Estate Virtual Offices F.A.Q.'s
+  Corporation/Partnership Application
+  Limited Liability Company Application
+  Branch Office Application
+  Consent to Examine and Audit Special Accounts
+
+
+
+
+
+
+
+
+
+
+      Real Estate Education Documents
+
+
+
+
+
+
+
+  2025 Real Estate Education Provider License Renewal Application
+  2025 Real Estate Course License Renewal Application
+  Real Estate Education Provider Virtual Office Registration Application & Checklist
+  Real Estate Education Provider Change in Owner, Officer, or Administrator Form
+  Education Provider Application
+  Pre-License/Post License Course License Application
+  Approved Pre-License Instructor Training Programs
+  Pre-License Instructor Requirements
+  Education Provider Fee Waiver Request Form
+  Education Provider Location Addition Form
+
+  Request for Out-of-State CE Approval
+  Continuing Education Course Application
+  Continuing Education Instructor License Requirements
+  Approved CE Instructor Development Workshops
+
+
+
+
+
+
+
+
+
+      Curriculum Information
+
+
+
+
+
+
+
+  30-Hour Real Estate Broker Pre-License Endorsement Course Curriculum
+  30-Hour Real Estate Managing Broker Pre-License Endorsement Course Curriculum
+  45-Hour Real Estate Broker Post License Curriculum
+  Residential Leasing Agent 8-Hour Core CE Curriculum
+  Broker 75-Hour Pre-License Curriculum
+  45 Hour Managing Broker Pre-License Curriculum
+  15 Hour Leasing Agent Pre-License Course
+  6-Hour Core Continuing Education (CE) Curriculum
+  12-Hour Broker Management Continuing Education (CE) Curriculum
+
+
+
+
+
+
+
+
+
+      License Maintenance
+
+
+
+
+
+
+
+  Overview of Professional Licensing in Illinois
+  Reactivate Your License
+  Request License Certification
+  Name & Address Change Requests
+  Third Party Authorization Form
+  Business Entity for Direct Payment of Compensation Registration Form
+  2025 Managing Broker Renewal Application (paper)
+  DRE Request for Inactive License
+  Office/Firm Change of Designated Managing Broker
+  Restoration Application for Leasing Agent/Broker/Managing Broker
+  Managing Broker to Broker Exchange Application
+  Sponsor Card
+
+
+
+
+
+
+
+
+
+      Resources & Publications
+
+
+
+
+
+
+
+  2027 CE Fact Sheet - Managing Broker
+  2026 CE Fact Sheet - Real Estate Broker
+  Department FAQs
+  2026 CE Fact Sheet- Residential Leasing Agent
+  Continuing Education Lookup
+
+
+
+
+
+
+
+
+
+      Board Information
+
+
+
+
+
+
+
+  Real Estate Administration and Disciplinary Board
+
+
+
+
+
+
+
+
+
+
+      Laws and Rules
+
+
+
+
+
+
+
+  Real Estate License Act
+  Real Estate License Rules
+
+
+
+
+
+
+
+
+
+
+      Contact Us
+
+
+
+
+
+
+
+  Real Estate Section Contacts
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    Footer
+
+
+
+
+
+
+
+
+
+
+
+
+                               Back to top
+
+
+
+
+
+
+
+
+                            Contact Information
+
+
+
+                                   Chicago Office
+  555 West Monroe Street, 5th Floor
+Chicago, IL 60661
+  Springfield Office
+  320 West Washington Street, 3rd Floor
+Springfield, IL 62786
+ Call Us:  1 (888) 473-4858
+ TTY/TDD Line:  1 (866) 325-4949
+
+
+
+
+
+
+                            Stay Informed
+
+
+
+                                      COVID-19 Information
+
+                                      About IDFPR
+
+                                      Department FAQs
+
+                                      Latest News
+
+
+
+
+
+
+
+                            Helpful Links
+
+
+
+                                       Apply For a License
+
+                                      Print My License
+
+                                      License Renewal
+
+                                      License Look-Up
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   Web Accessibility
+
+
+
+                   Missing & Exploited Children
+
+
+
+                   Amber Alerts
+
+
+
+                   Illinois Privacy Info
+
+
+
+  Governor JB Pritzker
+ © 2026
+  State of Illinois
+
+
+
+
+
+
+
+
+
+
+
+.google-translate .cmp-google-translate .goog-te-gadget > span {
+display: none;
+}

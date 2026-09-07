@@ -1,0 +1,355 @@
+{
+  "controlDate": "2026-09-06",
+  "generatedAt": "2026-09-06T11:55:27.717Z",
+  "uniquePdfUrls": 19,
+  "entries": [
+    {
+      "sourceIds": [
+        "NC-FORM-SOS-L09"
+      ],
+      "requestedUrl": "https://www.sosnc.gov/webfiles/documents/forms/Business_Registration/limited_liability_companies/application_for_certificate_of_authority.pdf",
+      "attemptedAt": "2026-09-06T11:55:26.310Z",
+      "status": "CAPTURED_UNREVIEWED",
+      "snapshotPath": "north-carolina/regulatory/captures/2026-09-06/nc-form-sos-l09.pdf",
+      "sha256": "0edbf25603a6a0829824672875bbe96c27299fe3a24b2e56a9b70ec48a7b0857",
+      "pdfReview": {
+        "status": "NOT_REVIEWED",
+        "pages": [],
+        "ocrStatus": "NOT_APPLICABLE_UNLESS_TEXT_DISPUTED"
+      },
+      "httpStatus": 200,
+      "finalUrl": "https://www.sosnc.gov/webfiles/documents/forms/Business_Registration/limited_liability_companies/application_for_certificate_of_authority.pdf",
+      "contentType": "application/pdf",
+      "receivedBytes": 134103,
+      "responseSha256": "0edbf25603a6a0829824672875bbe96c27299fe3a24b2e56a9b70ec48a7b0857",
+      "pdfPages": 3,
+      "pdfMetadata": {
+        "/Author": "WARREN J. WIDENER",
+        "/CreationDate": "D:20170807151910-04'00'",
+        "/Creator": "Microsoft® Word 2016",
+        "/Keywords": "{\"CodeKey\":\"LIMITEDLIABILITYCOMPANY.CREATIONFILING.APPLICATIONFORCERTIFICATEOFAUTHORITYLIMITEDL\",\"BarPageNumber\":2,\"Top\":5,\"Right\":215}",
+        "/ModDate": "D:20171030153115-04'00'",
+        "/Producer": "Microsoft® Word 2016",
+        "/Title": "State of North Carolina"
+      },
+      "textPath": "north-carolina/regulatory/captures/2026-09-06/nc-form-sos-l09.text.json",
+      "textSha256": "6b083568d90bf4dda7f7d2dcc23c18c9b6a5b01ff7f616f29749bb8aadf4a8ce"
+    },
+    {
+      "sourceIds": [
+        "NC-GUIDE-RELINC-2026"
+      ],
+      "requestedUrl": "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/093400.pdf",
+      "attemptedAt": "2026-09-06T11:55:26.308Z",
+      "status": "CAPTURED_UNREVIEWED",
+      "snapshotPath": "north-carolina/regulatory/captures/2026-09-06/nc-guide-relinc-2026.pdf",
+      "sha256": "bd367e286af12537c2c311eb688746b51c132679bb7ed2c9e81cbb5dcc2a25d4",
+      "pdfReview": {
+        "status": "NOT_REVIEWED",
+        "pages": [],
+        "ocrStatus": "NOT_APPLICABLE_UNLESS_TEXT_DISPUTED"
+      },
+      "httpStatus": 200,
+      "finalUrl": "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/093400.pdf",
+      "contentType": "application/pdf",
+      "receivedBytes": 2597718,
+      "responseSha256": "bd367e286af12537c2c311eb688746b51c132679bb7ed2c9e81cbb5dcc2a25d4",
+      "pdfPages": 36,
+      "pdfMetadata": {
+        "/Author": "J Robertson",
+        "/CreationDate": "D:20260414113414-04'00'",
+        "/Creator": "Adobe InDesign 20.5 (Windows)",
+        "/Keywords": "RELINC, Real Estate, Licensing, Instructions, Applications, Qualifications",
+        "/ModDate": "D:20260416111522-04'00'",
+        "/NCCL_App": "PDF",
+        "/NCCL_Standard": "WCAG 2.0 AA;WCAG 2.1 AA;",
+        "/NCCL_Status": "Passed",
+        "/Producer": "Adobe PDF Library 17.0",
+        "/Subject": "This booklet contains information on the Licensing Process and License Qualifications, License Examination Information and Instructions for Filing an Application.",
+        "/Title": "Real Estate Licensing in North Carolina",
+        "/Trapped": "/False"
+      },
+      "textPath": "north-carolina/regulatory/captures/2026-09-06/nc-guide-relinc-2026.text.json",
+      "textSha256": "a59cb97626b910f6f48a4189d0fddd8645aaf33aadba82662a95b462f2c2f0f0"
+    },
+    {
+      "sourceIds": [
+        "NC-RULE-58A-.0110"
+      ],
+      "requestedUrl": "https://reports.oah.state.nc.us/ncac/title%2021%20-%20occupational%20licensing%20boards%20and%20commissions/chapter%2058%20-%20real%20estate%20commission/subchapter%20a/21%20ncac%2058a%20.0110.pdf",
+      "attemptedAt": "2026-09-06T11:54:53.889Z",
+      "status": "RETRIEVAL_FAILED",
+      "snapshotPath": null,
+      "sha256": null,
+      "pdfReview": {
+        "status": "NOT_REVIEWED",
+        "pages": [],
+        "ocrStatus": "NOT_APPLICABLE_UNLESS_TEXT_DISPUTED"
+      },
+      "failure": "curl: (28) Failed to connect to reports.oah.state.nc.us port 443 after 8006 ms: Timeout was reached"
+    },
+    {
+      "sourceIds": [
+        "NC-RULE-58A-.0301"
+      ],
+      "requestedUrl": "https://reports.oah.state.nc.us/ncac/title%2021%20-%20occupational%20licensing%20boards%20and%20commissions/chapter%2058%20-%20real%20estate%20commission/subchapter%20a/21%20ncac%2058a%20.0301.pdf",
+      "attemptedAt": "2026-09-06T11:54:53.880Z",
+      "status": "RETRIEVAL_FAILED",
+      "snapshotPath": null,
+      "sha256": null,
+      "pdfReview": {
+        "status": "NOT_REVIEWED",
+        "pages": [],
+        "ocrStatus": "NOT_APPLICABLE_UNLESS_TEXT_DISPUTED"
+      },
+      "failure": "curl: (28) Failed to connect to reports.oah.state.nc.us port 443 after 8006 ms: Timeout was reached"
+    },
+    {
+      "sourceIds": [
+        "NC-RULE-58A-.0302"
+      ],
+      "requestedUrl": "https://reports.oah.state.nc.us/ncac/title%2021%20-%20occupational%20licensing%20boards%20and%20commissions/chapter%2058%20-%20real%20estate%20commission/subchapter%20a/21%20ncac%2058a%20.0302.pdf",
+      "attemptedAt": "2026-09-06T11:54:53.887Z",
+      "status": "RETRIEVAL_FAILED",
+      "snapshotPath": null,
+      "sha256": null,
+      "pdfReview": {
+        "status": "NOT_REVIEWED",
+        "pages": [],
+        "ocrStatus": "NOT_APPLICABLE_UNLESS_TEXT_DISPUTED"
+      },
+      "failure": "curl: (28) Failed to connect to reports.oah.state.nc.us port 443 after 8006 ms: Timeout was reached"
+    },
+    {
+      "sourceIds": [
+        "NC-RULE-58A-.0511"
+      ],
+      "requestedUrl": "https://reports.oah.state.nc.us/ncac/title%2021%20-%20occupational%20licensing%20boards%20and%20commissions/chapter%2058%20-%20real%20estate%20commission/subchapter%20a/21%20ncac%2058a%20.0511.pdf",
+      "attemptedAt": "2026-09-06T11:54:53.888Z",
+      "status": "RETRIEVAL_FAILED",
+      "snapshotPath": null,
+      "sha256": null,
+      "pdfReview": {
+        "status": "NOT_REVIEWED",
+        "pages": [],
+        "ocrStatus": "NOT_APPLICABLE_UNLESS_TEXT_DISPUTED"
+      },
+      "failure": "curl: (28) Failed to connect to reports.oah.state.nc.us port 443 after 8006 ms: Timeout was reached"
+    },
+    {
+      "sourceIds": [
+        "NC-RULE-58H-.0202"
+      ],
+      "requestedUrl": "https://reports.oah.state.nc.us/ncac/title%2021%20-%20occupational%20licensing%20boards%20and%20commissions/chapter%2058%20-%20real%20estate%20commission/subchapter%20h/21%20ncac%2058h%20.0202.pdf",
+      "attemptedAt": "2026-09-06T11:55:01.960Z",
+      "status": "RETRIEVAL_FAILED",
+      "snapshotPath": null,
+      "sha256": null,
+      "pdfReview": {
+        "status": "NOT_REVIEWED",
+        "pages": [],
+        "ocrStatus": "NOT_APPLICABLE_UNLESS_TEXT_DISPUTED"
+      },
+      "failure": "curl: (28) Failed to connect to reports.oah.state.nc.us port 443 after 8006 ms: Timeout was reached"
+    },
+    {
+      "sourceIds": [
+        "NC-RULE-58H-.0203"
+      ],
+      "requestedUrl": "https://reports.oah.state.nc.us/ncac/title%2021%20-%20occupational%20licensing%20boards%20and%20commissions/chapter%2058%20-%20real%20estate%20commission/subchapter%20h/21%20ncac%2058h%20.0203.pdf",
+      "attemptedAt": "2026-09-06T11:55:01.965Z",
+      "status": "RETRIEVAL_FAILED",
+      "snapshotPath": null,
+      "sha256": null,
+      "pdfReview": {
+        "status": "NOT_REVIEWED",
+        "pages": [],
+        "ocrStatus": "NOT_APPLICABLE_UNLESS_TEXT_DISPUTED"
+      },
+      "failure": "curl: (28) Failed to connect to reports.oah.state.nc.us port 443 after 8006 ms: Timeout was reached"
+    },
+    {
+      "sourceIds": [
+        "NC-RULE-58H-.0204"
+      ],
+      "requestedUrl": "https://reports.oah.state.nc.us/ncac/title%2021%20-%20occupational%20licensing%20boards%20and%20commissions/chapter%2058%20-%20real%20estate%20commission/subchapter%20h/21%20ncac%2058h%20.0204.pdf",
+      "attemptedAt": "2026-09-06T11:55:01.966Z",
+      "status": "RETRIEVAL_FAILED",
+      "snapshotPath": null,
+      "sha256": null,
+      "pdfReview": {
+        "status": "NOT_REVIEWED",
+        "pages": [],
+        "ocrStatus": "NOT_APPLICABLE_UNLESS_TEXT_DISPUTED"
+      },
+      "failure": "curl: (28) Failed to connect to reports.oah.state.nc.us port 443 after 8006 ms: Timeout was reached"
+    },
+    {
+      "sourceIds": [
+        "NC-RULE-58H-.0101",
+        "NC-RULE-58H-.0205-.0206",
+        "NC-RULE-58H-.0304-.0306"
+      ],
+      "requestedUrl": "https://reports.oah.state.nc.us/ncac/title%2021%20-%20occupational%20licensing%20boards%20and%20commissions/chapter%2058%20-%20real%20estate%20commission/chapter%2058%20rules.pdf",
+      "attemptedAt": "2026-09-06T11:55:01.971Z",
+      "status": "RETRIEVAL_FAILED",
+      "snapshotPath": null,
+      "sha256": null,
+      "pdfReview": {
+        "status": "NOT_REVIEWED",
+        "pages": [],
+        "ocrStatus": "NOT_APPLICABLE_UNLESS_TEXT_DISPUTED"
+      },
+      "failure": "curl: (28) Failed to connect to reports.oah.state.nc.us port 443 after 8006 ms: Timeout was reached"
+    },
+    {
+      "sourceIds": [
+        "NC-RULE-58H-.0207"
+      ],
+      "requestedUrl": "https://reports.oah.state.nc.us/ncac/title%2021%20-%20occupational%20licensing%20boards%20and%20commissions/chapter%2058%20-%20real%20estate%20commission/subchapter%20h/21%20ncac%2058h%20.0207.pdf",
+      "attemptedAt": "2026-09-06T11:55:10.143Z",
+      "status": "RETRIEVAL_FAILED",
+      "snapshotPath": null,
+      "sha256": null,
+      "pdfReview": {
+        "status": "NOT_REVIEWED",
+        "pages": [],
+        "ocrStatus": "NOT_APPLICABLE_UNLESS_TEXT_DISPUTED"
+      },
+      "failure": "curl: (28) Failed to connect to reports.oah.state.nc.us port 443 after 8006 ms: Timeout was reached"
+    },
+    {
+      "sourceIds": [
+        "NC-RULE-58H-.0208"
+      ],
+      "requestedUrl": "https://reports.oah.state.nc.us/ncac/title%2021%20-%20occupational%20licensing%20boards%20and%20commissions/chapter%2058%20-%20real%20estate%20commission/subchapter%20h/21%20ncac%2058h%20.0208.pdf",
+      "attemptedAt": "2026-09-06T11:55:10.153Z",
+      "status": "RETRIEVAL_FAILED",
+      "snapshotPath": null,
+      "sha256": null,
+      "pdfReview": {
+        "status": "NOT_REVIEWED",
+        "pages": [],
+        "ocrStatus": "NOT_APPLICABLE_UNLESS_TEXT_DISPUTED"
+      },
+      "failure": "curl: (28) Failed to connect to reports.oah.state.nc.us port 443 after 8006 ms: Timeout was reached"
+    },
+    {
+      "sourceIds": [
+        "NC-RULE-58H-.0209"
+      ],
+      "requestedUrl": "https://reports.oah.state.nc.us/ncac/title%2021%20-%20occupational%20licensing%20boards%20and%20commissions/chapter%2058%20-%20real%20estate%20commission/subchapter%20h/21%20ncac%2058h%20.0209.pdf",
+      "attemptedAt": "2026-09-06T11:55:10.154Z",
+      "status": "RETRIEVAL_FAILED",
+      "snapshotPath": null,
+      "sha256": null,
+      "pdfReview": {
+        "status": "NOT_REVIEWED",
+        "pages": [],
+        "ocrStatus": "NOT_APPLICABLE_UNLESS_TEXT_DISPUTED"
+      },
+      "failure": "curl: (28) Failed to connect to reports.oah.state.nc.us port 443 after 8006 ms: Timeout was reached"
+    },
+    {
+      "sourceIds": [
+        "NC-RULE-58H-.0302"
+      ],
+      "requestedUrl": "https://reports.oah.state.nc.us/ncac/title%2021%20-%20occupational%20licensing%20boards%20and%20commissions/chapter%2058%20-%20real%20estate%20commission/subchapter%20h/21%20ncac%2058h%20.0302.pdf",
+      "attemptedAt": "2026-09-06T11:55:10.155Z",
+      "status": "RETRIEVAL_FAILED",
+      "snapshotPath": null,
+      "sha256": null,
+      "pdfReview": {
+        "status": "NOT_REVIEWED",
+        "pages": [],
+        "ocrStatus": "NOT_APPLICABLE_UNLESS_TEXT_DISPUTED"
+      },
+      "failure": "curl: (28) Failed to connect to reports.oah.state.nc.us port 443 after 8006 ms: Timeout was reached"
+    },
+    {
+      "sourceIds": [
+        "NC-RULE-58H-.0401"
+      ],
+      "requestedUrl": "https://reports.oah.state.nc.us/ncac/title%2021%20-%20occupational%20licensing%20boards%20and%20commissions/chapter%2058%20-%20real%20estate%20commission/subchapter%20h/21%20ncac%2058h%20.0401.pdf",
+      "attemptedAt": "2026-09-06T11:55:18.231Z",
+      "status": "RETRIEVAL_FAILED",
+      "snapshotPath": null,
+      "sha256": null,
+      "pdfReview": {
+        "status": "NOT_REVIEWED",
+        "pages": [],
+        "ocrStatus": "NOT_APPLICABLE_UNLESS_TEXT_DISPUTED"
+      },
+      "failure": "curl: (28) Failed to connect to reports.oah.state.nc.us port 443 after 8006 ms: Timeout was reached"
+    },
+    {
+      "sourceIds": [
+        "NC-RULE-58H-.0404"
+      ],
+      "requestedUrl": "https://reports.oah.state.nc.us/ncac/title%2021%20-%20occupational%20licensing%20boards%20and%20commissions/chapter%2058%20-%20real%20estate%20commission/subchapter%20h/21%20ncac%2058h%20.0404.pdf",
+      "attemptedAt": "2026-09-06T11:55:18.236Z",
+      "status": "RETRIEVAL_FAILED",
+      "snapshotPath": null,
+      "sha256": null,
+      "pdfReview": {
+        "status": "NOT_REVIEWED",
+        "pages": [],
+        "ocrStatus": "NOT_APPLICABLE_UNLESS_TEXT_DISPUTED"
+      },
+      "failure": "curl: (28) Failed to connect to reports.oah.state.nc.us port 443 after 8006 ms: Timeout was reached"
+    },
+    {
+      "sourceIds": [
+        "NC-RULE-58H-.0415"
+      ],
+      "requestedUrl": "https://reports.oah.state.nc.us/ncac/title%2021%20-%20occupational%20licensing%20boards%20and%20commissions/chapter%2058%20-%20real%20estate%20commission/subchapter%20h/21%20ncac%2058h%20.0415.pdf",
+      "attemptedAt": "2026-09-06T11:55:18.236Z",
+      "status": "RETRIEVAL_FAILED",
+      "snapshotPath": null,
+      "sha256": null,
+      "pdfReview": {
+        "status": "NOT_REVIEWED",
+        "pages": [],
+        "ocrStatus": "NOT_APPLICABLE_UNLESS_TEXT_DISPUTED"
+      },
+      "failure": "curl: (28) Failed to connect to reports.oah.state.nc.us port 443 after 8006 ms: Timeout was reached"
+    },
+    {
+      "sourceIds": [
+        "NC-RULE-58H-.0416"
+      ],
+      "requestedUrl": "https://reports.oah.state.nc.us/ncac/title%2021%20-%20occupational%20licensing%20boards%20and%20commissions/chapter%2058%20-%20real%20estate%20commission/subchapter%20h/21%20ncac%2058h%20.0416.pdf",
+      "attemptedAt": "2026-09-06T11:55:18.237Z",
+      "status": "RETRIEVAL_FAILED",
+      "snapshotPath": null,
+      "sha256": null,
+      "pdfReview": {
+        "status": "NOT_REVIEWED",
+        "pages": [],
+        "ocrStatus": "NOT_APPLICABLE_UNLESS_TEXT_DISPUTED"
+      },
+      "failure": "curl: (28) Failed to connect to reports.oah.state.nc.us port 443 after 8006 ms: Timeout was reached"
+    },
+    {
+      "sourceIds": [
+        "NC-SYLLABUS-PRE-2026"
+      ],
+      "requestedUrl": "https://www.ncrec.gov/Forms/Education/Prelicense_Course_Syllabus.pdf",
+      "attemptedAt": "2026-09-06T11:55:26.301Z",
+      "status": "RETRIEVAL_FAILED",
+      "snapshotPath": null,
+      "sha256": null,
+      "pdfReview": {
+        "status": "NOT_REVIEWED",
+        "pages": [],
+        "ocrStatus": "NOT_APPLICABLE_UNLESS_TEXT_DISPUTED"
+      },
+      "httpStatus": 403,
+      "finalUrl": "https://www.ncrec.gov/Forms/Education/Prelicense_Course_Syllabus.pdf",
+      "contentType": "text/html",
+      "receivedBytes": 118,
+      "responseSha256": "58bf2215b395dcac74c009aa98701854e43cbe54a1cd3a95fee6a647ca9910d4",
+      "failure": "HTTP 403"
+    }
+  ]
+}

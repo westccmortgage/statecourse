@@ -44,6 +44,7 @@
 
 import PREEXAM_BANK from "./missouri/preexam-48-question-bank.mjs";
 import MREP_BANK from "./missouri/mrep-24-question-bank.mjs";
+import { missouriEducationWindow } from "./education-date-windows.mjs";
 
 /* The Commission's figures, from the rules. */
 const MINUTES_PER_CLOCK_HOUR = 60;
@@ -433,24 +434,8 @@ export function missouriEducationReadiness(completions = {}, options = {}) {
   const allComplete = perCourse.every((entry) => entry.complete);
   const allCertificated = perCourse.every((entry) => entry.certificated);
 
-  /* The six-month window runs from each course's own completion to the date of application, so the
-     EARLIEST completion is the binding one. */
-  let windowStatus = null;
-  if (allComplete && applicationDate) {
-    const dates = perCourse.map((entry) => entry.completedOn).filter(Boolean).map((value) => new Date(value));
-    const application = new Date(applicationDate);
-    if (dates.length === required.length && !Number.isNaN(application.valueOf()) && dates.every((d) => !Number.isNaN(d.valueOf()))) {
-      const earliest = new Date(Math.min(...dates.map((d) => d.valueOf())));
-      const deadline = new Date(earliest);
-      deadline.setMonth(deadline.getMonth() + 6);
-      windowStatus = {
-        earliestCompletion: earliest.toISOString().slice(0, 10),
-        windowClosesOn: deadline.toISOString().slice(0, 10),
-        applicationDate: application.toISOString().slice(0, 10),
-        withinWindow: application <= deadline
-      };
-    }
-  }
+  // The standard route is anchored to the 48-hour pre-exam completion date.
+  const windowStatus = missouriEducationWindow(perCourse, applicationDate);
 
   return {
     requiredCourses: Object.freeze(perCourse.map((entry) => Object.freeze(entry))),
@@ -462,8 +447,11 @@ export function missouriEducationReadiness(completions = {}, options = {}) {
       const missing = perCourse.filter((entry) => !entry.complete);
       if (missing.length) return `Not complete: ${missing.map((entry) => entry.title).join("; ")}.`;
       if (!allCertificated) return "No Commission course approval number is recorded for every course, so no certificate may issue.";
+      if (applicationDate && !windowStatus) return "Valid completion and application dates are required.";
+      if (windowStatus?.completionAfterApplication) return "All required education must be completed before application.";
+      if (windowStatus && windowStatus.earliestCompletion < windowStatus.windowStartsOn) return "The standard route requires the 48-hour pre-exam course before MREP.";
       if (windowStatus && !windowStatus.withinWindow) {
-        return `The education was completed on ${windowStatus.earliestCompletion}; § 339.040.6, RSMo, requires completion within six months prior to the date of application, and that window closed on ${windowStatus.windowClosesOn}.`;
+        return `The pre-exam education was completed on ${windowStatus.windowStartsOn}; § 339.040.6, RSMo, requires completion within six months prior to the date of application, and that window closed on ${windowStatus.windowClosesOn}.`;
       }
       return null;
     })()

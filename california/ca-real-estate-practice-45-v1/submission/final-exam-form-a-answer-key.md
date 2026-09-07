@@ -896,14 +896,14 @@ C. Failing to document a conversation that later matters.
 >
 > **Found in the course material at:** Assignment 13 (Ethics, risk management, and dispute prevention), section 6.6
 
-### 79. What distinguishes implicit bias from explicit bias?
+### 79. A brokerage review finds two different problems. One agent openly says that he dislikes working with families who have children. A referral-only marketing policy repeatedly reaches the same narrow population even when staff apply it without personal prejudice. Which classification best distinguishes the two findings?
 
-A. Implicit bias applies to advertising and explicit bias to client selection.
-B. Implicit bias is unlawful while explicit bias is merely unprofessional.
-**C. Implicit bias operates outside conscious awareness and can affect the conduct of a person who holds no discriminatory belief.**
-D. Implicit bias occurs only in organizations, not in individuals.
+A. The agent expresses systemic bias, while the marketing policy expresses explicit bias because it is written down.
+B. Both are implicit bias because neither finding names a particular rejected applicant.
+**C. The agent expresses explicit bias; the recurring pattern built into the marketing policy is a potential systemic bias that warrants review.**
+D. Neither finding raises a bias concern unless someone admits intending an unlawful result.
 
-> **Correct answer: C.** The distinction is awareness. Both can produce unlawful conduct, and systemic bias is a third thing that is not the sum of individual bias.
+> **Correct answer: C.** Assignment 14 section 1.1 distinguishes a consciously held attitude from patterns embedded in practices, policies, and structures. The agent's stated attitude is explicit bias. The policy's recurring reach calls for systemic review even without personal prejudice. This classification identifies the kind of concern; it does not by itself establish that a particular policy violates the law.
 >
 > **Found in the course material at:** Assignment 14 (Implicit bias and fair housing participatory practicum), section 1.1
 

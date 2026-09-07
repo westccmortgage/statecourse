@@ -49,10 +49,16 @@ test("Michigan server catalog is a non-purchasable regulatory draft by default",
 
 test("Sites resolves generated StateCourse directory routes through their index files", async () => {
   const worker = await read("worker/index.ts");
-  assert.match(worker, /url\.pathname\.startsWith\("\/statecourse\/"\)/);
-  assert.match(worker, /assetUrl\.pathname = .*index\.html/);
-  assert.match(worker, /env\.ASSETS\.fetch/);
-  assert.match(worker, /assetResponse\.status !== 404/);
+  assert.match(worker, /await servePublicAssets\(request, env\.ASSETS\)/);
+  const { servePublicAssets } = await import("../worker/public-assets.mjs");
+  for (const prefix of ["", "/statecourse"]) {
+    let actualPath;
+    const result = await servePublicAssets(new Request(`https://statecourse-course.crdpartners2020.chatgpt.site${prefix}/real-estate/michigan/`), {
+      fetch: async (request) => { actualPath = new URL(request.url).pathname; return new Response("Michigan course page"); },
+    });
+    assert.equal(actualPath, "/statecourse/real-estate/michigan/index.html");
+    assert.equal(await result.text(), "Michigan course page");
+  }
 });
 
 test("Sites keeps account actions on the canonical operational student portal", async () => {

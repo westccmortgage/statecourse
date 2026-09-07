@@ -7,9 +7,9 @@
  * national, three course completion conditions, a 75 percent proctored closed-book comprehensive
  * end-of-course examination, and Required Activities that must be completed.
  *
- * They also hold the build to what it did NOT read. NCGS 93A, 21 NCAC 58, Form 2-T, the WWREA
- * Disclosure, the RPOADS, the MOG, the Square Footage Guidelines and the rest were not obtained, and
- * a test here fails if any module starts stating figures from them.
+ * They also hold the original curriculum to its source boundaries. Phase 0 has since inspected the
+ * current governing statutes/rules, while forms, manuals and topic-level curriculum reconciliation
+ * remain explicit dependencies.
  */
 
 import test from "node:test";
@@ -30,6 +30,8 @@ import {
   NORTH_CAROLINA_MODULES,
   NORTH_CAROLINA_REQUIRED_ACTIVITIES,
   NORTH_CAROLINA_UNREAD_SOURCES,
+  NORTH_CAROLINA_OPEN_SOURCE_DEPENDENCIES,
+  NORTH_CAROLINA_TIMING_EVIDENCE,
   NORTH_CAROLINA_END_OF_COURSE_PASSING_PERCENT,
   NORTH_CAROLINA_REQUIRED_TOTAL_HOURS,
   NORTH_CAROLINA_REQUIRED_INSTRUCTIONAL_HOURS,
@@ -421,15 +423,28 @@ test("Module NC-16 records its zero hours as the Commission's instruction, not a
   assert.match(sixteen, /double-count/i);
 });
 
-/* ---- What was NOT read ---- */
+/* ---- Source and timing boundaries ---- */
 
-test("the readings file names what was not obtained, and the engine carries the same list", () => {
-  assert.match(readings, /has NOT been read|NOT obtained|not obtained/i);
-  assert.ok(NORTH_CAROLINA_UNREAD_SOURCES.length >= 10);
-  const joined = NORTH_CAROLINA_UNREAD_SOURCES.join(" | ");
-  for (const source of ["NCGS Chapter 93A", "21 NCAC 58A", "Form 2-T", "REC 4.22", "REC 4.25", "Residential Square Footage Guidelines", "URAR"]) {
-    assert.ok(joined.includes(source), `unread list does not name ${source}`);
+test("Phase 0 supersedes the original statute/rule gap while carrying live course-material dependencies", () => {
+  assert.match(readings, /2026-09-04 Phase 0 supersession notice/i);
+  assert.strictEqual(NORTH_CAROLINA_UNREAD_SOURCES, NORTH_CAROLINA_OPEN_SOURCE_DEPENDENCIES);
+  assert.ok(NORTH_CAROLINA_OPEN_SOURCE_DEPENDENCIES.length >= 10);
+  const joined = NORTH_CAROLINA_OPEN_SOURCE_DEPENDENCIES.join(" | ");
+  for (const source of ["Form 2-T", "REC 4.22", "REC 4.25", "Residential Square Footage Guidelines", "URAR"]) {
+    assert.ok(joined.includes(source), `open dependency list does not name ${source}`);
   }
+  assert.doesNotMatch(joined, /^NCGS Chapter 93A \(Real Estate License Law\)/);
+  assert.doesNotMatch(joined, /^21 NCAC 58A, 58B and 58H in their own text/);
+});
+
+test("planned module labels do not masquerade as validated self-paced timing", () => {
+  assert.equal(NORTH_CAROLINA_TIMING_EVIDENCE.validated, false);
+  assert.equal(NORTH_CAROLINA_TIMING_EVIDENCE.commissionReadingRateWordsPerMinute, 225);
+  assert.equal(NORTH_CAROLINA_TIMING_EVIDENCE.instructionalMinutesPerHour, 50);
+  assert.equal(NORTH_CAROLINA_TIMING_EVIDENCE.requiredInstructionalMinutes, 3600);
+  assert.ok(NORTH_CAROLINA_TIMING_EVIDENCE.curriculumBaselineMinutes < 300);
+  assert.equal(getNorthCarolinaCourse().enrollmentStatus, "closed");
+  assert.equal(getNorthCarolinaCourse().paymentStatus, "disabled");
 });
 
 test("every module names what it did not read in its own instructor source note", () => {

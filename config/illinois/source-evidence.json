@@ -1,0 +1,202 @@
+{
+  "snapshotId": "IL-SOURCE-EVIDENCE-2026-09-06-v2",
+  "captures": [
+    {
+      "id": "IL-CURR-75",
+      "url": "https://idfpr.illinois.gov/content/dam/soi/en/web/idfpr/forms/dre/real-estate-broker-75-hour-pre-license-curriculum-final-jan-1-2020.pdf",
+      "finalUrl": "https://idfpr.illinois.gov/content/dam/soi/en/web/idfpr/forms/dre/real-estate-broker-75-hour-pre-license-curriculum-final-jan-1-2020.pdf",
+      "retrievedAt": "2026-09-06T12:04:36.493Z",
+      "httpStatus": 200,
+      "contentType": "application/pdf",
+      "path": "illinois/regulatory/evidence/IL-CURR-75.pdf",
+      "sha256": "66dea43a4c95f20057df8c39d425f192637d847e103c089dcf26b6399cc93570",
+      "byteCount": 264591,
+      "textPath": "illinois/regulatory/evidence/IL-CURR-75.txt",
+      "textSha256": "7917f31445b249dbe98ecec39fca15ca95720048540daa0c3f6e280446272e74",
+      "pageCount": 7,
+      "contentMarkers": [
+        "BROKER 75-HOUR PRE-LICENSE CURRICULUM",
+        "Applied Real Estate Principles"
+      ]
+    },
+    {
+      "id": "IL-CURR-45POST",
+      "url": "https://idfpr.illinois.gov/content/dam/soi/en/web/idfpr/forms/dre/real-estate-broker-45-hour-post-license-curriculum-final.pdf",
+      "finalUrl": "https://idfpr.illinois.gov/content/dam/soi/en/web/idfpr/forms/dre/real-estate-broker-45-hour-post-license-curriculum-final.pdf",
+      "retrievedAt": "2026-09-06T12:04:36.882Z",
+      "httpStatus": 200,
+      "contentType": "application/pdf",
+      "path": "illinois/regulatory/evidence/IL-CURR-45POST.pdf",
+      "sha256": "811d04c146f375f974e72e2eef3a4162856d031ad9ea6b1ee7454321b28b9a05",
+      "byteCount": 359282,
+      "textPath": "illinois/regulatory/evidence/IL-CURR-45POST.txt",
+      "textSha256": "8eed957b7abdd10582faf55f88d586c7d6095e29bf4189d96d0e9d2328491bbd",
+      "pageCount": 12,
+      "contentMarkers": [
+        "45-HOUR BROKER POST-LICENSE CURRICULUM",
+        "RISK MANAGEMENT/DISCIPLINE",
+        "TRANSACTIONAL ISSUES"
+      ]
+    },
+    {
+      "id": "IL-CURR-45MB",
+      "url": "https://idfpr.illinois.gov/content/dam/soi/en/web/idfpr/forms/dre/45hrbrokermanagementprelicensecourse.pdf",
+      "finalUrl": "https://idfpr.illinois.gov/content/dam/soi/en/web/idfpr/forms/dre/45hrbrokermanagementprelicensecourse.pdf",
+      "retrievedAt": "2026-09-06T12:04:37.016Z",
+      "httpStatus": 200,
+      "contentType": "application/pdf",
+      "path": "illinois/regulatory/evidence/IL-CURR-45MB.pdf",
+      "sha256": "bc23795f37eec410076802a4451e45e0536bec7795e47c0d7c032f1db24d5f0a",
+      "byteCount": 100944,
+      "textPath": "illinois/regulatory/evidence/IL-CURR-45MB.txt",
+      "textSha256": "885447719567b053d938138349baeed6a313a7c85d1f0a7a5b2c74c63e181b1d",
+      "pageCount": 1,
+      "contentMarkers": [
+        "45 Hour Managing Broker Pre-License Courses",
+        "12 Hours - Risk Management"
+      ]
+    },
+    {
+      "id": "IL-CURR-END-BROKER",
+      "url": "https://idfpr.illinois.gov/content/dam/soi/en/web/idfpr/forms/dre/30-hour-real-estate-broker-endorsement-curriculum-12-10-2024.pdf",
+      "finalUrl": "https://idfpr.illinois.gov/content/dam/soi/en/web/idfpr/forms/dre/30-hour-real-estate-broker-endorsement-curriculum-12-10-2024.pdf",
+      "retrievedAt": "2026-09-06T12:04:37.208Z",
+      "httpStatus": 200,
+      "contentType": "application/pdf",
+      "path": "illinois/regulatory/evidence/IL-CURR-END-BROKER.pdf",
+      "sha256": "4e5d4cb08bde3a701a28919e7e7039efa2d18ae376a31972f9197b1a65290444",
+      "byteCount": 281652,
+      "textPath": "illinois/regulatory/evidence/IL-CURR-END-BROKER.txt",
+      "textSha256": "75ce86d256f93ccd8380bd129b2d698aa21d47050a5457769887392c760af7d3",
+      "pageCount": 2,
+      "contentMarkers": [
+        "30-HOUR",
+        "ENDORSEMENT",
+        "1,500"
+      ]
+    },
+    {
+      "id": "IL-CURR-END-MB",
+      "url": "https://idfpr.illinois.gov/content/dam/soi/en/web/idfpr/forms/dre/30-hour-real-estate-managing-broker-endorsement-curriculum-12-10-2024.pdf",
+      "finalUrl": "https://idfpr.illinois.gov/content/dam/soi/en/web/idfpr/forms/dre/30-hour-real-estate-managing-broker-endorsement-curriculum-12-10-2024.pdf",
+      "retrievedAt": "2026-09-06T12:04:37.373Z",
+      "httpStatus": 200,
+      "contentType": "application/pdf",
+      "path": "illinois/regulatory/evidence/IL-CURR-END-MB.pdf",
+      "sha256": "a14a7ee2923cb1e7ea5f08e9043dbac61a3180c15719b5608c5eca2262ba1d6c",
+      "byteCount": 299169,
+      "textPath": "illinois/regulatory/evidence/IL-CURR-END-MB.txt",
+      "textSha256": "6914806002d0009d836f1f04cf19b3c7decad5605d22b84528486939f918d3ef",
+      "pageCount": 3,
+      "contentMarkers": [
+        "30-HOUR",
+        "ENDORSEMENT",
+        "1,500"
+      ]
+    },
+    {
+      "id": "IL-FORM-PROVIDER",
+      "url": "https://idfpr.illinois.gov/content/dam/soi/en/web/idfpr/forms/dre/form-505-0767.pdf",
+      "finalUrl": "https://idfpr.illinois.gov/content/dam/soi/en/web/idfpr/forms/dre/form-505-0767.pdf",
+      "retrievedAt": "2026-09-06T12:04:37.839Z",
+      "httpStatus": 200,
+      "contentType": "application/pdf",
+      "path": "illinois/regulatory/evidence/IL-FORM-PROVIDER.pdf",
+      "sha256": "5da3703909495af62bbddf1e7398864a06d2dc9b13b4da49cc3df03766b0e6b4",
+      "byteCount": 1264541,
+      "textPath": "illinois/regulatory/evidence/IL-FORM-PROVIDER.txt",
+      "textSha256": "6816ec2f95b79ff5a9b37a57399bc43568d8426528290ac351150e7f2b1da4f0",
+      "pageCount": 7,
+      "contentMarkers": [
+        "505-0767",
+        "Illinois Secretary of State"
+      ]
+    },
+    {
+      "id": "IL-FORM-COURSE",
+      "url": "https://idfpr.illinois.gov/content/dam/soi/en/web/idfpr/forms/dre/form-505-0645.pdf",
+      "finalUrl": "https://idfpr.illinois.gov/content/dam/soi/en/web/idfpr/forms/dre/form-505-0645.pdf",
+      "retrievedAt": "2026-09-06T12:04:38.227Z",
+      "httpStatus": 200,
+      "contentType": "application/pdf",
+      "path": "illinois/regulatory/evidence/IL-FORM-COURSE.pdf",
+      "sha256": "ce452f5757ba90d1dc6afc4ef2d6bde31d58594a5860ea0cf4eeb3d7409a87df",
+      "byteCount": 916521,
+      "textPath": "illinois/regulatory/evidence/IL-FORM-COURSE.txt",
+      "textSha256": "fada143228cbc70515c26d28e99d03db66f52b8f71fe279e388f40da1562dc18",
+      "pageCount": 2,
+      "contentMarkers": [
+        "505-0645",
+        "Learning Management System"
+      ]
+    },
+    {
+      "id": "IL-DATA-FY2024",
+      "url": "https://idfpr.illinois.gov/content/dam/soi/en/web/idfpr/forms/ar/may-2025-pa-100-0286.pdf",
+      "finalUrl": "https://idfpr.illinois.gov/content/dam/soi/en/web/idfpr/forms/ar/may-2025-pa-100-0286.pdf",
+      "retrievedAt": "2026-09-06T12:04:39.229Z",
+      "httpStatus": 200,
+      "contentType": "application/pdf",
+      "path": "illinois/regulatory/evidence/IL-DATA-FY2024.pdf",
+      "sha256": "56c51d444f787fe4a72ac40cd7a09940afc10acbd81670d08e05a6383784db2d",
+      "byteCount": 1522713,
+      "textPath": "illinois/regulatory/evidence/IL-DATA-FY2024.txt",
+      "textSha256": "87ecc4d4cb5eba2ef90d543826816d2afff5613b4f70940d46bc73631fedbb8a",
+      "pageCount": 86,
+      "contentMarkers": [
+        "Total Number of Applicants 449 4212",
+        "Number of Licenses Granted* 421 3972"
+      ]
+    },
+    {
+      "id": "IL-DATA-BOARD-202603",
+      "url": "https://idfpr.illinois.gov/content/dam/soi/en/web/idfpr/profs/meetings/minutes/2026-03-12-read-open-minutes.pdf",
+      "finalUrl": "https://idfpr.illinois.gov/content/dam/soi/en/web/idfpr/profs/meetings/minutes/2026-03-12-read-open-minutes.pdf",
+      "retrievedAt": "2026-09-06T12:04:39.421Z",
+      "httpStatus": 200,
+      "contentType": "application/pdf",
+      "path": "illinois/regulatory/evidence/IL-DATA-BOARD-202603.pdf",
+      "sha256": "52c1c50971fbbabbfe0ec727aee74f4bdacbe8c61360622add530e321e578de9",
+      "byteCount": 407097,
+      "textPath": "illinois/regulatory/evidence/IL-DATA-BOARD-202603.txt",
+      "textSha256": "6facf982b357e7bb9ed32d8d2bb0bbdc6384bfb1947606c968315643d5476d46",
+      "pageCount": 5,
+      "contentMarkers": [
+        "59,006",
+        "13,898"
+      ]
+    },
+    {
+      "id": "IL-DRE-HUB",
+      "url": "https://idfpr.illinois.gov/profs/realest.html",
+      "finalUrl": "https://idfpr.illinois.gov/profs/realest.html",
+      "retrievedAt": "2026-09-06T12:04:40.210Z",
+      "httpStatus": 200,
+      "contentType": "text/html;charset=utf-8",
+      "path": "illinois/regulatory/evidence/IL-DRE-HUB.html",
+      "sha256": "5ca937af83f97a5ae3fa3da7caaf1c84e28bdb5cfab090a5752c45494b5ba533",
+      "byteCount": 88274,
+      "textPath": "illinois/regulatory/evidence/IL-DRE-HUB.txt",
+      "textSha256": "c10a1ca06c40123b6c48cbaa97b061c3ac616d496d3f403a075d389c39a7f95e",
+      "pageCount": null,
+      "contentMarkers": [
+        "45 Hour Managing Broker Pre-License Curriculum",
+        "Broker 75-Hour Pre-License Curriculum"
+      ]
+    }
+  ],
+  "captureFailures": [
+    {
+      "id": "IL-ACT-1",
+      "url": "https://www.ilga.gov/legislation/ILCS/details?ActID=1364&ActName=Real+Estate+License+Act+of+2000.&ChapAct=225+ILCS+454%2F&Chapter=&ChapterID=24&MajorTopic=&Print=True&SeqEnd=450000&SeqStart=100000",
+      "httpStatus": 403,
+      "note": "No byte lock. Official page reviewed with web tool; not represented as a captured source."
+    },
+    {
+      "id": "IL-RULE-1450",
+      "url": "https://www.ilga.gov/agencies/JCAR/EntirePart?titlepart=06801450",
+      "httpStatus": 403,
+      "note": "No byte lock. Official page reviewed with web tool; not represented as a captured source."
+    }
+  ]
+}
