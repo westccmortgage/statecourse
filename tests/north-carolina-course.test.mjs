@@ -672,9 +672,10 @@ test("the material fact rules that run against intuition are stated in Modules N
   /* Not material. */
   assert.match(fifteen, /haunted/i);
   assert.match(fifteen, /not a material fact in NC unless questioned by the buyer/i);
-  assert.match(fifteen, /Square footage is not a material fact in NC, but must be accurate if reported/i);
   /* Material. */
+  assert.match(fifteen, /heated living area is material/i);
   assert.match(fifteen, /Responsibility for street maintenance is a material fact/i);
+  assert.doesNotMatch(fifteen, /Square footage is not a material fact in NC, but must be accurate if reported/i);
 });
 
 test("the Connor Act is described as a pure race statute with its correct limit", () => {
@@ -767,11 +768,12 @@ test("Module NC-16 records its zero hours as the Commission's instruction, not a
 test("Phase 0 supersedes the original statute/rule gap while carrying live course-material dependencies", () => {
   assert.match(readings, /2026-09-04 Phase 0 supersession notice/i);
   assert.strictEqual(NORTH_CAROLINA_UNREAD_SOURCES, NORTH_CAROLINA_OPEN_SOURCE_DEPENDENCIES);
-  assert.ok(NORTH_CAROLINA_OPEN_SOURCE_DEPENDENCIES.length >= 10);
+  assert.ok(NORTH_CAROLINA_OPEN_SOURCE_DEPENDENCIES.length >= 7);
   const joined = NORTH_CAROLINA_OPEN_SOURCE_DEPENDENCIES.join(" | ");
-  for (const source of ["Form 2-T", "REC 4.22", "REC 4.25", "Residential Square Footage Guidelines", "USPAP"]) {
+  for (const source of ["Form 2-T", "Questions & Answers brochure", "building-code tables", "USPAP"]) {
     assert.ok(joined.includes(source), `open dependency list does not name ${source}`);
   }
+  for (const delivered of ["REC 4.22", "REC 4.25", "Residential Square Footage Guidelines"]) assert.ok(!joined.includes(delivered), `${delivered} remains incorrectly open`);
   assert.doesNotMatch(joined, /^NCGS Chapter 93A \(Real Estate License Law\)/);
   assert.doesNotMatch(joined, /^21 NCAC 58A, 58B and 58H in their own text/);
 });
@@ -781,7 +783,9 @@ test("planned module labels do not masquerade as validated self-paced timing", (
   assert.equal(NORTH_CAROLINA_TIMING_EVIDENCE.commissionReadingRateWordsPerMinute, 225);
   assert.equal(NORTH_CAROLINA_TIMING_EVIDENCE.instructionalMinutesPerHour, 50);
   assert.equal(NORTH_CAROLINA_TIMING_EVIDENCE.requiredInstructionalMinutes, 3600);
-  assert.ok(NORTH_CAROLINA_TIMING_EVIDENCE.curriculumBaselineMinutes < 300);
+  assert.equal(NORTH_CAROLINA_TIMING_EVIDENCE.curriculumBaselineWords, 68779);
+  assert.equal(NORTH_CAROLINA_TIMING_EVIDENCE.curriculumBaselineMinutes, 305.68);
+  assert.ok(NORTH_CAROLINA_TIMING_EVIDENCE.curriculumBaselineMinutes < NORTH_CAROLINA_TIMING_EVIDENCE.requiredInstructionalMinutes);
   assert.equal(getNorthCarolinaCourse().enrollmentStatus, "closed");
   assert.equal(getNorthCarolinaCourse().paymentStatus, "disabled");
 });
@@ -859,13 +863,49 @@ test("every Required Activity names a real module and every outstanding one says
   }
 });
 
-test("the Required Activities that still depend on unobtained forms are recorded as outstanding, not delivered", () => {
+test("the Form 2-T Required Activity remains outstanding because the proprietary artifact was not obtained", () => {
   const byText = (needle) => NORTH_CAROLINA_REQUIRED_ACTIVITIES.find((a) => a.activity.includes(needle));
-  for (const needle of ["Form 2-T", "RPOADS", "Square Footage Guidelines"]) {
+  const activity = byText("Form 2-T");
+  assert.ok(activity);
+  assert.equal(activity.status, "outstanding");
+});
+
+test("Module NC-15 disclosure and square-footage activities have retained all-page evidence", () => {
+  const byText = (needle) => NORTH_CAROLINA_REQUIRED_ACTIVITIES.find((a) => a.activity.includes(needle));
+  for (const needle of ["RPOADS", "Square Footage Guidelines", "mechanics' liens"]) {
     const activity = byText(needle);
-    assert.ok(activity, `no Required Activity mentions ${needle}`);
-    assert.equal(activity.status, "outstanding", `${needle} is recorded as delivered but the artefact was never obtained`);
+    assert.ok(activity, needle);
+    assert.equal(activity.status, "delivered", needle);
+    assert.match(activity.evidencePath, /module-15\.md/);
   }
+  const capture = new URL("../north-carolina/regulatory/captures/2026-09-07/module-15-materials/", import.meta.url);
+  const review = JSON.parse(readFileSync(new URL("page-reviews.json", capture), "utf8"));
+  assert.equal(review.artifacts.length, 4);
+  assert.equal(review.artifacts.reduce((sum, artifact) => sum + artifact.pages.length, 0), 35);
+  const filenames = {
+    "NC-NCREC-RPOADS-2026": "ncrec-rec422-rpoads.pdf",
+    "NC-NCREC-MOG": "ncrec-rec425-mog.pdf",
+    "NC-NCREC-RSFG-2026": "ncrec-residential-square-footage-guidelines.pdf",
+    "NC-NCREC-WWREA": "ncrec-wwrea-disclosure-form.pdf"
+  };
+  const stems = {
+    "NC-NCREC-RPOADS-2026": "ncrec-rec422-rpoads",
+    "NC-NCREC-MOG": "ncrec-rec425-mog",
+    "NC-NCREC-RSFG-2026": "ncrec-residential-square-footage-guidelines",
+    "NC-NCREC-WWREA": "ncrec-wwrea-disclosure-form"
+  };
+  const hash = (url) => createHash("sha256").update(readFileSync(url)).digest("hex");
+  for (const artifact of review.artifacts) {
+    assert.equal(artifact.pageCount, artifact.pages.length, artifact.id);
+    assert.equal(hash(new URL(filenames[artifact.id], capture)), artifact.pdfSha256, artifact.id);
+    for (const page of artifact.pages) {
+      const number = artifact.pageCount > 9 ? String(page.number).padStart(2, "0") : page.number;
+      assert.equal(hash(new URL(`renders/${stems[artifact.id]}-${number}.png`, capture)), page.sha256, `${artifact.id} page ${page.number}`);
+    }
+  }
+  const fifteen = readModule("module-15");
+  assert.match(fifteen, /total residential living area = 2,292 square feet/i);
+  assert.doesNotMatch(fifteen, /has not obtained REC 4\.22|has not obtained the NCREC Residential Square Footage Guidelines|NCGS 47E has not been obtained/i);
 });
 
 test("Module NC-13 appraisal activities are delivered only with retained all-page review evidence", () => {

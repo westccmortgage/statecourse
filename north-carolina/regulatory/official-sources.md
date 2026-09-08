@@ -102,14 +102,22 @@ No commercial school, law-firm summary, aggregator, or search snippet is control
 | Appraiser credential and broker CMA/BPO boundary | G.S. Chapter 93E Article 1; Chapter 93A Article 6 | appraisal credential/trainee supervision; broker opinion purposes, contents, disclaimers and mortgage-origination limit | [Chapter 93E Article 1](https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/ByArticle/Chapter_93E/Article_1.html), [Chapter 93A Article 6](https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/ByArticle/Chapter_93A/Article_6.html) |
 | USPAP identity and federal history | The Appraisal Foundation | standards publication; Foundation created in 1987 and later authorized by FIRREA | [USPAP](https://appraisalfoundation.org/pages/uspap), [Foundation history](https://appraisalfoundation.org/pages/who-we-are) |
 | Current URAR/UAD transition and completed samples | Fannie Mae | broad production, November 2, 2026 mandate, May 3, 2027 legacy-revision end; official completed SF5 sample | [UAD and Forms Redesign](https://singlefamily.fanniemae.com/delivering/uniform-mortgage-data-program/uniform-appraisal-dataset), [Forms](https://singlefamily.fanniemae.com/selling-servicing-guide-forms) |
+| Marketable title and registered land | Chapters 47B and 43 | 30-year record chain/exceptions/preservation; in rem Torrens process | [Chapter 47B](https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/ByChapter/Chapter_47B.html), [Chapter 43](https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/ByChapter/Chapter_43.html) |
+| State Fair Housing | Chapter 41A; 58A .0120/.1601 | protected bases, exemptions, advertising and enforcement workflow | [Chapter 41A](https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/ByChapter/Chapter_41A.html), [OAH Chapter 58](https://reports.oah.state.nc.us/ncac/title%2021%20-%20occupational%20licensing%20boards%20and%20commissions/chapter%2058%20-%20real%20estate%20commission/chapter%2058%20rules.pdf) |
+| Timeshares | Chapter 93A Article 4; 21 NCAC 58B | registration, cancellation, escrow, records and program broker | [Article 4](https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/ByArticle/Chapter_93A/Article_4.html), [OAH Chapter 58](https://reports.oah.state.nc.us/ncac/title%2021%20-%20occupational%20licensing%20boards%20and%20commissions/chapter%2058%20-%20real%20estate%20commission/chapter%2058%20rules.pdf) |
+| RPOADS and MOG | Chapter 47E; official REC 4.22/4.25 | scope, exemptions, response options, delivery and cancellation | [Chapter 47E](https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/ByChapter/Chapter_47E.html), [NCREC publications](https://www.ncrec.gov/Publications/Pubs) |
+| Residential square footage | NCREC 2026 Guidelines | materiality, current measurement, living-area criteria and records | [NCREC publications](https://www.ncrec.gov/Publications/Pubs) |
+| Street status and broker liens | G.S. 136-102.6; Chapter 44A Article 2 Part 4 | dedication versus acceptance; written agreement, notice and enforcement | [§136-102.6](https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_136/GS_136-102.6.html), [Chapter 44A Article 2](https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/ByArticle/Chapter_44A/Article_2.html) |
+| Current building-code posture | NC OSFM | 2018 code currently governing; 2024 implementation delayed | [OSFM current codes](https://www.ncosfm.gov/codes/codes-current-and-past) |
 
 ## Verification limitations and conflict resolution
 
-The September 6 capture attempted 19 unique PDF URLs representing 21 source entries. Sixteen OAH
-URLs timed out and the NCREC syllabus returned HTTP 403. Two PDFs were retained and identity/hash
-checked: April 2026 RELINC (36 pages) and L-09 (3 pages, revised July 2017). Cover/fee pages of RELINC
-and all L-09 pages were visually checked against digital text. OCR is unnecessary for these clear
-digital text layers. `captures/2026-09-06/capture-log.json` preserves requests, final URL where a
+The capture ledger began with 19 unique PDF URLs representing 21 source entries. Sixteen OAH URLs
+timed out and the NCREC syllabus returned HTTP 403. On September 7 four current public NCREC artifacts
+were added: RPOADS, MOG, the 2026 Residential Square Footage Guidelines and WWREA. Their 35 pages were
+all rendered and visually checked against digital text. Together with RELINC and L-09, six source PDFs
+now have verified bytes and four have current all-page review. `captures/2026-09-06/capture-log.json`
+preserves requests, final URL where a
 response arrived, content type, status, hashes and exact failures; `page-reviews.json` binds review
 to the PDF and render hashes. Sources remain **INCOMPLETE** and `NC-B01` remains open.
 
@@ -117,10 +125,10 @@ On September 7, Modules NC-02 and NC-05 added current official standalone-rule e
 .0109, .0114, .0120, and .0506, plus the HUD/EPA lead fact sheet. They were inspected through official
 publisher pages but were not part of the September 6 byte-capture attempt. The expanded ledger therefore
 later expanded again during the Module NC-10 pass to include Rules .0111 and .0115-.0118, .1601 and
-.1808 plus the LLCR route, and the Module NC-11 pass added Rule .0112. It now contains 41 PDF source
-entries across 39 unique URLs. Two September 6
-snapshots are retained, but validation requires the configured PDF interpreter and their page reviews
-are stale against the September 7 control date; the current reviewed count is zero.
+.1808 plus the LLCR route, and the Module NC-11 pass added Rule .0112. Module NC-15 added the four
+public NCREC PDFs and the 58B rule range. The machine ledger now contains 46 PDF source entries across
+43 unique URLs. The global source state remains **INCOMPLETE** because most rule/source PDFs still lack
+current captured bytes and review; the four NCREC artifacts do not conceal that broader gap.
 
 Module NC-04 was reconciled on September 7 to current official property-tax and excise-tax statutes,
 26 U.S.C. §121, FEMA and CFPB guidance. That review found a real syllabus conflict: the fourth-year
@@ -147,8 +155,8 @@ Module NC-08 was reconciled on September 7 to current Rules 58A .0104, .0106, .0
 current Commission WWREA guidance. The review corrected the blanket “oral buyer agency” shortcut,
 separated in-firm dual agency from outside-firm seller subagency, restored the rule's exact writing and
 document-delivery deadlines, and added evidence for first substantial contact, client/customer duties,
-three listing types, calculations and fair-housing screening. The current WWREA disclosure form itself
-remains uncaptured and therefore remains a submission gate.
+three listing types, calculations and fair-housing screening. The current two-page WWREA form is now
+retained and reviewed; the separate Questions & Answers brochure remains an open activity artifact.
 
 Module NC-09 was reconciled on September 7 to current federal Fair Housing statutes, §1982, HUD's
 current neighborhood-information and withdrawn-guidance posture, ADA Title III, the FTC's current
@@ -164,7 +172,7 @@ statute, G.S. 93A-4/6/9/12/13, G.S. 39-50 and 84-2.1, Rules 58A .0105-.0111, .01
 .1601 and .1808, and current Commission guidance. The pass corrected obsolete zoning citations, a
 blanket present-landowner UST-liability claim, an overbroad drafting rule, a generic property-owner-
 association trust-account statement, the BIC payer shortcut, and the attribution of all offer-
-disclosure propositions to Rule .0115. The LLCR Comments, full State Fair Housing Act pass and the
+disclosure propositions to Rule .0115. The LLCR Comments and the
 Interstate Land Sales topic remain explicit filing gates.
 
 Module NC-11 was reconciled on September 7 to current Rule 58A .0112 and Session Law 2025-52,
@@ -203,6 +211,16 @@ and vacation-rental agreement, money, transfer, expedited-possession, habitabili
 rules. It also corrects two unsafe shortcuts: lease expiration is not automatic immunity from a
 retaliation analysis, and the under-90-day vacation-rental definition is not the same as the
 30-day-or-less expedited-eviction threshold.
+
+Module NC-15 was reconciled on September 7 to current Chapters 41A, 43, 44A, 47B, 47E, 47F and
+93A Article 4; current UCC fixture, deceptive-practices, street-disclosure and subdivision provisions;
+Rules 58A/58B; and current OSFM code status. The pass corrects the obsolete UCC citation, fills the
+marketable-title/Torrens, fair-housing, timeshare and commercial-broker-lien gaps, and replaces a
+blanket fair-housing lawsuit period and universal insulation table. Most importantly, the current 2026
+NCREC Guidelines establish that heated living area is material, directly contradicting the old syllabus
+sentence repeated by the draft. That false statement was removed from curriculum and questions.
+RPOADS REV 7/26, MOG 1/1/15 and all 26 Guidelines pages are retained and reviewed; both Section XV form
+and measurement activities are now delivered with a worked 2,292-square-foot problem.
 
 The live RELINC replaced April 2025 at the same Pearson URL. Its April 2026 edition now agrees with
 Rule 58A .0302 on $105 application and publishes $53 single-section / $63 comprehensive exam fees

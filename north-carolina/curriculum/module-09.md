@@ -495,8 +495,8 @@ antitrust guidance; G.S. 93A-6; and Commission Rules 58A .0104, .0105 and .0109.
 the corrections above.
 
 **Source limitation — still not fully reconciled in its own text:** the TCPA and all current FCC implementing provisions;
-North Carolina's Fair Housing Act; the common-law elements and remedies for tortious interference,
+the common-law elements and remedies for tortious interference,
 fraud, negligent misrepresentation and vicarious liability; insurance policy forms; and the NAR Code
 of Ethics, which governs Association members rather than licensees generally. No variable penalty or
 damages figure is presented as current. North Carolina's separate anti-discrimination provisions are
-taken up in Module NC-15 and still require their own current primary-text pass.
+reconciled in Module NC-15.

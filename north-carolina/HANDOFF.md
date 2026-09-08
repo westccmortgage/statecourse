@@ -77,13 +77,19 @@
   expired-lease retaliation shortcut, distinguishes the 90-day vacation definition from the 30-day
   expedited-possession threshold, and applies the 180-day transfer rule. Section XIV prescribes no
   separate Required Activity.
+- Module NC-15 now reconciles marketable title, Torrens, planned communities, the current UCC fixture
+  rule, owner disclosures, State Fair Housing, timeshares, unfair/deceptive practices, subdivision
+  streets, commercial broker liens and current OSFM code status. It removes the false statement that
+  heated living area is not material. Current RPOADS, MOG, the 2026 Residential Square Footage
+  Guidelines and WWREA are retained with all 35 pages reviewed. Both Section XV form/measurement
+  activities and the 2,292-square-foot worked problem are delivered.
 
 - Official-source Phase 0 covers personal broker licensure, instructor qualification, education
   provider, education director, PPD, course approval, distance delivery, completion/proctoring,
   reporting, records, renewals, postlicense/CE products, foreign-LLC route and current market scale.
 - The machine manifest records authority class, exact URL, revision/effective date, retrieval date,
   pinpoint, evidence, supersession check and source-integrity state for each source.
-- Eighty-seven claims are separated into 83 confirmed, one interpretation and three regulator-confirmation states.
+- One hundred claims are separated into 96 confirmed, one interpretation and three regulator-confirmation states.
 - Filing index, provider/course datasheets, personal path, instructor dossier, regulator email draft,
   PPD draft, distance control plan, course guide, records SOP, timing report, product roadmap and
   certificate specimen are prepared.
@@ -119,9 +125,9 @@ the record; equivalency therefore needs NCREC preclearance.
 Rule 58H .0401 measures self-paced course time at 225 words per minute plus actual audio/video
 duration. Rule .0101(7) defines an instructional hour as 50 instructional minutes plus 10 break
 minutes, so the 72-hour non-exam syllabus allocation is 3,600 actual instructional minutes, not the
-previously reported 4,320. The sixteen curriculum files contain 67,692 audit-tokenized words, or at
-most 300.85 minutes/5.01 elapsed hours; they include nonstudent author notes. Adding the 20,566-word
-question-bank source gives a generous 392.26-minute/6.54-hour ceiling including code. Neither is validated
+previously reported 4,320. The sixteen curriculum files contain 68,779 audit-tokenized words, or at
+most 305.68 minutes/5.09 elapsed hours; they include nonstudent author notes. Adding the 20,367-word
+question-bank source gives a generous 396.20-minute/6.60-hour ceiling including code. Neither is validated
 student time. There is no media ledger. Planned “72-hour” module labels prove nothing. The course
 must not be submitted or advertised as 75 hours until its student-visible content and unit/media
 ledger actually demonstrate the required time.
@@ -130,7 +136,7 @@ ledger actually demonstrate the required time.
 
 | ID | Owner | Blocker |
 |---|---|---|
-| NC-B01 | StateCourse | Partial PDF capture: 2/41 PDF source entries across 39 unique URLs retain byte-valid September 6 snapshots, but none has a current September 7 page review; 39 entries remain unavailable or uncaptured; source status INCOMPLETE |
+| NC-B01 | StateCourse | Partial PDF capture: 6/46 PDF entries have byte-verified snapshots and four current NCREC artifacts have all-page review; the remaining source ledger is incomplete |
 | NC-B02 | NCREC | Provider certification absent |
 | NC-B03 | NCREC | Written self-paced course approval absent |
 | NC-B04 | user + NCREC | Nonprovisional NC broker and instructor approval absent |
@@ -179,28 +185,28 @@ NC_PYTHON=/path/to/python-with-pypdf node scripts/north-carolina-source-lock.mjs
 
 Structure reports **PASS**, source verification **INCOMPLETE**, and filing **NO-GO**. The capture log
 records exact failures and does not turn search-index text into downloaded evidence. The expanded
-ledger contains 41 PDF source entries across 39 unique URLs; 2 entries retain byte-valid snapshots,
-but their page reviews are stale against the September 7 control date.
-Three current Module NC-02 rule sources were added after the September 6 capture and are therefore
-explicitly uncaptured. Scripts verify actual bytes and content identity and reject a wrong PDF,
+ledger contains 46 PDF source entries across 43 unique URLs; six entries retain byte-verified snapshots
+and four current NCREC artifacts have current all-page review. The remaining entries are incomplete.
+Scripts verify actual bytes and content identity and reject a wrong PDF,
 soft-404, missing snapshot, stale hash, foreign redirect, and missing/stale page review.
 The Module NC-13 activity capture is a separate retained teaching-evidence set: three reviewed PDFs,
 28 reviewed page renders and the full 302-page publisher archive. It does not make the unrelated
 source-ledger capture complete.
 
-The September 7 Module NC-14 checkpoint is **132/132 focused North Carolina, source-integrity and
+The September 7 Module NC-15 checkpoint is **134/134 focused North Carolina, source-integrity and
 all-course free-practice tests passing**, including every lesson and every answer choice in all 31
 catalog courses. With the bundled Python runtime on `PATH`, the complete repository run is
-**1,305/1,305 passing**. The same run under the host's bare `python3` fails PDF-reading tests because
+**1,307/1,307 passing**. The same run under the host's bare `python3` fails PDF-reading tests because
 that interpreter lacks `pypdf`; this is an environment-path failure, not a course result.
 
 PDF extraction needs Python with `pypdf`; set `NC_PYTHON` to that interpreter when it is not `python3`.
 The branch was first pushed at commit `748a8bbde4adcaa39ba325c8fb6235bfd6887d50`; the remote branch
-currently contains work through Module NC-05. Modules NC-06 through NC-14 remain local because the
+currently contains work through Module NC-05. Modules NC-06 through NC-15 remain local because the
 existing external-data authorization names Texas, Florida and Michigan but not North Carolina. Do not
 push North Carolina repository data without explicit North Carolina authorization. The strict
 `--require-source-capture` command
 intentionally exits 1 while sources are incomplete;
 the normal command checks structure and reports source failures without claiming a lock. These are
 offline as-of-capture checks; re-fetch before filing. Current focused tests and complete repository
-test count are recorded after the Module NC-14 validation run.
+test count are recorded after the Module NC-15 validation run. The detailed correction evidence is in
+`north-carolina/submission/14-module-15-correction-audit.md`.

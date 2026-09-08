@@ -660,7 +660,7 @@ documents rather than a substitute for them.**
 
 - **21 NCAC Chapter 58, Subchapters A and H:** Phase 0 inspected the current official indexed OAH
   text for the controlling applicant, provider, instructor, course, distance, reporting, records and
-  renewal rules. Modules NC-01, NC-02, and NC-08 through NC-14 were reconciled on 2026-09-07 to their applicable
+  renewal rules. Modules NC-01, NC-02, and NC-08 through NC-15 were reconciled on 2026-09-07 to their applicable
   applicant, other-jurisdiction, supervision, BIC, compensation, agency, advertising, document-delivery,
   records, offer-form, trust-money and closing rules. The remaining modules still need topic-level reconciliation, and the official PDF
   bytes still need a filing-date integrity lock.
@@ -679,28 +679,24 @@ documents rather than a substitute for them.**
   text-extracted, and used to reconcile Module NC-01 on 2026-09-07. Its live identity and fees must
   still be rechecked before filing and enrollment.
 - **The North Carolina Real Estate Manual.**
-- **The Working with Real Estate Agents (WWREA) Disclosure form itself** remains uncaptured. Current
-  Commission guidance and the public **Questions & Answers on: Working with Real Estate Agents** route
-  were inspected for Module NC-08, but the disclosure form still requires authentic local bytes and
-  page review before filing. No proprietary layout is reproduced.
+- **Working with Real Estate Agents.** The two-page current public WWREA disclosure form is retained,
+  text-extracted and page-reviewed. The separate **Questions & Answers on: Working with Real Estate
+  Agents** brochure remains an open Required Activity artifact for Module NC-08.
 - **NC REALTORS® Offer to Purchase and Contract — Standard Form 2-T**, and every other standard form.
   The Syllabus devotes Section XI to the Offer to Purchase and Contract. **The current 2026 rights-holder
   index and change summary were read, but this project has not read the member-restricted Form 2-T and
   no document in this build reproduces, describes or paraphrases any provision of it.**
   This is a submission gate: a course covering Section XI must be reconciled against the current form.
-- **Residential Square Footage Guidelines**, cited in Section XV. No measurement standard from it is
-  stated.
+- **2026 Residential Square Footage Guidelines.** The complete 26-page official publication is retained,
+  text-extracted and page-reviewed. Module NC-15 now applies its current materiality, source-reliance,
+  living-area, measurement, unpermitted-area and record-retention rules and includes a worked problem.
 - **The Real Estate Agent Safety Guide.**
-- **The Residential Property and Owners' Association Disclosure Statement (RPOADS)** itself remains
-  uncaptured; Chapter 47E's coverage, timing and cancellation framework and Rule .0114's separate
-  broker duty are now reconciled. The **Tenant Security Deposit Act** and **Vacation Rental Act** are
-  now reconciled in Module NC-14. The **Marketable Title Act**, **Timeshare Act**, **Unfair and
-  Deceptive Trade Practices Act**, and North
-  Carolina **street-disclosure** and **subdivision** provisions remain unread. The statute of frauds and
-  NCREC septic-advertising guidance are now reconciled. The Connor Act, cited co-ownership,
-  periodic-tenancy notice, condominium purchaser-protection, mechanics'-lien, intestacy and adverse-
-  possession provisions are now reconciled in Module NC-06. No requirement, deadline, form, exemption
-  or figure from an unread source is treated as current law.
+- **Section XV forms and laws.** Current RPOADS REC 4.22 (REV 7/26) and MOG REC 4.25 (1/1/15) are
+  retained with all seven pages reviewed. Module NC-15 now reconciles Chapters 41A, 43, 47B, 47E,
+  47F and 93A Article 4; the current UCC fixture section; state fair-housing, timeshare, deceptive-
+  practices, street-disclosure and commercial-broker-lien provisions; and Rules 58A/58B. The
+  Commission's subdivisions/planned-communities Q&A brochure, complete current code tables and active
+  project-specific legal/code determinations remain explicit limitations.
 - **The full text of Sections II through VII and IX through XVI of the Syllabus** was extracted and is
   available, but this readings file transcribes in full only the front matter, the hour table, the
   section and item table, the Instructional Levels, the completion standards and Section VIII. The

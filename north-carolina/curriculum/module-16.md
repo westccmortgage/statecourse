@@ -130,10 +130,9 @@ loss, less operating expenses, and **debt service excluded.**)*
 decomposed rather than estimated. That is exactly the Level 3 demand: break the shape into shapes you can
 compute, compute each, and add.
 
-*(Module NC-15 records the Commission's rule that **North Carolina residential living area is calculated on
-exterior measurements**, and that the **NCREC Residential Square Footage Guidelines**, which this project
-has not obtained, govern above-grade, below-grade and heated living area criteria. **No measurement
-standard is stated from those Guidelines anywhere in this build.**)*
+*(Module NC-15 applies the complete retained **2026 NCREC Residential Square Footage Guidelines**,
+including current exterior/interior measurement, above/below-grade, heat, finish, access, ceiling and
+record-retention criteria.)*
 
 ## D. Finance calculations — all delivered in Module NC-12
 

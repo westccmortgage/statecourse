@@ -168,9 +168,9 @@ const REQUIRED_ACTIVITIES = Object.freeze([
   { section: "XIII", moduleId: "module-13", activity: "Provide examples of how adjustments are made to the sales prices of superior and inferior comps.", status: "delivered" },
   { section: "XIII", moduleId: "module-13", activity: "Use a sample appraisal completed on a Uniform Residential Appraisal Report (URAR) form for illustration.", status: "delivered", evidencePath: "north-carolina/curriculum/module-13.md#d4a-required-activity-evidence--completed-urar-walkthrough" },
   { section: "XIII", moduleId: "module-13", activity: "Show students on the URAR form where the appraiser reconciles the approaches to a single opinion of value.", status: "delivered", evidencePath: "north-carolina/curriculum/module-13.md#d4a-required-activity-evidence--completed-urar-walkthrough" },
-  { section: "XV", moduleId: "module-15", activity: "Provide current RPOADS and MOG disclosure forms, and discuss the purpose of each and how to advise owners about completion and delivery.", status: "outstanding", blockedBy: "Forms REC 4.22 and REC 4.25 have not been obtained by this project." },
-  { section: "XV", moduleId: "module-15", activity: "Thoroughly review the NCREC Residential Square Footage Guidelines and assign at least one practice problem.", status: "outstanding", blockedBy: "The NCREC Residential Square Footage Guidelines have not been obtained by this project." },
-  { section: "XV", moduleId: "module-15", activity: "Provide a timeline example of how mechanics' liens may take priority over other recorded liens.", status: "delivered" },
+  { section: "XV", moduleId: "module-15", activity: "Provide current RPOADS and MOG disclosure forms, and discuss the purpose of each and how to advise owners about completion and delivery.", status: "delivered", evidencePath: "north-carolina/curriculum/module-15.md#e5-licence-law-is-unaffected" },
+  { section: "XV", moduleId: "module-15", activity: "Thoroughly review the NCREC Residential Square Footage Guidelines and assign at least one practice problem.", status: "delivered", evidencePath: "north-carolina/curriculum/module-15.md#i4-square-footage" },
+  { section: "XV", moduleId: "module-15", activity: "Provide a timeline example of how mechanics' liens may take priority over other recorded liens.", status: "delivered", evidencePath: "north-carolina/curriculum/module-15.md#i9-liens-against-the-real-property" },
   { section: "XVI", moduleId: "module-16", activity: "Calculate various sales commissions and property management fees based on typical ways they are determined.", status: "delivered" },
   { section: "XVI", moduleId: "module-16", activity: "Calculate excise tax for multiple properties across the four prescribed scenario types.", status: "delivered", evidencePath: "north-carolina/curriculum/module-04.md#required-four-scenario-practice" },
   { section: "XVI", moduleId: "module-16", activity: "Explain and demonstrate proration math for HOA dues, monthly rent and annual real estate taxes, across early and late closing dates and paid and unpaid tax bills, with multiple practice problems.", status: "delivered" },
@@ -183,25 +183,22 @@ const REQUIRED_ACTIVITIES = Object.freeze([
 /* Live source/material dependencies after the 2026-09-04 official-statute/rule Phase 0 pass. */
 const OPEN_SOURCE_DEPENDENCIES = Object.freeze([
   "NCAR/NCBA Offer to Purchase and Contract Standard Form 2-T, its Guidelines, and all standard addenda",
-  "Working With Real Estate Agents Disclosure and the accompanying Questions & Answers brochure",
-  "Residential Property and Owners' Association Disclosure Statement (REC 4.22)",
-  "Mineral and Oil and Gas Rights Mandatory Disclosure Statement (REC 4.25)",
-  "NCREC Residential Square Footage Guidelines",
-  "Remaining course-by-course reconciliation against NCGS Chapters 41A, 42A, 43, 47B and 47F; Module NC-06 reconciles cited portions of Chapters 29, 41, 42, 44A, 47 and 47C, Module NC-10 reconciles Chapter 160D zoning authority and the cited UST provisions, and Module NC-11 reconciles Chapters 45A and 47E",
-  "Course-by-course reconciliation against individual statutes cited in Syllabus Sections III-XVI; Modules NC-04, NC-10, NC-11 and NC-12 now carry their reviewed current-law slices, while other topic gaps remain",
-  "The North Carolina Uniform Residential Building Code",
+  "The NCREC Working With Real Estate Agents Questions & Answers brochure; the public WWREA form itself is retained and page-reviewed",
+  "The NCREC Residential Subdivisions and Planned Communities Questions & Answers brochure",
+  "Complete current North Carolina building-code tables and project-specific local amendments beyond Module NC-15's OSFM current-code boundary",
+  "Remaining course-by-course reconciliation against individual statutes and administrative rules outside the completed Modules NC-01 through NC-15 slices",
   "Dodd-Frank statutory history and federal finance provisions beyond Module NC-12's reviewed current Regulation Z, Regulation X, Regulation B and Regulation V slices",
   "Complete FHA, VA and USDA underwriting handbooks and Fannie Mae, Freddie Mac and Ginnie Mae seller/servicer guides beyond Module NC-12's current official-program overview",
   "The full copyrighted USPAP text and North Carolina Appraisal Board rules beyond Module NC-13's reviewed statutory and official-overview boundaries",
-  "North Carolina Fair Housing Act, TCPA/FCC implementation, and the remaining Module NC-09 common-law and policy-form sources; federal Fair Housing, HUD, ADA, FTC and DOJ authorities are reconciled"
+  "TCPA/FCC implementation and the remaining Module NC-09 common-law and policy-form sources; federal and North Carolina Fair Housing authorities are reconciled"
 ]);
 
 const TIMING_EVIDENCE = Object.freeze({
   instructionalMinutesPerHour: 50,
   requiredInstructionalMinutes: REQUIRED_INSTRUCTIONAL_HOURS * 50,
   commissionReadingRateWordsPerMinute: 225,
-  curriculumBaselineWords: 66571,
-  curriculumBaselineMinutes: Number((66571 / 225).toFixed(2)),
+  curriculumBaselineWords: 68779,
+  curriculumBaselineMinutes: Number((68779 / 225).toFixed(2)),
   measuredOn: "2026-09-07",
   mediaDurationLedgerMinutes: 0,
   regulatorFormatOutlineComplete: false,

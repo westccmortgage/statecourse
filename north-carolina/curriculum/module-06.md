@@ -258,8 +258,8 @@ take on **additional responsibilities by agreement**. **Governed by covenants an
 
 **Townhouse is a physical description, not an ownership form.** A townhouse may be a condominium,
 planned community, or another structure. Chapter 47C or 47F applies from the recorded legal regime and
-statutory coverage, not from the building's appearance. *(North Carolina's Timeshare Act is named in
-Section XV and is taken up in Module NC-15, where the gap is recorded.)*
+statutory coverage, not from the building's appearance. *(North Carolina's current Timeshare Act and
+Rules 58B .0400-.0600 are applied in Module NC-15.)*
 
 ### B.4 Trusts *(Level 1 — this subtopic)*
 

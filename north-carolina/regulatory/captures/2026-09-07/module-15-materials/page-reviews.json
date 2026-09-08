@@ -1,0 +1,190 @@
+{
+  "reviewedOn": "2026-09-07",
+  "method": "Each retained official NCREC PDF was text-extracted with pypdf, rendered page-by-page with Poppler, and every rendered page was visually inspected against the extracted text. OCR was not required because the digital text and reviewed renders agreed.",
+  "artifacts": [
+    {
+      "id": "NC-NCREC-RPOADS-2026",
+      "title": "Residential Property and Owners Association Disclosure Statement",
+      "landingPage": "https://www.ncrec.gov/Publications/Pubs",
+      "file": "ncrec-rec422-rpoads.pdf",
+      "pageCount": 6,
+      "reviewObservation": "All six pages are legible, complete, and visually agree with the digital text. The form carries REV 7/26, owner instructions, Y/N/NR/NA response columns, the current owners association section, owner certification and purchaser acknowledgment.",
+      "pdfSha256": "5b0c46b54d8b95ebd109c8908de6d2a6563b817b57a88ccfaf7cda29df11a184",
+      "pages": [
+        {
+          "number": 1,
+          "sha256": "68258f823671440c4af440f23972342d5f32eac690ead570d26705da301b37de"
+        },
+        {
+          "number": 2,
+          "sha256": "9c65a3d507680065bdb985de097f635cbbc69bcb7cbc237b58ca31cb70aa061c"
+        },
+        {
+          "number": 3,
+          "sha256": "2207c6fa7b718a5c1992f6fa22cabe3d28dfba79a0fe72d2790513e3c9c43e77"
+        },
+        {
+          "number": 4,
+          "sha256": "e52b9df6d881d8c1045cafb790b9e5e89f6033065fac195b5adb9bae1ee1c92a"
+        },
+        {
+          "number": 5,
+          "sha256": "a47d5aade25a196b5ba76a8311b0cbe0ae1edc92654199b9966dd248ae3e1569"
+        },
+        {
+          "number": 6,
+          "sha256": "20b4c7a64568f39ba94bf1b69944045571b3f6e4c88f77bea25dd3a64aad2d08"
+        }
+      ]
+    },
+    {
+      "id": "NC-NCREC-MOG",
+      "title": "Mineral and Oil and Gas Rights Mandatory Disclosure Statement",
+      "landingPage": "https://www.ncrec.gov/Publications/Pubs",
+      "file": "ncrec-rec425-mog.pdf",
+      "pageCount": 1,
+      "reviewObservation": "The complete one-page form is legible and visually agrees with the digital text. It carries form date 1/1/15 and distinguishes previous-owner severance from the owner own prior or intended severance.",
+      "pdfSha256": "cca2fdfb0ee441762b381ef8872da163df072035a440f9f8034a19c4a5b83871",
+      "pages": [
+        {
+          "number": 1,
+          "sha256": "af7a0321e0c817929061f316c82857dcec9cf5df3d54e96682f9e3763e9ac45a"
+        }
+      ]
+    },
+    {
+      "id": "NC-NCREC-RSFG-2026",
+      "title": "2026 Residential Square Footage Guidelines",
+      "landingPage": "https://www.ncrec.gov/Publications/Pubs",
+      "file": "ncrec-residential-square-footage-guidelines.pdf",
+      "pageCount": 26,
+      "reviewObservation": "All 26 pages were visually inspected. Cover, text, diagrams, figures, worked examples, worksheets, notes and footers are legible without clipping or overlap and agree with the digital text layer.",
+      "pdfSha256": "ad1d08001862c2b7da21a5e26fa2be1a84fd52581fe396d62e2c4324743de0d7",
+      "pages": [
+        {
+          "number": 1,
+          "sha256": "ce678469d55fee359800c2321050766a87cf6b54258638852d7ff820a4146ff2"
+        },
+        {
+          "number": 2,
+          "sha256": "97cd94df8949cdead81c91c397067631123a99dbb46b6f0570402568a5c068c3"
+        },
+        {
+          "number": 3,
+          "sha256": "65329565f4b554fc7c695991f9f1e08275b0e1c26bcb3244840d79bd6d29a305"
+        },
+        {
+          "number": 4,
+          "sha256": "b3b6205206af05072352c404443e4492f412a795f9dcf39d156d6b81ab0f93d5"
+        },
+        {
+          "number": 5,
+          "sha256": "c35930f2caa3ea624f3f2f0f712d51c393b8f9c41bd3243d23801313a6d1b831"
+        },
+        {
+          "number": 6,
+          "sha256": "316ef6a077ca9e528c2f94937851fa0460c717f24d63634604168cb5043e2e5c"
+        },
+        {
+          "number": 7,
+          "sha256": "ec3fc0a2c563acb2854327aec840d55c07f65beb63e4682c07c84d2fe75c17ad"
+        },
+        {
+          "number": 8,
+          "sha256": "8b9884b46d789a33dc39a0c655d6bd7cb08d95492da4cd195170fbbac0346ffc"
+        },
+        {
+          "number": 9,
+          "sha256": "507fc5d41c54bd677e59c7c422fc04569d67ae17e05e50abe4a45dc94abea46e"
+        },
+        {
+          "number": 10,
+          "sha256": "622036ca2f409384b35f3b7963acbdd171f5fe66978b77ededbaee689132896f"
+        },
+        {
+          "number": 11,
+          "sha256": "bddc96a3399e8f403211e7299da869a10506738f457d136a8cd7f19e5640f54b"
+        },
+        {
+          "number": 12,
+          "sha256": "cde95e3d9950cbee81e8820b93b791bd3b733d922e7f61c3839c1dc455a4c610"
+        },
+        {
+          "number": 13,
+          "sha256": "f9e36b6bb23964fd776dc661cf33a4a5a54a7b2be43d8b484dee59232fe8d4f5"
+        },
+        {
+          "number": 14,
+          "sha256": "089879534f3b72123d4d282c383f1b2e220858788f8bc27b3b8e1f19ff0c9ac7"
+        },
+        {
+          "number": 15,
+          "sha256": "e9eb2261c525bf63a22ca56c2ddc3408a7953509d016d82382ba850be0594fb3"
+        },
+        {
+          "number": 16,
+          "sha256": "3d5b07fe31ed4b505452e57567c994273624899429615b996bdc2cfe0c7066cd"
+        },
+        {
+          "number": 17,
+          "sha256": "76e8f6707e6b8b5624096d130ca56261a73d43e9af6e805c8191fc481b1df059"
+        },
+        {
+          "number": 18,
+          "sha256": "29afbc1aca6fcbab9aa8abd2edade1cee7e4f4ff55120ad48bd76eb678485d84"
+        },
+        {
+          "number": 19,
+          "sha256": "ab7a72c48077c374150b24e4797bb26cc168b0008a0ff74cff973909198efe79"
+        },
+        {
+          "number": 20,
+          "sha256": "1bb38b88688ad078d17aa742ded8b7c632ce790d777ed8415b4f838d1ecb5afc"
+        },
+        {
+          "number": 21,
+          "sha256": "97682db4d6fd1c862e017e83e499906227e43630fe3ddf099a187ac65d551c7a"
+        },
+        {
+          "number": 22,
+          "sha256": "87d0f7c94a51aab008db89a3d16aa633f8490c3405bdafc1ad5e5de6feab0560"
+        },
+        {
+          "number": 23,
+          "sha256": "a4daab231a855305eba0abb3e1ae3336dfaf929d0aa71f4b12ceaaa1acd17175"
+        },
+        {
+          "number": 24,
+          "sha256": "5df99f2618377048d9e92e745d3018feb864f6d087f93e1575391cc4c1898cad"
+        },
+        {
+          "number": 25,
+          "sha256": "4442edc503726d267d600a5c06d8e05b1bc0ec12be65a44ddea318eb77755a49"
+        },
+        {
+          "number": 26,
+          "sha256": "cc69830f2a8fa7d4484ef8ff38e4a212e6e902078d1ddfbb5aa425febc978c35"
+        }
+      ]
+    },
+    {
+      "id": "NC-NCREC-WWREA",
+      "title": "Working With Real Estate Agents Disclosure Form",
+      "landingPage": "https://www.ncrec.gov/Publications/Pubs",
+      "file": "ncrec-wwrea-disclosure-form.pdf",
+      "pageCount": 2,
+      "reviewObservation": "Both seller and buyer pages are legible, complete, and visually agree with the digital text. The form carries REC 4.27 1/1/2022.",
+      "pdfSha256": "f5184ef95a36c750e7638055ab775198a247adffcc0428b8196c0eb009494356",
+      "pages": [
+        {
+          "number": 1,
+          "sha256": "1a8fb7e4ccd06b13c62013f7afb1fdb4a42d37c917d49d095e307728b18be32f"
+        },
+        {
+          "number": 2,
+          "sha256": "9c440008c20a9914963e6e602db9dc5eb57a7b1b59e1a7bc97927cb46011342e"
+        }
+      ]
+    }
+  ]
+}

@@ -85,6 +85,19 @@ Claim IDs resolve to `config/north-carolina/regulatory-manifest.mjs`.
 | tenant security deposits | G.S. 42-50 through 42-55; 58A .0116-.0117 | NC-C85 | Module NC-14 calculations, uses and accounting | formerly missing amounts, deadlines and broker/owner custody distinction supplied |
 | vacation-rental operations | G.S. Chapter 42A | NC-C86 | Module NC-14 vacation-rental sections and assessment | 90/30-day thresholds, money, transfer, eviction, habitability and evacuation separated |
 | property-management formation and trust money | 58A .0104(a), .0116-.0117; Chapters 42 and 42A | NC-C87 | Module NC-14 integrated file check | written owner agency and independent money/statutory limits reconciled |
+| marketable record title and Torrens | Chapters 47B and 43 | NC-C88 | Module NC-15 title systems | 30-year/exception/preservation and court-registered-title boundaries reconciled |
+| planned-community legal regime | Chapter 47F | NC-C89 | Module NC-15 townhouse comparison | physical form separated from declaration and statutory coverage |
+| UCC fixture priority | G.S. 25-9-334; 47-20.6 | NC-C90 | Module NC-15 fixtures | obsolete §25-9-313 citation corrected; filing/priority routed to counsel |
+| RPOADS/MOG coverage, delivery and response options | Chapter 47E; 58A .0114; REC 4.22/4.25 | NC-C91 | Module NC-15 form lab | current forms retained; owner/broker roles and earliest-of cancellation controls reconciled |
+| North Carolina State Fair Housing Act | G.S. 41A-4, -6, -7; 58A .0120/.1601 | NC-C92 | Module NC-15 Level 3 analysis | protected bases, state exemptions, advertising and forum triggers reconciled |
+| residential-lessor sexual harassment | G.S. 14-395.1 | NC-C93 | Module NC-15 anti-discrimination | elements and Class 2 criminal classification separated from civil/license law |
+| timeshare operations | Chapter 93A Article 4; 58B .0400-.0600 | NC-C94 | Module NC-15 assessment | cancellation, refund, escrow, records and program-broker controls reconciled |
+| unfair/deceptive trade practices | G.S. 75-1.1, 75-16 | NC-C95 | Module NC-15 advertising/business-conduct analysis | trebling and professional-services boundary stated without automatic-liability claim |
+| residential square footage | 2026 NCREC Guidelines; G.S. 93A-6 | NC-C96 | Module NC-15 measurement activity | false nonmaterial claim removed; current measurement criteria and worked problem delivered |
+| subdivision street status | G.S. 136-102.6; 160D-807 | NC-C97 | Module NC-15 street/subdivision scenarios | plat dedication separated from accepted maintenance responsibility |
+| commercial broker lien | Chapter 44A Article 2 Part 4 | NC-C98 | Module NC-15 lien analysis | written-agreement, performance, filing, service and enforcement controls reconciled |
+| current building-code boundary | OSFM current-code index | NC-C99 | Module NC-15 construction section | 2018 current set identified; syllabus R-values no longer presented as universal table |
+| Section XV form and measurement artifacts | NCREC publication index; retained REC 4.22/4.25/3.40 | NC-C100 | Module NC-15 Required Activities | 33 required-activity pages retained and reviewed; two WWREA pages also reviewed |
 
 ## Release rule
 

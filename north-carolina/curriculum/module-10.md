@@ -130,8 +130,8 @@ facts; counsel and DEQ determine statutory responsibility, cleanup and fund elig
 
 ### A.3 Delivery of instruments *(Level 3)* — NCGS 93A-6(a)(13) and (14); Rule 58A .0106
 
-**a. Assist with delivery of completed RPOADS disclosure statements.** *(The Residential Property and
-Owners' Association Disclosure Statement — Module NC-15, where this project's gap is recorded.)*
+**a. Assist with delivery of completed RPOADS disclosure statements.** *(Module NC-15 now contains the
+current Chapter 47E workflow and retained, page-reviewed REC 4.22 and REC 4.25 forms.)*
 
 **b. Submit offers — and this is the rule to know cold:**
 
@@ -361,9 +361,9 @@ Three current North Carolina controls operate together:
 - **Rule 58A .1601** treats a licensee's violation of the North Carolina State Fair Housing Act as
   improper conduct under G.S. 93A-6(a)(10).
 
-Module NC-09 supplies the current federal framework. The complete North Carolina State Fair Housing
-Act requires its separate Module NC-15 reconciliation; this paragraph does not assume that every
-federal definition, exemption or procedure is identical under state law.
+Module NC-09 supplies the current federal framework. Module NC-15 supplies the separate current North
+Carolina State Fair Housing Act analysis; its definitions, exemptions and procedures are not presumed
+identical to federal law.
 
 ### B.3 Unauthorized practice of law — NCGS 93A-4(e); 93A-6(a)(11); Rule 58A .0111
 

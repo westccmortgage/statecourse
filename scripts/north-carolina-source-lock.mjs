@@ -18,6 +18,7 @@ const allowedHosts = new Set([
   "eservices.ncrec.gov",
   "ncrecblog.com",
   "bulletins.ncrec.gov",
+  "www.ncosfm.gov",
   "www.pearsonvue.com",
   "www.sosnc.gov",
   "uscode.house.gov",

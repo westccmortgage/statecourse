@@ -1,7 +1,7 @@
 {
-  "controlDate": "2026-09-06",
-  "generatedAt": "2026-09-06T11:55:27.717Z",
-  "uniquePdfUrls": 19,
+  "controlDate": "2026-09-07",
+  "generatedAt": "2026-09-08T01:26:17.209Z",
+  "uniquePdfUrls": 23,
   "entries": [
     {
       "sourceIds": [
@@ -350,6 +350,289 @@
       "receivedBytes": 118,
       "responseSha256": "58bf2215b395dcac74c009aa98701854e43cbe54a1cd3a95fee6a647ca9910d4",
       "failure": "HTTP 403"
+    },
+    {
+      "sourceIds": [
+        "NC-NCREC-RPOADS-2026"
+      ],
+      "requestedUrl": "https://www.ncrec.gov/Forms/Consumer/rec422.pdf",
+      "attemptedAt": "2026-09-07T17:00:00.000Z",
+      "status": "VERIFIED_AS_OF_CAPTURE",
+      "snapshotPath": "north-carolina/regulatory/captures/2026-09-07/module-15-materials/ncrec-rec422-rpoads.pdf",
+      "sha256": "5b0c46b54d8b95ebd109c8908de6d2a6563b817b57a88ccfaf7cda29df11a184",
+      "pdfReview": {
+        "status": "REVIEWED",
+        "reviewedPdfSha256": "5b0c46b54d8b95ebd109c8908de6d2a6563b817b57a88ccfaf7cda29df11a184",
+        "title": "Residential Property and Owners Association Disclosure Statement",
+        "revisionObservation": "REV 7/26 confirmed on every form footer; all six pages reviewed",
+        "pages": [
+          {
+            "number": 1,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/module-15-materials/renders/ncrec-rec422-rpoads-1.png",
+            "sha256": "68258f823671440c4af440f23972342d5f32eac690ead570d26705da301b37de"
+          },
+          {
+            "number": 2,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/module-15-materials/renders/ncrec-rec422-rpoads-2.png",
+            "sha256": "9c65a3d507680065bdb985de097f635cbbc69bcb7cbc237b58ca31cb70aa061c"
+          },
+          {
+            "number": 3,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/module-15-materials/renders/ncrec-rec422-rpoads-3.png",
+            "sha256": "2207c6fa7b718a5c1992f6fa22cabe3d28dfba79a0fe72d2790513e3c9c43e77"
+          },
+          {
+            "number": 4,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/module-15-materials/renders/ncrec-rec422-rpoads-4.png",
+            "sha256": "e52b9df6d881d8c1045cafb790b9e5e89f6033065fac195b5adb9bae1ee1c92a"
+          },
+          {
+            "number": 5,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/module-15-materials/renders/ncrec-rec422-rpoads-5.png",
+            "sha256": "a47d5aade25a196b5ba76a8311b0cbe0ae1edc92654199b9966dd248ae3e1569"
+          },
+          {
+            "number": 6,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/module-15-materials/renders/ncrec-rec422-rpoads-6.png",
+            "sha256": "20b4c7a64568f39ba94bf1b69944045571b3f6e4c88f77bea25dd3a64aad2d08"
+          }
+        ],
+        "ocrStatus": "NOT_REQUIRED_TEXT_LAYER_MATCHED_RENDER"
+      },
+      "httpStatus": 200,
+      "finalUrl": "https://www.ncrec.gov/Forms/Consumer/rec422.pdf",
+      "contentType": "application/pdf",
+      "receivedBytes": 3170523,
+      "responseSha256": "5b0c46b54d8b95ebd109c8908de6d2a6563b817b57a88ccfaf7cda29df11a184",
+      "pdfPages": 6,
+      "textPath": "north-carolina/regulatory/captures/2026-09-07/module-15-materials/ncrec-rec422-rpoads.txt",
+      "textSha256": "a06bd1a3fdac5b14aca26109c0e6bc6ce5ed6dd6e4afadf32ebb30b0c1b8d34a"
+    },
+    {
+      "sourceIds": [
+        "NC-NCREC-MOG"
+      ],
+      "requestedUrl": "https://www.ncrec.gov/Forms/Consumer/rec425.pdf",
+      "attemptedAt": "2026-09-07T17:00:00.000Z",
+      "status": "VERIFIED_AS_OF_CAPTURE",
+      "snapshotPath": "north-carolina/regulatory/captures/2026-09-07/module-15-materials/ncrec-rec425-mog.pdf",
+      "sha256": "cca2fdfb0ee441762b381ef8872da163df072035a440f9f8034a19c4a5b83871",
+      "pdfReview": {
+        "status": "REVIEWED",
+        "reviewedPdfSha256": "cca2fdfb0ee441762b381ef8872da163df072035a440f9f8034a19c4a5b83871",
+        "title": "Mineral and Oil and Gas Rights Mandatory Disclosure Statement",
+        "revisionObservation": "REC 4.25 1/1/15 confirmed; complete page reviewed",
+        "pages": [
+          {
+            "number": 1,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/module-15-materials/renders/ncrec-rec425-mog-1.png",
+            "sha256": "af7a0321e0c817929061f316c82857dcec9cf5df3d54e96682f9e3763e9ac45a"
+          }
+        ],
+        "ocrStatus": "NOT_REQUIRED_TEXT_LAYER_MATCHED_RENDER"
+      },
+      "httpStatus": 200,
+      "finalUrl": "https://www.ncrec.gov/Forms/Consumer/rec425.pdf",
+      "contentType": "application/pdf",
+      "receivedBytes": 155284,
+      "responseSha256": "cca2fdfb0ee441762b381ef8872da163df072035a440f9f8034a19c4a5b83871",
+      "pdfPages": 1,
+      "textPath": "north-carolina/regulatory/captures/2026-09-07/module-15-materials/ncrec-rec425-mog.txt",
+      "textSha256": "b56662c64c0293c480e9c98ca738b59d4e6530221b97ca955c5c2e423cd10926"
+    },
+    {
+      "sourceIds": [
+        "NC-NCREC-RSFG-2026"
+      ],
+      "requestedUrl": "https://www.ncrec.gov/Brochures/Measurementbooklet.pdf",
+      "attemptedAt": "2026-09-07T17:00:00.000Z",
+      "status": "VERIFIED_AS_OF_CAPTURE",
+      "snapshotPath": "north-carolina/regulatory/captures/2026-09-07/module-15-materials/ncrec-residential-square-footage-guidelines.pdf",
+      "sha256": "ad1d08001862c2b7da21a5e26fa2be1a84fd52581fe396d62e2c4324743de0d7",
+      "pdfReview": {
+        "status": "REVIEWED",
+        "reviewedPdfSha256": "ad1d08001862c2b7da21a5e26fa2be1a84fd52581fe396d62e2c4324743de0d7",
+        "title": "2026 Residential Square Footage Guidelines",
+        "revisionObservation": "REC 3.40 7/2026 confirmed; all 26 pages reviewed",
+        "pages": [
+          {
+            "number": 1,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/module-15-materials/renders/ncrec-residential-square-footage-guidelines-01.png",
+            "sha256": "ce678469d55fee359800c2321050766a87cf6b54258638852d7ff820a4146ff2"
+          },
+          {
+            "number": 2,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/module-15-materials/renders/ncrec-residential-square-footage-guidelines-02.png",
+            "sha256": "97cd94df8949cdead81c91c397067631123a99dbb46b6f0570402568a5c068c3"
+          },
+          {
+            "number": 3,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/module-15-materials/renders/ncrec-residential-square-footage-guidelines-03.png",
+            "sha256": "65329565f4b554fc7c695991f9f1e08275b0e1c26bcb3244840d79bd6d29a305"
+          },
+          {
+            "number": 4,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/module-15-materials/renders/ncrec-residential-square-footage-guidelines-04.png",
+            "sha256": "b3b6205206af05072352c404443e4492f412a795f9dcf39d156d6b81ab0f93d5"
+          },
+          {
+            "number": 5,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/module-15-materials/renders/ncrec-residential-square-footage-guidelines-05.png",
+            "sha256": "c35930f2caa3ea624f3f2f0f712d51c393b8f9c41bd3243d23801313a6d1b831"
+          },
+          {
+            "number": 6,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/module-15-materials/renders/ncrec-residential-square-footage-guidelines-06.png",
+            "sha256": "316ef6a077ca9e528c2f94937851fa0460c717f24d63634604168cb5043e2e5c"
+          },
+          {
+            "number": 7,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/module-15-materials/renders/ncrec-residential-square-footage-guidelines-07.png",
+            "sha256": "ec3fc0a2c563acb2854327aec840d55c07f65beb63e4682c07c84d2fe75c17ad"
+          },
+          {
+            "number": 8,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/module-15-materials/renders/ncrec-residential-square-footage-guidelines-08.png",
+            "sha256": "8b9884b46d789a33dc39a0c655d6bd7cb08d95492da4cd195170fbbac0346ffc"
+          },
+          {
+            "number": 9,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/module-15-materials/renders/ncrec-residential-square-footage-guidelines-09.png",
+            "sha256": "507fc5d41c54bd677e59c7c422fc04569d67ae17e05e50abe4a45dc94abea46e"
+          },
+          {
+            "number": 10,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/module-15-materials/renders/ncrec-residential-square-footage-guidelines-10.png",
+            "sha256": "622036ca2f409384b35f3b7963acbdd171f5fe66978b77ededbaee689132896f"
+          },
+          {
+            "number": 11,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/module-15-materials/renders/ncrec-residential-square-footage-guidelines-11.png",
+            "sha256": "bddc96a3399e8f403211e7299da869a10506738f457d136a8cd7f19e5640f54b"
+          },
+          {
+            "number": 12,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/module-15-materials/renders/ncrec-residential-square-footage-guidelines-12.png",
+            "sha256": "cde95e3d9950cbee81e8820b93b791bd3b733d922e7f61c3839c1dc455a4c610"
+          },
+          {
+            "number": 13,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/module-15-materials/renders/ncrec-residential-square-footage-guidelines-13.png",
+            "sha256": "f9e36b6bb23964fd776dc661cf33a4a5a54a7b2be43d8b484dee59232fe8d4f5"
+          },
+          {
+            "number": 14,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/module-15-materials/renders/ncrec-residential-square-footage-guidelines-14.png",
+            "sha256": "089879534f3b72123d4d282c383f1b2e220858788f8bc27b3b8e1f19ff0c9ac7"
+          },
+          {
+            "number": 15,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/module-15-materials/renders/ncrec-residential-square-footage-guidelines-15.png",
+            "sha256": "e9eb2261c525bf63a22ca56c2ddc3408a7953509d016d82382ba850be0594fb3"
+          },
+          {
+            "number": 16,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/module-15-materials/renders/ncrec-residential-square-footage-guidelines-16.png",
+            "sha256": "3d5b07fe31ed4b505452e57567c994273624899429615b996bdc2cfe0c7066cd"
+          },
+          {
+            "number": 17,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/module-15-materials/renders/ncrec-residential-square-footage-guidelines-17.png",
+            "sha256": "76e8f6707e6b8b5624096d130ca56261a73d43e9af6e805c8191fc481b1df059"
+          },
+          {
+            "number": 18,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/module-15-materials/renders/ncrec-residential-square-footage-guidelines-18.png",
+            "sha256": "29afbc1aca6fcbab9aa8abd2edade1cee7e4f4ff55120ad48bd76eb678485d84"
+          },
+          {
+            "number": 19,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/module-15-materials/renders/ncrec-residential-square-footage-guidelines-19.png",
+            "sha256": "ab7a72c48077c374150b24e4797bb26cc168b0008a0ff74cff973909198efe79"
+          },
+          {
+            "number": 20,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/module-15-materials/renders/ncrec-residential-square-footage-guidelines-20.png",
+            "sha256": "1bb38b88688ad078d17aa742ded8b7c632ce790d777ed8415b4f838d1ecb5afc"
+          },
+          {
+            "number": 21,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/module-15-materials/renders/ncrec-residential-square-footage-guidelines-21.png",
+            "sha256": "97682db4d6fd1c862e017e83e499906227e43630fe3ddf099a187ac65d551c7a"
+          },
+          {
+            "number": 22,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/module-15-materials/renders/ncrec-residential-square-footage-guidelines-22.png",
+            "sha256": "87d0f7c94a51aab008db89a3d16aa633f8490c3405bdafc1ad5e5de6feab0560"
+          },
+          {
+            "number": 23,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/module-15-materials/renders/ncrec-residential-square-footage-guidelines-23.png",
+            "sha256": "a4daab231a855305eba0abb3e1ae3336dfaf929d0aa71f4b12ceaaa1acd17175"
+          },
+          {
+            "number": 24,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/module-15-materials/renders/ncrec-residential-square-footage-guidelines-24.png",
+            "sha256": "5df99f2618377048d9e92e745d3018feb864f6d087f93e1575391cc4c1898cad"
+          },
+          {
+            "number": 25,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/module-15-materials/renders/ncrec-residential-square-footage-guidelines-25.png",
+            "sha256": "4442edc503726d267d600a5c06d8e05b1bc0ec12be65a44ddea318eb77755a49"
+          },
+          {
+            "number": 26,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/module-15-materials/renders/ncrec-residential-square-footage-guidelines-26.png",
+            "sha256": "cc69830f2a8fa7d4484ef8ff38e4a212e6e902078d1ddfbb5aa425febc978c35"
+          }
+        ],
+        "ocrStatus": "NOT_REQUIRED_TEXT_LAYER_MATCHED_RENDER"
+      },
+      "httpStatus": 200,
+      "finalUrl": "https://www.ncrec.gov/Brochures/Measurementbooklet.pdf",
+      "contentType": "application/pdf",
+      "receivedBytes": 4294484,
+      "responseSha256": "ad1d08001862c2b7da21a5e26fa2be1a84fd52581fe396d62e2c4324743de0d7",
+      "pdfPages": 26,
+      "textPath": "north-carolina/regulatory/captures/2026-09-07/module-15-materials/ncrec-residential-square-footage-guidelines.txt",
+      "textSha256": "68d5fc4214e577275f7ecc09ed729e8cde35b64379576bb7b28d0e18509d8442"
+    },
+    {
+      "sourceIds": [
+        "NC-NCREC-WWREA"
+      ],
+      "requestedUrl": "https://www.ncrec.gov/Forms/WWREA/WWREADisclosureForm.pdf",
+      "attemptedAt": "2026-09-07T17:00:00.000Z",
+      "status": "VERIFIED_AS_OF_CAPTURE",
+      "snapshotPath": "north-carolina/regulatory/captures/2026-09-07/module-15-materials/ncrec-wwrea-disclosure-form.pdf",
+      "sha256": "f5184ef95a36c750e7638055ab775198a247adffcc0428b8196c0eb009494356",
+      "pdfReview": {
+        "status": "REVIEWED",
+        "reviewedPdfSha256": "f5184ef95a36c750e7638055ab775198a247adffcc0428b8196c0eb009494356",
+        "title": "Working With Real Estate Agents Disclosure",
+        "revisionObservation": "REC 4.27 1/1/2022 confirmed; seller and buyer pages reviewed",
+        "pages": [
+          {
+            "number": 1,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/module-15-materials/renders/ncrec-wwrea-disclosure-form-1.png",
+            "sha256": "1a8fb7e4ccd06b13c62013f7afb1fdb4a42d37c917d49d095e307728b18be32f"
+          },
+          {
+            "number": 2,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/module-15-materials/renders/ncrec-wwrea-disclosure-form-2.png",
+            "sha256": "9c440008c20a9914963e6e602db9dc5eb57a7b1b59e1a7bc97927cb46011342e"
+          }
+        ],
+        "ocrStatus": "NOT_REQUIRED_TEXT_LAYER_MATCHED_RENDER"
+      },
+      "httpStatus": 200,
+      "finalUrl": "https://www.ncrec.gov/Forms/WWREA/WWREADisclosureForm.pdf",
+      "contentType": "application/pdf",
+      "receivedBytes": 120279,
+      "responseSha256": "f5184ef95a36c750e7638055ab775198a247adffcc0428b8196c0eb009494356",
+      "pdfPages": 2,
+      "textPath": "north-carolina/regulatory/captures/2026-09-07/module-15-materials/ncrec-wwrea-disclosure-form.txt",
+      "textSha256": "8aadb277c08bb4fb1021f8998f2660e0489ec2bd0048f7105ee524a29f0b3154"
     }
   ]
 }

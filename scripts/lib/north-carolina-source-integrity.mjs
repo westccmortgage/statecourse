@@ -8,7 +8,16 @@ const normalize = value => value.toLowerCase().replace(/\s+/g, ' ').trim();
 export function identityMarkers(source) {
   const match = source.id.match(/^NC-RULE-(58[A-Z])-([.\d-]+)$/);
   if (match) return match[2].split('-').map(number => `21 NCAC ${match[1]} ${number}`);
-  return ({ 'NC-SYLLABUS-PRE-2026': ['Broker Prelicensing Course', 'SYLLABUS', 'May 2026'], 'NC-GUIDE-RELINC-2026': ['Real Estate Licensing in North Carolina', 'April 2026'], 'NC-FORM-SOS-L09': ['APPLICATION FOR CERTIFICATE OF AUTHORITY', 'LIMITED LIABILITY COMPANY', 'L-09', 'Revised July 2017'], 'NC-LLCR-CURRENT': ['North Carolina Real Estate License Law', 'Commission Rules', 'Comments'] })[source.id] || [];
+  return ({
+    'NC-SYLLABUS-PRE-2026': ['Broker Prelicensing Course', 'SYLLABUS', 'May 2026'],
+    'NC-GUIDE-RELINC-2026': ['Real Estate Licensing in North Carolina', 'April 2026'],
+    'NC-FORM-SOS-L09': ['APPLICATION FOR CERTIFICATE OF AUTHORITY', 'LIMITED LIABILITY COMPANY', 'L-09', 'Revised July 2017'],
+    'NC-LLCR-CURRENT': ['North Carolina Real Estate License Law', 'Commission Rules', 'Comments'],
+    'NC-NCREC-RPOADS-2026': ['Residential Property And Owners', 'Association Disclosure Statement', 'REV 7/26'],
+    'NC-NCREC-MOG': ['Mineral and Oil and Gas Rights Disclosure Statement', 'REC 4.25', '1/1/15'],
+    'NC-NCREC-RSFG-2026': ['MEASURE.', 'CALCULATE.', 'REC 3.40', '7/2026'],
+    'NC-NCREC-WWREA': ['Working With Real Estate Agents Disclosure', 'This form is not a contract']
+  })[source.id] || [];
 }
 export function inspectPdfEvidence(source, entry, { bytes, pageText, today = '2026-09-06', renderBytes = {} } = {}) {
   const errors = [];
