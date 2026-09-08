@@ -11,7 +11,7 @@ const hash = (path) => createHash("sha256").update(readFileSync(new URL(`../${pa
 
 test("manifest has a dated stable identity and only allowed claim statuses", () => {
   assert.equal(NC_CONTROL_DATE, "2026-09-07");
-  assert.equal(NC_MANIFEST_VERSION, "NC-PHASE0-2026-09-07-v19");
+  assert.equal(NC_MANIFEST_VERSION, "NC-PHASE0-2026-09-07-v20");
   assert.equal(NC_SOURCES.length, 162);
   assert.equal(NC_CLAIMS.length, 102);
   for (const claim of NC_CLAIMS) assert.ok(["confirmed", "interpretation", "needs-regulator-confirmation"].includes(claim.status), claim.id);
@@ -44,6 +44,22 @@ test("the current NCREC prelicensing syllabus is retained and reviewed on all 10
   assert.match(text, /TOTAL INSTRUCTIONAL HOURS 75/);
   assert.match(text, /Section XVI: Real Estate Math Calculations/);
   assert.equal((text.match(/Required Activity:/g) || []).length, 47);
+});
+
+test("the current NCREC License Law and Rules Comments are retained and reviewed on every page", () => {
+  const reviewPath = "north-carolina/regulatory/captures/2026-09-07/llcr-comments-2024/page-reviews.json";
+  const review = JSON.parse(read(reviewPath));
+  assert.equal(review.reviewedOn, NC_CONTROL_DATE);
+  assert.equal(review.id, "NC-LLCR-CURRENT");
+  assert.equal(review.pageCount, 22);
+  assert.equal(review.pages.length, 22);
+  assert.equal(hash(review.sourceFile), review.pdfSha256);
+  assert.equal(hash(review.textPath), review.textSha256);
+  for (const page of review.pages) assert.equal(hash(page.renderPath), page.sha256, `LLCR Comments page ${page.number}`);
+  const text = read(review.textPath);
+  assert.match(text, /LICENSE LAW AND RULES COMMENTS/);
+  assert.match(text, /HANDLING TRUST FUNDS/);
+  assert.match(text, /BROKER PRICE OPINION AND[\s\S]*COMPARATIVE MARKET ANALYSIS/);
 });
 
 test("RELINC and L-09 evidence binds every reviewed page to its current source PDF", () => {

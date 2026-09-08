@@ -1,8 +1,162 @@
 {
   "controlDate": "2026-09-07",
-  "generatedAt": "2026-09-08T03:39:02.000Z",
-  "uniquePdfUrls": 28,
+  "generatedAt": "2026-09-08T03:49:00.000Z",
+  "uniquePdfUrls": 29,
   "entries": [
+    {
+      "sourceIds": [
+        "NC-LLCR-CURRENT"
+      ],
+      "requestedUrl": "https://www.ncrec.gov/pdfs/LLRulesComments.pdf",
+      "attemptedAt": "2026-09-07T20:46:00-07:00",
+      "status": "VERIFIED_AS_OF_CAPTURE",
+      "snapshotPath": "north-carolina/regulatory/captures/2026-09-07/llcr-comments-2024/LLRulesComments.pdf",
+      "sha256": "fc910c3f30126ff9a46aec9610c12992aee62b8719cab0957118e5e195872e3f",
+      "pdfReview": {
+        "status": "REVIEWED",
+        "reviewedPdfSha256": "fc910c3f30126ff9a46aec9610c12992aee62b8719cab0957118e5e195872e3f",
+        "title": "License Law and Rules Comments",
+        "revisionObservation": "Current NCREC Publications link retrieved on the control date; PDF metadata modified October 2, 2024.",
+        "pages": [
+          {
+            "number": 1,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/llcr-comments-2024/renders/page-01.png",
+            "sha256": "cf29f8b7ba21b5f588bf42a276079dbbd2ace4ddb7023a59cc95d849946b93ac"
+          },
+          {
+            "number": 2,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/llcr-comments-2024/renders/page-02.png",
+            "sha256": "5fe0b9d91741b06738527b463ef90605baf6e076d540270c94846166e7a10f01"
+          },
+          {
+            "number": 3,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/llcr-comments-2024/renders/page-03.png",
+            "sha256": "9955b116170f7f51731595e32540c074818a7e06752e237f57b9413fd957e71e"
+          },
+          {
+            "number": 4,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/llcr-comments-2024/renders/page-04.png",
+            "sha256": "a233e9c02b183bb0b2d2be63654e6d97c2856e621eb9e5e7c6dec31c3624964c"
+          },
+          {
+            "number": 5,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/llcr-comments-2024/renders/page-05.png",
+            "sha256": "b653fc219cafecc7c07b7a41f2dd5769aefde412e32deca826c7bcc079be4206"
+          },
+          {
+            "number": 6,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/llcr-comments-2024/renders/page-06.png",
+            "sha256": "48b84ffe57ffcb033cd4d0d086b00105e2959bf5f22d346ca42e223542f78f2c"
+          },
+          {
+            "number": 7,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/llcr-comments-2024/renders/page-07.png",
+            "sha256": "2dfcb73f24dac15a594551183a590a11afc87ef653f0440149d957c627954750"
+          },
+          {
+            "number": 8,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/llcr-comments-2024/renders/page-08.png",
+            "sha256": "5b1af482993fc4cc3ffcf1343beb845e5c737582a71dc53cc18ecad9ecdb0677"
+          },
+          {
+            "number": 9,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/llcr-comments-2024/renders/page-09.png",
+            "sha256": "233304917a0b31b7e066f72e94220fb01d76a386848288db55d7bb4ef46d9468"
+          },
+          {
+            "number": 10,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/llcr-comments-2024/renders/page-10.png",
+            "sha256": "843cec53ecdcc52629cbd0fa5117fc11a53b010ebbaec849c4dcb5f67c63cece"
+          },
+          {
+            "number": 11,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/llcr-comments-2024/renders/page-11.png",
+            "sha256": "75df38ceaea3c115ac8cfd66d8c1338880697461ef5fdf53b51afe18c463d258"
+          },
+          {
+            "number": 12,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/llcr-comments-2024/renders/page-12.png",
+            "sha256": "1d61f7bc3510464aa714e0a4e28578be7aced6ac579ebba80123ee9d583c13ba"
+          },
+          {
+            "number": 13,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/llcr-comments-2024/renders/page-13.png",
+            "sha256": "80b266e6f101fb8189f04c4ca8fd85cd94dea67a8e7d69bc372023574a6cc36e"
+          },
+          {
+            "number": 14,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/llcr-comments-2024/renders/page-14.png",
+            "sha256": "644abd2559425529a3fc54534cabaac36cc1bb567557e34b0021cd38a20484e4"
+          },
+          {
+            "number": 15,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/llcr-comments-2024/renders/page-15.png",
+            "sha256": "15b995a19cdf4d0e8421a7c12f13d092b3b7e697a16f0bbe2a8874a25e0ff0d2"
+          },
+          {
+            "number": 16,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/llcr-comments-2024/renders/page-16.png",
+            "sha256": "d604cc4c2ec6984d2124fd9781160a8491256bd43d2fd81251002d8dddaeeafb"
+          },
+          {
+            "number": 17,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/llcr-comments-2024/renders/page-17.png",
+            "sha256": "31ae0f228601c378f0f46894e86f9ea26beeb4fa8c70b14e095327d1af1fcdd0"
+          },
+          {
+            "number": 18,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/llcr-comments-2024/renders/page-18.png",
+            "sha256": "1113fc43b7709986543c32706e10e6775f8469d1e1463e35b746b8256a566a5f"
+          },
+          {
+            "number": 19,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/llcr-comments-2024/renders/page-19.png",
+            "sha256": "4ea8fabca531c61a19b5c515e6f3ad0a918bed2b0d4177e083f8d5a4d7f778dc"
+          },
+          {
+            "number": 20,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/llcr-comments-2024/renders/page-20.png",
+            "sha256": "64ec63f95d0545786a774df92d3344b67560985456b81b3dda9d67cf8f8a2880"
+          },
+          {
+            "number": 21,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/llcr-comments-2024/renders/page-21.png",
+            "sha256": "7944fbd504e3580038c52308c24b7b5e8e010cecff1b9c7141b5d9e1ee3dda4d"
+          },
+          {
+            "number": 22,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/llcr-comments-2024/renders/page-22.png",
+            "sha256": "26b1141ceff845ebf04908a36cc0e267a825b61d6c98e0bad2d6882a674c601b"
+          }
+        ],
+        "ocrStatus": "NOT_REQUIRED_TEXT_LAYER_MATCHED_RENDER"
+      },
+      "httpStatus": 200,
+      "finalUrl": "https://www.ncrec.gov/pdfs/LLRulesComments.pdf",
+      "contentType": "application/pdf",
+      "receivedBytes": 583376,
+      "responseSha256": "fc910c3f30126ff9a46aec9610c12992aee62b8719cab0957118e5e195872e3f",
+      "pdfPages": 22,
+      "pdfMetadata": {
+        "Title": "License Law and Rules Comments",
+        "Subject": "License Law and Rules Comments",
+        "Author": "North Carolina Real Estate",
+        "Creator": "Adobe InDesign 18.5 (Windows)",
+        "Producer": "Adobe PDF Library 17.0",
+        "CreationDate": "Fri Aug 25 06:47:46 2023 PDT",
+        "ModDate": "Wed Oct 2 10:56:18 2024 PDT",
+        "Tagged": true,
+        "Form": "AcroForm",
+        "JavaScript": false,
+        "Encrypted": false,
+        "PageSize": "612 x 792 pts (letter)",
+        "PdfVersion": "1.7"
+      },
+      "textPath": "north-carolina/regulatory/captures/2026-09-07/llcr-comments-2024/LLRulesComments.txt",
+      "textSha256": "833e2356e5ac75435d35894036b51a91195c4ebb8f8f47d23bcf430758db8c93",
+      "supersededRequestedUrl": "https://www.ncrec.gov/pdfs/licensing/licenselawcomments.pdf",
+      "supersededUrlObservation": "HTTP 404 text/html on 2026-09-07; official NCREC Publications page links the replacement URL."
+    },
     {
       "sourceIds": [
         "FED-EPA-HUD-LEAD-FACTSHEET"
