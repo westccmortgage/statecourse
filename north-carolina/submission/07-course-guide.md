@@ -44,6 +44,12 @@ unsuccessful attempt. All units/assessments, required activities/homework, the a
 record and a comprehensive closed-book proctored final at 75% or higher are completion conditions.
 Homework time is not counted as instructional time.
 
+The protected review draft supplies two 48-item final forms. Each form covers all sixteen sections
+with three independently authored questions per section and uses the full three-hour examination
+allocation. Forty-eight questions is StateCourse's proposed format, not an NCREC-prescribed count.
+The final bank is not used in free practice and cannot be administered until identity, closed-book
+proctoring, protected attempt storage, incident handling and end-to-end review are validated.
+
 ## Required-material warning
 
 The course is not filing-ready until the current official/copyright-authorized versions of Form 2-T

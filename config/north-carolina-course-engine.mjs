@@ -326,6 +326,12 @@ const FINAL_EXAM = Object.freeze({
   hours: END_OF_COURSE_EXAM_HOURS,
   hoursAreInsideRequiredTotal: true,
   passingPercent: END_OF_COURSE_PASSING_PERCENT,
+  providerDraftForms: 2,
+  providerDraftItemsPerForm: 48,
+  providerDraftVersion: "NC-FINAL-DRAFT-2026-09-07-v1",
+  providerFormatIsCommissionPrescribed: false,
+  protectedBankAuthored: true,
+  productionProctoringValidated: false,
   comprehensive: true,
   closedBook: true,
   proctored: true,
@@ -413,6 +419,7 @@ export function getNorthCarolinaCourse(courseId = COURSE_ID) {
       `The allocation of the Commission's ${REQUIRED_INSTRUCTIONAL_HOURS} instructional hours among the ${SECTION_COUNT} sections, within the Commission's recommended table. The Syllabus's table is expressly RECOMMENDED.`,
       `The ${ENGAGEMENT_PASSING_PERCENT} percent in-module engagement threshold and the ${APPLIED_PASSING_PERCENT} percent applied threshold. The Syllabus prescribes no in-module assessment and no in-module passing score. The ${END_OF_COURSE_PASSING_PERCENT} percent that IS prescribed applies to the end-of-course examination.`,
       "The eleven-item shape of each module's engagement check — one applied, five engagement, five remediation.",
+      "Two protected provider-draft final forms with 48 scored items each — three independently authored items for every syllabus section. The reviewed Syllabus and Rule 58H .0207 do not prescribe a provider-exam item count; production use remains blocked until proctoring, access control and end-to-end attempt storage are validated.",
       "Which modules deliver each of Section XVI's required calculations, since the Commission directs integration but does not assign the calculations to sections."
     ]),
     passingPercentages: Object.freeze({

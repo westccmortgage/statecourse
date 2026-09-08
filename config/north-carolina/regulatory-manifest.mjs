@@ -313,7 +313,7 @@ export const NC_BLOCKERS = Object.freeze([
   { id: "NC-B04", owner: "User + NCREC", blocker: "Proposed instructor is not yet a nonprovisional NC broker or an NCREC-approved instructor." },
   { id: "NC-B05", owner: "StateCourse", blocker: "Present student-visible text does not demonstrate 72 instructional hours at 225 wpm; no counted media ledger exists." },
   { id: "NC-B06", owner: "StateCourse + rights holders", blocker: "Current required forms/manuals and several Syllabus Required Activity artifacts remain unobtained or unreconciled." },
-  { id: "NC-B07", owner: "StateCourse", blocker: "A secured comprehensive final bank and validated identity/no-material proctoring workflow are incomplete." },
+  { id: "NC-B07", owner: "StateCourse", blocker: "Two protected comprehensive 48-item final forms are authored and mechanically validated; production identity/no-material proctoring, protected attempt storage, access-control review and end-to-end validation remain incomplete." },
   { id: "NC-B08", owner: "StateCourse", blocker: "Fully reviewable LMS, timing, completion evidence, support workflow, and reviewer access are not demonstrated." },
   { id: "NC-B09", owner: "User", blocker: "Provider filing needs entity/NC data, education director, ownership/officials, pricing, refund terms, and signatures." },
   { id: "NC-B10", owner: "User + NCREC", blocker: "Instructor file needs transcripts and experience/teaching evidence or a written equivalency determination." },

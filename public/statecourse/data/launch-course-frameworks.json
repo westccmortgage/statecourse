@@ -703,78 +703,159 @@
       "modules": [
         {
           "id": "NCB-01",
-          "title": "License law and brokerage regulation",
-          "hours": 5
+          "title": "NC Real Estate Licensure",
+          "hours": 2,
+          "syllabus_section": "I",
+          "instructional_level": 1,
+          "licence_exam_category": "state",
+          "licence_exam_items": 3
         },
         {
           "id": "NCB-02",
-          "title": "Property concepts and ownership",
-          "hours": 5
+          "title": "Broker Supervision & Compensation",
+          "hours": 2,
+          "syllabus_section": "II",
+          "instructional_level": 3,
+          "licence_exam_category": "state",
+          "licence_exam_items": 4
         },
         {
           "id": "NCB-03",
-          "title": "Title, legal descriptions, and transfer",
-          "hours": 5
+          "title": "Real Property Characteristics, Legal Descriptions & Property Use",
+          "hours": 5,
+          "syllabus_section": "III",
+          "instructional_level": 1,
+          "licence_exam_category": "national",
+          "licence_exam_items": 9
         },
         {
           "id": "NCB-04",
-          "title": "Land use and environmental matters",
-          "hours": 5
+          "title": "Property Taxes & Insurance",
+          "hours": 4,
+          "syllabus_section": "IV",
+          "instructional_level": 2,
+          "licence_exam_category": "state",
+          "licence_exam_items": 4
         },
         {
           "id": "NCB-05",
-          "title": "Brokerage relationships and agency",
-          "hours": 5
+          "title": "Property Disclosures & Environmental Issues",
+          "hours": 4,
+          "syllabus_section": "V",
+          "instructional_level": 1,
+          "licence_exam_category": "national",
+          "licence_exam_items": 8
         },
         {
           "id": "NCB-06",
-          "title": "Contract law",
-          "hours": 5
+          "title": "Forms of Ownership, Transfer & Recording of Title",
+          "hours": 6,
+          "syllabus_section": "VI",
+          "instructional_level": 2,
+          "licence_exam_category": "national",
+          "licence_exam_items": 8
         },
         {
           "id": "NCB-07",
-          "title": "North Carolina sales contracts and forms",
-          "hours": 5
+          "title": "Real Estate Contracts & Agency",
+          "hours": 6,
+          "syllabus_section": "VII",
+          "instructional_level": 3,
+          "licence_exam_category": "national",
+          "licence_exam_items": 16
         },
         {
           "id": "NCB-08",
-          "title": "Real estate finance",
-          "hours": 5
+          "title": "Agency in NC",
+          "hours": 7,
+          "syllabus_section": "VIII",
+          "instructional_level": 3,
+          "licence_exam_category": "state",
+          "licence_exam_items": 16
         },
         {
           "id": "NCB-09",
-          "title": "Valuation and brokerage pricing",
-          "hours": 5
+          "title": "Real Estate Practice",
+          "hours": 4,
+          "syllabus_section": "IX",
+          "instructional_level": 2,
+          "licence_exam_category": "national",
+          "licence_exam_items": 14
         },
         {
           "id": "NCB-10",
-          "title": "Real estate calculations",
-          "hours": 5
+          "title": "Brokerage Practices in NC",
+          "hours": 4,
+          "syllabus_section": "X",
+          "instructional_level": 2,
+          "licence_exam_category": "state",
+          "licence_exam_items": 12
         },
         {
           "id": "NCB-11",
-          "title": "Fair housing and consumer protection",
-          "hours": 5
+          "title": "Contracts & Closing in NC",
+          "hours": 8,
+          "syllabus_section": "XI",
+          "instructional_level": 2,
+          "licence_exam_category": "state",
+          "licence_exam_items": 7
         },
         {
           "id": "NCB-12",
-          "title": "Leasing and property management",
-          "hours": 5
+          "title": "Financing & Settlement",
+          "hours": 7,
+          "syllabus_section": "XII",
+          "instructional_level": 1,
+          "licence_exam_category": "national",
+          "licence_exam_items": 7
         },
         {
           "id": "NCB-13",
-          "title": "Construction, insurance, and property condition",
-          "hours": 5
+          "title": "Property Valuation & Appraisal",
+          "hours": 6,
+          "syllabus_section": "XIII",
+          "instructional_level": 1,
+          "licence_exam_category": "national",
+          "licence_exam_items": 11
         },
         {
           "id": "NCB-14",
-          "title": "Closing, settlement, and taxation",
-          "hours": 5
+          "title": "NC Landlord & Tenant Concepts",
+          "hours": 2.5,
+          "syllabus_section": "XIV",
+          "instructional_level": 2,
+          "licence_exam_category": "state",
+          "licence_exam_items": 3
         },
         {
           "id": "NCB-15",
-          "title": "Integrated North Carolina brokerage practice",
-          "hours": 5
+          "title": "Other Relevant NC Laws",
+          "hours": 4.5,
+          "syllabus_section": "XV",
+          "instructional_level": 2,
+          "licence_exam_category": "state",
+          "licence_exam_items": 11
+        },
+        {
+          "id": "NCB-16",
+          "title": "Real Estate Math Calculations",
+          "hours": 0,
+          "syllabus_section": "XVI",
+          "instructional_level": 3,
+          "licence_exam_category": "national",
+          "licence_exam_items": 7,
+          "integrated_across_sections": true
+        },
+        {
+          "id": "NCB-FINAL",
+          "title": "Comprehensive End-of-Course Examination",
+          "hours": 3,
+          "passing_percent": 75,
+          "closed_book": true,
+          "proctored": true,
+          "inside_required_total": true,
+          "provider_draft_items_per_form": 48,
+          "provider_draft_forms": 2
         }
       ],
       "public_notice": "Course framework in development. Not approved; enrollment, payment, regulatory study time, credit, and certificates are unavailable."

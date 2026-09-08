@@ -277,5 +277,5 @@ test("product roadmap distinguishes prelicense, three postlicense courses, elect
 });
 
 test("all required Phase 0 and submission-draft artifacts exist", () => {
-  for (const path of ["north-carolina/regulatory/official-sources.md", "north-carolina/regulatory/personal-broker-path.md", "north-carolina/regulatory/requirements-traceability.md", "north-carolina/submission/00-filing-index.md", "north-carolina/submission/05-policies-procedures-disclosure-draft.md", "north-carolina/submission/09-timing-evidence-report.md", "north-carolina/HANDOFF.md"]) assert.ok(existsSync(new URL(`../${path}`, import.meta.url)), path);
+  for (const path of ["north-carolina/regulatory/official-sources.md", "north-carolina/regulatory/personal-broker-path.md", "north-carolina/regulatory/requirements-traceability.md", "north-carolina/submission/00-filing-index.md", "north-carolina/submission/05-policies-procedures-disclosure-draft.md", "north-carolina/submission/09-timing-evidence-report.md", "north-carolina/submission/22-protected-final-exam-audit.md", "north-carolina/HANDOFF.md"]) assert.ok(existsSync(new URL(`../${path}`, import.meta.url)), path);
 });

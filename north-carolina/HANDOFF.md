@@ -87,6 +87,15 @@
   communities Q&A is separately retained and reviewed against current Chapters 47F, 136 and 160D;
   it does not replace the outstanding approved-plat activity. Both Section XV form/measurement
   activities and the 2,292-square-foot worked problem are delivered.
+- The protected end-of-course examination now has two independently authored 48-item forms, three
+  items for every syllabus section, deterministic persisted-seed replay, exactly balanced answer
+  positions, key-free student payloads, strict answer validation and a tested 75-percent boundary.
+  The 48-item form size is a StateCourse proposal, not an NCREC-prescribed number. Production
+  proctoring, protected attempt storage and end-to-end security validation remain open.
+- The public North Carolina launch framework was corrected from fifteen generic five-hour modules
+  to the controlling sixteen-section, 72-instructional-hour structure plus the three-hour final
+  inside the 75-hour total. It now carries the syllabus level and license-examination weighting for
+  each section instead of contradicting the course engine.
 
 - Official-source Phase 0 covers personal broker licensure, instructor qualification, education
   provider, education director, PPD, course approval, distance delivery, completion/proctoring,
@@ -145,7 +154,7 @@ ledger actually demonstrate the required time.
 | NC-B04 | user + NCREC | Nonprovisional NC broker and instructor approval absent |
 | NC-B05 | StateCourse | 225-wpm/media timing fails |
 | NC-B06 | StateCourse/rights holders | Current forms/manuals/Required Activity artifacts incomplete |
-| NC-B07 | StateCourse | Secured comprehensive final and proctoring not complete |
+| NC-B07 | StateCourse | Protected two-form bank is authored; production identity/closed-book proctoring, protected attempt storage and end-to-end security validation are not complete |
 | NC-B08 | StateCourse | Full reviewer-ready LMS/attendance/support evidence incomplete |
 | NC-B09 | user | Entity/director/ownership/pricing/refund/signature facts incomplete |
 | NC-B10 | user + NCREC | Transcript and instructor experience/equivalency unresolved |
@@ -170,10 +179,15 @@ requires its own foreign-entity consent to service and asks for an NC SOS ID if 
 4. Recheck the retained official PDF set at filing; repeat all-page review only if publisher bytes
    change. L-09 is retained but still needs factual completion/signature when applicable.
 5. Expand/reconcile the curriculum and build a regulator-format timing ledger.
-6. Build/test secure final exam, proctoring, complete distance LMS, reports, storage and reviewer access.
+6. Obtain instructor/director signoff on the authored protected final, then implement and test
+   production identity/closed-book proctoring, protected attempt storage, the complete distance LMS,
+   reports and reviewer access.
 7. Finalize/sign PPD and provider packet; submit provider application.
 8. After provider number issues, submit the complete course in the live REC 7.33 workflow.
 9. Open enrollment/payment only after approvals and a signed production release audit.
+10. Add no further states. After North Carolina reaches its present deliverable boundary, move to
+    video production and integration for every already-built state using the California pattern;
+    record exact duration/hash and connect the finished media to each state's timing evidence.
 
 Run:
 
@@ -199,17 +213,22 @@ The Module NC-13 activity capture is a separate retained teaching-evidence set: 
 28 reviewed page renders and the full 302-page publisher archive. It does not make the unrelated
 source-ledger capture complete.
 
-The September 7 rulebook-currentization checkpoint is **143/143 focused North Carolina, source-integrity and
+The September 7 final-exam checkpoint is **153/153 focused North Carolina, source-integrity and
 all-course free-practice tests passing**, including every lesson and every answer choice in all 31
 catalog courses. With the bundled Python runtime on `PATH`, the complete repository run is
-**1,316/1,316 passing**. The same run under the host's bare `python3` fails PDF-reading tests because
+**1,326/1,326 passing**, and the verified Sites production build succeeds. The same source checks
+under the host's bare `python3` fail PDF-reading because
 that interpreter lacks `pypdf`; this is an environment-path failure, not a course result.
 
 PDF extraction needs Python with `pypdf`; set `NC_PYTHON` to that interpreter when it is not `python3`.
 The branch was first pushed at commit `748a8bbde4adcaa39ba325c8fb6235bfd6887d50`; the remote branch
-currently contains work through Module NC-05. Modules NC-06 through NC-15 remain local because the
-existing external-data authorization names Texas, Florida and Michigan but not North Carolina. Do not
-push North Carolina repository data without explicit North Carolina authorization. The strict
+currently contains work through Module NC-05. Modules NC-06 through NC-15, the currentized official-source
+lock, the protected final bank and the corrected public course framework remain local because the existing
+external-data authorization names Texas, Florida and Michigan but not North Carolina. A prior push attempt
+was rejected because the authorization did not name the North Carolina destination and branch. Do not retry
+or work around that control; push only after the user explicitly authorizes sending North Carolina repository
+data to `https://github.com/westccmortgage/statecourse.git` on branch
+`north-carolina-completion-20260907`. The strict
 `--require-source-capture` command now exits 0 because every PDF source entry is backed by retained
 evidence and all-page review. These are offline as-of-capture checks; re-fetch before filing. Current
 focused tests and complete repository test count are recorded after the NCREC rulebook-currentization
@@ -222,4 +241,6 @@ documented in `north-carolina/submission/18-module-05-lead-source-audit.md`; the
 documented in `north-carolina/submission/19-ncrec-syllabus-all-page-audit.md`; the replacement LLCR route and
 complete Comments review are documented in `north-carolina/submission/20-ncrec-llcr-comments-all-page-audit.md`;
 the final OAH replacement and 48/48 source lock are documented in
-`north-carolina/submission/21-ncrec-rulebook-currentization-audit.md`.
+`north-carolina/submission/21-ncrec-rulebook-currentization-audit.md`. The protected two-form final,
+its security boundary and the corrected public 72-plus-3 framework are documented in
+`north-carolina/submission/22-protected-final-exam-audit.md`.
