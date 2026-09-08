@@ -47,7 +47,8 @@ Homework time is not counted as instructional time.
 ## Required-material warning
 
 The course is not filing-ready until the current official/copyright-authorized versions of Form 2-T
-and addenda/guidance, WWREA resources, RPOADS/MOG, Residential Square Footage Guidelines, URAR sample,
-settlement disclosures/statements, NC Real Estate Manual where applicable, statute/rule readings, and
-every other prescribed Required Activity resource are lawfully obtained and reconciled. Placeholders
-do not satisfy a Required Activity.
+and addenda/guidance, WWREA resources, RPOADS/MOG, Residential Square Footage Guidelines, NC Real
+Estate Manual where applicable, statute/rule readings, and every other prescribed Required Activity
+resource are lawfully obtained and reconciled. Module 12's settlement artifacts and Module 13's
+completed URAR/reconciliation artifacts are retained with all-page review evidence; placeholders do
+not satisfy any remaining Required Activity.

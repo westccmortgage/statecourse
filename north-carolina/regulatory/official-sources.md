@@ -1,7 +1,7 @@
 # North Carolina official-source ledger
 
 **Control date:** 2026-09-07
-**Manifest:** `NC-PHASE0-2026-09-07-v10`
+**Manifest:** `NC-PHASE0-2026-09-07-v12`
 **Regulatory status:** Not approved. Enrollment and credit delivery are closed.
 
 The machine-readable controlling record is
@@ -99,6 +99,9 @@ No commercial school, law-firm summary, aggregator, or search snippet is control
 | Completed LE/CD samples | CFPB official forms repository | fixed-rate completed samples used in Section XII | [CFPB forms and samples](https://www.consumerfinance.gov/compliance/compliance-resources/mortgage-resources/tila-respa-integrated-disclosures/forms-samples/) |
 | Completed historical HUD-1 | CFPB official comparison | completed HUD-1 teaching artifact, not a current covered-TRID substitute | [CFPB comparison](https://www.consumerfinance.gov/know-before-you-owe/compare/) |
 | ALTA combined settlement statement | ALTA publisher | supplemental seller/buyer debit-credit model | [ALTA settlement statements](https://www.alta.org/policies-and-standards/policy-forms/settlement-statements) |
+| Appraiser credential and broker CMA/BPO boundary | G.S. Chapter 93E Article 1; Chapter 93A Article 6 | appraisal credential/trainee supervision; broker opinion purposes, contents, disclaimers and mortgage-origination limit | [Chapter 93E Article 1](https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/ByArticle/Chapter_93E/Article_1.html), [Chapter 93A Article 6](https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/ByArticle/Chapter_93A/Article_6.html) |
+| USPAP identity and federal history | The Appraisal Foundation | standards publication; Foundation created in 1987 and later authorized by FIRREA | [USPAP](https://appraisalfoundation.org/pages/uspap), [Foundation history](https://appraisalfoundation.org/pages/who-we-are) |
+| Current URAR/UAD transition and completed samples | Fannie Mae | broad production, November 2, 2026 mandate, May 3, 2027 legacy-revision end; official completed SF5 sample | [UAD and Forms Redesign](https://singlefamily.fanniemae.com/delivering/uniform-mortgage-data-program/uniform-appraisal-dataset), [Forms](https://singlefamily.fanniemae.com/selling-servicing-guide-forms) |
 
 ## Verification limitations and conflict resolution
 
@@ -181,6 +184,16 @@ broker-to-broker referral shorthand, VA release-of-liability trap, combined USDA
 Ginnie-as-GSE classification. CFPB completed LE/CD/HUD-1 samples and the ALTA combined statement are
 retained with hashes, extracted text and visual review of all eighteen PDF pages; all four Section XII
 Required Activities are now delivered.
+
+Module NC-13 was reconciled on September 7 to current G.S. Chapters 93E and 93A Article 6, official
+Appraisal Foundation history/USPAP descriptions and Fannie Mae's current UAD 3.6 transition materials.
+The pass corrected the broker/appraiser boundary, FIRREA/USPAP history, listing-versus-settled-sale
+classification, adjustment and weighting overclaims, cost/income shortcuts and the stale fixed-form
+assumption. Fannie Mae's complete SF5 sample was extracted intact from the official combined sample,
+and its publisher cover plus all nineteen report pages were rendered and visually reviewed. The seven-
+page legacy Form 1004 and one-page May 5, 2026 transition timeline were also reviewed. All five Section
+XIII Required Activities are now delivered; the full copyrighted USPAP text and North Carolina
+Appraisal Board rules remain outside this reviewed boundary.
 
 The live RELINC replaced April 2025 at the same Pearson URL. Its April 2026 edition now agrees with
 Rule 58A .0302 on $105 application and publishes $53 single-section / $63 comprehensive exam fees

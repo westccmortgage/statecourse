@@ -1,0 +1,73 @@
+{
+  "reviewedOn": "2026-09-07",
+  "method": "Each retained teaching PDF was text-extracted with pypdf, rendered page-by-page with Poppler, and every rendered page was visually inspected against the extracted text. OCR was not required because the digital text and reviewed renders agreed.",
+  "sourceArchive": {
+    "id": "GSE-FANNIE-UAD36-COMBINED-SAMPLES",
+    "title": "UAD 3.6 Combined Sample Appraisal Reports",
+    "landingPage": "https://singlefamily.fanniemae.com/delivering/uniform-mortgage-data-program/uniform-appraisal-dataset",
+    "file": "fannie-uad36-combined-sample-scenarios.pdf",
+    "pdfSha256": "7d13567fb5cbf5ce9ce9457923129bd66ce815fdf6fb7db22b9426a945f73bb9",
+    "pageCount": 302,
+    "derivative": "fannie-uad36-sf5-completed-sample.pdf is an exact extraction of source PDF pages 271-290: one publisher scenario cover followed by all 19 pages of the SF5 Uniform Residential Appraisal Report."
+  },
+  "artifacts": [
+    {
+      "id": "GSE-FANNIE-UAD36-SF5-SAMPLE",
+      "title": "UAD 3.6 SF5 Completed Uniform Residential Appraisal Report",
+      "landingPage": "https://singlefamily.fanniemae.com/delivering/uniform-mortgage-data-program/uniform-appraisal-dataset",
+      "pdfSha256": "dbfd5cfddc25ea18f41b3d7f43043dc7a0bfb4e58b7d9ad390484c84aed7409b",
+      "pageCount": 20,
+      "reviewObservation": "PDF page 1 is the publisher's SF5 scenario cover and pages 2-20 are all 19 pages of the completed dynamic URAR. The market, listing/pending, sales-comparison, adjustment, weighting and reconciliation data are legible and agree with the digital text. The report reconciles the sales-comparison approach to $350,000 and marks the cost and income approaches Not Necessary for Credible Results.",
+      "pages": [
+        {"number": 1, "sha256": "f01b7a54e9b21afa021560fbed5b05f4c6637142366d10e7aa369edeb936a07f"},
+        {"number": 2, "sha256": "d469893c498167ed6e2be7d5cabcd5e5988a61371fde4e98a4a876d65fc7465f"},
+        {"number": 3, "sha256": "3c8605e8fa43aae38a546ee00eb5350cff2fb8337dc57fd747387da94117d97f"},
+        {"number": 4, "sha256": "ec92515efc6eb80d008c58fdab3dd2e71af7b6fcec2168d8dbf1e7f65a19306a"},
+        {"number": 5, "sha256": "093749f00d2149e14d1d287a18290e21d3478be80eb831b9900cc8dceafd9c42"},
+        {"number": 6, "sha256": "3b446d089edb5a39a7e54dcf38c023fe51adf325d759a36128dd7c8fa20d7a40"},
+        {"number": 7, "sha256": "5ca3f0876604adfbf57ac7dc7dca26c9e6eca3c5d92b5a63902461dcb3ad87fc"},
+        {"number": 8, "sha256": "78af3ef19df691d985ef0a64cf8c83d9d24804d4f8da160829074a57f90e737d"},
+        {"number": 9, "sha256": "0771de9cdef85fe0a827d0a5db3995838331f5b0caf69b8b37f03b77cecb20ad"},
+        {"number": 10, "sha256": "bc33e51832f537746815bae7e2f12b22a6822d8cd690225b8fea81da1f4e8b09"},
+        {"number": 11, "sha256": "f8624e1ec52c89b989a4004e5273786e5af4842eb31e4bb8151fba1420e626ba"},
+        {"number": 12, "sha256": "4407f5c899e85ca3198654e5ae347f903f8748dcb78e2f5413a1dcafa48ff214"},
+        {"number": 13, "sha256": "0a4a643a6273edfb050c1d5ac744a0c51323ab0cb08ac8743fecabfe69b2286f"},
+        {"number": 14, "sha256": "b9d899e9c8f76a52e6d7e22525408408490e99ca9cc854caac329261d0e38c36"},
+        {"number": 15, "sha256": "e1f361b6772c3491d95bdec89078a0a42f083e2ab7f23c2327d3f645d156d911"},
+        {"number": 16, "sha256": "fe86e82098419c6bcb95d024203de19b0408ea93a8ae5e50c52d9619f4c1105c"},
+        {"number": 17, "sha256": "186afd692995f6314437a97c494e0e50698c5ecedb5538be8e77e12d85c5491b"},
+        {"number": 18, "sha256": "9a0d74f923a4669fdbadf67486439bac95edd6904b3c0d77ca8212d3b3eeefe4"},
+        {"number": 19, "sha256": "5992174642bb831db4710719230390804a25f1c335c47c40ad287573b83c6716"},
+        {"number": 20, "sha256": "73b17805bf281bdc51809de147829a42a40e21cb23294e9acdec7a37df106a04"}
+      ]
+    },
+    {
+      "id": "GSE-FANNIE-LEGACY-FORM-1004",
+      "title": "Uniform Residential Appraisal Report — legacy Form 1004",
+      "landingPage": "https://singlefamily.fanniemae.com/selling-servicing-guide-forms",
+      "pdfSha256": "4455510be825a21de07dc74a9c96e715d2fc971c98ae8851fdbaea70a7926526",
+      "pageCount": 7,
+      "reviewObservation": "All seven pages of the legacy fixed Form 1004 are legible and agree with the digital text. Page 2 contains the sales-comparison grid and the fixed reconciliation area. It is retained only to distinguish the legacy form from the UAD 3.6 dynamic report during the 2026 transition.",
+      "pages": [
+        {"number": 1, "sha256": "8da91628838fc0e894bb6b77bdfbf859f896a92aba939c672f7a449f4be02738"},
+        {"number": 2, "sha256": "73388e0ad0e975d57b3500dbab41a5fda8db1cd68625f3e6ec1a0a8b79489ac7"},
+        {"number": 3, "sha256": "10b53cc65dd71e30f5d1c8a3297e54200114ba9ac7bf9efb2c43e1b602c6afcb"},
+        {"number": 4, "sha256": "d951139dc22bad4af938136f70dbe06bf30c515f7f2139d55cc0aee3f3f2f849"},
+        {"number": 5, "sha256": "47f5d09675fd59b4008dedf99a10e6c5e5a4c6f5719b93b5619d7aa7ad96c689"},
+        {"number": 6, "sha256": "0f818bf97c96564c75ccbfe8f8748bcaa5894f42d6dfc7d07ce0df77d431e969"},
+        {"number": 7, "sha256": "5d109b8c555ef96d051ffdeb755e35b651810de479634c8c0699323a1ec798d5"}
+      ]
+    },
+    {
+      "id": "GSE-FANNIE-UAD36-TIMELINE",
+      "title": "UAD and Forms Redesign Timeline",
+      "landingPage": "https://singlefamily.fanniemae.com/delivering/uniform-mortgage-data-program/uniform-appraisal-dataset",
+      "pdfSha256": "a7dc89c39056fb81ca2e4def10dfbe14a36de8d17a3abbb039dfb46f23977687",
+      "pageCount": 1,
+      "reviewObservation": "The one-page May 5, 2026 timeline is legible and agrees with the digital text. It shows broad production from January 26 through November 1, 2026, mandatory UAD 3.6 for new UCDP submissions beginning November 2, 2026, and the legacy-revision pipeline ending May 3, 2027.",
+      "pages": [
+        {"number": 1, "sha256": "b06e78aae04adae6b0a451bd4894ce0ce8f6e1204fa9a25832300538babbebde"}
+      ]
+    }
+  ]
+}

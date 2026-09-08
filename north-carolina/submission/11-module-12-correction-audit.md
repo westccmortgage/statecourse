@@ -58,6 +58,10 @@ All **18 pages** were rendered and visually checked against digital text. The ma
 ## Remaining course-wide limits
 
 This checkpoint does not close current Form 2-T/Guidelines/addenda, WWREA, RPOADS/MOG, Residential
-Square Footage Guidelines, licensed survey/plat, completed URAR sample, rule/syllabus PDF capture,
+Square Footage Guidelines, licensed survey/plat, rule/syllabus PDF capture,
 instructional-duration, secure final-exam/proctoring, LMS/reviewer access, entity/provider/instructor,
 live portal, signed PPD or regulator-approval blockers.
+
+**Later-status note:** the completed URAR and reconciliation activities that were open at this Module
+12 checkpoint were delivered and independently recorded in the September 7 Module NC-13 correction
+audit. They are intentionally absent from the current open-artifact sentence above.

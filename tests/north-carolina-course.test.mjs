@@ -14,6 +14,7 @@
 
 import test from "node:test";
 import assert from "node:assert/strict";
+import { createHash } from "node:crypto";
 import { existsSync, readFileSync } from "node:fs";
 
 import BANK from "../config/north-carolina/module-question-bank.mjs";
@@ -715,6 +716,32 @@ test("the GRM discrepancy is flagged openly rather than papered over, and the Co
   assert.match(sixteen, /There will be no calculations using a GRM/i);
 });
 
+test("Module NC-13 corrects appraisal boundaries and delivers the official completed-URAR review", () => {
+  const thirteen = readModule("module-13");
+  for (const required of [
+    /broker license, by itself, does not authorize appraisal practice/is,
+    /not as a complete North Carolina practice rule/i,
+    /USPAP.*body of ethical and.*performance standards, not an appraisal form/is,
+    /Foundation was established.*1987/is,
+    /listing is not a closed sale/i,
+    /official completed SF5 sample displays five settled-sale comparables/i,
+    /superior.*subtract/is,
+    /inferior.*add/is,
+    /Required Activities in this section.*all five are now delivered/is,
+    /November 2, 2026/i
+  ]) assert.match(thirteen, required);
+  assert.doesNotMatch(thirteen, /FIRREA created The Appraisal Foundation/i);
+  assert.doesNotMatch(thirteen, /USPAP appraisal form/i);
+  const activities = NORTH_CAROLINA_REQUIRED_ACTIVITIES.filter((activity) => activity.section === "XIII");
+  assert.equal(activities.length, 5);
+  assert.deepEqual(activities.map((activity) => activity.status), ["delivered", "delivered", "delivered", "delivered", "delivered"]);
+  assert.match(activities[3].evidencePath, /module-13\.md#d4a/i);
+  assert.match(activities[4].evidencePath, /module-13\.md#d4a/i);
+  const bank = BANK["module-13"];
+  assert.equal(1 + bank.engagement.length + bank.remediation.length, 11);
+  assert.match(bank.engagement[1].choices[0], /out of the closed-sale grid/i);
+});
+
 test("Module NC-16 records its zero hours as the Commission's instruction, not as an omission", () => {
   const sixteen = readModule("module-16");
   assert.match(sixteen, /rather than as a separate arithmetic course section/i);
@@ -729,7 +756,7 @@ test("Phase 0 supersedes the original statute/rule gap while carrying live cours
   assert.strictEqual(NORTH_CAROLINA_UNREAD_SOURCES, NORTH_CAROLINA_OPEN_SOURCE_DEPENDENCIES);
   assert.ok(NORTH_CAROLINA_OPEN_SOURCE_DEPENDENCIES.length >= 10);
   const joined = NORTH_CAROLINA_OPEN_SOURCE_DEPENDENCIES.join(" | ");
-  for (const source of ["Form 2-T", "REC 4.22", "REC 4.25", "Residential Square Footage Guidelines", "URAR"]) {
+  for (const source of ["Form 2-T", "REC 4.22", "REC 4.25", "Residential Square Footage Guidelines", "USPAP"]) {
     assert.ok(joined.includes(source), `open dependency list does not name ${source}`);
   }
   assert.doesNotMatch(joined, /^NCGS Chapter 93A \(Real Estate License Law\)/);
@@ -820,10 +847,38 @@ test("every Required Activity names a real module and every outstanding one says
 
 test("the Required Activities that still depend on unobtained forms are recorded as outstanding, not delivered", () => {
   const byText = (needle) => NORTH_CAROLINA_REQUIRED_ACTIVITIES.find((a) => a.activity.includes(needle));
-  for (const needle of ["Form 2-T", "RPOADS", "Square Footage Guidelines", "Uniform Residential Appraisal Report"]) {
+  for (const needle of ["Form 2-T", "RPOADS", "Square Footage Guidelines"]) {
     const activity = byText(needle);
     assert.ok(activity, `no Required Activity mentions ${needle}`);
     assert.equal(activity.status, "outstanding", `${needle} is recorded as delivered but the artefact was never obtained`);
+  }
+});
+
+test("Module NC-13 appraisal activities are delivered only with retained all-page review evidence", () => {
+  const capture = new URL("../north-carolina/regulatory/captures/2026-09-07/module-13-appraisal/", import.meta.url);
+  const review = JSON.parse(readFileSync(new URL("page-reviews.json", capture), "utf8"));
+  assert.equal(review.sourceArchive.pageCount, 302);
+  assert.match(review.sourceArchive.derivative, /exact extraction of source PDF pages 271-290/i);
+  assert.equal(review.artifacts.length, 3);
+  assert.equal(review.artifacts.reduce((sum, artifact) => sum + artifact.pages.length, 0), 28);
+  const filenames = {
+    "GSE-FANNIE-UAD36-SF5-SAMPLE": "fannie-uad36-sf5-completed-sample.pdf",
+    "GSE-FANNIE-LEGACY-FORM-1004": "fannie-legacy-form-1004.pdf",
+    "GSE-FANNIE-UAD36-TIMELINE": "fannie-uad36-timeline.pdf"
+  };
+  const pageFilename = (id, number) => id === "GSE-FANNIE-UAD36-SF5-SAMPLE"
+    ? `fannie-uad36-sf5-${String(number).padStart(2, "0")}.png`
+    : id === "GSE-FANNIE-LEGACY-FORM-1004"
+      ? `fannie-legacy-form-1004-${number}.png`
+      : `fannie-uad36-timeline-${number}.png`;
+  const hash = (url) => createHash("sha256").update(readFileSync(url)).digest("hex");
+  assert.equal(hash(new URL(review.sourceArchive.file, capture)), review.sourceArchive.pdfSha256);
+  for (const artifact of review.artifacts) {
+    assert.equal(artifact.pageCount, artifact.pages.length, artifact.id);
+    assert.equal(hash(new URL(filenames[artifact.id], capture)), artifact.pdfSha256, artifact.id);
+    for (const page of artifact.pages) {
+      assert.equal(hash(new URL(`renders/${pageFilename(artifact.id, page.number)}`, capture)), page.sha256, `${artifact.id} page ${page.number}`);
+    }
   }
 });
 

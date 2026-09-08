@@ -48,15 +48,15 @@
  *
  * SOURCE BOUNDARY. Phase 0 reviewed current official General Assembly text for G.S. 93A-4, current
  * indexed OAH text for the controlling applicant/provider/course rules, and the April 2026 RELINC
- * guide. Applicable portions of Modules NC-01 through NC-07 were reconciled on 2026-09-07 to the
+ * guide. Applicable portions of Modules NC-01 through NC-13 were reconciled on 2026-09-07 to the
  * current primary sources actually obtained; each module's source boundary names what remains open.
  * The OAH PDF bytes remain an integrity-lock dependency, and later modules still require topic-level
  * reconciliation.
  * StateCourse has not retained and page-reviewed Form 2-T and its addenda, the current WWREA
- * Disclosure form, the RPOADS (REC 4.22), the MOG (REC 4.25), the Residential Square Footage Guidelines, the
- * URAR form, the CFPB sample LE and BCD, the HUD-1 and ALTA statements, NCGS Chapters 42A, 41A,
- * 47B, 47E, 47F, 43, 45A and 160D, or the NC Uniform Residential Building Code. THIS IS THE
- * LONGEST GAP LIST IN THE PROJECT and every module records its own share of it.
+ * Disclosure form, the RPOADS (REC 4.22), the MOG (REC 4.25), the Residential Square Footage
+ * Guidelines, remaining current-law slices for Modules NC-14 and NC-15, or the NC Uniform Residential
+ * Building Code. Official LE/CD/HUD-1/ALTA artifacts and the GSE completed URAR sample are now retained
+ * and page-reviewed; possession of those artifacts does not imply Commission approval.
  *
  * ACCORDINGLY: no item asks a student to recall a figure, deadline, exemption, form provision, or
  * penalty unless its module identifies the official source that was reviewed. Where a controlling
@@ -499,19 +499,19 @@ const modules = {
     applied: {
       prompt: "You are preparing a CMA on a three-bedroom ranch. You find four closed sales of similar homes, one active listing at a high price, and one property under contract. Two of the closed comps have finished basements the subject lacks; two do not. The seller asks you to \"average them all and add ten percent because the market is moving.\"",
       choices: [
-        "Use only the four closed sales — a currently listed or under-contract property cannot be used as a comp — adjust each comp's sale price rather than the subject, subtracting from the two SUPERIOR comps with basements and adding to any inferior ones, then reconcile by WEIGHTED consideration rather than simple averaging, and present a range rather than a single figure.",
+        "Use the four verified closed sales in the CMA closed-sale grid; analyze the active listing and pending sale separately as nonclosed market evidence rather than pretending either is a settled sale. Adjust each comp's sale price rather than the subject, subtract from the SUPERIOR basement comps and add to inferior comps, then explain a supported probable-price range using similarity and data quality rather than simple averaging.",
         "Average all six, including the listing and the pending, since they show current market direction.",
         "Average the four closed sales and adjust the subject upward for the basements the comps have.",
         "Use the two most similar comps only and take their midpoint."
       ],
       correctChoice: 0,
-      rationale: "Four separate rules, each stated by the Commission: currently listed or under-contract property cannot be a comp; adjust the comps and NEVER the subject; superior comps adjust down and inferior up; and a single indication of value should not be obtained by simple averaging. The Commission's Required Activity requires a CMA producing a RANGE."
+      rationale: "The Syllabus's closed-sale exercise keeps listings and pendings out of the comp grid, but the current URAR shows that nonclosed properties can still be separate market evidence. Adjust the comps and never the subject; superior comps move down, inferior comps move up; and reconciliation must be explained rather than reduced to a blind average."
     },
     engagement: [
-      { prompt: "Why does the Commission assign the Sales Comparison Approach Level 3 while the other approaches are Level 2?", choices: ["Because its theory and methodology mirror what a broker does performing a BPO or CMA on residential property — so students should practice its use, focused on estimating probable sales price.", "Because it is the most mathematically difficult approach.", "Because it is the only approach used in North Carolina.", "Because appraisers rely on it exclusively."], correctChoice: 0, rationale: "The Commission states the reason itself. A broker will not appraise, but will price property for a seller and advise a buyer on what to offer, on most working days, for a whole career." },
-      { prompt: "May a currently listed property be used as a comparable?", choices: ["No — nor may a property under contract. Only a closed sale is a comp.", "Yes, if adjusted downward for typical negotiation.", "Yes, listings may be used but pendings may not.", "Yes, if no closed sales are available."], correctChoice: 0, rationale: "A listing is an asking price — evidence of what a seller hopes for, not of what a buyer paid. A pending has a price that has not yet survived appraisal, financing or due diligence." },
+      { prompt: "Why does the Commission assign the Sales Comparison Approach Level 3 while the other approaches are Level 2?", choices: ["Because its theory and methodology mirror what a broker does performing a BPO or CMA on residential property — so students should practice its use, focused on estimating probable sales price.", "Because it is the most mathematically difficult approach.", "Because it is the only approach used in North Carolina.", "Because appraisers rely on it exclusively."], correctChoice: 0, rationale: "The Commission states the reason itself. A North Carolina broker license alone authorizes a compliant CMA/BPO estimating probable selling or leasing price, not an appraisal; the shared analytical method does not erase that statutory boundary." },
+      { prompt: "In the Commission's closed-sale comparison exercise, may an active listing or pending sale be represented as a settled-sale comparable?", choices: ["No. Keep it out of the closed-sale grid, but do not call it useless: current URAR reporting separately uses listings and pending sales as market evidence when relevant.", "Yes, if its price is reduced by a typical negotiation percentage.", "Only listings may be used; pending sales may never be analyzed.", "Yes, and its asking or contract price is treated as a verified sale price."], correctChoice: 0, rationale: "A listing is not a closed sale and a pending transaction has not settled. The current UAD 3.6 URAR nevertheless reports active and pending market data separately, so the accurate rule concerns classification and use—not pretending nonclosed evidence does not exist." },
       { prompt: "Which type of obsolescence is INCURABLE only?", choices: ["Economic (external or locational) obsolescence.", "Physical deterioration.", "Functional obsolescence.", "All three may be curable or incurable."], correctChoice: 0, rationale: "The reason is structural, not financial: the other two are defects IN the property, so the owner can in principle fix them. External obsolescence comes from outside the boundary line — the owner does not own the cause and cannot cure it at any price." },
-      { prompt: "A property produces NOI of $96,000 and the market CAP rate is 8 percent. What is the indicated value?", choices: ["$1,200,000 — Value = NOI ÷ CAP rate.", "$7,680 — NOI × CAP rate.", "$768,000.", "$104,000."], correctChoice: 0, rationale: "96,000 ÷ 0.08 = 1,200,000. And note the Commission's inverse relationship: at the same income, a HIGHER cap rate produces a LOWER value, because the cap rate is the divisor. The cap rate measures risk." },
+      { prompt: "A property produces NOI of $96,000 and the market CAP rate is 8 percent. What is the indicated value?", choices: ["$1,200,000 — Value = NOI ÷ CAP rate.", "$7,680 — NOI × CAP rate.", "$768,000.", "$104,000."], correctChoice: 0, rationale: "96,000 ÷ 0.08 = 1,200,000. At the same income, a higher cap rate produces a lower indicated value because the rate is the divisor. The Syllabus links a higher rate with higher risk; a live market-derived rate reflects the required return and multiple risk and growth considerations." },
       { prompt: "Which approach is best for a church, a school or a newly constructed building?", choices: ["The cost approach — because unique, non-income-producing or special use properties, and new construction, lack comparable sales data.", "The sales comparison approach.", "The income capitalization approach.", "The gross rent multiplier method."], correctChoice: 0, rationale: "The reason is the absence of comps. And note that the cost approach does not escape sales comparison entirely — it uses it for the LAND component, and land is never depreciated." }
     ],
     remediation: [

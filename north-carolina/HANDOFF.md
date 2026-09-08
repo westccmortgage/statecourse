@@ -64,13 +64,19 @@
   regulation, TRID-timing, referral-compensation and tax-date errors. Authentic CFPB LE/CD/HUD-1 and
   ALTA statement artifacts are retained with all eighteen pages visually reviewed; all four Section XII
   Required Activities are now delivered.
+- Module NC-13 now reconciles the North Carolina appraiser/broker CMA-BPO boundary, Appraisal
+  Foundation/FIRREA history, USPAP identity and Fannie Mae's current UAD 3.6 transition. It corrects
+  the prior listing/closed-sale, comparable-count, adjustment, weighting, cost and capitalization
+  shortcuts. The official SF5 completed appraisal, legacy Form 1004 and transition timeline are
+  retained with all 28 teaching-artifact pages rendered and reviewed; all five Section XIII Required
+  Activities are now delivered.
 
 - Official-source Phase 0 covers personal broker licensure, instructor qualification, education
   provider, education director, PPD, course approval, distance delivery, completion/proctoring,
   reporting, records, renewals, postlicense/CE products, foreign-LLC route and current market scale.
 - The machine manifest records authority class, exact URL, revision/effective date, retrieval date,
   pinpoint, evidence, supersession check and source-integrity state for each source.
-- Seventy-six claims are separated into 72 confirmed, one interpretation and three regulator-confirmation states.
+- Eighty-one claims are separated into 77 confirmed, one interpretation and three regulator-confirmation states.
 - Filing index, provider/course datasheets, personal path, instructor dossier, regulator email draft,
   PPD draft, distance control plan, course guide, records SOP, timing report, product roadmap and
   certificate specimen are prepared.
@@ -106,9 +112,9 @@ the record; equivalency therefore needs NCREC preclearance.
 Rule 58H .0401 measures self-paced course time at 225 words per minute plus actual audio/video
 duration. Rule .0101(7) defines an instructional hour as 50 instructional minutes plus 10 break
 minutes, so the 72-hour non-exam syllabus allocation is 3,600 actual instructional minutes, not the
-previously reported 4,320. The sixteen curriculum files contain 65,198 audit-tokenized words, or at
-most 289.77 minutes/4.83 elapsed hours; they include nonstudent author notes. Adding the entire
-question-bank source gives a generous 381.06-minute/6.35-hour ceiling including code. Neither is validated
+previously reported 4,320. The sixteen curriculum files contain 66,571 audit-tokenized words, or at
+most 295.87 minutes/4.93 elapsed hours; they include nonstudent author notes. Adding the entire
+question-bank source gives a generous 387.41-minute/6.46-hour ceiling including code. Neither is validated
 student time. There is no media ledger. Planned “72-hour” module labels prove nothing. The course
 must not be submitted or advertised as 75 hours until its student-visible content and unit/media
 ledger actually demonstrate the required time.
@@ -171,22 +177,23 @@ but their page reviews are stale against the September 7 control date.
 Three current Module NC-02 rule sources were added after the September 6 capture and are therefore
 explicitly uncaptured. Scripts verify actual bytes and content identity and reject a wrong PDF,
 soft-404, missing snapshot, stale hash, foreign redirect, and missing/stale page review.
+The Module NC-13 activity capture is a separate retained teaching-evidence set: three reviewed PDFs,
+28 reviewed page renders and the full 302-page publisher archive. It does not make the unrelated
+source-ledger capture complete.
 
-The September 7 Module NC-12 checkpoint is **93/93 focused North Carolina tests passing** and **35/35
-free-practice tests passing**, including every lesson and every answer choice in all 31 catalog courses.
-The complete repository run is **1,287/1,301 passing**. All 14 failures are outside the North Carolina
-workstream: nine require California filled-form PDF artifacts, four require the California instructional
-volume/page-count artifact, and one requires California SB 1495 traceability regeneration. North
-Carolina introduces no failure in that run; do not describe the complete repository as green until
-those California build artifacts exist and regenerate cleanly.
+The September 7 Module NC-13 checkpoint is **131/131 focused North Carolina, source-integrity and
+all-course free-practice tests passing**, including every lesson and every answer choice in all 31
+catalog courses. With the bundled Python runtime on `PATH`, the complete repository run is
+**1,304/1,304 passing**. The same run under the host's bare `python3` fails PDF-reading tests because
+that interpreter lacks `pypdf`; this is an environment-path failure, not a course result.
 
 PDF extraction needs Python with `pypdf`; set `NC_PYTHON` to that interpreter when it is not `python3`.
 The branch was first pushed at commit `748a8bbde4adcaa39ba325c8fb6235bfd6887d50`; the remote branch
-currently contains work through Module NC-05. Modules NC-06 through NC-11 remain local because the
+currently contains work through Module NC-05. Modules NC-06 through NC-13 remain local because the
 existing external-data authorization names Texas, Florida and Michigan but not North Carolina. Do not
 push North Carolina repository data without explicit North Carolina authorization. The strict
 `--require-source-capture` command
 intentionally exits 1 while sources are incomplete;
 the normal command checks structure and reports source failures without claiming a lock. These are
 offline as-of-capture checks; re-fetch before filing. Current focused tests and complete repository
-test count are recorded after the Module NC-12 validation run.
+test count are recorded after the Module NC-13 validation run.

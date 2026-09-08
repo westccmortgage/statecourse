@@ -600,6 +600,29 @@ Complete federal statutes, all agency underwriting/seller-servicer guides and tr
 lender rules were not read in full. Module NC-12 does not use its overview to promise loan eligibility,
 approve a borrower, or decide a live tolerance/referral/assumption issue.
 
+## Module NC-13 reconciliation — current primary text read 2026-09-07
+
+Section XIII was checked against current North Carolina statutes and official appraisal-industry
+publisher materials:
+
+- **G.S. Chapter 93E Article 1 and Chapter 93A Article 6:** appraisal credential, trainee supervision
+  and broker CMA/BPO authority are separate roles. A compliant broker opinion estimates probable
+  selling or leasing price; it is not an appraisal and it cannot be the primary basis for mortgage
+  origination value.
+- **The Appraisal Foundation:** the Foundation was created in 1987, before FIRREA; FIRREA later
+  authorized the Foundation's standards/qualifications role. USPAP is a standards publication, not an
+  appraisal form.
+- **Fannie Mae UAD 3.6 materials:** the broad-production window, November 2, 2026 new-submission
+  mandate and May 3, 2027 legacy-revision end are stated as dated transition facts. The fixed legacy
+  Form 1004 is distinguished from the dynamic UAD 3.6 URAR.
+- **Official completed SF5 sample:** the publisher cover, all nineteen report pages, seven legacy Form
+  1004 pages and one timeline page are retained, hashed, rendered and visually reviewed. The completed
+  report supplies the Section XIII comparable-adjustment and reconciliation activities.
+
+The full copyrighted USPAP publication, North Carolina Appraisal Board rules and complete GSE seller/
+servicer guides were not read in full. Module NC-13 preserves those limits and requires a fresh
+transition check before delivery; the completed URAR activity itself is no longer open.
+
 ### Original curriculum gaps — current Phase 0 disposition
 
 Named explicitly, because an unnamed gap becomes an invented fact. **The North Carolina gap list is
@@ -608,13 +631,14 @@ documents rather than a substitute for them.**
 
 - **21 NCAC Chapter 58, Subchapters A and H:** Phase 0 inspected the current official indexed OAH
   text for the controlling applicant, provider, instructor, course, distance, reporting, records and
-  renewal rules. Modules NC-01, NC-02, and NC-08 through NC-12 were reconciled on 2026-09-07 to their applicable
+  renewal rules. Modules NC-01, NC-02, and NC-08 through NC-13 were reconciled on 2026-09-07 to their applicable
   applicant, other-jurisdiction, supervision, BIC, compensation, agency, advertising, document-delivery,
   records, offer-form, trust-money and closing rules. The remaining modules still need topic-level reconciliation, and the official PDF
   bytes still need a filing-date integrity lock.
 - **NCGS Chapter 93A:** Phase 0 inspected the current official General Assembly text for §§ 93A-4 and
   93A-6 and Article 3. Modules NC-01, NC-05, NC-07, NC-10 and NC-11 were reconciled to their applicable
-  provisions on 2026-09-07. Module NC-09 was separately reconciled to current federal fair-housing,
+  provisions on 2026-09-07, and Module NC-13 was reconciled to the broker-opinion provisions in
+  Article 6. Module NC-09 was separately reconciled to current federal fair-housing,
   civil-rights, accessibility, telemarketing and antitrust authorities; the other topic-level
   reconciliations remain open.
 - **NCGS Chapter 105 and G.S. 159-13:** Module NC-04's current appraisal, assessment, reappraisal,

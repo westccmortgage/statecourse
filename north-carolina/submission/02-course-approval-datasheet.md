@@ -12,7 +12,7 @@
 | education director name/signature | provider datasheet | not designated/signed |
 | provider number | filing index | provider certification absent |
 | credit hours | course engine/timing report | actual timing fails |
-| subject matter | course guide + 16 modules | required materials unreconciled |
+| subject matter | course guide + 16 modules | Modules 01-13 reconciled; later modules and remaining source boundaries require final review |
 | course owner | StateCourse LLC, subject to documentary confirmation | ownership proof/permission |
 | prospective instructors | instructor dossier | no approved instructor |
 | final-exam proctoring | distance control plan | vendor/workflow not selected or tested |
@@ -21,13 +21,13 @@
 | topic learning objectives | module files/course guide | map requires final review |
 | syllabus | course guide and regulator syllabus mapping | drafted |
 | methods/aids | course guide | media/aids inventory incomplete |
-| all student materials | curriculum + required artifacts | major gaps |
+| all student materials | curriculum + required artifacts | completed Module 12 settlement forms and Module 13 appraisal exhibits retained; other prescribed form/manual gaps remain |
 | full course for review | LMS reviewer account | not deployed/verified |
 | attendance method/records | distance control plan | production evidence missing |
 | hardware/software | PPD/control plan | exact supported matrix missing |
 | technical support | PPD/control plan | contact/SLA missing |
 | reviewer hardware/software | control plan | access package missing |
-| 225-wpm/media time outline | timing report | upper bound 289.77 actual minutes of source text vs 3,600 required instruction minutes; student time unvalidated |
+| 225-wpm/media time outline | timing report | upper bound 295.87 actual minutes of source text vs 3,600 required instruction minutes; student time unvalidated |
 
 The course may not be offered, advertised, or represented as approved or potentially approved before
 written approval. Even after provider certification, course approval and self-paced delivery approval

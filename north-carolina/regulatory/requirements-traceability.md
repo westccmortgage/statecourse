@@ -74,6 +74,11 @@ Claim IDs resolve to `config/north-carolina/regulatory-manifest.mjs`.
 | current federal loan-program boundaries | HUD, VA and USDA official current pages | NC-C74 | Module NC-12 program comparison | agency names, VA assumption and USDA direct/guaranteed distinctions reconciled |
 | secondary-market entity classification | FHFA and Ginnie Mae official pages | NC-C75 | Module NC-12 secondary market | Fannie/Freddie GSEs distinguished from Ginnie government corporation |
 | LE/CD/HUD-1/ALTA Required Activities | CFPB and ALTA official repositories; local page reviews | NC-C76 | Module NC-12 Required Activities | four authentic artifacts retained; eighteen pages reviewed |
+| NC appraiser credential and broker CMA/BPO boundary | G.S. 93E-1-2.1 through -1-4; G.S. 93A-82 through -83 | NC-C77 | Module NC-13; assessment bank | appraisal, trainee and broker-opinion roles separated; lender-only shortcut removed |
+| USPAP identity and FIRREA history | Appraisal Foundation official history and USPAP pages | NC-C78 | Module NC-13 | USPAP is not called a form; Foundation/FIRREA sequence corrected |
+| UAD 3.6 transition dates | Fannie Mae May 5, 2026 timeline | NC-C79 | Module NC-13; delivery-date source gate | dual-production and mandate/legacy-revision dates stated with recheck warning |
+| completed URAR and reconciliation activities | Fannie Mae official SF5 sample; local all-page review | NC-C80 | Module NC-13 Required Activities | exact 20-page extraction retained; all pages reviewed; reconciliation located and taught |
+| listing/pending versus settled-sale evidence | Fannie Mae official SF5 report | NC-C81 | Module NC-13 comparison and assessment | listing/pending evidence separated from closed-sale comparison grid; five-sale sample preserved |
 
 ## Release rule
 
