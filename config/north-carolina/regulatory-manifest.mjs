@@ -1,15 +1,24 @@
 /** North Carolina Phase 0 evidence index. This is not an approval claim. */
 export const NC_CONTROL_DATE = "2026-09-07";
 const NC_INDEX_DATE = "2026-09-04";
-export const NC_MANIFEST_VERSION = "NC-PHASE0-2026-09-07-v20";
+export const NC_MANIFEST_VERSION = "NC-PHASE0-2026-09-07-v21";
 export const NC_CAPTURE_LOG = "north-carolina/regulatory/captures/2026-09-06/capture-log.json";
 
 const oah = (file) => `https://reports.oah.state.nc.us/ncac/title%2021%20-%20occupational%20licensing%20boards%20and%20commissions/chapter%2058%20-%20real%20estate%20commission/${file}`;
+const NCREC_RULEBOOK_URL = "https://www.ncrec.gov/Pdfs/Rules/NCRECLawAndRules.pdf";
+const NCREC_RULE_CHANGES_2026_URL = "https://www.ncrec.gov/Pdfs/Rules/ApprovedRulesEffectiveAprilAndJuly2026.pdf";
+const NC_2026_RULE_CHANGE_IDS = new Set([
+  "NC-RULE-58A-.0112",
+  "NC-RULE-58A-.0302",
+  "NC-RULE-58H-.0101"
+]);
 const indexedPdf = Object.freeze({ publisherConfirmed: true, contentAnchorConfirmed: true, transportObservation: "Official indexed text is evidence of the indexed version only. Actual capture/identity/page review is independently checked against NC_CAPTURE_LOG.", localBytesRetained: false, sha256: null, textLayerComparedToRender: false, ocrComparedToTextLayer: null, releaseEffect: "Current-byte and relevant-page review required before filing; OCR only if the digital text is missing or disputed." });
 const officialHtml = Object.freeze({ publisherConfirmed: true, contentAnchorConfirmed: true, transportObservation: "Official HTML title and content anchors inspected through the search index.", localBytesRetained: false, sha256: null, textLayerComparedToRender: null, ocrComparedToTextLayer: null, releaseEffect: "re-open and date-stamp at filing" });
 const protectedPortal = Object.freeze({ publisherConfirmed: true, contentAnchorConfirmed: true, transportObservation: "Official route confirmed; live fields require an authenticated or JavaScript session.", localBytesRetained: false, sha256: null, textLayerComparedToRender: null, ocrComparedToTextLayer: null, releaseEffect: "verify live fields, revision, and charges before submission" });
 const retainedNcrecPdf = (sha256, pageCount, observation) => Object.freeze({ publisherConfirmed: true, contentAnchorConfirmed: true, transportObservation: `Official NCREC PDF retained at the publisher route; ${pageCount} page${pageCount === 1 ? "" : "s"} rendered and visually checked. ${observation}`, localBytesRetained: true, sha256, textLayerComparedToRender: true, ocrComparedToTextLayer: false, releaseEffect: "recheck publisher revision at filing and retain any replacement bytes with a new hash and page review" });
 const retainedHudPdf = (sha256, pageCount, observation) => Object.freeze({ publisherConfirmed: true, contentAnchorConfirmed: true, transportObservation: `Official HUD PDF retained at the publisher route; ${pageCount} page${pageCount === 1 ? "" : "s"} rendered and visually checked. ${observation}`, localBytesRetained: true, sha256, textLayerComparedToRender: true, ocrComparedToTextLayer: false, releaseEffect: "recheck the HUD publisher route and policy status at filing; preserve statutes and regulations as controlling law" });
+const retainedNcrecRulebook = retainedNcrecPdf("5c55cbd14b43299b42a5110fcb140246840205447f1d7b5121f73ec466c2edec", 126, "January 2026 NCREC License Law and Commission Rules compilation; use together with the retained official April/July 2026 rule-change notice.");
+const retainedNcrecRuleChanges2026 = retainedNcrecPdf("d4e69417fe9dc79ea9e6c995ab486c6c939af87429a76a44d537f7dcc3575b88", 13, "Commission-approved April/July 2026 amendments; complete notice and changed rule text reviewed.");
 
 export const NC_SOURCES = Object.freeze([
   { id: "NC-RULE-58H-.0101", authorityClass: "administrative-rule", title: "21 NCAC 58H .0101 — Definitions", url: oah("chapter%2058%20rules.pdf"), effectiveOrRevisionDate: "amended effective 2026-07-01", retrievedOn: "2026-09-06 (official indexed text; direct PDF timed out)", pinpoint: "58H .0101(7)", evidence: "An instructional hour consists of 50 minutes of instruction and 10 minutes of break time; apply the same definition when converting the syllabus allocation to minutes.", supersessionCheck: "Official current .0101 indexed text rechecked against full Chapter 58, including July 2026 history; PDF byte capture remains incomplete.", verification: indexedPdf },
@@ -174,7 +183,24 @@ export const NC_SOURCES = Object.freeze([
   { id: "NC-NCREC-SUBDIVISIONS-QA-2019", authorityClass: "regulator-guidance", title: "NCREC — Questions and Answers on: Residential Subdivisions and Planned Communities", url: "https://www.ncrec.gov/Brochures/SubdivisionsBrochure.pdf", effectiveOrRevisionDate: "REC 3.49 11/1/19", retrievedOn: NC_CONTROL_DATE, pinpoint: "complete two-page/six-panel brochure", evidence: "Explains HOA and restrictive-covenant context, preliminary/final plat contracts, licensing, road ownership/maintenance and common areas.", supersessionCheck: "Current NCREC Publications index still points to the 2019 edition; current Chapters 47F, 136 and 160D control wherever later law or the brochure differs. Official brochure bytes, official text-only companion, extracted text and all page renders retained.", verification: retainedNcrecPdf("e3d3abcf2ffcf998ecfdae3278cdd6e6a761a82ec48106859a4ba73403a848e5", 2, "REC 3.49 11/1/19 and both complete brochure pages confirmed.") },
   { id: "GSE-FANNIE-UAD36", authorityClass: "gse-appraisal-data-and-report-publisher", title: "Fannie Mae — Uniform Appraisal Dataset 3.6 and Uniform Residential Appraisal Report resources", url: "https://singlefamily.fanniemae.com/delivering/uniform-mortgage-data-program/uniform-appraisal-dataset", effectiveOrRevisionDate: "current page and May 5, 2026 timeline retrieved 2026-09-07", retrievedOn: NC_CONTROL_DATE, pinpoint: "Broad Production, mandate, retirement, Combined Sample Scenarios and Appendix D-1", evidence: "Official source for the retained completed SF5 URAR sample and transition timeline; broad production permits 2.6 or 3.6 through November 1, 2026 and mandates 3.6 for new submissions beginning November 2, 2026.", supersessionCheck: "Date-sensitive GSE transition; recheck before course delivery and filing.", verification: officialHtml },
   { id: "GSE-FANNIE-FORMS", authorityClass: "gse-appraisal-form-publisher", title: "Fannie Mae — Selling and Servicing Guide Forms", url: "https://singlefamily.fanniemae.com/selling-servicing-guide-forms", effectiveOrRevisionDate: "current forms page retrieved 2026-09-07", retrievedOn: NC_CONTROL_DATE, pinpoint: "Form 1004 — Uniform Residential Appraisal Report", evidence: "Official source of the retained seven-page legacy Form 1004 used to compare the former fixed reconciliation layout with the dynamic UAD 3.6 URAR.", supersessionCheck: "Legacy form remains transition evidence; current UAD timeline controls when it may be submitted.", verification: officialHtml }
-].map((source) => Object.freeze(source.id === "NC-FORM-SOS-L09" ? { ...source, retrievedOn:NC_CONTROL_DATE, verification:Object.freeze({ ...indexedPdf, localBytesRetained:true, sha256:"0edbf25603a6a0829824672875bbe96c27299fe3a24b2e56a9b70ec48a7b0857", textLayerComparedToRender:true, transportObservation:"HTTP200 application/pdf at same publisher host. All 3 pages visually matched digital text, July2017 footer. Current snapshot/hash validity is independently checked." }) } : source)));
+].map((source) => {
+  if (source.id === "NC-FORM-SOS-L09") {
+    return Object.freeze({ ...source, retrievedOn:NC_CONTROL_DATE, verification:Object.freeze({ ...indexedPdf, localBytesRetained:true, sha256:"0edbf25603a6a0829824672875bbe96c27299fe3a24b2e56a9b70ec48a7b0857", textLayerComparedToRender:true, transportObservation:"HTTP200 application/pdf at same publisher host. All 3 pages visually matched digital text, July2017 footer. Current snapshot/hash validity is independently checked." }) });
+  }
+  if (source.id.startsWith("NC-RULE-58")) {
+    const uses2026Changes = NC_2026_RULE_CHANGE_IDS.has(source.id);
+    return Object.freeze({
+      ...source,
+      url: uses2026Changes ? NCREC_RULE_CHANGES_2026_URL : NCREC_RULEBOOK_URL,
+      retrievedOn: NC_CONTROL_DATE,
+      supersessionCheck: uses2026Changes
+        ? "Official NCREC April/July 2026 approved-rule notice retained and reviewed in full; it supersedes the January 2026 compilation for this rule. Recheck later NCREC rulemaking at filing."
+        : "Official NCREC January 2026 compilation retained and reviewed in full; this source ID is not among the rules changed by the retained April/July 2026 notice. Recheck later NCREC rulemaking at filing.",
+      verification: uses2026Changes ? retainedNcrecRuleChanges2026 : retainedNcrecRulebook
+    });
+  }
+  return Object.freeze(source);
+}));
 
 export const NC_CLAIMS = Object.freeze([
   { id: "NC-C01", status: "confirmed", statement: "StateCourse must hold NCREC education-provider certification before operating or offering online NC credit education.", sourceIds: ["NC-STAT-93A-ARTICLE3", "NC-RULE-58H-.0202"], pinpoint: "G.S. 93A-34(a); 21 NCAC 58H .0202", evidence: "Certification precedes operation, including online delivery.", reliedOnBy: ["filing-index", "release-gate"] },
@@ -282,7 +308,6 @@ export const NC_CLAIMS = Object.freeze([
 ].map((claim) => Object.freeze({ ...claim, sourceIds: Object.freeze(claim.sourceIds), reliedOnBy: Object.freeze(claim.reliedOnBy) })));
 
 export const NC_BLOCKERS = Object.freeze([
-  { id: "NC-B01", owner: "StateCourse", blocker: "PDF capture remains incomplete: thirteen of 48 PDF source entries have byte-verified snapshots and all thirteen have all-page review; OAH rule PDFs still time out. Capture validator requires authentic bytes, hashes, identity, title/revision and all-page review. OCR only if digital text is missing/disputed." },
   { id: "NC-B02", owner: "NCREC", blocker: "StateCourse does not have NCREC education-provider certification." },
   { id: "NC-B03", owner: "NCREC", blocker: "The 75-hour self-paced distance course has no NCREC written course approval." },
   { id: "NC-B04", owner: "User + NCREC", blocker: "Proposed instructor is not yet a nonprovisional NC broker or an NCREC-approved instructor." },

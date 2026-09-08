@@ -6,8 +6,16 @@ import { resolve } from 'node:path';
 export const sha256 = value => createHash('sha256').update(value).digest('hex');
 const normalize = value => value.toLowerCase().replace(/\s+/g, ' ').trim();
 export function identityMarkers(source) {
+  if (source.id === 'NC-RULE-58B-.0400-.0600' && /ncrec\.gov\/Pdfs\/Rules\//i.test(source.url)) {
+    return ['B .0401', 'B .0601'];
+  }
   const match = source.id.match(/^NC-RULE-(58[A-Z])-([.\d-]+)$/);
-  if (match) return match[2].split('-').map(number => `21 NCAC ${match[1]} ${number}`);
+  if (match) {
+    const publisherPrefix = /ncrec\.gov\/Pdfs\/Rules\//i.test(source.url)
+      ? match[1].slice(-1)
+      : `21 NCAC ${match[1]}`;
+    return match[2].split('-').map(number => `${publisherPrefix} ${number}`);
+  }
   return ({
     'NC-SYLLABUS-PRE-2026': ['Broker Prelicensing Course', 'SYLLABUS', 'May 2026'],
     'NC-GUIDE-RELINC-2026': ['Real Estate Licensing in North Carolina', 'April 2026'],

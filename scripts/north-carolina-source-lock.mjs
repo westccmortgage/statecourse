@@ -108,7 +108,7 @@ for (const claim of NC_CLAIMS) {
 for (const blocker of NC_BLOCKERS) {
   if (!/^NC-B\d{2}$/.test(blocker.id) || !blocker.owner || !blocker.blocker) fail(errors, `invalid blocker ${JSON.stringify(blocker)}`);
 }
-for (const blockerId of ["NC-B01", "NC-B02", "NC-B03", "NC-B04", "NC-B05", "NC-B06", "NC-B07", "NC-B08", "NC-B09", "NC-B10", "NC-B11", "NC-B12"]) {
+for (const blockerId of ["NC-B02", "NC-B03", "NC-B04", "NC-B05", "NC-B06", "NC-B07", "NC-B08", "NC-B09", "NC-B10", "NC-B11", "NC-B12"]) {
   if (!NC_BLOCKERS.some((item) => item.id === blockerId)) fail(errors, `missing blocker ${blockerId}`);
 }
 

@@ -8,7 +8,8 @@ audio/video duration.
 syllabus assigns three further hours to the final examination inside the 75-hour course total.
 The examination and break allocation must have separate ledgers; breaks cannot be counted as text
 or media instruction. The previous 4,320-minute target incorrectly treated every hour as 60 minutes
-of instruction. Official .0101 indexed text was rechecked September 6; direct OAH PDF capture failed.
+of instruction. The official July 2026 amendment to .0101 is retained in NCREC's approved-rule notice,
+and all 13 pages of that notice were reviewed on September 7.
 
 ## Baseline
 
