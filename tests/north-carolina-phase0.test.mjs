@@ -11,10 +11,21 @@ const hash = (path) => createHash("sha256").update(readFileSync(new URL(`../${pa
 
 test("manifest has a dated stable identity and only allowed claim statuses", () => {
   assert.equal(NC_CONTROL_DATE, "2026-09-07");
-  assert.equal(NC_MANIFEST_VERSION, "NC-PHASE0-2026-09-07-v17");
+  assert.equal(NC_MANIFEST_VERSION, "NC-PHASE0-2026-09-07-v18");
   assert.equal(NC_SOURCES.length, 162);
   assert.equal(NC_CLAIMS.length, 102);
   for (const claim of NC_CLAIMS) assert.ok(["confirmed", "interpretation", "needs-regulator-confirmation"].includes(claim.status), claim.id);
+});
+
+test("the current joint EPA/HUD lead fact sheet is retained and reviewed on every page", () => {
+  const reviewPath = "north-carolina/regulatory/captures/2026-09-07/module-05-lead/page-reviews.json";
+  const review = JSON.parse(read(reviewPath));
+  assert.equal(review.reviewedOn, NC_CONTROL_DATE);
+  assert.equal(review.id, "FED-EPA-HUD-LEAD-FACTSHEET");
+  assert.equal(review.pageCount, 2);
+  assert.equal(review.pages.length, 2);
+  assert.equal(hash(review.sourceFile), review.pdfSha256);
+  for (const page of review.pages) assert.equal(hash(page.renderPath), page.sha256, `lead fact sheet page ${page.number}`);
 });
 
 test("RELINC and L-09 evidence binds every reviewed page to its current source PDF", () => {

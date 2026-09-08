@@ -1,7 +1,7 @@
 # North Carolina official-source ledger
 
 **Control date:** 2026-09-07
-**Manifest:** `NC-PHASE0-2026-09-07-v17`
+**Manifest:** `NC-PHASE0-2026-09-07-v18`
 **Regulatory status:** Not approved. Enrollment and credit delivery are closed.
 
 The machine-readable controlling record is
@@ -45,7 +45,7 @@ No commercial school, law-firm summary, aggregator, or search snippet is control
 | Flood probability | FEMA | one-percent annual-chance definition | [FEMA glossary](https://training.fema.gov/is/course/glossary.aspx) |
 | C.L.U.E. report | CFPB | one free report every 12 months | [CFPB company listing](https://www.consumerfinance.gov/consumer-tools/credit-reports-and-scores/consumer-reporting-companies/companies-list/comprehensive-loss-underwriting-exchange/) |
 | Broker material-fact duty | G.S. 93A-6(a)(1); 21 NCAC 58A .0114(c) | disciplinary ground; separate broker duty | [§93A-6](https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_93A/GS_93A-6.html), [OAH .0114](https://reports.oah.state.nc.us/ncac/title%2021%20-%20occupational%20licensing%20boards%20and%20commissions/chapter%2058%20-%20real%20estate%20commission/subchapter%20a/21%20ncac%2058a%20.0114.pdf) |
-| Federal lead disclosure | 42 U.S.C. §4852d; 40 CFR part 745 subpart F | coverage, sequence, buyer opportunity, agent duty, retention | [U.S. Code](https://uscode.house.gov/view.xhtml?edition=prelim&num=0&req=granuleid%3AUSC-prelim-title42-section4852d), [eCFR](https://www.ecfr.gov/current/title-40/chapter-I/subchapter-R/part-745/subpart-F), [HUD/EPA fact sheet](https://www.hud.gov/sites/dfiles/HH/documents/Lead_Based_Paint_Disclosure_Rule_FactSheet.pdf) |
+| Federal lead disclosure | 42 U.S.C. §4852d; 40 CFR part 745 subpart F | coverage, sequence, buyer opportunity, agent duty, retention | [U.S. Code](https://uscode.house.gov/view.xhtml?edition=prelim&num=0&req=granuleid%3AUSC-prelim-title42-section4852d), [eCFR](https://www.ecfr.gov/current/title-40/chapter-I/subchapter-R/part-745/subpart-F), [EPA/HUD fact sheet](https://www.epa.gov/system/files/documents/2024-09/lead-disclosure-rule-fact-sheet.pdf) |
 | North Carolina lead-work program | G.S. Chapter 130A Article 19A; §130A-22(b3) | certification, permits, no universal work mandate, current state penalty ceiling | [Article 19A](https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/ByArticle/Chapter_130A/Article_19A.html), [§130A-22](https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_130A/GS_130A-22.html) |
 | Radon and asbestos | EPA; NC DHHS | current mitigation recommendation, condition/disturbance risk, accredited-professional route | [EPA radon](https://www.epa.gov/radon/what-epas-action-level-radon-and-what-does-it-mean), [EPA asbestos](https://www.epa.gov/asbestos/what-are-health-risks-if-i-have-asbestos-my-home-building-apartment-or-school), [NC DHHS asbestos](https://epi.dph.ncdhhs.gov/asbestos/ahmp.html) |
 | CERCLA and environmental inquiry | EPA | current-owner exposure, landowner protections, AAI before acquisition | [Liability protections](https://www.epa.gov/enforcement/superfund-landowner-liability-protections), [All Appropriate Inquiries](https://www.epa.gov/brownfields/brownfields-all-appropriate-inquiries) |
@@ -122,21 +122,24 @@ checked against digital text. Module NC-09 then added the April 2026 HUD neighbo
 and September 2025 HUD FHEO withdrawal notice, whose 11 pages were likewise retained and reviewed.
 The April 2026 RELINC handbook was then re-fetched without byte changes and all 36 pages were rendered
 and reviewed; Form L-09 was likewise re-fetched unchanged and its three-page review revalidated.
-Ten source PDFs now have verified bytes and all ten have current all-page review, covering 89 pages.
+The dead September 2024 HUD lead-fact-sheet URL was then superseded by the current EPA-hosted joint
+EPA/HUD January 2025 fact sheet; both pages were retained and reviewed. Eleven source PDFs now have
+verified bytes and all eleven have current all-page review, covering 91 pages.
 `captures/2026-09-06/capture-log.json`
 preserves requests, final URL where a
 response arrived, content type, status, hashes and exact failures; `page-reviews.json` binds review
 to the PDF and render hashes. Sources remain **INCOMPLETE** and `NC-B01` remains open.
 
 On September 7, Modules NC-02 and NC-05 added current official standalone-rule endpoints for 58A
-.0109, .0114, .0120, and .0506, plus the HUD/EPA lead fact sheet. They were inspected through official
-publisher pages but were not part of the September 6 byte-capture attempt. The expanded ledger therefore
+.0109, .0114, .0120, and .0506. Those rules were inspected through official publisher indexes but were
+not part of the September 6 byte-capture attempt. The former HUD lead-fact-sheet URL returned 404; the
+current EPA-hosted replacement is now retained as described above. The expanded ledger therefore
 later expanded again during the Module NC-10 pass to include Rules .0111 and .0115-.0118, .1601 and
 .1808 plus the LLCR route, and the Module NC-11 pass added Rule .0112. Module NC-15 added four public
 NCREC PDFs and the 58B rule range; the later Module NC-08/15 brochure pass added two more NCREC PDFs.
 The machine ledger now contains 48 PDF source entries across 45 unique URLs. The global source state
 remains **INCOMPLETE** because most rule/source PDFs still lack current captured bytes and review; the
-ten reviewed artifacts do not conceal that broader gap.
+eleven reviewed artifacts do not conceal that broader gap.
 
 Module NC-04 was reconciled on September 7 to current official property-tax and excise-tax statutes,
 26 U.S.C. §121, FEMA and CFPB guidance. That review found a real syllabus conflict: the fourth-year

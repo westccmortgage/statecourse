@@ -1,0 +1,23 @@
+{
+  "reviewedOn": "2026-09-07",
+  "id": "FED-EPA-HUD-LEAD-FACTSHEET",
+  "title": "Lead-Based Paint Disclosure Rule Fact Sheet",
+  "sourceFile": "north-carolina/regulatory/captures/2026-09-07/module-05-lead/lead-disclosure-rule-fact-sheet.pdf",
+  "pdfSha256": "3984b7a333b243c17a2d68b7d82652b87f7235b240e734941f84f452e7d75b96",
+  "pageCount": 2,
+  "revisionObservation": "EPA-747-F-25-001, January 2025",
+  "reviewObservation": "Both pages are legible and complete without missing text, clipping or overlap. Page 1 contains the joint EPA/HUD identity, summary, coverage and exclusions. Page 2 contains the disclosure sequence, inspection opportunity, three-year retention, electronic-delivery conditions, nonrequirements, enforcement and official resources.",
+  "pages": [
+    {
+      "number": 1,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/module-05-lead/renders/lead-1.png",
+      "sha256": "821cf71f4b46158f2b3e9c2fcef2e0fef90ca0d93f1fc784fc478407ffa08e5f"
+    },
+    {
+      "number": 2,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/module-05-lead/renders/lead-2.png",
+      "sha256": "9af2b3674ee49627bb58ca444f0bccf06bb498351193264cbf716f8029375077"
+    }
+  ],
+  "ocrStatus": "NOT_REQUIRED_TEXT_LAYER_MATCHED_RENDER"
+}

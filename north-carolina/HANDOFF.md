@@ -140,7 +140,7 @@ ledger actually demonstrate the required time.
 
 | ID | Owner | Blocker |
 |---|---|---|
-| NC-B01 | StateCourse | Partial PDF capture: 10/48 PDF entries have byte-verified snapshots and all ten have all-page review; the remaining source ledger is incomplete |
+| NC-B01 | StateCourse | Partial PDF capture: 11/48 PDF entries have byte-verified snapshots and all eleven have all-page review; the remaining source ledger is incomplete |
 | NC-B02 | NCREC | Provider certification absent |
 | NC-B03 | NCREC | Written self-paced course approval absent |
 | NC-B04 | user + NCREC | Nonprovisional NC broker and instructor approval absent |
@@ -189,18 +189,18 @@ NC_PYTHON=/path/to/python-with-pypdf node scripts/north-carolina-source-lock.mjs
 
 Structure reports **PASS**, source verification **INCOMPLETE**, and filing **NO-GO**. The capture log
 records exact failures and does not turn search-index text into downloaded evidence. The expanded
-ledger contains 48 PDF source entries across 45 unique URLs; ten entries retain byte-verified snapshots
-and all ten have current all-page review, covering 89 pages. The remaining entries are incomplete.
+ledger contains 48 PDF source entries across 45 unique URLs; eleven entries retain byte-verified snapshots
+and all eleven have current all-page review, covering 91 pages. The remaining entries are incomplete.
 Scripts verify actual bytes and content identity and reject a wrong PDF,
 soft-404, missing snapshot, stale hash, foreign redirect, selective-page review, and missing/stale page review.
 The Module NC-13 activity capture is a separate retained teaching-evidence set: three reviewed PDFs,
 28 reviewed page renders and the full 302-page publisher archive. It does not make the unrelated
 source-ledger capture complete.
 
-The September 7 RELINC/L-09 checkpoint is **138/138 focused North Carolina, source-integrity and
+The September 7 EPA/HUD lead-source checkpoint is **139/139 focused North Carolina, source-integrity and
 all-course free-practice tests passing**, including every lesson and every answer choice in all 31
 catalog courses. With the bundled Python runtime on `PATH`, the complete repository run is
-**1,311/1,311 passing**. The same run under the host's bare `python3` fails PDF-reading tests because
+**1,312/1,312 passing**. The same run under the host's bare `python3` fails PDF-reading tests because
 that interpreter lacks `pypdf`; this is an environment-path failure, not a course result.
 
 PDF extraction needs Python with `pypdf`; set `NC_PYTHON` to that interpreter when it is not `python3`.
@@ -212,8 +212,9 @@ push North Carolina repository data without explicit North Carolina authorizatio
 intentionally exits 1 while sources are incomplete;
 the normal command checks structure and reports source failures without claiming a lock. These are
 offline as-of-capture checks; re-fetch before filing. Current focused tests and complete repository
-test count are recorded after the RELINC/L-09 all-page validation run. Detailed correction evidence is in
+test count are recorded after the EPA/HUD lead-source validation run. Detailed correction evidence is in
 `north-carolina/submission/14-module-15-correction-audit.md` and
 `north-carolina/submission/15-public-brochure-correction-audit.md`, with the later HUD evidence in
 `north-carolina/submission/16-module-09-hud-capture-audit.md` and the complete RELINC/L-09 review in
-`north-carolina/submission/17-relinc-l09-all-page-audit.md`.
+`north-carolina/submission/17-relinc-l09-all-page-audit.md`. The current lead fact sheet replacement is
+documented in `north-carolina/submission/18-module-05-lead-source-audit.md`.

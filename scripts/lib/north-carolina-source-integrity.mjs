@@ -19,6 +19,7 @@ export function identityMarkers(source) {
     'NC-NCREC-WWREA': ['Working With Real Estate Agents Disclosure', 'This form is not a contract'],
     'NC-NCREC-WWREA-QA-2022': ['Questions and Answers on:', 'WORKING WITH', 'REAL ESTATE', 'AGENTS', 'REC 3.45', '1/3/22'],
     'NC-NCREC-SUBDIVISIONS-QA-2019': ['Questions and Answers on:', 'RESIDENTIAL', 'SUBDIVISIONS', 'PLANNED COMMUNITIES', 'REC 3.49', '11/1/19'],
+    'FED-EPA-HUD-LEAD-FACTSHEET': ['Lead-Based Paint Disclosure Rule Fact Sheet', 'EPA-747-F-25-001', 'January 2025'],
     'FED-HUD-NEIGHBORHOOD-INFO-2026': ['U.S. DEPARTMENT OF HOUSING AND URBAN DEVELOPMENT', 'April 24, 2026', 'Sharing Crime And School Data', 'Craig W. Trainor'],
     'FED-HUD-WITHDRAWAL-2025': ['Notice of the Withdrawal of FHEO Guidance Documents', 'September 17, 2025', 'GUIDANCE WITHDRAWN', 'John Gibbs']
   })[source.id] || [];

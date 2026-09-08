@@ -1,8 +1,45 @@
 {
   "controlDate": "2026-09-07",
-  "generatedAt": "2026-09-08T01:26:17.209Z",
-  "uniquePdfUrls": 23,
+  "generatedAt": "2026-09-08T03:13:51.000Z",
+  "uniquePdfUrls": 28,
   "entries": [
+    {
+      "sourceIds": [
+        "FED-EPA-HUD-LEAD-FACTSHEET"
+      ],
+      "requestedUrl": "https://www.epa.gov/system/files/documents/2024-09/lead-disclosure-rule-fact-sheet.pdf",
+      "attemptedAt": "2026-09-07T20:13:51-07:00",
+      "status": "VERIFIED_AS_OF_CAPTURE",
+      "snapshotPath": "north-carolina/regulatory/captures/2026-09-07/module-05-lead/lead-disclosure-rule-fact-sheet.pdf",
+      "sha256": "3984b7a333b243c17a2d68b7d82652b87f7235b240e734941f84f452e7d75b96",
+      "pdfReview": {
+        "status": "REVIEWED",
+        "reviewedPdfSha256": "3984b7a333b243c17a2d68b7d82652b87f7235b240e734941f84f452e7d75b96",
+        "title": "Lead-Based Paint Disclosure Rule Fact Sheet",
+        "revisionObservation": "EPA-747-F-25-001, January 2025; both pages reviewed",
+        "pages": [
+          { "number": 1, "renderPath": "north-carolina/regulatory/captures/2026-09-07/module-05-lead/renders/lead-1.png", "sha256": "821cf71f4b46158f2b3e9c2fcef2e0fef90ca0d93f1fc784fc478407ffa08e5f" },
+          { "number": 2, "renderPath": "north-carolina/regulatory/captures/2026-09-07/module-05-lead/renders/lead-2.png", "sha256": "9af2b3674ee49627bb58ca444f0bccf06bb498351193264cbf716f8029375077" }
+        ],
+        "ocrStatus": "NOT_REQUIRED_TEXT_LAYER_MATCHED_RENDER"
+      },
+      "httpStatus": 200,
+      "finalUrl": "https://www.epa.gov/system/files/documents/2024-09/lead-disclosure-rule-fact-sheet.pdf",
+      "contentType": "application/pdf",
+      "receivedBytes": 190762,
+      "responseSha256": "3984b7a333b243c17a2d68b7d82652b87f7235b240e734941f84f452e7d75b96",
+      "pdfPages": 2,
+      "pdfMetadata": {
+        "/CreationDate": "D:20250115161426-05'00'",
+        "/Creator": "Adobe InDesign 20.0 (Windows)",
+        "/ModDate": "D:20250115163738-05'00'",
+        "/Producer": "Adobe PDF Library 17.0",
+        "/Title": "Lead-Based Paint Disclsoure Rule Fact Sheet",
+        "/Trapped": "/False"
+      },
+      "textPath": "north-carolina/regulatory/captures/2026-09-07/module-05-lead/lead-disclosure-rule-fact-sheet.txt",
+      "textSha256": "c06a57be7e693250adebaa82c6d1497c52aca2b65ec10b31535c63bc487a0ee2"
+    },
     {
       "sourceIds": [
         "NC-FORM-SOS-L09"
