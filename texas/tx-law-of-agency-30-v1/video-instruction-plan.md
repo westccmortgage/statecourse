@@ -4,7 +4,10 @@
 **Course approval form:** LOA-1, revision 09/11/2024 — 12 topics, 57 units, 1,500 prescribed minutes.
 Transcribed at `config/texas/law-of-agency-course-form.mjs`; held at `texas/trec-sources/LOA-1.pdf`.
 **Plan date:** 2026-08-30
-**Plan revision:** **v2 — 2026-08-30.** This revision supersedes plan v1, which is the byte-state
+**Plan revision:** **v3 — 2026-09-07.** Plan v3 carries the validated Texas `screenMedia` integration
+hook added after the video packages were frozen at v2. It changes no narration, storyboard, caption
+cue, coordinate or placement, and activates no media because no final render exists. This plan still
+supersedes plan v1, which is the byte-state
 sha256 `7ca7234853320ad96275c9a6c7e69a16e0a2ec2b63b6de2fd7ed62ed7f88e403` (29,239 bytes).
 **Plan v1 is SUPERSEDED.** It was correct when written and is wrong in three particulars now: its
 three durations (which its own caption blocks contradicted), its statement that the Law of Agency
@@ -18,7 +21,7 @@ this file and the three production files, and from nothing else. v1's hash is pr
 they hold.
 
 **Freeze:** this plan and everything a render depends on are hashed by
-**`LOA-VIDEO-PLAN-FREEZE-2026-08-30-v2`** (`texas/tx-law-of-agency-30-v1/video-plan-freeze.json`,
+**`LOA-VIDEO-PLAN-FREEZE-2026-09-07-v3`** (`texas/tx-law-of-agency-30-v1/video-plan-freeze.json`,
 written by `scripts/freeze-loa-video-plan.mjs`). The curriculum freeze hashes *that artifact*, not
 this file — so correcting a video no longer requires breaking a curriculum freeze. See §12.
 
@@ -26,9 +29,9 @@ this file — so correcting a video no longer requires breaking a curriculum fre
 
 | Layer | Status |
 |---|---|
-| Editorial and legal package (script, prompt, storyboard, transcript, captions, coordinates, poster spec) | **READY** at `LOA-VIDEO-PLAN-FREEZE-2026-08-30-v2` |
+| Editorial and legal package (script, prompt, storyboard, transcript, captions, coordinates, poster spec) | **READY** at `LOA-VIDEO-PLAN-FREEZE-2026-09-07-v3` |
 | Rendered MP4 / shipping VTT / poster assets | **PENDING** — nothing is rendered |
-| `screenMedia` integration support in the Texas generator | **PENDING** — the hook does not exist |
+| `screenMedia` integration support in the Texas generator | **READY** — hook and eight acceptance tests pass; no media is activated |
 | Course placement activation | **NOT ACTIVE** — no block map references any video |
 
 "Production-ready" is not a status this plan uses. See §6.
@@ -385,8 +388,8 @@ property of the generated screen shape, not a convention anyone must remember to
 
 **Nothing is wired.** The block maps are generated files carrying "Do not edit by hand — regenerate",
 they are owned elsewhere, and no `videos` or `screenMedia` entry for any of these three videos exists
-in any of them. This plan wires nothing, and the hook that would let it be wired does not exist —
-see §10.3.
+in any of them. This plan wires nothing. The validated hook exists, but it refuses activation until
+all final assets and review approvals exist — see §10.3.
 
 ---
 
@@ -398,9 +401,9 @@ see §10.3.
 
 | Layer | Status | What that means |
 |---|---|---|
-| **Editorial and legal package** | **READY** | Script, HeyGen prompt, storyboard and scene table, clean transcript, caption cue text, crop coordinates, highlight coordinates, duration metadata and poster specification are complete, source-verified against the held form and statute, internally consistent, and frozen at `LOA-VIDEO-PLAN-FREEZE-2026-08-30-v2`. This layer became READY at that freeze and not before it. |
+| **Editorial and legal package** | **READY** | Script, HeyGen prompt, storyboard and scene table, clean transcript, caption cue text, crop coordinates, highlight coordinates, duration metadata and poster specification are complete, source-verified against the held form and statute, internally consistent, and frozen at `LOA-VIDEO-PLAN-FREEZE-2026-09-07-v3`. |
 | **Rendered MP4 / VTT / poster assets** | **PENDING** | No MP4, no shipping `.vtt`, no `-poster.webp`, no band PNGs, no diagram panels. Nothing has been rendered. |
-| **`screenMedia` integration support** | **PENDING** | `scripts/lib/generate-tx-block-maps.mjs` has no `screenMedia` hook, so there is no supported route to attach a video to a Texas screen. See §10.3. |
+| **`screenMedia` integration support** | **READY** | `scripts/lib/generate-tx-block-maps.mjs` now validates exact placement, optional/non-blocking status, complete assets, measured duration, shipping captions, explicit transcript, assessment separation and completed factual/visual/accessibility/logo-safety reviews before generating any media reference. |
 | **Course placement activation** | **NOT ACTIVE** | No block map references any of these videos. No student-facing surface carries a player, poster, badge, duration, play button or transcript link. |
 
 **The editorial layer being READY says nothing about the other three.** A package that is
@@ -421,7 +424,7 @@ the course references these files. There is no dead player, no nonfunctional pos
 video badge, and no unavailable transcript anywhere.
 
 Each production file carries a `videos: [...]` config entry, commented **NOT ACTIVE**, with an
-explicit instruction not to add it until the MP4, the VTT and the poster all exist and have been
+explicit instruction not to add it until the MP4, the VTT, the poster and the transcript all exist and have been
 verified. Adding it earlier would produce exactly the broken surface this plan forbids.
 
 **Caption files exist on disk — corrected in plan v2.** v1 said the caption files existed only inside
@@ -524,8 +527,8 @@ The three videos share one asset build. Do it once.
    per-video highlights JSON, and run `california/video-production/post-highlights.py`.
 6. **Re-encode** to the series bitrate profile; **build the VTT** from the final render length;
    **extract the poster** from the frame each production file names.
-7. **Only then** attach each production file's media entry to the LOA block map — through the
-   generator's `screenMedia` hook, which must exist by that point (§10.3). **Do not hand-edit a
+7. **Only then** attach each production file's media entry to the LOA block map through the now-built
+   generator `screenMedia` hook (§10.3). **Do not hand-edit a
    generated block map**; its own header forbids it, and a hand edit is erased by the next
    regeneration.
 
@@ -533,7 +536,7 @@ Before step 1 and again after step 6, run:
 
 ```
 node scripts/validate-loa-video-packages.mjs      # eight checks over the canonical package
-node scripts/freeze-loa-video-plan.mjs            # verify LOA-VIDEO-PLAN-FREEZE-2026-08-30-v2
+node scripts/freeze-loa-video-plan.mjs            # verify LOA-VIDEO-PLAN-FREEZE-2026-09-07-v3
 ```
 
 The validator refuses to pass if narration, transcript, captions and prompt have drifted apart, if any
@@ -565,17 +568,16 @@ These are recorded, not resolved. Two of them touch files this plan is not permi
    apparent inconsistency. It is not an inconsistency of law — nothing the videos say contradicts the
    module — but the module's sentence should be revisited when the quotation review releases it.
 
-3. **The Texas block-map generator has no `screenMedia` hook, and that is now the blocking item.**
+3. **RESOLVED 2026-09-07 — the Texas block-map generator now has the validated `screenMedia` hook.**
    *(This item replaces v1's item 3, "the Law of Agency block map does not exist" — that one is
    **RESOLVED**: all twelve maps exist and every placement in §5 is confirmed against them.)*
-   California attaches its videos through `scripts/lib/generate-ca-block-maps.mjs`'s
-   `spec.screenMedia` mechanism, which merges a hand-authored media spec onto a generated screen by id
-   and refuses to generate if the id is unknown. `scripts/lib/generate-tx-block-maps.mjs` has no
-   equivalent, so there is today **no supported route** to attach a video to a Texas screen except
-   hand-editing a generated file whose header forbids it. **Do not hand-edit a generated course
-   file.** That hook is a prerequisite of activation. It is named here and specified — with the test
-   list it must ship with — in the header of `scripts/lib/generate-tx-block-maps.mjs`, where it will
-   be built. It is not built here.
+   `scripts/lib/generate-tx-block-maps.mjs` now merges a hand-authored media spec onto an exact
+   generated instruction-screen id and refuses unknown or retrieval screens. It requires
+   `required:false`, `nonBlocking:true`, a no-assessment review, a measured duration, non-provisional
+   captions, explicit transcript, complete non-empty MP4/poster/VTT/transcript assets and recorded
+   factual, visual, logo-safety and accessibility review before it writes the block map. Eight tests
+   in `tests/texas-video-integration.test.mjs` exercise those refusal paths. The hook remains dormant:
+   the three videos are still unrendered and no course media entry is active.
 
 4. **The Law of Agency retrieval bank does not exist.** Every block map `-s3` screen names a
    `questionId` for a bank that has not been authored. Each production file's §3 records an authoring
@@ -683,7 +685,7 @@ cue timeline, matched scene-to-cue by narration text, and re-derived on every va
 | Poster specification — a frame of a render that does not exist, never composed by hand | each production file's §10; this plan §6 |
 | 50 form strings verified verbatim against the held PDF, 0 mismatches | validator check 6, which re-runs the verification rather than restating its result |
 | Four-layer status, no layer borrowing another's | this plan's header and §6 |
-| `screenMedia` hook named as the blocking item, with its test list | this plan §10.3; `scripts/lib/generate-tx-block-maps.mjs` header |
+| `screenMedia` hook implemented with eight passing refusal/placement/accessibility tests | this plan §10.3; `scripts/lib/generate-tx-block-maps.mjs`; `tests/texas-video-integration.test.mjs` |
 
 ---
 
@@ -700,10 +702,10 @@ The structure now is one level of indirection:
 ```
 scripts/freeze-loa-video-plan.mjs
   └─ writes texas/tx-law-of-agency-30-v1/video-plan-freeze.json
-       id LOA-VIDEO-PLAN-FREEZE-2026-08-30-v2
+       id LOA-VIDEO-PLAN-FREEZE-2026-09-07-v3
        hashes: this plan · the three production files · the three caption .vtt files ·
                the held IABS 1-2 PDF · the source inventory · the three block maps ·
-               the validator · the review addendum
+               the validator · the screenMedia hook tests · the review addendum
 
 scripts/freeze-loa-curriculum.mjs
   └─ writes texas/tx-law-of-agency-30-v1/content-freeze.json

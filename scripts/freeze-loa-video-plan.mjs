@@ -38,7 +38,15 @@ const PROD = path.join(HOME, "video-production");
 const OUT = path.join(HOME, "video-plan-freeze.json");
 
 const COURSE_ID = "tx-law-of-agency-30-v1";
-const FREEZE_ID = "LOA-VIDEO-PLAN-FREEZE-2026-08-30-v2";
+const FREEZE_ID = "LOA-VIDEO-PLAN-FREEZE-2026-09-07-v3";
+
+const PREVIOUS_FREEZE = Object.freeze({
+  freezeId: "LOA-VIDEO-PLAN-FREEZE-2026-08-30-v2",
+  sha256: "bc287901fc2d63b781130d443cd5892e78c1ed64b19106a4fa5d995bf820cd26",
+  bytes: 23170,
+  change:
+    "The Texas screenMedia hook is now implemented with exact placement, optional/non-blocking, complete-asset, shipping-caption, measured-duration, explicit-transcript, assessment-separation and completed-review gates. No video render or placement was activated.",
+});
 
 /**
  * The byte-state this freeze supersedes. Plan v1 was hashed by
@@ -208,7 +216,7 @@ if (!validated.pass) {
 
 /* ── everything a render depends on ──────────────────────────────────────────────────────────── */
 const artifacts = {
-  "video instruction plan (v2, canonical)": hashOf(path.join(HOME, "video-instruction-plan.md")),
+  "video instruction plan (v3, canonical)": hashOf(path.join(HOME, "video-instruction-plan.md")),
 
   "production file — video 1 IABS 1-2 Document Overview": hashOf(path.join(PROD, "iabs-1-2-document-overview.md")),
   "production file — video 2 Representation or Showing Only": hashOf(path.join(PROD, "representation-or-showing-only-2026.md")),
@@ -232,7 +240,8 @@ const artifacts = {
 
   /* The evidence that the package validates is only as stable as the script that produces it. */
   "validator": hashOf(path.join(root, "scripts/validate-loa-video-packages.mjs")),
-  "block-map generator core (where the screenMedia hook will be built)": hashOf(path.join(root, "scripts/lib/generate-tx-block-maps.mjs")),
+  "block-map generator core (screenMedia hook built and validated)": hashOf(path.join(root, "scripts/lib/generate-tx-block-maps.mjs")),
+  "screenMedia hook acceptance tests": hashOf(path.join(root, "tests/texas-video-integration.test.mjs")),
 
   /* Hashed as history, not as instruction. */
   "review addendum (SUPERSEDED — review history, not an operational dependency)": hashOf(path.join(PROD, "production-readiness-addendum.md")),
@@ -247,7 +256,7 @@ const VIDEOS = Object.freeze([
 const freeze = {
   freezeId: FREEZE_ID,
   courseId: COURSE_ID,
-  frozenOn: "2026-08-30",
+  frozenOn: "2026-09-07",
   generatedBy: "scripts/freeze-loa-video-plan.mjs",
   what: "The video instruction plan and every artifact a render of the three Law of Agency videos depends on. This freeze is what scripts/freeze-loa-curriculum.mjs hashes in place of the plan itself, so that correcting a video does not require breaking a curriculum freeze.",
 
@@ -255,11 +264,12 @@ const freeze = {
   status: {
     editorialAndLegalPackage: "READY — at this freeze and not before it. Script, HeyGen prompt, storyboard and scene table, clean transcript, caption cue text, crop coordinates, highlight coordinates, duration metadata and poster specification are complete, source-verified and internally consistent.",
     renderedAssets: "PENDING — no MP4, no shipping .vtt, no -poster.webp, no band PNGs, no diagram panels. Nothing has been rendered.",
-    screenMediaIntegrationSupport: "PENDING — scripts/lib/generate-tx-block-maps.mjs has no screenMedia hook, so there is no supported route to attach a video to a Texas screen. The tests the hook must ship with are recorded in that file's header.",
+    screenMediaIntegrationSupport: "READY — scripts/lib/generate-tx-block-maps.mjs validates exact instruction-screen placement, optional/non-blocking delivery, complete non-empty assets, shipping captions, measured duration, explicit transcript, assessment separation and completed factual/visual/accessibility/logo-safety review. Eight focused tests pass. No media is active.",
     coursePlacementActivation: "NOT ACTIVE — no block map references any of these videos, and no student-facing surface carries a player, poster, badge, duration, play button or transcript link.",
     doNotSay: "'production-ready'. It collapses four layers into one and three of them are not ready.",
   },
 
+  previousFreeze: PREVIOUS_FREEZE,
   supersedes: SUPERSEDES,
   consolidatedCorrections: CONSOLIDATED_CORRECTIONS,
 
@@ -330,4 +340,4 @@ if (process.argv.includes("--write")) {
 }
 
 console.log(`  ${Object.keys(artifacts).length} artifacts · validator ${validated.checks.filter((c) => c.pass).length}/${validated.checks.length} · supersedes plan v1 ${SUPERSEDES.sha256.slice(0, 12)}…`);
-console.log(`  editorial READY · rendered assets PENDING · screenMedia integration PENDING · course placement NOT ACTIVE`);
+console.log(`  editorial READY · rendered assets PENDING · screenMedia integration READY · course placement NOT ACTIVE`);

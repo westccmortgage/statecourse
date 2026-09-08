@@ -1,15 +1,21 @@
 {
-  "freezeId": "LOA-VIDEO-PLAN-FREEZE-2026-08-30-v2",
+  "freezeId": "LOA-VIDEO-PLAN-FREEZE-2026-09-07-v3",
   "courseId": "tx-law-of-agency-30-v1",
-  "frozenOn": "2026-08-30",
+  "frozenOn": "2026-09-07",
   "generatedBy": "scripts/freeze-loa-video-plan.mjs",
   "what": "The video instruction plan and every artifact a render of the three Law of Agency videos depends on. This freeze is what scripts/freeze-loa-curriculum.mjs hashes in place of the plan itself, so that correcting a video does not require breaking a curriculum freeze.",
   "status": {
     "editorialAndLegalPackage": "READY — at this freeze and not before it. Script, HeyGen prompt, storyboard and scene table, clean transcript, caption cue text, crop coordinates, highlight coordinates, duration metadata and poster specification are complete, source-verified and internally consistent.",
     "renderedAssets": "PENDING — no MP4, no shipping .vtt, no -poster.webp, no band PNGs, no diagram panels. Nothing has been rendered.",
-    "screenMediaIntegrationSupport": "PENDING — scripts/lib/generate-tx-block-maps.mjs has no screenMedia hook, so there is no supported route to attach a video to a Texas screen. The tests the hook must ship with are recorded in that file's header.",
+    "screenMediaIntegrationSupport": "READY — scripts/lib/generate-tx-block-maps.mjs validates exact instruction-screen placement, optional/non-blocking delivery, complete non-empty assets, shipping captions, measured duration, explicit transcript, assessment separation and completed factual/visual/accessibility/logo-safety review. Eight focused tests pass. No media is active.",
     "coursePlacementActivation": "NOT ACTIVE — no block map references any of these videos, and no student-facing surface carries a player, poster, badge, duration, play button or transcript link.",
     "doNotSay": "'production-ready'. It collapses four layers into one and three of them are not ready."
+  },
+  "previousFreeze": {
+    "freezeId": "LOA-VIDEO-PLAN-FREEZE-2026-08-30-v2",
+    "sha256": "bc287901fc2d63b781130d443cd5892e78c1ed64b19106a4fa5d995bf820cd26",
+    "bytes": 23170,
+    "change": "The Texas screenMedia hook is now implemented with exact placement, optional/non-blocking, complete-asset, shipping-caption, measured-duration, explicit-transcript, assessment-separation and completed-review gates. No video render or placement was activated."
   },
   "supersedes": {
     "artifact": "texas/tx-law-of-agency-30-v1/video-instruction-plan.md",
@@ -217,7 +223,7 @@
       },
       {
         "n": 8,
-        "title": "the canonical v2 package is sufficient to render without consulting superseded files",
+        "title": "the canonical v3 package is sufficient to render without consulting superseded files",
         "pass": true,
         "notFullyMechanised": "Sufficiency is tested as the presence of every ingredient a render needs and the absence of any pointer to a superseded file. Whether the prose in those sections is good enough to render FROM is an editorial judgment; whether it renders correctly is answerable only after a render."
       }
@@ -259,25 +265,25 @@
   },
   "afterFreeze": "No video wording, coordinate or duration may change silently. A correction found later must break THIS freeze explicitly, name the artifact and the reason, re-run the validator, and create a new video-freeze version with new hashes. It does not require a curriculum-freeze break: the curriculum freeze follows this artifact's hash. Re-taking this freeze under the same id is forbidden — an id denoting two byte-states is not an identifier.",
   "artifacts": {
-    "video instruction plan (v2, canonical)": {
+    "video instruction plan (v3, canonical)": {
       "path": "texas/tx-law-of-agency-30-v1/video-instruction-plan.md",
-      "sha256": "9ab965af55829b91b5633bbf16c81aa80f2fd203c370b9cf409c56372217cf9b",
-      "bytes": 53236
+      "sha256": "2f795163b30d7a86c70a1aaa3178206515b7659ecf1dbf3ad9115ccf3403bf5e",
+      "bytes": 53687
     },
     "production file — video 1 IABS 1-2 Document Overview": {
       "path": "texas/tx-law-of-agency-30-v1/video-production/iabs-1-2-document-overview.md",
-      "sha256": "fe4992e1e7a7f88d301019fe9d563e7d40787da873fbab4cf4bdfcd04fc503d4",
-      "bytes": 60249
+      "sha256": "9eb796f3947f649659da6518d833143709e43ac12aa8928165ed776f4c73f882",
+      "bytes": 60418
     },
     "production file — video 2 Representation or Showing Only": {
       "path": "texas/tx-law-of-agency-30-v1/video-production/representation-or-showing-only-2026.md",
-      "sha256": "2eb8e27a7f185929053f7a0747f89050e55bc89517a3e1024ef887e5472c443e",
-      "bytes": 54185
+      "sha256": "5e0ed69d0dc7a891aac7eb8f413674d6e592cfd1ca58a1ac4334ce1c15035bd6",
+      "bytes": 54372
     },
     "production file — video 3 Texas Intermediary Brokerage": {
       "path": "texas/tx-law-of-agency-30-v1/video-production/intermediary-brokerage.md",
-      "sha256": "43911503834a5a72870ec249b5e892527b311424ed17070c09d82131054560dc",
-      "bytes": 54780
+      "sha256": "fa7bfd6b95090439ce7522158913d1140849736938cd74d9fa68e8cd6f36bfd7",
+      "bytes": 54941
     },
     "captions — video 1 (provisional timings)": {
       "path": "texas/tx-law-of-agency-30-v1/video-production/captions/tx-iabs-1-2-document-overview.provisional.vtt",
@@ -326,13 +332,18 @@
     },
     "validator": {
       "path": "scripts/validate-loa-video-packages.mjs",
-      "sha256": "a48deb1dae702284a0498cdd4519c0991370abe6963df1706e33046e85219b85",
-      "bytes": 46717
+      "sha256": "7455520b457e40e2cbfcfd0541eff76a20b226a8dc3ec76060a5d9ed2499edff",
+      "bytes": 46742
     },
-    "block-map generator core (where the screenMedia hook will be built)": {
+    "block-map generator core (screenMedia hook built and validated)": {
       "path": "scripts/lib/generate-tx-block-maps.mjs",
-      "sha256": "fc81e0fb9051dfc8a3006bd6aa33a2ae183f0940b8a98439289a9aa13dfe0d96",
-      "bytes": 14634
+      "sha256": "2ac7402dd00666dc213389a8160a3489e6685630e7e43baeb8fa4ea33462cb5a",
+      "bytes": 18903
+    },
+    "screenMedia hook acceptance tests": {
+      "path": "tests/texas-video-integration.test.mjs",
+      "sha256": "c6ef92c33d344e0a03ba6bba9347f0b9e3dc73466c25ef18392da51f21ecee85",
+      "bytes": 6198
     },
     "review addendum (SUPERSEDED — review history, not an operational dependency)": {
       "path": "texas/tx-law-of-agency-30-v1/video-production/production-readiness-addendum.md",

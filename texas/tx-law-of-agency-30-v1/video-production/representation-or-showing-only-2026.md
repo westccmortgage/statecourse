@@ -3,11 +3,11 @@
 **Series:** StateCourse *Document Overview*. Course: `tx-law-of-agency-30-v1` (Texas Law of Agency, 30 hours).
 **Asset stem:** `tx-representation-or-showing-only-2026`
 **Status — four layers, and no layer borrows another's status:**
-editorial and legal package **READY** at `LOA-VIDEO-PLAN-FREEZE-2026-08-30-v2` ·
-rendered MP4 / VTT / poster **PENDING** · `screenMedia` integration support **PENDING** ·
+editorial and legal package **READY** at `LOA-VIDEO-PLAN-FREEZE-2026-09-07-v3` ·
+rendered MP4 / VTT / poster **PENDING** · `screenMedia` integration support **READY** ·
 course placement activation **NOT ACTIVE**. See §12. This package is not "production-ready" and that
 phrase is not used of it.
-**Plan:** `texas/tx-law-of-agency-30-v1/video-instruction-plan.md` **v2**, which supersedes plan v1
+**Plan:** `texas/tx-law-of-agency-30-v1/video-instruction-plan.md` **v3**, which supersedes plan v1
 (sha256 `7ca723…`). **Freeze:** `texas/tx-law-of-agency-30-v1/video-plan-freeze.json`, written by
 `scripts/freeze-loa-video-plan.mjs`; validated by `scripts/validate-loa-video-packages.mjs`.
 `video-production/production-readiness-addendum.md` is **review history only** and is not an
@@ -738,12 +738,11 @@ below is **not** pasted into the generated file. It is attached the way Californ
 Loan Estimate and Promissory Note videos — as a hand-authored `screenMedia` spec keyed by screen id,
 which the generator merges onto the screen it names and which refuses to generate if the screen id
 does not exist (`scripts/lib/generate-ca-block-maps.mjs`, the `spec.screenMedia` block). The Texas
-generator core, `scripts/lib/generate-tx-block-maps.mjs`, does **not** carry that hook yet, so there
-is today **no supported route** to attach a video to a Texas screen. **Do not hand-edit a generated
-course file** — its own header forbids it and the next regeneration erases the edit. Adding the hook
-is a prerequisite of activation. It is recorded as open item 3 of the video instruction plan §10, and
-the tests it must ship with are listed in the header of `scripts/lib/generate-tx-block-maps.mjs`,
-where it will be built. Nothing here edits any of those files.
+generator core, `scripts/lib/generate-tx-block-maps.mjs`, now carries that hook and its eight-test
+refusal contract. It remains dormant because the final MP4, poster, measured shipping VTT and
+transcript do not exist. **Do not hand-edit a generated course file** — its own header forbids it and
+the next regeneration erases the edit. Add the active media entry only after every asset and factual,
+visual, logo-safety and accessibility review passes.
 
 ```js
 // NOT ACTIVE — DO NOT ADD. This is a record of the intended wiring, not the wiring.
@@ -751,19 +750,26 @@ where it will be built. Nothing here edits any of those files.
 //   public/statecourse/media/tx-representation-or-showing-only-2026.mp4
 //   public/statecourse/media/tx-representation-or-showing-only-2026-poster.webp
 //   public/statecourse/media/tx-representation-or-showing-only-2026.vtt        (timings rebuilt from the render)
-//   the clean transcript of §9, published as text on screen t05u3-s1
+//   public/statecourse/media/tx-representation-or-showing-only-2026.txt
 // Route: a hand-authored screenMedia spec consumed by
 // scripts/generate-tx-law-of-agency-block-maps.mjs — never a hand edit to the generated
 // config/texas/law-of-agency-module-5-blocks.mjs.
 //
 // screenMedia: {
 //   "t05u3-s1": {
+//     required: false,
+//     nonBlocking: true,
+//     noAssessmentContent: true,
 //     videos: [{
 //       src: "/media/tx-representation-or-showing-only-2026.mp4",
 //       poster: "/media/tx-representation-or-showing-only-2026-poster.webp",
 //       captions: "/media/tx-representation-or-showing-only-2026.vtt",
+//       transcript: "/media/tx-representation-or-showing-only-2026.txt",
 //       label: "Optional video: Representation or showing only — the 2026 decision",
 //       duration: "3:03",   // PROVISIONAL — replace with the MEASURED length of the delivered render
+//       autoplay: false, controls: true, keyboardAccessible: true, captionsSelectable: true,
+//       factualQcApproved: true, visualQcApproved: true,
+//       logoSafeReviewed: true, accessibilityQcApproved: true,
 //     }],
 //   },
 // }
@@ -772,10 +778,9 @@ where it will be built. Nothing here edits any of those files.
 `duration` above is the provisional estimate from §6, computed at 150 wpm from the final script. It
 is not a measurement and must be replaced by one before the entry is ever added. The block player
 (`public/statecourse/student/course/blocks/block-player.js`) reads `src`, `poster`, `captions`,
-`label` and `duration`, tags every screen video "Optional" of its own accord, and builds the
-transcript disclosure from the caption track — so no `optional: true` flag is needed or read, and a
-missing `.vtt` would silently produce a video with no transcript. That is the second reason this
-entry stays commented out.
+`transcript`, `label` and `duration`, tags every screen video "Optional" of its own accord, and
+loads the reviewed plain-text transcript. The generator refuses a missing asset or approval flag,
+which is why this entry stays commented out until the render passes QC.
 
 ---
 
@@ -785,7 +790,7 @@ entry stays commented out.
 |---|---|
 | Selection decision | **Complete** — selected, see the plan's §2 |
 | Learning objective | **Complete** |
-| Placement | **Fixed** — Module 05, T05U3, instruction screen `t05u3-s1` (screen id reserved; the LOA block map is not yet authored) |
+| Placement | **Fixed** — Module 05, T05U3, instruction screen `t05u3-s1`, confirmed in the generated LOA block map |
 | Form-string verification | **Complete** — see §14 |
 | Sources | **Held and verified** |
 | Script and narration | **Complete** |

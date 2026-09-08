@@ -71,7 +71,7 @@ const videoFreeze = readJson("texas/tx-law-of-agency-30-v1/video-plan-freeze.jso
 const videoValidate = tryRun("node", ["scripts/validate-loa-video-packages.mjs"]);
 checks.push(check("2. video plan frozen, and the curriculum freeze points at the freeze rather than the plan", Boolean(videoFreeze) && videoValidate.ok,
   videoFreeze
-    ? `${videoFreeze.freezeId} over ${videoFreeze.artifacts?.length ?? 0} artifacts, superseding ${videoFreeze.supersedes?.freezeId ?? "no prior freeze"}; package validator ${videoValidate.ok ? "passes" : "FAILS"}`
+    ? `${videoFreeze.freezeId} over ${Object.keys(videoFreeze.artifacts || {}).length} artifacts, following ${videoFreeze.previousFreeze?.freezeId ?? "its first recorded freeze"}; package validator ${videoValidate.ok ? "passes" : "FAILS"}`
     : "no video freeze artifact"));
 
 /* 3 ── topic and unit coverage ──────────────────────────────────────────────────────────────── */
@@ -299,7 +299,7 @@ blockers.push(`TX_PROVIDER_RULE_SOURCE_LOCK is ${providerLock.status} — ${prov
 blockers.push("the codified 22 TAC text has never been read from this environment; the rules are held from TREC's published copy and the difference is recorded in trec-rules-source-lock.mjs");
 blockers.push("StateCourse holds no TREC qualifying-education provider approval, and no course application has been filed for LOA-1");
 blockers.push("no STUDENT-facing surface exists. The engine workflow and accessibility are demonstrated against a reviewer-only, non-credit surface at texas/tx-law-of-agency-30-v1/reviewer-surface, which is not served, not linked and carries noindex. A student-facing deployment, and testing with real assistive technology and real users, remain outstanding.");
-blockers.push("no video has been produced. The video plan is frozen and validated, and the transcripts are the primary artifact; every proposition a segment would state is stated in the module text, so no student is dependent on an unproduced video — but the segments themselves are unbuilt.");
+blockers.push("no Texas video has been rendered. The three editorial packages are frozen and validated, and the optional, non-blocking screenMedia integration hook is implemented and tested. Transcripts remain the primary artifact and every proposition a segment would state is already in the module text, so no student is dependent on an unproduced video; activation still requires final MP4, poster, VTT, plain-text transcript, and factual, visual, logo-safety, and accessibility approvals.");
 blockers.push("the claim auditor is anchored on the section symbol and cannot see prose-form citations; the mechanical-pass figures describe symbol-anchored citations only, and correcting the shared engine will alter hashed ledgers for Principles II as well as this course");
 blockers.push("certificate issuance and four-year record retention are implemented and refused/recorded in the engine, but neither has been exercised against a real completion because no credit may be awarded without TREC approval");
 checks.push(check("24. submission-readiness blockers recorded", true, `${blockers.length} standing blockers, none clearable from this repository`));

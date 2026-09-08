@@ -29,7 +29,7 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const HOME = path.join(root, "texas/tx-law-of-agency-30-v1");
 const OUT = path.join(HOME, "content-freeze.json");
 const COURSE_ID = "tx-law-of-agency-30-v1";
-const FREEZE_ID = "LOA-CONTENT-FREEZE-2026-08-30-v6";
+const FREEZE_ID = "LOA-CONTENT-FREEZE-2026-09-07-v7";
 
 /**
  * FREEZE HISTORY. A freeze that is broken and silently re-taken teaches nothing. Every break is
@@ -148,6 +148,22 @@ const BREAK_HISTORY = Object.freeze([
       "node --test tests/*.test.mjs - 0 failures",
     ]),
   }),
+  Object.freeze({
+    brokeFreeze: "LOA-CONTENT-FREEZE-2026-08-30-v6",
+    on: "2026-09-07",
+    module: "NONE — no curriculum file changed, and all twelve module hashes remain byte-identical.",
+    change:
+      "The video-plan pointer moved from LOA-VIDEO-PLAN-FREEZE-2026-08-30-v2 to LOA-VIDEO-PLAN-FREEZE-2026-09-07-v3 after the Texas screenMedia hook and its eight acceptance tests were implemented. No render, caption, poster, transcript or course placement was activated.",
+    reason:
+      "The content freeze deliberately hashes the video-plan freeze artifact. That artifact now denotes a new reviewed byte-state, so retaining the old content-freeze id would make one identifier describe two dependency states.",
+    previousFreezeSha256: "add8f88ed00fd23510543f820e51dacef14766691a79b28aecfc7d0b1f8f6a85",
+    auditsReRun: Object.freeze([
+      "node scripts/validate-loa-video-packages.mjs",
+      "node --test tests/texas-video-integration.test.mjs tests/texas-law-of-agency.test.mjs",
+      "node scripts/freeze-loa-video-plan.mjs --write",
+      "node --test tests/*.test.mjs",
+    ]),
+  }),
 ]);
 
 const sha = (p) => crypto.createHash("sha256").update(fs.readFileSync(p)).digest("hex");
@@ -236,7 +252,7 @@ const artifacts = {
      the validator. One level of indirection: the video state is still pinned exactly — any change to
      any video artifact changes video-plan-freeze.json, which changes this hash — but a video
      correction is now absorbed by a video freeze instead of forcing a curriculum-freeze break. */
-  "video plan freeze (LOA-VIDEO-PLAN-FREEZE-2026-08-30-v2 — hashes the plan and every render dependency)": hashOf(path.join(HOME, "video-plan-freeze.json")),
+  "video plan freeze (LOA-VIDEO-PLAN-FREEZE-2026-09-07-v3 — hashes the plan and every render dependency)": hashOf(path.join(HOME, "video-plan-freeze.json")),
 };
 
 if (failures.length) {

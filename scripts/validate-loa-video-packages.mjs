@@ -246,7 +246,7 @@ const ADDENDUM_CORRECTIONS = Object.freeze([
   { id: "A12", what: "the block maps exist and every placement is confirmed against them", needle: /confirmed against the live block map|Screen ids are confirmed references/, where: ["plan"] },
   { id: "A13", what: "the caption .vtt files exist on disk", needle: /captions\/tx-[a-z0-9-]+\.provisional\.vtt/, where: ["plan", "v1", "v2", "v3"] },
   { id: "A14", what: "50 form strings verify verbatim against the held PDF", needle: /50 form strings/, where: ["plan", "v1"] },
-  { id: "A15", what: "the screenMedia hook is the blocking item for activation", needle: /screenMedia/, where: ["plan"] },
+  { id: "A15", what: "the screenMedia hook is implemented but dormant until complete reviewed assets exist", needle: /screenMedia/, where: ["plan"] },
   { id: "A16", what: "plan v1 is superseded and its hash preserved", needle: /7ca7234853320ad96275c9a6c7e69a16e0a2ec2b63b6de2fd7ed62ed7f88e403/, where: ["plan"] },
   { id: "A17", what: "the nine narration repairs are recorded with before and after", needle: /nine (?:places|narration repairs)/, where: ["plan", "v1", "v2", "v3"] },
   { id: "A18", what: "no claim of TREC approval anywhere", needle: /holds no TREC approval|approved, endorsed, reviewed or licensed by the\s+Texas Real Estate/, where: ["plan", "v1", "v2", "v3"] },
@@ -527,7 +527,7 @@ addCheck(7, "no correction exists only in the addendum", (f, notes) => {
 });
 
 /* ── check 8 ──────────────────────────────────────────────────────────────────────────────────── */
-addCheck(8, "the canonical v2 package is sufficient to render without consulting superseded files", (f, notes) => {
+addCheck(8, "the canonical v3 package is sufficient to render without consulting superseded files", (f, notes) => {
   const required = [
     ["plan", PLAN],
     ...pkgs.map((p) => [`video ${p.n} production file`, path.join(PROD, p.file)]),
@@ -577,7 +577,7 @@ addCheck(8, "the canonical v2 package is sufficient to render without consulting
   for (const [label, re] of [
     ["editorial and legal package READY", layerRow("[Ee]ditorial and legal package", "READY")],
     ["rendered MP4 / VTT / poster PENDING", layerRow("[Rr]endered MP4", "PENDING")],
-    ["screenMedia integration PENDING", layerRow("`screenMedia` integration support", "PENDING")],
+    ["screenMedia integration READY", layerRow("`screenMedia` integration support", "READY")],
     ["course placement NOT ACTIVE", layerRow("[Cc]ourse placement activation", "NOT ACTIVE")],
   ]) if (!re.test(planText)) f.push(`the plan does not report the ${label} layer`);
   /* "production-ready" may appear only where the plan is refusing the phrase. */
@@ -605,7 +605,7 @@ addCheck(8, "the canonical v2 package is sufficient to render without consulting
     if (!/type: "retrieval"/.test(s3[0])) f.push(`${unit}-s3 is not a retrieval screen`);
     if (/content: RANGE/.test(s3[0])) f.push(`${unit}-s3 carries a content range — the module text would be on the retrieval screen`);
     if (/videos:|screenMedia|documents:/.test(s3[0])) f.push(`${unit}-s3 carries media — the video would still be on screen at retrieval`);
-    if (s1 && /videos:|screenMedia/.test(s1[0])) f.push(`${unit}-s1 already carries media — nothing may be wired before the screenMedia hook exists`);
+    if (s1 && /videos:|screenMedia/.test(s1[0])) f.push(`${unit}-s1 already carries media — nothing may be wired before final assets and reviews exist`);
     notes.push(`${unit}: s1 instruction (video attaches here) → s2 practice → s3 retrieval, questionId only, no content range and no media`);
   }
   /* Nothing may be wired anywhere, and nothing may claim approval. */
@@ -640,6 +640,6 @@ if (process.argv.includes("--json")) {
   }
   const partials = checks.filter((c) => c.partial);
   console.log(`${checks.length - failed.length}/${checks.length} checks pass · ${partials.length} are partial by nature (checks ${partials.map((c) => c.n).join(", ")}) and say so above`);
-  console.log("Editorial and legal package READY at the video freeze · rendered assets PENDING · screenMedia integration PENDING · course placement NOT ACTIVE");
+  console.log("Editorial and legal package READY at the video freeze · rendered assets PENDING · screenMedia integration READY · course placement NOT ACTIVE");
 }
 process.exit(failed.length ? 1 : 0);

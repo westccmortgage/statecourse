@@ -1,7 +1,7 @@
 # Texas Law of Agency — handoff
 
-**Written:** 2026-08-31 · **Head:** `63ae6e7` on `main`, pushed · **Tree:** clean
-**Freeze:** `LOA-CONTENT-FREEZE-2026-08-30-v6` · **Tests:** 1,032 passing, 0 failing
+**Updated:** 2026-09-07
+**Freeze:** `LOA-CONTENT-FREEZE-2026-09-07-v7` · **Video freeze:** `LOA-VIDEO-PLAN-FREEZE-2026-09-07-v3`
 
 ---
 
@@ -89,7 +89,9 @@ None is clearable from this repository. They are recomputed into
 2. The codified 22 TAC text has never been read from this environment; the rules are held from TREC's published copy, TIER 4.
 3. StateCourse holds no TREC qualifying-education provider approval, and no course application has been filed for LOA-1.
 4. No student-facing surface exists. Engine and accessibility are demonstrated against a reviewer-only, non-credit surface that is not served, not linked and carries noindex. Testing with real assistive technology and real users is outstanding.
-5. No video has been produced. The plan is frozen and validated and the transcripts are the primary artifact, so no student depends on an unproduced segment — but the segments are unbuilt.
+5. No Texas video has been produced. The three Law of Agency packages are frozen and validated, and
+   the Texas `screenMedia` hook is implemented and tested, so the remaining media work is render/QC,
+   measured captions/poster/transcript, and activation. No student depends on an unproduced segment.
 6. The claim auditor's symbol-anchored blind spot (above).
 7. Certificate issuance and four-year retention are implemented and refused/recorded in the engine, but neither has been exercised against a real completion.
 
@@ -125,8 +127,10 @@ accessibility criteria and two engine behaviours the Principles II ones do not.
 
 ### Open tasks
 
-- **#43** — `screenMedia` hook for the Texas block-map generator. Specified and deliberately unbuilt;
-  its ten-item test list is recorded in the generator's own header.
+- **#43 — RESOLVED 2026-09-07.** The Texas `screenMedia` hook is implemented. Eight focused tests
+  enforce exact placement, optional/non-blocking delivery, assessment separation, complete assets,
+  measured duration, shipping captions, explicit transcript and all four review approvals. No media
+  is active because the final renders do not yet exist.
 - **#44** — teach the shared claim auditor prose-form citations. Do this *deliberately*: it is a
   shared engine, and the fix changes hashed ledgers for Law of Agency and Principles II both, so it
   needs a freeze break on each with a break-history entry saying what moved and why.
@@ -145,7 +149,7 @@ node scripts/build-loa-reviewer-surface.mjs         # 19 pages
 node scripts/loa-accessibility-audit.mjs            # 21 criteria, drives Chromium
 node scripts/loa-reviewer-workflow.mjs              # 23 engine behaviours
 node scripts/loa-acceptance-report.mjs              # the verdict
-node --test tests/*.test.mjs                        # 1,032 tests
+node --test tests/*.test.mjs                        # 1,339 tests
 ```
 
 `npm test` runs `npm run build` first and currently fails on a `MODULE_NOT_FOUND` in the build step;

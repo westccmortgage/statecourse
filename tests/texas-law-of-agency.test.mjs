@@ -291,7 +291,7 @@ test("the curriculum freeze pins the video state through the video freeze, not t
 
 test("the video freeze names itself, supersedes plan v1 by hash, and still hashes every render dependency", () => {
   assert.match(VIDEO_FREEZE.freezeId, /^LOA-VIDEO-PLAN-FREEZE-\d{4}-\d{2}-\d{2}(-v\d+)?$/, "a re-freeze must bump its version rather than reusing an id");
-  assert.equal(VIDEO_FREEZE.freezeId, "LOA-VIDEO-PLAN-FREEZE-2026-08-30-v2");
+  assert.equal(VIDEO_FREEZE.freezeId, "LOA-VIDEO-PLAN-FREEZE-2026-09-07-v3");
   assert.equal(VIDEO_FREEZE.courseId, "tx-law-of-agency-30-v1");
 
   /* The superseded plan is identified by hash, not by adjective. */
@@ -311,6 +311,8 @@ test("the video freeze names itself, supersedes plan v1 by hash, and still hashe
     "texas/tx-law-of-agency-30-v1/video-production/captions/tx-intermediary-brokerage.provisional.vtt",
     "texas/trec-sources/forms/IABS-1-2.pdf",
     "scripts/validate-loa-video-packages.mjs",
+    "scripts/lib/generate-tx-block-maps.mjs",
+    "tests/texas-video-integration.test.mjs",
   ]) assert.ok(paths.includes(required), `the video freeze does not hash ${required}`);
 
   const drift = [];
@@ -335,7 +337,7 @@ test("video status is reported in four layers and no layer borrows another's", (
   const s = VIDEO_FREEZE.status;
   assert.match(s.editorialAndLegalPackage, /^READY\b/);
   assert.match(s.renderedAssets, /^PENDING\b/);
-  assert.match(s.screenMediaIntegrationSupport, /^PENDING\b/);
+  assert.match(s.screenMediaIntegrationSupport, /^READY\b/);
   assert.match(s.coursePlacementActivation, /^NOT ACTIVE\b/);
   assert.match(s.doNotSay, /production-ready/);
 
@@ -353,7 +355,7 @@ test("video status is reported in four layers and no layer borrows another's", (
   }
   for (const [n, map] of [[2, "law-of-agency-module-2-blocks.mjs"], [5, "law-of-agency-module-5-blocks.mjs"], [6, "law-of-agency-module-6-blocks.mjs"]]) {
     const text = fs.readFileSync(path.join(root, "config/texas", map), "utf8");
-    assert.doesNotMatch(text, /videos:|screenMedia/, `module ${n} block map has media wired — nothing may be attached before the screenMedia hook exists`);
+    assert.doesNotMatch(text, /videos:|screenMedia/, `module ${n} block map has media wired before final assets and reviews exist`);
   }
 });
 
@@ -390,25 +392,19 @@ test("the review addendum has stopped being an operational dependency", () => {
   assert.ok(paths.includes("texas/tx-law-of-agency-30-v1/video-production/production-readiness-addendum.md"));
 });
 
-test("the screenMedia hook is unbuilt, and its test list is recorded where it will be built", () => {
+test("the screenMedia hook is built, refuses incomplete activation, and has focused tests", () => {
   const gen = fs.readFileSync(path.join(root, "scripts/lib/generate-tx-block-maps.mjs"), "utf8");
-  /* Look for the IMPLEMENTATION, not the prose describing it: the header names the hook in order
-     to specify it, so a text match on the name would find the specification and call it a build. */
-  assert.doesNotMatch(gen, /spec\.screenMedia\s*\|\||screenMedia\[|const screenMedia\s*=/, "the hook is recorded as unbuilt; if it has been built, move these assertions to its own tests");
-  assert.match(gen, /NOT BUILT: THE `screenMedia` HOOK/);
+  const focused = fs.readFileSync(path.join(root, "tests/texas-video-integration.test.mjs"), "utf8");
+  assert.match(gen, /export function validateScreenMedia/);
+  assert.match(gen, /const screenMedia = validateScreenMedia/);
+  assert.match(gen, /screenMedia cannot attach to retrieval screen/);
+  assert.match(gen, /must declare required:false and nonBlocking:true/);
+  assert.match(gen, /is missing or empty/);
+  assert.match(gen, /cannot use provisional captions/);
+  assert.match(gen, /missing factual, visual, logo-safety or accessibility approval/);
+  assert.match(focused, /exact instruction screen and remains optional/);
+  assert.match(focused, /missing MP4, poster, captions or transcript/);
   assert.match(gen, /DO NOT HAND-EDIT A GENERATED COURSE FILE/);
-  for (const requirement of [
-    /EXACT SCREEN PLACEMENT/,
-    /`required: false`/,
-    /NON-BLOCKING PROGRESSION/,
-    /MP4, VTT, TRANSCRIPT AND POSTER PRESENCE/,
-    /ACCESSIBLE PLAYER CONTROLS AND KEYBOARD ACCESS/,
-    /CAPTION AVAILABILITY/,
-    /NO OVERLAP WITH THE StateCourse LOGO/,
-    /NO SECURE ASSESSMENT CONTENT/,
-    /NO VIDEO ON THE RETRIEVAL SCREEN/,
-    /NO ACTIVATION WHEN ANY REQUIRED MEDIA ASSET IS ABSENT/,
-  ]) assert.match(gen, requirement, `the screenMedia test list is missing ${requirement}`);
 });
 
 test("no video is rendered, served or referenced anywhere", () => {

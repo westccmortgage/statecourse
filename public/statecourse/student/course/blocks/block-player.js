@@ -172,8 +172,9 @@ function singleVideoHtml(video) {
   const track = video.captions
     ? `<track kind="captions" src="${escapeHtml(video.captions)}" srclang="en" label="English captions" default />`
     : "";
-  const transcript = video.captions
-    ? `<details class="video-transcript" data-vtt="${escapeHtml(video.captions)}"><summary>Transcript</summary><div class="video-transcript-body">Loading…</div></details>`
+  const transcriptSource = video.transcript || video.captions;
+  const transcript = transcriptSource
+    ? `<details class="video-transcript" data-transcript="${escapeHtml(transcriptSource)}"><summary>Transcript</summary><div class="video-transcript-body">Loading…</div></details>`
     : "";
   return `<figure class="screen-video">
     <figcaption><span class="optional-tag">Optional</span> ${escapeHtml(video.label || "Video overview")}${video.duration ? ` · ${escapeHtml(video.duration)}` : ""} · Captions available</figcaption>
@@ -207,10 +208,14 @@ document.addEventListener("toggle", async (event) => {
   details.dataset.loaded = "1";
   const body = details.querySelector(".video-transcript-body");
   try {
-    const text = await (await fetch(details.dataset.vtt)).text();
-    const lines = text.replace(/\r/g, "").split("\n").filter((line) =>
-      line.trim() && line !== "WEBVTT" && !line.startsWith("NOTE") && !line.includes("-->") &&
-      !/^\d+$/.test(line.trim()) && !line.startsWith("Document Overview") && !line.startsWith("final cut"));
+    const response = await fetch(details.dataset.transcript);
+    if (!response.ok) throw new Error(`transcript request failed: ${response.status}`);
+    const text = await response.text();
+    const isVtt = details.dataset.transcript.toLowerCase().endsWith(".vtt");
+    const lines = text.replace(/\r/g, "").split("\n").filter((line) => line.trim() && (!isVtt || (
+      line !== "WEBVTT" && !line.startsWith("NOTE") && !line.includes("-->") &&
+      !/^\d+$/.test(line.trim()) && !line.startsWith("Document Overview") && !line.startsWith("final cut")
+    )));
     body.innerHTML = lines.map((line) => `<p>${escapeHtml(line)}</p>`).join("");
   } catch { body.textContent = "Transcript unavailable."; }
 }, true);
