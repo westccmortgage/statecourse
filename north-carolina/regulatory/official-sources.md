@@ -1,7 +1,7 @@
 # North Carolina official-source ledger
 
 **Control date:** 2026-09-07
-**Manifest:** `NC-PHASE0-2026-09-07-v15`
+**Manifest:** `NC-PHASE0-2026-09-07-v16`
 **Regulatory status:** Not approved. Enrollment and credit delivery are closed.
 
 The machine-readable controlling record is
@@ -118,8 +118,10 @@ The capture ledger began with 19 unique PDF URLs representing 21 source entries.
 timed out and the NCREC syllabus returned HTTP 403. On September 7 six current public NCREC artifacts
 were added: RPOADS, MOG, the 2026 Residential Square Footage Guidelines, WWREA, the WWREA Q&A and the
 subdivisions/planned-communities Q&A. Their 39 brochure/form/guide pages were all rendered and visually
-checked against digital text. Together with RELINC and L-09, eight source PDFs now have verified bytes
-and six NCREC artifacts have current all-page review. `captures/2026-09-06/capture-log.json`
+checked against digital text. Module NC-09 then added the April 2026 HUD neighborhood-information letter
+and September 2025 HUD FHEO withdrawal notice, whose 11 pages were likewise retained and reviewed.
+Together with RELINC and L-09, ten source PDFs now have verified bytes and eight artifacts have current
+all-page review. `captures/2026-09-06/capture-log.json`
 preserves requests, final URL where a
 response arrived, content type, status, hashes and exact failures; `page-reviews.json` binds review
 to the PDF and render hashes. Sources remain **INCOMPLETE** and `NC-B01` remains open.
@@ -132,7 +134,7 @@ later expanded again during the Module NC-10 pass to include Rules .0111 and .01
 NCREC PDFs and the 58B rule range; the later Module NC-08/15 brochure pass added two more NCREC PDFs.
 The machine ledger now contains 48 PDF source entries across 45 unique URLs. The global source state
 remains **INCOMPLETE** because most rule/source PDFs still lack current captured bytes and review; the
-six NCREC artifacts do not conceal that broader gap.
+eight reviewed artifacts do not conceal that broader gap.
 
 Module NC-04 was reconciled on September 7 to current official property-tax and excise-tax statutes,
 26 U.S.C. §121, FEMA and CFPB guidance. That review found a real syllabus conflict: the fourth-year
@@ -169,8 +171,10 @@ Do Not Call guidance, DOJ antitrust guidance and Rule 58A .0105. The review corr
 multifamily design rule, enforcement forums and periods, the civil/criminal distinction, the obsolete
 blanket rule against giving school or crime information, the seller-specific Do Not Call exceptions,
 automatic seller subagency, fraud terminology and overbroad vicarious-liability and insurance claims.
-Four prescribed activities now have stable worked-evidence paths. The two HUD PDFs and Rule .0105 PDF
-were publisher-read but remain uncaptured and unreviewed as local filing evidence.
+Four prescribed activities now have stable worked-evidence paths. The two HUD PDFs are retained with
+all 11 pages reviewed and hash-bound; Rule .0105 remains uncaptured as local filing evidence. The HUD
+documents are treated as agency guidance and current policy evidence, not as substitutes for the Fair
+Housing Act, current regulations or binding judicial authority.
 
 Module NC-10 was reconciled on September 7 to current Chapter 160D zoning authority, the state UST
 statute, G.S. 93A-4/6/9/12/13, G.S. 39-50 and 84-2.1, Rules 58A .0105-.0111, .0115-.0118, .0120,

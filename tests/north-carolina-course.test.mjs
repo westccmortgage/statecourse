@@ -934,6 +934,26 @@ test("Modules NC-08 and NC-15 use retained complete NCREC Q&A brochures with cur
   assert.match(fifteen, /Chapter 47F controls.*G\.S\. 160D-807 controls.*G\.S\. 136-102\.6 controls/is);
 });
 
+test("Module NC-09 HUD guidance and withdrawal evidence is retained and reviewed on every page", () => {
+  const capture = new URL("../north-carolina/regulatory/captures/2026-09-07/module-09-hud/", import.meta.url);
+  const review = JSON.parse(readFileSync(new URL("page-reviews.json", capture), "utf8"));
+  assert.equal(review.artifacts.length, 2);
+  assert.equal(review.artifacts.reduce((sum, artifact) => sum + artifact.pages.length, 0), 11);
+  const hash = (url) => createHash("sha256").update(readFileSync(url)).digest("hex");
+  for (const artifact of review.artifacts) {
+    assert.equal(artifact.pageCount, artifact.pages.length, artifact.id);
+    assert.equal(hash(new URL(artifact.file, capture)), artifact.pdfSha256, artifact.id);
+    assert.equal(hash(new URL(artifact.extractedText, capture)), artifact.textSha256, `${artifact.id} text`);
+    const stem = artifact.file.replace(/\.pdf$/, "");
+    for (const page of artifact.pages) {
+      assert.equal(hash(new URL(`renders/${stem}-${page.number}.png`, capture)), page.sha256, `${artifact.id} page ${page.number}`);
+    }
+  }
+  const nine = readModule("module-09");
+  assert.match(nine, /HUD's April 24, 2026 letter says the Fair Housing Act does not itself prohibit/i);
+  assert.match(nine, /does not teach the withdrawn guidance as binding/i);
+});
+
 test("Module NC-13 appraisal activities are delivered only with retained all-page review evidence", () => {
   const capture = new URL("../north-carolina/regulatory/captures/2026-09-07/module-13-appraisal/", import.meta.url);
   const review = JSON.parse(readFileSync(new URL("page-reviews.json", capture), "utf8"));

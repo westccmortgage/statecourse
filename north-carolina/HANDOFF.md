@@ -46,8 +46,9 @@
   brokerage-compensation methods, discrimination/neighborhood-information scenarios, and duties to
   clients versus third parties. Current federal Fair Housing, §1982, HUD, ADA, FTC and DOJ authorities
   plus Rule 58A .0105 replace the former design, enforcement, neighborhood-information, Do Not Call,
-  automatic-subagency, fraud, vicarious-liability and insurance shortcuts. Current source limitations
-  remain explicit rather than being converted into teaching claims.
+  automatic-subagency, fraud, vicarious-liability and insurance shortcuts. The April 2026 HUD letter
+  and September 2025 HUD withdrawal notice are now retained with all 11 pages visually reviewed and
+  hash-bound. They remain agency guidance/current-policy evidence, not substitutes for controlling law.
 - Module NC-10 now delivers the prescribed client-versus-third-party comparison and four auditable
   Level 3 labs. Current Chapter 160D, UST, trust-money, drafting, offer-disclosure, material-fact,
   discrimination and compensation authorities replace obsolete zoning citations and the former
@@ -139,7 +140,7 @@ ledger actually demonstrate the required time.
 
 | ID | Owner | Blocker |
 |---|---|---|
-| NC-B01 | StateCourse | Partial PDF capture: 8/48 PDF entries have byte-verified snapshots and six current NCREC artifacts have all-page review; the remaining source ledger is incomplete |
+| NC-B01 | StateCourse | Partial PDF capture: 10/48 PDF entries have byte-verified snapshots and eight artifacts have all-page review; the remaining source ledger is incomplete |
 | NC-B02 | NCREC | Provider certification absent |
 | NC-B03 | NCREC | Written self-paced course approval absent |
 | NC-B04 | user + NCREC | Nonprovisional NC broker and instructor approval absent |
@@ -188,18 +189,18 @@ NC_PYTHON=/path/to/python-with-pypdf node scripts/north-carolina-source-lock.mjs
 
 Structure reports **PASS**, source verification **INCOMPLETE**, and filing **NO-GO**. The capture log
 records exact failures and does not turn search-index text into downloaded evidence. The expanded
-ledger contains 48 PDF source entries across 45 unique URLs; eight entries retain byte-verified snapshots
-and six current NCREC artifacts have current all-page review. The remaining entries are incomplete.
+ledger contains 48 PDF source entries across 45 unique URLs; ten entries retain byte-verified snapshots
+and eight artifacts have current all-page review. The remaining entries are incomplete.
 Scripts verify actual bytes and content identity and reject a wrong PDF,
 soft-404, missing snapshot, stale hash, foreign redirect, and missing/stale page review.
 The Module NC-13 activity capture is a separate retained teaching-evidence set: three reviewed PDFs,
 28 reviewed page renders and the full 302-page publisher archive. It does not make the unrelated
 source-ledger capture complete.
 
-The September 7 public-brochure checkpoint is **135/135 focused North Carolina, source-integrity and
+The September 7 HUD-capture checkpoint is **136/136 focused North Carolina, source-integrity and
 all-course free-practice tests passing**, including every lesson and every answer choice in all 31
 catalog courses. With the bundled Python runtime on `PATH`, the complete repository run is
-**1,308/1,308 passing**. The same run under the host's bare `python3` fails PDF-reading tests because
+**1,309/1,309 passing**. The same run under the host's bare `python3` fails PDF-reading tests because
 that interpreter lacks `pypdf`; this is an environment-path failure, not a course result.
 
 PDF extraction needs Python with `pypdf`; set `NC_PYTHON` to that interpreter when it is not `python3`.
@@ -213,4 +214,5 @@ the normal command checks structure and reports source failures without claiming
 offline as-of-capture checks; re-fetch before filing. Current focused tests and complete repository
 test count are recorded after the public-brochure validation run. Detailed correction evidence is in
 `north-carolina/submission/14-module-15-correction-audit.md` and
-`north-carolina/submission/15-public-brochure-correction-audit.md`.
+`north-carolina/submission/15-public-brochure-correction-audit.md`, with the later HUD evidence in
+`north-carolina/submission/16-module-09-hud-capture-audit.md`.

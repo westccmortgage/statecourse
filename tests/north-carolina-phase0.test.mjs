@@ -9,7 +9,7 @@ const read = (path) => readFileSync(new URL(`../${path}`, import.meta.url), "utf
 
 test("manifest has a dated stable identity and only allowed claim statuses", () => {
   assert.equal(NC_CONTROL_DATE, "2026-09-07");
-  assert.equal(NC_MANIFEST_VERSION, "NC-PHASE0-2026-09-07-v15");
+  assert.equal(NC_MANIFEST_VERSION, "NC-PHASE0-2026-09-07-v16");
   assert.equal(NC_SOURCES.length, 162);
   assert.equal(NC_CLAIMS.length, 102);
   for (const claim of NC_CLAIMS) assert.ok(["confirmed", "interpretation", "needs-regulator-confirmation"].includes(claim.status), claim.id);

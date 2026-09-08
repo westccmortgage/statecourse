@@ -707,6 +707,77 @@
       "pdfPages": 2,
       "textPath": "north-carolina/regulatory/captures/2026-09-07/module-08-15-brochures/ncrec-subdivisions-planned-communities-brochure.txt",
       "textSha256": "a43fd1c2dc9b167417c56cebb1e63754ee7d67618f2845f7153625227792a8fa"
+    },
+    {
+      "sourceIds": [
+        "FED-HUD-NEIGHBORHOOD-INFO-2026"
+      ],
+      "requestedUrl": "https://www.hud.gov/sites/default/files/hudclips/documents/AS-Trainor%27s-DCL-on-Neighborhood-Crime-Data-and-School-Quality.pdf",
+      "attemptedAt": "2026-09-07T20:00:00.000Z",
+      "status": "VERIFIED_AS_OF_CAPTURE",
+      "snapshotPath": "north-carolina/regulatory/captures/2026-09-07/module-09-hud/hud-neighborhood-crime-school-letter.pdf",
+      "sha256": "4f5a53ac340169cff3270218eeb79cb642af009953ae366c1efb33d4f355d3bc",
+      "pdfReview": {
+        "status": "REVIEWED",
+        "reviewedPdfSha256": "4f5a53ac340169cff3270218eeb79cb642af009953ae366c1efb33d4f355d3bc",
+        "title": "Dear Colleague Letter on Neighborhood Crime Data and School Quality",
+        "revisionObservation": "April 24, 2026 date and all seven pages confirmed",
+        "pages": [
+          { "number": 1, "renderPath": "north-carolina/regulatory/captures/2026-09-07/module-09-hud/renders/hud-neighborhood-crime-school-letter-1.png", "sha256": "c3f22e47e7f3742dfd94571e21fa9159f446f78ec3b9f746ca254d5e4e1be77c" },
+          { "number": 2, "renderPath": "north-carolina/regulatory/captures/2026-09-07/module-09-hud/renders/hud-neighborhood-crime-school-letter-2.png", "sha256": "7d5e22a974c597b8d395667408d960ec8b00449a31af75270e8ea3956111166f" },
+          { "number": 3, "renderPath": "north-carolina/regulatory/captures/2026-09-07/module-09-hud/renders/hud-neighborhood-crime-school-letter-3.png", "sha256": "e165b1d3a2a279a0b99d72b548d5eccc9c3d9070ab3a37f0c5772fd12613e9e7" },
+          { "number": 4, "renderPath": "north-carolina/regulatory/captures/2026-09-07/module-09-hud/renders/hud-neighborhood-crime-school-letter-4.png", "sha256": "d6b45568753d6dc6aa78107cb167d7ed81ef613a1b4c3690228725de1c6d01a8" },
+          { "number": 5, "renderPath": "north-carolina/regulatory/captures/2026-09-07/module-09-hud/renders/hud-neighborhood-crime-school-letter-5.png", "sha256": "4a2b4187eecef7482e5c12acdce3f6e172c03bd04085444ca2103c1e5b47d25c" },
+          { "number": 6, "renderPath": "north-carolina/regulatory/captures/2026-09-07/module-09-hud/renders/hud-neighborhood-crime-school-letter-6.png", "sha256": "611d8e414e19be0ef7adfca7c02c38a42a2465908c857b963d23f289b2b2389f" },
+          { "number": 7, "renderPath": "north-carolina/regulatory/captures/2026-09-07/module-09-hud/renders/hud-neighborhood-crime-school-letter-7.png", "sha256": "ec0c1775053048551790194c0e644450d09103258be065cf763b5ae4031b53ee" }
+        ],
+        "ocrStatus": "NOT_REQUIRED_TEXT_LAYER_MATCHED_RENDER"
+      },
+      "httpStatus": 200,
+      "finalUrl": "https://www.hud.gov/sites/default/files/hudclips/documents/AS-Trainor%27s-DCL-on-Neighborhood-Crime-Data-and-School-Quality.pdf",
+      "contentType": "application/pdf",
+      "receivedBytes": 162648,
+      "responseSha256": "4f5a53ac340169cff3270218eeb79cb642af009953ae366c1efb33d4f355d3bc",
+      "pdfPages": 7,
+      "pdfMetadata": {
+        "/CreationDate": "April 23, 2026"
+      },
+      "textPath": "north-carolina/regulatory/captures/2026-09-07/module-09-hud/hud-neighborhood-crime-school-letter.txt",
+      "textSha256": "61ade5c6b8da70cb40a73fc02f5fd76024d06345e57454949523cdc7aded99eb"
+    },
+    {
+      "sourceIds": [
+        "FED-HUD-WITHDRAWAL-2025"
+      ],
+      "requestedUrl": "https://www.hud.gov/sites/dfiles/Main/documents/Notice-of-Withdrawal-of-Guidance-Documents.pdf",
+      "attemptedAt": "2026-09-07T20:00:00.000Z",
+      "status": "VERIFIED_AS_OF_CAPTURE",
+      "snapshotPath": "north-carolina/regulatory/captures/2026-09-07/module-09-hud/hud-guidance-withdrawal-notice.pdf",
+      "sha256": "6aa823a50de49c38cea950d50cd1eed2ff66a0c7a7462b55d0d2b9968d9d8761",
+      "pdfReview": {
+        "status": "REVIEWED",
+        "reviewedPdfSha256": "6aa823a50de49c38cea950d50cd1eed2ff66a0c7a7462b55d0d2b9968d9d8761",
+        "title": "Notice of the Withdrawal of FHEO Guidance Documents",
+        "revisionObservation": "September 17, 2025 date and all four pages confirmed",
+        "pages": [
+          { "number": 1, "renderPath": "north-carolina/regulatory/captures/2026-09-07/module-09-hud/renders/hud-guidance-withdrawal-notice-1.png", "sha256": "d8adb11363e50512aa6d47c4bba8b2fe4029b64e92deb9c5af7264a524547a9c" },
+          { "number": 2, "renderPath": "north-carolina/regulatory/captures/2026-09-07/module-09-hud/renders/hud-guidance-withdrawal-notice-2.png", "sha256": "721b78fc70a4a97346abd2e3a8a201d60bcaa5a53fbbab504c19ecfe8a0aeca7" },
+          { "number": 3, "renderPath": "north-carolina/regulatory/captures/2026-09-07/module-09-hud/renders/hud-guidance-withdrawal-notice-3.png", "sha256": "90e0b657551b17d1ca90921788a44eb42144b3453068712d93ec989896454085" },
+          { "number": 4, "renderPath": "north-carolina/regulatory/captures/2026-09-07/module-09-hud/renders/hud-guidance-withdrawal-notice-4.png", "sha256": "977628181944b5239bf8b50a487122e13938e7ac4e3cd18f304d91679323a2da" }
+        ],
+        "ocrStatus": "NOT_REQUIRED_TEXT_LAYER_MATCHED_RENDER"
+      },
+      "httpStatus": 200,
+      "finalUrl": "https://www.hud.gov/sites/dfiles/Main/documents/Notice-of-Withdrawal-of-Guidance-Documents.pdf",
+      "contentType": "application/pdf",
+      "receivedBytes": 166734,
+      "responseSha256": "6aa823a50de49c38cea950d50cd1eed2ff66a0c7a7462b55d0d2b9968d9d8761",
+      "pdfPages": 4,
+      "pdfMetadata": {
+        "/CreationDate": "September 16, 2025"
+      },
+      "textPath": "north-carolina/regulatory/captures/2026-09-07/module-09-hud/hud-guidance-withdrawal-notice.txt",
+      "textSha256": "cb2537def6c571ced04f32b535e6363d81b38d995ac24abeecac7e5b879ea84e"
     }
   ]
 }
