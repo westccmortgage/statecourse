@@ -146,7 +146,7 @@ try {
   const reviews = JSON.parse(readFileSync(join(root, 'north-carolina/regulatory/captures/2026-09-06/page-reviews.json'), 'utf8'));
   for (const entry of captureLog?.entries || []) {
     const review = entry.sourceIds.map(id => reviews[id]).find(Boolean);
-    if (review) entry.pdfReview = review;
+    if (review && (!entry.pdfReview || review.pages?.length > (entry.pdfReview.pages?.length || 0))) entry.pdfReview = review;
   }
 } catch {}
 const pdfEvidence = inspectStoredPdfEvidence(root, NC_SOURCES, captureLog, NC_CONTROL_DATE);

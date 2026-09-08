@@ -1,7 +1,7 @@
 # North Carolina official-source ledger
 
 **Control date:** 2026-09-07
-**Manifest:** `NC-PHASE0-2026-09-07-v16`
+**Manifest:** `NC-PHASE0-2026-09-07-v17`
 **Regulatory status:** Not approved. Enrollment and credit delivery are closed.
 
 The machine-readable controlling record is
@@ -120,8 +120,10 @@ were added: RPOADS, MOG, the 2026 Residential Square Footage Guidelines, WWREA, 
 subdivisions/planned-communities Q&A. Their 39 brochure/form/guide pages were all rendered and visually
 checked against digital text. Module NC-09 then added the April 2026 HUD neighborhood-information letter
 and September 2025 HUD FHEO withdrawal notice, whose 11 pages were likewise retained and reviewed.
-Together with RELINC and L-09, ten source PDFs now have verified bytes and eight artifacts have current
-all-page review. `captures/2026-09-06/capture-log.json`
+The April 2026 RELINC handbook was then re-fetched without byte changes and all 36 pages were rendered
+and reviewed; Form L-09 was likewise re-fetched unchanged and its three-page review revalidated.
+Ten source PDFs now have verified bytes and all ten have current all-page review, covering 89 pages.
+`captures/2026-09-06/capture-log.json`
 preserves requests, final URL where a
 response arrived, content type, status, hashes and exact failures; `page-reviews.json` binds review
 to the PDF and render hashes. Sources remain **INCOMPLETE** and `NC-B01` remains open.
@@ -134,7 +136,7 @@ later expanded again during the Module NC-10 pass to include Rules .0111 and .01
 NCREC PDFs and the 58B rule range; the later Module NC-08/15 brochure pass added two more NCREC PDFs.
 The machine ledger now contains 48 PDF source entries across 45 unique URLs. The global source state
 remains **INCOMPLETE** because most rule/source PDFs still lack current captured bytes and review; the
-eight reviewed artifacts do not conceal that broader gap.
+ten reviewed artifacts do not conceal that broader gap.
 
 Module NC-04 was reconciled on September 7 to current official property-tax and excise-tax statutes,
 26 U.S.C. §121, FEMA and CFPB guidance. That review found a real syllabus conflict: the fourth-year

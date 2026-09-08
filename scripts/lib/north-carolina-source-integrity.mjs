@@ -43,6 +43,7 @@ export function inspectPdfEvidence(source, entry, { bytes, pageText, today = '20
   const byteVerified = errors.length === 0;
   const review = entry.pdfReview;
   if (review?.status !== 'REVIEWED' || review.reviewedPdfSha256 !== entry.sha256 || !review.title || !review.revisionObservation || !review.pages?.length) errors.push('PDF title/revision/render review missing or stale');
+  if (review?.pages?.length !== entry.pdfPages || new Set((review?.pages || []).map(page => page.number)).size !== entry.pdfPages) errors.push('PDF all-page review incomplete');
   for (const page of review?.pages || []) {
     if (!Number.isInteger(page.number) || page.number < 1 || page.number > entry.pdfPages || !page.renderPath || !page.sha256 || !renderBytes[page.renderPath] || sha256(renderBytes[page.renderPath]) !== page.sha256) errors.push('Missing/stale reviewed page render');
   }

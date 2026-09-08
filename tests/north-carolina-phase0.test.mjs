@@ -1,18 +1,38 @@
 import test from "node:test";
 import assert from "node:assert/strict";
+import { createHash } from "node:crypto";
 import { existsSync, readFileSync } from "node:fs";
 
 import { getNorthCarolinaCourse, northCarolinaCreditedHours, NORTH_CAROLINA_MODULE_IDS } from "../config/north-carolina-course-engine.mjs";
 import { NC_BLOCKERS, NC_CLAIMS, NC_CONTROL_DATE, NC_MANIFEST_VERSION, NC_SOURCES, northCarolinaSourceById } from "../config/north-carolina/regulatory-manifest.mjs";
 
 const read = (path) => readFileSync(new URL(`../${path}`, import.meta.url), "utf8");
+const hash = (path) => createHash("sha256").update(readFileSync(new URL(`../${path}`, import.meta.url))).digest("hex");
 
 test("manifest has a dated stable identity and only allowed claim statuses", () => {
   assert.equal(NC_CONTROL_DATE, "2026-09-07");
-  assert.equal(NC_MANIFEST_VERSION, "NC-PHASE0-2026-09-07-v16");
+  assert.equal(NC_MANIFEST_VERSION, "NC-PHASE0-2026-09-07-v17");
   assert.equal(NC_SOURCES.length, 162);
   assert.equal(NC_CLAIMS.length, 102);
   for (const claim of NC_CLAIMS) assert.ok(["confirmed", "interpretation", "needs-regulator-confirmation"].includes(claim.status), claim.id);
+});
+
+test("RELINC and L-09 evidence binds every reviewed page to its current source PDF", () => {
+  const reviewPath = "north-carolina/regulatory/captures/2026-09-07/relinc-l09-review/page-reviews.json";
+  const review = JSON.parse(read(reviewPath));
+  assert.equal(review.reviewedOn, NC_CONTROL_DATE);
+  assert.equal(review.artifacts.length, 2);
+  assert.equal(review.artifacts.reduce((sum, artifact) => sum + artifact.pageCount, 0), 39);
+
+  for (const artifact of review.artifacts) {
+    assert.equal(hash(artifact.sourceFile), artifact.pdfSha256, `${artifact.id}:source PDF`);
+    assert.equal(artifact.pages.length, artifact.pageCount, `${artifact.id}:page count`);
+    assert.equal(new Set(artifact.pages.map((page) => page.number)).size, artifact.pageCount, `${artifact.id}:unique pages`);
+    for (const page of artifact.pages) {
+      const renderPath = page.renderPath || `north-carolina/regulatory/captures/2026-09-07/relinc-l09-review/renders/relinc-${String(page.number).padStart(2, "0")}.png`;
+      assert.equal(hash(renderPath), page.sha256, `${artifact.id}:page ${page.number}`);
+    }
+  }
 });
 
 test("Module NC-11 current-law claims resolve to the added primary authorities", () => {
