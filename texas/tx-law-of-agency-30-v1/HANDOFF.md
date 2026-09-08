@@ -89,7 +89,8 @@ None is clearable from this repository. They are recomputed into
 2. The codified 22 TAC text has never been read from this environment; the rules are held from TREC's published copy, TIER 4.
 3. StateCourse holds no TREC qualifying-education provider approval, and no course application has been filed for LOA-1.
 4. No student-facing surface exists. Engine and accessibility are demonstrated against a reviewer-only, non-credit surface that is not served, not linked and carries noindex. Testing with real assistive technology and real users is outstanding.
-5. No Texas video has been produced. The three Law of Agency packages are frozen and validated, and
+5. No production Texas video has been rendered and approved. A short local HeyGen test exists only
+   for presenter/voice review and is neither tracked nor activated. The three Law of Agency packages are frozen and validated, and
    the Texas `screenMedia` hook is implemented and tested, so the remaining media work is render/QC,
    measured captions/poster/transcript, and activation. No student depends on an unproduced segment.
 6. The claim auditor's symbol-anchored blind spot (above).
@@ -149,7 +150,7 @@ node scripts/build-loa-reviewer-surface.mjs         # 19 pages
 node scripts/loa-accessibility-audit.mjs            # 21 criteria, drives Chromium
 node scripts/loa-reviewer-workflow.mjs              # 23 engine behaviours
 node scripts/loa-acceptance-report.mjs              # the verdict
-node --test tests/*.test.mjs                        # 1,339 tests
+node --test tests/*.test.mjs                        # 1,340 tests
 ```
 
 `npm test` runs `npm run build` first and currently fails on a `MODULE_NOT_FOUND` in the build step;

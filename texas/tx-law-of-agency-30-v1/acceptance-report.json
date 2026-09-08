@@ -4,7 +4,7 @@
   "approvalForm": "LOA-1 rev. 09/11/2024",
   "contentFreeze": "LOA-CONTENT-FREEZE-2026-09-07-v7",
   "generatedBy": "scripts/loa-acceptance-report.mjs",
-  "generatedAt": "2026-09-08T04:46:22.315Z",
+  "generatedAt": "2026-09-08T05:31:13.637Z",
   "confidentiality": "Counts, hashes, percentages and behaviour outcomes only. No item text, choice, key or rationale from the secure bank appears in this report.",
   "verdicts": {
     "contentAndAssessment": "GO",
@@ -141,7 +141,7 @@
     {
       "label": "23. full regression suite",
       "ok": true,
-      "detail": "1339 passing, 0 failing"
+      "detail": "1340 passing, 0 failing"
     },
     {
       "label": "24. submission-readiness blockers recorded",
@@ -155,7 +155,7 @@
     "the codified 22 TAC text has never been read from this environment; the rules are held from TREC's published copy and the difference is recorded in trec-rules-source-lock.mjs",
     "StateCourse holds no TREC qualifying-education provider approval, and no course application has been filed for LOA-1",
     "no STUDENT-facing surface exists. The engine workflow and accessibility are demonstrated against a reviewer-only, non-credit surface at texas/tx-law-of-agency-30-v1/reviewer-surface, which is not served, not linked and carries noindex. A student-facing deployment, and testing with real assistive technology and real users, remain outstanding.",
-    "no Texas video has been rendered. The three editorial packages are frozen and validated, and the optional, non-blocking screenMedia integration hook is implemented and tested. Transcripts remain the primary artifact and every proposition a segment would state is already in the module text, so no student is dependent on an unproduced video; activation still requires final MP4, poster, VTT, plain-text transcript, and factual, visual, logo-safety, and accessibility approvals.",
+    "no production Texas video has been rendered and approved. A short local HeyGen test render exists only for presenter/voice review; it is ignored by git, is not a course asset, and is not activated. The three editorial packages are frozen and validated, and the optional, non-blocking screenMedia integration hook is implemented and tested. Transcripts remain the primary artifact and every proposition a segment would state is already in the module text, so no student is dependent on an unproduced video; activation still requires final MP4, poster, VTT, plain-text transcript, and factual, visual, logo-safety, and accessibility approvals.",
     "the claim auditor is anchored on the section symbol and cannot see prose-form citations; the mechanical-pass figures describe symbol-anchored citations only, and correcting the shared engine will alter hashed ledgers for Principles II as well as this course",
     "certificate issuance and four-year record retention are implemented and refused/recorded in the engine, but neither has been exercised against a real completion because no credit may be awarded without TREC approval"
   ]

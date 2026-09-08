@@ -1,0 +1,133 @@
+{
+  "source": "texas/trec-sources/forms/IABS-1-2.pdf",
+  "sourceSha256": "5056930b66d237a7a4376db0c43f833929600f0b6e5ce6e42a417da824ef6b20",
+  "renderScale": 4,
+  "canvas": [
+    1920,
+    1080
+  ],
+  "backgroundRgb": [
+    246,
+    241,
+    232
+  ],
+  "assets": {
+    "iabs-full.png": {
+      "sha256": "5b6c2047d4ebd17a246d9e2ed02154b1469689c09e7362795ddcebd401d803c2",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sourceBoxPoints": [
+        0,
+        612,
+        0,
+        792
+      ]
+    },
+    "iabs-band-a.png": {
+      "sha256": "7d434c394604f091eb76d4d5c6a38aaa782ce8a901cb7cdee2293dd56fbd6c27",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sourceBoxPoints": [
+        20,
+        600,
+        12,
+        74
+      ]
+    },
+    "iabs-band-b.png": {
+      "sha256": "27c870c7c9aa655a3faa7788c0ad13e5fd125e983e30997ae3c8085d22e72a0f",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sourceBoxPoints": [
+        20,
+        600,
+        73,
+        114
+      ]
+    },
+    "iabs-band-c.png": {
+      "sha256": "b0aa67e30d762a63540fb81cb306b3c450f0dc658f6c730f0188456868852e8c",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sourceBoxPoints": [
+        20,
+        600,
+        112,
+        175
+      ]
+    },
+    "iabs-band-d.png": {
+      "sha256": "b43303183591c4606e63d41bc471de728f9f93b86ef4b96a10401debd1331ec6",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sourceBoxPoints": [
+        20,
+        600,
+        172,
+        255
+      ]
+    },
+    "iabs-band-e.png": {
+      "sha256": "2e7872a31a52be7f7824387db85b388ac2530736ed975acd2a5e4d11348dd5b4",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sourceBoxPoints": [
+        20,
+        600,
+        252,
+        370
+      ]
+    },
+    "iabs-band-f.png": {
+      "sha256": "26a76b86c55cb52bea617eafd5249595637eea6d6659da10821afe73aa1a34ce",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sourceBoxPoints": [
+        20,
+        600,
+        368,
+        492
+      ]
+    },
+    "iabs-band-g.png": {
+      "sha256": "e754a7b3b6783487b29367c29ad719906a5bac653c1d720ef322c055cb338fae",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sourceBoxPoints": [
+        20,
+        600,
+        490,
+        592
+      ]
+    },
+    "iabs-band-h.png": {
+      "sha256": "4dab2832ad492fb94290f2a44e1c2dd80069ac09a483c4d5066285e86470dfda",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sourceBoxPoints": [
+        20,
+        600,
+        592,
+        791
+      ]
+    }
+  }
+}
