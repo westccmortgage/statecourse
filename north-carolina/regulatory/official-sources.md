@@ -1,7 +1,7 @@
 # North Carolina official-source ledger
 
 **Control date:** 2026-09-07
-**Manifest:** `NC-PHASE0-2026-09-07-v18`
+**Manifest:** `NC-PHASE0-2026-09-07-v19`
 **Regulatory status:** Not approved. Enrollment and credit delivery are closed.
 
 The machine-readable controlling record is
@@ -87,7 +87,7 @@ No commercial school, law-firm summary, aggregator, or search snippet is control
 | Material-fact boundaries | G.S. 39-50; NCREC polybutylene guidance | statutory stigma exclusions, truthfulness and known/probable pipe defects | [G.S. Chapter 39 Article 9](https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/ByArticle/Chapter_39/Article_9.html), [2025 guidance](https://bulletins.ncrec.gov/polybutylene-pipes-is-the-mere-presence-material/) |
 | North Carolina broker discrimination rules | 21 NCAC 58A .0120(d), .1601 | protected-basis brokerage conduct and State Fair Housing Act violation | [OAH Chapter 58](https://reports.oah.state.nc.us/ncac/title%2021%20-%20occupational%20licensing%20boards%20and%20commissions/chapter%2058%20-%20real%20estate%20commission/chapter%2058%20rules.pdf) |
 | Affiliated and out-of-state compensation | G.S. 93A-9; 21 NCAC 58A .0120(b), .1808; NCREC guidance | BIC payer, no-entry referral condition, separate limited-commercial route | [§93A-9](https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_93A/GS_93A-9.html), [2024 guidance](https://bulletins.ncrec.gov/can-i-get-paid/), [foreign-broker guidance](https://bulletins.ncrec.gov/compensation-issues-how-to-handle-them/) |
-| License Law and Rules Comments | NCREC LLCR | syllabus-directed trust-account comments, current bytes unavailable | [Official LLCR route](https://www.ncrec.gov/pdfs/licensing/licenselawcomments.pdf) |
+| License Law and Rules Comments | NCREC LLCR | syllabus-directed trust-account comments; former official route returned HTTP 404 on the control date | [Former LLCR route](https://www.ncrec.gov/pdfs/licensing/licenselawcomments.pdf) |
 | Power-of-sale foreclosure and deficiencies | G.S. Chapter 45 Article 2A; Judicial Branch guidance | upset bids, finality, fair-value defense and anti-deficiency rules | [Article 2A](https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/ByArticle/Chapter_45/Article_2A.html), [Judicial Branch](https://www.nccourts.gov/help-topics/housing/foreclosures) |
 | Loan Estimate and Closing Disclosure timing | 12 C.F.R. §1026.19 | initial/revised LE timing, CD receipt, creditor responsibility and restart triggers | [CFPB Regulation Z](https://www.consumerfinance.gov/rules-policy/regulations/1026/19/) |
 | Credit advertising and valuation independence | 12 C.F.R. §§1026.24, .42 | trigger terms and independent-valuation boundary | [CFPB Regulation Z](https://www.consumerfinance.gov/rules-policy/regulations/1026/) |
@@ -115,7 +115,7 @@ No commercial school, law-firm summary, aggregator, or search snippet is control
 ## Verification limitations and conflict resolution
 
 The capture ledger began with 19 unique PDF URLs representing 21 source entries. Sixteen OAH URLs
-timed out and the NCREC syllabus returned HTTP 403. On September 7 six current public NCREC artifacts
+timed out and the NCREC syllabus initially returned HTTP 403. On September 7 six current public NCREC artifacts
 were added: RPOADS, MOG, the 2026 Residential Square Footage Guidelines, WWREA, the WWREA Q&A and the
 subdivisions/planned-communities Q&A. Their 39 brochure/form/guide pages were all rendered and visually
 checked against digital text. Module NC-09 then added the April 2026 HUD neighborhood-information letter
@@ -123,8 +123,10 @@ and September 2025 HUD FHEO withdrawal notice, whose 11 pages were likewise reta
 The April 2026 RELINC handbook was then re-fetched without byte changes and all 36 pages were rendered
 and reviewed; Form L-09 was likewise re-fetched unchanged and its three-page review revalidated.
 The dead September 2024 HUD lead-fact-sheet URL was then superseded by the current EPA-hosted joint
-EPA/HUD January 2025 fact sheet; both pages were retained and reviewed. Eleven source PDFs now have
-verified bytes and all eleven have current all-page review, covering 91 pages.
+EPA/HUD January 2025 fact sheet; both pages were retained and reviewed. A later control-date retry of the
+official NCREC syllabus route succeeded: the March 2024 edition amended May 2026 was retained, and all 108
+pages were rendered and reviewed. Twelve source PDFs now have verified bytes and all twelve have current
+all-page review, covering 199 pages.
 `captures/2026-09-06/capture-log.json`
 preserves requests, final URL where a
 response arrived, content type, status, hashes and exact failures; `page-reviews.json` binds review
@@ -139,7 +141,8 @@ later expanded again during the Module NC-10 pass to include Rules .0111 and .01
 NCREC PDFs and the 58B rule range; the later Module NC-08/15 brochure pass added two more NCREC PDFs.
 The machine ledger now contains 48 PDF source entries across 45 unique URLs. The global source state
 remains **INCOMPLETE** because most rule/source PDFs still lack current captured bytes and review; the
-eleven reviewed artifacts do not conceal that broader gap.
+twelve reviewed artifacts do not conceal that broader gap. The OAH host still times out, and the former
+LLCR PDF route now returns HTTP 404 rather than a current publication.
 
 Module NC-04 was reconciled on September 7 to current official property-tax and excise-tax statutes,
 26 U.S.C. §121, FEMA and CFPB guidance. That review found a real syllabus conflict: the fourth-year

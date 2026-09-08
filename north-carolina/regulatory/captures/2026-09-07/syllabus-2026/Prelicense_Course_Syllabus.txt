@@ -1,0 +1,5216 @@
+North Carolina Real Estate
+Prelicensing
+Course Syllabus
+(Student Version)
+
+
+
+March 2024 Edition
+Amended May 2026
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+North Carolina Real Estate Commission
+P.O. Box 17100
+Raleigh, NC 27619
+(919) 875-3700
+Email: educ@ncrec.gov
+
+
+
+© March 2024 by North Carolina Real Estate Commission
+All rights reserved
+
+
+
+ii Prelicensing Course Syllabus © March 2024 North Carolina Real Estate Commission
+Major topics
+•
+•
+•
+•
+•
+•
+•
+•
+•
+•
+•
+basic real estate concepts and law
+property taxation
+land use controls
+environmental hazards
+brokerage relationships and
+practices
+real estate contracts
+real estate financing
+closing a real estate sale transaction
+real property valuation
+property insurance basics
+fair housing laws
+•
+•
+•
+•
+•
+•
+•
+landlord and tenant
+property management
+federal income taxation of real
+estate
+basic construction
+basic real estate investment
+North Carolina Real Estate License
+Law
+North Carolina Real Estate
+Commission Rules and Trust
+Account Guidelines
+INTRODUCTION
+
+Mission Statement: The Prelicensing Course is an introductory level real estate
+principles and practices course with heavy emphasis on real estate brokerage law
+and practice.
+
+Required Course for Real Estate Licensure in North Carolina: Successful
+completion of the Prelicensing Course is generally required to qualify for the North
+Carolina real estate license examination and to obtain a North Carolina real estate
+broker license.
+Course Description: This course is intended to
+(1) provide students with the basic knowledge and skills necessary to act as a
+licensed real estate broker in a manner that protects and serves the public
+interest; and
+(2) prepare students for the North Carolina real estate license examination.
+
+
+Requirements for Offering the Course : This course may only be offered by
+Commission-certified Education Providers (EPs) that have received course approval
+for each specific course delivery method. EPs may only use instructors approved by
+the North Carolina Real Estate Commission to teach Prelicensing and Postlicensing
+courses. Rules governing the conduct of the course, including scheduling, course
+delivery, course completion standards, course completion reporting, and other
+related matters may be obtained on the Commission website ( www.ncrec.gov). The
+Prelicensing Course must be taught as prescribed by the Commission in this Syllabus.
+
+Course Hours and Delivery Method:  The Prelicensing Course must consist of a
+minimum of 75 instructional hours, although approved Education Providers may, at
+their option, schedule the course for more than 75 hours. The course may be offered
+
+
+
+iii Prelicensing Course Syllabus © March 2024 North Carolina Real Estate Commission
+via in-person, synchronous distance, self -paced distance, or blended delivery. Pre -
+approval is required for each type of course delivery.
+
+Course Materials: Commission Rule 58H .0205(a) requires: “All courses shall have
+course materials that cover current North Carolina real estate related laws, rules, and
+practices. The nature and depth of subject matter coverage shall be consistent with
+the competency and instructional levels prescribed by the syllabus for the course for
+which approval is sought.”
+In addition to their own course materials, Education Providers must ensure that they
+provide and/or review all of the resources that are referenced throughout this
+Syllabus. Such resources include, but are not limited to:
+
+1) North Carolina Real Estate License Law and Commission Rules (Also
+including the Comments on the Law and Rules): Available for free download
+or as printed booklet for purchase on www.ncrec.gov
+2) Residential Square Footage Guidelines: Available for free download or as
+printed booklet for purchase on www.ncrec.gov
+
+3) North Carolina Real Estate Agent Safety Guide brochure published by the
+North Carolina Real Estate Commission and the North Carolina Association of
+REALTORS® Real Estate Safety Council: Available for free download or as
+published booklet for purchase on www.ncrec.gov
+
+4) NC REALTORS® Offer to Purchase and Contract – Standard Form 2-T (as
+indicated in the Syllabus): Available via ShareFile to approved instructors and
+education directors.
+
+5) Real Estate Licensing in North Carolina (RELINC):
+download or as a printed booklet for free on www.ncrec.gov
+6) Various Course Topics / Sections from Update Courses
+
+7) Various Disclosure Forms and Publications
+Available for free
+
+
+Course Scheduling: Refer to Commission Rule 58H .0404 for course scheduling
+parameters.
+Instructor Note: Educators should always use the current edition of the Real Estate
+Licensing in North Carolina booklet (hereinafter called RELINC), the North Carolina Real
+Estate Manual (hereinafter called Manual), and North Carolina Real Estate License Law and
+Commission Rules (hereinafter called LLCR) as major resources; they can be ordered in print
+or digital format through the Commission’s website . Copies of standard NC REALTORS®
+forms required for teaching this course may be downloaded (by instructors and education
+directors) from your ShareFile account ( https://ncrec.sharefile.com) with SAMPLE
+watermarked across each page.
+
+
+
+iv Prelicensing Course Syllabus © March 2024 North Carolina Real Estate Commission
+Instructor Note: EPs and instructors are REQUIRED to comply with the Instructor Notes
+and conduct “Required Activities” when teaching this course. “Suggested Activities” are
+offered to spur the educator’s creative ideas and are not required to be implemented.
+Instructor Conduct and Performance: Commission Rule 58H .0304
+a) All instructors shall ensure that class sessions are conducted at the scheduled
+time and for the full amount of time that is scheduled or required. Instructors shall
+conduct courses in accordance with the Commission's rules, and any applicable
+course syllabi, instructor guide, or course plan. Instructors shall conduct classes
+demonstrating the ability to:
+1) state student learning objectives at the beginning of the course and present
+accurate and relevant information;
+2) communicate correct grammar and vocabulary;
+3) utilize a variety of instructional techniques that require students to analyze
+and apply course content, including teacher-centered approaches, such as
+lecture and demonstration, and student -centered approaches, such as
+lecture discussion, reading, group problem solving, case studies, and
+scenarios;
+4) utilize instructional aids, such as:
+A) whiteboards;
+B) sample forms and contracts;
+C) pictures;
+D) charts; and
+E) videos;
+5) utilize assessment tools, such as:
+A) in-class or homework assignments, and
+B) quizzes and midterm examinations for Prelicensing and Postlicensing
+courses;
+6) avoid criticism of any other person, agency, or organization;
+7) identify key concepts and correct student misconceptions; and
+8) maintain control of the class.
+b) Instructors shall not obtain, use, or attempt to obtain or use, in any manner or
+form, North Carolina real estate license examination questions.
+
+
+Real Estate Mathematics Instruction : Instruction on relevant mathematical
+functions is to be provided under the appropriate subject areas rather than as a
+separate arithmetic course section. To assist instructors, however, all required real
+estate mathematics instruction is listed in Section XVI of the Outline. Consideration
+was given to the amount of mathematics involved in each subject area when
+establishing the recommended number of instructional hours for subject areas. This
+integrated approach is recommended because it helps assure that students
+understand how various mathematical functions relate to the various areas of real
+estate practice. Instruction in basic mathematics concepts such as decimals,
+fractions, percentages, multiplication, division, etc. is not included in this course
+syllabus. Students deficient in basic math skills should be provided special assistance
+outside of class or directed to take a math refresher course.
+
+
+
+v Prelicensing Course Syllabus © March 2024 North Carolina Real Estate Commission
+End-of-Course Examinations and Course Completion Standards: For
+successful completion of the course, students must
+1) satisfactorily complete any required activities and homework exercises,
+2) meet attendance requirements, and
+3) pass the end-of-course examination.
+Regarding homework exercises, instructional time should only be used for the
+introduction, and review upon completion, of the assignment(s).
+EPs are required to utilize end -of-course examinations in accordance with
+Commission Rule 58H .0207. End-of-course exams must be comprehensive, closed-
+book, and proctored. The minimum passing grade is 75%. EPs, at their option, may
+require a higher passing grade and/or other assessments. EPs and instructors shall
+safeguard the integrity and confidentiality of examinations at all times.
+
+Syllabus Copies:
+• The Student Course Syllabus is posted on the Commission’s website, under
+Education.
+• EPs and instructors may reproduce all or part of the Syllabus for student use
+at their own expense, and may charge students for the cost of reproduction.
+
+Presentation Order: Educators are NOT required to teach topics in the order of this
+syllabus. In fact, doing so would be difficult. For example, teaching the basics of
+agency for the National section separate from agency as practiced in North Carolina
+would be awkward and possibly have a negative impact on student understanding of
+the overall agency topic. Educators are expected to deliver the content in an order
+that is logical and conducive to retention of the information.
+
+Instructional Levels: The Commission utilizes Instructional Levels to prescribe the
+scope and depth of coverage of topics and subtopics throughout the course. There
+are three levels, with Level 1 being the lowest and Level 3 being the highest level of
+instruction. Instructional Levels are based on Bloom’s Taxonomy.
+
+Below are the definitions of the three Instructional Levels, including the prescribed
+competency and instruction for each. Competency means what students will be able
+to do by the end of the topic/subtopic coverage. Instruction means the prescribed
+depth of coverage and instructional methods.
+
+Level 1 – Recall
+
+NOTE: Level 1 is based on Bloom’s Taxonomy Level 1-Understand and Level 2-
+Remember.
+
+Competency:  Students should be able to recall facts and basic concepts and to
+explain ideas or concepts. Learning objectives may include terms
+such as define, duplicate, classify, explain, and describe.
+
+
+
+vi Prelicensing Course Syllabus © March 2024 North Carolina Real Estate Commission
+
+Education providers and instructors are REQUIRED to comply with the assigned
+Instructional Levels when teaching this course.
+Instruction:  Instructor should review and discuss basic definitions, facts,
+concepts, procedures, etc. In-depth instruction is not required.
+
+
+
+Level 2 – Application
+
+NOTE: Level 2 is based on Bloom’s Taxonomy Level 3-Apply and Level 4-Analyze.
+
+Competency:   Students should be able to use information in new situations and
+to draw connections among ideas.  Learning objectives may
+include terms such as implement, solve, demonstrate, interpret,
+differentiate, relate, compare, and contrast.
+
+Instruction:  Instructor should review and discuss the topic in moderate depth
+sufficient to illustrate and enhance understanding of facts,
+principles, procedures, etc. and their relevance to brokerage
+practice.
+
+Level 3 –Analysis
+
+NOTE: Level 3 is based on Bloom’s Taxonomy Level 5-Evaluate and Level 6-Create.
+
+Competency:  Students should be able to justify a stand or decision and to
+produce new or original work based on the information. Learning
+objectives may include terms such as defend, judge, critique,
+weigh, design, assemble, develop, or formulate.
+
+Instruction:  Instructor should review and discuss the topic in substantial
+depth, using examples to reinforce understanding of ideas,
+principles and practices, and requiring students to complete
+practical work assignments to demonstrate both their
+understanding of the topic and their ability to apply their
+knowledge to common fact situations that will be encountered in
+real estate practice.
+
+Each major topic (i.e., preceded by a capital letter) in this Syllabus has been assigned
+an Instructional Level.  In some instances where a subtopic should be afforded
+significantly greater or lesser emphasis than the major topic under which it is listed,
+that subtopic has been assigned a different Instructional Level that applies to that
+subtopic only.
+
+
+
+
+vii Prelicensing Course Syllabus © March 2024 North Carolina Real Estate Commission
+RECOMMENDED MAJOR SUBJECT AREA EMPHASIS
+
+
+
+
+Major Subject Area
+Number of
+Hours
+
+Licensure
+
+2.0
+Basic Real Estate Concepts 1.0
+Property Characteristics, Description, & Use 4.0
+Property Ownership Types and Transfers 6.0
+Property Disclosures 6.0
+Taxation & Insurance 4.0
+Agency 13.0
+Contracts and Closing 18.0
+Real Estate Financing 7.0
+Real Property Valuation 6.0
+Fair Housing/Anti-discrimination 1.5
+Landlord/Tenant & Property Management 3.5
+End-of-course Examination 3.0
+TOTAL INSTRUCTIONAL HOURS 75
+
+
+
+
+Note: There is no separate timing for coverage of Real Estate License Law and
+Commission Rules, Agent Safety, and Real Estate Mathematics because all of them
+should be appropriately scattered throughout the course.
+
+
+
+viii Prelicensing Course Syllabus © March 2024 North Carolina Real Estate Commission
+TABLE OF CONTENTS
+
+
+Section Exam Categories Page
+I. NC Real Estate Licensure (S) 1
+Licensing Process-Licensing Qualifications-The Commission-
+General Licensing
+II. Broker Supervision & Compensation (S) 4
+Supervision-Earning Brokerage Compensation
+III. Property Characteristics, Legal Descriptions & 6
+Property Use (N)
+Basic RE Concepts-Ownership/Interests-Fixtures-Encumbrances-
+Legal Descriptions-Land Use
+IV. Property Taxes & Insurance (N) 11
+Ad valorem & Excise Taxes-Homeowner & Flood Insurance-
+Federal Income Taxation of Home Ownership
+V. Property Disclosures & Environmental Issues (N) 16
+Property Disclosure-Environmental Issues-EPA
+VI. Forms of Ownership, Transfer & Recording of Title (N) 18
+Estates-Ownership-Common Interest-Appurtenant Rights-Liens-
+Title Transfer-Deeds
+VII. Real Estate Contracts & Agency (N) 26
+Basic Contract-Reality of Consent-General Contract Concepts-
+Basic Sales Contract Concepts-Contract Forms-Agency Overview
+VIII. Agency in NC (S) 35
+Agency Disclosure-Dual Agency-Agent Duties-Agency Contracts-
+Listing Practices-Working with Buyers-Property Management
+IX. Real Estate Practice (N) 43
+Broker Responsibility-Broker Agreements-Fair Housing-Risk Management
+X. Brokerage Practice in NC (S) 49
+Regulated Practices: Land Use-Environmental-Delivery-Advertising-Retention
+Prohibited Practices: Material Facts-Discrimination-Practice of Law-Improper
+Brokerage-Disclosure of Offers-Failure to Deliver Settlement-Commingling
+XI. Contracts & Closing in NC (S) 54
+Basic Contract Info-OPC-Addendum-Sales Contract & Closing Procedures
+XII. Financing & Settlement (N) 65
+Basic Finance-Residential Loan Categories-Types of Mortgage Loans-
+Lending Practices-Federal Legislation-RESPA-Settlement Statement
+
+
+
+ix Prelicensing Course Syllabus © March 2024 North Carolina Real Estate Commission
+XIII. Property Valuation & Appraisal (N) 76
+Appraisal Regulations-Valuation Concepts-Valuation Process-
+Approaches to Value
+XIV. NC Landlord and Tenant Concepts (S) 82
+Laws Protecting Residential Tenants-Tenant Security Deposit Act-
+Vacation Rental Act-Management Contracts
+XV. Other Relevant NC Laws (S) 85
+Ownership in NC-Connor Act-Marketable Title Act-Statute of Frauds-
+RPOADS-Antidiscrimination-Timeshare Act-
+Other Disclosure Issues: Stigmatized Properties-Unfair & Deceptive Trade
+Practices Act-Caveat Emptor-Square Footage-Construction-Subdivisions-
+Street Disclosure-Onsite Septic-Liens-NC Lead Based Paint
+XVI. Real Estate Math Calculations (N) 96
+
+
+
+10 Prelicensing Course Syllabus © March 2024 North Carolina Real Estate Commission
+
+
+
+
+1
+BROKER PRELICENSING
+COURSE SYLLABUS
+
+Legend:
+Notes contain testable points and important information about testing parameters.
+Italicized terms are basic terms for which students should know the definitions.
+Required Activities must be completed as part of the course; additional activities may
+be required by the Education Provider for successful completion of the course.
+Math calculations should be addressed throughout the course as part of each
+appropriate topic.
+Law & rule references are included where relevant with hyperlinks. Instructors and
+students are strongly encouraged to read actual North Carolina General Statutes
+(NCGS) and Commission rules when referenced. Students will be tested on concepts,
+not on law or rule numbers.
+
+
+Section I: NC Real Estate Licensure [Level 1 unless otherwise noted]:
+State Exam Category (3 Items)
+A. Licensing Process
+Note: This Section includes several videos to explain the licensing process. Watch
+Overview of the Licensing Process (3:18) now.
+
+1. Prelicensing Education
+
+2. Application
+3. Consideration of Applicant’s Character
+
+a. Criminal Record Report (CRR)
+Note: To allow plenty of time to submit a license application, students are encouraged
+to wait to order their criminal record report until they are successfully through at least
+half of the Prelicensing course, because the report is only valid for 6 months. Be aware
+that reports for multiple names or residency in multiple states or other countries will
+take longer to obtain.
+b. Petition for Pre-Determination
+Note: An individual with a criminal history record may petition the Commission for a
+predetermination of whether that history will likely disqualify the individual from
+obtaining a license. Detailed info is available on NCREC website under Licensing/Apply
+for a License.
+4. License Examination
+Note: Watch Basic Info about the NC License Examination (4:17) now.
+a. Examination format
+
+b. Applying for & scheduling an examination
+
+
+
+2
+Note: Watch Scheduling an Exam with Pearson (3:56). Please be aware of the
+following points:
+- A student can begin the on-line NCREC license application but cannot complete
+it until the EP reports their passing of the Prelicensing Course to NCREC.
+- The Prelicensing Course is valid for licensing purposes for 3 years from the course
+completion date on the certificate received after passing the end-of-course exam.
+- Once a license applicant has all the required parts of the license application (proof
+of course completion; criminal record report; complete on-line application), the
+$105 application fee is paid to submit the app.
+- The license candidate will be emailed a Notice of Exam Eligibility that notes their
+180-day Exam Eligibility Period during which the license candidate must pass
+both the National and State section of the license examination.
+- Candidates will automatically receive a separate Authorization to Test email from
+Pearson with a link for testing registration.
+- By contract with NCREC, Pearson  must provide a candidate at least one testing
+opportunity at the candidate’s preferred test center within 7 days of the
+candidate attempting to schedule an exam. The candidate does not have to
+accept that offered testing date and time, and can opt to test more than 7 days
+after contacting Pearson.
+- These steps must be repeated every time a candidate needs to retake one or
+both exam sections, they must log into their applicant portal on the NCREC
+website, pay another $105 application fee, and resubmit a license application.
+- The examination fee for every time a candidate takes the comprehensive 2-part
+exam is $63. The cost will be $53 if only one examination section is being taken.
+- By rule, the earliest that a candidate can retest is on the 10th day after their last
+testing date, IF there are at least 10 days remaining in their current Exam
+Eligibility Period.
+- If both exam sections are not passed within the same 180 -day Exam Eligibility
+Period, the candidate must submit a new license application including a new
+criminal record report before obtaining eligibility to test again. Any exam section
+that was passed in the previous eligibility period is forfeited.
+Note: Watch Touring a Pearson Test Center (3:17) now.
+
+c. Other examination information
+5. Licensee Information
+Note: A license candidate is required to keep the information on their application
+accurate, including email and phone contact information.
+B. License Qualification Requirements [Level 2 unless otherwise noted]
+Note: On the National exam section, a salesperson is an entry-level licensee, similar to
+a provisional broker in NC. Watch Real Estate Licensing Requirements (5:04).
+
+1. Basic Licensing Requirement [NCGS 93A-1]
+
+2. License Categories [Level 1]
+a. Provisional Broker, Broker and Broker-In-Charge [NCGS 93A-2(a), 2(a1) and 2(a2)]
+
+b. Limited Nonresident Commercial Broker [NCGS 93A-9(b); Commission Rules 58A
+.1801, 58A .1803(a), 58A .1806, 58A .1807(a)-(c), 58A .1808]
+
+
+
+3
+c. Licensing of business entities (firms) [NCGS 93A-1 and 2; Commission Rule 58A
+.0502]
+
+3. Activities Requiring a License [NCGS 93A-2(a)]
+a. Listing (or offering to list) real estate for sale or rent
+
+b. Selling or buying (or offering to sell or buy) real estate
+c. Leasing or renting (or offering to lease or rent) real estate
+
+d. Conducting (or offering to conduct) a real estate auction
+
+e. Selling, buying, leasing, assigning or exchanging any interest, in connection with
+the sale or purchase of real estate
+f. Referring a party to a real estate licensee, if done for compensation
+
+4. Permitted Non-brokerage Activities of Unlicensed Assistants/ Employees
+
+5. Exempt Activities [NCGS 93A-2(c)]
+a. Business entity selling or leasing entity-owned real estate
+
+b. Attorney-in-fact
+c. Attorney–at-law
+
+d. Person acting under a court order (e.g., receiver, trustee, guardian, administrator,
+executor)
+
+e. Trustee
+f. Salaried employees of broker-property managers
+
+g. Individual property owner selling or leasing personally owned real estate
+h. Housing authority under NCGS 157
+
+C. The Real Estate Commission
+1. Composition [NCGS 93A-3(a)]
+
+2. Purpose and Powers [NCGS 93A-3(a), (c) and (f); NCGS 93A-6; NCGS 93A-4(d), 4A
+and 4.2 & 4.3; NCGS 93A-9]
+
+3. Disciplinary Authority [NCGS 93A-6(a)-(c)]
+D. General Licensing Provisions
+Note: This Section is not discussed in the LLCR but must be covered.
+
+
+
+4
+1. Licensing of Individual Persons [NCGS 93A-4(a) and (a1); Commission Rules Section
+58A .1900]
+
+a. Provisional Broker (PB): prelicensing and postlicensing education requirements
+b. Termination of provisional status and consequence of not satisfying postlicensing
+education requirement
+Note: Be aware that credit for postlicensing courses is only valid for 2 years from
+date of completion [Commission Rule 58A .1902(d)(1)].
+2. License Expiration and Renewal [NCGS 93A-4(c); Commission Rule 58A .0503]
+
+3. Continuing Education [NCGS 93A-38.5; Commission Rule Section 58A .1700]
+
+4. Active and Inactive License Status [Commission Rule 58A .0504]
+5. License Reinstatement [NCGS 93A-4(c); Commission Rule 58A .0505]
+
+6. Payment of License Fees [NCGS 93A-4(a); Commission Rule 58A .0507]
+7. Proof of Licensure [Commission Rule 58A .0101(a)-(d)]
+
+8. Change of Name or Address [Commission Rule 58A .0103]
+9. Reporting Criminal Convictions [Commission Rule 58A .0113]
+
+
+
+
+Section II: Broker Supervision & Compensation [Level 3 unless otherwise noted]:
+State Exam Category (4 Items)
+A. Supervision
+Note: This Section is not discussed in the LLCR but must be covered.
+
+1. Broker Supervision of Provisional Brokers [NCGS 93A-2(b); Commission Rule 58A
+.0506]
+2. Broker-in-Charge [NCGS 93A-2(a1) and 93A-4.2; Commission Rule 58A .0110 9(g)(1,
+3, 4, 5, 6, 7, & 10)] [Level 1]
+
+B. Earning a Real Estate Brokerage Fee (Sales) [NCGS 93A-6(a)(9); Commission Rule 58A
+.0109]
+1. Earning Compensation as a Listing Agent
+a. Legal requirements for establishing claim to compensation
+
+i. Current real estate license on active status
+ii. Valid written listing contract
+iii. Procurement of Ready, Willing and Able Buyer
+iv. Procuring Cause Doctrine
+
+
+
+5
+v. Entitlement to fee if broker has fulfilled contract duties even when contract does
+not close, when/if:
+▪ Seller refuses to close
+▪ Seller’s spouse will not sign the contract or deed
+▪ Seller has a uncorrected defect in the title
+▪ Seller is unable to deliver possession within a reasonable time
+▪ Seller insists on sales terms and conditions not stated in the listing contract
+▪ Buyer and seller conspire after the sales contract has been signed and agree
+to cancel the contract
+b. Sharing of the listing broker's compensation
+i. The in-house sale
+▪ How earned brokerage fee is split
+▪ Ability to receive compensation determined by employment agreement
+between broker and brokerage company
+▪ Affiliated provisional brokers must be compensated by supervising BIC
+[NCGS 93A-6(a)(5)]
+▪ Affiliated “full” brokers must be compensated by supervising BIC
+[Commission Rule 58A .0120(b)]
+ii. The co-brokered sale
+▪ Ability to receive compensation from the listing company is negotiated
+between parties
+▪ Cooperative listing service agreements
+iii. Co-brokerage with broker licensed in another state
+▪ Out-of-state (foreign) broker must hold an active real estate license in the
+state from which they are conducting the brokerage activity, such as placing
+a referral, and
+▪ Foreign broker does not enter NC any time during the transaction to engage
+in any brokerage activity related to the transaction
+
+2. Earning Compensation as a Buyer Agent
+a. Legal requirements for establishing claim to compensation
+
+i. Current real estate license on active status
+ii. Valid written buyer agency contract
+iii. Procurement of property described in agency agreement that
+buyer agrees to purchase by enforceable contract
+▪ Retainer Fee and Success Fee
+▪ Sharing in the Listing Broker’s Fee
+
+b. Legal payment to broker with an expired or inactive license status
+i. License must be on active status when brokerage activity is performed
+ii. Broker must stop all brokerage activity when license expires or becomes
+inactive
+Note: If the licenses of the firm and the individual broker were both on active
+status at the time that any brokerage service was rendered in the transaction, then
+the firm may be paid compensation and the firm may in turn pay the individual
+broker, even if their license is not active at the time of payment. Payment is
+forfeited if either of the licenses were not active at any time that services were
+being performed.
+
+
+
+6
+Section III: Real Property Characteristics, Legal Descriptions & Property
+Use [Level 1 unless otherwise noted]:
+National Exam Category (9 Items)
+A. Basic Real Estate Concepts
+1. Basic Terminology and Definitions
+
+a. Land
+
+b. Real estate
+c. Real property
+
+d. Personal property
+Note: The terms real property, real estate and land are often used interchangeably.
+2. Physical Characteristics of Land
+
+a. Immobility
+b. Indestructibility
+
+c. Uniqueness (non-homogeneity)
+3. Economic Characteristics of Land
+
+a. Scarcity
+b. Location (situs or area preference)
+
+c. Improvements (modifications)
+
+d. Permanence of investment (fixity)
+4. Scope of the Real Estate Business
+
+5. The Real Estate Market
+B. Property Ownership and Interests [Level 2 except as noted below]
+
+1. The Concept of Property
+a. Real property
+
+b. Personal property (chattel or personalty)
+i. Movable items
+ii. Severance vs. annexation/attachment
+iii. Transferred by Bill of Sale
+
+
+
+7
+Required Activity: Use pictures to help students recognize items that might
+cause confusion in a transaction. Have students apply the Total Circumstances
+Test to predict how a judge might rule if the issue went to court.
+c. Fruits of the soil [Level 1– this subtopic]
+
+i. Fructus naturales
+ii. Fructus industriales (emblements)
+d. Fixtures [Level 3 – this subtopic]
+
+
+i. Total Circumstances Test
+
+▪ Used in court when contract terms are silent about an item; written contract
+terms should clarify intent of contract parties
+▪ Four (4) test criteria for determining if item is a fixture
+o Intent of annexor
+o Relationship of annexor to property
+o Method of annexation
+o Adaption to real estate
+Note: All 4 criteria must be present to indicate that an item is a fixture. Most
+standard listing agreements and sales contracts include a list of common
+items that will be considered fixtures for the transaction unless otherwise
+addressed in the document.
+
+ii. Trade fixtures
+e. Improvements (modifications) [Level 1– this subtopic]
+
+i. Improvements to the land
+ii. Improvements on the land
+iii. Depending on context, Improved Land or Improved Lot may have dual
+meanings
+Note: On the National exam section, an improvement is an appurtenance.
+
+2. Encumbrances to Real Property [Level 2 except as noted below]
+
+a. Liens (Discussion in Section VI)
+b. Special assessments (Discussion in Section VI)
+
+c. Lis pendens (notice of pending litigation)(Discussion in Section VI)
+d. Restrictive (protective) covenants (CC&Rs) (Discussion later in this Section)
+
+e. Easements
+i. Terminology
+▪ Dominant estate or tenement
+▪ Servient estate or tenement
+ii. General Categories
+▪ Appurtenant easement
+
+
+
+8
+Required Activity: Provide a deed and a survey that illustrate description
+by metes and bounds.
+Required Activity: Provide a visual illustration of an accompanying
+government survey description.
+▪ Easement in gross
+o Personal vs. commercial easement in gross
+Note: Distinguish from a license, which is a personal, revocable, non-
+assignable right, but not an encumbrance.
+
+iii. Creation of easements
+▪ Express
+▪ Implied
+▪ Arising by operation of law
+iv. Recordation of easements
+Note: An easement must be recorded to be binding against a purchaser of the
+servient estate.
+
+v. Termination of easements
+
+vi. Party wall (cross easements)
+f. Encroachments
+
+i. Examples
+ii. Usually detected by an up-to-date survey
+iii. Not discoverable by title search
+
+C. Understanding Legal Descriptions [Level 2 except as noted below]
+1. Property Description
+
+a. Adequacy of description
+
+b. Methods of describing real estate
+i. Metes and bounds
+
+
+▪ Primary method in original 13 colonies, including NC
+▪ Point-of-beginning (POB)
+▪ Outside boundaries are described through a series of calls
+
+
+▪ Descriptions include
+o Monuments
+o Distance (metes)
+o Course or direction (bounds)
+ii. Government (rectangular) survey system [Level 1 – this subtopic]
+
+▪ Primary method for states other than the original 13 colonies
+
+
+
+9
+Required Activity: Provide a copy of an approved subdivision plat map.
+Required Activity: Provide a copy of a residential property survey. Ideally the
+survey will show setbacks for buildings, utility easements, and possibly an
+encroachment from an adjacent parcel.
+▪ Division into squares based on the intersection of prime meridian lines (run
+north/south) and base lines (run east/west)
+▪ Township
+▪ Sections
+Note: Although this method is not used in NC, basic principles are subject to
+testing on the National section of the exam; no calculations are tested on the
+exam.
+iii. Reference to recorded plat (lot and block)
+
+iv. Reference to publicly recorded documents
+v. Informal reference (e.g., street address)
+2. Property Survey
+
+Note: A broker should never offer an opinion about accuracy of the parcel boundaries,
+whether improvements are properly located on the tract, where easements are located
+on the property, or similar matters; refer such queries to a licensed surveyor or civil
+engineer.
+
+a. Survey
+b. Title defects that would have been discovered by a property survey are frequently
+not covered by title insurance, if a survey was not performed as part of the
+transaction
+Note: A buyer should be strongly encouraged to order an updated survey as part
+of their due diligence process.
+D. Land Use Controls
+
+1. Public Controls in Land
+
+a. Governmental powers (PETE)
+i. Police power
+▪ For protection of public
+▪ Includes zoning & environmental laws
+ii. Escheat
+iii. Taxation
+iv. Eminent domain
+b. Zoning
+
+i. Brief historical overview
+ii. Zoning purposes and general guidelines
+iii. Zoning ordinances, systems (districts and codes) and administration
+▪ Administered primarily by city or county planning department
+
+
+
+10
+Required Activity: Provide examples of each of the following zoning
+concepts.
+▪ Local boards of adjustment generally handle requests for variances or
+special use permits
+▪ Extra-territorial jurisdictions (ETJ)
+iv. Zoning districts and codes
+Note: There is no uniformity of zoning codes; codes and their meanings can
+vary widely throughout the state.
+
+v. Zoning concepts, terminology and special procedures [Level 2 -this subtopic]
+
+
+▪ Nonconforming use
+Note: Buyer should never assume a nonconforming use can continue after
+transfer of ownership or destruction of improvements.
+
+▪ Illegal use
+▪ Zoning amendments
+▪ Variance
+▪ Special-use permit (or conditional-use permit)
+▪ Overlay district
+▪ Historic preservation zoning
+▪ Aesthetic zoning
+▪ Spot zoning
+▪ Cluster zoning
+▪ Buffer zone
+
+c. Urban and regional use planning
+Note: These exist to assure orderly and systematic development of land use.
+d. Subdivision statutes and regulations [Level 2 - this subtopic]
+
+i. Subdivision
+ii. Typical subdivision approval procedures (NC and elsewhere)
+▪ Preliminary planning phase
+▪ Review and approval phase usually by multiple municipal departments
+▪ Final subdivision plat approved and recorded
+e. Regulation of special land types
+
+i. Flood zones
+ii. Wetlands
+
+f. Highway access restrictions
+Note: Ability to access an existing public highway or street that abuts the property
+is a material fact; access may be restricted or forbidden by state or local
+municipality.
+
+
+
+11
+g. Interstate Land Sales Full Disclosure Act [USC 1701 et seq]
+
+i. Purpose
+ii. Land registration requirement
+iii. Application
+iv. Exemptions
+
+h. Government land ownership
+Note: Public ownership controls land for the benefit and use of the entire
+population, such as national/state/municipal parks, road system, and preservation
+of natural resources.
+
+2. Privately-Imposed Land Use Controls [Level 2 except as noted below]
+
+a. Restrictive/protective covenants Purpose
+i. Set forth in a deed or in a separately recorded declaration of covenants
+ii. Also called covenants, conditions and restrictions (CC&Rs)
+
+b. Typical matters addressed
+c. Covenants run with the land (appurtenant) and are binding on all subsequent
+owners
+
+d. Enforcement
+Note: When covenants differ from zoning regulations on a particular matter, the
+more restrictive of the two will control.
+
+
+
+
+
+Section IV: Property Taxes & Insurance [Level 2 except as noted below]:
+State Exam Category (4 Items)
+A. Ad Valorem Property Tax
+1. Ad valorem
+
+2. Tax Rate and Calculations
+
+a. NC real property tax rate is set annually by municipality (e.g., county and
+town/city)
+Note: A property located within a city or town limit in NC will be subject to both
+county and city/town taxes.
+
+b. NC tax rate is expressed as $xxx per $100 of assessed value
+
+
+
+12
+c. Many other states express the tax rate as a mill rate. A mill is 1/10th of a cent; a
+mill rate is described as mills per dollar of assessed value . [Example: A NC tax
+rate of $1.50 per $100 (which is $0.015 per dollar) is the same as a mill rate of 15
+mills per dollar.]
+Note: Either of the above tax rates may be cited in National exam section items
+and students must be able to perform calculations using either rate.
+
+d. Tax Calculations [Level 3 – this subtopic]
+3. All Real Property in NC is Subject to Taxation
+
+4. Appraisal and Assessment
+a. NC Machinery Act regulates taxation in NC
+
+i. Assessed value of real property for property taxation  purposes in NC must be,
+with few exceptions, its market value or “…its true value in money” at the time
+of assessment
+ii. State authority to tax delegated to local municipalities (e.g., county, city, town)
+iii. Octennial Reappraisal: NC real property must be reassessed every 8 years
+iv. Horizontal reappraisal by municipality possible in 4th year
+
+b. In other states, the assessed value for property taxation purposes may be a value
+that is less than market value – such as 50% of market value
+Note: National exam section items might mention an assessed value that is less
+than market value and these items should be answered based on the given
+information rather than on NC practice. Also, the term true market value should
+be assumed to mean market value.
+5. NC Property Tax Timetable
+
+a. January 1 = tax lien attaches to property
+Note: Real property tax liens attach to the property on the 1st day of listing period,
+even though the tax is not due until later in the year.
+
+b. January 31 = taxable real & personal property listing deadline
+c. July 1 = annual tax rate must be set by municipalities
+
+d. September 1 = annual tax bill is due and payable
+e. January 5 of next year = last day to pay current tax bill without late penalty
+Note: If the previous year’s taxes not paid by December 31, it is possible on
+January 1-5 for property to have taxes liens for two successive years that are both
+current.
+
+6. Special Priority of Real Property Tax Liens [NCGS 105-356]
+Note: Real property tax liens are superior to all other liens, charges, assessments,
+rights and claims regardless of when acquired.
+
+
+
+13
+B. NC Excise Tax [NCGS 105-228.30]
+1. Key concepts
+
+a. Paid by the grantor in NC; but may vary in other states
+b. Formerly called revenue stamps or deed transfer tax
+
+2. NC excise tax rate: $1.00 on each $500 (or portion thereof) of the total sales price
+
+3. Calculations [Level 3 – this subtopic]
+4. Local transfer tax (possible in some NC counties)
+Note: Excise tax always rounds up to a full dollar amount in NC; there are no cents.
+
+C. Homeowner’s (Hazard) property insurance basics
+1. Definitions [Level 1 – this subtopic]
+a. Insurance
+
+b. Insured
+c. Insurer
+
+d. Premium
+e. Condition
+
+f. Endorsement (rider)
+g. Exclusion
+
+h. Property (casualty) insurance
+
+i. Liability insurance
+2. Package insurance [Level 1 – this subtopic]
+
+a. Combination of property and liability coverage (e.g., HO-3)
+b. Typical coverage
+
+3. Coinsurance clause [Level 1 – this subtopic]
+4. Specialized policies
+a. Homeowner’s coverage (HO-3)
+b. Renter’s coverage (HO-4)
+
+c. Condominium coverage (HO-6)
+Note: Buyer should make sure insurance is appropriate for property type and use.
+
+
+
+14
+D. Flood Insurance
+
+1. Separate policy; not included in standard homeowner policy
+2. National Flood Insurance Program administered by FEMA delivered through private
+insurance companies
+
+a. Purpose of program
+b. Designated or special FEMA flood hazard zones
+Note: The 100-year flood plain refers to a flood having a 1% chance of equaling
+or exceeding the map elevation any given year, not a flood that occurs only every
+100 years.
+
+E. Insurance Issues
+1. Insurability issues
+
+a. High insurance claim history
+b. Comprehensive Loss Underwriting Exchange (C.L.U.E.)
+Note: Consumers are entitled to a free copy of their C.L.U.E. report per the Fair
+Credit Reporting Act.
+
+2. Residential sales transaction concerns
+a. Unoccupied Building Exclusion
+Note: Definition of unoccupied varies widely; read policy for specific parameters
+for a particular property.
+
+b. Early or late possession by parties
+
+c. Keep insurance in place until recordation/closing; refer to “Risk of Loss” provision
+in sales contract
+
+3. Broker’s responsibility [Level 3 – this subtopic]
+a. Advise seller client about the importance of having and maintaining appropriate
+insurance coverage throughout listing and transfer of title/closing
+
+b. Listing agent should advise absentee seller to verify continued insurance coverage
+of unoccupied listed property
+
+c. Be alert for red flags (e.g., nearby water sources possibly requiring flood insurance)
+d. Disclose location of any part of the property in a FEMA special flood zone as a
+material fact
+
+e. Buyer client should be advised to check availability and cost of insurance as part
+of buyer due diligence
+
+
+
+15
+F. Federal Income Taxation of Home Ownership [Level 1 except as noted below]
+Note: Licensees should never attempt to provide tax advice to clients or customers unless
+they possess special knowledge and expertise in the tax field that qualifies them to provide
+such advice. The limited instruction provided in this course in no way qualifies the student
+to provide tax advice and is merely intended to enable agents to recognize situations
+where a consumer might benefit from professional tax advice so that the agent might then
+refer the consumer to a qualified tax accountant or attorney.
+
+1. Common income tax deductions for owners of personal residences
+a. Real property taxes (principal and second homes)
+
+b. Loan expenses (principal and second homes)
+
+i. Mortgage interest includes regular interest payments plus any late payment
+charges or prepayment penalty
+ii. Loan discount points paid as prepaid interest at the time of loan origination
+
+2. Taxation of capital gain on sale of principal residence [Level 3 – this subtopic]
+Note: Concepts are testable, but there are no math calculations on this topic.
+a. Eligible property
+
+b. Definitions
+i. Basis and adjusted basis
+ii. Capital improvement
+Note: Maintenance is not a capital improvement.
+
+iii. Amount realized
+iv. Gain and loss
+
+c. Rules for taxation of capital gain
+i. Tax-free limits
+▪ Married couple filing income tax return jointly
+▪ Single person or married couple filing income tax return singly
+ii. Restrictions
+▪ Must have been the primary residence for 2 of last 5 years
+▪ Exclusion allowed only once every 2 years
+3. Special tax treatment for some residential transactions
+
+a. Installment sales (or contract for deed in NC) — basic concept
+b. Like-Kind or 1031 Tax-Deferred Exchange — basic concept
+
+c. Vacation homes — basic rule for owner use
+
+d. Office in home — basic concept
+
+
+
+16
+Section V: Property Disclosures & Environmental Issues [Level 1 except as
+noted below]:  National Exam Category (8 Items)
+A. Disclosure of Property Conditions by Real Estate Brokers [Level 3]
+
+1. Responsibilities for Verification of Land Use and Recognition of Potential Land Use
+Problems
+
+a. When a property is or might be subject to zoning and/or covenants, advise
+consumer that:
+
+i. Ordinances or covenants could affect consumer’s use and enjoyment of the
+property
+ii. Property owners may be subject to owners’ association dues and assessments
+iii. Careful review of any covenants and owners’ association governing documents
+is recommended prior to signing any offer
+b. Avoid any misrepresentation about a property's zoning or permitted land uses
+
+c. Recognize “red flag” situations
+Note: Recognizing and taking appropriate action with regard to potential problems
+with zoning and restrictive covenants is particularly important.
+
+d. Recognize patent signs of flooding on a property or when a property’s location may
+make it susceptible to flooding
+e. Disclose planned major highway or public transportation changes in the area as
+material fact
+
+2. The presence on a property of any of the environmental hazards covered in this Section
+is a material fact that must be disclosed to all transactional parties.
+
+3. Owner of a property with hazardous waste may be liable for cleanup, even if caused
+by a previous owner
+
+4. Underground Storage Tanks (USTs)
+
+a. Any broker who knows of any current or abandoned USTs on the property must
+disclose to all prospective purchasers or tenants
+b. Buyer agent should strongly encourage buyer to hire an expert to inspect any tanks
+and conduct a soil contamination test
+
+5. The mere presence of a radon mitigation system in a property elevates the broker’s
+responsibility to discover and disclose the reason behind that presence
+
+6. Sale of property “As Is”
+Note: Broker’s disclosure responsibilities under Real Estate License Law not affected
+by “as is” status.
+
+
+
+17
+Required Activity: Review the Lead-Based Paint or Lead-Based Paint Hazard
+Addendum, NCAR Form 2A9-T.
+B. Environmental Issues in Real Estate
+1. Selected Hazards Pertinent to Real Estate Brokerage
+a. Lead [Level 2 – this subtopic]
+
+
+i. Residential use of lead-based paint banned in 1978; disclosure required by
+federal law since 1992
+ii. Sources of lead
+iii. Serious health risk of lead poisoning
+iv. Federal Residential Lead-Based Paint Hazard Reduction Act of 1992 and
+updated HUD and EPA rules [www.epa.gov/lead]
+▪ Disclosure requirement
+▪ Applies to target housing
+▪ Brokers have legal duty to ensure compliance with the lead paint disclosure
+requirements
+o Informing seller/lessor of their obligations under these rules
+o Either ensure that seller/lessor has performed all activities required by
+the rules or broker must personally ensure compliance
+▪ Enforcement and penalties
+Note: No federal law requires the owner to test for the presence of lead or lead-
+based paint.
+
+b. Asbestos
+i. Friable
+ii. Serious health risk for various respiratory diseases as well as lung and stomach
+cancer
+iii. Remediation
+▪ Costly removal process requires state-licensed asbestos abatement
+contractor and sealed areas
+▪ Encapsulation
+Note: The mere presence of asbestos is not a health hazard unless it is friable.
+
+c. Radon
+i. Health risk as one of the leading causes of lung cancer
+ii. Radon presence over the EPA’s actionable level of 4.0 picocuries is a material
+fact
+Note: Do-it-yourself radon tests are available; professional testing is generally
+more accurate.
+
+iii. Remediation through mitigation system that uses ventilation
+d. Toxic mold
+i. Characteristics and where found
+ii. Can cause allergic reaction, respiratory and sinus problems
+iii. Potential homeowner’s insurance issues
+iv. Remediation
+
+
+
+18
+e. Miscellaneous potential issues
+
+i. Groundwater contamination
+ii. Underground storage tanks (USTs)
+iii. Waste disposal sites
+iv. Brownfields
+
+2. Environmental Protection Agency (EPA)
+a. Comprehensive Environmental Response, Compensation, and Liability Act
+(CERCLA)
+
+i. Also known as the Superfund
+ii. Identifies hazardous waste sites for clean up
+iii. Environmental Site Assessments (Phase I & II studies) & Impact Studies
+b. Clean Air Act
+
+i. Establishes and enforces air quality standards
+ii. Affects property owners & businesses that own or repair appliances using
+refrigerants, such as air conditioners and refrigerators
+
+c. Clean Water Act
+
+i. Regulates pollutant discharges into water
+ii. Sets water quality standards
+iii. Protects wetlands
+
+
+
+Section VI: Forms of Ownership, Transfer & Recording of Title [Level 2 except
+as noted below]: National Exam Category (8 Items)
+A. Estates in Real Property
+1. Freehold Estates (last for indeterminable period of time) [Level 1 – this subtopic]
+a. Estates of inheritance (owner can determine who inherits)
+i. Fee Simple Estate (Fee Simple Absolute)
+ii. Defeasible Fee (Qualified) Estates
+▪ Fee Simple Determinable (Fee Simple to a Condition Precedent)
+▪ Fee Simple Conditional (Fee Simple to a Condition Subsequent)
+iii. Estate for Life of Another (pur autre vie)
+Note: Based on life of named third party, the measuring life
+b. Estates not of inheritance (Life Estates)
+i. Estate for Tenant’s Own Life (Conventional Life Estate)
+▪ Life tenant
+o Rights of and restrictions on life tenants
+o Estovers
+▪ Remainderman
+
+
+
+19
+Required Activity: Provide real world examples of each type of estate. Make
+note that the difference between the different leasehold estates is how they end.
+Required Activity: Explain real world use of each type of lease.
+ii. Marital life estates
+iii. Remainder vs. reversionary interest
+iv. Homestead
+v. The Bundle of Legal Rights concept [Level 1– this subtopic]
+▪ Right to possession (to occupy)
+▪ Right to control (of property and legal profits)
+▪ Right of enjoyment (to use in any legal manner without
+interference from others claiming a superior title)
+▪ Right of exclusion (to restrict access)
+▪ Right of disposition (to transfer ownership or interests including
+right to encumber/mortgage)
+2. Estates in Landlord/Tenant [Level 1 – except as noted]
+
+a. Definitions
+i. Landlord (Lessor)
+ii. Tenant (Lessee)
+iii. Lease
+iv. Privity of estate
+v. Privity of contract
+b. Leasehold (Nonfreehold) Estates [Level 2 – this subtopic]
+
+i. Tenancy (or estate) for years
+ii. Tenancy (or estate) from period to period
+Note: Also known as periodic tenancies, week-to-week, month-to-month
+iii. Tenancy (or estate) at will
+iv. Tenancy (or estate) at sufferance
+Note: Unlike trespassing, this estate began legally.
+
+c. Leases
+
+
+i. Types of leases
+▪ Fixed rental (flat or gross) lease
+▪ Percentage lease [Level 3 – this subtopic]
+▪ Other lease types [Level 1 – this subtopic]
+o Net lease
+o Graduated (step-up) lease
+o Index lease
+o Full service lease
+o Ground lease
+ii. Essential lease provisions
+Note: Same as for any contract.
+
+iii. Other common provisions
+▪ Tenant’s use of premises
+
+
+
+20
+Note: Lessee may make any legal use of the property unless there are use
+restrictions in the lease. Tenant has Implied Covenant of Quiet Enjoyment;
+lessor has no right to enter premises during lease term unless granted in
+the lease
+▪ Assignments and subleases
+o Assignment
+o Sublease
+o Assignee vs. assignor
+o Novation
+o Renewal and termination
+o Lessee has no implied right to renew the lease
+o Automatic renewal clause can be included in the lease terms
+B. Ownership, Interests, and Rights in Real Property
+1. Severalty (Sole) Ownership
+Note: Sole owner can be an individual person or a single business entity.
+
+2. Concurrent (Joint) Ownership
+a. Tenancy in common
+
+i. Undivided fractional interest; may be unequal interest
+ii. Unity of possession
+iii. Co-owner may dispose of individual interest without permission of co-tenant(s)
+iv. Upon death, undivided interest of co-owner passes to the heir(s); no right of
+survivorship
+
+b. Joint tenancy
+i. Title must intentionally create joint tenancy
+ii. 4 required unities/elements (e.g., possession, interest, time, title) must be
+equal
+iii. Right of survivorship (Automatic in states other than NC)
+iv. Termination
+▪ By agreement
+▪ Partition suit
+c. Tenancy by the entirety
+
+i. Available only to legally married couples in some states
+Note: Other types of ownership do not automatically convert to tenancy by
+the entirety if property owners marry each other later.
+
+ii. Equal undivided interest
+iii. 4 required unities/elements (e.g., possession, interest, time, title) must be
+equal
+iv. Automatic right of survivorship that cannot be waived; overrides a will
+v. Conveyance requires signatures of both spouses
+Note: A spouse cannot convey ½ interest.
+
+
+
+21
+Required Activity: Provide an assessment to determine if student can differentiate
+between these types of hybrid ownership.
+vi. Termination
+▪ By agreement
+▪ Divorce
+▪ Death of a spouse
+3. Common Interest Community (Hybrid) Ownership
+a. General concepts
+
+i. Managed by owner associations [e.g., homeowners’ association (HOA) or
+property owners’ association (POA)]
+▪ Enforce rules regarding operation and use
+▪ Maintain, repair, and clean common areas
+▪ Maintain insurance
+▪ Additional responsibilities by agreement
+ii. Governed by covenants and general statutes
+iii. May be residential, commercial, industrial, or mixed-use
+b. Condominium ownership
+
+i. Condominium (condo)
+ii. Governed by horizontal property acts
+iii. Individual unit owner holds fee simple “title to airspace” for single story unit
+iv. Individual unit owners own an undivided share of common elements
+▪ Own as tenants in common without right of partition
+▪ Periodic fees/assessments charged to unit owners
+▪ Possible exclusive use of limited common elements
+v. Nationally, a townhouse is generally a multi-story condo
+
+
+c. Cooperative ownership [Level 1 – this subtopic]
+i. Cooperative
+ii. Title to land and building held by a corporation
+iii. Tenant purchases corporate stock shares (personal property)
+▪ Proprietary lease
+▪ No individual deed for units
+
+d. Time share ownership
+i. Time share
+Note: Also called vacation lease, prepaid hotel reservation, club membership,
+limited partnership, vacation bond.
+
+ii. Allows multiple parties to buy interest in the same real estate (e.g., resort or
+hotel property)
+iii. Interest may be leasehold or deeded ownership
+iv. Buyers receive right to occupy property for a specific time period during
+ownership
+
+
+
+
+22
+4. Trusts [Level 1 – this subtopic]
+Note: Legal advice is strongly recommended before broker handles a transaction
+involving property owned by a trust.
+
+a. Fiduciary arrangement
+i. Third party trustee holds assets on behalf of beneficiary
+ii. Trust agreement sets parameters of trustee’s authority
+iii. May allow assets to pass outside of probate
+b. Brokers should deal with trustee vs. beneficiary regarding disposition of real
+estate
+
+5. Appurtenant rights (Appurtenances)
+
+a. Subsurface rights
+b. Air rights
+
+c. Water rights
+i. Riparian rights
+ii. Littoral rights
+iii. Foreshore
+iv. Boundary shifts due to accretion, reliction, erosion, or avulsion
+v. Doctrine of Prior Appropriation [Level 1– this subtopic]
+Note: Water rights cannot be retained when the property title is transferred.
+
+
+d. Support rights [Level 1– this subtopic]
+
+i. Right to lateral support
+ii. Right to subjacent support
+
+e. Benefit of any appurtenant easement
+f. Benefit of any protective (restrictive) covenants
+
+6. Liens
+a. Specific liens
+
+i. Mortgages (deeds of trust)
+ii. Real estate tax and assessment liens
+
+iii. Mechanics’ liens (materialman’s lien)
+
+b. General liens
+i. Judgment liens
+ii. Personal property tax liens
+
+
+
+23
+iii. State tax liens
+iv. Federal tax liens
+
+c. Lien priority
+i. Order of recordation
+ii. Exceptions to “pure race system”
+▪ Real property and special assessment liens hold superior priority
+▪ Mechanic’s liens, effective from 1st day of providing services or materials
+▪ Voluntary subordination of a superior lien
+
+d. Writ of attachment [Level 1 – this subtopic]
+
+7. Special Assessments
+a. Examples
+
+b. Levied by local municipalities
+c. Special priority
+
+8. Lis Pendens (Notice of Pending Litigation)
+Note: This is notice of an active lawsuit that may affect title.
+C. Methods of Transferring Title [Level 1]
+
+1. By Descent
+Note: When owner dies with no will (intestate), state laws regarding Intestate
+Succession will rule [NCGS Chapter 29].
+2. By Will (Testate)
+Note: Remember that a will cannot override the survivorship clause in a deed.
+
+3. By Voluntary Alienation (by Deed)
+4. By Involuntary Alienation
+
+a. Lien foreclosure sale
+b. Adverse possession
+
+c. Escheat
+
+d. Eminent domain
+D. Deeds
+
+1. Grantor vs Grantee
+2. Essential Elements of a Valid Deed
+
+a. Named parties (grantor/grantee)
+
+
+
+24
+b. Words of conveyance (granting clause)
+
+c. Accurate legal description of property
+d. Legal capacity of grantor
+
+e. Signature of grantor(s)
+f. Delivery to and voluntary acceptance of the deed by grantee (usually by
+recordation)
+
+g. Deed must be in writing
+Note: Recordation of the deed is not a legal essential element; but the standard sales
+contracts in many states like North Carolina require recordation of the deed to
+complete closing. Non -essential elements frequently included in a deed are date,
+acknowledgement, amount of consideration, witnesses, seal, and signature of grantee.
+3. Types of Deeds
+
+a. Types most commonly used
+i. General Warranty Deed (also called Full Covenant and Warranty Deed or
+Warranty Deed)
+▪ 5 Covenants
+o Covenant of seisin and right to convey
+o Covenant against encumbrances
+o Covenant of quiet enjoyment
+o Covenant of warranty forever
+o Covenant of further assurance
+ii. Special Warranty Deed (also called Limited Warranty Deed)
+▪ Only 2 warranties
+o Warranty that grantor received title
+o Warranty against encumbrances during the grantor’s period of
+ownership
+▪ Frequently used by lenders to convey title to foreclosed properties
+iii. Quitclaim Deed (also called Non-Warranty Deed)
+▪ Grantor makes no promise about quality of title
+▪ Often used as correction or release deeds
+
+b. Bargain and Sale Deed – Used in some states; very similar to a Quitclaim Deed
+[Level 1 – this subtopic]
+
+c. Special purpose deeds [Level 1 – this subtopic]
+i. Correction deed
+ii. Reconveyance deed
+iii. Trustee’s deed
+iv. Sheriff’s deed
+v. Deed of trust (see Section XII. Financing)
+vi. Deed of gift
+▪ Transfer with little or no consideration
+
+
+
+25
+▪ Void in NC if not recorded within 2 years
+▪ No excise tax required
+
+E. Title Assurance [Level 1 except as noted below]
+1. Title Examination (Title Search or Title Report)
+
+a. Public records search
+b. Chain of title
+
+c. Abstract of title (title abstract)
+
+d. Opinion on title (by attorney)
+2. Title Insurance
+
+a. Purpose
+b. Insurable title
+
+c. Types of policies
+i. Lender’s policy
+ii. Owner's policy
+Note: Broker should strongly recommend that a buyer purchase an owner’s
+title insurance policy even if there is no mortgage financing.
+d. Basic policy coverage
+Note: Broker should never suggest that a survey or owner’s coverage is
+unnecessary; have buyer consult the closing attorney if buyer has questions.
+
+e. Cost and procurement
+
+i. Payment of a one-time upfront premium by the buyer
+ii. Typically ordered by the settlement agent
+
+3. Title Recordation [Level 2 – this subtopic]
+a. Purpose
+
+b. Recording contracts or memoranda of contract
+i. Constructive Notice vs Actual Notice
+ii. Most residential sales contracts are not recorded
+iii. Recordation of a memorandum of a real estate contract may be used to serve
+as constructive notice
+
+c. Recordation procedures
+Note: Recordation of lien satisfaction (e.g., mortgage payoff) is needed to clear a
+title from being encumbered by the previously recorded lien.
+
+
+
+26
+Instructor Note: Mention only; covered earlier under Deeds
+4. Covenants of Title in Deeds
+
+
+5. Marketable Title
+
+a. Action to Quiet Title (Quiet Title Suit)
+b. Cloud on title
+
+
+Section VII: Real Estate Contracts & Agency [Level 3 except as noted below]:
+National Exam Category (16 Items)
+A. Basic Contract Concepts, Terminology & Classifications [Level 1- this subtopic]
+1. Contract
+
+2. Express/Implied
+3. Bilateral/Unilateral
+
+4. Executed/Executory
+5. Valid Contracts
+
+6. Void Contracts
+7. Voidable Contracts
+
+8. Addenda
+
+9. Amendments
+10. Contingency
+
+B. Essential Elements of a Contract
+1. Mutual Assent (also known as “Meeting of the minds”, Mutual Agreement, Offer and
+Acceptance)
+
+a. The offer
+Note: Pay careful attention to terminology. There is a huge difference between an
+offer and a contract.
+
+i. Offer
+ii. Offeror vs offeree
+Note: Typically, the buyer is the initial offeror and the seller is the initial
+offeree; but sellers can initiate offers.
+
+b. Acceptance
+Note: Communication to the agent is the same as communication to the principal.
+
+
+
+27
+Required Activity: Provide real world examples of each of the following ways that real
+estate contracts may be declared void or voidable.
+c. Communication of offer and acceptance
+
+i. Oral communication
+ii. Personal delivery
+iii. Mail
+▪ Traditional or special mail, such as USPS, FedEx, UPS
+▪ Mailbox Rule
+Note: Time of actual receipt by offeror is irrelevant. This Rule only applies to
+communicating acceptance of an offer; not termination of an offer or
+contract.
+
+iv. Electronic methods of communication
+▪ Use of email, text, or fax unless prohibited by terms of the offer
+▪ Effective upon receipt by offeror’s communication equipment or computer
+
+d. Counteroffer
+Note: Once an offeree makes a counteroffer, they cannot change their mind later
+and “accept” the original offer.
+
+e. Termination of offer
+2. Consideration
+Note: The sales price is the consideration in a sales contract, not the earnest money
+deposit or the due diligence fee. Rent is the consideration in a lease, not the tenant
+security deposit.
+
+3. Legal Capacity of the Parties
+
+a. Minors (persons under legal age…18 in NC) - voidable
+b. Persons declared mentally incompetent by court of law - void
+
+c. Persons mentally incompetent in fact - voidable
+d. Persons intoxicated or under drug influence who temporarily do not understand
+what they are doing - voidable
+
+4. Lawful Objective of the Contract
+
+C. Requirement for Voluntary Reality of Consent [Level 2 - this subtopic]
+
+
+1. Mistake
+
+a. Mistake of fact
+
+i. Contract may be voidable if the mistake of fact
+▪ Involves a material term or aspect;
+▪ Is mutual; and
+▪ Is not the result of fraud or negligence
+
+
+
+28
+Required Activity: Provide real world examples of each of the following ways that
+real estate contracts are terminated. Be sure to highlight that termination of a
+contract is different from termination of an offer.
+ii. Unilateral mistakes of fact do not release parties from their obligations
+
+b. Mistake of law
+2. Fraud
+
+a. Elements
+b. Voidable by the deceived party; not automatic
+
+3. Duress
+a. Examples
+
+b. Voidable by injured party
+4. Undue Influence
+
+a. Examples
+
+b. Voidable by injured party
+D. Other Contract Concepts [Level 2 - this subtopic]
+
+1. Uniform Electronic Transaction Act (UETA)
+a. Applicable to real estate transactions
+
+b. Electronic signatures are binding on contract parties
+2. Termination or Discharge of Contracts
+
+
+a. Full and complete performance
+
+b. Material breach of contract
+c. Subsequent agreement of the parties due to dispute or negotiation
+
+i. Release
+ii. Novation
+iii. Subsequent modifying agreement
+iv. Accord and satisfaction
+v. Cancellation
+
+d. Impossibility of performance
+Note: Generally refers to impossibility of the thing to be done, not the inability of
+the promisor to do it. For example, if a party dies after contract formation but prior
+to closing, the contract is binding upon the heirs and/or the estate of contract
+parties.
+
+
+
+29
+e. Operation of law
+
+3. Assignment of Contracts
+a. Assignor vs. assignee
+
+b. Unless released by the other party to the contract, the assignor will remain
+secondarily liable for performance of contract terms
+4. Time being of the essence
+
+5. Remedies for Breach of Contract
+
+a. Money damages
+i. Compensatory damages
+ii. Consequential damages
+iii. Liquidated damages
+b. Rescission
+
+c. Specific performance
+E. Basic Sales Contract Concepts
+
+1. Importance of the Sales Contract [Level 2 - this subtopic]
+a. Sets forth the parameters of the legally binding agreement between the buyer and
+the seller
+
+b. Standardized forms give uniformity to transactions and reduce brokers’ temptation
+to draft
+
+c. Importance of Using the Appropriate Standard Sales Contract Form
+Note: Brokers are expected to know when it is appropriate to use a particular
+contract form and to recognize situations where sellers and buyers should be
+referred to an attorney to have a suitable contract drafted.
+2. Contract Creation
+Note: Brokers are prohibited from drafting legal documents for others; this is seen as
+illegal practice of law in most states. Consumers should be encouraged to seek legal
+assistance if standard forms do not fit their needs.
+
+a. Statute of Frauds in most states require contracts to be in writing to be enforceable
+
+b. Offer and acceptance
+i. Offer and acceptance using traditional methods (direct personal dealing,
+delivery through agents, mail, phone communication, etc.)
+ii. Offer and acceptance by electronic means (e-mail, DocuSign, etc.)
+
+
+
+30
+c. Submitting offers
+
+i. Concurrent offers must be presented at the same time; no particular order of
+presentation is required
+ii. Applies to all brokers in the transaction regardless of who they represent or
+how they will be compensated
+iii. Listing broker generally has no authority to accept or reject an offer on behalf
+of seller-client
+iv. Only 1 contract signed by all parties required to be binding
+v. Buyer acquires equitable title once under contract
+
+3. Handling Offer Modifications and Counteroffers
+
+a. Any change to an offer rejects the original offer; potentially creates a counteroffer
+b. Numerous term changes should prompt use of a new offer form completed with
+current terms under consideration by the parties
+
+4. Handling Earnest Money as Liquidated Damages
+
+5. Furnishing Copies of Offers and Contracts
+6. Handling Contract Disputes and Modifications
+
+a. Seek legal advice before breaching contract terms
+b. Negotiate an amendment to contract
+
+F. Special Contract Forms [Level 1 - this subtopic]
+Important Note: Buyers and sellers should be referred to an attorney for preparation of
+any of the following documents. Drafting of such documents by a broker constitutes the
+unlawful practice of law.
+1. Installment Land Contract (Also referred to as Contract for Deed or Land Contract)
+a. Key concepts
+
+i. A sales contract and an owner-financing document
+ii. Seller (vendor) retains legal title until the entire purchase price is paid
+iii. Buyer (vendee) receives equitable title and possession
+
+b. No standard contract form; consult an attorney
+Note: Do not use a standard sales contract
+c. Advantages to seller and buyer
+
+d. Disadvantages to seller and buyer
+
+2. Option to Purchase Real Estate
+a. No standard option form; consult an attorney
+Note: Do not use a standard sales contract
+
+
+
+31
+b. Rights of parties
+
+i. Optionor
+ii. Optionee
+c. Two (2) types of consideration should be definitely and separately stated
+
+i. Option fee, generally non-refundable
+ii. Purchase price
+
+d. Requirements of options
+i. Must be in writing and recorded generally per Statute of Frauds
+ii. Time Being of the Essence in regard to date to exercise the option
+e. Residential leases may include an option to purchase
+Note: No standard form exists for a residential lease with option to purchase, and
+a broker must not suggest that landlords/tenants attempt to tie together lease
+and offer to purchase forms. A broker should direct the parties to enlist an attorney
+to draft this special type of agreement.
+3. Agreements for Preemptive Rights [Level 1 - this subtopic]
+
+a. Right of first refusal
+
+b. Right of first opportunity to purchase
+G. Overview of Laws and Regulations Governing Brokerage Relationships
+
+1. Overview of Laws and Regulations Governing Brokerage Relationships
+a. Common Law of Agency
+
+b. Contract law
+c. Individual state laws and regulations
+
+2. Law of Agency — Basic Concepts
+a. Basic agency terms
+
+i. Agency
+ii. Principal/client
+iii. Agent
+iv. Subagent
+v. Third party
+vi. Customer
+vii. Facilitator/transactional broker
+▪ Disclosure of material facts is normally required
+▪ Not allowed in North Carolina
+
+
+
+32
+b. The real estate agent's fiduciary role
+
+i. Fiduciary
+ii. A fiduciary (e.g., agent) is bound to act primarily for the benefit of the principal
+(e.g., client) before any self-interest
+
+c. Classifications of agency relationships
+i. Universal agent
+ii. General agent
+iii. Special agent
+d. Creation of real estate agency relationships
+
+i. Relationships between brokers/firms and transaction parties (formed by agency
+contracts/agreements)
+▪ Listing contract
+▪ Buyer Agency contract
+▪ Dual Agency contract
+▪ Property Management contract
+▪ Tenant Representation contract
+ii.Relationships between brokers and brokerage companies [Level 1 - this
+subtopic]
+▪ In-house brokerage employment contracts
+▪ Cooperation agreements between brokers/firms
+iii. By conduct of parties (implied agency) [Level 1 - this subtopic] – For example,
+cooperation between firms based on brokers’ actual conduct and custom rather
+than an explicit agreement
+3. Scope of Agent’s Authority
+
+a. Express authority
+b. Implied authority
+
+c. Apparent authority
+4. Real Estate Agency Relationships
+
+a. The basic agency relationship
+i. Consumer employs sole practitioner broker
+▪ Independent broker can function as a sole proprietor or as a licensed entity
+▪ Agency agreements would be between sole proprietor’s company and the
+consumer
+ii. Consumer employs a real estate brokerage company/firm
+▪ Agency agreements would be between the consumer and the firm, not with
+the individual affiliated agents
+▪ A broker affiliated with a firm is an agent of the firm under the law of agency
+▪ All brokers affiliated with the firm automatically become subagents of any
+principal-client of the firm
+
+
+
+33
+Required Activity: Use real world examples to illustrate each duty.
+b. Agency relationships in real estate sales
+
+i. Single agency -- seller agency only
+▪ The company only represents property owners
+▪ All affiliated brokers represent all seller-clients of the company as seller
+subagents
+▪ All potential buyers are shown any of the company’s listed properties by
+any affiliated brokers as unrepresented third parties (customers)
+ii. Single agency -- buyer agency only
+▪ The company has no listings since it does not represent sellers
+▪ All affiliated brokers represent all buyer-clients of the company as buyer
+subagents
+▪ Affiliated brokers will only show properties listed with cooperating companies
+or unrepresented sellers (FSBOs)
+iii. Agency relationships when two brokerage companies cooperate in a cross sale
+or co-brokered transaction
+Note: Beware of illegal undisclosed dual agency through careless actions of
+brokers.
+
+▪ Exclusive agency
+▪ Seller subagency
+▪ Listing company can refuse to offer subagency to the other company
+▪ Switching from seller subagent to buyer agent
+iv. Both seller and buyer agency with dual agency for “in-house” sales
+▪ The brokerage company represents both sellers and buyers
+▪ Intentional, disclosed dual agency; unintentional, undisclosed dual agency
+prohibited
+▪ Dual agency with designated agents
+
+c. Agency relationships in real estate rentals
+i. Created by property management agreement
+ii. The management firm/broker is the agent and the landlord is the principal
+iii. Any licensed employees of the management firm/broker are subagents of the
+landlord
+iv. Residential prospective tenants are usually customers
+v. Commercial tenants may or may not be represented; any representation
+agreement should be in writing prior to an offer to rent a property
+5. Agent's Duties to Principal under the Law of Agency
+
+
+a. Obedience
+b. Loyalty
+
+i. Avoidance of self-dealing by agent
+ii. Written client consent to represent adverse interests (e.g., dual agency)
+
+c. Disclosure of information to include agent’s affirmative duty to discover and
+disclose all transactional information including, but not limited to, material facts
+
+
+
+34
+Required Activity: Provide examples of terminations and exceptions.
+Note: Personal information about a third party known to an agent that might
+influence the agent’s principal in the transaction must be disclosed to the principal.
+
+d. Confidentiality
+e. Accounting for and safeguarding of goods and funds handled plus retention of
+transactional records
+Note: No commingling of trust monies with company or personal funds.
+f. Skill, care and diligence
+
+6. Termination of Agency Relationship
+
+
+a. Termination of agency
+
+i. Purpose has been accomplished
+ii. Expiration of the term
+iii. Mutual agreement to terminate
+iv. Breach by a party
+v. Destruction or condemnation of the property
+vi. Death or incapacity of either party
+vii. Operation of law
+
+b. Duty generally ends when agency ends, with the following exceptions
+i. Express promise or implied obligation
+ii. Pending transaction at termination date of agency agreement
+iii. Self-dealing
+Note: Duty of confidentiality may be expected to continue as long as the agent
+has no duty to disclose to a new client.
+
+7. Liabilities and Consequences of Agent’s Breach of Duties [Level 3]
+a. Disciplinary action by regulatory agency against agent
+
+b. Civil liability of agent
+c. Criminal liability of agent
+
+d. Civil liability of principal for agent’s misconduct; tort
+
+8. Duties and Liabilities of Principals
+a. Principal’s duties to agent
+
+i. To act in good faith
+ii. To compensate the agent
+
+
+
+35
+Required Activity: Provide WWREA Disclosure and the Questions & Answers on:
+Working with Real Estate Agents brochure.
+b. Principal’s duties to third persons
+
+i. No requirement to disclose property condition unless required by state
+regulations, but could be liable for misrepresentation
+ii. Contract performance
+
+c. Liabilities and consequences of principal’s breach of duties
+i. Possible criminal liability
+ii. Civil liability
+
+
+
+
+
+Section VIII: Agency in NC [Level 3 except as noted below]:
+State Exam Category (16 Items)
+A. Overview of NC Laws and Regulations Governing Brokerage Relationships
+[Level 1 - this subtopic]
+
+1. NC Real Estate License Law [NCGS 93A]
+
+2. NC Real Estate Commission rules [Chapter 58A, Title 21 NCAC]
+3. Disclosure of Agency Relationships in Residential and Commercial Sales [NCGS 93A-
+6(a)(4) and (6); Commission Rule 58A .0104 (c-i), (m), (o) and (p)]
+
+B. Agency Disclosure
+
+1. Primary purposes of agency disclosure
+a. To ensure that the consumer understands as soon as possible that there is no
+confidentiality between the broker and the consumer until an agency relationship
+is established
+
+b. To introduce the consumer to available agency options
+
+2. Commission's Mandatory Working with Real Estate Agents (WWREA) Disclosure
+[Commission Rule 58A .0104(c); publication is available at www.ncrec.gov]
+
+
+a. Applies to all residential and commercial sales transactions; not required for
+property management or lease transactions
+
+b. Provide at First Substantial Contact [Commission Rule 58A .0104(c)]
+i. In-person: provide and review WWREA immediately at first substantial contact
+ii. Phone or electronic means (e.g., email, social media, etc.): at earliest
+opportunity after first substantial contact (no later than 3 days after)
+▪ Transmit copy of WWREA to consumer
+
+
+
+36
+Required Activity: Provide examples of when first substantial contact
+occurs in various situations, including, but not limited to, contact in-person,
+by phone, by electronic means such as email or social media, and at open
+houses.
+▪ Review agency options at earliest practicable opportunity after receipt by
+consumer
+▪ Determine whether broker will act as an agent of the buyer or the seller in
+the transaction
+
+
+c. Mandatory review of the disclosure form
+Note: Inclusion of the WWREA Disclosure form in a broker’s email signature or
+sending by an electronic signature program alone does not comply with the review
+component of disclosure requirements.
+
+d. Completion and retention of the disclosure form for 3 years (even if agency is not
+reached) [Commission Rule 58A .0108]
+
+e. Questions & Answers on: Working with Real Estate Agents
+Note: This is a companion piece for the WWREA Disclosure that brokers should
+strongly consider giving consumers to provide more detail on agency options.
+
+3. Additional Agency Disclosure Requirements [Level 2 - this subtopic]
+a. Disclosure of agency status by seller agent or subagent to prospective buyer
+[Commission Rule 58A .0104(e)]
+
+b. Disclosure of agency status by buyer agent to seller or seller agent [ Commission
+Rule 58A .0104(f)]
+Note: The Standard 2-T Offer to Purchase and Contract provides a place for agency
+disclosure and license numbers in the signature area.
+
+c. Disclosure of and consent to proposed dual and designated (dual) agency [NCGS
+93A-6(a)(4) and (6); Commission Rule 58A .0104(d), (i-n)]
+
+d. Broker with ownership interest in listing [Commission Rule 58A .0104(o)]
+
+e. Disclosure in auction sales situations [Commission Rule 58A .0104(g-h)]
+C. Dual Agency
+
+1. Dual Agency Basics
+a. Inherent potential conflict of interest: centers around agent’s common law duty to
+disclose all material facts to their principal
+
+b. Intentional, disclosed dual agency requires informed, written consent of both
+principals (with oral agreement permitted in certain situations) [NCGS 93A-6(a)(4)
+and Commission Rule 58A .0104(d)]
+c. Unintentional, undisclosed dual agency is prohibited
+
+
+
+37
+2. Current Approaches to Handling Dual Agency in North Carolina
+
+a. Limiting dual agent’s duties by contract
+i. Limiting disclosure of certain information to principals
+ii. Limiting the duties of loyalty and skill, care, and diligence
+iii. Effectually eliminates agent’s role as an advocate for either client
+
+b. Designated dual agency [Commission Rule 58A .0104(i)-(n)]
+i. Basic concept
+▪ An optional approach when brokerage company is dual agent
+▪ One or more agents of the company are designated to represent only the
+interests of the seller
+▪ One or more agents of the company are designated to represent only the
+interests of the buyer
+▪ The company and all non-designated agents of the company remain as dual
+agents
+ii. Major rule provisions
+▪ Prior express approval required
+▪ Confidential information of designated client may not be shared with the
+designated agent of the other party
+▪ Identity of all designated agents must be disclosed
+iii. Key concepts
+▪ Dual agency is not eliminated; merely a form of dual agency
+▪ Only possible for in-house dual agency sales situations
+▪ Mandatory written approval of both seller and buyer no later than making
+of the 1st offer
+▪ Individual designated dual agents will act only as agent for principal for
+whom designated, similar to an exclusive listing agent or buyer agent
+▪ A comprehensive written company policy on the practice of designated dual
+agency is recommended
+▪ A broker may not be appointed as a designated dual agent for one party if
+that broker has already received confidential information about the other
+party
+▪ A broker-in-charge (BIC) must not serve as a designated dual agent in a
+transaction opposite an affiliated provisional broker [Commission Rule 58A
+.0104(j)]
+Note: Multiple agents can be designated to represent a principal, such as
+including the licensed personal assistant of a designated dual agent.
+c. Individual broker dual agent under Commission Rule 58A .0104(n)
+i. Can represent a prospective buyer that wishes to buy a property listed with the
+broker with permission of both clients
+ii. Broker cannot share a client’s information without their permission that
+pertains to
+▪ Willingness to agree to a price, terms or any conditions of sales other than
+those offered;
+▪ Motivation for engaging in the transaction unless disclosure is required by
+statute or rule; and
+▪ Any information that the client has identified as confidential unless
+disclosure is required by statute or rule
+
+
+
+38
+Required Activity: Compare and contrast duties owed to clients vs. third parties.
+It is critical that licensees understand the difference in the standard for determining
+what information must be disclosed to a principal/client versus what must be
+disclosed to a third party/customer (such as a lender).
+D. Agent’s Duties
+
+1. Agent's Duties to Principal under NC Real Estate License Law and
+Commission rules
+
+
+a. Duty to avoid any willful or negligent misrepresentation of a material fact to the
+principal, and to disclose to the principal all material facts about which the agent
+has knowledge or should reasonably have acquired knowledge [NCGS 93A-6(a)(1)
+and (3)]
+b. Duty to avoid making any false promises to the principal [NCGS 93A-6(a)(2) and
+(3)]
+
+c. Duty to avoid any undisclosed conflict of interest [NCGS 93A-6(a)(4); Commission
+Rule 58A .0104(d)-(f), (i) and (j)]
+
+d. Duty to properly account for funds held in trust for the principal [NCGS 93A-
+6(a)(7), (12) and (14)]
+
+e. Duty to act competently in the performance of services required by the agency
+relationship [NCGS 93A-6(a)(8); various rules]
+
+f. Duty to avoid improper conduct and to be honest in all dealings with the principal
+(as well as in dealings with other parties) [NCGS 93A-6(a)(10)]
+g. Duty to deliver a copy of any written agency and transactional documents to client
+within 3 days of broker’s receipt of the executed document [NCGS 93A-6(a)(13);
+Commission Rule 58A .0106]
+h. Duty to disclose any commissions, referral fees, kickbacks and similar payments
+from third parties [Commission Rule 58A .0109]
+
+2. Agent’s Duties to Third Persons under NC Real Estate License Law and Case law [NCGS
+93A-6(a)]
+Note: Emphasis should be on a proper understanding of misrepresentation and
+omission, and especially the affirmative duty to discover and disclose material facts to
+all parties to the contract, regardless of agency relationships.
+
+a. Duty to avoid any willful or negligent misrepresentation of a material fact to a third
+party and to disclose to the third party all material facts relating to the property
+about which the broker has knowledge or should reasonably have acquired
+knowledge [NCGS 93A-6(a)(1) and (3) and case law]
+
+
+
+39
+E. General Requirements for Agency Contracts (Sales and Rental Transactions) [NCGS 93A-
+13; Commission Rule 58A .0104(a)]
+Note: Prior to entering an agency agreement with a prospective client, the broker should
+ask if they already have an agency agreement with another broker. If “yes,” the broker
+should wait for that existing agency agreement be terminated or expire.
+
+1. Agency contracts with property owners must be in writing from the outset of the
+relationship
+Note: Oral listing agreements and property management agreements are unlawful in
+NC.
+
+2. Requirements for Written Agency Agreement
+
+a. Have a definite expiration date;
+b. Contain the anti-discriminatory language prescribed by rule in a clear conspicuous
+manner; [Commission Rule 58A .0104(b)]
+
+c. Be signed by all parties; and
+
+d. Include the listing broker’s individual license number
+e. Exception: non-exclusive buyer or tenant agency contracts can be oral for an
+unspecified period of time if reduced to writing prior to 1st offer
+
+F. Listing Practices (Working with Sellers)
+
+1. Prelisting Activities – Gather documents needed for prelisting meeting and advise seller
+to gather the following information:
+
+a. Copy of seller’s deed
+b. Copy of survey (if available)
+
+c. Copy of protective covenants, HOA information (including dues and assessments)
+d. Balance due on seller’s mortgage(s) and status of mortgage(s)
+
+2. Prelisting/Listing Meeting
+a. Agency disclosure
+
+i. Caution seller about sharing confidential information prior to signing a listing
+contract
+ii. Advise seller of company’s proposed brokerage fee and services
+iii. Determine agency relationship with seller
+b. Inspect prospective seller’s property and prepare listing data sheet
+
+i. Explain listing agent’s obligation to disclose material facts to all prospective
+buyers
+ii. Note all significant features and defects
+
+
+
+40
+Required Activity: Assign math practice problems; students traditionally have
+difficulty with this on the license exam.
+Required Activity: Assign practice problems.
+iii. Identify personal property to be transferred and fixtures not to be conveyed
+iv. Suggest needed repairs, improvements, staging, etc.
+v. Determine square footage and acreage
+vi. Make sure listing data is accurate and complete
+c. Inquire about construction/alteration/repair to uncover possible mechanic’s liens
+and the need for permits
+
+d. Inquire about septic system capacity/permit (if property has onsite septic system)
+
+e. Discuss marketing plan
+f. Review documents/information obtained from seller
+
+g. Verify and properly report building square footage
+3. Determine an Appropriate Listing Price
+
+a. Perform a Comparative Market Analysis (CMA)
+
+b. Calculate the sale price needed to net “X” amount to seller or estimating net to
+seller with various sale prices
+
+
+c. Calculate net profit/loss to seller on sale
+
+
+d. Review with seller all factors that should be considered
+
+4. Complete Listing Contract Form
+Note: Listing price must be determined before seller signs listing contract.
+5. Comply with Residential Lead-Based Paint Hazard Reduction Act, if applicable
+
+6. Market listed property per contract and customary marketing practices
+
+G. Working with Buyers
+1. Provide and Review Working with Real Estate Agents Disclosure; Explain Agency
+Options; Determine and Create the Agency Relationship (Obtaining an Agreement)
+
+a. Working with buyers as a seller subagent
+b. Working with buyers as a buyer agent
+
+i. Option of acting under an temporary oral buyer agency agreement when
+permitted
+▪ Must be nonexclusive
+▪ May not bind the buyer for any specific period of time
+
+
+
+41
+▪ All terms of the written agency agreement must be addressed in the oral
+agreement
+▪ If oral agreement limited to a specific brokerage company or for a specific
+time period, agency must be reduced to a written agreement immediately
+▪ Must be reduced to writing no later than the time an offer to purchase is
+made by any party
+ii. Exclusive vs. nonexclusive written agreement
+iii. Option of limiting duration of an exclusive agreement
+iv. Option of limiting exclusive agreement to specific properties
+
+c. Working with an unrepresented seller (e.g., FSBO) as a buyer agent
+i. Provide and review WWREA Disclosure
+ii. Obtain a written agreement signed by the seller
+iii. Refrain from actions that might be interpreted as the broker is representing the
+seller
+
+2. Prequalify the Buyer
+Note: Preferable approach is to have buyer prequalified by a mortgage loan officer.
+3. Select Properties for Showing
+
+4. Schedule Properties for Showing
+a. Disclose agency status to listing agent (or seller, if a FSBO)
+
+b. Obtain cooperation agreement with listing company, if needed
+Note: In the Buyer Agency Agreement, the brokerage company promises to first
+seek compensation from the listing firm or the seller before looking to the buyer
+client for payment.
+
+5. Show Properties
+6. Discover and Disclose Material Facts to Buyer
+
+7. Obtain or Verify Information for Buyer (e.g., Property Disclosure Statements, HOA
+info, protective covenants, other info requested by buyer)
+
+8. Perform a CMA (to assist buyer in determining an appropriate offer price)
+9. Assist Buyer with Preparation of Offers; Present and Negotiate Offers
+
+10. Assist the Buyer with Preparations for Closing
+H. Working in Property Management [Level 2 excepted as noted below]
+
+1. Relationship between a Property Owner and a Broker engaging in Property
+Management on the Owner’s Behalf
+Note: In NC, there is no separate real estate license for “property managers.”
+
+a. Authority of broker (agent) established by property management contract
+
+
+
+42
+Required Activity: Discuss factors that may/may not be considered due to Fair
+Housing Act criteria (e.g., credit reports, criminal records).
+b. Duties of broker (agent) to property owner (principal) and to third persons (tenants
+and prospective tenants)
+
+c. Property management fee [Level 3 – this subtopic]
+2. Typical Provisions of Property Management Contracts
+Note: Per Commission Rule 58A .0104(a), all property management agreements must
+be in writing from inception of the relationship.
+
+a. Property description
+
+b. Contract period [Commission Rule 58A .0104(a)]
+i. May allow automatic renewal
+ii.Landlord may terminate with notice at end of any contract period or renewal
+period
+c. Agent’s management fee
+
+d. Agent’s authority
+e. Responsibilities of agent and owner
+
+3. Typical Property Management Duties [Level 1 - this subtopic]
+
+a. Preparing management plan
+i. Establishing a rental schedule
+ii. Preparing an operating budget
+
+b. Marketing the property
+
+c. Qualifying and selecting tenants
+
+
+d. Executing leases for owner
+e. Collecting rents and security deposits
+
+f. Handling collected monies according to laws/rules
+
+g. Maintaining the property
+h. Preparing/enforcing rules and regulations
+
+i. Maintaining property insurance
+j. Maintaining accurate records
+
+k. Preparing income/expense reports and accounting to owner
+
+
+
+43
+Required Activity: Clarify the characteristics that make the three listing
+contract types different, especially broker’s entitlement to compensation.
+l. Performing landlord’s legal duties
+
+m. Instituting legal actions (e.g., tenant eviction)
+n. Complying with Americans with Disabilities Act (ADA) and Fair Housing laws
+
+
+
+Section IX: Real Estate Practice [Level 2 except as noted below]:
+National Exam Category (14 Items)
+A. Broker Responsibility
+
+1. Practice within Scope of Experience
+2. Avoid Unauthorized Practice of Law
+
+3. Beware of Solicitation of Active Clients of Other Firms/Brokers
+a. May constitute tortious interference with contractual relations
+
+b. Violates the Code of Ethics (Article 16) of the National Association of REALTORS®
+(which governs members of that Association)
+
+c. If a seller whose property is currently listed with another company initiates a
+conversation with a broker about the possibility of the broker becoming their new
+listing agent, the broker
+
+i. May discuss the terms of the possible listing agreement that would begin after
+the current listing ends
+ii. Should not suggest that the seller terminate the current listing agreement early
+
+B. Creating Brokerage Agreements
+1. Seller – Listing Agreement
+
+a. General concepts
+i. Usually creates special agency
+ii. Must usually be in writing
+iii. Agency contract owned by the brokerage company
+
+b. Types of listing contracts
+i. Full service listing contracts
+
+
+▪ Open or nonexclusive listing
+▪ Exclusive agency listing
+▪ Exclusive right to sell listing
+
+
+
+44
+ii. Limited service listing contracts
+▪ Brokerage compensation is frequently a fixed or flat fee vs. a percentage of
+gross sales price
+▪ May limit services, but generally should not limit legal duties dictated by
+statute or state regulations
+Note: Consultation with a real estate attorney is recommended prior to creating
+such an agreement.
+
+iii. Protection agreements
+▪ Agreement between a buyer agent and a seller for a single transaction,
+usually when dealing with a For Sale By Owner (FSBO) situation
+▪ Agent should provide and review the Working with Real Estate Agents
+Disclosure with seller
+▪ Multiple or Cooperative Listing Services (MLS)
+Note: Mandatory training on MLS use is standard among the various MLS
+organizations.
+
+b. Typical full service listing contract provisions
+
+i. Term of agreement
+ii. Property description (including fixtures and personal property)
+iii. Listing price and terms of sale
+iv. Broker/firm’s compensation
+v. Cooperation with/compensation to other brokerages
+vi. Brokerage company's duties
+vii. Marketing
+viii. Earnest money
+ix. Seller's representations and duties
+x. Dual/designated agency authorization
+xi. Names and signatures of parties
+
+2. Buyer – Buyer Representation Agreement
+a. Types of buyer agency contracts
+
+i. Nonexclusive buyer agency
+ii. Exclusive buyer agency
+
+b. Typical provisions
+3. Landlord – Property Management Agreement
+
+a. Typical provisions of property management contracts
+Note: Per Commission Rule 58A .0104(a), all property management agreements
+must be in writing from inception of the relationship.
+
+i. Property description
+ii. Contract period
+iii. Agent’s management fee
+iv. Agent’s authority
+v. Responsibilities of agent and owner
+
+
+
+45
+Required Activity: Discuss factors that may/may not be considered due
+to Fair Housing Act criteria (e.g., credit reports, criminal records).
+Required Activity: Discuss various ways brokerage fees are determined.
+b. Typical property management duties [Level 1 - this subtopic]
+
+i. Establishing a rental schedule
+ii. Preparing an operating budget
+▪ Marketing the property
+▪ Qualifying and selecting tenants
+
+
+iii. Executing leases for owner
+iv. Collecting rents and security deposits
+v. Handling collected monies according to laws/rules
+vi. Maintaining the property
+vii. Preparing/enforcing rules and regulations
+viii. Maintaining property insurance
+ix. Maintaining accurate records
+x. Preparing income/expense reports and accounting to owner
+xi. Performing landlord’s legal duties
+xii. Instituting legal actions (e.g., tenant eviction)
+xiii. Complying with Americans with Disabilities Act (ADA) and Fair Housing laws
+4. Termination of agency agreements
+
+a. Expiration
+
+b. Completion/full performance
+c. Termination by law
+
+d. Destruction of property or death of principal
+e. Mutual agreement
+
+f. Breach of contract
+5. Broker/Firm's compensation
+
+a. Types of compensation
+
+
+i. Percentage of gross sale price
+ii. Fixed or flat fee
+iii. Fee for Services for named services
+iv. Protection period
+v. Net listing
+Note: Use of net listing arrangements is either illegal or strongly discouraged
+in most states due to the great potential for abuse and fraud based on inherent
+conflict of interest.
+b. Co-listing by more than one broker/company
+
+
+
+46
+Required Activity: Provide examples of each type of discrimination.
+C. Fair Housing [Level 3 - this subtopic]
+
+1. Federal Fair Housing Act (Title VIII of 1968 Civil Rights Act)
+a. Purpose: equal opportunity in housing
+
+b. Protected classes
+i. Familial status
+ii. Race
+iii. Sex
+iv. Handicapping condition/disability
+v. Color
+vi. Religion
+vii. National Origin
+c. Prohibited practices in the sale or rental of housing based on protected class status
+
+
+i. Blockbusting (or panic peddling)
+ii. Steering (or channeling)
+iii. Refusing to sell, rent, or negotiate based on membership or perceived
+membership in a protected class
+iv. Representing that a dwelling is not available for sell or lease when it is
+v. Discriminatory practices
+▪ In terms, conditions, or privileges
+▪ In the financing of housing (e.g., redlining and related practices)
+▪ In advertising
+Note: Includes any Internet or social media posting.
+d. Exemptions
+
+e. Design and construction of multi-family housing [Level 1 – this subtopic]
+Note: All buildings with four or more residential units constructed after March 13,
+1991 must allow access and use by persons with a handicapping condition.
+
+f. Enforcement and penalties [Level 1 – this subtopic]
+i. Conciliation: an attempt to resolve complaint issue through informal
+negotiations
+ii. By administrative procedure through the Office of Fair Housing and Equal
+Opportunity (OFHEO) of the Department of Housing and Urban Development
+(HUD); complaint must be filed within 1 year
+iii. By Private Lawsuit in Federal Court; complaint must be filed within 2 years
+iv. Criminal penalties are provided for persons who coerce, intimidate, threaten or
+interfere with a person
+▪ Buying, renting or selling housing,
+▪ Making a complaint of discrimination; or
+▪ Exercising any rights under the fair housing law
+
+
+
+47
+2. Federal Civil Rights Act of 1866
+
+a. Basic provisions
+Note: Law only addresses discrimination based on race, with no exemptions.
+
+b. Enforcement by private lawsuit in federal court only
+
+3. Americans with Disabilities Act (ADA) — Facility accessibility and use requirements for
+“commercial facilities” or “places of public accommodation” [Level 1 - this subtopic]
+Note: A real estate office is a place of public accommodation.
+D. Risk Management [Level 1 - this subtopic]
+
+1. Supervision
+a. The basic agency relationship
+
+i. Consumer employs sole practitioner broker
+▪ Independent broker can function as a sole proprietor or as a licensed entity
+▪ Agency agreements would be between sole proprietor’s company and the
+consumer
+ii. Consumer employs a licensed real estate firm
+▪ Agency agreements would be between the consumer and the firm, not the
+individual affiliated agents
+▪ A broker affiliated with a firm is an agent of the firm under the law of agency
+▪ All brokers affiliated with the firm automatically become subagents of any
+principal-client of the firm
+iii. When an affiliated broker leaves the brokerage, they cannot take the
+contracts/clients with them
+
+b. Responsibilities of the employing broker (firm/BIC)
+i. Supervising all actions of affiliated licensees and employees
+ii. Providing training for affiliated licensees
+
+2. Do Not Call Laws/Rules (https://www.fcc.gov/consumers/guides/stop-unwanted-
+robocalls-and-texts; www.donotcall.gov)
+a. Do Not Call Registry managed by Federal Trade Commission
+[https://www.ftc.gov/]
+
+b. Do not make telephone calls or send robotexts to anyone on the Do Not Call
+Registry (with limited exceptions)
+i. Prohibition includes calls
+▪ To homeowners with expired listings with another broker/ company; the
+“established business relationship” exemption only applies to expired listing
+broker
+▪ To solicit listing from for sale by owner (FSBO) on the registry
+Note: Broker may call a registered FSBO on behalf of a prospective buyer-
+client who is interested in buying the FSBO property.
+
+
+
+48
+ii. Exemptions, unless consumer asked to not be called
+iii. Penalties
+Note: Brokers should stay up -to-date on any restrictions on electronic
+communication (e.g., email, texts, social media) that might affect their solicitation
+of business in that manner. Mass electronic newsletters or “just listed/sold” emails
+would be subject to such restrictions.
+
+3. Vicarious Liability
+a. Liability for another’s actions because of the relationship between the parties
+
+b. Brokerage company/Broker-in-charge is responsible for professional actions and
+conduct performed by all affiliated brokers
+
+c. Also occurs in subagency relationships
+4. Sherman Antitrust Act Prohibits Anti-competitive Practices
+
+a. Price fixing
+b. Boycotting
+
+c. Examples
+d. Never imply or state that the quoted fee is “customary” or “the going rate" for the
+industry or a local area
+Note: Brokers should only discuss their company’s fee and not answer questions
+about how this fee compares to fees of other companies.
+
+4. Fraud & Misrepresentation
+
+a. Employing broker must discourage all fraud/misrepresentation by affiliates
+b. Fraud is intentional or negligent misrepesentation of facts to a party who relied on
+the information and was harmed
+
+c. Misrepresentation is typically the unintentional misleading of another
+
+5. Types of Liability Insurance
+a. Errors and Omissions (E&O) covers most mistakes made in listing and selling
+activities
+
+b. General liability covers the risk assumed when the public enters the brokerage
+building
+Note: No insurance protects from criminal acts and most insurance companies will
+exclude coverage for fraud and violations of civil rights and antitrust laws.
+
+
+
+49
+Section X: Brokerage Practices in NC [Level 2 except as noted below]:
+State Exam Category (12 Items)
+A. Selected Regulated Practices
+
+1. Land Use Controls [Level 1 - this subtopic except as noted below]
+
+a. NC statutory authority for governmental zoning [NCGS 153A and 160A]
+i. General Assembly has police power per the state constitution
+ii. Counties and municipalities delegated zoning power via the enabling acts
+
+b. Highway access restrictions
+
+Note: Ability to access an existing public highway or street that abuts the property
+is a material fact; access may be restricted or forbidden by state or local
+municipality.
+c. Interstate Land Sales Full Disclosure Act [USC 1701 et seq]
+i. Purpose
+ii. Land registration requirement
+iii. Application
+iv. Exemptions
+
+d. Broker's responsibilities for verification of land use and recognition of potential land
+use problems [Level 3 – this subtopic]
+Note: Under the NC Real Estate License Law, a licensee has a duty to avoid any
+misrepresentation regarding permitted land use, to recognize potential land use
+problems, and an affirmative duty to discover and disclose any such problems.
+Licensee is not expected to conduct a title search for covenants or interpret
+covenants as to what activities are permissible; advising clients to have an attorney
+perform such actions would be appropriate.
+
+i. When a property is or might be subject to zoning and/or covenants, advise
+consumer that:
+▪ Ordinances or covenants could affect consumer’s use and enjoyment of the
+property
+▪ Property owners may be subject to owners’ association dues and
+assessments
+▪ Careful review of any covenants and owners’ association governing
+documents is recommended prior to signing any offer
+ii. Avoid any misrepresentation about a property's zoning or permitted land uses
+iii. Recognize “red flag” situations
+Note: Recognizing and taking appropriate action with regard to potential
+problems with zoning and restrictive covenants is particularly important.
+
+iv. Recognize patent signs of flooding on a property or when a property’s location
+may make it susceptible to flooding
+v. Disclose planned major highway or public transportation changes in the area
+as material fact
+
+
+
+50
+2. Environmental Issues
+
+a. The presence on a property of any of the environmental hazards that is known or
+should have been known by a North Carolina broker is a material fact in North
+Carolina that must be disclosed to all transactional parties.
+
+b. NC Leaking Petroleum Underground Storage Tank Cleanup Act [ NCGS 143 -
+215.94A]
+i. Owner of a property (residential or commercial) with a problematic
+underground storage tank (UST) may be liable for cleanup even if leak caused
+by previous owner
+ii. Broker responsibilities
+▪ Any broker who knows of any current or previous USTs on the property
+must disclose to all prospective purchasers or tenants
+▪ Buyer agent should strongly encourage buyer to hire an expert to inspect
+tank and conduct soil contamination test
+3. Delivery of Instruments [NCGS 93A-6(a)(13) and (14); Commission Rule 58A .0106]
+[Level 3 – this subtopic]
+
+a. Assist with delivery of completed RPOADS disclosure statements
+b. Submit offers
+
+i. Brokers must present all offers (including multiple offers and back -up offers)
+to the offeree (or their agent) immediately but in no case later than 3 days
+from broker’s receipt of executed offer [NCGS 93A-6(a)(13); Commission Rule
+58A .0106(a)]
+▪ Even if property already under contract
+▪ Broker cannot “hold” offer while negotiating compensation agreement
+ii. Concurrent offers must be presented at the same time; no particular order of
+presentation is required
+iii. Oral presentation of the offer terms to the offeree does not negate the
+requirement for the broker to deliver the offer within 3 days
+iv. Applies to all brokers in the transaction regardless of who they represent or
+how they will be compensated
+
+c. Furnish copies of offers and contracts [Commission Rule 58A .0106(a)]
+d. Broker’s responsibilities relating to settlement statements [NCGS 93A-6(a)(14)]
+
+4. Advertising [Commission Rule 58A .0105]
+5. Record Retention [Commission Rule 58A .0108]
+6. Handling Trust Funds [Level 2 except as noted below]
+Important Note: Cover basics of trust accounts and handling of trust money. Detailed
+accounting/recordkeeping procedures for brokerage trust accounts are not tested on
+the license examination. Instructors and students are strongly urged to use the
+coverage of this topic in the Comments section of the LLCR.
+
+
+
+51
+a. Definition of trust money [NCGS 93A-6(a)(12); Commission Rule 58A .0116(a)]
+
+i. Trust money: Money belonging to others received by an broker who is acting
+as an agent in a real estate transaction
+ii. Includes money received as an escrow agent or temporary custodian of funds
+belonging to others
+iii. Most common examples: earnest money deposits, down payments, tenant
+security deposits, and rents
+b. Trust account basics [NCGS 93A-6(a)(12) and (g) ; 93A-45(c); Commission Rule
+58A .0116; Commission Rule 58A .0117 ; LLCR on Handling Trust Funds, pp. 99 -
+102] [Level 1 – this subtopic]
+
+i. Basic required features [NCGS 93A-6(g); Commission Rule 58A .0117(b) and
+(f)]
+ii. Proper designation of trust account and FDIC Insurance [Commission Rule 58A
+.0117(b)]
+iii. When a trust account is required [Commission Rule 58A .0116(a)]
+iv. Number of trust accounts required/permitted [Commission Rule 58A .0118(a)]
+v. Commingling of funds prohibited [NCGS 93A-6(a)(12)]
+vi. Limited exception to commingling prohibition allowed to cover bank service
+charges on trust accounts [Commission Rule 58A .0117(c)(4)(B)]
+vii. Requirements for interest-bearing trust account [NCGS 93A-6(a)(12);
+Commission Rule 58A .0116(c)]
+viii. Broker-In-Charge is responsible for trust account [Commission Rule 58A
+.0110(g)(4)]
+Note: BIC remains responsible for trust monies and records even if others are
+allowed to assist with maintenance of the trust account.
+ix. Disbursement of earnest money to settlement agent [Commission Rule 58A
+.0116(e)]
+x. Handling disputed trust funds [NCGS 93A-12; Commission Rule 58A .0116(d)]
+
+c. Handling of trust money [NCGS 93A-6(a)(7), (12) and (14) ; NCGS 93A-45(c);
+Commission Rule 58A .0116]
+i. Basic deposit rule [Commission Rule 58A .0116(a)]
+ii. Exceptions to basic deposit rule [Commission Rule 58A .0116(b)]
+▪ Trust money received by Provisional Broker (PB)
+▪ Trust money received by a Limited Nonresident Commercial Broker
+[Commission Rule 58A .1808]
+▪ Earnest money or tenant security deposits paid by means other than
+currency
+▪ Check or other negotiable instrument payable to seller for an option or due
+diligence fee
+▪ Check or other negotiable instrument payable to third party escrow agent
+in sales transaction for trust monies
+iii. General responsibility of licensees to safeguard trust monies [Commission
+Rule 58A .0116(g)]
+
+
+
+52
+Required Activity: Compare and contrast duties owed to clients vs. third parties. It
+is critical that licensees understand the difference in the standard for determining
+what information must be disclosed to a principal/client versus what must be disclosed
+to a third party/customer (such as a lender).
+B. Prohibited Practices
+
+1. Misrepresentation/Omission of Material Facts [Level 3 – this subtopic]
+
+
+a. Duty to avoid any willful or negligent misrepresentation of a material fact to the
+principal, and to disclose to the principal all material facts about which the agent
+has knowledge or should reasonably have acquired knowledge [NCGS 93A-6(a)(1)
+and (3) and case law]
+i. Misrepresentation
+ii. Omission
+iii. Puffing
+iv. Material facts
+▪ Categories of material facts
+o Facts about the property itself
+o Facts relating directly to the property
+o Facts relating directly to the ability of the parties to complete the
+transaction
+o Facts known to be of specific importance to a party
+▪ Items declared “material” in North Carolina
+o EIFS/synthetic stucco exterior siding, even if fully replaced
+o Polybutylene pipes that have leaked, even if repaired or fully replaced
+o Current or former “meth” house
+▪ Items declared “not material” in North Carolina
+o Reputation as a haunted property
+o Death or illness of previous or current occupant
+b. Discover and disclose material facts
+i. Affirmative duty to discover and volunteer material facts to all parties to the
+transaction, regardless of whom the broker represents
+ii. Broker cannot avoid responsibility for communicating incorrect and/or
+incomplete information by issuing disclaimers;
+iii. Broker has a duty to investigate “red flags” or questionable information
+iv. Broker’s disclosure responsibilities under Real Estate License Law are not
+affected by doctrine of caveat emptor; broker must still volunteer material facts
+to all transactional parties
+2. Discriminatory Practices [NCGS 93A-6(a)(10); Commission Rules 58A .0120(d) and
+.1601]
+3. Unauthorized Practice of Law [NCGS 93A-4(e); NCGS 93A-6(a)(11); Commission Rule
+58A .0111]
+a. Drafting of Sales Contracts by Brokers Prohibited [NCGS 93A-6(a)(12);
+Commission Rule 58A .0111; and NCGS 84-2.1.]
+
+i. Drafting constitutes unauthorized practice of law [NCGS 93A-6(a)(11)]
+ii. Brokers are legally permitted to “fill in the blanks” of preprinted forms
+
+
+
+53
+iii. Prohibition against broker including prohibited provisions or drafting contract
+language, even at instruction of a client
+Note: Have an attorney draft any unique contract language.
+b. Interpreting legal documents for others
+
+4. Improper Brokerage Commissions [Commission Rule 58A .0109] [Level 3]
+
+a. Affiliated provisional brokers [NCGS 93A-6(a)(5)] and affiliated “full” brokers
+[Commission Rule 58A .0120(b)] cannot be compensated directly by anyone other
+than their supervising BIC
+
+b. Compensation to broker licensed in another state only if:
+i. Out-of-state (foreign) broker holds  an active real estate license in the state
+from which they are conducting the brokerage activity, such as placing a
+referral, and
+ii. Foreign broker does not enter NC any time during the transaction to engage in
+any brokerage activity related to the transaction
+
+c. Payment prohibited to broker with an expired or inactive license status unless:
+i. License must be on active status when brokerage activity is performed
+ii. Broker must stop all brokerage activity when license expires or becomes
+inactive
+Note: If the licenses of the firm and the individual broker were on active status
+throughout the period during which brokerage services were rendered, then
+the firm may be paid and the firm may in turn pay the individual broker, even
+if their license is not active at the time of payment. Payment is forfeited if either
+of the licenses were not active at any time that brokerage services were being
+performed.
+
+5. Disclosure of Offers Prohibited [Commission Rule 58A .0115]
+a. Existence of other offers is not a material fact
+
+b. Broker needs seller’s authority to share existence of other offers and/or terms that
+might be acceptable to the seller
+
+c. Broker prohibited from sharing material terms of an offer (e.g., sometimes called
+“shopping an offer”) without express permission of offeror
+
+6. Failure to Deliver Settlement Statements to Client [NCGS 93A-6(a)(14)]
+a. Broker may be subject to disciplinary action for failing to deliver a detailed and
+accurate settlement statement to their client at closing
+
+b. Broker may rely on the settlement agent who prepared that statement for its
+delivery, but broker must review the statement for accuracy and notify all parties
+to the closing of any errors (“all parties” would include buyer, seller, settlement
+agent, and lender) [NCGS 93A-6(a)(14)]
+
+
+
+54
+7. Commingling Trust Money with Personal Funds [NCGS 93A-6(a)(12); Commission Rule
+58A .0116(g)]
+Note: Limited exception to commingling prohibition allowed to cover bank service
+charges on trust accounts [Commission Rule 58A .0117(c)(4)(B)]
+
+
+
+
+Section XI: Contracts & Closing in NC [Level 2 except as noted]:
+State Exam Category (7 Items)
+A. Introduction
+
+1. General Rules for Interpretation of Contracts
+a. Parol evidence rule
+
+b. Written overrides oral
+
+c. Contracts are interpreted as a whole
+d. Words will be interpreted per their ordinary meaning unless other intent is clearly
+noted
+
+e. Written overrides preprinted language, if there is a conflict
+f. Writer of ambiguous language will be held liable for confusion; court generally rules
+in favor of party that did not draft the confusing language
+
+2. Drafting of Sales Contracts by Brokers Prohibited [NCGS 93A-6(a)(11); Commission
+Rule 58A .0111; and NCGS 84-2.1.]
+
+a. Drafting constitutes unauthorized practice of law [NCGS 93A-6(a)(11)]
+
+b. Brokers are legally permitted to “fill in the blanks” of preprinted forms
+Note: Have an attorney draft any unique contract language.
+3. Sources of Standardized Sales Contract Forms
+
+a. REALTORS® may obtain and use the contract forms created by NC REALTORS®
+as part of their membership benefits
+
+b. Non-REALTOR® brokers may not initiate use of forms bearing only the REALTOR®
+logo
+c. Non-REALTOR® brokers may obtain and use the sales contract forms and standard
+addenda that are jointly approved by North Carolina REALTORS® and the North
+Carolina Bar Association (NCBA), that bear only the NCBA logo/approval,  through
+an attorney or forms vendor
+
+
+
+55
+Required Activity: The NCAR/NCBA OPC Standard Form 2 -T, Guidelines for
+Completing The Offer to Purchase and Contract Form, and the most commonly used
+standard addenda forms designed for use with the 2 -T form (listed below) must be
+provided to students and used in this instruction. Conduct a detailed review of each
+paragraph in the Standard Form 2 -T, including any prompts to attach a completed
+standard addendum as part of the offer/contract. Be sure to discuss the purpose of
+each paragraph, and common issues in filling various blanks.
+Note: NCREC does not create the standardized sales contract forms used by the
+majority of NC licensees. The only standardized forms authored by the Commission
+are:
+▪ Working With Real Estate Agents Disclosure
+▪ Residential Property and Owners’ Association Disclosure
+Statement (RPOADS)
+▪ Mineral and Oil and Gas Mandatory Disclosure Statement (MOG)
+B. The Offer to Purchase and Contract (May be referred to as Sales Contract, Purchase
+Contract, Earnest Money Contract or some similar name in other states) [Level 3 – this
+subtopic]
+1. Requirements of Preprinted Sales Contract Forms Provided by Broker [Commission
+Rule 58A .0112]
+
+a. Must include 19 items/issues required by rule
+Note: Student do not need to know the actual 19 items for the exam.
+
+b. Prohibited provisions [Commission Rule 58A .0112(b)]
+i. Brokerage compensation
+ii. Liability disclaimer of the broker
+
+c. Prohibition against broker including prohibited provisions or drafting contract
+language, even at instruction of a client
+
+2. The Offer to Purchase and Contract (OPC) Standard Form 2-T and standard
+addenda forms jointly approved by NCAR and NCBA
+
+
+a. Proper use of the OPC form
+i. Primarily intended for sale of existing single-family residences
+ii. Use standard addenda to tailor to needs of the parties
+iii. Do not use for lease-option agreement, lease-purchase agreement, or
+installment land contract
+
+b. Item-by-item review of all OPC contract provisions and instructions on proper form
+completion using the Guidelines.
+
+i. General guidelines for contract completion
+▪ Type or print legibly
+▪ Fill in ALL the blanks; enter “N/A” or “none” as appropriate
+▪ Be precise; avoid abbreviations, acronyms, or unclear terminology
+▪ Both Buyer and Seller should initial and date every change, addition, or
+deletion
+
+
+
+56
+Required Activity: Use various scenarios to explore how initial and
+additional types of EMD should be handled and when it should be delivered
+to the Escrow Agent at various points during the transaction. Pay particular
+attention to application of Commission Rule 58A .0116(b)(3 -4) regarding
+following Buyer’s instructions for delivery to and the timing of deposit by
+the Escrow Agent.
+▪ Rewrite offer if there are numerous changes; retain copies of all offers and
+contracts
+▪ Review ALL contract provisions with the parties and recommend they obtain
+legal advice to answer legal questions
+Note: Be sure to highlight all the Notes and Warnings in the form.
+ii. Paragraph #1: Terms and Definitions
+Note: Whenever a term that would not normally be capitalized appears in the
+body of a contract and begins with a capital letter, it indicates that the word or
+phrase is a defined term that can be found somewhere earlier in that contract.
+Most of the defined terms in Form 2-T are defined in Paragraph #1. Words that
+appear in parenthesis, such as (Additional) Earnest Money Deposit in 1(d), are
+optional words to be used or ignored as appropriate.
+
+▪ Names of Seller and Buyer
+▪ Property Description
+▪ Purchase Price
+▪ Earnest Money Deposit (EMD) [Commission Rule 58A .0116]
+
+
+▪ Escrow Agent
+o Disputed EMD [NCGS 93A-12; Commission Rule 58A .0116(d)]
+▪ Effective Date
+▪ Due Diligence
+o Due Diligence Fee (DDF)
+o Due Diligence Period (DDP)
+▪ Settlement
+Note: Brokers are strongly cautioned against suggesting inclusion of a time
+being of the essence provision regarding the settlement date unless it is
+imperative to one of the parties that the transaction close by a specific date.
+Such an inclusion could be considered “unlawful practice of law” by a broker.
+
+▪ Closing
+Note: The settlement meeting and closing do not always happen on the
+same day, especially if settlement occurs late in the day.
+
+▪ Special Assessments
+iii. Paragraph #2: Fixtures and Exclusions
+
+iv. Paragraph #3: Personal Property
+
+
+
+57
+v. Paragraph #4: Buyer’s Due Diligence Process
+Note: Buyers should be strongly advised to perform due diligence activities
+as quickly as possible to allow time for negotiation about any discovered issues
+to be resolved prior to the end of the DDP. The Buyer is not limited to the
+investigative items listed in this Paragraph. Seller is not obligated to engage in
+repair negotiations or extend the DDP. If the Buyer does not terminate the
+contract prior to the end of the DDP, the Buyer may continue to investigate the
+Property after the DDP but has waived their right to terminate without penalty
+unless there is a Seller breach.
+▪ 4-a. Loan
+Note: There are no financing or appraisal contingencies in this contract.
+Buyer should be strongly encouraged to meet with a mortgage lender prior
+to starting a property search. Ideally, DDP should be long enough for Buyer
+to receive the appraisal and to feel confident in their ability to obtain loan
+approval.
+▪ 4-b. Property Investigation
+▪ 4-c. Sale/Lease of Existing Property
+▪ 4-d. Repair/Improvement Negotiations/Agreement
+▪ 4-e. Buyer’s Obligation to Repair Damage caused by inspections (even if
+contract fails)
+▪ 4-f. Indemnification of Seller by Buyer for damage caused by Buyer or Buyer
+agents and contractors
+▪ 4-g. Buyer’s Right to Terminate
+▪ 4-h. Closing shall constitute Acceptance unless other provision made in
+writing
+vi. Paragraph #5: Buyer Representations
+Note: Buyer is liable for the accuracy of all representations made and Seller is
+entitled to rely on the information. The representations are informational only
+and do not rise to the level of a contract condition or contingency absent
+relevant attached addenda.
+
+▪ 5-a. Funds to complete purchase
+▪ 5-b. Other Property
+▪ 5-c. Performance of Buyer’s Financial Obligations
+▪ 5-d. & e. Property Disclosures [NCGS 47E]
+
+vii. Paragraph #6: Buyer Obligations
+▪ 6-a. Proposed Special Assessments: Buyer takes title subject to
+▪ 6-b. Responsibility for certain costs
+▪ 6-c. Authorization to disclose information
+viii. Paragraph #7: Seller Representations
+Note: Seller is liable for the accuracy of all representations made and Buyer is
+entitled to rely on the information. The representations are informational only
+and do not rise to the level of a contract condition or contingency absent
+relevant attached addenda.
+▪ 7-a. Length of property ownership
+▪ 7-b. Lead-Based Paint, if applicable
+▪ 7-c. Owners’ Association(s) and Dues
+
+
+
+58
+ix. Paragraph #8: Seller Obligations
+Note: If Seller fails to comply with the numerous obligations imposed by the
+Contract, Buyer may terminate the Contract and receive a refund of any EMD
+and DDF paid. In a Seller breach, Buyer may also obtain reimbursement from
+Seller for reasonable costs incurred in conducting the Due Diligence without
+affecting any other remedies available to Buyer. Brokers are reminded that an
+attorney should be consulted to determine if a breach has occurred.
+
+▪ 8-a. Evidence of Title, Payoff Statement(s) and Non Foreign Status
+▪ 8-b. Authority to Disclose Information
+▪ 8-c. Access to Property
+▪ 8-d. Removal of Seller’s Property
+▪ 8-e. Affidavit & Indemnification Agreement (against Mechanics Liens)
+[NCGS 44A-8]
+▪ 8-f. Designation of Lien Agent, Payment & Satisfaction of Liens [if
+required by NCGS 44A-11.1]
+▪ 8-g. Good Title, Legal Access
+▪ 8-h. Deed, Taxes & Fees
+▪ 8-i. Agreement to Pay Buyer Expenses
+▪ 8-j. Owners’ Association Fees/Charges
+▪ 8-k. Payment of Special Assessments, if any
+▪ 8-l. Late Listing Penalties, if any
+▪ 8-m. Negotiated Repairs/Improvements
+Note: Good and workmanlike manner is a term of art that is not as vague
+as it first appears. It means the work has been completed to the standard
+of the industry.
+▪ 8-n. Home Warranty
+▪ 8-o. Seller’s Breach of Contract (refer to Paragraph #23)
+x. Paragraph #9: Charges by Owners’ Association
+
+xi. Paragraph #10: Prorations and Adjustments (Based on 365 days/ year)
+▪ Taxes on Real Property
+▪ Taxes on Personal Property
+▪ Rents, if any
+▪ Dues
+
+xii. Paragraph #11: Condition of Property/Risk of Loss
+Note: Paragraph 11 survives expiration of the DDP.
+
+xiii. Paragraph #12: Delay in Settlement/Closing
+Note: Clarify when a party is entitled to a seven (7) day delay in Settlement.
+
+xiv. Paragraph #13: Possession
+Note: If possession date is critical to Buyer, Settlement should be scheduled
+so that there is sufficient time for Closing to occur before desired possession
+date.
+
+
+
+59
+
+xv. Paragraph #14: Addenda
+Note: A NC real estate broker is not permitted to suggest or draft any addenda
+for others (unless they are an actively licensed NC attorney).
+xvi. Paragraphs #15-22: Miscellaneous Paragraphs
+▪ #15. Assignments
+▪ #16. Tax-Deferred Exchange
+▪ #17. Parties
+▪ #18. Survival
+▪ #19. Entire Agreement
+▪ #20. Conduct of Transaction
+▪ #21. Execution
+▪ #22. Computation of Days/Time of Day
+xvii. Paragraph # 23: Remedies
+▪ Breach by Buyer
+▪ Breach by Seller
+▪ Attorneys’ Fees
+
+xviii. Page 14: Signature and Dates with Wire Fraud Warning
+xix. Page 15: Notice Information
+Note: Entry of any Buyer or Seller contact information in the Notice Information
+section authorizes communication directly to a Party rather than the standard
+practice of communicating through the agents.
+▪ Enter names of individual listing and selling brokers, their license numbers,
+firm names and license numbers, and check appropriate agency
+representation boxes [Commission Rule 58A .0104(f)]
+xx. Page 16: Acknowledgment of Receipt of Monies
+
+C. Brief Review of Commonly Used Standard Addenda Forms (provided by NCAR and NCBA
+for use with the standard Offer to Purchase and Contract form)
+Note: In an event of a conflict between information in an addendum and the contract, the
+addendum will control, unless the conflict involves the description of the Property or the
+identity of Buyer or Seller in which case the contract will control.
+
+1. Additional Provisions Addendum (2A11-T)
+
+2. Back-Up Contract Addendum (2A1-T)
+3. FHA/VA Financing Addendum (2A4-T)
+
+4. Lead-Based Paint or Lead-Based Paint Hazard Addendum (2A9-T)
+Required Activity: Discuss the advantages and disadvantages of allowing
+possession at a time other than Closing. Be sure to address insurance issues
+and what happens if the transaction does not close. Remind brokers to
+encourage their clients to consult an attorney about risks/implications of
+possession before/after closing.
+
+
+
+60
+5. Short Sale Addendum (2A14-T)
+
+6. Buyer Possession Before Closing Agreement (2A7-T)
+7. Seller Possession After Closing Agreement (2A8-T)
+
+8. Vacation Rental Addendum (2A13-T)
+Note: If, after licensure, a broker becomes a member of the NC REALTORS®, the
+association has numerous other contract -related forms that deal with matters such as
+repair requests, negotiations, termination of contract, etc. If a licensee is not a
+REALTOR®, an attorney must prepare any contract-related forms provided by the licensee
+to the parties if the content of the document will affect the parties’ legal rights.
+D. Sales Contract Procedures [Level 3]
+
+1. Submitting Offers
+a. All offers (including multiple offers and back -up offers) must be presented within
+3 days of broker’s receipt of executed offer [Commission Rule 58A .0106(a)] even
+if Property is already under contract
+
+b. Disclosure of offer and/or terms
+
+i. Existence of other offers is not a material fact
+ii. Broker needs Seller’s authority to share existence of other offers and/or terms
+that might be acceptable to the Seller
+iii. Broker prohibited from sharing material terms of an offer (e.g., sometimes
+called “shopping an offer”) without express permission of offeror [Commission
+Rule 58A .0115]
+2. Handling Counteroffers and Contract Modifications
+
+a. Retain all offers, even if rejected, amended, or replaced [Commission Rule 58A
+.0108]
+3. Delivery of Contract Copy to All Contract Parties Required [Commission Rule 58A
+.0106]
+E. NC Closing Procedures
+
+1. Settlement Agent
+a. Selected by the buyer to represent the buyer and the buyer’s lender; may provide
+limited services to seller (e.g., preparing the deed)
+
+b. Seller may elect to have their own attorney; more common in commercial
+transactions
+
+c. Provide information to the settlement agent as soon as possible
+
+i. Copy of the sales contract with all addenda and/or amendments
+ii. Contact information for all parties
+
+
+
+61
+iii. Have parties provide their social security numbers
+iv. Contact information for buyer’s lender
+v. Seller’s lender information for loan payoff
+vi. Copy of any survey
+vii. Copies of any required inspection reports
+viii. Property insurance binder
+
+2. Buyer’s Due Diligence Process
+Note: Refer to the NCAR/NCBA Offer to Purchase and Contract Standard Form 2-T for
+buyer’s responsibilities under the contract.
+
+a. Buyer’s loan
+i. Standard 2-T contract is not contingent on loan approval
+ii. Inability of the buyer to secure financing after the DDP would result in a buyer’s
+breach of the contract
+b. Appraisal
+
+c. Property survey
+d. Property insurance
+
+i. Lender will usually require that adequate homeowner insurance coverage be in
+effect as of the day of closing
+ii. Flood elevation certificate and flood insurance usually required by lender if any
+part of the financed property is in a FEMA special flood hazard zone
+Note: It is extremely important for the buyer and seller to have appropriate
+insurance coverage in situations when the closing is delayed, when the buyer
+will occupy the property before closing, or when the seller will occupy the
+property after closing. Failure to have proper coverage in these situations may
+result in the property being uninsured for some period of time.
+e. Property inspections
+Note: Buyer should be advised to perform their own inspections instead of only
+relying on the information in the Residential Property and Owners’ Association
+Disclosure Statement.
+i. Wood-destroying insect (termite) inspection
+ii. Property inspection usually performed by qualified professionals
+Note: Buyer is encouraged to have inspections performed as soon as possible
+to allow time for any needed repair negotiations to be completed prior to the
+end of DDP.
+
+iii. Physical inspection by buyer (and agent working with buyer)
+Note: A broker working with a buyer is expected to recognize “red flag”
+situations and to assist the buyer in checking into such situations.
+
+
+
+62
+▪ Early walk-through to identify any potential issues
+▪ Examples of things to investigate
+o Tenants
+o Easements and encroachments
+o Recent construction or renovations
+o Violations of zoning or restrictive covenants
+Note: Buyer should obtain and read a copy of any subdivision covenants prior
+to physical inspection.
+
+iv. Onsite septic system (if appropriate)
+▪ Improved property
+o Obtain copy of septic permit from county health department, if possible
+Note: Broker cannot advertise more bedrooms than allowed by septic permit
+regardless of how many rooms are designed as bedrooms.
+▪ Unimproved property
+o Order a soil suitability test to determine if property will support a septic
+system; previously called a perc test
+o Even lots within an approved subdivision should be evaluated
+v. Other common inspections (if needed or desired)
+▪ Radon
+▪ Lead-based paint
+▪ Asbestos
+▪ Mold
+▪ Well water
+
+f. Resolution of repair issues
+i. Anything can be negotiated during the DDP
+ii. Repairs themselves do not have to be completed prior to the end of the DDP,
+only prior to Settlement
+iii. There are standard forms available to ratify repair agreements as part of the
+sales contract
+g. Review of covenants and homeowner’s association documents
+Note: Especially important if buyer is planning to add improvements, enlarge
+existing structures, or use the property for business purposes.
+
+h. Other matters of interest subject to government regulation
+i. Permitted property use
+ii. Plans for adjacent undeveloped property
+iii. Public or private status of subdivision streets
+iv. School assignment
+
+3. Other Pre-closing Matters
+a. Title examination by attorney, including personal property lien search and
+mechanic’s lien inquiry
+
+
+
+63
+b. Clearing of title defects by seller, if needed
+
+c. Loan closing package provided to settlement agent by buyer’s lender
+d. Brokers perform advance review of settlement statement, if available
+
+e. Per TRID rule, lender must provide the Borrower’s Closing Disclosure to the
+borrower at least 3 business days prior to settlement
+f. Buyer notified as to amount of certified funds needed to close (e.g., certified check,
+bank check, or wired to settlement agent)
+Note: Cash and/or personal check are generally unacceptable as buyer funds to
+close.
+
+g. Settlement agent arranges for title insurance
+4. Closing Procedures [Level 3 except as noted below]
+
+a. Definitions
+i. Settlement
+ii. Settlement meeting
+iii. Closing
+b. Pre-closing procedures
+
+i. Broker holding earnest money transfers EMD to settlement agent no more than
+10 days prior to settlement [ Commission Rule 58A .0116(e) ] (or notifies
+settlement agent that EMD will be retained by escrow agent firm as credit
+toward brokerage fee)
+c. Closing methods
+i. Escrow closing [Level 1 – this subtopic]
+▪ Parties do not attend a meeting; all documents and funds are delivered into
+escrow
+▪ Escrow/settlement agent performs all needed actions; frequently a title
+company or escrow division of a lending institution
+▪ Relation back doctrine
+▪ Seldom used in NC
+ii. Settlement meeting method
+▪ Most closings in NC use this method with an attorney conducting or
+supervising the closing process
+▪ Parties usually attend a meeting with settlement agent
+▪ In NC, a nonlawyer acting under the direct supervision of an attorney
+o May conduct the settlement meeting without the attorney being
+physically present, but attorney must be available for legal questions
+o May identify documents to be signed, show parties where to sign, and
+write checks disbursing proceeds
+o Must ask supervising attorney to address any legal concerns
+
+
+
+64
+▪ Record the deed and deed of trust prior to any disbursement of funds
+Note: Real estate brokers are strongly discouraged from attempting to act
+as a settlement agent.
+
+d. Settlement meeting procedures
+i. Meeting location
+ii. Parties attending settlement meeting may include
+▪ Seller(s)
+▪ Buyer(s)
+▪ Settlement agent, always
+▪ Representative of the lender, rarely
+▪ Listing real estate broker
+▪ Selling real estate broker
+Note: Brokers should attend the settlement meeting as part of their fiduciary
+duties to their clients; however, a broker whose real estate license is not on
+active status (for any reason) should not attend because they would be
+performing brokerage activity without a license.
+iii. Final settlement statement review for accuracy and completeness
+iv. Review and signing of documents and delivery of copies to all parties
+v. Collection of certified funds due from buyer and, occasionally, from seller
+e. Procedures after the settlement meeting
+
+i. Title search update and recording of deed and deed of trust
+ii. Disbursement of proceeds and brokerage commission [Level 1 – this subtopic]
+Note: No disbursement of funds should happen at settlement meeting
+
+iii. Cancellation of Seller’s liens that were paid at closing (sometimes 30-60 days
+post-closing)
+iv. Income tax reporting requirements
+
+f. NC broker responsibilities relating to settlement statements [NCGS 93A-6(a)(14)]
+Note: Review TRID section from the 2015-2016 General Update.
+i. Brokers should possess a thorough understanding of settlement statements
+and closing disclosures in order to help protect the interests of transaction
+parties
+ii. For closing disclosures and settlement statements prepared by a settlement
+agent, the broker is to confirm completion in accordance with the sales contract
+and to verify the accuracy of those entries about which they have direct
+knowledge
+iii. For amounts due to or from third parties, the broker may assume the amounts
+entered by the settlement agent are correct (in the absence of a red flag);
+however, the broker is expected to assure that:
+▪ All relevant debits and credits are properly charged or credited
+▪ All calculations for prorated items, escrow reserves, interim interest, excise
+tax and bottom-line figures are correct
+▪ Any expense paid as part of the transaction is entered on the settlement
+statement, even if prepaid outside of closing (POC), (e.g., home inspection)
+
+
+
+65
+Required Activity: Integrate mathematical calculations related to mortgage finance into
+the teaching of the essential concepts and terminology (e.g., simple lifetime interest,
+monthly principal and interest payment, mortgage debt reduction, loan origination fees,
+discount points, loan-to-value ratios, and yield). Refer to Section XVI. Real Estate Math
+Calculations for descriptions of the required calculations.
+iv. Broker may be subject to disciplinary action for failing to deliver a detailed and
+accurate settlement statement to their client at closing. Broker may rely on the
+settlement agent who prepared that statement for its delivery, but broker must
+review the statement for accuracy and notify all parties to the closing of any
+errors (“all parties” would include buyer, seller, settlement agent, and lender)
+[NCGS 93A-6(a)(14)]
+
+
+
+
+Section XII: Financing & Settlement [Level 1 except as noted]:
+National Exam Category (7 Items)
+
+
+A. Basic Finance Concepts, Terminology and Calculations
+
+1. Basic Concepts and Terminology
+a. Principal and interest
+
+b. Amortization
+c. Debt service
+
+d. PITI
+
+e. Equity
+f. Usury
+
+g. Discount points
+i. 1 point = 1% of the mortgage loan amount for the borrower
+ii. 1 point = 1/8 % yield for the investor
+
+h. Yield
+
+i. Loan value
+j. Loan-to-value ratio
+
+2. Mortgages and Deeds of Trust
+a. Basic mortgage terminology and concepts
+
+i. Mortgage
+ii. Promissory note (mortgage note)
+
+
+
+66
+iii. Deed of trust
+iv. Hypothecation
+v. Lien theory
+vi. Title theory
+vii. Default
+viii. Foreclosure
+
+b. The mortgage note
+i. Essential elements of a valid note
+Note: A promissory note is a form of contract.
+
+ii. Special note provisions
+▪ Acceleration clause
+▪ Prepayment penalty clause
+▪ Due-on-sale clause (alienation clause)
+iii. Negotiable note vs. nonnegotiable note
+iv. Some states use a bond in lieu of a promissory note
+
+c. The mortgage (or deed of trust) instrument
+i. Distinction between mortgage and deed of trust
+Note: The term mortgage is commonly used incorrectly to refer to the actual
+loan vs. the legal instrument that pledges the property for the loan (e.g., “I am
+going to get a mortgage” vs. “I am going to give a deed of trust to get a
+mortgage loan”). Brokers are expected to know the difference and the technical
+difference between a mortgage and a deed of trust.
+
+▪ Mortgage
+o 2 parties
+- Mortgagor
+- Mortgagee
+o Lien theory
+o Judicial foreclosure
+▪ Deed of trust (Commonly used in NC)
+o 3 Parties
+- Grantor/trustor
+- Trustee
+- Beneficiary
+o Title theory
+o Power of sale (non-judicial) foreclosure
+ii. Essential elements
+Note: A mortgage or deed of trust is a form of contract.
+iii. Obligations of parties
+▪ Borrower
+▪ Lender
+iv. Signature of spouse
+Note: If husband and wife are buying as tenants by the entirety (joint tenants
+in many other states) and only one spouse signs the mortgage note, both
+spouses must still sign the mortgage or deed of trust.
+
+
+
+67
+v. Rights of borrowers
+▪ Right to possession and use
+▪ Right of defeasance
+▪ Right (equity) of redemption
+vi. Rights of mortgage lenders
+▪ Right to transfer (assign) the mortgage
+▪ Right to foreclose
+o Foreclosure methods
+- Judicial
+- Power of sale (nonjudicial)
+- Strict
+o Foreclosure procedures
+- Proper notice of foreclosure
+- Foreclosure sale at public auction
+- A 10-day statutory redemption period in NC
+- Disbursement of sale proceeds
+- Unsatisfied creditors may appeal to court for a deficiency judgment
+Note: In NC, seller financing is prohibited from using deficiency
+judgments to recover deficit.
+
+3. Sale of Mortgaged Property [Level 2 excepted as noted below]
+Note: Assumptions of mortgages and purchases subject to a mortgage occur very
+infrequently because of due on sale clauses in most modern mortgages.
+
+a. Cash sale
+i. Most common in residential transactions
+ii. Includes transactions where buyer obtains a new mortgage loan
+b. Sale with assumption of seller’s existing mortgage
+
+c. Purchase subject to seller’s existing mortgage [Level 1 – this subtopic]
+d. Short sale
+
+i. Basic overview of procedure
+ii. Broker’s role
+▪ Existence of a possible short sale situation is a material fact
+▪ Listing agent should attempt to identify potential prior to listing and advise
+seller-client about the process
+▪ Buyer agent should advise buyer client about the process and use
+appropriate contract addenda when making an offer; buyer agent is not
+expected to discover possibility of a short sale
+Note: Broker cannot negotiate a “workout agreement” with the lender on the
+borrower’s behalf because it would be unauthorized practice of law.
+
+
+
+68
+B. General Categories of Residential First Mortgage Loans [Level 2 except as noted below]
+
+1. Conventional Mortgage Loan
+Note: Conventional loans are typically seen as the most secure loans for lenders
+because they usually have the lowest loan-to-value ratio.
+a. Conforming vs. nonconforming mortgage loans
+
+b. Private mortgage insurance (PMI)
+c. Home equity loan and home equity line of credit (HELOC)
+
+2. FHA-insured Mortgage Loan
+a. Loan program operated by Federal Housing Authority (FHA) under the Department
+of Housing and Urban Development (HUD)
+
+i. Purpose of program
+ii. FHA does not build housing or lend money for housing purchases
+iii. FHA insures FHA-approved lenders against loss if borrowers default; similar to
+PMI
+b. Title II, Section 203(b) Program – most widely used FHA program
+
+i. Applies to residential 1-4 unit property loans, including manufactured housing
+ii. General characteristics
+▪ Fixed-rate loans with up to 30-year terms made by lenders under FHA
+guidelines
+▪ FHA provides mortgage insurance
+▪ Mortgage insurance premium (MIP)
+▪ Owner (borrower) occupancy required
+▪ Maximum loan amount
+▪ Interest rates set by lender, not FHA
+▪ Appraisal
+▪ No prepayment penalty
+▪ Assumability
+▪ Original borrower may remain secondarily liable for repayment of an
+assumed loan
+c. Other FHA loan programs are available, including loans for special purposes, such
+as senior borrowers, rehabilitation, and condominium purchases plus special loan
+repayment plans, such as graduated payment mortgages (GPM), and adjustable
+rate mortgages (ARM) [Level 1- this subtopic]
+Note: It is only necessary to be aware that other FHA programs exist.
+3. VA-Guaranteed Mortgage Loan
+
+a. Loan program operated by the Department of Veterans Administration
+
+i. Purpose of program
+ii. VA does not build housing and only directly funds loans for housing for Native
+American veterans living on Federal trust land
+iii. VA guarantees (or backs) VA-approved lenders against loss if borrowers default
+
+
+
+69
+b. Generally applies to residential 1-4 unit property loans under VA guidelines,
+including manufactured housing
+
+c. VA Certificate of Eligibility
+d. General characteristics
+
+i. Most significant feature – possibility of no down payment
+ii. Owner (borrower) occupancy required
+iii. Property must meet VA property condition standards
+iv. No maximum VA-guaranteed loan amount
+v. Qualifying requirements
+vi. Lender sets interest rate, not the VA
+vii. Funding fee
+viii. Certificate of reasonable value (CRV)
+ix. No prepayment penalty
+x. All VA loans are assumable for qualified owner-occupants
+Note: A VA release of liability does not release the original borrower from
+liability to the lender; lender must provide separate release for original
+borrower to be fully absolved of all responsibility for an assumed VA loan.
+
+4. US Department of Agriculture Rural Development Mortgage Loan [Level 1 – this
+subtopic]
+
+a. Operated through the Rural Housing Service of the US Department of Agriculture
+(USDA)
+
+b. Provides both direct and guaranteed single-family housing loans
+
+c. Eligibility requirements
+d. General characteristics
+
+i. Longer than normal repayment period (e.g., 33 - 38 years)
+ii. 100% financing; no down payment
+iii. Subsidized interest rates
+iv. Qualifying requirements
+Note: Contact the NC state office at https://www.rd.usda.gov/nc to obtain loan and
+area office information.
+5. Seller Financing [Level 1 – this subtopic]
+
+a. Purchase money mortgage
+b. Land contract/contract for deed
+
+C. Types of Mortgage Loans
+
+1. Types by Repayment Terms
+
+
+
+70
+a. Fixed rate - level payment mortgage (fully amortized) [Level 2 – this subtopic]
+
+i. Most commonly used residential loan repayment plan
+ii. Amortization
+b. Adjustable rate mortgage loan (ARM)
+
+i. Cap rates
+▪ Periodic (or anniversary) cap
+▪ Lifetime (or aggregate) cap
+▪ Index
+ii. Payment cap
+▪ May result in negative amortization
+
+c. Graduated payment mortgage loan (GPM)
+d. Term mortgage loan (interest only or straight mortgage)
+
+i. Term period is usually very short (e.g., 3-5 years) and may be renewable
+ii. Frequently used for construction loans or junior mortgages
+
+e. Growing equity mortgage Loan (GEM)
+f. Buydown mortgage loan
+
+i. Interest rate is temporarily or permanently reduced (“bought down”)
+ii. A lump sum (usually stated as points) is paid at closing to the lender to offset
+reduced payments; may be paid by buyer, seller, or third party
+
+g. Balloon mortgage loan (partially amortized)
+
+2. Types by Purpose or Special Feature
+a. Construction mortgage loan
+
+b. Open end mortgage loan
+i. Repaid and reused without additional closing costs
+ii. Acts as a line of credit or equity line
+c. Blanket mortgage loan
+
+d. Package mortgage loan
+e. Bridge mortgage loan
+
+3. Mortgage Priorities [Level 2 – this subtopic]
+a. Types by mortgage priority
+i. First (or senior)
+ii. Second, third, etc. (junior)
+
+
+
+71
+b. Effect and importance of recordation of mortgages (deeds of trust) AND the
+cancellation or release of a mortgage/deed of trust
+c. Subordination of mortgages
+D. U. S. Monetary Policy
+1. Role of the Federal Reserve (the Fed)
+
+2. Effect on Mortgage Interest Rates
+
+3. Effect on Availability of Mortgage Funds
+E. The Primary Mortgage Market
+1. Purpose
+
+2. Various Sources of Mortgage Loans
+a. Direct lenders (e.g., banks, savings associations, credit unions, etc.)
+
+b. Mortgage banking companies
+c. Mortgage brokers
+
+d. Others
+F. The Secondary Mortgage Market
+1. General Concepts and Operation
+a. Purpose
+
+b. Loan pooling
+c. Mortgage-backed securities
+
+2. The Various Government-Sponsored Enterprises (GSE)
+a. Federal National Mortgage Association (FNMA – Fannie Mae)
+
+b. Government National Mortgage Association (GNMA - Ginnie Mae)
+c. Federal Home Loan Mortgage Corporation (FHLMC - Freddie Mac)
+
+G. Residential Lending Practices and Procedures in Transactions Subject to TRID [Level 2 –
+this subtopic]
+
+1. Loan Application Procedures
+a. Information and documentation typically required
+
+i. Borrower’s personal information, such as employment, earnings, assets, and
+outstanding financial obligations
+
+
+
+72
+ii. Property information, such as legal description, improvements, title, survey,
+and taxes
+iii. Loan information, such as purpose of loan, proposed loan amount, repayment
+terms, and interest rate
+b. Lender’s loan estimate (LE)
+
+c. Rate lock
+d. Lender denial must be in writing
+
+2. Loan Underwriting Practices
+
+a. Borrower analysis (qualifying a buyer/borrower)
+Note: Brokers are encouraged to prequalify prospective buyers early in  the home
+buying process to minimize wasting time and energy on showing and writing offers
+on properties that cannot be afforded by the buyer.
+
+i. Credit history and credit score
+ii. Adequacy of assets to close the transaction
+iii. Stability of income
+iv. Types of acceptable income
+v. Occupancy of the property
+vi. Adequacy of income
+▪ Conventional loan
+o Borrower’s expense to income ratios usually cannot exceed 28% for
+housing expense to gross income ratio and 36% for the recurring debt
+to gross income ratio
+▪ FHA loan
+o Qualifying ratios to gross income are 31% for housing expenses and
+43% for recurring debt
+▪ VA loan
+o Considers several factors including an analysis of borrower’s residual
+income and a maximum 43% ratio of gross income to recurring debt;
+exceptions are possible
+Note: A buyer must qualify on both the income and the debt ratios.
+
+b. Property analysis
+i. Title opinion and title insurance
+ii. Appraisal assigned randomly through an appraisal management company
+Note: Loan value will be calculated on the contract sales price or the appraised
+value, whichever is lower.
+
+c. Loan analysis
+
+i. Yield (interest rate and discount points)
+ii. Loan term
+iii. Loan-to-value ratio
+iv. Mortgage insurance
+
+
+
+73
+d. Loan commitment and closing
+
+i. Lender’s letter of commitment
+ii. Loan principal disbursed at settlement; “loan closing”
+H. Federal Financing Legislation
+Important Note: Pursuant to the Dodd -Frank Wall Street Reform and Consumer
+Protection Act (hereafter known as Dodd -Frank Act), the Consumer Financial Protection
+Bureau (CFPB) was assigned the consumer protection responsibilities of seven (7)
+different federal agencies (including the Federal Reserve Board, HUD and the FTC). The
+CFPB is responsible for promulgating rules for the Truth -in-Lending Act, RESPA, the Fair
+Credit Reporting Act, and the Equal Credit Opportunity Act. One express mandate of the
+Dodd-Frank Act was that the CFPB consolidate the duplicate lender disclosures under TILA
+and RESPA, yielding the TRID rules (TILA/RESPA Integrated Disclosures).
+
+1. Truth-in-Lending Laws/Regulations [Level 2 – this subtopic]
+a. The Truth-in-Lending Act (TILA)
+
+i. Compilation of initial TILA, Truth in Lending Simplification and Reform Act
+(TILSRA), and Disclosure Improvement Act
+ii. Rules known as Regulation Z
+iii. Administered by the CFPB
+b. Basic purpose
+
+c. Applicability
+i. Applies to those who advertise or extend loans that
+▪ Involve a finance charge or
+▪ Are payable in more than 4 installments
+ii. Exemptions
+
+d. Disclosure of credit information to borrowers
+i. Loan estimate (LE)
+ii. Delivery of preliminary and final LE
+iii. Significant change will probably require a new LE and a possible closing delay
+iv. Four (4) chief disclosures
+▪ Annual percentage rate (APR)
+Note: It is not the interest rate.
+
+▪ Finance charges
+▪ Amount financed
+▪ Total amount of all payments
+
+e. Applicability to Arrangers of Credit
+
+f. Disclosure of credit terms in advertising the sale of real estate
+i. Regulation Z governs any advertisement for consumer credit, regardless of who
+places the ad
+
+
+
+74
+ii. Trigger terms
+iii. Required disclosures for any ad that includes trigger terms
+▪ The amount or percentage of down payment
+▪ Terms of loan repayment
+▪ APR
+Note: Brokers may avoid Regulation Z issues by not including any numbers in their
+advertising, other than the list or lease price.
+
+2. Fair Credit Reporting Act (implemented under Regulation B)
+3. Equal Credit Opportunity Act (ECOA implemented under Regulation V)
+
+a. Purpose
+
+b. Protected classes
+I. Real Estate Settlement Procedures Act (RESPA) [Level 2 – this subtopic]
+
+1. Purpose
+2. Applicability
+
+a. All mortgage loans for 1-4 family dwelling (including manufactured housing)
+involving a federally related mortgage loan made by institutional lenders
+
+b. Does not apply to loans for commercial, business, or agricultural purposes
+3. Enforced by the Consumer Financial Protection Bureau (CFPB) and implemented by
+rules referred to as Regulation X
+
+4. Major Requirements and Consumer Protections
+
+a. Special information booklet
+b. Loan estimate (LE) [formerly known as Good Faith Estimate (GFE)]
+
+i. Disclosure of settlement charges must be provided by loan originators to
+borrowers within 3 business days following loan application
+ii. Lender can only collect a fee for a credit report from the applicant prior to
+issuance of the LE
+c. Possible borrower credit for “Yield Spread Premiums” paid to mortgage brokers
+
+d. Buyer Closing Disclosure (BCD) form must be used by settlement agents in all
+transactions subject to TRID
+e. RESPA prohibits the payment of a kickback or referral fee to any settlement service
+provider for referring consumers
+Note: Real estate agents may neither pay nor accept any referral fee from a
+settlement service provider, such as an appraiser, home inspector, attorney, etc.
+Real estate brokers are only permitted to pay and receive referral fees from each
+other. The law/rules also regulate controlled or affiliated business arrangements
+
+
+
+75
+Required Activity: Review a completed sample LE form to teach this topic.
+Required Activity: Review a completed sample BCD form to teach this topic.
+Examples available on CFPB website.
+Required Activity: Show examples of both a HUD-1 and ALTA settlement statement.
+(CBA) that provide real estate services (e.g., brokerage, mortgage loan, legal
+services, home inspections, etc.) under a one-stop shopping approach.
+
+f. Regulates reserve (impound or escrow) accounts
+g. Loan servicing information
+
+5. Loan Estimate (LE)
+
+
+a. A federal form with details of proposed mortgage terms including written estimate
+of settlement charges the borrower will incur
+
+b. Tolerance limits for changes to settlement charges
+i. Three categories of charges
+▪ No tolerance
+▪ 10% tolerance
+▪ Unlimited tolerance
+ii. Lender must credit borrower for excess charges over the permissible limits
+iii. If new information requires that a new LE be issued, there is a mandatory 3-
+day waiting period before closing can occur
+Note: Brokers are expected to be aware of timing of the three business day
+disclosure delivery.
+
+6. Borrower Closing Disclosure (BCD) Form
+
+
+a. Written detailed statement of final loan terms, prorations, and closing costs that
+borrower should compare to information on the sales contract and the LE
+
+b. Include tolerance limits and the four chief disclosures required by TILA
+
+c. Delivery requirements
+d. Changes that require a new BCD and a new 3 business day waiting period before
+settlement
+
+7. Penalties
+
+J. The Settlement Statement [Level 3 – this subtopic]
+
+Note: Because a broker will not normally be tasked with the preparation of the actual
+settlement statement for closing, a license candidate will not be expected to complete a
+settlement statement problem on the license examination. However, a broker cannot
+properly review a statement for accuracy without a thorough understanding of each party’s
+responsibilities under the contract terms and the calculation of each entry. A license
+candidate will be expected to perform some calculations for individual entries and to know
+how the calculations will appear on the settlement statement (e.g., debits and credits).
+
+
+
+76
+1. Basic Settlement Statement Concepts
+
+a. Settlement statement
+b. Debit
+
+c. Credit
+d. Prorations
+Note: Students should be able to calculate prorations using both methods listed
+below.
+
+i. 365-Day Year Method (Most commonly used method in practice)
+ii. 360-Day Year/30-Day Month Method (Method used on Prelicensing course end-
+of-course examination and real estate license examination)
+iii. License exam proration problems will specify which party is responsible for
+(“owns”) the date of settlement; in NC, the seller “owns” the date of settlement
+iv. Items commonly prorated
+▪ Real estate taxes
+o When taxes have not been paid prior to settlement
+- Closing prior to tax due date in August
+- Closing after tax due date in August
+o When taxes have been paid prior to settlement
+▪ Homeowners’ association dues
+▪ Rents (on rented properties being sold)
+v. Always a double entry on the settlement statement
+
+
+
+
+Section XIII: Property Valuation & Appraisal [Level 1 except as noted below]:
+National Exam Category (11 Items)
+A. Introduction
+1. Key Definitions
+
+a. Real estate appraisal
+b. Comparative Market Analysis (CMA)
+
+c. Broker Price Opinion (BPO)
+Note: On the National exam section, BPOs are performed specifically for lenders.
+2. Purpose
+
+3. Regulation of Appraisers
+a. Federal agencies
+
+i. Financial Institutions Reform, Recovery, and Enforcement Act (FIRREA)
+▪ Provided guidelines for regulating financial institutions
+
+
+
+77
+Required Activity: Provide examples of how each affects value.
+▪ Included amendments to improve competency of appraisers
+▪ Created Appraisal Foundation
+ii. Appraisal Foundation (www.appraisalboard.org)
+▪ Developed appraisal standards
+▪ Established minimum qualifications for appraisers
+
+b. State licensing and certification by NC Appraisal Board
+(http://www.ncappraisalboard.org/)
+c. Uniform Standards of Professional Appraisal Practice (USPAP) appraisal form
+
+B. Basic Valuation Concepts
+
+1. Definitions
+a. Appraisal
+
+b. Value
+c. Cost
+
+d. Price/market price
+e. Market value
+
+2. Assessment for Tax Purposes
+3. Elements of Value
+
+a. Demand
+
+b. Utility
+c. Scarcity
+
+d. Transferability
+4. Forces and Factors Influencing Property Value
+
+
+a. Social trends
+
+b. Economic forces
+
+c. Government controls and regulations
+d. Environmental conditions
+
+
+
+78
+Required Activity: Provide an example of each principle.
+5. Basic Economic Principles of Value [Level 2 – this subtopic]
+
+
+a. Anticipation
+
+b. Change
+c. Competition
+
+d. Conformity
+e. Contribution
+Note: This principle is based on the improvement’s increasing or diminishing
+return, not on its cost.
+
+f. Highest and Best Use
+Note: There is only one highest and best use at any  given time but it can change
+over time. This principle is a major factor for the appraisal process.
+
+g. Plottage
+Note: Combination or merger of adjacent lots into a single large parcel will
+generally result in a higher value than the combined values of the individual lots.
+Assemblage is the merger process.
+
+h. Substitution
+Note: This principle is the basis for the Sales Comparison Approach to value.
+
+
+i. Supply and Demand
+Note: In real estate, it is frequently seen as a buyer’s market or a seller’s market.
+C. The Valuation Process
+1. Define of the Problem (Task)
+
+2. Determine Appropriate Scope of Work
+3. Collect, Record, and Verify Data
+
+4. Analyze Data to Determine Highest and Best Use
+
+5. Estimate Value of Land
+6. Apply Approaches to Value
+
+7. Reconcile Approaches and Estimate Final Value
+8. Complete Appraisal Report
+
+
+
+79
+Required Activity: Provide examples of how adjustments are made to the
+sales prices of superior and inferior comps.
+
+D. Approaches to Value (Appraisal Methods) [Level 2 except as noted below]
+1. Sales Comparison (Market Data) Approach [Level 3 – this subtopic]
+Note: Because the theory and methodology involved in this appraisal approach mirrors
+that used when a broker performs a BPO/CMA on a residential property, students
+should practice its use, with a focus on estimating the probable sales price of
+residential properties.
+a. General information
+i. Subject property
+ii. Comparable property (Comp)
+iii. Estimates value by comparing subject property with recently sold similar or
+comparable properties; based on substitution principle
+iv. Most reliable and most commonly used approach for single-family properties or
+any property that has an active market with recent comparable sales available
+b. Procedures
+i. Data collection and analysis
+ii. Selection of comparables
+▪ Need 3-4 comps of the same property type (e.g., residential, single-family
+detached, townhome, condo, etc.)
+▪ As similar as possible to subject
+o Location
+o Physical characteristics and condition
+o Terms and condition of sale
+o Date of sale
+Note: Cannot use currently listed or under contract property as a comp.
+iii. Adjustments to sale prices of comparables
+
+
+▪ Make adjustments to sale prices of the comps; never adjust the subject
+property
+o Superior comparable
+o Inferior comparable
+o No standard for adjustment amounts
+- Value assigned for a feature adjustment is market value, which will
+probably be less than actual cost
+- Paired sales analysis
+▪ No adjustment needed for minor differences
+iv. Reconciliation and determination of value estimate
+▪ Adjusted sales prices of comps should provide a tight range of value
+▪ Single indication of value should not be obtained by simple averaging of
+the adjusted sales prices of comps
+▪ Weighted averaging
+Required Activity: Use a sample appraisal completed on a Uniform Residential
+Appraisal Report (URAR) form for illustration.
+
+
+
+80
+2. Cost Approach
+
+a. General information
+i. Involves separate estimates of value for the building and the land that are
+combined for a value estimate for the entire improved property; also based on
+the principle of substitution
+ii. Best approach for unique, non -income producing properties or special use
+properties (e.g., houses of worship, schools, public buildings) or newly
+constructed buildings that do not have comparable sales data available
+b. Estimate of land (lot) value
+
+i. Estimate using the sales comparison method
+ii. Land is never depreciated
+c. Estimating building costs
+
+i. Reproduction cost
+Note: Frequently used to incorporate inherent value of historical property.
+ii. Replacement cost
+▪ Quantity survey method
+▪ Unit-in-place method
+▪ Square foot method
+
+d. Estimating depreciation
+i. Definitions
+▪ Depreciation
+▪ Effective age
+▪ Economic life
+
+ii. Depreciation methods
+Note: This is not the same concept as depreciation for tax purposes.
+
+▪ Age/life (straight-line) method
+▪ Market abstraction method [Level 1 – this subtopic]
+▪ Breakdown method [Level 1 – this subtopic]
+o Physical deterioration (curable and incurable)
+o Functional obsolescence (curable and incurable)
+o Economic (external or locational) obsolescence (incurable only)
+e. Steps in formulating the opinion of value
+
+i. Estimate the value of building and other improvements
+▪ Estimate the current replacement or reproduction cost of improvements on
+the property
+▪ Estimate the amount of depreciation accrued over the life of the
+improvement
+▪ Deduct the depreciation from the current cost estimate of the improvements
+ii. Estimate the value of the land as if vacant
+
+
+
+81
+iii. Add the depreciated cost of improvements to the estimated land value to
+determine value estimate for the entire property
+
+3. Income Approaches (Direct Capitalization and GRM Methods Only)
+a. General information
+
+i. Based on present worth of rights to future income
+ii. Approach used for income-producing or investment properties
+iii. Capitalization (CAP) rate
+Note: The CAP rate measures the risk of an investment; the higher the CAP
+rate, the higher the risk. The CAP rate and the market value are inversely
+related; as one goes up, the other comes down.
+
+b. Direct capitalization method
+i. Converts the estimate of projected future income into an estimate of current
+market value
+ii. Used for most income-producing property other than 1-4 unit residential
+properties
+iii. Direct Capitalization formula
+▪ Determine net operating income (NOI) estimate
+o Estimate potential annual gross income
+o Deduct an allowance for vacancy and rental loss to reach effective gross
+income
+o Deduct annual operating expenses
+o NOI = Gross income – losses – expenses
+Note: Mortgage payments of principal and interest are not operating
+expenses, and are not included in calculations.
+
+▪ Derive capitalization rate from local market experts or by Market
+Abstraction Method
+▪ Derive estimate of subject property value: Value = Net operating income
+(NOI) ÷ CAP rate
+c. Gross rent multiplier (GRM) method
+
+i. Relates the sales price to the property’s expected rental income
+ii. Used for 1-4 unit residential income-producing properties
+iii. GRM Formula
+▪ Obtain sales price and gross income (rent) data on recently-sold
+comparable properties
+▪ Derive GRM for each comparable: GRM = sales price ÷ income
+▪ Reconcile data to determine appropriate GRM
+▪ Derive estimate of subject property’s value: Value = Rental income ÷ GRM
+Note: GRM can use either monthly or yearly rental income data, but be
+sure to be consistent throughout calculations.
+
+
+
+82
+Required Activity: Show students on the appraisers’ Uniform Residential Appraisal
+Report (URAR) form where the appraiser reconciles the approaches used in the
+appraisal to arrive at a single opinion of value.
+4. Reconciliation of the Three Approaches to Value and Derivation of Estimate or Opinion
+of Value
+
+
+a. Reconciliation
+
+b. Weighted consideration is preferable to averaging of the approaches; greater
+weight given to the approach that is best for that particular type of property
+
+
+
+
+Section XIV: NC Landlord & Tenant Concepts [Level 2]:
+State Exam Category (3 Items)
+A. Laws Protecting Residential Tenants
+
+1. The NC Residential Rental Agreements Act [NCGS 42 – Article 5]
+a. Purpose
+
+b. Applicability
+i. Grounds, area, and facilities normally used for residential tenants, including
+mobile homes and mobile home spaces
+ii. Does not apply to
+▪ Commercial or industrial rentals
+▪ Transient occupancy
+▪ Rent-free dwelling units
+c. Waiver of Act is prohibited
+Note: Requirements of the Act cannot be altered by lease provisions or other
+agreement between landlord and tenant.
+
+d. Obligations of landlord and tenant are mutually dependent
+e. Landlord’s statutory duties
+Note: Primary duty of landlord is implied warranty of habitability.
+
+f. Tenant’s statutory duties
+
+g. Tenant remedies for breach by landlord
+i. Tenant is prohibited from unilaterally withholding the rent until a court grants
+that right
+ii. Tenant can bring an action against the landlord for damages, including the
+recovery of all or part of past rents paid while the unit was uninhabitable
+iii. Common Law Doctrine of Constructive Eviction
+
+
+
+83
+h. Broker’s duties under Act
+Note: Broker that is managing the rental property for the landlord is defined as
+“the landlord” under the Act.
+
+2. NC Residential Eviction Laws/Procedures
+a. Residential summary ejectment (eviction procedure)
+
+i. Summary ejectment
+ii. Self-help eviction is prohibited in NC
+iii. Seizure of tenant’s personal property is prohibited
+iv. Expedited eviction for criminal activity possible, but legal advice is
+recommended first
+
+b. Act prohibiting retaliatory eviction [NCGS 42 - Article 4A]
+i. Retaliatory eviction
+ii. Some tenant activities are protected
+iii. Protected 12-month period after occurrence of protected activity
+Note: There is no requirement for the landlord to renew an expired lease.
+c. Statutory eviction procedures initiated in small claims court utilizing the court
+system must be followed
+
+d. Common law
+i. Doctrine of Constructive Eviction
+▪ Legal concept and purpose
+▪ General process
+▪ Tenant can never legally withhold rent while in possession of the rental
+property
+Note: A tenant should be advised to obtain legal advice before vacating a
+rented space and stopping rent payment based on this Doctrine; a court
+ruling may be required to eliminate liability for future rent.
+ii. Landlord’s liability under the Law of Negligence
+▪ May be held liable for
+o Injury due to lack of maintenance of common areas under the landlord’s
+control
+o Criminal acts of third persons on leased premises if landlord had reason
+to know of a threat of harm and did not take reasonable precautions to
+protect the tenants
+▪ Generally not liable for injury sustained in a rental unit under the exclusive
+occupancy of a tenant
+B. NC Tenant Security Deposit Act [NCGS 42 - Article 6]
+Note: Any owner of residential rental property located in NC must comply with this Act,
+even if not a licensed broker.
+
+
+
+84
+1. Holding of Tenant Security Deposit (TSD)
+
+a. Must be held in a properly designated trust or escrow account in a federally insured
+depository or trust institution authorized to do business in NC or
+b. Owner-landlord must furnish a bond in the amount of the deposit from a licensed
+insurance company authorized to do business in NC
+
+c. Broker working as property manager for the landlord does not have the option of
+providing a bond [Commission Rule 58A .0116]
+
+2. Accounting to the Tenant
+
+3. Permitted Uses of TSDs
+4. Maximum TSD Amounts
+
+a. Week-to-week tenancy
+b. Month-to-month tenancy
+
+c. Terms greater than month-to-month
+5. Reasonable and Nonrefundable Pet Deposits Permitted
+Note: A tenant’s service animal is not a pet; therefore, a pet deposit cannot be
+charged.
+
+C. North Carolina Vacation Rental Act [NCGS 42A]
+Note: Act is modeled after the Residential Rental Agreement Act.
+
+1. Vacation rental
+2. Purpose
+
+3. Applicability of Act
+4. Requirement for vacation rental agreements
+
+5. Procedures for handling rents and security deposits
+a. Must be deposited into a trust/escrow account in a federally insured depository or
+trust institution authorized to do business in NC within 3 banking days of receipt
+
+b. Posting a bond is not an option, even for an unlicensed landlord
+
+6. Tenant Protection when Rental Property is Sold
+a. Seller requirements
+
+b. Requirements of new owner
+7. Expedited Eviction Proceedings
+
+
+
+85
+8. Landlord and Tenant Duties
+
+a. Most are similar to those under Residential Rental Agreement Act
+b. Landlord must provide the property in “fit and habitable condition” or
+
+i. Substitute a reasonably comparable property in such condition or
+ii. Give full refund of all payments made by the tenant
+c. Any automatic forfeiture of TSD due to a breach by the tenant is prohibited
+
+9. Mandatory evacuations: refunds and insurance
+
+D. Property Management Contracts
+Note: Per Commission Rule 58A .0104(a), all property management agreements must be
+in writing from inception of the relationship.
+
+
+
+
+Section XV: Other Relevant NC Laws [Level 2 except as noted]:
+State Exam Category (11 Items)
+A. Ownership of Real Property in NC
+1. Joint Tenancy in NC
+Note: Though used infrequently in NC, joint tenancy is widely used in many other
+states and is also tested on the National exam section.
+
+a. Title must intentionally create joint tenancy
+
+b. Four (4) required unities/elements (e.g., possession, interest, time, title)
+Note: In NC, percentage of ownership interest can be unequal, if clearly stated in
+title.
+
+c. Right of survivorship
+i. In NC, survivorship not automatic
+ii. Attorney must draft exact wording in title required for right of survivorship
+
+d. Termination
+i. By agreement
+ii. Partition suit
+2. Tenancy by the Entirety
+
+a. Available only to legally married couples
+i. In NC, this is default ownership for buyers married at the time of purchase
+
+
+
+86
+ii. Buyer should consult with real estate attorney to explore what ownership type
+is desired
+iii. Other types of ownership do not automatically convert to tenancy by the
+entirety if property owners marry each other later
+b. Equal undivided interest
+
+c. Four (4) required equal unities/elements (e.g., possession, interest, time, title)
+d. Automatic right of survivorship that cannot be waived; overrides a will
+
+e. Conveyance requires voluntary signatures of both spouses
+Note: A spouse cannot convey ½ interest.
+f. Termination
+
+i. By agreement
+ii. Divorce
+iii. Death of a spouse
+
+3. NC Common Interest Community (Hybrid) Ownership
+a. Condominium ownership
+
+i. Condominium
+ii. Governed by horizontal property acts, such as North Carolina Condominium Act
+of 1986 [NCGS Chapter 47C]
+▪ Application
+▪ Developer’s disclosure requirements
+▪ Public offering statement
+▪ Buyer’s 7-day rescission period on purchase of new condo
+▪ Resale certificate for resale condos; no right of rescission
+iii. Individual unit owner holds fee simple “title to airspace” for unit
+iv. Individual unit owners own an undivided share of common elements with other
+unit owners
+▪ Includes land and common areas, such as hallways, elevators, recreational
+facilities, etc.
+▪ Own as tenants in common without right of partition
+▪ Periodic fees/assessments charged to unit owners
+▪ Possible exclusive use of limited common elements
+
+b. Townhouse ownership
+i. Townhouse
+▪ Includes individual ownership of land, at least the land upon which the unit
+sits
+▪ Usually attached by party walls
+ii. Individual unit owners have use of common elements
+▪ Owned by HOA
+▪ Maintenance funded by periodic fees/assessments charged to unit owners
+iii. Most townhouse developments are subject to the NC Planned Community Act
+[NCGS Chapter 47F]
+
+
+
+87
+4. Manufactured (Factory Built) Housing [Level 1 – this subtopic]
+
+a. Manufactured housing (mobile home) [NCGS 143-143.9(6)]
+i. Description
+▪ Built to federal HUD standards; red HUD certification label
+▪ Titled and regulated by NC Dept. of Motor Vehicles (DMV)
+▪ Permanent non-removable steel chassis
+ii. Personal property until converted to real property by: [NCGS 47-20.6 and 105-
+273(13)]
+▪ Attaching to permanent foundation on land owned by owner of home;
+▪ Removing wheels, axle, and moving hitch; and
+▪ Filing affidavit of conversion to cancel DMV title
+
+b. Modular housing [NCGS 105-164.3(143) and 143-139.1]
+i. Description
+▪ Built to state building code
+▪ State inspection label with serial number
+▪ Assembled by builder on-site
+ii. Becomes real property as soon as assembled on building site
+5. Adverse Possession
+
+a. General requirements
+b. Statutory time periods for continuous adverse possession
+
+i. 20 years for regular adverse possession in NC
+ii. 7 years if under color of title in NC
+
+6. NC Agricultural Fixtures
+a. Definition
+
+b. Per common law, became part of the real property and could not be removed at
+the end of the lease
+
+c. Modern trend is to treat as trade fixtures
+d. Lease terms should address right of removal
+
+7. Effect of NC Uniform Commercial Code (UCC) [NCGS 25-9-313] concerning security
+interests in fixtures
+B. NC Connor Act [NCGS 47-18]
+
+1. Requires all conveyances of interest in real property be recorded to be effective against
+claims by third parties
+
+
+
+88
+Required Activity: Provide current Residential Property and Owners’ Association
+Disclosure Statement (RPOADS)  and Mineral and Oil and Gas Rights Disclosure (MOG)
+disclosure forms. Discuss the purpose of each form and the correct way to advise property
+owners about completion and delivery of the forms.
+2. A pure race statute
+Note: Failure to record does not affect the validity of the document between the
+parties to the instrument.
+
+3. Documents required to be recorded in the county where the property is located
+C. Marketable Title Act/Torrens System [Level 1 – this subtopic]
+
+1. NC Marketable Title Act [NCGS 47B]
+2. Torrens System [NCGS 43]
+
+D. NC Statute of Frauds [NCGS 22-2]
+
+1. Certain contracts must be in writing to be enforceable
+a. All contracts to convey interest in real property
+
+b. A lease that exceeds 3 years from the “making”/signing of the lease agreement
+c. Contract modifications
+
+2. Verbal negotiations and agreements are not enforceable [See Parol Evidence Rule in
+Section XI: Contracts & Closing in NC]
+
+3. Agency agreements are considered employment contracts, not real estate contracts,
+and are excluded from Statute of Frauds; Commission rules require agency
+agreements to be in writing.
+
+E. NC Residential Property Disclosure Act NCGS 47E, Commission Rules 58A .0114 & .0019]
+
+
+1. Basic Requirements of the Act
+
+a. Requirement for most sellers of 1-4 residential units
+b. Major points of the Act
+
+i. Seller required to provide completed  disclosure forms to prospective buyers
+prior to presentation of 1st offer
+ii. Seller not usually required to disclose facts about property condition (other
+than presence of lead-based paint) or if previous owners have severed mineral,
+oil, or gas rights
+iii. Seller must keep information current and accurate
+iv. Seller may be held civilly liable for misrepresentation by the courts if seller
+knows a problem exists and checks “No” rather than “No Representation” or if
+seller does not disclose any known latent defects that a diligent buyer cannot
+access
+
+
+
+89
+2. Use of Mandatory Forms Residential Property and Owners’ Association Disclosure
+Statement and Mineral and Oil and Gas Rights Mandatory Disclosure Statement
+Note: Forms, REC 4.22 and REC 4.25, are available at www.ncrec.gov
+
+a. Delivery of completed disclosure statements
+Note: Method of delivery is not prescribed; frequently attached to MLS entry.
+b. Buyer’s right to cancel contract
+
+i. Timing of cancellation
+ii. Written cancellation notice
+c. Broker’s responsibilities
+
+i. Advise seller client of disclosure requirements and the need for continued
+accuracy and timely delivery
+ii. Provide seller with copies of required disclosure form(s)
+iii. Assist seller in assessing the property for accurate completion of disclosure
+Note: Broker must not complete the form(s) for the seller.
+iv. Assist with timely delivery of completed forms
+v. Retain executed disclosures
+vi. Must disclose any material fact regarding a listed property about which the
+broker knows or should reasonably be expected to be aware, even if the seller
+legally chooses not to disclose such material fact or marks No Representation
+regarding the matter
+Note: If the seller demands that the listing agent agree to not disclose a
+material defect (or other material fact) as a condition of granting the listing,
+the listing should be refused.
+
+3. Common RPOADS Exemptions
+4. Unique Facts about MOG
+
+i. Same points as above for RPOADS with following differences
+ii. Seller must disclose if they have severed or will sever MOG rights; No
+Representation is not an option on this point
+iii. Common exemptions match those for RPOADS excluding the transfers
+where MOG is still mandated
+5. Broker’s Disclosure Responsibilities under Real Estate License Law not affected by
+Sellers’ Disclosure under this Act
+
+F. NC Good Funds Act NCGS 45A [Level 1 – this subtopic]
+
+1. Prior to Any Disbursement of Funds, Act requires Settlement Agent to
+a. Verify funds paid by any party to the transaction
+
+b. Record the deed and deed of trust
+2. No Disbursement of Funds should happen at Settlement Meeting
+
+
+
+90
+G. NC Anti-discriminatory Regulations
+
+1. NC State Fair Housing Act [NCGS Chapter 41A] [Level 3 – this subtopic]
+a. Unlawful discriminatory housing practices
+Note: Provisions of the State Act are virtually identical to those of the Federal Act.
+Thus, a violation of either Act is generally a violation of the other Act.
+
+b. Exemptions
+Note: Exemptions under the NC State Act are substantially different from those
+under the Federal Act; when there is a conflict between the federal and state acts,
+the more restrictive law applies.
+
+c. Enforcement
+i. A NC-based complaint filed with HUD will be referred to the NC Human Relations
+Commission for investigation because NC has an equivalent state fair housing
+law
+ii. By administrative procedure through the NC Human Relations Commission;
+complaints must be filed within 1 year
+iii. By private lawsuit in state court; complaints must be filed within 1 year
+2. NC Law Prohibiting Sexual Harassment by Residential Lessors or Their Agents [ NCGS
+14-395.1] [Level 1 – this subtopic]
+
+3. Commission Rule Prohibiting Discrimination by Brokers in Promoting Their Broker
+Status or Conducting Brokerage Activities [Commission Rule 58A .0120(d)] [Level 1 –
+this subtopic]
+
+H. NC Timeshare Act [Level 1 – this subtopic]
+
+1. Definitions [NCGS 93A-41(2), (7a), (9), (9a), (12) and (13)]
+Note: Must be at least 5 separated times over at least 5 years in NC.
+2. Registration of Timeshare Programs [NCGS 93A-40]
+
+3. License Requirement [NCGS 93A-40]
+4. Developer’s Obligation to Record Timeshare Instruments [NCGS 93A-42]
+
+5. Escrow Requirements [NCGS 93A-42(c) and (d)]
+
+6. Developer’s Public Offering Statement [NCGS 93A-44]
+7. Purchaser’s Right to Cancel [NCGS 93A-45]
+
+8. Commission’s Disciplinary Authority [NCGS 93A-54]
+9. Penalties [NCGS 93A-56]
+
+10. Requirements for Registrar and Program Broker [NCGS 93A-58]
+
+
+
+91
+11. Timeshare Sales Operations [Commission Rules Section 58B .0400]
+
+12. Handling and Accounting of Funds [Commission Rules Section 58B .0500]
+13. Program Broker [Commission Rules Section 58B .0600]
+
+I. Other Disclosure Considerations in NC [Level 3 except as noted below]
+1. Stigmatized Properties [NCGS 39-50; 42-14.2]
+
+a. Stigmatized/psychologically impacted property is not a material fact in NC unless
+questioned by the buyer
+
+b. Examples not considered material facts
+i. Previous occupant died or had a serious illness while occupying the property
+ii. Reputation as a haunted property
+iii. A convicted sex offender required to register with law enforcement authorities
+occupies, occupied, or resides near a property [based on national law
+nicknamed “Megan’s Law”]
+
+2. Unfair or Deceptive Trade Practice Act [NCGS 75-1.1] [Level 1 – this subtopic]
+a. Applies to actions of real estate brokers (and some property owners), including
+advertising/postings on internet and social media
+
+b. Creates legal cause of action with the possibility of treble damages
+
+3. Doctrine of Caveat Emptor
+a. Latin phrase (Let the buyer beware) indicating that the burden of discovery is on
+the buyer to investigate because they are purchasing the property “as is”
+b. In NC, seller is not required to disclose property condition information (other than
+known presence of lead-based paint), but may not commit fraud
+Note: This is the reason for the “No Representation” option on the RPOADS.
+
+c. Difficult to bring action against the seller, but seller could be held civilly liable if
+i. Engages in fraud or misrepresentation
+ii. Induces the buyer to forego an inspection
+iii. Does not disclose seller-known latent defect that a diligent buyer cannot access
+iv. Does not provide RPOADS & MOG (if required) prior to presentation of 1st offer
+Note: Broker’s disclosure responsibilities under Real Estate License Law are not
+affected by doctrine of caveat emptor ; brokers must still volunteer material facts
+to all clients and customers.
+4. Square Footage
+
+a. Verify and properly report building square footage
+i. Square footage is not a material fact in NC, but must be accurate if reported
+
+
+
+92
+Required Activity: Thoroughly review the NCREC's Residential Square
+Footage Guidelines; assign at least one practice problem; additional problems
+can be given as homework.
+ii. Brokers are expected to possess the expertise necessary to accurately
+measure, calculate, and report the square footage of most buildings
+iii. Broker should not rely on
+▪ Property owner’s personal statement
+▪ Blueprints
+▪ Tax records
+▪ Information from an earlier transaction
+iv. A broker working with a buyer can reasonably rely on the listing agent’s
+reported square footage unless there is an error that would be obvious to a
+prudent broker
+b. The Residential Square Footage Guidelines
+
+
+i. In NC, the square footage of residential living area is calculated on exterior
+measurements
+ii. Above grade vs. below grade area
+iii. Heated Living Area criteria
+5. Basic Construction [Level 1 – this subtopic]
+Note: The purpose of this sub -section is to provide the student with an elementary
+knowledge of basic construction principles, techniques and terminology which will
+assist the student in listing/showing/selling such properties. Study is limited to the
+wood-frame (including brick veneer) construction because of its predominant use in
+NC.
+
+a. Basic construction types
+i. One story (ranch) – generally the most expensive to build per square foot
+ii. 1½ story
+iii. Multi-story (two, 2½, or three levels)
+iv. Split-level
+
+b. Foundations
+i. Basic components
+ii. Footings
+iii. Slab
+iv. Foundation wall
+v. Piers
+vi. Major types
+▪ Concrete slab
+▪ Basement
+▪ Crawl space
+vii. Termite protection
+▪ Chemical treatment of ground near foundation walls and piers
+▪ Pressure-treated wood
+viii. Ventilation
+ix. Waterproofing
+
+
+
+93
+c. Framing
+i. Framing systems
+▪ Platform (most common)
+▪ Balloon
+▪ Post and beam
+
+ii. Major floor components
+▪ Sill (also sill plate or mud sill)
+▪ Floor joists
+▪ Girders
+▪ Bridging
+▪ Subfloor
+iii. Basic wall components
+▪ Studs
+▪ Headers
+▪ Top plate
+▪ Sole plate
+iv. Roof and ceiling framing
+▪ Major roof designs
+o Gable
+o Hip
+o Shed
+o Flat
+o Mansard
+o Gambrel
+▪ Basic roof components
+o Ceiling joists
+o Rafters
+o Ridge board
+o Eaves
+d. Exterior walls
+i. Sheathing
+ii. Tar paper (asphalt treated paper or felt) or house wrap
+iii. Siding: wood, manufactured wood, fiber cement, brick veneer, vinyl, stucco,
+synthetic stucco (EIFS)
+
+e. Windows and exterior doors
+i. Windows
+▪ Types
+o Sliding windows: double-hung and horizontal sliding
+o Swinging windows: casement, jalousie, hopper, and awning
+o Fixed windows: picture, bay, and bow
+▪ Major components
+o Sill
+o Header
+o Jamb
+o Sash
+o Muntins
+o Mullions
+
+
+
+94
+ii. Major door types: flush, panel, sliding glass, and French
+
+f. Roofing Components
+i. Roof sheathing (decking): plywood or material similar to wall sheathing
+ii. Roofing felt
+iii. Outer roof covering: asphalt and fiberglass composition shingles, wood shingles
+or shakes, tile
+iv. Eaves
+▪ Fascia board
+▪ Soffit
+▪ Frieze board
+v. Pitch
+
+g. Insulation
+i. Insulation materials: fiberglass batts or blankets, loose fill insulation, foam
+ii. Weatherstripping
+iii. Moisture control: vapor barriers and attic ventilation
+iv. Required insulation under North Carolina Uniform Residential Building Code:
+▪ Walls R-13
+▪ Ceilings R-30
+▪ Floors R-19
+Note: Higher R-values are required in the colder, mountainous counties of
+northwestern North Carolina.
+
+h. Heating/air conditioning systems
+i. Heating systems
+▪ Power sources: the sun, gas, oil, electricity, coal, wood, etc.
+▪ Measured in British Thermal Units (BTUs)
+▪ Methods of heating: solar, warm air, hot water, steam, electric wire
+▪ Types of heating systems
+o Central forced warm air (heat pumps or gas furnaces with fan and duct
+distribution system)
+o Gravity warm air (e.g., central furnace with no duct distribution system
+and fan)
+o Electric baseboard
+o Space heating systems (e.g., wood stoves, gas heaters, kerosene
+heaters, electric heaters, radiators, fireplaces, etc.)
+o Solar heating systems
+ii. Air conditioning systems
+▪ Central forced-air
+▪ Room air conditioners
+iii. Combination systems: heat pump
+i. Government regulation
+i. North Carolina Uniform Residential Building Code
+ii. Building permits
+▪ Certificate of occupancy (CO)
+▪ HUD minimum standards
+iii. Contractor licensing
+
+
+
+95
+6. Subdivision Approval Procedures [NCGS 160D-Article 8] (Commission’s Q&A brochure:
+Residential Subdivisions and Planned Communities)
+a. Subdivision
+b. Exemptions
+
+c. Typical subdivision approval procedures (NC and elsewhere)
+i. Preliminary planning phase
+ii. Review and approval phase usually performed by multiple municipal
+departments
+iii. Final subdivision plat approved and recorded with register of deeds
+d. Selling lots in unapproved NC subdivision [NCGS 160D-807]
+
+i. Illegal to subdivide or sell land prior to recordation of final approval of the
+subdivision plat
+ii. Contracts to sell or lease allowed after approval of preliminary plat, if contract:
+▪ Includes copy of preliminary plat and requires owner to provide buyer a
+copy of the recorded final plat prior to closing
+▪ Clearly notifies buyer/tenant that until the final plat has been approved:
+o Changes to the preliminary plat are possible and
+o Contract may be terminated without breach by buyer/tenant if final
+recorded plat differs in any material respect from the preliminary plat
+▪ Buyer/tenant has time after delivery of final recorded plat to close
+
+7. NC Subdivision Street Disclosure Law (Commission’s Q&A brochure: Residential
+Subdivisions and Planned Communities) [NCGS 136-102.6]
+
+a. Developer requirements
+b. Responsibility for street maintenance is a material fact and should be in writing
+(e.g., private road maintenance agreement)
+Note: Do not assume that public street designation on the plat equates to
+governmental acceptance of maintenance and repair responsibilities. Regardless of
+the age of the subdivision, brokers should verify private or public status of the
+streets before making any representation as to their status.
+8. Onsite Septic Systems
+
+a. Strongly recommend soil suitability (perc) test for unimproved land
+i. For a seller prior to listing to determine appropriate listing price
+ii. For a buyer prior to making an offer to determine appropriate offer terms
+Note: It is a material fact if unimproved property will not support a septic system.
+
+b. Obtain septic permit, if possible, to verify capacity of septic system and/or any
+system restrictions for improved property that is not connected to a municipal or
+community sewage system
+
+i. Capacity indicated by number of bedrooms
+
+
+
+96
+Required Activity: Provide a timeline example of how mechanic’s liens may take
+priority over other recorded liens.
+Required Activity: Calculate various sales commissions and property management fees
+based on typical ways they are determined.
+ii. Maximum occupancy is 2 persons per permitted bedroom
+iii. Brokers are subject to disciplinary action for misrepresentation of occupancy
+limits for property served by an onsite septic system
+
+c. Straight-piping is illegal and a material fact
+
+9. Liens against the Real Property
+a. Mechanics' lien (materialman’s lien)
+
+i. On all NC residential or commercial construction projects where the cost equals
+or exceeds $40,000
+ii. A lien agent must be appointed
+iii. Owner-occupied single family residences are exempt
+iv. All service providers must file a Notice to Lien Agent
+▪ Ability to file a mechanics’ lien (within 120 days after last day of providing
+services or materials)
+▪ Lien priority effective from 1st day of providing services or materials
+
+
+b. NC Commercial Real Estate Broker Lien [Level 1 – this subtopic]
+
+10. NC Lead-Based Paint Hazard Management Program (LHMP)
+a. Purpose
+
+b. Renovation
+c. Certification requirement
+
+d. NC fines for violations up to $750 per day and up to $32,500 per day under EPA
+sanctions
+
+e. Owner-occupied do-it-yourself renovations are exempt from certification
+requirement
+
+
+
+Section XVI: Real Estate Math Calculations [Level 3]:
+National Exam Category (7 Items)
+
+A. Brokerage Commissions (Sales and Property Management transactions)
+
+
+B. Investment calculations
+1. Profit/Loss (Appreciation/Depreciation) on Sale of Real Estate (including percentages)
+
+2. Return on Investment (NOI)
+
+
+
+97
+Required Activity: Calculate excise tax for multiple properties: include scenarios for
+property that is located inside city/town limits, located only in the county, have odd
+purchase prices, or include seller concessions or financing information.
+3. Tax implications on investment
+
+C. Area and Related Calculations
+1. Conversion of acreage to square footage and vice-versa
+
+2. Square footage of variously -shaped buildings and parcels of land with straight line
+sides, including irregular shaped parcels/buildings. (Use formulas for calculating the
+area of squares, rectangles, trapezoids and right triangles.)
+
+3. Square yards
+4. Cost/price per square foot/acre/front foot
+
+D. Finance Calculations
+1. Simple Interest (How to compute monthly interest, and amount of interest paid over
+life of a fixed-rate loan)
+
+2. Monthly Principal and Interest Payment (How to compute monthly P & I payment using
+factors, if given the loan amount, interest rate, term and factor)
+3. Mortgage Debt Reduction (How to compute principal balance after one monthly
+payment, given previous principal balance, monthly P & I payment and interest rate,
+with and without using amortization tables)
+4. Loan Origination Fees and Discount Points
+
+5. Loan Value (applying loan-to-value ratios)
+6. Basic Buyer Qualification using given income and debt ratios
+
+7. Equity (including percentages)
+8. Yield (on mortgage loans involving discount points using “rule of thumb” value)
+
+E. Settlement & Closing Costs
+
+1. Estimating Net to Seller after Brokerage Fee and other Closing Expenses are Paid
+(when setting listing price or considering an offer) [Includes sale price needed to net
+$X to seller]
+
+2. Excise Tax on Property Transfers
+
+
+3. Calculation of individual amounts to be entered on settlement statement when the
+licensee has the data necessary to perform the needed calculation [e.g., Prorations
+(real estate taxes, rent, HOA dues); interim interest; escrow deposits; etc.]
+
+
+
+98
+Required Activity: Explain and demonstrate proration math calculations for handling
+annual homeowners’ association dues, monthly rent, and annual real estate taxes.
+Tax problems should include closing dates early and late in the calendar year and
+when the seller has and has not already paid the annual tax bill. Students must be
+given multiple practice problems on various proration scenarios.
+Required Activity: Perform multiple math calculations to determine annual property
+tax liability. Include property tax situations that do and do not require calculation of
+both county and city taxes.
+Required Activity: Have students to prepare a CMA that includes superior and
+inferior comps to arrive at a range for probable sales price.
+Required Activity: Provide examples of estimating replacement cost using the
+square foot method. Have students determine a single estimate of value of at least
+one property by the cost approach using the replacement cost method with the square
+foot method and age/life depreciation for estimating the value of the building.
+Required Activity: Provide an example of estimating value using the Direct
+Capitalization Formula. Have students determine a single estimate of value of at least
+one property by the direct capitalization approach. Provide the CAP rate. There will
+be no calculations using a GRM.
+4. Calculation of bottom -line figures given all relevant needed information:  Total
+settlement charges to buyer-borrower and seller; net due seller (cash to seller); cash
+from buyer-borrower
+
+
+F. Property Management Calculations
+1. Income and Expenses
+
+2. Tenancy/Vacancy Rates and Rental Calculations
+G. Property Valuation (Appraisal) Calculations
+
+1. Assessed Value and Ad Valorem Property Taxes (amount of real property tax using a
+given tax rate and assessed value; students should be able to perform calculations
+using either a tax rate in dollars per $100 of assessed value [NC method] or a mill rate
+[National method])
+
+
+2. Sales Comparison Approach and Comparative Market Analysis
+
+
+3. Cost Approach
+
+
+4. Income Capitalization Approach

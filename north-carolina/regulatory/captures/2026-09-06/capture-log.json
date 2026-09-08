@@ -1,6 +1,6 @@
 {
   "controlDate": "2026-09-07",
-  "generatedAt": "2026-09-08T03:13:51.000Z",
+  "generatedAt": "2026-09-08T03:39:02.000Z",
   "uniquePdfUrls": 28,
   "entries": [
     {
@@ -18,8 +18,16 @@
         "title": "Lead-Based Paint Disclosure Rule Fact Sheet",
         "revisionObservation": "EPA-747-F-25-001, January 2025; both pages reviewed",
         "pages": [
-          { "number": 1, "renderPath": "north-carolina/regulatory/captures/2026-09-07/module-05-lead/renders/lead-1.png", "sha256": "821cf71f4b46158f2b3e9c2fcef2e0fef90ca0d93f1fc784fc478407ffa08e5f" },
-          { "number": 2, "renderPath": "north-carolina/regulatory/captures/2026-09-07/module-05-lead/renders/lead-2.png", "sha256": "9af2b3674ee49627bb58ca444f0bccf06bb498351193264cbf716f8029375077" }
+          {
+            "number": 1,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/module-05-lead/renders/lead-1.png",
+            "sha256": "821cf71f4b46158f2b3e9c2fcef2e0fef90ca0d93f1fc784fc478407ffa08e5f"
+          },
+          {
+            "number": 2,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/module-05-lead/renders/lead-2.png",
+            "sha256": "9af2b3674ee49627bb58ca444f0bccf06bb498351193264cbf716f8029375077"
+          }
         ],
         "ocrStatus": "NOT_REQUIRED_TEXT_LAYER_MATCHED_RENDER"
       },
@@ -55,9 +63,21 @@
         "title": "Application for Certificate of Authority for a Limited Liability Company (Form L-09)",
         "revisionObservation": "Revised July 2017; all three pages reviewed and unchanged on control-date re-fetch",
         "pages": [
-          { "number": 1, "renderPath": "north-carolina/regulatory/captures/2026-09-06/l09-review-1.png", "sha256": "61e0880a69712fc4276cb87453d79dd55be6987316897164b971afbbff8c9819" },
-          { "number": 2, "renderPath": "north-carolina/regulatory/captures/2026-09-06/l09-review-2.png", "sha256": "afe71521041765f52b6ed557976aa0ecd43274545f64f8a6bbc1d05795e0a1da" },
-          { "number": 3, "renderPath": "north-carolina/regulatory/captures/2026-09-06/l09-review-3.png", "sha256": "61acc21e31906343383cb0abb4c23f233aee1cbc4a2beec18ec13fe591ef94b8" }
+          {
+            "number": 1,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-06/l09-review-1.png",
+            "sha256": "61e0880a69712fc4276cb87453d79dd55be6987316897164b971afbbff8c9819"
+          },
+          {
+            "number": 2,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-06/l09-review-2.png",
+            "sha256": "afe71521041765f52b6ed557976aa0ecd43274545f64f8a6bbc1d05795e0a1da"
+          },
+          {
+            "number": 3,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-06/l09-review-3.png",
+            "sha256": "61acc21e31906343383cb0abb4c23f233aee1cbc4a2beec18ec13fe591ef94b8"
+          }
         ],
         "ocrStatus": "NOT_REQUIRED_TEXT_LAYER_MATCHED_RENDER"
       },
@@ -94,42 +114,186 @@
         "title": "Real Estate Licensing in North Carolina",
         "revisionObservation": "April 2026 edition; all 36 pages reviewed after an unchanged control-date re-fetch",
         "pages": [
-          { "number": 1, "renderPath": "north-carolina/regulatory/captures/2026-09-07/relinc-l09-review/renders/relinc-01.png", "sha256": "c6e6d509f33c65777819d0091cbc07b4cb895c539200eefadc9288f5e7deedca" },
-          { "number": 2, "renderPath": "north-carolina/regulatory/captures/2026-09-07/relinc-l09-review/renders/relinc-02.png", "sha256": "33e5728b99d7d26b1782281e8d77653eb7d8928510b0660b2e822b8d733dc855" },
-          { "number": 3, "renderPath": "north-carolina/regulatory/captures/2026-09-07/relinc-l09-review/renders/relinc-03.png", "sha256": "30b0e138c72d2dd2af9cd2e3c16b02a43457d3bb3f241735b21abbb1f445da2b" },
-          { "number": 4, "renderPath": "north-carolina/regulatory/captures/2026-09-07/relinc-l09-review/renders/relinc-04.png", "sha256": "79019e3f49ef9df5ccc6afbe24b61e98c89a8cf73f4bbb853edcf284059f677d" },
-          { "number": 5, "renderPath": "north-carolina/regulatory/captures/2026-09-07/relinc-l09-review/renders/relinc-05.png", "sha256": "22f195ce4f37fdc81724f0689c9f0b20953a0a65b485300701c7ca2fc0557cc7" },
-          { "number": 6, "renderPath": "north-carolina/regulatory/captures/2026-09-07/relinc-l09-review/renders/relinc-06.png", "sha256": "3f0fb787517de57d9e85b4dcd4889f85fd18c81eae246a7d7a801861da16df99" },
-          { "number": 7, "renderPath": "north-carolina/regulatory/captures/2026-09-07/relinc-l09-review/renders/relinc-07.png", "sha256": "86bc5c3f5ed96be610b337041b893353740515f68c8b94d2d1044e7937842d98" },
-          { "number": 8, "renderPath": "north-carolina/regulatory/captures/2026-09-07/relinc-l09-review/renders/relinc-08.png", "sha256": "9f1d4ddb5092a706ca14d0d767d01e37db3bbe0b8610f9bb6a183aa8d55d12f5" },
-          { "number": 9, "renderPath": "north-carolina/regulatory/captures/2026-09-07/relinc-l09-review/renders/relinc-09.png", "sha256": "6b6bb904c3ba79a0af59590c163dfe58cfe0ee2ac51cf3cc32ab32a1fca4efb2" },
-          { "number": 10, "renderPath": "north-carolina/regulatory/captures/2026-09-07/relinc-l09-review/renders/relinc-10.png", "sha256": "13940a6eb713e4669ca8c27a07304e217b8bf33f81189c02bc4fd3c638cd0fce" },
-          { "number": 11, "renderPath": "north-carolina/regulatory/captures/2026-09-07/relinc-l09-review/renders/relinc-11.png", "sha256": "20cff12114e402e0656d4be2e59a83816e098127230afacc2a82f4569c700fed" },
-          { "number": 12, "renderPath": "north-carolina/regulatory/captures/2026-09-07/relinc-l09-review/renders/relinc-12.png", "sha256": "fcda00df46e127b4b7eb5ab980c0d4da4e3498b0bc226be0a2b8bc3c23aa30e1" },
-          { "number": 13, "renderPath": "north-carolina/regulatory/captures/2026-09-07/relinc-l09-review/renders/relinc-13.png", "sha256": "5aba087f9ed813e403e098ccae23aa8e7396510ecfd36613239490d8e1d744e6" },
-          { "number": 14, "renderPath": "north-carolina/regulatory/captures/2026-09-07/relinc-l09-review/renders/relinc-14.png", "sha256": "56e5d0451b0fd13aa39cba6b8cc6a76cc9d0ef25289601a5e53788301c152911" },
-          { "number": 15, "renderPath": "north-carolina/regulatory/captures/2026-09-07/relinc-l09-review/renders/relinc-15.png", "sha256": "b5636eec829663f4a9a2673bb14238a3d961ea05d63e2dc2b5366e44729e9abe" },
-          { "number": 16, "renderPath": "north-carolina/regulatory/captures/2026-09-07/relinc-l09-review/renders/relinc-16.png", "sha256": "00402b8a251e80d0b2c69937531c1adcd8ca2815dad001bade467a6863ee4a9e" },
-          { "number": 17, "renderPath": "north-carolina/regulatory/captures/2026-09-07/relinc-l09-review/renders/relinc-17.png", "sha256": "37707804d81bb852bfdd964004d25cac0bf394532ca3c2ab775690204f0b88b5" },
-          { "number": 18, "renderPath": "north-carolina/regulatory/captures/2026-09-07/relinc-l09-review/renders/relinc-18.png", "sha256": "dd5948765acc140e2d8c8c50fa165f519909adba9034176d027ddc9d036c7781" },
-          { "number": 19, "renderPath": "north-carolina/regulatory/captures/2026-09-07/relinc-l09-review/renders/relinc-19.png", "sha256": "8b5518667f8d5b1567b330e3a5fbb49181fddc3de64666628e965f57ad09ba76" },
-          { "number": 20, "renderPath": "north-carolina/regulatory/captures/2026-09-07/relinc-l09-review/renders/relinc-20.png", "sha256": "fe0c79918e972a5e7eb1904d12763edad52671c3a9a6f283d46ce85fea5805e6" },
-          { "number": 21, "renderPath": "north-carolina/regulatory/captures/2026-09-07/relinc-l09-review/renders/relinc-21.png", "sha256": "55f7c0aa8b25d21a0c744c20a066e2005cdc662123324f52b0d0ec4e81877e42" },
-          { "number": 22, "renderPath": "north-carolina/regulatory/captures/2026-09-07/relinc-l09-review/renders/relinc-22.png", "sha256": "119a84084b65db1cbf839cf9738e23f21ffb929c96d2f0feaa70c7f0a3abdb92" },
-          { "number": 23, "renderPath": "north-carolina/regulatory/captures/2026-09-07/relinc-l09-review/renders/relinc-23.png", "sha256": "c1ed680755649741bb09a8c22393e8ab329bc5d045c474b22483caad2e885980" },
-          { "number": 24, "renderPath": "north-carolina/regulatory/captures/2026-09-07/relinc-l09-review/renders/relinc-24.png", "sha256": "2e3c56c465bd2e330413f4d99c1bfbabe4cfc968f5effb6a2f06ee1e96c84f5f" },
-          { "number": 25, "renderPath": "north-carolina/regulatory/captures/2026-09-07/relinc-l09-review/renders/relinc-25.png", "sha256": "b7c477540056664e6962359c7bd07b08afe88b79efc7f8e3df6c6aaaab84cfb7" },
-          { "number": 26, "renderPath": "north-carolina/regulatory/captures/2026-09-07/relinc-l09-review/renders/relinc-26.png", "sha256": "a0e5b4cbc2e67f613589f7d9fcb94c424f5ff07825594d3f4591e55ba8e9fbd4" },
-          { "number": 27, "renderPath": "north-carolina/regulatory/captures/2026-09-07/relinc-l09-review/renders/relinc-27.png", "sha256": "62f1c68750676687047c578436a24854fe44e5895b79318865e7d02870cdbd79" },
-          { "number": 28, "renderPath": "north-carolina/regulatory/captures/2026-09-07/relinc-l09-review/renders/relinc-28.png", "sha256": "0136ca7d8f7cd3ae8eb10bba303ace5fdd4fcfff5c4d30ee1ff4f7ded400900e" },
-          { "number": 29, "renderPath": "north-carolina/regulatory/captures/2026-09-07/relinc-l09-review/renders/relinc-29.png", "sha256": "61c161490382dad439f52d160a024d7f4fa927a61b13741217d5401cfeb9319b" },
-          { "number": 30, "renderPath": "north-carolina/regulatory/captures/2026-09-07/relinc-l09-review/renders/relinc-30.png", "sha256": "53181bc868165b7c44a37ae4db709f533e1225394ff8d4acb7a50c2e537535d8" },
-          { "number": 31, "renderPath": "north-carolina/regulatory/captures/2026-09-07/relinc-l09-review/renders/relinc-31.png", "sha256": "b631974d7456766ea8477e11c1d54587f27513f090ab6bb64ef516797d38ff8a" },
-          { "number": 32, "renderPath": "north-carolina/regulatory/captures/2026-09-07/relinc-l09-review/renders/relinc-32.png", "sha256": "f3bf2338cb923d03a5ef36f9948464dc96d2a765b41820a6c8ba7c665de98ec2" },
-          { "number": 33, "renderPath": "north-carolina/regulatory/captures/2026-09-07/relinc-l09-review/renders/relinc-33.png", "sha256": "878d14cf92bd885622b86c887c4456e396787eeabe45da89a57716573aa88c98" },
-          { "number": 34, "renderPath": "north-carolina/regulatory/captures/2026-09-07/relinc-l09-review/renders/relinc-34.png", "sha256": "934206dedd7ad2be29124a96da38096c370d15ab0525bf09b4a6586de93f1cf2" },
-          { "number": 35, "renderPath": "north-carolina/regulatory/captures/2026-09-07/relinc-l09-review/renders/relinc-35.png", "sha256": "34f05ffabb117fcb937ac9ec6a8df2b7ec807d410753aa1f7960a0a6a684364d" },
-          { "number": 36, "renderPath": "north-carolina/regulatory/captures/2026-09-07/relinc-l09-review/renders/relinc-36.png", "sha256": "56183595743e8687f76893eeec2944984a05be976a4433c369b6a4f437f3d4b2" }
+          {
+            "number": 1,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/relinc-l09-review/renders/relinc-01.png",
+            "sha256": "c6e6d509f33c65777819d0091cbc07b4cb895c539200eefadc9288f5e7deedca"
+          },
+          {
+            "number": 2,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/relinc-l09-review/renders/relinc-02.png",
+            "sha256": "33e5728b99d7d26b1782281e8d77653eb7d8928510b0660b2e822b8d733dc855"
+          },
+          {
+            "number": 3,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/relinc-l09-review/renders/relinc-03.png",
+            "sha256": "30b0e138c72d2dd2af9cd2e3c16b02a43457d3bb3f241735b21abbb1f445da2b"
+          },
+          {
+            "number": 4,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/relinc-l09-review/renders/relinc-04.png",
+            "sha256": "79019e3f49ef9df5ccc6afbe24b61e98c89a8cf73f4bbb853edcf284059f677d"
+          },
+          {
+            "number": 5,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/relinc-l09-review/renders/relinc-05.png",
+            "sha256": "22f195ce4f37fdc81724f0689c9f0b20953a0a65b485300701c7ca2fc0557cc7"
+          },
+          {
+            "number": 6,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/relinc-l09-review/renders/relinc-06.png",
+            "sha256": "3f0fb787517de57d9e85b4dcd4889f85fd18c81eae246a7d7a801861da16df99"
+          },
+          {
+            "number": 7,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/relinc-l09-review/renders/relinc-07.png",
+            "sha256": "86bc5c3f5ed96be610b337041b893353740515f68c8b94d2d1044e7937842d98"
+          },
+          {
+            "number": 8,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/relinc-l09-review/renders/relinc-08.png",
+            "sha256": "9f1d4ddb5092a706ca14d0d767d01e37db3bbe0b8610f9bb6a183aa8d55d12f5"
+          },
+          {
+            "number": 9,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/relinc-l09-review/renders/relinc-09.png",
+            "sha256": "6b6bb904c3ba79a0af59590c163dfe58cfe0ee2ac51cf3cc32ab32a1fca4efb2"
+          },
+          {
+            "number": 10,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/relinc-l09-review/renders/relinc-10.png",
+            "sha256": "13940a6eb713e4669ca8c27a07304e217b8bf33f81189c02bc4fd3c638cd0fce"
+          },
+          {
+            "number": 11,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/relinc-l09-review/renders/relinc-11.png",
+            "sha256": "20cff12114e402e0656d4be2e59a83816e098127230afacc2a82f4569c700fed"
+          },
+          {
+            "number": 12,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/relinc-l09-review/renders/relinc-12.png",
+            "sha256": "fcda00df46e127b4b7eb5ab980c0d4da4e3498b0bc226be0a2b8bc3c23aa30e1"
+          },
+          {
+            "number": 13,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/relinc-l09-review/renders/relinc-13.png",
+            "sha256": "5aba087f9ed813e403e098ccae23aa8e7396510ecfd36613239490d8e1d744e6"
+          },
+          {
+            "number": 14,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/relinc-l09-review/renders/relinc-14.png",
+            "sha256": "56e5d0451b0fd13aa39cba6b8cc6a76cc9d0ef25289601a5e53788301c152911"
+          },
+          {
+            "number": 15,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/relinc-l09-review/renders/relinc-15.png",
+            "sha256": "b5636eec829663f4a9a2673bb14238a3d961ea05d63e2dc2b5366e44729e9abe"
+          },
+          {
+            "number": 16,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/relinc-l09-review/renders/relinc-16.png",
+            "sha256": "00402b8a251e80d0b2c69937531c1adcd8ca2815dad001bade467a6863ee4a9e"
+          },
+          {
+            "number": 17,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/relinc-l09-review/renders/relinc-17.png",
+            "sha256": "37707804d81bb852bfdd964004d25cac0bf394532ca3c2ab775690204f0b88b5"
+          },
+          {
+            "number": 18,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/relinc-l09-review/renders/relinc-18.png",
+            "sha256": "dd5948765acc140e2d8c8c50fa165f519909adba9034176d027ddc9d036c7781"
+          },
+          {
+            "number": 19,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/relinc-l09-review/renders/relinc-19.png",
+            "sha256": "8b5518667f8d5b1567b330e3a5fbb49181fddc3de64666628e965f57ad09ba76"
+          },
+          {
+            "number": 20,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/relinc-l09-review/renders/relinc-20.png",
+            "sha256": "fe0c79918e972a5e7eb1904d12763edad52671c3a9a6f283d46ce85fea5805e6"
+          },
+          {
+            "number": 21,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/relinc-l09-review/renders/relinc-21.png",
+            "sha256": "55f7c0aa8b25d21a0c744c20a066e2005cdc662123324f52b0d0ec4e81877e42"
+          },
+          {
+            "number": 22,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/relinc-l09-review/renders/relinc-22.png",
+            "sha256": "119a84084b65db1cbf839cf9738e23f21ffb929c96d2f0feaa70c7f0a3abdb92"
+          },
+          {
+            "number": 23,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/relinc-l09-review/renders/relinc-23.png",
+            "sha256": "c1ed680755649741bb09a8c22393e8ab329bc5d045c474b22483caad2e885980"
+          },
+          {
+            "number": 24,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/relinc-l09-review/renders/relinc-24.png",
+            "sha256": "2e3c56c465bd2e330413f4d99c1bfbabe4cfc968f5effb6a2f06ee1e96c84f5f"
+          },
+          {
+            "number": 25,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/relinc-l09-review/renders/relinc-25.png",
+            "sha256": "b7c477540056664e6962359c7bd07b08afe88b79efc7f8e3df6c6aaaab84cfb7"
+          },
+          {
+            "number": 26,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/relinc-l09-review/renders/relinc-26.png",
+            "sha256": "a0e5b4cbc2e67f613589f7d9fcb94c424f5ff07825594d3f4591e55ba8e9fbd4"
+          },
+          {
+            "number": 27,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/relinc-l09-review/renders/relinc-27.png",
+            "sha256": "62f1c68750676687047c578436a24854fe44e5895b79318865e7d02870cdbd79"
+          },
+          {
+            "number": 28,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/relinc-l09-review/renders/relinc-28.png",
+            "sha256": "0136ca7d8f7cd3ae8eb10bba303ace5fdd4fcfff5c4d30ee1ff4f7ded400900e"
+          },
+          {
+            "number": 29,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/relinc-l09-review/renders/relinc-29.png",
+            "sha256": "61c161490382dad439f52d160a024d7f4fa927a61b13741217d5401cfeb9319b"
+          },
+          {
+            "number": 30,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/relinc-l09-review/renders/relinc-30.png",
+            "sha256": "53181bc868165b7c44a37ae4db709f533e1225394ff8d4acb7a50c2e537535d8"
+          },
+          {
+            "number": 31,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/relinc-l09-review/renders/relinc-31.png",
+            "sha256": "b631974d7456766ea8477e11c1d54587f27513f090ab6bb64ef516797d38ff8a"
+          },
+          {
+            "number": 32,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/relinc-l09-review/renders/relinc-32.png",
+            "sha256": "f3bf2338cb923d03a5ef36f9948464dc96d2a765b41820a6c8ba7c665de98ec2"
+          },
+          {
+            "number": 33,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/relinc-l09-review/renders/relinc-33.png",
+            "sha256": "878d14cf92bd885622b86c887c4456e396787eeabe45da89a57716573aa88c98"
+          },
+          {
+            "number": 34,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/relinc-l09-review/renders/relinc-34.png",
+            "sha256": "934206dedd7ad2be29124a96da38096c370d15ab0525bf09b4a6586de93f1cf2"
+          },
+          {
+            "number": 35,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/relinc-l09-review/renders/relinc-35.png",
+            "sha256": "34f05ffabb117fcb937ac9ec6a8df2b7ec807d410753aa1f7960a0a6a684364d"
+          },
+          {
+            "number": 36,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/relinc-l09-review/renders/relinc-36.png",
+            "sha256": "56183595743e8687f76893eeec2944984a05be976a4433c369b6a4f437f3d4b2"
+          }
         ],
         "ocrStatus": "NOT_REQUIRED_TEXT_LAYER_MATCHED_RENDER"
       },
@@ -419,21 +583,580 @@
         "NC-SYLLABUS-PRE-2026"
       ],
       "requestedUrl": "https://www.ncrec.gov/Forms/Education/Prelicense_Course_Syllabus.pdf",
-      "attemptedAt": "2026-09-06T11:55:26.301Z",
-      "status": "RETRIEVAL_FAILED",
-      "snapshotPath": null,
-      "sha256": null,
+      "attemptedAt": "2026-09-07T20:38:00-07:00",
+      "status": "VERIFIED_AS_OF_CAPTURE",
+      "snapshotPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/Prelicense_Course_Syllabus.pdf",
+      "sha256": "e5fe46c1922c1b98aeaa560c49b9315e6f39b0e52c125e824df71c77ebecb48c",
       "pdfReview": {
-        "status": "NOT_REVIEWED",
-        "pages": [],
-        "ocrStatus": "NOT_APPLICABLE_UNLESS_TEXT_DISPUTED"
+        "status": "REVIEWED",
+        "reviewedPdfSha256": "e5fe46c1922c1b98aeaa560c49b9315e6f39b0e52c125e824df71c77ebecb48c",
+        "title": "North Carolina Real Estate Prelicensing Course Syllabus (Student Version)",
+        "revisionObservation": "March 2024 Edition, Amended May 2026; PDF metadata creation/modification date May 11, 2026.",
+        "pages": [
+          {
+            "number": 1,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-001.png",
+            "sha256": "124c76004104ae89de0175dd6b78513693d3e85177db0190dea32806ba490e00"
+          },
+          {
+            "number": 2,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-002.png",
+            "sha256": "835775273e3ac1853d4431b18f5e78cd4f2e06f6df378a50cdda784616c8dd1f"
+          },
+          {
+            "number": 3,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-003.png",
+            "sha256": "08d331601d978068ed57abefb51cc310278f3dbd75aaf418d205e140c5895eae"
+          },
+          {
+            "number": 4,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-004.png",
+            "sha256": "940662f1b2cef0d17a459d2228237cc7cd489ae96c4a54e3bd95f9fbbee6d4e4"
+          },
+          {
+            "number": 5,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-005.png",
+            "sha256": "1847beec10860138a2416f3065943f764fe0e4ca994c19fd26d7c2e5e3b024bb"
+          },
+          {
+            "number": 6,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-006.png",
+            "sha256": "8c3a64742e097f56e04f34409e0081a0599a77ca319cf90b3aa24c740aa393d6"
+          },
+          {
+            "number": 7,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-007.png",
+            "sha256": "0a45bfa34a798457b7709d7a9de273f953354ef155ae578098a0a5b96477aa2d"
+          },
+          {
+            "number": 8,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-008.png",
+            "sha256": "e86220d6ecc52a6b64004d59a643b8844ab9de427b02fae2281ebd9a5aad818c"
+          },
+          {
+            "number": 9,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-009.png",
+            "sha256": "cdec153de564028e8274da5215badf8d4e7fa19fe0e3d62eebc1f131b74d8c26"
+          },
+          {
+            "number": 10,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-010.png",
+            "sha256": "2657a3e63a7dcd5be267346b1d269b97de7d47267111538b1a3b63af2dfff0c9"
+          },
+          {
+            "number": 11,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-011.png",
+            "sha256": "09c4386485b56d66b8da75609742dc06b223514b43db7f8bb3ab99a22d2d86b4"
+          },
+          {
+            "number": 12,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-012.png",
+            "sha256": "bd150ed2c1e75f6a47f7e21cf15889bded82a0e5bbab5f8b71417135da9aa2e9"
+          },
+          {
+            "number": 13,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-013.png",
+            "sha256": "d745749502eb52d7457445346a1f35c5cacd1d394b92dacc5fa9b34d76136489"
+          },
+          {
+            "number": 14,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-014.png",
+            "sha256": "63325dfe0c207854f3d22057228655b2d024f40eeb896f7917f72d4f68f92272"
+          },
+          {
+            "number": 15,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-015.png",
+            "sha256": "df478268b9584fd7450511156d8ae525d673e08ad51d3879c6a67c46855c09bb"
+          },
+          {
+            "number": 16,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-016.png",
+            "sha256": "a64a730cb727b13cc8dea82a5b6c74287294a0f414e20f0406b6d1250269bc0b"
+          },
+          {
+            "number": 17,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-017.png",
+            "sha256": "6bf9a9c7d3c2191851a8adc4de995e8d8c7e3d2c164c1a1889d46b2a95ab6a90"
+          },
+          {
+            "number": 18,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-018.png",
+            "sha256": "20fa27d72335617b161c6bb8fa30762eabe751ea3e4791eeef4125eef5c4539e"
+          },
+          {
+            "number": 19,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-019.png",
+            "sha256": "140205e417469eaa7b737f0792dec9c7277eaf1157f2948cddecdc45830d6279"
+          },
+          {
+            "number": 20,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-020.png",
+            "sha256": "95692447205bb0b3e0e8ad5f40a4c517fcd763669f4a38b42bc735db108c6a8a"
+          },
+          {
+            "number": 21,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-021.png",
+            "sha256": "de0f2eb8879f1e5d3fd37e772170882cbea32870612be77665b86f490008705c"
+          },
+          {
+            "number": 22,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-022.png",
+            "sha256": "350d2cff0bd1b3424bb77d52b1f0f7bd2ed2ba802b2680ff2a53f988a05b32e6"
+          },
+          {
+            "number": 23,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-023.png",
+            "sha256": "313c3a580f29d771a88da7c35290c5688d771be9eb30c076801e796748d0854f"
+          },
+          {
+            "number": 24,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-024.png",
+            "sha256": "8ca45baaf7993fd14bb5496c7c0c4bfc68701ba63894fccd9627eafab11b135d"
+          },
+          {
+            "number": 25,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-025.png",
+            "sha256": "089a58507443a79b5bbe6ceb2668c4c56323004ebd968f5a47433df6ba3b0a75"
+          },
+          {
+            "number": 26,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-026.png",
+            "sha256": "e883a33df4e6beb5673ce38880f48166675402f0fd010028368a93cacc186cd2"
+          },
+          {
+            "number": 27,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-027.png",
+            "sha256": "7815f96cb854abf7b64eee253bc0abda033fe29aac168155c601b2f74e3d3de4"
+          },
+          {
+            "number": 28,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-028.png",
+            "sha256": "78a3af177a344e06939a84029ea5f9d5e247d89ed074378fa7390ed5801c9a03"
+          },
+          {
+            "number": 29,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-029.png",
+            "sha256": "478d0e49e814fb96e36b4efce4fb9fbbd838c737e048c596a93b8584f2ef9798"
+          },
+          {
+            "number": 30,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-030.png",
+            "sha256": "15ae8d6fc601c52f2ee7f3a9039c8669edbe67998bb62ab1fe901b419d5bd1c1"
+          },
+          {
+            "number": 31,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-031.png",
+            "sha256": "604230658e2a18a2e6aacf86e15e71375dc62ff1e860c53b0063cb82656b96d5"
+          },
+          {
+            "number": 32,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-032.png",
+            "sha256": "daa05d4662511a0a36c1a85da6fa15691697f17814ff4c33d45a59903db4c263"
+          },
+          {
+            "number": 33,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-033.png",
+            "sha256": "20f8fb9746250fc37b623521d4b1bb9bf324ec2d1a44d68f1f298a642c2e54a6"
+          },
+          {
+            "number": 34,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-034.png",
+            "sha256": "0ff509141186eed335fe073f3f523cc0e7b7814ecd205fa036e26d7c401f0ec4"
+          },
+          {
+            "number": 35,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-035.png",
+            "sha256": "a65cda23eb14fc7934dc6bef70da851dc397b83da8d4d8c585d051afdea1d255"
+          },
+          {
+            "number": 36,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-036.png",
+            "sha256": "fc3ef1104c9f4510476f6ebadff687ddc70145085cd17e0d9006d6e5cb439ef8"
+          },
+          {
+            "number": 37,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-037.png",
+            "sha256": "d1d5307f25cc78e23ba0c0f27fd89b9cb9375ac99b85a518b9d1937677b9cfdb"
+          },
+          {
+            "number": 38,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-038.png",
+            "sha256": "b7726e24617baaeaf958589d439bf8a15810f7dcb2aff4882f9047a289f77dd2"
+          },
+          {
+            "number": 39,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-039.png",
+            "sha256": "d7ca8ba527c4b0f6a4c8ad941c17d3fcd8bc3e9944c5eb357e0277665586e706"
+          },
+          {
+            "number": 40,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-040.png",
+            "sha256": "0de788d45181ffe5357e3e2ddfcd7828476b73bcd88b3465c6088c0c4ed15c81"
+          },
+          {
+            "number": 41,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-041.png",
+            "sha256": "bf92849a7adb6da5855c5a97a1a7b93d825391a0675ef01184fecef119886aea"
+          },
+          {
+            "number": 42,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-042.png",
+            "sha256": "8c3b30f3dcdf816fff3edf5b5b4ed594fd4af8232b988cb8386f09e840a73744"
+          },
+          {
+            "number": 43,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-043.png",
+            "sha256": "592831d6d9c376eae13c321631def695d365fdaabe23871a9fef85d7474d668e"
+          },
+          {
+            "number": 44,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-044.png",
+            "sha256": "c280d4ddc1bf8eb855bc1e35b21815e98a16d98576a1670fbfc02bc5f5561c81"
+          },
+          {
+            "number": 45,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-045.png",
+            "sha256": "ee3ec3fde370c0677e990ed654c39c3783af843a15bddfbcca8357f02bdc2340"
+          },
+          {
+            "number": 46,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-046.png",
+            "sha256": "955c836d2865d4655a6fcd96f4dbb3ba595a5ad5382e790825dc7b6472e57023"
+          },
+          {
+            "number": 47,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-047.png",
+            "sha256": "c749c69f1ff21599a8c864579b78905b8b2a6c219ae62f07e14f81958b5ac8d8"
+          },
+          {
+            "number": 48,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-048.png",
+            "sha256": "d953be559caf6bea31f56d57784536f3571729a7475f56e2d020e917df13873d"
+          },
+          {
+            "number": 49,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-049.png",
+            "sha256": "78351e38c67e624d6552dc54d72807892422a4d9d57778cf1a62fa23947666e0"
+          },
+          {
+            "number": 50,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-050.png",
+            "sha256": "70b82d28f53b5f6f498b343a61e7f0ddcb09e7a7406556c39e2cc3aa053a0556"
+          },
+          {
+            "number": 51,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-051.png",
+            "sha256": "f01d423f2b30453cf6ec7e30032e0387534784b1d626343c1ba2a94f76876ba9"
+          },
+          {
+            "number": 52,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-052.png",
+            "sha256": "1a97dd7b7a37f7eda42b2a7e07f05e7523f19ea2625ed3c2f09a4d362b45b8c8"
+          },
+          {
+            "number": 53,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-053.png",
+            "sha256": "e67a3a171dda826223cf82970573e82619455acebb10701138c2ee771e6099f4"
+          },
+          {
+            "number": 54,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-054.png",
+            "sha256": "b9e778e00dd810b08117f3b65cb62d85e53923f73e3efe92ee2c4280d7f4f92e"
+          },
+          {
+            "number": 55,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-055.png",
+            "sha256": "b85d65f54936eac70bc250abe5462773322ed1e60a9da837a2bc6f968fca88bf"
+          },
+          {
+            "number": 56,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-056.png",
+            "sha256": "4304de7958cdb09876b196ee8c7802d769b11f658dfe81179a0ce788ad2ae382"
+          },
+          {
+            "number": 57,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-057.png",
+            "sha256": "e23636030a53bdf75b5dd31a406b42192d96b8365f3a18a0a3022331a9142efb"
+          },
+          {
+            "number": 58,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-058.png",
+            "sha256": "79868b8acb01649179e1baa10901e0c3fd925df5fc67866e78a0509fa9f9638f"
+          },
+          {
+            "number": 59,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-059.png",
+            "sha256": "c70390f9e1cfd97fa1e0fd35101a9c59935d3b3a894076da6f96bf5ebe910322"
+          },
+          {
+            "number": 60,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-060.png",
+            "sha256": "5d970b9a61f2b3a3d6a31cef34ccb0adc5d0083259a2101f985933f7d951d81b"
+          },
+          {
+            "number": 61,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-061.png",
+            "sha256": "1a6616bb90851b7d5842a92c590fcec881526f162e3414f2f92114e94fbe5103"
+          },
+          {
+            "number": 62,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-062.png",
+            "sha256": "a3f83320b340ed9ab578053e9bfdf088bccdb58af077c958d599e1cf7b0e2a05"
+          },
+          {
+            "number": 63,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-063.png",
+            "sha256": "3a42e615d2d682a56af112f390d5e63254306eb9da6d0300c587679d0b980d0b"
+          },
+          {
+            "number": 64,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-064.png",
+            "sha256": "d42066ad0ce4f005c1d41187d2ecdd88f5e5ef292839d4e527ebdd948cfb78c0"
+          },
+          {
+            "number": 65,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-065.png",
+            "sha256": "f37e2c58c35bc74890c8f3a3c7fef47ff559f53b2f6292c67f52efc8bf4b81fd"
+          },
+          {
+            "number": 66,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-066.png",
+            "sha256": "87567c767f3a0f0d9e54af27f0a02143742e1b2ecea6cca8883fa5bf959b08a7"
+          },
+          {
+            "number": 67,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-067.png",
+            "sha256": "6eaff4196abf14fce46c8238f304402ed419004c3ac4a661d9341fada50a97a1"
+          },
+          {
+            "number": 68,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-068.png",
+            "sha256": "e15e2d912498f8518f5c9b35f2a6cf066f1bbdb3a7b36e422f25c25e90f1a0d9"
+          },
+          {
+            "number": 69,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-069.png",
+            "sha256": "92c2566b921f3822c81bebeec3e3fe26ad8329b1c15b964fcc9c6c3756fc290f"
+          },
+          {
+            "number": 70,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-070.png",
+            "sha256": "5f6f9632c899c679768de2e36415c2a93c4a46a8f6f15ed62fd8e6cc028ec76f"
+          },
+          {
+            "number": 71,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-071.png",
+            "sha256": "bdba4f82562de95e65f9f7447b003db167c81096b2680b61f4ed5fdb674d0df2"
+          },
+          {
+            "number": 72,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-072.png",
+            "sha256": "8b5e24ff548632dade7669755aeca254ca6eb6c346741f0a29c5690820a3c744"
+          },
+          {
+            "number": 73,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-073.png",
+            "sha256": "2aef1625364c31a0585ff7d43d92525253c60e5de0c351e596e398557d4bb2f9"
+          },
+          {
+            "number": 74,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-074.png",
+            "sha256": "8c08405a5a9ca58f64607020d753ac0f00b9ac19b8d3c2772a3009e5e0a796e7"
+          },
+          {
+            "number": 75,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-075.png",
+            "sha256": "95dff6044b8d422d1d165959a8b6cf8c655bddd9781d6da06c1ed156060ddb1b"
+          },
+          {
+            "number": 76,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-076.png",
+            "sha256": "3026f9a77812d85b894980e08d5a62a531503ba51419713bd8dbf91a5d42f610"
+          },
+          {
+            "number": 77,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-077.png",
+            "sha256": "c27f06709a4750a26c6917cb36b3fecb3d401af40d81e1aaa80e91348229134a"
+          },
+          {
+            "number": 78,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-078.png",
+            "sha256": "351cf9a6c90d92e1a629cb55cd67d62217538764042dc992b3ef2f6f9ab64933"
+          },
+          {
+            "number": 79,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-079.png",
+            "sha256": "3cf1bc939efeeb44a96c93c4bc607b8a48a724694fe321a4831c2c5f81901e52"
+          },
+          {
+            "number": 80,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-080.png",
+            "sha256": "807193cd0d3377ac302bd749dae21ada3cd864bb4675904e31eae64918508308"
+          },
+          {
+            "number": 81,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-081.png",
+            "sha256": "34b45ea788ad299398f75b3a9b6d262e4e5af8b9648c0971a93756bdd2cceb64"
+          },
+          {
+            "number": 82,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-082.png",
+            "sha256": "a2694f34f2fb97042775db6bcd0c1fc82dd35dd244407e55ef87e06727724137"
+          },
+          {
+            "number": 83,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-083.png",
+            "sha256": "d31781c92ba87f967e1ce73dbb5530b15b2ed98fa92635ff5fc61426ad3b8e3a"
+          },
+          {
+            "number": 84,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-084.png",
+            "sha256": "a95cb4d524f461e784f9431545a2cb6edf894208c75261dd98df7b96e4ea9979"
+          },
+          {
+            "number": 85,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-085.png",
+            "sha256": "f2721f5a36f34d8dd19b7e9cf9a6cc6da09657129e70f059eb168207a55687a2"
+          },
+          {
+            "number": 86,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-086.png",
+            "sha256": "432e618bcd14f40b2b44683ea2f644b465821e0df5d5c8a054913185c8c0d1f8"
+          },
+          {
+            "number": 87,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-087.png",
+            "sha256": "c0ae769da549f0c73a4379b0d70fd15fed994a9d2da424c081e8f8a35ecd5e9d"
+          },
+          {
+            "number": 88,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-088.png",
+            "sha256": "7cdf1852fedf9ca95bacae89141a36d66664a327e5d474cd1a7ba9fd2ce098e5"
+          },
+          {
+            "number": 89,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-089.png",
+            "sha256": "275883ca73f5cdae7956a7958fdfb9d7c1e82d4b17a47c557b417312a6791103"
+          },
+          {
+            "number": 90,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-090.png",
+            "sha256": "6302537cc8092e699cdfc623d72c453055a11324fbd83b24d79d396848111bd6"
+          },
+          {
+            "number": 91,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-091.png",
+            "sha256": "a8800d7124016a0e61320d05f2449c14ac270ff1246640468467b211b364ba6d"
+          },
+          {
+            "number": 92,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-092.png",
+            "sha256": "d5dff0f90db9e8fb445e1d621606de4a2fa7d228b9babfd270bbf20dade7b878"
+          },
+          {
+            "number": 93,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-093.png",
+            "sha256": "7f754d83860b6b1dd61ddc81c29d260bfcdf4b198cb7d1d6b82282cac40df9fe"
+          },
+          {
+            "number": 94,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-094.png",
+            "sha256": "39f11ef0a54d8b8c8eca25a3507ce94f4b52613c1a43aa2f1a02ec5ae0883301"
+          },
+          {
+            "number": 95,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-095.png",
+            "sha256": "c8da1fa6ae41ea966f0fd21296a1b1e0428a6432235f7b47ebc1fd76d323ced9"
+          },
+          {
+            "number": 96,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-096.png",
+            "sha256": "cb3a87f0433ed64e632593a724de24916fa9b0cf0d1f3865d0829e5cca54fdfc"
+          },
+          {
+            "number": 97,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-097.png",
+            "sha256": "d51759b9cb7d233ce1e4d4e488036b6d1b431b1ea97f59018d20969a914eea2a"
+          },
+          {
+            "number": 98,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-098.png",
+            "sha256": "14cf0adf974c0642c0c1530508f18bbb7e221f02e19472b11c123cfb975f1bf9"
+          },
+          {
+            "number": 99,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-099.png",
+            "sha256": "aee974de7424ef411ea13c6349e88f60f1ca6edd907f274a10cc4d71d1275de1"
+          },
+          {
+            "number": 100,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-100.png",
+            "sha256": "351f6ebd193b87a7abe0ddf18ddf6e3d7789c06f7217feb1aa8f53aee7214f62"
+          },
+          {
+            "number": 101,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-101.png",
+            "sha256": "0c0d7d057db86808c03965bd1801ced3f97b0afcf42c75c37d9b0e1fe0339669"
+          },
+          {
+            "number": 102,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-102.png",
+            "sha256": "c22170162cf5c41425af5d6fe540a352deba604ff535d9a0fcd05f72e8766af6"
+          },
+          {
+            "number": 103,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-103.png",
+            "sha256": "c794c07ef3b931eef2de4ac94455da80cfe9a553ed8051df8f41e9fb7b032842"
+          },
+          {
+            "number": 104,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-104.png",
+            "sha256": "f795237a90aa9c3cd2c7a2476b47f536b0ca41218c6396553b9d409baa248866"
+          },
+          {
+            "number": 105,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-105.png",
+            "sha256": "c572bfc9eaa6c7397e674634d7cd87d2bb675cae9c89e8ac1b65e93c0bd68696"
+          },
+          {
+            "number": 106,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-106.png",
+            "sha256": "b5564ed1aa5bd4b2643f26f02ec9476797fe68875f83d0d38105a44a91cf882e"
+          },
+          {
+            "number": 107,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-107.png",
+            "sha256": "91e522ed90d59cad1c8ca31a5a49156a7bb68b627716c9d580af6de1e4a09df7"
+          },
+          {
+            "number": 108,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/renders/page-108.png",
+            "sha256": "88863ec005e28ede41df80a2c12e1142fc7de77f845c933944522f582a658244"
+          }
+        ],
+        "ocrStatus": "NOT_REQUIRED_TEXT_LAYER_MATCHED_RENDER"
       },
-      "httpStatus": 403,
+      "httpStatus": 200,
       "finalUrl": "https://www.ncrec.gov/Forms/Education/Prelicense_Course_Syllabus.pdf",
-      "contentType": "text/html",
-      "receivedBytes": 118,
-      "responseSha256": "58bf2215b395dcac74c009aa98701854e43cbe54a1cd3a95fee6a647ca9910d4",
-      "failure": "HTTP 403"
+      "contentType": "application/pdf",
+      "receivedBytes": 1473900,
+      "responseSha256": "e5fe46c1922c1b98aeaa560c49b9315e6f39b0e52c125e824df71c77ebecb48c",
+      "pdfPages": 108,
+      "pdfMetadata": {
+        "Title": "North Carolina Real Estate Prelicensing Course Syllabus (Student Version)",
+        "Subject": "North Carolina Real Estate Prelicensing Course Syllabus (Student Version)",
+        "Author": "North Carolina Real Estate Commission.",
+        "Creator": "Microsoft® Word for Microsoft 365",
+        "Producer": "Microsoft® Word for Microsoft 365",
+        "CreationDate": "Mon May 11 08:17:48 2026 PDT",
+        "ModDate": "Mon May 11 08:17:48 2026 PDT",
+        "Tagged": true,
+        "Encrypted": false,
+        "PageSize": "612 x 792 pts (letter)",
+        "PdfVersion": "1.7"
+      },
+      "textPath": "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/Prelicense_Course_Syllabus.txt",
+      "textSha256": "b6bff32619c7a09e524493863a42cffdf72f87527893864b9950f9404c7df809"
     },
     {
       "sourceIds": [
@@ -807,13 +1530,41 @@
         "title": "Dear Colleague Letter on Neighborhood Crime Data and School Quality",
         "revisionObservation": "April 24, 2026 date and all seven pages confirmed",
         "pages": [
-          { "number": 1, "renderPath": "north-carolina/regulatory/captures/2026-09-07/module-09-hud/renders/hud-neighborhood-crime-school-letter-1.png", "sha256": "c3f22e47e7f3742dfd94571e21fa9159f446f78ec3b9f746ca254d5e4e1be77c" },
-          { "number": 2, "renderPath": "north-carolina/regulatory/captures/2026-09-07/module-09-hud/renders/hud-neighborhood-crime-school-letter-2.png", "sha256": "7d5e22a974c597b8d395667408d960ec8b00449a31af75270e8ea3956111166f" },
-          { "number": 3, "renderPath": "north-carolina/regulatory/captures/2026-09-07/module-09-hud/renders/hud-neighborhood-crime-school-letter-3.png", "sha256": "e165b1d3a2a279a0b99d72b548d5eccc9c3d9070ab3a37f0c5772fd12613e9e7" },
-          { "number": 4, "renderPath": "north-carolina/regulatory/captures/2026-09-07/module-09-hud/renders/hud-neighborhood-crime-school-letter-4.png", "sha256": "d6b45568753d6dc6aa78107cb167d7ed81ef613a1b4c3690228725de1c6d01a8" },
-          { "number": 5, "renderPath": "north-carolina/regulatory/captures/2026-09-07/module-09-hud/renders/hud-neighborhood-crime-school-letter-5.png", "sha256": "4a2b4187eecef7482e5c12acdce3f6e172c03bd04085444ca2103c1e5b47d25c" },
-          { "number": 6, "renderPath": "north-carolina/regulatory/captures/2026-09-07/module-09-hud/renders/hud-neighborhood-crime-school-letter-6.png", "sha256": "611d8e414e19be0ef7adfca7c02c38a42a2465908c857b963d23f289b2b2389f" },
-          { "number": 7, "renderPath": "north-carolina/regulatory/captures/2026-09-07/module-09-hud/renders/hud-neighborhood-crime-school-letter-7.png", "sha256": "ec0c1775053048551790194c0e644450d09103258be065cf763b5ae4031b53ee" }
+          {
+            "number": 1,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/module-09-hud/renders/hud-neighborhood-crime-school-letter-1.png",
+            "sha256": "c3f22e47e7f3742dfd94571e21fa9159f446f78ec3b9f746ca254d5e4e1be77c"
+          },
+          {
+            "number": 2,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/module-09-hud/renders/hud-neighborhood-crime-school-letter-2.png",
+            "sha256": "7d5e22a974c597b8d395667408d960ec8b00449a31af75270e8ea3956111166f"
+          },
+          {
+            "number": 3,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/module-09-hud/renders/hud-neighborhood-crime-school-letter-3.png",
+            "sha256": "e165b1d3a2a279a0b99d72b548d5eccc9c3d9070ab3a37f0c5772fd12613e9e7"
+          },
+          {
+            "number": 4,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/module-09-hud/renders/hud-neighborhood-crime-school-letter-4.png",
+            "sha256": "d6b45568753d6dc6aa78107cb167d7ed81ef613a1b4c3690228725de1c6d01a8"
+          },
+          {
+            "number": 5,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/module-09-hud/renders/hud-neighborhood-crime-school-letter-5.png",
+            "sha256": "4a2b4187eecef7482e5c12acdce3f6e172c03bd04085444ca2103c1e5b47d25c"
+          },
+          {
+            "number": 6,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/module-09-hud/renders/hud-neighborhood-crime-school-letter-6.png",
+            "sha256": "611d8e414e19be0ef7adfca7c02c38a42a2465908c857b963d23f289b2b2389f"
+          },
+          {
+            "number": 7,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/module-09-hud/renders/hud-neighborhood-crime-school-letter-7.png",
+            "sha256": "ec0c1775053048551790194c0e644450d09103258be065cf763b5ae4031b53ee"
+          }
         ],
         "ocrStatus": "NOT_REQUIRED_TEXT_LAYER_MATCHED_RENDER"
       },
@@ -844,10 +1595,26 @@
         "title": "Notice of the Withdrawal of FHEO Guidance Documents",
         "revisionObservation": "September 17, 2025 date and all four pages confirmed",
         "pages": [
-          { "number": 1, "renderPath": "north-carolina/regulatory/captures/2026-09-07/module-09-hud/renders/hud-guidance-withdrawal-notice-1.png", "sha256": "d8adb11363e50512aa6d47c4bba8b2fe4029b64e92deb9c5af7264a524547a9c" },
-          { "number": 2, "renderPath": "north-carolina/regulatory/captures/2026-09-07/module-09-hud/renders/hud-guidance-withdrawal-notice-2.png", "sha256": "721b78fc70a4a97346abd2e3a8a201d60bcaa5a53fbbab504c19ecfe8a0aeca7" },
-          { "number": 3, "renderPath": "north-carolina/regulatory/captures/2026-09-07/module-09-hud/renders/hud-guidance-withdrawal-notice-3.png", "sha256": "90e0b657551b17d1ca90921788a44eb42144b3453068712d93ec989896454085" },
-          { "number": 4, "renderPath": "north-carolina/regulatory/captures/2026-09-07/module-09-hud/renders/hud-guidance-withdrawal-notice-4.png", "sha256": "977628181944b5239bf8b50a487122e13938e7ac4e3cd18f304d91679323a2da" }
+          {
+            "number": 1,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/module-09-hud/renders/hud-guidance-withdrawal-notice-1.png",
+            "sha256": "d8adb11363e50512aa6d47c4bba8b2fe4029b64e92deb9c5af7264a524547a9c"
+          },
+          {
+            "number": 2,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/module-09-hud/renders/hud-guidance-withdrawal-notice-2.png",
+            "sha256": "721b78fc70a4a97346abd2e3a8a201d60bcaa5a53fbbab504c19ecfe8a0aeca7"
+          },
+          {
+            "number": 3,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/module-09-hud/renders/hud-guidance-withdrawal-notice-3.png",
+            "sha256": "90e0b657551b17d1ca90921788a44eb42144b3453068712d93ec989896454085"
+          },
+          {
+            "number": 4,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/module-09-hud/renders/hud-guidance-withdrawal-notice-4.png",
+            "sha256": "977628181944b5239bf8b50a487122e13938e7ac4e3cd18f304d91679323a2da"
+          }
         ],
         "ocrStatus": "NOT_REQUIRED_TEXT_LAYER_MATCHED_RENDER"
       },
