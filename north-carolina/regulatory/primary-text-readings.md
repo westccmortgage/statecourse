@@ -623,6 +623,35 @@ The full copyrighted USPAP publication, North Carolina Appraisal Board rules and
 servicer guides were not read in full. Module NC-13 preserves those limits and requires a fresh
 transition check before delivery; the completed URAR activity itself is no longer open.
 
+## Module NC-14 reconciliation — current primary text read 2026-09-07
+
+Section XIV was checked against the current General Assembly codification and current indexed
+Commission rules:
+
+- **G.S. Chapter 42, Articles 2A, 3 and 7:** residential possession requires the statutory court
+  route. Self-help and distress/distraint are prohibited; ordinary summary ejectment and the separate
+  criminal-activity civil route have different elements and neither authorizes owner-directed removal.
+- **G.S. Chapter 42, Article 4A:** five good-faith activities are protected through a 12-month
+  retaliation defense, subject to six stated grounds on which the landlord may still prevail. Lease
+  expiration is not taught as automatic immunity from the retaliation analysis.
+- **G.S. Chapter 42, Article 5:** scope, managing-agent definition, mutual obligations, enumerated
+  landlord/tenant duties, nonwaiver, remedies and the judicial-determination condition on rent
+  withholding replace the former syllabus-only routing text.
+- **G.S. Chapter 42, Article 6 and Rules 58A .0116-.0117:** owner trust/bond alternatives are separated
+  from a broker's trust-account duty. Two-week, one-and-one-half-month and two-month deposit maxima,
+  permitted uses, ordinary-wear limit, depository notice, 30/60-day accounting, transfer and remedies
+  are now stated and tested.
+- **G.S. Chapter 42A:** the course now distinguishes the fewer-than-90-day vacation-rental definition
+  from the 30-day-or-less expedited-possession condition and states the written-agreement, three-
+  banking-day deposit, 50% disbursement, no-bond, 45-day accounting, 180-day transfer, notice,
+  habitability, broker-duty and evacuation rules.
+- **Rule 58A .0104(a):** owner brokerage authority is express and written from formation; the limited
+  buyer/tenant pre-offer exception does not permit oral property management.
+
+Section XIV prescribes no Required Activity. The corrected module nevertheless includes applied
+calculations, decision sequences and an integrated property-management scenario, and its assessment
+tests the formerly omitted figures and procedural distinctions.
+
 ### Original curriculum gaps — current Phase 0 disposition
 
 Named explicitly, because an unnamed gap becomes an invented fact. **The North Carolina gap list is
@@ -631,7 +660,7 @@ documents rather than a substitute for them.**
 
 - **21 NCAC Chapter 58, Subchapters A and H:** Phase 0 inspected the current official indexed OAH
   text for the controlling applicant, provider, instructor, course, distance, reporting, records and
-  renewal rules. Modules NC-01, NC-02, and NC-08 through NC-13 were reconciled on 2026-09-07 to their applicable
+  renewal rules. Modules NC-01, NC-02, and NC-08 through NC-14 were reconciled on 2026-09-07 to their applicable
   applicant, other-jurisdiction, supervision, BIC, compensation, agency, advertising, document-delivery,
   records, offer-form, trust-money and closing rules. The remaining modules still need topic-level reconciliation, and the official PDF
   bytes still need a filing-date integrity lock.
@@ -664,8 +693,9 @@ documents rather than a substitute for them.**
 - **The Real Estate Agent Safety Guide.**
 - **The Residential Property and Owners' Association Disclosure Statement (RPOADS)** itself remains
   uncaptured; Chapter 47E's coverage, timing and cancellation framework and Rule .0114's separate
-  broker duty are now reconciled. The **Tenant Security Deposit Act**, **Vacation Rental Act**,
-  **Marketable Title Act**, **Timeshare Act**, **Unfair and Deceptive Trade Practices Act**, and North
+  broker duty are now reconciled. The **Tenant Security Deposit Act** and **Vacation Rental Act** are
+  now reconciled in Module NC-14. The **Marketable Title Act**, **Timeshare Act**, **Unfair and
+  Deceptive Trade Practices Act**, and North
   Carolina **street-disclosure** and **subdivision** provisions remain unread. The statute of frauds and
   NCREC septic-advertising guidance are now reconciled. The Connor Act, cited co-ownership,
   periodic-tenancy notice, condominium purchaser-protection, mechanics'-lien, intestacy and adverse-

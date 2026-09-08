@@ -61,6 +61,7 @@ const requiredDocs = [
   "north-carolina/submission/10-product-roadmap.md",
   "north-carolina/submission/11-module-12-correction-audit.md",
   "north-carolina/submission/12-module-13-correction-audit.md",
+  "north-carolina/submission/13-module-14-correction-audit.md",
   "north-carolina/submission/course-completion-certificate-specimen.md",
   "north-carolina/HANDOFF.md"
 ];

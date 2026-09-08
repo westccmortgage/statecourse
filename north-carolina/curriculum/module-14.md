@@ -3,413 +3,464 @@
 ## Section XIV · NC Landlord & Tenant Concepts
 
 **Commission Syllabus section:** XIV — NC Landlord & Tenant Concepts
-**Instructional Level:** **2** for the whole section, with no exceptions. *Assigned by the Commission;
-providers and instructors are **REQUIRED to comply**.* There is no Level 1 material here. Every subtopic
-in this section must be taught to **application** standard — the student must be able to use it in a
-situation, not merely recall it.
+**Instructional Level:** **2** throughout; students must apply each rule to a situation.
 **Licence examination weight:** **State Exam Category — 3 items.**
 **Instructional hours:** **2.5**
-**Course version:** 1.0 submission draft
+**Course version:** 1.1 current-law correction draft
 **Regulatory status:** Development. Not approved. No North Carolina prelicensing credit is available.
 
-> ### A submission gate stated at the top of this module
->
-> Every subtopic in this section is the content of a **North Carolina statute or Commission rule** — the
-> **Residential Rental Agreements Act (NCGS 42, Article 5)**, the **retaliatory eviction Act (NCGS 42,
-> Article 4A)**, the **Tenant Security Deposit Act (NCGS 42, Article 6)**, the **Vacation Rental Act
-> (NCGS 42A)**, and **Commission Rules 58A .0104 and .0116.**
->
-> **This project has obtained none of them.** The hosts carrying the North Carolina General Statutes and
-> the North Carolina Administrative Code are outside this environment's egress allowlist, as recorded in
-> `north-carolina/regulatory/primary-text-readings.md`.
->
-> Accordingly: **every statement in this module is transcribed from the Commission's own Syllabus**, which
-> was obtained and read. **No deposit limit, notice period, deadline, penalty, damages figure or
-> procedural step is stated from any source this project has not read**, and where the Syllabus names a
-> subtopic without stating its content — *maximum TSD amounts*, *permitted uses*, *accounting to the
-> tenant*, *statutory duties* — **this module names the subtopic and routes to the statute rather than
-> inventing the answer.**
->
-> **Obtaining NCGS Chapter 42, Chapter 42A and 21 NCAC 58A, and filling those figures in from their own
-> text, is a submission gate for this course.**
+This module was reconciled on **2026-09-07** against the current official North Carolina General
+Assembly text of Chapter 42, Articles 2A, 3, 4A, 5, 6 and 7; Chapter 42A; and the current indexed text
+of Commission Rules 58A .0104, .0116, and .0117. The Commission Syllabus controls topic coverage and
+instructional level. The statutes and rules control the legal details.
+
+> **Broker boundary.** These rules let a broker recognize the issue, preserve money and documents,
+> follow the authorized procedure, and recommend legal counsel. They do not authorize a broker to
+> decide a disputed legal right, draft a custom lease or eviction notice, or predict a court result.
 
 ## Learning objectives *(all Level 2)*
 
-1. **Apply the Residential Rental Agreements Act** — what it covers, what it excludes, and that it cannot be waived.
-2. **Apply the rule that a broker managing rental property is "the landlord" under the Act.**
-3. **Apply the tenant's remedies, and the prohibition on unilaterally withholding rent.**
-4. **Apply North Carolina eviction procedure, including the prohibitions on self-help and on seizing property.**
-5. **Apply the retaliatory eviction Act and its 12-month protected period.**
-6. **Apply constructive eviction and the advice a broker must give before a tenant relies on it.**
-7. **Apply the landlord's negligence exposure, and its limits.**
-8. **Apply the Tenant Security Deposit Act's holding requirements, and the broker's narrower option.**
-9. **Apply the pet deposit rule and the service animal exception.**
-10. **Apply the Vacation Rental Act's distinct handling, bond and habitability rules.**
-11. **Apply the writing requirement for property management agreements.**
+By the end of this module, the student can:
+
+1. determine whether the Residential Rental Agreements Act or Vacation Rental Act applies;
+2. apply landlord and tenant duties without relying on an invalid waiver;
+3. explain the managing broker's statutory position and the limit on unilateral rent withholding;
+4. distinguish summary ejectment, the criminal-activity route, and prohibited self-help;
+5. apply the protected-activity, 12-month, and statutory-exception structure of retaliatory eviction;
+6. calculate the maximum residential tenant security deposit and apply holding and accounting rules;
+7. distinguish an ordinary pet fee from unlawful treatment of an assistance animal;
+8. apply the written-agreement, trust-account, sale-transfer, habitability, eviction, and evacuation
+   rules for a vacation rental; and
+9. identify the writing-from-inception and trust-money controls that apply to a property manager.
 
 ---
 
-## A. Laws protecting residential tenants
+## A. Residential Rental Agreements Act — Chapter 42, Article 5
 
-### A.1 The NC Residential Rental Agreements Act — NCGS 42, Article 5
+### A.1 Scope and defined roles
 
-The Commission asks for **purpose** and **applicability.**
+Article 5 determines rights, obligations, and remedies under a rental agreement for a **dwelling unit
+in North Carolina**. Its definition of premises includes a dwelling unit, mobile homes or mobile-home
+spaces, the structure, appurtenant facilities and grounds, and areas normally held out for residential
+tenants. Article 5 does not apply to a **Chapter 42A vacation rental** or to a dwelling furnished
+without charge or rent. Do not use the older shortcut that all “transient occupancy” belongs in
+Chapter 42A: Chapter 42A has its own definition and exclusions, which must be tested separately.
 
-**Applicability**, as the Syllabus states it:
+For Article 5, **“landlord” includes an owner, rental management company, rental agency, or another
+person with actual or apparent authority as an agent to perform the Act's duties**. In the Commission
+Syllabus's words, a broker managing the rental property **is defined as “the landlord” under the Act**.
+That does not erase the owner's duties or make the broker personally liable in every owner-tenant
+dispute. G.S. 42-44(c1), for example, prevents personal liability solely because a managing broker or
+firm failed to identify the owner in the rental agreement. It does mean that a managing broker cannot
+dismiss a statutory operational duty as “only the owner's problem.”
 
-> *"Grounds, area, and facilities normally used for residential tenants, **including mobile homes and
-> mobile home spaces**."*
->
-> **Does not apply to:** *"Commercial or industrial rentals"*; *"Transient occupancy"*; *"Rent-free
-> dwelling units."*
+### A.2 Mutual obligations and nonwaiver
 
-Three exclusions, and each has a working consequence. A broker managing **commercial** space is not
-operating under this Act at all. **Transient occupancy** is carved out here because it is governed
-elsewhere — Part C's Vacation Rental Act. A **rent-free** unit is not a tenancy the Act reaches.
+G.S. 42-41 makes the tenant's duties to pay rent and comply with G.S. 42-43 **mutually dependent** with
+the landlord's G.S. 42-42(a) duties. That mutuality does not create a self-help remedy for either side.
+The tenant may not stop paying merely because the landlord breached, and the landlord may not remove
+the tenant without the statutory process.
 
-#### Waiver is prohibited
+**Waiver of Act is prohibited.** G.S. 42-42(b) says a tenant's explicit or implicit acceptance of
+noncompliant premises does not release the landlord. The parties may later make a separate written,
+adequately supported agreement for the tenant to perform specified work, but not to evade the Act.
+A lease clause stating “tenant accepts the unit as is and waives all repair rights” therefore does not
+cancel the landlord's statutory duties.
 
-> *"**Waiver of Act is prohibited.**"*
->
-> **Note:** *"**Requirements of the Act cannot be altered by lease provisions or other agreement between
-> landlord and tenant.**"*
+### A.3 Landlord duties under G.S. 42-42
 
-This is the most important structural fact in Part A and it is examinable at Level 2 — that is, the
-student must **use** it. A lease clause purporting to relieve the landlord of a statutory duty is
-ineffective **even if the tenant signed it, read it, and negotiated it.** The parties cannot contract out.
-A broker who drafts around the Act, or who tells a landlord a clause "handles that," is wrong twice —
-once about the Act and once about the drafting prohibition taught in Module NC-09.
+The landlord must, among other things:
 
-#### Mutual dependence
+- comply with current applicable building and housing codes to the extent those codes apply;
+- make repairs and do what is necessary to put and keep the premises **fit and habitable**;
+- keep common areas safe;
+- maintain and promptly repair supplied or required electrical, plumbing, sanitary, heating,
+  ventilation, air-conditioning, and other facilities and appliances after the tenant gives written
+  notice, except in emergencies;
+- provide and maintain the smoke alarms and qualifying carbon-monoxide alarms required by the statute;
+  and
+- repair or remedy an **imminently dangerous condition** within a reasonable time based on severity
+  after actual knowledge or notice.
 
-> *"**Obligations of landlord and tenant are mutually dependent.**"*
+The statute's dangerous-condition list includes unsafe wiring, floors, steps, ceilings, roofs,
+chimneys or flues; lack of potable water, exterior-door locks, specified ground-level window locks,
+qualifying heat, an operable toilet, or an operable bath or shower; structural rat-entry defects; and
+specified standing-water, sewage, flooding, mosquito, or mold conditions. The broker's response is not
+to promise a universal number of hours. It is to document notice, triage an emergency, notify the
+owner, arrange authorized work, preserve communications, and escalate a disputed legal issue.
 
-That phrase is doing real work, and it sets up A.1.g. Mutual dependence means the duties run together —
-but the Commission immediately limits what a tenant may do about a landlord's breach, and the limit is
-absolute.
+### A.4 Tenant duties under G.S. 42-43
 
-#### Landlord's and tenant's statutory duties
+The tenant must keep the occupied area as clean and safe as conditions permit; dispose of waste safely;
+keep plumbing fixtures reasonably clean; comply with applicable tenant code obligations; avoid
+deliberate or negligent damage; avoid disabling required alarms; and notify the landlord in writing
+when an alarm needs replacement or repair. The tenant is responsible for damage in the tenant's
+exclusive control except ordinary wear, acts of the landlord or agent, defective supplied products or
+authorized repairs, acts of noninvitee third parties, and natural forces. Except in emergencies, the
+landlord must give written notice of a tenant breach of these statutory duties.
 
-The Commission lists **landlord's statutory duties** and **tenant's statutory duties** as subtopics, and
-states one thing about the landlord's:
+**Application.** A tenant reports a failed heating system in writing during winter. The manager records
+the report, determines whether emergency action is required, promptly communicates and arranges an
+authorized repair. The manager does not answer by pointing to an “as-is” clause. If evidence instead
+shows the tenant deliberately destroyed the equipment, the repair duty and the allocation of actual
+cost are separate questions; document both and do not use either as permission for self-help eviction.
 
-> **Note:** *"**Primary duty of landlord is implied warranty of habitability.**"*
+### A.5 Remedies, rent withholding, and constructive eviction
 
-**The individual statutory duties are in NCGS 42, Article 5, which this project has not read.** This
-module states the Commission's characterisation — the primary duty is the implied warranty of
-habitability — and **states no enumerated duty, repair standard or response time.** Instructors deliver
-the enumerated duties from the statute's own text.
+Rights and duties under Chapter 42 may be enforced by civil action. The Commission Syllabus also
+teaches damages, recovery of some rent paid while premises were uninhabitable, and the common-law
+doctrine of constructive eviction. The critical statutory limit is G.S. 42-44(c): a tenant is
+**prohibited from unilaterally withholding the rent** before a court determines a right to do so.
 
-#### A.1.g Tenant remedies for breach by landlord
+Constructive eviction is not a licence to remain in possession rent-free. It generally concerns
+substantial interference attributable to the landlord that makes continued occupancy untenable and a
+tenant's decision to vacate. The Commission directs that a tenant obtain legal advice before vacating
+and stopping future rent because a court may need to determine whether the doctrine actually ended the
+rent obligation. A broker should never guarantee that a fact pattern meets the doctrine.
 
-Three, transcribed:
+Use this decision sequence:
 
-> *"**Tenant is prohibited from unilaterally withholding the rent until a court grants that right.**"*
->
-> *"Tenant can **bring an action against the landlord for damages, including the recovery of all or part
-> of past rents paid while the unit was uninhabitable.**"*
->
-> *"**Common Law Doctrine of Constructive Eviction.**"*
+1. **Document** the condition, notice, lease terms, repair history, and who controls the affected area.
+2. **Do not tell the tenant to withhold rent.** Explain the statutory no-unilateral-withholding rule.
+3. **Do not give the owner self-help advice.** Use the statutory court route if possession is sought.
+4. **Arrange authorized repair and mitigation** consistent with agency authority and safety.
+5. **Refer disputed remedies to counsel.** A broker can identify the issue, not adjudicate it.
 
-Put the first two side by side, because together they are the whole point. A tenant **cannot** stop
-paying rent on their own authority. A tenant **can** sue and recover rent already paid for a period when
-the unit was uninhabitable. The remedy is **backward-looking and court-granted**, not self-executing.
+### A.6 Negligence concepts assigned by the Syllabus
 
-This is the practical advice a property manager gives most often and gets wrong most often. A tenant who
-withholds rent because the heat is broken has not exercised a remedy — they have created grounds for
-their own eviction, while keeping the damages claim they already had.
-
-#### A.1.h Broker's duties under the Act
-
-> **Note:** *"**Broker that is managing the rental property for the landlord is defined as 'the landlord'
-> under the Act.**"*
-
-The broker does not stand beside the landlord's obligations as an agent. The broker **is** the landlord
-for the Act's purposes. Every statutory duty in Article 5 attaches to the managing broker directly. A
-broker who says "that is the owner's problem" has misread the statute — under the Act, the broker is the
-one the duty runs against.
-
-### A.2 NC residential eviction laws and procedures
-
-#### A.2.a Residential summary ejectment
-
-> - **Summary ejectment** — the North Carolina eviction procedure.
-> - ***"Self-help eviction is prohibited in NC."***
-> - ***"Seizure of tenant's personal property is prohibited."***
-> - *"**Expedited eviction for criminal activity possible, but legal advice is recommended first.**"*
-
-**Self-help** means changing the locks, removing the door, shutting off utilities, putting belongings on
-the kerb — anything that removes the tenant without a court. It is **prohibited**, and so is **seizing
-the tenant's property.** A property manager who does either has exposed both the landlord and their own
-licence.
-
-The expedited criminal-activity route exists, and the Commission attaches its own caution: **legal advice
-first.** That is consistent with everything Module NC-09 taught about the boundary of brokerage.
-
-#### A.2.b The Act prohibiting retaliatory eviction — NCGS 42, Article 4A
-
-> - **Retaliatory eviction**
-> - *"**Some tenant activities are protected.**"*
-> - ***"Protected 12-month period after occurrence of protected activity."***
->
-> **Note:** *"**There is no requirement for the landlord to renew an expired lease.**"*
-
-The **12-month** figure is the Commission's, transcribed from its Syllabus. The **list of protected
-activities is in the statute**, which this project has not read; this module names the category and does
-not enumerate them.
-
-The Commission's note is the counterweight and it is examinable. Retaliation is prohibited; **renewal is
-not required.** A landlord who simply declines to renew an expired lease has done nothing the Act
-forbids — the protection is against retaliatory action, not a right to perpetual tenancy. The two
-statements are held together, not traded against each other.
-
-#### A.2.c Court procedure
-
-> *"**Statutory eviction procedures initiated in small claims court utilizing the court system must be
-> followed.**"*
-
-**Small claims court** is where a North Carolina summary ejectment begins. The procedure is statutory and
-**must** be followed — which is the same prohibition on self-help stated from the other direction.
-
-#### A.2.d Common law
-
-**Doctrine of Constructive Eviction** — the Commission asks for its **legal concept and purpose** and its
-**general process**, and then states the limit:
-
-> ***"Tenant can never legally withhold rent while in possession of the rental property."***
->
-> **Note:** *"A tenant should be **advised to obtain legal advice before vacating** a rented space and
-> stopping rent payment based on this Doctrine; **a court ruling may be required to eliminate liability
-> for future rent.**"*
-
-The word **never** is the Commission's. Constructive eviction is not a rent-withholding doctrine — it is
-a **vacating** doctrine, and even then the tenant may remain liable for future rent unless a court says
-otherwise. A tenant who stays and stops paying has no protection from it at all.
-
-Note how this repeats A.1.g's rule from a second direction. The Syllabus states the prohibition on
-withholding rent **twice**, in two different places, which is a fair signal of how it is weighted.
-
-**Landlord's liability under the law of negligence.** The Commission states both the exposure and its
-limit:
-
-> **May be held liable for:**
-> - *"**Injury due to lack of maintenance of common areas under the landlord's control**"*
-> - *"**Criminal acts of third persons on leased premises if landlord had reason to know of a threat of
->   harm and did not take reasonable precautions to protect the tenants**"*
->
-> **"Generally not liable for injury sustained in a rental unit under the exclusive occupancy of a
-> tenant."**
-
-The organising idea is **control.** The landlord controls the common areas and answers for them. The
-tenant has exclusive occupancy of the unit, and the landlord generally does not answer for what happens
-inside it. The criminal-acts branch is the case where the landlord's knowledge supplies what control
-alone would not: **reason to know of a threat**, plus **failure to take reasonable precautions.** Both
-elements, not either.
+The Commission asks students to apply these general principles: a landlord may be liable for injury
+caused by a lack of maintenance in a common area under the landlord's control, and may be liable for
+criminal acts of third persons when the landlord had reason to know of a threat and failed to take
+reasonable precautions. A landlord is generally not liable for injury inside a unit under the tenant's
+exclusive occupancy. These are **general common-law teaching principles**, not a promise of the result
+in a particular case. Control, notice, foreseeability, conduct, causation, contract terms, and current
+case law matter. Preserve facts and refer an injury or threat question to counsel and appropriate
+emergency authorities.
 
 ---
 
-## B. NC Tenant Security Deposit Act — NCGS 42, Article 6
+## B. Recovering possession: court process, not self-help
 
-The Commission's opening note, transcribed:
+### B.1 Article 2A prohibits self-help and distraint
 
-> *"**Any owner of residential rental property located in NC must comply with this Act, even if not a
-> licensed broker.**"*
+G.S. 42-25.6 permits a residential tenant to be evicted, dispossessed, or otherwise actually or
+constructively removed **only** through Article 3 or Article 7 procedure. Therefore **self-help
+eviction is prohibited in NC**. Changing locks, disabling utilities, removing doors, or physically
+excluding a tenant without the lawful writ is not a substitute for a court case.
 
-The Act is not a licensing rule. It binds **owners**, licensed or not. A broker explaining it to an owner
-client is explaining the owner's own obligation, not the brokerage's.
+G.S. 42-25.7 prohibits **distress and distraint**. A landlord does not gain a general right to seize a
+tenant's personal property as leverage for rent. G.S. 42-25.9 and G.S. 42-36.2 contain narrow rules for
+abandoned property and property remaining after execution of a writ. The safe operational rule is:
+do not touch, withhold, sell, or discard the property unless the precise statute and procedural facts
+have been verified. Unauthorized removal or interference can create actual-damages liability.
 
-### B.1 Holding of the tenant security deposit (TSD)
+### B.2 Ordinary summary ejectment — Article 3
 
-Two options for an owner-landlord, and the Commission states both:
+Article 3 provides the ordinary **summary ejectment** route. G.S. 42-26 identifies grounds including a
+tenant holding over after expiration, an act or omission that ends the estate under the lease, and
+specified rent-arrearage circumstances. A landlord seeking possession files a complaint. The clerk
+issues a summons with an appearance date no more than seven days after issuance, excluding weekends
+and legal holidays. Service and hearing follow the statute; a magistrate decides whether the plaintiff
+proved entitlement to possession.
 
-> a. *"Must be held in a **properly designated trust or escrow account in a federally insured depository
-> or trust institution authorized to do business in NC**"* — **or**
->
-> b. *"**Owner-landlord must furnish a bond in the amount of the deposit** from a licensed insurance
-> company authorized to do business in NC"*
+That overview is not a universal notice checklist. Lease terms, subsidized housing, federally protected
+tenancies, bankruptcy, fair housing, domestic-violence protections, and the precise ground may add or
+change requirements. A broker should use the current court form and counsel-approved process, never
+construct a custom eviction timeline from memory.
 
-And then the narrowing that applies to brokers:
+### B.3 Criminal-activity proceedings — Article 7
 
-> c. ***"Broker working as property manager for the landlord does not have the option of providing a
-> bond"*** *[Commission Rule 58A .0116]*
+Article 7 creates a civil route for drug trafficking and other defined criminal activity that threatens
+health, safety, or peaceful enjoyment. It permits complete, partial, and conditional relief, but it
+also contains defenses and exemptions. A criminal conviction is not always a prerequisite, and an
+isolated-incident argument is not by itself a complete defense. The Syllabus correctly warns that
+**expedited eviction for criminal activity may be possible, but legal advice is recommended first**.
+The manager documents facts, contacts law enforcement when appropriate, protects threatened people,
+and obtains counsel instead of treating an accusation as automatic authority to remove a household.
 
-Read those three together. **An owner has two choices; a broker has one.** A managing broker must hold
-the deposit in a **trust or escrow account.** The bond alternative is closed to them — because the
-Commission's own trust account rules govern a broker's handling of other people's money, and a bond is
-not a trust account.
+### B.4 Retaliatory eviction — Article 4A
 
-**Commission Rule 58A .0116 has not been read by this project.** No trust account deadline, designation
-requirement, record-keeping period or reconciliation interval is stated here from it. Module NC-10
-records the same gap.
+Protected activity includes a good-faith repair complaint to the landlord or agent, a good-faith
+health-or-safety complaint to government, a formal government complaint, a good-faith attempt to
+exercise lease or legal rights, and good-faith involvement with a tenants' rights organization. In a
+G.S. 42-26 summary-ejectment action, the tenant may raise retaliation as an affirmative defense and
+present evidence that the filing was substantially a response to protected activity occurring within
+the prior **12 months**.
 
-### B.2–B.4 Accounting, permitted uses, and maximum amounts
+The 12-month period is not an immunity from every lawful eviction. G.S. 42-37.1(c) allows the landlord
+to prevail on specified grounds, including a rent or substantial-covenant breach that is the actual
+reason for eviction; holdover after a definite term when the tenant had no renewal option; a condition
+primarily caused by the tenant or household; qualifying work requiring complete displacement; a
+good-faith notice to quit given before the protected act; or specified good-faith recovery at the end
+of the term for owner occupancy, major work, or at least six months' withdrawal from rental use.
 
-The Commission lists three subtopics:
+The Syllabus note that there is no requirement to renew an expired lease must be read through those
+statutory conditions. It is not permission to disguise retaliation as nonrenewal. A manager should
+build a dated file showing the protected activity, decision date, actual business reason, lease status,
+and counsel review. If the court finds retaliation, it denies ejectment, although rent and other proper
+relief may still be awarded. The statutory rights cannot be waived.
 
-- **Accounting to the tenant**
-- **Permitted uses of TSDs**
-- **Maximum TSD amounts** — broken out by tenancy type:
-  - **Week-to-week tenancy**
-  - **Month-to-month tenancy**
-  - **Terms greater than month-to-month**
-
-> **Instructor note — the figures are not stated here.**
->
-> The Syllabus names these three tenancy categories **without stating the maximum for any of them**, and
-> **NCGS 42, Article 6 has not been obtained by this project.** This module therefore teaches **that the
-> statute sets three different maxima keyed to the term of the tenancy** — which is itself examinable,
-> because it tells the student the answer depends on the term — and **states no number.**
->
-> The same applies to **accounting to the tenant** (the deadline and the itemisation requirement) and to
-> **permitted uses** (what the deposit may lawfully be applied to). **Both are enumerated in the statute
-> and neither is enumerated here.**
->
-> **Instructors deliver B.2, B.3 and B.4 from the current text of NCGS 42, Article 6.** Supplying those
-> figures is part of this course's submission gate.
-
-### B.5 Pet deposits
-
-> *"**Reasonable and nonrefundable pet deposits permitted.**"*
->
-> **Note:** *"**A tenant's service animal is not a pet; therefore, a pet deposit cannot be charged.**"*
-
-Two rules, and the second is a fair housing rule wearing landlord-tenant clothing. Module NC-09 taught
-the federal and state fair housing material; this is where it lands in practice. A **service animal is
-not a pet**, so **no pet deposit** may be charged for it — the deposit rule simply does not reach it. A
-property manager who charges one has not made a leasing error, they have made a discrimination error.
+**Application.** A tenant complained to code enforcement six weeks ago. The owner now asks the manager
+to “get rid of the complainer.” That language and timing create a retaliation issue. The manager does
+not send a notice merely because the lease is nearing expiration. The manager records the instruction,
+checks whether a genuine statutory ground exists, refuses unlawful conduct, and sends the owner to
+counsel. By contrast, documented nonpayment may support an action when nonpayment is the real reason,
+but only the court process may recover possession.
 
 ---
 
-## C. North Carolina Vacation Rental Act — NCGS 42A
+## C. Tenant Security Deposit Act — Chapter 42, Article 6
 
-> **Note:** *"**Act is modeled after the Residential Rental Agreement Act.**"*
+### C.1 Who is covered and how the money is held
 
-Modeled after — not identical to. The Commission's note tells the student where to start reasoning, and
-the differences below are where the reasoning must stop.
+Article 6 applies to persons and entities in the business of renting or managing residential dwelling
+units, excluding single rooms, on a weekly, monthly, or annual basis. Its duties are not limited to
+licensed brokers.
 
-Subtopics the Commission lists: **vacation rental** (the definition); **purpose**; **applicability of the
-Act**; **requirement for vacation rental agreements.**
+G.S. 42-50 gives an owner-landlord two basic custody options:
 
-Recall Part A: the Residential Rental Agreements Act **does not apply to transient occupancy.** This is
-the Act that does.
+1. deposit the security deposit in a trust account with a licensed and federally insured depository
+   institution or a trust institution authorized to do business in North Carolina; or
+2. furnish a bond in the amount of the deposit from an insurance company licensed in North Carolina.
 
-### C.5 Procedures for handling rents and security deposits
+An out-of-state trust account may be used only when the landlord gives the tenant an adequate bond in
+the deposit amount. Within **30 days after the lease term begins**, the landlord or agent must notify
+the tenant of the name and address of the institution holding the deposit or the insurer furnishing
+the bond.
 
-> a. *"Must be deposited into a **trust/escrow account in a federally insured depository or trust
-> institution authorized to do business in NC within **3 banking days of receipt**."*
->
-> b. ***"Posting a bond is not an option, even for an unlicensed landlord."***
+The Commission adds a narrower custody rule for its licensees. A broker working as property manager
+does **not** have the bond option and must handle the money under the Commission trust-account rules.
+Rule 58A .0116 uses a three-banking-day deposit baseline for received trust money, subject to the
+rule's stated exceptions; Rule .0117 governs accounting and monthly reconciliation. Do not confuse the
+owner's statutory bond option with a broker's trust-money obligations.
 
-Compare with Part B and the contrast is the examinable point:
+### C.2 Maximum security deposits
 
-| | **Tenant Security Deposit Act** | **Vacation Rental Act** |
-|---|---|---|
-| Owner may post a bond instead of using a trust account | **Yes** | ***No — "not an option, even for an unlicensed landlord"*** |
-| Managing broker may post a bond | **No** (Rule 58A .0116) | **No** |
-| Deposit timing stated in the Syllabus | *(not stated)* | **Within 3 banking days of receipt** |
+G.S. 42-51(b) sets the maximum by the tenancy period:
 
-Under the Vacation Rental Act **nobody** gets the bond option. The **3 banking days** figure is the
-Commission's, transcribed. Note the unit: **banking** days, not calendar days and not business days as
-that term is used elsewhere.
+| Tenancy | Maximum tenant security deposit |
+|---|---:|
+| week to week | **two weeks' rent** |
+| month to month | **one and one-half months' rent** |
+| term greater than month to month | **two months' rent** |
 
-### C.6 Tenant protection when the rental property is sold
+The comparison is based on the rental term, not merely how the tenant happens to pay. For a true
+twelve-month lease at $1,800 per month, the maximum is **$3,600**. For a month-to-month tenancy at the
+same rent, it is **$2,700**. For a week-to-week tenancy at $450 per week, it is **$900**.
 
-The Commission lists **seller requirements** and **requirements of the new owner.** A vacation rental
-booked before a sale does not simply evaporate when the property changes hands, and the Act allocates
-duties to both the old and the new owner. **The specific requirements are in NCGS 42A and are not stated
-here.**
+### C.3 Permitted uses
 
-### C.7 Expedited eviction proceedings
+The security deposit may be applied only to the uses listed in G.S. 42-51, including possible unpaid
+rent and specified utility costs; damage including damage to required alarms; actual damage from
+failure to complete the rental period subject to statutory exceptions; qualifying unpaid bills that
+become liens; reasonable re-rental costs after breach, including qualifying broker fees; removal and
+storage costs after summary ejectment; court costs; and fees authorized by G.S. 42-46.
 
-Listed as its own subtopic. The Vacation Rental Act has its own expedited route, distinct from the
-summary ejectment procedure in Part A.
+The deposit is not a penalty fund. A landlord may not deduct for **ordinary wear and tear** or retain
+more than actual damage. Every proposed deduction should be tied to a statutory category and supported
+by dated condition evidence, invoices or reasonable estimates, and the ledger.
 
-### C.8 Landlord and tenant duties
+### C.4 Accounting and transfer
 
-> a. *"**Most are similar to those under Residential Rental Agreement Act.**"*
->
-> b. *"**Landlord must provide the property in 'fit and habitable condition'** or:*
-> - *"**Substitute a reasonably comparable property in such condition**, or"*
-> - *"**Give full refund of all payments made by the tenant**"*
->
-> c. ***"Any automatic forfeiture of TSD due to a breach by the tenant is prohibited."***
+After termination and delivery of possession, the landlord must mail or deliver a written itemization
+of damage and the remaining balance within **30 days**. If the claim cannot yet be determined, provide
+an interim accounting within 30 days and a final accounting within **60 days**. If the tenant's address
+is unknown, after 30 days the landlord may apply permitted deductions and must hold the balance for the
+tenant for at least **six months**.
 
-Part b is a genuine structural difference from Part A and it fits the subject matter. A residential tenant
-whose unit is uninhabitable has the remedies in A.1.g — an action for damages, and constructive eviction.
-A **vacation** tenant arriving for a one-week stay cannot litigate; the Act therefore gives the landlord
-a three-way obligation with two immediate outs: **make it habitable, substitute a comparable property, or
-refund everything paid.**
+When the landlord's interest ends by sale, assignment, death, receivership, or otherwise, G.S. 42-54
+requires action within **30 days**: transfer the remaining deposit after lawful deductions to the
+successor and notify the tenant by mail of the transfer and successor's name and address, or return the
+remaining deposit to the tenant.
 
-Part c matters to a property manager writing a rental agreement. **Automatic forfeiture clauses are
-prohibited** — which is the Part A waiver principle appearing again. The agreement cannot create a
-consequence the Act forbids.
+Willful noncompliance with deposit, bond, or notice requirements voids the landlord's right to retain
+the deposit. A tenant may sue for accounting, the balance, resulting damages, and potentially attorney
+fees on a judicial finding of willful noncompliance.
 
-### C.9 Mandatory evacuations: refunds and insurance
+### C.5 Pet fees and assistance animals
 
-Listed as its own subtopic. On the North Carolina coast this is not a theoretical topic. **The refund
-rules and the insurance treatment are in NCGS 42A and are not stated here.**
+G.S. 42-53 permits a **reasonable, nonrefundable fee for pets**. The statute calls it a fee, not an
+automatic damage forfeiture. The Commission's exam note says a **service animal is not a pet** and a
+pet deposit cannot be charged for it. In housing, the federal Fair Housing Act also reaches qualifying
+assistance animals beyond the ADA's narrower public-accommodation service-animal definition.
+
+Do not label an assistance-animal charge a “pet fee” to evade that rule. A housing provider may apply
+ordinary, nondiscriminatory security-deposit rules and may seek compensation for actual damage under
+applicable law, but may not impose a pet fee or pet deposit because of the assistance animal. Process
+reasonable-accommodation requests under the fair-housing workflow taught in Modules NC-09 and NC-15.
 
 ---
 
-## D. Property management contracts
+## D. Vacation Rental Act — Chapter 42A
 
-> **Note:** *"**Per Commission Rule 58A .0104(a), all property management agreements must be in writing
-> from inception of the relationship.**"*
+### D.1 Coverage and written agreement
 
-Compare with Module NC-08. A **buyer** agency agreement may begin orally in North Carolina and be reduced
-to writing later, subject to the rule's conditions. A **property management** agreement may not. **In
-writing from inception** — there is no oral phase.
+A **vacation rental** is residential property rented for vacation, leisure, or recreation for fewer
+than **90 days** by a person who has a permanent residence to which the person intends to return.
+Chapter 42A does not apply to hotels and similar Chapter 72 lodging, business or employment travel,
+renters with no other primary residence, or nominal-consideration rentals.
 
-**Commission Rule 58A .0104 has not been read by this project.** This module states the Commission's
-own characterisation of subsection (a), transcribed above, and states **no other requirement of that
-rule** — no required term, no required provision, no retention period.
+Every covered vacation rental requires a written vacation rental agreement. It becomes accepted by
+the tenant's signature, payment after receipt of the agreement, or taking possession after receipt.
+The agreement must carry the statutory conspicuous notice and describe the handling of funds,
+permitted fees, transfer rights, expedited eviction, evacuation rights, and the other obligations
+listed in G.S. 42A-11. A broker's nonconforming or missing agreement can be an unfair trade practice and
+can bar that broker from using the expedited-eviction procedure.
+
+### D.2 Advance funds and security deposits
+
+Advance payments other than a security deposit must be placed in a qualifying trust account no later
+than **three banking days after receipt**. Before occupancy, no more than **50% of total rent** may be
+disbursed, apart from expressly authorized third-party charges for tenant benefits and permitted fees.
+The balance stays in trust until tenancy begins, a material breach supports actual damages, the funds
+are refunded, or a statutory transfer occurs. Taxes and security deposits are not disbursed before
+termination or material breach except as a refund.
+
+The agreement identifies the depository institution and the tenant may reasonably request a
+pre-occupancy accounting. Vacation-rental security deposits are generally subject to Article 6, but
+**posting a bond is not an option**, even for an unlicensed landlord. The deposit must be applied,
+accounted for, or refunded within **45 days after the tenancy concludes**. Automatic forfeiture of all
+or part of the deposit for breach is prohibited; only actual damages and other lawful deductions may
+be applied.
+
+### D.3 Sale or other transfer of the property
+
+For a voluntary transfer, the new owner takes subject to a vacation rental agreement that ends no
+later than **180 days after the new owner's interest is recorded**. A later-ending agreement is
+enforceable against the new owner only if the new owner agrees in writing, although the tenant has the
+statutory refund right.
+
+Before contracting to sell, the owner discloses the booked rental periods to the buyer. No later than
+**10 days after transfer**, the former owner gives the buyer the tenants' names and addresses and
+copies or permitted standard-form extracts of each agreement, subject to the Act's management-agent
+exception. No later than **20 days after transfer**, the buyer or agent gives each tenant written
+notice of the transfer, recording date, occupancy right, and refund right, subject to the Act's
+continuing-agent exception. Within **30 days**, advance rent and remaining fees go to the successor for
+agreements being honored, or back to the tenant for a later-ending agreement not accepted by the
+successor. Security deposits follow G.S. 42A-18.
+
+### D.4 Expedited eviction for stays of 30 days or less
+
+The special expedited proceeding is available only for a covered vacation rental of **30 days or
+less** and only on the listed grounds: holdover; a material breach that terminates the tenancy under
+the agreement; failure to pay required rent; or possession obtained by fraud or misrepresentation.
+Only possession is decided; other disputes belong in a separate civil action.
+
+Before filing, the landlord or broker gives at least **four hours' notice to quit**, orally or in
+writing. If reasonable personal efforts fail, written notice may be posted on the front door. The
+complaint and summons are then filed and served as the statute provides. The magistrate hearing occurs
+not sooner than **12 hours** and not later than **48 hours** after service. The plaintiff must prove the
+30-day-or-less term, a conforming accepted agreement, a statutory ground, and the notice. Abuse of the
+procedure without a good-faith belief in statutory grounds can be both an unfair trade practice and a
+Class 1 misdemeanor.
+
+### D.5 Habitability and broker responsibilities
+
+The vacation-rental landlord must comply with applicable codes; keep the property fit and habitable;
+keep common areas safe; maintain supplied systems and major appliances after written notice; and meet
+the smoke- and carbon-monoxide-alarm rules. The duties cannot be waived.
+
+If at the start of occupancy the property cannot be supplied in fit and habitable condition, the
+landlord or broker must provide a reasonably comparable substitute in that condition or refund **all
+payments**, subject to the separate evacuation rule. A managing broker follows the written agency
+agreement, markets lawfully, notifies the owner of necessary repairs and follows authorized repair
+directions, and verifies required alarms and recurring battery duties.
+
+### D.6 Mandatory evacuation
+
+When State or local authorities order a mandatory evacuation covering the property, the tenant must
+comply. The default rule is a prorated refund of rent, taxes, and other occupancy-condition payments
+for nights the tenant cannot occupy. The tenant is not entitled to that statutory refund when, before
+possession, the tenant refused qualifying insurance offered by the landlord or broker, or purchased
+such offered insurance. The agreement must explain these rights and obligations.
+
+---
+
+## E. Property management agreements and money controls
+
+Rule 58A .0104(a) requires an agreement to provide brokerage services for a property owner to be
+**express and in writing from formation of the agency relationship**. The narrow pre-offer window for
+an unwritten agreement applies to a buyer or tenant, not to an owner-landlord. Therefore a property
+manager does not begin leasing, advertising, collecting money, or arranging tenancy first and “paper
+the file later.”
+
+The written agreement identifies the parties, authority, compensation and services; the broker then
+acts within that authority. Money belonging to others is separately controlled by Rules .0116 and
+.0117 and the applicable statute. A property-management agreement cannot convert trust money into the
+broker's operating money, waive habitability, create an unauthorized deposit penalty, or authorize
+self-help eviction.
+
+### Integrated property-manager file check
+
+Before accepting a management assignment, verify and document:
+
+- the owner and the broker's written authority from inception;
+- whether the occupancy is Article 5 residential, Chapter 42A vacation rental, or outside both;
+- the lease or vacation-rental agreement and required notices;
+- trust-account ownership, deposit timing, depository notice, ledgers, and reconciliation;
+- the lawful security-deposit maximum and any proposed pet charge;
+- a maintenance, emergency, alarm, and after-hours response workflow;
+- fair-housing accommodation and nondiscrimination procedures;
+- the court-and-counsel path for possession and tenant property; and
+- sale-transfer and booked-tenancy controls when relevant.
+
+## Application lab — one file, six decisions
+
+An owner hires a broker to manage a furnished beach house. A family with a permanent home elsewhere
+books a seven-night vacation for $4,000 and pays in full. The broker has an oral understanding with the
+owner, puts the money temporarily in the operating account, and plans to disburse it all to the owner.
+The owner then accepts a sale closing in 45 days, tells the broker to cancel the reservation, and says
+the agreement will forfeit the tenant's entire deposit. The arriving tenant later reports that the
+property has no working heat.
+
+**Correct analysis:**
+
+1. Property-management authority for the owner must be express and written **from formation**; the
+   broker should not have begun performance on an oral owner agreement.
+2. The facts fit a Chapter 42A vacation rental: residential, leisure purpose, fewer than 90 days, and
+   a tenant with another permanent residence.
+3. Advance rent belongs in the qualifying trust account within three banking days. Before occupancy,
+   ordinary rent disbursement is capped at 50%, subject to the statute's express exceptions.
+4. A reservation ending within 180 days after recording ordinarily binds the voluntary transferee.
+   The seller and buyer then perform the 10-, 20-, and 30-day disclosure, notice, and fund-transfer
+   steps as applicable; cancellation is not automatic.
+5. Automatic security-deposit forfeiture is prohibited. Actual lawful deductions require evidence and
+   accounting.
+6. At occupancy, provide the property fit and habitable, substitute a reasonably comparable property,
+   or refund all payments. Document and escalate; do not improvise a waiver.
 
 ---
 
 ## Required Activities in this section
 
-**The Commission prescribes no Required Activity for Section XIV.** Every other section of this Syllabus
-carries at least one; this one carries none. Instructors are still bound by the **Level 2** assignment
-for the entire section — the material must be taught to application standard — and by the general
-requirements of the Syllabus.
+**The Commission prescribes no Required Activity for Section XIV.** That does not lower the
+instructional standard: every subtopic remains Level 2 and the assessment uses fact patterns.
 
 ## Module NC-14 engagement check
 
-Eleven items, delivered as in Module NC-01. The 80 percent engagement threshold and the 100 percent
-applied threshold are **StateCourse standards**; the **75 percent** end-of-course standard is the
-Commission's, under Commission Rule 58H .0207 as the Syllabus quotes it.
-
-Because the entire section is **Level 2**, every item in this module is situational — a fact pattern with
-a decision — rather than a definition. Items test: the Act's exclusions; the waiver prohibition; the
-broker-is-the-landlord rule; the prohibition on unilateral rent withholding; the prohibitions on
-self-help eviction and property seizure; the 12-month retaliation period against the no-renewal-required
-note; constructive eviction's vacating requirement; the control principle in landlord negligence; the
-bond option and who does *not* have it under each Act; the service animal rule; the 3-banking-day
-vacation rental deposit; the three-way habitability obligation; and the writing-from-inception rule.
-
-**No item states or requires a maximum deposit amount, an accounting deadline, a permitted use, a notice
-period or a court deadline**, because this project has not read the statutes that set them.
-
----
+Eleven items are delivered in the course engine: one integrated applied scenario, five engagement
+items, and five remediation items. The 80 percent engagement threshold and 100 percent applied
+threshold are StateCourse controls; the Commission's end-of-course examination standard remains
+separate.
 
 ## Instructor source note for Module NC-14
 
-Drawn from **Section XIV** of the Commission's Prelicensing Course Syllabus, March 2024 Edition amended
-May 2026, read on 2026-08-20. Every Instructor Note and structural statement above is **transcribed from
-the Syllabus.**
+Topic map and quoted exam notes: **NCREC Prelicensing Course Syllabus, March 2024 Edition amended May
+2026, Section XIV**. Current legal detail was checked on **2026-09-07** against:
 
-**Not read in their own text, and therefore not the source of any statement in this module:** **NCGS
-Chapter 42, Article 5** (Residential Rental Agreements Act); **NCGS Chapter 42, Article 4A** (retaliatory
-eviction); **NCGS Chapter 42, Article 6** (Tenant Security Deposit Act); **NCGS Chapter 42A** (Vacation
-Rental Act); the **North Carolina summary ejectment statutes**; **NCGS Chapter 93A**; and **21 NCAC 58A**,
-including **Rule .0116**. Current **Rule 58A .0104(a)** has been read and reconciled for the
-writing-from-formation property-management rule used in this module.
+- **G.S. Chapter 42, Article 2A:** §§ 42-25.6 through 42-25.9;
+- **Article 3:** §§ 42-26 through 42-36.3;
+- **Article 4A:** §§ 42-37.1 through 42-37.3;
+- **Article 5:** §§ 42-38 through 42-46;
+- **Article 6:** §§ 42-50 through 42-56;
+- **Article 7:** §§ 42-59 through 42-76;
+- **G.S. Chapter 42A:** especially §§ 42A-3, -4, -10, -11, -15 through -19, -23 through -27, and
+  -31 through -36; and
+- **21 NCAC 58A .0104, .0116, and .0117.**
 
-**The 12-month retaliation period and the 3-banking-day vacation rental deposit requirement are
-transcribed from the Commission's Syllabus.** **No maximum security deposit, pet deposit limit,
-accounting deadline, permitted use, notice period, filing fee, damages measure or eviction timeline is
-stated anywhere in this module**, because the statutes setting them have not been obtained. Where one is
-needed, the module names the statute and routes there.
+These are current-law teaching controls, not an approval claim. Recheck the official texts and current
+court forms before filing, controlled release, and live transaction use.
 
-**Obtaining NCGS Chapters 42 and 42A and the remaining applicable 21 NCAC 58A text, and completing Parts A.1.e, A.1.f, A.2.b, B.2, B.3,
-B.4, C.3, C.4, C.6, C.7, C.9 and D from their own text, is a submission gate for this course.**
+**Source limitation:** this module does not replace transaction-specific lease review, subsidized-
+housing requirements, local codes, current court forms, or legal advice. The complete common-law case
+history behind the Syllabus's negligence and constructive-eviction summaries was not reproduced.

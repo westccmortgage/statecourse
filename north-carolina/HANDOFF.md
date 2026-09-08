@@ -70,13 +70,20 @@
   shortcuts. The official SF5 completed appraisal, legacy Form 1004 and transition timeline are
   retained with all 28 teaching-artifact pages rendered and reviewed; all five Section XIII Required
   Activities are now delivered.
+- Module NC-14 now reconciles Chapter 42 Articles 2A, 3, 4A, 5, 6 and 7; Chapter 42A; and Rules
+  58A .0104, .0116 and .0117. It replaces the former statute-unavailable placeholders with actual
+  duties, court-only removal, retaliation, security-deposit, vacation-rental and property-management
+  rules. The assessment now tests the missing deposit maxima and accounting periods, qualifies the
+  expired-lease retaliation shortcut, distinguishes the 90-day vacation definition from the 30-day
+  expedited-possession threshold, and applies the 180-day transfer rule. Section XIV prescribes no
+  separate Required Activity.
 
 - Official-source Phase 0 covers personal broker licensure, instructor qualification, education
   provider, education director, PPD, course approval, distance delivery, completion/proctoring,
   reporting, records, renewals, postlicense/CE products, foreign-LLC route and current market scale.
 - The machine manifest records authority class, exact URL, revision/effective date, retrieval date,
   pinpoint, evidence, supersession check and source-integrity state for each source.
-- Eighty-one claims are separated into 77 confirmed, one interpretation and three regulator-confirmation states.
+- Eighty-seven claims are separated into 83 confirmed, one interpretation and three regulator-confirmation states.
 - Filing index, provider/course datasheets, personal path, instructor dossier, regulator email draft,
   PPD draft, distance control plan, course guide, records SOP, timing report, product roadmap and
   certificate specimen are prepared.
@@ -112,9 +119,9 @@ the record; equivalency therefore needs NCREC preclearance.
 Rule 58H .0401 measures self-paced course time at 225 words per minute plus actual audio/video
 duration. Rule .0101(7) defines an instructional hour as 50 instructional minutes plus 10 break
 minutes, so the 72-hour non-exam syllabus allocation is 3,600 actual instructional minutes, not the
-previously reported 4,320. The sixteen curriculum files contain 66,571 audit-tokenized words, or at
-most 295.87 minutes/4.93 elapsed hours; they include nonstudent author notes. Adding the entire
-question-bank source gives a generous 387.41-minute/6.46-hour ceiling including code. Neither is validated
+previously reported 4,320. The sixteen curriculum files contain 67,692 audit-tokenized words, or at
+most 300.85 minutes/5.01 elapsed hours; they include nonstudent author notes. Adding the 20,566-word
+question-bank source gives a generous 392.26-minute/6.54-hour ceiling including code. Neither is validated
 student time. There is no media ledger. Planned “72-hour” module labels prove nothing. The course
 must not be submitted or advertised as 75 hours until its student-visible content and unit/media
 ledger actually demonstrate the required time.
@@ -181,19 +188,19 @@ The Module NC-13 activity capture is a separate retained teaching-evidence set: 
 28 reviewed page renders and the full 302-page publisher archive. It does not make the unrelated
 source-ledger capture complete.
 
-The September 7 Module NC-13 checkpoint is **131/131 focused North Carolina, source-integrity and
+The September 7 Module NC-14 checkpoint is **132/132 focused North Carolina, source-integrity and
 all-course free-practice tests passing**, including every lesson and every answer choice in all 31
 catalog courses. With the bundled Python runtime on `PATH`, the complete repository run is
-**1,304/1,304 passing**. The same run under the host's bare `python3` fails PDF-reading tests because
+**1,305/1,305 passing**. The same run under the host's bare `python3` fails PDF-reading tests because
 that interpreter lacks `pypdf`; this is an environment-path failure, not a course result.
 
 PDF extraction needs Python with `pypdf`; set `NC_PYTHON` to that interpreter when it is not `python3`.
 The branch was first pushed at commit `748a8bbde4adcaa39ba325c8fb6235bfd6887d50`; the remote branch
-currently contains work through Module NC-05. Modules NC-06 through NC-13 remain local because the
+currently contains work through Module NC-05. Modules NC-06 through NC-14 remain local because the
 existing external-data authorization names Texas, Florida and Michigan but not North Carolina. Do not
 push North Carolina repository data without explicit North Carolina authorization. The strict
 `--require-source-capture` command
 intentionally exits 1 while sources are incomplete;
 the normal command checks structure and reports source failures without claiming a lock. These are
 offline as-of-capture checks; re-fetch before filing. Current focused tests and complete repository
-test count are recorded after the Module NC-13 validation run.
+test count are recorded after the Module NC-14 validation run.

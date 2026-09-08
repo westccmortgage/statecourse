@@ -9,9 +9,9 @@ const read = (path) => readFileSync(new URL(`../${path}`, import.meta.url), "utf
 
 test("manifest has a dated stable identity and only allowed claim statuses", () => {
   assert.equal(NC_CONTROL_DATE, "2026-09-07");
-  assert.equal(NC_MANIFEST_VERSION, "NC-PHASE0-2026-09-07-v12");
-  assert.equal(NC_SOURCES.length, 135);
-  assert.equal(NC_CLAIMS.length, 81);
+  assert.equal(NC_MANIFEST_VERSION, "NC-PHASE0-2026-09-07-v13");
+  assert.equal(NC_SOURCES.length, 142);
+  assert.equal(NC_CLAIMS.length, 87);
   for (const claim of NC_CLAIMS) assert.ok(["confirmed", "interpretation", "needs-regulator-confirmation"].includes(claim.status), claim.id);
 });
 
@@ -38,6 +38,15 @@ test("Module NC-13 valuation, appraisal and current URAR claims resolve to offic
     assert.ok(northCarolinaSourceById(id), id);
   }
   for (const id of ["NC-C77", "NC-C78", "NC-C79", "NC-C80", "NC-C81"]) {
+    assert.ok(NC_CLAIMS.some((claim) => claim.id === id), id);
+  }
+});
+
+test("Module NC-14 landlord-tenant claims resolve to current statutes and Commission rules", () => {
+  for (const id of ["NC-STAT-42-ARTICLE2A", "NC-STAT-42-ARTICLE3", "NC-STAT-42-ARTICLE4A", "NC-STAT-42-ARTICLE5", "NC-STAT-42-ARTICLE6", "NC-STAT-42-ARTICLE7", "NC-STAT-42A", "NC-RULE-58A-.0104", "NC-RULE-58A-.0116", "NC-RULE-58A-.0117"]) {
+    assert.ok(northCarolinaSourceById(id), id);
+  }
+  for (const id of ["NC-C82", "NC-C83", "NC-C84", "NC-C85", "NC-C86", "NC-C87"]) {
     assert.ok(NC_CLAIMS.some((claim) => claim.id === id), id);
   }
 });

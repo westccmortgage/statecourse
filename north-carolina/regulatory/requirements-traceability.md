@@ -79,6 +79,12 @@ Claim IDs resolve to `config/north-carolina/regulatory-manifest.mjs`.
 | UAD 3.6 transition dates | Fannie Mae May 5, 2026 timeline | NC-C79 | Module NC-13; delivery-date source gate | dual-production and mandate/legacy-revision dates stated with recheck warning |
 | completed URAR and reconciliation activities | Fannie Mae official SF5 sample; local all-page review | NC-C80 | Module NC-13 Required Activities | exact 20-page extraction retained; all pages reviewed; reconciliation located and taught |
 | listing/pending versus settled-sale evidence | Fannie Mae official SF5 report | NC-C81 | Module NC-13 comparison and assessment | listing/pending evidence separated from closed-sale comparison grid; five-sale sample preserved |
+| Article 5 residential duties and remedies | G.S. 42-38 through 42-46 | NC-C82 | Module NC-14 Article 5 sections and assessment | duties, nonwaiver, broker definition and judicial-withholding limit reconciled |
+| residential eviction and tenant property | G.S. 42 Articles 2A, 3 and 7 | NC-C83 | Module NC-14 court-process sections | self-help/distress barred; ordinary and criminal-activity routes separated |
+| retaliatory eviction | G.S. 42-37.1 through 42-37.3 | NC-C84 | Module NC-14 retaliation section and assessment | 12-month defense applied with protected acts and statutory landlord grounds |
+| tenant security deposits | G.S. 42-50 through 42-55; 58A .0116-.0117 | NC-C85 | Module NC-14 calculations, uses and accounting | formerly missing amounts, deadlines and broker/owner custody distinction supplied |
+| vacation-rental operations | G.S. Chapter 42A | NC-C86 | Module NC-14 vacation-rental sections and assessment | 90/30-day thresholds, money, transfer, eviction, habitability and evacuation separated |
+| property-management formation and trust money | 58A .0104(a), .0116-.0117; Chapters 42 and 42A | NC-C87 | Module NC-14 integrated file check | written owner agency and independent money/statutory limits reconciled |
 
 ## Release rule
 

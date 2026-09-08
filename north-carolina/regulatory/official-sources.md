@@ -1,7 +1,7 @@
 # North Carolina official-source ledger
 
 **Control date:** 2026-09-07
-**Manifest:** `NC-PHASE0-2026-09-07-v12`
+**Manifest:** `NC-PHASE0-2026-09-07-v13`
 **Regulatory status:** Not approved. Enrollment and credit delivery are closed.
 
 The machine-readable controlling record is
@@ -194,6 +194,15 @@ and its publisher cover plus all nineteen report pages were rendered and visuall
 page legacy Form 1004 and one-page May 5, 2026 transition timeline were also reviewed. All five Section
 XIII Required Activities are now delivered; the full copyrighted USPAP text and North Carolina
 Appraisal Board rules remain outside this reviewed boundary.
+
+Module NC-14 was reconciled on September 7 to current Chapter 42, Articles 2A, 3, 4A, 5, 6 and 7;
+Chapter 42A; and Rules 58A .0104, .0116 and .0117. The pass replaces the former source-unavailable
+gate with the actual landlord and tenant duties, the judicial-removal and personal-property boundary,
+protected retaliation activity and statutory exceptions, security-deposit maxima/uses/accounting,
+and vacation-rental agreement, money, transfer, expedited-possession, habitability and evacuation
+rules. It also corrects two unsafe shortcuts: lease expiration is not automatic immunity from a
+retaliation analysis, and the under-90-day vacation-rental definition is not the same as the
+30-day-or-less expedited-eviction threshold.
 
 The live RELINC replaced April 2025 at the same Pearson URL. Its April 2026 edition now agrees with
 Rule 58A .0302 on $105 application and publishes $53 single-section / $63 comprehensive exam fees

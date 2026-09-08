@@ -697,6 +697,19 @@ test("the landlord-tenant rules a property manager must know are stated in Modul
   assert.match(fourteen, /Self-help eviction is prohibited in NC/i);
   assert.match(fourteen, /prohibited from unilaterally withholding the rent/i);
   assert.match(fourteen, /service animal is not a pet/i);
+  assert.match(fourteen, /week to week[\s\S]*two weeks' rent/i);
+  assert.match(fourteen, /month to month[\s\S]*one and one-half months' rent/i);
+  assert.match(fourteen, /interim accounting within 30 days[\s\S]*final accounting within 60 days/i);
+  assert.match(fourteen, /no later than 180 days after the new owner's interest is recorded/i);
+  assert.match(fourteen, /at least four hours' notice to quit/i);
+  assert.match(fourteen, /not sooner than 12 hours[\s\S]*not later than 48 hours/i);
+  assert.match(fourteen, /express and in writing from formation of the agency relationship/i);
+  assert.doesNotMatch(fourteen, /this project has not read|has not been obtained|supplying those figures is part of this course's submission gate/i);
+  const bank = BANK["module-14"];
+  assert.match(bank.applied.choices[0], /cap this deposit at \$3,000/i);
+  assert.match(bank.engagement[2].choices[0], /interim accounting by day 30 and a final accounting by day 60/i);
+  assert.match(bank.remediation[1].choices[0], /ends within 180 days/i);
+  assert.match(bank.remediation[2].choices[0], /30 days or less[\s\S]*four hours/i);
 });
 
 test("the two proration methods and the North Carolina settlement-date rule are stated", () => {
@@ -802,7 +815,8 @@ test("every period in an authored answer or rationale is on the reviewed-source 
     /\b3 ?- ?5 years?\b/i, /\b10-day\b/i, /\b10 days?\b/i, /\bten-day\b/i, /\b60 minutes?\b/i, /\b30-day\b/i, /\b360-day\b/i, /\b365-day\b/i,
     /\b30 days?\b/i, /\b3[- ]days?\b/i, /\bthree[- ]days?\b/i, /\b3\.0 hours?\b/i,
     /\b(eight|8) months?\b/i, /\b(sixteen|16) days?\b/i, /\b(one|1) month\b/i, /\b(nine|9) months?\b/i,
-    /\b(six|6) months?\b/i, /\b18 months?\b/i, /\b180[- ](calendar[- ])?days?\b/i, /\b(two|2) years?\b/i
+    /\b(six|6) months?\b/i, /\b18 months?\b/i, /\b180[- ](calendar[- ])?days?\b/i, /\b(two|2) years?\b/i, /\b(two|2) months?\b/i,
+    /\b(two|2) weeks?\b/i, /\b20 days?\b/i, /\b45 days?\b/i, /\b60 days?\b/i, /\b90 days?\b/i
   ];
   const quantified = /\b(\d+|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|twenty|thirty|sixty|ninety|hundred|hundred and twenty)[\s-]+(business\s+|banking\s+|calendar\s+)?(days?|years?|months?|weeks?)\b/gi;
   for (const id of NORTH_CAROLINA_MODULE_IDS) {
