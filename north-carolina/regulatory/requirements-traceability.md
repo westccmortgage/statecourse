@@ -98,6 +98,8 @@ Claim IDs resolve to `config/north-carolina/regulatory-manifest.mjs`.
 | commercial broker lien | Chapter 44A Article 2 Part 4 | NC-C98 | Module NC-15 lien analysis | written-agreement, performance, filing, service and enforcement controls reconciled |
 | current building-code boundary | OSFM current-code index | NC-C99 | Module NC-15 construction section | 2018 current set identified; syllabus R-values no longer presented as universal table |
 | Section XV form and measurement artifacts | NCREC publication index; retained REC 4.22/4.25/3.40 | NC-C100 | Module NC-15 Required Activities | 33 required-activity pages retained and reviewed; two WWREA pages also reviewed |
+| WWREA form and companion Q&A activity | NCREC REC 4.27/3.45; 58A .0104 | NC-C101 | Module NC-08 Required Activity | both disclosure pages and both brochure pages retained and reviewed; receipt distinguished from agency formation |
+| subdivisions/planned-communities brochure with current-law control | NCREC REC 3.49; Chapters 47F, 136 and 160D | NC-C102 | Module NC-15 subdivision review | both brochure pages retained; older guidance checked against current statutes; approved-plat activity remains separate and outstanding |
 
 ## Release rule
 

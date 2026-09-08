@@ -26,8 +26,8 @@ category in the course.*
 > marketable title and RPOADS exemptions — this module now supplies the current rule from its primary
 > source and separates broker action from attorney, regulator and code-official decisions.
 >
-> **Current proprietary transaction forms, the Commission's subdivisions Q&A brochure, complete code
-> tables and the broader course filing controls remain separate release gates.**
+> **Current proprietary transaction forms, complete project-specific code tables and the broader
+> course filing controls remain separate release gates.**
 
 ## Learning objectives
 
@@ -753,6 +753,32 @@ separately by statute. And the
 plat is not evidence of it. *"Regardless of the age of the subdivision"* forecloses the obvious excuse:
 an old neighbourhood is not thereby a public-street neighbourhood.
 
+### I.7a Official brochure review — context checked against current law
+
+The NCREC Publications page still distributes **REC 3.49, Questions and Answers on: Residential
+Subdivisions and Planned Communities (11/1/19)** in brochure and text-only formats. Both official
+versions are retained; both brochure pages were rendered and reviewed. Because the publication is
+older than the current codification, it is a teaching aid, not the last word on present statutory
+scope.
+
+**Learner reconciliation record:**
+
+| Brochure issue | Current-law action |
+|---|---|
+| Mandatory versus voluntary HOA membership | Read the recorded declaration and chain of title; do not infer obligation from subdivision appearance. |
+| Developer control and association assessments | Identify the declaration, statutory scope and actual voting/assessment records; route validity disputes to counsel. |
+| Preliminary-plat contracting | Apply current G.S. 160D-807 conditions and compare the delivered final recorded plat; a preliminary plat is not final approval. |
+| HOA management and licensing | Determine whether the conduct is brokerage for others or timeshare development; the label “HOA manager” alone does not answer licensure. |
+| Road ownership and maintenance | Verify dedication, formal governmental acceptance and the current maintenance agreement; a public label on a plat is not acceptance. |
+| Common areas | Verify the recorded plat/declaration and title rather than relying on sales imagery or amenities visible on site. |
+
+**Supersession check:** the brochure's compact description of Planned Community Act coverage and
+remedies is not memorized as a complete current rule. Chapter 47F controls scope and association
+remedies; G.S. 160D-807 controls the preliminary/final plat contract sequence; G.S. 136-102.6 controls
+the subdivision-street disclosure. The separate Section III Required Activity calling for an
+approved subdivision plat map remains outstanding: this consumer brochure is not a plat and cannot
+substitute for one.
+
 ### I.8 Onsite septic systems
 
 > a. *"**Strongly recommend soil suitability (perc) test for unimproved land**"* — for a **seller prior to
@@ -885,13 +911,12 @@ statement above is **transcribed from the Syllabus.**
 **Current primary text read:** Chapters **41, 41A, 43, 44A, 47B, 47C, 47E, 47F and 93A Article 4**;
 G.S. **14-395.1, 22-2, 25-9-334, 39-50, 47-18, 47-20.6, 75-1.1, 75-16, 136-102.6 and 160D-807**;
 Rules **58A .0114, .0120 and .1601**, and **58B .0400-.0600**. The official **REC 4.22 (revision
-7/26), REC 4.25 (1/1/15), 2026 Residential Square Footage Guidelines and WWREA form** are retained
-with hashes, extracted text and review of every page. These sources supersede conflicting syllabus
-shorthand.
+7/26), REC 4.25 (1/1/15), 2026 Residential Square Footage Guidelines, WWREA form, WWREA Q&A and
+Residential Subdivisions and Planned Communities Q&A** are retained with hashes, extracted text and
+review of every brochure/form/guide page. These sources supersede conflicting syllabus shorthand.
 
-**Remaining source limitation:** current proprietary contract forms, the Commission's **Residential
-Subdivisions and Planned Communities** Q&A brochure, complete current building-code tables and any
-project-specific permit/code determination remain outside this module. The course does not reproduce
+**Remaining source limitation:** current proprietary contract forms, complete current building-code
+tables and any project-specific permit/code determination remain outside this module. The course does not reproduce
 copyrighted forms beyond the official public NCREC artifacts and does not make a legal title, lien,
 code-compliance or litigation determination.
 

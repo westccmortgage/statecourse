@@ -145,7 +145,7 @@ const REQUIRED_ACTIVITIES = Object.freeze([
   { section: "VII", moduleId: "module-07", activity: "Provide real world examples of each way a real estate contract is terminated and distinguish contract termination from offer termination.", status: "delivered", evidencePath: "north-carolina/curriculum/module-07.md#d2a-required-activity-evidence--contract-termination-versus-offer-termination" },
   { section: "VII", moduleId: "module-07", activity: "Use real world examples to illustrate each agency duty.", status: "delivered", evidencePath: "north-carolina/curriculum/module-07.md#g8a-required-activity-evidence--six-agency-duty-scenarios" },
   { section: "VII", moduleId: "module-07", activity: "Provide examples of agency terminations and exceptions.", status: "delivered", evidencePath: "north-carolina/curriculum/module-07.md#g9a-required-activity-evidence--termination-and-surviving-duty-lab" },
-  { section: "VIII", moduleId: "module-08", activity: "Provide the WWREA Disclosure and the Questions & Answers brochure.", status: "outstanding", blockedBy: "Current NCREC guidance and the public Q&A route were inspected, but the current WWREA disclosure form has not been retained and page-reviewed as a filing artifact." },
+  { section: "VIII", moduleId: "module-08", activity: "Provide the WWREA Disclosure and the Questions & Answers brochure.", status: "delivered", evidencePath: "north-carolina/curriculum/module-08.md#b2b-required-activity-evidence--wwrea-form-and-companion-qa" },
   { section: "VIII", moduleId: "module-08", activity: "Provide examples of when first substantial contact occurs.", status: "delivered", evidencePath: "north-carolina/curriculum/module-08.md#b2a-required-activity-evidence--first-substantial-contact-lab" },
   { section: "VIII", moduleId: "module-08", activity: "Compare and contrast duties owed to clients vs. third parties.", status: "delivered", evidencePath: "north-carolina/curriculum/module-08.md#d3-required-activity-evidence--clientcustomer-duty-lab" },
   { section: "VIII", moduleId: "module-08", activity: "Assign math practice problems, and assign practice problems.", status: "delivered", evidencePath: "north-carolina/curriculum/module-08.md#f3a-required-activity-evidence--calculation-set" },
@@ -183,8 +183,6 @@ const REQUIRED_ACTIVITIES = Object.freeze([
 /* Live source/material dependencies after the 2026-09-04 official-statute/rule Phase 0 pass. */
 const OPEN_SOURCE_DEPENDENCIES = Object.freeze([
   "NCAR/NCBA Offer to Purchase and Contract Standard Form 2-T, its Guidelines, and all standard addenda",
-  "The NCREC Working With Real Estate Agents Questions & Answers brochure; the public WWREA form itself is retained and page-reviewed",
-  "The NCREC Residential Subdivisions and Planned Communities Questions & Answers brochure",
   "Complete current North Carolina building-code tables and project-specific local amendments beyond Module NC-15's OSFM current-code boundary",
   "Remaining course-by-course reconciliation against individual statutes and administrative rules outside the completed Modules NC-01 through NC-15 slices",
   "Dodd-Frank statutory history and federal finance provisions beyond Module NC-12's reviewed current Regulation Z, Regulation X, Regulation B and Regulation V slices",
@@ -197,8 +195,8 @@ const TIMING_EVIDENCE = Object.freeze({
   instructionalMinutesPerHour: 50,
   requiredInstructionalMinutes: REQUIRED_INSTRUCTIONAL_HOURS * 50,
   commissionReadingRateWordsPerMinute: 225,
-  curriculumBaselineWords: 68779,
-  curriculumBaselineMinutes: Number((68779 / 225).toFixed(2)),
+  curriculumBaselineWords: 69379,
+  curriculumBaselineMinutes: Number((69379 / 225).toFixed(2)),
   measuredOn: "2026-09-07",
   mediaDurationLedgerMinutes: 0,
   regulatorFormatOutlineComplete: false,

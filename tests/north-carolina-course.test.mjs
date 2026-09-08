@@ -528,7 +528,7 @@ test("Module NC-07 delivers all contract and agency activities and uses current 
   assert.doesNotMatch(BANK["module-07"].engagement[0].choices[0], /writing|recording|notari/i);
 });
 
-test("Module NC-08 delivers every non-form agency activity and uses current Rule 58A boundaries", () => {
+test("Module NC-08 delivers every agency activity and uses current Rule 58A boundaries", () => {
   const eight = readModule("module-08");
   for (const required of [
     /Required Activity evidence — first-substantial-contact lab/i,
@@ -536,6 +536,8 @@ test("Module NC-08 delivers every non-form agency activity and uses current Rule
     /Required Activity evidence — calculation set/i,
     /Required Activity evidence — distinguish the three listing types/i,
     /Required Activity evidence — tenant-screening decision matrix/i,
+    /Required Activity evidence — WWREA form and companion Q&A/i,
+    /REC 4\.27.*REC 3\.45/is,
     /binds the buyer for a period or restricts the buyer's right to work with another agent/i,
     /properly perfected claim may relate back to first furnishing/i,
     /signature acknowledges receipt and does not itself create agency/i,
@@ -546,10 +548,7 @@ test("Module NC-08 delivers every non-form agency activity and uses current Rule
   assert.doesNotMatch(eight, /mechanic's lien is effective from the first day/i);
   const activities = NORTH_CAROLINA_REQUIRED_ACTIVITIES.filter((activity) => activity.section === "VIII");
   assert.equal(activities.length, 6);
-  assert.equal(activities.filter((activity) => activity.status === "delivered").length, 5);
-  assert.equal(activities.filter((activity) => activity.status === "delivered").every((activity) => activity.evidencePath), true);
-  assert.equal(activities.filter((activity) => activity.status === "outstanding").length, 1);
-  assert.match(activities.find((activity) => activity.status === "outstanding").blockedBy, /WWREA disclosure form/i);
+  assert.equal(activities.every((activity) => activity.status === "delivered" && activity.evidencePath), true);
 });
 
 test("Module NC-09 delivers all practice activities and reconciles current fair-housing and solicitation rules", () => {
@@ -770,10 +769,10 @@ test("Phase 0 supersedes the original statute/rule gap while carrying live cours
   assert.strictEqual(NORTH_CAROLINA_UNREAD_SOURCES, NORTH_CAROLINA_OPEN_SOURCE_DEPENDENCIES);
   assert.ok(NORTH_CAROLINA_OPEN_SOURCE_DEPENDENCIES.length >= 7);
   const joined = NORTH_CAROLINA_OPEN_SOURCE_DEPENDENCIES.join(" | ");
-  for (const source of ["Form 2-T", "Questions & Answers brochure", "building-code tables", "USPAP"]) {
+  for (const source of ["Form 2-T", "building-code tables", "USPAP"]) {
     assert.ok(joined.includes(source), `open dependency list does not name ${source}`);
   }
-  for (const delivered of ["REC 4.22", "REC 4.25", "Residential Square Footage Guidelines"]) assert.ok(!joined.includes(delivered), `${delivered} remains incorrectly open`);
+  for (const delivered of ["REC 4.22", "REC 4.25", "Residential Square Footage Guidelines", "Questions & Answers brochure", "Subdivisions and Planned Communities"]) assert.ok(!joined.includes(delivered), `${delivered} remains incorrectly open`);
   assert.doesNotMatch(joined, /^NCGS Chapter 93A \(Real Estate License Law\)/);
   assert.doesNotMatch(joined, /^21 NCAC 58A, 58B and 58H in their own text/);
 });
@@ -783,8 +782,8 @@ test("planned module labels do not masquerade as validated self-paced timing", (
   assert.equal(NORTH_CAROLINA_TIMING_EVIDENCE.commissionReadingRateWordsPerMinute, 225);
   assert.equal(NORTH_CAROLINA_TIMING_EVIDENCE.instructionalMinutesPerHour, 50);
   assert.equal(NORTH_CAROLINA_TIMING_EVIDENCE.requiredInstructionalMinutes, 3600);
-  assert.equal(NORTH_CAROLINA_TIMING_EVIDENCE.curriculumBaselineWords, 68779);
-  assert.equal(NORTH_CAROLINA_TIMING_EVIDENCE.curriculumBaselineMinutes, 305.68);
+  assert.equal(NORTH_CAROLINA_TIMING_EVIDENCE.curriculumBaselineWords, 69379);
+  assert.equal(NORTH_CAROLINA_TIMING_EVIDENCE.curriculumBaselineMinutes, 308.35);
   assert.ok(NORTH_CAROLINA_TIMING_EVIDENCE.curriculumBaselineMinutes < NORTH_CAROLINA_TIMING_EVIDENCE.requiredInstructionalMinutes);
   assert.equal(getNorthCarolinaCourse().enrollmentStatus, "closed");
   assert.equal(getNorthCarolinaCourse().paymentStatus, "disabled");
@@ -906,6 +905,33 @@ test("Module NC-15 disclosure and square-footage activities have retained all-pa
   const fifteen = readModule("module-15");
   assert.match(fifteen, /total residential living area = 2,292 square feet/i);
   assert.doesNotMatch(fifteen, /has not obtained REC 4\.22|has not obtained the NCREC Residential Square Footage Guidelines|NCGS 47E has not been obtained/i);
+});
+
+test("Modules NC-08 and NC-15 use retained complete NCREC Q&A brochures with current-law boundaries", () => {
+  const capture = new URL("../north-carolina/regulatory/captures/2026-09-07/module-08-15-brochures/", import.meta.url);
+  const review = JSON.parse(readFileSync(new URL("page-reviews.json", capture), "utf8"));
+  assert.equal(review.artifacts.length, 2);
+  assert.equal(review.artifacts.reduce((sum, artifact) => sum + artifact.pages.length, 0), 4);
+  const hash = (url) => createHash("sha256").update(readFileSync(url)).digest("hex");
+  for (const artifact of review.artifacts) {
+    assert.equal(artifact.pageCount, 2, artifact.id);
+    assert.equal(artifact.pages.length, artifact.pageCount, artifact.id);
+    assert.equal(hash(new URL(artifact.file, capture)), artifact.pdfSha256, artifact.id);
+    assert.equal(hash(new URL(artifact.textOnlyCompanion.file, capture)), artifact.textOnlyCompanion.pdfSha256, `${artifact.id} text-only companion`);
+    assert.equal(hash(new URL(artifact.textOnlyCompanion.extractedText, capture)), artifact.textOnlyCompanion.textSha256, `${artifact.id} companion text`);
+    const stem = artifact.file.replace(/\.pdf$/, "");
+    for (const page of artifact.pages) {
+      assert.equal(hash(new URL(`renders/${stem}-${page.number}.png`, capture)), page.sha256, `${artifact.id} page ${page.number}`);
+    }
+  }
+  const wwrea = NORTH_CAROLINA_REQUIRED_ACTIVITIES.find((activity) => activity.activity.includes("WWREA Disclosure"));
+  assert.equal(wwrea?.status, "delivered");
+  assert.match(wwrea?.evidencePath ?? "", /module-08\.md#b2b/i);
+  const plat = NORTH_CAROLINA_REQUIRED_ACTIVITIES.find((activity) => activity.activity.includes("approved subdivision plat map"));
+  assert.equal(plat?.status, "outstanding");
+  const fifteen = readModule("module-15");
+  assert.match(fifteen, /Official brochure review — context checked against current law/i);
+  assert.match(fifteen, /Chapter 47F controls.*G\.S\. 160D-807 controls.*G\.S\. 136-102\.6 controls/is);
 });
 
 test("Module NC-13 appraisal activities are delivered only with retained all-page review evidence", () => {

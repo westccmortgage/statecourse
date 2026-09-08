@@ -67,25 +67,26 @@ NC-06, NC-09, NC-10 and NC-16. The generated free-practice course was rebuilt fr
 
 ## Machine-verifiable state after correction
 
-- Manifest: **NC-PHASE0-2026-09-07-v14**.
-- Sources and claims: **160 sources; 100 claims** — 96 confirmed, one interpretation and three
+- Manifest: **NC-PHASE0-2026-09-07-v15**.
+- Sources and claims: **162 sources; 102 claims** — 98 confirmed, one interpretation and three
   needing regulator confirmation.
-- Module NC-15 claims: **NC-C88 through NC-C100**.
-- Source ledger: **46 PDF entries across 43 unique URLs**; six entries are byte verified and four
+- Module NC-15 claims: **NC-C88 through NC-C100 and NC-C102**; NC-C101 controls the paired Module NC-08
+  WWREA activity.
+- Source ledger: **48 PDF entries across 45 unique URLs**; eight entries are byte verified and six
   current NCREC artifacts have complete page review. Source status therefore remains **INCOMPLETE**.
-- Timing: **68,779 curriculum words / 305.68 minutes** at the prescribed 225-wpm audit rate;
-  **89,146 words / 396.20 minutes** even after adding the entire question-bank source. There is no
+- Timing: **69,379 curriculum words / 308.35 minutes** at the prescribed 225-wpm audit rate;
+  **89,746 words / 398.87 minutes** even after adding the entire question-bank source. There is no
   completed student-visible media/unit ledger. Timing remains **FAIL** against 3,600 required
   non-exam instructional minutes.
-- Validation: **134/134** focused North Carolina, source-integrity and all-course free-practice tests;
-  **1,307/1,307** complete repository tests with the bundled Python runtime.
+- Validation: **135/135** focused North Carolina, source-integrity and all-course free-practice tests;
+  **1,308/1,308** complete repository tests with the bundled Python runtime.
 - Release state: structure **PASS**; source verification **INCOMPLETE**; filing **NO-GO**.
 
 ## Remaining blockers
 
-The correction does not close: current Form 2-T with Guidelines/addenda paragraph work; the WWREA
-Questions & Answers brochure; the prescribed subdivision publication; complete project-specific
-building-code tables; the remaining official PDF byte/page capture; the 72-hour instructional ledger;
+The correction does not close: current Form 2-T with Guidelines/addenda paragraph work; an authentic
+approved subdivision plat; complete project-specific building-code tables; the remaining official PDF
+byte/page capture; the 72-hour instructional ledger;
 secure comprehensive final/proctoring; full reviewer-ready LMS, attendance, support, reporting and
 storage proof; provider/course/instructor approvals; or the user's entity, director, ownership,
 pricing, refund, transcript, experience and signature facts.

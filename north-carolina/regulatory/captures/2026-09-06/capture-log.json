@@ -633,6 +633,80 @@
       "pdfPages": 2,
       "textPath": "north-carolina/regulatory/captures/2026-09-07/module-15-materials/ncrec-wwrea-disclosure-form.txt",
       "textSha256": "8aadb277c08bb4fb1021f8998f2660e0489ec2bd0048f7105ee524a29f0b3154"
+    },
+    {
+      "sourceIds": [
+        "NC-NCREC-WWREA-QA-2022"
+      ],
+      "requestedUrl": "https://www.ncrec.gov/Brochures/WWREABrochure.pdf",
+      "attemptedAt": "2026-09-07T19:00:00.000Z",
+      "status": "VERIFIED_AS_OF_CAPTURE",
+      "snapshotPath": "north-carolina/regulatory/captures/2026-09-07/module-08-15-brochures/ncrec-wwrea-qa-brochure.pdf",
+      "sha256": "15a368e09f68d8486c295c9bffe25bda583a97981133d62eff2726d41d5aced1",
+      "pdfReview": {
+        "status": "REVIEWED",
+        "reviewedPdfSha256": "15a368e09f68d8486c295c9bffe25bda583a97981133d62eff2726d41d5aced1",
+        "title": "Questions and Answers on: Working With Real Estate Agents",
+        "revisionObservation": "REC 3.45 1/3/22 confirmed; both six-panel brochure pages reviewed",
+        "pages": [
+          {
+            "number": 1,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/module-08-15-brochures/renders/ncrec-wwrea-qa-brochure-1.png",
+            "sha256": "203bd655fac4a63f00c97586ad1fb3e0645fea6fe988a75380bcbbecd9b8f096"
+          },
+          {
+            "number": 2,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/module-08-15-brochures/renders/ncrec-wwrea-qa-brochure-2.png",
+            "sha256": "1eded40f26f56b04f0dabb90f4babaf56b1de3233663c9ba15c36937e93accd0"
+          }
+        ],
+        "ocrStatus": "NOT_REQUIRED_TEXT_LAYER_AND_OFFICIAL_TEXT_ONLY_VERSION_MATCHED_RENDER"
+      },
+      "httpStatus": 200,
+      "finalUrl": "https://www.ncrec.gov/Brochures/WWREABrochure.pdf",
+      "contentType": "application/pdf",
+      "receivedBytes": 11219261,
+      "responseSha256": "15a368e09f68d8486c295c9bffe25bda583a97981133d62eff2726d41d5aced1",
+      "pdfPages": 2,
+      "textPath": "north-carolina/regulatory/captures/2026-09-07/module-08-15-brochures/ncrec-wwrea-qa-brochure.txt",
+      "textSha256": "79ddae30b0cd873ee203f93694290d339a7acfd97051fc9104a846896b107bf2"
+    },
+    {
+      "sourceIds": [
+        "NC-NCREC-SUBDIVISIONS-QA-2019"
+      ],
+      "requestedUrl": "https://www.ncrec.gov/Brochures/SubdivisionsBrochure.pdf",
+      "attemptedAt": "2026-09-07T19:00:00.000Z",
+      "status": "VERIFIED_AS_OF_CAPTURE",
+      "snapshotPath": "north-carolina/regulatory/captures/2026-09-07/module-08-15-brochures/ncrec-subdivisions-planned-communities-brochure.pdf",
+      "sha256": "e3d3abcf2ffcf998ecfdae3278cdd6e6a761a82ec48106859a4ba73403a848e5",
+      "pdfReview": {
+        "status": "REVIEWED",
+        "reviewedPdfSha256": "e3d3abcf2ffcf998ecfdae3278cdd6e6a761a82ec48106859a4ba73403a848e5",
+        "title": "Questions and Answers on: Residential Subdivisions and Planned Communities",
+        "revisionObservation": "REC 3.49 11/1/19 confirmed; both six-panel brochure pages reviewed",
+        "pages": [
+          {
+            "number": 1,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/module-08-15-brochures/renders/ncrec-subdivisions-planned-communities-brochure-1.png",
+            "sha256": "b38811dd2ed2ed8eb22537ee4f5b17fb40a220d7f674d830a2f6af626d85429c"
+          },
+          {
+            "number": 2,
+            "renderPath": "north-carolina/regulatory/captures/2026-09-07/module-08-15-brochures/renders/ncrec-subdivisions-planned-communities-brochure-2.png",
+            "sha256": "40a5478b8a70630a739d331965be81fbc489e2128984c4ab8ad142e86bd39ed7"
+          }
+        ],
+        "ocrStatus": "NOT_REQUIRED_TEXT_LAYER_AND_OFFICIAL_TEXT_ONLY_VERSION_MATCHED_RENDER"
+      },
+      "httpStatus": 200,
+      "finalUrl": "https://www.ncrec.gov/Brochures/SubdivisionsBrochure.pdf",
+      "contentType": "application/pdf",
+      "receivedBytes": 2921463,
+      "responseSha256": "e3d3abcf2ffcf998ecfdae3278cdd6e6a761a82ec48106859a4ba73403a848e5",
+      "pdfPages": 2,
+      "textPath": "north-carolina/regulatory/captures/2026-09-07/module-08-15-brochures/ncrec-subdivisions-planned-communities-brochure.txt",
+      "textSha256": "a43fd1c2dc9b167417c56cebb1e63754ee7d67618f2845f7153625227792a8fa"
     }
   ]
 }

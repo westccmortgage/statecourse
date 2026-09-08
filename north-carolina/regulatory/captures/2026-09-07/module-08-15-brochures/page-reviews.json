@@ -1,0 +1,60 @@
+{
+  "reviewedOn": "2026-09-07",
+  "method": "Each official NCREC brochure-format PDF was obtained through the Commission's rendered Publications page, text-extracted, rendered page-by-page with Poppler, and visually inspected in full. The Commission's separate text-only PDFs were also retained and extracted so that multi-column reading order could be checked without using OCR.",
+  "artifacts": [
+    {
+      "id": "NC-NCREC-WWREA-QA-2022",
+      "title": "Questions and Answers on: Working With Real Estate Agents",
+      "landingPage": "https://www.ncrec.gov/Publications/Pubs",
+      "file": "ncrec-wwrea-qa-brochure.pdf",
+      "pdfSha256": "15a368e09f68d8486c295c9bffe25bda583a97981133d62eff2726d41d5aced1",
+      "pageCount": 2,
+      "revisionObservation": "REC 3.45, 1/3/22",
+      "reviewObservation": "Both six-panel brochure pages are legible and complete. Headings, Q&A text, agency diagrams, Commission contact information, revision footer and front/back artwork are visible without clipping or overlap.",
+      "textOnlyCompanion": {
+        "file": "ncrec-wwrea-qa-text.pdf",
+        "pdfSha256": "fc517134319d634ee6aeabeb39845988a05d78eb4f99c1235097699952219a4b",
+        "pageCount": 8,
+        "extractedText": "ncrec-wwrea-qa-text.txt",
+        "textSha256": "a81a2a07946a0223eb667ce84d9a10f86e6efebf8498115399a16fce071941ce"
+      },
+      "pages": [
+        {
+          "number": 1,
+          "sha256": "203bd655fac4a63f00c97586ad1fb3e0645fea6fe988a75380bcbbecd9b8f096"
+        },
+        {
+          "number": 2,
+          "sha256": "1eded40f26f56b04f0dabb90f4babaf56b1de3233663c9ba15c36937e93accd0"
+        }
+      ]
+    },
+    {
+      "id": "NC-NCREC-SUBDIVISIONS-QA-2019",
+      "title": "Questions and Answers on: Residential Subdivisions and Planned Communities",
+      "landingPage": "https://www.ncrec.gov/Publications/Pubs",
+      "file": "ncrec-subdivisions-planned-communities-brochure.pdf",
+      "pdfSha256": "e3d3abcf2ffcf998ecfdae3278cdd6e6a761a82ec48106859a4ba73403a848e5",
+      "pageCount": 2,
+      "revisionObservation": "REC 3.49, 11/1/19",
+      "reviewObservation": "Both six-panel brochure pages are legible and complete. HOA, preliminary-plat, restrictions, roads/common-areas and licensing sections, Commission contact information, revision footer and front/back artwork are visible without clipping or overlap.",
+      "textOnlyCompanion": {
+        "file": "ncrec-subdivisions-planned-communities-text.pdf",
+        "pdfSha256": "26e29f0066a4c037541c915f073047a1d155a4dabf0728e99e1d17dbf1263810",
+        "pageCount": 4,
+        "extractedText": "ncrec-subdivisions-planned-communities-text.txt",
+        "textSha256": "c3f2cb90b38657d44bd5f4904d257764bdcae6332e999c3f5e81477159fb5de7"
+      },
+      "pages": [
+        {
+          "number": 1,
+          "sha256": "b38811dd2ed2ed8eb22537ee4f5b17fb40a220d7f674d830a2f6af626d85429c"
+        },
+        {
+          "number": 2,
+          "sha256": "40a5478b8a70630a739d331965be81fbc489e2128984c4ab8ad142e86bd39ed7"
+        }
+      ]
+    }
+  ]
+}

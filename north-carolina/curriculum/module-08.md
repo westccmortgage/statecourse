@@ -139,9 +139,33 @@ sign, the broker still provides the disclosure and documents the refusal. The Co
 **Questions & Answers on: Working With Real Estate Agents** page is a companion explanation, not a
 replacement for the required review.
 
-The project has located and read the Commission guidance and public Q&A route, but it has **not retained
-and page-reviewed the current WWREA disclosure form as a submission artifact**. That form remains a
-filing gate; this course does not reproduce its proprietary layout.
+### B.2b Required Activity evidence — WWREA form and companion Q&A
+
+The current official pair is retained and page-reviewed: the two-page **REC 4.27 Working With Real
+Estate Agents Disclosure** (1/1/2022) and the complete two-page/six-panel **REC 3.45 Questions and
+Answers on: Working With Real Estate Agents** brochure (1/3/2022). NCREC also publishes a text-only
+version of the Q&A, retained here to confirm multi-column reading order. These are separate documents
+with separate jobs: the form is reviewed at first substantial contact; the Q&A supplies consumer
+explanation and does not replace that review or create an agency contract.
+
+**Learner review record:**
+
+| Evidence to locate | Correct classification |
+|---|---|
+| Warning not to disclose confidential information before representation is established | Consumer-protection purpose of the disclosure review |
+| Relationship types marked on the form | Relationships the firm offers, not the consumer's final selection and not an agency contract |
+| Consumer signature | Evidence of receipt; refusal is documented after the broker still provides and reviews the form |
+| Seller agency and buyer agency diagrams | Each client has a different brokerage firm and receives undivided representation from that firm |
+| Dual agency diagram | One firm represents both sides with written authority; divided loyalty and confidential-information limits must be understood |
+| Designated dual agency diagram | Different affiliated agents are designated to the opposing clients while the firm remains dual agent |
+| Unrepresented buyer or seller discussion | Assistance is not representation; the broker's loyalty remains with the client and material-fact duties still apply |
+| Termination discussion | The Commission does not cancel private agency contracts; the agreement and legal advice control disputed termination rights |
+
+**Completion prompt:** explain to a prospective buyer, in plain language, why signing REC 4.27 does
+not hire a broker; identify when a separate written buyer-agency agreement becomes mandatory; then
+compare the confidentiality boundary in buyer agency, seller subagency, dual agency and designated
+dual agency. Completion requires all three distinctions. A learner who merely opens the PDFs has not
+completed the activity.
 
 ### B.3 Additional agency disclosure requirements *(Level 2)*
 
@@ -634,8 +658,13 @@ Commission's public Q&A route were also inspected. Rule .0104 establishes agreem
 dual/designated agency and protected information; .0106 supplies the three-day delivery rule; .0108
 supplies transaction-record retention; and .0109 governs brokerage compensation disclosure.
 
-**Still not retained and page-reviewed for filing:** the current **WWREA Disclosure form**; **NC
-REALTORS® Standard Form 2-T**; and the **Residential Square Footage Guidelines**. The current LLCR and
-RELINC are already separately identified in the source ledger. No proprietary form wording or layout
-is reproduced. Obtaining/reviewing the WWREA form and Form 2-T remains a submission gate. All
-net-to-seller percentages are invented for arithmetic and do not suggest a customary fee.
+The official **REC 4.27 WWREA Disclosure**, the **REC 3.45 WWREA Q&A brochure**, and NCREC's official
+text-only Q&A companion are retained with hashes, extracted text and review of every brochure/form
+page. Their evidence is recorded under
+`north-carolina/regulatory/captures/2026-09-07/module-08-15-brochures` and the dated Module 15 capture.
+
+**Still not retained and paragraph-reviewed for filing:** **NC REALTORS® Standard Form 2-T**. The
+current LLCR and RELINC are separately identified in the source ledger, and the 2026 Residential
+Square Footage Guidelines are separately retained and applied in Module NC-15. No proprietary Form
+2-T wording or layout is reproduced. All net-to-seller percentages are invented for arithmetic and
+do not suggest a customary fee.

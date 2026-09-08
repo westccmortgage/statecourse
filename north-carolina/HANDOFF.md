@@ -36,11 +36,12 @@
   It separates the four formation elements from the Statute of Frauds, electronic consent/receipt from
   binding effect, recording from signed-writing requirements, and in-firm agency from outside-firm
   seller subagency. The narrow preprinted-form exception no longer reads as a blanket drafting rule.
-- Module NC-08 now delivers five auditable agency activities: first-substantial-contact classification,
-  client/customer duty comparison, listing-type comparison, compensation calculations and a
-  tenant-screening decision matrix. Current Rules 58A .0104, .0106, .0108 and .0109 replace the former
-  oral-agency, automatic-subagency, confidentiality and record-timing shortcuts. The current WWREA
-  form itself remains an explicit artifact gate rather than being simulated.
+- Module NC-08 now delivers all six prescribed agency activities: the current WWREA disclosure and
+  companion Q&A, first-substantial-contact classification, client/customer duty comparison,
+  listing-type comparison, compensation calculations and a tenant-screening decision matrix. Current
+  Rules 58A .0104, .0106, .0108 and .0109 replace the former oral-agency, automatic-subagency,
+  confidentiality and record-timing shortcuts. Both official WWREA artifacts are retained and fully
+  page-reviewed, and the lesson distinguishes disclosure receipt from agency formation.
 - Module NC-09 now delivers four auditable real-estate-practice activities: neutral tenant screening,
   brokerage-compensation methods, discrimination/neighborhood-information scenarios, and duties to
   clients versus third parties. Current federal Fair Housing, §1982, HUD, ADA, FTC and DOJ authorities
@@ -81,7 +82,9 @@
   rule, owner disclosures, State Fair Housing, timeshares, unfair/deceptive practices, subdivision
   streets, commercial broker liens and current OSFM code status. It removes the false statement that
   heated living area is not material. Current RPOADS, MOG, the 2026 Residential Square Footage
-  Guidelines and WWREA are retained with all 35 pages reviewed. Both Section XV form/measurement
+  Guidelines and WWREA are retained with all 35 pages reviewed. The two-page subdivisions/planned-
+  communities Q&A is separately retained and reviewed against current Chapters 47F, 136 and 160D;
+  it does not replace the outstanding approved-plat activity. Both Section XV form/measurement
   activities and the 2,292-square-foot worked problem are delivered.
 
 - Official-source Phase 0 covers personal broker licensure, instructor qualification, education
@@ -89,7 +92,7 @@
   reporting, records, renewals, postlicense/CE products, foreign-LLC route and current market scale.
 - The machine manifest records authority class, exact URL, revision/effective date, retrieval date,
   pinpoint, evidence, supersession check and source-integrity state for each source.
-- One hundred claims are separated into 96 confirmed, one interpretation and three regulator-confirmation states.
+- One hundred two claims are separated into 98 confirmed, one interpretation and three regulator-confirmation states.
 - Filing index, provider/course datasheets, personal path, instructor dossier, regulator email draft,
   PPD draft, distance control plan, course guide, records SOP, timing report, product roadmap and
   certificate specimen are prepared.
@@ -125,9 +128,9 @@ the record; equivalency therefore needs NCREC preclearance.
 Rule 58H .0401 measures self-paced course time at 225 words per minute plus actual audio/video
 duration. Rule .0101(7) defines an instructional hour as 50 instructional minutes plus 10 break
 minutes, so the 72-hour non-exam syllabus allocation is 3,600 actual instructional minutes, not the
-previously reported 4,320. The sixteen curriculum files contain 68,779 audit-tokenized words, or at
-most 305.68 minutes/5.09 elapsed hours; they include nonstudent author notes. Adding the 20,367-word
-question-bank source gives a generous 396.20-minute/6.60-hour ceiling including code. Neither is validated
+previously reported 4,320. The sixteen curriculum files contain 69,379 audit-tokenized words, or at
+most 308.35 minutes/5.14 elapsed hours; they include nonstudent author notes. Adding the 20,367-word
+question-bank source gives a generous 398.87-minute/6.65-hour ceiling including code. Neither is validated
 student time. There is no media ledger. Planned “72-hour” module labels prove nothing. The course
 must not be submitted or advertised as 75 hours until its student-visible content and unit/media
 ledger actually demonstrate the required time.
@@ -136,7 +139,7 @@ ledger actually demonstrate the required time.
 
 | ID | Owner | Blocker |
 |---|---|---|
-| NC-B01 | StateCourse | Partial PDF capture: 6/46 PDF entries have byte-verified snapshots and four current NCREC artifacts have all-page review; the remaining source ledger is incomplete |
+| NC-B01 | StateCourse | Partial PDF capture: 8/48 PDF entries have byte-verified snapshots and six current NCREC artifacts have all-page review; the remaining source ledger is incomplete |
 | NC-B02 | NCREC | Provider certification absent |
 | NC-B03 | NCREC | Written self-paced course approval absent |
 | NC-B04 | user + NCREC | Nonprovisional NC broker and instructor approval absent |
@@ -185,18 +188,18 @@ NC_PYTHON=/path/to/python-with-pypdf node scripts/north-carolina-source-lock.mjs
 
 Structure reports **PASS**, source verification **INCOMPLETE**, and filing **NO-GO**. The capture log
 records exact failures and does not turn search-index text into downloaded evidence. The expanded
-ledger contains 46 PDF source entries across 43 unique URLs; six entries retain byte-verified snapshots
-and four current NCREC artifacts have current all-page review. The remaining entries are incomplete.
+ledger contains 48 PDF source entries across 45 unique URLs; eight entries retain byte-verified snapshots
+and six current NCREC artifacts have current all-page review. The remaining entries are incomplete.
 Scripts verify actual bytes and content identity and reject a wrong PDF,
 soft-404, missing snapshot, stale hash, foreign redirect, and missing/stale page review.
 The Module NC-13 activity capture is a separate retained teaching-evidence set: three reviewed PDFs,
 28 reviewed page renders and the full 302-page publisher archive. It does not make the unrelated
 source-ledger capture complete.
 
-The September 7 Module NC-15 checkpoint is **134/134 focused North Carolina, source-integrity and
+The September 7 public-brochure checkpoint is **135/135 focused North Carolina, source-integrity and
 all-course free-practice tests passing**, including every lesson and every answer choice in all 31
 catalog courses. With the bundled Python runtime on `PATH`, the complete repository run is
-**1,307/1,307 passing**. The same run under the host's bare `python3` fails PDF-reading tests because
+**1,308/1,308 passing**. The same run under the host's bare `python3` fails PDF-reading tests because
 that interpreter lacks `pypdf`; this is an environment-path failure, not a course result.
 
 PDF extraction needs Python with `pypdf`; set `NC_PYTHON` to that interpreter when it is not `python3`.
@@ -208,5 +211,6 @@ push North Carolina repository data without explicit North Carolina authorizatio
 intentionally exits 1 while sources are incomplete;
 the normal command checks structure and reports source failures without claiming a lock. These are
 offline as-of-capture checks; re-fetch before filing. Current focused tests and complete repository
-test count are recorded after the Module NC-15 validation run. The detailed correction evidence is in
-`north-carolina/submission/14-module-15-correction-audit.md`.
+test count are recorded after the public-brochure validation run. Detailed correction evidence is in
+`north-carolina/submission/14-module-15-correction-audit.md` and
+`north-carolina/submission/15-public-brochure-correction-audit.md`.

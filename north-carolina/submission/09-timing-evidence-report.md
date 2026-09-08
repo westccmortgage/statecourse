@@ -14,8 +14,8 @@ of instruction. Official .0101 indexed text was rechecked September 6; direct OA
 
 | Repository measure | Words | Minutes at 225 wpm | 60-minute elapsed hours |
 |---|---:|---:|---:|
-| sixteen curriculum Markdown files, audit tokenizer | 68,779 | 305.68 | 5.09 |
-| curriculum plus entire question-bank source file (deliberately generous ceiling) | 89,146 | 396.20 | 6.60 |
+| sixteen curriculum Markdown files, audit tokenizer | 69,379 | 308.35 | 5.14 |
+| curriculum plus entire question-bank source file (deliberately generous ceiling) | 89,746 | 398.87 | 6.65 |
 | reading-only words for 72 instructional hours | 810,000 | 3,600 | 60.00 |
 
 The September 7 increase reflects the official-source rewrite of Modules NC-01 through NC-10, their
@@ -32,7 +32,9 @@ CMA/BPO, USPAP-history, UAD 3.6, comparable-adjustment and reconciliation bounda
 form labs and Section XIII appraisal labs now use retained and page-reviewed publisher artifacts.
 Module NC-14 now uses current landlord-tenant law, and Module NC-15 now uses current title, fixtures,
 disclosure, fair-housing, timeshare, square-footage, street, building-code and broker-lien authorities;
-its official RPOADS, MOG and Guidelines activities are retained and page-reviewed. This is substantive
+its official RPOADS, MOG and Guidelines activities are retained and page-reviewed. The WWREA and
+subdivisions/planned-communities Q&A brochures are also retained and completely reviewed, with the
+older subdivisions brochure checked against current Chapters 47F, 136 and 160D. This is substantive
 correction, not time padding. The audit tokenizer counts word-like Unicode tokens
 and excludes Markdown punctuation. Both totals include nonstudent material: the curriculum includes author notes and the larger count also includes
 JavaScript syntax/metadata. Both are upper-bound audit signals, not valid student-visible instruction.

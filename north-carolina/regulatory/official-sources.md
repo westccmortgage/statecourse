@@ -1,7 +1,7 @@
 # North Carolina official-source ledger
 
 **Control date:** 2026-09-07
-**Manifest:** `NC-PHASE0-2026-09-07-v13`
+**Manifest:** `NC-PHASE0-2026-09-07-v15`
 **Regulatory status:** Not approved. Enrollment and credit delivery are closed.
 
 The machine-readable controlling record is
@@ -63,6 +63,7 @@ No commercial school, law-firm summary, aggregator, or search snippet is control
 | Agency agreements and disclosure | 21 NCAC 58A .0104 | (a)-(o), especially (a), (c)-(f), (i)-(n) | [OAH .0104](https://reports.oah.state.nc.us/ncac/title%2021%20-%20occupational%20licensing%20boards%20and%20commissions/chapter%2058%20-%20real%20estate%20commission/subchapter%20a/21%20ncac%2058a%20.0104.pdf) |
 | Delivery and transaction records | 21 NCAC 58A .0106, .0108 | .0106(a)-(c); .0108(a)-(d) | [OAH .0106](https://reports.oah.state.nc.us/ncac/title%2021%20-%20occupational%20licensing%20boards%20and%20commissions/chapter%2058%20-%20real%20estate%20commission/subchapter%20a/21%20ncac%2058a%20.0106.pdf), [OAH .0108](https://reports.oah.state.nc.us/ncac/title%2021%20-%20occupational%20licensing%20boards%20and%20commissions/chapter%2058%20-%20real%20estate%20commission/subchapter%20a/21%20ncac%2058a%20.0108.pdf) |
 | WWREA implementation | NCREC official guidance | review, firm-offered roles, receipt signature, refusal handling | [NCREC WWREA Update](https://bulletins.ncrec.gov/working-with-real-estate-agents-disclosure-update/) |
+| WWREA disclosure and companion Q&A | NCREC REC 4.27 and REC 3.45 | current disclosure pages plus complete agency-relationship Q&A | [WWREA form](https://www.ncrec.gov/Forms/WWREA/WWREADisclosureForm.pdf), [WWREA Q&A](https://www.ncrec.gov/Brochures/WWREABrochure.pdf) |
 | Federal fair housing | 42 U.S.C. Chapter 45 | §§3603-3607, 3610, 3613, 3617, 3631 | [Official U.S. Code](https://uscode.house.gov/view.xhtml?edition=prelim&path=%2Fprelim%40title42%2Fchapter45), [HUD current overview](https://www.hud.gov/helping-americans/fair-housing-act-overview) |
 | Race-equal property rights | 42 U.S.C. §1982 | entire section | [Official U.S. Code](https://uscode.house.gov/view.xhtml?edition=prelim&num=0&req=granuleid%3AUSC-prelim-title42-section1982) |
 | Current HUD neighborhood and withdrawn-guidance posture | HUD | April 24, 2026 letter pp. 1-7; September 17, 2025 notice pp. 1-4 | [Neighborhood information letter](https://www.hud.gov/sites/default/files/hudclips/documents/AS-Trainor%27s-DCL-on-Neighborhood-Crime-Data-and-School-Quality.pdf), [withdrawal notice](https://www.hud.gov/sites/dfiles/Main/documents/Notice-of-Withdrawal-of-Guidance-Documents.pdf) |
@@ -108,15 +109,17 @@ No commercial school, law-firm summary, aggregator, or search snippet is control
 | RPOADS and MOG | Chapter 47E; official REC 4.22/4.25 | scope, exemptions, response options, delivery and cancellation | [Chapter 47E](https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/ByChapter/Chapter_47E.html), [NCREC publications](https://www.ncrec.gov/Publications/Pubs) |
 | Residential square footage | NCREC 2026 Guidelines | materiality, current measurement, living-area criteria and records | [NCREC publications](https://www.ncrec.gov/Publications/Pubs) |
 | Street status and broker liens | G.S. 136-102.6; Chapter 44A Article 2 Part 4 | dedication versus acceptance; written agreement, notice and enforcement | [§136-102.6](https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_136/GS_136-102.6.html), [Chapter 44A Article 2](https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/ByArticle/Chapter_44A/Article_2.html) |
+| Subdivisions and planned communities Q&A | NCREC REC 3.49; current Chapters 47F, 136 and 160D | HOA, plat, road and common-area context; current statutes supersede older shorthand | [NCREC Q&A](https://www.ncrec.gov/Brochures/SubdivisionsBrochure.pdf), [Chapter 47F](https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/ByChapter/Chapter_47F.html), [§160D-807](https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_160D/GS_160D-807.html) |
 | Current building-code posture | NC OSFM | 2018 code currently governing; 2024 implementation delayed | [OSFM current codes](https://www.ncosfm.gov/codes/codes-current-and-past) |
 
 ## Verification limitations and conflict resolution
 
 The capture ledger began with 19 unique PDF URLs representing 21 source entries. Sixteen OAH URLs
-timed out and the NCREC syllabus returned HTTP 403. On September 7 four current public NCREC artifacts
-were added: RPOADS, MOG, the 2026 Residential Square Footage Guidelines and WWREA. Their 35 pages were
-all rendered and visually checked against digital text. Together with RELINC and L-09, six source PDFs
-now have verified bytes and four have current all-page review. `captures/2026-09-06/capture-log.json`
+timed out and the NCREC syllabus returned HTTP 403. On September 7 six current public NCREC artifacts
+were added: RPOADS, MOG, the 2026 Residential Square Footage Guidelines, WWREA, the WWREA Q&A and the
+subdivisions/planned-communities Q&A. Their 39 brochure/form/guide pages were all rendered and visually
+checked against digital text. Together with RELINC and L-09, eight source PDFs now have verified bytes
+and six NCREC artifacts have current all-page review. `captures/2026-09-06/capture-log.json`
 preserves requests, final URL where a
 response arrived, content type, status, hashes and exact failures; `page-reviews.json` binds review
 to the PDF and render hashes. Sources remain **INCOMPLETE** and `NC-B01` remains open.
@@ -125,10 +128,11 @@ On September 7, Modules NC-02 and NC-05 added current official standalone-rule e
 .0109, .0114, .0120, and .0506, plus the HUD/EPA lead fact sheet. They were inspected through official
 publisher pages but were not part of the September 6 byte-capture attempt. The expanded ledger therefore
 later expanded again during the Module NC-10 pass to include Rules .0111 and .0115-.0118, .1601 and
-.1808 plus the LLCR route, and the Module NC-11 pass added Rule .0112. Module NC-15 added the four
-public NCREC PDFs and the 58B rule range. The machine ledger now contains 46 PDF source entries across
-43 unique URLs. The global source state remains **INCOMPLETE** because most rule/source PDFs still lack
-current captured bytes and review; the four NCREC artifacts do not conceal that broader gap.
+.1808 plus the LLCR route, and the Module NC-11 pass added Rule .0112. Module NC-15 added four public
+NCREC PDFs and the 58B rule range; the later Module NC-08/15 brochure pass added two more NCREC PDFs.
+The machine ledger now contains 48 PDF source entries across 45 unique URLs. The global source state
+remains **INCOMPLETE** because most rule/source PDFs still lack current captured bytes and review; the
+six NCREC artifacts do not conceal that broader gap.
 
 Module NC-04 was reconciled on September 7 to current official property-tax and excise-tax statutes,
 26 U.S.C. §121, FEMA and CFPB guidance. That review found a real syllabus conflict: the fourth-year
@@ -155,8 +159,9 @@ Module NC-08 was reconciled on September 7 to current Rules 58A .0104, .0106, .0
 current Commission WWREA guidance. The review corrected the blanket “oral buyer agency” shortcut,
 separated in-firm dual agency from outside-firm seller subagency, restored the rule's exact writing and
 document-delivery deadlines, and added evidence for first substantial contact, client/customer duties,
-three listing types, calculations and fair-housing screening. The current two-page WWREA form is now
-retained and reviewed; the separate Questions & Answers brochure remains an open activity artifact.
+three listing types, calculations and fair-housing screening. The current two-page WWREA form and
+companion Questions & Answers brochure are now retained and completely reviewed; the paired Required
+Activity is delivered without treating receipt of the disclosure as creation of agency.
 
 Module NC-09 was reconciled on September 7 to current federal Fair Housing statutes, §1982, HUD's
 current neighborhood-information and withdrawn-guidance posture, ADA Title III, the FTC's current

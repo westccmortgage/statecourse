@@ -679,9 +679,10 @@ documents rather than a substitute for them.**
   text-extracted, and used to reconcile Module NC-01 on 2026-09-07. Its live identity and fees must
   still be rechecked before filing and enrollment.
 - **The North Carolina Real Estate Manual.**
-- **Working with Real Estate Agents.** The two-page current public WWREA disclosure form is retained,
-  text-extracted and page-reviewed. The separate **Questions & Answers on: Working with Real Estate
-  Agents** brochure remains an open Required Activity artifact for Module NC-08.
+- **Working with Real Estate Agents.** The two-page current public WWREA disclosure form and the
+  separate **Questions & Answers on: Working with Real Estate Agents** brochure are retained,
+  text-extracted and completely page-reviewed. Module NC-08 delivers the prescribed paired review
+  while distinguishing disclosure receipt from formation of an agency agreement.
 - **NC REALTORS® Offer to Purchase and Contract — Standard Form 2-T**, and every other standard form.
   The Syllabus devotes Section XI to the Offer to Purchase and Contract. **The current 2026 rights-holder
   index and change summary were read, but this project has not read the member-restricted Form 2-T and
@@ -695,8 +696,11 @@ documents rather than a substitute for them.**
   retained with all seven pages reviewed. Module NC-15 now reconciles Chapters 41A, 43, 47B, 47E,
   47F and 93A Article 4; the current UCC fixture section; state fair-housing, timeshare, deceptive-
   practices, street-disclosure and commercial-broker-lien provisions; and Rules 58A/58B. The
-  Commission's subdivisions/planned-communities Q&A brochure, complete current code tables and active
-  project-specific legal/code determinations remain explicit limitations.
+  Commission's subdivisions/planned-communities Q&A brochure is retained and completely reviewed,
+  with its 2019 statements checked against current Chapters 47F, 136 and 160D. Complete current code
+  tables and active project-specific legal/code determinations remain explicit limitations. The
+  separate Required Activity calling for an approved subdivision plat remains outstanding because
+  a consumer brochure is not a recorded plat.
 - **The full text of Sections II through VII and IX through XVI of the Syllabus** was extracted and is
   available, but this readings file transcribes in full only the front matter, the hour table, the
   section and item table, the Instructional Levels, the completion standards and Section VIII. The

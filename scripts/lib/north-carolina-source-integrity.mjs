@@ -16,7 +16,9 @@ export function identityMarkers(source) {
     'NC-NCREC-RPOADS-2026': ['Residential Property And Owners', 'Association Disclosure Statement', 'REV 7/26'],
     'NC-NCREC-MOG': ['Mineral and Oil and Gas Rights Disclosure Statement', 'REC 4.25', '1/1/15'],
     'NC-NCREC-RSFG-2026': ['MEASURE.', 'CALCULATE.', 'REC 3.40', '7/2026'],
-    'NC-NCREC-WWREA': ['Working With Real Estate Agents Disclosure', 'This form is not a contract']
+    'NC-NCREC-WWREA': ['Working With Real Estate Agents Disclosure', 'This form is not a contract'],
+    'NC-NCREC-WWREA-QA-2022': ['Questions and Answers on:', 'WORKING WITH', 'REAL ESTATE', 'AGENTS', 'REC 3.45', '1/3/22'],
+    'NC-NCREC-SUBDIVISIONS-QA-2019': ['Questions and Answers on:', 'RESIDENTIAL', 'SUBDIVISIONS', 'PLANNED COMMUNITIES', 'REC 3.49', '11/1/19']
   })[source.id] || [];
 }
 export function inspectPdfEvidence(source, entry, { bytes, pageText, today = '2026-09-06', renderBytes = {} } = {}) {
