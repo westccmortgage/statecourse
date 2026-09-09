@@ -169,6 +169,14 @@ function screenVideoHtml(screen) {
 
 function singleVideoHtml(video) {
   if (!video || !video.src) return "";
+  const hostedPlayer = video.provider === "cloudflare-stream"
+    ? `<div class="screen-video-frame"><iframe
+        src="${escapeHtml(video.src)}"
+        title="${escapeHtml(video.label || "Video overview")}"
+        loading="lazy"
+        allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;"
+        allowfullscreen></iframe></div>`
+    : null;
   const track = video.captions
     ? `<track kind="captions" src="${escapeHtml(video.captions)}" srclang="en" label="English captions" default />`
     : "";
@@ -178,7 +186,7 @@ function singleVideoHtml(video) {
     : "";
   return `<figure class="screen-video">
     <figcaption><span class="optional-tag">Optional</span> ${escapeHtml(video.label || "Video overview")}${video.duration ? ` · ${escapeHtml(video.duration)}` : ""} · Captions available</figcaption>
-    <video controls preload="none" playsinline${video.poster ? ` poster="${escapeHtml(video.poster)}"` : ""} src="${escapeHtml(video.src)}">${track}</video>
+    ${hostedPlayer || `<video controls preload="none" playsinline${video.poster ? ` poster="${escapeHtml(video.poster)}"` : ""} src="${escapeHtml(video.src)}">${track}</video>`}
     ${transcript}
   </figure>`;
 }

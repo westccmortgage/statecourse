@@ -375,13 +375,14 @@ addCheck(3, "every scene duration derives from the caption timeline rather than 
     const registry = p.md.match(/duration: "(\d+:\d\d)"/);
     if (!registry) f.push(`video ${p.n}: §11 registry entry has no duration field`);
     else if (p.n === 1 && registry[1] !== "3:15") f.push(`video 1: active registry duration ${registry[1]} ≠ measured 3:15`);
-    else if (p.n !== 1 && registry[1] !== p.duration) f.push(`video ${p.n}: §11 registry duration ${registry[1]} ≠ ${p.duration}`);
+    else if (p.n === 3 && registry[1] !== "3:07") f.push(`video 3: active registry duration ${registry[1]} ≠ measured 3:07`);
+    else if (p.n === 2 && registry[1] !== p.duration) f.push(`video ${p.n}: §11 registry duration ${registry[1]} ≠ ${p.duration}`);
     if (!planText.includes(`≈ ${p.duration}`)) f.push(`video ${p.n}: the plan does not carry ≈ ${p.duration}`);
     notes.push(`video ${p.n}: ${p.scenes.length}/${p.scenes.length} scene durations re-derived from ${p.cues.length} cues · total ${mm} (last cue end ${derivedTotal.toFixed(1)}s)`);
   }
   notes.push(`set total ${Math.floor(setTotal / 60)}:${(setTotal % 60).toFixed(1).padStart(4, "0")} — the plan states ≈ 9 minutes 53 seconds`);
   if (!/9 minutes 53 seconds/.test(planText)) f.push("the plan does not state the set total of ≈ 9 minutes 53 seconds");
-  return "The editorial cue timelines remain the common source for all three scene tables. Video 1 now has a separate measured shipping duration (3:15) recorded at activation; Videos 2 and 3 retain provisional 150-wpm timings until their renders exist.";
+  return "The editorial cue timelines remain the common source for all three scene tables. Videos 1 and 3 have separate measured shipping durations (3:15 and 3:07) recorded at activation; Video 2 retains provisional 150-wpm timing until its render exists.";
 });
 
 /* ── check 4 ──────────────────────────────────────────────────────────────────────────────────── */
@@ -441,7 +442,7 @@ addCheck(4, "every crop keeps the complete official field or form language in fr
   const outside = form.lines.filter((l) => l.bottom < lo || l.top > hi);
   notes.push(`${bands.length} crops · ${form.lines.length} printed lines · 0 straddled edges · every line inside its band fits its band's own x window`);
   notes.push(`bands A–H span y ${lo}–${hi}, x ${Math.min(...covered.map((b) => b.x0))}–${Math.max(...covered.map((b) => b.x1))}; ${outside.length} printed line(s) fall outside every band: ${outside.map((l) => `"${foldForm(l.text).slice(0, 40)}"`).join(", ") || "none"}`);
-  return "Verified in PDF-point space against the held page's own text lines. Video 1 additionally has a human visual review of its rendered document frames; Videos 2 and 3 remain pre-render and cannot yet receive that second-layer review.";
+  return "Verified in PDF-point space against the held page's own text lines. Videos 1 and 3 additionally have human acceptance records for their rendered frames; Video 2 remains pre-render and cannot yet receive that second-layer review.";
 });
 
 /* ── check 5 ──────────────────────────────────────────────────────────────────────────────────── */
@@ -528,7 +529,7 @@ addCheck(7, "no correction exists only in the addendum", (f, notes) => {
 });
 
 /* ── check 8 ──────────────────────────────────────────────────────────────────────────────────── */
-addCheck(8, "the canonical v4 package records one complete activation and two pending renders", (f, notes) => {
+addCheck(8, "the canonical v5 package records two complete activations and one pending render", (f, notes) => {
   const required = [
     ["plan", PLAN],
     ...pkgs.map((p) => [`video ${p.n} production file`, path.join(PROD, p.file)]),
@@ -542,6 +543,9 @@ addCheck(8, "the canonical v4 package records one complete activation and two pe
     ["video 1 shipping poster", path.join(root, "public/statecourse/media/tx-iabs-1-2-document-overview-poster.webp")],
     ["video 1 shipping captions", path.join(root, "public/statecourse/media/tx-iabs-1-2-document-overview.vtt")],
     ["video 1 shipping transcript", path.join(root, "public/statecourse/media/tx-iabs-1-2-document-overview.txt")],
+    ["video 3 final QC record", path.join(PROD, "qc/tx-loa-v03-texas-intermediary-brokerage-final.json")],
+    ["video 3 shipping captions", path.join(root, "public/statecourse/media/tx-loa-v03-texas-intermediary-brokerage.en.vtt")],
+    ["video 3 shipping transcript", path.join(root, "public/statecourse/media/tx-loa-v03-texas-intermediary-brokerage.txt")],
   ];
   for (const [name, p] of required) {
     if (!fs.existsSync(p) || (fs.statSync(p).isFile() && fs.statSync(p).size === 0)) {
@@ -577,8 +581,11 @@ addCheck(8, "the canonical v4 package records one complete activation and two pe
     if (p.n === 1 && !/poster[^\n]*(?:built|approved|shipping)/i.test(p.md)) {
       f.push("video 1: the production file does not record its final poster as built");
     }
-    if (p.n !== 1 && !/does not exist until the render exists|not built|NOT BUILT/i.test(p.md)) {
+    if (p.n === 2 && !/does not exist until the render exists|not built|NOT BUILT/i.test(p.md)) {
       f.push(`video ${p.n}: the poster specification does not say the poster does not yet exist`);
+    }
+    if (p.n === 3 && !/provider-managed poster/i.test(p.md)) {
+      f.push("video 3: the production file does not record its provider-managed poster");
     }
   }
   for (const m of planText.matchAll(/[^\n]*production-readiness-addendum[^\n]*/g)) {
@@ -591,7 +598,7 @@ addCheck(8, "the canonical v4 package records one complete activation and two pe
   const layerRow = (label, status) => new RegExp(`${label}[^|\n]*\\|\\s*\\*\\*${status}\\*\\*`);
   for (const [label, re] of [
     ["editorial and legal package READY", layerRow("[Ee]ditorial and legal package", "READY")],
-    ["rendered MP4 / VTT / poster PARTIAL", layerRow("[Rr]endered MP4", "PARTIAL")],
+    ["rendered video / VTT / poster PARTIAL", layerRow("[Rr]endered video", "PARTIAL")],
     ["screenMedia integration READY", layerRow("`screenMedia` integration support", "READY")],
     ["course placement PARTIAL", layerRow("[Cc]ourse placement activation", "PARTIAL")],
   ]) if (!re.test(planText)) f.push(`the plan does not report the ${label} layer`);
@@ -621,14 +628,16 @@ addCheck(8, "the canonical v4 package records one complete activation and two pe
     if (/content: RANGE/.test(s3[0])) f.push(`${unit}-s3 carries a content range — the module text would be on the retrieval screen`);
     if (/videos:|screenMedia|documents:/.test(s3[0])) f.push(`${unit}-s3 carries media — the video would still be on screen at retrieval`);
     if (v.n === 1 && s1 && !new RegExp(v.stem).test(s1[0])) f.push(`${unit}-s1 does not carry the reviewed video 1 asset`);
-    if (v.n !== 1 && s1 && /videos:|screenMedia/.test(s1[0])) f.push(`${unit}-s1 carries media before final assets and reviews exist`);
-    notes.push(`${unit}: s1 instruction (${v.n === 1 ? "reviewed video active" : "video pending"}) → s2 practice → s3 retrieval, questionId only, no content range and no media`);
+    if (v.n === 3 && s1 && !/8630af57b63d4255a1b51db7bb143398/.test(s1[0])) f.push(`${unit}-s1 does not carry the reviewed Cloudflare Stream video 3 asset`);
+    if (v.n === 2 && s1 && /videos:|screenMedia/.test(s1[0])) f.push(`${unit}-s1 carries media before final assets and reviews exist`);
+    notes.push(`${unit}: s1 instruction (${v.n === 2 ? "video pending" : "reviewed video active"}) → s2 practice → s3 retrieval, questionId only, no content range and no media`);
   }
-  /* Exactly video 1 may be wired; videos 2 and 3 remain absent. */
+  /* Exactly videos 1 and 3 may be wired; video 2 remains absent. */
   for (const v of VIDEOS) {
     const map = read(path.join(root, v.blockMap));
     if (v.n === 1 && !map.includes(v.stem)) f.push(`${v.blockMap} does not reference active ${v.stem}`);
-    if (v.n !== 1 && map.includes(v.stem)) f.push(`${v.blockMap} references pending ${v.stem}`);
+    if (v.n === 2 && map.includes(v.stem)) f.push(`${v.blockMap} references pending ${v.stem}`);
+    if (v.n === 3 && !map.includes("8630af57b63d4255a1b51db7bb143398")) f.push(`${v.blockMap} does not reference active Cloudflare Stream video 3`);
   }
   const mediaDir = path.join(root, "public/statecourse/media");
   const expectedVideo1 = new Set([
@@ -641,14 +650,14 @@ addCheck(8, "the canonical v4 package records one complete activation and two pe
   if (shippedVideo1.length !== expectedVideo1.size || shippedVideo1.some((n) => !expectedVideo1.has(n))) {
     f.push(`video 1 shipping set is not exact: ${shippedVideo1.join(", ")}`);
   }
-  const premature = fs.readdirSync(mediaDir).filter((n) => VIDEOS.slice(1).some((v) => n.startsWith(v.stem)));
+  const premature = fs.readdirSync(mediaDir).filter((n) => n.startsWith(VIDEOS[1].stem));
   if (premature.length) {
     f.push(`pending video shipping media already exists: ${premature.join(", ")}`);
   }
   for (const [name, text] of [["plan", planText], ...pkgs.map((p) => [`video ${p.n}`, p.md])]) {
     if (/TREC[- ]approved|approved by (?:the )?(?:TREC|Texas Real Estate Commission)/i.test(text)) f.push(`${name} claims TREC approval`);
   }
-  notes.push("video 1 has an exact four-asset shipping set and active instruction-screen reference · videos 2 and 3 remain absent · no claim of TREC approval");
+  notes.push("video 1 has an exact four-asset local set · video 3 has reviewed Cloudflare hosting plus local final captions and transcript · video 2 remains absent · no claim of TREC approval");
   return "The validator can prove asset presence, exact placement, status separation, and the recorded QC gates. Human review remains the authority for visual quality, logo safety, and factual fidelity; its signed record is hashed into the freeze.";
 });
 
@@ -667,6 +676,6 @@ if (process.argv.includes("--json")) {
   }
   const partials = checks.filter((c) => c.partial);
   console.log(`${checks.length - failed.length}/${checks.length} checks pass · ${partials.length} are partial by nature (checks ${partials.map((c) => c.n).join(", ")}) and say so above`);
-  console.log("Editorial and legal package READY · rendered assets PARTIAL (1/3) · screenMedia integration READY · course placement PARTIAL (1/3)");
+  console.log("Editorial and legal package READY · rendered assets PARTIAL (2/3) · screenMedia integration READY · course placement PARTIAL (2/3)");
 }
 process.exit(failed.length ? 1 : 0);

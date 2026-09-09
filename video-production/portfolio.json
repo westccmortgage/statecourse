@@ -18,10 +18,10 @@
       "state_name": "Texas",
       "course_count": 6,
       "course_ids": ["tx-principles-real-estate-i-30", "tx-principles-real-estate-ii-30", "tx-law-of-agency-30", "tx-law-of-contracts-30", "tx-promulgated-contract-forms-30", "tx-real-estate-finance-30"],
-      "rendered_instructional_videos": 1,
-      "active_instructional_videos": 1,
+      "rendered_instructional_videos": 2,
+      "active_instructional_videos": 2,
       "editorial_packages_ready": 3,
-      "next_action": "Render and QC the two remaining frozen Law of Agency packages: Representation or Showing Only and Texas Intermediary Brokerage."
+      "next_action": "Complete visual QC and activation for the remaining frozen Law of Agency package: Representation or Showing Only."
     },
     {
       "priority": 2,

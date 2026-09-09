@@ -48,7 +48,7 @@ const checks = [];
 const blockers = [];
 
 function tryRun(cmd, args, options = {}) {
-  try { return { ok: true, out: execFileSync(cmd, args, { cwd: root, encoding: "utf8", stdio: "pipe", ...options }) }; }
+  try { return { ok: true, out: execFileSync(cmd, args, { cwd: root, encoding: "utf8", stdio: "pipe", maxBuffer: 16 * 1024 * 1024, ...options }) }; }
   catch (error) { return { ok: false, out: `${error.stdout || ""}${error.stderr || ""}` }; }
 }
 const readJson = (rel) => { try { return JSON.parse(fs.readFileSync(path.join(root, rel), "utf8")); } catch { return null; } };

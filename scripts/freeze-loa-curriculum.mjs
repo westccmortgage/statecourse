@@ -29,7 +29,7 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const HOME = path.join(root, "texas/tx-law-of-agency-30-v1");
 const OUT = path.join(HOME, "content-freeze.json");
 const COURSE_ID = "tx-law-of-agency-30-v1";
-const FREEZE_ID = "LOA-CONTENT-FREEZE-2026-09-08-v8";
+const FREEZE_ID = "LOA-CONTENT-FREEZE-2026-09-09-v9";
 
 /**
  * FREEZE HISTORY. A freeze that is broken and silently re-taken teaches nothing. Every break is
@@ -37,6 +37,23 @@ const FREEZE_ID = "LOA-CONTENT-FREEZE-2026-09-08-v8";
  * than requiring someone to reconstruct it from git.
  */
 const BREAK_HISTORY = Object.freeze([
+  Object.freeze({
+    brokeFreeze: "LOA-CONTENT-FREEZE-2026-09-08-v8",
+    on: "2026-09-09",
+    module: "NONE — no curriculum wording changed; all twelve module sources remain byte-identical.",
+    change:
+      "The video-plan pointer moved from LOA-VIDEO-PLAN-FREEZE-2026-09-08-v4 to LOA-VIDEO-PLAN-FREEZE-2026-09-09-v5 after the accepted Texas Intermediary Brokerage render, synchronized English captions and transcript were activated through Cloudflare Stream as optional, non-blocking media at t06u3-s1. Video 2 remains inactive.",
+    reason:
+      "The content freeze pins the video-plan freeze artifact. Activating the second reviewed optional asset changes that dependency byte-state, so the content-freeze id must advance even though the regulated curriculum wording and time model do not.",
+    previousFreezeSha256: "c47a699ec34aa098c85b557e967d3e073ed1e07fe13883626c17e2817a725c20",
+    previousFreezeBytes: 29373,
+    auditsReRun: Object.freeze([
+      "node scripts/validate-loa-video-packages.mjs",
+      "node --test tests/texas-video-integration.test.mjs tests/texas-law-of-agency.test.mjs tests/video-portfolio.test.mjs",
+      "node scripts/freeze-loa-video-plan.mjs --write",
+      "node --test tests/*.test.mjs",
+    ]),
+  }),
   Object.freeze({
     brokeFreeze: "LOA-CONTENT-FREEZE-2026-09-07-v7",
     on: "2026-09-08",
@@ -269,7 +286,7 @@ const artifacts = {
      the validator. One level of indirection: the video state is still pinned exactly — any change to
      any video artifact changes video-plan-freeze.json, which changes this hash — but a video
      correction is now absorbed by a video freeze instead of forcing a curriculum-freeze break. */
-  "video plan freeze (LOA-VIDEO-PLAN-FREEZE-2026-09-07-v3 — hashes the plan and every render dependency)": hashOf(path.join(HOME, "video-plan-freeze.json")),
+  "video plan freeze (LOA-VIDEO-PLAN-FREEZE-2026-09-09-v5 — hashes the plan and every render dependency)": hashOf(path.join(HOME, "video-plan-freeze.json")),
 };
 
 if (failures.length) {

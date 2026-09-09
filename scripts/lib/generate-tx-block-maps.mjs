@@ -29,14 +29,17 @@
  *
  * A course may supply `screenMedia`, keyed by an emitted instruction-screen id. The generator
  * refuses unknown or retrieval-screen ids, refuses required/autoplay/assessment media, and refuses
- * to write a generated map unless the MP4, poster, shipping VTT and plain-text transcript all exist
- * as non-empty files under public/statecourse/media. It also requires the author to record factual,
- * visual, logo-safety and accessibility review. This is deliberately stricter than California's
- * first media hook because a partially attached player is worse than no video.
+ * to write a generated map unless the shipping media dependencies exist. Same-origin videos need
+ * an MP4, poster, shipping VTT and plain-text transcript under public/statecourse/media. A hosted
+ * Cloudflare Stream video needs an exact HTTPS player URL, provider-managed poster, enabled English
+ * text track, and the same local shipping VTT and transcript. Both routes require the author to
+ * record factual, visual, logo-safety and accessibility review. This is deliberately stricter than
+ * California's first media hook because a partially attached player is worse than no video.
  *
- * Texas Law of Agency activates its reviewed IABS 1-2 video at t02u5-s1. The remaining editorial
- * packages target t05u3-s1 and t06u3-s1 and stay inactive until each final render, poster,
- * measured-duration shipping VTT and transcript has passed the same reviews.
+ * Texas Law of Agency activates its reviewed IABS 1-2 video at t02u5-s1 and the reviewed Cloudflare
+ * Stream intermediary video at t06u3-s1. The remaining editorial package targets t05u3-s1 and stays
+ * inactive until its final render, poster, measured-duration shipping VTT and transcript pass the
+ * same reviews.
  * DO NOT HAND-EDIT A GENERATED COURSE FILE.
  *
  * THE TESTS THAT SHIP WITH THE HOOK. Each of these is a test, not a note.
@@ -49,8 +52,9 @@
  *   3.  NON-BLOCKING PROGRESSION. The screen's completion, and the block's, do not depend on the
  *       media. A student who never opens it progresses identically: no progress gate, no completion
  *       requirement, no assessment dependency, no autoplay.
- *   4.  MP4, VTT, TRANSCRIPT AND POSTER PRESENCE. All four assets resolve on disk at the paths the
- *       entry names. A missing one is a generation failure, not a broken player at runtime.
+ *   4.  VIDEO, VTT, TRANSCRIPT AND POSTER PRESENCE. Same-origin assets resolve on disk. A hosted
+ *       Stream entry uses a validated Cloudflare iframe URL and provider-managed poster, while its
+ *       final VTT and transcript still resolve locally. A missing dependency is a generation error.
  *   5.  ACCESSIBLE PLAYER CONTROLS AND KEYBOARD ACCESS. The emitted entry carries the controls the
  *       player needs and is reachable and operable by keyboard alone, in the screen's tab order.
  *   6.  CAPTION AVAILABILITY. A caption track is present, is served, and is selectable — and it is
@@ -63,10 +67,10 @@
  *       REFUSES TO GENERATE. Retrieval happens on its own screen with the video, the document and
  *       the visible answers no longer displayed; that separation must be enforced here, not
  *       remembered by whoever authors the spec.
- *   10. NO ACTIVATION WHEN ANY REQUIRED MEDIA ASSET IS ABSENT. If MP4, poster, shipping VTT or
- *       transcript is missing, the screen generates with NO media at all rather than with a partial
- *       player. There is no such thing as a half-attached video: a dead player, a nonfunctional
- *       poster, a decorative badge or an unavailable transcript is worse than no video.
+ *   10. NO ACTIVATION WHEN ANY REQUIRED MEDIA ASSET IS ABSENT. If a local asset is missing or a
+ *       hosted player URL is malformed, generation fails before overwriting the block map. There is
+ *       no such thing as a half-attached video: a dead player, a nonfunctional poster, a decorative
+ *       badge or an unavailable transcript is worse than no video.
  */
 
 import fs from "node:fs";
@@ -91,6 +95,34 @@ function requireAsset(root, source, label, extensionPattern) {
   const resolved = publicAssetPath(root, source, label);
   if (!fs.existsSync(resolved) || !fs.statSync(resolved).isFile() || fs.statSync(resolved).size === 0) {
     throw new Error(`${label} is missing or empty: ${source}`);
+  }
+}
+
+function requireCloudflareStream(video, prefix) {
+  if (video.provider !== "cloudflare-stream") {
+    throw new Error(`${prefix} has an unsupported hosted-video provider`);
+  }
+  if (video.posterManagedByProvider !== true) {
+    throw new Error(`${prefix} must declare posterManagedByProvider:true`);
+  }
+  if (typeof video.videoId !== "string" || !/^[a-f0-9]{32}$/.test(video.videoId)) {
+    throw new Error(`${prefix} needs the exact Cloudflare Stream video id`);
+  }
+  if (typeof video.defaultTextTrack !== "string" || !/^[a-z]{2}(?:-[A-Z]{2})?$/.test(video.defaultTextTrack)) {
+    throw new Error(`${prefix} needs a BCP-47 defaultTextTrack`);
+  }
+  let url;
+  try { url = new URL(video.src); } catch { throw new Error(`${prefix} needs a valid Cloudflare Stream player URL`); }
+  const expectedPath = `/${video.videoId}/iframe`;
+  if (
+    url.protocol !== "https:" ||
+    !/^customer-[a-z0-9]+\.cloudflarestream\.com$/.test(url.hostname) ||
+    url.pathname !== expectedPath ||
+    url.username || url.password || url.hash ||
+    url.searchParams.get("defaultTextTrack") !== video.defaultTextTrack ||
+    url.searchParams.has("autoplay")
+  ) {
+    throw new Error(`${prefix} has an invalid Cloudflare Stream player URL`);
   }
 }
 
@@ -133,13 +165,24 @@ export function validateScreenMedia({ root, moduleNumber, blocks, screenMedia = 
         throw new Error(`${prefix} is missing factual, visual, logo-safety or accessibility approval`);
       }
       if (/provisional/i.test(video.captions || "")) throw new Error(`${prefix} cannot use provisional captions`);
-      requireAsset(root, video.src, `${prefix} MP4`, /\.mp4$/i);
-      requireAsset(root, video.poster, `${prefix} poster`, /\.(?:webp|png|jpe?g)$/i);
+      const hosted = Boolean(video.provider);
+      if (hosted) {
+        requireCloudflareStream(video, prefix);
+      } else {
+        requireAsset(root, video.src, `${prefix} MP4`, /\.mp4$/i);
+        requireAsset(root, video.poster, `${prefix} poster`, /\.(?:webp|png|jpe?g)$/i);
+      }
       requireAsset(root, video.captions, `${prefix} captions`, /\.vtt$/i);
       requireAsset(root, video.transcript, `${prefix} transcript`, /\.txt$/i);
       return Object.freeze({
+        ...(hosted ? {
+          provider: video.provider,
+          videoId: video.videoId,
+          defaultTextTrack: video.defaultTextTrack,
+          posterManagedByProvider: true,
+        } : {}),
         src: video.src,
-        poster: video.poster,
+        ...(video.poster ? { poster: video.poster } : {}),
         captions: video.captions,
         transcript: video.transcript,
         label: video.label,

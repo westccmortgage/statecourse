@@ -83,6 +83,21 @@ Review.
   };
 }
 
+function makeHostedFixture({ mutateEntry } = {}) {
+  return makeFixture({ mutateEntry: (entry) => {
+    entry.videos[0] = {
+      ...entry.videos[0],
+      provider: "cloudflare-stream",
+      videoId: "8630af57b63d4255a1b51db7bb143398",
+      src: "https://customer-jie0jqrpv6850xg8.cloudflarestream.com/8630af57b63d4255a1b51db7bb143398/iframe?defaultTextTrack=en",
+      defaultTextTrack: "en",
+      posterManagedByProvider: true,
+    };
+    delete entry.videos[0].poster;
+    if (mutateEntry) mutateEntry(entry);
+  } });
+}
+
 test("Texas media attaches to the exact instruction screen and remains optional", async () => {
   const fixture = makeFixture();
   generateModuleBlocks(fixture.course, 1);
@@ -146,10 +161,41 @@ test("factual, visual, logo-safety and accessibility reviews are mandatory", () 
   }
 });
 
+test("a reviewed Cloudflare Stream player can ship with local captions and transcript", async () => {
+  const fixture = makeHostedFixture();
+  generateModuleBlocks(fixture.course, 1);
+  const delivery = (await import(`${pathToFileURL(fixture.output).href}?test=${Date.now()}`)).default;
+  const video = delivery.blocks[0].screens[0].videos[0];
+  assert.equal(video.provider, "cloudflare-stream");
+  assert.equal(video.defaultTextTrack, "en");
+  assert.equal(video.posterManagedByProvider, true);
+  assert.equal(video.videoId, "8630af57b63d4255a1b51db7bb143398");
+});
+
+test("hosted media refuses malformed URLs, autoplay, missing captions, or unmanaged posters", () => {
+  assert.throws(() => generateModuleBlocks(makeHostedFixture({ mutateEntry: (entry) => {
+    entry.videos[0].src = "https://example.com/video/iframe?defaultTextTrack=en";
+  } }).course, 1), /invalid Cloudflare Stream player URL/);
+  assert.throws(() => generateModuleBlocks(makeHostedFixture({ mutateEntry: (entry) => {
+    entry.videos[0].src += "&autoplay=true";
+  } }).course, 1), /invalid Cloudflare Stream player URL/);
+  assert.throws(() => generateModuleBlocks(makeHostedFixture({ mutateEntry: (entry) => {
+    delete entry.videos[0].posterManagedByProvider;
+  } }).course, 1), /posterManagedByProvider:true/);
+});
+
 test("the shared player exposes native controls, captions and an explicit transcript", () => {
   assert.match(playerSource, /<video controls preload="none" playsinline/);
   assert.match(playerSource, /<track kind="captions"/);
   assert.match(playerSource, /data-transcript=/);
   assert.match(playerSource, /video\.transcript \|\| video\.captions/);
   assert.doesNotMatch(playerSource, /video\.autoplay\s*=\s*true/);
+});
+
+test("the shared player supports a responsive Cloudflare Stream iframe without autoplay", () => {
+  assert.match(playerSource, /video\.provider === "cloudflare-stream"/);
+  assert.match(playerSource, /class="screen-video-frame"/);
+  assert.match(playerSource, /loading="lazy"/);
+  assert.match(playerSource, /allowfullscreen/);
+  assert.doesNotMatch(playerSource, /autoplay=true/);
 });

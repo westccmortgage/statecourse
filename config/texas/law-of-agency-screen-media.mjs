@@ -30,4 +30,32 @@ export const SCREEN_MEDIA_BY_MODULE = Object.freeze({
       ]),
     }),
   }),
+  6: Object.freeze({
+    "t06u3-s1": Object.freeze({
+      required: false,
+      nonBlocking: true,
+      noAssessmentContent: true,
+      videos: Object.freeze([
+        Object.freeze({
+          provider: "cloudflare-stream",
+          videoId: "8630af57b63d4255a1b51db7bb143398",
+          src: "https://customer-jie0jqrpv6850xg8.cloudflarestream.com/8630af57b63d4255a1b51db7bb143398/iframe?defaultTextTrack=en",
+          defaultTextTrack: "en",
+          posterManagedByProvider: true,
+          captions: "/media/tx-loa-v03-texas-intermediary-brokerage.en.vtt",
+          transcript: "/media/tx-loa-v03-texas-intermediary-brokerage.txt",
+          label: "Optional video: Texas intermediary brokerage — consent, appointments, and confidentiality",
+          duration: "3:07",
+          autoplay: false,
+          controls: true,
+          keyboardAccessible: true,
+          captionsSelectable: true,
+          factualQcApproved: true,
+          visualQcApproved: true,
+          logoSafeReviewed: true,
+          accessibilityQcApproved: true,
+        }),
+      ]),
+    }),
+  }),
 });
