@@ -23,8 +23,9 @@
  */
 
 import fs from "node:fs";
+import os from "node:os";
 import path from "node:path";
-import { execFileSync } from "node:child_process";
+import { execFileSync, spawnSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
@@ -34,6 +35,21 @@ const CAPS = path.join(PROD, "captions");
 const FORM_PDF = path.join(root, "texas/trec-sources/forms/IABS-1-2.pdf");
 const PLAN = path.join(HOME, "video-instruction-plan.md");
 const ADDENDUM = path.join(PROD, "production-readiness-addendum.md");
+
+/* Refuse to weaken the PDF coordinate audit merely because the shell's default Python lacks the
+   PDF package. An explicit override wins, then the bundled desktop runtime when present, and then
+   the host Python used in CI. */
+const PYTHON_CANDIDATES = [
+  process.env.STATECOURSE_PYTHON,
+  path.join(os.homedir(), ".cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3"),
+  "python3",
+].filter(Boolean);
+const PYTHON = PYTHON_CANDIDATES.find((candidate) =>
+  spawnSync(candidate, ["-c", "import pdfplumber"], { stdio: "ignore" }).status === 0
+);
+if (!PYTHON) {
+  throw new Error("pdfplumber is required for the IABS coordinate audit; set STATECOURSE_PYTHON to a Python that provides it");
+}
 
 const VIDEOS = Object.freeze([
   Object.freeze({ n: 1, stem: "tx-iabs-1-2-document-overview", file: "iabs-1-2-document-overview.md", title: "IABS 1-2 Document Overview", screen: "t02u5-s1", blockMap: "config/texas/law-of-agency-module-2-blocks.mjs", duration: "3:30" }),
@@ -146,7 +162,7 @@ print(json.dumps({
   "words": [{"text": w["text"], "x0": w["x0"], "x1": w["x1"], "top": w["top"], "bottom": w["bottom"]} for w in pg.extract_words()],
 }))
 `;
-  return JSON.parse(execFileSync("python3", ["-c", py], { maxBuffer: 64 * 1024 * 1024 }).toString());
+  return JSON.parse(execFileSync(PYTHON, ["-c", py], { maxBuffer: 64 * 1024 * 1024 }).toString());
 }
 
 /* ── the fifty printed form strings the three videos read aloud or box ────────────────────────
@@ -234,7 +250,7 @@ const REPAIRED_QUALIFIERS = Object.freeze([
 const ADDENDUM_CORRECTIONS = Object.freeze([
   { id: "A1", what: "duration of Video 1 is 3:30, not 3:01", needle: /3:30/, where: ["plan", "v1", "vtt1"] },
   { id: "A2", what: "duration of Video 2 is 3:03, not 2:53", needle: /3:03/, where: ["plan", "v2", "vtt2"] },
-  { id: "A3", what: "duration of Video 3 is 3:20, not 3:10", needle: /3:20/, where: ["plan", "v3"] },
+  { id: "A3", what: "editorial duration of Video 3 is 3:20, not 3:10", needle: /3:20|3 (?:minutes|min) 20/, where: ["plan", "v3"] },
   { id: "A4", what: "total optional video time is 9:53, not 9:04", needle: /9 minutes 53 seconds|9:53/, where: ["plan"] },
   { id: "A5", what: "band G's foot is 592, not 594", needle: /594 → \*\*592\*\*|594 → 592|band G's foot moved 594/, where: ["plan", "v1"] },
   { id: "A6", what: "band H's head is 592, not 588", needle: /588 → \*\*592\*\*|588 → 592|band H's head moved 588/, where: ["plan", "v1"] },
@@ -375,14 +391,14 @@ addCheck(3, "every scene duration derives from the caption timeline rather than 
     const registry = p.md.match(/duration: "(\d+:\d\d)"/);
     if (!registry) f.push(`video ${p.n}: §11 registry entry has no duration field`);
     else if (p.n === 1 && registry[1] !== "3:15") f.push(`video 1: active registry duration ${registry[1]} ≠ measured 3:15`);
-    else if (p.n === 3 && registry[1] !== "3:07") f.push(`video 3: active registry duration ${registry[1]} ≠ measured 3:07`);
+    else if (p.n === 3 && registry[1] !== "3:14") f.push(`video 3: active registry duration ${registry[1]} ≠ measured 3:14`);
     else if (p.n === 2 && registry[1] !== p.duration) f.push(`video ${p.n}: §11 registry duration ${registry[1]} ≠ ${p.duration}`);
     if (!planText.includes(`≈ ${p.duration}`)) f.push(`video ${p.n}: the plan does not carry ≈ ${p.duration}`);
     notes.push(`video ${p.n}: ${p.scenes.length}/${p.scenes.length} scene durations re-derived from ${p.cues.length} cues · total ${mm} (last cue end ${derivedTotal.toFixed(1)}s)`);
   }
   notes.push(`set total ${Math.floor(setTotal / 60)}:${(setTotal % 60).toFixed(1).padStart(4, "0")} — the plan states ≈ 9 minutes 53 seconds`);
   if (!/9 minutes 53 seconds/.test(planText)) f.push("the plan does not state the set total of ≈ 9 minutes 53 seconds");
-  return "The editorial cue timelines remain the common source for all three scene tables. Videos 1 and 3 have separate measured shipping durations (3:15 and 3:07) recorded at activation; Video 2 retains provisional 150-wpm timing until its render exists.";
+  return "The editorial cue timelines remain the common source for all three scene tables. Videos 1 and 3 also carry separately measured delivery durations (3:15 and 3:14) from their reviewed renders; Video 2 retains its provisional 150-wpm timing until its render exists.";
 });
 
 /* ── check 4 ──────────────────────────────────────────────────────────────────────────────────── */
@@ -442,7 +458,7 @@ addCheck(4, "every crop keeps the complete official field or form language in fr
   const outside = form.lines.filter((l) => l.bottom < lo || l.top > hi);
   notes.push(`${bands.length} crops · ${form.lines.length} printed lines · 0 straddled edges · every line inside its band fits its band's own x window`);
   notes.push(`bands A–H span y ${lo}–${hi}, x ${Math.min(...covered.map((b) => b.x0))}–${Math.max(...covered.map((b) => b.x1))}; ${outside.length} printed line(s) fall outside every band: ${outside.map((l) => `"${foldForm(l.text).slice(0, 40)}"`).join(", ") || "none"}`);
-  return "Verified in PDF-point space against the held page's own text lines. Videos 1 and 3 additionally have human acceptance records for their rendered frames; Video 2 remains pre-render and cannot yet receive that second-layer review.";
+  return "Verified in PDF-point space against the held page's own text lines. Videos 1 and 3 additionally have human visual reviews of their rendered document frames; Video 2 remains pre-render and cannot yet receive that second-layer review.";
 });
 
 /* ── check 5 ──────────────────────────────────────────────────────────────────────────────────── */
@@ -529,7 +545,7 @@ addCheck(7, "no correction exists only in the addendum", (f, notes) => {
 });
 
 /* ── check 8 ──────────────────────────────────────────────────────────────────────────────────── */
-addCheck(8, "the canonical v5 package records two complete activations and one pending render", (f, notes) => {
+addCheck(8, "the canonical private Stream package records two activations and one pending render", (f, notes) => {
   const required = [
     ["plan", PLAN],
     ...pkgs.map((p) => [`video ${p.n} production file`, path.join(PROD, p.file)]),
@@ -539,13 +555,16 @@ addCheck(8, "the canonical v5 package records two complete activations and one p
     ...VIDEOS.map((v) => [`block map for ${v.screen}`, path.join(root, v.blockMap)]),
     ["active screenMedia registry", path.join(root, "config/texas/law-of-agency-screen-media.mjs")],
     ["video 1 final QC record", path.join(PROD, "qc/tx-iabs-1-2-document-overview-final.json")],
-    ["video 1 shipping MP4", path.join(root, "public/statecourse/media/tx-iabs-1-2-document-overview.mp4")],
-    ["video 1 shipping poster", path.join(root, "public/statecourse/media/tx-iabs-1-2-document-overview-poster.webp")],
-    ["video 1 shipping captions", path.join(root, "public/statecourse/media/tx-iabs-1-2-document-overview.vtt")],
-    ["video 1 shipping transcript", path.join(root, "public/statecourse/media/tx-iabs-1-2-document-overview.txt")],
-    ["video 3 final QC record", path.join(PROD, "qc/tx-loa-v03-texas-intermediary-brokerage-final.json")],
-    ["video 3 shipping captions", path.join(root, "public/statecourse/media/tx-loa-v03-texas-intermediary-brokerage.en.vtt")],
-    ["video 3 shipping transcript", path.join(root, "public/statecourse/media/tx-loa-v03-texas-intermediary-brokerage.txt")],
+    ["video 3 final QC record", path.join(PROD, "qc/tx-intermediary-brokerage-final.json")],
+    ["video 1 private captions", path.join(root, "private-media/texas/tx-iabs-1-2-document-overview.vtt")],
+    ["video 1 protected transcript", path.join(root, "private-media/texas/tx-iabs-1-2-document-overview.txt")],
+    ["video 3 private captions", path.join(root, "private-media/texas/tx-intermediary-brokerage.vtt")],
+    ["video 3 protected transcript", path.join(root, "private-media/texas/tx-intermediary-brokerage.txt")],
+    ["private Stream server allowlist", path.join(root, "config/stream-media.mjs")],
+    ["private Stream authorization and signing core", path.join(root, "netlify/functions/_lib/stream-delivery.mjs")],
+    ["private Stream playback endpoint", path.join(root, "netlify/functions/stream-playback.mjs")],
+    ["private Stream evidence endpoint", path.join(root, "netlify/functions/stream-events.mjs")],
+    ["private Stream transcript endpoint", path.join(root, "netlify/functions/stream-transcript.mjs")],
   ];
   for (const [name, p] of required) {
     if (!fs.existsSync(p) || (fs.statSync(p).isFile() && fs.statSync(p).size === 0)) {
@@ -578,8 +597,8 @@ addCheck(8, "the canonical v5 package records two complete activations and one p
       }
     }
     if (!/poster/i.test(p.md)) f.push(`video ${p.n}: no poster specification`);
-    if (p.n === 1 && !/poster[^\n]*(?:built|approved|shipping)/i.test(p.md)) {
-      f.push("video 1: the production file does not record its final poster as built");
+    if ((p.n === 1 || p.n === 3) && !/(?:poster[^\n]*(?:built|approved)|Cloudflare Stream player thumbnail)/i.test(p.md)) {
+      f.push(`video ${p.n}: the production file does not record its final Stream thumbnail as ready`);
     }
     if (p.n === 2 && !/does not exist until the render exists|not built|NOT BUILT/i.test(p.md)) {
       f.push(`video ${p.n}: the poster specification does not say the poster does not yet exist`);
@@ -627,37 +646,35 @@ addCheck(8, "the canonical v5 package records two complete activations and one p
     if (!/type: "retrieval"/.test(s3[0])) f.push(`${unit}-s3 is not a retrieval screen`);
     if (/content: RANGE/.test(s3[0])) f.push(`${unit}-s3 carries a content range — the module text would be on the retrieval screen`);
     if (/videos:|screenMedia|documents:/.test(s3[0])) f.push(`${unit}-s3 carries media — the video would still be on screen at retrieval`);
-    if (v.n === 1 && s1 && !new RegExp(v.stem).test(s1[0])) f.push(`${unit}-s1 does not carry the reviewed video 1 asset`);
-    if (v.n === 3 && s1 && !/8630af57b63d4255a1b51db7bb143398/.test(s1[0])) f.push(`${unit}-s1 does not carry the reviewed Cloudflare Stream video 3 asset`);
+    if ((v.n === 1 || v.n === 3) && s1 && !new RegExp(v.stem).test(s1[0])) f.push(`${unit}-s1 does not carry reviewed video ${v.n}`);
     if (v.n === 2 && s1 && /videos:|screenMedia/.test(s1[0])) f.push(`${unit}-s1 carries media before final assets and reviews exist`);
-    notes.push(`${unit}: s1 instruction (${v.n === 2 ? "video pending" : "reviewed video active"}) → s2 practice → s3 retrieval, questionId only, no content range and no media`);
+    notes.push(`${unit}: s1 instruction (${v.n === 2 ? "video pending" : "reviewed private Stream video active"}) → s2 practice → s3 retrieval, questionId only, no content range and no media`);
   }
   /* Exactly videos 1 and 3 may be wired; video 2 remains absent. */
   for (const v of VIDEOS) {
     const map = read(path.join(root, v.blockMap));
-    if (v.n === 1 && !map.includes(v.stem)) f.push(`${v.blockMap} does not reference active ${v.stem}`);
+    if ((v.n === 1 || v.n === 3) && !map.includes(v.stem)) f.push(`${v.blockMap} does not reference active ${v.stem}`);
     if (v.n === 2 && map.includes(v.stem)) f.push(`${v.blockMap} references pending ${v.stem}`);
-    if (v.n === 3 && !map.includes("8630af57b63d4255a1b51db7bb143398")) f.push(`${v.blockMap} does not reference active Cloudflare Stream video 3`);
   }
   const mediaDir = path.join(root, "public/statecourse/media");
-  const expectedVideo1 = new Set([
-    "tx-iabs-1-2-document-overview.mp4",
-    "tx-iabs-1-2-document-overview-poster.webp",
-    "tx-iabs-1-2-document-overview.vtt",
-    "tx-iabs-1-2-document-overview.txt",
-  ]);
-  const shippedVideo1 = fs.readdirSync(mediaDir).filter((n) => n.startsWith(VIDEOS[0].stem));
-  if (shippedVideo1.length !== expectedVideo1.size || shippedVideo1.some((n) => !expectedVideo1.has(n))) {
-    f.push(`video 1 shipping set is not exact: ${shippedVideo1.join(", ")}`);
+  const publicCopies = fs.readdirSync(mediaDir).filter((n) => VIDEOS.some((v) => n.startsWith(v.stem)));
+  if (publicCopies.length) {
+    f.push(`private Stream source has a public media copy: ${publicCopies.join(", ")}`);
   }
-  const premature = fs.readdirSync(mediaDir).filter((n) => n.startsWith(VIDEOS[1].stem));
-  if (premature.length) {
-    f.push(`pending video shipping media already exists: ${premature.join(", ")}`);
+  const screenRegistry = read(path.join(root, "config/texas/law-of-agency-screen-media.mjs"));
+  for (const v of VIDEOS.filter((candidate) => candidate.n !== 2)) {
+    if (!screenRegistry.includes(`provider: "cloudflare-stream"`) || !screenRegistry.includes(`assetKey: "${v.stem}"`)) {
+      f.push(`active private Stream registry is missing ${v.stem}`);
+    }
+  }
+  if (screenRegistry.includes(VIDEOS[1].stem)) f.push(`private Stream registry contains pending ${VIDEOS[1].stem}`);
+  for (const signal of ["signedPlaybackRequired: true", "streamReady: true", "captionsUploaded: true", "protectedTranscriptReady: true", "autoplay: false", "required: false", "nonBlocking: true"]) {
+    if (!screenRegistry.includes(signal)) f.push(`private Stream registry does not assert ${signal}`);
   }
   for (const [name, text] of [["plan", planText], ...pkgs.map((p) => [`video ${p.n}`, p.md])]) {
     if (/TREC[- ]approved|approved by (?:the )?(?:TREC|Texas Real Estate Commission)/i.test(text)) f.push(`${name} claims TREC approval`);
   }
-  notes.push("video 1 has an exact four-asset local set · video 3 has reviewed Cloudflare hosting plus local final captions and transcript · video 2 remains absent · no claim of TREC approval");
+  notes.push("videos 1 and 3 use signed private Stream delivery with protected transcripts and active instruction-screen references · video 2 remains absent · no public source copies · no claim of TREC approval");
   return "The validator can prove asset presence, exact placement, status separation, and the recorded QC gates. Human review remains the authority for visual quality, logo safety, and factual fidelity; its signed record is hashed into the freeze.";
 });
 
@@ -676,6 +693,6 @@ if (process.argv.includes("--json")) {
   }
   const partials = checks.filter((c) => c.partial);
   console.log(`${checks.length - failed.length}/${checks.length} checks pass · ${partials.length} are partial by nature (checks ${partials.map((c) => c.n).join(", ")}) and say so above`);
-  console.log("Editorial and legal package READY · rendered assets PARTIAL (2/3) · screenMedia integration READY · course placement PARTIAL (2/3)");
+  console.log("Editorial and legal package READY · rendered assets PARTIAL (2/3) · private Stream integration READY · course placement PARTIAL (2/3)");
 }
 process.exit(failed.length ? 1 : 0);

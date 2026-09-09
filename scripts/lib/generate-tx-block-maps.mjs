@@ -28,13 +28,11 @@
  * ─────────────────────────────────────────────────────────────────────────────────────────────
  *
  * A course may supply `screenMedia`, keyed by an emitted instruction-screen id. The generator
- * refuses unknown or retrieval-screen ids, refuses required/autoplay/assessment media, and refuses
- * to write a generated map unless the shipping media dependencies exist. Same-origin videos need
- * an MP4, poster, shipping VTT and plain-text transcript under public/statecourse/media. A hosted
- * Cloudflare Stream video needs an exact HTTPS player URL, provider-managed poster, enabled English
- * text track, and the same local shipping VTT and transcript. Both routes require the author to
- * record factual, visual, logo-safety and accessibility review. This is deliberately stricter than
- * California's first media hook because a partially attached player is worse than no video.
+ * refuses unknown or retrieval-screen ids and refuses required/autoplay/assessment media. Legacy
+ * native delivery must carry a local MP4, poster, shipping VTT and transcript. Production Stream
+ * delivery instead requires a server-owned asset key, confirmed private signed playback, uploaded
+ * captions and a protected transcript. Both modes require factual, visual, logo-safety and
+ * accessibility review.
  *
  * Texas Law of Agency activates its reviewed IABS 1-2 video at t02u5-s1 and the reviewed Cloudflare
  * Stream intermediary video at t06u3-s1. The remaining editorial package targets t05u3-s1 and stays
@@ -52,9 +50,8 @@
  *   3.  NON-BLOCKING PROGRESSION. The screen's completion, and the block's, do not depend on the
  *       media. A student who never opens it progresses identically: no progress gate, no completion
  *       requirement, no assessment dependency, no autoplay.
- *   4.  VIDEO, VTT, TRANSCRIPT AND POSTER PRESENCE. Same-origin assets resolve on disk. A hosted
- *       Stream entry uses a validated Cloudflare iframe URL and provider-managed poster, while its
- *       final VTT and transcript still resolve locally. A missing dependency is a generation error.
+ *   4.  COMPLETE DELIVERY PACKAGE. Native media resolves all four local assets. Stream media names
+ *       a private uploaded asset, its uploaded caption language and protected transcript.
  *   5.  ACCESSIBLE PLAYER CONTROLS AND KEYBOARD ACCESS. The emitted entry carries the controls the
  *       player needs and is reachable and operable by keyboard alone, in the screen's tab order.
  *   6.  CAPTION AVAILABILITY. A caption track is present, is served, and is selectable — and it is
@@ -67,10 +64,9 @@
  *       REFUSES TO GENERATE. Retrieval happens on its own screen with the video, the document and
  *       the visible answers no longer displayed; that separation must be enforced here, not
  *       remembered by whoever authors the spec.
- *   10. NO ACTIVATION WHEN ANY REQUIRED MEDIA ASSET IS ABSENT. If a local asset is missing or a
- *       hosted player URL is malformed, generation fails before overwriting the block map. There is
- *       no such thing as a half-attached video: a dead player, a nonfunctional poster, a decorative
- *       badge or an unavailable transcript is worse than no video.
+ *   10. NO PARTIAL ACTIVATION. A native asset set or private Stream delivery must be complete before
+ *       generation. A dead player, inaccessible captions or unavailable transcript is worse than
+ *       no video.
  */
 
 import fs from "node:fs";
@@ -163,6 +159,36 @@ export function validateScreenMedia({ root, moduleNumber, blocks, screenMedia = 
       }
       if (video.factualQcApproved !== true || video.visualQcApproved !== true || video.logoSafeReviewed !== true || video.accessibilityQcApproved !== true) {
         throw new Error(`${prefix} is missing factual, visual, logo-safety or accessibility approval`);
+      }
+      if (video.provider === "cloudflare-stream") {
+        if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(video.assetKey || "")) {
+          throw new Error(`${prefix} needs a valid server-owned Stream asset key`);
+        }
+        if (video.signedPlaybackRequired !== true || video.streamReady !== true) {
+          throw new Error(`${prefix} must confirm private signed Stream playback is ready`);
+        }
+        if (video.captionsUploaded !== true || !/^[a-z]{2}(?:-[A-Z]{2})?$/.test(video.captionLanguage || "")) {
+          throw new Error(`${prefix} must confirm an uploaded caption language`);
+        }
+        if (video.protectedTranscriptReady !== true) {
+          throw new Error(`${prefix} must confirm a protected transcript`);
+        }
+        for (const publicField of ["src", "poster", "captions", "transcript"]) {
+          if (video[publicField]) throw new Error(`${prefix} cannot publish ${publicField} in private Stream mode`);
+        }
+        return Object.freeze({
+          provider: "cloudflare-stream",
+          assetKey: video.assetKey,
+          captionLanguage: video.captionLanguage,
+          label: video.label,
+          duration: video.duration,
+          required: false,
+          nonBlocking: true,
+          autoplay: false,
+          controls: true,
+          keyboardAccessible: true,
+          captionsSelectable: true,
+        });
       }
       if (/provisional/i.test(video.captions || "")) throw new Error(`${prefix} cannot use provisional captions`);
       const hosted = Boolean(video.provider);

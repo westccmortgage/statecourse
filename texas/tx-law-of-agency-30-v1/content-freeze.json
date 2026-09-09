@@ -1,22 +1,70 @@
 {
-  "freezeId": "LOA-CONTENT-FREEZE-2026-09-09-v9",
+  "freezeId": "LOA-CONTENT-FREEZE-2026-09-08-v12",
   "courseId": "tx-law-of-agency-30-v1",
   "approvalForm": "LOA-1 rev 09/11/2024",
-  "frozenOn": "2026-08-30",
+  "frozenOn": "2026-09-08",
   "breakHistory": [
     {
-      "brokeFreeze": "LOA-CONTENT-FREEZE-2026-09-08-v8",
-      "on": "2026-09-09",
+      "brokeFreeze": "LOA-CONTENT-FREEZE-2026-09-08-v11",
+      "on": "2026-09-08",
       "module": "NONE — no curriculum wording changed; all twelve module sources remain byte-identical.",
-      "change": "The video-plan pointer moved from LOA-VIDEO-PLAN-FREEZE-2026-09-08-v4 to LOA-VIDEO-PLAN-FREEZE-2026-09-09-v5 after the accepted Texas Intermediary Brokerage render, synchronized English captions and transcript were activated through Cloudflare Stream as optional, non-blocking media at t06u3-s1. Video 2 remains inactive.",
-      "reason": "The content freeze pins the video-plan freeze artifact. Activating the second reviewed optional asset changes that dependency byte-state, so the content-freeze id must advance even though the regulated curriculum wording and time model do not.",
+      "change": "The video-plan pointer moved to LOA-VIDEO-PLAN-FREEZE-2026-09-08-v8 after the Stream evidence tables gained explicit Row Level Security and the security regression test and runbook were strengthened to require it.",
+      "reason": "The content freeze pins the complete protected-delivery byte-state. Adding defense-in-depth at the database boundary changes that dependency and therefore receives new truthful freeze identifiers, while playback, assessment, regulated curriculum and time allocation remain unchanged.",
+      "previousFreezeSha256": "71986649ca86710386e8212f69089296a59e1b5ff95dfc63a85f20bf3b935f5f",
+      "previousFreezeBytes": 33033,
+      "auditsReRun": [
+        "node scripts/validate-loa-video-packages.mjs",
+        "node --test tests/cloudflare-stream-security.test.mjs tests/texas-video-integration.test.mjs tests/texas-law-of-agency.test.mjs tests/video-portfolio.test.mjs",
+        "node scripts/freeze-loa-video-plan.mjs --write",
+        "node scripts/freeze-loa-curriculum.mjs --write",
+        "npm test"
+      ]
+    },
+    {
+      "brokeFreeze": "LOA-CONTENT-FREEZE-2026-09-08-v10",
+      "on": "2026-09-08",
+      "module": "NONE — no curriculum wording changed; all twelve module sources remain byte-identical.",
+      "change": "The video-plan pointer moved to LOA-VIDEO-PLAN-FREEZE-2026-09-08-v7 after removing a stale version number from validator check 8's human-readable heading.",
+      "reason": "The content freeze pins the validator byte-state through the video freeze. Even a reporting-only correction must receive a new, truthful identifier; playback, assessment, regulated curriculum and time allocation remain unchanged.",
+      "previousFreezeSha256": "65379f24564785577243b7ddf9bf5172f803f6c018b31ee12b45b11e381153c8",
+      "previousFreezeBytes": 32049,
+      "auditsReRun": [
+        "node scripts/validate-loa-video-packages.mjs",
+        "node scripts/freeze-loa-video-plan.mjs --write",
+        "node scripts/freeze-loa-curriculum.mjs --write",
+        "npm test"
+      ]
+    },
+    {
+      "brokeFreeze": "LOA-CONTENT-FREEZE-2026-09-08-v9",
+      "on": "2026-09-08",
+      "module": "NONE — no curriculum wording changed; all twelve module sources remain byte-identical.",
+      "change": "The video-plan pointer moved to LOA-VIDEO-PLAN-FREEZE-2026-09-08-v6 after the validator gained a bundled-runtime fallback and the regression suite was updated to require private-only delivery for both reviewed videos.",
+      "reason": "The content freeze pins the complete video-delivery byte-state, including its validator. Runtime portability and the final public-copy regression check changed that pinned dependency and therefore require new freeze identifiers even though playback behavior, curriculum, assessment and time allocation did not change.",
+      "previousFreezeSha256": "c02a36935be037ac5eae6ec0db9a16029302e2cd51f2f6ff13f2790af213fcaa",
+      "previousFreezeBytes": 30775,
+      "auditsReRun": [
+        "node scripts/validate-loa-video-packages.mjs",
+        "node --test tests/cloudflare-stream-security.test.mjs tests/texas-video-integration.test.mjs tests/texas-law-of-agency.test.mjs",
+        "node scripts/freeze-loa-video-plan.mjs --write",
+        "node scripts/freeze-loa-curriculum.mjs --write",
+        "npm test"
+      ]
+    },
+    {
+      "brokeFreeze": "LOA-CONTENT-FREEZE-2026-09-08-v8",
+      "on": "2026-09-08",
+      "module": "NONE — no curriculum wording changed; all twelve module sources remain byte-identical.",
+      "change": "The video-plan pointer moved to LOA-VIDEO-PLAN-FREEZE-2026-09-08-v5. Videos 1 and 3 now use private Cloudflare Stream delivery with signed URLs, production-origin restrictions, uploaded English captions and authenticated transcripts; Video 3 was activated at t06u3-s1 and the former public copies of Video 1 were removed. Video 2 remains unrendered and inactive.",
+      "reason": "The content freeze pins the complete video delivery byte-state. Moving from public static files to server-authorized Stream playback changes that dependency and therefore requires a new content-freeze id, even though no regulated curriculum wording, assessment or time allocation changed.",
       "previousFreezeSha256": "c47a699ec34aa098c85b557e967d3e073ed1e07fe13883626c17e2817a725c20",
       "previousFreezeBytes": 29373,
       "auditsReRun": [
         "node scripts/validate-loa-video-packages.mjs",
-        "node --test tests/texas-video-integration.test.mjs tests/texas-law-of-agency.test.mjs tests/video-portfolio.test.mjs",
+        "node --test tests/cloudflare-stream-security.test.mjs tests/texas-video-integration.test.mjs tests/texas-law-of-agency.test.mjs",
         "node scripts/freeze-loa-video-plan.mjs --write",
-        "node --test tests/*.test.mjs"
+        "node scripts/freeze-loa-curriculum.mjs --write",
+        "npm test"
       ]
     },
     {
@@ -412,10 +460,10 @@
       "sha256": "3a366211b5659253b697e17832d67f51863a719fe736419fa87bb9de7103e826",
       "bytes": 7220
     },
-    "video plan freeze (LOA-VIDEO-PLAN-FREEZE-2026-09-09-v5 — hashes the plan and every render dependency)": {
+    "video plan freeze (LOA-VIDEO-PLAN-FREEZE-2026-09-08-v8 — hashes the plan and every render and delivery dependency)": {
       "path": "texas/tx-law-of-agency-30-v1/video-plan-freeze.json",
-      "sha256": "d2d83682c149cce96d9bda6a9dc19e48e07e5271f7c2391cbc79aa3147088395",
-      "bytes": 26490
+      "sha256": "839a127b6ebbec8a03985b245cc7455ee24c46c7465a9b64b92a556bc1167695",
+      "bytes": 28230
     }
   },
   "reproduce": [

@@ -28,9 +28,9 @@
  *      reflection are rendered as skippable regions carrying an explicit "not required" statement,
  *      outside the required-time accounting, and the Next control is reachable without touching
  *      either.
- *   3. No video gates anything. Video is not rendered at all in this build — none has been produced
- *      — and the video screen is rendered as a labelled placeholder that states the transcript is
- *      the primary artifact and that the screen carries no completion requirement.
+ *   3. No video gates anything. This isolated reviewer fixture deliberately omits external Stream
+ *      playback and renders the video screen as a labelled placeholder stating that the transcript
+ *      is the primary artifact and the screen carries no completion requirement.
  *   4. A short-answer box has no minimum length. The rubric text says the answer is graded on the
  *      elements identified and never on length, and no input carries a minlength attribute.
  *

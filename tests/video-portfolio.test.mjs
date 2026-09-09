@@ -47,28 +47,30 @@ test("California's four active videos have complete shipping assets", () => {
   assert.equal(california.active_instructional_videos, 4);
 });
 
-test("Texas records two active videos and keeps the remaining package inactive", () => {
+test("Texas records two private Stream videos and keeps the remaining package inactive", () => {
   const texas = portfolio.states.find((state) => state.state_code === "TX");
   assert.equal(texas.editorial_packages_ready, 3);
   assert.equal(texas.rendered_instructional_videos, 2);
   assert.equal(texas.active_instructional_videos, 2);
-  const active = "tx-iabs-1-2-document-overview";
-  for (const extension of ["mp4", "vtt", "txt"]) {
-    const file = path.join(root, `public/statecourse/media/${active}.${extension}`);
-    assert.ok(fs.existsSync(file) && fs.statSync(file).size > 0, file);
+  for (const active of ["tx-iabs-1-2-document-overview", "tx-intermediary-brokerage"]) {
+    for (const extension of ["vtt", "txt"]) {
+      const file = path.join(root, `private-media/texas/${active}.${extension}`);
+      assert.ok(fs.existsSync(file) && fs.statSync(file).size > 0, file);
+    }
+    for (const extension of ["mp4", "vtt", "txt"]) {
+      assert.equal(fs.existsSync(path.join(root, `public/statecourse/media/${active}.${extension}`)), false, `${active}.${extension} must not be public`);
+    }
+    assert.equal(fs.existsSync(path.join(root, `public/statecourse/media/${active}-poster.webp`)), false, `${active}-poster.webp must not be public`);
   }
-  const poster = path.join(root, `public/statecourse/media/${active}-poster.webp`);
-  assert.ok(fs.existsSync(poster) && fs.statSync(poster).size > 0, poster);
-  for (const extension of ["en.vtt", "txt"]) {
-    const file = path.join(root, `public/statecourse/media/tx-loa-v03-texas-intermediary-brokerage.${extension}`);
-    assert.ok(fs.existsSync(file) && fs.statSync(file).size > 0, file);
+  for (const stem of ["tx-representation-or-showing-only-2026"]) {
+    assert.equal(fs.existsSync(path.join(root, `public/statecourse/media/${stem}.mp4`)), false, stem);
   }
   assert.equal(fs.existsSync(path.join(root, "public/statecourse/media/tx-representation-or-showing-only-2026.mp4")), false);
 });
 
 test("the portfolio release rule requires every asset and review layer", () => {
   const text = Object.values(portfolio.initial_policy).join(" ");
-  for (const requirement of ["MP4", "poster", "VTT", "transcript", "factual review", "visual review", "logo-safety review", "accessibility review"]) {
+  for (const requirement of ["MP4", "poster", "VTT", "transcript", "factual review", "visual review", "logo-safety review", "accessibility review", "Cloudflare Stream", "signed-playback", "origin restriction"]) {
     assert.match(text, new RegExp(requirement, "i"), requirement);
   }
 });

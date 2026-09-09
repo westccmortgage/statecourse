@@ -9,7 +9,7 @@
     "selection_rule": "Use video only for a document, relationship, decision sequence, calculation, or professional judgment that is materially clearer when shown than when read.",
     "credit_rule": "A video counts toward regulated time only when that state's approved timing method permits it and measured duration is included in a regulator-ready ledger.",
     "accessibility_rule": "Every video requires final captions, a separate transcript, keyboard-operable controls, no autoplay, and a complete text equivalent in the course.",
-    "release_rule": "No video is activated until its MP4, poster, final VTT, transcript, factual review, visual review, logo-safety review, and accessibility review all pass."
+    "release_rule": "No video is activated until its source MP4, poster, final VTT, transcript, factual review, visual review, logo-safety review, accessibility review, private Cloudflare Stream upload, signed-playback gate, and production-origin restriction all pass."
   },
   "states": [
     {
@@ -21,7 +21,7 @@
       "rendered_instructional_videos": 2,
       "active_instructional_videos": 2,
       "editorial_packages_ready": 3,
-      "next_action": "Complete visual QC and activation for the remaining frozen Law of Agency package: Representation or Showing Only."
+      "next_action": "Render and QC the remaining frozen Law of Agency package: Representation or Showing Only."
     },
     {
       "priority": 2,

@@ -168,6 +168,15 @@ function screenVideoHtml(screen) {
 }
 
 function singleVideoHtml(video) {
+  if (video?.provider === "cloudflare-stream" && video.assetKey) {
+    const parts = String(video.duration || "0:00").split(":").map(Number);
+    const durationSeconds = parts.length === 2 && parts.every(Number.isFinite) ? parts[0] * 60 + parts[1] : 0;
+    const label = video.label || "Video overview";
+    return `<section class="screen-video" aria-label="${escapeHtml(label)}">
+      <p class="screen-video-caption"><span class="optional-tag">Optional</span> ${escapeHtml(label)}${video.duration ? ` · ${escapeHtml(video.duration)}` : ""} · Captions available</p>
+      <course-video provider="cloudflare-stream" asset-key="${escapeHtml(video.assetKey)}" enrollment-id="${escapeHtml(state.enrollmentId)}" label="${escapeHtml(label)}" duration-seconds="${durationSeconds}"></course-video>
+    </section>`;
+  }
   if (!video || !video.src) return "";
   const hostedPlayer = video.provider === "cloudflare-stream"
     ? `<div class="screen-video-frame"><iframe

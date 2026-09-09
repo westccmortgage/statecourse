@@ -2,10 +2,13 @@
   command = "bash site/build.sh"
   publish = "dist"
 
+[functions]
+  included_files = ["private-media/texas/*.txt"]
+
 [[headers]]
   for = "/*"
   [headers.values]
-    Content-Security-Policy = "default-src 'self'; base-uri 'self'; form-action 'self'; frame-ancestors 'self'; frame-src 'self' https://customer-jie0jqrpv6850xg8.cloudflarestream.com; img-src 'self' data:; script-src 'self'; style-src 'self'; connect-src 'self'"
+    Content-Security-Policy = "default-src 'self'; base-uri 'self'; form-action 'self'; frame-ancestors 'self'; frame-src https://*.cloudflarestream.com; img-src 'self' data:; script-src 'self' https://embed.cloudflarestream.com; style-src 'self'; connect-src 'self'"
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
     X-Frame-Options = "SAMEORIGIN"
@@ -164,6 +167,21 @@
 [[redirects]]
   from = "/api/student/blocks"
   to = "/.netlify/functions/student-blocks"
+  status = 200
+
+[[redirects]]
+  from = "/api/stream/playback"
+  to = "/.netlify/functions/stream-playback"
+  status = 200
+
+[[redirects]]
+  from = "/api/stream/events"
+  to = "/.netlify/functions/stream-events"
+  status = 200
+
+[[redirects]]
+  from = "/api/stream/transcript"
+  to = "/.netlify/functions/stream-transcript"
   status = 200
 
 [[redirects]]
