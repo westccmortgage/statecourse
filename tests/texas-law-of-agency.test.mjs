@@ -291,7 +291,7 @@ test("the curriculum freeze pins the video state through the video freeze, not t
 
 test("the video freeze names itself, supersedes plan v1 by hash, and still hashes every render dependency", () => {
   assert.match(VIDEO_FREEZE.freezeId, /^LOA-VIDEO-PLAN-FREEZE-\d{4}-\d{2}-\d{2}(-v\d+)?$/, "a re-freeze must bump its version rather than reusing an id");
-  assert.equal(VIDEO_FREEZE.freezeId, "LOA-VIDEO-PLAN-FREEZE-2026-09-09-v5");
+  assert.equal(VIDEO_FREEZE.freezeId, "LOA-VIDEO-PLAN-FREEZE-2026-09-09-v6");
   assert.equal(VIDEO_FREEZE.courseId, "tx-law-of-agency-30-v1");
 
   /* The superseded plan is identified by hash, not by adjective. */
@@ -319,6 +319,9 @@ test("the video freeze names itself, supersedes plan v1 by hash, and still hashe
     "public/statecourse/media/tx-iabs-1-2-document-overview.vtt",
     "public/statecourse/media/tx-iabs-1-2-document-overview.txt",
     "texas/tx-law-of-agency-30-v1/video-production/qc/tx-iabs-1-2-document-overview-final.json",
+    "public/statecourse/media/tx-loa-v02-representation-or-showing-only-2026.en.vtt",
+    "public/statecourse/media/tx-loa-v02-representation-or-showing-only-2026.txt",
+    "texas/tx-law-of-agency-30-v1/video-production/qc/tx-loa-v02-representation-or-showing-only-2026-final.json",
     "public/statecourse/media/tx-loa-v03-texas-intermediary-brokerage.en.vtt",
     "public/statecourse/media/tx-loa-v03-texas-intermediary-brokerage.txt",
     "texas/tx-law-of-agency-30-v1/video-production/qc/tx-loa-v03-texas-intermediary-brokerage-final.json",
@@ -345,9 +348,9 @@ test("the video freeze records every check the validator ran, and passes none of
 test("video status is reported in four layers and no layer borrows another's", () => {
   const s = VIDEO_FREEZE.status;
   assert.match(s.editorialAndLegalPackage, /^READY\b/);
-  assert.match(s.renderedAssets, /^PARTIAL\b/);
+  assert.match(s.renderedAssets, /^COMPLETE\b/);
   assert.match(s.screenMediaIntegrationSupport, /^READY\b/);
-  assert.match(s.coursePlacementActivation, /^PARTIAL\b/);
+  assert.match(s.coursePlacementActivation, /^COMPLETE\b/);
   assert.match(s.doNotSay, /production-ready/);
 
   /* No canonical video file may call the package production-ready. */
@@ -365,7 +368,7 @@ test("video status is reported in four layers and no layer borrows another's", (
   const module2 = fs.readFileSync(path.join(root, "config/texas/law-of-agency-module-2-blocks.mjs"), "utf8");
   assert.match(module2, /tx-iabs-1-2-document-overview\.mp4/, "the reviewed IABS video is not wired");
   const module5 = fs.readFileSync(path.join(root, "config/texas/law-of-agency-module-5-blocks.mjs"), "utf8");
-  assert.doesNotMatch(module5, /videos:|screenMedia/, "module 5 has media wired before final assets and reviews exist");
+  assert.match(module5, /1f6768807c1e1d9985e0566610bd3ec5/, "the reviewed Cloudflare Stream video is not wired in module 5");
   const module6 = fs.readFileSync(path.join(root, "config/texas/law-of-agency-module-6-blocks.mjs"), "utf8");
   assert.match(module6, /8630af57b63d4255a1b51db7bb143398/, "the reviewed Cloudflare Stream video is not wired");
 });
@@ -418,7 +421,7 @@ test("the screenMedia hook is built, refuses incomplete activation, and has focu
   assert.match(gen, /DO NOT HAND-EDIT A GENERATED COURSE FILE/);
 });
 
-test("the reviewed local and hosted videos ship completely and the remaining video does not", () => {
+test("all three reviewed local and hosted videos ship completely", () => {
   const active = "tx-iabs-1-2-document-overview";
   const media = path.join(root, "public/statecourse/media");
   for (const suffix of [".mp4", ".vtt", ".txt", "-poster.webp"]) {
@@ -426,11 +429,13 @@ test("the reviewed local and hosted videos ship completely and the remaining vid
     assert.ok(fs.existsSync(file) && fs.statSync(file).size > 0, file);
   }
   for (const suffix of [".en.vtt", ".txt"]) {
+    const file = path.join(media, `tx-loa-v02-representation-or-showing-only-2026${suffix}`);
+    assert.ok(fs.existsSync(file) && fs.statSync(file).size > 0, file);
+  }
+  for (const suffix of [".en.vtt", ".txt"]) {
     const file = path.join(media, `tx-loa-v03-texas-intermediary-brokerage${suffix}`);
     assert.ok(fs.existsSync(file) && fs.statSync(file).size > 0, file);
   }
-  const pending = fs.readdirSync(media).filter((name) => name.startsWith("tx-representation-or-showing-only-2026"));
-  assert.deepEqual(pending, [], "video 2 has assets before its final activation");
   assert.match(VIDEO_FREEZE.notApproved, /holds no TREC approval/i);
 });
 

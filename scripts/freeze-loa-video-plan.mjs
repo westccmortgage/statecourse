@@ -38,14 +38,14 @@ const PROD = path.join(HOME, "video-production");
 const OUT = path.join(HOME, "video-plan-freeze.json");
 
 const COURSE_ID = "tx-law-of-agency-30-v1";
-const FREEZE_ID = "LOA-VIDEO-PLAN-FREEZE-2026-09-09-v5";
+const FREEZE_ID = "LOA-VIDEO-PLAN-FREEZE-2026-09-09-v6";
 
 const PREVIOUS_FREEZE = Object.freeze({
-  freezeId: "LOA-VIDEO-PLAN-FREEZE-2026-09-08-v4",
-  sha256: "d3be6148a53991db565a4ed1b358f1852b52fd1d4c5e1e964f1bc4ff05025026",
-  bytes: 25498,
+  freezeId: "LOA-VIDEO-PLAN-FREEZE-2026-09-09-v5",
+  sha256: "d2d83682c149cce96d9bda6a9dc19e48e07e5271f7c2391cbc79aa3147088395",
+  bytes: 26490,
   change:
-    "The accepted Texas Intermediary Brokerage render, English captions and transcript were activated through Cloudflare Stream as optional, non-blocking media at t06u3-s1. Video 2 remains inactive.",
+    "The accepted Representation or Showing Only render, English captions and transcript were activated through Cloudflare Stream as optional, non-blocking media at t05u3-s1. All three selected Texas Law of Agency videos are now active.",
 });
 
 /**
@@ -216,7 +216,7 @@ if (!validated.pass) {
 
 /* ── everything a render depends on ──────────────────────────────────────────────────────────── */
 const artifacts = {
-  "video instruction plan (v5, canonical)": hashOf(path.join(HOME, "video-instruction-plan.md")),
+  "video instruction plan (v6, canonical)": hashOf(path.join(HOME, "video-instruction-plan.md")),
 
   "production file — video 1 IABS 1-2 Document Overview": hashOf(path.join(PROD, "iabs-1-2-document-overview.md")),
   "production file — video 2 Representation or Showing Only": hashOf(path.join(PROD, "representation-or-showing-only-2026.md")),
@@ -231,6 +231,9 @@ const artifacts = {
   "video 1 shipping poster": hashOf(path.join(root, "public/statecourse/media/tx-iabs-1-2-document-overview-poster.webp")),
   "video 1 shipping captions": hashOf(path.join(root, "public/statecourse/media/tx-iabs-1-2-document-overview.vtt")),
   "video 1 shipping transcript": hashOf(path.join(root, "public/statecourse/media/tx-iabs-1-2-document-overview.txt")),
+  "video 2 final QC record": hashOf(path.join(PROD, "qc/tx-loa-v02-representation-or-showing-only-2026-final.json")),
+  "video 2 shipping captions": hashOf(path.join(root, "public/statecourse/media/tx-loa-v02-representation-or-showing-only-2026.en.vtt")),
+  "video 2 shipping transcript": hashOf(path.join(root, "public/statecourse/media/tx-loa-v02-representation-or-showing-only-2026.txt")),
   "video 3 final QC record": hashOf(path.join(PROD, "qc/tx-loa-v03-texas-intermediary-brokerage-final.json")),
   "video 3 shipping captions": hashOf(path.join(root, "public/statecourse/media/tx-loa-v03-texas-intermediary-brokerage.en.vtt")),
   "video 3 shipping transcript": hashOf(path.join(root, "public/statecourse/media/tx-loa-v03-texas-intermediary-brokerage.txt")),
@@ -260,7 +263,7 @@ const artifacts = {
 
 const VIDEOS = Object.freeze([
   Object.freeze({ n: 1, title: "IABS 1-2 Document Overview", stem: "tx-iabs-1-2-document-overview", unit: "T02U5", screen: "t02u5-s1", retrievalScreen: "t02u5-s3", derivedDuration: "3:30", measuredDuration: "3:15", renderStatus: "ACTIVE", scenes: 10, cues: 39 }),
-  Object.freeze({ n: 2, title: "Representation or Showing Only: the 2026 decision", stem: "tx-representation-or-showing-only-2026", unit: "T05U3", screen: "t05u3-s1", retrievalScreen: "t05u3-s3", derivedDuration: "3:03", scenes: 7, cues: 33 }),
+  Object.freeze({ n: 2, title: "Representation or Showing Only: the 2026 decision", stem: "tx-representation-or-showing-only-2026", unit: "T05U3", screen: "t05u3-s1", retrievalScreen: "t05u3-s3", derivedDuration: "3:03", measuredDuration: "3:05", renderStatus: "ACTIVE_CLOUDFLARE_STREAM", scenes: 7, cues: 37 }),
   Object.freeze({ n: 3, title: "Texas Intermediary Brokerage", stem: "tx-intermediary-brokerage", unit: "T06U3", screen: "t06u3-s1", retrievalScreen: "t06u3-s3", derivedDuration: "3:20", measuredDuration: "3:07", renderStatus: "ACTIVE_CLOUDFLARE_STREAM", scenes: 7, cues: 45 }),
 ]);
 
@@ -274,9 +277,9 @@ const freeze = {
   /* No layer may borrow another's status. */
   status: {
     editorialAndLegalPackage: "READY — at this freeze and not before it. Script, HeyGen prompt, storyboard and scene table, clean transcript, caption cue text, crop coordinates, highlight coordinates, duration metadata and poster specification are complete, source-verified and internally consistent.",
-    renderedAssets: "PARTIAL — Video 1 has a final local MP4, shipping .vtt, transcript and poster. Video 3 has an accepted Cloudflare Stream render, provider-managed poster, uploaded English track, local final .vtt and transcript. Video 2 remains pending.",
+    renderedAssets: "COMPLETE — Video 1 has a final local MP4, shipping .vtt, transcript and poster. Videos 2 and 3 have accepted Cloudflare Stream renders, provider-managed posters, uploaded English tracks, local final .vtt files and transcripts.",
     screenMediaIntegrationSupport: "READY — scripts/lib/generate-tx-block-maps.mjs validates exact instruction-screen placement, optional/non-blocking delivery, complete local assets or a strict Cloudflare Stream URL, shipping captions, measured duration, explicit transcript, assessment separation and completed factual/visual/accessibility/logo-safety review. Eleven focused tests pass.",
-    coursePlacementActivation: "PARTIAL — Video 1 is active at t02u5-s1 and Video 3 is active at t06u3-s1 as optional, non-blocking media. Video 2 has no shipping assets or block-map reference.",
+    coursePlacementActivation: "COMPLETE — Videos 1, 2 and 3 are active at t02u5-s1, t05u3-s1 and t06u3-s1 as optional, non-blocking media.",
     doNotSay: "'production-ready'. It collapses distinct asset, placement, course-approval and provider-approval layers into one.",
   },
 
@@ -351,4 +354,4 @@ if (process.argv.includes("--write")) {
 }
 
 console.log(`  ${Object.keys(artifacts).length} artifacts · validator ${validated.checks.filter((c) => c.pass).length}/${validated.checks.length} · supersedes plan v1 ${SUPERSEDES.sha256.slice(0, 12)}…`);
-console.log(`  editorial READY · rendered assets PARTIAL (2/3) · screenMedia integration READY · course placement PARTIAL (2/3)`);
+console.log(`  editorial READY · rendered assets COMPLETE (3/3) · screenMedia integration READY · course placement COMPLETE (3/3)`);

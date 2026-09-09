@@ -4,9 +4,9 @@
 **Course approval form:** LOA-1, revision 09/11/2024 — 12 topics, 57 units, 1,500 prescribed minutes.
 Transcribed at `config/texas/law-of-agency-course-form.mjs`; held at `texas/trec-sources/LOA-1.pdf`.
 **Plan date:** 2026-08-30
-**Plan revision:** **v5 — 2026-09-09.** Plan v5 records the final reviewed Cloudflare Stream render
-of Video 3 and its optional activation at `t06u3-s1`, with English captions enabled by default and a
-local text equivalent. Video 2 remains an editorial package only. The activation changes no
+**Plan revision:** **v6 — 2026-09-09.** Plan v6 records the final reviewed Cloudflare Stream render
+of Video 2 and its optional activation at `t05u3-s1`, with English captions enabled by default and a
+local text equivalent. All three selected videos are now rendered and active. The activation changes no
 regulated time, narration, assessment, or approval claim. This plan still
 supersedes plan v1, which is the byte-state
 sha256 `7ca7234853320ad96275c9a6c7e69a16e0a2ec2b63b6de2fd7ed62ed7f88e403` (29,239 bytes).
@@ -22,7 +22,7 @@ this file and the three production files, and from nothing else. v1's hash is pr
 they hold.
 
 **Freeze:** this plan and everything a render depends on are hashed by
-**`LOA-VIDEO-PLAN-FREEZE-2026-09-09-v5`** (`texas/tx-law-of-agency-30-v1/video-plan-freeze.json`,
+**`LOA-VIDEO-PLAN-FREEZE-2026-09-09-v6`** (`texas/tx-law-of-agency-30-v1/video-plan-freeze.json`,
 written by `scripts/freeze-loa-video-plan.mjs`). The curriculum freeze hashes *that artifact*, not
 this file — so correcting a video no longer requires breaking a curriculum freeze. See §12.
 
@@ -30,10 +30,10 @@ this file — so correcting a video no longer requires breaking a curriculum fre
 
 | Layer | Status |
 |---|---|
-| Editorial and legal package (script, prompt, storyboard, transcript, captions, coordinates, poster spec) | **READY** at `LOA-VIDEO-PLAN-FREEZE-2026-09-09-v5` |
-| Rendered video / shipping VTT / poster assets | **PARTIAL** — Videos 1 and 3 complete; Video 2 pending |
+| Editorial and legal package (script, prompt, storyboard, transcript, captions, coordinates, poster spec) | **READY** at `LOA-VIDEO-PLAN-FREEZE-2026-09-09-v6` |
+| Rendered video / shipping VTT / poster assets | **COMPLETE** — all three selected videos have final delivery assets |
 | `screenMedia` integration support in the Texas generator | **READY** — local and Cloudflare Stream paths covered by eleven acceptance tests |
-| Course placement activation | **PARTIAL** — Video 1 active at `t02u5-s1`; Video 3 active at `t06u3-s1`; Video 2 inactive |
+| Course placement activation | **COMPLETE** — Videos 1, 2 and 3 active at `t02u5-s1`, `t05u3-s1` and `t06u3-s1` |
 
 "Production-ready" is not a status this plan uses. See §6.
 
@@ -217,10 +217,11 @@ accessible, searchable, printable — not a video.
 | # | Video | Topic · Unit | Module · screen | Duration | What it does that text cannot |
 |---|---|---|---|---|---|
 | 1 | **IABS 1-2 Document Overview** | T02 · T02U5 | Module 02, instruction screen `t02u5-s1` | ≈ 3:30 | Shows the held official form. § 531.20's verbatim/spacing/borders reproduction rule is a rule about a visual artefact, and Module 02 states it while expressly declining to reproduce the form's language. The student cannot apply the rule without seeing what it protects. |
-| 2 | **Representation or Showing Only: the 2026 decision** | T05 · T05U3 | Module 05, instruction screen `t05u3-s1` | ≈ 3:03 | Puts a branching decision into its real order of operations — choose posture, paper it, make the right disclosure, then show — and delivers the hallway sentence as an act of professional judgment rather than as italicised prose. |
+| 2 | **Representation or Showing Only: the 2026 decision** | T05 · T05U3 | Module 05, instruction screen `t05u3-s1` | ≈ 3:03 editorial · **3:05 measured** | Puts a branching decision into its real order of operations — choose posture, paper it, make the right disclosure, then show — and delivers the hallway sentence as an act of professional judgment rather than as italicised prose. |
 | 3 | **Texas Intermediary Brokerage** | T06 · T06U3 | Module 06, instruction screen `t06u3-s1` | ≈ 3:20 | Holds both configurations in one frame so the constant (confidentiality) and the variable (advice) are visible together, and corrects "dual agency" spoken, up front, where prior knowledge is actively wrong. |
 
 **Total optional video time across the whole 30-hour course: ≈ 9 minutes 53 seconds.**
+The measured shipping durations are 3:15, 3:05 and 3:07, for a displayed total of **9:27**.
 
 **Where these numbers come from, and why they are not asserted twice.** Every duration in this plan
 and in the three production files is **derived from that video's caption file** — the cue timeline in
@@ -387,25 +388,25 @@ are no longer displayed: they belong to `-s1`, which is two screens behind. That
 property of the generated screen shape, not a convention anyone must remember to honour, and
 `scripts/validate-loa-video-packages.mjs` re-derives it from the block maps.
 
-**Videos 1 and 3 are wired.** The block maps remain generated files carrying "Do not edit by hand —
-regenerate". A hand-authored registry supplies Video 1 to `t02u5-s1` and the hosted Video 3 to
-`t06u3-s1` only after their shipping dependencies and review approvals passed. Video 2 remains
-absent. The retrieval screens carry no media — see §10.3.
+**All three videos are wired.** The block maps remain generated files carrying "Do not edit by hand —
+regenerate". A hand-authored registry supplies Video 1 to `t02u5-s1`, hosted Video 2 to `t05u3-s1`
+and hosted Video 3 to `t06u3-s1` only after their shipping dependencies and review approvals passed.
+The retrieval screens carry no media — see §10.3.
 
 ---
 
 ## 6. Honesty about production status
 
-**Videos 1 and 3 are rendered and active. Video 2 is not active.**
+**All three selected videos are rendered and active.**
 
 **Status is reported in four layers, and no layer borrows another's status.**
 
 | Layer | Status | What that means |
 |---|---|---|
 | **Editorial and legal package** | **READY** | All three scripts, prompts, storyboards, transcripts, caption cue text, coordinates, duration metadata and poster specifications are complete and source-verified. |
-| **Rendered video / VTT / poster assets** | **PARTIAL** | Video 1 ships locally with MP4, VTT, transcript and poster. Video 3 is hosted in Cloudflare Stream with its provider-managed poster and uploaded English track; its final VTT and transcript are retained locally. Video 2 remains pending. |
+| **Rendered video / VTT / poster assets** | **COMPLETE** | Video 1 ships locally with MP4, VTT, transcript and poster. Videos 2 and 3 are hosted in Cloudflare Stream with provider-managed posters and uploaded English tracks; their final VTT and transcripts are retained locally. |
 | **`screenMedia` integration support** | **READY** | `scripts/lib/generate-tx-block-maps.mjs` validates exact placement, optional/non-blocking status, local or Cloudflare-hosted media dependencies, measured duration, shipping captions, explicit transcript, assessment separation and completed factual/visual/accessibility/logo-safety reviews before generating any media reference. |
-| **Course placement activation** | **PARTIAL** | Video 1 is active at `t02u5-s1`; Video 3 is active at `t06u3-s1`; Video 2 has no block-map or shipping-media reference. |
+| **Course placement activation** | **COMPLETE** | Videos 1, 2 and 3 are active at `t02u5-s1`, `t05u3-s1` and `t06u3-s1`. |
 
 **The editorial layer being READY says nothing about the other three.** A package that is
 editorially ready and unrendered is not "production-ready", and this plan does not use that phrase.
@@ -416,18 +417,14 @@ For all three videos the editorial state is complete. The delivery state differs
 - HeyGen production prompt **complete**
 - assets **listed** — the held PDF, the band crops to be built from it, the diagram panels to be built
 - placement **fixed** — module, unit and screen named
-- Videos 1 and 3: **rendered, reviewed, and displayed as optional/non-blocking media**
-- Video 2: **not yet activated and therefore not displayed**
+- Videos 1, 2 and 3: **rendered, reviewed, and displayed as optional/non-blocking media**
 
-Video 1 has one exact four-asset shipping set and one generated placement. Video 3 has a fixed
-Cloudflare Stream video id, provider-managed poster, uploaded English caption track, local final VTT
-and transcript, and one generated placement. The generator verified those dependencies before
-writing either map, so neither placement can become a partial player. Video 2 has no active config
-entry or UI marker.
+Video 1 has one exact four-asset shipping set and one generated placement. Videos 2 and 3 each have
+a fixed Cloudflare Stream video id, provider-managed poster, uploaded English caption track, local
+final VTT and transcript, and one generated placement. The generator verified those dependencies
+before writing the maps, so no placement can become a partial player.
 
-Videos 1 and 3 have active registry entries in `config/texas/law-of-agency-screen-media.mjs`. The
-remaining Video 2 production file retains a commented **NOT ACTIVE** example until its final assets
-are verified.
+All three have active registry entries in `config/texas/law-of-agency-screen-media.mjs`.
 
 **Caption files exist on disk — corrected in plan v2.** v1 said the caption files existed only inside
 the production files. Real, well-formed WebVTT files are now written:
@@ -444,16 +441,13 @@ characters, and each is byte-identical to the `vtt` block in its production file
 **Cue text is final.** Every cue matches the recorded script word for word, and every fragment that
 reads the held form or the held statute is verified against the source character by character.
 
-**Cue timings are provisional, and each file says so in its own first `NOTE` block** — computed at 150
-wpm, no render exists, and they must be rebuilt from the delivered render's own audio by silence-gap
-detection cross-validated against word-count pacing before the file ships. The cue text does not
-change when that happens; only the timestamps do.
+**These three production files remain the editorial timelines.** Each says so in its own first `NOTE`
+block. The student-facing VTT files are separate final tracks measured against the delivered renders;
+their cue text does not change, only the timing segmentation does.
 
-They are written to `video-production/captions/` and **deliberately not** to
-`public/statecourse/media/`, and their filenames carry `.provisional`. A caption file sitting at its
-shipping path with invented timings is the kind of thing that gets shipped by accident; one sitting in
-the production directory under a name that says what it is, is not. Posters likewise are frames of a
-render that does not exist; they cannot be composed by hand and must not be.
+The editorial timelines are written to `video-production/captions/` and retain `.provisional` in
+their names. Final local VTT and transcript files for all three active videos live under
+`public/statecourse/media/`; hosted videos use Cloudflare's provider-managed poster.
 
 **No claim of regulatory approval, anywhere.** Nothing in these videos, their captions, their posters,
 their transcripts or their surrounding screens states or implies that the videos, the course, or
@@ -510,7 +504,7 @@ an accessibility checklist.
 
 ---
 
-## 9. Build order, when someone renders these
+## 9. Completed build order and future reuse rule
 
 The three videos share one asset build. Do it once.
 
@@ -520,8 +514,7 @@ The three videos share one asset build. Do it once.
    rasterisation of the same page: a crop must be a copy of the page, never a re-render of its text.
 2. **Build the four diagram panels** per Video 2 §5.2 and Video 3 §5.2 — reportlab vector art, series
    palette and typeface, StateCourse labels and section numbers only, no form language.
-3. **Videos 1 and 3 are complete. Render Video 2** with its own §7 prompt and asset subset. It may
-   refer to the notice the student has already seen.
+3. **Render each video** with its own §7 prompt and asset subset. All three renders are now complete.
 4. **Verify each render**: pixel-diff every document hold; any drift, zoom, overlay or colour shift is
    a reject-and-re-render, not a fix in post.
 5. **Measure**, convert each production file's page-point highlight targets to render pixels, write the
@@ -537,7 +530,7 @@ Before step 1 and again after step 6, run:
 
 ```
 node scripts/validate-loa-video-packages.mjs      # eight checks over the canonical package
-node scripts/freeze-loa-video-plan.mjs            # verify LOA-VIDEO-PLAN-FREEZE-2026-09-09-v5
+node scripts/freeze-loa-video-plan.mjs            # verify LOA-VIDEO-PLAN-FREEZE-2026-09-09-v6
 ```
 
 The validator refuses to pass if narration, transcript, captions and prompt have drifted apart, if any
@@ -578,7 +571,7 @@ These are recorded, not resolved. Two of them touch files this plan is not permi
    captions, explicit transcript, complete local assets or an exact Cloudflare Stream player URL,
    and recorded factual, visual, logo-safety and accessibility review before it writes the block
    map. Eleven tests in `tests/texas-video-integration.test.mjs` exercise those refusal paths. The
-   hook is active for Videos 1 and 3 and remains dormant for Video 2.
+   hook is active for Videos 1, 2 and 3.
 
 4. **The Law of Agency retrieval bank does not exist.** Every block map `-s3` screen names a
    `questionId` for a bank that has not been authored. Each production file's §3 records an authoring
@@ -587,13 +580,12 @@ These are recorded, not resolved. Two of them touch files this plan is not permi
    mechanism that keeps assessment separation real rather than nominal, and only whoever authors that
    bank can honour them.
 
-5. **Video 2 still needs render-time verification.** Its highlight boxes must be measured on the
-   delivered frames. This plan supplies every target in the held document's own coordinate space,
-   measured with `pdfplumber`, which is as far as it is possible to go before that render exists.
-   Videos 1 and 3 have completed their separate post-render reviews; Video 2 has not.
+5. **RESOLVED 2026-09-09 — Video 2 render-time verification completed.** The accepted hosted render,
+   measured duration, synchronized English track and transcript are recorded in its final QC record.
 
-6. **Caption timings and poster frames likewise depend on a render that does not exist.** Both are
-   specified and both are labelled provisional or not-yet-built. Neither was fabricated.
+6. **RESOLVED 2026-09-09 — final captions and poster delivery exist.** Video 2's synchronized English
+   track is uploaded and Ready, its final local VTT and transcript ship with the course, and Cloudflare
+   supplies the provider-managed poster.
 
 ---
 
@@ -682,7 +674,7 @@ cue timeline, matched scene-to-cue by narration text, and re-derived on every va
 | Crop band boundaries G and H | this plan §4; `iabs-1-2-document-overview.md` §5.1 |
 | Crop x window 592 → 600 (found by the validator, later than the addendum) | this plan §4; `iabs-1-2-document-overview.md` §5.1, and the restated rows in Videos 2 and 3 |
 | Highlight rectangles, five corrections | this plan §4; each production file's §6 |
-| Poster specification — Video 1 local poster; Video 3 provider-managed poster; Video 2 pending | each production file's §10; this plan §6 |
+| Poster specification — Video 1 local poster; Videos 2 and 3 provider-managed posters | each production file's §10; this plan §6 |
 | 50 form strings verified verbatim against the held PDF, 0 mismatches | validator check 6, which re-runs the verification rather than restating its result |
 | Four-layer status, no layer borrowing another's | this plan's header and §6 |
 | `screenMedia` hook implemented with eight passing refusal/placement/accessibility tests | this plan §10.3; `scripts/lib/generate-tx-block-maps.mjs`; `tests/texas-video-integration.test.mjs` |
@@ -702,7 +694,7 @@ The structure now is one level of indirection:
 ```
 scripts/freeze-loa-video-plan.mjs
   └─ writes texas/tx-law-of-agency-30-v1/video-plan-freeze.json
-       id LOA-VIDEO-PLAN-FREEZE-2026-09-09-v5
+       id LOA-VIDEO-PLAN-FREEZE-2026-09-09-v6
        hashes: this plan · the three production files · the three caption .vtt files ·
                the held IABS 1-2 PDF · the source inventory · the three block maps ·
                the validator · the screenMedia hook tests · the review addendum

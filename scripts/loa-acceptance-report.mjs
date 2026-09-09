@@ -295,7 +295,7 @@ const testRun = tryRun(
   ["--test", ...fs.readdirSync(path.join(root, "tests")).filter((f) => f.endsWith(".test.mjs")).map((f) => `tests/${f}`)],
   { env: { ...process.env, STATECOURSE_ACCEPTANCE_REBUILD: "1" } },
 );
-const testCounts = testRun.out.match(/# pass (\d+)[\s\S]*?# fail (\d+)/);
+const testCounts = testRun.out.match(/(?:#|ℹ)\s+pass\s+(\d+)[\s\S]*?(?:#|ℹ)\s+fail\s+(\d+)/);
 checks.push(check("23. full regression suite", testRun.ok && testCounts && testCounts[2] === "0",
   testCounts ? `${testCounts[1]} passing, ${testCounts[2]} failing` : "test suite did not report"));
 

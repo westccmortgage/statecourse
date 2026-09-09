@@ -2,9 +2,9 @@
   "course": "Texas Law of Agency",
   "courseId": "tx-law-of-agency-30-v1",
   "approvalForm": "LOA-1 rev. 09/11/2024",
-  "contentFreeze": "LOA-CONTENT-FREEZE-2026-09-09-v9",
+  "contentFreeze": "LOA-CONTENT-FREEZE-2026-09-09-v10",
   "generatedBy": "scripts/loa-acceptance-report.mjs",
-  "generatedAt": "2026-09-09T22:20:43.592Z",
+  "generatedAt": "2026-09-09T23:35:42.226Z",
   "confidentiality": "Counts, hashes, percentages and behaviour outcomes only. No item text, choice, key or rationale from the secure bank appears in this report.",
   "verdicts": {
     "contentAndAssessment": "GO",
@@ -16,12 +16,12 @@
     {
       "label": "1. frozen curriculum",
       "ok": true,
-      "detail": "LOA-CONTENT-FREEZE-2026-09-09-v9; all 12 hashed artifacts match the freeze"
+      "detail": "LOA-CONTENT-FREEZE-2026-09-09-v10; all 12 hashed artifacts match the freeze"
     },
     {
       "label": "2. video plan frozen, and the curriculum freeze points at the freeze rather than the plan",
       "ok": true,
-      "detail": "LOA-VIDEO-PLAN-FREEZE-2026-09-09-v5 over 27 artifacts, following LOA-VIDEO-PLAN-FREEZE-2026-09-08-v4; package validator passes"
+      "detail": "LOA-VIDEO-PLAN-FREEZE-2026-09-09-v6 over 30 artifacts, following LOA-VIDEO-PLAN-FREEZE-2026-09-09-v5; package validator passes"
     },
     {
       "label": "3. twelve-topic and 57-unit coverage",

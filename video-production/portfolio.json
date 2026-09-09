@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "as_of": "2026-09-08",
+  "as_of": "2026-09-09",
   "scope_definition": "A built state has at least one course in the public course catalog and a working non-credit practice route.",
   "built_state_count": 14,
   "course_count": 30,
@@ -18,10 +18,10 @@
       "state_name": "Texas",
       "course_count": 6,
       "course_ids": ["tx-principles-real-estate-i-30", "tx-principles-real-estate-ii-30", "tx-law-of-agency-30", "tx-law-of-contracts-30", "tx-promulgated-contract-forms-30", "tx-real-estate-finance-30"],
-      "rendered_instructional_videos": 2,
-      "active_instructional_videos": 2,
+      "rendered_instructional_videos": 3,
+      "active_instructional_videos": 3,
       "editorial_packages_ready": 3,
-      "next_action": "Complete visual QC and activation for the remaining frozen Law of Agency package: Representation or Showing Only."
+      "next_action": "Texas Law of Agency video set complete; use learner evidence before authorizing additional Texas video production."
     },
     {
       "priority": 2,

@@ -1,9 +1,24 @@
 {
-  "freezeId": "LOA-CONTENT-FREEZE-2026-09-09-v9",
+  "freezeId": "LOA-CONTENT-FREEZE-2026-09-09-v10",
   "courseId": "tx-law-of-agency-30-v1",
   "approvalForm": "LOA-1 rev 09/11/2024",
-  "frozenOn": "2026-08-30",
+  "frozenOn": "2026-09-09",
   "breakHistory": [
+    {
+      "brokeFreeze": "LOA-CONTENT-FREEZE-2026-09-09-v9",
+      "on": "2026-09-09",
+      "module": "NONE — no curriculum wording changed; all twelve module sources remain byte-identical.",
+      "change": "The video-plan pointer moved from LOA-VIDEO-PLAN-FREEZE-2026-09-09-v5 to LOA-VIDEO-PLAN-FREEZE-2026-09-09-v6 after the accepted Representation or Showing Only render, synchronized English captions and transcript were activated through Cloudflare Stream as optional, non-blocking media at t05u3-s1. All three selected Law of Agency videos are now active.",
+      "reason": "The content freeze pins the video-plan freeze artifact. Activating the third reviewed optional asset changes that dependency byte-state, so the content-freeze id must advance even though the regulated curriculum wording and time model do not.",
+      "previousFreezeSha256": "9e29cf4e2d4eede935976872545927bec037e78de46cf26d0eb07ab45f38c767",
+      "previousFreezeBytes": 30627,
+      "auditsReRun": [
+        "node scripts/validate-loa-video-packages.mjs",
+        "node --test tests/texas-video-integration.test.mjs tests/texas-law-of-agency.test.mjs tests/video-portfolio.test.mjs",
+        "node scripts/freeze-loa-video-plan.mjs --write",
+        "node --test tests/*.test.mjs"
+      ]
+    },
     {
       "brokeFreeze": "LOA-CONTENT-FREEZE-2026-09-08-v8",
       "on": "2026-09-09",
@@ -412,10 +427,10 @@
       "sha256": "3a366211b5659253b697e17832d67f51863a719fe736419fa87bb9de7103e826",
       "bytes": 7220
     },
-    "video plan freeze (LOA-VIDEO-PLAN-FREEZE-2026-09-09-v5 — hashes the plan and every render dependency)": {
+    "video plan freeze (LOA-VIDEO-PLAN-FREEZE-2026-09-09-v6 — hashes the plan and every render dependency)": {
       "path": "texas/tx-law-of-agency-30-v1/video-plan-freeze.json",
-      "sha256": "d2d83682c149cce96d9bda6a9dc19e48e07e5271f7c2391cbc79aa3147088395",
-      "bytes": 26490
+      "sha256": "d0014752db702b77c3c88e7396acb1c9e79ba56ea2bfeb2760551f0ed74d3424",
+      "bytes": 27321
     }
   },
   "reproduce": [

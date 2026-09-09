@@ -30,6 +30,34 @@ export const SCREEN_MEDIA_BY_MODULE = Object.freeze({
       ]),
     }),
   }),
+  5: Object.freeze({
+    "t05u3-s1": Object.freeze({
+      required: false,
+      nonBlocking: true,
+      noAssessmentContent: true,
+      videos: Object.freeze([
+        Object.freeze({
+          provider: "cloudflare-stream",
+          videoId: "1f6768807c1e1d9985e0566610bd3ec5",
+          src: "https://customer-jie0jqrpv6850xg8.cloudflarestream.com/1f6768807c1e1d9985e0566610bd3ec5/iframe?defaultTextTrack=en",
+          defaultTextTrack: "en",
+          posterManagedByProvider: true,
+          captions: "/media/tx-loa-v02-representation-or-showing-only-2026.en.vtt",
+          transcript: "/media/tx-loa-v02-representation-or-showing-only-2026.txt",
+          label: "Optional video: Representation or Showing Only — the 2026 Texas decision",
+          duration: "3:05",
+          autoplay: false,
+          controls: true,
+          keyboardAccessible: true,
+          captionsSelectable: true,
+          factualQcApproved: true,
+          visualQcApproved: true,
+          logoSafeReviewed: true,
+          accessibilityQcApproved: true,
+        }),
+      ]),
+    }),
+  }),
   6: Object.freeze({
     "t06u3-s1": Object.freeze({
       required: false,
