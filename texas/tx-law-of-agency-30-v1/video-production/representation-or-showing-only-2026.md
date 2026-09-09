@@ -694,9 +694,9 @@ Then stop talking.
 
 | | |
 |---|---|
-| Delivery | Cloudflare Stream player thumbnail; no public poster file |
-| Dimensions | 16:9, derived from the future uploaded 1920 × 1080 render |
-| Format | Adaptive player thumbnail |
+| Path | `public/statecourse/media/tx-representation-or-showing-only-2026-poster.webp` |
+| Dimensions | 1280 × 720 |
+| Format | WebP, quality 80, target ≤ 60 KB |
 | Frame | Extracted from the **delivered final render**, from the middle of Scene 2's static hold on `tx-posture-fork.png` |
 | Content | The fork panel: one prospective buyer, two lawful postures. No overlay, no burned-in play button, no added text |
 | Alt text | `Still frame from the video: a diagram showing the two lawful postures for working with a Texas residential buyer — represented under a written agreement, or shown property without representation.` |
@@ -726,9 +726,9 @@ This video's ≈ 3 minutes 03 seconds are additional and unbudgeted; adding it c
 no figure was reduced to make room for it.
 
 **Registry entry — WRITTEN, AND COMMENTED *NOT ACTIVE*.** Recorded so the wiring is unambiguous
-when it happens, not so that it can happen now. Adding it before the final render, private Stream
-upload, English WebVTT track, protected transcript and QC approvals exist would put a dead player on
-a student-facing screen — worse than no video at all.
+when it happens, not so that it can happen now. Adding it before the MP4, the poster and the shipping
+`.vtt` all exist and have passed factual, visual and accessibility QC would put a dead player, a
+missing poster and a 404 caption track on a student-facing screen — worse than no video at all.
 
 **Where it goes, exactly.** `config/texas/law-of-agency-module-5-blocks.mjs` now exists, and screen
 `t05u3-s1` is in it, with the content range this production file predicted. But that file's own header
@@ -739,15 +739,18 @@ Loan Estimate and Promissory Note videos — as a hand-authored `screenMedia` sp
 which the generator merges onto the screen it names and which refuses to generate if the screen id
 does not exist (`scripts/lib/generate-ca-block-maps.mjs`, the `spec.screenMedia` block). The Texas
 generator core, `scripts/lib/generate-tx-block-maps.mjs`, now carries that hook and its eight-test
-refusal contract. It remains dormant because the final render, private Stream asset, measured VTT and
-protected transcript do not exist. **Do not hand-edit a generated course file** — its own header forbids it and
+refusal contract. It remains dormant because the final MP4, poster, measured shipping VTT and
+transcript do not exist. **Do not hand-edit a generated course file** — its own header forbids it and
 the next regeneration erases the edit. Add the active media entry only after every asset and factual,
 visual, logo-safety and accessibility review passes.
 
 ```js
 // NOT ACTIVE — DO NOT ADD. This is a record of the intended wiring, not the wiring.
-// Add ONLY when the final render, private Stream upload, English WebVTT track and protected
-// transcript exist and have passed factual, visual, logo-safety and accessibility QC.
+// Add ONLY when all four of these exist and have passed factual, visual and accessibility QC:
+//   public/statecourse/media/tx-representation-or-showing-only-2026.mp4
+//   public/statecourse/media/tx-representation-or-showing-only-2026-poster.webp
+//   public/statecourse/media/tx-representation-or-showing-only-2026.vtt        (timings rebuilt from the render)
+//   public/statecourse/media/tx-representation-or-showing-only-2026.txt
 // Route: a hand-authored screenMedia spec consumed by
 // scripts/generate-tx-law-of-agency-block-maps.mjs — never a hand edit to the generated
 // config/texas/law-of-agency-module-5-blocks.mjs.
@@ -758,14 +761,13 @@ visual, logo-safety and accessibility review passes.
 //     nonBlocking: true,
 //     noAssessmentContent: true,
 //     videos: [{
-//       provider: "cloudflare-stream",
-//       assetKey: "tx-representation-or-showing-only-2026",
-//       captionLanguage: "en",
+//       src: "/media/tx-representation-or-showing-only-2026.mp4",
+//       poster: "/media/tx-representation-or-showing-only-2026-poster.webp",
+//       captions: "/media/tx-representation-or-showing-only-2026.vtt",
+//       transcript: "/media/tx-representation-or-showing-only-2026.txt",
 //       label: "Optional video: Representation or showing only — the 2026 decision",
 //       duration: "3:03",   // PROVISIONAL — replace with the MEASURED length of the delivered render
 //       autoplay: false, controls: true, keyboardAccessible: true, captionsSelectable: true,
-//       signedPlaybackRequired: true, streamReady: true, captionsUploaded: true,
-//       protectedTranscriptReady: true,
 //       factualQcApproved: true, visualQcApproved: true,
 //       logoSafeReviewed: true, accessibilityQcApproved: true,
 //     }],
@@ -775,10 +777,9 @@ visual, logo-safety and accessibility review passes.
 
 `duration` above is the provisional estimate from §6, computed at 150 wpm from the final script. It
 is not a measurement and must be replaced by one before the entry is ever added. The block player
-(`public/statecourse/student/course/blocks/block-player.js`) reads `provider`, `assetKey`, `label`
-and `duration`, obtains a short-lived signed player URL from the server, tags every screen video
-"Optional" of its own accord, and loads the protected plain-text transcript. The generator refuses
-a missing delivery-readiness or approval flag,
+(`public/statecourse/student/course/blocks/block-player.js`) reads `src`, `poster`, `captions`,
+`transcript`, `label` and `duration`, tags every screen video "Optional" of its own accord, and
+loads the reviewed plain-text transcript. The generator refuses a missing asset or approval flag,
 which is why this entry stays commented out until the render passes QC.
 
 ---

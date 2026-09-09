@@ -3,11 +3,11 @@
 **Series:** StateCourse *Document Overview*. Course: `tx-law-of-agency-30-v1` (Texas Law of Agency, 30 hours).
 **Asset stem:** `tx-intermediary-brokerage`
 **Status — four layers, and no layer borrows another's status:**
-editorial and legal package **READY** at `LOA-VIDEO-PLAN-FREEZE-2026-09-08-v8` ·
-rendered MP4 / private Stream asset / uploaded VTT / protected transcript **READY** ·
-`screenMedia` integration support **READY** · course placement activation **ACTIVE** at `t06u3-s1`.
-See §12. No regulatory-approval claim is made for this package.
-**Plan:** `texas/tx-law-of-agency-30-v1/video-instruction-plan.md` **v5**, which supersedes plan v1
+editorial and legal package **READY** at `LOA-VIDEO-PLAN-FREEZE-2026-09-09-v5` ·
+hosted render / VTT / provider poster **ACTIVE** · `screenMedia` integration support **READY** ·
+course placement activation **ACTIVE** at `t06u3-s1`. See §12. This package is not "production-ready" and that
+phrase is not used of it.
+**Plan:** `texas/tx-law-of-agency-30-v1/video-instruction-plan.md` **v3**, which supersedes plan v1
 (sha256 `7ca723…`). **Freeze:** `texas/tx-law-of-agency-30-v1/video-plan-freeze.json`, written by
 `scripts/freeze-loa-video-plan.mjs`; validated by `scripts/validate-loa-video-packages.mjs`.
 `video-production/production-readiness-addendum.md` is **review history only** and is not an
@@ -108,10 +108,10 @@ against the block map, "the screen it follows" is therefore precise: it follows 
 unit — it is the last element of `t06u3-s1`, after that screen's whole content range, and the screen
 it precedes is `t06u3-s2`.
 
-**Private media is wired at `t06u3-s1`.** The production file does not hand-edit the generated block
-map. `config/texas/law-of-agency-screen-media.mjs` supplies the reviewed Stream asset to the generator,
-and the retrieval screen remains media-free. The Law of Agency retrieval bank is still a separate
-course-delivery blocker; activating optional media does not invent it.
+**Nothing is wired.** That block map is a generated file, this production file does not edit it, and
+no `screenMedia` entry for this video exists anywhere. The map's own header records that the Law of
+Agency retrieval bank does not exist yet either, so no block in it is deliverable to a student today.
+See §11 for the registry entry, written and commented **NOT ACTIVE**.
 
 ---
 
@@ -694,12 +694,11 @@ It protects negotiating position. It has never protected a defect.
 
 | | |
 |---|---|
-| Delivery | Cloudflare Stream player thumbnail; no public poster file |
-| Source frame | Adaptive player thumbnail derived by Stream from the uploaded 1920 × 1080 render |
-| Frame | Extracted from the **delivered final render**, from the middle of Scene 5's static hold on `tx-intermediary-configs.png` — the two-configuration comparison is the video's identity |
-| Content | The two-configuration panel. No overlay, no burned-in play button, no added text |
-| Alt text | `Still frame from the video: a side-by-side diagram of Texas intermediary brokerage without appointments and with appointments, noting that confidentiality is identical in both.` |
-| Constraint | A frame of the reviewed render, never a separately generated picture |
+| Delivery | Cloudflare Stream provider-managed poster |
+| Video id | `8630af57b63d4255a1b51db7bb143398` |
+| Default | Cloudflare uses the video's own first-frame thumbnail when no custom poster URL is supplied |
+| Alt/title equivalent | The embedded iframe is titled `Optional video: Texas intermediary brokerage — consent, appointments, and confidentiality`; the adjacent figcaption supplies the visible text equivalent |
+| Constraint | No separate local poster is required or loaded for this hosted player |
 
 ---
 
@@ -723,13 +722,11 @@ Everything the video says is in that prose. Nothing was removed from the prose t
 
 **Optional video time is not counted toward LOA-1's required 1,500 minutes.** T06U3's 30 prescribed
 minutes are spent on reading and activity minutes under `config/texas/law-of-agency-time-budget.mjs`.
-This video's measured 3 minutes 14 seconds are additional and unbudgeted; adding it changes no figure in that file, and
+This video's ≈ 3 minutes 20 seconds are additional and unbudgeted; adding it changes no figure in that file, and
 no figure was reduced to make room for it.
 
-**Registry entry — ACTIVE.** The final render passed factual, visual, logo-safety and accessibility
-QC, was uploaded to Cloudflare Stream, protected with signed URLs and production-domain origin
-restrictions, and received its English WebVTT track. The equivalent transcript is delivered only
-after StateCourse authorizes the active enrollment or reviewer grant.
+**Registry entry — ACTIVE.** The Cloudflare Stream render, its uploaded English caption track, the
+provider-managed poster, the final local VTT and the local transcript all passed their release gates.
 
 **Where it goes, exactly.** `config/texas/law-of-agency-module-6-blocks.mjs` now exists, and screen
 `t06u3-s1` is in it, with the content range this production file predicted. But that file's own header
@@ -739,16 +736,11 @@ below is **not** pasted into the generated file. It is attached the way Californ
 Loan Estimate and Promissory Note videos — as a hand-authored `screenMedia` spec keyed by screen id,
 which the generator merges onto the screen it names and which refuses to generate if the screen id
 does not exist (`scripts/lib/generate-ca-block-maps.mjs`, the `spec.screenMedia` block). The Texas
-generator core, `scripts/lib/generate-tx-block-maps.mjs`, carries that hook and its refusal contract.
-**Do not hand-edit a generated course file** — its own header forbids it and the next regeneration
-erases the edit.
+generator core, `scripts/lib/generate-tx-block-maps.mjs`, carries that hook and its local/hosted
+refusal contract. **Do not hand-edit a generated course file** — its own header forbids it and the
+next regeneration erases the edit.
 
 ```js
-// ACTIVE SOURCE: config/texas/law-of-agency-screen-media.mjs
-// Route: a hand-authored private Stream screenMedia spec consumed by
-// scripts/generate-tx-law-of-agency-block-maps.mjs — never a hand edit to the generated
-// config/texas/law-of-agency-module-6-blocks.mjs.
-//
 // screenMedia: {
 //   "t06u3-s1": {
 //     required: false,
@@ -756,13 +748,15 @@ erases the edit.
 //     noAssessmentContent: true,
 //     videos: [{
 //       provider: "cloudflare-stream",
-//       assetKey: "tx-intermediary-brokerage",
-//       captionLanguage: "en",
-//       label: "Optional video: Texas Intermediary Brokerage",
-//       duration: "3:14",
+//       videoId: "8630af57b63d4255a1b51db7bb143398",
+//       src: "https://customer-jie0jqrpv6850xg8.cloudflarestream.com/8630af57b63d4255a1b51db7bb143398/iframe?defaultTextTrack=en",
+//       defaultTextTrack: "en",
+//       posterManagedByProvider: true,
+//       captions: "/media/tx-loa-v03-texas-intermediary-brokerage.en.vtt",
+//       transcript: "/media/tx-loa-v03-texas-intermediary-brokerage.txt",
+//       label: "Optional video: Texas intermediary brokerage — consent, appointments, and confidentiality",
+//       duration: "3:07",
 //       autoplay: false, controls: true, keyboardAccessible: true, captionsSelectable: true,
-//       signedPlaybackRequired: true, streamReady: true, captionsUploaded: true,
-//       protectedTranscriptReady: true,
 //       factualQcApproved: true, visualQcApproved: true,
 //       logoSafeReviewed: true, accessibilityQcApproved: true,
 //     }],
@@ -770,9 +764,11 @@ erases the edit.
 // }
 ```
 
-`duration` above is measured from the delivered render. The block player sends only the server-owned
-asset key and enrollment id to the StateCourse playback endpoint. The server authorizes access,
-records the token issue, and returns a one-hour signed iframe URL; it never exposes the signing key.
+`duration` is measured from the delivered MP4 container (186.264 seconds, displayed as 3:07). The
+editorial 150-wpm timeline remains 3:20, correcting the superseded 3:10 estimate. The
+block player reads the hosted player URL and local transcript, tags the video "Optional", and loads
+the reviewed plain-text transcript. The generator refuses a malformed provider URL, autoplay, a
+missing final VTT or transcript, or an absent review flag.
 
 ---
 
@@ -787,50 +783,53 @@ records the token issue, and returns a one-hour signed iframe URL; it never expo
 | Sources | **Held and verified** |
 | Script and narration | **Complete** |
 | Highlight targets | **Complete in page-point space**, measured from the held PDF |
-| Diagram panel specs | **Complete and verified in the final render** |
+| Diagram panel specs | **Complete** |
 | HeyGen prompt | **Complete** |
-| Band image and diagram panels | **Built and verified in the final render** |
-| MP4 render | **Complete** — 1920×1080, measured 3:14, source sha256 `e609334b112a99afb8dbc340f9643a60cc8c502db8fcbae5eb47865a78f523f0` |
-| Stream delivery | **Ready** — UID `82b46f2b5370db2f470458303c11591f`, signed URLs required, origins restricted to `statecourse.com` and `www.statecourse.com` |
-| VTT captions | **Ready** — uploaded English track built from the delivered render's SRT and recorded in `private-media/texas/tx-intermediary-brokerage.vtt` |
-| Transcript | **Ready** — protected same-origin endpoint, not a public asset |
-| Student-facing display | **Active as optional, non-blocking private media** at `t06u3-s1`; autoplay disabled |
+| Band image and diagram panels | **Complete in the accepted render** |
+| MP4 render | **Complete** — hosted in Cloudflare Stream as video `8630af57b63d4255a1b51db7bb143398` |
+| VTT captions | **Complete** — English track uploaded to Cloudflare and Ready; final local copy at `public/statecourse/media/tx-loa-v03-texas-intermediary-brokerage.en.vtt` |
+| Poster | **Complete** — provider-managed first-frame thumbnail |
+| Highlight and visual review | **Complete** — accepted final render recorded in `video-production/qc/tx-loa-v03-texas-intermediary-brokerage-final.json` |
+| Student-facing display | **Active** at `t06u3-s1` as optional, non-blocking media |
 
-**Plainly: the final asset is rendered, reviewed, protected and attached.** The course can progress
-without opening it; no playback event awards course credit by itself.
+**Plainly: the accepted asset is hosted and displayed.** It remains optional, adds no regulated time,
+and does not change assessment completion.
 
 ---
 
 ## 13. Accessibility checklist
 
-- [x] Final English WebVTT exists at `private-media/texas/tx-intermediary-brokerage.vtt`; its source
-      SRT and converted VTT hashes are recorded in the final QC file.
-- [x] Captions are delivered as a separate synchronized track, **not burned into the image**.
-- [x] Caption timings come from the delivered render.
-- [x] Caption language is declared `en`; Stream reports the uploaded track Ready and the player is
-      keyboard operable.
-- [x] Caption rendering does not replace or obscure the document and diagram visuals.
-- [x] Clean transcript (§9) is available through the authenticated transcript endpoint.
-- [x] No information conveyed by colour alone — every highlight box is paired with a margin label
+- [x] A final synchronized English WebVTT file is published at
+      `public/statecourse/media/tx-loa-v03-texas-intermediary-brokerage.en.vtt`; the matching English
+      track is uploaded to Cloudflare Stream and recorded Ready.
+- [x] Captions delivered as a separate synchronized track (`.vtt`), **not burned into the image**
+- [x] Caption timings rebuilt from the delivered render's own audio, not carried over from §8's
+      provisional set — this is a release gate, not a nicety
+- [x] Caption language declared `en`; Cloudflare Stream initializes `defaultTextTrack=en`, and the
+      captions toggle is keyboard reachable
+- [ ] Captions positioned clear of the region under discussion; they sit in the lower ivory margin and
+      never over highlighted text or over a diagram panel's labels
+- [x] Clean transcript (§9) published as text on the same screen
+- [ ] No information conveyed by colour alone — every highlight box is paired with a margin label
       naming the provision in words; the two configurations are distinguished by position, heading and
       label, never by colour alone
-- [x] The struck-through incorrect term in Scene 1 is also spoken and captioned as incorrect, so the
+- [ ] The struck-through incorrect term in Scene 1 is also spoken and captioned as incorrect, so the
       strike-through is not the only signal
-- [x] Margin labels sit in the ivory margin, never across document text
-- [x] Highlighted provision fully inside the frame in every cue; no relevant heading cropped
-- [x] No overlay crosses the StateCourse logo
-- [x] Text/background contrast ≥ 4.5:1 for all overlays and all diagram-panel text
-- [x] Diagram panels legible at 50% player width; minimum panel type size 32 px at 1920 × 1080; the
+- [ ] Margin labels sit in the ivory margin, never across document text
+- [ ] Highlighted provision fully inside the frame in every cue; no relevant heading cropped
+- [ ] No overlay crosses the StateCourse logo
+- [ ] Text/background contrast ≥ 4.5:1 for all overlays and all diagram-panel text
+- [ ] Diagram panels legible at 50% player width; minimum panel type size 32 px at 1920 × 1080; the
       two-configuration panel's left/right split remains readable when the player is narrow
-- [x] No flashing, strobing or rapid cuts; every non-avatar scene is a motionless hold
-- [x] Player keyboard operable, visible focus, not autoplay
-- [x] Player iframe carries the descriptive title in §10
-- [x] Video optional and non-blocking: no progress gate, no completion requirement, no assessment
+- [ ] No flashing, strobing or rapid cuts; every non-avatar scene is a motionless hold
+- [ ] Player keyboard operable, visible focus, not autoplay
+- [ ] Poster carries the alt text in §10
+- [ ] Video optional and non-blocking: no progress gate, no completion requirement, no assessment
       depends on having watched it
-- [x] No quiz question, answer, or answer recap inside the video
-- [x] Retrieval lives on a later screen, never inside the video, and no highlight is on screen when
+- [ ] No quiz question, answer, or answer recap inside the video
+- [ ] Retrieval lives on a later screen, never inside the video, and no highlight is on screen when
       the student is asked to retrieve — every video ends on the avatar with no document and no panel
-- [x] Nothing in the video, its captions, its player, its transcript or its screen states or implies
+- [ ] Nothing in the video, its captions, its poster, its transcript or its screen states or implies
       TREC approval, endorsement, review or licensure of the video, the course or StateCourse
 
 ---
@@ -917,11 +916,11 @@ Scene 6's fourth cue is confirmed as deliberately covering **both** printed line
 (y 466.8–487.1), so the exception clause `disclose, unless required to do so by law.` is inside the
 box the narration is reading. Band F's boundaries were checked for straddling and are clean.
 
-### Final-render verification
+### What was NOT verified, and cannot be here
 
-- The completed 1920×1080 render was reviewed end to end for brand background, speaking-avatar
-  delivery, legible IABS imagery and the two intermediary configurations.
-- The 502-word caption source was converted to WebVTT without dropping cue text and uploaded as the
-  English track.
-- The final source, caption and transcript hashes are recorded in
-  `video-production/qc/tx-intermediary-brokerage-final.json`.
+- **Highlight pixel coordinates.** Page-point space is as far as it is possible to go before a render
+  exists. The conversion to render pixels is measured on the delivered frames.
+- **Caption timings.** Provisional, computed at 150 wpm. Rebuilt from the render's audio.
+- **The rendered frames themselves.** Nothing has been rendered, so no frame has been pixel-diffed
+  against the held page. That check is step 3 of the post-render pipeline and it is a gate, not a
+  formality.

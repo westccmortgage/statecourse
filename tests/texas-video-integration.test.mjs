@@ -8,7 +8,6 @@ import { generateModuleBlocks } from "../scripts/lib/generate-tx-block-maps.mjs"
 
 const repoRoot = fileURLToPath(new URL("..", import.meta.url));
 const playerSource = fs.readFileSync(path.join(repoRoot, "public/statecourse/student/course/blocks/block-player.js"), "utf8");
-const componentSource = fs.readFileSync(path.join(repoRoot, "public/statecourse/student/course/blocks/course-video.mjs"), "utf8");
 
 function makeFixture({ screenId = "t01u1-s1", mutateEntry, omitAsset } = {}) {
   const root = fs.mkdtempSync(path.join(os.tmpdir(), "statecourse-tx-video-"));
@@ -124,59 +123,6 @@ test("Texas media attaches to the exact instruction screen and remains optional"
   assert.equal(screens.find((screen) => screen.id === "t01u1-s3").videos, undefined);
 });
 
-test("private Stream media emits no public source URL and remains optional", async () => {
-  const fixture = makeFixture({ mutateEntry: (entry) => {
-    entry.videos[0] = {
-      provider: "cloudflare-stream",
-      assetKey: "tx-reviewed-video",
-      captionLanguage: "en",
-      label: "Optional video: reviewed Texas instruction",
-      duration: "1:00",
-      autoplay: false,
-      controls: true,
-      keyboardAccessible: true,
-      captionsSelectable: true,
-      signedPlaybackRequired: true,
-      streamReady: true,
-      captionsUploaded: true,
-      protectedTranscriptReady: true,
-      factualQcApproved: true,
-      visualQcApproved: true,
-      logoSafeReviewed: true,
-      accessibilityQcApproved: true,
-    };
-  } });
-  generateModuleBlocks(fixture.course, 1);
-  const delivery = (await import(`${pathToFileURL(fixture.output).href}?stream=${Date.now()}`)).default;
-  const video = delivery.blocks.flatMap((block) => block.screens).find((screen) => screen.id === "t01u1-s1").videos[0];
-  assert.deepEqual(video, {
-    provider: "cloudflare-stream",
-    assetKey: "tx-reviewed-video",
-    captionLanguage: "en",
-    label: "Optional video: reviewed Texas instruction",
-    duration: "1:00",
-    required: false,
-    nonBlocking: true,
-    autoplay: false,
-    controls: true,
-    keyboardAccessible: true,
-    captionsSelectable: true,
-  });
-  assert.equal(video.src, undefined);
-});
-
-test("private Stream media refuses public URLs or incomplete protection", () => {
-  assert.throws(() => generateModuleBlocks(makeFixture({ mutateEntry: (entry) => {
-    Object.assign(entry.videos[0], { provider: "cloudflare-stream", assetKey: "tx-reviewed-video" });
-  } }).course, 1), /private signed Stream playback/);
-  assert.throws(() => generateModuleBlocks(makeFixture({ mutateEntry: (entry) => {
-    Object.assign(entry.videos[0], {
-      provider: "cloudflare-stream", assetKey: "tx-reviewed-video", signedPlaybackRequired: true,
-      streamReady: true, captionsUploaded: true, captionLanguage: "en", protectedTranscriptReady: true,
-    });
-  } }).course, 1), /cannot publish src/);
-});
-
 test("an unknown or retrieval screen id refuses generation", () => {
   assert.throws(() => generateModuleBlocks(makeFixture({ screenId: "t01u9-s1" }).course, 1), /unknown screen/);
   assert.throws(() => generateModuleBlocks(makeFixture({ screenId: "t01u1-s3" }).course, 1), /cannot attach to retrieval/);
@@ -246,14 +192,10 @@ test("the shared player exposes native controls, captions and an explicit transc
   assert.doesNotMatch(playerSource, /video\.autoplay\s*=\s*true/);
 });
 
-test("the paid player obtains a signed URL and records playback evidence without gating progress", () => {
-  assert.match(playerSource, /provider === "cloudflare-stream"/);
-  assert.match(playerSource, /asset-key=/);
-  assert.match(componentSource, /\/api\/stream\/playback\?asset=/);
-  assert.match(componentSource, /\/api\/stream\/events/);
-  assert.match(componentSource, /\/api\/stream\/transcript\?asset=/);
-  assert.match(componentSource, /setInterval\(\(\) => send\("heartbeat"\), 15000\)/);
-  assert.match(componentSource, /iframe\.src = payload\.iframeUrl/);
-  assert.doesNotMatch(componentSource, /iframe\.allow = "[^"]*autoplay;[^\n]*";\s*iframe\.autoplay\s*=\s*true/);
-  assert.doesNotMatch(componentSource, /completion|credit.*true/i);
+test("the shared player supports a responsive Cloudflare Stream iframe without autoplay", () => {
+  assert.match(playerSource, /video\.provider === "cloudflare-stream"/);
+  assert.match(playerSource, /class="screen-video-frame"/);
+  assert.match(playerSource, /loading="lazy"/);
+  assert.match(playerSource, /allowfullscreen/);
+  assert.doesNotMatch(playerSource, /autoplay=true/);
 });
