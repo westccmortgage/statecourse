@@ -1,25 +1,32 @@
 {
-  "schemaVersion": "1.0",
+  "schemaVersion": "2.0",
   "reviewedOn": "2026-09-08",
-  "sourceFile": "Information About Brokerage Services — Document Overview_1080p (1).mp4",
-  "shippingAssets": {
-    "video": {
-      "path": "public/statecourse/media/tx-iabs-1-2-document-overview.mp4",
-      "sha256": "dc043fa46769dc43b0345c7ea24b676c74e6be6153419c32933d3069c87361e5",
-      "bytes": 25801832
-    },
-    "poster": {
-      "path": "public/statecourse/media/tx-iabs-1-2-document-overview-poster.webp",
-      "sha256": "428065ed4533ecc22f99cd8e89c1420d8f4f644812c3b5143548e5408316b7d2"
-    },
+  "title": "Texas Law of Agency — IABS 1-2 Document Overview",
+  "sourceUpload": {
+    "fileName": "tx-iabs-1-2-document-overview.mp4",
+    "sha256": "dc043fa46769dc43b0345c7ea24b676c74e6be6153419c32933d3069c87361e5",
+    "bytes": 25801832
+  },
+  "cloudflareStream": {
+    "videoUid": "2eb5b2e307c5e54b60e5aaa506951dd4",
+    "status": "READY",
+    "requireSignedURLs": true,
+    "allowedOrigins": ["statecourse.com", "www.statecourse.com"],
+    "creator": "StateCourse",
+    "captionLanguage": "en",
+    "captionStatus": "READY",
+    "publicSourceRemovedFromCurrentRelease": true
+  },
+  "protectedAssets": {
     "captions": {
-      "path": "public/statecourse/media/tx-iabs-1-2-document-overview.vtt",
+      "path": "private-media/texas/tx-iabs-1-2-document-overview.vtt",
       "sha256": "704e6c6ce6b188bdb39cc6b60757237acb9294018607a14dc7b99256c9ba2131",
-      "kind": "separate selectable English WebVTT track"
+      "kind": "uploaded selectable English WebVTT track"
     },
     "transcript": {
-      "path": "public/statecourse/media/tx-iabs-1-2-document-overview.txt",
-      "sha256": "4afdd80f9c83fc1e1e3e79f26e09af480131aa0c17e17ba11dfb81aa22057d9c"
+      "path": "private-media/texas/tx-iabs-1-2-document-overview.txt",
+      "sha256": "2e3f012497d5f936f2071a600f9c5040ff23a6a46f042631059adb10dcdf2bd9",
+      "kind": "authenticated same-origin transcript"
     }
   },
   "media": {
@@ -28,24 +35,20 @@
     "width": 1920,
     "height": 1080,
     "framesPerSecond": 25,
-    "videoCodec": "H.264 Main, 926 kb/s two-pass hosting encode",
-    "audioCodec": "AAC",
-    "audioSampleRateHz": 48000,
-    "audioChannels": 2
+    "videoCodec": "H.264 Main",
+    "audioCodec": "AAC"
   },
   "checks": {
-    "completeDecode": "PASS after final hosting encode",
-    "hostingFileLimit": "PASS — 25,801,832 bytes, below the 25 MiB Sites limit",
-    "visualEncodeComparison": "PASS — full-frame SSIM 0.999379 against the approved source render",
-    "narrationAndApprovedScript": "PASS — AAC stream was copied without re-encoding and is byte-identical to the original script-approved render",
-    "narrationAudioSha256": "08ae53b0aaccaa05221153a3111b51507bdebad36756ba1786be44dfc6884272",
-    "narrationAdtsSha256BeforeAndAfter": "dc5acb2c46b0ae9aff1f8eb65246bf9ef9f6a084d374db5b6bd581229870ed3",
-    "brandBackground": "PASS — StateCourse studio is visible in both presenter scenes; Measured Decision branding is absent",
-    "avatarDelivery": "PASS — visual review confirmed speaking mouth positions and natural gesture changes in both presenter scenes",
-    "documentFrames": "PASS — the expected IABS 1-2 document regions remain legible and free of conflicting overlays",
-    "captions": "PASS — synchronized shipping VTT is separate from the video and contains no provisional marker",
-    "transcript": "PASS — complete equivalent text is shipped beside the video",
-    "assessmentSeparation": "PASS — no quiz, answer, or secure assessment content appears in the video",
+    "completeDecode": "PASS",
+    "narrationAndApprovedScript": "PASS",
+    "brandBackground": "PASS — StateCourse studio is visible; Measured Decision branding is absent",
+    "avatarDelivery": "PASS — speaking mouth positions and natural gesture changes were verified in both presenter scenes",
+    "documentFrames": "PASS — IABS 1-2 regions remain legible and free of conflicting overlays",
+    "captions": "PASS — synchronized English WebVTT is uploaded and selectable",
+    "transcript": "PASS — equivalent text is protected behind StateCourse authorization",
+    "assessmentSeparation": "PASS — no secure assessment content appears in the video",
+    "signedPlayback": "PASS — the raw Stream UID cannot play the video",
+    "originRestriction": "PASS — playback is limited to StateCourse production domains",
     "autoplay": "DISABLED",
     "keyboardControls": "ENABLED"
   },
@@ -54,11 +57,5 @@
     "visualQcApproved": true,
     "logoSafeReviewed": true,
     "accessibilityQcApproved": true
-  },
-  "nonShippingTestRender": {
-    "sourceFile": "Information About Brokerage Services_1080p_caption.mp4",
-    "sha256": "72ccd335e80b2155762edc63ebbc218510ae9a347d0061c1807efee2c557305f",
-    "durationSeconds": 22.81,
-    "disposition": "QC reference only — intro fragment with burned-in captions; not a course asset"
   }
 }

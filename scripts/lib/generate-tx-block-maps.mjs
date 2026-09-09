@@ -28,11 +28,11 @@
  * ─────────────────────────────────────────────────────────────────────────────────────────────
  *
  * A course may supply `screenMedia`, keyed by an emitted instruction-screen id. The generator
- * refuses unknown or retrieval-screen ids, refuses required/autoplay/assessment media, and refuses
- * to write a generated map unless the MP4, poster, shipping VTT and plain-text transcript all exist
- * as non-empty files under public/statecourse/media. It also requires the author to record factual,
- * visual, logo-safety and accessibility review. This is deliberately stricter than California's
- * first media hook because a partially attached player is worse than no video.
+ * refuses unknown or retrieval-screen ids and refuses required/autoplay/assessment media. Legacy
+ * native delivery must carry a local MP4, poster, shipping VTT and transcript. Production Stream
+ * delivery instead requires a server-owned asset key, confirmed private signed playback, uploaded
+ * captions and a protected transcript. Both modes require factual, visual, logo-safety and
+ * accessibility review.
  *
  * Texas Law of Agency activates its reviewed IABS 1-2 video at t02u5-s1. The remaining editorial
  * packages target t05u3-s1 and t06u3-s1 and stay inactive until each final render, poster,
@@ -49,8 +49,8 @@
  *   3.  NON-BLOCKING PROGRESSION. The screen's completion, and the block's, do not depend on the
  *       media. A student who never opens it progresses identically: no progress gate, no completion
  *       requirement, no assessment dependency, no autoplay.
- *   4.  MP4, VTT, TRANSCRIPT AND POSTER PRESENCE. All four assets resolve on disk at the paths the
- *       entry names. A missing one is a generation failure, not a broken player at runtime.
+ *   4.  COMPLETE DELIVERY PACKAGE. Native media resolves all four local assets. Stream media names
+ *       a private uploaded asset, its uploaded caption language and protected transcript.
  *   5.  ACCESSIBLE PLAYER CONTROLS AND KEYBOARD ACCESS. The emitted entry carries the controls the
  *       player needs and is reachable and operable by keyboard alone, in the screen's tab order.
  *   6.  CAPTION AVAILABILITY. A caption track is present, is served, and is selectable — and it is
@@ -63,10 +63,9 @@
  *       REFUSES TO GENERATE. Retrieval happens on its own screen with the video, the document and
  *       the visible answers no longer displayed; that separation must be enforced here, not
  *       remembered by whoever authors the spec.
- *   10. NO ACTIVATION WHEN ANY REQUIRED MEDIA ASSET IS ABSENT. If MP4, poster, shipping VTT or
- *       transcript is missing, the screen generates with NO media at all rather than with a partial
- *       player. There is no such thing as a half-attached video: a dead player, a nonfunctional
- *       poster, a decorative badge or an unavailable transcript is worse than no video.
+ *   10. NO PARTIAL ACTIVATION. A native asset set or private Stream delivery must be complete before
+ *       generation. A dead player, inaccessible captions or unavailable transcript is worse than
+ *       no video.
  */
 
 import fs from "node:fs";
@@ -131,6 +130,36 @@ export function validateScreenMedia({ root, moduleNumber, blocks, screenMedia = 
       }
       if (video.factualQcApproved !== true || video.visualQcApproved !== true || video.logoSafeReviewed !== true || video.accessibilityQcApproved !== true) {
         throw new Error(`${prefix} is missing factual, visual, logo-safety or accessibility approval`);
+      }
+      if (video.provider === "cloudflare-stream") {
+        if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(video.assetKey || "")) {
+          throw new Error(`${prefix} needs a valid server-owned Stream asset key`);
+        }
+        if (video.signedPlaybackRequired !== true || video.streamReady !== true) {
+          throw new Error(`${prefix} must confirm private signed Stream playback is ready`);
+        }
+        if (video.captionsUploaded !== true || !/^[a-z]{2}(?:-[A-Z]{2})?$/.test(video.captionLanguage || "")) {
+          throw new Error(`${prefix} must confirm an uploaded caption language`);
+        }
+        if (video.protectedTranscriptReady !== true) {
+          throw new Error(`${prefix} must confirm a protected transcript`);
+        }
+        for (const publicField of ["src", "poster", "captions", "transcript"]) {
+          if (video[publicField]) throw new Error(`${prefix} cannot publish ${publicField} in private Stream mode`);
+        }
+        return Object.freeze({
+          provider: "cloudflare-stream",
+          assetKey: video.assetKey,
+          captionLanguage: video.captionLanguage,
+          label: video.label,
+          duration: video.duration,
+          required: false,
+          nonBlocking: true,
+          autoplay: false,
+          controls: true,
+          keyboardAccessible: true,
+          captionsSelectable: true,
+        });
       }
       if (/provisional/i.test(video.captions || "")) throw new Error(`${prefix} cannot use provisional captions`);
       requireAsset(root, video.src, `${prefix} MP4`, /\.mp4$/i);

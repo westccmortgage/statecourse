@@ -1,21 +1,21 @@
 {
-  "freezeId": "LOA-VIDEO-PLAN-FREEZE-2026-09-08-v4",
+  "freezeId": "LOA-VIDEO-PLAN-FREEZE-2026-09-08-v8",
   "courseId": "tx-law-of-agency-30-v1",
   "frozenOn": "2026-09-08",
   "generatedBy": "scripts/freeze-loa-video-plan.mjs",
   "what": "The video instruction plan and every artifact a render of the three Law of Agency videos depends on. This freeze is what scripts/freeze-loa-curriculum.mjs hashes in place of the plan itself, so that correcting a video does not require breaking a curriculum freeze.",
   "status": {
     "editorialAndLegalPackage": "READY — at this freeze and not before it. Script, HeyGen prompt, storyboard and scene table, clean transcript, caption cue text, crop coordinates, highlight coordinates, duration metadata and poster specification are complete, source-verified and internally consistent.",
-    "renderedAssets": "PARTIAL — Video 1 has a final MP4, shipping .vtt, plain-text transcript and poster. Videos 2 and 3 remain unrendered.",
-    "screenMediaIntegrationSupport": "READY — scripts/lib/generate-tx-block-maps.mjs validates exact instruction-screen placement, optional/non-blocking delivery, complete non-empty assets, shipping captions, measured duration, explicit transcript, assessment separation and completed factual/visual/accessibility/logo-safety review. Eight focused tests pass.",
-    "coursePlacementActivation": "PARTIAL — Video 1 is active at t02u5-s1 as optional, non-blocking media. Videos 2 and 3 have no shipping assets or block-map references.",
+    "renderedAssets": "PARTIAL — Videos 1 and 3 have reviewed Cloudflare Stream uploads, uploaded English WebVTT tracks and protected transcripts. Video 2 remains unrendered.",
+    "screenMediaIntegrationSupport": "READY — scripts/lib/generate-tx-block-maps.mjs validates exact instruction-screen placement, optional/non-blocking private signed playback, Stream readiness, uploaded captions, protected transcripts, measured duration, assessment separation and completed factual/visual/accessibility/logo-safety review.",
+    "coursePlacementActivation": "PARTIAL — Video 1 is active at t02u5-s1 and Video 3 at t06u3-s1 as optional, non-blocking private media. Video 2 has no Stream asset or block-map reference.",
     "doNotSay": "'production-ready'. It collapses distinct asset, placement, course-approval and provider-approval layers into one."
   },
   "previousFreeze": {
-    "freezeId": "LOA-VIDEO-PLAN-FREEZE-2026-09-07-v3",
-    "sha256": "9214470e9ae9921a594d44720f384280cbad96be98aedf6cb7ca823d0e88543e",
-    "bytes": 23965,
-    "change": "The final IABS 1-2 video, poster, shipping captions and transcript passed review and were activated as optional, non-blocking media at t02u5-s1. Videos 2 and 3 remain unrendered and inactive."
+    "freezeId": "LOA-VIDEO-PLAN-FREEZE-2026-09-08-v7",
+    "sha256": "ff96ecb5f871cdb1aa45abdf72b81bd5c9f84fe008517b736f12de95e7b84acb",
+    "bytes": 28180,
+    "change": "The two Stream evidence tables now enable Row Level Security in addition to revoking anon and authenticated privileges, and the security regression test and runbook require both layers. Playback semantics and curriculum wording are unchanged."
   },
   "supersedes": {
     "artifact": "texas/tx-law-of-agency-30-v1/video-instruction-plan.md",
@@ -173,6 +173,8 @@
       "screen": "t06u3-s1",
       "retrievalScreen": "t06u3-s3",
       "derivedDuration": "3:20",
+      "measuredDuration": "3:14",
+      "renderStatus": "ACTIVE",
       "scenes": 7,
       "cues": 34
     }
@@ -197,13 +199,13 @@
         "n": 3,
         "title": "every scene duration derives from the caption timeline rather than being asserted alongside it",
         "pass": true,
-        "notFullyMechanised": "The editorial cue timelines remain the common source for all three scene tables. Video 1 now has a separate measured shipping duration (3:15) recorded at activation; Videos 2 and 3 retain provisional 150-wpm timings until their renders exist."
+        "notFullyMechanised": "The editorial cue timelines remain the common source for all three scene tables. Videos 1 and 3 also carry separately measured delivery durations (3:15 and 3:14) from their reviewed renders; Video 2 retains its provisional 150-wpm timing until its render exists."
       },
       {
         "n": 4,
         "title": "every crop keeps the complete official field or form language in frame",
         "pass": true,
-        "notFullyMechanised": "Verified in PDF-point space against the held page's own text lines. Video 1 additionally has a human visual review of its rendered document frames; Videos 2 and 3 remain pre-render and cannot yet receive that second-layer review."
+        "notFullyMechanised": "Verified in PDF-point space against the held page's own text lines. Videos 1 and 3 additionally have human visual reviews of their rendered document frames; Video 2 remains pre-render and cannot yet receive that second-layer review."
       },
       {
         "n": 5,
@@ -225,7 +227,7 @@
       },
       {
         "n": 8,
-        "title": "the canonical v4 package records one complete activation and two pending renders",
+        "title": "the canonical private Stream package records two activations and one pending render",
         "pass": true,
         "notFullyMechanised": "The validator can prove asset presence, exact placement, status separation, and the recorded QC gates. Human review remains the authority for visual quality, logo safety, and factual fidelity; its signed record is hashed into the freeze."
       }
@@ -265,27 +267,27 @@
     ],
     "alsoTrue": "No video contains a quiz question, a self-test, a poll, an answer or an answer recap. No answer is revealed immediately before a retrieval check. Every video ends on the avatar with no document and no panel on screen, so no highlight is up when the student is asked to retrieve."
   },
-  "afterFreeze": "No video wording, coordinate, duration or shipping asset may change silently. A correction found later must break THIS freeze explicitly, name the artifact and the reason, re-run the validator, and create a new video-freeze version with new hashes. Because the curriculum freeze pins this artifact's hash, its dependency pointer must then be re-frozen under a new content-freeze id. Re-taking either freeze under the same id is forbidden — an id denoting two byte-states is not an identifier.",
+  "afterFreeze": "No video wording, coordinate, duration or delivery asset may change silently. A correction found later must break THIS freeze explicitly, name the artifact and the reason, re-run the validator, and create a new video-freeze version with new hashes. Because the curriculum freeze pins this artifact's hash, its dependency pointer must then be re-frozen under a new content-freeze id. Re-taking either freeze under the same id is forbidden — an id denoting two byte-states is not an identifier.",
   "artifacts": {
-    "video instruction plan (v4, canonical)": {
+    "video instruction plan (v5, canonical)": {
       "path": "texas/tx-law-of-agency-30-v1/video-instruction-plan.md",
-      "sha256": "27d9ed65675ada9355765923273a664861f4d45ee72c83ad690b59c45a20a927",
-      "bytes": 53222
+      "sha256": "62dc03b7bc2eaf1ee0f0e9c6979fece3687f57afea54392036b324fbfe768ef8",
+      "bytes": 53405
     },
     "production file — video 1 IABS 1-2 Document Overview": {
       "path": "texas/tx-law-of-agency-30-v1/video-production/iabs-1-2-document-overview.md",
-      "sha256": "b065f54b499d3b9d0fb3c128dee96a1dcad5ae72c77bf314fe4a5db7c877b476",
-      "bytes": 58736
+      "sha256": "650e6152fe73ed265c75047e866230ad67629ef3c6af18e751513556f6c555e3",
+      "bytes": 58786
     },
     "production file — video 2 Representation or Showing Only": {
       "path": "texas/tx-law-of-agency-30-v1/video-production/representation-or-showing-only-2026.md",
-      "sha256": "5e0ed69d0dc7a891aac7eb8f413674d6e592cfd1ca58a1ac4334ce1c15035bd6",
-      "bytes": 54372
+      "sha256": "1b6b9d4dae5479fc1bb0240bbee6da422a074cb96e1d41957f579df9c50351de",
+      "bytes": 54131
     },
     "production file — video 3 Texas Intermediary Brokerage": {
       "path": "texas/tx-law-of-agency-30-v1/video-production/intermediary-brokerage.md",
-      "sha256": "fa7bfd6b95090439ce7522158913d1140849736938cd74d9fa68e8cd6f36bfd7",
-      "bytes": 54941
+      "sha256": "a2d6290f3e0ff679c48b26037905ed9562f8e4b23ddfd200c846acfac42c5973",
+      "bytes": 53266
     },
     "captions — video 1 (provisional timings)": {
       "path": "texas/tx-law-of-agency-30-v1/video-production/captions/tx-iabs-1-2-document-overview.provisional.vtt",
@@ -304,38 +306,98 @@
     },
     "video 1 final QC record": {
       "path": "texas/tx-law-of-agency-30-v1/video-production/qc/tx-iabs-1-2-document-overview-final.json",
-      "sha256": "0d0ace353ce49c0ef388d4f0393fe961aad1b6fa57f510ee89e021c1dedc268f",
-      "bytes": 3133
+      "sha256": "ad25967bd49a933a44707ddc7d74a6c55716752e0e3431d82599de6c2ae31c24",
+      "bytes": 2408
     },
-    "video 1 shipping MP4": {
-      "path": "public/statecourse/media/tx-iabs-1-2-document-overview.mp4",
-      "sha256": "dc043fa46769dc43b0345c7ea24b676c74e6be6153419c32933d3069c87361e5",
-      "bytes": 25801832
+    "video 3 final QC record": {
+      "path": "texas/tx-law-of-agency-30-v1/video-production/qc/tx-intermediary-brokerage-final.json",
+      "sha256": "fd860311bdbd87d9637235ab25db09b723c687c88057a49e8f66f83dc5e99e5f",
+      "bytes": 2548
     },
-    "video 1 shipping poster": {
-      "path": "public/statecourse/media/tx-iabs-1-2-document-overview-poster.webp",
-      "sha256": "428065ed4533ecc22f99cd8e89c1420d8f4f644812c3b5143548e5408316b7d2",
-      "bytes": 121650
-    },
-    "video 1 shipping captions": {
-      "path": "public/statecourse/media/tx-iabs-1-2-document-overview.vtt",
+    "video 1 uploaded captions evidence": {
+      "path": "private-media/texas/tx-iabs-1-2-document-overview.vtt",
       "sha256": "704e6c6ce6b188bdb39cc6b60757237acb9294018607a14dc7b99256c9ba2131",
       "bytes": 4480
     },
-    "video 1 shipping transcript": {
-      "path": "public/statecourse/media/tx-iabs-1-2-document-overview.txt",
-      "sha256": "4afdd80f9c83fc1e1e3e79f26e09af480131aa0c17e17ba11dfb81aa22057d9c",
+    "video 1 protected transcript": {
+      "path": "private-media/texas/tx-iabs-1-2-document-overview.txt",
+      "sha256": "2e3f012497d5f936f2071a600f9c5040ff23a6a46f042631059adb10dcdf2bd9",
       "bytes": 3157
+    },
+    "video 3 uploaded captions evidence": {
+      "path": "private-media/texas/tx-intermediary-brokerage.vtt",
+      "sha256": "7850b063f28831e76cd74e9a01b7ca1a946c4dafc9e1e43c94cc7c76bc0b29ca",
+      "bytes": 4582
+    },
+    "video 3 protected transcript": {
+      "path": "private-media/texas/tx-intermediary-brokerage.txt",
+      "sha256": "b1015529efbd3597e17ecb24df36ad52510448a79633597cfcfb295da7e17eae",
+      "bytes": 3033
     },
     "Law of Agency screenMedia registry": {
       "path": "config/texas/law-of-agency-screen-media.mjs",
-      "sha256": "9d202dcb5cc6c3597a1f4e2116e977efc16c19922909751fa6d7edaed99d9ce0",
-      "bytes": 1190
+      "sha256": "be7d99ab3bb2c2ea0bd0222c97fe37937cb28332380b7a6bddad325a13f142ad",
+      "bytes": 2057
+    },
+    "private Stream media allowlist": {
+      "path": "config/stream-media.mjs",
+      "sha256": "faf6503e59ac55f806421c38db64318b00979e2f670318e873ed0d12979f554b",
+      "bytes": 1163
     },
     "Law of Agency block-map wrapper": {
       "path": "scripts/generate-tx-law-of-agency-block-maps.mjs",
       "sha256": "844cf1986411b11e97121ea07bfecc8994888de821cb6232232ead206530c76a",
       "bytes": 4337
+    },
+    "private Stream authorization and signing core": {
+      "path": "netlify/functions/_lib/stream-delivery.mjs",
+      "sha256": "f97a99de5b4c3941a6162a4e4874666d35a030a8963e2a35333e96aa7a5723dc",
+      "bytes": 9761
+    },
+    "private Stream playback endpoint": {
+      "path": "netlify/functions/stream-playback.mjs",
+      "sha256": "6edc43114b2fd3a4c2d463d0861a725a459bfc169417c72ef722bbbfd1f6d8ad",
+      "bytes": 1050
+    },
+    "private Stream evidence endpoint": {
+      "path": "netlify/functions/stream-events.mjs",
+      "sha256": "87c55318177b9f9623b3513c8dd84a33f0a21f393b551f06fc0c1013b9f463da",
+      "bytes": 1159
+    },
+    "private Stream transcript endpoint": {
+      "path": "netlify/functions/stream-transcript.mjs",
+      "sha256": "76d716dd6087656d304cd42c774d85a81dc7c5132f0df51b8f1f099a30da500f",
+      "bytes": 1455
+    },
+    "private Stream database evidence schema": {
+      "path": "database/018_cloudflare_stream_delivery.sql",
+      "sha256": "38795cbddd2a878744e6337a2aed2cca0820ba720d137bb9009900f8ef3ff443",
+      "bytes": 3452
+    },
+    "private Stream production routing and CSP": {
+      "path": "netlify.toml",
+      "sha256": "b832331a37435182c8fc6e78925617bb952ce4577ac7c1d784b54eeba604341d",
+      "bytes": 5045
+    },
+    "private Stream player": {
+      "path": "public/statecourse/student/course/blocks/course-video.mjs",
+      "sha256": "79ee0d3d75bdb5583ee9867f20456430d83a36094d5fa2b660b8478c17661cbb",
+      "bytes": 9250
+    },
+    "private Stream player host": {
+      "path": "public/statecourse/student/course/blocks/block-player.js",
+      "sha256": "496a877e1f454f3cb044b3acf4e6a72700c427ef1dca2a855c093b13d72975a5",
+      "bytes": 33648
+    },
+    "private Stream security tests": {
+      "path": "tests/cloudflare-stream-security.test.mjs",
+      "sha256": "6f6a4e715cc66623b504f78a5e370ee4b40aa1cf96e0f771b1cec58942c58b99",
+      "bytes": 4485
+    },
+    "private Stream production runbook": {
+      "path": "docs/video/cloudflare-stream-production.md",
+      "sha256": "08467ff17edfbc2701197306410ee5f64461ad8db049ce01a3376023893acd03",
+      "bytes": 3258
     },
     "held form IABS 1-2 (the only permitted source of document pixels)": {
       "path": "texas/trec-sources/forms/IABS-1-2.pdf",
@@ -354,8 +416,8 @@
     },
     "block map — module 2 (t02u5-s1)": {
       "path": "config/texas/law-of-agency-module-2-blocks.mjs",
-      "sha256": "320c88df032423605403fffd38c96fca55988a38ae2553617c5297696d07e56f",
-      "bytes": 8109
+      "sha256": "7d314e68e901ab6bcf24f655cf35a6181f2b613a7c2b719b13114c2ee61414a3",
+      "bytes": 7987
     },
     "block map — module 5 (t05u3-s1)": {
       "path": "config/texas/law-of-agency-module-5-blocks.mjs",
@@ -364,23 +426,23 @@
     },
     "block map — module 6 (t06u3-s1)": {
       "path": "config/texas/law-of-agency-module-6-blocks.mjs",
-      "sha256": "c9648bd867efc33dd119250966c2ed0c4301cf8c2341a1697a0e7271da7674bc",
-      "bytes": 7459
+      "sha256": "83d758a4c7cfe5ce36df0fae38203dded390e4a8c413abb5921a4e3065b54d43",
+      "bytes": 7759
     },
     "validator": {
       "path": "scripts/validate-loa-video-packages.mjs",
-      "sha256": "504fa4bd0e70fa417fc69874544225b7fb1015b9e1b285052a1114750ee4bb98",
-      "bytes": 48551
+      "sha256": "7596115682ce1649c0f62d574d265562672602ac688efe366456c311d8355b8c",
+      "bytes": 50511
     },
     "block-map generator core (screenMedia hook built and validated)": {
       "path": "scripts/lib/generate-tx-block-maps.mjs",
-      "sha256": "8cfcad467b8a3428b281bfbb0910a306180c73ebf7a2209c491db7b6b4150cb8",
-      "bytes": 18840
+      "sha256": "9437e720a3207732c5f4140d88fa43ae22398de6a9ff6c958e5f23abe445db94",
+      "bytes": 19989
     },
     "screenMedia hook acceptance tests": {
       "path": "tests/texas-video-integration.test.mjs",
-      "sha256": "c6ef92c33d344e0a03ba6bba9347f0b9e3dc73466c25ef18392da51f21ecee85",
-      "bytes": 6198
+      "sha256": "33f70570a80440a46fbea41de817ab007514da50bb021df06ec1aa01b3087560",
+      "bytes": 9187
     },
     "review addendum (SUPERSEDED — review history, not an operational dependency)": {
       "path": "texas/tx-law-of-agency-30-v1/video-production/production-readiness-addendum.md",

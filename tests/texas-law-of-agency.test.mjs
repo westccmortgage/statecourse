@@ -291,7 +291,7 @@ test("the curriculum freeze pins the video state through the video freeze, not t
 
 test("the video freeze names itself, supersedes plan v1 by hash, and still hashes every render dependency", () => {
   assert.match(VIDEO_FREEZE.freezeId, /^LOA-VIDEO-PLAN-FREEZE-\d{4}-\d{2}-\d{2}(-v\d+)?$/, "a re-freeze must bump its version rather than reusing an id");
-  assert.equal(VIDEO_FREEZE.freezeId, "LOA-VIDEO-PLAN-FREEZE-2026-09-08-v4");
+  assert.equal(VIDEO_FREEZE.freezeId, "LOA-VIDEO-PLAN-FREEZE-2026-09-08-v8");
   assert.equal(VIDEO_FREEZE.courseId, "tx-law-of-agency-30-v1");
 
   /* The superseded plan is identified by hash, not by adjective. */
@@ -314,11 +314,14 @@ test("the video freeze names itself, supersedes plan v1 by hash, and still hashe
     "scripts/lib/generate-tx-block-maps.mjs",
     "tests/texas-video-integration.test.mjs",
     "config/texas/law-of-agency-screen-media.mjs",
-    "public/statecourse/media/tx-iabs-1-2-document-overview.mp4",
-    "public/statecourse/media/tx-iabs-1-2-document-overview-poster.webp",
-    "public/statecourse/media/tx-iabs-1-2-document-overview.vtt",
-    "public/statecourse/media/tx-iabs-1-2-document-overview.txt",
+    "private-media/texas/tx-iabs-1-2-document-overview.vtt",
+    "private-media/texas/tx-iabs-1-2-document-overview.txt",
+    "private-media/texas/tx-intermediary-brokerage.vtt",
+    "private-media/texas/tx-intermediary-brokerage.txt",
+    "config/stream-media.mjs",
+    "netlify/functions/_lib/stream-delivery.mjs",
     "texas/tx-law-of-agency-30-v1/video-production/qc/tx-iabs-1-2-document-overview-final.json",
+    "texas/tx-law-of-agency-30-v1/video-production/qc/tx-intermediary-brokerage-final.json",
   ]) assert.ok(paths.includes(required), `the video freeze does not hash ${required}`);
 
   const drift = [];
@@ -360,8 +363,10 @@ test("video status is reported in four layers and no layer borrows another's", (
     }
   }
   const module2 = fs.readFileSync(path.join(root, "config/texas/law-of-agency-module-2-blocks.mjs"), "utf8");
-  assert.match(module2, /tx-iabs-1-2-document-overview\.mp4/, "the reviewed IABS video is not wired");
-  for (const [n, map] of [[5, "law-of-agency-module-5-blocks.mjs"], [6, "law-of-agency-module-6-blocks.mjs"]]) {
+  assert.match(module2, /tx-iabs-1-2-document-overview/, "the reviewed IABS video is not wired");
+  const module6 = fs.readFileSync(path.join(root, "config/texas/law-of-agency-module-6-blocks.mjs"), "utf8");
+  assert.match(module6, /tx-intermediary-brokerage/, "the reviewed intermediary video is not wired");
+  for (const [n, map] of [[5, "law-of-agency-module-5-blocks.mjs"]]) {
     const text = fs.readFileSync(path.join(root, "config/texas", map), "utf8");
     assert.doesNotMatch(text, /videos:|screenMedia/, `module ${n} has media wired before final assets and reviews exist`);
   }
@@ -415,17 +420,24 @@ test("the screenMedia hook is built, refuses incomplete activation, and has focu
   assert.match(gen, /DO NOT HAND-EDIT A GENERATED COURSE FILE/);
 });
 
-test("the reviewed IABS video ships completely and the remaining two do not", () => {
-  const active = "tx-iabs-1-2-document-overview";
-  const media = path.join(root, "public/statecourse/media");
-  for (const suffix of [".mp4", ".vtt", ".txt", "-poster.webp"]) {
-    const file = path.join(media, `${active}${suffix}`);
-    assert.ok(fs.existsSync(file) && fs.statSync(file).size > 0, file);
+test("the two reviewed videos ship only through protected Stream delivery and Video 2 does not", () => {
+  const active = ["tx-iabs-1-2-document-overview", "tx-intermediary-brokerage"];
+  const publicMedia = path.join(root, "public/statecourse/media");
+  const privateMedia = path.join(root, "private-media/texas");
+  for (const stem of active) {
+    for (const suffix of [".vtt", ".txt"]) {
+      const file = path.join(privateMedia, `${stem}${suffix}`);
+      assert.ok(fs.existsSync(file) && fs.statSync(file).size > 0, file);
+    }
+    assert.deepEqual(
+      fs.readdirSync(publicMedia).filter((name) => name.startsWith(stem)),
+      [],
+      `${stem} leaves a public source copy`,
+    );
   }
-  for (const stem of ["tx-representation-or-showing-only-2026", "tx-intermediary-brokerage"]) {
-    const shipped = fs.readdirSync(media).filter((name) => name.startsWith(stem));
-    assert.deepEqual(shipped, [], `${stem} has assets before its final render exists`);
-  }
+  const pending = "tx-representation-or-showing-only-2026";
+  assert.deepEqual(fs.readdirSync(publicMedia).filter((name) => name.startsWith(pending)), [], `${pending} has public assets before its render exists`);
+  assert.deepEqual(fs.readdirSync(privateMedia).filter((name) => name.startsWith(pending)), [], `${pending} has private delivery evidence before its render exists`);
   assert.match(VIDEO_FREEZE.notApproved, /holds no TREC approval/i);
 });
 

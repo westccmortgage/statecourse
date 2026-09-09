@@ -29,7 +29,7 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const HOME = path.join(root, "texas/tx-law-of-agency-30-v1");
 const OUT = path.join(HOME, "content-freeze.json");
 const COURSE_ID = "tx-law-of-agency-30-v1";
-const FREEZE_ID = "LOA-CONTENT-FREEZE-2026-09-08-v8";
+const FREEZE_ID = "LOA-CONTENT-FREEZE-2026-09-08-v12";
 
 /**
  * FREEZE HISTORY. A freeze that is broken and silently re-taken teaches nothing. Every break is
@@ -37,6 +37,77 @@ const FREEZE_ID = "LOA-CONTENT-FREEZE-2026-09-08-v8";
  * than requiring someone to reconstruct it from git.
  */
 const BREAK_HISTORY = Object.freeze([
+  Object.freeze({
+    brokeFreeze: "LOA-CONTENT-FREEZE-2026-09-08-v11",
+    on: "2026-09-08",
+    module: "NONE — no curriculum wording changed; all twelve module sources remain byte-identical.",
+    change:
+      "The video-plan pointer moved to LOA-VIDEO-PLAN-FREEZE-2026-09-08-v8 after the Stream evidence tables gained explicit Row Level Security and the security regression test and runbook were strengthened to require it.",
+    reason:
+      "The content freeze pins the complete protected-delivery byte-state. Adding defense-in-depth at the database boundary changes that dependency and therefore receives new truthful freeze identifiers, while playback, assessment, regulated curriculum and time allocation remain unchanged.",
+    previousFreezeSha256: "71986649ca86710386e8212f69089296a59e1b5ff95dfc63a85f20bf3b935f5f",
+    previousFreezeBytes: 33033,
+    auditsReRun: Object.freeze([
+      "node scripts/validate-loa-video-packages.mjs",
+      "node --test tests/cloudflare-stream-security.test.mjs tests/texas-video-integration.test.mjs tests/texas-law-of-agency.test.mjs tests/video-portfolio.test.mjs",
+      "node scripts/freeze-loa-video-plan.mjs --write",
+      "node scripts/freeze-loa-curriculum.mjs --write",
+      "npm test",
+    ]),
+  }),
+  Object.freeze({
+    brokeFreeze: "LOA-CONTENT-FREEZE-2026-09-08-v10",
+    on: "2026-09-08",
+    module: "NONE — no curriculum wording changed; all twelve module sources remain byte-identical.",
+    change:
+      "The video-plan pointer moved to LOA-VIDEO-PLAN-FREEZE-2026-09-08-v7 after removing a stale version number from validator check 8's human-readable heading.",
+    reason:
+      "The content freeze pins the validator byte-state through the video freeze. Even a reporting-only correction must receive a new, truthful identifier; playback, assessment, regulated curriculum and time allocation remain unchanged.",
+    previousFreezeSha256: "65379f24564785577243b7ddf9bf5172f803f6c018b31ee12b45b11e381153c8",
+    previousFreezeBytes: 32049,
+    auditsReRun: Object.freeze([
+      "node scripts/validate-loa-video-packages.mjs",
+      "node scripts/freeze-loa-video-plan.mjs --write",
+      "node scripts/freeze-loa-curriculum.mjs --write",
+      "npm test",
+    ]),
+  }),
+  Object.freeze({
+    brokeFreeze: "LOA-CONTENT-FREEZE-2026-09-08-v9",
+    on: "2026-09-08",
+    module: "NONE — no curriculum wording changed; all twelve module sources remain byte-identical.",
+    change:
+      "The video-plan pointer moved to LOA-VIDEO-PLAN-FREEZE-2026-09-08-v6 after the validator gained a bundled-runtime fallback and the regression suite was updated to require private-only delivery for both reviewed videos.",
+    reason:
+      "The content freeze pins the complete video-delivery byte-state, including its validator. Runtime portability and the final public-copy regression check changed that pinned dependency and therefore require new freeze identifiers even though playback behavior, curriculum, assessment and time allocation did not change.",
+    previousFreezeSha256: "c02a36935be037ac5eae6ec0db9a16029302e2cd51f2f6ff13f2790af213fcaa",
+    previousFreezeBytes: 30775,
+    auditsReRun: Object.freeze([
+      "node scripts/validate-loa-video-packages.mjs",
+      "node --test tests/cloudflare-stream-security.test.mjs tests/texas-video-integration.test.mjs tests/texas-law-of-agency.test.mjs",
+      "node scripts/freeze-loa-video-plan.mjs --write",
+      "node scripts/freeze-loa-curriculum.mjs --write",
+      "npm test",
+    ]),
+  }),
+  Object.freeze({
+    brokeFreeze: "LOA-CONTENT-FREEZE-2026-09-08-v8",
+    on: "2026-09-08",
+    module: "NONE — no curriculum wording changed; all twelve module sources remain byte-identical.",
+    change:
+      "The video-plan pointer moved to LOA-VIDEO-PLAN-FREEZE-2026-09-08-v5. Videos 1 and 3 now use private Cloudflare Stream delivery with signed URLs, production-origin restrictions, uploaded English captions and authenticated transcripts; Video 3 was activated at t06u3-s1 and the former public copies of Video 1 were removed. Video 2 remains unrendered and inactive.",
+    reason:
+      "The content freeze pins the complete video delivery byte-state. Moving from public static files to server-authorized Stream playback changes that dependency and therefore requires a new content-freeze id, even though no regulated curriculum wording, assessment or time allocation changed.",
+    previousFreezeSha256: "c47a699ec34aa098c85b557e967d3e073ed1e07fe13883626c17e2817a725c20",
+    previousFreezeBytes: 29373,
+    auditsReRun: Object.freeze([
+      "node scripts/validate-loa-video-packages.mjs",
+      "node --test tests/cloudflare-stream-security.test.mjs tests/texas-video-integration.test.mjs tests/texas-law-of-agency.test.mjs",
+      "node scripts/freeze-loa-video-plan.mjs --write",
+      "node scripts/freeze-loa-curriculum.mjs --write",
+      "npm test",
+    ]),
+  }),
   Object.freeze({
     brokeFreeze: "LOA-CONTENT-FREEZE-2026-09-07-v7",
     on: "2026-09-08",
@@ -269,7 +340,7 @@ const artifacts = {
      the validator. One level of indirection: the video state is still pinned exactly — any change to
      any video artifact changes video-plan-freeze.json, which changes this hash — but a video
      correction is now absorbed by a video freeze instead of forcing a curriculum-freeze break. */
-  "video plan freeze (LOA-VIDEO-PLAN-FREEZE-2026-09-07-v3 — hashes the plan and every render dependency)": hashOf(path.join(HOME, "video-plan-freeze.json")),
+  "video plan freeze (LOA-VIDEO-PLAN-FREEZE-2026-09-08-v8 — hashes the plan and every render and delivery dependency)": hashOf(path.join(HOME, "video-plan-freeze.json")),
 };
 
 if (failures.length) {
@@ -282,7 +353,7 @@ const freeze = {
   freezeId: FREEZE_ID,
   courseId: COURSE_ID,
   approvalForm: `${FORM.formNumber} rev ${FORM.revision}`,
-  frozenOn: "2026-08-30",
+  frozenOn: "2026-09-08",
   breakHistory: BREAK_HISTORY,
   generatedBy: "scripts/freeze-loa-curriculum.mjs",
   afterFreeze: "No curriculum wording may change silently. An instructional repair found during assessment authoring must break the freeze explicitly, name the module and the reason, re-run the time, source, quotation, structural and assessment-dependency audits, and create a new freeze version with new hashes.",
