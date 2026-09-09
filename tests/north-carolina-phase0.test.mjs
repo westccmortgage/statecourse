@@ -1,18 +1,160 @@
 import test from "node:test";
 import assert from "node:assert/strict";
+import { createHash } from "node:crypto";
 import { existsSync, readFileSync } from "node:fs";
 
 import { getNorthCarolinaCourse, northCarolinaCreditedHours, NORTH_CAROLINA_MODULE_IDS } from "../config/north-carolina-course-engine.mjs";
 import { NC_BLOCKERS, NC_CLAIMS, NC_CONTROL_DATE, NC_MANIFEST_VERSION, NC_SOURCES, northCarolinaSourceById } from "../config/north-carolina/regulatory-manifest.mjs";
 
 const read = (path) => readFileSync(new URL(`../${path}`, import.meta.url), "utf8");
+const hash = (path) => createHash("sha256").update(readFileSync(new URL(`../${path}`, import.meta.url))).digest("hex");
 
 test("manifest has a dated stable identity and only allowed claim statuses", () => {
-  assert.equal(NC_CONTROL_DATE, "2026-09-06");
-  assert.match(NC_MANIFEST_VERSION, /^NC-PHASE0-2026-09-06-v\d+$/);
-  assert.ok(NC_SOURCES.length >= 25);
-  assert.ok(NC_CLAIMS.length >= 20);
+  assert.equal(NC_CONTROL_DATE, "2026-09-07");
+  assert.equal(NC_MANIFEST_VERSION, "NC-PHASE0-2026-09-07-v21");
+  assert.equal(NC_SOURCES.length, 162);
+  assert.equal(NC_CLAIMS.length, 102);
   for (const claim of NC_CLAIMS) assert.ok(["confirmed", "interpretation", "needs-regulator-confirmation"].includes(claim.status), claim.id);
+});
+
+test("the current joint EPA/HUD lead fact sheet is retained and reviewed on every page", () => {
+  const reviewPath = "north-carolina/regulatory/captures/2026-09-07/module-05-lead/page-reviews.json";
+  const review = JSON.parse(read(reviewPath));
+  assert.equal(review.reviewedOn, NC_CONTROL_DATE);
+  assert.equal(review.id, "FED-EPA-HUD-LEAD-FACTSHEET");
+  assert.equal(review.pageCount, 2);
+  assert.equal(review.pages.length, 2);
+  assert.equal(hash(review.sourceFile), review.pdfSha256);
+  for (const page of review.pages) assert.equal(hash(page.renderPath), page.sha256, `lead fact sheet page ${page.number}`);
+});
+
+test("the current NCREC prelicensing syllabus is retained and reviewed on all 108 pages", () => {
+  const reviewPath = "north-carolina/regulatory/captures/2026-09-07/syllabus-2026/page-reviews.json";
+  const review = JSON.parse(read(reviewPath));
+  assert.equal(review.reviewedOn, NC_CONTROL_DATE);
+  assert.equal(review.id, "NC-SYLLABUS-PRE-2026");
+  assert.equal(review.pageCount, 108);
+  assert.equal(review.pages.length, 108);
+  assert.equal(hash(review.sourceFile), review.pdfSha256);
+  assert.equal(hash(review.textPath), review.textSha256);
+  for (const page of review.pages) assert.equal(hash(page.renderPath), page.sha256, `syllabus page ${page.number}`);
+  const text = read(review.textPath);
+  assert.match(text, /March 2024 Edition/);
+  assert.match(text, /Amended May 2026/);
+  assert.match(text, /TOTAL INSTRUCTIONAL HOURS 75/);
+  assert.match(text, /Section XVI: Real Estate Math Calculations/);
+  assert.equal((text.match(/Required Activity:/g) || []).length, 47);
+});
+
+test("the current NCREC License Law and Rules Comments are retained and reviewed on every page", () => {
+  const reviewPath = "north-carolina/regulatory/captures/2026-09-07/llcr-comments-2024/page-reviews.json";
+  const review = JSON.parse(read(reviewPath));
+  assert.equal(review.reviewedOn, NC_CONTROL_DATE);
+  assert.equal(review.id, "NC-LLCR-CURRENT");
+  assert.equal(review.pageCount, 22);
+  assert.equal(review.pages.length, 22);
+  assert.equal(hash(review.sourceFile), review.pdfSha256);
+  assert.equal(hash(review.textPath), review.textSha256);
+  for (const page of review.pages) assert.equal(hash(page.renderPath), page.sha256, `LLCR Comments page ${page.number}`);
+  const text = read(review.textPath);
+  assert.match(text, /LICENSE LAW AND RULES COMMENTS/);
+  assert.match(text, /HANDLING TRUST FUNDS/);
+  assert.match(text, /BROKER PRICE OPINION AND[\s\S]*COMPARATIVE MARKET ANALYSIS/);
+});
+
+test("the January 2026 NCREC law and rules compilation is retained and reviewed on all 126 pages", () => {
+  const reviewPath = "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/page-reviews.json";
+  const review = JSON.parse(read(reviewPath));
+  assert.equal(review.reviewedOn, NC_CONTROL_DATE);
+  assert.equal(review.id, "NC-NCREC-LAW-RULES-2026");
+  assert.equal(review.pageCount, 126);
+  assert.equal(review.pages.length, 126);
+  assert.equal(hash(review.sourceFile), review.pdfSha256);
+  assert.equal(hash(review.textPath), review.textSha256);
+  for (const page of review.pages) assert.equal(hash(page.renderPath), page.sha256, `NCREC rulebook page ${page.number}`);
+  const text = read(review.textPath);
+  assert.match(text, /NORTH CAROLINA REAL ESTATE COMMISSION RULES/);
+  assert.match(text, /H \.0401\s+Approval of A Real Estate Education Course/i);
+  assert.match(text, /B \.0401\s+Retention of Timeshare Records/i);
+});
+
+test("the official 2026 NCREC rule changes are retained and reviewed on all 13 pages", () => {
+  const reviewPath = "north-carolina/regulatory/captures/2026-09-07/rule-changes-2026/page-reviews.json";
+  const review = JSON.parse(read(reviewPath));
+  assert.equal(review.reviewedOn, NC_CONTROL_DATE);
+  assert.equal(review.id, "NC-NCREC-RULE-CHANGES-2026");
+  assert.equal(review.pageCount, 13);
+  assert.equal(review.pages.length, 13);
+  assert.equal(hash(review.sourceFile), review.pdfSha256);
+  assert.equal(hash(review.textPath), review.textSha256);
+  for (const page of review.pages) assert.equal(hash(page.renderPath), page.sha256, `NCREC 2026 change page ${page.number}`);
+  const text = read(review.textPath);
+  assert.match(text, /21 NCAC 58A \.0112[\s\S]*OFFERS AND SALES CONTRACTS/);
+  assert.match(text, /21 NCAC 58A \.0302[\s\S]*LICENSE APPLICATION AND FEE/);
+  assert.match(text, /21 NCAC 58H \.0101[\s\S]*DEFINITIONS/);
+});
+
+test("RELINC and L-09 evidence binds every reviewed page to its current source PDF", () => {
+  const reviewPath = "north-carolina/regulatory/captures/2026-09-07/relinc-l09-review/page-reviews.json";
+  const review = JSON.parse(read(reviewPath));
+  assert.equal(review.reviewedOn, NC_CONTROL_DATE);
+  assert.equal(review.artifacts.length, 2);
+  assert.equal(review.artifacts.reduce((sum, artifact) => sum + artifact.pageCount, 0), 39);
+
+  for (const artifact of review.artifacts) {
+    assert.equal(hash(artifact.sourceFile), artifact.pdfSha256, `${artifact.id}:source PDF`);
+    assert.equal(artifact.pages.length, artifact.pageCount, `${artifact.id}:page count`);
+    assert.equal(new Set(artifact.pages.map((page) => page.number)).size, artifact.pageCount, `${artifact.id}:unique pages`);
+    for (const page of artifact.pages) {
+      const renderPath = page.renderPath || `north-carolina/regulatory/captures/2026-09-07/relinc-l09-review/renders/relinc-${String(page.number).padStart(2, "0")}.png`;
+      assert.equal(hash(renderPath), page.sha256, `${artifact.id}:page ${page.number}`);
+    }
+  }
+});
+
+test("Module NC-11 current-law claims resolve to the added primary authorities", () => {
+  for (const id of ["NC-STAT-SL-2025-52", "NC-RULE-58A-.0112", "NC-STAT-45A", "NC-STAT-47E", "NC-STAT-10B-134.25", "NC-BAR-CLOSING-2002-1", "FED-CFPB-REGZ-1026.19", "FED-FDIC-FLOOD-MPR", "NC-NCR-FORMS-LIBRARY-2026", "NC-GUIDANCE-SEPTIC"]) {
+    assert.ok(northCarolinaSourceById(id), id);
+  }
+  for (const id of ["NC-C60", "NC-C61", "NC-C62", "NC-C63", "NC-C64", "NC-C65", "NC-C66", "NC-C67"]) {
+    assert.ok(NC_CLAIMS.some((claim) => claim.id === id), id);
+  }
+});
+
+test("Module NC-12 current-law and form claims resolve to the added authorities", () => {
+  for (const id of ["NC-STAT-45-ARTICLE2A", "NC-COURTS-FORECLOSURE", "FED-CFPB-REGZ-ADVERTISING-VALUATION", "FED-CFPB-REGX-REFERRALS", "FED-CFPB-REGB", "FED-CFPB-REGV", "FED-HUD-FHA-HANDBOOK", "FED-VA-ASSUMPTION", "FED-VA-ENTITLEMENT-LIMITS", "FED-USDA-SFH-DIRECT", "FED-FHFA-ENTERPRISES", "FED-GINNIE-ROLE", "FED-CFPB-TRID-FORMS", "FED-CFPB-HUD1-COMPARE", "ALTA-SETTLEMENT-STATEMENTS"]) {
+    assert.ok(northCarolinaSourceById(id), id);
+  }
+  for (const id of ["NC-C68", "NC-C69", "NC-C70", "NC-C71", "NC-C72", "NC-C73", "NC-C74", "NC-C75", "NC-C76"]) {
+    assert.ok(NC_CLAIMS.some((claim) => claim.id === id), id);
+  }
+});
+
+test("Module NC-13 valuation, appraisal and current URAR claims resolve to official authorities", () => {
+  for (const id of ["NC-STAT-93E-ARTICLE1", "NC-STAT-93A-ARTICLE6", "FED-TAF-USPAP", "FED-TAF-HISTORY", "GSE-FANNIE-UAD36", "GSE-FANNIE-FORMS"]) {
+    assert.ok(northCarolinaSourceById(id), id);
+  }
+  for (const id of ["NC-C77", "NC-C78", "NC-C79", "NC-C80", "NC-C81"]) {
+    assert.ok(NC_CLAIMS.some((claim) => claim.id === id), id);
+  }
+});
+
+test("Module NC-14 landlord-tenant claims resolve to current statutes and Commission rules", () => {
+  for (const id of ["NC-STAT-42-ARTICLE2A", "NC-STAT-42-ARTICLE3", "NC-STAT-42-ARTICLE4A", "NC-STAT-42-ARTICLE5", "NC-STAT-42-ARTICLE6", "NC-STAT-42-ARTICLE7", "NC-STAT-42A", "NC-RULE-58A-.0104", "NC-RULE-58A-.0116", "NC-RULE-58A-.0117"]) {
+    assert.ok(northCarolinaSourceById(id), id);
+  }
+  for (const id of ["NC-C82", "NC-C83", "NC-C84", "NC-C85", "NC-C86", "NC-C87"]) {
+    assert.ok(NC_CLAIMS.some((claim) => claim.id === id), id);
+  }
+});
+
+test("Module NC-15 laws, forms and measurement claims resolve to current official authorities", () => {
+  for (const id of ["NC-STAT-47B", "NC-STAT-43", "NC-STAT-47F", "NC-STAT-41A", "NC-STAT-93A-ARTICLE4", "NC-RULE-58B-.0400-.0600", "NC-STAT-25-9-334", "NC-STAT-14-395.1", "NC-STAT-75-1.1-16", "NC-STAT-136-102.6", "NC-STAT-44A-PART4", "NC-OSFM-CURRENT-CODES", "NC-NCREC-RPOADS-2026", "NC-NCREC-MOG", "NC-NCREC-RSFG-2026", "NC-NCREC-WWREA", "NC-NCREC-WWREA-QA-2022", "NC-NCREC-SUBDIVISIONS-QA-2019"]) {
+    assert.ok(northCarolinaSourceById(id), id);
+  }
+  for (const id of ["NC-C88", "NC-C89", "NC-C90", "NC-C91", "NC-C92", "NC-C93", "NC-C94", "NC-C95", "NC-C96", "NC-C97", "NC-C98", "NC-C99", "NC-C100", "NC-C101", "NC-C102"]) {
+    assert.ok(NC_CLAIMS.some((claim) => claim.id === id), id);
+  }
 });
 
 test("every source carries required provenance and verification fields", () => {
@@ -94,13 +236,15 @@ test("distance plan requires orientation, persistent navigation, sequential asse
 
 test("timing report fails the present course instead of trusting planned-hour labels", () => {
   const report = read("north-carolina/submission/09-timing-evidence-report.md");
-  assert.match(report, /51,568/);
+  assert.match(report, /69,379/);
+  assert.match(report, /89,746/);
   assert.match(report, /810,000/);
   assert.match(report, /must not be submitted or advertised as 75 hours/i);
   const timing = getNorthCarolinaCourse().timingEvidence;
   assert.equal(timing.validated, false);
   assert.equal(timing.commissionReadingRateWordsPerMinute, 225);
-  assert.ok(timing.curriculumBaselineMinutes < 240 + 1);
+  assert.equal(timing.curriculumBaselineWords, 69379);
+  assert.equal(timing.curriculumBaselineMinutes, 308.35);
 });
 
 test("certificate gate now requires every provider-level approval and operational proof", () => {
@@ -133,5 +277,5 @@ test("product roadmap distinguishes prelicense, three postlicense courses, elect
 });
 
 test("all required Phase 0 and submission-draft artifacts exist", () => {
-  for (const path of ["north-carolina/regulatory/official-sources.md", "north-carolina/regulatory/personal-broker-path.md", "north-carolina/regulatory/requirements-traceability.md", "north-carolina/submission/00-filing-index.md", "north-carolina/submission/05-policies-procedures-disclosure-draft.md", "north-carolina/submission/09-timing-evidence-report.md", "north-carolina/HANDOFF.md"]) assert.ok(existsSync(new URL(`../${path}`, import.meta.url)), path);
+  for (const path of ["north-carolina/regulatory/official-sources.md", "north-carolina/regulatory/personal-broker-path.md", "north-carolina/regulatory/requirements-traceability.md", "north-carolina/submission/00-filing-index.md", "north-carolina/submission/05-policies-procedures-disclosure-draft.md", "north-carolina/submission/09-timing-evidence-report.md", "north-carolina/submission/22-protected-final-exam-audit.md", "north-carolina/HANDOFF.md"]) assert.ok(existsSync(new URL(`../${path}`, import.meta.url)), path);
 });

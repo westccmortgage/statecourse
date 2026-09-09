@@ -1,0 +1,2457 @@
+1 North Carolina Real Estate License Law and Commission Rules
+INTRODUCTION
+T
+hese comments on selected North Carolina Real Es-
+tate License Law and Real Estate Commission Rules
+provisions are intended to assist real estate licensees, preli-
+censing course students and others in understanding the Li-
+cense Law and Commission rules. The comments are orga -
+nized in a topic format that often differs from the sequence
+in which the topics are addressed in the License Law and
+Commission rules. The topics selected for comment here
+are not only of particular importance in real estate broker -
+age practice but also are likely to be tested on the real estate
+license examination. The appropriate references to the Li-
+cense Law and Commission rules are provided beside each
+listed topic.
+REQUIREMENT FOR A LICENSE
+General [G.S. 93A‑1 and 93A‑2]
+A
+ny person or business entity who directly or indi -
+rectly engages in the business of a real estate bro -
+ker for compensation or the promise thereof while physical-
+ly in the state of North Carolina must have a North Caro -
+lina real estate broker license. In North Carolina, a real es -
+tate licensee may only engage in brokerage as an “agent” for
+a party to a transaction.  Thus, a real estate licensee is com-
+monly and appropriately referred to as a real estate “agent”
+even though the latter term does not actually appear in the
+License Law. Note that a real estate “licensee” is NOT au -
+tomatically a “REALTOR®.” A licensed real estate agent is a
+REALTOR® only if he/she belongs to the National Associa-
+tion of REALTORS®, a private trade association.  Thus, the
+term REALTOR® should not be used to generally refer to all
+real estate licensees.
+License Categories [G.S. 93A‑2]
+There is only one “type” of license, a broker license;
+however, there are several license status categories as de -
+scribed below:
+Provisional Broker – This is the “entry level” license sta-
+tus category. A person who has met all the license qualifi-
+cation requirements (including a 75-hour prelicensing course
+and passing the Commission’s license examination) is initial-
+ly issued a broker license on “provisional” status  and is
+referred to as a “provisional broker.”  A provisional bro -
+ker generally may perform the same acts as a broker whose
+license is NOT on provisional status so long as he or she
+is supervised by a broker who is a designated broker-in-
+charge.  A provisional broker may not operate independent-
+ly in any way.  G.S. 93A-2(a2) defines a “provisional bro-
+ker” as “...a real estate broker who, pending acquisition and
+documentation to the Commission of the education or expe -
+rience prescribed by G.S. 93A-4(a1), must be supervised by a
+broker-in-charge when performing any act for which a real es-
+tate license is required.”
+This license status category is comparable to a “salesper-
+son” license in most other states except that it is a temporary
+license status category.  Provisional brokers may not retain
+this status indefinitely – they must complete required postli-
+censing education to remove the “provisional” status of their
+licenses and to remain eligible for “active” license status.
+Broker – A “provisional broker” who satisfies all postli-
+censing education requirements to terminate the “provision-
+al” status of such license becomes a “broker” without hav-
+ing to take another license examination.  A broker is NOT
+required to be supervised by a broker-in-charge in order to
+hold an “active” license. An applicant who holds a current
+real estate license in another U.S. jurisdiction that is equiva-
+lent to NC’s broker license and that has been on active sta-
+tus within the previous three (3) years may pass the State
+portion of the license examination and be issued a broker li-
+cense (assuming requisite character requirements are met).
+All others must first be licensed in North Carolina as a pro-
+visional broker and then satisfy the postlicensing education
+requirement to become a non-provisional broker.
+Most frequently, brokers elect to work for another bro -
+ker or brokerage firm.  Brokers may also elect to operate in-
+dependently as a sole proprietor; however, with limited ex -
+ceptions, such broker will have to qualify for and designate
+himself or herself as a broker-in-charge in order to operate
+independently and perform most brokerage activities (dis -
+cussed further below under “broker-in-charge” and also in
+a subsequent section on brokers-in-charge that appears near
+the end of this appendix).
+Broker-In-Charge – G.S. 93A-2(a1) defines a “broker-
+in-charge” as “...a real estate broker who has been designat -
+ed as the broker having responsibility for the supervision of real
+estate provisional brokers engaged in real estate brokerage at a
+particular real estate office and for other administrative and
+supervisory duties as the Commission shall prescribe by rule.”
+Commission Rule A.0110 requires that each real estate of -
+fice must have a broker who meets the qualification require-
+ments to serve as “broker-in-charge” of the office and who
+has designated himself or herself as the broker-in-charge of
+that office.  As is the case with “provisional broker,” “broker-
+in-charge” is not a separate license, but only a separate license
+status category. A broker who is to serve as the broker-in-
+charge (BIC) of an office (including working independent -
+ly) must be designated as a BIC with the Commission.
+LICENSE LAW AND RULES COMMENTS
+Comments on Selected Provisions of the
+North Carolina Real Estate License Law
+and Real Estate Commission Rules
+
+
+
+
+2 North Carolina Real Estate License Law and Commission Rules
+T o qualify for designation as a broker-in-charge, a bro-
+ker’s license must be on “active” status but NOT on “pro-
+visional” status, the broker must have two years full-time
+or four years part-time brokerage experience within the
+previous five years and the broker must complete a 12-hour
+Broker-In-Charge Course no earlier than one year prior or
+120 days after designation.  Broker-in-charge requirements
+are addressed in detail in a separate subsequent section titled
+“Broker-In-Charge.”
+Limited Nonresident Commercial Broker – A broker
+or salesperson residing in a state other than North Caroli-
+na who holds an active broker or salesperson license in the
+state where his or her primary place of real estate business
+is located may apply for and obtain a North Carolina “lim-
+ited nonresident commercial broker license” that entitles
+such licensee to engage in transactions for compensation in-
+volving “commercial real estate” in North Carolina. While
+the non-resident limited broker will remain affiliated with
+his/her out of state real estate company and will not have a
+North Carolina broker-in-charge,  the non-resident licens-
+ee must enter into a “notification of broker affiliation” and
+a “brokerage cooperation agreement” with a resident North
+Carolina broker not on provisional status and the licensee
+must be supervised by the North Carolina broker while per-
+forming commercial real estate brokerage in North Caro-
+lina. A limited nonresident commercial broker license is a
+separate license.
+Licensing of Business Entities [G.S. 93A‑1 and 2; Rule
+A.0502]
+In addition to individuals (persons), “business entities” also
+must be licensed in order to engage in real estate brokerage.
+Any corporation, partnership, limited liability company, asso-
+ciation or other business entity (other than a sole proprietor-
+ship) must obtain a separate real estate firm broker license.
+Activities Requiring a License [G.S. 93A‑2]
+Persons and business entities who for consideration or the
+promise thereof perform the activities listed below as an agent
+for others are considered to be performing brokerage activities
+and must have a real estate license unless specifically exempt -
+ed by the statute  (see subsequent section on “Exemptions”).
+There is no exemption for engaging in a limited number
+of transactions. A person or entity who performs a broker-
+age service for compensation in even one transaction must
+be licensed, whether such compensation is termed a “refer -
+ral fee,” “finder’s fee,” or other terminology. Similarly, no fee
+or other consideration is so small as to exempt one from the
+application of the licensing statute when acting for another
+in a real estate transaction.  Brokerage activities include:
+1. Listing (or offering to list) real estate for sale or
+rent, including any act performed by a real estate li -
+censee in connection with obtaining and servicing a
+listing agreement. Examples of such acts include, but
+are not limited to, soliciting listings, providing infor-
+mation to the property owner, and preparing listing
+agreements or property management agreements.
+2. Selling or buying (or offering to sell or buy) real
+estate, including any act performed by a real estate
+licensee in connection with assisting others in selling
+or buying real estate. Examples of such acts include,
+but are not limited to, advertising listed property for
+sale, “showing” listed property to prospective buy-
+ers, providing information about listed property to
+prospective buyers (other than basic property facts
+that might commonly appear in an advertisement in
+a newspaper, real estate publication or internet web-
+site), negotiating a sale or purchase of real estate, and
+assisting with the completion of contract offers and
+counteroffers using preprinted forms and communi-
+cation of offers and acceptances.
+3. Leasing or renting (or offering to lease or rent) real
+estate, including any act performed by real estate li-
+censees in connection with assisting others in leasing
+or renting real estate. Examples of such acts include,
+but are not limited to, advertising listed property for
+rent, “showing” listed rental property to prospective
+tenants, providing information about listed rental
+property to prospective tenants (other than basic
+property facts that might commonly appear in an
+advertisement in a newspaper, real estate publication
+or internet website), negotiating lease terms, and as -
+sisting with the completion of lease offers and coun-
+teroffers using preprinted forms and communication
+of offers and acceptances.
+4. Conducting (or offering to conduct) a real estate
+auction. (Mere criers of sale are excluded.) NOTE:
+An auctioneer’s license is also required to auction real
+estate.
+5. Selling, buying, leasing, assigning or exchanging
+any interest in real estate, including a leasehold
+interest,    in connection with the sale or purchase
+of  a business.
+6. Referring a party to a real estate licensee, if done
+for compensation. Any arrangement or agreement
+between a licensee and an unlicensed person that
+calls for the licensee to compensate the unlicensed
+person in any way for finding, introducing or refer-
+ring a party to the licensee has been determined by
+North Carolina’s courts to be prohibited under the
+License Law. Therefore, no licensee may pay a finder’s
+fee, referral fee, “bird dog” fee or similar compensation
+to an unlicensed person.
+Unlicensed Employees — Permitted Activities
+The use of unlicensed assistants and other unlicensed of-
+fice personnel in the real estate industry is very widespread
+and the Commission is frequently asked by licensees what
+acts unlicensed persons may lawfully perform. As guidance
+to licensees, the Commission has prepared the following
+list of acts that an unlicensed assistant or employee may
+lawfully perform so long as the assistant or employee is sal -
+aried or hourly paid and is not paid on a per-transaction
+
+
+
+
+3 North Carolina Real Estate License Law and Commission Rules
+basis.
+An unlicensed, salaried employee MAY:
+1. Receive and forward phone calls and electronic mes-
+sages to licensees.
+2. Submit listings and changes to a multiple listing ser-
+vice, but only if the listing data or changes are com -
+piled and provided by a licensee.
+3. Secure copies of public records from public repositories
+(i.e., register of deeds office, county tax office, etc.).
+4. Place “for sale” or “for rent” signs and lock boxes on
+property at the direction of a licensee.
+5. Order and supervise routine and minor repairs to
+listed property at the direction of a licensee.
+6. Act as a courier to deliver or pick up documents.
+7. Provide to prospects basic factual information on
+listed property that might commonly appear in ad -
+vertisements in a newspaper, real estate publication
+or internet website.
+8. Schedule appointments for showing property listed
+for sale or rent.
+9. Communicate with licensees, property owners, pros-
+pects, inspectors, etc. to coordinate or confirm ap-
+pointments.
+10.Show rental properties managed by the employee’s
+employing broker to prospective tenants and com-
+plete and execute preprinted form leases for the rent-
+al of such properties.
+11.Type offers, contracts and leases from drafts of pre-
+printed forms completed by a licensee.
+12.Record and deposit earnest money deposits, tenant
+security deposits and other trust monies, and other -
+wise maintain records of trust account receipts and
+disbursements, under the close supervision of the of-
+fice broker-in-charge, who is legally responsible for
+handling trust funds and maintaining trust accounts.
+13. Assist a licensee in assembling documents for closing.
+14.Compute commission checks for licensees affiliated
+with a broker or firm and act as bookkeeper for the
+firm’s bank operating accounts.
+Exemptions [G.S. 93A‑2(c)]
+The following persons and organizations are specifically
+exempted from the requirement for real estate licensure:
+1. A business entity selling or leasing real estate owned
+by the business entity when the acts performed are in
+the regular course of or are incident to the manage -
+ment of that real estate and the investment therein.
+This exemption extends to officers and employees of
+an exempt corporation, the general partners of an ex-
+empt partnership, and the managers of an exempt
+limited liability company when engaging in acts or
+services for which the corporation, partnership or
+limited liability company would be exempt.
+2. A person acting as an attorney-in-fact under a power
+of attorney from the owner authorizing the final con-
+summation of performance of any contract for the
+sale, lease or exchange of real estate. (Note: This lim-
+ited exemption applies only to the final completion
+of a transaction already commenced. The licensing
+requirement may not be circumvented by obtaining
+a power of attorney.)
+3. An attorney-at-law who is an active member of the
+North Carolina State Bar only when performing an
+act or service that constitutes the practice of law un-
+der Chapter 84 of the General Statutes. Thus, the
+attorney exemption is strictly limited and attorneys
+generally may NOT engage in real estate brokerage
+practice without a real estate license.
+4. A person acting as a receiver, trustee in bankruptcy,
+guardian, administrator or executor or any person
+acting under a court order.
+5. A trustee acting under a written trust agreement,
+deed of trust or will or the trustee’s regular salaried
+employees.
+6. Certain salaried employees of broker- property
+managers. (See G.S. 93A-2(c)(6) for details.)
+7. An individual owner selling or leasing the owner’s
+own property.
+8. A housing authority organized under Chapter 157 of
+the General Statutes and any regular salaried employee
+with regard to the sale or lease of property owned by
+the housing authority or to the subletting of property
+which the housing authority holds as tenant.
+THE REAL ESTATE COMMISSION
+Composition [G.S. 93A‑3(a)]
+T
+he Real Estate Commission consists of nine (9)
+members who serve three-year terms.  Seven mem-
+bers are appointed by the Governor and two are appointed
+by the General Assembly upon the recommendations of the
+Speaker of the House of Representatives and the President
+Pro T empore of the Senate. At least three (3) members must
+be licensed brokers. At least two (2) members must be “pub-
+lic members” who are NOT involved directly or indirectly
+in the real estate brokerage or appraisal businesses.
+Purpose and Powers [G.S. 93A‑3(a), (c) and (f); G.S.
+93A‑6(a) and (b);G.S. 93A‑4(d), 4.2 and 93A‑33]
+The principal purpose of the Real Estate Commission
+is to protect the interests of members of the general pub -
+lic in their dealings with real estate brokers. This is accom-
+plished through the exercise of the following statutory pow-
+ers granted to the Commission:
+1. Licensing real estate brokers and brokerage firms, and
+registering time share projects.
+2. Establishing and administering prelicensing educa-
+tion programs for prospective licensees and postli-
+censing and continuing education programs for li -
+censees.
+3. Providing education and information relating to the
+real estate brokerage business for licensees and the
+
+
+
+
+4 North Carolina Real Estate License Law and Commission Rules
+general public.
+4. Regulating the business activities of brokers and bro-
+kerage firms, including disciplining licensees who
+violate the License Law or Commission rules.
+It should be noted that the Commission is specifically
+prohibited, however, from regulating commissions, salaries
+or fees charged by real estate licensees and from arbitrating
+disputes between parties regarding matters of contract such
+as the rate and/or division of commissions or similar mat -
+ters. [See G.S. 93A-3(c) and Rule A.0109.]
+Disciplinary Authority [G.S. 93A‑6(a)‑(c)]
+The Real Estate Commission is authorized to take a va -
+riety of disciplinary actions against licensees who the Com -
+mission finds guilty of violating the License Law or Com-
+mission rules while acting as real estate licensees. These
+are: reprimand, censure, license suspension  and license
+revocation. The License Law also permits a licensee un -
+der certain circumstances to surrender his/her license with
+the consent of the Commission. Disciplinary actions taken
+against licensees are regularly reported in the Commission’s
+periodic newsletter which is distributed to all licensees and
+also may be reported in local and regional newspapers.
+It should be noted that licensees may be subject to the
+same disciplinary action for committing acts prohibited by
+the License Law when selling, leasing, or buying real estate
+for themselves, as well as for committing such acts in trans-
+actions handled as agents for others. [G.S. 93A-6(b)(3)]
+The Commission also has the power to seek in its own
+name injunctive relief in superior court to prevent any per-
+son (licensees and others) from violating the License Law
+or Commission rules. A typical example of when the Com-
+mission might pursue injunctive relief in the courts is where
+a person engages in real estate activity without a license or
+during a period when the person’s license is suspended, re-
+voked or expired. [G.S. 93A-6(c)]
+Any violation of the License Law or Commission rules is
+a criminal offense (misdemeanor) and may be prosecuted in a
+court of law. However, a finding by the Commission that a
+licensee has violated the License Law or Commission rules
+does not constitute a criminal conviction. [G.S. 93A-8]
+PROHIBITED ACTS BY LICENSEES
+G
+.S. 93A-6 provides a list of prohibited acts which
+may result in disciplinary action against licensees.
+Discussed below are various prohibited acts, except for those
+related to handling and accounting for trust funds, broker’s
+responsibility for closing statements, and the failure to deliv-
+er certain instruments to parties in a transaction, which are
+discussed in the subsequent sections on “General Brokerage
+Provisions” and “Handling T rust Funds.”
+Important Note
+The provisions of the License Law relating to misrep-
+resentation or omission of a material fact, conflict of inter -
+est, licensee competence, handling of trust funds, and im -
+proper, fraudulent or dishonest dealing generally apply in -
+dependently of other statutory law or case law such as the
+law of agency.
+Nevertheless, other laws may affect the appli-
+cation of a License Law provision. For example, the N.C. Ten-
+ant Security Deposit Act requires an  accounting to a tenant for
+a residential security deposit within 30 -60 days after termina -
+tion of a tenancy . License Law provisions (and Commission
+rules) require licensees to account for such funds within a rea -
+sonable time. Thus, in this instance, a violation of the Tenant
+Security Deposit Act’s provisions would also be considered a
+violation of the License Law.
+Similarly, the law of agency and the law of contracts as de-
+rived from the common law may impact the application of Li -
+cense Law.
+Thus, a licensee’s agency status and role in a trans-
+action might affect the licensee’s duties under the license law.
+Examples of how an agent’s duties under the License Law
+may be affected by the application of other laws are included
+at various points in this section on “Prohibited Acts by Li -
+censees.”
+Misrepresentation or Omission [G.S. 93A‑6(a)(1)]
+Misrepresentation or omission of a material fact by a li -
+censee is prohibited, and this prohibition includes both
+“willful” and “negligent” acts. A “willful” act is one that is
+done intentionally and deliberately, while a “negligent” act
+is one that is done unintentionally. A “misrepresentation”
+is communicating false information, while an “omission”
+is failing to provide or disclose information where there is a
+duty to provide or disclose such information.
+Material Facts
+For purposes of applying G.S. 93A-6(a)(1), whether a
+fact is “material” depends on the facts and circumstances
+of a particular transaction and the application of statutory
+and/or case law. The Commission has historically interpret-
+ed “material facts” under the Real Estate License Law to in-
+clude at least:
+Facts about the property itself (such as a structural de-
+fect or defective mechanical systems);
+Facts relating directly to the property (such as a pend-
+ing zoning change or planned highway construction
+in the immediate vicinity); and
+Facts relating directly to the ability of the agent’s
+principal to complete the transaction (such as a
+pending foreclosure sale).
+Facts that are known to be of special importance to a
+party (such as a buyer wanting the ability to add a pool.)
+Regardless of which party in a transaction a real estate agent
+represents, the facts described above must be disclosed to both
+the agent’s principal and to third parties the agent deals with on
+the principal’s behalf. In addition, an agent has a duty to dis-
+close to his or her principal any information that may affect the
+principal’s rights and interests or influence the principal’s deci-
+sion in the transaction.
+Death or Serious Illness of Previous Property Oc -
+cupant — Note, however, that G.S. 39-50 and 42-14.2
+specifically provide that the fact that a property was occu-
+
+
+
+
+5 North Carolina Real Estate License Law and Commission Rules
+pied by a person who died or had a serious illness while oc-
+cupying the property is NOT a material fact. Thus, agents
+do not need to voluntarily disclose such a fact. If a prospec-
+tive buyer or tenant specifically asks about such a matter, the
+agent may either decline to answer or respond honestly. If,
+however, a prospective buyer or tenant inquires as to wheth-
+er a previous owner or occupant had AIDS, the agent is pro-
+hibited by fair housing laws from answering such an inqui-
+ry because persons with AIDS are considered to be “handi-
+capped” under such laws and disclosure of the information
+may have the effect of discriminating against the property
+owner based on the handicapping condition.
+Convicted Sex Offender Occupying, Having Occu-
+pied or Residing Near a Property — Note also that the
+same North Carolina statutes (G.S. §39-50 and §42-14.2)
+that state the death or serious illness of a previous occupant
+of a property is not a material fact in a real estate transaction
+contain a similar provision relating to convicted sex offend-
+ers. The statutes provide that when offering a property for
+sale, rent or lease, “…it shall not be a material fact…that a
+person convicted of any crime for which registration is re -
+quired by Article 27A of Chapter 14 of the General Statutes
+[statutes establishing registration programs for sex offenders
+and sexually violent predators] occupies, occupied or resides
+near the property; provided, however, that no seller [or land-
+lord or lessor] may knowingly make a false statement regard-
+ing such fact.” Therefore, an agent involved in a transaction
+is not required to volunteer to a prospective buyer or tenant
+any information about registered sex offenders as described
+above. If a buyer or tenant specifically asks about sex offend-
+ers in a neighborhood, an agent need only answer truthfully
+to the best of his/her knowledge. In the absence of a specif-
+ic inquiry about this matter from the buyer, an agent repre-
+senting the buyer who knows, for example, that a registered
+sex offender lives in the immediate area, will probably want
+to disclose the information in the interest of serving his/her
+buyer-client even though not required by law to do so. On
+the other hand, in the absence of a specific inquiry by the
+buyer, if the agent who knows such information represents
+the seller, the agent will probably want to check with his/her
+seller-client before disclosing that information since volun -
+tary disclosure is likely not in the seller’s best interest. Any
+agent also has the option of advising a prospective buyer or
+tenant about how to check the statewide sex offender regis-
+try online at www.sexoffender.ncsbi.gov/search.aspx.
+This introductory information should assist in under -
+standing G.S. 93A-6(a)(1), which establishes four separate
+(although closely related) categories of conduct which are
+prohibited. These are discussed below, and a few examples of
+prohibited conduct are provided for each category.
+Willful Misrepresentation — This occurs when a licensee
+who has “actual knowledge” of a material fact deliberately mis-
+informs a buyer, seller, tenant or landlord concerning such fact.
+Note:  The following examples of willful misrepresentation
+apply regardless of the licensee’s status (seller’s agent or buy-
+er’s agent) or role (listing agent or selling agent).
+Example: An agent knows that a listed house has a se -
+vere problem with water intrusion in the crawl space
+during heavy rains. In response to a question from
+a prospective buyer who is being shown the house
+during dry weather, the agent states that there is no
+water drainage problem.
+Example: An agent knows that the heat pump at a
+listed house does not function properly, but tells a
+prospective buyer that all mechanical systems and
+appliances are in good condition.
+Example: An agent knows that the approximate mar -
+ket value of a house is $225,000, but tells the prop -
+erty owner that the house is worth $250,000 in order
+to obtain a listing.
+Negligent Misrepresentation — This occurs when a li -
+censee unintentionally misinforms a buyer, seller, tenant or
+landlord concerning a material fact either because the licensee
+does not have actual knowledge of the fact, because the licensee
+has incorrect information, or because of a mistake by the licens-
+ee. If a reasonably prudent licensee “should reasonably have
+known” the truth of the matter that was misrepresented,
+then the licensee may be guilty of “negligent misrepresenta-
+tion” even though the licensee was acting in good faith.
+Negligent misrepresentation by real estate licensees oc -
+curs frequently in real estate transactions. A very common
+situation is the recording of incorrect information about a
+property in an MLS listing due to the negligence of the list-
+ing agent. When a prospective buyer is subsequently pro -
+vided the incorrect information from the MLS by the agent
+working with the buyer, a negligent misrepresentation by
+the listing agent occurs.
+A listing agent is generally held to a higher standard with
+regard to negligent misrepresentation of material facts about a
+listed property to a buyer than is a selling agent who is acting
+as a seller’s subagent. This is because (1) The listing agent is
+in the best position to ascertain facts about the property, (2)
+the listing agent is expected to take reasonable steps to assure
+that property data included with the listing is correct and
+(3) it is generally considered reasonable for a selling agent to
+rely on the accuracy of the listing data except in those situ -
+ations where it should be obvious to a reasonably prudent
+agent that the listing information is incorrect.  However, a
+buyer’s agent may in some cases be held to a higher standard
+than a seller’s subagent because of the buyer’s agent’s duties to
+the buyer under the law of agency and the buyer’s agent’s special
+knowledge of the buyer’s particular situation and needs.
+Example: An agent has previously sold several lots in
+a subdivision under development and all those lots
+passed a soil suitability test for an on-site septic sys -
+tem. The agent then sells Lot 35 without checking
+as to whether this lot satisfies the soil test; however,
+the agent informs the buyer that Lot 35 will support
+
+
+
+
+6 North Carolina Real Estate License Law and Commission Rules
+an on-site septic system when in fact the contrary is
+true. (While the agent’s conduct may not rise to the
+level of willful disregard for the truth of the matter,
+the agent was at least negligent in not checking the
+soil test result on Lot 35 and is therefore guilty of
+negligent misrepresentation. This result is not affect-
+ed by the agent’s agency status or role in the trans-
+action.)
+Example: An owner tells a listing agent with ABC
+Realty that his house has 1850 heated square feet.
+Without verifying the square footage, the agent re -
+cords 1850 square feet on the listing form and in
+the listing information published in the local MLS.
+The house is subsequently sold by a sales agent with
+XYZ Realty who tells the buyer that according to the
+MLS data, the house has 1850 square feet. The buyer
+later discovers that the house actually has only 1750
+square feet. The listing agent is guilty of a negligent
+misrepresentation. Although the selling agent direct-
+ly communicated the incorrect information to the
+buyer, he/she probably acted reasonably in relying on
+the data in MLS. In this case, if the selling agent had
+no reason to doubt the MLS data, the selling agent
+is not guilty of a negligent misrepresentation. Note,
+however, that if the square footage discrepancy had
+been sufficiently large that a reasonably prudent sell-
+ing agent should have known the listed data was in -
+correct, then the selling agent would also have been
+guilty of negligent misrepresentation. The result in
+this particular example is not affected by the sell -
+ing agent’s agency status (seller’s subagent or buyer’s
+agent), although this might be a factor in other situa-
+tions.
+Willful Omission — This occurs when a licensee has “ac -
+tual knowledge” of a material fact and a duty to disclose such
+fact to a buyer, seller, tenant, or landlord, but deliberately fails
+to disclose such fact.
+Example: An agent knows that a zoning change is
+pending that would adversely affect the value of a
+listed property, but fails to disclose such information
+to a prospective buyer. The agent has committed a
+willful omission regardless of the agent’s agency sta-
+tus or role in the transaction.
+Example: An agent knows that a listed house has a ma-
+jor defect (e.g., crumbling foundation, no insulation,
+malfunctioning septic tank, leaking roof, termite in-
+festation, or some other problem) but fails to disclose
+such information to a prospective buyer. The agent
+has committed a willful omission and this result is
+not affected by the agent’s agency status or role in the
+transaction.
+Example: A selling agent working with a buyer as a
+subagent of the seller learns that the buyer is will -
+ing to pay more than the price in the buyer’s offer,
+but fails to disclose this information to the seller (or
+listing agent) when presenting the offer. The selling
+agent has committed a willful omission. If, however,
+the selling agent were acting as a buyer’s agent, then
+the result would be different because the agent does
+not represent the seller and has a duty not to dis -
+close to the seller confidential buyer information that
+would be harmful to the buyer’s interest.
+Example:A buyer’s agent becomes aware that the seller
+with whom his buyer is negotiating is under pressure
+to sell quickly and may accept much less than the list-
+ing price. Believing such information should always be
+kept confidential, the buyer’s agent does not provide
+the buyer with this information. The buyer’s agent is
+guilty of a willful omission. An agent must disclose to
+his/her principal any information that might affect the
+principal’s decision in the transaction.
+Example:  Suppose in the immediately preceding exam-
+ple that the seller’s property is listed with the firm of
+the buyer’s agent where it represents both the seller
+and the buyer. In this situation, the buyer’s agent
+would not be considered to have committed a willful
+omission under the License Law by not disclosing
+the information about the seller’s personal situation
+to the buyer.
+Negligent Omission — This occurs when a licensee does
+NOT have actual knowledge of a material fact and consequent-
+ly does not disclose the fact, but a reasonably prudent licensee
+“should reasonably have known” of such fact.  In this case, the
+licensee may be guilty of “negligent omission” if he/she fails
+to disclose this fact to a buyer, seller, tenant or landlord, even
+though the licensee acted in good faith in the transaction.
+The prohibition against negligent omission creates a
+“duty to discover and disclose” material facts which a reason-
+ably prudent licensee would typically have discovered in the
+course of the transaction. A listing agent is typically in a much
+better position than a selling agent to discover material facts
+relating to a listed property and thus, will be held to a higher
+standard than will a selling age nt acting as a seller’s subagent.
+On the other hand, a buyer’s agent in some circumstances may
+be held to a higher standard than a seller’s subagent because of
+the buyer’s agent’s duties to the buyer under the law of agen-
+cy, particularly if the buyer’s agent is aware of a buyer’s special
+needs with regard to a property. Again we see how the agency
+relationships between agents and principals to a transaction
+and the licensee’s role in the transaction can affect a licens-
+ee’s duties and responsibilities under the License Law.
+Instances of negligent omission occur much less fre -
+quently than instances of negligent misrepresentation. This
+is because most facts about a listed property are recorded
+on a detailed property data sheet from which information
+is taken for inclusion in MLS listings. If incorrect informa -
+tion taken from an MLS listing is passed on to a prospective
+purchaser, then a “misrepresentation,” rather than an “omis-
+sion,” has occurred. Nevertheless, there are examples of neg-
+ligent omission which can be cited.
+
+
+
+
+7 North Carolina Real Estate License Law and Commission Rules
+Example: A listing agent lists for sale a house located
+adjacent to a street that is about to be widened into
+a major thoroughfare. The thoroughfare project has
+been very controversial and highly publicized. The
+city recently finalized its decision to proceed with the
+project and the plans for the street widening are re -
+corded in the city planner’s office. A buyer, working
+with a selling agent, makes an offer to buy the house.
+The listing agent does not disclose the street widening
+plans to the buyer or selling agent and claims later that
+he/she was not aware of the plans. In this situation,
+both the listing and selling agents are probably guilty
+of negligent omission because each “should reason-
+ably have known” of the street widening plans, clearly
+a material fact, and should have disclosed this fact to
+the buyer. This result is not affected by whether the
+selling agent is a buyer agent or seller’s subagent.
+Example: A seller has a 30,000 square foot commercial
+property for sale which cannot be expanded under
+local zoning laws. The buyer is looking for property
+in the 25,000 - 30,000 square foot range, but has
+told his buyer’s agent that he needs a property where
+he can expand to 50,000 square feet or more in the
+future. The seller does not think to advise the buyer’s
+agent that the property cannot be expanded, and the
+buyer’s agent makes no inquiry about it although
+he is aware of the buyer’s special needs. If the buyer
+purchases the property without knowing about the
+restriction on expansion, the buyer’s agent is guilty
+of a negligent omission for failing to discover and
+disclose a special circumstance that the agent knew
+was especially important to his/her client.
+Making False Promises [G.S. 93A‑6(a)(2)]
+Real estate brokers are prohibited from “making any
+false promises of a character likely to influence, persuade or
+induce.” The promise may relate to any matter which might
+influence, persuade or induce a person to perform some act
+he/she might not otherwise perform.
+Example: An agent promises a prospective apartment
+tenant that the apartment will be repainted before the
+tenant moves in. The agent then fails to have the work
+done after the lease is signed.
+Example: An agent promises a property owner that
+if he/she lists his/her house for sale with the agent’s
+firm, then the firm will steam-clean all the carpets
+and wash all the windows. The firm then fails to have
+the work done after the listing contract is signed.
+Other Misrepresentations [G.S. 93A‑6(a)(3)]
+Real estate brokers are prohibited from pursuing a course
+of misrepresentation (or making of false promises) through
+other agents or salespersons or through advertising or oth -
+er means.
+Example: In marketing subdivision lots for a develop-
+er, a broker regularly advertises that the lots for sale
+are suitable for residential use when in fact the lots
+will not pass a soil suitability test for on-site sewage
+systems.
+Example:  A broker is marketing a new condominium
+complex which is under construction. Acting with the
+full knowledge and consent of the broker, the broker’s
+agents regularly inform prospective buyers that units
+will be available for occupancy on June 1, when in fact
+the units won’t be available until at least September 1.
+Conflict of Interest [G.S. 93A‑6(a)(4) and (6); Rule
+A.0104(d)] and (i)
+Undisclosed Dual Agency.  G.S. 93A-6(a)(4) prohib-
+its a real estate agent from “acting for more than one party in
+a transaction without the knowledge of all parties for whom he
+or she acts.”  Commission Rule A.0104(d) and (i) takes this
+a step further by providing that a broker or brokerage firm
+representing one party in a transaction shall not undertake
+to represent another party in the transaction without the ex-
+press written authority (i.e., authorization of dual agency)
+of each party (subject to one exception, explained as part of
+the dual agency discussion in the “General Brokerage Provi-
+sions” section). A typical violation of this provision occurs
+when the agent has only one principal in a transaction but
+acts in a manner which benefits another party without the
+principal’s knowledge. In such a situation, the agent violates
+the duty of loyalty and consent owed to his principal.
+Example: A house is listed with Firm X. When showing
+the house to a prospective buyer not represented by
+Firm X, an agent of Firm X advises the buyer to offer
+substantially less than the listing price because the
+seller must move soon and is very anxious to sell the
+property fast. The agent and Firm X are contractu -
+ally obligated to represent only the seller. By advising
+the prospective buyer as indicated in this example,
+the agent is acting to benefit the buyer without the
+seller’s knowledge and consent. This act violates both
+the License Law and the Law of Agency.
+Example: An agent with Firm Y assists her sister in pur-
+chasing a house listed with Firm X without advising
+Firm X or the seller of her relationship with the buy-
+er. The agent is “officially” acting as a subagent of the
+seller in the transaction. In this situation, there is an
+inherent conflict of interest on the part of the agent.
+If the agent does not disclose her relationships to
+both parties, then the agent violates both the License
+Law and Law of Agency. In fact, since her allegiance
+lies with her sister, the agent should instead act as a
+buyer’s agent from the outset. The same would be
+true if the buyer were a close friend or business asso-
+ciate of the agent, or in any way enjoyed a special
+relationship to the agent which would clearly influ -
+ence the agent to act in behalf of the buyer rather
+than the seller.
+Self-dealing. G.S. 93A-6(a)(4) also prohibits any
+“self-dealing” on the part of an agent. For example, if an
+agent attempts to make a secret profit in a transaction where
+
+
+
+
+8 North Carolina Real Estate License Law and Commission Rules
+he is supposed to be representing a principal, then the agent
+violates this “conflict of interest” provision.
+Example: An agent lists a parcel of undeveloped
+property which is zoned for single-family residential
+use. The agent knows that this property is about to
+be rezoned for multi-family residential use, which
+will greatly increase the property’s value. Rather than
+informing the seller of this fact, the agent offers to
+buy the property at the listed price, telling the seller
+that he wants to acquire the property as a long-term
+investment. The deal closes. Several months later, af-
+ter the rezoning has been accomplished, the agent
+sells the property at a substantial profit.
+Representing Another Broker without Consent.  G.S.
+93A-6(a)(6) prohibits a licensee from “representing or at-
+tempting to represent a real estate broker other than the bro-
+ker by whom he or she is engaged or associated, without the
+ex  press knowledge and consent of the broker with whom he
+or she is associated.” While brokers may work for or be asso-
+ciated with more than one real estate company at the same
+time, so long as they have the express consent of all brokers-
+in-charge, provisional brokers may never engage in broker-
+age activities for more than one company at a time.
+Improper Brokerage Commission [G.S. 93A‑6(a)(5)
+and (9)]
+A broker may NOT pay a commission or valuable con -
+sideration to any person for acts or services performed in vi-
+olation of the License Law. [G.S. 93A-6(a)(9)] This provision
+flatly prohibits a broker from paying an unlicensed person for
+acts which require a real estate license. Following are examples
+of prohibited payments:
+Example: The payment by brokers of commissions to
+previously licensed sales associates who failed to prop-
+erly renew their licenses for any acts performed after
+their licenses had expired. Note that payment could
+properly be made for commissions earned while the
+license was on active status, even if the license is inac-
+tive or expired at time of payment. The determining
+factor is whether the license was on active status at
+the time all services were rendered which generated
+the commission.
+Example: The payment of a commission, salary or fee
+by brokers to unlicensed employees or independent
+contractors (e.g., secretaries, “trainees” who haven’t
+passed the license examination, etc.) for performing
+acts or services requiring a real estate license.
+Example: The payment by licensees of a “finder’s fee,”
+“referral fee,” “bird dog fee,” or any other valuable
+consideration to unlicensed persons who find, intro-
+duce, or bring together parties to a real estate trans-
+action. This is true even if the ultimate consumma-
+tion of the transaction is accomplished by a licensee
+and even if the act is performed without expecta-
+tion of compensation. Thus, a licensee may NOT
+compensate a friend, relative, former client or any
+other unlicensed person for “referring” a prospective
+buyer, seller, landlord or tenant to such licensee. This
+prohibition extends to “owner referral” programs at
+condominium or time share complexes and “tenant
+referral” programs at apartment complexes.
+In addition, a provisional broker may NOT accept any
+compensation for brokerage services from anyone other
+than his employing broker or brokerage firm. Consequently,
+a broker may not pay a commission or fee directly to a provi -
+sional broker of another broker or firm. Any such payment must
+be made through the provisional broker’s employing broker or
+firm. [G.S. 93A-6(a)(5)]
+Note: See also the discussion of Rules A.0109 and A.0120
+on “Brokerage Fees and Compensation” under the subsequent
+section titled “General Brokerage Provisions.”
+Unworthiness and Incompetence [G.S. 93A‑6(a)(8)]
+This broad provision authorizes the Real Estate Com-
+mission to discipline any licensee who, based on his or her
+conduct and consideration of the public interest, is found to
+be unworthy or incompetent to work in the real estate busi-
+ness. A wide range of conduct may serve as the basis for a
+finding of unworthiness or incompetence, including con -
+duct which violates other specific provisions of the License
+Law or Commission rules. Here are a few examples of im -
+proper conduct which do not specifically violate another Li-
+cense Law provision but which might support a finding of
+unworthiness or incompetence.
+1. Failure to properly complete (fill in) real estate con -
+tracts or to use contract forms which are legally ad -
+equate.
+2. Failure to diligently perform the services required un-
+der listing contracts or property management con-
+tracts.
+3. Failure to provide accurate income/expense reports to
+property owners.
+Improper Dealing [G.S. 93A‑6(a)(10)]
+This broad provision prohibits a real estate licensee from
+engaging in “any other conduct [not specifically prohibited
+elsewhere in the License Law] which constitutes improper,
+fraudulent or dishonest dealing.” The determination as to
+whether particular conduct constitutes “improper, fraudu-
+lent or dishonest dealing” is made by the Real Estate Com-
+mission on a case-by-case basis. Therefore, a broad range of
+conduct might be found objectionable under this provision,
+depending on the facts in a case.
+One category of conduct which violates this provision is
+any breach of the duty to exercise skill, care, and diligence
+in behalf of a client under the Law of Agency. (Note that
+other breaches of Agency Law duties constituting either a
+“misrepresentation or omission,” a “conflict of interest” or a
+“failure to properly account for trust funds” are covered by
+other specific statutory provisions.)
+Another category of conduct which violates this provi -
+sion is any violation of the State Fair Housing Act. This is
+mentioned separately under the “Discriminatory Practices”
+
+
+
+
+9 North Carolina Real Estate License Law and Commission Rules
+heading.
+Example:  An agent assists a prospective buyer in per -
+petrating a fraud in connection with a mortgage
+loan application by preparing two contracts — one
+with false information for submission to the lending
+institution, and another which represents the actual
+agreement between seller and buyer. (This practice is
+commonly referred to as “dual contracting” or “con-
+tract kiting.”)
+Example: A broker lists a property for sale and agrees
+in the listing contract to place the listing in the local
+MLS, to advertise the property for sale, and to use his
+best efforts in good faith to find a buyer. The broker
+places a “For Sale” sign on the property, but fails to
+place the property in the MLS for more than 30 days
+and fails to otherwise advertise the property during
+the listing period. (The broker has failed to exercise
+reasonable skill, care and diligence in behalf of his
+client as required by the listing contract and the Law
+of Agency.)
+Example: An agent is aware that the owners of a house
+listed with his company are out of town for the week-
+end, yet the agent gives a prospective buyer the house
+keys and allows such prospect to look at the listed
+house without accompanying the prospect. (The
+agent has failed to exercise reasonable skill, care and
+diligence in behalf of his client.)
+Discriminatory Practices [G.S. 93A‑6(a)(10); Rules
+A.1601 and A.0120]
+Any conduct by a licensee that violates the provisions of
+the State Fair Housing Act is considered by the Commis -
+sion to constitute “improper conduct” and to be a violation
+of the License Law.
+Additionally, a licensee shall not conduct brokerage ac -
+tivities or otherwise promote their status as a real estate bro-
+ker in any manner that discriminates on the basis of race,
+color, religion, national origin, sex, familial status, or dis -
+ability.
+Practice of Law [G.S. 93A‑4(e); G.S. 93A‑6(a)(11); Rule
+A.0111]
+Real estate licensees may not perform for others any legal
+service described in G.S. 84-2.1 or any other legal service.
+Following are several examples of real estate-related legal ser-
+vices which licensees may NOT provide.
+1. Drafting legal documents such as deeds, deeds of
+trust, leases and real estate sales contracts for others.
+Although licensees may “fill in” or “complete” pre-
+printed real estate contract forms which have been
+drafted by an attorney, they may NOT under any
+circumstances complete or fill in deed or deed of
+trust forms.
+2. Abstracting or rendering an opinion on legal title to
+real property.
+3. Providing “legal advice” of any nature to clients and
+customers, including advice concerning the nature of
+any interest in real estate or the means of holding
+title to real estate. (Note: Although providing advice
+concerning the legal ramifications of a real estate
+sales contract is prohibited, merely “explaining” the
+provisions of such a contract is not only acceptable,
+but highly recommended.)
+Violating any Commission Rule [G.S. 93A‑6‑(a)(15)]
+The law also has a “catch-all” provision that subjects a li-
+censee to disciplinary action for violating any rule adopted
+by the Commission.
+Note: The provisions of G.S. 93A-6(a)(12)-(14) are ad-
+dressed elsewhere in these “Comments” under the “General
+Brokerage Provisions” section.
+Other Prohibited Acts [G.S. 93A‑6(b)]
+In addition to those prohibited acts previously discussed,
+G.S. 93A-6(b) prescribes several other specific grounds for
+disciplinary action by the Commission, including:
+1. Where a licensee has obtained a license by false or
+fraudulent representation (e.g., falsifying documen-
+tation of prelicensing education, failing to disclose
+prior criminal convictions, etc.).
+2. Where a licensee has been convicted of, or pled guilty
+or no contest to, a number of listed misdemeanors
+or felonies plus any other offense that  shows pro -
+fessional unfitness or involves moral turpitude that
+would reasonably affect the licensee’s performance in
+the real estate business.
+3. Where a broker’s unlicensed employee, who is ex -
+empt from licensing under G.S. 93A-2(c)(6) (prop-
+erty management exception), has committed an
+act which, if committed by the broker, would have
+constituted a violation of G.S. 93A-6(a) for which
+the broker could be disciplined.
+4. Where a licensee who is also licensed as an appraiser,
+attorney, home inspector, mortgage broker, general
+contractor, or another licensed profession or occupa-
+tion has been disciplined for an offense under any
+law involving fraud, theft, misrepresentation, breach
+of trust or fiduciary responsibility, or willful or negli-
+gent malpractice..
+Lastly, be aware that under (b)(3), licensees may be dis-
+ciplined for violating any of the 15 provisions under subsec-
+tion (a) when selling, buying, or leasing their own property.
+GENERAL BROKERAGE PROVISIONS
+D
+iscussed below are selected Commission rules relat-
+ed to general brokerage.
+Agency Agreements and Disclosure [G.S. 93A‑13 and
+Rule A.0104
+Provided below is a brief summary of the various provi -
+sions of the Commission’s rule regarding agency agreements
+and disclosure.  For a much more in-depth discussion of this
+rule and its application, the reader is referred to the Commis-
+
+
+
+
+10 North Carolina Real Estate License Law and Commission Rules
+sion’s North Carolina Real Estate Manual.
+Agency Agreements. G.S. 93A-13 and Rule A.0104(a)
+requires all agency agreements for brokerage services (in both
+sales and lease transactions) to be in writing and signed by the
+parties thereto. Rule A .0104(a):
+• Requires agency agreements with property owners
+(both sellers and lessors) of any type of property to be
+in writing prior to the broker providing any services;
+• Allows an express oral buyer/tenant agency agree-
+ment from the outset of the relationship, but the agree-
+ment must be reduced to writing no later than the time
+any party to the transaction makes an offer. As a practi-
+cal matter, this oral agreement needs to address all key
+aspects of the relationship, including agent compensa-
+tion, authorization for dual agency, etc.
+(Note: A buyer/tenant agency agreement must be
+in writing from the outset if it seeks to limit the buyer/
+tenant’s right to work with other agents or binds the
+client to the agent for any definite time period. In
+other words, an oral buyer/tenant agency agreement
+must be “non-exclusive” and must be for an indefinite
+period and terminable by the client at any time.)
+Further, every written agency agreement of any kind
+must also:
+• Provide for its existence for a definite period of time
+and terminate without prior notice at the expira -
+tion of that period. [Exception: an agency agreement
+between a broker and a landlord to procure tenants
+for the landlord’s property may allow for automatic
+renewal so long as the landlord may terminate with
+notice at the end of any contract or renewal period.]
+• Contain the Rule A.0104(b) non-discrimination (fair
+housing) provision, namely: “The broker shall con-
+duct all brokerage activities in regard to this agree-
+ment without respect to the race, color, religion, sex,
+national origin, handicap or familial status of any
+party or prospective party.” (This provision must be
+set forth in a clear and conspicuous manner which
+shall distinguish it from other provisions of the agen-
+cy agreement.)
+•
+Include the license number of the individual licensee who
+signs the agreement.
+Allowing an agent to work with a buyer under an express
+oral buyer agency agreement is intended to address the prob-
+lem of buyers being reluctant to sign a written buyer agen -
+cy agreement at the outset of their relationship with a buy-
+er agent. The idea underlying this approach is to allow an
+agent to work temporarily with a prospective buyer as a buy-
+er’s agent under an oral agreement while the agent establish-
+es a rapport with the buyer that makes the buyer feel more
+comfortable with signing a written buyer agency agreement.
+Although the rule allows oral buyer/tenant agency agree-
+ments until the point in time when any party is ready to make
+an offer, it nevertheless is highly advisable that agents have
+such agreements reduced to writing and signed by the buyer/
+tenant at the earliest possible time in order to avoid misun -
+derstanding and conflict between the buyer/tenant and agent.
+Recall also that the agent must obtain a written buyer/tenant
+agency agreement from the client not later than the time ei-
+ther party to the transaction extends an offer to the other. In
+practice, this means the buyer agent should reduce the agen-
+cy agreement to writing first, then write up an offer, in order
+to ensure that no offer is made to a seller without having the
+written agency agreement completed.
+If the buyer will not sign a written buyer agency agree-
+ment prior to making or receiving an offer, then the agent
+may not continue to work with the buyer as a buyer’s agent.
+Moreover, the agent may not begin at this point to work with
+the buyer as a seller’s subagent unless the agent (1) fully ad-
+vises the buyer of the consequences of the agent switching
+from buyer’s agent to seller’s agent (including the fact that
+the agent would have to disclose to the seller any informa -
+tion, including “confidential” information about the buyer,
+that might influence the seller’s decision in the transaction),
+(2) obtains the buyer’s consent, and (3) obtains the consent
+of the seller and listing firm, which is the seller’s agent. The
+foregoing applies equally to brokers working with tenants as
+a tenant agent.
+Agency Disclosure Requirement. While Rule
+A.0104(a) requires all agency agreements, whether for lease
+or sales transactions, to be in writing, the Rule A.0104(c)
+agency disclosure requirement applies only to sales transactions.
+It requires licensees to provide prospective buyers and sellers, at
+“first substantial contact,” with a copy of the Working with
+Real Estate Agents disclosure, to review the disclosure with
+them and then reach an agreement regarding their agency re -
+lationship. The licensee providing the disclosure should also
+include his/her name and license number on the form. Note
+that the obligation under this rule is not satisfied merely by
+handing the prospective seller or buyer the form to read.
+The agent is required to review the contents with the pro -
+spective buyer or seller and then reach agreement with the
+prospective buyer or seller as to whether the agent will work
+with the buyer or seller as his/her agent or as the agent of
+the other party.
+In the case of a prospective seller, the agent may either
+(1) act as the seller’s agent, which is the typical situation and
+requires a written agreement from the outset of their rela -
+tionship, or (2) work with the seller as a buyer’s agent if the
+agent already represents a prospective buyer.
+In the case of a prospective buyer, the agent may either
+(1) act as the buyer’s agent under either an oral or written
+agreement as addressed in Rule A.0104(a), or (2) work with
+the buyer as a seller’s agent, disclosure of which must be in
+writing from the outset.
+Disclosure of Agency Status by Sellers’ Agents and
+Subagents to Prospective Buyers:  Paragraph (e) of Rule
+A.0104, like paragraph (c), requires a seller’s agent or sub-
+
+
+
+
+11 North Carolina Real Estate License Law and Commission Rules
+agent in sales transactions to disclose his/her agency status
+in writing to a prospective buyer at the “first substantial con-
+tact” with the buyer. It is recommended that sellers’ agents
+make this required written disclosure using  the form pro-
+vided for this purpose in the Working with Real Estate Agents
+disclosure that must be provided to buyers (as well as to sell-
+ers) at first substantial contact. This form has a place for the
+buyer to acknowledge receipt. The disclosure may, howev -
+er, also be made using a different form — the most impor-
+tant point is that the disclosure be made in writing in a timely
+manner. The reason for this requirement is that buyers tend
+to assume that an agent they contact to work with them in
+locating a property for purchase is “their” agent and work -
+ing primarily in their interest. This may or may not be the
+case in reality. The purpose of the disclosure requirement is to
+place prospective buyers on notice that the agent they are deal-
+ing with is NOT “their” agent before the prospective buyer dis-
+closes to the agent information which the buyer would not want
+a seller to know because it might compromise the buyer’s bar -
+gaining position.
+Most frequently, “first substantial contact” will occur
+at the first “face-to-face” meeting with a prospective buyer.
+However, the point in time that “first substantial contact”
+with a prospective buyer occurs will vary depending on the
+particular situation and may or may not be at the time of
+the first or initial contact with the prospective buyer. Many
+first contacts are by telephone and do not involve discus -
+sions which reach the level that would require disclosure,
+although some initial phone contacts, especially those with
+out-of-town buyers, could reach this level.
+“First substantial contact” occurs at the point in time when
+a discussion with a prospective buyer begins to focus on the buy-
+er’s specific property needs and desires or on the buyer’s finan-
+cial situation. Typically, that point in time is reached when
+the agent is ready to solicit information from the prospec-
+tive buyer that is needed to identify prospective properties
+to show the buyer. Therefore, an agent planning to work with
+a prospective buyer as a seller’s agent or subagent should assure
+that disclosure of his/her agency status is made in writing to the
+prospective buyer prior to obtaining from the prospective buyer
+any personal or confidential information that the buyer would
+not want a seller to know.
+A few examples of such personal or confidential infor-
+mation include: The maximum price a buyer is willing to pay
+for a property; the buyer’s ability to pay more than the price of-
+fered by the buyer; or the fact that a buyer has a special interest
+in purchasing the seller’s property rather than some other simi-
+lar property. In any event, the disclosure must be made pri -
+or to discussing with the prospective buyer his/her specif -
+ic needs or desires regarding the purchase of a property. As
+a practical matter, this means the disclosure will always need
+to be made prior to showing a property to a prospective buyer .
+The best policy is to simply make the disclosure at the earli-
+est possible time.
+If first substantial contact occurs by telephone or by
+means of other electronic communication where it is not
+practical to provide written disclosure, the agent shall im-
+mediately disclose by similar means whom he/she represents
+and shall immediately, but in no event later than three days
+from the date of first substantial contact, mail or otherwise
+transmit a copy of the written disclosure to the buyer.
+Disclosure of Agency Status by Buyers’ Agents to Sell-
+ers or Sellers’ Agents. Paragraph (f) of Rule A.0104 requires
+a buyer’s agent to disclose his/her agency status to a seller or
+seller’s agent at the “initial contact” with the seller or sell-
+er’s agent. “Initial contact” will typically occur when a buy-
+er’s agent telephones or otherwise contacts the listing firm
+to schedule a showing. The initial disclosure may be oral,
+but a written confirmation of the previous oral disclosure
+must be made (except in auction sale transactions) no lat-
+er than the time of delivery of an offer to purchase. The
+written confirmation may be (and usually is) included in
+the offer to purchase. In fact, Commission Rule A.0112(a)
+(19) requires that any preprinted offer to purchase and con-
+tract form used by an agent include a provision providing
+for confirmation of agency status by each real estate agent
+(and firm) involved in the transaction.
+Consent to Dual Agency. Paragraph (d) of Rule A.0104
+requires generally that an agent must obtain the written au-
+thority of all parties prior to undertaking to represent those
+parties as a dual agent. It is important to note that this re -
+quirement applies to all real estate transactions (sales and
+lease/rentals), not just sales transactions. [In sales transac -
+tions, this written authority to act as a dual agent is usually
+included in the listing and buyer agency contracts. If those
+contracts do not grant such authority, then the agent must
+have both the seller and buyer consent to the dual agency
+prior to beginning to act as a dual agent for both parties.]
+Paragraph (d) of Rule A.0104 currently requires written
+authority for dual agency from the formation of the relation-
+ship except situations where a buyer/tenant is represented by an
+agent working under an oral agency agreement as permitted
+by A.0104(a), in which case written authority for dual agency
+must be obtained no later than the time one of the parties rep -
+resented by the agent working as a dual agent makes an offer
+to purchase, sell, rent, lease, or exchange real estate to the oth-
+er party. Thus, it is permissible for the agent to operate for a
+limited period of time under an oral dual agency agreement.
+It is very important to remember that G.S. 93A-6(a)(4) still
+requires agents to obtain the consent of all parties prior to
+beginning to act as a dual agent for those parties. Therefore,
+it is essential that agents electing to operate as a dual agent
+for a limited period of time without obtaining this authority
+in writing still explain fully the consequences of their acting
+as a dual agent and obtain the parties’ oral consent.
+As a practical matter in sales transactions, agents will fre-
+quently have already obtained written authority to act as a
+dual agent for in-house sales transactions at the time the ini-
+tial written listing or buyer agency agreement is executed.
+However, under Paragraph (a) of Rule A.0104, many buyer’s
+
+
+
+
+12 North Carolina Real Estate License Law and Commission Rules
+agents may elect to work with their buyer clients for a peri -
+od of time under an oral buyer agency agreement. Paragraph
+(d) permits such buyer’s agents to also operate for a limited
+period of time as a dual agent under an oral agreement in or-
+der to deal with situations where a buyer client is interested
+in a property listed with the agent’s firm. Note that, although
+an oral dual agency agreement for a limited period of time is
+permitted by Commission rules, it is strongly recommended that
+agents have any dual agency agreement in writing from the out-
+set of the dual agency arrangement. This will provide the agent
+with some evidence that the matter of dual agency was dis-
+cussed with the parties and that they consented to it. Such
+evidence could prove quite useful if a party later asserts that
+the agent did not obtain their consent for dual agency in a
+timely manner.
+Auction Sales Exemption. Paragraph (g) of Rule A.0104
+provides that the provisions of Paragraphs (c), (d) and (e) of
+the Rule shall not apply to real estate licensees represent -
+ing sellers in auction sales transactions. Note that in auction
+sales, the real estate agents involved almost invariably work
+only as seller’s agents and this fact is considered to be self-ev-
+ident. Thus, there is no need for agents to distribute and re-
+view the Working with Real Estate Agents brochure, no need
+for disclosure of agency status by the seller’s agents, and no
+dual agency. For the unusual situation where a buyer may be
+represented by an agent in an auction sale transaction, Para-
+graph (h) of Rule A.0104 provides that such a buyer’s agent
+shall, no later than the time of execution of a written agree-
+ment memorializing the buyer’s contract to purchase, pro -
+vide the seller or seller’s agent with a written confirmation
+that he/she represents the buyer.
+Dual Agency Status of Firm.  Paragraph (i) of Rule
+A.0104 codifies in the Commission’s rules the common law
+rule that a firm which represents more than one party in the same
+real estate sales transaction is a dual agent, and further states that
+the firm, through the brokers affiliated with the firm, shall dis-
+close its dual agency to the parties. In other words, dual agen-
+cy is not limited to those situations where an individual agent
+is working with both a buyer client and seller client (or lessor
+and commercial tenant) in the same transaction. If one agent
+of a firm is working with a buyer client of the firm and an -
+other agent of the same firm is working with a seller client of
+the firm in a transaction involving the sale of the seller client’s
+property to the buyer client, then the firm is a dual agent (as
+it holds both agency agreements). However, a firm functions
+through its employees, namely, its associated agents; thus, un-
+der the common law, whenever the firm is a dual agent of cer-
+tain parties in a transaction, all licensees affiliated with that
+firm are also dual agents of those parties in that transaction.
+Designated Agency. Paragraphs (j) - (m) of Rule A.0104
+authorize real estate firms to engage in a form of dual agen-
+cy practice referred to in the rule as “designated agency” in
+certain sales transactions involving in-house dual agency.
+“Designated agency involves appointing or “designating” an in-
+dividual agent(s) in a firm to represent only the interests of the
+seller and another individual agent(s) to represent only the in -
+terests of the buyer when a firm has an in-house dual agency sit-
+uation.
+The principal advantage of the designated agency ap -
+proach over the “standard” dual agency approach is that
+each of a firm’s clients (seller and buyer) receive fuller repre-
+sentation by their designated agent. In the typical dual agen-
+cy situation, client advocacy is essentially lost because the
+dual agent may not seek an advantage for (i.e., “advocate”
+for) one client to the detriment of the other client. The dual
+agent must remain completely neutral and impartial at all
+times.  Designated agency returns “advocacy” to the servic-
+es provided by the respective designated agents and allows
+them to more fully represent their respective clients.
+Authority to practice designated agency must be in writ-
+ing no later than the time a written dual agency agreement is
+required under A.0104(d). Additional required procedures
+for practicing designated agency are clearly spelled out in
+Paragraphs (j) - (m) and are not discussed further here. For
+more detailed coverage of dual and designated agency, the
+reader is once again referred to the Commission’s North Car-
+olina Real Estate Manual.
+Dual Agency by Individual Agent. Paragraph (n) of
+Rule A.0104 authorizes individual agents representing both
+the buyer and seller in the same real estate sales transaction
+pursuant to a written dual agency agreement to include in
+the agreement a provision authorizing the agent not to dis -
+close certain “confidential” information about one party to
+the other party without permission from the party about
+whom the information pertains. This provision is intend -
+ed to allow  individual dual agents to treat confidential in -
+formation about their clients in a manner similar to that al-
+lowed for firms practicing designated agency.
+Brokers As Parties to Transactions. There is an inher-
+ent conflict of interest presented by a broker representing
+the very party against whom the broker, as an interested par-
+ty, is negotiating. Paragraph (o) of Rule A.0104 prohibits a
+broker who is selling property in which the broker has an
+ownership interest from representing a buyer of the proper-
+ty. Except that a broker who is selling commercial real estate,
+as defined in Rule .1802 of this Subchapter, in which the
+broker has less than 25% ownership interest may represent
+a buyer of that property if the buyer consents to the repre -
+sentation after full written disclosure of the broker’s owner-
+ship interest. However, a firm listing a property owned by
+a broker affiliated with the firm may represent a buyer of
+that property so long as the individual broker representing
+the buyer does not have an ownership interest in the prop -
+erty and the buyer consents to the representation after full
+disclosure. Paragraph (p) of Rule A.0104  prohibits a list -
+ing broker or firm from purchasing a property listed by that
+broker or firm unless they first disclose to the seller in writ-
+ing that a potential conflict of interest exists and that the
+seller may want to seek independent counsel. Prior to the
+listing broker entering into a purchase contract, the individ-
+
+
+
+
+13 North Carolina Real Estate License Law and Commission Rules
+ual listing broker and firm must either terminate the listing
+agreement or transfer the listing to another broker in the
+firm. Prior to the firm entering into a purchase contract, the
+listing broker and firm must disclose to the seller in writ -
+ing that the seller has the right to terminate the listing.  The
+broker or firm must terminate the listing upon the request
+of the seller.
+Broker Name and Address [Rule A.0103]
+A broker must notify the Commission in writing (may
+include online) within 10 days of each change in personal
+name, firm name, trade name, residence address and firm
+address, telephone number, and email address.
+If a broker intends to advertise in any manner using a
+firm name or assumed name which does not set forth the
+surname of the broker, the broker must first file an assumed
+name certificate in compliance with GS 66-71.4 and must
+also notify the Commission of the use of such firm name or
+assumed name.  For individuals and partnerships, a name
+is “assumed” when it does not include the surname of the
+licensee(s).   For a firm required to be registered with the
+Secretary of State, a name is “assumed” when it is differ -
+ent from the firm’s legal name as registered with the Sec -
+retary of State.  Note: most franchisees operate under as -
+sumed names. An Assumed Name certificate can be filed in
+the Register of Deeds office for uploading to the statewide
+database maintained by the Secretary of State.
+A licensee operating as a sole proprietorship, partnership
+or business entity other than a corporation or limited liabili-
+ty company may NOT include in its legal or assumed name
+the name of an unlicensed person or a provisional broker.
+A broker who proposes to use a business name that in -
+cludes the name of another active, inactive or cancelled bro-
+ker must have the permission of that broker or his or her au-
+thorized representative. This rule provision is intended to
+prohibit a broker or firm from using without proper autho-
+rization the name of some other broker or former broker
+who is not currently associated with the broker or firm, such
+as a former associate or a deceased broker.
+Advertising [Rule A.0105]
+A licensee must have the proper authority to advertise.  A
+broker may not advertise or display a “for sale” or “for rent”
+sign on a property without the written consent of the owner
+or the owner’s authorized agent. A broker may not advertise
+any brokerage service for another without the consent of his
+or her broker-in-charge and without including in any adver-
+tisement the name of the firm or sole proprietorship with
+which the broker is associated.
+The rule also prohibits any advertisement by a licensee
+that indicates an offer to sell, buy, exchange, rent or lease
+real property is being made by the licensee’s principal with-
+out the involvement of a broker – i.e., a “blind ad.” All ad-
+vertising by a licensee must indicate that it is the advertisement
+of a broker or brokerage firm.
+Delivery of Instruments [G.S. 93A‑6(a); Rule A.0106]
+Among other things, this rule, which implements G.S.
+93A-6(a)(13), requires agents to deliver to their customer or cli-
+ent copies of any required written agency agreement, contract,
+offer, lease, rental agreement, option or other related transac -
+tion document within three days of the broker’s receipt  of the
+executed document. Regarding offers, this does NOT mean
+that agents may in every case wait up to three days to pres -
+ent an offer to a seller. Rather, it means that an agent must,
+as soon as possible, present to the seller any offer received by
+the agent. If the agent is the “selling agent,” then the offer
+should be immediately presented to the “listing agent” who
+should, in turn, immediately present the offer to the seller.
+The “three-day” provision is included only to allow for situa-
+tions where the seller is not immediately available (e.g., sell-
+er is out of town), and represents an outside time limit with-
+in which offers must always be presented. In all cases where
+the seller is available, the offer should be presented as soon
+as possible.
+The same rule also means that a prospective buyer who
+signs an offer must immediately be provided a copy of such
+offer. (A photocopy is acceptable for this purpose.) Do NOT
+wait until after the offer is accepted (or rejected) by the seller.
+In addition, this rule means that an offer must be imme-
+diately presented to a seller even if there is a contract pend-
+ing on the property. Of course, in this instance, it is essential
+that the agent also advise the seller that serious legal prob -
+lems could result from the seller’s acceptance of such offer
+and that the seller should contact an attorney if he is inter -
+ested in treating the offer as a “back-up” offer or in attempt-
+ing to be released from the previously signed contract.
+Copies of any signed sales contract or lease must also be
+promptly delivered to the parties within the three-day peri-
+od. Clients should be provided a copy of the agency agree -
+ment upon signing, since both parties presumably are pres -
+ent, but certainly within three days of receipt by the broker.
+Finally, G.S. 93A-6(a)(14) requires a broker to provide
+his/her client a detailed and accurate closing statement show-
+ing the receipt and disbursement of all monies relating to
+the transaction about which the broker knows or reasonably
+should know. A broker may rely on a closing statement pre-
+pared by an attorney but must review the statement for ac -
+curacy.
+Retention of Records [Rule A.0108]
+Brokers are required to retain records pertaining to their
+brokerage transactions for three years from the successful or
+unsuccessful conclusion of the transaction or the disburse -
+ment of all trust monies pertaining to that transaction, which-
+ever occurs later. However, if the broker’s agency agreement
+is terminated prior to the conclusion of the transaction, the
+broker shall retain transaction records for three years after the
+agency agreement is terminated or the disbursement of all
+funds held by or paid to the broker in connection with the
+transaction, whichever occurs later.  Documents that must be
+retained include sale contracts, leases, offers (even those not
+accepted), agency contracts, earnest money receipts, trust ac-
+count records, disclosure documents, closing statements, bro-
+
+
+
+
+14 North Carolina Real Estate License Law and Commission Rules
+ker cooperation agreements, broker price opinions and com-
+parative market analyses (including notes and supporting doc-
+umentation), advertising, sketches, and any other records re-
+lating to a transaction. For example, other records would in-
+clude vendor invoices, written communications with a ten -
+ant or client, and Working with Real Estate Agent Disclosures
+signed by customers who may not have become clients.
+Rule A .0108(d) also requires an individual broker to pro-
+vide a copy of such records including written agency disclo-
+sures, agency agreements, and contracts to the firm or sole
+proprietorship with which they are affiliated within three days
+of the broker’s receipt of such documents.
+Brokerage Fees and Compensation [Rules A.0109,
+A.0120]
+These rule address various issues associated with the dis-
+closure of and sharing of compensation received by a real es-
+tate licensee.
+Disclosure to principal of compensation from a ven -
+dor or supplier of goods or services.  Paragraph (a) prohib-
+its a licensee from receiving any form of valuable consider -
+ation from a vendor or supplier of goods or services in con-
+nection with an expenditure made on behalf of the licensee’s
+principal in a real estate transaction without first obtaining
+the written consent of the principal.
+Example:  A broker manages several rental units for vari-
+ous owners and routinely employs Ajax Cleaning Ser-
+vice to clean the units after the tenants leave. The bro-
+ker pays Ajax a $50 per unit fee for its services out of
+rental proceeds received and deposited in his trust ac-
+count. Ajax then “refunds” to the broker $10 for each
+$50 fee it receives, but the property owners are not
+aware that the broker receives this payment from Ajax
+in addition to his regular brokerage fee. The broker
+in this situation is making a secret profit without the
+property owners’ knowledge and is violating the rule.
+Disclosure to a party of compensation for recommend-
+ing, procuring or arranging services for the party. Para-
+graph (b) prohibits a licensee from receiving any form of valu-
+able consideration for recommending, procuring, or arranging
+services for a party to a real estate transaction without full and
+timely disclosure to such party. The party for whom the servic-
+es are recommended, procured, or arranged does not have to
+be the agent’s principal.
+Example: An agent sells a listed lot to a buyer who
+wants to build a house on the lot. Without the buy -
+er’s knowledge, the agent arranges with ABC Home-
+builders for ABC to pay the agent a 3% referral fee
+if the agent recommends ABC to the buyer and the
+buyer employs ABC to build his house. The agent
+then recommends ABC to the buyer, ABC builds the
+buyer’s house for $100,000 and ABC secretly pays
+the agent $3,000 for his referral of the buyer. The
+agent has violated this rule. (Note that the buyer in
+this situation likely paid $3,000 more for his house
+than was necessary because it is very likely the builder
+added the agent’s referral fee to the price he charged
+the buyer for building the house. The main point
+here is that the buyer had the right to know that the
+agent was not providing disinterested advice when
+recommending the builder.)
+Example: A selling agent in a real estate transaction,
+while acting as a subagent of the seller, recommends
+to a buyer who has submitted an offer that the buyer
+apply to Ready Cash Mortgage Company for his
+mortgage loan. The agent knows that Ready Cash
+will pay him a “referral fee” of $100 for sending him
+the buyer’s business if the loan is made to the buyer,
+but the agent does not disclose this fact to the buyer.
+If the agent subsequently accepts the referral fee from
+the lender, he will have violated this rule. (The buyer
+has the right to know that the agent’s recommenda-
+tion is not a disinterested one.)
+Disclosure to principal of compensation for broker -
+age services in sales transactions.  Paragraph (c) deals with
+disclosure to a licensee’s principal of the licensee’s compen-
+sation in a sales transaction from various sources other than
+in situations addressed in paragraphs (a) and (b).  A broker
+may not receive any compensation, incentive, bonus, rebate
+or other consideration of more than nominal value (1) from
+his or her principal unless the compensation, etc. is provid-
+ed for in a written agency contract or (2) from any other
+party or person unless the broker provides to his or her prin-
+cipal a full and timely disclosure of the compensation.
+Example: ABC Homebuilders offers to pay any broker
+who procures a buyer for one of ABC’s inventory
+homes a bonus of $1,000 that is in addition to any
+brokerage commission the broker earns under any
+agency contract and/or commission split agreements.
+Any broker working with a buyer-client who is con -
+sidering the purchase of one of ABC’s homes must
+comply with the disclosure requirement and disclose
+the bonus to the buyer in a timely manner.  Note:
+If ABC Homebuilders also offers a bonus of $2,000
+on a second sale of one of its homes and $3,000 on a
+third sale, and if a buyer’s broker has already sold one
+of ABC’s homes, then the broker must disclose to his
+or her buyer principal the entire bonus program and
+that his or her bonus will be at least $2,000 if the
+buyer purchases an ABC home.
+Nominal compensation. Compensation is considered to
+be “nominal” if it is of insignificant, token or merely sym -
+bolic worth.  The Commission has cited gifts of a $25 bot -
+tle of wine or a $50 dinner gift certificate as being examples
+of “nominal” compensation paid to a broker that do not re-
+quire the consent of the broker’s principal.
+Full and timely disclosure.  Paragraph (d) of Rule A.0109
+explains what is meant by “full and timely disclosure” in
+paragraphs (a), (b) and (c).  “Full” disclosure includes a de-
+scription of the compensation, incentive, etc. including its
+value and the identity of the person or party by whom it will
+
+
+
+
+15 North Carolina Real Estate License Law and Commission Rules
+ated broker may receive commission or a referral fee directly
+from the escrow agent or closing attorney.
+Broker-In-Charge [Rule A.0110].
+Requirement to Have a Broker-In-Charge. Paragraph
+(a) of Rule A.0110 states the general rule that  each real
+estate firm is required to have a broker designated by the
+Commission who meets the qualification requirements to
+serve as “broker-in-charge” of the firm’s principal office
+and a different broker to serve in the same capacity at each
+branch office.  It is important to note, as discussed previous-
+ly under “License Requirement,” that “broker-in-charge”
+is not a separate license, but only a separate license status cat-
+egory. No broker may be broker-in-charge of more than one
+office location at a time, and no office of a firm shall have
+more than one designated broker-in-charge. Rule A.0110(a)
+describes the lone exception in the rare circumstance when
+two or more firms share the same office space.  Note that
+G .0103 defines the terms “office,” “principal office” and
+“branch office” – these definitions are not repeated here.
+Exception to BIC Requirement for Certain Firms.
+Paragraph (c) of Rule A.0110 provides:  A licensed real es -
+tate firm is not required to have a BIC if it: (1) has been
+organized for the sole purpose of receiving compensation
+for brokerage services furnished by its qualifying broker
+through another firm or broker; (2) is treated for tax pur -
+poses as a pass-through business by the U.S. Internal Rev -
+enue service; (3) has no principal or branch office; and (4)
+has no licensed or unlicensed person associated with it other
+than its qualifying broker.
+Sole Proprietors. In addition to each firm having to have
+a broker-in-charge for each office, most broker-sole proprietors
+(including sole practitioners) also must be a broker-in-charge.
+Rule A.0110 (b) provides that every sole proprietorship
+shall designate as a broker-in-charge if the sole proprietor -
+ship: (1) engages in any transaction where a broker is re -
+quired to deposit and maintain monies belonging to others
+in a trust account; (2) engages in advertising or promoting
+services as a broker in any manner; OR (3) has one or more
+other brokers affiliated with him or her in the real estate
+business.  Note, however, that maintenance of a trust ac -
+count by a broker solely for holding residential tenant secu-
+rity deposits received by the broker on properties owned by
+the broker in compliance with G.S. 42-50 shall not, stand -
+ing alone, subject the broker to the requirement to be desig-
+nated as a broker-in-charge.
+The most misunderstood of the three broker-in-charge
+triggering requirements for sole proprietors cited above is #
+(2): “...engages in advertising or promoting services as a broker in
+any manner.”  Acts of a sole proprietor that trigger the BIC
+requirement under # (2) include, but are not limited to: Plac-
+ing an advertisement for services as a broker in any form or any
+medium; distributing business cards indicating they are a real
+estate broker; orally soliciting the real estate business of others;
+or listing a property for sale (which inherently involves holding
+oneself out as a broker and advertising).
+or may be paid. The disclosure is “timely” when it is made in
+sufficient time to aid a reasonable person’s decision-making.
+In a sales transaction, the disclosure may be made orally, but
+must be confirmed in writing before the principal makes or
+accepts an offer to buy or sell.
+Restrictions on compensation disclosure require-
+ment.  Paragraph (e) clarifies that a broker does NOT have
+to disclose to a person who is not his or her principal the
+compensation the broker expects to receive from his or her
+principal, and further clarifies that a broker does NOT have
+to disclose to his principal the compensation the broker ex-
+pects to receive from the broker’s employing broker/firm
+(i.e., the individual broker’s share of the compensation paid
+to the broker’s employing broker/firm).
+Commission will not arbitrate commission disputes.
+G.S 93A-3(c) provides that the Commission shall not make
+rules or regulations regulating commission, salaries, or fees
+to be charged by licensees. Paragraph (f) of Rule A.0109
+augments that statutory provision by providing that the
+Commission will not act as a board of arbitration regard -
+ing such matters as the rate of commissions, the division of
+commissions, pay of brokers and similar matters.
+Compensation of unlicensed persons by brokers pro-
+hibited.  G.S. 93A-6(a)(9) authorizes the Commission to
+take disciplinary action against a licensee for paying any per-
+son for acts performed in violation of the License Law.  Para-
+graph (g) of Rule A.0109 simply augments this statutory
+provision by providing an affirmative statement that a licens-
+ee shall not in any manner compensate or share compensa-
+tion with unlicensed persons or entities for acts performed
+in North Carolina for which a license is required. [Note that
+NC brokers may split commissions or pay referral fees to li-
+censees of another state so long as the out-of-state licensee
+does not provide any brokerage services while physically in
+North Carolina.]  One narrow, limited exception to this re-
+striction is provided in Paragraph (h) – licensees may pay re-
+ferral fees to travel agents who contact them to book vacation
+rentals only, so long as well-defined procedures are followed.
+RESPA prohibitions control. Finally, Paragraph (i) of
+Rule A.0109 provides that nothing in this rule permits a li-
+censee to accept any fee, kickback, etc. that is prohibited by
+the federal Real Estate Settlement Procedures Act (RESPA)
+or implementing rules, or to fail to make any disclosure re-
+quired by that act or rules.
+Commission Disbursement
+Paragraph (a) of Rule A.0120 bars a licensee from requir-
+ing or demanding that an escrow agent or attorney split a
+broker’s commission or pay all or part to another person or
+entity. While a licensee may request that the closing attor -
+ney disburse payments to third parties, it is a violation of the
+rule for such licensee to threaten or otherwise force such dis-
+bursement. It is the licensee’s duty to ensure such payments
+are made, not the escrow agent or closing attorney.
+     Similarly, an affiliated broker must receive a commis-
+sion or referral fee from their broker-in-charge. An unaffili-
+
+
+
+
+16 North Carolina Real Estate License Law and Commission Rules
+tus and BIC Designation simultaneously.
+Broker-In-Charge (BIC) Duties. The designated bro-
+ker-in-charge is the primary person the Commission will
+hold responsible for the supervision and management of an
+office. See paragraph (g) of Rule A.0110 for a list of the spe-
+cific responsibilities of a broker-in-charge.
+Maintaining BIC Eligible Status. T o maintain BIC El-
+igible status, paragraph (g) of Rule A.0110 requires that a
+broker must:
+• Renew his or her broker license in a timely manner
+each license year and keep the license on active status at all
+times.
+• Complete each license year the four-hour mandatory
+Broker-in-Charge Update Course (BICUP) as well as any
+approved four-hour CE elective.
+The broker must begin taking the BICUP course during
+the same license year of designation, unless the broker com-
+pleted the General Update (GENUP) course prior to des-
+ignation.
+The BICUP Course satisfies the broker’s four-hour man-
+datory continuing education Update course requirement. If
+a broker with BIC Eligible status fails to take both the BI -
+CUP and one elective CE course by June 10 in any giv -
+en year when required, then the broker will lose BIC Eli -
+gible status, and BIC designation if applicable, the follow -
+ing July 1.
+T ermination of BIC Eligible Status and Broker-In-
+Charge Designation. Paragraph (i) of Rule A.0110 provides
+that a broker’s BIC Eligible status, and, if currently designat-
+ed as a BIC, his or her BIC designation, shall be terminated if
+the broker: made any false statements or presented any false,
+incomplete, or incorrect information in connection with an
+application; fails to complete the 12-hour Broker-in-Charge
+Course pursuant to Paragraph (e) of the Rule; fails to time-
+ly renew his or her broker license, or the broker’s license has
+been suspended, revoked, or surrendered; or fails to timely
+complete the Broker-in-Charge Update Course (BICUP) and
+a four credit hour elective course in any license year.
+Regaining Lost BIC Eligible Status and BIC Desig -
+nation. Pursuant to Rule A .0110(m), once a broker’s BIC
+Eligible status has been terminated, the broker must com -
+plete the following steps in the order prescribed to regain
+the status:
+1. The broker must first have a license on active status. If
+the license has expired, it must first be reinstated. If
+the license is inactive due to a CE deficiency, then the
+licensee must first complete whatever CE is neces -
+sary to reactivate the license and in either case, must
+then submit a reactivation form to the Commission
+requesting that the license be placed back on active
+status. A broker who has lost his or her BIC Eligi -
+ble status should not take either the 12-hour BIC
+Course or the BICUP course prior to officially reac-
+tivating his/her license with the Commission.
+2. Once back on active status, the broker must possess
+Therefore, a broker-sole proprietor may lawfully provide
+only limited  brokerage services  without a designated BIC .  A
+couple of examples of permissible brokerage activities by a
+broker-sole proprietor who is NOT a designated BIC in -
+clude receiving a referral fee from another broker or broker-
+age firm for referring business to the broker or firm or rep -
+resenting a relative or friend as a buyer’s broker in a sales
+transaction provided the broker has not solicited the busi -
+ness, has not advertised or promoted his or her services, and
+does not hold earnest money beyond the time it is required
+to be deposited in a trust account.
+The practical effect of these requirements is that a broker
+who will be operating independently in most cases must also
+designate himself or herself as a BIC.  The real significance of
+these requirements for a sole proprietor will be better under-
+stood when the qualification requirements to serve as a BIC
+are subsequently discussed.
+Requirements for BIC-Eligible Status. Paragraph (e) of
+Rule A .0110 states that, in order for a broker to be desig -
+nated as a BIC for a sole proprietorship, real estate firm, or
+branch office, the broker must FIRST have BIC Eligible sta-
+tus.  A broker must request BIC Eligible status on a form
+provided by the Commission.
+The qualifying requirements for BIC Eligible Status,
+pursuant to paragraph (e) of Rule A .0110, are:
+• Broker license must be on “active” status but NOT
+on “provisional” status.  A provisional broker is in -
+eligible to serve as broker-in-charge, as is a broker
+whose license is inactive or expired.
+• Broker must have at least 2 years of full-time or 4 years
+of part-time real estate brokerage experience within
+the previous 5 years or be a North Carolina licensed
+attorney with a practice that consisted primarily of
+handling real estate closings and related matters in
+North Carolina for 3 years immediately preceding
+application. The requirement is for actual broker-
+age experience, not just having a license on “active”
+status. Note that by submission of the request form
+to the Commission, a broker certifies that he or she
+possesses the required experience. The Commission
+may at its discretion require the broker to provide
+evidence of possessing the required experience.
+• After obtaining BIC Eligible status, a broker must
+complete the Commission’s 12-hour Broker-In-
+Charge Course within 120 days of designation (un-
+less the 12-hour course has been taken within the
+previous year). Failure to complete this course within
+120 days will result in the broker losing BIC Eligible
+status. The broker must then take the course before
+he or she may again be granted BIC Eligible status.
+Requesting Designation as Broker-in-Charge (BIC).
+A broker who has BIC Eligible status may request BIC Des-
+ignation on a form provided by the Commission at any time
+so long as the broker continuously maintains his/her BIC
+Eligible status. The broker may also request BIC Eligible sta-
+
+
+
+
+17 North Carolina Real Estate License Law and Commission Rules
+“no,” or “no representation.”  Failure to provide a buyer with
+this form may allow the buyer to cancel the contract by no-
+tifying the seller in writing within three calendar days of
+contract acceptance.
+Note: Licensees in residential real estate transactions
+have a duty under G.S. 47E-8 to inform their clients of the
+client’s rights and obligations under the statute. The Real
+Estate Commission also views the Real Estate License Law
+as imposing on licensees working with sellers and buyers
+certain additional responsibilities to ensure statutory com-
+pliance and serve their clients’ interests.  Licensees are ex -
+pected to “assist” sellers with completion of the form but
+should not complete the form for a seller or advise a seller
+as to what representation (or No Representation) to make.
+That being said, licensees should be certain to advise sellers
+that the licensee is obligated by law to disclose all material
+facts about or relating to the seller’s property to prospective
+buyers regardless of what representation the seller makes on
+the disclosure form. The licensee should also review the sell-
+er’s completed disclosure statement for accuracy and com -
+pleteness. See the Commission’s North Carolina Real Estate
+Manual for a full discussion of the disclosure law and an
+agent’s duties.
+Sellers must also provide a Mineral and Oil and Gas Man-
+datory Disclosure Statement (MOGS) to buyers prior to
+making an offer to purchase and contract. The form has been
+developed by the Real Estate Commission and is available for
+download from the Commission’s website, www.ncrec.gov.
+It is a separate form and is in addition to the Residential Prop-
+erty and Owner’s Association Statement. A disclosure state-
+ment is not required for some transaction. For a complete list
+of exemptions, see G.S. 47E-2.
+Broker’s Responsibility for Closing Statements [G.S.
+93A‑6(a)(14)
+The cited statute requires a broker, “…at the time a sales
+transaction is consummated, to deliver to the broker’s client a
+detailed and accurate closing statement showing the receipt and
+disbursement of all monies relating to the transaction about
+which the broker knows or reasonably should know.” The stat-
+ute goes on to provide that if a closing statement is prepared
+by an attorney or lawful settlement agent, a broker may rely
+on the delivery of that statement, but the broker must review
+the statement for accuracy and notify all parties to the closing
+of any errors.  Since virtually every residential transaction in
+North Carolina is closed by an attorney (or lawful settle -
+ment agent), it is standard practice for brokers to adopt the
+attorney’s settlement statement to satisfy this License Law
+requirement.
+Commission Guidelines. A settlement statement is a
+detailed report of all monies received and disbursed by the
+settlement agent in connection with a real estate sales trans-
+action. It is essential that the settlement statement be accu-
+rate and that a copy be provided to each party. The settle-
+ment statement is prepared by the settlement agent – the in-
+dividual conducting the closing, which in North Carolina is
+the experience required for initial designation and
+must first complete the 12-hour BIC Course prior
+to requesting BIC Eligible status and re-designation
+as a BIC regardless of when the broker may have
+previously taken the 12-hour course. There are no
+exceptions to this requirement to retake the 12-hour
+course prior to re-designation.
+Notice to Commission When BIC Status Ends. A
+BIC must notify the Commission in writing within 10 days
+upon ceasing to serve as BIC of a particular office. [See Para-
+graph (g).]
+Exception for certain pass-through businesses. See
+Paragraph (c).
+Nonresidents. Nonresident individuals and firms hold-
+ing a NC broker and/or firm license and engaging in bro -
+kerage activity in NC are subject to the same requirements
+as NC resident brokers/firms with regard to when they must
+have a designated broker-in-charge. Thus, a nonresident
+company engaging in brokerage in NC must have a broker-
+in-charge of the company who holds an active NC broker
+license for purposes of its NC business, although the office
+need not be physically located in North Carolina. Similarly,
+a nonresident NC broker sole practitioner engaging in activ-
+ity that triggers the broker-in-charge requirement for a resi-
+dent NC broker sole practitioner (see previous discussion on
+this subject) also must be designated as a broker-in-charge
+for NC brokerage purposes as without a BIC, a company
+has no office anywhere.
+Drafting Legal Instruments [Rule A.0111]
+This rule prohibits licensees from drafting legal instru-
+ments, e.g., contracts, deeds, deeds of trust, etc., but does
+allow them to fill in the blanks on preprinted sales or lease
+contract forms, which is not construed to be the unauthor -
+ized practice of law.
+Offers and Sales Contracts [Rule A.0112]
+This rule specifies what minimum terms must be con -
+tained in any preprinted offer or sales contract form a licens-
+ee, acting as an agent, proposes for use by a party in a real
+estate transaction.
+Reporting Criminal Convictions [Rule A.0113]
+Licensees are required to report to the Commission any
+criminal convictions for a felony or misdemeanor, military
+court-martial conviction, notarial commission sanction, or
+any restriction, suspension or revocation of a professional li-
+cense within sixty (60) days of the final judgment or order
+in the case. This reporting requirement is ongoing in nature.
+Note that Driving While Impaired (DWI) is a misdemeanor
+and must be reported.
+Residential Property and Owners’ Association
+Disclosure Statement [Rule A.0114]
+State law (Chapter 47E of the General Statutes) requires
+that most residential property owners complete a disclosure
+form to give to prospective purchasers. The form seeks to
+elicit information about the condition of the property by
+asking various questions, to which owners may answer “yes,”
+
+
+
+
+18 North Carolina Real Estate License Law and Commission Rules
+disburses.
+• A broker should notify the settlement agent if the
+broker believes there are any errors or omissions on
+the statement.
+HANDLING TRUST FUNDS
+T
+his section addresses those aspects of handling trust
+funds that are taught in the Real Estate Broker Pre-
+licensing Course and tested on the real estate license exam -
+ination for entry-level brokers. All brokers are encouraged
+to take the Basic T rust Account course for a fuller treatment
+of this subject. The Basic T rust Account course is an online,
+self-paced course and registration is available on the Com -
+mission’s website at www.ncrec.gov.
+Definition of Trust Money
+In the context of real estate transactions, “trust money”
+is most easily defined as money belonging to others received by
+a real estate broker who is acting as an agent in a real estate
+transaction.  It is also any money held by a licensee who acts
+as the temporary custodian of funds belonging to others .  Such
+money must be held in trust even if the circumstances are
+only collateral to the licensee’s role as an agent in a real estate
+related matter, e.g., a listing agent receives monies from his
+out of town seller for yard maintenance while the proper-
+ty is being marketed.  The most common examples of trust
+money are:
+• Earnest money deposits
+• Down payments
+• T enant security deposits
+• Rents
+• Homeowner association dues and assessments, and
+• Money received from final settlements
+In the case of resort and other short-term rentals, trust
+money also includes:
+• Advance reservation deposits
+• State (and local, if applicable) sales taxes on the
+gross receipts from such rentals
+Trust or Escrow Account [G.S. 93A‑6(a)(12) & (g);
+93A‑45(c); Rule A.0116, .0117]
+One of the most basic tenets of broker accountability
+when handling trust money is that it must be deposited into
+a trust or escrow account as described below.  A “trust ac -
+count” or “escrow account” (the terms are synonymous for
+Commission purposes) is simply a bank account into which
+trust money (and only trust money) is deposited.  The three
+primary features of a trust or escrow account are that it is:
+1) separate, containing only monies belonging to oth -
+ers,
+2) custodial, meaning only the broker or the broker’s des-
+ignated employee has disbursement control over the ac-
+count, but no one who has funds in the account has
+that ability, and
+3) available on demand, that is, the funds may be with-
+drawn at any time without prior notice.
+Type and Location of Trust Account.  A broker’s trust
+almost always the closing attorney or a nonlawyer assistant
+working under the supervision of the closing attorney.
+The TRID (Tila-RESPA Integrated Disclosures) rule be-
+came effective October 3, 2015, and applied to loan applica-
+tions received on or after October 3, 2015.  The TRID rule
+replaced the HUD-1 settlement statement (RESPA) and
+final T ruth-in-Lending statement (TILA) with two Clos-
+ing Disclosure (CD) documents, one for the borrower and
+a separate one for the seller.  Closing disclosures are dis -
+closures only and are not equivalent to a settlement state-
+ment.  While the HUD-1 is no longer used in TRID-gov -
+erned transactions, other types of settlement statements may
+be used, such as settlement/closing statements created and
+published by the American Land Title Association (ALTA).
+Also, the HUD-1 may be used as the settlement statement
+in non-TRID-governed transactions, such as cash transac -
+tions, construction loans, or purchases of investment prop-
+erty.
+The Commission has published in its North Carolina
+Real Estate Manual the following guidelines regarding bro -
+kers’ responsibilities for settlement statements:
+• A broker must confirm the accuracy of all entries
+about which s/he has direct knowledge. Such items
+include, but may not be limited to:  the sale price;
+amount of the due diligence fee and earnest money
+deposit; amount of the brokerage commission and
+split; any amounts due either party under the offer
+to purchase and contract, e.g., closing costs paid by
+seller, as well as any sums paid by or due to third par-
+ties related to the transaction, if the broker knows or
+should know about the expense.
+• As to amounts paid by or due to third parties, brokers
+generally may assume that the amounts for charges
+and fees as stated on the settlement statement are
+correct unless there is something that would lead a
+reasonable broker to suspect that an amount is incor-
+rect.  As to all debits and credits related to the trans-
+action, whether paid before or at closing, the broker
+must:
+1) review and confirm that all charges and credits
+have been properly debited or credited to the
+seller or buyer and are entered in the correct col -
+umn; and
+2) review and confirm the accuracy of the calcula -
+tions for all prorated items, escrow reserves, in-
+terim interest, excise tax and the “bottom line fig-
+ures,” i.e., total settlement charges to each party,
+cash from borrower-buyer, and cash to seller.
+• If a broker is aware of any expense related to the trans-
+action paid to or by either party or any third party
+that is not included on the settlement statement, the
+broker must notify both the settlement agent and the
+lender of the omission, as the settlement statement
+should reflect all expenses and payments related to
+the transaction, not just monies the settlement agent
+
+
+
+
+19 North Carolina Real Estate License Law and Commission Rules
+ed into this one common trust account.  However, brokers
+who are active in both sales and property management often
+find it helpful to use more than one trust account.  For ex -
+ample, they may wish to keep a “general sales trust account”
+for earnest money deposits, settlement proceeds, etc., and a
+“rental trust account” for tenant security deposits, rents, and
+related receipts.  Although it is not required, many brokers
+involved in property management and leasing elect to main-
+tain an additional “security deposit trust account” to keep
+tenant security deposits separate from rents and other relat-
+ed receipts.  However, Rule A.0118(a) requires brokers who
+handle homeowner or property owner association funds to
+maintain a separate trust account for each property owner asso-
+ciation or homeowner association they manage .  The funds of
+one homeowner association are not to be commingled with
+funds from any other association nor with any general trust
+monies.  The broker also must provide the association with
+periodic written statements not less than once each quarter
+reporting all monies received, disbursed, and due, but not
+paid (i.e., delinquent), as well as the balance of funds in the
+account.
+“Commingling” Prohibited. [G.S. 93A-6(a)(12)]  The
+basic statutory provision relating to a licensee’s handling of
+the money or property of others states that a broker may
+not “commingle” his or her own money or property with
+the money or property of others. This means that a broker
+may not maintain funds belonging to others in the same
+bank account that contains his or her personal or business
+funds.  Funds belonging to others must be held in a trust ac-
+count and, except as described below regarding “bank ser -
+vice charges on trust accounts,” a broker may not deposit
+his or her own funds in that trust account. The prohibition
+against commingling also means, for example, that a bro -
+ker who has an ownership interest in  property is preclud -
+ed from depositing monies (e.g., earnest money, rent, secu-
+rity deposits, etc.) related to that property in his brokerage
+trust account.
+Bank Service Charges on Trust Accounts. T rust ac-
+counts usually are subject to the same service charges as reg-
+ular checking accounts. Whenever possible, brokers should
+arrange for the depository/bank either to bill the broker for
+these expenses or charge these expenses to the broker’s per-
+sonal or general operating account.  However, if such ar -
+rangements cannot be made, the Commission will per-
+mit a broker to deposit and maintain in his trust account
+a maximum of $100.00 of his personal funds (or such oth -
+er amount as may be required) to cover (not avoid) such
+charges.  So, if a broker’s monthly service charges and other
+fees typically are $100, then the broker may deposit up to
+$200 of his/her own money to cover these charges.  A bro -
+ker who deposits any of his/her own money in the trust ac -
+count to cover bank charges must be careful to properly en-
+ter and identify these personal funds in his/her trust account
+records by use of a personal funds ledger.  While this techni-
+cally constitutes “commingling,” it is permissible commin-
+account or escrow account must be:
+1) a demand deposit account
+2) in a federally insured depository institution
+3) lawfully doing business in North Carolina
+4) that agrees to make the account records available for
+inspection by Commission representatives. [G.S.
+93A-6(g)]
+Thus, for the purpose of holding most trust money, the
+bank can be located outside North Carolina if the foregoing
+conditions are met.
+Designation of Trust Account and FDIC Insurance. A
+broker-in-charge who must maintain a trust account must
+ensure that the bank properly designates the account and
+that the words “trust account” or “escrow account” appear
+on all signature cards, bank statements, deposit tickets and
+checks. Even though the escrow account typically is in the
+name of the company or broker, so long as the broker prop-
+erly designates the account as a “trust” or “escrow” account
+and keeps accurate records that identify each owner of the
+funds and/or depositor (buyer, seller, lessor, lessee, etc.), the
+depositors are protected from the funds being “frozen” or
+attached if the broker/trustee becomes insolvent, incapaci-
+tated, dies, has tax liens, becomes involved in a lawsuit, etc.
+Failure to properly designate an account titled in the name
+of the company/broker as a trust or escrow account may re-
+sult in attachment of the account by others to collect a judg-
+ment or denial of FDIC insurance coverage as to each indi-
+vidual’s interest in the account.
+So long as the account is properly designated as a trust/
+escrow account, all deposits are insured by the Federal Deposit
+Insurance Corporation (FDIC) up to $250,000 per each in-
+dividual for whom funds are held.  Thus, a broker’s trust ac-
+count may contain $500,000 total, but all funds are fully in-
+sured so long as no one individual’s interest in the account ex-
+ceeds $250,000.  (Note, however, that an individual still may
+be underinsured if the individual maintains accounts in his/
+her individual name at the same financial institution as the
+broker’s trust/escrow account.)
+When a Trust Account Is Required.  A broker must open
+and maintain a trust account when the broker or any affili -
+ated licensee takes possession of trust money. A broker who
+is inactive or otherwise not using his/her real estate license is
+not required to open or maintain a trust account because s/
+he should not be engaged in brokerage nor receiving mon -
+ies belonging to others.  Similarly, if an active practicing bro-
+ker does not collect or otherwise handle the funds of others,
+no trust account is required.  Note: A broker who leases resi-
+dential property he or she owns to tenants may be required
+to maintain a trust account under 42-50 NC Residential
+Landlord T enant law.
+Number of Trust Accounts.   Except for brokers who are
+managing homeowner or property owner association funds,
+a broker holding trust money is only required to have one
+trust account.  All earnest money deposits, tenant securi -
+ty deposits, rents, and other trust monies may be deposit -
+
+
+
+
+20 North Carolina Real Estate License Law and Commission Rules
+gling to avoid the greater evil of using other people’s money
+to pay these bank charges.
+Interest-Bearing Trust Account.  Both G. S. 93A-6(a)
+(12) and Rule A.0116(c) permit a broker to deposit trust
+money into an interest-bearing trust account so long as the
+broker first obtains written authorization for deposit in an
+interest-bearing account from all parties having an interest
+in the monies being held.  Such authorization must specify
+how and to whom the interest will be paid.  If the authoriza-
+tion is contained in an offer, contract, lease or other transac-
+tion instrument, it must be set forth in a conspicuous man-
+ner that distinguishes it from other provisions of the instru-
+ment.  Remember, however, that all trust accounts must be
+a demand account, so investment of trust monies in any type
+of security, such as a government bond or a fixed term cer -
+tificate of deposit, is prohibited.
+Broker-In-Charge Responsible for Trust Accounts.
+[Rule A.0117; Rule A.0110(g)(4)] Rule A.0117(a) requires
+a broker to maintain complete records showing the depos-
+it, maintenance and withdrawal of money belonging to the
+broker’s principals or held in escrow or in trust for the broker’s
+principals.  Paragraph (h) of that rule also provides that the
+Commission may inspect trust account records periodical -
+ly without prior notice and whenever the records are perti-
+nent to investigation of a complaint against a licensee.  Rule
+A.0110(g)(4) refines this requirement by specifying that a
+broker-in-charge (BIC) is responsible for the proper mainte-
+nance of real estate trust accounts and records pertaining thereto.
+Custodian of Trust Account Records Other Than the
+Broker-In-Charge. While a broker-in-charge may trans-
+fer possession of trust money to a bookkeeper, secretary,
+or some other clerical employee to record and deposit the
+funds in a trust account and to maintain trust account re -
+cords, the broker-in-charge nonetheless remains responsible
+for the care and custody of such funds. Brokers-in-charge
+should closely and diligently supervise the acts of all persons
+having access to the trust account, since final accountability
+for the accuracy and integrity of the account rests with the
+broker-in-charge.  Access to trust money should be limited and
+carefully controlled.
+Disbursement of Earnest Money [Rule A0116(e)]  This
+rule permits a broker-in-charge to transfer an earnest mon-
+ey deposit from his/her trust account to the closing attorney
+or other settlement agent not more than ten (10) days prior
+to the anticipated settlement date.  Earnest money may not
+be disbursed prior to settlement for any other purpose with-
+out the written consent of the parties.  Thus, earnest money
+may not be used by the broker to pay for inspection reports
+or other services on behalf of the buyer prior to settlement
+without the written consent of the seller, and vice-versa.
+Disputed Trust Funds. Rule A.0116(d) addresses  dis -
+puted trust funds as follows: “In the event of a dispute be -
+tween buyer and seller or landlord and tenant over the re -
+turn or forfeiture of any deposit other than a residential ten-
+ant security deposit held by a broker, the broker shall retain
+said deposit in a trust or escrow account until the broker has
+obtained a written release from the parties consenting to its
+disposition or until disbursement is ordered by a court of
+competent jurisdiction.” The rule also references the G.S.
+93A-12 procedures for depositing disputed funds with the
+Clerk of Court as well as when one party abandons his or
+her claim to the disputed funds. However, these procedures
+are beyond the scope of  these materials and are more im -
+portant for brokers-in-charge to know.
+Handling of Trust Money [Rule A.0116(a), (b) & (g)]
+The general rule is that all trust monies received by a licens-
+ee must be deposited in a trust account within three banking
+days of receipt.  Exception: Earnest money received with of-
+fers to purchase and tenant security deposits in connection
+with leases must be deposited in a trust account not later than
+three banking days following acceptance of the offer to purchase or
+lease agreement unless the deposit is tendered in cash in which
+event it must be deposited within three banking days follow-
+ing receipt, even if the contract or lease has not been accept-
+ed. In part, this is because cash is immediately available and
+may be refunded within a day of deposit, unlike checks which
+may require a few days to clear.
+Understand that a broker may choose to immediately de-
+posit a check received for an earnest money deposit or tenant
+security deposit and is not required to wait until contract accep-
+tance unless so instructed by the buyer/tenant.  Of course, early
+deposit may cause problems if the offer to purchase or lease is
+not accepted and the prospective buyer or tenant understand-
+ably wants their deposit to be immediately returned.  The date
+of acceptance should be shown in the purchase or lease agree-
+ment to determine when the three banking days begins.
+Receipt of Trust Money by Provisional Broker.
+[Rule
+A.0116(b)(1)&(2), Rule A.1808.] All trust money received by a
+provisional broker must be delivered immediately to the provi-
+sional broker’s broker-in-charge.  In other words, provisional bro-
+kers may not retain or hold trust money any longer than abso-
+lutely necessary to deliver the trust money to his/her broker-in-
+charge. Similarly, trust monies received by a nonresident limit-
+ed commercial broker are to be delivered immediately to and
+held by the resident North Carolina broker with whom the
+nonresident is affiliated.  Brokers-in-charge should have written
+policies that clearly state the procedures to be followed when
+any agent affiliated with the company, whether a provisional or
+non-provisional broker, receives trust monies.
+Handling Option Money and Due Diligence Fee.
+Rule A.0116(b)(4) states in part: “A broker may accept cus-
+tody of a check or other negotiable instrument made pay-
+able to the seller of real property as payment for an option
+or due diligence fee, but only for the purpose of delivering
+the instrument to the seller. While the instrument is in the
+custody of the broker, the broker shall, according to the in-
+structions of the buyer, either deliver it to the seller or return
+it to the buyer. The broker shall safeguard the instrument
+and shall be responsible to the parties on the instrument for
+its safe delivery as required by this Rule.  A broker shall not
+
+
+
+
+21 North Carolina Real Estate License Law and Commission Rules
+“active” status may prepare a broker price opinion
+(BPO) or comparative market analysis (CMA) for a
+fee for a variety of persons and entities for a variety of
+reasons, not just for actual or prospective brokerage
+clients. Note, however, that a provisional broker may
+NOT perform a BPO or CMA for a fee for anyone.
+[G.S. §93A-83(a) and (b)]
+• A broker may NOT prepare a BPO (or CMA) for an
+existing or potential lienholder or other third party
+where the BPO is to serve as the basis to determine
+the value of a property for the purpose of originating a
+mortgage loan, including first and second mortgages,
+refinances or equity lines of credit. [G.S. §93A-
+83(b)(6)]
+• A BPO or CMA may only estimate the “probable
+selling price” or “probable leasing price” of a property,
+not the “value” of a property. Moreover, if a BPO
+or CMA does propose to estimate the “value” or
+“worth” of a property, it shall be legally considered a
+“real estate appraisal” that may only be prepared by a
+licensed or certified real estate appraiser, not by a real
+estate broker.  [G.S. §93A-83(f)]
+• A BPO or CMA provided for a fee must be per-
+formed in accordance with the requirements of Ar-
+ticle 6 of the Real Estate License Law and standards
+set forth in rules adopted by the North Carolina Real
+Estate Commission. [Rules, Ch. 58, Section A.2200]
+• A BPO or CMA must be in writing and must address
+those matters specifically required by the statute or
+Commission rule.  [G.S. §93A-83(c)]
+Standards for BPOs and CMAs Performed for Com-
+pensation.  Article 6 of the Real Estate License Law pro -
+vides a number of standards that must be followed when a
+broker is performing a BPO/CMA for a fee.  Additional -
+ly, the Commission has adopted rules (Section A.2200) set-
+ting forth specific standards for brokers when performing
+such standards.  A broker performing a BPO/CMA utilizes
+the same valuation concepts and methodology as an apprais-
+er performing an appraisal; however, the analysis associated
+with a BPO/CMA is less comprehensive and detailed than
+with an appraisal, and the regulatory standards for brokers
+performing BPOs/CMAs are less stringent than those re-
+quired for real estate appraisers performing appraisals. [See
+G.S. 93A-83 and especially Commission Rule 58A.2202.]
+Reporting Probable Selling/Leasing Price as a
+“Range.”  In recognition of the fact that brokers perform -
+ing BPOs/CMAs are not expected to be as precise in their
+analysis and adjustments to comparable properties as an
+appraiser when performing an appraisal, the Commision’s
+rules permit reporting in a BPO/CMA of probable selling
+price or leasing price (lease rate) as either a single figure or
+as a price range. The applicable rules also states: “When the
+estimate states a price range and the higher figure exceeds
+the lower figure by more than ten (10%), the broker shall
+include an explanation as to why the variance is more than
+retain such an instrument for more than three business days
+after the acceptance of the option or other sales contract.”
+The rule is basically self-explanatory. In the rule, “custo-
+dy” means possession.  Recall that option money or a due
+diligence fee is paid directly to the seller, to whom the check
+is written as payee, and so it is not appropriate for a broker
+to deposit these checks into his/her trust account because
+the check is not payable to the broker or real estate compa -
+ny as is the case with earnest money checks.  Either the list-
+ing agent or buyer’s agent may hold the check or negotiable
+instrument until negotiations are completed and a contract
+is formed, at which point the check should be delivered to
+the seller as soon as possible.
+If, however, a buyer for some reason gives a broker cash for
+the option money or due diligence fee, then the broker must im-
+mediately deposit the cash in his/her trust account pending con-
+tract formation as cash must always be deposited into a trust ac-
+count within three banking days of receipt — no exceptions.
+If the parties enter into a contract, then the broker would
+write a check from the trust account payable to the seller, not-
+ing in the memo section and trust account records that it is
+for the option fee or due diligence fee from the buyer.
+Safeguarding Trust Money; Improper Use of Trust
+Money. [Rule A.0116(g)] This rule places on every licensee
+the responsibility to safeguard the money or property of
+others coming into his or her possession according to the
+requirements of the License Law and Commission rules.
+In addition, it states that: “A broker shall not convert the
+money or property of others to his or her own use, apply such
+money or property to a purpose other than that for which
+it was intended or permit or assist any other person in the
+conversion or misapplication of such money or property.”
+BROKER PRICE OPINION AND
+COMPARATIVE MARKET ANALYSIS
+[G.S. 93A, Article 6;  Commission Rules Chapter 58A,
+Section .2200]
+Definitions.  General Statute §93A-82 of the N orth
+Carolina Real Estate License Law and General Statute §93E-
+1-4(7c) of the North Carolina Appraisers Act both define
+a “broker price opinion” (“BPO”)  and a “comparative
+market analysis” (“CMA”) as “…an estimate prepared by
+a licensed real estate broker that details the probable sell -
+ing price or leasing price of a particular parcel of or interest
+in property and provides a varying level of detail about the
+property’s condition, market, and neighborhood, and infor-
+mation on comparable properties, but does not include an
+automated valuation model.”  Thus, the terms “BPO” and
+“CMA” have exactly the same legal meaning even though an
+estimate provided for a seller or buyer client or prospective
+client is most commonly referred to as a CMA and an esti -
+mate performed for a third party for a purpose other than
+mortgage loan origination (for example, a foreclosure or
+short sale decision) is typically referred to as a BPO.
+• A “non-provisional” broker with a current license on
+
+
+
+
+22 North Carolina Real Estate License Law and Commission Rules
+10 percent.  [Rule A.2202(h)]
+Use of Income Analysis Methodology Now Required
+Where Appropriate.  The revised statutes eliminated the
+old Appraisers Act restriction that a broker’s CMA for actu-
+al or prospective clients and for compensation was permitted
+only if the sales comparison approach was the only meth-
+od used to derive an indication of the probable sales price.
+A broker performing a BPO or CMA to determine an esti -
+mated “probable selling price or leasing price” is now required
+to utilize methods involving the analysis of income where
+appropriate (i.e., income capitalization or gross rent multi-
+plier methodology for income-producing properties) as well
+as the sales comparison method.  [G.S. §93A-83(c)(3) and
+Commission Rule A.2202(e)]
+Competence to Perform BPO/CMA.  Although Article
+6 of the License Law and Section A.2200 of the Commis -
+sion’s rules do not specifically require a broker to perform
+a BPO/CMA in competent manner, the reader should re -
+member that the License Law has always made incompe -
+tence a basis for disciplinary action and those provisions also
+apply to the performance of BPOs and CMAs.  If a broker is
+not qualified by way of education and experience to proper-
+ly utilize the appropriate methodology required for a partic-
+ular property (for example, income capitalization for a com-
+mercial property), then the broker is expected to decline the
+assignment.
+CMAs/BPOs Performed for NO FEE. Any broker
+(non-provisional or provisional) has always been permitted
+to perform a BPO/CMA for any party when NO FEE is
+charged, and this continues to be the case under the revised
+law and rules.  Note that the Commission does not consider
+compensation of a broker for general brokerage services under
+a brokerage agreement to constitute a “fee” under Article 6 of
+N.C.G.S. §93A.  “General brokerage services” means servic-
+es provided under a brokerage agreement to property own-
+ers in connection with listing/selling/leasing property and to
+prospective buyers or tenants in connection with purchasing
+or leasing a property.  Such services include the provision by
+a licensee of a CMA or BPO.  Similarly, the possibility of
+entering into a brokerage agreement (and earning a broker-
+age fee) does not constitute a “fee” when a licensee performs
+a CMA/BPO for a prospective client without charging a fee
+for the CMA/BPO.  It is important for licensees to remember,
+however, that the Commission expects every CMA/BPO per-
+formed by a licensee to be performed in a competent manner
+and without any undisclosed conflict of interest, even if no fee is
+received for the CMA/BPO.  Thus, as a practical matter, a li -
+censee performing a CMA/BPO for no fee should still look to the
+standards described in Commission Rule 58A .2202 for guid-
+ance regarding the proper performance of a CMA/BPO.
+For a full explanation of the law and rules governing
+BPOs and CMAs, and a Sales Comparison Analysis Illus-
+tration, the reader is referred to the Commission’s North
+Carolina Real Estate Manual, which may be ordered
+through the Commission’s website at www.ncrec.gov.

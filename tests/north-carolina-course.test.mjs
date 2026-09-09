@@ -14,7 +14,8 @@
 
 import test from "node:test";
 import assert from "node:assert/strict";
-import { readFileSync } from "node:fs";
+import { createHash } from "node:crypto";
+import { existsSync, readFileSync } from "node:fs";
 
 import BANK from "../config/north-carolina/module-question-bank.mjs";
 import {
@@ -336,6 +337,130 @@ test("every module file exists, carries its section, its Level and its examinati
   }
 });
 
+test("Module NC-01 teaches the current official licensing workflow rather than historical source excuses", () => {
+  const one = readModule("module-01");
+  for (const required of [
+    /at least 18 years old/i,
+    /75-hour North Carolina Broker Prelicensing Course/i,
+    /three years preceding the license application/i,
+    /six months before the application is filed/i,
+    /180-calendar-day examination eligibility period/i,
+    /National \| 80 \| 5/,
+    /State \| 60 \| 5/,
+    /\$105/,
+    /\$53/,
+    /90 instructional hours.*within 18 months/is,
+    /June 10/,
+    /June 30/,
+    /does not authorize the practice of law/i
+  ]) assert.match(one, required);
+
+  assert.match(one, /Commission determines comparable status/i);
+  assert.match(one, /waive the NC State section.*provisional broker status/is);
+  assert.match(one, /G\.S\. 93A-4/);
+  assert.match(one, /21 NCAC 58A \.0511/);
+  assert.match(one, /RELINC/);
+  for (const stale of [
+    /This course states no age requirement/i,
+    /This course states no postlicensing hour requirement/i,
+    /Neither was obtained for this project/i,
+    /governing statute and rules were not read/i
+  ]) assert.doesNotMatch(one, stale);
+});
+
+test("Module NC-02 teaches current supervision and compensation controls", () => {
+  const two = readModule("module-02");
+  for (const required of [
+    /Rule 58A \.0506/,
+    /30 days of the date shown on the form/i,
+    /10 days after termination/i,
+    /Rule 58A \.0110/,
+    /two years of brokerage experience.*previous five years/is,
+    /12-hour BIC Course/i,
+    /Rule 58A \.0109/,
+    /does not set commission rates or arbitrate private fee and split disputes/i,
+    /Rule 58A \.0120\(b\)/,
+    /current BIC or the person who served as BIC at the time of the transaction/i
+  ]) assert.match(two, required);
+
+  for (const stale of [
+    /This course states no BIC eligibility requirement/i,
+    /Commission Rules 58A \.0109.*none obtained/is,
+    /this course states no compensation rule/i
+  ]) assert.doesNotMatch(two, stale);
+});
+
+test("Module NC-03 uses the prescribed four-part fixture test and supplies the delivered activity evidence", () => {
+  const three = readModule("module-03");
+  for (const criterion of [
+    /Intent of the annexor/i,
+    /Relationship of the annexor to the property/i,
+    /Method of annexation/i,
+    /Adaptation to the real estate/i
+  ]) assert.match(three, criterion);
+  assert.match(three, /all four.*must be present/is);
+  assert.match(BANK["module-03"].engagement[0].choices[0], /All four stated criteria/i);
+
+  const activities = NORTH_CAROLINA_REQUIRED_ACTIVITIES.filter((a) => a.section === "III");
+  assert.equal(activities.length, 6);
+  const delivered = activities.filter((a) => a.status === "delivered");
+  assert.equal(delivered.length, 3);
+  for (const activity of delivered) assert.ok(activity.evidencePath, `no evidence path: ${activity.activity}`);
+  for (const asset of ["nc-fixture-decision-lab.svg", "nc-government-survey-grid.svg", "nc-metes-bounds-training-exhibit.svg"]) {
+    assert.equal(existsSync(new URL(`../public/statecourse/media/${asset}`, import.meta.url)), true, asset);
+    assert.match(three, new RegExp(`/media/${asset.replaceAll(".", "\\.")}`));
+  }
+});
+
+test("Module NC-03 gives every prescribed zoning concept an example without claiming a statewide code", () => {
+  const three = readModule("module-03");
+  for (const concept of [
+    "Nonconforming use", "Illegal use", "Zoning amendment", "Variance", "Special-use or conditional-use permit",
+    "Overlay district", "Historic preservation zoning", "Aesthetic zoning", "Spot zoning", "Cluster zoning", "Buffer zone"
+  ]) assert.match(three, new RegExp(`\\| ${concept.replace("-", "[-‑]")} \\|`, "i"));
+  assert.match(three, /do not state that any particular North Carolina ordinance allows the result/i);
+});
+
+test("Module NC-04 corrects the obsolete fourth-year adjustment and teaches current tax statutes", () => {
+  const four = readModule("module-04");
+  for (const required of [
+    /G\.S\. 105-286 requires advancement/i,
+    /repealed subsections 105-286\(b\) and \(c\).*July 1, 2009/is,
+    /G\.S\. 105-228\.30 requires the transferor/i,
+    /\$1(?:\.00)? (?:on|for) each \$500.*fractional part/i,
+    /consideration or value of the interest conveyed/i,
+    /one free report every 12 months/i,
+    /general maximum exclusion is \$250,000/i,
+    /\$500,000.*joint-return requirements/is
+  ]) assert.match(four, required);
+  assert.doesNotMatch(four, /Horizontal reappraisal by a municipality is possible in the 4th year/i);
+
+  const exciseActivity = NORTH_CAROLINA_REQUIRED_ACTIVITIES.find((a) => a.activity.startsWith("Calculate excise tax"));
+  assert.equal(exciseActivity.status, "delivered");
+  assert.match(exciseActivity.evidencePath, /module-04/);
+  assert.doesNotMatch(JSON.stringify(BANK["module-04"]), /statute setting it was not obtained|states no North Carolina excise tax rate/i);
+});
+
+test("Module NC-05 reconciles environmental instruction to current state and federal sources", () => {
+  const five = readModule("module-05");
+  const fifteen = readModule("module-15");
+  for (const required of [
+    /broker's independent license-law duty/i,
+    /phased it in during 1996/i,
+    /10-day opportunity/i,
+    /agree in writing to a different period/i,
+    /waive the opportunity in writing/i,
+    /three years from completion of the sale/i,
+    /no positive obligation to test or reduce/i,
+    /4 pCi\/L or more/i,
+    /All Appropriate Inquiries before acquisition/i,
+    /accreditation.*not the blanket phrase.*state-licensed/is
+  ]) assert.match(five, required);
+  assert.match(fifteen, /current G\.S\. 130A-22\(b3\).*\$5,000/is);
+  assert.doesNotMatch(JSON.stringify(BANK["module-05"]), /EPA regulations and guidance documents were not obtained|fines run up to \$750|\$32,500 per day under EPA sanctions/i);
+  assert.match(NORTH_CAROLINA_REQUIRED_ACTIVITIES.find((a) => a.moduleId === "module-05").blockedBy, /NCAR Form 2A9-T/);
+});
+
 test("no module claims approval or offers credit", () => {
   assert.doesNotMatch(allModules, /\bState Approved\b/i);
   assert.doesNotMatch(allModules, /\bEnroll Now\b/i);
@@ -345,22 +470,196 @@ test("no module claims approval or offers credit", () => {
 test("the North Carolina departures from the national rules are stated in the curriculum", () => {
   const six = readModule("module-06");
   const fifteen = readModule("module-15");
-  /* Survivorship is NOT automatic in a NC joint tenancy. */
-  assert.match(fifteen, /In NC, survivorship not automatic/i);
-  assert.match(fifteen, /Attorney must draft exact wording/i);
-  /* But it IS automatic, unwaivable and will-overriding in a tenancy by the entirety. */
-  assert.match(fifteen, /Automatic right of survivorship that cannot be waived; overrides a will/i);
-  /* Unequal interests are permitted. */
-  assert.match(fifteen, /percentage of ownership interest can be unequal/i);
-  assert.match(six, /survivorship/i);
+  assert.match(fifteen, /tenancy in common is the default/i);
+  assert.match(fifteen, /expressly unequal ownership shares are permitted/i);
+  assert.match(fifteen, /the conveyance must create it under G\.S\. 41-71/i);
+  assert.match(fifteen, /G\.S\. 41-63 expressly lists ways to end the estate/i);
+  assert.match(six, /written joinder of the other spouse/i);
+  assert.doesNotMatch(`${six}\n${fifteen}`, /Automatic right of survivorship that cannot be waived/i);
 });
 
-test("the two contract-structure facts a broker cannot get wrong are stated in Module NC-11", () => {
+test("Module NC-06 restores the deed activity and reconciles ownership, leases, liens and condominiums", () => {
+  const six = readModule("module-06");
+  const fifteen = readModule("module-15");
+  for (const required of [
+    /one month.*year-to-year/is,
+    /seven days.*month-to-month/is,
+    /two days.*week-to-week/is,
+    /G\.S\. 41-72.*equal unless the instrument provides otherwise/is,
+    /120 days after the claimant's last furnishing/i,
+    /180-day.*commence enforcement/i,
+    /public offering statement.*seven-calendar-day/is,
+    /G\.S\. 47C-4-109.*no statutory cancellation right/is,
+    /General warranty deed/i,
+    /Special warranty deed/i,
+    /Quitclaim deed/i,
+    /Bargain-and-sale deed/i
+  ]) assert.match(six, required);
+  const activities = NORTH_CAROLINA_REQUIRED_ACTIVITIES.filter((activity) => activity.section === "VI");
+  assert.equal(activities.length, 3);
+  assert.equal(activities.every((activity) => activity.status === "delivered" && activity.evidencePath), true);
+  assert.match(activities[2].activity, /differentiate the deed types/i);
+  assert.doesNotMatch(six, /assessment determining whether the student can differentiate between the types of hybrid ownership/i);
+  assert.match(fifteen, /Notice to Lien Agent.*does not.*itself\s+serve or perfect/is);
+  assert.match(fifteen, /no later than 15 days after first furnishing/i);
+  assert.doesNotMatch(fifteen, /All service providers must \*\*file a Notice to Lien Agent/i);
+});
+
+test("Module NC-07 delivers all contract and agency activities and uses current North Carolina boundaries", () => {
+  const seven = readModule("module-07");
+  for (const required of [
+    /G\.S\. 66-315 says UETA does not require electronic records or signatures/i,
+    /may not be denied effect solely because/i,
+    /G\.S\. 22-2.*writing and signed by the party to be charged/is,
+    /Recording is not a Statute-of-Frauds formation requirement/i,
+    /select or complete a preprinted form/i,
+    /broker from another firm is not automatically the seller's subagent/i,
+    /Required Activity evidence — void and voidable fact-pattern lab/i,
+    /Required Activity evidence — contract termination versus offer termination/i,
+    /Required Activity evidence — six agency-duty scenarios/i,
+    /Required Activity evidence — termination and surviving-duty lab/i
+  ]) assert.match(seven, required);
+  assert.doesNotMatch(seven, /Electronic signatures are binding on contract parties/i);
+  assert.doesNotMatch(seven, /Must be in writing and recorded generally per the Statute of Frauds/i);
+  const activities = NORTH_CAROLINA_REQUIRED_ACTIVITIES.filter((activity) => activity.section === "VII");
+  assert.equal(activities.length, 4);
+  assert.equal(activities.every((activity) => activity.status === "delivered" && activity.evidencePath), true);
+  assert.match(BANK["module-07"].engagement[0].choices[0], /competent parties.*mutual assent.*consideration.*lawful objective/i);
+  assert.doesNotMatch(BANK["module-07"].engagement[0].choices[0], /writing|recording|notari/i);
+});
+
+test("Module NC-08 delivers every agency activity and uses current Rule 58A boundaries", () => {
+  const eight = readModule("module-08");
+  for (const required of [
+    /Required Activity evidence — first-substantial-contact lab/i,
+    /Required Activity evidence — client\/customer duty lab/i,
+    /Required Activity evidence — calculation set/i,
+    /Required Activity evidence — distinguish the three listing types/i,
+    /Required Activity evidence — tenant-screening decision matrix/i,
+    /Required Activity evidence — WWREA form and companion Q&A/i,
+    /REC 4\.27.*REC 3\.45/is,
+    /binds the buyer for a period or restricts the buyer's right to work with another agent/i,
+    /properly perfected claim may relate back to first furnishing/i,
+    /signature acknowledges receipt and does not itself create agency/i,
+    /hypothetical negotiated/i
+  ]) assert.match(eight, required);
+  assert.doesNotMatch(eight, /nothing a consumer tells you is confidential/i);
+  assert.doesNotMatch(eight, /all brokers affiliated\s+with a firm automatically become subagents of any principal-client/i);
+  assert.doesNotMatch(eight, /mechanic's lien is effective from the first day/i);
+  const activities = NORTH_CAROLINA_REQUIRED_ACTIVITIES.filter((activity) => activity.section === "VIII");
+  assert.equal(activities.length, 6);
+  assert.equal(activities.every((activity) => activity.status === "delivered" && activity.evidencePath), true);
+});
+
+test("Module NC-09 delivers all practice activities and reconciles current fair-housing and solicitation rules", () => {
+  const nine = readModule("module-09");
+  for (const required of [
+    /Required Activity evidence — neutral tenant-screening matrix/i,
+    /Required Activity evidence — compensation-method lab/i,
+    /Required Activity evidence — discrimination examples/i,
+    /Required Activity evidence — client versus third-party duties/i,
+    /first occupancy after March 13, 1991/i,
+    /all units in a building with four or more units and one or more elevators/i,
+    /ground-floor units/i,
+    /HUD administrative complaint.*one year/is,
+    /private civil action.*state or federal court.*two years/is,
+    /HUD withdrew its 2022 criminal-record guidance/i,
+    /April 24, 2026 letter/i,
+    /Registry data downloaded no more than 31 days/i,
+    /18 months after a qualifying transaction/i,
+    /three months after the consumer's inquiry/i,
+    /Fraud requires intentional deception/i
+  ]) assert.match(nine, required);
+  assert.doesNotMatch(nine, /all brokers affiliated with the firm\s+automatically becoming subagents/i);
+  assert.doesNotMatch(nine, /All buildings with four or more residential units constructed\s+after March 13, 1991 must allow access/i);
+  assert.doesNotMatch(nine, /Office of Fair Housing and Equal Opportunity \(OFHEO\)/i);
+  assert.doesNotMatch(nine, /Enforcement by private lawsuit in federal court ONLY/i);
+  assert.doesNotMatch(nine, /Fraud is intentional or negligent misrepresentation/i);
+  const activities = NORTH_CAROLINA_REQUIRED_ACTIVITIES.filter((activity) => activity.section === "IX");
+  assert.equal(activities.length, 4);
+  assert.equal(activities.every((activity) => activity.status === "delivered" && activity.evidencePath), true);
+  assert.match(BANK["module-09"].engagement[2].choices[0], /reliable school information equally and consistently/i);
+  assert.match(BANK["module-09"].remediation[0].choices[0], /Open, exclusive agency, and exclusive right to sell/i);
+  assert.match(BANK["module-09"].remediation[1].choices[0], /former firm's relationship is not yours/i);
+  assert.match(BANK["module-09"].remediation[4].choices[0], /Rule 58A \.0105/i);
+});
+
+test("Module NC-10 reconciles current brokerage-practice law and supplies auditable Level 3 work", () => {
+  const ten = readModule("module-10");
+  for (const required of [
+    /G\.S\. 160D-702/i,
+    /references to repealed or superseded.*Chapter 160D/is,
+    /ownership of the land does not automatically answer who owns or operates the tank/i,
+    /three banking days after receipt/i,
+    /property owners' association account separation/i,
+    /current BIC.*served as BIC at the time of the transaction/is,
+    /offering party.*express authority/is,
+    /seller authority for the existence message/i,
+    /Required Activity evidence — client versus third-party disclosure/i,
+    /Level 3 evidence — land-use verification lab/i,
+    /Level 3 evidence — offer presentation and delivery clock/i,
+    /Level 3 evidence — material-fact classification lab/i,
+    /Level 3 evidence — compensation routing lab/i
+  ]) assert.match(ten, required);
+  assert.doesNotMatch(ten, /Drafting of sales contracts by brokers is prohibited.*93A-6\(a\)\(12\)/is);
+  assert.doesNotMatch(ten, /current landowner is responsible for the cleanup of an underground storage tank/i);
+  const activities = NORTH_CAROLINA_REQUIRED_ACTIVITIES.filter((activity) => activity.section === "X");
+  assert.equal(activities.length, 1);
+  assert.equal(activities[0].status, "delivered");
+  assert.match(activities[0].evidencePath, /module-10\.md#b0a/i);
+  const bank = BANK["module-10"];
+  assert.equal(1 + bank.engagement.length + bank.remediation.length, 11);
+  assert.match(bank.engagement.at(-1).choices[0], /three banking days/i);
+  assert.match(bank.remediation[2].choices[0], /offeror's express authority/i);
+});
+
+test("Module NC-11 reconciles current contract, closing and transaction-practice authorities", () => {
   const eleven = readModule("module-11");
   assert.match(eleven, /NO FINANCING OR APPRAISAL CONTINGENCIES/i);
   assert.match(eleven, /[Dd]ue [Dd]iligence/);
-  assert.match(eleven, /Settlement/);
-  assert.match(eleven, /Closing/);
+  assert.match(eleven, /Rule 58A \.0112\(a\) now contains 18 numbered items/i);
+  assert.match(eleven, /Session Law 2025-52/);
+  assert.match(eleven, /broker may.*use such a preprinted form/is);
+  assert.match(eleven, /liability for the broker's representations/i);
+  assert.match(eleven, /G\.S\. 45A-3 has its own statutory vocabulary/i);
+  assert.match(eleven, /G\.S\. 45A-4 then separately requires recordation/i);
+  assert.match(eleven, /B\.5a Required Activity evidence — possession away from Closing/i);
+  assert.match(eleven, /creditor must ensure the consumer receives the Closing Disclosure/i);
+  assert.match(eleven, /building or mobile home.*Special Flood Hazard Area/is);
+  assert.match(eleven, /Presenting an offer and delivering the executed instrument are separate duties/i);
+  assert.doesNotMatch(eleven, /Rule 58A \.0112\(b\).*1\. \*\*Brokerage compensation/is);
+  const activities = NORTH_CAROLINA_REQUIRED_ACTIVITIES.filter((activity) => activity.section === "XI");
+  assert.equal(activities.length, 3);
+  assert.deepEqual(activities.map((activity) => activity.status), ["outstanding", "delivered", "delivered"]);
+  assert.match(activities[2].evidencePath, /module-11\.md#b5a/i);
+  const bank = BANK["module-11"];
+  assert.equal(1 + bank.engagement.length + bank.remediation.length, 11);
+  assert.match(bank.remediation[0].choices[0], /current Rule \.0112 allows a preprinted broker-compensation provision/i);
+  assert.match(bank.engagement[2].choices[0], /source-specific definitions/i);
+});
+
+test("Module NC-12 corrects financing law and delivers the official form reviews", () => {
+  const twelve = readModule("module-12");
+  for (const required of [
+    /upset-bid window/i,
+    /Federal Housing Administration/i,
+    /U\.S\. Department of Veterans Affairs/i,
+    /Ginnie Mae is not a GSE/i,
+    /ECOA.*Regulation B/is,
+    /FCRA.*Regulation V/is,
+    /revised LE does not itself start a new three-business-day waiting period/i,
+    /taxes are due September 1/i,
+    /All four Section XII Required Activities are now delivered/i
+  ]) assert.match(twelve, required);
+  assert.doesNotMatch(twelve, /re-issued LE starts a 3-day wait before closing/i);
+  assert.doesNotMatch(twelve, /Federal Housing Authority \(FHA\)/i);
+  assert.doesNotMatch(twelve, /Department of Veterans Administration/i);
+  const activities = NORTH_CAROLINA_REQUIRED_ACTIVITIES.filter((activity) => activity.section === "XII");
+  assert.equal(activities.length, 4);
+  assert.deepEqual(activities.map((activity) => activity.status), ["delivered", "delivered", "delivered", "delivered"]);
+  const bank = BANK["module-12"];
+  assert.match(bank.engagement[3].choices[0], /revised LE does not itself restart/i);
+  assert.match(bank.remediation[3].choices[0], /holder\/VA approval/i);
 });
 
 test("the material fact rules that run against intuition are stated in Modules NC-10 and NC-15", () => {
@@ -372,9 +671,10 @@ test("the material fact rules that run against intuition are stated in Modules N
   /* Not material. */
   assert.match(fifteen, /haunted/i);
   assert.match(fifteen, /not a material fact in NC unless questioned by the buyer/i);
-  assert.match(fifteen, /Square footage is not a material fact in NC, but must be accurate if reported/i);
   /* Material. */
+  assert.match(fifteen, /heated living area is material/i);
   assert.match(fifteen, /Responsibility for street maintenance is a material fact/i);
+  assert.doesNotMatch(fifteen, /Square footage is not a material fact in NC, but must be accurate if reported/i);
 });
 
 test("the Connor Act is described as a pure race statute with its correct limit", () => {
@@ -397,6 +697,19 @@ test("the landlord-tenant rules a property manager must know are stated in Modul
   assert.match(fourteen, /Self-help eviction is prohibited in NC/i);
   assert.match(fourteen, /prohibited from unilaterally withholding the rent/i);
   assert.match(fourteen, /service animal is not a pet/i);
+  assert.match(fourteen, /week to week[\s\S]*two weeks' rent/i);
+  assert.match(fourteen, /month to month[\s\S]*one and one-half months' rent/i);
+  assert.match(fourteen, /interim accounting within 30 days[\s\S]*final accounting within 60 days/i);
+  assert.match(fourteen, /no later than 180 days after the new owner's interest is recorded/i);
+  assert.match(fourteen, /at least four hours' notice to quit/i);
+  assert.match(fourteen, /not sooner than 12 hours[\s\S]*not later than 48 hours/i);
+  assert.match(fourteen, /express and in writing from formation of the agency relationship/i);
+  assert.doesNotMatch(fourteen, /this project has not read|has not been obtained|supplying those figures is part of this course's submission gate/i);
+  const bank = BANK["module-14"];
+  assert.match(bank.applied.choices[0], /cap this deposit at \$3,000/i);
+  assert.match(bank.engagement[2].choices[0], /interim accounting by day 30 and a final accounting by day 60/i);
+  assert.match(bank.remediation[1].choices[0], /ends within 180 days/i);
+  assert.match(bank.remediation[2].choices[0], /30 days or less[\s\S]*four hours/i);
 });
 
 test("the two proration methods and the North Carolina settlement-date rule are stated", () => {
@@ -416,6 +729,32 @@ test("the GRM discrepancy is flagged openly rather than papered over, and the Co
   assert.match(sixteen, /There will be no calculations using a GRM/i);
 });
 
+test("Module NC-13 corrects appraisal boundaries and delivers the official completed-URAR review", () => {
+  const thirteen = readModule("module-13");
+  for (const required of [
+    /broker license, by itself, does not authorize appraisal practice/is,
+    /not as a complete North Carolina practice rule/i,
+    /USPAP.*body of ethical and.*performance standards, not an appraisal form/is,
+    /Foundation was established.*1987/is,
+    /listing is not a closed sale/i,
+    /official completed SF5 sample displays five settled-sale comparables/i,
+    /superior.*subtract/is,
+    /inferior.*add/is,
+    /Required Activities in this section.*all five are now delivered/is,
+    /November 2, 2026/i
+  ]) assert.match(thirteen, required);
+  assert.doesNotMatch(thirteen, /FIRREA created The Appraisal Foundation/i);
+  assert.doesNotMatch(thirteen, /USPAP appraisal form/i);
+  const activities = NORTH_CAROLINA_REQUIRED_ACTIVITIES.filter((activity) => activity.section === "XIII");
+  assert.equal(activities.length, 5);
+  assert.deepEqual(activities.map((activity) => activity.status), ["delivered", "delivered", "delivered", "delivered", "delivered"]);
+  assert.match(activities[3].evidencePath, /module-13\.md#d4a/i);
+  assert.match(activities[4].evidencePath, /module-13\.md#d4a/i);
+  const bank = BANK["module-13"];
+  assert.equal(1 + bank.engagement.length + bank.remediation.length, 11);
+  assert.match(bank.engagement[1].choices[0], /out of the closed-sale grid/i);
+});
+
 test("Module NC-16 records its zero hours as the Commission's instruction, not as an omission", () => {
   const sixteen = readModule("module-16");
   assert.match(sixteen, /rather than as a separate arithmetic course section/i);
@@ -428,11 +767,12 @@ test("Module NC-16 records its zero hours as the Commission's instruction, not a
 test("Phase 0 supersedes the original statute/rule gap while carrying live course-material dependencies", () => {
   assert.match(readings, /2026-09-04 Phase 0 supersession notice/i);
   assert.strictEqual(NORTH_CAROLINA_UNREAD_SOURCES, NORTH_CAROLINA_OPEN_SOURCE_DEPENDENCIES);
-  assert.ok(NORTH_CAROLINA_OPEN_SOURCE_DEPENDENCIES.length >= 10);
+  assert.ok(NORTH_CAROLINA_OPEN_SOURCE_DEPENDENCIES.length >= 7);
   const joined = NORTH_CAROLINA_OPEN_SOURCE_DEPENDENCIES.join(" | ");
-  for (const source of ["Form 2-T", "REC 4.22", "REC 4.25", "Residential Square Footage Guidelines", "URAR"]) {
+  for (const source of ["Form 2-T", "building-code tables", "USPAP"]) {
     assert.ok(joined.includes(source), `open dependency list does not name ${source}`);
   }
+  for (const delivered of ["REC 4.22", "REC 4.25", "Residential Square Footage Guidelines", "Questions & Answers brochure", "Subdivisions and Planned Communities"]) assert.ok(!joined.includes(delivered), `${delivered} remains incorrectly open`);
   assert.doesNotMatch(joined, /^NCGS Chapter 93A \(Real Estate License Law\)/);
   assert.doesNotMatch(joined, /^21 NCAC 58A, 58B and 58H in their own text/);
 });
@@ -442,16 +782,18 @@ test("planned module labels do not masquerade as validated self-paced timing", (
   assert.equal(NORTH_CAROLINA_TIMING_EVIDENCE.commissionReadingRateWordsPerMinute, 225);
   assert.equal(NORTH_CAROLINA_TIMING_EVIDENCE.instructionalMinutesPerHour, 50);
   assert.equal(NORTH_CAROLINA_TIMING_EVIDENCE.requiredInstructionalMinutes, 3600);
-  assert.ok(NORTH_CAROLINA_TIMING_EVIDENCE.curriculumBaselineMinutes < 300);
+  assert.equal(NORTH_CAROLINA_TIMING_EVIDENCE.curriculumBaselineWords, 69379);
+  assert.equal(NORTH_CAROLINA_TIMING_EVIDENCE.curriculumBaselineMinutes, 308.35);
+  assert.ok(NORTH_CAROLINA_TIMING_EVIDENCE.curriculumBaselineMinutes < NORTH_CAROLINA_TIMING_EVIDENCE.requiredInstructionalMinutes);
   assert.equal(getNorthCarolinaCourse().enrollmentStatus, "closed");
   assert.equal(getNorthCarolinaCourse().paymentStatus, "disabled");
 });
 
-test("every module names what it did not read in its own instructor source note", () => {
+test("every module carries an instructor source note and an explicit source boundary", () => {
   for (const module of NORTH_CAROLINA_MODULES) {
     const text = readModule(module.id);
     assert.match(text, /Instructor source note/i, module.id);
-    assert.match(text, /[Nn]ot (read|obtained)/, `${module.id} does not name any gap`);
+    assert.match(text, /([Nn]ot (read|obtained)|dependency|limitation)/, `${module.id} does not name its source boundary`);
   }
 });
 
@@ -463,9 +805,9 @@ test("no module reproduces or paraphrases Form 2-T, which was never obtained", (
   assert.doesNotMatch(allModules, /Form 2-T,? [Pp]aragraph \d/);
 });
 
-test("no item's authored answer or rationale states a figure from a source this project did not read", () => {
-  /* Every quantified phrase in an authored correct answer or rationale must be one of the figures the
-     Syllabus itself states. A new number appearing here means somebody sourced it from elsewhere. */
+test("every period in an authored answer or rationale is on the reviewed-source allowlist", () => {
+  /* This allowlist includes figures from the prescribed Syllabus and the current official sources
+     identified in the relevant module source notes. A new period requires a source-note update. */
   const permitted = [
     /\b3[- ](business[- ])?years?\b/i, /\bthree[- ]years?\b/i, /\b7[- ]day\b/i, /\bseven[- ]day\b/i,
     /\b20 years?\b/i, /\btwenty years?\b/i, /\b7 years?\b/i, /\bseven years?\b/i,
@@ -473,9 +815,11 @@ test("no item's authored answer or rationale states a figure from a source this 
     /\b3 banking days?\b/i, /\bthree banking days?\b/i, /\b3 business days?\b/i, /\bthree business days?\b/i,
     /\b120 days?\b/i, /\b5 (separated )?times?\b/i, /\bfive (separated )?times?\b/i,
     /\b5 years?\b/i, /\bfive years?\b/i, /\b30-?year\b/i, /\b33 ?- ?38 years?\b/i,
-    /\b3 ?- ?5 years?\b/i, /\b10-day\b/i, /\bten-day\b/i, /\b60 minutes?\b/i, /\b30-day\b/i, /\b360-day\b/i, /\b365-day\b/i,
-    /\b30 days?\b/i, /\b3[- ]day\b/i, /\bthree[- ]day\b/i, /\b3\.0 hours?\b/i,
-    /\b(eight|8) months?\b/i, /\b(sixteen|16) days?\b/i, /\b(one|1) month\b/i, /\b(nine|9) months?\b/i
+    /\b3 ?- ?5 years?\b/i, /\b10-day\b/i, /\b10 days?\b/i, /\bten-day\b/i, /\b60 minutes?\b/i, /\b30-day\b/i, /\b360-day\b/i, /\b365-day\b/i,
+    /\b30 days?\b/i, /\b3[- ]days?\b/i, /\bthree[- ]days?\b/i, /\b3\.0 hours?\b/i,
+    /\b(eight|8) months?\b/i, /\b(sixteen|16) days?\b/i, /\b(one|1) month\b/i, /\b(nine|9) months?\b/i,
+    /\b(six|6) months?\b/i, /\b18 months?\b/i, /\b180[- ](calendar[- ])?days?\b/i, /\b(two|2) years?\b/i, /\b(two|2) months?\b/i,
+    /\b(two|2) weeks?\b/i, /\b20 days?\b/i, /\b45 days?\b/i, /\b60 days?\b/i, /\b90 days?\b/i
   ];
   const quantified = /\b(\d+|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|twenty|thirty|sixty|ninety|hundred|hundred and twenty)[\s-]+(business\s+|banking\s+|calendar\s+)?(days?|years?|months?|weeks?)\b/gi;
   for (const id of NORTH_CAROLINA_MODULE_IDS) {
@@ -487,7 +831,7 @@ test("no item's authored answer or rationale states a figure from a source this 
         const normalised = match.replace(/-/g, " ");
         assert.ok(
           permitted.some((pattern) => pattern.test(match) || pattern.test(normalised)),
-          `${id} states a period the Syllabus does not: "${match}" in "${item.prompt}"`
+          `${id} states an unapproved period: "${match}" in "${item.prompt}"`
         );
       }
     }
@@ -518,12 +862,152 @@ test("every Required Activity names a real module and every outstanding one says
   }
 });
 
-test("the Required Activities that depend on unobtained forms are recorded as outstanding, not delivered", () => {
+test("the Form 2-T Required Activity remains outstanding because the proprietary artifact was not obtained", () => {
   const byText = (needle) => NORTH_CAROLINA_REQUIRED_ACTIVITIES.find((a) => a.activity.includes(needle));
-  for (const needle of ["Form 2-T", "RPOADS", "Square Footage Guidelines", "Uniform Residential Appraisal Report", "sample Loan Estimate", "HUD-1"]) {
+  const activity = byText("Form 2-T");
+  assert.ok(activity);
+  assert.equal(activity.status, "outstanding");
+});
+
+test("Module NC-15 disclosure and square-footage activities have retained all-page evidence", () => {
+  const byText = (needle) => NORTH_CAROLINA_REQUIRED_ACTIVITIES.find((a) => a.activity.includes(needle));
+  for (const needle of ["RPOADS", "Square Footage Guidelines", "mechanics' liens"]) {
+    const activity = byText(needle);
+    assert.ok(activity, needle);
+    assert.equal(activity.status, "delivered", needle);
+    assert.match(activity.evidencePath, /module-15\.md/);
+  }
+  const capture = new URL("../north-carolina/regulatory/captures/2026-09-07/module-15-materials/", import.meta.url);
+  const review = JSON.parse(readFileSync(new URL("page-reviews.json", capture), "utf8"));
+  assert.equal(review.artifacts.length, 4);
+  assert.equal(review.artifacts.reduce((sum, artifact) => sum + artifact.pages.length, 0), 35);
+  const filenames = {
+    "NC-NCREC-RPOADS-2026": "ncrec-rec422-rpoads.pdf",
+    "NC-NCREC-MOG": "ncrec-rec425-mog.pdf",
+    "NC-NCREC-RSFG-2026": "ncrec-residential-square-footage-guidelines.pdf",
+    "NC-NCREC-WWREA": "ncrec-wwrea-disclosure-form.pdf"
+  };
+  const stems = {
+    "NC-NCREC-RPOADS-2026": "ncrec-rec422-rpoads",
+    "NC-NCREC-MOG": "ncrec-rec425-mog",
+    "NC-NCREC-RSFG-2026": "ncrec-residential-square-footage-guidelines",
+    "NC-NCREC-WWREA": "ncrec-wwrea-disclosure-form"
+  };
+  const hash = (url) => createHash("sha256").update(readFileSync(url)).digest("hex");
+  for (const artifact of review.artifacts) {
+    assert.equal(artifact.pageCount, artifact.pages.length, artifact.id);
+    assert.equal(hash(new URL(filenames[artifact.id], capture)), artifact.pdfSha256, artifact.id);
+    for (const page of artifact.pages) {
+      const number = artifact.pageCount > 9 ? String(page.number).padStart(2, "0") : page.number;
+      assert.equal(hash(new URL(`renders/${stems[artifact.id]}-${number}.png`, capture)), page.sha256, `${artifact.id} page ${page.number}`);
+    }
+  }
+  const fifteen = readModule("module-15");
+  assert.match(fifteen, /total residential living area = 2,292 square feet/i);
+  assert.doesNotMatch(fifteen, /has not obtained REC 4\.22|has not obtained the NCREC Residential Square Footage Guidelines|NCGS 47E has not been obtained/i);
+});
+
+test("Modules NC-08 and NC-15 use retained complete NCREC Q&A brochures with current-law boundaries", () => {
+  const capture = new URL("../north-carolina/regulatory/captures/2026-09-07/module-08-15-brochures/", import.meta.url);
+  const review = JSON.parse(readFileSync(new URL("page-reviews.json", capture), "utf8"));
+  assert.equal(review.artifacts.length, 2);
+  assert.equal(review.artifacts.reduce((sum, artifact) => sum + artifact.pages.length, 0), 4);
+  const hash = (url) => createHash("sha256").update(readFileSync(url)).digest("hex");
+  for (const artifact of review.artifacts) {
+    assert.equal(artifact.pageCount, 2, artifact.id);
+    assert.equal(artifact.pages.length, artifact.pageCount, artifact.id);
+    assert.equal(hash(new URL(artifact.file, capture)), artifact.pdfSha256, artifact.id);
+    assert.equal(hash(new URL(artifact.textOnlyCompanion.file, capture)), artifact.textOnlyCompanion.pdfSha256, `${artifact.id} text-only companion`);
+    assert.equal(hash(new URL(artifact.textOnlyCompanion.extractedText, capture)), artifact.textOnlyCompanion.textSha256, `${artifact.id} companion text`);
+    const stem = artifact.file.replace(/\.pdf$/, "");
+    for (const page of artifact.pages) {
+      assert.equal(hash(new URL(`renders/${stem}-${page.number}.png`, capture)), page.sha256, `${artifact.id} page ${page.number}`);
+    }
+  }
+  const wwrea = NORTH_CAROLINA_REQUIRED_ACTIVITIES.find((activity) => activity.activity.includes("WWREA Disclosure"));
+  assert.equal(wwrea?.status, "delivered");
+  assert.match(wwrea?.evidencePath ?? "", /module-08\.md#b2b/i);
+  const plat = NORTH_CAROLINA_REQUIRED_ACTIVITIES.find((activity) => activity.activity.includes("approved subdivision plat map"));
+  assert.equal(plat?.status, "outstanding");
+  const fifteen = readModule("module-15");
+  assert.match(fifteen, /Official brochure review — context checked against current law/i);
+  assert.match(fifteen, /Chapter 47F controls.*G\.S\. 160D-807 controls.*G\.S\. 136-102\.6 controls/is);
+});
+
+test("Module NC-09 HUD guidance and withdrawal evidence is retained and reviewed on every page", () => {
+  const capture = new URL("../north-carolina/regulatory/captures/2026-09-07/module-09-hud/", import.meta.url);
+  const review = JSON.parse(readFileSync(new URL("page-reviews.json", capture), "utf8"));
+  assert.equal(review.artifacts.length, 2);
+  assert.equal(review.artifacts.reduce((sum, artifact) => sum + artifact.pages.length, 0), 11);
+  const hash = (url) => createHash("sha256").update(readFileSync(url)).digest("hex");
+  for (const artifact of review.artifacts) {
+    assert.equal(artifact.pageCount, artifact.pages.length, artifact.id);
+    assert.equal(hash(new URL(artifact.file, capture)), artifact.pdfSha256, artifact.id);
+    assert.equal(hash(new URL(artifact.extractedText, capture)), artifact.textSha256, `${artifact.id} text`);
+    const stem = artifact.file.replace(/\.pdf$/, "");
+    for (const page of artifact.pages) {
+      assert.equal(hash(new URL(`renders/${stem}-${page.number}.png`, capture)), page.sha256, `${artifact.id} page ${page.number}`);
+    }
+  }
+  const nine = readModule("module-09");
+  assert.match(nine, /HUD's April 24, 2026 letter says the Fair Housing Act does not itself prohibit/i);
+  assert.match(nine, /does not teach the withdrawn guidance as binding/i);
+});
+
+test("Module NC-13 appraisal activities are delivered only with retained all-page review evidence", () => {
+  const capture = new URL("../north-carolina/regulatory/captures/2026-09-07/module-13-appraisal/", import.meta.url);
+  const review = JSON.parse(readFileSync(new URL("page-reviews.json", capture), "utf8"));
+  assert.equal(review.sourceArchive.pageCount, 302);
+  assert.match(review.sourceArchive.derivative, /exact extraction of source PDF pages 271-290/i);
+  assert.equal(review.artifacts.length, 3);
+  assert.equal(review.artifacts.reduce((sum, artifact) => sum + artifact.pages.length, 0), 28);
+  const filenames = {
+    "GSE-FANNIE-UAD36-SF5-SAMPLE": "fannie-uad36-sf5-completed-sample.pdf",
+    "GSE-FANNIE-LEGACY-FORM-1004": "fannie-legacy-form-1004.pdf",
+    "GSE-FANNIE-UAD36-TIMELINE": "fannie-uad36-timeline.pdf"
+  };
+  const pageFilename = (id, number) => id === "GSE-FANNIE-UAD36-SF5-SAMPLE"
+    ? `fannie-uad36-sf5-${String(number).padStart(2, "0")}.png`
+    : id === "GSE-FANNIE-LEGACY-FORM-1004"
+      ? `fannie-legacy-form-1004-${number}.png`
+      : `fannie-uad36-timeline-${number}.png`;
+  const hash = (url) => createHash("sha256").update(readFileSync(url)).digest("hex");
+  assert.equal(hash(new URL(review.sourceArchive.file, capture)), review.sourceArchive.pdfSha256);
+  for (const artifact of review.artifacts) {
+    assert.equal(artifact.pageCount, artifact.pages.length, artifact.id);
+    assert.equal(hash(new URL(filenames[artifact.id], capture)), artifact.pdfSha256, artifact.id);
+    for (const page of artifact.pages) {
+      assert.equal(hash(new URL(`renders/${pageFilename(artifact.id, page.number)}`, capture)), page.sha256, `${artifact.id} page ${page.number}`);
+    }
+  }
+});
+
+test("Module NC-12 form activities are delivered only with retained all-page review evidence", () => {
+  const byText = (needle) => NORTH_CAROLINA_REQUIRED_ACTIVITIES.find((a) => a.activity.includes(needle));
+  for (const needle of ["sample Loan Estimate", "sample Borrower Closing Disclosure", "HUD-1"]) {
     const activity = byText(needle);
     assert.ok(activity, `no Required Activity mentions ${needle}`);
-    assert.equal(activity.status, "outstanding", `${needle} is recorded as delivered but the artefact was never obtained`);
+    assert.equal(activity.status, "delivered", needle);
+    assert.match(activity.evidencePath, /module-12\.md/);
+  }
+  const reviewUrl = new URL("../north-carolina/regulatory/captures/2026-09-07/module-12-forms/page-reviews.json", import.meta.url);
+  assert.ok(existsSync(reviewUrl));
+  const review = JSON.parse(readFileSync(reviewUrl, "utf8"));
+  assert.equal(review.artifacts.length, 4);
+  assert.equal(review.artifacts.reduce((sum, artifact) => sum + artifact.pages.length, 0), 18);
+  for (const artifact of review.artifacts) {
+    assert.equal(artifact.pageCount, artifact.pages.length, artifact.id);
+    assert.match(artifact.pdfSha256, /^[a-f0-9]{64}$/);
+    for (const page of artifact.pages) assert.match(page.sha256, /^[a-f0-9]{64}$/);
+  }
+});
+
+test("unobtained North Carolina property exhibits are not recorded as delivered", () => {
+  const byText = (needle) => NORTH_CAROLINA_REQUIRED_ACTIVITIES.find((a) => a.activity.includes(needle));
+  for (const needle of ["deed and a survey", "approved subdivision plat map", "residential property survey"]) {
+    const activity = byText(needle);
+    assert.ok(activity, `no Required Activity mentions ${needle}`);
+    assert.equal(activity.status, "outstanding", `${needle} is recorded as delivered without an acceptable exhibit`);
   }
 });
 

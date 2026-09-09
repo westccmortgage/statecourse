@@ -105,17 +105,17 @@ loss, less operating expenses, and **debt service excluded.**)*
 > for property that is located inside city/town limits, located only in the county, have odd purchase
 > prices, or include seller concessions or financing information.**"*
 >
-> **Delivered in Module NC-04**, where excise tax is taught.
+> **Delivered in Module NC-04**, where the current statutory rate, payer, base and four scenarios are
+> taught from G.S. 105-228.30.
 >
 > Four scenario types are prescribed and all four must appear: **inside city/town limits**; **county
 > only**; **odd purchase prices**; and **seller concessions or financing information.** The last two are
 > there to defeat pattern-matching — a student who has only ever seen round numbers, and who has never had
 > to decide whether a concession changes the taxable figure, has not learned the calculation.
 >
-> **The North Carolina excise tax rate is set by statute, and this project has not read that statute.**
-> **No excise tax rate is stated anywhere in this build.** Practice problems supply the rate as a given
-> inside the problem, and instructors substitute the current statutory rate before delivery. **Submission
-> gate.**
+> G.S. 105-228.30 was read from current official text on 2026-09-07. It requires the transferor to pay
+> the register of deeds before recording, at $1 for each $500 or fractional part of the consideration or
+> value conveyed. Module NC-04 supplies all four prescribed scenario types.
 
 ## C. Area and related calculations
 
@@ -130,10 +130,9 @@ loss, less operating expenses, and **debt service excluded.**)*
 decomposed rather than estimated. That is exactly the Level 3 demand: break the shape into shapes you can
 compute, compute each, and add.
 
-*(Module NC-15 records the Commission's rule that **North Carolina residential living area is calculated on
-exterior measurements**, and that the **NCREC Residential Square Footage Guidelines**, which this project
-has not obtained, govern above-grade, below-grade and heated living area criteria. **No measurement
-standard is stated from those Guidelines anywhere in this build.**)*
+*(Module NC-15 applies the complete retained **2026 NCREC Residential Square Footage Guidelines**,
+including current exterior/interior measurement, above/below-grade, heat, finish, access, ceiling and
+record-retention criteria.)*
 
 ## D. Finance calculations — all delivered in Module NC-12
 
@@ -162,10 +161,12 @@ payment reduces principal, and the new balance follows.
 
 **D.6 says "using given income and debt ratios."** The ratios are supplied in the problem. Module NC-12
 transcribes the Commission's own figures — **28/36 conventional, 31/43 FHA, 43 VA** — and the rule that
-**a buyer must qualify on both ratios**, which is where most errors occur.
+**a buyer must qualify on both ratios** inside that Syllabus model, which is where most calculation errors
+occur. Those figures do not announce live loan eligibility; a real creditor applies current program and
+underwriting rules.
 
 **D.8's "rule of thumb"** is the relationship Module NC-12 transcribes from the Syllabus: **1 point = 1/8
-percent yield for the investor.**
+percent yield for the investor.** It is an examination shortcut, not a guaranteed market-price result.
 
 ## E. Settlement and closing costs
 
@@ -285,8 +286,7 @@ items on the other. *(Also delivered in Module NC-04, where property taxes are t
 
 1. **Calculate various sales commissions and property management fees** → **NC-09**, **NC-14.** **Delivered.**
 2. **Calculate excise tax for multiple properties**, across the four prescribed scenario types →
-   **NC-04.** **Delivered as a structure; the statutory rate is supplied by the instructor. Submission
-   gate on the rate.**
+   **NC-04. Delivered from current G.S. 105-228.30.**
 3. **Explain and demonstrate proration math** for HOA dues, rent and taxes, across early/late closing dates
    and paid/unpaid tax bills, with multiple practice problems → **NC-12.** **Delivered.**
 4. **Perform multiple annual property tax calculations**, with and without city taxes → **NC-04.**
@@ -313,9 +313,9 @@ The 80 percent engagement threshold and the 100 percent applied threshold are **
 the **75 percent** end-of-course standard is the Commission's, under Commission Rule 58H .0207 as the
 Syllabus quotes it.
 
-**Every rate, factor, CAP rate, tax rate, commission rate, excise tax rate and amortisation figure used in
-any item is supplied inside the item as a given.** No item requires a student to know a North Carolina
-statutory rate, because **this project has not read the statutes that set them.** **No item requires a
+**Every variable local property-tax rate, factor, CAP rate, commission rate and amortisation figure used
+in an item is supplied inside the item as a given.** North Carolina's statutory excise-tax rate is taught
+from current G.S. 105-228.30. **No item requires a
 GRM calculation**, because the Commission states there will be none. **No item asks a student to complete
 a settlement statement**, because the Commission states the licence examination will not.
 
@@ -328,12 +328,13 @@ May 2026, read on 2026-08-20, together with the Syllabus's front-matter instruct
 Mathematics Instruction,"** transcribed in full at the head of this module. Every Required Activity and
 every statement of what is or is not required is **transcribed from the Syllabus.**
 
-**Not read in their own text, and therefore not the source of any figure in this build:** the **North
-Carolina excise tax statute**; the **North Carolina property tax statutes**, including any assessment
-ratio, listing date or revaluation cycle; the **NCREC Residential Square Footage Guidelines**; any
-**amortisation factor table**; **NCGS Chapter 93A**; and **21 NCAC 58**.
+G.S. 105-228.30 and the property-tax statutes used in Module NC-04 were read from current official text
+on 2026-09-07. **Not read in its own text, and therefore not the source of any figure in this module:**
+the **NCREC Residential Square Footage Guidelines** and any **amortisation factor table**. Chapter 93A
+and the controlling Chapter 58 rules used in Modules NC-01 and NC-02 were read; later topic-level
+reconciliation remains incomplete.
 
-**This module states no rate of any kind.** Its function is to record, in one place, every calculation the
+This module's function is to record, in one place, every calculation the
 Commission requires, the module in which each is delivered, and the constraints the Commission places on
 how each is to be taught and examined — so that a reviewer can verify coverage of Section XVI without
 searching fifteen modules, and so that **the zero standalone hours assigned to this section are visibly

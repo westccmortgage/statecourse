@@ -3,11 +3,11 @@
 **Series:** StateCourse *Document Overview*. Course: `tx-law-of-agency-30-v1` (Texas Law of Agency, 30 hours).
 **Asset stem:** `tx-representation-or-showing-only-2026`
 **Status — four layers, and no layer borrows another's status:**
-editorial and legal package **READY** at `LOA-VIDEO-PLAN-FREEZE-2026-08-30-v2` ·
-rendered MP4 / VTT / poster **PENDING** · `screenMedia` integration support **PENDING** ·
+editorial and legal package **READY** at `LOA-VIDEO-PLAN-FREEZE-2026-09-07-v3` ·
+rendered MP4 / VTT / poster **PENDING** · `screenMedia` integration support **READY** ·
 course placement activation **NOT ACTIVE**. See §12. This package is not "production-ready" and that
 phrase is not used of it.
-**Plan:** `texas/tx-law-of-agency-30-v1/video-instruction-plan.md` **v2**, which supersedes plan v1
+**Plan:** `texas/tx-law-of-agency-30-v1/video-instruction-plan.md` **v3**, which supersedes plan v1
 (sha256 `7ca723…`). **Freeze:** `texas/tx-law-of-agency-30-v1/video-plan-freeze.json`, written by
 `scripts/freeze-loa-video-plan.mjs`; validated by `scripts/validate-loa-video-packages.mjs`.
 `video-production/production-readiness-addendum.md` is **review history only** and is not an
@@ -694,9 +694,9 @@ Then stop talking.
 
 | | |
 |---|---|
-| Path | `public/statecourse/media/tx-representation-or-showing-only-2026-poster.webp` |
-| Dimensions | 1280 × 720 |
-| Format | WebP, quality 80, target ≤ 60 KB |
+| Delivery | Cloudflare Stream player thumbnail; no public poster file |
+| Dimensions | 16:9, derived from the future uploaded 1920 × 1080 render |
+| Format | Adaptive player thumbnail |
 | Frame | Extracted from the **delivered final render**, from the middle of Scene 2's static hold on `tx-posture-fork.png` |
 | Content | The fork panel: one prospective buyer, two lawful postures. No overlay, no burned-in play button, no added text |
 | Alt text | `Still frame from the video: a diagram showing the two lawful postures for working with a Texas residential buyer — represented under a written agreement, or shown property without representation.` |
@@ -726,9 +726,9 @@ This video's ≈ 3 minutes 03 seconds are additional and unbudgeted; adding it c
 no figure was reduced to make room for it.
 
 **Registry entry — WRITTEN, AND COMMENTED *NOT ACTIVE*.** Recorded so the wiring is unambiguous
-when it happens, not so that it can happen now. Adding it before the MP4, the poster and the shipping
-`.vtt` all exist and have passed factual, visual and accessibility QC would put a dead player, a
-missing poster and a 404 caption track on a student-facing screen — worse than no video at all.
+when it happens, not so that it can happen now. Adding it before the final render, private Stream
+upload, English WebVTT track, protected transcript and QC approvals exist would put a dead player on
+a student-facing screen — worse than no video at all.
 
 **Where it goes, exactly.** `config/texas/law-of-agency-module-5-blocks.mjs` now exists, and screen
 `t05u3-s1` is in it, with the content range this production file predicted. But that file's own header
@@ -738,32 +738,36 @@ below is **not** pasted into the generated file. It is attached the way Californ
 Loan Estimate and Promissory Note videos — as a hand-authored `screenMedia` spec keyed by screen id,
 which the generator merges onto the screen it names and which refuses to generate if the screen id
 does not exist (`scripts/lib/generate-ca-block-maps.mjs`, the `spec.screenMedia` block). The Texas
-generator core, `scripts/lib/generate-tx-block-maps.mjs`, does **not** carry that hook yet, so there
-is today **no supported route** to attach a video to a Texas screen. **Do not hand-edit a generated
-course file** — its own header forbids it and the next regeneration erases the edit. Adding the hook
-is a prerequisite of activation. It is recorded as open item 3 of the video instruction plan §10, and
-the tests it must ship with are listed in the header of `scripts/lib/generate-tx-block-maps.mjs`,
-where it will be built. Nothing here edits any of those files.
+generator core, `scripts/lib/generate-tx-block-maps.mjs`, now carries that hook and its eight-test
+refusal contract. It remains dormant because the final render, private Stream asset, measured VTT and
+protected transcript do not exist. **Do not hand-edit a generated course file** — its own header forbids it and
+the next regeneration erases the edit. Add the active media entry only after every asset and factual,
+visual, logo-safety and accessibility review passes.
 
 ```js
 // NOT ACTIVE — DO NOT ADD. This is a record of the intended wiring, not the wiring.
-// Add ONLY when all four of these exist and have passed factual, visual and accessibility QC:
-//   public/statecourse/media/tx-representation-or-showing-only-2026.mp4
-//   public/statecourse/media/tx-representation-or-showing-only-2026-poster.webp
-//   public/statecourse/media/tx-representation-or-showing-only-2026.vtt        (timings rebuilt from the render)
-//   the clean transcript of §9, published as text on screen t05u3-s1
+// Add ONLY when the final render, private Stream upload, English WebVTT track and protected
+// transcript exist and have passed factual, visual, logo-safety and accessibility QC.
 // Route: a hand-authored screenMedia spec consumed by
 // scripts/generate-tx-law-of-agency-block-maps.mjs — never a hand edit to the generated
 // config/texas/law-of-agency-module-5-blocks.mjs.
 //
 // screenMedia: {
 //   "t05u3-s1": {
+//     required: false,
+//     nonBlocking: true,
+//     noAssessmentContent: true,
 //     videos: [{
-//       src: "/media/tx-representation-or-showing-only-2026.mp4",
-//       poster: "/media/tx-representation-or-showing-only-2026-poster.webp",
-//       captions: "/media/tx-representation-or-showing-only-2026.vtt",
+//       provider: "cloudflare-stream",
+//       assetKey: "tx-representation-or-showing-only-2026",
+//       captionLanguage: "en",
 //       label: "Optional video: Representation or showing only — the 2026 decision",
 //       duration: "3:03",   // PROVISIONAL — replace with the MEASURED length of the delivered render
+//       autoplay: false, controls: true, keyboardAccessible: true, captionsSelectable: true,
+//       signedPlaybackRequired: true, streamReady: true, captionsUploaded: true,
+//       protectedTranscriptReady: true,
+//       factualQcApproved: true, visualQcApproved: true,
+//       logoSafeReviewed: true, accessibilityQcApproved: true,
 //     }],
 //   },
 // }
@@ -771,11 +775,11 @@ where it will be built. Nothing here edits any of those files.
 
 `duration` above is the provisional estimate from §6, computed at 150 wpm from the final script. It
 is not a measurement and must be replaced by one before the entry is ever added. The block player
-(`public/statecourse/student/course/blocks/block-player.js`) reads `src`, `poster`, `captions`,
-`label` and `duration`, tags every screen video "Optional" of its own accord, and builds the
-transcript disclosure from the caption track — so no `optional: true` flag is needed or read, and a
-missing `.vtt` would silently produce a video with no transcript. That is the second reason this
-entry stays commented out.
+(`public/statecourse/student/course/blocks/block-player.js`) reads `provider`, `assetKey`, `label`
+and `duration`, obtains a short-lived signed player URL from the server, tags every screen video
+"Optional" of its own accord, and loads the protected plain-text transcript. The generator refuses
+a missing delivery-readiness or approval flag,
+which is why this entry stays commented out until the render passes QC.
 
 ---
 
@@ -785,7 +789,7 @@ entry stays commented out.
 |---|---|
 | Selection decision | **Complete** — selected, see the plan's §2 |
 | Learning objective | **Complete** |
-| Placement | **Fixed** — Module 05, T05U3, instruction screen `t05u3-s1` (screen id reserved; the LOA block map is not yet authored) |
+| Placement | **Fixed** — Module 05, T05U3, instruction screen `t05u3-s1`, confirmed in the generated LOA block map |
 | Form-string verification | **Complete** — see §14 |
 | Sources | **Held and verified** |
 | Script and narration | **Complete** |

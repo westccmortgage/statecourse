@@ -24,30 +24,22 @@
  * units that bank doesn't yet cover — see scripts/build-tx-retrieval-bank.mjs.
  *
  * ─────────────────────────────────────────────────────────────────────────────────────────────
- * NOT BUILT: THE `screenMedia` HOOK. This is where it goes, and this is what it must ship with.
+ * `screenMedia` HOOK — BUILT, VALIDATED, AND DORMANT UNTIL COMPLETE ASSETS EXIST.
  * ─────────────────────────────────────────────────────────────────────────────────────────────
  *
- * THE GAP. California attaches its videos through scripts/lib/generate-ca-block-maps.mjs's
- * `spec.screenMedia` mechanism: a hand-authored media spec, keyed by generated screen id, merged
- * onto the screen it names, which REFUSES TO GENERATE if the id is unknown. This generator has no
- * equivalent. So there is today no supported route to attach a video to a Texas screen — and the
- * only unsupported one, hand-editing a generated block map, is forbidden by those files' own
- * headers and is erased by the next regeneration. DO NOT HAND-EDIT A GENERATED COURSE FILE.
+ * A course may supply `screenMedia`, keyed by an emitted instruction-screen id. The generator
+ * refuses unknown or retrieval-screen ids and refuses required/autoplay/assessment media. Legacy
+ * native delivery must carry a local MP4, poster, shipping VTT and transcript. Production Stream
+ * delivery instead requires a server-owned asset key, confirmed private signed playback, uploaded
+ * captions and a protected transcript. Both modes require factual, visual, logo-safety and
+ * accessibility review.
  *
- * WHAT IS WAITING ON IT. The three Texas Law of Agency videos, whose editorial and legal package is
- * complete and frozen at LOA-VIDEO-PLAN-FREEZE-2026-08-30-v2 but which are NOT RENDERED and NOT
- * ACTIVE. Their intended placements are t02u5-s1, t05u3-s1 and t06u3-s1. Nothing is wired, and
- * nothing may be wired before this hook exists AND the MP4, poster, shipping VTT and transcript all
- * exist and have passed factual, visual and accessibility QC. See
- * texas/tx-law-of-agency-30-v1/video-instruction-plan.md §10.3.
+ * Texas Law of Agency activates its reviewed IABS 1-2 video at t02u5-s1. The remaining editorial
+ * packages target t05u3-s1 and t06u3-s1 and stay inactive until each final render, poster,
+ * measured-duration shipping VTT and transcript has passed the same reviews.
+ * DO NOT HAND-EDIT A GENERATED COURSE FILE.
  *
- * THE SHAPE. Follow California: `spec.screenMedia` is an object keyed by generated screen id, whose
- * values carry `videos` and/or `documents`; unknown ids throw at generation time rather than being
- * silently dropped. It goes through the generator schema, not into a generated file.
- *
- * THE TESTS IT MUST SHIP WITH. Each of these is a test, not a note. A hook that lands without them
- * can attach a video to the wrong screen, to a blocking screen, or to a screen the student is being
- * assessed on, and nothing will say so.
+ * THE TESTS THAT SHIP WITH THE HOOK. Each of these is a test, not a note.
  *
  *   1.  EXACT SCREEN PLACEMENT. A media entry attaches to the screen id it names and to no other.
  *       An entry naming a screen the generator did not emit REFUSES TO GENERATE — it must not be
@@ -57,8 +49,8 @@
  *   3.  NON-BLOCKING PROGRESSION. The screen's completion, and the block's, do not depend on the
  *       media. A student who never opens it progresses identically: no progress gate, no completion
  *       requirement, no assessment dependency, no autoplay.
- *   4.  MP4, VTT, TRANSCRIPT AND POSTER PRESENCE. All four assets resolve on disk at the paths the
- *       entry names. A missing one is a generation failure, not a broken player at runtime.
+ *   4.  COMPLETE DELIVERY PACKAGE. Native media resolves all four local assets. Stream media names
+ *       a private uploaded asset, its uploaded caption language and protected transcript.
  *   5.  ACCESSIBLE PLAYER CONTROLS AND KEYBOARD ACCESS. The emitted entry carries the controls the
  *       player needs and is reachable and operable by keyboard alone, in the screen's tab order.
  *   6.  CAPTION AVAILABILITY. A caption track is present, is served, and is selectable — and it is
@@ -71,15 +63,128 @@
  *       REFUSES TO GENERATE. Retrieval happens on its own screen with the video, the document and
  *       the visible answers no longer displayed; that separation must be enforced here, not
  *       remembered by whoever authors the spec.
- *   10. NO ACTIVATION WHEN ANY REQUIRED MEDIA ASSET IS ABSENT. If MP4, poster, shipping VTT or
- *       transcript is missing, the screen generates with NO media at all rather than with a partial
- *       player. There is no such thing as a half-attached video: a dead player, a nonfunctional
- *       poster, a decorative badge or an unavailable transcript is worse than no video.
+ *   10. NO PARTIAL ACTIVATION. A native asset set or private Stream delivery must be complete before
+ *       generation. A dead player, inaccessible captions or unavailable transcript is worse than
+ *       no video.
  */
 
 import fs from "node:fs";
+import path from "node:path";
 
 const q = (value) => JSON.stringify(String(value));
+
+const MEDIA_BASE = "/media/";
+
+function publicAssetPath(root, source, label) {
+  if (typeof source !== "string" || !source.startsWith(MEDIA_BASE)) {
+    throw new Error(`${label} must use a ${MEDIA_BASE} path`);
+  }
+  const publicRoot = path.resolve(root, "public/statecourse");
+  const resolved = path.resolve(publicRoot, source.slice(1));
+  if (!resolved.startsWith(`${publicRoot}${path.sep}`)) throw new Error(`${label} escapes public/statecourse`);
+  return resolved;
+}
+
+function requireAsset(root, source, label, extensionPattern) {
+  if (!extensionPattern.test(source || "")) throw new Error(`${label} has the wrong file type: ${source || "missing"}`);
+  const resolved = publicAssetPath(root, source, label);
+  if (!fs.existsSync(resolved) || !fs.statSync(resolved).isFile() || fs.statSync(resolved).size === 0) {
+    throw new Error(`${label} is missing or empty: ${source}`);
+  }
+}
+
+/**
+ * Validate and normalize the hand-authored media map before a generated block-map file is written.
+ * Exported so tests and future Texas course wrappers enforce one contract rather than reimplementing
+ * it beside every course.
+ */
+export function validateScreenMedia({ root, moduleNumber, blocks, screenMedia = {} }) {
+  const emittedScreens = new Map();
+  for (const block of blocks) {
+    block.screens.forEach((screen, index) => emittedScreens.set(`${block.id}-s${index + 1}`, screen));
+  }
+
+  const normalized = {};
+  for (const [screenId, entry] of Object.entries(screenMedia)) {
+    const screen = emittedScreens.get(screenId);
+    if (!screen) throw new Error(`module ${moduleNumber}: screenMedia names unknown screen ${screenId}`);
+    if (screen.type === "retrieval") throw new Error(`module ${moduleNumber}: screenMedia cannot attach to retrieval screen ${screenId}`);
+    if (screen.type !== "instruction") throw new Error(`module ${moduleNumber}: screenMedia may attach only to an instruction screen (${screenId} is ${screen.type})`);
+    if (entry?.required !== false || entry?.nonBlocking !== true) {
+      throw new Error(`module ${moduleNumber}: screenMedia ${screenId} must declare required:false and nonBlocking:true`);
+    }
+    if (entry?.noAssessmentContent !== true) {
+      throw new Error(`module ${moduleNumber}: screenMedia ${screenId} must declare noAssessmentContent:true`);
+    }
+    if (!Array.isArray(entry.videos) || entry.videos.length === 0) {
+      throw new Error(`module ${moduleNumber}: screenMedia ${screenId} must carry at least one video`);
+    }
+
+    const videos = entry.videos.map((video, index) => {
+      const prefix = `module ${moduleNumber}: screenMedia ${screenId} video ${index + 1}`;
+      if (!video?.label || !video?.duration) throw new Error(`${prefix} needs a label and measured duration`);
+      if (!/^\d+:[0-5]\d$/.test(video.duration)) throw new Error(`${prefix} duration must be measured m:ss`);
+      if (video.autoplay !== false) throw new Error(`${prefix} must declare autoplay:false`);
+      if (video.controls !== true || video.keyboardAccessible !== true || video.captionsSelectable !== true) {
+        throw new Error(`${prefix} must declare controls, keyboard access and selectable captions`);
+      }
+      if (video.factualQcApproved !== true || video.visualQcApproved !== true || video.logoSafeReviewed !== true || video.accessibilityQcApproved !== true) {
+        throw new Error(`${prefix} is missing factual, visual, logo-safety or accessibility approval`);
+      }
+      if (video.provider === "cloudflare-stream") {
+        if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(video.assetKey || "")) {
+          throw new Error(`${prefix} needs a valid server-owned Stream asset key`);
+        }
+        if (video.signedPlaybackRequired !== true || video.streamReady !== true) {
+          throw new Error(`${prefix} must confirm private signed Stream playback is ready`);
+        }
+        if (video.captionsUploaded !== true || !/^[a-z]{2}(?:-[A-Z]{2})?$/.test(video.captionLanguage || "")) {
+          throw new Error(`${prefix} must confirm an uploaded caption language`);
+        }
+        if (video.protectedTranscriptReady !== true) {
+          throw new Error(`${prefix} must confirm a protected transcript`);
+        }
+        for (const publicField of ["src", "poster", "captions", "transcript"]) {
+          if (video[publicField]) throw new Error(`${prefix} cannot publish ${publicField} in private Stream mode`);
+        }
+        return Object.freeze({
+          provider: "cloudflare-stream",
+          assetKey: video.assetKey,
+          captionLanguage: video.captionLanguage,
+          label: video.label,
+          duration: video.duration,
+          required: false,
+          nonBlocking: true,
+          autoplay: false,
+          controls: true,
+          keyboardAccessible: true,
+          captionsSelectable: true,
+        });
+      }
+      if (/provisional/i.test(video.captions || "")) throw new Error(`${prefix} cannot use provisional captions`);
+      requireAsset(root, video.src, `${prefix} MP4`, /\.mp4$/i);
+      requireAsset(root, video.poster, `${prefix} poster`, /\.(?:webp|png|jpe?g)$/i);
+      requireAsset(root, video.captions, `${prefix} captions`, /\.vtt$/i);
+      requireAsset(root, video.transcript, `${prefix} transcript`, /\.txt$/i);
+      return Object.freeze({
+        src: video.src,
+        poster: video.poster,
+        captions: video.captions,
+        transcript: video.transcript,
+        label: video.label,
+        duration: video.duration,
+        required: false,
+        nonBlocking: true,
+        autoplay: false,
+        controls: true,
+        keyboardAccessible: true,
+        captionsSelectable: true,
+      });
+    });
+    normalized[screenId] = Object.freeze({ videos: Object.freeze(videos) });
+  }
+  return Object.freeze(normalized);
+}
 
 /** unitCodesInOrder: e.g. ["T01U1","T01U2","T01U3","T01U4"] for module 01, in file order. */
 export function parseModule(markdown, unitCodesInOrder) {
@@ -157,12 +262,23 @@ export function generateModuleBlocks(course, moduleNumber) {
     if (!objective) throw new Error(`module ${nn}: no learning objective for unit ${block.code}`);
   }
 
+  /* Validate every media dependency before rendering any output. A failed asset or placement check
+     leaves the existing generated map untouched rather than producing a half-attached player. */
+  const screenMedia = validateScreenMedia({
+    root: course.root,
+    moduleNumber,
+    blocks,
+    screenMedia: course.screenMedia || {},
+  });
+
   const renderScreen = (blockId, screen, index) => {
     const id = `${blockId}-s${index + 1}`;
     if (screen.type === "retrieval") {
       return `        { id: ${q(id)}, sequence: ${index + 1}, type: "retrieval", title: ${q(screen.title)}, questionId: ${q(screen.questionId)} },`;
     }
-    return `        { id: ${q(id)}, sequence: ${index + 1}, type: ${q(screen.type)}, title: ${q(screen.title)}, content: RANGE(${q(screen.from)}, ${q(screen.to)}) },`;
+    const mediaEntry = screenMedia[id];
+    const media = mediaEntry ? `, videos: ${JSON.stringify(mediaEntry.videos)}` : "";
+    return `        { id: ${q(id)}, sequence: ${index + 1}, type: ${q(screen.type)}, title: ${q(screen.title)}, content: RANGE(${q(screen.from)}, ${q(screen.to)})${media} },`;
   };
 
   const rendered = blocks.map((block, blockIndex) => `    {

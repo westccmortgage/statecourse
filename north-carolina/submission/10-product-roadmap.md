@@ -1,5 +1,13 @@
 # North Carolina product roadmap
 
+## Portfolio sequencing decision
+
+As directed on 2026-09-07, StateCourse will add no further states after North Carolina. The next
+portfolio workstream is video production and integration for every state already built, following
+the established California lesson-video pattern. North Carolina's videos must be tracked by exact
+duration and content hash so they can contribute to the Rule 58H .0401 timing ledger only after the
+student-visible media actually exists and is reviewed.
+
 ## Market signal
 
 NCREC's August 19, 2026 detailed count supports a large addressable profession: 77,507 active full

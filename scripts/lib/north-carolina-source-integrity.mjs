@@ -6,9 +6,31 @@ import { resolve } from 'node:path';
 export const sha256 = value => createHash('sha256').update(value).digest('hex');
 const normalize = value => value.toLowerCase().replace(/\s+/g, ' ').trim();
 export function identityMarkers(source) {
+  if (source.id === 'NC-RULE-58B-.0400-.0600' && /ncrec\.gov\/Pdfs\/Rules\//i.test(source.url)) {
+    return ['B .0401', 'B .0601'];
+  }
   const match = source.id.match(/^NC-RULE-(58[A-Z])-([.\d-]+)$/);
-  if (match) return match[2].split('-').map(number => `21 NCAC ${match[1]} ${number}`);
-  return ({ 'NC-SYLLABUS-PRE-2026': ['Broker Prelicensing Course', 'SYLLABUS', 'May 2026'], 'NC-GUIDE-RELINC-2026': ['Real Estate Licensing in North Carolina', 'April 2026'], 'NC-FORM-SOS-L09': ['APPLICATION FOR CERTIFICATE OF AUTHORITY', 'LIMITED LIABILITY COMPANY', 'L-09', 'Revised July 2017'] })[source.id] || [];
+  if (match) {
+    const publisherPrefix = /ncrec\.gov\/Pdfs\/Rules\//i.test(source.url)
+      ? match[1].slice(-1)
+      : `21 NCAC ${match[1]}`;
+    return match[2].split('-').map(number => `${publisherPrefix} ${number}`);
+  }
+  return ({
+    'NC-SYLLABUS-PRE-2026': ['Broker Prelicensing Course', 'SYLLABUS', 'May 2026'],
+    'NC-GUIDE-RELINC-2026': ['Real Estate Licensing in North Carolina', 'April 2026'],
+    'NC-FORM-SOS-L09': ['APPLICATION FOR CERTIFICATE OF AUTHORITY', 'LIMITED LIABILITY COMPANY', 'L-09', 'Revised July 2017'],
+    'NC-LLCR-CURRENT': ['North Carolina Real Estate License Law', 'Commission Rules', 'Comments'],
+    'NC-NCREC-RPOADS-2026': ['Residential Property And Owners', 'Association Disclosure Statement', 'REV 7/26'],
+    'NC-NCREC-MOG': ['Mineral and Oil and Gas Rights Disclosure Statement', 'REC 4.25', '1/1/15'],
+    'NC-NCREC-RSFG-2026': ['MEASURE.', 'CALCULATE.', 'REC 3.40', '7/2026'],
+    'NC-NCREC-WWREA': ['Working With Real Estate Agents Disclosure', 'This form is not a contract'],
+    'NC-NCREC-WWREA-QA-2022': ['Questions and Answers on:', 'WORKING WITH', 'REAL ESTATE', 'AGENTS', 'REC 3.45', '1/3/22'],
+    'NC-NCREC-SUBDIVISIONS-QA-2019': ['Questions and Answers on:', 'RESIDENTIAL', 'SUBDIVISIONS', 'PLANNED COMMUNITIES', 'REC 3.49', '11/1/19'],
+    'FED-EPA-HUD-LEAD-FACTSHEET': ['Lead-Based Paint Disclosure Rule Fact Sheet', 'EPA-747-F-25-001', 'January 2025'],
+    'FED-HUD-NEIGHBORHOOD-INFO-2026': ['U.S. DEPARTMENT OF HOUSING AND URBAN DEVELOPMENT', 'April 24, 2026', 'Sharing Crime And School Data', 'Craig W. Trainor'],
+    'FED-HUD-WITHDRAWAL-2025': ['Notice of the Withdrawal of FHEO Guidance Documents', 'September 17, 2025', 'GUIDANCE WITHDRAWN', 'John Gibbs']
+  })[source.id] || [];
 }
 export function inspectPdfEvidence(source, entry, { bytes, pageText, today = '2026-09-06', renderBytes = {} } = {}) {
   const errors = [];
@@ -30,6 +52,7 @@ export function inspectPdfEvidence(source, entry, { bytes, pageText, today = '20
   const byteVerified = errors.length === 0;
   const review = entry.pdfReview;
   if (review?.status !== 'REVIEWED' || review.reviewedPdfSha256 !== entry.sha256 || !review.title || !review.revisionObservation || !review.pages?.length) errors.push('PDF title/revision/render review missing or stale');
+  if (review?.pages?.length !== entry.pdfPages || new Set((review?.pages || []).map(page => page.number)).size !== entry.pdfPages) errors.push('PDF all-page review incomplete');
   for (const page of review?.pages || []) {
     if (!Number.isInteger(page.number) || page.number < 1 || page.number > entry.pdfPages || !page.renderPath || !page.sha256 || !renderBytes[page.renderPath] || sha256(renderBytes[page.renderPath]) !== page.sha256) errors.push('Missing/stale reviewed page render');
   }

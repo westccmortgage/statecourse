@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="820" viewBox="0 0 1200 820" role="img" aria-labelledby="title desc">
+  <title id="title">Fictional deed and survey training exhibit</title>
+  <desc id="desc">Fictional deed calls on the left correspond to a metes-and-bounds parcel plot on the right.</desc>
+  <rect width="1200" height="820" fill="#f6f1e8"/>
+  <text x="60" y="68" font-family="Arial" font-size="38" font-weight="700" fill="#0b1739">Metes and bounds: words become a plotted boundary</text>
+  <rect x="55" y="105" width="510" height="630" rx="12" fill="#fff" stroke="#0b1739" stroke-width="4"/>
+  <text x="310" y="155" text-anchor="middle" font-family="Georgia" font-size="28" font-weight="700" fill="#0b1739">FICTIONAL TRAINING DEED EXCERPT</text>
+  <text x="90" y="205" font-family="Georgia" font-size="20" fill="#0b1739">Beginning at the marked iron pin at the</text>
+  <text x="90" y="238" font-family="Georgia" font-size="20" fill="#0b1739">southwest corner (POB); thence:</text>
+  <g font-family="Georgia" font-size="20" fill="#0b1739"><text x="105" y="292">1. N 20° E, 240 feet to an oak;</text><text x="105" y="332">2. S 75° E, 310 feet to a stone;</text><text x="105" y="372">3. S 10° W, 260 feet to an iron pin;</text><text x="105" y="412">4. N 80° W, 350 feet to the POB.</text></g>
+  <line x1="90" y1="455" x2="525" y2="455" stroke="#c5cad4" stroke-width="2"/>
+  <text x="90" y="500" font-family="Arial" font-size="18" font-weight="700" fill="#8a2f2f">NOT A RECORDED INSTRUMENT</text>
+  <text x="90" y="532" font-family="Arial" font-size="17" fill="#42506a">Calls are simplified for instruction and are not</text>
+  <text x="90" y="560" font-family="Arial" font-size="17" fill="#42506a">a legal description of any real parcel.</text>
+  <text x="90" y="615" font-family="Arial" font-size="18" fill="#0b1739">A deed states the calls. A licensed surveyor</text>
+  <text x="90" y="646" font-family="Arial" font-size="18" fill="#0b1739">locates and plots the evidence on the ground.</text>
+  <rect x="625" y="105" width="520" height="630" rx="12" fill="#fff" stroke="#0b1739" stroke-width="4"/>
+  <text x="885" y="155" text-anchor="middle" font-family="Arial" font-size="28" font-weight="700" fill="#0b1739">TEACHING PLOT — NOT A SURVEY</text>
+  <path d="M720 610 L770 270 L1040 330 L1015 610 Z" fill="#e7eef8" stroke="#4d2a86" stroke-width="7"/>
+  <g fill="#c39a3b" stroke="#0b1739" stroke-width="3"><circle cx="720" cy="610" r="12"/><circle cx="770" cy="270" r="12"/><circle cx="1040" cy="330" r="12"/><circle cx="1015" cy="610" r="12"/></g>
+  <g font-family="Arial" font-size="18" fill="#0b1739"><text x="675" y="646" font-weight="700">POB</text><text x="650" y="432" transform="rotate(-81 650 432)">N 20° E · 240 ft</text><text x="850" y="272" transform="rotate(13 850 272)">S 75° E · 310 ft</text><text x="1060" y="475" transform="rotate(95 1060 475)">S 10° W · 260 ft</text><text x="835" y="646">N 80° W · 350 ft</text></g>
+  <path d="M875 210v70" stroke="#0b1739" stroke-width="4" marker-end="url(#arrow)"/>
+  <text x="875" y="198" text-anchor="middle" font-family="Arial" font-size="22" font-weight="700" fill="#0b1739">N</text>
+  <text x="885" y="690" text-anchor="middle" font-family="Arial" font-size="17" fill="#42506a">The final call returns to the point of beginning.</text>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="5" refY="8" orient="auto"><path d="M0,10 L5,0 L10,10 z" fill="#0b1739"/></marker></defs>
+</svg>

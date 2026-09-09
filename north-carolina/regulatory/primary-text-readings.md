@@ -321,9 +321,336 @@ Statutory and rule references named: **NCGS 93A**; **NCGS 93A-6(a)(4) and (6)**;
 .0104(c)–(i), (m), (o) and (p)**; **58A .0104(e)** for disclosure of agency status by a seller agent or
 subagent to a prospective buyer; **58A .0108** for retention.
 
+### Module NC-08 reconciliation — current primary text read 2026-09-07
+
+- **Rule 58A .0104(a):** owner-side brokerage agreements are written and signed from formation.
+  Buyer/tenant representation must be express and written no later than an offer; an agreement that
+  binds for a period or restricts the consumer's right to work with others or without an agent is
+  written from formation. Written agreements have a definite period, broker license number, expiration
+  mechanism, conspicuous early-termination penalty if any, and the prescribed anti-discrimination
+  provision.
+- **Rule 58A .0104(c):** first substantial contact is tied to agency-like conduct and the beginning of
+  personal/confidential disclosure. The telephone/electronic three-day transmission procedure applies
+  where immediate provision is impractical; review follows at the earliest practicable opportunity.
+- **Rule 58A .0104(d)-(n):** seller/buyer disclosures, dual-agency authority, designated-agent
+  eligibility, protected information and identification timing are distinct requirements. A firm that
+  represents more than one party is a dual agent; designated agency does not eliminate the firm's dual
+  status.
+- **Rule 58A .0106:** executed agency and transaction instruments generally go to the customer/client
+  within three days; the rule has a narrow owner-authorized lease/rental exception and a five-day
+  response when that owner requests a copy.
+- **Rule 58A .0108:** transaction records are retained three years from the later applicable event;
+  disclosure documents are included, and affiliated brokers deliver listed instruments to their firm
+  within three days.
+- **Rule 58A .0109:** compensation, incentives, rebates and other valuable consideration use the
+  rule's consent/disclosure structure. The rule fixes no customary rate.
+- **Current NCREC WWREA guidance:** delivery alone is not review; checked boxes identify relationship
+  types offered by the firm; signature acknowledges receipt rather than creating agency; refusal is
+  documented; and the Q&A is a companion resource. The current disclosure form itself has not yet been
+  retained and page-reviewed for the filing package.
+
 ---
 
-## Source boundary — what has not been read
+## Source boundary — current disposition
+
+## Module NC-04 reconciliation — current primary text read 2026-09-07
+
+- **G.S. 105-274:** property in North Carolina is subject to taxation unless excluded or exempted by
+  statewide law or the Constitution.
+- **G.S. 105-283 and 105-284:** true value means market value; assessment generally uses true value or
+  qualifying use value.
+- **G.S. 105-286:** the baseline reappraisal cycle is eight years, with mandatory and optional
+  advancement. Subsections (b) and (c), which formerly supported fourth-year horizontal adjustments,
+  were repealed effective July 1, 2009. The current statute controls over the stale syllabus sentence.
+- **G.S. 105-307, 105-355, 105-356 and 105-360:** ordinary listing period, lien attachment and priority,
+  September 1 due date, payment at face amount before January 6, and interest thereafter.
+- **G.S. 159-13:** the budget ordinance that levies local property tax is adopted not later than July 1.
+- **G.S. 105-228.30(a):** the transferor pays before recording; the rate is $1 per $500 or fractional
+  part of consideration or value conveyed.
+- **26 U.S.C. §121(a), (b)(1)-(3):** current exclusion maxima, ownership/use test and prior-use limit;
+  the course preserves tax-professional referral for all eligibility and calculation questions.
+- **FEMA and CFPB:** the one-percent annual-chance flood definition and the current one-free-C.L.U.E.-
+  report-per-12-months procedure.
+
+This reconciliation does not supply local tax rates, insurance policy coverage, local transfer-tax
+rules or the remaining federal deduction/exchange provisions. Those remain explicit dependencies.
+
+## Module NC-05 reconciliation — current primary text read 2026-09-07
+
+- **G.S. 93A-6(a)(1) and 21 NCAC 58A .0114(c):** material misrepresentation or omission is a
+  disciplinary ground; for Chapter 47E property, the broker's material-fact duty is separate from the
+  owner's disclosure statement.
+- **42 U.S.C. §4852d and 40 CFR part 745 subpart F:** covered target-housing transactions require the
+  lead pamphlet, known information and available reports before contractual obligation; buyers receive
+  a ten-day inspection opportunity unless changed or waived in writing; the contract carries the
+  prescribed acknowledgments; seller/lessor agents ensure compliance; records are retained three years.
+  The rule imposes no blanket duty to test or reduce lead.
+- **G.S. Chapter 130A Article 19A and §130A-22(b3):** North Carolina certification and permit controls
+  for specified lead work are separate from transaction disclosure. Current state law sets a $5,000
+  per-continuing-day ceiling for covered Article 19A violations, superseding the Syllabus's stale $750
+  state figure. The stale $32,500 federal figure is not repeated as current law.
+- **EPA radon guidance:** fix at 4 pCi/L or more; consider fixing from 2 to below 4; there is no known
+  safe exposure level.
+- **EPA and NC DHHS asbestos guidance:** intact, undisturbed material is unlikely to present a health
+  risk; disturbance can release fibers. North Carolina describes accredited professionals and
+  project-specific permits, not a universal “licensed contractor” rule for every residence.
+- **EPA CERCLA and All Appropriate Inquiries guidance:** current owners may face cleanup exposure, but
+  statutory landowner protections exist and depend on pre-acquisition inquiry and continuing
+  obligations. A Phase I assessment is neither a guarantee nor broker work.
+- **EPA Clean Air Act and Clean Water Act summaries; NC DEQ UST rule/program:** identify the agency
+  framework and preserve professional referral for equipment, discharge, wetlands, tank classification,
+  ownership change and cleanup questions.
+
+The current NCAR Form 2A9-T remains unobtained. The federal statute, regulation and HUD/EPA form do not
+substitute for the Commission's specific Required Activity.
+
+## Module NC-06 reconciliation — current primary text read 2026-09-07
+
+- **Chapter 41, Articles 5-7:** tenancy in common is the ordinary multiple-owner default; a joint
+  tenancy with right of survivorship requires expressed intent but may carry expressly unequal shares;
+  the current statute enumerates collective and unilateral termination events. A conveyance to spouses
+  presumptively creates tenancy by the entirety unless contrary intent appears; joinder, lifetime
+  termination events, and the survivorship consequence at death are separate rules.
+- **G.S. 42-14:** one month for year-to-year, seven days for month-to-month and two days for
+  week-to-week notice to quit; rental of only a manufactured-home space has a 60-day rule.
+- **Chapter 44A §§44A-10 through -13:** a covered $40,000 improvement generally requires owner
+  designation of a lien agent, subject to the narrow existing owner-occupied-dwelling exception in
+  §44A-11.1(a). Timely claimant notice protects the positions described in §44A-11.2(l)-(m), but the
+  notice does not itself perfect a claim. A perfected claim relates back to first furnishing; filing and
+  enforcement outside limits are 120 and 180 days after last furnishing.
+- **Chapter 47C Article 4:** the seven-calendar-day cancellation right follows a transaction requiring
+  a public offering statement under §§47C-4-102(c) and -108. An ordinary nonexempt resale receives the
+  §47C-4-109 fee statement, which supplies no statutory cancellation right.
+- **G.S. 47-18:** the listed land instruments gain priority against protected lien creditors and
+  purchasers for value upon registration in the county where the land lies; registration order
+  generally controls.
+- **Chapter 29 Articles 1-2:** identifies intestacy, escheat, the 120-hour survival rule, and separate
+  statutory shares for the surviving spouse and other heirs; the broker routes the actual determination.
+- **G.S. 1-38 and 1-40:** seven years under color of title and 20 years under known and visible
+  boundaries are the principal adverse-possession periods; disabilities and all elements still matter.
+
+This review found four course defects: the deed-type Required Activity had been replaced by an
+unprescribed hybrid-ownership activity; the four-equal-unities statement contradicted §41-72; the
+entireties “cannot be waived” shorthand hid statutory termination routes; and “new condo” was used as
+the seven-day trigger instead of the public-offering-statement transaction. Modules NC-06 and NC-15 and
+their assessments now carry the current distinctions.
+
+## Module NC-07 reconciliation — current primary text read 2026-09-07
+
+- **G.S. 22-2:** a land-sale or land-interest contract, or memorandum, must be written and signed by
+  the party to be charged; mineral leases and other leases exceeding three years have the section's
+  stated coverage. Recording is not part of this writing condition.
+- **Chapter 66 Article 40 §§66-315, -317 and -325:** electronic participation requires party agreement;
+  an electronic record, signature, or contract is not denied effect solely for electronic form; and
+  technical sending/receipt rules do not replace substantive contract law.
+- **G.S. 84-2.1 and 93A-6(a)(11):** a broker acting as agent under Commission rules may select or
+  complete a preprinted form. Preparing a custom contract/deed or giving legal advice for another is
+  outside that narrow exception and is a disciplinary boundary.
+- **G.S. 48A-2:** a North Carolina minor is a person under 18. The Syllabus supplies the separate
+  void/voidable teaching classification.
+- **Current official NCREC representation guidance:** representation has no neutral default and
+  requires express consent. The listing firm's affiliated brokers act within the firm's seller agency,
+  but a broker from another firm does not become a seller subagent automatically.
+
+This review found three structural defects: the engine omitted two of Section VII's four Required
+Activities; the lesson named all four as complete without delivering worked evidence; and the option
+section incorrectly made recording part of the Statute of Frauds. Module NC-07 now includes four
+scenario labs with stable evidence paths and separates electronic consent/receipt, signed writing,
+recording priority, and the broker's narrow preprinted-form authority.
+
+## Module NC-09 reconciliation — current primary text read 2026-09-07
+
+- **42 U.S.C. §§3603-3607:** the federal protected bases and prohibited practices are stated from the
+  current statute. The single-family-owner and owner-occupied-building provisions are narrow; broker
+  involvement defeats the stated single-family exception, and discriminatory advertising remains
+  prohibited. Religious-organization, private-club and older-person-housing provisions have their own
+  statutory conditions rather than a general exemption.
+- **42 U.S.C. §3604(f):** reasonable modification, reasonable accommodation and covered-multifamily
+  design are separate duties. The design rule applies to first occupancy after March 13, 1991: all
+  dwelling units in a four-plus-unit elevator building, and ground-floor units in other covered
+  four-plus-unit buildings.
+- **42 U.S.C. §§3610, 3613, 3617 and 3631:** a HUD administrative complaint generally uses a one-year
+  occurrence-or-termination period; a private state or federal action generally uses two years with
+  qualifying administrative time excluded. Civil interference under §3617 and criminal conduct under
+  §3631 have different elements; a course cannot turn every violation into a criminal offense.
+- **42 U.S.C. §1982:** the section protects race-equal rights to inherit, purchase, lease, sell, hold
+  and convey real and personal property. The course does not import Fair Housing Act exemptions or a
+  federal-court-only shortcut into that right.
+- **HUD's April 24, 2026 neighborhood-information letter:** the Fair Housing Act does not itself forbid
+  a real-estate professional from providing school-quality or crime information. The lawful process is
+  equal, consistent, source-identified treatment; intentional protected-class steering remains
+  prohibited.
+- **HUD's September 17, 2025 withdrawal notice and current overview:** the identified 2022 criminal-
+  record and 2024 digital-advertising guidance is withdrawn and is not taught as authoritative. The
+  controlling statute still prohibits intentional protected-class discrimination and pretext.
+- **ADA Title III:** a customer-facing sales, rental or service office is a public accommodation. A
+  geographically separate employees-only administrative facility is not automatically the same Title
+  III category, although commercial-facility and employment rules may separately apply.
+- **FTC Telemarketing Sales Rule guidance:** established-business-relationship periods are seller-
+  specific—18 months after a qualifying transaction and three months after an inquiry/application.
+  An entity-specific opt-out overrides that relationship; Registry safe-harbor process uses data no
+  more than 31 days old; the ordinary calling window is 8 a.m. to 9 p.m. local time. Prerecorded calls
+  and automated calls/texts require separate consent analysis.
+- **DOJ antitrust guidance:** competitors set fees independently. Price fixing, bid rigging and customer
+  or market allocation are prohibited; a trade-association setting provides no safe harbor.
+- **Rule 58A .0105:** a broker advertises brokerage services with BIC consent and the affiliated firm's
+  identity, obtains the owner's written consent before advertising another's property, and avoids a
+  blind ad by identifying the broker or firm.
+
+This review also removed three unsupported shortcuts from the syllabus-derived prose: brokers in a
+listing firm do not thereby make an outside-firm broker an automatic seller subagent; fraud is not
+negligent misrepresentation; and neither vicarious liability nor insurance coverage can be stated as
+automatic without the relationship, conduct and policy terms. Four prescribed Module NC-09 activities
+now have worked evidence. The TCPA/FCC rules, North Carolina Fair Housing Act, common-law tort elements,
+NAR Code and actual insurance forms remain explicit source limitations.
+
+## Module NC-10 reconciliation — current primary text read 2026-09-07
+
+- **G.S. 160D-111(c) and 160D-702:** current Chapter 160D supplies local zoning authority and redirects
+  references to superseded Chapter 153A/160A planning provisions. The broker verifies the current local
+  map, ordinance and approval instead of treating the syllabus's former citations as current law.
+- **G.S. 143-215.94A and .94E:** tank owner, operator, facility and landowner are distinct. Release-
+  response duties, landowner protections and fund-treatment routes are conditional; ownership of the
+  land alone does not prove automatic cleanup liability.
+- **G.S. 93A-6(g), 93A-12 and Rules 58A .0110, .0116-.0118, .1808:** ordinary trust money uses a three-
+  banking-day deposit baseline with enumerated exceptions. The current rules separately govern BIC
+  responsibility, interest, disputes, settlement-agent transfer, safeguarding, accounting and property-
+  owners'-association funds. The LLCR Comments remain unavailable and are not simulated.
+- **G.S. 93A-4(e), 93A-6(a)(11), 84-2.1 and Rule 58A .0111:** a broker-agent may complete specified
+  preprinted forms under party direction but may not independently prepare a custom legal instrument
+  or give legal advice. The prior text both cited the wrong disciplinary subsection and compressed the
+  rule into an unsafe “fill in blanks” slogan.
+- **Rule 58A .0115 and July 2025 Commission guidance:** the rule bars price or material-term disclosure
+  to a competitor without the offering party's express authority. Separate guidance says existence of
+  multiple offers is not material and is seller-directed; disclosure must be fair, equal and honest.
+- **G.S. 39-50 and September 2025 Commission guidance:** specified stigma facts are not material solely
+  on the statutory grounds, but knowing false answers remain prohibited. Mere polybutylene presence is
+  not automatically material; known leakage, damage or probable defect is.
+- **Rules 58A .0120(d) and .1601:** discriminatory brokerage/promotion is prohibited across seven named
+  bases and a State Fair Housing Act violation is improper conduct. The full state Act remains for the
+  Module NC-15 pass.
+- **G.S. 93A-9, Rule .0120(b) and Commission compensation guidance:** affiliated-broker payment, an
+  out-of-state-only referral and the Limited Nonresident Commercial Broker route are distinct. License
+  status when services were performed remains decisive; later payment does not cure unlicensed work.
+
+The module now contains four worked Level 3 evidence paths plus the prescribed client-versus-third-
+party comparison. Remaining filing gates are the current LLCR Comments, full state fair-housing pass,
+the Interstate Land Sales topic, and authentic local PDF capture/review.
+
+## Module NC-11 reconciliation — current primary text read 2026-09-07
+
+Section XI was checked against the current official text and rights-holder index instead of treating
+the May 2026 syllabus as the last word where later law controls:
+
+- **Session Law 2025-52 §4 and current Rule 58A .0112:** the current rule has 18 numbered required
+  subjects and allows the specified preprinted commission/compensation provision. The rule still bars
+  an attempted disclaimer of broker liability for the broker's representations. This supersedes the
+  syllabus's older 19-item/two-prohibition wording.
+- **Rule 58A .0111:** a broker-agent may complete a compliant preprinted form under party direction,
+  but may not independently draft legal language or pre-alter the form.
+- **G.S. Chapter 45A:** its definitions of Closing and Settlement are statutory and source-specific;
+  §45A-4 separately controls recordation and general disbursement. They are not represented as the
+  unseen current form's capitalized definitions.
+- **G.S. Chapter 47E and Rule 58A .0114:** the covered owner supplies the prescribed disclosures under
+  the statute's timing/cancellation scheme, while the broker retains an independent material-fact duty.
+- **G.S. 10B-134.25 and State Bar AP AO 2002-1:** a North Carolina lawyer supervises the residential
+  closing and performs legal work; nonlawyer tasks are ministerial and the recipient of legal services
+  selects counsel.
+- **12 C.F.R. §1026.19(f):** the creditor remains responsible for timely Closing Disclosure receipt
+  even if the settlement agent provides it; only the listed APR, loan-product and prepayment-penalty
+  changes restart the waiting period.
+- **Federal interagency flood guidance:** mandatory purchase follows the building or mobile home in an
+  SFHA, not merely an edge of the lot; lender and map determinations remain transaction-specific.
+- **Current NC REALTORS® form index/change summary and NCREC septic guidance:** the 2026 form set has
+  changed and remains member-restricted, while advertised bedrooms must not exceed the available septic
+  permit and known permit-record gaps must be disclosed.
+
+The EMD and possession Required Activities now have stable worked evidence. The current Form 2-T,
+Guidelines and addenda themselves remain unavailable, so the Commission-prescribed paragraph review
+is still a filing gate and no proprietary form text is reconstructed.
+
+## Module NC-12 reconciliation — current primary text read 2026-09-07
+
+Section XII was checked against current state and federal primary sources and official program/form
+repositories:
+
+- **G.S. Chapter 45 Article 2A and Judicial Branch guidance:** the ten-day post-sale mechanism is an
+  upset-bid window, not a general statutory right of redemption. G.S. 45-21.36, -21.38 and -21.38A
+  supply distinct fair-value and anti-deficiency rules instead of an “appeal for deficiency” shortcut.
+- **G.S. 105-360:** taxes are due September 1, payable at face before January 6 and interest-bearing on
+  or after January 6. The Syllabus's August date is not taught as current law.
+- **Regulation Z §1026.19:** initial LE, revised LE and CD clocks are separate; a revised LE does not by
+  itself create a new three-business-day closing wait. Only the three listed CD changes restart it, and
+  the creditor remains responsible even if a settlement agent provides the CD.
+- **Regulation Z §§1026.24 and .42:** current advertising and valuation-independence rules replace the
+  broad advertising and universal random-AMC shortcuts.
+- **Regulation X §§1024.14-.15:** the anti-kickback rule, actual-services/cooperative-brokerage
+  exceptions and affiliated-business conditions replace the categorical “broker to broker, yes” rule.
+- **Regulations B and V:** Regulation B implements ECOA and Regulation V implements specified FCRA
+  duties. The Syllabus reverses these labels.
+- **Current HUD, VA, USDA, FHFA and Ginnie Mae pages:** the course corrects agency names, separates VA
+  assumption liability from entitlement, separates USDA direct from guaranteed features, labels the
+  syllabus ratios as classroom inputs, and identifies Ginnie Mae as a government corporation rather
+  than a GSE.
+- **CFPB and ALTA form repositories:** completed LE, CD and historical HUD-1 samples plus the ALTA
+  combined statement are retained and all eighteen PDF pages are visually reviewed against digital text.
+  These close the three formerly outstanding Section XII document activities.
+
+Complete federal statutes, all agency underwriting/seller-servicer guides and transaction-specific
+lender rules were not read in full. Module NC-12 does not use its overview to promise loan eligibility,
+approve a borrower, or decide a live tolerance/referral/assumption issue.
+
+## Module NC-13 reconciliation — current primary text read 2026-09-07
+
+Section XIII was checked against current North Carolina statutes and official appraisal-industry
+publisher materials:
+
+- **G.S. Chapter 93E Article 1 and Chapter 93A Article 6:** appraisal credential, trainee supervision
+  and broker CMA/BPO authority are separate roles. A compliant broker opinion estimates probable
+  selling or leasing price; it is not an appraisal and it cannot be the primary basis for mortgage
+  origination value.
+- **The Appraisal Foundation:** the Foundation was created in 1987, before FIRREA; FIRREA later
+  authorized the Foundation's standards/qualifications role. USPAP is a standards publication, not an
+  appraisal form.
+- **Fannie Mae UAD 3.6 materials:** the broad-production window, November 2, 2026 new-submission
+  mandate and May 3, 2027 legacy-revision end are stated as dated transition facts. The fixed legacy
+  Form 1004 is distinguished from the dynamic UAD 3.6 URAR.
+- **Official completed SF5 sample:** the publisher cover, all nineteen report pages, seven legacy Form
+  1004 pages and one timeline page are retained, hashed, rendered and visually reviewed. The completed
+  report supplies the Section XIII comparable-adjustment and reconciliation activities.
+
+The full copyrighted USPAP publication, North Carolina Appraisal Board rules and complete GSE seller/
+servicer guides were not read in full. Module NC-13 preserves those limits and requires a fresh
+transition check before delivery; the completed URAR activity itself is no longer open.
+
+## Module NC-14 reconciliation — current primary text read 2026-09-07
+
+Section XIV was checked against the current General Assembly codification and current indexed
+Commission rules:
+
+- **G.S. Chapter 42, Articles 2A, 3 and 7:** residential possession requires the statutory court
+  route. Self-help and distress/distraint are prohibited; ordinary summary ejectment and the separate
+  criminal-activity civil route have different elements and neither authorizes owner-directed removal.
+- **G.S. Chapter 42, Article 4A:** five good-faith activities are protected through a 12-month
+  retaliation defense, subject to six stated grounds on which the landlord may still prevail. Lease
+  expiration is not taught as automatic immunity from the retaliation analysis.
+- **G.S. Chapter 42, Article 5:** scope, managing-agent definition, mutual obligations, enumerated
+  landlord/tenant duties, nonwaiver, remedies and the judicial-determination condition on rent
+  withholding replace the former syllabus-only routing text.
+- **G.S. Chapter 42, Article 6 and Rules 58A .0116-.0117:** owner trust/bond alternatives are separated
+  from a broker's trust-account duty. Two-week, one-and-one-half-month and two-month deposit maxima,
+  permitted uses, ordinary-wear limit, depository notice, 30/60-day accounting, transfer and remedies
+  are now stated and tested.
+- **G.S. Chapter 42A:** the course now distinguishes the fewer-than-90-day vacation-rental definition
+  from the 30-day-or-less expedited-possession condition and states the written-agreement, three-
+  banking-day deposit, 50% disbursement, no-bond, 45-day accounting, 180-day transfer, notice,
+  habitability, broker-duty and evacuation rules.
+- **Rule 58A .0104(a):** owner brokerage authority is express and written from formation; the limited
+  buyer/tenant pre-offer exception does not permit oral property management.
+
+Section XIV prescribes no Required Activity. The corrected module nevertheless includes applied
+calculations, decision sequences and an integrated property-management scenario, and its assessment
+tests the formerly omitted figures and procedural distinctions.
 
 ### Original curriculum gaps — current Phase 0 disposition
 
@@ -333,29 +660,47 @@ documents rather than a substitute for them.**
 
 - **21 NCAC Chapter 58, Subchapters A and H:** Phase 0 inspected the current official indexed OAH
   text for the controlling applicant, provider, instructor, course, distance, reporting, records and
-  renewal rules. This does not cure the original module prose: each module still needs a topic-level
-  reconciliation, and the official PDF bytes still need a filing-date integrity lock.
+  renewal rules. Modules NC-01, NC-02, and NC-08 through NC-15 were reconciled on 2026-09-07 to their applicable
+  applicant, other-jurisdiction, supervision, BIC, compensation, agency, advertising, document-delivery,
+  records, offer-form, trust-money and closing rules. The remaining modules still need topic-level reconciliation, and the official PDF
+  bytes still need a filing-date integrity lock.
 - **NCGS Chapter 93A:** Phase 0 inspected the current official General Assembly text for §§ 93A-4 and
-  Article 3. Topic-level curriculum reconciliation remains open.
+  93A-6 and Article 3. Modules NC-01, NC-05, NC-07, NC-10 and NC-11 were reconciled to their applicable
+  provisions on 2026-09-07, and Module NC-13 was reconciled to the broker-opinion provisions in
+  Article 6. Module NC-09 was separately reconciled to current federal fair-housing,
+  civil-rights, accessibility, telemarketing and antitrust authorities; the other topic-level
+  reconciliations remain open.
+- **NCGS Chapter 105 and G.S. 159-13:** Module NC-04's current appraisal, assessment, reappraisal,
+  listing, lien, payment, excise-tax and annual levy provisions were reconciled on 2026-09-07. The
+  Module NC-12 proration section now also uses the current G.S. 105-360 due/payment dates. Remaining tax
+  provisions identified by other sections and all local rates still require topic-level review.
 - **North Carolina Real Estate License Law and Commission Rules (LLCR)**, including the Comments.
-- **Real Estate Licensing in North Carolina (RELINC).**
+- **Real Estate Licensing in North Carolina (RELINC):** the April 2026 official PDF was captured,
+  text-extracted, and used to reconcile Module NC-01 on 2026-09-07. Its live identity and fees must
+  still be rechecked before filing and enrollment.
 - **The North Carolina Real Estate Manual.**
-- **The Working with Real Estate Agents (WWREA) Disclosure form itself**, and the **Questions & Answers
-  on: Working with Real Estate Agents.** Their existence, their trigger and their retention period ARE
-  stated because the Syllabus states them; **no field, wording or layout of either is described.**
+- **Working with Real Estate Agents.** The two-page current public WWREA disclosure form and the
+  separate **Questions & Answers on: Working with Real Estate Agents** brochure are retained,
+  text-extracted and completely page-reviewed. Module NC-08 delivers the prescribed paired review
+  while distinguishing disclosure receipt from formation of an agency agreement.
 - **NC REALTORS® Offer to Purchase and Contract — Standard Form 2-T**, and every other standard form.
-  The Syllabus devotes Section XI to the Offer to Purchase and Contract. **This project has not read
-  Form 2-T and no document in this build reproduces, describes or paraphrases any provision of it.**
+  The Syllabus devotes Section XI to the Offer to Purchase and Contract. **The current 2026 rights-holder
+  index and change summary were read, but this project has not read the member-restricted Form 2-T and
+  no document in this build reproduces, describes or paraphrases any provision of it.**
   This is a submission gate: a course covering Section XI must be reconciled against the current form.
-- **Residential Square Footage Guidelines**, cited in Section XV. No measurement standard from it is
-  stated.
+- **2026 Residential Square Footage Guidelines.** The complete 26-page official publication is retained,
+  text-extracted and page-reviewed. Module NC-15 now applies its current materiality, source-reliance,
+  living-area, measurement, unpermitted-area and record-retention rules and includes a worked problem.
 - **The Real Estate Agent Safety Guide.**
-- **The Residential Property and Owners' Association Disclosure Statement (RPOADS)**, the **Tenant
-  Security Deposit Act**, the **Vacation Rental Act**, the **Connor Act**, the **Marketable Title Act**,
-  the **Timeshare Act**, the **Unfair and Deceptive Trade Practices Act**, and North Carolina's
-  **statute of frauds**, **onsite septic**, **street disclosure**, **subdivision** and **lead-based
-  paint** provisions — all named in Sections XIV and XV. **Every one is named by the Syllabus and none
-  was read.** No requirement, deadline, form, exemption or figure from any of them appears.
+- **Section XV forms and laws.** Current RPOADS REC 4.22 (REV 7/26) and MOG REC 4.25 (1/1/15) are
+  retained with all seven pages reviewed. Module NC-15 now reconciles Chapters 41A, 43, 47B, 47E,
+  47F and 93A Article 4; the current UCC fixture section; state fair-housing, timeshare, deceptive-
+  practices, street-disclosure and commercial-broker-lien provisions; and Rules 58A/58B. The
+  Commission's subdivisions/planned-communities Q&A brochure is retained and completely reviewed,
+  with its 2019 statements checked against current Chapters 47F, 136 and 160D. Complete current code
+  tables and active project-specific legal/code determinations remain explicit limitations. The
+  separate Required Activity calling for an approved subdivision plat remains outstanding because
+  a consumer brochure is not a recorded plat.
 - **The full text of Sections II through VII and IX through XVI of the Syllabus** was extracted and is
   available, but this readings file transcribes in full only the front matter, the hour table, the
   section and item table, the Instructional Levels, the completion standards and Section VIII. The

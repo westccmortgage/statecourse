@@ -1,0 +1,54 @@
+BROAD PRODUCTION
+January 26, 2026 – November 1, 2026
+Submit UAD 2.6 or UAD 3.6
+MANDATE
+November 2, 2026
+Submit UAD 3.6 Only
+RETIREMENT
+May 3, 2027
+UAD 2.6 Pipeline Cleared
+NOTE: Start the transition to UAD 3.6 now. Fully transition before mandate.
+• Confirm vendor, appraiser and system readiness.
+• Use the Lender Readiness Kit and additional resources to get started.
+• Take the GSE-developed industry training.
+Visit the Freddie Mac and Fannie Mae UAD webpages for more information.
+UAD 2.6 appraisals must be submitted to UCDP ® before November 2, 2026 or converted to UAD 3.6.
+UCDP/SSR Feedback Message
+August 6, 2026: Warning message delivered only when UAD 2.6 submitted, stating that starting November
+2, 2026, all new submissions must be in UAD 3.6.
+UAD 2.6 pipeline revisions period ends.
+NOTE: All new UCDP submissions must be in UAD 3.6.
+Revisions allowed for UAD 2.6 appraisals previously
+submitted to UCDP November 1, 2026, or earlier.
+UCDP/SSR Feedback Message
+November 2, 2026: Fatal message delivered only when
+UAD 2.6 submitted, stating all new submissions must be
+in UAD 3.6.
+20272026
+Note: Feedback messages are delivered based on UCDP submission date not appraisal effective date. View examples below.
+October 1, 2026
+Order UAD 2.6
+Appraisal
+November 5, 2026
+UCDP Submission –
+Result: Not Successful
+November 2, 2026
+MANDATE
+November 2, 2026
+MANDATE
+November 5, 2026
+Appraisal Revision
+November 10, 2026
+Appraisal (UAD 2.6)
+Resubmitted to UCDP –
+Result: Successful
+November 1, 2026
+UCDP Submission –
+Result: Successful
+October 1, 2026
+Order UAD 2.6
+Appraisal
+Successful Example: UCDP submission of UAD 2.6 appraisal prior to November 2 mandate with resubmission (still using UAD 2.6) after November 2 man date
+Not Successful Example: UCDP submission of UAD 2.6 appraisal after November 2 mandate
+This document relates to the Uniform Mortgage Data Program®, an effort undertaken jointly by Freddie Mac and Fannie Mae at the direction of U.S. Federal Housing (FHFA). ©2026 Freddie Mac and Fannie Mae. Trademarks of the respective owners.
+

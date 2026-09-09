@@ -1,0 +1,90 @@
+{
+  "reviewedOn": "2026-09-07",
+  "id": "NC-NCREC-RULE-CHANGES-2026",
+  "title": "NCREC Rulemaking Notice — Rules Effective April and July 2026",
+  "sourceFile": "north-carolina/regulatory/captures/2026-09-07/rule-changes-2026/ApprovedRulesEffectiveAprilAndJuly2026.pdf",
+  "pdfSha256": "d4e69417fe9dc79ea9e6c995ab486c6c939af87429a76a44d537f7dcc3575b88",
+  "textPath": "north-carolina/regulatory/captures/2026-09-07/rule-changes-2026/ApprovedRulesEffectiveAprilAndJuly2026.txt",
+  "textSha256": "cb76112e77ddc47959e1c67d0b5e460326a5591cddbdd679a4e442b23eac765c",
+  "pageCount": 13,
+  "revisionObservation": "Official NCREC notice approved by the Commission and Rules Review Commission; Rules 58A .0302, .0503 and .1803 effective April 1, 2026; Rules 58G .0103 and 58H .0101 and .0210 effective July 1, 2026; Rule 58A .0112 published with legislative-review note and the permanent 2026 text.",
+  "reviewObservation": "All 13 pages were rendered and visually inspected in two ordered contact sheets. The notice, publication/effective statements, redline conventions, complete amended rule text, histories and final education-provider certification provisions are legible without clipping or overlap.",
+  "pages": [
+    {
+      "number": 1,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rule-changes-2026/renders/page-01.png",
+      "sha256": "aa228b04ed0a7c487439deea03fe108a1378ea8d1278cb1d08fec343eca84d58"
+    },
+    {
+      "number": 2,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rule-changes-2026/renders/page-02.png",
+      "sha256": "22110a84f7bce6ea0a7b7a183f71d9dea7ec10df1185744fc730082d2a1a88f9"
+    },
+    {
+      "number": 3,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rule-changes-2026/renders/page-03.png",
+      "sha256": "e2768729ba529b605dee627630f834a536178f9fb57c0f53721a5e5a72e28a34"
+    },
+    {
+      "number": 4,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rule-changes-2026/renders/page-04.png",
+      "sha256": "6c98e4ddbea97e600ad407fbd18cfe1628fe32dc06b6f3686786dc1223c9602a"
+    },
+    {
+      "number": 5,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rule-changes-2026/renders/page-05.png",
+      "sha256": "e1f771f27d1ed4aa2b1158a4a6df2b0ec489bd6fc723f794d1e14b9258022ad1"
+    },
+    {
+      "number": 6,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rule-changes-2026/renders/page-06.png",
+      "sha256": "975483dc241d85d4c64ec332053ddbd23e089c46bf362966e905fb6ee526ebb9"
+    },
+    {
+      "number": 7,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rule-changes-2026/renders/page-07.png",
+      "sha256": "f77bb7f9be7205cc7f059672073447af2e31ee22485b9ddf80550d904d258a5c"
+    },
+    {
+      "number": 8,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rule-changes-2026/renders/page-08.png",
+      "sha256": "ac8d5b6bfdf5944b5396effe0def7e18a7b9dbfda813f29017d0980a94106343"
+    },
+    {
+      "number": 9,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rule-changes-2026/renders/page-09.png",
+      "sha256": "114a8420aae27df7423e84a2d8e57308e8156dcfea72a92597a40a2840719a3a"
+    },
+    {
+      "number": 10,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rule-changes-2026/renders/page-10.png",
+      "sha256": "bb147500f4f63d596abb2abb5b4a3663ea1fd34de14bb7d2cd4d37c285507caa"
+    },
+    {
+      "number": 11,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rule-changes-2026/renders/page-11.png",
+      "sha256": "b9a60603cbabf69f2190ae3ae19651fbc27d5e7ea75cf1dda4c273f1777446a9"
+    },
+    {
+      "number": 12,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rule-changes-2026/renders/page-12.png",
+      "sha256": "9eca8742565500af7a05cbbe46d5236e264537505a728864533f3ca0f2c3d902"
+    },
+    {
+      "number": 13,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rule-changes-2026/renders/page-13.png",
+      "sha256": "f5f954eb61804ea1ec26c503b07859e8f6fc0df32804ab2450c7d4ed338b21dd"
+    }
+  ],
+  "contactSheets": [
+    {
+      "path": "north-carolina/regulatory/captures/2026-09-07/rule-changes-2026/contact-sheets/pages-001-012.png",
+      "sha256": "49da204337c94112a54fbd00fccb60945d3825fd4065090f1d0ea2116cb8c03b"
+    },
+    {
+      "path": "north-carolina/regulatory/captures/2026-09-07/rule-changes-2026/contact-sheets/pages-013-013.png",
+      "sha256": "b55dc7a3615c68889154a70638ae7e0f3477ba776f530330b39eff67325c473b"
+    }
+  ],
+  "ocrStatus": "NOT_REQUIRED_TEXT_LAYER_MATCHED_RENDER"
+}

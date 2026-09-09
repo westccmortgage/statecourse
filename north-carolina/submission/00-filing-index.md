@@ -25,9 +25,10 @@ approved; enrollment closed; no NC credit available.
    the provider number. Record issue/expiry dates and conditions.
 6. **Complete the course build.** Close all Required Activity/source gaps, expand student-visible
    instructional content to demonstrate 72 non-exam instructional hours (3,600 actual minutes under
-   .0101(7)) at 225 words/minute plus media, with separate breaks/exam ledgers, build the
-   secure comprehensive final, implement proctoring and reviewer access, and verify all distance
-   controls in production.
+   .0101(7)) at 225 words/minute plus media, with separate breaks/exam ledgers. The two-form protected
+   comprehensive final is authored; obtain substantive signoff, implement identity/closed-book
+   proctoring and protected attempt storage, add reviewer access, and verify every distance control
+   in production.
 7. **Refresh sources.** Capture the exact current statutes/rules/forms/syllabus, hash every retained
    file, compare relevant rendered pages against digital text (OCR only if missing/disputed), and
    run the source-lock validator. Reconcile any changed

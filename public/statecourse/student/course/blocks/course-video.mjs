@@ -1,14 +1,31 @@
-/* CA-BLOCK-1 — <course-video>, the reusable course video component.
-   Contract (enforced here and validated in config by validateCourseVideo):
-     - never autoplays;
-     - play/pause, rewind 10s, playback speed, captions toggle, keyboard accessible, responsive;
-     - captions track and transcript are REQUIRED for a production-ready video — a video may never
-       be the only place a legal rule appears, so the transcript/text equivalent always exists;
-     - carries data-video-id, data-block-id and data-concepts so evidence and analytics can map
-       playback to the block and concepts it supports.
-   No video ships in the Assignment 1 pilot; the component exists so the architecture does. */
+/* <course-video> supports legacy same-origin MP4s and private Cloudflare Stream delivery.
+   Stream mode never receives a public video URL: it exchanges an authenticated enrollment and a
+   server-owned asset key for a short-lived signed iframe URL, then records append-only playback
+   evidence. Playback remains supplementary and never creates course credit by itself. */
 
-const template = `
+const STREAM_SDK = "https://embed.cloudflarestream.com/embed/sdk.latest.js";
+let streamSdkPromise;
+
+function loadStreamSdk() {
+  if (window.Stream) return Promise.resolve(window.Stream);
+  if (streamSdkPromise) return streamSdkPromise;
+  streamSdkPromise = new Promise((resolve, reject) => {
+    const existing = document.querySelector(`script[src="${STREAM_SDK}"]`);
+    const script = existing || document.createElement("script");
+    const ready = () => window.Stream ? resolve(window.Stream) : reject(new Error("stream_sdk_unavailable"));
+    script.addEventListener("load", ready, { once: true });
+    script.addEventListener("error", () => reject(new Error("stream_sdk_unavailable")), { once: true });
+    if (!existing) {
+      script.src = STREAM_SDK;
+      script.async = true;
+      script.referrerPolicy = "no-referrer";
+      document.head.appendChild(script);
+    }
+  });
+  return streamSdkPromise;
+}
+
+const nativeTemplate = `
   <figure class="course-video-frame">
     <video preload="metadata" playsinline></video>
     <div class="course-video-controls" role="group" aria-label="Video controls">
@@ -26,15 +43,56 @@ const template = `
     <figcaption class="course-video-transcript" hidden></figcaption>
   </figure>`;
 
+const streamTemplate = `
+  <figure class="course-video-frame course-video-private">
+    <div class="course-video-stream-shell" data-stream-shell>
+      <p class="course-video-status" role="status">Preparing secure video…</p>
+    </div>
+    <div class="course-video-controls" role="group" aria-label="Video resources">
+      <button type="button" data-action="transcript" aria-expanded="false" aria-label="Toggle transcript">Transcript</button>
+    </div>
+    <figcaption class="course-video-transcript" hidden></figcaption>
+  </figure>`;
+
+function transcriptControl(root, transcriptUrl) {
+  const button = root.querySelector('[data-action="transcript"]');
+  const panel = root.querySelector(".course-video-transcript");
+  button.addEventListener("click", async () => {
+    const open = !panel.hidden;
+    if (!open && !panel.dataset.loaded && transcriptUrl) {
+      panel.dataset.loaded = "1";
+      panel.textContent = "Loading transcript…";
+      try {
+        const response = await fetch(transcriptUrl, { credentials: "same-origin", headers: { accept: "text/plain" } });
+        panel.textContent = response.ok ? await response.text() : "Transcript unavailable.";
+      } catch { panel.textContent = "Transcript unavailable."; }
+    }
+    panel.hidden = open;
+    button.setAttribute("aria-expanded", String(!open));
+  });
+}
+
 class CourseVideo extends HTMLElement {
   connectedCallback() {
+    if (this.dataset.initialized) return;
+    this.dataset.initialized = "1";
+    if (this.getAttribute("provider") === "cloudflare-stream") this.connectStream();
+    else this.connectNative();
+  }
+
+  disconnectedCallback() {
+    clearInterval(this.heartbeat);
+    this.heartbeat = null;
+  }
+
+  connectNative() {
     const source = this.getAttribute("src") || "";
     const captions = this.getAttribute("captions") || "";
     const transcriptSrc = this.getAttribute("transcript") || "";
-    this.innerHTML = template;
+    this.innerHTML = nativeTemplate;
     const video = this.querySelector("video");
     video.src = source;
-    video.autoplay = false;              /* contract: never autoplay */
+    video.autoplay = false;
     video.removeAttribute("autoplay");
     if (captions) {
       const track = document.createElement("track");
@@ -64,19 +122,77 @@ class CourseVideo extends HTMLElement {
       track.mode = showing ? "hidden" : "showing";
       captionsButton.setAttribute("aria-pressed", String(!showing));
     });
-    const transcriptButton = this.querySelector('[data-action="transcript"]');
-    const transcriptPanel = this.querySelector(".course-video-transcript");
-    transcriptButton.addEventListener("click", async () => {
-      const open = !transcriptPanel.hidden;
-      if (!open && !transcriptPanel.textContent && transcriptSrc) {
-        try {
-          const response = await fetch(transcriptSrc, { credentials: "same-origin" });
-          transcriptPanel.textContent = response.ok ? await response.text() : "Transcript unavailable.";
-        } catch { transcriptPanel.textContent = "Transcript unavailable."; }
-      }
-      transcriptPanel.hidden = open;
-      transcriptButton.setAttribute("aria-expanded", String(!open));
-    });
+    transcriptControl(this, transcriptSrc);
+  }
+
+  async connectStream() {
+    this.innerHTML = streamTemplate;
+    const assetKey = this.getAttribute("asset-key") || "";
+    const enrollmentId = this.getAttribute("enrollment-id") || "";
+    const label = this.getAttribute("label") || "Course video";
+    const expectedDuration = Number(this.getAttribute("duration-seconds") || 0);
+    const shell = this.querySelector("[data-stream-shell]");
+    const transcriptUrl = `/api/stream/transcript?asset=${encodeURIComponent(assetKey)}&enrollment_id=${encodeURIComponent(enrollmentId)}`;
+    transcriptControl(this, transcriptUrl);
+    try {
+      const response = await fetch(`/api/stream/playback?asset=${encodeURIComponent(assetKey)}&enrollment_id=${encodeURIComponent(enrollmentId)}`, {
+        credentials: "same-origin",
+        headers: { accept: "application/json" },
+      });
+      const payload = await response.json().catch(() => ({}));
+      if (!response.ok || !payload.iframeUrl) throw new Error(payload.error || "stream_playback_unavailable");
+      const iframe = document.createElement("iframe");
+      iframe.src = payload.iframeUrl;
+      iframe.title = label;
+      iframe.loading = "eager";
+      iframe.allow = "accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture";
+      iframe.allowFullscreen = true;
+      iframe.referrerPolicy = "strict-origin-when-cross-origin";
+      shell.replaceChildren(iframe);
+      const StreamPlayer = await loadStreamSdk();
+      const player = StreamPlayer(iframe);
+      this.player = player;
+      this.playbackSessionId = crypto.randomUUID();
+      this.clientSequence = 0;
+      const send = (eventType) => this.sendEvidence(eventType, expectedDuration);
+      player.addEventListener("play", () => {
+        send("play");
+        clearInterval(this.heartbeat);
+        this.heartbeat = setInterval(() => send("heartbeat"), 15000);
+      });
+      player.addEventListener("pause", () => { clearInterval(this.heartbeat); send("pause"); });
+      player.addEventListener("seeked", () => send("seeked"));
+      player.addEventListener("ratechange", () => send("ratechange"));
+      player.addEventListener("ended", () => { clearInterval(this.heartbeat); send("ended"); });
+      player.addEventListener("error", () => { clearInterval(this.heartbeat); send("error"); });
+    } catch {
+      shell.innerHTML = '<p class="course-video-status course-video-error" role="alert">Secure video is temporarily unavailable. Your course progress is unaffected.</p>';
+    }
+  }
+
+  sendEvidence(eventType, expectedDuration) {
+    if (!this.player || !this.playbackSessionId) return;
+    const position = Number(this.player.currentTime || 0);
+    const duration = Number(this.player.duration || expectedDuration);
+    const rate = Number(this.player.playbackRate || 1);
+    if (!Number.isFinite(position) || !Number.isFinite(duration) || duration <= 0) return;
+    const body = {
+      assetKey: this.getAttribute("asset-key") || "",
+      enrollmentId: this.getAttribute("enrollment-id") || "",
+      eventType,
+      sessionId: this.playbackSessionId,
+      clientSequence: this.clientSequence++,
+      positionSeconds: position,
+      mediaDurationSeconds: duration,
+      playbackRate: rate,
+    };
+    fetch("/api/stream/events", {
+      method: "POST",
+      credentials: "same-origin",
+      keepalive: true,
+      headers: { "content-type": "application/json", accept: "application/json" },
+      body: JSON.stringify(body),
+    }).catch(() => null);
   }
 }
 

@@ -168,12 +168,22 @@ function screenVideoHtml(screen) {
 }
 
 function singleVideoHtml(video) {
+  if (video?.provider === "cloudflare-stream" && video.assetKey) {
+    const parts = String(video.duration || "0:00").split(":").map(Number);
+    const durationSeconds = parts.length === 2 && parts.every(Number.isFinite) ? parts[0] * 60 + parts[1] : 0;
+    const label = video.label || "Video overview";
+    return `<section class="screen-video" aria-label="${escapeHtml(label)}">
+      <p class="screen-video-caption"><span class="optional-tag">Optional</span> ${escapeHtml(label)}${video.duration ? ` · ${escapeHtml(video.duration)}` : ""} · Captions available</p>
+      <course-video provider="cloudflare-stream" asset-key="${escapeHtml(video.assetKey)}" enrollment-id="${escapeHtml(state.enrollmentId)}" label="${escapeHtml(label)}" duration-seconds="${durationSeconds}"></course-video>
+    </section>`;
+  }
   if (!video || !video.src) return "";
   const track = video.captions
     ? `<track kind="captions" src="${escapeHtml(video.captions)}" srclang="en" label="English captions" default />`
     : "";
-  const transcript = video.captions
-    ? `<details class="video-transcript" data-vtt="${escapeHtml(video.captions)}"><summary>Transcript</summary><div class="video-transcript-body">Loading…</div></details>`
+  const transcriptSource = video.transcript || video.captions;
+  const transcript = transcriptSource
+    ? `<details class="video-transcript" data-transcript="${escapeHtml(transcriptSource)}"><summary>Transcript</summary><div class="video-transcript-body">Loading…</div></details>`
     : "";
   return `<figure class="screen-video">
     <figcaption><span class="optional-tag">Optional</span> ${escapeHtml(video.label || "Video overview")}${video.duration ? ` · ${escapeHtml(video.duration)}` : ""} · Captions available</figcaption>
@@ -207,10 +217,14 @@ document.addEventListener("toggle", async (event) => {
   details.dataset.loaded = "1";
   const body = details.querySelector(".video-transcript-body");
   try {
-    const text = await (await fetch(details.dataset.vtt)).text();
-    const lines = text.replace(/\r/g, "").split("\n").filter((line) =>
-      line.trim() && line !== "WEBVTT" && !line.startsWith("NOTE") && !line.includes("-->") &&
-      !/^\d+$/.test(line.trim()) && !line.startsWith("Document Overview") && !line.startsWith("final cut"));
+    const response = await fetch(details.dataset.transcript);
+    if (!response.ok) throw new Error(`transcript request failed: ${response.status}`);
+    const text = await response.text();
+    const isVtt = details.dataset.transcript.toLowerCase().endsWith(".vtt");
+    const lines = text.replace(/\r/g, "").split("\n").filter((line) => line.trim() && (!isVtt || (
+      line !== "WEBVTT" && !line.startsWith("NOTE") && !line.includes("-->") &&
+      !/^\d+$/.test(line.trim()) && !line.startsWith("Document Overview") && !line.startsWith("final cut")
+    )));
     body.innerHTML = lines.map((line) => `<p>${escapeHtml(line)}</p>`).join("");
   } catch { body.textContent = "Transcript unavailable."; }
 }, true);

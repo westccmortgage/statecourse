@@ -22,10 +22,10 @@ national category in the course.*
 > broker performs a BPO/CMA on a residential property**, students **should practice its use**, with a
 > focus on **estimating the probable sales price of residential properties**."*
 >
-> A broker will not appraise. A broker will price property for a seller and advise a buyer on what to
-> offer, on most working days, for a whole career. That is the same reasoning applied to a smaller
-> problem — and it is why this one approach is examined at analysis level while the other two are
-> examined at application level.
+> A North Carolina broker license, by itself, does not authorize appraisal practice. A broker may
+> estimate probable selling or leasing price through a lawful CMA/BPO; a person who also holds an
+> Appraisal Board credential may separately act in that credentialed capacity. The analytical overlap
+> explains the Level 3 treatment, but it does not erase the statutory boundary.
 
 ## Learning objectives
 
@@ -45,21 +45,27 @@ national category in the course.*
 
 ### A.1 Key definitions
 
-Three terms the Commission separates, and they are not interchangeable:
+Three terms the Commission separates, and current North Carolina statutes make the boundary concrete:
 
-- **Real estate appraisal**
-- **Comparative Market Analysis (CMA)**
-- **Broker Price Opinion (BPO)** — with the Commission's note: **"On the National exam section, BPOs are
-  performed specifically for lenders."**
+- **Real estate appraisal.** G.S. 93E-1-4 defines it as an analysis, opinion or conclusion about the
+  value of identified real estate or an interest in it, performed for compensation or other valuable
+  consideration. G.S. 93E-1-2.1 generally requires the Appraisal Board credential.
+- **Comparative Market Analysis (CMA) / Broker Price Opinion (BPO).** G.S. 93E-1-4 and 93A-82 define
+  these as a licensed broker's estimate of a parcel's probable **selling or leasing price**, supported
+  by property, market, neighbourhood and comparable information; an automated valuation model is not a
+  CMA/BPO.
 
-That note is an examination instruction, and it is narrow on purpose. Whatever a BPO may be used for in
-the wider market, the national section of the licence examination treats it as **a lender product.** A
-student who answers from general practice rather than from that definition will lose the item.
+The Syllabus also says: **"On the National exam section, BPOs are performed specifically for lenders."**
+Treat that as an examination convention, **not as a complete North Carolina practice rule**. Article 6
+of Chapter 93A permits a qualified broker to prepare a CMA/BPO for several listed parties and purposes.
+It also says the opinion cannot be the primary basis for determining value for mortgage-loan origination
+and cannot be called a valuation or appraisal. A fee opinion carries additional writing, content,
+license-status and disclaimer requirements under G.S. 93A-83.
 
-The distinction that matters underneath the vocabulary is authorship. An **appraisal** is an opinion of
-value produced by a **licensed or certified appraiser** under professional standards. A **CMA** and a
-**BPO** are produced by a **broker**. They can rest on similar reasoning — the Commission says so in the
-Level 3 note above — but they are not appraisals and must never be presented as appraisals.
+The safe distinction is the product and authority used. A **broker license alone** supports a lawful
+CMA/BPO estimating probable selling or leasing price. It does not authorize the broker to hold the work
+out as an appraisal. A registered trainee may participate in appraisal work under the immediate personal
+direction of a certified appraiser, with the report reviewed and signed as G.S. 93E-1-3(a) requires.
 
 ### A.2 Purpose
 
@@ -67,26 +73,26 @@ The Commission asks for the **purpose** of appraisal as its own subtopic.
 
 ### A.3 Regulation of appraisers
 
-**Federal.** The **Financial Institutions Reform, Recovery, and Enforcement Act (FIRREA)**:
+**Federal framework.** The Syllabus's phrase that FIRREA “created” The Appraisal Foundation is historical
+shorthand and is not literally correct. The Foundation was established by appraisal organizations in
+1987. Congress enacted FIRREA in 1989 and authorized the Foundation as the source of appraisal standards
+and appraiser qualifications within the federal/state regulatory system.
 
-- *"Provided guidelines for regulating financial institutions"*
-- *"Included amendments to improve competency of appraisers"*
-- *"Created Appraisal Foundation"*
+**Standards and qualifications.** The Foundation's Appraisal Standards Board develops **USPAP**; its
+Appraiser Qualifications Board develops minimum qualification criteria. **USPAP is a body of ethical and
+performance standards, not an appraisal form.** The Foundation identifies the 2024 USPAP edition as the
+current edition with no scheduled end date as of this module's 2026-09-07 control date. This broker
+prelicensing module does not attempt to teach or reproduce the copyrighted USPAP text.
 
-**The Appraisal Foundation** (the Syllabus prints www.appraisalboard.org):
+**State regulator.** Chapter 93E creates the **North Carolina Appraisal Board**, which administers state
+appraiser credentials and rules. That is a different body from the **North Carolina Real Estate
+Commission**, which licenses brokers and regulates a broker's CMA/BPO activity under Article 6 of
+Chapter 93A. Direct a complaint according to the capacity and conduct involved; do not assume every
+pricing dispute belongs to one agency merely because a broker or appraiser participated.
 
-- *"Developed appraisal standards"*
-- *"Established minimum qualifications for appraisers"*
-
-**State.** **"State licensing and certification by NC Appraisal Board"** (https://www.ncappraisalboard.org/).
-
-**Standards.** **"Uniform Standards of Professional Appraisal Practice (USPAP) appraisal form."**
-
-Two regulators, and they are different bodies with different jobs. The **North Carolina Real Estate
-Commission** licenses brokers. The **North Carolina Appraisal Board** licenses and certifies appraisers.
-A broker complaint goes to the Commission; an appraiser complaint goes to the Board. **This project has
-not read USPAP, FIRREA, or any North Carolina Appraisal Board rule**, and states no appraiser
-qualification, standard, or requirement beyond the Syllabus's listing above.
+**Report form.** The **Uniform Residential Appraisal Report (URAR)** is the appraisal reporting product
+used in the form activity below. It is separate from USPAP. During the current GSE transition, a legacy
+Fannie Mae Form 1004/Freddie Mac Form 70 and the new data-driven UAD 3.6 URAR may both be encountered.
 
 ---
 
@@ -131,25 +137,32 @@ cannot be transferred.
 
 **Required Activity, transcribed: "Provide examples of how each affects value."** Delivered in this
 module's worked material, and the examples are drawn from concepts already taught in this course —
-Module NC-04's zoning and land-use controls for government controls, Module NC-04's environmental
+Module NC-03's zoning and land-use controls for government controls, Module NC-05's environmental
 material for environmental conditions — so students see the connection rather than a fresh list.
+
+| Force or factor | Worked example | What the broker may conclude |
+|---|---|---|
+| **Social trend** | More local buyers seek a home office after work patterns change. | Otherwise similar homes with a functional extra room may command more demand; verify this in current market evidence rather than assuming a fixed adjustment. |
+| **Economic force** | Major local employment contracts while mortgage rates rise. | Purchasing power and demand may fall, lengthening marketing time; the effect and effective date must be supported by current data. |
+| **Government control or regulation** | A parcel is rezoned from residential to mixed use. | Legally permissible uses change, so highest and best use and market participants may change; zoning alone does not prove value increased. |
+| **Environmental condition** | A property borders a noisy industrial use or lies in a mapped flood-hazard area. | Marketability, insurance or buyer demand may be affected; disclose known material facts and use competent data rather than guessing a dollar loss. |
 
 ### B.5 Basic economic principles of value *(Level 2 — this subtopic)*
 
 **Required Activity, transcribed: "Provide an example of each principle."** Nine principles, each with an
 example, and four of them carry the Commission's own notes:
 
-| Principle | The Commission's note |
-|---|---|
-| **Anticipation** | — |
-| **Change** | — |
-| **Competition** | — |
-| **Conformity** | — |
-| **Contribution** | *"This principle is based on the improvement's **increasing or diminishing return, not on its cost**."* |
-| **Highest and Best Use** | *"There is **only one** highest and best use at any given time **but it can change over time**. This principle is **a major factor for the appraisal process**."* |
-| **Plottage** | *"**Combination or merger of adjacent lots into a single large parcel will generally result in a higher value than the combined values of the individual lots. Assemblage is the merger process.**"* |
-| **Substitution** | *"This principle is **the basis for the Sales Comparison Approach** to value."* |
-| **Supply and Demand** | *"In real estate, it is frequently seen as a **buyer's market or a seller's market**."* |
+| Principle | Worked example | Commission boundary to remember |
+|---|---|---|
+| **Anticipation** | Buyers pay today for the expected benefit of a planned transit stop, after discounting approval and completion risk. | Value reflects expected future benefits, not a guaranteed future event. |
+| **Change** | A stable residential corridor becomes a redevelopment area over several years. | Physical, economic, social and governmental conditions do not stay fixed. |
+| **Competition** | Strong demand for one apartment type attracts new projects until added supply pressures rents. | Profit invites competing supply. |
+| **Conformity** | A modest house in a neighbourhood of similar homes usually fits buyer expectations better than an overbuilt house on the same street. | Maximum value tends to occur where use and quality are reasonably compatible. |
+| **Contribution** | A $60,000 kitchen adds $30,000 in supported market reaction. | The principle concerns increasing or diminishing return, **not cost**. |
+| **Highest and Best Use** | A legally rezoned corner parcel may support a use different from its current house, but only after legal, physical, financial and productivity analysis. | There is **one** highest and best use at a time, and it can change. |
+| **Plottage** | Two adjoining lots are worth $110,000 and $120,000 separately but $250,000 as one usable site. | Assemblage is the merger process; the $20,000 value increment is plottage. |
+| **Substitution** | A buyer will not pay $420,000 for a house when an equally desirable substitute is available for $400,000. | This is the basis of the Sales Comparison Approach. |
+| **Supply and Demand** | Ten similar listings and two active buyers indicate different negotiating pressure from two listings and ten buyers. | The market may be described as buyer- or seller-favoured, but the evidence and market date control. |
 
 Four of those notes deserve a sentence each.
 
@@ -217,9 +230,18 @@ Approach, where land is estimated separately and **never depreciated.**
 >
 > ***"Cannot use currently listed or under contract property as a comp."***
 
-That last rule is absolute and it is examinable. A **listing** is an asking price — evidence of what a
-seller hopes for, not of what a buyer paid. A property **under contract** has a price that has not yet
-survived appraisal, financing or due diligence. Only a **closed sale** is a comp.
+Those are the Commission's classroom rules for selecting **closed-sale comparables**. Do not enlarge
+them into a claim that listings and pending sales are useless. The current UAD 3.6 URAR separately
+reports active-listing and pending-sale market metrics, subject listing history, and may identify
+additional properties analyzed but not used in the sales grid. A listing is not a closed sale; it can
+still inform supply, competition, marketing time or trend analysis. The finished appraisal must explain
+the data actually relied upon.
+
+The Syllabus's “3-4” figure is also a course exercise baseline, not a universal form limit. Fannie Mae's
+official completed SF5 sample displays five settled-sale comparables after a reconsideration of value,
+and identifies another settled sale as analyzed but not used. The defensible rule is **enough relevant,
+verified market evidence for credible results**, with the course exercise using the prescribed 3-4
+closed-sale baseline unless the activity says otherwise.
 
 **Adjustments to sale prices of comparables.** The single most important rule in this section, in the
 Commission's own words:
@@ -253,6 +275,23 @@ It is the answer to *"no standard for adjustment amounts"* — the market suppli
 appraiser does not invent it. And it is a direct application of **contribution** from B.5, which the
 Commission said is measured by return and not by cost.
 
+#### D.1.c Required Activity evidence — superior and inferior adjustment lab
+
+Assume verified paired-market evidence supports a **$15,000** garage adjustment and a **$10,000**
+condition adjustment. The subject has a garage and average condition.
+
+| Closed sale | Sale price | Difference from subject | Adjustment to comp | Adjusted indication |
+|---|---:|---|---:|---:|
+| Comp A | $405,000 | No garage; otherwise similar | **+$15,000** because comp is inferior | **$420,000** |
+| Comp B | $438,000 | Garage plus superior condition | **−$10,000** because comp is superior in condition | **$428,000** |
+| Comp C | $421,000 | Garage; average condition; most similar | $0 | **$421,000** |
+
+The subject is never adjusted. Comp A moves up to the subject's garage feature; Comp B moves down to the
+subject's condition. The adjusted range is **$420,000-$428,000**. Comp C deserves the greatest weight
+because it required no adjustment, but “no adjustment” does not mechanically make it perfect; verify
+location, sale terms, date, data quality and every remaining difference. A supportable CMA would explain
+why the probable-price range is concentrated near the best evidence rather than report a blind average.
+
 **Reconciliation and determination of the value estimate:**
 
 > *"Adjusted sales prices of comps should provide a **tight range of value**."*
@@ -261,9 +300,10 @@ Commission said is measured by return and not by cost.
 > *"**Weighted averaging.**"*
 
 Averaging treats a comp that needed $2,000 of adjustment and a comp that needed $40,000 of adjustment as
-equally good evidence. They are not. The comp that needed least adjustment was most like the subject and
-deserves most weight. And if the adjusted figures do **not** form a tight range, the message is that the
-comps were poorly chosen — go back to selection, do not average the spread away.
+equally good evidence. They may not be equally persuasive. Similarity, data quality and market support
+all affect weight; gross or net adjustment size is not an automatic ranking formula. If the adjusted
+figures do **not** form a tight range, recheck selection, verification and adjustment support rather than
+average the disagreement away.
 
 ### D.2 Cost Approach
 
@@ -276,9 +316,10 @@ comps were poorly chosen — go back to selection, do not average the spread awa
 > of worship, schools, public buildings) **or newly constructed buildings that do not have comparable
 > sales data available.**"*
 
-The reason is the absence of comps. A church, a school, a courthouse — nothing comparable sold last
-quarter. And a brand-new building has no sales history at all, but its cost is known precisely and its
-depreciation is near zero, which is exactly the condition under which this approach is strongest.
+The reason is limited comparable-sale evidence. A church, school or public building may have few useful
+sales. New construction may have more supportable current-cost data and limited accrued depreciation,
+but neither cost nor depreciation is automatically “precise.” The scope, data and property determine how
+much weight the approach deserves.
 
 #### D.2.b Estimate of land (lot) value
 
@@ -325,11 +366,11 @@ by tax law. The two share a word and nothing else.
   - **Functional obsolescence** — **curable and incurable**
   - **Economic (external or locational) obsolescence** — ***incurable only***
 
-That last line is the examinable one. **External obsolescence is incurable, always** — and the reason is
-structural, not a matter of expense. Physical deterioration and functional obsolescence are defects *in
-the property*, so the owner can at least in principle fix them. External obsolescence comes from
-*outside the boundary line* — a new industrial use across the road, a change in the neighbourhood, a
-highway realignment. The owner does not own the cause and therefore cannot cure it at any price.
+That last line is the Commission's examinable classification: **economic/external/locational
+obsolescence — incurable only.** The classroom reason is structural rather than a repair-budget choice.
+Physical deterioration and functional obsolescence arise in the property and may be classified curable
+or incurable. External obsolescence arises beyond the property — for example, a neighbouring industrial
+use or highway realignment — so the property owner cannot cure the external cause.
 
 #### D.2.e Steps in formulating the opinion of value
 
@@ -359,7 +400,10 @@ The Commission limits this part explicitly to **two methods.**
 
 Both halves of that note are examinable and students routinely keep only the first. Hold the inverse
 relationship: at a fixed income, a **higher** cap rate produces a **lower** value. That falls straight out
-of the formula below — the cap rate is the divisor.
+of the formula below — the cap rate is the divisor. For the Syllabus exercise, “higher rate, higher risk”
+is the required shorthand; in live valuation a market-derived cap rate reflects the market's required
+return and multiple property, income, growth, liquidity and risk considerations. It is not a standalone
+risk score.
 
 #### D.3.b Direct capitalization method
 
@@ -438,32 +482,87 @@ itself, and it is examinable.
 > *"**Weighted consideration is preferable to averaging** of the approaches; **greater weight given to the
 > approach that is best for that particular type of property.**"*
 
-The same principle as D.1's weighted averaging, one level up. For a single-family house, sales comparison
-carries the weight — the Commission called it *"most reliable and most commonly used"* for exactly that
-property type. For a church, the cost approach does. For an apartment building, the income approach.
-Averaging three approaches equally would drag the best evidence toward the worst.
+The same principle as D.1's weighting, one level up. For a single-family house, sales comparison often
+carries the weight when current comparable evidence is strong. For a special-use property, cost may be
+more informative. For an income-producing property, income evidence may be central. This is not a
+property-type lookup table: the appraiser explains which approaches were necessary for credible results
+and why the available evidence supports the final opinion. A simple arithmetic average conceals that
+judgment.
 
 > **Required Activity, transcribed:** *"Show students on the appraisers' Uniform Residential Appraisal
 > Report (URAR) form **where the appraiser reconciles the approaches used in the appraisal to arrive at a
 > single opinion of value**."*
 
+#### D.4.a Required Activity evidence — completed URAR walkthrough
+
+The course uses Fannie Mae and Freddie Mac's official **Single Family Scenario 5 (SF5)**. Fannie Mae
+identifies SF5 as the most representative straightforward sample. The retained teaching copy contains
+the publisher's scenario cover plus all 19 pages of the completed, data-driven UAD 3.6 URAR. It is an
+illustrative fictional scenario, not an appraisal of North Carolina property and not a StateCourse
+representation that every entry independently satisfies every law or professional standard.
+
+Open `fannie-uad36-sf5-completed-sample.pdf` with the student and complete this guided review:
+
+1. **PDF page 2 / report page 1 — Summary.** Locate the $350,000 Opinion of Market Value, the “As Is”
+   condition, effective date, assignment reason, property-valuation method and appraiser identity. The
+   summary is the destination, not the explanation.
+2. **PDF pages 9-10 / report pages 8-9 — Market.** Locate active-listing and pending-sale counts,
+   marketing time, price trend, subject listing information and prior-transfer analysis. This proves why
+   a nonclosed property can inform market analysis without becoming a closed-sale comp in the grid.
+3. **PDF pages 11-14 / report pages 10-13 — Sales Comparison Approach.** Trace five settled-sale
+   comparables. Read every adjustment as an adjustment to the **comparable**, not the subject. On report
+   page 11, the first three adjusted prices are $348,000, $350,000 and $353,500 and receive “Less”
+   weight. On report page 13, comparables 4 and 5 adjust to $360,000 and $359,500 and receive “Most”
+   weight. The report still states an indicated Sales Comparison value of $350,000; therefore a weight
+   label is evidence to analyze, not an instruction to calculate a weighted average from disclosed
+   percentages.
+4. **PDF page 14 / report page 13 — Reconciliation within the approach.** Read the narrative beneath
+   the additional-comparable grid and identify the settled sale analyzed but not used. The report
+   explains why data was considered, included or excluded.
+5. **PDF page 16 / report page 15 — Reconciliation across approaches.** Locate the `Reconciliation`
+   block. It records $350,000 for the Sales Comparison Approach and says the Income and Cost approaches
+   were “Not Necessary for Credible Results.” Immediately below, `Appraisal Summary` carries the single
+   $350,000 Opinion of Market Value. This is the exact form location and movement the Required Activity
+   asks students to find.
+6. **PDF page 17 / report page 16 — Revision history.** The borrower-initiated reconsideration of value
+   added two reliable sales to the grid, left another as analyzed-not-used, and changed the opinion.
+   Reconciliation is therefore an explained conclusion that can change with credible evidence, not a
+   hidden average.
+
+#### D.4.b 2026 transition — do not teach one form as the only live format
+
+The retained blank **legacy Form 1004** places its approach indications and final opinion in the lower
+`RECONCILIATION` portion of page 2. The new UAD 3.6 URAR uses a dynamic report and no longer depends on
+legacy form numbers. The official transition timeline reviewed on **2026-09-07** says:
+
+- through **November 1, 2026**, broad production permits UAD 2.6 or UAD 3.6 submissions;
+- beginning **November 2, 2026**, all new UCDP submissions must use UAD 3.6;
+- qualifying revisions to UAD 2.6 reports submitted by November 1 remain allowed during the pipeline
+  period, which ends **May 3, 2027**.
+
+At delivery, recheck the official Fannie Mae/Freddie Mac timeline. A date-sensitive transition rule is
+not frozen forever by this course file.
+
 ---
 
-## Required Activities in this section — all five must be completed
+## Required Activities in this section — all five are now delivered
 
 1. **Provide examples of how each force and factor affects value** (B.4). **Delivered.**
 2. **Provide an example of each economic principle of value** (B.5). **Delivered** — all nine.
 3. **Provide examples of how adjustments are made to the sales prices of superior and inferior comps**
-   (D.1). **Delivered** — worked both directions, with paired sales analysis.
+   (D.1). **Delivered** — worked both directions, with a numeric range and paired-sales boundary.
 4. **Use a sample appraisal completed on a Uniform Residential Appraisal Report (URAR) form for
-   illustration** (D.1). **← OUTSTANDING. This project has not obtained a URAR form or any completed
-   sample appraisal. Submission gate.**
+   illustration** (D.1). **Delivered** — official GSE UAD 3.6 SF5 completed sample, all 20 retained pages
+   visually reviewed against extracted text.
 5. **Show students on the URAR form where the appraiser reconciles the approaches** (D.4).
-   **← OUTSTANDING**, same form, same gate.
+   **Delivered** — guided report-page/PDF-page map to the within-approach and across-approach
+   reconciliation blocks and single opinion of value.
 
-**No document in this build reproduces, describes or paraphrases any line, box, grid, section number or
-entry of the URAR form**, because it has not been obtained. What this module teaches is the reasoning the
-form records — selection, adjustment, reconciliation, weighting — which is what Part D actually examines.
+Evidence is retained at
+`north-carolina/regulatory/captures/2026-09-07/module-13-appraisal/`. The 302-page official combined
+publisher artifact is preserved; the 20-page SF5 teaching derivative consists only of source PDF pages
+271-290. Hashes, extracted text, 28 individual page renders and visual-review observations are recorded
+in `page-reviews.json`.
 
 ## Module NC-13 engagement check
 
@@ -472,29 +571,27 @@ applied threshold are **StateCourse standards**; the **75 percent** end-of-cours
 Commission's, under Commission Rule 58H .0207 as the Syllabus quotes it.
 
 Given the **11-item national examination weight** — the second heaviest in the course — this module's
-items are weighted toward the Level 3 subtopic: comp selection, the direction of an adjustment, the
-prohibition on adjusting the subject, the prohibition on using listings and pendings as comps, and
-weighted rather than simple averaging. The Level 2 items cover depreciation categories, the incurability
-of external obsolescence, the exclusion of debt service from NOI, and the property class each income
-method serves.
+items are weighted toward the Level 3 subtopic: separating closed-sale comps from other market data, the
+direction of an adjustment, the prohibition on adjusting the subject, and reasoned weighting rather
+than simple averaging. The Level 2 items cover depreciation categories, the Syllabus classification of
+external obsolescence, the exclusion of debt service from NOI, and the property class each income method
+serves.
 
 ---
 
 ## Instructor source note for Module NC-13
 
-Drawn from **Section XIII** of the Commission's Prelicensing Course Syllabus, March 2024 Edition amended
-May 2026, read on 2026-08-20. Every Instructor Note, Required Activity, formula and structural statement
-above is **transcribed from the Syllabus**, with the single exception identified openly in the GRM
-instructor note, where the Syllabus's two formula lines contradict each other and this module follows the
-Commission's own definition of GRM.
+The course outline, levels, examination weight, required activities and quoted classroom propositions
+come from **Section XIII** of the Commission's Prelicensing Course Syllabus, March 2024 Edition amended
+May 2026. Current-law and current-form boundaries were reconciled on **2026-09-07** against **G.S.
+93E-1-2.1, 93E-1-3 and 93E-1-4; G.S. 93A-82 and 93A-83; The Appraisal Foundation's current USPAP and
+history pages; the Fannie Mae UAD 3.6 resource/timeline pages; the official completed SF5 sample; and
+legacy Fannie Mae Form 1004**.
 
-**Not read in their own text, and therefore not the source of any statement in this module:** the
-**Uniform Standards of Professional Appraisal Practice (USPAP)**; **FIRREA**; any **Appraisal Foundation**
-standard or qualification criterion; any **North Carolina Appraisal Board** statute or rule; the **Uniform
-Residential Appraisal Report (URAR)** form; any **completed sample appraisal**; **NCGS Chapter 93A** and
-**21 NCAC 58**; and the **North Carolina property tax statutes** bearing on assessment.
-
-**No appraiser licence classification, education requirement, fee, USPAP standard number, assessment
-ratio or statutory assessment cycle is stated.** Where a student or instructor needs one, the module
-routes to the **North Carolina Appraisal Board** — a different regulator from the Commission — and never
-to this text.
+**Source limitation.** The full copyrighted 2024 USPAP publication was not reproduced or used to teach
+individual Standards Rules; the official Foundation overview supplies only the limited current-edition,
+standards/qualifications and FIRREA-history facts stated here. The complete North Carolina Appraisal
+Board rulebook was not used to state appraiser education, experience, scope or fee requirements. Those
+requirements are outside this broker-prelicensing module and must be checked with the Board. The
+official GSE sample is used to teach report navigation and reconciliation, not to promise that a live
+assignment will display identical fields or pages.

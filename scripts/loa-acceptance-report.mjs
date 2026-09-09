@@ -47,8 +47,8 @@ const check = (label, ok, detail) => ({ label, ok: Boolean(ok), detail });
 const checks = [];
 const blockers = [];
 
-function tryRun(cmd, args) {
-  try { return { ok: true, out: execFileSync(cmd, args, { cwd: root, encoding: "utf8", stdio: "pipe" }) }; }
+function tryRun(cmd, args, options = {}) {
+  try { return { ok: true, out: execFileSync(cmd, args, { cwd: root, encoding: "utf8", stdio: "pipe", ...options }) }; }
   catch (error) { return { ok: false, out: `${error.stdout || ""}${error.stderr || ""}` }; }
 }
 const readJson = (rel) => { try { return JSON.parse(fs.readFileSync(path.join(root, rel), "utf8")); } catch { return null; } };
@@ -71,7 +71,7 @@ const videoFreeze = readJson("texas/tx-law-of-agency-30-v1/video-plan-freeze.jso
 const videoValidate = tryRun("node", ["scripts/validate-loa-video-packages.mjs"]);
 checks.push(check("2. video plan frozen, and the curriculum freeze points at the freeze rather than the plan", Boolean(videoFreeze) && videoValidate.ok,
   videoFreeze
-    ? `${videoFreeze.freezeId} over ${videoFreeze.artifacts?.length ?? 0} artifacts, superseding ${videoFreeze.supersedes?.freezeId ?? "no prior freeze"}; package validator ${videoValidate.ok ? "passes" : "FAILS"}`
+    ? `${videoFreeze.freezeId} over ${Object.keys(videoFreeze.artifacts || {}).length} artifacts, following ${videoFreeze.previousFreeze?.freezeId ?? "its first recorded freeze"}; package validator ${videoValidate.ok ? "passes" : "FAILS"}`
     : "no video freeze artifact"));
 
 /* 3 ── topic and unit coverage ──────────────────────────────────────────────────────────────── */
@@ -287,7 +287,14 @@ checks.push(check("22. the confidential bank reaches no served tree", servedOffe
     : `REFERENCED FROM: ${servedOffenders.join(", ")}`));
 
 /* 23 ── regression suite ────────────────────────────────────────────────────────────────────── */
-const testRun = tryRun("node", ["--test", ...fs.readdirSync(path.join(root, "tests")).filter((f) => f.endsWith(".test.mjs")).map((f) => `tests/${f}`)]);
+/* The suite contains a test that validates acceptance-report.json itself. During regeneration that
+   one assertion must not make the new report depend on the stale report it is replacing; the normal
+   post-generation suite runs without this flag and validates the newly written artifact. */
+const testRun = tryRun(
+  "node",
+  ["--test", ...fs.readdirSync(path.join(root, "tests")).filter((f) => f.endsWith(".test.mjs")).map((f) => `tests/${f}`)],
+  { env: { ...process.env, STATECOURSE_ACCEPTANCE_REBUILD: "1" } },
+);
 const testCounts = testRun.out.match(/# pass (\d+)[\s\S]*?# fail (\d+)/);
 checks.push(check("23. full regression suite", testRun.ok && testCounts && testCounts[2] === "0",
   testCounts ? `${testCounts[1]} passing, ${testCounts[2]} failing` : "test suite did not report"));
@@ -299,7 +306,6 @@ blockers.push(`TX_PROVIDER_RULE_SOURCE_LOCK is ${providerLock.status} — ${prov
 blockers.push("the codified 22 TAC text has never been read from this environment; the rules are held from TREC's published copy and the difference is recorded in trec-rules-source-lock.mjs");
 blockers.push("StateCourse holds no TREC qualifying-education provider approval, and no course application has been filed for LOA-1");
 blockers.push("no STUDENT-facing surface exists. The engine workflow and accessibility are demonstrated against a reviewer-only, non-credit surface at texas/tx-law-of-agency-30-v1/reviewer-surface, which is not served, not linked and carries noindex. A student-facing deployment, and testing with real assistive technology and real users, remain outstanding.");
-blockers.push("no video has been produced. The video plan is frozen and validated, and the transcripts are the primary artifact; every proposition a segment would state is stated in the module text, so no student is dependent on an unproduced video — but the segments themselves are unbuilt.");
 blockers.push("the claim auditor is anchored on the section symbol and cannot see prose-form citations; the mechanical-pass figures describe symbol-anchored citations only, and correcting the shared engine will alter hashed ledgers for Principles II as well as this course");
 blockers.push("certificate issuance and four-year record retention are implemented and refused/recorded in the engine, but neither has been exercised against a real completion because no credit may be awarded without TREC approval");
 checks.push(check("24. submission-readiness blockers recorded", true, `${blockers.length} standing blockers, none clearable from this repository`));

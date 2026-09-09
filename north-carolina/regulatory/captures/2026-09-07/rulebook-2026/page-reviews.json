@@ -1,0 +1,691 @@
+{
+  "reviewedOn": "2026-09-07",
+  "id": "NC-NCREC-LAW-RULES-2026",
+  "title": "North Carolina Real Estate License Law and Commission Rules",
+  "sourceFile": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/NCRECLawAndRules.pdf",
+  "pdfSha256": "5c55cbd14b43299b42a5110fcb140246840205447f1d7b5121f73ec466c2edec",
+  "textPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/NCRECLawAndRules.txt",
+  "textSha256": "7f29775ef2c7f88eea962fb048a15fbbd1214d4c71d35f4581dabd80ef35f07b",
+  "pageCount": 126,
+  "revisionObservation": "Official NCREC January 2026 compilation; PDF metadata created December 10, 2025 and modified January 15, 2026. It is paired with the Commission’s official April/July 2026 approved-rules notice for rules amended after publication.",
+  "reviewObservation": "All 126 pages were rendered and visually inspected in eleven ordered contact sheets. Cover, contents, License Law, Commission Rules and License Law and Rules Comments are present and legible without clipping or overlap. Pages 2, 51, 101 and 102 are intentional divider or blank pages; page 126 is the back cover.",
+  "pages": [
+    {
+      "number": 1,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-001.png",
+      "sha256": "fd723f50476283b194a0ce9c9e98def2c4e633bc2fc8e5557560fd814fba6fbc"
+    },
+    {
+      "number": 2,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-002.png",
+      "sha256": "95bd44d3002b1607a711d35736d3ec23f167e817504f057d3770c2ecac3ad63c"
+    },
+    {
+      "number": 3,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-003.png",
+      "sha256": "7336b918c0fdc7215130ac0663c74d9f505aeda4989990f2aca3c91a38d289ae"
+    },
+    {
+      "number": 4,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-004.png",
+      "sha256": "3862ecd54291e7ba9e25953b4c51a7e3c70f6b012ba6feceedebfac371357bd6"
+    },
+    {
+      "number": 5,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-005.png",
+      "sha256": "81310dd49b03bcfc70adf2732afbda9805abc2738ae2a66d4cabf57a10a7643b"
+    },
+    {
+      "number": 6,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-006.png",
+      "sha256": "f31871d98e4bfadea88b316cf4fb249a100315f01e2bffc78327823809e39ae3"
+    },
+    {
+      "number": 7,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-007.png",
+      "sha256": "b2812c1199d65873ccb6f8c16af5905b1040ea7b7e6ac47028b2264926b018a7"
+    },
+    {
+      "number": 8,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-008.png",
+      "sha256": "13ad74e45f589e90a0e8b2a386b012edca7c950be729a6b954401b3defc8d20a"
+    },
+    {
+      "number": 9,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-009.png",
+      "sha256": "b57e16d4d1cf6c512123d081a88b5f2301d429611f3c11a7addd1c310110e1cd"
+    },
+    {
+      "number": 10,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-010.png",
+      "sha256": "dc8a54c8a88234b366c6689a0fbcb4a3bb00c960eb1198166b1ba22e8b03a5dd"
+    },
+    {
+      "number": 11,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-011.png",
+      "sha256": "9dbe1932ba3b361732979432c730a829987584730584be614f2161d9ae17c8fd"
+    },
+    {
+      "number": 12,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-012.png",
+      "sha256": "32e66d5d2beb87a555b4c60e8bca9d723b48358b33d3cb0c27b3cb048d9d99b9"
+    },
+    {
+      "number": 13,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-013.png",
+      "sha256": "496f6ecbf892c989fd68d2c7f23bcf649efd0d8d23680626c4d42e5b38222dd5"
+    },
+    {
+      "number": 14,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-014.png",
+      "sha256": "2b80426a97d0ff9bb03e52f538a91113dd20699c5dcb30b3ab1f770c993edac0"
+    },
+    {
+      "number": 15,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-015.png",
+      "sha256": "2cef932d9d42aa4d7d1815a29c4cc1d00702065a008d7f10a2e764c842c728e4"
+    },
+    {
+      "number": 16,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-016.png",
+      "sha256": "0a2b23f7387751931970189b65bf8c6a32dc0bd65a32731336f94c2555dd4d48"
+    },
+    {
+      "number": 17,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-017.png",
+      "sha256": "e12e349913d4b4bd7568e0dd47f048ef92b4f5c1e28add984e57679b2b78f95a"
+    },
+    {
+      "number": 18,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-018.png",
+      "sha256": "aa04cced4ef024a16887b14cc562035a5015aa8ce7d5004afabdd5d54bb3b405"
+    },
+    {
+      "number": 19,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-019.png",
+      "sha256": "606e3edf2773504cc562388a688cbe8baf27c96a22187bab6a5f4b8bc538f3dd"
+    },
+    {
+      "number": 20,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-020.png",
+      "sha256": "6559b2c1ca8a97822eb00f266b7bbf05128413f038b71659ff01127f42b028be"
+    },
+    {
+      "number": 21,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-021.png",
+      "sha256": "3b14f083da81d40e05d02f353aa89540f1683db10b11ca8be56621a974943a46"
+    },
+    {
+      "number": 22,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-022.png",
+      "sha256": "32cc0cf04ab981d73ff5e7f957bd86a9028eaf88aeac3af4d2dc4268f9902069"
+    },
+    {
+      "number": 23,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-023.png",
+      "sha256": "3bac504d5bba1e4b3ae565b3fb2f3aa41568c39a1dbeaa350e29cbe1ea2d417c"
+    },
+    {
+      "number": 24,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-024.png",
+      "sha256": "2a63565854f2765cfb7b7713948ca7073c2df72ea8701983450ba909d9335482"
+    },
+    {
+      "number": 25,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-025.png",
+      "sha256": "c6a7d14403daf4b55fc44b51b9946afb1bed82f03d880a7c97852b4e6a1ab045"
+    },
+    {
+      "number": 26,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-026.png",
+      "sha256": "0e5d327328b82dcf751f979a5f1aac97e1cccf6b6f43b807c4f1a10e4b1eab1b"
+    },
+    {
+      "number": 27,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-027.png",
+      "sha256": "a4341585d192002e312d8e5b5409d03678722a5b86c8fdd12f8cca74b557d471"
+    },
+    {
+      "number": 28,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-028.png",
+      "sha256": "f9d59bd073cd44302441785bc1728d27e62dc21cb56f64622db2534caedf7fcc"
+    },
+    {
+      "number": 29,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-029.png",
+      "sha256": "fd5ca605625a5ef21fe204478bdeca701d9b3b2ddd0a1ffa73584a7c478b0791"
+    },
+    {
+      "number": 30,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-030.png",
+      "sha256": "7b1d25dd3c5cf6db3df49823b68166dfce9538c62a09c1f6e6a89e94d0909692"
+    },
+    {
+      "number": 31,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-031.png",
+      "sha256": "7dbbbee2095d514312773bdbb87c705b3a58c8ea59ed374018738962bcd28bf2"
+    },
+    {
+      "number": 32,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-032.png",
+      "sha256": "d0872f031b1a20a4eaf643eda4d18bc167555d81c49ead67326d0bd928ea8e6b"
+    },
+    {
+      "number": 33,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-033.png",
+      "sha256": "5c92b82fa2000ea0856ba13306efbba44dbbcdbb26332990ec5b81a10797d0e8"
+    },
+    {
+      "number": 34,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-034.png",
+      "sha256": "49499cb717b2158859aca58e07aefff0691cdd102f4c747d462acf97938c2b0b"
+    },
+    {
+      "number": 35,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-035.png",
+      "sha256": "3af600e53110872eac4c77a8af993eaf178ae78bc8d1abe8ae99390dfc145856"
+    },
+    {
+      "number": 36,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-036.png",
+      "sha256": "d22662d936c3efd1261b1e60a57ecb57d099e5dd389bba9abd017fe3db43d9a6"
+    },
+    {
+      "number": 37,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-037.png",
+      "sha256": "4bb662a18adc5e47424b092b757250ce12721427a59d436a68933f35995849c6"
+    },
+    {
+      "number": 38,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-038.png",
+      "sha256": "bbc92e5aca3b6b6bfe2a9616af0f368ebbbf25cb6b95e78c585644cc4cc2ea73"
+    },
+    {
+      "number": 39,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-039.png",
+      "sha256": "ba96864cc95eca3d5a1eaa7730e759adabd8653ce3110667dca347a02f8be116"
+    },
+    {
+      "number": 40,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-040.png",
+      "sha256": "6b226e0d6e2d361617d01de34f0e0307384bb6fa962e8e95ff8f2db74116f0ae"
+    },
+    {
+      "number": 41,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-041.png",
+      "sha256": "bd3d96a4d42b43d72d38b1051a6c04ef7e75527998b4fff80cf313b301b00e9c"
+    },
+    {
+      "number": 42,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-042.png",
+      "sha256": "0a00b5effbb621fdde95b3a7914883639ce2bc92a9c730bf0c7af826c8346f7b"
+    },
+    {
+      "number": 43,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-043.png",
+      "sha256": "258b2bf9a84560ff2dcc3396cafb70f3d64616697e81cb24688e4e8be43038b6"
+    },
+    {
+      "number": 44,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-044.png",
+      "sha256": "c06d8dc2918a5698d6cc56cfd0ed304821395ca1583bd175c60ca23b91db3378"
+    },
+    {
+      "number": 45,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-045.png",
+      "sha256": "4967591faf8453e8e0271c8c56799c9b3d35f6fc8ae30d98b6fefb42896cda1f"
+    },
+    {
+      "number": 46,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-046.png",
+      "sha256": "e79a02d2c6a6c11041c857e95549106518bfd8b5e0d411a2da1988da317b0310"
+    },
+    {
+      "number": 47,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-047.png",
+      "sha256": "00e8484e7455eebba3f5325d7234cc2b5bf6f9a201c1fe64ebf727badd545968"
+    },
+    {
+      "number": 48,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-048.png",
+      "sha256": "e3701e1a57d9e3ff4506dc861cd3a2869cdac5cab530789852f4087ef90c9a88"
+    },
+    {
+      "number": 49,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-049.png",
+      "sha256": "95fde7855932ed378526db9e4005debec52573b3bcbfa2bcb1902814dd19fec7"
+    },
+    {
+      "number": 50,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-050.png",
+      "sha256": "2f79e9158728a39f236f1dd6639a0b5ff8468db9f809802021286d1a3a2d4122"
+    },
+    {
+      "number": 51,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-051.png",
+      "sha256": "b5f53541ab40d81beee0beb9d9a8fd3d869d78b944ac2c3d6f0ff2a4b5bab813"
+    },
+    {
+      "number": 52,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-052.png",
+      "sha256": "1f20fa6a853faf4cb16a028f830a661f90011adf6d05677847a99fdd95bd50f7"
+    },
+    {
+      "number": 53,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-053.png",
+      "sha256": "b5b50dd174af95650138c32bd351de6cbe2df62a2345b939862af306bb913b74"
+    },
+    {
+      "number": 54,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-054.png",
+      "sha256": "a6af6825a5323eb5b36ae5409951d6e00a07148471deb7b96443f9b0fc4196cc"
+    },
+    {
+      "number": 55,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-055.png",
+      "sha256": "648bcbaf321281aa96406948077019c9a42202e187686fc840a84947ba7fb45b"
+    },
+    {
+      "number": 56,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-056.png",
+      "sha256": "efcd51922f83258f7704eff3a176b4b5a7965bb0f3cd048cf7e0dd3cd1b1c597"
+    },
+    {
+      "number": 57,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-057.png",
+      "sha256": "50c0cbd125655079c5e0d0455672528d673380f28e5c3a901e7f4bea28a2f061"
+    },
+    {
+      "number": 58,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-058.png",
+      "sha256": "7753ae9688bd09cc14ea5a58cc1795f8da95e1a6708e79e2ace1048693b0830d"
+    },
+    {
+      "number": 59,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-059.png",
+      "sha256": "4d37632baa181e661bd8286b0e062b1c57439a0db7c1e763d83e20ee2b0cc6f0"
+    },
+    {
+      "number": 60,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-060.png",
+      "sha256": "1a97913a601861b8a3f7f9dff539e8fb09561f9eaaaeadadcb9f11b56e5e25f7"
+    },
+    {
+      "number": 61,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-061.png",
+      "sha256": "f1472be46e4a33bea12717597af219ad0f89642891e617dd76523e1bc9ddb921"
+    },
+    {
+      "number": 62,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-062.png",
+      "sha256": "1084a3508bbe79400c369581133a4a94200e9cca3001a11ab52692b563582474"
+    },
+    {
+      "number": 63,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-063.png",
+      "sha256": "b18c05b8e6cf7cff06be7fe63b88bc10777c1ada41d95628358192ccca89f877"
+    },
+    {
+      "number": 64,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-064.png",
+      "sha256": "876a743e8021f66aa17e127403bd9331c65e92acd155442078e8cf8592ee430c"
+    },
+    {
+      "number": 65,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-065.png",
+      "sha256": "141e48084af95ab6cb74c606bcf6a406ec1f08ddc5686dcec74ebf9befcc5562"
+    },
+    {
+      "number": 66,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-066.png",
+      "sha256": "5e7ca7395f43db4e457de5c1e588cac256b91eafbc911902dfd7bfbccc91a902"
+    },
+    {
+      "number": 67,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-067.png",
+      "sha256": "55a3403b477a68e1bf11a4f914317b00fcc812cb7d09ea50a9b06e5012beda45"
+    },
+    {
+      "number": 68,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-068.png",
+      "sha256": "7a4c607d342e7e7293a41e30004502e34824710a931be1408d64323e33e177e9"
+    },
+    {
+      "number": 69,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-069.png",
+      "sha256": "9411c6cd616ae5fb473f2e19a2c7c605113565a0458ef900e63c2343aeb6a4f6"
+    },
+    {
+      "number": 70,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-070.png",
+      "sha256": "7265dfb05d059b4444cb561ac6bead403896b76a0ae24f6133bb12114a67e46a"
+    },
+    {
+      "number": 71,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-071.png",
+      "sha256": "d2a4e38352249ff07b7b16e1c21789b3a5ebdf9781a27d88f90283e0f0f8863b"
+    },
+    {
+      "number": 72,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-072.png",
+      "sha256": "bc63de7816b6764085bfd03cc8f4663f67624f0d92d9a3a72bbbf51612253a4b"
+    },
+    {
+      "number": 73,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-073.png",
+      "sha256": "fd753b604d99aeb101cccb4178769cc422ce63d18c2ae004fd1c5e0a20ab3de0"
+    },
+    {
+      "number": 74,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-074.png",
+      "sha256": "611e0dcb23c78cb0a46c86adbf3b5901b0adb2545fe6dd1d67b1626491e85d11"
+    },
+    {
+      "number": 75,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-075.png",
+      "sha256": "4f43736e7dfac688bcfa6c88af80621270fad88df401758d1d8910f8baec8b4d"
+    },
+    {
+      "number": 76,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-076.png",
+      "sha256": "2d829fadf79efbbfd94c71e72938f94c260b14f9119a8bf04c84f7b4f8db7a94"
+    },
+    {
+      "number": 77,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-077.png",
+      "sha256": "bb49d9e323bf6498cd0efe9085220794a35b06b69d0d7880e4e329dc5c7c921a"
+    },
+    {
+      "number": 78,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-078.png",
+      "sha256": "31b9a317da300aa1bc58a32eeb31660c0a847d8fc1b25da6aa6422993cc067b7"
+    },
+    {
+      "number": 79,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-079.png",
+      "sha256": "2359de7a23a4847d60b5fb70a4d1517564ccc8bd5f2ba89dc8906a604cfeed3a"
+    },
+    {
+      "number": 80,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-080.png",
+      "sha256": "c0d8c3e63dc2782438c3c651e9b52c442445b0d0b2606adfe02b70258babb556"
+    },
+    {
+      "number": 81,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-081.png",
+      "sha256": "fbee933e2af21612d159682e0f686b7bb5df2b0a672cfee42a76bbff1d9c1f37"
+    },
+    {
+      "number": 82,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-082.png",
+      "sha256": "fd5b6e987413828a3a54457a81e283722b16f10091ee7f9feccdfa062e61b8c5"
+    },
+    {
+      "number": 83,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-083.png",
+      "sha256": "5753d398fc07c4f7335a16a2b29a20119d3ceb751cc88b38d77e0c69ad3ebeeb"
+    },
+    {
+      "number": 84,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-084.png",
+      "sha256": "f3298cb8e211279b717a8d316a10f2ec1f834fe735ea68c58300ca084f30c9bd"
+    },
+    {
+      "number": 85,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-085.png",
+      "sha256": "3c4fe2841e0284464389b7b25db8be19559597d87c5127e164c046c782f6ec7e"
+    },
+    {
+      "number": 86,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-086.png",
+      "sha256": "57dd1ebbeaedc8a60b0c5ef4cd5a7cb88847855057b029d36075521438a5e177"
+    },
+    {
+      "number": 87,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-087.png",
+      "sha256": "b1cdea301c853b1f72a4a66d0c013e42ff3f100cef1ab7dc314707d2c8fb7e59"
+    },
+    {
+      "number": 88,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-088.png",
+      "sha256": "1e74bb8103f3d6cd3d135ef9e663f42b8c7caf15d56f0a038a1a381d9a668460"
+    },
+    {
+      "number": 89,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-089.png",
+      "sha256": "a841bb94c67f63a439ef4f00208b62140f8a20460fa383d23cc43ad405427965"
+    },
+    {
+      "number": 90,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-090.png",
+      "sha256": "f0d6b909b03200f568d4f870fa098533d96721130cef28302792a247af2418e5"
+    },
+    {
+      "number": 91,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-091.png",
+      "sha256": "8730bccc473dc0c08fc89d4b9b86a1a82c52008b0a9c9155bc52b18d78fe15a9"
+    },
+    {
+      "number": 92,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-092.png",
+      "sha256": "309cdda10b1fd1730976dbfeb36a35463fed2f3b01a108bae8319ff6181d6f35"
+    },
+    {
+      "number": 93,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-093.png",
+      "sha256": "8d7c2080905d0b13ed60f0bf5a6824da2dc2dd1041ad7cf85639af1aa3408b6d"
+    },
+    {
+      "number": 94,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-094.png",
+      "sha256": "cf1c257a942c7d4ae416a2ea0f1cef983d2c8543f668c5d9a4ffbb0f1fbec533"
+    },
+    {
+      "number": 95,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-095.png",
+      "sha256": "44df121396c133e4b5db2e74df4a1b9586bd6adccb6735f8cae04d593e7ca6c9"
+    },
+    {
+      "number": 96,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-096.png",
+      "sha256": "3fcb402fe92e477139740889910d392300b8e3cecdb9e538ea883cc26942d5fa"
+    },
+    {
+      "number": 97,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-097.png",
+      "sha256": "21f40d789993ae75ff023fa52647dd0228d3140eb2b0147ee40480067fbe49f0"
+    },
+    {
+      "number": 98,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-098.png",
+      "sha256": "d2c0f447ff6d15968b089dce77883bba0e7fd00cf9d3adcdba9cb039dcf6c534"
+    },
+    {
+      "number": 99,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-099.png",
+      "sha256": "a53ba5572212cd00dad1586524411c02acfe5bdc490fae777d5fdab0ca8e591e"
+    },
+    {
+      "number": 100,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-100.png",
+      "sha256": "137ad85a853488bb1cc43c90b0e652b639095976e56cd9aacd7c18d5946b258c"
+    },
+    {
+      "number": 101,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-101.png",
+      "sha256": "d58d09569be59841764831d7dbfc57ba088245ff6172cd2d916933f6d592d4ed"
+    },
+    {
+      "number": 102,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-102.png",
+      "sha256": "30e6c43a03540de75d9780407112b81d60af54ee13d484f0418c625ea8f7cf99"
+    },
+    {
+      "number": 103,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-103.png",
+      "sha256": "fb058a6ba220802c96d40d2813a8e9e33de42b4f7e7012af9411969d530919b2"
+    },
+    {
+      "number": 104,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-104.png",
+      "sha256": "70be809d2bc7295b3197108869815a1168c24915aa0cc90e25110316f51946c8"
+    },
+    {
+      "number": 105,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-105.png",
+      "sha256": "e2a710f5371c0e2d316e5c2abe20c6cf5669f2e90d2b870d5a12030f9fbbd06c"
+    },
+    {
+      "number": 106,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-106.png",
+      "sha256": "396a17069b9097abe3dca68ad87fcd6ed0787dcbe6983c65315ae9750469f12c"
+    },
+    {
+      "number": 107,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-107.png",
+      "sha256": "172ddd48f4e0ce560ba7775869ac09df1e2059f063e6b2a10dc0fc6c6f6bdf7b"
+    },
+    {
+      "number": 108,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-108.png",
+      "sha256": "8210cec5c73445a9b1b48e5be578bd928517a14bb4525fa76d65b1bdb05ee15e"
+    },
+    {
+      "number": 109,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-109.png",
+      "sha256": "485c9321f45775d98448cfa8b860cfc465d4d6f775c0baa4075deef7c306e951"
+    },
+    {
+      "number": 110,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-110.png",
+      "sha256": "585d072110b62a2c6538688a8c445b64d85ef204b71625de713b18277ce1585c"
+    },
+    {
+      "number": 111,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-111.png",
+      "sha256": "c3ca1f1c5ee20c0ef2f21c6c3652af1d445786f07ff2e39257a49f76634b7ecc"
+    },
+    {
+      "number": 112,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-112.png",
+      "sha256": "16139b748aa0e9cc63091928d244b97ba566a2e40d59b76a3566a307425c03bd"
+    },
+    {
+      "number": 113,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-113.png",
+      "sha256": "b4b090f2daa0b4534c2cfdb7118efebe8d4985f25ebb8594473c02dcbb570079"
+    },
+    {
+      "number": 114,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-114.png",
+      "sha256": "e56a9f718418c554da670c1c12e30f8e2b7f112472b82f486693c3ede17314d1"
+    },
+    {
+      "number": 115,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-115.png",
+      "sha256": "39345519d40ce03d8ba752ab9c272d4b443aca32f0f87c59a3c3da6474fc52a1"
+    },
+    {
+      "number": 116,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-116.png",
+      "sha256": "0c2f150a2562d5a793199ac64ab74c024b046cead9083fee597c70b7a604aaba"
+    },
+    {
+      "number": 117,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-117.png",
+      "sha256": "4f0c82dbad9f5fd2185638697baa3303bcec3a76afb1e6ff0e40711f7c597183"
+    },
+    {
+      "number": 118,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-118.png",
+      "sha256": "c41b1afedaf801e9544a112388a3f151d896ca942bc102d0a69b1d0269f90cd0"
+    },
+    {
+      "number": 119,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-119.png",
+      "sha256": "34902660f6c44c0ed4ac2e8e03207c9aa6a38ad808cd0e06018d8dd8917033da"
+    },
+    {
+      "number": 120,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-120.png",
+      "sha256": "4bed01740a184604ea2f120ab73c85ab7f6ab3b0213ad3e2e04bcdf785f31cb8"
+    },
+    {
+      "number": 121,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-121.png",
+      "sha256": "facaa91c8e9161874b6cdd37fdda3d38f0b742f0c912acb0ca20d72174e924e8"
+    },
+    {
+      "number": 122,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-122.png",
+      "sha256": "68a604c266b6761ce627ee82d74425e7be7e64b106cb60b64202d7a20a5d8c8c"
+    },
+    {
+      "number": 123,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-123.png",
+      "sha256": "b31fcd43a6db3de25770a4ab74e4abca12e0dafad799e6553aa8d4976a74f746"
+    },
+    {
+      "number": 124,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-124.png",
+      "sha256": "ec0cc074c84090019016eb07a5fae26b6012d3dd2d7eb5aafdb6dc48d3721ceb"
+    },
+    {
+      "number": 125,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-125.png",
+      "sha256": "2e60602a8474f17c7bf24379c93b9aa081d24bc034adaae6f8c5c0cc39261eab"
+    },
+    {
+      "number": 126,
+      "renderPath": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/renders/page-126.png",
+      "sha256": "38c3459cb7260dba04c3e9b366224c499d74a2ab69b9fa79ff7eb8533aba2fcb"
+    }
+  ],
+  "contactSheets": [
+    {
+      "path": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/contact-sheets/pages-001-012.png",
+      "sha256": "c43ef64f226f60dbe9a04c21e9dd9edcd9131cee40f0aa99e7cb6f9a9d289ae8"
+    },
+    {
+      "path": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/contact-sheets/pages-013-024.png",
+      "sha256": "73560f0edb90af2680ad1ef1b7e84e5d114b585255951ef1930d73176456f443"
+    },
+    {
+      "path": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/contact-sheets/pages-025-036.png",
+      "sha256": "d6c46a4ca30dab036556b052e68fa1490bf39e2675297cf1611b15d158c90aff"
+    },
+    {
+      "path": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/contact-sheets/pages-037-048.png",
+      "sha256": "21f52da9638288f7577854d2218b15da5def7bd0474e96ec5f37d68f99c1f720"
+    },
+    {
+      "path": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/contact-sheets/pages-049-060.png",
+      "sha256": "663519ee7b5be81fc90faeba98a15d58fea8eafb5b62fa249e90dd5d8d278f1a"
+    },
+    {
+      "path": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/contact-sheets/pages-061-072.png",
+      "sha256": "9ff49eab5d2ce853365003d9d707fe68e06d1898e4f179d3f6d8b47d6c2cfe67"
+    },
+    {
+      "path": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/contact-sheets/pages-073-084.png",
+      "sha256": "f194853ad941b3a7fcb4e680cf47dc180d70b28fc396a59730eb47710f064cb8"
+    },
+    {
+      "path": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/contact-sheets/pages-085-096.png",
+      "sha256": "2d3a97a5f943bdbb5c3ea02b41f42fbf5a9edd514a64284e3ed7a06f6238a6c0"
+    },
+    {
+      "path": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/contact-sheets/pages-097-108.png",
+      "sha256": "a2b7c7861846df22586736f3833ede9b5247f073e5a3a4fbe94e6c9f94639f78"
+    },
+    {
+      "path": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/contact-sheets/pages-109-120.png",
+      "sha256": "b5ad2cbd63d81af64c9e5b40fdf14ecdb3e328432a0dc2921bbb50a933615168"
+    },
+    {
+      "path": "north-carolina/regulatory/captures/2026-09-07/rulebook-2026/contact-sheets/pages-121-126.png",
+      "sha256": "1d0db5ab54f55a0ef42929c8576a606b277a94adc6034b1fb80b2e367112738e"
+    }
+  ],
+  "ocrStatus": "NOT_REQUIRED_TEXT_LAYER_MATCHED_RENDER"
+}

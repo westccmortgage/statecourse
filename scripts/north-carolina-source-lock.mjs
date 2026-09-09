@@ -8,7 +8,43 @@ import { inspectStoredPdfEvidence } from './lib/north-carolina-source-integrity.
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const jsonMode = process.argv.includes("--json");
 const requireCapture = process.argv.includes('--require-source-capture');
-const allowedHosts = new Set(["www.ncleg.gov", "www3.ncleg.gov", "library.ncleg.gov", "reports.oah.state.nc.us", "www.ncrec.gov", "educprovider.ncrec.gov", "eservices.ncrec.gov", "ncrecblog.com", "bulletins.ncrec.gov", "www.pearsonvue.com", "www.sosnc.gov"]);
+const allowedHosts = new Set([
+  "www.ncleg.gov",
+  "www3.ncleg.gov",
+  "library.ncleg.gov",
+  "reports.oah.state.nc.us",
+  "www.ncrec.gov",
+  "educprovider.ncrec.gov",
+  "eservices.ncrec.gov",
+  "ncrecblog.com",
+  "bulletins.ncrec.gov",
+  "www.ncosfm.gov",
+  "www.pearsonvue.com",
+  "www.sosnc.gov",
+  "uscode.house.gov",
+  "www.ecfr.gov",
+  "www.epa.gov",
+  "www.hud.gov",
+  "www.ada.gov",
+  "www.ftc.gov",
+  "www.justice.gov",
+  "training.fema.gov",
+  "www.consumerfinance.gov",
+  "www.fdic.gov",
+  "www.nccourts.gov",
+  "www.deq.nc.gov",
+  "epi.dph.ncdhhs.gov",
+  "www.ncbar.gov",
+  "www.ncrealtors.org",
+  "www.benefits.va.gov",
+  "benefits.va.gov",
+  "www.rd.usda.gov",
+  "www.fhfa.gov",
+  "www.ginniemae.gov",
+  "www.alta.org",
+  "appraisalfoundation.org",
+  "singlefamily.fanniemae.com"
+]);
 const requiredDocs = [
   "north-carolina/regulatory/official-sources.md",
   "north-carolina/regulatory/personal-broker-path.md",
@@ -24,6 +60,10 @@ const requiredDocs = [
   "north-carolina/submission/08-recordkeeping-reporting-sop.md",
   "north-carolina/submission/09-timing-evidence-report.md",
   "north-carolina/submission/10-product-roadmap.md",
+  "north-carolina/submission/11-module-12-correction-audit.md",
+  "north-carolina/submission/12-module-13-correction-audit.md",
+  "north-carolina/submission/13-module-14-correction-audit.md",
+  "north-carolina/submission/22-protected-final-exam-audit.md",
   "north-carolina/submission/course-completion-certificate-specimen.md",
   "north-carolina/HANDOFF.md"
 ];
@@ -69,7 +109,7 @@ for (const claim of NC_CLAIMS) {
 for (const blocker of NC_BLOCKERS) {
   if (!/^NC-B\d{2}$/.test(blocker.id) || !blocker.owner || !blocker.blocker) fail(errors, `invalid blocker ${JSON.stringify(blocker)}`);
 }
-for (const blockerId of ["NC-B01", "NC-B02", "NC-B03", "NC-B04", "NC-B05", "NC-B06", "NC-B07", "NC-B08", "NC-B09", "NC-B10", "NC-B11", "NC-B12"]) {
+for (const blockerId of ["NC-B02", "NC-B03", "NC-B04", "NC-B05", "NC-B06", "NC-B07", "NC-B08", "NC-B09", "NC-B10", "NC-B11", "NC-B12"]) {
   if (!NC_BLOCKERS.some((item) => item.id === blockerId)) fail(errors, `missing blocker ${blockerId}`);
 }
 
@@ -107,7 +147,7 @@ try {
   const reviews = JSON.parse(readFileSync(join(root, 'north-carolina/regulatory/captures/2026-09-06/page-reviews.json'), 'utf8'));
   for (const entry of captureLog?.entries || []) {
     const review = entry.sourceIds.map(id => reviews[id]).find(Boolean);
-    if (review) entry.pdfReview = review;
+    if (review && (!entry.pdfReview || review.pages?.length > (entry.pdfReview.pages?.length || 0))) entry.pdfReview = review;
   }
 } catch {}
 const pdfEvidence = inspectStoredPdfEvidence(root, NC_SOURCES, captureLog, NC_CONTROL_DATE);

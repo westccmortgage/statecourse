@@ -13,6 +13,7 @@ test('missing snapshot cannot pass stored metadata',()=>assert.equal(inspectPdfE
 test('modified snapshot fails stale hash',()=>assert.ok(inspectPdfEvidence(source,{...entry,sha256:'0'.repeat(64)},materials).errors.some(e=>e.includes('SHA-256'))));
 test('redirect to another host is refused',()=>assert.equal(inspectPdfEvidence(source,{...entry,finalUrl:'https://example.org/other.pdf'},materials).byteVerified,false));
 test('capture without render/title/revision review remains unreviewed',()=>assert.equal(inspectPdfEvidence(source,{...entry,pdfReview:null},materials).status,'CAPTURED_UNREVIEWED'));
+test('a selective-page review cannot masquerade as an all-page review',()=>{const twoPage={...entry,pdfPages:2,pdfReview:{...entry.pdfReview,pages:[entry.pdfReview.pages[0]]}};assert.equal(inspectPdfEvidence(source,twoPage,materials).reviewVerified,false);});
 test('stale or missing render fails review',()=>assert.equal(inspectPdfEvidence(source,entry,{...materials,renderBytes:{}}).reviewVerified,false));
 test('future filing cannot reuse old snapshot as fresh',()=>assert.equal(inspectPdfEvidence(source,entry,{...materials,today:'2026-09-07'}).reviewVerified,false));
 test('same-title old RELINC edition fails current revision identity',()=>{const guide={id:'NC-GUIDE-RELINC-2026',url:source.url};const result=inspectPdfEvidence(guide,{...entry,sourceIds:[guide.id]},{...materials,pageText:['Real Estate Licensing in North Carolina April 2025']});assert.equal(result.byteVerified,false);assert.ok(result.errors.some(e=>e.includes('identity')));});

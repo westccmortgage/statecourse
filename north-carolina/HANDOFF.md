@@ -1,8 +1,8 @@
 # North Carolina handoff
 
-**Branch:** `relay-north-carolina`
-**Phase:** Phase 0 regulatory baseline and pre-filing package
-**Control date:** 2026-09-06
+**Branch:** `north-carolina-completion-20260907`
+**Phase:** Phase 0 baseline complete; curriculum correction and completion in progress
+**Control date:** 2026-09-07
 **Provider:** Not certified
 **Course:** Not approved
 **Instructor:** Not approved
@@ -12,12 +12,97 @@
 
 ## What is complete
 
+- Module NC-01 was fully reconciled on September 7 against G.S. 93A-4, the current indexed applicant
+  rules, Rule 58A .0511, the April 2026 RELINC guide, and the amended May 2026 syllabus. The former
+  statements that age, examination, postlicensing, and renewal rules had not been read were removed.
+  Its eleven assessment items now test the actual licensing workflow and preserve the Commission's
+  case-specific comparable-status decision for an out-of-jurisdiction licensee.
+- Module NC-02 was reconciled against current Rules 58A .0109, .0110, .0120, and .0506. It now teaches
+  the activation/acknowledgment stop, termination notice, actual BIC duties and eligibility, lawful
+  compensation flow, and disclosure rules instead of using “route to the Commission” as the answer.
+- Module NC-03 now contains the missing required zoning examples and visual exercises, reconciled
+  ownership, recording, easement and land-use law, and assessment items that actually test those
+  activities.
+- Module NC-04 now uses the current North Carolina property-tax schedule and excise-tax statute,
+  removes the obsolete fourth-year adjustment, and separates federal tax, flood and C.L.U.E. issues
+  from state-law conclusions.
+- Module NC-05 now separates the broker's independent material-fact duty from the owner disclosure
+  form, uses the current federal lead, radon, asbestos, CERCLA, Clean Air Act and Clean Water Act
+  authorities, and retains NCAR Form 2A9-T as an honest unresolved Required Activity.
+- Module NC-06 now restores the missing deed-type Required Activity and uses current North Carolina
+  statutes for co-ownership, periodic-tenancy notice, mechanics' liens, condominium transactions,
+  recording, intestacy and adverse possession. Parallel stale statements in Module NC-15 were corrected.
+- Module NC-07 now delivers all four prescribed contract/agency activities with stable evidence paths.
+  It separates the four formation elements from the Statute of Frauds, electronic consent/receipt from
+  binding effect, recording from signed-writing requirements, and in-firm agency from outside-firm
+  seller subagency. The narrow preprinted-form exception no longer reads as a blanket drafting rule.
+- Module NC-08 now delivers all six prescribed agency activities: the current WWREA disclosure and
+  companion Q&A, first-substantial-contact classification, client/customer duty comparison,
+  listing-type comparison, compensation calculations and a tenant-screening decision matrix. Current
+  Rules 58A .0104, .0106, .0108 and .0109 replace the former oral-agency, automatic-subagency,
+  confidentiality and record-timing shortcuts. Both official WWREA artifacts are retained and fully
+  page-reviewed, and the lesson distinguishes disclosure receipt from agency formation.
+- Module NC-09 now delivers four auditable real-estate-practice activities: neutral tenant screening,
+  brokerage-compensation methods, discrimination/neighborhood-information scenarios, and duties to
+  clients versus third parties. Current federal Fair Housing, §1982, HUD, ADA, FTC and DOJ authorities
+  plus Rule 58A .0105 replace the former design, enforcement, neighborhood-information, Do Not Call,
+  automatic-subagency, fraud, vicarious-liability and insurance shortcuts. The April 2026 HUD letter
+  and September 2025 HUD withdrawal notice are now retained with all 11 pages visually reviewed and
+  hash-bound. They remain agency guidance/current-policy evidence, not substitutes for controlling law.
+- Module NC-10 now delivers the prescribed client-versus-third-party comparison and four auditable
+  Level 3 labs. Current Chapter 160D, UST, trust-money, drafting, offer-disclosure, material-fact,
+  discrimination and compensation authorities replace obsolete zoning citations and the former
+  categorical or overbroad shortcuts. The current LLCR Comments, complete State Fair Housing Act pass
+  and Interstate Land Sales topic remain explicit gates.
+- Module NC-11 now reconciles current Rule 58A .0112, Session Law 2025-52, Chapters 45A and 47E,
+  residential-closing counsel rules, Regulation Z and the federal flood mandatory-purchase boundary.
+  It corrects the syllabus's stale 19-item/two-prohibition statement, source-confused
+  Settlement/Closing definitions, offer-presentation clock, parcel-edge flood rule and settlement-
+  statement responsibility. The earnest-money and possession activities now have worked evidence;
+  the current Form 2-T, Guidelines and addenda paragraph review remains a hard gate.
+- Module NC-12 now reconciles current foreclosure/deficiency and tax statutes, Regulations Z, X, B
+  and V, and current official FHA, VA, USDA, FHFA and Ginnie Mae materials. It corrects the upset-bid,
+  federal-agency, VA-assumption, USDA-program, Ginnie-classification, appraisal-independence, credit-
+  regulation, TRID-timing, referral-compensation and tax-date errors. Authentic CFPB LE/CD/HUD-1 and
+  ALTA statement artifacts are retained with all eighteen pages visually reviewed; all four Section XII
+  Required Activities are now delivered.
+- Module NC-13 now reconciles the North Carolina appraiser/broker CMA-BPO boundary, Appraisal
+  Foundation/FIRREA history, USPAP identity and Fannie Mae's current UAD 3.6 transition. It corrects
+  the prior listing/closed-sale, comparable-count, adjustment, weighting, cost and capitalization
+  shortcuts. The official SF5 completed appraisal, legacy Form 1004 and transition timeline are
+  retained with all 28 teaching-artifact pages rendered and reviewed; all five Section XIII Required
+  Activities are now delivered.
+- Module NC-14 now reconciles Chapter 42 Articles 2A, 3, 4A, 5, 6 and 7; Chapter 42A; and Rules
+  58A .0104, .0116 and .0117. It replaces the former statute-unavailable placeholders with actual
+  duties, court-only removal, retaliation, security-deposit, vacation-rental and property-management
+  rules. The assessment now tests the missing deposit maxima and accounting periods, qualifies the
+  expired-lease retaliation shortcut, distinguishes the 90-day vacation definition from the 30-day
+  expedited-possession threshold, and applies the 180-day transfer rule. Section XIV prescribes no
+  separate Required Activity.
+- Module NC-15 now reconciles marketable title, Torrens, planned communities, the current UCC fixture
+  rule, owner disclosures, State Fair Housing, timeshares, unfair/deceptive practices, subdivision
+  streets, commercial broker liens and current OSFM code status. It removes the false statement that
+  heated living area is not material. Current RPOADS, MOG, the 2026 Residential Square Footage
+  Guidelines and WWREA are retained with all 35 pages reviewed. The two-page subdivisions/planned-
+  communities Q&A is separately retained and reviewed against current Chapters 47F, 136 and 160D;
+  it does not replace the outstanding approved-plat activity. Both Section XV form/measurement
+  activities and the 2,292-square-foot worked problem are delivered.
+- The protected end-of-course examination now has two independently authored 48-item forms, three
+  items for every syllabus section, deterministic persisted-seed replay, exactly balanced answer
+  positions, key-free student payloads, strict answer validation and a tested 75-percent boundary.
+  The 48-item form size is a StateCourse proposal, not an NCREC-prescribed number. Production
+  proctoring, protected attempt storage and end-to-end security validation remain open.
+- The public North Carolina launch framework was corrected from fifteen generic five-hour modules
+  to the controlling sixteen-section, 72-instructional-hour structure plus the three-hour final
+  inside the 75-hour total. It now carries the syllabus level and license-examination weighting for
+  each section instead of contradicting the course engine.
+
 - Official-source Phase 0 covers personal broker licensure, instructor qualification, education
   provider, education director, PPD, course approval, distance delivery, completion/proctoring,
   reporting, records, renewals, postlicense/CE products, foreign-LLC route and current market scale.
 - The machine manifest records authority class, exact URL, revision/effective date, retrieval date,
   pinpoint, evidence, supersession check and source-integrity state for each source.
-- Twenty-one claims are separated into confirmed, interpretation and regulator-confirmation states.
+- One hundred two claims are separated into 98 confirmed, one interpretation and three regulator-confirmation states.
 - Filing index, provider/course datasheets, personal path, instructor dossier, regulator email draft,
   PPD draft, distance control plan, course guide, records SOP, timing report, product roadmap and
   certificate specimen are prepared.
@@ -53,9 +138,9 @@ the record; equivalency therefore needs NCREC preclearance.
 Rule 58H .0401 measures self-paced course time at 225 words per minute plus actual audio/video
 duration. Rule .0101(7) defines an instructional hour as 50 instructional minutes plus 10 break
 minutes, so the 72-hour non-exam syllabus allocation is 3,600 actual instructional minutes, not the
-previously reported 4,320. The sixteen curriculum files contain 51,568 audit-tokenized words, or at
-most 229.19 minutes/3.82 elapsed hours; they include nonstudent author notes. Adding the entire
-question-bank source gives a generous 321.75-minute ceiling including code. Neither is validated
+previously reported 4,320. The sixteen curriculum files contain 69,379 audit-tokenized words, or at
+most 308.35 minutes/5.14 elapsed hours; they include nonstudent author notes. Adding the 20,367-word
+question-bank source gives a generous 398.87-minute/6.65-hour ceiling including code. Neither is validated
 student time. There is no media ledger. Planned “72-hour” module labels prove nothing. The course
 must not be submitted or advertised as 75 hours until its student-visible content and unit/media
 ledger actually demonstrate the required time.
@@ -64,13 +149,12 @@ ledger actually demonstrate the required time.
 
 | ID | Owner | Blocker |
 |---|---|---|
-| NC-B01 | StateCourse | Partial PDF capture: 2/21 source entries retained and reviewed; 19 entries unavailable; source status INCOMPLETE |
 | NC-B02 | NCREC | Provider certification absent |
 | NC-B03 | NCREC | Written self-paced course approval absent |
 | NC-B04 | user + NCREC | Nonprovisional NC broker and instructor approval absent |
 | NC-B05 | StateCourse | 225-wpm/media timing fails |
 | NC-B06 | StateCourse/rights holders | Current forms/manuals/Required Activity artifacts incomplete |
-| NC-B07 | StateCourse | Secured comprehensive final and proctoring not complete |
+| NC-B07 | StateCourse | Protected two-form bank is authored; production identity/closed-book proctoring, protected attempt storage and end-to-end security validation are not complete |
 | NC-B08 | StateCourse | Full reviewer-ready LMS/attendance/support evidence incomplete |
 | NC-B09 | user | Entity/director/ownership/pricing/refund/signature facts incomplete |
 | NC-B10 | user + NCREC | Transcript and instructor experience/equivalency unresolved |
@@ -92,30 +176,71 @@ requires its own foreign-entity consent to service and asks for an NC SOS ID if 
    qualification”; Gmail message ID `1a0766f5c826402a`. No reply recorded at this handoff; do not duplicate.
 2. Obtain college transcripts and certified California license history.
 3. Resolve/file NC foreign qualification if required and designate entity/education-director facts.
-4. Complete authentic PDF capture and relevant-page/text review; use OCR only when digital text is
-   missing or disputed. L-09 is retained but still needs factual completion/signature when applicable.
+4. Recheck the retained official PDF set at filing; repeat all-page review only if publisher bytes
+   change. L-09 is retained but still needs factual completion/signature when applicable.
 5. Expand/reconcile the curriculum and build a regulator-format timing ledger.
-6. Build/test secure final exam, proctoring, complete distance LMS, reports, storage and reviewer access.
+6. Obtain instructor/director signoff on the authored protected final, then implement and test
+   production identity/closed-book proctoring, protected attempt storage, the complete distance LMS,
+   reports and reviewer access.
 7. Finalize/sign PPD and provider packet; submit provider application.
 8. After provider number issues, submit the complete course in the live REC 7.33 workflow.
 9. Open enrollment/payment only after approvals and a signed production release audit.
+10. Add no further states. After North Carolina reaches its present deliverable boundary, move to
+    video production and integration for every already-built state using the California pattern;
+    record exact duration/hash and connect the finished media to each state's timing evidence.
 
 Run:
 
 ```text
-node scripts/north-carolina-source-lock.mjs --json
+NC_PYTHON=/path/to/python-with-pypdf node scripts/north-carolina-source-lock.mjs --json
 node --test tests/north-carolina-course.test.mjs tests/north-carolina-phase0.test.mjs
 node --test tests/north-carolina-source-integrity.test.mjs
-node scripts/north-carolina-source-lock.mjs --require-source-capture
+node --test tests/free-practice-access.test.mjs
+node --test tests/*.test.mjs
+NC_PYTHON=/path/to/python-with-pypdf node scripts/north-carolina-source-lock.mjs --require-source-capture
 ```
 
-Structure reports **PASS**, source verification **INCOMPLETE**, and filing **NO-GO**. The capture log
-records exact failures and does not turn search-index text into downloaded evidence. Current PDFs:
-2 retained of 19 unique URLs, representing 2 of 21 source entries; the shared Chapter 58 compilation
-supports three entries. Scripts verify actual bytes and content identity and reject a wrong PDF,
-soft-404, missing snapshot, stale hash, foreign redirect, and missing/stale page review. No push made.
+Structure reports **PASS**, source verification **VERIFIED_AS_OF_CAPTURE**, and filing **NO-GO**. The
+capture log records exact historical failures and does not turn search-index text into downloaded
+evidence. The current ledger contains 48 PDF source entries across 15 retained official PDF artifacts;
+all 48 entries have verified bytes, identity and all-page review, covering 360 unique pages. Thirty-two
+unchanged rule references reuse the official January 2026 NCREC compilation, while Rules 58A .0112,
+58A .0302 and 58H .0101 use the later official 2026 change notice. `NC-B01` is closed; eleven filing
+blockers remain.
+Scripts verify actual bytes and content identity and reject a wrong PDF,
+soft-404, missing snapshot, stale hash, foreign redirect, selective-page review, and missing/stale page review.
+The Module NC-13 activity capture is a separate retained teaching-evidence set: three reviewed PDFs,
+28 reviewed page renders and the full 302-page publisher archive. It does not make the unrelated
+source-ledger capture complete.
+
+The September 7 final-exam checkpoint is **153/153 focused North Carolina, source-integrity and
+all-course free-practice tests passing**, including every lesson and every answer choice in all 31
+catalog courses. With the bundled Python runtime on `PATH`, the complete repository run is
+**1,326/1,326 passing**, and the verified Sites production build succeeds. The same source checks
+under the host's bare `python3` fail PDF-reading because
+that interpreter lacks `pypdf`; this is an environment-path failure, not a course result.
 
 PDF extraction needs Python with `pypdf`; set `NC_PYTHON` to that interpreter when it is not `python3`.
-The strict `--require-source-capture` command intentionally exits 1 while sources are incomplete;
-the normal command checks structure and reports source failures without claiming a lock. These are
-offline as-of-capture checks; re-fetch before filing. Current focused tests: 77/77 passing.
+The branch was first pushed at commit `748a8bbde4adcaa39ba325c8fb6235bfd6887d50`; the remote branch
+currently contains work through Module NC-05. Modules NC-06 through NC-15, the currentized official-source
+lock, the protected final bank and the corrected public course framework remain local because the existing
+external-data authorization names Texas, Florida and Michigan but not North Carolina. A prior push attempt
+was rejected because the authorization did not name the North Carolina destination and branch. Do not retry
+or work around that control; push only after the user explicitly authorizes sending North Carolina repository
+data to `https://github.com/westccmortgage/statecourse.git` on branch
+`north-carolina-completion-20260907`. The strict
+`--require-source-capture` command now exits 0 because every PDF source entry is backed by retained
+evidence and all-page review. These are offline as-of-capture checks; re-fetch before filing. Current
+focused tests and complete repository test count are recorded after the NCREC rulebook-currentization
+validation run. Detailed correction evidence is in
+`north-carolina/submission/14-module-15-correction-audit.md` and
+`north-carolina/submission/15-public-brochure-correction-audit.md`, with the later HUD evidence in
+`north-carolina/submission/16-module-09-hud-capture-audit.md` and the complete RELINC/L-09 review in
+`north-carolina/submission/17-relinc-l09-all-page-audit.md`. The current lead fact sheet replacement is
+documented in `north-carolina/submission/18-module-05-lead-source-audit.md`; the complete syllabus review is
+documented in `north-carolina/submission/19-ncrec-syllabus-all-page-audit.md`; the replacement LLCR route and
+complete Comments review are documented in `north-carolina/submission/20-ncrec-llcr-comments-all-page-audit.md`;
+the final OAH replacement and 48/48 source lock are documented in
+`north-carolina/submission/21-ncrec-rulebook-currentization-audit.md`. The protected two-form final,
+its security boundary and the corrected public 72-plus-3 framework are documented in
+`north-carolina/submission/22-protected-final-exam-audit.md`.

@@ -1,0 +1,61 @@
+{
+  "schemaVersion": "2.0",
+  "reviewedOn": "2026-09-08",
+  "title": "Texas Law of Agency — IABS 1-2 Document Overview",
+  "sourceUpload": {
+    "fileName": "tx-iabs-1-2-document-overview.mp4",
+    "sha256": "dc043fa46769dc43b0345c7ea24b676c74e6be6153419c32933d3069c87361e5",
+    "bytes": 25801832
+  },
+  "cloudflareStream": {
+    "videoUid": "2eb5b2e307c5e54b60e5aaa506951dd4",
+    "status": "READY",
+    "requireSignedURLs": true,
+    "allowedOrigins": ["statecourse.com", "www.statecourse.com"],
+    "creator": "StateCourse",
+    "captionLanguage": "en",
+    "captionStatus": "READY",
+    "publicSourceRemovedFromCurrentRelease": true
+  },
+  "protectedAssets": {
+    "captions": {
+      "path": "private-media/texas/tx-iabs-1-2-document-overview.vtt",
+      "sha256": "704e6c6ce6b188bdb39cc6b60757237acb9294018607a14dc7b99256c9ba2131",
+      "kind": "uploaded selectable English WebVTT track"
+    },
+    "transcript": {
+      "path": "private-media/texas/tx-iabs-1-2-document-overview.txt",
+      "sha256": "2e3f012497d5f936f2071a600f9c5040ff23a6a46f042631059adb10dcdf2bd9",
+      "kind": "authenticated same-origin transcript"
+    }
+  },
+  "media": {
+    "durationSeconds": 194.73,
+    "displayDuration": "3:15",
+    "width": 1920,
+    "height": 1080,
+    "framesPerSecond": 25,
+    "videoCodec": "H.264 Main",
+    "audioCodec": "AAC"
+  },
+  "checks": {
+    "completeDecode": "PASS",
+    "narrationAndApprovedScript": "PASS",
+    "brandBackground": "PASS — StateCourse studio is visible; Measured Decision branding is absent",
+    "avatarDelivery": "PASS — speaking mouth positions and natural gesture changes were verified in both presenter scenes",
+    "documentFrames": "PASS — IABS 1-2 regions remain legible and free of conflicting overlays",
+    "captions": "PASS — synchronized English WebVTT is uploaded and selectable",
+    "transcript": "PASS — equivalent text is protected behind StateCourse authorization",
+    "assessmentSeparation": "PASS — no secure assessment content appears in the video",
+    "signedPlayback": "PASS — the raw Stream UID cannot play the video",
+    "originRestriction": "PASS — playback is limited to StateCourse production domains",
+    "autoplay": "DISABLED",
+    "keyboardControls": "ENABLED"
+  },
+  "approvals": {
+    "factualQcApproved": true,
+    "visualQcApproved": true,
+    "logoSafeReviewed": true,
+    "accessibilityQcApproved": true
+  }
+}

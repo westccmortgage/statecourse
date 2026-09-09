@@ -38,7 +38,15 @@ const PROD = path.join(HOME, "video-production");
 const OUT = path.join(HOME, "video-plan-freeze.json");
 
 const COURSE_ID = "tx-law-of-agency-30-v1";
-const FREEZE_ID = "LOA-VIDEO-PLAN-FREEZE-2026-08-30-v2";
+const FREEZE_ID = "LOA-VIDEO-PLAN-FREEZE-2026-09-08-v8";
+
+const PREVIOUS_FREEZE = Object.freeze({
+  freezeId: "LOA-VIDEO-PLAN-FREEZE-2026-09-08-v7",
+  sha256: "ff96ecb5f871cdb1aa45abdf72b81bd5c9f84fe008517b736f12de95e7b84acb",
+  bytes: 28180,
+  change:
+    "The two Stream evidence tables now enable Row Level Security in addition to revoking anon and authenticated privileges, and the security regression test and runbook require both layers. Playback semantics and curriculum wording are unchanged.",
+});
 
 /**
  * The byte-state this freeze supersedes. Plan v1 was hashed by
@@ -208,7 +216,7 @@ if (!validated.pass) {
 
 /* ── everything a render depends on ──────────────────────────────────────────────────────────── */
 const artifacts = {
-  "video instruction plan (v2, canonical)": hashOf(path.join(HOME, "video-instruction-plan.md")),
+  "video instruction plan (v5, canonical)": hashOf(path.join(HOME, "video-instruction-plan.md")),
 
   "production file — video 1 IABS 1-2 Document Overview": hashOf(path.join(PROD, "iabs-1-2-document-overview.md")),
   "production file — video 2 Representation or Showing Only": hashOf(path.join(PROD, "representation-or-showing-only-2026.md")),
@@ -217,6 +225,26 @@ const artifacts = {
   "captions — video 1 (provisional timings)": hashOf(path.join(PROD, "captions/tx-iabs-1-2-document-overview.provisional.vtt")),
   "captions — video 2 (provisional timings)": hashOf(path.join(PROD, "captions/tx-representation-or-showing-only-2026.provisional.vtt")),
   "captions — video 3 (provisional timings)": hashOf(path.join(PROD, "captions/tx-intermediary-brokerage.provisional.vtt")),
+
+  "video 1 final QC record": hashOf(path.join(PROD, "qc/tx-iabs-1-2-document-overview-final.json")),
+  "video 3 final QC record": hashOf(path.join(PROD, "qc/tx-intermediary-brokerage-final.json")),
+  "video 1 uploaded captions evidence": hashOf(path.join(root, "private-media/texas/tx-iabs-1-2-document-overview.vtt")),
+  "video 1 protected transcript": hashOf(path.join(root, "private-media/texas/tx-iabs-1-2-document-overview.txt")),
+  "video 3 uploaded captions evidence": hashOf(path.join(root, "private-media/texas/tx-intermediary-brokerage.vtt")),
+  "video 3 protected transcript": hashOf(path.join(root, "private-media/texas/tx-intermediary-brokerage.txt")),
+  "Law of Agency screenMedia registry": hashOf(path.join(root, "config/texas/law-of-agency-screen-media.mjs")),
+  "private Stream media allowlist": hashOf(path.join(root, "config/stream-media.mjs")),
+  "Law of Agency block-map wrapper": hashOf(path.join(root, "scripts/generate-tx-law-of-agency-block-maps.mjs")),
+  "private Stream authorization and signing core": hashOf(path.join(root, "netlify/functions/_lib/stream-delivery.mjs")),
+  "private Stream playback endpoint": hashOf(path.join(root, "netlify/functions/stream-playback.mjs")),
+  "private Stream evidence endpoint": hashOf(path.join(root, "netlify/functions/stream-events.mjs")),
+  "private Stream transcript endpoint": hashOf(path.join(root, "netlify/functions/stream-transcript.mjs")),
+  "private Stream database evidence schema": hashOf(path.join(root, "database/018_cloudflare_stream_delivery.sql")),
+  "private Stream production routing and CSP": hashOf(path.join(root, "netlify.toml")),
+  "private Stream player": hashOf(path.join(root, "public/statecourse/student/course/blocks/course-video.mjs")),
+  "private Stream player host": hashOf(path.join(root, "public/statecourse/student/course/blocks/block-player.js")),
+  "private Stream security tests": hashOf(path.join(root, "tests/cloudflare-stream-security.test.mjs")),
+  "private Stream production runbook": hashOf(path.join(root, "docs/video/cloudflare-stream-production.md")),
 
   /* The only permitted source of document pixels. If this changes, every crop, every highlight
      rectangle and every one of the fifty verified strings has to be re-measured. */
@@ -232,34 +260,36 @@ const artifacts = {
 
   /* The evidence that the package validates is only as stable as the script that produces it. */
   "validator": hashOf(path.join(root, "scripts/validate-loa-video-packages.mjs")),
-  "block-map generator core (where the screenMedia hook will be built)": hashOf(path.join(root, "scripts/lib/generate-tx-block-maps.mjs")),
+  "block-map generator core (screenMedia hook built and validated)": hashOf(path.join(root, "scripts/lib/generate-tx-block-maps.mjs")),
+  "screenMedia hook acceptance tests": hashOf(path.join(root, "tests/texas-video-integration.test.mjs")),
 
   /* Hashed as history, not as instruction. */
   "review addendum (SUPERSEDED — review history, not an operational dependency)": hashOf(path.join(PROD, "production-readiness-addendum.md")),
 };
 
 const VIDEOS = Object.freeze([
-  Object.freeze({ n: 1, title: "IABS 1-2 Document Overview", stem: "tx-iabs-1-2-document-overview", unit: "T02U5", screen: "t02u5-s1", retrievalScreen: "t02u5-s3", derivedDuration: "3:30", scenes: 10, cues: 39 }),
+  Object.freeze({ n: 1, title: "IABS 1-2 Document Overview", stem: "tx-iabs-1-2-document-overview", unit: "T02U5", screen: "t02u5-s1", retrievalScreen: "t02u5-s3", derivedDuration: "3:30", measuredDuration: "3:15", renderStatus: "ACTIVE", scenes: 10, cues: 39 }),
   Object.freeze({ n: 2, title: "Representation or Showing Only: the 2026 decision", stem: "tx-representation-or-showing-only-2026", unit: "T05U3", screen: "t05u3-s1", retrievalScreen: "t05u3-s3", derivedDuration: "3:03", scenes: 7, cues: 33 }),
-  Object.freeze({ n: 3, title: "Texas Intermediary Brokerage", stem: "tx-intermediary-brokerage", unit: "T06U3", screen: "t06u3-s1", retrievalScreen: "t06u3-s3", derivedDuration: "3:20", scenes: 7, cues: 34 }),
+  Object.freeze({ n: 3, title: "Texas Intermediary Brokerage", stem: "tx-intermediary-brokerage", unit: "T06U3", screen: "t06u3-s1", retrievalScreen: "t06u3-s3", derivedDuration: "3:20", measuredDuration: "3:14", renderStatus: "ACTIVE", scenes: 7, cues: 34 }),
 ]);
 
 const freeze = {
   freezeId: FREEZE_ID,
   courseId: COURSE_ID,
-  frozenOn: "2026-08-30",
+  frozenOn: "2026-09-08",
   generatedBy: "scripts/freeze-loa-video-plan.mjs",
   what: "The video instruction plan and every artifact a render of the three Law of Agency videos depends on. This freeze is what scripts/freeze-loa-curriculum.mjs hashes in place of the plan itself, so that correcting a video does not require breaking a curriculum freeze.",
 
   /* No layer may borrow another's status. */
   status: {
     editorialAndLegalPackage: "READY — at this freeze and not before it. Script, HeyGen prompt, storyboard and scene table, clean transcript, caption cue text, crop coordinates, highlight coordinates, duration metadata and poster specification are complete, source-verified and internally consistent.",
-    renderedAssets: "PENDING — no MP4, no shipping .vtt, no -poster.webp, no band PNGs, no diagram panels. Nothing has been rendered.",
-    screenMediaIntegrationSupport: "PENDING — scripts/lib/generate-tx-block-maps.mjs has no screenMedia hook, so there is no supported route to attach a video to a Texas screen. The tests the hook must ship with are recorded in that file's header.",
-    coursePlacementActivation: "NOT ACTIVE — no block map references any of these videos, and no student-facing surface carries a player, poster, badge, duration, play button or transcript link.",
-    doNotSay: "'production-ready'. It collapses four layers into one and three of them are not ready.",
+    renderedAssets: "PARTIAL — Videos 1 and 3 have reviewed Cloudflare Stream uploads, uploaded English WebVTT tracks and protected transcripts. Video 2 remains unrendered.",
+    screenMediaIntegrationSupport: "READY — scripts/lib/generate-tx-block-maps.mjs validates exact instruction-screen placement, optional/non-blocking private signed playback, Stream readiness, uploaded captions, protected transcripts, measured duration, assessment separation and completed factual/visual/accessibility/logo-safety review.",
+    coursePlacementActivation: "PARTIAL — Video 1 is active at t02u5-s1 and Video 3 at t06u3-s1 as optional, non-blocking private media. Video 2 has no Stream asset or block-map reference.",
+    doNotSay: "'production-ready'. It collapses distinct asset, placement, course-approval and provider-approval layers into one.",
   },
 
+  previousFreeze: PREVIOUS_FREEZE,
   supersedes: SUPERSEDES,
   consolidatedCorrections: CONSOLIDATED_CORRECTIONS,
 
@@ -288,7 +318,7 @@ const freeze = {
   },
 
   afterFreeze:
-    "No video wording, coordinate or duration may change silently. A correction found later must break THIS freeze explicitly, name the artifact and the reason, re-run the validator, and create a new video-freeze version with new hashes. It does not require a curriculum-freeze break: the curriculum freeze follows this artifact's hash. Re-taking this freeze under the same id is forbidden — an id denoting two byte-states is not an identifier.",
+    "No video wording, coordinate, duration or delivery asset may change silently. A correction found later must break THIS freeze explicitly, name the artifact and the reason, re-run the validator, and create a new video-freeze version with new hashes. Because the curriculum freeze pins this artifact's hash, its dependency pointer must then be re-frozen under a new content-freeze id. Re-taking either freeze under the same id is forbidden — an id denoting two byte-states is not an identifier.",
 
   artifacts,
 
@@ -330,4 +360,4 @@ if (process.argv.includes("--write")) {
 }
 
 console.log(`  ${Object.keys(artifacts).length} artifacts · validator ${validated.checks.filter((c) => c.pass).length}/${validated.checks.length} · supersedes plan v1 ${SUPERSEDES.sha256.slice(0, 12)}…`);
-console.log(`  editorial READY · rendered assets PENDING · screenMedia integration PENDING · course placement NOT ACTIVE`);
+console.log(`  editorial READY · rendered assets PARTIAL (2/3) · private Stream integration READY · course placement PARTIAL (2/3)`);

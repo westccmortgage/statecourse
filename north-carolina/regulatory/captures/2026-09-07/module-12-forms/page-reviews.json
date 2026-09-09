@@ -1,0 +1,64 @@
+{
+  "reviewedOn": "2026-09-07",
+  "method": "Each PDF was text-extracted with pdftotext, rendered page-by-page with Poppler, and every rendered page was visually inspected against the extracted text. OCR was not required because the digital text and reviewed renders agreed.",
+  "artifacts": [
+    {
+      "id": "FED-CFPB-LE-FIXED-SAMPLE",
+      "title": "Loan Estimate — Fixed Rate Loan Sample",
+      "landingPage": "https://www.consumerfinance.gov/compliance/compliance-resources/mortgage-resources/tila-respa-integrated-disclosures/forms-samples/",
+      "pdfSha256": "243551dbce6362e616328924eaf5b1818b734883d43ec91a73c160e5da52b385",
+      "pageCount": 4,
+      "reviewObservation": "PDF page 1 is the CFPB cover. PDF pages 2-4 are a legible completed three-page Loan Estimate for a fixed-rate purchase. Loan terms, projected payments, closing-cost detail, cash-to-close calculation, comparison data and contacts match the digital text.",
+      "pages": [
+        {"number": 1, "sha256": "dd4a37e2a38f36f56f61b7479857b93ce5641fa173bf464413acdfcad06afc5a"},
+        {"number": 2, "sha256": "06e059c3f174cb077a8011c44e26b705a5d9fa764e9230f160ea91a12556e20a"},
+        {"number": 3, "sha256": "6c5ebaf84faeba5ef1fc123155aff316540f438b4e3f6d0140e969d06d004357"},
+        {"number": 4, "sha256": "0160109dd3077b647b4e839f665de2f222f7b64b9e61716e1887c15275d66d7f"}
+      ]
+    },
+    {
+      "id": "FED-CFPB-CD-FIXED-SAMPLE",
+      "title": "Closing Disclosure — Fixed Rate Loan Sample",
+      "landingPage": "https://www.consumerfinance.gov/compliance/compliance-resources/mortgage-resources/tila-respa-integrated-disclosures/forms-samples/",
+      "pdfSha256": "606a93c8baaca815439822df5cf8c78cbb2dcf6cc4af5aa291a459c7917e4173",
+      "pageCount": 6,
+      "reviewObservation": "PDF page 1 is the CFPB cover. PDF pages 2-6 are a legible completed five-page Closing Disclosure for a fixed-rate purchase. Final terms, paid-by columns, cash-to-close and transaction summaries, escrow/loan disclosures, contacts and receipt signature area match the digital text.",
+      "pages": [
+        {"number": 1, "sha256": "00f06990c6e58a00e2f491a5697996f3889cf1629d12bd6a38b050fc7c9dead2"},
+        {"number": 2, "sha256": "3afd41d736754d2b754fdab351146f277f7d4040d693f4c21c71733c6b6e9b5e"},
+        {"number": 3, "sha256": "88645c370c3606eae0c45013bb705ea9d2147dd1156c51e092ae96ea148453b5"},
+        {"number": 4, "sha256": "441a528d9db645df27a8652df376fe22e7c799053d21640e1836d1dc486c8137"},
+        {"number": 5, "sha256": "d2d1f1e59a85848b0d7c0cfe621df4e14bafa10dfb2ce12c43e9c54815ebd0fa"},
+        {"number": 6, "sha256": "51311b2737ba5a59261ca0d875850009b4b2de5e5f0b1e32cb7b7a7bc5e9e653"}
+      ]
+    },
+    {
+      "id": "FED-CFPB-HUD1-COMPARISON",
+      "title": "Final Truth in Lending Disclosure and HUD-1 Settlement Statement",
+      "landingPage": "https://www.consumerfinance.gov/know-before-you-owe/compare/",
+      "pdfSha256": "53439a9e6758890ed37cc2acacb127f8feedb8efc39810327b4cd253d8fd8d54",
+      "pageCount": 5,
+      "reviewObservation": "PDF pages 1-2 show the former final Truth in Lending disclosure. PDF pages 3-5 show a legible completed HUD-1 with borrower/seller summaries, settlement-charge line groups, comparison table and loan terms. All reviewed pages match the extracted digital text.",
+      "pages": [
+        {"number": 1, "sha256": "888df3e8279698d6a7f6e84c36e7fe81eb437c91ee6b44a798c3914f87dc4b5d"},
+        {"number": 2, "sha256": "389b8e3fd7c9575fc1da3f07377ed1371d0b37bbc61b43b2c1a89f367eec1ae5"},
+        {"number": 3, "sha256": "a5ada72553a2350bf1a02b96e12d22662c26e834973869261072468ddc33f072"},
+        {"number": 4, "sha256": "e165f5534899cdcc24780609eff685f534d6794b4501313beec9c2a52a52b247"},
+        {"number": 5, "sha256": "8b1dcfdf4e95139d1904d100c79bca1d4fbcdfada039da7ef7c2797b9b68b989"}
+      ]
+    },
+    {
+      "id": "ALTA-COMBINED-SETTLEMENT-STATEMENT",
+      "title": "ALTA Settlement Statement — Combined",
+      "landingPage": "https://www.alta.org/policies-and-standards/policy-forms/settlement-statements",
+      "pdfSha256": "4d898bf75262e21d40703a43ed828068c0235a2e8942391438e2eebb59a756bc",
+      "pageCount": 3,
+      "reviewObservation": "All three pages of the blank ALTA combined model are legible. Seller and buyer debit/credit columns, financial/loan charges, impound/escrow, recording/transfer and pay-off sections match the digital text. The form states ALTA adoption on May 1, 2015.",
+      "pages": [
+        {"number": 1, "sha256": "89134b3500bf31c7452adc80a25f07711d9ebc2ca4ddc25d024a2d7d8f307b52"},
+        {"number": 2, "sha256": "e4b78158e840ede40e3b5c716ddddbba4a934a8e2588e8ada71ff315c0652cb1"},
+        {"number": 3, "sha256": "5e62be57f6be854ff6831cf75d6ff6586dcf567311fa0dc503a7b4da183aec3b"}
+      ]
+    }
+  ]
+}

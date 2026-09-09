@@ -1,0 +1,63 @@
+{
+  "schemaVersion": "2.0",
+  "reviewedOn": "2026-09-08",
+  "title": "Texas Law of Agency — Texas Intermediary Brokerage",
+  "sourceUpload": {
+    "fileName": "Texas Intermediary Brokerage_1080p.mp4",
+    "sha256": "e609334b112a99afb8dbc340f9643a60cc8c502db8fcbae5eb47865a78f523f0",
+    "bytes": 32043690
+  },
+  "cloudflareStream": {
+    "videoUid": "82b46f2b5370db2f470458303c11591f",
+    "status": "READY",
+    "requireSignedURLs": true,
+    "allowedOrigins": ["statecourse.com", "www.statecourse.com"],
+    "creator": "StateCourse",
+    "captionLanguage": "en",
+    "captionStatus": "READY",
+    "publicSourceRemovedFromCurrentRelease": true
+  },
+  "protectedAssets": {
+    "sourceCaption": {
+      "fileName": "Texas Intermediary Brokerage-caption.srt",
+      "sha256": "7c5d47b9a985fc4ec400bfc417c5281cb584f7c9f0d3658acbbebf0140b6c8e6"
+    },
+    "captions": {
+      "path": "private-media/texas/tx-intermediary-brokerage.vtt",
+      "sha256": "7850b063f28831e76cd74e9a01b7ca1a946c4dafc9e1e43c94cc7c76bc0b29ca",
+      "kind": "uploaded selectable English WebVTT track"
+    },
+    "transcript": {
+      "path": "private-media/texas/tx-intermediary-brokerage.txt",
+      "sha256": "b1015529efbd3597e17ecb24df36ad52510448a79633597cfcfb295da7e17eae",
+      "kind": "authenticated same-origin transcript"
+    }
+  },
+  "media": {
+    "displayDuration": "3:14",
+    "width": 1920,
+    "height": 1080,
+    "captionWordCount": 502,
+    "sceneCount": 7
+  },
+  "checks": {
+    "completeDecode": "PASS",
+    "narrationAndApprovedScript": "PASS",
+    "brandBackground": "PASS — StateCourse branding is present and Measured Decision branding is absent",
+    "avatarDelivery": "PASS — the presenter is visibly speaking at both ends of the program",
+    "legalGraphics": "PASS — intermediary roles, written consent and appointed-license-holder diagrams match the approved production package",
+    "captions": "PASS — all 502 caption words are present in the uploaded English WebVTT",
+    "transcript": "PASS — equivalent text is protected behind StateCourse authorization",
+    "assessmentSeparation": "PASS — no secure assessment content appears in the video",
+    "signedPlayback": "PASS — the raw Stream UID cannot play the video",
+    "originRestriction": "PASS — playback is limited to StateCourse production domains",
+    "autoplay": "DISABLED",
+    "keyboardControls": "ENABLED"
+  },
+  "approvals": {
+    "factualQcApproved": true,
+    "visualQcApproved": true,
+    "logoSafeReviewed": true,
+    "accessibilityQcApproved": true
+  }
+}

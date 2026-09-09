@@ -1,6 +1,6 @@
 # Rule 58H .0401 timing evidence — failing baseline
 
-**Measured:** 2026-09-06
+**Measured:** 2026-09-07
 **Rule:** 58H .0101(7) defines an instructional hour as 50 minutes of instruction and 10 minutes of
 break. Rule .0401(c)(6), (f)(2) measures distance-course content at 225 words per minute plus actual
 audio/video duration.
@@ -8,18 +8,36 @@ audio/video duration.
 syllabus assigns three further hours to the final examination inside the 75-hour course total.
 The examination and break allocation must have separate ledgers; breaks cannot be counted as text
 or media instruction. The previous 4,320-minute target incorrectly treated every hour as 60 minutes
-of instruction. Official .0101 indexed text was rechecked September 6; direct OAH PDF capture failed.
+of instruction. The official July 2026 amendment to .0101 is retained in NCREC's approved-rule notice,
+and all 13 pages of that notice were reviewed on September 7.
 
 ## Baseline
 
 | Repository measure | Words | Minutes at 225 wpm | 60-minute elapsed hours |
 |---|---:|---:|---:|
-| sixteen curriculum Markdown files, audit tokenizer | 51,568 | 229.19 | 3.82 |
-| curriculum plus entire question-bank source file (deliberately generous ceiling) | 72,393 | 321.75 | 5.36 |
+| sixteen curriculum Markdown files, audit tokenizer | 69,379 | 308.35 | 5.14 |
+| curriculum plus entire question-bank source file (deliberately generous ceiling) | 89,746 | 398.87 | 6.65 |
 | reading-only words for 72 instructional hours | 810,000 | 3,600 | 60.00 |
 
-The audit tokenizer counts word-like Unicode tokens and excludes Markdown punctuation. Both totals
-include nonstudent material: the curriculum includes author notes and the larger count also includes
+The September 7 increase reflects the official-source rewrite of Modules NC-01 through NC-10, their
+assessments, three Module NC-03 visual exhibits, the required zoning examples, the corrected
+property-tax, excise-tax, federal tax, flood and C.L.U.E. instruction, and the current federal and
+North Carolina environmental-disclosure rules, and the current ownership, lease, lien, condominium,
+recording, intestacy and adverse-possession rules, and the current contract, electronic-transaction,
+legal-practice, agency-representation, WWREA, agency-agreement, document-delivery, records, federal
+fair-housing, disability-access, telemarketing, antitrust and North Carolina advertising boundaries,
+plus current zoning, underground-tank, trust-money, legal-drafting, offer-disclosure, material-fact,
+state-discrimination, compensation, offer-form, residential-closing, disclosure, flood, foreclosure,
+TRID, RESPA, ECOA/FCRA, federal loan-program and Closing Disclosure controls, and current appraisal,
+CMA/BPO, USPAP-history, UAD 3.6, comparable-adjustment and reconciliation boundaries. The Section XII
+form labs and Section XIII appraisal labs now use retained and page-reviewed publisher artifacts.
+Module NC-14 now uses current landlord-tenant law, and Module NC-15 now uses current title, fixtures,
+disclosure, fair-housing, timeshare, square-footage, street, building-code and broker-lien authorities;
+its official RPOADS, MOG and Guidelines activities are retained and page-reviewed. The WWREA and
+subdivisions/planned-communities Q&A brochures are also retained and completely reviewed, with the
+older subdivisions brochure checked against current Chapters 47F, 136 and 160D. This is substantive
+correction, not time padding. The audit tokenizer counts word-like Unicode tokens
+and excludes Markdown punctuation. Both totals include nonstudent material: the curriculum includes author notes and the larger count also includes
 JavaScript syntax/metadata. Both are upper-bound audit signals, not valid student-visible instruction.
 There is no duration-controlled audio/video ledger. The current course is at most a small
 fraction of the required instruction and must not be submitted or advertised as 75 hours.

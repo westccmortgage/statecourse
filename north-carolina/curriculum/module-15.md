@@ -19,18 +19,15 @@ category in the course.*
 > ### A submission gate stated at the top of this module
 >
 > This section is a list of **twenty-odd North Carolina statutes and Commission rules cited by number**.
-> **This project has obtained none of their texts** — the hosts carrying the North Carolina General
-> Statutes and the North Carolina Administrative Code are outside this environment's egress allowlist, as
-> recorded in `north-carolina/regulatory/primary-text-readings.md`.
+> It has now been reconciled to the current primary authorities identified in the Instructor source note.
 >
-> **Every statement below is transcribed from the Commission's own Syllabus**, which was obtained and
-> read, and **every statutory citation printed here is the Syllabus's citation, reproduced so the
-> instructor knows where to go.** Where the Syllabus names a subtopic without stating its content — the
-> Timeshare Act's escrow requirements, the Marketable Title Act, the RPOADS exemptions — **this module
-> names the subtopic and routes to the statute rather than inventing the answer.**
+> Syllabus quotations remain visibly marked, and current statutory text controls when it differs.
+> Where the Syllabus names a subtopic without stating its content — including timeshare escrow,
+> marketable title and RPOADS exemptions — this module now supplies the current rule from its primary
+> source and separates broker action from attorney, regulator and code-official decisions.
 >
-> **Obtaining these statutes and rules, and completing the named-but-unstated subtopics from their own
-> text, is a submission gate for this course.**
+> **Current proprietary transaction forms, complete project-specific code tables and the broader
+> course filing controls remain separate release gates.**
 
 ## Learning objectives
 
@@ -60,37 +57,42 @@ That note is an examination instruction. The student must learn **two** versions
 national section tests, and the North Carolina rule the state section tests. Module NC-06 introduced this;
 here it is completed.
 
-- ***"Title must intentionally create joint tenancy."***
-- **Four required unities/elements** — *"possession, interest, time, title."*
-  - **Note:** *"**In NC, percentage of ownership interest can be unequal, if clearly stated in title.**"*
-- **Right of survivorship:**
-  - ***"In NC, survivorship not automatic."***
-  - ***"Attorney must draft exact wording in title required for right of survivorship."***
-- **Termination:** *by agreement*; *partition suit.*
+- **Current G.S. 41-71:** tenancy in common is the default; a joint tenancy with right of survivorship
+  exists when the instrument expresses that intent. The statute now recognizes phrases including
+  “joint tenants,” “joint tenancy,” and “with right of survivorship” unless the instrument provides
+  otherwise.
+- **Current G.S. 41-72:** interests are equal unless the instrument provides otherwise; expressly
+  unequal ownership shares are permitted.
+- **Current G.S. 41-73:** specified collective or unilateral conveyances and instruments, and a
+  partition petition, may terminate survivorship. A unilateral self-conveyance must express the intent
+  and be recorded before the joint tenant's death.
 
 Two North Carolina departures from the common form, and both are examinable:
 
-**Unequal interests are permitted** if the title says so — even though "interest" is one of the four
-unities. And **survivorship is not automatic**; it must be created by exact language drafted by an
-**attorney**. Elsewhere, a joint tenancy carries survivorship by definition. In North Carolina it does
-not, and a student who assumes it does will answer the state section wrongly.
+The Syllabus's four-unities mnemonic is useful history, but **equal interests are not a safe statement
+of current North Carolina law**. Survivorship is not supplied merely because two people own together;
+the conveyance must create it under G.S. 41-71. An attorney drafts the instrument. A broker identifies
+the objective and routes it, rather than inventing language or promising the legal result.
 
 Note also who does the drafting: **an attorney.** This is the drafting prohibition from Module NC-09
 appearing in the ownership context. A broker does not supply survivorship language.
 
 ### A.2 Tenancy by the entirety
 
-- ***"Available only to legally married couples."***
-  - ***"In NC, this is default ownership for buyers married at the time of purchase."***
+- **Available to two people legally married to each other.**
+  - Under **G.S. 41-56**, a conveyance to spouses creates the estate unless the conveyance expresses a
+    contrary intention.
   - *"Buyer should **consult with a real estate attorney** to explore what ownership type is desired."*
   - ***"Other types of ownership do not automatically convert to tenancy by the entirety if property
     owners marry each other later."***
 - **Equal undivided interest.**
-- **Four required equal unities/elements** — *"possession, interest, time, title."*
-- ***"Automatic right of survivorship that cannot be waived; overrides a will."***
-- *"Conveyance requires **voluntary signatures of both spouses**."*
-  - **Note:** ***"A spouse cannot convey ½ interest."***
-- **Termination:** *by agreement*; *divorce*; *death of a spouse.*
+- **At death while the estate remains in place**, G.S. 41-64 gives title to the survivor and leaves no
+  descendable share in the deceased spouse, subject to the slayer exception.
+- Under G.S. 41-58, neither spouse generally may unilaterally sell, lease, mortgage, transfer, convey,
+  or encumber the estate; written joinder is required subject to the statute's listed exceptions.
+- G.S. 41-63 expressly lists ways to end the estate, including joint sale, voluntary partition,
+  specified involuntary transfers, conveyance from one spouse to the other, and absolute divorce.
+  Therefore “cannot be waived” must not be presented as “can never be terminated.”
 
 Set this against A.1 and the contrast is the examinable structure:
 
@@ -98,12 +100,13 @@ Set this against A.1 and the contrast is the examinable structure:
 |---|---|---|
 | Who may hold it | Anyone | **Legally married couples only** |
 | Interests | **May be unequal** if stated in title | **Equal undivided interest** |
-| Right of survivorship | ***Not automatic*** — attorney-drafted wording required | ***Automatic, cannot be waived, overrides a will*** |
+| Right of survivorship | Must be created by the instrument under G.S. 41-71 | Operates automatically at death while the estate remains in place |
 | Default for married buyers | No | ***Yes, if married at the time of purchase*** |
 
-**"Overrides a will"** is worth its own sentence. A spouse who devises entireties property to a third
-party devises nothing — survivorship takes it first. And the **conversion rule** runs one way only:
-buying as tenants in common and marrying afterwards does **not** convert the ownership.
+**A will does not displace the survivorship result while the entireties estate remains in place.** The
+deceased spouse then has no descendable share. The estate can nevertheless end during life through
+the events G.S. 41-63 lists. And the **conversion rule** runs one way only: buying as tenants in common
+and marrying afterwards does **not** convert the ownership.
 
 Module NC-12's spousal signature rule connects here. Because a spouse **cannot convey a half interest**,
 both spouses must sign the deed of trust even where only one signed the note.
@@ -118,8 +121,12 @@ Governed by **horizontal property acts, such as the North Carolina Condominium A
 - **Application**
 - **Developer's disclosure requirements**
 - **Public offering statement**
-- ***"Buyer's 7-day rescission period on purchase of new condo"***
-- ***"Resale certificate for resale condos; no right of rescission"***
+- **G.S. 47C-4-108:** for a sale in which G.S. 47C-4-102(c) requires delivery of a public offering
+  statement, the purchaser receives an absolute seven-calendar-day cancellation period after contract
+  execution and conveyance may not occur during it.
+- **G.S. 47C-4-109:** an ordinary nonexempt resale not requiring a public offering statement carries a
+  pre-conveyance statement of monthly common expenses and other owner fees, but that section supplies
+  no statutory cancellation right.
 
 Ownership structure:
 
@@ -130,11 +137,10 @@ Ownership structure:
   - *"Periodic fees/assessments charged to unit owners."*
   - *"Possible **exclusive use of limited common elements**."*
 
-Three points a broker uses constantly. **New condo: 7-day rescission. Resale condo: resale certificate,
-no rescission.** The buyer of a resale unit does not get the developer's cooling-off period, and a broker
-who tells them otherwise has misstated the Act. **Tenants in common *without* right of partition** — the
-ordinary tenancy in common carries a partition right; here it is removed, because a co-owner suing to
-partition the hallway would end the building.
+The seven-day rule turns on the seller and public-offering-statement requirement, not simply whether a
+unit feels “new.” An ordinary resale gets the statutory fee statement but no cancellation right from
+§47C-4-109; the actual contract may separately create one. **Common elements are not freely partitioned
+while the condominium exists**, because doing so would dismantle the legal regime.
 
 #### A.3.b Townhouse ownership
 
@@ -143,10 +149,9 @@ partition the hallway would end the building.
 - Common elements *"**owned by the HOA**"*, maintenance funded by periodic fees/assessments.
 - *"Most townhouse developments are subject to the **NC Planned Community Act [NCGS Chapter 47F]**."*
 
-The line between the two is **who owns what.** A condominium owner owns **airspace** and an **undivided
-share** of the common elements. A townhouse owner owns **land**, and the **HOA** owns the common
-elements. Different structures, different Acts — **47C** for condominiums, **47F** for planned
-communities.
+**Townhouse is a physical description, not a legal ownership form.** Some townhouse projects are
+condominiums; others are planned communities. The declaration, plat, deed, and statutory coverage —
+not the building's appearance — determine whether Chapter 47C, Chapter 47F, or another regime applies.
 
 ### A.4 Manufactured (factory built) housing *(Level 1 — this subtopic)*
 
@@ -196,9 +201,16 @@ document settles it.
 
 ### A.7 The UCC and fixtures
 
-*"Effect of **NC Uniform Commercial Code (UCC) [NCGS 25-9-313]** concerning **security interests in
-fixtures**."* Named by the Commission as a subtopic; **NCGS 25-9-313 has not been read by this project**
-and no rule of priority, filing or perfection is stated from it.
+The Syllabus cites former **G.S. 25-9-313**. Current Article 9 places the fixture rule in **G.S.
+25-9-334**. A security interest may exist and continue in goods that become fixtures, but Article 9
+does not create a security interest in ordinary building materials incorporated into an improvement.
+
+The general rule subordinates a fixture security interest to a conflicting interest of an owner or
+encumbrancer of the related real property. Statutory exceptions include a properly perfected purchase-
+money security interest supported by a **fixture filing before or within 20 days after the goods become
+fixtures**, subject to the section's debtor, interest and priority conditions. Manufactured-home title
+conversion and competing interests also require the specific rules in **G.S. 47-20.6**. A broker flags
+the fixture and financing issue; the closing attorney resolves filing, perfection and priority.
 
 ---
 
@@ -228,14 +240,21 @@ where ownership is decided.
 
 ## C. Marketable Title Act / Torrens System *(Level 1 — this subtopic)*
 
-The Commission lists two by citation only:
+**Marketable Title Act — Chapter 47B.** A person with an unbroken **30-year chain of record title** and
+no instrument in that chain denying the interest has marketable record title, subject to Chapter 47B's
+substantial exceptions. Older conflicting interests may be extinguished, but the Act does not erase
+interests preserved by the chain, possession, mineral and railroad provisions, qualifying easements,
+federal rights, mortgages and deeds of trust, registered land, and specified condominium or planned-
+community declarations and covenants. A claimant may preserve an otherwise vulnerable interest by
+recording the statutory notice in the proper county during the applicable 30-year period; the notice
+generally preserves it for another 30 years.
 
-1. **NC Marketable Title Act [NCGS 47B]**
-2. **Torrens System [NCGS 43]**
-
-**Neither statute has been obtained by this project.** The Syllabus states nothing about either beyond
-the citation, and **this module states nothing about their content.** Instructors deliver Part C from
-NCGS 47B and NCGS 43 directly. **Submission gate.**
+**Torrens system — Chapter 43.** Registered-land title is established through an **in rem Superior Court
+proceeding**. Court-appointed title examiners are licensed North Carolina attorneys, and the decree and
+certificate establish the registered ownership subject to the statutory system. Land registered before
+April 16, 1931 may be removed from the system through the procedure in G.S. 43-56; removal does not
+erase existing liens. Neither system is a broker do-it-yourself title opinion. Send chain, exception,
+notice and registered-land questions to the closing/title attorney.
 
 ---
 
@@ -273,7 +292,8 @@ Statute of Frauds" to a question about why a listing agreement must be written h
 
 ### E.1 Basic requirements
 
-- *"Requirement for **most sellers of 1-4 residential units**."*
+- Chapter 47E generally applies to a sale, exchange, option or covered lease-with-option involving
+  **one to four dwelling units**, subject to G.S. 47E-2.
 - **Major points:**
   - ***"Seller required to provide completed disclosure forms to prospective buyers prior to presentation
     of 1st offer."***
@@ -296,11 +316,13 @@ and Gas Rights Mandatory Disclosure Statement (MOG)**.
 
 > **Note:** *"Forms, **REC 4.22 and REC 4.25**, are available at www.ncrec.gov."*
 
-**Delivery.** *"Method of delivery is not prescribed; frequently attached to MLS entry."*
-
-**Buyer's right to cancel the contract** — the Commission lists **timing of cancellation** and **written
-cancellation notice** as subtopics. **NCGS 47E has not been obtained**, and **this module states no
-cancellation period.** Instructors supply it from the statute.
+**Delivery and cancellation.** The owner delivers both statements to the purchaser **no later than the
+time the purchaser makes an offer** in a sale, exchange or option, or exercises a covered lease option.
+If a required statement arrives late, G.S. 47E-5 gives a written cancellation right that expires at the
+earliest of: the end of the **third calendar day after receipt**; the end of the **third calendar day
+after contract formation**; settlement or occupancy in a sale/exchange; or settlement in a lease-option.
+Notice is delivered by hand or by prepaid United States mail, and a cancellation requires return of a
+qualifying deposit. Delivering the forms with the MLS is a workflow, not the statutory rule.
 
 **Broker's responsibilities**, transcribed in full because every one is examinable:
 
@@ -328,7 +350,15 @@ qualification: **the listing should be refused.**
 
 ### E.3 Common RPOADS exemptions
 
-Named as a subtopic. **The exemption list is in NCGS 47E and is not stated here.**
+G.S. 47E-2(a) excludes specified transfers, including court-ordered and estate/execution/foreclosure/
+bankruptcy transfers; default-related transfers to a secured lender; certain fiduciary transfers;
+transfers between co-owners, spouses or lineal relatives; divorce-related transfers; tax transfers;
+and transfers by the State or local government.
+
+G.S. 47E-2(b) creates a crucial split. A first sale of a dwelling never inhabited, a covered lease-option,
+or a transaction whose parties agree the RPOADS is unnecessary may be exempt from the **RPOADS** duty in
+G.S. 47E-4, but **not from the MOG statement** required by G.S. 47E-4.1. Classify the statutory transfer;
+do not assume “new construction,” “as is,” or a party agreement eliminates both forms.
 
 ### E.4 Unique facts about MOG
 
@@ -337,8 +367,10 @@ Named as a subtopic. **The exemption list is in NCGS 47E and is not stated here.
 >     option on this point."***
 > iii. *"Common exemptions match those for RPOADS excluding the transfers where MOG is still mandated."*
 
-Point ii is the whole reason MOG is a separate form. On the RPOADS, "No Representation" is available
-throughout. On the **severance question**, it is **not.** The seller must answer.
+The current MOG form separates two questions. For a severance by a previous owner, the seller may answer
+**Yes, No, or No Representation**. For the seller's own prior severance or intended severance before
+transfer, the available answers are **Yes or No** — not No Representation. The owner, not the broker,
+chooses and signs the answers.
 
 ### E.5 Licence Law is unaffected
 
@@ -353,9 +385,13 @@ times in one Syllabus section is a weighting signal.
 > Discuss the purpose of each form and the correct way to advise property owners about completion and
 > delivery of the forms.**"*
 >
-> **← OUTSTANDING. This project has not obtained REC 4.22 or REC 4.25.** **No document in this build
-> reproduces, describes or paraphrases any question, box, heading or instruction on either form.**
-> **Submission gate.**
+> **Delivered from the current official artifacts.** The retained **REC 4.22, revision 7/26**, contains
+> owner instructions, Y/N/NR/NA responses and the current owners' association section. The retained
+> **REC 4.25, form 1/1/15**, contains the two distinct severance questions described above. All seven
+> pages were rendered and visually compared with the digital text. In the form lab the learner must:
+> identify the covered transaction; select which statement(s) are required; calculate delivery and any
+> cancellation cutoff; explain every response option without selecting it for the owner; and record the
+> form revision and delivery evidence in the transaction file.
 
 ---
 
@@ -399,10 +435,16 @@ Commission states is **the more restrictive law applies.** A broker who reasons 
 exemptions taught in Module NC-09 will get North Carolina problems wrong, and will get them wrong in the
 direction that produces a violation.
 
-**The North Carolina exemption list is in NCGS Chapter 41A, which this project has not obtained.** This
-module states **no exemption**, federal or state, from an unread source, and teaches the **structure** —
-identical prohibitions, different exemptions, more restrictive law controls — which is what the Commission
-states itself.
+Chapter 41A protects **race, color, religion, sex, national origin, handicapping condition and familial
+status**. It prohibits covered refusal, unequal terms, discriminatory advertising and related conduct.
+
+The state exemptions are specific, not a general small-owner immunity. They include a building occupied
+by its owner or the owner's family with accommodations for no more than four independent families;
+rooms in an owner/family-occupied private house that is not a boarding house; qualifying religious and
+private-club lodging; a single-sex dormitory exception; commercial real estate; a direct threat or
+substantial-property-damage condition; reasonable occupancy limits; and qualifying housing for older
+persons. The owner-occupied exemption does **not** authorize discriminatory advertising. Apply the state
+and federal laws separately and use the more protective result where their exemptions differ.
 
 **c. Enforcement**, transcribed:
 
@@ -412,19 +454,27 @@ states itself.
 >     filed within 1 year**"*
 > iii. *"By **private lawsuit in state court**; **complaints must be filed within 1 year**"*
 
-**The NC Human Relations Commission**, not the Real Estate Commission — a third regulator, after the Real
-Estate Commission and the Appraisal Board. **One year** for both routes, and the figure is the
-Commission's, transcribed.
+Current Chapter 41A needs a more exact workflow. A Commission complaint must be filed within **one year
+after the alleged discriminatory housing practice**. A direct state civil action measured from the
+occurrence is available only while the Commission is not certified as substantially equivalent by HUD.
+Otherwise the claimant follows the statutory right-to-sue process, and an action under G.S. 41A-7(j)
+must begin within **one year after the right-to-sue letter**. A learner identifies the forum and trigger;
+the syllabus's single “one year” label cannot safely answer every lawsuit question.
 
 ### G.2 Sexual harassment by residential lessors — NCGS 14-395.1 *(Level 1)*
 
-*"NC law prohibiting sexual harassment by residential lessors or their agents."* Named by citation.
-**NCGS 14-395.1 has not been obtained**, and no element, penalty or defence is stated here.
+G.S. 14-395.1 reaches a residential lessor or agent who makes unsolicited, overt requests or demands for
+sexual activity when submission is made a term of the lease or continuation of the lease, or when it
+affects the tenant's rights under the lease. A violation is a **Class 2 misdemeanor**. The criminal rule
+does not replace the broader civil fair-housing and license-law analysis.
 
 ### G.3 Commission Rule 58A .0120(d) *(Level 1)*
 
-*"Commission rule prohibiting **discrimination by brokers in promoting their broker status or conducting
-brokerage activities**."* **Rule 58A .0120 has not been obtained**, and no text of it is stated here.
+Rule 58A .0120(d) prohibits discrimination in promoting broker status or conducting brokerage activity
+on the basis of **race, color, religion, sex, national origin, familial status or handicapping condition**.
+Rule .1601 separately treats a State Fair Housing Act violation as improper conduct under G.S.
+93A-6(a)(10). A statutory exemption for an owner is not automatically a license-law exemption for the
+broker participating in the transaction.
 
 ---
 
@@ -447,16 +497,24 @@ The Commission lists thirteen subtopics, each by citation:
 12. **Handling and accounting of funds** *[Commission Rules Section 58B .0500]*
 13. **Program broker** *[Commission Rules Section 58B .0600]*
 
-**The Syllabus states the content of exactly one of these thirteen** — the **5 times over 5 years**
-definition — and that figure is transcribed above. **NCGS 93A Article 4 and 21 NCAC 58B have not been
-obtained by this project.**
+Current Article 4 confirms the **five separate time periods over at least five years** threshold. A
+program must follow the registration, licensing, instrument-recording and public-offering-statement
+requirements before lawful sales activity.
 
-**This module therefore states no timeshare cancellation period, escrow deadline, registration fee,
-penalty amount or record-keeping requirement.** It teaches: **that a timeshare in North Carolina requires
-at least 5 separated times over at least 5 years**; that the Act has its **own licence requirement, its
-own registration scheme, its own escrow rules, its own cancellation right and its own penalties**; and
-that a **separate body of Commission rules, 58B rather than 58A, governs timeshare practice.** Everything
-else is delivered from the statute. **Submission gate.**
+The purchaser may cancel until midnight of the **fifth day after the later of contract execution or
+receipt of the public offering statement and other required documents**. The right cannot be waived and
+closing may not occur before it expires. Timely notice follows the statute's postmark/transmission rule.
+On cancellation, the refund is due within **20 days after demand or five days after cleared funds are
+received, whichever is later**.
+
+Before closing, purchaser funds are immediately placed with an independent escrow agent unless a
+statutory alternative financial assurance applies; the purchaser retains ownership of those funds.
+Rules 58B .0401-.0402 require complete timeshare records to be available to the Commission and retained
+for at least **three years**. Rule .0501 requires immediate deposit and ordinarily holds the funds until
+the first of ten days after sale or cancellation before delivery to the program broker, subject to the
+statutory alternative. Rules .0601-.0602 require a designated program broker for each program, an
+affidavit and a replacement filing within ten days of change, displayed licensure, trust supervision and
+document review. A provisional or limited nonresident commercial broker cannot serve as program broker.
 
 ---
 
@@ -492,9 +550,12 @@ material and reputational or historical associations as not.**
 >    advertising/postings on internet and social media**"*
 > b. *"Creates legal cause of action with **the possibility of treble damages**"*
 
-**Treble damages** — three times actual damages — is why this statute matters more than its Level 1
-assignment suggests. And its reach expressly includes **internet and social media advertising**, which is
-where a broker is most likely to be careless.
+G.S. 75-1.1 makes unfair or deceptive acts in or affecting commerce unlawful. If damages are assessed
+for a violation, G.S. 75-16 directs the court to enter **three times the amount fixed by the verdict**.
+But the statute excludes professional services rendered by members of a learned profession, so a learner
+must not label every broker mistake an automatic Chapter 75 violation. Advertising, social-media and
+business conduct may be covered; the particular conduct, commercial setting and remedies require legal
+analysis.
 
 ### I.3 The doctrine of caveat emptor
 
@@ -531,11 +592,12 @@ Commission states it plainly three separate times in this Syllabus.
 ### I.4 Square footage
 
 > a. **Verify and properly report building square footage**
-> - ***"Square footage is not a material fact in NC, but must be accurate if reported."***
+> - The older syllabus sentence says square footage is not material. **Current NCREC guidance expressly
+>   treats heated living area as a material fact. Current guidance controls this course.**
 > - *"**Brokers are expected to possess the expertise necessary to accurately measure, calculate, and
 >   report the square footage of most buildings.**"*
-> - **"Broker should NOT rely on:"** *"Property owner's personal statement"*; *"Blueprints"*; *"Tax
->   records"*; *"Information from an earlier transaction."*
+> - The current 2026 Guidelines say a listing broker should not rely on the owner's statement, previous
+>   appraisals, previous listings, a previous survey, or tax records for the current listing's figure.
 > - *"A broker working with a buyer **can reasonably rely on the listing agent's reported square footage
 >   unless there is an error that would be obvious to a prudent broker**."*
 >
@@ -544,25 +606,38 @@ Commission states it plainly three separate times in this Syllabus.
 > - **Above grade vs. below grade area**
 > - **Heated Living Area criteria**
 
-The four prohibited sources are the examinable list, and notice what they have in common: every one of
-them is **somebody else's figure.** The Commission's position is that the **broker measures.** Tax records
-are not evidence. Blueprints are not evidence. The last MLS listing is not evidence.
+The most reliable listing method is for the listing broker to measure and calculate personally. The
+broker may use a competent licensed/certified appraiser or licensed contractor, but the measurement must
+be determined for the current listing and the broker remains responsible for accurate reporting. Plans
+may support proposed-construction calculations with clear disclosure; a completed building still needs
+current verification.
 
-The one permitted reliance is narrow and asymmetric: a **buyer's agent** may rely on the **listing
-agent's** figure — unless the error would be **obvious to a prudent broker**. The listing agent has no
-such shelter, because the listing agent is the one who measured.
+**Residential living area** must be intended for human occupancy and be: (1) permanently and
+conventionally heated for year-round use, not merely by a fireplace or portable heater; (2) finished,
+generally with at least a seven-foot ceiling, subject to the beam/duct and sloped-ceiling rules; and
+(3) directly accessible through a doorway, heated hallway or permanent stairs. An unpermitted addition
+that meets the criteria may be counted, but it must be separately identified and the missing permit
+disclosed.
 
-And **"not a material fact, but must be accurate if reported"** is the North Carolina rule stated exactly.
-A broker need not report square footage at all. Having reported it, they own it.
+Measure detached residential exterior walls; for an attached common wall, measure the inside surface and
+add six inches. Measure condominium units from interior surfaces without adding wall thickness. Round
+linear measurements to the nearest inch or tenth of a foot, retain the sketch and calculations, and keep
+the measurement record for at least three years.
+
+A buyer's agent may generally rely on a listing broker's reported figure unless the error is obvious.
+A red flag triggers verification and prompt communication. The listing broker must investigate, correct
+an error, and notify parties who previously received the bad figure. Reporting square footage is not
+mandatory, but **heated living area is material and any reported figure must be accurate.**
 
 > **Required Activity, transcribed:** *"**Thoroughly review the NCREC's Residential Square Footage
 > Guidelines; assign at least one practice problem; additional problems can be given as homework.**"*
 >
-> **← OUTSTANDING. This project has not obtained the NCREC Residential Square Footage Guidelines.**
-> **No document in this build states any measurement rule, ceiling height, above-grade or below-grade
-> criterion, or heated living area standard**, because the Guidelines have not been read. The
-> **exterior-measurement rule** stated above is the Syllabus's own statement and is the only measurement
-> rule this module asserts. **Submission gate.**
+> **Delivered from the official 2026 Guidelines. Practice problem:** A detached house has a first-level
+> 50 × 30-foot rectangle plus a 3 × 22-foot offset, a finished and qualifying heated basement measuring
+> 22 × 33 feet, and a 22 × 25-foot carport. Calculate and classify each area. **Answer:** first level
+> 1,500 + 66 = **1,566 square feet**; qualifying finished heated basement = **726 square feet**;
+> total residential living area = **2,292 square feet**; carport = **550 square feet excluded**. The
+> learner must submit the sketch, math, level/below-grade classification and exclusion reason.
 
 ### I.5 Basic construction *(Level 1 — this subtopic)*
 
@@ -617,10 +692,11 @@ frieze board**; **pitch.**
 > **Note:** *"**Higher R-values are required in the colder, mountainous counties of northwestern North
 > Carolina.**"*
 
-**These three R-values are transcribed from the Commission's Syllabus.** **The North Carolina Uniform
-Residential Building Code has not been obtained by this project**, and **no county list, alternative
-R-value or code section is stated.** Instructors verify current values against the Code before teaching
-them.
+**These three R-values are a syllabus memory aid, not a current universal code table.** North Carolina
+OSFM identifies the 2018 North Carolina codes as the presently effective code set while implementation of
+the 2024 code has been delayed. Current insulation requirements vary with climate zone, assembly,
+component and amendment. For field compliance, verify the current adopted code and project-specific
+permit requirements with the code official; do not apply R-13/R-30/R-19 as a universal minimum.
 
 **h. Heating and air conditioning.** **Power sources:** sun, gas, oil, electricity, coal, wood.
 **Measured in British Thermal Units (BTUs).** **Methods:** solar, warm air, hot water, steam, electric
@@ -672,9 +748,36 @@ termination right without breach.
 > should verify private or public status of the streets before making any representation as to their
 > status.**"*
 
-Street maintenance responsibility **is** a material fact — unlike square footage, unlike stigma. And the
+Street maintenance responsibility **is** a material fact — as is heated living area; stigma is treated
+separately by statute. And the
 plat is not evidence of it. *"Regardless of the age of the subdivision"* forecloses the obvious excuse:
 an old neighbourhood is not thereby a public-street neighbourhood.
+
+### I.7a Official brochure review — context checked against current law
+
+The NCREC Publications page still distributes **REC 3.49, Questions and Answers on: Residential
+Subdivisions and Planned Communities (11/1/19)** in brochure and text-only formats. Both official
+versions are retained; both brochure pages were rendered and reviewed. Because the publication is
+older than the current codification, it is a teaching aid, not the last word on present statutory
+scope.
+
+**Learner reconciliation record:**
+
+| Brochure issue | Current-law action |
+|---|---|
+| Mandatory versus voluntary HOA membership | Read the recorded declaration and chain of title; do not infer obligation from subdivision appearance. |
+| Developer control and association assessments | Identify the declaration, statutory scope and actual voting/assessment records; route validity disputes to counsel. |
+| Preliminary-plat contracting | Apply current G.S. 160D-807 conditions and compare the delivered final recorded plat; a preliminary plat is not final approval. |
+| HOA management and licensing | Determine whether the conduct is brokerage for others or timeshare development; the label “HOA manager” alone does not answer licensure. |
+| Road ownership and maintenance | Verify dedication, formal governmental acceptance and the current maintenance agreement; a public label on a plat is not acceptance. |
+| Common areas | Verify the recorded plat/declaration and title rather than relying on sales imagery or amenities visible on site. |
+
+**Supersession check:** the brochure's compact description of Planned Community Act coverage and
+remedies is not memorized as a complete current rule. Chapter 47F controls scope and association
+remedies; G.S. 160D-807 controls the preliminary/final plat contract sequence; G.S. 136-102.6 controls
+the subdivision-street disclosure. The separate Section III Required Activity calling for an
+approved subdivision plat map remains outstanding: this consumer brochure is not a plat and cannot
+substitute for one.
 
 ### I.8 Onsite septic systems
 
@@ -703,53 +806,84 @@ will not support a septic system**, and **straight-piping**, which is also **ill
 
 **a. Mechanics' lien (materialman's lien):**
 
-> - *"On all NC residential or commercial construction projects **where the cost equals or exceeds
->   $40,000**"*
-> - *"**A lien agent must be appointed**"*
-> - *"**Owner-occupied single family residences are exempt**"*
-> - *"All service providers must **file a Notice to Lien Agent**"*
->   - *"Ability to file a mechanics' lien **within 120 days after last day of providing services or
->     materials**"*
->   - ***"Lien priority effective from 1st day of providing services or materials"***
+The Syllabus compresses several separate rules into four bullets. Current G.S. 44A-11.1 and -11.2
+require a more exact sequence:
 
-The last line is why this appears in a prelicensing course. **A mechanics' lien takes priority from the
-first day work began** — which can be **before** a deed of trust was recorded, and before a buyer ever
-saw the property. In a pure race state, this is the one lien that can beat the recording race, because its
-priority date is not its filing date.
+- The owner must designate a lien agent for a covered improvement when the undertaking costs
+  **$40,000 or more**, measured when the original building permit issues or, if no permit is required,
+  when the owner enters the improvement contract.
+- The designation exception is narrower than “all owner-occupied single-family residences.” It covers
+  an improvement to an **existing** single-family dwelling occupied by the owner as a residence and an
+  incidental accessory building or structure described by G.S. 44A-11.1(a).
+- For a covered improvement, a potential lien claimant ordinarily protects the ability to perfect and
+  the priority described in G.S. 44A-11.2(l)-(m) by making sure the lien agent receives a **Notice to
+  Lien Agent no later than 15 days after first furnishing**, or before the protected conveyance,
+  mortgage or deed-of-trust event specified by the statute. The rule contains fact-specific alternatives
+  and exceptions; it is not accurately stated as “all service providers must file.”
+- A Notice to Lien Agent is **not filed with the clerk** and, under G.S. 44A-11.2(j), does **not** itself
+  serve or perfect a Claim of Lien on Real Property or the other lien notices named there.
+
+A claimant who satisfies the statutory perfection requirements receives the relation-back rule: the
+perfected claim relates to the claimant's **first furnishing of labor or materials at the site**. That
+priority date can precede later-recorded interests, but the broker must not describe every construction
+bill as an automatically perfected first-day lien. G.S. 44A-12 permits a claim to be filed no later than
+**120 days after the claimant's last furnishing**, and G.S. 44A-13 requires an enforcement action no
+later than **180 days after last furnishing**. Lien-agent notice, claim service and filing, enforcement,
+priority, and discharge are distinct questions for the closing attorney.
 
 > **Required Activity, transcribed:** *"**Provide a timeline example of how mechanic's liens may take
-> priority over other recorded liens.**"* **Delivered** — worked as a dated sequence in this module, using
-> only the **$40,000 threshold**, the **120-day filing window** and the **first-day priority rule** stated
-> above, with all other dates supplied inside the example.
+> priority over other recorded liens.**"* **Delivered** — worked as a dated sequence in this module,
+> separating the covered-project/lien-agent step, timely notice, the **120-day filing window**, the
+> **180-day enforcement window**, and the perfected claim's first-furnishing relation-back rule.
 >
 > *(Source note: this Required Activity is printed at a page boundary in the Syllabus, adjacent to a second
 > Required Activity concerning commission and property management fee calculations. The lien timeline is
 > placed here because mechanics' liens are this section's subject; the fee calculation activity is carried
 > in Module NC-16 with the same note.)*
 
-**b. NC Commercial Real Estate Broker Lien** *(Level 1 — this subtopic).* Named without content. **Not
-obtained; no requirement, deadline or procedure is stated here.**
+**b. NC Commercial Real Estate Broker Lien** *(Level 1 — this subtopic).* Chapter 44A, Part 4 applies to
+qualifying commercial real estate. A lien is available only to the broker named in a written agreement
+signed by the owner when the broker performed the services and the compensation conditions and amount
+are satisfied. The notice must be filed with the clerk and served on the owner with proof of service;
+failure to satisfy those controls makes the asserted lien void.
+
+For a conveyance, the notice is filed after performance and before conveyance. Lease and other
+nonfreehold claims have the statute's **90-day-after-possession** or **60-day-after-subsequent-payment**
+limits. A notice more than 30 days before closing or possession is allowed only on the owner's breach.
+Enforcement generally begins within **18 months after filing**; an option-based claim has the separate
+one-year-from-exercise limit. The broker preserves records and uses counsel rather than self-calculating
+a filing deadline from this summary.
 
 ### I.10 NC Lead-Based Paint Hazard Management Program (LHMP)
 
 - **Purpose**
 - **Renovation**
 - **Certification requirement**
-- ***"NC fines for violations up to $750 per day and up to $32,500 per day under EPA sanctions"***
-- ***"Owner-occupied do-it-yourself renovations are exempt from certification requirement"***
+- The Syllabus prints **$750 per day** for North Carolina and **$32,500 per day** under EPA sanctions.
+  **Do not use those figures as current law.** Current G.S. 130A-22(b3) allows up to **$5,000 for each
+  day** a covered Article 19A violation continues and says that penalty does not apply to a person who
+  is not required to be certified. Federal penalties require a current rule-and-inflation check for the
+  precise violation; this module does not substitute the stale syllabus figure.
+- The Syllabus also states that owner-occupied do-it-yourself renovations are exempt from the
+  certification requirement. Apply the current statute and rules to the specific work rather than
+  converting that line into a universal exemption.
 
-Both figures are the Commission's, transcribed. Module NC-04 covered the federal lead-based paint
-disclosure requirement; this is the **North Carolina renovation certification** program, which is a
-different thing — disclosure is about selling, LHMP is about **doing the work.**
+Current G.S. 130A-453.02 explains the distinction. Article 19A requires certification for specified
+inspection, risk-assessment and abatement work and a permit for abatement, but it does not itself
+require inspection, risk assessment or abatement in every transaction. Module NC-05 covers the
+separate federal transaction-disclosure rule. Disclosure is about information and procedure in a
+covered sale or lease; LHMP is about **who may perform covered work and under what controls.**
 
 ---
 
 ## Required Activities in this section
 
 1. **Provide current RPOADS and MOG forms; discuss the purpose of each and the correct way to advise
-   owners about completion and delivery.** **← OUTSTANDING. Submission gate.**
+   owners about completion and delivery.** **Delivered** with retained current official forms, statutory
+   classification/delivery exercise and all-page review evidence.
 2. **Thoroughly review the NCREC Residential Square Footage Guidelines; assign at least one practice
-   problem.** **← OUTSTANDING. Submission gate.**
+   problem.** **Delivered** with the retained 2026 Guidelines, the 2,292-square-foot worked problem and
+   all-page review evidence.
 3. **Provide a timeline example of how mechanics' liens may take priority over other recorded liens.**
    **Delivered.**
 
@@ -763,12 +897,8 @@ At **11 state examination items**, this section is tied for the heaviest state w
 its items are weighted to the two **Level 3** subtopics: the fair housing structure — identical
 prohibitions, different exemptions, more restrictive law controls — and the disclosure problems in Part I.
 Items also cover the two North Carolina co-ownership departures, the pure race rule, the Statute of Frauds
-agency exclusion, the seller-versus-broker split under caveat emptor, the four prohibited square footage
-sources, the septic occupancy rule, and mechanics' lien first-day priority.
-
-**No item states or requires a timeshare deadline, an RPOADS cancellation period, a state fair housing
-exemption, a Marketable Title Act rule or a square footage measurement standard**, because this project
-has not read the sources that set them.
+agency exclusion, the seller-versus-broker split under caveat emptor, current square-footage verification,
+RPOADS/MOG delivery, state fair-housing exceptions, timeshare controls, subdivision rules and lien priority.
 
 ---
 
@@ -778,20 +908,28 @@ Drawn from **Section XV** of the Commission's Prelicensing Course Syllabus, Marc
 May 2026, read on 2026-08-20. Every Instructor Note, Required Activity, figure, citation and structural
 statement above is **transcribed from the Syllabus.**
 
-**Not read in their own text, and therefore not the source of any statement in this module:** **NCGS
-Chapters 47B, 47C, 47E, 47F, 41A, 42A, 43, 45A, 93A** (including Article 4, the Timeshare Act) and
-**160D**; **NCGS 22-2, 25-9-313, 39-50, 42-14.2, 47-18, 47-20.6, 75-1.1, 105-164.3, 105-273, 136-102.6,
-143-139.1, 143-143.9 and 14-395.1**; **21 NCAC 58A**, including **Rules .0019, .0114 and .0120**; **21
-NCAC 58B**, Sections **.0400, .0500 and .0600**; the **NCREC Residential Square Footage Guidelines**;
-**forms REC 4.22 (RPOADS) and REC 4.25 (MOG)**; the Commission's **Residential Subdivisions and Planned
-Communities** Q&A brochure; the **North Carolina Uniform Residential Building Code**; and the **federal
-Fair Housing Act** and **EPA lead-based paint regulations**.
+**Current primary text read:** Chapters **41, 41A, 43, 44A, 47B, 47C, 47E, 47F and 93A Article 4**;
+G.S. **14-395.1, 22-2, 25-9-334, 39-50, 47-18, 47-20.6, 75-1.1, 75-16, 136-102.6 and 160D-807**;
+Rules **58A .0114, .0120 and .1601**, and **58B .0400-.0600**. The official **REC 4.22 (revision
+7/26), REC 4.25 (1/1/15), 2026 Residential Square Footage Guidelines, WWREA form, WWREA Q&A and
+Residential Subdivisions and Planned Communities Q&A** are retained with hashes, extracted text and
+review of every brochure/form/guide page. These sources supersede conflicting syllabus shorthand.
 
-**The figures transcribed from the Syllabus and stated in this module are:** the **four unities**; the
-**7-day new condominium rescission**; **20-year and 7-year adverse possession**; the **3-year Statute of
-Frauds lease rule**; **1 year** for both fair housing enforcement routes; **5 separated times over 5
-years** for a timeshare; **treble damages** under NCGS 75-1.1; **R-13 walls, R-30 ceilings, R-19 floors**;
-the **$40,000** mechanics' lien threshold, the **120-day** filing window and **first-day** priority; **2
-persons per permitted bedroom**; and **$750 per day** state and **$32,500 per day** EPA lead-paint fines.
+**Remaining source limitation:** current proprietary contract forms, complete current building-code
+tables and any project-specific permit/code determination remain outside this module. The course does not reproduce
+copyrighted forms beyond the official public NCREC artifacts and does not make a legal title, lien,
+code-compliance or litigation determination.
+
+**The figures retained after current-law review are:** the Syllabus's **four-unities mnemonic**, with
+the current unequal-interest correction; the **7-calendar-day public-offering-statement condominium
+cancellation period**; **20-year and 7-year adverse possession**; the **3-year Statute of
+Frauds lease rule**; the distinct state fair-housing one-year complaint and right-to-sue triggers;
+**5 separated times over 5 years** and the current timeshare cancellation/refund/records controls;
+**treble damages** under G.S. 75-16; the syllabus-only **R-13/R-30/R-19 memory aid**;
+the **$40,000** lien-agent threshold, **15-day** notice timing, **120-day** filing window,
+**180-day** enforcement window and a perfected claim's first-furnishing relation-back rule; and
+**2 persons per permitted bedroom**. The Syllabus's **$750 per day** state and **$32,500 per day** EPA
+lead-paint figures are retained only as a documented curriculum conflict; current G.S. 130A-22(b3)
+supplies the state ceiling described above, and no stale federal amount is taught as current law.
 **No other number appears in this module**, and no deadline, fee, exemption or penalty is stated from any
 source this project has not read.
