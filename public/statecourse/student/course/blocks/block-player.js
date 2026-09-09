@@ -225,10 +225,11 @@ document.addEventListener("toggle", async (event) => {
   details.dataset.loaded = "1";
   const body = details.querySelector(".video-transcript-body");
   try {
-    const response = await fetch(details.dataset.transcript);
+    const source = details.dataset.transcript;
+    const response = await fetch(source);
     if (!response.ok) throw new Error(`transcript request failed: ${response.status}`);
     const text = await response.text();
-    const isVtt = details.dataset.transcript.toLowerCase().endsWith(".vtt");
+    const isVtt = source.toLowerCase().endsWith(".vtt");
     const lines = text.replace(/\r/g, "").split("\n").filter((line) => line.trim() && (!isVtt || (
       line !== "WEBVTT" && !line.startsWith("NOTE") && !line.includes("-->") &&
       !/^\d+$/.test(line.trim()) && !line.startsWith("Document Overview") && !line.startsWith("final cut")
