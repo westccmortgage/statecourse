@@ -34,10 +34,10 @@
  * visual, logo-safety and accessibility review. This is deliberately stricter than California's
  * first media hook because a partially attached player is worse than no video.
  *
- * Texas Law of Agency's three editorial packages remain NOT RENDERED and NOT ACTIVE. Their intended
- * placements are t02u5-s1, t05u3-s1 and t06u3-s1. The hook is ready, but no course supplies a
- * `screenMedia` entry until each final render, poster, measured-duration shipping VTT and transcript
- * has passed the required reviews. DO NOT HAND-EDIT A GENERATED COURSE FILE.
+ * Texas Law of Agency activates its reviewed IABS 1-2 video at t02u5-s1. The remaining editorial
+ * packages target t05u3-s1 and t06u3-s1 and stay inactive until each final render, poster,
+ * measured-duration shipping VTT and transcript has passed the same reviews.
+ * DO NOT HAND-EDIT A GENERATED COURSE FILE.
  *
  * THE TESTS THAT SHIP WITH THE HOOK. Each of these is a test, not a note.
  *

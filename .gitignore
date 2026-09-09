@@ -45,6 +45,7 @@ next-env.d.ts
 # Review renders and handoff archives are reproducible local delivery artifacts.
 /texas/tx-law-of-agency-30-v1/video-production/renders/*-test-*.mp4
 /texas/tx-law-of-agency-30-v1/video-production/delivery/*.zip
+/texas/tx-law-of-agency-30-v1/video-production/delivery/
 
 # scratch drafts from parallel content-authoring agents (merged into config/ then deleted)
 /california/video-production/.ca-block-drafts/

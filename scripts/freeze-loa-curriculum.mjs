@@ -29,7 +29,7 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const HOME = path.join(root, "texas/tx-law-of-agency-30-v1");
 const OUT = path.join(HOME, "content-freeze.json");
 const COURSE_ID = "tx-law-of-agency-30-v1";
-const FREEZE_ID = "LOA-CONTENT-FREEZE-2026-09-07-v7";
+const FREEZE_ID = "LOA-CONTENT-FREEZE-2026-09-08-v8";
 
 /**
  * FREEZE HISTORY. A freeze that is broken and silently re-taken teaches nothing. Every break is
@@ -37,6 +37,23 @@ const FREEZE_ID = "LOA-CONTENT-FREEZE-2026-09-07-v7";
  * than requiring someone to reconstruct it from git.
  */
 const BREAK_HISTORY = Object.freeze([
+  Object.freeze({
+    brokeFreeze: "LOA-CONTENT-FREEZE-2026-09-07-v7",
+    on: "2026-09-08",
+    module: "NONE — no curriculum wording changed; all twelve module sources remain byte-identical.",
+    change:
+      "The video-plan pointer moved from LOA-VIDEO-PLAN-FREEZE-2026-09-07-v3 to LOA-VIDEO-PLAN-FREEZE-2026-09-08-v4 after the final IABS 1-2 MP4, poster, shipping VTT and transcript passed review and were activated as optional, non-blocking media at t02u5-s1. Videos 2 and 3 remain unrendered and inactive.",
+    reason:
+      "The content freeze pins the video-plan freeze artifact. Activating a reviewed optional asset changes that dependency byte-state, so the content-freeze id must advance even though the regulated curriculum wording and time model do not.",
+    previousFreezeSha256: "b6ae79770bc2856d40826629ba3135f865442c5744684306ccf3885c532db74b",
+    previousFreezeBytes: 28150,
+    auditsReRun: Object.freeze([
+      "node scripts/validate-loa-video-packages.mjs",
+      "node --test tests/texas-video-integration.test.mjs tests/texas-law-of-agency.test.mjs tests/video-portfolio.test.mjs",
+      "node scripts/freeze-loa-video-plan.mjs --write",
+      "node --test tests/*.test.mjs",
+    ]),
+  }),
   Object.freeze({
     brokeFreeze: "LOA-CONTENT-FREEZE-2026-08-30-v4",
     on: "2026-08-30",

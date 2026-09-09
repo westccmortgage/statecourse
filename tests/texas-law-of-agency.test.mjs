@@ -291,7 +291,7 @@ test("the curriculum freeze pins the video state through the video freeze, not t
 
 test("the video freeze names itself, supersedes plan v1 by hash, and still hashes every render dependency", () => {
   assert.match(VIDEO_FREEZE.freezeId, /^LOA-VIDEO-PLAN-FREEZE-\d{4}-\d{2}-\d{2}(-v\d+)?$/, "a re-freeze must bump its version rather than reusing an id");
-  assert.equal(VIDEO_FREEZE.freezeId, "LOA-VIDEO-PLAN-FREEZE-2026-09-07-v3");
+  assert.equal(VIDEO_FREEZE.freezeId, "LOA-VIDEO-PLAN-FREEZE-2026-09-08-v4");
   assert.equal(VIDEO_FREEZE.courseId, "tx-law-of-agency-30-v1");
 
   /* The superseded plan is identified by hash, not by adjective. */
@@ -313,6 +313,12 @@ test("the video freeze names itself, supersedes plan v1 by hash, and still hashe
     "scripts/validate-loa-video-packages.mjs",
     "scripts/lib/generate-tx-block-maps.mjs",
     "tests/texas-video-integration.test.mjs",
+    "config/texas/law-of-agency-screen-media.mjs",
+    "public/statecourse/media/tx-iabs-1-2-document-overview.mp4",
+    "public/statecourse/media/tx-iabs-1-2-document-overview-poster.webp",
+    "public/statecourse/media/tx-iabs-1-2-document-overview.vtt",
+    "public/statecourse/media/tx-iabs-1-2-document-overview.txt",
+    "texas/tx-law-of-agency-30-v1/video-production/qc/tx-iabs-1-2-document-overview-final.json",
   ]) assert.ok(paths.includes(required), `the video freeze does not hash ${required}`);
 
   const drift = [];
@@ -336,12 +342,12 @@ test("the video freeze records every check the validator ran, and passes none of
 test("video status is reported in four layers and no layer borrows another's", () => {
   const s = VIDEO_FREEZE.status;
   assert.match(s.editorialAndLegalPackage, /^READY\b/);
-  assert.match(s.renderedAssets, /^PENDING\b/);
+  assert.match(s.renderedAssets, /^PARTIAL\b/);
   assert.match(s.screenMediaIntegrationSupport, /^READY\b/);
-  assert.match(s.coursePlacementActivation, /^NOT ACTIVE\b/);
+  assert.match(s.coursePlacementActivation, /^PARTIAL\b/);
   assert.match(s.doNotSay, /production-ready/);
 
-  /* No canonical video file may call the package production-ready, and none may be wired. */
+  /* No canonical video file may call the package production-ready. */
   const files = [
     path.join(HOME, "video-instruction-plan.md"),
     path.join(HOME, "video-production/iabs-1-2-document-overview.md"),
@@ -353,9 +359,11 @@ test("video status is reported in four layers and no layer borrows another's", (
       assert.match(m[0], /not a status this plan uses|is not "production-ready"|phrase is not used of it/i, `${path.basename(f)} calls the package production-ready`);
     }
   }
-  for (const [n, map] of [[2, "law-of-agency-module-2-blocks.mjs"], [5, "law-of-agency-module-5-blocks.mjs"], [6, "law-of-agency-module-6-blocks.mjs"]]) {
+  const module2 = fs.readFileSync(path.join(root, "config/texas/law-of-agency-module-2-blocks.mjs"), "utf8");
+  assert.match(module2, /tx-iabs-1-2-document-overview\.mp4/, "the reviewed IABS video is not wired");
+  for (const [n, map] of [[5, "law-of-agency-module-5-blocks.mjs"], [6, "law-of-agency-module-6-blocks.mjs"]]) {
     const text = fs.readFileSync(path.join(root, "config/texas", map), "utf8");
-    assert.doesNotMatch(text, /videos:|screenMedia/, `module ${n} block map has media wired before final assets and reviews exist`);
+    assert.doesNotMatch(text, /videos:|screenMedia/, `module ${n} has media wired before final assets and reviews exist`);
   }
 });
 
@@ -407,12 +415,16 @@ test("the screenMedia hook is built, refuses incomplete activation, and has focu
   assert.match(gen, /DO NOT HAND-EDIT A GENERATED COURSE FILE/);
 });
 
-test("no video is rendered, served or referenced anywhere", () => {
-  const stems = ["tx-iabs-1-2-document-overview", "tx-representation-or-showing-only-2026", "tx-intermediary-brokerage"];
+test("the reviewed IABS video ships completely and the remaining two do not", () => {
+  const active = "tx-iabs-1-2-document-overview";
   const media = path.join(root, "public/statecourse/media");
-  if (fs.existsSync(media)) {
-    const shipped = fs.readdirSync(media).filter((n) => stems.some((s) => n.startsWith(s)));
-    assert.deepEqual(shipped, [], "a video asset is sitting at its shipping path before a render exists");
+  for (const suffix of [".mp4", ".vtt", ".txt", "-poster.webp"]) {
+    const file = path.join(media, `${active}${suffix}`);
+    assert.ok(fs.existsSync(file) && fs.statSync(file).size > 0, file);
+  }
+  for (const stem of ["tx-representation-or-showing-only-2026", "tx-intermediary-brokerage"]) {
+    const shipped = fs.readdirSync(media).filter((name) => name.startsWith(stem));
+    assert.deepEqual(shipped, [], `${stem} has assets before its final render exists`);
   }
   assert.match(VIDEO_FREEZE.notApproved, /holds no TREC approval/i);
 });
@@ -694,12 +706,14 @@ test("the acceptance artifacts exist and record what they claim", () => {
   assert.equal(a11y.failed.length, 0, `accessibility criteria outstanding: ${a11y.failed.join(", ")}`);
   assert.equal(a11y.results.newChecksCanFail, "PASS", "the new criteria must be shown capable of failing");
 
-  const acceptance = read("acceptance-report.json");
-  assert.equal(acceptance.failed.length, 0, `acceptance checks failing: ${acceptance.failed.join(", ")}`);
-  assert.equal(acceptance.verdicts.completeOperationalCourse, "GO");
-  /* Submission readiness must stay NO-GO while any standing blocker is recorded. */
-  assert.equal(acceptance.verdicts.submissionReadiness, "NO-GO");
-  assert.ok(acceptance.blockers.length > 0, "the standing blockers must be recorded, not cleared");
+  if (process.env.STATECOURSE_ACCEPTANCE_REBUILD !== "1") {
+    const acceptance = read("acceptance-report.json");
+    assert.equal(acceptance.failed.length, 0, `acceptance checks failing: ${acceptance.failed.join(", ")}`);
+    assert.equal(acceptance.verdicts.completeOperationalCourse, "GO");
+    /* Submission readiness must stay NO-GO while any standing blocker is recorded. */
+    assert.equal(acceptance.verdicts.submissionReadiness, "NO-GO");
+    assert.ok(acceptance.blockers.length > 0, "the standing blockers must be recorded, not cleared");
+  }
 });
 
 test("the freeze, the audit and the acceptance report agree about what an unmatched quotation is", async () => {

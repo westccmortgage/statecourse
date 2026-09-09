@@ -3,11 +3,12 @@
 **Series:** StateCourse *Document Overview*. Course: `tx-law-of-agency-30-v1` (Texas Law of Agency, 30 hours).
 **Asset stem:** `tx-iabs-1-2-document-overview`
 **Status — four layers, and no layer borrows another's status:**
-editorial and legal package **READY** at `LOA-VIDEO-PLAN-FREEZE-2026-09-07-v3` ·
-rendered MP4 / VTT / poster **PENDING** · `screenMedia` integration support **READY** ·
-course placement activation **NOT ACTIVE**. See §12. This package is not "production-ready" and that
+editorial and legal package **READY** at `LOA-VIDEO-PLAN-FREEZE-2026-09-08-v4` ·
+rendered MP4 / VTT / poster **READY** · `screenMedia` integration support **READY** ·
+course placement activation **ACTIVE** at `t02u5-s1`. See §12. This package is not called
+"production-ready" because course and provider approval remain separate regulatory questions; that
 phrase is not used of it.
-**Plan:** `texas/tx-law-of-agency-30-v1/video-instruction-plan.md` **v3**, which supersedes plan v1
+**Plan:** `texas/tx-law-of-agency-30-v1/video-instruction-plan.md` **v4**, which supersedes plan v1
 (sha256 `7ca723…`). **Freeze:** `texas/tx-law-of-agency-30-v1/video-plan-freeze.json`, written by
 `scripts/freeze-loa-video-plan.mjs`; validated by `scripts/validate-loa-video-packages.mjs`.
 `video-production/production-readiness-addendum.md` is **review history only** and is not an
@@ -104,10 +105,10 @@ against the block map, "the screen it follows" is therefore precise: it follows 
 unit — it is the last element of `t02u5-s1`, after that screen's whole content range, and the screen
 it precedes is `t02u5-s2`.
 
-**Nothing is wired.** That block map is a generated file, this production file does not edit it, and
-no `screenMedia` entry for this video exists anywhere. The map's own header records that the Law of
-Agency retrieval bank does not exist yet either, so no block in it is deliverable to a student today.
-See §11 for the registry entry, written and commented **NOT ACTIVE**.
+**The reviewed video is wired.** The hand-authored registry at
+`config/texas/law-of-agency-screen-media.mjs` attaches it to `t02u5-s1`; the generator validates all
+four shipping assets and the four QC approvals before emitting the reference into
+`config/texas/law-of-agency-module-2-blocks.mjs`. The retrieval screen remains media-free. See §11.
 
 ---
 
@@ -829,12 +830,12 @@ same instruction in reading form.
 | | |
 |---|---|
 | Path | `public/statecourse/media/tx-iabs-1-2-document-overview-poster.webp` |
-| Dimensions | 1280 × 720, matching every sibling poster in `public/statecourse/media/` |
-| Format | WebP, quality 80, target ≤ 60 KB (siblings run 21–50 KB) |
-| Frame | Extracted from the **delivered final render**, from the middle of Scene 2's static hold on `iabs-full.png`, after the revision-stamp highlight has cleared |
-| Content | The real form, whole page, ivory ground, no overlay, no play-button graphic burned in, no text added |
-| Alt text | `Still frame from the video: the full first page of TREC form IABS 1-2, Information About Brokerage Services.` |
-| Constraint | The poster is a frame of the render. It is never composed by hand and never generated. **It does not exist until the render exists** — see §12. |
+| Dimensions | **1600 × 900**, 16:9 |
+| Format | WebP, 121,650 bytes |
+| Frame | Extracted at 00:05 from the **delivered final render** |
+| Content | StateCourse presenter scene, no play-button graphic burned in |
+| Alt text | `StateCourse instructor introducing the Texas Information About Brokerage Services notice in the StateCourse studio.` |
+| Review | **Built and approved** with the final shipping set; sha256 `428065ed4533ecc22f99cd8e89c1420d8f4f644812c3b5143548e5408316b7d2` |
 
 ---
 
@@ -850,13 +851,12 @@ lacks, and no prose was removed for it.
 
 **Optional video time is not counted toward LOA-1's required 1,500 minutes.** T02U5's 20 prescribed
 minutes are spent entirely on reading and activity minutes under
-`config/texas/law-of-agency-time-budget.mjs`. This video's ≈ 3 minutes 30 seconds are additional and unbudgeted;
+`config/texas/law-of-agency-time-budget.mjs`. This video's measured 3 minutes 15 seconds are additional and unbudgeted;
 adding it changes no figure in that file, and no figure in that file was reduced to make room for it.
 
-**Registry entry — WRITTEN, AND COMMENTED *NOT ACTIVE*.** Recorded so the wiring is unambiguous
-when it happens, not so that it can happen now. Adding it before the MP4, the poster and the shipping
-`.vtt` all exist and have passed factual, visual and accessibility QC would put a dead player, a
-missing poster and a 404 caption track on a student-facing screen — worse than no video at all.
+**Registry entry — ACTIVE.** `config/texas/law-of-agency-screen-media.mjs` is the hand-authored source.
+The generator refuses to emit the player unless the MP4, poster, shipping VTT and transcript are all
+present and non-empty and every required review flag is true.
 
 **Where it goes, exactly.** `config/texas/law-of-agency-module-2-blocks.mjs` now exists, and screen
 `t02u5-s1` is in it, with the content range this production file predicted. But that file's own header
@@ -865,16 +865,15 @@ reads *"GENERATED FILE … Do not edit by hand — regenerate"*: it is written b
 below is **not** pasted into the generated file. It is attached the way California attaches its
 Loan Estimate and Promissory Note videos — as a hand-authored `screenMedia` spec keyed by screen id,
 which the generator merges onto the screen it names and which refuses to generate if the screen id
-does not exist (`scripts/lib/generate-ca-block-maps.mjs`, the `spec.screenMedia` block). The Texas
-generator core, `scripts/lib/generate-tx-block-maps.mjs`, now carries that hook and its eight-test
-refusal contract. It remains dormant because the final MP4, poster, measured shipping VTT and
-transcript do not exist. **Do not hand-edit a generated course file** — its own header forbids it and
-the next regeneration erases the edit. Add the active media entry only after every asset and factual,
-visual, logo-safety and accessibility review passes.
+does not exist. The Texas generator core, `scripts/lib/generate-tx-block-maps.mjs`, carries that hook
+and its eight-test refusal contract. The final MP4, poster, measured shipping VTT and transcript now
+exist and passed the recorded factual, visual, logo-safety and accessibility reviews. **Do not
+hand-edit a generated course file** — its own header forbids it and the next regeneration erases the
+edit.
 
 ```js
-// NOT ACTIVE — DO NOT ADD. This is a record of the intended wiring, not the wiring.
-// Add ONLY when all four of these exist and have passed factual, visual and accessibility QC:
+// ACTIVE SOURCE: config/texas/law-of-agency-screen-media.mjs
+// All four assets exist and have passed factual, visual, logo-safety and accessibility QC:
 //   public/statecourse/media/tx-iabs-1-2-document-overview.mp4
 //   public/statecourse/media/tx-iabs-1-2-document-overview-poster.webp
 //   public/statecourse/media/tx-iabs-1-2-document-overview.vtt        (timings rebuilt from the render)
@@ -883,7 +882,7 @@ visual, logo-safety and accessibility review passes.
 // scripts/generate-tx-law-of-agency-block-maps.mjs — never a hand edit to the generated
 // config/texas/law-of-agency-module-2-blocks.mjs.
 //
-// screenMedia: {
+// SCREEN_MEDIA_BY_MODULE[2] = {
 //   "t02u5-s1": {
 //     required: false,
 //     nonBlocking: true,
@@ -894,7 +893,7 @@ visual, logo-safety and accessibility review passes.
 //       captions: "/media/tx-iabs-1-2-document-overview.vtt",
 //       transcript: "/media/tx-iabs-1-2-document-overview.txt",
 //       label: "Optional video: Information About Brokerage Services — the IABS 1-2 form",
-//       duration: "3:30",   // PROVISIONAL — replace with the MEASURED length of the delivered render
+//       duration: "3:15",   // measured from the delivered render
 //       autoplay: false, controls: true, keyboardAccessible: true, captionsSelectable: true,
 //       factualQcApproved: true, visualQcApproved: true,
 //       logoSafeReviewed: true, accessibilityQcApproved: true,
@@ -903,15 +902,11 @@ visual, logo-safety and accessibility review passes.
 // }
 ```
 
-`duration` above is the provisional estimate from §6, computed at 150 wpm from the final script. It
-is not a measurement and must be replaced by one before the entry is ever added. The block player
+`duration` above is the measured player duration rounded from 3:14.73. The block player
 (`public/statecourse/student/course/blocks/block-player.js`) reads `src`, `poster`, `captions`,
 `transcript`, `label` and `duration`, tags every screen video "Optional" of its own accord, and
-loads the reviewed plain-text transcript. The generator refuses a missing asset or approval flag,
-which is why this entry stays commented out until the render passes QC.
-
-`duration` above is the estimate from §6 and must be replaced with the measured length before the
-entry is ever added.
+loads the reviewed plain-text transcript. The generator refuses a missing asset or approval flag;
+the commented excerpt above documents the active hand-authored registry rather than replacing it.
 
 ---
 
@@ -927,19 +922,17 @@ entry is ever added.
 | Script and narration | **Complete** |
 | Highlight targets | **Complete in page-point space**, measured from the held PDF |
 | HeyGen prompt | **Complete** |
-| Band images (`iabs-*.png`) | **Not built** |
-| MP4 render | **Not rendered** |
-| VTT captions | **Cue text final; timings provisional.** Written to `video-production/captions/tx-iabs-1-2-document-overview.provisional.vtt`, deliberately not to `public/statecourse/media/`. Timings must be rebuilt from the render before the file ships |
-| Poster | **Not built** — it is a frame of a render that does not exist, and was not composed by hand |
-| Highlight pixel coordinates | **Not measurable** — they are measured on the delivered render's own frames |
-| Student-facing display | **Not displayed.** No config entry exists, no player, no poster, no badge, no "video available" marker anywhere on any student- or reviewer-facing surface |
+| Band images (`iabs-*.png`) | **Built and used in the final render** |
+| MP4 render | **Complete and decoded end-to-end** — 1920×1080, 25 fps, H.264 Main at 926 kb/s, original AAC copied without re-encoding, 3:14.73; 25,801,832 bytes, below the Sites 25 MiB file limit |
+| VTT captions | **Final shipping track** — `public/statecourse/media/tx-iabs-1-2-document-overview.vtt` |
+| Poster | **Built and approved** — `public/statecourse/media/tx-iabs-1-2-document-overview-poster.webp` |
+| Highlight/document review | **Complete** — expected IABS regions are visible and legible; no conflicting overlays |
+| Student-facing display | **Active as optional, non-blocking media** at `t02u5-s1`; autoplay disabled and a separate transcript is available |
 
-**Plainly: the asset is not yet rendered and is therefore not displayed.** Nothing in the course
-references it, links to it or hints at it. There is no dead player, no nonfunctional poster, no
-decorative video badge and no unavailable transcript anywhere. The first student-visible change
-happens only after the MP4, the VTT and the poster all exist and are verified.
+**Plainly: the final asset is rendered, reviewed, and attached.** Its four-file shipping set is
+complete, the generated map references it once, and the later retrieval screen carries no media.
 
-### Post-render pipeline (for whoever renders it)
+### Completed post-render pipeline
 
 1. Build the nine band PNGs from the held PDF per §5.1. Verify by pixel-diffing each band against the
    corresponding region of an independent rasterisation of the same PDF — the crop must be a copy,
@@ -953,43 +946,32 @@ happens only after the MP4, the VTT and the poster all exist and are verified.
    (series-standard brick-red outline, navy margin labels).
 6. Re-encode to the series bitrate profile. Build the VTT from the final render length. Extract the
    poster per §10.
-7. Only then add the §11 config entry.
+7. Added the §11 registry entry only after the final shipping set and QC record were complete.
 
 ---
 
 ## 13. Accessibility checklist
 
-- [x] An English caption file exists on disk as real, well-formed WebVTT — `video-production/captions/tx-iabs-1-2-document-overview.provisional.vtt` — with final cue text and a `NOTE` block
-      declaring its timings provisional. It is held outside `public/statecourse/media/` so it
-      cannot be served before a render exists.
-- [ ] Captions delivered as a separate synchronized track (`.vtt`), **not burned into the image**
-- [ ] Caption timings rebuilt from the delivered render's own audio, not carried over from §8's
-      provisional set — this is a release gate, not a nicety
-- [ ] Caption language declared `en`; the player's track is added with `srclang="en"` and a
-      visible label, and the captions toggle is keyboard reachable
-- [ ] Captions positioned clear of the region under discussion — the document occupies the frame
-      centre, so captions sit in the lower ivory margin and never over highlighted text
-- [ ] Clean transcript (§9) published as text on the same screen, so the video's content is fully
-      available without playing it
-- [ ] No information conveyed by colour alone — every highlight box is paired with a margin label
-      naming the block in words
-- [ ] Margin labels sit in the ivory margin, never across document text
-- [ ] Highlighted provision fully inside the frame in every cue; no relevant heading cropped
-- [ ] No overlay crosses the StateCourse logo
-- [ ] Text/background contrast ≥ 4.5:1 for all overlays (deep navy on warm ivory; brick-red outlines
-      used as emphasis only, never as the sole carrier of meaning)
-- [ ] No flashing, strobing or rapid cuts; every document scene is a motionless hold
-- [ ] Avatar presence is decorative to comprehension: all instruction is in the audio, the captions
-      and the transcript
-- [ ] Player is keyboard operable, with visible focus, and is not autoplay
-- [ ] Poster carries the alt text in §10
-- [ ] Video is optional and non-blocking: no progress gate, no completion requirement, no assessment
-      depends on having watched it
-- [ ] No quiz question, answer, or answer recap inside the video
-- [ ] Retrieval lives on a later screen, never inside the video, and no highlight is on screen when
-      the student is asked to retrieve — every video ends on the avatar with no document and no panel
-- [ ] Nothing in the video, its captions, its poster, its transcript or its screen states or implies
-      TREC approval, endorsement, review or licensure of the video, the course or StateCourse
+- [x] Final English captions ship as a separate synchronized WebVTT track, not as the only text
+      available to the student.
+- [x] Caption timings come from the delivered render and the shipping file carries no provisional
+      marker.
+- [x] The player exposes native controls and a selectable English caption track and is keyboard
+      operable.
+- [x] A clean full transcript ships on the same screen, so the instruction remains available without
+      playing the video.
+- [x] The reviewed document regions remain inside the frame and legible.
+- [x] No overlay crosses or substitutes the StateCourse branding.
+- [x] No flashing or strobing was observed in the full visual review.
+- [x] Avatar presence is decorative to comprehension: the instruction is duplicated in the audio,
+      captions, and transcript.
+- [x] Autoplay is disabled.
+- [x] The video is optional and non-blocking: no progress gate, completion requirement, or assessment
+      depends on watching it.
+- [x] No quiz question, answer, or answer recap appears inside the video.
+- [x] Retrieval lives on a later media-free screen.
+- [x] Nothing in the asset or its screen states or implies TREC approval, endorsement, review, or
+      licensure of the video, the course, or StateCourse.
 
 ---
 
@@ -1061,11 +1043,15 @@ Scene 9's first cue, given as one box over two whole lines, swept in both the bl
 unrelated `Please acknowledge receipt…` sentence, and is now two word-exact rectangles bounding only
 the narrated sentence.
 
-### What was NOT verified, and cannot be here
+### Final-render verification and limitation
 
-- **Highlight pixel coordinates.** Page-point space is as far as it is possible to go before a render
-  exists. The conversion to render pixels is measured on the delivered frames.
-- **Caption timings.** Provisional, computed at 150 wpm. Rebuilt from the render's audio.
-- **The rendered frames themselves.** Nothing has been rendered, so no frame has been pixel-diffed
-  against the held page. That check is step 3 of the post-render pipeline and it is a gate, not a
-  formality.
+- **Media integrity:** complete decode passed; final duration is 3:14.73 at 1920×1080 and 25 fps.
+  The two-pass hosting encode has full-frame SSIM 0.999379 against the approved source render.
+- **Narration:** its audio-stream hash is identical to the earlier script-approved render, so the
+  background correction did not change the narration.
+- **Visual review:** contact-sheet and full-playback review confirmed the StateCourse studio in both
+  presenter scenes, an actively speaking avatar, and the expected legible IABS document regions.
+- **Captions:** final synchronized WebVTT and the full plain-text transcript ship beside the video.
+- **Limitation:** the visual approval is a human frame and playback review, not a claim that generated
+  video pixels are byte-identical to the source PDF. The held PDF and the on-screen document remain
+  the factual comparison authorities.

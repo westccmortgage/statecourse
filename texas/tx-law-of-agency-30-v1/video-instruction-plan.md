@@ -4,9 +4,9 @@
 **Course approval form:** LOA-1, revision 09/11/2024 — 12 topics, 57 units, 1,500 prescribed minutes.
 Transcribed at `config/texas/law-of-agency-course-form.mjs`; held at `texas/trec-sources/LOA-1.pdf`.
 **Plan date:** 2026-08-30
-**Plan revision:** **v3 — 2026-09-07.** Plan v3 carries the validated Texas `screenMedia` integration
-hook added after the video packages were frozen at v2. It changes no narration, storyboard, caption
-cue, coordinate or placement, and activates no media because no final render exists. This plan still
+**Plan revision:** **v4 — 2026-09-08.** Plan v4 records the final reviewed IABS 1-2 render and its
+optional activation at `t02u5-s1`. Videos 2 and 3 remain editorial packages only. The activation
+changes no regulated time, narration, assessment, or approval claim. This plan still
 supersedes plan v1, which is the byte-state
 sha256 `7ca7234853320ad96275c9a6c7e69a16e0a2ec2b63b6de2fd7ed62ed7f88e403` (29,239 bytes).
 **Plan v1 is SUPERSEDED.** It was correct when written and is wrong in three particulars now: its
@@ -21,7 +21,7 @@ this file and the three production files, and from nothing else. v1's hash is pr
 they hold.
 
 **Freeze:** this plan and everything a render depends on are hashed by
-**`LOA-VIDEO-PLAN-FREEZE-2026-09-07-v3`** (`texas/tx-law-of-agency-30-v1/video-plan-freeze.json`,
+**`LOA-VIDEO-PLAN-FREEZE-2026-09-08-v4`** (`texas/tx-law-of-agency-30-v1/video-plan-freeze.json`,
 written by `scripts/freeze-loa-video-plan.mjs`). The curriculum freeze hashes *that artifact*, not
 this file — so correcting a video no longer requires breaking a curriculum freeze. See §12.
 
@@ -29,10 +29,10 @@ this file — so correcting a video no longer requires breaking a curriculum fre
 
 | Layer | Status |
 |---|---|
-| Editorial and legal package (script, prompt, storyboard, transcript, captions, coordinates, poster spec) | **READY** at `LOA-VIDEO-PLAN-FREEZE-2026-09-07-v3` |
-| Rendered MP4 / shipping VTT / poster assets | **PENDING** — nothing is rendered |
-| `screenMedia` integration support in the Texas generator | **READY** — hook and eight acceptance tests pass; no media is activated |
-| Course placement activation | **NOT ACTIVE** — no block map references any video |
+| Editorial and legal package (script, prompt, storyboard, transcript, captions, coordinates, poster spec) | **READY** at `LOA-VIDEO-PLAN-FREEZE-2026-09-08-v4` |
+| Rendered MP4 / shipping VTT / poster assets | **PARTIAL** — Video 1 complete; Videos 2 and 3 pending |
+| `screenMedia` integration support in the Texas generator | **READY** — hook and eight acceptance tests pass |
+| Course placement activation | **PARTIAL** — Video 1 active at `t02u5-s1`; Videos 2 and 3 inactive |
 
 "Production-ready" is not a status this plan uses. See §6.
 
@@ -386,46 +386,44 @@ are no longer displayed: they belong to `-s1`, which is two screens behind. That
 property of the generated screen shape, not a convention anyone must remember to honour, and
 `scripts/validate-loa-video-packages.mjs` re-derives it from the block maps.
 
-**Nothing is wired.** The block maps are generated files carrying "Do not edit by hand — regenerate",
-they are owned elsewhere, and no `videos` or `screenMedia` entry for any of these three videos exists
-in any of them. This plan wires nothing. The validated hook exists, but it refuses activation until
-all final assets and review approvals exist — see §10.3.
+**Only Video 1 is wired.** The block maps remain generated files carrying "Do not edit by hand —
+regenerate". A hand-authored registry supplies Video 1 to `t02u5-s1` only after its four shipping
+assets and review approvals passed. Videos 2 and 3 remain absent. The retrieval screens carry no
+media — see §10.3.
 
 ---
 
 ## 6. Honesty about production status
 
-**Nothing is rendered. Nothing is displayed. Nothing is active.**
+**Video 1 is rendered and active. Videos 2 and 3 are not rendered or active.**
 
 **Status is reported in four layers, and no layer borrows another's status.**
 
 | Layer | Status | What that means |
 |---|---|---|
-| **Editorial and legal package** | **READY** | Script, HeyGen prompt, storyboard and scene table, clean transcript, caption cue text, crop coordinates, highlight coordinates, duration metadata and poster specification are complete, source-verified against the held form and statute, internally consistent, and frozen at `LOA-VIDEO-PLAN-FREEZE-2026-09-07-v3`. |
-| **Rendered MP4 / VTT / poster assets** | **PENDING** | No MP4, no shipping `.vtt`, no `-poster.webp`, no band PNGs, no diagram panels. Nothing has been rendered. |
+| **Editorial and legal package** | **READY** | All three scripts, prompts, storyboards, transcripts, caption cue text, coordinates, duration metadata and poster specifications are complete and source-verified. |
+| **Rendered MP4 / VTT / poster assets** | **PARTIAL** | Video 1 has a complete MP4, shipping VTT, transcript and poster. Videos 2 and 3 remain unrendered. |
 | **`screenMedia` integration support** | **READY** | `scripts/lib/generate-tx-block-maps.mjs` now validates exact placement, optional/non-blocking status, complete assets, measured duration, shipping captions, explicit transcript, assessment separation and completed factual/visual/accessibility/logo-safety reviews before generating any media reference. |
-| **Course placement activation** | **NOT ACTIVE** | No block map references any of these videos. No student-facing surface carries a player, poster, badge, duration, play button or transcript link. |
+| **Course placement activation** | **PARTIAL** | Video 1 is active at `t02u5-s1`. Videos 2 and 3 have no block-map or shipping-media reference. |
 
 **The editorial layer being READY says nothing about the other three.** A package that is
 editorially ready and unrendered is not "production-ready", and this plan does not use that phrase.
 
-For all three videos the state is, precisely:
+For all three videos the editorial state is complete. The delivery state differs:
 
 - script **complete**
 - HeyGen production prompt **complete**
 - assets **listed** — the held PDF, the band crops to be built from it, the diagram panels to be built
 - placement **fixed** — module, unit and screen named
-- **asset not yet rendered, and therefore not displayed**
+- Video 1: **rendered, reviewed, and displayed as optional/non-blocking media**
+- Videos 2 and 3: **not yet rendered and therefore not displayed**
 
-There is no MP4, no `.vtt`, no `-poster.webp`, and no config entry for any of these three videos. No
-student-facing or reviewer-facing surface carries a player, a poster, a "video available" badge, a
-duration, a play button, a transcript link, or any other marker suggesting a video exists. Nothing in
-the course references these files. There is no dead player, no nonfunctional poster, no decorative
-video badge, and no unavailable transcript anywhere.
+Video 1 has one exact four-asset shipping set and one generated placement. The generator verified
+those assets before writing the map, so the placement cannot become a partial or dead player.
+Videos 2 and 3 have no MP4, shipping VTT, poster, transcript, config entry, or UI marker.
 
-Each production file carries a `videos: [...]` config entry, commented **NOT ACTIVE**, with an
-explicit instruction not to add it until the MP4, the VTT, the poster and the transcript all exist and have been
-verified. Adding it earlier would produce exactly the broken surface this plan forbids.
+Video 1's active registry entry lives in `config/texas/law-of-agency-screen-media.mjs`. The remaining
+production files retain commented **NOT ACTIVE** examples until their final assets are verified.
 
 **Caption files exist on disk — corrected in plan v2.** v1 said the caption files existed only inside
 the production files. Real, well-formed WebVTT files are now written:
@@ -503,7 +501,7 @@ Each carries: learning objective · LOA-1 topic and unit · exact planned placem
 document asset path · scene-by-scene structure · exact narration · on-screen text · visual directions
 · document-highlight instructions in measured page-point coordinates · a HeyGen-ready production
 prompt · a caption-ready transcript with provisional timings · a clean transcript · a poster
-specification · the optional/non-blocking configuration, marked NOT ACTIVE · production status · and
+specification · the optional/non-blocking configuration and current activation state · production status · and
 an accessibility checklist.
 
 ---
@@ -518,9 +516,8 @@ The three videos share one asset build. Do it once.
    rasterisation of the same page: a crop must be a copy of the page, never a re-render of its text.
 2. **Build the four diagram panels** per Video 2 §5.2 and Video 3 §5.2 — reportlab vector art, series
    palette and typeface, StateCourse labels and section numbers only, no form language.
-3. **Render Video 1**, then 2, then 3, each with its own §7 prompt and its own subset of the assets.
-   Video 1 first: it establishes the document's look for the series and is the one the other two lean
-   on when they say "the notice you have already seen."
+3. **Video 1 is complete. Render Video 2, then Video 3**, each with its own §7 prompt and its own
+   subset of the assets. Both may now refer to the notice the student has already seen.
 4. **Verify each render**: pixel-diff every document hold; any drift, zoom, overlay or colour shift is
    a reject-and-re-render, not a fix in post.
 5. **Measure**, convert each production file's page-point highlight targets to render pixels, write the
@@ -536,7 +533,7 @@ Before step 1 and again after step 6, run:
 
 ```
 node scripts/validate-loa-video-packages.mjs      # eight checks over the canonical package
-node scripts/freeze-loa-video-plan.mjs            # verify LOA-VIDEO-PLAN-FREEZE-2026-09-07-v3
+node scripts/freeze-loa-video-plan.mjs            # verify LOA-VIDEO-PLAN-FREEZE-2026-09-08-v4
 ```
 
 The validator refuses to pass if narration, transcript, captions and prompt have drifted apart, if any
@@ -682,7 +679,7 @@ cue timeline, matched scene-to-cue by narration text, and re-derived on every va
 | Crop band boundaries G and H | this plan §4; `iabs-1-2-document-overview.md` §5.1 |
 | Crop x window 592 → 600 (found by the validator, later than the addendum) | this plan §4; `iabs-1-2-document-overview.md` §5.1, and the restated rows in Videos 2 and 3 |
 | Highlight rectangles, five corrections | this plan §4; each production file's §6 |
-| Poster specification — a frame of a render that does not exist, never composed by hand | each production file's §10; this plan §6 |
+| Poster specification — Video 1 built from its render; Videos 2 and 3 remain pending | each production file's §10; this plan §6 |
 | 50 form strings verified verbatim against the held PDF, 0 mismatches | validator check 6, which re-runs the verification rather than restating its result |
 | Four-layer status, no layer borrowing another's | this plan's header and §6 |
 | `screenMedia` hook implemented with eight passing refusal/placement/accessibility tests | this plan §10.3; `scripts/lib/generate-tx-block-maps.mjs`; `tests/texas-video-integration.test.mjs` |
@@ -702,7 +699,7 @@ The structure now is one level of indirection:
 ```
 scripts/freeze-loa-video-plan.mjs
   └─ writes texas/tx-law-of-agency-30-v1/video-plan-freeze.json
-       id LOA-VIDEO-PLAN-FREEZE-2026-09-07-v3
+       id LOA-VIDEO-PLAN-FREEZE-2026-09-08-v4
        hashes: this plan · the three production files · the three caption .vtt files ·
                the held IABS 1-2 PDF · the source inventory · the three block maps ·
                the validator · the screenMedia hook tests · the review addendum

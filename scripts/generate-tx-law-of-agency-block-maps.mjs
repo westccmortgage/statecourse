@@ -34,6 +34,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { TOPICS } from "../config/texas/law-of-agency-course-form.mjs";
 import { UNIT_OBJECTIVES } from "../config/texas/law-of-agency-course.mjs";
+import { SCREEN_MEDIA_BY_MODULE } from "../config/texas/law-of-agency-screen-media.mjs";
 import { generateModuleBlocks } from "./lib/generate-tx-block-maps.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
@@ -59,7 +60,11 @@ let screens = 0;
 for (const [index, topic] of TOPICS.entries()) {
   const moduleNumber = index + 1;
   const unitCodes = topic.units.map((unit) => unit.code);
-  const outPath = generateModuleBlocks({ ...course, unitCodes }, moduleNumber);
+  const outPath = generateModuleBlocks({
+    ...course,
+    unitCodes,
+    screenMedia: SCREEN_MEDIA_BY_MODULE[moduleNumber] || {},
+  }, moduleNumber);
   const generated = await import(`file://${outPath}?t=${Date.now()}`);
   const delivery = generated.default;
   const optional = delivery.blocks.filter((block) => block.optional).length;

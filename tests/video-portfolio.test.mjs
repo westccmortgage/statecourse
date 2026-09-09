@@ -47,12 +47,19 @@ test("California's four active videos have complete shipping assets", () => {
   assert.equal(california.active_instructional_videos, 4);
 });
 
-test("Texas records three ready editorial packages without claiming a render or activation", () => {
+test("Texas records the first active video and keeps the two remaining packages inactive", () => {
   const texas = portfolio.states.find((state) => state.state_code === "TX");
   assert.equal(texas.editorial_packages_ready, 3);
-  assert.equal(texas.rendered_instructional_videos, 0);
-  assert.equal(texas.active_instructional_videos, 0);
-  for (const stem of ["tx-iabs-1-2-document-overview", "tx-representation-or-showing-only-2026", "tx-intermediary-brokerage"]) {
+  assert.equal(texas.rendered_instructional_videos, 1);
+  assert.equal(texas.active_instructional_videos, 1);
+  const active = "tx-iabs-1-2-document-overview";
+  for (const extension of ["mp4", "vtt", "txt"]) {
+    const file = path.join(root, `public/statecourse/media/${active}.${extension}`);
+    assert.ok(fs.existsSync(file) && fs.statSync(file).size > 0, file);
+  }
+  const poster = path.join(root, `public/statecourse/media/${active}-poster.webp`);
+  assert.ok(fs.existsSync(poster) && fs.statSync(poster).size > 0, poster);
+  for (const stem of ["tx-representation-or-showing-only-2026", "tx-intermediary-brokerage"]) {
     assert.equal(fs.existsSync(path.join(root, `public/statecourse/media/${stem}.mp4`)), false, stem);
   }
 });

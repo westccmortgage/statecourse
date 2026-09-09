@@ -38,14 +38,14 @@ const PROD = path.join(HOME, "video-production");
 const OUT = path.join(HOME, "video-plan-freeze.json");
 
 const COURSE_ID = "tx-law-of-agency-30-v1";
-const FREEZE_ID = "LOA-VIDEO-PLAN-FREEZE-2026-09-07-v3";
+const FREEZE_ID = "LOA-VIDEO-PLAN-FREEZE-2026-09-08-v4";
 
 const PREVIOUS_FREEZE = Object.freeze({
-  freezeId: "LOA-VIDEO-PLAN-FREEZE-2026-08-30-v2",
-  sha256: "bc287901fc2d63b781130d443cd5892e78c1ed64b19106a4fa5d995bf820cd26",
-  bytes: 23170,
+  freezeId: "LOA-VIDEO-PLAN-FREEZE-2026-09-07-v3",
+  sha256: "9214470e9ae9921a594d44720f384280cbad96be98aedf6cb7ca823d0e88543e",
+  bytes: 23965,
   change:
-    "The Texas screenMedia hook is now implemented with exact placement, optional/non-blocking, complete-asset, shipping-caption, measured-duration, explicit-transcript, assessment-separation and completed-review gates. No video render or placement was activated.",
+    "The final IABS 1-2 video, poster, shipping captions and transcript passed review and were activated as optional, non-blocking media at t02u5-s1. Videos 2 and 3 remain unrendered and inactive.",
 });
 
 /**
@@ -216,7 +216,7 @@ if (!validated.pass) {
 
 /* ── everything a render depends on ──────────────────────────────────────────────────────────── */
 const artifacts = {
-  "video instruction plan (v3, canonical)": hashOf(path.join(HOME, "video-instruction-plan.md")),
+  "video instruction plan (v4, canonical)": hashOf(path.join(HOME, "video-instruction-plan.md")),
 
   "production file — video 1 IABS 1-2 Document Overview": hashOf(path.join(PROD, "iabs-1-2-document-overview.md")),
   "production file — video 2 Representation or Showing Only": hashOf(path.join(PROD, "representation-or-showing-only-2026.md")),
@@ -225,6 +225,14 @@ const artifacts = {
   "captions — video 1 (provisional timings)": hashOf(path.join(PROD, "captions/tx-iabs-1-2-document-overview.provisional.vtt")),
   "captions — video 2 (provisional timings)": hashOf(path.join(PROD, "captions/tx-representation-or-showing-only-2026.provisional.vtt")),
   "captions — video 3 (provisional timings)": hashOf(path.join(PROD, "captions/tx-intermediary-brokerage.provisional.vtt")),
+
+  "video 1 final QC record": hashOf(path.join(PROD, "qc/tx-iabs-1-2-document-overview-final.json")),
+  "video 1 shipping MP4": hashOf(path.join(root, "public/statecourse/media/tx-iabs-1-2-document-overview.mp4")),
+  "video 1 shipping poster": hashOf(path.join(root, "public/statecourse/media/tx-iabs-1-2-document-overview-poster.webp")),
+  "video 1 shipping captions": hashOf(path.join(root, "public/statecourse/media/tx-iabs-1-2-document-overview.vtt")),
+  "video 1 shipping transcript": hashOf(path.join(root, "public/statecourse/media/tx-iabs-1-2-document-overview.txt")),
+  "Law of Agency screenMedia registry": hashOf(path.join(root, "config/texas/law-of-agency-screen-media.mjs")),
+  "Law of Agency block-map wrapper": hashOf(path.join(root, "scripts/generate-tx-law-of-agency-block-maps.mjs")),
 
   /* The only permitted source of document pixels. If this changes, every crop, every highlight
      rectangle and every one of the fifty verified strings has to be re-measured. */
@@ -248,7 +256,7 @@ const artifacts = {
 };
 
 const VIDEOS = Object.freeze([
-  Object.freeze({ n: 1, title: "IABS 1-2 Document Overview", stem: "tx-iabs-1-2-document-overview", unit: "T02U5", screen: "t02u5-s1", retrievalScreen: "t02u5-s3", derivedDuration: "3:30", scenes: 10, cues: 39 }),
+  Object.freeze({ n: 1, title: "IABS 1-2 Document Overview", stem: "tx-iabs-1-2-document-overview", unit: "T02U5", screen: "t02u5-s1", retrievalScreen: "t02u5-s3", derivedDuration: "3:30", measuredDuration: "3:15", renderStatus: "ACTIVE", scenes: 10, cues: 39 }),
   Object.freeze({ n: 2, title: "Representation or Showing Only: the 2026 decision", stem: "tx-representation-or-showing-only-2026", unit: "T05U3", screen: "t05u3-s1", retrievalScreen: "t05u3-s3", derivedDuration: "3:03", scenes: 7, cues: 33 }),
   Object.freeze({ n: 3, title: "Texas Intermediary Brokerage", stem: "tx-intermediary-brokerage", unit: "T06U3", screen: "t06u3-s1", retrievalScreen: "t06u3-s3", derivedDuration: "3:20", scenes: 7, cues: 34 }),
 ]);
@@ -256,17 +264,17 @@ const VIDEOS = Object.freeze([
 const freeze = {
   freezeId: FREEZE_ID,
   courseId: COURSE_ID,
-  frozenOn: "2026-09-07",
+  frozenOn: "2026-09-08",
   generatedBy: "scripts/freeze-loa-video-plan.mjs",
   what: "The video instruction plan and every artifact a render of the three Law of Agency videos depends on. This freeze is what scripts/freeze-loa-curriculum.mjs hashes in place of the plan itself, so that correcting a video does not require breaking a curriculum freeze.",
 
   /* No layer may borrow another's status. */
   status: {
     editorialAndLegalPackage: "READY — at this freeze and not before it. Script, HeyGen prompt, storyboard and scene table, clean transcript, caption cue text, crop coordinates, highlight coordinates, duration metadata and poster specification are complete, source-verified and internally consistent.",
-    renderedAssets: "PENDING — no MP4, no shipping .vtt, no -poster.webp, no band PNGs, no diagram panels. Nothing has been rendered.",
-    screenMediaIntegrationSupport: "READY — scripts/lib/generate-tx-block-maps.mjs validates exact instruction-screen placement, optional/non-blocking delivery, complete non-empty assets, shipping captions, measured duration, explicit transcript, assessment separation and completed factual/visual/accessibility/logo-safety review. Eight focused tests pass. No media is active.",
-    coursePlacementActivation: "NOT ACTIVE — no block map references any of these videos, and no student-facing surface carries a player, poster, badge, duration, play button or transcript link.",
-    doNotSay: "'production-ready'. It collapses four layers into one and three of them are not ready.",
+    renderedAssets: "PARTIAL — Video 1 has a final MP4, shipping .vtt, plain-text transcript and poster. Videos 2 and 3 remain unrendered.",
+    screenMediaIntegrationSupport: "READY — scripts/lib/generate-tx-block-maps.mjs validates exact instruction-screen placement, optional/non-blocking delivery, complete non-empty assets, shipping captions, measured duration, explicit transcript, assessment separation and completed factual/visual/accessibility/logo-safety review. Eight focused tests pass.",
+    coursePlacementActivation: "PARTIAL — Video 1 is active at t02u5-s1 as optional, non-blocking media. Videos 2 and 3 have no shipping assets or block-map references.",
+    doNotSay: "'production-ready'. It collapses distinct asset, placement, course-approval and provider-approval layers into one.",
   },
 
   previousFreeze: PREVIOUS_FREEZE,
@@ -298,7 +306,7 @@ const freeze = {
   },
 
   afterFreeze:
-    "No video wording, coordinate or duration may change silently. A correction found later must break THIS freeze explicitly, name the artifact and the reason, re-run the validator, and create a new video-freeze version with new hashes. It does not require a curriculum-freeze break: the curriculum freeze follows this artifact's hash. Re-taking this freeze under the same id is forbidden — an id denoting two byte-states is not an identifier.",
+    "No video wording, coordinate, duration or shipping asset may change silently. A correction found later must break THIS freeze explicitly, name the artifact and the reason, re-run the validator, and create a new video-freeze version with new hashes. Because the curriculum freeze pins this artifact's hash, its dependency pointer must then be re-frozen under a new content-freeze id. Re-taking either freeze under the same id is forbidden — an id denoting two byte-states is not an identifier.",
 
   artifacts,
 
@@ -340,4 +348,4 @@ if (process.argv.includes("--write")) {
 }
 
 console.log(`  ${Object.keys(artifacts).length} artifacts · validator ${validated.checks.filter((c) => c.pass).length}/${validated.checks.length} · supersedes plan v1 ${SUPERSEDES.sha256.slice(0, 12)}…`);
-console.log(`  editorial READY · rendered assets PENDING · screenMedia integration READY · course placement NOT ACTIVE`);
+console.log(`  editorial READY · rendered assets PARTIAL (1/3) · screenMedia integration READY · course placement PARTIAL (1/3)`);
