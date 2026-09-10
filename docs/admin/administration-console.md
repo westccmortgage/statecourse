@@ -121,6 +121,55 @@ that fails here is the console telling you something true.
    block map edited.
 10. **Withdraw** with a reason. Reload the lesson: it is gone.
 
+## Payments: the three gates
+
+A real charge passes three gates. Two are site-wide and one is per offering, and
+conflating them is how one approval starts charging for everything.
+
+| Gate | Scope | Set where | What it decides |
+| --- | --- | --- | --- |
+| `STRIPE_MODE` | site-wide | Netlify | which credentials exist at all: `test` or `live` |
+| `STATECOURSE_LIVE_PAYMENTS_ENABLED` | site-wide | Netlify | a stop that must be `true` before live keys are used |
+| `payment_mode` + effective approval | **per offering** | admin console | whether this one offering may transact |
+
+The resulting matrix:
+
+| `STRIPE_MODE` | offering `payment_mode` | Result |
+| --- | --- | --- |
+| `test` | `disabled` | refused |
+| `test` | `sandbox` or `live` | sandbox checkout, test credentials, no money moves |
+| `live` | `disabled` or `sandbox` | refused |
+| `live` | `live`, approval currently effective | real charge |
+| `live` | `live`, approval expired or absent | refused by the database |
+
+Sandbox deliberately accepts an offering already marked `live`, because that is the one
+most worth rehearsing before it starts taking real money. Nothing is charged: test mode
+uses test credentials.
+
+Approving an offering never sets `payment_mode`; they are separate columns and separate
+acts. Setting one offering live leaves every other offering `disabled` and `training_only`,
+including the same course in another state and the other discipline in the same state.
+
+### The Netlify configuration Stripe needs
+
+Three variables, **scoped to Functions**, marked secret, production context:
+
+| Variable | Value |
+| --- | --- |
+| `STRIPE_MODE` | `test` |
+| `STRIPE_SECRET_KEY_TEST` | the `sk_test_…` key from the Stripe test dashboard |
+| `STRIPE_WEBHOOK_SECRET_TEST` | the `whsec_…` signing secret for the endpoint below |
+
+The webhook endpoint to register in Stripe (test mode):
+`https://statecourse.com/api/stripe/webhook`
+
+Leave `STATECOURSE_LIVE_PAYMENTS_ENABLED` unset or `false`. Live keys are not needed and
+should not be added until a specific offering is approved and you decide to switch it.
+
+Free training does not pass through any of this: `enroll-training` consults
+`training_access_enabled` alone and never reads payment mode, so students study free
+whatever the payment configuration says.
+
 ## Setup, in order
 
 Everything below is done once. The rest of this document explains why each piece is shaped
