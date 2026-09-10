@@ -31,6 +31,7 @@ import { MODULE_9_BLOCKS as LOA_9 } from "./texas/law-of-agency-module-9-blocks.
 import { MODULE_10_BLOCKS as LOA_10 } from "./texas/law-of-agency-module-10-blocks.mjs";
 import { MODULE_11_BLOCKS as LOA_11 } from "./texas/law-of-agency-module-11-blocks.mjs";
 import { MODULE_12_BLOCKS as LOA_12 } from "./texas/law-of-agency-module-12-blocks.mjs";
+import { testDeliveries } from "./test-fixtures/console-test-course.mjs";
 
 /* Only this type may carry a video. Every other screen type either scores a response or
    exists to be reviewed against one, and the release condition excludes all of them. */
@@ -59,8 +60,11 @@ function normalize(delivery) {
   };
 }
 
+/* testDeliveries() returns nothing unless STATECOURSE_ENABLE_TEST_FIXTURES is "true", so
+   the test course is absent from production's index and a placement onto it cannot even be
+   reserved there. Read once at module load, like every other delivery. */
 const DELIVERIES = Object.freeze(
-  [...CALIFORNIA_DELIVERIES, ...TEXAS_DELIVERIES, ...LAW_OF_AGENCY]
+  [...CALIFORNIA_DELIVERIES, ...TEXAS_DELIVERIES, ...LAW_OF_AGENCY, ...testDeliveries()]
     .map(normalize)
     .filter(Boolean),
 );

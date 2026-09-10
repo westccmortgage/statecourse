@@ -46,13 +46,21 @@ in its allowlist and plays there — without any existing video's allowlist bein
 
 So the branch-deploy context needs, in Netlify:
 
-| Variable | Value for this context |
-| --- | --- |
-| `STATECOURSE_BASE_URL` | the branch deploy's own origin |
-| `CLOUDFLARE_STREAM_CUSTOMER_CODE` | same as production |
-| `CLOUDFLARE_STREAM_KEY_ID` | same as production |
-| `CLOUDFLARE_STREAM_SIGNING_JWK` | same as production |
-| `CLOUDFLARE_STREAM_VIDEO_MAP` | `{}` — the branch serves console assets, not the map |
+| Variable | Scope | Context | Value |
+| --- | --- | --- | --- |
+| `STATECOURSE_BASE_URL` | Functions | branch-deploy only | the branch deploy's own origin |
+| `CLOUDFLARE_STREAM_CUSTOMER_CODE` | Functions | add branch-deploy | as production |
+| `CLOUDFLARE_STREAM_KEY_ID` | Functions | add branch-deploy | as production |
+| `CLOUDFLARE_STREAM_SIGNING_JWK` | Functions | add branch-deploy | as production |
+
+Four, and `CLOUDFLARE_STREAM_VIDEO_MAP` is deliberately not among them. `issuePlayback`
+resolves the UID as `access.media.streamUid || videoMap()[assetKey]`, so an asset released
+through the console carries its own UID and the map is never read. It is needed only for
+code-registry assets, which a branch deploy does not serve. An earlier version of this table
+listed it in error.
+
+`STATECOURSE_ENABLE_TEST_FIXTURES` = `true`, branch-deploy only, registers the test course
+described below. Production must never carry it.
 
 The four playback variables are currently scoped to one context, which is why a branch build
 does not receive them. `CLOUDFLARE_ACCOUNT_ID` and `CLOUDFLARE_STREAM_API_TOKEN` are already
@@ -61,6 +69,29 @@ today; only playback is waiting on the table above.
 
 Revert by removing the branch-context overrides. No production value is edited to do any of
 this, and no live video's allowlist changes.
+
+## The test course, and what it cannot do
+
+`zz-console-test-course` is registered only where `STATECOURSE_ENABLE_TEST_FIXTURES` is
+`true`, and its state is `ZZ`, which is not a jurisdiction. Two consequences, either of
+which would be enough on its own: production's screen index does not contain it, so a
+placement onto it cannot be reserved there; and a staff binding scoped to `ZZ` passes
+`requireCourseInScope` for it and fails for every real course, so a test account cannot
+reach a live course by editing a request.
+
+**It cannot be viewed in the student interface, and neither can any other non-California
+course.** `contextFor` refuses any enrollment whose `state` is not `CA` and then requires a
+California course configuration. The block player is the California student portal; there is
+no generic one. The same fact explains something easy to misread elsewhere in this
+repository: the two Texas videos recorded as "active" are not reachable by any student
+today, because the course they sit on is not served either.
+
+So the chain splits. Everything up to and including placement can be exercised against the
+test course in isolation. Watching the result in a real lesson requires a California course
+screen and a California enrollment or reviewer grant, because that is the only student
+surface that exists. Placing a test video on a California screen touches a real course
+record — reversibly, and while that course is not enrolling — and that is a decision to make
+deliberately rather than a side effect of testing.
 
 ## Walking the chain in the browser
 
