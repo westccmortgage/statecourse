@@ -62,6 +62,7 @@
         <nav class="tabs" aria-label="Console sections">
           <button type="button" class="tab" data-panel="catalogPanel" aria-selected="true">Catalog</button>
           <button type="button" class="tab" data-panel="videoPanel" aria-selected="false">Course video</button>
+          <button type="button" class="tab" data-panel="offeringsPanel" aria-selected="false">Approval &amp; payments</button>
         </nav>
 
         <section id="catalogPanel" class="panel" aria-label="Catalog">
@@ -161,6 +162,77 @@
           </form>
 
           <div id="assetList" class="asset-list"></div>
+        </section>
+
+        <section id="offeringsPanel" class="panel" aria-label="Approval and payments" hidden>
+          <div class="panel-heading">
+            <h2>Approval, training access and payment mode</h2>
+            <button id="reloadOfferings" class="secondary-button" type="button">Reload</button>
+          </div>
+          <p class="note">
+            Recorded per site, state, discipline and offering, so approving one never activates
+            another. Recording an approval does not start charging: payment mode is a separate
+            decision, and only the owner can set it to live. An offering with no currently
+            effective approval describes itself as training and may not claim credit.
+          </p>
+          <p id="offeringsMessage" class="message" role="status" aria-live="polite">Loading…</p>
+          <div class="table-wrap">
+            <table id="offeringsTable" class="data-table" hidden>
+              <caption class="visually-hidden">Approval and payment status per offering</caption>
+              <thead>
+                <tr>
+                  <th scope="col">State</th><th scope="col">Discipline</th><th scope="col">Offering</th>
+                  <th scope="col">Approval</th><th scope="col">Representation</th>
+                  <th scope="col">Training</th><th scope="col">Payments</th><th scope="col">Recorded</th>
+                </tr>
+              </thead>
+              <tbody id="offeringRows"></tbody>
+            </table>
+          </div>
+
+          <form id="governanceForm" class="card form-card">
+            <h3>Record a decision</h3>
+            <p class="note">
+              Every write is an append-only record naming who made it. A change of mind is a new
+              row, not an edit.
+            </p>
+            <div class="field-grid">
+              <label><span>Offering id</span><input name="offeringId" required /></label>
+              <label><span>State</span><input name="state" pattern="[A-Za-z]{2}" maxlength="2" required /></label>
+              <label><span>Discipline</span>
+                <select name="discipline" required>
+                  <option value="real_estate">Real estate</option>
+                  <option value="mortgage">Mortgage</option>
+                </select></label>
+              <label><span>Offering kind</span>
+                <select name="offeringKind"><option value="course">Course</option><option value="package">Package</option></select></label>
+              <label><span>Approval status</span>
+                <select name="approvalStatus" id="approvalStatus">
+                  <option value="none">None recorded</option>
+                  <option value="submitted">Submitted</option>
+                  <option value="approved">Approved</option>
+                  <option value="withdrawn">Withdrawn</option>
+                  <option value="expired">Expired</option>
+                </select></label>
+              <label><span>Approving authority</span><input name="approvalAuthority" placeholder="California Department of Real Estate" /></label>
+              <label><span>Approval number</span><input name="approvalNumber" /></label>
+              <label><span>Effective date</span><input name="approvalEffectiveDate" type="date" /></label>
+              <label><span>Expires</span><input name="approvalExpiresDate" type="date" /></label>
+              <label><span>Payment mode</span>
+                <select name="paymentMode" id="paymentMode">
+                  <option value="disabled">Disabled</option>
+                  <option value="sandbox">Sandbox</option>
+                  <option value="live" id="liveOption">Live — owner only</option>
+                </select></label>
+              <label class="file-field"><span>Free training access</span>
+                <span class="checkbox-row"><input name="trainingAccessEnabled" type="checkbox" />
+                Students may study this free. Never credit-eligible.</span></label>
+              <label class="file-field"><span>Why</span>
+                <textarea name="note" rows="2" minlength="10" required
+                  placeholder="What was decided and on what basis"></textarea></label>
+            </div>
+            <button type="submit">Record decision</button>
+          </form>
         </section>
       </div>
     </main>

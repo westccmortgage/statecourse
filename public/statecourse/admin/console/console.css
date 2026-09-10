@@ -311,3 +311,6 @@ details summary {
 @media (max-width: 60rem) {
   .page-heading { grid-template-columns: 1fr; }
 }
+
+.checkbox-row { display: flex; gap: 0.5rem; align-items: flex-start; color: var(--text); }
+.checkbox-row input { width: auto; margin-top: 0.2rem; }

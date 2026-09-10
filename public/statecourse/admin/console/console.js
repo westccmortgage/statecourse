@@ -13,6 +13,7 @@
 const SESSION = "/api/admin/session";
 const CATALOG = "/api/admin/catalog";
 const VIDEO = "/api/admin/video";
+const OFFERINGS = "/api/admin/offerings";
 
 const $ = (selector) => document.querySelector(selector);
 const esc = (value = "") => String(value ?? "").replace(
@@ -78,7 +79,7 @@ function renderSession(session) {
 async function loadSession() {
   try {
     renderSession(await api(SESSION));
-    if (state.roles.length) { loadCatalog(); loadVideo(); }
+    if (state.roles.length) { loadCatalog(); loadVideo(); loadOfferings(); }
   } catch (error) {
     if (error.status === 401) renderSession(null);
     else $("#sessionState").textContent = `Session unavailable: ${words(error.message)}.`;
@@ -95,7 +96,7 @@ $("#signInForm").addEventListener("submit", async (event) => {
     });
     $("#signInPassword").value = "";
     renderSession(session);
-    if (state.roles.length) { loadCatalog(); loadVideo(); }
+    if (state.roles.length) { loadCatalog(); loadVideo(); loadOfferings(); }
   } catch (error) {
     $("#sessionState").textContent = `Sign-in failed: ${words(error.message)}.`;
   }
@@ -442,6 +443,80 @@ $("#assetList").addEventListener("submit", async (event) => {
     }
   } else return;
   await loadVideo($("#reserveCourse").value || undefined);
+});
+
+/* ── approval, training access and payment mode ───────────────────────────────────────── */
+
+function offeringRow(row) {
+  const approved = row.approval_currently_effective === true;
+  const live = row.live_charging_permitted === true;
+  return `<tr class="${approved ? "" : "has-issues"}">
+    <td>${esc(row.state)}</td>
+    <td>${esc(words(row.discipline))}</td>
+    <td><strong>${esc(row.offering_id)}</strong><small>${esc(words(row.offering_kind))}</small></td>
+    <td>${esc(words(row.approval_status))}${row.approval_number
+      ? `<small>${esc(row.approval_authority || "")} · ${esc(row.approval_number)}</small>` : ""}
+      ${row.approval_expires_date ? `<small>expires ${esc(row.approval_expires_date)}</small>` : ""}</td>
+    <td><span class="stage stage-${approved ? "placed" : "awaiting_upload"}">${esc(row.copy?.badge || "")}</span></td>
+    <td>${row.training_access_enabled ? "open, no credit" : "closed"}</td>
+    <td>${esc(words(row.payment_mode))}${live ? "" : "<small>not charging</small>"}</td>
+    <td><small>${esc(new Date(row.recorded_at).toLocaleString())}</small></td>
+  </tr>`;
+}
+
+async function loadOfferings() {
+  $("#offeringsMessage").textContent = "Loading approval and payment records…";
+  try {
+    const body = await api(OFFERINGS);
+    /* The live option is removed rather than shown and refused, so nobody is invited to
+       press something that cannot work. The server refuses regardless of the markup. */
+    const liveOption = $("#liveOption");
+    if (liveOption && body.viewer?.canActivateLivePayments !== true) liveOption.remove();
+    $("#offeringRows").innerHTML = body.offerings.length
+      ? body.offerings.map(offeringRow).join("")
+      : '<tr><td colspan="8">No offering has a recorded decision yet. Every one of them is therefore training only, with payments disabled.</td></tr>';
+    $("#offeringsTable").hidden = false;
+    $("#offeringsMessage").textContent = `${body.offerings.length} recorded. `
+      + (body.viewer?.canActivateLivePayments
+        ? "You can activate live payments for an approved offering."
+        : "Live payment activation is owner-only.");
+  } catch (error) {
+    $("#offeringsMessage").textContent = `Approval records unavailable: ${words(error.message)}.`;
+  }
+}
+
+$("#reloadOfferings").addEventListener("click", loadOfferings);
+
+$("#governanceForm").addEventListener("submit", async (event) => {
+  event.preventDefault();
+  const data = new FormData(event.currentTarget);
+  const payload = {
+    offeringId: String(data.get("offeringId") || "").trim(),
+    state: String(data.get("state") || "").trim().toUpperCase(),
+    discipline: data.get("discipline"),
+    offeringKind: data.get("offeringKind"),
+    approvalStatus: data.get("approvalStatus"),
+    approvalAuthority: String(data.get("approvalAuthority") || "").trim(),
+    approvalNumber: String(data.get("approvalNumber") || "").trim(),
+    approvalEffectiveDate: String(data.get("approvalEffectiveDate") || "").trim(),
+    approvalExpiresDate: String(data.get("approvalExpiresDate") || "").trim(),
+    paymentMode: data.get("paymentMode"),
+    trainingAccessEnabled: data.get("trainingAccessEnabled") === "on",
+    note: String(data.get("note") || "").trim(),
+  };
+  $("#offeringsMessage").textContent = "Recording…";
+  try {
+    const body = await send(OFFERINGS, payload);
+    $("#offeringsMessage").textContent =
+      `Recorded. ${body.status.offering_id} is ${words(body.copy.representation)}`
+      + `, payments ${words(body.status.payment_mode)}`
+      + `${body.status.live_charging_permitted ? "" : " and not charging"}.`;
+    event.currentTarget.reset();
+  } catch (error) {
+    const detail = error.detail ? ` (${esc(JSON.stringify(error.detail))})` : "";
+    $("#offeringsMessage").textContent = `Refused: ${words(error.message)}${detail}.`;
+  }
+  await loadOfferings();
 });
 
 loadSession();
