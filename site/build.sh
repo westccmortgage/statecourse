@@ -45,6 +45,20 @@ test -f dist/admin/michigan-course/index.html
 test -f dist/admin/michigan-course/michigan-course.js
 test -f dist/admin/michigan-review/index.html
 test -f dist/admin/michigan-review/michigan-review.js
+# Which commit is actually serving. Netlify sets COMMIT_REF and BRANCH during a build;
+# locally they are absent and the file says so rather than guessing. This is the only way
+# to answer "what is deployed" from the deployed thing itself instead of from a dashboard.
+mkdir -p dist/admin/console
+cat > dist/admin/console/build.json <<BUILDJSON
+{
+  "commit": "${COMMIT_REF:-local-build}",
+  "branch": "${BRANCH:-$(git rev-parse --abbrev-ref HEAD 2>/dev/null || echo unknown)}",
+  "context": "${CONTEXT:-local}",
+  "builtAt": "$(date -u +%Y-%m-%dT%H:%M:%SZ)"
+}
+BUILDJSON
+
+test -f dist/admin/console/build.json
 test -f dist/admin/console/index.html
 test -f dist/admin/console/console.js
 test -f dist/admin/console/console.css

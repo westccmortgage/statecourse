@@ -7,6 +7,27 @@ takes a course video from a file on a laptop to a screen in a lesson.
 It records and reports. It grants no regulator approval, opens no enrollment, and awards no
 course credit — and there is no code path in it that could.
 
+## Where it runs
+
+Production serves from `main`. The console is not on `main`, so `statecourse.com/admin/console/`
+is a 404 and will stay one until a release is approved.
+
+Netlify branch deploys are enabled on this site, so the working branch has its own URL and its
+own build:
+
+    https://claude-gallant-albattani-916rdz--chipper-maamoul-a2b9d5.netlify.app/admin/console/
+
+`/admin/console/build.json` on any deploy reports the commit, branch and context actually
+serving it, so "what is deployed" is answered by the deployment rather than by a dashboard.
+
+Two things differ on a branch deploy and are worth knowing before testing there. Video
+**playback** will not work: `requireStreamSameOrigin` compares against `STATECOURSE_BASE_URL`,
+which is the production origin, and Cloudflare's own allowlist names the production hostnames —
+so a branch origin is refused by both, correctly. And the four `CLOUDFLARE_STREAM_*` playback
+variables are scoped to one deploy context, so a branch build does not receive them. The
+administration chain up to placement does work, because Supabase and the Stream API token are
+set for all contexts.
+
 ## Setup, in order
 
 Everything below is done once. The rest of this document explains why each piece is shaped
