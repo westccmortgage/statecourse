@@ -75,8 +75,11 @@ create or replace view console_video_delivery with (security_invoker=true) as
 select
   a.asset_key, a.course_id, a.delivery_id, a.screen_id, a.label,
   a.duration_seconds, a.transcript_path, a.captions_path, a.stream_uid,
-  a.captions_language,
-  p.recorded_at as placed_at
+  p.recorded_at as placed_at,
+  /* Appended rather than slotted in beside the other caption fields: `create or replace
+     view` can add a column at the end and nothing else, and renaming an existing one is
+     what it thinks you are doing otherwise. Callers select by name. */
+  a.captions_language
 from video_assets a
 join current_video_placements p on p.asset_key=a.asset_key
 join video_release_readiness r on r.asset_key=a.asset_key
