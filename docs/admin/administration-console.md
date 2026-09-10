@@ -28,6 +28,68 @@ variables are scoped to one deploy context, so a branch build does not receive t
 administration chain up to placement does work, because Supabase and the Stream API token are
 set for all contexts.
 
+## Testing playback on a branch deploy
+
+Playback is refused on a branch URL by two independent controls, and only one of them is
+ours. `requireStreamSameOrigin` compares the request origin against `STATECOURSE_BASE_URL`;
+Cloudflare separately refuses to play a video into an origin missing from that video's own
+`allowedOrigins`, which was fixed when the video was uploaded.
+
+The two live Texas videos therefore stay unplayable on a branch deploy, and **they should not
+be made playable there**. Their allowlists name the production hostnames because they are
+paid content. Nothing below changes them.
+
+What makes playback testable is uploading a *test* video through the branch console.
+`productionOrigins()` derives the allowlist from `STATECOURSE_BASE_URL` at the moment an
+upload is reserved, so a video reserved on a branch deploy is created with the branch origin
+in its allowlist and plays there — without any existing video's allowlist being touched.
+
+So the branch-deploy context needs, in Netlify:
+
+| Variable | Value for this context |
+| --- | --- |
+| `STATECOURSE_BASE_URL` | the branch deploy's own origin |
+| `CLOUDFLARE_STREAM_CUSTOMER_CODE` | same as production |
+| `CLOUDFLARE_STREAM_KEY_ID` | same as production |
+| `CLOUDFLARE_STREAM_SIGNING_JWK` | same as production |
+| `CLOUDFLARE_STREAM_VIDEO_MAP` | `{}` — the branch serves console assets, not the map |
+
+The four playback variables are currently scoped to one context, which is why a branch build
+does not receive them. `CLOUDFLARE_ACCOUNT_ID` and `CLOUDFLARE_STREAM_API_TOKEN` are already
+set for all contexts, so reserving, uploading, captioning and reviewing work on the branch
+today; only playback is waiting on the table above.
+
+Revert by removing the branch-context overrides. No production value is edited to do any of
+this, and no live video's allowlist changes.
+
+## Walking the chain in the browser
+
+Each step and what proves it worked. Stop at the first thing that does not match — a step
+that fails here is the console telling you something true.
+
+1. **Sign in** at `/admin/console/`. The session card should show your email and an `owner`
+   chip. No chip means the account holds no binding.
+2. **Catalog tab.** Expect a long table with many disagreements: the public catalog lists
+   thirty courses and checkout can sell ten. That is the report working, not an error.
+3. **Reserve** on the video tab: pick a course, a delivery unit, an instruction screen, an
+   asset key, a label, the duration in seconds, and the two protected paths. Choosing a
+   screen that already carries a video should refuse until you name what it displaces.
+4. **Upload.** The file goes from your machine to Cloudflare directly; the progress line is
+   the browser reporting bytes sent, not the server.
+5. **Confirm.** Three conditions record from Cloudflare's answer. A duration more than five
+   seconds from what you declared is rejected as the wrong file.
+6. **Captions and transcript.** Both are stored, hashed, and the caption track is read back
+   from Cloudflare and compared. Two more conditions record. Neither can be typed as a note.
+7. **The eight reviews.** Each needs a written basis of at least ten characters. Record what
+   you actually checked. A failing review is a normal outcome and is meant to be recorded —
+   the ledger is append-only, so a note written to make a demonstration go green cannot be
+   taken back out afterwards.
+8. **Place.** Refused while anything is outstanding, and it names what. Once all thirteen
+   pass, the placement is recorded with a snapshot of the gate ledger at that moment.
+9. **Student view.** Open the lesson. The video appears on the instruction screen with no
+   block map edited.
+10. **Withdraw** with a reason. Reload the lesson: it is gone.
+
 ## Setup, in order
 
 Everything below is done once. The rest of this document explains why each piece is shaped
