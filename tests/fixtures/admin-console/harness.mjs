@@ -14,6 +14,9 @@ export const DELIVERY_ID = "module-03";
 export const SCREEN_ID = "t03u1-s1";
 export const STREAM_UID = "abcdef0123456789abcdef0123456789";
 export const UPLOAD_URL = "https://upload.videodelivery.net/abcdef0123456789abcdef0123456789";
+/* Shaped like a real Cloudflare account id, so the fixture exercises the format check
+   rather than routing around it. */
+export const TEST_ACCOUNT_ID = "0123456789abcdef0123456789abcdef";
 
 export const GATE_DEFINITIONS = Object.freeze([
   ["final_master", 1],
@@ -132,7 +135,7 @@ export async function withConsoleMock(store, action) {
   process.env.SUPABASE_ANON_KEY = "anon-test-key";
   process.env.SUPABASE_SERVICE_ROLE_KEY = "service-role-test-key";
   process.env.STATECOURSE_BASE_URL = "https://statecourse.test";
-  process.env.CLOUDFLARE_ACCOUNT_ID = "test-account";
+  process.env.CLOUDFLARE_ACCOUNT_ID = TEST_ACCOUNT_ID;
   process.env.CLOUDFLARE_STREAM_API_TOKEN = "test-stream-token";
   delete process.env.CLOUDFLARE_STREAM_ALLOWED_ORIGINS;
 
@@ -163,7 +166,7 @@ export async function withConsoleMock(store, action) {
 }
 
 function cloudflareRoute(store, url, method, body) {
-  const path = url.pathname.replace("/client/v4/accounts/test-account/stream", "");
+  const path = url.pathname.replace(`/client/v4/accounts/${TEST_ACCOUNT_ID}/stream`, "");
   if (path === "/direct_upload" && method === "POST") {
     store.lastDirectUpload = body;
     return json({ success: true, result: { uploadURL: UPLOAD_URL, uid: STREAM_UID } });

@@ -5,7 +5,8 @@ import { handler as videoHandler } from "../netlify/functions/admin-video.mjs";
 import { authorizeStreamMedia } from "../netlify/functions/_lib/stream-delivery.mjs";
 import {
   COURSE_ID, DELIVERY_ID, GATE_DEFINITIONS, REVIEW_GATES, SCREEN_ID, STAFF_ID, STREAM_UID,
-  UPLOAD_URL, createStore, getEvent, passAllReviewGates, postEvent, withConsoleMock,
+  TEST_ACCOUNT_ID, UPLOAD_URL, createStore, getEvent, passAllReviewGates, postEvent,
+  withConsoleMock,
 } from "./fixtures/admin-console/harness.mjs";
 
 /*
@@ -47,7 +48,7 @@ test("reserving an upload never sends the API token to the browser", { concurren
     assert.equal(body.uploadUrl, UPLOAD_URL);
     const serialized = JSON.stringify(body);
     assert.equal(serialized.includes("test-stream-token"), false);
-    assert.equal(serialized.includes("test-account"), false);
+    assert.equal(serialized.includes(TEST_ACCOUNT_ID), false);
   });
 });
 
@@ -328,5 +329,19 @@ test("every release condition in the database is one the console can report on",
     assert.deepEqual(machine.map((definition) => definition.gate).sort(),
       ["origin_restriction", "signed_playback", "stream_upload"]);
     assert.equal(body.gateDefinitions.filter((definition) => definition.recordedBy === "named_reviewer").length, 10);
+  });
+});
+
+test("a malformed account id is refused before it reaches a URL", { concurrency: false }, async () => {
+  const store = createStore();
+  await withConsoleMock(store, async (calls) => {
+    /* A value carrying a path segment would address a different Cloudflare API endpoint
+       than this function means to call. */
+    process.env.CLOUDFLARE_ACCOUNT_ID = "../../some-other-account";
+    const response = await videoHandler(postEvent(reserve));
+    assert.equal(response.statusCode, 503);
+    assert.equal(JSON.parse(response.body).error, "admin_video_unavailable");
+    assert.equal(calls.some((call) => call.url.hostname === "api.cloudflare.com"), false);
+    assert.equal(store.assets.length, 0);
   });
 });

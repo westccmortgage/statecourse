@@ -137,10 +137,31 @@ Stream authorization core reads it first and falls back to `config/stream-media.
 Beyond the runtime secrets in
 [the Stream runbook](../video/cloudflare-stream-production.md):
 
-- `CLOUDFLARE_ACCOUNT_ID`
-- `CLOUDFLARE_STREAM_API_TOKEN` — needs `Stream:Edit` on this account and nothing else
+- `CLOUDFLARE_ACCOUNT_ID` — 32 hex characters, the id in the Cloudflare dashboard URL. Not a
+  secret; it is rejected at runtime if it is not that shape, because it goes into an API path.
+- `CLOUDFLARE_STREAM_API_TOKEN` — a secret. See below.
 - `CLOUDFLARE_STREAM_ALLOWED_ORIGINS` — optional; defaults to the `STATECOURSE_BASE_URL` host
   and its `www` form
+
+#### The Stream token
+
+Cloudflare dashboard → My Profile → API Tokens → Create Token → Create Custom Token:
+
+| Field | Value |
+| --- | --- |
+| Permissions | `Account` · `Stream` · `Edit` |
+| Account Resources | Include · the StateCourse account only |
+| Zone Resources | none |
+
+`Stream` is the product; `Edit` is read plus write. Read alone cannot create a direct upload,
+which is step one of the chain, so `Edit` is the narrowest level that works — Cloudflare
+offers no third option. Be clear about what that means: `Edit` also permits deleting videos
+and managing signing keys. This code never calls either, but the token could. Scope it to the
+one account, give it nothing else, and rotate it if it is ever pasted anywhere but the Netlify
+environment.
+
+The token is shown once. It belongs in the Netlify production environment and in no file in
+this repository.
 
 `netlify.toml` adds `https://upload.videodelivery.net` to `connect-src`. It is an upload
 endpoint only: no script, style, frame or image may load from it. The alternative was relaying

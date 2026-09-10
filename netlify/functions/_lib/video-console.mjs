@@ -25,6 +25,7 @@ import { logConsoleAction } from "./staff-session.mjs";
 
 const ASSET_KEY = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 const UID = /^[a-f0-9]{32}$/i;
+const ACCOUNT_ID = /^[a-f0-9]{32}$/i;
 const SHA256 = /^[0-9a-f]{64}$/;
 const PROTECTED_MEDIA_ROOT = "private-media/";
 
@@ -84,7 +85,13 @@ function protectedPath(value, field) {
 }
 
 async function cloudflare(path, { method = "GET", body } = {}) {
+  /* Checked before it is interpolated into the URL. A Cloudflare account id is 32 hex
+     characters; a value carrying a slash or a dot segment would address a different API
+     path than the one this function means to call. The rest of the Stream configuration is
+     validated the same way — see the UID, key-id and customer-code checks in
+     stream-delivery.mjs. */
   const account = requiredEnvironment("CLOUDFLARE_ACCOUNT_ID");
+  if (!ACCOUNT_ID.test(account)) fail("cloudflare_account_id_invalid", 503);
   const token = requiredEnvironment("CLOUDFLARE_STREAM_API_TOKEN");
   const response = await fetch(`https://api.cloudflare.com/client/v4/accounts/${account}/stream${path}`, {
     method,
