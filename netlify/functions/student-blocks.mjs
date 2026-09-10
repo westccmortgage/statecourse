@@ -20,9 +20,10 @@ import { parseJson, requireSameOrigin } from "./_lib/http.mjs";
 import { requireStudentSession, sessionCookies, sessionResponse } from "./_lib/student-session.mjs";
 import { audit, contextFor, finishIfReady, statesFor, statusMap } from "./student-course.mjs";
 import {
-  deriveBlockStatus, derivePosition, getBlockDelivery, getBlockQuestion,
+  deriveBlockStatus, derivePosition, getBlockQuestion,
   publicBlockQuestion, scoreBlockQuestion, sectionsEvidenced,
 } from "../../config/california-block-engine.mjs";
+import { getCourseDelivery } from "../../config/course-registry.mjs";
 import { applyConsoleVideos, consoleVideosForDelivery } from "./_lib/console-video-overlay.mjs";
 
 
@@ -32,7 +33,9 @@ function fail(message, statusCode = 400) {
 function isoNow() { return new Date().toISOString(); }
 
 function deliveryFor(ctx, assignmentId) {
-  const delivery = getBlockDelivery(ctx.course.courseId, assignmentId);
+  /* Resolved through the registry so a Texas module and a California assignment both
+     arrive here as one delivery unit. */
+  const delivery = getCourseDelivery(ctx.course.courseId, assignmentId);
   if (!delivery) fail("block_delivery_not_available", 404);
   return delivery;
 }

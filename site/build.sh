@@ -98,6 +98,14 @@ test -f dist/real-estate/california/pre-license/principles/index.html
 test -f dist/real-estate/california/pre-license/practice/index.html
 test -f dist/real-estate/california/pre-license/mortgage-loan-brokering-and-lending/index.html
 test -f dist/real-estate/district-of-columbia/index.html
+# Texas Law of Agency curriculum, so its lessons resolve for a student the way California's
+# do. The frozen module files are the same ones the content freeze hashes.
+mkdir -p dist/content/texas/tx-law-of-agency-30-v1
+cp texas/tx-law-of-agency-30-v1/curriculum/module-*.md dist/content/texas/tx-law-of-agency-30-v1/
+test -f dist/content/texas/tx-law-of-agency-30-v1/module-01.md
+test -f dist/content/texas/tx-law-of-agency-30-v1/module-12.md
+test "$(ls dist/content/texas/tx-law-of-agency-30-v1/module-*.md | wc -l)" -eq 12
+
 test -f dist/content/california/ca-real-estate-principles-45-v1/lesson-15.md
 test -f dist/content/california/ca-real-estate-practice-45-v1/lesson-15.md
 test -f dist/content/california/ca-mortgage-loan-brokering-lending-45-v1/lesson-15.md

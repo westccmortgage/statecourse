@@ -3,7 +3,7 @@ import { parseJson, requireSameOrigin } from "./_lib/http.mjs";
 import { requireStudentSession, sessionCookies, sessionResponse } from "./_lib/student-session.mjs";
 import { SB1495 } from "../../config/california/regulatory-manifest.mjs";
 import { getCaliforniaAssessment, getCaliforniaCourse, publicAssessment, scoreCaliforniaAssessment } from "../../config/california-course-engine.mjs";
-import { hasBlockDelivery } from "../../config/california-block-engine.mjs";
+import { getCourseConfiguration, hasCourseDelivery } from "../../config/course-registry.mjs";
 
 const UUID = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
 const ASSIGNMENT = /^assignment-(0[1-9]|1[0-5])$/;
@@ -38,7 +38,7 @@ export async function contextFor(studentId,enrollmentId) {
   if (!UUID.test(enrollmentId || "")) fail("invalid_enrollment",400);
   const rows = await dbRequest(`enrollments?id=eq.${encodeURIComponent(enrollmentId)}&select=*&limit=1`);
   const enrollment = rows?.[0];
-  if (!enrollment || enrollment.state !== "CA") fail("california_enrollment_not_found",404);
+  if (!enrollment) fail("enrollment_not_found",404);
   const reviewRows = await dbRequest(`course_review_access?user_id=eq.${encodeURIComponent(studentId)}&course_id=eq.${encodeURIComponent(enrollment.course_id)}&active=eq.true&select=access_role,expires_at`);
   const review = (reviewRows || []).find((item) => !item.expires_at || new Date(item.expires_at) > new Date());
   const owner = enrollment.student_id === studentId;
@@ -59,8 +59,20 @@ export async function contextFor(studentId,enrollmentId) {
       fail("enrollment_expired",403);
     }
   }
-  const course = getCaliforniaCourse(enrollment.course_id);
-  if (!course) fail("california_course_configuration_missing",503);
+  /*
+   * The course decides which state it belongs to, and the enrolment has to agree.
+   *
+   * This replaces a hard `state !== "CA"` test. It is a stricter check, not a looser one:
+   * before, any California enrolment passed and no other state could be studied at all;
+   * now the enrolment's state must match the state its own course is configured for, so a
+   * row whose state and course disagree is refused rather than silently served under the
+   * wrong jurisdiction's rules.
+   */
+  const course = getCourseConfiguration(enrollment.course_id);
+  if (!course) fail("course_configuration_missing",503);
+  if (course.state && enrollment.state !== course.state) {
+    fail("enrollment_state_does_not_match_course",409);
+  }
   return {
     enrollment,
     course,
@@ -221,8 +233,8 @@ async function coursePayload(ctx,requestedAssignment) {
        off to the block player. The flag is delivery routing only — the assignment stays one
        regulatory assignment and every completion gate above is unchanged. */
     selectedAssignment:{...selected,
-      blockDelivery:hasBlockDelivery(ctx.course.courseId,selected.id),
-      blockPlayerHref:hasBlockDelivery(ctx.course.courseId,selected.id)
+      blockDelivery:hasCourseDelivery(ctx.course.courseId,selected.id),
+      blockPlayerHref:hasCourseDelivery(ctx.course.courseId,selected.id)
         ? `/student/course/blocks/?enrollment_id=${encodeURIComponent(ctx.enrollment.id)}&assignment=${encodeURIComponent(selected.id)}`
         : null},
     assessments:{

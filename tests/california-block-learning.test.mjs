@@ -293,9 +293,19 @@ test("20. Texas substantive artifacts are untouched by this phase", async () => 
   assert.equal(statutes.SECTIONS_READ.length, 76);
   const prins1 = (await import("../config/texas/prins1-course-form.mjs")).default;
   assert.equal(prins1.FORM.totalMinutes, 1500);
-  for (const file of ["config/california-block-engine.mjs", "config/california/mortgage-a1-blocks.mjs", "netlify/functions/student-blocks.mjs"]) {
+  /* The California engine and its block maps must not mention Texas at all. */
+  for (const file of ["config/california-block-engine.mjs", "config/california/mortgage-a1-blocks.mjs"]) {
     assert.doesNotMatch(read(file), /texas/i, `${file} reaches into Texas`);
   }
+  /*
+   * The block endpoint now serves more than one state, so the invariant it has to keep is
+   * no longer "never says Texas" but "never reaches Texas directly". It resolves delivery
+   * through config/course-registry.mjs, which is the one place that knows which states
+   * exist; importing a Texas block map here would put that knowledge back in the endpoint.
+   */
+  const endpoint = read("netlify/functions/student-blocks.mjs");
+  assert.doesNotMatch(endpoint, /from\s+["'][^"']*config\/texas\//, "student-blocks imports Texas directly");
+  assert.match(endpoint, /from\s+["'][^"']*config\/course-registry\.mjs["']/);
 });
 
 test("21. Arizona substantive records are untouched by this phase", () => {
