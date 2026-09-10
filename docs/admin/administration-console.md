@@ -153,21 +153,40 @@ not something this token should be able to touch.
 | --- | --- |
 | Scope | Entire Account — Stream is an account-level permission |
 | Permission group | `Media` · `Stream` · Read **and** Edit |
-| Everything else under Media | unchecked, `Images` included — the console never touches Images |
-| Token expiration | a dated expiry is safe here; see below |
+| Policies | exactly one — the review screen lists each separately, and two identical ones are a duplicate, not a stronger grant |
+| Token expiration | see below |
 | Client IP address filtering | **leave empty** |
 
 Stream needs both boxes because the chain reads as well as writes: it creates a direct upload,
-then asks Cloudflare for the video's status and caption tracks. The Media group should end up
-reading 2/8, and the policy summary should say `Stream Read, Stream Write` and nothing more.
-
-An expiry is worth setting despite the last token lapsing unnoticed, because the failure is
-bounded and visible in the right place: an expired token stops new uploads and does not touch
-playback, which runs on the signing key. Set a reminder for the renewal date.
+then asks Cloudflare for the video's status and caption tracks.
 
 Client IP filtering looks like free security and is a trap: the calls come from Netlify's
 function egress, whose addresses are neither published nor stable, so a pinned range breaks
 uploads at a time unrelated to any change you made.
+
+An expiry bounds the damage of a leak, and the cost of one lapsing is contained: an expired
+token stops new uploads and does not touch playback, which runs on the signing key. Whichever
+is chosen, the renewal date belongs in a calendar — the previous Stream token reached
+"expires soon" without anyone noticing.
+
+#### Why the token also carries Images
+
+The owner scoped it to `Images` as well as `Stream`, anticipating that the console will
+eventually upload pictures and not only video. Recorded here because the token is
+deliberately wider than the code, and a later reader should not have to guess whether that
+was an accident:
+
+- No code in this repository calls Cloudflare Images. Course posters today are static
+  `.webp` files under `public/statecourse/media/`, referenced by path.
+- Cloudflare Stream generates its own thumbnails, so the `poster_image` release condition
+  does not depend on Images.
+- If image upload is built, Cloudflare Images is not the only candidate — Supabase Storage is
+  already in the stack and already paid for — and choosing Cloudflare would also mean adding
+  `imagedelivery.net` to `img-src` in the CSP, which is currently `'self' data:`.
+
+So the permission is inert until someone writes code for it. What it means meanwhile: if the
+token leaks, it can read, overwrite and delete anything in Cloudflare Images on this account,
+which is empty today.
 
 Create it from the account's own **Account API tokens** page rather than from My Profile. An
 account-owned token belongs to StateCourse and survives a person leaving; a user token
