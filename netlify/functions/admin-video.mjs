@@ -28,11 +28,30 @@ function detailOf(error) {
   return error?.detail ? { detail: error.detail } : {};
 }
 
+/*
+ * A missing environment variable is not a leak, it is a to-do.
+ *
+ * These arrive as 503s, and a 503 is otherwise answered with a generic message so a server
+ * fault cannot describe itself to a stranger. That reduced "CLOUDFLARE_STREAM_API_TOKEN is
+ * not set" to "admin video unavailable", leaving the one person who could fix it reading
+ * function logs to find out. These messages name a configuration key and never a value, so
+ * an authenticated staff member gets told which one is missing.
+ */
+const CONFIGURATION_ERROR = /^[a-z0-9_]+_(not_configured|invalid)$/;
+
+function errorFor(error, status, authenticated) {
+  if (status < 500) return error.message;
+  if (authenticated && CONFIGURATION_ERROR.test(String(error?.message || ""))) return error.message;
+  return "admin_video_unavailable";
+}
+
 export const handler = async (event) => {
   let cookies = [];
+  let authenticated = false;
   try {
     if (event.httpMethod === "GET") {
       const staff = await requireStaff(event, [...REVIEWERS, "regulator_reviewer"]);
+      authenticated = true;
       cookies = staff.auth.refreshedSession ? sessionCookies(staff.auth.refreshedSession) : [];
       const query = event.queryStringParameters || {};
       const courseId = String(query.course_id || "").trim() || null;
@@ -57,6 +76,7 @@ export const handler = async (event) => {
     /* Authorized per action, before anything is read or written. */
     const allowed = ["place", "withdraw"].includes(action) ? PLACERS : REVIEWERS;
     const staff = await requireStaff(event, allowed);
+    authenticated = true;
     cookies = staff.auth.refreshedSession ? sessionCookies(staff.auth.refreshedSession) : [];
 
     let result;
@@ -78,7 +98,7 @@ export const handler = async (event) => {
     const status = Number(error?.statusCode) || 500;
     if (status >= 500) console.error("Admin video endpoint error", error?.message);
     return sessionResponse(status, {
-      error: status >= 500 ? "admin_video_unavailable" : error.message,
+      error: errorFor(error, status, authenticated),
       ...(status >= 500 ? {} : detailOf(error)),
     }, cookies);
   }

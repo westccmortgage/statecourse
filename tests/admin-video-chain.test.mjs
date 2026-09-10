@@ -332,6 +332,47 @@ test("every release condition in the database is one the console can report on",
   });
 });
 
+test("a missing Stream token tells the operator which key is unset", { concurrency: false }, async () => {
+  const store = createStore();
+  await withConsoleMock(store, async (calls) => {
+    /* The one person who can fix this should not have to read function logs to find out
+       what is wrong. The message names a key and never a value. */
+    delete process.env.CLOUDFLARE_STREAM_API_TOKEN;
+    const response = await videoHandler(postEvent(reserve));
+    assert.equal(response.statusCode, 503);
+    assert.equal(JSON.parse(response.body).error, "cloudflare_stream_api_token_not_configured");
+    assert.equal(calls.some((call) => call.url.hostname === "api.cloudflare.com"), false);
+    assert.equal(store.assets.length, 0);
+  });
+});
+
+test("a server fault still refuses to describe itself", { concurrency: false }, async () => {
+  const store = createStore();
+  await withConsoleMock(store, async () => {
+    const working = globalThis.fetch;
+    globalThis.fetch = async (input, init) => {
+      if (String(input).includes("/rest/v1/courses")) throw new Error("connection reset at 10.0.3.14:5432");
+      return working(input, init);
+    };
+    const response = await videoHandler(postEvent(reserve));
+    /* A raw network throw carries no statusCode of its own, so it lands as a 500. */
+    assert.equal(response.statusCode, 500);
+    /* Not a configuration key, so it stays generic — the address does not travel. */
+    assert.equal(JSON.parse(response.body).error, "admin_video_unavailable");
+  });
+});
+
+test("an unauthenticated caller is told nothing about configuration", { concurrency: false }, async () => {
+  const store = createStore({ bindings: [] });
+  await withConsoleMock(store, async () => {
+    delete process.env.CLOUDFLARE_STREAM_API_TOKEN;
+    const response = await videoHandler(postEvent(reserve));
+    /* Authorization is refused first; the missing key is never reached or reported. */
+    assert.equal(response.statusCode, 403);
+    assert.equal(JSON.parse(response.body).error, "staff_binding_required");
+  });
+});
+
 test("a malformed account id is refused before it reaches a URL", { concurrency: false }, async () => {
   const store = createStore();
   await withConsoleMock(store, async (calls) => {
@@ -340,7 +381,9 @@ test("a malformed account id is refused before it reaches a URL", { concurrency:
     process.env.CLOUDFLARE_ACCOUNT_ID = "../../some-other-account";
     const response = await videoHandler(postEvent(reserve));
     assert.equal(response.statusCode, 503);
-    assert.equal(JSON.parse(response.body).error, "admin_video_unavailable");
+    /* Named rather than generic: it is a configuration key, and the operator who set it
+       wrongly is the one reading this. */
+    assert.equal(JSON.parse(response.body).error, "cloudflare_account_id_invalid");
     assert.equal(calls.some((call) => call.url.hostname === "api.cloudflare.com"), false);
     assert.equal(store.assets.length, 0);
   });

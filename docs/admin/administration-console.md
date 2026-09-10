@@ -180,4 +180,53 @@ earlier one is never edited away.
 ## Applying the schema
 
 `database/019_platform_admin_console.sql`. It seeds the thirteen gate definitions and nothing
-else: no binding, no gate decision, no placement.
+else: no binding, no gate decision, no placement. It creates only new objects — no existing
+table, approval flag, lifecycle record or payment row is read or written.
+
+### Checking it landed
+
+```sql
+select
+  (select count(*) from video_release_gate_definitions) as gates,       -- expect 13
+  (select count(*) from staff_actor_binding_events)     as bindings,    -- expect 0
+  (select count(*) from video_assets)                   as assets,      -- expect 0
+  (select count(*) from video_placement_events)         as placements;  -- expect 0
+```
+
+The revokes matter more than the tables, because a table that exists with the wrong
+privileges is worse than one that does not exist. This must return **no rows**:
+
+```sql
+select table_name, grantee, privilege_type
+from information_schema.role_table_grants
+where grantee in ('anon', 'authenticated', 'public')
+  and table_name in (
+    'staff_actor_binding_events', 'video_assets', 'video_release_gate_definitions',
+    'video_release_gate_events', 'video_placement_events', 'admin_console_actions'
+  );
+```
+
+### Granting the first role
+
+Looked up by email rather than by a pasted UUID, so the wrong id cannot be granted ownership:
+
+```sql
+insert into staff_actor_binding_events
+  (auth_user_id, actor_role, binding_status, effective_at, evidence, recorded_by)
+select u.id, 'owner', 'active', now(),
+       jsonb_build_object('basis', 'account owner', 'granted_on', current_date),
+       u.id
+from auth.users u
+where u.email = 'owner@example.com'
+returning auth_user_id, actor_role, binding_status;
+```
+
+If it returns no rows, the account does not exist in `auth.users` yet — the console
+authenticates Supabase accounts and cannot create one. Register it through the site's
+sign-up, or add it in Supabase Auth, and run this again.
+
+One consequence worth knowing in advance: signing in to the console upserts the account into
+`students`, because console authentication reuses the student session mechanism (the Michigan
+staff workflow already behaves this way). The owner will appear in that table with no
+enrollment, so anything counting enrolled students is unaffected and anything counting rows in
+`students` is not.
