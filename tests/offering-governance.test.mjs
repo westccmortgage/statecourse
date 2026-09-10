@@ -141,3 +141,78 @@ test("an unreadable governance record refuses rather than breaking checkout", { 
     }
   }
 });
+
+/*
+ * The three gates a real charge has to pass, and their independence.
+ *
+ * Two are global and one is per offering, and conflating them is how one approval starts
+ * charging for everything. STRIPE_MODE selects which credentials are used at all;
+ * STATECOURSE_LIVE_PAYMENTS_ENABLED is a site-wide stop; payment_mode plus a currently
+ * effective approval is the only per-offering permission.
+ */
+test("STRIPE_MODE decides whether money is real; payment_mode decides who may transact", { concurrency: false }, async () => {
+  const lib = await readFile(new URL("../netlify/functions/_lib/offering-governance.mjs", import.meta.url), "utf8");
+  /* Sandbox rehearsal of an already-live offering must be possible, or an approved
+     offering can never be exercised before it starts taking real money. */
+  assert.match(lib, /\["sandbox", "live"\]\.includes\(status\.payment_mode\)/);
+  /* Live is the only branch that consults the approval. */
+  const liveBranch = lib.slice(lib.indexOf('if (mode === "live")'), lib.indexOf('checkout_not_enabled_for_this_offering'));
+  assert.match(liveBranch, /live_charging_permitted/);
+
+  const env = await readFile(new URL("../netlify/functions/_lib/env.mjs", import.meta.url), "utf8");
+  /* Both global gates still stand in front of the per-offering one. */
+  assert.match(env, /mode === "live" && process\.env\.STATECOURSE_LIVE_PAYMENTS_ENABLED !== "true"/);
+  assert.match(env, /STRIPE_SECRET_KEY_LIVE : process\.env\.STRIPE_SECRET_KEY_TEST/);
+});
+
+test("enabling one offering enables no other", { concurrency: false }, async () => {
+  const { governanceFor } = await import("../netlify/functions/_lib/offering-governance.mjs");
+  const previousFetch = globalThis.fetch;
+  const saved = { u: process.env.SUPABASE_URL, k: process.env.SUPABASE_SERVICE_ROLE_KEY, b: process.env.STATECOURSE_BASE_URL };
+  process.env.SUPABASE_URL = "https://supabase.test";
+  process.env.SUPABASE_SERVICE_ROLE_KEY = "k";
+  process.env.STATECOURSE_BASE_URL = "https://statecourse.test";
+  /* One offering is approved and live. Every query is answered from the same table, so a
+     sibling offering returning nothing proves the row is scoped and not global. */
+  globalThis.fetch = async (input) => {
+    const url = new URL(String(input));
+    const wanted = url.searchParams.get("offering_id")?.replace("eq.", "");
+    const body = wanted === "ca-real-estate-principles-45"
+      ? [{
+          site: "statecourse.test", state: "CA", discipline: "real_estate",
+          offering_id: wanted, approval_status: "approved", approval_authority: "CA DRE",
+          approval_number: "S1234", payment_mode: "live",
+          approval_currently_effective: true, representation: "approved",
+          live_charging_permitted: true, training_access_enabled: false,
+        }]
+      : [];
+    return new Response(JSON.stringify(body), { status: 200, headers: { "content-type": "application/json" } });
+  };
+  try {
+    const enabled = await governanceFor("ca-real-estate-principles-45");
+    assert.equal(enabled.live_charging_permitted, true);
+    /* Same state, same site, different discipline and different course: all closed. */
+    for (const sibling of [
+      "ca-mortgage-loan-brokering-lending-45", "ca-real-estate-practice-45", "tx-law-of-agency-30-v1",
+    ]) {
+      const other = await governanceFor(sibling);
+      assert.equal(other.live_charging_permitted, false, `${sibling} was enabled by another offering`);
+      assert.equal(other.payment_mode, "disabled");
+      assert.equal(other.representation, "training_only");
+      assert.equal(other.unrecorded, true);
+    }
+  } finally {
+    globalThis.fetch = previousFetch;
+    for (const [k, v] of [["SUPABASE_URL", saved.u], ["SUPABASE_SERVICE_ROLE_KEY", saved.k], ["STATECOURSE_BASE_URL", saved.b]]) {
+      if (v === undefined) delete process.env[k]; else process.env[k] = v;
+    }
+  }
+});
+
+test("free training needs no checkout and is unaffected by payment mode", { concurrency: false }, async () => {
+  const endpoint = await readFile(new URL("../netlify/functions/enroll-training.mjs", import.meta.url), "utf8");
+  /* It consults training_access_enabled and nothing about payments. */
+  assert.match(endpoint, /training_access_enabled !== true/);
+  assert.equal(/payment_mode/.test(endpoint), false, "training must not consult payment mode");
+  assert.equal(/assertChargeable/.test(endpoint), false, "training must not pass through the charging gate");
+});

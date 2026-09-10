@@ -223,8 +223,16 @@ export async function assertChargeable(offeringId, mode, { site = null } = {}) {
     }
     return status;
   }
-  if (status.payment_mode !== "sandbox") {
-    throw Object.assign(new Error("sandbox_checkout_not_enabled_for_this_offering"), {
+  /*
+   * Sandbox accepts an offering set to either sandbox or live.
+   *
+   * STRIPE_MODE decides whether money is real; payment_mode decides whether this offering
+   * may transact at all. Refusing a live offering while STRIPE_MODE is test would mean an
+   * approved offering could not be rehearsed before going live, which is exactly when
+   * rehearsal matters. Nothing is charged either way: test mode uses test credentials.
+   */
+  if (!["sandbox", "live"].includes(status.payment_mode)) {
+    throw Object.assign(new Error("checkout_not_enabled_for_this_offering"), {
       statusCode: 403,
       detail: { offeringId, paymentMode: status.payment_mode },
     });
