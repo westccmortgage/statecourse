@@ -29,7 +29,7 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const HOME = path.join(root, "texas/tx-law-of-agency-30-v1");
 const OUT = path.join(HOME, "content-freeze.json");
 const COURSE_ID = "tx-law-of-agency-30-v1";
-const FREEZE_ID = "LOA-CONTENT-FREEZE-2026-09-10-v14";
+const FREEZE_ID = "LOA-CONTENT-FREEZE-2026-09-10-v15";
 
 /**
  * FREEZE HISTORY. A freeze that is broken and silently re-taken teaches nothing. Every break is
@@ -37,6 +37,29 @@ const FREEZE_ID = "LOA-CONTENT-FREEZE-2026-09-10-v14";
  * than requiring someone to reconstruct it from git.
  */
 const BREAK_HISTORY = Object.freeze([
+  Object.freeze({
+    brokeFreeze: "LOA-CONTENT-FREEZE-2026-09-10-v14",
+    on: "2026-09-10",
+    module: "NONE - no curriculum wording changed; all twelve module sources remain byte-identical.",
+    change:
+      "The video-plan pointer moved to LOA-VIDEO-PLAN-FREEZE-2026-09-10-v11 after netlify.toml "
+      + "gained routes for offering governance and free training enrolment. Migrations 021 and 022 "
+      + "add approval, training-access and payment-mode records per offering, and a training "
+      + "enrolment origin that the database refuses to mark credit-eligible.",
+    reason:
+      "netlify.toml is hashed as production routing, so adding a route moves the freeze. Nothing "
+      + "about video delivery changed: the same two videos, the same UIDs, the same screens, the "
+      + "same signed private delivery, and no course gained credit eligibility.",
+    previousFreezeSha256: "ddfd4e8e4b37712290fff289dfd00251d83d33ce4b42d2eb9ad98e1c7553b146",
+    previousFreezeBytes: 38156,
+    auditsReRun: Object.freeze([
+      "node scripts/validate-loa-video-packages.mjs",
+      "node --test tests/offering-governance.test.mjs",
+      "node scripts/freeze-loa-video-plan.mjs --write",
+      "node scripts/freeze-loa-curriculum.mjs --write",
+      "npm test",
+    ]),
+  }),
   Object.freeze({
     brokeFreeze: "LOA-CONTENT-FREEZE-2026-09-10-v13",
     on: "2026-09-10",

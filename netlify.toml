@@ -266,3 +266,13 @@
   from = "/api/admin/video"
   to = "/.netlify/functions/admin-video"
   status = 200
+
+[[redirects]]
+  from = "/api/admin/offerings"
+  to = "/.netlify/functions/admin-offerings"
+  status = 200
+
+[[redirects]]
+  from = "/api/enroll/training"
+  to = "/.netlify/functions/enroll-training"
+  status = 200

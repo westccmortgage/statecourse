@@ -1,6 +1,7 @@
 import { randomUUID } from "node:crypto";
 import { evaluateCheckoutEligibility, getCourse, getPackage, packageAllocation } from "../../config/course-catalog.mjs";
 import { baseUrl, stripeEnvironment } from "./_lib/env.mjs";
+import { assertChargeable } from "./_lib/offering-governance.mjs";
 import { dbRequest } from "./_lib/db.mjs";
 import { stripeRequest } from "./_lib/stripe.mjs";
 import { handleError, method, parseJson, requireSameOrigin, response } from "./_lib/http.mjs";
@@ -15,6 +16,16 @@ export const handler = async (event) => {
     const course = getCourse(input.courseId);
     const { mode } = stripeEnvironment();
     const eligibility = evaluateCheckoutEligibility(course, mode);
+    /*
+     * Governance is checked in addition to catalog eligibility, not instead of it.
+     * evaluateCheckoutEligibility asks whether the environment thinks this course is
+     * sellable; this asks whether a recorded decision permits charging for this specific
+     * offering, on this site, in this state. An offering nobody has recorded anything
+     * about is refused, because silence is not approval — and live mode is refused unless
+     * a named approval is currently effective, so an approval that lapses stops charging
+     * without anyone editing a setting.
+     */
+    await assertChargeable(input.courseId, mode);
     if (!eligibility.allowed) throw Object.assign(new Error(eligibility.reason), { statusCode: 409 });
     if (input.state !== course.state) throw Object.assign(new Error("course_state_mismatch"), { statusCode: 400 });
 
