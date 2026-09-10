@@ -4,9 +4,9 @@ import test from "node:test";
 import { handler as videoHandler } from "../netlify/functions/admin-video.mjs";
 import { authorizeStreamMedia } from "../netlify/functions/_lib/stream-delivery.mjs";
 import {
-  COURSE_ID, DELIVERY_ID, GATE_DEFINITIONS, REVIEW_GATES, SCREEN_ID, STAFF_ID, STREAM_UID,
-  TEST_ACCOUNT_ID, UPLOAD_URL, createStore, getEvent, passAllReviewGates, postEvent,
-  withConsoleMock,
+  COURSE_ID, DELIVERY_ID, GATE_DEFINITIONS, MACHINE_GATES, REVIEW_GATES, SCREEN_ID, STAFF_ID,
+  STREAM_UID, TEST_ACCOUNT_ID, UPLOAD_URL, completeTextAssets, createStore, getEvent,
+  passAllReviewGates, postEvent, withConsoleMock,
 } from "./fixtures/admin-console/harness.mjs";
 
 /*
@@ -198,7 +198,12 @@ test("placement is refused while any release condition is outstanding, and names
     assert.equal(response.statusCode, 409);
     const body = JSON.parse(response.body);
     assert.equal(body.error, "video_release_gate_incomplete");
-    assert.deepEqual([...body.detail.outstandingGates].sort(), [...REVIEW_GATES].sort());
+    /* Captions and the transcript are outstanding alongside the eight reviews: they are
+       machine-verified now, and confirming the upload does not supply them. */
+    assert.deepEqual(
+      [...body.detail.outstandingGates].sort(),
+      [...REVIEW_GATES, "shipping_captions", "protected_transcript"].sort(),
+    );
     assert.equal(store.placementEvents.length, 0);
   });
 });
@@ -207,6 +212,7 @@ test("placement is refused with one review still missing", { concurrency: false 
   const store = createStore();
   await withConsoleMock(store, async () => {
     await reserveAndConfirm();
+    await completeTextAssets(videoHandler, ASSET);
     for (const gate of REVIEW_GATES.filter((entry) => entry !== "accessibility_review")) {
       await videoHandler(postEvent({
         action: "record_gate", assetKey: ASSET, gate, outcome: "pass",
@@ -223,6 +229,7 @@ test("a review recorded as a failure withdraws readiness that a later pass had g
   const store = createStore();
   await withConsoleMock(store, async () => {
     await reserveAndConfirm();
+    await completeTextAssets(videoHandler, ASSET);
     await passAllReviewGates(videoHandler, ASSET);
     assert.equal(JSON.parse((await videoHandler(postEvent({ action: "place", assetKey: ASSET }))).body).readiness.release_ready, true);
 
@@ -251,6 +258,7 @@ test("the whole chain: reserve, confirm, review, place, and only then does deliv
       (error) => error.message === "unknown_stream_asset" && error.statusCode === 404,
     );
 
+    await completeTextAssets(videoHandler, ASSET);
     await passAllReviewGates(videoHandler, ASSET);
     const placed = await videoHandler(postEvent({ action: "place", assetKey: ASSET }));
     assert.equal(placed.statusCode, 200, placed.body);
@@ -275,6 +283,7 @@ test("withdrawal needs a stated reason and removes the video from delivery", { c
   const store = createStore();
   await withConsoleMock(store, async () => {
     await reserveAndConfirm();
+    await completeTextAssets(videoHandler, ASSET);
     await passAllReviewGates(videoHandler, ASSET);
     await videoHandler(postEvent({ action: "place", assetKey: ASSET }));
 
@@ -326,9 +335,8 @@ test("every release condition in the database is one the console can report on",
     const body = JSON.parse((await videoHandler(getEvent())).body);
     assert.equal(body.gateDefinitions.length, GATE_DEFINITIONS.length);
     const machine = body.gateDefinitions.filter((definition) => definition.recordedBy === "stream_api");
-    assert.deepEqual(machine.map((definition) => definition.gate).sort(),
-      ["origin_restriction", "signed_playback", "stream_upload"]);
-    assert.equal(body.gateDefinitions.filter((definition) => definition.recordedBy === "named_reviewer").length, 10);
+    assert.deepEqual(machine.map((definition) => definition.gate).sort(), [...MACHINE_GATES].sort());
+    assert.equal(body.gateDefinitions.filter((definition) => definition.recordedBy === "named_reviewer").length, 8);
   });
 });
 
@@ -342,7 +350,10 @@ test("a missing Stream token tells the operator which key is unset", { concurren
     assert.equal(response.statusCode, 503);
     assert.equal(JSON.parse(response.body).error, "cloudflare_stream_api_token_not_configured");
     assert.equal(calls.some((call) => call.url.hostname === "api.cloudflare.com"), false);
-    assert.equal(store.assets.length, 0);
+    /* The row is written first by design, so a Cloudflare failure leaves something visible
+       and retryable rather than nothing. It carries no upload id. */
+    assert.equal(store.assets.length, 1);
+    assert.equal(store.assets[0].stream_upload_id ?? null, null);
   });
 });
 
@@ -385,6 +396,6 @@ test("a malformed account id is refused before it reaches a URL", { concurrency:
        wrongly is the one reading this. */
     assert.equal(JSON.parse(response.body).error, "cloudflare_account_id_invalid");
     assert.equal(calls.some((call) => call.url.hostname === "api.cloudflare.com"), false);
-    assert.equal(store.assets.length, 0);
+    assert.equal(store.assets[0]?.stream_upload_id ?? null, null);
   });
 });

@@ -253,6 +253,19 @@ export async function recordPlaybackEvent({ auth, input }) {
 
 export async function readProtectedTranscript({ auth, enrollmentId, assetKey }) {
   const { media } = await authorizeStreamMedia(auth.student.id, enrollmentId, assetKey);
+
+  /* A console-released asset keeps its transcript in the database, because the operator
+     who uploaded the video has no way to put a file in the repository. The stored text is
+     the same text that was hashed when the protected_transcript condition was decided. */
+  if (media.source === "admin_console") {
+    const rows = await dbRequest(
+      `video_assets?asset_key=eq.${encodeURIComponent(assetKey)}&select=transcript_text&limit=1`,
+    );
+    const text = rows?.[0]?.transcript_text;
+    if (typeof text === "string" && text.trim()) return text;
+    fail("video_transcript_unavailable", 503);
+  }
+
   const projectRoot = path.resolve(process.cwd());
   const transcriptPath = path.resolve(projectRoot, media.transcriptFile);
   if (!transcriptPath.startsWith(`${projectRoot}${path.sep}`)) fail("video_transcript_unavailable", 503);

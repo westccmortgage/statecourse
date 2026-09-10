@@ -12,6 +12,7 @@ export const OTHER_STAFF_ID = "99999999-9999-4999-8999-999999999999";
 export const COURSE_ID = "tx-law-of-agency-30-v1";
 export const DELIVERY_ID = "module-03";
 export const SCREEN_ID = "t03u1-s1";
+export const ENROLLMENT_ID = "44444444-4444-4444-8444-444444444444";
 export const STREAM_UID = "abcdef0123456789abcdef0123456789";
 export const UPLOAD_URL = "https://upload.videodelivery.net/abcdef0123456789abcdef0123456789";
 /* Shaped like a real Cloudflare account id, so the fixture exercises the format check
@@ -34,9 +35,20 @@ export const GATE_DEFINITIONS = Object.freeze([
   ["origin_restriction", 13],
 ].map(([gate, sequence]) => Object.freeze({ gate, sequence, description: `${gate} condition` })));
 
+/* The gates a person records. shipping_captions and protected_transcript left this list
+   when they became machine-verified; passAllReviewGates must not try to write them. */
+export const MACHINE_GATES = Object.freeze([
+  "stream_upload", "signed_playback", "origin_restriction", "shipping_captions", "protected_transcript",
+]);
 export const REVIEW_GATES = Object.freeze(GATE_DEFINITIONS
-  .filter((definition) => !["stream_upload", "signed_playback", "origin_restriction"].includes(definition.gate))
+  .filter((definition) => !MACHINE_GATES.includes(definition.gate))
   .map((definition) => definition.gate));
+
+export const VALID_VTT = "WEBVTT\n\n00:00:00.000 --> 00:00:04.000\nA broker who represents both parties.\n\n"
+  + "00:00:04.000 --> 00:00:09.000\nmust obtain written consent from each of them.\n";
+export const VALID_TRANSCRIPT = "Non-fiduciary duties. ".repeat(20)
+  + "This transcript stands in for the full narration of the video and is long enough to be "
+  + "treated as a complete text equivalent rather than a placeholder typed to satisfy a field.";
 
 const ENV_KEYS = [
   "SUPABASE_URL", "SUPABASE_ANON_KEY", "SUPABASE_SERVICE_ROLE_KEY", "STATECOURSE_BASE_URL",
@@ -108,6 +120,7 @@ export function createStore(overrides = {}) {
     gateEvents: [],
     placementEvents: [],
     consoleActions: [],
+    replacements: [],
     /* What Cloudflare reports about the reserved upload. Tests move it. */
     cloudflare: {
       state: "ready",
@@ -141,7 +154,13 @@ export async function withConsoleMock(store, action) {
 
   globalThis.fetch = async (input, init = {}) => {
     const url = new URL(String(input));
-    const body = init.body ? JSON.parse(init.body) : null;
+    let body = null;
+    if (init.body instanceof FormData) {
+      const file = init.body.get("file");
+      store.lastCaptionBody = file && typeof file.text === "function" ? await file.text() : String(file ?? "");
+    } else if (init.body) {
+      body = JSON.parse(init.body);
+    }
     const method = (init.method || "GET").toUpperCase();
     calls.push({ url, method, body });
 
@@ -165,8 +184,28 @@ export async function withConsoleMock(store, action) {
   }
 }
 
+function text(body, status = 200) {
+  return new Response(body, { status, headers: { "content-type": "text/vtt" } });
+}
+
 function cloudflareRoute(store, url, method, body) {
   const path = url.pathname.replace(`/client/v4/accounts/${TEST_ACCOUNT_ID}/stream`, "");
+  /* Raw endpoints: the caption upload is multipart and the read-back is the VTT itself. */
+  const captionPut = path.match(/^\/([a-f0-9]{32})\/captions\/([a-z-]+)$/i);
+  if (captionPut && method === "PUT") {
+    store.cloudflare.storedCaptions = store.captionUploadCorrupts
+      ? "WEBVTT\n\n00:00:00.000 --> 00:00:01.000\ntruncated\n"
+      : store.lastCaptionBody;
+    return json({ success: true, result: { language: captionPut[2], status: "ready" } });
+  }
+  const captionGet = path.match(/^\/([a-f0-9]{32})\/captions\/([a-z-]+)\/vtt$/i);
+  if (captionGet) {
+    if (store.captionReadBackMissing) return text("", 404);
+    return text(store.cloudflare.storedCaptions ?? "");
+  }
+  if (path === "" || path.startsWith("?")) {
+    return json({ success: true, result: store.cloudflare.library || [] });
+  }
   if (path === "/direct_upload" && method === "POST") {
     store.lastDirectUpload = body;
     return json({ success: true, result: { uploadURL: UPLOAD_URL, uid: STREAM_UID } });
@@ -202,17 +241,44 @@ function restRoute(store, url, method, body) {
   }
   if (table === "current_staff_actor_bindings") {
     const wanted = eqValue(params, "auth_user_id");
-    return json(store.bindings.filter((binding) => !wanted || binding.auth_user_id === wanted));
+    /* The view's own rule: distinct on (auth_user_id, actor_role, scope_state), latest
+       first. Modelled faithfully so a test can reproduce the bug where a second state
+       scope silently replaced the first. */
+    const latest = new Map();
+    for (const event of store.bindings) {
+      latest.set(`${event.auth_user_id}:${event.actor_role}:${event.scope_state ?? ""}`, event);
+    }
+    return json([...latest.values()].filter((b) => !wanted || b.auth_user_id === wanted));
+  }
+  if (table === "video_screen_replacements") {
+    if (method === "POST") { store.replacements.push(body); return json(null); }
+    return json(store.replacements);
   }
   if (table === "courses") {
     const wanted = eqValue(params, "id");
     return json(store.courses.filter((course) => !wanted || course.id === wanted));
   }
   if (table === "regulatory_course_versions") return json(store.courseVersions);
+  /* Enough of the student side to exercise the delivery path end to end. */
+  if (table === "enrollments") {
+    return json([{
+      id: ENROLLMENT_ID, student_id: STAFF_ID, course_id: COURSE_ID,
+      status: "active", expires_at: null, compliance_credit_eligible: false,
+    }]);
+  }
+  if (table === "access_grants") return json([{ id: "grant-1" }]);
+  if (table === "course_review_access") return json([]);
+  if (table === "video_token_issues") return json(null);
   if (table === "video_release_gate_definitions") return json(GATE_DEFINITIONS);
 
   if (table === "video_assets") {
-    if (method === "POST") { store.assets.push({ ...body, stream_uid: body.stream_uid ?? null }); return json(null); }
+    if (method === "POST") {
+      store.assets.push({
+        stream_uid: null, stream_upload_id: null, transcript_text: null, captions_vtt: null,
+        captions_verified_at: null, transcript_verified_at: null, ...body,
+      });
+      return json(null);
+    }
     if (method === "PATCH") {
       const wanted = eqValue(params, "asset_key");
       const asset = store.assets.find((entry) => entry.asset_key === wanted);
@@ -245,7 +311,11 @@ function restRoute(store, url, method, body) {
     return json(store.assets.filter((asset) => {
       if (wanted && asset.asset_key !== wanted) return false;
       const placement = currentPlacement(store, asset.asset_key);
-      return placement?.placement_status === "placed" && readiness(store, asset.asset_key).release_ready && asset.stream_uid;
+      return placement?.placement_status === "placed"
+        && readiness(store, asset.asset_key).release_ready
+        && asset.stream_uid
+        && asset.transcript_text && asset.captions_vtt
+        && asset.captions_verified_at && asset.transcript_verified_at;
     }).map((asset) => ({
       asset_key: asset.asset_key,
       course_id: asset.course_id,
@@ -255,6 +325,7 @@ function restRoute(store, url, method, body) {
       duration_seconds: asset.duration_seconds,
       transcript_path: asset.transcript_path,
       stream_uid: asset.stream_uid,
+      captions_language: asset.captions_language || "en",
     })));
   }
 
@@ -333,4 +404,16 @@ export async function passAllReviewGates(handler, assetKey) {
       throw new Error(`gate ${gate} was refused: ${response.body}`);
     }
   }
+}
+
+/** Store and verify the two text equivalents, the step between upload and review. */
+export async function completeTextAssets(handler, assetKey) {
+  const response = await handler(postEvent({
+    action: "upload_text_assets",
+    assetKey,
+    transcriptText: VALID_TRANSCRIPT,
+    captionsVtt: VALID_VTT,
+  }));
+  if (response.statusCode !== 200) throw new Error(`text assets refused: ${response.body}`);
+  return JSON.parse(response.body);
 }

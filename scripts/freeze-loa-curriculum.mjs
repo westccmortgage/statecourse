@@ -29,7 +29,7 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const HOME = path.join(root, "texas/tx-law-of-agency-30-v1");
 const OUT = path.join(HOME, "content-freeze.json");
 const COURSE_ID = "tx-law-of-agency-30-v1";
-const FREEZE_ID = "LOA-CONTENT-FREEZE-2026-09-10-v13";
+const FREEZE_ID = "LOA-CONTENT-FREEZE-2026-09-10-v14";
 
 /**
  * FREEZE HISTORY. A freeze that is broken and silently re-taken teaches nothing. Every break is
@@ -37,6 +37,34 @@ const FREEZE_ID = "LOA-CONTENT-FREEZE-2026-09-10-v13";
  * than requiring someone to reconstruct it from git.
  */
 const BREAK_HISTORY = Object.freeze([
+  Object.freeze({
+    brokeFreeze: "LOA-CONTENT-FREEZE-2026-09-10-v13",
+    on: "2026-09-10",
+    module: "NONE — no curriculum wording changed; all twelve module sources remain byte-identical.",
+    change:
+      "The video-plan pointer moved to LOA-VIDEO-PLAN-FREEZE-2026-09-10-v10 after an independent audit "
+      + "of the administration console. Student block delivery now overlays placed console assets onto "
+      + "their instruction screen at read time; captions and transcripts became machine-verified rather "
+      + "than attested in a note; and reserving onto an occupied screen is refused unless the request "
+      + "names what it displaces. video-production-20260907 c98c560 was also merged, taking its two new "
+      + "Texas video records and refusing its public-delivery model.",
+    reason:
+      "The content freeze pins the protected-delivery byte-state, and the authorization core, the "
+      + "student block endpoint and the production routing all changed, so the freeze receives new "
+      + "truthful identifiers. What students are served is unchanged: the same two videos, the same "
+      + "UIDs, the same screens, the same signed private delivery. Playback, assessment, regulated "
+      + "curriculum and time allocation are untouched.",
+    previousFreezeSha256: "4a37181e78f820ad293b07c8b5b1d8355ab5e68de8205cfbe4ce8c2f152be2f9",
+    previousFreezeBytes: 36380,
+    auditsReRun: Object.freeze([
+      "node scripts/validate-loa-video-packages.mjs",
+      "node --test tests/admin-console-audit-repairs.test.mjs",
+      "node --test tests/cloudflare-stream-security.test.mjs tests/texas-video-integration.test.mjs tests/texas-law-of-agency.test.mjs tests/video-portfolio.test.mjs",
+      "node scripts/freeze-loa-video-plan.mjs --write",
+      "node scripts/freeze-loa-curriculum.mjs --write",
+      "npm test",
+    ]),
+  }),
   Object.freeze({
     brokeFreeze: "LOA-CONTENT-FREEZE-2026-09-08-v12",
     on: "2026-09-10",

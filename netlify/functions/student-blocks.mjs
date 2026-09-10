@@ -23,6 +23,7 @@ import {
   deriveBlockStatus, derivePosition, getBlockDelivery, getBlockQuestion,
   publicBlockQuestion, scoreBlockQuestion, sectionsEvidenced,
 } from "../../config/california-block-engine.mjs";
+import { applyConsoleVideos, consoleVideosForDelivery } from "./_lib/console-video-overlay.mjs";
 
 
 function fail(message, statusCode = 400) {
@@ -408,7 +409,12 @@ async function blocksPayload(ctx, assignmentId) {
       currentAssignment: { mastered: masteredBlocks, blocks: delivery.blocks.length },
       studyTimeSeconds: Number(nav.activeSeconds || 0),
     },
-    blocks: publicBlocks(ctx, delivery, derived),
+    /* Block-map structure first, then whatever the console has released for this delivery
+       unit laid over it. Read every time, so a withdrawal takes effect on the next load. */
+    blocks: applyConsoleVideos(
+      publicBlocks(ctx, delivery, derived),
+      await consoleVideosForDelivery(ctx.course.courseId, assignmentId),
+    ),
     position: derived.position,
     spacedRetrieval: [],
   };

@@ -1,3 +1,4 @@
+import { createHash, randomUUID } from "node:crypto";
 import { dbRequest, rpc } from "./db.mjs";
 import { inspectScreen, deliveriesForCourse, indexedCourseIds } from "../../../config/course-screen-index.mjs";
 import { logConsoleAction } from "./staff-session.mjs";
@@ -29,15 +30,26 @@ const ACCOUNT_ID = /^[a-f0-9]{32}$/i;
 const SHA256 = /^[0-9a-f]{64}$/;
 const PROTECTED_MEDIA_ROOT = "private-media/";
 
-/* Recorded from what Cloudflare reports, never from what an operator types. */
-const MACHINE_GATES = Object.freeze(["stream_upload", "signed_playback", "origin_restriction"]);
+/*
+ * Recorded from what a machine can check, never from what an operator types.
+ *
+ * shipping_captions and protected_transcript moved here after an audit: they were review
+ * gates, so a written note stood in for the existence of a file. A note is a claim about a
+ * file, not the file. These two are now decided by storing the text, hashing it, sending
+ * the caption track to Cloudflare and reading it back.
+ */
+const MACHINE_GATES = Object.freeze([
+  "stream_upload",
+  "signed_playback",
+  "origin_restriction",
+  "shipping_captions",
+  "protected_transcript",
+]);
 
 /* Recorded by a named person, with evidence, because no API can answer them. */
 const REVIEW_GATES = Object.freeze([
   "final_master",
   "poster_image",
-  "shipping_captions",
-  "protected_transcript",
   "lesson_text_equivalent",
   "factual_review",
   "visual_fidelity_review",
@@ -111,6 +123,46 @@ async function cloudflare(path, { method = "GET", body } = {}) {
   return payload?.result ?? null;
 }
 
+const sha256Hex = (text) => createHash("sha256").update(text, "utf8").digest("hex");
+
+/*
+ * Cloudflare's caption endpoints do not speak JSON: the upload is multipart and the
+ * read-back returns the WebVTT body itself. Kept separate from cloudflare() so the JSON
+ * path stays a JSON path.
+ */
+async function cloudflareRaw(path, { method = "GET", form } = {}) {
+  const account = requiredEnvironment("CLOUDFLARE_ACCOUNT_ID");
+  if (!ACCOUNT_ID.test(account)) fail("cloudflare_account_id_invalid", 503);
+  const token = requiredEnvironment("CLOUDFLARE_STREAM_API_TOKEN");
+  const response = await fetch(`https://api.cloudflare.com/client/v4/accounts/${account}/stream${path}`, {
+    method,
+    headers: { authorization: `Bearer ${token}` },
+    body: form,
+  });
+  const text = await response.text();
+  if (!response.ok) {
+    console.error("Cloudflare Stream caption error", path, response.status, text.slice(0, 300));
+    fail("cloudflare_stream_caption_request_failed", response.status === 401 || response.status === 403 ? 503 : 502);
+  }
+  return text;
+}
+
+/*
+ * Enough of WebVTT to know a real track was supplied.
+ *
+ * Not a full parser: the point is to reject a file that is empty, is a transcript pasted
+ * into the wrong box, or carries no cue timings at all — the three ways this field gets
+ * filled in wrongly. Anything past that is what the accessibility review is for.
+ */
+export function parseWebVtt(text) {
+  const body = String(text || "").replace(/\r\n/g, "\n").trim();
+  if (!body) return { ok: false, reason: "captions_empty" };
+  if (!/^WEBVTT(\s|$)/.test(body)) return { ok: false, reason: "captions_not_webvtt" };
+  const cues = [...body.matchAll(/(\d{2}:)?\d{2}:\d{2}\.\d{3}\s*-->\s*(\d{2}:)?\d{2}:\d{2}\.\d{3}/g)];
+  if (!cues.length) return { ok: false, reason: "captions_have_no_cues" };
+  return { ok: true, cueCount: cues.length };
+}
+
 /* The same check for actions addressed by asset key rather than by course. */
 async function assetInScope(staff, assetKey) {
   const asset = await assetRow(assetKey);
@@ -121,7 +173,10 @@ async function assetInScope(staff, assetKey) {
 async function assetRow(assetKey) {
   const rows = await dbRequest(
     `video_assets?asset_key=eq.${encodeURIComponent(assetKey)}`
-      + "&select=asset_key,course_id,delivery_id,screen_id,label,duration_seconds,transcript_path,captions_path,stream_uid,stream_upload_id,source_sha256,source_bytes,created_by,created_at,updated_at&limit=1",
+      + "&select=asset_key,course_id,delivery_id,screen_id,label,duration_seconds,transcript_path,captions_path,"
+      + "stream_uid,stream_upload_id,source_sha256,source_bytes,transcript_text,transcript_sha256,captions_vtt,"
+      + "captions_sha256,captions_language,captions_verified_at,transcript_verified_at,reservation_id,"
+      + "created_by,created_at,updated_at&limit=1",
   );
   const asset = rows?.[0];
   if (!asset) fail("video_asset_not_found", 404);
@@ -157,10 +212,14 @@ async function requireCourseInScope(staff, courseId) {
 export async function reserveUpload({ staff, input }) {
   const assetKey = String(input.assetKey || "").trim();
   if (!ASSET_KEY.test(assetKey)) fail("invalid_asset_key");
-  const existing = await dbRequest(
-    `video_assets?asset_key=eq.${encodeURIComponent(assetKey)}&select=asset_key&limit=1`,
-  );
-  if (existing?.[0]) fail("video_asset_already_exists", 409);
+  const existing = (await dbRequest(
+    `video_assets?asset_key=eq.${encodeURIComponent(assetKey)}&select=asset_key,stream_upload_id,stream_uid&limit=1`,
+  ))?.[0];
+  /* A row with neither an upload id nor a UID is a reservation that never completed —
+     Cloudflare refused, or the process died between the two calls. Retrying the same key
+     has to be possible, or one failed attempt burns the name forever. */
+  const retryingIncomplete = Boolean(existing) && !existing.stream_upload_id && !existing.stream_uid;
+  if (existing && !retryingIncomplete) fail("video_asset_already_exists", 409);
 
   const courseId = String(input.courseId || "").trim();
   const course = await requireCourseInScope(staff, courseId);
@@ -177,6 +236,42 @@ export async function reserveUpload({ staff, input }) {
     });
   }
 
+  /*
+   * Who already holds this screen.
+   *
+   * Two registries can name a video for one screen: the block map in config/ and this
+   * console. Delivery prefers the console, so creating an asset over an occupied screen
+   * would silently replace what students see, with nothing recording that it happened.
+   * 019 detected the collision and reported it as information, then created the asset
+   * anyway. Now it is refused unless the caller names what is being displaced and why.
+   */
+  const consoleOccupants = (await dbRequest(
+    `video_assets?course_id=eq.${encodeURIComponent(courseId)}`
+      + `&delivery_id=eq.${encodeURIComponent(deliveryId)}&screen_id=eq.${encodeURIComponent(screenId)}`
+      + "&select=asset_key&limit=20",
+  ) || []).map((row) => row.asset_key).filter((key) => key !== assetKey);
+  const occupants = [
+    ...screen.existingVideoAssetKeys.map((key) => ({ assetKey: key, source: "code_registry" })),
+    ...consoleOccupants.map((key) => ({ assetKey: key, source: "admin_console" })),
+  ];
+
+  let replacement = null;
+  if (occupants.length) {
+    const named = String(input.replacesAssetKey || "").trim();
+    const reason = String(input.replacementReason || "").trim();
+    const target = occupants.find((entry) => entry.assetKey === named);
+    if (!target || reason.length < 10) {
+      throw Object.assign(new Error("screen_already_carries_video"), {
+        statusCode: 409,
+        detail: {
+          occupants,
+          required: "replacesAssetKey naming one of them, and replacementReason of at least 10 characters",
+        },
+      });
+    }
+    replacement = { ...target, reason };
+  }
+
   const label = String(input.label || "").trim();
   if (label.length < 3 || label.length > 200) fail("invalid_label");
   const durationSeconds = Number(input.durationSeconds);
@@ -187,6 +282,39 @@ export async function reserveUpload({ staff, input }) {
   const captionsPath = protectedPath(input.captionsPath, "captions_path");
 
   const allowedOrigins = productionOrigins();
+
+  /*
+   * The row is written before Cloudflare is called, and carries a reservation id that is
+   * handed to Cloudflare as metadata.
+   *
+   * 019 did this the other way round, so a Cloudflare upload created just before a failed
+   * insert became an orphan: it existed, it was billable, and nothing in StateCourse knew
+   * its name. This ordering cannot orphan anything. If Cloudflare refuses, what is left is
+   * a visible row with no upload id that the same key can retry. If the process dies after
+   * Cloudflare succeeds, the video carries the reservation id and reconcileUploads finds
+   * its way back to this row.
+   */
+  const reservationId = randomUUID();
+  const record = {
+    asset_key: assetKey,
+    course_id: courseId,
+    delivery_id: deliveryId,
+    screen_id: screenId,
+    label,
+    duration_seconds: Math.round(durationSeconds * 1000) / 1000,
+    transcript_path: transcriptPath,
+    captions_path: captionsPath,
+    reservation_id: reservationId,
+    created_by: staff.auth.student.id,
+  };
+  if (retryingIncomplete) {
+    await dbRequest(`video_assets?asset_key=eq.${encodeURIComponent(assetKey)}`, {
+      method: "PATCH", prefer: "return=minimal", body: { ...record, updated_at: new Date().toISOString() },
+    });
+  } else {
+    await dbRequest("video_assets", { method: "POST", prefer: "return=minimal", body: record });
+  }
+
   const upload = await cloudflare("/direct_upload", {
     method: "POST",
     body: {
@@ -196,34 +324,42 @@ export async function reserveUpload({ staff, input }) {
       requireSignedURLs: true,
       allowedOrigins,
       creator: "StateCourse",
-      meta: { name: assetKey, courseId, deliveryId, screenId },
+      meta: { name: assetKey, courseId, deliveryId, screenId, reservationId },
     },
   });
   if (!upload?.uploadURL || !UID.test(upload?.uid || "")) fail("cloudflare_stream_upload_not_created", 502);
 
-  await dbRequest("video_assets", {
-    method: "POST",
+  await dbRequest(`video_assets?asset_key=eq.${encodeURIComponent(assetKey)}`, {
+    method: "PATCH",
     prefer: "return=minimal",
-    body: {
-      asset_key: assetKey,
-      course_id: courseId,
-      delivery_id: deliveryId,
-      screen_id: screenId,
-      label,
-      duration_seconds: Math.round(durationSeconds * 1000) / 1000,
-      transcript_path: transcriptPath,
-      captions_path: captionsPath,
-      stream_upload_id: upload.uid,
-      created_by: staff.auth.student.id,
-    },
+    body: { stream_upload_id: upload.uid, updated_at: new Date().toISOString() },
   });
-  await logConsoleAction(staff, "video.reserve_upload", assetKey, { courseId, deliveryId, screenId });
+
+  if (replacement) {
+    await dbRequest("video_screen_replacements", {
+      method: "POST",
+      prefer: "return=minimal",
+      body: {
+        asset_key: assetKey,
+        course_id: courseId,
+        delivery_id: deliveryId,
+        screen_id: screenId,
+        replaced_asset_key: replacement.assetKey,
+        replaced_source: replacement.source,
+        reason: replacement.reason,
+        recorded_by: staff.auth.student.id,
+      },
+    });
+  }
+  await logConsoleAction(staff, "video.reserve_upload", assetKey, {
+    courseId, deliveryId, screenId, replaced: replacement?.assetKey || null,
+  });
 
   return {
     assetKey,
     course: { id: course.id, state: course.state, name: course.name },
     placementTarget: { deliveryId, screenId, blockId: screen.blockId, title: screen.title },
-    replacesExistingVideo: screen.existingVideoAssetKeys,
+    replaces: replacement,
     allowedOrigins,
     /* One-time and short-lived. The browser PUTs the file straight to Cloudflare; the API
        token stays on the server. */
@@ -327,6 +463,118 @@ export async function confirmUpload({ staff, input }) {
   };
 }
 
+/* ── step two and a half: the text equivalents ─────────────────────────────────────────── */
+
+/*
+ * Captions and the transcript, stored and verified rather than described.
+ *
+ * The audit finding this answers: the console held two path strings pointing into the
+ * repository — where an operator working from a browser cannot put a file — and let a
+ * reviewer's note stand as proof that the files existed. So an asset could reach
+ * release-ready with no caption track and no transcript.
+ *
+ * Both texts are stored here and hashed. The caption track is sent to Cloudflare and then
+ * read back from Cloudflare, and the returned bytes must hash to what was sent: that is
+ * what "exists and can be retrieved" means, as opposed to "the upload call returned 200".
+ * The transcript is proved by reading the stored row back and re-hashing it.
+ */
+export async function uploadTextAssets({ staff, input }) {
+  const asset = await assetInScope(staff, String(input.assetKey || "").trim());
+  /* Captions attach to a video, so the upload has to have completed first. */
+  if (!asset.stream_uid) fail("video_asset_upload_incomplete", 409);
+
+  const transcript = String(input.transcriptText || "").replace(/\r\n/g, "\n").trim();
+  const captions = String(input.captionsVtt || "").replace(/\r\n/g, "\n").trim();
+  const language = String(input.captionsLanguage || "en").trim().toLowerCase();
+  if (!/^[a-z]{2}(-[a-z0-9]{2,8})?$/.test(language)) fail("invalid_caption_language");
+
+  /* A transcript is a complete equivalent of the narration. A handful of characters is
+     someone filling in a required field. */
+  if (transcript.length < 200) fail("transcript_too_short_to_be_an_equivalent");
+  if (transcript.length > 500_000) fail("transcript_too_large");
+  const vtt = parseWebVtt(captions);
+  if (!vtt.ok) fail(vtt.reason);
+
+  const transcriptSha = sha256Hex(transcript);
+  const captionsSha = sha256Hex(captions);
+
+  const form = new FormData();
+  form.append("file", new Blob([captions], { type: "text/vtt" }), `${asset.asset_key}.${language}.vtt`);
+  await cloudflareRaw(`/${encodeURIComponent(asset.stream_uid)}/captions/${encodeURIComponent(language)}`, {
+    method: "PUT",
+    form,
+  });
+
+  /* Read back, and compare bytes. An upload that reported success and stored nothing is
+     exactly the failure a written note could never catch. */
+  const returned = await cloudflareRaw(
+    `/${encodeURIComponent(asset.stream_uid)}/captions/${encodeURIComponent(language)}/vtt`,
+  );
+  const returnedSha = sha256Hex(String(returned).replace(/\r\n/g, "\n").trim());
+  const captionsMatch = returnedSha === captionsSha;
+
+  const now = new Date().toISOString();
+  await dbRequest(`video_assets?asset_key=eq.${encodeURIComponent(asset.asset_key)}`, {
+    method: "PATCH",
+    prefer: "return=minimal",
+    body: {
+      transcript_text: transcript,
+      transcript_sha256: transcriptSha,
+      captions_vtt: captions,
+      captions_sha256: captionsSha,
+      captions_language: language,
+      captions_verified_at: captionsMatch ? now : null,
+      transcript_verified_at: now,
+      updated_at: now,
+    },
+  });
+
+  /* Proved by reading the stored row back, not by trusting the write. */
+  const stored = await assetRow(asset.asset_key);
+  const transcriptMatch = stored.transcript_text != null
+    && sha256Hex(String(stored.transcript_text)) === transcriptSha;
+
+  const decisions = [
+    ["shipping_captions", captionsMatch, {
+      language,
+      cueCount: vtt.cueCount,
+      sha256: captionsSha,
+      returnedSha256: returnedSha,
+      verifiedBy: "read back from the Cloudflare caption endpoint and re-hashed",
+    }],
+    ["protected_transcript", transcriptMatch, {
+      characters: transcript.length,
+      sha256: transcriptSha,
+      verifiedBy: "read back from the stored row and re-hashed",
+    }],
+  ];
+  for (const [gate, passed, evidence] of decisions) {
+    await dbRequest("video_release_gate_events", {
+      method: "POST",
+      prefer: "return=minimal",
+      body: {
+        asset_key: asset.asset_key,
+        gate,
+        outcome: passed ? "pass" : "fail",
+        evidence: { source: "console_text_asset_verification", checkedAt: now, ...evidence },
+        reviewed_by: staff.auth.student.id,
+      },
+    });
+  }
+  await logConsoleAction(staff, "video.upload_text_assets", asset.asset_key, {
+    language, captionsMatch, transcriptMatch,
+  });
+
+  return {
+    assetKey: asset.asset_key,
+    captionsVerified: captionsMatch,
+    transcriptVerified: transcriptMatch,
+    cueCount: vtt.cueCount,
+    gatesRecorded: decisions.map(([gate, passed]) => ({ gate, outcome: passed ? "pass" : "fail" })),
+    ...(await readiness(asset.asset_key)),
+  };
+}
+
 /* ── step three: the ten human gates ───────────────────────────────────────────────────── */
 
 export async function recordGate({ staff, input }) {
@@ -411,6 +659,71 @@ export async function withdrawAsset({ staff, input }) {
   return { placement: result };
 }
 
+/* ── reconciliation ────────────────────────────────────────────────────────────────────── */
+
+/*
+ * Cloudflare videos this console cannot account for.
+ *
+ * Ordering makes an orphan much less likely, but not impossible: a crash between the
+ * direct-upload call and the patch that stores its id leaves a real, billable video with
+ * no id recorded here. Because the reservation id travels to Cloudflare as metadata, that
+ * case is repairable rather than merely detectable — the video names the row it belongs
+ * to. Anything whose metadata matches no row is reported rather than deleted: deleting a
+ * video because this console does not recognise it is exactly the wrong instinct when the
+ * console is the newer of the two systems.
+ */
+export async function reconcileUploads({ staff }) {
+  const videos = await cloudflare("?limit=1000") || [];
+  const assets = await dbRequest(
+    "video_assets?select=asset_key,course_id,stream_uid,stream_upload_id,reservation_id",
+  ) || [];
+  const byReservation = new Map(assets.filter((a) => a.reservation_id).map((a) => [a.reservation_id, a]));
+  const knownUids = new Set(assets.map((a) => a.stream_uid).filter(Boolean));
+  const knownUploadIds = new Set(assets.map((a) => a.stream_upload_id).filter(Boolean));
+
+  const repaired = [];
+  const orphans = [];
+  for (const video of videos) {
+    const uid = String(video?.uid || "");
+    if (!UID.test(uid) || knownUids.has(uid) || knownUploadIds.has(uid)) continue;
+    const reservationId = video?.meta?.reservationId || null;
+    const asset = reservationId ? byReservation.get(reservationId) : null;
+    if (asset && !asset.stream_upload_id) {
+      /* Scoped like any other write: a reviewer for one state does not repair another's. */
+      if (staff.scopeStates) {
+        const course = (await dbRequest(
+          `courses?id=eq.${encodeURIComponent(asset.course_id)}&select=state&limit=1`,
+        ))?.[0];
+        if (!course || !staff.scopeStates.includes(course.state)) continue;
+      }
+      await dbRequest(`video_assets?asset_key=eq.${encodeURIComponent(asset.asset_key)}`, {
+        method: "PATCH",
+        prefer: "return=minimal",
+        body: { stream_upload_id: uid, updated_at: new Date().toISOString() },
+      });
+      repaired.push({ assetKey: asset.asset_key, uid });
+      continue;
+    }
+    orphans.push({
+      uid,
+      createdAt: video?.created ?? null,
+      sizeBytes: video?.size ?? null,
+      meta: video?.meta ?? null,
+      reason: reservationId ? "reservation id matches no asset row" : "no reservation id in metadata",
+    });
+  }
+
+  /* Rows whose Cloudflare side never came into being — the other half of the picture. */
+  const incomplete = assets
+    .filter((a) => !a.stream_upload_id && !a.stream_uid)
+    .map((a) => ({ assetKey: a.asset_key, reason: "reserved in StateCourse, no Cloudflare upload created" }));
+
+  await logConsoleAction(staff, "video.reconcile_uploads", null, {
+    repaired: repaired.length, orphans: orphans.length, incomplete: incomplete.length,
+  });
+  return { repaired, orphans, incomplete, cloudflareVideosSeen: videos.length };
+}
+
 /* ── the console's view of the chain ───────────────────────────────────────────────────── */
 
 /* Which of these course ids a state-scoped binding may see. State comes from the course
@@ -428,7 +741,10 @@ async function withinScope(scopeStates, courseIds) {
 export async function videoInventory({ courseId = null, scopeStates = null } = {}) {
   const filter = courseId ? `&course_id=eq.${encodeURIComponent(courseId)}` : "";
   const [assets, gates, readinessRows, placements, definitions] = await Promise.all([
-    dbRequest(`video_assets?select=asset_key,course_id,delivery_id,screen_id,label,duration_seconds,transcript_path,captions_path,stream_uid,stream_upload_id,source_sha256,source_bytes,created_at,updated_at${filter}&order=asset_key.asc`),
+    dbRequest("video_assets?select=asset_key,course_id,delivery_id,screen_id,label,duration_seconds,"
+      + "transcript_path,captions_path,stream_uid,stream_upload_id,source_sha256,source_bytes,"
+      + "captions_language,captions_verified_at,transcript_verified_at,reservation_id,created_at,updated_at"
+      + `${filter}&order=asset_key.asc`),
     dbRequest("current_video_release_gates?select=asset_key,gate,outcome,evidence,reviewed_by,reviewed_at&order=asset_key.asc,gate.asc"),
     dbRequest("video_release_readiness?select=asset_key,required_gates,passed_gates,outstanding_gates,release_ready"),
     dbRequest("current_video_placements?select=asset_key,placement_status,recorded_at,recorded_by&order=asset_key.asc"),

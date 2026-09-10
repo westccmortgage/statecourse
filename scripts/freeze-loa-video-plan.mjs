@@ -38,14 +38,27 @@ const PROD = path.join(HOME, "video-production");
 const OUT = path.join(HOME, "video-plan-freeze.json");
 
 const COURSE_ID = "tx-law-of-agency-30-v1";
-const FREEZE_ID = "LOA-VIDEO-PLAN-FREEZE-2026-09-10-v9";
+const FREEZE_ID = "LOA-VIDEO-PLAN-FREEZE-2026-09-10-v10";
 
 const PREVIOUS_FREEZE = Object.freeze({
-  freezeId: "LOA-VIDEO-PLAN-FREEZE-2026-09-08-v8",
-  sha256: "839a127b6ebbec8a03985b245cc7455ee24c46c7465a9b64b92a556bc1167695",
-  bytes: 28230,
+  freezeId: "LOA-VIDEO-PLAN-FREEZE-2026-09-10-v9",
+  sha256: "bcc23f7da8901664b5d213d98d8bf7fcc731a004cf0b064e7c3730a9a2d25f72",
+  bytes: 28877,
   change:
-    "The authorization core now resolves an asset's delivery facts from the administration console's database registry before falling back to config/stream-media.mjs, so a video released through the console needs no code change and no CLOUDFLARE_STREAM_VIDEO_MAP entry; the console route serves only assets whose thirteen release conditions currently pass and whose placement stands. netlify.toml adds Cloudflare's direct-upload host to connect-src so an operator's file reaches Cloudflare without passing through a function, and packages the four catalog description files the console reconciles against. The two reviewed Texas videos still resolve through the code registry with the same UIDs, and a console lookup that fails falls back to it rather than interrupting playback. No placement, screen binding, caption, transcript, duration, assessment separation or curriculum wording changed.",
+    "An independent audit found the no-code placement claim untrue in the half a student can "
+    + "see: a placed asset was authorised for playback while the lesson payload still came from "
+    + "the static block maps. The student block endpoint now overlays eligible "
+    + "console_video_delivery rows onto the matching screen at read time, so a placement appears "
+    + "without a block map edit and a withdrawal or later failing gate removes it on the next "
+    + "load. The transcript endpoint serves a console asset's stored text, because an operator "
+    + "working from a browser cannot put a file in the repository. Captions and the transcript "
+    + "stopped being review notes and became machine-verified: the caption track is sent to "
+    + "Cloudflare and read back, and the returned bytes must hash to what was sent. Reserving "
+    + "onto a screen a block map already fills is refused unless the request names what it "
+    + "displaces. video-production-20260907 c98c560 is merged, taking its two new Texas video "
+    + "records and refusing its public-delivery model. The two reviewed Texas videos keep the "
+    + "same UIDs, placements, captions, transcripts and screens; no placement, duration, "
+    + "assessment separation or curriculum wording changed.",
 });
 
 /**

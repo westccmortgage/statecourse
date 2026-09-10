@@ -12,8 +12,10 @@ course credit — and there is no code path in it that could.
 Everything below is done once. The rest of this document explains why each piece is shaped
 the way it is; this section is just the sequence.
 
-**1 · Apply the schema.** `database/019_platform_admin_console.sql` in the Supabase SQL
-editor, then the two checks under [Checking it landed](#checking-it-landed).
+**1 · Apply the schema.** `database/019_platform_admin_console.sql`, then
+`database/020_admin_console_audit_repairs.sql`, in the Supabase SQL editor — then the two
+checks under [Checking it landed](#checking-it-landed). 020 repairs findings from an
+independent audit of 019 and is required; 019 alone cannot deliver a placed video.
 
 **2 · Make sure an account exists.** The console authenticates Supabase accounts and cannot
 create one. Register through `/student/register/` on the site, or add the user in Supabase
@@ -147,21 +149,30 @@ enforced by someone remembering them.
 1. **Reserve.** Choose a course, a delivery unit and an instruction screen from what the block
    maps actually contain. A screen that does not exist, or one that scores a response, is
    refused here — before anything is created, rather than discovered as a blank space in a
-   lesson. Cloudflare returns a one-time upload URL scoped to a single video, created with
-   `requireSignedURLs: true` and the production origin allowlist already set.
+   lesson. If the screen already carries a video, from a block map or from the console, the
+   request is refused unless it names that asset and gives a reason: `video_screen_replacements`
+   then records what was displaced. The asset row is written before Cloudflare is called and
+   carries a reservation id that travels to Cloudflare as metadata, so a failure leaves a
+   visible retryable row rather than an orphaned upload. Cloudflare returns a one-time upload
+   URL created with `requireSignedURLs: true` and the production origin allowlist already set.
 2. **Upload.** The file goes from the operator's machine straight to Cloudflare. The API token
    stays on the server and the browser never sees it.
 3. **Confirm.** The server asks Cloudflare what it received. If the reported duration differs
    from the declared duration by more than five seconds it is the wrong file and the upload is
-   rejected. Three release conditions — `stream_upload`, `signed_playback`, `origin_restriction`
-   — are recorded from the API response, and cannot be recorded by hand: a checkbox saying
-   "signed playback is enforced" is a statement about what someone believed.
-4. **Review.** The other ten need a named person and a written basis of at least ten
+   rejected. Three conditions — `stream_upload`, `signed_playback`, `origin_restriction` — are
+   recorded from the API response and cannot be recorded by hand: a checkbox saying "signed
+   playback is enforced" is a statement about what someone believed.
+4. **Captions and transcript.** Both texts are submitted, stored and hashed. The caption track
+   is sent to Cloudflare and then read back, and the returned bytes must hash to what was sent;
+   the transcript is proved by reading the stored row back and re-hashing it. That decides
+   `shipping_captions` and `protected_transcript`, which are also not writable by hand. They
+   used to be review gates, which meant a written note stood in for the existence of a file.
+5. **Review.** The remaining eight need a named person and a written basis of at least ten
    characters. A pass with no stated basis is a checkbox.
-5. **Place.** Refused unless all thirteen conditions currently pass — checked in the endpoint
+6. **Place.** Refused unless all thirteen conditions currently pass — checked in the endpoint
    so the console can say what is missing, and again inside `place_video_asset` so the row
    cannot be written even if the endpoint is wrong.
-6. **Withdraw.** Needs a stated reason. The video stops being delivered immediately.
+7. **Withdraw.** Needs a stated reason. The video stops being delivered on the next lesson load.
 
 Readiness is derived, never stored. Recording a later failure on any condition withdraws
 readiness by itself, with no second record to keep in step.
@@ -174,8 +185,19 @@ reads it rather than carrying its own copy.
 
 ### Delivery
 
-`console_video_delivery` lists only assets that are placed, release-ready and uploaded. The
-Stream authorization core reads it first and falls back to `config/stream-media.mjs`, so:
+`console_video_delivery` lists only assets that are placed, release-ready, uploaded and
+carrying both verified text equivalents. Two things read it.
+
+`student-blocks.mjs` overlays its rows onto the matching course, delivery unit and
+instruction screen while building the lesson payload, so a placed asset appears in the
+lesson with no block map edited. The overlay is applied on every read and nothing is
+cached, which is what makes withdrawal work: a withdrawn asset, or one whose gate later
+fails, drops out of the view and is simply not found on the next load. A console entry
+replaces the block map's video for that screen rather than appearing beside it. If the
+lookup fails the block map is served unchanged — a student mid-lesson must not lose the
+payload because the console's view is briefly unavailable.
+
+The Stream authorization core reads it too, and falls back to `config/stream-media.mjs`, so:
 
 - a video released through the console needs no code change and no environment-variable edit;
 - the two reviewed Texas videos keep resolving exactly as they did, from the code registry and
@@ -193,6 +215,17 @@ Beyond the runtime secrets in
 - `CLOUDFLARE_STREAM_API_TOKEN` — a secret. See below.
 - `CLOUDFLARE_STREAM_ALLOWED_ORIGINS` — optional; defaults to the `STATECOURSE_BASE_URL` host
   and its `www` form
+
+The token needs Stream **Edit** partly for this: the caption track is uploaded through the
+API and read back through it.
+
+#### Reconciliation
+
+`reconcile_uploads` compares the Cloudflare library against the asset rows. A video whose
+metadata carries a reservation id matching a row that lost its upload id is repaired; one
+matching nothing is reported and never deleted, because the console is the newer of the two
+systems and not recognising a video is a poor reason to destroy it. Rows reserved here with
+no Cloudflare upload behind them are listed too.
 
 #### The Stream token
 
