@@ -1,0 +1,48 @@
+{
+  "schemaVersion": "1.0",
+  "reviewedOn": "2026-09-09",
+  "sourceFile": "tx-loa-v03-texas-intermediary-brokerage.mp4.mp4",
+  "hosting": {
+    "provider": "Cloudflare Stream",
+    "videoId": "8630af57b63d4255a1b51db7bb143398",
+    "playerUrl": "https://customer-jie0jqrpv6850xg8.cloudflarestream.com/8630af57b63d4255a1b51db7bb143398/iframe?defaultTextTrack=en",
+    "poster": "provider-managed first-frame thumbnail",
+    "defaultTextTrack": "en"
+  },
+  "shippingAssets": {
+    "sourceVideo": {
+      "sha256": "c0424cfecb674500ae4f2fb7c45258aad2e0c2b9886af901c927d947aaefbc48",
+      "bytes": 31511244
+    },
+    "captions": {
+      "path": "public/statecourse/media/tx-loa-v03-texas-intermediary-brokerage.en.vtt",
+      "sha256": "26f5dfec245056b913b7bdb6d325eb3500453c0e0759c24197d64d4cd0281b3a",
+      "kind": "separate selectable English WebVTT track; matching English track uploaded to Cloudflare Stream"
+    },
+    "transcript": {
+      "path": "public/statecourse/media/tx-loa-v03-texas-intermediary-brokerage.txt",
+      "sha256": "474b07fe62fc15231dd416a40d36a76098707ef81de1ad2a9a8ee565437f9846"
+    }
+  },
+  "media": {
+    "durationSeconds": 186.264,
+    "displayDuration": "3:07",
+    "deliveryResolution": "1080p"
+  },
+  "checks": {
+    "narrationAndApprovedScript": "PASS — synchronized captions match the approved 474-word script",
+    "brandBackground": "PASS — user accepted the StateCourse-branded render",
+    "avatarDelivery": "PASS — user accepted the final render",
+    "captions": "PASS — English track uploaded to Cloudflare Stream and recorded Ready; local final VTT retained",
+    "transcript": "PASS — complete text equivalent ships beside the hosted video",
+    "assessmentSeparation": "PASS — no quiz, answer, or secure assessment content appears in the video",
+    "autoplay": "DISABLED",
+    "keyboardControls": "CLOUDFLARE STREAM PLAYER ENABLED"
+  },
+  "approvals": {
+    "factualQcApproved": true,
+    "visualQcApproved": true,
+    "logoSafeReviewed": true,
+    "accessibilityQcApproved": true
+  }
+}

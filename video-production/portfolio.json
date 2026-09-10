@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "as_of": "2026-09-08",
+  "as_of": "2026-09-09",
   "scope_definition": "A built state has at least one course in the public course catalog and a working non-credit practice route.",
   "built_state_count": 14,
   "course_count": 30,
@@ -17,18 +17,29 @@
       "state_code": "TX",
       "state_name": "Texas",
       "course_count": 6,
-      "course_ids": ["tx-principles-real-estate-i-30", "tx-principles-real-estate-ii-30", "tx-law-of-agency-30", "tx-law-of-contracts-30", "tx-promulgated-contract-forms-30", "tx-real-estate-finance-30"],
-      "rendered_instructional_videos": 2,
+      "course_ids": [
+        "tx-principles-real-estate-i-30",
+        "tx-principles-real-estate-ii-30",
+        "tx-law-of-agency-30",
+        "tx-law-of-contracts-30",
+        "tx-promulgated-contract-forms-30",
+        "tx-real-estate-finance-30"
+      ],
+      "rendered_instructional_videos": 3,
       "active_instructional_videos": 2,
       "editorial_packages_ready": 3,
-      "next_action": "Render and QC the remaining frozen Law of Agency package: Representation or Showing Only."
+      "next_action": "Representation or Showing Only and the v03 intermediary re-render are rendered and reviewed, but were reviewed for public delivery and carry no signed-playback or origin-restriction record. Activating either under private Stream delivery requires those two conditions to be reviewed and recorded, which is now the administration console's job rather than a code edit."
     },
     {
       "priority": 2,
       "state_code": "CA",
       "state_name": "California",
       "course_count": 3,
-      "course_ids": ["ca-real-estate-principles-45", "ca-real-estate-practice-45", "ca-mortgage-loan-brokering-lending-45"],
+      "course_ids": [
+        "ca-real-estate-principles-45",
+        "ca-real-estate-practice-45",
+        "ca-mortgage-loan-brokering-lending-45"
+      ],
       "rendered_instructional_videos": 4,
       "active_instructional_videos": 4,
       "editorial_packages_ready": 3,
@@ -39,7 +50,9 @@
       "state_code": "MI",
       "state_name": "Michigan",
       "course_count": 1,
-      "course_ids": ["mi-salesperson-prelicensure-40-v1"],
+      "course_ids": [
+        "mi-salesperson-prelicensure-40-v1"
+      ],
       "rendered_instructional_videos": 0,
       "active_instructional_videos": 0,
       "editorial_packages_ready": 0,
@@ -50,7 +63,9 @@
       "state_code": "NC",
       "state_name": "North Carolina",
       "course_count": 1,
-      "course_ids": ["nc-broker-prelicensing-75"],
+      "course_ids": [
+        "nc-broker-prelicensing-75"
+      ],
       "rendered_instructional_videos": 0,
       "active_instructional_videos": 0,
       "editorial_packages_ready": 0,
@@ -61,7 +76,10 @@
       "state_code": "WA",
       "state_name": "Washington",
       "course_count": 2,
-      "course_ids": ["wa-real-estate-fundamentals-60", "wa-real-estate-practices-30"],
+      "course_ids": [
+        "wa-real-estate-fundamentals-60",
+        "wa-real-estate-practices-30"
+      ],
       "rendered_instructional_videos": 0,
       "active_instructional_videos": 0,
       "editorial_packages_ready": 0,
@@ -72,7 +90,10 @@
       "state_code": "AZ",
       "state_name": "Arizona",
       "course_count": 2,
-      "course_ids": ["az-salesperson-prelicense-90", "az-contract-writing-6"],
+      "course_ids": [
+        "az-salesperson-prelicense-90",
+        "az-contract-writing-6"
+      ],
       "rendered_instructional_videos": 0,
       "active_instructional_videos": 0,
       "editorial_packages_ready": 0,
@@ -83,7 +104,14 @@
       "state_code": "CO",
       "state_name": "Colorado",
       "course_count": 6,
-      "course_ids": ["co-real-estate-law-practice-48", "co-contracts-regulations-48", "co-trust-accounts-recordkeeping-8", "co-current-legal-issues-8", "co-real-estate-closings-24", "co-practical-applications-32"],
+      "course_ids": [
+        "co-real-estate-law-practice-48",
+        "co-contracts-regulations-48",
+        "co-trust-accounts-recordkeeping-8",
+        "co-current-legal-issues-8",
+        "co-real-estate-closings-24",
+        "co-practical-applications-32"
+      ],
       "rendered_instructional_videos": 0,
       "active_instructional_videos": 0,
       "editorial_packages_ready": 0,
@@ -94,7 +122,10 @@
       "state_code": "PA",
       "state_name": "Pennsylvania",
       "course_count": 2,
-      "course_ids": ["pa-real-estate-fundamentals-30", "pa-real-estate-practice-45"],
+      "course_ids": [
+        "pa-real-estate-fundamentals-30",
+        "pa-real-estate-practice-45"
+      ],
       "rendered_instructional_videos": 0,
       "active_instructional_videos": 0,
       "editorial_packages_ready": 0,
@@ -105,7 +136,9 @@
       "state_code": "WI",
       "state_name": "Wisconsin",
       "course_count": 1,
-      "course_ids": ["wi-salesperson"],
+      "course_ids": [
+        "wi-salesperson"
+      ],
       "rendered_instructional_videos": 0,
       "active_instructional_videos": 0,
       "editorial_packages_ready": 0,
@@ -116,7 +149,10 @@
       "state_code": "MO",
       "state_name": "Missouri",
       "course_count": 2,
-      "course_ids": ["mo-salesperson-preexam-48", "mo-real-estate-practice-24"],
+      "course_ids": [
+        "mo-salesperson-preexam-48",
+        "mo-real-estate-practice-24"
+      ],
       "rendered_instructional_videos": 0,
       "active_instructional_videos": 0,
       "editorial_packages_ready": 0,
@@ -127,7 +163,9 @@
       "state_code": "OK",
       "state_name": "Oklahoma",
       "course_count": 1,
-      "course_ids": ["ok-basic-prelicense-90"],
+      "course_ids": [
+        "ok-basic-prelicense-90"
+      ],
       "rendered_instructional_videos": 0,
       "active_instructional_videos": 0,
       "editorial_packages_ready": 0,
@@ -138,7 +176,9 @@
       "state_code": "VA",
       "state_name": "Virginia",
       "course_count": 1,
-      "course_ids": ["va-principles-practices-v1"],
+      "course_ids": [
+        "va-principles-practices-v1"
+      ],
       "rendered_instructional_videos": 0,
       "active_instructional_videos": 0,
       "editorial_packages_ready": 0,
@@ -149,7 +189,9 @@
       "state_code": "ME",
       "state_name": "Maine",
       "course_count": 1,
-      "course_ids": ["me-sales-agent-v1"],
+      "course_ids": [
+        "me-sales-agent-v1"
+      ],
       "rendered_instructional_videos": 0,
       "active_instructional_videos": 0,
       "editorial_packages_ready": 0,
@@ -160,7 +202,9 @@
       "state_code": "AK",
       "state_name": "Alaska",
       "course_count": 1,
-      "course_ids": ["ak-salesperson-prelicense-40-v1"],
+      "course_ids": [
+        "ak-salesperson-prelicense-40-v1"
+      ],
       "rendered_instructional_videos": 0,
       "active_instructional_videos": 0,
       "editorial_packages_ready": 0,

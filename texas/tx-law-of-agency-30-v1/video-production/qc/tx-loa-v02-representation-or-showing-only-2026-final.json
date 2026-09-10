@@ -1,0 +1,48 @@
+{
+  "schemaVersion": "1.0",
+  "reviewedOn": "2026-09-09",
+  "sourceFile": "Representation-or-Showing-Only-2026-1080p.mp4",
+  "hosting": {
+    "provider": "Cloudflare Stream",
+    "videoId": "1f6768807c1e1d9985e0566610bd3ec5",
+    "playerUrl": "https://customer-jie0jqrpv6850xg8.cloudflarestream.com/1f6768807c1e1d9985e0566610bd3ec5/iframe?defaultTextTrack=en",
+    "poster": "provider-managed first-frame thumbnail",
+    "defaultTextTrack": "en"
+  },
+  "shippingAssets": {
+    "sourceVideo": {
+      "sha256": "fea38ee52d518e875c096e34159f36c399f8e6b25896a3f21f8b26324f429166",
+      "bytes": 27868986
+    },
+    "captions": {
+      "path": "public/statecourse/media/tx-loa-v02-representation-or-showing-only-2026.en.vtt",
+      "sha256": "3ba73c2aafe022a1a38b155c98829f653684aeac8eb643e588f0748d64a95da0",
+      "kind": "separate selectable English WebVTT track; matching English track uploaded to Cloudflare Stream"
+    },
+    "transcript": {
+      "path": "public/statecourse/media/tx-loa-v02-representation-or-showing-only-2026.txt",
+      "sha256": "c2e8543ffaab3a8589c5ecfdf88e42725fe17f89de06e43703275dd79a60f819"
+    }
+  },
+  "media": {
+    "durationSeconds": 185.41,
+    "displayDuration": "3:05",
+    "deliveryResolution": "1080p"
+  },
+  "checks": {
+    "narrationAndApprovedScript": "PASS — final captions preserve the approved script wording",
+    "brandBackground": "PASS — StateCourse-branded render received for activation",
+    "avatarDelivery": "PASS — delivered render reviewed for course placement",
+    "captions": "PASS — English track uploaded to Cloudflare Stream and recorded Ready; local final VTT retained",
+    "transcript": "PASS — complete text equivalent ships beside the hosted video",
+    "assessmentSeparation": "PASS — no quiz, answer, or secure assessment content appears in the video",
+    "autoplay": "DISABLED",
+    "keyboardControls": "CLOUDFLARE STREAM PLAYER ENABLED"
+  },
+  "approvals": {
+    "factualQcApproved": true,
+    "visualQcApproved": true,
+    "logoSafeReviewed": true,
+    "accessibilityQcApproved": true
+  }
+}

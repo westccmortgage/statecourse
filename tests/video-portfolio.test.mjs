@@ -47,10 +47,14 @@ test("California's four active videos have complete shipping assets", () => {
   assert.equal(california.active_instructional_videos, 4);
 });
 
-test("Texas records two private Stream videos and keeps the remaining package inactive", () => {
+test("Texas records three rendered videos, activates two, and publishes none of them", () => {
   const texas = portfolio.states.find((state) => state.state_code === "TX");
   assert.equal(texas.editorial_packages_ready, 3);
-  assert.equal(texas.rendered_instructional_videos, 2);
+  /* Three renders exist. Two are active: the v02 and v03 packages were reviewed for public
+     delivery and carry no signed-playback or origin-restriction record, so activating them
+     under private delivery would assert a review nobody performed. Rendered and active are
+     separate numbers precisely so that gap is visible rather than rounded away. */
+  assert.equal(texas.rendered_instructional_videos, 3);
   assert.equal(texas.active_instructional_videos, 2);
   for (const active of ["tx-iabs-1-2-document-overview", "tx-intermediary-brokerage"]) {
     for (const extension of ["vtt", "txt"]) {
@@ -62,8 +66,20 @@ test("Texas records two private Stream videos and keeps the remaining package in
     }
     assert.equal(fs.existsSync(path.join(root, `public/statecourse/media/${active}-poster.webp`)), false, `${active}-poster.webp must not be public`);
   }
-  for (const stem of ["tx-representation-or-showing-only-2026"]) {
-    assert.equal(fs.existsSync(path.join(root, `public/statecourse/media/${stem}.mp4`)), false, stem);
+  /* The rendered-but-inactive packages must not reach the public tree either — not the
+     media, and above all not the transcript, which is the whole text of a paid lesson. */
+  for (const stem of [
+    "tx-representation-or-showing-only-2026",
+    "tx-loa-v02-representation-or-showing-only-2026",
+    "tx-loa-v03-texas-intermediary-brokerage",
+  ]) {
+    for (const extension of ["mp4", "vtt", "en.vtt", "txt"]) {
+      assert.equal(
+        fs.existsSync(path.join(root, `public/statecourse/media/${stem}.${extension}`)),
+        false,
+        `${stem}.${extension} must not be public`,
+      );
+    }
   }
 });
 
