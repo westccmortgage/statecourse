@@ -7,6 +7,57 @@ takes a course video from a file on a laptop to a screen in a lesson.
 It records and reports. It grants no regulator approval, opens no enrollment, and awards no
 course credit — and there is no code path in it that could.
 
+## Setup, in order
+
+Everything below is done once. The rest of this document explains why each piece is shaped
+the way it is; this section is just the sequence.
+
+**1 · Apply the schema.** `database/019_platform_admin_console.sql` in the Supabase SQL
+editor, then the two checks under [Checking it landed](#checking-it-landed).
+
+**2 · Make sure an account exists.** The console authenticates Supabase accounts and cannot
+create one. Register through `/student/register/` on the site, or add the user in Supabase
+Auth. Use a real address you can receive mail at.
+
+**3 · Grant yourself `owner`.** The insert under
+[Granting the first role](#granting-the-first-role). Until this runs, signing in succeeds and
+shows an empty console — that is the system working, not a failure.
+
+**4 · Set the environment.** In Netlify, `CLOUDFLARE_ACCOUNT_ID` and
+`CLOUDFLARE_STREAM_API_TOKEN`, both **scoped to Functions**. The Stream token is built as
+described under [The Stream token](#the-stream-token).
+
+**5 · Deploy.** Netlify applies an environment change on the next deploy and not to functions
+already running, so nothing above takes effect until this happens.
+
+**6 · Open `/admin/console/`** and sign in with the account from step 2. You should see your
+role, a catalog table, and an empty video list.
+
+If a step is missed, the console names the missing configuration key rather than reporting a
+generic outage — a signed-in staff member gets told which one.
+
+## What to do with it once it runs
+
+**The catalog answers a question you cannot currently answer**: what does each system
+actually believe about each course. Expect it to be uncomfortable reading — the public
+catalog lists thirty courses and checkout can sell ten, and the console shows that as twenty
+rows rather than as a footnote. Nothing there is changed by the console; it is a report you
+act on elsewhere.
+
+**The video tab is where work happens.** A realistic first pass, on a course that is not
+enrolling students:
+
+1. Pick a video you have already rendered and reviewed.
+2. Reserve an upload against its instruction screen and upload the file.
+3. Record the ten review conditions honestly, including any that fail. A failing condition is
+   a normal outcome and is meant to be recorded, not avoided.
+4. Watch placement be refused while anything is outstanding, then pass the last condition and
+   place it.
+5. Withdraw it again with a reason, and confirm it stops being delivered.
+
+Doing this once on a course with no enrolled students is worth more than reading the rest of
+this document, because it shows the refusals working rather than asserting that they do.
+
 ## Signing in
 
 Authentication is the same Supabase session students use. Authorization is separate and comes
@@ -33,23 +84,11 @@ editing a request field does not widen it. A null `scope_state` covers every sta
 not accept it. A string shared by several people can say that a request arrived; it cannot say
 who made it.
 
-### Granting the first role
-
-No migration seeds a binding, because a row asserting that someone was given authority is
-evidence of a decision, and a migration is not a decision. The first one is inserted by hand
-with the service credential:
-
-```sql
-insert into staff_actor_binding_events
-  (auth_user_id, actor_role, binding_status, effective_at, evidence, recorded_by)
-values
-  ('<supabase auth.users id>', 'owner', 'active', now(),
-   '{"basis":"account owner","authorized_by":"<name>","on":"<date>"}'::jsonb,
-   '<supabase auth.users id>');
-```
-
-Revoking is another insert with `binding_status='revoked'`, never an update: the ledger is
-append-only and a trigger refuses anything else.
+Roles are granted by inserting into `staff_actor_binding_events` — see
+[Setup, in order](#setup-in-order) for the first one. Revoking is another insert with
+`binding_status='revoked'`, never an update: the ledger is append-only and a trigger refuses
+anything else. No migration seeds a binding, because a row asserting that someone was given
+authority is evidence of a decision, and a migration is not a decision.
 
 ## Catalog
 
