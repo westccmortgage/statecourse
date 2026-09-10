@@ -151,10 +151,23 @@ not something this token should be able to touch.
 
 | Field | Value |
 | --- | --- |
-| Permission | `Account` · `Stream` · `Edit` — one row, nothing else |
-| Account Resources | Include · the StateCourse account only |
-| Zone Resources | none |
-| TTL | set it deliberately; a token that expires unnoticed stops uploads without warning |
+| Scope | Entire Account — Stream is an account-level permission |
+| Permission group | `Media` · `Stream` · Read **and** Edit |
+| Everything else under Media | unchecked, `Images` included — the console never touches Images |
+| Token expiration | a dated expiry is safe here; see below |
+| Client IP address filtering | **leave empty** |
+
+Stream needs both boxes because the chain reads as well as writes: it creates a direct upload,
+then asks Cloudflare for the video's status and caption tracks. The Media group should end up
+reading 2/8, and the policy summary should say `Stream Read, Stream Write` and nothing more.
+
+An expiry is worth setting despite the last token lapsing unnoticed, because the failure is
+bounded and visible in the right place: an expired token stops new uploads and does not touch
+playback, which runs on the signing key. Set a reminder for the renewal date.
+
+Client IP filtering looks like free security and is a trap: the calls come from Netlify's
+function egress, whose addresses are neither published nor stable, so a pinned range breaks
+uploads at a time unrelated to any change you made.
 
 Create it from the account's own **Account API tokens** page rather than from My Profile. An
 account-owned token belongs to StateCourse and survives a person leaving; a user token
