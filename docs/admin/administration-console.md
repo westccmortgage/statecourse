@@ -23,6 +23,18 @@ Auth. Use a real address you can receive mail at.
 [Granting the first role](#granting-the-first-role). Until this runs, signing in succeeds and
 shows an empty console — that is the system working, not a failure.
 
+Owning the infrastructure and being a named actor are different things, which is why this
+step exists at all rather than being inferred. Whoever holds the service-role key can already
+do anything to this database; if the console treated that as authority, every record it wrote
+would say only that a server made a request. The binding is what lets a record say that a
+person placed a video on a date, and it is the same reason a cloud account owner still
+carries a user identity rather than acting as the account.
+
+There is no chicken-and-egg problem in the bootstrap: the first row is written through the
+Supabase SQL editor with the service credential, which only the infrastructure owner holds.
+It is self-attested by construction — the owner granting themselves ownership, with a date
+and a stated basis — and every grant after it carries a `recorded_by` naming who made it.
+
 **4 · Set the environment.** In Netlify, `CLOUDFLARE_ACCOUNT_ID` and
 `CLOUDFLARE_STREAM_API_TOKEN`, both **scoped to Functions**. The Stream token is built as
 described under [The Stream token](#the-stream-token).
