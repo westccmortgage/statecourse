@@ -145,13 +145,20 @@ Beyond the runtime secrets in
 
 #### The Stream token
 
-Cloudflare dashboard → My Profile → API Tokens → Create Token → Create Custom Token:
+Create Token → **Start from scratch**. None of the permission-policy templates fits: the
+closest, "Stream and Images", bundles five permissions where one is wanted, and Images is
+not something this token should be able to touch.
 
 | Field | Value |
 | --- | --- |
-| Permissions | `Account` · `Stream` · `Edit` |
+| Permission | `Account` · `Stream` · `Edit` — one row, nothing else |
 | Account Resources | Include · the StateCourse account only |
 | Zone Resources | none |
+| TTL | set it deliberately; a token that expires unnoticed stops uploads without warning |
+
+Create it from the account's own **Account API tokens** page rather than from My Profile. An
+account-owned token belongs to StateCourse and survives a person leaving; a user token
+belongs to whoever made it.
 
 `Stream` is the product; `Edit` is read plus write. Read alone cannot create a direct upload,
 which is step one of the chain, so `Edit` is the narrowest level that works — Cloudflare
@@ -160,8 +167,13 @@ and managing signing keys. This code never calls either, but the token could. Sc
 one account, give it nothing else, and rotate it if it is ever pasted anywhere but the Netlify
 environment.
 
-The token is shown once. It belongs in the Netlify production environment and in no file in
-this repository.
+The token is shown once. It belongs in the Netlify production environment — **scoped to
+Functions**, like the other Cloudflare secrets, because no build step reads it — and in no
+file in this repository.
+
+Netlify applies an environment change on the next deploy, not to functions already running,
+so trigger a deploy after adding it. If it is missing or malformed the console now says which
+key is at fault rather than reporting a generic outage.
 
 `netlify.toml` adds `https://upload.videodelivery.net` to `connect-src`. It is an upload
 endpoint only: no script, style, frame or image may load from it. The alternative was relaying
