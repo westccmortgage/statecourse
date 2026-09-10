@@ -38,14 +38,14 @@ const PROD = path.join(HOME, "video-production");
 const OUT = path.join(HOME, "video-plan-freeze.json");
 
 const COURSE_ID = "tx-law-of-agency-30-v1";
-const FREEZE_ID = "LOA-VIDEO-PLAN-FREEZE-2026-09-08-v8";
+const FREEZE_ID = "LOA-VIDEO-PLAN-FREEZE-2026-09-10-v9";
 
 const PREVIOUS_FREEZE = Object.freeze({
-  freezeId: "LOA-VIDEO-PLAN-FREEZE-2026-09-08-v7",
-  sha256: "ff96ecb5f871cdb1aa45abdf72b81bd5c9f84fe008517b736f12de95e7b84acb",
-  bytes: 28180,
+  freezeId: "LOA-VIDEO-PLAN-FREEZE-2026-09-08-v8",
+  sha256: "839a127b6ebbec8a03985b245cc7455ee24c46c7465a9b64b92a556bc1167695",
+  bytes: 28230,
   change:
-    "The two Stream evidence tables now enable Row Level Security in addition to revoking anon and authenticated privileges, and the security regression test and runbook require both layers. Playback semantics and curriculum wording are unchanged.",
+    "The authorization core now resolves an asset's delivery facts from the administration console's database registry before falling back to config/stream-media.mjs, so a video released through the console needs no code change and no CLOUDFLARE_STREAM_VIDEO_MAP entry; the console route serves only assets whose thirteen release conditions currently pass and whose placement stands. netlify.toml adds Cloudflare's direct-upload host to connect-src so an operator's file reaches Cloudflare without passing through a function, and packages the four catalog description files the console reconciles against. The two reviewed Texas videos still resolve through the code registry with the same UIDs, and a console lookup that fails falls back to it rather than interrupting playback. No placement, screen binding, caption, transcript, duration, assessment separation or curriculum wording changed.",
 });
 
 /**

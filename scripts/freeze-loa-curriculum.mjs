@@ -29,7 +29,7 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const HOME = path.join(root, "texas/tx-law-of-agency-30-v1");
 const OUT = path.join(HOME, "content-freeze.json");
 const COURSE_ID = "tx-law-of-agency-30-v1";
-const FREEZE_ID = "LOA-CONTENT-FREEZE-2026-09-08-v12";
+const FREEZE_ID = "LOA-CONTENT-FREEZE-2026-09-10-v13";
 
 /**
  * FREEZE HISTORY. A freeze that is broken and silently re-taken teaches nothing. Every break is
@@ -37,6 +37,25 @@ const FREEZE_ID = "LOA-CONTENT-FREEZE-2026-09-08-v12";
  * than requiring someone to reconstruct it from git.
  */
 const BREAK_HISTORY = Object.freeze([
+  Object.freeze({
+    brokeFreeze: "LOA-CONTENT-FREEZE-2026-09-08-v12",
+    on: "2026-09-10",
+    module: "NONE — no curriculum wording changed; all twelve module sources remain byte-identical.",
+    change:
+      "The video-plan pointer moved to LOA-VIDEO-PLAN-FREEZE-2026-09-10-v9 after the administration console gained a server-enforced upload, review and placement chain. The Stream authorization core now reads an asset's delivery facts from the console registry before falling back to config/stream-media.mjs, and netlify.toml adds Cloudflare's direct-upload host to connect-src and packages the four catalog description files the console reconciles against.",
+    reason:
+      "Placing one video previously required editing two registries, regenerating block maps, adding a UID to an environment variable and deploying, so only a developer could do it and the ten release conditions in video-production/PORTFOLIO.md were enforced by memory. They are now rows the database refuses to place without. The content freeze pins the protected-delivery byte-state, so changing the authorization core and the production routing receives new truthful freeze identifiers. The two reviewed Texas videos keep the same UIDs, placements, captions, transcripts and screens; playback, assessment, regulated curriculum and time allocation are unchanged.",
+    previousFreezeSha256: "29fd77fa903b07a8c3e2ce3955cdd01e8ef5ca851dbe460cb702c1bb1e5b8fc6",
+    previousFreezeBytes: 34300,
+    auditsReRun: Object.freeze([
+      "node scripts/validate-loa-video-packages.mjs",
+      "node --test tests/cloudflare-stream-security.test.mjs tests/texas-video-integration.test.mjs tests/texas-law-of-agency.test.mjs tests/video-portfolio.test.mjs",
+      "node --test tests/admin-console-auth.test.mjs tests/admin-console-migration.test.mjs tests/admin-catalog-truth.test.mjs tests/admin-video-chain.test.mjs tests/console-video-delivery.test.mjs",
+      "node scripts/freeze-loa-video-plan.mjs --write",
+      "node scripts/freeze-loa-curriculum.mjs --write",
+      "npm test",
+    ]),
+  }),
   Object.freeze({
     brokeFreeze: "LOA-CONTENT-FREEZE-2026-09-08-v11",
     on: "2026-09-08",

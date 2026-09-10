@@ -13,7 +13,11 @@ browser never receives a permanent downloadable MP4 URL or chooses a Stream UID.
 6. Create a Stream signing key. Store the key id and private JWK only in the Netlify production
    environment; never commit them.
 7. Add the Stream UID to `CLOUDFLARE_STREAM_VIDEO_MAP`, keyed by the stable asset key in
-   `config/stream-media.mjs`.
+   `config/stream-media.mjs`. A video released through the administration console skips this
+   step and steps 2 to 5 and 9 with it — see
+   [Administration console](../admin/administration-console.md). This order remains the record
+   for the two reviewed Texas videos, which still resolve from the code registry and the
+   environment map.
 8. Apply `database/018_cloudflare_stream_delivery.sql`.
 9. Switch the reviewed course media entry from native delivery to `cloudflare-stream`, regenerate
    its block map, run all validations, deploy, and verify with a real authorized review account.

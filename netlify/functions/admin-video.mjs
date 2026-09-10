@@ -1,0 +1,85 @@
+import { parseJson, requireSameOrigin } from "./_lib/http.mjs";
+import { requireStaff } from "./_lib/staff-session.mjs";
+import { sessionCookies, sessionResponse } from "./_lib/student-session.mjs";
+import {
+  confirmUpload, placeAsset, placeableCourseIds, placementTargets, recordGate,
+  reserveUpload, videoInventory, withdrawAsset,
+} from "./_lib/video-console.mjs";
+
+/*
+ * The video chain: reserve an upload, confirm what Cloudflare received, record the ten
+ * reviews, place, withdraw.
+ *
+ * Who may do what:
+ *   video_producer  reserve, confirm, record reviews
+ *   administrator   the above, plus place and withdraw
+ *   owner           everything
+ *
+ * Placement is separated from review on purpose. The person who made the video should be
+ * able to drive it all the way to release-ready without also being the person who decides
+ * it goes in front of students, and on a one-person team the owner holds both roles and
+ * still leaves two distinct records.
+ */
+
+const REVIEWERS = ["owner", "administrator", "video_producer"];
+const PLACERS = ["owner", "administrator"];
+
+function detailOf(error) {
+  return error?.detail ? { detail: error.detail } : {};
+}
+
+export const handler = async (event) => {
+  let cookies = [];
+  try {
+    if (event.httpMethod === "GET") {
+      const staff = await requireStaff(event, [...REVIEWERS, "regulator_reviewer"]);
+      cookies = staff.auth.refreshedSession ? sessionCookies(staff.auth.refreshedSession) : [];
+      const query = event.queryStringParameters || {};
+      const courseId = String(query.course_id || "").trim() || null;
+      const inventory = await videoInventory({ courseId, scopeStates: staff.scopeStates });
+      return sessionResponse(200, {
+        viewer: { roles: staff.roles, canPlace: staff.roles.some((role) => PLACERS.includes(role)) },
+        courseId,
+        /* The courses whose block maps are indexed, and — once one is chosen — every
+           instruction screen it actually has. The console offers these instead of a
+           free-text field, so a placement cannot name a screen that does not exist. */
+        placeableCourses: await placeableCourseIds(staff.scopeStates),
+        placementTargets: courseId ? placementTargets(courseId) : [],
+        ...inventory,
+      }, cookies);
+    }
+
+    if (event.httpMethod !== "POST") throw Object.assign(new Error("method_not_allowed"), { statusCode: 405 });
+    requireSameOrigin(event);
+    const input = parseJson(event);
+    const action = String(input.action || "");
+
+    /* Authorized per action, before anything is read or written. */
+    const allowed = ["place", "withdraw"].includes(action) ? PLACERS : REVIEWERS;
+    const staff = await requireStaff(event, allowed);
+    cookies = staff.auth.refreshedSession ? sessionCookies(staff.auth.refreshedSession) : [];
+
+    let result;
+    if (action === "reserve_upload") result = await reserveUpload({ staff, input });
+    else if (action === "confirm_upload") result = await confirmUpload({ staff, input });
+    else if (action === "record_gate") result = await recordGate({ staff, input });
+    else if (action === "place") result = await placeAsset({ staff, input });
+    else if (action === "withdraw") result = await withdrawAsset({ staff, input });
+    else throw Object.assign(new Error("unknown_video_action"), { statusCode: 400 });
+
+    return sessionResponse(200, {
+      action,
+      /* Repeated on every write so no response can be read as a release decision that was
+         not made by the gate. */
+      grantsApproval: false,
+      ...result,
+    }, cookies);
+  } catch (error) {
+    const status = Number(error?.statusCode) || 500;
+    if (status >= 500) console.error("Admin video endpoint error", error?.message);
+    return sessionResponse(status, {
+      error: status >= 500 ? "admin_video_unavailable" : error.message,
+      ...(status >= 500 ? {} : detailOf(error)),
+    }, cookies);
+  }
+};

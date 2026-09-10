@@ -3,12 +3,25 @@
   publish = "dist"
 
 [functions]
-  included_files = ["private-media/texas/*.txt"]
+  included_files = [
+    "private-media/texas/*.txt",
+    # The administration console reconciles the catalog against the files that describe it,
+    # so the functions bundle has to carry them. They are read, never written.
+    "public/statecourse/data/course-catalog.json",
+    "config/regulatory-course-versions.json",
+    "config/state-regulatory-controls.json",
+    "video-production/portfolio.json",
+  ]
 
 [[headers]]
   for = "/*"
   [headers.values]
-    Content-Security-Policy = "default-src 'self'; base-uri 'self'; form-action 'self'; frame-ancestors 'self'; frame-src https://*.cloudflarestream.com; img-src 'self' data:; script-src 'self' https://embed.cloudflarestream.com; style-src 'self'; connect-src 'self'"
+    Content-Security-Policy = "default-src 'self'; base-uri 'self'; form-action 'self'; frame-ancestors 'self'; frame-src https://*.cloudflarestream.com; img-src 'self' data:; script-src 'self' https://embed.cloudflarestream.com; style-src 'self'; connect-src 'self' https://upload.videodelivery.net"
+    # connect-src carries Cloudflare's direct-upload host so the administration console can
+    # send a video file straight from the operator's machine to Cloudflare. The alternative
+    # is relaying a 25 MB upload through a function, and the alternative to that is the
+    # status quo, where only a developer can add a video. It is an upload endpoint only: no
+    # script, style, frame or image may load from it.
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
     X-Frame-Options = "SAMEORIGIN"
@@ -140,6 +153,16 @@
   status = 200
 
 [[redirects]]
+  from = "/admin/console"
+  to = "/admin/console/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/admin/console/"
+  to = "/admin/console/index.html"
+  status = 200
+
+[[redirects]]
   from = "/api/student/session"
   to = "/.netlify/functions/student-session"
   status = 200
@@ -227,4 +250,19 @@
 [[redirects]]
   from = "/api/admin/michigan-course"
   to = "/.netlify/functions/admin-michigan-course"
+  status = 200
+
+[[redirects]]
+  from = "/api/admin/session"
+  to = "/.netlify/functions/admin-session"
+  status = 200
+
+[[redirects]]
+  from = "/api/admin/catalog"
+  to = "/.netlify/functions/admin-catalog"
+  status = 200
+
+[[redirects]]
+  from = "/api/admin/video"
+  to = "/.netlify/functions/admin-video"
   status = 200

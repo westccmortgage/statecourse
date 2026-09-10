@@ -45,7 +45,22 @@ test("production routes, CSP and protected transcript packaging are present", ()
   assert.match(netlify, /from = "\/api\/stream\/transcript"/);
   assert.match(netlify, /frame-src https:\/\/\*\.cloudflarestream\.com/);
   assert.match(netlify, /script-src 'self' https:\/\/embed\.cloudflarestream\.com/);
-  assert.match(netlify, /included_files = \["private-media\/texas\/\*\.txt"\]/);
+  /* Matched inside the included_files array rather than against a one-line spelling of it:
+     the administration console added its own read-only sources to the same list, and an
+     assertion that breaks on formatting stops testing what it is for. */
+  const included = netlify.match(/included_files = \[([\s\S]*?)\]/);
+  assert.ok(included, "the functions bundle declares no included_files");
+  assert.match(included[1], /"private-media\/texas\/\*\.txt"/);
+
+  /* What the console was allowed to widen, and nothing more. connect-src carries exactly
+     'self' and Cloudflare's upload host; script-src, frame-src and the rest are untouched.
+     A future change that adds a second host here has to change this line too. */
+  const csp = netlify.match(/Content-Security-Policy = "([^"]+)"/);
+  assert.ok(csp, "no Content-Security-Policy is set");
+  const connect = csp[1].split(";").map((part) => part.trim()).find((part) => part.startsWith("connect-src"));
+  assert.equal(connect, "connect-src 'self' https://upload.videodelivery.net");
+  assert.equal(csp[1].includes("'unsafe-inline'"), false);
+  assert.equal(csp[1].includes("'unsafe-eval'"), false);
 });
 
 test("Stream endpoints reject cross-site requests before releasing protected media", () => {

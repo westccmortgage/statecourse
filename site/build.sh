@@ -45,6 +45,9 @@ test -f dist/admin/michigan-course/index.html
 test -f dist/admin/michigan-course/michigan-course.js
 test -f dist/admin/michigan-review/index.html
 test -f dist/admin/michigan-review/michigan-review.js
+test -f dist/admin/console/index.html
+test -f dist/admin/console/console.js
+test -f dist/admin/console/console.css
 test -f dist/student/index.html
 test -f dist/student/sign-in/index.html
 test -f dist/student/register/index.html

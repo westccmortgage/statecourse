@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="robots" content="noindex,nofollow" />
+    <meta name="theme-color" content="#172536" />
+    <title>Administration Console | StateCourse</title>
+    <link rel="icon" href="../../favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="console.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to console</a>
+    <header class="admin-header">
+      <a class="brand" href="../">
+        <span aria-hidden="true">SC</span>
+        <strong>StateCourse</strong>
+        <small>Administration Console</small>
+      </a>
+      <nav aria-label="Administration">
+        <a href="../">Regulatory cockpit</a>
+        <a href="../payments/">Payments</a>
+      </nav>
+    </header>
+
+    <div class="draft-banner" role="note">
+      This console records and reports. It grants no regulator approval, opens no enrollment,
+      and awards no course credit.
+    </div>
+
+    <main id="main" class="shell">
+      <section class="page-heading">
+        <div>
+          <p class="eyebrow">Operations</p>
+          <h1>Catalog and course video</h1>
+          <p>
+            Signing in proves who you are. What you may do comes from the role bindings recorded
+            against your account, and a shared administrator token is not accepted here.
+          </p>
+        </div>
+        <aside class="session-card" aria-labelledby="sessionHeading">
+          <p class="eyebrow">Named session</p>
+          <h2 id="sessionHeading">Owner &amp; staff sign-in</h2>
+          <p id="sessionState" role="status" aria-live="polite">Checking the signed-in account…</p>
+          <form id="signInForm" class="sign-in" hidden>
+            <label>
+              <span>Email</span>
+              <input id="signInEmail" name="email" type="email" autocomplete="username" required />
+            </label>
+            <label>
+              <span>Password</span>
+              <input id="signInPassword" name="password" type="password" autocomplete="current-password" required />
+            </label>
+            <button type="submit">Sign in</button>
+          </form>
+          <div id="sessionRoles" class="roles" hidden></div>
+          <button id="signOut" class="secondary-button" type="button" hidden>Sign out</button>
+        </aside>
+      </section>
+
+      <div id="console" hidden>
+        <nav class="tabs" aria-label="Console sections">
+          <button type="button" class="tab" data-panel="catalogPanel" aria-selected="true">Catalog</button>
+          <button type="button" class="tab" data-panel="videoPanel" aria-selected="false">Course video</button>
+        </nav>
+
+        <section id="catalogPanel" class="panel" aria-label="Catalog">
+          <div class="panel-heading">
+            <h2>What each system says</h2>
+            <button id="reloadCatalog" class="secondary-button" type="button">Reload</button>
+          </div>
+          <p class="note">
+            An inventory, not an approval list. Where the public catalog, the checkout catalog and
+            the database disagree, the disagreement is shown rather than resolved.
+          </p>
+          <p id="catalogMessage" class="message" role="status" aria-live="polite">Loading…</p>
+          <div id="catalogSummary" class="summary-grid" hidden></div>
+          <div id="catalogSources" class="sources" hidden></div>
+          <div class="table-wrap">
+            <table id="catalogTable" class="data-table" hidden>
+              <caption class="visually-hidden">Course records across every catalog source</caption>
+              <thead>
+                <tr>
+                  <th scope="col">State</th>
+                  <th scope="col">Course</th>
+                  <th scope="col">Public catalog</th>
+                  <th scope="col">Checkout</th>
+                  <th scope="col">Courses table</th>
+                  <th scope="col">Video</th>
+                  <th scope="col">Disagreements</th>
+                </tr>
+              </thead>
+              <tbody id="catalogRows"></tbody>
+            </table>
+          </div>
+        </section>
+
+        <section id="videoPanel" class="panel" aria-label="Course video" hidden>
+          <div class="panel-heading">
+            <h2>Upload, review, place</h2>
+            <button id="reloadVideo" class="secondary-button" type="button">Reload</button>
+          </div>
+          <p class="note">
+            A video reaches students only when every release condition currently passes. The
+            database refuses the placement otherwise, so this page cannot talk it into one.
+          </p>
+          <p id="videoMessage" class="message" role="status" aria-live="polite">Loading…</p>
+
+          <form id="reserveForm" class="card form-card">
+            <h3>1 &middot; Reserve an upload</h3>
+            <p class="note">
+              Cloudflare returns a one-time URL for a single video. The file goes from this
+              machine to Cloudflare; the API token stays on the server.
+            </p>
+            <div class="field-grid">
+              <label>
+                <span>Course</span>
+                <select id="reserveCourse" name="courseId" required>
+                  <option value="">Select a course…</option>
+                </select>
+              </label>
+              <label>
+                <span>Delivery unit</span>
+                <select id="reserveDelivery" name="deliveryId" required disabled>
+                  <option value="">Select a course first</option>
+                </select>
+              </label>
+              <label>
+                <span>Instruction screen</span>
+                <select id="reserveScreen" name="screenId" required disabled>
+                  <option value="">Select a delivery unit first</option>
+                </select>
+              </label>
+              <label>
+                <span>Asset key</span>
+                <input id="reserveAssetKey" name="assetKey" pattern="[a-z0-9]+(-[a-z0-9]+)*" required />
+              </label>
+              <label>
+                <span>Label shown to students</span>
+                <input id="reserveLabel" name="label" minlength="3" maxlength="200" required />
+              </label>
+              <label>
+                <span>Duration (seconds)</span>
+                <input id="reserveDuration" name="durationSeconds" type="number" min="1" max="7200" step="0.001" required />
+              </label>
+              <label>
+                <span>Transcript path</span>
+                <input id="reserveTranscript" name="transcriptPath" placeholder="private-media/…" required />
+              </label>
+              <label>
+                <span>Captions path</span>
+                <input id="reserveCaptions" name="captionsPath" placeholder="private-media/…" required />
+              </label>
+              <label class="file-field">
+                <span>Video file</span>
+                <input id="reserveFile" name="file" type="file" accept="video/mp4,video/*" required />
+              </label>
+            </div>
+            <button type="submit">Reserve and upload</button>
+            <p id="uploadProgress" class="progress" role="status" aria-live="polite" hidden></p>
+          </form>
+
+          <div id="assetList" class="asset-list"></div>
+        </section>
+      </div>
+    </main>
+
+    <script src="console.js" type="module"></script>
+  </body>
+</html>

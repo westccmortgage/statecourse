@@ -40,11 +40,52 @@ export function requireStreamSameOrigin(event, { allowGet = false } = {}) {
   fail("origin_not_allowed", 403);
 }
 
+/*
+ * Where an asset's delivery facts come from.
+ *
+ * Two registries now describe the same kind of thing. config/stream-media.mjs is the
+ * hand-edited one the reviewed Texas videos use; console_video_delivery is the database view
+ * the administration console writes, and it lists only assets whose release gate is complete
+ * and whose placement stands. The console is preferred where it has an entry, so a video
+ * released through it needs no code change and no environment variable.
+ *
+ * A database that cannot be reached falls back to the code registry rather than failing.
+ * Students watching an already-released video must not lose it because a console table is
+ * missing or Supabase is briefly unavailable; the console route simply has nothing to say
+ * about that asset yet.
+ */
+async function resolveMedia(assetKey) {
+  try {
+    const rows = await dbRequest(
+      `console_video_delivery?asset_key=eq.${encodeURIComponent(assetKey)}`
+        + "&select=asset_key,course_id,delivery_id,screen_id,label,duration_seconds,transcript_path,stream_uid&limit=1",
+    );
+    const row = rows?.[0];
+    if (row) {
+      return {
+        assetKey: row.asset_key,
+        courseId: row.course_id,
+        deliveryId: row.delivery_id,
+        screenId: row.screen_id,
+        label: row.label,
+        durationSeconds: Number(row.duration_seconds),
+        transcriptFile: row.transcript_path,
+        streamUid: row.stream_uid,
+        source: "admin_console",
+      };
+    }
+  } catch (error) {
+    console.error("Console video delivery lookup failed; using the code registry", assetKey, error?.message);
+  }
+  const media = streamMedia(assetKey);
+  return media ? { ...media, streamUid: null, source: "code_registry" } : null;
+}
+
 export async function authorizeStreamMedia(studentId, enrollmentId, assetKey) {
   if (!UUID.test(studentId || "")) fail("invalid_student_session", 401);
   if (!UUID.test(enrollmentId || "")) fail("invalid_enrollment", 400);
   if (!ASSET_KEY.test(assetKey || "")) fail("unknown_stream_asset", 404);
-  const media = streamMedia(assetKey);
+  const media = await resolveMedia(assetKey);
   if (!media) fail("unknown_stream_asset", 404);
 
   const rows = await dbRequest(
@@ -130,7 +171,9 @@ export async function signStreamToken(videoUid, keyId, encodedJwk, expiresAt) {
 
 export async function issuePlayback({ auth, enrollmentId, assetKey }) {
   const access = await authorizeStreamMedia(auth.student.id, enrollmentId, assetKey);
-  const uid = videoMap()[assetKey];
+  /* A console-released asset carries its own UID, so no environment variable has to be
+     edited and redeployed to add a video. Code-registry assets keep reading the map. */
+  const uid = access.media.streamUid || videoMap()[assetKey];
   if (!uid) fail("cloudflare_stream_asset_not_configured", 503);
   const keyId = requiredEnvironment("CLOUDFLARE_STREAM_KEY_ID");
   const expiresAt = Math.floor(Date.now() / 1000) + TOKEN_LIFETIME_SECONDS;
