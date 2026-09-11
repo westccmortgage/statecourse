@@ -159,3 +159,51 @@ test("no Stripe key, price, or account identifier is committed anywhere in the r
   walk(root);
   assert.deepEqual(offenders, [], "secrets and tax identifiers must never be committed");
 });
+
+/**
+ * A COURSE CAN ENTER THE PAYMENT CATALOGUE WITHOUT ANYTHING IN STRIPE BEHIND IT.
+ *
+ * The sandbox was brought up on 19-20 August and docs/payments/stripe-sandbox-state.md recorded a
+ * product and a price for every catalogue course at that moment. Michigan was added to the
+ * catalogue afterwards and got neither, while the document went on saying "All nine catalogue
+ * courses have a product and a price" — a sentence that was true when written and had quietly
+ * stopped being true.
+ *
+ * Nothing broke, because nothing is sellable: every course is submission_draft with no price, so
+ * checkout refuses on the approval gate long before it would reach Stripe. That is exactly why it
+ * went unnoticed, and exactly why it would surface at the worst moment — the first time somebody
+ * priced and approved a course whose product had never been created.
+ *
+ * This compares the payment catalogue against the recorded Stripe inventory and names the courses
+ * that have no product. It does not require every course to have one: a course with no regulator
+ * approval has no business having a price. It requires the DOCUMENT to be honest about which ones
+ * are missing, so the gap is a decision on the page rather than a surprise at the till.
+ */
+test("the recorded Stripe inventory accounts for every course in the payment catalogue", () => {
+  const doc = fs.readFileSync(path.join(root, "docs/payments/stripe-sandbox-state.md"), "utf8");
+  const catalogue = getCourseCatalog().map((course) => course.id);
+  assert.ok(catalogue.length > 0, "the payment catalogue is empty");
+
+  /* A course counts as accounted for if the document either records a Stripe product id for it or
+     names it in the "no Stripe product" list below the table. */
+  const withProduct = catalogue.filter((id) => new RegExp(`\\|\\s*${id}\\s*\\|[^\\n]*prod_[A-Za-z0-9]+`).test(doc));
+  const declaredMissing = catalogue.filter((id) => new RegExp(`^\\s*[-*]\\s*\`${id}\``, "m").test(doc));
+
+  const unaccounted = catalogue.filter((id) => !withProduct.includes(id) && !declaredMissing.includes(id));
+  assert.deepEqual(
+    unaccounted,
+    [],
+    "these catalogue courses have no Stripe product recorded and are not declared as missing in "
+      + "docs/payments/stripe-sandbox-state.md:\n  " + unaccounted.join("\n  ")
+      + "\nEither create the product with scripts/stripe-setup.mjs and record it, or list the course "
+      + "under 'Catalogue courses with no Stripe product' so the omission is deliberate.",
+  );
+
+  /* The document must not claim a count it no longer meets. */
+  const claimed = /All (nine|ten|eleven|twelve|\d+) catalogue courses have a product and a price/.exec(doc);
+  if (claimed) {
+    const words = { nine: 9, ten: 10, eleven: 11, twelve: 12 };
+    const n = words[claimed[1]] ?? Number(claimed[1]);
+    assert.equal(withProduct.length, n, `the document claims ${claimed[1]} courses have a product; ${withProduct.length} do`);
+  }
+});

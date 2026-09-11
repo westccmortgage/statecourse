@@ -3,7 +3,7 @@
 **Account:** StateCourse LLC sandbox (`acct_1U6HpAI5Vlt1VlIg`), **test mode**.
 Everything below is a test-mode object identifier. These are not secrets — they address nothing that holds money, and a test-mode object cannot charge a real card. No key or signing secret appears here or anywhere in this repository.
 
-**Brought up:** 2026-08-19. All nine catalogue courses have a product and a price, reconciled by `scripts/stripe-preflight.mjs --check-stripe`.
+**Brought up:** 2026-08-19. The nine catalogue courses that existed that day have a product and a price, reconciled by `scripts/stripe-preflight.mjs --check-stripe`. The catalogue has grown since; see **Catalogue courses with no Stripe product** below.
 
 ## Products and prices
 
@@ -22,6 +22,25 @@ Everything below is a test-mode object identifier. These are not secrets — the
 **California is priced at $79 per course as of 2026-08-20** — see `docs/payments/california-pricing.md`. The earlier $199 placeholders were archived and replaced. **The six non-California courses still carry the $199 placeholder**, which is not a pricing decision for those states; each will be set when its own pricing is decided. Changing a price means updating `STATECOURSE_PRICE_<KEY>_TEST_CENTS` and re-running the setup script, which archives the old Stripe price and creates a new one — prices are immutable in Stripe so that every past payment keeps pointing at the amount it actually charged.
 
 Lookup keys follow `statecourse_<course id>_test`, which is how preflight finds a price to compare against the configured amount.
+
+## Catalogue courses with no Stripe product
+
+These catalogue courses have **no product and no price**, in either mode:
+
+- `mi-salesperson-prelicensure-40-v1` — entered the payment catalogue after this sandbox was
+  brought up on 2026-08-19.
+
+Nothing is broken by that today. The course is `submission_draft` with enrollment off and no price
+configured, so `evaluateCheckoutEligibility()` refuses it on the approval gate long before anything
+would be asked of Stripe — which is precisely why the omission went unnoticed for three weeks while
+the line above still said all nine catalogue courses were covered.
+
+It is recorded rather than fixed because creating a Stripe product requires a key, and no key exists
+in the build environment by design. **Before Michigan is ever priced or approved, run
+`node scripts/stripe-setup.mjs` for it and add its row to the table above.**
+`tests/stripe-setup-tooling.test.mjs` compares the catalogue against this file and fails on any
+course that is neither in the table nor listed here, so the next course added cannot slip through
+the same way.
 
 ## State product structure
 
