@@ -124,7 +124,20 @@ test("no Stripe key, price, or account identifier is committed anywhere in the r
     { name: "test secret key", re: /sk_test_[A-Za-z0-9]{16,}/ },
     { name: "restricted key", re: /rk_(?:live|test)_[A-Za-z0-9]{16,}/ },
     { name: "webhook signing secret", re: /whsec_[A-Za-z0-9]{16,}/ },
-    { name: "EIN", re: /\b\d{2}-\d{7}\b/ }
+    /* The EIN shape is a heuristic, not a signature, and it collides with ordinary numbering in
+       third-party documents. The Texas Secretary of State's own form-304 instructions print
+       "The FEIN is a 9-digit number (e.g., 12-3456789)" — the IRS's placeholder, in a government
+       document archived here byte-for-byte. Archived primary sources are therefore exempt from
+       THIS pattern only; every key signature below stays in force everywhere, including there.
+       The exemption is safe because those trees hold nothing StateCourse authored: each file is
+       pinned by sha256 in its catalog and re-verified, so our secret cannot appear in one without
+       breaking a hash that a test already checks. */
+    { name: "EIN", re: /\b\d{2}-\d{7}\b/, exemptArchivedSources: true }
+  ];
+  /* Trees holding third-party official documents retrieved verbatim, never StateCourse code. */
+  const archivedSourceTrees = [
+    path.join("texas", "trec-sources"),
+    path.join("texas", "tx-law-of-contracts-30-v1", "sources"),
   ];
   const offenders = [];
   const walk = (dir) => {
@@ -135,8 +148,11 @@ test("no Stripe key, price, or account identifier is committed anywhere in the r
       if (!/\.(mjs|js|ts|json|md|sql|html|css|sh|yml|yaml|txt)$/.test(entry.name)) continue;
       if (full.endsWith(path.join("tests", "stripe-setup-tooling.test.mjs"))) continue;
       const text = fs.readFileSync(full, "utf8");
-      for (const { name, re } of patterns) {
-        if (re.test(text)) offenders.push(`${path.relative(root, full)}: ${name}`);
+      const relative = path.relative(root, full);
+      const isArchivedSource = archivedSourceTrees.some((tree) => relative.startsWith(tree + path.sep));
+      for (const { name, re, exemptArchivedSources } of patterns) {
+        if (exemptArchivedSources && isArchivedSource) continue;
+        if (re.test(text)) offenders.push(`${relative}: ${name}`);
       }
     }
   };

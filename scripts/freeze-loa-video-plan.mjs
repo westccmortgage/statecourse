@@ -38,7 +38,7 @@ const PROD = path.join(HOME, "video-production");
 const OUT = path.join(HOME, "video-plan-freeze.json");
 
 const COURSE_ID = "tx-law-of-agency-30-v1";
-const FREEZE_ID = "LOA-VIDEO-PLAN-FREEZE-2026-09-10-v11";
+const FREEZE_ID = "LOA-VIDEO-PLAN-FREEZE-2026-09-11-v12";
 
 const PREVIOUS_FREEZE = Object.freeze({
   freezeId: "LOA-VIDEO-PLAN-FREEZE-2026-09-10-v10",

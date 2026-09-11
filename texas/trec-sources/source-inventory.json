@@ -3,13 +3,53 @@
   "reproduceWith": "node scripts/texas-source-inventory.mjs",
   "regenerateWith": "node scripts/texas-source-inventory.mjs --write",
   "note": "Every file held under texas/trec-sources, walked recursively. Hashes are recomputed from disk; nothing here is transcribed by hand or carried over from another register.",
-  "fileCount": 146,
-  "totalBytes": 21820299,
+  "fileCount": 157,
+  "totalBytes": 24764520,
   "files": [
     {
       "path": "texas/trec-sources/articles/trec-contracts-page-2026-08-29.html",
       "sha256": "8d07003825e46a4e0b617363641ac3aa75bd44ff61135aa18c7e0210bfa16d71",
       "bytes": 107120
+    },
+    {
+      "path": "texas/trec-sources/articles/trec-licensing-forms-page-2026-09-02.html",
+      "sha256": "c06c0bd65869fa8164a848f70e32b7d8d2fa5a7455498529ac2ab39e5dff55fd",
+      "bytes": 263560
+    },
+    {
+      "path": "texas/trec-sources/articles/trec-provider-exam-passage-rates-2026-09-02.html",
+      "sha256": "242c8020aa7372cfc415e370a21d2b052118d59c6aadef604da4170c35794b2f",
+      "bytes": 153691
+    },
+    {
+      "path": "texas/trec-sources/articles/trec-provider-exam-passage-rates-data-2026-09-02.json",
+      "sha256": "a6280d059945426dee0318ea44a1e6a13021492bfc0d2d8362f83bbd740465cf",
+      "bytes": 8708
+    },
+    {
+      "path": "texas/trec-sources/articles/trec-qe-course-page-2026-09-02.html",
+      "sha256": "cae787de83ec8fdd43771264b664a2df77085d611be04f17dfec4d5e5bc67abe",
+      "bytes": 70121
+    },
+    {
+      "path": "texas/trec-sources/articles/trec-qe-provider-page-2026-09-02.html",
+      "sha256": "1aac968f45ebf59bbe087485fae37ed8c0120c436d9ffca7434b67cf1fd60ab1",
+      "bytes": 88643
+    },
+    {
+      "path": "texas/trec-sources/articles/trec-realm-faq-2026-09-02.html",
+      "sha256": "e017d8707dbab3325838a4908fd22ce5b1311654b64b4aa3bf4577dae14e4219",
+      "bytes": 91102
+    },
+    {
+      "path": "texas/trec-sources/articles/tx-sos-certificate-of-fact-instructions-2026-09-02.html",
+      "sha256": "10008a24663c997ecd0106fab9cf35d1ce8af96922eb137a809b93d4d46a231c",
+      "bytes": 27372
+    },
+    {
+      "path": "texas/trec-sources/articles/tx-sos-form-304-instructions-2026-09-02.html",
+      "sha256": "170652b6a2cefd7775666d5e05dd9dcd726f74852c2fd8c8f6697b81f2a4187b",
+      "bytes": 33225
     },
     {
       "path": "texas/trec-sources/articles/what-changes-2026-buyer-tenant-representation.html",
@@ -302,6 +342,16 @@
       "bytes": 1491257
     },
     {
+      "path": "texas/trec-sources/forms/QE-distance-course-checklist-2023-04-10.pdf",
+      "sha256": "259a3770dbe6bb6e5b68516894ea5e7575666f476a0eba33b8e59a6c10c2ccb3",
+      "bytes": 1017642
+    },
+    {
+      "path": "texas/trec-sources/forms/QE-provider-initial-checklist-2023-04-10.pdf",
+      "sha256": "a6aaf9e5c7c23a107f46d1c8513c6306411be7fd13beb29f0e709046b02873d7",
+      "bytes": 989812
+    },
+    {
       "path": "texas/trec-sources/LOA-1.pdf",
       "sha256": "3fb2206dc9408a80ed7a736d87b43336f8eadf90f75f1540b666640f57344705",
       "bytes": 1380818
@@ -550,6 +600,11 @@
       "path": "texas/trec-sources/texas-register/2026-05-22-title22-proposed-rules.html",
       "sha256": "6c5c97f0c283133b306913198d6c86dacf553de1ac03de31017ea93bda62063b",
       "bytes": 172495
+    },
+    {
+      "path": "texas/trec-sources/texas-register/2026-08-28-title22-adopted-rules.html",
+      "sha256": "2a1d3fa727f592ce4f5066d322f446484528c3aaf36e7e2cc464abccddb74ace",
+      "bytes": 200345
     },
     {
       "path": "texas/trec-sources/trec-rules/531.1.txt",

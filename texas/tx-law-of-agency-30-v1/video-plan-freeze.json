@@ -1,5 +1,5 @@
 {
-  "freezeId": "LOA-VIDEO-PLAN-FREEZE-2026-09-10-v11",
+  "freezeId": "LOA-VIDEO-PLAN-FREEZE-2026-09-11-v12",
   "courseId": "tx-law-of-agency-30-v1",
   "frozenOn": "2026-09-08",
   "generatedBy": "scripts/freeze-loa-video-plan.mjs",
@@ -411,8 +411,8 @@
     },
     "source inventory": {
       "path": "texas/trec-sources/source-inventory.json",
-      "sha256": "df1f2aa5d8eed31dd26c46a3184dc090771825867399ab331d35404878855f69",
-      "bytes": 26256
+      "sha256": "936d000baa61493274131020a9c48851fa7d37f887957071f81f3735ac2c2048",
+      "bytes": 28532
     },
     "block map — module 2 (t02u5-s1)": {
       "path": "config/texas/law-of-agency-module-2-blocks.mjs",

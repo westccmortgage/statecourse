@@ -1,0 +1,430 @@
+{
+  "generatedBy": "scripts/acquire-tx-contract-forms.mjs --write",
+  "sourceListing": "https://www.trec.texas.gov/agency-information/contracts",
+  "retrievedOn": "2026-08-31",
+  "status": "OFFICIAL TREC PDF COPIES HELD. Holding a PDF is not reading it; substantive reliance requires a page/paragraph-level read record.",
+  "formCount": 42,
+  "totalBytes": 22996915,
+  "forms": [
+    {
+      "formId": "39-11",
+      "name": "Amendment to Contract",
+      "effectiveDate": "2026-07-01",
+      "formPageUrl": "https://www.trec.texas.gov/forms/amendment",
+      "pdfUrl": "https://www.trec.texas.gov/sites/default/files/pdf-forms/39-11.pdf",
+      "localCopy": "texas/tx-law-of-contracts-30-v1/sources/forms/39-11.pdf",
+      "sha256": "d12909bcbd014080948eb6f9771231ba1b1d98c64eaf07e87ab0faa1118b8d36",
+      "bytes": 530831
+    },
+    {
+      "formId": "25-17",
+      "name": "Farm and Ranch Contract",
+      "effectiveDate": "2026-07-01",
+      "formPageUrl": "https://www.trec.texas.gov/forms/farm-and-ranch-contract-0",
+      "pdfUrl": "https://www.trec.texas.gov/sites/default/files/pdf-forms/25-17_4.pdf",
+      "localCopy": "texas/tx-law-of-contracts-30-v1/sources/forms/25-17.pdf",
+      "sha256": "91f945fe6e4067a5277e4140c601ac3c79447dcc53cbf0222527b1c4eb5ef220",
+      "bytes": 1954519
+    },
+    {
+      "formId": "24-20",
+      "name": "New Home Contract (Completed Construction)",
+      "effectiveDate": "2026-07-01",
+      "formPageUrl": "https://www.trec.texas.gov/forms/new-home-contract-completed-construction-0",
+      "pdfUrl": "https://www.trec.texas.gov/sites/default/files/pdf-forms/24-20_0.pdf",
+      "localCopy": "texas/tx-law-of-contracts-30-v1/sources/forms/24-20.pdf",
+      "sha256": "b107369a87d37dd8c2881c98bd7c09ca5593141e5c924dbf4860ac1b25a37eb6",
+      "bytes": 1348774
+    },
+    {
+      "formId": "23-20",
+      "name": "New Home Contract (Incomplete Construction)",
+      "effectiveDate": "2026-07-01",
+      "formPageUrl": "https://www.trec.texas.gov/forms/new-home-contract-incomplete-construction-0",
+      "pdfUrl": "https://www.trec.texas.gov/sites/default/files/pdf-forms/23-20_3.pdf",
+      "localCopy": "texas/tx-law-of-contracts-30-v1/sources/forms/23-20.pdf",
+      "sha256": "9a2fb73f06250f6d65d113bfcdc995bde0a5ea63711500b5b58b84b055f66fbd",
+      "bytes": 2190998
+    },
+    {
+      "formId": "20-19",
+      "name": "One to Four Family Residential Contract (Resale)",
+      "effectiveDate": "2026-07-01",
+      "formPageUrl": "https://www.trec.texas.gov/forms/one-four-family-residential-contract-resale",
+      "pdfUrl": "https://www.trec.texas.gov/sites/default/files/pdf-forms/20-19_4.pdf",
+      "localCopy": "texas/tx-law-of-contracts-30-v1/sources/forms/20-19.pdf",
+      "sha256": "3f458518e9e01fc9c84cab420dcd0ce9793113c4b356ed5caf7a2fb1bdef2ca5",
+      "bytes": 1687927
+    },
+    {
+      "formId": "30-18",
+      "name": "Residential Condominium Contract (Resale)",
+      "effectiveDate": "2026-07-01",
+      "formPageUrl": "https://www.trec.texas.gov/forms/residential-condominium-contract-resale-0",
+      "pdfUrl": "https://www.trec.texas.gov/sites/default/files/pdf-forms/30-18_0.pdf",
+      "localCopy": "texas/tx-law-of-contracts-30-v1/sources/forms/30-18.pdf",
+      "sha256": "52f61f800ccac58b8cb219d9ef1972bab5898801cda4cbc28ea84260a15ad1d8",
+      "bytes": 843334
+    },
+    {
+      "formId": "9-18",
+      "name": "Unimproved Property Contract",
+      "effectiveDate": "2026-07-01",
+      "formPageUrl": "https://www.trec.texas.gov/forms/unimproved-property-contract-0",
+      "pdfUrl": "https://www.trec.texas.gov/sites/default/files/pdf-forms/9-18_1.pdf",
+      "localCopy": "texas/tx-law-of-contracts-30-v1/sources/forms/9-18.pdf",
+      "sha256": "1019b1edb77ae7998fe19f941e62ec959a46b0b13e6af3bff9bd2ac452e8478c",
+      "bytes": 1262627
+    },
+    {
+      "formId": "49-1",
+      "name": "Addendum Concerning Right to Terminate Due to Lender's Appraisal",
+      "effectiveDate": "2019-03-01",
+      "formPageUrl": "https://www.trec.texas.gov/forms/addendum-concerning-right-terminate-due-lenders-appraisal-0",
+      "pdfUrl": "https://www.trec.texas.gov/sites/default/files/pdf-forms/49-1.pdf",
+      "localCopy": "texas/tx-law-of-contracts-30-v1/sources/forms/49-1.pdf",
+      "sha256": "9cc7f9508a282830265dad72bdbef414afc3a78915c991b7e34d480d755e4b23",
+      "bytes": 314033
+    },
+    {
+      "formId": "53-0",
+      "name": "Addendum Containing Notice of Obligation to Pay Improvement District Assessment",
+      "effectiveDate": "2021-09-01",
+      "formPageUrl": "https://www.trec.texas.gov/forms/addendum-containing-notice-obligation-pay-improvement-district-assesment",
+      "pdfUrl": "https://www.trec.texas.gov/sites/default/files/pdf-forms/53-0.pdf",
+      "localCopy": "texas/tx-law-of-contracts-30-v1/sources/forms/53-0.pdf",
+      "sha256": "558d4570829a991127f5d0dabb7712637b21b1e50048e7dc1539dffce8b10f06",
+      "bytes": 274759
+    },
+    {
+      "formId": "11-9",
+      "name": "Addendum for \"Back-Up\" Contract",
+      "effectiveDate": "2026-07-01",
+      "formPageUrl": "https://www.trec.texas.gov/forms/addendum-back-contract",
+      "pdfUrl": "https://www.trec.texas.gov/sites/default/files/pdf-forms/11-9.pdf",
+      "localCopy": "texas/tx-law-of-contracts-30-v1/sources/forms/11-9.pdf",
+      "sha256": "29a4cc70af94061655715bc19b389de0b1891112d621d481d3fe0d9cf10ea52c",
+      "bytes": 289220
+    },
+    {
+      "formId": "48-1",
+      "name": "Addendum for Authorizing Hydrostatic Testing",
+      "effectiveDate": "2020-03-01",
+      "formPageUrl": "https://www.trec.texas.gov/forms/addendum-authorizing-hydrostatic-testing-0",
+      "pdfUrl": "https://www.trec.texas.gov/sites/default/files/pdf-forms/48-1.pdf",
+      "localCopy": "texas/tx-law-of-contracts-30-v1/sources/forms/48-1.pdf",
+      "sha256": "3eb6e7ced0723ceaab6bef2645fcd7868ee3c2cd2734a6a5f03dbe049bd5df6a",
+      "bytes": 257002
+    },
+    {
+      "formId": "33-2",
+      "name": "Addendum for Coastal Area Property",
+      "effectiveDate": "2011-12-05",
+      "formPageUrl": "https://www.trec.texas.gov/forms/addendum-coastal-area-property",
+      "pdfUrl": "https://www.trec.texas.gov/sites/default/files/pdf-forms/33-2.pdf",
+      "localCopy": "texas/tx-law-of-contracts-30-v1/sources/forms/33-2.pdf",
+      "sha256": "2520759ca3f9aca5997bcc0542cab5775a3ff4435e35d3b06dc54391e21330e6",
+      "bytes": 126566
+    },
+    {
+      "formId": "47-0",
+      "name": "Addendum for Property in a Propane Gas System Service Area",
+      "effectiveDate": "2014-02-01",
+      "formPageUrl": "https://www.trec.texas.gov/forms/addendum-property-propane-gas-system-service-area",
+      "pdfUrl": "https://www.trec.texas.gov/sites/default/files/pdf-forms/47-0.pdf",
+      "localCopy": "texas/tx-law-of-contracts-30-v1/sources/forms/47-0.pdf",
+      "sha256": "e893eafaeb822d865b20802cf91def5d41d735f0a966d7636450ce5831f6601c",
+      "bytes": 208951
+    },
+    {
+      "formId": "34-4",
+      "name": "Addendum for Property Located Seaward of the Gulf Intracoastal Waterway",
+      "effectiveDate": "2011-12-05",
+      "formPageUrl": "https://www.trec.texas.gov/forms/addendum-property-located-seaward-gulf-intercoastal-waterway",
+      "pdfUrl": "https://www.trec.texas.gov/sites/default/files/pdf-forms/34-4.pdf",
+      "localCopy": "texas/tx-law-of-contracts-30-v1/sources/forms/34-4.pdf",
+      "sha256": "83b2edf03b018d5e8f0740ed8021ccc1aec72f132d33c5e36b5d1a97963317b6",
+      "bytes": 186297
+    },
+    {
+      "formId": "36-11",
+      "name": "Addendum for Property Subject to Mandatory Membership in a Property Owners Association",
+      "effectiveDate": "2026-07-01",
+      "formPageUrl": "https://www.trec.texas.gov/forms/addendum-property-subject-mandatory-membership-property-owners-association",
+      "pdfUrl": "https://www.trec.texas.gov/sites/default/files/pdf-forms/36-11.pdf",
+      "localCopy": "texas/tx-law-of-contracts-30-v1/sources/forms/36-11.pdf",
+      "sha256": "91c142475efc7b6be5b8d2b2b6d40ec30aed4d65b9981cb70bf94622e02be7eb",
+      "bytes": 314912
+    },
+    {
+      "formId": "12-3",
+      "name": "Addendum for Release of Liability on Assumed Loan and/or Restoration of Seller's VA Entitlement",
+      "effectiveDate": "2011-12-05",
+      "formPageUrl": "https://www.trec.texas.gov/forms/addendum-release-liability-assumed-loan-andor-restoration-sellers-va-entitlement",
+      "pdfUrl": "https://www.trec.texas.gov/sites/default/files/pdf-forms/12-3_0.pdf",
+      "localCopy": "texas/tx-law-of-contracts-30-v1/sources/forms/12-3.pdf",
+      "sha256": "7e688e66da7127e9940ab95faf252f30ffd5cf8ba59f732f8133220f412719ee",
+      "bytes": 148122
+    },
+    {
+      "formId": "44-3",
+      "name": "Addendum for Reservation of Oil, Gas, and Other Minerals",
+      "effectiveDate": "2023-02-01",
+      "formPageUrl": "https://www.trec.texas.gov/forms/addendum-reservation-oil-gas-and-other-minerals-0",
+      "pdfUrl": "https://www.trec.texas.gov/sites/default/files/pdf-forms/44-3_0.pdf",
+      "localCopy": "texas/tx-law-of-contracts-30-v1/sources/forms/44-3.pdf",
+      "sha256": "41bec2ed996437586186077d73ee822926f9961026accc940b5e197c1f7d9c02",
+      "bytes": 125120
+    },
+    {
+      "formId": "10-6",
+      "name": "Addendum for Sale of Other Property by Buyer",
+      "effectiveDate": "2011-12-05",
+      "formPageUrl": "https://www.trec.texas.gov/forms/addendum-sale-other-property-buyer",
+      "pdfUrl": "https://www.trec.texas.gov/sites/default/files/pdf-forms/10-6.pdf",
+      "localCopy": "texas/tx-law-of-contracts-30-v1/sources/forms/10-6.pdf",
+      "sha256": "b90d16d6950c0f69b87a2c770a0c7947efcfea96f403350a8b71fc23cb8fe611",
+      "bytes": 43880
+    },
+    {
+      "formId": "60-0",
+      "name": "Addendum for Section 1031 Exchange",
+      "effectiveDate": "2025-01-03",
+      "formPageUrl": "https://www.trec.texas.gov/forms/addendum-section-1031-exchange",
+      "pdfUrl": "https://www.trec.texas.gov/sites/default/files/pdf-forms/60-0.pdf",
+      "localCopy": "texas/tx-law-of-contracts-30-v1/sources/forms/60-0.pdf",
+      "sha256": "9641b9e825cd68d9e4125c0456df6f81c14b9aa456367465dbe479588fac427b",
+      "bytes": 299882
+    },
+    {
+      "formId": "56-0",
+      "name": "Addendum for Seller's Disclosure of Information on Lead-Based Paint and Lead-Based Paint Hazards as Required by Federal Law",
+      "effectiveDate": "2026-05-28",
+      "formPageUrl": "https://www.trec.texas.gov/forms/addendum-sellers-disclosure-information-lead-based-paint-and-lead-based-paint-hazards-0",
+      "pdfUrl": "https://www.trec.texas.gov/sites/default/files/pdf-forms/56-0.pdf",
+      "localCopy": "texas/tx-law-of-contracts-30-v1/sources/forms/56-0.pdf",
+      "sha256": "515bda0aa4b834e55b0fe894378e8ce200c9c3547c81fcb11bf1019107dbf868",
+      "bytes": 417001
+    },
+    {
+      "formId": "52-1",
+      "name": "Addendum Regarding Fixture Leases",
+      "effectiveDate": "2023-02-01",
+      "formPageUrl": "https://www.trec.texas.gov/forms/addendum-regarding-fixture-leases-0",
+      "pdfUrl": "https://www.trec.texas.gov/sites/default/files/pdf-forms/52-1_0.pdf",
+      "localCopy": "texas/tx-law-of-contracts-30-v1/sources/forms/52-1.pdf",
+      "sha256": "728a54265532f780368853ee21ab91b8bd950285512707e6295d5c28fd603ee3",
+      "bytes": 945700
+    },
+    {
+      "formId": "51-1",
+      "name": "Addendum Regarding Residential Leases",
+      "effectiveDate": "2023-02-01",
+      "formPageUrl": "https://www.trec.texas.gov/forms/addendum-regarding-residential-leases-0",
+      "pdfUrl": "https://www.trec.texas.gov/sites/default/files/pdf-forms/51-1_0.pdf",
+      "localCopy": "texas/tx-law-of-contracts-30-v1/sources/forms/51-1.pdf",
+      "sha256": "5d62b3e536a3d56ee7fe72a0eb9eb7224e1fcbb90454527030c8b8ff9da774a8",
+      "bytes": 1489563
+    },
+    {
+      "formId": "16-7",
+      "name": "Buyer's Temporary Residential Lease",
+      "effectiveDate": "2026-01-05",
+      "formPageUrl": "https://www.trec.texas.gov/forms/buyers-temporary-residential-lease",
+      "pdfUrl": "https://www.trec.texas.gov/sites/default/files/pdf-forms/16-7.pdf",
+      "localCopy": "texas/tx-law-of-contracts-30-v1/sources/forms/16-7.pdf",
+      "sha256": "6692db491db42fde7b78652c49c3f152433cf5a9f3be41668e180ae772a7702f",
+      "bytes": 893512
+    },
+    {
+      "formId": "28-2",
+      "name": "Environmental Assessment, Threatened of Endangered Species, and Wetlands Addendum",
+      "effectiveDate": "2011-12-05",
+      "formPageUrl": "https://www.trec.texas.gov/forms/environmental-assessment-threatened-endangered-species-and-wetlands-addendum",
+      "pdfUrl": "https://www.trec.texas.gov/sites/default/files/pdf-forms/28-2.pdf",
+      "localCopy": "texas/tx-law-of-contracts-30-v1/sources/forms/28-2.pdf",
+      "sha256": "dc2b0d3200d6d508f8de687225cbbcaadb1fb66f1b26f33ced4c1d04259016ff",
+      "bytes": 100825
+    },
+    {
+      "formId": "41-3",
+      "name": "Loan Assumption Addendum",
+      "effectiveDate": "2023-02-01",
+      "formPageUrl": "https://www.trec.texas.gov/forms/loan-assumption-addendum-0",
+      "pdfUrl": "https://www.trec.texas.gov/sites/default/files/pdf-forms/41-3_0.pdf",
+      "localCopy": "texas/tx-law-of-contracts-30-v1/sources/forms/41-3.pdf",
+      "sha256": "4d5874a3cb997686533cd095a92fd8da9b04fddb56e1acebc128658d833310f7",
+      "bytes": 120205
+    },
+    {
+      "formId": "57-0",
+      "name": "Non-Realty Items Addendum",
+      "effectiveDate": "2025-09-03",
+      "formPageUrl": "https://www.trec.texas.gov/forms/non-realty-items-addendum",
+      "pdfUrl": "https://www.trec.texas.gov/sites/default/files/pdf-forms/57-0_1.pdf",
+      "localCopy": "texas/tx-law-of-contracts-30-v1/sources/forms/57-0.pdf",
+      "sha256": "1a170035d3e982c9b61c81aa7b0a6eabd53b09b8ca6061ccf0b136c875909ade",
+      "bytes": 418962
+    },
+    {
+      "formId": "26-8",
+      "name": "Seller Financing Addendum",
+      "effectiveDate": "2023-02-01",
+      "formPageUrl": "https://www.trec.texas.gov/forms/seller-financing-addendum-0",
+      "pdfUrl": "https://www.trec.texas.gov/sites/default/files/pdf-forms/26-8_0.pdf",
+      "localCopy": "texas/tx-law-of-contracts-30-v1/sources/forms/26-8.pdf",
+      "sha256": "56ae8796d467552ca699178b0f3019d65a125fba84f1acf125f8fbc5d5de0399",
+      "bytes": 162465
+    },
+    {
+      "formId": "15-7",
+      "name": "Seller's Temporary Residential Lease",
+      "effectiveDate": "2026-01-05",
+      "formPageUrl": "https://www.trec.texas.gov/forms/sellers-temporary-residential-lease",
+      "pdfUrl": "https://www.trec.texas.gov/sites/default/files/pdf-forms/15-7.pdf",
+      "localCopy": "texas/tx-law-of-contracts-30-v1/sources/forms/15-7.pdf",
+      "sha256": "7b493c3ee665808eda55d36ac291ae8a469d0cb8be18d40c2bc981cacec61646",
+      "bytes": 761930
+    },
+    {
+      "formId": "45-2",
+      "name": "Short Sale Addendum",
+      "effectiveDate": "2021-04-01",
+      "formPageUrl": "https://www.trec.texas.gov/forms/short-sale-addendum-0",
+      "pdfUrl": "https://www.trec.texas.gov/sites/default/files/pdf-forms/45-2_1.pdf",
+      "localCopy": "texas/tx-law-of-contracts-30-v1/sources/forms/45-2.pdf",
+      "sha256": "957bdfcd8b91670731c826d8b0744e445b60a4804cbaee1ab926d40ed69da0ba",
+      "bytes": 80126
+    },
+    {
+      "formId": "40-11",
+      "name": "Third Party Financing Addendum",
+      "effectiveDate": "2025-01-03",
+      "formPageUrl": "https://www.trec.texas.gov/forms/third-party-financing-addendum-0",
+      "pdfUrl": "https://www.trec.texas.gov/sites/default/files/pdf-forms/40-11.pdf",
+      "localCopy": "texas/tx-law-of-contracts-30-v1/sources/forms/40-11.pdf",
+      "sha256": "98976d5b0d5f79aa775c7be641965c630578edd9c3fd69dec10532137f4cebe5",
+      "bytes": 521653
+    },
+    {
+      "formId": "32-5",
+      "name": "Condominium Resale Certificate",
+      "effectiveDate": "2024-11-25",
+      "formPageUrl": "https://www.trec.texas.gov/forms/condominium-resale-certificate-0",
+      "pdfUrl": "https://www.trec.texas.gov/sites/default/files/pdf-forms/32-5.pdf",
+      "localCopy": "texas/tx-law-of-contracts-30-v1/sources/forms/32-5.pdf",
+      "sha256": "b0566486b8458dbeb455e5dc4f909beb14a303681112096fc0b444f43495ad54",
+      "bytes": 411829
+    },
+    {
+      "formId": "RSC-4",
+      "name": "Disclosure of Relationship with Residential Service Company",
+      "effectiveDate": "2023-06-11",
+      "formPageUrl": "https://www.trec.texas.gov/forms/disclosure-relationship-residential-service-company",
+      "pdfUrl": "https://www.trec.texas.gov/sites/default/files/pdf-forms/RSC-4_1.pdf",
+      "localCopy": "texas/tx-law-of-contracts-30-v1/sources/forms/RSC-4.pdf",
+      "sha256": "d397b76280f224ed9d1517998e9d86a97ee4ba320a4f43ed9bc51aa08b634602",
+      "bytes": 753088
+    },
+    {
+      "formId": "54-1",
+      "name": "Landlord's Floodplain and Flood Notice",
+      "effectiveDate": "2025-11-26",
+      "formPageUrl": "https://www.trec.texas.gov/forms/landlords-floodplain-and-flood-notice-0",
+      "pdfUrl": "https://www.trec.texas.gov/sites/default/files/pdf-forms/54-1.pdf",
+      "localCopy": "texas/tx-law-of-contracts-30-v1/sources/forms/54-1.pdf",
+      "sha256": "60e012e2c135302a3e67dba8f907ba5c1e1e5e875f4886b9f38b1ac8eba6c369",
+      "bytes": 310559
+    },
+    {
+      "formId": "38-8",
+      "name": "Notice of Buyer's Termination of Contract",
+      "effectiveDate": "2025-04-01",
+      "formPageUrl": "https://www.trec.texas.gov/forms/notice-buyers-termination-contract",
+      "pdfUrl": "https://www.trec.texas.gov/sites/default/files/pdf-forms/38-8.pdf",
+      "localCopy": "texas/tx-law-of-contracts-30-v1/sources/forms/38-8.pdf",
+      "sha256": "bfb9629540c101a2c5b924b2d9a956f3bd0c5370b348b1428a106873f75bb3ef",
+      "bytes": 381816
+    },
+    {
+      "formId": "50-0",
+      "name": "Notice of Seller's Termination of Contract",
+      "effectiveDate": "2018-08-13",
+      "formPageUrl": "https://www.trec.texas.gov/forms/notice-sellers-termination-contract",
+      "pdfUrl": "https://www.trec.texas.gov/sites/default/files/pdf-forms/50-0.pdf",
+      "localCopy": "texas/tx-law-of-contracts-30-v1/sources/forms/50-0.pdf",
+      "sha256": "8583cbad72c9583b1deb88c85ef67d33bf2ddc6b88582b082166d133a7fe24bc",
+      "bytes": 304212
+    },
+    {
+      "formId": "58-0",
+      "name": "Notice to Prospective Buyer",
+      "effectiveDate": "2025-09-03",
+      "formPageUrl": "https://www.trec.texas.gov/forms/notice-prospective-buyer-0",
+      "pdfUrl": "https://www.trec.texas.gov/sites/default/files/pdf-forms/58-0.pdf",
+      "localCopy": "texas/tx-law-of-contracts-30-v1/sources/forms/58-0.pdf",
+      "sha256": "224f8880e5ff3ff0f8e88ec3d0cf1d0f8c7f4839e92c3571edb020bc87a2e44a",
+      "bytes": 221593
+    },
+    {
+      "formId": "59-0",
+      "name": "Notice to Purchaser of Special Taxing or Assessment District",
+      "effectiveDate": "2024-02-12",
+      "formPageUrl": "https://www.trec.texas.gov/forms/notice-purchaser-special-taxing-or-assessment-district",
+      "pdfUrl": "https://www.trec.texas.gov/sites/default/files/pdf-forms/59-0_0.pdf",
+      "localCopy": "texas/tx-law-of-contracts-30-v1/sources/forms/59-0.pdf",
+      "sha256": "b0ef1c29b58538f1afdb7c5e6f631e40f976228d2da955f44ac0a0b275c30a22",
+      "bytes": 135538
+    },
+    {
+      "formId": "REI 7-6",
+      "name": "Property Inspection Report",
+      "effectiveDate": "2022-02-01",
+      "formPageUrl": "https://www.trec.texas.gov/forms/inspection-report-form",
+      "pdfUrl": "https://www.trec.texas.gov/sites/default/files/pdf-forms/REI%207-6_fillable.pdf",
+      "localCopy": "texas/tx-law-of-contracts-30-v1/sources/forms/REI-7-6.pdf",
+      "sha256": "5def4efc765aee953a028446596dd97b9f974cb0851153e15b07447568d3ed4c",
+      "bytes": 620865
+    },
+    {
+      "formId": "61-0",
+      "name": "Seller's Disclosure about Groundwater and Surface Water Rights",
+      "effectiveDate": "2026-07-01",
+      "formPageUrl": "https://www.trec.texas.gov/forms/water-notice-sellers-disclosure-about-groundwater-and-surface-water-rights",
+      "pdfUrl": "https://www.trec.texas.gov/sites/default/files/pdf-forms/61-0.pdf",
+      "localCopy": "texas/tx-law-of-contracts-30-v1/sources/forms/61-0.pdf",
+      "sha256": "34d77987081758f98fc73b20928d671f9a0d1d7373e983d5c650eefeeac9a064",
+      "bytes": 426850
+    },
+    {
+      "formId": "55-1",
+      "name": "Seller's Disclosure Notice",
+      "effectiveDate": "2026-05-28",
+      "formPageUrl": "https://www.trec.texas.gov/forms/sellers-disclosure-notice",
+      "pdfUrl": "https://www.trec.texas.gov/sites/default/files/pdf-forms/55-1.pdf",
+      "localCopy": "texas/tx-law-of-contracts-30-v1/sources/forms/55-1.pdf",
+      "sha256": "cebab031402fef2d1a16b91e6820b778f3e8971764177700706ec3f6ad8f359b",
+      "bytes": 607652
+    },
+    {
+      "formId": "62-0",
+      "name": "Seller's Notice to Buyer of Removal of Contingency Under Addendum for \"Back-Up\" Contract",
+      "effectiveDate": "2026-05-28",
+      "formPageUrl": "https://www.trec.texas.gov/forms/sellers-notice-buyer-removal-contingency-under-addendum-back-contract",
+      "pdfUrl": "https://www.trec.texas.gov/sites/default/files/pdf-forms/62-0.pdf",
+      "localCopy": "texas/tx-law-of-contracts-30-v1/sources/forms/62-0.pdf",
+      "sha256": "908dd716e266026a106a24c6c8d2b63117b8502f7b3fd9c13dc79dad5afe83d5",
+      "bytes": 218786
+    },
+    {
+      "formId": "37-5",
+      "name": "Subdivision Information, Including Resale Certificate for Property Subject to Mandatory Membership in a Property Owners' Association",
+      "effectiveDate": "2014-02-10",
+      "formPageUrl": "https://www.trec.texas.gov/forms/subdivision-information-including-resale-certificate-property-subject-mandatory-membership",
+      "pdfUrl": "https://www.trec.texas.gov/sites/default/files/pdf-forms/37-5.pdf",
+      "localCopy": "texas/tx-law-of-contracts-30-v1/sources/forms/37-5.pdf",
+      "sha256": "99100a945811f647721c5f89962c30fd4165a06cf7dba53d7f43a751ef31f679",
+      "bytes": 284431
+    }
+  ]
+}
