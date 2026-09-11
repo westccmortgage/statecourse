@@ -1,0 +1,299 @@
+{
+  "jurisdiction": "Georgia",
+  "version": "GA-PHASE0-2026-09-02-v3",
+  "verified_as_of": "2026-09-02",
+  "maximum_age_days": 45,
+  "policy": "A URL response is never substantive verification. Exact downloadable artifacts are locked by SHA-256, byte count, MIME type, and file signature. Dynamic official pages are checked for source-specific semantic anchors. Any drift, soft-404, publisher block, skip, or stale reading keeps filing and commerce gates closed.",
+  "allowed_domains": [
+    "grec.state.ga.us",
+    "rules.sos.ga.gov",
+    "gnpec.georgia.gov",
+    "sos.ga.gov",
+    "www2.census.gov",
+    "test-takers.psiexams.com"
+  ],
+  "release_gates": {
+    "broker_filing": "CLOSED",
+    "instructor_filing": "CLOSED",
+    "school_filing": "CLOSED",
+    "course_development": "CLOSED",
+    "advertising": "CLOSED",
+    "enrollment": "CLOSED",
+    "payment": "CLOSED",
+    "credit_reporting": "CLOSED"
+  },
+  "sources": [
+    {
+      "id": "GREC-RECIPROCITY-GUIDE",
+      "title": "Reciprocity for Real Estate Licensees",
+      "authority": "official GREC guidance",
+      "url": "https://grec.state.ga.us/wp-content/uploads/2023/09/Reciprocity-for-Real-Estate-Licensees.pdf",
+      "finalUrl": "https://grec.state.ga.us/wp-content/uploads/2023/09/Reciprocity-for-Real-Estate-Licensees.pdf",
+      "kind": "binary",
+      "expected": {
+        "sha256": "9ef4c656a89892b9891817678e098187dd31bbc6fc130f911f55d9772ad32b5d",
+        "bytes": 173898,
+        "minimumBytes": 100000,
+        "mimeTypes": ["application/pdf"],
+        "magicHex": "25504446"
+      },
+      "manualVerification": {"status": "verified", "date": "2026-09-02", "method": "download, hash, and page-level reading"},
+      "materialClaims": [
+        {"id": "ga-broker-reciprocity-eligibility", "locator": "pp. 1-2, reciprocity eligibility", "claim": "A non-Florida resident may apply for a comparable Georgia license using a current, good-standing out-of-state license obtained by examination; GREC decides issuance.", "reliedOnBy": ["config/georgia/phase-zero.mjs", "georgia/PHASE-0-REPORT.md", "georgia/submission/01-broker-reciprocity-runbook.md"]},
+        {"id": "ga-broker-florida-resident", "locator": "p. 2, Florida resident exception", "claim": "A legal resident of Florida follows the Georgia Law and Practice supplement-examination path rather than ordinary reciprocity.", "reliedOnBy": ["config/georgia/phase-zero.mjs", "georgia/PHASE-0-REPORT.md", "georgia/submission/01-broker-reciprocity-runbook.md"]},
+        {"id": "ga-broker-reciprocal-fee", "locator": "p. 2, fee and term", "claim": "The published non-Florida reciprocal-license filing total is $170 for an initial four-year period.", "reliedOnBy": ["config/georgia/phase-zero.mjs", "georgia/PHASE-0-REPORT.md", "georgia/submission/01-broker-reciprocity-runbook.md"]}
+      ]
+    },
+    {
+      "id": "GREC-RECIPROCAL-APPLICATION",
+      "title": "Real Estate Reciprocal Application, revision 02/2025",
+      "authority": "official GREC form",
+      "url": "https://grec.state.ga.us/wp-content/uploads/pdfs/RealEstate/GRECReciprocalApp.pdf",
+      "finalUrl": "https://grec.state.ga.us/wp-content/uploads/pdfs/RealEstate/GRECReciprocalApp.pdf",
+      "kind": "binary",
+      "expected": {"sha256": "3881ade8c986fea9fddddc305f152be0d375d66966ec22490891c9932e9daefa", "bytes": 930098, "minimumBytes": 500000, "mimeTypes": ["application/pdf"], "magicHex": "25504446"},
+      "manualVerification": {"status": "verified", "date": "2026-09-02", "method": "download, hash, and page-level reading"},
+      "materialClaims": [
+        {"id": "ga-broker-activation-paths", "locator": "license-status and Section C broker-affiliation provisions", "claim": "Inactive issuance is distinct from affiliation, qualifying-broker, and new-firm activation paths; associate-broker activation requires the active Georgia broker to complete and sign Section C and certify a written affiliation agreement.", "reliedOnBy": ["config/georgia/phase-zero.mjs", "georgia/PHASE-0-REPORT.md", "georgia/submission/00-filing-index.md", "georgia/submission/01-broker-reciprocity-runbook.md", "georgia/submission/06-owner-action-checklist.md"]}
+      ]
+    },
+    {
+      "id": "GREC-RULES-2026",
+      "title": "Georgia Real Estate Commission Rules, Department 520, 2026 compilation",
+      "authority": "controlling rules",
+      "url": "https://rules.sos.ga.gov/download_pdf.aspx?dept=Departments&pdf=Department+520+GEORGIA+REAL+ESTATE+COMMISSION&st=GASOS&year=2026",
+      "finalUrl": "https://rules.sos.ga.gov/download_pdf.aspx?dept=Departments&pdf=Department+520+GEORGIA+REAL+ESTATE+COMMISSION&st=GASOS&year=2026",
+      "kind": "binary",
+      "expected": {"sha256": "52eb1a8bacbce4c1bfd4dcd70a6a3e836861ef17e33d1b6c21b6d61811801c9e", "bytes": 1474386, "minimumBytes": 1000000, "mimeTypes": ["application/pdf"], "magicHex": "25504446"},
+      "manualVerification": {"status": "verified", "date": "2026-09-02", "method": "download, hash, and rule-level reading"},
+      "materialClaims": [
+        {"id": "ga-broker-certified-histories", "locator": "Rule 520-1-.04(3)(g)", "claim": "Certification is required from every real-estate licensing jurisdiction and must address examination, prelicense and continuing-education requirements, current good standing, and discipline.", "reliedOnBy": ["config/georgia/phase-zero.mjs", "georgia/submission/01-broker-reciprocity-runbook.md", "georgia/submission/06-owner-action-checklist.md"]},
+        {"id": "ga-broker-criminal-history", "locator": "Rule 520-1-.04(7)", "claim": "The applicant provides a law-enforcement criminal-history report from the residence state issued no more than 60 days before filing, with FBI escalation if it shows another-jurisdiction record or cannot be obtained.", "reliedOnBy": ["config/georgia/phase-zero.mjs", "georgia/submission/01-broker-reciprocity-runbook.md", "georgia/submission/06-owner-action-checklist.md"]},
+        {"id": "ga-current-rule-fees", "locator": "Rule 520-1-.04(1)(a)1, 2, and 6", "claim": "Current-rule arithmetic is $170 for an original individual, $200 for an original firm, and $200 for an original school or instructor; older forms conflict and must be confirmed before payment.", "reliedOnBy": ["config/georgia/phase-zero.mjs", "georgia/PHASE-0-REPORT.md", "georgia/submission/04-school-approval-map.md"]},
+        {"id": "ga-instructor-renewal", "locator": "Rule 520-2-.03(6)", "claim": "Instructor renewal requires 60 instructional hours and 36 instructor-education hours, at least 12 of the 36 through GREC annual school/instructor meetings.", "reliedOnBy": ["config/georgia/phase-zero.mjs", "georgia/PHASE-0-REPORT.md", "georgia/submission/02-instructor-approval-map.md"]},
+        {"id": "ga-school-operational-requirements", "locator": "Rules 520-2-.02(2), (6), and (8), and 520-2-.04(6)", "claim": "The school package includes media/equipment and learning-environment statements or documented applicability, and an approved school must offer a qualifying continuing-education course every calendar year in addition to its prelicense/postlicense offerings.", "reliedOnBy": ["config/georgia/phase-zero.mjs", "georgia/PHASE-0-REPORT.md", "georgia/submission/04-school-approval-map.md", "georgia/submission/06-owner-action-checklist.md"]},
+        {"id": "ga-salesperson-course-core", "locator": "Rule 520-2-.04(4)(a) and (4)(c)", "claim": "The 75-hour salesperson course has 15 specified subject areas, ethics throughout, outside reading and extensive graded written work with student certification, and proficiency demonstrations in applied skills.", "reliedOnBy": ["config/georgia/phase-zero.mjs", "georgia/PHASE-0-REPORT.md", "georgia/submission/05-distance-course-approval-map.md"]},
+        {"id": "ga-course-distance-method", "locator": "Rule 520-2-.04(9) and (10)", "claim": "A distance hour is 60 minutes and a computer-based methodology must be approved before development, with interactivity, mastery, remediation, time validation, instructor access, and records controls.", "reliedOnBy": ["config/georgia/phase-zero.mjs", "georgia/PHASE-0-REPORT.md", "georgia/submission/05-distance-course-approval-map.md"]},
+        {"id": "ga-course-pilot", "locator": "Rule 520-2-.04(10)(c)", "claim": "The documented nine-person pilot includes at least three unlicensed people, three licensed salespersons or CAMs, and six non-educators, with varied computer and real-estate skill levels.", "reliedOnBy": ["config/georgia/phase-zero.mjs", "georgia/PHASE-0-REPORT.md", "georgia/submission/05-distance-course-approval-map.md"]},
+        {"id": "ga-course-final-exam", "locator": "Rule 520-2-.04(11)(d)-(g)", "claim": "The examination-submission safe harbor covers only multiple-choice format, at least four choices, and at least 100 questions; two secure forms, the 13 fixed content buckets plus authorized additional matters, and proctoring are independent requirements.", "reliedOnBy": ["config/georgia/phase-zero.mjs", "georgia/PHASE-0-REPORT.md", "georgia/submission/05-distance-course-approval-map.md"]},
+        {"id": "ga-out-of-state-course-credit", "locator": "Rule 520-2-.04(12)(d)", "claim": "GREC may recognize a corresponding course approved by another jurisdiction when hours are similar and delivery is consistent with Georgia standards; applicant-specific acceptance remains unconfirmed.", "reliedOnBy": ["config/georgia/phase-zero.mjs", "georgia/PHASE-0-REPORT.md", "georgia/submission/02-instructor-approval-map.md"]}
+      ]
+    },
+    {
+      "id": "GREC-PSI-CIB-2026",
+      "title": "Georgia Real Estate Candidate Information Bulletin, effective 07/01/2026",
+      "authority": "official examination-vendor bulletin",
+      "url": "https://test-takers.psiexams.com/api/content/bulletin/11484",
+      "finalUrl": "https://test-takers.psiexams.com/api/content/bulletin/11484",
+      "kind": "binary",
+      "expected": {"sha256": "521a386634de7fdca2977c1616e81e989f2d4602ee22ea79071b85c44a494f56", "bytes": 1027780, "minimumBytes": 500000, "mimeTypes": ["application/pdf", "application/octet-stream"], "magicHex": "25504446"},
+      "manualVerification": {"status": "verified", "date": "2026-09-02", "method": "download, hash, and fee-table reading"},
+      "materialClaims": [
+        {"id": "ga-psi-current-exam-fee", "locator": "fee table, effective 07/01/2026", "claim": "The current PSI bulletin lists $175 for the salesperson, broker, and CAM examination transaction, conflicting with the older reciprocity form's $121 Florida-resident instruction.", "reliedOnBy": ["config/georgia/phase-zero.mjs", "georgia/PHASE-0-REPORT.md", "georgia/submission/01-broker-reciprocity-runbook.md"]}
+      ]
+    },
+    {
+      "id": "GREC-INSTRUCTOR-APPLICATION",
+      "title": "Application for Real Estate Instructor, revision 03/2024",
+      "authority": "official GREC form",
+      "url": "https://grec.state.ga.us/wp-content/uploads/pdfs/schools/RE_Instructor2024.pdf",
+      "finalUrl": "https://grec.state.ga.us/wp-content/uploads/pdfs/schools/RE_Instructor2024.pdf",
+      "kind": "binary",
+      "expected": {"sha256": "08660d4d900f95fb9fa84f4e547ee8b9f5839e5b6667f10840ef5991787d638f", "bytes": 2479711, "minimumBytes": 1000000, "mimeTypes": ["application/pdf"], "magicHex": "25504446"},
+      "manualVerification": {"status": "verified", "date": "2026-09-02", "method": "download, hash, and page-level reading"},
+      "materialClaims": [
+        {"id": "ga-instructor-application", "locator": "pp. 1-7; page 7 links the separate points workbook", "claim": "Instructor approval is a separate application with background, resume, education, experience, and prerequisite evidence; the form states $175 but does not contain the current points worksheet.", "reliedOnBy": ["config/georgia/phase-zero.mjs", "georgia/submission/02-instructor-approval-map.md", "georgia/submission/03-instructor-points-working-sheet.md"]}
+      ]
+    },
+    {
+      "id": "GREC-INSTRUCTOR-POINTS-2024",
+      "title": "Real Estate Instructor Self-Evaluation Points Worksheet, revision 06/2024",
+      "authority": "official GREC workbook",
+      "url": "https://grec.state.ga.us/wp-content/uploads/pdfs/schools/Points%20Worksheet%20v%206-7-2024.xlsx",
+      "finalUrl": "https://grec.state.ga.us/wp-content/uploads/pdfs/schools/Points%20Worksheet%20v%206-7-2024.xlsx",
+      "kind": "binary",
+      "expected": {"sha256": "bb975fb673ca4a9ea030267b0b41417f028e4ddd3679b1dc84e1ba9141cd2583", "bytes": 23409, "minimumBytes": 15000, "mimeTypes": ["application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", "application/zip", "application/octet-stream"], "magicHex": "504b0304"},
+      "manualVerification": {"status": "verified", "date": "2026-09-02", "method": "download, hash, and cell-level reading"},
+      "materialClaims": [
+        {"id": "ga-instructor-points", "locator": "Sections 1-4 and Final Total", "claim": "The 65-point guide uses maxima of 20 license, 40 teaching, 5 general education, and 35 experience points; transactions earn 0.3 each up to 30 and auxiliary experience earns 1 per year up to 5.", "reliedOnBy": ["config/georgia/phase-zero.mjs", "georgia/submission/03-instructor-points-working-sheet.md"]}
+      ]
+    },
+    {
+      "id": "GREC-EDUCATION-GUIDE-2026",
+      "title": "GREC Education Guide, revision 07/17/2026",
+      "authority": "official GREC operational guide",
+      "url": "https://grec.state.ga.us/wp-content/uploads/pdfs/schools/2026%20GREC%20Education%20Guide%20v%207-17-2026.pdf",
+      "finalUrl": "https://grec.state.ga.us/wp-content/uploads/pdfs/schools/2026%20GREC%20Education%20Guide%20v%207-17-2026.pdf",
+      "kind": "binary",
+      "expected": {"sha256": "96b162033953a2143f6602f5db3692e1e0f02f83b45e8f52b8ea00954a695a63", "bytes": 507873, "minimumBytes": 300000, "mimeTypes": ["application/pdf"], "magicHex": "25504446"},
+      "manualVerification": {"status": "verified", "date": "2026-09-02", "method": "download, hash, and page-level reading"},
+      "materialClaims": [
+        {"id": "ga-education-guide-controls", "locator": "2026 school, instructor, and course guidance", "claim": "The current education guide is operational context; where it conflicts with a current rule, the rule controls and GREC clarification is required.", "reliedOnBy": ["config/georgia/phase-zero.mjs", "georgia/regulatory/official-sources.md", "georgia/submission/02-instructor-approval-map.md", "georgia/submission/04-school-approval-map.md", "georgia/submission/05-distance-course-approval-map.md"]}
+      ]
+    },
+    {
+      "id": "GREC-OPEN-FIRM",
+      "title": "Application to Open a Real Estate Firm, revision 01/2021",
+      "authority": "official GREC form; fee conflict",
+      "url": "https://grec.state.ga.us/wp-content/uploads/pdfs/RealEstate/GRECOpeningAFirm.pdf",
+      "finalUrl": "https://grec.state.ga.us/wp-content/uploads/pdfs/RealEstate/GRECOpeningAFirm.pdf",
+      "kind": "binary",
+      "expected": {"sha256": "8e2c07392e0151d12b990fdfbed62c9611d291205fc3d099e6e1ccade9b8914c", "bytes": 804433, "minimumBytes": 500000, "mimeTypes": ["application/pdf"], "magicHex": "25504446"},
+      "manualVerification": {"status": "verified", "date": "2026-09-02", "method": "download, hash, and page-level reading"},
+      "materialClaims": [
+        {"id": "ga-firm-form-fee", "locator": "instructions, additional fee", "claim": "The 01/2021 Open Firm form states an additional $275 fee, conflicting with current-rule arithmetic of $200; no firm payment should be made without written confirmation.", "reliedOnBy": ["config/georgia/phase-zero.mjs", "georgia/PHASE-0-REPORT.md", "georgia/submission/01-broker-reciprocity-runbook.md"]}
+      ]
+    },
+    {
+      "id": "GREC-CHANGE-QB",
+      "title": "Change of Qualifying Broker, revision 01/2021",
+      "authority": "official GREC form",
+      "url": "https://grec.state.ga.us/wp-content/uploads/pdfs/RealEstate/GRECChangeofQB.pdf",
+      "finalUrl": "https://grec.state.ga.us/wp-content/uploads/pdfs/RealEstate/GRECChangeofQB.pdf",
+      "kind": "binary",
+      "expected": {"sha256": "2b96c3f584cc5d9989eed706a0e918ba6f113ac0a4d16a2ff65f5a8928b850a8", "bytes": 759544, "minimumBytes": 500000, "mimeTypes": ["application/pdf"], "magicHex": "25504446"},
+      "manualVerification": {"status": "verified", "date": "2026-09-02", "method": "download, hash, and page-level reading"},
+      "materialClaims": [
+        {"id": "ga-change-qb-form", "locator": "form instructions and qualifying-broker certification", "claim": "Changing or appointing a qualifying broker is a separate firm filing; the qualifying broker must hold the entity-specific role stated for the entity type and have authority to bind the firm in a contested case.", "reliedOnBy": ["config/georgia/phase-zero.mjs", "georgia/PHASE-0-REPORT.md", "georgia/submission/00-filing-index.md", "georgia/submission/01-broker-reciprocity-runbook.md", "georgia/submission/06-owner-action-checklist.md"]}
+      ]
+    },
+    {
+      "id": "GREC-OPEN-SCHOOL-APPLICATION",
+      "title": "Application to Open a Real Estate School, revision 10/2015",
+      "authority": "official GREC form; stale fee conflict",
+      "url": "https://grec.state.ga.us/wp-content/uploads/pdfs/RE_Open_School.pdf",
+      "finalUrl": "https://grec.state.ga.us/wp-content/uploads/pdfs/RE_Open_School.pdf",
+      "kind": "binary",
+      "expected": {"sha256": "56a631081dd16e8c306b9d0ef99739aae01e17bb570000a85c459840d24b6ac5", "bytes": 3011936, "minimumBytes": 1500000, "mimeTypes": ["application/pdf"], "magicHex": "25504446"},
+      "manualVerification": {"status": "verified", "date": "2026-09-02", "method": "download, hash, and page-level reading"},
+      "materialClaims": [
+        {"id": "ga-school-application", "locator": "Sections II-VI, especially attachment items 6-18", "claim": "The located school form states $175 and requires the director's no-more-than-60-day law-enforcement criminal-history report, disclosure support, notarized lawful-presence verification, secure/verifiable identity document, and detailed institutional attachments; its 10/2015 revision and fee conflict require live confirmation.", "reliedOnBy": ["config/georgia/phase-zero.mjs", "georgia/PHASE-0-REPORT.md", "georgia/submission/04-school-approval-map.md", "georgia/submission/06-owner-action-checklist.md"]}
+      ]
+    },
+    {
+      "id": "GREC-COURSE-CODE-REQUEST",
+      "title": "Real Estate Course Code Request, revision 07/2026",
+      "authority": "official GREC form",
+      "url": "https://grec.state.ga.us/wp-content/uploads/pdfs/schools/RE_Course_Code_Appl.pdf",
+      "finalUrl": "https://grec.state.ga.us/wp-content/uploads/pdfs/schools/RE_Course_Code_Appl.pdf",
+      "kind": "binary",
+      "expected": {"sha256": "41ed77bb0d7e4812490e2545c2801304cbb9c7cdb7d0e21792be8dff51fb610d", "bytes": 738934, "minimumBytes": 400000, "mimeTypes": ["application/pdf"], "magicHex": "25504446"},
+      "manualVerification": {"status": "verified", "date": "2026-09-02", "method": "download, hash, and page-level reading"},
+      "materialClaims": [
+        {"id": "ga-course-code-gate", "locator": "course-code instructions, revision 07/2026", "claim": "A separate course-code request is required; a request or code does not itself authorize advertising, enrollment, or credit-bearing delivery before all approvals exist.", "reliedOnBy": ["config/georgia/phase-zero.mjs", "georgia/PHASE-0-REPORT.md", "georgia/submission/05-distance-course-approval-map.md"]}
+      ]
+    },
+    {
+      "id": "GREC-INSTRUCTOR-RENEWAL",
+      "title": "Real Estate Instructor Renewal, revision 02/2021",
+      "authority": "official GREC form; stale education-hour text",
+      "url": "https://grec.state.ga.us/wp-content/uploads/pdfs/schools/RE_Instructor_Renewal.pdf",
+      "finalUrl": "https://grec.state.ga.us/wp-content/uploads/pdfs/schools/RE_Instructor_Renewal.pdf",
+      "kind": "binary",
+      "expected": {"sha256": "5258befe55bce396013a0b533230a67b24b089b77e59a576c6911f6b53a7fb02", "bytes": 1500032, "minimumBytes": 1000000, "mimeTypes": ["application/pdf"], "magicHex": "25504446"},
+      "manualVerification": {"status": "verified", "date": "2026-09-02", "method": "download, hash, and page-level reading"},
+      "materialClaims": [
+        {"id": "ga-instructor-renewal-form", "locator": "renewal instructions", "claim": "The older form lists $125 paper, a $25 online discount, and stale 24-hour education text; the current rule's 36-hour requirement controls planning.", "reliedOnBy": ["config/georgia/phase-zero.mjs", "georgia/submission/02-instructor-approval-map.md", "georgia/regulatory/official-sources.md"]}
+      ]
+    },
+    {
+      "id": "GREC-SCHOOL-RENEWAL",
+      "title": "Real Estate School Renewal, revision 02/2021",
+      "authority": "official GREC form",
+      "url": "https://grec.state.ga.us/wp-content/uploads/pdfs/schools/RE_School_Renewal.pdf",
+      "finalUrl": "https://grec.state.ga.us/wp-content/uploads/pdfs/schools/RE_School_Renewal.pdf",
+      "kind": "binary",
+      "expected": {"sha256": "dc4468d52d3721d85e8c97d66b1fe098acb7d727d7130a16691268773c8650fd", "bytes": 1501851, "minimumBytes": 1000000, "mimeTypes": ["application/pdf"], "magicHex": "25504446"},
+      "manualVerification": {"status": "verified", "date": "2026-09-02", "method": "download, hash, and page-level reading"},
+      "materialClaims": [
+        {"id": "ga-school-renewal-fee", "locator": "renewal instructions", "claim": "The school renewal form lists $125 paper and $100 online, while the current rule's online-discount clause does not expressly name schools; confirm operational treatment.", "reliedOnBy": ["config/georgia/phase-zero.mjs", "georgia/submission/04-school-approval-map.md"]}
+      ]
+    },
+    {
+      "id": "GREC-FY2025-ANNUAL-REPORT",
+      "title": "GREC FY2025 Annual Report",
+      "authority": "official GREC market evidence",
+      "url": "https://grec.state.ga.us/wp-content/uploads/pdfs/About/Annual%20Report%20%20FY25%20%20%20Final.pdf",
+      "finalUrl": "https://grec.state.ga.us/wp-content/uploads/pdfs/About/Annual%20Report%20%20FY25%20%20%20Final.pdf",
+      "kind": "binary",
+      "expected": {"sha256": "26b550d993bf355d7fd824d4b7402990bc478ee6030971ce2b8003e21b26918a", "bytes": 879569, "minimumBytes": 500000, "mimeTypes": ["application/pdf"], "magicHex": "25504446"},
+      "manualVerification": {"status": "verified", "date": "2026-09-02", "method": "download, hash, and table-level reading"},
+      "materialClaims": [
+        {"id": "ga-market-license-records", "locator": "FY2025 license tables", "claim": "FY2025 reports 118,387 total license records and 3,452 new resident/nonresident licenses across categories; neither figure is a count of unique students.", "reliedOnBy": ["config/georgia/phase-zero.mjs", "georgia/PHASE-0-REPORT.md", "georgia/submission/07-market-evidence.md"]}
+      ]
+    },
+    {
+      "id": "CENSUS-GEORGIA-2025-CSV",
+      "title": "Vintage 2025 State Population Estimates — all data CSV",
+      "authority": "official U.S. Census Bureau market evidence",
+      "url": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/state/totals/NST-EST2025-ALLDATA.csv",
+      "finalUrl": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/state/totals/NST-EST2025-ALLDATA.csv",
+      "kind": "binary",
+      "expected": {"sha256": "92188e29cb0a67dcf95afa7d6c47359409782f086478b70ea4128eb70e223ca9", "bytes": 53555, "minimumBytes": 40000, "mimeTypes": ["text/csv", "text/plain", "application/octet-stream"], "requiredPhrases": ["Georgia", "11302748"]},
+      "manualVerification": {"status": "verified", "date": "2026-09-02", "method": "download, hash, and Georgia-row reading"},
+      "materialClaims": [
+        {"id": "ga-market-population", "locator": "Georgia row, POPESTIMATE2025", "claim": "Georgia's July 1, 2025 resident population estimate is 11,302,748.", "reliedOnBy": ["config/georgia/phase-zero.mjs", "georgia/PHASE-0-REPORT.md", "georgia/submission/07-market-evidence.md"]}
+      ]
+    },
+    {
+      "id": "GNPEC-PURPOSE",
+      "title": "Purpose of the Georgia Nonpublic Postsecondary Education Commission",
+      "authority": "official GNPEC explanation",
+      "url": "https://gnpec.georgia.gov/organization/about-gnpec/purpose",
+      "kind": "html",
+      "expected": {"minimumBytes": 5000, "mimeTypes": ["text/html"], "requiredPhrases": ["Examining Boards associated with the Georgia Secretary of State", "barbering, real estate"]},
+      "manualVerification": {"status": "verified", "date": "2026-09-02", "method": "rendered-page reading"},
+      "materialClaims": [
+        {"id": "ga-gnpec-real-estate-exemption", "locator": "purpose page, exempt schools paragraph", "claim": "GNPEC publicly identifies real-estate schools regulated through the Secretary of State among exempt school types, subject to GNPEC's determination for this provider.", "reliedOnBy": ["config/georgia/phase-zero.mjs", "georgia/PHASE-0-REPORT.md", "georgia/submission/04-school-approval-map.md"]}
+      ]
+    },
+    {
+      "id": "GNPEC-STATUTORY-EXEMPTION",
+      "title": "O.C.G.A. § 20-3-250.3 — exempt institutions",
+      "authority": "controlling statute published by GNPEC",
+      "url": "https://gnpec.georgia.gov/ss-20-3-2503-educational-institutions-exempted-application-part",
+      "kind": "html",
+      "expected": {"minimumBytes": 5000, "mimeTypes": ["text/html"], "requiredPhrases": ["20-3-250.3", "established, operated, governed, or licensed by this state"]},
+      "manualVerification": {"status": "verified", "date": "2026-09-02", "method": "rendered-page statutory reading"},
+      "materialClaims": [
+        {"id": "ga-gnpec-statutory-exemption", "locator": "O.C.G.A. § 20-3-250.3(a)(4)", "claim": "The statute contains an exemption for institutions regulated or licensed by another Georgia agency as determined by GNPEC.", "reliedOnBy": ["config/georgia/phase-zero.mjs", "georgia/PHASE-0-REPORT.md", "georgia/submission/04-school-approval-map.md", "georgia/submission/regulator-inquiries/GNPEC-exemption-inquiry.md"]}
+      ]
+    },
+    {
+      "id": "GNPEC-OTHER-CATEGORIES-APPLICATION",
+      "title": "How to apply for an Other Categories exemption",
+      "authority": "official GNPEC procedure",
+      "url": "https://gnpec.georgia.gov/authorization/exemption/exemption-other-categories/how-do-i-apply-exemption-other-categories",
+      "kind": "html",
+      "expected": {"minimumBytes": 5000, "mimeTypes": ["text/html"], "requiredPhrases": ["Institutional Proposal", "EDvera"]},
+      "manualVerification": {"status": "verified", "date": "2026-09-02", "method": "rendered-page reading"},
+      "materialClaims": [
+        {"id": "ga-gnpec-exemption-process", "locator": "Other Categories application steps", "claim": "The generic process starts with an Institutional Proposal and then uses EDvera; applicability and sequence for this real-estate-only provider remain unconfirmed.", "reliedOnBy": ["config/georgia/phase-zero.mjs", "georgia/submission/04-school-approval-map.md", "georgia/submission/regulator-inquiries/GNPEC-exemption-inquiry.md"]}
+      ]
+    },
+    {
+      "id": "GNPEC-EXEMPTION-FEES",
+      "title": "Exemption expiration terms and fees",
+      "authority": "official GNPEC fee guidance",
+      "url": "https://gnpec.georgia.gov/authorization/exemption/exemption-expiration-terms-and-fees",
+      "kind": "html",
+      "expected": {"minimumBytes": 5000, "mimeTypes": ["text/html"], "requiredPhrases": ["State Agency", "$200"]},
+      "manualVerification": {"status": "verified", "date": "2026-09-02", "method": "rendered-page fee-table reading"},
+      "materialClaims": [
+        {"id": "ga-gnpec-exemption-fee", "locator": "fee table, State Agency category", "claim": "GNPEC publishes a $200 initial/renewal fee for the State Agency exemption category; applicability to this provider remains unconfirmed.", "reliedOnBy": ["config/georgia/phase-zero.mjs", "georgia/PHASE-0-REPORT.md", "georgia/submission/regulator-inquiries/GNPEC-exemption-inquiry.md"]}
+      ]
+    },
+    {
+      "id": "GA-SOS-FOREIGN-ENTITY",
+      "title": "Georgia Secretary of State — register a foreign entity",
+      "authority": "official corporation filing guidance",
+      "url": "https://sos.ga.gov/how-to-guide/how-to-guide-register-foreign-entity",
+      "kind": "html",
+      "expected": {"minimumBytes": 5000, "mimeTypes": ["text/html"], "requiredPhrases": ["Register a Foreign LLC", "$235", "$225 filing fee"]},
+      "manualVerification": {"status": "verified", "date": "2026-09-02", "method": "rendered-page reading"},
+      "materialClaims": [
+        {"id": "ga-sos-foreign-registration-fee", "locator": "Foreign LLC online and mail instructions", "claim": "A foreign LLC registration is published as $235 ($225 filing plus $10 service charge) on the current guide and requires a Georgia registered agent/office and annual registration thereafter.", "reliedOnBy": ["config/georgia/phase-zero.mjs", "georgia/PHASE-0-REPORT.md", "georgia/submission/01-broker-reciprocity-runbook.md"]}
+      ]
+    }
+  ]
+}
