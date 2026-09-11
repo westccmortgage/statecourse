@@ -52,6 +52,7 @@ function send(path, payload) {
 
 function renderSession(session) {
   state.roles = session?.roles || [];
+  document.dispatchEvent(new CustomEvent("statecourse:staff", {detail:session}));
   const signedIn = Boolean(session?.user?.id);
   $("#signInForm").hidden = signedIn;
   $("#signOut").hidden = !signedIn;
@@ -103,8 +104,10 @@ $("#signInForm").addEventListener("submit", async (event) => {
 });
 
 $("#signOut").addEventListener("click", async () => {
-  await api(SESSION, { method: "DELETE" }).catch(() => null);
-  renderSession(null);
+  try {
+    await api(SESSION, { method: "DELETE" });
+    renderSession(null);
+  } catch { $("#sessionState").textContent = "Sign-out failed. Please try again."; }
 });
 
 /* ── tabs ──────────────────────────────────────────────────────────────────────────────── */
@@ -204,7 +207,7 @@ function gateRow(asset, definition) {
     <td><strong>${esc(words(definition.gate))}</strong><small>${esc(definition.description)}</small></td>
     <td>${esc(outcome)}${recorded?.reviewed_at ? `<small>${esc(new Date(recorded.reviewed_at).toLocaleString())}</small>` : ""}</td>
     <td>${machine
-      ? "<em>recorded from the Stream API</em>"
+      ? "<em>recorded by automatic verification</em>"
       : `<form class="gate-form" data-asset="${esc(asset.asset_key)}" data-gate="${esc(definition.gate)}">
           <textarea name="note" rows="2" minlength="10" maxlength="2000" required
             placeholder="What was checked, and against what"></textarea>
@@ -240,6 +243,14 @@ function assetCard(asset) {
           </button>
           <small>Records the upload, signed-playback and origin conditions from the API response.</small>
         </div>`}
+    <details class="file-assets"><summary>Captions and transcript</summary>
+      <form class="text-assets-form" data-asset="${esc(asset.asset_key)}">
+        <label>Captions (.vtt)<input name="captions" type="file" accept=".vtt,text/vtt" required></label>
+        <label>Transcript (.txt)<input name="transcript" type="file" accept=".txt,text/plain" required></label>
+        <label>Language<input name="language" value="en" pattern="[a-z]{2}(-[a-z0-9]{2,8})?" required></label>
+        <button type="submit" ${asset.stream_uid ? "" : "disabled"}>Upload and verify text assets</button>
+      </form>
+    </details>
     <details ${outstanding.length ? "open" : ""}>
       <summary>Release conditions</summary>
       <div class="table-wrap">
@@ -345,6 +356,7 @@ function putToCloudflare(url, file, onProgress) {
 
 $("#reserveForm").addEventListener("submit", async (event) => {
   event.preventDefault();
+  const form = event.currentTarget;
   const progress = $("#uploadProgress");
   const file = $("#reserveFile").files?.[0];
   if (!file) return;
@@ -362,8 +374,10 @@ $("#reserveForm").addEventListener("submit", async (event) => {
       screenId: $("#reserveScreen").value,
       label: $("#reserveLabel").value.trim(),
       durationSeconds: Number($("#reserveDuration").value),
-      transcriptPath: $("#reserveTranscript").value.trim(),
-      captionsPath: $("#reserveCaptions").value.trim(),
+      transcriptPath: `private-media/console/${$("#reserveAssetKey").value.trim()}.txt`,
+      captionsPath: `private-media/console/${$("#reserveAssetKey").value.trim()}.vtt`,
+      replacesAssetKey: $("#reserveReplaces").value.trim(),
+      replacementReason: $("#reserveReplacementReason").value.trim(),
     });
     progress.textContent = "Computing the file digest…";
     const digest = await sha256Hex(file);
@@ -379,7 +393,7 @@ $("#reserveForm").addEventListener("submit", async (event) => {
     progress.textContent = confirmation.uploadState === "ready"
       ? `Cloudflare reports ready. ${confirmation.gatesRecorded.filter((gate) => gate.outcome === "pass").length} of the three delivery conditions pass.`
       : `Cloudflare is still encoding (${words(confirmation.uploadState)}). Use “Check what Cloudflare received” in a moment.`;
-    event.currentTarget.reset();
+    form.reset();
     await loadVideo(courseId || undefined);
   } catch (error) {
     const detail = error.detail ? ` (${esc(JSON.stringify(error.detail))})` : "";
@@ -421,7 +435,17 @@ $("#assetList").addEventListener("submit", async (event) => {
   const form = event.target;
   event.preventDefault();
   const data = new FormData(form, event.submitter);
-  if (form.classList.contains("gate-form")) {
+  if (form.classList.contains("text-assets-form")) {
+    const button = event.submitter; button.disabled = true;
+    try {
+      const captions = data.get("captions"), transcript = data.get("transcript");
+      if (captions.size > 500000 || transcript.size > 500000) throw new Error("text_file_too_large");
+      await send(VIDEO, { action: "upload_text_assets", assetKey: form.dataset.asset,
+        captionsVtt: await captions.text(), transcriptText: await transcript.text(), captionsLanguage: data.get("language") });
+      $("#videoMessage").textContent = "Caption read-back and stored transcript verification completed.";
+    } catch (error) { $("#videoMessage").textContent = `Text assets: ${words(error.message)}.`; }
+    finally { button.disabled = false; }
+  } else if (form.classList.contains("gate-form")) {
     try {
       await send(VIDEO, {
         action: "record_gate",
@@ -442,7 +466,9 @@ $("#assetList").addEventListener("submit", async (event) => {
       $("#videoMessage").textContent = `Refused: ${words(error.message)}.`;
     }
   } else return;
+  const resultMessage = $("#videoMessage").textContent;
   await loadVideo($("#reserveCourse").value || undefined);
+  $("#videoMessage").textContent = resultMessage;
 });
 
 /* ── approval, training access and payment mode ───────────────────────────────────────── */
@@ -471,7 +497,7 @@ async function loadOfferings() {
     /* The live option is removed rather than shown and refused, so nobody is invited to
        press something that cannot work. The server refuses regardless of the markup. */
     const liveOption = $("#liveOption");
-    if (liveOption && body.viewer?.canActivateLivePayments !== true) liveOption.remove();
+    if (liveOption) { liveOption.hidden = body.viewer?.canActivateLivePayments !== true; liveOption.disabled = liveOption.hidden; }
     $("#offeringRows").innerHTML = body.offerings.length
       ? body.offerings.map(offeringRow).join("")
       : '<tr><td colspan="8">No offering has a recorded decision yet. Every one of them is therefore training only, with payments disabled.</td></tr>';
@@ -489,6 +515,7 @@ $("#reloadOfferings").addEventListener("click", loadOfferings);
 
 $("#governanceForm").addEventListener("submit", async (event) => {
   event.preventDefault();
+  const form = event.currentTarget;
   const data = new FormData(event.currentTarget);
   const payload = {
     offeringId: String(data.get("offeringId") || "").trim(),
@@ -511,7 +538,7 @@ $("#governanceForm").addEventListener("submit", async (event) => {
       `Recorded. ${body.status.offering_id} is ${words(body.copy.representation)}`
       + `, payments ${words(body.status.payment_mode)}`
       + `${body.status.live_charging_permitted ? "" : " and not charging"}.`;
-    event.currentTarget.reset();
+    form.reset();
   } catch (error) {
     const detail = error.detail ? ` (${esc(JSON.stringify(error.detail))})` : "";
     $("#offeringsMessage").textContent = `Refused: ${words(error.message)}${detail}.`;
@@ -520,3 +547,4 @@ $("#governanceForm").addEventListener("submit", async (event) => {
 });
 
 loadSession();
+

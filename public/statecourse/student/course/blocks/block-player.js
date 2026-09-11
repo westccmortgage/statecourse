@@ -122,21 +122,21 @@ function renderScreen() {
     content.innerHTML = `<p class="activity-note">Answer from memory — the lesson stays closed on this screen. That effort is what makes it stick.</p>`;
     renderQuestion(activity, screen.question, { blockId: block.id });
   } else if (screen.type === "practice") {
-    const html = renderLessonMarkdown(sliceRange(screen.content));
+    const html = renderLessonMarkdown((screen.bodyMarkdown ?? sliceRange(screen.content)));
     const { scenario, solution } = splitPracticeHtml(html);
     content.innerHTML = scenario;
     renderPractice(activity, block, screen, solution);
   } else if (screen.type === "applied") {
-    content.innerHTML = renderLessonMarkdown(sliceRange(screen.content));
+    content.innerHTML = renderLessonMarkdown((screen.bodyMarkdown ?? sliceRange(screen.content)));
     renderRegulatoryAssessment(activity, "applied");
   } else if (screen.type === "mastery") {
-    content.innerHTML = renderLessonMarkdown(sliceRange(screen.content));
+    content.innerHTML = renderLessonMarkdown((screen.bodyMarkdown ?? sliceRange(screen.content)));
     renderRegulatoryAssessment(activity, "engagement");
   } else if (screen.type === "completion") {
-    content.innerHTML = renderLessonMarkdown(sliceRange(screen.content));
+    content.innerHTML = renderLessonMarkdown((screen.bodyMarkdown ?? sliceRange(screen.content)));
     renderCompletionStatus(activity);
   } else {
-    content.innerHTML = screenVideoHtml(screen) + renderLessonMarkdown(sliceRange(screen.content)) + screenDocumentsHtml(screen);
+    content.innerHTML = screenVideoHtml(screen) + renderLessonMarkdown((screen.bodyMarkdown ?? sliceRange(screen.content))) + screenDocumentsHtml(screen);
   }
   renderNav();
   content.focus({ preventScroll: true });
@@ -353,7 +353,7 @@ function renderRemediation(content, activity) {
     || block.screens.find((screen) => screen.type === "instruction");
   if (!remediation.reviewed) {
     $("#screenTitle").textContent = `Focused review: ${target?.title || block.title}`;
-    content.innerHTML = target?.content ? renderLessonMarkdown(sliceRange(target.content)) : "";
+    content.innerHTML = target?.bodyMarkdown != null ? renderLessonMarkdown(target.bodyMarkdown) : target?.content ? renderLessonMarkdown(sliceRange(target.content)) : "";
     activity.innerHTML = `
       <div class="activity-panel">
         <h3>Then continue</h3>
@@ -591,3 +591,4 @@ addEventListener("blur", sendHeartbeat);
     message.classList.add("error");
   }
 })();
+

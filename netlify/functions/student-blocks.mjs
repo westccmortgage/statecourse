@@ -15,6 +15,7 @@
  * without evidence as the last line.
  */
 
+import { contentForEnrollment, overlayText } from "./_lib/console-content.mjs";
 import { dbRequest } from "./_lib/db.mjs";
 import { parseJson, requireSameOrigin } from "./_lib/http.mjs";
 import { requireStudentSession, sessionCookies, sessionResponse } from "./_lib/student-session.mjs";
@@ -415,7 +416,7 @@ async function blocksPayload(ctx, assignmentId) {
     /* Block-map structure first, then whatever the console has released for this delivery
        unit laid over it. Read every time, so a withdrawal takes effect on the next load. */
     blocks: applyConsoleVideos(
-      publicBlocks(ctx, delivery, derived),
+      overlayText(publicBlocks(ctx, delivery, derived), await contentForEnrollment(ctx.enrollment), assignmentId),
       await consoleVideosForDelivery(ctx.course.courseId, assignmentId),
     ),
     position: derived.position,
@@ -449,3 +450,4 @@ export const handler = async (event) => {
     return sessionResponse(status, { error: status >= 500 ? "student_blocks_unavailable" : error.message });
   }
 };
+
