@@ -87,6 +87,7 @@ test -f dist/get-licensed/index.html
 test -f dist/state-requirements/index.html
 test -f dist/exam-prep/index.html
 test -f dist/continuing-education/index.html
+test -f dist/mortgage/index.html
 test -f dist/service-area.js
 test -f dist/approvals/index.html
 test -f dist/student/final-exam/index.html

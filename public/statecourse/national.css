@@ -71,6 +71,39 @@ button, select, summary, a { -webkit-tap-highlight-color: transparent; }
 .hero-intro h1 em { color: var(--gold); font-style: normal; }
 .hero-intro > p:last-child { max-width: 560px; margin: 24px 0 0; color: #ccd4e2; font-size: 17px; line-height: 1.7; }
 
+/* ── the two doors: real estate vs mortgage ──────────────────────────────────────────────────
+   Real estate and mortgage loan origination are separate licences with separate regulators and
+   separate approval routes. The hero asks which one the visitor holds before it asks anything
+   else, so that a mortgage visitor never walks into the real estate state finder by default.
+   Each door is a real link with a real destination and a status chip that states the truth about
+   availability; neither is decorative. */
+.hero-shell-doors { grid-template-columns: 1fr; gap: 44px; align-items: start; }
+.vertical-doors { display: grid; grid-template-columns: repeat(2,1fr); gap: 20px; }
+.vertical-door { display: grid; align-content: start; gap: 10px; padding: 30px 28px; background: rgba(255,255,255,.055); border: 1px solid rgba(255,255,255,.2); border-radius: var(--radius); color: #fff; text-decoration: none; transition: background .15s, border-color .15s, transform .15s; }
+.vertical-door:hover { background: rgba(255,255,255,.1); border-color: rgba(255,255,255,.38); transform: translateY(-2px); }
+.vertical-door:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
+.door-icon { color: var(--gold); }
+.door-icon svg { display: block; width: 34px; height: 34px; }
+.vertical-door strong { margin-top: 2px; font: 500 clamp(22px,2.3vw,28px)/1.15 var(--serif); letter-spacing: -.01em; }
+.door-lede { max-width: 40ch; color: #c3ccdb; font-size: 14.5px; line-height: 1.6; }
+.vertical-door .dev-chip { justify-self: start; margin-top: 4px; padding: 4px 10px; background: var(--navy-2); border: 1px solid rgba(255,255,255,.22); border-radius: 3px; color: #dfe4ec; font-size: 10px; font-style: normal; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; }
+.door-action { margin-top: 6px; color: var(--gold); font-size: 11px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
+.vertical-door:hover .door-action { color: #fff; }
+
+/* ── the real estate state finder, now its own band below the doors ──────────────────────── */
+.finder-band { background: var(--surface); border-bottom: 1px solid var(--rule); }
+.finder-band-shell { display: grid; grid-template-columns: minmax(0,.85fr) minmax(470px,1.15fr); gap: 56px; align-items: center; max-width: var(--max); margin: auto; padding: 54px 28px; }
+.finder-band-copy h2 { margin: 0; color: var(--navy); font: 500 clamp(30px,3.4vw,44px)/1.12 var(--serif); letter-spacing: -.01em; }
+.finder-band-copy > p { margin: 18px 0 0; color: var(--muted); line-height: 1.7; }
+/* The finder card's deep shadow was tuned for navy behind it. On this white band it needs a
+   lighter one and a hairline, or it reads as a floating slab. */
+/* The cross-link to the other vertical is the one control on this band that sends a visitor
+   somewhere else entirely. It has to look like a link, not like body copy. */
+.finder-band-copy .marketing-separation { margin-top: 22px; padding-top: 16px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 13.5px; line-height: 1.6; }
+.finder-band-copy .marketing-separation a { color: var(--gold-deep); font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
+.finder-band-copy .marketing-separation a:hover { color: var(--navy); }
+.finder-band .licensing-finder { border: 1px solid var(--rule); box-shadow: 0 14px 38px rgba(3,8,24,.13); }
+
 /* ── the licensing finder card ───────────────────────────────────────────────────────────── */
 .licensing-finder { background: var(--surface); color: var(--ink); border-radius: 8px; overflow: hidden; box-shadow: 0 24px 64px rgba(3,8,24,.45); }
 .intent-tabs { display: grid; grid-template-columns: repeat(3,1fr); margin: 0; padding: 0; border: 0; }
@@ -366,6 +399,7 @@ button, select, summary, a { -webkit-tap-highlight-color: transparent; }
   .mobile-menu nav { position: absolute; right: 0; top: 48px; display: grid; width: 240px; padding: 10px; background: var(--surface); border: 1px solid var(--rule); border-radius: var(--radius); box-shadow: 0 18px 45px rgba(0,0,0,.18); color: var(--ink); }
   .mobile-menu nav a { padding: 10px; border-bottom: 1px solid var(--rule); font-size: 13px; }
   .hero-shell { grid-template-columns: 1fr; min-height: auto; gap: 40px; }
+  .finder-band-shell { grid-template-columns: 1fr; gap: 32px; }
   .hero-intro h1 { max-width: 800px; }
   .intro-film-shell { grid-template-columns: minmax(220px,.36fr) minmax(0,1fr); gap: 34px; }
   .credibility-band { grid-template-columns: repeat(2,1fr); }
@@ -386,6 +420,9 @@ button, select, summary, a { -webkit-tap-highlight-color: transparent; }
   .account-link { white-space: nowrap; font-size: 12px; }
   .hero-intro .header-actions { gap: 14px; }
   .hero-shell { padding: 46px 18px; }
+  .vertical-doors { grid-template-columns: 1fr; gap: 14px; }
+  .vertical-door { padding: 24px 20px; }
+  .finder-band-shell { padding: 40px 18px; }
   .hero-intro h1 { font-size: clamp(40px,12vw,54px); }
   .hero-intro > p:last-child { font-size: 16px; }
   .intent-tabs { grid-template-columns: 1fr; }

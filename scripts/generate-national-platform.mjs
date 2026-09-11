@@ -73,6 +73,7 @@ function header(prefix, active = "") {
     ["Get Licensed", "get-licensed/", "licensed"],
     ["Exam Prep", "exam-prep/", "exam"],
     ["Renew / CE", "continuing-education/", "renew"],
+    ["Mortgage / NMLS", "mortgage/", "mortgage"],
     ["State Requirements", "state-requirements/", "requirements"],
     ["Resources", "resources/", "resources"],
     ["Blog", "blog/", "blog"],
@@ -82,11 +83,11 @@ function header(prefix, active = "") {
 }
 
 function footer(prefix) {
-  return `<footer class="national-footer"><div class="footer-shell"><div><a class="national-brand inverse" href="${prefix}"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 44 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M22 2 40 8v14c0 12-7.5 20-18 24C11.5 42 4 34 4 22V8Z"/><g stroke-width="1.6" stroke-linecap="round"><path d="M13 16.5h18M14.5 15 22 10.5 29.5 15M15.5 19v11M22 19v11M28.5 19v11M13 32.5h18"/></g></svg></span><span><strong>StateCourse</strong><small>National Academy</small></span></a><p>Real estate licensing, state by state.</p></div><nav aria-label="Footer navigation"><a href="${prefix}get-licensed/">Get Licensed</a><a href="${prefix}state-requirements/">State Requirements</a><a href="${prefix}courses/">Courses</a><a href="${prefix}resources/">Resources</a><a href="${prefix}approvals/">Approval Verification</a><a href="${studentPortalUrl}">My Courses</a></nav><p class="footer-disclosure">Programs shown as In Development are not approved enrollment offers and cannot award regulatory credit.</p></div></footer>`;
+  return `<footer class="national-footer"><div class="footer-shell"><div><a class="national-brand inverse" href="${prefix}"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 44 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M22 2 40 8v14c0 12-7.5 20-18 24C11.5 42 4 34 4 22V8Z"/><g stroke-width="1.6" stroke-linecap="round"><path d="M13 16.5h18M14.5 15 22 10.5 29.5 15M15.5 19v11M22 19v11M28.5 19v11M13 32.5h18"/></g></svg></span><span><strong>StateCourse</strong><small>National Academy</small></span></a><p>Real estate licensing, state by state.</p></div><nav aria-label="Footer navigation"><a href="${prefix}get-licensed/">Get Licensed</a><a href="${prefix}state-requirements/">State Requirements</a><a href="${prefix}mortgage/">Mortgage / NMLS</a><a href="${prefix}courses/">Courses</a><a href="${prefix}resources/">Resources</a><a href="${prefix}approvals/">Approval Verification</a><a href="${studentPortalUrl}">My Courses</a></nav><p class="footer-disclosure">Programs shown as In Development are not approved enrollment offers and cannot award regulatory credit.</p></div></footer>`;
 }
 
 function document({ title, description, prefix = "../", active = "", body, scripts = "" }) {
-  return `<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><meta name="description" content="${esc(description)}"/><meta name="theme-color" content="#08102b"/><title>${esc(title)} | StateCourse</title><link rel="icon" href="${prefix}favicon.svg" type="image/svg+xml"/><link rel="stylesheet" href="${prefix}national.css?v=20260907-practice-repair"/></head><body>${header(prefix, active)}<main id="main-content">${body}</main>${footer(prefix)}${scripts}</body></html>`;
+  return `<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><meta name="description" content="${esc(description)}"/><meta name="theme-color" content="#08102b"/><title>${esc(title)} | StateCourse</title><link rel="icon" href="${prefix}favicon.svg" type="image/svg+xml"/><link rel="stylesheet" href="${prefix}national.css?v=20260911-verticals"/></head><body>${header(prefix, active)}<main id="main-content">${body}</main>${footer(prefix)}${scripts}</body></html>`;
 }
 
 function pageHero(overline, title, lede, state = false) {
@@ -296,6 +297,63 @@ for (const area of serviceAreas) {
   </section>`;
   write(`${area.route}/index.html`, document({ title: area.overline, description: area.lede, active: area.active, body, scripts: '<script src="../service-area.js?v=20260907-practice-repair" defer></script>' }));
 }
+
+/* ── Mortgage / NMLS vertical ────────────────────────────────────────────────────────────────
+ *
+ * WHY THIS IS A SEPARATE DOOR AND NOT A CARD ON THE RENEW/CE PAGE. Mortgage loan originator
+ * education is a different regulatory system from real estate licensing: a different licence, a
+ * different regulator in most states, and course approval that runs through NMLS rather than
+ * through the state real estate commission. A visitor who needs mortgage CE and lands in the real
+ * estate funnel is not slightly misrouted; they are being shown the wrong regulator entirely.
+ *
+ * WHY THERE IS NO JURISDICTION SELECTOR HERE. The selector on exam-prep and continuing-education is
+ * driven by service-area.js, which prints the row from data/state-registry.json — and every row in
+ * that registry is a REAL ESTATE regulator. Pointing it at a mortgage question would answer with the
+ * wrong agency in all 51 rows. A selector is added here only once a mortgage registry exists.
+ *
+ * WHY NO HOUR COUNTS, SUBJECT BREAKDOWNS OR RENEWAL DEADLINES APPEAR. The same rule the rest of the
+ * site follows: a requirement is published only after it has been read from the official source and
+ * recorded. No SAFE Act or NMLS text has been read into this repository, so this page describes what
+ * StateCourse is building and names no requirement it has not verified.
+ *
+ * THE LAUNCH DATE IS DATA, NOT COPY. It comes from the mortgage category's launch_target in
+ * data/course-catalog.json so that it is changed in one place. It is a build-schedule target and is
+ * labelled as one; it is never presented as an approval date. */
+const mortgageCategory = catalog.categories.find((entry) => entry.category_id === "mortgage");
+const mortgageCourses = (mortgageCategory?.programs ?? []).flatMap((program) => program.courses ?? []);
+const mortgageRecord = deriveJurisdictionRecord(mortgageCourses);
+const mortgageTarget = mortgageCategory?.launch_target ?? null;
+const mortgageAvailability = !mortgageRecord.hasCourseRecord
+  ? `StateCourse does not offer mortgage continuing education in any jurisdiction yet. No course record exists, so nothing on this page is an offer, and no enrollment, credit, or certificate is available here.${mortgageTarget ? ` The build is scheduled to complete in ${esc(mortgageTarget.label)}; that is a StateCourse target, not an approval date.` : ""}`
+  : mortgageRecord.enrollmentOpen
+    ? `StateCourse mortgage continuing education is open only where an approval record and an enabled enrollment are both recorded: ${mortgageRecord.approvedCourses.filter((entry) => entry.enrollmentEnabled).map((entry) => esc(entry.courseTitle)).join(", ")}.`
+    : `StateCourse has ${mortgageCourses.length} mortgage continuing-education course record${mortgageCourses.length === 1 ? "" : "s"} in development. Enrollment stays closed until each one's own approval is recorded.`;
+
+const mortgageCards = [
+  ["Continuing education for loan originators", "The first mortgage product StateCourse is building is annual continuing education for licensed mortgage loan originators, prepared for every state rather than one at a time.", "", ""],
+  ["Approval runs through NMLS", "A mortgage continuing-education course carries its own NMLS course approval, and the provider carries its own approval as well. No real estate approval StateCourse holds or seeks extends to a mortgage course.", "../approvals/", "Check StateCourse approval records →"],
+  ["Separate from real estate", "Real estate pre-license education, exam preparation, and real estate renewal stay on their own pages. Nothing here counts toward a real estate licence, and nothing there counts toward a mortgage licence.", "../get-licensed/", "Go to real estate licensing →"],
+].map(([heading, copy, href, label], index) => `<article class="content-card"><p class="overline">${String(index + 1).padStart(2, "0")}</p><h2>${esc(heading)}</h2><p>${esc(copy)}</p>${href ? `<a href="${href}">${esc(label)}</a>` : ""}</article>`).join("");
+
+const mortgageStatusRow = mortgageTarget
+  ? `<div><dt>Build target</dt><dd>${esc(mortgageTarget.label)}</dd></div>`
+  : "";
+
+const mortgageBody = `${pageHero("Mortgage / NMLS", "Mortgage continuing education, built for every state.", "StateCourse is preparing annual continuing education for licensed mortgage loan originators. This is a separate licence, a separate regulator, and a separate approval from anything on the real estate side of this site.")}<section class="page-body" data-service="mortgage">
+    <div class="notice"><strong>Availability:</strong> ${mortgageAvailability}</div>
+    <div class="state-summary">
+      <aside class="state-record"><p class="overline">Program record</p><dl><div><dt>Program</dt><dd>Mortgage loan originator continuing education</dd></div><div><dt>Approval route</dt><dd>NMLS course approval</dd></div><div><dt>Course records</dt><dd>${mortgageCourses.length === 0 ? "None yet" : String(mortgageCourses.length)}</dd></div><div><dt>Approval held</dt><dd>${esc(JURISDICTION_APPROVAL_LABELS[mortgageRecord.approvalState] ?? mortgageRecord.approvalState)}</dd></div><div><dt>Enrollment</dt><dd>${esc(mortgageRecord.enrollmentLine)}</dd></div>${mortgageStatusRow}</dl></aside>
+      <div>
+        <p class="overline">What is being built</p>
+        <p>Continuing education for mortgage loan originators, prepared across all states in one pass rather than state by state, so that the course set arrives complete instead of arriving in fragments.</p>
+        <p>Until each course carries its own NMLS approval record, this page exists to tell you the work is underway and to keep you out of the real estate funnel if mortgage education is what you came for.</p>
+        <p class="cta-note">Reading this page does not create an account, an enrollment, study time, or regulatory credit.</p>
+      </div>
+    </div>
+    <div class="content-grid" style="margin-top:34px">${mortgageCards}</div>
+    <div class="source-box"><h2>What this page does not claim</h2><p>StateCourse holds no NMLS provider approval and no NMLS course approval. This page publishes no continuing-education hour requirement, subject breakdown, renewal deadline, or state-specific mortgage rule, because none has yet been read from an official source and recorded in this repository. Nothing here substitutes for NMLS or for your state regulator's current instructions.</p></div>
+  </section>`;
+write("mortgage/index.html", document({ title: "Mortgage / NMLS", description: "StateCourse is preparing continuing education for licensed mortgage loan originators, separately from real estate licensing.", active: "mortgage", body: mortgageBody }));
 
 write("my-statecourse/index.html", document({ title: "My StateCourse", description: "Return to your StateCourse licensing path and courses.", body: `${pageHero("Returning student", "Continue where you left off.", "Sign in to view active courses, progress, assessments, instructor support, payments, and certificates tied to your exact course version.")}<section class="page-body"><div class="content-grid"><article class="content-card"><p class="overline">My Licensing Path</p><h2>See the next required action</h2><p>Your education, exam preparation, application milestones, and renewal path remain organized in one account.</p><a href="${studentPortalUrl}">Student sign in →</a></article><article class="content-card"><p class="overline">My Courses</p><h2>Return to active education</h2><p>Continue only the courses connected to your verified enrollment record.</p><a href="${studentPortalUrl}">Open course dashboard →</a></article><article class="content-card"><p class="overline">Records</p><h2>Preserve completed education</h2><p>Eligible certificates always point to the exact approved course and version completed.</p><a href="${studentPortalUrl}">View my records →</a></article></div></section>` }));
 
