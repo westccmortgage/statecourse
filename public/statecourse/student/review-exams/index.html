@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Regulator Examination Review | StateCourse</title>
+  <link rel="icon" href="/favicon.svg">
+  <link rel="stylesheet" href="/student/review-exams/review-exams.css">
+  <script src="/student/review-exams/review-exams.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#reviewMain">Skip to examination review</a>
+  <header><a class="brand" href="/student/">StateCourse</a><a href="/student/">My courses</a></header>
+  <main id="reviewMain">
+    <p class="eyebrow">California · Regulator/Reviewer</p>
+    <h1>Final examination review</h1>
+    <p>This view provides both examination forms for course review. Browsing creates no examination attempt, study credit or completion record.</p>
+    <p id="reviewMessage" role="status">Checking your review access…</p>
+    <a id="reviewSignIn" hidden href="/student/sign-in/?return_to=%2Fstudent%2Freview-exams%2F">Sign in to StateCourse</a>
+    <section id="reviewContent" hidden>
+      <div class="controls">
+        <label>Course<select id="reviewCourse"></select></label>
+        <label>Examination form<select id="reviewForm"><option value="A">Form A</option><option value="B">Form B — retake</option></select></label>
+        <label class="key-toggle"><input type="checkbox" id="reviewKey"> Show instructor answer key and source references</label>
+      </div>
+      <h2 id="reviewTitle"></h2>
+      <p id="reviewFacts"></p>
+      <ol id="reviewQuestions"></ol>
+    </section>
+  </main>
+</body>
+</html>

@@ -77,6 +77,12 @@ function renderStatus(){
 function renderFinalExamLink(){
   const link=$("#finalExamLink"),final=page.data.finalExam;
   if(!link)return;
+  if(page.data.mode!=="student"){
+    link.hidden=false;
+    link.href=`/student/review-exams/?course_id=${encodeURIComponent(page.data.course.courseId)}`;
+    link.textContent="Review final examinations";
+    return;
+  }
   const open=page.data.mode==="student"&&Boolean(final?.eligible);
   link.hidden=!open;
   if(open&&final.href)link.href=final.href;
