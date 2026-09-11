@@ -8,6 +8,7 @@
     <title>Administration Console | StateCourse</title>
     <link rel="icon" href="../../favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="console.css" />
+    <link rel="stylesheet" href="workspace.css" />
     <script src="/student/auth-entry.js"></script>
   </head>
   <body>
@@ -26,18 +27,16 @@
     </header>
 
     <div class="draft-banner" role="note">
-      This console records and reports. It grants no regulator approval, opens no enrollment,
-      and awards no course credit.
+      Interface review: new workspace sections are read-only while implementation is completed. Existing catalog, video and approval controls retain their current behavior. This release does not activate payments or publish course changes.
     </div>
 
     <main id="main" class="shell">
       <section class="page-heading">
         <div>
           <p class="eyebrow">Operations</p>
-          <h1>Catalog and course video</h1>
+          <h1>StateCourse administration</h1>
           <p>
-            Signing in proves who you are. What you may do comes from the role bindings recorded
-            against your account, and a shared administrator token is not accepted here.
+            Courses, students, materials and operating checks — in one workspace.
           </p>
         </div>
         <aside class="session-card" aria-labelledby="sessionHeading">
@@ -61,14 +60,36 @@
         </aside>
       </section>
 
-      <div id="console" hidden>
-        <nav class="tabs" aria-label="Console sections">
-          <button type="button" class="tab" data-panel="catalogPanel" aria-selected="true">Catalog</button>
+      <div id="console" class="workspace-layout" hidden>
+        <nav class="tabs workspace-nav" aria-label="Console sections">
+<button type="button" class="tab" data-panel="overviewPanel" aria-selected="true">Overview</button>
+<button type="button" class="tab" data-panel="coursesPanel" aria-selected="false">Courses</button>
+<button type="button" class="tab" data-panel="studentsPanel" aria-selected="false">Students</button>
+<button type="button" class="tab" data-panel="tasksPanel" aria-selected="false">Tasks</button>
+<button type="button" class="tab" data-panel="checksPanel" aria-selected="false">Weekly checks</button>
+<button type="button" class="tab" data-panel="financePanel" aria-selected="false">Payments</button>
+<button type="button" class="tab" data-panel="teamPanel" aria-selected="false">Team & access</button>
+<button type="button" class="tab" data-panel="messagesPanel" aria-selected="false">Messages</button>
+<button type="button" class="tab" data-panel="historyPanel" aria-selected="false">History</button>
+<button type="button" class="tab" data-panel="settingsPanel" aria-selected="false">Connections</button>
+          <button type="button" class="tab" data-panel="catalogPanel" aria-selected="false">Catalog reconciliation</button>
           <button type="button" class="tab" data-panel="videoPanel" aria-selected="false">Course video</button>
           <button type="button" class="tab" data-panel="offeringsPanel" aria-selected="false">Approval &amp; payments</button>
         </nav>
+<div class="workspace-content"><p id="workspaceMessage" class="message" role="status" aria-live="polite"></p>
 
-        <section id="catalogPanel" class="panel" aria-label="Catalog">
+<section id="overviewPanel" class="panel"><div class="panel-heading"><h2>Overview</h2><button type="button" data-work="refresh">Refresh</button></div><div id="overviewBody"></div></section>
+<section id="coursesPanel" class="panel" hidden><h2>Courses</h2><div class="filter-row"><label>Search courses<input id="courseSearch" type="search"></label><label>State<select id="courseState"><option value="">All states</option></select></label></div><div id="courseList"></div><div id="courseWorkspace" hidden></div></section>
+<section id="studentsPanel" class="panel" hidden><h2>Students and enrollments</h2><label>Search course or enrollment<input id="studentSearch" type="search"></label><div id="studentsBody"></div><article id="studentDetail" hidden></article></section>
+<section id="tasksPanel" class="panel" hidden><h2>Tasks</h2><form id="taskCreateForm" class="card"><div class="field-grid"><label>Course<select id="taskCourse" name="courseId" required></select></label><label>Title<input name="title" minlength="3" maxlength="200" required></label><label>Priority<select name="priority"><option value="normal">Normal</option><option value="high">High</option><option value="blocking">Blocking</option></select></label><label>Details<textarea name="detail"></textarea></label></div><button>Create task</button></form><div id="tasksBody"></div></section>
+<section id="checksPanel" class="panel" hidden><div class="panel-heading"><h2>Weekly checks</h2><button id="runHealth" type="button" data-work="health">Run structural check</button></div><p class="note">Weekly automation is not activated in this interface review. Stored reports, when available, can be inspected.</p><div id="checksBody"></div></section>
+<section id="financePanel" class="panel" hidden><h2>Payment ledger</h2><p class="note">Recorded payments. Sandbox and live mode are shown per row; a missing mode is not assumed.</p><div id="paymentRowsBody"></div><div><button id="paymentsPrevious" type="button" data-work="payments-previous">Previous</button> <button id="paymentsNext" type="button" data-work="payments-next">Next</button></div></section>
+<section id="teamPanel" class="panel" hidden><h2>Team and access</h2><div id="teamBody"></div><form id="bindingForm" class="card"><h3>Record an access decision</h3><div class="field-grid"><label>Existing account<select id="bindingPerson" name="userId" required></select></label><label>Role<select id="bindingRole" name="role" required></select></label><label>State scope (empty = all)<input name="scopeState" pattern="[A-Z]{2}" maxlength="2"></label><label>Status<select name="status"><option value="active">Active</option><option value="revoked">Revoked</option></select></label><label>Expiry (optional)<input name="expiresAt" type="datetime-local"></label><label>Reason<textarea name="note" minlength="10" required></textarea></label></div><button>Record access decision</button></form></section>
+<section id="messagesPanel" class="panel" hidden><h2>Messages</h2><div id="messagesBody"></div></section>
+<section id="historyPanel" class="panel" hidden><h2>Action history</h2><div id="historyBody"></div></section>
+<section id="settingsPanel" class="panel" hidden><h2>Connections</h2><div id="settingsBody"></div></section>
+
+<section id="catalogPanel" class="panel" aria-label="Catalog" hidden>
           <div class="panel-heading">
             <h2>What each system says</h2>
             <button id="reloadCatalog" class="secondary-button" type="button">Reload</button>
@@ -147,14 +168,10 @@
                 <span>Duration (seconds)</span>
                 <input id="reserveDuration" name="durationSeconds" type="number" min="1" max="7200" step="0.001" required />
               </label>
-              <label>
-                <span>Transcript path</span>
-                <input id="reserveTranscript" name="transcriptPath" placeholder="private-media/…" required />
-              </label>
-              <label>
-                <span>Captions path</span>
-                <input id="reserveCaptions" name="captionsPath" placeholder="private-media/…" required />
-              </label>
+              <input id="reserveTranscript" type="hidden" />
+              <input id="reserveCaptions" type="hidden" />
+              <label><span>Replace existing asset (if occupied)</span><input id="reserveReplaces" placeholder="Existing asset key" /></label>
+              <label><span>Replacement reason</span><input id="reserveReplacementReason" minlength="10" /></label>
               <label class="file-field">
                 <span>Video file</span>
                 <input id="reserveFile" name="file" type="file" accept="video/mp4,video/*" required />
@@ -237,9 +254,10 @@
             <button type="submit">Record decision</button>
           </form>
         </section>
-      </div>
+      </div></div>
     </main>
 
+    <script src="workspace.js" type="module"></script>
     <script src="console.js" type="module"></script>
   </body>
 </html>
