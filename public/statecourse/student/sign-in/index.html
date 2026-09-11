@@ -9,6 +9,7 @@
     <meta name="description" content="Sign in to My StateCourse to continue your licensing path, courses, progress, and certificates." />
     <link rel="icon" href="../../favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="../student-portal.css?v=20260818-signin" />
+    <script src="/student/auth-entry.js"></script>
   </head>
   <body class="registration-page signin-page">
     <a class="skip-link" href="#signin-form">Skip to sign-in form</a>
@@ -53,7 +54,8 @@
             <button class="create-account-button signin-button" type="submit">Sign In to My StateCourse</button>
           </form>
 
-          <p class="signin-message" id="signinMessage" role="status" aria-live="polite"></p>
+          <p><a href="/student/password/">Forgot password?</a></p><button id="googleSignIn" type="button">Continue with Google</button><p id="authFlowMessage" role="status" aria-live="polite"></p>
+<p class="signin-message" id="signinMessage" role="status" aria-live="polite"></p>
 
           <div class="new-account-section">
             <p><strong>New to StateCourse?</strong></p>

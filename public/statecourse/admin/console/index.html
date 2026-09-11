@@ -8,6 +8,7 @@
     <title>Administration Console | StateCourse</title>
     <link rel="icon" href="../../favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="console.css" />
+    <script src="/student/auth-entry.js"></script>
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to console</a>
@@ -20,6 +21,7 @@
       <nav aria-label="Administration">
         <a href="../">Regulatory cockpit</a>
         <a href="../payments/">Payments</a>
+        <a href="/student/password/?mode=change">Change password</a>
       </nav>
     </header>
 
@@ -53,7 +55,8 @@
             </label>
             <button type="submit">Sign in</button>
           </form>
-          <div id="sessionRoles" class="roles" hidden></div>
+          <p><a href="/student/password/">Forgot password?</a></p><button id="googleSignIn" type="button">Continue with Google</button><p id="authFlowMessage" role="status" aria-live="polite"></p>
+<div id="sessionRoles" class="roles" hidden></div>
           <button id="signOut" class="secondary-button" type="button" hidden>Sign out</button>
         </aside>
       </section>

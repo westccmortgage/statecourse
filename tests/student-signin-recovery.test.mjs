@@ -64,7 +64,7 @@ async function frontend(status, body = {}, networkFailure = false) {
   const query = key => { if (!elements.has(key)) elements.set(key, element()); return elements.get(key); };
   const form = query('#studentSignIn'); form.elements = { email: element(), password: element() }; form.elements.email.value = 'existing@example.test'; form.querySelector = query; form.addEventListener = (name, fn) => { if (name === 'submit') submit = fn; };
   vm.runInNewContext(readFileSync(new URL('../public/statecourse/student/sign-in/student-signin.js', import.meta.url), 'utf8'), {
-    document: { querySelector: query }, URLSearchParams,
+    document: { querySelector: query, documentElement: { dataset: {} } }, URLSearchParams,
     location: { search: '', replace: value => { redirect = value; } },
     fetch: async (_, options = {}) => {
       if (!options.method) return { ok: false };

@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><meta name="referrer" content="no-referrer"><title>Account security | StateCourse</title><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="password.css"><script src="password.js" defer></script></head>
+<body><header><a class="brand" href="/">StateCourse</a><span>YOUR LEARNING ACCOUNT</span></header>
+<main><p class="eyebrow">ACCOUNT SECURITY</p><h1 id="title">Forgot your password?</h1><p id="intro">Enter your account email. We will send you a link to choose a new password.</p>
+<form id="passwordForm">
+<div id="emailField"><label for="email">Email address</label><input id="email" name="email" type="email" autocomplete="email" maxlength="254" required></div>
+<div id="currentField" hidden><label for="currentPassword">Current password</label><input id="currentPassword" name="currentPassword" type="password" autocomplete="current-password" maxlength="200"></div>
+<div id="newFields" hidden><label for="newPassword">New password</label><input id="newPassword" name="password" type="password" autocomplete="new-password" minlength="10" maxlength="200" aria-describedby="passwordHelp"><p id="passwordHelp">Use at least 10 characters. A long, unique passphrase works well.</p><label for="confirmPassword">Confirm new password</label><input id="confirmPassword" name="confirmPassword" type="password" autocomplete="new-password" minlength="10" maxlength="200"><button id="showPassword" type="button" class="text-button" aria-pressed="false">Show passwords</button></div>
+<button id="submit" type="submit">Send reset link</button></form>
+<p id="message" role="status" aria-live="polite"></p>
+<nav><a href="/student/sign-in/">Student sign-in</a><a href="/admin/console/">Administrator sign-in</a><a id="forgotLink" href="/student/password/" hidden>Request a new reset link</a></nav></main>
+<footer>StateCourse · Account security</footer></body></html>

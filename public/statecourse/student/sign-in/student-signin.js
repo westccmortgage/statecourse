@@ -59,6 +59,7 @@ document.querySelector(".password-toggle").addEventListener("click", (event) => 
 });
 
 async function existingSession() {
+  if (document.documentElement.dataset.authCallback === "true") return;
   const response = await fetch("/api/student/session", { credentials: "same-origin" }).catch(() => null);
   if (response?.ok) location.replace(returnPath());
 }
