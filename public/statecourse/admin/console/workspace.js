@@ -20,7 +20,7 @@ async function send(action,body={}) {
 }
 function message(text,error=false){const el=$('#workspaceMessage');el.textContent=text;el.classList.toggle('error',error);}
 function lockPreviewForms(){
-  document.querySelectorAll('#courseWorkspace form button, #taskCreateForm button, .taskChange button, #bindingForm button, #runHealth').forEach(button=>{
+  document.querySelectorAll('#courseWorkspace form button:not([data-work="preview-text"]), #taskCreateForm button, .taskChange button, #bindingForm button, #runHealth').forEach(button=>{
     button.disabled=true;
     button.title='Read-only interface review. This operation is not activated.';
   });
