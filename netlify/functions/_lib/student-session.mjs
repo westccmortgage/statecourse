@@ -28,7 +28,9 @@ async function authRequest(path, { method="GET", token, body }={}) {
     method,
     headers: {
       apikey: anonKey,
-      authorization: token ? `Bearer ${token}` : `Bearer ${anonKey}`,
+      // Opaque API keys belong only in apikey; user access tokens remain Bearer JWTs.
+      ...(token ? { authorization: `Bearer ${token}` } :
+        anonKey.startsWith("sb_") ? {} : { authorization: `Bearer ${anonKey}` }),
       "content-type": "application/json",
       accept: "application/json"
     },
@@ -36,6 +38,12 @@ async function authRequest(path, { method="GET", token, body }={}) {
   });
   const data = await response.json().catch(() => ({}));
   if (!response.ok) {
+    if (data.code === "email_not_confirmed" || data.error_code === "email_not_confirmed") {
+      throw Object.assign(new Error("email_confirmation_required"), { statusCode: 403 });
+    }
+    if (response.status === 429) {
+      throw Object.assign(new Error("sign_in_rate_limited"), { statusCode: 429 });
+    }
     const statusCode = response.status === 400 || response.status === 401 ? 401 : 503;
     throw Object.assign(new Error(statusCode === 401 ? "invalid_student_session" : "student_auth_unavailable"), { statusCode });
   }
@@ -101,7 +109,7 @@ export async function registerStudent(input = {}) {
 export async function signInStudent(emailInput,passwordInput) {
   const email = String(emailInput || "").trim().toLowerCase();
   const password = String(passwordInput || "");
-  if (!EMAIL.test(email) || password.length < 8 || password.length > 200) {
+  if (!EMAIL.test(email) || password.length === 0 || password.length > 200) {
     throw Object.assign(new Error("invalid_sign_in"), { statusCode: 400 });
   }
   const session = await authRequest("token?grant_type=password", { method:"POST", body:{ email,password } });

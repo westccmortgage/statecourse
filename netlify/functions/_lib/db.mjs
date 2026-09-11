@@ -11,7 +11,8 @@ export async function dbRequest(path, { method = "GET", body, prefer } = {}) {
   const { url, key } = credentials();
   const headers = {
     apikey: key,
-    authorization: `Bearer ${key}`,
+    // New Supabase secret keys are not JWTs. Preserve legacy service-role keys.
+    ...(key.startsWith("sb_") ? {} : { authorization: `Bearer ${key}` }),
     "content-type": "application/json",
   };
   if (prefer) headers.prefer = prefer;

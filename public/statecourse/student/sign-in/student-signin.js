@@ -84,12 +84,24 @@ form.addEventListener("submit", async (event) => {
       headers: { "content-type": "application/json" },
       body: JSON.stringify({ email: email.value.trim(), password: password.value })
     });
-    if (!response.ok) throw new Error("sign_in_failed");
+    if (!response.ok) {
+      const result = await response.json().catch(() => ({}));
+      let text = "Sign-in is temporarily unavailable. Please try again shortly.";
+      if (response.status === 401 || (response.status === 400 && result.error === "invalid_sign_in")) {
+        text = "We could not sign you in. Check your email address and password, then try again.";
+      } else if (response.status === 403 && result.error === "email_confirmation_required") {
+        text = "Please confirm your email using the confirmation link sent when you registered, then sign in.";
+      } else if (response.status === 429) {
+        text = "Too many sign-in attempts. Please wait a few minutes, then try again.";
+      } else if (response.status === 403) {
+        text = "This sign-in request was blocked. Reload this page and try again.";
+      }
+      throw Object.assign(new Error("sign_in_failed"), { userMessage: text });
+    }
     password.value = "";
     location.replace(returnPath());
   } catch (error) {
-    console.error(error);
-    message.textContent = "We could not sign you in. Check your email address and password, then try again.";
+    message.textContent = error.userMessage || "We could not connect to sign-in. Check your connection and try again.";
     message.classList.add("error");
     submitButton.disabled = false;
     submitButton.textContent = "Sign In to My StateCourse";
