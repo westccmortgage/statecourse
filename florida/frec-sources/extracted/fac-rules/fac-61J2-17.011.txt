@@ -1,0 +1,23 @@
+SOURCE: https://www.flrules.org/gateway/readFile.asp?sid=0&tid=26639418&type=1&file=61J2-17.011.doc
+PUBLISHER: Florida Department of State, Division of Library and Information Services (flrules.org) — official publisher of the Florida Administrative Code
+RULE: 61J2-17.011 F.A.C.
+CHAPTER: 
+EFFECTIVE: 1/1/2023
+RETRIEVED: 2026-08-30
+LOCAL COPY: florida/frec-sources/fac/fac-61J2-17.011.doc
+SHA256: 7b964b308ded0cae50b220e948e346859429c05da67477e8a4ab51c89412634b
+EXTRACTION: strings(1) over the Word 97 stream; LibreOffice could not load the file.
+----------------------------------------------------------------------
+61J2-17.011 School Instructor and Permit Holder Requirements and Qualifications.
+(1) A person shall qualify for an instructor
+s permit by meeting the qualifications for practice set forth in Section 475.451(2)(b)1., F.S. 
+Extensive real estate experience
+ shall be defined as a minimum of three years of full-time experience as a broker. This experience must include having participated in closing at least five real estate transactions as a licensee, or as the employing broker of licensees, for either party to the transaction, within the 12-month period immediately preceding the filing of an instructor
+s application.
+(2) A person shall qualify to be a school permit holder by meeting the qualifications for practice set forth in Section 475.25(2)(a), F.S. The licensee must be a holder of a Florida Broker
+s license in order to satisfy the Broker license requirement in Section 475.25(2)(a), F.S.
+Rulemaking Authority 475.05, 475.451(2)(b)1.b. FS. Law Implemented 475.451 FS. History
+New 10-13-88, Amended 1-13-91, 8-19-91, 6-28-93, Formerly 21V-17.011, Amended 11-24-97, 1-1-23.
+61J2-17
+Normal
+61J2-17

@@ -1,0 +1,19 @@
+SOURCE: https://www.flrules.org/gateway/readFile.asp?sid=0&tid=25966044&type=1&file=61J2-17.014.doc
+PUBLISHER: Florida Department of State, Division of Library and Information Services (flrules.org) — official publisher of the Florida Administrative Code
+RULE: 61J2-17.014 F.A.C.
+CHAPTER: 
+EFFECTIVE: 6/30/2022
+RETRIEVED: 2026-08-30
+LOCAL COPY: florida/frec-sources/fac/fac-61J2-17.014.doc
+SHA256: c52367de48a80942d2c328717b5c7792bdf3ab0886780d43cc50c015b2e1c9c5
+EXTRACTION: strings(1) over the Word 97 stream; LibreOffice could not load the file.
+----------------------------------------------------------------------
+61J2-17.014 Guest Lecturers.
+Guest lecturers may be used by a real estate school offering Commission prescribed or approved equivalent courses so long as:
+(1) Guest lecturers provide no more than 20% of the total course;
+(2) An instructor licensed with such school is available on the premises.
+Rulemaking Authority 475.05 FS. Law Implemented 475.451(1), (2)(a), (6) FS. History
+New 6-28-93, Formerly 21V-17.014, Amended 6-30-22.
+61J2-17
+Normal
+61J2-17

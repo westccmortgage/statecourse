@@ -1,0 +1,2227 @@
+<!-- function myopen(url) { window.open(url,'windowName'); } //-->
+<!-- function MM_reloadPage(init) { //reloads the window if Nav4 resized if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) { document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }} else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload(); } MM_reloadPage(true); //-->
+Statutes & Constitution :View Statutes : Online Sunshine
+window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-21KKHEC1NN', { cookie_flags: 'max-age=7200;secure;samesite=none' });
+Skip to Menu
+|
+Skip to Main Content
+August 31, 2026
+Search Statutes:
+2026
+2025
+2024
+2023
+2022
+2021
+2020
+2019
+2018
+2017
+2016
+2015
+2014
+2013
+2012
+2011
+2010
+2009
+2008
+2007
+2006
+2005
+2004
+2003
+2002
+2001
+2000
+1999
+1998
+1997
+Search Terms:
+Home
+Senate
+House
+Citator
+Statutes, Constitution,
+& Laws of Florida
+Florida Statutes
+Search & Browse Download
+Search Statutes
+Search Tips
+Florida Constitution
+Laws of Florida
+Legislative & Executive Branch Lobbyists
+Information Center
+Joint Legislative Committees &
+Other Entities
+Joint Administrative Procedures Committee (JAPC)
+Joint Committee on Public Counsel Oversight(JCPO)
+Joint Legislative Auditing Committee (JLAC)
+Joint Legislative Budget Commission (JLBC)
+Joint Select Committee on Collective Bargaining (JSCB)
+Office of Program Policy Analysis & Government Accountability (OPPAGA)
+Auditor General
+Commission on Ethics
+Economic and Demographic Research (EDR)
+Florida Historic Capitol
+Florida Government Efficiency Task Force
+Legislative Employment
+Legistore
+Links
+Select Year:
+2026
+2025
+2024
+2023
+2022
+2021
+2020
+2019
+2018
+2017
+2016
+2015
+2014
+2013
+2012
+2011
+2010
+2009
+2008
+2007
+2006
+2005
+2004
+2003
+2002
+2001
+2000
+1999
+1998
+1997
+The Florida Statutes
+<!-- .PartTOC { padding-left : 30px; } .ChapterTOC { padding-left : 30px; } -->
+The 2026 Florida Statutes
+Title XLII
+ESTATES AND TRUSTS
+Chapter 732
+PROBATE CODE: INTESTATE SUCCESSION AND WILLS
+View Entire Chapter
+CHAPTER 732
+CHAPTER 732
+PROBATE CODE: INTESTATE SUCCESSION AND WILLS
+PART I
+INTESTATE SUCCESSION
+(ss. 732.101-732.111)
+PART II
+ELECTIVE SHARE OF SURVIVING SPOUSE; RIGHTS IN COMMUNITY
+PROPERTY
+(ss. 732.201-732.228)
+PART III
+PRETERMITTED SPOUSE AND CHILDREN
+(ss. 732.301, 732.302)
+PART IV
+EXEMPT PROPERTY AND ALLOWANCES
+(ss. 732.401-732.403)
+PART V
+WILLS
+(ss. 732.501-732.526)
+PART VI
+RULES OF CONSTRUCTION
+(ss. 732.6005-732.616)
+PART VII
+CONTRACTUAL ARRANGEMENTS RELATING TO DEATH
+(ss. 732.701-732.703)
+PART VIII
+GENERAL PROVISIONS
+(ss. 732.802-732.806)
+PART IX
+PRODUCTION OF WILLS
+(s. 732.901)
+PART I
+INTESTATE SUCCESSION
+732.101
+Intestate estate.
+732.102
+Spouse’s share of intestate estate.
+732.103
+Share of other heirs.
+732.104
+Inheritance per stirpes.
+732.105
+Half blood.
+732.106
+Afterborn heirs.
+732.107
+Escheat.
+732.108
+Adopted persons and persons born out of wedlock.
+732.1081
+Termination of parental rights.
+732.109
+Debts to decedent.
+732.1101
+Aliens.
+732.111
+Dower and curtesy abolished.
+732.101
+Intestate estate.
+—
+(1)
+Any part of the estate of a decedent not effectively disposed of by will passes to the decedent’s heirs as prescribed in the following sections of this code.
+(2)
+The decedent’s death is the event that vests the heirs’ right to the decedent’s intestate property.
+History.
+—
+s. 1, ch. 74-106; s. 8, ch. 75-220; s. 14, ch. 2001-226.
+Note.
+—
+Created from former s. 731.23.
+732.102
+Spouse’s share of intestate estate.
+—
+The intestate share of the surviving spouse is:
+(1)
+If there is no surviving descendant of the decedent, the entire intestate estate.
+(2)
+If the decedent is survived by one or more descendants, all of whom are also descendants of the surviving spouse, and the surviving spouse has no other descendant, the entire intestate estate.
+(3)
+If there are one or more surviving descendants of the decedent who are not lineal descendants of the surviving spouse, one-half of the intestate estate.
+(4)
+If there are one or more surviving descendants of the decedent, all of whom are also descendants of the surviving spouse, and the surviving spouse has one or more descendants who are not descendants of the decedent, one-half of the intestate estate.
+History.
+—
+s. 1, ch. 74-106; s. 8, ch. 75-220; s. 15, ch. 2001-226; s. 5, ch. 2007-74; s. 2, ch. 2011-183.
+Note.
+—
+Created from former s. 731.23.
+732.103
+Share of other heirs.
+—
+The part of the intestate estate not passing to the surviving spouse under s. 732.102, or the entire intestate estate if there is no surviving spouse, descends as follows:
+(1)
+To the descendants of the decedent.
+(2)
+If there is no descendant, to the decedent’s father and mother equally, or to the survivor of them.
+(3)
+If there is none of the foregoing, to the decedent’s brothers and sisters and the descendants of deceased brothers and sisters.
+(4)
+If there is none of the foregoing, the estate shall be divided, one-half of which shall go to the decedent’s paternal, and the other half to the decedent’s maternal, kindred in the following order:
+(a)
+To the grandfather and grandmother equally, or to the survivor of them.
+(b)
+If there is no grandfather or grandmother, to uncles and aunts and descendants of deceased uncles and aunts of the decedent.
+(c)
+If there is either no paternal kindred or no maternal kindred, the estate shall go to the other kindred who survive, in the order stated above.
+(5)
+If there is no kindred of either part, the whole of the property shall go to the kindred of the last deceased spouse of the decedent as if the deceased spouse had survived the decedent and then died intestate entitled to the estate.
+(6)
+If none of the foregoing, and if any of the descendants of the decedent’s great-grandparents were Holocaust victims as defined in s. 626.9543(3)(a), including such victims in countries cooperating with the discriminatory policies of Nazi Germany, then to the descendants of the great-grandparents. The court shall allow any such descendant to meet a reasonable, not unduly restrictive, standard of proof to substantiate his or her lineage. This subsection only applies to escheated property and shall cease to be effective for proceedings filed after December 31, 2004.
+History.
+—
+s. 1, ch. 74-106; s. 8, ch. 75-220; s. 1, ch. 77-174; s. 16, ch. 2001-226; s. 145, ch. 2004-390; s. 102, ch. 2006-1; s. 6, ch. 2007-74.
+Note.
+—
+Created from former s. 731.23.
+732.104
+Inheritance per stirpes.
+—
+Descent shall be per stirpes, whether to descendants or to collateral heirs.
+History.
+—
+s. 1, ch. 74-106; s. 9, ch. 75-220; s. 7, ch. 2007-74.
+Note.
+—
+Created from former s. 731.25.
+732.105
+Half blood.
+—
+When property descends to the collateral kindred of the intestate and part of the collateral kindred are of the whole blood to the intestate and the other part of the half blood, those of the half blood shall inherit only half as much as those of the whole blood; but if all are of the half blood they shall have whole parts.
+History.
+—
+s. 1, ch. 74-106; s. 10, ch. 75-220.
+Note.
+—
+Created from former s. 731.24.
+732.106
+Afterborn heirs.
+—
+Heirs of the decedent conceived before his or her death, but born thereafter, inherit intestate property as if they had been born in the decedent’s lifetime.
+History.
+—
+s. 1, ch. 74-106; s. 10, ch. 75-220; s. 6, ch. 77-87; s. 952, ch. 97-102.
+Note.
+—
+Created from former s. 731.11.
+732.107
+Escheat.
+—
+(1)
+When a person dies leaving an estate without being survived by any person entitled to a part of it, that part shall escheat to the state.
+(2)
+Property that escheats shall be sold as provided in the Florida Probate Rules and the proceeds paid to the Chief Financial Officer of the state and deposited in the State School Fund.
+(3)
+At any time within 10 years after the payment to the Chief Financial Officer, a person claiming to be entitled to the proceeds may reopen the administration to assert entitlement to the proceeds. If no claim is timely asserted, the state’s rights to the proceeds shall become absolute.
+(4)
+The Department of Legal Affairs shall represent the state in all proceedings concerning escheated estates.
+(5)(a)
+If a person entitled to the proceeds assigns the rights to receive payment to an attorney, Florida-certified public accountant, or private investigative agency which is duly licensed to do business in this state pursuant to a written agreement with that person, the Department of Financial Services is authorized to make distribution in accordance with the assignment.
+(b)
+Payments made to an attorney, Florida-certified public accountant, or private investigative agency shall be promptly deposited into a trust or escrow account which is regularly maintained by the attorney, Florida-certified public accountant, or private investigative agency in a financial institution authorized to accept such deposits and located in this state.
+(c)
+Distribution by the attorney, Florida-certified public accountant, or private investigative agency to the person entitled to the proceeds shall be made within 10 days following final credit of the deposit into the trust or escrow account at the financial institution, unless a party to the agreement protests the distribution in writing before it is made.
+(d)
+The department shall not be civilly or criminally liable for any proceeds distributed pursuant to this subsection, provided such distribution is made in good faith.
+History.
+—
+s. 1, ch. 74-106; s. 10, ch. 75-220; s. 4, ch. 89-291; s. 9, ch. 89-299; s. 953, ch. 97-102; s. 32, ch. 2001-36; s. 17, ch. 2001-226; s. 1896, ch. 2003-261.
+Note.
+—
+Created from former s. 731.33.
+732.108
+Adopted persons and persons born out of wedlock.
+—
+(1)
+For the purpose of intestate succession by or from an adopted person, the adopted person is a descendant of the adopting parent and is one of the natural kindred of all members of the adopting parent’s family, and is not a descendant of his or her natural parents, nor is he or she one of the kindred of any member of the natural parent’s family or any prior adoptive parent’s family, except that:
+(a)
+Adoption of a child by the spouse of a natural parent has no effect on the relationship between the child and the natural parent or the natural parent’s family.
+(b)
+Adoption of a child by a natural parent’s spouse who married the natural parent after the death of the other natural parent has no effect on the relationship between the child and the family of the deceased natural parent.
+(c)
+Adoption of a child by a close relative, as defined in s. 63.172(2), has no effect on the relationship between the child and the families of the deceased natural parents.
+(2)
+For the purpose of intestate succession in cases not covered by subsection (1), a person born out of wedlock is a descendant of his or her mother and is one of the natural kindred of all members of the mother’s family. The person is also a descendant of his or her father and is one of the natural kindred of all members of the father’s family, if:
+(a)
+The natural parents participated in a marriage ceremony before or after the birth of the person born out of wedlock, even though the attempted marriage is void.
+(b)
+The paternity of the father is established by an adjudication before or after the death of the father. Chapter 95 shall not apply in determining heirs in a probate proceeding under this paragraph.
+(c)
+The paternity of the father is acknowledged in writing by the father.
+History.
+—
+s. 1, ch. 74-106; s. 11, ch. 75-220; s. 7, ch. 77-87; s. 1, ch. 77-174; s. 2, ch. 87-27; s. 954, ch. 97-102; s. 8, ch. 2007-74; s. 2, ch. 2009-115.
+Note.
+—
+Created from former ss. 731.29, 731.30.
+732.1081
+Termination of parental rights.
+—
+For the purpose of intestate succession by a natural or adoptive parent, a natural or adoptive parent is barred from inheriting from or through a child if the natural or adoptive parent’s parental rights were terminated pursuant to chapter 39 prior to the death of the child, and the natural or adoptive parent shall be treated as if the parent predeceased the child.
+History.
+—
+s. 4, ch. 2012-109.
+732.109
+Debts to decedent.
+—
+A debt owed to the decedent shall not be charged against the intestate share of any person except the debtor. If the debtor does not survive the decedent, the debt shall not be taken into account in computing the intestate share of the debtor’s heirs.
+History.
+—
+s. 1, ch. 74-106; s. 11, ch. 75-220.
+Note.
+—
+Created from former s. 736.01.
+732.1101
+Aliens.
+—
+Aliens shall have the same rights of inheritance as citizens.
+History.
+—
+s. 1, ch. 74-106; s. 113, ch. 75-220; s. 955, ch. 97-102; s. 18, ch. 2001-226.
+Note.
+—
+Created from former s. 731.28.
+732.111
+Dower and curtesy abolished.
+—
+Dower and curtesy are abolished.
+History.
+—
+s. 1, ch. 74-106; s. 113, ch. 75-220.
+PART II
+ELECTIVE SHARE OF SURVIVING SPOUSE;
+RIGHTS IN COMMUNITY PROPERTY
+732.201
+Right to elective share.
+732.2025
+Definitions.
+732.2035
+Property entering into elective estate.
+732.2045
+Exclusions and overlapping application.
+732.2055
+Valuation of the elective estate.
+732.2065
+Amount of the elective share.
+732.2075
+Sources from which elective share payable; abatement.
+732.2085
+Liability of direct recipients and beneficiaries.
+732.2095
+Valuation of property used to satisfy elective share.
+732.2105
+Effect of election on other interests.
+732.2115
+Protection of payors and other third parties.
+732.2125
+Right of election; by whom exercisable.
+732.2135
+Time of election; extensions; withdrawal.
+732.2145
+Order of contribution; personal representative’s duty to collect contribution.
+732.2151
+Award of fees and costs in elective share proceedings.
+732.2155
+Effective date; effect of prior waivers; transition rules.
+732.216
+Short title.
+732.217
+Application.
+732.218
+Rebuttable presumptions.
+732.219
+Disposition upon death; waiver.
+732.2211
+Demands or disputes; statute of repose.
+732.222
+Purchaser for value or lender.
+732.2231
+Protection of payors and other third parties.
+732.224
+Creditor’s rights.
+732.225
+Acts of married persons.
+732.226
+Limitations on testamentary disposition.
+732.227
+Homestead defined.
+732.228
+Uniformity of application and construction.
+732.201
+Right to elective share.
+—
+The surviving spouse of a person who dies domiciled in Florida has the right to a share of the elective estate of the decedent as provided in this part, to be designated the elective share. The election does not reduce what the spouse receives if the election were not made and the spouse is not treated as having predeceased the decedent.
+History.
+—
+s. 1, ch. 74-106; s. 13, ch. 75-220; s. 1, ch. 99-343; s. 3, ch. 2016-189.
+Note.
+—
+Created from former s. 731.34.
+732.2025
+Definitions.
+—
+As used in ss. 732.2025-732.2155, the term:
+(1)
+“Direct recipient” means the decedent’s probate estate and any other person who receives property included in the elective estate by transfer from the decedent, including transfers described in s. 732.2035(9), by right of survivorship, or by beneficiary designation under a governing instrument. For this purpose, a beneficiary of an insurance policy on the decedent’s life, the net cash surrender value of which is included in the elective estate, is treated as having received property included in the elective estate. In the case of property held in trust, “direct recipient” includes the trustee but excludes the beneficiaries of the trust.
+(2)
+“Elective share trust” means a trust under which:
+(a)
+The surviving spouse is entitled for life to the use of the property or to all of the income payable at least as often as annually;
+(b)
+The surviving spouse has the right under the terms of the trust or state law to require the trustee either to make the property productive or to convert it within a reasonable time; and
+(c)
+During the spouse’s life, no person other than the spouse has the power to distribute income or principal to anyone other than the spouse.
+As used in this subsection, the term “income” has the same meaning as that provided in s. 643(b) of the Internal Revenue Code, as amended, and regulations adopted under that section.
+(3)
+“General power of appointment” means a power of appointment under which the holder of the power, whether or not the holder has the capacity to exercise it, has the power to create a present or future interest in the holder, the holder’s estate, or the creditors of either. The term includes a power to consume or invade the principal of a trust, but only if the power is not limited by an ascertainable standard relating to the holder’s health, education, support, or maintenance.
+(4)
+“Governing instrument” means a deed; will; trust; insurance or annuity policy; account with payable-on-death designation; security registered in beneficiary form (TOD); pension, profit-sharing, retirement, or similar benefit plan; an instrument creating or exercising a power of appointment or a power of attorney; or a dispositive, appointive, or nominative instrument of any similar type.
+(5)
+“Payor” means an insurer, business entity, employer, government, governmental agency or subdivision, or any other person, other than the decedent’s personal representative or a trustee of a trust created by the decedent, authorized or obligated by law or a governing instrument to make payments.
+(6)
+“Person” includes an individual, trust, estate, partnership, association, company, or corporation.
+(7)
+“Probate estate” means all property wherever located that is subject to estate administration in any state of the United States or in the District of Columbia.
+(8)
+“Qualifying special needs trust” or “supplemental needs trust” means a trust established for an ill or disabled surviving spouse with court approval before or after a decedent’s death, if, commencing on the decedent’s death:
+(a)
+The income and principal are distributable to or for the benefit of the spouse for life in the discretion of one or more trustees less than half of whom are ineligible family trustees. For purposes of this paragraph, ineligible family trustees include the decedent’s grandparents and any descendants of the decedent’s grandparents who are not also descendants of the surviving spouse; and
+(b)
+During the spouse’s life, no person other than the spouse has the power to distribute income or principal to anyone other than the spouse.
+The requirement for court approval shall not apply if the aggregate value of all property in all qualifying special needs trusts for the spouse is less than $100,000. For purposes of this subsection, value is determined on the “applicable valuation date” as defined in s. 732.2095(1)(a).
+(9)
+“Revocable trust” means a trust that is includable in the elective estate under s. 732.2035(5).
+(10)
+“Transfer in satisfaction of the elective share” means an irrevocable transfer by the decedent during life to an elective share trust.
+(11)
+“Transfer tax value” means the value the interest would have for purposes of the United States estate and gift tax laws if it passed without consideration to an unrelated person on the applicable valuation date.
+History.
+—
+s. 2, ch. 99-343; s. 19, ch. 2001-226; s. 2, ch. 2002-82; s. 151, ch. 2004-5; s. 9, ch. 2007-74; s. 3, ch. 2009-115; s. 1, ch. 2017-121.
+732.2035
+Property entering into elective estate.
+—
+Except as provided in s. 732.2045, the elective estate consists of the sum of the values as determined under s. 732.2055 of the following property interests:
+(1)
+The decedent’s probate estate.
+(2)
+The decedent’s interest in property which constitutes the protected homestead of the decedent.
+(3)
+The decedent’s ownership interest in accounts or securities registered in “Pay On Death,” “Transfer On Death,” “In Trust For,” or co-ownership with right of survivorship form. For this purpose, “decedent’s ownership interest” means, in the case of accounts or securities held in tenancy by the entirety, one-half of the value of the account or security, and in all other cases, that portion of the accounts or securities which the decedent had, immediately before death, the right to withdraw or use without the duty to account to any person.
+(4)
+The decedent’s fractional interest in property, other than property described in subsection (3) or subsection (8), held by the decedent in joint tenancy with right of survivorship or in tenancy by the entirety. For this purpose, “decedent’s fractional interest in property” means the value of the property divided by the number of tenants.
+(5)
+That portion of property, other than property described in subsections (2) and (3), transferred by the decedent to the extent that at the time of the decedent’s death the transfer was revocable by the decedent alone or in conjunction with any other person. This subsection does not apply to a transfer that is revocable by the decedent only with the consent of all persons having a beneficial interest in the property.
+(6)(a)
+That portion of property, other than property described in subsection (2), subsection (4), subsection (5), or subsection (8), transferred by the decedent to the extent that at the time of the decedent’s death:
+1.
+The decedent possessed the right to, or in fact enjoyed the possession or use of, the income or principal of the property; or
+2.
+The principal of the property could, in the discretion of any person other than the spouse of the decedent, be distributed or appointed to or for the benefit of the decedent.
+In the application of this subsection, a right to payments under a commercial or private annuity, an annuity trust, a unitrust, or a similar arrangement shall be treated as a right to that portion of the income of the property necessary to equal the annuity, unitrust, or other payment.
+(b)
+The amount included under this subsection is:
+1.
+With respect to subparagraph (a)1., the value of the portion of the property to which the decedent’s right or enjoyment related, to the extent the portion passed to or for the benefit of any person other than the decedent’s probate estate; and
+2.
+With respect to subparagraph (a)2., the value of the portion subject to the discretion, to the extent the portion passed to or for the benefit of any person other than the decedent’s probate estate.
+(c)
+This subsection does not apply to any property if the decedent’s only interests in the property are that:
+1.
+The property could be distributed to or for the benefit of the decedent only with the consent of all persons having a beneficial interest in the property; or
+2.
+The income or principal of the property could be distributed to or for the benefit of the decedent only through the exercise or in default of an exercise of a general power of appointment held by any person other than the decedent; or
+3.
+The income or principal of the property is or could be distributed in satisfaction of the decedent’s obligation of support; or
+4.
+The decedent had a contingent right to receive principal, other than at the discretion of any person, which contingency was beyond the control of the decedent and which had not in fact occurred at the decedent’s death.
+(7)
+The decedent’s beneficial interest in the net cash surrender value immediately before death of any policy of insurance on the decedent’s life.
+(8)
+The value of amounts payable to or for the benefit of any person by reason of surviving the decedent under any public or private pension, retirement, or deferred compensation plan, or any similar arrangement, other than benefits payable under the federal Railroad Retirement Act or the federal Social Security System. In the case of a defined contribution plan as defined in s. 414(i) of the Internal Revenue Code of 1986, as amended, this subsection shall not apply to the excess of the proceeds of any insurance policy on the decedent’s life over the net cash surrender value of the policy immediately before the decedent’s death.
+(9)
+Property that was transferred during the 1-year period preceding the decedent’s death as a result of a transfer by the decedent if the transfer was either of the following types:
+(a)
+Any property transferred as a result of the termination of a right or interest in, or power over, property that would have been included in the elective estate under subsection (5) or subsection (6) if the right, interest, or power had not terminated until the decedent’s death.
+(b)
+Any transfer of property to the extent not otherwise included in the elective estate, made to or for the benefit of any person, except:
+1.
+Any transfer of property for medical or educational expenses to the extent it qualifies for exclusion from the United States gift tax under s. 2503(e) of the Internal Revenue Code, as amended; and
+2.
+After the application of subparagraph 1., the first annual exclusion amount of property transferred to or for the benefit of each donee during the 1-year period, but only to the extent the transfer qualifies for exclusion from the United States gift tax under s. 2503(b) or (c) of the Internal Revenue Code, as amended. For purposes of this subparagraph, the term “annual exclusion amount” means the amount of one annual exclusion under s. 2503(b) or (c) of the Internal Revenue Code, as amended.
+(c)
+Except as provided in paragraph (d), for purposes of this subsection:
+1.
+A “termination” with respect to a right or interest in property occurs when the decedent transfers or relinquishes the right or interest, and, with respect to a power over property, a termination occurs when the power terminates by exercise, release, lapse, default, or otherwise.
+2.
+A distribution from a trust the income or principal of which is subject to subsection (5), subsection (6), or subsection (10) shall be treated as a transfer of property by the decedent and not as a termination of a right or interest in, or a power over, property.
+(d)
+Notwithstanding anything in paragraph (c) to the contrary:
+1.
+A “termination” with respect to a right or interest in property does not occur when the right or interest terminates by the terms of the governing instrument unless the termination is determined by reference to the death of the decedent and the court finds that a principal purpose for the terms of the instrument relating to the termination was avoidance of the elective share.
+2.
+A distribution from a trust is not subject to this subsection if the distribution is required by the terms of the governing instrument unless the event triggering the distribution is determined by reference to the death of the decedent and the court finds that a principal purpose of the terms of the governing instrument relating to the distribution is avoidance of the elective share.
+(10)
+Property transferred in satisfaction of the elective share.
+History.
+—
+s. 15, ch. 75-220; s. 3, ch. 99-343; s. 20, ch. 2001-226; s. 10, ch. 2007-74; s. 2, ch. 2017-121.
+Note.
+—
+Former s. 732.206.
+732.2045
+Exclusions and overlapping application.
+—
+(1)
+EXCLUSIONS.
+—
+Section 732.2035 does not apply to:
+(a)
+Except as provided in s. 732.2155(4), any transfer of property by the decedent to the extent the transfer is irrevocable before the effective date of this subsection or after that date but before the date of the decedent’s marriage to the surviving spouse.
+(b)
+Any transfer of property by the decedent to the extent the decedent received adequate consideration in money or money’s worth for the transfer.
+(c)
+Any transfer of property by the decedent made with the written consent of the decedent’s spouse. For this purpose, spousal consent to split-gift treatment under the United States gift tax laws does not constitute written consent to the transfer by the decedent.
+(d)
+The proceeds of any policy of insurance on the decedent’s life in excess of the net cash surrender value of the policy whether payable to the decedent’s estate, a trust, or in any other manner.
+(e)
+Any policy of insurance on the decedent’s life maintained pursuant to a court order.
+(f)
+The decedent’s one-half of the property to which ss. 732.216-732.228, or any similar provisions of law of another state, apply and real property that is community property under the laws of the jurisdiction where it is located.
+(g)
+Property held in a qualifying special needs trust on the date of the decedent’s death.
+(h)
+Property included in the gross estate of the decedent for federal estate tax purposes solely because the decedent possessed a general power of appointment.
+(i)
+Property which constitutes the protected homestead of the decedent if the surviving spouse validly waived his or her homestead rights as provided under s. 732.702, or otherwise under applicable law, and such spouse did not receive any interest in the protected homestead upon the decedent’s death.
+(2)
+OVERLAPPING APPLICATION.
+—
+If s. 732.2035(1) and any other subsection of s. 732.2035 apply to the same property interest, the amount included in the elective estate under other subsections is reduced by the amount included under subsection (1). In all other cases, if more than one subsection of s. 732.2035 applies to a property interest, only the subsection resulting in the largest elective estate shall apply.
+History.
+—
+s. 4, ch. 99-343; s. 21, ch. 2001-226; s. 4, ch. 2009-115; s. 3, ch. 2017-121.
+732.2055
+Valuation of the elective estate.
+—
+For purposes of s. 732.2035, “value” means:
+(1)(a)
+In the case of protected homestead:
+1.
+If the surviving spouse receives a fee simple interest, the fair market value of the protected homestead on the date of the decedent’s death.
+2.
+If the spouse takes a life estate as provided in s. 732.401(1), or validly elects to take an undivided one-half interest as a tenant in common as provided in s. 732.401(2), one-half of the fair market value of the protected homestead on the date of the decedent’s death.
+3.
+If the surviving spouse validly waived his or her homestead rights as provided under s. 732.702 or otherwise under applicable law, but nevertheless receives an interest in the protected homestead, other than an interest described in s. 732.401, including an interest in trust, the value of the spouse’s interest is determined as property interests that are not protected homestead.
+(b)
+For purposes of this subsection, fair market value shall be calculated by deducting from the total value of the property all mortgages, liens, and security interests to which the protected homestead is subject and for which the decedent is liable, but only to the extent that such amount is not otherwise deducted as a claim paid or payable from the elective estate.
+(2)
+In the case of any policy of insurance on the decedent’s life includable under s. 732.2035(5), (6), or (7), the net cash surrender value of the policy immediately before the decedent’s death.
+(3)
+In the case of any policy of insurance on the decedent’s life includable under s. 732.2035(9), the net cash surrender value of the policy on the date of the termination or transfer.
+(4)
+In the case of amounts includable under s. 732.2035(8), the transfer tax value of the amounts on the date of the decedent’s death.
+(5)
+In the case of other property included under s. 732.2035(9), the fair market value of the property on the date of the termination or transfer, computed after deducting any mortgages, liens, or security interests on the property as of that date.
+(6)
+In the case of all other property, the fair market value of the property on the date of the decedent’s death, computed after deducting from the total value of the property:
+(a)
+All claims paid or payable from the elective estate; and
+(b)
+To the extent they are not deducted under paragraph (a), all mortgages, liens, or security interests on the property.
+History.
+—
+s. 5, ch. 99-343; s. 22, ch. 2001-226; s. 4, ch. 2017-121.
+732.2065
+Amount of the elective share.
+—
+The elective share is an amount equal to 30 percent of the elective estate.
+History.
+—
+s. 15, ch. 75-220; s. 1, ch. 81-27; s. 6, ch. 99-343.
+Note.
+—
+Former s. 732.207.
+732.2075
+Sources from which elective share payable; abatement.
+—
+(1)
+Unless otherwise provided in the decedent’s will or, in the absence of a provision in the decedent’s will, in a trust referred to in the decedent’s will, the following are applied first to satisfy the elective share:
+(a)
+Property interests included in the elective estate that pass or have passed to or for the benefit of the surviving spouse, including interests that are contingent upon making the election, but only to the extent that such contingent interests do not diminish other property interests that would be applied to satisfy the elective share in the absence of the contingent interests.
+(b)
+To the extent paid to or for the benefit of the surviving spouse, amounts payable under any plan or arrangement described in s. 732.2035(8).
+(c)
+To the extent paid to or for the benefit of the surviving spouse, the decedent’s one-half of any property described in s. 732.2045(1)(f).
+(d)
+To the extent paid to or for the benefit of the surviving spouse, the proceeds of any term or other policy of insurance on the decedent’s life if, at the time of decedent’s death, the policy was owned by any person other than the surviving spouse.
+(e)
+Property held for the benefit of the surviving spouse in a qualifying special needs trust.
+(f)
+Property interests that would have satisfied the elective share under any preceding paragraph of this subsection but were disclaimed.
+(2)
+If, after the application of subsection (1), the elective share is not fully satisfied, the unsatisfied balance shall be allocated entirely to one class of direct recipients of the remaining elective estate and apportioned among those recipients, and if the elective share amount is not fully satisfied, to the next class of direct recipients, in the following order of priority, until the elective share amount is satisfied:
+(a)
+Class 1.
+—
+The decedent’s probate estate and revocable trusts.
+(b)
+Class 2.
+—
+Recipients of property interests, other than protected charitable interests, included in the elective estate under s. 732.2035(3), (4), or (7) and, to the extent the decedent had at the time of death the power to designate the recipient of the property, property interests, other than protected charitable interests, included under s. 732.2035(6) and (8).
+(c)
+Class 3.
+—
+Recipients of all other property interests, other than protected charitable interests, included in the elective estate.
+For purposes of this subsection, a protected charitable interest is any interest for which a charitable deduction with respect to the transfer of the property was allowed or allowable to the decedent or the decedent’s spouse under the United States gift or income tax laws.
+(3)
+If, after the application of subsections (1) and (2), the elective share amount is not fully satisfied, the additional amount due to the surviving spouse shall be determined and satisfied as follows:
+(a)
+The remaining unsatisfied balance shall be satisfied from property described in paragraphs (1)(a) and (b) which passes or which has passed in a trust in which the surviving spouse has a beneficial interest, other than an elective share trust or a qualified special needs trust.
+(b)
+In determining the amount of the remaining unsatisfied balance, the effect, if any, of any change caused by the operation of this subsection in the value of the spouse’s beneficial interests in property described in paragraphs (1)(a) and (b) shall be taken into account, including, if necessary, further recalculations of the value of those beneficial interests.
+(c)
+If there is more than one trust to which this subsection could apply, unless otherwise provided in the decedent’s will or, in the absence of a provision in the decedent’s will, in a trust referred to in the decedent’s will, the unsatisfied balance shall be apportioned pro rata to all such trusts in proportion to the value, as determined under s. 732.2095(2)(f), of the surviving spouse’s beneficial interests in the trusts.
+(4)
+If, after the application of subsections (1), (2), and (3), the elective share is not fully satisfied, any remaining unsatisfied balance shall be satisfied from direct recipients of protected charitable lead interests, but only to the extent and at such times that contribution is permitted without disqualifying the charitable interest in that property for a deduction under the United States gift tax laws. For purposes of this subsection, a protected charitable lead interest is a protected charitable interest as defined in subsection (2) in which one or more deductible interests in charity precede some other nondeductible interest or interests in the property.
+(5)
+The contribution required of the decedent’s probate estate and revocable trusts may be made in cash or in kind. In the application of this subsection, subsections (6) and (7) are to be applied to charge contribution for the elective share to the beneficiaries of the probate estate and revocable trusts as if all beneficiaries were taking under a common governing instrument.
+(6)
+Unless otherwise provided in the decedent’s will or, in the absence of a provision in the decedent’s will, in a trust referred to in the decedent’s will, any amount to be satisfied from the decedent’s probate estate, other than from property passing to an inter vivos trust, shall be paid from the assets of the probate estate in the order prescribed in s. 733.805.
+(7)
+Unless otherwise provided in the trust instrument or, in the decedent’s will if there is no provision in the trust instrument, any amount to be satisfied from trust property shall be paid from the assets of the trust in the order provided for claims under s. 736.05053(2) and (3). A direction in the decedent’s will is effective only for revocable trusts.
+History.
+—
+s. 15, ch. 75-220; s. 7, ch. 99-343; s. 23, ch. 2001-226; s. 4, ch. 2002-82; s. 31, ch. 2006-217; s. 11, ch. 2007-74; s. 5, ch. 2009-115; s. 5, ch. 2017-121.
+Note.
+—
+Former s. 732.209.
+732.2085
+Liability of direct recipients and beneficiaries.
+—
+(1)
+Only direct recipients of property included in the elective estate and the beneficiaries of the decedent’s probate estate or of any trust that is a direct recipient, are liable to contribute toward satisfaction of the elective share.
+(a)
+Within each of the classes described in s. 732.2075(2)(b) and (c), each direct recipient is liable in an amount equal to the value, as determined under s. 732.2055, of the proportional part of the liability for all members of the class.
+(b)
+Trust and probate estate beneficiaries who receive a distribution of principal after the decedent’s death are liable in an amount equal to the value of the principal distributed to them multiplied by the contribution percentage of the distributing trust or estate. For this purpose, “contribution percentage” means the remaining unsatisfied balance of the trust or estate at the time of the distribution divided by the value of the trust or estate as determined under s. 732.2055. “Remaining unsatisfied balance” means the amount of liability initially apportioned to the trust or estate reduced by amounts or property previously contributed by any person in satisfaction of that liability.
+(2)
+In lieu of paying the amount for which they are liable, beneficiaries who have received a distribution of property included in the elective estate and direct recipients other than the decedent’s probate estate or revocable trusts, may:
+(a)
+Contribute a proportional part of all property received; or
+(b)
+With respect to any property interest received before the date of the court’s order of contribution:
+1.
+Contribute all of the property; or
+2.
+If the property has been sold or exchanged prior to the date on which the spouse’s election is filed, pay an amount equal to the value of the property, less reasonable costs of sale, on the date it was sold or exchanged.
+In the application of paragraph (a), the “proportional part of all property received” is determined separately for each class of priority under s. 732.2075(2).
+(3)
+If a person pays the value of the property on the date of a sale or exchange or contributes all of the property received, as provided in paragraph (2)(b):
+(a)
+No further contribution toward satisfaction of the elective share shall be required with respect to that property. However, if a person’s required contribution is not fully paid by 2 years after the date of the death of the decedent, such person must also pay interest at the statutory rate on any portion of the required contribution that remains unpaid.
+(b)
+Any unsatisfied contribution is treated as additional unsatisfied balance and reapportioned to other recipients as provided in s. 732.2075 and this section.
+(4)
+If any part of s. 732.2035 or s. 732.2075 is preempted by federal law with respect to a payment, an item of property, or any other benefit included in the elective estate, a person who, not for value, receives the payment, item of property, or any other benefit is obligated to return the payment, item of property, or benefit, or is personally liable for the amount of the payment or the value of that item of property or benefit, as provided in ss. 732.2035 and 732.2075, to the person who would have been entitled to it were that section or part of that section not preempted.
+History.
+—
+s. 8, ch. 99-343; s. 24, ch. 2001-226; s. 6, ch. 2009-115; s. 6, ch. 2017-121.
+732.2095
+Valuation of property used to satisfy elective share.
+—
+(1)
+DEFINITIONS.
+—
+As used in this section, the term:
+(a)
+“Applicable valuation date” means:
+1.
+In the case of transfers in satisfaction of the elective share, the date of the decedent’s death.
+2.
+In the case of property held in a qualifying special needs trust on the date of the decedent’s death, the date of the decedent’s death.
+3.
+In the case of other property irrevocably transferred to or for the benefit of the surviving spouse during the decedent’s life, the date of the transfer.
+4.
+In the case of property distributed to the surviving spouse by the personal representative, the date of distribution.
+5.
+Except as provided in subparagraphs 1., 2., and 3., in the case of property passing in trust for the surviving spouse, the date or dates the trust is funded in satisfaction of the elective share.
+6.
+In the case of property described in s. 732.2035(2), (3), or (4), the date of the decedent’s death.
+7.
+In the case of proceeds of any policy of insurance payable to the surviving spouse, the date of the decedent’s death.
+8.
+In the case of amounts payable to the surviving spouse under any plan or arrangement described in s. 732.2035(8), the date of the decedent’s death.
+9.
+In all other cases, the date of the decedent’s death or the date the surviving spouse first comes into possession of the property, whichever occurs later.
+(b)
+“Qualifying power of appointment” means a general power of appointment that is exercisable alone and in all events by the decedent’s spouse in favor of the spouse or the spouse’s estate. For this purpose, a general power to appoint by will is a qualifying power of appointment if the power may be exercised by the spouse in favor of the spouse’s estate without the consent of any other person.
+(c)
+“Qualifying invasion power” means a power held by the surviving spouse or the trustee of an elective share trust to invade trust principal for the health, support, and maintenance of the spouse. The power may, but need not, provide that the other resources of the spouse are to be taken into account in any exercise of the power.
+(2)
+Except as provided in this subsection, the value of property for purposes of s. 732.2075 is the fair market value of the property on the applicable valuation date.
+(a)
+If the surviving spouse has a life interest in property not in trust that entitles the spouse to the use of the property for life, including, without limitation, a life estate in protected homestead as provided in s. 732.401(1), the value of the spouse’s interest is one-half of the value of the property on the applicable valuation date.
+(b)
+If the surviving spouse elects to take an undivided one-half interest in protected homestead as a tenant in common as provided in s. 732.401(2), the value of the spouse’s interest is one-half of the value of the property on the applicable valuation date.
+(c)
+If the surviving spouse validly waived his or her homestead rights as provided in s. 732.702 or otherwise under applicable law but nevertheless receives an interest in protected homestead, other than an interest described in s. 732.401, including, without limitation, an interest in trust, the value of the spouse’s interest is determined as property interests that are not protected homestead.
+(d)
+If the surviving spouse has an interest in a trust, or portion of a trust, which meets the requirements of an elective share trust, the value of the spouse’s interest is a percentage of the value of the principal of the trust, or trust portion, on the applicable valuation date as follows:
+1.
+One hundred percent if the trust instrument includes both a qualifying invasion power and a qualifying power of appointment.
+2.
+Eighty percent if the trust instrument includes a qualifying invasion power but no qualifying power of appointment.
+3.
+Fifty percent in all other cases.
+(e)
+If the surviving spouse is a beneficiary of a trust, or portion of a trust, which meets the requirements of a qualifying special needs trust, the value of the principal of the trust, or trust portion, on the applicable valuation date.
+(f)
+If the surviving spouse has an interest in a trust that does not meet the requirements of either an elective share trust or a qualifying special needs trust, the value of the spouse’s interest is the transfer tax value of the interest on the applicable valuation date; however, the aggregate value of all of the spouse’s interests in the trust shall not exceed one-half of the value of the trust principal on the applicable valuation date.
+(g)
+In the case of any policy of insurance on the decedent’s life the proceeds of which are payable outright or to a trust described in paragraph (d), paragraph (e), or paragraph (f), the value of the policy for purposes of s. 732.2075 and paragraphs (d), (e), and (f) is the net proceeds.
+(h)
+In the case of a right to one or more payments from an annuity or under a similar contractual arrangement or under any plan or arrangement described in s. 732.2035(8), the value of the right to payments for purposes of s. 732.2075 and paragraphs (d), (e), and (f) is the transfer tax value of the right on the applicable valuation date.
+History.
+—
+s. 9, ch. 99-343; s. 25, ch. 2001-226; s. 7, ch. 2017-121.
+732.2105
+Effect of election on other interests.
+—
+The elective share shall be in addition to homestead, exempt property, and allowances as provided in part IV.
+History.
+—
+s. 15, ch. 75-220; s. 10, ch. 99-343; s. 26, ch. 2001-226.
+Note.
+—
+Former s. 732.208.
+732.2115
+Protection of payors and other third parties.
+—
+Although a property interest is included in the decedent’s elective estate under s. 732.2035(3)-(9), a payor or other third party is not liable for paying, distributing, or transferring the property to a beneficiary designated in a governing instrument, or for taking any other action in good faith reliance on the validity of a governing instrument.
+History.
+—
+s. 11, ch. 99-343; s. 8, ch. 2017-121.
+732.2125
+Right of election; by whom exercisable.
+—
+The right of election may be exercised:
+(1)
+By the surviving spouse.
+(2)
+With approval of the court having jurisdiction of the probate proceeding by an attorney in fact or a guardian of the property of the surviving spouse. Before approving the election, the court shall determine that the election is in the best interests of the surviving spouse during the spouse’s probable lifetime.
+History.
+—
+s. 15, ch. 75-220; s. 12, ch. 99-343; s. 27, ch. 2001-226; s. 6, ch. 2010-132.
+Note.
+—
+Former s. 732.210.
+732.2135
+Time of election; extensions; withdrawal.
+—
+(1)
+Except as provided in subsection (2), the election must be filed on or before the earlier of the date that is 6 months after the date of service of a copy of the notice of administration on the surviving spouse, or an attorney in fact or guardian of the property of the surviving spouse, or the date that is 2 years after the date of the decedent’s death.
+(2)
+Within the period provided in subsection (1), or 40 days after the date of termination of any proceeding which affects the amount the spouse is entitled to receive under s. 732.2075(1), whichever is later, but no more than 2 years after the decedent’s death, the surviving spouse or an attorney in fact or guardian of the property of the surviving spouse may petition the court for an extension of time for making an election. For good cause shown, the court may extend the time for election. If the court grants the petition for an extension, the election must be filed within the time allowed by the extension.
+(3)
+The surviving spouse or an attorney in fact, guardian of the property, or personal representative of the surviving spouse may withdraw an election at any time within 8 months after the decedent’s death and before the court’s order of contribution.
+(4)
+A petition for an extension of the time for making the election or for approval to make the election shall toll the time for making the election.
+History.
+—
+s. 15, ch. 75-220; s. 13, ch. 99-343; s. 28, ch. 2001-226; s. 4, ch. 2006-134; s. 7, ch. 2009-115; s. 9, ch. 2017-121.
+Note.
+—
+Former s. 732.212.
+732.2145
+Order of contribution; personal representative’s duty to collect contribution.
+—
+(1)
+The court shall determine the elective share and contribution. Any amount of the elective share not satisfied within 2 years of the date of death of the decedent shall bear interest at the statutory rate until fully satisfied, even if an order of contribution has not yet been entered. Contributions shall bear interest at the statutory rate beginning 90 days after the order of contribution. The order is prima facie correct in proceedings in any court or jurisdiction.
+(2)
+Except as provided in subsection (3), the personal representative shall collect contribution from the recipients of the elective estate as provided in the court’s order of contribution.
+(a)
+If property within the possession or control of the personal representative is distributable to a beneficiary or trustee who is required to contribute in satisfaction of the elective share, the personal representative shall withhold from the distribution the contribution required of the beneficiary or trustee.
+(b)
+If, after the order of contribution, the personal representative brings an action to collect contribution from property not within the personal representative’s control, the judgment shall include the personal representative’s costs and reasonable attorney’s fees. The personal representative is not required to seek collection of any portion of the elective share from property not within the personal representative’s control until after the entry of the order of contribution.
+(3)
+A personal representative who has the duty under this section of enforcing contribution may be relieved of that duty by an order of the court finding that it is impracticable to enforce contribution in view of the improbability of obtaining a judgment or the improbability of collection under any judgment that might be obtained, or otherwise. The personal representative shall not be liable for failure to attempt collection if the attempt would have been economically impracticable.
+(4)
+Nothing in this section limits the independent right of the surviving spouse to collect the elective share as provided in the order of contribution, and that right is hereby conferred. If the surviving spouse brings an action to enforce the order, the judgment shall include the surviving spouse’s costs and reasonable attorney’s fees.
+History.
+—
+s. 14, ch. 99-343; s. 29, ch. 2001-226; s. 10, ch. 2017-121.
+732.2151
+Award of fees and costs in elective share proceedings.
+—
+(1)
+The court may award taxable costs as in chancery actions, including attorney fees, in any proceeding under this part in which there is an objection to or dispute over:
+(a)
+The entitlement to or the amount of the elective share;
+(b)
+The property interests included in the elective estate, or its value; or
+(c)
+The satisfaction of the elective share.
+(2)
+When awarding taxable costs or attorney fees, the court may do one or more of the following:
+(a)
+Direct payment from the estate.
+(b)
+Direct payment from a party’s interest in the elective share or the elective estate.
+(c)
+Enter a judgment that can be satisfied from other property of the party.
+(3)
+In addition to any of the fees that may be awarded under subsections (1) and (2), if the personal representative does not file a petition to determine the amount of the elective share as required by the Florida Probate Rules, the electing spouse or the attorney in fact, guardian of the property, or personal representative of the electing spouse may be awarded from the estate reasonable costs, including attorney fees, incurred in connection with the preparation and filing of the petition.
+(4)
+This section applies to all proceedings commenced on or after July 1, 2017, without regard to the date of the decedent’s death.
+History.
+—
+s. 11, ch. 2017-121.
+732.2155
+Effective date; effect of prior waivers; transition rules.
+—
+(1)
+Sections 732.201-732.2155 are effective on October 1, 1999, for all decedents dying on or after October 1, 2001. The law in effect prior to October 1, 1999, applies to decedents dying before October 1, 2001.
+(2)
+Nothing in ss. 732.201-732.2155 modifies or applies to the rights of spouses under chapter 61.
+(3)
+A waiver of elective share rights before the effective date of this section which is otherwise in compliance with the requirements of s. 732.702 is a waiver of all rights under ss. 732.201-732.2145.
+(4)
+Notwithstanding anything in s. 732.2045(1)(a) to the contrary, any trust created by the decedent before the effective date of ss. 732.201-732.2145 that meets the requirements of an elective share trust is treated as if the decedent created the trust after the effective date of these sections and in satisfaction of the elective share.
+(5)
+Sections 732.201-732.2155 do not affect any interest in contracts entered into for adequate consideration in money or money’s worth before October 1, 1999, to the extent that the contract was irrevocable at all times from October 1, 1999, until the date of the decedent’s death.
+(6)
+Sections 732.201-732.2155 do not affect any interest in property held, as of the decedent’s death, in a trust, whether revocable or irrevocable, if:
+(a)
+The property was an asset of the trust at all times between October 1, 1999, and the date of the decedent’s death;
+(b)
+The decedent was not married to the decedent’s surviving spouse when the property was transferred to the trust; and
+(c)
+The property was a nonmarital asset as defined in s. 61.075 immediately prior to the decedent’s death.
+History.
+—
+s. 15, ch. 99-343; s. 30, ch. 2001-226.
+732.216
+Short title.
+—
+Sections 732.216-732.228 may be cited as the “Florida Uniform Disposition of Community Property Rights at Death Act.”
+History.
+—
+s. 4, ch. 92-200.
+732.217
+Application.
+—
+Sections 732.216-732.228 apply to the disposition at death of the following property acquired by a married person:
+(1)
+Personal property, except personal property held as tenants by the entirety, wherever located, which:
+(a)
+Was acquired as, or became and remained, community property under the laws of another jurisdiction;
+(b)
+Was acquired with the rents, issues, or income of, or the proceeds from, or in exchange for, community property; or
+(c)
+Is traceable to that community property.
+(2)
+Real property, except real property held as tenants by the entirety and homestead property, which is located in this state, and which:
+(a)
+Was acquired with the rents, issues, or income of, the proceeds from, or in exchange for, property acquired as, or which became and remained, community property under the laws of another jurisdiction; or
+(b)
+Is traceable to that community property.
+History.
+—
+s. 5, ch. 92-200; s. 4, ch. 2003-154; s. 2, ch. 2024-238.
+732.218
+Rebuttable presumptions.
+—
+In determining whether ss. 732.216-732.228 apply to specific property, the following rebuttable presumptions apply:
+(1)
+Property acquired during marriage by a spouse of that marriage while domiciled in a jurisdiction under whose laws property could then be acquired as community property is presumed to have been acquired as, or to have become and remained, property to which these sections apply.
+(2)
+Real property located in this state and personal property wherever located acquired by a married person while domiciled in a jurisdiction under whose laws property could not then be acquired as community property and title to which was taken in a form which created rights of survivorship are presumed to be property to which these sections do not apply.
+History.
+—
+s. 6, ch. 92-200; s. 31, ch. 2001-226; s. 3, ch. 2024-238.
+732.219
+Disposition upon death; waiver.
+—
+(1)
+Upon the death of a married person, one-half of the property to which ss. 732.216-732.228 apply is the property of the surviving spouse, is not property of the decedent’s probate estate, and is not subject to testamentary disposition by the decedent or distribution under the laws of succession of this state. One-half of that property is the property of the decedent’s probate estate and is subject to testamentary disposition or distribution under the laws of succession of this state. The decedent’s one-half of that property is not in the elective estate. For purposes of this section, the term “probate estate” means all property wherever located that is subject to estate administration in any state of the United States or in the District of Columbia.
+(2)
+If not previously waived pursuant to s. 732.702, the right of a surviving spouse to assert a claim arising under ss. 732.216-732.228 to any right, title, or interest in any property held by the decedent at the time of his or her death may be waived, wholly or partly, by a written contract, agreement, or waiver, signed by the surviving spouse, or any person acting on behalf of a surviving spouse, including, but not limited to, an attorney in fact; agent; guardian of the property; or personal representative, if the written contract, agreement, or waiver includes the following or substantially similar language:
+“By executing this contract, agreement, or waiver, I intend to waive my right as a surviving spouse to assert a claim to any right, title, or interest in property held by the decedent at the time of the decedent’s death arising under the Florida Uniform Disposition of Community Property Rights at Death Act (ss. 732.216-732.228, Florida Statutes), wholly or partly, as provided herein.”
+History.
+—
+s. 7, ch. 92-200; s. 32, ch. 2001-226; s. 107, ch. 2002-1; s. 4, ch. 2024-238.
+732.2211
+Demands or disputes; statute of repose.
+—
+(1)(a)
+Any demand or dispute arising, wholly or partly, under ss. 732.216-732.228 regarding any right, title, or interest in any property held by the decedent or surviving spouse at the time of the decedent’s death shall be determined in an action for declaratory relief governed by the rules of civil procedure. Notwithstanding any other law, a complaint for such action must be filed within 2 years after the decedent’s death or be forever barred.
+(b)
+An action for declaratory relief instituted pursuant to this section is not a claim, as defined in s. 731.201, and is not subject to ss. 733.701-733.710.
+(2)
+The personal representative or curator has no duty to discover whether property held by the decedent or surviving spouse at the time of the decedent’s death is property to which ss. 732.216-732.228 apply, or may apply, unless a written demand is made by:
+(a)
+The surviving spouse or a beneficiary within 6 months after service of a copy of the notice of administration on the surviving spouse or beneficiary.
+(b)
+A creditor, except as provided in paragraph (c), within 3 months after the time of the first publication of the notice to creditors.
+(c)
+A creditor required to be served with a copy of the notice to creditors, within the later of 30 days after the date of service on the creditor or the time under paragraph (b).
+(3)
+The rights of any interested person who fails to timely file an action for declaratory relief pursuant to this section are forfeited. The decedent’s surviving spouse, personal representative or curator, or any other person or entity that at any time is in possession of any property to which ss. 732.216-732.228 apply, or may apply, shall not be subject to liability for any such forfeit rights. The decedent’s personal representative or curator may distribute the assets of the decedent’s estate without liability for any such forfeit rights.
+(4)
+This section does not affect any issue or matter not arising, wholly or partly, under ss. 732.216-732.228.
+History.
+—
+s. 6, ch. 2024-238.
+732.222
+Purchaser for value or lender.
+—
+(1)
+If a surviving spouse has apparent title to property to which ss. 732.216-732.228 apply, a purchaser for value or a lender taking a security interest in the property takes the interest in the property free of any rights of the personal representative or a beneficiary of the decedent.
+(2)
+If a personal representative or a beneficiary of the decedent has apparent title to property to which ss. 732.216-732.228 apply, a purchaser for value or a lender taking a security interest in the property takes that interest in the property free of any rights of the surviving spouse.
+(3)
+A purchaser for value or a lender need not inquire whether a vendor or borrower acted properly.
+(4)
+The proceeds of a sale or creation of a security interest must be treated as the property transferred to the purchaser for value or a lender.
+History.
+—
+s. 9, ch. 92-200; s. 956, ch. 97-102; s. 34, ch. 2001-226.
+732.2231
+Protection of payors and other third parties.
+—
+(1)
+As used in this section, the term:
+(a)
+“Governing instrument” has the same meaning as in s. 732.2025.
+(b)
+“Payor” means the decedent’s personal representative, a trustee of a trust created by the decedent, an insurer, business entity, employer, government, governmental agency or subdivision, or any other person authorized or obligated by law or a governing instrument to make payments.
+(c)
+“Person” has the same meaning as in s. 732.2025.
+(2)
+A property interest is subject to property rights under ss. 732.216-732.228; however, a payor or other third party is not liable for paying, distributing, or transferring such property to a beneficiary designated in a governing instrument, or for taking any other action in good faith reliance on the validity of a governing instrument.
+History.
+—
+s. 8, ch. 2024-238.
+732.224
+Creditor’s rights.
+—
+Sections 732.216-732.228 do not affect rights of creditors with respect to property to which ss. 732.216-732.228 apply.
+History.
+—
+s. 11, ch. 92-200.
+732.225
+Acts of married persons.
+—
+Sections 732.216-732.228 do not prevent married persons from severing or altering their interests in property to which these sections apply. The reinvestment of any property to which these sections apply in real property located in this state which is or becomes real or personal property held by tenants by the entirety or homestead property creates a conclusive presumption that the spouses have agreed to terminate the community property attribute of the property reinvested.
+History.
+—
+s. 12, ch. 92-200; s. 9, ch. 2024-238.
+732.226
+Limitations on testamentary disposition.
+—
+Sections 732.216-732.228 do not authorize a person to dispose of property by will if it is held under limitations imposed by law preventing testamentary disposition by that person.
+History.
+—
+s. 13, ch. 92-200.
+732.227
+Homestead defined.
+—
+For purposes of ss. 732.216-732.228, the term “homestead” refers only to property the descent and devise of which is restricted by s. 4(c), Art. X of the State Constitution.
+History.
+—
+s. 14, ch. 92-200.
+732.228
+Uniformity of application and construction.
+—
+Sections 732.216-732.228 are to be so applied and construed as to effectuate their general purpose to make uniform the law with respect to the subject of these sections among those states which enact them.
+History.
+—
+s. 15, ch. 92-200.
+PART III
+PRETERMITTED SPOUSE AND CHILDREN
+732.301
+Pretermitted spouse.
+732.302
+Pretermitted children.
+732.301
+Pretermitted spouse.
+—
+When a person marries after making a will and the spouse survives the testator, the surviving spouse shall receive a share in the estate of the testator equal in value to that which the surviving spouse would have received if the testator had died intestate, unless:
+(1)
+Provision has been made for, or waived by, the spouse by prenuptial or postnuptial agreement;
+(2)
+The spouse is provided for in the will; or
+(3)
+The will discloses an intention not to make provision for the spouse.
+The share of the estate that is assigned to the pretermitted spouse shall be obtained in accordance with s. 733.805.
+History.
+—
+s. 1, ch. 74-106; s. 16, ch. 75-220; s. 9, ch. 77-87.
+Note.
+—
+Created from former s. 731.10.
+732.302
+Pretermitted children.
+—
+When a testator omits to provide by will for any of his or her children born or adopted after making the will and the child has not received a part of the testator’s property equivalent to a child’s part by way of advancement, the child shall receive a share of the estate equal in value to that which the child would have received if the testator had died intestate, unless:
+(1)
+It appears from the will that the omission was intentional; or
+(2)
+The testator had one or more children when the will was executed and devised substantially all the estate to the other parent of the pretermitted child and that other parent survived the testator and is entitled to take under the will.
+The share of the estate that is assigned to the pretermitted child shall be obtained in accordance with s. 733.805.
+History.
+—
+s. 1, ch. 74-106; s. 16, ch. 75-220; s. 958, ch. 97-102; s. 36, ch. 2001-226.
+Note.
+—
+Created from former s. 731.11.
+PART IV
+EXEMPT PROPERTY AND ALLOWANCES
+732.401
+Descent of homestead.
+732.4015
+Devise of homestead.
+732.4017
+Inter vivos transfer of homestead property.
+732.402
+Exempt property.
+732.403
+Family allowance.
+732.401
+Descent of homestead.
+—
+(1)
+If not devised as authorized by law and the constitution, the homestead shall descend in the same manner as other intestate property; but if the decedent is survived by a spouse and one or more descendants, the surviving spouse shall take a life estate in the homestead, with a vested remainder to the descendants in being at the time of the decedent’s death per stirpes.
+(2)
+In lieu of a life estate under subsection (1), the surviving spouse may elect to take an undivided one-half interest in the homestead as a tenant in common, with the remaining undivided one-half interest vesting in the decedent’s descendants in being at the time of the decedent’s death, per stirpes.
+(a)
+The right of election may be exercised:
+1.
+By the surviving spouse; or
+2.
+With the approval of a court having jurisdiction of the real property, by an attorney in fact or guardian of the property of the surviving spouse. Before approving the election, the court shall determine that the election is in the best interests of the surviving spouse during the spouse’s probable lifetime.
+(b)
+The election must be made within 6 months after the decedent’s death and during the surviving spouse’s lifetime. The time for making the election may not be extended except as provided in paragraph (c).
+(c)
+A petition by an attorney in fact or by a guardian of the property of the surviving spouse for approval to make the election must be filed within 6 months after the decedent’s death and during the surviving spouse’s lifetime. If the petition is timely filed, the time for making the election shall be extended for at least 30 days after the rendition of the order allowing the election.
+(d)
+Once made, the election is irrevocable.
+(e)
+The election must be made by filing a notice of election containing the legal description of the homestead property for recording in the official record books of the county or counties where the homestead property is located. The notice must be in substantially the following form:
+ELECTION OF SURVIVING SPOUSE
+TO TAKE A ONE-HALF INTEREST OF
+DECEDENT’S INTEREST IN
+HOMESTEAD PROPERTY
+STATE OF
+COUNTY OF
+1. The decedent,
+, died on
+. On the date of the decedent’s death, the decedent was married to
+, who survived the decedent.
+2. At the time of the decedent’s death, the decedent owned an interest in real property that the affiant believes to be homestead property described in s. 4, Article X of the State Constitution, which real property being in
+County, Florida, and described as:
+(description of homestead property)
+.
+3. Affiant elects to take one-half of decedent’s interest in the homestead as a tenant in common in lieu of a life estate.
+4. If affiant is not the surviving spouse, affiant is the surviving spouse’s attorney in fact or guardian of the property, and an order has been rendered by a court having jurisdiction of the real property authorizing the undersigned to make this election.
+(Affiant)
+Sworn to (or affirmed) and subscribed before me by means of ☐ physical presence or ☐ online notarization this
+day of
+(month)
+,
+(year)
+, by
+(affiant)
+(Signature of Notary Public)
+(Print, Type, or Stamp Commissioned Name of Notary Public)
+Personally Known OR Produced Identification
+(Type of Identification Produced)
+(3)
+Unless and until an election is made under subsection (2), expenses relating to the ownership of the homestead shall be allocated between the surviving spouse, as life tenant, and the decedent’s descendants, as remaindermen, in accordance with chapter 738. If an election is made, expenses relating to the ownership of the homestead shall be allocated between the surviving spouse and the descendants as tenants in common in proportion to their respective shares, effective as of the date the election is filed for recording.
+(4)
+If the surviving spouse’s life estate created in subsection (1) is disclaimed pursuant to chapter 739, the interests of the decedent’s descendants may not be divested.
+(5)
+This section does not apply to property that the decedent owned in tenancy by the entireties or in joint tenancy with rights of survivorship.
+History.
+—
+s. 1, ch. 74-106; s. 17, ch. 75-220; s. 37, ch. 2001-226; s. 12, ch. 2007-74; s. 7, ch. 2010-132; s. 3, ch. 2012-109; s. 4, ch. 2021-205.
+Note.
+—
+Created from former s. 731.27.
+732.4015
+Devise of homestead.
+—
+(1)
+As provided by the State Constitution, the homestead shall not be subject to devise if the owner is survived by a spouse or a minor child or minor children, except that the homestead may be devised to the owner’s spouse if there is no minor child or minor children.
+(2)
+For the purposes of subsection (1), the term:
+(a)
+“Owner” includes the grantor of a trust described in s. 733.707(3) that is evidenced by a written instrument which is in existence at the time of the grantor’s death as if the interest held in trust was owned by the grantor.
+(b)
+“Devise” includes a disposition by trust of that portion of the trust estate which, if titled in the name of the grantor of the trust, would be the grantor’s homestead.
+(3)
+If an interest in homestead has been devised to the surviving spouse as authorized by law and the constitution, and the surviving spouse’s interest is disclaimed, the disclaimed interest shall pass in accordance with chapter 739.
+History.
+—
+s. 1, ch. 74-106; ss. 18, 30, ch. 75-220; s. 16, ch. 92-200; s. 959, ch. 97-102; s. 38, ch. 2001-226; s. 13, ch. 2007-74; s. 8, ch. 2010-132.
+732.4017
+Inter vivos transfer of homestead property.
+—
+(1)
+If the owner of homestead property transfers an interest in that property, including a transfer in trust, with or without consideration, to one or more persons during the owner’s lifetime, the transfer is not a devise for purposes of s. 731.201(10) or s. 732.4015, and the interest transferred does not descend as provided in s. 732.401 if the transferor fails to retain a power, held in any capacity, acting alone or in conjunction with any other person, to revoke or revest that interest in the transferor.
+(2)
+As used in this section, the term “transfer in trust” refers to a trust under which the transferor of the homestead property, alone or in conjunction with another person, does not possess a right of revocation as that term is defined in s. 733.707(3)(e). A power possessed by the transferor which is exercisable during the transferor’s lifetime to alter the beneficial use and enjoyment of the interest within a class of beneficiaries identified only in the trust instrument is not a right of revocation if the power may not be exercised in favor of the transferor, the transferor’s creditors, the transferor’s estate, or the creditors of the transferor’s estate or exercised to discharge the transferor’s legal obligations. This subsection does not create an inference that a power not described in this subsection is a power to revoke or revest an interest in the transferor.
+(3)
+The transfer of an interest in homestead property described in subsection (1) may not be treated as a devise of that interest even if:
+(a)
+The transferor retains a separate legal or equitable interest in the homestead property, directly or indirectly through a trust or other arrangement such as a term of years, life estate, reversion, possibility of reverter, or fractional fee interest;
+(b)
+The interest transferred does not become a possessory interest until a date certain or upon a specified event, the occurrence or nonoccurrence of which does not constitute a power held by the transferor to revoke or revest the interest in the transferor, including, without limitation, the death of the transferor; or
+(c)
+The interest transferred is subject to divestment, expiration, or lapse upon a date certain or upon a specified event, the occurrence or nonoccurrence of which does not constitute a power held by the transferor to revoke or revest the interest in the transferor, including, without limitation, survival of the transferor.
+(4)
+It is the intent of the Legislature that this section clarify existing law.
+History.
+—
+s. 9, ch. 2010-132.
+732.402
+Exempt property.
+—
+(1)
+If a decedent was domiciled in this state at the time of death, the surviving spouse, or, if there is no surviving spouse, the children of the decedent shall have the right to a share of the estate of the decedent as provided in this section, to be designated “exempt property.”
+(2)
+Exempt property shall consist of:
+(a)
+Household furniture, furnishings, and appliances in the decedent’s usual place of abode up to a net value of $20,000 as of the date of death.
+(b)
+Two motor vehicles as defined in s. 316.003, which do not, individually as to either such motor vehicle, have a gross vehicle weight in excess of 15,000 pounds, held in the decedent’s name and regularly used by the decedent or members of the decedent’s immediate family as their personal motor vehicles.
+(c)
+All qualified tuition programs authorized by s. 529 of the Internal Revenue Code of 1986, as amended, including, but not limited to, the Florida Prepaid College Trust Fund advance payment contracts under s. 1009.98 and the Florida Prepaid College Trust Fund participation agreements under s. 1009.981.
+(d)
+All benefits paid pursuant to s. 112.1915.
+(3)
+Exempt property shall be exempt from all claims against the estate except perfected security interests thereon.
+(4)
+Exempt property shall be in addition to protected homestead, statutory entitlements, and property passing under the decedent’s will or by intestate succession.
+(5)
+Property specifically or demonstratively devised by the decedent’s will to any devisee shall not be included in exempt property. However, persons to whom property has been specifically or demonstratively devised and who would otherwise be entitled to it as exempt property under this section may have the court determine the property to be exempt from claims, except for perfected security interests thereon, after complying with the provisions of subsection (6).
+(6)
+Persons entitled to exempt property shall be deemed to have waived their rights under this section unless a petition for determination of exempt property is filed by or on behalf of the persons entitled to the exempt property on or before the later of the date that is 4 months after the date of service of the notice of administration or the date that is 40 days after the date of termination of any proceeding involving the construction, admission to probate, or validity of the will or involving any other matter affecting any part of the estate subject to this section.
+(7)
+Property determined as exempt under this section shall be excluded from the value of the estate before residuary, intestate, or pretermitted or elective shares are determined.
+History.
+—
+s. 1, ch. 74-106; s. 19, ch. 75-220; s. 10, ch. 77-87; s. 1, ch. 77-174; s. 1, ch. 81-238; s. 3, ch. 85-79; s. 67, ch. 87-226; s. 51, ch. 98-421; s. 3, ch. 99-220; s. 3, ch. 2001-180; s. 39, ch. 2001-226; s. 1036, ch. 2002-387; s. 5, ch. 2006-134; s. 5, ch. 2006-303; s. 8, ch. 2009-115; s. 81, ch. 2016-239.
+Note.
+—
+Section 8, ch. 85-79, provides in pertinent part that with respect to s. 3, ch. 85-79, “the substantive rights of all persons which have vested prior to October 1, 1985, shall be determined as provided in s. 732.402, Florida Statutes, 1983.”
+Note.
+—
+Created from former s. 734.08.
+732.403
+Family allowance.
+—
+In addition to protected homestead and statutory entitlements, if the decedent was domiciled in Florida at the time of death, the surviving spouse and the decedent’s lineal heirs the decedent was supporting or was obligated to support are entitled to a reasonable allowance in money out of the estate for their maintenance during administration. The court may order this allowance to be paid as a lump sum or in periodic installments. The allowance shall not exceed a total of $18,000. It shall be paid to the surviving spouse, if living, for the use of the spouse and dependent lineal heirs. If the surviving spouse is not living, it shall be paid to the lineal heirs or to the persons having their care and custody. If any lineal heir is not living with the surviving spouse, the allowance may be made partly to the lineal heir or guardian or other person having the heir’s care and custody and partly to the surviving spouse, as the needs of the dependent heir and the surviving spouse appear. The family allowance is not chargeable against any benefit or share otherwise passing to the surviving spouse or to the dependent lineal heirs, unless the will otherwise provides. The death of any person entitled to a family allowance terminates the right to that part of the allowance not paid. For purposes of this section, the term “lineal heir” or “lineal heirs” means lineal ascendants and lineal descendants of the decedent.
+History.
+—
+s. 1, ch. 74-106; s. 19, ch. 75-220; s. 960, ch. 97-102; s. 40, ch. 2001-226.
+Note.
+—
+Created from former s. 733.20.
+PART V
+WILLS
+732.501
+Who may make a will.
+732.502
+Execution of wills.
+732.503
+Self-proof of will.
+732.504
+Who may witness.
+732.505
+Revocation by writing.
+732.506
+Revocation by act.
+732.507
+Effect of subsequent marriage, birth, adoption, or dissolution of marriage.
+732.508
+Revival by revocation.
+732.509
+Revocation of codicil.
+732.5105
+Republication of wills by codicil.
+732.511
+Republication of wills by reexecution.
+732.512
+Incorporation by reference.
+732.513
+Devises to trustee.
+732.514
+Vesting of devises.
+732.515
+Separate writing identifying devises of tangible property.
+732.5165
+Effect of fraud, duress, mistake, and undue influence.
+732.517
+Penalty clause for contest.
+732.518
+Will contests.
+732.521
+Definitions.
+732.522
+Method and place of execution.
+732.523
+Self-proof of electronic will.
+732.524
+Qualified custodians.
+732.525
+Liability coverage; receivership of qualified custodians.
+732.526
+Probate.
+732.501
+Who may make a will.
+—
+Any person who is of sound mind and who is either 18 or more years of age or an emancipated minor may make a will.
+History.
+—
+s. 1, ch. 74-106; s. 113, ch. 75-220; s. 41, ch. 2001-226.
+Note.
+—
+Created from former s. 731.04.
+732.502
+Execution of wills.
+—
+Every will must be in writing and executed as follows:
+(1)(a)
+Testator’s signature.
+—
+1.
+The testator must sign the will at the end; or
+2.
+The testator’s name must be subscribed at the end of the will by some other person in the testator’s presence and by the testator’s direction.
+(b)
+Witnesses.
+—
+The testator’s:
+1.
+Signing, or
+2.
+Acknowledgment:
+a.
+That he or she has previously signed the will, or
+b.
+That another person has subscribed the testator’s name to it,
+must be in the presence of at least two attesting witnesses.
+(c)
+Witnesses’ signatures.
+—
+The attesting witnesses must sign the will in the presence of the testator and in the presence of each other.
+(2)
+Any will, other than a holographic or nuncupative will, executed by a nonresident of Florida, either before or after this law takes effect, is valid as a will in this state if valid under the laws of the state or country where the will was executed. A will in the testator’s handwriting that has been executed in accordance with subsection (1) shall not be considered a holographic will.
+(3)
+Any will executed as a military testamentary instrument in accordance with 10 U.S.C. s. 1044d, Chapter 53, by a person who is eligible for military legal assistance is valid as a will in this state.
+(4)
+No particular form of words is necessary to the validity of a will if it is executed with the formalities required by law.
+(5)
+A codicil shall be executed with the same formalities as a will.
+History.
+—
+s. 1, ch. 74-106; s. 21, ch. 75-220; s. 11, ch. 77-87; s. 961, ch. 97-102; s. 42, ch. 2001-226; s. 5, ch. 2003-154.
+Note.
+—
+Created from former s. 731.07.
+732.503
+Self-proof of will.
+—
+(1)
+A will or codicil executed in conformity with s. 732.502 may be made self-proved at the time of its execution or at any subsequent date by the acknowledgment of it by the testator and the affidavits of the witnesses, made before an officer authorized to administer oaths and evidenced by the officer’s certificate attached to or following the will, in substantially the following form:
+STATE OF
+COUNTY OF
+I,
+, declare to the officer taking my acknowledgment of this instrument, and to the subscribing witnesses, that I signed this instrument as my will.
+Testator
+We,
+and
+, have been sworn by the officer signing below, and declare to that officer on our oaths that the testator declared the instrument to be the testator’s will and signed it in our presence and that we each signed the instrument as a witness in the presence of the testator and of each other.
+Witness
+Witness
+Acknowledged and subscribed before me by means of ☐ physical presence or ☐ online notarization by the testator,
+(type or print testator’s name)
+, who ☐ is personally known to me or ☐ has produced
+(state type of identification
+—
+see s. 117.05(5)(b)2.)
+as identification, and sworn to and subscribed before me by each of the following witnesses:
+(type or print name of first witness)
+who ☐ is personally known to me or ☐ has produced
+(state type of identification
+—
+see s. 117.05(5)(b)2.)
+as identification, by means of ☐ physical presence or ☐ online notarization; and
+(type or print name of second witness)
+who ☐ is personally known to me or ☐ has produced
+(state type of identification
+—
+see s. 117.05(5)(b)2.)
+as identification, by means of ☐ physical presence or ☐ online notarization. Subscribed by me in the presence of the testator and the subscribing witnesses, by the means specified herein, all on
+(date)
+.
+(Signature of Officer)
+(Print, type, or stamp commissioned name and affix official seal)
+(2)
+A will or codicil made self-proved under former law, or executed in another state and made self-proved under the laws of that state, shall be considered as self-proved under this section.
+History.
+—
+s. 1, ch. 74-106; s. 21, ch. 75-220; s. 12, ch. 77-87; s. 8, ch. 93-62; s. 962, ch. 97-102; s. 18, ch. 98-246; s. 43, ch. 2001-226; s. 5, ch. 2021-205.
+Note.
+—
+Created from former s. 731.071.
+732.504
+Who may witness.
+—
+(1)
+Any person competent to be a witness may act as a witness to a will.
+(2)
+A will or codicil, or any part of either, is not invalid because the will or codicil is signed by an interested witness.
+History.
+—
+s. 1, ch. 74-106; s. 22, ch. 75-220; s. 1, ch. 77-174; s. 268, ch. 79-400.
+732.505
+Revocation by writing.
+—
+A will or codicil, or any part of either, is revoked:
+(1)
+By a subsequent inconsistent will or codicil, even though the subsequent inconsistent will or codicil does not expressly revoke all previous wills or codicils, but the revocation extends only so far as the inconsistency.
+(2)
+By a subsequent will, codicil, or other writing executed with the same formalities required for the execution of wills declaring the revocation.
+History.
+—
+s. 1, ch. 74-106; s. 23, ch. 75-220; s. 13, ch. 77-87; s. 269, ch. 79-400; s. 44, ch. 2001-226.
+Note.
+—
+Created from former ss. 731.12, 731.13.
+732.506
+Revocation by act.
+—
+A will or codicil, other than an electronic will, is revoked by the testator, or some other person in the testator’s presence and at the testator’s direction, by burning, tearing, canceling, defacing, obliterating, or destroying it with the intent, and for the purpose, of revocation. An electronic will or codicil is revoked by the testator, or some other person in the testator’s presence and at the testator’s direction, by deleting, canceling, rendering unreadable, or obliterating the electronic will or codicil, with the intent, and for the purpose, of revocation, as proved by clear and convincing evidence.
+History.
+—
+s. 1, ch. 74-106; s. 23, ch. 75-220; s. 963, ch. 97-102; s. 31, ch. 2019-71.
+Note.
+—
+Created from former s. 731.14.
+732.507
+Effect of subsequent marriage, birth, adoption, or dissolution of marriage.
+—
+(1)
+Neither subsequent marriage, birth, nor adoption of descendants shall revoke the prior will of any person, but the pretermitted child or spouse shall inherit as set forth in ss. 732.301 and 732.302, regardless of the prior will.
+(2)
+Any provision of a will that affects the testator’s spouse is void upon dissolution of the marriage of the testator and the spouse, whether the marriage occurred before or after the execution of such will. Upon dissolution of marriage, the will shall be construed as if the spouse died at the time of the dissolution of marriage.
+(a)
+Dissolution of marriage occurs at the time the decedent’s marriage is judicially dissolved or declared invalid by court order.
+(b)
+This subsection does not invalidate a provision of a will:
+1.
+Executed by the testator after the dissolution of the marriage;
+2.
+If there is a specific intention to the contrary stated in the will; or
+3.
+If the dissolution of marriage judgment expressly provides otherwise.
+(3)
+This section applies to wills of decedents who die on or after June 29, 2021.
+History.
+—
+s. 1, ch. 74-106; s. 113, ch. 75-220; s. 3, ch. 90-23; s. 45, ch. 2001-226; s. 14, ch. 2007-74; ss. 2, 45, ch. 2021-183.
+Note.
+—
+Created from former ss. 731.10, 731.101, 731.11.
+732.508
+Revival by revocation.
+—
+(1)
+The revocation by the testator of a will that revokes a former will shall not revive the former will, even though the former will is in existence at the date of the revocation of the subsequent will.
+(2)
+The revocation of a codicil to a will does not revoke the will, and, in the absence of evidence to the contrary, it shall be presumed that in revoking the codicil the testator intended to reinstate the provisions of a will or codicil that were changed or revoked by the revoked codicil, as if the revoked codicil had never been executed.
+History.
+—
+s. 1, ch. 74-106; s. 25, ch. 75-220.
+Note.
+—
+Created from former s. 731.15.
+732.509
+Revocation of codicil.
+—
+The revocation of a will revokes all codicils to that will.
+History.
+—
+s. 1, ch. 74-106; s. 113, ch. 75-220.
+Note.
+—
+Created from former s. 731.16.
+732.5105
+Republication of wills by codicil.
+—
+The execution of a codicil referring to a previous will has the effect of republishing the will as modified by the codicil.
+History.
+—
+s. 1, ch. 74-106; s. 113, ch. 75-220.
+Note.
+—
+Created from former s. 731.17.
+732.511
+Republication of wills by reexecution.
+—
+If a will has been revoked or if it is invalid for any other reason, it may be republished and made valid by its reexecution or the execution of a codicil republishing it with the formalities required by this law for the execution of wills.
+History.
+—
+s. 1, ch. 74-106; s. 113, ch. 75-220.
+Note.
+—
+Created from former s. 731.18.
+732.512
+Incorporation by reference.
+—
+(1)
+A writing in existence when a will is executed may be incorporated by reference if the language of the will manifests this intent and describes the writing sufficiently to permit its identification.
+(2)
+A will may dispose of property by reference to acts and events which have significance apart from their effect upon the dispositions made by the will, whether they occur before or after the execution of the will or before or after the testator’s death. The execution or revocation of a will or trust by another person is such an event.
+History.
+—
+s. 1, ch. 74-106; s. 27, ch. 75-220.
+732.513
+Devises to trustee.
+—
+(1)
+A valid devise may be made to the trustee of a trust that is evidenced by a written instrument in existence at the time of making the will, or by a written instrument subscribed concurrently with making of the will, if the written instrument is identified in the will.
+(2)
+The devise shall not be invalid for any or all of the following reasons:
+(a)
+Because the trust is amendable or revocable, or both, by any person.
+(b)
+Because the trust has been amended or revoked in part after execution of the will or a codicil to it.
+(c)
+Because the only res of the trust is the possible expectancy of receiving, as a named beneficiary, a devise under a will or death benefits as described in s. 733.808, and even though the testator or other person has reserved any or all rights of ownership in the death benefit policy, contract, or plan, including the right to change the beneficiary.
+(d)
+Because of any of the provisions of s. 689.075.
+(3)
+The devise shall dispose of property under the terms of the instrument that created the trust as previously or subsequently amended.
+(4)
+An entire revocation of the trust by an instrument in writing before the testator’s death shall invalidate the devise or bequest.
+(5)
+Unless the will provides otherwise, the property devised shall not be held under a testamentary trust of the testator but shall become a part of the principal of the trust to which it is devised.
+History.
+—
+s. 1, ch. 74-106; s. 3, ch. 75-74; s. 113, ch. 75-220; s. 2, ch. 88-340; s. 46, ch. 2001-226; s. 32, ch. 2006-217.
+Note.
+—
+Created from former s. 736.17.
+732.514
+Vesting of devises.
+—
+The death of the testator is the event that vests the right to devises unless the testator in the will has provided that some other event must happen before a devise vests.
+History.
+—
+s. 1, ch. 74-106; ss. 28, 113, ch. 75-220; s. 964, ch. 97-102; s. 47, ch. 2001-226.
+Note.
+—
+Created from former ss. 731.21 and 733.102.
+732.515
+Separate writing identifying devises of tangible property.
+—
+A written statement or list referred to in the decedent’s will shall dispose of items of tangible personal property, other than property used in trade or business, not otherwise specifically disposed of by the will. To be admissible under this section as evidence of the intended disposition, the writing must be signed by the testator and must describe the items and the devisees with reasonable certainty. The writing may be prepared before or after the execution of the will. It may be altered by the testator after its preparation. It may be a writing that has no significance apart from its effect upon the dispositions made by the will. If more than one otherwise effective writing exists, then, to the extent of any conflict among the writings, the provisions of the most recent writing revoke the inconsistent provisions of each prior writing.
+History.
+—
+s. 1, ch. 74-106; s. 29, ch. 75-220; s. 48, ch. 2001-226.
+732.5165
+Effect of fraud, duress, mistake, and undue influence.
+—
+A will is void if the execution is procured by fraud, duress, mistake, or undue influence. Any part of the will is void if so procured, but the remainder of the will not so procured shall be valid if it is not invalid for other reasons. If the revocation of a will, or any part thereof, is procured by fraud, duress, mistake, or undue influence, such revocation is void.
+History.
+—
+s. 31, ch. 75-220; s. 6, ch. 2011-183.
+732.517
+Penalty clause for contest.
+—
+A provision in a will purporting to penalize any interested person for contesting the will or instituting other proceedings relating to the estate is unenforceable.
+History.
+—
+s. 1, ch. 74-106; s. 113, ch. 75-220.
+732.518
+Will contests.
+—
+An action to contest the validity of all or part of a will or the revocation of all or part of a will may not be commenced before the death of the testator.
+History.
+—
+s. 17, ch. 92-200; s. 7, ch. 2011-183.
+732.521
+Definitions.
+—
+As used in ss. 732.521-732.525, the term:
+(1)
+“Audio-video communication technology” has the same meaning as provided in s. 117.201.
+(2)
+“Electronic record” has the same meaning as provided in s. 668.50.
+(3)
+“Electronic signature” means an electronic mark visibly manifested in a record as a signature and executed or adopted by a person with the intent to sign the record.
+(4)
+“Electronic will” means a testamentary instrument, including a codicil, executed with an electronic signature by a person in the manner prescribed by this code, which disposes of the person’s property on or after his or her death and includes an instrument which merely appoints a personal representative or guardian or revokes or revises another will.
+(5)
+“Online notarization” has the same meaning as provided in s. 117.201.
+(6)
+“Online notary public” has the same meaning as provided in s. 117.201.
+(7)
+“Qualified custodian” means a person who meets the requirements of s. 732.524(1).
+(8)
+“Secure system” means a system that satisfies the requirements of a secure repository qualified to retain electronic journals of online notaries public in accordance with s. 117.245 and any rules established under part II of chapter 117.
+History.
+—
+s. 32, ch. 2019-71; s. 6, ch. 2021-205.
+732.522
+Method and place of execution.
+—
+For purposes of the execution or filing of an electronic will, the acknowledgment of an electronic will by the testator and the affidavits of witnesses under s. 732.503, or any other instrument under the Florida Probate Code:
+(1)
+Any requirement that an instrument be signed may be satisfied by an electronic signature.
+(2)
+Any requirement that individuals sign an instrument in the presence of one another may be satisfied by witnesses being present and electronically signing by means of audio-video communication technology that meets the requirements of part II of chapter 117 and any rules adopted thereunder, if:
+(a)
+The individuals are supervised by a notary public in accordance with s. 117.285;
+(b)
+The individuals are authenticated and signing as part of an online notarization session in accordance with s. 117.265;
+(c)
+The witness hears the signer make a statement acknowledging that the signer has signed the electronic record; and
+(d)
+The signing and witnessing of the instrument complies with the requirements of s. 117.285.
+(3)
+Except as otherwise provided in this part, all questions as to the force, effect, validity, and interpretation of an electronic will which comply with this section must be determined in the same manner as in the case of a will executed in accordance with s. 732.502.
+(4)
+An instrument that is signed electronically is deemed to be executed in this state if the instrument states that the person creating the instrument intends to execute and understands that he or she is executing the instrument in, and pursuant to the laws of, this state.
+History.
+—
+s. 33, ch. 2019-71.
+732.523
+Self-proof of electronic will.
+—
+An electronic will is self-proved if:
+(1)
+The acknowledgment of the electronic will by the testator and the affidavits of the witnesses are made in accordance with s. 732.503 and are part of the electronic record containing the electronic will, or are attached to, or are logically associated with, the electronic will;
+(2)
+The electronic will designates a qualified custodian;
+(3)
+The electronic record that contains the electronic will is held in the custody of a qualified custodian at all times before being offered to the court for probate; and
+(4)
+The qualified custodian who has custody of the electronic will at the time of the testator’s death certifies under oath that, to the best knowledge of the qualified custodian, the electronic record that contains the electronic will was at all times before being offered to the court in the custody of a qualified custodian in compliance with s. 732.524 and that the electronic will has not been altered in any way since the date of its execution.
+History.
+—
+s. 34, ch. 2019-71.
+732.524
+Qualified custodians.
+—
+(1)
+To serve as a qualified custodian of an electronic will, a person must be:
+(a)
+Domiciled in and a resident of this state; or
+(b)
+Incorporated, organized, or have its principal place of business in this state.
+(2)
+A qualified custodian shall:
+(a)
+In the course of maintaining custody of electronic wills, regularly employ a secure system and store in such secure system electronic records containing:
+1.
+Electronic wills;
+2.
+Records attached to or logically associated with electronic wills; and
+3.
+Acknowledgments of the electronic wills by testators, affidavits of the witnesses, and the records described in s. 117.245(1) and (2) which pertain to the online notarization.
+(b)
+Furnish for any court hearing involving an electronic will that is currently or was previously stored by the qualified custodian any information requested by the court pertaining to the qualified custodian’s qualifications, policies, and practices related to the creation, sending, communication, receipt, maintenance, storage, and production of electronic wills.
+(c)
+Provide access to or information concerning the electronic will, or the electronic record containing the electronic will, only:
+1.
+To the testator;
+2.
+To persons authorized by the testator in the electronic will or in written instructions signed by the testator with the formalities required for the execution of a will in this state;
+3.
+After the death of the testator, to the testator’s nominated personal representative; or
+4.
+At any time, as directed by a court of competent jurisdiction.
+(3)
+The qualified custodian of the electronic record of an electronic will may elect to destroy such record, including any of the documentation required to be created and stored under paragraph (2)(a), at any time after the earlier of the fifth anniversary of the conclusion of the administration of the estate of the testator or 20 years after the death of the testator.
+(4)
+A qualified custodian who at any time maintains custody of the electronic record of an electronic will may elect to cease serving in such capacity by:
+(a)
+Delivering the electronic will or the electronic record containing the electronic will to the testator, if then living, or, after the death of the testator, by filing the will with the court in accordance with s. 732.901; and
+(b)
+If the outgoing qualified custodian intends to designate a successor qualified custodian, by doing the following:
+1.
+Providing written notice to the testator of the name, address, and qualifications of the proposed successor qualified custodian. The testator must provide written consent before the electronic record, including the electronic will, is delivered to a successor qualified custodian;
+2.
+Delivering the electronic record containing the electronic will to the successor qualified custodian; and
+3.
+Delivering to the successor qualified custodian an affidavit of the outgoing qualified custodian stating that:
+a.
+The outgoing qualified custodian is eligible to act as a qualified custodian in this state;
+b.
+The outgoing qualified custodian is the qualified custodian designated by the testator in the electronic will or appointed to act in such capacity under this paragraph;
+c.
+The electronic will has at all times been in the custody of one or more qualified custodians in compliance with this section since the time the electronic record was created, and identifying such qualified custodians; and
+d.
+To the best of the outgoing qualified custodian’s knowledge, the electronic will has not been altered since the time it was created.
+For purposes of making this affidavit, the outgoing qualified custodian may rely conclusively on any affidavits delivered by a predecessor qualified custodian in connection with its designation or appointment as qualified custodian; however, all such affidavits must be delivered to the successor qualified custodian.
+(5)
+Upon the request of the testator which is made in writing signed with the formalities required for the execution of a will in this state, a qualified custodian who at any time maintains custody of the electronic record of the testator’s electronic will must cease serving in such capacity and must deliver to a successor qualified custodian designated in writing by the testator the electronic record containing the electronic will and the affidavit required in subparagraph (4)(b)3.
+(6)
+A qualified custodian may not succeed to office as a qualified custodian of an electronic will unless he or she agrees in writing to serve in such capacity.
+(7)
+If a qualified custodian is an entity, an affidavit, or an appearance by the testator in the presence of a duly authorized officer or agent of such entity, acting in his or her own capacity as such, shall constitute an affidavit, or an appearance by the testator in the presence of the qualified custodian.
+(8)
+A qualified custodian must provide a paper copy of an electronic will and the electronic record containing the electronic will to the testator immediately upon request. For the first request, the testator may not be charged a fee for being provided with these documents.
+(9)
+The qualified custodian shall be liable for any damages caused by the negligent loss or destruction of the electronic record, including the electronic will, while it is in the possession of the qualified custodian. A qualified custodian may not limit liability for such damages.
+(10)
+A qualified custodian may not terminate or suspend access to, or downloads of, the electronic will by the testator, provided that a qualified custodian may charge a fee for providing such access and downloads.
+(11)
+Upon receiving information that the testator is dead, a qualified custodian must deposit the electronic will with the court in accordance with s. 732.901. A qualified custodian may not charge a fee for depositing the electronic will with the clerk, provided the affidavit is made in accordance with s. 732.503, or furnishing in writing any information requested by a court under paragraph (2)(b).
+(12)
+Except as provided in this act, a qualified custodian must at all times keep information provided by the testator confidential and may not disclose such information to any third party.
+(13)
+A contractual venue provision between a qualified custodian and a testator is not valid or enforceable to the extent that it requires a specific jurisdiction or venue for any proceeding relating to the probate of an estate or the contest of a will.
+History.
+—
+s. 35, ch. 2019-71.
+732.525
+Liability coverage; receivership of qualified custodians.
+—
+(1)
+A qualified custodian shall:
+(a)
+Post and maintain a blanket surety bond of at least $250,000 to secure the faithful performance of all duties and obligations required under this part. The bond must be made payable to the Governor and his or her successors in office for the benefit of all persons who store electronic records with a qualified custodian and their estates, beneficiaries, successors, and heirs, and be conditioned on the faithful performance of all duties and obligations under this chapter. The terms of the bond must cover the acts or omissions of the qualified custodian and each agent or employee of the qualified custodian; or
+(b)
+Maintain a liability insurance policy that covers any losses sustained by any person who stores electronic records with a qualified custodian and their estates, beneficiaries, successors, and heirs which are caused by errors or omissions by the qualified custodian and each agent or employee of the qualified custodian. The policy must cover losses of at least $250,000 in the aggregate.
+(2)
+The Attorney General may petition a court of competent jurisdiction for the appointment of a receiver to manage the electronic records of a qualified custodian for proper delivery and safekeeping if any of the following conditions exist:
+(a)
+The qualified custodian is ceasing operation;
+(b)
+The qualified custodian intends to close the facility and adequate arrangements have not been made for proper delivery of the electronic records in accordance with this part;
+(c)
+The Attorney General determines that conditions exist which present a danger that electronic records will be lost or misappropriated; or
+(d)
+The qualified custodian fails to maintain and post a surety bond or maintain insurance as required in this section.
+History.
+—
+s. 36, ch. 2019-71.
+732.526
+Probate.
+—
+(1)
+An electronic will that is filed electronically with the clerk of the court through the Florida Courts E-Filing Portal is deemed to have been deposited with the clerk as an original of the electronic will.
+(2)
+A paper copy of an electronic will which is certified by a notary public to be a true and correct copy of the electronic will may be offered for and admitted to probate and shall constitute an original of the electronic will.
+History.
+—
+s. 37, ch. 2019-71.
+PART VI
+RULES OF CONSTRUCTION
+732.6005
+Rules of construction and intention.
+732.601
+Simultaneous Death Law.
+732.603
+Antilapse; deceased devisee; class gifts.
+732.604
+Failure of testamentary provision.
+732.605
+Change in securities; accessions; nonademption.
+732.606
+Nonademption of specific devises in certain cases; sale by guardian of the property; unpaid proceeds of sale, condemnation, or insurance.
+732.607
+Exercise of power of appointment.
+732.608
+Construction of terms.
+732.609
+Ademption by satisfaction.
+732.611
+Devises to multigeneration classes to be per stirpes.
+732.615
+Reformation to correct mistakes.
+732.616
+Modification to achieve testator’s tax objectives.
+732.6005
+Rules of construction and intention.
+—
+(1)
+The intention of the testator as expressed in the will controls the legal effect of the testator’s dispositions. The rules of construction expressed in this part shall apply unless a contrary intention is indicated by the will.
+(2)
+Subject to the foregoing, a will is construed to pass all property which the testator owns at death, including property acquired after the execution of the will.
+History.
+—
+s. 1, ch. 74-106; ss. 33, 35, ch. 75-220; s. 965, ch. 97-102; s. 49, ch. 2001-226.
+Note.
+—
+Created from former ss. 732.41 and 732.602.
+732.601
+Simultaneous Death Law.
+—
+Unless a contrary intention appears in the governing instrument:
+(1)
+When title to property or its devolution depends on priority of death and there is insufficient evidence that the persons have died otherwise than simultaneously, the property of each person shall be disposed of as if that person survived.
+(2)
+When two or more beneficiaries are designated to take successively by reason of survivorship under another person’s disposition of property and there is insufficient evidence that the beneficiaries died otherwise than simultaneously, the property thus disposed of shall be divided into as many equal parts as there are successive beneficiaries and the parts shall be distributed to those who would have taken if each designated beneficiary had survived.
+(3)
+When there is insufficient evidence that two joint tenants or tenants by the entirety died otherwise than simultaneously, the property so held shall be distributed one-half as if one had survived and one-half as if the other had survived. If there are more than two joint tenants and all of them so died, the property thus distributed shall be in the proportion that one bears to the number of joint tenants.
+(4)
+When the insured and the beneficiary in a policy of life or accident insurance have died and there is insufficient evidence that they died otherwise than simultaneously, the proceeds of the policy shall be distributed as if the insured had survived the beneficiary.
+History.
+—
+s. 1, ch. 74-106; s. 34, ch. 75-220; s. 966, ch. 97-102; s. 50, ch. 2001-226.
+Note.
+—
+Created from former s. 736.05.
+732.603
+Antilapse; deceased devisee; class gifts.
+—
+(1)
+Unless a contrary intent appears in the will, if a devisee who is a grandparent, or a descendant of a grandparent, of the testator:
+(a)
+Is dead at the time of the execution of the will;
+(b)
+Fails to survive the testator; or
+(c)
+Is required by the will or by operation of law to be treated as having predeceased the testator,
+a substitute gift is created in the devisee’s surviving descendants who take per stirpes the property to which the devisee would have been entitled had the devisee survived the testator.
+(2)
+When a power of appointment is exercised by will, unless a contrary intent appears in the document creating the power of appointment or in the testator’s will, if an appointee who is a grandparent, or a descendant of a grandparent, of the donor of the power:
+(a)
+Is dead at the time of the execution of the will or the creation of the power;
+(b)
+Fails to survive the testator; or
+(c)
+Is required by the will, the document creating the power, or by operation of law to be treated as having predeceased the testator,
+a substitute gift is created in the appointee’s surviving descendants who take per stirpes the property to which the appointee would have been entitled had the appointee survived the testator. Unless the language creating a power of appointment expressly excludes the substitution of the descendants of an object of a power for the object, a surviving descendant of a deceased object of a power of appointment may be substituted for the object whether or not the descendant is an object of the power.
+(3)
+In the application of this section:
+(a)
+Words of survivorship in a devise or appointment to an individual, such as “if he survives me,” “if she survives me,” or to “my surviving children,” are a sufficient indication of an intent contrary to the application of subsections (1) and (2). Words of survivorship used by the donor of the power in a power to appoint to an individual, such as the term “if he survives the donee” or “if she survives the donee,” or in a power to appoint to the donee’s “then surviving children,” are a sufficient indication of an intent contrary to the application of subsection (2).
+(b)
+The term:
+1.
+“Appointment” includes an alternative appointment and an appointment in the form of a class gift.
+2.
+“Appointee” includes:
+a.
+A class member if the appointment is in the form of a class gift.
+b.
+An individual or class member who was deceased at the time the testator executed his or her will as well as an individual or class member who was then living but who failed to survive the testator.
+3.
+“Devise” also includes an alternative devise and a devise in the form of a class gift.
+4.
+“Devisee” also includes:
+a.
+A class member if the devise is in the form of a class gift.
+b.
+An individual or class member who was deceased at the time the testator executed his or her will as well as an individual or class member who was then living but who failed to survive the testator.
+(4)
+This section applies only to outright devises and appointments. Devises and appointments in trust, including to a testamentary trust, are subject to s. 736.1106.
+History.
+—
+s. 1, ch. 74-106; s. 36, ch. 75-220; s. 967, ch. 97-102; s. 51, ch. 2001-226; s. 6, ch. 2003-154; s. 33, ch. 2006-217; s. 159, ch. 2020-2.
+Note.
+—
+Created from former s. 731.20.
+732.604
+Failure of testamentary provision.
+—
+(1)
+Except as provided in s. 732.603, if a devise other than a residuary devise fails for any reason, it becomes a part of the residue.
+(2)
+Except as provided in s. 732.603, if the residue is devised to two or more persons, the share of a residuary devisee that fails for any reason passes to the other residuary devisee, or to the other residuary devisees in proportion to the interests of each in the remaining part of the residue.
+History.
+—
+s. 1, ch. 74-106; s. 113, ch. 75-220; s. 968, ch. 97-102; s. 52, ch. 2001-226; s. 29, ch. 2003-154; s. 34, ch. 2006-217.
+732.605
+Change in securities; accessions; nonademption.
+—
+(1)
+If the testator intended a specific devise of certain securities rather than their equivalent value, the specific devisee is entitled only to:
+(a)
+As much of the devised securities as is a part of the estate at the time of the testator’s death.
+(b)
+Any additional or other securities of the same entity owned by the testator because of action initiated by the entity, excluding any acquired by exercise of purchase options.
+(c)
+Securities of another entity owned by the testator as a result of a merger, consolidation, reorganization, or other similar action initiated by the entity.
+(d)
+Securities of the same entity acquired as a result of a plan of reinvestment.
+(2)
+Distributions before death with respect to a specifically devised security, whether in cash or otherwise, which are not provided for in subsection (1) are not part of the specific devise.
+History.
+—
+s. 1, ch. 74-106; s. 113, ch. 75-220; s. 53, ch. 2001-226.
+732.606
+Nonademption of specific devises in certain cases; sale by guardian of the property; unpaid proceeds of sale, condemnation, or insurance.
+—
+(1)
+If specifically devised property is sold by a guardian of the property or if a condemnation award or insurance proceeds are paid to a guardian of the property, the specific devisee has the right to a general pecuniary devise equal to the net sale price, the condemnation award, or the insurance proceeds. This subsection does not apply if, subsequent to the sale, condemnation, or casualty, it is adjudicated that the disability of the testator has ceased and the testator survives the adjudication by 1 year. The right of the specific devisee under this subsection is reduced by any right described in subsection (2).
+(2)
+A specific devisee has the right to the remaining specifically devised property and:
+(a)
+Any balance of the purchase price owing from a purchaser to the testator at death because of sale of the property plus any security interest.
+(b)
+Any amount of a condemnation award for the taking of the property unpaid at death.
+(c)
+Any proceeds unpaid at death on fire or casualty insurance on the property.
+(d)
+Property owned by the testator at death as a result of foreclosure, or obtained instead of foreclosure, of the security for the specifically devised obligation.
+History.
+—
+s. 1, ch. 74-106; s. 38, ch. 75-220; s. 969, ch. 97-102; s. 54, ch. 2001-226.
+732.607
+Exercise of power of appointment.
+—
+A general residuary clause in a will, or a will making general disposition of all the testator’s property, does not exercise a power of appointment held by the testator unless specific reference is made to the power or there is some other indication of intent to include the property subject to the power.
+History.
+—
+s. 1, ch. 74-106; s. 38, ch. 75-220.
+732.608
+Construction of terms.
+—
+The laws used to determine paternity and relationships for the purposes of intestate succession apply when determining whether class gift terminology and terms of relationship include adopted persons and persons born out of wedlock.
+History.
+—
+s. 1, ch. 74-106; s. 38, ch. 75-220; s. 10, ch. 2010-132.
+732.609
+Ademption by satisfaction.
+—
+Property that a testator gave to a person in the testator’s lifetime is treated as a satisfaction of a devise to that person, in whole or in part, only if the will provides for deduction of the lifetime gift, the testator declares in a contemporaneous writing that the gift is to be deducted from the devise or is in satisfaction of the devise, or the devisee acknowledges in writing that the gift is in satisfaction. For purposes of part satisfaction, property given during the testator’s lifetime is valued at the time the devisee came into possession or enjoyment of the property or at the time of the death of the testator, whichever occurs first.
+History.
+—
+s. 1, ch. 74-106; s. 38, ch. 75-220.
+732.611
+Devises to multigeneration classes to be per stirpes.
+—
+Unless the will provides otherwise, all devises to descendants, issue, and other multigeneration classes shall be per stirpes.
+History.
+—
+s. 1, ch. 74-106; s. 38, ch. 75-220; s. 35, ch. 2006-217.
+732.615
+Reformation to correct mistakes.
+—
+Upon application of any interested person, the court may reform the terms of a will, even if unambiguous, to conform the terms to the testator’s intent if it is proved by clear and convincing evidence that both the accomplishment of the testator’s intent and the terms of the will were affected by a mistake of fact or law, whether in expression or inducement. In determining the testator’s original intent, the court may consider evidence relevant to the testator’s intent even though the evidence contradicts an apparent plain meaning of the will.
+History.
+—
+s. 3, ch. 2011-183.
+732.616
+Modification to achieve testator’s tax objectives.
+—
+Upon application of any interested person, to achieve the testator’s tax objectives the court may modify the terms of a will in a manner that is not contrary to the testator’s probable intent. The court may provide that the modification has retroactive effect.
+History.
+—
+s. 4, ch. 2011-183.
+PART VII
+CONTRACTUAL ARRANGEMENTS
+RELATING TO DEATH
+732.701
+Agreements concerning succession.
+732.702
+Waiver of spousal rights.
+732.7025
+Waiver of homestead rights through deed.
+732.703
+Effect of divorce, dissolution, or invalidity of marriage on disposition of certain assets at death.
+732.701
+Agreements concerning succession.
+—
+(1)
+No agreement to make a will, to give a devise, not to revoke a will, not to revoke a devise, not to make a will, or not to make a devise shall be binding or enforceable unless the agreement is in writing and signed by the agreeing party in the presence of two attesting witnesses. Such an agreement executed by a nonresident of Florida, either before or after this law takes effect, is valid in this state if valid when executed under the laws of the state or country where the agreement was executed, whether or not the agreeing party is a Florida resident at the time of death.
+(2)
+The execution of a joint will or mutual wills neither creates a presumption of a contract to make a will nor creates a presumption of a contract not to revoke the will or wills.
+History.
+—
+s. 1, ch. 74-106; s. 39, ch. 75-220; s. 55, ch. 2001-226.
+Note.
+—
+Created from former s. 731.051.
+732.702
+Waiver of spousal rights.
+—
+(1)
+The rights of a surviving spouse to an elective share, intestate share, pretermitted share, homestead, exempt property, family allowance, or to assert a claim under the Florida Uniform Disposition of Community Property Rights at Death Act as described in ss. 732.216-732.228, and preference in appointment as personal representative of an intestate estate or any of those rights, may be waived, wholly or partly, before or after marriage, by a written contract, agreement, or waiver, signed by the waiving party in the presence of two subscribing witnesses. The requirement of witnesses shall be applicable only to contracts, agreements, or waivers signed by Florida residents after the effective date of this law. Any contract, agreement, or waiver executed by a nonresident of Florida, either before or after this law takes effect, is valid in this state if valid when executed under the laws of the state or country where it was executed, whether or not he or she is a Florida resident at the time of death. Unless the waiver provides to the contrary, a waiver of “all rights,” or equivalent language, in the property or estate of a present or prospective spouse, or a complete property settlement entered into after, or in anticipation of, separation, dissolution of marriage, or divorce, is a waiver of all rights to elective share, intestate share, pretermitted share, homestead, exempt property, family allowance, or to assert a claim under the Florida Uniform Disposition of Community Property Rights at Death Act as described in ss. 732.216-732.228, and preference in appointment as personal representative of an intestate estate, by the waiving party in the property of the other and a renunciation by the waiving party of all benefits that would otherwise pass to the waiving party from the other by intestate succession or by the provisions of any will executed before the written contract, agreement, or waiver.
+(2)
+Each spouse shall make a fair disclosure to the other of that spouse’s estate if the agreement, contract, or waiver is executed after marriage. No disclosure shall be required for an agreement, contract, or waiver executed before marriage.
+(3)
+No consideration other than the execution of the agreement, contract, or waiver shall be necessary to its validity, whether executed before or after marriage.
+History.
+—
+s. 1, ch. 74-106; s. 39, ch. 75-220; s. 14, ch. 77-87; s. 56, ch. 2001-226; s. 10, ch. 2024-238.
+732.7025
+Waiver of homestead rights through deed.
+—
+(1)
+A spouse waives his or her rights as a surviving spouse with respect to the devise restrictions under s. 4(c), Art. X of the State Constitution if the following or substantially similar language is included in a deed:
+“By executing or joining this deed, I intend to waive homestead rights that would otherwise prevent my spouse from devising the homestead property described in this deed to someone other than me.”
+(2)
+The waiver language in subsection (1) may not be considered a waiver of the protection against the owner’s creditor claims during the owner’s lifetime and after death. Such language may not be considered a waiver of the restrictions against alienation by mortgage, sale, gift, or deed without the joinder of the owner’s spouse.
+History.
+—
+s. 1, ch. 2018-22.
+732.703
+Effect of divorce, dissolution, or invalidity of marriage on disposition of certain assets at death.
+—
+(1)
+As used in this section, unless the context requires otherwise, the term:
+(a)
+“Asset,” when not modified by other words or phrases, means an asset described in subsection (3), except as provided in paragraph (4)(j).
+(b)
+“Beneficiary” means any person designated in a governing instrument to receive an interest in an asset upon the death of the decedent.
+(c)
+“Death certificate” means a certified copy of a death certificate issued by an official or agency for the place where the decedent’s death occurred.
+(d)
+“Employee benefit plan” means any funded or unfunded plan, program, or fund established by an employer to provide an employee’s beneficiaries with benefits that may be payable on the employee’s death.
+(e)
+“Governing instrument” means any writing or contract governing the disposition of all or any part of an asset upon the death of the decedent.
+(f)
+“Payor” means any person obligated to make payment of the decedent’s interest in an asset upon the death of the decedent, and any other person who is in control or possession of an asset.
+(g)
+“Primary beneficiary” means a beneficiary designated under the governing instrument to receive an interest in an asset upon the death of the decedent who is not a secondary beneficiary. A person who receives an interest in the asset upon the death of the decedent due to the death of another beneficiary prior to the decedent’s death is also a primary beneficiary.
+(h)
+“Secondary beneficiary” means a beneficiary designated under the governing instrument who will receive an interest in an asset if the designation of the primary beneficiary is revoked or otherwise cannot be given effect.
+(2)
+A designation made by or on behalf of the decedent providing for the payment or transfer at death of an interest in an asset to or for the benefit of the decedent’s former spouse is void as of the time the decedent’s marriage was judicially dissolved or declared invalid by court order prior to the decedent’s death, if the designation was made prior to the dissolution or court order. The decedent’s interest in the asset shall pass as if the decedent’s former spouse predeceased the decedent. An individual retirement account described in s. 408 or s. 408A of the Internal Revenue Code of 1986, or an employee benefit plan, may not be treated as a trust for purposes of this section.
+(3)
+Subsection (2) applies to the following assets in which a resident of this state has an interest at the time of the resident’s death:
+(a)
+A life insurance policy, qualified annuity, or other similar tax-deferred contract held within an employee benefit plan.
+(b)
+An employee benefit plan.
+(c)
+An individual retirement account described in s. 408 or s. 408A of the Internal Revenue Code of 1986, including an individual retirement annuity described in s. 408(b) of the Internal Revenue Code of 1986.
+(d)
+A payable-on-death account.
+(e)
+A security or other account registered in a transfer-on-death form.
+(f)
+A life insurance policy, annuity, or other similar contract that is not held within an employee benefit plan or a tax-qualified retirement account.
+(4)
+Subsection (2) does not apply:
+(a)
+To the extent that controlling federal law provides otherwise;
+(b)
+If the governing instrument is signed by the decedent, or on behalf of the decedent, after the order of dissolution or order declaring the marriage invalid and such governing instrument expressly provides that benefits will be payable to the decedent’s former spouse;
+(c)
+To the extent a will or trust governs the disposition of the assets and s. 732.507(2) or s. 736.1105 applies;
+(d)
+If the order of dissolution or order declaring the marriage invalid requires that the decedent acquire or maintain the asset for the benefit of a former spouse or children of the marriage, payable upon the death of the decedent either outright or in trust, only if other assets of the decedent fulfilling such a requirement for the benefit of the former spouse or children of the marriage do not exist upon the death of the decedent;
+(e)
+If, under the terms of the order of dissolution or order declaring the marriage invalid, the decedent could not have unilaterally terminated or modified the ownership of the asset, or its disposition upon the death of the decedent;
+(f)
+If the designation of the decedent’s former spouse as a beneficiary is irrevocable under applicable law;
+(g)
+If the governing instrument is governed by the laws of a state other than this state;
+(h)
+To an asset held in two or more names as to which the death of one co-owner vests ownership of the asset in the surviving co-owner or co-owners;
+(i)
+If the decedent remarries the person whose interest would otherwise have been revoked under this section and the decedent and that person are married to one another at the time of the decedent’s death; or
+(j)
+To state-administered retirement plans under chapter 121.
+(5)
+In the case of an asset described in paragraph (3)(a), paragraph (3)(b), or paragraph (3)(c), unless payment or transfer would violate a court order directed to, and served as required by law on, the payor:
+(a)
+If the governing instrument does not explicitly specify the relationship of the beneficiary to the decedent or if the governing instrument explicitly provides that the beneficiary is not the decedent’s spouse, the payor is not liable for making any payment on account of, or transferring any interest in, the asset to the beneficiary.
+(b)
+As to any portion of the asset required by the governing instrument to be paid after the decedent’s death to a primary beneficiary explicitly designated in the governing instrument as the decedent’s spouse:
+1.
+If the death certificate states that the decedent was married at the time of his or her death to that spouse, the payor is not liable for making a payment on account of, or for transferring an interest in, that portion of the asset to such primary beneficiary.
+2.
+If the death certificate states that the decedent was not married at the time of his or her death, or if the death certificate states that the decedent was married to a person other than the spouse designated as the primary beneficiary at the time of his or her death, the payor is not liable for making a payment on account of, or for transferring an interest in, that portion of the asset to a secondary beneficiary under the governing instrument.
+3.
+If the death certificate is silent as to the decedent’s marital status at the time of his or her death, the payor is not liable for making a payment on account of, or for transferring an interest in, that portion of the asset to the primary beneficiary upon delivery to the payor of an affidavit validly executed by the primary beneficiary in substantially the following form:
+STATE OF
+COUNTY OF
+Before me, the undersigned authority, personally appeared by the means specified herein,
+(type or print Affiant’s name)
+(“Affiant”), who swore or affirmed that:
+1.
+(Type or print name of Decedent)
+(“Decedent”) died on
+(type or print the date of the Decedent’s death)
+.
+2. Affiant is a “primary beneficiary” as that term is defined in Section 732.703, Florida Statutes. Affiant and Decedent were married on
+(type or print the date of marriage)
+, and were legally married to one another on the date of the Decedent’s death.
+(Affiant)
+Sworn to or affirmed before me by means of ☐ physical presence or ☐ online notarization by the affiant who ☐ is personally known to me or ☐ has produced
+(state type of identification)
+as identification this
+day of
+(month)
+,
+(year)
+.
+(Signature of Officer)
+(Print, Type, or Stamp Commissioned name of Notary Public)
+4.
+If the death certificate is silent as to the decedent’s marital status at the time of his or her death, the payor is not liable for making a payment on account of, or for transferring an interest in, that portion of the asset to the secondary beneficiary upon delivery to the payor of an affidavit validly executed by the secondary beneficiary in substantially the following form:
+STATE OF
+COUNTY OF
+Before me, the undersigned authority, personally appeared by the means specified herein,
+(type or print Affiant’s name)
+(“Affiant”), who swore or affirmed that:
+1.
+(Type or print name of Decedent)
+(“Decedent”) died on
+(type or print the date of the Decedent’s death)
+.
+2. Affiant is a “secondary beneficiary” as that term is defined in Section 732.703, Florida Statutes. On the date of the Decedent’s death, the Decedent was not legally married to the spouse designated as the “primary beneficiary” as that term is defined in Section 732.703, Florida Statutes.
+(Affiant)
+Sworn to or affirmed before me by means of ☐ physical presence or ☐ online notarization by the affiant who ☐ is personally known to me or ☐ has produced
+(state type of identification)
+as identification this
+day of
+(month)
+,
+(year)
+.
+(Signature of Officer)
+(Print, Type, or Stamp Commissioned name of Notary Public)
+(6)
+In the case of an asset described in paragraph (3)(d), paragraph (3)(e), or paragraph (3)(f), the payor is not liable for making any payment on account of, or transferring any interest in, the asset to any beneficiary.
+(7)
+Subsections (5) and (6) apply notwithstanding the payor’s knowledge that the person to whom the asset is transferred is different from the person who would own the interest pursuant to subsection (2).
+(8)
+This section does not affect the ownership of an interest in an asset as between the former spouse and any other person entitled to such interest by operation of this section, the rights of any purchaser for value of any such interest, the rights of any creditor of the former spouse or any other person entitled to such interest, or the rights and duties of any insurance company, financial institution, trustee, administrator, or other third party.
+(9)
+This section applies to all designations made by or on behalf of decedents dying on or after July 1, 2012, regardless of when the designation was made.
+History.
+—
+s. 1, ch. 2012-148; s. 6, ch. 2013-172; s. 7, ch. 2021-205.
+PART VIII
+GENERAL PROVISIONS
+732.802
+Killer not entitled to receive property or other benefits by reason of victim’s death.
+732.8031
+Forfeiture for abuse, neglect, exploitation, or aggravated manslaughter of an elderly person or a disabled adult.
+732.804
+Provisions relating to disposition of the body.
+732.805
+Spousal rights procured by fraud, duress, or undue influence.
+732.806
+Gifts to lawyers and other disqualified persons.
+732.802
+Killer not entitled to receive property or other benefits by reason of victim’s death.
+—
+(1)
+A surviving person who unlawfully and intentionally kills or participates in procuring the death of the decedent is not entitled to any benefits under the will or under the Florida Probate Code, and the estate of the decedent passes as if the killer had predeceased the decedent. Property appointed by the will of the decedent to or for the benefit of the killer passes as if the killer had predeceased the decedent.
+(2)
+Any joint tenant who unlawfully and intentionally kills another joint tenant thereby effects a severance of the interest of the decedent so that the share of the decedent passes as the decedent’s property and the killer has no rights by survivorship. This provision applies to joint tenancies with right of survivorship and tenancies by the entirety in real and personal property; joint and multiple-party accounts in banks, savings and loan associations, credit unions, and other institutions; and any other form of co-ownership with survivorship incidents.
+(3)
+A named beneficiary of a bond, life insurance policy, or other contractual arrangement who unlawfully and intentionally kills the principal obligee or the person upon whose life the policy is issued is not entitled to any benefit under the bond, policy, or other contractual arrangement; and it becomes payable as though the killer had predeceased the decedent.
+(4)
+Any other acquisition of property or interest by the killer, including a life estate in homestead property, shall be treated in accordance with the principles of this section.
+(5)
+A final judgment of conviction of murder in any degree is conclusive for purposes of this section. In the absence of a conviction of murder in any degree, the court may determine by the greater weight of the evidence whether the killing was unlawful and intentional for purposes of this section.
+(6)
+This section does not affect the rights of any person who, before rights under this section have been adjudicated, purchases from the killer for value and without notice property which the killer would have acquired except for this section, but the killer is liable for the amount of the proceeds or the value of the property. Any insurance company, bank, or other obligor making payment according to the terms of its policy or obligation is not liable by reason of this section unless prior to payment it has received at its home office or principal address written notice of a claim under this section.
+History.
+—
+s. 1, ch. 74-106; s. 113, ch. 75-220; s. 1, ch. 82-71.
+Note.
+—
+Created from former s. 731.31.
+732.8031
+Forfeiture for abuse, neglect, exploitation, or aggravated manslaughter of an elderly person or a disabled adult.
+—
+(1)
+A surviving person who is convicted in any state or foreign jurisdiction of abuse, neglect, exploitation, or aggravated manslaughter of an elderly person or a disabled adult, as those terms are defined in s. 825.101, for conduct against the decedent or another person on whose death such beneficiary’s interest depends is not entitled to any benefits under the will of the decedent or the Florida Probate Code, and the estate of the decedent passes as if the abuser, neglector, exploiter, or killer had predeceased the decedent. Property appointed by the will of the decedent to or for the benefit of the abuser, neglector, exploiter, or killer passes as if the abuser, neglector, exploiter, or killer had predeceased the decedent.
+(a)
+A final judgment of conviction for abuse, neglect, exploitation, or aggravated manslaughter of the decedent or other person creates a rebuttable presumption that this section applies.
+(b)
+In the absence of a qualifying conviction, the court may determine by the greater weight of the evidence whether the decedent’s or other person’s death was caused by or contributed to by the abuser’s, neglector’s, exploiter’s, or killer’s conduct as defined in s. 825.102, s. 825.103, or s. 782.07(2) for purposes of this section.
+(2)
+A joint tenant who is convicted in any state or foreign jurisdiction of abuse, neglect, exploitation, or aggravated manslaughter of an elderly person or a disabled adult, as those terms are defined in s. 825.101, for conduct against another joint tenant decedent thereby effects a severance of the interest of the decedent so that the share of the decedent passes as the decedent’s sole property and as if the abuser, neglector, exploiter, or killer has no rights by survivorship. This subsection applies to joint tenancies with right of survivorship and tenancies by the entirety in real and personal property; joint and multiple-party accounts in banks, savings and loan associations, credit unions, and other financial institutions; and any other form of co-ownership with survivorship interests.
+(a)
+A final judgment of conviction for abuse, neglect, exploitation, or aggravated manslaughter of the decedent or other person creates a rebuttable presumption that this section applies.
+(b)
+In the absence of a qualifying conviction, the court may determine by the greater weight of the evidence whether the decedent’s or other person’s death was caused by or contributed to by the abuser’s, neglector’s, exploiter’s, or killer’s conduct as defined in s. 825.102, s. 825.103, or s. 782.07(2) for purposes of this section.
+(3)
+A named beneficiary of a bond, life insurance policy, or other contractual arrangement who is convicted in any state or foreign jurisdiction of abuse, neglect, exploitation, or aggravated manslaughter of an elderly person or a disabled adult, as those terms are defined in s. 825.101, for conduct against the owner or principal obligee of the bond, life insurance policy, or other contractual arrangement or the person upon whose life such policy was issued is not entitled to any benefit under the bond, policy, or other contractual arrangement, and the bond, policy, or other contractual arrangement becomes payable as though the abuser, neglector, exploiter, or killer had predeceased the decedent.
+(a)
+A final judgment of conviction for abuse, neglect, exploitation, or aggravated manslaughter of the decedent or other person creates a rebuttable presumption that this section applies.
+(b)
+In the absence of a qualifying conviction, the court may determine by the greater weight of the evidence whether the decedent’s or other person’s death was caused by or contributed to by the abuser’s, neglector’s, exploiter’s, or killer’s conduct as defined in s. 825.102, s. 825.103, or s. 782.07(2) for purposes of this section.
+(4)
+Any other property or interest acquired as a result of the abuse, neglect, exploitation, or manslaughter must be returned in accordance with this section.
+(5)(a)
+This section does not affect the rights of any person who purchases property for value and without notice from the abuser, neglector, exploiter, or killer before rights have been adjudicated in accordance with this section.
+(b)
+The abuser, neglector, exploiter, or killer is liable for the amount of the proceeds or the value of the property under paragraph (a).
+(6)
+Any insurance company, financial institution, or other obligor making payment according to the terms of its policy or obligation is not liable by reason of this section unless more than 2 business days before payment it receives at its home office or principal address written notice, or in the case of a financial institution it receives notice in accordance with s. 655.0201, of a claim under this section.
+(7)
+This section does not apply if it can be proven by clear and convincing evidence that, after the conviction of abuse, neglect, or exploitation, the victim of the offense, if capacitated, ratifies an intent that the person so convicted of abuse, neglect, or exploitation retain his or her inheritance, survivorship rights, or any other right that might otherwise be removed by this section by executing a valid written instrument, sworn to and witnessed by two persons who would be competent as witnesses to a will, which expresses a specific intent to allow the convicted person to retain his or her inheritance, survivorship rights, or any other right that might otherwise be removed by this section.
+History.
+—
+s. 3, ch. 2021-221.
+732.804
+Provisions relating to disposition of the body.
+—
+Before issuance of letters, any person may carry out written instructions of the decedent relating to the decedent’s body and funeral and burial arrangements. The fact that cremation occurred pursuant to a written direction signed by the decedent that the body be cremated is a complete defense to a cause of action against any person acting or relying on that direction.
+History.
+—
+s. 1, ch. 74-106; s. 43, ch. 75-220; s. 971, ch. 97-102; s. 58, ch. 2001-226.
+732.805
+Spousal rights procured by fraud, duress, or undue influence.
+—
+(1)
+A surviving spouse who is found to have procured a marriage to the decedent by fraud, duress, or undue influence is not entitled to any of the following rights or benefits that inure solely by virtue of the marriage or the person’s status as surviving spouse of the decedent unless the decedent and the surviving spouse voluntarily cohabited as husband and wife with full knowledge of the facts constituting the fraud, duress, or undue influence or both spouses otherwise subsequently ratified the marriage:
+(a)
+Any rights or benefits under the Florida Probate Code, including, but not limited to, entitlement to elective share or family allowance; preference in appointment as personal representative; inheritance by intestacy, homestead, or exempt property; or inheritance as a pretermitted spouse.
+(b)
+Any rights or benefits under a bond, life insurance policy, or other contractual arrangement if the decedent is the principal obligee or the person upon whose life the policy is issued, unless the surviving spouse is provided for by name, whether or not designated as the spouse, in the bond, life insurance policy, or other contractual arrangement.
+(c)
+Any rights or benefits under a will, trust, or power of appointment, unless the surviving spouse is provided for by name, whether or not designated as the spouse, in the will, trust, or power of appointment.
+(d)
+Any immunity from the presumption of undue influence that a surviving spouse may have under state law.
+(2)
+Any of the rights or benefits listed in paragraphs (1)(a)-(c) which would have passed solely by virtue of the marriage to a surviving spouse who is found to have procured the marriage by fraud, duress, or undue influence shall pass as if the spouse had predeceased the decedent.
+(3)
+A challenge to a surviving spouse’s rights under this section may be maintained as a defense, objection, or cause of action by any interested person after the death of the decedent in any proceeding in which the fact of marriage may be directly or indirectly material.
+(4)
+The contestant has the burden of establishing, by a preponderance of the evidence, that the marriage was procured by fraud, duress, or undue influence. If ratification of the marriage is raised as a defense, the surviving spouse has the burden of establishing, by a preponderance of the evidence, the subsequent ratification by both spouses.
+(5)
+In all actions brought under this section, the court shall award taxable costs as in chancery actions, including attorney’s fees. When awarding taxable costs and attorney’s fees, the court may direct payment from a party’s interest, if any, in the estate, or enter a judgment that may be satisfied from other property of the party, or both.
+(6)
+An insurance company, financial institution, or other obligor making payment according to the terms of its policy or obligation is not liable by reason of this section unless, before payment, it received written notice of a claim pursuant to this section.
+(a)
+The notice required by this subsection must be in writing and must be accomplished in a manner reasonably suitable under the circumstances and likely to result in receipt of the notice. Permissible methods of notice include first-class mail, personal delivery, delivery to the person’s last known place of residence or place of business, or a properly directed facsimile or other electronic message.
+(b)
+To be effective, notice to a financial institution or insurance company must contain the name, address, and the taxpayer identification number, or the account or policy number, of the principal obligee or person whose life is insured and shall be directed to an officer or a manager of the financial institution or insurance company in this state. If the financial institution or insurance company has no offices in this state, the notice shall be directed to the principal office of the financial institution or insurance company.
+(c)
+Notice shall be effective when given, except that notice to a financial institution or insurance company is not effective until 5 business days after being given.
+(7)
+The rights and remedies granted in this section are in addition to any other rights or remedies a person may have at law or equity.
+(8)
+Unless sooner barred by adjudication, estoppel, or a provision of the Florida Probate Code or Florida Probate Rules, an interested person is barred from bringing an action under this section unless the action is commenced within 4 years after the decedent’s date of death. A cause of action under this section accrues on the decedent’s date of death.
+History.
+—
+s. 11, ch. 2010-132.
+732.806
+Gifts to lawyers and other disqualified persons.
+—
+(1)
+Any part of a written instrument which makes a gift to a lawyer or a person related to the lawyer is void if the lawyer prepared or supervised the execution of the written instrument, or solicited the gift, unless the lawyer or other recipient of the gift is related to the person making the gift.
+(2)
+This section is not applicable to a provision in a written instrument appointing a lawyer, or a person related to the lawyer, as a fiduciary.
+(3)
+A provision in a written instrument purporting to waive the application of this section is unenforceable.
+(4)
+If property distributed in kind, or a security interest in that property, is acquired by a purchaser or lender for value from a person who has received a gift in violation of this section, the purchaser or lender takes title free of any claims arising under this section and incurs no personal liability by reason of this section, whether or not the gift is void under this section.
+(5)
+In all actions brought under this section, the court must award taxable costs as in chancery actions, including attorney fees. When awarding taxable costs and attorney fees under this section, the court may direct payment from a party’s interest in the estate or trust, or enter a judgment that may be satisfied from other property of the party, or both. Attorney fees and costs may not be awarded against a party who, in good faith, initiates an action under this section to declare a gift void.
+(6)
+If a part of a written instrument is invalid by reason of this section, the invalid part is severable and may not affect any other part of the written instrument which can be given effect, including a term that makes an alternate or substitute gift. In the case of a power of appointment, this section does not affect the power to appoint in favor of persons other than the lawyer or a person related to the lawyer.
+(7)
+For purposes of this section:
+(a)
+A lawyer is deemed to have prepared, or supervised the execution of, a written instrument if the preparation, or supervision of the execution, of the written instrument was performed by an employee or lawyer employed by the same firm as the lawyer.
+(b)
+A person is “related” to an individual if, at the time the lawyer prepared or supervised the execution of the written instrument or solicited the gift, the person is:
+1.
+A spouse of the individual;
+2.
+A lineal ascendant or descendant of the individual;
+3.
+A sibling of the individual;
+4.
+A relative of the individual or of the individual’s spouse with whom the lawyer maintains a close, familial relationship;
+5.
+A spouse of a person described in subparagraph 2., subparagraph 3., or subparagraph 4.; or
+6.
+A person who cohabitates with the individual.
+(c)
+The term “written instrument” includes, but is not limited to, a will, a trust, a deed, a document exercising a power of appointment, or a beneficiary designation under a life insurance contract or any other contractual arrangement that creates an ownership interest or permits the naming of a beneficiary.
+(d)
+The term “gift” includes an inter vivos gift, a testamentary transfer of real or personal property or any interest therein, and the power to make such a transfer regardless of whether the gift is outright or in trust; regardless of when the transfer is to take effect; and regardless of whether the power is held in a fiduciary or nonfiduciary capacity.
+(8)
+The rights and remedies granted in this section are in addition to any other rights or remedies a person may have at law or in equity.
+(9)
+This section applies only to written instruments executed on or after October 1, 2013.
+History.
+—
+s. 7, ch. 2013-172; s. 1, ch. 2014-127.
+PART IX
+PRODUCTION OF WILLS
+732.901
+Production of wills.
+732.901
+Production of wills.
+—
+(1)
+The custodian of a will must deposit the will with the clerk of the court having venue of the estate of the decedent within 10 days after receiving information that the testator is dead. The custodian must supply the testator’s date of death or the last four digits of the testator’s social security number to the clerk upon deposit.
+(2)
+Upon petition and notice, the custodian of any will may be compelled to produce and deposit the will. All costs, damages, and a reasonable attorney’s fee shall be adjudged to petitioner against the delinquent custodian if the court finds that the custodian had no just or reasonable cause for failing to deposit the will.
+(3)
+An original will submitted to the clerk with a petition or other pleading is deemed to have been deposited with the clerk.
+(4)
+Upon receipt, the clerk shall retain and preserve the original will in its original form for at least 20 years. If the probate of a will is initiated, the original will may be maintained by the clerk with the other pleadings during the pendency of the proceedings, but the will must at all times be retained in its original form for the remainder of the 20-year period whether or not the will is admitted to probate or the proceedings are terminated. Transforming and storing a will on film, microfilm, magnetic, electronic, optical, or other substitute media or recording a will onto an electronic record-keeping system, whether or not in accordance with the standards adopted by the Supreme Court of Florida, or permanently recording a will does not eliminate the requirement to preserve the original will.
+(5)
+For purposes of this section, the term “will” includes a separate writing as described in s. 732.515.
+History.
+—
+s. 1, ch. 74-106; s. 44, ch. 75-220; s. 18, ch. 92-200; s. 972, ch. 97-102; s. 59, ch. 2001-226; s. 8, ch. 2013-172.
+Note.
+—
+Created from former s. 732.22.
+Copyright © 1995-2026 The Florida Legislature •
+Privacy Statement
+•
+Contact Us

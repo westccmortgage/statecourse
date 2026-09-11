@@ -1,0 +1,23 @@
+SOURCE: https://www.flrules.org/gateway/readFile.asp?sid=0&tid=25966141&type=1&file=61J2-17.016.doc
+PUBLISHER: Florida Department of State, Division of Library and Information Services (flrules.org) — official publisher of the Florida Administrative Code
+RULE: 61J2-17.016 F.A.C.
+CHAPTER: 
+EFFECTIVE: 6/30/2022
+RETRIEVED: 2026-08-30
+LOCAL COPY: florida/frec-sources/fac/fac-61J2-17.016.doc
+SHA256: 2b148c8aaf410450f88950028afbd7a99a49e94e10a0c43d8849b0b81ed389ce
+EXTRACTION: strings(1) over the Word 97 stream; LibreOffice could not load the file.
+----------------------------------------------------------------------
+61J2-17.016 Renewal of Instructor Permits.
+(1) An instructor permit shall be renewed on a biennial basis. The schedule for biennial renewal shall be as established in Rule 61-6.001, F.A.C.
+(2) Any permit which is not renewed at the end of the permit period established in Rule 61-6.001, F.A.C., shall automatically revert to involuntarily inactive status pursuant to Section 475.451(2)(b)3., F.S.
+(3) An involuntarily inactive instructor permit holder must complete the following in order to obtain an active permit:
+(a) Successfully complete the continuing education requirements of Rule 61J2-3.011, F.A.C.
+(b) Pay the required fee pursuant to subsection 61J2-1.011(4), F.A.C.
+(c) Pay the late fee pursuant to paragraph 61J2-1.011(8)(b), F.A.C.
+(4) Any permit which has been involuntarily inactive for 2 years shall automatically expire pursuant to Section 475.183(2), F.S. Once a permit expires, it becomes null and void without any further action by the Commission or Department of Business and Professional Regulation.
+Rulemaking Authority 475.05, 475.451 FS. Law Implemented 475.451 FS. History
+New 10-25-98, Amended 6-30-22.
+61J2-17
+Normal
+61J2-17

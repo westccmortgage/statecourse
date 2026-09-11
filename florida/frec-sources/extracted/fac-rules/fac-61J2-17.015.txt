@@ -1,0 +1,20 @@
+SOURCE: https://www.flrules.org/gateway/readFile.asp?sid=0&tid=25151923&type=1&file=61J2-17.015.doc
+PUBLISHER: Florida Department of State, Division of Library and Information Services (flrules.org) — official publisher of the Florida Administrative Code
+RULE: 61J2-17.015 F.A.C.
+CHAPTER: 
+EFFECTIVE: 11/3/2021
+RETRIEVED: 2026-08-30
+LOCAL COPY: florida/frec-sources/fac/fac-61J2-17.015.doc
+SHA256: 3876c357cde3548475aa11deffda44b90768418e48402c1069044bb8024dc5f7
+EXTRACTION: strings(1) over the Word 97 stream; LibreOffice could not load the file.
+----------------------------------------------------------------------
+61J2-17.015 Required Communication by  School Permit Holders.
+(1) No real estate school, permit holder or instructor shall recruit for employment opportunities for any real estate brokerage firm during instructional time.
+(2) Each school permit holder must post in every classroom and administrative area, and read at the beginning of each course, the following statement: 
+Recruiting for employment opportunities for any real estate brokerage firm must be accomplished outside the prescribed instructional time. Noncompliance should be reported to the Commission.
+(3) No later than December 31, 2026, the Commission shall review and consider amendment, modification, or repeal of this rule if review determines this rule creates barriers to entry for private business competition, is duplicative, outdated, obsolete, overly burdensome, or imposes excessive costs. Failure by the Commission to act in accordance with this provision will result in the expiration of this rule on December 31, 2026.
+Rulemaking Authority 475.05 FS. Law Implemented 475.451(1), (2)(a), (c) FS. History
+New 6-28-93, Formerly 21V-17.015, Amended 11-3-21.
+61J2-17
+Normal
+61J2-17

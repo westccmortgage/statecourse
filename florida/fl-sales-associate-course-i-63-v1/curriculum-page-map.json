@@ -1,0 +1,1086 @@
+{
+  "generatedBy": "scripts/build-florida-course.mjs",
+  "totalPages": 199,
+  "pages": [
+    {
+      "objective": "1.1",
+      "curriculumPage": 2,
+      "syllabusPage": 3,
+      "file": "01-course-overview-real-estate-business.md"
+    },
+    {
+      "objective": "1.2",
+      "curriculumPage": 3,
+      "syllabusPage": 3,
+      "file": "01-course-overview-real-estate-business.md"
+    },
+    {
+      "objective": "1.3",
+      "curriculumPage": 4,
+      "syllabusPage": 3,
+      "file": "01-course-overview-real-estate-business.md"
+    },
+    {
+      "objective": "1.4",
+      "curriculumPage": 5,
+      "syllabusPage": 3,
+      "file": "01-course-overview-real-estate-business.md"
+    },
+    {
+      "objective": "1.5",
+      "curriculumPage": 6,
+      "syllabusPage": 3,
+      "file": "01-course-overview-real-estate-business.md"
+    },
+    {
+      "objective": "1.6",
+      "curriculumPage": 7,
+      "syllabusPage": 3,
+      "file": "01-course-overview-real-estate-business.md"
+    },
+    {
+      "objective": "1.7",
+      "curriculumPage": 8,
+      "syllabusPage": 3,
+      "file": "01-course-overview-real-estate-business.md"
+    },
+    {
+      "objective": "2.1",
+      "curriculumPage": 10,
+      "syllabusPage": 6,
+      "file": "02-license-law-qualifications.md"
+    },
+    {
+      "objective": "2.2",
+      "curriculumPage": 11,
+      "syllabusPage": 6,
+      "file": "02-license-law-qualifications.md"
+    },
+    {
+      "objective": "2.3",
+      "curriculumPage": 12,
+      "syllabusPage": 6,
+      "file": "02-license-law-qualifications.md"
+    },
+    {
+      "objective": "2.4",
+      "curriculumPage": 13,
+      "syllabusPage": 6,
+      "file": "02-license-law-qualifications.md"
+    },
+    {
+      "objective": "2.5",
+      "curriculumPage": 14,
+      "syllabusPage": 6,
+      "file": "02-license-law-qualifications.md"
+    },
+    {
+      "objective": "2.6",
+      "curriculumPage": 15,
+      "syllabusPage": 6,
+      "file": "02-license-law-qualifications.md"
+    },
+    {
+      "objective": "2.7",
+      "curriculumPage": 16,
+      "syllabusPage": 6,
+      "file": "02-license-law-qualifications.md"
+    },
+    {
+      "objective": "2.8",
+      "curriculumPage": 17,
+      "syllabusPage": 6,
+      "file": "02-license-law-qualifications.md"
+    },
+    {
+      "objective": "2.9",
+      "curriculumPage": 18,
+      "syllabusPage": 6,
+      "file": "02-license-law-qualifications.md"
+    },
+    {
+      "objective": "2.10",
+      "curriculumPage": 19,
+      "syllabusPage": 6,
+      "file": "02-license-law-qualifications.md"
+    },
+    {
+      "objective": "2.11",
+      "curriculumPage": 20,
+      "syllabusPage": 6,
+      "file": "02-license-law-qualifications.md"
+    },
+    {
+      "objective": "3.1",
+      "curriculumPage": 22,
+      "syllabusPage": 9,
+      "file": "03-license-law-commission-rules.md"
+    },
+    {
+      "objective": "3.2",
+      "curriculumPage": 23,
+      "syllabusPage": 9,
+      "file": "03-license-law-commission-rules.md"
+    },
+    {
+      "objective": "3.3",
+      "curriculumPage": 24,
+      "syllabusPage": 9,
+      "file": "03-license-law-commission-rules.md"
+    },
+    {
+      "objective": "3.4",
+      "curriculumPage": 25,
+      "syllabusPage": 9,
+      "file": "03-license-law-commission-rules.md"
+    },
+    {
+      "objective": "3.5",
+      "curriculumPage": 26,
+      "syllabusPage": 9,
+      "file": "03-license-law-commission-rules.md"
+    },
+    {
+      "objective": "3.6",
+      "curriculumPage": 27,
+      "syllabusPage": 9,
+      "file": "03-license-law-commission-rules.md"
+    },
+    {
+      "objective": "3.7",
+      "curriculumPage": 28,
+      "syllabusPage": 9,
+      "file": "03-license-law-commission-rules.md"
+    },
+    {
+      "objective": "4.1",
+      "curriculumPage": 30,
+      "syllabusPage": 11,
+      "file": "04-authorized-relationships-duties-disclosure.md"
+    },
+    {
+      "objective": "4.2",
+      "curriculumPage": 31,
+      "syllabusPage": 11,
+      "file": "04-authorized-relationships-duties-disclosure.md"
+    },
+    {
+      "objective": "4.3",
+      "curriculumPage": 32,
+      "syllabusPage": 11,
+      "file": "04-authorized-relationships-duties-disclosure.md"
+    },
+    {
+      "objective": "4.4",
+      "curriculumPage": 33,
+      "syllabusPage": 11,
+      "file": "04-authorized-relationships-duties-disclosure.md"
+    },
+    {
+      "objective": "4.5",
+      "curriculumPage": 34,
+      "syllabusPage": 11,
+      "file": "04-authorized-relationships-duties-disclosure.md"
+    },
+    {
+      "objective": "4.6",
+      "curriculumPage": 35,
+      "syllabusPage": 11,
+      "file": "04-authorized-relationships-duties-disclosure.md"
+    },
+    {
+      "objective": "4.7",
+      "curriculumPage": 36,
+      "syllabusPage": 11,
+      "file": "04-authorized-relationships-duties-disclosure.md"
+    },
+    {
+      "objective": "4.8",
+      "curriculumPage": 37,
+      "syllabusPage": 11,
+      "file": "04-authorized-relationships-duties-disclosure.md"
+    },
+    {
+      "objective": "4.9",
+      "curriculumPage": 38,
+      "syllabusPage": 11,
+      "file": "04-authorized-relationships-duties-disclosure.md"
+    },
+    {
+      "objective": "4.10",
+      "curriculumPage": 39,
+      "syllabusPage": 11,
+      "file": "04-authorized-relationships-duties-disclosure.md"
+    },
+    {
+      "objective": "5.1",
+      "curriculumPage": 41,
+      "syllabusPage": 14,
+      "file": "05-brokerage-activities-procedures.md"
+    },
+    {
+      "objective": "5.2",
+      "curriculumPage": 42,
+      "syllabusPage": 14,
+      "file": "05-brokerage-activities-procedures.md"
+    },
+    {
+      "objective": "5.3",
+      "curriculumPage": 43,
+      "syllabusPage": 14,
+      "file": "05-brokerage-activities-procedures.md"
+    },
+    {
+      "objective": "5.4",
+      "curriculumPage": 44,
+      "syllabusPage": 14,
+      "file": "05-brokerage-activities-procedures.md"
+    },
+    {
+      "objective": "5.5",
+      "curriculumPage": 45,
+      "syllabusPage": 14,
+      "file": "05-brokerage-activities-procedures.md"
+    },
+    {
+      "objective": "5.6",
+      "curriculumPage": 46,
+      "syllabusPage": 14,
+      "file": "05-brokerage-activities-procedures.md"
+    },
+    {
+      "objective": "5.7",
+      "curriculumPage": 47,
+      "syllabusPage": 14,
+      "file": "05-brokerage-activities-procedures.md"
+    },
+    {
+      "objective": "5.8",
+      "curriculumPage": 48,
+      "syllabusPage": 14,
+      "file": "05-brokerage-activities-procedures.md"
+    },
+    {
+      "objective": "5.9",
+      "curriculumPage": 49,
+      "syllabusPage": 14,
+      "file": "05-brokerage-activities-procedures.md"
+    },
+    {
+      "objective": "6.1",
+      "curriculumPage": 51,
+      "syllabusPage": 18,
+      "file": "06-violations-penalties-procedures.md"
+    },
+    {
+      "objective": "6.2",
+      "curriculumPage": 52,
+      "syllabusPage": 18,
+      "file": "06-violations-penalties-procedures.md"
+    },
+    {
+      "objective": "6.3",
+      "curriculumPage": 53,
+      "syllabusPage": 18,
+      "file": "06-violations-penalties-procedures.md"
+    },
+    {
+      "objective": "6.4",
+      "curriculumPage": 54,
+      "syllabusPage": 18,
+      "file": "06-violations-penalties-procedures.md"
+    },
+    {
+      "objective": "6.5",
+      "curriculumPage": 55,
+      "syllabusPage": 18,
+      "file": "06-violations-penalties-procedures.md"
+    },
+    {
+      "objective": "6.6",
+      "curriculumPage": 56,
+      "syllabusPage": 18,
+      "file": "06-violations-penalties-procedures.md"
+    },
+    {
+      "objective": "6.7",
+      "curriculumPage": 57,
+      "syllabusPage": 18,
+      "file": "06-violations-penalties-procedures.md"
+    },
+    {
+      "objective": "6.8",
+      "curriculumPage": 58,
+      "syllabusPage": 18,
+      "file": "06-violations-penalties-procedures.md"
+    },
+    {
+      "objective": "6.9",
+      "curriculumPage": 59,
+      "syllabusPage": 18,
+      "file": "06-violations-penalties-procedures.md"
+    },
+    {
+      "objective": "7.1",
+      "curriculumPage": 61,
+      "syllabusPage": 21,
+      "file": "07-federal-state-laws.md"
+    },
+    {
+      "objective": "7.2",
+      "curriculumPage": 62,
+      "syllabusPage": 21,
+      "file": "07-federal-state-laws.md"
+    },
+    {
+      "objective": "7.3",
+      "curriculumPage": 63,
+      "syllabusPage": 21,
+      "file": "07-federal-state-laws.md"
+    },
+    {
+      "objective": "7.4",
+      "curriculumPage": 64,
+      "syllabusPage": 21,
+      "file": "07-federal-state-laws.md"
+    },
+    {
+      "objective": "7.5",
+      "curriculumPage": 65,
+      "syllabusPage": 21,
+      "file": "07-federal-state-laws.md"
+    },
+    {
+      "objective": "7.6",
+      "curriculumPage": 66,
+      "syllabusPage": 21,
+      "file": "07-federal-state-laws.md"
+    },
+    {
+      "objective": "7.7",
+      "curriculumPage": 67,
+      "syllabusPage": 21,
+      "file": "07-federal-state-laws.md"
+    },
+    {
+      "objective": "7.8",
+      "curriculumPage": 68,
+      "syllabusPage": 21,
+      "file": "07-federal-state-laws.md"
+    },
+    {
+      "objective": "7.9",
+      "curriculumPage": 69,
+      "syllabusPage": 21,
+      "file": "07-federal-state-laws.md"
+    },
+    {
+      "objective": "7.10",
+      "curriculumPage": 70,
+      "syllabusPage": 21,
+      "file": "07-federal-state-laws.md"
+    },
+    {
+      "objective": "8.1",
+      "curriculumPage": 72,
+      "syllabusPage": 23,
+      "file": "08-property-rights.md"
+    },
+    {
+      "objective": "8.2",
+      "curriculumPage": 73,
+      "syllabusPage": 23,
+      "file": "08-property-rights.md"
+    },
+    {
+      "objective": "8.3",
+      "curriculumPage": 74,
+      "syllabusPage": 23,
+      "file": "08-property-rights.md"
+    },
+    {
+      "objective": "8.4",
+      "curriculumPage": 75,
+      "syllabusPage": 23,
+      "file": "08-property-rights.md"
+    },
+    {
+      "objective": "8.5",
+      "curriculumPage": 76,
+      "syllabusPage": 23,
+      "file": "08-property-rights.md"
+    },
+    {
+      "objective": "8.6",
+      "curriculumPage": 77,
+      "syllabusPage": 23,
+      "file": "08-property-rights.md"
+    },
+    {
+      "objective": "8.7",
+      "curriculumPage": 78,
+      "syllabusPage": 23,
+      "file": "08-property-rights.md"
+    },
+    {
+      "objective": "8.8",
+      "curriculumPage": 79,
+      "syllabusPage": 23,
+      "file": "08-property-rights.md"
+    },
+    {
+      "objective": "9.1",
+      "curriculumPage": 81,
+      "syllabusPage": 27,
+      "file": "09-title-deeds-ownership-restrictions.md"
+    },
+    {
+      "objective": "9.2",
+      "curriculumPage": 82,
+      "syllabusPage": 27,
+      "file": "09-title-deeds-ownership-restrictions.md"
+    },
+    {
+      "objective": "9.3",
+      "curriculumPage": 83,
+      "syllabusPage": 27,
+      "file": "09-title-deeds-ownership-restrictions.md"
+    },
+    {
+      "objective": "9.4",
+      "curriculumPage": 84,
+      "syllabusPage": 27,
+      "file": "09-title-deeds-ownership-restrictions.md"
+    },
+    {
+      "objective": "9.5",
+      "curriculumPage": 85,
+      "syllabusPage": 27,
+      "file": "09-title-deeds-ownership-restrictions.md"
+    },
+    {
+      "objective": "9.6",
+      "curriculumPage": 86,
+      "syllabusPage": 27,
+      "file": "09-title-deeds-ownership-restrictions.md"
+    },
+    {
+      "objective": "9.7",
+      "curriculumPage": 87,
+      "syllabusPage": 27,
+      "file": "09-title-deeds-ownership-restrictions.md"
+    },
+    {
+      "objective": "9.8",
+      "curriculumPage": 88,
+      "syllabusPage": 27,
+      "file": "09-title-deeds-ownership-restrictions.md"
+    },
+    {
+      "objective": "9.9",
+      "curriculumPage": 89,
+      "syllabusPage": 27,
+      "file": "09-title-deeds-ownership-restrictions.md"
+    },
+    {
+      "objective": "10.1",
+      "curriculumPage": 91,
+      "syllabusPage": 31,
+      "file": "10-legal-descriptions.md"
+    },
+    {
+      "objective": "10.2",
+      "curriculumPage": 92,
+      "syllabusPage": 31,
+      "file": "10-legal-descriptions.md"
+    },
+    {
+      "objective": "10.3",
+      "curriculumPage": 93,
+      "syllabusPage": 31,
+      "file": "10-legal-descriptions.md"
+    },
+    {
+      "objective": "10.4",
+      "curriculumPage": 94,
+      "syllabusPage": 31,
+      "file": "10-legal-descriptions.md"
+    },
+    {
+      "objective": "10.5",
+      "curriculumPage": 95,
+      "syllabusPage": 31,
+      "file": "10-legal-descriptions.md"
+    },
+    {
+      "objective": "10.6",
+      "curriculumPage": 96,
+      "syllabusPage": 31,
+      "file": "10-legal-descriptions.md"
+    },
+    {
+      "objective": "10.7",
+      "curriculumPage": 97,
+      "syllabusPage": 31,
+      "file": "10-legal-descriptions.md"
+    },
+    {
+      "objective": "10.8",
+      "curriculumPage": 98,
+      "syllabusPage": 31,
+      "file": "10-legal-descriptions.md"
+    },
+    {
+      "objective": "10.9",
+      "curriculumPage": 99,
+      "syllabusPage": 31,
+      "file": "10-legal-descriptions.md"
+    },
+    {
+      "objective": "10.10",
+      "curriculumPage": 100,
+      "syllabusPage": 31,
+      "file": "10-legal-descriptions.md"
+    },
+    {
+      "objective": "11.1",
+      "curriculumPage": 102,
+      "syllabusPage": 33,
+      "file": "11-real-estate-contracts.md"
+    },
+    {
+      "objective": "11.2",
+      "curriculumPage": 103,
+      "syllabusPage": 33,
+      "file": "11-real-estate-contracts.md"
+    },
+    {
+      "objective": "11.3",
+      "curriculumPage": 104,
+      "syllabusPage": 33,
+      "file": "11-real-estate-contracts.md"
+    },
+    {
+      "objective": "11.4",
+      "curriculumPage": 105,
+      "syllabusPage": 33,
+      "file": "11-real-estate-contracts.md"
+    },
+    {
+      "objective": "11.5",
+      "curriculumPage": 106,
+      "syllabusPage": 33,
+      "file": "11-real-estate-contracts.md"
+    },
+    {
+      "objective": "11.6",
+      "curriculumPage": 107,
+      "syllabusPage": 33,
+      "file": "11-real-estate-contracts.md"
+    },
+    {
+      "objective": "11.7",
+      "curriculumPage": 108,
+      "syllabusPage": 33,
+      "file": "11-real-estate-contracts.md"
+    },
+    {
+      "objective": "11.8",
+      "curriculumPage": 109,
+      "syllabusPage": 33,
+      "file": "11-real-estate-contracts.md"
+    },
+    {
+      "objective": "11.9",
+      "curriculumPage": 110,
+      "syllabusPage": 33,
+      "file": "11-real-estate-contracts.md"
+    },
+    {
+      "objective": "11.10",
+      "curriculumPage": 111,
+      "syllabusPage": 33,
+      "file": "11-real-estate-contracts.md"
+    },
+    {
+      "objective": "11.11",
+      "curriculumPage": 112,
+      "syllabusPage": 33,
+      "file": "11-real-estate-contracts.md"
+    },
+    {
+      "objective": "12.1",
+      "curriculumPage": 114,
+      "syllabusPage": 36,
+      "file": "12-residential-mortgages.md"
+    },
+    {
+      "objective": "12.2",
+      "curriculumPage": 115,
+      "syllabusPage": 36,
+      "file": "12-residential-mortgages.md"
+    },
+    {
+      "objective": "12.3",
+      "curriculumPage": 116,
+      "syllabusPage": 36,
+      "file": "12-residential-mortgages.md"
+    },
+    {
+      "objective": "12.4",
+      "curriculumPage": 117,
+      "syllabusPage": 36,
+      "file": "12-residential-mortgages.md"
+    },
+    {
+      "objective": "12.5",
+      "curriculumPage": 118,
+      "syllabusPage": 36,
+      "file": "12-residential-mortgages.md"
+    },
+    {
+      "objective": "12.6",
+      "curriculumPage": 119,
+      "syllabusPage": 36,
+      "file": "12-residential-mortgages.md"
+    },
+    {
+      "objective": "12.7",
+      "curriculumPage": 120,
+      "syllabusPage": 36,
+      "file": "12-residential-mortgages.md"
+    },
+    {
+      "objective": "12.8",
+      "curriculumPage": 121,
+      "syllabusPage": 36,
+      "file": "12-residential-mortgages.md"
+    },
+    {
+      "objective": "12.9",
+      "curriculumPage": 122,
+      "syllabusPage": 36,
+      "file": "12-residential-mortgages.md"
+    },
+    {
+      "objective": "13.1",
+      "curriculumPage": 124,
+      "syllabusPage": 39,
+      "file": "13-mortgage-types-financing-sources.md"
+    },
+    {
+      "objective": "13.2",
+      "curriculumPage": 125,
+      "syllabusPage": 39,
+      "file": "13-mortgage-types-financing-sources.md"
+    },
+    {
+      "objective": "13.3",
+      "curriculumPage": 126,
+      "syllabusPage": 39,
+      "file": "13-mortgage-types-financing-sources.md"
+    },
+    {
+      "objective": "13.4",
+      "curriculumPage": 127,
+      "syllabusPage": 39,
+      "file": "13-mortgage-types-financing-sources.md"
+    },
+    {
+      "objective": "13.5",
+      "curriculumPage": 128,
+      "syllabusPage": 39,
+      "file": "13-mortgage-types-financing-sources.md"
+    },
+    {
+      "objective": "13.6",
+      "curriculumPage": 129,
+      "syllabusPage": 39,
+      "file": "13-mortgage-types-financing-sources.md"
+    },
+    {
+      "objective": "13.7",
+      "curriculumPage": 130,
+      "syllabusPage": 39,
+      "file": "13-mortgage-types-financing-sources.md"
+    },
+    {
+      "objective": "13.8",
+      "curriculumPage": 131,
+      "syllabusPage": 39,
+      "file": "13-mortgage-types-financing-sources.md"
+    },
+    {
+      "objective": "13.9",
+      "curriculumPage": 132,
+      "syllabusPage": 39,
+      "file": "13-mortgage-types-financing-sources.md"
+    },
+    {
+      "objective": "13.10",
+      "curriculumPage": 133,
+      "syllabusPage": 39,
+      "file": "13-mortgage-types-financing-sources.md"
+    },
+    {
+      "objective": "14.1",
+      "curriculumPage": 135,
+      "syllabusPage": 44,
+      "file": "14-computations-and-closing.md"
+    },
+    {
+      "objective": "14.2",
+      "curriculumPage": 136,
+      "syllabusPage": 44,
+      "file": "14-computations-and-closing.md"
+    },
+    {
+      "objective": "14.3",
+      "curriculumPage": 137,
+      "syllabusPage": 44,
+      "file": "14-computations-and-closing.md"
+    },
+    {
+      "objective": "14.4",
+      "curriculumPage": 138,
+      "syllabusPage": 44,
+      "file": "14-computations-and-closing.md"
+    },
+    {
+      "objective": "14.5",
+      "curriculumPage": 139,
+      "syllabusPage": 44,
+      "file": "14-computations-and-closing.md"
+    },
+    {
+      "objective": "14.6",
+      "curriculumPage": 140,
+      "syllabusPage": 44,
+      "file": "14-computations-and-closing.md"
+    },
+    {
+      "objective": "14.7",
+      "curriculumPage": 141,
+      "syllabusPage": 44,
+      "file": "14-computations-and-closing.md"
+    },
+    {
+      "objective": "14.8",
+      "curriculumPage": 142,
+      "syllabusPage": 44,
+      "file": "14-computations-and-closing.md"
+    },
+    {
+      "objective": "14.9",
+      "curriculumPage": 143,
+      "syllabusPage": 44,
+      "file": "14-computations-and-closing.md"
+    },
+    {
+      "objective": "14.10",
+      "curriculumPage": 144,
+      "syllabusPage": 44,
+      "file": "14-computations-and-closing.md"
+    },
+    {
+      "objective": "15.1",
+      "curriculumPage": 146,
+      "syllabusPage": 46,
+      "file": "15-markets-analysis.md"
+    },
+    {
+      "objective": "15.2",
+      "curriculumPage": 147,
+      "syllabusPage": 46,
+      "file": "15-markets-analysis.md"
+    },
+    {
+      "objective": "15.3",
+      "curriculumPage": 148,
+      "syllabusPage": 46,
+      "file": "15-markets-analysis.md"
+    },
+    {
+      "objective": "15.4",
+      "curriculumPage": 149,
+      "syllabusPage": 46,
+      "file": "15-markets-analysis.md"
+    },
+    {
+      "objective": "15.5",
+      "curriculumPage": 150,
+      "syllabusPage": 46,
+      "file": "15-markets-analysis.md"
+    },
+    {
+      "objective": "15.6",
+      "curriculumPage": 151,
+      "syllabusPage": 46,
+      "file": "15-markets-analysis.md"
+    },
+    {
+      "objective": "16.1",
+      "curriculumPage": 153,
+      "syllabusPage": 48,
+      "file": "16-real-estate-appraisal.md"
+    },
+    {
+      "objective": "16.2",
+      "curriculumPage": 154,
+      "syllabusPage": 48,
+      "file": "16-real-estate-appraisal.md"
+    },
+    {
+      "objective": "16.3",
+      "curriculumPage": 155,
+      "syllabusPage": 48,
+      "file": "16-real-estate-appraisal.md"
+    },
+    {
+      "objective": "16.4",
+      "curriculumPage": 156,
+      "syllabusPage": 48,
+      "file": "16-real-estate-appraisal.md"
+    },
+    {
+      "objective": "16.5",
+      "curriculumPage": 157,
+      "syllabusPage": 48,
+      "file": "16-real-estate-appraisal.md"
+    },
+    {
+      "objective": "16.6",
+      "curriculumPage": 158,
+      "syllabusPage": 48,
+      "file": "16-real-estate-appraisal.md"
+    },
+    {
+      "objective": "16.7",
+      "curriculumPage": 159,
+      "syllabusPage": 48,
+      "file": "16-real-estate-appraisal.md"
+    },
+    {
+      "objective": "16.8",
+      "curriculumPage": 160,
+      "syllabusPage": 48,
+      "file": "16-real-estate-appraisal.md"
+    },
+    {
+      "objective": "16.9",
+      "curriculumPage": 161,
+      "syllabusPage": 48,
+      "file": "16-real-estate-appraisal.md"
+    },
+    {
+      "objective": "16.10",
+      "curriculumPage": 162,
+      "syllabusPage": 48,
+      "file": "16-real-estate-appraisal.md"
+    },
+    {
+      "objective": "16.11",
+      "curriculumPage": 163,
+      "syllabusPage": 48,
+      "file": "16-real-estate-appraisal.md"
+    },
+    {
+      "objective": "16.12",
+      "curriculumPage": 164,
+      "syllabusPage": 48,
+      "file": "16-real-estate-appraisal.md"
+    },
+    {
+      "objective": "16.13",
+      "curriculumPage": 165,
+      "syllabusPage": 48,
+      "file": "16-real-estate-appraisal.md"
+    },
+    {
+      "objective": "16.14",
+      "curriculumPage": 166,
+      "syllabusPage": 48,
+      "file": "16-real-estate-appraisal.md"
+    },
+    {
+      "objective": "16.15",
+      "curriculumPage": 167,
+      "syllabusPage": 48,
+      "file": "16-real-estate-appraisal.md"
+    },
+    {
+      "objective": "16.16",
+      "curriculumPage": 168,
+      "syllabusPage": 48,
+      "file": "16-real-estate-appraisal.md"
+    },
+    {
+      "objective": "17.1",
+      "curriculumPage": 170,
+      "syllabusPage": 51,
+      "file": "17-investments-business-opportunity.md"
+    },
+    {
+      "objective": "17.2",
+      "curriculumPage": 171,
+      "syllabusPage": 51,
+      "file": "17-investments-business-opportunity.md"
+    },
+    {
+      "objective": "17.3",
+      "curriculumPage": 172,
+      "syllabusPage": 51,
+      "file": "17-investments-business-opportunity.md"
+    },
+    {
+      "objective": "17.4",
+      "curriculumPage": 173,
+      "syllabusPage": 51,
+      "file": "17-investments-business-opportunity.md"
+    },
+    {
+      "objective": "17.5",
+      "curriculumPage": 174,
+      "syllabusPage": 51,
+      "file": "17-investments-business-opportunity.md"
+    },
+    {
+      "objective": "17.6",
+      "curriculumPage": 175,
+      "syllabusPage": 51,
+      "file": "17-investments-business-opportunity.md"
+    },
+    {
+      "objective": "17.7",
+      "curriculumPage": 176,
+      "syllabusPage": 51,
+      "file": "17-investments-business-opportunity.md"
+    },
+    {
+      "objective": "17.8",
+      "curriculumPage": 177,
+      "syllabusPage": 51,
+      "file": "17-investments-business-opportunity.md"
+    },
+    {
+      "objective": "18.1",
+      "curriculumPage": 179,
+      "syllabusPage": 53,
+      "file": "18-taxes-affecting-real-estate.md"
+    },
+    {
+      "objective": "18.2",
+      "curriculumPage": 180,
+      "syllabusPage": 53,
+      "file": "18-taxes-affecting-real-estate.md"
+    },
+    {
+      "objective": "18.3",
+      "curriculumPage": 181,
+      "syllabusPage": 53,
+      "file": "18-taxes-affecting-real-estate.md"
+    },
+    {
+      "objective": "18.4",
+      "curriculumPage": 182,
+      "syllabusPage": 53,
+      "file": "18-taxes-affecting-real-estate.md"
+    },
+    {
+      "objective": "18.5",
+      "curriculumPage": 183,
+      "syllabusPage": 53,
+      "file": "18-taxes-affecting-real-estate.md"
+    },
+    {
+      "objective": "18.6",
+      "curriculumPage": 184,
+      "syllabusPage": 53,
+      "file": "18-taxes-affecting-real-estate.md"
+    },
+    {
+      "objective": "18.7",
+      "curriculumPage": 185,
+      "syllabusPage": 53,
+      "file": "18-taxes-affecting-real-estate.md"
+    },
+    {
+      "objective": "18.8",
+      "curriculumPage": 186,
+      "syllabusPage": 53,
+      "file": "18-taxes-affecting-real-estate.md"
+    },
+    {
+      "objective": "18.9",
+      "curriculumPage": 187,
+      "syllabusPage": 53,
+      "file": "18-taxes-affecting-real-estate.md"
+    },
+    {
+      "objective": "19.1",
+      "curriculumPage": 189,
+      "syllabusPage": 56,
+      "file": "19-planning-zoning-environmental-hazards.md"
+    },
+    {
+      "objective": "19.2",
+      "curriculumPage": 190,
+      "syllabusPage": 56,
+      "file": "19-planning-zoning-environmental-hazards.md"
+    },
+    {
+      "objective": "19.3",
+      "curriculumPage": 191,
+      "syllabusPage": 56,
+      "file": "19-planning-zoning-environmental-hazards.md"
+    },
+    {
+      "objective": "19.4",
+      "curriculumPage": 192,
+      "syllabusPage": 56,
+      "file": "19-planning-zoning-environmental-hazards.md"
+    },
+    {
+      "objective": "19.5",
+      "curriculumPage": 193,
+      "syllabusPage": 56,
+      "file": "19-planning-zoning-environmental-hazards.md"
+    },
+    {
+      "objective": "19.6",
+      "curriculumPage": 194,
+      "syllabusPage": 56,
+      "file": "19-planning-zoning-environmental-hazards.md"
+    },
+    {
+      "objective": "19.7",
+      "curriculumPage": 195,
+      "syllabusPage": 56,
+      "file": "19-planning-zoning-environmental-hazards.md"
+    },
+    {
+      "objective": "19.8",
+      "curriculumPage": 196,
+      "syllabusPage": 56,
+      "file": "19-planning-zoning-environmental-hazards.md"
+    },
+    {
+      "objective": "19.9",
+      "curriculumPage": 197,
+      "syllabusPage": 56,
+      "file": "19-planning-zoning-environmental-hazards.md"
+    },
+    {
+      "objective": "19.10",
+      "curriculumPage": 198,
+      "syllabusPage": 56,
+      "file": "19-planning-zoning-environmental-hazards.md"
+    },
+    {
+      "objective": "19.11",
+      "curriculumPage": 199,
+      "syllabusPage": 56,
+      "file": "19-planning-zoning-environmental-hazards.md"
+    }
+  ]
+}

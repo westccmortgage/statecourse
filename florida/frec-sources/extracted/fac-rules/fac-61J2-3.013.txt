@@ -1,0 +1,28 @@
+SOURCE: https://www.flrules.org/gateway/readFile.asp?sid=0&tid=16988015&type=1&file=61J2-3.013.doc
+PUBLISHER: Florida Department of State, Division of Library and Information Services (flrules.org) — official publisher of the Florida Administrative Code
+RULE: 61J2-3.013 F.A.C.
+CHAPTER: 
+EFFECTIVE: 1/17/2016
+RETRIEVED: 2026-08-30
+LOCAL COPY: florida/frec-sources/fac/fac-61J2-3.013.doc
+SHA256: 760ab66a9f0581af576e71ea6977b643f8e013edaf17de819fa760b03a8720d8
+EXTRACTION: strings(1) over the Word 97 stream; LibreOffice could not load the file.
+----------------------------------------------------------------------
+61J2-3.013 Hardship Cases.
+(1) A physical hardship case pertaining to post licensing education includes:
+(a) a licensee
+s long term illness or an illness involving a close relative or person for whom the licensee has care-giving responsibilities;
+(b) the required course is not reasonably available; or
+(c) the licensee has an economic or technological hardship that substantially relates to the ability to complete education requirements.
+(2) An illness or economic hardship case pertaining to reactivation education includes:
+(a) A licensee
+s long term illness or an illness involving a close relative or person for whom the licensee has care-giving responsibilities;
+(b) The required course is not reasonably available; or
+(c) The licensee has an economic or technological hardship that substantially relates to the ability to complete education requirements.
+(3) An economic hardship is defined as the inabililty to meet reasonable basic living expenses.
+(4) Any person requesting such hardship as cited above shall make a request to the Commission in writing, setting forth the basis of the alleged hardship. The Commission may require said request to be supported by additional documentation.
+Rulemaking Authority 475.05, 475.17(2), 475.183 FS. Law Implemented 475.17(2), (5), (7), 475.183 FS. History
+New 1-1-80, Amended 8-24-80, Formerly 21V-3.13, Amended 4-10-88, 10-13-88, 7-20-93, Formerly 21V-3.013, Amended 12-30-97, 9-17-00, 12-6-12, 1-17-16.
+61J2-3
+Normal
+61J2-3

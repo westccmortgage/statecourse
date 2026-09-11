@@ -1,0 +1,151 @@
+NAL REAL PROPERTY EXEMPTION CODES FOR THE 2026 ROLL SUBMITTAL
+Florida Department of Revenue
+Revised 4/1/2026
+NAL
+Applicable To Taxes Levied By:
+Statute Citation Description HXD Related Amount Code
+School Districts Counties Municipalities
+196.031(1)(a) Exemption of homesteads X Yes Yes Yes $25,000 1
+Additional $25,000 homestead exemption adjusted
+196.031(1)(b) X No Yes Yes $26,411 2
+annually based on the Consumer Price Index
+County additional homestead for persons 65 and
+196.075 X No Yes No Up to $50,000 3
+older
+Municipality additional homestead for persons 65 and
+196.075 X No No Yes Up to $50,000 4
+older
+Exemption for service-connected totally and
+permanently disabled veteran or surviving spouse;
+196.081 X Yes Yes Yes Total 5
+surviving spouse of veteran who died while on active
+duty
+Exemption for disabled veterans confined to
+196.091 X Yes Yes Yes Total 6
+wheelchairs and surviving spouses
+Exemption for a licensed child care facility operating
+196.095 Yes Yes Yes Total 7
+in an enterprise zone
+Exemption for totally and permanently disabled
+196.101 X Yes Yes Yes Total 8
+persons
+196.196 Institutional charitable, religious, scientific, or literary. Yes Yes Yes Total 9
+County exemption for historic property used for
+196.1961 No Yes No Up to 50% 10
+certain commercial or nonprofit purposes
+Municipality exemption for historic property used for
+196.1961 No No Yes Up to 50% 11
+certain commercial or nonprofit purposes
+Additional provisions for exempting property used by
+196.197 hospitals, nursing homes, and homes for special Yes Yes Yes Total 12
+services
+Exemption for property used by nonprofit homes for
+196.1975 Yes Yes Yes Total 13
+the aged
+Exemption for property used by proprietary continuing
+196.1977 care facilities (for each apt. occupied by a person Yes Yes Yes $25,000 14
+holding a continuing care contract)
+Affordable housing property exemption;
+196.1978 (1) Yes Yes Yes
+Multi-family project used for a charitable purpose (low 15
+196.1978 (2) Yes Yes Yes 100% Discount
+income families)
+196.198 Educational property exemption Yes Yes Yes Total 16
+196.1983 Charter school exemption from ad valorem taxes Yes Yes Yes Total 17
+196.1985 Labor organization property exemption Yes Yes Yes Total 18
+196.1986 Community centers exemption Yes Yes Yes Total 19
+196.199 Government property exemption Yes Yes Yes Total 20
+Certain agreements with local governments for use of
+196.1993 Yes Yes Yes Total 21
+public property
+County economic development ad valorem tax
+196.1995 No Yes No Up to 100% (10 year expiration) 22
+exemptions
+Municipality economic development ad valorem tax
+196.1995 No No Yes Up to 100% (10 year expiration) 23
+exemptions
+Up to 100% (improvements
+196.1997 County ad valorem exemptions for historic properties No Yes No 24
+only; up to 10 years)
+Municipality ad valorem exemptions for historic Up to 100% (improvements
+196.1997 No No Yes 25
+properties only; up to 10 years)
+County additional ad valorem tax exemptions for
+196.1998 No Yes No Total 26
+historic properties open to the public
+Municipality additional ad valorem tax exemptions for
+196.1998 No No Yes Total 27
+historic properties open to the public
+Currently not in use 28
+Not-for-profit sewer and water company property
+196.2001 Yes Yes Yes Total 29
+exemption
+Exemption for s. 501(c)(12) not-for-profit water and
+196.2002 Yes Yes Yes Total 30
+wastewater systems
+196.202 Property of blind persons Yes Yes Yes $5,000 31
+196.202 Property of widowers Yes Yes Yes $5,000 32
+196.202 Property of widows Yes Yes Yes $5,000 33
+196.202 Property of persons totally & permanently disabled Yes Yes Yes $5,000 34
+
+NAL REAL PROPERTY EXEMPTION CODES FOR THE 2026 ROLL SUBMITTAL
+Florida Department of Revenue
+Revised 4/1/2026
+NAL
+Applicable To Taxes Levied By:
+Statute Citation Description HXD Related Amount Code
+School Districts Counties Municipalities
+Exemption for disabled ex-service member or
+196.24 Yes Yes Yes $5,000 35
+surviving spouse
+Land dedicated in perpetuity for conservation
+196.26(2) purposes used exclusively for those purposes (full Yes Yes Yes Total 36
+exemption)
+Land dedicated in perpetuity for conservation
+196.26(3) purposes used exclusively for those purposes (50% Yes Yes Yes 50% 37
+exemption)
+Additional homestead exemption for deployed service Taxable value of homestead x
+196.173 X Yes Yes Yes 38
+members number of days deployed / 365
+County senior exemption - age 65 & 25-year resident
+196.075 X No Yes No Total 39
+& income not to exceed $20,000
+Municipality senior exemption - age 65 & 25-year
+196.075 X No No Yes Total 40
+resident & income not to exceed $20,000
+Exemption for first responder totally and permanently
+196.081(6) disabled in the line of duty or surviving spouse;
+X Yes Yes Yes Total 41
+196.102 surviving spouse of first responder who died in the
+line of duty
+196.1987 Biblical History Display Property Yes Yes Yes Total 42
+Florida Housing Finance Corporation (FHFC) –
+certified new multi-family
+196.1978(3) Yes Yes Yes
+Multifamily Project Subject to Land Use Restriction Up to 100% 43
+196.1978(4) Yes Yes Yes
+Agreement with the Florida Housing Finance
+Corporation or Housing Finance Authority
+196.1978 (1)(b) Land leased by a nonprofit for affordable housing Yes Yes Yes 100% 44
+196.1979 County affordable housing program No Yes No Up to 100% 45
+196.1979 Municipal affordable housing program No No Yes Up to 100% 46
+Newly Constructed Multifamily Project on Land
+196.19781 Yes Yes Yes Up to 100% 47
+Owned by a Governmental Entity
+Newly constructed multifamily project on land owned
+196.19782 Yes Yes Yes Up to 100% 48
+by a governmental entity
+Other Codes
+Percentage equal to percentage
+disability determined by the
+Disabled veterans 65 or older homestead discount;
+196.082 X Yes Yes Yes USDVA; or last dollar amount 80
+surviving spouse carryover
+exempted from the previous
+residence
+The lesser of the cost of
+Reduction in assessment for living quarters of parents construction or reconstruction of
+193.703 X Yes Yes Yes 81
+or grandparents the property or 20% of the total
+assessed value as improved
+197.502 Land available for taxes Yes Yes Yes Total 82

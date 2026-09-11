@@ -1,0 +1,21 @@
+SOURCE: https://www.flrules.org/gateway/readFile.asp?sid=0&tid=25965947&type=1&file=61J2-17.013.doc
+PUBLISHER: Florida Department of State, Division of Library and Information Services (flrules.org) — official publisher of the Florida Administrative Code
+RULE: 61J2-17.013 F.A.C.
+CHAPTER: 
+EFFECTIVE: 6/30/2022
+RETRIEVED: 2026-08-30
+LOCAL COPY: florida/frec-sources/fac/fac-61J2-17.013.doc
+SHA256: d76383f9498d49e0f8b74c55f231c8c4451fee707d8bc14091366f9f5580966b
+EXTRACTION: strings(1) over the Word 97 stream; LibreOffice could not load the file.
+----------------------------------------------------------------------
+61J2-17.013 Interpretation of Particular Phrases.
+Whenever used, the phrases set forth shall be construed as follows:
+To guarantee that its pupils will pass any examinations required for licensure
+ as prohibited by Section 475.451(3), F.S., and shall be construed to include, but without limitation, any representation, agreement, promise or understanding whereby a person enrolled in any school or course is to receive any refund of money or other thing of value if such person should fail the examination offered by the Department.
+Each person, school, or institution
+ used in Section 475.451(1), F.S., is construed to include only one address or location; and a person, school or institution, offering or conducting a course at more than one address or location, must obtain a permit for each address or location.
+Rulemaking Authority 475.05 FS. Law Implemented 475.451 FS. History
+New 6-28-93, Formerly 21V-17.013, Amended 6-30-22.
+61J2-17
+Normal
+61J2-17

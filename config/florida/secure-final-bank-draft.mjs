@@ -1,0 +1,49 @@
+/**
+ * Secure end-course item-development bank. Authoring slice only: 19 drafts against a two-form,
+ * 252-slot plan. The item-count rule remains open; the filing-safe plan uses 126 items per form.
+ * Nothing here constitutes a usable form, and the engine keeps the final disabled.
+ */
+const item = (record) => Object.freeze({
+  level: "application",
+  choices: Object.freeze(record.choices),
+  status: "DRAFT — requires independent legal/content review",
+  ...record,
+});
+
+export const SECURE_FINAL_DRAFT_ITEMS = Object.freeze([
+  item({ id: "FL-FD-001", section: 1, objective: "1.4", stem: "A seller asks a sales associate for an independent opinion of market value for use in a condemnation trial. Which referral best respects the professional boundary taught in Course I?", choices: ["Property manager", "State-certified appraiser", "Mortgage loan originator", "Home inspector"], correctIndex: 1, rationale: "An independent valuation for litigation is appraisal work; a brokerage CMA is not a substitute." }),
+  item({ id: "FL-FD-002", section: 2, objective: "2.7", stem: "An unlicensed person expects a referral payment for finding a buyer and negotiating the price of another person's Florida home. Which fact most directly places the conduct inside the licensing analysis?", choices: ["The home is residential", "The person expected compensation for performing brokerage for another", "The seller agreed orally", "The buyer used cash"], correctIndex: 1, rationale: "The regulated-act analysis turns on brokerage activity for another with expected compensation, absent an exemption." }),
+  item({ id: "FL-FD-003", section: 3, objective: "3.5", stem: "A sales associate's license is current but voluntarily inactive. The associate wants to negotiate a listing tonight. What is the correct first conclusion?", choices: ["Current means the associate may negotiate", "Inactive status does not authorize licensed activity", "The associate may act if unpaid", "The associate may act only on residential property"], correctIndex: 1, rationale: "Current and active are different status questions; inactive status does not authorize brokerage." }),
+  item({ id: "FL-FD-004", section: 4, objective: "4.4", stem: "A transaction broker receives a buyer's deposit and later learns a known, non-obvious roof defect materially affects the home's value. Which pair of duties applies?", choices: ["Account for funds and disclose the known material fact", "Obey every buyer instruction and conceal the defect", "Guarantee the roof and refund the deposit", "Act as a fiduciary to both parties"], correctIndex: 0, rationale: "A transaction broker must account for funds and disclose known material facts affecting value that are not readily observable." }),
+  item({ id: "FL-FD-005", section: 5, objective: "5.6", stem: "Buyer and seller send a broker conflicting written demands for the escrow deposit. Which response is within the recognized settlement framework?", choices: ["Pay the party who complained first", "Use an authorized settlement procedure such as mediation, arbitration, litigation, or an escrow disbursement order", "Split the funds automatically", "Transfer the money to the sales associate"], correctIndex: 1, rationale: "The broker uses one of the recognized settlement procedures rather than deciding entitlement informally." }),
+  item({ id: "FL-FD-006", section: 6, objective: "6.3", stem: "DBPR investigates a legally sufficient complaint. Which body determines whether probable cause exists before a formal prosecution proceeds?", choices: ["County property appraiser", "Probable-cause panel", "Local Realtor association", "Closing agent"], correctIndex: 1, rationale: "The probable-cause panel evaluates whether probable cause exists; it does not conduct the final hearing." }),
+  item({ id: "FL-FD-007", section: 7, objective: "7.5", stem: "A leasing advertisement says “quiet building—no children.” Which protected-class concern is most directly raised under the federal Fair Housing Act as amended in 1988?", choices: ["Age", "Familial status", "Source of income", "Occupation"], correctIndex: 1, rationale: "Familial status was added as a protected class by the 1988 amendments." }),
+  item({ id: "FL-FD-008", section: 8, objective: "8.8", stem: "A purchaser will own shares in an entity and receive a proprietary right to occupy a unit, rather than own the unit as a parcel of real property. What form is described?", choices: ["Condominium", "Cooperative", "Tenancy in common", "Community development district"], correctIndex: 1, rationale: "A cooperative uses entity ownership with a proprietary occupancy interest." }),
+  item({ id: "FL-FD-009", section: 9, objective: "9.3", stem: "A recorded deed appears in the public records even though a later purchaser never actually read it. What type of notice can the record provide?", choices: ["Actual notice only", "Constructive notice", "No notice until closing", "Inquiry waived by statute"], correctIndex: 1, rationale: "Proper recording can charge later parties with constructive notice." }),
+  item({ id: "FL-FD-010", section: 10, objective: "10.8", stem: "A description conveys the southwest quarter of the northeast quarter of a standard 640-acre section. Ignoring irregular government lots, how many acres are conveyed?", choices: ["20", "40", "80", "160"], correctIndex: 1, rationale: "One quarter of one quarter is 1/16 of 640 acres, or 40 acres." }),
+  item({ id: "FL-FD-011", section: 11, objective: "11.7", stem: "A seller changes the buyer's price term, signs, and returns the document before the buyer accepts the change. What is the seller's response?", choices: ["Acceptance", "Counteroffer", "Executed contract", "Assignment"], correctIndex: 1, rationale: "A material change is a counteroffer, not acceptance of the original offer." }),
+  item({ id: "FL-FD-012", section: 12, objective: "12.2", stem: "At loan closing, which document contains the borrower's promise to repay and which document gives real property as security?", choices: ["Deed then note", "Note then mortgage", "Mortgage then appraisal", "Closing Disclosure then deed"], correctIndex: 1, rationale: "The note is the debt promise; the mortgage secures it with the property." }),
+  item({ id: "FL-FD-013", section: 13, objective: "13.5", stem: "An adjustable-rate loan uses a 3.0% index and 2.25% margin before application of caps. What fully indexed rate does that formula produce?", choices: ["0.75%", "2.25%", "5.25%", "6.75%"], correctIndex: 2, rationale: "Index plus margin equals 5.25% before any cap limits are applied." }),
+  item({ id: "FL-FD-014", section: 14, objective: "14.1", stem: "A listing agreement provides a 6% commission on a $425,000 sale. What commission does that formula produce before any split?", choices: ["$21,250", "$25,500", "$27,625", "$31,875"], correctIndex: 1, rationale: "$425,000 × 0.06 = $25,500." }),
+  item({ id: "FL-FD-015", section: 15, objective: "15.4", stem: "Employment and household formation rise quickly while available housing changes little. All else equal, which short-run pattern is most consistent with supply and demand?", choices: ["Lower prices and higher vacancy", "Upward price pressure and lower vacancy", "No market effect because land is durable", "Immediate equal increase in supply"], correctIndex: 1, rationale: "Demand growth against inelastic short-run supply tends to raise price pressure and reduce vacancy." }),
+  item({ id: "FL-FD-016", section: 16, objective: "16.14", stem: "An appraiser values a stabilized apartment property primarily by converting its anticipated net operating income into value. Which approach is being applied?", choices: ["Cost approach", "Income capitalization approach", "Sales comparison without adjustments", "Assessed-value approach"], correctIndex: 1, rationale: "The income approach converts anticipated income benefits into an indication of value." }),
+  item({ id: "FL-FD-017", section: 17, objective: "17.3", stem: "A property has $120,000 potential gross income, $10,000 vacancy loss, $5,000 other income and $45,000 operating expenses. What is NOI before debt service?", choices: ["$60,000", "$70,000", "$75,000", "$80,000"], correctIndex: 1, rationale: "$120,000 − $10,000 + $5,000 − $45,000 = $70,000; debt service is not an operating expense." }),
+  item({ id: "FL-FD-018", section: 18, objective: "18.3", stem: "A taxing authority applies 8 mills to $250,000 of taxable value. What tax does that authority levy?", choices: ["$200", "$2,000", "$8,000", "$20,000"], correctIndex: 1, rationale: "Eight mills equals $8 per $1,000; 250 × $8 = $2,000." }),
+  item({ id: "FL-FD-019", section: 19, objective: "19.6", stem: "An owner seeks relief from a setback because a unique lot shape creates a legally sufficient property hardship. Which zoning tool most directly addresses the request?", choices: ["Variance", "Comprehensive plan amendment", "Eminent domain", "Building moratorium"], correctIndex: 0, rationale: "A variance can relieve a dimensional requirement when the jurisdiction's hardship standard is met." }),
+]);
+
+export const BANK_STATUS = Object.freeze({
+  draftedItems: SECURE_FINAL_DRAFT_ITEMS.length,
+  candidate100FormItems: 100,
+  stateCoursePlannedFormItems: 126,
+  currentRequiredForms: 2,
+  currentPlannedSlots: 252,
+  remainingAuthoringSlots: 233,
+  slotsRetiredIf100ItemsConfirmed: 52,
+  remainingAuthoringSlotsIf100ItemsConfirmed: 181,
+  complete: false,
+  usableFormGenerated: false,
+  blockers: Object.freeze(["233 additional independently reviewed slots across two forms", "final pagination lock", "cross-form assembly and duplication audit", "independent legal/content review"]),
+});
+
+export default Object.freeze({ SECURE_FINAL_DRAFT_ITEMS, BANK_STATUS });
