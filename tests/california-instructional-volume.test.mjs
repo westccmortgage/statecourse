@@ -94,6 +94,41 @@ test("the printed volume tells the student what the portal withholds", () => {
   assert.match(builder, /the student sees only the question and the answer choices/i);
 });
 
+/**
+ * A FONT-STARVED REBUILD MUST NOT LOOK LIKE A CONTENT CHANGE.
+ *
+ * The volume PDFs are gitignored build output. The renderer needs the full DejaVu family, and a
+ * machine carrying only the regular and bold faces still renders — reportlab substitutes, the
+ * metrics change, and the book comes out shorter. That happened here: a container missing
+ * DejaVuSerif-Italic produced 458/383/380 pages against the committed 524/444/434, and the three
+ * page-count tests below all failed saying the DOCUMENTS were wrong. They were not. The documents
+ * were right and the PDF was mis-rendered, which is the more expensive way round to be confused.
+ *
+ * This runs first and compares the measured PDF against the page count recorded when the volume
+ * was actually built. A mismatch here means the local rebuild is untrustworthy, and it says so,
+ * instead of leaving three downstream tests to blame the submission documents.
+ */
+test("the built volume matches the page count recorded for it, or the local render is wrong", () => {
+  const recorded = JSON.parse(fs.readFileSync(path.join(ROOT, "california/print/current-build.json"), "utf8"));
+  const drift = [];
+  for (const program of PROGRAMS) {
+    const entry = recorded.courses.find((course) => course.courseId === program.courseId);
+    assert.ok(entry, `${program.title}: current-build.json records no page count for it`);
+    const measured = pageCount(volume(program));
+    if (measured !== entry.pages) drift.push(`${program.title}: built ${measured} pages, recorded ${entry.pages}`);
+  }
+  assert.deepEqual(
+    drift,
+    [],
+    `the locally built volume does not match the recorded build:\n  ${drift.join("\n  ")}\n` +
+      "If the course content did not change, the renderer is the suspect before the documents are. " +
+      "The usual cause is an incomplete DejaVu installation: the italic and oblique faces are needed " +
+      "as well as regular and bold, and reportlab substitutes silently rather than failing. " +
+      "Install fonts-dejavu and fonts-dejavu-extra, or point STATECOURSE_FONT_DIR at a complete family, " +
+      "then re-run node scripts/test-california-documents.mjs --prepare.",
+  );
+});
+
 test("the page count a reviewer is told is the page count they receive", () => {
   /* The dossier estimated; the estimate was wrong by 103 pages for Principles. It now reads the
      built PDF. */
