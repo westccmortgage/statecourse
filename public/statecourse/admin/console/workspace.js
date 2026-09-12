@@ -88,9 +88,14 @@ async function openScreen(unitId,screenId){
 function renderStudents(){
   const source=data.datasets.enrollments;
   if(!source.available){$('#studentsBody').innerHTML=unavailable('Enrollments');return;}
+  const people=new Map((data.datasets.people?.rows||[]).map(p=>[p.id,p]));
+  const access=new Map();for(const entry of data.datasets.recentAccess?.rows||[])if(!access.has(entry.enrollment_id))access.set(entry.enrollment_id,entry.occurred_at);
   const filter=$('#studentSearch').value.toLowerCase();
-  $('#studentsBody').innerHTML=sourceNote(source)+table(['Course','Enrollment','Status','Last course access',''],source.rows.filter(e=>`${e.course_id} ${e.id} ${e.student_id}`.toLowerCase().includes(filter)).map(e=>[
-    esc(data.datasets.courses.rows.find(c=>c.id===e.course_id)?.name||e.course_id),`<small>${esc(e.id)}</small>`,esc(e.status),esc(when(e.last_course_accessed_at)),`<button type="button" data-work="student" data-id="${esc(e.id)}">Open student</button>`]));
+  const rows=source.rows.filter(e=>{const p=people.get(e.student_id);return `${p?.email||''} ${p?.first_name||''} ${p?.last_name||''} ${e.course_id} ${e.id} ${e.student_id}`.toLowerCase().includes(filter);});
+  $('#studentsBody').innerHTML=sourceNote(source)+table(['Student','Course','Enrollment','Status','Last recorded course access',''],rows.map(e=>{
+    const person=people.get(e.student_id),name=[person?.first_name,person?.last_name].filter(Boolean).join(' '),last=access.get(e.id)||e.last_course_accessed_at;
+    return [`<strong>${esc(person?.email||e.student_id)}</strong><small>${esc(name)}</small>`,esc(data.datasets.courses.rows.find(c=>c.id===e.course_id)?.name||e.course_id),`<small>${esc(e.id)}</small>`,esc(e.status),last?esc(when(last)):data.datasets.recentAccess?.available?'No recent record':'Not verified',`<button type="button" data-work="student" data-id="${esc(e.id)}">Open student</button>`];
+  }));
 }
 async function openStudent(id){
   const s=await api('student',{enrollment_id:id});

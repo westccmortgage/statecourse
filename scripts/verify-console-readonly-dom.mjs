@@ -15,6 +15,8 @@ const id='ca-real-estate-principles-45',course={id,state:'CA',name:'Real Estate 
 const structure=courseStructure(id), firstUnit=structure.units[0], firstScreen=firstUnit.blocks[0].screens.find(s=>s.type==='instruction');
 let storedDraft=null,checks=0;const requests=[];
 const source=rows=>({available:true,truncated:false,rows});
+const roster=[{id:'44444444-4444-4444-8444-444444444444',student_id:'55555555-5555-4555-8555-555555555555',course_id:id,status:'active'}, {id:'66666666-6666-4666-8666-666666666666',student_id:'77777777-7777-4777-8777-777777777777',course_id:id,status:'active'}];
+const identities=[{id:roster[0].student_id,email:'anna@example.invalid',first_name:'Anna',last_name:'<img src=x onerror=alert(1)>'},{id:roster[1].student_id,email:'boris@example.invalid',first_name:'Boris',last_name:'Student'}];
 const person={user:{id:'11111111-1111-4111-8111-111111111111',email:'owner@example.invalid'},roles:['owner'],bindings:[{actorRole:'owner',scopeState:null}]};
 const workspace=()=>({course,structure,baseFingerprint:baseFingerprint(id),draft:storedDraft,reviews:[],releases:[],storageAvailable:true});
 w.fetch=async(url,options={})=>{
@@ -27,7 +29,7 @@ w.fetch=async(url,options={})=>{
   else if(u.pathname==='/api/admin/workspace'){
     let result={};
     if(body?.action==='save_draft'){storedDraft={revision:(storedDraft?.revision||0)+1,payload:body.payload,content_hash:contentHash(body.payload)};result=storedDraft;}
-    else if(u.searchParams.get('view')==='overview')result={checkedAt:new Date().toISOString(),datasets:{courses:source([course]),enrollments:source([]),videos:source([]),governance:source([]),tasks:source([])}};
+    else if(u.searchParams.get('view')==='overview')result={checkedAt:new Date().toISOString(),datasets:{courses:source([course]),enrollments:source(roster),people:source(identities),recentAccess:source([{enrollment_id:roster[0].id,occurred_at:'2026-09-12T17:30:00Z'}]),videos:source([]),governance:source([]),tasks:source([])}};
     else if(u.searchParams.get('view')==='course')result=workspace();
     else if(u.searchParams.get('view')==='screen')result={title:firstScreen.title,bodyMarkdown:'The original instruction text, available for editing.',type:'instruction'};
     else if(u.searchParams.get('view')==='health'||u.searchParams.get('view')==='audit'||u.searchParams.get('view')==='payments')result=source([]);
@@ -50,6 +52,15 @@ try {
     ok(!w.document.getElementById(tab.dataset.panel).hidden,'navigation opens '+tab.dataset.panel);
     ok([...w.document.querySelectorAll('.tab')].filter(t=>t!==tab).every(t=>w.document.getElementById(t.dataset.panel).hidden),'other panels hidden');
   }
+  w.document.querySelector('[data-panel="studentsPanel"]').click();await drain();
+  ok(w.document.querySelector('#studentsBody').textContent.includes('anna@example.invalid'),'student identities appear in the roster');
+  ok(!w.document.querySelector('#studentsBody img'),'student names cannot inject HTML');
+  const studentSearch=w.document.querySelector('#studentSearch');
+  studentSearch.value='ANNA';studentSearch.dispatchEvent(new w.Event('input'));
+  ok(w.document.querySelector('#studentsBody').textContent.includes('anna@example.invalid')&&!w.document.querySelector('#studentsBody').textContent.includes('boris@example.invalid'),'name search is case insensitive and excludes other students');
+  studentSearch.value='boris@example.invalid';studentSearch.dispatchEvent(new w.Event('input'));
+  ok(w.document.querySelector('#studentsBody').textContent.includes('boris@example.invalid')&&!w.document.querySelector('#studentsBody').textContent.includes('anna@example.invalid'),'email search selects the matching student');
+  studentSearch.value='';studentSearch.dispatchEvent(new w.Event('input'));
   w.document.querySelector('[data-panel="coursesPanel"]').click();
   w.document.querySelector('[data-work="course"]').click();await drain();
   ok(w.document.querySelector('#courseWorkspace').textContent.includes('Real Estate Principles'),'course opens');

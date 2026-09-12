@@ -56,7 +56,7 @@ export async function snapshot(staff) {
   const ids = courses.rows.map(c => c.id);
   const courseFilter = idsFilter('course_id', ids);
   const queries = {
-    enrollments: `enrollments?select=id,student_id,course_id,state,status,course_version,enrollment_origin,expires_at,compliance_credit_eligible,enrollment_date,completed_at,last_course_accessed_at&order=enrollment_date.desc&limit=1001${scope}`,
+    enrollments: `enrollments?select=id,student_id,course_id,state,status,course_version,enrollment_origin,expires_at,compliance_credit_eligible,enrollment_date,completed_at,last_course_accessed_at&order=enrollment_date.desc&limit=1001${scope}${courseFilter}`,
     videos: `video_assets?select=asset_key,course_id,delivery_id,screen_id,label,duration_seconds,stream_uid,created_at&order=created_at.desc&limit=1001${courseFilter}`,
     governance: `offering_public_status?select=*&site=eq.${encodeURIComponent(new URL(globalThis.Netlify?.env.get('STATECOURSE_BASE_URL') || process.env.STATECOURSE_BASE_URL).hostname.replace(/^www\./,''))}&order=state.asc,offering_id.asc&limit=1001${scope}`,
     payments: `admin_payment_ledger?select=*&order=payment_date.desc&limit=1001${scope}`,
@@ -67,6 +67,17 @@ export async function snapshot(staff) {
   if (!mayReadMoney) delete queries.payments;
   const entries = await Promise.all(Object.entries(queries).map(async ([key, query]) => [key, await readRows(query)]));
   const datasets = { courses, ...Object.fromEntries(entries) };
+  if (!courses.available) datasets.enrollments = { available: false, rows: [], truncated: false };
+  else if (courses.truncated) datasets.enrollments.truncated = true;
+  const studentIds=[...new Set(datasets.enrollments.rows.map(e=>e.student_id).filter(id=>UUID.test(id)))];
+  const people=[];let peopleAvailable=datasets.enrollments.available;
+  for(let offset=0;offset<studentIds.length;offset+=100){
+    const result=await readRows(`students?select=id,email,first_name,last_name&id=in.(${studentIds.slice(offset,offset+100).join(',')})&limit=101`);
+    peopleAvailable=peopleAvailable&&result.available;people.push(...result.rows);
+  }
+  datasets.people={available:peopleAvailable,rows:people,truncated:datasets.enrollments.truncated};
+  datasets.recentAccess=courses.available?await readRows(`lms_regulatory_audit?select=enrollment_id,occurred_at,actor_mode&event_type=eq.block_player_opened&order=occurred_at.desc&limit=1001${courseFilter}`):{available:false,rows:[],truncated:false};
+  if (courses.truncated) datasets.recentAccess.truncated = true;
   // These queries depend on the course inventory, so an unreadable inventory
   // must not turn an unknown count into a reassuring zero.
   for (const name of ['videos', 'tasks']) {
@@ -85,7 +96,7 @@ export function assessSnapshot(data, environment = {}) {
   }
   for (const course of data.datasets.courses.rows) {
     const structure = courseStructure(course.id);
-    if (!structure.available) { add('renderer_missing', 'blocking', course.id, 'No student block renderer is registered for this course.'); continue; }
+    if (!structure.available) { if(course.approval_status==='not_regulated')continue;add('renderer_missing', 'blocking', course.id, 'No student block renderer is registered for this course.'); continue; }
     if (!course.name?.trim()) add('course_title_missing', 'blocking', course.id, 'Course title is empty.');
     const readiness = trainingReadiness(course.id);
     if (!readiness.ready) add('training_not_ready', 'blocking', course.id, `Free training cannot open: ${readiness.reason}.`);

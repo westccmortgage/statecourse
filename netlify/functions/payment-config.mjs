@@ -1,4 +1,5 @@
 import { getCourseCatalog, evaluateCheckoutEligibility } from "../../config/course-catalog.mjs";
+import { availableTraining } from "./_lib/training-access.mjs";
 import { response } from "./_lib/http.mjs";
 
 export const handler = async () => {
@@ -23,5 +24,6 @@ export const handler = async () => {
     mode,
     productionPaymentsEnabled: mode === "live" && process.env.STATECOURSE_LIVE_PAYMENTS_ENABLED === "true",
     courses,
+    training: await availableTraining(),
   });
 };

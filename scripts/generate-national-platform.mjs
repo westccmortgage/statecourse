@@ -142,7 +142,7 @@ const requirementsBody = `${pageHero("National regulatory directory", "State req
 write("state-requirements/index.html", document({ title: "State Requirements", description: "Compare real estate licensing requirements across 50 states and Washington, D.C.", active: "requirements", body: requirementsBody, scripts: '<script src="../state-requirements.js" defer></script>' }));
 
 const courseCards = catalogCourses.map((course) => `<article class="content-card" data-state="${esc(course.state_id)}" data-type="${esc(course.program_type)}"><p class="overline">${esc(course.state_id)} · ${esc(course.approval_status)}</p><h2>${esc(course.course_title)}</h2><p>${esc(course.required_hours)} hours · ${esc(course.delivery_method)}</p><a href="${relativeRoute("../", course.route)}">Review course record →</a></article>`).join("");
-const coursesBody = `${pageHero("National course catalog", "Regulated education, grouped by state.", "Every course has its own jurisdiction, version, instructor, approval record, delivery rules, examinations, disclosures, and enrollment gate.")}<section class="page-body"><p class="notice"><strong>Enrollment remains closed.</strong> Every listed qualifying-education product is currently in development and cannot award regulatory credit.</p><div class="content-grid" style="margin-top:34px">${courseCards}</div></section>`;
+const coursesBody = `${pageHero("National course catalog", "Regulated education, grouped by state.", "Every course has its own jurisdiction, version, instructor, approval record, delivery rules, examinations, disclosures, and enrollment gate.")}<section class="page-body"><p class="notice"><strong>Credit-eligible enrollment remains closed.</strong> Free, non-credit training is available for courses opened in the student portal. <a href="${studentPortalUrl}">See available training courses →</a></p><div class="content-grid" style="margin-top:34px">${courseCards}</div></section>`;
 write("courses/index.html", document({ title: "Course Catalog", description: "StateCourse real estate licensing education catalog.", body: coursesBody }));
 
 /* Each card links only where a real destination exists: a card with no href renders as plain
@@ -451,8 +451,8 @@ for (const course of catalogCourses) {
     : `<div><p class="overline">Enrollment path</p><ol class="license-path">
           <li><h3>Create or sign in to your StateCourse account</h3><p>Your student identity and course records remain separate from marketing and preview activity.</p></li>
           <li><h3>Review required disclosures</h3><p>The current state, course, refund, cancellation, and regulatory acknowledgment versions are recorded before checkout.</p></li>
-          <li><h3>Complete Stripe Checkout</h3><p>Payment is processed by Stripe. Enrollment is created only after a verified paid webhook.</p></li>
-          <li><h3>Open the purchased course</h3><p>Only the exact purchased course and version appear in the student cabinet.</p></li>
+          <li><h3>Choose the available access</h3><p>Free training enrolls you without checkout or payment. Paid education requires the course approval and payment controls to be enabled separately.</p></li>
+          <li><h3>Open your course</h3><p>Your course, version and saved progress appear in My Courses. Free training does not earn regulatory credit.</p></li>
         </ol></div>`;
   const practiceUrl = `${prefix}free-practice/?state=${encodeURIComponent(course.state_id)}&amp;course=${encodeURIComponent(course.course_id)}`;
   const courseActions = isMichigan
@@ -465,11 +465,12 @@ for (const course of catalogCourses) {
     : `<div class="content-grid">
         <article class="content-card"><p class="overline">Free practice</p><h2>Open lessons and practice</h2><p>Read lessons and answer questions with explanations. Free practice, with no account or payment required.</p><a href="${practiceUrl}">Start Free Practice →</a></article>
         <article class="content-card"><p class="overline">Course review</p><h2>Inspect the course structure</h2><p>Review instructional organization without creating progress or regulatory credit.</p>${preview || `<a href="${prefix}courses/">Return to Course Catalog →</a>`}</article>
-        <article class="content-card"><p class="overline">Returning student</p><h2>Resume from your cabinet</h2><p>Sign in to view purchased courses, progress, records, and certificates.</p><a href="${studentPortalUrl}?return_to=${encodeURIComponent("/student/")}">Student Sign In →</a></article>
+        <article class="content-card"><p class="overline">Returning student</p><h2>Resume from your cabinet</h2><p>Sign in to view your training or purchased courses, progress and records.</p><a href="${studentPortalUrl}?return_to=${encodeURIComponent("/student/")}">Student Sign In →</a></article>
       </div>`;
   const body = `${pageHero(`${course.state_id} · ${course.approval_status}`, course.course_title, `${course.required_hours}-hour ${course.program_type} course record.`, true)}
     <section class="page-body">
       <div class="notice"><strong>Regulatory status:</strong> ${courseStatusNotice}</div>
+      ${!isMichigan?`<section class="source-box" data-training-offering="${esc(course.course_id)}" hidden aria-label="Free course training"></section>`:""}
       <div class="state-summary">
         <aside class="state-record"><p class="overline">Course record</p><dl>
           <div><dt>Required hours</dt><dd>${esc(course.required_hours)}</dd></div>
@@ -486,7 +487,7 @@ for (const course of catalogCourses) {
   const courseDescription = isMichigan
     ? `${course.course_title} development and regulatory-status record. Enrollment is unavailable.`
     : `${course.course_title} course record and enrollment path.`;
-  write(`${routeParts.join("/")}/index.html`, document({ title: course.course_title, description: courseDescription, prefix, body }));
+  write(`${routeParts.join("/")}/index.html`, document({ title: course.course_title, description: courseDescription, prefix, body, scripts:!isMichigan?`<script type="module" src="${prefix}course-training.js"></script>`:"" }));
 }
 
 const californiaCourses = catalogCourses.filter((course) => course.state_id === "CA");
