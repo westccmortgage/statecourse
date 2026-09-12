@@ -200,7 +200,7 @@ async function renderLesson(){
 }
 function renderMode(){const banner=$("#reviewBanner");banner.hidden=!page.data.reviewNotice;banner.textContent=page.data.reviewNotice||"";$("#requestHelp").hidden=page.data.mode!=="student";if(page.data.enrollment.qaOnly)actionMessage.textContent="QA non-credit enrollment. Activity is test data and cannot award California pre-license credit.";}
 async function loadCourse(assignment=page.assignment){
-  if(!page.enrollmentId){location.replace("/student/");return;}message.hidden=false;message.classList.remove("error");message.textContent="Opening your California course record…";shell.hidden=true;
+  if(!page.enrollmentId){location.replace("/student/");return;}message.hidden=false;message.classList.remove("error");message.textContent="Opening your course record…";shell.hidden=true;
   try{const url="/api/student/course?enrollment_id="+encodeURIComponent(page.enrollmentId)+(assignment?"&assignment="+encodeURIComponent(assignment):"");const response=await fetch(url,{credentials:"same-origin",headers:{accept:"application/json"}});if(response.status===401){location.replace("/student/sign-in/?return_to="+encodeURIComponent(location.pathname+location.search));return;}const data=await response.json().catch(()=>({}));if(!response.ok)throw new Error(data.error||"course_unavailable");page.data=data;page.assignment=data.selectedAssignment.id;
     /* CA-BLOCK-1: assignments delivered as learning blocks open in the block player — one
        instructional screen at a time. Reviewer accounts keep this page's full-document view. */
