@@ -53,13 +53,15 @@ function renderCourses(){
   const search=$('#courseSearch').value.toLowerCase(),state=$('#courseState').value;
   $('#courseState').innerHTML='<option value="">All states</option>'+[...new Set(all.map(c=>c.state))].sort().map(s=>`<option>${esc(s)}</option>`).join('');$('#courseState').value=state;
   const labels={available:'Available for free training',closed:'Training closed',connection_incomplete:'Learning connection incomplete',registration_needed:'Database registration needed',not_verified:'Not verified',service:'Service / tool'};
+  const readinessLabels={database_runtime_verification_required:'Database verification required',training_database_runtime_unavailable:'SQL 024 is not installed',training_database_definition_mismatch:'Database definition differs from the course',student_renderer_not_registered:'Student lessons are not connected',state_progress_engine_not_connected:'Progress engine is not connected',lesson_delivery_missing:'Lesson delivery is incomplete',retrieval_question_missing:'Knowledge checks are incomplete'};
   const rows=all.filter(c=>(!state||c.state===state)&&`${c.name} ${c.id} ${c.publicId||''}`.toLowerCase().includes(search));
   const pending=all.filter(c=>c.trainingStatus==='registration_needed');
   const registration=isOwner()&&inventory?.publicAvailable&&inventory?.databaseAvailable&&pending.length?`<div class="card"><h3>Connect catalog records</h3><p>${pending.length} existing public courses have no database record. Registering them creates closed course records for administration. Learning access requires a connected course engine and a separate decision.</p><button type="button" data-work="register-catalog">Register ${pending.length} catalog courses</button></div>`:'';
   const notice=inventory&&!inventory.publicAvailable?'<p class="message error">Public catalog unavailable. The list below is incomplete.</p>':'';
   $('#courseList').innerHTML=notice+registration+sourceNote(source)+`<p>${rows.length} records shown. A catalog listing is separate from a connected learning course.</p>`+table(['Course','State','Course connection','Recorded approval','Payments',''],rows.map(c=>{
     const actions=c.databaseId?`<button type="button" data-work="course" data-id="${esc(c.databaseId)}">Open course</button> <button type="button" data-work="course-decisions" data-id="${esc(c.databaseId)}">Training &amp; payments</button>`:/^\/[a-z0-9/_-]+\/$/i.test(c.route||'')?`<a href="${esc(c.route)}">Course page</a>`:'Registration pending';
-    return [`<strong>${esc(c.name)}</strong><small>${esc(c.id)}</small>${c.publicId&&c.publicId!==c.id?`<small>Public catalog: ${esc(c.publicId)}</small>`:''}`,esc(c.state),esc(labels[c.trainingStatus]||'Not verified'),esc(words(c.approval||'No recorded decision')),esc(words(c.paymentMode||'No recorded decision')),actions];
+    const learning=`${esc(labels[c.trainingStatus]||'Not verified')}${c.readiness?.reason?`<small>${esc(readinessLabels[c.readiness.reason]||words(c.readiness.reason))}</small>`:''}`;
+    return [`<strong>${esc(c.name)}</strong><small>${esc(c.id)}</small>${c.publicId&&c.publicId!==c.id?`<small>Public catalog: ${esc(c.publicId)}</small>`:''}`,esc(c.state),learning,esc(words(c.approval||'No recorded decision')),esc(words(c.paymentMode||'No recorded decision')),actions];
   }));
 }
 

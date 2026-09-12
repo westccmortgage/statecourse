@@ -94,3 +94,12 @@ test('completed module player opens the next real module without final-exam acce
   const payload=JSON.parse(response.body);assert.equal(payload.trainingModule.remainingStudySeconds,0);
   assert.equal(payload.trainingModule.completed,true);assert.match(payload.trainingModule.nextHref,/assignment=module-02$/);
 },{completed:true}));
+
+test('weekly report translates a missing production runtime into an operator action',async()=>{
+  const {assessSnapshot}=await import('../netlify/functions/_lib/console-operations.mjs');
+  const source=rows=>({available:true,truncated:false,rows});
+  const report=assessSnapshot({checkedAt:new Date().toISOString(),datasets:{courses:source([{id:definition.courseId,name:'Texas Law of Agency',approval_status:'submission_draft',trainingReadiness:{ready:false,reason:'training_database_runtime_unavailable'}}]),governance:source([]),enrollments:source([]),videos:source([]),tasks:source([])}},{stripeTestConnected:true,googleConnected:true});
+  const finding=report.findings.find(f=>f.courseId===definition.courseId);
+  assert.match(finding.message,/Migration 024 is not installed/);
+  assert.doesNotMatch(finding.message,/training_database_runtime_unavailable/);
+});

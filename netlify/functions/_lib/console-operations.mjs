@@ -101,7 +101,10 @@ export function assessSnapshot(data, environment = {}) {
     if (!structure.available) { if(course.approval_status==='not_regulated')continue;add('renderer_missing', 'blocking', course.id, 'No student block renderer is registered for this course.'); continue; }
     if (!course.name?.trim()) add('course_title_missing', 'blocking', course.id, 'Course title is empty.');
     const readiness = course.trainingReadiness || trainingReadiness(course.id);
-    if (!readiness.ready) add('training_not_ready', 'blocking', course.id, `Free training cannot open: ${readiness.reason}.`);
+    if (!readiness.ready) {
+      const reasons={database_runtime_verification_required:'The production database runtime has not been verified.',training_database_runtime_unavailable:'Migration 024 is not installed or its runtime functions cannot be reached.',training_database_definition_mismatch:'The database module definition differs from the deployed course definition.',student_renderer_not_registered:'No student renderer is registered for this course.',state_progress_engine_not_connected:'The state progress engine is not connected.',lesson_delivery_missing:'One or more lessons have no student delivery.',retrieval_question_missing:'One or more required knowledge checks are not registered.'};
+      add('training_not_ready','blocking',course.id,`Free training cannot open. ${reasons[readiness.reason]||'The recorded learning connection is incomplete.'}`);
+    }
     const seen = new Set();
     for (const unit of structure.units) {
       if (!unit.deliveryAvailable) add('unit_delivery_missing', 'blocking', course.id, `${unit.id}: lesson delivery is missing.`);
