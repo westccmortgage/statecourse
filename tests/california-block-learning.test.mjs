@@ -252,7 +252,8 @@ test("15. the existing regulatory assignment-completion gates still operate, unw
 test("16. existing California time controls remain intact; block navigation credits no time", () => {
   /* the only crediting path is the existing heartbeat RPC, with its activity rule unchanged */
   assert.match(COURSE_FN, /record_california_heartbeat/);
-  assert.match(COURSE_FN, /input\.visible && input\.focused && Number\(input\.idleSeconds \|\| 999\)<120/);
+  assert.match(COURSE_FN, /input\.visible===true && input\.focused===true/);
+  assert.match(COURSE_FN, /Number\.isFinite\(idleSeconds\) && idleSeconds>=0 && idleSeconds<120/);
   assert.doesNotMatch(BLOCKS_FN, /record_california_heartbeat|active_seconds/);
   /* the player sends heartbeats through the existing endpoint and never awards time locally */
   assert.match(PLAYER_JS, /eventType: "heartbeat"/);
@@ -407,11 +408,12 @@ test("block delivery exists for exactly the registered assignments of each cours
 /* ── supporting structure ────────────────────────────────────────────────────────────────── */
 
 test("student header shows designed language, not internal statuses or raw identifiers", () => {
-  assert.match(PLAYER_JS, /Assignments`/);
+  assert.match(PLAYER_JS, /'Module' : 'Assignment'/);
   assert.match(PLAYER_JS, /Blocks Mastered`/);
   assert.doesNotMatch(PLAYER_JS, /SUBMISSION_DRAFT|QA_NON_CREDIT|qa_non_credit/);
   assert.doesNotMatch(PLAYER_JS, /My Progress 0:/);
-  assert.match(BLOCKS_FN, /DRE Review Access — no qualifying credit will be awarded from this review enrollment\./);
+  assert.match(BLOCKS_FN, /'DRE' : 'Regulatory'/);
+  assert.match(BLOCKS_FN, /Review Access — no qualifying credit will be awarded from this review enrollment\./);
 });
 
 test("the retrieval bank is formative, scenario-first, and serves without its key", () => {

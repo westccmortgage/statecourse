@@ -91,18 +91,34 @@ function renderHeader() {
   const block = currentBlock();
   $("#courseTitle").textContent = course.title;
   document.title = `${course.title} | StateCourse`;
-  $("#assignmentPosition").textContent = `Assignment ${assignment.sequence} of ${assignment.of}`;
+  const unit = state.data.trainingModule ? 'Module' : 'Assignment';
+  $("#assignmentPosition").textContent = `${unit} ${assignment.sequence} of ${assignment.of}`;
   $("#blockPosition").textContent = `Block ${block.sequence} of ${blocks().length}`;
   const contentScreens = block.screens.length;
   $("#screenPosition").textContent = `Screen ${state.view.screenIndex + 1} of ${contentScreens}`;
   $("#screenPosition").className = "current";
-  $("#courseProgress").textContent = `${header.courseProgress.completed} / ${header.courseProgress.total} Assignments`;
+  $("#courseProgress").textContent = `${header.courseProgress.completed} / ${header.courseProgress.total} ${unit}s`;
   $("#blockProgress").textContent = `${header.currentAssignment.mastered} / ${header.currentAssignment.blocks} Blocks Mastered`;
   $("#studyTime").textContent = formatMinutes(header.studyTimeSeconds);
+  renderTrainingModule();
   $("#blockOutline").innerHTML = blocks().map((item, index) => {
     const cls = item.status === "MASTERED" ? "outline-mastered" : index === state.view.blockIndex ? "outline-current" : "";
     return `<li class="${cls}">${escapeHtml(item.title)}</li>`;
   }).join("");
+}
+
+function renderTrainingModule() {
+  const module=state.data.trainingModule;
+  const status=$('#trainingModuleStatus'), next=$('#nextTrainingModule');
+  status.hidden=!module;next.hidden=true;next.removeAttribute('href');
+  if(!module)return;
+  status.textContent=module.completed
+    ? module.lastModule ? 'All training modules are recorded. Training does not award licensing credit or a certificate.' : 'This module is complete and saved. The next module is available.'
+    : module.remainingStudySeconds>0 ? `Complete the lessons and knowledge checks. Planned active study remaining in this module: ${Math.ceil(module.remainingStudySeconds/60)} min.`
+    : 'Planned study time is recorded. Complete the remaining lessons and knowledge checks to open the next module.';
+  if(module.completed && module.nextHref?.startsWith('/student/course/blocks/?')) {
+    next.href=module.nextHref;next.hidden=false;
+  }
 }
 
 /* ── screen rendering: exactly one screen in the DOM ─────────────────────────────────────── */
@@ -481,7 +497,7 @@ function renderCompletionStatus(activity) {
   const regulatory = state.data.assignment.regulatory || {};
   const done = regulatory.status === "completed";
   activity.innerHTML = done
-    ? `<p class="mastery-note">✓ Assignment 1 is complete and recorded. The next assignment is open from My Courses.</p>`
+    ? `<p class="mastery-note">✓ This assignment is complete and recorded. Continue from My Courses.</p>`
     : `<p class="activity-note">This assignment completes automatically once every requirement above is recorded.</p>`;
 }
 
@@ -556,7 +572,12 @@ async function sendHeartbeat() {
     if (result?.creditedSeconds && state.data.mode === "student") {
       state.data.header.studyTimeSeconds += result.creditedSeconds;
       $("#studyTime").textContent = formatMinutes(state.data.header.studyTimeSeconds);
+      if(state.data.trainingModule) {
+        state.data.trainingModule.remainingStudySeconds=Math.max(0,state.data.trainingModule.remainingStudySeconds-result.creditedSeconds);
+        renderTrainingModule();
+      }
     }
+    if(result.moduleCompleted && state.data.trainingModule && !state.data.trainingModule.completed)await refresh({keepView:true});
   } catch {
     $("#timerState").textContent = "Connection interrupted. Study time is paused until the record reconnects.";
   }

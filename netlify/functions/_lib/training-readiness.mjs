@@ -1,9 +1,12 @@
 import { getCourseConfiguration, getCourseDelivery, getCourseQuestion } from '../../../config/course-registry.mjs';
+import { isDeepStrictEqual } from 'node:util';
+import { LAW_OF_AGENCY_TRAINING_RUNTIME } from '../../../config/texas/law-of-agency-training-runtime.mjs';
+import { rpc } from './db.mjs';
 
 export function trainingReadiness(courseId) {
   const config=getCourseConfiguration(courseId);
   if(!config)return {ready:false,reason:'student_renderer_not_registered'};
-  if(config.state!=='CA')return {ready:false,reason:'state_progress_engine_not_connected'};
+  if(config.state!=='CA' && courseId!==LAW_OF_AGENCY_TRAINING_RUNTIME.courseId)return {ready:false,reason:'state_progress_engine_not_connected'};
   for(const unit of config.assignments) {
     const delivery=getCourseDelivery(courseId,unit.id);
     if(!delivery?.blocks?.length)return {ready:false,reason:'lesson_delivery_missing'};
@@ -14,6 +17,15 @@ export function trainingReadiness(courseId) {
       }
     }
   }
-  return {ready:true,reason:null};
+  return config.state==='TX'?{ready:false,reason:'database_runtime_verification_required'}:{ready:true,reason:null};
 }
 
+export async function verifiedTrainingReadiness(courseId) {
+  const readiness=trainingReadiness(courseId);
+  if(readiness.reason!=='database_runtime_verification_required')return readiness;
+  try{
+    const actual=await rpc('training_runtime_definition',{p_course_id:courseId});
+    if(!isDeepStrictEqual(actual,LAW_OF_AGENCY_TRAINING_RUNTIME))return {ready:false,reason:'training_database_definition_mismatch'};
+    return {ready:true,reason:null};
+  }catch{return {ready:false,reason:'training_database_runtime_unavailable'};}
+}

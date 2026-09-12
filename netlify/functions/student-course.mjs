@@ -4,9 +4,11 @@ import { requireStudentSession, sessionCookies, sessionResponse } from "./_lib/s
 import { SB1495 } from "../../config/california/regulatory-manifest.mjs";
 import { getCaliforniaAssessment, getCaliforniaCourse, publicAssessment, scoreCaliforniaAssessment } from "../../config/california-course-engine.mjs";
 import { getCourseConfiguration, hasCourseDelivery } from "../../config/course-registry.mjs";
+import { verifiedTrainingReadiness } from './_lib/training-readiness.mjs';
+import { LAW_OF_AGENCY_TRAINING_RUNTIME } from '../../config/texas/law-of-agency-training-runtime.mjs';
 
 const UUID = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
-const ASSIGNMENT = /^assignment-(0[1-9]|1[0-5])$/;
+const ASSIGNMENT = /^(assignment|module)-\d{2}$/;
 const ANSWER_EVENTS = new Map([
   ["answer_applied","applied"],
   ["answer_engagement","engagement"],
@@ -73,18 +75,27 @@ export async function contextFor(studentId,enrollmentId) {
   if (course.state && enrollment.state !== course.state) {
     fail("enrollment_state_does_not_match_course",409);
   }
+  const mode = review ? (review.access_role === "administrator" ? "admin" : "reviewer") : "student";
+  const trainingRuntime = course.courseId === LAW_OF_AGENCY_TRAINING_RUNTIME.courseId;
+  if (trainingRuntime && mode === 'student') {
+    if (enrollment.enrollment_origin !== 'training' || enrollment.compliance_credit_eligible) fail('noncredit_training_required',403);
+    const readiness = await verifiedTrainingReadiness(course.courseId);
+    if (!readiness.ready) fail(readiness.reason,503);
+    await rpc('initialize_training_runtime',{p_enrollment_id:enrollment.id,p_actor_id:studentId});
+  }
   return {
     enrollment,
     course,
     accessGrantedAt,
-    mode: review ? (review.access_role === "administrator" ? "admin" : "reviewer") : "student",
+    mode,
+    trainingRuntime,
     actorId: studentId,
     studentId: enrollment.student_id
   };
 }
 
 async function ensureAssignmentState(ctx) {
-  if (ctx.mode !== "student") return;
+  if (ctx.mode !== "student" || ctx.trainingRuntime) return;
   const existing = await dbRequest(`lms_assignment_state?enrollment_id=eq.${encodeURIComponent(ctx.enrollment.id)}&select=assignment_id&limit=1`);
   if (existing?.length) return;
   await dbRequest("lms_assignment_state",{
@@ -161,7 +172,7 @@ async function coursePayload(ctx,requestedAssignment) {
   const assignments = statusMap(ctx.course,states,ctx.mode);
   let selected = assignments.find((item) => item.id === requestedAssignment && item.accessible);
   if (!selected) selected = assignments.find((item) => item.accessible && item.status !== "completed") || assignments[assignments.length-1];
-  const eligibilityRows = ctx.mode === "student"
+  const eligibilityRows = ctx.mode === "student" && ctx.course.state === 'CA'
     ? await dbRequest(`course_final_eligibility?enrollment_id=eq.${encodeURIComponent(ctx.enrollment.id)}&select=*&limit=1`)
     : [];
   const completed = assignments.filter((item) => item.status === "completed").length;
@@ -188,8 +199,8 @@ async function coursePayload(ctx,requestedAssignment) {
     } : null,
     /* Sent on every load. The student cannot dismiss it away permanently, because the
        obligation is to notify the student, not to have notified them once. */
-    regulatoryNotices:CALIFORNIA_NOTICES,
-    finalExam:{
+    regulatoryNotices:ctx.course.state === 'CA' ? CALIFORNIA_NOTICES : [],
+    finalExam:ctx.trainingRuntime ? {eligible:false,earliestAt:null,remaining:['Training does not provide a licensing examination or completion credit.'],href:null} : {
       /* The examination lives on its own page; the course record says only whether it
          is open and, when it is not, what is still outstanding. */
       eligible:Boolean(eligibility?.final_exam_eligible),
@@ -237,7 +248,7 @@ async function coursePayload(ctx,requestedAssignment) {
       blockPlayerHref:hasCourseDelivery(ctx.course.courseId,selected.id)
         ? `/student/course/blocks/?enrollment_id=${encodeURIComponent(ctx.enrollment.id)}&assignment=${encodeURIComponent(selected.id)}`
         : null},
-    assessments:{
+    assessments:ctx.course.state !== 'CA' ? {applied:null,engagement:null,remediation:null} : {
       applied:publicAssessment(getCaliforniaAssessment(ctx.course.courseId,selected.id,"applied")),
       engagement:publicAssessment(getCaliforniaAssessment(ctx.course.courseId,selected.id,"engagement")),
       remediation:selected.remediationStatus === "required" || selected.remediationStatus === "content_viewed"
@@ -293,6 +304,10 @@ async function sb1495Participation(ctx) {
 }
 
 export async function finishIfReady(ctx,assignmentId) {
+  if (ctx.trainingRuntime) {
+    if(ctx.mode !== 'student')return false;
+    return Boolean(await rpc('complete_training_module',{p_enrollment_id:ctx.enrollment.id,p_actor_id:ctx.actorId,p_assignment_id:assignmentId}));
+  }
   const row = await assignmentRow(ctx,assignmentId);
   const assignment = ctx.course.assignments.find((item) => item.id === assignmentId);
   const viewed = Array.isArray(row.viewed_sections) ? row.viewed_sections : [];
@@ -343,10 +358,15 @@ async function handleStudentEvent(ctx,input) {
 
   if (eventType === "heartbeat") {
     if (!UUID.test(String(input.sessionId || ""))) fail("invalid_session");
-    const active=Boolean(input.visible && input.focused && Number(input.idleSeconds || 999)<120);
-    const result=await rpc("record_california_heartbeat",{
+    const idleSeconds=Number(input.idleSeconds);
+    const active=input.visible===true && input.focused===true && input.idleSeconds!==null && input.idleSeconds!==undefined && Number.isFinite(idleSeconds) && idleSeconds>=0 && idleSeconds<120;
+    if(ctx.trainingRuntime && ctx.mode !== 'student') {
+      await audit(ctx,assignmentId,'review_heartbeat',{no_student_credit:true},String(input.sessionId));
+      return {ok:true,creditedSeconds:0,noStudentCredit:true};
+    }
+    const result=await rpc(ctx.trainingRuntime ? 'record_training_heartbeat' : "record_california_heartbeat",{
       p_session_id:String(input.sessionId),p_enrollment_id:ctx.enrollment.id,p_actor_id:ctx.actorId,
-      p_assignment_id:assignmentId,p_mode:ctx.mode,p_active:active,
+      p_assignment_id:assignmentId,...(ctx.trainingRuntime ? {} : {p_mode:ctx.mode}),p_active:active,
       p_metadata:{visible:Boolean(input.visible),focused:Boolean(input.focused),idle_seconds:Math.max(0,Math.min(3600,Number(input.idleSeconds || 0))),user_agent:String(input.userAgent || "").slice(0,300),
         /* Block delivery context, when the block player is the page sending the heartbeat. Purely
            additive detail for screen → block → assignment roll-up; the crediting rule and the RPC
@@ -354,7 +374,8 @@ async function handleStudentEvent(ctx,input) {
         ...(typeof input.blockId === "string" && input.blockId.length <= 40 ? {block_id:input.blockId} : {}),
         ...(typeof input.screenId === "string" && input.screenId.length <= 60 ? {screen_id:input.screenId} : {})}
     });
-    return {ok:true,creditedSeconds:Number(result || 0),noStudentCredit:ctx.mode!=="student"};
+    return {ok:true,creditedSeconds:Number(result || 0),noStudentCredit:ctx.mode!=="student" || ctx.trainingRuntime,
+      ...(ctx.trainingRuntime ? {moduleCompleted:await finishIfReady(ctx,assignmentId)} : {})};
   }
 
   if (ctx.mode !== "student") {
@@ -477,7 +498,7 @@ export const handler=async(event)=>{
     if (event.httpMethod==="GET") {
       const payload=await coursePayload(ctx,String(event.queryStringParameters?.assignment || ""));
       await audit(ctx,payload.selectedAssignment.id,"course_opened",{mode:ctx.mode});
-      if (ctx.mode === "student") {
+      if (ctx.mode === "student" && ctx.course.state === 'CA') {
         await audit(ctx,null,"regulatory_notice_delivered",{
           notices:CALIFORNIA_NOTICES.map((notice) => ({id:notice.id,version:notice.version}))
         });

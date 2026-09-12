@@ -5,11 +5,8 @@ import { dbRequest } from './db.mjs';
 
 // Explicit identities for the same named course across the public and delivery catalogs.
 // These retain both identifiers; they never copy approval or enable enrollment.
-export const COURSE_IDENTITIES = Object.freeze({
-  'me-sales-agent-v1': {id:'me-sales-agent',state:'ME'},
-  'tx-law-of-agency-30': {id:'tx-law-of-agency-30-v1',state:'TX'},
-  'va-principles-practices-v1': {id:'va-salesperson',state:'VA'},
-});
+import { COURSE_IDENTITIES } from '../../../config/course-identities.mjs';
+export { COURSE_IDENTITIES } from '../../../config/course-identities.mjs';
 
 export function buildCourseInventory(catalog, database, governance, scopeStates = null) {
   const publicAvailable = Array.isArray(catalog?.categories);
@@ -25,7 +22,7 @@ export function buildCourseInventory(catalog, database, governance, scopeStates 
     const id = dbCourse?.id || publicCourse.id;
     const state = dbCourse?.state || publicCourse.state;
     const service = dbCourse?.approval_status === 'not_regulated';
-    const readiness = service ? null : trainingReadiness(id);
+    const readiness = service ? null : dbCourse?.trainingReadiness || trainingReadiness(id);
     const decisions = governance.rows.filter(g => g.offering_id === id && g.state === state && g.offering_kind === 'course' && g.discipline === 'real_estate');
     const decision = governance.available && decisions.length === 1 ? decisions[0] : null;
     const databaseVerified = database.available && !database.truncated;

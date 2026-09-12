@@ -29,7 +29,7 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const HOME = path.join(root, "texas/tx-law-of-agency-30-v1");
 const OUT = path.join(HOME, "content-freeze.json");
 const COURSE_ID = "tx-law-of-agency-30-v1";
-const FREEZE_ID = "LOA-CONTENT-FREEZE-2026-09-12-v17";
+const FREEZE_ID = "LOA-CONTENT-FREEZE-2026-09-12-v18";
 
 /**
  * FREEZE HISTORY. A freeze that is broken and silently re-taken teaches nothing. Every break is
@@ -37,6 +37,20 @@ const FREEZE_ID = "LOA-CONTENT-FREEZE-2026-09-12-v17";
  * than requiring someone to reconstruct it from git.
  */
 const BREAK_HISTORY = Object.freeze([
+  Object.freeze({
+  "brokeFreeze": "LOA-CONTENT-FREEZE-2026-09-12-v17",
+  "on": "2026-09-12",
+  "module": "No authored curriculum wording, question or answer key changed.",
+  "change": "Add a separate noncredit Texas training runtime for the twelve existing modules, including recorded retrieval evidence, recap completion, server time and saved module transitions. Video dependency freeze moves to v14.",
+  "reason": "California progress functions cannot serve Texas enrollments. Runtime activation requires exact verification against PostgreSQL; an unapplied migration leaves training unavailable.",
+  "previousFreezeSha256": "c8caf761f5f9676682f07abea9ec2634a68ded50689fa48c067db3fcd7da3110",
+  "auditsReRun": [
+    "tests/texas-training-runtime.test.mjs",
+    "scripts/verify-texas-training-postgres.mjs",
+    "scripts/verify-training-player-dom.mjs",
+    "scripts/validate-loa-video-packages.mjs"
+  ]
+}),
   Object.freeze({
   "brokeFreeze": "LOA-CONTENT-FREEZE-2026-09-11-v16",
   "on": "2026-09-12",
@@ -429,6 +443,10 @@ const modules = TOPICS.map((t, i) => {
 });
 
 const artifacts = {
+  "Texas training runtime definition": hashOf(path.join(root, "config/texas/law-of-agency-training-runtime.mjs")),
+  "Texas training PostgreSQL runtime": hashOf(path.join(root, "database/024_texas_training_runtime.sql")),
+  "Student course progress endpoint": hashOf(path.join(root, "netlify/functions/student-course.mjs")),
+  "Training runtime verification": hashOf(path.join(root, "netlify/functions/_lib/training-readiness.mjs")),
   "LOA-1 outline and 57-unit map": hashOf(path.join(root, "config/texas/law-of-agency-course-form.mjs")),
   "source register": hashOf(path.join(root, "config/texas/law-of-agency-statute-sources.mjs")),
   "quotation-disposition ledger": hashOf(path.join(root, "config/texas/quotation-dispositions.mjs")),

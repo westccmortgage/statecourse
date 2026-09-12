@@ -1,5 +1,5 @@
 {
-  "freezeId": "LOA-VIDEO-PLAN-FREEZE-2026-09-12-v13",
+  "freezeId": "LOA-VIDEO-PLAN-FREEZE-2026-09-12-v14",
   "courseId": "tx-law-of-agency-30-v1",
   "frozenOn": "2026-09-08",
   "generatedBy": "scripts/freeze-loa-video-plan.mjs",
@@ -12,10 +12,10 @@
     "doNotSay": "'production-ready'. It collapses distinct asset, placement, course-approval and provider-approval layers into one."
   },
   "previousFreeze": {
-    "freezeId": "LOA-VIDEO-PLAN-FREEZE-2026-09-11-v12",
-    "sha256": "5d1d3c517ac05e70c23dc7e861a0ce57cdac8134ba859a21a3325a28c76f1ca1",
-    "bytes": 28457,
-    "change": "The student player renders the verified text release pinned to the enrollment. The registry now resolves all 58 existing Law of Agency retrieval items and their replacements from its own reviewed bank. Remediation requires recorded review evidence. The Stream assets, protected playback and caption/transcript checks remain in force. Texas free training stays closed pending its state progress integration."
+    "freezeId": "LOA-VIDEO-PLAN-FREEZE-2026-09-12-v13",
+    "sha256": "67bb026a5b40c098d9ea802e5e4e74b28f3ad6f969329e7ea9d11232e78f9291",
+    "on": "2026-09-12",
+    "change": "The player reports module study requirements and saved transitions for the existing Texas Law of Agency training course. Private Stream delivery and all video reviews remain unchanged. Production training requires a matching database runtime before it can open."
   },
   "supersedes": {
     "artifact": "texas/tx-law-of-agency-30-v1/video-instruction-plan.md",
@@ -401,8 +401,8 @@
     },
     "student block payload": {
       "path": "netlify/functions/student-blocks.mjs",
-      "sha256": "193c759af96a5f5be07bb40a970771cfdc4671237a158b2a2290002c9f96c433",
-      "bytes": 23666
+      "sha256": "214b339d70d761ea59418835d89c79dc037970a196dad85c57a4f4200f39530d",
+      "bytes": 24568
     },
     "pinned content release overlay": {
       "path": "netlify/functions/_lib/console-content.mjs",
@@ -411,8 +411,8 @@
     },
     "private Stream player host": {
       "path": "public/statecourse/student/course/blocks/block-player.js",
-      "sha256": "537d96768d425455ab1d0b16db68ed3f217686797b82d5694517174a52a56201",
-      "bytes": 33799
+      "sha256": "b88a97d8feb418f3c41a1adf07d008d86d9f614263f1202c4dbb30a59bd7b340",
+      "bytes": 35131
     },
     "private Stream security tests": {
       "path": "tests/cloudflare-stream-security.test.mjs",

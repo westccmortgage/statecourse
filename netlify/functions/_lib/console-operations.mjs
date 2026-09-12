@@ -1,4 +1,4 @@
-import { trainingReadiness } from './training-readiness.mjs';
+import { trainingReadiness, verifiedTrainingReadiness } from './training-readiness.mjs';
 import { courseInventory } from './course-inventory.mjs';
 import { dbRequest } from './db.mjs';
 import { getCourseConfiguration, getCourseDelivery, getCourseQuestion as getBlockQuestion } from '../../../config/course-registry.mjs';
@@ -53,7 +53,7 @@ export function courseStructure(courseId) {
 export async function snapshot(staff) {
   const scope = stateFilter(staff);
   const courses = await readRows(`courses?select=*&order=state.asc,id.asc&limit=1001${scope}`);
-  courses.rows = courses.rows.map(c=>({...c,trainingReadiness:trainingReadiness(c.id)}));
+  courses.rows = await Promise.all(courses.rows.map(async c=>({...c,trainingReadiness:await verifiedTrainingReadiness(c.id)})));
   const ids = courses.rows.map(c => c.id);
   const courseFilter = idsFilter('course_id', ids);
   const queries = {
@@ -100,7 +100,7 @@ export function assessSnapshot(data, environment = {}) {
     const structure = courseStructure(course.id);
     if (!structure.available) { if(course.approval_status==='not_regulated')continue;add('renderer_missing', 'blocking', course.id, 'No student block renderer is registered for this course.'); continue; }
     if (!course.name?.trim()) add('course_title_missing', 'blocking', course.id, 'Course title is empty.');
-    const readiness = trainingReadiness(course.id);
+    const readiness = course.trainingReadiness || trainingReadiness(course.id);
     if (!readiness.ready) add('training_not_ready', 'blocking', course.id, `Free training cannot open: ${readiness.reason}.`);
     const seen = new Set();
     for (const unit of structure.units) {

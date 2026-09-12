@@ -1,9 +1,23 @@
 {
-  "freezeId": "LOA-CONTENT-FREEZE-2026-09-12-v17",
+  "freezeId": "LOA-CONTENT-FREEZE-2026-09-12-v18",
   "courseId": "tx-law-of-agency-30-v1",
   "approvalForm": "LOA-1 rev 09/11/2024",
   "frozenOn": "2026-09-08",
   "breakHistory": [
+    {
+      "brokeFreeze": "LOA-CONTENT-FREEZE-2026-09-12-v17",
+      "on": "2026-09-12",
+      "module": "No authored curriculum wording, question or answer key changed.",
+      "change": "Add a separate noncredit Texas training runtime for the twelve existing modules, including recorded retrieval evidence, recap completion, server time and saved module transitions. Video dependency freeze moves to v14.",
+      "reason": "California progress functions cannot serve Texas enrollments. Runtime activation requires exact verification against PostgreSQL; an unapplied migration leaves training unavailable.",
+      "previousFreezeSha256": "c8caf761f5f9676682f07abea9ec2634a68ded50689fa48c067db3fcd7da3110",
+      "auditsReRun": [
+        "tests/texas-training-runtime.test.mjs",
+        "scripts/verify-texas-training-postgres.mjs",
+        "scripts/verify-training-player-dom.mjs",
+        "scripts/validate-loa-video-packages.mjs"
+      ]
+    },
     {
       "brokeFreeze": "LOA-CONTENT-FREEZE-2026-09-11-v16",
       "on": "2026-09-12",
@@ -492,6 +506,26 @@
     }
   ],
   "artifacts": {
+    "Texas training runtime definition": {
+      "path": "config/texas/law-of-agency-training-runtime.mjs",
+      "sha256": "4d01720aaa587ac01415909977896c2481190059d8b2b674ccedb57ea68619fb",
+      "bytes": 996
+    },
+    "Texas training PostgreSQL runtime": {
+      "path": "database/024_texas_training_runtime.sql",
+      "sha256": "cc0aa76a67353c0860f47c160c93f31e4fbd5625d318acbd7eecbdfb686e574f",
+      "bytes": 27138
+    },
+    "Student course progress endpoint": {
+      "path": "netlify/functions/student-course.mjs",
+      "sha256": "418c46e4162465c853e8add50e6312c6f9be8705fe8474c955a23d3dbb65c4c4",
+      "bytes": 31310
+    },
+    "Training runtime verification": {
+      "path": "netlify/functions/_lib/training-readiness.mjs",
+      "sha256": "352cda7e5abdd95720b9c2cb42d525d8045c0cf53d3881632544acc37af36137",
+      "bytes": 1788
+    },
     "LOA-1 outline and 57-unit map": {
       "path": "config/texas/law-of-agency-course-form.mjs",
       "sha256": "12e5f4faffb7d5611dee2ac3b2e497bfaa8452f2d7c63233d0d165b5a37e9758",
@@ -539,8 +573,8 @@
     },
     "video plan freeze (LOA-VIDEO-PLAN-FREEZE-2026-09-08-v8 — hashes the plan and every render and delivery dependency)": {
       "path": "texas/tx-law-of-agency-30-v1/video-plan-freeze.json",
-      "sha256": "67bb026a5b40c098d9ea802e5e4e74b28f3ad6f969329e7ea9d11232e78f9291",
-      "bytes": 29420
+      "sha256": "2499d5c669ee7d0a4fb8ea4ffbebd6b849c3514f9a898c958b69c1db93f250cf",
+      "bytes": 29279
     }
   },
   "reproduce": [

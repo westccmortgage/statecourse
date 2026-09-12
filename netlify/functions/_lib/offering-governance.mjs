@@ -1,4 +1,4 @@
-import { trainingReadiness } from "./training-readiness.mjs";
+import { verifiedTrainingReadiness } from "./training-readiness.mjs";
 import { dbRequest } from "./db.mjs";
 import { logConsoleAction } from "./staff-session.mjs";
 import { getCourse, getPackage } from "../../../config/course-catalog.mjs";
@@ -166,7 +166,7 @@ export async function recordGovernance({ staff, input }) {
 
   if (input.trainingAccessEnabled === true) {
     if (offeringKind !== 'course') fail('free_training_requires_a_course');
-    const readiness = trainingReadiness(offeringId);
+    const readiness = await verifiedTrainingReadiness(offeringId);
     if (!readiness.ready) fail(readiness.reason,409);
   }
 

@@ -34,6 +34,7 @@ async function fixture(run, {inventoryUnavailable = false, peopleUnavailable = f
         {offering_id:CA, state:'CA', discipline:'real_estate', offering_kind:'course', training_access_enabled:true, recorded_by:OTHER_STAFF_ID, note:'Private operator note'},
         {offering_id:TX, state:'TX', discipline:'real_estate', offering_kind:'course', training_access_enabled:true}
       ]);
+      if(name==='rpc/training_runtime_definition')return json({message:'Not installed'},404);
       if (['video_assets','console_tasks'].includes(name)) return json([]);
       throw new Error('Unexpected request '+name);
     };
@@ -72,8 +73,9 @@ test('public course discovery returns enabled connected training without staff o
   assert.deepEqual(body.training.courses.map(c => c.id), [CA]);
   assert.deepEqual(Object.keys(body.training.courses[0]).sort(), ['id','name','state']);
   assert.doesNotMatch(response.body, /Private operator note|recorded_by|student_id/);
-  assert.equal(calls.length,1);
+  assert.equal(calls.length,2);
   assert.equal(calls[0].method,'GET');
+  assert.equal(calls[1].url.pathname,'/rest/v1/rpc/training_runtime_definition');
   assert.equal(response.headers['cache-control'],'no-store');
 }));
 

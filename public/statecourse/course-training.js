@@ -5,7 +5,7 @@ if(sections.length){
     const response=await fetch('/api/payments/config',{cache:'no-store',credentials:'omit'});
     if(!response.ok)throw new Error('availability_unavailable');
     const {training}=await response.json();
-    const enabled=new Set(training?.available===true?training.courses.map(c=>c.id):[]);
+    const enabled=new Set(training?.available===true?training.courses.flatMap(c=>[c.id,c.publicId].filter(Boolean)):[]);
     for(const section of sections){
       if(!enabled.has(section.dataset.trainingOffering))continue;
       const heading=document.createElement('h2');heading.textContent='Study this course for training purposes';

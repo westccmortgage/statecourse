@@ -191,19 +191,21 @@ async function settle(ctx, assignmentId, delivery, regulatory) {
   const evidenced = sectionsEvidenced(delivery, derived.completedByBlock);
   const already = Array.isArray(regulatory?.viewedSections) ? regulatory.viewedSections : [];
   const missing = evidenced.filter((section) => !already.includes(section));
+  let moduleCompleted = regulatory?.status === 'completed';
   if (missing.length && ctx.mode === "student") {
     const sections = [...new Set([...already, ...missing])].sort((a, b) => a - b);
     await dbRequest(`lms_assignment_state?enrollment_id=eq.${encodeURIComponent(ctx.enrollment.id)}&assignment_id=eq.${encodeURIComponent(assignmentId)}&assignment_version=eq.1.0`, {
       method: "PATCH", prefer: "return=minimal",
-      body: { viewed_sections: sections, status: "in_progress", updated_at: isoNow() },
+      body: { viewed_sections: sections, ...(moduleCompleted ? {} : {status: "in_progress"}), updated_at: isoNow() },
     });
     for (const section of missing) {
       await audit(ctx, assignmentId, "section_viewed", { section, evidence: "block_screens_completed" });
     }
-    await finishIfReady(ctx, assignmentId);
+    if(!ctx.trainingRuntime)moduleCompleted = await finishIfReady(ctx, assignmentId);
   }
+  if(ctx.mode === 'student' && ctx.trainingRuntime)moduleCompleted = await finishIfReady(ctx, assignmentId);
 
-  if (ctx.mode === "student") {
+  if (ctx.mode === "student" && !moduleCompleted) {
     const resume = `/student/course/blocks/?enrollment_id=${encodeURIComponent(ctx.enrollment.id)}&assignment=${encodeURIComponent(assignmentId)}`;
     await dbRequest(`student_portal_state?enrollment_id=eq.${encodeURIComponent(ctx.enrollment.id)}`, {
       method: "PATCH", prefer: "return=minimal",
@@ -405,7 +407,14 @@ async function blocksPayload(ctx, assignmentId) {
   return {
     mode: ctx.mode,
     reviewNotice: ctx.mode === "student" ? null
-      : "DRE Review Access — no qualifying credit will be awarded from this review enrollment.",
+      : `${ctx.course.state === 'CA' ? 'DRE' : 'Regulatory'} Review Access — no qualifying credit will be awarded from this review enrollment.`,
+    trainingModule: ctx.trainingRuntime && ctx.mode === 'student' ? {
+      completed: nav.status === 'completed',
+      remainingStudySeconds: Math.max(0,nav.expectedMinutes * 60 - Number(nav.activeSeconds || 0)),
+      nextHref: nav.status === 'completed' && assignments.some(item=>item.sequence===nav.sequence+1&&item.accessible)
+        ? `/student/course/blocks/?enrollment_id=${encodeURIComponent(ctx.enrollment.id)}&assignment=${encodeURIComponent(assignments.find(item=>item.sequence===nav.sequence+1).id)}` : null,
+      lastModule: nav.sequence === assignments.length,
+    } : null,
     course: {
       courseId: ctx.course.courseId,
       title: ctx.course.title,

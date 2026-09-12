@@ -38,13 +38,13 @@ const PROD = path.join(HOME, "video-production");
 const OUT = path.join(HOME, "video-plan-freeze.json");
 
 const COURSE_ID = "tx-law-of-agency-30-v1";
-const FREEZE_ID = "LOA-VIDEO-PLAN-FREEZE-2026-09-12-v13";
+const FREEZE_ID = "LOA-VIDEO-PLAN-FREEZE-2026-09-12-v14";
 
 const PREVIOUS_FREEZE = Object.freeze({
-  "freezeId": "LOA-VIDEO-PLAN-FREEZE-2026-09-11-v12",
-  "sha256": "5d1d3c517ac05e70c23dc7e861a0ce57cdac8134ba859a21a3325a28c76f1ca1",
-  "bytes": 28457,
-  "change": "The student player renders the verified text release pinned to the enrollment. The registry now resolves all 58 existing Law of Agency retrieval items and their replacements from its own reviewed bank. Remediation requires recorded review evidence. The Stream assets, protected playback and caption/transcript checks remain in force. Texas free training stays closed pending its state progress integration."
+  "freezeId": "LOA-VIDEO-PLAN-FREEZE-2026-09-12-v13",
+  "sha256": "67bb026a5b40c098d9ea802e5e4e74b28f3ad6f969329e7ea9d11232e78f9291",
+  "on": "2026-09-12",
+  "change": "The player reports module study requirements and saved transitions for the existing Texas Law of Agency training course. Private Stream delivery and all video reviews remain unchanged. Production training requires a matching database runtime before it can open."
 });
 
 /**
