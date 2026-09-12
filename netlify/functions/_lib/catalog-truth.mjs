@@ -3,6 +3,7 @@ import path from "node:path";
 import { getCourseCatalog, getPackageCatalog } from "../../../config/course-catalog.mjs";
 import { STREAM_MEDIA } from "../../../config/stream-media.mjs";
 import { dbRequest } from "./db.mjs";
+import { COURSE_IDENTITIES } from "../../../config/course-identities.mjs";
 
 /*
  * What the catalog actually is, as opposed to what any one file says it is.
@@ -209,24 +210,29 @@ export async function buildCatalogTruth() {
 
   const claimedPublic = new Set();
   const rows = [];
+  const publicIdentityFor = (canonicalId,state) => Object.entries(COURSE_IDENTITIES)
+    .find(([,identity]) => identity.id===canonicalId && identity.state===state)?.[0] || null;
+  const versionsFor = ids => versions.rows.filter(version => ids.includes(version.course_id));
 
   for (const payment of paymentCourses) {
     const regulatoryId = paymentToRegulatory.get(payment.id) || null;
     /* Exact id first; the declared bridge second. Nothing else — a course whose public and
        checkout ids differ with no declared bridge is reported as two unmatched rows, which
        is what it is. */
-    const publicEntry = publicById.get(payment.id) || null;
+    const publicIdentity = publicIdentityFor(payment.id,payment.state);
+    const publicEntry = publicById.get(payment.id) || (publicIdentity ? publicById.get(publicIdentity) : null) || null;
     if (publicEntry) claimedPublic.add(publicEntry.courseId);
 
     const dbCourse = dbCourseById.get(payment.id) || null;
-    const dbVersions = versions.rows.filter((version) => version.course_id === payment.id);
+    const ids = [...new Set([payment.id,regulatoryId,publicEntry?.courseId].filter(Boolean))];
+    const dbVersions = versionsFor(ids);
     const regulatoryFileEntry = regulatoryById.get(regulatoryId || "") || regulatoryById.get(payment.id) || null;
 
     const row = {
       key: payment.id,
       state: payment.state,
       name: payment.name,
-      matchedBy: publicEntry ? "exact_id" : (regulatoryId ? "payment_product_id" : "unmatched"),
+      matchedBy: publicEntry ? (publicEntry.courseId===payment.id ? "exact_id" : "declared_course_identity") : (regulatoryId ? "payment_product_id" : "unmatched"),
       publicEntry,
       payment: {
         id: payment.id,
@@ -239,7 +245,7 @@ export async function buildCatalogTruth() {
       dbVersions,
       regulatoryFile: regulatoryFileEntry,
       regulatoryControls: controls?.states?.[regulatoryId || ""] || null,
-      video: videoFor([payment.id, regulatoryId], STREAM_MEDIA, assets.rows, readiness.rows, placements.rows),
+      video: videoFor(ids, STREAM_MEDIA, assets.rows, readiness.rows, placements.rows),
     };
     row.discrepancies = assessCourseRow(row);
     rows.push(row);
@@ -249,19 +255,22 @@ export async function buildCatalogTruth() {
      own rows rather than a footnote. */
   for (const entry of publicEntries) {
     if (claimedPublic.has(entry.courseId)) continue;
-    const dbCourse = dbCourseById.get(entry.courseId) || null;
+    const identity = COURSE_IDENTITIES[entry.courseId];
+    const canonicalId = identity?.state===entry.state ? identity.id : entry.courseId;
+    const ids = [...new Set([entry.courseId,canonicalId].filter(Boolean))];
+    const dbCourse = dbCourseById.get(canonicalId) || dbCourseById.get(entry.courseId) || null;
     const row = {
-      key: entry.courseId,
+      key: canonicalId,
       state: entry.state,
       name: entry.title,
-      matchedBy: "public_only",
+      matchedBy: canonicalId===entry.courseId ? "public_only" : "declared_course_identity",
       publicEntry: entry,
       payment: null,
       dbCourse,
-      dbVersions: versions.rows.filter((version) => version.course_id === entry.courseId),
-      regulatoryFile: regulatoryById.get(entry.courseId) || null,
-      regulatoryControls: controls?.states?.[entry.courseId] || null,
-      video: videoFor([entry.courseId, `${entry.courseId}-v1`], STREAM_MEDIA, assets.rows, readiness.rows, placements.rows),
+      dbVersions: versionsFor(ids),
+      regulatoryFile: regulatoryById.get(canonicalId) || regulatoryById.get(entry.courseId) || null,
+      regulatoryControls: controls?.states?.[canonicalId] || controls?.states?.[entry.courseId] || null,
+      video: videoFor(ids, STREAM_MEDIA, assets.rows, readiness.rows, placements.rows),
     };
     row.discrepancies = assessCourseRow(row);
     rows.push(row);
@@ -269,7 +278,7 @@ export async function buildCatalogTruth() {
 
   /* A course record carrying video but named by no catalog is invisible to both lists and
      is the case that produced tx-law-of-agency-30-v1. */
-  const catalogued = new Set(rows.map((row) => row.key));
+  const catalogued = new Set(rows.flatMap((row) => [row.key,row.publicEntry?.courseId,row.payment?.id].filter(Boolean)));
   const videoCourseIds = new Set([
     ...Object.values(STREAM_MEDIA).map((media) => media.courseId),
     ...assets.rows.map((asset) => asset.course_id),

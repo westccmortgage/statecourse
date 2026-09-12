@@ -42,32 +42,29 @@ test("the gap between what is advertised and what can be bought is reported, not
   });
 });
 
-test("courses are matched by an exact id or a declared bridge, never by resemblance", { concurrency: false }, async () => {
+test("courses are matched by an exact id or a declared identity, never by resemblance", { concurrency: false }, async () => {
   await withConsoleMock(createStore(), async () => {
     const truth = await buildCatalogTruth();
-    /* Virginia is va-salesperson at checkout and va-principles-practices-v1 in public. They
-       look like the same course and there is no declared bridge, so they stay two rows. */
+    /* Virginia's two identifiers are explicitly declared as the same state course. */
     const checkout = truth.rows.find((row) => row.key === "va-salesperson");
     const advertised = truth.rows.find((row) => row.key === "va-principles-practices-v1");
     assert.ok(checkout, "the checkout row is missing");
-    assert.ok(advertised, "the public row is missing");
-    assert.equal(checkout.publicEntry, null);
-    assert.equal(advertised.payment, null);
-    for (const row of [checkout, advertised]) {
-      assert.ok(row.discrepancies.length > 0, `${row.key} was reported as agreeing`);
-    }
+    assert.equal(advertised,undefined,"declared identity must not create a duplicate row");
+    assert.equal(checkout.publicEntry.courseId,'va-principles-practices-v1');
+    assert.equal(checkout.matchedBy,'declared_course_identity');
   });
 });
 
-test("a course carrying video but named by no catalog is surfaced", { concurrency: false }, async () => {
+test("a video course with a declared public identity is one row and retains its video", { concurrency: false }, async () => {
   await withConsoleMock(createStore(), async () => {
     const truth = await buildCatalogTruth();
-    /* tx-law-of-agency-30-v1 holds the two delivering Texas videos. The public catalog
-       calls the course tx-law-of-agency-30 and checkout does not carry it at all. */
+    /* The public and delivery ids are both retained on one row. */
     const row = truth.rows.find((entry) => entry.key === COURSE_ID);
     assert.ok(row, "the video-bearing course record is missing from the report");
-    assert.equal(row.matchedBy, "video_only");
-    assert.ok(row.discrepancies.some((item) => item.code === "course_carries_video_without_catalog_entry"));
+    assert.equal(row.matchedBy, "declared_course_identity");
+    assert.equal(row.publicEntry.courseId,'tx-law-of-agency-30');
+    assert.ok(row.discrepancies.some((item) => item.code === "public_without_checkout"));
+    assert.equal(truth.rows.some(entry=>entry.key==='tx-law-of-agency-30'),false);
     assert.ok(row.video.codeRegistry.length >= 2);
   });
 });
