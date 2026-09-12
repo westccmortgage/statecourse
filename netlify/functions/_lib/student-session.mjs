@@ -38,6 +38,9 @@ async function authRequest(path, { method="GET", token, body }={}) {
   });
   const data = await response.json().catch(() => ({}));
   if (!response.ok) {
+    if (data.code === "invalid_credentials" || data.error_code === "invalid_credentials") {
+      throw Object.assign(new Error("invalid_credentials"), { statusCode: 401 });
+    }
     if (data.code === "email_not_confirmed" || data.error_code === "email_not_confirmed") {
       throw Object.assign(new Error("email_confirmation_required"), { statusCode: 403 });
     }
@@ -121,16 +124,27 @@ export async function requireStudentSession(event) {
   const parsed = cookies(event);
   const bearer = String(event.headers?.authorization || "").replace(/^Bearer\s+/i, "");
   let accessToken = bearer || parsed[ACCESS_COOKIE] || "";
+  const refreshToken = parsed[REFRESH_COOKIE] || "";
   let refreshedSession = null;
-  if (!accessToken) throw Object.assign(new Error("student_auth_required"), { statusCode: 401 });
+  if (!accessToken && !refreshToken) throw Object.assign(new Error("student_auth_required"), { statusCode: 401 });
 
   let user;
-  try {
-    user = await authRequest("user", { token:accessToken });
-  } catch (error) {
-    const refreshToken = parsed[REFRESH_COOKIE];
-    if (!refreshToken || error.statusCode !== 401) throw error;
+  let refreshRequired = !accessToken;
+  if (accessToken) {
+    try {
+      user = await authRequest("user", { token:accessToken });
+    } catch (error) {
+      if (!refreshToken || error.statusCode !== 401) throw error;
+      refreshRequired = true;
+    }
+  }
+  // The browser removes the short-lived access cookie at expiry. The longer-lived
+  // refresh cookie must still be usable after a break or an overnight return.
+  if (refreshRequired) {
     refreshedSession = await authRequest("token?grant_type=refresh_token", { method:"POST", body:{ refresh_token:refreshToken } });
+    if (!refreshedSession.access_token || !refreshedSession.refresh_token || !refreshedSession.user?.id) {
+      throw Object.assign(new Error("invalid_student_session"), { statusCode: 401 });
+    }
     accessToken = refreshedSession.access_token;
     user = refreshedSession.user;
   }

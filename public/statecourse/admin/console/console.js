@@ -87,8 +87,24 @@ async function loadSession() {
   }
 }
 
+function signInError(error) {
+  if (error.status === 429) return "Too many sign-in attempts. Wait a few minutes before trying again.";
+  if (error.message === "email_confirmation_required") return "Confirm your email using the confirmation email, then sign in.";
+  if (error.message === "origin_not_allowed") return "This sign-in request was blocked. Reload the page and try again.";
+  if (error.message === "invalid_credentials" || error.message === "invalid_sign_in") {
+    return "Email or password was not accepted. If you reset your password, enter the new password instead of a saved older one. Use Forgot password? if needed.";
+  }
+  if (error.status === 401) return "We could not verify this sign-in. Try again, or use Forgot password? to set a new password.";
+  if (!error.status) return "Could not connect to sign-in. Check your connection and try again.";
+  return "Sign-in is temporarily unavailable. Please try again shortly.";
+}
+
 $("#signInForm").addEventListener("submit", async (event) => {
   event.preventDefault();
+  const button = $("#signInForm button[type='submit']");
+  if (button.disabled) return;
+  button.disabled = true;
+  $("#signInForm").setAttribute("aria-busy", "true");
   $("#sessionState").textContent = "Signing in…";
   try {
     const session = await send(SESSION, {
@@ -99,7 +115,10 @@ $("#signInForm").addEventListener("submit", async (event) => {
     renderSession(session);
     if (state.roles.length) { loadCatalog(); loadVideo(); loadOfferings(); }
   } catch (error) {
-    $("#sessionState").textContent = `Sign-in failed: ${words(error.message)}.`;
+    $("#sessionState").textContent = signInError(error);
+  } finally {
+    button.disabled = false;
+    $("#signInForm").removeAttribute("aria-busy");
   }
 });
 
@@ -547,4 +566,3 @@ $("#governanceForm").addEventListener("submit", async (event) => {
 });
 
 loadSession();
-
