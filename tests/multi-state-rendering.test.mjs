@@ -89,6 +89,18 @@ test("the enrolment's state must agree with its course", { concurrency: false },
   assert.equal(source.includes("getCaliforniaCourse(enrollment.course_id)"), false);
 });
 
+test("the loading shell does not label a non-California course as California", { concurrency: false }, async () => {
+  const [html, client] = await Promise.all([
+    readFile(new URL("../public/statecourse/student/course/index.html", import.meta.url), "utf8"),
+    readFile(new URL("../public/statecourse/student/course/student-course.js", import.meta.url), "utf8"),
+  ]);
+  assert.match(html, /<small>Student course<\/small>/);
+  assert.match(html, /Opening your course record…/);
+  assert.match(client, /Opening your course record…/);
+  assert.equal(html.includes("California student course"), false);
+  assert.equal((html + client).includes("Opening your California course record"), false);
+});
+
 test("the block player resolves delivery through the registry, not California", { concurrency: false }, async () => {
   const source = await readFile(new URL("../netlify/functions/student-blocks.mjs", import.meta.url), "utf8");
   assert.match(source, /getCourseDelivery\(ctx\.course\.courseId, assignmentId\)/);
