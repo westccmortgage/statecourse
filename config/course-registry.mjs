@@ -2,7 +2,9 @@ import { getCaliforniaCourse } from "./california-course-engine.mjs";
 import {
   getBlockDelivery as getCaliforniaDelivery,
   hasBlockDelivery as hasCaliforniaDelivery,
+  getBlockQuestion as getCaliforniaQuestion,
 } from "./california-block-engine.mjs";
+import { LAW_OF_AGENCY_RETRIEVAL, completeLawOfAgencyDelivery } from "./texas/law-of-agency-block-retrieval.mjs";
 import { TEXAS_LAW_OF_AGENCY_STUDENT_CONFIG } from "./texas/law-of-agency-student-config.mjs";
 import { MODULE_1_BLOCKS as LOA_1 } from "./texas/law-of-agency-module-1-blocks.mjs";
 import { MODULE_2_BLOCKS as LOA_2 } from "./texas/law-of-agency-module-2-blocks.mjs";
@@ -61,7 +63,7 @@ export function getCourseDelivery(courseId, deliveryId) {
   if (TEXAS_LOA_DELIVERIES.has(`${key}:${unit}`)) {
     const delivery = TEXAS_LOA_DELIVERIES.get(`${key}:${unit}`);
     /* Normalised so callers can read `assignmentId` whichever state answered. */
-    return { ...delivery, assignmentId: delivery.moduleId };
+    return completeLawOfAgencyDelivery(delivery);
   }
   return getCaliforniaDelivery(key, unit);
 }
@@ -69,6 +71,30 @@ export function getCourseDelivery(courseId, deliveryId) {
 export function hasCourseDelivery(courseId, deliveryId) {
   return TEXAS_LOA_DELIVERIES.has(`${String(courseId || "")}:${String(deliveryId || "")}`)
     || hasCaliforniaDelivery(String(courseId || ""), String(deliveryId || ""));
+}
+
+// A question belongs to the registered course, including its remediation replacement.
+// Do not let an identifier from another course select that course's question bank.
+const courseQuestions = new Map();
+export function getCourseQuestion(courseId, questionId) {
+  const course = getCourseConfiguration(courseId);
+  if (!course || !questionId) return null;
+  const lookup = course.state === "TX" ? (id,question) => getCaliforniaQuestion(id,question,LAW_OF_AGENCY_RETRIEVAL) : getCaliforniaQuestion;
+  if (!courseQuestions.has(courseId)) {
+    const ids = new Set();
+    for (const unit of course.assignments) {
+      for (const block of getCourseDelivery(courseId, unit.id)?.blocks || []) {
+        for (const screen of block.screens) {
+          if (screen.type !== "retrieval") continue;
+          ids.add(screen.questionId);
+          const primary = lookup(courseId, screen.questionId);
+          if (primary?.replacementId) ids.add(primary.replacementId);
+        }
+      }
+    }
+    courseQuestions.set(courseId, ids);
+  }
+  return courseQuestions.get(courseId).has(questionId) ? lookup(courseId, questionId) : null;
 }
 
 /** Every course a student can currently be served, for diagnostics and the catalog view. */
@@ -83,5 +109,5 @@ export function renderableCourseIds() {
 }
 
 export default Object.freeze({
-  getCourseConfiguration, getCourseDelivery, hasCourseDelivery, renderableCourseIds,
+  getCourseConfiguration, getCourseDelivery, hasCourseDelivery, getCourseQuestion, renderableCourseIds,
 });

@@ -509,6 +509,15 @@ function offeringRow(row) {
   </tr>`;
 }
 
+let offeringOwnerScopes=[];
+function updateLiveOption(){const option=$('#liveOption');const state=$('#governanceForm [name="state"]').value.trim().toUpperCase();if(option){option.hidden=offeringOwnerScopes!==null&&!offeringOwnerScopes.includes(state);option.disabled=option.hidden;if(option.hidden&&option.selected)$('#governanceForm [name="paymentMode"]').value='disabled';}}
+$('#governanceForm [name="state"]').addEventListener('input',updateLiveOption);
+document.addEventListener('statecourse:offering',event=>{
+  const {course,governance:g}=event.detail;if(!course)return;const form=$('#governanceForm');form.reset();
+  const fields={offeringId:course.id,state:course.state,discipline:g?.discipline||(course.product_type?.startsWith('mortgage')?'mortgage':'real_estate'),offeringKind:'course',approvalStatus:g?.approval_status||'none',approvalAuthority:g?.approval_authority||'',approvalNumber:g?.approval_number||'',approvalEffectiveDate:g?.approval_effective_date||'',approvalExpiresDate:g?.approval_expires_date||'',paymentMode:g?.payment_mode||'disabled'};
+  for(const [key,value]of Object.entries(fields))form.elements[key].value=value;form.elements.trainingAccessEnabled.checked=g?.training_access_enabled===true;updateLiveOption();
+  $('#offeringsMessage').textContent=course.trainingReadiness?.ready===false?'Free training cannot open yet: '+words(course.trainingReadiness.reason)+'. Approval and payment decisions remain separate.':'Review the settings for '+course.name+'. No decision is saved until you submit.';
+});
 async function loadOfferings() {
   $("#offeringsMessage").textContent = "Loading approval and payment records…";
   try {
@@ -516,7 +525,8 @@ async function loadOfferings() {
     /* The live option is removed rather than shown and refused, so nobody is invited to
        press something that cannot work. The server refuses regardless of the markup. */
     const liveOption = $("#liveOption");
-    if (liveOption) { liveOption.hidden = body.viewer?.canActivateLivePayments !== true; liveOption.disabled = liveOption.hidden; }
+    offeringOwnerScopes=body.viewer?.ownerScopeStates===null?null:(body.viewer?.ownerScopeStates||[]);
+    updateLiveOption();
     $("#offeringRows").innerHTML = body.offerings.length
       ? body.offerings.map(offeringRow).join("")
       : '<tr><td colspan="8">No offering has a recorded decision yet. Every one of them is therefore training only, with payments disabled.</td></tr>';
@@ -535,6 +545,7 @@ $("#reloadOfferings").addEventListener("click", loadOfferings);
 $("#governanceForm").addEventListener("submit", async (event) => {
   event.preventDefault();
   const form = event.currentTarget;
+  const submit=event.submitter; if(submit)submit.disabled=true;
   const data = new FormData(event.currentTarget);
   const payload = {
     offeringId: String(data.get("offeringId") || "").trim(),
@@ -558,11 +569,13 @@ $("#governanceForm").addEventListener("submit", async (event) => {
       + `, payments ${words(body.status.payment_mode)}`
       + `${body.status.live_charging_permitted ? "" : " and not charging"}.`;
     form.reset();
+    await loadOfferings();
+    document.dispatchEvent(new CustomEvent("statecourse:governance-updated"));
   } catch (error) {
     const detail = error.detail ? ` (${esc(JSON.stringify(error.detail))})` : "";
     $("#offeringsMessage").textContent = `Refused: ${words(error.message)}${detail}.`;
   }
-  await loadOfferings();
+  if(submit)submit.disabled=false;
 });
 
 loadSession();

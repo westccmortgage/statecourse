@@ -20,11 +20,12 @@ import { parseJson, requireSameOrigin } from "./_lib/http.mjs";
 import { requireStudentSession, sessionCookies, sessionResponse } from "./_lib/student-session.mjs";
 import { audit, contextFor, finishIfReady, statesFor, statusMap } from "./student-course.mjs";
 import {
-  deriveBlockStatus, derivePosition, getBlockQuestion,
+  deriveBlockStatus, derivePosition,
   publicBlockQuestion, scoreBlockQuestion, sectionsEvidenced,
 } from "../../config/california-block-engine.mjs";
-import { getCourseDelivery } from "../../config/course-registry.mjs";
+import { getCourseDelivery, getCourseQuestion as getBlockQuestion } from "../../config/course-registry.mjs";
 import { applyConsoleVideos, consoleVideosForDelivery } from "./_lib/console-video-overlay.mjs";
+import { contentForEnrollment, overlayText } from "./_lib/console-content.mjs";
 
 
 function fail(message, statusCode = 400) {
@@ -75,10 +76,20 @@ function deriveAll(delivery, progress, attempts, regulatory) {
   }
   const statusByBlock = new Map();
   for (const block of delivery.blocks) {
+    const evidence=attemptsByBlock.get(block.id)||[];
+    const completed=new Set(progressByBlock.get(block.id)?.completedScreens||[]);
+    for(const screen of block.screens.filter(s=>s.type==='retrieval')) {
+      const item=getBlockQuestion(delivery.courseId,screen.questionId);
+      if(evidence.some(a=>a.question_id===screen.questionId&&a.kind==='retrieval'&&a.correct===true)
+        || (evidence.some(a=>a.screen_id===screen.id&&a.kind==='remediation_review')
+          && evidence.some(a=>a.question_id===item?.replacementId&&a.kind==='replacement'&&a.correct===true))) completed.add(screen.id);
+    }
+    progressByBlock.set(block.id,{...progressByBlock.get(block.id),completedScreens:[...completed]});
     statusByBlock.set(block.id, deriveBlockStatus(block, {
       completedScreens: progressByBlock.get(block.id)?.completedScreens || [],
       attempts: attemptsByBlock.get(block.id) || [],
       regulatory,
+      questionLookup:id=>getBlockQuestion(delivery.courseId,id),
     }));
   }
   const completedByBlock = new Map(delivery.blocks.map((block) => [
@@ -301,12 +312,14 @@ async function handleEvent(ctx, input) {
     const questionId = String(input.questionId || "");
     const question = getBlockQuestion(ctx.course.courseId, questionId);
     if (!question || question.blockId !== block.id) fail("unknown_question", 404);
-    const retrievalScreen = block.screens.find((screen) => screen.type === "retrieval");
+    const retrievalScreen = block.screens.find((screen) => screen.type === "retrieval" &&
+      (screen.questionId===questionId || getBlockQuestion(ctx.course.courseId,screen.questionId)?.replacementId===questionId));
     if (!retrievalScreen) fail("block_has_no_retrieval", 409);
     const blockState = derived.statusByBlock.get(block.id);
 
     if (question.role === "primary") {
       if (blockState.status !== "RETRIEVAL_REQUIRED") fail("retrieval_not_open", 409);
+      if(derived.position.blockId!==block.id||derived.position.screenId!==retrievalScreen.id)fail('retrieval_not_open',409);
     } else {
       /* A replacement is answerable only inside an active remediation whose review is recorded —
          and it is by definition a DIFFERENT question from the one the student missed. */
@@ -382,8 +395,9 @@ async function blocksPayload(ctx, assignmentId) {
   if (!nav) fail("invalid_assignment", 404);
   if (ctx.mode === "student" && !nav.accessible) fail("assignment_locked", 403);
   const regulatory = regulatorySnapshot(assignments, assignmentId);
-  const [progress, attempts] = await Promise.all([
+  const [progress, attempts, publishedText] = await Promise.all([
     progressRows(ctx, assignmentId), attemptRows(ctx, assignmentId),
+    contentForEnrollment(ctx.enrollment),
   ]);
   const derived = deriveAll(delivery, progress, attempts, regulatory);
   const completedAssignments = assignments.filter((item) => item.status === "completed").length;
@@ -415,7 +429,7 @@ async function blocksPayload(ctx, assignmentId) {
     /* Block-map structure first, then whatever the console has released for this delivery
        unit laid over it. Read every time, so a withdrawal takes effect on the next load. */
     blocks: applyConsoleVideos(
-      publicBlocks(ctx, delivery, derived),
+      overlayText(publicBlocks(ctx, delivery, derived), publishedText, assignmentId),
       await consoleVideosForDelivery(ctx.course.courseId, assignmentId),
     ),
     position: derived.position,

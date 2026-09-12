@@ -1,8 +1,9 @@
 import { dbRequest, rpc } from './_lib/db.mjs';
-import { requireStaff, STAFF_ROLES, logConsoleAction } from './_lib/staff-session.mjs';
+import { requireStaff, STAFF_ROLES, logConsoleAction, staffBindings } from './_lib/staff-session.mjs';
 import { sessionCookies } from './_lib/student-session.mjs';
 import { assessSnapshot, courseFor, fail, globalOwner, KEY, PAGE_SIZE, readRows, snapshot, studentDetail, UUID } from './_lib/console-operations.mjs';
 import { contentWorkspace, screenText, saveContent, reviewContent, publishContent } from './_lib/console-content.mjs';
+import { checkedEnvironmentStatus } from './_lib/console-environment.mjs';
 
 function eventFrom(req) { return { httpMethod:req.method,headers:Object.fromEntries(req.headers),queryStringParameters:Object.fromEntries(new URL(req.url).searchParams) }; }
 function response(body,status=200,cookies=[]) {
@@ -19,14 +20,6 @@ function roleList(operation) {
   return ['owner','administrator','instructor','regulator_reviewer','support'];
 }
 function requireGlobal(staff) { if(staff.scopeStates) fail('unscoped_administration_required',403); }
-function environmentStatus() {
-  const get=k=>String(globalThis.Netlify?.env.get(k)||'').trim();
-  return { stripeMode:get('STRIPE_MODE')||'not_configured',liveEnabled:get('STATECOURSE_LIVE_PAYMENTS_ENABLED')==='true',
-    stripeTestConnected:Boolean(get('STRIPE_SECRET_KEY_TEST')&&get('STRIPE_WEBHOOK_SECRET_TEST')),
-    cloudflareUploadConfigured:Boolean(get('CLOUDFLARE_ACCOUNT_ID')&&get('CLOUDFLARE_STREAM_API_TOKEN')),
-    cloudflareSigningConfigured:Boolean(get('CLOUDFLARE_STREAM_KEY_ID')&&get('CLOUDFLARE_STREAM_SIGNING_JWK')&&get('CLOUDFLARE_STREAM_CUSTOMER_CODE')),
-    googleConnected:false,weeklySchedule:'Not activated',workspaceReadOnly:true,secretsExposed:false };
-}
 export default async function handler(req) {
   let cookies=[];
   try {
@@ -45,15 +38,13 @@ export default async function handler(req) {
     const operation=req.method==='POST'?input.action:(query.view||'overview');
     const staff=await requireStaff(event,roleList(operation));
     cookies=staff.auth.refreshedSession?sessionCookies(staff.auth.refreshedSession):[];
-    // Owner inspection release: student revision delivery is not yet published.
-    if(req.method==='POST') fail('workspace_preview_read_only',409);
     let result;
     if(req.method==='GET') {
       if(operation==='overview') result=await snapshot(staff);
       else if(operation==='course') result=await contentWorkspace(staff,query.course_id);
       else if(operation==='screen') result=await screenText(staff,query.course_id,query.delivery_id,query.screen_id);
       else if(operation==='student') result=await studentDetail(staff,query.enrollment_id);
-      else if(operation==='settings') { requireGlobal(staff); result=environmentStatus(); }
+      else if(operation==='settings') { requireGlobal(staff); result=await checkedEnvironmentStatus(); }
       else if(operation==='team') {
         if(!globalOwner(staff)) fail('unscoped_owner_required',403);
         const bindings=await readRows('current_staff_actor_bindings?select=*&order=recorded_at.desc&limit=1001');
@@ -77,7 +68,8 @@ export default async function handler(req) {
       else if(operation==='publish') result=await publishContent(staff,input);
       else if(operation==='health_run') {
         requireGlobal(staff);
-        const report=assessSnapshot(await snapshot(staff),environmentStatus());
+        const [current,environment]=await Promise.all([snapshot(staff),checkedEnvironmentStatus()]);
+        const report=assessSnapshot(current,environment);
         // Durable reports contain diagnostics and counts, not student or payment records.
         const summary={checkedAt:report.checkedAt,outcome:report.outcome,findings:report.findings,sources:Object.fromEntries(Object.entries(report.datasets).map(([k,v])=>[k,{available:v.available,truncated:v.truncated,rows:v.rows.length}]))};
         await dbRequest('console_health_runs',{method:'POST',prefer:'return=minimal',body:{trigger_kind:'manual',outcome:report.outcome,report:summary,recorded_by:staff.auth.student.id}});
@@ -96,8 +88,20 @@ export default async function handler(req) {
         if(!Number.isInteger(input.expectedRevision)) fail('expected_revision_required');
         const patch={};
         if(input.status!=null){if(!['open','in_progress','needs_verification','closed'].includes(input.status))fail('invalid_task_status');patch.status=input.status;}
-        if(input.assignedTo!==undefined){if(input.assignedTo!==null&&!UUID.test(input.assignedTo))fail('invalid_assignee');patch.assigned_to=input.assignedTo;}
-        if(input.dueDate!==undefined){if(input.dueDate!==null&&!/^\d{4}-\d{2}-\d{2}$/.test(input.dueDate))fail('invalid_due_date');patch.due_date=input.dueDate;}
+        if(input.assignedTo!==undefined){
+          if(input.assignedTo!==null&&!UUID.test(input.assignedTo))fail('invalid_assignee');
+          if(input.assignedTo){
+            const bindings=await staffBindings(input.assignedTo);
+            const course=await courseFor(staff,task.course_id);
+            if(!bindings?.some(b=>b.scope_state==null||b.scope_state===course.state))fail('assignee_has_no_course_access');
+          }
+          patch.assigned_to=input.assignedTo;
+        }
+        if(input.dueDate!==undefined){
+          const value=input.dueDate;
+          if(value!==null&&(!/^\d{4}-\d{2}-\d{2}$/.test(value)||!Number.isFinite(Date.parse(value))||new Date(value).toISOString().slice(0,10)!==value))fail('invalid_due_date');
+          patch.due_date=value;
+        }
         if(String(input.note||'').trim().length<10)fail('task_change_reason_required');
         result=await rpc('console_update_task',{p_id:input.id,p_expected:input.expectedRevision,p_patch:patch,p_actor:staff.auth.student.id,p_note:String(input.note).trim().slice(0,5000)});
       }

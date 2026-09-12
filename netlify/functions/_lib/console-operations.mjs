@@ -1,6 +1,6 @@
+import { trainingReadiness } from './training-readiness.mjs';
 import { dbRequest } from './db.mjs';
-import { getCourseConfiguration, getCourseDelivery } from '../../../config/course-registry.mjs';
-import { getBlockQuestion } from '../../../config/california-block-engine.mjs';
+import { getCourseConfiguration, getCourseDelivery, getCourseQuestion as getBlockQuestion } from '../../../config/course-registry.mjs';
 
 export function fail(message, statusCode = 400) { throw Object.assign(new Error(message), { statusCode }); }
 export const UUID = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
@@ -52,12 +52,13 @@ export function courseStructure(courseId) {
 export async function snapshot(staff) {
   const scope = stateFilter(staff);
   const courses = await readRows(`courses?select=*&order=state.asc,id.asc&limit=1001${scope}`);
+  courses.rows = courses.rows.map(c=>({...c,trainingReadiness:trainingReadiness(c.id)}));
   const ids = courses.rows.map(c => c.id);
   const courseFilter = idsFilter('course_id', ids);
   const queries = {
-    enrollments: `enrollments?select=id,student_id,course_id,state,status,course_version,compliance_credit_eligible,enrollment_date,completed_at,last_course_accessed_at&order=enrollment_date.desc&limit=1001${scope}`,
+    enrollments: `enrollments?select=id,student_id,course_id,state,status,course_version,enrollment_origin,expires_at,compliance_credit_eligible,enrollment_date,completed_at,last_course_accessed_at&order=enrollment_date.desc&limit=1001${scope}`,
     videos: `video_assets?select=asset_key,course_id,delivery_id,screen_id,label,duration_seconds,stream_uid,created_at&order=created_at.desc&limit=1001${courseFilter}`,
-    governance: `offering_public_status?select=*&order=state.asc,offering_id.asc&limit=1001${scope}`,
+    governance: `offering_public_status?select=*&site=eq.${encodeURIComponent(new URL(globalThis.Netlify?.env.get('STATECOURSE_BASE_URL') || process.env.STATECOURSE_BASE_URL).hostname.replace(/^www\./,''))}&order=state.asc,offering_id.asc&limit=1001${scope}`,
     payments: `admin_payment_ledger?select=*&order=payment_date.desc&limit=1001${scope}`,
     tasks: `console_tasks?select=*&order=updated_at.desc&limit=1001${courseFilter}`,
   };
@@ -86,6 +87,8 @@ export function assessSnapshot(data, environment = {}) {
     const structure = courseStructure(course.id);
     if (!structure.available) { add('renderer_missing', 'blocking', course.id, 'No student block renderer is registered for this course.'); continue; }
     if (!course.name?.trim()) add('course_title_missing', 'blocking', course.id, 'Course title is empty.');
+    const readiness = trainingReadiness(course.id);
+    if (!readiness.ready) add('training_not_ready', 'blocking', course.id, `Free training cannot open: ${readiness.reason}.`);
     const seen = new Set();
     for (const unit of structure.units) {
       if (!unit.deliveryAvailable) add('unit_delivery_missing', 'blocking', course.id, `${unit.id}: lesson delivery is missing.`);
@@ -114,6 +117,8 @@ export function assessSnapshot(data, environment = {}) {
   for (const v of data.datasets.videos.rows) {
     if (!v.stream_uid && now - new Date(v.created_at).valueOf() > 86400000) add('upload_unfinished', 'attention', v.course_id, `${v.asset_key}: upload reservation is more than a day old.`);
   }
+  if (environment.stripeMode === 'live' || environment.liveEnabled === true) add('live_payments_enabled', 'attention', null, 'Production payment settings permit live mode; verify the owner activation decision before charging.');
+  for (const task of data.datasets.tasks?.rows || []) if (task.status !== 'closed' && task.due_date && Date.parse(task.due_date+'T23:59:59Z') < now) add('task_overdue','attention',task.course_id,`Overdue task: ${task.title}.`);
   if (!environment.stripeTestConnected) add('stripe_test_unconfigured', 'unverified', null, 'Stripe test checkout and webhook credentials are not both configured.');
   if (!environment.googleConnected) add('google_unverified', 'unverified', null, 'Google sign-in has not been verified by this check.');
   add('delivery_checks_pending', 'unverified', null, 'This structural check does not send email, watch video, execute checkout or exercise an authenticated student session.');

@@ -38,19 +38,13 @@ const PROD = path.join(HOME, "video-production");
 const OUT = path.join(HOME, "video-plan-freeze.json");
 
 const COURSE_ID = "tx-law-of-agency-30-v1";
-const FREEZE_ID = "LOA-VIDEO-PLAN-FREEZE-2026-09-11-v12";
+const FREEZE_ID = "LOA-VIDEO-PLAN-FREEZE-2026-09-12-v13";
 
 const PREVIOUS_FREEZE = Object.freeze({
-  freezeId: "LOA-VIDEO-PLAN-FREEZE-2026-09-10-v10",
-  sha256: "303a5e43add7738aa20da97e405397eda6306cd1bfc8675dca6b339abbb2f846",
-  bytes: 29156,
-  change:
-    "netlify.toml gained routes for the offering-governance and free-training endpoints, "
-    + "which is why this freeze moves; the file is hashed as production routing. Migrations "
-    + "021 and 022 add approval, training-access and payment-mode records per offering, and a "
-    + "training enrolment origin the database refuses to mark credit-eligible. No video "
-    + "artifact, placement, screen binding, caption, transcript or duration changed, and the "
-    + "private signed delivery model is untouched."
+  "freezeId": "LOA-VIDEO-PLAN-FREEZE-2026-09-11-v12",
+  "sha256": "5d1d3c517ac05e70c23dc7e861a0ce57cdac8134ba859a21a3325a28c76f1ca1",
+  "bytes": 28457,
+  "change": "The student player renders the verified text release pinned to the enrollment. The registry now resolves all 58 existing Law of Agency retrieval items and their replacements from its own reviewed bank. Remediation requires recorded review evidence. The Stream assets, protected playback and caption/transcript checks remain in force. Texas free training stays closed pending its state progress integration."
 });
 
 /**
@@ -247,6 +241,11 @@ const artifacts = {
   "private Stream database evidence schema": hashOf(path.join(root, "database/018_cloudflare_stream_delivery.sql")),
   "private Stream production routing and CSP": hashOf(path.join(root, "netlify.toml")),
   "private Stream player": hashOf(path.join(root, "public/statecourse/student/course/blocks/course-video.mjs")),
+  "registered student course delivery": hashOf(path.join(root, "config/course-registry.mjs")),
+  "Law of Agency retrieval adapter": hashOf(path.join(root, "config/texas/law-of-agency-block-retrieval.mjs")),
+  "student mastery derivation": hashOf(path.join(root, "config/california-block-engine.mjs")),
+  "student block payload": hashOf(path.join(root, "netlify/functions/student-blocks.mjs")),
+  "pinned content release overlay": hashOf(path.join(root, "netlify/functions/_lib/console-content.mjs")),
   "private Stream player host": hashOf(path.join(root, "public/statecourse/student/course/blocks/block-player.js")),
   "private Stream security tests": hashOf(path.join(root, "tests/cloudflare-stream-security.test.mjs")),
   "private Stream production runbook": hashOf(path.join(root, "docs/video/cloudflare-stream-production.md")),

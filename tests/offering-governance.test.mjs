@@ -71,8 +71,10 @@ test("free access writes no payment row, so the ledger stays a record of money",
   for (const forbidden of ["checkout_attempts", "payments", "stripe"]) {
     assert.equal(endpoint.includes(forbidden), false, `training enrolment must not touch ${forbidden}`);
   }
-  assert.match(endpoint, /compliance_credit_eligible: false/);
-  assert.match(endpoint, /enrollment_origin: "training"/);
+  const storage=await readFile(new URL('../netlify/functions/_lib/training-access.mjs', import.meta.url),'utf8');
+  assert.match(storage,/compliance_credit_eligible:false/);
+  assert.match(storage,/enrollment_origin:'training'/);
+  for(const forbidden of ['checkout_attempts','payments','stripe'])assert.equal(storage.includes(forbidden),false);
 });
 
 test("an unapproved offering describes itself as training and claims no credit", { concurrency: false }, () => {

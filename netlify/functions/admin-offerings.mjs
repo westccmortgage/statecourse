@@ -31,7 +31,8 @@ export const handler = async (event) => {
           scopeStates: staff.scopeStates,
           /* Rendered by the console so the control is absent rather than present and
              refused. The server refuses regardless. */
-          canActivateLivePayments: staff.roles.includes("owner"),
+          canActivateLivePayments: staff.matching.some(b => b.actor_role === 'owner'),
+          ownerScopeStates: staff.matching.some(b => b.actor_role === 'owner' && b.scope_state == null) ? null : staff.matching.filter(b => b.actor_role === 'owner').map(b => b.scope_state),
         },
         vocabulary: GOVERNANCE_VOCABULARY,
         offerings: visible.map((row) => ({ ...row, copy: representationCopy(row) })),

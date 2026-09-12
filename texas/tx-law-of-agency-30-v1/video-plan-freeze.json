@@ -1,5 +1,5 @@
 {
-  "freezeId": "LOA-VIDEO-PLAN-FREEZE-2026-09-11-v12",
+  "freezeId": "LOA-VIDEO-PLAN-FREEZE-2026-09-12-v13",
   "courseId": "tx-law-of-agency-30-v1",
   "frozenOn": "2026-09-08",
   "generatedBy": "scripts/freeze-loa-video-plan.mjs",
@@ -12,10 +12,10 @@
     "doNotSay": "'production-ready'. It collapses distinct asset, placement, course-approval and provider-approval layers into one."
   },
   "previousFreeze": {
-    "freezeId": "LOA-VIDEO-PLAN-FREEZE-2026-09-10-v10",
-    "sha256": "303a5e43add7738aa20da97e405397eda6306cd1bfc8675dca6b339abbb2f846",
-    "bytes": 29156,
-    "change": "netlify.toml gained routes for the offering-governance and free-training endpoints, which is why this freeze moves; the file is hashed as production routing. Migrations 021 and 022 add approval, training-access and payment-mode records per offering, and a training enrolment origin the database refuses to mark credit-eligible. No video artifact, placement, screen binding, caption, transcript or duration changed, and the private signed delivery model is untouched."
+    "freezeId": "LOA-VIDEO-PLAN-FREEZE-2026-09-11-v12",
+    "sha256": "5d1d3c517ac05e70c23dc7e861a0ce57cdac8134ba859a21a3325a28c76f1ca1",
+    "bytes": 28457,
+    "change": "The student player renders the verified text release pinned to the enrollment. The registry now resolves all 58 existing Law of Agency retrieval items and their replacements from its own reviewed bank. Remediation requires recorded review evidence. The Stream assets, protected playback and caption/transcript checks remain in force. Texas free training stays closed pending its state progress integration."
   },
   "supersedes": {
     "artifact": "texas/tx-law-of-agency-30-v1/video-instruction-plan.md",
@@ -384,10 +384,35 @@
       "sha256": "79ee0d3d75bdb5583ee9867f20456430d83a36094d5fa2b660b8478c17661cbb",
       "bytes": 9250
     },
+    "registered student course delivery": {
+      "path": "config/course-registry.mjs",
+      "sha256": "98f7d28aeaac76429b27315a537fe33b80808a34adc14f7b4c16da332ab89d1b",
+      "bytes": 5759
+    },
+    "Law of Agency retrieval adapter": {
+      "path": "config/texas/law-of-agency-block-retrieval.mjs",
+      "sha256": "47f8673a86b110140077eb0a07cb4276c60ed8d3cba3917358349eb7b817237f",
+      "bytes": 2056
+    },
+    "student mastery derivation": {
+      "path": "config/california-block-engine.mjs",
+      "sha256": "bf0dea228ed9d675f21d0d245618a713e8f4fb539586bdbffd919ab0a689fd7b",
+      "bytes": 17258
+    },
+    "student block payload": {
+      "path": "netlify/functions/student-blocks.mjs",
+      "sha256": "193c759af96a5f5be07bb40a970771cfdc4671237a158b2a2290002c9f96c433",
+      "bytes": 23666
+    },
+    "pinned content release overlay": {
+      "path": "netlify/functions/_lib/console-content.mjs",
+      "sha256": "b35847195fa90ac88190b0125844a26758480f452af46fec654fd94b4afe2bdb",
+      "bytes": 7092
+    },
     "private Stream player host": {
       "path": "public/statecourse/student/course/blocks/block-player.js",
-      "sha256": "496a877e1f454f3cb044b3acf4e6a72700c427ef1dca2a855c093b13d72975a5",
-      "bytes": 33648
+      "sha256": "537d96768d425455ab1d0b16db68ed3f217686797b82d5694517174a52a56201",
+      "bytes": 33799
     },
     "private Stream security tests": {
       "path": "tests/cloudflare-stream-security.test.mjs",

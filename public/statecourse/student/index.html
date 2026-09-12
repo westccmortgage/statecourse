@@ -57,9 +57,15 @@
 
       <section class="empty-state" id="emptyState" hidden>
         <p class="eyebrow">No enrollments</p>
-        <h2>Your purchased courses will appear here.</h2>
-        <p>After an eligible checkout creates an enrollment, only that purchased course will be added to this account.</p>
+        <h2>Your courses will appear here.</h2>
+        <p>Choose an available free training course below, or return to the course finder.</p>
         <a href="../">Find a state course →</a>
+      </section>
+      <section class="course-group" id="trainingGroup" hidden aria-labelledby="trainingHeading">
+        <div class="section-heading"><span>Free study</span><h2 id="trainingHeading">Courses for training purposes</h2></div>
+        <p>Study without payment. These enrollments do not earn licensing or continuing education credit.</p>
+        <p id="trainingMessage" role="status" aria-live="polite"></p>
+        <div class="course-list" id="trainingCourses"></div>
       </section>
     </main>
 

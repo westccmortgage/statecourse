@@ -17,7 +17,10 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const SECRET_PATTERNS = [
   { label: "answer key document", re: /final-exam-form-[ab]-answer-key/i },
   { label: "answer key heading", re: /##\s*Answer key/i },
-  { label: "machine answer field", re: /\bcorrectChoice\b/ },
+  // The authenticated reviewer renderer reads item.correctChoice. The forbidden
+  // material is an embedded answer value, not a property name used to render a
+  // separately authorized response. Access control is tested in review-exams tests.
+  { label: "embedded machine answer", re: /\bcorrectChoice["']?\s*[:=]\s*["']?\d+\b/ },
   { label: "question bank module", re: /module-question-bank|final-exam-bank/ }
 ];
 
@@ -115,4 +118,10 @@ test("the export script writes outside every published directory", () => {
 
   const gitignore = fs.readFileSync(path.join(root, ".gitignore"), "utf8");
   assert.match(gitignore, /^\.local-export/m, ".local-export must be gitignored");
+});
+
+test("public-answer scan detects embedded numeric keys but permits a renderer property access",()=>{
+  const pattern=SECRET_PATTERNS.find(p=>p.label==='embedded machine answer').re;
+  for(const text of ['{"correctChoice":2}','correctChoice: 0','correctChoice = 3'])assert.equal(pattern.test(text),true);
+  assert.equal(pattern.test('render(item.correctChoice)'),false);
 });

@@ -30,6 +30,7 @@
  * Usage:  node scripts/loa-acceptance-report.mjs [--json]
  */
 
+import { trainingReadiness } from "../netlify/functions/_lib/training-readiness.mjs";
 import fs from "node:fs";
 import path from "node:path";
 import crypto from "node:crypto";
@@ -286,13 +287,17 @@ checks.push(check("22. the confidential bank reaches no served tree", servedOffe
     ? "no file under public/ or dist/ references the examination bank or the version file; the reviewer surface renders placeholder items only"
     : `REFERENCED FROM: ${servedOffenders.join(", ")}`));
 
+const studentReadiness = trainingReadiness(COURSE_ID);
+checks.push(check("22a. production training and progress integration", studentReadiness.ready,
+  studentReadiness.ready ? "Registered enrollment and progress path is connected; live journey verification remains separate." : studentReadiness.reason));
+
 /* 23 ── regression suite ────────────────────────────────────────────────────────────────────── */
 /* The suite contains a test that validates acceptance-report.json itself. During regeneration that
    one assertion must not make the new report depend on the stale report it is replacing; the normal
    post-generation suite runs without this flag and validates the newly written artifact. */
 const testRun = tryRun(
   "node",
-  ["--test", ...fs.readdirSync(path.join(root, "tests")).filter((f) => f.endsWith(".test.mjs")).map((f) => `tests/${f}`)],
+  ["--test", "--test-reporter=tap", ...fs.readdirSync(path.join(root, "tests")).filter((f) => f.endsWith(".test.mjs")).map((f) => `tests/${f}`)],
   { env: { ...process.env, STATECOURSE_ACCEPTANCE_REBUILD: "1" } },
 );
 const testCounts = testRun.out.match(/# pass (\d+)[\s\S]*?# fail (\d+)/);
@@ -305,7 +310,7 @@ const providerLock = manifest.providerRuleSourceLock();
 blockers.push(`TX_PROVIDER_RULE_SOURCE_LOCK is ${providerLock.status} — ${providerLock.unreachable.map((u) => u.id).join(", ") || "no unreachable sources"}`);
 blockers.push("the codified 22 TAC text has never been read from this environment; the rules are held from TREC's published copy and the difference is recorded in trec-rules-source-lock.mjs");
 blockers.push("StateCourse holds no TREC qualifying-education provider approval, and no course application has been filed for LOA-1");
-blockers.push("no STUDENT-facing surface exists. The engine workflow and accessibility are demonstrated against a reviewer-only, non-credit surface at texas/tx-law-of-agency-30-v1/reviewer-surface, which is not served, not linked and carries noindex. A student-facing deployment, and testing with real assistive technology and real users, remain outstanding.");
+blockers.push("The production student renderer resolves Law of Agency lessons and retrieval questions. The state progress, heartbeat and completion integration is still incomplete, so new training enrollments remain closed. Reviewer-engine evidence does not establish a complete production student journey.");
 blockers.push("the claim auditor is anchored on the section symbol and cannot see prose-form citations; the mechanical-pass figures describe symbol-anchored citations only, and correcting the shared engine will alter hashed ledgers for Principles II as well as this course");
 blockers.push("certificate issuance and four-year record retention are implemented and refused/recorded in the engine, but neither has been exercised against a real completion because no credit may be awarded without TREC approval");
 checks.push(check("24. submission-readiness blockers recorded", true, `${blockers.length} standing blockers, none clearable from this repository`));
@@ -325,7 +330,7 @@ const timeReconciled = timeOk && Boolean(time?.disjointness);
 
 const contentAndAssessment = contentComplete && assessmentComplete && regressionGreen ? "GO" : "NO-GO";
 const operationalCourse = contentAndAssessment === "GO" && engineComplete && accessibilityComplete
-  && confidentialityHeld && timeReconciled ? "GO" : "NO-GO";
+  && confidentialityHeld && timeReconciled && studentReadiness.ready ? "GO" : "NO-GO";
 const submissionReadiness = operationalCourse === "GO" && blockers.length === 0 ? "GO" : "NO-GO";
 const verdict = operationalCourse === "GO"
   ? (submissionReadiness === "GO" ? "GO" : "GO — COURSE COMPLETE, SUBMISSION BLOCKED")

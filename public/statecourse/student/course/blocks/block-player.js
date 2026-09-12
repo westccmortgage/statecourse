@@ -136,7 +136,7 @@ function renderScreen() {
     content.innerHTML = renderLessonMarkdown(sliceRange(screen.content));
     renderCompletionStatus(activity);
   } else {
-    content.innerHTML = screenVideoHtml(screen) + renderLessonMarkdown(sliceRange(screen.content)) + screenDocumentsHtml(screen);
+    content.innerHTML = screenVideoHtml(screen) + renderLessonMarkdown(typeof screen.bodyMarkdown === "string" ? screen.bodyMarkdown : sliceRange(screen.content)) + screenDocumentsHtml(screen);
   }
   renderNav();
   content.focus({ preventScroll: true });
@@ -353,7 +353,7 @@ function renderRemediation(content, activity) {
     || block.screens.find((screen) => screen.type === "instruction");
   if (!remediation.reviewed) {
     $("#screenTitle").textContent = `Focused review: ${target?.title || block.title}`;
-    content.innerHTML = target?.content ? renderLessonMarkdown(sliceRange(target.content)) : "";
+    content.innerHTML = typeof target?.bodyMarkdown === "string" ? renderLessonMarkdown(target.bodyMarkdown) : target?.content ? renderLessonMarkdown(sliceRange(target.content)) : "";
     activity.innerHTML = `
       <div class="activity-panel">
         <h3>Then continue</h3>

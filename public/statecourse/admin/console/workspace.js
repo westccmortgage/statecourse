@@ -5,28 +5,26 @@ const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&
 const words=v=>String(v??'').replaceAll('_',' ');
 const when=v=>v?new Date(v).toLocaleString():'Not recorded';
 let session=null, data=null, workspace=null, selectedScreen=null, paymentOffset=0;
+let courseRequest=0, screenRequest=0;
+function money(amount,currency='USD') {
+  const cents=Number(amount);
+  if(amount==null||!Number.isSafeInteger(cents))return 'Not recorded';
+  try{return new Intl.NumberFormat('en-US',{style:'currency',currency:String(currency).toUpperCase()}).format(cents/100);}catch{return 'Not recorded';}
+}
 const canEdit=()=>session?.roles.some(r=>['owner','administrator'].includes(r));
 const canReview=()=>session?.roles.some(r=>['owner','administrator','instructor'].includes(r));
 const isGlobal=()=>session?.bindings.some(b=>['owner','administrator'].includes(b.actorRole)&&!b.scopeState);
 const isOwner=()=>session?.bindings.some(b=>b.actorRole==='owner'&&!b.scopeState);
 async function api(view,params={}) {
+  const viewer=session;
   const res=await fetch('/api/admin/workspace?'+new URLSearchParams({view,...params}),{credentials:'same-origin',cache:'no-store'});
-  const body=await res.json();if(!res.ok)throw new Error(body.error||'Request failed');return body.result;
+  const body=await res.json();if(viewer!==session)throw new Error('Session changed. Reload the panel.');if(!res.ok)throw new Error(body.error||'Request failed');return body.result;
 }
 async function send(action,body={}) {
-  throw new Error('New workspace controls are read-only while implementation is completed.');
   const res=await fetch('/api/admin/workspace',{method:'POST',credentials:'same-origin',headers:{'content-type':'application/json'},body:JSON.stringify({action,...body})});
   const result=await res.json();if(!res.ok)throw new Error(result.error||'Save failed');return result.result;
 }
 function message(text,error=false){const el=$('#workspaceMessage');el.textContent=text;el.classList.toggle('error',error);}
-function lockPreviewForms(){
-  document.querySelectorAll('#courseWorkspace form button:not([data-work="preview-text"]), #taskCreateForm button, .taskChange button, #bindingForm button, #runHealth').forEach(button=>{
-    button.disabled=true;
-    button.title='Read-only interface review. This operation is not activated.';
-  });
-}
-new MutationObserver(lockPreviewForms).observe(document.querySelector('.workspace-content'),{childList:true,subtree:true});
-lockPreviewForms();
 function table(headings,rows){return `<div class="table-wrap"><table class="data-table"><thead><tr>${headings.map(h=>`<th scope="col">${esc(h)}</th>`).join('')}</tr></thead><tbody>${rows.length?rows.map(cells=>`<tr>${cells.map(c=>`<td>${c}</td>`).join('')}</tr>`).join(''):`<tr><td colspan="${headings.length}">No records.</td></tr>`}</tbody></table></div>`;}
 function unavailable(name){return `<div class="empty-state"><h3>${esc(name)} unavailable</h3><p>The source could not be read. No empty or passing result has been assumed.</p><button type="button" data-work="refresh">Try again</button></div>`;}
 function sourceNote(source){return source.truncated?'<p class="message">Showing the most recent 1,000 records. This is not a complete total.</p>':'';}
@@ -38,7 +36,7 @@ async function loadOverview(){
   const {courses,enrollments,videos,governance,tasks}=data.datasets;
   const count=(source,predicate=()=>true)=>source?.available&&!source.truncated?source.rows.filter(predicate).length:'Not verified';
   $('#overviewBody').innerHTML=`<div class="summary-grid">${[
-    ['Courses',count(courses),'coursesPanel'],['Active enrollments',count(enrollments,r=>r.status==='active'),'studentsPanel'],['Video assets',count(videos),'videoPanel'],['Open tasks',count(tasks,r=>r.status!=='closed'),'tasksPanel']
+    ['Courses',count(courses),'coursesPanel'],['Active enrollments',count(enrollments,r=>r.status==='active'),'studentsPanel'],['Review / non-credit enrollments',count(enrollments,r=>r.status==='qa_non_credit'),'studentsPanel'],['Console video assets',count(videos),'videoPanel'],['Open tasks',count(tasks,r=>r.status!=='closed'),'tasksPanel']
   ].map(([name,value,target])=>`<button class="stat" type="button" data-work="navigate" data-target="${target}"><span>${name}</span><strong>${esc(value)}</strong></button>`).join('')}</div>
   <div class="overview-columns"><article class="card"><h3>Sources and availability</h3>${Object.entries(data.datasets).map(([key,source])=>`<p class="source-line"><span>${esc(words(key))}</span><strong class="${source.available&&!source.truncated?'agrees':'error'}">${source.available?(source.truncated?'Partial result':'Connected'):'Not verified'}</strong></p>`).join('')}</article>
   <article class="card"><h3>Training and payment decisions</h3><p>Approval, free access and payment mode are independent decisions for each offering.</p>${governance.available?`<p>${governance.rows.filter(g=>g.training_access_enabled).length} recorded offerings allow free training.</p><p>${governance.rows.filter(g=>g.live_charging_permitted).length} recorded offerings permit live charging. Site payment settings still apply.</p>`:unavailable('Offering decisions')}<button type="button" data-work="navigate" data-target="offeringsPanel">Open decisions</button></article></div>
@@ -53,11 +51,13 @@ function renderCourses(){
   const rows=source.rows.filter(c=>(!state||c.state===state)&&`${c.name} ${c.id}`.toLowerCase().includes(search));
   $('#courseList').innerHTML=sourceNote(source)+table(['Course','State','Recorded approval','Training access','Payments',''],rows.map(c=>{
     const g=data.datasets.governance.rows.find(g=>g.offering_id===c.id);
-    return [`<strong>${esc(c.name)}</strong><small>${esc(c.id)}</small>`,esc(c.state),esc(words(g?.approval_status||c.approval_status)),g?g.training_access_enabled?'Open':'Closed':data.datasets.governance.available?'No decision':'Not verified',esc(words(g?.payment_mode||'Not verified')),`<button type="button" data-work="course" data-id="${esc(c.id)}">Open course</button>`];
+    return [`<strong>${esc(c.name)}</strong><small>${esc(c.id)}</small>`,esc(c.state),esc(words(g?.approval_status||c.approval_status)),g?g.training_access_enabled?'Open':'Closed':data.datasets.governance.available?'No decision':'Not verified',esc(words(g?.payment_mode||'Not verified')),`<button type="button" data-work="course" data-id="${esc(c.id)}">Open course</button> <button type="button" data-work="course-decisions" data-id="${esc(c.id)}">Training &amp; payments</button>${c.trainingReadiness?.ready===false?`<small>Free training unavailable: ${esc(words(c.trainingReadiness.reason))}</small>`:''}`];
   }));
 }
 async function openCourse(id){
-  workspace=await api('course',{course_id:id});selectedScreen=null;
+  const request=++courseRequest;++screenRequest;
+  const result=await api('course',{course_id:id});if(request!==courseRequest)return;
+  workspace=result;selectedScreen=null;
   const w=workspace;
   $('#courseWorkspace').hidden=false;
   $('#courseWorkspace').innerHTML=`<div class="panel-heading"><div><p class="eyebrow">${esc(w.course.state)} · Course workspace</p><h2>${esc(w.course.name)}</h2></div><button type="button" class="secondary-button" data-work="close-course">Close course</button></div>
@@ -72,11 +72,13 @@ async function openCourse(id){
   $('#courseWorkspace').scrollIntoView({block:'start',behavior:'smooth'});
 }
 async function openScreen(unitId,screenId){
+  const request=++screenRequest,current=workspace;
   const unit=workspace.structure.units.find(u=>u.id===unitId),screen=unit?.blocks.flatMap(b=>b.screens).find(s=>s.id===screenId);
   if(!screen)return;
   const override=workspace.draft?.payload.overrides.find(o=>o.deliveryId===unitId&&o.screenId===screenId);
   let text=override;
   if(!text&&screen.content)text=await api('screen',{course_id:workspace.course.id,delivery_id:unitId,screen_id:screenId});
+  if(request!==screenRequest||workspace!==current)return;
   selectedScreen={unitId,screenId};
   const editable=['instruction','review'].includes(screen.type)&&workspace.storageAvailable&&canEdit();
   $('#screenEditor').innerHTML=`<p class="eyebrow">${esc(screen.type)} · ${esc(screen.id)}</p><form id="screenDraftForm"><label>Title<input name="title" value="${esc(text?.title||screen.title)}" minlength="3" maxlength="200" required ${editable?'':'readonly'}></label>
@@ -100,7 +102,7 @@ async function openStudent(id){
 function renderTasks(){
   const source=data.datasets.tasks;
   $('#taskCourse').innerHTML=courseOptions();$('#taskCreateForm').hidden=!canEdit();
-  $('#tasksBody').innerHTML=source.available?table(['Task','Course','Priority','Status',''],source.rows.map(t=>[esc(t.title),esc(t.course_id),esc(t.priority),esc(words(t.status)),canEdit()?`<form class="taskChange" data-id="${esc(t.id)}" data-revision="${t.revision}"><label>Next status<select name="status">${['open','in_progress','needs_verification','closed'].map(s=>`<option value="${s}" ${s===t.status?'selected':''}>${esc(words(s))}</option>`).join('')}</select></label><label>Reason / verification evidence<textarea name="note" minlength="10" required></textarea></label><button>Save</button></form>`:'Read only'])):unavailable('Task storage');
+  $('#tasksBody').innerHTML=source.available?table(['Task','Course','Priority','Status',''],source.rows.map(t=>[esc(t.title),esc(t.course_id),esc(t.priority),esc(words(t.status)),canEdit()?`<form class="taskChange" data-id="${esc(t.id)}" data-revision="${t.revision}"><label>Next status<select name="status">${['open','in_progress','needs_verification','closed'].map(s=>`<option value="${s}" ${s===t.status?'selected':''}>${esc(words(s))}</option>`).join('')}</select></label><label>Due date<input type="date" name="dueDate" value="${esc(t.due_date||'')}" /></label><label>Reason / verification evidence<textarea name="note" minlength="10" required></textarea></label><button>Save</button></form>`:'Read only'])):unavailable('Task storage');
 }
 async function loadHealth(){
   const source=await api('health');
@@ -109,7 +111,7 @@ async function loadHealth(){
 }
 async function loadTeam(){
   const t=await api('team');$('#teamBody').innerHTML=t.bindings.available?table(['Account','Role','State','Status','Expires'],t.bindings.rows.map(b=>[esc(t.people.rows.find(p=>p.id===b.auth_user_id)?.email||b.auth_user_id),esc(words(b.actor_role)),esc(b.scope_state||'All'),esc(b.binding_status),esc(b.expires_at?when(b.expires_at):'No expiry')])):unavailable('Staff bindings');
-  $('#bindingPerson').innerHTML=t.people.rows.map(p=>`<option value="${esc(p.id)}">${esc(p.email)}</option>`).join('');$('#bindingRole').innerHTML=t.roles.map(r=>`<option value="${r}">${esc(words(r))}</option>`).join('');
+  $('#bindingPerson').innerHTML='<option value="">Select an existing account…</option>'+t.people.rows.map(p=>`<option value="${esc(p.id)}">${esc(p.email)}</option>`).join('');$('#bindingRole').innerHTML='<option value="">Select a role…</option>'+t.roles.map(r=>`<option value="${r}">${esc(words(r))}</option>`).join('');
 }
 async function loadMessages(){
   const m=await api('messages');$('#messagesBody').innerHTML=`<p class="message">This outbox covers recorded course notifications. Supabase confirmation and password-reset delivery are not reported here. Automated student reminders are not enabled.</p>${m.outbox.available?table(['Created','Type','Status','Sent'],m.outbox.rows.map(r=>[esc(when(r.created_at)),esc(words(r.notification_type)),esc(r.status),esc(when(r.sent_at))])):unavailable('Notification outbox')}`;
@@ -119,16 +121,16 @@ async function loadAudit(){
 }
 async function loadSettings(){
   const s=await api('settings');$('#settingsBody').innerHTML=table(['Connection / setting','Current state'],[
-    ['Cloudflare Stream uploads',s.cloudflareUploadConfigured?'Configured':'Missing configuration'],['Protected Cloudflare playback',s.cloudflareSigningConfigured?'Configured':'Missing configuration'],['Stripe mode',esc(s.stripeMode)],['Stripe sandbox checkout and webhook',s.stripeTestConnected?'Credentials configured; transaction still needs verification':'Not connected'],['Global live payment switch',s.liveEnabled?'Enabled; per-offering approval and activation still required':'Off'],['Google sign-in','Not verified by this panel'],['Weekly structural check',esc(s.weeklySchedule)]
+    ['Cloudflare Stream uploads',s.cloudflareUploadConfigured?'Configured':'Missing configuration'],['Protected Cloudflare playback',s.cloudflareSigningConfigured?'Configured':'Missing configuration'],['Stripe mode',esc(s.stripeMode)],['Stripe sandbox checkout and webhook',s.stripeTestConnected?'Credentials configured; transaction still needs verification':'Not connected'],['Global live payment switch',s.liveEnabled?'Enabled; per-offering approval and activation still required':'Off'],['Google sign-in',s.googleConfigured===true?'Provider enabled; completed sign-in still needs verification':s.googleConfigured===false?'Provider not enabled in Supabase':'Provider settings could not be read'],['Weekly structural check',esc(s.weeklySchedule)]
   ]);
 }
 async function loadPayments(){
-  const s=await api('payments',{offset:String(paymentOffset)});$('#paymentRowsBody').innerHTML=s.available?table(['Course','Student','Mode','Status','Amount'],s.rows.map(r=>[esc(r.course_id),esc(r.student_email||r.student_id),esc(r.stripe_mode??r.mode??'Not recorded'),esc(r.payment_status),esc(r.amount==null?'Not recorded':`${r.currency||''} ${Number(r.amount).toFixed(2)}`)])):unavailable('Payment ledger');
+  const s=await api('payments',{offset:String(paymentOffset)});$('#paymentRowsBody').innerHTML=s.available?table(['Course','Student','Mode','Status','Amount'],s.rows.map(r=>[esc(r.course_id),esc(r.student_email||r.student_id),esc(r.stripe_mode??r.mode??'Not recorded'),esc(r.payment_status),esc(money(r.amount,r.currency))])):unavailable('Payment ledger');
   $('#paymentsNext').disabled=!s.hasMore;$('#paymentsPrevious').disabled=paymentOffset===0;
 }
 
 document.addEventListener('statecourse:staff',async event=>{
-  session=event.detail;data=null;workspace=null;selectedScreen=null;
+  session=event.detail;data=null;workspace=null;selectedScreen=null;paymentOffset=0;++courseRequest;++screenRequest;
   for(const id of ['overviewBody','courseList','studentsBody','studentDetail','tasksBody','teamBody','checksBody','messagesBody','historyBody','settingsBody','paymentRowsBody','courseWorkspace'])$("#"+id)?.replaceChildren();
   if(!session?.roles.length)return;
   $('[data-panel="teamPanel"]').hidden=!isOwner();
@@ -146,6 +148,7 @@ document.addEventListener('click',async event=>{
   try{
     if(action==='navigate')panel(b.dataset.target);
     else if(action==='refresh')await loadOverview();
+    else if(action==='course-decisions'){const course=data.datasets.courses.rows.find(c=>c.id===b.dataset.id);const governance=data.datasets.governance.rows.find(g=>g.offering_id===course?.id&&g.state===course.state);document.dispatchEvent(new CustomEvent('statecourse:offering',{detail:{course,governance}}));panel('offeringsPanel');}
     else if(action==='course')await openCourse(b.dataset.id);
     else if(action==='close-course')$('#courseWorkspace').hidden=true;
     else if(action==='course-tab')document.querySelectorAll('.course-section').forEach(s=>s.hidden=s.id!==b.dataset.target);
@@ -170,7 +173,9 @@ document.addEventListener('submit',async event=>{
     }else if(form.id==='courseReviewForm'){await send('review',{courseId:workspace.course.id,contentHash:workspace.draft.content_hash,...fields});await openCourse(workspace.course.id);message('Review recorded for this saved version.');}
     else if(form.id==='coursePublishForm'){await send('publish',{courseId:workspace.course.id,contentHash:workspace.draft.content_hash,note:fields.note,audience:'new_enrollments'});await openCourse(workspace.course.id);message('Published for new enrollments. Existing progress and versions preserved.');}
     else if(form.id==='taskCreateForm'){await send('task_create',fields);form.reset();await loadOverview();message('Task saved.');}
-    else if(form.classList.contains('taskChange')){await send('task_update',{id:form.dataset.id,expectedRevision:Number(form.dataset.revision),...fields});await loadOverview();message('Task change recorded.');}
+    else if(form.classList.contains('taskChange')){await send('task_update',{id:form.dataset.id,expectedRevision:Number(form.dataset.revision),...fields,dueDate:fields.dueDate||null});await loadOverview();message('Task change recorded.');}
     else if(form.id==='bindingForm'){await send('binding',fields);await loadTeam();message('Staff access decision recorded.');}
   }catch(error){message(words(error.message),true);}finally{button.disabled=false;}
 });
+
+document.addEventListener('statecourse:governance-updated',()=>loadOverview().catch(e=>message(words(e.message),true)));

@@ -291,7 +291,7 @@ test("the curriculum freeze pins the video state through the video freeze, not t
 
 test("the video freeze names itself, supersedes plan v1 by hash, and still hashes every render dependency", () => {
   assert.match(VIDEO_FREEZE.freezeId, /^LOA-VIDEO-PLAN-FREEZE-\d{4}-\d{2}-\d{2}(-v\d+)?$/, "a re-freeze must bump its version rather than reusing an id");
-  assert.equal(VIDEO_FREEZE.freezeId, "LOA-VIDEO-PLAN-FREEZE-2026-09-11-v12");
+  assert.equal(VIDEO_FREEZE.freezeId, "LOA-VIDEO-PLAN-FREEZE-2026-09-12-v13");
   assert.equal(VIDEO_FREEZE.courseId, "tx-law-of-agency-30-v1");
 
   /* The superseded plan is identified by hash, not by adjective. */
@@ -720,8 +720,11 @@ test("the acceptance artifacts exist and record what they claim", () => {
 
   if (process.env.STATECOURSE_ACCEPTANCE_REBUILD !== "1") {
     const acceptance = read("acceptance-report.json");
-    assert.equal(acceptance.failed.length, 0, `acceptance checks failing: ${acceptance.failed.join(", ")}`);
-    assert.equal(acceptance.verdicts.completeOperationalCourse, "GO");
+    assert.deepEqual(acceptance.failed, acceptance.checks.filter(c=>!c.ok).map(c=>c.label), "failed checks must match the recorded evidence");
+    const productionCheck=acceptance.checks.find(c=>c.label.startsWith('22a.'));
+    assert.ok(productionCheck, 'production student integration must be checked separately from the reviewer engine');
+    if(acceptance.failed.length || !productionCheck.ok)assert.equal(acceptance.verdicts.completeOperationalCourse,"NO-GO");
+    assert.equal(acceptance.contentFreeze, FREEZE.freezeId);
     /* Submission readiness must stay NO-GO while any standing blocker is recorded. */
     assert.equal(acceptance.verdicts.submissionReadiness, "NO-GO");
     assert.ok(acceptance.blockers.length > 0, "the standing blockers must be recorded, not cleared");

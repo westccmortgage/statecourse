@@ -1,6 +1,7 @@
 import { dbRequest } from "./_lib/db.mjs";
 import { parseJson, requireSameOrigin } from "./_lib/http.mjs";
 import { requireStudentSession, sessionCookies, sessionResponse, updateStudentProfile } from "./_lib/student-session.mjs";
+import { availableTraining } from './_lib/training-access.mjs';
 
 const EVENT_TYPES = new Set(["portal_opened","course_resume_clicked","certificate_viewed","receipt_viewed","profile_viewed"]);
 
@@ -16,12 +17,14 @@ export const handler = async (event) => {
     const cookies = auth.refreshedSession ? sessionCookies(auth.refreshedSession) : [];
 
     if (event.httpMethod === "GET") {
-      const [profiles,enrollments] = await Promise.all([
+      const [profiles,enrollments,origins,training] = await Promise.all([
         dbRequest(`students?id=eq.${encodeURIComponent(auth.student.id)}&select=id,email,first_name,last_name,preferred_name,locale,timezone,account_status&limit=1`),
-        dbRequest(`student_portal_enrollments?student_id=eq.${encodeURIComponent(auth.student.id)}&order=enrollment_date.desc`)
+        dbRequest(`student_portal_enrollments?student_id=eq.${encodeURIComponent(auth.student.id)}&order=enrollment_date.desc`),
+        dbRequest(`enrollments?student_id=eq.${encodeURIComponent(auth.student.id)}&select=id,enrollment_origin`),
+        availableTraining(),
       ]);
       await dbRequest("student_portal_events",{ method:"POST",prefer:"return=minimal",body:{ student_id:auth.student.id,event_type:"portal_opened",metadata:{ source:"student_portal" } } });
-      return sessionResponse(200,{ student:profiles?.[0] || auth.student,enrollments:enrollments || [],serverTime:new Date().toISOString() },cookies);
+      return sessionResponse(200,{ student:profiles?.[0] || auth.student,enrollments:(enrollments || []).map(row=>({...row,enrollment_origin:origins?.find(item=>item.id===row.enrollment_id)?.enrollment_origin||null})),training,serverTime:new Date().toISOString() },cookies);
     }
 
     if (event.httpMethod === "POST") {

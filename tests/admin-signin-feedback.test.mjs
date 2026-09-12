@@ -22,7 +22,7 @@ async function screen(reply) {
   find('#signInEmail').value = 'owner@example.test';
   find('#signInPassword').value = 'entered-password';
   vm.runInNewContext(source, {
-    document: { querySelector: find, querySelectorAll: () => [], dispatchEvent() {} },
+    document: { querySelector: find, querySelectorAll: () => [], dispatchEvent() {}, addEventListener() {} },
     CustomEvent: class { constructor(type, init) { this.type = type; this.detail = init.detail; } },
     fetch: async (path, options) => {
       if (options.method !== 'POST') return { ok: false, status: 401, json: async () => ({ error: 'student_auth_required' }) };

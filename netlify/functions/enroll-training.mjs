@@ -1,6 +1,7 @@
 import { dbRequest } from "./_lib/db.mjs";
 import { parseJson, requireSameOrigin } from "./_lib/http.mjs";
 import { requireStudentSession, sessionCookies, sessionResponse } from "./_lib/student-session.mjs";
+import { ensureTrainingEnrollment } from "./_lib/training-access.mjs";
 import { governanceFor, representationCopy } from "./_lib/offering-governance.mjs";
 
 /*
@@ -40,60 +41,26 @@ export const handler = async (event) => {
     }
 
     const course = (await dbRequest(
-      `courses?id=eq.${encodeURIComponent(courseId)}&select=id,state,name&limit=1`,
+      `courses?id=eq.${encodeURIComponent(courseId)}&select=id,state,name,current_version&limit=1`,
     ))?.[0];
     if (!course) fail("unknown_course", 404);
 
-    /* One training enrolment per student per course; a second request returns the first
-       rather than creating a parallel enrolment. */
-    const existing = (await dbRequest(
-      `enrollments?student_id=eq.${encodeURIComponent(auth.student.id)}`
-        + `&course_id=eq.${encodeURIComponent(courseId)}&select=id,status,enrollment_origin,compliance_credit_eligible&limit=1`,
-    ))?.[0];
+    const { enrollment, existing } = await ensureTrainingEnrollment(auth.student.id,course);
+    if(enrollment.enrollment_origin!=='training')return sessionResponse(200,{
+      enrollmentId:enrollment.id,courseId,courseName:course.name,state:course.state,
+      origin:enrollment.enrollment_origin,existing:true,creditEligible:Boolean(enrollment.compliance_credit_eligible),
+      href:`/student-course.html?enrollment_id=${encodeURIComponent(enrollment.id)}`,
+    },cookies);
 
-    let enrollment = existing;
-    if (!enrollment) {
-      const created = await dbRequest("enrollments", {
-        method: "POST",
-        prefer: "return=representation",
-        body: {
-          student_id: auth.student.id,
-          course_id: courseId,
-          state: course.state,
-          status: "active",
-          /* Never true for training. The database refuses it as well. */
-          compliance_credit_eligible: false,
-          enrollment_origin: "training",
-          checkout_attempt_id: null,
-        },
-      });
-      enrollment = Array.isArray(created) ? created[0] : created;
-      if (!enrollment?.id) fail("training_enrolment_failed", 503);
-    }
-
-    const grant = (await dbRequest(
-      `access_grants?enrollment_id=eq.${encodeURIComponent(enrollment.id)}&select=id,status&limit=1`,
-    ))?.[0];
-    if (!grant) {
-      await dbRequest("access_grants", {
-        method: "POST",
-        prefer: "return=minimal",
-        body: {
-          enrollment_id: enrollment.id,
-          student_id: auth.student.id,
-          course_id: courseId,
-          status: "active",
-        },
-      });
-    }
-
-    const copy = representationCopy(status);
+    const copy = representationCopy({representation:"training_only"});
     return sessionResponse(200, {
       enrollmentId: enrollment.id,
       courseId,
       courseName: course.name,
       state: course.state,
-      origin: "training",
+      origin: enrollment.enrollment_origin,
+      existing,
+      href: `/student-course.html?enrollment_id=${encodeURIComponent(enrollment.id)}`,
       /* Repeated on the response so a page showing it cannot quietly omit it. */
       creditEligible: false,
       representation: copy.representation,

@@ -2,26 +2,26 @@
   "course": "Texas Law of Agency",
   "courseId": "tx-law-of-agency-30-v1",
   "approvalForm": "LOA-1 rev. 09/11/2024",
-  "contentFreeze": "LOA-CONTENT-FREEZE-2026-09-11-v16",
+  "contentFreeze": "LOA-CONTENT-FREEZE-2026-09-12-v17",
   "generatedBy": "scripts/loa-acceptance-report.mjs",
-  "generatedAt": "2026-09-11T02:52:28.814Z",
+  "generatedAt": "2026-09-12T17:19:32.533Z",
   "confidentiality": "Counts, hashes, percentages and behaviour outcomes only. No item text, choice, key or rationale from the secure bank appears in this report.",
   "verdicts": {
-    "contentAndAssessment": "GO",
-    "completeOperationalCourse": "GO",
+    "contentAndAssessment": "NO-GO",
+    "completeOperationalCourse": "NO-GO",
     "submissionReadiness": "NO-GO",
-    "overall": "GO — COURSE COMPLETE, SUBMISSION BLOCKED"
+    "overall": "NO-GO"
   },
   "checks": [
     {
       "label": "1. frozen curriculum",
       "ok": true,
-      "detail": "LOA-CONTENT-FREEZE-2026-09-11-v16; all 12 hashed artifacts match the freeze"
+      "detail": "LOA-CONTENT-FREEZE-2026-09-12-v17; all 12 hashed artifacts match the freeze"
     },
     {
       "label": "2. video plan frozen, and the curriculum freeze points at the freeze rather than the plan",
       "ok": true,
-      "detail": "LOA-VIDEO-PLAN-FREEZE-2026-09-11-v12 over 36 artifacts, following LOA-VIDEO-PLAN-FREEZE-2026-09-10-v10; package validator passes"
+      "detail": "LOA-VIDEO-PLAN-FREEZE-2026-09-12-v13 over 41 artifacts, following LOA-VIDEO-PLAN-FREEZE-2026-09-11-v12; package validator passes"
     },
     {
       "label": "3. twelve-topic and 57-unit coverage",
@@ -139,9 +139,14 @@
       "detail": "no file under public/ or dist/ references the examination bank or the version file; the reviewer surface renders placeholder items only"
     },
     {
+      "label": "22a. production training and progress integration",
+      "ok": false,
+      "detail": "state_progress_engine_not_connected"
+    },
+    {
       "label": "23. full regression suite",
-      "ok": true,
-      "detail": "1592 passing, 0 failing"
+      "ok": false,
+      "detail": "1665 passing, 21 failing"
     },
     {
       "label": "24. submission-readiness blockers recorded",
@@ -149,12 +154,15 @@
       "detail": "6 standing blockers, none clearable from this repository"
     }
   ],
-  "failed": [],
+  "failed": [
+    "22a. production training and progress integration",
+    "23. full regression suite"
+  ],
   "blockers": [
     "TX_PROVIDER_RULE_SOURCE_LOCK is FAIL — trec-qe-provider-application, sos-tac-22-535",
     "the codified 22 TAC text has never been read from this environment; the rules are held from TREC's published copy and the difference is recorded in trec-rules-source-lock.mjs",
     "StateCourse holds no TREC qualifying-education provider approval, and no course application has been filed for LOA-1",
-    "no STUDENT-facing surface exists. The engine workflow and accessibility are demonstrated against a reviewer-only, non-credit surface at texas/tx-law-of-agency-30-v1/reviewer-surface, which is not served, not linked and carries noindex. A student-facing deployment, and testing with real assistive technology and real users, remain outstanding.",
+    "The production student renderer resolves Law of Agency lessons and retrieval questions. The state progress, heartbeat and completion integration is still incomplete, so new training enrollments remain closed. Reviewer-engine evidence does not establish a complete production student journey.",
     "the claim auditor is anchored on the section symbol and cannot see prose-form citations; the mechanical-pass figures describe symbol-anchored citations only, and correcting the shared engine will alter hashed ledgers for Principles II as well as this course",
     "certificate issuance and four-year record retention are implemented and refused/recorded in the engine, but neither has been exercised against a real completion because no credit may be awarded without TREC approval"
   ]

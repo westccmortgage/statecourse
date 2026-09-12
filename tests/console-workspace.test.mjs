@@ -14,14 +14,10 @@ async function mock(store,action){const previous=globalThis.Netlify;globalThis.N
 test('workspace rejects unauthenticated requests without revealing any datasets',async()=>{
   await mock(createStore(),async()=>{const r=await handler(request({view:'overview'},{cookie:false}));assert.equal(r.status,401);assert.equal((await r.json()).result,undefined);});
 });
-test('interface review rejects every new mutation even for an owner without writing workspace records',async()=>{
-  await mock(createStore(),async calls=>{
-    for(const action of ['save_draft','review','publish','health_run','task_create','task_update','binding']){
-      const r=await handler(request({}, {body:{action}}));
-      assert.equal(r.status,409);
-      assert.equal((await r.json()).error,'workspace_preview_read_only');
-    }
-    assert.equal(calls.some(c=>['POST','PATCH','DELETE'].includes(c.method)&&c.url.pathname!=='/rest/v1/students'),false);
+test('workspace validates mutation inputs instead of keeping owners in a read-only preview',async()=>{
+  await mock(createStore(),async()=>{
+    const r=await handler(request({}, {body:{action:'save_draft'}}));
+    assert.equal(r.status,400);assert.equal((await r.json()).error,'invalid_course_id');
   });
 });
 test('workspace mutations require exact same origin before authentication or database calls',async()=>{
@@ -101,6 +97,6 @@ test('weekly check never reports green when a source or journey is unverified',(
 test('truncated metrics are reported as incomplete',()=>{
   const source={available:true,truncated:false,rows:[]};const r=assessSnapshot({datasets:{courses:{...source,truncated:true},enrollments:source,videos:source,governance:source},checkedAt:new Date().toISOString()});assert.ok(r.findings.some(f=>f.code==='incomplete_courses'));
 });
-test('missing retrieval questions are a blocking finding, not a renderer success',()=>{
-  const source={available:true,truncated:false,rows:[]};const r=assessSnapshot({datasets:{courses:{...source,rows:[{id:'tx-law-of-agency-30-v1',name:'Law of Agency'}]},enrollments:source,videos:source,governance:source},checkedAt:new Date().toISOString()});assert.ok(r.findings.some(f=>f.code==='retrieval_question_missing'));assert.equal(r.outcome,'action_required');
+test('Texas questions are registered while incomplete state progress remains a blocking finding',()=>{
+  const source={available:true,truncated:false,rows:[]};const r=assessSnapshot({datasets:{courses:{...source,rows:[{id:'tx-law-of-agency-30-v1',name:'Law of Agency'}]},enrollments:source,videos:source,governance:source},checkedAt:new Date().toISOString()});assert.ok(!r.findings.some(f=>f.code==='retrieval_question_missing'));assert.ok(r.findings.some(f=>f.code==='training_not_ready'));assert.equal(r.outcome,'action_required');
 });

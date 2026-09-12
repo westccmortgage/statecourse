@@ -1,5 +1,7 @@
+import { trainingReadiness } from "./training-readiness.mjs";
 import { dbRequest } from "./db.mjs";
 import { logConsoleAction } from "./staff-session.mjs";
+import { getCourse, getPackage } from "../../../config/course-catalog.mjs";
 
 /*
  * May this offering be charged for, and what may it be called.
@@ -39,8 +41,9 @@ export async function governanceFor(offeringId, { site = null } = {}) {
   try {
     const rows = await dbRequest(
       `offering_public_status?site=eq.${encodeURIComponent(host)}`
-        + `&offering_id=eq.${encodeURIComponent(offeringId)}&limit=1`,
+        + `&offering_id=eq.${encodeURIComponent(offeringId)}&limit=2`,
     );
+    if (rows?.length > 1) throw new Error('ambiguous_offering_governance');
     row = rows?.[0] || null;
   } catch (error) {
     /*
@@ -124,9 +127,9 @@ export function representationCopy(status) {
  * of one specific field and the owner is the only one who can write it.
  */
 export async function recordGovernance({ staff, input }) {
-  const isOwner = staff.roles.includes("owner");
   const site = String(input.site || defaultSite()).trim().toLowerCase();
   const state = String(input.state || "").trim().toUpperCase();
+  const isOwner = staff.matching?.some(b => b.actor_role === 'owner' && (b.scope_state == null || b.scope_state === state)) === true;
   const discipline = String(input.discipline || "").trim();
   const offeringKind = String(input.offeringKind || "course").trim();
   const offeringId = String(input.offeringId || "").trim();
@@ -141,6 +144,7 @@ export async function recordGovernance({ staff, input }) {
   if (!PAYMENT_MODES.includes(paymentMode)) fail("invalid_payment_mode");
   if (!APPROVAL_STATUSES.includes(approvalStatus)) fail("invalid_approval_status");
   if (note.length < 10) fail("governance_note_required");
+  if (site !== defaultSite()) fail('site_outside_this_console',403);
 
   /* A state-scoped administrator governs their own state and no other. */
   if (staff.scopeStates && !staff.scopeStates.includes(state)) fail("state_outside_staff_scope", 403);
@@ -152,19 +156,35 @@ export async function recordGovernance({ staff, input }) {
     });
   }
 
+  const registered = offeringKind === 'package' ? getPackage(offeringId)
+    : (await dbRequest(`courses?id=eq.${encodeURIComponent(offeringId)}&select=id,state,product_type&limit=1`))?.[0];
+  if (!registered) fail('unknown_offering',404);
+  if (registered.state !== state) fail('offering_state_mismatch');
+  const productType = registered.product_type || registered.productType || getCourse(offeringId)?.productType || '';
+  const actualDiscipline = productType.startsWith('mortgage') ? 'mortgage' : 'real_estate';
+  if (discipline !== actualDiscipline) fail('offering_discipline_mismatch');
+
+  if (input.trainingAccessEnabled === true) {
+    if (offeringKind !== 'course') fail('free_training_requires_a_course');
+    const readiness = trainingReadiness(offeringId);
+    if (!readiness.ready) fail(readiness.reason,409);
+  }
+
   const authority = String(input.approvalAuthority || "").trim() || null;
   const number = String(input.approvalNumber || "").trim() || null;
   const effective = String(input.approvalEffectiveDate || "").trim() || null;
   const expires = String(input.approvalExpiresDate || "").trim() || null;
   for (const [value, name] of [[effective, "approval_effective_date"], [expires, "approval_expires_date"]]) {
-    if (value && !ISO_DATE.test(value)) fail(`invalid_${name}`);
+    if (value && (!ISO_DATE.test(value) || !Number.isFinite(Date.parse(value)) || new Date(value).toISOString().slice(0,10) !== value)) fail(`invalid_${name}`);
   }
+  if (effective && expires && expires <= effective) fail('approval_expiry_must_follow_effective_date');
   if (approvalStatus === "approved" && (!authority || !number)) {
     fail("approved_status_requires_authority_and_number");
   }
   if (paymentMode === "live" && (approvalStatus !== "approved" || !effective)) {
     fail("live_requires_a_currently_recorded_approval");
   }
+  if (paymentMode === 'live' && (effective > new Date().toISOString().slice(0,10) || (expires && expires <= new Date().toISOString().slice(0,10)))) fail('live_requires_an_effective_approval');
 
   const evidence = input.approvalEvidence && typeof input.approvalEvidence === "object"
     ? input.approvalEvidence

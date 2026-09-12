@@ -29,7 +29,7 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const HOME = path.join(root, "texas/tx-law-of-agency-30-v1");
 const OUT = path.join(HOME, "content-freeze.json");
 const COURSE_ID = "tx-law-of-agency-30-v1";
-const FREEZE_ID = "LOA-CONTENT-FREEZE-2026-09-11-v16";
+const FREEZE_ID = "LOA-CONTENT-FREEZE-2026-09-12-v17";
 
 /**
  * FREEZE HISTORY. A freeze that is broken and silently re-taken teaches nothing. Every break is
@@ -37,6 +37,19 @@ const FREEZE_ID = "LOA-CONTENT-FREEZE-2026-09-11-v16";
  * than requiring someone to reconstruct it from git.
  */
 const BREAK_HISTORY = Object.freeze([
+  Object.freeze({
+  "brokeFreeze": "LOA-CONTENT-FREEZE-2026-09-11-v16",
+  "on": "2026-09-12",
+  "module": "No authored curriculum wording or answer key changed.",
+  "change": "Student delivery consumes pinned reviewed text. All 58 authored Law of Agency retrieval items are mapped to student screens, including the second module-08 check; remediation requires review evidence. Video dependency freeze moves to v13.",
+  "reason": "Record the revised student delivery dependencies; do not describe the unfinished Texas state progress integration as open training.",
+  "previousFreezeSha256": "b04e72cd7fd4de8f2061b76a87b21a58c3a612559ebc0464fc725ac2511fd3db",
+  "auditsReRun": [
+    "node --test tests/admin-workspace-operation.test.mjs tests/california-block-learning.test.mjs tests/texas-block-learning.test.mjs",
+    "node scripts/validate-loa-video-packages.mjs",
+    "node scripts/freeze-loa-video-plan.mjs --write"
+  ]
+}),
   Object.freeze({
     brokeFreeze: "LOA-CONTENT-FREEZE-2026-09-10-v15",
     on: "2026-09-11",

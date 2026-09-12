@@ -1,9 +1,22 @@
 {
-  "freezeId": "LOA-CONTENT-FREEZE-2026-09-11-v16",
+  "freezeId": "LOA-CONTENT-FREEZE-2026-09-12-v17",
   "courseId": "tx-law-of-agency-30-v1",
   "approvalForm": "LOA-1 rev 09/11/2024",
   "frozenOn": "2026-09-08",
   "breakHistory": [
+    {
+      "brokeFreeze": "LOA-CONTENT-FREEZE-2026-09-11-v16",
+      "on": "2026-09-12",
+      "module": "No authored curriculum wording or answer key changed.",
+      "change": "Student delivery consumes pinned reviewed text. All 58 authored Law of Agency retrieval items are mapped to student screens, including the second module-08 check; remediation requires review evidence. Video dependency freeze moves to v13.",
+      "reason": "Record the revised student delivery dependencies; do not describe the unfinished Texas state progress integration as open training.",
+      "previousFreezeSha256": "b04e72cd7fd4de8f2061b76a87b21a58c3a612559ebc0464fc725ac2511fd3db",
+      "auditsReRun": [
+        "node --test tests/admin-workspace-operation.test.mjs tests/california-block-learning.test.mjs tests/texas-block-learning.test.mjs",
+        "node scripts/validate-loa-video-packages.mjs",
+        "node scripts/freeze-loa-video-plan.mjs --write"
+      ]
+    },
     {
       "brokeFreeze": "LOA-CONTENT-FREEZE-2026-09-10-v15",
       "on": "2026-09-11",
@@ -526,8 +539,8 @@
     },
     "video plan freeze (LOA-VIDEO-PLAN-FREEZE-2026-09-08-v8 — hashes the plan and every render and delivery dependency)": {
       "path": "texas/tx-law-of-agency-30-v1/video-plan-freeze.json",
-      "sha256": "5d1d3c517ac05e70c23dc7e861a0ce57cdac8134ba859a21a3325a28c76f1ca1",
-      "bytes": 28457
+      "sha256": "67bb026a5b40c098d9ea802e5e4e74b28f3ad6f969329e7ea9d11232e78f9291",
+      "bytes": 29420
     }
   },
   "reproduce": [

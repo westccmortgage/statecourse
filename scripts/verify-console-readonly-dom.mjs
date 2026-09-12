@@ -61,8 +61,8 @@ try {
   ok(!w.document.querySelector('#textPreview script'),'preview escapes injected HTML');
   ok(w.document.querySelector('#textPreview').textContent.includes('no progress or credit'),'preview identified as non-credit');
   form.dispatchEvent(new w.SubmitEvent('submit',{bubbles:true,cancelable:true,submitter:form.querySelector('button')}));await drain();
-  ok(storedDraft===null,'inspection never saves a draft');
-  ok(!requests.some(r=>r.body?.action==='save_draft'),'submission is blocked before a network write');
+  ok(storedDraft?.revision===1,'explicit save stores one draft revision');
+  ok(requests.filter(r=>r.body?.action==='save_draft').length===1,'one explicit submission creates one draft request');
   ok(!requests.some(r=>r.body?.action==='publish'),'saving does not publish');
   ok(!requests.some(r=>/student|stripe/.test(r.url)),'preview and editing record no student or payment activity');
   w.document.querySelector('#signOut').click();await drain();

@@ -112,8 +112,8 @@ function permuteChoices(choices, correctChoice, key) {
   return { choices: order.map((index) => choices[index]), correctChoice: order.indexOf(correctChoice) };
 }
 
-export function getBlockQuestion(courseId, questionId) {
-  const item = RETRIEVAL_BANKS[questionId];
+export function getBlockQuestion(courseId, questionId, bank = RETRIEVAL_BANKS) {
+  const item = bank[questionId];
   if (!item) return null;
   const presented = permuteChoices(item.choices, item.correctChoice, `${courseId}:${questionId}`);
   return {
@@ -159,7 +159,7 @@ export const BLOCK_STATUS = Object.freeze([
   "NOT_STARTED", "IN_PROGRESS", "RETRIEVAL_REQUIRED", "REMEDIATION_REQUIRED", "MASTERED",
 ]);
 
-export function deriveBlockStatus(block, { completedScreens = [], attempts = [], regulatory = null } = {}) {
+export function deriveBlockStatus(block, { completedScreens = [], attempts = [], regulatory = null, questionLookup = id => RETRIEVAL_BANKS[id] } = {}) {
   const done = new Set(completedScreens);
   const contentScreens = block.screens.filter((screen) => screen.type !== "retrieval");
   const practiceScreens = block.screens.filter((screen) => screen.type === "practice");
@@ -179,7 +179,7 @@ export function deriveBlockStatus(block, { completedScreens = [], attempts = [],
   let activeRemediation = null;
   for (const screen of retrievalScreens) {
     const primaryId = screen.questionId;
-    const item = RETRIEVAL_BANKS[primaryId];
+    const item = questionLookup(primaryId);
     const primaryAttempts = attempts.filter((attempt) => attempt.question_id === primaryId && attempt.kind === "retrieval");
     const primaryCorrect = primaryAttempts.some((attempt) => attempt.correct === true);
     if (primaryCorrect) continue;
@@ -190,7 +190,7 @@ export function deriveBlockStatus(block, { completedScreens = [], attempts = [],
     const replacementCorrect = replacementId
       ? attempts.some((attempt) => attempt.question_id === replacementId && attempt.kind === "replacement" && attempt.correct === true)
       : false;
-    if (replacementCorrect) continue;
+    if (reviewed && replacementCorrect) continue;
     retrievalState = "remediation";
     activeRemediation = {
       screenId: screen.id,
