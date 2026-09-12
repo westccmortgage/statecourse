@@ -3,6 +3,7 @@
 import fs from 'node:fs/promises';
 import { pathToFileURL } from 'node:url';
 import assert from 'node:assert/strict';
+import { buildCourseInventory } from '../netlify/functions/_lib/course-inventory.mjs';
 import { courseStructure, } from '../netlify/functions/_lib/console-operations.mjs';
 import { baseFingerprint,contentHash } from '../netlify/functions/_lib/console-content.mjs';
 import {renderLessonMarkdown} from '../public/statecourse/student/course/blocks/lesson-markdown.mjs';
@@ -12,6 +13,7 @@ const root=new URL('../public/statecourse/admin/console/',import.meta.url);
 const dom=new JSDOM(await fs.readFile(new URL('index.html',root),'utf8'),{url:'https://statecourse.test/admin/console/',runScripts:'outside-only'});
 const {window:w}=dom;w.HTMLElement.prototype.scrollIntoView=function(){};w.renderLessonMarkdown=renderLessonMarkdown;
 const id='ca-real-estate-principles-45',course={id,state:'CA',name:'Real Estate Principles',approval_status:'submission_draft'};
+const publicCatalog=JSON.parse(await fs.readFile(new URL('../public/statecourse/data/course-catalog.json',import.meta.url),'utf8'));
 const structure=courseStructure(id), firstUnit=structure.units[0], firstScreen=firstUnit.blocks[0].screens.find(s=>s.type==='instruction');
 let storedDraft=null,checks=0;const requests=[];
 const source=rows=>({available:true,truncated:false,rows});
@@ -29,7 +31,7 @@ w.fetch=async(url,options={})=>{
   else if(u.pathname==='/api/admin/workspace'){
     let result={};
     if(body?.action==='save_draft'){storedDraft={revision:(storedDraft?.revision||0)+1,payload:body.payload,content_hash:contentHash(body.payload)};result=storedDraft;}
-    else if(u.searchParams.get('view')==='overview')result={checkedAt:new Date().toISOString(),datasets:{courses:source([course]),enrollments:source(roster),people:source(identities),recentAccess:source([{enrollment_id:roster[0].id,occurred_at:'2026-09-12T17:30:00Z'}]),videos:source([]),governance:source([]),tasks:source([])}};
+    else if(u.searchParams.get('view')==='overview')result={checkedAt:new Date().toISOString(),inventory:buildCourseInventory(publicCatalog,source([course]),source([])),datasets:{courses:source([course]),enrollments:source(roster),people:source(identities),recentAccess:source([{enrollment_id:roster[0].id,occurred_at:'2026-09-12T17:30:00Z'}]),videos:source([]),governance:source([]),tasks:source([])}};
     else if(u.searchParams.get('view')==='course')result=workspace();
     else if(u.searchParams.get('view')==='screen')result={title:firstScreen.title,bodyMarkdown:'The original instruction text, available for editing.',type:'instruction'};
     else if(u.searchParams.get('view')==='health'||u.searchParams.get('view')==='audit'||u.searchParams.get('view')==='payments')result=source([]);
@@ -62,6 +64,11 @@ try {
   ok(w.document.querySelector('#studentsBody').textContent.includes('boris@example.invalid')&&!w.document.querySelector('#studentsBody').textContent.includes('anna@example.invalid'),'email search selects the matching student');
   studentSearch.value='';studentSearch.dispatchEvent(new w.Event('input'));
   w.document.querySelector('[data-panel="coursesPanel"]').click();
+  ok(w.document.querySelector('#overviewBody').textContent.includes('Catalog states14'),'catalog states are counted independently from database records');
+  const courseState=w.document.querySelector('#courseState');courseState.value='AZ';courseState.dispatchEvent(new w.Event('change'));
+  ok(w.document.querySelector('#courseList').textContent.includes('Arizona Contract Writing'),'public-only states are visible in the course workspace');
+  ok(!w.document.querySelector('#courseList [data-work="course"]'),'public-only course cannot open an invented database workspace');
+  courseState.value='CA';courseState.dispatchEvent(new w.Event('change'));
   w.document.querySelector('[data-work="course"]').click();await drain();
   ok(w.document.querySelector('#courseWorkspace').textContent.includes('Real Estate Principles'),'course opens');
   const button=[...w.document.querySelectorAll('[data-work="screen"]')].find(b=>b.dataset.screen===firstScreen.id);button.click();await drain();

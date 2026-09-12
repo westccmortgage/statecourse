@@ -176,7 +176,7 @@ function catalogRow(row) {
       : "<em>absent</em>"}</td>
     <td>${row.payment
       ? `${esc(say(row.payment.approvalStatus))}<small>enrollment ${esc(say(row.payment.enrollmentEnabled))}</small>`
-      : "<em>not sellable</em>"}</td>
+      : "<em>no checkout record</em>"}</td>
     <td>${row.dbCourse
       ? `${esc(say(row.dbCourse.approval_status))}<small>enrollment ${esc(say(row.dbCourse.enrollment_enabled))}</small>`
       : "<em>no row</em>"}</td>
@@ -196,7 +196,7 @@ async function loadCatalog() {
     $("#catalogSummary").innerHTML = [
       ["Rows", summary.rows],
       ["Publicly listed", summary.publiclyListed],
-      ["Sellable at checkout", summary.sellable],
+      ["Checkout records", summary.sellable],
       ["Enrollment enabled", summary.enrollmentEnabled],
       ["Approved in environment", summary.approvedInEnvironment],
       ["Rows with disagreements", summary.rowsWithDiscrepancies],

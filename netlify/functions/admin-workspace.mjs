@@ -4,6 +4,7 @@ import { sessionCookies } from './_lib/student-session.mjs';
 import { assessSnapshot, courseFor, fail, globalOwner, KEY, PAGE_SIZE, readRows, snapshot, studentDetail, UUID } from './_lib/console-operations.mjs';
 import { contentWorkspace, screenText, saveContent, reviewContent, publishContent } from './_lib/console-content.mjs';
 import { checkedEnvironmentStatus } from './_lib/console-environment.mjs';
+import { registerCatalogCourses } from './_lib/course-inventory.mjs';
 
 function eventFrom(req) { return { httpMethod:req.method,headers:Object.fromEntries(req.headers),queryStringParameters:Object.fromEntries(new URL(req.url).searchParams) }; }
 function response(body,status=200,cookies=[]) {
@@ -12,7 +13,7 @@ function response(body,status=200,cookies=[]) {
   return new Response(JSON.stringify(body),{status,headers});
 }
 function roleList(operation) {
-  if(operation==='team' || operation==='binding') return ['owner'];
+  if(operation==='team' || operation==='binding' || operation==='register_catalog') return ['owner'];
   if(['save_draft','publish','task_create','task_update','health_run'].includes(operation)) return ['owner','administrator'];
   if(operation==='review') return ['owner','administrator','instructor'];
   if(['payments','health','audit','messages','settings'].includes(operation)) return ['owner','administrator'];
@@ -63,7 +64,8 @@ export default async function handler(req) {
         result.hasMore=result.rows.length>PAGE_SIZE; result.rows=result.rows.slice(0,PAGE_SIZE);result.offset=offset;
       } else fail('unknown_workspace_view',404);
     } else {
-      if(operation==='save_draft') result=await saveContent(staff,input);
+      if(operation==='register_catalog') result=await registerCatalogCourses(staff,input);
+      else if(operation==='save_draft') result=await saveContent(staff,input);
       else if(operation==='review') result=await reviewContent(staff,input);
       else if(operation==='publish') result=await publishContent(staff,input);
       else if(operation==='health_run') {

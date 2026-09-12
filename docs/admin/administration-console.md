@@ -10,6 +10,12 @@ Free training, regulatory approval and payment activation are separate decisions
 
 The current payment configuration must be `STRIPE_MODE=test` and `STATECOURSE_LIVE_PAYMENTS_ENABLED=false`. Test checkout also needs `STRIPE_SECRET_KEY_TEST` and `STRIPE_WEBHOOK_SECRET_TEST` in Netlify Functions. Merely choosing sandbox for an offering does not connect Stripe. The webhook route is https://statecourse.com/api/stripe/webhook.
 
+## Catalog coverage and registration
+
+Overview separates catalog states, catalog courses, database records, database states and courses actually open for free training. The Courses screen includes public-only entries and database-only services, with the connection status stated per row. The September 12 catalog contains 30 course records across 14 states; those figures do not claim completed learning delivery.
+
+Explicit identity links join Maine Sales Agent, Virginia Principles and Practices, and Texas Law of Agency to their existing database IDs while retaining the public IDs. A state mismatch never joins records. The global owner can register missing public real-estate course records from this screen. The server derives all values from the catalog, checks that the displayed missing-ID list is current, inserts with ignore-duplicates, and reads the records back. Existing rows are preserved; new records have no approval number and enrollment disabled. Registration creates neither a training decision nor payment configuration. Other roles and state-scoped owners cannot register the national catalog.
+
 ## Workspace
 
 - **Overview / Courses:** actual inventory, data availability, enrollment counts and per-course decisions. “Console video assets” counts database-managed assets; existing static video records are a different inventory. A registered lesson renderer alone does not prove a functioning enrollment and progress path.

@@ -34,26 +34,35 @@ function courseOptions(){return (data?.datasets.courses.rows||[]).map(c=>`<optio
 async function loadOverview(){
   data=await api('overview');
   const {courses,enrollments,videos,governance,tasks}=data.datasets;
+  const inventory=data.inventory?.summary||{};
+  const metric=value=>value==null?'Not verified':value;
   const count=(source,predicate=()=>true)=>source?.available&&!source.truncated?source.rows.filter(predicate).length:'Not verified';
   $('#overviewBody').innerHTML=`<div class="summary-grid">${[
-    ['Courses',count(courses),'coursesPanel'],['Active enrollments',count(enrollments,r=>r.status==='active'),'studentsPanel'],['Review / non-credit enrollments',count(enrollments,r=>r.status==='qa_non_credit'),'studentsPanel'],['Console video assets',count(videos),'videoPanel'],['Open tasks',count(tasks,r=>r.status!=='closed'),'tasksPanel']
+    ['Catalog states',metric(inventory.catalogStates),'coursesPanel'],['Catalog courses',metric(inventory.catalogCourses),'coursesPanel'],['Database records',count(courses),'coursesPanel'],['Database states',metric(inventory.databaseStates),'coursesPanel'],['Training available',metric(inventory.availableTraining),'coursesPanel'],['Active enrollments',count(enrollments,r=>r.status==='active'),'studentsPanel'],['Review / non-credit enrollments',count(enrollments,r=>r.status==='qa_non_credit'),'studentsPanel'],['Console video assets',count(videos),'videoPanel'],['Open tasks',count(tasks,r=>r.status!=='closed'),'tasksPanel']
   ].map(([name,value,target])=>`<button class="stat" type="button" data-work="navigate" data-target="${target}"><span>${name}</span><strong>${esc(value)}</strong></button>`).join('')}</div>
   <div class="overview-columns"><article class="card"><h3>Sources and availability</h3>${Object.entries(data.datasets).map(([key,source])=>`<p class="source-line"><span>${esc(words(key))}</span><strong class="${source.available&&!source.truncated?'agrees':'error'}">${source.available?(source.truncated?'Partial result':'Connected'):'Not verified'}</strong></p>`).join('')}</article>
   <article class="card"><h3>Training and payment decisions</h3><p>Approval, free access and payment mode are independent decisions for each offering.</p>${governance.available?`<p>${governance.rows.filter(g=>g.training_access_enabled).length} recorded offerings allow free training.</p><p>${governance.rows.filter(g=>g.live_charging_permitted).length} recorded offerings permit live charging. Site payment settings still apply.</p>`:unavailable('Offering decisions')}<button type="button" data-work="navigate" data-target="offeringsPanel">Open decisions</button></article></div>
-  <p class="note">Updated ${esc(when(data.checkedAt))}. Counts describe the accessible database records.</p>`;
+  <p class="note">Updated ${esc(when(data.checkedAt))}. Catalog totals describe published course records. Database totals include ${esc(metric(inventory.databaseServices))} service records. Training available counts courses with connected delivery and recorded free access; it is not an approval count.</p>`;
   renderCourses();renderStudents();renderTasks();
 }
 function renderCourses(){
-  const source=data.datasets.courses;if(!source.available){$('#courseList').innerHTML=unavailable('Courses');return;}
+  const source=data.datasets.courses;
+  const inventory=data.inventory;
+  if(!inventory&&!source.available){$('#courseList').innerHTML=unavailable('Courses');return;}
+  const all=inventory?.rows||source.rows.map(c=>({...c,databaseId:c.id,approval:c.approval_status,trainingStatus:c.trainingReadiness?.ready?'closed':'connection_incomplete'}));
   const search=$('#courseSearch').value.toLowerCase(),state=$('#courseState').value;
-  const oldState=state;
-  $('#courseState').innerHTML='<option value="">All states</option>'+[...new Set(source.rows.map(c=>c.state))].sort().map(s=>`<option>${esc(s)}</option>`).join('');$('#courseState').value=oldState;
-  const rows=source.rows.filter(c=>(!state||c.state===state)&&`${c.name} ${c.id}`.toLowerCase().includes(search));
-  $('#courseList').innerHTML=sourceNote(source)+table(['Course','State','Recorded approval','Training access','Payments',''],rows.map(c=>{
-    const g=data.datasets.governance.rows.find(g=>g.offering_id===c.id);
-    return [`<strong>${esc(c.name)}</strong><small>${esc(c.id)}</small>`,esc(c.state),esc(words(g?.approval_status||c.approval_status)),g?g.training_access_enabled?'Open':'Closed':data.datasets.governance.available?'No decision':'Not verified',esc(words(g?.payment_mode||'Not verified')),`<button type="button" data-work="course" data-id="${esc(c.id)}">Open course</button> <button type="button" data-work="course-decisions" data-id="${esc(c.id)}">Training &amp; payments</button>${c.trainingReadiness?.ready===false?`<small>Free training unavailable: ${esc(words(c.trainingReadiness.reason))}</small>`:''}`];
+  $('#courseState').innerHTML='<option value="">All states</option>'+[...new Set(all.map(c=>c.state))].sort().map(s=>`<option>${esc(s)}</option>`).join('');$('#courseState').value=state;
+  const labels={available:'Available for free training',closed:'Training closed',connection_incomplete:'Learning connection incomplete',registration_needed:'Database registration needed',not_verified:'Not verified',service:'Service / tool'};
+  const rows=all.filter(c=>(!state||c.state===state)&&`${c.name} ${c.id} ${c.publicId||''}`.toLowerCase().includes(search));
+  const pending=all.filter(c=>c.trainingStatus==='registration_needed');
+  const registration=isOwner()&&inventory?.publicAvailable&&inventory?.databaseAvailable&&pending.length?`<div class="card"><h3>Connect catalog records</h3><p>${pending.length} existing public courses have no database record. Registering them creates closed course records for administration. Learning access requires a connected course engine and a separate decision.</p><button type="button" data-work="register-catalog">Register ${pending.length} catalog courses</button></div>`:'';
+  const notice=inventory&&!inventory.publicAvailable?'<p class="message error">Public catalog unavailable. The list below is incomplete.</p>':'';
+  $('#courseList').innerHTML=notice+registration+sourceNote(source)+`<p>${rows.length} records shown. A catalog listing is separate from a connected learning course.</p>`+table(['Course','State','Course connection','Recorded approval','Payments',''],rows.map(c=>{
+    const actions=c.databaseId?`<button type="button" data-work="course" data-id="${esc(c.databaseId)}">Open course</button> <button type="button" data-work="course-decisions" data-id="${esc(c.databaseId)}">Training &amp; payments</button>`:/^\/[a-z0-9/_-]+\/$/i.test(c.route||'')?`<a href="${esc(c.route)}">Course page</a>`:'Registration pending';
+    return [`<strong>${esc(c.name)}</strong><small>${esc(c.id)}</small>${c.publicId&&c.publicId!==c.id?`<small>Public catalog: ${esc(c.publicId)}</small>`:''}`,esc(c.state),esc(labels[c.trainingStatus]||'Not verified'),esc(words(c.approval||'No recorded decision')),esc(words(c.paymentMode||'No recorded decision')),actions];
   }));
 }
+
 async function openCourse(id){
   const request=++courseRequest;++screenRequest;
   const result=await api('course',{course_id:id});if(request!==courseRequest)return;
@@ -153,6 +162,7 @@ document.addEventListener('click',async event=>{
   try{
     if(action==='navigate')panel(b.dataset.target);
     else if(action==='refresh')await loadOverview();
+    else if(action==='register-catalog'){b.disabled=true;try{const expectedIds=data.inventory.rows.filter(r=>r.trainingStatus==='registration_needed').map(r=>r.publicId);const result=await send('register_catalog',{expectedIds,note:'Register the existing public catalog courses for administration; retain closed enrollment and no regulatory approval.'});await loadOverview();message(`${result.verified} catalog courses verified in the database. Learning and payment decisions remain separate.`);}finally{b.disabled=false;}}
     else if(action==='course-decisions'){const course=data.datasets.courses.rows.find(c=>c.id===b.dataset.id);const governance=data.datasets.governance.rows.find(g=>g.offering_id===course?.id&&g.state===course.state);document.dispatchEvent(new CustomEvent('statecourse:offering',{detail:{course,governance}}));panel('offeringsPanel');}
     else if(action==='course')await openCourse(b.dataset.id);
     else if(action==='close-course')$('#courseWorkspace').hidden=true;

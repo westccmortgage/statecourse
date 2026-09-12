@@ -1,4 +1,5 @@
 import { trainingReadiness } from './training-readiness.mjs';
+import { courseInventory } from './course-inventory.mjs';
 import { dbRequest } from './db.mjs';
 import { getCourseConfiguration, getCourseDelivery, getCourseQuestion as getBlockQuestion } from '../../../config/course-registry.mjs';
 
@@ -84,7 +85,8 @@ export async function snapshot(staff) {
     if (!courses.available) datasets[name] = { available: false, rows: [], truncated: false };
     else if (courses.truncated) datasets[name].truncated = true;
   }
-  return { checkedAt: new Date().toISOString(), scopeStates: staff.scopeStates, datasets };
+  const inventory = await courseInventory(courses,datasets.governance,staff.scopeStates);
+  return { checkedAt: new Date().toISOString(), scopeStates: staff.scopeStates, datasets, inventory };
 }
 
 export function assessSnapshot(data, environment = {}) {
