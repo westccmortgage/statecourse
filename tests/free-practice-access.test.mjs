@@ -9,13 +9,15 @@ import {renderLessonMarkdown} from '../public/statecourse/student/course/blocks/
 const root=path.resolve(new URL('..',import.meta.url).pathname);
 const read=p=>fs.readFileSync(path.join(root,p),'utf8');
 const catalog=JSON.parse(read('public/statecourse/data/course-catalog.json'));
-const allCourses=catalog.categories.flatMap(c=>c.programs??[]).flatMap(p=>p.courses??[]);
+// Mortgage training is authenticated and must never enter this public answer-bearing export.
+const allCourses=catalog.categories.filter(c=>c.category_id==='real-estate').flatMap(c=>c.programs??[]).flatMap(p=>p.courses??[]);
 const manifest=JSON.parse(read('public/statecourse/data/free-practice-catalog.json'));
 const protectedText=/final-exam-form-[ab]-answer-key|##\s*Answer key|\bcorrectChoice\b|module-question-bank|final-exam-bank|instructor version and answer key|Items, with the material reference for each answer|__statecourse_private_export/i;
-test('all catalog courses have distinct explicit non-credit practice sources',()=>{
+test('all real-estate catalog courses have distinct explicit non-credit practice sources; mortgage is protected',()=>{
  assert.equal(manifest.schema_version,'2.0');
  assert.deepEqual(manifest.samples.map(s=>s.course_id).sort(),allCourses.map(c=>c.course_id).sort());
  assert.equal(new Set(manifest.samples.map(s=>s.practice_url)).size,allCourses.length);
+ assert.equal(manifest.samples.some(s=>s.course_id==='nmls-ce-2026-comprehensive-8'),false);
  assert.match(manifest.disclosure,/No enrollment.*licensing credit.*certificate.*final examination/i);
  for(const category of catalog.categories)for(const program of category.programs??[])for(const c of program.courses??[])assert.equal(c.state_id,program.state_code);
 });

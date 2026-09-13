@@ -67,7 +67,7 @@ test("a purchase still has to carry its checkout attempt", { concurrency: false 
 });
 
 test("free access writes no payment row, so the ledger stays a record of money", { concurrency: false }, async () => {
-  const endpoint = await readFile(new URL("../netlify/functions/enroll-training.mjs", import.meta.url), "utf8");
+  const endpoint = await readFile(new URL("../netlify/functions/_lib/enroll-training-handler.mjs", import.meta.url), "utf8");
   for (const forbidden of ["checkout_attempts", "payments", "stripe"]) {
     assert.equal(endpoint.includes(forbidden), false, `training enrolment must not touch ${forbidden}`);
   }
@@ -212,7 +212,7 @@ test("enabling one offering enables no other", { concurrency: false }, async () 
 });
 
 test("free training needs no checkout and is unaffected by payment mode", { concurrency: false }, async () => {
-  const endpoint = await readFile(new URL("../netlify/functions/enroll-training.mjs", import.meta.url), "utf8");
+  const endpoint = await readFile(new URL("../netlify/functions/_lib/enroll-training-handler.mjs", import.meta.url), "utf8");
   /* It consults training_access_enabled and nothing about payments. */
   assert.match(endpoint, /training_access_enabled !== true/);
   assert.equal(/payment_mode/.test(endpoint), false, "training must not consult payment mode");

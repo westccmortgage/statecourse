@@ -1,0 +1,14 @@
+{
+  "schema": "statecourse-nmls-ai-body-review-v1",
+  "reviewedOn": "2026-09-13",
+  "reviewerKind": "AI desk review",
+  "basis": "Root agent read all nineteen retained page bodies in full, including the separately retrieved middle/end of the marketing policy, and compared them with the source-register derivations.",
+  "manifestSha256": "1b104faae63a426eeff6b0d346a5ef8b63f4145d09ef64b6fdd4c4eaba897be0",
+  "registerSha256": "2842fe6241027b7769d3f20199cd8235df26eba70c55a3b685c63545ac98bb4c",
+  "sourceIds": ["INDEX", "SAFE", "STATE-APPROVAL", "PROVIDER", "COURSE", "SUCCESSIVE", "STATE-HUB", "CE-FAQ", "FINAL", "QUIZZES", "OSS-DESIGN", "OSS-TIME", "IDENTITY", "ROCS-REQUIREMENT", "BANKING", "RETENTION", "CERTIFICATE", "MARKETING", "ANNUAL-2026"],
+  "humanReviewed": false,
+  "legalSignoff": false,
+  "operationalAuthorityCreated": false,
+  "unresolvedOriginalArtifacts": ["ROCS-V4", "ROCS-FAQ"],
+  "limitation": "AI review is not independent human subject-matter or legal review. Original ROCS PDF bytes and visual page verification remain missing. Retained policy pages do not establish provider/course approval or authorize NMLS credit."
+}

@@ -2,6 +2,8 @@ import { trainingReadiness, verifiedTrainingReadiness } from './training-readine
 import { courseInventory } from './course-inventory.mjs';
 import { dbRequest } from './db.mjs';
 import { getCourseConfiguration, getCourseDelivery, getCourseQuestion as getBlockQuestion } from '../../../config/course-registry.mjs';
+import { NMLS_TRAINING_COURSE, isNmlsTrainingCourse } from '../../../config/nmls-course-identity.mjs';
+import { nmlsCurriculumSummary, nmlsTrainingProgress, buildNmlsReadiness } from './nmls-readiness.mjs';
 
 export function fail(message, statusCode = 400) { throw Object.assign(new Error(message), { statusCode }); }
 export const UUID = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
@@ -40,6 +42,14 @@ function idsFilter(field, ids) {
 }
 
 export function courseStructure(courseId) {
+  if (isNmlsTrainingCourse(courseId)) {
+    const curriculum = nmlsCurriculumSummary();
+    return { available: curriculum.available, readOnly: true, curriculum,
+      reason: curriculum.available ? null : curriculum.reason,
+      units: (curriculum.modules || []).map(module => ({ id: module.id, title: module.title, deliveryAvailable: true,
+        blocks: [{ id: module.id, title: module.title, screens: module.lessons.map(lesson => ({ id: lesson.id, title: lesson.title, type: 'nmls_lesson', provisionalMinutes: lesson.provisionalMinutes })) }] })),
+      rules: { mode: 'free_training', version: NMLS_TRAINING_COURSE.version, creditIssuanceAllowed: false, reportingEnabled: false, timing: 'Provisional training design; not verified CE attendance' } };
+  }
   const config = getCourseConfiguration(courseId);
   if (!config) return { available: false, reason: 'student_renderer_not_registered', units: [], rules: null };
   const units = config.assignments.map(a => {
@@ -86,7 +96,18 @@ export async function snapshot(staff) {
     else if (courses.truncated) datasets[name].truncated = true;
   }
   const inventory = await courseInventory(courses,datasets.governance,staff.scopeStates);
-  return { checkedAt: new Date().toISOString(), scopeStates: staff.scopeStates, datasets, inventory };
+  if ((!staff.scopeStates || staff.scopeStates.includes(NMLS_TRAINING_COURSE.state)) && ids.includes(NMLS_TRAINING_COURSE.id)) {
+    const course = encodeURIComponent(NMLS_TRAINING_COURSE.id);
+    const [definitions, attempts] = await Promise.all([
+      readRows(`nmls_training_definitions?course_id=eq.${course}&select=course_id,course_version,content_digest,definition_digest&limit=1001`),
+      readRows(`nmls_training_attempts?course_id=eq.${course}&select=enrollment_id,course_id,course_version,revision,runtime&limit=1001`),
+    ]);
+    datasets.nmlsDefinitions = definitions;
+    datasets.nmlsProgress = { available: attempts.available, truncated: attempts.truncated, rows: attempts.rows.map(nmlsTrainingProgress) };
+  }
+  const result = { checkedAt: new Date().toISOString(), scopeStates: staff.scopeStates, datasets, inventory };
+  if (!staff.scopeStates || staff.scopeStates.includes(NMLS_TRAINING_COURSE.state)) result.nmls = buildNmlsReadiness(result);
+  return result;
 }
 
 export function assessSnapshot(data, environment = {}) {
@@ -97,10 +118,20 @@ export function assessSnapshot(data, environment = {}) {
     if (source.truncated) add(`incomplete_${name}`, 'unverified', null, `${name}: only the most recent 1,000 rows were checked.`);
   }
   const mortgage=data.inventory?.verticals?.find(vertical=>vertical.id==='mortgage');
-  if (data.inventory?.publicAvailable && mortgage && mortgage.courseCount===0) {
+  if (data.nmls) {
+    for (const finding of data.nmls.findings) add(finding.code,
+      ['nmls_course_record_missing','nmls_training_definition_unverified','nmls_learning_connection_unverified','nmls_governance_unverified'].includes(finding.code) ? 'blocking' : 'attention',
+      NMLS_TRAINING_COURSE.id, finding.message);
+  } else if (data.inventory?.publicAvailable && mortgage && mortgage.courseCount===0) {
     add('nmls_course_record_missing','blocking',null,'Mortgage / NMLS has no published NMLS course record. Provider approval, course approval, enrollment and payments remain closed.');
   }
   for (const course of data.datasets.courses.rows) {
+    if (isNmlsTrainingCourse(course.id)) {
+      // Its versioned engine and exact database manifest are checked above;
+      // California/Texas block-renderer checks are not NMLS course requirements.
+      if (!data.nmls) add('nmls_readiness_unverified', 'blocking', course.id, 'The national training readiness record has not been inspected.');
+      continue;
+    }
     const structure = courseStructure(course.id);
     if (!structure.available) { if(course.approval_status==='not_regulated')continue;add('renderer_missing', 'blocking', course.id, 'No student block renderer is registered for this course.'); continue; }
     if (!course.name?.trim()) add('course_title_missing', 'blocking', course.id, 'Course title is empty.');

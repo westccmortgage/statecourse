@@ -185,6 +185,7 @@ async function loadStates() {
     const catalog = await catalogResponse.json();
     const catalogStateCodes = new Set(
       (catalog.categories || [])
+        .filter((category) => category.category_id === 'real-estate')
         .flatMap((category) => category.programs || [])
         .flatMap((program) => (program.courses || []).map((course) => course.state_id || program.state_code))
     );

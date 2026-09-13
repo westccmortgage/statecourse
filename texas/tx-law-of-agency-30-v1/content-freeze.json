@@ -1,9 +1,23 @@
 {
-  "freezeId": "LOA-CONTENT-FREEZE-2026-09-12-v18",
+  "freezeId": "LOA-CONTENT-FREEZE-2026-09-13-v19",
   "courseId": "tx-law-of-agency-30-v1",
   "approvalForm": "LOA-1 rev 09/11/2024",
-  "frozenOn": "2026-09-08",
+  "frozenOn": "2026-09-13",
   "breakHistory": [
+    {
+      "brokeFreeze": "LOA-CONTENT-FREEZE-2026-09-12-v18",
+      "on": "2026-09-13",
+      "module": "NONE — no Texas authored curriculum, question or answer key changed.",
+      "change": "The video dependency pointer moves to LOA-VIDEO-PLAN-FREEZE-2026-09-13-v15. Its shared Netlify packaging includes private NMLS inputs and removes duplicate student cache headers; the shared content overlay blocks edits to separately versioned read-only training sources.",
+      "reason": "These shared infrastructure files are already pinned render dependencies. Record the changed byte-state without claiming a new Texas video, changed lesson, NMLS approval, TREC approval or permission to collect live payments.",
+      "previousFreezeSha256": "07bfd0e6fad6717041f343b7429e0c723802870b77c99a2ca7555493a0bc5fa3",
+      "auditsReRun": [
+        "node scripts/validate-loa-video-packages.mjs",
+        "node scripts/freeze-loa-video-plan.mjs --write",
+        "node scripts/freeze-loa-curriculum.mjs --write",
+        "node --test tests/cloudflare-stream-security.test.mjs tests/texas-video-integration.test.mjs tests/texas-law-of-agency.test.mjs tests/video-portfolio.test.mjs"
+      ]
+    },
     {
       "brokeFreeze": "LOA-CONTENT-FREEZE-2026-09-12-v17",
       "on": "2026-09-12",
@@ -523,8 +537,8 @@
     },
     "Training runtime verification": {
       "path": "netlify/functions/_lib/training-readiness.mjs",
-      "sha256": "352cda7e5abdd95720b9c2cb42d525d8045c0cf53d3881632544acc37af36137",
-      "bytes": 1788
+      "sha256": "2c964cde9d7ed54f6c3cced76e79e48091fb8642d71059d2d8ec69b2d432a92e",
+      "bytes": 2630
     },
     "LOA-1 outline and 57-unit map": {
       "path": "config/texas/law-of-agency-course-form.mjs",
@@ -573,8 +587,8 @@
     },
     "video plan freeze (LOA-VIDEO-PLAN-FREEZE-2026-09-08-v8 — hashes the plan and every render and delivery dependency)": {
       "path": "texas/tx-law-of-agency-30-v1/video-plan-freeze.json",
-      "sha256": "2499d5c669ee7d0a4fb8ea4ffbebd6b849c3514f9a898c958b69c1db93f250cf",
-      "bytes": 29279
+      "sha256": "0de3a73d91f2b22011d4d81544c2f849d7b9e2cf495df056aae656676e832404",
+      "bytes": 29443
     }
   },
   "reproduce": [

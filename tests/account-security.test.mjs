@@ -35,6 +35,21 @@ test('current password is checked against the session email, not an email suppli
 test('different reauthenticated user is refused',async()=>mock(async calls=>{assert.equal((await account(request({action:'change',password:'new-long-password',currentPassword:'current'},'__Host-sc_access=valid-session'))).status,401);assert.equal(calls.some(x=>x.options.method==='PUT'),false);},call=>call.url.includes('/token')?Response.json({user:{id:'different-user'},access_token:'different-token'}):null));
 test('Google start sets HttpOnly PKCE verifier and fixed callback, not an arbitrary return URL',async()=>mock(async()=>{const r=await account(request({action:'google_start',destination:'https://attacker.test'}));assert.equal(r.status,200);const url=new URL((await r.json()).url);assert.equal(url.searchParams.get('redirect_to'),origin+'/student/sign-in/');assert.equal(url.searchParams.get('code_challenge_method'),'s256');assert.equal(url.searchParams.get('code_challenge').length,43);const cookies=r.headers.getSetCookie();assert.match(cookies[0],/HttpOnly; Secure; SameSite=Lax/);}));
 test('disabled Google provider does not produce a broken authorization redirect',async()=>mock(async()=>{const r=await account(request({action:'google_start'}));assert.equal(r.status,503);assert.equal((await r.json()).error,'google_not_configured');},()=>Response.json({external:{google:false}})));
+for(const google of [true,false,'true',null]){
+ test('public capabilities reports only verified provider availability: '+String(google),async()=>mock(async calls=>{
+  const r=await account(request({action:'capabilities'}));
+  assert.equal(r.status,200);assert.deepEqual(await r.json(),{providers:{google:google===true}});
+  assert.equal(r.headers.get('cache-control'),'no-store');assert.deepEqual(r.headers.getSetCookie(),[]);
+  assert.equal(calls.length,1);assert.ok(calls[0].url.endsWith('/auth/v1/settings'));assert.equal(calls[0].options.method,'GET');
+ },()=>Response.json({external:{google},jwt_secret:'must-not-leak',token:'must-not-leak',smtp_pass:'must-not-leak'})));
+}
+test('unavailable Auth settings cannot falsely enable Google or expose upstream errors',async()=>mock(async calls=>{
+ const r=await account(request({action:'capabilities'}));assert.equal(r.status,503);
+ assert.deepEqual(await r.json(),{error:'account_service_unavailable'});assert.deepEqual(r.headers.getSetCookie(),[]);assert.equal(calls.length,1);
+},()=>Response.json({message:'private-upstream-secret'},{status:503})));
+test('capabilities rejects foreign origins before querying Auth',async()=>mock(async calls=>{
+ assert.equal((await account(request({action:'capabilities'},'','https://other.test'))).status,403);assert.equal(calls.length,0);
+}));
 test('OAuth code without browser verifier cannot establish a session',async()=>mock(async calls=>{assert.equal((await account(request({action:'google_finish',code:'stolen-code'}))).status,401);assert.equal(calls.length,0);}));
 test('OAuth exchange verifies the user and returns only HttpOnly session cookies, never staff roles',async()=>mock(async calls=>{const verifier='a'.repeat(43);const r=await account(request({action:'google_finish',code:'valid-code'},'__Host-sc_pkce='+verifier));assert.equal(r.status,200);assert.equal(calls[0].body.code_verifier,verifier);assert.ok(calls.some(x=>x.url.endsWith('/user')));assert.deepEqual(await r.json(),{ok:true});assert.ok(r.headers.getSetCookie().some(x=>x.startsWith('__Host-sc_access=')&&x.includes('HttpOnly; Secure')));}));
 test('rate limit remains a rate limit',async()=>mock(async()=>{assert.equal((await account(request({action:'forgot',email:user.email}))).status,429);},()=>Response.json({},{status:429})));
@@ -46,6 +61,43 @@ test('recovery callback removes the original token URL and forwards before norma
  vm.runInNewContext(readFileSync(new URL('../public/statecourse/student/auth-entry.js',import.meta.url),'utf8'),{URLSearchParams,document:doc,location:{hash:fragment,search:'',pathname:'/student/sign-in/',replace:path=>actions.push(['navigate',path])},history:{replaceState:(_,__,path)=>actions.push(['clean',path])}});
  assert.equal(doc.documentElement.dataset.authCallback,'true');
  assert.deepEqual(actions,[['clean','/student/sign-in/'],['navigate','/student/password/'+fragment]]);
+});
+async function googleUI({google=true,unavailable=false,search='',hash=''}={}){
+ const actions=[],calls=[],handlers={},button={hidden:true,disabled:true,addEventListener:(name,fn)=>{handlers[name]=fn;}},message={textContent:''};let loaded;
+ const location={hash,search,pathname:'/student/sign-in/',replace:path=>actions.push(['navigate',path]),assign:path=>actions.push(['assign',path])};
+ const doc={documentElement:{dataset:{}},getElementById:id=>id==='googleSignIn'?button:message,addEventListener:(name,fn)=>{if(name==='DOMContentLoaded')loaded=fn;}};
+ vm.runInNewContext(readFileSync(new URL('../public/statecourse/student/auth-entry.js',import.meta.url),'utf8'),{
+  URLSearchParams,document:doc,location,history:{replaceState:(_,__,path)=>actions.push(['clean',path])},
+  fetch:async(url,options)=>{
+   const body=JSON.parse(options.body);calls.push({url,body});
+   if(body.action==='google_finish')return{ok:true,json:async()=>({ok:true})};
+   if(unavailable)throw new Error('private-network-failure');
+   return{ok:true,json:async()=>({providers:{google}})};
+  }
+ });
+ if(loaded)await loaded();return{button,message,calls,actions,handlers};
+}
+test('both public sign-in surfaces keep Google hidden until settings are checked',()=>{
+ for(const file of ['student/sign-in/index.html','admin/console/index.html']){
+  const html=readFileSync(new URL('../public/statecourse/'+file,import.meta.url),'utf8');
+  assert.match(html,/<button id="googleSignIn"[^>]*hidden[^>]*disabled/);
+ }
+});
+test('Google appears only after confirmed provider availability',async()=>{
+ const result=await googleUI();assert.equal(result.button.hidden,false);assert.equal(result.button.disabled,false);assert.equal(typeof result.handlers.click,'function');
+ assert.deepEqual(result.calls,[{url:'/api/student/account',body:{action:'capabilities'}}]);
+});
+for(const options of [{google:false},{google:'true'},{unavailable:true}]){
+ test('disabled or unverifiable Google is never offered: '+JSON.stringify(options),async()=>{
+  const result=await googleUI(options);assert.equal(result.button.hidden,true);assert.equal(result.button.disabled,true);assert.equal(result.handlers.click,undefined);
+  assert.equal(result.calls.length,1);assert.equal(result.message.textContent,'');assert.deepEqual(result.actions,[]);
+ });
+}
+test('OAuth callback clears its code URL and does not mix callback secrets into capability requests',async()=>{
+ const result=await googleUI({search:'?code=synthetic-callback-code'});
+ assert.deepEqual(result.actions,[['clean','/student/sign-in/'],['navigate','/student/']]);
+ assert.deepEqual(result.calls,[{url:'/api/student/account',body:{action:'google_finish',code:'synthetic-callback-code'}}]);
+ assert.equal(result.button.hidden,true);
 });
 async function passwordUI(mismatch=false){
  const elements=new Map(), calls=[];let submit;

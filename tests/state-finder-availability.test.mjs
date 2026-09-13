@@ -13,6 +13,7 @@ test("state finder keeps built states usable and disables future states", async 
 
   assert.match(script, /state\.public_status === "Approved"/);
   assert.match(script, /catalogStateCodes\.has\(state\.state_code\)/);
+  assert.match(script, /filter\(\(category\) => category\.category_id === 'real-estate'\)/);
   assert.match(script, /option\.disabled = access === "coming"/);
   assert.match(script, /In development · Free practice/);
   assert.match(script, /No payment, enrollment, licensing credit, or certificate/);
@@ -30,6 +31,7 @@ test("only catalog-backed or approved jurisdictions are selectable", async () =>
   const catalog = JSON.parse(await read("public/statecourse/data/course-catalog.json"));
   const catalogStateCodes = new Set(
     catalog.categories
+      .filter((category) => category.category_id === 'real-estate')
       .flatMap((category) => category.programs ?? [])
       .flatMap((program) => (program.courses ?? []).map((course) => course.state_id || program.state_code))
   );

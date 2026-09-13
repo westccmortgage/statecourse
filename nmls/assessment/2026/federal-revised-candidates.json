@@ -1,0 +1,1182 @@
+{
+  "schema": "statecourse-nmls-final-authoring-v1",
+  "year": 2026,
+  "category": "federal",
+  "items": [
+    {
+      "id": "N26-FIN-F01",
+      "category": "federal",
+      "moduleId": "F01",
+      "objective": "Apply separate Regulation B and TRID application tests to actual intake procedures; annual topics 2 and 5.",
+      "stem": "A creditor regularly accepts oral mortgage requests and makes decisions from them, although its manual still calls for a signed form. An applicant orally requests a covered consumer mortgage and supplies all six TRID items, which the creditor records. Documents the creditor regularly considers for the credit decision remain outstanding. Which status assignment is supported?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Regulation B: inquiry; TRID: no application and no initial LE duty."
+        },
+        {
+          "id": "B",
+          "text": "Regulation B: complete application; TRID: application and initial LE duty."
+        },
+        {
+          "id": "C",
+          "text": "Regulation B: incomplete application; TRID: application and initial LE duty."
+        },
+        {
+          "id": "D",
+          "text": "Regulation B: incomplete application; TRID: no application or initial LE duty."
+        }
+      ],
+      "correctChoice": "C",
+      "rationale": "Actual oral-intake practices establish the Regulation B application. Its completion test includes information regularly considered for the decision; the separate six-item TRID test has already been met.",
+      "distractorRationales": {
+        "A": "The creditor's actual oral-intake practices establish a Regulation B application; the recorded six-item submission also satisfies TRID.",
+        "B": "TRID's six items do not establish completion under Regulation B's separate test.",
+        "D": "The recorded six-item submission satisfies TRID; outstanding verification does not defer the initial LE requirement."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1002/2/#f",
+          "locator": "§1002.2(f); comments 2(f)-2 and -6",
+          "supports": "Actual procedures, completion, and diligence.",
+          "checkedOn": "2026-09-11"
+        },
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/2/#a-3-ii",
+          "locator": "§1026.2(a)(3)(ii)",
+          "supports": "Six-item TRID application.",
+          "checkedOn": "2026-09-11"
+        },
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/19/#e-2-iii",
+          "locator": "§1026.19(e)(1)(iii)(A), (e)(2)(iii)",
+          "supports": "Initial LE duty and prohibition on conditioning it on verification.",
+          "checkedOn": "2026-09-11"
+        }
+      ],
+      "remediation": {
+        "unitIds": [
+          "F01-U01",
+          "F01-U02"
+        ],
+        "focus": "Separate application status, decision completeness, and the LE trigger."
+      },
+      "independenceNote": "Requires simultaneous classification of a recorded oral submission where accepted practices conflict with a signed-form manual. The formative personalized-decline and late-LOS cases do not test this two-status assignment."
+    },
+    {
+      "id": "N26-FIN-F02",
+      "category": "federal",
+      "moduleId": "F01",
+      "objective": "Select the action-notice clock after a timely response completes an application; annual topic 1.",
+      "stem": "A creditor timely sends a compliant written incompleteness notice for an ordinary consumer mortgage application, allowing a reasonable response period. The applicant supplies every requested item before that period expires, and the creditor now has all information it regularly considers. No decision has yet been made. What should the notice workflow do?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Track action notification within 30 days after the application became complete."
+        },
+        {
+          "id": "B",
+          "text": "Close the file without action notification when the original response period expires."
+        },
+        {
+          "id": "C",
+          "text": "Allow 90 days from the incompleteness notice to notify the applicant of action."
+        },
+        {
+          "id": "D",
+          "text": "Require a new application because an incompleteness notice has already been issued."
+        }
+      ],
+      "correctChoice": "A",
+      "rationale": "A timely, complete response returns the application to the action-notice requirements in §1002.9(a); notification is due within 30 days after completion.",
+      "distractorRationales": {
+        "B": "The no-further-obligation treatment applies when the applicant fails to respond within the designated period, not when the applicant completes the file in time.",
+        "C": "The 90-day rule concerns an unaccepted counteroffer, not completion following an incompleteness notice.",
+        "D": "The stated timely response supplies no basis to require reapplication under the late-response interpretation."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1002/9/#c-2",
+          "locator": "§1002.9(c)(2); §1002.9(a)(1)(i)",
+          "supports": "Timely submission of requested information and completed-application notification.",
+          "checkedOn": "2026-09-11"
+        }
+      ],
+      "remediation": {
+        "unitIds": [
+          "F01-U03"
+        ],
+        "focus": "Distinguish timely completion from nonresponse after an incompleteness notice."
+      },
+      "independenceNote": "Tests the timely-response branch, which the formative bank’s expired-notice and unsuccessful-oral-request cases do not test."
+    },
+    {
+      "id": "N26-FIN-F03",
+      "category": "federal",
+      "moduleId": "F01",
+      "objective": "Evaluate whether an unaccepted counteroffer needs an additional adverse-action notice; annual topic 1.",
+      "stem": "A consumer-credit notice review finds a timely counteroffer packet that included an adverse-action notice satisfying §1002.9(a)(2). The applicant never accepted or used the offered credit. The packet and delivery evidence are preserved. The review system flags the absence of a separate notice at day 90. Which disposition is appropriate for this flag?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Keep the alert; an unaccepted counteroffer always needs another notice."
+        },
+        {
+          "id": "B",
+          "text": "Close the alert by recording the applicant as expressly withdrawn."
+        },
+        {
+          "id": "C",
+          "text": "Keep the alert until the counteroffer has remained open 90 days."
+        },
+        {
+          "id": "D",
+          "text": "Close the alert after verifying the compliant combined notice packet."
+        }
+      ],
+      "correctChoice": "D",
+      "rationale": "A compliant combined counteroffer and adverse-action notice eliminates the need for a second adverse-action notice if the counteroffer is not accepted. Retention duties continue.",
+      "distractorRationales": {
+        "A": "The official interpretation expressly permits the compliant combined-notice alternative.",
+        "B": "Silence is not an express withdrawal, and a fictional withdrawal is unnecessary to apply the combined-notice rule.",
+        "C": "The notification provision does not require keeping the offer available for 90 days."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1002/9/#Interp-9-a-1",
+          "locator": "Comment 9(a)(1)-6; §1002.9(a)(1)(iv)",
+          "supports": "Combined-notice alternative to a later adverse-action notice.",
+          "checkedOn": "2026-09-11"
+        }
+      ],
+      "remediation": {
+        "unitIds": [
+          "F01-U03"
+        ],
+        "focus": "Verify the contents of a combined notice before treating a later-notice alert as a violation."
+      },
+      "independenceNote": "Adds an already-compliant combined packet and asks for disposition of a false-positive review alert. The formative counteroffer case expressly lacks a combined notice."
+    },
+    {
+      "id": "N26-FIN-F04",
+      "category": "federal",
+      "moduleId": "F01",
+      "objective": "Respond to a timely request for actual adverse-action reasons; annual topic 3.",
+      "stem": "A creditor that received more than 150 applications in the preceding calendar year sends a compliant consumer adverse-action notice using the right-to-reasons alternative. It receives the applicant’s request for specific reasons 50 days after the notice. Its service desk proposes closing the request because its internal appeal period is 30 days. What is required?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Decline the request because more than 30 days have passed since the original notice."
+        },
+        {
+          "id": "B",
+          "text": "Provide the specific principal reasons within 30 days after receiving the timely request."
+        },
+        {
+          "id": "C",
+          "text": "Provide reasons only if the applicant submits a new mortgage application."
+        },
+        {
+          "id": "D",
+          "text": "Wait until 90 days after the original notice because a later explanation is a counteroffer follow-up."
+        }
+      ],
+      "correctChoice": "B",
+      "rationale": "The right-to-reasons alternative allows a request within 60 days of notification and requires the creditor to provide the reasons within 30 days after the request. An internal appeal limit cannot shorten that right.",
+      "distractorRationales": {
+        "A": "Thirty days measures the response period after a timely reasons request; the applicant has 60 days to request reasons.",
+        "C": "The right arises from the original adverse-action notice and does not depend on a new application.",
+        "D": "No counteroffer is involved, and its separate 90-day provision does not govern a reasons request."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1002/9/#a-2-ii",
+          "locator": "§1002.9(a)(2)(ii), (b)(2)",
+          "supports": "Request period, response deadline, and specific principal reasons.",
+          "checkedOn": "2026-09-11"
+        }
+      ],
+      "remediation": {
+        "unitIds": [
+          "F01-U04"
+        ],
+        "focus": "Keep the applicant’s 60-day request period separate from the creditor’s 30-day response period."
+      },
+      "independenceNote": "Tests a rights-request service workflow and two different deadlines, neither of which is the decision-reason substitution tested by the formative bank."
+    },
+    {
+      "id": "N26-FIN-F05",
+      "category": "federal",
+      "moduleId": "F01",
+      "objective": "Identify the actual reason source when a passed scoring stage is followed by a judgmental denial; annual topic 3.",
+      "stem": "A completed consumer mortgage application passes the creditor's credit-scoring stage. A later judgmental review denies it solely because verified liquid reserves are below the program's documented requirement. No input error or other denial reason is present. The notice system offers a scorecard-factor list and the judgmental decision record. Which source should supply this denial's ECOA principal reasons?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The scorecard factors, because the automated stage reviewed the application first."
+        },
+        {
+          "id": "B",
+          "text": "The judgmental factors, because that stage produced the actual credit denial."
+        },
+        {
+          "id": "C",
+          "text": "Both stages' factors, because both participated in evaluating the same application."
+        },
+        {
+          "id": "D",
+          "text": "Neither stage's factors, because a program-policy reference sufficiently explains the denial."
+        }
+      ],
+      "correctChoice": "B",
+      "rationale": "The denial arose in the judgmental stage, so its actual principal factors supply the reasons. Passing the scoring stage does not make its score factors denial reasons. The stated reserve standard is a program assumption, not a universal federal minimum.",
+      "distractorRationales": {
+        "A": "Processing order does not make the passing scorecard the source of this later denial.",
+        "C": "Participation in evaluation does not make every component a denial basis. The scoring stage passed; the stipulated denial arose solely in judgmental review.",
+        "D": "A generic program-policy reference does not identify the actual principal factor."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1002/9/#Interp-9-b-2",
+          "locator": "§1002.9(b)(2); comments 9(b)(2)-2, -6, -7, and -9",
+          "supports": "Reasons must reflect actual principal factors; when scoring passes and subsequent judgmental review denies, reasons come from that judgmental component. Credit-score factors are not substitutes for ECOA reasons.",
+          "checkedOn": "2026-09-11"
+        }
+      ],
+      "remediation": {
+        "unitIds": [
+          "F01-U04"
+        ],
+        "focus": "Trace the actual denial to the decision record rather than automatically importing credit-score factors."
+      },
+      "independenceNote": "Replaces the duplicate-debt reevaluation scenario entirely. This case requires choosing between two sequential evaluation components after a successful scoring stage, not repairing an erroneous calculation or rewriting the formative debt-ratio reason. It applies F01-U04's taught actual-principal-factor and score-factor distinction; it does not test the unintroduced gray-band combined-system branch."
+    },
+    {
+      "id": "N26-FIN-F06",
+      "category": "federal",
+      "moduleId": "F01",
+      "objective": "Evaluate whether electronic retention can reproduce historical action notices; annual topic 4.",
+      "stem": "During a record-system migration, a creditor proposes retaining each denied consumer application’s decision date and reason code but deleting the rendered notice. Its replacement system would regenerate the notice with today’s template and today’s applicant data. Testing shows that it cannot reproduce the original reason wording or agency information. What is the supported retention decision?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Approve regeneration from current templates because only the decision date must survive."
+        },
+        {
+          "id": "B",
+          "text": "Retain the credit report instead because it records the evaluation used for denial."
+        },
+        {
+          "id": "C",
+          "text": "Convert every notice to paper because electronic storage cannot satisfy Regulation B."
+        },
+        {
+          "id": "D",
+          "text": "Preserve accurate historical notices in paper or electronic records that reproduce their pertinent information."
+        }
+      ],
+      "correctChoice": "D",
+      "rationale": "Electronic storage is permitted, but the system must accurately retrieve the pertinent historical information. A current template that changes what the applicant was told does not meet that condition.",
+      "distractorRationales": {
+        "A": "The demonstrated reconstruction failure means the replacement is not an accurate record of the original notification.",
+        "B": "A credit report does not preserve the notice, its reasons, or its required contents.",
+        "C": "The rule permits accurate computer storage and reproduction; it does not require paper originals."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1002/12/#Interp-12-b",
+          "locator": "§1002.12(b)(1); comment 12(b)-1",
+          "supports": "Required records and accurate electronic retrieval.",
+          "checkedOn": "2026-09-11"
+        }
+      ],
+      "remediation": {
+        "unitIds": [
+          "F01-U05"
+        ],
+        "focus": "Distinguish electronic storage from accurate reproduction of the historical record."
+      },
+      "independenceNote": "Tests a migration acceptance decision and loss of historical content rather than the formative question’s ordinary 25-month starting date."
+    },
+    {
+      "id": "N26-FIN-F07",
+      "category": "federal",
+      "moduleId": "F01",
+      "objective": "Apply an investigation hold to otherwise aging consumer application records; annual topic 4.",
+      "stem": "A creditor's ordinary 25-month retention period has elapsed for a group of denied consumer applications. Before scheduled deletion, the creditor receives actual notice that it is under investigation by its federal ECOA enforcement agency for alleged ECOA violations concerning those files. No agency or court has authorized earlier disposal, and the investigation remains open. Which action is required under Regulation B?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Suspend deletion and retain the covered information until final disposition."
+        },
+        {
+          "id": "B",
+          "text": "Complete deletion because the ordinary retention period has already expired."
+        },
+        {
+          "id": "C",
+          "text": "Keep the notices but discard the underlying application and evaluation information."
+        },
+        {
+          "id": "D",
+          "text": "Restart retention for 25 months regardless of the investigation's later status."
+        }
+      ],
+      "correctChoice": "A",
+      "rationale": "Actual notice of a qualifying investigation extends retention beyond the ordinary period until final disposition, unless an agency or court order allows an earlier time.",
+      "distractorRationales": {
+        "B": "The investigation provision overrides disposal based solely on elapsed ordinary retention.",
+        "C": "The extended duty applies to the information covered by the rule, not only the notice page.",
+        "D": "Final disposition or an authorized earlier time governs; another fixed 25-month timer is not the rule."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1002/12/#b-4",
+          "locator": "§1002.12(b)(4)",
+          "supports": "Extended retention during a qualifying investigation or proceeding.",
+          "checkedOn": "2026-09-11"
+        }
+      ],
+      "remediation": {
+        "unitIds": [
+          "F01-U05"
+        ],
+        "focus": "Apply investigation holds before using the ordinary record-disposal schedule."
+      },
+      "independenceNote": "Tests actual notice that the creditor is under investigation after ordinary retention has elapsed, rather than calculating the formative ordinary retention anchor. A separate ethics candidate, E07 in the original bank, duplicates this decision and must be replaced or excluded from shared attempts before the integrated pool is treated as independent."
+    },
+    {
+      "id": "N26-FIN-F08",
+      "category": "federal",
+      "moduleId": "F01",
+      "objective": "Allocate initial LE responsibility when a mortgage broker provides disclosures; annual topic 5.",
+      "stem": "A mortgage broker receives an application for a covered consumer mortgage and agrees to provide the initial LE for the creditor. The creditor’s transfer checklist would mark the LE duty complete merely when that agreement is signed. Neither party has yet checked whether the LE was actually delivered or mailed on time. Which checklist change best implements the rule?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Complete the checklist when the broker signs the agreement accepting disclosure responsibility."
+        },
+        {
+          "id": "B",
+          "text": "Reopen the checklist only when the creditor finishes underwriting the broker's application."
+        },
+        {
+          "id": "C",
+          "text": "Verify application timing and actual LE provision before completing the creditor's checklist."
+        },
+        {
+          "id": "D",
+          "text": "Require the creditor to reissue every broker-provided LE before completing the checklist."
+        }
+      ],
+      "correctChoice": "C",
+      "rationale": "Either the creditor or broker may provide the initial LE, but the creditor must ensure compliance. A promise to perform the task is not evidence that the required disclosure was provided correctly and on time.",
+      "distractorRationales": {
+        "A": "The creditor remains responsible for ensuring compliant broker-provided disclosures.",
+        "B": "Underwriting completion does not replace the covered application’s initial disclosure trigger.",
+        "D": "The broker may provide the LE. The creditor must ensure compliance, but the rule does not require automatic reissuance of every compliant broker-provided LE."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/19/#e-1-ii",
+          "locator": "§1026.19(e)(1)(ii)(A); comments 19(e)(1)(ii)-1 and -2; §1026.19(e)(1)(iii)(A)",
+          "supports": "Broker provision, creditor responsibility, and initial timing.",
+          "checkedOn": "2026-09-11"
+        }
+      ],
+      "remediation": {
+        "unitIds": [
+          "F01-U02"
+        ],
+        "focus": "Verify actual disclosure provision when the broker performs the task."
+      },
+      "independenceNote": "Tests evidence of performance at a broker-to-creditor responsibility handoff, not a revised date in the formative late-entry case. The checklist is a proposed control for the creditor's continuing duty, not a prescribed federal software design."
+    },
+    {
+      "id": "N26-FIN-F09",
+      "category": "federal",
+      "moduleId": "F02",
+      "objective": "Classify a genuine recording fee by the actual service and retained payment; annual topic 6.",
+      "stem": "A creditor advances the county’s $180 recording fee and later collects exactly $180 from the consumer as reimbursement. The county ultimately receives the entire fee; there is no creditor markup or additional service. The fee worksheet classifies it as zero tolerance solely because the consumer reimburses the creditor. Which classification is supported?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Use zero tolerance because the creditor retains the consumer's reimbursement after settlement."
+        },
+        {
+          "id": "B",
+          "text": "Use permitted variations because the county, rather than a private vendor, imposes it."
+        },
+        {
+          "id": "C",
+          "text": "Use a separate ten-percent ceiling because each recording fee is tested individually."
+        },
+        {
+          "id": "D",
+          "text": "Use the ten-percent aggregate category because this remains a genuine recording fee."
+        }
+      ],
+      "correctChoice": "D",
+      "rationale": "The service is a recording fee, which belongs in the specified aggregate. A reimbursement for an amount previously paid to another party is not treated as a fee paid to the creditor merely because it retains the reimbursement.",
+      "distractorRationales": {
+        "A": "The commentary distinguishes reimbursement of a prior third-party payment from compensation retained for the creditor’s own service.",
+        "B": "Recording fees have express ten-percent aggregate treatment; government status alone does not place them in permitted variations.",
+        "C": "The test applies to the qualifying aggregate, not an individual recording-fee cap."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/19/#Interp-19-e-3-i",
+          "locator": "Comment 19(e)(3)(i)-3; §1026.19(e)(3)(ii); comments 19(e)(3)(ii)-1, -2, and -4",
+          "supports": "Prior-payment reimbursement is not creditor compensation for this classification; recording fees are tested in the specified ten-percent aggregate.",
+          "checkedOn": "2026-09-11"
+        }
+      ],
+      "remediation": {
+        "unitIds": [
+          "F02-U01",
+          "F02-U02"
+        ],
+        "focus": "Classify the underlying service and payment retention before applying a tolerance."
+      },
+      "independenceNote": "Tests creditor reimbursement of a county advance. The formative affiliation and missing-list cases do not address the difference between reimbursement and creditor compensation."
+    },
+    {
+      "id": "N26-FIN-F10",
+      "category": "federal",
+      "moduleId": "F02",
+      "objective": "Distinguish real permission to shop from a restricted provider menu; annual topics 6 and 7.",
+      "stem": "For a required settlement service, a creditor provides three unaffiliated vendors and refuses to accept any other provider, even one with the same license and qualifications. Staff call this shopping because the consumer can choose among the three. No permitted-variation exception or valid baseline revision applies. How should the reviewer treat the fee?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Apply ten-percent aggregate treatment because three listed choices constitute permitted shopping."
+        },
+        {
+          "id": "B",
+          "text": "Apply zero tolerance because the exclusive menu does not permit shopping."
+        },
+        {
+          "id": "C",
+          "text": "Apply permitted variations because the entire provider menu consists of unaffiliated vendors."
+        },
+        {
+          "id": "D",
+          "text": "Apply ten-percent aggregate treatment if the consumer accepts the menu in writing."
+        }
+      ],
+      "correctChoice": "B",
+      "rationale": "Requiring exclusive selection from the creditor’s list is not permission to shop. On the stipulated facts, the required service is therefore subject to the general rule rather than the shoppable-service exception.",
+      "distractorRationales": {
+        "A": "Multiple options within an exclusive list do not establish the required permission to choose a different provider.",
+        "C": "Unaffiliated status alone does not authorize permitted-variation treatment for a required nonshoppable service.",
+        "D": "Acknowledging the restriction does not turn it into genuine permission to shop."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/19/#e-1-vi",
+          "locator": "§1026.19(e)(1)(vi)(A); comment 19(e)(1)(vi)-1; §1026.19(e)(3)(i)",
+          "supports": "Permission to shop and the general rule for required nonshoppable services.",
+          "checkedOn": "2026-09-11"
+        }
+      ],
+      "remediation": {
+        "unitIds": [
+          "F02-U01",
+          "F02-U03"
+        ],
+        "focus": "Evaluate the consumer’s actual provider choice before selecting the tolerance rule."
+      },
+      "independenceNote": "Introduces an exclusive vendor menu whose apparent choice fails the shopping test; it is not the formative affiliated-provider or missing-written-list fact pattern."
+    },
+    {
+      "id": "N26-FIN-F11",
+      "category": "federal",
+      "moduleId": "F02",
+      "objective": "Apply the aggregate treatment to an omitted individual qualifying charge; annual topic 6.",
+      "stem": "A final fee review identifies a $50 notary charge omitted from the LE. The reviewer confirms that it belongs in the ten-percent aggregate category. The valid estimated aggregate was $1,000; all estimated services were performed. Actual charges in that category are $1,030 before adding the $50 notary charge. No baseline revision applies. What is the aggregate-tolerance result?",
+      "options": [
+        {
+          "id": "A",
+          "text": "$1,080 actual aggregate; $0 excess."
+        },
+        {
+          "id": "B",
+          "text": "$1,080 actual aggregate; $50 excess."
+        },
+        {
+          "id": "C",
+          "text": "$1,080 actual aggregate; $80 excess."
+        },
+        {
+          "id": "D",
+          "text": "$1,030 actual aggregate; $0 excess."
+        }
+      ],
+      "correctChoice": "A",
+      "rationale": "Include the omitted qualifying charge in the actual total: $1,030 + $50 = $1,080. That is below the $1,000 × 1.10 ceiling. The commentary applies the aggregate test even when an individual qualifying charge was omitted; this calculation does not validate disclosure practices generally.",
+      "distractorRationales": {
+        "B": "This treats the omitted $50 fee as independently zero tolerance, contrary to its stipulated aggregate classification.",
+        "C": "This refunds every dollar over the estimate instead of applying the stipulated ten-percent aggregate allowance.",
+        "D": "The omitted but actually charged $50 notary fee must be included in the actual aggregate."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/19/#Interp-19-e-3-ii",
+          "locator": "Comment 19(e)(3)(ii)-2, including -2.ii",
+          "supports": "Aggregate analysis of an omitted individual qualifying charge.",
+          "checkedOn": "2026-09-11"
+        }
+      ],
+      "remediation": {
+        "unitIds": [
+          "F02-U02"
+        ],
+        "focus": "Include omitted qualifying charges in the actual aggregate without creating an individual cap."
+      },
+      "independenceNote": "Tests an omitted actual charge, not the formative removal of an estimated service never performed or a known fee’s percentage increase."
+    },
+    {
+      "id": "N26-FIN-F12",
+      "category": "federal",
+      "moduleId": "F02",
+      "objective": "Reconcile total lender credits across general and specific payments; annual topics 6 and 7.",
+      "stem": "The applicable LE discloses $700 in total lender credits. At closing, the CD and verified payment records show $300 in general lender credits and $400 actually paid by the creditor for a specific disclosed loan cost. Those amounts do not overlap, and no other credit, fee, or baseline issue is present. A reviewer flags a $400 shortfall after comparing only the general-credit line with the LE. What should the reviewer conclude?",
+      "options": [
+        {
+          "id": "A",
+          "text": "$300 actual credits; $400 shortfall."
+        },
+        {
+          "id": "B",
+          "text": "$400 actual credits; $300 shortfall."
+        },
+        {
+          "id": "C",
+          "text": "$700 actual credits; $0 shortfall."
+        },
+        {
+          "id": "D",
+          "text": "$0 actual credits; $700 shortfall."
+        }
+      ],
+      "correctChoice": "C",
+      "rationale": "The good-faith comparison uses total lender credits actually provided, including general credits and creditor payments attributable to specific disclosed costs. Here $300 + $400 equals the $700 estimate.",
+      "distractorRationales": {
+        "A": "Counting only the general credit excludes the verified specific-cost payment.",
+        "B": "Counting only the specific-cost payment excludes the verified general credit.",
+        "D": "Both nonoverlapping amounts were actually provided and count toward total lender credits."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/19/#Interp-19-e-3-i",
+          "locator": "Comments 19(e)(3)(i)-5 and -6",
+          "supports": "Total lender credits include general credits and specified creditor payments for individual costs.",
+          "checkedOn": "2026-09-11"
+        }
+      ],
+      "remediation": {
+        "unitIds": [
+          "F02-U03"
+        ],
+        "focus": "Compare the promised credit with the full actual total, using evidence of nonoverlapping payments."
+      },
+      "independenceNote": "Tests a false shortfall caused by reading only one CD line, whereas the formative credit case has a genuine reduction in the total credit."
+    },
+    {
+      "id": "N26-FIN-F13",
+      "category": "federal",
+      "moduleId": "F02",
+      "objective": "Reject a revision based solely on information that completes a voluntarily early six-item application; annual topic 8.",
+      "stem": "A creditor voluntarily sends an LE while the consumer is still selecting a property and has not supplied a property address. When the consumer later supplies the address, the creditor learns that an ordinary required service costs more in that location. Its only proposed revision reason is receipt of the previously missing address; no separate qualifying event is identified. May that reason alone establish a changed-circumstance baseline reset?",
+      "options": [
+        {
+          "id": "A",
+          "text": "No; later receipt of that missing application item does not qualify."
+        },
+        {
+          "id": "B",
+          "text": "Yes; receiving any information after disclosure establishes a qualifying changed circumstance."
+        },
+        {
+          "id": "C",
+          "text": "Yes; completing the six-item application permits resetting every estimated settlement charge."
+        },
+        {
+          "id": "D",
+          "text": "No; an early LE cannot establish a baseline for any comparison."
+        }
+      ],
+      "correctChoice": "A",
+      "rationale": "The specific interpretation prevents a creditor from treating receipt of a missing TRID application item as a changed circumstance when it elected to disclose before obtaining that item. Another permitted basis would need independent support.",
+      "distractorRationales": {
+        "B": "Newness to the file alone is insufficient; this precise missing-item situation is excluded by the interpretation.",
+        "C": "The missing item supplies neither a valid reason on these facts nor a blanket reset for unrelated fees.",
+        "D": "The issue is whether the early estimate can be revised on this reason, not whether the early disclosure can simply be ignored."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/19/#Interp-19-e-3-iv-A",
+          "locator": "Comment 19(e)(3)(iv)(A)-3",
+          "supports": "Early disclosure before receiving all six application items.",
+          "checkedOn": "2026-09-11"
+        }
+      ],
+      "remediation": {
+        "unitIds": [
+          "F02-U04"
+        ],
+        "focus": "Distinguish genuinely qualifying new information from later receipt of a missing application item."
+      },
+      "independenceNote": "Uses a voluntarily early LE and a missing application item. It does not reuse the formative outdated vendor-price error or changed-property-complexity scenarios."
+    },
+    {
+      "id": "N26-FIN-F14",
+      "category": "federal",
+      "moduleId": "F02",
+      "objective": "Apply a creditor’s communicated longer estimate-expiration period; annual topic 8.",
+      "stem": "A creditor orally tells a consumer that the estimated closing costs remain available for 15 business days after the LE is provided. The consumer indicates intent to proceed on business day 12. With no other revision reason, staff want to reset fees because their standard template uses ten business days. Which expiration analysis is supported?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The standard ten-day period controls; the oral extension cannot prevent this reset."
+        },
+        {
+          "id": "B",
+          "text": "The standard ten-day period controls, but this reset may affect creditor fees only."
+        },
+        {
+          "id": "C",
+          "text": "A new 15-day period begins at processing; expiration is measured from that event."
+        },
+        {
+          "id": "D",
+          "text": "The communicated 15-day period controls; day-12 intent does not support this reset."
+        }
+      ],
+      "correctChoice": "D",
+      "rationale": "A creditor’s longer period communicated to the consumer becomes the relevant expiration period, including when communicated orally. Intent on day 12 is within the stated 15-business-day period.",
+      "distractorRationales": {
+        "A": "The official interpretation recognizes a communicated longer period, including oral communication.",
+        "B": "The unexpired longer period defeats this revision basis; a creditor-fee label does not change that result.",
+        "C": "Expiration concerns when the consumer indicates intent relative to the applicable offer period, not a new processing clock."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/19/#e-3-iv-E",
+          "locator": "§1026.19(e)(3)(iv)(E); comment 19(e)(3)(iv)(E)-2",
+          "supports": "Effect of a communicated longer expiration period.",
+          "checkedOn": "2026-09-11"
+        }
+      ],
+      "remediation": {
+        "unitIds": [
+          "F02-U04"
+        ],
+        "focus": "Compare intent-to-proceed timing with the actual communicated expiration period."
+      },
+      "independenceNote": "Tests the longer-period expiration branch, which does not appear in the formative bank’s changed-circumstance or cumulative-increase questions."
+    },
+    {
+      "id": "N26-FIN-F15",
+      "category": "federal",
+      "moduleId": "F02",
+      "objective": "Select the applicable disclosure response to an unchanged post-CD rate lock; annual topic 8.",
+      "stem": "The initial CD has been provided. Before consummation, the consumer locks the interest rate at exactly the rate already disclosed. A verified comparison shows no change in the points, lender credits, or any other CD term, and the CD remains accurate. A system automatically queues a revised LE solely because a lock event occurred. What is the correct response to that queue entry?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Release the revised LE; every lock requires that form even after initial CD provision."
+        },
+        {
+          "id": "B",
+          "text": "Replace the LE with a corrected CD and restart the three-business-day wait."
+        },
+        {
+          "id": "C",
+          "text": "Cancel the revised LE; no corrected CD is required for this unchanged lock."
+        },
+        {
+          "id": "D",
+          "text": "Release both forms to preserve the option of revising fees in the future."
+        }
+      ],
+      "correctChoice": "C",
+      "rationale": "No revised LE may be provided on or after the initial CD’s provision date. The post-CD rate-lock interpretation requires a corrected CD when the lock makes it inaccurate; the stipulated unchanged lock does not do so.",
+      "distractorRationales": {
+        "A": "The post-CD prohibition limits the ordinary revised-LE rate-lock instruction.",
+        "B": "Neither an inaccuracy requiring correction nor a new-waiting-period event is present.",
+        "D": "Providing prohibited or duplicative forms does not create a permitted basis for future baseline changes."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/19/#e-3-iv-D",
+          "locator": "Comment 19(e)(3)(iv)(D)-2; §1026.19(e)(4)(ii)",
+          "supports": "Rate locks after the CD and prohibition on another LE.",
+          "checkedOn": "2026-09-11"
+        }
+      ],
+      "remediation": {
+        "unitIds": [
+          "F02-U04",
+          "F02-U05"
+        ],
+        "focus": "Check whether a post-CD lock changes disclosed terms before choosing a correction."
+      },
+      "independenceNote": "Tests an unchanged post-CD rate lock and suppression of an unnecessary disclosure. The formative post-CD case instead involves a real consumer-requested settlement change."
+    },
+    {
+      "id": "N26-FIN-F16",
+      "category": "federal",
+      "moduleId": "F02",
+      "objective": "Verify both parts of the specified tolerance-refund treatment; annual topics 6, 7, and 8.",
+      "stem": "An audit confirms a consummated loan’s tolerance excess and verifies that the creditor refunded the full amount on day 58 after consummation. The corrected CD reflecting that refund was first mailed on day 62. No earlier delivery occurred. What is the accurate finding under §1026.19(f)(2)(v)?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Refund timely; corrected disclosure timely."
+        },
+        {
+          "id": "B",
+          "text": "Refund timely; corrected disclosure late."
+        },
+        {
+          "id": "C",
+          "text": "Refund late; corrected disclosure timely."
+        },
+        {
+          "id": "D",
+          "text": "Refund late; corrected disclosure late."
+        }
+      ],
+      "correctChoice": "B",
+      "rationale": "The specified treatment has two 60-day deadlines measured from consummation: refund the excess, and deliver or mail corrected disclosures reflecting it. A day-58 refund does not extend the corrected-disclosure deadline to day 62.",
+      "distractorRationales": {
+        "A": "The corrected CD was first mailed after its separate 60-day deadline measured from consummation.",
+        "C": "The day-58 refund was timely, while first mailing the corrected CD on day 62 was late.",
+        "D": "The corrected CD was late, but that does not make the separate day-58 refund untimely."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/19/#f-2-v",
+          "locator": "§1026.19(f)(2)(v); comment 19(f)(2)(v)-1",
+          "supports": "Separate refund and corrected-disclosure deadlines.",
+          "checkedOn": "2026-09-11"
+        }
+      ],
+      "remediation": {
+        "unitIds": [
+          "F02-U06"
+        ],
+        "focus": "Audit refund completion and corrected-disclosure provision as separate required events."
+      },
+      "independenceNote": "Tests a partially successful post-consummation correction with two event dates, rather than the formative calculation of a combined excess and selection of a general cure description."
+    },
+    {
+      "id": "N26-FIN-F17",
+      "category": "federal",
+      "moduleId": "F03",
+      "objective": "Identify evidence needed to verify the actual-charge ceiling; annual topic 9.",
+      "stem": "In a post-settlement review, the consumer’s $640 appraisal charge matches the LE and the provider’s invoice. The invoice is marked approved for payment, not paid. The disbursement entry says returned, and there is no replacement-payment record. There is no averaging program or additional service. Which next step best resolves compliance with the actual-charge rule?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Close the review because the approved invoice matches the consumer's appraisal charge."
+        },
+        {
+          "id": "B",
+          "text": "Reconcile the returned disbursement and establish how much the provider actually received."
+        },
+        {
+          "id": "C",
+          "text": "Require a full $640 refund because no replacement-payment evidence appears in this file."
+        },
+        {
+          "id": "D",
+          "text": "Close the review if the appraisal charge satisfies the applicable LE tolerance comparison."
+        }
+      ],
+      "correctChoice": "B",
+      "rationale": "The actual-charge rule compares the consumer’s charge with the provider’s actual receipt. An approved invoice and a returned disbursement leave that receipt unresolved; investigation is needed before claiming compliance or a proven full overcharge.",
+      "distractorRationales": {
+        "A": "Invoice approval establishes neither successful payment nor the amount actually received.",
+        "C": "The missing record requires reconciliation; it does not establish that the provider received nothing or support a proven $640 overcharge.",
+        "D": "The actual-charge ceiling is distinct from LE tolerance analysis, and a tolerance calculation cannot substitute for receipt evidence."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/19/#f-3-i",
+          "locator": "§1026.19(f)(3)(i); comment 19(f)(3)(i)-1",
+          "supports": "Actual provider receipt controls the settlement-service charge ceiling.",
+          "checkedOn": "2026-09-11"
+        }
+      ],
+      "remediation": {
+        "unitIds": [
+          "F03-U01"
+        ],
+        "focus": "Reconcile final payment evidence instead of treating an approved invoice as proof of receipt."
+      },
+      "independenceNote": "Tests investigation of a failed disbursement where the actual receipt is unresolved. The formative cases supply established provider receipts and ask for a known numerical excess."
+    },
+    {
+      "id": "N26-FIN-F18",
+      "category": "federal",
+      "moduleId": "F03",
+      "objective": "Calculate a chosen retrospective average-charge adjustment outside the specified deemed-compliance method; annual topic 9.",
+      "stem": "A lawful flat-service-fee averaging program uses successive four-month periods, not the commentary's six-month period with rolling monthly reevaluation. Review confirms an outstanding $900 overcollection after accounting for prior refunds and deficits. The next period's supported service-cost average is $100. The creditor chooses to return the entire $900 through an equal reduction in the next charge. Exactly 36 eligible service transactions will receive that reduction, and no other adjustment is needed for this exercise. Which uniform charge implements the chosen method?",
+      "options": [
+        {
+          "id": "A",
+          "text": "$100 per service."
+        },
+        {
+          "id": "B",
+          "text": "$125 per service."
+        },
+        {
+          "id": "C",
+          "text": "$75 per service."
+        },
+        {
+          "id": "D",
+          "text": "$25 per service."
+        }
+      ],
+      "correctChoice": "C",
+      "rationale": "The chosen reduction is $900 ÷ 36 = $25 per service, producing $100 − $25 = $75. This applies the stipulated upcoming-average adjustment, not a mandatory method for every program. The separately deemed-compliant six-month/rolling-monthly route is expressly excluded.",
+      "distractorRationales": {
+        "A": "Leaving the charge at $100 does not implement the creditor's stipulated decision to allocate the outstanding $900 reduction.",
+        "B": "Adding $25 to the supported average increases collections instead of returning the stipulated amount.",
+        "D": "The $25 amount is the reduction, not the resulting service charge."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/19/#Interp-19-f-3-ii",
+          "locator": "§1026.19(f)(3)(ii); comment 19(f)(3)(ii)-5, including its final six-month/rolling-monthly deemed-compliance example",
+          "supports": "Allows an upcoming-average adjustment among possible reconciliation methods and separately deems the specified rolling method compliant even where collections exceed payments over time. The allocation figures are exercise assumptions.",
+          "checkedOn": "2026-09-11"
+        }
+      ],
+      "remediation": {
+        "unitIds": [
+          "F03-U01"
+        ],
+        "focus": "Apply the selected future-average reduction without treating one method or surplus outcome as a universal rule."
+      },
+      "independenceNote": "Replaces the unqualified surplus-warning question with calculation of an expressly selected retrospective adjustment. It differs from the formative eligibility, sample-period, uniform-use, and missing-service cases and from the unscored permanent-retention warning. The excluded deemed-compliance method is stated in the stem; the learner is not asked to infer an exception omitted from the legacy explanation."
+    },
+    {
+      "id": "N26-FIN-F19",
+      "category": "federal",
+      "moduleId": "F03",
+      "objective": "Evaluate the comparability of an average-charge class; annual topic 9.",
+      "stem": "A lender proposes averaging a lawful flat service fee across two markets. It uses three months of records and enough transactions for precise arithmetic. The evidence shows that one market consistently needs routine visits while the other consistently needs costly remote travel, producing dissimilar cost populations. No legal prohibition on averaging the service applies. Which review finding is supported?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Approve the class based on the three-month sampling period."
+        },
+        {
+          "id": "B",
+          "text": "Approve the class based on accurate arithmetic and uniform use."
+        },
+        {
+          "id": "C",
+          "text": "Use actual charges on expensive files and averages on inexpensive files."
+        },
+        {
+          "id": "D",
+          "text": "Revise the class to separate the dissimilar cost populations."
+        }
+      ],
+      "correctChoice": "D",
+      "rationale": "The time, geographic area, and loan-type criteria must define an appropriate class. A sufficient sample cannot cure pooling of dissimilar cost populations; a qualified average can nevertheless exceed an individual file’s cost.",
+      "distractorRationales": {
+        "A": "The period boundary is one condition, not proof of a comparable class.",
+        "B": "Accurate arithmetic and uniform use do not replace the separate class-definition requirement.",
+        "C": "Selective actual-cost charging does not repair the class definition and violates the uniform-use condition."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/19/#Interp-19-f-3-ii",
+          "locator": "§1026.19(f)(3)(ii)(B); comment 19(f)(3)(ii)-2",
+          "supports": "Appropriate class definitions and prohibition on pooling dissimilar populations.",
+          "checkedOn": "2026-09-11"
+        }
+      ],
+      "remediation": {
+        "unitIds": [
+          "F03-U01"
+        ],
+        "focus": "Test class comparability separately from sample sufficiency and averaging arithmetic."
+      },
+      "independenceNote": "Tests documented cost heterogeneity within a proposed class, not the formative question about the 30-day-to-six-month sampling boundary."
+    },
+    {
+      "id": "N26-FIN-F20",
+      "category": "federal",
+      "moduleId": "F03",
+      "objective": "Resolve conflicting evidence about the ultimate service payee; annual topic 10.",
+      "stem": "Before the CD is released, a required nonshoppable inspection is listed at its supported $210 charge. The service order names Delta Field Services, while the final invoice names Cedar Inspection LLC. Records do not establish whether one name replaced the other or which entity will ultimately receive the payment. Which action best supports an accurate service line?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Reconcile the service and payment records to substantiate the ultimate recipient."
+        },
+        {
+          "id": "B",
+          "text": "Use the original service-order name because the order established the vendor."
+        },
+        {
+          "id": "C",
+          "text": "Use the later invoice name because it supersedes the service order."
+        },
+        {
+          "id": "D",
+          "text": "Route the funds through the settlement agent and use its name instead."
+        }
+      ],
+      "correctChoice": "A",
+      "rationale": "The CD requires the ultimate payment recipient’s name. Conflicting service and invoice identities require diligence and reconciliation; a document’s timestamp or an intermediary’s ability to accept funds does not alone establish that recipient.",
+      "distractorRationales": {
+        "B": "The service order is relevant evidence, but its earlier entry does not resolve the conflicting invoice identity.",
+        "C": "The invoice's later date alone does not establish that the named entity replaced the service-order entity or will ultimately receive payment.",
+        "D": "Routing funds through an intermediary does not establish that it is the ultimate service-payment recipient."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/38/#f-2",
+          "locator": "§1026.38(f)(2)",
+          "supports": "Required ultimate service-recipient identification.",
+          "checkedOn": "2026-09-11"
+        },
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/19/#Interp-19-f-1-i",
+          "locator": "Comment 19(f)(1)(i)-2",
+          "supports": "Due diligence and best information reasonably available.",
+          "checkedOn": "2026-09-11"
+        }
+      ],
+      "remediation": {
+        "unitIds": [
+          "F03-U02"
+        ],
+        "focus": "Resolve inconsistent source records before treating a payee field as substantiated."
+      },
+      "independenceNote": "Tests an unresolved conflict between two named entities. The formative intermediate-account case stipulates the correct payee, and the nonempty-field case does not require resolving contradictory evidence."
+    },
+    {
+      "id": "N26-FIN-F21",
+      "category": "federal",
+      "moduleId": "F03",
+      "objective": "Choose the CD service section and payee after a consumer selects a provider outside the written list; annual topic 10.",
+      "stem": "For a required survey, a creditor genuinely permits shopping and provides a compliant written list. The consumer independently selects Westbank Survey, which is unaffiliated and absent from that list. The creditor accepts its license and qualifications. Westbank will perform the entire service and ultimately receive the payment. A processor moves the service to Services Borrower Did Not Shop For solely because the creditor approved the vendor. What is the correct entry?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Services Borrower Did Not Shop For, with Westbank Survey identified, because creditor approval eliminates shopping."
+        },
+        {
+          "id": "B",
+          "text": "Services Borrower Did Shop For, with the payee left blank because the consumer selected the vendor."
+        },
+        {
+          "id": "C",
+          "text": "Services Borrower Did Shop For, with Westbank Survey identified as the ultimate recipient."
+        },
+        {
+          "id": "D",
+          "text": "Services Borrower Did Not Shop For, with the creditor identified as payee because it approved the vendor."
+        }
+      ],
+      "correctChoice": "C",
+      "rationale": "The consumer selected a provider outside the compliant written list. Creditor acceptance of reasonable qualifications does not itself erase shopping. The applicable shopped-for service entry still requires the ultimate recipient’s name.",
+      "distractorRationales": {
+        "A": "Approving an independently selected provider’s qualifications does not make it a listed-provider selection.",
+        "B": "Both specified CD service sections require the ultimate recipient’s name.",
+        "D": "Vendor approval is neither the service payment nor proof that the creditor is its ultimate recipient."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/38/#f-3",
+          "locator": "§1026.38(f)(3); comment 38(f)(3)-1",
+          "supports": "Shopped-for service section and ultimate payee identification.",
+          "checkedOn": "2026-09-11"
+        },
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/19/#e-1-vi",
+          "locator": "§1026.19(e)(1)(vi)(A); comment 19(e)(1)(vi)-1",
+          "supports": "Reasonable provider qualifications within genuine permission to shop.",
+          "checkedOn": "2026-09-11"
+        }
+      ],
+      "remediation": {
+        "unitIds": [
+          "F03-U02",
+          "F02-U01"
+        ],
+        "focus": "Distinguish accepting an outside provider’s qualifications from selecting a provider on the written list."
+      },
+      "independenceNote": "Tests an outside-list selection misclassified after creditor vetting, combining section placement with payee identification. The formative section-pairing case instead stipulates selection from the list."
+    },
+    {
+      "id": "N26-FIN-F22",
+      "category": "federal",
+      "moduleId": "F03",
+      "objective": "Identify the required primarily liable CD recipient in a nonrescindable transaction.",
+      "stem": "For a nonrescindable consumer mortgage, Elena is the sole principal debtor and Marcus is a mere guarantor. The creditor delivered the initial CD only to Marcus and has no evidence that Elena received it. Staff propose counting Marcus’s receipt date as the start of the required consumer waiting period. Which action is supported?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Deliver to Elena and establish her receipt before measuring the waiting period."
+        },
+        {
+          "id": "B",
+          "text": "Count Marcus's receipt because a guarantor's possible liability makes him primarily liable."
+        },
+        {
+          "id": "C",
+          "text": "Deliver to their real estate agent and count the agent's receipt instead."
+        },
+        {
+          "id": "D",
+          "text": "Count Marcus's receipt if Elena signs an acknowledgement at consummation."
+        }
+      ],
+      "correctChoice": "A",
+      "rationale": "For a nonrescindable transaction, disclosure must reach a consumer primarily liable on the obligation. A mere guarantor is not that consumer, so the creditor must establish delivery and timing for the principal debtor.",
+      "distractorRationales": {
+        "B": "The interpretation distinguishes primary liability from a guarantor’s role.",
+        "C": "The agent’s receipt does not replace receipt by the required consumer on these facts.",
+        "D": "A signature at consummation does not establish that Elena received the CD sufficiently earlier."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/17/#d",
+          "locator": "§1026.17(d); comment 17(d)-2",
+          "supports": "Primary liability and delivery to a guarantor.",
+          "checkedOn": "2026-09-11"
+        },
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/19/#f-1-ii",
+          "locator": "§1026.19(f)(1)(ii)(A), (f)(1)(iii)",
+          "supports": "Required consumer receipt and waiting period.",
+          "checkedOn": "2026-09-11"
+        }
+      ],
+      "remediation": {
+        "unitIds": [
+          "F03-U03"
+        ],
+        "focus": "Confirm the recipient’s legal role before using that person’s delivery timestamp."
+      },
+      "independenceNote": "Tests a mere-guarantor delivery failure. The formative recipient questions address two primarily liable borrowers and owners with rescission rights."
+    },
+    {
+      "id": "N26-FIN-F23",
+      "category": "federal",
+      "moduleId": "F03",
+      "objective": "Use supported electronic receipt and the precise business-day definition for the CD waiting period.",
+      "stem": "For a covered ordinary mortgage, the creditor electronically sends the initial CD Thursday, September 3, 2026. All electronic-disclosure requirements are satisfied, and reliable evidence establishes the required consumer’s actual receipt Friday, September 4. Monday, September 7 is the Labor Day legal public holiday; no other holidays intervene. The creditor's offices are closed on Saturdays. With no waiver or restart event, what is the earliest consummation under the CD waiting rule alone?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Tuesday, September 8."
+        },
+        {
+          "id": "B",
+          "text": "Wednesday, September 9."
+        },
+        {
+          "id": "C",
+          "text": "Thursday, September 10."
+        },
+        {
+          "id": "D",
+          "text": "Monday, September 7."
+        }
+      ],
+      "correctChoice": "B",
+      "rationale": "Use the evidenced Friday receipt. Saturday September 5 is day one; Sunday and Labor Day do not count; Tuesday September 8 is day two and Wednesday September 9 is day three. Other consummation conditions remain separate.",
+      "distractorRationales": {
+        "A": "Tuesday is only the second counted business day after the evidenced Friday receipt; Labor Day is excluded.",
+        "C": "Excluding Saturday would delay the date improperly; Saturday counts despite the creditor's office closure.",
+        "D": "Monday is a legal public holiday and precedes the third counted business day after the evidenced Friday receipt."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/19/#f-1-iii",
+          "locator": "§1026.19(f)(1)(ii)(A), (f)(1)(iii); comments 19(f)(1)(iii)-1 and -2",
+          "supports": "Evidenced actual electronic receipt and the pre-consummation waiting period.",
+          "checkedOn": "2026-09-11"
+        },
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/2/#a-6",
+          "locator": "§1026.2(a)(6); comment 2(a)(6)-2",
+          "supports": "Calendar-day definition excluding Sundays and specified legal public holidays.",
+          "checkedOn": "2026-09-11"
+        }
+      ],
+      "remediation": {
+        "unitIds": [
+          "F03-U03"
+        ],
+        "focus": "Start with evidenced receipt, then count the correct business days including Saturday and excluding the holiday."
+      },
+      "independenceNote": "Tests evidenced electronic receipt with an intervening holiday and Saturday office closure. Unlike the mailed/presumed-receipt formative case, receipt is established directly and the holiday affects the count. All choices are parallel bare dates."
+    },
+    {
+      "id": "N26-FIN-F24",
+      "category": "federal",
+      "moduleId": "F03",
+      "objective": "Keep the CD waiting period separate from the rescission period and funding conditions.",
+      "stem": "A compliance review establishes that a consumer mortgage is rescindable and no exemption or waiver applies. Every required consumer received the CD early enough for Friday's consummation, and all material disclosures were delivered by Friday. Each consumer entitled to rescind first actually receives compliant rescission notices the following Monday. Staff propose disbursing proceeds directly to the consumer, outside escrow, on Monday because the CD waiting period has elapsed. Which conclusion follows?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Disburse Monday; expiration of the CD waiting period also completes the rescission period."
+        },
+        {
+          "id": "B",
+          "text": "Disburse Monday; Friday consummation ended rescission because material disclosures had already been delivered."
+        },
+        {
+          "id": "C",
+          "text": "Disburse Monday; the earlier LE date controls despite later receipt of rescission notices."
+        },
+        {
+          "id": "D",
+          "text": "Do not disburse Monday; the latest required event controls the separate rescission period."
+        }
+      ],
+      "correctChoice": "D",
+      "rationale": "The ordinary rescission period is measured from the last of consummation, receipt of the required rescission notice, and delivery of material disclosures. Monday's notice receipt is last here. Satisfying the separate CD wait does not permit the proposed direct disbursement before the rescission period expires and the creditor is reasonably satisfied that no entitled consumer rescinded.",
+      "distractorRationales": {
+        "A": "The pre-consummation CD wait does not replace the separate rescission period or its direct-disbursement restriction.",
+        "B": "Friday's consummation did not end rescission, and the required notices were first received on Monday.",
+        "C": "The earlier LE date does not override the later required rescission-notice event."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/23/#a-3",
+          "locator": "§1026.23(a)(3)(i), (b), (c); comments 23(c)-1 through -4",
+          "supports": "Latest ordinary rescission trigger, compliant notice, and restriction on non-escrow disbursement until the period expires and the creditor is reasonably satisfied that no entitled consumer rescinded.",
+          "checkedOn": "2026-09-11"
+        },
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/19/#f-1-ii",
+          "locator": "§1026.19(f)(1)(ii)(A)",
+          "supports": "Separate pre-consummation CD receipt requirement.",
+          "checkedOn": "2026-09-11"
+        }
+      ],
+      "remediation": {
+        "unitIds": [
+          "F03-U03"
+        ],
+        "focus": "Do not use a satisfied CD waiting period as evidence that rescission-related funding conditions have ended."
+      },
+      "independenceNote": "Tests direct, non-escrow disbursement after consummation where compliant rescission notices are first received later. The formative CD recipient and receipt-clock questions do not test this separate funding consequence."
+    }
+  ]
+}

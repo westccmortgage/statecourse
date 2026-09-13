@@ -5,6 +5,7 @@ import path from "node:path";
 import test from "node:test";
 import { fileURLToPath } from "node:url";
 import { getCourseCatalog } from "../config/course-catalog.mjs";
+import { HANDLED_STRIPE_EVENTS } from '../lib/stripe-contract.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 
@@ -38,8 +39,10 @@ test("the setup script's webhook events are exactly the ones the handler impleme
   const setup = fs.readFileSync(path.join(root, "scripts/stripe-setup.mjs"), "utf8");
   const handler = fs.readFileSync(path.join(root, "netlify/functions/stripe-webhook.mjs"), "utf8");
 
-  const declared = [...setup.matchAll(/"((?:checkout|refund)\.[a-z_.]+)"/g)].map((match) => match[1]);
-  const handled = [...handler.matchAll(/case "((?:checkout|refund)\.[a-z_.]+)":/g)].map((match) => match[1]);
+  assert.match(setup,/import \{ HANDLED_STRIPE_EVENTS, stripeSecretKeyMode \} from "\.\.\/lib\/stripe-contract\.mjs"/);
+  assert.match(setup,/const WEBHOOK_EVENTS = HANDLED_STRIPE_EVENTS;/);
+  const declared = HANDLED_STRIPE_EVENTS;
+  const handled = [...handler.matchAll(/case "((?:checkout|refund|payment_intent|charge)\.[a-z_.]+)":/g)].map((match) => match[1]);
 
   assert.ok(declared.length > 0 && handled.length > 0);
   assert.deepEqual([...new Set(declared)].sort(), [...new Set(handled)].sort(),

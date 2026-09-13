@@ -1,0 +1,206 @@
+diff --git a/scripts/stripe-setup.mjs b/scripts/stripe-setup.mjs
+index f60dbd5..fc6c931 100644
+--- a/scripts/stripe-setup.mjs
++++ b/scripts/stripe-setup.mjs
+@@ -27,6 +27,7 @@
+  */
+ 
+ import { getCourseCatalog } from "../config/course-catalog.mjs";
++import { HANDLED_STRIPE_EVENTS } from "../lib/stripe-contract.mjs";
+ 
+ const args = process.argv.slice(2);
+ const flag = (name) => args.includes(`--${name}`);
+@@ -43,15 +44,7 @@ const webhookUrl = value("webhook");
+ /* The event types the webhook handler actually implements. Registering more than these
+    means Stripe delivers events nothing reads; registering fewer means a paid checkout is
+    never finalised. Kept in one place so the two cannot drift. */
+-const WEBHOOK_EVENTS = [
+-  "checkout.session.completed",
+-  "checkout.session.async_payment_succeeded",
+-  "checkout.session.async_payment_failed",
+-  "checkout.session.expired",
+-  "refund.created",
+-  "refund.updated",
+-  "refund.failed"
+-];
++const WEBHOOK_EVENTS = HANDLED_STRIPE_EVENTS;
+ 
+ const secretKey = live ? process.env.STRIPE_SECRET_KEY_LIVE : process.env.STRIPE_SECRET_KEY_TEST;
+ 
+diff --git a/scripts/stripe-preflight.mjs b/scripts/stripe-preflight.mjs
+index a1f61bc..8bc58f5 100644
+--- a/scripts/stripe-preflight.mjs
++++ b/scripts/stripe-preflight.mjs
+@@ -15,6 +15,7 @@
+  */
+ 
+ import { evaluateCheckoutEligibility, getCourseCatalog } from "../config/course-catalog.mjs";
++import { HANDLED_STRIPE_EVENTS } from "../lib/stripe-contract.mjs";
+ 
+ const checkStripe = process.argv.includes("--check-stripe");
+ const mode = process.env.STRIPE_MODE === "live" ? "live" : "test";
+@@ -143,9 +144,7 @@ if (checkStripe) {
+         }
+       }
+       const endpoints = await call("/webhook_endpoints?limit=100");
+-      const required = ["checkout.session.completed", "checkout.session.async_payment_succeeded",
+-        "checkout.session.async_payment_failed", "checkout.session.expired",
+-        "refund.created", "refund.updated", "refund.failed"];
++      const required = HANDLED_STRIPE_EVENTS;
+       if (!endpoints.data?.length) {
+         problems.push("No webhook endpoint is registered. Paid checkouts would never be finalised.");
+       } else {
+diff --git a/tests/stripe-event-tooling-regression.test.mjs b/tests/stripe-event-tooling-regression.test.mjs
+new file mode 100644
+index 0000000..31e1b8f
+--- /dev/null
++++ b/tests/stripe-event-tooling-regression.test.mjs
+@@ -0,0 +1,148 @@
++import test from "node:test";
++import assert from "node:assert/strict";
++import { readFile } from "node:fs/promises";
++import { execFileSync } from "node:child_process";
++import { HANDLED_STRIPE_EVENTS } from "../lib/stripe-contract.mjs";
++
++// Execute the actual CLI source in a separate, network-free VM. Only the catalog,
++// process/environment and Stripe transport are synthetic. No host environment
++// credentials, real courses, live API calls, approvals or payments are used.
++const worker = String.raw`
++import { readFileSync } from "node:fs";
++import vm from "node:vm";
++const input = JSON.parse(readFileSync(0, "utf8"));
++const calls = [], output = [];
++let exitCode = 0;
++const exit = new Error("synthetic_process_exit");
++const context = vm.createContext({
++  URLSearchParams,
++  process: {
++    argv: ["node", input.script, ...input.args],
++    env: {
++      STRIPE_MODE: "test",
++      STATECOURSE_LIVE_PAYMENTS_ENABLED: "false",
++      STRIPE_SECRET_KEY_TEST: "synthetic-not-a-stripe-key",
++      STRIPE_WEBHOOK_SECRET_TEST: "synthetic-not-a-signing-secret",
++      STATECOURSE_BASE_URL: "https://statecourse.example",
++      STATECOURSE_ADMIN_API_TOKEN: "synthetic-not-a-token"
++    },
++    exit(code) { exitCode = code; throw exit; }
++  },
++  console: {
++    log(...args) { output.push(args.join(" ")); },
++    error(...args) { output.push(args.join(" ")); }
++  },
++  async fetch(url, options = {}) {
++    const method = options.method || "GET";
++    const body = options.body ? [...options.body.entries()] : [];
++    calls.push({ url, method, body });
++    if (!String(url).startsWith("https://api.stripe.com/v1/webhook_endpoints")) {
++      throw new Error("Unexpected synthetic transport call: " + url);
++    }
++    let data;
++    if (method === "GET") data = { data: input.endpoints };
++    else if (method === "POST") data = { id: "we_synthetic", secret: "synthetic-not-a-secret" };
++    else throw new Error("Unexpected method");
++    return { ok: true, status: 200, text: async () => JSON.stringify(data) };
++  }
++});
++const catalog = new vm.SourceTextModule(
++  "export const getCourseCatalog = () => []; export const evaluateCheckoutEligibility = () => ({allowed:false, reason:'synthetic_catalog'});",
++  { context }
++);
++const contract = new vm.SourceTextModule(input.contract, { context });
++const script = new vm.SourceTextModule(input.source, { context, identifier: input.script });
++await script.link((specifier) => {
++  if (specifier === "../config/course-catalog.mjs") return catalog;
++  if (specifier === "../lib/stripe-contract.mjs") return contract;
++  throw new Error("Unexpected import: " + specifier);
++});
++try { await script.evaluate(); } catch (error) { if (error !== exit) throw error; }
++process.stdout.write(JSON.stringify({ calls, output, exitCode }));
++`;
++
++const endpoint = (enabled_events = [...HANDLED_STRIPE_EVENTS]) => ({
++  id: "we_existing_synthetic",
++  url: "https://statecourse.example/api/stripe/webhook",
++  status: "enabled",
++  enabled_events
++});
++
++async function run(script, { args = [], endpoints = [endpoint()] } = {}) {
++  const [source, contract] = await Promise.all([
++    readFile(new URL("../scripts/" + script, import.meta.url), "utf8"),
++    readFile(new URL("../lib/stripe-contract.mjs", import.meta.url), "utf8")
++  ]);
++  const data = execFileSync(process.execPath,
++    ["--experimental-vm-modules", "--input-type=module", "--eval", worker], {
++      input: JSON.stringify({ script, source, contract, args, endpoints }),
++      encoding: "utf8",
++      timeout: 15000,
++      env: { NODE_NO_WARNINGS: "1" },
++      maxBuffer: 1024 * 1024
++    });
++  return JSON.parse(data);
++}
++
++function postedEvents(result) {
++  const posts = result.calls.filter(call => call.method === "POST");
++  assert.equal(posts.length, 1);
++  const events = posts[0].body.filter(([key]) => /^enabled_events\[\d+\]$/.test(key)).map(([, value]) => value);
++  assert.deepEqual(events, [...HANDLED_STRIPE_EVENTS]);
++  assert.equal(new Set(events).size, events.length);
++  assert.equal(events.length, 10);
++  return posts[0];
++}
++
++test("setup creates the endpoint with all ten exact shared handler events", async () => {
++  const result = await run("stripe-setup.mjs", {
++    args: ["--webhook", endpoint().url], endpoints: []
++  });
++  assert.equal(result.exitCode, 0);
++  const post = postedEvents(result);
++  assert.equal(post.url, "https://api.stripe.com/v1/webhook_endpoints");
++  assert.equal(new Map(post.body).get("url"), endpoint().url);
++});
++
++test("setup reconciliation cannot shrink an existing endpoint to the legacy seven", async () => {
++  const result = await run("stripe-setup.mjs", { args: ["--webhook", endpoint().url] });
++  assert.equal(result.exitCode, 0);
++  assert.equal(postedEvents(result).url,
++    "https://api.stripe.com/v1/webhook_endpoints/we_existing_synthetic");
++});
++
++for (const missing of ["payment_intent.succeeded", "payment_intent.payment_failed", "charge.refunded"]) {
++  test("preflight refuses an endpoint missing " + missing, async () => {
++    const result = await run("stripe-preflight.mjs", {
++      args: ["--check-stripe"],
++      endpoints: [endpoint(HANDLED_STRIPE_EVENTS.filter(event => event !== missing))]
++    });
++    assert.equal(result.exitCode, 1);
++    assert.ok(result.output.some(line => line.includes("is missing: " + missing)));
++    assert.ok(result.calls.every(call => call.method === "GET"), "preflight must remain read-only");
++  });
++}
++
++test("preflight accepts the complete shared contract and remains read-only", async () => {
++  const result = await run("stripe-preflight.mjs", { args: ["--check-stripe"] });
++  assert.equal(result.exitCode, 0);
++  assert.ok(result.output.some(line => line.includes("No problems found")));
++  assert.ok(result.calls.every(call => call.method === "GET"));
++});
++
++test("preflight retains existing Stripe wildcard behavior", async () => {
++  const result = await run("stripe-preflight.mjs", {
++    args: ["--check-stripe"], endpoints: [endpoint(["*"])]
++  });
++  assert.equal(result.exitCode, 0);
++  assert.ok(result.calls.every(call => call.method === "GET"));
++});
++
++test("setup dry-run with a webhook performs no transport calls", async () => {
++  const result = await run("stripe-setup.mjs", {
++    args: ["--dry-run", "--webhook", endpoint().url]
++  });
++  assert.equal(result.exitCode, 0);
++  assert.deepEqual(result.calls, []);
++});
++

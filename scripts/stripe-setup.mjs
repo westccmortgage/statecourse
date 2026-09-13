@@ -27,6 +27,7 @@
  */
 
 import { getCourseCatalog } from "../config/course-catalog.mjs";
+import { HANDLED_STRIPE_EVENTS, stripeSecretKeyMode } from "../lib/stripe-contract.mjs";
 
 const args = process.argv.slice(2);
 const flag = (name) => args.includes(`--${name}`);
@@ -43,15 +44,7 @@ const webhookUrl = value("webhook");
 /* The event types the webhook handler actually implements. Registering more than these
    means Stripe delivers events nothing reads; registering fewer means a paid checkout is
    never finalised. Kept in one place so the two cannot drift. */
-const WEBHOOK_EVENTS = [
-  "checkout.session.completed",
-  "checkout.session.async_payment_succeeded",
-  "checkout.session.async_payment_failed",
-  "checkout.session.expired",
-  "refund.created",
-  "refund.updated",
-  "refund.failed"
-];
+const WEBHOOK_EVENTS = HANDLED_STRIPE_EVENTS;
 
 const secretKey = live ? process.env.STRIPE_SECRET_KEY_LIVE : process.env.STRIPE_SECRET_KEY_TEST;
 
@@ -63,11 +56,8 @@ function fail(message) {
 if (!dryRun && !secretKey) {
   fail(`Set ${live ? "STRIPE_SECRET_KEY_LIVE" : "STRIPE_SECRET_KEY_TEST"} in the environment. Never put it in a file.`);
 }
-if (!dryRun && secretKey && live && !secretKey.startsWith("sk_live_")) {
-  fail("--live was passed but STRIPE_SECRET_KEY_LIVE is not a live key. Refusing to continue.");
-}
-if (!dryRun && secretKey && !live && secretKey.startsWith("sk_live_")) {
-  fail("A live key is set in STRIPE_SECRET_KEY_TEST. Refusing to create test objects with a live key.");
+if (!dryRun && secretKey && stripeSecretKeyMode(secretKey) !== mode) {
+  fail(`The selected Stripe key is not a valid ${mode}-mode secret or restricted key. Refusing to create objects with a wrong-mode or invalid key.`);
 }
 
 async function stripe(path, { method = "GET", params } = {}) {

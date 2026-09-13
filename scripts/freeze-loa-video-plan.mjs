@@ -38,13 +38,13 @@ const PROD = path.join(HOME, "video-production");
 const OUT = path.join(HOME, "video-plan-freeze.json");
 
 const COURSE_ID = "tx-law-of-agency-30-v1";
-const FREEZE_ID = "LOA-VIDEO-PLAN-FREEZE-2026-09-12-v14";
+const FREEZE_ID = "LOA-VIDEO-PLAN-FREEZE-2026-09-13-v15";
 
 const PREVIOUS_FREEZE = Object.freeze({
-  "freezeId": "LOA-VIDEO-PLAN-FREEZE-2026-09-12-v13",
-  "sha256": "67bb026a5b40c098d9ea802e5e4e74b28f3ad6f969329e7ea9d11232e78f9291",
-  "on": "2026-09-12",
-  "change": "The player reports module study requirements and saved transitions for the existing Texas Law of Agency training course. Private Stream delivery and all video reviews remain unchanged. Production training requires a matching database runtime before it can open."
+  "freezeId": "LOA-VIDEO-PLAN-FREEZE-2026-09-12-v14",
+  "sha256": "2499d5c669ee7d0a4fb8ea4ffbebd6b849c3514f9a898c958b69c1db93f250cf",
+  "on": "2026-09-13",
+  "change": "Shared Netlify packaging now includes private NMLS course, assessment and retained-evidence inputs, and duplicate student cache headers were removed. The shared content-release overlay refuses edits for versioned read-only training sources. No Texas instruction, answer key, video asset, placement, private Stream authorization or approval status changed. This is a dependency history update, not course or provider approval."
 });
 
 /**
@@ -280,7 +280,7 @@ const VIDEOS = Object.freeze([
 const freeze = {
   freezeId: FREEZE_ID,
   courseId: COURSE_ID,
-  frozenOn: "2026-09-08",
+  frozenOn: "2026-09-13",
   generatedBy: "scripts/freeze-loa-video-plan.mjs",
   what: "The video instruction plan and every artifact a render of the three Law of Agency videos depends on. This freeze is what scripts/freeze-loa-curriculum.mjs hashes in place of the plan itself, so that correcting a video does not require breaking a curriculum freeze.",
 

@@ -1,0 +1,11 @@
+.workspace { overflow-wrap: anywhere; }
+#formError { color: var(--sc-error); border-left: 3px solid currentColor; padding: .75rem 1rem; background: white; }
+.question-area fieldset:disabled { opacity: .75; }
+.outline-panel a { display: inline-block; min-height: 44px; padding: .5rem 0; }
+.reading-column > section:empty { display: none; }
+@media (max-width: 700px) {
+  .outline-panel nav { max-height: 18rem; overflow: auto; }
+  .outline-panel nav:focus-within { outline: 1px solid var(--sc-rule); }
+  .sync-bar button { width: 100%; }
+}
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; } }

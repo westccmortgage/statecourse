@@ -832,13 +832,36 @@
     {
       "category_id": "mortgage",
       "title": "Mortgage / NMLS",
-      "status": "future",
+      "status": "in_development",
       "launch_target": {
         "label": "October 2026",
         "iso": "2026-10",
         "basis": "StateCourse build schedule. A target date for the product, not a regulatory approval date and not an NMLS course-approval record."
       },
-      "programs": []
+      "programs": [{
+        "program_id": "nmls-ce-2026-national-training",
+        "state_code": "US",
+        "program_type": "National mortgage training",
+        "courses": [{
+          "course_id": "nmls-ce-2026-comprehensive-8",
+          "state_id": "US",
+          "course_title": "2026 Mortgage Continuing Education — Training Only",
+          "course_version": "2026.3",
+          "product_type": "mortgage_continuing_education",
+          "operating_mode": "free_training",
+          "required_hours": null,
+          "approved_hours": null,
+          "provisional_instruction_minutes": 400,
+          "approval_status": "In Development",
+          "approval_number": null,
+          "provider_approval_number": null,
+          "enrollment_enabled": false,
+          "price": null,
+          "route": "/mortgage/",
+          "student_route": "/student/nmls-training/",
+          "scope_notice": "National training content only. State-specific supplements are not included. No NMLS credit, certificate or completion reporting. Free access is controlled by current server governance."
+        }]
+      }]
     },
     {
       "category_id": "continuing-education",

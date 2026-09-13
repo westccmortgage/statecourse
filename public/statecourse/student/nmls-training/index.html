@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow"><meta name="theme-color" content="#0f2237">
+  <title>Mortgage training | StateCourse</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/fonts/fonts.css"><link rel="stylesheet" href="/student/design-tokens.css">
+  <link rel="stylesheet" href="../nmls-review/nmls-review.css"><link rel="stylesheet" href="./nmls-training.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to learning workspace</a>
+  <header class="review-header">
+    <a class="brand" href="/student/"><img src="/favicon.svg" width="32" height="36" alt=""><span>StateCourse<small>Learning workspace</small></span></a>
+    <nav aria-label="Account"><a href="/student/">My StateCourse</a><button id="signOut" type="button">Sign out</button></nav>
+  </header>
+  <div class="review-notice"><strong>Free mortgage training · No NMLS CE credit</strong><span>Not an approved CE course. No licensing hours, certificate or NMLS reporting.</span></div>
+  <main id="main" tabindex="-1">
+    <div class="study-heading"><div><a href="/student/">← My courses</a><h1 id="courseTitle">Mortgage professional training</h1></div><button id="pauseTraining" class="secondary" type="button" hidden>Pause training</button></div>
+    <div class="sync-bar"><p id="syncStatus" role="status">Loading your saved training…</p><button id="retryCommand" type="button" hidden>Retry safely</button><button id="reloadTraining" class="secondary" type="button" hidden>Reload saved progress</button><a id="studySignIn" href="/student/sign-in/" hidden>Sign in again</a></div>
+    <p id="missingEnrollment" hidden>Open this course from <a href="/student/">My StateCourse</a>. Choose “Start free training” if you have not started it yet.</p>
+    <div class="workspace" id="workspace" hidden>
+      <aside class="outline-panel" aria-label="Training outline"><p class="eyebrow">Learning outline</p><p id="savedSummary"></p><nav id="outline" aria-label="Units and module questions"></nav><p id="timingNotice" class="fine-print">Practice time is provisional, not verified attendance or NMLS credit. Content and timing remain subject to review.</p></aside>
+      <div class="reading-column">
+        <section id="readOnlyPanel" class="resume-panel" hidden><h2>Read-only regulator review</h2><p id="readOnlyNotice"></p><p>Browse any lesson or module question set using the outline. No study time, answers, grades or completion are recorded. Answer keys and the practice assessment bank are not shown.</p><p id="readOnlyRules"></p></section>
+        <section id="resumePanel" class="resume-panel" hidden><h2>Continue on this device</h2><p id="resumeHelp">Your saved progress is available. Resume explicitly to work on this device.</p><p>Practice pauses when this page is hidden or offline. Six minutes without activity ends the study session. Saved units remain; an unfinished unit or quiz may need to restart.</p><button id="resumeTraining" type="button">Start or resume training</button></section>
+        <section id="phasePanel" class="finish-panel" hidden><h2 id="phaseTitle"></h2><p id="phaseHelp"></p><p id="assessmentResult"></p><button id="phaseAction" type="button" hidden></button><a id="finishedLink" href="/student/" hidden>Return to My StateCourse</a></section>
+        <div id="unitMeta" class="unit-meta" hidden><span id="unitPosition"></span><span id="unitTime"></span></div>
+        <article id="lesson" class="lesson" aria-label="Lesson reading"></article>
+        <section id="questionArea" class="question-area" hidden aria-label="Unit knowledge check"></section>
+        <section id="quizArea" class="question-area" hidden aria-label="Module questions"></section>
+        <section id="assessmentArea" class="question-area" hidden aria-label="Practice assessment"></section>
+        <p id="formError" role="alert" tabindex="-1" hidden></p>
+        <section id="feedbackArea" class="feedback-area" aria-live="polite" hidden></section>
+        <div id="nextArea" class="next-area" hidden><p id="nextHelp"></p><button id="nextAction" type="button">Continue</button></div>
+      </div>
+    </div>
+    <noscript><p>JavaScript is required to load your training and save progress. No practice time is recorded while JavaScript is disabled.</p></noscript>
+  </main>
+  <footer>StateCourse · Free training only. No payment or NMLS credit is issued here.</footer>
+  <script type="module" src="./nmls-training.mjs"></script>
+</body>
+</html>

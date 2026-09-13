@@ -70,10 +70,13 @@ test("every 200 rewrite in netlify.toml points at a file the build produced", ()
 test("every API route points at a Netlify function that exists", () => {
   const routes = redirects.filter((redirect) => redirect.to.startsWith("/.netlify/functions/"));
   assert.ok(routes.length >= 10, `only ${routes.length} API routes found`);
-  const missing = routes
-    .map((route) => route.to.replace("/.netlify/functions/", ""))
-    .filter((name) => !fs.existsSync(path.join(root, "netlify/functions", `${name}.mjs`)));
+  const functions = [...new Set(routes.map(route => route.to.replace("/.netlify/functions/", "")))].map(name => ({
+    name,
+    entries:["mjs", "mts", "js", "ts"].filter(extension => fs.existsSync(path.join(root, "netlify/functions", `${name}.${extension}`)))
+  }));
+  const missing = functions.filter(item => item.entries.length === 0).map(item => item.name);
   assert.deepEqual(missing, [], `API routes point at functions that do not exist: ${missing.join(", ")}`);
+  assert.deepEqual(functions.filter(item => item.entries.length > 1), [], "API route has ambiguous duplicate function entrypoints");
 
   /* The payment chain in particular, named rather than counted, so a route cannot quietly
      disappear and leave the suite green. */

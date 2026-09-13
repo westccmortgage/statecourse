@@ -4,6 +4,7 @@ import { getCourseCatalog, getPackageCatalog } from "../../../config/course-cata
 import { STREAM_MEDIA } from "../../../config/stream-media.mjs";
 import { dbRequest } from "./db.mjs";
 import { COURSE_IDENTITIES } from "../../../config/course-identities.mjs";
+import { NMLS_TRAINING_COURSE } from "../../../config/nmls-course-identity.mjs";
 
 /*
  * What the catalog actually is, as opposed to what any one file says it is.
@@ -65,6 +66,7 @@ function publicRows(catalog) {
       approvalStatus: course.approval_status ?? null,
       approvalNumber: course.approval_number ?? null,
       enrollmentEnabled: course.enrollment_enabled === true,
+      operatingMode: course.operating_mode || null,
       price: course.price ?? null,
       route: course.route || null,
     })),
@@ -96,7 +98,9 @@ export function assessCourseRow(row) {
   const found = [];
   const { publicEntry, payment, dbCourse, dbVersions, regulatoryFile } = row;
 
-  if (publicEntry && !payment) {
+  const declaredFreeTraining = publicEntry?.courseId === NMLS_TRAINING_COURSE.id && publicEntry.state === 'US' &&
+    publicEntry.categoryId === 'mortgage' && publicEntry.operatingMode === 'free_training' && publicEntry.enrollmentEnabled === false && publicEntry.price === null;
+  if (publicEntry && !payment && !declaredFreeTraining) {
     found.push(discrepancy("public_without_checkout",
       "Listed in the public catalog with no course in the checkout catalog, so a visitor cannot buy it."));
   }

@@ -58,31 +58,35 @@ function personalize(student = {}) {
 
 function card(enrollment) {
   const training=enrollment.enrollment_origin==='training';
+  const mortgageTraining=training&&enrollment.course_id==='nmls-ce-2026-comprehensive-8';
+  const mortgageProgress=enrollment.nmls_training;
+  const mortgageUnavailable=mortgageTraining&&mortgageProgress?.available!==true;
+  const mortgageReadOnly=mortgageTraining&&mortgageProgress?.readOnly===true;
   const review=enrollment.enrollment_origin==='review';
   const progress = Math.max(0,Math.min(100,Number(enrollment.progress_percent || 0)));
   const access = enrollment.access_status === "active";
-  const completed = Boolean(enrollment.completed_at) || enrollment.regulatory_credit_status === "earned";
+  const completed = mortgageTraining ? !mortgageReadOnly&&enrollment.training_completed===true : Boolean(enrollment.completed_at) || enrollment.regulatory_credit_status === "earned";
   const resumePath = deploySafeResumePath(enrollment.resume_path);
-  const action = access && resumePath && !completed
-    ? `<a class="resume-course" href="${escapeHtml(encodeURI(resumePath))}" data-enrollment="${safeText(enrollment.enrollment_id)}">Resume course →</a>`
+  const action = access && resumePath && !mortgageUnavailable && (!completed||mortgageTraining)
+    ? `<a class="resume-course" href="${escapeHtml(encodeURI(resumePath))}" data-enrollment="${safeText(enrollment.enrollment_id)}">${mortgageReadOnly?'Open review':mortgageTraining?(completed?'View training result':'Resume training'):'Resume course'} →</a>`
     : "";
   return `<article class="course-card">
     <div class="course-state"><strong>${safeText(enrollment.state)}</strong><small>${safeText(enrollment.enrollment_status)}</small></div>
     <div class="course-main">
-      <p class="status">${training?'Training purposes · no licensing credit':review?'Review access · no licensing credit':completed ? "Completed" : safeText(enrollment.approval_status,"Course record")}</p>
+      <p class="status">${mortgageReadOnly?'Read-only regulator review · no NMLS credit':training?(completed?'Course training completed · no licensing or NMLS credit':'Training purposes · no licensing or NMLS credit'):review?'Review access · no licensing credit':completed ? "Completed" : safeText(enrollment.approval_status,"Course record")}</p>
       <h3>${safeText(enrollment.course_name)}</h3>
       <p class="version">Course version ${safeText(enrollment.course_version)} · Enrollment ${safeText(enrollment.enrollment_id)}</p>
-      <div class="progress-track" role="progressbar" aria-label="Course progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="${progress}"><span style="width:${progress}%"></span></div>
-      <div class="progress-label"><span>${progress}% complete</span><span>${safeText(enrollment.assignments_completed,0)}/${safeText(enrollment.assignment_count,0)} assignments</span></div>
+      ${mortgageUnavailable?'<p>Saved training progress is temporarily unavailable. This does not mean your work was lost. Reload to check again.</p>':mortgageReadOnly?'<p>Browse all lessons and module questions without changing training records. No completion or study time is recorded.</p>':`${mortgageTraining?`<progress class="mortgage-training-progress" aria-label="Training progress" max="100" value="${progress}">${progress}%</progress>`:`<div class="progress-track" role="progressbar" aria-label="Course progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="${progress}"><span style="width:${progress}%"></span></div>`}
+      <div class="progress-label"><span>${progress}% ${mortgageTraining?'training progress':'complete'}</span><span>${safeText(enrollment.assignments_completed,0)}/${safeText(enrollment.assignment_count,0)} ${mortgageTraining?'units':'assignments'}</span></div>`}
     </div>
-    <div class="course-actions">${action}<div class="course-meta"><span><strong>Registered:</strong> ${date(enrollment.enrollment_date,"Not recorded")}</span><span><strong>Quiz mastery:</strong> ${safeText(enrollment.quiz_mastery_percent,0)}%</span><span><strong>Earliest final:</strong> ${date(enrollment.earliest_final_exam_at)}</span><span><strong>Remaining:</strong> ${remainingRequirements(enrollment)}</span><span><strong>Instructor:</strong> ${safeText(enrollment.instructor_name,"Unassigned")}</span><span><strong>Help requests:</strong> ${safeText(enrollment.open_help_requests,0)}</span><span><strong>Certificate:</strong> ${safeText(enrollment.portal_certificate_status || enrollment.certificate_status)}</span><span><strong>Payment:</strong> ${training ? "Free training — no payment" : review ? "Review access — no payment" : safeText(enrollment.payment_status)+" · "+safeText(money(enrollment.payment_amount,enrollment.payment_currency))}</span></div></div>
+    <div class="course-actions">${action}<div class="course-meta"><span><strong>Registered:</strong> ${date(enrollment.enrollment_date,"Not recorded")}</span>${mortgageTraining?`${mortgageReadOnly?'':`<span><strong>Module practices:</strong> ${mortgageUnavailable?'Unavailable':`${safeText(mortgageProgress.passedModules,0)}/${safeText(mortgageProgress.totalModules,0)} passed`}</span><span><strong>Remaining training:</strong> ${mortgageUnavailable?'Unavailable':remainingRequirements(enrollment)}</span>`}<span><strong>NMLS credit:</strong> Not issued — ${mortgageReadOnly?'read-only review':'free training only'}</span><span><strong>Payment:</strong> ${mortgageReadOnly?'Review access':'Free training'} — no payment</span>`:`<span><strong>Quiz mastery:</strong> ${safeText(enrollment.quiz_mastery_percent,0)}%</span><span><strong>Earliest final:</strong> ${date(enrollment.earliest_final_exam_at)}</span><span><strong>Remaining:</strong> ${remainingRequirements(enrollment)}</span><span><strong>Instructor:</strong> ${safeText(enrollment.instructor_name,"Unassigned")}</span><span><strong>Help requests:</strong> ${safeText(enrollment.open_help_requests,0)}</span><span><strong>Certificate:</strong> ${safeText(enrollment.portal_certificate_status || enrollment.certificate_status)}</span><span><strong>Payment:</strong> ${training ? "Free training — no payment" : review ? "Review access — no payment" : safeText(enrollment.payment_status)+" · "+safeText(money(enrollment.payment_amount,enrollment.payment_currency))}</span>`}</div></div>
   </article>`;
 }
 
 function render(data) {
   const enrollments = data.enrollments || [];
   const active = enrollments.filter((item) => item.enrollment_status === "active" || item.enrollment_status === "qa_non_credit");
-  const completed = enrollments.filter((item) => item.completed_at || item.regulatory_credit_status === "earned");
+  const completed = enrollments.filter((item) => item.course_id==='nmls-ce-2026-comprehensive-8'&&item.enrollment_origin==='training'?item.training_completed===true:item.completed_at || item.regulatory_credit_status === "earned");
   const completedIds = new Set(completed.map((item) => item.enrollment_id));
   const current = active.filter((item) => !completedIds.has(item.enrollment_id));
   const other = enrollments.filter((item) => !completedIds.has(item.enrollment_id) && !active.includes(item));

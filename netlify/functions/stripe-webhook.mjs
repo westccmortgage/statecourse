@@ -176,6 +176,13 @@ export const handler = async (event) => {
       return response(400, { error: "invalid_signature" });
     }
     stripeEvent = JSON.parse(payload.toString("utf8"));
+    // Verify the signed Event's mode, not client metadata, before claiming or writing it.
+    if (typeof stripeEvent?.livemode !== "boolean") {
+      return response(400, { error: "stripe_event_mode_required" });
+    }
+    if (stripeEvent.livemode !== (mode === "live")) {
+      return response(400, { error: "stripe_event_mode_mismatch" });
+    }
     const claimed = await rpc("claim_stripe_event", {
       p_event_id: stripeEvent.id,
       p_event_type: stripeEvent.type,

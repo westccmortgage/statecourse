@@ -61,6 +61,11 @@ export default async function account(req) {
     if (raw.length > 16000) fail("request_too_large", 413);
     let input; try { input = JSON.parse(raw); } catch { fail("invalid_json"); }
     if (!input || typeof input !== "object" || Array.isArray(input)) fail("invalid_json");
+    if (input.action === "capabilities") {
+      const settings = await auth("settings");
+      // Public availability only: do not return Auth configuration, keys or a session.
+      return json(200, { providers: { google: settings.external?.google === true } });
+    }
     if (input.action === "forgot") {
       const email = String(input.email || "").trim().toLowerCase();
       if (!/^\S+@\S+\.\S+$/.test(email) || email.length > 254) fail("invalid_email");
@@ -69,7 +74,7 @@ export default async function account(req) {
     }
     if (input.action === "google_start") {
       const settings = await auth("settings");
-      if (!settings.external?.google) fail("google_not_configured", 503);
+      if (settings.external?.google !== true) fail("google_not_configured", 503);
       const verifier = randomBytes(32).toString("base64url");
       const challenge = createHash("sha256").update(verifier).digest("base64url");
       const destination = input.destination === "admin" ? "admin" : "student";

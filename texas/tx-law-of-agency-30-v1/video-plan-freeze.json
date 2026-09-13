@@ -1,7 +1,7 @@
 {
-  "freezeId": "LOA-VIDEO-PLAN-FREEZE-2026-09-12-v14",
+  "freezeId": "LOA-VIDEO-PLAN-FREEZE-2026-09-13-v15",
   "courseId": "tx-law-of-agency-30-v1",
-  "frozenOn": "2026-09-08",
+  "frozenOn": "2026-09-13",
   "generatedBy": "scripts/freeze-loa-video-plan.mjs",
   "what": "The video instruction plan and every artifact a render of the three Law of Agency videos depends on. This freeze is what scripts/freeze-loa-curriculum.mjs hashes in place of the plan itself, so that correcting a video does not require breaking a curriculum freeze.",
   "status": {
@@ -12,10 +12,10 @@
     "doNotSay": "'production-ready'. It collapses distinct asset, placement, course-approval and provider-approval layers into one."
   },
   "previousFreeze": {
-    "freezeId": "LOA-VIDEO-PLAN-FREEZE-2026-09-12-v13",
-    "sha256": "67bb026a5b40c098d9ea802e5e4e74b28f3ad6f969329e7ea9d11232e78f9291",
-    "on": "2026-09-12",
-    "change": "The player reports module study requirements and saved transitions for the existing Texas Law of Agency training course. Private Stream delivery and all video reviews remain unchanged. Production training requires a matching database runtime before it can open."
+    "freezeId": "LOA-VIDEO-PLAN-FREEZE-2026-09-12-v14",
+    "sha256": "2499d5c669ee7d0a4fb8ea4ffbebd6b849c3514f9a898c958b69c1db93f250cf",
+    "on": "2026-09-13",
+    "change": "Shared Netlify packaging now includes private NMLS course, assessment and retained-evidence inputs, and duplicate student cache headers were removed. The shared content-release overlay refuses edits for versioned read-only training sources. No Texas instruction, answer key, video asset, placement, private Stream authorization or approval status changed. This is a dependency history update, not course or provider approval."
   },
   "supersedes": {
     "artifact": "texas/tx-law-of-agency-30-v1/video-instruction-plan.md",
@@ -376,8 +376,8 @@
     },
     "private Stream production routing and CSP": {
       "path": "netlify.toml",
-      "sha256": "2b95b12f8876028de6b108d04b9e72b4a2d675bc5e5da56955aebc08ada1bfdb",
-      "bytes": 6559
+      "sha256": "3138c25c80781a8ee2ef7c6a4522698d288cc6a3b1d0cbb62ff3e2a91c812612",
+      "bytes": 7226
     },
     "private Stream player": {
       "path": "public/statecourse/student/course/blocks/course-video.mjs",
@@ -406,8 +406,8 @@
     },
     "pinned content release overlay": {
       "path": "netlify/functions/_lib/console-content.mjs",
-      "sha256": "b35847195fa90ac88190b0125844a26758480f452af46fec654fd94b4afe2bdb",
-      "bytes": 7092
+      "sha256": "4fa51627368db9f97583c463ea7b0eff87bf31e13e4cca0718b62a66bbf753a2",
+      "bytes": 7384
     },
     "private Stream player host": {
       "path": "public/statecourse/student/course/blocks/block-player.js",

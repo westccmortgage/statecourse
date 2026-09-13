@@ -8,9 +8,9 @@ const root = fileURLToPath(new URL("..", import.meta.url));
 const readJson = (relative) => JSON.parse(fs.readFileSync(path.join(root, relative), "utf8"));
 const portfolio = readJson("video-production/portfolio.json");
 const catalog = readJson("public/statecourse/data/course-catalog.json");
-const courses = catalog.categories.flatMap((category) => category.programs).flatMap((program) => program.courses);
+const courses = catalog.categories.filter(category => category.category_id === 'real-estate').flatMap((category) => category.programs).flatMap((program) => program.courses);
 
-test("video portfolio reconciles exactly to the public course catalog", () => {
+test("real-estate video portfolio reconciles exactly to its public course catalog", () => {
   const byState = Map.groupBy(courses, (course) => course.state_id);
   assert.equal(portfolio.built_state_count, byState.size);
   assert.equal(portfolio.course_count, courses.length);

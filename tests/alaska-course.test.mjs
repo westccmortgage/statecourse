@@ -305,19 +305,22 @@ test("fair housing teaches the Alaska classes federal law does not reach", () =>
   assert.match(module08, /2607/, "RESPA section 8 must be cited to the code");
 });
 
-test("no answer key or rationale text reaches the shipped site", () => {
-  const bank = read("config/alaska/module-question-bank.mjs");
-  const sample = JSON.parse(bank.slice(bank.indexOf("{")) ? "{}" : "{}");
-  assert.deepEqual(sample, {});
+test("no private authoring-bank reference or embedded correctChoice value reaches the shipped site", () => {
+  const embeddedKey = /\bcorrectChoice["']?\s*[:=]\s*["']?\d+\b/;
+  assert.ok(embeddedKey.test('{"correctChoice":2}'));
+  assert.ok(!embeddedKey.test('render(item.correctChoice)'));
   const publicDir = path.join(root, "public/statecourse");
   const offenders = [];
   const walk = (dir) => {
     for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
       const full = path.join(dir, entry.name);
       if (entry.isDirectory()) walk(full);
-      else if (/\.(html|js|json|css)$/.test(entry.name)) {
+      else if (/\.(html|mjs|js|json|css|md|txt|map)$/.test(entry.name)) {
         const text = fs.readFileSync(full, "utf8");
-        if (text.includes("correctChoice") || text.includes("module-question-bank")) offenders.push(full);
+        // The existing public non-credit practice intentionally includes solutions
+        // and explanations. A separately authorized reviewer renderer is not an
+        // embedded private authoring key. NMLS has its own stricter content gate.
+        if (embeddedKey.test(text) || text.includes("module-question-bank")) offenders.push(full);
       }
     }
   };

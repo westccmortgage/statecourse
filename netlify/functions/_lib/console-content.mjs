@@ -13,6 +13,7 @@ export function baseFingerprint(courseId) {
 export function validateDraft(courseId, input) {
   const structure = courseStructure(courseId);
   if (!structure.available) fail('course_renderer_not_registered',409);
+  if (structure.readOnly) fail('versioned_training_source_is_read_only',409);
   if (!input || !Array.isArray(input.overrides) || input.overrides.length > 300) fail('invalid_content_overrides');
   const fingerprint = baseFingerprint(courseId);
   if (input.baseFingerprint !== fingerprint) fail('course_structure_changed_reload_required',409);
@@ -37,6 +38,8 @@ export function validateDraft(courseId, input) {
 export async function contentWorkspace(staff, courseId) {
   const course = await courseFor(staff,courseId);
   const structure = courseStructure(courseId);
+  if (structure.readOnly) return { course, structure, baseFingerprint: structure.available ? baseFingerprint(courseId) : null,
+    draft: null, reviews: [], releases: [], storageAvailable: false, readOnly: true };
   const filter = `course_id=eq.${encodeURIComponent(courseId)}`;
   const [draft,reviews,releases] = await Promise.all([
     readRows(`console_course_drafts?${filter}&select=*&limit=1`),

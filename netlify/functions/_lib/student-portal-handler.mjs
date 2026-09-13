@@ -1,7 +1,8 @@
-import { dbRequest } from "./_lib/db.mjs";
-import { parseJson, requireSameOrigin } from "./_lib/http.mjs";
-import { requireStudentSession, sessionCookies, sessionResponse, updateStudentProfile } from "./_lib/student-session.mjs";
-import { availableTraining } from './_lib/training-access.mjs';
+import { dbRequest } from "./db.mjs";
+import { parseJson, requireSameOrigin } from "./http.mjs";
+import { requireStudentSession, sessionCookies, sessionResponse, updateStudentProfile } from "./student-session.mjs";
+import { availableTraining } from './training-access.mjs';
+import { withNmlsTrainingSummary } from './nmls-training-portal.mjs';
 
 const EVENT_TYPES = new Set(["portal_opened","course_resume_clicked","certificate_viewed","receipt_viewed","profile_viewed"]);
 
@@ -11,7 +12,7 @@ async function enrollmentBelongsTo(studentId,enrollmentId) {
   return Boolean(rows?.[0]);
 }
 
-export const handler = async (event) => {
+export const handleStudentPortal = async (event) => {
   try {
     const auth = await requireStudentSession(event);
     const cookies = auth.refreshedSession ? sessionCookies(auth.refreshedSession) : [];
@@ -24,7 +25,8 @@ export const handler = async (event) => {
         availableTraining(),
       ]);
       await dbRequest("student_portal_events",{ method:"POST",prefer:"return=minimal",body:{ student_id:auth.student.id,event_type:"portal_opened",metadata:{ source:"student_portal" } } });
-      return sessionResponse(200,{ student:profiles?.[0] || auth.student,enrollments:(enrollments || []).map(row=>({...row,enrollment_origin:origins?.find(item=>item.id===row.enrollment_id)?.enrollment_origin||null})),training,serverTime:new Date().toISOString() },cookies);
+      const summaries=await Promise.all((enrollments||[]).map(row=>withNmlsTrainingSummary(auth.student.id,{...row,enrollment_origin:origins?.find(item=>item.id===row.enrollment_id)?.enrollment_origin||null})));
+      return sessionResponse(200,{ student:profiles?.[0] || auth.student,enrollments:summaries,training,serverTime:new Date().toISOString() },cookies);
     }
 
     if (event.httpMethod === "POST") {
@@ -56,7 +58,7 @@ export const handler = async (event) => {
     throw Object.assign(new Error("method_not_allowed"),{ statusCode:405 });
   } catch (error) {
     const status = Number(error?.statusCode) || 500;
-    if (status >= 500) console.error("Student portal endpoint error",error?.message);
+    if (status >= 500) console.error("Student portal unavailable");
     return sessionResponse(status,{ error:status >= 500 ? "student_portal_unavailable" : error.message });
   }
 };

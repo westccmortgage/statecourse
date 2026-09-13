@@ -39,6 +39,8 @@ next-env.d.ts
 /dist/
 /.wrangler/
 /.sites-runtime/
+/.netlify/
+__pycache__/
 /outputs/
 /work/
 

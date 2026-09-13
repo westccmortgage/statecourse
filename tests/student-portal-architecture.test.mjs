@@ -14,7 +14,7 @@ test("student session uses secure server cookies and no browser token storage",a
 });
 
 test("portal queries and events are restricted to the authenticated student",async() => {
-  const endpoint = await read("../netlify/functions/student-portal.mjs");
+  const endpoint = await read("../netlify/functions/_lib/student-portal-handler.mjs");
   assert.match(endpoint,/student_id=eq\.\$\{encodeURIComponent\(auth\.student\.id\)\}/);
   assert.match(endpoint,/enrollmentBelongsTo\(auth\.student\.id,enrollmentId\)/);
   assert.match(endpoint,/requireStudentSession/);
@@ -22,7 +22,7 @@ test("portal queries and events are restricted to the authenticated student",asy
 });
 
 test("portal cannot award time, completion, exams, or certificates",async() => {
-  const endpoint = await read("../netlify/functions/student-portal.mjs");
+  const endpoint = await read("../netlify/functions/_lib/student-portal-handler.mjs");
   assert.doesNotMatch(endpoint,/credited_study_seconds|final_exam_eligible|regulatory_credit_status|certificate_status/);
   assert.match(endpoint,/last_portal_accessed_at/);
   assert.doesNotMatch(endpoint,/lms_compliance_state.*(?:POST|PATCH)|course_final_eligibility.*(?:POST|PATCH)/s);

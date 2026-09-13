@@ -30,7 +30,8 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const publicRoot = path.join(root, "public/statecourse");
 const registry = JSON.parse(fs.readFileSync(path.join(publicRoot, "data/state-registry.json"), "utf8"));
 const catalog = JSON.parse(fs.readFileSync(path.join(publicRoot, "data/course-catalog.json"), "utf8"));
-const catalogCourses = catalog.categories.flatMap((category) => category.programs ?? []).flatMap((program) => program.courses ?? []);
+// This registry describes real-estate state regulators, never national mortgage content.
+const catalogCourses = catalog.categories.filter(category => category.category_id === 'real-estate').flatMap((category) => category.programs ?? []).flatMap((program) => program.courses ?? []);
 
 /*
  * One entry per built jurisdiction, holding citation forms and agency names

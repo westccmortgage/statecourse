@@ -297,7 +297,7 @@ checks.push(check("22a. production training and progress integration", studentRe
    post-generation suite runs without this flag and validates the newly written artifact. */
 const testRun = tryRun(
   "node",
-  ["--test", "--test-reporter=tap", ...fs.readdirSync(path.join(root, "tests")).filter((f) => f.endsWith(".test.mjs")).map((f) => `tests/${f}`)],
+  ["--test", "--test-concurrency=1", "--test-reporter=tap", ...fs.readdirSync(path.join(root, "tests")).filter((f) => f.endsWith(".test.mjs")).map((f) => `tests/${f}`)],
   { env: { ...process.env, STATECOURSE_ACCEPTANCE_REBUILD: "1" } },
 );
 const testCounts = testRun.out.match(/# pass (\d+)[\s\S]*?# fail (\d+)/);

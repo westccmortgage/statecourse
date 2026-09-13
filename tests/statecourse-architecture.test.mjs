@@ -100,6 +100,7 @@ test("development status tracks the catalogue exactly, nothing is approved, and 
   const catalog = JSON.parse(await read("data/course-catalog.json"));
   const catalogStates = new Set(
     catalog.categories
+      .filter((category) => category.category_id === 'real-estate')
       .flatMap((category) => category.programs ?? [])
       .flatMap((program) => program.courses ?? [])
       .map((course) => course.state_id)

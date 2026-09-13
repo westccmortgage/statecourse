@@ -255,7 +255,7 @@ test("the course page notifies each student of the Department's evaluation form"
 
 test("the reviewer does not generate a student notice-delivery record", () => {
   const block = courseEndpoint.slice(courseEndpoint.indexOf('"course_opened"'), courseEndpoint.indexOf('"course_opened"') + 400);
-  assert.match(block, /if \(ctx\.mode === "student"\)/);
+  assert.match(block, /if \(ctx\.mode === "student" && ctx\.course\.state === 'CA'\)/);
 });
 
 test("the final examination link appears only when the engine says the exam is open", () => {

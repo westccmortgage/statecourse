@@ -59,7 +59,7 @@ test("the mortgage launch date is data, and the homepage repeats the catalog rat
   }
 });
 
-test("the mortgage page claims no approval and offers no enrollment", () => {
+test("the mortgage page offers training discovery but claims no approval or credit enrollment", () => {
   const page = read("mortgage/index.html");
   const courses = (mortgageCategory.programs ?? []).flatMap((program) => program.courses ?? []);
   if (courses.length === 0) {
@@ -69,12 +69,16 @@ test("the mortgage page claims no approval and offers no enrollment", () => {
   /* The launch date is a build target. It must never be worded as a regulatory date. */
   assert.ok(!/approved (in|from|by) October/i.test(page), "the page implies approval arrives on the launch date");
   assert.match(page, /not an approval date/);
+  assert.match(page, /Sign in to view free training/);
+  assert.match(page, /Course training completed/);
+  assert.match(page, /not NMLS credit earned/);
+  assert.doesNotMatch(page, /free-practice\/\?state=US|null-hour|null hours/);
 });
 
 /**
  * The discipline the rest of the site follows: a requirement is published only once it has been
  * read from the official source and recorded here. Nothing from the SAFE Act or NMLS has been read
- * into this repository, so the mortgage page may describe the programme and may not state an hour
+ * into the public claims registry, so the mortgage page describes training and does not state an hour
  * count, a subject split, or a renewal deadline — the three things a visitor would most reasonably
  * assume were verified.
  */

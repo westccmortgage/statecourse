@@ -15,6 +15,7 @@
  */
 
 import { evaluateCheckoutEligibility, getCourseCatalog } from "../config/course-catalog.mjs";
+import { HANDLED_STRIPE_EVENTS, stripeSecretKeyMode } from "../lib/stripe-contract.mjs";
 
 const checkStripe = process.argv.includes("--check-stripe");
 const mode = process.env.STRIPE_MODE === "live" ? "live" : "test";
@@ -49,11 +50,27 @@ if (!process.env.STATECOURSE_BASE_URL) problems.push("STATECOURSE_BASE_URL is no
 if (!present("STATECOURSE_ADMIN_API_TOKEN")) warnings.push("STATECOURSE_ADMIN_API_TOKEN is not set; admin payment endpoints are unavailable.");
 
 /* A live key sitting in the test variable is the mistake that costs real money. */
-if (process.env.STRIPE_SECRET_KEY_TEST?.startsWith("sk_live_")) {
+if (/^(?:sk|rk)_live_/.test(process.env.STRIPE_SECRET_KEY_TEST || "")) {
   problems.push("STRIPE_SECRET_KEY_TEST holds a LIVE key. Real cards would be charged in test mode.");
 }
-if (process.env.STRIPE_SECRET_KEY_LIVE && !process.env.STRIPE_SECRET_KEY_LIVE.startsWith("sk_live_")) {
+if (process.env.STRIPE_SECRET_KEY_LIVE && stripeSecretKeyMode(process.env.STRIPE_SECRET_KEY_LIVE) !== "live") {
   warnings.push("STRIPE_SECRET_KEY_LIVE does not look like a live key.");
+}
+const selectedKeyMode = stripeSecretKeyMode(process.env[keyVar]);
+if (present(keyVar) && selectedKeyMode !== mode) {
+  problems.push(`${keyVar} is not a valid ${mode}-mode secret or restricted key. Stripe calls are blocked.`);
+}
+let expectedWebhookUrls = [];
+if (process.env.STATECOURSE_BASE_URL) {
+  try {
+    const base = new URL(process.env.STATECOURSE_BASE_URL);
+    if (!["https:", "http:"].includes(base.protocol) || base.username || base.password) throw new Error("invalid_base_url");
+    // Both are existing routes to this handler; unrelated sites and paths do not count.
+    expectedWebhookUrls = ["/api/stripe/webhook", "/.netlify/functions/stripe-webhook"]
+      .map(path => new URL(path, base.origin).href);
+  } catch {
+    problems.push("STATECOURSE_BASE_URL is invalid; the StateCourse webhook endpoint cannot be verified.");
+  }
 }
 if (process.env.STRIPE_SECRET_KEY_TEST && process.env.STRIPE_SECRET_KEY_LIVE
   && process.env.STRIPE_SECRET_KEY_TEST === process.env.STRIPE_SECRET_KEY_LIVE) {
@@ -106,6 +123,8 @@ if (checkStripe) {
   const secretKey = mode === "live" ? process.env.STRIPE_SECRET_KEY_LIVE : process.env.STRIPE_SECRET_KEY_TEST;
   if (!secretKey) {
     warnings.push("--check-stripe was passed but no secret key is set for this mode.");
+  } else if (selectedKeyMode !== mode || !expectedWebhookUrls.length) {
+    warnings.push("Stripe checks skipped because the selected key or StateCourse endpoint configuration is invalid.");
   } else {
     console.log("\nStripe objects");
     const call = async (path) => {
@@ -143,14 +162,17 @@ if (checkStripe) {
         }
       }
       const endpoints = await call("/webhook_endpoints?limit=100");
-      const required = ["checkout.session.completed", "checkout.session.async_payment_succeeded",
-        "checkout.session.async_payment_failed", "checkout.session.expired",
-        "refund.created", "refund.updated", "refund.failed"];
+      const required = HANDLED_STRIPE_EVENTS;
       if (!endpoints.data?.length) {
         problems.push("No webhook endpoint is registered. Paid checkouts would never be finalised.");
       } else {
-        for (const endpoint of endpoints.data) {
-          const missing = required.filter((eventType) => !endpoint.enabled_events.includes(eventType) && !endpoint.enabled_events.includes("*"));
+        const matching = endpoints.data.filter(endpoint => expectedWebhookUrls.includes(endpoint.url));
+        const enabled = matching.filter(endpoint => endpoint.status === "enabled");
+        if (!matching.length) problems.push(`No StateCourse webhook endpoint is registered at ${expectedWebhookUrls[0]} (or its existing function route).`);
+        else if (!enabled.length) problems.push("The StateCourse webhook endpoint is disabled. Paid checkouts would never be finalised.");
+        for (const endpoint of enabled) {
+          const events = Array.isArray(endpoint.enabled_events) ? endpoint.enabled_events : [];
+          const missing = required.filter((eventType) => !events.includes(eventType) && !events.includes("*"));
           console.log(`  ${missing.length ? "✗" : "✓"} webhook ${endpoint.url} (${endpoint.status})`);
           if (missing.length) problems.push(`Webhook ${endpoint.url} is missing: ${missing.join(", ")}`);
         }

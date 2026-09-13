@@ -11,6 +11,17 @@
     "config/regulatory-course-versions.json",
     "config/state-regulatory-controls.json",
     "video-production/portfolio.json",
+    # Real NMLS instruction and assessment banks are server-only inputs.
+    # Nothing under nmls/ is copied into the published dist/ directory.
+    "nmls/curriculum/*.md",
+    "nmls/assessment/2026/federal-revised-candidates.json",
+    "nmls/assessment/2026/ethics-revised-candidates.json",
+    "nmls/assessment/2026/nontraditional-revised-candidates.json",
+    "nmls/assessment/2026/general-candidates.json",
+    "nmls/evidence/2026-09-13/source-register.json",
+    "nmls/evidence/2026-09-13/ai-body-review.json",
+    "nmls/evidence/2026-09-13/acquisitions/2026-09-13T09-49-48-993Z-5f1d5dc2-b86c-4b0b-9b61-67e7a849776b/manifest.json",
+    "nmls/evidence/2026-09-13/acquisitions/2026-09-13T09-49-48-993Z-5f1d5dc2-b86c-4b0b-9b61-67e7a849776b/*.html",
   ]
 
 [[headers]]
@@ -44,11 +55,6 @@
 
 [[headers]]
   for = "/payment/*"
-  [headers.values]
-    Cache-Control = "no-store"
-
-[[headers]]
-  for = "/student/*"
   [headers.values]
     Cache-Control = "no-store"
 

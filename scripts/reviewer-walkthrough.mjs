@@ -211,7 +211,7 @@ step("no-gating", "exercised", () => {
 step("no-student-write", "read", () => {
   /* Reviewer mode is resolved before any handler that writes, the assignment rows are not
      created for it, and the heartbeat is told which mode it is in. */
-  must(/if \(ctx\.mode !== "student"\) return;/.test(STUDY_PATH), "reviewer mode still initialises student assignment rows");
+  must(/if \(ctx\.mode !== "student" \|\| ctx\.trainingRuntime\) return;/.test(STUDY_PATH), "reviewer or separate training runtime mode still initialises California student assignment rows");
   const reviewerBranch = STUDY_PATH.indexOf('if (ctx.mode !== "student") {');
   const submission = STUDY_PATH.indexOf('if (eventType === "sb1495_role_submitted")');
   const finish = STUDY_PATH.indexOf("const kind=ANSWER_EVENTS.get(eventType);\n  if (!kind) fail");

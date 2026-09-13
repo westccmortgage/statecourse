@@ -5,14 +5,18 @@ import { verifiedTrainingReadiness } from './training-readiness.mjs';
 import { COURSE_IDENTITIES } from '../../../config/course-identities.mjs';
 export { trainingReadiness } from './training-readiness.mjs';
 import { governanceCatalogue } from './offering-governance.mjs';
+import { NMLS_TRAINING_COURSE as nmls, isNmlsTrainingCourse } from '../../../config/nmls-course-identity.mjs';
 
 export async function availableTraining() {
   try {
     const rows=await governanceCatalogue();
     const counts=new Map();for(const row of rows)counts.set(row.offering_id,(counts.get(row.offering_id)||0)+1);
-    const candidates=rows.filter(row=>counts.get(row.offering_id)===1&&row.offering_kind==='course'&&row.training_access_enabled===true&&row.state===getCourseConfiguration(row.offering_id)?.state&&row.discipline==='real_estate');
+    const candidates=rows.filter(row=>counts.get(row.offering_id)===1&&row.offering_kind==='course'&&row.training_access_enabled===true&&
+      (isNmlsTrainingCourse(row.offering_id)?row.state===nmls.state&&row.discipline===nmls.discipline:
+        row.state===getCourseConfiguration(row.offering_id)?.state&&row.discipline==='real_estate'));
     const verified=await Promise.all(candidates.map(async row=>({row,readiness:await verifiedTrainingReadiness(row.offering_id)})));
     return {available:true,courses:verified.filter(item=>item.readiness.ready).map(({row})=>{
+      if(isNmlsTrainingCourse(row.offering_id))return {id:nmls.id,state:nmls.state,name:nmls.title,discipline:nmls.discipline,publicId:nmls.id};
       const publicId=Object.entries(COURSE_IDENTITIES).find(([,identity])=>identity.id===row.offering_id&&identity.state===row.state)?.[0];
       return {id:row.offering_id,state:row.state,name:getCourseConfiguration(row.offering_id).title,...(publicId?{publicId}:{})};
     })};
@@ -28,6 +32,24 @@ export function trainingEnrollmentId(studentId,courseId) {
 export async function ensureTrainingEnrollment(studentId,course) {
   const readiness=await verifiedTrainingReadiness(course.id);
   if(!readiness.ready)fail(readiness.reason);
+  if(isNmlsTrainingCourse(course.id)) {
+    if(course.state!==nmls.state||course.current_version!==nmls.version||course.product_type!==nmls.productType)fail('nmls_training_course_identity_mismatch');
+    // Enrollment, grant and runtime creation share a single authorized transaction.
+    // Its access checks also cover returning rows; revoked access is never revived.
+    let result;
+    try { result=await rpc('nmls_training_enroll',{p_student_id:studentId}); }
+    catch(error) {
+      if(['nmls_training_access_denied','nmls_training_gate_closed'].includes(error?.message))fail(error.message,403);
+      if(error?.message==='nmls_training_scope_mismatch')fail(error.message,409);
+      throw error;
+    }
+    const e=result?.enrollment;
+    if(typeof result?.existing!=='boolean'||!e||e.student_id!==studentId||e.course_id!==nmls.id||e.state!==nmls.state||e.course_version!==nmls.version||
+      e.enrollment_origin!=='training'||e.compliance_credit_eligible!==false||e.checkout_attempt_id!==null||e.status!=='active'||e.completed_at||
+      !/^[a-f0-9]{8}-[a-f0-9]{4}-[1-5][a-f0-9]{3}-[89ab][a-f0-9]{3}-[a-f0-9]{12}$/i.test(e.id||'')||
+      e.expires_at!=null&&(!Number.isFinite(Date.parse(e.expires_at))||Date.parse(e.expires_at)<=Date.now()))fail('nmls_training_enrollment_unavailable',503);
+    return {enrollment:e,existing:result.existing};
+  }
   const config=getCourseConfiguration(course.id);
   if(course.state!==config.state)fail('course_state_mismatch');
   const path=`enrollments?student_id=eq.${encodeURIComponent(studentId)}&course_id=eq.${encodeURIComponent(course.id)}&select=*&order=enrollment_date.desc&limit=1001`;

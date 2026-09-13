@@ -6,6 +6,7 @@ import { dbRequest } from './db.mjs';
 // Explicit identities for the same named course across the public and delivery catalogs.
 // These retain both identifiers; they never copy approval or enable enrollment.
 import { COURSE_IDENTITIES } from '../../../config/course-identities.mjs';
+import { isNmlsTrainingCourse } from '../../../config/nmls-course-identity.mjs';
 export { COURSE_IDENTITIES } from '../../../config/course-identities.mjs';
 
 export function buildCourseInventory(catalog, database, governance, scopeStates = null) {
@@ -34,7 +35,7 @@ export function buildCourseInventory(catalog, database, governance, scopeStates 
   function row(publicCourse, dbCourse) {
     const id = dbCourse?.id || publicCourse.id;
     const state = dbCourse?.state || publicCourse.state;
-    const discipline = publicCourse?.category === 'mortgage' ? 'mortgage' : 'real_estate';
+    const discipline = publicCourse?.category === 'mortgage' || dbCourse?.product_type?.startsWith('mortgage') ? 'mortgage' : 'real_estate';
     const service = dbCourse?.approval_status === 'not_regulated';
     const readiness = service ? null : dbCourse?.trainingReadiness || trainingReadiness(id);
     const decisions = governance.rows.filter(g => g.offering_id === id && g.state === state && g.offering_kind === 'course' && g.discipline === discipline);
@@ -49,7 +50,7 @@ export function buildCourseInventory(catalog, database, governance, scopeStates 
     if (dbCourse) matched.add(dbCourse.id);
     return {id,state,name:dbCourse?.name || publicCourse.name,publicId:publicCourse?.id || null,
       databaseId:dbCourse?.id || null,route:publicCourse?.route || null,hours:publicCourse?.hours || null,
-      category:publicCourse?.category || null,discipline,version:publicCourse?.version || null,
+      category:publicCourse?.category || (isNmlsTrainingCourse(id) ? 'mortgage' : null),discipline,version:publicCourse?.version || null,
       service,trainingStatus:status,readiness,approval:decision?.approval_status || dbCourse?.approval_status || null,
       paymentMode:decision?.payment_mode || null};
   }
@@ -63,10 +64,10 @@ export function buildCourseInventory(catalog, database, governance, scopeStates 
   rows.sort((a,b) => a.state.localeCompare(b.state) || a.name.localeCompare(b.name));
   const completeDatabase = database.available && !database.truncated;
   return {publicAvailable,databaseAvailable:completeDatabase,verticals,rows,summary:{
-    catalogStates:publicAvailable ? new Set(publicCourses.map(c => c.state)).size : null,
+    catalogStates:publicAvailable ? new Set(publicCourses.map(c => c.state).filter(state => state !== 'US')).size : null,
     catalogCourses:publicAvailable ? publicCourses.length : null,
     databaseRecords:completeDatabase ? records.length : null,
-    databaseStates:completeDatabase ? new Set(records.map(c => c.state)).size : null,
+    databaseStates:completeDatabase ? new Set(records.map(c => c.state).filter(state => state !== 'US')).size : null,
     availableTraining:completeDatabase && governance.available ? rows.filter(c => c.trainingStatus === 'available').length : null,
     databaseServices:completeDatabase ? records.filter(c => c.approval_status === 'not_regulated').length : null,
   }};
@@ -86,7 +87,9 @@ export async function registerCatalogCourses(staff, input) {
   if (!Array.isArray(records) || records.length>1000) fail('course_inventory_unavailable',503);
   const inventory=await courseInventory({available:true,truncated:false,rows:records},{available:true,truncated:false,rows:[]},null);
   if (!inventory.publicAvailable) fail('public_catalog_unavailable',503);
-  const missing=inventory.rows.filter(r=>r.trainingStatus==='registration_needed');
+  // National mortgage registration includes a versioned private runtime and is
+  // installed transactionally by its migration, not this real-estate bulk tool.
+  const missing=inventory.rows.filter(r=>r.trainingStatus==='registration_needed' && r.category==='real-estate');
   const expected=Array.isArray(input.expectedIds)?[...input.expectedIds].sort():[];
   if (JSON.stringify(expected)!==JSON.stringify(missing.map(r=>r.publicId).sort())) fail('catalog_changed_reload_required');
   const bodies=missing.map(r=>{

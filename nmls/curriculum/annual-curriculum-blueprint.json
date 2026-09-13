@@ -1,0 +1,1355 @@
+{
+  "schema_version": 1,
+  "as_of": "2026-09-10",
+  "status": "authoring_blueprint_not_approved",
+  "purpose": "Curriculum design and evidence-gap ledger, not runtime release authority",
+  "minutes_are_provisional": true,
+  "duration_validated": false,
+  "learner_validation_performed": false,
+  "provider_approval_id": null,
+  "course_approval_id": null,
+  "sales_authorized": false,
+  "required_category_hours": {
+    "federal": 3,
+    "ethics": 2,
+    "nontraditional": 2
+  },
+  "standard_general_elective_hours": 1,
+  "maximum_planned_general_elective_hours": 3,
+  "source_urls": {
+    "policy": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/nmlsEdFuncSpec/education/funcSpec/maps/topics/approvedCourseTopics/approvedCourseTopicList.html",
+    "approved": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/nmlsEdFuncSpec/education/funcSpec/maps/topics/approvedCourseTopics/nmlsFS_approvedCETopicList.html",
+    "annual2026": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/nmlsEdFuncSpec/education/funcSpec/maps/topics/approvedCourseTopics/nmlsFS_approvedCETopics2026.html",
+    "annual2027": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/nmlsEdFuncSpec/education/funcSpec/maps/topics/approvedCourseTopics/nmlsFS_approvedCETopics2027.html",
+    "spec": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/nmlsEdFuncSpec/index.html",
+    "noticePolicy": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/nmlsEdFuncSpec/education/funcSpec/maps/topics/nmlsFS_edNotices.html",
+    "directory": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/courseproviderresources/SitePages/Notices.aspx",
+    "fl": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/courseproviderresources/Course%20Provider%20Resources/FL%20CE%20State%20Specific%20Education%20Notice.pdf",
+    "wv": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/courseproviderresources/Course%20Provider%20Resources/WV%20CE%20State%20Specific%20Education%20Notice.pdf",
+    "ut": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/courseproviderresources/Course%20Provider%20Resources/UT%202026%20CE%20State%20Specific%20Education%20Notice.pdf",
+    "wa": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/courseproviderresources/Course%20Provider%20Resources/WA%20CE%20State%20Specific%20Education%20Notice.pdf",
+    "caPE": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/courseproviderresources/Course%20Provider%20Resources/CA-DFPI%20State%20Specific%20Education%20Notice.pdf",
+    "AI": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/courseproviderresources/Course%20Provider%20Resources/Use%20of%20Artificial%20Intelligence%20(AI)%20in%20the%20Design%20and%20Delivery%20of%20NMLSapproved%20Courses%20082026.pdf"
+  },
+  "primary_authorities": {
+    "1002.2": "https://www.consumerfinance.gov/rules-policy/regulations/1002/2/",
+    "1002.9": "https://www.consumerfinance.gov/rules-policy/regulations/1002/9/",
+    "1002.12": "https://www.consumerfinance.gov/rules-policy/regulations/1002/12/",
+    "1002.16": "https://www.consumerfinance.gov/rules-policy/regulations/1002/16/",
+    "1026.2": "https://www.consumerfinance.gov/rules-policy/regulations/1026/2/",
+    "1026.19": "https://www.consumerfinance.gov/rules-policy/regulations/1026/19/",
+    "1026.25": "https://www.consumerfinance.gov/rules-policy/regulations/1026/25/",
+    "1026.38": "https://www.consumerfinance.gov/rules-policy/regulations/1026/38/",
+    "1008.103": "https://www.consumerfinance.gov/rules-policy/regulations/1008/103/",
+    "1024.20": "https://www.consumerfinance.gov/rules-policy/regulations/1024/20/",
+    "1029.210": "https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1029/subpart-B/section-1029.210"
+  },
+  "annual_federal_blueprints": [
+    {
+      "ce_year": 2026,
+      "delivery_window": "2026-01-01/2026-12-31",
+      "background": {
+        "authored": true,
+        "file": "federal-2026-F00-examination-background.md",
+        "reviewed_source_sha256": "8a018cf9d9d8ba44b14215735c348840b230f4c31ece27188d92a9d729c069b9",
+        "independent_agent_review": "source_and_scope_reviewed_human_review_pending",
+        "human_sme_approval": false,
+        "validated_duration": false,
+        "formative_question_count": 0,
+        "proposed_minutes": 3,
+        "NMLS_instruction_range_minutes": [
+          2,
+          3
+        ]
+      },
+      "topics": [
+        {
+          "topic_id": 1,
+          "block": "F01",
+          "label": "Notifications",
+          "proposed_instructional_minutes": 12,
+          "allocation_basis": "StateCourse authoring proposal, not prescribed per-topic duration",
+          "required_topic_source": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/nmlsEdFuncSpec/education/funcSpec/maps/topics/approvedCourseTopics/nmlsFS_approvedCETopics2026.html",
+          "primary_source_urls": [
+            "https://www.consumerfinance.gov/rules-policy/regulations/1002/2/",
+            "https://www.consumerfinance.gov/rules-policy/regulations/1002/9/"
+          ],
+          "authored": true,
+          "formative_item_ids": [
+            "KC05",
+            "KC06",
+            "KC08",
+            "KC10"
+          ],
+          "approved": false,
+          "validated_learner_duration_minutes": null
+        },
+        {
+          "topic_id": 2,
+          "block": "F01",
+          "label": "Action tracking",
+          "proposed_instructional_minutes": 10,
+          "allocation_basis": "StateCourse authoring proposal, not prescribed per-topic duration",
+          "required_topic_source": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/nmlsEdFuncSpec/education/funcSpec/maps/topics/approvedCourseTopics/nmlsFS_approvedCETopics2026.html",
+          "primary_source_urls": [
+            "https://www.consumerfinance.gov/rules-policy/regulations/1002/2/",
+            "https://www.consumerfinance.gov/rules-policy/regulations/1002/9/",
+            "https://www.consumerfinance.gov/rules-policy/regulations/1002/12/"
+          ],
+          "authored": true,
+          "formative_item_ids": [
+            "KC01",
+            "KC02",
+            "KC12"
+          ],
+          "approved": false,
+          "validated_learner_duration_minutes": null
+        },
+        {
+          "topic_id": 3,
+          "block": "F01",
+          "label": "Actual adverse-action reasons",
+          "proposed_instructional_minutes": 12,
+          "allocation_basis": "StateCourse authoring proposal, not prescribed per-topic duration",
+          "required_topic_source": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/nmlsEdFuncSpec/education/funcSpec/maps/topics/approvedCourseTopics/nmlsFS_approvedCETopics2026.html",
+          "primary_source_urls": [
+            "https://www.consumerfinance.gov/rules-policy/regulations/1002/9/"
+          ],
+          "authored": true,
+          "formative_item_ids": [
+            "KC05",
+            "KC07"
+          ],
+          "approved": false,
+          "validated_learner_duration_minutes": null
+        },
+        {
+          "topic_id": 4,
+          "block": "F01",
+          "label": "Records",
+          "proposed_instructional_minutes": 8,
+          "allocation_basis": "StateCourse authoring proposal, not prescribed per-topic duration",
+          "required_topic_source": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/nmlsEdFuncSpec/education/funcSpec/maps/topics/approvedCourseTopics/nmlsFS_approvedCETopics2026.html",
+          "primary_source_urls": [
+            "https://www.consumerfinance.gov/rules-policy/regulations/1002/12/"
+          ],
+          "authored": true,
+          "formative_item_ids": [
+            "KC08",
+            "KC09"
+          ],
+          "approved": false,
+          "validated_learner_duration_minutes": null
+        },
+        {
+          "topic_id": 5,
+          "block": "F01",
+          "label": "Initial LE timing",
+          "proposed_instructional_minutes": 15,
+          "allocation_basis": "StateCourse authoring proposal, not prescribed per-topic duration",
+          "required_topic_source": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/nmlsEdFuncSpec/education/funcSpec/maps/topics/approvedCourseTopics/nmlsFS_approvedCETopics2026.html",
+          "primary_source_urls": [
+            "https://www.consumerfinance.gov/rules-policy/regulations/1026/2/",
+            "https://www.consumerfinance.gov/rules-policy/regulations/1026/19/"
+          ],
+          "authored": true,
+          "formative_item_ids": [
+            "KC03",
+            "KC04",
+            "KC11"
+          ],
+          "approved": false,
+          "validated_learner_duration_minutes": null
+        },
+        {
+          "topic_id": 6,
+          "block": "F02",
+          "label": "LE tolerances",
+          "proposed_instructional_minutes": 18,
+          "allocation_basis": "StateCourse authoring proposal, not prescribed per-topic duration",
+          "required_topic_source": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/nmlsEdFuncSpec/education/funcSpec/maps/topics/approvedCourseTopics/nmlsFS_approvedCETopics2026.html",
+          "primary_source_urls": [
+            "https://www.consumerfinance.gov/rules-policy/regulations/1026/19/"
+          ],
+          "authored": true,
+          "formative_item_ids": [
+            "F02-KC02",
+            "F02-KC03",
+            "F02-KC04",
+            "F02-KC06",
+            "F02-KC09",
+            "F02-KC10",
+            "F02-KC16"
+          ],
+          "approved": false,
+          "validated_learner_duration_minutes": null
+        },
+        {
+          "topic_id": 7,
+          "block": "F02",
+          "label": "Zero-tolerance costs",
+          "proposed_instructional_minutes": 17,
+          "allocation_basis": "StateCourse authoring proposal, not prescribed per-topic duration",
+          "required_topic_source": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/nmlsEdFuncSpec/education/funcSpec/maps/topics/approvedCourseTopics/nmlsFS_approvedCETopics2026.html",
+          "primary_source_urls": [
+            "https://www.consumerfinance.gov/rules-policy/regulations/1026/19/"
+          ],
+          "authored": true,
+          "formative_item_ids": [
+            "F02-KC01",
+            "F02-KC05",
+            "F02-KC07",
+            "F02-KC08",
+            "F02-KC15"
+          ],
+          "approved": false,
+          "validated_learner_duration_minutes": null
+        },
+        {
+          "topic_id": 8,
+          "block": "F02",
+          "label": "Revised LE",
+          "proposed_instructional_minutes": 15,
+          "allocation_basis": "StateCourse authoring proposal, not prescribed per-topic duration",
+          "required_topic_source": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/nmlsEdFuncSpec/education/funcSpec/maps/topics/approvedCourseTopics/nmlsFS_approvedCETopics2026.html",
+          "primary_source_urls": [
+            "https://www.consumerfinance.gov/rules-policy/regulations/1026/19/"
+          ],
+          "authored": true,
+          "formative_item_ids": [
+            "F02-KC07",
+            "F02-KC08",
+            "F02-KC09",
+            "F02-KC10",
+            "F02-KC11",
+            "F02-KC12",
+            "F02-KC13",
+            "F02-KC14"
+          ],
+          "approved": false,
+          "validated_learner_duration_minutes": null
+        },
+        {
+          "topic_id": 9,
+          "block": "F03",
+          "label": "Actual settlement-service charge",
+          "proposed_instructional_minutes": 15,
+          "allocation_basis": "StateCourse authoring proposal, not prescribed per-topic duration",
+          "required_topic_source": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/nmlsEdFuncSpec/education/funcSpec/maps/topics/approvedCourseTopics/nmlsFS_approvedCETopics2026.html",
+          "primary_source_urls": [
+            "https://www.consumerfinance.gov/rules-policy/regulations/1026/19/"
+          ],
+          "authored": true,
+          "formative_item_ids": [
+            "F03-Q01",
+            "F03-Q02",
+            "F03-Q03",
+            "F03-Q04",
+            "F03-Q05",
+            "F03-Q06",
+            "F03-Q14"
+          ],
+          "approved": false,
+          "validated_learner_duration_minutes": null
+        },
+        {
+          "topic_id": 10,
+          "block": "F03",
+          "label": "CD ultimate settlement-service payee (not consumer delivery recipient)",
+          "proposed_instructional_minutes": 10,
+          "allocation_basis": "StateCourse authoring proposal, not prescribed per-topic duration",
+          "required_topic_source": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/nmlsEdFuncSpec/education/funcSpec/maps/topics/approvedCourseTopics/nmlsFS_approvedCETopics2026.html",
+          "primary_source_urls": [
+            "https://www.consumerfinance.gov/rules-policy/regulations/1026/38/"
+          ],
+          "authored": true,
+          "formative_item_ids": [
+            "F03-Q07",
+            "F03-Q08",
+            "F03-Q13"
+          ],
+          "approved": false,
+          "validated_learner_duration_minutes": null
+        }
+      ],
+      "integrated_exercise_proposed_minutes": 15,
+      "total_proposed_minutes": 150
+    },
+    {
+      "ce_year": 2027,
+      "delivery_window": "2027-01-01/2027-12-31",
+      "background": {
+        "proposed_minutes": 3,
+        "NMLS_instruction_range_minutes": [
+          2,
+          3
+        ]
+      },
+      "topics": [
+        {
+          "topic_id": 1,
+          "label": "Licensing activity",
+          "proposed_instructional_minutes": 13,
+          "allocation_basis": "StateCourse authoring proposal, not prescribed per-topic duration",
+          "required_topic_source": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/nmlsEdFuncSpec/education/funcSpec/maps/topics/approvedCourseTopics/nmlsFS_approvedCETopics2027.html",
+          "primary_source_urls": [
+            "https://www.consumerfinance.gov/rules-policy/regulations/1008/103/"
+          ],
+          "open_primary_source_checks": [],
+          "authored": false,
+          "approved": false,
+          "validated_learner_duration_minutes": null
+        },
+        {
+          "topic_id": 2,
+          "label": "HECM origination charges",
+          "proposed_instructional_minutes": 14,
+          "allocation_basis": "StateCourse authoring proposal, not prescribed per-topic duration",
+          "required_topic_source": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/nmlsEdFuncSpec/education/funcSpec/maps/topics/approvedCourseTopics/nmlsFS_approvedCETopics2027.html",
+          "primary_source_urls": [],
+          "open_primary_source_checks": [
+            "current_24_CFR_206_31_full_text_and_formula_not_retrieved"
+          ],
+          "authored": false,
+          "approved": false,
+          "validated_learner_duration_minutes": null
+        },
+        {
+          "topic_id": 3,
+          "label": "Counseling list",
+          "proposed_instructional_minutes": 11,
+          "allocation_basis": "StateCourse authoring proposal, not prescribed per-topic duration",
+          "required_topic_source": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/nmlsEdFuncSpec/education/funcSpec/maps/topics/approvedCourseTopics/nmlsFS_approvedCETopics2027.html",
+          "primary_source_urls": [
+            "https://www.consumerfinance.gov/rules-policy/regulations/1024/20/"
+          ],
+          "open_primary_source_checks": [
+            "verify_current_CFPB_HUD_list_generation_instructions"
+          ],
+          "authored": false,
+          "approved": false,
+          "validated_learner_duration_minutes": null
+        },
+        {
+          "topic_id": 4,
+          "label": "Missing action notice",
+          "proposed_instructional_minutes": 13,
+          "allocation_basis": "StateCourse authoring proposal, not prescribed per-topic duration",
+          "required_topic_source": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/nmlsEdFuncSpec/education/funcSpec/maps/topics/approvedCourseTopics/nmlsFS_approvedCETopics2027.html",
+          "primary_source_urls": [
+            "https://www.consumerfinance.gov/rules-policy/regulations/1002/9/"
+          ],
+          "open_primary_source_checks": [],
+          "authored": false,
+          "approved": false,
+          "validated_learner_duration_minutes": null
+        },
+        {
+          "topic_id": 5,
+          "label": "Incorrect notice and outside source",
+          "proposed_instructional_minutes": 15,
+          "allocation_basis": "StateCourse authoring proposal, not prescribed per-topic duration",
+          "required_topic_source": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/nmlsEdFuncSpec/education/funcSpec/maps/topics/approvedCourseTopics/nmlsFS_approvedCETopics2027.html",
+          "primary_source_urls": [
+            "https://www.consumerfinance.gov/rules-policy/regulations/1002/9/"
+          ],
+          "open_primary_source_checks": [
+            "current_15_USC_1681m_full_text_not_retrieved"
+          ],
+          "authored": false,
+          "approved": false,
+          "validated_learner_duration_minutes": null
+        },
+        {
+          "topic_id": 6,
+          "label": "AML staff training",
+          "proposed_instructional_minutes": 12,
+          "allocation_basis": "StateCourse authoring proposal, not prescribed per-topic duration",
+          "required_topic_source": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/nmlsEdFuncSpec/education/funcSpec/maps/topics/approvedCourseTopics/nmlsFS_approvedCETopics2027.html",
+          "primary_source_urls": [
+            "https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1029/subpart-B/section-1029.210"
+          ],
+          "open_primary_source_checks": [],
+          "authored": false,
+          "approved": false,
+          "validated_learner_duration_minutes": null
+        },
+        {
+          "topic_id": 7,
+          "label": "Tolerance classification and revision evidence",
+          "proposed_instructional_minutes": 25,
+          "allocation_basis": "StateCourse authoring proposal, not prescribed per-topic duration",
+          "required_topic_source": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/nmlsEdFuncSpec/education/funcSpec/maps/topics/approvedCourseTopics/nmlsFS_approvedCETopics2027.html",
+          "primary_source_urls": [
+            "https://www.consumerfinance.gov/rules-policy/regulations/1026/19/"
+          ],
+          "open_primary_source_checks": [],
+          "authored": false,
+          "approved": false,
+          "validated_learner_duration_minutes": null
+        },
+        {
+          "topic_id": 8,
+          "label": "Rate-lock redisclosure",
+          "proposed_instructional_minutes": 11,
+          "allocation_basis": "StateCourse authoring proposal, not prescribed per-topic duration",
+          "required_topic_source": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/nmlsEdFuncSpec/education/funcSpec/maps/topics/approvedCourseTopics/nmlsFS_approvedCETopics2027.html",
+          "primary_source_urls": [
+            "https://www.consumerfinance.gov/rules-policy/regulations/1026/19/"
+          ],
+          "open_primary_source_checks": [],
+          "authored": false,
+          "approved": false,
+          "validated_learner_duration_minutes": null
+        },
+        {
+          "topic_id": 9,
+          "label": "Excess settlement fee",
+          "proposed_instructional_minutes": 10,
+          "allocation_basis": "StateCourse authoring proposal, not prescribed per-topic duration",
+          "required_topic_source": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/nmlsEdFuncSpec/education/funcSpec/maps/topics/approvedCourseTopics/nmlsFS_approvedCETopics2027.html",
+          "primary_source_urls": [
+            "https://www.consumerfinance.gov/rules-policy/regulations/1026/19/"
+          ],
+          "open_primary_source_checks": [],
+          "authored": false,
+          "approved": false,
+          "validated_learner_duration_minutes": null
+        },
+        {
+          "topic_id": 10,
+          "label": "Post-consummation correction",
+          "proposed_instructional_minutes": 13,
+          "allocation_basis": "StateCourse authoring proposal, not prescribed per-topic duration",
+          "required_topic_source": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/nmlsEdFuncSpec/education/funcSpec/maps/topics/approvedCourseTopics/nmlsFS_approvedCETopics2027.html",
+          "primary_source_urls": [
+            "https://www.consumerfinance.gov/rules-policy/regulations/1026/19/"
+          ],
+          "open_primary_source_checks": [],
+          "authored": false,
+          "approved": false,
+          "validated_learner_duration_minutes": null
+        }
+      ],
+      "integrated_exercise_proposed_minutes": 10,
+      "total_proposed_minutes": 150
+    }
+  ],
+  "other_internal_blocks": [
+    {
+      "id": "E01",
+      "category": "ethics",
+      "proposed_minutes": 50,
+      "authored": true,
+      "file": "ethics-2026-E01-consistent-treatment.md",
+      "reviewed_source_sha256": "8e3783c493cd8c4d567c1242b49975a36312d014804fc2aa1a35c810fdb71d94",
+      "formative_question_count": 14,
+      "independent_agent_review": "source_and_key_reviewed_assessment_design_open",
+      "human_sme_approval": false,
+      "validated_duration": false,
+      "approved_final_exam": false
+    },
+    {
+      "id": "E02",
+      "category": "ethics",
+      "proposed_minutes": 50,
+      "authored": true,
+      "file": "ethics-2026-E02-fraud-resistance-and-consumer-protection.md",
+      "reviewed_source_sha256": "c878836719ba5f88ede9055dbb392214b6a9186dbe8444be4de1818761869c9e",
+      "formative_question_count": 14,
+      "independent_agent_review": "revised_keys_and_targeted_wording_reviewed_human_item_review_pending",
+      "human_sme_approval": false,
+      "validated_duration": false,
+      "approved_final_exam": false
+    },
+    {
+      "id": "N01",
+      "category": "nontraditional",
+      "proposed_minutes": 50,
+      "authored": true,
+      "file": "nontraditional-2026-N01-payment-change-and-product-risk.md",
+      "reviewed_source_sha256": "c8d78840a8ddcea94063921d7d45a1c0e182e590606d84290932670186e9b22d",
+      "formative_question_count": 14,
+      "independent_agent_review": "source_and_key_reviewed_assessment_design_open",
+      "human_sme_approval": false,
+      "validated_duration": false,
+      "approved_final_exam": false
+    },
+    {
+      "id": "N02",
+      "category": "nontraditional",
+      "proposed_minutes": 50,
+      "authored": true,
+      "file": "nontraditional-2026-N02-underwriting-evidence-and-non-qm.md",
+      "reviewed_source_sha256": "0b75034ffe71d4088153add4630292f2babb4c2b7542f3a94edc07f3955ac522",
+      "formative_question_count": 16,
+      "independent_agent_review": "source_and_key_reviewed_assessment_design_open",
+      "human_sme_approval": false,
+      "validated_duration": false,
+      "approved_final_exam": false
+    },
+    {
+      "id": "G01",
+      "category": "general",
+      "proposed_minutes": 50,
+      "authored": true,
+      "file": "general-2026-G01-mortgage-file-integrity.md",
+      "reviewed_source_sha256": "f099e672d3bc491a53f4391db244eaf1266cda9632da00b28a8aa8c7aff0bffd",
+      "formative_question_count": 16,
+      "independent_agent_review": "source_and_revised_bank_reviewed_human_item_review_pending",
+      "human_sme_approval": false,
+      "validated_duration": false,
+      "approved_final_exam": false
+    },
+    {
+      "id": "G02",
+      "category": "general",
+      "proposed_minutes": 50,
+      "authored": true,
+      "file": "general-2026-G02-complex-residential-transaction-coordination.md",
+      "reviewed_source_sha256": "bb46dc176351350a8dd48a47ae934da88be946b3647a1cedd8c2668682459afe",
+      "formative_question_count": 14,
+      "independent_agent_review": "revised_source_and_bank_reviewed_human_item_review_pending",
+      "human_sme_approval": false,
+      "validated_duration": false,
+      "approved_final_exam": false
+    },
+    {
+      "id": "G03",
+      "category": "general",
+      "proposed_minutes": 50,
+      "authored": true,
+      "file": "general-2026-G03-residential-lending-exception-governance.md",
+      "reviewed_source_sha256": "3ea4be98a6db37fdadd21335c2b404642b7b3d98527112d329877b5858f7d1d2",
+      "formative_question_count": 16,
+      "independent_agent_review": "revised_source_and_bank_reviewed_human_item_review_pending",
+      "human_sme_approval": false,
+      "validated_duration": false,
+      "approved_final_exam": false
+    }
+  ],
+  "state_modules": [
+    {
+      "agency_id": "AZ",
+      "state_code": "AZ",
+      "state_specific_hours": 1,
+      "proposed_total_instructional_minutes": 50,
+      "hour_source_url": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/testingHbk/education/mlo_testing/state_specificReqs/mloTestingHbkStatespecificAz.html",
+      "notice_directory_url": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/courseproviderresources/SitePages/Notices.aspx",
+      "notice_url": null,
+      "notice_discovery_status": "no_CE_notice_found_in_inspected_directory",
+      "notice_visual_review_completed": false,
+      "notice_scope_mapped": false,
+      "current_state_law_reconciliation_complete": false,
+      "authored": false,
+      "approved": false,
+      "sales_authorized": false,
+      "course_approval_id": null,
+      "release_blockers": [
+        "obtain_current_provider_facing_CE_scope",
+        "current_law_reconciliation",
+        "human_SME_review",
+        "actual_learner_validation",
+        "course_approval",
+        "operational_release"
+      ],
+      "notes": []
+    },
+    {
+      "agency_id": "CA-DFPI",
+      "state_code": "CA",
+      "state_specific_hours": 1,
+      "proposed_total_instructional_minutes": 50,
+      "hour_source_url": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/testingHbk/education/mlo_testing/state_specificReqs/mlo_testing_hbk_stateSpecific_CA_dfpi.html",
+      "notice_directory_url": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/courseproviderresources/SitePages/Notices.aspx",
+      "notice_url": null,
+      "notice_discovery_status": "no_CE_notice_found_in_inspected_directory",
+      "notice_visual_review_completed": false,
+      "notice_scope_mapped": false,
+      "current_state_law_reconciliation_complete": false,
+      "authored": false,
+      "approved": false,
+      "sales_authorized": false,
+      "course_approval_id": null,
+      "release_blockers": [
+        "obtain_current_provider_facing_CE_scope",
+        "current_law_reconciliation",
+        "human_SME_review",
+        "actual_learner_validation",
+        "course_approval",
+        "operational_release"
+      ],
+      "notes": []
+    },
+    {
+      "agency_id": "CT",
+      "state_code": "CT",
+      "state_specific_hours": 1,
+      "proposed_total_instructional_minutes": 50,
+      "hour_source_url": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/testingHbk/education/mlo_testing/state_specificReqs/mlo_testing_hbk_stateSpecific_CT.html",
+      "notice_directory_url": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/courseproviderresources/SitePages/Notices.aspx",
+      "notice_url": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/courseproviderresources/Course%20Provider%20Resources/CT%20CE%20State%20Specific%20Education%20Notice.pdf",
+      "notice_discovery_status": "linked_full_text_retrieval_failed",
+      "notice_visual_review_completed": false,
+      "notice_scope_mapped": false,
+      "current_state_law_reconciliation_complete": false,
+      "authored": false,
+      "approved": false,
+      "sales_authorized": false,
+      "course_approval_id": null,
+      "release_blockers": [
+        "full_notice_not_read",
+        "current_law_reconciliation",
+        "human_SME_review",
+        "actual_learner_validation",
+        "course_approval",
+        "operational_release"
+      ],
+      "notes": []
+    },
+    {
+      "agency_id": "FL",
+      "state_code": "FL",
+      "state_specific_hours": 1,
+      "proposed_total_instructional_minutes": 50,
+      "hour_source_url": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/testingHbk/education/mlo_testing/state_specificReqs/mlo_testing_hbk_stateSpecific_FL.html",
+      "notice_directory_url": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/courseproviderresources/SitePages/Notices.aspx",
+      "notice_url": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/courseproviderresources/Course%20Provider%20Resources/FL%20CE%20State%20Specific%20Education%20Notice.pdf",
+      "notice_discovery_status": "full_text_read",
+      "notice_visual_review_completed": false,
+      "notice_scope_mapped": true,
+      "current_state_law_reconciliation_complete": false,
+      "authored": false,
+      "approved": false,
+      "sales_authorized": false,
+      "course_approval_id": null,
+      "release_blockers": [
+        "current_law_reconciliation",
+        "human_SME_review",
+        "actual_learner_validation",
+        "course_approval",
+        "operational_release"
+      ],
+      "notes": []
+    },
+    {
+      "agency_id": "GA",
+      "state_code": "GA",
+      "state_specific_hours": 1,
+      "proposed_total_instructional_minutes": 50,
+      "hour_source_url": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/testingHbk/education/mlo_testing/state_specificReqs/mlo_testing_hbk_stateSpecific_GA.html",
+      "notice_directory_url": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/courseproviderresources/SitePages/Notices.aspx",
+      "notice_url": null,
+      "notice_discovery_status": "no_CE_notice_found_in_inspected_directory",
+      "notice_visual_review_completed": false,
+      "notice_scope_mapped": false,
+      "current_state_law_reconciliation_complete": false,
+      "authored": false,
+      "approved": false,
+      "sales_authorized": false,
+      "course_approval_id": null,
+      "release_blockers": [
+        "obtain_current_provider_facing_CE_scope",
+        "current_law_reconciliation",
+        "human_SME_review",
+        "actual_learner_validation",
+        "course_approval",
+        "operational_release"
+      ],
+      "notes": []
+    },
+    {
+      "agency_id": "HI",
+      "state_code": "HI",
+      "state_specific_hours": 1,
+      "proposed_total_instructional_minutes": 50,
+      "hour_source_url": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/testingHbk/education/mlo_testing/state_specificReqs/mlo_testing_hbk_stateSpecific_HI.html",
+      "notice_directory_url": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/courseproviderresources/SitePages/Notices.aspx",
+      "notice_url": null,
+      "notice_discovery_status": "no_CE_notice_found_in_inspected_directory",
+      "notice_visual_review_completed": false,
+      "notice_scope_mapped": false,
+      "current_state_law_reconciliation_complete": false,
+      "authored": false,
+      "approved": false,
+      "sales_authorized": false,
+      "course_approval_id": null,
+      "release_blockers": [
+        "obtain_current_provider_facing_CE_scope",
+        "current_law_reconciliation",
+        "human_SME_review",
+        "actual_learner_validation",
+        "course_approval",
+        "operational_release"
+      ],
+      "notes": []
+    },
+    {
+      "agency_id": "ID",
+      "state_code": "ID",
+      "state_specific_hours": 1,
+      "proposed_total_instructional_minutes": 50,
+      "hour_source_url": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/testingHbk/education/mlo_testing/state_specificReqs/mlo_testing_hbk_stateSpecific_ID.html",
+      "notice_directory_url": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/courseproviderresources/SitePages/Notices.aspx",
+      "notice_url": null,
+      "notice_discovery_status": "no_CE_notice_found_in_inspected_directory",
+      "notice_visual_review_completed": false,
+      "notice_scope_mapped": false,
+      "current_state_law_reconciliation_complete": false,
+      "authored": false,
+      "approved": false,
+      "sales_authorized": false,
+      "course_approval_id": null,
+      "release_blockers": [
+        "obtain_current_provider_facing_CE_scope",
+        "current_law_reconciliation",
+        "human_SME_review",
+        "actual_learner_validation",
+        "course_approval",
+        "operational_release"
+      ],
+      "notes": []
+    },
+    {
+      "agency_id": "KY",
+      "state_code": "KY",
+      "state_specific_hours": 1,
+      "proposed_total_instructional_minutes": 50,
+      "hour_source_url": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/testingHbk/education/mlo_testing/state_specificReqs/mlo_testing_hbk_stateSpecific_KY.html",
+      "notice_directory_url": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/courseproviderresources/SitePages/Notices.aspx",
+      "notice_url": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/courseproviderresources/Course%20Provider%20Resources/KY%20CE%20State%20Specific%20Education%20Notice.pdf",
+      "notice_discovery_status": "linked_full_text_retrieval_failed",
+      "notice_visual_review_completed": false,
+      "notice_scope_mapped": false,
+      "current_state_law_reconciliation_complete": false,
+      "authored": false,
+      "approved": false,
+      "sales_authorized": false,
+      "course_approval_id": null,
+      "release_blockers": [
+        "full_notice_not_read",
+        "current_law_reconciliation",
+        "human_SME_review",
+        "actual_learner_validation",
+        "course_approval",
+        "operational_release"
+      ],
+      "notes": []
+    },
+    {
+      "agency_id": "MD",
+      "state_code": "MD",
+      "state_specific_hours": 1,
+      "proposed_total_instructional_minutes": 50,
+      "hour_source_url": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/testingHbk/education/mlo_testing/state_specificReqs/mlo_testing_hbk_stateSpecific_MD.html",
+      "notice_directory_url": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/courseproviderresources/SitePages/Notices.aspx",
+      "notice_url": null,
+      "notice_discovery_status": "no_CE_notice_found_in_inspected_directory",
+      "notice_visual_review_completed": false,
+      "notice_scope_mapped": false,
+      "current_state_law_reconciliation_complete": false,
+      "authored": false,
+      "approved": false,
+      "sales_authorized": false,
+      "course_approval_id": null,
+      "release_blockers": [
+        "obtain_current_provider_facing_CE_scope",
+        "current_law_reconciliation",
+        "human_SME_review",
+        "actual_learner_validation",
+        "course_approval",
+        "operational_release"
+      ],
+      "notes": []
+    },
+    {
+      "agency_id": "MA",
+      "state_code": "MA",
+      "state_specific_hours": 1,
+      "proposed_total_instructional_minutes": 50,
+      "hour_source_url": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/testingHbk/education/mlo_testing/state_specificReqs/mlo_testing_hbk_stateSpecific_MA.html",
+      "notice_directory_url": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/courseproviderresources/SitePages/Notices.aspx",
+      "notice_url": null,
+      "notice_discovery_status": "no_CE_notice_found_in_inspected_directory",
+      "notice_visual_review_completed": false,
+      "notice_scope_mapped": false,
+      "current_state_law_reconciliation_complete": false,
+      "authored": false,
+      "approved": false,
+      "sales_authorized": false,
+      "course_approval_id": null,
+      "release_blockers": [
+        "obtain_current_provider_facing_CE_scope",
+        "current_law_reconciliation",
+        "human_SME_review",
+        "actual_learner_validation",
+        "course_approval",
+        "operational_release"
+      ],
+      "notes": []
+    },
+    {
+      "agency_id": "MN",
+      "state_code": "MN",
+      "state_specific_hours": 1,
+      "proposed_total_instructional_minutes": 50,
+      "hour_source_url": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/testingHbk/education/mlo_testing/state_specificReqs/mlo_testing_hbk_stateSpecific_MN.html",
+      "notice_directory_url": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/courseproviderresources/SitePages/Notices.aspx",
+      "notice_url": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/courseproviderresources/Course%20Provider%20Resources/MN%20CE%20State%20Specific%20Education%20Notice.pdf",
+      "notice_discovery_status": "linked_full_text_retrieval_failed",
+      "notice_visual_review_completed": false,
+      "notice_scope_mapped": false,
+      "current_state_law_reconciliation_complete": false,
+      "authored": false,
+      "approved": false,
+      "sales_authorized": false,
+      "course_approval_id": null,
+      "release_blockers": [
+        "full_notice_not_read",
+        "current_law_reconciliation",
+        "human_SME_review",
+        "actual_learner_validation",
+        "course_approval",
+        "operational_release"
+      ],
+      "notes": []
+    },
+    {
+      "agency_id": "MO",
+      "state_code": "MO",
+      "state_specific_hours": 1,
+      "proposed_total_instructional_minutes": 50,
+      "hour_source_url": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/testingHbk/education/mlo_testing/state_specificReqs/mlo_testing_hbk_stateSpecific_MO.html",
+      "notice_directory_url": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/courseproviderresources/SitePages/Notices.aspx",
+      "notice_url": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/courseproviderresources/Course%20Provider%20Resources/MO%20CE%20State%20Specific%20Education%20Notice.pdf",
+      "notice_discovery_status": "linked_full_text_retrieval_failed",
+      "notice_visual_review_completed": false,
+      "notice_scope_mapped": false,
+      "current_state_law_reconciliation_complete": false,
+      "authored": false,
+      "approved": false,
+      "sales_authorized": false,
+      "course_approval_id": null,
+      "release_blockers": [
+        "full_notice_not_read",
+        "current_law_reconciliation",
+        "human_SME_review",
+        "actual_learner_validation",
+        "course_approval",
+        "operational_release"
+      ],
+      "notes": []
+    },
+    {
+      "agency_id": "NJ",
+      "state_code": "NJ",
+      "state_specific_hours": 2,
+      "proposed_total_instructional_minutes": 100,
+      "hour_source_url": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/testingHbk/education/mlo_testing/state_specificReqs/mlo_testing_hbk_stateSpecific_NJ.html",
+      "notice_directory_url": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/courseproviderresources/SitePages/Notices.aspx",
+      "notice_url": null,
+      "notice_discovery_status": "no_CE_notice_found_in_inspected_directory",
+      "notice_visual_review_completed": false,
+      "notice_scope_mapped": false,
+      "current_state_law_reconciliation_complete": false,
+      "authored": false,
+      "approved": false,
+      "sales_authorized": false,
+      "course_approval_id": null,
+      "release_blockers": [
+        "obtain_current_provider_facing_CE_scope",
+        "current_law_reconciliation",
+        "human_SME_review",
+        "actual_learner_validation",
+        "course_approval",
+        "operational_release"
+      ],
+      "notes": []
+    },
+    {
+      "agency_id": "NM",
+      "state_code": "NM",
+      "state_specific_hours": 1,
+      "proposed_total_instructional_minutes": 50,
+      "hour_source_url": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/testingHbk/education/mlo_testing/state_specificReqs/mlo_testing_hbk_stateSpecific_NM.html",
+      "notice_directory_url": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/courseproviderresources/SitePages/Notices.aspx",
+      "notice_url": null,
+      "notice_discovery_status": "no_CE_notice_found_in_inspected_directory",
+      "notice_visual_review_completed": false,
+      "notice_scope_mapped": false,
+      "current_state_law_reconciliation_complete": false,
+      "authored": false,
+      "approved": false,
+      "sales_authorized": false,
+      "course_approval_id": null,
+      "release_blockers": [
+        "obtain_current_provider_facing_CE_scope",
+        "current_law_reconciliation",
+        "human_SME_review",
+        "actual_learner_validation",
+        "course_approval",
+        "operational_release"
+      ],
+      "notes": []
+    },
+    {
+      "agency_id": "NY",
+      "state_code": "NY",
+      "state_specific_hours": 3,
+      "proposed_total_instructional_minutes": 150,
+      "hour_source_url": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/testingHbk/education/mlo_testing/state_specificReqs/mlo_testing_hbk_stateSpecific_NY.html",
+      "notice_directory_url": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/courseproviderresources/SitePages/Notices.aspx",
+      "notice_url": null,
+      "notice_discovery_status": "no_CE_notice_found_in_inspected_directory",
+      "notice_visual_review_completed": false,
+      "notice_scope_mapped": false,
+      "current_state_law_reconciliation_complete": false,
+      "authored": false,
+      "approved": false,
+      "sales_authorized": false,
+      "course_approval_id": null,
+      "release_blockers": [
+        "obtain_current_provider_facing_CE_scope",
+        "current_law_reconciliation",
+        "human_SME_review",
+        "actual_learner_validation",
+        "course_approval",
+        "operational_release"
+      ],
+      "notes": []
+    },
+    {
+      "agency_id": "NC",
+      "state_code": "NC",
+      "state_specific_hours": 1,
+      "proposed_total_instructional_minutes": 50,
+      "hour_source_url": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/testingHbk/education/mlo_testing/state_specificReqs/mlo_testing_hbk_stateSpecific_NC.html",
+      "notice_directory_url": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/courseproviderresources/SitePages/Notices.aspx",
+      "notice_url": null,
+      "notice_discovery_status": "no_CE_notice_found_in_inspected_directory",
+      "notice_visual_review_completed": false,
+      "notice_scope_mapped": false,
+      "current_state_law_reconciliation_complete": false,
+      "authored": false,
+      "approved": false,
+      "sales_authorized": false,
+      "course_approval_id": null,
+      "release_blockers": [
+        "obtain_current_provider_facing_CE_scope",
+        "current_law_reconciliation",
+        "human_SME_review",
+        "actual_learner_validation",
+        "course_approval",
+        "operational_release"
+      ],
+      "notes": []
+    },
+    {
+      "agency_id": "OR",
+      "state_code": "OR",
+      "state_specific_hours": 2,
+      "proposed_total_instructional_minutes": 100,
+      "hour_source_url": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/testingHbk/education/mlo_testing/state_specificReqs/mlo_testing_hbk_stateSpecific_OR.html",
+      "notice_directory_url": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/courseproviderresources/SitePages/Notices.aspx",
+      "notice_url": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/courseproviderresources/Course%20Provider%20Resources/OR%20CE%20State%20Specific%20Education%20Notice.pdf",
+      "notice_discovery_status": "linked_full_text_retrieval_failed",
+      "notice_visual_review_completed": false,
+      "notice_scope_mapped": false,
+      "current_state_law_reconciliation_complete": false,
+      "authored": false,
+      "approved": false,
+      "sales_authorized": false,
+      "course_approval_id": null,
+      "release_blockers": [
+        "full_notice_not_read",
+        "current_law_reconciliation",
+        "human_SME_review",
+        "actual_learner_validation",
+        "course_approval",
+        "operational_release"
+      ],
+      "notes": []
+    },
+    {
+      "agency_id": "PA",
+      "state_code": "PA",
+      "state_specific_hours": 1,
+      "proposed_total_instructional_minutes": 50,
+      "hour_source_url": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/testingHbk/education/mlo_testing/state_specificReqs/mlo_testing_hbk_stateSpecific_PA.html",
+      "notice_directory_url": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/courseproviderresources/SitePages/Notices.aspx",
+      "notice_url": null,
+      "notice_discovery_status": "no_CE_notice_found_in_inspected_directory",
+      "notice_visual_review_completed": false,
+      "notice_scope_mapped": false,
+      "current_state_law_reconciliation_complete": false,
+      "authored": false,
+      "approved": false,
+      "sales_authorized": false,
+      "course_approval_id": null,
+      "release_blockers": [
+        "obtain_current_provider_facing_CE_scope",
+        "current_law_reconciliation",
+        "human_SME_review",
+        "actual_learner_validation",
+        "course_approval",
+        "operational_release"
+      ],
+      "notes": []
+    },
+    {
+      "agency_id": "RI",
+      "state_code": "RI",
+      "state_specific_hours": 1,
+      "proposed_total_instructional_minutes": 50,
+      "hour_source_url": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/testingHbk/education/mlo_testing/state_specificReqs/mlo_testing_hbk_stateSpecific_RI.html",
+      "notice_directory_url": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/courseproviderresources/SitePages/Notices.aspx",
+      "notice_url": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/courseproviderresources/Course%20Provider%20Resources/RI%20CE%20State%20Specific%20Education%20Notice.pdf",
+      "notice_discovery_status": "linked_full_text_retrieval_failed",
+      "notice_visual_review_completed": false,
+      "notice_scope_mapped": false,
+      "current_state_law_reconciliation_complete": false,
+      "authored": false,
+      "approved": false,
+      "sales_authorized": false,
+      "course_approval_id": null,
+      "release_blockers": [
+        "full_notice_not_read",
+        "current_law_reconciliation",
+        "human_SME_review",
+        "actual_learner_validation",
+        "course_approval",
+        "operational_release"
+      ],
+      "notes": []
+    },
+    {
+      "agency_id": "SC-BFI",
+      "state_code": "SC",
+      "state_specific_hours": 1,
+      "proposed_total_instructional_minutes": 50,
+      "hour_source_url": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/testingHbk/education/mlo_testing/state_specificReqs/mlo_testing_hbk_stateSpecific_SC_BFI.html",
+      "notice_directory_url": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/courseproviderresources/SitePages/Notices.aspx",
+      "notice_url": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/courseproviderresources/Course%20Provider%20Resources/SC%20CE%20State%20Specific%20Education%20Notice.pdf",
+      "notice_discovery_status": "linked_full_text_retrieval_failed",
+      "notice_visual_review_completed": false,
+      "notice_scope_mapped": false,
+      "current_state_law_reconciliation_complete": false,
+      "authored": false,
+      "approved": false,
+      "sales_authorized": false,
+      "course_approval_id": null,
+      "release_blockers": [
+        "full_notice_not_read",
+        "current_law_reconciliation",
+        "human_SME_review",
+        "actual_learner_validation",
+        "course_approval",
+        "operational_release"
+      ],
+      "notes": [
+        "Directory says separate agency course approvals are required."
+      ]
+    },
+    {
+      "agency_id": "SC-DCA",
+      "state_code": "SC",
+      "state_specific_hours": 1,
+      "proposed_total_instructional_minutes": 50,
+      "hour_source_url": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/testingHbk/education/mlo_testing/state_specificReqs/mlo_testing_hbk_stateSpecific_SC_DCA.html",
+      "notice_directory_url": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/courseproviderresources/SitePages/Notices.aspx",
+      "notice_url": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/courseproviderresources/Course%20Provider%20Resources/SC%20CE%20State%20Specific%20Education%20Notice.pdf",
+      "notice_discovery_status": "linked_full_text_retrieval_failed",
+      "notice_visual_review_completed": false,
+      "notice_scope_mapped": false,
+      "current_state_law_reconciliation_complete": false,
+      "authored": false,
+      "approved": false,
+      "sales_authorized": false,
+      "course_approval_id": null,
+      "release_blockers": [
+        "full_notice_not_read",
+        "current_law_reconciliation",
+        "human_SME_review",
+        "actual_learner_validation",
+        "course_approval",
+        "operational_release"
+      ],
+      "notes": [
+        "Directory says separate agency course approvals are required."
+      ]
+    },
+    {
+      "agency_id": "UT-DRE",
+      "state_code": "UT",
+      "state_specific_hours": 1,
+      "proposed_total_instructional_minutes": 50,
+      "hour_source_url": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/testingHbk/education/mlo_testing/state_specificReqs/mlo_testing_hbk_stateSepcific_UT-DRE.html",
+      "notice_directory_url": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/courseproviderresources/SitePages/Notices.aspx",
+      "notice_url": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/courseproviderresources/Course%20Provider%20Resources/UT%202026%20CE%20State%20Specific%20Education%20Notice.pdf",
+      "notice_discovery_status": "linked_full_text_retrieval_failed",
+      "notice_visual_review_completed": false,
+      "notice_scope_mapped": false,
+      "current_state_law_reconciliation_complete": false,
+      "authored": false,
+      "approved": false,
+      "sales_authorized": false,
+      "course_approval_id": null,
+      "release_blockers": [
+        "full_notice_not_read",
+        "current_law_reconciliation",
+        "human_SME_review",
+        "actual_learner_validation",
+        "course_approval",
+        "operational_release"
+      ],
+      "notes": [
+        "Use current 2026 annual notice; do not assume historic two-hour live requirement."
+      ]
+    },
+    {
+      "agency_id": "WA",
+      "state_code": "WA",
+      "state_specific_hours": 1,
+      "proposed_total_instructional_minutes": 50,
+      "hour_source_url": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/testingHbk/education/mlo_testing/state_specificReqs/mlo_testing_hbk_stateSpecific_WA.html",
+      "notice_directory_url": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/courseproviderresources/SitePages/Notices.aspx",
+      "notice_url": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/courseproviderresources/Course%20Provider%20Resources/WA%20CE%20State%20Specific%20Education%20Notice.pdf",
+      "notice_discovery_status": "linked_full_text_retrieval_failed",
+      "notice_visual_review_completed": false,
+      "notice_scope_mapped": false,
+      "current_state_law_reconciliation_complete": false,
+      "authored": false,
+      "approved": false,
+      "sales_authorized": false,
+      "course_approval_id": null,
+      "release_blockers": [
+        "full_notice_not_read",
+        "current_law_reconciliation",
+        "human_SME_review",
+        "actual_learner_validation",
+        "course_approval",
+        "operational_release"
+      ],
+      "notes": [
+        "Directory requires DPA flyer as course resource; full notice/flyer retrieval pending."
+      ]
+    },
+    {
+      "agency_id": "WV",
+      "state_code": "WV",
+      "state_specific_hours": 2,
+      "proposed_total_instructional_minutes": 100,
+      "hour_source_url": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/testingHbk/education/mlo_testing/state_specificReqs/mlo_testing_hbk_stateSpecific_WV.html",
+      "notice_directory_url": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/courseproviderresources/SitePages/Notices.aspx",
+      "notice_url": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/courseproviderresources/Course%20Provider%20Resources/WV%20CE%20State%20Specific%20Education%20Notice.pdf",
+      "notice_discovery_status": "full_text_read",
+      "notice_visual_review_completed": false,
+      "notice_scope_mapped": true,
+      "current_state_law_reconciliation_complete": false,
+      "authored": false,
+      "approved": false,
+      "sales_authorized": false,
+      "course_approval_id": null,
+      "release_blockers": [
+        "current_law_reconciliation",
+        "human_SME_review",
+        "actual_learner_validation",
+        "course_approval",
+        "operational_release"
+      ],
+      "notes": []
+    }
+  ],
+  "state_notice_proposed_segment_minutes": {
+    "FL": [
+      {
+        "id": "FL-A",
+        "minutes": 12
+      },
+      {
+        "id": "FL-B",
+        "minutes": 8
+      },
+      {
+        "id": "FL-C",
+        "minutes": 8
+      },
+      {
+        "id": "FL-D",
+        "minutes": 8
+      },
+      {
+        "id": "FL-E",
+        "minutes": 8
+      },
+      {
+        "id": "FL-F",
+        "minutes": 6
+      }
+    ],
+    "WV": [
+      {
+        "id": "WV-A",
+        "minutes": 15
+      },
+      {
+        "id": "WV-B",
+        "minutes": 20
+      },
+      {
+        "id": "WV-C",
+        "minutes": 20
+      },
+      {
+        "id": "WV-D",
+        "minutes": 15
+      },
+      {
+        "id": "WV-E",
+        "minutes": 10
+      },
+      {
+        "id": "WV-F",
+        "minutes": 20
+      }
+    ]
+  },
+  "authored_lesson": {
+    "file": "federal-2026-F01-application-clocks.md",
+    "status": "draft",
+    "ce_year": 2026,
+    "nmls_required_topics": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "proposed_slot_minutes": 57,
+    "measured_duration_minutes": null,
+    "formative_question_count": 12,
+    "correct_answer_map": {
+      "KC01": "B",
+      "KC02": "C",
+      "KC03": "A",
+      "KC04": "D",
+      "KC05": "B",
+      "KC06": "C",
+      "KC07": "A",
+      "KC08": "D",
+      "KC09": "B",
+      "KC10": "C",
+      "KC11": "A",
+      "KC12": "D"
+    },
+    "objective_item_map": {
+      "classification": [
+        "KC01",
+        "KC02"
+      ],
+      "application_clocks": [
+        "KC03",
+        "KC04",
+        "KC11"
+      ],
+      "notices": [
+        "KC05",
+        "KC06",
+        "KC08",
+        "KC10"
+      ],
+      "reasons": [
+        "KC05",
+        "KC07"
+      ],
+      "records": [
+        "KC08",
+        "KC09"
+      ],
+      "controls": [
+        "KC12"
+      ]
+    },
+    "student_validation": false,
+    "approved_final_exam": false
+  },
+  "editorial_flags": [
+    {
+      "year": 2026,
+      "topic": 5,
+      "issue": "NMLS heading says 1026.19(a) but LE finding implicates 1026.19(e). Teach operative TRID rule and retain discrepancy."
+    },
+    {
+      "year": 2026,
+      "topic": 7,
+      "issue": "Recording-fee tolerance must be tested as applicable ten-percent aggregate, not an isolated per-fee ten-percent ceiling."
+    },
+    {
+      "year": 2027,
+      "topic": 6,
+      "issue": "31 CFR 1029.210 says ongoing training; annual-policy finding must not become a universal regulatory fixed annual rule."
+    },
+    {
+      "year": 2027,
+      "topic": 7,
+      "issue": "Do not classify all section E charges identically. Transfer taxes are not recording fees."
+    },
+    {
+      "year": 2027,
+      "topic": 2,
+      "issue": "Current primary HECM fee formula must be retrieved before lesson drafting; not every loan has a permissible 6000 dollar fee."
+    }
+  ],
+  "scope_exclusions": [
+    "late_CE",
+    "PE",
+    "DC_optional",
+    "Nevada_qualified_employee_optional",
+    "unverified_special_roles_or_exemptions",
+    "student_credit_claims",
+    "direct_Sites_or_production_changes"
+  ],
+  "release_requirements": [
+    "current_sources",
+    "complete_content",
+    "human_legal_and_SME_review",
+    "instructional_and_item_review",
+    "representative_learner_timing_and_validation",
+    "approved_delivery_evidence",
+    "provider_and_course_approval",
+    "agency_year_role_credit_mapping",
+    "credit_reporting_test",
+    "payments_and_refunds_test"
+  ],
+  "additional_authored_lessons": [
+    {
+      "block": "F02",
+      "file": "federal-2026-F02-loan-estimate-tolerances.md",
+      "topics": [
+        6,
+        7,
+        8
+      ],
+      "formative_question_count": 16,
+      "proposed_minutes": 50,
+      "approved_final_exam": false,
+      "independent_desk_review": true,
+      "human_sme_approval": false,
+      "validated_duration": false
+    },
+    {
+      "block": "F03",
+      "file": "federal-2026-F03-closing-disclosure-and-capstone.md",
+      "topics": [
+        9,
+        10
+      ],
+      "formative_question_count": 15,
+      "proposed_minutes": 40,
+      "approved_final_exam": false,
+      "independent_desk_review": true,
+      "human_sme_approval": false,
+      "validated_duration": false
+    }
+  ]
+}

@@ -29,7 +29,7 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const HOME = path.join(root, "texas/tx-law-of-agency-30-v1");
 const OUT = path.join(HOME, "content-freeze.json");
 const COURSE_ID = "tx-law-of-agency-30-v1";
-const FREEZE_ID = "LOA-CONTENT-FREEZE-2026-09-12-v18";
+const FREEZE_ID = "LOA-CONTENT-FREEZE-2026-09-13-v19";
 
 /**
  * FREEZE HISTORY. A freeze that is broken and silently re-taken teaches nothing. Every break is
@@ -37,6 +37,20 @@ const FREEZE_ID = "LOA-CONTENT-FREEZE-2026-09-12-v18";
  * than requiring someone to reconstruct it from git.
  */
 const BREAK_HISTORY = Object.freeze([
+  Object.freeze({
+    brokeFreeze: "LOA-CONTENT-FREEZE-2026-09-12-v18",
+    on: "2026-09-13",
+    module: "NONE — no Texas authored curriculum, question or answer key changed.",
+    change: "The video dependency pointer moves to LOA-VIDEO-PLAN-FREEZE-2026-09-13-v15. Its shared Netlify packaging includes private NMLS inputs and removes duplicate student cache headers; the shared content overlay blocks edits to separately versioned read-only training sources.",
+    reason: "These shared infrastructure files are already pinned render dependencies. Record the changed byte-state without claiming a new Texas video, changed lesson, NMLS approval, TREC approval or permission to collect live payments.",
+    previousFreezeSha256: "07bfd0e6fad6717041f343b7429e0c723802870b77c99a2ca7555493a0bc5fa3",
+    auditsReRun: [
+      "node scripts/validate-loa-video-packages.mjs",
+      "node scripts/freeze-loa-video-plan.mjs --write",
+      "node scripts/freeze-loa-curriculum.mjs --write",
+      "node --test tests/cloudflare-stream-security.test.mjs tests/texas-video-integration.test.mjs tests/texas-law-of-agency.test.mjs tests/video-portfolio.test.mjs"
+    ]
+  }),
   Object.freeze({
   "brokeFreeze": "LOA-CONTENT-FREEZE-2026-09-12-v17",
   "on": "2026-09-12",
@@ -478,7 +492,7 @@ const freeze = {
   freezeId: FREEZE_ID,
   courseId: COURSE_ID,
   approvalForm: `${FORM.formNumber} rev ${FORM.revision}`,
-  frozenOn: "2026-09-08",
+  frozenOn: "2026-09-13",
   breakHistory: BREAK_HISTORY,
   generatedBy: "scripts/freeze-loa-curriculum.mjs",
   afterFreeze: "No curriculum wording may change silently. An instructional repair found during assessment authoring must break the freeze explicitly, name the module and the reason, re-run the time, source, quotation, structural and assessment-dependency audits, and create a new freeze version with new hashes.",

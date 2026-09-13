@@ -67,6 +67,14 @@ test -f dist/student/sign-in/index.html
 test -f dist/student/register/index.html
 test -f dist/student/register/student-register.js
 test -f dist/student/student-portal.js
+test -f dist/student/nmls-training/index.html
+test -f dist/student/nmls-training/nmls-training.css
+test -f dist/student/nmls-training/nmls-training.mjs
+test -f dist/student/nmls-training/training-client.mjs
+test -f dist/student/nmls-review/lesson-markdown.mjs
+test -f dist/student/nmls-review/question-presentation.mjs
+! test -d dist/nmls
+! test -d dist/content/nmls
 test -f dist/student/course/index.html
 test -f dist/student/course/student-course.js
 test -f dist/student/michigan-course/index.html
@@ -117,6 +125,9 @@ test -f dist/data/homepage-video.json
 
 node -e 'const r=require("./dist/data/state-registry.json"); if(r.states.length!==51) process.exit(1); for(const c of ["VA","ME","WI","MO","OK","AZ","WA","PA","NC","CO","CA"]) if(r.states.find(s=>s.state_code===c)?.public_status!=="In Development") process.exit(1)'
 node -e 'const c=require("./dist/data/course-catalog.json"); const courses=c.categories[0].programs.flatMap(p=>p.courses); for(const id of ["ca-real-estate-principles-45","ca-real-estate-practice-45","ca-mortgage-loan-brokering-lending-45"]) if(!courses.find(x=>x.course_id===id)) process.exit(1)'
+# Executable privacy gates: a negated grep alone is exempt from shell errexit.
+node scripts/verify-nmls-public-artifact.mjs dist
+node --test tests/no-answer-key-published.test.mjs
 ! find dist -type f -print | grep -Eq 'final-exam-bank|answer-key'
 ! grep -rlq 'correctChoice' dist
 ! grep -rlq 'FINAL_EXAM_BANKS' dist

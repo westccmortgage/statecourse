@@ -1,8 +1,9 @@
-import { dbRequest } from "./_lib/db.mjs";
-import { parseJson, requireSameOrigin } from "./_lib/http.mjs";
-import { requireStudentSession, sessionCookies, sessionResponse } from "./_lib/student-session.mjs";
-import { ensureTrainingEnrollment } from "./_lib/training-access.mjs";
-import { governanceFor, representationCopy } from "./_lib/offering-governance.mjs";
+import { dbRequest } from "./db.mjs";
+import { parseJson, requireSameOrigin } from "./http.mjs";
+import { requireStudentSession, sessionCookies, sessionResponse } from "./student-session.mjs";
+import { ensureTrainingEnrollment } from "./training-access.mjs";
+import { governanceFor, representationCopy } from "./offering-governance.mjs";
+import { NMLS_TRAINING_COURSE as nmls, isNmlsTrainingCourse } from '../../../config/nmls-course-identity.mjs';
 
 /*
  * Free training enrolment.
@@ -21,7 +22,7 @@ function fail(message, statusCode = 400) {
   throw Object.assign(new Error(message), { statusCode });
 }
 
-export const handler = async (event) => {
+export const handleTrainingEnrollment = async (event) => {
   let cookies = [];
   try {
     if (event.httpMethod !== "POST") fail("method_not_allowed", 405);
@@ -29,6 +30,7 @@ export const handler = async (event) => {
     const auth = await requireStudentSession(event);
     cookies = auth.refreshedSession ? sessionCookies(auth.refreshedSession) : [];
     const input = parseJson(event);
+    if(!input||typeof input!=='object'||Array.isArray(input)||typeof input.courseId!=='string')fail('invalid_course_id');
     const courseId = String(input.courseId || "").trim();
     if (!courseId) fail("invalid_course_id");
 
@@ -39,9 +41,10 @@ export const handler = async (event) => {
         detail: { courseId, approvalStatus: status.approval_status },
       });
     }
+    if(isNmlsTrainingCourse(courseId)&&(status.offering_id!==nmls.id||status.offering_kind!=='course'||status.state!==nmls.state||status.discipline!==nmls.discipline))fail('nmls_training_governance_mismatch',403);
 
     const course = (await dbRequest(
-      `courses?id=eq.${encodeURIComponent(courseId)}&select=id,state,name,current_version&limit=1`,
+      `courses?id=eq.${encodeURIComponent(courseId)}&select=id,state,name,current_version,product_type&limit=1`,
     ))?.[0];
     if (!course) fail("unknown_course", 404);
 
@@ -60,7 +63,7 @@ export const handler = async (event) => {
       state: course.state,
       origin: enrollment.enrollment_origin,
       existing,
-      href: `/student-course.html?enrollment_id=${encodeURIComponent(enrollment.id)}`,
+      href: `${isNmlsTrainingCourse(courseId)?nmls.studentRoute:'/student-course.html'}?enrollment_id=${encodeURIComponent(enrollment.id)}`,
       /* Repeated on the response so a page showing it cannot quietly omit it. */
       creditEligible: false,
       representation: copy.representation,
@@ -70,7 +73,7 @@ export const handler = async (event) => {
     }, cookies);
   } catch (error) {
     const status = Number(error?.statusCode) || 500;
-    if (status >= 500) console.error("Training enrolment error", error?.message);
+    if (status >= 500) console.error("Training enrolment unavailable");
     return sessionResponse(status, {
       error: status >= 500 ? "training_enrolment_unavailable" : error.message,
       ...(status < 500 && error?.detail ? { detail: error.detail } : {}),

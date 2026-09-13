@@ -18,13 +18,13 @@ const db = source([
 ]);
 const governance=source(db.rows.slice(0,3).map(c=>({offering_id:c.id,state:'CA',discipline:'real_estate',offering_kind:'course',training_access_enabled:true,payment_mode:'sandbox',approval_status:'none'})));
 
-test('the complete catalog distinguishes 14 states and 30 courses from 12 database records across 7 states',()=>{
+test('the catalog distinguishes 14 states plus national mortgage and 31 courses from 12 database records',()=>{
   const data=buildCourseInventory(catalog,db,governance);
-  assert.deepEqual(data.summary,{catalogStates:14,catalogCourses:30,databaseRecords:12,databaseStates:7,availableTraining:3,databaseServices:2});
-  assert.equal(data.rows.length,32);
-  assert.equal(data.rows.filter(c=>c.trainingStatus==='registration_needed').length,20);
+  assert.deepEqual(data.summary,{catalogStates:14,catalogCourses:31,databaseRecords:12,databaseStates:7,availableTraining:3,databaseServices:2});
+  assert.equal(data.rows.length,33);
+  assert.equal(data.rows.filter(c=>c.trainingStatus==='registration_needed').length,21);
   assert.deepEqual(data.verticals.find(v=>v.id==='mortgage'),{
-    id:'mortgage',title:'Mortgage / NMLS',status:'future',launchTarget:catalog.categories.find(c=>c.category_id==='mortgage').launch_target,programCount:0,courseCount:0,states:[],
+    id:'mortgage',title:'Mortgage / NMLS',status:'in_development',launchTarget:catalog.categories.find(c=>c.category_id==='mortgage').launch_target,programCount:1,courseCount:1,states:['US'],
   });
 });
 test('declared Texas and Virginia identities retain their public IDs while opening the existing database course',()=>{
@@ -94,7 +94,7 @@ async function registrationFixture(run) {
   });
 }
 const owner={matching:[{actor_role:'owner',scope_state:null}],auth:{student:{id:STAFF_ID}}};
-const registration=()=>({note:'Connect the existing public catalog to course administration.',expectedIds:buildCourseInventory(catalog,db,governance).rows.filter(r=>r.trainingStatus==='registration_needed').map(r=>r.publicId)});
+const registration=()=>({note:'Connect the existing public catalog to course administration.',expectedIds:buildCourseInventory(catalog,db,governance).rows.filter(r=>r.trainingStatus==='registration_needed'&&r.category==='real-estate').map(r=>r.publicId)});
 test('catalog registration inserts only missing real courses and never grants approval, enrollment or payments',async()=>registrationFixture(async({records,writes})=>{
   const existing=JSON.stringify(records);
   const result=await registerCatalogCourses(owner,{...registration(),approval_status:'approved',enrollment_enabled:true,payment_mode:'live'});
