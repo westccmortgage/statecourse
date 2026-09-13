@@ -65,6 +65,7 @@
         <nav class="tabs workspace-nav" aria-label="Console sections">
 <button type="button" class="tab" data-panel="overviewPanel" aria-selected="true">Overview</button>
 <button type="button" class="tab" data-panel="coursesPanel" aria-selected="false">Courses</button>
+<button type="button" class="tab" data-panel="nmlsPanel" aria-selected="false">Mortgage / NMLS</button>
 <button type="button" class="tab" data-panel="studentsPanel" aria-selected="false">Students</button>
 <button type="button" class="tab" data-panel="tasksPanel" aria-selected="false">Tasks</button>
 <button type="button" class="tab" data-panel="checksPanel" aria-selected="false">Weekly checks</button>
@@ -81,6 +82,11 @@
 
 <section id="overviewPanel" class="panel"><div class="panel-heading"><h2>Overview</h2><button type="button" data-work="refresh">Refresh</button></div><div id="overviewBody"></div></section>
 <section id="coursesPanel" class="panel" hidden><h2>Courses</h2><div class="filter-row"><label>Search courses<input id="courseSearch" type="search"></label><label>State<select id="courseState"><option value="">All states</option></select></label></div><div id="courseList"></div><div id="courseWorkspace" hidden></div></section>
+<section id="nmlsPanel" class="panel" hidden>
+  <div class="panel-heading"><div><p class="eyebrow">Mortgage education</p><h2>NMLS readiness</h2></div><button type="button" data-work="refresh">Refresh</button></div>
+  <p class="note">This panel reports only records that actually exist. A build target or draft never counts as NMLS provider approval, course approval, enrollment authority or permission to charge.</p>
+  <div id="nmlsBody"></div>
+</section>
 <section id="studentsPanel" class="panel" hidden><h2>Students and enrollments</h2><label>Search name, email, course or enrollment<input id="studentSearch" type="search"></label><div id="studentsBody"></div><article id="studentDetail" hidden></article></section>
 <section id="tasksPanel" class="panel" hidden><h2>Tasks</h2><form id="taskCreateForm" class="card"><div class="field-grid"><label>Course<select id="taskCourse" name="courseId" required></select></label><label>Title<input name="title" minlength="3" maxlength="200" required></label><label>Priority<select name="priority"><option value="normal">Normal</option><option value="high">High</option><option value="blocking">Blocking</option></select></label><label>Details<textarea name="detail"></textarea></label></div><button>Create task</button></form><div id="tasksBody"></div></section>
 <section id="checksPanel" class="panel" hidden><div class="panel-heading"><h2>Weekly checks</h2><button id="runHealth" type="button" data-work="health">Run structural check</button></div><p class="note">Scheduled every Monday at 16:00 UTC. Reports check course structure, recorded access and approval decisions, uploads and connections. The latest saved report shows when the check actually ran.</p><div id="checksBody"></div></section>
