@@ -43,7 +43,25 @@ async function loadOverview(){
   <div class="overview-columns"><article class="card"><h3>Sources and availability</h3>${Object.entries(data.datasets).map(([key,source])=>`<p class="source-line"><span>${esc(words(key))}</span><strong class="${source.available&&!source.truncated?'agrees':'error'}">${source.available?(source.truncated?'Partial result':'Connected'):'Not verified'}</strong></p>`).join('')}</article>
   <article class="card"><h3>Training and payment decisions</h3><p>Approval, free access and payment mode are independent decisions for each offering.</p>${governance.available?`<p>${governance.rows.filter(g=>g.training_access_enabled).length} recorded offerings allow free training.</p><p>${governance.rows.filter(g=>g.live_charging_permitted).length} recorded offerings permit live charging. Site payment settings still apply.</p>`:unavailable('Offering decisions')}<button type="button" data-work="navigate" data-target="offeringsPanel">Open decisions</button></article></div>
   <p class="note">Updated ${esc(when(data.checkedAt))}. Catalog totals describe published course records. Database totals include ${esc(metric(inventory.databaseServices))} service records. Training available counts courses with connected delivery and recorded free access; it is not an approval count.</p>`;
-  renderCourses();renderStudents();renderTasks();
+  renderCourses();renderNmls();renderStudents();renderTasks();
+}
+function renderNmls(){
+  const vertical=data.inventory?.verticals?.find(item=>item.id==='mortgage');
+  if(!data.inventory?.publicAvailable){$('#nmlsBody').innerHTML=unavailable('Mortgage / NMLS catalog');return;}
+  if(!vertical){$('#nmlsBody').innerHTML='<p class="message error">Mortgage / NMLS is not registered in the public catalog.</p>';return;}
+  const mortgageCourses=(data.inventory.rows||[]).filter(course=>course.category==='mortgage');
+  const decisions=(data.datasets.governance?.rows||[]).filter(row=>row.discipline==='mortgage');
+  const effectiveApprovals=decisions.filter(row=>row.approval_status==='approved'&&row.approval_effective);
+  const training=decisions.filter(row=>row.training_access_enabled===true);
+  const live=decisions.filter(row=>row.live_charging_permitted===true);
+  const target=vertical.launchTarget?.label||'Not recorded';
+  $('#nmlsBody').innerHTML=`<div class="summary-grid">${[
+    ['Catalog status',words(vertical.status||'not recorded')],['Build target',target],['NMLS course records',mortgageCourses.length],['Effective approvals',effectiveApprovals.length],['Free training enabled',training.length],['Live payments permitted',live.length]
+  ].map(([name,value])=>`<div class="stat"><span>${esc(name)}</span><strong>${esc(value)}</strong></div>`).join('')}</div>
+  <div class="overview-columns"><article class="card"><h3>Current verified position</h3>${table(['Gate','State'],[
+    ['NMLS provider approval','Not recorded'],['NMLS course approval',effectiveApprovals.length?'Recorded for a listed offering':'Not recorded'],['Student enrollment',training.length?'Free training recorded for a listed offering':'Closed'],['Payments',live.length?'Permitted for an approved offering; site switch still applies':'Disabled']
+  ])}</article><article class="card"><h3>Source recovery</h3><p>The cloud repository contains an NMLS handoff report, but no published NMLS course record or connected NMLS curriculum. The previously named <code>nmls-ce-launch-20260910</code> workstream must be recovered or pushed before course content can be connected here.</p><p><strong>This is a blocking readiness item.</strong> Weekly checks report it until a real NMLS course record exists.</p><p>${esc(vertical.launchTarget?.basis||'No launch basis recorded.')}</p></article></div>
+  ${mortgageCourses.length?table(['Course','State','Connection','Approval','Payments'],mortgageCourses.map(course=>[esc(course.name),esc(course.state),esc(words(course.trainingStatus)),esc(words(course.approval||'none recorded')),esc(words(course.paymentMode||'disabled'))])):'<p class="message error">No NMLS course is currently connected. The California 45-hour Mortgage Loan Brokering and Lending elective remains a DRE real-estate course and is not counted here.</p>'}`;
 }
 function renderCourses(){
   const source=data.datasets.courses;
@@ -147,7 +165,7 @@ async function loadPayments(){
 
 document.addEventListener('statecourse:staff',async event=>{
   session=event.detail;data=null;workspace=null;selectedScreen=null;paymentOffset=0;++courseRequest;++screenRequest;
-  for(const id of ['overviewBody','courseList','studentsBody','studentDetail','tasksBody','teamBody','checksBody','messagesBody','historyBody','settingsBody','paymentRowsBody','courseWorkspace'])$("#"+id)?.replaceChildren();
+  for(const id of ['overviewBody','courseList','nmlsBody','studentsBody','studentDetail','tasksBody','teamBody','checksBody','messagesBody','historyBody','settingsBody','paymentRowsBody','courseWorkspace'])$("#"+id)?.replaceChildren();
   if(!session?.roles.length)return;
   $('[data-panel="teamPanel"]').hidden=!isOwner();
   for(const id of ['checksPanel','historyPanel','messagesPanel','settingsPanel'])$(`[data-panel="${id}"]`).hidden=!isGlobal();
