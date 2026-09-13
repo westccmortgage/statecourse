@@ -46,6 +46,10 @@ test -f dist/admin/michigan-course/michigan-course.js
 test -f dist/admin/michigan-review/index.html
 test -f dist/admin/michigan-review/michigan-review.js
 test -f dist/student/index.html
+test -f dist/student/nmls-review/index.html
+test -f dist/student/nmls-review/nmls-review.mjs
+test -f dist/student/nmls-review/review-client.mjs
+test -f dist/student/nmls-review/nmls-review.css
 test -f dist/student/sign-in/index.html
 test -f dist/student/register/index.html
 test -f dist/student/register/student-register.js

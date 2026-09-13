@@ -5,6 +5,9 @@
 [functions]
   included_files = ["private-media/texas/*.txt"]
 
+[functions."student-nmls-review"]
+  included_files = ["nmls/curriculum/federal-2026-F0*.md", "nmls/curriculum/ethics-2026-E0*.md", "nmls/curriculum/nontraditional-2026-N0*.md", "nmls/curriculum/general-2026-G0*.md"]
+
 [[headers]]
   for = "/*"
   [headers.values]

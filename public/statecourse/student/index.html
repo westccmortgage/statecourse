@@ -55,6 +55,12 @@
         <div class="course-list" id="otherCourses"></div>
       </section>
 
+      <section class="course-group" id="privateReviewsGroup" hidden>
+        <div class="section-heading"><span>Invitation-only · No CE credit</span><h2>Private development reviews</h2></div>
+        <p>These assignments are separate from purchased courses, enrollments and certificates.</p>
+        <div id="privateReviews"></div>
+      </section>
+
       <section class="empty-state" id="emptyState" hidden>
         <p class="eyebrow">No enrollments</p>
         <h2>Your purchased courses will appear here.</h2>
@@ -65,5 +71,6 @@
 
     <footer><span>StateCourse student records are course- and version-specific.</span><small>Portal visits do not count as instructional time.</small></footer>
     <script src="student-portal.js?v=20260818-personalized" defer></script>
+    <script type="module" src="nmls-review/portal-reviews.mjs"></script>
   </body>
 </html>

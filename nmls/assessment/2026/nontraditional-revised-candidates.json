@@ -1,0 +1,782 @@
+{
+  "schema": "statecourse-nmls-final-authoring-v1",
+  "year": 2026,
+  "category": "nontraditional",
+  "items": [
+    {
+      "id": "N26-FIN-N01",
+      "category": "nontraditional",
+      "moduleId": "N01",
+      "objective": "Classify principal behavior separately from an adjustable interest rate.",
+      "stem": "An ARM's contract requires each scheduled payment to cover accrued interest and amortize the remaining principal over the remaining term. It offers no interest-only period or payment below accrued interest. A draft comparison labels it 'negative amortization' solely because its rate adjusts. Which correction is supported?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It is fully amortizing; rate adjustment alone does not create negative amortization."
+        },
+        {
+          "id": "B",
+          "text": "Keep the label because any adjustable rate allows unpaid interest to be added to principal."
+        },
+        {
+          "id": "C",
+          "text": "Call it interest-only during each fixed-rate interval because the rate has not yet adjusted."
+        },
+        {
+          "id": "D",
+          "text": "Call it fixed rate because its payment formula continues to amortize the debt."
+        }
+      ],
+      "correctChoice": "A",
+      "rationale": "Rate structure and principal treatment answer different questions. This contract adjusts its rate while requiring amortization; that is not the stated negative-amortization or interest-only feature.",
+      "distractorRationales": {
+        "B": "Balance growth requires the relevant payment/principal mechanics, not merely an adjustable rate.",
+        "C": "An unchanged rate during an interval does not make the payments interest-only.",
+        "D": "Amortization does not make an adjustable rate fixed."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/37/",
+          "locator": "§1026.37(a)(10)(i)-(ii); comments 37(a)(10)-1/-2",
+          "supports": "Product description distinguishes rate type from principal-deferral and balance-growth features.",
+          "checkedOn": "2026-09-11"
+        }
+      ],
+      "remediation": {
+        "unitIds": [
+          "N01-U01"
+        ],
+        "focus": "Read both the rate structure and scheduled principal treatment."
+      },
+      "independenceNote": "Uses a fully amortizing adjustable obligation rather than the formative fixed-rate interest-only balance question."
+    },
+    {
+      "id": "N26-FIN-N02",
+      "category": "nontraditional",
+      "moduleId": "N01",
+      "objective": "Compare repayment structure with household resources rather than initial payment alone.",
+      "stem": "A borrower compares a 15-year amortizing loan with a longer-term interest-only option. Verified resources could support either lender screen, but the 15-year payment would consume nearly all the household's monthly cushion. The borrower prefers rapid repayment but also needs funds for known recurring expenses. What is the best recommended comparison?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Choose the 15-year loan automatically because faster principal repayment always dominates liquidity concerns."
+        },
+        {
+          "id": "B",
+          "text": "Choose interest-only automatically because the smaller first payment establishes the safer long-term obligation."
+        },
+        {
+          "id": "C",
+          "text": "Compare repayment speed, household liquidity and the complete payment schedule."
+        },
+        {
+          "id": "D",
+          "text": "Treat satisfaction of either lender screen as proof that the two structures are financially equivalent."
+        }
+      ],
+      "correctChoice": "C",
+      "rationale": "The module's comparison includes objectives, resources, costs and transitions. A shorter term is not automatically best when it strains the household cushion, and a low initial payment does not erase later obligations.",
+      "distractorRationales": {
+        "A": "Rapid amortization does not eliminate the risk from depleted household resources.",
+        "B": "The initial payment alone does not establish long-term affordability.",
+        "D": "Passing a screen does not make materially different payment structures equivalent."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/43/",
+          "locator": "§1026.43(c)(1)-(2); comment 43(c)(1)-1.ii.B.5",
+          "supports": "Repayment resources and known recurring non-debt expenses matter; the comparative recommendation is provider practice, not a universal suitability rule.",
+          "checkedOn": "2026-09-11"
+        }
+      ],
+      "remediation": {
+        "unitIds": [
+          "N01-U02",
+          "N01-U05"
+        ],
+        "focus": "Compare structure and resources without equating one screen with suitability."
+      },
+      "independenceNote": "Uses a conflict between the borrower's repayment goal and liquidity needs, not any numerical substitution into the Lena payment examples."
+    },
+    {
+      "id": "N26-FIN-N03",
+      "category": "nontraditional",
+      "moduleId": "N01",
+      "objective": "Apply a payment cap only to the adjustment the contract actually covers.",
+      "stem": "A hypothetical payment-option note limits its annual minimum-payment adjustment. It separately requires immediate amortizing payments when a balance trigger is reached and expressly states that the annual payment cap does not apply to that recast. The balance trigger is reached first. Which explanation fits these stated terms?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The annual cap overrides the balance trigger until the next anniversary."
+        },
+        {
+          "id": "B",
+          "text": "The borrower may continue the old minimum because it was timely paid."
+        },
+        {
+          "id": "C",
+          "text": "The cap also limits the accrual rate, so the balance trigger cannot occur."
+        },
+        {
+          "id": "D",
+          "text": "The recast provision controls this event; the annual adjustment cap does not limit it."
+        }
+      ],
+      "correctChoice": "D",
+      "rationale": "The question supplies the interaction between the provisions. A cap on one adjustment is not a universal ceiling on every required payment, and it does not become an interest-rate cap.",
+      "distractorRationales": {
+        "A": "The stated note expressly excludes this recast from the annual cap.",
+        "B": "Timely old payments do not override the contractual recast event.",
+        "C": "A payment cap does not itself limit the accrual rate."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/43/",
+          "locator": "§1026.43(b)(7), (b)(11); comment 43(b)(7)-2",
+          "supports": "Maximum-balance and recast analysis depends on the legal obligation; the cap interaction here is an explicit hypothetical contract term.",
+          "checkedOn": "2026-09-11"
+        }
+      ],
+      "remediation": {
+        "unitIds": [
+          "N01-U03"
+        ],
+        "focus": "Read the balance trigger and payment-cap interaction as separate provisions."
+      },
+      "independenceNote": "Supplies an actual priority between two triggered contract clauses; N01-Q08 asks what can be inferred from a payment cap alone."
+    },
+    {
+      "id": "N26-FIN-N04",
+      "category": "nontraditional",
+      "moduleId": "N01",
+      "objective": "Exclude a periodic adjustment cap from the fully indexed rate calculation.",
+      "stem": "For a covered loan evaluated under §1026.43(c), the introductory rate is 5%. The properly determined consummation index is 4% and the maximum margin is 2.5 percentage points. A periodic cap limits the first adjustment to 6%; the lifetime cap and lookback do not change these inputs. Which rate belongs in the greater-of-rate payment calculation?",
+      "options": [
+        {
+          "id": "A",
+          "text": "6%, because the first adjustment cannot exceed that rate."
+        },
+        {
+          "id": "B",
+          "text": "6.5%, without reducing the fully indexed rate for the periodic cap."
+        },
+        {
+          "id": "C",
+          "text": "5%, because it is the only rate currently charged to the borrower."
+        },
+        {
+          "id": "D",
+          "text": "7.5%, adding the margin to the introductory rate rather than the index."
+        }
+      ],
+      "correctChoice": "B",
+      "rationale": "The fully indexed rate is 6.5%. A periodic adjustment cap does not reduce it for this purpose. Comparing 6.5% with the 5% introductory rate selects 6.5% under the stated general-ATR route.",
+      "distractorRationales": {
+        "A": "The commentary distinguishes the first adjustment limit from the fully indexed rate.",
+        "C": "The greater-of rule does not stop at the introductory rate.",
+        "D": "The fully indexed rate adds the margin to the applicable index, not to the introductory rate."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/43/",
+          "locator": "§1026.43(b)(3), (c)(5)(i); comment 43(b)(3)-3",
+          "supports": "Periodic adjustment caps do not reduce the fully indexed rate; the greater of fully indexed and introductory rates applies under the stated route.",
+          "checkedOn": "2026-09-11"
+        }
+      ],
+      "remediation": {
+        "unitIds": [
+          "N01-U04"
+        ],
+        "focus": "Separate the first permitted reset from the regulatory fully indexed rate."
+      },
+      "independenceNote": "Introduces a periodic cap that conflicts with the indexed rate; it is not a new set of numbers for the formative interest-only payment formula."
+    },
+    {
+      "id": "N26-FIN-N05",
+      "category": "nontraditional",
+      "moduleId": "N01",
+      "objective": "Keep negative-amortization balance projection separate from the qualifying-payment rate.",
+      "stem": "An analyst correctly models a covered negative-amortization loan's maximum balance by assuming the maximum contractual rate rises as early as permitted. The analyst then automatically uses that same maximum rate for the §1026.43(c)(5)(ii)(C) qualifying payment, although it exceeds both the fully indexed and introductory rates. What correction is needed?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Project the balance using the introductory rate because it is lower and actually charged first."
+        },
+        {
+          "id": "B",
+          "text": "Retain the modeled balance; determine the qualifying-payment rate separately under the greater-of rule."
+        },
+        {
+          "id": "C",
+          "text": "Use the original principal with the maximum rate so that the two conservative assumptions offset each other."
+        },
+        {
+          "id": "D",
+          "text": "Restart the original term at recast because the maximum projected balance is already conservative."
+        }
+      ],
+      "correctChoice": "B",
+      "rationale": "The two calculations use different specified assumptions. Correctly projecting maximum balance does not authorize substituting its rate path for the qualifying-payment rate or changing the remaining term.",
+      "distractorRationales": {
+        "A": "That can understate the maximum-balance projection required by the rule.",
+        "C": "The original principal omits modeled balance growth; assumptions cannot be traded off.",
+        "D": "The qualifying payment uses the remaining term, not a restarted term."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/43/",
+          "locator": "§1026.43(b)(7), (c)(5)(ii)(C); comments 43(c)(5)(ii)(C)-1/-2",
+          "supports": "Maximum-balance projection and qualifying P&I use distinct rate and term assumptions.",
+          "checkedOn": "2026-09-11"
+        }
+      ],
+      "remediation": {
+        "unitIds": [
+          "N01-U04"
+        ],
+        "focus": "Label the balance-growth rate path and qualifying-payment inputs separately."
+      },
+      "independenceNote": "Finds a rate-method transfer error after the balance projection is completed; N01-Q10 asks only which calculation must come first."
+    },
+    {
+      "id": "N26-FIN-N06",
+      "category": "nontraditional",
+      "moduleId": "N01",
+      "objective": "Use the negative-amortization counseling definition of first-time borrower.",
+      "stem": "A consumer is buying a home for the first time but previously received a HELOC secured by a dwelling the consumer inherited. The new closed-end dwelling-secured transaction may negatively amortize. For the limited first-time-borrower question under §1026.36(k), which conclusion is correct?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Not first-time under this definition: the earlier dwelling-secured HELOC counts."
+        },
+        {
+          "id": "B",
+          "text": "The consumer is first-time because only earlier closed-end mortgages count."
+        },
+        {
+          "id": "C",
+          "text": "The consumer is first-time because the previous dwelling was inherited rather than purchased."
+        },
+        {
+          "id": "D",
+          "text": "The prior HELOC exempts the new loan from every product, counseling and consumer-protection requirement."
+        }
+      ],
+      "correctChoice": "A",
+      "rationale": "The definition includes a prior dwelling-secured open-end plan. This resolves only the specified first-time-borrower classification; it does not approve the new product or eliminate other applicable obligations.",
+      "distractorRationales": {
+        "B": "The definition includes both closed-end transactions and open-end plans.",
+        "C": "The method of obtaining the earlier property does not erase the prior secured borrowing.",
+        "D": "This narrow classification is not a general exemption."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/36/",
+          "locator": "§1026.36(k)(2)(i)",
+          "supports": "First-time borrower is defined by prior dwelling-secured borrowing, including an open-end plan, not solely prior home purchase.",
+          "checkedOn": "2026-09-11"
+        }
+      ],
+      "remediation": {
+        "unitIds": [
+          "N01-U04"
+        ],
+        "focus": "Separate first purchase from first dwelling-secured borrowing."
+      },
+      "independenceNote": "Uses a prior inherited-home HELOC to test the definition, rather than the formative processing-versus-extension timing question."
+    },
+    {
+      "id": "N26-FIN-N07",
+      "category": "nontraditional",
+      "moduleId": "N01",
+      "objective": "Apply the Loan Estimate's feature hierarchy to a fixed-rate product.",
+      "stem": "A hypothetical fixed-rate loan allows low scheduled payments that leave interest unpaid and add it to principal for an initial period. Its marketing name includes 'interest only.' Assume a Loan Estimate is required. Which feature should take priority in the product description under §1026.37(a)(10)?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Interest Only, because the marketing name determines the legal disclosure label."
+        },
+        {
+          "id": "B",
+          "text": "Fixed Rate alone, because a fixed rate cannot have a balance-growth feature."
+        },
+        {
+          "id": "C",
+          "text": "Step Payment alone, because any later increase displaces the other feature labels."
+        },
+        {
+          "id": "D",
+          "text": "Negative Amortization, alongside the required period and rate-type information."
+        }
+      ],
+      "correctChoice": "D",
+      "rationale": "The permitted addition of unpaid interest creates the relevant feature. The prescribed hierarchy gives negative amortization priority; the fixed rate and marketing name do not remove it.",
+      "distractorRationales": {
+        "A": "Marketing terminology cannot override the actual payment feature.",
+        "B": "A fixed rate can coexist with negative amortization.",
+        "C": "A changing payment does not displace the higher-priority feature."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/37/",
+          "locator": "§1026.37(a)(10)(ii)(A), (a)(10)(iii); comment 37(a)(10)-2.i/ii",
+          "supports": "Negative-amortization features have priority over interest-only labels in the prescribed description.",
+          "checkedOn": "2026-09-11"
+        }
+      ],
+      "remediation": {
+        "unitIds": [
+          "N01-U05"
+        ],
+        "focus": "Match the disclosure feature to the permitted principal behavior."
+      },
+      "independenceNote": "Tests conflicting marketing and required feature labels on a fixed-rate product; no formative item asks the Loan Estimate hierarchy."
+    },
+    {
+      "id": "N26-FIN-N08",
+      "category": "nontraditional",
+      "moduleId": "N01",
+      "objective": "Respond to a material misunderstanding instead of using acknowledgment as a waiver.",
+      "stem": "After an MLO explains a payment-option loan, the consumer says, 'If every minimum payment is on time, my debt must be shrinking.' The contract can add unpaid interest to principal. The consumer nevertheless offers to sign the understanding form immediately. What should the MLO do under the module's recommended communication practice?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Accept the signature because timely minimum payments are sufficient evidence of understanding."
+        },
+        {
+          "id": "B",
+          "text": "Ask the consumer to repeat 'I understand' and then complete the checklist."
+        },
+        {
+          "id": "C",
+          "text": "Re-explain principal growth and check understanding instead of relying on the offered signature."
+        },
+        {
+          "id": "D",
+          "text": "Promise a refinance before the balance grows so the misunderstanding will not affect the consumer."
+        }
+      ],
+      "correctChoice": "C",
+      "rationale": "The response reveals confusion about a material consequence. The provider-recommended teach-back process calls for clarification, not coaching a formal phrase; acknowledgment does not waive repayment responsibilities.",
+      "distractorRationales": {
+        "A": "The consumer's statement demonstrates a misunderstanding despite the proposed signature.",
+        "B": "Reciting a phrase does not resolve the identified misconception.",
+        "D": "A refinance is not guaranteed and does not explain present balance growth."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/43/",
+          "locator": "Comment 43(c)(1)-1.i",
+          "supports": "Consumer acknowledgment does not displace the creditor's repayment duty; repeat explanation and teach-back are provider practices.",
+          "checkedOn": "2026-09-11"
+        },
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/37/",
+          "locator": "Comment 37(a)(10)-2.i",
+          "supports": "Describes addition of unpaid interest to principal.",
+          "checkedOn": "2026-09-11"
+        }
+      ],
+      "remediation": {
+        "unitIds": [
+          "N01-U03",
+          "N01-U05"
+        ],
+        "focus": "Explain what happens to principal and distinguish understanding from waiver."
+      },
+      "independenceNote": "Tests an observed teach-back failure and proposed signature shortcut, rather than arithmetic or the formative refinance-dependent ATR justification."
+    },
+    {
+      "id": "N26-FIN-N09",
+      "category": "nontraditional",
+      "moduleId": "N02",
+      "objective": "Avoid treating an estate-planning trust label as an automatic organizational exemption.",
+      "stem": "A consumer creates a revocable estate-planning trust to hold the family's principal residence and continues to use the property as a home. The proposed closed-end refinance is for personal household purposes and is secured by that dwelling; no separate §1026.43 exemption applies. A processor marks it exempt merely because the trustee will sign. Which response is supported?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The trustee's signature makes the transaction organizational credit regardless of its substance."
+        },
+        {
+          "id": "B",
+          "text": "The Non-QM label decides whether a trust loan is exempt."
+        },
+        {
+          "id": "C",
+          "text": "No trust can ever receive credit outside Regulation Z."
+        },
+        {
+          "id": "D",
+          "text": "Apply consumer-trust treatment; the trustee's signing capacity alone does not establish exemption."
+        }
+      ],
+      "correctChoice": "D",
+      "rationale": "The official interpretation treats specified consumer-purpose estate-planning trusts as credit to a natural person. The stipulated personal purpose and absence of another exemption require the applicable covered-loan analysis.",
+      "distractorRationales": {
+        "A": "Signature capacity does not override the specified trust treatment.",
+        "B": "A product classification does not establish a coverage exemption.",
+        "C": "The rule addresses particular trusts and facts, not every trust transaction."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/3/",
+          "locator": "Comment 3(a)-10.i",
+          "supports": "Consumer-purpose estate-planning trusts can be treated as credit to a natural person.",
+          "checkedOn": "2026-09-11"
+        },
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/43/",
+          "locator": "§1026.43(a), (c)(1)",
+          "supports": "A covered transaction still requires the applicable ATR determination.",
+          "checkedOn": "2026-09-11"
+        }
+      ],
+      "remediation": {
+        "unitIds": [
+          "N02-U01"
+        ],
+        "focus": "Determine legal substance before relying on an entity label."
+      },
+      "independenceNote": "Uses consumer estate-planning trust treatment, not the formative Non-QM nickname or wholly non-owner-occupied rental."
+    },
+    {
+      "id": "N26-FIN-N10",
+      "category": "nontraditional",
+      "moduleId": "N02",
+      "objective": "Reassess a rental exemption when expected owner occupancy changes.",
+      "stem": "An individual initially describes a one-unit rental acquisition with no personal use. Before the coverage decision, the individual states an intention to occupy it for six weeks in the coming year. The lender wants to retain the special non-owner-occupied rental classification because most weeks will still be rented. What is correct?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The special rule remains available whenever rental weeks exceed personal-use weeks."
+        },
+        {
+          "id": "B",
+          "text": "The special non-owner-occupied rule no longer resolves coverage; assess the applicable owner-occupied rules and actual purpose."
+        },
+        {
+          "id": "C",
+          "text": "Any intended personal stay automatically makes every such loan consumer credit without further analysis."
+        },
+        {
+          "id": "D",
+          "text": "A DSCR above the lender's threshold determines whether the personal stay can be ignored."
+        }
+      ],
+      "correctChoice": "B",
+      "rationale": "Expected occupancy exceeding 14 days removes this special non-owner-occupied rule. That is not itself a complete consumer-purpose determination; the remaining applicable rules and facts must be assessed.",
+      "distractorRationales": {
+        "A": "A majority-of-weeks test is not the stated special rule.",
+        "C": "Losing one special rule does not automatically decide every purpose analysis.",
+        "D": "An investor ratio does not establish legal purpose."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/3/",
+          "locator": "Comments 3(a)-4 and 3(a)-5",
+          "supports": "The special non-owner-occupied rental treatment excludes expected owner occupancy over 14 days; owner-occupied analysis remains separate.",
+          "checkedOn": "2026-09-11"
+        }
+      ],
+      "remediation": {
+        "unitIds": [
+          "N02-U01",
+          "N02-U04"
+        ],
+        "focus": "Record changed use before deciding which coverage rule applies."
+      },
+      "independenceNote": "Introduces meaningful expected owner occupancy and tests loss of a special rule, rather than repeating the formative zero-occupancy rental case."
+    },
+    {
+      "id": "N26-FIN-N11",
+      "category": "nontraditional",
+      "moduleId": "N02",
+      "objective": "Consider every primary joint obligor's debts and credit history even when only one income is used.",
+      "stem": "For a covered general-ATR loan, two applicants will both have primary liability. One applicant's verified income is sufficient under the lender's method, so the creditor does not rely on the other's income. That second applicant has a current auto payment and relevant credit history. How should the analysis proceed?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Omit both applicants' debts if one applicant's income alone exceeds the new mortgage payment."
+        },
+        {
+          "id": "B",
+          "text": "Consider the second applicant's debts only if that applicant's income is also counted."
+        },
+        {
+          "id": "C",
+          "text": "Review both obligors' debts and histories; the unused income need not be verified."
+        },
+        {
+          "id": "D",
+          "text": "Remove the second applicant from the signed obligation solely to avoid reviewing the auto payment."
+        }
+      ],
+      "correctChoice": "C",
+      "rationale": "The income nonreliance option does not remove a primary joint obligor's obligations or history from the required considerations. Application structure should not be rewritten merely to hide a debt.",
+      "distractorRationales": {
+        "A": "The covered-loan payment is not the only required obligation.",
+        "B": "Debt and history considerations do not depend on using that person's income.",
+        "D": "A paper change to evade known obligations is not a supported analysis of the proposed transaction."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/43/",
+          "locator": "Comments 43(c)(2)(i)-5, 43(c)(2)(vi)-2, 43(c)(2)(viii)-2 and 43(c)(4)-2",
+          "supports": "Distinguishes optional nonreliance on an applicant's income from consideration of all primary joint obligors' debts and histories.",
+          "checkedOn": "2026-09-11"
+        }
+      ],
+      "remediation": {
+        "unitIds": [
+          "N02-U02"
+        ],
+        "focus": "Separate the income sources used from the people liable on the loan."
+      },
+      "independenceNote": "Focuses on a joint obligor's known auto debt and history; N02-Q06 tests only whether unused income needs verification."
+    },
+    {
+      "id": "N26-FIN-N12",
+      "category": "nontraditional",
+      "moduleId": "N02",
+      "objective": "Use the narrow employment-status verification exception without extending it to income amount.",
+      "stem": "A creditor already has reasonably reliable third-party records of the employment income used for a covered general-ATR loan. To verify current employment status, an authorized employee speaks with the employer and prepares a record of the information obtained. Which assessment accurately applies §1026.43(c)(3)?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Accept the recorded call for employment status, without replacing the separate income verification."
+        },
+        {
+          "id": "B",
+          "text": "Employment status can only be verified through a signed written employer form."
+        },
+        {
+          "id": "C",
+          "text": "The call permits the creditor to replace the documented income with any unverified amount the applicant requests."
+        },
+        {
+          "id": "D",
+          "text": "The call establishes every ATR factor and eliminates further repayment analysis."
+        }
+      ],
+      "correctChoice": "A",
+      "rationale": "The rule allows oral employment-status verification when a record is prepared. The exception concerns status, not wholesale elimination of the separate verification and consideration requirements.",
+      "distractorRationales": {
+        "B": "The cited provision expressly permits recorded oral verification.",
+        "C": "The status exception does not authorize unsupported relied-on income.",
+        "D": "The eight-factor determination is not completed by one verification."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/43/",
+          "locator": "§1026.43(c)(3)(ii)",
+          "supports": "Permits oral employment-status verification with a prepared record.",
+          "checkedOn": "2026-09-11"
+        }
+      ],
+      "remediation": {
+        "unitIds": [
+          "N02-U02"
+        ],
+        "focus": "Identify exactly which fact a verification exception covers."
+      },
+      "independenceNote": "Tests the recorded-oral employment-status exception, not consumer-uploaded records, unknown deposits or conflicting payroll amounts."
+    },
+    {
+      "id": "N26-FIN-N13",
+      "category": "nontraditional",
+      "moduleId": "N02",
+      "objective": "Avoid counting the same business earnings twice.",
+      "stem": "Under a stated permitted method, reliable records establish $96,000 of annual business earnings available to a sole owner after the required expenses. A transfer ledger shows $60,000 moved from those same earnings into the owner's personal account. The proposed worksheet counts $156,000 as income by adding the transfers. What is the supported correction?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Count the supported $96,000 once; the distribution does not add income."
+        },
+        {
+          "id": "B",
+          "text": "Use $156,000 because each account's deposits create a separate income stream."
+        },
+        {
+          "id": "C",
+          "text": "Use only $60,000 because undistributed business earnings can never support repayment."
+        },
+        {
+          "id": "D",
+          "text": "Average $96,000 and $156,000 because choosing the midpoint resolves any duplication."
+        }
+      ],
+      "correctChoice": "A",
+      "rationale": "The stipulated method already identifies the earnings available to the owner. Adding a distribution of those earnings counts the same resources twice. This exercise does not establish a universal treatment of retained business earnings.",
+      "distractorRationales": {
+        "B": "An account movement does not create new economic income.",
+        "C": "The scenario stipulates availability under its supported method; a universal exclusion is not taught.",
+        "D": "Averaging does not repair the known classification error."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/43/",
+          "locator": "§1026.43(c)(1), (c)(4); comment 43(c)(4)-4",
+          "supports": "Relied-on income needs a supported basis; an inflow is not automatically additional income. The distribution adjustment follows the stated fictional facts and method.",
+          "checkedOn": "2026-09-11"
+        }
+      ],
+      "remediation": {
+        "unitIds": [
+          "N02-U02"
+        ],
+        "focus": "Reconcile ownership distributions with earnings already used."
+      },
+      "independenceNote": "Tests duplication of the same profits across business and personal accounts, not the formative subtraction of transfers, borrowing and expenses from gross credits."
+    },
+    {
+      "id": "N26-FIN-N14",
+      "category": "nontraditional",
+      "moduleId": "N02",
+      "objective": "Include recurring property obligations even when escrow is waived.",
+      "stem": "A covered general-ATR file correctly includes the loan's qualifying P&I. The consumer will pay recurring property taxes, required homeowners insurance and association dues directly because escrow is waived. A worksheet leaves those charges out because they will not appear in the creditor's monthly bill. What correction is required?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Include only charges the creditor collects; direct payments are living expenses outside ATR."
+        },
+        {
+          "id": "B",
+          "text": "Include taxes but omit required insurance and dues unless the credit report lists them."
+        },
+        {
+          "id": "C",
+          "text": "Treat the escrow waiver as an authorized exception from mortgage-related obligations."
+        },
+        {
+          "id": "D",
+          "text": "Include applicable recurring property charges despite the escrow waiver."
+        }
+      ],
+      "correctChoice": "D",
+      "rationale": "The required consideration concerns the consumer's mortgage-related obligations, not merely the amount billed by the creditor. Waiving escrow does not make recurring taxes, insurance or association charges disappear.",
+      "distractorRationales": {
+        "A": "Collection through the creditor is not the controlling distinction.",
+        "B": "The rule is not limited to taxes or credit-reported charges.",
+        "C": "An escrow arrangement does not waive the repayment factors."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/43/",
+          "locator": "§1026.43(b)(8), (c)(2)(v); accompanying comments 43(c)(2)(v)-1/-2",
+          "supports": "Recurring mortgage-related obligations are considered whether or not escrowed.",
+          "checkedOn": "2026-09-11"
+        }
+      ],
+      "remediation": {
+        "unitIds": [
+          "N02-U02",
+          "N02-U03"
+        ],
+        "focus": "Distinguish servicing collection arrangements from repayment obligations."
+      },
+      "independenceNote": "Tests direct-payment/escrow treatment rather than omitting a simultaneous HELOC or recalculating the formative DTI table."
+    },
+    {
+      "id": "N26-FIN-N15",
+      "category": "nontraditional",
+      "moduleId": "N02",
+      "objective": "Reconcile an asset-consumption method with income drawn from the same funds.",
+      "stem": "An asset-based covered-loan worksheet converts a verified investment account into a monthly repayment resource by consuming the account balance over time. It also adds an unchanged investment-income stream from that same balance for the entire period, without analyzing how depletion affects that income. The lender's method supplies no support for this combination. What is the best next step?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Approve both amounts because they appear in different fields on the worksheet."
+        },
+        {
+          "id": "B",
+          "text": "Reconcile depletion and the claimed income before relying on both."
+        },
+        {
+          "id": "C",
+          "text": "Use the home's appraised equity to replace any unsupported investment income."
+        },
+        {
+          "id": "D",
+          "text": "Treat any use of financial assets instead of employment wages as prohibited."
+        }
+      ],
+      "correctChoice": "B",
+      "rationale": "One fund cannot be treated as simultaneously consumed and indefinitely intact without a supported analysis. The module calls for ownership, access and interaction checks; it does not prescribe a universal depletion formula.",
+      "distractorRationales": {
+        "A": "Different fields do not establish independent resources.",
+        "C": "The collateral dwelling is excluded from the income/assets factor.",
+        "D": "Supported financial assets can be considered under the rule."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/43/",
+          "locator": "§1026.43(c)(1), (c)(2)(i), (c)(4); comments 43(c)(1)-1.i and 43(c)(2)(i)-1",
+          "supports": "Permits supported non-collateral assets and requires a reasonable method accounting for income/assets used; the double-counting correction follows the stated worksheet.",
+          "checkedOn": "2026-09-11"
+        }
+      ],
+      "remediation": {
+        "unitIds": [
+          "N02-U04"
+        ],
+        "focus": "Check how asset depletion changes any income attributed to the same fund."
+      },
+      "independenceNote": "Tests overlapping repayment streams from one account, not the formative asset-exclusion amounts or stipulated 240-month division."
+    },
+    {
+      "id": "N26-FIN-N16",
+      "category": "nontraditional",
+      "moduleId": "N02",
+      "objective": "Distinguish an investor screening ratio from a complete risk decision.",
+      "stem": "For a supported, genuinely non-owner-occupied rental acquisition, a fictional lender's base DSCR screen is met. Its documented stress case keeps operating income unchanged but increases debt service at a contractual reset, producing cash flow below required debt service. The file has not assessed reserves or the shortfall plan. Which handoff is most defensible?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Mark final approval because passing the base ratio makes the contractual reset irrelevant."
+        },
+        {
+          "id": "B",
+          "text": "Declare the transaction a covered consumer loan solely because the stress ratio is below one."
+        },
+        {
+          "id": "C",
+          "text": "Record the base-screen pass and unresolved reset shortfall; route reserve and repayment-plan review."
+        },
+        {
+          "id": "D",
+          "text": "Delete the stress result because the DSCR formula is not prescribed by federal law."
+        }
+      ],
+      "correctChoice": "C",
+      "rationale": "A base ratio answers one lender-policy question, not every risk issue. The known contractual reset and unresolved support need analysis. A stress result does not itself change supported loan purpose.",
+      "distractorRationales": {
+        "A": "A screening pass does not eliminate known payment-change risk.",
+        "B": "Legal purpose is not determined by a coverage ratio.",
+        "D": "A provider-defined method can identify relevant risk even though it is not a federal formula."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/3/",
+          "locator": "Comment 3(a)-4",
+          "supports": "Supports the stated non-owner-occupied acquisition classification, not a federal DSCR threshold.",
+          "checkedOn": "2026-09-11"
+        },
+        {
+          "url": "https://www.federalreserve.gov/frrs/guidance/interagency-guidance-on-nontraditional-mortgage-product-risks.htm",
+          "locator": "Non-Owner-Occupied Investor Loans; Consumer Protection Issues",
+          "supports": "Institution-focused supervisory discussion of investor-loan cash-flow and payment-change risks; the screen, stress case and handoff are fictional lender practices, not nationwide mandates.",
+          "checkedOn": "2026-09-11"
+        }
+      ],
+      "remediation": {
+        "unitIds": [
+          "N02-U04",
+          "N02-U05"
+        ],
+        "focus": "Separate the passed policy screen from known reset and liquidity risks."
+      },
+      "independenceNote": "Changes the stress driver to contractual debt service and asks for a defensible unresolved-risk handoff, not calculation of the formative rent/vacancy DSCR example."
+    }
+  ]
+}

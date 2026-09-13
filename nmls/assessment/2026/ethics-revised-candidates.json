@@ -1,0 +1,781 @@
+{
+  "schema": "statecourse-nmls-final-authoring-v1",
+  "year": 2026,
+  "category": "ethics",
+  "items": [
+    {
+      "id": "N26-FIN-E01",
+      "category": "ethics",
+      "moduleId": "E01",
+      "objective": "Identify discriminatory use of exceptions, not merely unequal final rates.",
+      "stem": "A lender permits a documented exception for a single late payment caused by a bank posting error. Two applicants supply equally adequate bank corrections and otherwise meet the same criteria. A manager grants the exception to one but refuses the other because of the applicant's religion, calling the refusal 'manager discretion.' What should the reviewer conclude?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Discretion does not justify a religion-based difference in access to the exception."
+        },
+        {
+          "id": "B",
+          "text": "The difference is acceptable because the written policy does not promise an exception."
+        },
+        {
+          "id": "C",
+          "text": "The exception must be removed from both files because any discretion is prohibited."
+        },
+        {
+          "id": "D",
+          "text": "The treatment matters only if the two loans ultimately have different interest rates."
+        }
+      ],
+      "correctChoice": "A",
+      "rationale": "Discretion remains subject to nondiscriminatory treatment. The recorded reason, matched correction evidence and different exception decisions support the concern; eliminating every lawful exception is not required.",
+      "distractorRationales": {
+        "B": "Discretion does not authorize a prohibited basis.",
+        "C": "A supported exception can be lawful; its discriminatory application is the problem.",
+        "D": "Regulation B reaches evaluation and exceptions, not only pricing."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1002/4/",
+          "locator": "§1002.4(a); comments 4(a)-1 and 4(a)-2.i.D/ii",
+          "supports": "Credit-standard exceptions remain subject to the general discrimination rule.",
+          "checkedOn": "2026-09-11"
+        }
+      ],
+      "remediation": {
+        "unitIds": [
+          "E01-U01",
+          "E01-U04"
+        ],
+        "focus": "Compare the actual exception evidence and decision reason."
+      },
+      "independenceNote": "Uses a bank-error exception decision, not the formative bank's extra-document demands, pension arithmetic, or narrower product list."
+    },
+    {
+      "id": "N26-FIN-E02",
+      "category": "ethics",
+      "moduleId": "E01",
+      "objective": "Distinguish targeted encouragement from an exclusionary statement.",
+      "stem": "In September 2026 a lender emails a women's professional association: 'Members are welcome to attend our mortgage-application workshop and apply.' It states no exclusion, preference in credit terms or eligibility restriction. A reviewer concludes that sending the invitation to this audience itself unlawfully discourages men who did not receive it. Which response best applies current §1002.4(b)?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The reviewer is correct unless the lender sends identical invitations to every adult in the market."
+        },
+        {
+          "id": "B",
+          "text": "Assess the actual message; this selected audience alone does not establish discouragement."
+        },
+        {
+          "id": "C",
+          "text": "The invitation is automatically a special-purpose credit program requiring no other review."
+        },
+        {
+          "id": "D",
+          "text": "The invitation authorizes the lender to give attendees preferential underwriting standards."
+        }
+      ],
+      "correctChoice": "B",
+      "rationale": "The current interpretation distinguishes group-directed encouragement from discouragement of unintended recipients. This limited conclusion does not approve a special-purpose program or preferential credit policy.",
+      "distractorRationales": {
+        "A": "The rule does not impose universal identical distribution of every encouraging message.",
+        "C": "A workshop invitation does not establish a qualifying special-purpose program.",
+        "D": "Encouragement does not create permission for otherwise prohibited underwriting."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1002/4/",
+          "locator": "§1002.4(b); revised comment 4(b)-1, including ii.A",
+          "supports": "Group-directed encouragement is distinct from prohibited exclusionary statements.",
+          "checkedOn": "2026-09-11"
+        },
+        {
+          "url": "https://www.federalregister.gov/documents/2026/04/22/2026-07804/equal-credit-opportunity-act-regulation-b",
+          "locator": "DATES; amendments to §1002.4(b) and Supplement I comment 4(b)-1",
+          "supports": "Confirms the July 21, 2026 effective amendment; do not rely on removed legacy comment 4(b)-2.",
+          "checkedOn": "2026-09-11"
+        }
+      ],
+      "remediation": {
+        "unitIds": [
+          "E01-U01"
+        ],
+        "focus": "Apply the current directed-statement rule without inferring an exclusion."
+      },
+      "independenceNote": "Tests an allegation about recipients of benign outreach, rather than the formative retirement-denial script or obsolete effects-test deck."
+    },
+    {
+      "id": "N26-FIN-E03",
+      "category": "ethics",
+      "moduleId": "E01",
+      "objective": "Respect the applicant's choice not to rely on support income.",
+      "stem": "An applicant receives the required support-income disclosure and chooses not to use separate-maintenance payments. The remaining verified income is insufficient for the amount requested. The MLO proposes keeping the application pending until the applicant supplies the maintenance order and agrees to count those payments. Which approach is supported?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Count estimated maintenance from the divorce documents already in the file."
+        },
+        {
+          "id": "B",
+          "text": "Treat the choice not to rely on maintenance as evidence that the income is fraudulent."
+        },
+        {
+          "id": "C",
+          "text": "Evaluate the resources the applicant chooses to rely on without compelling maintenance income."
+        },
+        {
+          "id": "D",
+          "text": "Ignore the income shortfall because declining to disclose maintenance guarantees eligibility."
+        }
+      ],
+      "correctChoice": "C",
+      "rationale": "The optional-reliance choice remains meaningful even when other income is insufficient. Evaluate the supported resources actually relied on and follow applicable decision and notice procedures; do not compel reliance or promise approval.",
+      "distractorRationales": {
+        "A": "Possessing documents does not authorize overriding the applicant's stated election.",
+        "B": "Nonreliance is not evidence of deception.",
+        "D": "The disclosure right does not eliminate legitimate qualification requirements."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1002/5/",
+          "locator": "§1002.5(d)(2); comments 5(d)(2)-1 through -3",
+          "supports": "Support income need not be disclosed when the applicant does not want it considered.",
+          "checkedOn": "2026-09-11"
+        }
+      ],
+      "remediation": {
+        "unitIds": [
+          "E01-U02"
+        ],
+        "focus": "Separate optional reliance on support from a legitimate income shortfall."
+      },
+      "independenceNote": "Tests what happens after a disclosed opt-out creates an underwriting problem, not recall of the disclosure sentence in E01-Q05."
+    },
+    {
+      "id": "N26-FIN-E04",
+      "category": "ethics",
+      "moduleId": "E01",
+      "objective": "Separate immigration-status evidence from national-origin assumptions.",
+      "stem": "A noncitizen applicant provides reliable documentation of permanent residency. An intake employee routes the file to a restricted product solely because the applicant was born abroad, without applying the lender's actual eligibility criteria. The employee says Regulation B permits consideration of immigration status. What is the best correction?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Avoid reviewing residency evidence because immigration status can never be relevant."
+        },
+        {
+          "id": "B",
+          "text": "Approve the requested loan because permanent residency resolves every credit requirement."
+        },
+        {
+          "id": "C",
+          "text": "Keep the routing decision if the employee uses 'international profile' rather than birthplace in the notes."
+        },
+        {
+          "id": "D",
+          "text": "Apply verified residency and repayment criteria, not birthplace-based routing."
+        }
+      ],
+      "correctChoice": "D",
+      "rationale": "Permissible status inquiries do not authorize national-origin treatment. Evaluate the actual residency evidence and applicable criteria, without turning this correction into a guarantee of eligibility.",
+      "distractorRationales": {
+        "A": "Regulation B expressly permits relevant status inquiries and consideration.",
+        "B": "Residency evidence is not a complete underwriting determination.",
+        "C": "Changing the label does not change the decision's actual basis."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1002/5/",
+          "locator": "§1002.5(e)",
+          "supports": "Permits immigration and permanent-residency inquiries.",
+          "checkedOn": "2026-09-11"
+        },
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1002/6/",
+          "locator": "§1002.6(b)(7); comment 6(b)(7)-1",
+          "supports": "Distinguishes immigration status relevant to repayment from national origin.",
+          "checkedOn": "2026-09-11"
+        },
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1002/4/",
+          "locator": "§1002.4(a)",
+          "supports": "Prohibits discriminatory treatment in the credit process.",
+          "checkedOn": "2026-09-11"
+        }
+      ],
+      "remediation": {
+        "unitIds": [
+          "E01-U02"
+        ],
+        "focus": "Use verified legal status rather than birthplace as a substitute."
+      },
+      "independenceNote": "Applies an already verified permanent-residency fact to product routing; no mixed credit report, surname-based fraud allegation or geographic racial proxy is reused."
+    },
+    {
+      "id": "N26-FIN-E05",
+      "category": "ethics",
+      "moduleId": "E01",
+      "objective": "Apply the same credit standards to married and unmarried joint applicants.",
+      "stem": "Two unmarried adults jointly request a home loan and contemporaneously document joint intent. Their supported repayment and collateral facts satisfy the standards used for a comparable married pair. The lender proposes an extra down payment because unmarried co-borrowers 'might separate.' No law or property-rights issue supports the difference. Which response is correct?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Require evidence that the applicants intend to marry before using the ordinary standards."
+        },
+        {
+          "id": "B",
+          "text": "Apply the ordinary standards without an unsupported marital-relationship condition."
+        },
+        {
+          "id": "C",
+          "text": "Accept the extra down payment if the applicants sign an acknowledgment."
+        },
+        {
+          "id": "D",
+          "text": "Treat them as separate applicants because joint credit is available only to spouses."
+        }
+      ],
+      "correctChoice": "B",
+      "rationale": "Regulation B does not permit different joint-applicant standards merely because a marital relationship is absent or uncertain. Actual legal rights can matter, but the scenario supplies no such distinction.",
+      "distractorRationales": {
+        "A": "Marriage intentions are not the missing credit fact on these stipulated facts.",
+        "C": "Consent does not supply a legitimate basis for the discriminatory condition.",
+        "D": "Unmarried people can apply jointly."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1002/6/",
+          "locator": "§1002.6(b)(8)",
+          "supports": "Married and unmarried applicants, including joint applicants, are evaluated under the same standards absent an applicable legal distinction.",
+          "checkedOn": "2026-09-11"
+        }
+      ],
+      "remediation": {
+        "unitIds": [
+          "E01-U01",
+          "E01-U03"
+        ],
+        "focus": "Distinguish genuine joint intent and property facts from relationship assumptions."
+      },
+      "independenceNote": "Concerns extra equity demanded from voluntary unmarried joint applicants, not compelled spouse signatures or retrospective joint-intent evidence."
+    },
+    {
+      "id": "N26-FIN-E06",
+      "category": "ethics",
+      "moduleId": "E01",
+      "objective": "Recognize that neutral application of a cosigner rule does not necessarily make it permissible.",
+      "stem": "A lender adopts a home-loan rule requiring every individual applicant to provide a personally liable cosigner, even after the applicant qualifies alone. The reviewer confirms that no applicable exception or collateral-signature need supports the requirement. The rule is applied identically regardless of marital status. Which assessment is correct?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The requirement is permissible because married and unmarried applicants receive identical treatment."
+        },
+        {
+          "id": "B",
+          "text": "The requirement is permissible if the applicant, rather than the lender, chooses the cosigner."
+        },
+        {
+          "id": "C",
+          "text": "The requirement is permissible once the applicant acknowledges that it is lender policy."
+        },
+        {
+          "id": "D",
+          "text": "The signature restriction still bars this unsupported cosigner requirement."
+        }
+      ],
+      "correctChoice": "D",
+      "rationale": "Section 1002.7(d)(1) protects qualifying individual applicants against unsupported additional signatures. Its interpretation addresses this requirement even when it is imposed without a prohibited-basis distinction.",
+      "distractorRationales": {
+        "A": "Uniform application does not displace the separate signature rule.",
+        "B": "Choosing the person does not cure an unsupported requirement for any cosigner.",
+        "C": "A policy acknowledgment does not supply an exception."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1002/7/",
+          "locator": "§1002.7(d)(1); comment 7(d)(1)-1",
+          "supports": "A qualifying individual generally cannot be required to furnish a cosigner even under a facially uniform rule.",
+          "checkedOn": "2026-09-11"
+        }
+      ],
+      "remediation": {
+        "unitIds": [
+          "E01-U03"
+        ],
+        "focus": "Test whether another person's liability is needed before deciding who signs."
+      },
+      "independenceNote": "Removes marriage and collateral ownership from the case and tests a universal cosigner rule; it is not the spouse-on-note or combined-instrument formative case."
+    },
+    {
+      "id": "N26-FIN-E07",
+      "category": "ethics",
+      "moduleId": "E02",
+      "objective": "Distinguish a prohibited material alteration from a labeled internal copy of a valuation.",
+      "stem": "In a covered consumer-credit transaction secured by the principal dwelling, an MLO who does not prepare valuations changes the value in a signed appraisal report to a substantially higher figure needed to satisfy a loan-to-value condition. The appraiser did not make or approve the change. The MLO retains the original and labels the changed report 'lender copy.' Which conclusion applies under §1026.42(c)(2)?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The material alteration is prohibited; preserving the original does not authorize the MLO's change."
+        },
+        {
+          "id": "B",
+          "text": "The alteration is permissible if both versions are retained and the revision is labeled 'lender copy.'"
+        },
+        {
+          "id": "C",
+          "text": "The alteration is permissible because the appraiser was not pressured to revise the original report."
+        },
+        {
+          "id": "D",
+          "text": "The alteration is permissible once the borrower acknowledges both versions and agrees to the revised figure."
+        }
+      ],
+      "correctChoice": "A",
+      "rationale": "A covered person who does not prepare valuations may not materially alter a valuation. This changes the reported opinion of value itself, not a separate underwriting note. An original copy, internal label or borrower acknowledgment does not authorize it.",
+      "distractorRationales": {
+        "B": "Preserving both versions does not create an exception to the material-alteration prohibition.",
+        "C": "The alteration prohibition is separate from the prohibition against pressuring an appraiser.",
+        "D": "Borrower acknowledgment does not authorize the MLO to make the material alteration."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/42/",
+          "locator": "§1026.42(a), (b)(1)-(3), (c)(2)(ii)",
+          "supports": "For a covered principal-dwelling transaction, a covered person other than a valuation preparer may not materially alter a valuation.",
+          "checkedOn": "2026-09-11"
+        }
+      ],
+      "remediation": {
+        "unitIds": [
+          "E02-U04"
+        ],
+        "focus": "Distinguish changing the valuation itself from preserving records or requesting a genuine correction."
+      },
+      "independenceNote": "Replaces the E07/F07 retention-hold overlap. Tests an MLO's direct material alteration of the report, not appraiser pressure, a factual correction request, known-violation reliance, or material-failure reporting; distinct from E02 manuscript and v2 practice cases."
+    },
+    {
+      "id": "N26-FIN-E08",
+      "category": "ethics",
+      "moduleId": "E02",
+      "objective": "Evaluate impersonation risk in the verification channel without deciding borrower intent.",
+      "stem": "For a covered general-ATR loan, the creditor relies on employment income. A verification reply arrives from a contact address printed only on an unverified attachment. The employer's independently established contact information does not match it. The reply confirms exactly the income needed to qualify, but its source remains unresolved. Which recommended next step is best?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Accept it because the reply appears to come from a third party rather than from the borrower."
+        },
+        {
+          "id": "B",
+          "text": "Record confirmed applicant fraud because the contact addresses differ."
+        },
+        {
+          "id": "C",
+          "text": "Verify the source through approved independent channels; do not assign intent."
+        },
+        {
+          "id": "D",
+          "text": "Ask the same unverified address to certify that it is authentic and treat that answer as conclusive."
+        }
+      ],
+      "correctChoice": "C",
+      "rationale": "A favorable answer is not reliable verification when its source is unresolved. Independent-channel confirmation is the module's recommended anti-impersonation control, not a federally prescribed directory or proof the applicant caused the discrepancy.",
+      "distractorRationales": {
+        "A": "An apparent third-party label does not establish reliability.",
+        "B": "The discrepancy does not identify who created it or prove intent.",
+        "D": "A self-confirmation through the disputed channel does not resolve that channel's reliability."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/43/",
+          "locator": "§1026.43(c)(3)-(4); comments 43(c)(3)-1/-2 and 43(c)(4)-1",
+          "supports": "Relied-on income requires reasonably reliable individual-specific third-party evidence; the channel-validation method is a provider recommendation.",
+          "checkedOn": "2026-09-11"
+        }
+      ],
+      "remediation": {
+        "unitIds": [
+          "E02-U01",
+          "E02-U02"
+        ],
+        "focus": "Verify the source of evidence as well as the favorable amount."
+      },
+      "independenceNote": "Uses source-channel impersonation rather than conflicting historical payroll amounts, a prospective raise or an unidentified deposit."
+    },
+    {
+      "id": "N26-FIN-E09",
+      "category": "ethics",
+      "moduleId": "E02",
+      "objective": "Separate actual-service value from additional compensation for expected referrals.",
+      "stem": "A title provider buys genuine advertising placements from a mortgage business for federally related mortgage business. The same placements and audience are available for a documented market price. It proposes doubling payment, without additional work, because the mortgage business promises more settlement referrals. Which review is supported?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The actual advertising work protects the entire payment regardless of what the increase purchases."
+        },
+        {
+          "id": "B",
+          "text": "The arrangement is permissible if customers receive the normal settlement price."
+        },
+        {
+          "id": "C",
+          "text": "A marketing-services agreement is prohibited even when it pays only for genuine services."
+        },
+        {
+          "id": "D",
+          "text": "Evaluate the referral-driven increase separately; real advertising does not justify it."
+        }
+      ],
+      "correctChoice": "D",
+      "rationale": "Actual services require analysis of the payment as well as the work. Referral value is not included in reasonable service value. The stipulated increase cannot be justified merely by pointing to the unchanged placements.",
+      "distractorRationales": {
+        "A": "Real work does not automatically justify an additional referral-based amount.",
+        "B": "Normal consumer charges do not supply a referral-payment exception.",
+        "C": "The label alone does not prohibit every genuine service arrangement."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1024/14/",
+          "locator": "§1024.14(b), (g)(1)(iv), (g)(2)",
+          "supports": "Actual-service compensation must be distinguished from compensation for referrals; referral value is excluded from the service-value comparison.",
+          "checkedOn": "2026-09-11"
+        }
+      ],
+      "remediation": {
+        "unitIds": [
+          "E02-U03"
+        ],
+        "focus": "Identify the work delivered and the reason for each payment component."
+      },
+      "independenceNote": "Changes the key fact to genuine services plus an unsupported referral premium, rather than the formative no-service quality fee or subscription/rent benefit."
+    },
+    {
+      "id": "N26-FIN-E10",
+      "category": "ethics",
+      "moduleId": "E02",
+      "objective": "Assess whether ownership returns have been engineered around referrals.",
+      "stem": "For federally related mortgage referrals, an affiliated title business supplies the required disclosures and does not require consumer use. Its agreement resets each referring owner's equity share every quarter solely according to that owner's recent referrals; dividends follow those adjusted shares. No actual-service payment explains the amounts. Which issue remains?",
+      "options": [
+        {
+          "id": "A",
+          "text": "A referral-adjusted ownership share can defeat the claimed ownership-return protection despite the dividend label."
+        },
+        {
+          "id": "B",
+          "text": "Disclosure and free choice settle the analysis, so the dividend formula need not be reviewed."
+        },
+        {
+          "id": "C",
+          "text": "Dividends are prohibited whenever an owner is also able to refer settlement business."
+        },
+        {
+          "id": "D",
+          "text": "The arrangement is protected because the formula appears in the organizational agreement."
+        }
+      ],
+      "correctChoice": "A",
+      "rationale": "The affiliated-business rule excludes returns based on ownership shares adjusted for relative referrals. Disclosure and choice are separate conditions, and an organizational label does not determine the result.",
+      "distractorRationales": {
+        "B": "The exception also limits the things of value received.",
+        "C": "Genuine ownership returns are not categorically prohibited.",
+        "D": "Written organizational terms do not insulate referral-based payments."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1024/15/",
+          "locator": "§1024.15(b)(3)(ii)(C), (b)(3)(iii)",
+          "supports": "Referral-adjusted ownership shares and dividend labels do not establish a bona fide protected return.",
+          "checkedOn": "2026-09-11"
+        }
+      ],
+      "remediation": {
+        "unitIds": [
+          "E02-U03"
+        ],
+        "focus": "Trace the economic basis of an ownership return."
+      },
+      "independenceNote": "Uses referral-driven equity reallocation rather than a separate per-file bonus, a disguised service fee or an educational benefit."
+    },
+    {
+      "id": "N26-FIN-E11",
+      "category": "ethics",
+      "moduleId": "E02",
+      "objective": "Apply the material-appraisal-failure reporting threshold and jurisdiction.",
+      "stem": "For a covered principal-dwelling transaction, a mortgage broker has reliable evidence that an appraiser invented a comparable sale, materially inflating value. The responsible reviewer determines there is a reasonable basis to believe a material USPAP failure occurred. Which response follows §1026.42(g)?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Wait for the borrower to default before deciding whether an inflated value matters."
+        },
+        {
+          "id": "B",
+          "text": "Report within a reasonable period to the dwelling state's appraiser licensing agency."
+        },
+        {
+          "id": "C",
+          "text": "Report only to the licensing agency where the broker's head office is located."
+        },
+        {
+          "id": "D",
+          "text": "Close the issue if the appraiser changes the value before the borrower signs."
+        }
+      ],
+      "correctChoice": "B",
+      "rationale": "The stated reasonable basis and material effect engage the reporting provision. Its jurisdiction follows the dwelling, and its stated timing is a reasonable period—not a universal fixed-hour deadline.",
+      "distractorRationales": {
+        "A": "Default is not the reporting trigger.",
+        "C": "The dwelling's location determines the appropriate state agency.",
+        "D": "A later correction does not automatically eliminate the reporting duty on these findings."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/42/",
+          "locator": "§1026.42(g)(1)-(3); comments 42(g)(1)-1/-2/-4",
+          "supports": "Defines material failure, covered persons, reasonable-period reporting and the appropriate state agency.",
+          "checkedOn": "2026-09-11"
+        }
+      ],
+      "remediation": {
+        "unitIds": [
+          "E02-U04"
+        ],
+        "focus": "Distinguish substantiated material professional failure from a disappointing valuation."
+      },
+      "independenceNote": "Tests a supported material fabrication and reporting destination, not attempted pressure, a lot-size correction or use of an affected valuation."
+    },
+    {
+      "id": "N26-FIN-E12",
+      "category": "ethics",
+      "moduleId": "E02",
+      "objective": "Recognize that collecting a signature does not correct an incomplete advertisement.",
+      "stem": "An ordinary lender webpage advertises a dwelling-secured, first-lien closed-end loan's introductory payment in large type. The advertised payment is principal and interest only. A later higher payment and its duration appear only in a distant footnote; the tax-and-insurance exclusion is absent. Sales staff propose keeping the page unchanged and obtaining a signed explanation at application. Which review is best?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Approve the page because the explanation will precede consummation."
+        },
+        {
+          "id": "B",
+          "text": "Approve it if the consumer signs a statement that payment could increase."
+        },
+        {
+          "id": "C",
+          "text": "Correct the advertisement's required payment information and presentation; the later signature does not cure the page."
+        },
+        {
+          "id": "D",
+          "text": "Replace the initial figure with one estimated total and treat that arithmetic change as complete advertising review."
+        }
+      ],
+      "correctChoice": "C",
+      "rationale": "Advertising obligations attach to the advertisement. Applicable payment amounts and periods require the specified prominence/proximity, and the first-lien tax/insurance statement needs its own treatment; a later acknowledgment is not a substitute.",
+      "distractorRationales": {
+        "A": "A preclosing explanation does not replace the advertisement's duties.",
+        "B": "The signature does not supply the missing advertisement disclosures.",
+        "D": "One revised total does not establish compliance with all triggered terms and presentation rules."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/24/",
+          "locator": "§1026.24(d), (f)(3)(i)-(ii); comment 24(f)-2",
+          "supports": "Payment advertisements have content and placement duties, including the applicable first-lien tax/insurance statement.",
+          "checkedOn": "2026-09-11"
+        }
+      ],
+      "remediation": {
+        "unitIds": [
+          "E02-U05"
+        ],
+        "focus": "Review the advertisement itself rather than relying on later borrower documents."
+      },
+      "independenceNote": "Tests a proposed application-stage cure for a multistage payment advertisement, not the formative P&I-plus-tax arithmetic headline."
+    },
+    {
+      "id": "N26-FIN-E13",
+      "category": "ethics",
+      "moduleId": "E02",
+      "objective": "Separate prevention of steering from whether consummation has already occurred.",
+      "stem": "For a consumer-credit transaction secured by a dwelling, compliance discovers before selection or consummation that an MLO suppressed an available likely-qualifying option solely to obtain higher creditor-paid compensation. The proposed option has no offsetting consumer benefit. Which statement accurately addresses §1026.36(e)(1) and the next step?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Correct the comparison before closing; the specific violation still requires consummation."
+        },
+        {
+          "id": "B",
+          "text": "Wait until closing because a preconsummation recommendation cannot raise any consumer-protection concern."
+        },
+        {
+          "id": "C",
+          "text": "Treat the specific steering violation as complete even though no transaction has been consummated."
+        },
+        {
+          "id": "D",
+          "text": "Let the borrower sign a choice acknowledgment without revealing the omitted option."
+        }
+      ],
+      "correctChoice": "A",
+      "rationale": "The interpretation requires consummation for this specified violation. That boundary is not a reason to allow the harmful selection process to continue; correcting the available comparison is the recommended preventive response.",
+      "distractorRationales": {
+        "B": "The consummation element does not make prevention inappropriate.",
+        "C": "The stated facts do not yet satisfy the consummation element.",
+        "D": "An uninformed signature does not correct the concealed option."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/36/",
+          "locator": "§1026.36(e)(1); comments 36(e)(1)-1/-2",
+          "supports": "Defines compensation-based steering and the consummation element; intervention before consummation is a provider prevention step.",
+          "checkedOn": "2026-09-11"
+        }
+      ],
+      "remediation": {
+        "unitIds": [
+          "E02-U05"
+        ],
+        "focus": "State the legal stage accurately while preventing the proposed harm."
+      },
+      "independenceNote": "Changes the transaction stage and asks about preventive action, rather than the formative completed transaction with an established violation."
+    },
+    {
+      "id": "N26-FIN-E14",
+      "category": "ethics",
+      "moduleId": "E02",
+      "objective": "Evaluate consumer interest instead of treating higher compensation as conclusive.",
+      "stem": "For a transaction covered by §1026.36(e)(1), two available, likely-qualifying loan options differ materially. The option paying the originator more compensation avoids a prepayment restriction and has lower total costs under the borrower's documented near-term payoff plan. A reviewer proposes rejecting it solely because compensation is higher. What is the sound analysis?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Always select the option paying the originator less, regardless of the borrower's costs."
+        },
+        {
+          "id": "B",
+          "text": "A signed selection makes every higher-compensation option acceptable without comparison."
+        },
+        {
+          "id": "C",
+          "text": "Consumer interest depends only on the initial monthly payment, not the payoff plan."
+        },
+        {
+          "id": "D",
+          "text": "Evaluate the consumer benefits; greater compensation alone does not establish prohibited steering."
+        }
+      ],
+      "correctChoice": "D",
+      "rationale": "The rule includes a consumer-interest qualification. A supported comparison matters when the options differ; the stated facts support analysis, not a universal instruction to minimize originator compensation.",
+      "distractorRationales": {
+        "A": "The rule is not an automatic lowest-compensation mandate.",
+        "B": "Acknowledgment alone does not establish consumer interest.",
+        "C": "Material prepayment terms and costs can matter to the comparison."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/36/",
+          "locator": "§1026.36(e)(1); comments 36(e)(1)-2.i and -3",
+          "supports": "Requires comparison of available likely-qualifying alternatives and recognizes consumer interest; this is not complete compensation-rule clearance.",
+          "checkedOn": "2026-09-11"
+        }
+      ],
+      "remediation": {
+        "unitIds": [
+          "E02-U05"
+        ],
+        "focus": "Explain consumer-relevant differences independently of compensation."
+      },
+      "independenceNote": "Uses a genuine borrower benefit and differing prepayment terms, unlike the formative otherwise-identical costlier loan."
+    },
+    {
+      "id": "N26-FIN-E15",
+      "category": "ethics",
+      "moduleId": "E02",
+      "objective": "Treat delivery-channel reputation as separate from individual-specific income evidence.",
+      "stem": "For a covered general-ATR loan, a trusted payroll vendor returns the employer's average annual compensation for employees with the applicant's job title. It provides no applicant-specific earnings record. A reviewer proposes using the average because the vendor is reputable. What is the best conclusion?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Use the average whenever the applicant confirms having the listed job title."
+        },
+        {
+          "id": "B",
+          "text": "Use the average only if it is lower than the applicant's estimate."
+        },
+        {
+          "id": "C",
+          "text": "Obtain applicant-specific income evidence; the vendor's reputation does not fill that gap."
+        },
+        {
+          "id": "D",
+          "text": "Reject every electronic payroll record and require a tax-return transcript instead."
+        }
+      ],
+      "correctChoice": "C",
+      "rationale": "A reputable source can still provide the wrong kind of evidence. A group average is not verification of this consumer's income. The rule does not universally mandate one replacement document.",
+      "distractorRationales": {
+        "A": "Job-title confirmation does not establish the applicant's earnings.",
+        "B": "A conservative average is still not individual-specific verification.",
+        "D": "Electronic records are not categorically barred, and a transcript is not universally required."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/43/",
+          "locator": "§1026.43(c)(3)-(4); comments 43(c)(3)-1 and 43(c)(4)-1",
+          "supports": "Records must support the particular consumer's income rather than generalized earnings information.",
+          "checkedOn": "2026-09-11"
+        }
+      ],
+      "remediation": {
+        "unitIds": [
+          "E02-U02"
+        ],
+        "focus": "Check whether the record proves the relied-on individual fact."
+      },
+      "independenceNote": "Tests reliable-provider/generalized-data mismatch, not conflicting payroll versions, upload authenticity or an unexplained bank deposit."
+    },
+    {
+      "id": "N26-FIN-E16",
+      "category": "ethics",
+      "moduleId": "E02",
+      "objective": "Protect sensitive discrepancy evidence without making an unsupported allegation.",
+      "stem": "An identity-resolution specialist asks for access to a file with a documented identifier mismatch. The MLO considers emailing full identification documents to a large sales distribution list so everyone can help identify the 'fraudster.' Which recommended response best preserves both evidence and a proportionate review?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Circulate the documents widely but add a confidentiality label to the email."
+        },
+        {
+          "id": "B",
+          "text": "Use authorized specialist access and preserve the records; report the mismatch without assigning intent."
+        },
+        {
+          "id": "C",
+          "text": "Delete the conflicting identification record and keep only the document matching the application."
+        },
+        {
+          "id": "D",
+          "text": "Forward only a conclusion that fraud is confirmed so sensitive documents need not be retained."
+        }
+      ],
+      "correctChoice": "B",
+      "rationale": "The module recommends controlled access, factual escalation and preservation. An identifier mismatch does not establish fraudulent intent; this answer does not prescribe a universal security tool or external-reporting duty.",
+      "distractorRationales": {
+        "A": "A label does not make an unrestricted distribution an approved access path.",
+        "C": "Deletion removes evidence needed to resolve the discrepancy.",
+        "D": "An unsupported conclusion neither resolves identity nor preserves evidence."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/43/",
+          "locator": "§1026.43(c)(3); comment 43(c)(3)-3",
+          "supports": "Addresses reliability when information is known or suspected to be inaccurate; the authorized-access and incident-routing method is a provider recommendation, not a detailed data-security rule.",
+          "checkedOn": "2026-09-11"
+        }
+      ],
+      "remediation": {
+        "unitIds": [
+          "E02-U01",
+          "E02-U02"
+        ],
+        "focus": "Limit disclosure to authorized review and separate observation from accusation."
+      },
+      "independenceNote": "Tests distribution and preservation of sensitive evidence, not which person's credit score to use in the formative mixed-file scenario."
+    }
+  ]
+}

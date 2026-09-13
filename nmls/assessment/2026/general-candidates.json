@@ -1,0 +1,392 @@
+{
+  "schema": "statecourse-nmls-final-authoring-v1",
+  "year": 2026,
+  "category": "general",
+  "items": [
+    {
+      "id": "N26-FIN-G01",
+      "category": "general",
+      "moduleId": "G01",
+      "objective": "Keep separate source records distinguishable despite identical filenames.",
+      "stem": "During a fictional file import, two complete statements for different accounts have the same filename. Each supports a different condition, and the original records remain available. The import tool proposes retaining only the later upload's index entry because the names match. Under G01's source-map control, what is the best response?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Keep distinct references linking each record to its source, account, period and use."
+        },
+        {
+          "id": "B",
+          "text": "Keep the later entry because matching filenames establish that the earlier record was replaced."
+        },
+        {
+          "id": "C",
+          "text": "Merge both balances under one entry because the statements belong to the same applicant."
+        },
+        {
+          "id": "D",
+          "text": "Ask the customer to rename both files before any existing record can be reviewed."
+        }
+      ],
+      "correctChoice": "A",
+      "rationale": "A filename collision does not establish duplication or supersession. Distinct source references preserve which evidence supports each condition; the indexing method is a provider control, not a mandated federal filename convention.",
+      "distractorRationales": {
+        "B": "The records concern different accounts and uses; upload order does not replace that distinction.",
+        "C": "A combined balance loses the separate evidence-to-condition relationships.",
+        "D": "The lender can index existing complete records without requiring customer renaming."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/25/",
+          "locator": "§1026.25(a); comment 25(a)-2",
+          "supports": "Supports accurate reconstruction of required records; distinct source-map references are the taught provider control.",
+          "checkedOn": "2026-09-11"
+        }
+      ],
+      "remediation": {
+        "unitIds": [
+          "G01-U01",
+          "G01-U02"
+        ],
+        "focus": "Distinguish record identity and downstream use from a convenient filename."
+      },
+      "independenceNote": "Tests an import collision between two valid records, not a missing page, wrong statement month or receipt-period distinction in the formative bank."
+    },
+    {
+      "id": "N26-FIN-G02",
+      "category": "general",
+      "moduleId": "G01",
+      "objective": "Use documented replacement authority when an assigned reviewer becomes unavailable.",
+      "stem": "In a fictional covered home-loan file, a material condition awaits an authorized decision. The assigned reviewer is unexpectedly absent. A closing employee previously worked as an underwriter but has no delegated decision authority on this file. The creditor has a documented alternate-review route. Which next step respects G01's handoff control?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Let the closing employee clear the condition because prior underwriting experience supplies authority."
+        },
+        {
+          "id": "B",
+          "text": "Leave the item assigned to the absent person until the proposed closing date passes."
+        },
+        {
+          "id": "C",
+          "text": "Have processing mark it cleared if every requested attachment is present."
+        },
+        {
+          "id": "D",
+          "text": "Use the alternate route and obtain the designated reviewer's acceptance of the assigned decision."
+        }
+      ],
+      "correctChoice": "D",
+      "rationale": "Competence and a former job title do not establish the case's current delegated authority. The alternate route keeps the item owned without converting document receipt into a credit decision.",
+      "distractorRationales": {
+        "A": "Experience does not itself assign decision authority under the stipulated procedures.",
+        "B": "The available alternate route addresses the ownership gap.",
+        "C": "Complete attachments do not establish the required decision."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/43/",
+          "locator": "§1026.43(c)(1); comment 43(c)(1)-1.i",
+          "supports": "The creditor must make the required repayment determination; the particular authority and alternate-route assignments are provider procedures, not federally mandated job titles.",
+          "checkedOn": "2026-09-11"
+        }
+      ],
+      "remediation": {
+        "unitIds": [
+          "G01-U03",
+          "G01-U04"
+        ],
+        "focus": "Separate expertise, access and assigned decision authority."
+      },
+      "independenceNote": "Tests replacement ownership during an absence, rather than the formative reduced-hours response or a mismatched package acknowledgement."
+    },
+    {
+      "id": "N26-FIN-G03",
+      "category": "general",
+      "moduleId": "G01",
+      "objective": "Distinguish an authorized recipient from an authorized transfer method.",
+      "stem": "A fictional nonbank creditor covered by the FTC Safeguards Rule has verified that its settlement provider needs a specific package of customer information. An approved protected transfer route is available. To save time, an employee proposes an unencrypted external-network transfer with no approved alternative safeguards. What is the supported response?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Send it once the recipient confirms its identity; authorization resolves the transmission issue."
+        },
+        {
+          "id": "B",
+          "text": "Use the approved protected route; recipient authorization does not excuse the unprotected transfer."
+        },
+        {
+          "id": "C",
+          "text": "Send it with a confidentiality warning because a written warning replaces technical safeguards."
+        },
+        {
+          "id": "D",
+          "text": "Obtain the customer's permission to bypass the creditor's controls for this one transfer."
+        }
+      ],
+      "correctChoice": "B",
+      "rationale": "The permission to share the scoped package and the protection of its transmission are separate questions. The rule addresses encryption and approved alternatives; this case supplies an available protected route and no approved alternative.",
+      "distractorRationales": {
+        "A": "Recipient identity does not establish secure transmission.",
+        "C": "A warning is not the required protection or an approved effective alternative.",
+        "D": "Customer permission does not substitute for the institution's security obligations."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-C/part-314/section-314.4",
+          "locator": "16 CFR §314.4(c)(1), (c)(3)",
+          "supports": "Addresses authorized access and protection in transit, including the specified approved-compensating-control alternative; it does not mandate the case's particular transfer product.",
+          "checkedOn": "2026-09-11"
+        }
+      ],
+      "remediation": {
+        "unitIds": [
+          "G01-U04"
+        ],
+        "focus": "Confirm both permitted scope and the protective transfer controls."
+      },
+      "independenceNote": "Recipient need and authority are stipulated; the remaining defect is the channel, unlike G01-KC08's seller-agent disclosure request."
+    },
+    {
+      "id": "N26-FIN-G04",
+      "category": "general",
+      "moduleId": "G01",
+      "objective": "Retain institutional safeguards oversight when work is outsourced.",
+      "stem": "A covered nonbank creditor engages a vendor to handle mortgage documents. The vendor appears capable of protecting the information, but the proposed contract imposes no safeguards obligation and the creditor plans no later assessment. The business owner says that using a specialist transfers the entire security responsibility. What correction follows the Safeguards Rule?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Keep the arrangement because choosing a capable specialist replaces the need for contractual safeguards."
+        },
+        {
+          "id": "B",
+          "text": "Obtain a confidentiality promise and treat it as conclusive proof of adequate safeguards throughout the relationship."
+        },
+        {
+          "id": "C",
+          "text": "Require contractual safeguards and risk-based periodic assessment rather than treating outsourcing as complete delegation."
+        },
+        {
+          "id": "D",
+          "text": "Ask each borrower to accept the vendor risk instead of imposing requirements on the vendor."
+        }
+      ],
+      "correctChoice": "C",
+      "rationale": "Selection of a capable provider is one part of oversight. The cited rule also requires safeguards commitments by contract and periodic assessment based on risk; outsourcing does not replace those duties.",
+      "distractorRationales": {
+        "A": "Initial capability does not satisfy the separate contract and ongoing-assessment requirements.",
+        "B": "A general promise does not establish continued adequacy or complete the required oversight.",
+        "D": "Borrower acceptance is not a substitute for the institution's service-provider duties."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-C/part-314/section-314.4",
+          "locator": "16 CFR §314.4(f)(1)-(3)",
+          "supports": "Specifies capability selection, contractual safeguards and risk-based periodic assessment of service providers.",
+          "checkedOn": "2026-09-11"
+        }
+      ],
+      "remediation": {
+        "unitIds": [
+          "G01-U04"
+        ],
+        "focus": "Identify what the vendor does and what the creditor must still oversee."
+      },
+      "independenceNote": "Tests missing contractual and ongoing security oversight, not borrower sharing permission or delegation of Closing Disclosure delivery."
+    },
+    {
+      "id": "N26-FIN-G05",
+      "category": "general",
+      "moduleId": "G01",
+      "objective": "Evaluate record preservation by accurate retrieval rather than paper format alone.",
+      "stem": "A creditor proposes removing redundant paper copies after a tested institutional system can accurately reproduce all required information and retrieve the relevant source, decision and delivery records for their applicable retention periods. Assume no other rule, contract or legal hold requires those paper copies. Which conclusion best applies §1026.25 and G01's record control?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Every paper duplicate must be retained permanently even when accurate reconstruction is assured."
+        },
+        {
+          "id": "B",
+          "text": "An accurate retrievable method can support retention; apply the relevant schedule and verify continued retrieval."
+        },
+        {
+          "id": "C",
+          "text": "The paper may be removed once a green status is saved, even if its supporting records become unavailable."
+        },
+        {
+          "id": "D",
+          "text": "Converting to electronic records permits one two-year disposal date for every mortgage document."
+        }
+      ],
+      "correctChoice": "B",
+      "rationale": "Section 1026.25 permits accurate reconstruction methods where otherwise allowed. G01's control tests retrieval and the applicable record-specific schedule, rather than requiring permanent duplicates or relying on status alone.",
+      "distractorRationales": {
+        "A": "The cited rule does not impose permanent retention of every redundant paper copy.",
+        "C": "A status label cannot replace the required reconstructable evidence.",
+        "D": "Mortgage records have distinct applicable retention requirements; format conversion does not unify them."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/25/",
+          "locator": "§1026.25(a), (c); comment 25(a)-2",
+          "supports": "Permits accurate record-reproduction methods while retaining separate applicable mortgage retention requirements.",
+          "checkedOn": "2026-09-11"
+        }
+      ],
+      "remediation": {
+        "unitIds": [
+          "G01-U05"
+        ],
+        "focus": "Check retrieval, record obligations and disposal authority separately."
+      },
+      "independenceNote": "Tests a supported format change with verified retrieval, rather than G01-KC14's expiring vendor link and missing durable evidence."
+    },
+    {
+      "id": "N26-FIN-G06",
+      "category": "general",
+      "moduleId": "G01",
+      "objective": "Coordinate divided disclosure work into a consistent transaction record.",
+      "stem": "Before delivery of a covered Closing Disclosure, the creditor and settlement agent each prepare a draft. The creditor's draft has current approved loan terms but outdated settlement entries. The agent's draft has updated settlement entries but stale loan terms. Staff propose sending both so the consumer receives every figure. What is the best handoff?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Reconcile the drafts under the agreed responsibilities and verify the coordinated disclosure and delivery evidence."
+        },
+        {
+          "id": "B",
+          "text": "Send both drafts and ask the consumer to identify which combination of figures applies."
+        },
+        {
+          "id": "C",
+          "text": "Send only the creditor's draft because its origin makes every settlement entry controlling."
+        },
+        {
+          "id": "D",
+          "text": "Send only the newest draft because its timestamp overrides the underlying approved terms."
+        }
+      ],
+      "correctChoice": "A",
+      "rationale": "Dividing preparation work requires coordination, not transmission of conflicting drafts. The creditor remains responsible for the applicable disclosure requirements; G01's control links agreed inputs, operative output and delivery evidence.",
+      "distractorRationales": {
+        "B": "Providing conflicting drafts does not establish a consistent disclosure.",
+        "C": "The creditor's identity does not make an outdated settlement entry accurate.",
+        "D": "Recency does not establish that every field reflects the operative source and decision."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/19/",
+          "locator": "§1026.19(f)(1)(v); comments 19(f)(1)(v)-3/-4",
+          "supports": "Permits shared completion duties while retaining creditor responsibility and the need for effective coordination.",
+          "checkedOn": "2026-09-11"
+        }
+      ],
+      "remediation": {
+        "unitIds": [
+          "G01-U05"
+        ],
+        "focus": "Reconcile field sources before treating a draft as the operative disclosure."
+      },
+      "independenceNote": "Uses two conflicting pre-delivery drafts with complementary current information, not the formative abstract delegation question or wrong-package acknowledgement."
+    },
+    {
+      "id": "N26-FIN-G07",
+      "category": "general",
+      "moduleId": "G01",
+      "objective": "Do not treat a federal transaction privacy exception as a complete state-law review.",
+      "stem": "A lender plans to reuse a mortgage-data handoff in another state. Its reviewer confirms that the particular disclosure fits a Regulation P transaction-processing exception, but has not assessed any applicable state privacy protections. A manager says the federal exception makes that further check unnecessary. What is the sound response?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Reuse the handoff because a federal exception necessarily overrides any additional state protection."
+        },
+        {
+          "id": "B",
+          "text": "Block every transaction-related disclosure in the new state even when a lawful basis may exist."
+        },
+        {
+          "id": "C",
+          "text": "Ask the recipient to choose which state's privacy rules should apply to the transfer."
+        },
+        {
+          "id": "D",
+          "text": "Check the applicable state requirements; the federal exception is not a universal privacy clearance."
+        }
+      ],
+      "correctChoice": "D",
+      "rationale": "Regulation P does not generally displace more protective state requirements. This identifies an unresolved applicability review without inventing a particular state's restriction or assuming the handoff is prohibited.",
+      "distractorRationales": {
+        "A": "The federal exception does not establish blanket preemption of additional protections.",
+        "B": "An incomplete analysis does not establish that every possible disclosure is unlawful.",
+        "C": "The recipient's preference does not determine the applicable law."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1016/14/",
+          "locator": "§1016.14(a)-(b)",
+          "supports": "Provides a scoped exception to specified notice and opt-out requirements for qualifying transaction activity.",
+          "checkedOn": "2026-09-11"
+        },
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1016/17/",
+          "locator": "§1016.17(a)-(b)",
+          "supports": "Addresses the relationship to state law and greater state protection; no particular state-law outcome is asserted.",
+          "checkedOn": "2026-09-11"
+        }
+      ],
+      "remediation": {
+        "unitIds": [
+          "G01-U04"
+        ],
+        "focus": "Identify unresolved legal applicability after establishing a federal exception."
+      },
+      "independenceNote": "Tests portability of a legally scoped handoff across state-law contexts, not a recipient's interest in the sale, consent or document redaction."
+    },
+    {
+      "id": "N26-FIN-G08",
+      "category": "general",
+      "moduleId": "G01",
+      "objective": "Close resolved work without erasing its history or claiming unrelated clearance.",
+      "stem": "In a fictional successor-review file, an insurance-document condition originally lacked acceptable evidence. A later insurer record is now indexed, and the reviewer authorized by the creditor's procedures expressly accepted it for that condition. The worklist still asks the borrower for the same replacement record. No other release condition is being decided. Which update is appropriate under G01's control?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Keep requesting the record until the entire loan is ready, because a condition cannot close separately."
+        },
+        {
+          "id": "B",
+          "text": "Delete the earlier deficiency and its source entry so the accepted record appears to have been present throughout."
+        },
+        {
+          "id": "C",
+          "text": "Close the duplicate request, link the accepted evidence and decision, and retain the accurate chronology."
+        },
+        {
+          "id": "D",
+          "text": "Mark every release check complete because this authorized acceptance proves the entire package is ready."
+        }
+      ],
+      "correctChoice": "C",
+      "rationale": "The evidence and authorized decision now support closing this request. Preserve how the issue was resolved without recreating history or extending that acceptance to unrelated release checks.",
+      "distractorRationales": {
+        "A": "A resolved request need not remain a customer task solely because other work continues.",
+        "B": "Deleting the earlier deficiency would misstate the chronology.",
+        "D": "One condition's acceptance does not establish every other release requirement."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/25/",
+          "locator": "§1026.25(a); comment 25(a)-2",
+          "supports": "Supports a retrievable compliance record; the condition-status and evidence-linking steps are provider-selected handoff controls.",
+          "checkedOn": "2026-09-11"
+        }
+      ],
+      "remediation": {
+        "unitIds": [
+          "G01-U02",
+          "G01-U06"
+        ],
+        "focus": "Reflect a supported resolution while retaining the earlier record and decision trail."
+      },
+      "independenceNote": "Tests justified closure after both evidence and authorized acceptance exist, unlike the formative missing-page and transferred-funds cases where the decision is still pending; no insurance-eligibility rule is being tested."
+    }
+  ]
+}

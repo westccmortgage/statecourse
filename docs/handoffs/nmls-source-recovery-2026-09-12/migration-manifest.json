@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "scope": "local forward NMLS chain; not evidence of live application",
+  "originalBase": "0858b3cf494bf133ef925acae3f63af769620a0b",
+  "conflicts": [
+    "main database/023_console_workbench.sql is not NMLS023",
+    "main database/024_texas_training_runtime.sql is not NMLS024"
+  ],
+  "files": [
+    {
+      "path": "database/023_nmls_review_runtime.sql",
+      "sha256": "bbdced1f6c43e57484516cf5be6e2a3fdde769574580fc34488934afd847b5bb",
+      "bytes": 10846
+    },
+    {
+      "path": "database/024_nmls_review_discovery.sql",
+      "sha256": "5417e0c7822833b29c31e940c16d0324f956c7f3e624aae560d1e8c5436f9e83",
+      "bytes": 956
+    },
+    {
+      "path": "database/025_nmls_review_session_policy.sql",
+      "sha256": "20ef3238d7cefc7b88a30d259699e1f79486791532a04946d833818ccdc29375",
+      "bytes": 28241
+    },
+    {
+      "path": "database/026_nmls_private_final_history.sql",
+      "sha256": "7a93a1180011913c61139ee84b0342064806453e3b915eb50244ec2e9342b303",
+      "bytes": 15832
+    },
+    {
+      "path": "database/027_nmls_policy_exposure_guards.sql",
+      "sha256": "a6afa2b06ce24a2d437c7b37bbf17fcac35f7eab560b303b75a21cfdfa0c93e0",
+      "bytes": 25014
+    },
+    {
+      "path": "database/028_nmls_private_final_remediation.sql",
+      "sha256": "c3787f1b83cb1780895f80037c20f3e98e3f44d83bee090fdbde5dab04ed621a",
+      "bytes": 33950
+    },
+    {
+      "path": "database/029_nmls_initial_exposure.sql",
+      "sha256": "ad3e4b39b06dca5cdeb2053cf3f8a7045e0c1f9144fc71fbafe92132e9cd77aa",
+      "bytes": 9175
+    },
+    {
+      "path": "database/030_nmls_phase_write_fences.sql",
+      "sha256": "d9ff4dc74e1654f9f9b8bf8f99d42040a1e91ab9684f2d904e9ad4d4d9f9bcda",
+      "bytes": 15656
+    },
+    {
+      "path": "database/031_nmls_teaching_exposure_guards.sql",
+      "sha256": "dc6a674cae0e874c563bd74095983332f3acc733ae87cdbd53f0647ee3b1488d",
+      "bytes": 32770
+    },
+    {
+      "path": "database/032_nmls_joint_teaching.sql",
+      "sha256": "87dedadb25cb3ec7f3a2e5eb574a75d14bb2dec9b0baa5efba3d36224eb4a20c",
+      "bytes": 38009
+    },
+    {
+      "path": "database/033_nmls_final_reservation.sql",
+      "sha256": "69cad0519e2beba5c9a0f776089000bd1d7d711cdb72b9c4f30becda47393223",
+      "bytes": 26232
+    },
+    {
+      "path": "database/034_nmls_final_delivery_guards.sql",
+      "sha256": "97f8d01efb3b61cb73f30b3c222d8d03b19281f94be45faaaec11ea36482f7b9",
+      "bytes": 39304
+    },
+    {
+      "path": "database/035_nmls_first_final_delivery.sql",
+      "sha256": "be3be163f0a2f55ec6735c2b618b750ba2893c2498429055e555743c89d12da6",
+      "bytes": 42056
+    },
+    {
+      "path": "database/036_nmls_first_final_submission.sql",
+      "sha256": "ca29e6f91b0993ba68c46d32eea23078f67c0f6b221a66451bbd713511bde25c",
+      "bytes": 50274
+    },
+    {
+      "path": "database/037_nmls_first_final_handoff.sql",
+      "sha256": "ef5b03edd42029c6ae8008717de7acf6dccd040dd2be91fcd7eca91a547805a6",
+      "bytes": 45089
+    },
+    {
+      "path": "database/038_nmls_second_final_reservation.sql",
+      "sha256": "85d2b4966e727481455251de93251e0ba0c3e5ce0c1a081b2e153328f70b04c2",
+      "bytes": 60480
+    },
+    {
+      "path": "database/039_nmls_second_final_delivery.sql",
+      "sha256": "eb0ecaab53839ad0bb8e282a65d55a54ad52543481001edfa433928a6d90fbdc",
+      "bytes": 74966
+    },
+    {
+      "path": "database/040_nmls_second_final_submission.sql",
+      "sha256": "de6fee808b6cf7d8a12c00a1378ecaca6f3780aee486d5bfd5033a4459e09440",
+      "bytes": 40053
+    }
+  ]
+}

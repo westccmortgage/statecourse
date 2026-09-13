@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="theme-color" content="#0f2237">
+  <title>NMLS development review | StateCourse</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/fonts/fonts.css">
+  <link rel="stylesheet" href="/student/design-tokens.css">
+  <link rel="stylesheet" href="./nmls-review.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to learning workspace</a>
+  <header class="review-header">
+    <a class="brand" href="/student/"><img src="/favicon.svg" width="32" height="36" alt=""><span>StateCourse<small>Learning workspace</small></span></a>
+    <nav aria-label="Account"><a href="/student/">My StateCourse</a><button id="signOut" type="button">Sign out</button></nav>
+  </header>
+  <div class="review-notice"><strong>Private development review · No NMLS credit</strong><span>Not an approved course, enrollment or completion certificate. Access is by invitation.</span></div>
+  <main id="main" tabindex="-1">
+    <section id="catalog" class="catalog" aria-labelledby="catalogTitle">
+      <p class="eyebrow">Mortgage continuing education · Development</p>
+      <h1 id="catalogTitle">Your private reviews</h1>
+      <p>Review the lesson, work through the questions and test the learning experience. Only reviews assigned to your account appear here.</p>
+      <p id="catalogStatus" role="status">Checking your review access…</p>
+      <div id="reviewList"></div>
+      <button id="catalogRetry" class="secondary" type="button" hidden>Check again</button>
+      <a id="catalogSignIn" href="/student/sign-in/?return_to=%2Fstudent%2Fnmls-review%2F" hidden>Sign in to My StateCourse</a>
+    </section>
+    <section id="study" hidden aria-label="Private learning workspace">
+      <div class="study-heading"><div><button id="backToReviews" class="text-button" type="button">← All private reviews</button><h1 id="courseTitle">Private review</h1></div><button id="exitReview" class="secondary" type="button" hidden>Exit review</button></div>
+      <div class="sync-bar"><p id="syncStatus" role="status">Loading your saved review…</p><button id="retryCommand" type="button" hidden>Retry safely</button><button id="reloadReview" class="secondary" type="button" hidden>Reload saved review</button><a id="studySignIn" href="/student/sign-in/?return_to=%2Fstudent%2Fnmls-review%2F" hidden>Sign in again</a></div>
+      <div class="workspace">
+        <aside class="outline-panel" aria-label="Review outline"><p class="eyebrow">Learning outline</p><p id="savedSummary"></p><nav id="outline" aria-label="Units and module reviews"></nav><p class="fine-print">Displayed time is server-confirmed review activity, not NMLS credit. Timing allocations have not been validated.</p></aside>
+        <div class="reading-column">
+          <section id="resumePanel" class="resume-panel" hidden><h2>Continue on this device</h2><p>Completed units remain saved. Starting or resuming restarts any unfinished unit and stops another active review session for this account.</p><p>Six minutes without activity ends the review session. There is no advance warning. The unfinished unit and quiz must be restarted.</p><button id="resumeReview" type="button">Start or resume review</button></section>
+          <section id="reviewFinished" class="finish-panel" hidden><h2>Development review finished</h2><p>Your review progress has been saved. This is not completion of an approved course and does not issue CE credit, a certificate or an NMLS record.</p><a href="/student/">Return to My StateCourse</a></section>
+          <div id="unitMeta" class="unit-meta" hidden><span id="unitPosition"></span><span id="unitTime"></span></div>
+          <article id="lesson" class="lesson" aria-label="Lesson reading"></article>
+          <section id="questionArea" class="question-area" hidden aria-label="Unit knowledge check"></section>
+          <section id="quizArea" class="question-area" hidden aria-label="Module review questions"></section>
+          <section id="feedbackArea" class="feedback-area" aria-live="polite" hidden></section>
+          <div id="nextArea" class="next-area" hidden><p id="nextHelp"></p><button id="nextAction" type="button">Continue</button></div>
+        </div>
+      </div>
+    </section>
+    <noscript><p class="catalog">JavaScript is required to sign in and save review activity. No lesson time is recorded while JavaScript is disabled.</p></noscript>
+  </main>
+  <footer>StateCourse · Private development review. No payment, enrollment or CE reporting occurs here.</footer>
+  <script type="module" src="./nmls-review.mjs"></script>
+</body>
+</html>
