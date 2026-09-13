@@ -11,6 +11,19 @@ export { COURSE_IDENTITIES } from '../../../config/course-identities.mjs';
 export function buildCourseInventory(catalog, database, governance, scopeStates = null) {
   const publicAvailable = Array.isArray(catalog?.categories);
   const inScope = state => !scopeStates || scopeStates.includes(state);
+  const verticals = (catalog?.categories || []).map(category => {
+    const courses=(category.programs || []).flatMap(program => program.courses || []);
+    const states=[...new Set(courses.map(course=>course.state_id).filter(Boolean))].sort();
+    return {
+      id:category.category_id,
+      title:category.title,
+      status:category.status || null,
+      launchTarget:category.launch_target || null,
+      programCount:(category.programs || []).length,
+      courseCount:courses.length,
+      states,
+    };
+  }).filter(vertical=>!scopeStates || vertical.states.some(inScope));
   const publicCourses = (catalog?.categories || []).flatMap(category =>
     (category.programs || []).flatMap(program => (program.courses || []).map(course => ({
       id:course.course_id,state:course.state_id || program.state_code,name:course.course_title,
@@ -48,7 +61,7 @@ export function buildCourseInventory(catalog, database, governance, scopeStates 
   for (const record of records) if (!matched.has(record.id)) rows.push(row(null,record));
   rows.sort((a,b) => a.state.localeCompare(b.state) || a.name.localeCompare(b.name));
   const completeDatabase = database.available && !database.truncated;
-  return {publicAvailable,databaseAvailable:completeDatabase,rows,summary:{
+  return {publicAvailable,databaseAvailable:completeDatabase,verticals,rows,summary:{
     catalogStates:publicAvailable ? new Set(publicCourses.map(c => c.state)).size : null,
     catalogCourses:publicAvailable ? publicCourses.length : null,
     databaseRecords:completeDatabase ? records.length : null,
