@@ -66,6 +66,17 @@ test('ambiguous approval decisions cannot make a course look open',()=>{
   assert.equal(result.rows.find(r=>r.id==='ca-real-estate-principles-45').trainingStatus,'not_verified');
   assert.equal(result.summary.availableTraining,2);
 });
+test('a future mortgage course reads only mortgage governance, never a real-estate decision',()=>{
+  const withMortgage=structuredClone(catalog);
+  const vertical=withMortgage.categories.find(c=>c.category_id==='mortgage');
+  vertical.programs=[{state_code:'CA',courses:[{course_id:'ca-nmls-ce-8',state_id:'CA',course_title:'NMLS Continuing Education',required_hours:8,route:'/mortgage/california/ce/',course_version:'v1'}]}];
+  const database=source([...db.rows,{id:'ca-nmls-ce-8',state:'CA',name:'NMLS Continuing Education',trainingReadiness:{ready:true}}]);
+  const shared={offering_id:'ca-nmls-ce-8',state:'CA',offering_kind:'course',training_access_enabled:true,payment_mode:'sandbox',approval_status:'none'};
+  const result=buildCourseInventory(withMortgage,database,source([{...shared,discipline:'real_estate'},{...shared,discipline:'mortgage'}]));
+  const course=result.rows.find(row=>row.id==='ca-nmls-ce-8');
+  assert.equal(course.discipline,'mortgage');
+  assert.equal(course.trainingStatus,'available');
+});
 
 async function registrationFixture(run) {
   return withConsoleMock(createStore(),async()=>{
