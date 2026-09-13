@@ -8,7 +8,7 @@ The recovered national manuscript now has a real, authenticated, persistent **fr
 
 - **Local implementation:** complete for this free-training scope; full-suite checkpoint reported by the integration owner: **2,573 passed / 0 failed**. This is not a human-duration or live-payment test.
 - **Database migration:** the integration owner verified the complete 28,951-byte `database/025_nmls_free_training.sql` in the production SQL editor and observed **“Success. No rows returned” on September 13, 2026**. Actual row creation time read back: **`2026-09-13T10:52:14.658469+00:00`**. Production readback confirms the course/version, both hashes, 8 modules / 45 lessons, closed approval/payment/credit gates, three RLS tables, and correct privileges on all three tables and six functions. No enrollment, training event, checkout, payment, credit-completion or certificate records existed for this course at that checkpoint.
-- **Production code deployment, authenticated browser acceptance, and reviewer-account acceptance:** pending. Do not describe the new learner route as live solely because SQL succeeded.
+- **Production code deployment:** confirmed on `main` at implementation commit `93ef2ca946610231779e65d480656f1ca4c22920`; Netlify deploy `6aa682f173d1830008c3dc98`, production / ready, published `2026-09-13T11:04:01.445Z`. Netlify scanned 3,068 files with zero standard or enhanced secret matches. Public mortgage, student entry and admin entry pages were opened in the actual browser. **Authenticated student and reviewer acceptance remains pending**; no full live learning pass is claimed.
 - **Commercial CE:** closed. No education-provider/course approval identifiers, CE credit, completion certificate, regulatory reporting, or NMLS-course payment activation is claimed.
 
 Use [production-postcheck.sql](production-postcheck.sql) to repeat the checks after deployment and reviewer provisioning. Its nine read-only queries return no personal information, raw learner answers, or secrets. The entire file was executed successfully against disposable PostgreSQL/PGlite using the real main 001–024 schema plus 025. Production results above were separately read back by the integration owner; this does not imply that student/reviewer acceptance has occurred.
@@ -86,6 +86,14 @@ Additional direct checks at this checkpoint:
 
 - SQL 025 application: confirmed successful in production UI, September 13, 2026.
 - Production database readback: **passed** for exact identity/version, 8/45 content counts, both hashes, three table privilege boundaries, six RPC boundaries, closed commercial/credit gates and zero forbidden records; no learners or reviewer enrollments yet. Re-run membership/event checks after live account acceptance.
-- Source preservation / deployed integration commit and deploy ID: **pending**.
+- Source preservation / deployed integration: **confirmed** in `main` and `integration/nmls-free-training-20260913`, implementation commit `93ef2ca946610231779e65d480656f1ca4c22920`, deploy `6aa682f173d1830008c3dc98`. Later documentation-only commits do not change these implementation/checkpoint identifiers.
 - Live learner and read-only reviewer acceptance: **pending**.
 - NMLS provider/course approval, CE credit, certificates and payment authorization: **not established; closed**.
+
+### Live configuration limitations (read-only inspection after publication)
+
+Netlify production has `STRIPE_MODE=test` and `STATECOURSE_LIVE_PAYMENTS_ENABLED=false`, both Functions-scoped. `STRIPE_SECRET_KEY` and `STRIPE_WEBHOOK_SECRET` are absent; an actual sandbox checkout/webhook cannot yet be claimed. Free training does not require checkout.
+
+`SUPABASE_SERVICE_ROLE_KEY` is marked secret but scoped to Builds/Functions/Runtime. `CLOUDFLARE_STREAM_API_TOKEN` is broadly scoped and not marked secret. Current build scripts do not consume either. Narrow both to Functions while preserving existing values, mark the Stream token secret, then redeploy. Do not replace hidden values with API redaction placeholders. No environment value or scope was changed during this checkpoint, and no leak is inferred from broad scopes alone.
+
+Production's functions run Node 24. The four isolated compiled-handler smoke checks also passed on Node 24.18.0, in addition to Node 22; offline ZIP metadata still reports the bundler's Node 22 default. This distinction is intentional and is not a claim that production runs Node 22.
