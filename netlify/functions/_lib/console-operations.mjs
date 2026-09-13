@@ -96,6 +96,10 @@ export function assessSnapshot(data, environment = {}) {
     if (!source.available) add(`source_${name}`, 'unverified', null, `${name}: source could not be read.`);
     if (source.truncated) add(`incomplete_${name}`, 'unverified', null, `${name}: only the most recent 1,000 rows were checked.`);
   }
+  const mortgage=data.inventory?.verticals?.find(vertical=>vertical.id==='mortgage');
+  if (data.inventory?.publicAvailable && mortgage && mortgage.courseCount===0) {
+    add('nmls_course_record_missing','blocking',null,'Mortgage / NMLS has no published NMLS course record. Provider approval, course approval, enrollment and payments remain closed.');
+  }
   for (const course of data.datasets.courses.rows) {
     const structure = courseStructure(course.id);
     if (!structure.available) { if(course.approval_status==='not_regulated')continue;add('renderer_missing', 'blocking', course.id, 'No student block renderer is registered for this course.'); continue; }
