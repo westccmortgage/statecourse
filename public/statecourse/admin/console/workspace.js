@@ -51,7 +51,7 @@ function renderNmls(){
   if(!vertical){$('#nmlsBody').innerHTML='<p class="message error">Mortgage / NMLS is not registered in the public catalog.</p>';return;}
   const mortgageCourses=(data.inventory.rows||[]).filter(course=>course.category==='mortgage');
   const decisions=(data.datasets.governance?.rows||[]).filter(row=>row.discipline==='mortgage');
-  const effectiveApprovals=decisions.filter(row=>row.approval_status==='approved'&&row.approval_effective);
+  const effectiveApprovals=decisions.filter(row=>row.approval_status==='approved'&&row.approval_currently_effective===true);
   const training=decisions.filter(row=>row.training_access_enabled===true);
   const live=decisions.filter(row=>row.live_charging_permitted===true);
   const target=vertical.launchTarget?.label||'Not recorded';
