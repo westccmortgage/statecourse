@@ -23,6 +23,9 @@ test('the complete catalog distinguishes 14 states and 30 courses from 12 databa
   assert.deepEqual(data.summary,{catalogStates:14,catalogCourses:30,databaseRecords:12,databaseStates:7,availableTraining:3,databaseServices:2});
   assert.equal(data.rows.length,32);
   assert.equal(data.rows.filter(c=>c.trainingStatus==='registration_needed').length,20);
+  assert.deepEqual(data.verticals.find(v=>v.id==='mortgage'),{
+    id:'mortgage',title:'Mortgage / NMLS',status:'future',launchTarget:catalog.categories.find(c=>c.category_id==='mortgage').launch_target,programCount:0,courseCount:0,states:[],
+  });
 });
 test('declared Texas and Virginia identities retain their public IDs while opening the existing database course',()=>{
   const {rows}=buildCourseInventory(catalog,db,governance);
@@ -36,6 +39,7 @@ test('state scope applies to public-only courses as well as database rows and co
   const result=buildCourseInventory(catalog,db,governance,['AZ']);
   assert.equal(result.rows.length,2);assert.ok(result.rows.every(r=>r.state==='AZ'));
   assert.deepEqual(result.summary,{catalogStates:1,catalogCourses:2,databaseRecords:0,databaseStates:0,availableTraining:0,databaseServices:0});
+  assert.equal(result.verticals.some(v=>v.id==='mortgage'),false);
 });
 test('an unreadable or partial database is not represented as zero missing courses or ready training',()=>{
   for(const database of [{...db,available:false,rows:[]},{...db,truncated:true}]){
