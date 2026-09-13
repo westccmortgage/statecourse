@@ -34,9 +34,10 @@ export function buildCourseInventory(catalog, database, governance, scopeStates 
   function row(publicCourse, dbCourse) {
     const id = dbCourse?.id || publicCourse.id;
     const state = dbCourse?.state || publicCourse.state;
+    const discipline = publicCourse?.category === 'mortgage' ? 'mortgage' : 'real_estate';
     const service = dbCourse?.approval_status === 'not_regulated';
     const readiness = service ? null : dbCourse?.trainingReadiness || trainingReadiness(id);
-    const decisions = governance.rows.filter(g => g.offering_id === id && g.state === state && g.offering_kind === 'course' && g.discipline === 'real_estate');
+    const decisions = governance.rows.filter(g => g.offering_id === id && g.state === state && g.offering_kind === 'course' && g.discipline === discipline);
     const decision = governance.available && decisions.length === 1 ? decisions[0] : null;
     const databaseVerified = database.available && !database.truncated;
     const status = service ? 'service'
@@ -48,7 +49,7 @@ export function buildCourseInventory(catalog, database, governance, scopeStates 
     if (dbCourse) matched.add(dbCourse.id);
     return {id,state,name:dbCourse?.name || publicCourse.name,publicId:publicCourse?.id || null,
       databaseId:dbCourse?.id || null,route:publicCourse?.route || null,hours:publicCourse?.hours || null,
-      category:publicCourse?.category || null,version:publicCourse?.version || null,
+      category:publicCourse?.category || null,discipline,version:publicCourse?.version || null,
       service,trainingStatus:status,readiness,approval:decision?.approval_status || dbCourse?.approval_status || null,
       paymentMode:decision?.payment_mode || null};
   }
