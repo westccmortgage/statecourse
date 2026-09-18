@@ -1,0 +1,11 @@
+Every mortgage transaction rests on two documents, and they do different jobs. The promissory note is the promise to repay — it creates the debt. The security instrument, the deed of trust, pledges the property as security for that debt. On this note, let's locate the terms that make it enforceable. This is the promissory note behind our running example. It's organized in numbered sections.
+
+Section 1 states the promise to pay. Section 2 sets the interest rate. Section 3 sets the payment amount and schedule. Further down, Section 5 covers the late charge — and on page two, Section 9 names the deed of trust as this note's security instrument. Locate Section 1, the Borrower's Promise to Pay.
+
+The borrower promises to pay the lender, ResiCentral, LLC, a principal of $1,189,150 — the amount actually borrowed, plus interest. Section 2 sets the interest rate: 7.5 percent per year. On a fixed-rate note like this one, that rate applies both before and after any default. Section 3 sets the payment terms: a monthly payment of $8,314.71, due the first of each month, beginning September 1, 2026.
+
+If any balance remains on the Maturity Date, August 1, 2056, it's due in full that day. Section 5 is the late charge. Miss the fifteen-day grace period, and the borrower owes 5 percent of the overdue principal and interest payment — charged once per late payment, not compounding. Turn to Section 9, Secured Note, on page two.
+
+It names the deed of trust, dated the same day as this note, as the security instrument that protects the lender if these promises aren't kept. This is the link back to where we started: the note is the debt, the deed of trust is the remedy. Every note earns its terms by section, not by feel: principal, rate, payment, and maturity in Sections 1 through 3, the late charge in Section 5, and the link to the security instrument in Section 9.
+
+Read it that way, and the second document — the deed of trust — will already make sense before you turn to it.

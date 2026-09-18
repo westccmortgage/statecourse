@@ -34,11 +34,13 @@ export const MORTGAGE_BLOCK_SPECS = {
       "a2-b3-s1": {
         videos: [
           {
-            src: "https://statecourse.com/media/promissory-note-overview.mp4",
-            poster: "/media/promissory-note-overview-poster.webp",
-            captions: "/media/promissory-note-overview.vtt",
+            provider: "cloudflare-stream",
+            assetKey: "ca-promissory-note-overview",
+            captionLanguage: "en",
             label: "Video: The Promissory Note (document overview)",
             duration: "2:27",
+            required: false,
+            nonBlocking: true,
           },
         ],
         documents: [
@@ -189,25 +191,31 @@ export const MORTGAGE_BLOCK_SPECS = {
       "a9-b1-s2": {
         videos: [
           {
-            src: "https://statecourse.com/media/document-overview-loan-estimate-page-1.mp4",
-            poster: "/media/document-overview-loan-estimate-page-1-poster.webp",
-            captions: "/media/document-overview-loan-estimate-page-1.vtt",
+            provider: "cloudflare-stream",
+            assetKey: "ca-loan-estimate-page-1",
+            captionLanguage: "en",
             label: "Video: Loan Estimate — Page 1 (document overview)",
             duration: "1:59",
+            required: false,
+            nonBlocking: true,
           },
           {
-            src: "https://statecourse.com/media/document-overview-loan-estimate-page-2.mp4",
-            poster: "/media/document-overview-loan-estimate-page-2-poster.webp",
-            captions: "/media/document-overview-loan-estimate-page-2.vtt",
+            provider: "cloudflare-stream",
+            assetKey: "ca-loan-estimate-page-2",
+            captionLanguage: "en",
             label: "Video: Loan Estimate — Page 2 (closing cost details)",
             duration: "2:49",
+            required: false,
+            nonBlocking: true,
           },
           {
-            src: "https://statecourse.com/media/document-overview-loan-estimate-page-3.mp4",
-            poster: "/media/document-overview-loan-estimate-page-3-poster.webp",
-            captions: "/media/document-overview-loan-estimate-page-3.vtt",
+            provider: "cloudflare-stream",
+            assetKey: "ca-loan-estimate-page-3",
+            captionLanguage: "en",
             label: "Video: Loan Estimate — Page 3 (comparisons and signature)",
             duration: "2:13",
+            required: false,
+            nonBlocking: true,
           },
         ],
         documents: [

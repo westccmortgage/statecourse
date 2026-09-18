@@ -1,10 +1,9 @@
 // Resolve both supported URL namespaces without sending application APIs to static HTML.
+/* Public media is marketing only. Course instruction — including its captions, which carry the
+   whole narration — goes through signed Cloudflare Stream delivery instead, so nothing a student
+   pays for is reachable by URL alone. Adding a lesson video here would undo that. */
 const CDN_MEDIA=new Set([
- '/media/statecourse-intro.mp4',
- '/media/document-overview-loan-estimate-page-1.mp4',
- '/media/document-overview-loan-estimate-page-2.mp4',
- '/media/document-overview-loan-estimate-page-3.mp4',
- '/media/promissory-note-overview.mp4'
+ '/media/statecourse-intro.mp4'
 ]);
 export async function servePublicAssets(request,assets){
  const url=new URL(request.url);

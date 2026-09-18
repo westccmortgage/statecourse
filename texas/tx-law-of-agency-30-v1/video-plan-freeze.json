@@ -341,8 +341,8 @@
     },
     "private Stream media allowlist": {
       "path": "config/stream-media.mjs",
-      "sha256": "faf6503e59ac55f806421c38db64318b00979e2f670318e873ed0d12979f554b",
-      "bytes": 1163
+      "sha256": "65d43f070d56ce7c323d29f239c87d0da03152b049a4794b06bd3c3d5c22f6e0",
+      "bytes": 3197
     },
     "Law of Agency block-map wrapper": {
       "path": "scripts/generate-tx-law-of-agency-block-maps.mjs",
@@ -376,8 +376,8 @@
     },
     "private Stream production routing and CSP": {
       "path": "netlify.toml",
-      "sha256": "3138c25c80781a8ee2ef7c6a4522698d288cc6a3b1d0cbb62ff3e2a91c812612",
-      "bytes": 7226
+      "sha256": "bd36f29443760e806db40522a9702a749c17475df814ca77c310ae426a833214",
+      "bytes": 7549
     },
     "private Stream player": {
       "path": "public/statecourse/student/course/blocks/course-video.mjs",

@@ -35,17 +35,13 @@ fi
 # Oversize production videos are delivered from the StateCourse CDN. Sites keeps
 # their lightweight posters, captions, transcripts, and players without duplicating
 # media objects that exceed its 25 MiB per-file artifact limit.
+#
+# Only the marketing intro is listed. The California course videos used to be here too; they
+# now go out over signed Cloudflare Stream, so they never enter the public tree and there is
+# nothing to strip. A course video reappearing in this list would mean it had been republished.
 rm -f \
   "${SITES_PROJECT_ROOT}/dist/media/statecourse-intro.mp4" \
-  "${SITES_PROJECT_ROOT}/dist/client/statecourse/media/statecourse-intro.mp4" \
-  "${SITES_PROJECT_ROOT}/dist/media/document-overview-loan-estimate-page-1.mp4" \
-  "${SITES_PROJECT_ROOT}/dist/client/statecourse/media/document-overview-loan-estimate-page-1.mp4" \
-  "${SITES_PROJECT_ROOT}/dist/media/promissory-note-overview.mp4" \
-  "${SITES_PROJECT_ROOT}/dist/client/statecourse/media/promissory-note-overview.mp4" \
-  "${SITES_PROJECT_ROOT}/dist/media/document-overview-loan-estimate-page-2.mp4" \
-  "${SITES_PROJECT_ROOT}/dist/client/statecourse/media/document-overview-loan-estimate-page-2.mp4" \
-  "${SITES_PROJECT_ROOT}/dist/media/document-overview-loan-estimate-page-3.mp4" \
-  "${SITES_PROJECT_ROOT}/dist/client/statecourse/media/document-overview-loan-estimate-page-3.mp4"
+  "${SITES_PROJECT_ROOT}/dist/client/statecourse/media/statecourse-intro.mp4"
 
 oversize_file="$(find "${SITES_PROJECT_ROOT}/dist" -type f -size +25M -print -quit)"
 if [[ -n "${oversize_file}" ]]; then

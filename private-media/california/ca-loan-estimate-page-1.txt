@@ -1,0 +1,9 @@
+A Loan Estimate contains a lot of information, but a borrower will usually look at only a few numbers first. In this lesson, we are going to locate five of them and, more importantly, understand why looking at only one number can give you the wrong picture. This is Page 1 of the Loan Estimate. Think of it as an orientation page. It identifies the transaction, summarizes the proposed loan terms, estimates the monthly payment, and shows the estimated cash needed to close.
+
+First, locate the Loan Amount. This is the amount being borrowed under the proposed transaction. Do not confuse the loan amount with the purchase price, the property value, or the total amount the borrower will ultimately pay over time. Next is the Interest Rate. This is one important part of the loan's cost, but it is not the entire cost of borrowing. A lower interest rate does not automatically mean that one loan is less expensive than another.
+
+Now look at Principal and Interest. This is the scheduled loan payment component before other items such as mortgage insurance, property taxes, homeowners insurance, or other amounts that may be included in the total housing payment. This is why the next number matters. Estimated Total Payment gives a broader picture of the expected monthly obligation shown on this estimate. A borrower who focuses only on principal and interest may significantly underestimate the actual monthly cash requirement.
+
+Finally, locate Estimated Cash to Close. This is different from the monthly payment. It is the estimated amount the borrower will need to bring to the transaction at closing, based on the assumptions and information reflected in this Loan Estimate. Here is the important professional habit: never explain one of these numbers by itself. Loan amount, rate, payment, and cash to close describe different parts of the transaction.
+
+A borrower needs to understand how they work together.

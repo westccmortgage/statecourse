@@ -27,24 +27,45 @@ test("video priorities are unique and cover every built state once", () => {
   assert.equal(new Set(portfolio.states.map((state) => state.state_code)).size, 14);
 });
 
-test("California's four active videos have complete shipping assets", () => {
+test("California's four rendered videos are private and none is published", () => {
   const stems = [
+    "ca-loan-estimate-page-1",
+    "ca-loan-estimate-page-2",
+    "ca-loan-estimate-page-3",
+    "ca-promissory-note-overview",
+  ];
+  for (const stem of stems) {
+    /* The text equivalents are what must exist in the tree; the MP4 itself lives on Stream once
+       uploaded, so requiring it here would forbid ever removing the local master. */
+    for (const extension of ["vtt", "txt"]) {
+      const file = path.join(root, `private-media/california/${stem}.${extension}`);
+      assert.ok(fs.existsSync(file) && fs.statSync(file).size > 0, file);
+    }
+    for (const extension of ["mp4", "vtt", "txt"]) {
+      assert.equal(fs.existsSync(path.join(root, `public/statecourse/media/${stem}.${extension}`)), false, `${stem}.${extension} must not be public`);
+    }
+    assert.equal(fs.existsSync(path.join(root, `public/statecourse/media/${stem}-poster.webp`)), false, `${stem}-poster.webp must not be public`);
+  }
+  /* The names these shipped under before the move. A rename must not quietly leave the old
+     public copy in place — that would protect the new path and publish the same lesson anyway. */
+  for (const retired of [
+    "promissory-note-overview",
     "document-overview-loan-estimate-page-1",
     "document-overview-loan-estimate-page-2",
     "document-overview-loan-estimate-page-3",
-    "promissory-note-overview",
-  ];
-  for (const stem of stems) {
-    for (const extension of ["mp4", "vtt"]) {
-      const file = path.join(root, `public/statecourse/media/${stem}.${extension}`);
-      assert.ok(fs.existsSync(file) && fs.statSync(file).size > 0, file);
+  ]) {
+    for (const extension of ["mp4", "vtt", "txt"]) {
+      assert.equal(fs.existsSync(path.join(root, `public/statecourse/media/${retired}.${extension}`)), false, `${retired}.${extension} must not be public`);
     }
-    const poster = path.join(root, `public/statecourse/media/${stem}-poster.webp`);
-    assert.ok(fs.existsSync(poster) && fs.statSync(poster).size > 0, poster);
+    assert.equal(fs.existsSync(path.join(root, `public/statecourse/media/${retired}-poster.webp`)), false, `${retired}-poster.webp must not be public`);
   }
   const california = portfolio.states.find((state) => state.state_code === "CA");
+  /* Four renders exist and none is active: moving them to signed delivery retired the public
+     URLs that carried them, and nothing is active again until the Stream uploads exist and the
+     private-delivery reviews Texas already passed are recorded for these four too. Rendered and
+     active stay separate numbers so that gap is visible rather than rounded away. */
   assert.equal(california.rendered_instructional_videos, 4);
-  assert.equal(california.active_instructional_videos, 4);
+  assert.equal(california.active_instructional_videos, 0);
 });
 
 test("Texas records three rendered videos, activates two, and publishes none of them", () => {

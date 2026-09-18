@@ -587,7 +587,7 @@
     },
     "video plan freeze (LOA-VIDEO-PLAN-FREEZE-2026-09-08-v8 — hashes the plan and every render and delivery dependency)": {
       "path": "texas/tx-law-of-agency-30-v1/video-plan-freeze.json",
-      "sha256": "0de3a73d91f2b22011d4d81544c2f849d7b9e2cf495df056aae656676e832404",
+      "sha256": "f0716a159d10a0732221bdf91922a3d225fc8c0e42a44ed06a3a75312c7494fd",
       "bytes": 29443
     }
   },

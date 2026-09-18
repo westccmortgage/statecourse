@@ -4,7 +4,11 @@
 
 [functions]
   included_files = [
+    # Protected transcripts. These are served only to an authorised enrollment by the stream
+    # transcript endpoint, never copied into dist/, and are the text equivalent a student who
+    # cannot use the video depends on — so the bundle has to carry every state's, not just one.
     "private-media/texas/*.txt",
+    "private-media/california/*.txt",
     # The administration console reconciles the catalog against the files that describe it,
     # so the functions bundle has to carry them. They are read, never written.
     "public/statecourse/data/course-catalog.json",
