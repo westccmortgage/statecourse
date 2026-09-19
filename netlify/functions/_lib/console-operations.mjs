@@ -1,9 +1,11 @@
+import { nmlsAdministrativeProgress } from './nmls-training-service.mjs';
 import { trainingReadiness, verifiedTrainingReadiness } from './training-readiness.mjs';
 import { courseInventory } from './course-inventory.mjs';
 import { dbRequest } from './db.mjs';
 import { getCourseConfiguration, getCourseDelivery, getCourseQuestion as getBlockQuestion } from '../../../config/course-registry.mjs';
 import { NMLS_TRAINING_COURSE, isNmlsTrainingCourse } from '../../../config/nmls-course-identity.mjs';
-import { nmlsCurriculumSummary, nmlsTrainingProgress, buildNmlsReadiness } from './nmls-readiness.mjs';
+import { nmlsCurriculumSummary, buildNmlsReadiness } from './nmls-readiness.mjs';
+import { readNmlsLearning, realEstateLearning, enrollmentClassification, disciplineForEnrollment } from './console-learning.mjs';
 
 export function fail(message, statusCode = 400) { throw Object.assign(new Error(message), { statusCode }); }
 export const UUID = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
@@ -67,7 +69,7 @@ export async function snapshot(staff) {
   const ids = courses.rows.map(c => c.id);
   const courseFilter = idsFilter('course_id', ids);
   const queries = {
-    enrollments: `enrollments?select=id,student_id,course_id,state,status,course_version,enrollment_origin,expires_at,compliance_credit_eligible,enrollment_date,completed_at,last_course_accessed_at&order=enrollment_date.desc&limit=1001${scope}${courseFilter}`,
+    enrollments: `enrollments?select=id,student_id,course_id,state,status,course_version,enrollment_origin,review_role,console_content_release_id,checkout_attempt_id,expires_at,compliance_credit_eligible,enrollment_date,completed_at,last_course_accessed_at&order=enrollment_date.desc&limit=1001${scope}${courseFilter}`,
     videos: `video_assets?select=asset_key,course_id,delivery_id,screen_id,label,duration_seconds,stream_uid,created_at&order=created_at.desc&limit=1001${courseFilter}`,
     governance: `offering_public_status?select=*&site=eq.${encodeURIComponent(new URL(globalThis.Netlify?.env.get('STATECOURSE_BASE_URL') || process.env.STATECOURSE_BASE_URL).hostname.replace(/^www\./,''))}&order=state.asc,offering_id.asc&limit=1001${scope}`,
     payments: `admin_payment_ledger?select=*&order=payment_date.desc&limit=1001${scope}`,
@@ -100,10 +102,17 @@ export async function snapshot(staff) {
     const course = encodeURIComponent(NMLS_TRAINING_COURSE.id);
     const [definitions, attempts] = await Promise.all([
       readRows(`nmls_training_definitions?course_id=eq.${course}&select=course_id,course_version,content_digest,definition_digest&limit=1001`),
-      readRows(`nmls_training_attempts?course_id=eq.${course}&select=enrollment_id,course_id,course_version,revision,runtime&limit=1001`),
+      readRows(`nmls_training_attempts?course_id=eq.${course}&select=enrollment_id,student_id,course_id,course_version,revision,runtime,updated_at&limit=1001`),
     ]);
     datasets.nmlsDefinitions = definitions;
-    datasets.nmlsProgress = { available: attempts.available, truncated: attempts.truncated, rows: attempts.rows.map(nmlsTrainingProgress) };
+    datasets.nmlsProgress = { available: attempts.available, truncated: attempts.truncated, rows: attempts.rows.map(row=>{
+      const enrollment=datasets.enrollments.rows.find(e=>e.id===row.enrollment_id);
+      try {const p=nmlsAdministrativeProgress(row,enrollment);return {enrollmentId:row.enrollment_id,courseId:row.course_id,revision:p.revision,phase:p.phase,completedUnits:p.completed,passedModules:p.completedModules,trainingCompleted:p.trainingCompleted,nmlsCreditEarned:false,lastActivity:p.lastActivity};}
+      catch {return {enrollmentId:row.enrollment_id,phase:'unverified',completedUnits:null,passedModules:null,trainingCompleted:false,nmlsCreditEarned:false,lastActivity:null};}
+    }) };
+    datasets.nmlsActivity = { available: attempts.available, truncated: attempts.truncated,
+      rows: datasets.nmlsProgress.rows.filter(r => r.lastActivity)
+        .map(r => ({ enrollment_id: r.enrollmentId, occurred_at: r.lastActivity, source: 'nmls_training_attempts.updated_at' })) };
   }
   const result = { checkedAt: new Date().toISOString(), scopeStates: staff.scopeStates, datasets, inventory };
   if (!staff.scopeStates || staff.scopeStates.includes(NMLS_TRAINING_COURSE.state)) result.nmls = buildNmlsReadiness(result);
@@ -181,6 +190,17 @@ export async function studentDetail(staff, enrollmentId) {
   const enrollment = (await dbRequest(`enrollments?id=eq.${enrollmentId}&select=*&limit=1`))?.[0];
   if (!enrollment) fail('enrollment_not_found', 404);
   await courseFor(staff, enrollment.course_id);
+  if (isNmlsTrainingCourse(enrollment.course_id)) {
+    const [student, grants, learning] = await Promise.all([
+      readRows(`students?id=eq.${enrollment.student_id}&select=id,email,first_name,last_name&limit=1`),
+      readRows(`access_grants?enrollment_id=eq.${enrollmentId}&select=id,status,granted_at&limit=1001`),
+      readNmlsLearning(enrollment, readRows),
+    ]);
+    return { enrollment, student: student.rows[0] || null, discipline: 'mortgage', classification: enrollmentClassification(enrollment),
+      learning, progress: learning.available ? learning : null, datasets: { grants },
+      problems: [!learning.available ? learning.reason : null,
+        !grants.available ? 'Access grants could not be checked.' : !grants.rows.some(g => g.status === 'active') ? 'No active access grant.' : null].filter(Boolean) };
+  }
   // Student identity is fetched only after the enrollment's course is authorized.
   const [student, blocks, assignments, grants, help] = await Promise.all([
     readRows(`students?id=eq.${enrollment.student_id}&select=id,email,first_name,last_name&limit=1`),
@@ -195,7 +215,11 @@ export async function studentDetail(staff, enrollmentId) {
   const progress = blocks.available && !blocks.truncated && required.length
     ? { completed: required.filter(id => completed.has(id)).length, total: required.length, definition: 'Mastered required blocks / registered required blocks. Course completion is evaluated separately.', source: 'current_registered_structure', historicalVersionVerified: false }
     : null;
-  return { enrollment, student: student.rows[0] || null, datasets: { blocks, assignments, grants, help }, progress,
+  const assessments = await readRows(`lms_block_assessment_attempts?enrollment_id=eq.${enrollmentId}&select=assignment_id,block_id,kind,correct&limit=1001`);
+  const finals=enrollment.state==='CA'?await readRows(`final_exam_sessions?enrollment_id=eq.${enrollmentId}&select=attempt_number,status,correct_count,question_count,passed,submitted_at&limit=1001`):null;
+  const learning = realEstateLearning(enrollment, structure, blocks, assignments, assessments,finals);
+  return { enrollment, student: student.rows[0] || null, discipline: disciplineForEnrollment(enrollment), classification: enrollmentClassification(enrollment),
+    learning, datasets: { blocks, assignments, grants, help }, progress: learning.available ? progress : null,
     problems: [!grants.available ? 'Access grants could not be checked.' : !grants.rows.some(g => g.status === 'active') ? 'No active access grant.' : null,
       !structure.available ? 'Student renderer is not registered.' : null,
       enrollment.expires_at && new Date(enrollment.expires_at) <= new Date() ? 'Enrollment has expired.' : null].filter(Boolean) };

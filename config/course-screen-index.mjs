@@ -31,6 +31,8 @@ import { MODULE_9_BLOCKS as LOA_9 } from "./texas/law-of-agency-module-9-blocks.
 import { MODULE_10_BLOCKS as LOA_10 } from "./texas/law-of-agency-module-10-blocks.mjs";
 import { MODULE_11_BLOCKS as LOA_11 } from "./texas/law-of-agency-module-11-blocks.mjs";
 import { MODULE_12_BLOCKS as LOA_12 } from "./texas/law-of-agency-module-12-blocks.mjs";
+import { nmlsCurriculumSummary } from "../netlify/functions/_lib/nmls-readiness.mjs";
+import { NMLS_TRAINING_COURSE } from "./nmls-course-identity.mjs";
 import { testDeliveries } from "./test-fixtures/console-test-course.mjs";
 
 /* Only this type may carry a video. Every other screen type either scores a response or
@@ -63,8 +65,14 @@ function normalize(delivery) {
 /* testDeliveries() returns nothing unless STATECOURSE_ENABLE_TEST_FIXTURES is "true", so
    the test course is absent from production's index and a placement onto it cannot even be
    reserved there. Read once at module load, like every other delivery. */
+function nmlsDeliveries() {
+ const curriculum=nmlsCurriculumSummary();
+ return (curriculum.modules||[]).map(m=>({courseId:NMLS_TRAINING_COURSE.id,moduleId:m.id,version:NMLS_TRAINING_COURSE.version,
+  blocks:[{id:m.id,screens:m.lessons.map(l=>({id:l.id,title:l.title,type:'instruction'}))}]}));
+}
+
 const DELIVERIES = Object.freeze(
-  [...CALIFORNIA_DELIVERIES, ...TEXAS_DELIVERIES, ...LAW_OF_AGENCY, ...testDeliveries()]
+  [...CALIFORNIA_DELIVERIES, ...TEXAS_DELIVERIES, ...LAW_OF_AGENCY, ...nmlsDeliveries(), ...testDeliveries()]
     .map(normalize)
     .filter(Boolean),
 );

@@ -6,6 +6,9 @@ import { contentWorkspace, screenText, saveContent, reviewContent, publishConten
 import { checkedEnvironmentStatus } from './_lib/console-environment.mjs';
 import { registerCatalogCourses } from './_lib/course-inventory.mjs';
 
+import { recordEvidence, reviewAccess, recordFinding } from './_lib/console-evidence.mjs';
+import { schoolWorkspace } from './_lib/console-school.mjs';
+
 function eventFrom(req) { return { httpMethod:req.method,headers:Object.fromEntries(req.headers),queryStringParameters:Object.fromEntries(new URL(req.url).searchParams) }; }
 function response(body,status=200,cookies=[]) {
   const headers=new Headers({'content-type':'application/json','cache-control':'no-store, private','x-content-type-options':'nosniff'});
@@ -13,7 +16,8 @@ function response(body,status=200,cookies=[]) {
   return new Response(JSON.stringify(body),{status,headers});
 }
 function roleList(operation) {
-  if(operation==='team' || operation==='binding' || operation==='register_catalog') return ['owner'];
+  if(['evidence_record','review_access','review_finding'].includes(operation)) return ['owner'];
+  if(operation==='school' || operation==='team' || operation==='binding' || operation==='register_catalog') return ['owner'];
   if(['save_draft','publish','task_create','task_update','health_run'].includes(operation)) return ['owner','administrator'];
   if(operation==='review') return ['owner','administrator','instructor'];
   if(['payments','health','audit','messages','settings'].includes(operation)) return ['owner','administrator'];
@@ -42,6 +46,7 @@ export default async function handler(req) {
     let result;
     if(req.method==='GET') {
       if(operation==='overview') result=await snapshot(staff);
+      else if(operation==='school') { if(!globalOwner(staff)) fail('unscoped_owner_required',403); result=await schoolWorkspace(staff); }
       else if(operation==='course') result=await contentWorkspace(staff,query.course_id);
       else if(operation==='screen') result=await screenText(staff,query.course_id,query.delivery_id,query.screen_id);
       else if(operation==='student') result=await studentDetail(staff,query.enrollment_id);
@@ -64,7 +69,10 @@ export default async function handler(req) {
         result.hasMore=result.rows.length>PAGE_SIZE; result.rows=result.rows.slice(0,PAGE_SIZE);result.offset=offset;
       } else fail('unknown_workspace_view',404);
     } else {
-      if(operation==='register_catalog') result=await registerCatalogCourses(staff,input);
+      if(operation==='evidence_record') result=await recordEvidence(staff,input);
+      else if(operation==='review_access') result=await reviewAccess(staff,input);
+      else if(operation==='review_finding') result=await recordFinding(staff,input);
+      else if(operation==='register_catalog') result=await registerCatalogCourses(staff,input);
       else if(operation==='save_draft') result=await saveContent(staff,input);
       else if(operation==='review') result=await reviewContent(staff,input);
       else if(operation==='publish') result=await publishContent(staff,input);

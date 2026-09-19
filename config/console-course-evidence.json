@@ -1,0 +1,2171 @@
+{
+  "schema": 1,
+  "source": "repository build inspection; file presence is not curriculum approval or runtime acceptance",
+  "catalogSha256": "e6fda4400d804dc1e383a0f1c8aa36ab2060fc942219af49163916f5bd7e4b36",
+  "courses": [
+    {
+      "courseId": "va-salesperson",
+      "publicId": "va-principles-practices-v1",
+      "state": "VA",
+      "sourceRoot": "virginia",
+      "curriculumFiles": [
+        {
+          "path": "virginia/curriculum/module-01.md",
+          "sha256": "5fd20afbe07085a4482b65a3e27a4c75cb626a6abcabc17ede28794a7be8af1b",
+          "bytes": 25644
+        },
+        {
+          "path": "virginia/curriculum/module-02.md",
+          "sha256": "9aef0060a2a48ccd274e080a6646181c816def5aac5e11b7f9f3223a2ba77e2a",
+          "bytes": 25956
+        },
+        {
+          "path": "virginia/curriculum/module-03.md",
+          "sha256": "bf04064de215419553ab744eaffe4b262243041c576c56084942b72e61fe9c49",
+          "bytes": 25398
+        },
+        {
+          "path": "virginia/curriculum/module-04.md",
+          "sha256": "f04f5120680be4cbefb969724536ece23612c08546593fba77becb032c29905e",
+          "bytes": 26891
+        },
+        {
+          "path": "virginia/curriculum/module-05.md",
+          "sha256": "2ae387c568f284aa6fec4f01ee349c853d9878016e8ad15e45f7eadd1753a438",
+          "bytes": 29525
+        },
+        {
+          "path": "virginia/curriculum/module-06.md",
+          "sha256": "91461827c0cc1ef5d694878deee9f609617c3f1eded509e1a520f9d07c8f7f51",
+          "bytes": 38432
+        },
+        {
+          "path": "virginia/curriculum/module-07.md",
+          "sha256": "a7875f5a7320536ed0b2cb6209e8255653d061f3a935ba7ee3c9315e62b5533f",
+          "bytes": 32567
+        },
+        {
+          "path": "virginia/curriculum/module-08.md",
+          "sha256": "d4821f9504b03ea2743d74ebf3fb0bed5021ab4a077d3f3db0952dece2f15b67",
+          "bytes": 30181
+        },
+        {
+          "path": "virginia/curriculum/module-09.md",
+          "sha256": "daaa473ccb3fea448b9227cb0741c7426ca496754db77d16c7d7a06af4101c79",
+          "bytes": 28202
+        },
+        {
+          "path": "virginia/curriculum/module-10.md",
+          "sha256": "65b7855320e07488443766160b9516c0824ee1c97deffef5bb0f0494245f60bd",
+          "bytes": 27513
+        },
+        {
+          "path": "virginia/curriculum/module-11.md",
+          "sha256": "ebca98078388a465c7230980b7aa4bac9ecd5f356a01be69b84ac4a10a922a6d",
+          "bytes": 26361
+        },
+        {
+          "path": "virginia/curriculum/module-12.md",
+          "sha256": "ca203d7bfdf86eb0fc69534c5388bb4ab5df4361b39d9227539f868e12c231de",
+          "bytes": 27799
+        },
+        {
+          "path": "virginia/curriculum/module-13.md",
+          "sha256": "d7ec61f693dfc5ef5881f28718c8501f7443338f9195a86c1d21e6c9cc0d826f",
+          "bytes": 33317
+        },
+        {
+          "path": "virginia/curriculum/module-14.md",
+          "sha256": "65f15889c22eea723dfb838270b4877db2b26a8e7df4273c659eb7caef2eaf92",
+          "bytes": 33508
+        },
+        {
+          "path": "virginia/curriculum/module-15.md",
+          "sha256": "a7fce9cae7b472b41a032b9ebdab9477f094d4b35a56be508c8f3c248656bd14",
+          "bytes": 35919
+        }
+      ],
+      "curriculumStatus": "authored_material_present_review_required",
+      "engineCandidates": [
+        "config/virginia-course-engine.mjs"
+      ],
+      "engineInspection": {
+        "status": "state_definition_loaded",
+        "file": "config/virginia-course-engine.mjs",
+        "authoredCourseId": "va-salesperson-principles-v1",
+        "authoredVersion": "1.0-submission-draft",
+        "studentCompatible": false,
+        "missing": "State engine can describe/score authored material but has no registered student delivery, authenticated persistence and version bridge for this offering."
+      },
+      "runtimeRegistered": false,
+      "compatibility": "Authored state engine is not a verified student-runtime connection.",
+      "missingConnection": "State engine can describe/score authored material but has no registered student delivery, authenticated persistence and version bridge for this offering. Register the exact va-salesperson course/version with its state delivery and progress adapter, then verify enrollment, timing, assessments and persistence. Do not activate from file presence.",
+      "approvalClaim": false,
+      "completeCurriculumClaim": false
+    },
+    {
+      "courseId": "me-sales-agent",
+      "publicId": "me-sales-agent-v1",
+      "state": "ME",
+      "sourceRoot": "maine",
+      "curriculumFiles": [
+        {
+          "path": "maine/curriculum/module-01.md",
+          "sha256": "779633c8867b9d123e5545385087c418fbfb67b28098151cc9c3fc19453d5493",
+          "bytes": 48466
+        },
+        {
+          "path": "maine/curriculum/module-02.md",
+          "sha256": "27e0d26363981fed3e99e93f9c90f2ee232fe47f3c160b127d04af0971d785d3",
+          "bytes": 34218
+        },
+        {
+          "path": "maine/curriculum/module-03.md",
+          "sha256": "db22f2fa6437768b575f852d365af0d9009e5ec5b94aecf266630e9298976fab",
+          "bytes": 39275
+        },
+        {
+          "path": "maine/curriculum/module-04.md",
+          "sha256": "09d4fd25bba6de96fc1e4dd51381496c1e1d7954fa2556532de4789c786115ca",
+          "bytes": 41012
+        },
+        {
+          "path": "maine/curriculum/module-05.md",
+          "sha256": "cf01861d6119ac202b534bb6b0366100063588fbefdf1dedd796babfd50f2181",
+          "bytes": 28209
+        },
+        {
+          "path": "maine/curriculum/module-06.md",
+          "sha256": "dbf9b1fcba58391202cdeaa5696aae853e4401fb90c5d064ea78357040ce9b1d",
+          "bytes": 26220
+        },
+        {
+          "path": "maine/curriculum/module-07.md",
+          "sha256": "b869a04a3c5bb35904347ab1d2c2fc4ea05e7c0558e55afd33343af8af0aec98",
+          "bytes": 35955
+        },
+        {
+          "path": "maine/curriculum/module-08.md",
+          "sha256": "235a571ad768098f88ae96906ae082670a8cdc2da23b652c91c0f9bf2616844c",
+          "bytes": 24070
+        },
+        {
+          "path": "maine/curriculum/module-09.md",
+          "sha256": "033656bc51c009b96daf160e5f27f1bf54f83231eb97fbefa3da3aac3bfdcf29",
+          "bytes": 18703
+        }
+      ],
+      "curriculumStatus": "authored_material_present_review_required",
+      "engineCandidates": [
+        "config/maine-course-engine.mjs"
+      ],
+      "engineInspection": {
+        "status": "state_definition_loaded",
+        "file": "config/maine-course-engine.mjs",
+        "authoredCourseId": "me-sales-agent-55-v1",
+        "authoredVersion": "1.0-submission-draft",
+        "studentCompatible": false,
+        "missing": "State engine can describe/score authored material but has no registered student delivery, authenticated persistence and version bridge for this offering."
+      },
+      "runtimeRegistered": false,
+      "compatibility": "Authored state engine is not a verified student-runtime connection.",
+      "missingConnection": "State engine can describe/score authored material but has no registered student delivery, authenticated persistence and version bridge for this offering. Register the exact me-sales-agent course/version with its state delivery and progress adapter, then verify enrollment, timing, assessments and persistence. Do not activate from file presence.",
+      "approvalClaim": false,
+      "completeCurriculumClaim": false
+    },
+    {
+      "courseId": "wi-salesperson",
+      "publicId": "wi-salesperson",
+      "state": "WI",
+      "sourceRoot": "wisconsin",
+      "curriculumFiles": [
+        {
+          "path": "wisconsin/curriculum/module-01.md",
+          "sha256": "bdd29b5d1572989a3b738c22cde2a9543b0dadf08c4915e64bde0c3a6d5b3fa0",
+          "bytes": 28008
+        },
+        {
+          "path": "wisconsin/curriculum/module-02.md",
+          "sha256": "526db285a5cdc9aeb67085cd50293ef7f5b81b172ef4c0efd086e3ed5b2fb4db",
+          "bytes": 34020
+        },
+        {
+          "path": "wisconsin/curriculum/module-03.md",
+          "sha256": "3f850e1c02604af2f588ba4541a354e3a3b231c1a7b1705d425b54a6f4771dfd",
+          "bytes": 21780
+        },
+        {
+          "path": "wisconsin/curriculum/module-04.md",
+          "sha256": "5c0788d816d4f0c466b5015cbbd95823fef9aa5ce8bf7f779665a706d7348caa",
+          "bytes": 26186
+        },
+        {
+          "path": "wisconsin/curriculum/module-05.md",
+          "sha256": "8154ca7ca859a5e7e633239988fafc664f9ce1e0db2609e13828119d5d715578",
+          "bytes": 18223
+        },
+        {
+          "path": "wisconsin/curriculum/module-06.md",
+          "sha256": "f00a3cbf63e6411e93c45f06aa9dfdbc61d9b5bd3134ed8c4934123006c290a2",
+          "bytes": 51737
+        },
+        {
+          "path": "wisconsin/curriculum/module-07.md",
+          "sha256": "eb18ec561dc8d8dc0f3d94bada6bb03c74dda1d821f5daba1d0249080aaecfd7",
+          "bytes": 24094
+        },
+        {
+          "path": "wisconsin/curriculum/module-08.md",
+          "sha256": "dcdd24fafe402dec959753813acecdc966e94adff2f28da8e8202a0ac4ac85fd",
+          "bytes": 30611
+        },
+        {
+          "path": "wisconsin/curriculum/module-09.md",
+          "sha256": "ca8a3452c982ac42385c77032eaf5f60ce57c8ff919e2f4955c1c2b0998c2f3a",
+          "bytes": 20512
+        },
+        {
+          "path": "wisconsin/curriculum/module-10.md",
+          "sha256": "f039e17eb45b2c25a61617b8de33f86bb33948321f3a8aa0cb5f921475b672e8",
+          "bytes": 37102
+        },
+        {
+          "path": "wisconsin/curriculum/module-11.md",
+          "sha256": "3fef731997c5d955a10d698e683b671abe9550702b00b499c7214dae9b92a48b",
+          "bytes": 20827
+        },
+        {
+          "path": "wisconsin/curriculum/module-12.md",
+          "sha256": "9c816b95e8aed2fca89eabea41e307e329a458030b8c152578d923cb6a45042a",
+          "bytes": 18816
+        },
+        {
+          "path": "wisconsin/curriculum/module-13.md",
+          "sha256": "27a0dd02ed57ec976e1fbe160d4ffc6eb34dae3703cdc182312f042322695f7c",
+          "bytes": 20480
+        }
+      ],
+      "curriculumStatus": "authored_material_present_review_required",
+      "engineCandidates": [
+        "config/wisconsin-course-engine.mjs"
+      ],
+      "engineInspection": {
+        "status": "state_definition_loaded",
+        "file": "config/wisconsin-course-engine.mjs",
+        "authoredCourseId": "wi-salesperson-72-v1",
+        "authoredVersion": "1.0-submission-draft",
+        "studentCompatible": false,
+        "missing": "State engine can describe/score authored material but has no registered student delivery, authenticated persistence and version bridge for this offering."
+      },
+      "runtimeRegistered": false,
+      "compatibility": "Authored state engine is not a verified student-runtime connection.",
+      "missingConnection": "State engine can describe/score authored material but has no registered student delivery, authenticated persistence and version bridge for this offering. Register the exact wi-salesperson course/version with its state delivery and progress adapter, then verify enrollment, timing, assessments and persistence. Do not activate from file presence.",
+      "approvalClaim": false,
+      "completeCurriculumClaim": false
+    },
+    {
+      "courseId": "mo-salesperson-preexam-48",
+      "publicId": "mo-salesperson-preexam-48",
+      "state": "MO",
+      "sourceRoot": "missouri/mo-salesperson-preexam-48-v1",
+      "curriculumFiles": [
+        {
+          "path": "missouri/mo-salesperson-preexam-48-v1/curriculum/module-01.md",
+          "sha256": "5e6ea25794a1b55d7539572f04bea0fc902e27f4be2fd95a148bfc6069d48768",
+          "bytes": 26530
+        },
+        {
+          "path": "missouri/mo-salesperson-preexam-48-v1/curriculum/module-02.md",
+          "sha256": "8c45b2b458fb3ef3a2fdad292f7de802d36eef4de785f7f286cfe8de224085d0",
+          "bytes": 20533
+        },
+        {
+          "path": "missouri/mo-salesperson-preexam-48-v1/curriculum/module-03.md",
+          "sha256": "47eb0a3fb478d77e980f9e9c7ff3ba191349fce7d85a801bd62a5528e5d69fc5",
+          "bytes": 28518
+        },
+        {
+          "path": "missouri/mo-salesperson-preexam-48-v1/curriculum/module-04.md",
+          "sha256": "1ce0d9efbe456a5893018253ba03bee9e17b43d18d5683ffda48e2936d9467d2",
+          "bytes": 21984
+        },
+        {
+          "path": "missouri/mo-salesperson-preexam-48-v1/curriculum/module-05.md",
+          "sha256": "93104d68dde5b136e787b0bae51a2a3758ae656a847741d30ff7a4113163001f",
+          "bytes": 20628
+        },
+        {
+          "path": "missouri/mo-salesperson-preexam-48-v1/curriculum/module-06.md",
+          "sha256": "041696fe9259ca9339ee54bea0b10823fb408cd61c5abeab14405eda193f30c3",
+          "bytes": 17478
+        },
+        {
+          "path": "missouri/mo-salesperson-preexam-48-v1/curriculum/module-07.md",
+          "sha256": "2f7c452e095d7fc6366816e5973baca6da7a2d12e6e58dd60d61b918650d6c7e",
+          "bytes": 16274
+        },
+        {
+          "path": "missouri/mo-salesperson-preexam-48-v1/curriculum/module-08.md",
+          "sha256": "2217afc80469ff34107477b62addb53e554bd5ebef449e236384069e1d76e5c2",
+          "bytes": 22533
+        },
+        {
+          "path": "missouri/mo-salesperson-preexam-48-v1/curriculum/module-09.md",
+          "sha256": "96ac660bf20a559bb6942b8417697b2b5557c40262328c2d113ec0567b3cfb48",
+          "bytes": 18635
+        }
+      ],
+      "curriculumStatus": "authored_material_present_review_required",
+      "engineCandidates": [
+        "config/missouri-course-engine.mjs"
+      ],
+      "engineInspection": {
+        "status": "state_definition_loaded",
+        "file": "config/missouri-course-engine.mjs",
+        "authoredCourseId": "mo-salesperson-preexam-48-v1",
+        "authoredVersion": "1.0-submission-draft",
+        "studentCompatible": false,
+        "missing": "State engine can describe/score authored material but has no registered student delivery, authenticated persistence and version bridge for this offering."
+      },
+      "runtimeRegistered": false,
+      "compatibility": "Authored state engine is not a verified student-runtime connection.",
+      "missingConnection": "State engine can describe/score authored material but has no registered student delivery, authenticated persistence and version bridge for this offering. Register the exact mo-salesperson-preexam-48 course/version with its state delivery and progress adapter, then verify enrollment, timing, assessments and persistence. Do not activate from file presence.",
+      "approvalClaim": false,
+      "completeCurriculumClaim": false
+    },
+    {
+      "courseId": "mo-real-estate-practice-24",
+      "publicId": "mo-real-estate-practice-24",
+      "state": "MO",
+      "sourceRoot": "missouri/mo-real-estate-practice-24-v1",
+      "curriculumFiles": [
+        {
+          "path": "missouri/mo-real-estate-practice-24-v1/curriculum/module-01.md",
+          "sha256": "65967f358ed99e43b3d48301389fc60969081de08d3125fd6bc80cbf14dd7530",
+          "bytes": 21878
+        },
+        {
+          "path": "missouri/mo-real-estate-practice-24-v1/curriculum/module-02.md",
+          "sha256": "f2c88125abc6f4a76b0db4cffd46f41b191c639d5d7932367b0cb570c261df49",
+          "bytes": 18775
+        },
+        {
+          "path": "missouri/mo-real-estate-practice-24-v1/curriculum/module-03.md",
+          "sha256": "ea319ec595976cb6d1816fe984229c16a756e6182d74f62a7cffedb377db16c3",
+          "bytes": 20304
+        },
+        {
+          "path": "missouri/mo-real-estate-practice-24-v1/curriculum/module-04.md",
+          "sha256": "2bf7a1a617a04e3e29174ca4c54b5cb0d6ada10e358f18208e819d287def3523",
+          "bytes": 18149
+        },
+        {
+          "path": "missouri/mo-real-estate-practice-24-v1/curriculum/module-05.md",
+          "sha256": "9ae7a4a21b40461fb003e8152ad1d5a737e7930fd65e835d4774e5efb241a898",
+          "bytes": 15836
+        },
+        {
+          "path": "missouri/mo-real-estate-practice-24-v1/curriculum/module-06.md",
+          "sha256": "0afd5fdf6dde5c009a2d73f540b15f05a04bfe175792783b782e32032b7f697c",
+          "bytes": 18549
+        }
+      ],
+      "curriculumStatus": "authored_material_present_review_required",
+      "engineCandidates": [
+        "config/missouri-course-engine.mjs"
+      ],
+      "engineInspection": {
+        "status": "state_definition_loaded",
+        "file": "config/missouri-course-engine.mjs",
+        "authoredCourseId": "mo-real-estate-practice-24-v1",
+        "authoredVersion": "1.0-submission-draft",
+        "studentCompatible": false,
+        "missing": "State engine can describe/score authored material but has no registered student delivery, authenticated persistence and version bridge for this offering."
+      },
+      "runtimeRegistered": false,
+      "compatibility": "Authored state engine is not a verified student-runtime connection.",
+      "missingConnection": "State engine can describe/score authored material but has no registered student delivery, authenticated persistence and version bridge for this offering. Register the exact mo-real-estate-practice-24 course/version with its state delivery and progress adapter, then verify enrollment, timing, assessments and persistence. Do not activate from file presence.",
+      "approvalClaim": false,
+      "completeCurriculumClaim": false
+    },
+    {
+      "courseId": "ok-basic-prelicense-90",
+      "publicId": "ok-basic-prelicense-90",
+      "state": "OK",
+      "sourceRoot": "oklahoma",
+      "curriculumFiles": [
+        {
+          "path": "oklahoma/curriculum/module-01.md",
+          "sha256": "819fbdd53680e7cf5d46b72277a3ddbe43d28b13a9bec249908c490175e95009",
+          "bytes": 21269
+        },
+        {
+          "path": "oklahoma/curriculum/module-02.md",
+          "sha256": "9b2c29847555c9f82dc4d74b538fd5a9fd9c50ce91c2e03d8645cb3d1c6bceb6",
+          "bytes": 19411
+        },
+        {
+          "path": "oklahoma/curriculum/module-03.md",
+          "sha256": "71f0c063b9caac20c0dd9b3ce79c96704ce2b432d952918864f489908a54810f",
+          "bytes": 35632
+        },
+        {
+          "path": "oklahoma/curriculum/module-04.md",
+          "sha256": "4d97f99babcd761c2121a1ef4df671472be0c965b1b51ff89b47f349dce3e241",
+          "bytes": 19209
+        },
+        {
+          "path": "oklahoma/curriculum/module-05.md",
+          "sha256": "91b12aa80f179f3b702f8aa30d12e18d4b28a8bca81fd66791751f5a88d34dc3",
+          "bytes": 15344
+        },
+        {
+          "path": "oklahoma/curriculum/module-06.md",
+          "sha256": "05df09b709ffa9d7675676f54280a7f4c2a4cc810208914cf157a30a7e7bde47",
+          "bytes": 20042
+        },
+        {
+          "path": "oklahoma/curriculum/module-07.md",
+          "sha256": "4f554b2a62dc1e6be5979685ab4ac0fb6ee73bca71a7ecfbaaeb131563b1f688",
+          "bytes": 19595
+        },
+        {
+          "path": "oklahoma/curriculum/module-08.md",
+          "sha256": "431b1bf85f30974ba0448d111b48aaef959e8925827f59b436aa724b677d6103",
+          "bytes": 14772
+        },
+        {
+          "path": "oklahoma/curriculum/module-09.md",
+          "sha256": "87deaa60c11dbbff075814a057dd7bff92766975f966de8af7cf740d1b4ad113",
+          "bytes": 27709
+        },
+        {
+          "path": "oklahoma/curriculum/module-10.md",
+          "sha256": "fabe1674c32f29643c6dd2f0f23f8fa737d1a7da3430c6d8c23dfaf7f4349d55",
+          "bytes": 18781
+        },
+        {
+          "path": "oklahoma/curriculum/module-11.md",
+          "sha256": "4fda1f7ca31b9c715f169b5d2f27702fc91375bb92355462e6668c2727cda3b9",
+          "bytes": 22739
+        },
+        {
+          "path": "oklahoma/curriculum/module-12.md",
+          "sha256": "881f526ead1c80929e2ea28834c8db23d705e64419a4a32d98efdcc9cb7e19ae",
+          "bytes": 19674
+        },
+        {
+          "path": "oklahoma/curriculum/module-13.md",
+          "sha256": "cb84ab20f782f50e4a98bf580e93b73c715734f45b6ce84bb9c88b7f6d484f21",
+          "bytes": 16827
+        },
+        {
+          "path": "oklahoma/curriculum/module-14.md",
+          "sha256": "b7d6c94c4cd78e9f110ef00e06d10d503d6de01d11a3d4a6f5aab0ba3d29e3a7",
+          "bytes": 24698
+        },
+        {
+          "path": "oklahoma/curriculum/module-15.md",
+          "sha256": "6736c711125e3ef0d83dc0813b6da3608a16503570b932ed83d78c1eb4051662",
+          "bytes": 22145
+        },
+        {
+          "path": "oklahoma/curriculum/module-16.md",
+          "sha256": "94efaaa3a7299c98d7f2f02596164ac33e988fa0e59be75a2604d563bb72c8e0",
+          "bytes": 17341
+        }
+      ],
+      "curriculumStatus": "authored_material_present_review_required",
+      "engineCandidates": [
+        "config/oklahoma-course-engine.mjs"
+      ],
+      "engineInspection": {
+        "status": "state_definition_loaded",
+        "file": "config/oklahoma-course-engine.mjs",
+        "authoredCourseId": "ok-basic-prelicense-90-v1",
+        "authoredVersion": "1.0-submission-draft",
+        "studentCompatible": false,
+        "missing": "State engine can describe/score authored material but has no registered student delivery, authenticated persistence and version bridge for this offering."
+      },
+      "runtimeRegistered": false,
+      "compatibility": "Authored state engine is not a verified student-runtime connection.",
+      "missingConnection": "State engine can describe/score authored material but has no registered student delivery, authenticated persistence and version bridge for this offering. Register the exact ok-basic-prelicense-90 course/version with its state delivery and progress adapter, then verify enrollment, timing, assessments and persistence. Do not activate from file presence.",
+      "approvalClaim": false,
+      "completeCurriculumClaim": false
+    },
+    {
+      "courseId": "az-salesperson-prelicense-90",
+      "publicId": "az-salesperson-prelicense-90",
+      "state": "AZ",
+      "sourceRoot": "arizona/az-salesperson-prelicense-90-v1",
+      "curriculumFiles": [
+        {
+          "path": "arizona/az-salesperson-prelicense-90-v1/curriculum/module-01.md",
+          "sha256": "f2dec14a287e6d16daf8fb94fbbfd2477cd2c8bff661095ad3c62e3158ff6f4e",
+          "bytes": 13543
+        },
+        {
+          "path": "arizona/az-salesperson-prelicense-90-v1/curriculum/module-02.md",
+          "sha256": "91c2f57a4a43dcd0a2b1945c1af31e0aa1f0d1c488544df778744e13b105e3e8",
+          "bytes": 8105
+        },
+        {
+          "path": "arizona/az-salesperson-prelicense-90-v1/curriculum/module-03.md",
+          "sha256": "3926056b040f81434504b8ca25b03e97ba579a6120eb367a8982cf11dc30b870",
+          "bytes": 9269
+        },
+        {
+          "path": "arizona/az-salesperson-prelicense-90-v1/curriculum/module-04.md",
+          "sha256": "bc782ac840b5cc76722626d98e7a94cc14193413437b245ff84f766befa32c6c",
+          "bytes": 11685
+        },
+        {
+          "path": "arizona/az-salesperson-prelicense-90-v1/curriculum/module-05.md",
+          "sha256": "57f7eecd8308616e6ec1029fae45575f97f57b225ca81d4297adbcad7ba3e54a",
+          "bytes": 7113
+        },
+        {
+          "path": "arizona/az-salesperson-prelicense-90-v1/curriculum/module-06.md",
+          "sha256": "2fd6e7e001ce22a33fb5af238107f3e65227f47ee945e2e96329aee4361234ea",
+          "bytes": 10177
+        },
+        {
+          "path": "arizona/az-salesperson-prelicense-90-v1/curriculum/module-07.md",
+          "sha256": "0aa7f94f8e0c061f8b1041f78be40529ddc020c1e0400a58720994efb0aa402e",
+          "bytes": 8360
+        },
+        {
+          "path": "arizona/az-salesperson-prelicense-90-v1/curriculum/module-08.md",
+          "sha256": "9ce9eb3a69aa36ddbfe547e58c49c142a23540614a25ff20976dfcd83fb77ca1",
+          "bytes": 11430
+        },
+        {
+          "path": "arizona/az-salesperson-prelicense-90-v1/curriculum/module-09.md",
+          "sha256": "c5f286d9827ba44c483d92a6a96c80af5a74ab7ea36a2704de40edf18be18409",
+          "bytes": 10410
+        },
+        {
+          "path": "arizona/az-salesperson-prelicense-90-v1/curriculum/module-10.md",
+          "sha256": "09b5e3e8e1707d8723ab5a04aebf44643b93a180556c5ab8dedb3f66a2c335f7",
+          "bytes": 18712
+        },
+        {
+          "path": "arizona/az-salesperson-prelicense-90-v1/curriculum/module-11.md",
+          "sha256": "8e7e64bab14023bc343dc9b8e1da761d20ee38c88493839ece51ae7e8022c9f4",
+          "bytes": 27684
+        },
+        {
+          "path": "arizona/az-salesperson-prelicense-90-v1/curriculum/module-12.md",
+          "sha256": "5ddaffd52e019f6fb7b1907a80fdf1ee760c6bf6bd3cc370e77a53d16982314a",
+          "bytes": 17321
+        },
+        {
+          "path": "arizona/az-salesperson-prelicense-90-v1/curriculum/module-13.md",
+          "sha256": "6dfc8aea5a39848d713bdae998975e8c546fb7311c734c303b8b6a5fc15e7b76",
+          "bytes": 19403
+        }
+      ],
+      "curriculumStatus": "authored_material_present_review_required",
+      "engineCandidates": [
+        "config/arizona-course-engine.mjs"
+      ],
+      "engineInspection": {
+        "status": "state_definition_loaded",
+        "file": "config/arizona-course-engine.mjs",
+        "authoredCourseId": "az-salesperson-prelicense-90-v1",
+        "authoredVersion": "1.0-submission-draft",
+        "studentCompatible": false,
+        "missing": "State engine can describe/score authored material but has no registered student delivery, authenticated persistence and version bridge for this offering."
+      },
+      "runtimeRegistered": false,
+      "compatibility": "Authored state engine is not a verified student-runtime connection.",
+      "missingConnection": "State engine can describe/score authored material but has no registered student delivery, authenticated persistence and version bridge for this offering. Register the exact az-salesperson-prelicense-90 course/version with its state delivery and progress adapter, then verify enrollment, timing, assessments and persistence. Do not activate from file presence.",
+      "approvalClaim": false,
+      "completeCurriculumClaim": false
+    },
+    {
+      "courseId": "az-contract-writing-6",
+      "publicId": "az-contract-writing-6",
+      "state": "AZ",
+      "sourceRoot": "arizona/az-contract-writing-6-v1",
+      "curriculumFiles": [
+        {
+          "path": "arizona/az-contract-writing-6-v1/curriculum/module-01.md",
+          "sha256": "c09ecf59bbe6c74a5e7cd10edabce4daf8dd952b2b28cabd966556642105cd1b",
+          "bytes": 14041
+        },
+        {
+          "path": "arizona/az-contract-writing-6-v1/curriculum/module-02.md",
+          "sha256": "e80660cfb2e5dc953e31fb20e34853b14328a6e0f4b946da7050f4637b28396f",
+          "bytes": 12282
+        }
+      ],
+      "curriculumStatus": "authored_material_present_review_required",
+      "engineCandidates": [
+        "config/arizona-course-engine.mjs"
+      ],
+      "engineInspection": {
+        "status": "state_definition_loaded",
+        "file": "config/arizona-course-engine.mjs",
+        "authoredCourseId": "az-contract-writing-6-v1",
+        "authoredVersion": "1.0-submission-draft",
+        "studentCompatible": false,
+        "missing": "State engine can describe/score authored material but has no registered student delivery, authenticated persistence and version bridge for this offering."
+      },
+      "runtimeRegistered": false,
+      "compatibility": "Authored state engine is not a verified student-runtime connection.",
+      "missingConnection": "State engine can describe/score authored material but has no registered student delivery, authenticated persistence and version bridge for this offering. Register the exact az-contract-writing-6 course/version with its state delivery and progress adapter, then verify enrollment, timing, assessments and persistence. Do not activate from file presence.",
+      "approvalClaim": false,
+      "completeCurriculumClaim": false
+    },
+    {
+      "courseId": "tx-principles-real-estate-i-30",
+      "publicId": "tx-principles-real-estate-i-30",
+      "state": "TX",
+      "sourceRoot": "texas/tx-principles-real-estate-i-30-v1",
+      "curriculumFiles": [
+        {
+          "path": "texas/tx-principles-real-estate-i-30-v1/curriculum/module-01.md",
+          "sha256": "bb613561b9bfdee52d0f7cf6cc599521cf607c6f30a6e982dc1df8641c575fde",
+          "bytes": 22078
+        },
+        {
+          "path": "texas/tx-principles-real-estate-i-30-v1/curriculum/module-02.md",
+          "sha256": "6c47104c5c430fabb1ac6fb8e233a8ce140a28ec353643275f5fb6da94e249fc",
+          "bytes": 11620
+        },
+        {
+          "path": "texas/tx-principles-real-estate-i-30-v1/curriculum/module-03.md",
+          "sha256": "68a69c48ea064f48650936ab042ec9a827a66e00be40b5e9400fa2efd55a1c5b",
+          "bytes": 41544
+        },
+        {
+          "path": "texas/tx-principles-real-estate-i-30-v1/curriculum/module-04.md",
+          "sha256": "e949752737821c7d943ad33be6b21b98d7c9e90fe6c299dc5f215ed63a0d5603",
+          "bytes": 21585
+        },
+        {
+          "path": "texas/tx-principles-real-estate-i-30-v1/curriculum/module-05.md",
+          "sha256": "52f32b58793fec7076056cda9812527e13c79a2cfe83554e2f00919cd83b1573",
+          "bytes": 43013
+        },
+        {
+          "path": "texas/tx-principles-real-estate-i-30-v1/curriculum/module-06.md",
+          "sha256": "d12591d95c90f54c83ef7bcde9d7c6e1e8f63fa70dbaaf872bf3841bcb722396",
+          "bytes": 41959
+        },
+        {
+          "path": "texas/tx-principles-real-estate-i-30-v1/curriculum/module-07.md",
+          "sha256": "bc8dd955d8e2f1545d78a40d918c352a15494d8d9f71dd1b985255f4f00f380f",
+          "bytes": 49394
+        },
+        {
+          "path": "texas/tx-principles-real-estate-i-30-v1/curriculum/module-08.md",
+          "sha256": "52a4c3a6b298f7b13ec9c0dfb7aec70548e64e3857ed78881a3e844e2fcb6065",
+          "bytes": 45890
+        },
+        {
+          "path": "texas/tx-principles-real-estate-i-30-v1/curriculum/module-09.md",
+          "sha256": "63f91778e96dcbc4e937410a8129fc11c6a2e49ca3279b17d16239bff586d99b",
+          "bytes": 45362
+        }
+      ],
+      "curriculumStatus": "authored_material_present_review_required",
+      "engineCandidates": [
+        "config/texas-law-of-agency-engine.mjs",
+        "config/texas-principles-ii-engine.mjs",
+        "config/texas/complete-course-reviewer-engine.mjs"
+      ],
+      "engineInspection": {
+        "status": "separate_texas_authoring_and_reviewer_engines",
+        "studentCompatible": false,
+        "missing": "Only Law of Agency is wired to the student blocks service and SQL 024. Other Texas definitions need their own persisted timing/assessment adapter; reviewer engines are not production persistence."
+      },
+      "runtimeRegistered": false,
+      "compatibility": "Authored state engine is not a verified student-runtime connection.",
+      "missingConnection": "Only Law of Agency is wired to the student blocks service and SQL 024. Other Texas definitions need their own persisted timing/assessment adapter; reviewer engines are not production persistence. Register the exact tx-principles-real-estate-i-30 course/version with its state delivery and progress adapter, then verify enrollment, timing, assessments and persistence. Do not activate from file presence.",
+      "approvalClaim": false,
+      "completeCurriculumClaim": false
+    },
+    {
+      "courseId": "tx-principles-real-estate-ii-30",
+      "publicId": "tx-principles-real-estate-ii-30",
+      "state": "TX",
+      "sourceRoot": "texas/tx-principles-real-estate-ii-30-v1",
+      "curriculumFiles": [
+        {
+          "path": "texas/tx-principles-real-estate-ii-30-v1/curriculum/module-01.md",
+          "sha256": "435f7a38d346d9cf36785ba105b2c02175b7f075004a4e67d3bcb7fbb00cd8e2",
+          "bytes": 14076
+        },
+        {
+          "path": "texas/tx-principles-real-estate-ii-30-v1/curriculum/module-02.md",
+          "sha256": "ef6dcb375c8cbfff77f27001563956f1d0cef80fa8b8fb1367d123aa6d8fb786",
+          "bytes": 195667
+        },
+        {
+          "path": "texas/tx-principles-real-estate-ii-30-v1/curriculum/module-03.md",
+          "sha256": "241930c63f4df13611766c4931e7269a8e665ab3955398bcfe15f53f7e51e4d7",
+          "bytes": 78552
+        },
+        {
+          "path": "texas/tx-principles-real-estate-ii-30-v1/curriculum/module-04.md",
+          "sha256": "7d7bad5856d295e577d06e763fc440ec76894245e90f46a7839bb9fbc8328115",
+          "bytes": 57558
+        },
+        {
+          "path": "texas/tx-principles-real-estate-ii-30-v1/curriculum/module-05.md",
+          "sha256": "ad18b5be028089e445461b1e033abf8cef21d146d7a58ea1a5a25ea00598c2b0",
+          "bytes": 78487
+        },
+        {
+          "path": "texas/tx-principles-real-estate-ii-30-v1/curriculum/module-06.md",
+          "sha256": "2009d6a10e2c7fcec11cacc370349ec7d349e47b6beb9d31e9d7825fc3237cef",
+          "bytes": 108022
+        },
+        {
+          "path": "texas/tx-principles-real-estate-ii-30-v1/curriculum/module-07.md",
+          "sha256": "c7cb3cdb20b904a37d7902e77bd4e7dec8af6b8ed3e993a59fceaac063972797",
+          "bytes": 77904
+        },
+        {
+          "path": "texas/tx-principles-real-estate-ii-30-v1/curriculum/module-08.md",
+          "sha256": "6c3a15c9f2ff3f9d23a377a51b9cbb24ffe148fb24714e01aa778f299df735de",
+          "bytes": 160282
+        },
+        {
+          "path": "texas/tx-principles-real-estate-ii-30-v1/curriculum/module-09.md",
+          "sha256": "916cafb3da268dd0e712dc9cdd14146a317714e2959384feb53e0160939a2a26",
+          "bytes": 50940
+        }
+      ],
+      "curriculumStatus": "authored_material_present_review_required",
+      "engineCandidates": [
+        "config/texas-law-of-agency-engine.mjs",
+        "config/texas-principles-ii-engine.mjs",
+        "config/texas/complete-course-reviewer-engine.mjs"
+      ],
+      "engineInspection": {
+        "status": "separate_texas_authoring_and_reviewer_engines",
+        "studentCompatible": false,
+        "missing": "Only Law of Agency is wired to the student blocks service and SQL 024. Other Texas definitions need their own persisted timing/assessment adapter; reviewer engines are not production persistence."
+      },
+      "runtimeRegistered": false,
+      "compatibility": "Authored state engine is not a verified student-runtime connection.",
+      "missingConnection": "Only Law of Agency is wired to the student blocks service and SQL 024. Other Texas definitions need their own persisted timing/assessment adapter; reviewer engines are not production persistence. Register the exact tx-principles-real-estate-ii-30 course/version with its state delivery and progress adapter, then verify enrollment, timing, assessments and persistence. Do not activate from file presence.",
+      "approvalClaim": false,
+      "completeCurriculumClaim": false
+    },
+    {
+      "courseId": "tx-law-of-agency-30-v1",
+      "publicId": "tx-law-of-agency-30",
+      "state": "TX",
+      "sourceRoot": "texas/tx-law-of-agency-30-v1",
+      "curriculumFiles": [
+        {
+          "path": "texas/tx-law-of-agency-30-v1/curriculum/module-01.md",
+          "sha256": "61d10c5dd2a2e7f09eb772c2e169658c62884836b70dcd2b6d5af75b6b0d6473",
+          "bytes": 73218
+        },
+        {
+          "path": "texas/tx-law-of-agency-30-v1/curriculum/module-02.md",
+          "sha256": "f49e12b34904f16478da4257fa35e5a428206a37198268a827821cfed4b49d20",
+          "bytes": 70357
+        },
+        {
+          "path": "texas/tx-law-of-agency-30-v1/curriculum/module-03.md",
+          "sha256": "29213ff6ac2370e121695b5c2640500ec459774c9e3e82294533d9cda7a701ec",
+          "bytes": 70595
+        },
+        {
+          "path": "texas/tx-law-of-agency-30-v1/curriculum/module-04.md",
+          "sha256": "422b6438d341984b9b707eb2af6c54d1f9e137b61c7f9a63d6109e89a2738b59",
+          "bytes": 65238
+        },
+        {
+          "path": "texas/tx-law-of-agency-30-v1/curriculum/module-05.md",
+          "sha256": "0f12def8e2f3c7177d7e23769e3c573788af3d693ede79d086b23c73802cf297",
+          "bytes": 79836
+        },
+        {
+          "path": "texas/tx-law-of-agency-30-v1/curriculum/module-06.md",
+          "sha256": "521bbc3088a5df49cb7f0c50736f178cb3239bc7a8dc40b8f9284dee007eef11",
+          "bytes": 80070
+        },
+        {
+          "path": "texas/tx-law-of-agency-30-v1/curriculum/module-07.md",
+          "sha256": "56df2f1bf63bcf9ff277f227f16936fb5d555f424314923f0041d835446ccd25",
+          "bytes": 53082
+        },
+        {
+          "path": "texas/tx-law-of-agency-30-v1/curriculum/module-08.md",
+          "sha256": "9bb132b7b79fb05862e3a87865a8ac292b2ad27e9ad9ccc5d43ebb01653bc8ef",
+          "bytes": 17578
+        },
+        {
+          "path": "texas/tx-law-of-agency-30-v1/curriculum/module-09.md",
+          "sha256": "453538cccfff62f1bee20d0da8cabb46decd3e5961351eff25b4fbf65b4effef",
+          "bytes": 60765
+        },
+        {
+          "path": "texas/tx-law-of-agency-30-v1/curriculum/module-10.md",
+          "sha256": "7804116e88e22399e93f4593889970eb07d89245c2ad44b8050a019662ede802",
+          "bytes": 101025
+        },
+        {
+          "path": "texas/tx-law-of-agency-30-v1/curriculum/module-11.md",
+          "sha256": "48fe73851d61473d15392ddec45d0aa8b31ef1d9506aef739aa63d39472c29c7",
+          "bytes": 73436
+        },
+        {
+          "path": "texas/tx-law-of-agency-30-v1/curriculum/module-12.md",
+          "sha256": "5b692204fc257bba871248dd45f20fd98803cd5b98a6eeb1920d6ff7d5f5b566",
+          "bytes": 80660
+        }
+      ],
+      "curriculumStatus": "authored_material_present_review_required",
+      "engineCandidates": [
+        "config/texas-law-of-agency-engine.mjs",
+        "config/texas-principles-ii-engine.mjs",
+        "config/texas/complete-course-reviewer-engine.mjs"
+      ],
+      "engineInspection": {
+        "status": "separate_texas_authoring_and_reviewer_engines",
+        "studentCompatible": false,
+        "missing": "Only Law of Agency is wired to the student blocks service and SQL 024. Other Texas definitions need their own persisted timing/assessment adapter; reviewer engines are not production persistence."
+      },
+      "runtimeRegistered": true,
+      "compatibility": "registered_student_adapter",
+      "missingConnection": null,
+      "approvalClaim": false,
+      "completeCurriculumClaim": false
+    },
+    {
+      "courseId": "tx-law-of-contracts-30",
+      "publicId": "tx-law-of-contracts-30",
+      "state": "TX",
+      "sourceRoot": "texas/tx-law-of-contracts-30-v1",
+      "curriculumFiles": [
+        {
+          "path": "texas/tx-law-of-contracts-30-v1/curriculum/module-01.md",
+          "sha256": "d1d175b76dfb9664bd72dae44da589ffe4de7f95ce46931e01ca2ddcc7288298",
+          "bytes": 88296
+        },
+        {
+          "path": "texas/tx-law-of-contracts-30-v1/curriculum/module-02.md",
+          "sha256": "f2dd6971b564de552f86e864952d9f6811673dd54a5a7db5078d407ce212d35c",
+          "bytes": 76084
+        },
+        {
+          "path": "texas/tx-law-of-contracts-30-v1/curriculum/module-03.md",
+          "sha256": "3f7ce25877d9373bb418279765dd6dd3840adc37dec92e479e424873950efa40",
+          "bytes": 41471
+        },
+        {
+          "path": "texas/tx-law-of-contracts-30-v1/curriculum/module-04.md",
+          "sha256": "f5dc3fea3aa1a6e2625b98bd9eb66364de5d7d624530ade521b603e5dfb63f64",
+          "bytes": 92207
+        },
+        {
+          "path": "texas/tx-law-of-contracts-30-v1/curriculum/module-05.md",
+          "sha256": "2080e241dc579a18d47cd44fc13aa30d505fc775ba1c6da44f6118f486bbd1cc",
+          "bytes": 161705
+        },
+        {
+          "path": "texas/tx-law-of-contracts-30-v1/curriculum/module-06.md",
+          "sha256": "fe1d3b46af52964d48d066e033db9e8cd3bec048dcd7110b6e8a7be7cfec4f41",
+          "bytes": 59376
+        },
+        {
+          "path": "texas/tx-law-of-contracts-30-v1/curriculum/module-07.md",
+          "sha256": "ad2f4934fb013e1f350c6ce25a603437fd4a39ff261d9d360b4c873bab9faff8",
+          "bytes": 57730
+        },
+        {
+          "path": "texas/tx-law-of-contracts-30-v1/curriculum/module-08.md",
+          "sha256": "5f6417007f744a4e6ab33882e85335c8d4e2d95609c05b0954ce42392e0d1656",
+          "bytes": 159746
+        },
+        {
+          "path": "texas/tx-law-of-contracts-30-v1/curriculum/module-09.md",
+          "sha256": "4f1a6756e23ecd9bea1a7e55620579936a30a46c444b730892b4c23163993682",
+          "bytes": 50529
+        },
+        {
+          "path": "texas/tx-law-of-contracts-30-v1/curriculum/module-10.md",
+          "sha256": "a36c94ef22d8350c5ad030847844366ed46406fb5b141ca53f0e8d42c2429c6c",
+          "bytes": 61712
+        },
+        {
+          "path": "texas/tx-law-of-contracts-30-v1/curriculum/module-11.md",
+          "sha256": "cd6b676c233211f0e7048075030803cbd7efa1408d9bb1d2225892b990346cb7",
+          "bytes": 26298
+        }
+      ],
+      "curriculumStatus": "authored_material_present_review_required",
+      "engineCandidates": [
+        "config/texas-law-of-agency-engine.mjs",
+        "config/texas-principles-ii-engine.mjs",
+        "config/texas/complete-course-reviewer-engine.mjs"
+      ],
+      "engineInspection": {
+        "status": "separate_texas_authoring_and_reviewer_engines",
+        "studentCompatible": false,
+        "missing": "Only Law of Agency is wired to the student blocks service and SQL 024. Other Texas definitions need their own persisted timing/assessment adapter; reviewer engines are not production persistence."
+      },
+      "runtimeRegistered": false,
+      "compatibility": "Authored state engine is not a verified student-runtime connection.",
+      "missingConnection": "Only Law of Agency is wired to the student blocks service and SQL 024. Other Texas definitions need their own persisted timing/assessment adapter; reviewer engines are not production persistence. Register the exact tx-law-of-contracts-30 course/version with its state delivery and progress adapter, then verify enrollment, timing, assessments and persistence. Do not activate from file presence.",
+      "approvalClaim": false,
+      "completeCurriculumClaim": false
+    },
+    {
+      "courseId": "tx-promulgated-contract-forms-30",
+      "publicId": "tx-promulgated-contract-forms-30",
+      "state": "TX",
+      "sourceRoot": "texas/tx-promulgated-contract-forms-30-v1",
+      "curriculumFiles": [
+        {
+          "path": "texas/tx-promulgated-contract-forms-30-v1/curriculum/module-01.md",
+          "sha256": "12c84e8fcff552de9fa5d25bb25c3691551e174d55c1a77c3a9795f79dc39445",
+          "bytes": 32480
+        },
+        {
+          "path": "texas/tx-promulgated-contract-forms-30-v1/curriculum/module-02.md",
+          "sha256": "27de6c73b56f4480305cea5c90cb33acc75648e7540b70377c68b5843958f9dc",
+          "bytes": 30339
+        },
+        {
+          "path": "texas/tx-promulgated-contract-forms-30-v1/curriculum/module-03.md",
+          "sha256": "03dcba8b2f9a529c68b35366e1e5f324db503c1be1288f9dcbf4e805f5ebec2b",
+          "bytes": 32220
+        },
+        {
+          "path": "texas/tx-promulgated-contract-forms-30-v1/curriculum/module-04.md",
+          "sha256": "e36b432476919bcef4ee4f52313423eedbb55c87710555408a4906121959ae48",
+          "bytes": 30281
+        },
+        {
+          "path": "texas/tx-promulgated-contract-forms-30-v1/curriculum/module-05.md",
+          "sha256": "57665481c108d68e3e60d26afccf79a97af953fcb67683b07038618d8987ed0b",
+          "bytes": 34188
+        },
+        {
+          "path": "texas/tx-promulgated-contract-forms-30-v1/curriculum/module-06.md",
+          "sha256": "6b3fbc4f491f09d100a825cbbe8e1de2f689d77bbfbc2e9ccee299df9a020b36",
+          "bytes": 34802
+        },
+        {
+          "path": "texas/tx-promulgated-contract-forms-30-v1/curriculum/module-07.md",
+          "sha256": "df84eefb274d597c61249f18aed9dc166ef0277bba91d37254b61961fad23637",
+          "bytes": 36917
+        },
+        {
+          "path": "texas/tx-promulgated-contract-forms-30-v1/curriculum/module-08.md",
+          "sha256": "53924ac7f6507e6cc43aa7332a2432f3c032a39fe3f8621932adef907f7fe6df",
+          "bytes": 23253
+        },
+        {
+          "path": "texas/tx-promulgated-contract-forms-30-v1/curriculum/module-09.md",
+          "sha256": "b03017ac0116e69680b135d6195a7aa2b48ac275012fcee9a23181d0e3259b00",
+          "bytes": 25218
+        }
+      ],
+      "curriculumStatus": "authored_material_present_review_required",
+      "engineCandidates": [
+        "config/texas-law-of-agency-engine.mjs",
+        "config/texas-principles-ii-engine.mjs",
+        "config/texas/complete-course-reviewer-engine.mjs"
+      ],
+      "engineInspection": {
+        "status": "separate_texas_authoring_and_reviewer_engines",
+        "studentCompatible": false,
+        "missing": "Only Law of Agency is wired to the student blocks service and SQL 024. Other Texas definitions need their own persisted timing/assessment adapter; reviewer engines are not production persistence."
+      },
+      "runtimeRegistered": false,
+      "compatibility": "Authored state engine is not a verified student-runtime connection.",
+      "missingConnection": "Only Law of Agency is wired to the student blocks service and SQL 024. Other Texas definitions need their own persisted timing/assessment adapter; reviewer engines are not production persistence. Register the exact tx-promulgated-contract-forms-30 course/version with its state delivery and progress adapter, then verify enrollment, timing, assessments and persistence. Do not activate from file presence.",
+      "approvalClaim": false,
+      "completeCurriculumClaim": false
+    },
+    {
+      "courseId": "tx-real-estate-finance-30",
+      "publicId": "tx-real-estate-finance-30",
+      "state": "TX",
+      "sourceRoot": "texas/tx-real-estate-finance-30-v1",
+      "curriculumFiles": [
+        {
+          "path": "texas/tx-real-estate-finance-30-v1/curriculum/module-01.md",
+          "sha256": "f691525a9dc76b1c031914739ae751b58944ade3e8cd50258ab26e1a823569ff",
+          "bytes": 26212
+        },
+        {
+          "path": "texas/tx-real-estate-finance-30-v1/curriculum/module-02.md",
+          "sha256": "260494e356648b0d0e50a5dd932f5ceed05a7ed9f564ae965b7caf67dffbb0dc",
+          "bytes": 17011
+        },
+        {
+          "path": "texas/tx-real-estate-finance-30-v1/curriculum/module-03.md",
+          "sha256": "b127b1afe850b038fafff2bee45408676d8abab61a40693e6d7b494b0bc57586",
+          "bytes": 39816
+        },
+        {
+          "path": "texas/tx-real-estate-finance-30-v1/curriculum/module-04.md",
+          "sha256": "e5bdc0e08b5a0dd18c40e2db13e2ee746b2b54ad5a522603f267200617f7c426",
+          "bytes": 20351
+        },
+        {
+          "path": "texas/tx-real-estate-finance-30-v1/curriculum/module-05.md",
+          "sha256": "d0c6760c16c8dae570c076fd8b0ce0da7c58a2c0a91b820ba42d243e97bea612",
+          "bytes": 24255
+        },
+        {
+          "path": "texas/tx-real-estate-finance-30-v1/curriculum/module-06.md",
+          "sha256": "1e8b5d3160e061fdc47cce21bb517430c15e67c723d89e66bfd18b76ad494fae",
+          "bytes": 27834
+        },
+        {
+          "path": "texas/tx-real-estate-finance-30-v1/curriculum/module-07.md",
+          "sha256": "f3307b5470ca2ce9bbcde5c4e693aab6a5392a67ec72258762e235c51b7c7fa5",
+          "bytes": 37390
+        },
+        {
+          "path": "texas/tx-real-estate-finance-30-v1/curriculum/module-08.md",
+          "sha256": "cfc5709683403d617a248eb72b1e0b9328d2ee616404448af28f504a2cc524bd",
+          "bytes": 42535
+        },
+        {
+          "path": "texas/tx-real-estate-finance-30-v1/curriculum/module-09.md",
+          "sha256": "1ef54fd06b79801ce23cf3e218a57ad883dd26d04b5d19c3e057776227939bf7",
+          "bytes": 39549
+        },
+        {
+          "path": "texas/tx-real-estate-finance-30-v1/curriculum/module-10.md",
+          "sha256": "7d43ce2c10d39e93638225bc7da9ba260d00965a6a09f9a60c224a8016ced6d2",
+          "bytes": 12258
+        }
+      ],
+      "curriculumStatus": "authored_material_present_review_required",
+      "engineCandidates": [
+        "config/texas-law-of-agency-engine.mjs",
+        "config/texas-principles-ii-engine.mjs",
+        "config/texas/complete-course-reviewer-engine.mjs"
+      ],
+      "engineInspection": {
+        "status": "separate_texas_authoring_and_reviewer_engines",
+        "studentCompatible": false,
+        "missing": "Only Law of Agency is wired to the student blocks service and SQL 024. Other Texas definitions need their own persisted timing/assessment adapter; reviewer engines are not production persistence."
+      },
+      "runtimeRegistered": false,
+      "compatibility": "Authored state engine is not a verified student-runtime connection.",
+      "missingConnection": "Only Law of Agency is wired to the student blocks service and SQL 024. Other Texas definitions need their own persisted timing/assessment adapter; reviewer engines are not production persistence. Register the exact tx-real-estate-finance-30 course/version with its state delivery and progress adapter, then verify enrollment, timing, assessments and persistence. Do not activate from file presence.",
+      "approvalClaim": false,
+      "completeCurriculumClaim": false
+    },
+    {
+      "courseId": "wa-real-estate-fundamentals-60",
+      "publicId": "wa-real-estate-fundamentals-60",
+      "state": "WA",
+      "sourceRoot": "washington/wa-real-estate-fundamentals-60-v1",
+      "curriculumFiles": [
+        {
+          "path": "washington/wa-real-estate-fundamentals-60-v1/curriculum/module-01.md",
+          "sha256": "9b3e9ec40e73cab599903dc08af488485b94ed46dfbc57e93a35293a5f402d74",
+          "bytes": 18097
+        },
+        {
+          "path": "washington/wa-real-estate-fundamentals-60-v1/curriculum/module-02.md",
+          "sha256": "45b2a066e0b5f2699efdf3853c19a4f8a143d1f503338bdffa8e374d538fe3ea",
+          "bytes": 13068
+        },
+        {
+          "path": "washington/wa-real-estate-fundamentals-60-v1/curriculum/module-03.md",
+          "sha256": "c3d86b07a82a31200a9d0d4c14e5577c77df3608e8b726f656f75a7d7158d8b4",
+          "bytes": 9319
+        },
+        {
+          "path": "washington/wa-real-estate-fundamentals-60-v1/curriculum/module-04.md",
+          "sha256": "b827bf5e93718df0a37b0dc34880fca0e9fa0664ed3a136a20e931dbd124660b",
+          "bytes": 10828
+        },
+        {
+          "path": "washington/wa-real-estate-fundamentals-60-v1/curriculum/module-05.md",
+          "sha256": "bde4b78994cc7c9ba59f006943bf8b3186d7a6764d3ff5c7fa327eed282224d5",
+          "bytes": 11287
+        },
+        {
+          "path": "washington/wa-real-estate-fundamentals-60-v1/curriculum/module-06.md",
+          "sha256": "0d3974e4c1936f7ae8d45ec5c76687ff8917df3b591490c15323dd9ad22590e2",
+          "bytes": 10541
+        },
+        {
+          "path": "washington/wa-real-estate-fundamentals-60-v1/curriculum/module-07.md",
+          "sha256": "18a32d589fa3308ecb34a56bf7e4f63d2a144fa22e929aaf500f39cc8bb43fe4",
+          "bytes": 11112
+        },
+        {
+          "path": "washington/wa-real-estate-fundamentals-60-v1/curriculum/module-08.md",
+          "sha256": "91cdf941c920a827bb4f678d06ba509a6fb4eff78237b74b2a5abcf9ff226262",
+          "bytes": 11089
+        },
+        {
+          "path": "washington/wa-real-estate-fundamentals-60-v1/curriculum/module-09.md",
+          "sha256": "1c5f753680a47ea2d3a9260cb35947b71430bfe804827408c146ca293d500145",
+          "bytes": 16282
+        },
+        {
+          "path": "washington/wa-real-estate-fundamentals-60-v1/curriculum/module-10.md",
+          "sha256": "c821310eeca3fac019c2c59c7ab313d492b3124fda7eff39d241234c24389489",
+          "bytes": 11548
+        },
+        {
+          "path": "washington/wa-real-estate-fundamentals-60-v1/curriculum/module-11.md",
+          "sha256": "5a3aedac81500c94b2a85dc0c99ccd746a9dc34a50da63a33e448c7b27ef4c29",
+          "bytes": 11747
+        },
+        {
+          "path": "washington/wa-real-estate-fundamentals-60-v1/curriculum/module-12.md",
+          "sha256": "1d2f835a69f87a4a12ab0b490d8b961486adc7da5315774338af56d4a37ea0fc",
+          "bytes": 13998
+        }
+      ],
+      "curriculumStatus": "authored_material_present_review_required",
+      "engineCandidates": [
+        "config/washington-course-engine.mjs"
+      ],
+      "engineInspection": {
+        "status": "state_definition_loaded",
+        "file": "config/washington-course-engine.mjs",
+        "authoredCourseId": "wa-real-estate-fundamentals-60-v1",
+        "authoredVersion": "1.0-submission-draft",
+        "studentCompatible": false,
+        "missing": "State engine can describe/score authored material but has no registered student delivery, authenticated persistence and version bridge for this offering."
+      },
+      "runtimeRegistered": false,
+      "compatibility": "Authored state engine is not a verified student-runtime connection.",
+      "missingConnection": "State engine can describe/score authored material but has no registered student delivery, authenticated persistence and version bridge for this offering. Register the exact wa-real-estate-fundamentals-60 course/version with its state delivery and progress adapter, then verify enrollment, timing, assessments and persistence. Do not activate from file presence.",
+      "approvalClaim": false,
+      "completeCurriculumClaim": false
+    },
+    {
+      "courseId": "wa-real-estate-practices-30",
+      "publicId": "wa-real-estate-practices-30",
+      "state": "WA",
+      "sourceRoot": "washington/wa-real-estate-practices-30-v1",
+      "curriculumFiles": [
+        {
+          "path": "washington/wa-real-estate-practices-30-v1/curriculum/module-01.md",
+          "sha256": "478d7839d528e2fb43e5395db748fd1f33e282ed149624f6bc993e6e8539571f",
+          "bytes": 15310
+        },
+        {
+          "path": "washington/wa-real-estate-practices-30-v1/curriculum/module-02.md",
+          "sha256": "02b6f41e4feb4261483c094598a90b4ab231552e034ea54fb34d53a1fc8b38aa",
+          "bytes": 16835
+        },
+        {
+          "path": "washington/wa-real-estate-practices-30-v1/curriculum/module-03.md",
+          "sha256": "e3387b2576ddefae31d7edfc101b8643cd8447699130229e1a1ea95677c8b905",
+          "bytes": 13850
+        },
+        {
+          "path": "washington/wa-real-estate-practices-30-v1/curriculum/module-04.md",
+          "sha256": "e1300ab091578b2db1e2b837a94aa2dd93990d72082b628324f591a7fd280698",
+          "bytes": 14162
+        },
+        {
+          "path": "washington/wa-real-estate-practices-30-v1/curriculum/module-05.md",
+          "sha256": "250d59e3250314a75113cedb877cbe305b658e326cacee8d807b64ff90fef2e7",
+          "bytes": 12625
+        },
+        {
+          "path": "washington/wa-real-estate-practices-30-v1/curriculum/module-06.md",
+          "sha256": "e17557f0b0e1a9cd98a565a5d30f834f16b83df2532a4381051a6006d319445b",
+          "bytes": 13898
+        }
+      ],
+      "curriculumStatus": "authored_material_present_review_required",
+      "engineCandidates": [
+        "config/washington-course-engine.mjs"
+      ],
+      "engineInspection": {
+        "status": "state_definition_loaded",
+        "file": "config/washington-course-engine.mjs",
+        "authoredCourseId": "wa-real-estate-practices-30-v1",
+        "authoredVersion": "1.0-submission-draft",
+        "studentCompatible": false,
+        "missing": "State engine can describe/score authored material but has no registered student delivery, authenticated persistence and version bridge for this offering."
+      },
+      "runtimeRegistered": false,
+      "compatibility": "Authored state engine is not a verified student-runtime connection.",
+      "missingConnection": "State engine can describe/score authored material but has no registered student delivery, authenticated persistence and version bridge for this offering. Register the exact wa-real-estate-practices-30 course/version with its state delivery and progress adapter, then verify enrollment, timing, assessments and persistence. Do not activate from file presence.",
+      "approvalClaim": false,
+      "completeCurriculumClaim": false
+    },
+    {
+      "courseId": "pa-real-estate-fundamentals-30",
+      "publicId": "pa-real-estate-fundamentals-30",
+      "state": "PA",
+      "sourceRoot": "pennsylvania/pa-real-estate-fundamentals-30-v1",
+      "curriculumFiles": [
+        {
+          "path": "pennsylvania/pa-real-estate-fundamentals-30-v1/curriculum/module-01.md",
+          "sha256": "5d69601dd65bf95e6799d27ebd3cc76afa015df569418c33ca9ab9c923f81404",
+          "bytes": 18385
+        },
+        {
+          "path": "pennsylvania/pa-real-estate-fundamentals-30-v1/curriculum/module-02.md",
+          "sha256": "e9aa3cb544ac152578809a483ff2e52c02be910edbbd857c6b890fa119cfa822",
+          "bytes": 12752
+        },
+        {
+          "path": "pennsylvania/pa-real-estate-fundamentals-30-v1/curriculum/module-03.md",
+          "sha256": "3c02fddefa6426f93caccea369fd489a3cde3e7e43399392042b4f6a69783d18",
+          "bytes": 11332
+        },
+        {
+          "path": "pennsylvania/pa-real-estate-fundamentals-30-v1/curriculum/module-04.md",
+          "sha256": "ae35489a2b130364fbe9942217b1a46b8b933677e5c093a57315b88abe930320",
+          "bytes": 11978
+        },
+        {
+          "path": "pennsylvania/pa-real-estate-fundamentals-30-v1/curriculum/module-05.md",
+          "sha256": "2261ed9dab236ab9d2c3fb7d1ef03021a791e329ef6dfe6ae3401e4184663347",
+          "bytes": 11822
+        },
+        {
+          "path": "pennsylvania/pa-real-estate-fundamentals-30-v1/curriculum/module-06.md",
+          "sha256": "2a20369ecd82ac480e59b3f83c67304cb01bc59c4c711d45a5f729ab8002b007",
+          "bytes": 12597
+        }
+      ],
+      "curriculumStatus": "authored_material_present_review_required",
+      "engineCandidates": [
+        "config/pennsylvania-course-engine.mjs"
+      ],
+      "engineInspection": {
+        "status": "state_definition_loaded",
+        "file": "config/pennsylvania-course-engine.mjs",
+        "authoredCourseId": "pa-real-estate-fundamentals-30-v1",
+        "authoredVersion": "1.0-submission-draft",
+        "studentCompatible": false,
+        "missing": "State engine can describe/score authored material but has no registered student delivery, authenticated persistence and version bridge for this offering."
+      },
+      "runtimeRegistered": false,
+      "compatibility": "Authored state engine is not a verified student-runtime connection.",
+      "missingConnection": "State engine can describe/score authored material but has no registered student delivery, authenticated persistence and version bridge for this offering. Register the exact pa-real-estate-fundamentals-30 course/version with its state delivery and progress adapter, then verify enrollment, timing, assessments and persistence. Do not activate from file presence.",
+      "approvalClaim": false,
+      "completeCurriculumClaim": false
+    },
+    {
+      "courseId": "pa-real-estate-practice-45",
+      "publicId": "pa-real-estate-practice-45",
+      "state": "PA",
+      "sourceRoot": "pennsylvania/pa-real-estate-practice-45-v1",
+      "curriculumFiles": [
+        {
+          "path": "pennsylvania/pa-real-estate-practice-45-v1/curriculum/module-01.md",
+          "sha256": "c1678b7b84454dfb1bb603b99ad58c439c4e8e8d3274d8f0afffc345ba28911f",
+          "bytes": 12247
+        },
+        {
+          "path": "pennsylvania/pa-real-estate-practice-45-v1/curriculum/module-02.md",
+          "sha256": "39a521815bd14f8cfe7db7bd3fbcbb83f95ca560fbbeaa3401b63f61814db9ad",
+          "bytes": 17615
+        },
+        {
+          "path": "pennsylvania/pa-real-estate-practice-45-v1/curriculum/module-03.md",
+          "sha256": "74518ed30a764b7cdda6c504b57e0207b49bed2ca9929cc53f054044602b701e",
+          "bytes": 12129
+        },
+        {
+          "path": "pennsylvania/pa-real-estate-practice-45-v1/curriculum/module-04.md",
+          "sha256": "1e302ddd426d8b9341e6f1e82e8446afc9e2f6b97804d3b851b7460fe3f288ee",
+          "bytes": 13732
+        },
+        {
+          "path": "pennsylvania/pa-real-estate-practice-45-v1/curriculum/module-05.md",
+          "sha256": "c3c3412726a333a3ac0dcad25c23110d83949eec84a51bfdc5fdd96af0822d02",
+          "bytes": 15277
+        },
+        {
+          "path": "pennsylvania/pa-real-estate-practice-45-v1/curriculum/module-06.md",
+          "sha256": "7bda70604eb7951cf4ea21fe7699482514cb9c72346616618b37260c4aea0e9e",
+          "bytes": 17189
+        },
+        {
+          "path": "pennsylvania/pa-real-estate-practice-45-v1/curriculum/module-07.md",
+          "sha256": "32e7eafffcc40c7a101d5668fae5a96608b2a5ab815d4cfb16e707ae548cb6c8",
+          "bytes": 13341
+        },
+        {
+          "path": "pennsylvania/pa-real-estate-practice-45-v1/curriculum/module-08.md",
+          "sha256": "049a5d7a09ff1f4f79967649b6caaad8d29c085fa48bc2dd47a4d89ae27da483",
+          "bytes": 15292
+        },
+        {
+          "path": "pennsylvania/pa-real-estate-practice-45-v1/curriculum/module-09.md",
+          "sha256": "fc7e09af5036e892635b752c3a416127b667d4eef171b1dab7fbb5d1c6baa5a5",
+          "bytes": 17421
+        }
+      ],
+      "curriculumStatus": "authored_material_present_review_required",
+      "engineCandidates": [
+        "config/pennsylvania-course-engine.mjs"
+      ],
+      "engineInspection": {
+        "status": "state_definition_loaded",
+        "file": "config/pennsylvania-course-engine.mjs",
+        "authoredCourseId": "pa-real-estate-practice-45-v1",
+        "authoredVersion": "1.0-submission-draft",
+        "studentCompatible": false,
+        "missing": "State engine can describe/score authored material but has no registered student delivery, authenticated persistence and version bridge for this offering."
+      },
+      "runtimeRegistered": false,
+      "compatibility": "Authored state engine is not a verified student-runtime connection.",
+      "missingConnection": "State engine can describe/score authored material but has no registered student delivery, authenticated persistence and version bridge for this offering. Register the exact pa-real-estate-practice-45 course/version with its state delivery and progress adapter, then verify enrollment, timing, assessments and persistence. Do not activate from file presence.",
+      "approvalClaim": false,
+      "completeCurriculumClaim": false
+    },
+    {
+      "courseId": "nc-broker-prelicensing-75",
+      "publicId": "nc-broker-prelicensing-75",
+      "state": "NC",
+      "sourceRoot": "north-carolina",
+      "curriculumFiles": [
+        {
+          "path": "north-carolina/curriculum/module-01.md",
+          "sha256": "7e6e94665c79f4b169a308b5093665cdd742c1328d49f61642fe5b7773c5bc61",
+          "bytes": 22155
+        },
+        {
+          "path": "north-carolina/curriculum/module-02.md",
+          "sha256": "578aa5206f11ba617d4c57b0fba7d93cbb5fb58ae04cd0ffe562050df1f261d7",
+          "bytes": 16190
+        },
+        {
+          "path": "north-carolina/curriculum/module-03.md",
+          "sha256": "00a096187bfd035682852aed88a878469dbf5fc3b4b583b005309ea3ff08cc2f",
+          "bytes": 20400
+        },
+        {
+          "path": "north-carolina/curriculum/module-04.md",
+          "sha256": "a391c622f7b5993d91062c1f6c4a45f878da4a7ad4c95fc55cf6517bba3153ae",
+          "bytes": 20514
+        },
+        {
+          "path": "north-carolina/curriculum/module-05.md",
+          "sha256": "62566984180919d04c292f7994c2230844dac7ccd52cb3b99a876238af861e49",
+          "bytes": 17782
+        },
+        {
+          "path": "north-carolina/curriculum/module-06.md",
+          "sha256": "aa79dbe3dcb4960d531ba0ad6fd49272ce83eded506c8b6c9920b9960a3f8879",
+          "bytes": 23745
+        },
+        {
+          "path": "north-carolina/curriculum/module-07.md",
+          "sha256": "5b08bb35b18fe01e55a8b6e0453e25b6d81c9a4031b1299a19e9b7882857c750",
+          "bytes": 31756
+        },
+        {
+          "path": "north-carolina/curriculum/module-08.md",
+          "sha256": "c74b0578a987bb414dbb4d28ebecc592dfd02ecb03d959e7521b790617263fe3",
+          "bytes": 40959
+        },
+        {
+          "path": "north-carolina/curriculum/module-09.md",
+          "sha256": "f4a71f3bbdabbcfd2eb449b88a46005ad272be5c2978dfda6f40853cb49280d5",
+          "bytes": 31204
+        },
+        {
+          "path": "north-carolina/curriculum/module-10.md",
+          "sha256": "752545dcee9eee875368ede78854e078e94dfa0335000187fb830deda44b8ed4",
+          "bytes": 31083
+        },
+        {
+          "path": "north-carolina/curriculum/module-11.md",
+          "sha256": "49ede2b24af3097cf1ac4cba759c9e16c3a674ad08918be29988f7a452ff088d",
+          "bytes": 35225
+        },
+        {
+          "path": "north-carolina/curriculum/module-12.md",
+          "sha256": "e4cba85f1fccab3ce02052b1b08adb175882d18d6fd98e1e09d5150e4999db43",
+          "bytes": 43654
+        },
+        {
+          "path": "north-carolina/curriculum/module-13.md",
+          "sha256": "59739c3414a7f8d6f57fad05da9a882aef9a79a6dc8c2e0ff4fc22dcec892827",
+          "bytes": 36287
+        },
+        {
+          "path": "north-carolina/curriculum/module-14.md",
+          "sha256": "5035f01b4c0cd0770ed44c6f07585a4bfe58e3867e1a4c68812c6734e60dd3fc",
+          "bytes": 29617
+        },
+        {
+          "path": "north-carolina/curriculum/module-15.md",
+          "sha256": "314e399f22763a9ef99ec316ec096ef2cba969adf8ca5e02680b9737bdd438c3",
+          "bytes": 58680
+        },
+        {
+          "path": "north-carolina/curriculum/module-16.md",
+          "sha256": "8d89fbfaeb4a26d96be839c2cf8e0393f95dcfca4d70d3f435d1154a9fc39f26",
+          "bytes": 21329
+        }
+      ],
+      "curriculumStatus": "authored_material_present_review_required",
+      "engineCandidates": [
+        "config/north-carolina-course-engine.mjs"
+      ],
+      "engineInspection": {
+        "status": "state_definition_loaded",
+        "file": "config/north-carolina-course-engine.mjs",
+        "authoredCourseId": "nc-broker-prelicensing-75-v1",
+        "authoredVersion": "1.0-submission-draft",
+        "studentCompatible": false,
+        "missing": "State engine can describe/score authored material but has no registered student delivery, authenticated persistence and version bridge for this offering."
+      },
+      "runtimeRegistered": false,
+      "compatibility": "Authored state engine is not a verified student-runtime connection.",
+      "missingConnection": "State engine can describe/score authored material but has no registered student delivery, authenticated persistence and version bridge for this offering. Register the exact nc-broker-prelicensing-75 course/version with its state delivery and progress adapter, then verify enrollment, timing, assessments and persistence. Do not activate from file presence.",
+      "approvalClaim": false,
+      "completeCurriculumClaim": false
+    },
+    {
+      "courseId": "co-real-estate-law-practice-48",
+      "publicId": "co-real-estate-law-practice-48",
+      "state": "CO",
+      "sourceRoot": "colorado/co-real-estate-law-and-practice-48-v1",
+      "curriculumFiles": [
+        {
+          "path": "colorado/co-real-estate-law-and-practice-48-v1/curriculum/module-01.md",
+          "sha256": "8a9cfaea55358d79c53d974d3e614615f1a2083c5f34d1b44f102bc58d9c0a69",
+          "bytes": 23032
+        },
+        {
+          "path": "colorado/co-real-estate-law-and-practice-48-v1/curriculum/module-02.md",
+          "sha256": "6383103df054078c8853d3db621616190b4a70c38e42e3e7a4dc8bc45b69d66c",
+          "bytes": 17646
+        },
+        {
+          "path": "colorado/co-real-estate-law-and-practice-48-v1/curriculum/module-03.md",
+          "sha256": "bce918a46475c2b8f6d34ad2fa4959ef9463c24723dfcfbe729d9b3185ada9fe",
+          "bytes": 24801
+        },
+        {
+          "path": "colorado/co-real-estate-law-and-practice-48-v1/curriculum/module-04.md",
+          "sha256": "77caf432978ed7a57015fa2a216b6f302170ffa2e8a672c691276c14dba3f617",
+          "bytes": 23857
+        },
+        {
+          "path": "colorado/co-real-estate-law-and-practice-48-v1/curriculum/module-05.md",
+          "sha256": "fecdeb0b3396eb4539d03ba25121f678254a7a35d19077dbfac80ec05afe6e63",
+          "bytes": 20132
+        }
+      ],
+      "curriculumStatus": "authored_material_present_review_required",
+      "engineCandidates": [
+        "config/colorado-course-engine.mjs"
+      ],
+      "engineInspection": {
+        "status": "state_definition_loaded",
+        "file": "config/colorado-course-engine.mjs",
+        "authoredCourseId": "co-real-estate-law-and-practice-48-v1",
+        "authoredVersion": "1.0-submission-draft",
+        "studentCompatible": false,
+        "missing": "State engine can describe/score authored material but has no registered student delivery, authenticated persistence and version bridge for this offering."
+      },
+      "runtimeRegistered": false,
+      "compatibility": "Authored state engine is not a verified student-runtime connection.",
+      "missingConnection": "State engine can describe/score authored material but has no registered student delivery, authenticated persistence and version bridge for this offering. Register the exact co-real-estate-law-practice-48 course/version with its state delivery and progress adapter, then verify enrollment, timing, assessments and persistence. Do not activate from file presence.",
+      "approvalClaim": false,
+      "completeCurriculumClaim": false
+    },
+    {
+      "courseId": "co-contracts-regulations-48",
+      "publicId": "co-contracts-regulations-48",
+      "state": "CO",
+      "sourceRoot": "colorado/co-contracts-and-regulations-48-v1",
+      "curriculumFiles": [
+        {
+          "path": "colorado/co-contracts-and-regulations-48-v1/curriculum/module-01.md",
+          "sha256": "22be676df5429562a4e2eb24f3482e624ce81d01b342c45ca01b44d548d6e2ce",
+          "bytes": 21355
+        },
+        {
+          "path": "colorado/co-contracts-and-regulations-48-v1/curriculum/module-02.md",
+          "sha256": "d1185733bd255565494999b46d4d3246ba84d60d917aa0028e41a04c8571bffd",
+          "bytes": 36041
+        },
+        {
+          "path": "colorado/co-contracts-and-regulations-48-v1/curriculum/module-03.md",
+          "sha256": "5252881d4978eab2078d30e0e902b2fc0163b2ac579c33512ddd2055cb5e1691",
+          "bytes": 19814
+        },
+        {
+          "path": "colorado/co-contracts-and-regulations-48-v1/curriculum/module-04.md",
+          "sha256": "233c1a3db336f18ab8b102090eba769715a040dfa996a021def1567f7cbb3187",
+          "bytes": 20525
+        },
+        {
+          "path": "colorado/co-contracts-and-regulations-48-v1/curriculum/module-05.md",
+          "sha256": "b6d2a31e0f65020c4233f7736b7732f465d3ae734cb009cdbaed75a9a6b7a327",
+          "bytes": 23145
+        }
+      ],
+      "curriculumStatus": "authored_material_present_review_required",
+      "engineCandidates": [
+        "config/colorado-course-engine.mjs"
+      ],
+      "engineInspection": {
+        "status": "state_definition_loaded",
+        "file": "config/colorado-course-engine.mjs",
+        "authoredCourseId": "co-contracts-and-regulations-48-v1",
+        "authoredVersion": "1.0-submission-draft",
+        "studentCompatible": false,
+        "missing": "State engine can describe/score authored material but has no registered student delivery, authenticated persistence and version bridge for this offering."
+      },
+      "runtimeRegistered": false,
+      "compatibility": "Authored state engine is not a verified student-runtime connection.",
+      "missingConnection": "State engine can describe/score authored material but has no registered student delivery, authenticated persistence and version bridge for this offering. Register the exact co-contracts-regulations-48 course/version with its state delivery and progress adapter, then verify enrollment, timing, assessments and persistence. Do not activate from file presence.",
+      "approvalClaim": false,
+      "completeCurriculumClaim": false
+    },
+    {
+      "courseId": "co-trust-accounts-recordkeeping-8",
+      "publicId": "co-trust-accounts-recordkeeping-8",
+      "state": "CO",
+      "sourceRoot": "colorado/co-trust-accounts-and-record-keeping-8-v1",
+      "curriculumFiles": [
+        {
+          "path": "colorado/co-trust-accounts-and-record-keeping-8-v1/curriculum/module-01.md",
+          "sha256": "d52c39ebf2627c7a60562208462c65ae2c10f758a76d3d32dca0c3261623844a",
+          "bytes": 15185
+        },
+        {
+          "path": "colorado/co-trust-accounts-and-record-keeping-8-v1/curriculum/module-02.md",
+          "sha256": "ba16425603a4e1e790b5bc55f8a768357bb6feb1870167fd53cb0f0fde2c5d9e",
+          "bytes": 21470
+        },
+        {
+          "path": "colorado/co-trust-accounts-and-record-keeping-8-v1/curriculum/module-03.md",
+          "sha256": "1c887eb803e11e23bda8d82c3e6938d1e0e657eed5227d8588e4cd57a1102cb5",
+          "bytes": 22107
+        },
+        {
+          "path": "colorado/co-trust-accounts-and-record-keeping-8-v1/curriculum/module-04.md",
+          "sha256": "83a8e3b682836292621616953ac73c13206674956a1f361b317458694c98a2f6",
+          "bytes": 12596
+        }
+      ],
+      "curriculumStatus": "authored_material_present_review_required",
+      "engineCandidates": [
+        "config/colorado-course-engine.mjs"
+      ],
+      "engineInspection": {
+        "status": "state_definition_loaded",
+        "file": "config/colorado-course-engine.mjs",
+        "authoredCourseId": "co-trust-accounts-and-record-keeping-8-v1",
+        "authoredVersion": "1.0-submission-draft",
+        "studentCompatible": false,
+        "missing": "State engine can describe/score authored material but has no registered student delivery, authenticated persistence and version bridge for this offering."
+      },
+      "runtimeRegistered": false,
+      "compatibility": "Authored state engine is not a verified student-runtime connection.",
+      "missingConnection": "State engine can describe/score authored material but has no registered student delivery, authenticated persistence and version bridge for this offering. Register the exact co-trust-accounts-recordkeeping-8 course/version with its state delivery and progress adapter, then verify enrollment, timing, assessments and persistence. Do not activate from file presence.",
+      "approvalClaim": false,
+      "completeCurriculumClaim": false
+    },
+    {
+      "courseId": "co-current-legal-issues-8",
+      "publicId": "co-current-legal-issues-8",
+      "state": "CO",
+      "sourceRoot": "colorado/co-current-legal-issues-8-v1",
+      "curriculumFiles": [
+        {
+          "path": "colorado/co-current-legal-issues-8-v1/curriculum/module-01.md",
+          "sha256": "97058cc3a4997dad43cc6336a44e81d116c2a678670447d759444ae0b82465ca",
+          "bytes": 17033
+        },
+        {
+          "path": "colorado/co-current-legal-issues-8-v1/curriculum/module-02.md",
+          "sha256": "4407d0cda97645aa14d2485357f86a99208aa5828fe49d467227b4e7c6b9a9ee",
+          "bytes": 13897
+        },
+        {
+          "path": "colorado/co-current-legal-issues-8-v1/curriculum/module-03.md",
+          "sha256": "b051aec41bb35c8579df2276435b4cd1898d97e7804a75e59f2ee62448d632ff",
+          "bytes": 17287
+        }
+      ],
+      "curriculumStatus": "authored_material_present_review_required",
+      "engineCandidates": [
+        "config/colorado-course-engine.mjs"
+      ],
+      "engineInspection": {
+        "status": "state_definition_loaded",
+        "file": "config/colorado-course-engine.mjs",
+        "authoredCourseId": "co-current-legal-issues-8-v1",
+        "authoredVersion": "1.0-submission-draft",
+        "studentCompatible": false,
+        "missing": "State engine can describe/score authored material but has no registered student delivery, authenticated persistence and version bridge for this offering."
+      },
+      "runtimeRegistered": false,
+      "compatibility": "Authored state engine is not a verified student-runtime connection.",
+      "missingConnection": "State engine can describe/score authored material but has no registered student delivery, authenticated persistence and version bridge for this offering. Register the exact co-current-legal-issues-8 course/version with its state delivery and progress adapter, then verify enrollment, timing, assessments and persistence. Do not activate from file presence.",
+      "approvalClaim": false,
+      "completeCurriculumClaim": false
+    },
+    {
+      "courseId": "co-real-estate-closings-24",
+      "publicId": "co-real-estate-closings-24",
+      "state": "CO",
+      "sourceRoot": "colorado/co-closings-24-v1",
+      "curriculumFiles": [
+        {
+          "path": "colorado/co-closings-24-v1/curriculum/module-01.md",
+          "sha256": "0510fc736260787fc5b9664e1c3ceb44feb7e98d561ff16be1469fa0815b7006",
+          "bytes": 15818
+        },
+        {
+          "path": "colorado/co-closings-24-v1/curriculum/module-02.md",
+          "sha256": "ecb40d50e29e5f67f82889ab0149dc17f476e6d71e51551499a6fe71c8e0dd77",
+          "bytes": 13195
+        },
+        {
+          "path": "colorado/co-closings-24-v1/curriculum/module-03.md",
+          "sha256": "3c22c808f910b4c526f4a0f8bf9e8efba0e10efbff317777834288a58a69ac0a",
+          "bytes": 16545
+        },
+        {
+          "path": "colorado/co-closings-24-v1/curriculum/module-04.md",
+          "sha256": "72c1978ed17ea9e87337e6aee0888cde1cb8395a15776bbb6971e94dfb78242a",
+          "bytes": 12977
+        },
+        {
+          "path": "colorado/co-closings-24-v1/curriculum/module-05.md",
+          "sha256": "dfd681c5ac70fbb6c3ebd17e542e9134eeb042bcf60a4f28b732fa041498e3d6",
+          "bytes": 18614
+        }
+      ],
+      "curriculumStatus": "authored_material_present_review_required",
+      "engineCandidates": [
+        "config/colorado-course-engine.mjs"
+      ],
+      "engineInspection": {
+        "status": "state_definition_loaded",
+        "file": "config/colorado-course-engine.mjs",
+        "authoredCourseId": "co-closings-24-v1",
+        "authoredVersion": "1.0-submission-draft",
+        "studentCompatible": false,
+        "missing": "State engine can describe/score authored material but has no registered student delivery, authenticated persistence and version bridge for this offering."
+      },
+      "runtimeRegistered": false,
+      "compatibility": "Authored state engine is not a verified student-runtime connection.",
+      "missingConnection": "State engine can describe/score authored material but has no registered student delivery, authenticated persistence and version bridge for this offering. Register the exact co-real-estate-closings-24 course/version with its state delivery and progress adapter, then verify enrollment, timing, assessments and persistence. Do not activate from file presence.",
+      "approvalClaim": false,
+      "completeCurriculumClaim": false
+    },
+    {
+      "courseId": "co-practical-applications-32",
+      "publicId": "co-practical-applications-32",
+      "state": "CO",
+      "sourceRoot": "colorado/co-practical-applications-32-v1",
+      "curriculumFiles": [
+        {
+          "path": "colorado/co-practical-applications-32-v1/curriculum/module-01.md",
+          "sha256": "5af80b03b098a3062d6ad0ce4285552fa1843a0ece45798e9e8ce9cee6a4f172",
+          "bytes": 17833
+        },
+        {
+          "path": "colorado/co-practical-applications-32-v1/curriculum/module-02.md",
+          "sha256": "a0ef5ea2473be526efeaa06708994e3cd35fd74a64bc6e6124993c1246738bc1",
+          "bytes": 23548
+        },
+        {
+          "path": "colorado/co-practical-applications-32-v1/curriculum/module-03.md",
+          "sha256": "61c16680e4004c80bc34950f0f852812e95c1b954c033084b89fc846a0ef0d4d",
+          "bytes": 19833
+        },
+        {
+          "path": "colorado/co-practical-applications-32-v1/curriculum/module-04.md",
+          "sha256": "e9c099e8177f1be7f4986f467b9ecfaacbf796068b5465a002addb83ee6fb121",
+          "bytes": 17472
+        },
+        {
+          "path": "colorado/co-practical-applications-32-v1/curriculum/module-05.md",
+          "sha256": "32753dde1e5bd95b7af5b5a9096038bae4af36acae3b8952a01a74c1512fde25",
+          "bytes": 14509
+        },
+        {
+          "path": "colorado/co-practical-applications-32-v1/curriculum/module-06.md",
+          "sha256": "315fcc82bf453f3b9b2ee5371e0bd2d027f795df390ddd044a203b7a84545739",
+          "bytes": 28332
+        },
+        {
+          "path": "colorado/co-practical-applications-32-v1/curriculum/module-07.md",
+          "sha256": "10f7fce0fc7bb705ec96b5d55e9e86229c198a8ee72389a6406bea5688f6598f",
+          "bytes": 18151
+        }
+      ],
+      "curriculumStatus": "authored_material_present_review_required",
+      "engineCandidates": [
+        "config/colorado-course-engine.mjs"
+      ],
+      "engineInspection": {
+        "status": "state_definition_loaded",
+        "file": "config/colorado-course-engine.mjs",
+        "authoredCourseId": "co-practical-applications-32-v1",
+        "authoredVersion": "1.0-submission-draft",
+        "studentCompatible": false,
+        "missing": "State engine can describe/score authored material but has no registered student delivery, authenticated persistence and version bridge for this offering."
+      },
+      "runtimeRegistered": false,
+      "compatibility": "Authored state engine is not a verified student-runtime connection.",
+      "missingConnection": "State engine can describe/score authored material but has no registered student delivery, authenticated persistence and version bridge for this offering. Register the exact co-practical-applications-32 course/version with its state delivery and progress adapter, then verify enrollment, timing, assessments and persistence. Do not activate from file presence.",
+      "approvalClaim": false,
+      "completeCurriculumClaim": false
+    },
+    {
+      "courseId": "ca-real-estate-principles-45",
+      "publicId": "ca-real-estate-principles-45",
+      "state": "CA",
+      "sourceRoot": "california/ca-real-estate-principles-45-v1",
+      "curriculumFiles": [
+        {
+          "path": "california/ca-real-estate-principles-45-v1/curriculum/lesson-01.md",
+          "sha256": "9f7686f02dbf4258fd37661f1f7c6ebdcc307f3181176a9a54006a631a8510e9",
+          "bytes": 74206
+        },
+        {
+          "path": "california/ca-real-estate-principles-45-v1/curriculum/lesson-02.md",
+          "sha256": "cab4db6bc8b7d811a4d976488add2d96e0fc04c21dfa3a802505414f34cc4409",
+          "bytes": 66540
+        },
+        {
+          "path": "california/ca-real-estate-principles-45-v1/curriculum/lesson-03.md",
+          "sha256": "300295621226d294d23b4a1583e5876c51ccd16ae6375874e063b83052e58803",
+          "bytes": 70780
+        },
+        {
+          "path": "california/ca-real-estate-principles-45-v1/curriculum/lesson-04.md",
+          "sha256": "cea1729d76a271e234299925c2e02bfc75f2ef8dfc69dacfcd022d35a25c95f9",
+          "bytes": 62598
+        },
+        {
+          "path": "california/ca-real-estate-principles-45-v1/curriculum/lesson-05.md",
+          "sha256": "7bd6f783a976b421db97bcd5f835087a10ec664faad788e42d25776347393d18",
+          "bytes": 72205
+        },
+        {
+          "path": "california/ca-real-estate-principles-45-v1/curriculum/lesson-06.md",
+          "sha256": "fd5bb56085e57ec4e9b9e1b11db7887879b239ded4f542559e42cd65ee19eff0",
+          "bytes": 67773
+        },
+        {
+          "path": "california/ca-real-estate-principles-45-v1/curriculum/lesson-07.md",
+          "sha256": "4b81a1f1517a5547d3a5f7d6793ec77c0b477d0f42bb4e9520a4799f63815720",
+          "bytes": 69955
+        },
+        {
+          "path": "california/ca-real-estate-principles-45-v1/curriculum/lesson-08.md",
+          "sha256": "68b77722ca7bfdb4680a7428abfe9f29f5f7184c5df043b6b265ae0a58e06f93",
+          "bytes": 67370
+        },
+        {
+          "path": "california/ca-real-estate-principles-45-v1/curriculum/lesson-09.md",
+          "sha256": "801077b1ec63cc3dd294abba3c25a7d60163d1fb21ae004d43659346a23c9b7f",
+          "bytes": 66609
+        },
+        {
+          "path": "california/ca-real-estate-principles-45-v1/curriculum/lesson-10.md",
+          "sha256": "1a1a08a79d9f0a6d797a7e5f59e79b0b80ccc56540e3b9d659e9b7710ff9ddd4",
+          "bytes": 66186
+        },
+        {
+          "path": "california/ca-real-estate-principles-45-v1/curriculum/lesson-11.md",
+          "sha256": "529cb4052b8da1c6df500d79377a77f2d36cc47e0068b0b4cf20f44701df328d",
+          "bytes": 65323
+        },
+        {
+          "path": "california/ca-real-estate-principles-45-v1/curriculum/lesson-12.md",
+          "sha256": "c1f5cc408328e0ac351e833096762f3a2ecdcbc25da416f859da43e982bf2a53",
+          "bytes": 67853
+        },
+        {
+          "path": "california/ca-real-estate-principles-45-v1/curriculum/lesson-13.md",
+          "sha256": "8ceb828a6fe70b7a4abe1c853854a5fb1f0fe15025a394037eb7c422c1bd5b7e",
+          "bytes": 64204
+        },
+        {
+          "path": "california/ca-real-estate-principles-45-v1/curriculum/lesson-14.md",
+          "sha256": "fa70e29f4fd0ff9fa61f6b4740f9fdfb37c5c8011788bb2b5d65040c3b74d645",
+          "bytes": 69205
+        },
+        {
+          "path": "california/ca-real-estate-principles-45-v1/curriculum/lesson-15.md",
+          "sha256": "941f4242c7978b7f0ce07f05f7d3b91ee801378bafd33d721d15c86b77129a57",
+          "bytes": 73438
+        }
+      ],
+      "curriculumStatus": "authored_material_present_review_required",
+      "engineCandidates": [
+        "config/california-course-engine.mjs"
+      ],
+      "engineInspection": {
+        "status": "exact_state_definition_unresolved",
+        "file": "config/california-course-engine.mjs",
+        "authoredCourseId": null,
+        "authoredVersion": null,
+        "studentCompatible": false,
+        "missing": "State engine can describe/score authored material but has no registered student delivery, authenticated persistence and version bridge for this offering."
+      },
+      "runtimeRegistered": true,
+      "compatibility": "registered_student_adapter",
+      "missingConnection": null,
+      "approvalClaim": false,
+      "completeCurriculumClaim": false
+    },
+    {
+      "courseId": "ca-real-estate-practice-45",
+      "publicId": "ca-real-estate-practice-45",
+      "state": "CA",
+      "sourceRoot": "california/ca-real-estate-practice-45-v1",
+      "curriculumFiles": [
+        {
+          "path": "california/ca-real-estate-practice-45-v1/curriculum/lesson-01.md",
+          "sha256": "d6a573400015f8d7bc66a4b9b45372534342fe43c1da1f5092906027bcfe4ce3",
+          "bytes": 55654
+        },
+        {
+          "path": "california/ca-real-estate-practice-45-v1/curriculum/lesson-02.md",
+          "sha256": "3c542cfd99c89b960c2ba6988a6422ce291b78eba90b5aa3d47337284c4c9e07",
+          "bytes": 55906
+        },
+        {
+          "path": "california/ca-real-estate-practice-45-v1/curriculum/lesson-03.md",
+          "sha256": "b13a20fa7d0fdea8aa2f626d04839a9a3c0ef586ec1984859990d960d32d3bf6",
+          "bytes": 53786
+        },
+        {
+          "path": "california/ca-real-estate-practice-45-v1/curriculum/lesson-04.md",
+          "sha256": "3becb436dc707d6c58aee3bae43d9caf7d54d09e8bd129cff6ec8fb28757bdf0",
+          "bytes": 54995
+        },
+        {
+          "path": "california/ca-real-estate-practice-45-v1/curriculum/lesson-05.md",
+          "sha256": "6614e8e27277f9709e1fe2afb0897d31e96b38891d4adc12a6d5faef47942884",
+          "bytes": 55936
+        },
+        {
+          "path": "california/ca-real-estate-practice-45-v1/curriculum/lesson-06.md",
+          "sha256": "6841987cacbb313bde139e22a9c25de4d875c27617c6ea62dd2fa58414d0368e",
+          "bytes": 54870
+        },
+        {
+          "path": "california/ca-real-estate-practice-45-v1/curriculum/lesson-07.md",
+          "sha256": "5e55892b0c93a6ca5624266c3c0563e14294d59691a352736478ebb2473dfddc",
+          "bytes": 53548
+        },
+        {
+          "path": "california/ca-real-estate-practice-45-v1/curriculum/lesson-08.md",
+          "sha256": "1fa65a16ad52cd6d519c730ed393c5cce8e3b6f1261e55c77f328840a4636bd1",
+          "bytes": 54619
+        },
+        {
+          "path": "california/ca-real-estate-practice-45-v1/curriculum/lesson-09.md",
+          "sha256": "e2506792dc36e1624481156d391b33846c87a0c9cf080cfa3cc1ace42200980c",
+          "bytes": 54864
+        },
+        {
+          "path": "california/ca-real-estate-practice-45-v1/curriculum/lesson-10.md",
+          "sha256": "e1c5b46867dfcf34f5327a5be35aa1290a2172398df03c259c25b73486c05993",
+          "bytes": 53141
+        },
+        {
+          "path": "california/ca-real-estate-practice-45-v1/curriculum/lesson-11.md",
+          "sha256": "8d9a0026e544a5234d61959c988f589df9cceba1cc33561f24ce6e3aa6802811",
+          "bytes": 54251
+        },
+        {
+          "path": "california/ca-real-estate-practice-45-v1/curriculum/lesson-12.md",
+          "sha256": "da69ad4b7accc512b55263a712a74d46be725f85c4a431a905eacd4aa25ce3f2",
+          "bytes": 56446
+        },
+        {
+          "path": "california/ca-real-estate-practice-45-v1/curriculum/lesson-13.md",
+          "sha256": "2d9d3e6a7c06923f10a219c84dac9d4371656acd5651a96761bfd33315e55ef5",
+          "bytes": 58050
+        },
+        {
+          "path": "california/ca-real-estate-practice-45-v1/curriculum/lesson-14.md",
+          "sha256": "3f86a990899d1916234264973ee96172f900edf268ac2fa1d869cbbe1823caaa",
+          "bytes": 65421
+        },
+        {
+          "path": "california/ca-real-estate-practice-45-v1/curriculum/lesson-15.md",
+          "sha256": "0c5ee9d3b21c2ed2be8464633d28fceca6d79c6dfc57ae9b04ad5fba73ff4d57",
+          "bytes": 53220
+        }
+      ],
+      "curriculumStatus": "authored_material_present_review_required",
+      "engineCandidates": [
+        "config/california-course-engine.mjs"
+      ],
+      "engineInspection": {
+        "status": "exact_state_definition_unresolved",
+        "file": "config/california-course-engine.mjs",
+        "authoredCourseId": null,
+        "authoredVersion": null,
+        "studentCompatible": false,
+        "missing": "State engine can describe/score authored material but has no registered student delivery, authenticated persistence and version bridge for this offering."
+      },
+      "runtimeRegistered": true,
+      "compatibility": "registered_student_adapter",
+      "missingConnection": null,
+      "approvalClaim": false,
+      "completeCurriculumClaim": false
+    },
+    {
+      "courseId": "ca-mortgage-loan-brokering-lending-45",
+      "publicId": "ca-mortgage-loan-brokering-lending-45",
+      "state": "CA",
+      "sourceRoot": "california/ca-mortgage-loan-brokering-lending-45-v1",
+      "curriculumFiles": [
+        {
+          "path": "california/ca-mortgage-loan-brokering-lending-45-v1/curriculum/lesson-01.md",
+          "sha256": "72a966cdbdfd47aea8bbb31bee6d5f18444aa31e70d00df265b376df3840d220",
+          "bytes": 48671
+        },
+        {
+          "path": "california/ca-mortgage-loan-brokering-lending-45-v1/curriculum/lesson-02.md",
+          "sha256": "93fc6b2c2d36d6e0780d4962d7a9d70361d88a02efc0507b5a2948d4cfe76c77",
+          "bytes": 44875
+        },
+        {
+          "path": "california/ca-mortgage-loan-brokering-lending-45-v1/curriculum/lesson-03.md",
+          "sha256": "3b78e079b11138787766203a41f17314acb1ff86303d9f8ff72d42b74d909f1d",
+          "bytes": 51297
+        },
+        {
+          "path": "california/ca-mortgage-loan-brokering-lending-45-v1/curriculum/lesson-04.md",
+          "sha256": "b4de8bcf0cf8e99c057aee3f2a10e6d0ef57be1393051f8e86e96be1f2b7e5c3",
+          "bytes": 51364
+        },
+        {
+          "path": "california/ca-mortgage-loan-brokering-lending-45-v1/curriculum/lesson-05.md",
+          "sha256": "a0df71881abb65dc003b75bfae642bf1dbecbaf1ef15523af30f24138052fae4",
+          "bytes": 50170
+        },
+        {
+          "path": "california/ca-mortgage-loan-brokering-lending-45-v1/curriculum/lesson-06.md",
+          "sha256": "e3dfe3193fcd5095e1977a55329be86b4830a458cdb3fef15f700051794335db",
+          "bytes": 50104
+        },
+        {
+          "path": "california/ca-mortgage-loan-brokering-lending-45-v1/curriculum/lesson-07.md",
+          "sha256": "aedb9fd9ac6a861800419b02ff8f07c4e6e5338f7e24540333f8d07760ea8d47",
+          "bytes": 53850
+        },
+        {
+          "path": "california/ca-mortgage-loan-brokering-lending-45-v1/curriculum/lesson-08.md",
+          "sha256": "4a2861151ba46721f791ce34ad054a0fbe9e9c17ab932eb7f43c805fde808b8f",
+          "bytes": 53092
+        },
+        {
+          "path": "california/ca-mortgage-loan-brokering-lending-45-v1/curriculum/lesson-09.md",
+          "sha256": "1be2b4a8b17a0d216d85a41280109eb6e08fde5b77a62d9c096a9d5f6231c360",
+          "bytes": 51310
+        },
+        {
+          "path": "california/ca-mortgage-loan-brokering-lending-45-v1/curriculum/lesson-10.md",
+          "sha256": "bb500980a09f010abef749cf9bea69b40c940e2021416130899afe4b01449e14",
+          "bytes": 51226
+        },
+        {
+          "path": "california/ca-mortgage-loan-brokering-lending-45-v1/curriculum/lesson-11.md",
+          "sha256": "ba55e52ff9c47ddfcd45dad86a5add76e9bcde3a46b7808f613646f16cd81eb6",
+          "bytes": 52695
+        },
+        {
+          "path": "california/ca-mortgage-loan-brokering-lending-45-v1/curriculum/lesson-12.md",
+          "sha256": "0630451df1eadd2552075b66c7888ac40f661ea9adf758da294b01afeabc536b",
+          "bytes": 53148
+        },
+        {
+          "path": "california/ca-mortgage-loan-brokering-lending-45-v1/curriculum/lesson-13.md",
+          "sha256": "8da855359fcaa146de1409beab70779e2867bf95f78c0f887923087f7c8000c9",
+          "bytes": 49054
+        },
+        {
+          "path": "california/ca-mortgage-loan-brokering-lending-45-v1/curriculum/lesson-14.md",
+          "sha256": "af569537abf61b1f48910e868b2372135bcf6854e4342763cc9a290da71f43d6",
+          "bytes": 57083
+        },
+        {
+          "path": "california/ca-mortgage-loan-brokering-lending-45-v1/curriculum/lesson-15.md",
+          "sha256": "8cfa78ac5fed2ed852ccc9f91022ef0ba52143998859fe21b8457defb912dbe4",
+          "bytes": 73024
+        }
+      ],
+      "curriculumStatus": "authored_material_present_review_required",
+      "engineCandidates": [
+        "config/california-course-engine.mjs"
+      ],
+      "engineInspection": {
+        "status": "exact_state_definition_unresolved",
+        "file": "config/california-course-engine.mjs",
+        "authoredCourseId": null,
+        "authoredVersion": null,
+        "studentCompatible": false,
+        "missing": "State engine can describe/score authored material but has no registered student delivery, authenticated persistence and version bridge for this offering."
+      },
+      "runtimeRegistered": true,
+      "compatibility": "registered_student_adapter",
+      "missingConnection": null,
+      "approvalClaim": false,
+      "completeCurriculumClaim": false
+    },
+    {
+      "courseId": "mi-salesperson-prelicensure-40-v1",
+      "publicId": "mi-salesperson-prelicensure-40-v1",
+      "state": "MI",
+      "sourceRoot": "michigan/mi-salesperson-prelicensure-40-v1",
+      "curriculumFiles": [
+        {
+          "path": "michigan/mi-salesperson-prelicensure-40-v1/curriculum/module-01.md",
+          "sha256": "89f88103148bea40363828542c3aa5eb520ecbf4380a1f4b0010c0e63bfb2490",
+          "bytes": 53664
+        },
+        {
+          "path": "michigan/mi-salesperson-prelicensure-40-v1/curriculum/module-02.md",
+          "sha256": "8a32f4673a051c11d5b1a998b563b92cc93d9ffa6d46b04e426b1fe22095ef88",
+          "bytes": 29356
+        },
+        {
+          "path": "michigan/mi-salesperson-prelicensure-40-v1/curriculum/module-03.md",
+          "sha256": "a35e3cebe183f6b53f01173690c15c6abe30dab505c1de948572bf2c9ec7ccef",
+          "bytes": 26388
+        },
+        {
+          "path": "michigan/mi-salesperson-prelicensure-40-v1/curriculum/module-04.md",
+          "sha256": "bbbe234b86c18440c2bef14514e5d215f95700028a7e62972daf480d111a366b",
+          "bytes": 26268
+        },
+        {
+          "path": "michigan/mi-salesperson-prelicensure-40-v1/curriculum/module-05.md",
+          "sha256": "7179b731efc45ecc515e319601b68a404d2a15c71c79cc4f26077532ef0e6f27",
+          "bytes": 26808
+        },
+        {
+          "path": "michigan/mi-salesperson-prelicensure-40-v1/curriculum/module-06.md",
+          "sha256": "2d61dcdcfd7e61064c6087ea9ca08b062f97437d09fe947ff5088c75adbf77c7",
+          "bytes": 25492
+        },
+        {
+          "path": "michigan/mi-salesperson-prelicensure-40-v1/curriculum/module-07.md",
+          "sha256": "e15121b56e7039aa18ce056e6c8bd216a6bed22e5ec3f3dae65ff4cb915b36f1",
+          "bytes": 29121
+        },
+        {
+          "path": "michigan/mi-salesperson-prelicensure-40-v1/curriculum/module-08.md",
+          "sha256": "7b1309bedf6572a25dd8bc484b58b752901579b13c4cc00d2773d5fbccd2c353",
+          "bytes": 25103
+        },
+        {
+          "path": "michigan/mi-salesperson-prelicensure-40-v1/curriculum/module-09.md",
+          "sha256": "46d9138e5fb111cc0911e5881fc46ad283a0c1e88aab4ee1463d68d97baaa670",
+          "bytes": 22656
+        },
+        {
+          "path": "michigan/mi-salesperson-prelicensure-40-v1/curriculum/module-10.md",
+          "sha256": "7ef6e46ccce008a3bf6554ee0d4ea70e70510fccf6a7fcf6f1b4160240446775",
+          "bytes": 23710
+        }
+      ],
+      "curriculumStatus": "authored_material_present_review_required",
+      "engineCandidates": [
+        "config/michigan-course-engine.mjs"
+      ],
+      "engineInspection": {
+        "status": "state_definition_loaded",
+        "file": "config/michigan-course-engine.mjs",
+        "authoredCourseId": "mi-salesperson-prelicensure-40-v1",
+        "authoredVersion": "1.0-submission-draft",
+        "studentCompatible": false,
+        "missing": "State engine can describe/score authored material but has no registered student delivery, authenticated persistence and version bridge for this offering."
+      },
+      "runtimeRegistered": false,
+      "compatibility": "Authored state engine is not a verified student-runtime connection.",
+      "missingConnection": "State engine can describe/score authored material but has no registered student delivery, authenticated persistence and version bridge for this offering. Register the exact mi-salesperson-prelicensure-40-v1 course/version with its state delivery and progress adapter, then verify enrollment, timing, assessments and persistence. Do not activate from file presence.",
+      "approvalClaim": false,
+      "completeCurriculumClaim": false
+    },
+    {
+      "courseId": "ak-salesperson-prelicense-40-v1",
+      "publicId": "ak-salesperson-prelicense-40-v1",
+      "state": "AK",
+      "sourceRoot": "alaska/ak-salesperson-prelicense-40-v1",
+      "curriculumFiles": [
+        {
+          "path": "alaska/ak-salesperson-prelicense-40-v1/curriculum/module-01.md",
+          "sha256": "378bf45c125f41cc63b68d99669149cbe0438620c6c34c47ef16fb4cc9ddbb31",
+          "bytes": 28641
+        },
+        {
+          "path": "alaska/ak-salesperson-prelicense-40-v1/curriculum/module-02.md",
+          "sha256": "3aa164e9b7641dd484cbbbde8a95830b2b57907736145a913f44749d0761c0c8",
+          "bytes": 15701
+        },
+        {
+          "path": "alaska/ak-salesperson-prelicense-40-v1/curriculum/module-03.md",
+          "sha256": "2bc7f73fc8442539cf09e3098c6351e1544177809d329bda6eb5724701552ba9",
+          "bytes": 17571
+        },
+        {
+          "path": "alaska/ak-salesperson-prelicense-40-v1/curriculum/module-04.md",
+          "sha256": "d6be3ef99f39cf6f62a3fbf2d96e0ff46408c153dfc3f7e3756b4d6f9c5a0e89",
+          "bytes": 15796
+        },
+        {
+          "path": "alaska/ak-salesperson-prelicense-40-v1/curriculum/module-05.md",
+          "sha256": "0ad95456cfac2f67ff63cb188e210e71129177ab626613eff1417b6ac004a2b5",
+          "bytes": 53236
+        },
+        {
+          "path": "alaska/ak-salesperson-prelicense-40-v1/curriculum/module-06.md",
+          "sha256": "326d4f7ff825bed5ffe22cdab973eda473b1434cad0125d56a36ce4a495ad374",
+          "bytes": 44515
+        },
+        {
+          "path": "alaska/ak-salesperson-prelicense-40-v1/curriculum/module-07.md",
+          "sha256": "5cebca06af1af44de70c5142e624f9b61a95b379536c6552521d3555f09d6b1b",
+          "bytes": 65063
+        },
+        {
+          "path": "alaska/ak-salesperson-prelicense-40-v1/curriculum/module-08.md",
+          "sha256": "39a1fd37b0d1dcafdff717419f6f6dd4822edc284d5189351a33efa02b256829",
+          "bytes": 27594
+        }
+      ],
+      "curriculumStatus": "authored_material_present_review_required",
+      "engineCandidates": [
+        "config/alaska-course-engine.mjs"
+      ],
+      "engineInspection": {
+        "status": "state_definition_loaded",
+        "file": "config/alaska-course-engine.mjs",
+        "authoredCourseId": "ak-salesperson-prelicense-40-v1",
+        "authoredVersion": "1.0-submission-draft",
+        "studentCompatible": false,
+        "missing": "State engine can describe/score authored material but has no registered student delivery, authenticated persistence and version bridge for this offering."
+      },
+      "runtimeRegistered": false,
+      "compatibility": "Authored state engine is not a verified student-runtime connection.",
+      "missingConnection": "State engine can describe/score authored material but has no registered student delivery, authenticated persistence and version bridge for this offering. Register the exact ak-salesperson-prelicense-40-v1 course/version with its state delivery and progress adapter, then verify enrollment, timing, assessments and persistence. Do not activate from file presence.",
+      "approvalClaim": false,
+      "completeCurriculumClaim": false
+    }
+  ]
+}
