@@ -194,7 +194,9 @@ test('authenticated admin snapshot projects database runtime without leaking its
     };
     try {
       const result = await snapshot({ scopeStates: ['US'], matching: [{ actor_role: 'support', scope_state: 'US' }] });
-      assert.equal(result.datasets.nmlsProgress.rows[0].phase, 'source');
+      assert.equal(result.datasets.nmlsProgress.rows[0].phase, 'unverified');
+      assert.equal(result.datasets.nmlsProgress.rows[0].completedUnits, null);
+      assert.equal(result.datasets.nmlsActivity.rows.length, 0);
       assert.doesNotMatch(JSON.stringify(result), /NEVER_IN_OVERVIEW|"runtime"|"answers"|"selection"/);
       assert.ok(paths.includes('nmls_training_attempts'));
       assert.equal(result.datasets.payments, undefined);
@@ -228,7 +230,7 @@ test('existing admin renderer consumes current readiness and escapes hostile rec
   assert.match(html,/19 of 19 verified against retained hashes/);
   assert.match(html,/19 bodies reviewed; record matches this acquisition/);
   assert.match(html,/2 PDF originals remain missing/);
-  assert.match(html,/Independent human review[\s\S]*?Not completed/);
+  assert.match(html,/Independent human review[\s\S]*?No human signoff in the source manifest; see current version evidence/);
   assert.match(html,/AI desk review is not human review/);
   data.nmls.officialEvidence.sources[0].url='javascript:alert(1)';
   data.nmls.officialEvidence.sources[0].title='<img src=x onerror=alert(1)>';
@@ -242,3 +244,12 @@ test('existing admin renderer consumes current readiness and escapes hostile rec
   context.renderTest(data);
   assert.match(elements.get('#nmlsBody').innerHTML, /readiness unavailable/);
 });
+
+ test('NMLS recent activity never falls back to California/Texas access records',()=>{
+  const elements=new Map();const document={addEventListener(){},querySelector(selector){if(!elements.has(selector))elements.set(selector,{addEventListener(){},innerHTML:'',value:''});return elements.get(selector);}};
+  const script=fs.readFileSync(new URL('../public/statecourse/admin/console/workspace.js',import.meta.url),'utf8');
+  const context=vm.createContext({document,console,URLSearchParams});
+  vm.runInContext(script.replace(/^import[^\n]+\n/,'')+'\nglobalThis.renderTest=fixture=>{data=fixture;renderStudents();};',context);
+  context.renderTest({datasets:{enrollments:source([{id:'e',course_id:identity.id,student_id:'p',last_course_accessed_at:'2001-01-01'}]),people:source([]),courses:source([course]),recentAccess:source([{enrollment_id:'e',occurred_at:'2002-01-01'}]),nmlsActivity:source([])}});
+  const html=elements.get('#studentsBody').innerHTML;assert.match(html,/No recent record/);assert.doesNotMatch(html,/2001|2002/);
+ });

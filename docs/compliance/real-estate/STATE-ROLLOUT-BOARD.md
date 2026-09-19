@@ -71,3 +71,7 @@ A folder, draft package, test, price object, or public route does not mean submi
 - 12 additional states have partial regulator research in the registry but no catalog course.
 - Florida, Georgia, and Illinois contain repository work that conflicts with the registry's Not Started/Coming Soon status; reconcile before changing readiness.
 - No state is inferred to be submitted, approved, commerce-ready, or live.
+
+## Course-by-course learning coverage — 2026-09-19
+
+The unified console carries a build-generated [source manifest](../../../config/console-course-evidence.json) for all 30 catalog courses. The 26 unconnected courses have individually hashed curriculum files: 21 load a specific authored state-engine definition and 5 have separate Texas authoring/reviewer engines. These are not authenticated student runtimes. Each record identifies its authored identity, source directory, engine inspection and missing version/delivery/persistence connection. The four registered Real Estate runtimes remain separate; no additional course is activated. Florida, Georgia, Illinois, Kansas and research entries remain outside operational course totals. See [local acceptance record](../../admin/UNIFIED-ADMIN-ACCEPTANCE.md).

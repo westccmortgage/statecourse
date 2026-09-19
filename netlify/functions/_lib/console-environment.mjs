@@ -1,3 +1,4 @@
+import { stripeSecretKeyMode } from '../../../lib/stripe-contract.mjs';
 export const WEEKLY_SCHEDULE_LABEL = 'Every Monday at 16:00 UTC';
 
 export function environmentStatus() {
@@ -5,6 +6,7 @@ export function environmentStatus() {
   return {
     stripeMode: get('STRIPE_MODE') || 'not_configured',
     liveEnabled: get('STATECOURSE_LIVE_PAYMENTS_ENABLED') === 'true',
+    stripeTestKeyValid: stripeSecretKeyMode(get('STRIPE_SECRET_KEY_TEST')) === 'test',
     stripeTestConnected: Boolean(get('STRIPE_SECRET_KEY_TEST') && get('STRIPE_WEBHOOK_SECRET_TEST')),
     cloudflareUploadConfigured: Boolean(get('CLOUDFLARE_ACCOUNT_ID') && get('CLOUDFLARE_STREAM_API_TOKEN')),
     cloudflareSigningConfigured: Boolean(get('CLOUDFLARE_STREAM_KEY_ID') && get('CLOUDFLARE_STREAM_SIGNING_JWK') && get('CLOUDFLARE_STREAM_CUSTOMER_CODE')),

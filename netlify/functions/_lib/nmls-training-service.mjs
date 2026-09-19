@@ -178,6 +178,42 @@ function contextState(c, actor, enrollment, course, definition) {
   return { state: s, child };
 }
 
+// Administrative projection reuses the learner runtime's full history validation.
+// It deliberately returns neither lesson bodies, item IDs, selections nor answers.
+export function nmlsAdministrativeProgress(row, enrollment, now = Date.now()) {
+  const course = getNmlsReviewCourse(NMLS_TRAINING_SOURCE_KEY);
+  const definition = trainingDefinition(NMLS_TRAINING_SOURCE_KEY);
+  if (row.enrollment_id !== enrollment.id || row.student_id !== enrollment.student_id ||
+      enrollment.course_id !== NMLS_TRAINING_COURSE_ID || enrollment.course_version !== NMLS_TRAINING_COURSE_VERSION ||
+      enrollment.state !== 'US' || enrollment.enrollment_origin !== 'training' ||
+      enrollment.compliance_credit_eligible !== false) fail('scope_mismatch');
+  const { state: s } = contextState({ studentId: row.student_id, enrollmentId: row.enrollment_id,
+    courseId: row.course_id, courseVersion: row.course_version, reviewRole: enrollment.review_role ?? null,
+    contentDigest: NMLS_TRAINING_COURSE.contentDigest, definitionDigest: definition.digest,
+    revision: row.revision, runtime: row.runtime, event: null, serverTimeMs: now },
+  enrollment.student_id, enrollment.id, course, definition);
+  const source = s?.source;
+  const remediation = s?.remediation?.runtime;
+  return {
+    adapter: 'nmls_training', available: true, phase: s?.phase || 'not_started',
+    courseVersion: row.course_version, revision: row.revision,
+    completed: source?.completedUnitIds.length || 0, total: course.modules.reduce((n, m) => n + m.units.length, 0),
+    unit: 'lessons', completedModules: source?.passedModuleIds.length || 0, totalModules: course.modules.length,
+    modules: course.modules.map(m => ({ id: m.id, title: m.title, completed: source?.passedModuleIds.includes(m.id) || false,
+      completedLessons: m.units.filter(u => source?.completedUnitIds.includes(u.id)).length, totalLessons: m.units.length })),
+    assessments: (s?.finals || []).map((f, i) => ({ attempt: i + 1,
+      status: f.result ? f.result.passed ? 'passed' : 'failed' : 'in_progress',
+      correct: f.result?.correct ?? null, total: f.result?.total ?? null })),
+    remediation: { status: s?.phase === 'remediation_required' ? 'required' : remediation?.status || 'not_required',
+      completedLessons: remediation?.completedUnitIds.length ?? null, completedModules: remediation?.passedModuleIds.length ?? null },
+    trainingCompleted: s?.phase === 'passed', creditEligible: false, certificateEligible: false,
+    safetyGate: 'Free-training runtime cannot issue NMLS credit, certificates or reporting.',
+    reviewerRole: enrollment.review_role || null, readOnly: enrollment.review_role === 'regulator_reviewer',
+    lastActivity: row.revision > 0 && Number.isFinite(Date.parse(row.updated_at)) ? row.updated_at : null,
+    source: 'nmls_training_attempts; validated against pinned course and assessment definitions',
+  };
+}
+
 function publicResult(result) {
   return result ? { passed: result.passed, correct: result.correct, total: result.total, percent: result.percent,
     requiredCorrect: result.requiredCorrect, disposition: result.disposition,

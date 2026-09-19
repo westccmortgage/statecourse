@@ -1,3 +1,4 @@
+import { withNmlsMedia } from './_lib/nmls-media.mjs';
 import { requireStudentSession, sessionCookies } from './_lib/student-session.mjs';
 import { requireSameOrigin } from './_lib/http.mjs';
 import { rpc } from './_lib/db.mjs';
@@ -33,7 +34,7 @@ export default async function handler(request: Request): Promise<Response> {
     const auth = await requireStudentSession(event);
     if (auth.refreshedSession) for (const cookie of sessionCookies(auth.refreshedSession)) headers.append('set-cookie', cookie);
     const result = await executeNmlsTraining(input, auth.student.id, { rpc });
-    return reply(result.status, result.body);
+    return reply(result.status, await withNmlsMedia(result.body));
   } catch (error) {
     const result = nmlsTrainingPublicError(error); return reply(result.status, result.body);
   }

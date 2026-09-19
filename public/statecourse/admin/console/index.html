@@ -64,6 +64,7 @@
       <div id="console" class="workspace-layout" hidden>
         <nav class="tabs workspace-nav" aria-label="Console sections">
 <button type="button" class="tab" data-panel="overviewPanel" aria-selected="true">Overview</button>
+<button type="button" class="tab" data-panel="schoolPanel" aria-selected="false" hidden>School control center</button>
 <button type="button" class="tab" data-panel="coursesPanel" aria-selected="false">Courses</button>
 <button type="button" class="tab" data-panel="nmlsPanel" aria-selected="false">Mortgage / NMLS</button>
 <button type="button" class="tab" data-panel="studentsPanel" aria-selected="false">Students</button>
@@ -81,6 +82,7 @@
 <div class="workspace-content"><p id="workspaceMessage" class="message" role="status" aria-live="polite"></p>
 
 <section id="overviewPanel" class="panel"><div class="panel-heading"><h2>Overview</h2><button type="button" data-work="refresh">Refresh</button></div><div id="overviewBody"></div></section>
+<section id="schoolPanel" class="panel" hidden><div class="panel-heading"><h2>StateCourse school control center</h2><button id="schoolRefresh" type="button">Refresh</button></div><div id="schoolBody"></div></section>
 <section id="coursesPanel" class="panel" hidden><h2>Courses</h2><div class="filter-row"><label>Search courses<input id="courseSearch" type="search"></label><label>State<select id="courseState"><option value="">All states</option></select></label></div><div id="courseList"></div><div id="courseWorkspace" hidden></div></section>
 <section id="nmlsPanel" class="panel" hidden>
   <div class="panel-heading"><div><p class="eyebrow">Mortgage education</p><h2>NMLS readiness</h2></div><button type="button" data-work="refresh">Refresh</button></div>
@@ -265,6 +267,7 @@
     </main>
 
     <script src="workspace.js" type="module"></script>
+    <script src="school.js" type="module"></script>
     <script src="console.js" type="module"></script>
   </body>
 </html>

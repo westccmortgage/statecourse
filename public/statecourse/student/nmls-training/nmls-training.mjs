@@ -2,6 +2,8 @@ import { TrainingClient } from './training-client.mjs';
 import { escapeHtml as esc, renderLessonMarkdown } from '../nmls-review/lesson-markdown.mjs';
 import { presentOptions } from '../nmls-review/question-presentation.mjs';
 
+const lessonMedia=(lesson,enrollmentId)=>(lesson?.videos||[]).map(v=>`<course-video provider="cloudflare-stream" asset-key="${esc(v.assetKey)}" enrollment-id="${esc(enrollmentId)}" label="${esc(v.label)}"></course-video>`).join('');
+
 const messages = {
   connection_interrupted: 'Connection interrupted. The last action is not confirmed. Your answers remain on this page. Use Retry safely before continuing.',
   nmls_training_revision_conflict: 'Progress changed on another device. Reload saved progress, then explicitly continue here.',
@@ -75,7 +77,7 @@ export function mountTrainingWorkspace({ document: doc = globalThis.document, wi
     if (contentKey !== key) {
       contentKey = key;
       const lesson = lessons.find(l => l.id === selected), module = modules.find(m => `questions:${m.id}` === selected);
-      el('lesson').innerHTML = lesson ? renderLessonMarkdown(lesson.content) : `<h2>${esc(module.title)} — module questions</h2>`;
+      el('lesson').innerHTML = lesson ? renderLessonMarkdown(lesson.content)+lessonMedia(lesson,s.enrollmentId) : `<h2>${esc(module.title)} — module questions</h2>`;
       const questions = lesson ? [lesson.question] : module.formativeQuestions;
       el('questionArea').hidden = false;
       el('questionArea').innerHTML = `<h2>${lesson ? 'Unit activity' : 'Module questions'} · read-only</h2>${questions.map((q, i) => `<section><h3>${i + 1}. ${esc(q.stem)}</h3><ol type="A">${q.options.map(o => `<li>${esc(o.text)}</li>`).join('')}</ol></section>`).join('')}`;
@@ -158,7 +160,7 @@ export function mountTrainingWorkspace({ document: doc = globalThis.document, wi
     if (contentKey !== key) {
       const previous = contentKey; contentKey = key;
       el('formError').hidden = true;
-      el('lesson').innerHTML = !showQuiz && !showFinal && lesson ? renderLessonMarkdown(lesson.content) : '';
+      el('lesson').innerHTML = !showQuiz && !showFinal && lesson ? renderLessonMarkdown(lesson.content)+lessonMedia(lesson,s.enrollmentId) : '';
       el('questionArea').hidden = showQuiz || showFinal || !lesson || lesson.id !== p.currentUnitId;
       el('questionArea').innerHTML = !el('questionArea').hidden ? `<h2>Apply what you read</h2><form id="unitForm">${questionHtml(lesson.question, 'choice')}<button type="submit">Check my answer</button></form>` : '';
       el('quizArea').hidden = !showQuiz;

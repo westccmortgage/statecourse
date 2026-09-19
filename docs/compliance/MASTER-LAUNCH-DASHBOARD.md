@@ -8,6 +8,10 @@ Last verified: 2026-09-19. Target: **NMLS launch in October 2026**. This is an o
 | B. Stripe / Commerce | Re-verify existing test infrastructure; live mode remains off | **VERIFY / NOT LIVE** | Correct account and current test configuration unverified; product/price mapping incomplete; no current sandbox purchase/refund/duplicate-webhook E2E evidence; no approved sellable NMLS product | Authorized Stripe test-account access; owner pricing decisions; regulator approvals before any regulated sale | Read-only account verification; reconcile catalog to test products/prices; run approved sandbox E2E later; preserve payment/education-state separation | Current Stripe account/session/config evidence | Payment architecture plus historical sandbox record | [Stripe Readiness](commerce/STRIPE-READINESS.md) | 2026-09-19 |
 | C. Real Estate Education | Research, course build, and draft application packages by state | **DEVELOPMENT / NO APPROVALS EVIDENCED** | Requirements incomplete in many states; packages are drafts; no submission, approval, commerce E2E, or live evidence | State regulators; approved instructors/reviewers; owner filing and pricing decisions | Reconcile registry with repository work; finish highest-priority state packages; keep enrollment/payment/live off | Regulator answers and future application decisions | State registry, catalog, state folders, and tests | [State Rollout Board](real-estate/STATE-ROLLOUT-BOARD.md) | 2026-09-19 |
 
+## Unified Admin implementation — local acceptance, 2026-09-19
+
+One existing console now has a school hierarchy, discipline-specific learning and regulatory projections, version-scoped evidence and reviewer workflows, code/database media readiness, completion/reporting projections and per-offering commerce gates. See [implementation and acceptance record](../admin/UNIFIED-ADMIN-ACCEPTANCE.md). **BUILT / LOCAL VERIFICATION ONLY**: migration 027 and deployment are not applied to production; no course, payment mode, approval or credit was activated.
+
 ## Operating priorities
 
 1. NMLS credentials and BioSig dependency.
