@@ -133,6 +133,11 @@
   status = 200
 
 [[redirects]]
+  from = "/admin/ai"
+  to = "/admin/ai/index.html"
+  status = 200
+
+[[redirects]]
   from = "/student"
   to = "/student/index.html"
   status = 200
@@ -265,6 +270,11 @@
 [[redirects]]
   from = "/api/stripe/webhook"
   to = "/.netlify/functions/stripe-webhook"
+  status = 200
+
+[[redirects]]
+  from = "/api/admin/ai-revenue"
+  to = "/.netlify/functions/admin-ai-revenue"
   status = 200
 
 [[redirects]]
