@@ -44,9 +44,10 @@ async function stripe(path, { method = "GET", params, idempotencyKey } = {}) {
 export const handler = async (event) => {
   try {
     if (event.httpMethod !== "POST") return json(405, { error: "method_not_allowed" });
-    const isBranchDeploy = process.env.CONTEXT === "branch-deploy" && process.env.BRANCH === BRANCH;
-    const isPullRequestPreview = process.env.CONTEXT === "deploy-preview";
-    if (!isBranchDeploy && !isPullRequestPreview) {
+    const requestHost = String(event.headers?.host || event.headers?.Host || "").toLowerCase();
+    const isExpectedPreviewHost = requestHost === "deploy-preview-20--chipper-maamoul-a2b9d5.netlify.app";
+    const isExpectedBranchHost = requestHost === "work-statecourse-ai-sales-enablement--chipper-maamoul-a2b9d5.netlify.app";
+    if (!isExpectedPreviewHost && !isExpectedBranchHost) {
       return json(403, { error: "provisioning_branch_only" });
     }
     if (!authorized(event)) return json(403, { error: "forbidden" });
