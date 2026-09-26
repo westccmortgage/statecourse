@@ -44,7 +44,9 @@ async function stripe(path, { method = "GET", params, idempotencyKey } = {}) {
 export const handler = async (event) => {
   try {
     if (event.httpMethod !== "POST") return json(405, { error: "method_not_allowed" });
-    if (!["branch-deploy", "deploy-preview"].includes(process.env.CONTEXT) || process.env.BRANCH !== BRANCH) {
+    const isBranchDeploy = process.env.CONTEXT === "branch-deploy" && process.env.BRANCH === BRANCH;
+    const isPullRequestPreview = process.env.CONTEXT === "deploy-preview" && process.env.REVIEW_ID === "20";
+    if (!isBranchDeploy && !isPullRequestPreview) {
       return json(403, { error: "provisioning_branch_only" });
     }
     if (!authorized(event)) return json(403, { error: "forbidden" });
