@@ -45,7 +45,7 @@ export const handler = async (event) => {
   try {
     if (event.httpMethod !== "POST") return json(405, { error: "method_not_allowed" });
     const isBranchDeploy = process.env.CONTEXT === "branch-deploy" && process.env.BRANCH === BRANCH;
-    const isPullRequestPreview = process.env.CONTEXT === "deploy-preview" && process.env.REVIEW_ID === "20";
+    const isPullRequestPreview = process.env.CONTEXT === "deploy-preview";
     if (!isBranchDeploy && !isPullRequestPreview) {
       return json(403, { error: "provisioning_branch_only" });
     }
