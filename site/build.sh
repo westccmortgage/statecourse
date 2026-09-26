@@ -42,6 +42,8 @@ test -f dist/real-estate/oklahoma/pre-license/basic/index.html
 test -f dist/data/launch-course-frameworks.json
 test -f dist/enroll/index.html
 test -f dist/admin/payments/index.html
+test -f dist/admin/ai/index.html
+test -f dist/admin/ai/ai-admin.js
 test -f dist/admin/michigan-course/index.html
 test -f dist/admin/michigan-course/michigan-course.js
 test -f dist/admin/michigan-review/index.html
@@ -63,6 +65,10 @@ test -f dist/admin/console/build.json
 test -f dist/admin/console/index.html
 test -f dist/admin/console/console.js
 test -f dist/admin/console/console.css
+test -f dist/ai/index.html
+test -f dist/ai/plans/index.html
+test -f dist/ai/plans/plans.js
+test -f dist/student/ai-account.js
 test -f dist/student/index.html
 test -f dist/student/sign-in/index.html
 test -f dist/student/register/index.html

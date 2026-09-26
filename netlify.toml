@@ -63,6 +63,11 @@
     Cache-Control = "no-store"
 
 [[headers]]
+  for = "/ai/*"
+  [headers.values]
+    Cache-Control = "no-store"
+
+[[headers]]
   for = "/student/*"
   [headers.values]
     Cache-Control = "no-store, private"
@@ -115,6 +120,21 @@
 [[redirects]]
   from = "/admin/payments"
   to = "/admin/payments/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/ai"
+  to = "/ai/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/ai/plans"
+  to = "/ai/plans/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/admin/ai"
+  to = "/admin/ai/index.html"
   status = 200
 
 [[redirects]]
@@ -233,8 +253,33 @@
   status = 200
 
 [[redirects]]
+  from = "/api/ai/checkout"
+  to = "/.netlify/functions/create-ai-checkout"
+  status = 200
+
+[[redirects]]
+  from = "/api/ai/account"
+  to = "/.netlify/functions/ai-account"
+  status = 200
+
+[[redirects]]
+  from = "/api/ai/billing-portal"
+  to = "/.netlify/functions/create-ai-billing-portal"
+  status = 200
+
+[[redirects]]
+  from = "/api/stripe/ai-webhook"
+  to = "/.netlify/functions/stripe-ai-webhook"
+  status = 200
+
+[[redirects]]
   from = "/api/stripe/webhook"
   to = "/.netlify/functions/stripe-webhook"
+  status = 200
+
+[[redirects]]
+  from = "/api/admin/ai-revenue"
+  to = "/.netlify/functions/admin-ai-revenue"
   status = 200
 
 [[redirects]]

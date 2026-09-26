@@ -1,10 +1,101 @@
 import { stripeEnvironment } from "./_lib/env.mjs";
 import { dbRequest, rpc } from "./_lib/db.mjs";
-import { rawBody, verifyStripeSignature } from "./_lib/stripe.mjs";
+import { rawBody, stripeRequest, verifyStripeSignature } from "./_lib/stripe.mjs";
 import { handleError, method, response } from "./_lib/http.mjs";
 import { HANDLED_STRIPE_EVENTS, reconcile } from "../../lib/stripe-contract.mjs";
 
 const idOf = (value) => (typeof value === "string" ? value : value?.id ?? null);
+const UUID=/^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
+const AI_EVENT_TYPES=new Set([
+  "checkout.session.completed","checkout.session.async_payment_succeeded","checkout.session.async_payment_failed","checkout.session.expired",
+  "customer.subscription.created","customer.subscription.updated","customer.subscription.deleted",
+  "invoice.paid","invoice.payment_failed"
+]);
+
+async function loadSubscription(id){
+  if(!id) return null;
+  return stripeRequest(`/subscriptions/${encodeURIComponent(id)}?expand[]=items.data.price`);
+}
+
+async function detectAiEvent(event){
+  if(!AI_EVENT_TYPES.has(event.type)) return { isAi:false, subscription:null };
+  const object=event.data?.object||{};
+  if(event.type.startsWith("customer.subscription.")){
+    return { isAi:object.metadata?.product_type==="ai_subscription",subscription:object };
+  }
+  if(event.type.startsWith("checkout.session.")){
+    return { isAi:object.mode==="subscription"&&object.metadata?.product_type==="ai_subscription",subscription:null };
+  }
+  const subscriptionId=idOf(object.subscription)||idOf(object.parent?.subscription_details?.subscription);
+  const subscription=await loadSubscription(subscriptionId);
+  return { isAi:subscription?.metadata?.product_type==="ai_subscription",subscription };
+}
+
+async function processAiEvent(event,mode,preloadedSubscription){
+  const object=event.data.object;
+  const attemptId=object.metadata?.checkout_attempt_id||preloadedSubscription?.metadata?.checkout_attempt_id||null;
+  if(["checkout.session.async_payment_failed","checkout.session.expired"].includes(event.type)){
+    if(UUID.test(attemptId||"")){
+      await dbRequest(`ai_checkout_attempts?id=eq.${encodeURIComponent(attemptId)}`,{
+        method:"PATCH",prefer:"return=minimal",
+        body:{status:event.type==="checkout.session.expired"?"expired":"payment_failed",updated_at:new Date().toISOString()}
+      });
+      await rpc("release_ai_founding_slot",{p_checkout_attempt_id:attemptId});
+    }
+    return;
+  }
+
+  let subscription=preloadedSubscription;
+  if(!subscription){
+    const subscriptionId=idOf(object.subscription)||(event.type.startsWith("customer.subscription.")?object.id:null);
+    subscription=event.type.startsWith("customer.subscription.")?object:await loadSubscription(subscriptionId);
+  }
+  if(!subscription) return;
+
+  const studentId=subscription.metadata?.student_id||object.metadata?.student_id;
+  const checkoutAttemptId=subscription.metadata?.checkout_attempt_id||object.metadata?.checkout_attempt_id;
+  if(!UUID.test(studentId||"")||!UUID.test(checkoutAttemptId||"")) throw new Error("ai_subscription_metadata_invalid");
+
+  if(event.type.startsWith("invoice.")){
+    await dbRequest("ai_payments?on_conflict=stripe_invoice_id",{
+      method:"POST",prefer:"resolution=merge-duplicates,return=minimal",
+      body:{
+        stripe_invoice_id:object.id,
+        student_id:studentId,
+        stripe_subscription_id:subscription.id,
+        stripe_mode:mode,
+        amount_paid:object.amount_paid||0,
+        currency:String(object.currency||"usd").toLowerCase(),
+        status:event.type==="invoice.paid"?"paid":"payment_failed",
+        paid_at:event.type==="invoice.paid"?new Date(event.created*1000).toISOString():null,
+        updated_at:new Date().toISOString()
+      }
+    });
+  }
+
+  const priceId=idOf(subscription.items?.data?.[0]?.price);
+  if(!priceId) throw new Error("ai_subscription_price_missing");
+
+  let status=subscription.status;
+  if(event.type==="invoice.payment_failed") status="past_due";
+  if(event.type==="customer.subscription.deleted") status="canceled";
+  const periodEnd=subscription.current_period_end
+    ? new Date(subscription.current_period_end*1000).toISOString()
+    : null;
+
+  await rpc("apply_ai_subscription_state",{
+    p_event_created:event.created,
+    p_student_id:studentId,
+    p_checkout_attempt_id:checkoutAttemptId,
+    p_mode:mode,
+    p_subscription_id:subscription.id,
+    p_customer_id:idOf(subscription.customer),
+    p_price_id:priceId,
+    p_status:status,
+    p_current_period_end:periodEnd,
+    p_cancel_at_period_end:subscription.cancel_at_period_end===true
+  });
+}
 
 async function processEvent(event, mode) {
   const object = event.data.object;
@@ -183,22 +274,32 @@ export const handler = async (event) => {
     if (stripeEvent.livemode !== (mode === "live")) {
       return response(400, { error: "stripe_event_mode_mismatch" });
     }
-    const claimed = await rpc("claim_stripe_event", {
-      p_event_id: stripeEvent.id,
-      p_event_type: stripeEvent.type,
-      p_mode: mode,
-      p_object_id: stripeEvent.data?.object?.id || null,
-      p_created_at: new Date(stripeEvent.created * 1000).toISOString(),
-    });
+    const ai=await detectAiEvent(stripeEvent);
+    const claimed = ai.isAi
+      ? await rpc("claim_ai_stripe_event", {
+          p_event_id:stripeEvent.id,p_event_type:stripeEvent.type,p_mode:mode,
+          p_object_id:stripeEvent.data?.object?.id||null,p_event_created:stripeEvent.created
+        })
+      : await rpc("claim_stripe_event", {
+          p_event_id: stripeEvent.id,
+          p_event_type: stripeEvent.type,
+          p_mode: mode,
+          p_object_id: stripeEvent.data?.object?.id || null,
+          p_created_at: new Date(stripeEvent.created * 1000).toISOString(),
+        });
     if (claimed !== true) return response(200, { received: true, duplicate: true });
 
     try {
-      await processEvent(stripeEvent, mode);
-      await reconcileAgainstRecord(stripeEvent, stripeEvent.data?.object ?? {});
-      await rpc("complete_stripe_event", { p_event_id: stripeEvent.id });
+      if(ai.isAi) await processAiEvent(stripeEvent,mode,ai.subscription);
+      else {
+        await processEvent(stripeEvent, mode);
+        await reconcileAgainstRecord(stripeEvent, stripeEvent.data?.object ?? {});
+      }
+      await rpc(ai.isAi?"complete_ai_stripe_event":"complete_stripe_event", ai.isAi?{p_event_id:stripeEvent.id}:{p_event_id:stripeEvent.id});
       return response(200, { received: true });
     } catch (error) {
-      await rpc("fail_stripe_event", { p_event_id: stripeEvent.id, p_error_code: "processing_failed" });
+      if(ai.isAi) await rpc("fail_ai_stripe_event",{p_event_id:stripeEvent.id,p_error_category:"processing_failed"});
+      else await rpc("fail_stripe_event", { p_event_id: stripeEvent.id, p_error_code: "processing_failed" });
       throw error;
     }
   } catch (error) {
@@ -209,4 +310,4 @@ export const handler = async (event) => {
 /* Exported so the integrity test and the webhook cannot disagree about which events are
    handled: an event missing from the switch leaves the database believing something Stripe
    has already moved on from. */
-export const WEBHOOK_HANDLED_EVENTS = HANDLED_STRIPE_EVENTS;
+export const WEBHOOK_HANDLED_EVENTS = Object.freeze([...new Set([...HANDLED_STRIPE_EVENTS,...AI_EVENT_TYPES])]);
