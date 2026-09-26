@@ -55,6 +55,24 @@ async function processAiEvent(event,mode,preloadedSubscription){
   const studentId=subscription.metadata?.student_id||object.metadata?.student_id;
   const checkoutAttemptId=subscription.metadata?.checkout_attempt_id||object.metadata?.checkout_attempt_id;
   if(!UUID.test(studentId||"")||!UUID.test(checkoutAttemptId||"")) throw new Error("ai_subscription_metadata_invalid");
+
+  if(event.type.startsWith("invoice.")){
+    await dbRequest("ai_payments?on_conflict=stripe_invoice_id",{
+      method:"POST",prefer:"resolution=merge-duplicates,return=minimal",
+      body:{
+        stripe_invoice_id:object.id,
+        student_id:studentId,
+        stripe_subscription_id:subscription.id,
+        stripe_mode:mode,
+        amount_paid:object.amount_paid||0,
+        currency:String(object.currency||"usd").toLowerCase(),
+        status:event.type==="invoice.paid"?"paid":"payment_failed",
+        paid_at:event.type==="invoice.paid"?new Date(event.created*1000).toISOString():null,
+        updated_at:new Date().toISOString()
+      }
+    });
+  }
+
   const priceId=idOf(subscription.items?.data?.[0]?.price);
   if(!priceId) throw new Error("ai_subscription_price_missing");
 
