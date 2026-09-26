@@ -63,6 +63,10 @@ test -f dist/admin/console/build.json
 test -f dist/admin/console/index.html
 test -f dist/admin/console/console.js
 test -f dist/admin/console/console.css
+test -f dist/ai/index.html
+test -f dist/ai/plans/index.html
+test -f dist/ai/plans/plans.js
+test -f dist/student/ai-account.js
 test -f dist/student/index.html
 test -f dist/student/sign-in/index.html
 test -f dist/student/register/index.html
