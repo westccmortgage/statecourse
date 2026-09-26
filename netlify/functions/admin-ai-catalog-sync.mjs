@@ -47,7 +47,8 @@ export const handler = async (event) => {
     const requestHost = String(event.headers?.host || event.headers?.Host || "").toLowerCase();
     const isExpectedPreviewHost = requestHost === "deploy-preview-20--chipper-maamoul-a2b9d5.netlify.app";
     const isExpectedBranchHost = requestHost === "work-statecourse-ai-sales-enablement--chipper-maamoul-a2b9d5.netlify.app";
-    if (!isExpectedPreviewHost && !isExpectedBranchHost) {
+    const isProductionHost = requestHost === "statecourse.com";
+    if (!isExpectedPreviewHost && !isExpectedBranchHost && !isProductionHost) {
       return json(403, { error: "provisioning_branch_only" });
     }
     if (!authorized(event)) return json(403, { error: "forbidden" });
