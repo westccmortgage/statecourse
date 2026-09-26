@@ -24,7 +24,7 @@ function authorized(event) {
 
 async function stripe(path, { method = "GET", params, idempotencyKey } = {}) {
   const key = String(process.env.STRIPE_SECRET_KEY_LIVE || "");
-  if (!/^(?:sk|rk)_live_[A-Za-z0-9]+$/.test(key)) throw new Error("stripe_live_key_unavailable");
+  if (!key) throw new Error("stripe_live_key_unavailable");
   const headers = { authorization: `Bearer ${key}` };
   let body;
   if (params) {
