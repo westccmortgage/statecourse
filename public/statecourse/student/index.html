@@ -40,6 +40,14 @@
 
       <p class="portal-message" id="portalMessage" aria-live="polite">Loading your student record…</p>
 
+      <section class="course-group" id="aiAccountGroup" hidden aria-labelledby="aiAccountHeading">
+        <div class="section-heading"><span>StateCourse AI</span><h2 id="aiAccountHeading">Your AI access</h2></div>
+        <div class="course-card">
+          <div class="course-main"><p class="status">Current plan</p><h3 id="aiPlanStatus">Checking…</h3><p id="aiSubscriptionDetail"></p></div>
+          <div class="course-actions"><a href="/ai/plans/">View plans</a><button id="aiBilling" type="button" hidden>Manage billing</button></div>
+        </div>
+      </section>
+
       <section class="course-group" id="activeGroup" hidden>
         <div class="section-heading"><span>Current enrollments</span><h2>Continue learning</h2></div>
         <div class="course-list" id="activeCourses"></div>
@@ -71,5 +79,6 @@
 
     <footer><span>StateCourse student records are course- and version-specific.</span><small>Portal visits do not count as instructional time.</small></footer>
     <script src="student-portal.js?v=20260818-personalized" defer></script>
+    <script src="ai-account.js?v=20260926" defer></script>
   </body>
 </html>
