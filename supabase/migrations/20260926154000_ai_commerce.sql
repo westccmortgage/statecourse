@@ -60,6 +60,20 @@ create table if not exists public.ai_entitlements (
   updated_at timestamptz not null default now()
 );
 
+create table if not exists public.ai_payments (
+  stripe_invoice_id text primary key,
+  student_id uuid not null references public.students(id) on delete cascade,
+  stripe_subscription_id text not null,
+  stripe_mode text not null check (stripe_mode in ('test','live')),
+  amount_paid integer not null default 0,
+  currency text not null default 'usd',
+  status text not null,
+  paid_at timestamptz,
+  created_at timestamptz not null default now(),
+  updated_at timestamptz not null default now()
+);
+create index if not exists ai_payments_student_idx on public.ai_payments(student_id, paid_at desc);
+
 create table if not exists public.ai_stripe_events (
   event_id text primary key,
   event_type text not null,
@@ -87,6 +101,7 @@ alter table public.ai_plans enable row level security;
 alter table public.ai_checkout_attempts enable row level security;
 alter table public.ai_subscriptions enable row level security;
 alter table public.ai_entitlements enable row level security;
+alter table public.ai_payments enable row level security;
 alter table public.ai_stripe_events enable row level security;
 alter table public.ai_founding_reservations enable row level security;
 
@@ -102,12 +117,15 @@ create policy ai_subscriptions_own_read on public.ai_subscriptions for select to
 drop policy if exists ai_entitlements_own_read on public.ai_entitlements;
 create policy ai_entitlements_own_read on public.ai_entitlements for select to authenticated using (student_id = auth.uid());
 
+drop policy if exists ai_payments_own_read on public.ai_payments;
+create policy ai_payments_own_read on public.ai_payments for select to authenticated using (student_id = auth.uid());
+
 drop policy if exists ai_founding_reservations_own_read on public.ai_founding_reservations;
 create policy ai_founding_reservations_own_read on public.ai_founding_reservations for select to authenticated using (student_id = auth.uid());
 
-revoke all on public.ai_checkout_attempts, public.ai_subscriptions, public.ai_entitlements, public.ai_stripe_events, public.ai_founding_reservations from anon, authenticated;
+revoke all on public.ai_checkout_attempts, public.ai_subscriptions, public.ai_entitlements, public.ai_payments, public.ai_stripe_events, public.ai_founding_reservations from anon, authenticated;
 grant select on public.ai_plans to anon, authenticated;
-grant select on public.ai_checkout_attempts, public.ai_subscriptions, public.ai_entitlements, public.ai_founding_reservations to authenticated;
+grant select on public.ai_checkout_attempts, public.ai_subscriptions, public.ai_entitlements, public.ai_payments, public.ai_founding_reservations to authenticated;
 
 insert into public.ai_plans (
   plan_key,tier,billing_interval,amount_cents,
