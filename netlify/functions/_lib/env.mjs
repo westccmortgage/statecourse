@@ -2,8 +2,8 @@ import { stripeSecretKeyMode } from "../../../lib/stripe-contract.mjs";
 
 export function stripeEnvironment() {
   const mode = process.env.STRIPE_MODE === "live" ? "live" : "test";
-  const secretKey = mode === "live" ? process.env.STRIPE_SECRET_KEY_LIVE : process.env.STRIPE_SECRET_KEY_TEST;
-  const webhookSecret = mode === "live" ? process.env.STRIPE_WEBHOOK_SECRET_LIVE : process.env.STRIPE_WEBHOOK_SECRET_TEST;
+  const secretKey = String(mode === "live" ? process.env.STRIPE_SECRET_KEY_LIVE : process.env.STRIPE_SECRET_KEY_TEST || "").trim();
+  const webhookSecret = String(mode === "live" ? process.env.STRIPE_WEBHOOK_SECRET_LIVE : process.env.STRIPE_WEBHOOK_SECRET_TEST || "").trim();
 
   if (mode === "live" && process.env.STATECOURSE_LIVE_PAYMENTS_ENABLED !== "true") {
     throw Object.assign(new Error("live_payments_disabled"), { statusCode: 503 });
