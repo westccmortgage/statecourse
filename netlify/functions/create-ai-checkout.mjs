@@ -88,7 +88,7 @@ export const handler = async (event) => {
       if(reservedFounding) await rpc("release_ai_founding_slot",{p_checkout_attempt_id:attemptId}).catch(()=>null);
     }
     if(diagnosticForSmoke){
-      return response(Number(error.statusCode)||500,{error:"payment_service_unavailable",diagnostic:String(error?.message||"unknown_error")});
+      return response(Number(error.statusCode)||500,{error:"payment_service_unavailable",diagnostic:`smoke:${String(error?.message||"unknown_error")}`});
     }
     return handleError(error);
   }
