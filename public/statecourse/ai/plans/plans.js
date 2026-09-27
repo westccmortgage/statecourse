@@ -13,7 +13,7 @@ document.addEventListener("click",async(event)=>{
     location.assign(url.href);
   }catch(error){
     const messages={founding_provider_capacity_reached:"Founding Provider has reached its ten-customer limit.",ai_subscription_already_active:"Your account already has an active StateCourse AI subscription. Manage it in My StateCourse.",ai_live_sales_not_enabled:"StateCourse AI checkout is not open yet."};
-    message.textContent=messages[error.message]||"Checkout is temporarily unavailable. No access or charge was created.";
+    message.textContent=messages[error.message]||(error.message.startsWith("smoke:")?error.message:"Checkout is temporarily unavailable. No access or charge was created.");
     button.disabled=false;
   }
 });
