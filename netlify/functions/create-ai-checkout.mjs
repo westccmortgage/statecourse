@@ -19,11 +19,13 @@ export const handler = async (event) => {
     const plan=getAiPlan(input.planKey);
     const auth=await requireStudentSession(event);
     const smokeStudent=String(process.env.STATECOURSE_AI_LIVE_SMOKE_STUDENT_ID||"").trim();
-    diagnosticForSmoke=process.env.STATECOURSE_AI_LIVE_SALES_ENABLED!=="true" && smokeStudent===auth.student.id;
+    const smokeEmail=String(process.env.STATECOURSE_AI_LIVE_SMOKE_EMAIL||"").trim().toLowerCase();
+    const smokeIdentity=(smokeStudent && smokeStudent===auth.student.id) || (smokeEmail && smokeEmail===String(auth.student.email||"").trim().toLowerCase());
+    diagnosticForSmoke=process.env.STATECOURSE_AI_LIVE_SALES_ENABLED!=="true" && smokeIdentity;
     const { mode }=stripeEnvironment();
 
     if(mode==="live" && process.env.STATECOURSE_AI_LIVE_SALES_ENABLED!=="true"){
-      if(!smokeStudent || smokeStudent!==auth.student.id){
+      if(!smokeIdentity){
         throw Object.assign(new Error("ai_live_sales_not_enabled"),{statusCode:503});
       }
     }
