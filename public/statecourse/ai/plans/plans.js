@@ -7,7 +7,7 @@ document.addEventListener("click",async(event)=>{
     const response=await fetch("/api/ai/checkout",{method:"POST",credentials:"same-origin",headers:{"content-type":"application/json","accept":"application/json"},body:JSON.stringify({planKey:button.dataset.plan})});
     const body=await response.json().catch(()=>({}));
     if(response.status===401){location.assign("/student/sign-in/?return_to="+encodeURIComponent(location.pathname));return;}
-    if(!response.ok)throw new Error(body.error||"checkout_unavailable");
+    if(!response.ok)throw new Error(body.diagnostic||body.error||"checkout_unavailable");
     const url=new URL(body.checkoutUrl);
     if(url.protocol!=="https:"||!url.hostname.endsWith("stripe.com"))throw new Error("checkout_unavailable");
     location.assign(url.href);
