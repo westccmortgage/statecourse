@@ -7,6 +7,8 @@
     const response=await fetch("/api/ai/account",{credentials:"same-origin",headers:{accept:"application/json"}});
     if(!response.ok)throw new Error("unavailable");
     const data=await response.json();
+    section.dataset.currentUserId=data.currentUser?.id||"";
+    section.dataset.currentUserEmail=data.currentUser?.email||"";
     const entitlement=data.entitlement||{tier:"free",active:false,status:"free"};
     const labels={free:"Free",pro:"Pro",provider:"Provider",founding_provider:"Founding Provider"};
     plan.textContent=labels[entitlement.tier]||"Free";
