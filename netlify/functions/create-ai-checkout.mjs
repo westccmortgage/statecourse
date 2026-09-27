@@ -11,16 +11,18 @@ const safe = (value) => encodeURIComponent(String(value));
 export const handler = async (event) => {
   let attemptId;
   let reservedFounding=false;
+  let diagnosticForSmoke=false;
   try {
     method(event,"POST");
     requireSameOrigin(event);
     const input=parseJson(event);
     const plan=getAiPlan(input.planKey);
     const auth=await requireStudentSession(event);
+    const smokeStudent=String(process.env.STATECOURSE_AI_LIVE_SMOKE_STUDENT_ID||"").trim();
+    diagnosticForSmoke=process.env.STATECOURSE_AI_LIVE_SALES_ENABLED!=="true" && smokeStudent===auth.student.id;
     const { mode }=stripeEnvironment();
 
     if(mode==="live" && process.env.STATECOURSE_AI_LIVE_SALES_ENABLED!=="true"){
-      const smokeStudent=String(process.env.STATECOURSE_AI_LIVE_SMOKE_STUDENT_ID||"");
       if(!smokeStudent || smokeStudent!==auth.student.id){
         throw Object.assign(new Error("ai_live_sales_not_enabled"),{statusCode:503});
       }
@@ -82,6 +84,9 @@ export const handler = async (event) => {
         body:{status:"checkout_failed",updated_at:new Date().toISOString()}
       }).catch(()=>null);
       if(reservedFounding) await rpc("release_ai_founding_slot",{p_checkout_attempt_id:attemptId}).catch(()=>null);
+    }
+    if(diagnosticForSmoke && Number(error?.statusCode)>=500){
+      return response(Number(error.statusCode)||500,{error:"payment_service_unavailable",diagnostic:String(error?.message||"unknown_error")});
     }
     return handleError(error);
   }
