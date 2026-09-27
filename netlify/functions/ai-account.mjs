@@ -16,6 +16,7 @@ export const handler=async(event)=>{
       dbRequest(`ai_payments?student_id=eq.${id}&select=stripe_invoice_id,amount_paid,currency,status,paid_at&order=paid_at.desc&limit=20`)
     ]);
     return response(200,{
+      currentUser:{id:auth.student.id,email:auth.student.email},
       entitlement:entitlements?.[0]||{tier:"free",active:false,status:"free"},
       subscription:subscriptions?.[0]||null,
       recentCheckouts:attempts||[],payments:payments||[]
