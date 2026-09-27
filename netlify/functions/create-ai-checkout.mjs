@@ -57,6 +57,7 @@ export const handler = async (event) => {
       method:"POST",idempotencyKey:`ai-checkout-${attemptId}`,
       params:{
         mode:"subscription",
+        "managed_payments[enabled]":diagnosticForSmoke?false:undefined,
         customer_email:auth.student.email,
         client_reference_id:attemptId,
         "line_items[0][quantity]":1,
