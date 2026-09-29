@@ -124,8 +124,8 @@
 
 [[redirects]]
   from = "/ai"
-  to = "/ai/index.html"
-  status = 200
+  to = "/ai/plans"
+  status = 302
 
 [[redirects]]
   from = "/ai/plans"
