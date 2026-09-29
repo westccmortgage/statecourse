@@ -78,7 +78,8 @@ export async function requirePrivilege(event, auth) {
   if (!/^[A-Za-z0-9_-]{43}$/.test(proof)) fail('staff_step_up_required', 403);
   const fresh = needsFreshAction(event);
   const action = event.headers?.['x-statecourse-action-proof'] || '';
-  return security('check', {...session, proof_hash:digest(proof),
+  const audit = {method:event.httpMethod, endpoint:canonicalAdminPath(event.path || '')};
+  return security('check', {...session, audit, proof_hash:digest(proof),
     intent:fresh ? requestIntent(event) : null,
     action_hash:fresh && /^[A-Za-z0-9_-]{43}$/.test(action) ? digest(action) : null});
 }

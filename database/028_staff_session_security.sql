@@ -164,8 +164,9 @@ begin
         return '{"ok":false,"error":"fresh_action_authorization_required","status":403}'::jsonb;
       end if;
       -- Durable audit commits before the API carries out the authorized operation.
-      insert into statecourse_staff_private.audit_events(user_id,session_id,event,outcome,intent)
-        values(actor,sid,'admin_action','authorized',payload->>'intent');
+      insert into statecourse_staff_private.audit_events(user_id,session_id,event,outcome,intent,detail)
+        values(actor,sid,'admin_action','authorized',payload->>'intent',
+          jsonb_build_object('method',left(payload->'audit'->>'method',10),'endpoint',left(payload->'audit'->>'endpoint',160)));
     end if;
     update statecourse_staff_private.proofs set last_seen_at=clock_timestamp() where proof_hash=p.proof_hash;
     return jsonb_build_object('ok',true,'expires_at',p.expires_at);
