@@ -50,15 +50,12 @@ test("the shared administrator token is not authority in the console", { concurr
   }
 });
 
-test("a valid session with no binding signs in and is told so, rather than being refused", { concurrency: false }, async () => {
+test("a valid session with no staff binding is refused admin access", { concurrency: false }, async () => {
   const store = createStore({ bindings: [] });
   await withConsoleMock(store, async () => {
     const response = await sessionHandler(getEvent());
-    assert.equal(response.statusCode, 200);
-    const body = JSON.parse(response.body);
-    assert.equal(body.user.id, STAFF_ID);
-    assert.deepEqual(body.roles, []);
-    assert.equal(body.grantsApproval, false);
+    assert.equal(response.statusCode, 403);
+    assert.equal(JSON.parse(response.body).error, "staff_binding_required");
   });
 });
 
@@ -101,11 +98,11 @@ test("a binding that has not taken effect yet is not a binding", { concurrency: 
   });
 });
 
-test("a regulator reviewer may read the video chain and may not change it", { concurrency: false }, async () => {
+test("a regulator reviewer cannot read or change admin resources", { concurrency: false }, async () => {
   const store = createStore();
   store.bindings[0].actor_role = "regulator_reviewer";
   await withConsoleMock(store, async () => {
-    assert.equal((await videoHandler(getEvent())).statusCode, 200);
+    assert.equal((await videoHandler(getEvent())).statusCode, 403);
     const write = await videoHandler(postEvent(reserve));
     assert.equal(write.statusCode, 403);
     assert.equal(JSON.parse(write.body).error, "staff_role_not_authorized");
@@ -129,11 +126,11 @@ test("a video producer may drive the review and may not place", { concurrency: f
 
 test("a state-scoped binding reads only that state's catalog rows", { concurrency: false }, async () => {
   const store = createStore();
-  store.bindings[0] = { ...store.bindings[0], actor_role: "regulator_reviewer", scope_state: "MI" };
+  store.bindings[0] = { ...store.bindings[0], actor_role: "support", scope_state: "MI" };
   await withConsoleMock(store, async () => {
     const body = JSON.parse((await catalogHandler(getEvent())).body);
     assert.deepEqual(body.viewer.scopeStates, ["MI"]);
-    assert.ok(body.rows.length > 0, "a Michigan reviewer should still see Michigan");
+    assert.ok(body.rows.length > 0, "Michigan staff should still see Michigan");
     assert.deepEqual([...new Set(body.rows.map((row) => row.state))], ["MI"]);
     /* The summary is recounted from the rows returned, so the headline cannot describe
        records this viewer cannot see. */
@@ -205,3 +202,4 @@ test("signing in reports roles and states plainly that it grants no approval", {
     assert.equal(body.grantsApproval, false);
   });
 });
+

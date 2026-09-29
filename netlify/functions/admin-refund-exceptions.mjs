@@ -23,7 +23,7 @@ import { REFUND_POLICY_VERSION, evaluateRefund } from "../../lib/refund-policy.m
  */
 export const handler = async (event) => {
   try {
-    requireAdmin(event);
+    await requireAdmin(event);
 
     if ((event.httpMethod || "").toUpperCase() === "GET") {
       const [unassessed, exceptions] = await Promise.all([
@@ -108,3 +108,4 @@ export const handler = async (event) => {
     return handleError(error);
   }
 };
+

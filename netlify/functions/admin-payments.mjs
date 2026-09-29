@@ -7,7 +7,7 @@ const safe = (value) => encodeURIComponent(String(value).replace(/[,*()]/g, ""))
 export const handler = async (event) => {
   try {
     method(event, "GET");
-    requireAdmin(event);
+    await requireAdmin(event);
     const query = event.queryStringParameters || {};
     const limit = Math.min(Math.max(Number(query.limit) || 50, 1), 200);
     const filters = [];
@@ -23,3 +23,4 @@ export const handler = async (event) => {
     return handleError(error);
   }
 };
+

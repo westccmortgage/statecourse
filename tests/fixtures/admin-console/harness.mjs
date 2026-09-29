@@ -8,6 +8,8 @@
  */
 
 export const STAFF_ID = "11111111-1111-4111-8111-111111111111";
+const NAMED_SESSION = 'header.'+Buffer.from(JSON.stringify({sub:STAFF_ID, session_id:'22222222-2222-4222-8222-222222222222',aal:'aal2',exp:4102444800})).toString('base64url')+'.signature';
+const STAFF_COOKIE='__Host-sc_access='+NAMED_SESSION+'; __Host-sc_staff='+'p'.repeat(43);
 export const OTHER_STAFF_ID = "99999999-9999-4999-8999-999999999999";
 export const COURSE_ID = "tx-law-of-agency-30-v1";
 export const DELIVERY_ID = "module-03";
@@ -166,8 +168,8 @@ export async function withConsoleMock(store, action) {
 
     if (url.hostname === "api.cloudflare.com") return cloudflareRoute(store, url, method, body);
     if (url.pathname === "/auth/v1/user") {
-      if (init.headers?.authorization !== "Bearer named-session-token") return json({ msg: "bad_jwt" }, 401);
-      return json({ id: store.signedInAs || STAFF_ID, email: "owner@statecourse.test", user_metadata: {} });
+      if (init.headers?.authorization !== `Bearer ${NAMED_SESSION}`) return json({ msg: "bad_jwt" }, 401);
+      return json({ id: store.signedInAs || STAFF_ID, email: "owner@statecourse.test", email_confirmed_at:"2026-01-01T00:00:00Z", user_metadata: {} });
     }
     if (url.pathname.startsWith("/rest/v1/")) return restRoute(store, url, method, body);
     throw new Error(`unexpected_mock_request:${url.href}`);
@@ -234,6 +236,9 @@ function restRoute(store, url, method, body) {
   const table = url.pathname.replace("/rest/v1/", "").split("?")[0];
   const params = url.searchParams;
 
+  // Boundary policy is exercised against real isolated Postgres by verify-staff-security.mjs.
+  // Legacy content tests start from an already-authorized exact-session fixture.
+  if (table === "rpc/statecourse_staff_security") return json({ok:true});
   if (table === "students") return json(null);
   if (table === "admin_console_actions" && method === "POST") {
     store.consoleActions.push(body);
@@ -373,7 +378,7 @@ function restRoute(store, url, method, body) {
   throw new Error(`unexpected_rest_request:${method} ${table}${url.search}`);
 }
 
-export function getEvent(query = {}, { cookie = "__Host-sc_access=named-session-token" } = {}) {
+export function getEvent(query = {}, { cookie = STAFF_COOKIE } = {}) {
   return {
     httpMethod: "GET",
     headers: { cookie, referer: "https://statecourse.test/admin/console/" },
@@ -381,10 +386,11 @@ export function getEvent(query = {}, { cookie = "__Host-sc_access=named-session-
   };
 }
 
-export function postEvent(body, { cookie = "__Host-sc_access=named-session-token", origin = "https://statecourse.test" } = {}) {
+export function postEvent(body, { cookie = STAFF_COOKIE, origin = "https://statecourse.test" } = {}) {
   return {
     httpMethod: "POST",
-    headers: { cookie, origin },
+    path: "/api/admin/video",
+    headers: { cookie, origin, "x-statecourse-action-proof":"a".repeat(43) },
     queryStringParameters: {},
     body: JSON.stringify(body),
   };
@@ -417,3 +423,4 @@ export async function completeTextAssets(handler, assetKey) {
   if (response.statusCode !== 200) throw new Error(`text assets refused: ${response.body}`);
   return JSON.parse(response.body);
 }
+

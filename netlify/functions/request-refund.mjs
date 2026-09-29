@@ -25,7 +25,7 @@ import { refundInstruction } from "../../lib/stripe-contract.mjs";
 export const handler = async (event) => {
   try {
     method(event, "POST");
-    requireAdmin(event);
+    await requireAdmin(event);
     const input = parseJson(event);
     if (!String(input.reason || "").trim()) {
       throw Object.assign(new Error("reason_required"), { statusCode: 400 });
@@ -135,3 +135,4 @@ export const handler = async (event) => {
 };
 
 export const REFUND_ENDPOINT_POLICY_VERSION = REFUND_POLICY_VERSION;
+

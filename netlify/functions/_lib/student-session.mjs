@@ -22,7 +22,7 @@ function cookies(event) {
   }, {});
 }
 
-async function authRequest(path, { method="GET", token, body }={}) {
+export async function authRequest(path, { method="GET", token, body }={}) {
   const { url, anonKey } = authConfig();
   const response = await fetch(`${url}/auth/v1/${path}`, {
     method,
@@ -149,7 +149,7 @@ export async function requireStudentSession(event) {
     user = refreshedSession.user;
   }
   const student = await syncStudent(user);
-  return { student, accessToken, refreshedSession };
+  return { student, accessToken, refreshedSession, user };
 }
 
 export async function updateStudentProfile(accessToken,input = {}) {
@@ -195,3 +195,4 @@ export function sessionResponse(statusCode,body,setCookies=[]) {
   if (setCookies.length) response.multiValueHeaders = { "set-cookie":setCookies };
   return response;
 }
+
