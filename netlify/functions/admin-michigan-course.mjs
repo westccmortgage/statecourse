@@ -1,3 +1,4 @@
+import { requireStaff } from "./_lib/staff-session.mjs";
 import { dbRequest, rpc } from "./_lib/db.mjs";
 import { parseJson, requireSameOrigin } from "./_lib/http.mjs";
 import {
@@ -148,7 +149,7 @@ async function studentForEnrollment(enrollmentId) {
 export const handler = async (event) => {
   let cookies = [];
   try {
-    const auth = await requireStudentSession(event);
+    const { auth } = await requireStaff(event, ["owner", "administrator", "instructor"], {state:"MI"});
     cookies = auth.refreshedSession ? sessionCookies(auth.refreshedSession) : [];
 
     if (event.httpMethod === "GET") {
@@ -274,3 +275,4 @@ export const handler = async (event) => {
     }, cookies);
   }
 };
+

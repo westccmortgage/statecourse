@@ -23,3 +23,22 @@ One existing console now has a school hierarchy, discipline-specific learning an
 7. Real Estate state-by-state evidence reconciliation.
 
 Detailed requirements live only in the linked boards.
+
+
+
+## StateCourse Command Center — admin security (2026-09-29)
+
+Status: **BLOCKED — owner identity binding and MFA**, not operationally accepted.
+The existing Command Center Agent is preserved. Development changes require a named,
+server-derived staff role, exact-session MFA proof, short privilege lifetime, current
+revocation checks, audit, persistent rate limits and fresh one-use permission for
+sensitive actions. Ordinary student/reviewer sessions and the legacy shared admin
+token do not satisfy the new boundary. The owner OAuth helper uses the same staff ledger.
+
+Production read-only inspection found one active unscoped owner record whose subject
+has no corresponding `auth.users` entry, and zero verified MFA factors. Do not assign
+owner authority by email or metadata. The actual owner must authorize repair to an
+authenticated subject and personally enroll/verify MFA. These changes are prepared
+for controlled deployment; local test results are not production acceptance.
+No regulator approval, NMLS signature, submission or payment status changes here.
+See `docs/security/admin-hardening-2026-09-29.md` for verification and activation gates.

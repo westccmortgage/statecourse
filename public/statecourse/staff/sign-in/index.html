@@ -1,0 +1,13 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow"><title>Staff verification | StateCourse</title>
+<link rel="stylesheet" href="/staff/security.css"><script src="/staff/sign-in/sign-in.js" defer></script>
+<body class="staff-verification"><main><p>StateCourse</p><h1>Staff verification</h1>
+<p>Use your staff account and authenticator to continue.</p>
+<form id="login"><label>Email<input name="email" type="email" autocomplete="username" required></label>
+<label>Password<input name="password" type="password" autocomplete="current-password" required></label><button>Sign in</button></form>
+<form id="mfa" hidden><label>Authenticator<select name="factor"></select></label>
+<label>Verification code<input name="code" inputmode="numeric" autocomplete="one-time-code" pattern="[0-9]{6}" maxlength="6" required></label>
+<p id="purpose">Verify staff access</p><button>Verify and continue</button></form>
+<section id="enroll" hidden><p>First-time staff verification requires an authenticator. Sign in again before setup.</p><button id="enrollButton" type="button">Set up my authenticator</button><label id="enrollSecretLabel" hidden>Enter this setup key into your authenticator app<input id="enrollSecret" readonly autocomplete="off"></label></section>
+<p id="status" role="status"></p><label id="ticketLabel" hidden>One-time owner approval code<textarea id="ticket" readonly></textarea></label>
+<p><a href="/student/">Student portal</a></p></main></html>

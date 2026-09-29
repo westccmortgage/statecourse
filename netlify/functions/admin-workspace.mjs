@@ -9,7 +9,7 @@ import { registerCatalogCourses } from './_lib/course-inventory.mjs';
 import { recordEvidence, reviewAccess, recordFinding } from './_lib/console-evidence.mjs';
 import { schoolWorkspace } from './_lib/console-school.mjs';
 
-function eventFrom(req) { return { httpMethod:req.method,headers:Object.fromEntries(req.headers),queryStringParameters:Object.fromEntries(new URL(req.url).searchParams) }; }
+function eventFrom(req) { return { httpMethod:req.method,path:new URL(req.url).pathname,headers:Object.fromEntries(req.headers),queryStringParameters:Object.fromEntries(new URL(req.url).searchParams) }; }
 function response(body,status=200,cookies=[]) {
   const headers=new Headers({'content-type':'application/json','cache-control':'no-store, private','x-content-type-options':'nosniff'});
   for(const cookie of cookies) headers.append('set-cookie',cookie);
@@ -36,7 +36,7 @@ export default async function handler(req) {
       if(!base) fail('base_url_not_configured',503);
       if(req.headers.get('origin')!==new URL(base).origin) fail('origin_not_allowed',403);
       if(!req.headers.get('content-type')?.startsWith('application/json')) fail('json_required',415);
-      const text=await req.text(); if(text.length>550000) fail('request_too_large',413);
+      const text=await req.text(); event.body=text; if(text.length>550000) fail('request_too_large',413);
       try { input=JSON.parse(text); } catch { fail('invalid_json'); }
       if(!input || typeof input!=='object'||Array.isArray(input)) fail('invalid_request');
     }
@@ -138,3 +138,4 @@ export default async function handler(req) {
   }
 }
 export const config={path:'/api/admin/workspace'};
+

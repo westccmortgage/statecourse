@@ -7,7 +7,7 @@ const isoDate = /^\d{4}-\d{2}-\d{2}$/;
 export const handler = async (event) => {
   try {
     method(event, "POST");
-    requireAdmin(event);
+    await requireAdmin(event);
     const input = JSON.parse(event.body || "{}");
     if (!isoDate.test(input.period_start || "") || !isoDate.test(input.period_end || "")) {
       throw Object.assign(new Error("invalid_reporting_period"), { statusCode: 400 });
@@ -21,3 +21,4 @@ export const handler = async (event) => {
     return handleError(error);
   }
 };
+

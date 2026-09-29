@@ -7,7 +7,7 @@ const monthly=(key)=>key.endsWith("_annual")?Math.round((price[key]||0)/12):(pri
 
 export const handler=async(event)=>{
   try{
-    method(event,"GET");requireAdmin(event);
+    method(event,"GET");await requireAdmin(event);
     const today=new Date();today.setUTCHours(0,0,0,0);
     const [subs,entitlements,payments,attempts,newUsers]=await Promise.all([
       dbRequest("ai_subscriptions?select=student_id,plan_key,status,current_period_end,cancel_at_period_end,stripe_customer_id,updated_at&order=updated_at.desc&limit=1000"),

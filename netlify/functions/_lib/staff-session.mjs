@@ -1,18 +1,11 @@
+import { requirePrivilege, ADMIN_ROLES, limit, audit } from "./staff-security.mjs";
 import { dbRequest } from "./db.mjs";
 import { requireStudentSession } from "./student-session.mjs";
 
-/*
- * Named staff identity for the administration console.
- *
- * STATECOURSE_ADMIN_API_TOKEN answers "does the caller hold the string". It cannot answer
- * "who did this", and it is the same string for the owner, a contractor and anyone who has
- * ever seen a screenshot of the field. The console instead authenticates one Supabase user
- * — the same session mechanism students use, so refresh, revocation and __Host- cookie
- * scoping are already solved — and then resolves that user's roles from an append-only
- * binding ledger.
- *
- * Roles are additive: the owner is normally also administrator and video producer, and a
- * check for one role never implies the absence of another.
+/* Named staff authority is resolved from the existing append-only ledger.
+ * Student authentication identifies a subject, but confers no administrator access.
+ * Each admin request additionally requires a current exact-session MFA staff proof.
+ * Browser metadata, email naming, and shared bearer strings grant no authority.
  */
 
 const ROLES = Object.freeze([
@@ -62,17 +55,20 @@ export async function staffBindings(authUserId) {
  * cannot read Michigan by changing a query parameter.
  */
 export async function requireStaff(event, allowedRoles, { state = null } = {}) {
-  const roles = (Array.isArray(allowedRoles) ? allowedRoles : [allowedRoles]).filter(isStaffRole);
+  const roles = (Array.isArray(allowedRoles) ? allowedRoles : [allowedRoles]).filter(role => ADMIN_ROLES.includes(role));
   if (!roles.length) fail("staff_role_requirement_missing", 500);
   if (state != null && !STATE.test(state)) fail("invalid_state", 400);
 
+  await limit(event, "request");
   const auth = await requireStudentSession(event);
   const bindings = await staffBindings(auth.student.id);
-  if (!bindings.length) fail("staff_binding_required", 403);
+  if (!bindings.length) { await audit("admin_authority", "denied", auth); fail("staff_binding_required", 403); }
 
   const matching = bindings.filter((binding) => roles.includes(binding.actor_role)
     && (state == null || binding.scope_state == null || binding.scope_state === state));
-  if (!matching.length) fail("staff_role_not_authorized", 403);
+  if (!matching.length) { await audit("admin_authority", "denied", auth); fail("staff_role_not_authorized", 403); }
+
+  await requirePrivilege(event, auth);
 
   return {
     auth,
@@ -110,6 +106,7 @@ export async function logConsoleAction(staff, action, subject, detail = {}) {
       },
     });
   } catch (error) {
-    console.error("Admin console audit write failed", action, error?.message);
+    console.error("Admin console completion audit unavailable", String(action).slice(0,100));
   }
 }
+
