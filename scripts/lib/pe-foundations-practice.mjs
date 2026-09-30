@@ -2,11 +2,12 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { createHash } from 'node:crypto';
 import { PE_FOUNDATIONS, TOPIC_QUIZZES, SCENARIOS } from '../../config/pe-foundations-practice.mjs';
+import { PUBLIC_ITEM_COUNTS, isReviewedSourcelessCase } from '../../config/pe-application-practice.mjs';
 import { projectPracticeActivities } from './free-practice-activities.mjs';
 
 // Explicitly public, newly authored formative material. Never load the CE
 // review loader, final banks, instructor guide, or an aggregate NMLS source tree.
-const lessonFiles = ['module-01.md', 'module-02.md', 'module-03.md', 'module-04.md'];
+const lessonFiles = ['module-01.md', 'module-02.md', 'module-03.md', 'module-04.md', 'module-05.md', 'module-06.md'];
 const digest = text => createHash('sha256').update(text).digest('hex');
 const protectedText = /N26-FIN-|##\s*Answer key|instructor version and answer key|Items, with the material reference for each answer|__statecourse_private_export/i;
 const requireText = (value, label) => {
@@ -22,6 +23,29 @@ const publicSources = values => {
     return { url: url.href, reference: requireText(source.reference, 'source reference') };
   });
 };
+
+const denseArray = (values, label, minimum = 0) => {
+  if (!Array.isArray(values) || values.length < minimum) throw new Error(`Invalid PE ${label}`);
+  for (let index = 0; index < values.length; index++)
+    if (!Object.hasOwn(values, index)) throw new Error(`Sparse PE ${label}`);
+  return values;
+};
+
+// The shared projection deliberately permits legacy real-estate sources without
+// citations. Public PE inputs have a stricter boundary without changing that API.
+function validatePeScenarios(scenarios) {
+  for (const scenario of denseArray(scenarios, 'scenario inventory', 1)) {
+    if (!scenario || typeof scenario !== 'object') throw new Error('Invalid PE scenario');
+    publicSources(denseArray(scenario.sources, 'scenario sources', 1));
+    if (scenario.facts !== undefined) denseArray(scenario.facts, 'scenario facts');
+    for (const task of denseArray(scenario.tasks, 'scenario tasks', 1)) {
+      if (!task || typeof task !== 'object') throw new Error('Invalid PE scenario task');
+      if (task.sources !== undefined) publicSources(denseArray(task.sources, 'task sources', 1));
+      if (task.type === 'selection') denseArray(task.choices, 'task choices', 4);
+      if (task.type === 'short-answer' || task.type === 'self-review') denseArray(task.rubric, 'task rubric', 1);
+    }
+  }
+}
 
 export function buildPeFoundationsPractice({ root, write, quizzes = TOPIC_QUIZZES, scenarios = SCENARIOS }) {
   const source = PE_FOUNDATIONS;
@@ -40,16 +64,21 @@ export function buildPeFoundationsPractice({ root, write, quizzes = TOPIC_QUIZZE
     throw new Error('Invalid PE practice lesson mapping');
   const questions = lessons.flatMap(lesson => {
     const items = quizzes[lesson.id];
+    const bankId = lesson.id.replace('module-', 'PE');
+    const reviewedBank = Object.hasOwn(PUBLIC_ITEM_COUNTS, bankId);
     if (!Array.isArray(items) || items.length < 6) throw new Error(`Incomplete PE formative practice: ${lesson.id}`);
+    if (reviewedBank && items.length !== PUBLIC_ITEM_COUNTS[bankId]) throw new Error(`Incomplete reviewed PE bank: ${bankId}`);
     return Array.from(items, item => {
       if (!item || typeof item !== 'object' || item.module !== lesson.id || !Array.isArray(item.choices) || item.choices.length !== 4 ||
           new Set(item.choices).size !== 4 || Array.from(item.choices).some(choice => typeof choice !== 'string' || !choice.trim()) ||
           !Number.isInteger(item.correctChoice) || item.correctChoice < 0 || item.correctChoice > 3)
         throw new Error('Invalid PE formative item');
+      if (reviewedBank && (typeof item.id !== 'string' || !item.id.startsWith(`${bankId}-P`) || item.choiceFeedback === undefined))
+        throw new Error('Missing reviewed PE identity or per-choice feedback');
       if (item.choiceFeedback !== undefined && (!Array.isArray(item.choiceFeedback) ||
           item.choiceFeedback.length !== 4 || Array.from(item.choiceFeedback).some(value => typeof value !== 'string' || !value.trim())))
         throw new Error('Incomplete PE per-choice feedback');
-      const sources = Array.isArray(item.sources) && !item.sources.length && item.sourceNote
+      const sources = Array.isArray(item.sources) && !item.sources.length && item.sourceNote && isReviewedSourcelessCase(bankId, item.id)
         ? [] : publicSources(item.sources);
       return { id: `${source.courseId}:${requireText(item.id, 'question ID')}`, lesson_id: lesson.id,
         prompt: requireText(item.prompt, 'prompt'), choices: [...item.choices], solution: item.correctChoice,
@@ -60,13 +89,14 @@ export function buildPeFoundationsPractice({ root, write, quizzes = TOPIC_QUIZZE
   });
   if (new Set(questions.map(q => q.id)).size !== questions.length || new Set(questions.map(q => q.prompt)).size !== questions.length)
     throw new Error('Duplicate PE formative item');
+  validatePeScenarios(scenarios);
   const activities = projectPracticeActivities({ courseId: source.courseId, lessonIds: lessons.map(l => l.id), scenarios });
   if (!activities.length || lessons.some(lesson => !activities.some(a => a.lesson_id === lesson.id)))
     throw new Error('Missing PE lesson casework');
   const payload = {
     course_id: source.courseId, course_title: source.courseTitle, state_code: source.stateCode, state_name: source.stateName,
     coverage: source.coverage, operating_mode: 'free_practice', creditEligible: false, completeCourse: false,
-    availability_notice: 'Four foundation modules are available; the full 20-hour course is still in development.',
+    availability_notice: 'Six foundation modules are available; the full 20-hour course is still in development.',
     providerApproval: null, courseApproval: null, access: 'Free before, during and after paid enrollment. No account or payment required.',
     lessons: lessons.map(({ id, title, content_url, sha256 }) => ({ id, title, content_url, sha256 })), questions, activities,
   };

@@ -1,0 +1,226 @@
+{
+  "PE05": {
+    "P5-01": {
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/1/",
+      "reference": "P5-01: CFPB, Regulation Z §§1026.1 and 1026.3, purpose, coverage and exemptions"
+    },
+    "P5-02": {
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/19/",
+      "reference": "P5-02: CFPB, Regulation Z §1026.19(e)-(f) and official interpretations, integrated disclosure coverage, provision, receipt, fees, shopping, good faith, revisions and corrections"
+    },
+    "P5-03": {
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1024/5/",
+      "reference": "P5-03: CFPB, Regulation X §1024.5, RESPA coverage"
+    },
+    "P5-04": {
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/4/",
+      "reference": "P5-04: CFPB, Regulation Z §1026.4, finance charge"
+    },
+    "P5-05": {
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/22/",
+      "reference": "P5-05: CFPB, Regulation Z §1026.22, APR calculation and accuracy"
+    },
+    "P5-06": {
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/2/",
+      "reference": "P5-06: CFPB, Regulation Z §1026.2(a)(3), (6), (13), application, business day and consummation"
+    },
+    "P5-07": {
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/23/",
+      "reference": "P5-07: CFPB, Regulation Z §1026.23, rescission, exemptions and disbursement"
+    },
+    "P5-08": {
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1024/14/",
+      "reference": "P5-08: CFPB, Regulation X §1024.14, kickbacks and unearned fees"
+    },
+    "P5-09": {
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1024/15/",
+      "reference": "P5-09: CFPB, Regulation X §1024.15, affiliated business arrangements"
+    },
+    "P5-10": {
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/38/",
+      "reference": "P5-10: CFPB, Regulation Z §1026.38(f), CD service/payee entries"
+    },
+    "P5-11": {
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/17/",
+      "reference": "P5-11: CFPB, Regulation Z §1026.17(d), multiple consumers and disclosure recipients"
+    },
+    "P5-12": {
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1002/2/",
+      "reference": "P5-12: CFPB, Regulation B §1002.2(f), application and completed application"
+    },
+    "P5-13": {
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1002/9/",
+      "reference": "P5-13: CFPB, Regulation B §1002.9 and commentary, notices"
+    },
+    "P5-14": {
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1002/12/",
+      "reference": "P5-14: CFPB, Regulation B §1002.12(b), records"
+    },
+    "P5-15": {
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/25/",
+      "reference": "P5-15: CFPB, Regulation Z §1026.25(c), special mortgage record retention"
+    },
+    "P5-16": {
+      "url": "https://www.ftc.gov/system/files/ftc_gov/pdf/fcra-march-2026.pdf",
+      "reference": "P5-16: FTC, Fair Credit Reporting Act, revised March 2026, especially §§604, 609(g), 615"
+    },
+    "P5-17": {
+      "url": "https://www.ftc.gov/business-guidance/resources/using-consumer-reports-credit-decisions-what-know-about-adverse-action-risk-based-pricing-notices",
+      "reference": "P5-17: FTC, Using Consumer Reports for Credit Decisions, adverse action and risk-based pricing guide"
+    },
+    "P5-18": {
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1022/72/",
+      "reference": "P5-18: CFPB, Regulation V §§1022.72-74, risk-based pricing duties and exceptions"
+    },
+    "P5-19": {
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1002/4/",
+      "reference": "P5-19: CFPB, current Regulation B §§1002.4 and 1002.6, discrimination, discouragement and evaluation"
+    },
+    "P5-20": {
+      "url": "https://www.hud.gov/stat/fheo/rights-obligations",
+      "reference": "P5-20: HUD, Fair Housing Rights and Obligations, and 42 U.S.C. §3605, residential real-estate-related transactions"
+    },
+    "P5-21": {
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1003/1/",
+      "reference": "P5-21: CFPB, Regulation C §§1003.1 and 1003.4, HMDA purpose and data requirements"
+    },
+    "P5-22": {
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1002/14/",
+      "reference": "P5-22: CFPB, Regulation B §1002.14, appraisal/valuation notices and copies"
+    },
+    "P5-23": {
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/43/",
+      "reference": "P5-23: CFPB, Regulation Z §1026.43(a), (c), (e), ATR and QM"
+    },
+    "P5-24": {
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/32/",
+      "reference": "P5-24: CFPB, Regulation Z §1026.32, high-cost mortgage tests"
+    },
+    "P5-25": {
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/35/",
+      "reference": "P5-25: CFPB, Regulation Z §1026.35, HPML definition, escrow and appraisal provisions"
+    },
+    "P5-26": {
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/31/",
+      "reference": "P5-26: CFPB, Regulation Z §§1026.31(c) and 1026.34, special disclosures, high-cost restrictions and counseling"
+    },
+    "P5-27": {
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/36/",
+      "reference": "P5-27: CFPB, Regulation Z §1026.36(d)-(e), compensation and steering"
+    },
+    "P5-28": {
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/24/",
+      "reference": "P5-28: CFPB, Regulation Z §1026.24, advertising"
+    },
+    "P5-29": {
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1016/",
+      "reference": "P5-29: CFPB, Regulation P, especially §§1016.4-7 and 1016.13-15"
+    },
+    "P5-30": {
+      "url": "https://www.ftc.gov/business-guidance/resources/ftc-safeguards-rule-what-your-business-needs-know",
+      "reference": "P5-30: FTC, Safeguards Rule business guide and linked 16 CFR Part314"
+    },
+    "P5-31": {
+      "url": "https://www.fincen.gov/mortgage-companies-and-brokers",
+      "reference": "P5-31: FinCEN, Mortgage Companies and Brokers"
+    },
+    "P5-32": {
+      "url": "https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1029",
+      "reference": "P5-32: Treasury, 31 CFR §§1029.210 and 1029.320, AML programs, reporting and confidentiality"
+    }
+  },
+  "PE06": {
+    "P6-01": {
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1002/2/",
+      "reference": "P6-01: CFPB Regulation B section 1002.2, especially (l), (m), and (z), creditor coverage, credit transaction, and prohibited bases"
+    },
+    "P6-02": {
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1002/4/",
+      "reference": "P6-02: CFPB Regulation B section 1002.4(a) and (b), and revised comments 4(a) and 4(b)-1, discrimination and current discouragement"
+    },
+    "P6-03": {
+      "url": "https://www.hud.gov/stat/fheo/rights-obligations",
+      "reference": "P6-03: HUD Fair Housing Rights and Obligations, federal protected bases and mortgage coverage"
+    },
+    "P6-04": {
+      "url": "https://www.federalregister.gov/documents/2026/04/22/2026-07804/equal-credit-opportunity-act-regulation-b",
+      "reference": "P6-04: Federal Register, April 22 2026 final rule, 91 FR 21620, effective July 21 2026. The amendment text controls over residual webpage commentary"
+    },
+    "P6-05": {
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1002/6/",
+      "reference": "P6-05: CFPB Regulation B section 1002.6(a), (b)(2), (b)(3), and (b)(5), current evaluation standards and individual income treatment"
+    },
+    "P6-06": {
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1002/5/",
+      "reference": "P6-06: CFPB Regulation B section 1002.5(d)(2) and (3), support income disclosure and childbearing inquiries"
+    },
+    "P6-07": {
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1002/7/",
+      "reference": "P6-07: CFPB Regulation B section 1002.7(d)(1), (4), and (5), including joint intent and collateral signature interpretations"
+    },
+    "P6-08": {
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/43/",
+      "reference": "P6-08: CFPB Regulation Z section 1026.43(c)(2)(i), (c)(3), (c)(4), and interpretations, general ATR verification and expected income. Cases expressly assume that general rule applies"
+    },
+    "P6-09": {
+      "url": "https://selling-guide.fanniemae.com/sel/b2-1.1-01/occupancy-types",
+      "reference": "P6-09: Fannie Mae Selling Guide B2-1.1-01, Occupancy Types, program categories and exceptions. It is not a universal rule for other programs"
+    },
+    "P6-10": {
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/42/",
+      "reference": "P6-10: CFPB Regulation Z section 1026.42(a), (c), (e), and (g), valuation independence, permitted requests, reliance restrictions, and reporting scope"
+    },
+    "P6-11": {
+      "url": "https://www.ftc.gov/business-guidance/privacy-security/gramm-leach-bliley-act",
+      "reference": "P6-11: FTC Gramm Leach Bliley Act overview, privacy and safeguarding distinctions"
+    },
+    "P6-12": {
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1016/10/",
+      "reference": "P6-12: CFPB Regulation P section 1016.10, limits on nonaffiliate disclosure and references to exceptions in sections 1016.13 through 1016.15"
+    },
+    "P6-13": {
+      "url": "https://www.ftc.gov/business-guidance/resources/ftc-safeguards-rule-what-your-business-needs-know",
+      "reference": "P6-13: FTC Safeguards Rule What Your Business Needs to Know, jurisdiction, written security program, safeguards, exemptions, and incident reporting"
+    },
+    "P6-14": {
+      "url": "https://www.consumerfinance.gov/archive/blog/mortgage-closing-scams-how-protect-yourself-and-your-closing-funds/",
+      "reference": "P6-14: CFPB Mortgage Closing Scams How to Protect Yourself and Your Closing Funds, archived official consumer education on independent verification and response to diverted funds. No historical statistics are reused"
+    },
+    "P6-15": {
+      "url": "https://www.fincen.gov/mortgage-companies-and-brokers",
+      "reference": "P6-15: FinCEN Mortgage Companies and Brokers, institutional AML and SAR coverage"
+    },
+    "P6-16": {
+      "url": "https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1029#p-1029.320(d)",
+      "reference": "P6-16: eCFR Title 31 Part 1029, section 1029.320(d), SAR confidentiality and distinction from underlying facts. Consolidated page displayed current through September 28 2026; corroborated with FinCEN's original final rule"
+    },
+    "P6-17": {
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/36/",
+      "reference": "P6-17: CFPB Regulation Z section 1026.36(e)(1) and comments, compensation driven steering, available alternatives, and consummation"
+    },
+    "P6-18": {
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1024/14/",
+      "reference": "P6-18: CFPB Regulation X section 1024.14(b), (d), (e), (f), and (g), referrals, value, understandings, and permissible payments"
+    },
+    "P6-19": {
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1024/15/",
+      "reference": "P6-19: CFPB Regulation X section 1024.15(b), affiliated business conditions and ownership return limits"
+    },
+    "P6-20": {
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/24/",
+      "reference": "P6-20: CFPB Regulation Z section 1026.24(d) and (f), covered advertising disclosures, amounts, periods, taxes and insurance, and placement"
+    },
+    "P6-21": {
+      "url": "https://www.ecfr.gov/current/title-12/chapter-X/part-1014/section-1014.3",
+      "reference": "P6-21: eCFR Regulation N section 1014.3, material misrepresentations in mortgage commercial communications; page displayed Title 12 current through September 28 2026 when checked"
+    },
+    "P6-22": {
+      "url": "https://www.consumerfinance.gov/owning-a-home/closing-disclosure/",
+      "reference": "P6-22: CFPB Closing Disclosure Explainer, projected payments and nonescrow charges"
+    },
+    "P6-23": {
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1002/12/",
+      "reference": "P6-23: CFPB Regulation B section 1002.12(b), record retention and investigation or enforcement extensions. No universal deletion date is taught"
+    }
+  }
+}

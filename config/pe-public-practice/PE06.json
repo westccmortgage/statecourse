@@ -1,0 +1,614 @@
+{
+  "schema_version": "1.0",
+  "module_id": "PE06",
+  "title": "Ethics and Consumer Protection",
+  "as_of": "2026-09-30",
+  "status": "authored_review_draft",
+  "public_formative": true,
+  "credit_bearing": false,
+  "official_final_exam": false,
+  "repeatable_practice": true,
+  "implementation_note": "Free ongoing practice design. Repeated attempts support learning only; this artifact does not implement access, enrollment, time tracking, or credit. Original public formative items are separate from any protected final examination.",
+  "items": [
+    {
+      "id": "PE06-P01",
+      "module_id": "PE06",
+      "unit_id": "6A",
+      "objective_id": "PE06-A",
+      "type": "single_choice",
+      "prompt": "Two otherwise matched applicants request information about the same eligible loans. Staff give one applicant fewer options solely because she is a woman. Neither has received a credit decision. Which finding is supported?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "A concern exists only if the narrower explanation later causes a denial.",
+          "feedback": "Treatment during the information and application process is covered; a final denial is not required for this discrimination concern."
+        },
+        {
+          "id": "B",
+          "text": "The unequal information based on sex raises a Regulation B treatment violation now.",
+          "feedback": "Correct. The stipulated difference and its prohibited basis concern the current treatment, not merely a possible later outcome."
+        },
+        {
+          "id": "C",
+          "text": "The treatment is acceptable if both ultimately receive the same interest rate.",
+          "feedback": "Equal final rates do not erase unequal information provided on a prohibited basis."
+        },
+        {
+          "id": "D",
+          "text": "The proper correction is to remove the extra options from the other applicant.",
+          "feedback": "Withholding information from both is not an appropriate correction for the discriminatory restriction."
+        }
+      ],
+      "correct_choice_id": "B",
+      "source_ids": [
+        "P6-01",
+        "P6-02"
+      ],
+      "skill": "matched_treatment",
+      "assessment_role": "public_formative",
+      "credit_bearing": false
+    },
+    {
+      "id": "PE06-P02",
+      "module_id": "PE06",
+      "unit_id": "6A",
+      "objective_id": "PE06-A",
+      "type": "single_choice",
+      "prompt": "An originator tells a prospective applicant, \"Because you are retired, applying here will only get you worse terms.\" No individual repayment facts have been reviewed. Under the current Regulation B discouragement rule, what is the best assessment?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "It is outside the rule because the consumer has not submitted a signed application.",
+          "feedback": "The current provision expressly reaches directed statements to prospective applicants as well as applicants."
+        },
+        {
+          "id": "B",
+          "text": "It is permitted because retirement always reduces repayment ability.",
+          "feedback": "That is a categorical assumption; relevant individual income facts have not been evaluated."
+        },
+        {
+          "id": "C",
+          "text": "It requires the creditor to approve the applicant on the best available terms.",
+          "feedback": "Correcting discouragement does not guarantee approval or eliminate lawful eligibility and pricing requirements."
+        },
+        {
+          "id": "D",
+          "text": "It conveys worse terms on a prohibited basis rather than an individual credit analysis.",
+          "feedback": "Correct. The directed statement links expected unfavorable treatment to retirement instead of supported repayment facts."
+        }
+      ],
+      "correct_choice_id": "D",
+      "source_ids": [
+        "P6-02",
+        "P6-05"
+      ],
+      "skill": "discouragement_scope",
+      "assessment_role": "public_formative",
+      "credit_bearing": false
+    },
+    {
+      "id": "PE06-P03",
+      "module_id": "PE06",
+      "unit_id": "6A",
+      "objective_id": "PE06-A",
+      "type": "single_choice",
+      "prompt": "An applicant relies on a pension. The amount is verified, but a record says one component ends in four months. What should the reviewer do?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Evaluate the actual ending component and the remaining resources under applicable criteria.",
+          "feedback": "Correct. Individual amount and continuance evidence matters; source protection does not require ignoring a verified ending date."
+        },
+        {
+          "id": "B",
+          "text": "Exclude every pension payment because one component will end.",
+          "feedback": "An ending component does not establish that the entire pension ends or justify a categorical pension exclusion."
+        },
+        {
+          "id": "C",
+          "text": "Count every pension component indefinitely because retirement income is protected.",
+          "feedback": "Protection against automatic exclusion does not make an ending payment permanent."
+        },
+        {
+          "id": "D",
+          "text": "Require a younger relative to become the borrower before reviewing the records.",
+          "feedback": "That substitutes age and family assumptions for the individual repayment analysis."
+        }
+      ],
+      "correct_choice_id": "A",
+      "source_ids": [
+        "P6-05"
+      ],
+      "skill": "income_individualization",
+      "assessment_role": "public_formative",
+      "credit_bearing": false
+    },
+    {
+      "id": "PE06-P04",
+      "module_id": "PE06",
+      "unit_id": "6A",
+      "objective_id": "PE06-A",
+      "type": "single_choice",
+      "prompt": "A reviewer wants to understand an applicant’s stated income and actual obligations. Which inquiry is prohibited by Regulation B section 1002.5(d)(3)?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "What dependent-related financial obligations should we include, asked without a prohibited-basis distinction?",
+          "feedback": "The rule distinguishes appropriately neutral questions about dependents and related obligations from prohibited family-planning questions."
+        },
+        {
+          "id": "B",
+          "text": "What income do you want considered, with the required support-income disclosure where applicable?",
+          "feedback": "This can address repayment resources without compelling disclosure of support income the applicant does not want considered."
+        },
+        {
+          "id": "C",
+          "text": "Do you intend to have or raise children before the mortgage is repaid?",
+          "feedback": "Correct. Intentions concerning bearing or rearing children are prohibited inquiries, not a substitute for financial evidence."
+        },
+        {
+          "id": "D",
+          "text": "What current support payments are you obligated to make?",
+          "feedback": "Obligations to pay support are different from an inquiry about childbearing intentions."
+        }
+      ],
+      "correct_choice_id": "C",
+      "source_ids": [
+        "P6-06"
+      ],
+      "skill": "permitted_inquiries",
+      "assessment_role": "public_formative",
+      "credit_bearing": false
+    },
+    {
+      "id": "PE06-P05",
+      "module_id": "PE06",
+      "unit_id": "6A",
+      "objective_id": "PE06-A",
+      "type": "single_choice",
+      "prompt": "Two applicants have the same product eligibility. One statement contains an unresolved transfer that requires sourcing under a lawful policy applied to all applicants; the other has no such transfer. Which response is most defensible?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Request proportionate source evidence for the transfer and document the actual reason.",
+          "feedback": "Correct. Relevant individual evidence can justify a different request; consistency does not require ignoring a real difference."
+        },
+        {
+          "id": "B",
+          "text": "Request extra documents from both, even if they have no relevance to the other file.",
+          "feedback": "Identical burden is not the goal. A request should have a legitimate purpose tied to the actual file."
+        },
+        {
+          "id": "C",
+          "text": "Waive the sourcing requirement because any different request is discrimination.",
+          "feedback": "A supported nondiscriminatory difference can warrant a proportionate inquiry."
+        },
+        {
+          "id": "D",
+          "text": "Record national origin as the explanation because it helps identify transfer risk.",
+          "feedback": "National origin is not the actual sourcing discrepancy and cannot replace the relevant evidence."
+        }
+      ],
+      "correct_choice_id": "A",
+      "source_ids": [
+        "P6-02",
+        "P6-05"
+      ],
+      "skill": "legitimate_difference",
+      "assessment_role": "public_formative",
+      "credit_bearing": false
+    },
+    {
+      "id": "PE06-P06",
+      "module_id": "PE06",
+      "unit_id": "6B",
+      "objective_id": "PE06-B",
+      "type": "single_choice",
+      "prompt": "Authorized verification confirms June salary of $5,900 monthly and a conditional increase to $6,700 beginning September. A replacement June record shows $6,700. Which file note is accurate without deciding future-income eligibility?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "June salary is verified at $6,700 because the employer confirmed that amount for September.",
+          "feedback": "A prospective amount does not correct the historical June record."
+        },
+        {
+          "id": "B",
+          "text": "Both documents are verified because each amount appears in an employer communication.",
+          "feedback": "The periods and conditions differ; the replacement June statement remains inconsistent with verified June pay."
+        },
+        {
+          "id": "C",
+          "text": "June salary is $5,900; the conditional September increase needs separate underwriting review.",
+          "feedback": "Correct. This preserves the verified historical fact and routes the prospective amount without converting it into past earnings."
+        },
+        {
+          "id": "D",
+          "text": "June salary is $5,900, so the applicant deliberately forged the replacement.",
+          "feedback": "The verification resolves the amount, not necessarily who created the replacement or their intent."
+        }
+      ],
+      "correct_choice_id": "C",
+      "source_ids": [
+        "P6-08",
+        "P6-23"
+      ],
+      "skill": "income_period_integrity",
+      "assessment_role": "public_formative",
+      "credit_bearing": false
+    },
+    {
+      "id": "PE06-P07",
+      "module_id": "PE06",
+      "unit_id": "6B",
+      "objective_id": "PE06-B",
+      "type": "single_choice",
+      "prompt": "A borrower states an intention to occupy Unit A of a duplex. A current lease covers only Unit B. Which initial conclusion is best?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "The lease proves the entire property must be classified as an investment.",
+          "feedback": "The lease is for another unit. Read the actual intended use and applicable program rules before classifying the property."
+        },
+        {
+          "id": "B",
+          "text": "The occupancy statement is fully verified solely because Unit A is not in the lease.",
+          "feedback": "Absence from this lease does not complete every occupancy or program requirement."
+        },
+        {
+          "id": "C",
+          "text": "The originator should remove the lease to prevent confusion during underwriting.",
+          "feedback": "Removing relevant evidence hides rather than resolves the property-use question."
+        },
+        {
+          "id": "D",
+          "text": "The facts can coexist; verify the intended use and applicable occupancy requirements.",
+          "feedback": "Correct. A rented separate unit is not by itself a contradiction of intended occupancy in Unit A."
+        }
+      ],
+      "correct_choice_id": "D",
+      "source_ids": [
+        "P6-09"
+      ],
+      "skill": "occupancy_evidence",
+      "assessment_role": "public_formative",
+      "credit_bearing": false
+    },
+    {
+      "id": "PE06-P08",
+      "module_id": "PE06",
+      "unit_id": "6B",
+      "objective_id": "PE06-B",
+      "type": "single_choice",
+      "prompt": "A report’s birth date and suffix differ from the applicant’s records. The source of the mismatch is unknown. What should the handoff say?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "The applicant is using another person’s identity and should be reported as a criminal.",
+          "feedback": "The mismatch does not establish deliberate misuse, responsibility, or a criminal finding."
+        },
+        {
+          "id": "B",
+          "text": "The report-to-applicant association is unresolved; use the approved identity and credit-report process.",
+          "feedback": "Correct. This identifies the reliance problem and routes verification without inventing a conclusion."
+        },
+        {
+          "id": "C",
+          "text": "The score is usable if the surname matches and the result is favorable.",
+          "feedback": "A matching surname does not resolve the material identifier differences."
+        },
+        {
+          "id": "D",
+          "text": "The report should be edited locally to match the application identifiers.",
+          "feedback": "Changing the report’s appearance does not establish whose history it contains."
+        }
+      ],
+      "correct_choice_id": "B",
+      "source_ids": [
+        "P6-08"
+      ],
+      "skill": "identity_resolution",
+      "assessment_role": "public_formative",
+      "credit_bearing": false
+    },
+    {
+      "id": "PE06-P09",
+      "module_id": "PE06",
+      "unit_id": "6B",
+      "objective_id": "PE06-B",
+      "type": "single_choice",
+      "prompt": "For a covered principal-dwelling transaction, an appraisal may omit a bathroom. A manager proposes withholding future work unless the appraiser adds $15,000. Which response preserves a lawful factual review?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Communicate the $15,000 requirement indirectly through the appraisal management company.",
+          "feedback": "Indirect pressure for a target outcome is not protected by using an intermediary."
+        },
+        {
+          "id": "B",
+          "text": "Ask the borrower to request the increase so the originator does not make the demand.",
+          "feedback": "Using another person to exert the same outcome pressure does not preserve independent judgment."
+        },
+        {
+          "id": "C",
+          "text": "Submit the bathroom evidence through the approved channel and request independent review without a target or threat.",
+          "feedback": "Correct. Appropriate additional information and error review are permitted; coercion and attempted coercion are prohibited."
+        },
+        {
+          "id": "D",
+          "text": "Treat the bathroom issue as proof of a reportable material professional violation.",
+          "feedback": "A possible factual error needs assessment; the facts supplied do not establish the separate material-failure reporting standard."
+        }
+      ],
+      "correct_choice_id": "C",
+      "source_ids": [
+        "P6-10"
+      ],
+      "skill": "valuation_independence",
+      "assessment_role": "public_formative",
+      "credit_bearing": false
+    },
+    {
+      "id": "PE06-P10",
+      "module_id": "PE06",
+      "unit_id": "6B",
+      "objective_id": "PE06-B",
+      "type": "single_choice",
+      "prompt": "An employee uploads an unredacted customer bank statement to an unapproved public summarizing tool. What is the most appropriate immediate recommended response?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Activate the approved incident process and preserve what was sent, when, and to which service.",
+          "feedback": "Correct. Prompt factual escalation supports containment and the applicable legal notification analysis; do not conceal the event."
+        },
+        {
+          "id": "B",
+          "text": "Wait until the customer reports misuse before involving the security team.",
+          "feedback": "Harm is not a prerequisite to identifying and responding to a possible unauthorized disclosure."
+        },
+        {
+          "id": "C",
+          "text": "Delete the browser history and mark the exposure resolved.",
+          "feedback": "Local deletion does not establish removal of data from the outside service and can conceal relevant evidence."
+        },
+        {
+          "id": "D",
+          "text": "Assume the privacy notice authorized the upload because the purpose was loan processing.",
+          "feedback": "A privacy notice is not blanket permission to use any external recipient or tool; approved sharing and security conditions matter."
+        }
+      ],
+      "correct_choice_id": "A",
+      "source_ids": [
+        "P6-11",
+        "P6-12",
+        "P6-13"
+      ],
+      "skill": "privacy_security_response",
+      "assessment_role": "public_formative",
+      "credit_bearing": false
+    },
+    {
+      "id": "PE06-P11",
+      "module_id": "PE06",
+      "unit_id": "6B",
+      "objective_id": "PE06-B",
+      "type": "single_choice",
+      "prompt": "At a covered mortgage company, a customer asks whether the company filed a SAR. The originator also needs an ordinary factual clarification about a deposit. Which response best respects the distinction?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Confirm the SAR but withhold a copy, because only the form itself is confidential.",
+          "feedback": "Information revealing a SAR’s existence is also protected, subject to the governing exceptions."
+        },
+        {
+          "id": "B",
+          "text": "Do not disclose SAR existence; route the request and any needed factual inquiry through the approved compliance process.",
+          "feedback": "Correct. SAR confidentiality and legitimate handling of underlying transaction facts are distinct; use the authorized process."
+        },
+        {
+          "id": "C",
+          "text": "Promise that no report will be filed if the customer signs a corrected application.",
+          "feedback": "A reporting promise or threat is not an acceptable bargaining tool and can interfere with compliance duties."
+        },
+        {
+          "id": "D",
+          "text": "Stop all factual document requests because underlying facts are always confidential as SAR information.",
+          "feedback": "The rule distinguishes underlying facts, transactions, and documents from disclosure of the SAR or its existence."
+        }
+      ],
+      "correct_choice_id": "B",
+      "source_ids": [
+        "P6-15",
+        "P6-16"
+      ],
+      "skill": "sar_confidentiality",
+      "assessment_role": "public_formative",
+      "credit_bearing": false
+    },
+    {
+      "id": "PE06-P12",
+      "module_id": "PE06",
+      "unit_id": "6C",
+      "objective_id": "PE06-C",
+      "type": "single_choice",
+      "prompt": "An originator has hidden a likely-qualifying lower-cost option available through a regular creditor solely to obtain more creditor-paid compensation. No loan has yet been consummated. What is the best next step?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Approve the practice because section 1026.36(e)(1) includes a consummation element.",
+          "feedback": "The absence of consummation does not make the conduct appropriate or remove the need to prevent consumer harm and review other obligations."
+        },
+        {
+          "id": "B",
+          "text": "Tell the customer the specified steering violation is complete even though no loan was obtained.",
+          "feedback": "The interpretation of this specific provision includes consummation; describe the current concern precisely."
+        },
+        {
+          "id": "C",
+          "text": "Obtain a general waiver allowing the originator to choose whichever option pays more.",
+          "feedback": "A waiver does not supply an accurate comparison or a consumer-interest justification for hiding the option."
+        },
+        {
+          "id": "D",
+          "text": "Correct the comparison now and route the compensation-driven recommendation for review.",
+          "feedback": "Correct. The specific violation’s consummation element is not a reason to delay correction of the harmful recommendation."
+        }
+      ],
+      "correct_choice_id": "D",
+      "source_ids": [
+        "P6-17"
+      ],
+      "skill": "steering_prevention",
+      "assessment_role": "public_formative",
+      "credit_bearing": false
+    },
+    {
+      "id": "PE06-P13",
+      "module_id": "PE06",
+      "unit_id": "6C",
+      "objective_id": "PE06-C",
+      "type": "single_choice",
+      "prompt": "A title provider agrees to pay an outside broker’s conference airfare only after five covered settlement-service referrals close. The broker performs no service for the provider. Which conclusion best addresses the proposed educational exception?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Airfare is outside RESPA because no cash is delivered to the broker.",
+          "feedback": "A thing of value can include payment of another person’s expenses."
+        },
+        {
+          "id": "B",
+          "text": "Calling the conference educational establishes the exception.",
+          "feedback": "The label does not satisfy the conditions governing promotional and educational activities."
+        },
+        {
+          "id": "C",
+          "text": "A signed borrower disclosure removes both concerns with the arrangement.",
+          "feedback": "Disclosure does not eliminate a referral condition or payment of otherwise-incurred expenses under this exception."
+        },
+        {
+          "id": "D",
+          "text": "The referral condition and payment of the broker’s otherwise-incurred expense defeat that exception.",
+          "feedback": "Correct. Section 1024.14(g)(1)(vi) has both conditions; the stated arrangement fails them."
+        }
+      ],
+      "correct_choice_id": "D",
+      "source_ids": [
+        "P6-18"
+      ],
+      "skill": "referral_value",
+      "assessment_role": "public_formative",
+      "credit_bearing": false
+    },
+    {
+      "id": "PE06-P14",
+      "module_id": "PE06",
+      "unit_id": "6C",
+      "objective_id": "PE06-C",
+      "type": "single_choice",
+      "prompt": "An illustration has $1,760 P&I, $340 estimated monthly taxes, $115 estimated homeowners insurance, $90 mortgage insurance, and $80 association dues paid separately. The first four are collected together. What should the explanation show?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "$2,215 total outlay; taxes and homeowners insurance complete the housing cost.",
+          "feedback": "That sum includes P&I, taxes, and homeowners insurance but omits the $90 mortgage insurance and $80 association charge."
+        },
+        {
+          "id": "B",
+          "text": "$2,385 total outlay, including a $2,305 collection and $80 separate dues.",
+          "feedback": "Correct. $1,760 + $340 + $115 + $90 = $2,305; adding $80 gives $2,385. Identify estimates and possible changes."
+        },
+        {
+          "id": "C",
+          "text": "$2,305 total outlay, with the $80 already included in the collection.",
+          "feedback": "The stated first-four-item collection is $2,305, and the separate $80 must still be added."
+        },
+        {
+          "id": "D",
+          "text": "$1,760 total outlay because a fixed rate fixes every monthly housing cost.",
+          "feedback": "P&I is only one component; a fixed rate does not make taxes, insurance, or dues disappear or remain unchanged."
+        }
+      ],
+      "correct_choice_id": "B",
+      "source_ids": [
+        "P6-22"
+      ],
+      "skill": "housing_outlay",
+      "assessment_role": "public_formative",
+      "credit_bearing": false
+    },
+    {
+      "id": "PE06-P15",
+      "module_id": "PE06",
+      "unit_id": "6C",
+      "objective_id": "PE06-C",
+      "type": "single_choice",
+      "prompt": "An ordinary covered first-lien dwelling-loan webpage advertises a payment that excludes taxes and insurance. Which proposed correction is the strongest?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Leave the payment headline unchanged and rely on the later Closing Disclosure to explain exclusions.",
+          "feedback": "Later transaction disclosures do not replace applicable advertising disclosures at the advertising stage."
+        },
+        {
+          "id": "B",
+          "text": "Add an accurate tax-and-insurance statement anywhere on the website.",
+          "feedback": "The applicable rule requires prominence and close proximity, not merely existence somewhere on the site."
+        },
+        {
+          "id": "C",
+          "text": "Identify the exclusion and greater obligation prominently nearby, then review payment periods and all other triggered terms.",
+          "feedback": "Correct. This addresses the isolated defect while recognizing that the complete advertisement still needs review."
+        },
+        {
+          "id": "D",
+          "text": "Replace the amount with an estimated total and declare compliance without reviewing any other term.",
+          "feedback": "Correcting one number does not establish that all scope, payment, APR, or triggered disclosure requirements are met."
+        }
+      ],
+      "correct_choice_id": "C",
+      "source_ids": [
+        "P6-20"
+      ],
+      "skill": "advertising_review",
+      "assessment_role": "public_formative",
+      "credit_bearing": false
+    },
+    {
+      "id": "PE06-P16",
+      "module_id": "PE06",
+      "unit_id": "6C",
+      "objective_id": "PE06-C",
+      "type": "single_choice",
+      "prompt": "A customer can afford a loan only if a future refinance lowers the payment. The originator has no evidence that such a refinance will be available. What is the most responsible explanation?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Explain today’s obligations and risks, avoid guaranteeing refinancing, and review available alternatives under accurate assumptions.",
+          "feedback": "Correct. A later refinance depends on future facts; it cannot be promised as the solution to today’s payment risk."
+        },
+        {
+          "id": "B",
+          "text": "Promise a refinance after twelve payments because payment history always guarantees approval.",
+          "feedback": "No such guarantee follows from the facts; future eligibility, rates, value, and other conditions can differ."
+        },
+        {
+          "id": "C",
+          "text": "Keep the promise if the customer signs that future rates are uncertain.",
+          "feedback": "A generic acknowledgment does not cure an unsupported guarantee or contradictory explanation."
+        },
+        {
+          "id": "D",
+          "text": "Recommend signing immediately so the consumer cannot lose the projected refinance benefit.",
+          "feedback": "The supposed benefit and urgency are unsupported; pressure does not create reliable evidence."
+        }
+      ],
+      "correct_choice_id": "A",
+      "source_ids": [
+        "P6-21",
+        "P6-22"
+      ],
+      "skill": "honest_consumer_next_step",
+      "assessment_role": "public_formative",
+      "credit_bearing": false
+    }
+  ]
+}

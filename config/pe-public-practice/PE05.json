@@ -1,0 +1,764 @@
+{
+  "schema_version": "1.0",
+  "module_id": "PE05",
+  "title": "Federal Mortgage Law",
+  "as_of": "2026-09-30",
+  "status": "authored_review_draft",
+  "public_formative": true,
+  "credit_bearing": false,
+  "official_final_exam": false,
+  "repeatable_practice": true,
+  "implementation_note": "Free ongoing practice design. Repeated attempts support learning only; this artifact does not implement access, enrollment, time tracking, or credit. Additional voluntary repetitions are outside the proposed instructional minute budget.",
+  "items": [
+    {
+      "id": "PE05-P01",
+      "module_id": "PE05",
+      "unit_id": "5A",
+      "objective_id": "PE05-A",
+      "type": "single_choice",
+      "prompt": "A consumer asks for a HELOC secured by a home. Which disclosure conclusion is supported?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Use the ordinary closed-end LE and CD rules because every mortgage uses them.",
+          "feedback": "The integrated LE/CD framework is not the disclosure framework for every home-secured product."
+        },
+        {
+          "id": "B",
+          "text": "Check the separate open-end disclosure rules and other applicable laws.",
+          "feedback": "Correct. Product coverage comes before selecting forms; other laws can still apply."
+        },
+        {
+          "id": "C",
+          "text": "No federal disclosures apply because the loan is open-end.",
+          "feedback": "Exclusion from these integrated forms is not exclusion from federal consumer protection."
+        },
+        {
+          "id": "D",
+          "text": "Use whichever forms the consumer prefers.",
+          "feedback": "Consumer preference does not determine the legally applicable disclosure framework."
+        }
+      ],
+      "correct_choice_id": "B",
+      "source_ids": [
+        "P5-02",
+        "P5-06"
+      ],
+      "skill": "coverage",
+      "assessment_role": "public_formative",
+      "credit_bearing": false
+    },
+    {
+      "id": "PE05-P02",
+      "module_id": "PE05",
+      "unit_id": "5A",
+      "objective_id": "PE05-A",
+      "type": "single_choice",
+      "prompt": "All six TRID elements arrive Monday September 14, 2026. The lender is open for substantially all business functions Monday-Friday, with no holiday. The loan remains pending. When must the initial LE ordinarily be delivered or mailed?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Wednesday September 16.",
+          "feedback": "Tuesday is the first counted creditor business day; Wednesday is only the second."
+        },
+        {
+          "id": "B",
+          "text": "Friday September 18, when pay stubs arrive.",
+          "feedback": "Verification does not postpone this stipulated application trigger."
+        },
+        {
+          "id": "C",
+          "text": "Thursday September 17.",
+          "feedback": "Correct. Tuesday, Wednesday and Thursday are the three business days after receipt."
+        },
+        {
+          "id": "D",
+          "text": "Monday September 21, after software entry on Wednesday.",
+          "feedback": "The actual receipt event, not later software entry, controls this trigger."
+        }
+      ],
+      "correct_choice_id": "C",
+      "source_ids": [
+        "P5-02",
+        "P5-06"
+      ],
+      "skill": "initial_le_timing",
+      "assessment_role": "public_formative",
+      "credit_bearing": false
+    },
+    {
+      "id": "PE05-P03",
+      "module_id": "PE05",
+      "unit_id": "5A",
+      "objective_id": "PE05-A",
+      "type": "single_choice",
+      "prompt": "An initial CD is mailed Tuesday September 22, 2026. There is no earlier actual-receipt evidence or intervening holiday, no restart or waiver, and all other waits are satisfied. What is the earliest consummation under the ordinary CD rule?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Friday September 25.",
+          "feedback": "Friday is presumed receipt, not the end of the separate three-business-day waiting period."
+        },
+        {
+          "id": "B",
+          "text": "Monday September 28.",
+          "feedback": "Saturday 26 is day one after receipt and Monday 28 is day two."
+        },
+        {
+          "id": "C",
+          "text": "Wednesday September 23.",
+          "feedback": "A mailing date is not same-day actual receipt, and no applicable three-day wait has elapsed."
+        },
+        {
+          "id": "D",
+          "text": "Tuesday September 29.",
+          "feedback": "Correct. Presumed receipt is Friday 25; Saturday 26, Monday 28 and Tuesday 29 complete the next three business days."
+        }
+      ],
+      "correct_choice_id": "D",
+      "source_ids": [
+        "P5-02",
+        "P5-06"
+      ],
+      "skill": "cd_receipt_wait",
+      "assessment_role": "public_formative",
+      "credit_bearing": false
+    },
+    {
+      "id": "PE05-P04",
+      "module_id": "PE05",
+      "unit_id": "5A",
+      "objective_id": "PE05-A",
+      "type": "single_choice",
+      "prompt": "A covered rescindable transaction is consummated Friday September 25, 2026, and every required consumer receives the rescission notice and material disclosures that day. No holiday or waiver applies. When does the ordinary rescission period end?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Midnight Tuesday September 29.",
+          "feedback": "Correct. Saturday 26, Monday 28 and Tuesday 29 are the three business days; the right ordinarily runs until midnight of day three."
+        },
+        {
+          "id": "B",
+          "text": "At signing on Friday September 25.",
+          "feedback": "Consummation can start this period; it does not automatically end the right."
+        },
+        {
+          "id": "C",
+          "text": "Midnight Monday September 28.",
+          "feedback": "Excluding Sunday still leaves Tuesday as the third business day."
+        },
+        {
+          "id": "D",
+          "text": "At noon Wednesday September 30.",
+          "feedback": "The ordinary rule specifies midnight on the third business day, not noon on a later funding date."
+        }
+      ],
+      "correct_choice_id": "A",
+      "source_ids": [
+        "P5-07"
+      ],
+      "skill": "rescission",
+      "assessment_role": "public_formative",
+      "credit_bearing": false
+    },
+    {
+      "id": "PE05-P05",
+      "module_id": "PE05",
+      "unit_id": "5B",
+      "objective_id": "PE05-B",
+      "type": "single_choice",
+      "prompt": "Correctly classified ten-percent aggregate charges have a valid estimate of $1,300 and final charges of $1,470. All services were performed and no revised baseline is permitted. What is the aggregate excess?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "$170.",
+          "feedback": "$170 is the raw increase; the aggregate permits an increase up to $130 under the stated conditions."
+        },
+        {
+          "id": "B",
+          "text": "$40.",
+          "feedback": "Correct. $1,300 times 1.10 is $1,430; $1,470 minus $1,430 is $40."
+        },
+        {
+          "id": "C",
+          "text": "$147.",
+          "feedback": "Ten percent of actual charges is not the excess calculation."
+        },
+        {
+          "id": "D",
+          "text": "$0 because no individual fee rose more than the total.",
+          "feedback": "The aggregate comparison, not that description of individual fees, produces a $40 excess."
+        }
+      ],
+      "correct_choice_id": "B",
+      "source_ids": [
+        "P5-02"
+      ],
+      "skill": "tolerance_math",
+      "assessment_role": "public_formative",
+      "credit_bearing": false
+    },
+    {
+      "id": "PE05-P06",
+      "module_id": "PE05",
+      "unit_id": "5B",
+      "objective_id": "PE05-B",
+      "type": "single_choice",
+      "prompt": "A known lender fee was omitted from the initial LE through a clerical error. A new LE accurately shows it. What else is needed before treating that new amount as a permitted higher tolerance baseline?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Only the borrower's silence.",
+          "feedback": "Silence does not create a permitted revision event."
+        },
+        {
+          "id": "B",
+          "text": "Only evidence that the new document was sent.",
+          "feedback": "Delivery is necessary where required but does not establish the substantive reason."
+        },
+        {
+          "id": "C",
+          "text": "A legally permitted revision reason and applicable timing, which the omission alone does not establish.",
+          "feedback": "Correct. A corrected estimate is not automatically a lawful reset of the comparison amount."
+        },
+        {
+          "id": "D",
+          "text": "Nothing; the latest version always controls.",
+          "feedback": "The latest displayed amount and legally usable baseline can differ."
+        }
+      ],
+      "correct_choice_id": "C",
+      "source_ids": [
+        "P5-02"
+      ],
+      "skill": "revision_reason",
+      "assessment_role": "public_formative",
+      "credit_bearing": false
+    },
+    {
+      "id": "PE05-P07",
+      "module_id": "PE05",
+      "unit_id": "5B",
+      "objective_id": "PE05-B",
+      "type": "single_choice",
+      "prompt": "An appraisal was estimated and charged at $640. The provider actually receives $600 for the whole service; no other service or lawful average-charge program exists. What is supported?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "No issue exists because LE and CD match.",
+          "feedback": "The tolerance test and actual-charge ceiling are different."
+        },
+        {
+          "id": "B",
+          "text": "The $40 difference is automatically lawful profit.",
+          "feedback": "The facts establish no lawful basis for retaining this service-charge difference."
+        },
+        {
+          "id": "C",
+          "text": "The borrower can waive the issue by accepting the LE.",
+          "feedback": "Acceptance does not create the absent exception."
+        },
+        {
+          "id": "D",
+          "text": "The actual-charge rule raises a separate $40 issue despite no LE-to-CD increase.",
+          "feedback": "Correct. A passing estimate comparison does not establish that the amount imposed is permissible."
+        }
+      ],
+      "correct_choice_id": "D",
+      "source_ids": [
+        "P5-02"
+      ],
+      "skill": "actual_charge",
+      "assessment_role": "public_formative",
+      "credit_bearing": false
+    },
+    {
+      "id": "PE05-P08",
+      "module_id": "PE05",
+      "unit_id": "5B",
+      "objective_id": "PE05-B",
+      "type": "single_choice",
+      "prompt": "A title firm pays an unrelated mortgage lender's originator $100 per covered referral. The originator is not the title firm's employee, performs no separate service, and no exception applies. The parties disclose the payment. Which conclusion follows?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Disclosure does not legalize the referral payment; decline and escalate the arrangement.",
+          "feedback": "Correct. The agreement buys referrals, and disclosure does not remove the RESPA prohibition."
+        },
+        {
+          "id": "B",
+          "text": "It is lawful if both firms are licensed.",
+          "feedback": "Licensing is not a blanket exception to the referral rule."
+        },
+        {
+          "id": "C",
+          "text": "It is lawful if described as advertising.",
+          "feedback": "A label does not create actual compensable services."
+        },
+        {
+          "id": "D",
+          "text": "It is lawful whenever the consumer signs.",
+          "feedback": "Consumer acknowledgment does not authorize a prohibited kickback."
+        }
+      ],
+      "correct_choice_id": "A",
+      "source_ids": [
+        "P5-08"
+      ],
+      "skill": "referral_restriction",
+      "assessment_role": "public_formative",
+      "credit_bearing": false
+    },
+    {
+      "id": "PE05-P09",
+      "module_id": "PE05",
+      "unit_id": "5C",
+      "objective_id": "PE05-C",
+      "type": "single_choice",
+      "prompt": "A creditor evaluates a request without a property address, decides it will not approve because of serious delinquencies, and tells the consumer. What is the strongest next conclusion?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "No application exists under any federal law.",
+          "feedback": "Different provisions use different application tests."
+        },
+        {
+          "id": "B",
+          "text": "Apply the Regulation B notice analysis even though the six-item TRID trigger is not established.",
+          "feedback": "Correct. The evaluated and communicated decline raises ECOA duties independent of the missing TRID element."
+        },
+        {
+          "id": "C",
+          "text": "Wait for a property before recording the decision.",
+          "feedback": "Later property identification does not erase the action already communicated."
+        },
+        {
+          "id": "D",
+          "text": "Treat the request as withdrawn because it cannot close now.",
+          "feedback": "The consumer did not expressly withdraw, and the stated decision must be preserved."
+        }
+      ],
+      "correct_choice_id": "B",
+      "source_ids": [
+        "P5-12",
+        "P5-13"
+      ],
+      "skill": "application_definitions",
+      "assessment_role": "public_formative",
+      "credit_bearing": false
+    },
+    {
+      "id": "PE05-P10",
+      "module_id": "PE05",
+      "unit_id": "5C",
+      "objective_id": "PE05-C",
+      "type": "single_choice",
+      "prompt": "An ordinary application lacks applicant-provided information, and the creditor has insufficient information to decide. After one unanswered call, what is appropriate?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Mark the consumer withdrawn.",
+          "feedback": "One unanswered call is not evidence of express withdrawal."
+        },
+        {
+          "id": "B",
+          "text": "Keep it pending forever.",
+          "feedback": "Incompleteness is not an indefinite exemption from the applicable notice rule."
+        },
+        {
+          "id": "C",
+          "text": "Follow the timely action/notice or compliant written incompleteness process.",
+          "feedback": "Correct. Identify the missing information and applicable notice path instead of inventing a status."
+        },
+        {
+          "id": "D",
+          "text": "Invent a credit-score reason so the queue closes.",
+          "feedback": "Adverse-action reasons must reflect actual decision factors, not operational convenience."
+        }
+      ],
+      "correct_choice_id": "C",
+      "source_ids": [
+        "P5-13"
+      ],
+      "skill": "incompleteness",
+      "assessment_role": "public_formative",
+      "credit_bearing": false
+    },
+    {
+      "id": "PE05-P11",
+      "module_id": "PE05",
+      "unit_id": "5C",
+      "objective_id": "PE05-C",
+      "type": "single_choice",
+      "prompt": "A decline relied partly on a consumer report. The notice gives only a credit score and score factors. Why might it be insufficient?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Consumer reports can never be used in credit decisions.",
+          "feedback": "Permissible-purpose credit use is possible; the issue is whether the required notices were supplied."
+        },
+        {
+          "id": "B",
+          "text": "Every decline must be explained by the reporting agency.",
+          "feedback": "The creditor makes the credit decision; the reporting agency does not become responsible for it."
+        },
+        {
+          "id": "C",
+          "text": "Only the loan originator's oral reassurance is required.",
+          "feedback": "An oral reassurance does not replace the applicable written ECOA notice or FCRA information."
+        },
+        {
+          "id": "D",
+          "text": "ECOA actual decision reasons and FCRA notice components are separate requirements.",
+          "feedback": "Correct. Score factors alone do not necessarily explain the creditor's actual principal reasons or include all FCRA components."
+        }
+      ],
+      "correct_choice_id": "D",
+      "source_ids": [
+        "P5-13",
+        "P5-16",
+        "P5-17"
+      ],
+      "skill": "notice_distinctions",
+      "assessment_role": "public_formative",
+      "credit_bearing": false
+    },
+    {
+      "id": "PE05-P12",
+      "module_id": "PE05",
+      "unit_id": "5C",
+      "objective_id": "PE05-C",
+      "type": "single_choice",
+      "prompt": "A covered institution collects required demographic information for HMDA reporting. What does that authorize?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Accurate collection/reporting under applicable instructions, not prohibited-basis pricing.",
+          "feedback": "Correct. Monitoring data and lawful credit evaluation serve different functions."
+        },
+        {
+          "id": "B",
+          "text": "Different interest rates based on the reported race.",
+          "feedback": "Required collection does not authorize discriminatory pricing."
+        },
+        {
+          "id": "C",
+          "text": "Guessing missing answers to make the form complete.",
+          "feedback": "Follow the actual collection and permitted observation rules; do not fabricate consumer answers."
+        },
+        {
+          "id": "D",
+          "text": "Automatic denial if the applicant declines to self-identify.",
+          "feedback": "Declining to self-identify is not an automatic denial reason."
+        }
+      ],
+      "correct_choice_id": "A",
+      "source_ids": [
+        "P5-19",
+        "P5-21"
+      ],
+      "skill": "hmda_role",
+      "assessment_role": "public_formative",
+      "credit_bearing": false
+    },
+    {
+      "id": "PE05-P13",
+      "module_id": "PE05",
+      "unit_id": "5D",
+      "objective_id": "PE05-D",
+      "type": "single_choice",
+      "prompt": "A loan is labeled non-QM. Which statement is accurate?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "That label automatically makes the loan illegal.",
+          "feedback": "Non-QM status alone does not establish illegality."
+        },
+        {
+          "id": "B",
+          "text": "Applicable ATR duties still need analysis; non-QM is not an exemption by itself.",
+          "feedback": "Correct. QM status and the scope of ATR obligations are separate questions."
+        },
+        {
+          "id": "C",
+          "text": "No income verification can be required.",
+          "feedback": "The label does not remove otherwise applicable verification requirements."
+        },
+        {
+          "id": "D",
+          "text": "A future refinance promise substitutes for repayment analysis.",
+          "feedback": "Expected refinancing does not replace the required good-faith repayment determination."
+        }
+      ],
+      "correct_choice_id": "B",
+      "source_ids": [
+        "P5-23"
+      ],
+      "skill": "atr_qm",
+      "assessment_role": "public_formative",
+      "credit_bearing": false
+    },
+    {
+      "id": "PE05-P14",
+      "module_id": "PE05",
+      "unit_id": "5D",
+      "objective_id": "PE05-D",
+      "type": "single_choice",
+      "prompt": "Assume a covered nonjumbo first lien under the stated HPML definition. The applicable APOR is 6.00% and APR 7.60%. What follows?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "The spread is 0.16 percentage points.",
+          "feedback": "Subtract 6.00 from 7.60 to obtain 1.60 percentage points."
+        },
+        {
+          "id": "B",
+          "text": "HOEPA status is conclusively established.",
+          "feedback": "HOEPA has separate coverage and threshold tests."
+        },
+        {
+          "id": "C",
+          "text": "The 1.60-percentage-point spread meets the basic 1.5-point HPML threshold; other requirements need separate analysis.",
+          "feedback": "Correct. Classification is supported by these stipulated facts, but exemptions and particular duties are separate."
+        },
+        {
+          "id": "D",
+          "text": "The loan is exempt from escrow and appraisal rules.",
+          "feedback": "The facts do not establish any escrow or appraisal exemption."
+        }
+      ],
+      "correct_choice_id": "C",
+      "source_ids": [
+        "P5-24",
+        "P5-25"
+      ],
+      "skill": "hpml_screen",
+      "assessment_role": "public_formative",
+      "credit_bearing": false
+    },
+    {
+      "id": "PE05-P15",
+      "module_id": "PE05",
+      "unit_id": "5D",
+      "objective_id": "PE05-D",
+      "type": "single_choice",
+      "prompt": "An originator is offered higher compensation solely because the borrower accepts a higher interest rate on a covered loan. What is the proper next step?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Accept if the borrower signs a fee disclosure.",
+          "feedback": "Acknowledgment does not authorize prohibited term-based compensation."
+        },
+        {
+          "id": "B",
+          "text": "Rename the difference a service bonus.",
+          "feedback": "Renaming payment does not change its basis."
+        },
+        {
+          "id": "C",
+          "text": "Assume lender-paid compensation is exempt.",
+          "feedback": "The source of payment does not create a blanket exemption."
+        },
+        {
+          "id": "D",
+          "text": "Stop and obtain compensation-rule review before the arrangement is used.",
+          "feedback": "Correct. Compensation based on a transaction term presents a direct rule issue requiring review."
+        }
+      ],
+      "correct_choice_id": "D",
+      "source_ids": [
+        "P5-27"
+      ],
+      "skill": "compensation",
+      "assessment_role": "public_formative",
+      "credit_bearing": false
+    },
+    {
+      "id": "PE05-P16",
+      "module_id": "PE05",
+      "unit_id": "5D",
+      "objective_id": "PE05-D",
+      "type": "single_choice",
+      "prompt": "A social-media mortgage ad prominently states a monthly payment. Which review is needed?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Trigger-term and other applicable advertising disclosures, availability and misleading-impression review.",
+          "feedback": "Correct. Format, required context and the overall representation matter, not merely the isolated number."
+        },
+        {
+          "id": "B",
+          "text": "None because social media is informal.",
+          "feedback": "A social-media format does not remove the advertising rules."
+        },
+        {
+          "id": "C",
+          "text": "Only whether the number is arithmetically possible.",
+          "feedback": "A possible number can still be misleading or lack required disclosures."
+        },
+        {
+          "id": "D",
+          "text": "Only whether a disclaimer appears somewhere.",
+          "feedback": "A disclaimer alone does not establish compliant prominence, content or accuracy."
+        }
+      ],
+      "correct_choice_id": "A",
+      "source_ids": [
+        "P5-28"
+      ],
+      "skill": "advertising",
+      "assessment_role": "public_formative",
+      "credit_bearing": false
+    },
+    {
+      "id": "PE05-P17",
+      "module_id": "PE05",
+      "unit_id": "5B",
+      "objective_id": "PE05-B",
+      "type": "single_choice",
+      "prompt": "Before consummation, a CD correction adds a prepayment penalty. Assume the ordinary rule applies and there is no waiver. What follows?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "No new wait because only APR changes matter.",
+          "feedback": "The rule identifies three restart categories, not APR alone."
+        },
+        {
+          "id": "B",
+          "text": "A new three-business-day waiting period applies after receipt of corrected disclosures.",
+          "feedback": "Correct. Adding a prepayment penalty is one of the specified restart events."
+        },
+        {
+          "id": "C",
+          "text": "The wait restarts only if the consumer complains.",
+          "feedback": "The requirement does not depend on a complaint."
+        },
+        {
+          "id": "D",
+          "text": "A revised LE can always replace the CD.",
+          "feedback": "A new LE cannot be provided on or after the CD is provided; it is not a substitute for required CD correction."
+        }
+      ],
+      "correct_choice_id": "B",
+      "source_ids": [
+        "P5-02"
+      ],
+      "skill": "cd_restart",
+      "assessment_role": "public_formative",
+      "credit_bearing": false
+    },
+    {
+      "id": "PE05-P18",
+      "module_id": "PE05",
+      "unit_id": "5C",
+      "objective_id": "PE05-C",
+      "type": "single_choice",
+      "prompt": "A consumer waives the timing of appraisal-copy delivery through a process that meets Regulation B. What should the originator avoid assuming?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "The waiver needs to meet the applicable rule.",
+          "feedback": "That is a sound requirement rather than an assumption to avoid."
+        },
+        {
+          "id": "B",
+          "text": "The file should preserve waiver evidence.",
+          "feedback": "Preserving the actual waiver supports review."
+        },
+        {
+          "id": "C",
+          "text": "The consumer has waived receiving the copy altogether.",
+          "feedback": "Correct. A permitted timing waiver is not a waiver of the copy itself."
+        },
+        {
+          "id": "D",
+          "text": "Other valuation requirements may still apply.",
+          "feedback": "Other applicable requirements must still be checked."
+        }
+      ],
+      "correct_choice_id": "C",
+      "source_ids": [
+        "P5-22"
+      ],
+      "skill": "valuation_copies",
+      "assessment_role": "public_formative",
+      "credit_bearing": false
+    },
+    {
+      "id": "PE05-P19",
+      "module_id": "PE05",
+      "unit_id": "5D",
+      "objective_id": "PE05-D",
+      "type": "single_choice",
+      "prompt": "A borrower's statement is accidentally sent to the wrong outside recipient. The firm has supplied a privacy notice. What is the best immediate response?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Assume the privacy notice authorized the misdelivery.",
+          "feedback": "A notice is not blanket permission for unrelated disclosure."
+        },
+        {
+          "id": "B",
+          "text": "Delete the internal log so no record remains.",
+          "feedback": "Destroying the incident record obstructs appropriate response."
+        },
+        {
+          "id": "C",
+          "text": "Post the statement in the cohort forum for advice.",
+          "feedback": "A public or peer forum would expand exposure of private information."
+        },
+        {
+          "id": "D",
+          "text": "Promptly use the approved security-incident process, limit further exposure and preserve facts.",
+          "feedback": "Correct. Follow the incident process; the responsible team evaluates applicable containment and notification duties."
+        }
+      ],
+      "correct_choice_id": "D",
+      "source_ids": [
+        "P5-29",
+        "P5-30"
+      ],
+      "skill": "privacy_security",
+      "assessment_role": "public_formative",
+      "credit_bearing": false
+    },
+    {
+      "id": "PE05-P20",
+      "module_id": "PE05",
+      "unit_id": "5D",
+      "objective_id": "PE05-D",
+      "type": "single_choice",
+      "prompt": "A covered mortgage company escalates suspicious transaction facts for AML review. What should the originator do if the consumer asks whether a SAR was filed?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Follow confidentiality procedures and do not disclose a SAR or information revealing its existence.",
+          "feedback": "Correct. Preserve confidentiality and route the request through authorized procedures."
+        },
+        {
+          "id": "B",
+          "text": "Confirm a filing to show the company is serious.",
+          "feedback": "A SAR and information revealing it are subject to confidentiality restrictions."
+        },
+        {
+          "id": "C",
+          "text": "Promise that no filing will ever occur.",
+          "feedback": "The originator should not promise an outcome outside their authority."
+        },
+        {
+          "id": "D",
+          "text": "Treat the discrepancy as proof of a crime in the borrower message.",
+          "feedback": "A discrepancy is not automatically proof, and an accusation does not replace factual review."
+        }
+      ],
+      "correct_choice_id": "A",
+      "source_ids": [
+        "P5-31",
+        "P5-32"
+      ],
+      "skill": "aml_confidentiality",
+      "assessment_role": "public_formative",
+      "credit_bearing": false
+    }
+  ]
+}
