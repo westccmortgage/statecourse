@@ -23,7 +23,8 @@ export function presentedChoices(question) {
 }
 export function gradePractice(question,selected) {
   if(!Number.isInteger(selected)||selected<0||selected>=question.choices.length)return null;
-  return {correct:selected===question.solution,selected,explanation:question.explanation};
+  const feedback=Array.isArray(question.choice_feedback)?question.choice_feedback[selected]:undefined;
+  return {correct:selected===question.solution,selected,explanation:typeof feedback==='string'&&feedback.trim()?feedback:question.explanation};
 }
 export function practiceSummary(questions,answers) {
   const answered=questions.filter(q=>gradePractice(q,answers[q.id]?.selected));

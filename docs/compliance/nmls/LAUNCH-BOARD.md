@@ -40,3 +40,11 @@ The existing console reads validated NMLS attempts instead of CA/TX blocks: 45 l
 The existing free-practice engine now has a separate `national-safe-pe-foundations` collection: 16 explained formative questions and 10 activities with 39 tasks across role/authority, licensing sources, mortgage calculations, and security/lien cases. Public practice remains free before, during, and after paid enrollment, without an account or checkout. Written responses are explicitly self-review. No instructor answer guide or protected CE/final question inventory is used as a public source.
 
 Source and verification record: [PE foundations practice release](../../engineering/pe-foundations-practice-2026-09-30.md). The existing CE training identity, approval fields, authentication, payments, timers, and completion authority are unchanged. Production release and live-browser acceptance are separate from local implementation and require the controlled release described in that record.
+
+## PE03/PE04 expansion — local candidate, 2026-09-30
+
+**REVIEWED / PUBLIC PREVIEW UPDATE AUTHORIZED.** The next candidate expands the same public foundation collection to PE01–PE04: four lessons, 40 formative questions, 16 activities and 70 tasks. The new 24 questions retain all 96 authored option-level explanations; six new cases add 13 written self-review tasks and 18 independently checked numerical tasks. No private instructor package is imported. Each new module's 150 proposed elective minutes remain unvalidated.
+
+The four-module diff has been reviewed and authorized to update the same public PR23 preview; `6a7aab9a9ffae03e441975e76281511cbefbef1d` is its prior two-module revision. Exact new-head and rendered acceptance are recorded in the release evidence. Production remains blocked on preservation of the separate live owner-OAuth overlay. This expansion changes no authentication, enrollment, payment, study-time, completion, certificate, approval or credit authority. Available practice remains free before, during and after paid enrollment. The full 20-hour course, remaining curriculum and genuine instructor/peer delivery are not complete.
+
+See [PE03/PE04 integration record](../../engineering/pe-foundations-expansion-2026-09-30.md) for source provenance, validation, exact scope and release limits. This entry does not close any regulated-launch gate above.

@@ -6,7 +6,7 @@ import { projectPracticeActivities } from './free-practice-activities.mjs';
 
 // Explicitly public, newly authored formative material. Never load the CE
 // review loader, final banks, instructor guide, or an aggregate NMLS source tree.
-const lessonFiles = ['module-01.md', 'module-02.md'];
+const lessonFiles = ['module-01.md', 'module-02.md', 'module-03.md', 'module-04.md'];
 const digest = text => createHash('sha256').update(text).digest('hex');
 const protectedText = /N26-FIN-|##\s*Answer key|instructor version and answer key|Items, with the material reference for each answer|__statecourse_private_export/i;
 const requireText = (value, label) => {
@@ -15,7 +15,8 @@ const requireText = (value, label) => {
 };
 const publicSources = values => {
   if (!Array.isArray(values) || !values.length) throw new Error('PE practice source required');
-  return values.map(source => {
+  return Array.from(values, source => {
+    if (!source || typeof source !== 'object') throw new Error('Invalid PE practice source');
     const url = new URL(requireText(source.url, 'source URL'));
     if (url.protocol !== 'https:') throw new Error('PE practice sources must use HTTPS');
     return { url: url.href, reference: requireText(source.reference, 'source reference') };
@@ -40,14 +41,21 @@ export function buildPeFoundationsPractice({ root, write, quizzes = TOPIC_QUIZZE
   const questions = lessons.flatMap(lesson => {
     const items = quizzes[lesson.id];
     if (!Array.isArray(items) || items.length < 6) throw new Error(`Incomplete PE formative practice: ${lesson.id}`);
-    return items.map(item => {
-      if (item.module !== lesson.id || !Array.isArray(item.choices) || item.choices.length !== 4 ||
-          new Set(item.choices).size !== 4 || item.choices.some(choice => typeof choice !== 'string' || !choice.trim()) ||
+    return Array.from(items, item => {
+      if (!item || typeof item !== 'object' || item.module !== lesson.id || !Array.isArray(item.choices) || item.choices.length !== 4 ||
+          new Set(item.choices).size !== 4 || Array.from(item.choices).some(choice => typeof choice !== 'string' || !choice.trim()) ||
           !Number.isInteger(item.correctChoice) || item.correctChoice < 0 || item.correctChoice > 3)
         throw new Error('Invalid PE formative item');
+      if (item.choiceFeedback !== undefined && (!Array.isArray(item.choiceFeedback) ||
+          item.choiceFeedback.length !== 4 || Array.from(item.choiceFeedback).some(value => typeof value !== 'string' || !value.trim())))
+        throw new Error('Incomplete PE per-choice feedback');
+      const sources = Array.isArray(item.sources) && !item.sources.length && item.sourceNote
+        ? [] : publicSources(item.sources);
       return { id: `${source.courseId}:${requireText(item.id, 'question ID')}`, lesson_id: lesson.id,
         prompt: requireText(item.prompt, 'prompt'), choices: [...item.choices], solution: item.correctChoice,
-        explanation: requireText(item.rationale, 'explanation'), sources: publicSources(item.sources) };
+        explanation: requireText(item.rationale, 'explanation'), sources,
+        ...(item.choiceFeedback ? { choice_feedback: [...item.choiceFeedback] } : {}),
+        ...(sources.length ? {} : { source_note: requireText(item.sourceNote, 'fictional-case source note') }) };
     });
   });
   if (new Set(questions.map(q => q.id)).size !== questions.length || new Set(questions.map(q => q.prompt)).size !== questions.length)
@@ -58,7 +66,7 @@ export function buildPeFoundationsPractice({ root, write, quizzes = TOPIC_QUIZZE
   const payload = {
     course_id: source.courseId, course_title: source.courseTitle, state_code: source.stateCode, state_name: source.stateName,
     coverage: source.coverage, operating_mode: 'free_practice', creditEligible: false, completeCourse: false,
-    availability_notice: 'Two foundation modules are available; the full 20-hour course is still in development.',
+    availability_notice: 'Four foundation modules are available; the full 20-hour course is still in development.',
     providerApproval: null, courseApproval: null, access: 'Free before, during and after paid enrollment. No account or payment required.',
     lessons: lessons.map(({ id, title, content_url, sha256 }) => ({ id, title, content_url, sha256 })), questions, activities,
   };

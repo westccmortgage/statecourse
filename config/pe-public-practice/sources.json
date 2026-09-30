@@ -1,0 +1,182 @@
+{
+  "PE03": {
+    "P3-01": {
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/2/",
+      "reference": "P3-01: CFPB Regulation Z, section 1026.2(a)(3), scoped application definition"
+    },
+    "P3-02": {
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1002/2/",
+      "reference": "P3-02: CFPB Regulation B, section 1002.2(f), application and completed application"
+    },
+    "P3-03": {
+      "url": "https://www.consumerfinance.gov/ask-cfpb/what-information-do-i-have-to-provide-a-lender-in-order-to-receive-a-loan-estimate-en-1987/",
+      "reference": "P3-03: CFPB, Information needed for a Loan Estimate, reviewed April 3 2024"
+    },
+    "P3-04": {
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/43/",
+      "reference": "P3-04: CFPB Regulation Z, section 1026.43(c)(3) and official interpretation, verification and records for covered transactions"
+    },
+    "P3-05": {
+      "url": "https://selling-guide.fanniemae.com/sel/b3-3.1-01/general-income-information",
+      "reference": "P3-05: Fannie Mae Selling Guide B3-3.1-01, General Income Information, current page"
+    },
+    "P3-06": {
+      "url": "https://selling-guide.fanniemae.com/sel/b3-3.5-01/underwriting-factors-and-documentation-self-employed-borrower",
+      "reference": "P3-06: Fannie Mae Selling Guide B3-3.5-01, Self Employed Borrower analysis, current page"
+    },
+    "P3-07": {
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1002/6/",
+      "reference": "P3-07: CFPB Regulation B, section 1002.6(b), evaluation of applications and income"
+    },
+    "P3-08": {
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1002/5/",
+      "reference": "P3-08: CFPB Regulation B, section 1002.5(d)(2), requests about support income"
+    },
+    "P3-09": {
+      "url": "https://selling-guide.fanniemae.com/sel/b3-6-05/monthly-debt-obligations",
+      "reference": "P3-09: Fannie Mae Selling Guide B3-6-05, Monthly Debt Obligations, August 5 2026"
+    },
+    "P3-10": {
+      "url": "https://www.consumerfinance.gov/ask-cfpb/how-do-i-dispute-an-error-on-my-credit-report-en-314/",
+      "reference": "P3-10: CFPB, Disputing a credit report error"
+    },
+    "P3-11": {
+      "url": "https://selling-guide.fanniemae.com/sel/b3-2-01/general-information-du",
+      "reference": "P3-11: Fannie Mae Selling Guide B3-2-01, General Information on DU, April 1 2026"
+    },
+    "P3-12": {
+      "url": "https://sf.freddiemac.com/faqs/loan-product-advisor-faq",
+      "reference": "P3-12: Freddie Mac, Loan Product Advisor FAQ and official tool overview"
+    },
+    "P3-13": {
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/42/",
+      "reference": "P3-13: CFPB Regulation Z, section 1026.42, valuation independence"
+    }
+  },
+  "PE04": {
+    "S1": {
+      "url": "https://www.consumerfinance.gov/ask-cfpb/what-is-a-conventional-loan-en-117/",
+      "reference": "S1: CFPB conventional loan definition, reviewed February 2, 2024"
+    },
+    "S2": {
+      "url": "https://www.fhfa.gov/data/conforming-loan-limit?shortcut=cll",
+      "reference": "S2: FHFA conforming loan limit resources, including 2026 county and unit data"
+    },
+    "S3": {
+      "url": "https://www.consumerfinance.gov/owning-a-home/conventional-loans/",
+      "reference": "S3: CFPB conventional loan overview"
+    },
+    "S4": {
+      "url": "https://www.hud.gov/aboutus/fhahistory",
+      "reference": "S4: HUD FHA role and mortgage insurance"
+    },
+    "S5": {
+      "url": "https://www.hud.gov/hud-partners/single-family-handbook-4000-1",
+      "reference": "S5: HUD Handbook 4000.1 current index, August 12, 2026 update"
+    },
+    "S6": {
+      "url": "https://www.va.gov/housing-assistance/home-loans/loan-types/purchase-loan/",
+      "reference": "S6: VA purchase loan eligibility, updated January 7, 2026"
+    },
+    "S7": {
+      "url": "https://www.benefits.va.gov/HOMELOANS/purchaseco_loan_fee.asp?subexpandable=0",
+      "reference": "S7: VA funding fee and loan closing costs"
+    },
+    "S8": {
+      "url": "https://www.rd.usda.gov/programs-services/single-family-housing-programs/single-family-housing-guaranteed-loan-program",
+      "reference": "S8: USDA Section 502 Guaranteed Loan Program and official eligibility links"
+    },
+    "S9": {
+      "url": "https://www.rd.usda.gov/programs-services/single-family-housing-programs",
+      "reference": "S9: USDA single family programs, including direct versus guaranteed channels"
+    },
+    "S10": {
+      "url": "https://www.consumerfinance.gov/ask-cfpb/on-a-mortgage-whats-the-difference-between-my-principal-and-interest-payment-and-my-total-monthly-payment-en-1941/",
+      "reference": "S10: CFPB principal and interest versus total monthly payment, reviewed August 28, 2023"
+    },
+    "S11": {
+      "url": "https://www.consumerfinance.gov/owning-a-home/close/submit-documents-and-answer-requests-from-the-lender/",
+      "reference": "S11: CFPB submitting documents, modified December 12, 2024"
+    },
+    "S12": {
+      "url": "https://myhome.freddiemac.com/blog/homebuying/mortgage-underwriting",
+      "reference": "S12: Freddie Mac underwriting explanation"
+    },
+    "S13": {
+      "url": "https://www.consumerfinance.gov/ask-cfpb/whats-the-difference-between-a-prequalification-letter-and-a-preapproval-letter-en-127/",
+      "reference": "S13: CFPB prequalification and preapproval, reviewed December 5, 2023"
+    },
+    "S14": {
+      "url": "https://www.consumerfinance.gov/owning-a-home/close/shop-for-title-insurance-and-other-closing-services/",
+      "reference": "S14: CFPB title and closing services, modified December 12, 2024"
+    },
+    "S15": {
+      "url": "https://www.consumerfinance.gov/ask-cfpb/who-should-i-expect-to-see-at-my-mortgage-closing-en-1903/",
+      "reference": "S15: CFPB closing participants, reviewed February 2, 2024"
+    },
+    "S16": {
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/19/",
+      "reference": "S16: Regulation Z section 1026.19, especially paragraph f"
+    },
+    "S17": {
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/23/",
+      "reference": "S17: Regulation Z section 1026.23, especially paragraphs a and f and their interpretations"
+    },
+    "S18": {
+      "url": "https://www.consumerfinance.gov/owning-a-home/closing-disclosure/",
+      "reference": "S18: CFPB Closing Disclosure explainer"
+    },
+    "S19": {
+      "url": "https://www.consumerfinance.gov/archive/blog/mortgage-closing-scams-how-protect-yourself-and-your-closing-funds/",
+      "reference": "S19: CFPB mortgage closing scam prevention, archived June 3, 2019 educational article"
+    },
+    "S20": {
+      "url": "https://www.consumerfinance.gov/ask-cfpb/what-happens-if-the-company-that-i-send-my-mortgage-payments-to-changes-en-215/",
+      "reference": "S20: CFPB servicing transfers, reviewed April 3, 2024"
+    },
+    "S21": {
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1024/33/",
+      "reference": "S21: Regulation X section 1024.33, especially paragraphs b and c"
+    },
+    "S22": {
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1024/17/",
+      "reference": "S22: Regulation X section 1024.17, escrow definitions and analysis"
+    },
+    "S23": {
+      "url": "https://www.consumerfinance.gov/ask-cfpb/what-is-a-payoff-amount-and-is-it-the-same-as-my-current-balance-en-205/",
+      "reference": "S23: CFPB payoff versus balance, reviewed August 28, 2026"
+    },
+    "S24": {
+      "url": "https://www.consumerfinance.gov/consumer-tools/mortgages/how-to-avoid-foreclosure/",
+      "reference": "S24: CFPB avoiding foreclosure"
+    },
+    "S25": {
+      "url": "https://www.consumerfinance.gov/ask-cfpb/what-is-mortgage-forbearance-en-289/",
+      "reference": "S25: CFPB forbearance, reviewed August 28, 2026"
+    },
+    "S26": {
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1024/41/",
+      "reference": "S26: Regulation X section 1024.41, especially paragraph a"
+    },
+    "S27": {
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1024/30/",
+      "reference": "S27: Regulation X section 1024.30, servicing scope and exceptions"
+    },
+    "S28": {
+      "url": "https://www.consumerfinance.gov/consumer-tools/mortgages/how-to-spot-and-avoid-foreclosure-relief-scams/",
+      "reference": "S28: CFPB foreclosure relief scam recognition"
+    },
+    "S29": {
+      "url": "https://www.usda.gov/guidance-documents/rhs-handbook/rhs/hb-1-3555-sfh-guaranteed-loan-program-technical-handbook",
+      "reference": "S29: USDA HB 1 3555 current handbook, Chapter 9 sections 9.5 and 9.7, printed pages 9-9 and 9-10; chapter revision August 5, 2025 PN 649"
+    },
+    "S30": {
+      "url": "https://www.consumerfinance.gov/ask-cfpb/whats-the-difference-between-a-mortgage-lender-and-a-mortgage-servicer-en-198/",
+      "reference": "S30: CFPB lender and servicer roles, reviewed December 11, 2024"
+    },
+    "S31": {
+      "url": "https://www.consumerfinance.gov/ask-cfpb/how-can-i-tell-who-owns-my-mortgage-en-214/",
+      "reference": "S31: CFPB identifying the mortgage owner, reviewed September 9, 2020"
+    }
+  }
+}

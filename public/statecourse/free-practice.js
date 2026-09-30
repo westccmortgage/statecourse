@@ -36,6 +36,7 @@ function renderQuestion(){
     (result?'<strong>'+(result.correct?'Correct.':'Review this answer.')+'</strong><p>'+esc(result.explanation)+'</p>'+
       (result.correct?'':'<p><strong>Correct answer:</strong> '+esc(q.choices[q.solution])+'</p><button type="button" data-action="retry">Try again</button>'):'')+'</div>'+
     (result&&q.sources?.length?'<p class="practice-sources">Sources: '+q.sources.filter(s=>/^https:\/\//.test(s.url)).map(s=>'<a href="'+esc(s.url)+'" target="_blank" rel="noopener noreferrer">'+esc(s.reference||'Official source')+'</a>').join(' · ')+'</p>':'')+
+    (result&&q.source_note?'<p class="practice-sources">'+esc(q.source_note)+'</p>':'')+
     '<nav class="practice-question-nav" aria-label="Practice questions"><button type="button" data-action="previous-question" '+(questionIndex===0?'disabled':'')+'>← Previous question</button><button type="button" data-action="read">Review lesson</button><button type="button" data-action="next-question" '+(questionIndex===questions.length-1?'disabled':'')+'>Next question →</button></nav>'+
     (s.answered===s.total?'<div class="practice-summary" role="status"><h3>Practice round complete</h3><p>'+s.correct+' of '+s.total+' correct ('+s.percent+'%). First try: '+s.firstCorrect+' of '+s.total+'.</p><button type="button" data-action="reset">Restart this lesson’s questions</button></div>':'');
 }

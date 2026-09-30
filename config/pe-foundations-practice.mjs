@@ -1,5 +1,8 @@
+import { APPLICATION_TOPIC_QUIZZES } from './pe-application-practice.mjs';
+import { PE_APPLICATION_SCENARIOS } from './pe-application-activities.mjs';
+
 /** Public formative practice only. No private instructor guide or summative bank is imported.
- * Sources: PE01/PE02 student review manuscripts and curriculum blueprint dated 2026-09-30.
+ * Sources: PE01–PE04 public student review manuscripts and curriculum blueprint dated 2026-09-30.
  * All PEFP identifiers are newly assigned. Selection keys and numerical results support
  * transparent practice feedback, never credit, approval, course time or final assessment.
  * Short answers intentionally become self-review through the generic projection.
@@ -9,17 +12,17 @@ export const PE_FOUNDATIONS = {
   "courseId": "national-safe-pe-foundations",
   "stateCode": "US",
   "stateName": "National mortgage",
-  "courseTitle": "SAFE PE Foundations: PE01 and PE02",
+  "courseTitle": "SAFE PE Foundations: PE01–PE04",
   "curriculumDir": "nmls/pe-foundations/curriculum",
-  "coverage": "two foundation modules; full 20-hour course in development",
+  "coverage": "four foundation modules; full 20-hour course in development",
   "recordUrl": "mortgage/pre-license/",
   "status": "Under construction; not NMLS approved; no credit",
   "access": "Free before, during and after paid enrollment; no account or payment required",
-  "disclaimer": "Only PE01 and PE02 are included. This is not the full 20-hour course, is not NMLS approved and provides no credit. Optional self-review is not instructor assessment or course completion.",
+  "disclaimer": "Only PE01 through PE04 are included. This is not the full 20-hour course, is not NMLS approved and provides no credit. Optional self-review is not instructor assessment or course completion.",
   "version": "2026-09-30"
 };
 
-export const TOPIC_QUIZZES = {
+const FOUNDATIONS_TOPIC_QUIZZES = {
   "module-01": [
     {
       "id": "PEFP-Q-01-01",
@@ -370,7 +373,7 @@ export const TOPIC_QUIZZES = {
   ]
 };
 
-export const SCENARIOS = [
+const FOUNDATIONS_SCENARIOS = [
   {
     "id": "PEFP-A-01-roles",
     "title": "Separate receipt from clearance",
@@ -1025,3 +1028,6 @@ export const SCENARIOS = [
   }
 ];
 
+
+export const TOPIC_QUIZZES = { ...FOUNDATIONS_TOPIC_QUIZZES, ...APPLICATION_TOPIC_QUIZZES };
+export const SCENARIOS = [...FOUNDATIONS_SCENARIOS, ...PE_APPLICATION_SCENARIOS];

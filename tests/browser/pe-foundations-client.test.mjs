@@ -54,10 +54,10 @@ test('PE public client supports questions, retries, casework, state switching an
     .replace("new URL('./',import.meta.url)", "new URL('./','https://practice.example/free-practice.js')");
   await import('data:text/javascript;base64,' + Buffer.from(source).toString('base64'));
   await waitFor(() => !$('practiceMode').hidden);
-  assert.equal($('practiceLessonSelect').options.length, 2);
+  assert.equal($('practiceLessonSelect').options.length, 4);
   assert.equal($('practiceStateSelect').value, 'US');
   assert.equal($('practiceStatePath').pathname, '/mortgage/pre-license/');
-  assert.match($('practiceMessage').textContent, /Two foundation modules/);
+  assert.match($('practiceMessage').textContent, /Four foundation modules/);
 
   $('practiceQuizMode').click();
   let form = $('practiceAnswerForm');
@@ -100,6 +100,39 @@ test('PE public client supports questions, retries, casework, state switching an
   caseForm().querySelector('[data-retry-case]').click();
   assert.equal(caseElement().querySelectorAll('.is-correct').length, 0);
 
+  for (const lessonId of ['module-03', 'module-04']) {
+    change($('practiceLessonSelect'), lessonId);
+    await waitFor(() => !$('practiceMode').hidden && $('practiceLessonSelect').value === lessonId);
+    $('practiceQuizMode').click();
+    const question = payload.questions.find(question => question.lesson_id === lessonId);
+    const wrong = (question.solution + 1) % 4;
+    let form = $('practiceAnswerForm');
+    form.querySelector(`[value="${wrong}"]`).click();
+    form.querySelector('button[type=submit]').click();
+    assert.ok($('practiceFeedback').textContent.includes(question.choice_feedback[wrong]));
+    $('practiceQuiz').querySelector('[data-action=retry]').click();
+    form = $('practiceAnswerForm');
+    form.querySelector(`[value="${question.solution}"]`).click();
+    form.querySelector('button[type=submit]').click();
+    assert.ok($('practiceFeedback').textContent.includes(question.choice_feedback[question.solution]));
+    assert.match($('practiceProgress').textContent, /0 correct on the first try/);
+    $('practiceActivitiesMode').click();
+    const nextActivity = payload.activities.find(activity => activity.lesson_id === lessonId);
+    const activeCase = () => dom.window.document.querySelector(`[data-case="${nextActivity.id}"]`);
+    await waitFor(() => activeCase()?.querySelector('textarea'));
+    assert.match($('practiceActivities').textContent, /self-review only: no instructor grade/);
+    let nextForm = activeCase().querySelector('form');
+    nextForm.querySelector('button[type=submit]').click();
+    assert.ok(nextForm.querySelector('[aria-invalid=true]'));
+    for (const task of nextActivity.tasks) {
+      input(nextForm.elements.namedItem(task.id), task.type === 'computation' ? task.solution : 'Fictional case analysis: record the source, assumption, unresolved decision and next request.');
+    }
+    nextForm.querySelector('button[type=submit]').click();
+    nextForm = activeCase().querySelector('form');
+    assert.equal(nextForm.querySelectorAll('.is-incorrect').length, 0);
+    assert.match(activeCase().textContent, /not course passage or an instructor assessment/);
+  }
+
   change($('practiceStateSelect'), 'CA');
   change($('practiceStateSelect'), 'US');
   await waitFor(() => !$('practiceMode').hidden && $('practiceCourseSelect').value === 'national-safe-pe-foundations');
@@ -111,9 +144,9 @@ test('PE public client supports questions, retries, casework, state switching an
   await waitFor(() => !$('practiceMode').hidden);
   assert.match($('practiceProgress').textContent, /Lesson: 0\//);
 
-  dom.window.history.replaceState({}, '', '/free-practice/?course=national-safe-pe-foundations&lesson=module-02&mode=activities');
+  dom.window.history.replaceState({}, '', '/free-practice/?course=national-safe-pe-foundations&lesson=module-04&mode=activities');
   dom.window.dispatchEvent(new dom.window.PopStateEvent('popstate'));
-  await waitFor(() => !$('practiceMode').hidden && $('practiceLessonSelect').value === 'module-02');
+  await waitFor(() => !$('practiceMode').hidden && $('practiceLessonSelect').value === 'module-04');
   assert.equal($('practiceActivities').hidden, false);
   assert.ok(requests.every(url => !url.startsWith('/api/') && !url.includes('/.netlify/functions/')));
 });

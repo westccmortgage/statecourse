@@ -6,6 +6,7 @@ import os from 'node:os';
 import { createHash } from 'node:crypto';
 import { buildPeFoundationsPractice } from '../scripts/lib/pe-foundations-practice.mjs';
 import { PE_FOUNDATIONS, TOPIC_QUIZZES, SCENARIOS } from '../config/pe-foundations-practice.mjs';
+import { normalizePublicPeBank } from '../config/pe-application-practice.mjs';
 import { gradePractice, splitSections } from '../public/statecourse/practice-core.mjs';
 
 const root = path.resolve(new URL('..', import.meta.url).pathname);
@@ -16,20 +17,20 @@ function build(options = {}) {
   return { sample, files, payload: JSON.parse(files.get(sample.practice_url)) };
 }
 
-test('publishes only two substantive, source-linked student modules and formative practice', () => {
+test('publishes only four substantive, source-linked student modules and formative practice', () => {
   const { sample, files, payload } = build();
   assert.equal(sample.course_id, 'national-safe-pe-foundations');
   assert.equal(sample.record_url, 'mortgage/pre-license/');
   assert.equal(sample.state_code, 'US');
-  assert.equal(sample.lesson_count, 2);
+  assert.equal(sample.lesson_count, 4);
   assert.equal(sample.creditEligible, false);
   assert.equal(sample.completeCourse, false);
   assert.equal(payload.providerApproval, null);
   assert.equal(payload.courseApproval, null);
   assert.equal(payload.operating_mode, 'free_practice');
-  assert.match(payload.availability_notice, /Two foundation modules are available/);
+  assert.match(payload.availability_notice, /Four foundation modules are available/);
   assert.match(payload.access, /before, during and after paid enrollment/);
-  assert.equal(files.size, 3);
+  assert.equal(files.size, 5);
   for (const [name, text] of files) {
     assert.ok(name.startsWith('free-practice/'));
     assert.doesNotMatch(name, /instructor|answer-key|final|assessment/);
@@ -78,6 +79,13 @@ test('malformed quizzes fail before any public file is written', () => {
     q => { q['module-01'][0].module = 'module-03'; },
     q => { delete q['module-02']; },
     q => { q['module-01'][0].id = 'N26-FIN-F99'; },
+    q => { q['module-03'][0].choiceFeedback.pop(); },
+    q => { delete q['module-03'][0].choiceFeedback[1]; },
+    q => { delete q['module-01'][0].choices[1]; },
+    q => { delete q['module-01'][0].sources[0]; },
+    q => { delete q['module-03'][1]; },
+    q => { q['module-04'][0].choiceFeedback[1] = ''; },
+    q => { q['module-03'][1].sourceNote = ''; },
   ]) {
     const quizzes = structuredClone(TOPIC_QUIZZES); alter(quizzes);
     let writes = 0;
@@ -91,7 +99,7 @@ test('protected manuscript content and missing disclosures fail closed', t => {
   t.after(() => fs.rmSync(temporary, { recursive: true, force: true }));
   const directory = path.join(temporary, PE_FOUNDATIONS.curriculumDir);
   fs.mkdirSync(directory, { recursive: true });
-  for (const file of ['module-01.md', 'module-02.md']) fs.copyFileSync(path.join(root, PE_FOUNDATIONS.curriculumDir, file), path.join(directory, file));
+  for (const file of ['module-01.md', 'module-02.md', 'module-03.md', 'module-04.md']) fs.copyFileSync(path.join(root, PE_FOUNDATIONS.curriculumDir, file), path.join(directory, file));
   const file = path.join(directory, 'module-01.md');
   const original = fs.readFileSync(file, 'utf8');
   for (const changed of [original + '\n## Answer key\nPrivate', original.replace(/not NMLS approved/ig, 'status unavailable')]) {
@@ -115,7 +123,7 @@ test('changed practice content changes the browser storage and cache revision', 
 test('generator and browser routes keep public practice distinct from CE and regulated enrollment', () => {
   const generator = read('scripts/generate-national-platform.mjs');
   assert.match(generator, /mortgage\/pre-license\/index\.html/);
-  assert.match(generator, /Two modules available\. Full course under construction/);
+  assert.match(generator, /Four modules available\. Full course under construction/);
   assert.match(generator, /not a complete 20-hour course/);
   assert.match(generator, /No account, tuition or subscription is required/);
   assert.match(generator, /genuine instructor and peer interaction/);
@@ -150,5 +158,46 @@ test('shared header uses the existing complete menu at tablet and phone breakpoi
     assert.match(menu, />Create Account<\/a>/);
     assert.match(menu, />My Courses<\/a>/);
     assert.ok(menu.includes('Free Practice') || menu.includes('${links}'));
+  }
+});
+
+
+test('all 96 reviewed PE03/PE04 option explanations retain source IDs and original answers', () => {
+  const { payload } = build();
+  assert.equal(payload.questions.length, 40);
+  for (const moduleId of ['PE03', 'PE04']) {
+    const bank = JSON.parse(read(`config/pe-public-practice/${moduleId}.json`));
+    for (const original of bank.items) {
+      const question = payload.questions.find(q => q.id.endsWith(`:${original.id}`));
+      assert.ok(question);
+      assert.equal(question.prompt, original.prompt);
+      assert.deepEqual(question.choices, original.choices.map(c => c.text));
+      assert.equal(question.solution, original.choices.findIndex(c => c.id === original.correct_choice_id));
+      original.choices.forEach((choice, index) => assert.equal(gradePractice(question, index).explanation, choice.feedback));
+      assert.equal(question.sources.length, original.source_ids.length);
+      if (!original.source_ids.length) assert.match(question.source_note, /Original fictional/);
+    }
+  }
+  const legacy = payload.questions.find(q => !q.choice_feedback);
+  assert.equal(gradePractice(legacy, 0).explanation, legacy.explanation);
+});
+
+test('public bank boundaries and source resolution reject protected or incomplete inputs', () => {
+  const original = JSON.parse(read('config/pe-public-practice/PE03.json'));
+  const sources = JSON.parse(read('config/pe-public-practice/sources.json')).PE03;
+  for (const change of [
+    bank => { bank.official_final_exam = true; },
+    bank => { bank.public_formative = false; },
+    bank => { bank.credit_bearing = true; },
+    bank => { bank.items[0].credit_bearing = true; },
+    bank => { bank.items[0].choices[0].feedback = ''; },
+    bank => { bank.items[0].correct_choice_id = 'Z'; },
+    bank => { bank.items[0].source_ids = ['MISSING']; },
+    bank => { bank.items[1].id = bank.items[0].id; },
+    bank => { delete bank.items[1]; },
+    bank => { delete bank.items[0].source_ids[1]; },
+  ]) {
+    const bank = structuredClone(original); change(bank);
+    assert.throws(() => normalizePublicPeBank(bank, 'PE03', sources));
   }
 });
