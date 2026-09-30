@@ -19,7 +19,7 @@ Public inputs are exactly the two student modules and a newly authored formative
 - Locked dependency install: `npm run install:ci` passed with Node 24.19.0
 - National generator: passed; 51 jurisdiction hubs and existing course routes generated; six hand-authored course pages preserved
 - Netlify static production build command: `bash site/build.sh` passed, including its built-in privacy gates
-- 84 focused and regression Node tests passed, with no skipped/failed tests
+- 85 focused and regression Node tests passed, with no skipped/failed tests
 - Two isolated JSDOM tests passed: existing native activity-submit test and the new actual PE-client flow test
 - Targeted ESLint: zero errors; one pre-existing unused `registerUrl` warning in the national generator
 - The unchanged CE privacy verifier passed on the final static `dist` artifact: 608 files, 598 text files, 187 protected item identities/stems, zero violations
@@ -39,13 +39,13 @@ JSDOM_MODULE_PATH=/absolute/path/to/jsdom node --test tests/browser/practice-nat
 
 The DOM test covers real client initialization, deep links, native empty-answer validation, wrong/correct answers, retry and first-attempt accounting, numerical casework, local persistence, activity restart, interrupted cross-program navigation, malformed saved data, popstate restoration and absence of backend/enrollment/payment requests. It is not rendered-browser evidence.
 
-The follow-up preview revision uses the existing `cta-button` style for the new PE landing action, with a CSS/markup regression assertion. The 84 Node tests, two DOM tests and static build/privacy gates were rerun successfully after this fix.
+The first preview revision uses the existing `cta-button` style for the new PE landing action, with a CSS/markup regression assertion. Its 84 Node tests, two DOM tests and static build/privacy gates passed again. Rendered inspection then found shared-header overflow at 1188px. The follow-up preserves the existing mobile menu through 1440px, widens only the desktop header to 1480px, and keeps duplicate account actions in the complete menu on narrow phones. Page-body layout breakpoints remain unchanged. A CSS/markup contract covers 320, 375, 480, 760, 1080, 1100, 1188, 1280 and 1440px; it is not rendered geometry evidence. The focused suite now has 85 tests.
 
 ## Remaining verification
 
-Rendered-browser checks could not run in the current environment: local Chromium failed on its required socket, and the cloud browser rejected localhost with `ERR_BLOCKED_BY_CLIENT`. Neither boundary was bypassed. Real screenshots, responsive layout (especially the shared header at 1100–1440px and mobile), actual Back/Forward/reload behavior and network delivery must be accepted on an authorized remote preview before production.
+Local Chromium failed on its required socket, and the cloud browser rejected localhost with `ERR_BLOCKED_BY_CLIENT`. Neither boundary was bypassed. The authorized remote preview works in the cloud browser: the PE landing, styled CTA and PE01 loading were observed. That inspection identified and prompted the header fix above. Full responsive/keyboard, Back/Forward/reload and practice-flow acceptance on the final preview remains a production gate.
 
-This is a connector-materialized source checkout, not a full Git clone. The named build and focused tests ran; the repository-wide `npm test`, separate Sites/Vinext artifact build and complete test suite were not run. No authenticated CE/OAuth, Supabase, payment, instructor or credit flow was exercised or changed. Local build acceptance does not prove production delivery or legal/SME/duration acceptance.
+This is a connector-materialized source checkout, not a full Git clone. Missing build/server/test dependencies were restored with baseline blob and mode verification. The actual `npm test` passed the Sites/Vinext production build and artifact validation, then the Netlify build/privacy gate, but stopped before the broad test suite because generated California test PDFs were absent. The documented preparation and aggregate rerun are in progress; large unavailable regulatory PDF fixtures remain an explicit completeness limit. Do not describe the aggregate suite as passing until its result is recorded in the PR. No authenticated CE/OAuth, Supabase, payment, instructor or credit flow was exercised or changed. Local build acceptance does not prove production delivery or legal/SME/duration acceptance.
 
 ## Deployment configuration read back
 
@@ -54,6 +54,8 @@ The existing StateCourse Netlify project is `chipper-maamoul-a2b9d5`, site ID `b
 The repository's `netlify.toml` selects `bash site/build.sh` and `dist`; `npm run build` is the separate Sites artifact and does not publish this Netlify site.
 
 The initial draft used `[skip netlify]` in both its commit message and PR title. Following independent diff/privacy review, public preview of the intended noncredit slice was authorized. The follow-up removes the PR-title marker and uses a new reviewed branch commit without the marker. Netlify documents that the commit marker suppresses branch/production builds and the PR-title marker suppresses Deploy Previews. It is not the generic `[skip ci]` marker; no remote GitHub test pass is claimed. The current repository workflow inventory contains a manual/California-path-filtered PR source-export workflow, not a general test CI workflow; do not run that export as a substitute for tests.
+
+Preview `938d90ffe3be2412f8d34ca7bf2acdd247797aa1` completed Netlify build and function bundling from the remote checkout (37 functions and one edge function). Deploy `6abd525280df690008839b6c` is `ready`, context `deploy-preview`, with no production publication timestamp. GitHub reports its Netlify preview status as success. Netlify secret scanning found no matches in 3,132 scanned files. These are remote build results, not a general GitHub test-suite pass. Final header-fix preview identity and acceptance are tracked in the PR.
 
 Official marker behavior: https://docs.netlify.com/deploy/manage-deploys/manage-deploys-overview/#skip-a-deploy
 

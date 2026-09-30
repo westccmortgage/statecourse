@@ -129,3 +129,26 @@ test('generator and browser routes keep public practice distinct from CE and reg
   assert.match(client, /course\.availability_notice/);
   assert.doesNotMatch(client, /api\/enroll|create-checkout|regulatedSeconds|nmls-training\/training-client/);
 });
+
+
+test('shared header uses the existing complete menu at tablet and phone breakpoints', () => {
+  const css = read('public/statecourse/national.css');
+  const breakpoint = Number(css.match(/@media \(max-width: (\d+)px\) \{\s*\.desktop-nav \{ display: none; \}/)?.[1]);
+  // This is a CSS/markup contract test, not a rendered width assertion.
+  for (const width of [320, 375, 480, 760, 1080, 1100, 1188, 1280, 1440]) {
+    assert.ok(width <= breakpoint, `The complete menu must be enabled at ${width}px`);
+  }
+  assert.equal(breakpoint, 1440);
+  assert.match(css, /\.header-shell \{[^}]*max-width: 1480px/);
+  assert.match(css, /@media \(max-width: 1080px\) \{\s*\.hero-shell/);
+  assert.match(css, /@media \(max-width: 480px\) \{[\s\S]*\.header-shell:has\(> \.mobile-menu\)[\s\S]*grid-template-columns: 1fr auto/);
+  assert.match(css, /\.national-header \.header-shell:has\(> \.mobile-menu\) \.header-actions \{ display: none; \}/);
+  for (const file of ['public/statecourse/index.html', 'scripts/generate-national-platform.mjs']) {
+    const menu = read(file).match(/<details class="mobile-menu">([\s\S]*?)<\/details>/)?.[1];
+    assert.ok(menu, file);
+    assert.match(menu, /<summary[^>]*aria-label="Open navigation"/);
+    assert.match(menu, />Create Account<\/a>/);
+    assert.match(menu, />My Courses<\/a>/);
+    assert.ok(menu.includes('Free Practice') || menu.includes('${links}'));
+  }
+});
