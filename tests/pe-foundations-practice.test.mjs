@@ -119,6 +119,8 @@ test('generator and browser routes keep public practice distinct from CE and reg
   assert.match(generator, /not a complete 20-hour course/);
   assert.match(generator, /No account, tuition or subscription is required/);
   assert.match(generator, /genuine instructor and peer interaction/);
+  assert.match(generator, /class="cta-button" href="\$\{pePracticeUrl\}">Start free foundations/);
+  assert.match(read('public/statecourse/national.css'), /\.cta-button\s*\{[^}]*display:\s*inline-block/);
   assert.match(generator, /Free Practice", "free-practice\//);
   const builder = read('scripts/generate-free-practice.mjs');
   assert.match(builder, /samples\.push\(buildPeFoundationsPractice/);

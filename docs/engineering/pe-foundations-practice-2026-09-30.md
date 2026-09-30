@@ -1,6 +1,6 @@
 # SAFE PE foundations: public practice release record
 
-Date: September 30, 2026. Status: implementation and local checks complete; draft review only. No production or preview release authorized by this record.
+Date: September 30, 2026. Status: implementation and local checks complete; intended public noncredit preview authorized after independent diff/privacy review. Production release remains on hold pending rendered acceptance and explicit release approval.
 
 ## Scope and boundaries
 
@@ -39,6 +39,8 @@ JSDOM_MODULE_PATH=/absolute/path/to/jsdom node --test tests/browser/practice-nat
 
 The DOM test covers real client initialization, deep links, native empty-answer validation, wrong/correct answers, retry and first-attempt accounting, numerical casework, local persistence, activity restart, interrupted cross-program navigation, malformed saved data, popstate restoration and absence of backend/enrollment/payment requests. It is not rendered-browser evidence.
 
+The follow-up preview revision uses the existing `cta-button` style for the new PE landing action, with a CSS/markup regression assertion. The 84 Node tests, two DOM tests and static build/privacy gates were rerun successfully after this fix.
+
 ## Remaining verification
 
 Rendered-browser checks could not run in the current environment: local Chromium failed on its required socket, and the cloud browser rejected localhost with `ERR_BLOCKED_BY_CLIENT`. Neither boundary was bypassed. Real screenshots, responsive layout (especially the shared header at 1100–1440px and mobile), actual Back/Forward/reload behavior and network delivery must be accepted on an authorized remote preview before production.
@@ -51,15 +53,15 @@ The existing StateCourse Netlify project is `chipper-maamoul-a2b9d5`, site ID `b
 
 The repository's `netlify.toml` selects `bash site/build.sh` and `dist`; `npm run build` is the separate Sites artifact and does not publish this Netlify site.
 
-This draft uses `[skip netlify]` in both its commit message and PR title. Netlify documents that the commit marker suppresses branch/production builds and the PR-title marker suppresses Deploy Previews. It is not the generic `[skip ci]` marker; no remote GitHub test pass is claimed. The current repository workflow inventory contains a manual/California-path-filtered PR source-export workflow, not a general test CI workflow; do not run that export as a substitute for tests.
+The initial draft used `[skip netlify]` in both its commit message and PR title. Following independent diff/privacy review, public preview of the intended noncredit slice was authorized. The follow-up removes the PR-title marker and uses a new reviewed branch commit without the marker. Netlify documents that the commit marker suppresses branch/production builds and the PR-title marker suppresses Deploy Previews. It is not the generic `[skip ci]` marker; no remote GitHub test pass is claimed. The current repository workflow inventory contains a manual/California-path-filtered PR source-export workflow, not a general test CI workflow; do not run that export as a substitute for tests.
 
 Official marker behavior: https://docs.netlify.com/deploy/manage-deploys/manage-deploys-overview/#skip-a-deploy
 
 ## Controlled next steps
 
-1. Review the exact draft diff and local validation; keep both skip markers until an intended public noncredit preview is authorized
-2. Run the named tests and `bash site/build.sh` in a full checkout/approved CI executor; leave skip markers in place so verification cannot trigger Netlify publication
-3. Once preview publication is authorized, remove the PR-title skip marker and push a new reviewed branch commit without the marker, or use an explicitly authorized existing-project preview flow; do not change global site settings or production branch
+1. Completed: independent review of the exact draft diff, calculations, quiz answers and privacy output; public noncredit preview is authorized
+2. Expand verification to the complete source/test checkout where available. Record aggregate results separately from the passing focused tests; no generic GitHub test CI currently exists
+3. Publish only the reviewed branch/PR preview through the documented title-marker removal and new reviewed commit. Do not change global site settings or production branch
 4. Verify the returned preview URL and exact head SHA, then exercise PE entry/deep links, both lesson sets, all task types, empty/invalid submissions, retries, saved/corrupt progress, rapid switching, Back/Forward/reload, keyboard operation and responsive layout; inspect privacy/build output
 5. Only after release approval, merge/deploy the exact reviewed revision. Verify `/admin/console/build.json` matches it and smoke the public routes. Keep existing CE/OAuth/commerce gates unchanged
 6. If rollback is needed after an authorized release, use the prior known-good deploy and reconcile the repository before any new automatic production build
