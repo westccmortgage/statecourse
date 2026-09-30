@@ -56,10 +56,10 @@ test('PE public client supports questions, retries, casework, state switching an
     .replace("new URL('./',import.meta.url)", "new URL('./','https://practice.example/free-practice.js')");
   await import('data:text/javascript;base64,' + Buffer.from(source).toString('base64'));
   await waitFor(() => !$('practiceMode').hidden);
-  assert.equal($('practiceLessonSelect').options.length, 6);
+  assert.equal($('practiceLessonSelect').options.length, 8);
   assert.equal($('practiceStateSelect').value, 'US');
   assert.equal($('practiceStatePath').pathname, '/mortgage/pre-license/');
-  assert.match($('practiceMessage').textContent, /Six foundation modules/);
+  assert.match($('practiceMessage').textContent, /Eight draft modules/);
 
   $('practiceQuizMode').click();
   let form = $('practiceAnswerForm');
@@ -105,7 +105,7 @@ test('PE public client supports questions, retries, casework, state switching an
   caseForm().querySelector('[data-retry-case]').click();
   assert.equal(caseElement().querySelectorAll('.is-correct').length, 0);
 
-  for (const lessonId of ['module-03', 'module-04', 'module-05', 'module-06']) {
+  for (const lessonId of ['module-03', 'module-04', 'module-05', 'module-06', 'module-07', 'module-08']) {
     change($('practiceLessonSelect'), lessonId);
     await waitFor(() => !$('practiceMode').hidden && $('practiceLessonSelect').value === lessonId);
     $('practiceQuizMode').click();
@@ -149,9 +149,9 @@ test('PE public client supports questions, retries, casework, state switching an
   await waitFor(() => !$('practiceMode').hidden);
   assert.match($('practiceProgress').textContent, /Lesson: 0\//);
 
-  dom.window.history.replaceState({}, '', '/free-practice/?course=national-safe-pe-foundations&lesson=module-06&mode=activities');
+  dom.window.history.replaceState({}, '', '/free-practice/?course=national-safe-pe-foundations&lesson=module-08&mode=activities');
   dom.window.dispatchEvent(new dom.window.PopStateEvent('popstate'));
-  await waitFor(() => !$('practiceMode').hidden && $('practiceLessonSelect').value === 'module-06');
+  await waitFor(() => !$('practiceMode').hidden && $('practiceLessonSelect').value === 'module-08');
   assert.equal($('practiceActivities').hidden, false);
   assert.ok(requests.every(url => !url.startsWith('/api/') && !url.includes('/.netlify/functions/')));
 });

@@ -7,6 +7,7 @@ import { createHash } from 'node:crypto';
 import { buildPeFoundationsPractice } from '../scripts/lib/pe-foundations-practice.mjs';
 import { PE_FOUNDATIONS, TOPIC_QUIZZES, SCENARIOS } from '../config/pe-foundations-practice.mjs';
 import { normalizePublicPeBank } from '../config/pe-application-practice.mjs';
+import { normalizePublicPeActivities } from '../config/pe-product-file-practice.mjs';
 import { gradePractice, splitSections } from '../public/statecourse/practice-core.mjs';
 
 const root = path.resolve(new URL('..', import.meta.url).pathname);
@@ -17,20 +18,20 @@ function build(options = {}) {
   return { sample, files, payload: JSON.parse(files.get(sample.practice_url)) };
 }
 
-test('publishes only six substantive, source-linked student modules and formative practice', () => {
+test('publishes only eight substantive, source-linked student modules and formative practice', () => {
   const { sample, files, payload } = build();
   assert.equal(sample.course_id, 'national-safe-pe-foundations');
   assert.equal(sample.record_url, 'mortgage/pre-license/');
   assert.equal(sample.state_code, 'US');
-  assert.equal(sample.lesson_count, 6);
+  assert.equal(sample.lesson_count, 8);
   assert.equal(sample.creditEligible, false);
   assert.equal(sample.completeCourse, false);
   assert.equal(payload.providerApproval, null);
   assert.equal(payload.courseApproval, null);
   assert.equal(payload.operating_mode, 'free_practice');
-  assert.match(payload.availability_notice, /Six foundation modules are available/);
+  assert.match(payload.availability_notice, /Eight draft modules are available/);
   assert.match(payload.access, /before, during and after paid enrollment/);
-  assert.equal(files.size, 7);
+  assert.equal(files.size, 9);
   for (const [name, text] of files) {
     assert.ok(name.startsWith('free-practice/'));
     assert.doesNotMatch(name, /instructor|answer-key|final|assessment/);
@@ -104,7 +105,7 @@ test('protected manuscript content and missing disclosures fail closed', t => {
   t.after(() => fs.rmSync(temporary, { recursive: true, force: true }));
   const directory = path.join(temporary, PE_FOUNDATIONS.curriculumDir);
   fs.mkdirSync(directory, { recursive: true });
-  for (const file of ['module-01.md', 'module-02.md', 'module-03.md', 'module-04.md', 'module-05.md', 'module-06.md']) fs.copyFileSync(path.join(root, PE_FOUNDATIONS.curriculumDir, file), path.join(directory, file));
+  for (const file of ['module-01.md', 'module-02.md', 'module-03.md', 'module-04.md', 'module-05.md', 'module-06.md', 'module-07.md', 'module-08.md']) fs.copyFileSync(path.join(root, PE_FOUNDATIONS.curriculumDir, file), path.join(directory, file));
   const file = path.join(directory, 'module-01.md');
   const original = fs.readFileSync(file, 'utf8');
   for (const changed of [original + '\n## Answer key\nPrivate', original.replace(/not NMLS approved/ig, 'status unavailable')]) {
@@ -128,7 +129,7 @@ test('changed practice content changes the browser storage and cache revision', 
 test('generator and browser routes keep public practice distinct from CE and regulated enrollment', () => {
   const generator = read('scripts/generate-national-platform.mjs');
   assert.match(generator, /mortgage\/pre-license\/index\.html/);
-  assert.match(generator, /Six modules available\. Full course under construction/);
+  assert.match(generator, /Eight draft modules available\. Qualifying course under construction/);
   assert.match(generator, /not a complete 20-hour course/);
   assert.match(generator, /No account, tuition or subscription is required/);
   assert.match(generator, /genuine instructor and peer interaction/);
@@ -169,7 +170,7 @@ test('shared header uses the existing complete menu at tablet and phone breakpoi
 
 test('all 96 reviewed PE03/PE04 option explanations retain source IDs and original answers', () => {
   const { payload } = build();
-  assert.equal(payload.questions.length, 76);
+  assert.equal(payload.questions.length, 100);
   for (const moduleId of ['PE03', 'PE04']) {
     const bank = JSON.parse(read(`config/pe-public-practice/${moduleId}.json`));
     for (const original of bank.items) {
@@ -247,5 +248,64 @@ test('PE activity input rejects sparse or missing citations/tasks before any pub
     let writes = 0;
     assert.throws(() => buildPeFoundationsPractice({ root, scenarios, write: () => writes++ }));
     assert.equal(writes, 0);
+  }
+});
+
+test('PE07/PE08 preserve all 96 option explanations and source-backed original practice', () => {
+  const { payload } = build();
+  for (const moduleId of ['PE07', 'PE08']) {
+    const bank = JSON.parse(read(`config/pe-public-practice/${moduleId}.json`));
+    const sources = JSON.parse(read(`config/pe-public-practice/${moduleId}-sources.json`))[moduleId];
+    assert.equal(bank.items.length, 12);
+    assert.equal(payload.questions.filter(q => q.lesson_id === `module-${moduleId.slice(2)}`).length, 12);
+    for (const original of bank.items) {
+      const question = payload.questions.find(q => q.id.endsWith(`:${original.id}`));
+      assert.equal(question.prompt, original.prompt);
+      assert.deepEqual(question.choices, original.choices.map(c => c.text));
+      assert.equal(question.solution, original.choices.findIndex(c => c.id === original.correct_choice_id));
+      original.choices.forEach((choice, index) => assert.equal(gradePractice(question, index).explanation, choice.feedback));
+      assert.deepEqual(question.sources, original.source_ids.map(id => ({ url: sources[id].url, reference: sources[id].reference })));
+    }
+    const unsourced = structuredClone(bank); unsourced.items[0].source_ids = [];
+    assert.throws(() => normalizePublicPeBank(unsourced, moduleId, sources));
+  }
+  assert.equal(payload.activities.length, 33);
+  assert.equal(payload.activities.reduce((sum, activity) => sum + activity.tasks.length, 0), 151);
+  assert.equal(payload.completeCourse, false);
+  assert.equal(payload.creditEligible, false);
+});
+
+test('new public case bundles reject credit, timing, exam and mismatched module claims', () => {
+  const original = JSON.parse(read('config/pe-public-practice/PE08-activities.json'));
+  const sources = JSON.parse(read('config/pe-public-practice/PE08-sources.json')).PE08;
+  const scenarios = normalizePublicPeActivities(original, 'PE08', sources);
+  assert.equal(scenarios.reduce((sum, scenario) => sum + scenario.tasks.length, 0), 31);
+  for (const [index, scenario] of original.scenarios.entries()) for (const originalCheck of scenario.numerical_checks) {
+    const projected = scenarios[index].tasks.find(task => task.id === originalCheck.id);
+    assert.equal(projected.expected, originalCheck.expected);
+    assert.equal(projected.tolerance, originalCheck.tolerance);
+    assert.ok(projected.rationale.includes(originalCheck.derivation));
+    assert.ok(projected.rationale.includes(originalCheck.feedback));
+  }
+  for (const change of [
+    bundle => { bundle.public_formative = false; },
+    bundle => { bundle.credit_bearing = true; },
+    bundle => { bundle.official_final_exam = true; },
+    bundle => { bundle.duration_validated = true; },
+    bundle => { bundle.repeatable_practice = false; },
+    bundle => { bundle.delivery_mode = 'approved_oil'; },
+    bundle => { bundle.module_id = 'PE07'; },
+    bundle => { bundle.scenarios.pop(); },
+    bundle => { delete bundle.scenarios[1]; },
+    bundle => { bundle.scenarios[0].module = 'module-01'; },
+    bundle => { delete bundle.scenarios[0].numerical_checks; },
+    bundle => { delete bundle.scenarios[0].numerical_checks[0]; },
+    bundle => { bundle.scenarios[0].numerical_checks[0].source_ids = []; },
+    bundle => { bundle.scenarios[0].numerical_checks[0].source_ids = ['MISSING']; },
+    bundle => { bundle.scenarios[0].numerical_checks[0].derivation = ''; },
+    bundle => { bundle.scenarios[0].numerical_checks[0].feedback = ''; },
+  ]) {
+    const bundle = structuredClone(original); change(bundle);
+    assert.throws(() => normalizePublicPeActivities(bundle, 'PE08', sources));
   }
 });

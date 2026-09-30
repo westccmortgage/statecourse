@@ -1,0 +1,469 @@
+{
+  "schema_version": "1.0",
+  "module_id": "PE08",
+  "title": "Integrated Mortgage File Decisions",
+  "as_of": "2026-09-30",
+  "status": "authored_review_draft",
+  "public_formative": true,
+  "credit_bearing": false,
+  "official_final_exam": false,
+  "repeatable_practice": true,
+  "implementation_note": "Free before, during and after paid enrollment. Original public formative items and explanations. This local content does not implement access, enrollment, measured time, instructor acceptance or credit. Proposed 100 minutes remain unvalidated.",
+  "items": [
+    {
+      "id": "PE08-P01",
+      "module_id": "PE08",
+      "unit_id": "8A",
+      "objective_id": "PE08-A",
+      "type": "single_choice",
+      "prompt": "Casey reports $9,000 monthly, including an unsupported $1,000 bonus. Jules accepts $6,600 salary and $1,400 pension. Which record is supportable?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Use $9,000 because an application statement is accepted evidence.",
+          "feedback": "The application records a report. It does not make the unsupported bonus qualifying income."
+        },
+        {
+          "id": "B",
+          "text": "Use $8,000 for the supplied calculation and preserve the separate reported amount and bonus question.",
+          "feedback": "Correct. $6,600 + $1,400 = $8,000; preserving the difference makes the review traceable."
+        },
+        {
+          "id": "C",
+          "text": "Use $6,600 because pension income must always be excluded.",
+          "feedback": "Automatic pension exclusion is not the Regulation B rule. Individual evidence and probable continuance matter; this pension is stipulated accepted."
+        },
+        {
+          "id": "D",
+          "text": "Rewrite the employer record to show the $9,000 requested amount.",
+          "feedback": "Changing source evidence to match a target amount would falsify the record rather than reconcile it."
+        }
+      ],
+      "correct_choice_id": "B",
+      "source_ids": [
+        "P8-03",
+        "P8-05",
+        "P8-12"
+      ],
+      "skill": "evidence_status",
+      "assessment_role": "public_formative",
+      "credit_bearing": false
+    },
+    {
+      "id": "PE08-P02",
+      "module_id": "PE08",
+      "unit_id": "8A",
+      "objective_id": "PE08-A",
+      "type": "single_choice",
+      "prompt": "All six TRID elements arrive at 14:00 Monday September 14. A complete bank statement arrives Friday September 18. The covered loan remains pending, and the creditor is open Monday–Friday with no holiday. Which initial LE conclusion follows?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "The ordinary delivery-or-mail deadline is Thursday September 17.",
+          "feedback": "Correct. Count September 15, 16 and 17 after the stipulated receipt event."
+        },
+        {
+          "id": "B",
+          "text": "The three-day count begins when the statement arrives September 18.",
+          "feedback": "Verification cannot be made an additional prerequisite to this initial LE trigger."
+        },
+        {
+          "id": "C",
+          "text": "The count begins when the underwriter first opens the file.",
+          "feedback": "Actual receipt of the supplied elements controls this trigger, not a later review event."
+        },
+        {
+          "id": "D",
+          "text": "A signed application is always a required seventh element.",
+          "feedback": "The scoped six-item definition does not add an application signature as a seventh element."
+        }
+      ],
+      "correct_choice_id": "A",
+      "source_ids": [
+        "P8-01",
+        "P8-02"
+      ],
+      "skill": "application_event",
+      "assessment_role": "public_formative",
+      "credit_bearing": false
+    },
+    {
+      "id": "PE08-P03",
+      "module_id": "PE08",
+      "unit_id": "8B",
+      "objective_id": "PE08-B",
+      "type": "single_choice",
+      "prompt": "The price stays $450,000, accepted appraised value is $440,000, and requested loan is $360,000. Use the ordinary Fannie Mae purchase denominator with no exception. Which statement correctly distinguishes the classroom mathematical LTV rounded to two decimal places from the Fannie Mae delivery ratio?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "80.00% for both purposes, because price always controls.",
+          "feedback": "That divides by $450,000 and ignores the lower accepted value used by this method. It also misses the guide’s separate delivery rounding treatment."
+        },
+        {
+          "id": "B",
+          "text": "81.82% for both purposes, and this automatically denies every possible loan.",
+          "feedback": "81.82% is the classroom mathematical display, not the delivery ratio. The guide truncates to 81.81% and rounds up to 82% for delivery. Neither result automatically decides every possible loan."
+        },
+        {
+          "id": "C",
+          "text": "97.78% for both purposes, because value divided by price is LTV.",
+          "feedback": "That operation compares value with price, not the loan with the governing denominator; it does not establish either requested ratio."
+        },
+        {
+          "id": "D",
+          "text": "81.82% as the classroom mathematical display and 82% for Fannie Mae delivery; the affected requirements still need review.",
+          "feedback": "Correct. $360,000 ÷ $440,000 × 100 = 81.818…%, displayed mathematically as 81.82%. The guide truncates the raw ratio to 81.81% and rounds up to 82% for delivery. The actual program and file consequences require review."
+        }
+      ],
+      "correct_choice_id": "D",
+      "source_ids": [
+        "P8-08"
+      ],
+      "skill": "ltv_value_change",
+      "assessment_role": "public_formative",
+      "credit_bearing": false
+    },
+    {
+      "id": "PE08-P04",
+      "module_id": "PE08",
+      "unit_id": "8B",
+      "objective_id": "PE08-B",
+      "type": "single_choice",
+      "prompt": "The revised fixed loan has $2,785.42 housing expense, $750 other accepted monthly debts and $8,000 income. A newly documented $380 monthly personal-loan payment must be included. What is the updated DTI?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "44.19%.",
+          "feedback": "This omits the newly documented $380 payment."
+        },
+        {
+          "id": "B",
+          "text": "39.28%.",
+          "feedback": "This uses the unsupported $9,000 income and still omits the new payment."
+        },
+        {
+          "id": "C",
+          "text": "48.94%.",
+          "feedback": "Correct. ($2,785.42 + $750 + $380) ÷ $8,000 × 100 = 48.94275%."
+        },
+        {
+          "id": "D",
+          "text": "34.82%.",
+          "feedback": "This is approximately housing alone divided by income; total DTI includes the other required obligations."
+        }
+      ],
+      "correct_choice_id": "C",
+      "source_ids": [
+        "P8-03",
+        "P8-10",
+        "P8-13"
+      ],
+      "skill": "changed_debt_dti",
+      "assessment_role": "public_formative",
+      "credit_bearing": false
+    },
+    {
+      "id": "PE08-P05",
+      "module_id": "PE08",
+      "unit_id": "8B",
+      "objective_id": "PE08-B",
+      "type": "single_choice",
+      "prompt": "The $122,000 balance includes $18,000 now established as personal unsecured loan proceeds. Assume the other $104,000 is eligible. Which statement fits the stated Fannie Mae program?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "All $122,000 is eligible because it is already in the bank.",
+          "feedback": "A bank balance proves possession at a date; it does not remove the program restriction on this source."
+        },
+        {
+          "id": "B",
+          "text": "Exclude the $18,000 from eligible funds for down payment, closing costs and reserves, and separately analyze the debt.",
+          "feedback": "Correct. The source restriction and the liability analysis are separate consequences of the same discovery."
+        },
+        {
+          "id": "C",
+          "text": "Call the $18,000 a gift if Casey prefers that description.",
+          "feedback": "The supplied agreement requires repayment; relabeling cannot change that evidence."
+        },
+        {
+          "id": "D",
+          "text": "The program rule means all borrowed funds of every kind are prohibited for every mortgage.",
+          "feedback": "The cited provision concerns personal unsecured loans for specified uses; it is not a universal rule for all funds and products."
+        }
+      ],
+      "correct_choice_id": "B",
+      "source_ids": [
+        "P8-09",
+        "P8-10"
+      ],
+      "skill": "funds_source",
+      "assessment_role": "public_formative",
+      "credit_bearing": false
+    },
+    {
+      "id": "PE08-P06",
+      "module_id": "PE08",
+      "unit_id": "8B",
+      "objective_id": "PE08-B",
+      "type": "single_choice",
+      "prompt": "Jules later accepts verified payoff of the $18,000 debt, exclusion of its payment, and a current account balance of $104,000 after that payoff. What is the correct cash-analysis next step?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Subtract another $18,000 from $104,000 because the old deposit existed.",
+          "feedback": "The updated balance already includes the payoff outflow. Subtracting again double counts it."
+        },
+        {
+          "id": "B",
+          "text": "Return to the old $122,000 balance because the debt disappeared.",
+          "feedback": "Paying the debt spent money; removal of a payment does not restore the cash."
+        },
+        {
+          "id": "C",
+          "text": "Treat the payoff promise alone as acceptance.",
+          "feedback": "The stem supplies actual evidence and an authorized decision. A mere promise would not establish the same result."
+        },
+        {
+          "id": "D",
+          "text": "Use the verified $104,000 current balance and separately record the accepted debt exclusion.",
+          "feedback": "Correct. Update the asset and liability facts together and keep their supporting evidence."
+        }
+      ],
+      "correct_choice_id": "D",
+      "source_ids": [
+        "P8-11"
+      ],
+      "skill": "payoff_double_count",
+      "assessment_role": "public_formative",
+      "credit_bearing": false
+    },
+    {
+      "id": "PE08-P07",
+      "module_id": "PE08",
+      "unit_id": "8B",
+      "objective_id": "PE08-B",
+      "type": "single_choice",
+      "prompt": "The lesson ARM begins at $1,943.76 P&I. Its stated first-reset scenario yields $2,344.54 P&I. Which explanation is accurate?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "The displayed increase is $400.78; this scenario is neither a refinance guarantee nor a legal qualifying-payment calculation.",
+          "feedback": "Correct. $2,344.54 − $1,943.76 = $400.78, and the scenario has the limits stated in the lesson."
+        },
+        {
+          "id": "B",
+          "text": "The mortgage can never cost more than $2,344.54 in any month.",
+          "feedback": "The illustration is one first-reset scenario, excludes additional housing costs from P&I and is not a lifetime maximum."
+        },
+        {
+          "id": "C",
+          "text": "The original $1,943.76 payment proves repayment capacity for all years.",
+          "feedback": "An initial payment does not replace the applicable repayment analysis or future-payment explanation."
+        },
+        {
+          "id": "D",
+          "text": "The ARM is automatically best because its first payment is lower.",
+          "feedback": "A meaningful comparison must consider changes, costs, household needs and eligibility rather than that single figure."
+        }
+      ],
+      "correct_choice_id": "A",
+      "source_ids": [
+        "P8-24",
+        "P8-03",
+        "P8-20"
+      ],
+      "skill": "arm_risk_comparison",
+      "assessment_role": "public_formative",
+      "credit_bearing": false
+    },
+    {
+      "id": "PE08-P08",
+      "module_id": "PE08",
+      "unit_id": "8C",
+      "objective_id": "PE08-C",
+      "type": "single_choice",
+      "prompt": "A valid zero-tolerance lender fee rises from $900 to $950. A correctly classified ten-percent aggregate rises from $1,500 to $1,690. All services occurred and no permissible baseline revision applies. What combined excess is identified?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "$240.",
+          "feedback": "$240 is the total raw increase, but $150 of the aggregate increase is within the stipulated ten-percent allowance."
+        },
+        {
+          "id": "B",
+          "text": "$40.",
+          "feedback": "This is only the aggregate excess and omits the separate $50 zero-tolerance increase."
+        },
+        {
+          "id": "C",
+          "text": "$90.",
+          "feedback": "Correct. The aggregate ceiling is $1,650, leaving $40; add the separate $50 lender-fee excess."
+        },
+        {
+          "id": "D",
+          "text": "$0 because a new invoice is always a changed circumstance.",
+          "feedback": "An invoice alone does not automatically establish a permissible revised baseline or eliminate the stipulated excess."
+        }
+      ],
+      "correct_choice_id": "C",
+      "source_ids": [
+        "P8-02"
+      ],
+      "skill": "tolerance_reconciliation",
+      "assessment_role": "public_formative",
+      "credit_bearing": false
+    },
+    {
+      "id": "PE08-P09",
+      "module_id": "PE08",
+      "unit_id": "8C",
+      "objective_id": "PE08-C",
+      "type": "single_choice",
+      "prompt": "Use price contribution $98,000, gross charges $10,040, prepaids/escrow $4,200, earnest credit $12,000, seller credit $5,000 and a valid $90 lender-paid correction. No other adjustments apply. What cash remains due from Casey?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "$107,150.",
+          "feedback": "This fails to subtract the earnest deposit already paid and credited."
+        },
+        {
+          "id": "B",
+          "text": "$95,150.",
+          "feedback": "Correct. $98,000 + $10,040 + $4,200 − $12,000 − $5,000 − $90 = $95,150."
+        },
+        {
+          "id": "C",
+          "text": "$95,240.",
+          "feedback": "This omits the stipulated $90 lender-paid correction."
+        },
+        {
+          "id": "D",
+          "text": "$95,000.",
+          "feedback": "That is the earlier worksheet total; the permitted $150 net increase changes it."
+        }
+      ],
+      "correct_choice_id": "B",
+      "source_ids": [
+        "P8-02"
+      ],
+      "skill": "cash_to_close",
+      "assessment_role": "public_formative",
+      "credit_bearing": false
+    },
+    {
+      "id": "PE08-P10",
+      "module_id": "PE08",
+      "unit_id": "8C",
+      "objective_id": "PE08-C",
+      "type": "single_choice",
+      "prompt": "Ren confirms the corrected CD leaves APR accurate, does not change the disclosed loan product, and adds no prepayment penalty. What follows under the ordinary rule?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Any cost change automatically requires a new three-business-day wait.",
+          "feedback": "The rule identifies specified restart events; not every correction triggers a new wait."
+        },
+        {
+          "id": "B",
+          "text": "The creditor can ignore the correction because no restart occurs.",
+          "feedback": "The corrected disclosure still must meet the applicable receipt requirement."
+        },
+        {
+          "id": "C",
+          "text": "A revised LE may replace the CD after the initial CD has been provided.",
+          "feedback": "The rule does not permit a revised LE on or after the date the CD is provided."
+        },
+        {
+          "id": "D",
+          "text": "The stated correction does not trigger a new wait, but the corrected CD still must be received by consummation.",
+          "feedback": "Correct. This conclusion depends on all three supplied findings; other release requirements remain separate."
+        }
+      ],
+      "correct_choice_id": "D",
+      "source_ids": [
+        "P8-02",
+        "P8-29"
+      ],
+      "skill": "cd_restart",
+      "assessment_role": "public_formative",
+      "credit_bearing": false
+    },
+    {
+      "id": "PE08-P11",
+      "module_id": "PE08",
+      "unit_id": "8C",
+      "objective_id": "PE08-C",
+      "type": "single_choice",
+      "prompt": "Jules accepts the revised financial analysis and Ren accepts disclosure compliance. The title team has not accepted evidence resolving the seller lien. Under the stated company process, who may treat the whole file as released?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "No one yet; the identified title disposition and authorized release decision remain outstanding.",
+          "feedback": "Correct. Completed financial and disclosure reviews do not manufacture the missing title acceptance or release decision."
+        },
+        {
+          "id": "B",
+          "text": "The processor, because every requested attachment has arrived.",
+          "feedback": "Receipt does not establish that the authorized reviewer accepted the attachment for the outstanding condition."
+        },
+        {
+          "id": "C",
+          "text": "The real estate agent, because the appointment is today.",
+          "feedback": "The calendar and agent do not supply the lender’s missing release authority."
+        },
+        {
+          "id": "D",
+          "text": "The learner, because all public quiz answers are correct.",
+          "feedback": "Practice success is neither underwriting authority nor a regulatory completion or loan release."
+        }
+      ],
+      "correct_choice_id": "A",
+      "source_ids": [
+        "P8-03",
+        "P8-22"
+      ],
+      "skill": "release_authority",
+      "assessment_role": "public_formative",
+      "credit_bearing": false
+    },
+    {
+      "id": "PE08-P12",
+      "module_id": "PE08",
+      "unit_id": "8C",
+      "objective_id": "PE08-C",
+      "type": "single_choice",
+      "prompt": "In the separate covered refinance, consummation and every required consumer’s receipt of the rescission notice and material disclosures occur Monday October 5, 2026. No exception, waiver or relevant holiday applies. Which statement is correct?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "The period ends when the first consumer signs on Monday.",
+          "feedback": "The ordinary period does not end at signing, and the required consumers and last triggering event matter."
+        },
+        {
+          "id": "B",
+          "text": "The period ends Wednesday October 7 at noon.",
+          "feedback": "Tuesday, Wednesday and Thursday are the three counted days; the stated rule runs to midnight of the third day."
+        },
+        {
+          "id": "C",
+          "text": "It ends midnight Thursday October 8; Friday October 9 is the earliest possible release, also requiring reasonable satisfaction that no rescission occurred.",
+          "feedback": "Correct. The three days are October 6, 7 and 8. Expiration alone does not supply every required release fact."
+        },
+        {
+          "id": "D",
+          "text": "The purchase file’s pre-consummation CD wait cancels this later right.",
+          "feedback": "The later covered refinance has its own coverage and post-consummation rescission analysis; an old purchase wait does not replace it."
+        }
+      ],
+      "correct_choice_id": "C",
+      "source_ids": [
+        "P8-01",
+        "P8-16"
+      ],
+      "skill": "refinance_rescission",
+      "assessment_role": "public_formative",
+      "credit_bearing": false
+    }
+  ]
+}

@@ -7,7 +7,7 @@ import { projectPracticeActivities } from './free-practice-activities.mjs';
 
 // Explicitly public, newly authored formative material. Never load the CE
 // review loader, final banks, instructor guide, or an aggregate NMLS source tree.
-const lessonFiles = ['module-01.md', 'module-02.md', 'module-03.md', 'module-04.md', 'module-05.md', 'module-06.md'];
+const lessonFiles = ['module-01.md', 'module-02.md', 'module-03.md', 'module-04.md', 'module-05.md', 'module-06.md', 'module-07.md', 'module-08.md'];
 const digest = text => createHash('sha256').update(text).digest('hex');
 const protectedText = /N26-FIN-|##\s*Answer key|instructor version and answer key|Items, with the material reference for each answer|__statecourse_private_export/i;
 const requireText = (value, label) => {
@@ -96,7 +96,7 @@ export function buildPeFoundationsPractice({ root, write, quizzes = TOPIC_QUIZZE
   const payload = {
     course_id: source.courseId, course_title: source.courseTitle, state_code: source.stateCode, state_name: source.stateName,
     coverage: source.coverage, operating_mode: 'free_practice', creditEligible: false, completeCourse: false,
-    availability_notice: 'Six foundation modules are available; the full 20-hour course is still in development.',
+    availability_notice: 'Eight draft modules are available; the qualifying 20-hour course is still in development.',
     providerApproval: null, courseApproval: null, access: 'Free before, during and after paid enrollment. No account or payment required.',
     lessons: lessons.map(({ id, title, content_url, sha256 }) => ({ id, title, content_url, sha256 })), questions, activities,
   };

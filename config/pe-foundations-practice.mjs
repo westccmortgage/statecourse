@@ -1,10 +1,11 @@
+import { PRODUCT_FILE_TOPIC_QUIZZES, PE_PRODUCT_FILE_SCENARIOS } from './pe-product-file-practice.mjs';
 import { LAW_ETHICS_TOPIC_QUIZZES } from './pe-law-ethics-practice.mjs';
 import { PE_LAW_ETHICS_SCENARIOS } from './pe-law-ethics-activities.mjs';
 import { APPLICATION_TOPIC_QUIZZES } from './pe-application-practice.mjs';
 import { PE_APPLICATION_SCENARIOS } from './pe-application-activities.mjs';
 
 /** Public formative practice only. No private instructor guide or summative bank is imported.
- * Sources: PE01–PE06 public student review manuscripts and curriculum blueprint dated 2026-09-30.
+ * Sources: PE01–PE08 public student review manuscripts and curriculum blueprint dated 2026-09-30.
  * All PEFP identifiers are newly assigned. Selection keys and numerical results support
  * transparent practice feedback, never credit, approval, course time or final assessment.
  * Short answers intentionally become self-review through the generic projection.
@@ -14,13 +15,13 @@ export const PE_FOUNDATIONS = {
   "courseId": "national-safe-pe-foundations",
   "stateCode": "US",
   "stateName": "National mortgage",
-  "courseTitle": "SAFE PE Foundations: PE01–PE06",
+  "courseTitle": "SAFE PE Foundations: PE01–PE08",
   "curriculumDir": "nmls/pe-foundations/curriculum",
-  "coverage": "six foundation modules; full 20-hour course in development",
+  "coverage": "eight draft modules; qualifying 20-hour course in development",
   "recordUrl": "mortgage/pre-license/",
   "status": "Under construction; not NMLS approved; no credit",
   "access": "Free before, during and after paid enrollment; no account or payment required",
-  "disclaimer": "Only PE01 through PE06 are included. This is not the full 20-hour course, is not NMLS approved and provides no credit. Optional self-review is not instructor assessment or course completion.",
+  "disclaimer": "Eight draft modules are available. This is not the full 20-hour course, is not NMLS approved and provides no credit. Optional self-review is not instructor assessment or course completion.",
   "version": "2026-09-30"
 };
 
@@ -1031,5 +1032,5 @@ const FOUNDATIONS_SCENARIOS = [
 ];
 
 
-export const TOPIC_QUIZZES = { ...FOUNDATIONS_TOPIC_QUIZZES, ...APPLICATION_TOPIC_QUIZZES, ...LAW_ETHICS_TOPIC_QUIZZES };
-export const SCENARIOS = [...FOUNDATIONS_SCENARIOS, ...PE_APPLICATION_SCENARIOS, ...PE_LAW_ETHICS_SCENARIOS];
+export const TOPIC_QUIZZES = { ...FOUNDATIONS_TOPIC_QUIZZES, ...APPLICATION_TOPIC_QUIZZES, ...LAW_ETHICS_TOPIC_QUIZZES, ...PRODUCT_FILE_TOPIC_QUIZZES };
+export const SCENARIOS = [...FOUNDATIONS_SCENARIOS, ...PE_APPLICATION_SCENARIOS, ...PE_LAW_ETHICS_SCENARIOS, ...PE_PRODUCT_FILE_SCENARIOS];

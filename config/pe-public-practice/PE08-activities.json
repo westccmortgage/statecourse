@@ -1,0 +1,644 @@
+{
+  "schema_version": "1.0",
+  "module_id": "PE08",
+  "title": "Integrated mortgage file decisions public activity candidates",
+  "as_of": "2026-09-30",
+  "status": "authored_review_draft",
+  "public_formative": true,
+  "credit_bearing": false,
+  "official_final_exam": false,
+  "repeatable_practice": true,
+  "interaction": "Optional written self-review or learner-chosen offline discussion. No instructor reply, peer service, identity verification, time validation or completion is provided. Future genuine OIL participation and acceptance remain unmet.",
+  "privacy": "Fictional facts only; do not enter real borrower data.",
+  "integration_note": "Local candidate content only. Parent may adapt tasks and numeric checks to the existing public activity projection. Numerical targets are explicit public worked derivations with stated assumptions. No private case key is imported.",
+  "scenarios": [
+    {
+      "id": "PE08-A01-file-map",
+      "module": "module-08",
+      "unit_id": "8A",
+      "title": "Reconstruct the Linden evidence record",
+      "context": "Use the first stage of the PE08 public lesson. All facts are fictional. Build the first version before applying later changes. These are optional written self-review tasks; no peer or instructor response is provided. Numerical answers are public worked calculations, not protected assessment keys.",
+      "facts": [
+        "Casey Linden requests a consumer-purpose closed-end first-lien principal-residence purchase loan for possible Fannie Mae delivery. Ordinary TRID and general ATR coverage are stipulated, not inferred from the property alone.",
+        "All six TRID elements arrive Monday September 14, 2026 at 14:00. The lender is open for substantially all business functions Monday–Friday, no relevant holiday applies, and the application remains pending. Initial LE receipt in person occurs Thursday September 17.",
+        "Price and initially estimated value are $450,000; requested loan is $360,000 at fixed 6.00%, 360 end-of-month payments, monthly compounding. No mortgage insurance is included under the stipulated initial structure.",
+        "Application income is $9,000: $6,600 salary, $1,400 pension and $1,000 expected bonus. Employer records show $3,300 semimonthly. Jules accepts salary and pension after individual review, but the bonus lacks the required support.",
+        "Other included payments are $420 vehicle, $90 revolving and $240 student debt, all accepted case inputs. Taxes $450, insurance $125 and dues $100 are additional monthly housing costs.",
+        "B1 has a $122,000 ending balance after the $12,000 earnest deposit cleared; complete pages are received. The source of an $18,000 transfer is unresolved. An assistant asks to reject the pension because pension recipients should not take new mortgages.",
+        "The fictional company screen is 45.00% DTI. It is not a federal or universal Fannie Mae limit and does not establish QM status."
+      ],
+      "sources": [
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/2/",
+          "reference": "P8-01: CFPB Regulation Z §1026.2(a)(3), (6), (13): six-element application, business days and consummation"
+        },
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/19/",
+          "reference": "P8-02: CFPB Regulation Z §1026.19(e) and (f), with interpretations: integrated disclosure timing, good faith, revisions and corrections"
+        },
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/43/",
+          "reference": "P8-03: CFPB Regulation Z §1026.43(a), (c) and (e): ATR coverage, general factors, verification, payments and QM distinctions"
+        },
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1002/2/",
+          "reference": "P8-04: CFPB Regulation B §1002.2(f): application and completed application; related definitions"
+        },
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1002/6/",
+          "reference": "P8-05: CFPB Regulation B §1002.6(a) and (b)(5): current evaluation standards and income"
+        },
+        {
+          "url": "https://selling-guide.fanniemae.com/sel/b3-3.1-01/general-income-information",
+          "reference": "P8-12: Fannie Mae Selling Guide B3-3.1-01: General Income Information"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "PE08-T01-evidence",
+          "type": "short-answer",
+          "prompt": "Write five source-to-decision rows for the application event, salary, pension, bonus and transfer. Distinguish reported, received, reviewed and accepted; state the next evidence and reviewer for each open issue.",
+          "rubric": [
+            "Preserve September 14 as the supplied application event",
+            "Use $8,000 as accepted income while retaining the $9,000 reported figure",
+            "Do not describe a complete bank statement as acceptance of the transfer source",
+            "Ask a proportionate source question through an authorized channel",
+            "Avoid real identifiers and allegations unsupported by the facts"
+          ],
+          "rationale": "A useful source map explains what a record establishes and what it leaves unresolved. It does not conceal a difference between an application and accepted evidence.",
+          "assessment_role": "public_formative",
+          "requires_instructor_acceptance": false
+        },
+        {
+          "id": "PE08-T01-law",
+          "type": "short-answer",
+          "prompt": "Explain why the initial LE date, the seven-business-day LE wait and an ECOA completed-application determination are separate questions. Show the September counts.",
+          "rubric": [
+            "Initial LE count is September 15, 16 and 17 under the creditor-business-day definition",
+            "LE waiting-period count is September 18, 19, 21, 22, 23, 24 and 25",
+            "Do not add verification or a signature as a seventh TRID element",
+            "Identify creditor procedures, actual information and reasonable diligence for the Regulation B inquiry"
+          ],
+          "rationale": "The same file can contain different statutory triggers. A familiar portal status cannot unify them.",
+          "assessment_role": "public_formative",
+          "requires_instructor_acceptance": false
+        },
+        {
+          "id": "PE08-T01-treatment",
+          "type": "short-answer",
+          "prompt": "Write a three-to-five-sentence recommendation addressing the pension instruction, bonus and open transfer. Name the source type for each conclusion.",
+          "rubric": [
+            "Individual pension evidence supports the supplied acceptance",
+            "The unsupported bonus is excluded for evidence reasons",
+            "The pension stereotype should be corrected and routed to compliance",
+            "Explain why this is an analysis of actual treatment, not a finding from a statistical disparity",
+            "Do not promise credit approval"
+          ],
+          "rationale": "The current Regulation B income protection and its July 2026 scope must be applied accurately. Acceptance of one documented source does not validate every other claimed source.",
+          "assessment_role": "public_formative",
+          "requires_instructor_acceptance": false
+        }
+      ],
+      "numerical_checks": [
+        {
+          "id": "PE08-N01-income",
+          "label": "Accepted monthly income",
+          "type": "numeric",
+          "expected": 8000,
+          "unit": "USD/month",
+          "tolerance": 0.01,
+          "derivation": "Salary: 3300 × 24 ÷ 12 = 6600. Add accepted pension 1400; exclude unsupported bonus 1000. Total = 8000.",
+          "source_ids": [
+            "P8-03",
+            "P8-05",
+            "P8-12"
+          ],
+          "feedback": "Compare your inputs and intermediate steps with the public worked derivation. This numerical result does not establish legal compliance, approval, funding or course completion."
+        },
+        {
+          "id": "PE08-N02-initial-pi",
+          "label": "Initial fixed-loan principal and interest",
+          "type": "numeric",
+          "expected": 2158.38,
+          "unit": "USD/month",
+          "tolerance": 0.01,
+          "derivation": "P = 360000; r = 0.06/12 = 0.005; n = 360. P × r / (1 − (1+r)^−n) = 2158.381890550…; round to 2158.38.",
+          "source_ids": [
+            "P8-03"
+          ],
+          "feedback": "Compare your inputs and intermediate steps with the public worked derivation. This numerical result does not establish legal compliance, approval, funding or course completion."
+        },
+        {
+          "id": "PE08-N03-initial-dti",
+          "label": "Initial total DTI",
+          "type": "numeric",
+          "expected": 44.79,
+          "unit": "percent",
+          "tolerance": 0.01,
+          "derivation": "Housing = 2158.38 + 450 + 125 + 100 = 2833.38. Other debt = 420 + 90 + 240 = 750. (2833.38 + 750)/8000 × 100 = 44.79225%, displayed 44.79%.",
+          "source_ids": [
+            "P8-03"
+          ],
+          "feedback": "Compare your inputs and intermediate steps with the public worked derivation. This numerical result does not establish legal compliance, approval, funding or course completion."
+        }
+      ]
+    },
+    {
+      "id": "PE08-A02-value-debt",
+      "module": "module-08",
+      "unit_id": "8B",
+      "title": "Reconcile value product and late debt",
+      "context": "Continue the same fictional file using the dated replacement facts below. Keep the earlier evidence version visible. Your recommendation is a statement for the authorized reviewer, not permission to approve. All payment mechanics have explicit public derivations.",
+      "facts": [
+        "On September 21 the accepted appraised value is $440,000 while the price remains $450,000. Apply the ordinary Fannie Mae purchase LTV denominator; no exception applies. For the unchanged $360,000 loan, the raw ratio is 81.8181818…%, mathematically rounded to 81.82% for this classroom display. The Fannie Mae guide instead truncates to 81.81%, then rounds up to 82% for delivery. Casey requests a $352,000 fixed loan at 6.00% over 360 payments, giving exactly 80.00% mathematically and 80% for delivery.",
+        "The revised fixed P&I is $2,110.42. Housing add-ons remain $675. Accepted income remains $8,000; other existing debts remain $750.",
+        "On September 25 B2 establishes the $18,000 deposit as an unsecured personal installment loan with $380 monthly payment and more than ten payments left. Casey previously called it a gift. No fraud finding is supplied.",
+        "Before payoff, B1 still shows $122,000. The other $104,000 is stipulated eligible. The company DTI screen remains 45.00%; there is no authorized exception decision.",
+        "On September 29 at 09:00 Jules accepts reliable evidence of actual full payoff, no remaining payment and a current $104,000 account balance after the $18,000 outflow, with no other cash movement or payoff charge. Jules accepts debt exclusion only after the required full analysis.",
+        "For a separate product illustration on $352,000, an ARM starts at 5.25% for 60 monthly payments, then adjusts annually. First and later adjustment caps are 2 percentage points; lifetime increase cap is 5 points; floor is 2.75%; margin is 2.75%. At the first reset the hypothetical index is 4.50%, producing 7.25%. Use theoretical unrounded amortization, remaining term 300 months. This alternative has not been found eligible."
+      ],
+      "sources": [
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/43/",
+          "reference": "P8-03: CFPB Regulation Z §1026.43(a), (c) and (e): ATR coverage, general factors, verification, payments and QM distinctions"
+        },
+        {
+          "url": "https://selling-guide.fanniemae.com/sel/b2-1.2-01/loan-value-ltv-ratios",
+          "reference": "P8-08: Fannie Mae Selling Guide B2-1.2-01: Loan-to-Value Ratios"
+        },
+        {
+          "url": "https://selling-guide.fanniemae.com/sel/b3-4.3-17/personal-unsecured-loans",
+          "reference": "P8-09: Fannie Mae Selling Guide B3-4.3-17: Personal Unsecured Loans"
+        },
+        {
+          "url": "https://selling-guide.fanniemae.com/sel/b3-6-01/general-information-liabilities",
+          "reference": "P8-10: Fannie Mae Selling Guide B3-6-01: General Information on Liabilities"
+        },
+        {
+          "url": "https://selling-guide.fanniemae.com/sel/b3-6-07/debts-paid-or-prior-closing",
+          "reference": "P8-11: Fannie Mae Selling Guide B3-6-07: Debts Paid Off At or Prior to Closing"
+        },
+        {
+          "url": "https://selling-guide.fanniemae.com/sel/b3-6-05/monthly-debt-obligations",
+          "reference": "P8-13: Fannie Mae Selling Guide B3-6-05: Monthly Debt Obligations, page dated August 5 2026"
+        },
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/42/",
+          "reference": "P8-14: CFPB Regulation Z §1026.42: valuation independence and permitted requests"
+        },
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/36/",
+          "reference": "P8-20: CFPB Regulation Z §1026.36(e): steering and compensation-related restrictions"
+        },
+        {
+          "url": "https://selling-guide.fanniemae.com/sel/b3-2-01/general-information-du",
+          "reference": "P8-22: Fannie Mae Selling Guide B3-2-01: General Information on DU, page dated April 1 2026"
+        },
+        {
+          "url": "https://files.consumerfinance.gov/f/documents/cfpb_charm_booklet.pdf",
+          "reference": "P8-24: CFPB Consumer Handbook on Adjustable Rate Mortgages"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "PE08-T02-impact",
+          "type": "short-answer",
+          "prompt": "Identify the effects of the lower value on loan amount, mathematical LTV, Fannie Mae delivery LTV, P&I and the price-minus-loan contribution. Explain why a lower payment can require more money at closing.",
+          "rubric": [
+            "Use $440,000 rather than $450,000 as the specified denominator",
+            "Distinguish the 81.82% classroom mathematical display from truncation to 81.81% and rounding up to the 82% Fannie Mae delivery ratio",
+            "Show the original and revised loan amounts",
+            "Contribution rises from $90,000 to $98,000",
+            "Route collateral questions without requesting a target value",
+            "Do not invent a contract cancellation right or program approval"
+          ],
+          "rationale": "A value change has linked payment and cash consequences; a correct LTV alone does not resolve the file.",
+          "assessment_role": "public_formative",
+          "requires_instructor_acceptance": false
+        },
+        {
+          "id": "PE08-T02-debt",
+          "type": "short-answer",
+          "prompt": "Write separate September 25 and September 29 records showing DTI, eligible cash, evidence and decision owner. Explain why both versions show $104,000 usable cash.",
+          "rubric": [
+            "Before payoff, exclude $18,000 personal unsecured proceeds and include $380 monthly debt",
+            "After payoff, use actual $104,000 balance and only the stipulated accepted payment exclusion",
+            "Do not subtract $18,000 twice or resurrect $122,000",
+            "Preserve the conflicting gift description and agreement without alleging intent",
+            "September 25 recommendation holds the affected release for review; September 29 clears only the supplied issue"
+          ],
+          "rationale": "Before payoff the figure is a program-adjusted amount; after payoff it is the actual accepted account balance. Matching totals can have different evidence.",
+          "assessment_role": "public_formative",
+          "requires_instructor_acceptance": false
+        },
+        {
+          "id": "PE08-T02-product",
+          "type": "short-answer",
+          "prompt": "Explain the fixed and ARM payment paths to Casey in four sentences. Include the first-reset scenario, additional housing costs and one material limit of the illustration.",
+          "rubric": [
+            "Initial ARM P&I is $1,943.76; initial fixed P&I is $2,110.42",
+            "First-reset scenario ARM P&I is $2,344.54, an increase of $400.78",
+            "Taxes, insurance and dues are outside P&I",
+            "The scenario is not a forecast, lifetime maximum, approval or the regulatory qualification method",
+            "No future refinance is promised and no available option is concealed for compensation"
+          ],
+          "rationale": "The explanation should make the change understandable without selecting a product for the borrower or implying eligibility.",
+          "assessment_role": "public_formative",
+          "requires_instructor_acceptance": false
+        }
+      ],
+      "numerical_checks": [
+        {
+          "id": "PE08-N04-old-ltv",
+          "label": "Classroom mathematical LTV of the unchanged $360,000 loan, rounded to two decimal places",
+          "type": "numeric",
+          "expected": 81.82,
+          "unit": "percent",
+          "tolerance": 0.01,
+          "derivation": "360000 / min(450000,440000) × 100 = 81.8181818…%; the requested classroom mathematical display rounds to 81.82%. This check does not ask for the Fannie Mae delivery ratio: the guide truncates the raw ratio to 81.81%, then rounds up to 82% for delivery.",
+          "source_ids": [
+            "P8-08"
+          ],
+          "feedback": "Compare your inputs and intermediate steps with the public worked derivation. This numerical result does not establish legal compliance, approval, funding or course completion."
+        },
+        {
+          "id": "PE08-N05-price-contribution",
+          "label": "Price minus revised loan",
+          "type": "numeric",
+          "expected": 98000,
+          "unit": "USD",
+          "tolerance": 0.01,
+          "derivation": "440000 × 0.80 = 352000 revised loan. 450000 − 352000 = 98000 contribution before costs and credits.",
+          "source_ids": [
+            "P8-08"
+          ],
+          "feedback": "Compare your inputs and intermediate steps with the public worked derivation. This numerical result does not establish legal compliance, approval, funding or course completion."
+        },
+        {
+          "id": "PE08-N06-late-dti",
+          "label": "DTI including late personal loan",
+          "type": "numeric",
+          "expected": 48.94,
+          "unit": "percent",
+          "tolerance": 0.01,
+          "derivation": "(2110.42 + 675 + 750 + 380) / 8000 × 100 = 48.94275%; display 48.94%.",
+          "source_ids": [
+            "P8-03",
+            "P8-10",
+            "P8-13"
+          ],
+          "feedback": "Compare your inputs and intermediate steps with the public worked derivation. This numerical result does not establish legal compliance, approval, funding or course completion."
+        },
+        {
+          "id": "PE08-N07-after-payoff-dti",
+          "label": "DTI after accepted payoff",
+          "type": "numeric",
+          "expected": 44.19,
+          "unit": "percent",
+          "tolerance": 0.01,
+          "derivation": "(2110.42 + 675 + 750) / 8000 × 100 = 44.19275%; display 44.19%. Exclusion is an explicit accepted case fact, not a learner decision.",
+          "source_ids": [
+            "P8-11"
+          ],
+          "feedback": "Compare your inputs and intermediate steps with the public worked derivation. This numerical result does not establish legal compliance, approval, funding or course completion."
+        },
+        {
+          "id": "PE08-N08-arm-reset",
+          "label": "Theoretical first-reset ARM principal and interest",
+          "type": "numeric",
+          "expected": 2344.54,
+          "unit": "USD/month",
+          "tolerance": 0.01,
+          "derivation": "Initial M = 352000 × (0.0525/12) / [1 − (1+0.0525/12)^−360] = 1943.7570315394787. B60 = 352000(1+r)^60 − M[(1+r)^60−1]/r = 324366.19820634974. New rate = 4.50% + 2.75% = 7.25%, within first cap. New M = B60 × (0.0725/12) / [1 − (1+0.0725/12)^−300] = 2344.541145446505, displayed 2344.54.",
+          "source_ids": [
+            "P8-24",
+            "P8-03"
+          ],
+          "feedback": "Compare your inputs and intermediate steps with the public worked derivation. This numerical result does not establish legal compliance, approval, funding or course completion."
+        }
+      ]
+    },
+    {
+      "id": "PE08-A03-closing-release",
+      "module": "module-08",
+      "unit_id": "8C",
+      "title": "Defend the closing hold",
+      "context": "Continue with the corrected $352,000 fixed loan. This case separates financial accuracy, disclosure compliance and title acceptance. Use a concise decision and consumer message. No real transfer, loan release or external communication occurs.",
+      "facts": [
+        "Initial LE receipt in person was September 17; CD receipt in person was September 24. No holiday, waiver or restart applies to those original waits. The appointment is September 29.",
+        "Initial gross closing charges $9,800 comprise a $900 lender fee, a $1,500 ten-percent aggregate and $7,400 other charges. Actual amounts are $950, $1,690 and $7,400. Ren stipulates the categories, performed services, valid baseline and no permitted baseline revision.",
+        "Northbank implements a valid $90 lender-paid correction. Price contribution $98,000, prepaids/escrow $4,200, earnest credit $12,000 and seller credit $5,000 are unchanged. All credits are stipulated lawful, reviewed and fully usable; no other adjustments apply.",
+        "Ren finds the corrected APR accurate, no disclosed product change and no added prepayment penalty. By September 29 at 10:00 Ren has accepted the actual required corrected-CD receipt evidence.",
+        "Jules has accepted the stated debt payoff and $104,000 assets. The title team has not accepted seller-lien resolution evidence. A seller email says it was paid. Company procedure requires the title disposition and the release officer’s actual release decision.",
+        "A referral partner offers to absorb $90 in exchange for future settlement referrals. A separate email changes the wire account. Neither has been approved or independently verified."
+      ],
+      "sources": [
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/2/",
+          "reference": "P8-01: CFPB Regulation Z §1026.2(a)(3), (6), (13): six-element application, business days and consummation"
+        },
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/19/",
+          "reference": "P8-02: CFPB Regulation Z §1026.19(e) and (f), with interpretations: integrated disclosure timing, good faith, revisions and corrections"
+        },
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1024/14/",
+          "reference": "P8-19: CFPB Regulation X §1024.14: kickbacks, unearned fees, referral agreements and permissible payments"
+        },
+        {
+          "url": "https://www.ftc.gov/business-guidance/resources/ftc-safeguards-rule-what-your-business-needs-know",
+          "reference": "P8-25: FTC Safeguards Rule What Your Business Needs to Know"
+        },
+        {
+          "url": "https://www.consumerfinance.gov/archive/blog/mortgage-closing-scams-how-protect-yourself-and-your-closing-funds/",
+          "reference": "P8-28: CFPB Mortgage Closing Scams How to Protect Yourself and Your Closing Funds, archived official education"
+        },
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/22/",
+          "reference": "P8-29: CFPB Regulation Z §1026.22: APR determination and accuracy"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "PE08-T03-waits",
+          "type": "short-answer",
+          "prompt": "Show the LE and CD waits, identify the later date, and explain why passing it does not release this file. Explain the corrected-CD result under Ren’s three findings.",
+          "rubric": [
+            "LE wait ends September 25 and CD wait September 28 under supplied facts",
+            "September 28 is the later timing result, not a funding promise",
+            "Cost correction does not restart the wait under all three supplied findings",
+            "Actual corrected receipt still matters",
+            "Do not invent a waiver or issue a revised LE after the CD"
+          ],
+          "rationale": "Legal timing and release authority are related but separate; the missing title acceptance still matters.",
+          "assessment_role": "public_formative",
+          "requires_instructor_acceptance": false
+        },
+        {
+          "id": "PE08-T03-costs",
+          "type": "short-answer",
+          "prompt": "Reconcile the $240 gross increase, $90 identified excess and $150 increase in borrower cash. Cross-check sources and uses.",
+          "rubric": [
+            "Zero-tolerance increase is $50",
+            "Ten-percent ceiling is $1,650 and excess is $40",
+            "Do not call the whole $240 increase an excess",
+            "Cash to close is $95,150 and both sides sum to $464,240",
+            "Remaining $8,850 is a balance, not automatic reserve sufficiency"
+          ],
+          "rationale": "The allowed aggregate increase explains why the total invoice increase and the identified excess differ.",
+          "assessment_role": "public_formative",
+          "requires_instructor_acceptance": false
+        },
+        {
+          "id": "PE08-T03-hold",
+          "type": "short-answer",
+          "prompt": "Write the six-element closing recommendation and a three-to-five-sentence message to Casey. Address the two suspicious offers without sending financial records to outsiders.",
+          "rubric": [
+            "State the version/time and hold pending accepted title evidence",
+            "Identify Jules and Ren’s accepted scope and the remaining release officer decision",
+            "A seller email is not the supplied company-required title disposition",
+            "Separate the referral proposal from the lawful fee correction and route it for compliance review",
+            "Verify wire instructions through an independently established channel and avoid promising funding"
+          ],
+          "rationale": "The responsible response is specific enough to resolve the blocker while protecting the consumer and preserving the correct authority boundaries.",
+          "assessment_role": "public_formative",
+          "requires_instructor_acceptance": false
+        },
+        {
+          "id": "PE08-T03-revision",
+          "type": "short-answer",
+          "prompt": "For an optional offline discussion or written self-review, consider the later branch where an authorized title disposition arrives. Name what you would inspect before changing the recommendation.",
+          "rubric": [
+            "Inspect actual acceptance, scope, time and responsible reviewer",
+            "Check whether a changed closing date affects other current evidence",
+            "Preserve the earlier hold record",
+            "Do not fabricate a funding, recording or completion event"
+          ],
+          "rationale": "A revision must be supported by new evidence. The exercise does not supply peer participation, instructor feedback or completion credit.",
+          "assessment_role": "public_formative",
+          "requires_instructor_acceptance": false
+        }
+      ],
+      "numerical_checks": [
+        {
+          "id": "PE08-N09-aggregate-excess",
+          "label": "Ten-percent aggregate excess",
+          "type": "numeric",
+          "expected": 40,
+          "unit": "USD",
+          "tolerance": 0.01,
+          "derivation": "Valid estimate 1500 × 1.10 = 1650 ceiling. Actual 1690 − 1650 = 40.",
+          "source_ids": [
+            "P8-02"
+          ],
+          "feedback": "Compare your inputs and intermediate steps with the public worked derivation. This numerical result does not establish legal compliance, approval, funding or course completion."
+        },
+        {
+          "id": "PE08-N10-combined-excess",
+          "label": "Combined identified excess",
+          "type": "numeric",
+          "expected": 90,
+          "unit": "USD",
+          "tolerance": 0.01,
+          "derivation": "Zero tolerance: 950 − 900 = 50. Aggregate excess: 1690 − 1500×1.10 = 40. Total 50 + 40 = 90.",
+          "source_ids": [
+            "P8-02"
+          ],
+          "feedback": "Compare your inputs and intermediate steps with the public worked derivation. This numerical result does not establish legal compliance, approval, funding or course completion."
+        },
+        {
+          "id": "PE08-N11-final-cash",
+          "label": "Corrected cash to close",
+          "type": "numeric",
+          "expected": 95150,
+          "unit": "USD",
+          "tolerance": 0.01,
+          "derivation": "98000 + (950+1690+7400) + 4200 − 12000 − 5000 − 90 = 95150. Uses 450000+10040+4200 = 464240; sources 352000+12000+95150+5000+90 = 464240.",
+          "source_ids": [
+            "P8-02"
+          ],
+          "feedback": "Compare your inputs and intermediate steps with the public worked derivation. This numerical result does not establish legal compliance, approval, funding or course completion."
+        },
+        {
+          "id": "PE08-N12-remaining-assets",
+          "label": "Assets left after stated closing cash",
+          "type": "numeric",
+          "expected": 8850,
+          "unit": "USD",
+          "tolerance": 0.01,
+          "derivation": "Accepted current assets 104000 − corrected cash 95150 = 8850. The 18000 payoff is already reflected in 104000 and the 12000 earnest deposit is already reflected in current assets and credited in the closing calculation.",
+          "source_ids": [
+            "P8-11"
+          ],
+          "feedback": "Compare your inputs and intermediate steps with the public worked derivation. This numerical result does not establish legal compliance, approval, funding or course completion."
+        }
+      ]
+    },
+    {
+      "id": "PE08-A04-refinance-handoff",
+      "module": "module-08",
+      "unit_id": "8C",
+      "title": "Separate refinance and servicing clocks",
+      "context": "This is a separate hypothetical later transaction using the source rules checked September 30, 2026. It does not prove the main purchase closed or that current evidence will be sufficient later. All coverage and dates needed for the worked calculation are supplied.",
+      "facts": [
+        "Casey is now stipulated to own and occupy the home. A different creditor provides a consumer-purpose refinance subject to the ordinary rescission rule. No exemption or waiver applies, every required consumer is identified, and all pre-consummation disclosure waits were separately satisfied.",
+        "Consummation and all required consumers’ receipt of the rescission notice and material disclosures occur Monday October 5, 2026. No relevant holiday affects the October 6–8 count. The creditor must also be reasonably satisfied no consumer rescinded.",
+        "New principal $360,000. Old loan principal statement $351,000. Payoff quote $352,250 good through October 9. Closing charges $5,600 and prepaids/escrow $1,650 are paid from proceeds. No other uses or adjustments apply.",
+        "For the delayed-receipt variation, the quote expressly adds $58.60 per calendar day after October 9 through receipt on October 13; four added days apply, with no other charges. This contract convention differs from the rescission business-day rule.",
+        "For a separate servicing illustration on the lesson fixed structure, annual taxes rise from $5,400 to $5,760 and insurance from $1,500 to $1,620. All other amounts are unchanged; assume no shortage or surplus adjustment. The $100 association dues remain a separate household obligation.",
+        "A covered servicing transfer later occurs. The borrower asks whether transfer protection means no payment is due; no actual late-payment facts or account notice are supplied."
+      ],
+      "sources": [
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/2/",
+          "reference": "P8-01: CFPB Regulation Z §1026.2(a)(3), (6), (13): six-element application, business days and consummation"
+        },
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/23/",
+          "reference": "P8-16: CFPB Regulation Z §1026.23(a), (c), (e), (f), and interpretations: rescission"
+        },
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1024/33/",
+          "reference": "P8-17: CFPB Regulation X §1024.33: mortgage servicing transfers"
+        },
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1024/17/",
+          "reference": "P8-18: CFPB Regulation X §1024.17: escrow accounts, analyses and applicable balances"
+        },
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/36/",
+          "reference": "P8-26: CFPB Regulation Z §1026.36(c)(3): payoff statements"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "PE08-T04-rescission",
+          "type": "short-answer",
+          "prompt": "Create separate rows for consummation, last disclosure event, rescission expiry and earliest possible release. Explain what remains unproved even after the time elapses.",
+          "rubric": [
+            "Use the last required event, here October 5",
+            "Count October 6, 7 and 8; ordinary period ends midnight October 8",
+            "Earliest possible release is October 9 under the stipulated rule",
+            "Creditor must also be reasonably satisfied no rescission occurred and remaining release requirements matter",
+            "Distinguish the acquisition exemption, this covered refinance and the CD wait"
+          ],
+          "rationale": "The scope is stipulated to make the counting exercise solvable; not every refinance has identical rescission coverage.",
+          "assessment_role": "public_formative",
+          "requires_instructor_acceptance": false
+        },
+        {
+          "id": "PE08-T04-payoff",
+          "type": "short-answer",
+          "prompt": "Explain principal versus payoff, compute the delayed-receipt figure and residual proceeds, and identify what evidence the settlement team still needs.",
+          "rubric": [
+            "Use $352,250 rather than $351,000 in the original uses",
+            "Apply the quote’s four calendar days, not rescission business days",
+            "New payoff is $352,484.40 and remaining proceeds $265.60",
+            "Obtain or confirm an accurate current quote and reconcile the actual documents",
+            "Do not count an expected escrow refund as already available money or infer program refinance classification from the residual"
+          ],
+          "rationale": "The quote date and receipt convention are separate dependencies. Arithmetic cannot establish wire receipt or lien satisfaction.",
+          "assessment_role": "public_formative",
+          "requires_instructor_acceptance": false
+        },
+        {
+          "id": "PE08-T04-servicing",
+          "type": "short-answer",
+          "prompt": "Write a short reply explaining the changed housing expense and the covered transfer protection without promising a refund or changing an account.",
+          "rubric": [
+            "Annual tax and insurance increase totals $480, or $40 monthly",
+            "Fixed P&I can remain unchanged while total housing expense changes",
+            "Read the actual escrow analysis and transfer notice",
+            "The covered 60-day old-servicer payment protection is not a payment holiday",
+            "Route a disputed payment using actual records and the verified servicer contact"
+          ],
+          "rationale": "A consumer-facing explanation should identify the component that changed and the record needed for an actual account conclusion.",
+          "assessment_role": "public_formative",
+          "requires_instructor_acceptance": false
+        }
+      ],
+      "numerical_checks": [
+        {
+          "id": "PE08-N13-original-refi-residual",
+          "label": "Original refinance residual proceeds",
+          "type": "numeric",
+          "expected": 500,
+          "unit": "USD",
+          "tolerance": 0.01,
+          "derivation": "360000 − 352250 − 5600 − 1650 = 500. This does not establish permissible cash back or program classification.",
+          "source_ids": [
+            "P8-26"
+          ],
+          "feedback": "Compare your inputs and intermediate steps with the public worked derivation. This numerical result does not establish legal compliance, approval, funding or course completion."
+        },
+        {
+          "id": "PE08-N14-added-payoff-interest",
+          "label": "Four additional calendar days of payoff interest",
+          "type": "numeric",
+          "expected": 234.4,
+          "unit": "USD",
+          "tolerance": 0.01,
+          "derivation": "Dates October 10, 11, 12 and 13 are four days under the expressly stipulated quote. 4 × 58.60 = 234.40.",
+          "source_ids": [
+            "P8-26"
+          ],
+          "feedback": "Compare your inputs and intermediate steps with the public worked derivation. This numerical result does not establish legal compliance, approval, funding or course completion."
+        },
+        {
+          "id": "PE08-N15-updated-payoff",
+          "label": "Updated payoff",
+          "type": "numeric",
+          "expected": 352484.4,
+          "unit": "USD",
+          "tolerance": 0.01,
+          "derivation": "352250 + 234.40 = 352484.40. Confirm the current usable quote; the calculation is not receipt evidence.",
+          "source_ids": [
+            "P8-26"
+          ],
+          "feedback": "Compare your inputs and intermediate steps with the public worked derivation. This numerical result does not establish legal compliance, approval, funding or course completion."
+        },
+        {
+          "id": "PE08-N16-revised-refi-residual",
+          "label": "Revised refinance residual proceeds",
+          "type": "numeric",
+          "expected": 265.6,
+          "unit": "USD",
+          "tolerance": 0.01,
+          "derivation": "360000 − 352484.40 − 5600 − 1650 = 265.60; alternatively 500 − 234.40 = 265.60.",
+          "source_ids": [
+            "P8-26"
+          ],
+          "feedback": "Compare your inputs and intermediate steps with the public worked derivation. This numerical result does not establish legal compliance, approval, funding or course completion."
+        },
+        {
+          "id": "PE08-N17-monthly-escrow-change",
+          "label": "Monthly change from stipulated annual tax and insurance increases",
+          "type": "numeric",
+          "expected": 40,
+          "unit": "USD/month",
+          "tolerance": 0.01,
+          "derivation": "[(5760−5400) + (1620−1500)] / 12 = (360+120)/12 = 40. No shortage/surplus adjustment is assumed.",
+          "source_ids": [
+            "P8-18"
+          ],
+          "feedback": "Compare your inputs and intermediate steps with the public worked derivation. This numerical result does not establish legal compliance, approval, funding or course completion."
+        },
+        {
+          "id": "PE08-N18-new-housing",
+          "label": "New total monthly housing expense in the servicing illustration",
+          "type": "numeric",
+          "expected": 2825.42,
+          "unit": "USD/month",
+          "tolerance": 0.01,
+          "derivation": "Original housing 2785.42 + tax/insurance increase 40 = 2825.42. This includes separate 100 association dues and is not asserted to be the servicer’s billed payment.",
+          "source_ids": [
+            "P8-18"
+          ],
+          "feedback": "Compare your inputs and intermediate steps with the public worked derivation. This numerical result does not establish legal compliance, approval, funding or course completion."
+        }
+      ]
+    }
+  ],
+  "duration_validated": false,
+  "delivery_mode": "public_self_guided_noncredit"
+}

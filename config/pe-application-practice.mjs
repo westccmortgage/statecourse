@@ -4,7 +4,7 @@ import PE03 from './pe-public-practice/PE03.json' with { type: 'json' };
 import PE04 from './pe-public-practice/PE04.json' with { type: 'json' };
 import SOURCE_REGISTRY from './pe-public-practice/sources.json' with { type: 'json' };
 
-export const PUBLIC_ITEM_COUNTS = Object.freeze({ PE03: 12, PE04: 12, PE05: 20, PE06: 16 });
+export const PUBLIC_ITEM_COUNTS = Object.freeze({ PE03: 12, PE04: 12, PE05: 20, PE06: 16, PE07: 12, PE08: 12 });
 // Only these reviewed fictional/numeric cases intentionally have no external
 // citation. Dropping a legal question's sources must never relabel it as fiction.
 const SOURCELESS_CASE_IDS = new Set(['PE03-P02', 'PE03-P04', 'PE03-P05', 'PE03-P06', 'PE03-P07', 'PE03-P10', 'PE03-P11']);
