@@ -4,25 +4,30 @@ import path from 'node:path';
 import {createHash} from 'node:crypto';
 import test from 'node:test';
 import {PRACTICE_SOURCES} from '../config/free-practice-sources.mjs';
+import {PE_FOUNDATIONS} from '../config/pe-foundations-practice.mjs';
 import {splitSections,presentedChoices,gradePractice,practiceSummary,restorePractice} from '../public/statecourse/practice-core.mjs';
 import {renderLessonMarkdown} from '../public/statecourse/student/course/blocks/lesson-markdown.mjs';
 const root=path.resolve(new URL('..',import.meta.url).pathname);
 const read=p=>fs.readFileSync(path.join(root,p),'utf8');
 const catalog=JSON.parse(read('public/statecourse/data/course-catalog.json'));
-// Mortgage training is authenticated and must never enter this public answer-bearing export.
+// Existing CE training is authenticated. The separately authored PE foundation
+// collection is explicitly public; neither route exports the private CE banks.
 const allCourses=catalog.categories.filter(c=>c.category_id==='real-estate').flatMap(c=>c.programs??[]).flatMap(p=>p.courses??[]);
 const manifest=JSON.parse(read('public/statecourse/data/free-practice-catalog.json'));
+const realEstateSamples=manifest.samples.filter(s=>s.course_id!==PE_FOUNDATIONS.courseId);
 const protectedText=/final-exam-form-[ab]-answer-key|##\s*Answer key|\bcorrectChoice\b|module-question-bank|final-exam-bank|instructor version and answer key|Items, with the material reference for each answer|__statecourse_private_export/i;
-test('all real-estate catalog courses have distinct explicit non-credit practice sources; mortgage is protected',()=>{
- assert.equal(manifest.schema_version,'2.0');
- assert.deepEqual(manifest.samples.map(s=>s.course_id).sort(),allCourses.map(c=>c.course_id).sort());
- assert.equal(new Set(manifest.samples.map(s=>s.practice_url)).size,allCourses.length);
+test('all catalog real-estate courses retain free practice; PE is separate and CE stays protected',()=>{
+ assert.equal(manifest.schema_version,'2.1');
+ assert.deepEqual(realEstateSamples.map(s=>s.course_id).sort(),allCourses.map(c=>c.course_id).sort());
+ assert.equal(new Set(manifest.samples.map(s=>s.practice_url)).size,allCourses.length+1);
  assert.equal(manifest.samples.some(s=>s.course_id==='nmls-ce-2026-comprehensive-8'),false);
+ assert.equal(manifest.samples.filter(s=>s.course_id===PE_FOUNDATIONS.courseId).length,1);
+ assert.match(manifest.access,/before, during and after paid enrollment/);
  assert.match(manifest.disclosure,/No enrollment.*licensing credit.*certificate.*final examination/i);
  for(const category of catalog.categories)for(const program of category.programs??[])for(const c of program.courses??[])assert.equal(c.state_id,program.state_code);
 });
 for(const sample of manifest.samples)test(sample.course_id+': every lesson and every answer choice is usable',()=>{
- const source=PRACTICE_SOURCES.find(s=>s.courseId===sample.course_id);
+ const source=[...PRACTICE_SOURCES,PE_FOUNDATIONS].find(s=>s.courseId===sample.course_id);
  const course=JSON.parse(read('public/statecourse/'+sample.practice_url));
  const files=fs.readdirSync(path.join(root,source.curriculumDir)).filter(f=>/^(module|lesson)-\d+\.md$/.test(f)).sort();
  assert.deepEqual(course.lessons.map(l=>l.id+'.md'),files);
@@ -52,7 +57,7 @@ for(const sample of manifest.samples)test(sample.course_id+': every lesson and e
  assert.equal(practiceSummary(course.questions,answers).firstCorrect,course.questions.length);
 });
 test('every course page links to its own practice; each built state has a working route',()=>{
- for(const sample of manifest.samples){
+ for(const sample of realEstateSamples){
   const c=allCourses.find(c=>c.course_id===sample.course_id);
   const route=c.route.replace(/^\//,'');
   const coursePage=read('public/statecourse/'+route+'index.html');
@@ -82,3 +87,4 @@ test('interactive practice retains the no-credit boundary and cache revisions',(
  assert.match(js,/gradePractice/);assert.match(js,/localStorage/);assert.match(js,/AbortController/);
  assert.match(js,/lessonUrl.searchParams.set\('v',lesson.sha256\)/);assert.match(js,/courseUrl.searchParams.set\('v',sample.revision\)/);
 });
+

@@ -68,7 +68,7 @@ async function openLesson(id,restore=false){
     const response=await fetch(lessonUrl,{signal:pending.signal});if(!response.ok)throw Error('Lesson unavailable');
     const markdown=await response.text();if(token!==requestId)return;
     sections=splitSections(markdown);sectionIndex=restore&&position.lesson===id?position.section??0:0;questionIndex=restore&&position.lesson===id?position.question??0:0;
-    message.textContent=(course.coverage==='practice collection'?'Focused practice collection; the full qualifying course is still being written.':'Read the available curriculum at your own pace.')+' These exercises are formative practice, not a licensing examination.';
+    message.textContent=(course.availability_notice?course.availability_notice+' ': '')+(course.coverage==='practice collection'?'Focused practice collection; the full qualifying course is still being written.':'Read the available curriculum at your own pace.')+' These exercises are formative practice, not a licensing examination.';
     render();
   }catch(error){if(error.name!=='AbortError')message.textContent='Could not load this lesson. Select it again to retry.';}
 }
@@ -81,7 +81,8 @@ async function openCourse(id,requestedLesson=null,requestedMode=null){
   $('practiceStateLabel').textContent=sample.state_name+' · In development · Free practice';$('practiceCourseTitle').textContent=sample.course_title;
   message.textContent='Loading course…';
   $('practiceRecord').innerHTML='<div><dt>Access</dt><dd>Free · no account required</dd></div><div><dt>Material</dt><dd>'+sample.lesson_count+' lessons · '+sample.question_count+' questions</dd></div><div><dt>Credit</dt><dd>None — practice only</dd></div>';
-  $('practiceStatePath').href=new URL('real-estate/'+sample.state_name.toLowerCase().replace(/[^a-z0-9]+/g,'-')+'/',base);$('practiceStatePath').hidden=false;
+  $('practiceStatePath').href=new URL(sample.record_url??('real-estate/'+sample.state_name.toLowerCase().replace(/[^a-z0-9]+/g,'-')+'/'),base);
+  $('practiceStatePath').textContent=sample.record_url?'View foundation course record':'View state licensing path';$('practiceStatePath').hidden=false;
   try{
     const courseUrl=new URL(sample.practice_url,base);courseUrl.searchParams.set('v',sample.revision);
     const response=await fetch(courseUrl,{signal:pending.signal});if(!response.ok)throw Error('Course unavailable');
