@@ -26,6 +26,8 @@ test('PE public client supports questions, retries, casework, state switching an
     url: 'https://practice.example/free-practice/?course=national-safe-pe-foundations&lesson=module-01',
     pretendToBeVisual: true,
   });
+  const scrolled = [];
+  dom.window.HTMLElement.prototype.scrollIntoView = function (options) { scrolled.push({ element: this, options }); };
   const previous = new Map();
   for (const name of ['window', 'document', 'location', 'history', 'localStorage', 'Option', 'FormData']) {
     previous.set(name, globalThis[name]); globalThis[name] = dom.window[name];
@@ -71,6 +73,9 @@ test('PE public client supports questions, retries, casework, state switching an
   form.querySelector('button[type=submit]').click();
   assert.match($('practiceFeedback').textContent, /Review this answer/);
   $('practiceQuiz').querySelector('[data-action=retry]').click();
+  assert.equal(scrolled.at(-1).element, $('practiceQuiz').querySelector('legend'));
+  assert.deepEqual(scrolled.at(-1).options, { block: 'start', behavior: 'instant' });
+  assert.equal(dom.window.document.activeElement, scrolled.at(-1).element);
   form = $('practiceAnswerForm');
   form.querySelector(`[value="${q.solution}"]`).click();
   form.querySelector('button[type=submit]').click();

@@ -126,7 +126,7 @@ quiz.addEventListener('click',event=>{
   if(action==='retry')delete answers[q.id].selected;if(action==='read')mode='read';
   if(action==='reset'){for(const item of currentQuestions())delete answers[item.id];questionIndex=0;}
   render();
-  const focusTarget=action==='read'?content:quiz.querySelector('legend');if(focusTarget){focusTarget.tabIndex=-1;focusTarget.focus({preventScroll:true});}
+  const focusTarget=action==='read'?content:quiz.querySelector('legend');if(focusTarget){focusTarget.tabIndex=-1;focusTarget.focus({preventScroll:true});focusTarget.scrollIntoView({block:'start',behavior:'instant'});}
 });
 async function restoreUrl(){const p=new URL(location.href).searchParams,byCourse=samples.find(s=>s.course_id===p.get('course')),code=byCourse?.state_code??p.get('state')?.toUpperCase();if(code)await selectState(code,p.get('course'),p.get('lesson'),p.get('mode'));}
 window.addEventListener('popstate',restoreUrl);

@@ -181,7 +181,7 @@ button, select, summary, a { -webkit-tap-highlight-color: transparent; }
 .practice-section-nav button { min-height: 44px; padding: 8px 13px; border: 1px solid var(--gold); border-radius: 4px; background: #fff; color: var(--gold-deep); cursor: pointer; font-weight: 700; }
 .practice-section-nav button:disabled { opacity: .45; cursor: not-allowed; }
 .practice-section-nav span { color: var(--muted); font-size: 13px; text-align: center; }
-.practice-content { scroll-margin-top: 104px; }
+.practice-content, .practice-page legend { scroll-margin-top: 104px; }
 .practice-content h2 { color: var(--navy); font-size: clamp(24px,2.5vw,34px); }
 .practice-content h3 { margin-top: 28px; color: var(--navy); font-size: 21px; }
 .practice-content p, .practice-content li { line-height: 1.75; }

@@ -41,6 +41,7 @@ test('publishes only six substantive, source-linked student modules and formativ
     assert.ok(markdown.split(/\s+/).length > 2200, 'Full substantive module, not a placeholder');
     assert.match(markdown, /https:\/\/(www\.)?consumerfinance\.gov/);
     assert.match(markdown, /not NMLS approved/i);
+    assert.doesNotMatch(markdown.split(/^##\s/m)[0], /one of two foundation modules|Only PE01 and PE02 are included here/i);
     assert.equal(createHash('sha256').update(markdown).digest('hex'), lesson.sha256);
     assert.ok(splitSections(markdown).every(section => section.body.trim()));
     assert.ok(payload.questions.filter(q => q.lesson_id === lesson.id).length >= 6);

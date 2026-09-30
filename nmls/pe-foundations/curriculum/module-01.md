@@ -4,7 +4,7 @@ StateCourse | Public foundations practice | Draft adaptation September 30 2026
 
 **Under construction · Free noncredit practice · No account or payment required**
 
-This is one of two foundation modules adapted from a planned national 20-hour SAFE prelicensure education (PE) course. Only PE01 and PE02 are included here. This is not the full 20-hour course, is not NMLS approved, provides no credit, and awards no education hours, regulatory credit, certificate, license or SAFE test result. The full course remains in development and subject to review and approval.
+This public foundation module is adapted from a planned national 20-hour SAFE prelicensure education (PE) course. Use the lesson selector to see the modules currently available. This is not the full 20-hour course, is not NMLS approved, provides no credit, and awards no education hours, regulatory credit, certificate, license or SAFE test result. The full course remains in development and subject to review and approval.
 
 The lessons, worked examples, topic quizzes and practice activities are free before, during and after paid enrollment. Paid enrollment is not required to use this practice. Practice results are formative feedback only; they do not establish scheduled-course participation or completion. This self-guided version does not provide instructor responses or peer participation. Optional reflections use a self-review checklist rather than a claim of instructor assessment. No protected final examination or private instructor guide is included.
 
