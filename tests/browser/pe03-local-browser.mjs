@@ -11,7 +11,7 @@ import { createPe03Handler } from '../../netlify/functions/_lib/nmls-pe-http.mjs
 const out=path.resolve('artifacts/pe-cohort/browser');await fs.mkdir(out,{recursive:true});
 const f=process.env.PE03_NATIVE_CI==='1'?await nativePe03Fixture():await pe03Fixture();await f.enable();
 await f.db.exec("update pe03_cohorts set timezone='UTC',opens_at=date_trunc('day',clock_timestamp() at time zone 'UTC') at time zone 'UTC',closes_at=(date_trunc('day',clock_timestamp() at time zone 'UTC')+interval '14 days') at time zone 'UTC'; create or replace function pe03_now() returns timestamptz language sql volatile set search_path=public,pg_temp as $$select clock_timestamp()$$;");
-let origin,dropSubmission=false;const drivers=[];const report={completed:false,engine:f.metadata?.engine||'embedded PGlite',database:f.metadata||null,scope:'Local UI → actual HTTP handler → PostgreSQL function. Synthetic auth provider, modeled schema prerequisites.',checks:[],errors:[],realTiming:[],productionTouched:false};
+let origin,dropSubmission=false;const drivers=[];const report={completed:false,engine:f.metadata?.engine||'embedded PGlite',database:f.metadata||null,scope:'Local UI → actual HTTP handler → PostgreSQL function. Synthetic auth provider, modeled schema prerequisites.',checks:[],errors:[],realTiming:[],requests:[],productionTouched:false};
 const handler=role=>createPe03Handler(role,{enabled:()=>true,rpc:f.rpc,authenticate:async event=>{
  const token=event.headers.cookie?.match(/pe-fixture-actor=([a-z]+)/)?.[1];const actor=ids[token];
  if(!actor)throw new Error('student_auth_required');return {student:{id:actor}};
@@ -23,7 +23,8 @@ const server=createServer(async(req,res)=>{try{
  const chunks=[];for await(const chunk of req)chunks.push(chunk);const body=Buffer.concat(chunks);
  const request=new Request(url,{method:req.method,headers:req.headers,body,duplex:'half'});
  const response=await(url.pathname==='/api/admin/pe03'?instructor:student)(request);
- if(dropSubmission&&JSON.parse(body).operation==='submit'){dropSubmission=false;res.destroy();return;}
+ const input=JSON.parse(body);report.requests.push({operation:input.operation,requestId:input.requestId||null,status:response.status,dropped:dropSubmission&&input.operation==='submit'});
+ if(dropSubmission&&input.operation==='submit'){assert.equal(response.status,200,'Drop only a successfully committed submission response');res.destroy();return;}
  res.writeHead(response.status,Object.fromEntries(response.headers));res.end(Buffer.from(await response.arrayBuffer()));return;
  }
  if(url.pathname==='/away'){res.end('<!doctype html><title>Local navigation test</title><p>Away from activity</p>');return;}
@@ -61,6 +62,7 @@ try{
  await qualify(a.page,'a');
  await a.page.locator('#response').fill('E01 is borrower-reported. E03 has a missing page; request it before treating the balance as verified. E04 is separately documented savings.');
  dropSubmission=true;await a.page.locator('#send').click();await a.page.waitForFunction(()=>document.getElementById('status').textContent.includes('response was interrupted'));await a.page.locator('#retry').waitFor({state:'visible'});
+ const dropped=report.requests.filter(r=>r.dropped);assert.ok(dropped.length>=1);assert.equal(new Set(dropped.map(r=>r.requestId)).size,1);assert.equal((await f.db.query("select count(*)::int n from pe03_events where actor_id=$1 and kind='submit'",[ids.a])).rows[0].n,1);dropSubmission=false;
  await a.page.reload();await a.page.waitForFunction(()=>document.getElementById('status').textContent.includes('Server record saved'));
  assert.equal((await f.db.query("select count(*)::int n from pe03_events where actor_id=$1 and kind='submit'",[ids.a])).rows[0].n,1);
  report.checks.push('Real ≥30s observation; premature submit blocked; lost-response retry after refresh preserves exactly one immutable submission and draft');
@@ -101,4 +103,4 @@ try{
  for(const exported of [state,studentExport])for(const flag of ['creditEligible','certificateEligible','bankingEligible','durationValidated'])assert.equal(exported[flag],false);
  report.checks.push('Actual instructor/learner JSON downloads match stored initial → distinct peer → assigned feedback → revision lineage, preserve original text, exclude other-cohort evidence and other-learner observations, and retain false credit flags');
  assert.deepEqual(report.errors,[]);report.completed=true;
-}catch(error){report.failure={name:error.name,message:error.message};throw error;}finally{for(const driver of drivers.reverse())await driver.close();await new Promise(resolve=>server.close(resolve));await f.db.close();report.finished=new Date().toISOString();await fs.writeFile(path.join(out,'report.json'),JSON.stringify(report,null,2));console.log(JSON.stringify(report,null,2));}
+}catch(error){report.failure={name:error.name,message:error.message};report.failurePages=[];for(const driver of drivers)for(const page of driver.context.pages())try{report.failurePages.push(await page.evaluate(()=>({url:location.href,status:document.getElementById('status')?.textContent,progress:document.getElementById('progress')?.textContent,retryHidden:document.getElementById('retry')?.hidden,activityHidden:document.getElementById('activity')?.hidden,focus:document.hasFocus(),visibility:document.visibilityState})));}catch{}try{report.failureServerState=await f.state(ids.a);}catch{}throw error;}finally{for(const driver of drivers.reverse())await driver.close();await new Promise(resolve=>server.close(resolve));await f.db.close();report.finished=new Date().toISOString();await fs.writeFile(path.join(out,'report.json'),JSON.stringify(report,null,2));console.log(JSON.stringify(report,null,2));}
