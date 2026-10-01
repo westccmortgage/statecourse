@@ -5,7 +5,13 @@
 <label for="unit">Teaching unit</label><select id="unit"></select><p id="window"></p>
 <section id="activity" hidden><h2 id="title"></h2><p id="progress"></p><div class="toolbar"><button id="study">Start observed work</button><button id="refresh">Refresh record</button><button id="retry" hidden>Retry saved request</button><button id="export">Export course evidence</button><a id="finalLink" href="/student/pe-final/">Learning checks and final readiness</a></div>
 <p class="hint">Start only while actively reading or working. Take a break while waiting for another person. Hidden, unfocused and disconnected intervals do not count. Browser timing does not establish identity or learning.</p>
-<details><summary>Read the preserved lesson</summary><p id="reading"></p><article id="lesson"></article></details>
+<section class="lesson-reader" aria-label="Preserved module reading"><h3>Read the preserved lesson</h3><p id="reading"></p>
+<p class="hint">The original module is presented in smaller reading sections. Your position is saved in this tab for this account and teaching unit. Reading navigation does not record completion or start observed work.</p>
+<details class="reading-outline"><summary>Module reading outline</summary><ol id="readingOutline"></ol></details>
+<p id="readingPosition" role="status" aria-live="polite"></p><h4 id="readingTitle"></h4>
+<article id="lesson" aria-labelledby="readingTitle" tabindex="-1"></article>
+<nav class="toolbar reading-navigation" aria-label="Reading section navigation"><button id="readingPrevious" type="button">Previous section</button><button id="readingContinue" type="button">Continue reading</button><button id="readingUnitStart" type="button" class="secondary">This unit’s reading start</button></nav>
+</section>
 <section><h3>Current contribution</h3><p id="prompt"></p><p id="probe"></p><form id="contribution"><label for="target">Related submission or feedback</label><select id="target"></select><label for="response">Your evidence-based response (20–8,000 characters)</label><textarea id="response" maxlength="8000" rows="8"></textarea><p class="hint">Use fictional course materials only. Do not enter real borrower information. Committed work is preserved as an immutable record; a revision is a new linked record.</p><button id="send" type="submit">Save contribution</button></form></section>
 <section><h3>Unit evidence history</h3><div id="evidence"></div></section></section></section>
 </main><script type="module" src="/student/pe-course/course.mjs"></script></body></html>

@@ -1,3 +1,4 @@
+import {validatePeOilDelivery} from '../../../lib/nmls-pe-oil-policy.mjs';
 import {randomUUID} from 'node:crypto';
 import {PE_COURSE_DEFINITION,PE_COURSE_UNITS} from '../../../config/nmls/pe-course-definition.mjs';
 import {drawPeFinalAttempt,projectPeFinal,validatePeFinalAttempt,gradePeFinal} from '../../../lib/nmls-pe-final-domain.mjs';
@@ -23,8 +24,9 @@ export function validatePeFinalRequest(input,role){
  return input;
 }
 function validateContext(state,actorId,role,courseId,bank){
- const keys=['courseId','actorId','role','revision','bankDigest','serverAt','closesAt','assignedInstructorId','checks','holds','attempt','attemptState','previousAnswers','grade','receiptId','creditEligible','certificateEligible','bankingEligible'];
+ const keys=['delivery','courseId','actorId','role','revision','bankDigest','serverAt','closesAt','assignedInstructorId','checks','holds','attempt','attemptState','previousAnswers','grade','receiptId','creditEligible','certificateEligible','bankingEligible'];
  if(!exact(state,keys)||state.courseId!==courseId||state.actorId!==actorId||state.role!==role||state.bankDigest!==bank.digest||!uuid(state.assignedInstructorId)||(role==='instructor'&&state.assignedInstructorId!==actorId)||!Number.isSafeInteger(state.revision)||state.revision<0||!Number.isFinite(Date.parse(state.serverAt))||!Number.isFinite(Date.parse(state.closesAt))||!Array.isArray(state.checks)||!Array.isArray(state.holds)||state.holds.some(h=>typeof h!=='string')||['creditEligible','certificateEligible','bankingEligible'].some(k=>state[k]!==false))fail('unavailable');
+ validatePeOilDelivery(state.delivery,actorId,courseId,role);
  const allowedHolds=new Set(['instructor_required','bank_source_review_required','human_sme_required','regulatory_release_required','bank_incomplete','identity_required','rocs_required','delivery_policy_required','teaching_required','learning_checks_required','already_passed','staff_review_required']);
  if(state.holds.some(h=>!allowedHolds.has(h))||(state.receiptId!==null&&!uuid(state.receiptId))||Date.parse(state.serverAt)>=Date.parse(state.closesAt))fail('unavailable');
  const ids=new Map();
@@ -46,16 +48,18 @@ export async function executePeFinal(input,actorId,role,{rpc,bank}){
   const state=await call({operation:'snapshot',courseId:request.courseId});validateContext(state,actorId,role,request.courseId,bank);
   // A retry must reach the persisted receipt before active-attempt checks. A new
   // request while active is rejected by SQL, never opens an additional form.
-  if(state.attemptState==='active'){if(state.holds.length||!bank.sourceReviewComplete)fail('prerequisites_required');if(Date.parse(state.serverAt)>=state.attempt.expiresAt)fail('attempt_expired');candidate=state.attempt;}
+  if(state.attemptState==='active'){if(!state.delivery.allowed||state.holds.length||!bank.sourceReviewComplete)fail('prerequisites_required');if(Date.parse(state.serverAt)>=state.attempt.expiresAt)fail('attempt_expired');candidate=state.attempt;}
   else {
-   if(state.holds.length||!bank.sourceReviewComplete)fail('prerequisites_required');
+   if(!state.delivery.allowed||state.holds.length||!bank.sourceReviewComplete)fail('prerequisites_required');
    candidate=drawPeFinalAttempt(bank,{id:randomUUID(),courseId:request.courseId,actorId,expiresAt:Math.min(Date.parse(state.closesAt),Date.parse(state.serverAt)+3600000),previous:state.attempt?{attempt:state.attempt,answers:state.previousAnswers}:null});
   }
  }
  const state=await call(request,candidate);validateContext(state,actorId,role,request.courseId,bank);
  // Never spread private context: prior answers, keys and rationales stay server-side.
- return {courseId:state.courseId,actorId:state.actorId,role:state.role,revision:state.revision,serverAt:state.serverAt,
-  checks:state.checks,holds:[...new Set([...state.holds,...(!bank.sourceReviewComplete?['bank_source_review_required']:[])])],receiptId:state.receiptId,grade:state.grade?{...state.grade,attemptId:state.attempt.id,attemptNumber:state.attempt.number}:null,
-  attemptState:state.attemptState==='active'&&Date.parse(state.serverAt)>=state.attempt.expiresAt?'expired':state.attemptState,attempt:state.attemptState==='active'&&state.holds.length===0&&bank.sourceReviewComplete&&Date.parse(state.serverAt)<state.attempt.expiresAt?projectPeFinal(bank,state.attempt):null,
+ const effectiveAt=Math.max(Date.parse(state.serverAt),state.delivery?Date.parse(state.delivery.serverAt):0);
+ const delivery=state.delivery?.allowed&&state.attemptState==='active'&&state.attempt.expiresAt>effectiveAt?{...state.delivery,deliveryUntil:new Date(Math.min(Date.parse(state.delivery.deliveryUntil),state.attempt.expiresAt)).toISOString()}:state.delivery;
+ return {delivery,courseId:state.courseId,actorId:state.actorId,role:state.role,revision:state.revision,serverAt:new Date(effectiveAt).toISOString(),
+  checks:role==='instructor'||state.delivery.allowed?state.checks:[],holds:[...new Set([...state.holds,...(!bank.sourceReviewComplete?['bank_source_review_required']:[])])],receiptId:state.receiptId,grade:state.grade?{...state.grade,attemptId:state.attempt.id,attemptNumber:state.attempt.number}:null,
+  attemptState:state.attemptState==='active'&&effectiveAt>=state.attempt.expiresAt?'expired':state.attemptState,attempt:state.delivery?.allowed&&state.attemptState==='active'&&state.holds.length===0&&bank.sourceReviewComplete&&effectiveAt<state.attempt.expiresAt?projectPeFinal(bank,state.attempt):null,
   mode:'private_noncredit',creditEligible:false,certificateEligible:false,bankingEligible:false};
 }

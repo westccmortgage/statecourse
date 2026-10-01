@@ -44,6 +44,6 @@ function peFinalPublicError(error){
  :['origin_not_allowed','pe_final_access_denied','staff_binding_required','staff_role_not_authorized','staff_mfa_required','staff_session_required','staff_step_up_required','fresh_action_authorization_required'].includes(code)?403
  :['pe_final_invalid_request','pe_final_invalid_answers','pe_final_answers_invalid'].includes(code)?400
  :code==='pe_final_disabled'?404
- :['pe_final_prerequisites_required','pe_final_window_closed','pe_final_content_changed','pe_final_revision_conflict','pe_final_idempotency_conflict','pe_final_teaching_required','pe_final_check_conflict','pe_final_review_pending','pe_final_attempt_locked','pe_final_attempt_active','pe_final_attempt_conflict','pe_final_attempt_expired'].includes(code)?409:503;
+ :['pe_final_delivery_paused','pe_final_prerequisites_required','pe_final_window_closed','pe_final_content_changed','pe_final_revision_conflict','pe_final_idempotency_conflict','pe_final_teaching_required','pe_final_check_conflict','pe_final_review_pending','pe_final_attempt_locked','pe_final_attempt_active','pe_final_attempt_conflict','pe_final_attempt_expired'].includes(code)?409:503;
  return {status,body:{error:status===503?'pe_final_unavailable':code}};
 }

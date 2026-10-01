@@ -39,8 +39,9 @@ export async function peFinalFixture(){
  const releaseSynthetic=async()=>{
   await db.exec("update pe_final_settings set source_review_verified=true,human_sme_verified=true,human_sme_reference='SYNTHETIC-SME-NOT-APPROVAL',regulatory_release_verified=true,regulatory_release_reference='SYNTHETIC-REGULATORY-NOT-APPROVAL',rocs_document_hash=repeat('a',64)");
   await db.query("insert into pe_final_prerequisites values($1,$2,true,'SYNTHETIC-IDENTITY','4',repeat('a',64),(select opens_at from pe_course_rosters where id=$1),true)",[ids.course,ids.a]);
+  await db.query("update pe_final_prerequisites set delivery_policy_id='pe-oil-restriction-draft-v1',delivery_policy_reference='SYNTHETIC-PROVIDER-POLICY-NOT-APPROVAL' where course_id=$1 and actor_id=$2",[ids.course,ids.a]);
  };
- const qualify=async options=>{await prepareTeaching();await prepareChecks(options);await releaseSynthetic();};
+ const qualify=async options=>{await prepareTeaching();await prepareChecks(options);await course.advance(12*60*60000+20000);await course.ensurePolicy(ids.a);await releaseSynthetic();};
  const answers=(form,n)=>Object.fromEntries(form.questionIds.map((id,i)=>{const correct=bank.items.find(q=>q.id===id).correctChoice;return[id,i<n?correct:['A','B','C','D'].find(c=>c!==correct)];}));
  return {course,db,bank,rpc,request,call,direct,state,write,qualify,prepareTeaching,prepareChecks,releaseSynthetic,revisions,checks,answers,
   metadata:{...db.metadata,identityAndReviewFlags:'SYNTHETIC FIXTURES ONLY; no human SME or regulatory approval established',timingStudyValidated:false,productionTouched:false}};

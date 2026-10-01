@@ -80,15 +80,21 @@ test('Protected private final SQL lifecycle requires teaching, checks and curren
   const holds=(await state(ids.a)).holds;assert.ok(holds.includes('human_sme_required'));assert.ok(holds.includes('regulatory_release_required'));
   await f.db.exec("update pe_final_settings set human_sme_verified=true,human_sme_reference='SYNTHETIC-SME-FIXTURE-NOT-AN-APPROVAL',regulatory_release_verified=true,regulatory_release_reference='SYNTHETIC-REGULATORY-FIXTURE-NOT-AN-APPROVAL',rocs_document_hash=repeat('a',64)");
   await f.db.query("insert into pe_final_prerequisites values($1,$2,true,'SYNTHETIC-IDENTITY-ONLY','4',repeat('a',64),pe_course_now(),true)",[ids.course,ids.a]);
+  await f.db.query("update pe_final_prerequisites set delivery_policy_id='pe-oil-restriction-draft-v1',delivery_policy_reference='SYNTHETIC-POLICY-NOT-APPROVAL' where course_id=$1 and actor_id=$2",[ids.course,ids.a]);
   assert.ok((await state(ids.a)).holds.includes('rocs_required'));
   await f.db.query('update pe_final_prerequisites set rocs_accepted_at=(select opens_at from pe_course_rosters where id=$1) where actor_id=$2',[ids.course,ids.a]); // Synthetic prior-course consent fixture, not a real acknowledgment.
   assert.deepEqual((await state(ids.a)).holds,[]);
   const unreviewed=definePeFinalBank(candidate);await assert.rejects(async()=>call(ids.a,request('begin',{actorId:ids.a,requestId:randomUUID(),expectedRevision:(await state(ids.a)).revision}),unreviewed),/content_changed|prerequisites_required/);
  });
- let first,beginRequest;
+ await t.test('provider interpretation requires its own matching policy ID and review reference',async()=>{
+  await f.db.query("update pe_final_prerequisites set delivery_policy_id='old-policy' where actor_id=$1",[ids.a]);assert.ok((await state(ids.a)).holds.includes('delivery_policy_required'));await assert.rejects(()=>write(ids.a,'begin'),/prerequisites_required/);
+  await f.db.query("update pe_final_prerequisites set delivery_policy_id='pe-oil-restriction-draft-v1',delivery_policy_reference=null where actor_id=$1",[ids.a]);assert.ok((await state(ids.a)).holds.includes('delivery_policy_required'));
+  await f.db.query("update pe_final_prerequisites set delivery_policy_reference='SYNTHETIC-POLICY-NOT-APPROVAL' where actor_id=$1",[ids.a]);assert.equal((await state(ids.a)).delivery.providerPolicyApproved,false);
+ });
+ let first,beginRequest,preBeginPublicState;
  await t.test('begin recovery returns one persisted shuffled form; another begin does not create one',async()=>{
-  beginRequest=request('begin',{actorId:ids.a,requestId:randomUUID(),expectedRevision:(await state(ids.a)).revision});first=await call(ids.a,beginRequest);assert.equal(first.attempt.questions.length,25);
-  const retry=await call(ids.a,beginRequest);assert.deepEqual(retry,first);assert.equal((await f.db.query('select count(*)::int n from pe_final_attempts')).rows[0].n,1);
+  preBeginPublicState=await state(ids.a);beginRequest=request('begin',{actorId:ids.a,requestId:randomUUID(),expectedRevision:(await state(ids.a)).revision});first=await call(ids.a,beginRequest);assert.equal(first.attempt.questions.length,25);
+  const retry=await call(ids.a,beginRequest);assert.ok(retry.delivery.revision>first.delivery.revision);assert.deepEqual({...retry,delivery:{...retry.delivery,revision:0}},{...first,delivery:{...first.delivery,revision:0}});assert.equal((await f.db.query('select count(*)::int n from pe_final_attempts')).rows[0].n,1);
   await assert.rejects(()=>write(ids.a,'begin'),/attempt_active/);
   assert.equal(Object.hasOwn(first,'previousAnswers'),false);assert.equal(JSON.stringify(first).includes('correctChoice'),false);
  });
@@ -107,13 +113,20 @@ test('Protected private final SQL lifecycle requires teaching, checks and curren
  });
  await t.test('actual final client restores 25 selected answers and clears protected content on account change',{skip:!process.env.PE_JSDOM_MODULE},async()=>{
   const {JSDOM}=await import(pathToFileURL(process.env.PE_JSDOM_MODULE));
-  const html=await fs.readFile(new URL('../public/statecourse/student/pe-final/index.html',import.meta.url),'utf8'),js=await fs.readFile(new URL('../public/statecourse/student/pe-final/pe-final.mjs',import.meta.url),'utf8');
+  const html=await fs.readFile(new URL('../public/statecourse/student/pe-final/index.html',import.meta.url),'utf8'),js=(await fs.readFile(new URL('../public/statecourse/student/pe-course/pe-oil-controls.mjs',import.meta.url),'utf8')).replace(/^export /gm,'')+'\n'+(await fs.readFile(new URL('../public/statecourse/student/pe-final/pe-final.mjs',import.meta.url),'utf8')).replace(/^import .*;\n/gm,'');
   const until=async fn=>{for(let i=0;i<200;i++){if(fn())return;await new Promise(r=>setTimeout(r,10));}assert.fail('DOM state did not arrive');};
-  const create=async saved=>{const dom=new JSDOM(html,{url:`http://local/student/pe-final/?course=${ids.course}`,runScripts:'outside-only'}),w=dom.window;Object.defineProperty(w.crypto,'randomUUID',{value:randomUUID});for(const [k,v] of Object.entries(saved||{}))w.sessionStorage.setItem(k,v);let actor=ids.a;
-   w.fetch=async(url,opts)=>{const deps={enabled:()=>true,authenticate:async()=>({student:{id:actor}}),sameOrigin:()=>{}};const handler=url.includes('pe-course')?createPeCourseHandler('student',{...deps,rpc:f.rpc}):createPeFinalHandler('student',{...deps,rpc,bank});return handler(new Request(new URL(url,w.location.href),opts));};w.eval(js);await until(()=>w.document.querySelectorAll('#questions input[type=radio]').length===100);return {dom,w,changeActor:()=>{actor=ids.b;}};};
+  const create=async saved=>{const dom=new JSDOM(html,{url:`http://local/student/pe-final/?course=${ids.course}`,runScripts:'outside-only',pretendToBeVisual:true}),w=dom.window;let mono=0;const ticks=[];Object.defineProperty(w.performance,'now',{value:()=>mono});w.setInterval=fn=>{ticks.push(fn);return ticks.length;};w.document.hasFocus=()=>true;Object.defineProperty(w.crypto,'randomUUID',{value:randomUUID});for(const [k,v] of Object.entries(saved||{}))w.sessionStorage.setItem(k,v);let actor=ids.a,held=null;
+   w.fetch=async(url,opts)=>{const input=JSON.parse(opts.body);if(held&&url.includes('pe-final')&&input.operation==='snapshot'){const h=held;held=null;h.started=true;await h.wait;return new Response(JSON.stringify(preBeginPublicState),{status:200,headers:{'content-type':'application/json'}});}const deps={enabled:()=>true,authenticate:async()=>({student:{id:actor}}),sameOrigin:()=>{}};const handler=url.includes('pe-course')?createPeCourseHandler('student',{...deps,rpc:f.rpc}):createPeFinalHandler('student',{...deps,rpc,bank});return handler(new Request(new URL(url,w.location.href),opts));};w.eval(js);await until(()=>w.document.querySelectorAll('#questions input[type=radio]').length===100);return {dom,w,changeActor:()=>{actor=ids.b;},setMono:n=>{mono=n;},tick:()=>ticks.forEach(fn=>fn()),holdOldSnapshot:()=>{let release;const h={started:false,wait:new Promise(r=>{release=r;}),release:()=>release()};held=h;return h;}};};
+  const race=await create();t.after(()=>race.dom.window.close());const held=race.holdOldSnapshot();const historyRefresh=()=>{const e=new race.w.Event('pageshow');Object.defineProperty(e,'persisted',{value:true});race.w.dispatchEvent(e);};historyRefresh();await until(()=>held.started);
+  race.setMono(3599500);race.tick();race.w.document.getElementById('policyResume').click();await new Promise(r=>setTimeout(r,75));assert.equal(race.w.document.querySelectorAll('#questions fieldset').length,25);held.release();await new Promise(r=>setTimeout(r,75));race.setMono(3600500);race.tick();assert.equal(race.w.document.querySelectorAll('#questions input').length,0,'Discarded older no-attempt snapshot must not clear the active attempt deadline');assert.equal(race.w.document.getElementById('workspace').hidden,true);
   const a=await create();t.after(()=>a.dom.window.close());const radios=[...a.w.document.querySelectorAll('#questions fieldset')];for(const field of radios){field.querySelector('input').checked=true;}a.w.document.getElementById('examForm').dispatchEvent(new a.w.Event('change'));
   const saved=Object.fromEntries(Object.keys(a.w.sessionStorage).map(k=>[k,a.w.sessionStorage.getItem(k)]));const restored=await create(saved);t.after(()=>restored.dom.window.close());assert.equal(restored.w.document.querySelectorAll('#questions input:checked').length,25);
-  restored.changeActor();restored.w.document.getElementById('refresh').click();await until(()=>restored.w.document.getElementById('workspace').hidden);assert.equal(restored.w.document.querySelectorAll('#questions input').length,0);
+  restored.w.document.getElementById('checkResponse').value='Prior learner private draft';restored.w.document.getElementById('grade').textContent='Prior learner private result';restored.changeActor();restored.w.document.getElementById('refresh').click();await until(()=>restored.w.document.getElementById('workspace').hidden);assert.equal(restored.w.document.querySelectorAll('#questions input').length,0);assert.equal(restored.w.document.getElementById('checkResponse').value,'');for(const id of ['grade','summary','holds','checkPrompt','checkUnit'])assert.equal(restored.w.document.getElementById(id).textContent,'');
+ });
+ await t.test('a later policy clock suppresses an active form past its own expiry',async()=>{
+  const context=await direct(ids.a,request('snapshot'));const expires=context.attempt.expiresAt;
+  context.delivery={...context.delivery,serverAt:new Date(expires+1).toISOString(),deliveryUntil:new Date(expires+20001).toISOString()};
+  const projected=await executePeFinal(request('snapshot'),ids.a,'student',{rpc:async()=>context,bank});assert.equal(projected.attempt,null);assert.equal(projected.attemptState,'expired');assert.equal(Date.parse(projected.serverAt),expires+1);
  });
  await t.test('current prerequisite revocation suppresses form and denies original begin receipt replay',async()=>{
   await f.db.query('update pe_final_prerequisites set identity_verified=false where actor_id=$1',[ids.a]);
@@ -126,7 +139,7 @@ test('Protected private final SQL lifecycle requires teaching, checks and curren
  await t.test('server SQL grading is immutable/idempotent and 17/25 fails without answer-key disclosure',async()=>{
   firstForm=(await f.db.query('select form from pe_final_attempts where id=$1',[first.attempt.attemptId])).rows[0].form;
   const req=request('submit',{actorId:ids.a,requestId:randomUUID(),expectedRevision:first.revision,attemptId:first.attempt.attemptId,answers:answersFor(firstForm,17)});
-  const result=await call(ids.a,req);assert.equal(result.grade.correct,17);assert.equal(result.grade.passed,false);assert.equal(result.grade.disposition,'remediation_required');assert.deepEqual(await call(ids.a,req),result);
+  const result=await call(ids.a,req);assert.equal(result.grade.correct,17);assert.equal(result.grade.passed,false);assert.equal(result.grade.disposition,'remediation_required');const retried=await call(ids.a,req);assert.ok(retried.delivery.revision>result.delivery.revision);assert.deepEqual({...retried,delivery:{...retried.delivery,revision:0}},{...result,delivery:{...result.delivery,revision:0}});
   await assert.rejects(()=>call(ids.a,beginRequest),/prerequisites_required|attempt_conflict/);
   await assert.rejects(()=>write(ids.a,'submit',{attemptId:first.attempt.attemptId,answers:answersFor(firstForm,25)}),/attempt_conflict/);
   assert.equal(result.attempt,null);assert.equal(Object.hasOwn(result,'previousAnswers'),false);
@@ -152,7 +165,7 @@ test('Protected private final SQL lifecycle requires teaching, checks and curren
   const epoch=new Date(now).getTime();const form=drawPeFinalAttempt(bank,{id:randomUUID(),courseId:ids.course,actorId:ids.b,expiresAt:epoch+1000});
   await f.db.query("insert into pe_final_attempts(id,course_id,actor_id,bank_digest,number,form,state,started_at,expires_at) values($1,$2,$3,$4,1,$5,'active',pe_course_now(),pe_course_now()+interval '1 second')",[form.id,ids.course,ids.b,bank.digest,form]);
   await f.advance(2000);let s=await state(ids.b);assert.equal(s.attemptState,'expired');assert.equal(s.attempt,null);assert.equal(s.grade,null);assert.ok(s.holds.includes('staff_review_required'));
-  await f.advance(-2000);s=await state(ids.b);assert.equal(s.attemptState,'expired');assert.equal(s.attempt,null);
+  await f.advance(-2000);await assert.rejects(()=>state(ids.b),/unavailable|clock_regressed/);assert.equal((await f.db.query('select state from pe_final_attempts where id=$1',[form.id])).rows[0].state,'expired');
   await assert.rejects(()=>f.db.query("update pe_final_attempts set state='active' where id=$1",[form.id]),/attempt_immutable/);
  });
 });

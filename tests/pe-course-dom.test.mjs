@@ -13,7 +13,7 @@ test('25-unit workbench DOM→HTTP→SQL contribution, navigation and interrupte
  const {JSDOM}=await import(pathToFileURL(process.env.PE_JSDOM_MODULE));
  const f=await peCourseFixture();t.after(()=>f.db.close());await f.enable();
  const html=await fs.readFile(new URL('../public/statecourse/student/pe-course/index.html',import.meta.url),'utf8');
- const code=await fs.readFile(new URL('../public/statecourse/student/pe-course/course.mjs',import.meta.url),'utf8');
+ const code=(await Promise.all(['reading.mjs','pe-oil-controls.mjs','course.mjs'].map(name=>fs.readFile(new URL('../public/statecourse/student/pe-course/'+name,import.meta.url),'utf8')))).map(s=>s.replace(/^import .*;\n/gm,'').replace(/^export /gm,'')).join('\n');
  const tabs=[];
  async function tab(actor,role='student'){
   const dom=new JSDOM(html,{url:`http://local/student/pe-course/?course=${ids.course}&role=${role}`,runScripts:'outside-only',pretendToBeVisual:true});tabs.push(dom);const w=dom.window;
@@ -25,7 +25,7 @@ test('25-unit workbench DOM→HTTP→SQL contribution, navigation and interrupte
  }
  t.after(()=>tabs.forEach(d=>d.window.close()));
  const a=await tab(ids.a),b=await tab(ids.b),staff=await tab(ids.instructor,'instructor');
- await t.test('all25 units and readable preserved lesson are available; final locked',()=>{assert.equal(a.$('unit').options.length,25);assert.ok(a.$('lesson').textContent.length>20000);assert.match(a.$('finalGate').textContent,/never grants exam access/);assert.equal(staff.$('study').hidden,true);});
+ await t.test('all25 units and readable preserved lesson are available; final locked',()=>{assert.equal(a.$('unit').options.length,25);assert.ok(a.$('lesson').textContent.length>20&&a.$('lesson').textContent.length<=4200);assert.ok(a.$('readingOutline').children.length>1);assert.match(a.$('finalGate').textContent,/never grants exam access/);assert.equal(staff.$('study').hidden,true);});
  const unit=PE_COURSE_UNITS[0];
  for(const actor of [ids.a,ids.b])await f.observeTo(actor,'1A',unit.initialMinimumMs);
  const refresh=async tab=>{tab.$('refresh').click();await until(()=>tab.$('contribution').dataset.operation==='submit');};

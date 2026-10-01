@@ -30,12 +30,23 @@ export async function peCourseFixture(){
  const request=(operation,extra={})=>({operation,courseId:ids.course,...extra});
  const call=(actor,input)=>executePeCourse(input,actor,role(actor),{rpc});
  const state=(actor,unitId)=>call(actor,request('snapshot',{unitId}));
- const write=async(actor,unitId,operation,extra={})=>call(actor,request(operation,{unitId,actorId:actor,requestId:randomUUID(),expectedRevision:(await state(actor,unitId)).revision,...extra}));
+ const write=async(actor,unitId,operation,extra={})=>{if(actor!==ids.instructor)await ensurePolicy(actor);return call(actor,request(operation,{unitId,actorId:actor,requestId:randomUUID(),expectedRevision:(await state(actor,unitId)).revision,...extra}));};
  const advance=ms=>db.query("update pe_course_test_clock set now_at=now_at+($1::bigint*interval '1 millisecond')",[ms]);
+ // Explicit synthetic control/clock transitions exercise the policy; no counters
+ // are reset or bypassed to accelerate teaching. Never a learner timing study.
+ const ensurePolicy=async actor=>{
+  for(let i=0;i<5;i++){
+   let policy=await call(actor,request('policy-snapshot'));if(policy.allowed)return policy;
+   if(policy.code==='mandatory_break_required')policy=await call(actor,request('policy-break',{actorId:actor,requestId:randomUUID()}));
+   if(policy.resumeNotBefore){const now=(await db.query('select pe_course_now() now')).rows[0].now;await advance(Math.max(0,Date.parse(policy.resumeNotBefore)-Date.parse(now)));}
+   else if(policy.code==='rolling_day_limit')await advance(24*60*60000);
+   policy=await call(actor,request('policy-resume',{actorId:actor,requestId:randomUUID()}));if(policy.allowed)return policy;
+  }throw new Error('Synthetic policy recovery failed');
+ };
  const observeTo=async(actor,unitId,targetMs)=>{
   const tabId=randomUUID();let s=await write(actor,unitId,'observe',{tabId,mode:'active'});
-  while(s.observedMs<targetMs){await advance(Math.min(20000,targetMs-s.observedMs));s=await call(actor,request('observe',{unitId,actorId:actor,requestId:randomUUID(),expectedRevision:s.revision,tabId,mode:'active'}));}
+  while(s.observedMs<targetMs){await ensurePolicy(actor);await advance(Math.min(20000,targetMs-s.observedMs));try{s=await call(actor,request('observe',{unitId,actorId:actor,requestId:randomUUID(),expectedRevision:s.revision,tabId,mode:'active'}));}catch(e){if(e.message!=='pe_course_delivery_paused')throw e;await ensurePolicy(actor);s=await write(actor,unitId,'observe',{tabId,mode:'active'});}}
   return s;
  };
- return {db,rpc,request,call,state,write,advance,observeTo,enable:()=>db.exec('update pe_course_settings set enabled=true;update pe_course_rosters set enabled=true;update pe_course_cohorts set enabled=true')};
+ return {db,rpc,request,call,state,write,advance,observeTo,ensurePolicy,enable:()=>db.exec('update pe_course_settings set enabled=true;update pe_course_rosters set enabled=true;update pe_course_cohorts set enabled=true')};
 }

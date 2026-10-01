@@ -17,7 +17,7 @@ create table pe_final_prerequisites (
  course_id uuid not null references pe_course_rosters(id), actor_id uuid not null references students(id),
  identity_verified boolean not null default false, identity_reference text,
  rocs_version text, rocs_document_hash text, rocs_accepted_at timestamptz,
- delivery_policy_verified boolean not null default false, lock_token boolean not null default true check(lock_token), primary key(course_id,actor_id)
+ delivery_policy_verified boolean not null default false, lock_token boolean not null default true check(lock_token), delivery_policy_id text, delivery_policy_reference text, primary key(course_id,actor_id)
 );
 create table pe_final_checks (
  id uuid primary key default gen_random_uuid(), sequence bigint generated always as identity unique,
@@ -81,7 +81,7 @@ begin
  if (select count(*) from pe_final_bank_items where bank_digest=settings.bank_digest)<>50 then holds:=holds||'"bank_incomplete"'::jsonb;end if;
  if prerequisite.actor_id is null or not prerequisite.identity_verified or coalesce(length(prerequisite.identity_reference),0)=0 then holds:=holds||'"identity_required"'::jsonb;end if;
  if prerequisite.rocs_version is distinct from '4' or prerequisite.rocs_document_hash is distinct from settings.rocs_document_hash or prerequisite.rocs_document_hash!~'^[a-f0-9]{64}$' or prerequisite.rocs_document_hash is null or prerequisite.rocs_accepted_at is null or prerequisite.rocs_accepted_at>now_at or prerequisite.rocs_accepted_at>(select min(e.occurred_at) from pe_course_events e join pe_course_cohorts c on c.id=e.cohort_id where c.course_id=cid and e.actor_id=p_actor) then holds:=holds||'"rocs_required"'::jsonb;end if;
- if prerequisite.delivery_policy_verified is distinct from true then holds:=holds||'"delivery_policy_required"'::jsonb;end if;
+ if prerequisite.delivery_policy_verified is distinct from true or prerequisite.delivery_policy_id is distinct from 'pe-oil-restriction-draft-v1' or coalesce(length(prerequisite.delivery_policy_reference),0)=0 then holds:=holds||'"delivery_policy_required"'::jsonb;end if;
  select count(distinct c.unit_id) into complete_units from pe_course_cohorts c join pe_course_events e on e.cohort_id=c.id and e.actor_id=p_actor and e.kind='revise' join pe_course_members m on m.cohort_id=c.id and m.actor_id=p_actor and m.active and m.role='student' where c.course_id=cid and c.enabled;
  if complete_units<>25 or (select count(*) from pe_course_cohorts where course_id=cid)<>25 then holds:=holds||'"teaching_required"'::jsonb;end if;
  select count(*) into missing from pe_course_cohorts c where c.course_id=cid and not exists(
@@ -102,7 +102,7 @@ declare
  current_attempt pe_final_attempts; receipt pe_final_receipts; current_check pe_final_checks;
  cid uuid; rid uuid; tid uuid; unit text; op text; now_at timestamptz; actor_revision integer:=0;
  payload jsonb; output jsonb; checks jsonb; holds jsonb:='[]'; candidate_id uuid; count_correct integer;
- missing integer; complete_units integer; valid_keys text[]; computed_grade jsonb; failed_modules jsonb;
+ missing integer; complete_units integer; valid_keys text[]; computed_grade jsonb; failed_modules jsonb; delivery jsonb;
 begin
  if p_actor is null or p_role not in ('student','instructor') or jsonb_typeof(p_request)<>'object' then raise exception 'pe_final_invalid_request'; end if;
  op:=p_request->>'operation';valid_keys:=array['operation','courseId','courseHash','bankDigest'];
@@ -130,6 +130,8 @@ begin
  if p_role='instructor' then
   if roster.assigned_instructor_id<>p_actor or not exists(select 1 from current_staff_actor_bindings where auth_user_id=p_actor and actor_role='instructor' and scope_state is null and binding_status='active' and (effective_at is null or effective_at<=now_at) and (expires_at is null or expires_at>now_at)) or op not in ('snapshot','review_check') then raise exception 'pe_final_access_denied';end if;
  elsif op='review_check' then raise exception 'pe_final_access_denied';end if;
+ if p_role='student' then delivery:=pe_course_policy_access(p_actor,cid,'grant');end if;
+ if p_role='student' and op<>'snapshot' and not(delivery->>'allowed')::boolean then raise exception 'pe_final_delivery_paused';end if;
  select revision into actor_revision from pe_final_actor_state where course_id=cid and actor_id=p_actor for update;actor_revision:=coalesce(actor_revision,0);
  select * into current_attempt from pe_final_attempts where course_id=cid and actor_id=p_actor order by number desc limit 1 for update;
  now_at:=pe_course_now();
@@ -157,7 +159,7 @@ begin
    if p_role='instructor' and holds ? 'instructor_required' then raise exception 'pe_final_access_denied';end if;
    if op='begin' and jsonb_array_length(holds)>0 then raise exception 'pe_final_prerequisites_required';end if;
    if op='begin' and (current_attempt.id is distinct from (receipt.response->'attempt'->>'id')::uuid or current_attempt.state<>'active' or current_attempt.expires_at<=now_at) then raise exception 'pe_final_attempt_conflict';end if;
-   return receipt.response||jsonb_build_object('serverAt',now_at,'holds',holds);
+   return receipt.response||jsonb_build_object('serverAt',now_at,'holds',holds,'delivery',delivery);
   end if;
   if actor_revision<>(p_request->>'expectedRevision')::integer then raise exception 'pe_final_revision_conflict';end if;
  end if;
@@ -212,7 +214,8 @@ begin
   actor_revision:=actor_revision+1;insert into pe_final_actor_state values(cid,p_actor,actor_revision) on conflict(course_id,actor_id) do update set revision=excluded.revision;
  end if;
  select coalesce(jsonb_agg(jsonb_build_object('id',q.id,'courseId',q.course_id,'unitId',q.unit_id,'actorId',q.actor_id,'teachingRevisionId',q.teaching_revision_id,'previousCheckId',q.previous_check_id,'text',q.body,'createdAt',q.created_at,'review',(select jsonb_build_object('id',r.id,'instructorId',r.instructor_id,'decision',r.decision,'feedback',r.feedback,'createdAt',r.created_at) from pe_final_check_reviews r where r.check_id=q.id)) order by q.sequence),'[]') into checks from pe_final_checks q where q.course_id=cid and (p_role='instructor' or q.actor_id=p_actor);
- output:=jsonb_build_object('courseId',cid,'actorId',p_actor,'role',p_role,'revision',actor_revision,'bankDigest',settings.bank_digest,'serverAt',now_at,'closesAt',roster.closes_at,'assignedInstructorId',roster.assigned_instructor_id,'checks',checks,'holds',holds,'attempt',current_attempt.form,'attemptState',current_attempt.state,'previousAnswers',current_attempt.answers,'grade',current_attempt.grade,'receiptId',tid,'creditEligible',false,'certificateEligible',false,'bankingEligible',false);
+ if p_role='student' then delivery:=pe_course_policy_access(p_actor,cid,'grant');if op<>'snapshot' and not(delivery->>'allowed')::boolean then raise exception 'pe_final_delivery_paused';end if;end if;
+ output:=jsonb_build_object('delivery',delivery,'courseId',cid,'actorId',p_actor,'role',p_role,'revision',actor_revision,'bankDigest',settings.bank_digest,'serverAt',now_at,'closesAt',roster.closes_at,'assignedInstructorId',roster.assigned_instructor_id,'checks',checks,'holds',holds,'attempt',current_attempt.form,'attemptState',current_attempt.state,'previousAnswers',current_attempt.answers,'grade',current_attempt.grade,'receiptId',tid,'creditEligible',false,'certificateEligible',false,'bankingEligible',false);
  if op<>'snapshot' then insert into pe_final_receipts values(cid,p_actor,rid,p_request,output);end if;
  return output;
 end$$;
