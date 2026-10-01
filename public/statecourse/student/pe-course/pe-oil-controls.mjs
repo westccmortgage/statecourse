@@ -4,7 +4,7 @@
 export function installPeOilControls({root,courseId,role,request,isBusy,onResume,onSuspend}){
  if(role==='instructor')return {accept(){},enforce(){},setAttempt(){},token(){return 0;},close(){}};
  const panel=document.createElement('section');panel.id='policyPanel';panel.setAttribute('aria-label','Study session and breaks');
- const status=document.createElement('p'),resume=document.createElement('button'),pause=document.createElement('button');resume.type=pause.type='button';resume.id='policyResume';pause.id='policyBreak';resume.textContent='Resume course';pause.textContent='Start a break';panel.append(status,resume,pause);root.before(panel);
+ const status=document.createElement('p'),resume=document.createElement('button'),pause=document.createElement('button');resume.type=pause.type='button';resume.id='policyResume';pause.id='policyBreak';resume.disabled=pause.disabled=true;resume.textContent='Resume course';pause.textContent='Start a break';panel.append(status,resume,pause);root.before(panel);
  let policy=null,deadline=0,attemptDeadline=Infinity,attemptId=null,showing=false,working=false,pending=null,storageKey=null,closed=false,generation=0,awaitingResume=false;
  const save=()=>{try{if(storageKey){if(pending)sessionStorage.setItem(storageKey,JSON.stringify(pending));else sessionStorage.removeItem(storageKey);}}catch{}};
  const visible=()=>document.visibilityState==='visible'&&document.hasFocus()&&navigator.onLine;
@@ -12,7 +12,7 @@ export function installPeOilControls({root,courseId,role,request,isBusy,onResume
  function enforce(){
   const allowed=showing&&performance.now()<Math.min(deadline,attemptDeadline)&&visible()&&!closed;
   if(!allowed){root.hidden=true;onSuspend();}
-  resume.hidden=allowed;pause.hidden=!allowed;resume.disabled=working||isBusy();pause.disabled=working||isBusy();
+  resume.hidden=allowed;pause.hidden=!allowed;resume.disabled=working||isBusy()||!policy;pause.disabled=working||isBusy()||!policy;
   if(pending)resume.textContent='Retry saved session request';else resume.textContent=policy?.code==='break_in_progress'?'Resume after break':'Resume course';
  }
  function accept(value,startedAt=performance.now(),epoch=generation){
@@ -22,7 +22,10 @@ export function installPeOilControls({root,courseId,role,request,isBusy,onResume
   if(policy&&(value.revision<policy.revision||Date.parse(value.serverAt)<Date.parse(policy.serverAt)))return;
   policy=value;
   if(!storageKey){storageKey=`pe-oil:${courseId}:${value.actorId}:pending`;try{pending=JSON.parse(sessionStorage.getItem(storageKey)||'null');}catch{pending=null;}}
-  if(value.allowed&&(epoch!==generation||awaitingResume||!visible())){showing=false;deadline=0;awaitingResume=true;root.hidden=true;status.textContent='Study is paused. Resume explicitly when ready.';enforce();return;}
+  // A stale denial is no more authoritative than a stale grant. It may
+  // establish identity metadata, but cannot cancel a newer explicit resume.
+  if(epoch!==generation){enforce();return;}
+  if(value.allowed&&(awaitingResume||!visible())){showing=false;deadline=0;awaitingResume=true;root.hidden=true;status.textContent='Study is paused. Resume explicitly when ready.';enforce();return;}
   if(value.allowed){const remaining=Date.parse(value.deliveryUntil)-Date.parse(value.serverAt)-Math.max(0,performance.now()-startedAt);deadline=performance.now()+Math.max(0,remaining);showing=remaining>0;if(!showing)awaitingResume=true;status.textContent='Scheduled study session. Break and daily limits count possible content exposure separately from observed learning time.';}
   else {showing=false;deadline=0;awaitingResume=true;status.textContent=`Study paused: ${value.code.replaceAll('_',' ')}.${value.resumeNotBefore?' Earliest resume: '+new Date(value.resumeNotBefore).toLocaleString()+'.':''} These are conservative draft provider controls; no approved duration or credit is implied.`;onSuspend();}
   enforce();
