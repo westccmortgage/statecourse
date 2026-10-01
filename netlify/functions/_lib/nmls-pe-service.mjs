@@ -50,6 +50,79 @@ export function validatePe03State(state,actorId,role,cohortId) {
       if(!integer(event.body.observedMs)||event.body.observedMs>PE03_DEFINITION.maxObservedIntervalMs||!['active','paused'].includes(event.body.mode)||!uuid(event.body.tabId)||!date(event.body.intervalEnd)||(event.body.intervalStart!==null&&!date(event.body.intervalStart)))fail();
     }else if(typeof event.body.text!=='string'||event.body.text.trim().length<20||event.body.text.length>8000)fail();
   }
+  validatePe03Evidence(state, fail);
+}
+
+
+// Treat RPC readback as an authority boundary too. A future SQL regression must
+// not leak unrelated learner evidence or fabricate technical completion.
+function validatePe03Evidence(state, fail) {
+  const events = state.evidence;
+  const byId = new Map(events.map(event => [event.id, event]));
+  if (byId.size !== events.length) fail();
+  const own = events.filter(event => event.actorId === state.actorId);
+  const initial = own.find(event => event.kind === 'submit');
+  const feedback = events.find(event => event.kind === 'feedback' && event.targetId === initial?.id);
+  const incoming = events.find(event => event.kind === 'peer' && event.targetId === initial?.id);
+  const revised = own.find(event => event.kind === 'revise');
+  let observedMs = 0, revision = 0;
+  const revisions = new Set();
+  const uniqueTransitions = new Set();
+  for (const event of events) {
+    if (Date.parse(event.at) > Date.parse(state.serverAt)) fail();
+    const revisionKey = `${event.actorId}:${event.revision}`;
+    if (revisions.has(revisionKey)) fail();
+    revisions.add(revisionKey);
+    if (event.actorId === state.actorId) {
+      if (event.revision !== revision + 1) fail();
+      revision = event.revision;
+      if (event.kind === 'observe') observedMs += event.body.observedMs;
+    }
+    if (state.role === 'student' && event.actorId !== state.actorId && !(
+      (initial && event.kind === 'submit') ||
+      (initial && ['peer', 'feedback'].includes(event.kind) && event.targetId === initial.id)
+    )) fail();
+    const bodyKeys = event.kind === 'observe'
+      ? ['mode','tabId','observedMs','intervalStart','intervalEnd']
+      : event.kind === 'feedback' ? ['text','peerId']
+      : event.kind === 'revise' ? ['text','initialId','peerId'] : ['text'];
+    if (Object.keys(event.body).length !== bodyKeys.length || bodyKeys.some(k => !Object.hasOwn(event.body,k))) fail();
+    if (event.kind === 'observe') {
+      const end = Date.parse(event.body.intervalEnd), start = Date.parse(event.body.intervalStart);
+      if (end !== Date.parse(event.at)) fail();
+      if (event.body.observedMs === 0 ? event.body.intervalStart !== null : (
+        event.body.mode !== 'active' || !Number.isFinite(start) || end <= start ||
+        Math.abs((end - start) - event.body.observedMs) > 1
+      )) fail();
+      continue;
+    }
+    const key = event.kind === 'peer' ? `${event.kind}:${event.actorId}:${event.targetId}`
+      : event.kind === 'feedback' ? `${event.kind}:${event.targetId}` : `${event.kind}:${event.actorId}`;
+    if (uniqueTransitions.has(key)) fail();
+    uniqueTransitions.add(key);
+    if (event.kind === 'submit') continue;
+    const target = byId.get(event.targetId);
+    if (!target || target.sequence >= event.sequence) fail();
+    if (event.kind === 'peer' && (target.kind !== 'submit' || target.actorId === event.actorId)) fail();
+    if (event.kind === 'feedback') {
+      const peer = byId.get(event.body.peerId);
+      if (event.actorId !== state.cohort.assignedInstructorId || target.kind !== 'submit' ||
+        !peer || peer.kind !== 'peer' || peer.targetId !== target.id || peer.sequence >= event.sequence) fail();
+    }
+    if (event.kind === 'revise') {
+      const first = byId.get(event.body.initialId);
+      if (target.kind !== 'feedback' || target.actorId !== state.cohort.assignedInstructorId ||
+        !first || first.kind !== 'submit' || first.actorId !== event.actorId || target.targetId !== first.id ||
+        event.body.peerId !== target.body.peerId) fail();
+    }
+  }
+  if (!Number.isSafeInteger(observedMs) || observedMs !== state.observedMs || revision !== state.revision) fail();
+  if (state.receiptId !== null && (!byId.has(state.receiptId) || byId.get(state.receiptId).actorId !== state.actorId || byId.get(state.receiptId).revision !== state.revision)) fail();
+  if (state.role === 'student') {
+    const stage = revised ? 'revised-noncredit' : feedback ? 'revision' : incoming ? 'awaiting-instructor'
+      : initial ? 'peer-dialogue' : observedMs >= PE03_DEFINITION.minimumObservedMs ? 'initial-submission' : 'observe';
+    if (state.stage !== stage || (initial && observedMs < PE03_DEFINITION.minimumObservedMs)) fail();
+  } else if (own.some(event => event.kind !== 'feedback')) fail();
 }
 
 export function pe03PublicError(error) {

@@ -86,3 +86,10 @@ See [local cohort implementation and acceptance limits](../../engineering/pe03-p
 ### PE03 instructor correction and isolated CI proposal — 2026-10-01
 
 The initial local cohort candidate is **superseded/local-incomplete**: it failed closed when real staff fresh-action authentication lacked required request metadata/client integration. The narrow new-handler/page correction passes 27 focused tests, including consumed-proof rejection and instructor lost-response recovery with a fresh proof and one immutable feedback event. Existing auth/OAuth and CE code were not changed. The isolated native PostgreSQL/Chromium workflow is prepared but has **not run**; neither environment-limited gate is closed. All enablement and credit flags remain off. See [correction evidence and CI review scope](../../engineering/pe03-isolated-ci-proposal-2026-10-01.md).
+
+
+### Verified PE03 acceptance and 25-unit extension — 2026-10-01
+
+The earlier PE03 native/browser pending entries above are superseded for the bounded PE03 slice by successful isolated run36853453698 at147cfe8faddd7308cdc56e64af0bfb354f575200. That result remains default-disabled/noncredit and does not close hosted Auth, timing, human review or regulated-launch gates.
+
+A separate private25-unit teaching workbench now passes local embedded PostgreSQL/service/HTTP and DOM acceptance. It preserves the eight lesson manuscripts, links course-wide roster authority and per-unit teaching chains, and reconciles scoped time/category exports. The protected final remains locked and all credit/certificate/banking flags remain false. Native/rendered acceptance for this new extension is PENDING; no full20-hour readiness or production change is established. See [scope, evidence and remaining completion path](../../engineering/pe-course-workbench-2026-10-01.md).

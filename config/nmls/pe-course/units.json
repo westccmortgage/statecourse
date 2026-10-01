@@ -1,0 +1,744 @@
+[
+  {
+    "unit": "1A",
+    "module": "PE01",
+    "category": "elective",
+    "minutes": [
+      14,
+      9,
+      5,
+      2
+    ],
+    "title": "Follow the file and the authority",
+    "read": "Unit 1A and FP-PE01-R1",
+    "task": "Submit a six-role action map for FP-PE01-R1. Add a two-sentence handoff naming the assets decision owner, the record received and the unresolved decision. Keep upload, completeness and clearance separate.",
+    "peer": "Choose one line in your partner's role map. Name the evidence that would be needed before that person could describe the condition as cleared.",
+    "probe": "Sam spends part of the assets after yesterday's clearance. Which decision must be reviewed again, and who owns it?",
+    "revision": "Preserve the initial handoff. Add the changed fact, its effect on the status, the next owner and a reason for the change.",
+    "evidence": "Six-role map; initial handoff; linked peer challenge; actual instructor reply; versioned revision; K1 response",
+    "sources": [
+      "S1"
+    ],
+    "lesson_path": "nmls/pe-foundations/curriculum/module-01.md",
+    "sourceHash": "c24fb0290b5cf916c20b072cb65666fcc5922b3e7d32b42737a0bcd396e16adf"
+  },
+  {
+    "unit": "1B",
+    "module": "PE01",
+    "category": "elective",
+    "minutes": [
+      16,
+      7,
+      8,
+      4
+    ],
+    "title": "Check licensing authority",
+    "read": "Unit 1B, FP-PE01-R2 and FP-PE01-L1",
+    "task": "Compare Morgan's registration record and Taylor's pending state application. For one chosen jurisdiction, record the official agency, license type, source URL, access date and one additional requirement to verify. Do not supply personal identifiers or declare your own eligibility.",
+    "peer": "Check whether your partner's conclusion follows from the actual status rather than the existence of an NMLS identifier. Ask for the source of one state-specific statement.",
+    "probe": "Taylor has submitted an application but the temporary-authority determination is absent. What may your record safely say now?",
+    "revision": "Correct one unsupported authority claim or explain why the original remains justified. Separate the national framework from the chosen state's requirement.",
+    "evidence": "Two-record comparison; source lookup; peer challenge; instructor disposition; revision; K2 and K3",
+    "sources": [
+      "S2",
+      "S3",
+      "S4",
+      "S5",
+      "S6",
+      "S7",
+      "S8",
+      "S9",
+      "S10"
+    ],
+    "lesson_path": "nmls/pe-foundations/curriculum/module-01.md",
+    "sourceHash": "c24fb0290b5cf916c20b072cb65666fcc5922b3e7d32b42737a0bcd396e16adf"
+  },
+  {
+    "unit": "1C",
+    "module": "PE01",
+    "category": "elective",
+    "minutes": [
+      15,
+      9,
+      7,
+      4
+    ],
+    "title": "Connect markets and consumer outcomes",
+    "read": "Unit 1C and FP-PE01-R3 Oak Street handoff",
+    "task": "Build the Oak Street issue map: current fact, missing decision, responsible owner and next evidence for each issue. Explain how investor ownership differs from servicing in this file.",
+    "peer": "Challenge one sentence that implies a secondary-market transaction changes the borrower's loan terms or proves all approvals are complete.",
+    "probe": "The lender retains the loan instead of selling it. Which existing legal and company obligations remain?",
+    "revision": "Update the handoff without inventing a servicing transfer or giving payment instructions from an unverified notice.",
+    "evidence": "Issue map; consumer explanation; peer/instructor exchange; revision; K4 and K5",
+    "sources": [
+      "S11",
+      "S12",
+      "S13"
+    ],
+    "lesson_path": "nmls/pe-foundations/curriculum/module-01.md",
+    "sourceHash": "c24fb0290b5cf916c20b072cb65666fcc5922b3e7d32b42737a0bcd396e16adf"
+  },
+  {
+    "unit": "2A",
+    "module": "PE02",
+    "category": "elective",
+    "minutes": [
+      15,
+      10,
+      7,
+      3
+    ],
+    "title": "Make calculation units agree",
+    "read": "Unit 2A, FP-PE02-M1 and FP-PE02-M2",
+    "task": "Complete the first two payment-allocation rows in M1 and the stipulated daily-interest calculation. Repair M2's cost comparison. Show principal, decimal rate, period, rounding convention and one reasonableness check.",
+    "peer": "Recompute one intermediate value independently. Identify the exact input or rounding step if your answer differs; do not compare final answers alone.",
+    "probe": "Why does month two use the first month's ending balance, and why are taxes outside this principal-and-interest schedule?",
+    "revision": "Retain the original values, show the corrected calculation and explain which assumption caused the difference. If correct, defend the chosen units.",
+    "evidence": "Calculation worksheet; partner recomputation; instructor feedback; revised row; K6 and K7",
+    "sources": [
+      "S1",
+      "S2",
+      "S3",
+      "S4"
+    ],
+    "lesson_path": "nmls/pe-foundations/curriculum/module-02.md",
+    "sourceHash": "f7edd8de770f67454bc6bd1c96a292a5c392613b4dbf4c3633a5a7dfc2c4f309"
+  },
+  {
+    "unit": "2B",
+    "module": "PE02",
+    "category": "elective",
+    "minutes": [
+      12,
+      10,
+      5,
+      3
+    ],
+    "title": "Choose the value basis",
+    "read": "Unit 2B and FP-PE02-M3",
+    "task": "Calculate M3's LTV, CLTV and price contribution from the stated value basis and loan amounts. Label the arithmetic convention and distinguish it from a program's delivery rounding. Explain why the result alone does not approve the loan or calculate disclosure APR.",
+    "peer": "Name the denominator in your partner's work and show how changing it would affect the conclusion. Keep purchase price, appraised value and eligible program value separate.",
+    "probe": "The appraisal is below the price. Which supplied rule selects the basis, and what is still missing before an eligibility conclusion?",
+    "revision": "Correct the denominator, numerator or conclusion as needed and retain a source label for each rule.",
+    "evidence": "Three calculations with inputs; peer challenge; instructor correction; revision; K8 and K9",
+    "sources": [
+      "S5",
+      "S6",
+      "S7",
+      "S8",
+      "S9",
+      "S10",
+      "S11"
+    ],
+    "lesson_path": "nmls/pe-foundations/curriculum/module-02.md",
+    "sourceHash": "f7edd8de770f67454bc6bd1c96a292a5c392613b4dbf4c3633a5a7dfc2c4f309"
+  },
+  {
+    "unit": "2C",
+    "module": "PE02",
+    "category": "elective",
+    "minutes": [
+      13,
+      10,
+      8,
+      4
+    ],
+    "title": "Read the promise and security",
+    "read": "Unit 2C and FP-PE02-I1",
+    "task": "Prepare a note-and-security map for the supplied facts. Separate repayment promise, property interest, stipulated priority, payoff and release. Identify the state-dependent question that cannot be answered from this national exercise.",
+    "peer": "Test one statement that treats a recorded security instrument as proof of full payment or assumes the same remedy in every state.",
+    "probe": "A payoff receipt arrives but release evidence has not been accepted. Which fact is established and which remains open?",
+    "revision": "Make the handoff narrow enough that a title or legal reviewer can see the exact unresolved question without an invented remedy.",
+    "evidence": "Document map; state-law boundary; peer/instructor dialogue; revised handoff; K10 and K11",
+    "sources": [
+      "S12",
+      "S13",
+      "S14",
+      "S15",
+      "S16"
+    ],
+    "lesson_path": "nmls/pe-foundations/curriculum/module-02.md",
+    "sourceHash": "f7edd8de770f67454bc6bd1c96a292a5c392613b4dbf4c3633a5a7dfc2c4f309"
+  },
+  {
+    "unit": "3A",
+    "module": "PE03",
+    "category": "elective",
+    "minutes": [
+      20,
+      15,
+      10,
+      5
+    ],
+    "title": "Build an evidence record",
+    "read": "Unit 3A and C3A Cedar file",
+    "task": "Use the Cedar facts to separate reported, requested, received and verified information. Preserve the application event and identify the precise missing document or page. Write one focused evidence request through the stipulated secure process.",
+    "peer": "Choose a fact your partner called verified and ask which record and authorized review support that label.",
+    "probe": "A complete upload arrives after the application event. Which operational state changes, and which original date must remain?",
+    "revision": "Correct only the supported evidence state. Keep the original receipt date and any deadline review visible.",
+    "evidence": "Source-to-fact map; evidence request; peer challenge; instructor response; corrected map; unit practice",
+    "sources": [
+      "P3-01",
+      "P3-02",
+      "P3-03",
+      "P3-04"
+    ],
+    "lesson_path": "nmls/pe-foundations/curriculum/module-03.md",
+    "sourceHash": "ce5bf743412700296b5587ceed92d76521e14af5dfb440465587705a1ebc0ece"
+  },
+  {
+    "unit": "3B",
+    "module": "PE03",
+    "category": "elective",
+    "minutes": [
+      20,
+      15,
+      10,
+      5
+    ],
+    "title": "Analyze income and obligations",
+    "read": "Unit 3B and C3B River file",
+    "task": "Complete the River income and debt worksheet using only the accepted case assumptions. Show monthly-income conversion, housing components, other obligations and DTI. Flag any discrepancy without alleging fraud or importing figures from another example.",
+    "peer": "Recompute a conversion or debt inclusion. Ask whether an amount is a deposit, receipt, gross income, accepted income or an unsupported claim.",
+    "probe": "A new obligation appears after the first calculation. Which numerator and evidence record change?",
+    "revision": "Save a before-and-after ratio with each input's source and the decision owner. Do not call the result an underwriting approval.",
+    "evidence": "Input worksheet; original/revised DTI; peer/instructor exchange; unit practice",
+    "sources": [
+      "P3-05",
+      "P3-06",
+      "P3-07",
+      "P3-08",
+      "P3-09",
+      "P3-10"
+    ],
+    "lesson_path": "nmls/pe-foundations/curriculum/module-03.md",
+    "sourceHash": "ce5bf743412700296b5587ceed92d76521e14af5dfb440465587705a1ebc0ece"
+  },
+  {
+    "unit": "3C",
+    "module": "PE03",
+    "category": "elective",
+    "minutes": [
+      25,
+      10,
+      10,
+      5
+    ],
+    "title": "Route conditions and explain status",
+    "read": "Unit 3C and C3C Oak file",
+    "task": "Prepare the Oak condition handoff and a brief applicant update. Identify the actual collateral, occupancy or underwriting issue, its evidence and the person authorized to dispose of it.",
+    "peer": "Mark one phrase that could be read as a funding promise. Suggest a factual alternative.",
+    "probe": "A changed value is received but no authorized condition disposition exists. What may the originator communicate?",
+    "revision": "Update the current status without fabricating a clearance or pressuring an appraiser for a target value.",
+    "evidence": "Condition record; applicant message; peer challenge; instructor feedback; revision; unit practice",
+    "sources": [
+      "P3-11",
+      "P3-12",
+      "P3-13"
+    ],
+    "lesson_path": "nmls/pe-foundations/curriculum/module-03.md",
+    "sourceHash": "ce5bf743412700296b5587ceed92d76521e14af5dfb440465587705a1ebc0ece"
+  },
+  {
+    "unit": "4A",
+    "module": "PE04",
+    "category": "elective",
+    "minutes": [
+      25,
+      10,
+      10,
+      5
+    ],
+    "title": "Compare program purposes and costs",
+    "read": "Unit 4A and its program comparison exercise",
+    "task": "Compare conventional, FHA, VA and USDA purposes using the lesson's official program sources. Complete the supplied cash/payment comparison and identify missing eligibility facts before recommending any product. Label program rules separately from lender overlays.",
+    "peer": "Choose one guarantee, insurance or benefit statement. Explain what it protects and which separate credit decision remains.",
+    "probe": "A benefit document is present but the lender has not accepted income or occupancy. Which claim must be withheld?",
+    "revision": "Revise the comparison to show supported advantages, obligations and unanswered facts without promising eligibility.",
+    "evidence": "Program/source grid; stipulated calculation; peer/instructor exchange; revised comparison; unit practice",
+    "sources": [
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S5",
+      "S6",
+      "S7",
+      "S8",
+      "S9",
+      "S10",
+      "S29"
+    ],
+    "lesson_path": "nmls/pe-foundations/curriculum/module-04.md",
+    "sourceHash": "aeb63a634c02ef87a6f26010c2716099058b3d82f2520e464ad9b3bcac81c186"
+  },
+  {
+    "unit": "4B",
+    "module": "PE04",
+    "category": "elective",
+    "minutes": [
+      20,
+      20,
+      5,
+      5
+    ],
+    "title": "Reconcile closing work",
+    "read": "Unit 4B and remaining-contribution exercise",
+    "task": "Sequence the supplied closing tasks and calculate the remaining borrower contribution. Show how deposit, credits, charges and funds already moved enter the worksheet. Identify the authorized owner of each unresolved condition.",
+    "peer": "Check one deposit or credit for double counting and ask what evidence supports the clearance status.",
+    "probe": "The closing appointment is scheduled while a title condition remains pending. What is the supported status?",
+    "revision": "Correct the worksheet or handoff and explain the effect on the consumer's next step.",
+    "evidence": "Task sequence; cash worksheet; peer/instructor exchange; revised closing message; unit practice",
+    "sources": [
+      "S11",
+      "S12",
+      "S13",
+      "S14",
+      "S15",
+      "S16",
+      "S17",
+      "S18",
+      "S19"
+    ],
+    "lesson_path": "nmls/pe-foundations/curriculum/module-04.md",
+    "sourceHash": "aeb63a634c02ef87a6f26010c2716099058b3d82f2520e464ad9b3bcac81c186"
+  },
+  {
+    "unit": "4C",
+    "module": "PE04",
+    "category": "elective",
+    "minutes": [
+      25,
+      10,
+      10,
+      5
+    ],
+    "title": "Explain servicing changes",
+    "read": "Unit 4C and changed-payment servicing exercise",
+    "task": "Diagnose the supplied payment inquiry. Separate note-rate change, escrow analysis, shortage treatment and servicing transfer. Record which statement or notice answers each issue and where the borrower should direct a verified inquiry.",
+    "peer": "Test whether your partner inferred a new interest rate solely from a changed total payment.",
+    "probe": "An ownership notice arrives without verified new servicing instructions. What information should be checked before redirecting payment?",
+    "revision": "Rewrite the explanation using the actual notice and payment facts. Do not recommend missed payments or promise relief.",
+    "evidence": "Servicing issue map; calculation; peer/instructor exchange; revised consumer explanation; unit practice",
+    "sources": [
+      "S10",
+      "S20",
+      "S21",
+      "S22",
+      "S23",
+      "S24",
+      "S25",
+      "S26",
+      "S27",
+      "S28",
+      "S30",
+      "S31"
+    ],
+    "lesson_path": "nmls/pe-foundations/curriculum/module-04.md",
+    "sourceHash": "aeb63a634c02ef87a6f26010c2716099058b3d82f2520e464ad9b3bcac81c186"
+  },
+  {
+    "unit": "5A",
+    "module": "PE05",
+    "category": "federal_law",
+    "minutes": [
+      20,
+      13,
+      8,
+      4
+    ],
+    "title": "Apply disclosure and rescission clocks",
+    "read": "Unit 5A Your timeline case",
+    "task": "For the September 21 application case, record the application event, initial LE deadline, LE waiting-period end, CD waiting-period end and controlling earliest consummation. Recompute the CD portion for the mailing variation. Record the business-day definition beside each count.",
+    "peer": "Challenge a claimed receipt event or the use of a single business-day definition for every clock.",
+    "probe": "Which dates change if the lender opens Saturday on these particular facts? Then distinguish the separate post-consummation rescission example.",
+    "revision": "Show the revised count with coverage and event evidence. Preserve dates that the changed fact does not affect.",
+    "evidence": "Annotated chronology; mailing branch; peer/instructor exchange; corrected rule application; unit practice",
+    "sources": [
+      "P5-01",
+      "P5-02",
+      "P5-03",
+      "P5-04",
+      "P5-05",
+      "P5-06",
+      "P5-07",
+      "P5-12"
+    ],
+    "lesson_path": "nmls/pe-foundations/curriculum/module-05.md",
+    "sourceHash": "9f6cf7db3696d8344e9449edfcf9000ea9ae51ab201de70626938fab6dccbcdc"
+  },
+  {
+    "unit": "5B",
+    "module": "PE05",
+    "category": "federal_law",
+    "minutes": [
+      18,
+      10,
+      8,
+      4
+    ],
+    "title": "Test fees and referral arrangements",
+    "read": "Unit 5B Your settlement case",
+    "task": "Compute the ten-percent aggregate ceiling and excess, the independent lender-fee increase and the separate actual-appraisal-charge issue. Record the valid baseline and the decision maker needed before release. Evaluate the referral example under its actual facts.",
+    "peer": "Ask which charge classification or permitted revision supports your partner's baseline. Test whether the appraisal question can be solved by a tolerance total.",
+    "probe": "A clerical omission is discovered. Does labeling it a changed circumstance establish a permissible revised estimate?",
+    "revision": "Separate each legal test and evidence gap. Do not substitute a single cash-to-close total for the analyses.",
+    "evidence": "Three-test charge ledger; referral decision; peer/instructor exchange; revision; unit practice",
+    "sources": [
+      "P5-02",
+      "P5-05",
+      "P5-08",
+      "P5-09",
+      "P5-10"
+    ],
+    "lesson_path": "nmls/pe-foundations/curriculum/module-05.md",
+    "sourceHash": "9f6cf7db3696d8344e9449edfcf9000ea9ae51ab201de70626938fab6dccbcdc"
+  },
+  {
+    "unit": "5C",
+    "module": "PE05",
+    "category": "federal_law",
+    "minutes": [
+      15,
+      10,
+      7,
+      3
+    ],
+    "title": "Select the appropriate application response",
+    "read": "Unit 5C Your notice selector",
+    "task": "Apply the two supplied files to a notice decision record. Distinguish the creditor's application/completeness determination, ECOA notice obligations, any FCRA credit-report action and the separate appraisal/HMDA issues. Record the rule and missing evidence rather than drafting an invented adverse-action reason.",
+    "peer": "Ask whether the identified notice follows from the actual decision and whether another rule adds a separate duty.",
+    "probe": "The TRID six-item threshold has been reached. Does that fact alone establish Regulation B completeness?",
+    "revision": "Correct the decision path and preserve the evidence and dates that require authorized notice review.",
+    "evidence": "Two-file notice selection; cited rule; peer/instructor exchange; revised rationale; unit practice",
+    "sources": [
+      "P5-12",
+      "P5-13",
+      "P5-14",
+      "P5-15",
+      "P5-16",
+      "P5-17",
+      "P5-18",
+      "P5-19",
+      "P5-20",
+      "P5-21",
+      "P5-22"
+    ],
+    "lesson_path": "nmls/pe-foundations/curriculum/module-05.md",
+    "sourceHash": "9f6cf7db3696d8344e9449edfcf9000ea9ae51ab201de70626938fab6dccbcdc"
+  },
+  {
+    "unit": "5D",
+    "module": "PE05",
+    "category": "federal_law",
+    "minutes": [
+      12,
+      7,
+      7,
+      4
+    ],
+    "title": "Recognize specialized legal checks",
+    "read": "Unit 5D Your rule-navigation case",
+    "task": "Make a four-column issue map for the supplied case: coverage question, primary rule, evidence still needed and responsible reviewer. Address ATR/QM, HOEPA/HPML, compensation/advertising and privacy/AML at the recognition depth supplied by the lesson.",
+    "peer": "Choose a threshold or exemption claim. Ask for the current official source and transaction facts before accepting it.",
+    "probe": "The file says non-QM. Which obligation has actually been shown to be inapplicable?",
+    "revision": "Remove label-based exemptions and unsupported thresholds. State the precise referral question and retain any separate deadlines.",
+    "evidence": "Rule-navigation map; source lookup; peer/instructor exchange; corrected escalation; unit practice",
+    "sources": [
+      "P5-23",
+      "P5-24",
+      "P5-25",
+      "P5-26",
+      "P5-27",
+      "P5-28",
+      "P5-29",
+      "P5-30",
+      "P5-31",
+      "P5-32"
+    ],
+    "lesson_path": "nmls/pe-foundations/curriculum/module-05.md",
+    "sourceHash": "9f6cf7db3696d8344e9449edfcf9000ea9ae51ab201de70626938fab6dccbcdc"
+  },
+  {
+    "unit": "6A",
+    "module": "PE06",
+    "category": "ethics",
+    "minutes": [
+      20,
+      10,
+      15,
+      5
+    ],
+    "title": "Apply consistent standards to individual facts",
+    "read": "Unit 6A C6A Juniper comparison",
+    "task": "Compare Lina's and Owen's treatment using the stipulated legitimate factors. Identify the unsupported difference and its documented reason. Propose the next corrective review and a factual consumer explanation without inventing a remedy or outcome.",
+    "peer": "Test whether the proposed correction removes the unsupported condition or merely applies the same improper demand to both people.",
+    "probe": "A new legitimate funds-source discrepancy appears in only one file. What proportionate inquiry could now be justified?",
+    "revision": "Distinguish the new evidence-based inquiry from the original stereotype and preserve both decisions in time order.",
+    "evidence": "Matched-file comparison; changed-fact response; peer/instructor exchange; revision; unit practice",
+    "sources": [
+      "P6-01",
+      "P6-02",
+      "P6-03",
+      "P6-04",
+      "P6-05",
+      "P6-06",
+      "P6-07"
+    ],
+    "lesson_path": "nmls/pe-foundations/curriculum/module-06.md",
+    "sourceHash": "dcc18417330a58e0f05c86de887bdf79dba1324ed6aa964c5b5a2bf9279c270c"
+  },
+  {
+    "unit": "6B",
+    "module": "PE06",
+    "category": "ethics",
+    "minutes": [
+      20,
+      15,
+      10,
+      5
+    ],
+    "title": "Investigate discrepancies responsibly",
+    "read": "Unit 6B C6B Willow investigation",
+    "task": "Prepare a factual discrepancy record for the Willow file. Separate source, statement, contradiction, uncertainty and authorized next check across the supplied income, occupancy, identity or valuation facts. Use fictional records only.",
+    "peer": "Identify one inference that goes beyond the record. Suggest a focused verification step that would distinguish two plausible explanations.",
+    "probe": "A salary change applies to a later period. How do you preserve both the historical and prospective amounts without altering evidence?",
+    "revision": "Revise the escalation with dated facts, secure routing and no unsupported fraud allegation. Keep any AML/SAR determination with the authorized process.",
+    "evidence": "Discrepancy record; verification request; peer/instructor exchange; revised escalation; unit practice",
+    "sources": [
+      "P6-08",
+      "P6-09",
+      "P6-10",
+      "P6-11",
+      "P6-12",
+      "P6-13",
+      "P6-14",
+      "P6-15",
+      "P6-16",
+      "P6-23"
+    ],
+    "lesson_path": "nmls/pe-foundations/curriculum/module-06.md",
+    "sourceHash": "dcc18417330a58e0f05c86de887bdf79dba1324ed6aa964c5b5a2bf9279c270c"
+  },
+  {
+    "unit": "6C",
+    "module": "PE06",
+    "category": "ethics",
+    "minutes": [
+      20,
+      15,
+      10,
+      5
+    ],
+    "title": "Explain costs and resist pressure",
+    "read": "Unit 6C C6C payment message",
+    "task": "Calculate the stated monthly outlay, rewrite the supplied message in four sentences and identify remaining full-advertisement review. Separately address the conditional gift card and unsupported deadline in a two-line internal recommendation.",
+    "peer": "Name the most likely remaining misunderstanding about payment components, future changes or guaranteed refinancing.",
+    "probe": "The P&I number is correct. Which omitted costs and promises still make the proposed message unsafe?",
+    "revision": "Correct the actual consumer misunderstanding and explain the next review step. Do not publish the classroom rewrite or call it an approved advertisement.",
+    "evidence": "Cost calculation; draft message; conflict decision; peer/instructor exchange; revision; unit practice",
+    "sources": [
+      "P6-17",
+      "P6-18",
+      "P6-19",
+      "P6-20",
+      "P6-21",
+      "P6-22"
+    ],
+    "lesson_path": "nmls/pe-foundations/curriculum/module-06.md",
+    "sourceHash": "dcc18417330a58e0f05c86de887bdf79dba1324ed6aa964c5b5a2bf9279c270c"
+  },
+  {
+    "unit": "7A",
+    "module": "PE07",
+    "category": "nontraditional",
+    "minutes": [
+      15,
+      12,
+      5,
+      3
+    ],
+    "title": "Follow payment and balance paths",
+    "read": "Unit 7A C7A and C7A2",
+    "task": "Complete both payment paths and the negative-amortization worksheet. Show monthly rate, remaining payments, balance after the stated period, payment increase and the separate balloon obligation. Follow each case's own rounding convention.",
+    "peer": "Select one intermediate balance or remaining-term input. Recompute it and ask whether the result describes contractual cash flow or an underwriting qualifying payment.",
+    "probe": "The note rate does not rise. Explain why the payment can still rise and why timely minimum payments may leave a larger balance.",
+    "revision": "Correct a calculation or defend it, and add a two-sentence explanation of the obligation that the first payment hides.",
+    "evidence": "C7A and C7A2 worksheets; peer recomputation; instructor feedback; revision; unit practice",
+    "sources": [
+      "P7-01",
+      "P7-02",
+      "P7-03",
+      "P7-04",
+      "P7-05",
+      "P7-06",
+      "P7-07",
+      "P7-08",
+      "P7-09",
+      "P7-10",
+      "P7-11",
+      "P7-19",
+      "P7-20",
+      "P7-22"
+    ],
+    "lesson_path": "nmls/pe-foundations/curriculum/module-07.md",
+    "sourceHash": "71da1ae3af8b67a60c739b8029ec274dd88c53cb16cad0d8ef028201359bc1bb"
+  },
+  {
+    "unit": "7B",
+    "module": "PE07",
+    "category": "nontraditional",
+    "minutes": [
+      15,
+      10,
+      7,
+      3
+    ],
+    "title": "Connect risk to repayment evidence",
+    "read": "Unit 7B C7B Riley file and separate Sam ledger",
+    "task": "For Riley, state the missing evidence request, payment/obligation correction and current file status with its owner. Keep the fictional twelve-month policy separate from the legal verification duty. Reconcile Sam's separate deposit ledger without importing its income into Riley's file.",
+    "peer": "Challenge a proposed DTI or approval that depends on income or a first-loan qualifying payment the file does not supply.",
+    "probe": "A borrower signs an acknowledgment of risk. Which missing repayment evidence, if any, does that create?",
+    "revision": "Retain the hold and identify the exact newly accepted fact that could permit a new review. Do not invent a qualifying payment.",
+    "evidence": "Three-action risk record; Sam reconciliation; peer/instructor exchange; revised status; unit practice",
+    "sources": [
+      "P7-04",
+      "P7-05",
+      "P7-09",
+      "P7-17"
+    ],
+    "lesson_path": "nmls/pe-foundations/curriculum/module-07.md",
+    "sourceHash": "71da1ae3af8b67a60c739b8029ec274dd88c53cb16cad0d8ef028201359bc1bb"
+  },
+  {
+    "unit": "7C",
+    "module": "PE07",
+    "category": "nontraditional",
+    "minutes": [
+      10,
+      8,
+      8,
+      4
+    ],
+    "title": "Explain product tradeoffs clearly",
+    "read": "Unit 7C C7C and W7C HELOC transition",
+    "task": "Write the five-sentence C7C explanation with a teach-back question. Reconcile the separate HELOC payment transition and identify specialist review if the consumer instead asks about a HECM. Keep the product examples separate.",
+    "peer": "Respond as a real learner testing understanding: identify the balance behavior, payment-change trigger and one uncertainty in your partner's explanation.",
+    "probe": "How must the explanation change if the five-year feature is a balloon rather than a transition to monthly amortization?",
+    "revision": "Repair the exact sentence that could mislead about maturity, omitted costs or refinancing. A correct number attached to the wrong contract is unacceptable.",
+    "evidence": "Consumer explanation; teach-back exchange; HELOC check; instructor response; revision; unit practice",
+    "sources": [
+      "P7-04",
+      "P7-12",
+      "P7-13",
+      "P7-14",
+      "P7-15",
+      "P7-16",
+      "P7-18",
+      "P7-21"
+    ],
+    "lesson_path": "nmls/pe-foundations/curriculum/module-07.md",
+    "sourceHash": "71da1ae3af8b67a60c739b8029ec274dd88c53cb16cad0d8ef028201359bc1bb"
+  },
+  {
+    "unit": "8A",
+    "module": "PE08",
+    "category": "elective",
+    "minutes": [
+      8,
+      14,
+      5,
+      3
+    ],
+    "title": "Build the Linden decision record",
+    "read": "Unit 8A Exhibit A and C8A",
+    "task": "Build the five-row Linden record for application, salary, pension, bonus and transfer. Calculate the supplied initial income and DTI. Label reported, received and accepted facts, and explain the outstanding limitation in three to five sentences.",
+    "peer": "Choose one accepted fact and one unresolved fact. Identify the different evidence supporting each status.",
+    "probe": "Why may the accepted pension remain while the unsupported bonus is excluded? Avoid assumptions about a person's group or life stage.",
+    "revision": "Preserve the September 14 application event, the accepted denominator and the unresolved deposit source. Identify the next owner.",
+    "evidence": "Five-row source record; initial calculation; peer/instructor exchange; dated revision; unit practice",
+    "sources": [
+      "P8-01",
+      "P8-02",
+      "P8-03",
+      "P8-04",
+      "P8-05",
+      "P8-06",
+      "P8-07",
+      "P8-12",
+      "P8-21",
+      "P8-23"
+    ],
+    "lesson_path": "nmls/pe-foundations/curriculum/module-08.md",
+    "sourceHash": "b2c8ff0f9359b47145f1cb1ac1d952c7d4c563e028c34ec6c83a1e012ceede42"
+  },
+  {
+    "unit": "8B",
+    "module": "PE08",
+    "category": "elective",
+    "minutes": [
+      7,
+      21,
+      8,
+      4
+    ],
+    "title": "Reassess late changes",
+    "read": "Unit 8B Exhibits B and C and C8B",
+    "task": "Prepare separate September 25 and September 29 decisions. Show the selected value basis, revised loan, housing expense, included obligations, DTI and usable funds. Explain why the same usable-funds figure can arise for different reasons.",
+    "peer": "Trace the $18,000 through the two records. Check for double subtraction or removal of a debt before accepted payoff evidence.",
+    "probe": "The payoff is only promised. Which September 29 conclusions are no longer supported?",
+    "revision": "Keep the earlier record, add the actual accepted payoff evidence and list all dependent calculations requiring review. Passing the company screen is not release authority.",
+    "evidence": "Two-version financial record; dependency map; peer/instructor exchange; revised recommendation; unit practice",
+    "sources": [
+      "P8-01",
+      "P8-02",
+      "P8-03",
+      "P8-08",
+      "P8-09",
+      "P8-10",
+      "P8-11",
+      "P8-13",
+      "P8-14",
+      "P8-15",
+      "P8-20",
+      "P8-21",
+      "P8-22",
+      "P8-24",
+      "P8-27"
+    ],
+    "lesson_path": "nmls/pe-foundations/curriculum/module-08.md",
+    "sourceHash": "b2c8ff0f9359b47145f1cb1ac1d952c7d4c563e028c34ec6c83a1e012ceede42"
+  },
+  {
+    "unit": "8C",
+    "module": "PE08",
+    "category": "elective",
+    "minutes": [
+      5,
+      15,
+      7,
+      3
+    ],
+    "title": "Defend the closing recommendation",
+    "read": "Unit 8C Exhibit D C8C and later refinance C8D",
+    "task": "Give a six-element closing recommendation using the current title condition, fee correction and funds figures, then a short consumer message. Separately complete C8D's rescission/payoff variation. Label the variation so it cannot change the purchase record.",
+    "peer": "Give the strongest factual challenge to the recommendation. Name the actual evidence that could change it rather than inventing that evidence.",
+    "probe": "An authorized title disposition arrives after 10:00. Which dependencies must the release officer recheck before any actual disposition?",
+    "revision": "Respond to the real peer and instructor, preserve the earlier version and update only supplied changed facts. Record the separate refinance date and payoff convention.",
+    "evidence": "Versioned closing recommendation; consumer message; peer/instructor exchange; revision; separate C8D worksheet; unit practice",
+    "sources": [
+      "P8-02",
+      "P8-16",
+      "P8-17",
+      "P8-18",
+      "P8-19",
+      "P8-25",
+      "P8-26",
+      "P8-28",
+      "P8-29",
+      "P8-30"
+    ],
+    "lesson_path": "nmls/pe-foundations/curriculum/module-08.md",
+    "sourceHash": "b2c8ff0f9359b47145f1cb1ac1d952c7d4c563e028c34ec6c83a1e012ceede42"
+  }
+]
