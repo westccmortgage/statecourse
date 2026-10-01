@@ -7,6 +7,7 @@ import {launchPe03BrowserDriver} from '../helpers/pe03-browser-driver.mjs';
 import {peCourseFixture,ids} from '../helpers/pe-course-fixture.mjs';
 import {PE_COURSE_UNITS} from '../../config/nmls/pe-course-definition.mjs';
 import {createPeCourseHandler} from '../../netlify/functions/_lib/nmls-pe-course-http.mjs';
+import {validatePeCourseState} from '../../netlify/functions/_lib/nmls-pe-course-service.mjs';
 if(process.env.PE_COURSE_NATIVE_CI!=='1')throw new Error('Native course acceptance required');
 const out=path.resolve('artifacts/pe-course/browser');await fs.mkdir(out,{recursive:true});
 const f=await peCourseFixture();await f.enable();const drivers=[];
@@ -56,7 +57,24 @@ try{
  await a.page.evaluate(()=>{const event=new Event('pageshow');Object.defineProperty(event,'persisted',{value:true});window.dispatchEvent(event);});
  while(!capture.started)await new Promise(r=>setTimeout(r,10));await a.page.locator('#unit').selectOption('1B');await a.page.waitForFunction(()=>document.getElementById('title').textContent.includes('1B'));await idle(a.page);release();await a.page.waitForTimeout(100);assert.match(await a.page.locator('#title').innerText(),/1B/);await a.page.goBack();await a.page.waitForFunction(()=>document.getElementById('title').textContent.includes('1A'));await idle(a.page);report.checks.push('Delayed old-unit response rejected; Back restores current unit');
  await a.page.setViewportSize({width:390,height:844});await a.page.screenshot({path:path.join(out,'02-course-mobile.png')});assert.equal(await a.page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),true);
- for(const [actor,entry] of [['a',a],['instructor',staff]]){await entry.page.bringToFront();const download=entry.page.waitForEvent('download');await entry.page.locator('#export').click();const d=await download;const file=path.join(out,`${actor}-course-evidence.json`);await d.saveAs(file);const evidence=JSON.parse(await fs.readFile(file,'utf8'));assert.equal(evidence.units.length,25);assert.equal(evidence.protectedFinalAvailable,false);assert.equal(evidence.creditEligible,false);if(actor==='a')for(const u of evidence.units)assert.equal(u.evidence.some(e=>e.actorId===ids.b&&['observe','revise'].includes(e.kind)),false);}
+ for(const [actor,entry] of [['a',a],['instructor',staff]]){
+  await entry.page.bringToFront();const file=path.join(out,`${actor}-course-evidence.json`);
+  const downloaded=await entry.driver.saveDownload(entry.page,()=>entry.page.locator('#export').click(),file);
+  (report.downloads??=[]).push({actor,...downloaded});
+  const evidence=JSON.parse(await fs.readFile(file,'utf8'));const role=actor==='instructor'?'instructor':'student';
+  assert.equal(evidence.units.length,25);assert.equal(evidence.progress.role,role);
+  for(const flag of ['protectedFinalAvailable','creditEligible','certificateEligible','bankingEligible','durationValidated'])assert.equal(evidence[flag],false);
+  assert.equal(new Set(evidence.units.map(u=>u.unit.unit)).size,25);
+  for(const u of evidence.units){
+   const {unit,...raw}=u;const expectedUnit=PE_COURSE_UNITS.find(x=>x.unit===raw.cohort.unitId);
+   assert.deepEqual(unit,expectedUnit);assert.equal(raw.cohort.assignedInstructorId,ids.instructor);
+   validatePeCourseState(raw,ids[actor],role,ids.course,expectedUnit);
+   if(actor==='a')assert.equal(raw.evidence.some(e=>e.actorId===ids.b&&['observe','revise'].includes(e.kind)),false);
+  }
+  const first=evidence.units.find(u=>u.unit.unit==='1A');
+  if(actor==='a'){assert.equal(first.stage,'revised-noncredit');assert.equal(evidence.progress.revisedUnits,1);}
+  assert.equal(first.evidence.filter(e=>e.actorId===ids.a&&e.kind==='revise').length,1);
+ }
  report.checks.push('Actual downloaded 25-unit learner/instructor exports and 390×844 layout');report.completed=true;
 }finally{await fs.writeFile(path.join(out,'report.json'),JSON.stringify(report,null,2));for(const driver of drivers)await driver.close();await new Promise(resolve=>server.close(resolve));await f.db.close();}
 assert.equal(report.completed,true);assert.deepEqual(report.errors,[]);console.log(JSON.stringify(report,null,2));
