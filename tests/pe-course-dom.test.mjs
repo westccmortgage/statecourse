@@ -25,7 +25,7 @@ test('25-unit workbench DOM→HTTP→SQL contribution, navigation and interrupte
  }
  t.after(()=>tabs.forEach(d=>d.window.close()));
  const a=await tab(ids.a),b=await tab(ids.b),staff=await tab(ids.instructor,'instructor');
- await t.test('all25 units and readable preserved lesson are available; final locked',()=>{assert.equal(a.$('unit').options.length,25);assert.ok(a.$('lesson').textContent.length>20000);assert.match(a.$('finalGate').textContent,/locked/);assert.equal(staff.$('study').hidden,true);});
+ await t.test('all25 units and readable preserved lesson are available; final locked',()=>{assert.equal(a.$('unit').options.length,25);assert.ok(a.$('lesson').textContent.length>20000);assert.match(a.$('finalGate').textContent,/never grants exam access/);assert.equal(staff.$('study').hidden,true);});
  const unit=PE_COURSE_UNITS[0];
  for(const actor of [ids.a,ids.b])await f.observeTo(actor,'1A',unit.initialMinimumMs);
  const refresh=async tab=>{tab.$('refresh').click();await until(()=>tab.$('contribution').dataset.operation==='submit');};

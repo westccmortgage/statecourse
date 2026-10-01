@@ -36,7 +36,8 @@ function render(){
  $('workspace').hidden=false;$('activity').hidden=false;$('unit').value=unitId;$('unit').disabled=busy||!!pending;
  $('overall').textContent=`${course.progress.revisedUnits} of 25 teaching units have recorded revisions. Observed: ${(course.progress.observedMs/60000).toFixed(1)} min; planned: 1,000 min (unvalidated).`;
  $('categories').replaceChildren(...Object.entries(course.progress.categories).map(([name,v])=>{const li=document.createElement('li');li.textContent=`${name.replaceAll('_',' ')}: ${(v.observedMs/60000).toFixed(1)} observed / ${v.plannedMs/60000} planned min`;return li;}));
- $('finalGate').textContent='Protected final locked. Teaching records alone do not establish exam access, course credit or regulatory approval.';
+ $('finalGate').textContent='This workbench never grants exam access or credit. Open learning checks and final readiness for the separate eligibility decision.';
+ $('finalLink').href=`/student/pe-final/?course=${encodeURIComponent(courseId)}${role==='instructor'?'&role=instructor':''}`;
  $('title').textContent=`${state.unit.module} · ${unitId} · ${state.unit.title}`;
  $('window').textContent=`Course window: ${state.cohort.opensAt} to ${state.cohort.closesAt} (exclusive), ${state.cohort.timezone}`;
  $('progress').textContent=`Stage: ${state.stage} · ${(state.observedMs/60000).toFixed(1)} observed / ${state.unit.plannedMs/60000} planned min · record ${state.revision}`;

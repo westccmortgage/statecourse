@@ -1,0 +1,2699 @@
+{
+  "schema": "statecourse-pe-final-candidate-v1",
+  "version": 1,
+  "humanReviewed": false,
+  "sourceReviewComplete": false,
+  "creditEligible": false,
+  "createdOn": "2026-10-01",
+  "purpose": "Private original national 20-hour SAFE PE course-final candidates; not licensing-test content.",
+  "itemCount": 50,
+  "unitCount": 25,
+  "bankApproval": false,
+  "heldItemIds": [],
+  "reviewBoundary": "Author source and calculation checks are not independent source review, human SME approval, NMLS approval, course eligibility or delivery authorization.",
+  "items": [
+    {
+      "id": "PE-FIN-1A-01",
+      "unitId": "1A",
+      "moduleId": "PE01",
+      "category": "elective",
+      "objective": "Route an existing-loan administration problem to the appropriate role.",
+      "stem": "Nine months after origination, a homeowner receives a delinquent property-tax notice even though the mortgage statement shows tax escrow collections. A brokerage arranged the loan, a bank originally funded it, and a different company now issues monthly statements. Which contact is the best first route for investigating the escrow disbursement?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The original broker, because arranging the loan assigns it ongoing tax-payment responsibility."
+        },
+        {
+          "id": "B",
+          "text": "The current servicer, using its verified contact details and the tax notice."
+        },
+        {
+          "id": "C",
+          "text": "The original settlement agent, because tax administration stays with the closing office."
+        },
+        {
+          "id": "D",
+          "text": "The mortgage investor, because ownership always includes direct escrow administration."
+        }
+      ],
+      "correctChoice": "B",
+      "rationale": "The servicer administers payments and, when present, the escrow account. The tax notice and statement should support a focused inquiry without assuming which party caused the error.",
+      "distractorRationales": {
+        "A": "Arranging financing does not itself make the broker responsible for servicing the escrow account.",
+        "C": "The closing role does not by itself include ongoing escrow disbursements.",
+        "D": "An investor can own the loan without performing the day-to-day servicing work."
+      },
+      "remediation": {
+        "unitIds": [
+          "1A"
+        ],
+        "focus": "Separate loan origination, ownership and ongoing escrow servicing."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.consumerfinance.gov/ask-cfpb/whats-the-difference-between-a-mortgage-lender-and-a-mortgage-servicer-en-198/",
+          "locator": "Lender and servicer definitions; day-to-day loan administration",
+          "supports": "Distinguishes origination funding from servicing functions.",
+          "checkedOn": "2026-10-01",
+          "verificationStatus": "author_verified_official_source"
+        }
+      ],
+      "lessonSourceHash": "c24fb0290b5cf916c20b072cb65666fcc5922b3e7d32b42737a0bcd396e16adf",
+      "independenceNote": "New post-closing tax-disbursement scenario; not the public payment-crediting role exercise or any CE case.",
+      "reviewStatus": "candidate_pending_independent_and_human_review"
+    },
+    {
+      "id": "PE-FIN-1A-02",
+      "unitId": "1A",
+      "moduleId": "PE01",
+      "category": "elective",
+      "objective": "Distinguish brokerage coordination from a creditor credit decision.",
+      "stem": "A brokerage obtained a conditional decision from Lender Quartz. The applicant now asks the broker to submit the file to Lender Summit for different terms. Summit has made no credit decision. The broker plans to attach Quartz’s decision to the new submission. What can that attachment establish?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It transfers the approval because the borrower and property are unchanged."
+        },
+        {
+          "id": "B",
+          "text": "It binds Summit once the applicant signs permission to transfer documents."
+        },
+        {
+          "id": "C",
+          "text": "It can provide background, but Summit must make its own authorized decision."
+        },
+        {
+          "id": "D",
+          "text": "It lets the broker approve Summit’s terms if the new payment is lower."
+        }
+      ],
+      "correctChoice": "C",
+      "rationale": "A broker may help place and explain a loan while each creditor retains its own decision process. A conditional record from another lender is evidence to evaluate, not portable approval.",
+      "distractorRationales": {
+        "A": "A different creditor has not made a decision merely because it receives another creditor’s record.",
+        "B": "Document-transfer permission is not a credit commitment by the receiving lender.",
+        "D": "A broker’s comparison or lower payment does not supply Summit’s decision authority."
+      },
+      "remediation": {
+        "unitIds": [
+          "1A"
+        ],
+        "focus": "Identify who supplies financing and who can make the particular credit decision."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://myhome.freddiemac.com/blog/homebuying/mortgage-underwriting",
+          "locator": "What Is Underwriting; Gathering and Verifying; Putting It All Together",
+          "supports": "Underwriting reviews borrower and property facts; case-specific delegated authority is a stated teaching assumption.",
+          "checkedOn": "2026-10-01",
+          "verificationStatus": "author_verified_official_source"
+        }
+      ],
+      "lessonSourceHash": "c24fb0290b5cf916c20b072cb65666fcc5922b3e7d32b42737a0bcd396e16adf",
+      "independenceNote": "New change-of-creditor submission scenario, not an absent-reviewer, investor-interest or asset-clearance case.",
+      "reviewStatus": "candidate_pending_independent_and_human_review"
+    },
+    {
+      "id": "PE-FIN-1B-01",
+      "unitId": "1B",
+      "moduleId": "PE01",
+      "category": "elective",
+      "objective": "Separate a course assessment result from licensing authority.",
+      "stem": "A training vendor gives a learner a certificate saying “passed the course final.” The learner wants to describe that result to a prospective nonbank employer as proof of passing the national SAFE licensing test and permission to originate. Which description is supported?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It establishes origination authority once an employer agrees to sponsor the learner."
+        },
+        {
+          "id": "B",
+          "text": "It establishes a provisional state license until the licensing agency reviews it."
+        },
+        {
+          "id": "C",
+          "text": "It establishes the national test result if the course covered the national topics."
+        },
+        {
+          "id": "D",
+          "text": "It establishes the course-final result; separate testing and licensing evidence is needed."
+        }
+      ],
+      "correctChoice": "D",
+      "rationale": "An education course’s own assessment, the national licensing examination and a state licensing decision are separate events. The federal minimum licensing framework includes requirements beyond education.",
+      "distractorRationales": {
+        "A": "Sponsorship does not by itself document all licensing requirements and current authority.",
+        "B": "No such provisional authority follows merely from this certificate.",
+        "C": "Shared subject matter does not make a course final the separate licensing test."
+      },
+      "remediation": {
+        "unitIds": [
+          "1B"
+        ],
+        "focus": "Distinguish education completion, national test evidence and current licensing authority."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1008/105/",
+          "locator": "12 CFR 1008.105(a)",
+          "supports": "Education is one of several minimum licensing requirements.",
+          "checkedOn": "2026-10-01",
+          "verificationStatus": "author_verified_official_source"
+        },
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1008/103/",
+          "locator": "12 CFR 1008.103(a), (b), (d), (e)",
+          "supports": "State licensing baseline, covered activities, contractor processing and defined exceptions.",
+          "checkedOn": "2026-10-01",
+          "verificationStatus": "author_verified_official_source"
+        }
+      ],
+      "lessonSourceHash": "c24fb0290b5cf916c20b072cb65666fcc5922b3e7d32b42737a0bcd396e16adf",
+      "independenceNote": "New misdescription of a course-final certificate; does not reuse the public pending-license records or their choices.",
+      "reviewStatus": "candidate_pending_independent_and_human_review"
+    },
+    {
+      "id": "PE-FIN-1B-02",
+      "unitId": "1B",
+      "moduleId": "PE01",
+      "category": "elective",
+      "objective": "Recognize that independent-contractor processing needs its own licensing review.",
+      "stem": "A firm plans to engage an independent contractor, rather than an employee, to perform residential mortgage processing in a commercial setting. The contractor would only collect and organize application documents. No exception has been established. Which fact most directly defeats the manager’s claim that “all clerical processors are outside the state-license question”?",
+      "options": [
+        {
+          "id": "A",
+          "text": "A processor becomes a federal registrant whenever a licensed MLO supervises the work."
+        },
+        {
+          "id": "B",
+          "text": "A contractor needs licensing review only after personally setting an interest rate."
+        },
+        {
+          "id": "C",
+          "text": "A contractor needs review only if application documents come directly from the consumer."
+        },
+        {
+          "id": "D",
+          "text": "Regulation H separately addresses independent contractors performing processing support duties."
+        }
+      ],
+      "correctChoice": "D",
+      "rationale": "Section 1008.103(d) establishes a specific baseline for independent-contractor processing and underwriting, subject to the stated exceptions. The actual arrangement and current state requirements still require review before work begins.",
+      "distractorRationales": {
+        "A": "Supervision by itself does not make a contractor an employee of a covered financial institution.",
+        "B": "The contractor-processing provision is not limited to personally setting rates.",
+        "C": "The contractor-processing provision does not create that direct-receipt limitation."
+      },
+      "remediation": {
+        "unitIds": [
+          "1B"
+        ],
+        "focus": "Check employment arrangement, actual activities and applicable exceptions instead of relying on a job title."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1008/103/",
+          "locator": "12 CFR 1008.103(a), (b), (d), (e)",
+          "supports": "State licensing baseline, covered activities, contractor processing and defined exceptions.",
+          "checkedOn": "2026-10-01",
+          "verificationStatus": "author_verified_official_source"
+        }
+      ],
+      "lessonSourceHash": "c24fb0290b5cf916c20b072cb65666fcc5922b3e7d32b42737a0bcd396e16adf",
+      "independenceNote": "New contractor-engagement scenario; differs from the public employee switching from support to loan recommendations.",
+      "reviewStatus": "candidate_pending_independent_and_human_review"
+    },
+    {
+      "id": "PE-FIN-1C-01",
+      "unitId": "1C",
+      "moduleId": "PE01",
+      "category": "elective",
+      "objective": "Distinguish a secondary-market purchase from a new consumer loan.",
+      "stem": "A lender sells a pool of already funded mortgages and uses the proceeds to fund new home loans. For one mortgage in the pool, the current servicing company remains in place and the borrower has not agreed to a new credit transaction. Which event occurred?",
+      "options": [
+        {
+          "id": "A",
+          "text": "A new primary-market loan to every borrower whose mortgage entered the pool."
+        },
+        {
+          "id": "B",
+          "text": "A secondary-market sale of existing mortgage assets that replenished the lender’s funds."
+        },
+        {
+          "id": "C",
+          "text": "A servicing transfer because every mortgage sale changes the payment administrator."
+        },
+        {
+          "id": "D",
+          "text": "A replacement of the borrower’s repayment promise with the investor’s underwriting policy."
+        }
+      ],
+      "correctChoice": "B",
+      "rationale": "Purchasing existing mortgages is secondary-market activity. Sale proceeds can support further lending, while the existing borrower’s obligation and the servicing arrangement must be distinguished.",
+      "distractorRationales": {
+        "A": "The sale of an existing mortgage is not itself a new extension of credit to that borrower.",
+        "C": "The facts expressly preserve the servicer; ownership and servicing can change separately.",
+        "D": "The sale does not itself rewrite the borrower’s contractual promise."
+      },
+      "remediation": {
+        "unitIds": [
+          "1C"
+        ],
+        "focus": "Map origination, secondary-market ownership and servicing as separate relationships."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.fhfa.gov/about-fannie-mae-freddie-mac",
+          "locator": "About Fannie Mae and Freddie Mac",
+          "supports": "Secondary-market purchases replenish mortgage-lending funds; purchaser standards are separate from retail origination.",
+          "checkedOn": "2026-10-01",
+          "verificationStatus": "author_verified_official_source"
+        },
+        {
+          "url": "https://www.consumerfinance.gov/ask-cfpb/how-can-i-tell-who-owns-my-mortgage-en-214/",
+          "locator": "Mortgage owner and servicer discussion",
+          "supports": "Mortgage ownership and servicing can be held by different entities.",
+          "checkedOn": "2026-10-01",
+          "verificationStatus": "author_verified_official_source"
+        }
+      ],
+      "lessonSourceHash": "c24fb0290b5cf916c20b072cb65666fcc5922b3e7d32b42737a0bcd396e16adf",
+      "independenceNote": "New pooled-sale and reinvestment scenario; no public borrower, amount, handoff or CE stem is reused.",
+      "reviewStatus": "candidate_pending_independent_and_human_review"
+    },
+    {
+      "id": "PE-FIN-1C-02",
+      "unitId": "1C",
+      "moduleId": "PE01",
+      "category": "elective",
+      "objective": "Identify the source and limits of a purchaser condition.",
+      "stem": "A file meets the cited government rule and the loan program’s published minimum documentation standard. A named investor’s current purchase contract additionally requires a documented reserve review. The lender intends to sell the loan to that investor. How should staff describe the extra review?",
+      "options": [
+        {
+          "id": "A",
+          "text": "An optional request that staff can ignore whenever the published program minimum is met."
+        },
+        {
+          "id": "B",
+          "text": "An investor condition for the intended sale, separate from the program minimum."
+        },
+        {
+          "id": "C",
+          "text": "Proof that the borrower is ineligible for every loan the lender could offer."
+        },
+        {
+          "id": "D",
+          "text": "A federal requirement applying to every mortgage because a major investor uses it."
+        }
+      ],
+      "correctChoice": "B",
+      "rationale": "Law, program conditions and purchaser or company requirements have distinct sources. Meeting one layer does not establish compliance with a separately applicable purchaser condition or determine every other possible loan route.",
+      "distractorRationales": {
+        "A": "The stated intended delivery route has a separate binding purchaser condition.",
+        "C": "Failure to establish one delivery route does not decide all possible credit options.",
+        "D": "A purchaser contract does not become universal federal law."
+      },
+      "remediation": {
+        "unitIds": [
+          "1C"
+        ],
+        "focus": "Label requirements by source and preserve the scope of each conclusion."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.fhfa.gov/about-fannie-mae-freddie-mac",
+          "locator": "About Fannie Mae and Freddie Mac",
+          "supports": "Secondary-market purchases replenish mortgage-lending funds; purchaser standards are separate from retail origination.",
+          "checkedOn": "2026-10-01",
+          "verificationStatus": "author_verified_official_source"
+        },
+        {
+          "url": "https://myhome.freddiemac.com/blog/homebuying/mortgage-underwriting",
+          "locator": "What Is Underwriting; Gathering and Verifying; Putting It All Together",
+          "supports": "Underwriting reviews borrower and property facts; case-specific delegated authority is a stated teaching assumption.",
+          "checkedOn": "2026-10-01",
+          "verificationStatus": "author_verified_official_source"
+        }
+      ],
+      "lessonSourceHash": "c24fb0290b5cf916c20b072cb65666fcc5922b3e7d32b42737a0bcd396e16adf",
+      "independenceNote": "New purchaser-contract reserve-review scenario, distinct from the public Oak Street question and CE servicing cases.",
+      "reviewStatus": "candidate_pending_independent_and_human_review"
+    },
+    {
+      "id": "PE-FIN-2A-01",
+      "unitId": "2A",
+      "moduleId": "PE02",
+      "category": "elective",
+      "objective": "Apply a stated day-count convention without premature rounding.",
+      "stem": "A worksheet must calculate 17 days of simple interest on $218,000 at 6.25% per year. The exercise requires actual days divided by 365, with no compounding, fees or principal changes, and rounding only the final result to cents. The worksheet instead divides by 360. What corrected interest amount belongs in the worksheet?",
+      "options": [
+        {
+          "id": "A",
+          "text": "$37.33."
+        },
+        {
+          "id": "B",
+          "text": "$1,135.42."
+        },
+        {
+          "id": "C",
+          "text": "$634.59."
+        },
+        {
+          "id": "D",
+          "text": "$643.40."
+        }
+      ],
+      "correctChoice": "C",
+      "rationale": "Use $218,000 × 0.0625 × 17 ÷ 365 = $634.589041..., which rounds to $634.59. The denominator is an explicit exercise input, not a claim that every mortgage uses this convention.",
+      "distractorRationales": {
+        "A": "This represents roughly one day rather than the full 17-day period.",
+        "B": "This substitutes a full annual-rate-divided-by-12 month for the specified 17 days.",
+        "D": "This uses the disallowed 360-day denominator."
+      },
+      "remediation": {
+        "unitIds": [
+          "2A"
+        ],
+        "focus": "Make annual rate, day count and rounding assumptions agree before calculating."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.consumerfinance.gov/ask-cfpb/what-is-a-payoff-amount-and-is-it-the-same-as-my-current-balance-en-205/",
+          "locator": "Payoff amount versus current balance",
+          "supports": "Payoff is date-sensitive and can include accrued interest and other applicable amounts.",
+          "checkedOn": "2026-10-01",
+          "verificationStatus": "author_verified_official_source"
+        }
+      ],
+      "lessonSourceHash": "f7edd8de770f67454bc6bd1c96a292a5c392613b4dbf4c3633a5a7dfc2c4f309",
+      "independenceNote": "Original 17-day error-diagnosis calculation; no public example’s inputs, stem or choices are reused.",
+      "reviewStatus": "candidate_pending_independent_and_human_review"
+    },
+    {
+      "id": "PE-FIN-2A-02",
+      "unitId": "2A",
+      "moduleId": "PE02",
+      "category": "elective",
+      "objective": "Apply points and a limited payment-savings comparison to a stated horizon.",
+      "stem": "Two otherwise matched loan illustrations differ by an extra 1.125 points on a $256,000 loan and $64 lower monthly P&I. Compare only that upfront charge with 40 monthly payment savings; ignore taxes, time value, ending loan balances and all other differences. Which conclusion follows from this limited calculation?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The extra charge is $2,880, exceeding 40 months of savings by $320."
+        },
+        {
+          "id": "B",
+          "text": "The extra charge is $2,880, and 40 payments produce a $320 net saving."
+        },
+        {
+          "id": "C",
+          "text": "The extra charge is $2,560, exactly recovered after 40 payments."
+        },
+        {
+          "id": "D",
+          "text": "The extra charge is $288, exceeding 40 months of savings by $2,272."
+        }
+      ],
+      "correctChoice": "A",
+      "rationale": "1.125 points means 0.01125 × $256,000 = $2,880. Forty payments save $2,560, leaving $320 unrecovered in this deliberately limited comparison; equal nominal payments would require 45 months.",
+      "distractorRationales": {
+        "B": "The difference has the wrong sign: $2,560 of savings is below $2,880.",
+        "C": "The 40-payment savings were mistaken for the points charge.",
+        "D": "The points were converted to a decimal incorrectly and the direction is inconsistent."
+      },
+      "remediation": {
+        "unitIds": [
+          "2A"
+        ],
+        "focus": "Convert points correctly and keep a short-horizon calculation separate from an overall recommendation."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.consumerfinance.gov/ask-cfpb/how-should-i-use-lender-credits-and-points-also-called-discount-points-en-136/",
+          "locator": "Points; Lender credits; Compare loan offers",
+          "supports": "Points are percentages of loan amount and credits trade upfront costs against other loan terms.",
+          "checkedOn": "2026-10-01",
+          "verificationStatus": "author_verified_official_source"
+        }
+      ],
+      "lessonSourceHash": "f7edd8de770f67454bc6bd1c96a292a5c392613b4dbf4c3633a5a7dfc2c4f309",
+      "independenceNote": "Original combined points/horizon decision, not a renamed public 60-month example or CE loan comparison.",
+      "reviewStatus": "candidate_pending_independent_and_human_review"
+    },
+    {
+      "id": "PE-FIN-2B-01",
+      "unitId": "2B",
+      "moduleId": "PE02",
+      "category": "elective",
+      "objective": "Distinguish drawn HELOC balance from full line in CLTV and HCLTV.",
+      "stem": "Use the identified Fannie Mae-style definitions for this exercise: CLTV includes the drawn HELOC balance, while HCLTV includes its full limit. The accepted value basis is $400,000; the first mortgage is $300,000; the only other lien is a $60,000 HELOC with $20,000 drawn. What are the two ratios? All results are exact whole percentages.",
+      "options": [
+        {
+          "id": "A",
+          "text": "CLTV 80%; HCLTV 80%."
+        },
+        {
+          "id": "B",
+          "text": "CLTV 75%; HCLTV 85%."
+        },
+        {
+          "id": "C",
+          "text": "CLTV 90%; HCLTV 90%."
+        },
+        {
+          "id": "D",
+          "text": "CLTV 80%; HCLTV 90%."
+        }
+      ],
+      "correctChoice": "D",
+      "rationale": "CLTV = ($300,000 + $20,000) ÷ $400,000 = 80%. HCLTV = ($300,000 + $60,000) ÷ $400,000 = 90%. These scoped definitions do not establish program approval.",
+      "distractorRationales": {
+        "A": "This uses only the drawn portion in HCLTV.",
+        "B": "This omits the drawn balance from CLTV and uses only the unused line in HCLTV.",
+        "C": "This uses the full line in both ratios instead of the drawn amount for CLTV."
+      },
+      "remediation": {
+        "unitIds": [
+          "2B"
+        ],
+        "focus": "Identify the ratio requested and the required HELOC amount before dividing."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://selling-guide.fanniemae.com/sel/b2-1.2-02/combined-loan-value-cltv-ratios",
+          "locator": "B2-1.2-02, Calculation of the CLTV Ratio",
+          "supports": "CLTV includes the drawn HELOC balance under the identified investor method.",
+          "checkedOn": "2026-10-01",
+          "verificationStatus": "author_verified_official_source"
+        },
+        {
+          "url": "https://selling-guide.fanniemae.com/sel/b2-1.2-03/home-equity-combined-loan-value-hcltv-ratios",
+          "locator": "B2-1.2-03, Calculation of the HCLTV Ratio",
+          "supports": "HCLTV includes the full HELOC amount under the identified investor method.",
+          "checkedOn": "2026-10-01",
+          "verificationStatus": "author_verified_official_source"
+        }
+      ],
+      "lessonSourceHash": "f7edd8de770f67454bc6bd1c96a292a5c392613b4dbf4c3633a5a7dfc2c4f309",
+      "independenceNote": "New drawn-versus-limit comparison; public numeric checks use closed-end seconds, not this HELOC case.",
+      "reviewStatus": "candidate_pending_independent_and_human_review"
+    },
+    {
+      "id": "PE-FIN-2B-02",
+      "unitId": "2B",
+      "moduleId": "PE02",
+      "category": "elective",
+      "objective": "Explain the limitation of APR in an adjustable-rate comparison.",
+      "stem": "A consumer compares two ARMs with the same disclosed APR. One first adjusts after three years and the other after seven; their caps also differ. The consumer concludes that the identical APR guarantees identical highest future payments. What is the sound response?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Accept the conclusion because APR fixes the lifetime interest rate of either ARM."
+        },
+        {
+          "id": "B",
+          "text": "Compare each ARM’s contract; equal APRs do not establish equal maximum future payments."
+        },
+        {
+          "id": "C",
+          "text": "Compare only the initial note rates because future adjustment terms cannot affect costs."
+        },
+        {
+          "id": "D",
+          "text": "Use the APR as each loan’s rate cap because it includes the finance charges."
+        }
+      ],
+      "correctChoice": "B",
+      "rationale": "APR summarizes borrowing cost under required assumptions; it is not a forecast of future index values or a substitute for ARM caps and adjustment dates. The differing contracts require a separate payment-risk comparison.",
+      "distractorRationales": {
+        "A": "APR is not a contractual fixed lifetime interest rate.",
+        "C": "The future adjustment terms directly affect possible payments and costs.",
+        "D": "A disclosed cost measure does not replace the contract’s rate caps."
+      },
+      "remediation": {
+        "unitIds": [
+          "2B"
+        ],
+        "focus": "Separate note rate, APR, contractual limits and uncertain future rates."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.consumerfinance.gov/ask-cfpb/what-is-the-difference-between-a-mortgage-interest-rate-and-an-apr-en-135/",
+          "locator": "Mortgage APR; adjustable-rate comparison warning",
+          "supports": "APR is a broader credit-cost measure and does not predict an ARM maximum rate.",
+          "checkedOn": "2026-10-01",
+          "verificationStatus": "author_verified_official_source"
+        },
+        {
+          "url": "https://www.consumerfinance.gov/ask-cfpb/for-an-adjustable-rate-mortgage-arm-what-are-the-index-and-margin-and-how-do-they-work-en-1949/",
+          "locator": "Index and margin; rate cap explanation",
+          "supports": "Contract index plus margin and rate caps determine a reset, subject to the actual contract.",
+          "checkedOn": "2026-10-01",
+          "verificationStatus": "author_verified_official_source"
+        }
+      ],
+      "lessonSourceHash": "f7edd8de770f67454bc6bd1c96a292a5c392613b4dbf4c3633a5a7dfc2c4f309",
+      "independenceNote": "New equal-APR/different-reset comparison; not the public “rate plus a point” misconception.",
+      "reviewStatus": "candidate_pending_independent_and_human_review"
+    },
+    {
+      "id": "PE-FIN-2C-01",
+      "unitId": "2C",
+      "moduleId": "PE02",
+      "category": "elective",
+      "objective": "Choose the document relevant to a property-security discrepancy.",
+      "stem": "A closing review finds the correct borrower, principal and repayment schedule in the note. A draft security instrument appears to describe an adjacent parcel rather than the intended collateral. The deed conveying the intended home is consistent with the purchase contract. Which review best addresses the unresolved issue?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Route the security instrument’s parcel description for authorized title/legal reconciliation."
+        },
+        {
+          "id": "B",
+          "text": "Reduce the note principal so that any parcel-description difference becomes immaterial."
+        },
+        {
+          "id": "C",
+          "text": "Ask the borrower to initial the street address and treat the legal description as unnecessary."
+        },
+        {
+          "id": "D",
+          "text": "Treat the correct conveyance deed as automatically correcting the separate security instrument."
+        }
+      ],
+      "correctChoice": "A",
+      "rationale": "The security instrument identifies the property interest securing the debt. The note’s accurate repayment terms and a correct ownership conveyance do not resolve the separate collateral description; governing documents and law need competent review.",
+      "distractorRationales": {
+        "B": "Changing principal does not repair which property secures the obligation.",
+        "C": "Initials and a street address do not resolve the operative collateral-description discrepancy.",
+        "D": "The documents have distinct functions; correctness of one does not amend another."
+      },
+      "remediation": {
+        "unitIds": [
+          "2C"
+        ],
+        "focus": "Match repayment, property security and ownership-transfer questions to the correct document."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.consumerfinance.gov/ask-cfpb/im-about-to-close-on-a-real-estate-purchase-transaction-with-a-mortgage-what-can-expect-in-the-mortgage-closing-process-en-1905/",
+          "locator": "Documents signed at closing",
+          "supports": "Note, security instrument and ownership-transfer documents perform different functions.",
+          "checkedOn": "2026-10-01",
+          "verificationStatus": "author_verified_official_source"
+        },
+        {
+          "url": "https://files.consumerfinance.gov/f/documents/cfpb_buying-a-house_closing-forms_guide.pdf",
+          "locator": "Mortgage Closing Documents, PDF pages 2-3: note section 6(C) and security-instrument illustration",
+          "supports": "Illustrative contract and security provisions; actual enforceability remains subject to governing law.",
+          "checkedOn": "2026-10-01",
+          "verificationStatus": "author_verified_official_source"
+        }
+      ],
+      "lessonSourceHash": "f7edd8de770f67454bc6bd1c96a292a5c392613b4dbf4c3633a5a7dfc2c4f309",
+      "independenceNote": "New adjacent-parcel discrepancy, not the public note-identification or retained-lien exercise.",
+      "reviewStatus": "candidate_pending_independent_and_human_review"
+    },
+    {
+      "id": "PE-FIN-2C-02",
+      "unitId": "2C",
+      "moduleId": "PE02",
+      "category": "elective",
+      "objective": "Recognize acceleration while preserving the legal-enforcement boundary.",
+      "stem": "A fictional note provision says that, after a specified payment default and required notice and cure opportunity, the creditor may require the remaining debt immediately. A trainee calls this an automatic change from a fixed to a variable rate. Which explanation best fits the provision as described?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It describes acceleration, subject to the required procedures and governing law."
+        },
+        {
+          "id": "B",
+          "text": "It describes subordination because the creditor is changing the order of payments."
+        },
+        {
+          "id": "C",
+          "text": "It proves immediate foreclosure is lawful without any additional procedure."
+        },
+        {
+          "id": "D",
+          "text": "It describes a rate adjustment because the amount demanded can increase."
+        }
+      ],
+      "correctChoice": "A",
+      "rationale": "Acceleration concerns when the outstanding obligation can become due, not an interest-rate reset or lien-priority change. The stipulated clause itself preserves notice and cure conditions and does not decide enforcement in a real jurisdiction.",
+      "distractorRationales": {
+        "B": "Lien priority is not the maturity or acceleration of the debt.",
+        "C": "The clause does not establish satisfaction of notice, cure or other legal requirements.",
+        "D": "Demanding remaining principal is different from changing the interest rate."
+      },
+      "remediation": {
+        "unitIds": [
+          "2C"
+        ],
+        "focus": "Identify a clause’s function and avoid turning its existence into a legal enforcement conclusion."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://files.consumerfinance.gov/f/documents/cfpb_buying-a-house_closing-forms_guide.pdf",
+          "locator": "Mortgage Closing Documents, PDF pages 2-3: note section 6(C) and security-instrument illustration",
+          "supports": "Illustrative contract and security provisions; actual enforceability remains subject to governing law.",
+          "checkedOn": "2026-10-01",
+          "verificationStatus": "author_verified_official_source"
+        }
+      ],
+      "lessonSourceHash": "f7edd8de770f67454bc6bd1c96a292a5c392613b4dbf4c3633a5a7dfc2c4f309",
+      "independenceNote": "New contract-provision classification scenario; no public or CE question tests this particular misclassification.",
+      "reviewStatus": "candidate_pending_independent_and_human_review"
+    },
+    {
+      "id": "PE-FIN-3A-01",
+      "unitId": "3A",
+      "moduleId": "PE03",
+      "category": "elective",
+      "objective": "Distinguish document creator from the person uploading it.",
+      "stem": "For a covered general-ATR loan, an applicant uploads an unaltered employer-issued pay statement through the approved portal. The statement identifies that applicant and the correct pay period; authenticity and reliability still require the ordinary review. Staff propose discarding it solely because the applicant, rather than the employer, uploaded it. What is the best assessment?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The same statement must arrive directly from the employer before it may even be evaluated."
+        },
+        {
+          "id": "B",
+          "text": "Evaluate it as an employer record; the applicant’s upload route alone does not invalidate it."
+        },
+        {
+          "id": "C",
+          "text": "Every portal upload is accepted income evidence because the system records a timestamp."
+        },
+        {
+          "id": "D",
+          "text": "Every applicant-uploaded record is legally the applicant’s own assertion and cannot verify income."
+        }
+      ],
+      "correctChoice": "B",
+      "rationale": "The official interpretation allows reasonably reliable, applicant-specific third-party records to be obtained directly from the consumer. The stated employer origin supports review, while the act of uploading alone neither invalidates nor accepts the record.",
+      "distractorRationales": {
+        "A": "The general rule does not impose that categorical transmission requirement.",
+        "C": "Receipt and a timestamp do not establish authenticity, reliability or acceptance.",
+        "D": "A record’s creator and its transmission route are different; the rule permits obtaining qualifying third-party records from the consumer."
+      },
+      "remediation": {
+        "unitIds": [
+          "3A"
+        ],
+        "focus": "Separate creator, transmitter, receipt and authorized acceptance."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/43/",
+          "locator": "12 CFR 1026.43(c)(2)-(4), including comments 43(c)(3)-2 through -6",
+          "supports": "Covered general-ATR factors and reasonably reliable verification; numerical methods and company screens are stipulated.",
+          "checkedOn": "2026-10-01",
+          "verificationStatus": "author_verified_official_source"
+        }
+      ],
+      "lessonSourceHash": "ce5bf743412700296b5587ceed92d76521e14af5dfb440465587705a1ebc0ece",
+      "independenceNote": "New over-rejection of a consumer-transmitted employer record; unlike CE E08/E15, no mismatched source or occupational-average evidence is used.",
+      "reviewStatus": "candidate_pending_independent_and_human_review"
+    },
+    {
+      "id": "PE-FIN-3A-02",
+      "unitId": "3A",
+      "moduleId": "PE03",
+      "category": "elective",
+      "objective": "Reconcile dates before adding account balances.",
+      "stem": "A source map contains a savings statement showing $18,000 before a $7,000 transfer out, and a later checking statement showing $12,000 after that transfer arrived. No other activity occurred, and the transfer is documented. For this reconciliation only, what combined balance is supported after the transfer?",
+      "options": [
+        {
+          "id": "A",
+          "text": "$23,000, after aligning the savings balance with the later checking date."
+        },
+        {
+          "id": "B",
+          "text": "$30,000, because both complete statements can be added as displayed."
+        },
+        {
+          "id": "C",
+          "text": "$12,000, because a later statement cancels all evidence of the savings account."
+        },
+        {
+          "id": "D",
+          "text": "$16,000, because the transfer must be removed from both displayed balances."
+        }
+      ],
+      "correctChoice": "A",
+      "rationale": "After the transfer, savings holds $11,000 and checking holds $12,000, totaling $23,000. This reconciles the money once; it does not establish that every dollar is eligible or available for closing.",
+      "distractorRationales": {
+        "B": "The displayed statements represent different dates and count the same transferred $7,000 twice.",
+        "C": "A later checking record does not erase the documented savings remainder.",
+        "D": "Removing it from both accounts omits money that still exists in checking."
+      },
+      "remediation": {
+        "unitIds": [
+          "3A"
+        ],
+        "focus": "Align statement dates and trace transfers before summing assets."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/43/",
+          "locator": "12 CFR 1026.43(c)(2)-(4), including comments 43(c)(3)-2 through -6",
+          "supports": "Covered general-ATR factors and reasonably reliable verification; numerical methods and company screens are stipulated.",
+          "checkedOn": "2026-10-01",
+          "verificationStatus": "author_verified_official_source"
+        }
+      ],
+      "lessonSourceHash": "ce5bf743412700296b5587ceed92d76521e14af5dfb440465587705a1ebc0ece",
+      "independenceNote": "Original two-date, two-account reconciliation; not the CE same-filename record-index case or public missing-page case.",
+      "reviewStatus": "candidate_pending_independent_and_human_review"
+    },
+    {
+      "id": "PE-FIN-3B-01",
+      "unitId": "3B",
+      "moduleId": "PE03",
+      "category": "elective",
+      "objective": "Convert accepted pay frequency and calculate total DTI.",
+      "stem": "The authorized reviewer accepts $3,150 of gross pay every two weeks, exactly 26 payments per year. Accepted monthly housing expense is $2,750 and all other included monthly obligations total $580. There is no other income or debt. What is total DTI, rounding only the final percentage to two decimals?",
+      "options": [
+        {
+          "id": "A",
+          "text": "48.79%."
+        },
+        {
+          "id": "B",
+          "text": "40.29%."
+        },
+        {
+          "id": "C",
+          "text": "24.40%."
+        },
+        {
+          "id": "D",
+          "text": "52.86%."
+        }
+      ],
+      "correctChoice": "A",
+      "rationale": "Accepted monthly income is $3,150 × 26 ÷ 12 = $6,825. Total DTI = ($2,750 + $580) ÷ $6,825 × 100 = 48.79%. No approval threshold is supplied.",
+      "distractorRationales": {
+        "B": "This divides only housing expense by the correct income and omits $580 of other debt.",
+        "C": "This doubles the correctly annualized monthly income, understating the ratio.",
+        "D": "This incorrectly treats the biweekly pay as only two payments each month: $6,300 income."
+      },
+      "remediation": {
+        "unitIds": [
+          "3B"
+        ],
+        "focus": "Distinguish biweekly from semimonthly pay and use all stipulated obligations."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/43/",
+          "locator": "12 CFR 1026.43(c)(2)-(4), including comments 43(c)(3)-2 through -6",
+          "supports": "Covered general-ATR factors and reasonably reliable verification; numerical methods and company screens are stipulated.",
+          "checkedOn": "2026-10-01",
+          "verificationStatus": "author_verified_official_source"
+        },
+        {
+          "url": "https://myhome.freddiemac.com/blog/homebuying/mortgage-underwriting",
+          "locator": "What Is Underwriting; Gathering and Verifying; Putting It All Together",
+          "supports": "Underwriting reviews borrower and property facts; case-specific delegated authority is a stated teaching assumption.",
+          "checkedOn": "2026-10-01",
+          "verificationStatus": "author_verified_official_source"
+        }
+      ],
+      "lessonSourceHash": "ce5bf743412700296b5587ceed92d76521e14af5dfb440465587705a1ebc0ece",
+      "independenceNote": "New pay-frequency error diagnosis with original inputs; the public River exercise’s figures and separate debt-change case are not used.",
+      "reviewStatus": "candidate_pending_independent_and_human_review"
+    },
+    {
+      "id": "PE-FIN-3B-02",
+      "unitId": "3B",
+      "moduleId": "PE03",
+      "category": "elective",
+      "objective": "Reverse-solve the maximum closing contribution while preserving the required reserve base.",
+      "stem": "A planning worksheet has $42,800 of accepted, eligible liquid funds after the earnest deposit has cleared. The remaining cash-to-close amount has not yet been set. For this exercise only, a fictional program requires four months of the full monthly housing expense to remain after closing: $2,450 principal and interest, $620 taxes and insurance, and $130 association dues. All three components must be included, and there are no other fund uses or adjustments. What is the largest remaining cash-to-close amount this fund pool can support while exactly retaining the required reserves?",
+      "options": [
+        {
+          "id": "A",
+          "text": "$33,000."
+        },
+        {
+          "id": "B",
+          "text": "$30,520."
+        },
+        {
+          "id": "C",
+          "text": "$39,600."
+        },
+        {
+          "id": "D",
+          "text": "$30,000."
+        }
+      ],
+      "correctChoice": "D",
+      "rationale": "The reserve base is $2,450 + $620 + $130 = $3,200 per month. Four months require $12,800, so the maximum remaining closing contribution is $42,800 − $12,800 = $30,000. Substituting that cap back leaves exactly $12,800. This is a fund-allocation limit under the fictional rule, not a loan approval.",
+      "distractorRationales": {
+        "A": "This retains four months of principal and interest only: $42,800 − 4 × $2,450 = $33,000.",
+        "B": "This omits association dues from the reserve base: $42,800 − 4 × ($2,450 + $620) = $30,520.",
+        "C": "This retains only one month of the full housing expense: $42,800 − $3,200 = $39,600."
+      },
+      "remediation": {
+        "unitIds": [
+          "3B"
+        ],
+        "focus": "Work backward from the reserve requirement to a maximum closing use, then substitute the result to check the retained funds."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://myhome.freddiemac.com/blog/homebuying/mortgage-underwriting",
+          "locator": "What Is Underwriting; Gathering and Verifying; Putting It All Together",
+          "supports": "Underwriting evaluates documented assets and lender requirements; the four-month reserve rule and every eligible-funds input are explicitly fictional exercise assumptions.",
+          "checkedOn": "2026-10-01",
+          "verificationStatus": "author_verified_official_source"
+        }
+      ],
+      "lessonSourceHash": "ce5bf743412700296b5587ceed92d76521e14af5dfb440465587705a1ebc0ece",
+      "independenceNote": "Reverse-solved closing capacity with a component-based reserve constraint; the public River case instead supplies cash to close and asks for residual reserves and a shortfall. Neither its inputs nor its forward decision structure is reused; no CE scenario is used.",
+      "reviewStatus": "candidate_pending_independent_and_human_review"
+    },
+    {
+      "id": "PE-FIN-3C-01",
+      "unitId": "3C",
+      "moduleId": "PE03",
+      "category": "elective",
+      "objective": "Distinguish an AUS recommendation from accepted documentation.",
+      "stem": "A DU casefile receives a favorable recommendation using stated rental income. Its findings require documentation, but the rent records have not yet been reviewed or accepted. The originator wants to tell the applicant the income condition is cleared. Which status statement is accurate?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The data received a favorable recommendation; required income-documentation acceptance is still pending."
+        },
+        {
+          "id": "B",
+          "text": "The income condition belongs solely to the software vendor once the casefile is submitted."
+        },
+        {
+          "id": "C",
+          "text": "The application is denied because any documentation condition reverses a favorable recommendation."
+        },
+        {
+          "id": "D",
+          "text": "The income is accepted because a favorable automated result supersedes its documentation messages."
+        }
+      ],
+      "correctChoice": "A",
+      "rationale": "An AUS evaluates submitted information and supplies findings. A favorable output is not evidence that a named documentation condition has been satisfied; staff should report both facts without inventing approval or denial.",
+      "distractorRationales": {
+        "B": "The lender retains responsibility for its inputs, documentation and decision.",
+        "C": "An open condition is not itself an authorized adverse credit decision.",
+        "D": "The recommendation does not eliminate the findings’ documentation requirements."
+      },
+      "remediation": {
+        "unitIds": [
+          "3C"
+        ],
+        "focus": "Read the actual findings, accepted evidence and delegated decision authority."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://selling-guide.fanniemae.com/sel/b3-2-01/general-information-du",
+          "locator": "B3-2-01, General Information on DU",
+          "supports": "DU uses submitted loan-casefile data and findings; lender review and accurate inputs remain necessary.",
+          "checkedOn": "2026-10-01",
+          "verificationStatus": "author_verified_official_source"
+        },
+        {
+          "url": "https://myhome.freddiemac.com/blog/homebuying/mortgage-underwriting",
+          "locator": "What Is Underwriting; Gathering and Verifying; Putting It All Together",
+          "supports": "Underwriting reviews borrower and property facts; case-specific delegated authority is a stated teaching assumption.",
+          "checkedOn": "2026-10-01",
+          "verificationStatus": "author_verified_official_source"
+        }
+      ],
+      "lessonSourceHash": "ce5bf743412700296b5587ceed92d76521e14af5dfb440465587705a1ebc0ece",
+      "independenceNote": "New rental-income findings scenario, not the public reduced-hours/Oak file or CE missing-reviewer case.",
+      "reviewStatus": "candidate_pending_independent_and_human_review"
+    },
+    {
+      "id": "PE-FIN-3C-02",
+      "unitId": "3C",
+      "moduleId": "PE03",
+      "category": "elective",
+      "objective": "Route a factual occupancy conflict without changing it for price.",
+      "stem": "An applicant requests owner-occupied financing and later supplies an already executed lease giving another household exclusive possession of the entire property through the next year. The applicant’s intended move-in date remains unclear. What is the appropriate underwriting handoff?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Record intentional occupancy fraud because a lease and an occupancy request cannot coexist."
+        },
+        {
+          "id": "B",
+          "text": "Preserve the lease and request clarification of the actual occupancy plan for the authorized reviewer."
+        },
+        {
+          "id": "C",
+          "text": "Change the file to investment property immediately and promise that price without a decision."
+        },
+        {
+          "id": "D",
+          "text": "Remove the lease because the application’s original occupancy box controls all later evidence."
+        }
+      ],
+      "correctChoice": "B",
+      "rationale": "The lease materially affects the occupancy representation, but the missing plan needs neutral clarification. Record the conflict and route the actual property and program decision instead of selecting a label or assigning intent.",
+      "distractorRationales": {
+        "A": "The conflict raises a question but does not by itself establish intent or a final finding.",
+        "C": "The conflict needs factual and program review; staff cannot invent a completed alternative approval.",
+        "D": "Later material evidence cannot be ignored simply to preserve an earlier label."
+      },
+      "remediation": {
+        "unitIds": [
+          "3C"
+        ],
+        "focus": "Use factual occupancy evidence and preserve the boundary between a red flag and a finding."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://myhome.freddiemac.com/blog/homebuying/mortgage-underwriting",
+          "locator": "What Is Underwriting; Gathering and Verifying; Putting It All Together",
+          "supports": "Underwriting reviews borrower and property facts; case-specific delegated authority is a stated teaching assumption.",
+          "checkedOn": "2026-10-01",
+          "verificationStatus": "author_verified_official_source"
+        }
+      ],
+      "lessonSourceHash": "ce5bf743412700296b5587ceed92d76521e14af5dfb440465587705a1ebc0ece",
+      "independenceNote": "New exclusive-possession lease conflict with an unknown move-in plan; no prior case, stem or answer choice is reused.",
+      "reviewStatus": "candidate_pending_independent_and_human_review"
+    },
+    {
+      "id": "PE-FIN-4A-01",
+      "unitId": "4A",
+      "moduleId": "PE04",
+      "category": "elective",
+      "objective": "Explain the role and limits of FHA insurance.",
+      "stem": "During a program comparison, a consumer says FHA insurance will make monthly payments for them if their budget becomes tight. The proposed loan would be made by an FHA-approved lender. Which explanation corrects the misunderstanding?",
+      "options": [
+        {
+          "id": "A",
+          "text": "FHA insurance means HUD, rather than the approved lender, must fund every such loan."
+        },
+        {
+          "id": "B",
+          "text": "FHA insurance makes borrower and property review unnecessary if the consumer pays the premium."
+        },
+        {
+          "id": "C",
+          "text": "FHA protects the lender against covered loss, while the borrower’s repayment duties continue."
+        },
+        {
+          "id": "D",
+          "text": "FHA insurance replaces the borrower’s mortgage payment obligation once premiums are collected."
+        }
+      ],
+      "correctChoice": "C",
+      "rationale": "HUD describes FHA as providing insurance on loans made by approved lenders and protecting lenders against covered loss. That protection does not give the consumer guaranteed approval or relief from the loan obligation.",
+      "distractorRationales": {
+        "A": "FHA insures loans made by approved lenders; it does not make this proposed retail loan merely through insurance.",
+        "B": "The loan must still satisfy applicable insurance and lending requirements.",
+        "D": "Mortgage insurance is not a promise to make the borrower’s scheduled payments."
+      },
+      "remediation": {
+        "unitIds": [
+          "4A"
+        ],
+        "focus": "Separate government backing, the lender’s decision and the borrower’s duties."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.hud.gov/aboutus/fhahistory",
+          "locator": "Our Role; What We Do",
+          "supports": "FHA insures loans made by approved lenders; insurance protects the lender against covered loss.",
+          "checkedOn": "2026-10-01",
+          "verificationStatus": "author_verified_official_source"
+        }
+      ],
+      "lessonSourceHash": "aeb63a634c02ef87a6f26010c2716099058b3d82f2520e464ad9b3bcac81c186",
+      "independenceNote": "New misunderstanding about insurance paying the borrower’s bills; not the public program eligibility case or CE material.",
+      "reviewStatus": "candidate_pending_independent_and_human_review"
+    },
+    {
+      "id": "PE-FIN-4A-02",
+      "unitId": "4A",
+      "moduleId": "PE04",
+      "category": "elective",
+      "objective": "Separate program classification from loan amount and product features.",
+      "stem": "A proposal is below the applicable conforming loan limit, carries no federal mortgage insurance or guaranty, and includes a feature that the intended agency purchaser does not permit. Staff call it “conforming” solely because the amount is below the limit. What classification is supported by the supplied facts?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It is conventional; conformity also requires meeting the purchaser’s other standards."
+        },
+        {
+          "id": "B",
+          "text": "It is FHA-insured because every below-limit mortgage receives federal backing."
+        },
+        {
+          "id": "C",
+          "text": "It is outside consumer-protection law because an agency purchaser will not buy it."
+        },
+        {
+          "id": "D",
+          "text": "It is conforming because a purchaser cannot impose requirements beyond the loan limit."
+        }
+      ],
+      "correctChoice": "A",
+      "rationale": "Conventional identifies the absence of government insurance or guaranty. Conforming also requires satisfaction of the relevant purchaser’s standards; loan amount is only one part of that evaluation.",
+      "distractorRationales": {
+        "B": "Loan size does not create FHA insurance.",
+        "C": "A purchaser’s eligibility decision does not decide federal consumer-law coverage.",
+        "D": "Conforming status depends on applicable requirements beyond size."
+      },
+      "remediation": {
+        "unitIds": [
+          "4A"
+        ],
+        "focus": "Keep conventional/conforming, government backing and legal coverage distinct."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.consumerfinance.gov/ask-cfpb/what-is-a-conventional-loan-en-117/",
+          "locator": "Conventional-loan definition",
+          "supports": "Conventional means not government insured or guaranteed; it can be conforming or nonconforming.",
+          "checkedOn": "2026-10-01",
+          "verificationStatus": "author_verified_official_source"
+        },
+        {
+          "url": "https://www.consumerfinance.gov/ask-cfpb/what-is-a-conforming-loan-en-115/",
+          "locator": "Conforming-loan definition",
+          "supports": "Conforming mortgages meet the terms and conditions established by Fannie Mae or Freddie Mac; amount is not the only condition.",
+          "checkedOn": "2026-10-01",
+          "verificationStatus": "author_verified_official_source"
+        }
+      ],
+      "lessonSourceHash": "aeb63a634c02ef87a6f26010c2716099058b3d82f2520e464ad9b3bcac81c186",
+      "independenceNote": "New below-limit but disallowed-feature scenario; no public case or CE product classification stem is reused.",
+      "reviewStatus": "candidate_pending_independent_and_human_review"
+    },
+    {
+      "id": "PE-FIN-4B-01",
+      "unitId": "4B",
+      "moduleId": "PE04",
+      "category": "elective",
+      "objective": "Diagnose a duplicate credit in a net-charge closing reconciliation and quantify its effect.",
+      "stem": "A fictional closing worksheet lists a $420,000 purchase, a $378,000 loan, and a $9,600 closing-charge subtotal expressly labeled NET OF THE $1,800 LENDER CREDIT. That subtotal includes all charges, prepaids and initial escrow amounts but does not include the separate $2,400 seller credit. A $12,000 earnest deposit has already been paid. Both credits are approved and fully usable, and no other adjustments apply. The worksheet then separately deducts the deposit, seller credit and lender credit and reports $35,400 still to bring. Which reconciliation corrects this worksheet?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Keep $35,400; a lender credit reduces both the charge subtotal and the remaining contribution separately."
+        },
+        {
+          "id": "B",
+          "text": "Increase it to $49,200; money already deposited cannot be used as a source at closing."
+        },
+        {
+          "id": "C",
+          "text": "Increase it to $37,200; the second lender-credit deduction understated the contribution by $1,800."
+        },
+        {
+          "id": "D",
+          "text": "Increase it to $39,000; add the lender credit to the net subtotal and allow no lender-credit deduction."
+        }
+      ],
+      "correctChoice": "C",
+      "rationale": "Using the stated net subtotal, the contribution is ($420,000 − $378,000) + $9,600 − $12,000 − $2,400 = $37,200. The draft subtracts the already-netted $1,800 again, giving $35,400. An independent gross-ledger check gives uses of $420,000 + ($9,600 + $1,800) = $431,400 and sources of $378,000 + $12,000 + $2,400 + $1,800 + $37,200 = $431,400. This reconciliation does not authorize funding.",
+      "distractorRationales": {
+        "A": "A credit already reflected in a net subtotal cannot be subtracted again; that is the draft’s $1,800 understatement.",
+        "B": "The $12,000 deposit is a source already supplied by the borrower. Omitting it from the corrected reconciliation overstates the remaining contribution by $12,000.",
+        "D": "Restoring the lender credit to obtain gross charges also requires recognizing that credit once as a source. This proposed correction denies the credit altogether."
+      },
+      "remediation": {
+        "unitIds": [
+          "4B"
+        ],
+        "focus": "Inspect whether a subtotal is gross or net before reconciling the discrepancy, and verify the corrected amount from both uses and sources."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.consumerfinance.gov/owning-a-home/closing-disclosure/",
+          "locator": "Cash to Close; Total Closing Costs; Lender Credits; Paid Already by or on Behalf of Borrower at Closing",
+          "supports": "Closing costs, lender credits, prior deposits and the remaining borrower contribution are distinct; the net-subtotal arithmetic is supplied by the fictional worksheet.",
+          "checkedOn": "2026-10-01",
+          "verificationStatus": "author_verified_official_source"
+        }
+      ],
+      "lessonSourceHash": "aeb63a634c02ef87a6f26010c2716099058b3d82f2520e464ad9b3bcac81c186",
+      "independenceNote": "Artifact-error diagnosis: the learner audits an already-computed amount, identifies a duplicated credit embedded in a net subtotal, and reconciles it to a separate gross ledger. The public example starts from gross charges and calculates a contribution; the CE credit-tolerance case concerns two nonoverlapping credits and a regulatory baseline, neither of which appears here.",
+      "reviewStatus": "candidate_pending_independent_and_human_review"
+    },
+    {
+      "id": "PE-FIN-4B-02",
+      "unitId": "4B",
+      "moduleId": "PE04",
+      "category": "elective",
+      "objective": "Distinguish disclosure readiness from credit and settlement readiness.",
+      "stem": "The disclosure specialist confirms that the required CD receipt and waiting period are satisfied. The insurance binder is still awaiting the underwriter’s acceptance, and the title team has not resolved a recorded judgment affecting the proposed collateral. A coordinator has a signing appointment available. Which recommendation is supported?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Ask the consumer to acknowledge both open items so the coordinator can clear them."
+        },
+        {
+          "id": "B",
+          "text": "Cancel the application as a denial because more than one condition remains open."
+        },
+        {
+          "id": "C",
+          "text": "Release the file because expiration of the CD wait supplies credit and title approval."
+        },
+        {
+          "id": "D",
+          "text": "Keep timing satisfied, with the insurance and title decisions still open before release."
+        }
+      ],
+      "correctChoice": "D",
+      "rationale": "Closing readiness combines distinct decisions. A completed disclosure timing check can be preserved without implying the separate credit, collateral and release requirements have been met.",
+      "distractorRationales": {
+        "A": "Acknowledgment does not give the coordinator authority or create the missing evidence.",
+        "B": "Open conditions do not themselves establish an authorized adverse action.",
+        "C": "A disclosure waiting period does not resolve separate insurance or title conditions."
+      },
+      "remediation": {
+        "unitIds": [
+          "4B"
+        ],
+        "focus": "Track each condition and its authorized owner rather than treating a calendar event as clearance."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://myhome.freddiemac.com/blog/homebuying/mortgage-underwriting",
+          "locator": "What Is Underwriting; Gathering and Verifying; Putting It All Together",
+          "supports": "Underwriting reviews borrower and property facts; case-specific delegated authority is a stated teaching assumption.",
+          "checkedOn": "2026-10-01",
+          "verificationStatus": "author_verified_official_source"
+        },
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/19/",
+          "locator": "12 CFR 1026.19(e)(1)-(3), (f)(1)-(2) and applicable interpretations",
+          "supports": "Scoped LE/CD provision, fee controls, good-faith comparison and correction requirements.",
+          "checkedOn": "2026-10-01",
+          "verificationStatus": "author_verified_official_source"
+        }
+      ],
+      "lessonSourceHash": "aeb63a634c02ef87a6f26010c2716099058b3d82f2520e464ad9b3bcac81c186",
+      "independenceNote": "New simultaneous insurance/title readiness scenario; not the CE conflicting-CD-drafts case or a public retained-second-lien exercise.",
+      "reviewStatus": "candidate_pending_independent_and_human_review"
+    },
+    {
+      "id": "PE-FIN-4C-01",
+      "unitId": "4C",
+      "moduleId": "PE04",
+      "category": "elective",
+      "objective": "Use the payoff date and supplied per-diem terms.",
+      "stem": "A verified payoff quote is $176,432.10 through its stated date. The servicer expressly authorizes adding $27.40 for each additional day through a later date within the quote’s extension window. Funds will arrive exactly six additional days later; no fees, payments or other changes occur. What is the updated amount under those terms?",
+      "options": [
+        {
+          "id": "A",
+          "text": "$176,267.70."
+        },
+        {
+          "id": "B",
+          "text": "$176,596.50."
+        },
+        {
+          "id": "C",
+          "text": "$176,432.10."
+        },
+        {
+          "id": "D",
+          "text": "$176,459.50."
+        }
+      ],
+      "correctChoice": "B",
+      "rationale": "Six additional days add 6 × $27.40 = $164.40. The supported updated amount is $176,596.50. The authorization and extension window are supplied facts, not permission to extend every payoff quote independently.",
+      "distractorRationales": {
+        "A": "This subtracts additional interest instead of adding it.",
+        "C": "This ignores the six stipulated additional days.",
+        "D": "This adds only one day of interest."
+      },
+      "remediation": {
+        "unitIds": [
+          "4C"
+        ],
+        "focus": "Match payoff funds to the quote’s applicable date and authorized adjustment terms."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.consumerfinance.gov/ask-cfpb/what-is-a-payoff-amount-and-is-it-the-same-as-my-current-balance-en-205/",
+          "locator": "Payoff amount versus current balance",
+          "supports": "Payoff is date-sensitive and can include accrued interest and other applicable amounts.",
+          "checkedOn": "2026-10-01",
+          "verificationStatus": "author_verified_official_source"
+        }
+      ],
+      "lessonSourceHash": "aeb63a634c02ef87a6f26010c2716099058b3d82f2520e464ad9b3bcac81c186",
+      "independenceNote": "Original authorized quote-extension arithmetic; not the public principal-balance example or a CE case.",
+      "reviewStatus": "candidate_pending_independent_and_human_review"
+    },
+    {
+      "id": "PE-FIN-4C-02",
+      "unitId": "4C",
+      "moduleId": "PE04",
+      "category": "elective",
+      "objective": "Distinguish temporary forbearance from forgiveness of the unpaid obligation.",
+      "stem": "A borrower receives an authorized forbearance arrangement temporarily reducing mortgage payments. The written arrangement does not forgive the unpaid amounts, and its repayment options need further explanation. The borrower asks to subtract the reductions permanently from the loan balance. What is the appropriate response?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Treat the reduced payments as an unapproved default even though the authorized plan expressly permits them."
+        },
+        {
+          "id": "B",
+          "text": "Explain that reduced payments do not erase the unpaid amounts and clarify repayment terms with the servicer."
+        },
+        {
+          "id": "C",
+          "text": "Subtract the reductions because every approved forbearance includes principal forgiveness."
+        },
+        {
+          "id": "D",
+          "text": "Promise one lump-sum repayment immediately after the pause because every forbearance uses that method."
+        }
+      ],
+      "correctChoice": "B",
+      "rationale": "Forbearance provides temporary payment relief, while the unpaid amounts remain due under the applicable arrangement. Explain the actual plan, including how and when the difference is repaid, without promising forgiveness or a universal repayment structure.",
+      "distractorRationales": {
+        "A": "The supplied authorized arrangement must be read rather than ignored.",
+        "C": "Temporary payment relief does not itself forgive principal or the missed amounts.",
+        "D": "Repayment arrangements vary; the actual plan must be clarified rather than assuming one universal method."
+      },
+      "remediation": {
+        "unitIds": [
+          "4C"
+        ],
+        "focus": "Read the servicer’s authorized relief terms and distinguish pause, repayment and forgiveness."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.consumerfinance.gov/ask-cfpb/what-is-mortgage-forbearance-en-289/",
+          "locator": "What is mortgage forbearance; repayment options",
+          "supports": "Forbearance temporarily pauses or reduces payments; it does not by itself forgive missed amounts.",
+          "checkedOn": "2026-10-01",
+          "verificationStatus": "author_verified_official_source"
+        }
+      ],
+      "lessonSourceHash": "aeb63a634c02ef87a6f26010c2716099058b3d82f2520e464ad9b3bcac81c186",
+      "independenceNote": "New authorized-forbearance balance misunderstanding; deliberately avoids the public misdirected-transfer-payment/late-fee case.",
+      "reviewStatus": "candidate_pending_independent_and_human_review"
+    },
+    {
+      "id": "PE-FIN-5A-01",
+      "unitId": "5A",
+      "moduleId": "PE05",
+      "category": "federal_law",
+      "objective": "Apply the creditor-business-day definition to the initial LE deadline.",
+      "stem": "For a covered TRID loan, all six application elements arrive on Saturday. The creditor is open to the public for substantially all business functions Tuesday through Saturday and is closed Sunday and Monday. There are no holidays, denial or withdrawal, and no exception applies. What is the latest ordinary deadline to deliver or mail the initial LE?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The following Wednesday."
+        },
+        {
+          "id": "B",
+          "text": "The following Tuesday."
+        },
+        {
+          "id": "C",
+          "text": "The following Friday."
+        },
+        {
+          "id": "D",
+          "text": "The following Thursday."
+        }
+      ],
+      "correctChoice": "D",
+      "rationale": "The three creditor business days after Saturday are Tuesday, Wednesday and Thursday. Regulation Z uses the creditor-business-function definition for the initial LE deadline. The application day is not counted, and this creditor’s closed Sunday and Monday are skipped.",
+      "distractorRationales": {
+        "A": "A Monday-through-Friday schedule, or the precise definition excluding only Sundays and legal holidays, would count Monday, Tuesday and Wednesday. This creditor is closed Monday, so neither is the applicable count.",
+        "B": "Tuesday is the third calendar day after Saturday, counting Sunday and Monday. Those two days are closed, so Tuesday is only the first creditor business day.",
+        "C": "Friday is the fourth creditor business day after receipt: Tuesday, Wednesday, Thursday, then Friday. It is one business day after the deadline."
+      },
+      "remediation": {
+        "unitIds": [
+          "5A"
+        ],
+        "focus": "Match the legal clock to its business-day definition and the stated office schedule."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/2/",
+          "locator": "12 CFR 1026.2(a)(6), first sentence, and comment 2(a)(6)-1",
+          "supports": "For the initial LE deadline, business days depend on whether the creditor is open to the public for substantially all business functions.",
+          "checkedOn": "2026-10-01",
+          "verificationStatus": "author_verified_official_source"
+        },
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/19/",
+          "locator": "12 CFR 1026.19(e)(1)(iii)(A) and comment 19(e)(1)(iii)-1",
+          "supports": "Initial LE must ordinarily be delivered or mailed not later than the third creditor business day after receipt of the application; the comment expressly applies the creditor-business-function definition.",
+          "checkedOn": "2026-10-01",
+          "verificationStatus": "author_verified_official_source"
+        }
+      ],
+      "lessonSourceHash": "9f6cf7db3696d8344e9449edfcf9000ea9ae51ab201de70626938fab6dccbcdc",
+      "independenceNote": "Original Saturday-receipt/Tuesday-through-Saturday creditor scenario. It separates the applicable count from wrong Monday-through-Friday, precise-business-day, calendar-day and four-day counts; no public September or CE CD/holiday case is reused.",
+      "reviewStatus": "candidate_pending_independent_and_human_review"
+    },
+    {
+      "id": "PE-FIN-5A-02",
+      "unitId": "5A",
+      "moduleId": "PE05",
+      "category": "federal_law",
+      "objective": "Recognize rescission interests independently from note liability.",
+      "stem": "A consumer-purpose closed-end home-equity loan will encumber a jointly owned home that is the principal dwelling of both owners. One owner signs the note and the other signs only the security instrument. Assume this transaction is rescindable, both ownership interests are encumbered, and no exception or waiver applies. Staff plan to give a rescission notice only to the note signer. What must be corrected?",
+      "options": [
+        {
+          "id": "A",
+          "text": "One owner’s notice is sufficient whenever all owners use the same mailing address."
+        },
+        {
+          "id": "B",
+          "text": "Treat the home-equity loan as a purchase transaction because both owners sign documents."
+        },
+        {
+          "id": "C",
+          "text": "Nothing, because only someone personally liable for repayment can have rescission rights."
+        },
+        {
+          "id": "D",
+          "text": "Address both owners’ rescission rights, including the owner who is not on the note."
+        }
+      ],
+      "correctChoice": "D",
+      "rationale": "For the stipulated rescindable transaction, Regulation Z protects each consumer whose ownership interest in the principal dwelling is subject to the security interest. The team must identify all entitled owners and supply the required notices.",
+      "distractorRationales": {
+        "A": "A shared address does not remove another entitled owner’s rescission-notice rights.",
+        "B": "The supplied transaction is a home-equity loan and expressly rescindable; the signatures do not create a purchase exemption.",
+        "C": "For rescission, an encumbered ownership interest in the principal dwelling matters, not just note liability."
+      },
+      "remediation": {
+        "unitIds": [
+          "5A"
+        ],
+        "focus": "Separate personal repayment liability from an ownership interest protected by rescission."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/23/",
+          "locator": "12 CFR 1026.23(a)(1), (b), (f)(1)",
+          "supports": "Rescission can protect a non-note-signing owner whose principal-dwelling interest is encumbered; residential mortgage transactions are exempt.",
+          "checkedOn": "2026-10-01",
+          "verificationStatus": "author_verified_official_source"
+        }
+      ],
+      "lessonSourceHash": "9f6cf7db3696d8344e9449edfcf9000ea9ae51ab201de70626938fab6dccbcdc",
+      "independenceNote": "New joint-owner/home-equity notice-recipient scenario, unlike CE guarantor CD delivery and delayed-rescission-notice cases.",
+      "reviewStatus": "candidate_pending_independent_and_human_review"
+    },
+    {
+      "id": "PE-FIN-5B-01",
+      "unitId": "5B",
+      "moduleId": "PE05",
+      "category": "federal_law",
+      "objective": "Limit a permitted revised estimate to changes justified by the event.",
+      "stem": "A consumer requests a documented transaction change. Review establishes a permitted revision reason that affects only a particular settlement service, and all relevant timing requirements are met. The disclosure team also increases an unrelated creditor origination charge that the event did not affect. No separate revision reason supports that increase. Which assessment is correct?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The permitted event does not authorize resetting the unrelated origination-charge baseline."
+        },
+        {
+          "id": "B",
+          "text": "One valid revision reason permits replacement of every estimate with current prices."
+        },
+        {
+          "id": "C",
+          "text": "Allow the unrelated increase if the revised disclosure is provided within three business days."
+        },
+        {
+          "id": "D",
+          "text": "The consumer’s request permits increases in unrelated creditor fees if total cash to close falls."
+        }
+      ],
+      "correctChoice": "A",
+      "rationale": "A lawful revision must be linked to the reason and affected charge. The stipulated event can support its own service change without authorizing the unrelated creditor increase.",
+      "distractorRationales": {
+        "B": "A justified event does not provide an unrestricted repricing opportunity.",
+        "C": "Timely provision does not supply a missing substantive reason for that increase.",
+        "D": "A falling total does not establish a valid baseline revision for an unaffected charge."
+      },
+      "remediation": {
+        "unitIds": [
+          "5B"
+        ],
+        "focus": "Connect each revised charge to the specific permitted reason rather than resetting the whole file."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/19/",
+          "locator": "12 CFR 1026.19(e)(1)-(3), (f)(1)-(2) and applicable interpretations",
+          "supports": "Scoped LE/CD provision, fee controls, good-faith comparison and correction requirements.",
+          "checkedOn": "2026-10-01",
+          "verificationStatus": "author_verified_official_source"
+        }
+      ],
+      "lessonSourceHash": "9f6cf7db3696d8344e9449edfcf9000ea9ae51ab201de70626938fab6dccbcdc",
+      "independenceNote": "New partially justified revision with an unaffected creditor charge; not the CE missing-address, expiration, rate-lock or public clerical-omission cases.",
+      "reviewStatus": "candidate_pending_independent_and_human_review"
+    },
+    {
+      "id": "PE-FIN-5B-02",
+      "unitId": "5B",
+      "moduleId": "PE05",
+      "category": "federal_law",
+      "objective": "Recognize a noncash referral reward despite an education label.",
+      "stem": "For covered settlement business, a title company offers to pay an unrelated mortgage broker’s conference registration only after the broker sends it five closings. The broker provides no separate service and no exception applies. The offer is called an “education partnership.” What is the best compliance conclusion?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It is permitted if the broker discloses the arrangement to each consumer."
+        },
+        {
+          "id": "B",
+          "text": "The registration is a referral-conditioned benefit; calling it education does not cure that."
+        },
+        {
+          "id": "C",
+          "text": "It is permitted because payment goes to the conference rather than directly to the broker."
+        },
+        {
+          "id": "D",
+          "text": "It is permitted because only cash paid for each individual referral is restricted."
+        }
+      ],
+      "correctChoice": "B",
+      "rationale": "The offer pays an expense in exchange for a referral volume. Regulation X covers things of value and referral understandings, and the normal educational-activity provision does not protect this conditioned reward.",
+      "distractorRationales": {
+        "A": "Disclosure does not cure the stipulated prohibited referral exchange.",
+        "C": "Payment of another person’s expense can be a thing of value.",
+        "D": "The restriction is not limited to cash or a one-payment-per-referral format."
+      },
+      "remediation": {
+        "unitIds": [
+          "5B"
+        ],
+        "focus": "Follow the benefit and the referral condition rather than the arrangement’s title."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1024/14/",
+          "locator": "12 CFR 1024.14(b), (d)-(g)",
+          "supports": "Things of value and referral understandings; promotional activity does not excuse a conditioned referral reward.",
+          "checkedOn": "2026-10-01",
+          "verificationStatus": "author_verified_official_source"
+        }
+      ],
+      "lessonSourceHash": "9f6cf7db3696d8344e9449edfcf9000ea9ae51ab201de70626938fab6dccbcdc",
+      "independenceNote": "Original conference-expense/threshold reward; does not reuse the CE advertising overpayment/dividend cases or public per-loan cash reward.",
+      "reviewStatus": "candidate_pending_independent_and_human_review"
+    },
+    {
+      "id": "PE-FIN-5C-01",
+      "unitId": "5C",
+      "moduleId": "PE05",
+      "category": "federal_law",
+      "objective": "Preserve valuation-copy duties when timing is waived and credit is denied.",
+      "stem": "In a first-lien dwelling application, the applicant validly waives advance timing of appraisal copies. A written valuation is completed, but the lender later denies the loan. Staff mark the copy task “cancelled because no closing will occur.” Which response is supported?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Cancel the task because a denial always ends all appraisal-related duties."
+        },
+        {
+          "id": "B",
+          "text": "Cancel the task because a valid timing waiver also waives the right to a copy."
+        },
+        {
+          "id": "C",
+          "text": "Keep the copy task and apply the rule’s timing for this nonconsummated transaction."
+        },
+        {
+          "id": "D",
+          "text": "Provide the copy only if the applicant makes a new written request after the denial."
+        }
+      ],
+      "correctChoice": "C",
+      "rationale": "Regulation B distinguishes waiver of advance delivery timing from waiver of a copy. The creditor must apply the specific nonconsummation timing, rather than deleting the obligation because the credit request was denied.",
+      "distractorRationales": {
+        "A": "The copy obligation can continue when the transaction is not consummated.",
+        "B": "The waiver affects timing, not the underlying right to the completed valuation copy.",
+        "D": "The existing copy obligation does not depend on a new request from the applicant."
+      },
+      "remediation": {
+        "unitIds": [
+          "5C"
+        ],
+        "focus": "Distinguish appraisal rights, delivery timing and the credit decision."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1002/14/",
+          "locator": "12 CFR 1002.14(a)(1), including comment 14(a)(1)-4",
+          "supports": "A timing waiver does not waive valuation copies; termination of an application does not automatically remove the duty.",
+          "checkedOn": "2026-10-01",
+          "verificationStatus": "author_verified_official_source"
+        }
+      ],
+      "lessonSourceHash": "9f6cf7db3696d8344e9449edfcf9000ea9ae51ab201de70626938fab6dccbcdc",
+      "independenceNote": "New waived-timing/denied-file copy task; no CE notice or public formative case uses this scenario.",
+      "reviewStatus": "candidate_pending_independent_and_human_review"
+    },
+    {
+      "id": "PE-FIN-5C-02",
+      "unitId": "5C",
+      "moduleId": "PE05",
+      "category": "federal_law",
+      "objective": "Evaluate the content of a written incompleteness notice.",
+      "stem": "An ordinary consumer application lacks an applicant-provided explanation of a specific deposit, and the creditor cannot make a credit decision. A draft written incompleteness notice sets a reasonable response deadline and describes the consequence of no response, but says only “send whatever documents may be needed.” Assume the notice would be timely. What is the clearest remaining defect?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It must provide a fixed 90-day response period for every incomplete mortgage application."
+        },
+        {
+          "id": "B",
+          "text": "It does not specify the information needed to complete the application."
+        },
+        {
+          "id": "C",
+          "text": "It must instead say the applicant expressly withdrew the application."
+        },
+        {
+          "id": "D",
+          "text": "It must promise approval if the applicant responds before the deadline."
+        }
+      ],
+      "correctChoice": "B",
+      "rationale": "A compliant written incompleteness notice identifies the needed information, supplies a reasonable period and explains the consequence of nonresponse. The draft supplies two elements but not the specific request.",
+      "distractorRationales": {
+        "A": "The rule calls for a reasonable response period, not this universal 90-day period.",
+        "C": "The missing explanation and notice draft do not establish an express withdrawal.",
+        "D": "Providing missing information does not guarantee the credit outcome."
+      },
+      "remediation": {
+        "unitIds": [
+          "5C"
+        ],
+        "focus": "Match notice contents to the actual missing information and decision status."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1002/9/",
+          "locator": "12 CFR 1002.9(a), (b), (c) and official interpretations",
+          "supports": "Application-response notices must fit actual action and incompleteness; silence is not express withdrawal.",
+          "checkedOn": "2026-10-01",
+          "verificationStatus": "author_verified_official_source"
+        }
+      ],
+      "lessonSourceHash": "9f6cf7db3696d8344e9449edfcf9000ea9ae51ab201de70626938fab6dccbcdc",
+      "independenceNote": "New content-review of a timely but nonspecific notice; differs from CE F02’s completed-application response and the public one-call withdrawal scenario.",
+      "reviewStatus": "candidate_pending_independent_and_human_review"
+    },
+    {
+      "id": "PE-FIN-5D-01",
+      "unitId": "5D",
+      "moduleId": "PE05",
+      "category": "federal_law",
+      "objective": "Treat HOEPA and HPML as separate screens.",
+      "stem": "A compliance worksheet concludes that a principal-dwelling loan is below the applicable HPML APR-spread threshold. It then automatically marks the HOEPA points-and-fees test “not needed.” No HOEPA exemption or points-and-fees analysis is recorded. What correction is appropriate?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Mark the loan high-cost automatically because any omitted worksheet field proves the threshold is met."
+        },
+        {
+          "id": "B",
+          "text": "Keep the result because HOEPA can arise only when the HPML spread threshold is exceeded."
+        },
+        {
+          "id": "C",
+          "text": "Complete the separate HOEPA review; the negative HPML spread result does not resolve it."
+        },
+        {
+          "id": "D",
+          "text": "Use the note rate instead of APR to make both classifications disappear."
+        }
+      ],
+      "correctChoice": "C",
+      "rationale": "The two classifications have different coverage and tests. A negative HPML spread finding does not establish the result of a separately applicable HOEPA points-and-fees screen.",
+      "distractorRationales": {
+        "A": "Missing analysis does not establish the result of that analysis.",
+        "B": "HOEPA has its own coverage and alternative tests, including points and fees.",
+        "D": "Substituting the note rate is not the required coverage test."
+      },
+      "remediation": {
+        "unitIds": [
+          "5D"
+        ],
+        "focus": "Identify each rule’s coverage, comparison and exceptions without using a single global status."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/32/",
+          "locator": "12 CFR 1026.32(a)(1)",
+          "supports": "HOEPA high-cost coverage has separate APR, points-and-fees and prepayment-penalty tests.",
+          "checkedOn": "2026-10-01",
+          "verificationStatus": "author_verified_official_source"
+        },
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/35/",
+          "locator": "12 CFR 1026.35(a), (b), (c)",
+          "supports": "HPML uses its own definition and requirements; a separate classification and exception review is needed.",
+          "checkedOn": "2026-10-01",
+          "verificationStatus": "author_verified_official_source"
+        }
+      ],
+      "lessonSourceHash": "9f6cf7db3696d8344e9449edfcf9000ea9ae51ab201de70626938fab6dccbcdc",
+      "independenceNote": "New incorrectly skipped alternate HOEPA test; no annual dollar limit or source example is reused.",
+      "reviewStatus": "candidate_pending_independent_and_human_review"
+    },
+    {
+      "id": "PE-FIN-5D-02",
+      "unitId": "5D",
+      "moduleId": "PE05",
+      "category": "federal_law",
+      "objective": "Protect SAR confidentiality in consumer communications.",
+      "stem": "A covered mortgage company’s designated team has filed a SAR. An applicant asks the originator whether that happened and requests the report. No disclosure exception applies. Which response should the originator use?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Send the SAR because it concerns the applicant’s own transaction."
+        },
+        {
+          "id": "B",
+          "text": "Confirm that it exists but withhold the document because only its contents are confidential."
+        },
+        {
+          "id": "C",
+          "text": "Refer the inquiry to compliance without disclosing or confirming SAR status."
+        },
+        {
+          "id": "D",
+          "text": "Promise that no SAR was filed so the applicant will not worry."
+        }
+      ],
+      "correctChoice": "C",
+      "rationale": "The rule protects both a SAR and information that would reveal its existence, subject to specified exceptions. Staff can refer the inquiry without confirming, sharing or falsely denying the report.",
+      "distractorRationales": {
+        "A": "The subject’s interest in the transaction does not remove SAR confidentiality.",
+        "B": "Information revealing the existence of a SAR is also protected.",
+        "D": "A false assurance is not an appropriate way to preserve confidentiality."
+      },
+      "remediation": {
+        "unitIds": [
+          "5D"
+        ],
+        "focus": "Separate ordinary underlying facts from confidential reporting status and use authorized escalation."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1029#p-1029.320(d)",
+          "locator": "31 CFR 1029.320(d)(1)",
+          "supports": "SARs and information revealing their existence are confidential, subject to the specified exceptions.",
+          "checkedOn": "2026-10-01",
+          "verificationStatus": "author_verified_official_source"
+        }
+      ],
+      "lessonSourceHash": "9f6cf7db3696d8344e9449edfcf9000ea9ae51ab201de70626938fab6dccbcdc",
+      "independenceNote": "New direct request for an already-filed SAR; not a public discrepancy exercise or CE identity-distribution-list case.",
+      "reviewStatus": "candidate_pending_independent_and_human_review"
+    },
+    {
+      "id": "PE-FIN-6A-01",
+      "unitId": "6A",
+      "moduleId": "PE06",
+      "category": "ethics",
+      "objective": "Reject an automatic part-time income discount while permitting individual review.",
+      "stem": "A reviewer’s worksheet accepts the applicant-specific documentation and probable continuance of $2,900 monthly part-time earnings, but then cuts the amount in half solely because the job is part-time. There is no other reason for the reduction. What is the appropriate correction?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Require a full-time coapplicant before considering any of these earnings."
+        },
+        {
+          "id": "B",
+          "text": "Count every amount the applicant reports without evaluating its support or continuance."
+        },
+        {
+          "id": "C",
+          "text": "Remove the blanket discount and evaluate this applicant’s supported income evidence."
+        },
+        {
+          "id": "D",
+          "text": "Retain the discount because part-time earnings are always less reliable by definition."
+        }
+      ],
+      "correctChoice": "C",
+      "rationale": "Section 1002.6(b)(5) prohibits discounting or excluding income because it derives from part-time employment, while allowing review of amount and probable continuance. The facts stipulate that no independent reason supports this reduction.",
+      "distractorRationales": {
+        "A": "That adds an unsupported condition instead of evaluating the applicant’s actual evidence.",
+        "B": "Correcting the prohibited shortcut does not eliminate legitimate income analysis.",
+        "D": "Regulation B does not permit automatic discounting on that basis."
+      },
+      "remediation": {
+        "unitIds": [
+          "6A"
+        ],
+        "focus": "Use evidence about the individual income source, not a blanket rule about its label."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1002/6/",
+          "locator": "12 CFR 1002.6(b)(3), (b)(5) and comments 6(b)(5)-1 through -4",
+          "supports": "Individual income analysis; no automatic exclusion because income is part-time or retirement income.",
+          "checkedOn": "2026-10-01",
+          "verificationStatus": "author_verified_official_source"
+        }
+      ],
+      "lessonSourceHash": "dcc18417330a58e0f05c86de887bdf79dba1324ed6aa964c5b5a2bf9279c270c",
+      "independenceNote": "New arithmetic haircut imposed after a supported part-time review; not the public sex-based extra conditions or CE exception/cosigner cases.",
+      "reviewStatus": "candidate_pending_independent_and_human_review"
+    },
+    {
+      "id": "PE-FIN-6A-02",
+      "unitId": "6A",
+      "moduleId": "PE06",
+      "category": "ethics",
+      "objective": "Distinguish prohibited family-planning questions from neutral financial questions.",
+      "stem": "A team revises its application script to ask every applicant, regardless of sex or marital status, “Do you intend to have or raise children during the next five years?” The manager says identical wording for everyone makes the question acceptable. What is the correct review?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Keep the question because equal wording cures any restriction on the information requested."
+        },
+        {
+          "id": "B",
+          "text": "Keep the question if applicants sign a form accepting the lender’s privacy notice."
+        },
+        {
+          "id": "C",
+          "text": "Keep it as an optional question because an applicant can choose not to answer."
+        },
+        {
+          "id": "D",
+          "text": "Remove this family-planning question; asking it uniformly does not make it permissible."
+        }
+      ],
+      "correctChoice": "D",
+      "rationale": "Regulation B prohibits inquiries about intentions to bear or rear children. Neutral questions about actual dependents or related financial obligations have a separate permitted scope; a family-planning question is not that inquiry.",
+      "distractorRationales": {
+        "A": "A prohibited inquiry does not become permissible merely because it is applied consistently.",
+        "B": "A privacy notice does not authorize this prohibited inquiry.",
+        "C": "Making this prohibited inquiry optional does not change the information it asks for."
+      },
+      "remediation": {
+        "unitIds": [
+          "6A"
+        ],
+        "focus": "Separate equal application of a rule from whether the rule itself is lawful."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1002/5/",
+          "locator": "12 CFR 1002.5(d)(2)-(3)",
+          "supports": "Support-income disclosure and prohibited childbearing/childrearing inquiries; neutral financial inquiries have separate treatment.",
+          "checkedOn": "2026-10-01",
+          "verificationStatus": "author_verified_official_source"
+        }
+      ],
+      "lessonSourceHash": "dcc18417330a58e0f05c86de887bdf79dba1324ed6aa964c5b5a2bf9279c270c",
+      "independenceNote": "New uniformly applied family-planning script; unlike the public stereotyped treatment case and the CE uniformly imposed cosigner case.",
+      "reviewStatus": "candidate_pending_independent_and_human_review"
+    },
+    {
+      "id": "PE-FIN-6B-01",
+      "unitId": "6B",
+      "moduleId": "PE06",
+      "category": "ethics",
+      "objective": "Request a factual valuation correction without pressuring the conclusion.",
+      "stem": "For a covered principal-dwelling transaction, a floor plan and a city record indicate that the appraiser may have transposed two room measurements. The lender has not established a different value. Which request best preserves valuation independence?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Submit the measurement evidence through the approved independent appraisal-review process."
+        },
+        {
+          "id": "B",
+          "text": "Require a higher value before paying the otherwise earned appraisal fee."
+        },
+        {
+          "id": "C",
+          "text": "Edit the appraiser’s value to match the contract price and then request acknowledgment."
+        },
+        {
+          "id": "D",
+          "text": "Order that the appraiser disregard all comparable sales below the requested loan-supporting value."
+        }
+      ],
+      "correctChoice": "A",
+      "rationale": "The regulation permits appropriate additional property information, requests for explanation and correction of errors. The supported action addresses the identified facts without demanding a particular value.",
+      "distractorRationales": {
+        "B": "Conditioning payment on a target conclusion improperly pressures independent judgment.",
+        "C": "The lender cannot manufacture the appraiser’s professional conclusion by altering it.",
+        "D": "That directs a desired result rather than presenting appropriate factual information."
+      },
+      "remediation": {
+        "unitIds": [
+          "6B"
+        ],
+        "focus": "Present evidence and questions while preserving the appraiser’s independent judgment."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/42/",
+          "locator": "12 CFR 1026.42(c)(1)-(3)",
+          "supports": "Protect independent valuation; relevant factual correction requests are distinguishable from pressure for a target value.",
+          "checkedOn": "2026-10-01",
+          "verificationStatus": "author_verified_official_source"
+        }
+      ],
+      "lessonSourceHash": "dcc18417330a58e0f05c86de887bdf79dba1324ed6aa964c5b5a2bf9279c270c",
+      "independenceNote": "New transposed-measurement review request; not CE material alteration/invented comparable cases or the public sales-price pressure example.",
+      "reviewStatus": "candidate_pending_independent_and_human_review"
+    },
+    {
+      "id": "PE-FIN-6B-02",
+      "unitId": "6B",
+      "moduleId": "PE06",
+      "category": "ethics",
+      "objective": "Limit access to borrower evidence to a continuing legitimate business need.",
+      "stem": "A covered nonbank lender’s tax-return verifier has completed the assigned review and moved to a role with no need for that borrower’s records. The old access remains enabled. A manager says the verifier’s confidentiality agreement, encryption and multifactor login make any access review unnecessary. What is the sound control decision?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Keep access while disabling downloads, because electronic viewing without a download cannot expose information."
+        },
+        {
+          "id": "B",
+          "text": "Keep all prior access indefinitely because the verifier was once authorized to examine the records."
+        },
+        {
+          "id": "C",
+          "text": "Review only the confidentiality agreement; a current signature eliminates the need to reassess permissions."
+        },
+        {
+          "id": "D",
+          "text": "Review and remove access that no longer has a legitimate business need under the approved process."
+        }
+      ],
+      "correctChoice": "D",
+      "rationale": "The FTC guide requires covered institutions to implement and periodically review access controls, including continuing legitimate business need. Authentication and encryption help secure access, but do not independently justify retaining unnecessary permissions.",
+      "distractorRationales": {
+        "A": "Viewing still provides access to customer information even when downloading is restricted.",
+        "B": "A past assignment does not establish a continuing business need for access.",
+        "C": "A confidentiality undertaking does not replace the required access-control review."
+      },
+      "remediation": {
+        "unitIds": [
+          "6B"
+        ],
+        "focus": "Keep verification work bounded by purpose and current authorized access, not merely technical security."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.ftc.gov/business-guidance/resources/ftc-safeguards-rule-what-your-business-needs-know",
+          "locator": "Reasonable security program, item c.1: access controls and legitimate business need",
+          "supports": "Covered institutions implement and periodically review access controls; authentication and encryption do not replace business-need review.",
+          "checkedOn": "2026-10-01",
+          "verificationStatus": "author_verified_official_source"
+        }
+      ],
+      "lessonSourceHash": "dcc18417330a58e0f05c86de887bdf79dba1324ed6aa964c5b5a2bf9279c270c",
+      "independenceNote": "New completed-assignment/stale-access scenario; no competing payroll, source-mismatch, insecure-transfer or vendor-contract case is reused.",
+      "reviewStatus": "candidate_pending_independent_and_human_review"
+    },
+    {
+      "id": "PE-FIN-6C-01",
+      "unitId": "6C",
+      "moduleId": "PE06",
+      "category": "ethics",
+      "objective": "Explain the tradeoff behind a lender credit without a no-cost claim.",
+      "stem": "A consumer can choose between otherwise matched quotes. One carries a $2,600 lender credit in exchange for a higher note rate, with no costs financed into principal. A sales draft says the credit makes the refinancing “free for as long as you keep it.” What explanation should replace that statement?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The credit guarantees a lower APR because money is paid toward closing costs."
+        },
+        {
+          "id": "B",
+          "text": "The credit reduces upfront cash, while the higher rate affects later costs; compare both over the consumer’s likely holding period."
+        },
+        {
+          "id": "C",
+          "text": "The credit removes the refinancing cost because the loan balance is unchanged."
+        },
+        {
+          "id": "D",
+          "text": "The higher rate does not matter once the credit is accepted at closing."
+        }
+      ],
+      "correctChoice": "B",
+      "rationale": "A rate-linked lender credit shifts how costs are paid. Explaining that tradeoff and using a common holding-period comparison is more informative than presenting reduced upfront cash as permanent cost elimination.",
+      "distractorRationales": {
+        "A": "The actual cash flows and applicable charges determine APR; the credit alone does not guarantee that result.",
+        "C": "An unchanged principal does not eliminate the higher interest cost over time.",
+        "D": "The rate continues to affect the loan’s interest and payments."
+      },
+      "remediation": {
+        "unitIds": [
+          "6C"
+        ],
+        "focus": "Explain who pays now, what changes later and which comparison assumptions matter."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.consumerfinance.gov/ask-cfpb/how-should-i-use-lender-credits-and-points-also-called-discount-points-en-136/",
+          "locator": "Points; Lender credits; Compare loan offers",
+          "supports": "Points are percentages of loan amount and credits trade upfront costs against other loan terms.",
+          "checkedOn": "2026-10-01",
+          "verificationStatus": "author_verified_official_source"
+        },
+        {
+          "url": "https://www.consumerfinance.gov/ask-cfpb/what-is-the-difference-between-a-mortgage-interest-rate-and-an-apr-en-135/",
+          "locator": "Mortgage APR; adjustable-rate comparison warning",
+          "supports": "APR is a broader credit-cost measure and does not predict an ARM maximum rate.",
+          "checkedOn": "2026-10-01",
+          "verificationStatus": "author_verified_official_source"
+        }
+      ],
+      "lessonSourceHash": "dcc18417330a58e0f05c86de887bdf79dba1324ed6aa964c5b5a2bf9279c270c",
+      "independenceNote": "New misleading lifetime-free claim about a rate-linked credit, not the public incomplete-payment script or CE steering cases.",
+      "reviewStatus": "candidate_pending_independent_and_human_review"
+    },
+    {
+      "id": "PE-FIN-6C-02",
+      "unitId": "6C",
+      "moduleId": "PE06",
+      "category": "ethics",
+      "objective": "Compare complete monthly housing costs rather than isolated P&I.",
+      "stem": "Two fictional quotes have the same purpose and borrower priorities. Quote Vale has monthly P&I $1,940, taxes $360, insurance $125 and dues $95. Quote Ridge has P&I $2,050, taxes $275, insurance $105 and dues $85. These are all monthly housing costs for this comparison; some are paid outside escrow. Which statement is accurate?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Vale totals $2,520 and Ridge $2,515; Vale’s lower P&I does not make its complete monthly total lower."
+        },
+        {
+          "id": "B",
+          "text": "Vale totals $2,425 and Ridge $2,430 because association dues do not belong in a housing-cost comparison."
+        },
+        {
+          "id": "C",
+          "text": "Compare only escrowed expenses because directly paid bills are outside monthly housing cost."
+        },
+        {
+          "id": "D",
+          "text": "Vale is $110 cheaper monthly because only the P&I difference matters."
+        }
+      ],
+      "correctChoice": "A",
+      "rationale": "Vale totals $1,940 + $360 + $125 + $95 = $2,520. Ridge totals $2,050 + $275 + $105 + $85 = $2,515. These totals support an honest comparison without deciding which entire loan is best.",
+      "distractorRationales": {
+        "B": "The exercise expressly includes the recurring dues in complete housing cost.",
+        "C": "The collection route does not remove a recurring cost from this complete housing comparison.",
+        "D": "This omits the other stipulated monthly housing costs."
+      },
+      "remediation": {
+        "unitIds": [
+          "6C"
+        ],
+        "focus": "Include all stated recurring housing expenses whether or not the lender escrows them."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.consumerfinance.gov/owning-a-home/closing-disclosure/",
+          "locator": "Cash to Close; Calculating Cash to Close; projected payments",
+          "supports": "Cash to close accounts for transaction amounts, credits and prior payments; P&I differs from total housing costs.",
+          "checkedOn": "2026-10-01",
+          "verificationStatus": "author_verified_official_source"
+        }
+      ],
+      "lessonSourceHash": "dcc18417330a58e0f05c86de887bdf79dba1324ed6aa964c5b5a2bf9279c270c",
+      "independenceNote": "Original cross-quote cost comparison with offsetting taxes and dues; not CE ATR escrow omission or a renamed public teaser-payment example.",
+      "reviewStatus": "candidate_pending_independent_and_human_review"
+    },
+    {
+      "id": "PE-FIN-7A-01",
+      "unitId": "7A",
+      "moduleId": "PE07",
+      "category": "nontraditional",
+      "objective": "Apply contractual ARM caps and distinguish percentage points.",
+      "stem": "At a hypothetical ARM’s first reset, the current rate is 5.25%, the contractual index observation is 5.40%, and the margin is 2.25 percentage points. The first-reset increase is capped at 1.50 percentage points. The lifetime ceiling is 10.25%; no floor, rounding or carryover affects this reset. What rate applies at this reset?",
+      "options": [
+        {
+          "id": "A",
+          "text": "7.65%."
+        },
+        {
+          "id": "B",
+          "text": "5.33%."
+        },
+        {
+          "id": "C",
+          "text": "6.75%."
+        },
+        {
+          "id": "D",
+          "text": "10.25%."
+        }
+      ],
+      "correctChoice": "C",
+      "rationale": "Index plus margin gives 7.65%. The first-reset ceiling is 5.25% + 1.50 percentage points = 6.75%, which binds before the higher lifetime ceiling. This is a contractual reset, not an ATR qualifying-rate calculation.",
+      "distractorRationales": {
+        "A": "This is index plus margin before applying the binding first-reset cap.",
+        "B": "This approximately multiplies the old rate by 1.015 instead of adding 1.50 percentage points.",
+        "D": "A lifetime maximum does not require the first reset to jump directly to that maximum."
+      },
+      "remediation": {
+        "unitIds": [
+          "7A"
+        ],
+        "focus": "Apply the actual reset cap after index plus margin; distinguish it from the qualifying-rate rule."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.consumerfinance.gov/ask-cfpb/for-an-adjustable-rate-mortgage-arm-what-are-the-index-and-margin-and-how-do-they-work-en-1949/",
+          "locator": "Index and margin; rate cap explanation",
+          "supports": "Contract index plus margin and rate caps determine a reset, subject to the actual contract.",
+          "checkedOn": "2026-10-01",
+          "verificationStatus": "author_verified_official_source"
+        }
+      ],
+      "lessonSourceHash": "71da1ae3af8b67a60c739b8029ec274dd88c53cb16cad0d8ef028201359bc1bb",
+      "independenceNote": "Original first-reset cap computation, explicitly different from CE N04’s general-ATR greater-of-rate question and public reset inputs.",
+      "reviewStatus": "candidate_pending_independent_and_human_review"
+    },
+    {
+      "id": "PE-FIN-7A-02",
+      "unitId": "7A",
+      "moduleId": "PE07",
+      "category": "nontraditional",
+      "objective": "Infer an applied payment from balance movement and find the payment that stops further negative amortization.",
+      "stem": "A fictional loan ledger starts a month at $200,000 and ends it at $200,800 after one payment was applied. Interest for the month is 0.75% of the opening balance, and any unpaid interest is added to principal after the payment. No fees, draws, principal adjustments or other transactions occur. The payment field is missing. For the next month, the same monthly rate and method apply to the new opening balance. Which pair gives the missing first payment and the smallest next payment that would prevent any further balance increase?",
+      "options": [
+        {
+          "id": "A",
+          "text": "$800 was applied; the next payment must be at least $1,500."
+        },
+        {
+          "id": "B",
+          "text": "$700 was applied; the next payment must be at least $1,506."
+        },
+        {
+          "id": "C",
+          "text": "$1,500 was applied; the next payment must be at least $1,506."
+        },
+        {
+          "id": "D",
+          "text": "$700 was applied; the next payment must be at least $1,500."
+        }
+      ],
+      "correctChoice": "B",
+      "rationale": "First-month interest is $200,000 × 0.0075 = $1,500. The $800 balance increase is unpaid interest, so the missing payment was $1,500 − $800 = $700. Next-month interest is $200,800 × 0.0075 = $1,506. Paying exactly $1,506 stops additional growth but does not reduce the already-capitalized balance; paying only $1,500 would add another $6.",
+      "distractorRationales": {
+        "A": "This mistakes the $800 balance increase for the payment and then computes next-month interest on the old balance.",
+        "C": "A $1,500 first payment would have paid all first-month interest and left the balance at $200,000, contradicting the ledger.",
+        "D": "The missing payment is correct, but $1,500 leaves $6 of next-month interest unpaid because the opening balance is now $200,800."
+      },
+      "remediation": {
+        "unitIds": [
+          "7A"
+        ],
+        "focus": "Reverse the balance equation to recover an unknown payment, then use the capitalized balance to distinguish stopping growth from reducing principal."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.consumerfinance.gov/ask-cfpb/what-is-negative-amortization-en-103/",
+          "locator": "Negative amortization definition",
+          "supports": "Unpaid interest can be capitalized and itself bear interest; paying all current interest prevents further interest-driven growth under the stated no-other-transactions assumptions.",
+          "checkedOn": "2026-10-01",
+          "verificationStatus": "author_verified_official_source"
+        }
+      ],
+      "lessonSourceHash": "71da1ae3af8b67a60c739b8029ec274dd88c53cb16cad0d8ef028201359bc1bb",
+      "independenceNote": "Reverse inference plus a prospective payment threshold, rather than a forward balance calculation after a fixed number of minimum payments. The public negative-amortization recurrence supplies payments and asks for a later balance; this ledger omits a payment and asks how to stop growth next month. No CE qualifying-payment or rate-classification scenario is reused.",
+      "reviewStatus": "candidate_pending_independent_and_human_review"
+    },
+    {
+      "id": "PE-FIN-7B-01",
+      "unitId": "7B",
+      "moduleId": "PE07",
+      "category": "nontraditional",
+      "objective": "Separate business receipts, borrowed funds, expenses and ownership.",
+      "stem": "For a hypothetical alternative-documentation analysis, the authorized method accepts $162,000 of annual business deposits, of which $12,000 is an internal transfer and $9,000 is loan proceeds. Accepted expenses are $69,000 after removing those non-revenue deposits. The applicant owns 75% of the resulting earnings; there are no other adjustments or distributions to add. What monthly amount does this stipulated method produce?",
+      "options": [
+        {
+          "id": "A",
+          "text": "$10,125."
+        },
+        {
+          "id": "B",
+          "text": "$4,500."
+        },
+        {
+          "id": "C",
+          "text": "$3,062.50."
+        },
+        {
+          "id": "D",
+          "text": "$6,000."
+        }
+      ],
+      "correctChoice": "B",
+      "rationale": "($162,000 − $12,000 − $9,000 − $69,000) × 0.75 ÷ 12 = $4,500. The accepted expenses and ownership method are exercise facts, not a universal program rule or a loan approval.",
+      "distractorRationales": {
+        "A": "This allocates ownership to gross deposits without removing transfers, borrowing or expenses.",
+        "C": "This applies ownership to receipts before subtracting all expenses, rather than to the resulting earnings.",
+        "D": "This removes the specified non-revenue items and expenses but ignores the 75% ownership allocation."
+      },
+      "remediation": {
+        "unitIds": [
+          "7B"
+        ],
+        "focus": "Classify deposits and expenses before applying ownership and converting the accepted result to monthly income."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/43/",
+          "locator": "12 CFR 1026.43(c)(2)-(4), including comments 43(c)(3)-2 through -6",
+          "supports": "Covered general-ATR factors and reasonably reliable verification; numerical methods and company screens are stipulated.",
+          "checkedOn": "2026-10-01",
+          "verificationStatus": "author_verified_official_source"
+        },
+        {
+          "url": "https://selling-guide.fanniemae.com/sel/b3-3.1-01/general-income-information",
+          "locator": "B3-3.1-01, Stable and Predictable Income; Continuity of Income",
+          "supports": "Income needs a supported source, history and continuance analysis rather than a deposit-only total.",
+          "checkedOn": "2026-10-01",
+          "verificationStatus": "author_verified_official_source"
+        }
+      ],
+      "lessonSourceHash": "71da1ae3af8b67a60c739b8029ec274dd88c53cb16cad0d8ef028201359bc1bb",
+      "independenceNote": "Original minority-share earnings calculation; different ownership structure and task from public sole-owner ledgers and CE double-counted distributions.",
+      "reviewStatus": "candidate_pending_independent_and_human_review"
+    },
+    {
+      "id": "PE-FIN-7B-02",
+      "unitId": "7B",
+      "moduleId": "PE07",
+      "category": "nontraditional",
+      "objective": "Use the remaining amortization period in a covered interest-only ATR review.",
+      "stem": "A covered general-ATR loan has a 30-year total term and ten years of interest-only payments. The worksheet has already selected the correct regulatory rate and principal balance. It then calculates the post-interest-only qualifying payment by amortizing over another 30 years. No special exception applies. What term correction is needed?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Use the 20 years remaining after the interest-only period, rather than restarting the original term."
+        },
+        {
+          "id": "B",
+          "text": "Use ten years because the length of the interest-only period is also the repayment period."
+        },
+        {
+          "id": "C",
+          "text": "Keep 30 years because the original note used that number."
+        },
+        {
+          "id": "D",
+          "text": "Use only the monthly interest because the first ten years contain no scheduled principal."
+        }
+      ],
+      "correctChoice": "A",
+      "rationale": "Section 1026.43(c)(5)(ii)(B) addresses interest-only loans using substantially equal payments that repay principal over the term remaining after that period. Thirty years minus ten leaves twenty years, or 240 monthly payments.",
+      "distractorRationales": {
+        "B": "The interest-only period is elapsed time, not the remaining amortization term.",
+        "C": "Restarting the full term understates the payment needed over the actual remaining term.",
+        "D": "The applicable general-ATR interest-only method includes principal repayment after the deferral period."
+      },
+      "remediation": {
+        "unitIds": [
+          "7B"
+        ],
+        "focus": "Separate initial cash payment from the feature-specific regulatory qualifying payment."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/43/",
+          "locator": "12 CFR 1026.43(c)(5)(i), (c)(5)(ii)(B)",
+          "supports": "Covered general-ATR interest-only payment considers principal repayment over the term remaining after the interest-only period.",
+          "checkedOn": "2026-10-01",
+          "verificationStatus": "author_verified_official_source"
+        }
+      ],
+      "lessonSourceHash": "71da1ae3af8b67a60c739b8029ec274dd88c53cb16cad0d8ef028201359bc1bb",
+      "independenceNote": "New remaining-term error with a ten-year deferral; no public five-year numerical case or CE negative-amortization maximum-balance case is reused.",
+      "reviewStatus": "candidate_pending_independent_and_human_review"
+    },
+    {
+      "id": "PE-FIN-7C-01",
+      "unitId": "7C",
+      "moduleId": "PE07",
+      "category": "nontraditional",
+      "objective": "Explain reverse-mortgage obligations without promising a payment-free home.",
+      "stem": "A homeowner considering a reverse mortgage says, “If no monthly mortgage payment is required, I can stop paying property taxes and insurance.” The originator is not conducting a complete HECM eligibility review. Which answer is appropriate?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Those bills are automatically covered forever whenever the loan is called a HECM."
+        },
+        {
+          "id": "B",
+          "text": "Those bills stop because all reverse mortgages replace the homeowner’s property obligations."
+        },
+        {
+          "id": "C",
+          "text": "Those duties continue; have the qualified specialist confirm the product’s property conditions."
+        },
+        {
+          "id": "D",
+          "text": "The obligations continue only if the reverse-mortgage lender collects them through escrow."
+        }
+      ],
+      "correctChoice": "C",
+      "rationale": "Reverse mortgages have ongoing property and occupancy duties even when no monthly mortgage payment is required. The competent response states that boundary and directs the specific program and household questions to specialist review.",
+      "distractorRationales": {
+        "A": "The program label does not establish that all future charges will be covered.",
+        "B": "The absence of a monthly mortgage payment does not remove those obligations.",
+        "D": "Direct payment of property bills does not remove the obligation to keep them current."
+      },
+      "remediation": {
+        "unitIds": [
+          "7C"
+        ],
+        "focus": "Distinguish no monthly mortgage payment from no continuing homeownership duties."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.consumerfinance.gov/ask-cfpb/what-is-a-reverse-mortgage-en-224/",
+          "locator": "How reverse mortgages work; borrower obligations",
+          "supports": "No monthly mortgage payment does not remove taxes, insurance, maintenance and occupancy obligations.",
+          "checkedOn": "2026-10-01",
+          "verificationStatus": "author_verified_official_source"
+        }
+      ],
+      "lessonSourceHash": "71da1ae3af8b67a60c739b8029ec274dd88c53cb16cad0d8ef028201359bc1bb",
+      "independenceNote": "New homeowner plan to stop property charges, not the public interest-only rewrite or CE refinance-promise case.",
+      "reviewStatus": "candidate_pending_independent_and_human_review"
+    },
+    {
+      "id": "PE-FIN-7C-02",
+      "unitId": "7C",
+      "moduleId": "PE07",
+      "category": "nontraditional",
+      "objective": "Reconcile HELOC draws, principal repayment and a rate change before interpreting a lower payment.",
+      "stem": "A fictional HELOC remains in its draw period with a $60,000 limit. Last month its $36,000 drawn balance accrued interest at 9.00% annually and the $270 interest-only payment was paid in full. Before the next monthly period begins, a $6,000 principal repayment and a permitted $10,000 new draw both post, and the annual rate changes to 7.50%. For this exercise, each period’s interest-only payment equals its opening drawn balance × annual rate ÷ 12. No fees, other transactions or within-period changes apply. A draft explanation says, “The lower rate and principal repayment mean both the debt and the required payment will fall.” Which corrected pair should replace that statement?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The drawn balance rises to $40,000 and the required payment rises to $300."
+        },
+        {
+          "id": "B",
+          "text": "The drawn balance falls to $30,000 and the required payment falls to $187.50."
+        },
+        {
+          "id": "C",
+          "text": "The drawn balance rises to $40,000 while the required payment falls to $250."
+        },
+        {
+          "id": "D",
+          "text": "The drawn balance rises to $60,000 while the required payment becomes $375."
+        }
+      ],
+      "correctChoice": "C",
+      "rationale": "The updated drawn balance is $36,000 − $6,000 + $10,000 = $40,000. Its interest-only payment is $40,000 × 0.075 ÷ 12 = $250. The rate decrease therefore lowers the payment by $20 even though net borrowing raises principal by $4,000. The $60,000 limit is not the drawn balance. These are stipulated cash flows, not a universal HELOC payment method or a required disclosure example.",
+      "distractorRationales": {
+        "A": "The balance is reconciled correctly, but $40,000 × 0.09 ÷ 12 = $300 preserves the obsolete annual rate.",
+        "B": "This applies the principal repayment but omits the posted $10,000 draw; $30,000 × 0.075 ÷ 12 = $187.50.",
+        "D": "This substitutes the credit limit for the drawn balance and calculates interest on undrawn capacity: $60,000 × 0.075 ÷ 12 = $375."
+      },
+      "remediation": {
+        "unitIds": [
+          "7C"
+        ],
+        "focus": "Update both the drawn balance and the rate; a smaller interest-only payment does not establish a smaller debt."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/40/",
+          "locator": "12 CFR 1026.40(d)(5)(ii), comment 40(d)(5)(iii)-2.i, and 1026.40(d)(12)(i)",
+          "supports": "HELOC payment methods are plan-specific; interest-only draw-period payments and payment changes from variable rates are recognized. The transaction sequence and monthly method are fictional, not a mandated disclosure calculation.",
+          "checkedOn": "2026-10-01",
+          "verificationStatus": "author_verified_official_source"
+        }
+      ],
+      "lessonSourceHash": "71da1ae3af8b67a60c739b8029ec274dd88c53cb16cad0d8ef028201359bc1bb",
+      "independenceNote": "Changed-fact draw-period ledger and misleading-explanation repair. Unlike public W7C and the baseline candidate, there is no end-of-draw transition, amortization formula or unchanged-rate payment shock. The task separates three posted changes and explains why payment and debt move in opposite directions; no CE case supplies this structure.",
+      "reviewStatus": "candidate_pending_independent_and_human_review"
+    },
+    {
+      "id": "PE-FIN-8A-01",
+      "unitId": "8A",
+      "moduleId": "PE08",
+      "category": "elective",
+      "objective": "Build an integrated calculation from accepted rather than reported income.",
+      "stem": "In a new integrated file, the accepted record contains $2,375 gross semimonthly pay and $1,150 monthly pension income. A separate $600 monthly rental projection is reported but not accepted. The approved calculation inputs are $2,210 housing expense and $490 other monthly debt. What income and total DTI belong in the current worksheet, with the final ratio rounded to two decimals?",
+      "options": [
+        {
+          "id": "A",
+          "text": "$6,295.83 monthly income and 42.89% total DTI."
+        },
+        {
+          "id": "B",
+          "text": "$6,500 monthly income and 41.54% total DTI."
+        },
+        {
+          "id": "C",
+          "text": "$4,750 monthly income and 56.84% total DTI."
+        },
+        {
+          "id": "D",
+          "text": "$5,900 monthly income and 45.76% total DTI."
+        }
+      ],
+      "correctChoice": "D",
+      "rationale": "$2,375 × 24 ÷ 12 + $1,150 = $5,900. ($2,210 + $490) ÷ $5,900 × 100 = 45.76%. The reported projection remains separately documented and excluded until the required review; this calculation is not a full approval.",
+      "distractorRationales": {
+        "A": "This incorrectly treats semimonthly base pay as 26 rather than 24 payments annually.",
+        "B": "This includes the unaccepted rental projection.",
+        "C": "This omits the pension income that the authorized review has already accepted."
+      },
+      "remediation": {
+        "unitIds": [
+          "8A"
+        ],
+        "focus": "Use accepted source-specific income, the actual pay frequency and all included obligations."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/43/",
+          "locator": "12 CFR 1026.43(c)(2)-(4), including comments 43(c)(3)-2 through -6",
+          "supports": "Covered general-ATR factors and reasonably reliable verification; numerical methods and company screens are stipulated.",
+          "checkedOn": "2026-10-01",
+          "verificationStatus": "author_verified_official_source"
+        },
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1002/6/",
+          "locator": "12 CFR 1002.6(b)(3), (b)(5) and comments 6(b)(5)-1 through -4",
+          "supports": "Individual income analysis; no automatic exclusion because income is part-time or retirement income.",
+          "checkedOn": "2026-10-01",
+          "verificationStatus": "author_verified_official_source"
+        }
+      ],
+      "lessonSourceHash": "b2c8ff0f9359b47145f1cb1ac1d952c7d4c563e028c34ec6c83a1e012ceede42",
+      "independenceNote": "New integrated file with a rental projection and different accepted figures; no Linden identity, property, amounts or answer choices are reused.",
+      "reviewStatus": "candidate_pending_independent_and_human_review"
+    },
+    {
+      "id": "PE-FIN-8A-02",
+      "unitId": "8A",
+      "moduleId": "PE08",
+      "category": "elective",
+      "objective": "Match acceptance to its stated evidentiary purpose.",
+      "stem": "For an integrated purchase file, an authorized reviewer accepts a bank record as proof that $14,000 arrived on a certain day. The decision expressly leaves whether the funds are a gift or a repayable loan unresolved. A checklist proposes marking “eligible closing funds accepted” from that same decision. What is the best correction?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Treat the entire bank record as unusable because one related question remains open."
+        },
+        {
+          "id": "B",
+          "text": "Treat the $14,000 as a gift because the record does not itself show a repayment schedule."
+        },
+        {
+          "id": "C",
+          "text": "Keep the arrival established; route the separate source, debt and eligibility questions."
+        },
+        {
+          "id": "D",
+          "text": "Accept eligibility because an authorized reviewer accepted the bank record for any purpose."
+        }
+      ],
+      "correctChoice": "C",
+      "rationale": "An evidence decision has a scope. The accepted arrival can remain in the source map while the separate funds-source and possible-debt questions are routed without assuming either a gift or a loan.",
+      "distractorRationales": {
+        "A": "A record can reliably establish an arrival while leaving source and eligibility questions unresolved.",
+        "B": "Absence of a schedule in this record does not establish that no repayment is required.",
+        "D": "Acceptance for one factual purpose does not establish every other use of the record."
+      },
+      "remediation": {
+        "unitIds": [
+          "8A"
+        ],
+        "focus": "Preserve what a record proves and identify precisely which decision remains open."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/43/",
+          "locator": "12 CFR 1026.43(c)(2)-(4), including comments 43(c)(3)-2 through -6",
+          "supports": "Covered general-ATR factors and reasonably reliable verification; numerical methods and company screens are stipulated.",
+          "checkedOn": "2026-10-01",
+          "verificationStatus": "author_verified_official_source"
+        },
+        {
+          "url": "https://myhome.freddiemac.com/blog/homebuying/mortgage-underwriting",
+          "locator": "What Is Underwriting; Gathering and Verifying; Putting It All Together",
+          "supports": "Underwriting reviews borrower and property facts; case-specific delegated authority is a stated teaching assumption.",
+          "checkedOn": "2026-10-01",
+          "verificationStatus": "author_verified_official_source"
+        }
+      ],
+      "lessonSourceHash": "b2c8ff0f9359b47145f1cb1ac1d952c7d4c563e028c34ec6c83a1e012ceede42",
+      "independenceNote": "New scoped-acceptance error; unlike the public Linden unreviewed transfer and CE accepted-insurance duplicate-request case.",
+      "reviewStatus": "candidate_pending_independent_and_human_review"
+    },
+    {
+      "id": "PE-FIN-8B-01",
+      "unitId": "8B",
+      "moduleId": "PE08",
+      "category": "elective",
+      "objective": "Recalculate both sides of DTI after two verified late changes.",
+      "stem": "An integrated file used $7,900 accepted monthly income, $2,700 housing expense and $520 other obligations. Before release, the underwriter accepts a $700 monthly income reduction and a new included $240 monthly debt. No other input changes. The fictional company screen is a maximum 47.00%, not a law or program maximum. What updated result should be routed?",
+      "options": [
+        {
+          "id": "A",
+          "text": "48.06%; the updated file exceeds the stipulated company screen and needs the authorized disposition."
+        },
+        {
+          "id": "B",
+          "text": "44.72%; the file remains below the screen."
+        },
+        {
+          "id": "C",
+          "text": "40.76%; the earlier ratio can remain because it was previously accepted."
+        },
+        {
+          "id": "D",
+          "text": "43.80%; the file remains below the screen."
+        }
+      ],
+      "correctChoice": "A",
+      "rationale": "Updated income is $7,200 and included obligations total $3,460. $3,460 ÷ $7,200 × 100 = 48.06%. A screen result is not itself a denial notice or full credit decision; route the current evidence and required disposition.",
+      "distractorRationales": {
+        "B": "This reduces income but omits the new debt.",
+        "C": "This preserves both stale inputs despite the accepted changes.",
+        "D": "This adds the new debt but keeps the obsolete $7,900 income."
+      },
+      "remediation": {
+        "unitIds": [
+          "8B"
+        ],
+        "focus": "Update every affected input and distinguish a company screen from law and final decision authority."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/43/",
+          "locator": "12 CFR 1026.43(c)(2)-(4), including comments 43(c)(3)-2 through -6",
+          "supports": "Covered general-ATR factors and reasonably reliable verification; numerical methods and company screens are stipulated.",
+          "checkedOn": "2026-10-01",
+          "verificationStatus": "author_verified_official_source"
+        },
+        {
+          "url": "https://myhome.freddiemac.com/blog/homebuying/mortgage-underwriting",
+          "locator": "What Is Underwriting; Gathering and Verifying; Putting It All Together",
+          "supports": "Underwriting reviews borrower and property facts; case-specific delegated authority is a stated teaching assumption.",
+          "checkedOn": "2026-10-01",
+          "verificationStatus": "author_verified_official_source"
+        }
+      ],
+      "lessonSourceHash": "b2c8ff0f9359b47145f1cb1ac1d952c7d4c563e028c34ec6c83a1e012ceede42",
+      "independenceNote": "Original simultaneous income-and-debt change; not the public Linden appraisal/unsecured-loan/payoff sequence.",
+      "reviewStatus": "candidate_pending_independent_and_human_review"
+    },
+    {
+      "id": "PE-FIN-8B-02",
+      "unitId": "8B",
+      "moduleId": "PE08",
+      "category": "elective",
+      "objective": "Reassess cash and reserves when an accepted credit decreases.",
+      "stem": "A current integrated worksheet shows $34,400 remaining cash to close and $38,000 eligible funds after the deposit already cleared. An approved contract change reduces a fully usable seller credit by $2,500; nothing else changes. The invented reserve requirement is $2,000. Which updated conclusion is supported?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Cash to close becomes $31,900, leaving $6,100 in reserves."
+        },
+        {
+          "id": "B",
+          "text": "Cash to close becomes $36,900, and the full $38,000 remains available as reserves."
+        },
+        {
+          "id": "C",
+          "text": "Cash to close stays $34,400 because seller credits do not affect funds to bring."
+        },
+        {
+          "id": "D",
+          "text": "Cash to close becomes $36,900, leaving $1,100 and a $900 reserve shortfall."
+        }
+      ],
+      "correctChoice": "D",
+      "rationale": "The credit reduction adds $2,500 to the borrower’s remaining contribution: $36,900. $38,000 − $36,900 = $1,100 remains, $900 below the stipulated reserve requirement. The affected funds decision needs review.",
+      "distractorRationales": {
+        "A": "A smaller seller credit increases, rather than decreases, the borrower’s cash requirement.",
+        "B": "The money used at closing cannot also remain as reserves.",
+        "C": "The original worksheet used the credit, so its reduction changes the remaining contribution."
+      },
+      "remediation": {
+        "unitIds": [
+          "8B"
+        ],
+        "focus": "Trace a late credit change through cash to close and genuinely remaining funds."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.consumerfinance.gov/owning-a-home/closing-disclosure/",
+          "locator": "Cash to Close; Calculating Cash to Close; projected payments",
+          "supports": "Cash to close accounts for transaction amounts, credits and prior payments; P&I differs from total housing costs.",
+          "checkedOn": "2026-10-01",
+          "verificationStatus": "author_verified_official_source"
+        },
+        {
+          "url": "https://myhome.freddiemac.com/blog/homebuying/mortgage-underwriting",
+          "locator": "What Is Underwriting; Gathering and Verifying; Putting It All Together",
+          "supports": "Underwriting reviews borrower and property facts; case-specific delegated authority is a stated teaching assumption.",
+          "checkedOn": "2026-10-01",
+          "verificationStatus": "author_verified_official_source"
+        }
+      ],
+      "lessonSourceHash": "b2c8ff0f9359b47145f1cb1ac1d952c7d4c563e028c34ec6c83a1e012ceede42",
+      "independenceNote": "Original late seller-credit reduction and reserve effect; no public Linden costs, source-loan repayment or CE credit-summing case is reused.",
+      "reviewStatus": "candidate_pending_independent_and_human_review"
+    },
+    {
+      "id": "PE-FIN-8C-01",
+      "unitId": "8C",
+      "moduleId": "PE08",
+      "category": "elective",
+      "objective": "Combine a CD restart event with a closing-release recommendation.",
+      "stem": "All previously listed credit and title conditions are accepted. Before consummation of a covered TRID transaction, a prepayment penalty is newly added to terms that previously had none, and the CD therefore changes. Assume separate legal/product review permits the penalty, no waiver applies, and the consumer has not yet received a corrected CD. What release recommendation is supported?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Require the corrected-CD receipt and new three-business-day wait before consummation."
+        },
+        {
+          "id": "B",
+          "text": "Proceed if the corrected CD is provided at signing because the APR did not change."
+        },
+        {
+          "id": "C",
+          "text": "Issue a revised LE after the original CD and use the LE delivery date to clear the wait."
+        },
+        {
+          "id": "D",
+          "text": "Proceed because earlier credit and title acceptance waives any new disclosure timing."
+        }
+      ],
+      "correctChoice": "A",
+      "rationale": "Adding a prepayment penalty is one of the three specified preconsummation changes requiring a corrected CD and a new three-business-day receipt-based wait. Separate acceptance of credit/title and legal permissibility of the term do not complete that timing requirement.",
+      "distractorRationales": {
+        "B": "Adding a prepayment penalty is an independent trigger for a new waiting period.",
+        "C": "A revised LE cannot replace the applicable corrected-CD process after CD provision.",
+        "D": "Other accepted conditions do not eliminate this specified restart event."
+      },
+      "remediation": {
+        "unitIds": [
+          "8C"
+        ],
+        "focus": "Check new facts against the specific restart rules before an authorized release."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/19/",
+          "locator": "12 CFR 1026.19(e)(1)-(3), (f)(1)-(2) and applicable interpretations",
+          "supports": "Scoped LE/CD provision, fee controls, good-faith comparison and correction requirements.",
+          "checkedOn": "2026-10-01",
+          "verificationStatus": "author_verified_official_source"
+        }
+      ],
+      "lessonSourceHash": "b2c8ff0f9359b47145f1cb1ac1d952c7d4c563e028c34ec6c83a1e012ceede42",
+      "independenceNote": "New prepayment-penalty addition after all other conditions are accepted; not CE unchanged-rate-lock or public non-restarting fee correction cases.",
+      "reviewStatus": "candidate_pending_independent_and_human_review"
+    },
+    {
+      "id": "PE-FIN-8C-02",
+      "unitId": "8C",
+      "moduleId": "PE08",
+      "category": "elective",
+      "objective": "Update the final decision record without rewriting earlier history.",
+      "stem": "A closing file was correctly held yesterday because title evidence had not been accepted. Today the authorized title reviewer accepts the required evidence; the other pre-release conditions are also recorded as satisfied. Company procedure still assigns final release to a named release officer. What is the best record and handoff?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Retain yesterday’s hold indefinitely because a previously unresolved title condition cannot be cleared."
+        },
+        {
+          "id": "B",
+          "text": "Replace yesterday’s hold with “clear yesterday” so the file shows one continuous approved status."
+        },
+        {
+          "id": "C",
+          "text": "Have the processor mark funds released because all evidence now appears complete."
+        },
+        {
+          "id": "D",
+          "text": "Preserve the hold history, add today’s acceptance and request the designated release decision."
+        }
+      ],
+      "correctChoice": "D",
+      "rationale": "A versioned record should show why the earlier hold was correct and what supported today’s change. With the scoped decisions satisfied, the next action is the designated release decision, not an invented past approval or unauthorized disbursement.",
+      "distractorRationales": {
+        "A": "New accepted evidence can change the current status while history remains intact.",
+        "B": "That changes accurate historical evidence into a false earlier clearance.",
+        "C": "Complete evidence does not give the processor the separately assigned final release authority."
+      },
+      "remediation": {
+        "unitIds": [
+          "8C"
+        ],
+        "focus": "Keep historical status, current accepted evidence and final release authority distinct."
+      },
+      "sourceRefs": [
+        {
+          "url": "https://myhome.freddiemac.com/blog/homebuying/mortgage-underwriting",
+          "locator": "What Is Underwriting; Gathering and Verifying; Putting It All Together",
+          "supports": "Underwriting reviews borrower and property facts; case-specific delegated authority is a stated teaching assumption.",
+          "checkedOn": "2026-10-01",
+          "verificationStatus": "author_verified_official_source"
+        },
+        {
+          "url": "https://www.consumerfinance.gov/ask-cfpb/im-about-to-close-on-a-real-estate-purchase-transaction-with-a-mortgage-what-can-expect-in-the-mortgage-closing-process-en-1905/",
+          "locator": "Documents signed at closing",
+          "supports": "Note, security instrument and ownership-transfer documents perform different functions.",
+          "checkedOn": "2026-10-01",
+          "verificationStatus": "author_verified_official_source"
+        }
+      ],
+      "lessonSourceHash": "b2c8ff0f9359b47145f1cb1ac1d952c7d4c563e028c34ec6c83a1e012ceede42",
+      "independenceNote": "New historical-record integrity and release-authority decision; not CE absent reviewer or accepted insurance duplicate-request scenarios.",
+      "reviewStatus": "candidate_pending_independent_and_human_review"
+    }
+  ]
+}

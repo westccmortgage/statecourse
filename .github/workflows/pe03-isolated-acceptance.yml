@@ -25,6 +25,15 @@ on:
       - 'tests/pe-course-*.test.mjs'
       - 'tests/pe03-readback-evidence.test.mjs'
       - 'tests/browser/pe-course-local-browser.mjs'
+      - 'config/nmls/pe-final/**'
+      - 'lib/nmls-pe-final-*.mjs'
+      - 'database/drafts/pe-final-assessment.sql'
+      - 'netlify/functions/*pe-final.mts'
+      - 'public/statecourse/student/pe-final/**'
+      - 'tests/pe-final-*.test.mjs'
+      - 'tests/helpers/pe-final-fixture.mjs'
+      - 'tests/integration/pe-final-native.test.mjs'
+      - 'tests/browser/pe-final-local-browser.mjs'
 
 permissions:
   contents: read
@@ -123,6 +132,24 @@ jobs:
           PE_COURSE_NATIVE_CI: '1'
           PE_CHROMIUM_HEADED: '1'
           PLAYWRIGHT_LEGACY_SCREENSHOT: '1'
+      - name: Verify protected PE bank boundaries and local assessment flow
+        run: node --test --test-concurrency=1 tests/pe-final-privacy.test.mjs tests/pe-final-assessment.test.mjs tests/pe-final-staff-boundary.test.mjs
+      - name: Verify native protected assessment and real lock waits
+        run: node --test --test-concurrency=1 tests/pe-final-assessment.test.mjs tests/integration/pe-final-native.test.mjs
+        env:
+          PE_COURSE_NATIVE_CI: '1'
+      - name: Render protected PE checks, final and complementary retake
+        run: |
+          xvfb-run --auto-servernum bash -c '
+            openbox > "$RUNNER_TEMP/pe-final-openbox.log" 2>&1 &
+            window_manager_pid=$!
+            trap "kill $window_manager_pid" EXIT
+            node tests/browser/pe-final-local-browser.mjs
+          '
+        env:
+          PE_COURSE_NATIVE_CI: '1'
+          PE_CHROMIUM_HEADED: '1'
+          PLAYWRIGHT_LEGACY_SCREENSHOT: '1'
       - name: Retain only synthetic test reports, evidence and screenshots
         if: always()
         uses: actions/upload-artifact@v4
@@ -133,6 +160,8 @@ jobs:
             artifacts/pe-cohort/native/
             artifacts/pe-cohort/browser/
             artifacts/pe-course/browser/
+            artifacts/pe-final/native/
+            artifacts/pe-final/browser/
           if-no-files-found: warn
           retention-days: 3
 
