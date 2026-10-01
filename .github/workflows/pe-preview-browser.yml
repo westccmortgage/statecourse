@@ -15,8 +15,6 @@ jobs:
     if: github.event.pull_request.number == 23 && github.event.pull_request.head.repo.full_name == github.repository
     runs-on: ubuntu-latest
     timeout-minutes: 12
-    env:
-      PE_BROWSER_PACKAGE: ${{ runner.temp }}/statecourse-pe-browser
     steps:
       - name: Check out only the public preview acceptance script
         uses: actions/checkout@v4
@@ -28,6 +26,8 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "22"
+      - name: Set the isolated browser package path on the runner
+        run: echo "PE_BROWSER_PACKAGE=$RUNNER_TEMP/statecourse-pe-browser" >> "$GITHUB_ENV"
       - name: Install pinned browser test dependency outside the repository
         run: npm install --prefix "$PE_BROWSER_PACKAGE" --no-save --package-lock=false playwright@1.63.0
       - name: Install Chromium on the isolated runner
