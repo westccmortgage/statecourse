@@ -38,6 +38,7 @@ const server=createServer(async(req,res)=>{try{
 try{
  await new Promise((resolve,reject)=>server.once('error',reject).listen(0,'127.0.0.1',resolve));origin=`http://127.0.0.1:${server.address().port}`;process.env.STATECOURSE_BASE_URL=origin;
  browser=await chromium.launch({headless:process.env.PE_CHROMIUM_HEADED!=='1',...(process.env.PE_CHROMIUM?{executablePath:process.env.PE_CHROMIUM}:{}),args:['--no-sandbox']});
+ report.browser={version:browser.version(),headed:process.env.PE_CHROMIUM_HEADED==='1',focusEmulation:false,screenshotBackend:process.env.PLAYWRIGHT_LEGACY_SCREENSHOT?'legacy':'new-surface'};
  const newLearner=async actor=>{const context=await browser.newContext({viewport:{width:1100,height:900}});await context.addCookies([{name:'pe-fixture-actor',value:actor,url:origin}]);await context.route('**/*',route=>new URL(route.request().url()).origin===origin?route.continue():route.abort());const page=await context.newPage();const cdp=await context.newCDPSession(page);await cdp.send('Emulation.setFocusEmulationEnabled',{enabled:false});page.on('pageerror',e=>report.errors.push(e.message));await page.goto(`${origin}/student/pe03/?cohort=${ids.cohort}${actor==='instructor'?'&role=instructor':''}`);await page.locator('#activity').waitFor({state:'visible'});await page.bringToFront();await page.waitForFunction(()=>document.visibilityState==='visible'&&document.hasFocus(),{},{timeout:10000});return {context,page};};
  const a=await newLearner('a');
  assert.equal(await a.page.locator('#send').isEnabled(),false);
