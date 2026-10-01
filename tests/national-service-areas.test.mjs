@@ -30,7 +30,7 @@ for (const area of areas) {
   test(`${area.route} states availability from the catalog, not from copy`, () => {
     const html = read(`${area.route}/index.html`);
     if (area.service === "exam") {
-      assert.match(html, new RegExp(`available for ${practiceCatalog.samples.length} states currently in development`));
+      assert.match(html, new RegExp(`available in ${practiceCatalog.samples.length} course collections currently in development`));
       assert.match(html, /not licensing-exam questions/i);
       return;
     }
@@ -56,7 +56,10 @@ for (const area of areas) {
       ? [/representative licensing-exam questions/i, /retrieve eligible completion certificates/i]
       : [/representative practice questions/i, /free practice/i, /try .{0,20}practice/i, /retrieve eligible completion certificates/i];
     for (const promise of impossiblePromises) {
-      assert.doesNotMatch(html, promise, `${area.route} still promises an unbuilt product`);
+      // Shared navigation may link to real, available public practice; test this
+      // service's own claims rather than the global header/footer.
+      const main = html.match(/<main[^>]*>([\s\S]*?)<\/main>/)?.[1] ?? html;
+      assert.doesNotMatch(main, promise, `${area.route} still promises an unbuilt product`);
     }
     if (area.service === "exam") assert.match(html, /href="\.\.\/free-practice\/"/);
   });

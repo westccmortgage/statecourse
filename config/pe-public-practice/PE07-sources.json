@@ -1,0 +1,92 @@
+{
+  "PE07": {
+    "P7-01": {
+      "url": "https://www.consumerfinance.gov/ask-cfpb/what-is-a-conventional-loan-en-117/",
+      "reference": "P7-01: CFPB, What is a conventional loan? Conventional and government-backed classification"
+    },
+    "P7-02": {
+      "url": "https://www.va.gov/housing-assistance/home-loans/loan-types/purchase-loan/",
+      "reference": "P7-02: VA, Purchase Loan, benefit eligibility and separate lender credit, income, and occupancy review"
+    },
+    "P7-03": {
+      "url": "https://selling-guide.fanniemae.com/sel/b2-1.4-02/adjustable-rate-mortgages-arms",
+      "reference": "P7-03: Fannie Mae Selling Guide B2-1.4-02, Adjustable-Rate Mortgages. Used only to establish that ARMs can be agency conventional products"
+    },
+    "P7-04": {
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/43/",
+      "reference": "P7-04: CFPB Regulation Z §1026.43(a), (b), (c), (e), and (f), and official interpretations, scoped coverage, general ATR, feature-specific payment methods, simultaneous loans, and QM distinctions"
+    },
+    "P7-05": {
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/files/bcreg20060929a1.pdf",
+      "reference": "P7-05: Federal Reserve and other agencies, 2006 Interagency Guidance on Nontraditional Mortgage Product Risks, scope, principal and interest deferral, risk layering, and consumer communication; preamble pp. 4–5 and 9 clarifies scope and suitability"
+    },
+    "P7-06": {
+      "url": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/nmlsEdFuncSpec/education/funcSpec/maps/topics/approvedCourseTopics/nmlsFS_approvedPEtopicList.html",
+      "reference": "P7-06: NMLS 2026.1 Pre-Licensure Education Topic List, Nontraditional Mortgage Products. Topic reference only; not course approval or a validated allocation"
+    },
+    "P7-07": {
+      "url": "https://www.consumerfinance.gov/ask-cfpb/for-an-adjustable-rate-mortgage-arm-what-are-the-index-and-margin-and-how-do-they-work-en-1949/",
+      "reference": "P7-07: CFPB, ARM index and margin, contractual rate components and limitations"
+    },
+    "P7-08": {
+      "url": "https://www.consumerfinance.gov/documents/5984/cfpb_charm_booklet.pdf",
+      "reference": "P7-08: CFPB, Consumer Handbook on Adjustable Rate Mortgages, index, margin, adjustment periods, caps, and payment comparisons"
+    },
+    "P7-09": {
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/43/#c-5-ii-B",
+      "reference": "P7-09: CFPB Regulation Z §1026.43(c)(5)(ii)(B) and comments, general ATR interest-only loan calculation"
+    },
+    "P7-10": {
+      "url": "https://www.consumerfinance.gov/ask-cfpb/what-is-a-balloon-payment-when-is-one-allowed-en-104/",
+      "reference": "P7-10: CFPB, What is a balloon payment? When is one allowed? Reviewed August 28 2026; maturity risk and refinancing uncertainty"
+    },
+    "P7-11": {
+      "url": "https://www.consumerfinance.gov/ask-cfpb/what-is-an-option-or-payment-option-arm-en-102/",
+      "reference": "P7-11: CFPB, What is an option or payment-option ARM? Minimum payments, balance growth, and later payment changes"
+    },
+    "P7-12": {
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/37/",
+      "reference": "P7-12: CFPB Regulation Z §1026.37(a)(10), (b), and (c), Loan Estimate product description, loan terms, and projected payments"
+    },
+    "P7-13": {
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/19/",
+      "reference": "P7-13: CFPB Regulation Z §1026.19(b) and (e), applicable ARM application disclosures and integrated-disclosure coverage"
+    },
+    "P7-14": {
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/40/",
+      "reference": "P7-14: CFPB Regulation Z §1026.40(d)(5), (d)(12), and (f), open-end home-equity payment terms, variable rates, and limitations on changes and termination"
+    },
+    "P7-15": {
+      "url": "https://www.hud.gov/hud-partners/single-family-hecmhome",
+      "reference": "P7-15: HUD, FHA Reverse Mortgage for Seniors HECM, FHA-insured reverse mortgage program and official counselor and lender referral resources"
+    },
+    "P7-16": {
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/20/",
+      "reference": "P7-16: CFPB Regulation Z §1026.20(c) and (d), applicable ARM adjustment notices and their separate requirements"
+    },
+    "P7-17": {
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/3/",
+      "reference": "P7-17: CFPB Regulation Z §1026.3(a) and official interpretations, primary-purpose determination, rental-property rules, and organizational-credit distinctions"
+    },
+    "P7-18": {
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/33/",
+      "reference": "P7-18: CFPB Regulation Z §1026.33(a) and (b), defined reverse mortgage, maturity events, and specialized disclosures"
+    },
+    "P7-19": {
+      "url": "https://www.consumerfinance.gov/ask-cfpb/what-is-an-interest-only-loan-en-101/",
+      "reference": "P7-19: CFPB, What is an interest-only loan? Principal deferral, later repayment options, and refinancing uncertainty"
+    },
+    "P7-20": {
+      "url": "https://www.consumerfinance.gov/ask-cfpb/what-is-negative-amortization-en-103/",
+      "reference": "P7-20: CFPB, What is negative amortization? Unpaid interest, capitalization, and balance growth"
+    },
+    "P7-22": {
+      "url": "https://www.consumerfinance.gov/ask-cfpb/what-is-a-conforming-loan-en-115/",
+      "reference": "P7-22: CFPB, What is a conforming loan? Fannie Mae, Freddie Mac, and FHFA terms and conditions"
+    },
+    "P7-21": {
+      "url": "https://www.consumerfinance.gov/ask-cfpb/what-is-a-reverse-mortgage-en-224/",
+      "reference": "P7-21: CFPB, What is a reverse mortgage? HECM distinction, growing balance, property taxes, insurance, maintenance, and occupancy"
+    }
+  }
+}

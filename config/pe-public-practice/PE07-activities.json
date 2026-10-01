@@ -1,0 +1,384 @@
+{
+  "schema_version": "1.0",
+  "module_id": "PE07",
+  "title": "Nontraditional Mortgage Products Public Activities",
+  "as_of": "2026-09-30",
+  "public_formative": true,
+  "credit_bearing": false,
+  "duration_validated": false,
+  "delivery_mode": "public_self_guided_noncredit",
+  "provenance": {
+    "student_source": "PE07_student.md",
+    "origin": "Adapted only from the expressly public PE07 draft, expanded with fresh original public teaching cases and independently verified primary sources. No CE manuscript, private instructor source, or protected exam content was opened or used.",
+    "answer_policy": "Complete case solutions and option feedback are intentionally public formative content. They are not a protected final assessment.",
+    "rounding": "Use full precision until the final answer; displayed dollars are rounded to cents. Monetary numerical checks accept ±$0.01.",
+    "service_scope": "Written self-review and optional offline discussion only. No instructor, matched peer, scheduled interaction, completion service, or timing promise.",
+    "current_status": "Not NMLS approved; no PE/CE credit, education hours, or certificate. Free public practice before, during, and after paid enrollment; use the lesson selector for current availability."
+  },
+  "scenarios": [
+    {
+      "id": "PENT-A-07A-paths",
+      "title": "Compare interest-only payment paths",
+      "module": "module-07",
+      "context": "Use PE07 C7A. Work through the payment paths and compare your written explanation with the public solution. Optional offline discussion is welcome; this self-guided activity supplies no instructor or peer service. All solutions are public formative feedback.",
+      "facts": [
+        "The fictional loan amount is $180,000. Total term is 360 months, with 60 initial interest-only monthly payments at a 6.00% fixed annual rate. Monthly accrual is annual rate divided by 12.",
+        "No principal is paid or added during the interest-only period. All payments are timely. There are no advances, fees added to principal, or term extensions.",
+        "Path A amortizes the $180,000 balance over the remaining 300 months at 6.00%. A separate adjustable Path B stipulates a lawful contractual 8.00% rate at this transition and amortizes over the same 300 months. The 8.00% is an assumption, not a forecast or maximum.",
+        "A third, separate loan is a five-year interest-only balloon with the same amount, rate, and no principal changes. State the principal due immediately after its final interest payment; do not confuse its maturity with the 30-year loans.",
+        "Exclude taxes, insurance, dues, and fees from these P&I calculations. Carry full precision until the final displayed result. None of these calculations is a real-loan quote or approval."
+      ],
+      "sources": [
+        {
+          "source_id": "P7-19",
+          "url": "https://www.consumerfinance.gov/ask-cfpb/what-is-an-interest-only-loan-en-101/",
+          "reference": "P7-19: CFPB, What is an interest-only loan? Principal deferral, later repayment options, and refinancing uncertainty"
+        },
+        {
+          "source_id": "P7-09",
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/43/#c-5-ii-B",
+          "reference": "P7-09: CFPB Regulation Z §1026.43(c)(5)(ii)(B) and comments, general ATR interest-only loan calculation"
+        },
+        {
+          "source_id": "P7-10",
+          "url": "https://www.consumerfinance.gov/ask-cfpb/what-is-a-balloon-payment-when-is-one-allowed-en-104/",
+          "reference": "P7-10: CFPB, What is a balloon payment? When is one allowed? Reviewed August 28 2026; maturity risk and refinancing uncertainty"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "PENT-T-07A-initial",
+          "type": "computation",
+          "prompt": "What is the initial monthly interest-only payment?",
+          "expected": 900,
+          "tolerance": 0.01,
+          "unit": "dollars",
+          "rationale": "$180,000 × 0.06 ÷ 12 = $900. All $900 covers accrued interest; none reduces principal under these facts."
+        },
+        {
+          "id": "PENT-T-07A-principal",
+          "type": "computation",
+          "prompt": "What principal balance remains immediately after the 60th interest-only payment?",
+          "expected": 180000,
+          "tolerance": 0.01,
+          "unit": "dollars",
+          "rationale": "Opening principal is $180,000. Each payment covers all accrued interest and zero principal; with no additions or principal payments, ending principal remains $180,000. The $54,000 paid over 60 months is interest."
+        },
+        {
+          "id": "PENT-T-07A-fixed",
+          "type": "computation",
+          "prompt": "What monthly P&I fully amortizes Path A after the interest-only period?",
+          "expected": 1159.74,
+          "tolerance": 0.01,
+          "unit": "dollars",
+          "rationale": "Let r = 0.06/12 = 0.005 and n = 360 − 60 = 300. Payment = 180000 × r / [1 − (1+r)^(-300)] = $1,159.7425226739, displayed as $1,159.74. The original maturity is preserved."
+        },
+        {
+          "id": "PENT-T-07A-adjustable",
+          "type": "computation",
+          "prompt": "What monthly P&I fully amortizes Path B at its stipulated 8.00% transition?",
+          "expected": 1389.27,
+          "tolerance": 0.01,
+          "unit": "dollars",
+          "rationale": "Let r = 0.08/12 and n = 300. Payment = 180000 × r / [1 − (1+r)^(-300)] = $1,389.2691948714, displayed as $1,389.27. This contractual scenario is not the general ATR calculation at origination."
+        },
+        {
+          "id": "PENT-T-07A-balloon",
+          "type": "computation",
+          "prompt": "For the separate five-year interest-only balloon, what principal is due immediately after the final interest payment?",
+          "expected": 180000,
+          "tolerance": 0.01,
+          "unit": "dollars",
+          "rationale": "No principal was reduced, so all $180,000 is due at the stated maturity. That is the principal component only. A real payoff must reflect its date, accrued interest, and other lawful amounts; refinancing is not assumed."
+        },
+        {
+          "id": "PENT-T-07A-explain",
+          "type": "short-answer",
+          "prompt": "Write a two-path comparison showing the dollar and percentage increase from $900, then explain the separate balloon in two sentences.",
+          "rubric": [
+            "Use Path A $259.74 and 28.86%; Path B $489.27 and 54.36%, calculated before rounding",
+            "Use (new payment − initial payment) / initial payment × 100, not the new payment as the denominator",
+            "Identify principal repayment over a shorter remaining term even when the rate does not increase",
+            "Separate the stipulated 8.00% rate scenario from a forecast, lifetime maximum, or origination qualifying payment",
+            "Explain the separate $180,000 balloon maturity and avoid any refinancing guarantee"
+          ],
+          "rationale": "Path A: 1159.7425226739 − 900 = 259.7425226739; divide by 900 and multiply by 100 to obtain 28.8602802971%. Path B: 1389.2691948714 − 900 = 489.2691948714, or 54.3632438746%. Both paths eventually amortize, while the third loan makes all remaining principal due at five years. Taxes and insurance are additional."
+        },
+        {
+          "id": "PENT-T-07A-revise",
+          "type": "short-answer",
+          "prompt": "Write one question you could use to check whether a consumer understands the transition, then revise one ambiguous statement in your own explanation.",
+          "rubric": [
+            "Ask the learner or consumer to explain the balance and transition in their own words",
+            "Use the stated time period and distinguish principal from interest",
+            "Correct a specific ambiguity instead of asking only whether everything is understood",
+            "Keep any offline discussion optional and use no real borrower information"
+          ],
+          "rationale": "An example is: “What happens to your $180,000 balance while you pay interest only, and what changes after the fifth year?” Replace “the payment is $900” with “the initial monthly interest-only payment is $900 for five years under these assumptions.” A correct answer to a teach-back question does not establish repayment capacity."
+        }
+      ]
+    },
+    {
+      "id": "PENT-A-07A-growth",
+      "title": "Trace balance growth and recast",
+      "module": "module-07",
+      "context": "Use PE07 C7A2. This is an intentionally simplified public mechanics exercise with complete feedback. It does not describe a current product or a permitted underwriting method.",
+      "facts": [
+        "Start with $85,000. Annual interest is fixed at 7.20%; use monthly rate 0.006 and a payment of $340 at the end of each of the first 12 months.",
+        "Each month, unpaid interest is added to principal. There are no fees, new advances, missed payments, caps, or voluntary principal payments.",
+        "Immediately after payment 12, amortize the unrounded balance over 348 remaining months at the same 7.20% annual rate. Total original term is 360 months.",
+        "For the real-contract discussion only, recognize that an actual product can instead have caps, changing minimums, rate changes, and earlier recast triggers. Do not add those terms to the numerical exercise."
+      ],
+      "sources": [
+        {
+          "source_id": "P7-11",
+          "url": "https://www.consumerfinance.gov/ask-cfpb/what-is-an-option-or-payment-option-arm-en-102/",
+          "reference": "P7-11: CFPB, What is an option or payment-option ARM? Minimum payments, balance growth, and later payment changes"
+        },
+        {
+          "source_id": "P7-20",
+          "url": "https://www.consumerfinance.gov/ask-cfpb/what-is-negative-amortization-en-103/",
+          "reference": "P7-20: CFPB, What is negative amortization? Unpaid interest, capitalization, and balance growth"
+        },
+        {
+          "source_id": "P7-04",
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/43/",
+          "reference": "P7-04: CFPB Regulation Z §1026.43(a), (b), (c), (e), and (f), and official interpretations, scoped coverage, general ATR, feature-specific payment methods, simultaneous loans, and QM distinctions"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "PENT-T-07A-growth-first",
+          "type": "computation",
+          "prompt": "What is the ending balance after the first $340 payment?",
+          "expected": 85170,
+          "tolerance": 0.01,
+          "unit": "dollars",
+          "rationale": "Interest = 85000 × 0.006 = $510. Payment leaves $170 unpaid. Ending balance = 85000 + 510 − 340 = $85,170."
+        },
+        {
+          "id": "PENT-T-07A-growth-year",
+          "type": "computation",
+          "prompt": "What is the balance after all 12 minimum payments?",
+          "expected": 87108.68,
+          "tolerance": 0.01,
+          "unit": "dollars",
+          "rationale": "Use B(k)=B(k−1)×1.006−340, starting at $85,000. Equivalently B(12)=85000×1.006^12−340×(1.006^12−1)/0.006 = $87,108.6847521212. Month 2 is $85,341.02; the unrounded month-12 balance is used for the recast."
+        },
+        {
+          "id": "PENT-T-07A-growth-recast",
+          "type": "computation",
+          "prompt": "What monthly P&I repays that balance over 348 months at the unchanged rate?",
+          "expected": 597.12,
+          "tolerance": 0.01,
+          "unit": "dollars",
+          "rationale": "Payment = 87108.6847521212 × 0.006 / [1 − 1.006^(−348)] = $597.1190733947. Display $597.12. The larger balance and shorter repayment period cause the increase without a rate increase."
+        },
+        {
+          "id": "PENT-T-07A-growth-increase",
+          "type": "computation",
+          "prompt": "How much higher is the recast monthly payment than $340?",
+          "expected": 257.12,
+          "tolerance": 0.01,
+          "unit": "dollars",
+          "rationale": "$597.1190733947 − $340 = $257.1190733947, displayed as $257.12. Keep this payment increase separate from the $2,108.68 increase in principal balance."
+        },
+        {
+          "id": "PENT-T-07A-growth-review",
+          "type": "short-answer",
+          "prompt": "Write a short review that explains the balance growth, contrasts interest-only with the minimum-payment path, and lists the real-contract inputs still needed to predict recast.",
+          "rubric": [
+            "Explain that paying the contractual minimum on time can still leave unpaid interest capitalized",
+            "Use first-month $510 accrued interest versus $340 paid, leaving $170 added to principal",
+            "State that an interest-only payment covering all interest would leave principal unchanged under the stated no-other-change assumption",
+            "Identify rate terms, minimum-payment adjustments, negative-amortization limits, and scheduled or earlier recast triggers",
+            "Avoid treating this original-balance illustration as the §1026.43 maximum-loan-amount underwriting calculation"
+          ],
+          "rationale": "A sound response states: “Timely $340 payments are below accrued interest, so the balance rises to $87,108.68. A first payment of $510 would cover the initial month’s interest but reduce no principal. The real note must establish rate changes, payment limits, balance limits, and recast timing; general ATR for negative amortization has its own defined maximum-loan-amount and remaining-term method.”"
+        }
+      ]
+    },
+    {
+      "id": "PENT-A-07B-evidence",
+      "title": "Separate evidence from product labels",
+      "module": "module-07",
+      "context": "Use PE07 Unit 7B. Part 1 is Sam’s completely stipulated arithmetic. Part 2 is Riley’s incomplete file and cannot be approved or assigned a DTI from the supplied facts. Keep the two people and records separate.",
+      "facts": [
+        "Sam’s twelve-month business deposits total $120,000. Supporting records identify $18,000 of transfers between owned accounts and $6,000 of borrowed money. For this arithmetic only, the reviewer accepts the remaining receipts, $60,000 of expenses, 100% ownership, and no other adjustments.",
+        "Riley separately requests a consumer-purpose closed-end loan secured by the home Riley will occupy. Assume the general ATR rule applies with no exemption. The proposed program is non-QM with a three-year interest-only period.",
+        "Riley supplied six months of business statements. The fictional program requires twelve months and a supported expense analysis, which is missing.",
+        "A simultaneous second-loan payment is reported as $500 monthly. The sales note says to qualify on the initial first-loan payment and ignore the second because it shares the home as collateral. The second loan’s appropriate qualifying calculation still needs confirmation.",
+        "Riley has signed a payment-risk acknowledgment. No accepted qualifying income, complete first-loan terms, or correct qualifying first payment is supplied. No final credit decision or regulatory notice determination has been made."
+      ],
+      "sources": [
+        {
+          "source_id": "P7-04",
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/43/",
+          "reference": "P7-04: CFPB Regulation Z §1026.43(a), (b), (c), (e), and (f), and official interpretations, scoped coverage, general ATR, feature-specific payment methods, simultaneous loans, and QM distinctions"
+        },
+        {
+          "source_id": "P7-09",
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/43/#c-5-ii-B",
+          "reference": "P7-09: CFPB Regulation Z §1026.43(c)(5)(ii)(B) and comments, general ATR interest-only loan calculation"
+        },
+        {
+          "source_id": "P7-17",
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/3/",
+          "reference": "P7-17: CFPB Regulation Z §1026.3(a) and official interpretations, primary-purpose determination, rental-property rules, and organizational-credit distinctions"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "PENT-T-07B-net-income",
+          "type": "computation",
+          "prompt": "For Sam only, what monthly net amount follows from the accepted arithmetic inputs?",
+          "expected": 3000,
+          "tolerance": 0.01,
+          "unit": "dollars",
+          "rationale": "($120,000 − $18,000 − $6,000 − $60,000) / 12 = $36,000 / 12 = $3,000. The supporting records and accepted expenses are stipulated, not inferred from a product name."
+        },
+        {
+          "id": "PENT-T-07B-overstatement",
+          "type": "computation",
+          "prompt": "For Sam only, by how many dollars per month would deposits divided by twelve overstate that result?",
+          "expected": 7000,
+          "tolerance": 0.01,
+          "unit": "dollars",
+          "rationale": "$120,000 / 12 = $10,000. $10,000 − $3,000 = $7,000 per month. Transfers and borrowing are not accepted business receipts, and accepted expenses must be accounted for."
+        },
+        {
+          "id": "PENT-T-07B-file-status",
+          "type": "short-answer",
+          "prompt": "For Riley, write three rows: missing evidence and its owner, corrected payment review and its owner, and present file status. Identify the legal requirement separately from the fictional program requirement.",
+          "rubric": [
+            "Request the additional six months and supported expense analysis required by the stated program",
+            "Distinguish reliable verification of relied-upon facts under the applicable law from the invented twelve-month policy",
+            "Have the authorized underwriter apply the correct interest-only method and review the known simultaneous debt under its correct calculation",
+            "Do not ignore the reported $500 obligation merely because collateral is shared",
+            "Record incomplete or not cleared for an approval recommendation, without inventing a denial or stopping legally required application/notice timelines",
+            "Do not calculate Riley’s DTI or transplant Sam’s income into Riley’s record"
+          ],
+          "rationale": "Example record: “Processor obtains the missing six months and expense support; underwriter accepts or rejects the resulting analysis. Underwriter reviews the correct first-loan interest-only ATR payment and confirms the simultaneous second-loan calculation; compliance resolves uncertain coverage or notice duties. The file is incomplete and not cleared for an approval recommendation because the required evidence and qualifying payments are unresolved.” Six additional months follows from the stipulated 12−6 policy, not a universal non-QM law."
+        },
+        {
+          "id": "PENT-T-07B-acknowledgment",
+          "type": "short-answer",
+          "prompt": "A colleague says the signed acknowledgment and non-QM label make further evidence unnecessary. Explain why that fails, and name one verified change that could legitimately change the analysis.",
+          "rubric": [
+            "Distinguish consumer understanding from creditor repayment determination",
+            "State that non-QM does not waive the stipulated general ATR requirement",
+            "Name a supported change such as accepted complete statements and expense analysis, not a promised raise or refinance",
+            "Identify the authorized reviewer who must evaluate the new fact"
+          ],
+          "rationale": "A risk acknowledgment cannot turn incomplete income evidence into verified repayment resources. The non-QM label does not remove the stipulated general ATR duty. Complete, supported records could change the income analysis when accepted by the underwriter; a different payment calculation could also change the result if required by the actual terms and applicable method. Neither development automatically establishes loan approval."
+        }
+      ]
+    },
+    {
+      "id": "PENT-A-07C-explanation",
+      "title": "Repair explanations across product boundaries",
+      "module": "module-07",
+      "context": "Use PE07 C7C and W7C. Correct the consumer explanation in writing, then show why a change to a HELOC or HECM calls for a separate product analysis. Self-review is optional and all model feedback is public.",
+      "facts": [
+        "For C7C, the loan is the $180,000, 30-year loan with five years of interest-only payments at fixed 6.00%, followed by amortization over 300 months. No principal is paid or added in the first five years. It is not the separate five-year balloon.",
+        "The proposed explanation says: “This fixed-rate interest-only loan has a permanent $900 payment, and you can always refinance before the principal is due.” It omits taxes, insurance, and fees.",
+        "For the separate W7C HELOC variation, assume a $60,000 credit limit but only $40,000 drawn. The final draw-period payment is interest only at 9.00% annually; use monthly rate 0.09/12. At the transition, no further advances occur and the $40,000 balance amortizes over 120 months at the same rate.",
+        "The HELOC calculation excludes fees and all other changes. It is not a required regulatory disclosure example, underwriting determination, or statement of universal HELOC terms.",
+        "Finally, a consumer asks whether a HECM would eliminate all housing bills and protect every family occupant from repayment indefinitely. No personal eligibility or household facts have been established."
+      ],
+      "sources": [
+        {
+          "source_id": "P7-09",
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/43/#c-5-ii-B",
+          "reference": "P7-09: CFPB Regulation Z §1026.43(c)(5)(ii)(B) and comments, general ATR interest-only loan calculation"
+        },
+        {
+          "source_id": "P7-12",
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/37/",
+          "reference": "P7-12: CFPB Regulation Z §1026.37(a)(10), (b), and (c), Loan Estimate product description, loan terms, and projected payments"
+        },
+        {
+          "source_id": "P7-14",
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/40/",
+          "reference": "P7-14: CFPB Regulation Z §1026.40(d)(5), (d)(12), and (f), open-end home-equity payment terms, variable rates, and limitations on changes and termination"
+        },
+        {
+          "source_id": "P7-15",
+          "url": "https://www.hud.gov/hud-partners/single-family-hecmhome",
+          "reference": "P7-15: HUD, FHA Reverse Mortgage for Seniors HECM, FHA-insured reverse mortgage program and official counselor and lender referral resources"
+        },
+        {
+          "source_id": "P7-18",
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/33/",
+          "reference": "P7-18: CFPB Regulation Z §1026.33(a) and (b), defined reverse mortgage, maturity events, and specialized disclosures"
+        },
+        {
+          "source_id": "P7-19",
+          "url": "https://www.consumerfinance.gov/ask-cfpb/what-is-an-interest-only-loan-en-101/",
+          "reference": "P7-19: CFPB, What is an interest-only loan? Principal deferral, later repayment options, and refinancing uncertainty"
+        },
+        {
+          "source_id": "P7-21",
+          "url": "https://www.consumerfinance.gov/ask-cfpb/what-is-a-reverse-mortgage-en-224/",
+          "reference": "P7-21: CFPB, What is a reverse mortgage? HECM distinction, growing balance, property taxes, insurance, maintenance, and occupancy"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "PENT-T-07C-heloc-interest",
+          "type": "computation",
+          "prompt": "For W7C only, what is the last monthly interest-only payment on the drawn balance?",
+          "expected": 300,
+          "tolerance": 0.01,
+          "unit": "dollars",
+          "rationale": "$40,000 × 0.09 / 12 = $300. This exercise uses the $40,000 drawn balance, not the $60,000 credit limit. The unused limit is not income."
+        },
+        {
+          "id": "PENT-T-07C-heloc-repayment",
+          "type": "computation",
+          "prompt": "For W7C only, what is the amortizing monthly payment for the 120-month repayment phase?",
+          "expected": 506.7,
+          "tolerance": 0.01,
+          "unit": "dollars",
+          "rationale": "r=0.09/12=0.0075. Payment = 40000 × r / [1 − (1+r)^(-120)] = $506.7030950010, displayed as $506.70. A changed rate or different contractual repayment phase would change this result."
+        },
+        {
+          "id": "PENT-T-07C-heloc-increase",
+          "type": "computation",
+          "prompt": "How many dollars above $300 is that repayment-phase payment?",
+          "expected": 206.7,
+          "tolerance": 0.01,
+          "unit": "dollars",
+          "rationale": "$506.7030950010 − $300 = $206.7030950010, displayed as $206.70. The increase is about 68.90%, computed as 206.7030950010 / 300 × 100. It occurs at an unchanged rate because principal repayment begins."
+        },
+        {
+          "id": "PENT-T-07C-rewrite",
+          "type": "short-answer",
+          "prompt": "Rewrite C7C’s original explanation in no more than five sentences, including one question that checks understanding.",
+          "rubric": [
+            "Limit the $900 payment to the first five years and identify that it covers interest only",
+            "State that principal remains $180,000 under the stipulated assumptions",
+            "Explain the transition to about $1,159.74 monthly P&I over 25 remaining years even at unchanged 6.00%",
+            "Mention additional taxes, insurance, and applicable fees or other costs, without inventing dollar estimates",
+            "Remove the refinancing guarantee and include a nonpressuring teach-back question",
+            "Do not confuse the 30-year interest-only-transition loan with a five-year balloon"
+          ],
+          "rationale": "One response is: “The first $900 monthly payment covers interest for five years, leaving the $180,000 principal unchanged under these assumptions. After that, repaying it over the remaining 25 years raises monthly P&I to about $1,159.74 even at the same 6% rate. Taxes, insurance, and applicable fees or other costs are additional and some may change. Refinancing is not guaranteed. What happens to the principal during the first five years, and what changes afterward?” This is a teaching explanation, not a substitute for required disclosures or an approval."
+        },
+        {
+          "id": "PENT-T-07C-route",
+          "type": "short-answer",
+          "prompt": "Write a short response to the HECM question and identify the next reliable review. Add one sentence explaining why the HELOC’s drawn-balance calculation cannot be copied into the HECM answer.",
+          "rubric": [
+            "Explain that the absence of a usual monthly mortgage payment does not erase property charges, upkeep, occupancy, and other program duties",
+            "Recognize repayment triggers and household or non-borrowing-spouse questions that require specific facts and current rules",
+            "Direct HECM counseling and lender questions to the official HUD resources and a qualified specialist",
+            "Avoid a universal promise about heirs or family occupants, a made-up rate or principal limit, or a personal eligibility decision",
+            "Keep the open-end HELOC calculation separate from the HECM framework and any reverse-mortgage disclosure analysis"
+          ],
+          "rationale": "A supported response is: “A HECM can still require property taxes, insurance, maintenance, and compliance with occupancy and other program conditions. The loan can become due under specified circumstances; any protections for a spouse or other household member need their actual facts and rules. A HECM counselor and qualified lender or specialist should review eligibility, counseling, financial assessment, property duties, and repayment conditions using current HUD guidance. The HELOC’s $40,000 drawn-balance example describes a different agreement and cannot establish HECM terms.”"
+        }
+      ]
+    }
+  ]
+}

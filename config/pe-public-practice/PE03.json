@@ -1,0 +1,447 @@
+{
+  "schema_version": "1.0",
+  "module_id": "PE03",
+  "title": "Application and Borrower Qualification",
+  "as_of": "2026-09-30",
+  "status": "authored_review_draft",
+  "public_formative": true,
+  "credit_bearing": false,
+  "official_final_exam": false,
+  "repeatable_practice": true,
+  "implementation_note": "Free ongoing practice design. Repeated attempts support learning only; this artifact does not implement access, enrollment, time tracking, or credit.",
+  "items": [
+    {
+      "id": "PE03-P01",
+      "module_id": "PE03",
+      "unit_id": "3A",
+      "objective_id": "PE03-A",
+      "type": "single_choice",
+      "prompt": "A covered integrated-disclosure transaction has supplied the six application elements, but income documents and a signature are still missing. What is the best next step?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Keep the record as a lead until a signature arrives.",
+          "feedback": "A portal label or missing signature does not postpone a trigger that has already occurred."
+        },
+        {
+          "id": "B",
+          "text": "Record when the information arrived and route the applicable disclosure deadline check.",
+          "feedback": "Correct. Preserve the receipt event and apply the relevant scoped rule; verification and other application definitions remain separate."
+        },
+        {
+          "id": "C",
+          "text": "Wait for underwriting to accept the income before recording an application event.",
+          "feedback": "Accepted qualifying income is not a prerequisite to recognizing this stipulated trigger."
+        },
+        {
+          "id": "D",
+          "text": "Treat the six elements as the definition of a completed application under every law.",
+          "feedback": "The six-element definition is scoped. Regulation B uses a separate completed-application concept."
+        }
+      ],
+      "correct_choice_id": "B",
+      "source_ids": [
+        "P3-01",
+        "P3-02",
+        "P3-03"
+      ],
+      "skill": "trigger_recognition",
+      "assessment_role": "public_formative",
+      "credit_bearing": false
+    },
+    {
+      "id": "PE03-P02",
+      "module_id": "PE03",
+      "unit_id": "3A",
+      "objective_id": "PE03-A",
+      "type": "single_choice",
+      "prompt": "A bank statement has three pages; only pages 1 and 3 are received. Which status is supported?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Asset source accepted because the ending balance is visible.",
+          "feedback": "A balance does not resolve the incomplete source record."
+        },
+        {
+          "id": "B",
+          "text": "Fraud confirmed because a page is missing.",
+          "feedback": "The missing page is a defect to resolve, not evidence sufficient to declare fraud."
+        },
+        {
+          "id": "C",
+          "text": "Complete because the filename says final.",
+          "feedback": "A filename does not prove completeness or review."
+        },
+        {
+          "id": "D",
+          "text": "Incomplete receipt requiring the missing page or an acceptable equivalent.",
+          "feedback": "Correct. Request the specific missing evidence through the approved process and preserve the open review status."
+        }
+      ],
+      "correct_choice_id": "D",
+      "source_ids": [],
+      "skill": "evidence_status",
+      "assessment_role": "public_formative",
+      "credit_bearing": false
+    },
+    {
+      "id": "PE03-P03",
+      "module_id": "PE03",
+      "unit_id": "3A",
+      "objective_id": "PE03-A",
+      "type": "single_choice",
+      "prompt": "A consumer securely uploads an employer-produced pay statement. Which conclusion is most accurate?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Its source can still be the employer; reliability and acceptability need the applicable review.",
+          "feedback": "Correct. Distinguish the record's creator from its delivery channel, then evaluate the record for its purpose."
+        },
+        {
+          "id": "B",
+          "text": "It becomes a consumer-created record solely because the consumer uploaded it.",
+          "feedback": "Delivery by the consumer does not automatically change who produced a third-party record."
+        },
+        {
+          "id": "C",
+          "text": "It is automatically sufficient for every program.",
+          "feedback": "Acceptability depends on the transaction, program, facts, and necessary verification."
+        },
+        {
+          "id": "D",
+          "text": "The upload establishes that underwriting has accepted the income.",
+          "feedback": "Receipt and an underwriting decision are different events."
+        }
+      ],
+      "correct_choice_id": "A",
+      "source_ids": [
+        "P3-04"
+      ],
+      "skill": "source_interpretation",
+      "assessment_role": "public_formative",
+      "credit_bearing": false
+    },
+    {
+      "id": "PE03-P04",
+      "module_id": "PE03",
+      "unit_id": "3A",
+      "objective_id": "PE03-A",
+      "type": "single_choice",
+      "prompt": "A borrower changes an application answer after an earlier version was reviewed. What creates the most usable record?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Overwrite the old answer and erase the earlier version.",
+          "feedback": "Erasing the earlier record breaks the decision history."
+        },
+        {
+          "id": "B",
+          "text": "Keep both values with no explanation of which is current.",
+          "feedback": "Unexplained conflicting values leave the reviewer guessing."
+        },
+        {
+          "id": "C",
+          "text": "Preserve the earlier version, date the correction, identify its source, and route any affected decision.",
+          "feedback": "Correct. A traceable correction identifies what changed and which decision must be reconsidered."
+        },
+        {
+          "id": "D",
+          "text": "Delay documenting the change until after closing.",
+          "feedback": "Known material changes need timely handling; a planned closing is not a reason to conceal them."
+        }
+      ],
+      "correct_choice_id": "C",
+      "source_ids": [],
+      "skill": "record_integrity",
+      "assessment_role": "public_formative",
+      "credit_bearing": false
+    },
+    {
+      "id": "PE03-P05",
+      "module_id": "PE03",
+      "unit_id": "3B",
+      "objective_id": "PE03-B",
+      "type": "single_choice",
+      "prompt": "For an exercise, accepted base pay is $2,800 biweekly with 26 periods per year. What is monthly qualifying income before display rounding?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "$5,600",
+          "feedback": "That uses two paychecks per month and confuses biweekly with semimonthly pay."
+        },
+        {
+          "id": "B",
+          "text": "$6,066.666666…",
+          "feedback": "Correct. $2,800 × 26 ÷ 12 = $6,066.666666…; use full precision in the later ratio."
+        },
+        {
+          "id": "C",
+          "text": "$2,800",
+          "feedback": "That is one pay period, not one month."
+        },
+        {
+          "id": "D",
+          "text": "$7,280",
+          "feedback": "Check the annual-to-monthly conversion: divide the $72,800 annual amount by 12."
+        }
+      ],
+      "correct_choice_id": "B",
+      "source_ids": [],
+      "skill": "income_arithmetic",
+      "assessment_role": "public_formative",
+      "credit_bearing": false
+    },
+    {
+      "id": "PE03-P06",
+      "module_id": "PE03",
+      "unit_id": "3B",
+      "objective_id": "PE03-B",
+      "type": "single_choice",
+      "prompt": "Accepted monthly income is $6,000. Qualifying housing is $2,400 and included other debts total $600. What is total DTI?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "40.00%",
+          "feedback": "40.00% is the housing ratio and omits other included debt."
+        },
+        {
+          "id": "B",
+          "text": "10.00%",
+          "feedback": "10.00% uses only the other debts and omits housing."
+        },
+        {
+          "id": "C",
+          "text": "50.00%",
+          "feedback": "Correct. ($2,400 + $600) ÷ $6,000 × 100 = 50.00%. This is not a loan approval."
+        },
+        {
+          "id": "D",
+          "text": "60.00%",
+          "feedback": "The stated payments total $3,000, not $3,600."
+        }
+      ],
+      "correct_choice_id": "C",
+      "source_ids": [],
+      "skill": "dti_arithmetic",
+      "assessment_role": "public_formative",
+      "credit_bearing": false
+    },
+    {
+      "id": "PE03-P07",
+      "module_id": "PE03",
+      "unit_id": "3B",
+      "objective_id": "PE03-B",
+      "type": "single_choice",
+      "prompt": "Assume eligible assets are $28,000 and remaining cash to close is $22,500. The fictional program requires two months of $2,900 housing expense as reserves. Which result is correct?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "$5,500 remains and reserves are $300 short.",
+          "feedback": "Correct. $28,000 − $22,500 = $5,500; required reserves are $5,800, leaving a $300 shortfall under the stipulated rule."
+        },
+        {
+          "id": "B",
+          "text": "$28,000 remains because closing funds also count as reserves.",
+          "feedback": "Money used at closing is no longer available as a remaining reserve."
+        },
+        {
+          "id": "C",
+          "text": "$5,500 remains and exceeds the $2,900 reserve requirement.",
+          "feedback": "The case requires two months, so the requirement is $5,800."
+        },
+        {
+          "id": "D",
+          "text": "$50,500 remains after adding cash to close.",
+          "feedback": "Cash to close consumes funds; do not add it to assets."
+        }
+      ],
+      "correct_choice_id": "A",
+      "source_ids": [],
+      "skill": "asset_arithmetic",
+      "assessment_role": "public_formative",
+      "credit_bearing": false
+    },
+    {
+      "id": "PE03-P08",
+      "module_id": "PE03",
+      "unit_id": "3B",
+      "objective_id": "PE03-B",
+      "type": "single_choice",
+      "prompt": "An applicant wants retirement income considered. What is the sound approach?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Exclude it automatically because it is not wages.",
+          "feedback": "Regulation B does not permit automatic exclusion on that basis."
+        },
+        {
+          "id": "B",
+          "text": "Assume the applicant is too old to repay.",
+          "feedback": "Age-based assumptions are not a substitute for the applicable lawful analysis."
+        },
+        {
+          "id": "C",
+          "text": "Accept any amount without evidence.",
+          "feedback": "Consistent treatment still requires the appropriate evidence and evaluation."
+        },
+        {
+          "id": "D",
+          "text": "Evaluate the individual's income under applicable rules without excluding it merely because it is a retirement benefit.",
+          "feedback": "Correct. Apply an individual, lawful analysis of the income and its probable continuance."
+        }
+      ],
+      "correct_choice_id": "D",
+      "source_ids": [
+        "P3-07"
+      ],
+      "skill": "consistent_evaluation",
+      "assessment_role": "public_formative",
+      "credit_bearing": false
+    },
+    {
+      "id": "PE03-P09",
+      "module_id": "PE03",
+      "unit_id": "3C",
+      "objective_id": "PE03-C",
+      "type": "single_choice",
+      "prompt": "A favorable automated finding used $7,000 monthly income, but the current accepted amount is $6,200. What should happen next?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Keep $7,000 so the favorable finding remains.",
+          "feedback": "Inputs must represent the supported facts, not the desired result."
+        },
+        {
+          "id": "B",
+          "text": "Tell the borrower the system guarantees funding.",
+          "feedback": "An automated finding does not guarantee a lender decision or funding."
+        },
+        {
+          "id": "C",
+          "text": "Record the supported amount and obtain required reassessment and authorized review.",
+          "feedback": "Correct. Changed inputs may change findings or conditions, and the lender remains responsible."
+        },
+        {
+          "id": "D",
+          "text": "Delete the current income evidence.",
+          "feedback": "Deleting contrary evidence would damage the file and conceal a material fact."
+        }
+      ],
+      "correct_choice_id": "C",
+      "source_ids": [
+        "P3-11",
+        "P3-12"
+      ],
+      "skill": "aus_judgment",
+      "assessment_role": "public_formative",
+      "credit_bearing": false
+    },
+    {
+      "id": "PE03-P10",
+      "module_id": "PE03",
+      "unit_id": "3C",
+      "objective_id": "PE03-C",
+      "type": "single_choice",
+      "prompt": "A purchase exercise uses the lower of $400,000 price or $380,000 accepted value for LTV. The loan is $320,000. What is LTV rounded to two decimals?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "80.00%",
+          "feedback": "That divides by price and ignores the lower-value assumption."
+        },
+        {
+          "id": "B",
+          "text": "84.21%",
+          "feedback": "Correct. $320,000 ÷ $380,000 × 100 = 84.21%. The case supplies the denominator rule."
+        },
+        {
+          "id": "C",
+          "text": "95.00%",
+          "feedback": "That compares value with price rather than loan with the specified value."
+        },
+        {
+          "id": "D",
+          "text": "118.75%",
+          "feedback": "That reverses the numerator and denominator."
+        }
+      ],
+      "correct_choice_id": "B",
+      "source_ids": [],
+      "skill": "ltv_arithmetic",
+      "assessment_role": "public_formative",
+      "credit_bearing": false
+    },
+    {
+      "id": "PE03-P11",
+      "module_id": "PE03",
+      "unit_id": "3C",
+      "objective_id": "PE03-C",
+      "type": "single_choice",
+      "prompt": "A lease in the file appears inconsistent with the applicant's stated occupancy plan. What is the best first response?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Record the discrepancy, ask a neutral clarifying question, and route it for review.",
+          "feedback": "Correct. Preserve evidence and resolve the facts before reaching a conclusion."
+        },
+        {
+          "id": "B",
+          "text": "Declare the applicant guilty of fraud.",
+          "feedback": "An inconsistency calls for investigation; it does not alone establish intent or a legal conclusion."
+        },
+        {
+          "id": "C",
+          "text": "Choose the occupancy label with the lowest rate.",
+          "feedback": "Occupancy must reflect the facts, not a pricing preference."
+        },
+        {
+          "id": "D",
+          "text": "Remove the lease from the file.",
+          "feedback": "Removing relevant evidence conceals the issue instead of resolving it."
+        }
+      ],
+      "correct_choice_id": "A",
+      "source_ids": [],
+      "skill": "occupancy_judgment",
+      "assessment_role": "public_formative",
+      "credit_bearing": false
+    },
+    {
+      "id": "PE03-P12",
+      "module_id": "PE03",
+      "unit_id": "3C",
+      "objective_id": "PE03-C",
+      "type": "single_choice",
+      "prompt": "A property record suggests the appraisal omitted a room. What should the originator do?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Tell the appraiser the exact value needed for the deal.",
+          "feedback": "A desired transaction outcome is not an independent valuation basis."
+        },
+        {
+          "id": "B",
+          "text": "Promise the borrower the appraisal will rise.",
+          "feedback": "The outcome of a factual review is not guaranteed."
+        },
+        {
+          "id": "C",
+          "text": "Change the appraisal PDF to match the room count.",
+          "feedback": "Never alter an appraisal to manufacture evidence."
+        },
+        {
+          "id": "D",
+          "text": "Submit factual evidence through the creditor's authorized reconsideration process without pressure for a target value.",
+          "feedback": "Correct. Appropriate factual review can occur while preserving valuation independence."
+        }
+      ],
+      "correct_choice_id": "D",
+      "source_ids": [
+        "P3-13"
+      ],
+      "skill": "collateral_review",
+      "assessment_role": "public_formative",
+      "credit_bearing": false
+    }
+  ]
+}

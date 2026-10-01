@@ -32,3 +32,45 @@ The free training course is non-credit and must never be represented as approved
 ## Unified Admin adapter — 2026-09-19 local implementation
 
 The existing console reads validated NMLS attempts instead of CA/TX blocks: 45 lessons, 8 modules, phase, safe final-attempt summaries, remediation and training completion. Source snapshots and activity reject invalid histories. Credit, certificates and reporting remain independently closed. The common media index includes 45 NMLS instructional targets and uses the existing signed Stream overlay; no asset was uploaded or marked playback-verified. Reviewer access uses the existing NMLS course/version grant and can be revoked without granting a Team role. [Acceptance record](../../admin/UNIFIED-ADMIN-ACCEPTANCE.md). Production migration/deployment and live-account acceptance are still required; no launch gate above is closed by local tests.
+
+## SAFE PE foundations — public practice slice, 2026-09-30
+
+**BUILT / PENDING RELEASE.** PE01 and PE02 are two substantial public foundation modules from a planned national 20-hour SAFE PE course. They are not the complete course and do not carry NMLS provider/course approval, validated instructional hours, enrollment, credit, a certificate, or completion reporting. The planned qualifying course still requires the remaining curriculum, independent SME/item review, genuine instructor/peer interaction, validated delivery and timing, protected assessment, and applicable approvals. This entry does not close any regulated-launch gate above or re-verify the historic external-access statuses.
+
+The existing free-practice engine now has a separate `national-safe-pe-foundations` collection: 16 explained formative questions and 10 activities with 39 tasks across role/authority, licensing sources, mortgage calculations, and security/lien cases. Public practice remains free before, during, and after paid enrollment, without an account or checkout. Written responses are explicitly self-review. No instructor answer guide or protected CE/final question inventory is used as a public source.
+
+Source and verification record: [PE foundations practice release](../../engineering/pe-foundations-practice-2026-09-30.md). The existing CE training identity, approval fields, authentication, payments, timers, and completion authority are unchanged. Production release and live-browser acceptance are separate from local implementation and require the controlled release described in that record.
+
+## PE03/PE04 expansion — local candidate, 2026-09-30
+
+**REVIEWED / PUBLIC PREVIEW UPDATE AUTHORIZED.** The next candidate expands the same public foundation collection to PE01–PE04: four lessons, 40 formative questions, 16 activities and 70 tasks. The new 24 questions retain all 96 authored option-level explanations; six new cases add 13 written self-review tasks and 18 independently checked numerical tasks. No private instructor package is imported. Each new module's 150 proposed elective minutes remain unvalidated.
+
+The four-module diff has been reviewed and authorized to update the same public PR23 preview; `6a7aab9a9ffae03e441975e76281511cbefbef1d` is its prior two-module revision. Exact new-head and rendered acceptance are recorded in the release evidence. Production remains blocked on preservation of the separate live owner-OAuth overlay. This expansion changes no authentication, enrollment, payment, study-time, completion, certificate, approval or credit authority. Available practice remains free before, during and after paid enrollment. The full 20-hour course, remaining curriculum and genuine instructor/peer delivery are not complete.
+
+See [PE03/PE04 integration record](../../engineering/pe-foundations-expansion-2026-09-30.md) for source provenance, validation, exact scope and release limits. This entry does not close any regulated-launch gate above.
+
+## PE05/PE06 expansion — local candidate, 2026-09-30
+
+**BUILT / REVIEWED / PUBLIC PREVIEW UPDATE AUTHORIZED.** PE05 Federal Mortgage Law and PE06 Ethics and Consumer Protection expand the candidate to six lessons, 76 formative questions, 25 activities and 99 tasks. The 36 new questions retain 144 option-level explanations; nine new cases add 20 written self-review tasks and nine independently checked numeric tasks. All 55 source identifiers resolve to public student citations, and the July 2026 Regulation B scope wording is preserved. Each module's 150 proposed minutes remains unvalidated. No instructor guide or protected final is imported.
+
+The reviewed four-module revision is `42871e88cea8bd1c25ee7b0f9f420d748527ed56`; publication of the six-module candidate is authorized only to the same PR23 preview. Exact updated-head/deploy and rendered acceptance are retained in the release evidence. Focused checks (89 Node and two DOM), both builds and the privacy scan pass. Aggregate tests retain the same 57 baseline/fixture failures and 27 skips, so full CI is not green. Production remains held on exact preservation of the manual owner-OAuth deployment. No regulated-launch gate, authentication, payment, credit or completion authority changes. Practice remains free before, during and after paid enrollment. The full 20-hour curriculum, genuine OIL delivery and acceptance are still incomplete.
+
+See [PE05/PE06 integration record](../../engineering/pe-law-ethics-expansion-2026-09-30.md) for provenance, scope, results and release limits.
+
+## PE07/PE08 expansion — reviewed candidate, 2026-09-30
+
+**BUILT / REVIEWED / PUBLIC PREVIEW UPDATE AUTHORIZED.** The local public draft now contains eight lessons, 100 formative questions, 33 activities and 151 tasks. PE07 Nontraditional Mortgage Products and PE08 Integrated Mortgage File Decisions add 24 original questions with 96 option explanations, 32 numerical tasks and 20 written self-review tasks. Independent review checked all new keys, references, rubrics, calculations and four calendar sequences; the Fannie Mae classroom-LTV versus delivery-rounding distinction was corrected before publication review.
+
+PE07 and PE08 each have 100 proposed, unvalidated minutes. The eight-module design budget is 1,000 proposed minutes with 3 federal-law, 3 ethics, 2 nontraditional and 12 elective education-hour equivalents. This is not measured study time, accepted category allocation, approval or a qualifying 20-hour offering. Genuine OIL interaction, human SME/accessibility acceptance, timing validation, protected assessment and applicable approvals remain missing gates. Public practice awards no hours, credit or certificate and stays free before, during and after paid enrollment.
+
+The preceding six-module public preview is `5ce2e3aff619721b73910453708390ba0f20a2ce`. The eight-module update is authorized only for the same PR23 preview; exact updated-head/deploy and rendered acceptance are retained in the release evidence. The eight-module candidate passes 91 focused Node tests, two DOM tests, both builds and the privacy scan. Aggregate tests still have the same 57 baseline/fixture failures and 27 skips; full CI is not green. No auth, backend, CE, Netlify configuration, payment or completion-authority changes. Production remains held on preserving the separate manual owner-OAuth deployment. This entry closes no regulated-launch gate above.
+
+See [PE07/PE08 integration record](../../engineering/pe-product-file-expansion-2026-09-30.md) for exact scope, source integrity, privacy boundaries and validation limits.
+
+## PE03 document evidence lab — preview candidate, 2026-10-01
+
+**BUILT / PUBLIC PREVIEW CANDIDATE.** A supplemental PE03 lab adds ten fictional source excerpts, sixteen evidence tasks, thirty-six distinct numeric checks and two alternative evidence paths to the existing eight-module public practice. It adds no module or proposed instructional minutes. Original lessons, quizzes and cases remain unchanged. Browser-local submitted versions support learner revision; no instructor, peer, timing, identity or completion service is represented.
+
+The candidate is limited to the existing PR23 preview and includes the explicit Read-mode link correction. Qualifying OIL delivery, actual timing, human acceptance, protected final assessment and regulatory approval remain separate open gates. Production, CE, owner OAuth, payments and all credit authority remain unchanged. Aggregate tests retain the same 57 known failures and 27 skips; full CI is not green.
+
+See [PE03 evidence-lab implementation and remaining OIL work](../../engineering/pe-evidence-lab-2026-10-01.md). This entry closes no regulated-launch gate above.

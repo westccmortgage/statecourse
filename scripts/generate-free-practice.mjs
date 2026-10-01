@@ -4,6 +4,7 @@ import { pathToFileURL } from 'node:url';
 import { createHash } from 'node:crypto';
 import { PRACTICE_SOURCES } from '../config/free-practice-sources.mjs';
 import { loadTexasPracticeActivities } from './lib/free-practice-activities.mjs';
+import { buildPeFoundationsPractice } from './lib/pe-foundations-practice.mjs';
 
 const digest = text => createHash('sha256').update(text).digest('hex');
 
@@ -60,7 +61,9 @@ export async function buildFreePractice({root,states,catalogCourses,write}) {
     write(practice_url,JSON.stringify(payload,null,2)+'\n');
     samples.push({state_code:state.state_code,state_name:state.state_name,course_id:course.course_id,course_title:course.course_title,public_status:state.public_status,content_url:lessons[0].content_url,practice_url,lesson_count:lessons.length,question_count:questions.length,activity_count:activities.length,activity_task_count:activities.reduce((n,a)=>n+a.tasks.length,0),coverage:source.coverage,revision:digest(JSON.stringify(payload)).slice(0,16)});
   }
-  const manifest = {schema_version:'2.0',generated_from:['state-registry.json','course-catalog.json','explicit student curriculum and formative exercise allowlist'],disclosure:'Free preview and formative practice only. No enrollment, regulated study time, licensing credit, certificate, or access to a course final examination is created.',samples};
+  samples.push(buildPeFoundationsPractice({root,write}));
+  const manifest = {schema_version:'2.1',generated_from:['state-registry.json','course-catalog.json','explicit student curriculum and formative exercise allowlist'],access:'Free practice remains available before, during and after paid enrollment. No account or payment required.',disclosure:'Free preview and formative practice only. No enrollment, regulated study time, licensing credit, certificate, or access to a course final examination is created.',samples};
   write('data/free-practice-catalog.json',JSON.stringify(manifest,null,2)+'\n');
   return manifest;
 }
+

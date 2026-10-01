@@ -1,0 +1,496 @@
+{
+  "schema_version": "1.0",
+  "module_id": "PE04",
+  "title": "Mortgage Programs Closing and Servicing Public Practice",
+  "as_of": "2026-09-30",
+  "status": "authored_review_draft",
+  "public_formative": true,
+  "credit_bearing": false,
+  "official_final_exam": false,
+  "repeatable_practice": true,
+  "implementation_note": "Free ongoing practice design. Repeated attempts support learning only; this artifact does not implement access, enrollment, time tracking, or credit.",
+  "items": [
+    {
+      "id": "PE04-P01",
+      "module_id": "PE04",
+      "unit_id": "4A",
+      "objective_id": "PE04-A",
+      "objective": "Distinguish conventional and conforming categories",
+      "type": "single_choice",
+      "prompt": "A proposed mortgage is not insured or guaranteed under any government mortgage program. Its amount is below the applicable conforming limit, but the lender has not checked other enterprise requirements. Which description is supported?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "It is automatically conforming because its amount is below the limit.",
+          "feedback": "The amount passes only a size screen. Borrower, documentation, property, and other applicable enterprise requirements still matter."
+        },
+        {
+          "id": "B",
+          "text": "It is conventional; conforming eligibility still requires review of the applicable requirements.",
+          "feedback": "Correct. Conventional identifies the absence of government program insurance or guaranty. The loan limit is only one part of conforming eligibility."
+        },
+        {
+          "id": "C",
+          "text": "It is FHA eligible because FHA can insure any loan below the conforming limit.",
+          "feedback": "The facts establish neither an FHA application nor FHA eligibility. A conventional loan limit does not substitute for FHA program requirements."
+        },
+        {
+          "id": "D",
+          "text": "It is exempt from consumer protection requirements if the lender retains it.",
+          "feedback": "Retention does not erase applicable law. Portfolio status and legal coverage are separate questions."
+        }
+      ],
+      "correct_choice_id": "B",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "skill": "apply",
+      "remediation": "Review Unit 4A Conventional financing and identify the distinct question answered by each category.",
+      "assessment_role": "public_formative",
+      "credit_bearing": false
+    },
+    {
+      "id": "PE04-P02",
+      "module_id": "PE04",
+      "unit_id": "4A",
+      "objective_id": "PE04-A",
+      "objective": "Separate VA benefit eligibility from loan approval",
+      "type": "single_choice",
+      "prompt": "Fictional applicant Owen produces a VA Certificate of Eligibility and asks whether credit and income documents are now unnecessary. What is the best response?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Yes; the COE is the lender's final credit approval.",
+          "feedback": "A COE concerns the home loan benefit. It is not a final lender underwriting decision."
+        },
+        {
+          "id": "B",
+          "text": "No; VA loans are available only to borrowers who also qualify for FHA insurance.",
+          "feedback": "These are separate program categories. The stated FHA requirement is invented."
+        },
+        {
+          "id": "C",
+          "text": "Yes, provided Owen agrees to pay private mortgage insurance.",
+          "feedback": "VA purchase financing does not require PMI, and offering it does not replace repayment review."
+        },
+        {
+          "id": "D",
+          "text": "The COE supports benefit eligibility, but VA and lender credit, income, and other applicable requirements still must be met.",
+          "feedback": "Correct. Explain what the COE establishes and what remains to be evaluated without inventing a universal qualifying threshold."
+        }
+      ],
+      "correct_choice_id": "D",
+      "source_ids": [
+        "S6",
+        "S7"
+      ],
+      "skill": "apply",
+      "remediation": "Review Unit 4A VA backed financing and practice the guarantee explanation.",
+      "assessment_role": "public_formative",
+      "credit_bearing": false
+    },
+    {
+      "id": "PE04-P03",
+      "module_id": "PE04",
+      "unit_id": "4A",
+      "objective_id": "PE04-A",
+      "objective": "Identify USDA eligibility evidence",
+      "type": "single_choice",
+      "prompt": "A seller describes a home surrounded by fields as USDA eligible. The applicants have not checked the address or household income eligibility. What is the best next step for Section 502 guaranteed financing?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Verify the property and household income requirements using USDA resources and the approved lender's review process.",
+          "feedback": "Correct. Both property and household eligibility need evidence, and the rest of the proposed transaction still requires review."
+        },
+        {
+          "id": "B",
+          "text": "Accept the seller's description because visible farmland establishes eligibility.",
+          "feedback": "Appearance is not an official property eligibility determination."
+        },
+        {
+          "id": "C",
+          "text": "Apply the direct loan program's criteria because every USDA loan follows that program.",
+          "feedback": "Direct and guaranteed programs have different channels and requirements. Identify the program actually proposed."
+        },
+        {
+          "id": "D",
+          "text": "Treat a no down payment possibility as proof that no closing funds will be needed.",
+          "feedback": "Down payment and other transaction costs are separate. A financing benefit does not establish cash to close."
+        }
+      ],
+      "correct_choice_id": "A",
+      "source_ids": [
+        "S8",
+        "S9"
+      ],
+      "skill": "apply",
+      "remediation": "Review Unit 4A USDA guaranteed financing and distinguish the location check from repayment evaluation.",
+      "assessment_role": "public_formative",
+      "credit_bearing": false
+    },
+    {
+      "id": "PE04-P04",
+      "module_id": "PE04",
+      "unit_id": "4A",
+      "objective_id": "PE04-A",
+      "objective": "Interpret a limited cost comparison",
+      "type": "single_choice",
+      "prompt": "Two fictional quotes have the same loan amount and term. Other costs are stipulated equal. Cedar requires $1,800 less upfront but $60 more in each monthly payment than Spruce. What can be concluded from these supplied numbers alone?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Cedar is always cheaper because it requires less upfront cash.",
+          "feedback": "This ignores the higher monthly payment and the borrower's holding period and other relevant circumstances."
+        },
+        {
+          "id": "B",
+          "text": "Spruce is always suitable because its monthly payment is lower.",
+          "feedback": "Lower monthly cost alone does not establish suitability, affordability, or eligibility."
+        },
+        {
+          "id": "C",
+          "text": "The nominal payment difference totals $1,800 after 30 payments; this is not a complete economic or suitability analysis.",
+          "feedback": "Correct. $1,800 divided by $60 is 30. The calculation omits matters such as remaining balances and time value, so its conclusion must stay limited."
+        },
+        {
+          "id": "D",
+          "text": "The borrower is certain to refinance before either offer becomes expensive.",
+          "feedback": "A future refinance is not assured by these facts and must not be promised."
+        }
+      ],
+      "correct_choice_id": "C",
+      "source_ids": [
+        "S3",
+        "S10"
+      ],
+      "skill": "analyze",
+      "remediation": "Review Worked example 4A and state both the calculation and its limits.",
+      "assessment_role": "public_formative",
+      "credit_bearing": false
+    },
+    {
+      "id": "PE04-P05",
+      "module_id": "PE04",
+      "unit_id": "4B",
+      "objective_id": "PE04-B",
+      "objective": "Reconcile simplified cash to close",
+      "type": "single_choice",
+      "prompt": "In a fictional purchase, price is $300,000, loan proceeds are $270,000, gross borrower closing charges before credits are $9,000, and an already paid $6,000 deposit is credited. A $3,000 seller credit and $1,000 lender credit are expressly permissible, approved, and fully usable. There are no other adjustments, payoffs, or financed charges. How much remains for the borrower to bring?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "$29,000",
+          "feedback": "Correct. $300,000 minus $270,000 plus $9,000 minus $6,000 minus $3,000 minus $1,000 equals $29,000."
+        },
+        {
+          "id": "B",
+          "text": "$35,000",
+          "feedback": "This omits the already paid $6,000 deposit. A credited deposit reduces the remaining contribution."
+        },
+        {
+          "id": "C",
+          "text": "$23,000",
+          "feedback": "This subtracts the $6,000 deposit twice. Count each source once."
+        },
+        {
+          "id": "D",
+          "text": "$9,000",
+          "feedback": "Gross closing charges alone do not include the down payment or reconcile credits and the deposit."
+        }
+      ],
+      "correct_choice_id": "A",
+      "source_ids": [
+        "S18"
+      ],
+      "skill": "apply",
+      "remediation": "Review Worked example 4B and verify that sources equal uses.",
+      "assessment_role": "public_formative",
+      "credit_bearing": false
+    },
+    {
+      "id": "PE04-P06",
+      "module_id": "PE04",
+      "unit_id": "4B",
+      "objective_id": "PE04-B",
+      "objective": "Route underwriting and title issues correctly",
+      "type": "single_choice",
+      "prompt": "A lender needs evidence of qualifying income, while a title report identifies an unresolved recorded lien. Which coordination response is best?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Ask the title company to approve income because it conducts closing.",
+          "feedback": "Conducting settlement does not transfer the lender's credit decision to the title company."
+        },
+        {
+          "id": "B",
+          "text": "Tell the borrower a satisfactory income review automatically clears title.",
+          "feedback": "A credit determination cannot establish that an identified lien issue has been resolved."
+        },
+        {
+          "id": "C",
+          "text": "Send income evidence through the lender's underwriting process and the lien issue to the designated title professional or counsel.",
+          "feedback": "Correct. The issues have different decision owners. Track both and do not let progress on one falsely clear the other."
+        },
+        {
+          "id": "D",
+          "text": "Remove the lien from the worksheet if the borrower remembers paying it.",
+          "feedback": "A statement that a debt was paid is evidence to investigate, not authority to erase a title issue."
+        }
+      ],
+      "correct_choice_id": "C",
+      "source_ids": [
+        "S12",
+        "S14",
+        "S15"
+      ],
+      "skill": "apply",
+      "remediation": "Review Unit 4B The people have different responsibilities.",
+      "assessment_role": "public_formative",
+      "credit_bearing": false
+    },
+    {
+      "id": "PE04-P07",
+      "module_id": "PE04",
+      "unit_id": "4B",
+      "objective_id": "PE04-B",
+      "objective": "Distinguish receipt of information from condition acceptance",
+      "type": "single_choice",
+      "prompt": "A conditional approval asks for evidence of a deposit's source. The borrower uploads a statement, but the reviewer has not evaluated whether it explains the deposit. What status is accurate?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "All loan conditions are cleared because a file was uploaded.",
+          "feedback": "Receipt establishes only that something arrived. Its adequacy and acceptance remain unresolved."
+        },
+        {
+          "id": "B",
+          "text": "The loan is denied automatically because the condition was not immediately cleared.",
+          "feedback": "The supplied facts show pending review, not an adverse decision."
+        },
+        {
+          "id": "C",
+          "text": "The condition can be ignored if the closing appointment is already scheduled.",
+          "feedback": "Scheduling does not satisfy a condition or authorize disbursement."
+        },
+        {
+          "id": "D",
+          "text": "The statement was received; the deposit source condition remains under review.",
+          "feedback": "Correct. This states the observed event and the remaining decision without overstating either."
+        }
+      ],
+      "correct_choice_id": "D",
+      "source_ids": [
+        "S11",
+        "S12",
+        "S13"
+      ],
+      "skill": "analyze",
+      "remediation": "Review Unit 4B From information to an authorized decision.",
+      "assessment_role": "public_formative",
+      "credit_bearing": false
+    },
+    {
+      "id": "PE04-P08",
+      "module_id": "PE04",
+      "unit_id": "4B",
+      "objective_id": "PE04-B",
+      "objective": "Recognize and route rescission coverage questions",
+      "type": "single_choice",
+      "prompt": "A borrower asks whether every refinance has a federal cancellation period and whether signing always permits immediate release of funds. Which answer is appropriate at this module's recognition level?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Every refinance is rescindable because refinance is the only fact that matters.",
+          "feedback": "Coverage depends on more facts, including the collateral and applicable exceptions."
+        },
+        {
+          "id": "B",
+          "text": "Identify the dwelling, creditor, and transaction facts and route coverage and release timing for the Module 5 legal analysis.",
+          "feedback": "Correct. Do not promise a cancellation right or release date from the transaction label alone."
+        },
+        {
+          "id": "C",
+          "text": "No refinance can be rescinded because the borrower already owns the property.",
+          "feedback": "Many covered principal dwelling transactions can carry a rescission right. Ownership alone does not remove it."
+        },
+        {
+          "id": "D",
+          "text": "Signing always authorizes same day funding, regardless of the transaction.",
+          "feedback": "Signing and lawful disbursement are distinct. Applicable rescission and other release conditions must be addressed."
+        }
+      ],
+      "correct_choice_id": "B",
+      "source_ids": [
+        "S17"
+      ],
+      "skill": "apply",
+      "remediation": "Review Unit 4B Closing readiness has several parts; reserve detailed timing calculations for Module 5.",
+      "assessment_role": "public_formative",
+      "credit_bearing": false
+    },
+    {
+      "id": "PE04-P09",
+      "module_id": "PE04",
+      "unit_id": "4C",
+      "objective_id": "PE04-C",
+      "objective": "Apply servicing transfer payment protection within its scope",
+      "type": "single_choice",
+      "prompt": "A covered loan's servicing transfers November 1. A payment is due November 1 with a contractual grace period through November 15. The old servicer receives the full payment November 10. What follows from the transfer payment protection?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "The borrower may skip all payments for the next 60 days.",
+          "feedback": "The rule protects an otherwise timely payment misdirected to the old servicer. It is not forbearance."
+        },
+        {
+          "id": "B",
+          "text": "The new servicer may charge a late fee solely because payment went to the old servicer.",
+          "feedback": "The stipulated facts satisfy the protection; that payment cannot be treated as late on that basis."
+        },
+        {
+          "id": "C",
+          "text": "That payment may not be treated as late; the protection does not excuse future payments.",
+          "feedback": "Correct. The old servicer received it timely within the contractual grace period and within the 60 day transfer window."
+        },
+        {
+          "id": "D",
+          "text": "Every payment to the old servicer is protected forever after a transfer.",
+          "feedback": "The stated protection has a defined period and a timeliness requirement."
+        }
+      ],
+      "correct_choice_id": "C",
+      "source_ids": [
+        "S20",
+        "S21"
+      ],
+      "skill": "apply",
+      "remediation": "Review Unit 4C A servicing transfer does not suspend payment duties.",
+      "assessment_role": "public_formative",
+      "credit_bearing": false
+    },
+    {
+      "id": "PE04-P10",
+      "module_id": "PE04",
+      "unit_id": "4C",
+      "objective_id": "PE04-C",
+      "objective": "Explain separate components of an escrow payment change",
+      "type": "single_choice",
+      "prompt": "A fictional fully amortizing fixed rate loan has $1,600 monthly principal and interest. The verified new escrow analysis requires $420 for ongoing expenses and an allowed $480 shortage repayment over 12 months. No other components apply. What is the resulting payment?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "$2,060, with $1,600 principal and interest, $420 ongoing escrow, and $40 shortage recovery.",
+          "feedback": "Correct. $480 divided by 12 is $40. The components total $2,060 without any change to the note rate."
+        },
+        {
+          "id": "B",
+          "text": "$2,020, because shortage recovery never affects the payment.",
+          "feedback": "This adds ongoing escrow but omits the stipulated $40 monthly shortage recovery."
+        },
+        {
+          "id": "C",
+          "text": "$2,500, because the full shortage must be added to every monthly payment.",
+          "feedback": "The case specifies 12 month repayment, so divide the shortage rather than adding it in full each month."
+        },
+        {
+          "id": "D",
+          "text": "$1,600, because fixed rate means the total payment cannot change.",
+          "feedback": "A fixed rate does not freeze taxes, insurance, or applicable escrow adjustments."
+        }
+      ],
+      "correct_choice_id": "A",
+      "source_ids": [
+        "S10",
+        "S22"
+      ],
+      "skill": "apply",
+      "remediation": "Review Worked example 4C and label ongoing versus temporary components.",
+      "assessment_role": "public_formative",
+      "credit_bearing": false
+    },
+    {
+      "id": "PE04-P11",
+      "module_id": "PE04",
+      "unit_id": "4C",
+      "objective_id": "PE04-C",
+      "objective": "Distinguish principal balance from a dated payoff",
+      "type": "single_choice",
+      "prompt": "A fictional account shows $150,000 principal. A verified payoff for the intended payoff date adds $360 interest and $40 of applicable unpaid charges. No other amounts or credits apply. What should the coordinator use for this date?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "$150,000 because principal always equals payoff.",
+          "feedback": "That omits the interest and charges expressly included in the verified payoff."
+        },
+        {
+          "id": "B",
+          "text": "$150,400, while verifying updated instructions if the actual payoff date changes.",
+          "feedback": "Correct. Add $150,000, $360, and $40. A dated quote should not be carried forward indefinitely."
+        },
+        {
+          "id": "C",
+          "text": "$149,600 because interest and charges reduce principal.",
+          "feedback": "The supplied interest and unpaid charges are amounts due, not credits."
+        },
+        {
+          "id": "D",
+          "text": "$150,400 less any escrow balance the borrower remembers.",
+          "feedback": "The case provides no escrow offset. Do not invent one; use the verified payoff instructions."
+        }
+      ],
+      "correct_choice_id": "B",
+      "source_ids": [
+        "S23"
+      ],
+      "skill": "apply",
+      "remediation": "Review Unit 4C Payoff requires a date and a reliable quote.",
+      "assessment_role": "public_formative",
+      "credit_bearing": false
+    },
+    {
+      "id": "PE04-P12",
+      "module_id": "PE04",
+      "unit_id": "4C",
+      "objective_id": "PE04-C",
+      "objective": "Respond to hardship without promising relief",
+      "type": "single_choice",
+      "prompt": "Fictional borrower Imani expects to miss next month's payment and asks the original loan officer to guarantee a modification. Which response is best?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Stop paying now; every missed payment increases the right to a modification.",
+          "feedback": "This invents an entitlement and can worsen the borrower's situation. Do not recommend intentional delinquency."
+        },
+        {
+          "id": "B",
+          "text": "Pay an unknown relief firm upfront because it promises approval.",
+          "feedback": "Upfront payment demands and guaranteed relief are warning signs requiring caution and verification."
+        },
+        {
+          "id": "C",
+          "text": "Any forbearance automatically erases the missed payments.",
+          "feedback": "Forbearance is a temporary pause or reduction, not automatic forgiveness."
+        },
+        {
+          "id": "D",
+          "text": "Contact the verified servicer promptly to discuss available options and consider a HUD approved counselor; no specific modification is guaranteed.",
+          "feedback": "Correct. Early contact supports informed evaluation while preserving the distinction between available processes and approved relief."
+        }
+      ],
+      "correct_choice_id": "D",
+      "source_ids": [
+        "S24",
+        "S25",
+        "S26",
+        "S28"
+      ],
+      "skill": "apply",
+      "remediation": "Review Unit 4C Respond early to payment difficulty.",
+      "assessment_role": "public_formative",
+      "credit_bearing": false
+    }
+  ]
+}

@@ -73,6 +73,7 @@ function header(prefix, active = "") {
   const nav = [
     ["Get Licensed", "get-licensed/", "licensed"],
     ["Exam Prep", "exam-prep/", "exam"],
+    ["Free Practice", "free-practice/", "practice"],
     ["Renew / CE", "continuing-education/", "renew"],
     ["Mortgage / NMLS", "mortgage/", "mortgage"],
     ["State Requirements", "state-requirements/", "requirements"],
@@ -101,39 +102,40 @@ function finderForm() {
 
 const practiceManifest = await buildFreePractice({root,states,catalogCourses,write});
 
-const freePracticeBody = `${pageHero("Free practice", "Practice with real StateCourse lesson material.", "Choose a state that is already in development. Choose a course, read its lessons, and answer practice questions with instant explanations. Free to use while courses are in development.")}<section class="page-body practice-page" data-free-practice>
+const freePracticeBody = `${pageHero("Free practice", "Practice with real StateCourse lesson material.", "Choose a state or national mortgage foundations, read the available lessons, and practice with explanations. Free practice stays available before, during and after paid enrollment. No account or payment required.")}<section class="page-body practice-page" data-free-practice>
   <div class="notice"><strong>Practice-only access:</strong> This preview is free and does not create enrollment, regulated study time, licensing credit, a completion certificate, or access to any protected course final examination.</div>
   <div class="practice-layout">
     <aside class="practice-controls">
-      <label for="practiceStateSelect">Choose a state</label>
-      <select id="practiceStateSelect" aria-describedby="practiceDisclosure"><option value="">Choose a state</option></select>
+      <label for="practiceStateSelect">Choose a state or program</label>
+      <select id="practiceStateSelect" aria-describedby="practiceDisclosure"><option value="">Choose a state or program</option></select>
       <label for="practiceCourseSelect">Choose a course</label>
-      <select id="practiceCourseSelect" disabled><option value="">Choose a state first</option></select>
+      <select id="practiceCourseSelect" disabled><option value="">Choose a state or program first</option></select>
       <label for="practiceLessonSelect">Choose a lesson</label>
       <select id="practiceLessonSelect" disabled><option value="">Choose a course first</option></select>
-      <p id="practiceDisclosure">Free practice. Your place and answers are saved on this device only.</p>
-      <dl id="practiceRecord"><div><dt>Status</dt><dd>Choose a state to begin</dd></div></dl>
+      <p id="practiceDisclosure">Free before, during and after paid enrollment. Your place and answers are saved on this device only. Use fictional information; do not enter real borrower data.</p>
+      <dl id="practiceRecord"><div><dt>Status</dt><dd>Choose a state or program to begin</dd></div></dl>
       <a class="cta-secondary" id="practiceStatePath" href="../state-requirements/" hidden>View state licensing path</a>
     </aside>
     <article class="practice-reader">
       <p class="overline" id="practiceStateLabel">Free lesson and formative practice</p>
-      <h2 id="practiceCourseTitle">Choose a state to open its practice lesson.</h2>
+      <h2 id="practiceCourseTitle">Choose a state or program to open practice.</h2>
       <p class="practice-message" id="practiceMessage" role="status">No account or payment is required.</p>
       <nav class="practice-section-nav" id="practiceSectionNav" aria-label="Practice lesson sections" hidden>
         <button id="practicePrevious" type="button">← Previous</button>
         <span id="practiceSectionLabel"></span>
         <button id="practiceNext" type="button">Next →</button>
       </nav>
-      <div class="practice-mode" id="practiceMode" role="group" aria-label="Study mode" hidden><button type="button" id="practiceReadMode" aria-pressed="true">Read lesson</button><button type="button" id="practiceQuizMode" aria-pressed="false">Practice questions</button><button type="button" id="practiceActivitiesMode" aria-pressed="false" hidden>Casework</button></div>
+      <div class="practice-mode" id="practiceMode" role="group" aria-label="Study mode" hidden><button type="button" id="practiceReadMode" aria-pressed="true">Read lesson</button><button type="button" id="practiceQuizMode" aria-pressed="false">Practice questions</button><button type="button" id="practiceActivitiesMode" aria-pressed="false" hidden>Casework</button><button type="button" id="practiceEvidenceMode" aria-pressed="false" hidden>Evidence lab</button></div>
       <p id="practiceProgress" role="status"></p>
       <div class="textbook-body practice-content" id="practiceContent" tabindex="-1"></div>
       <section id="practiceQuiz" aria-label="Practice questions" hidden></section>
       <section id="practiceActivities" aria-label="Practice casework" hidden></section>
+      <section class="practice-content evidence-lab" id="practiceEvidenceLab" aria-label="PE03 evidence reading lab" hidden></section>
       <div class="practice-bottom-nav" id="practiceBottomNav" hidden><button type="button" id="practicePreviousLesson">← Previous lesson</button><button type="button" id="practiceNextLesson">Next lesson →</button></div>
     </article>
   </div>
 </section>`;
-write("free-practice/index.html", document({ title: "Free Real Estate Practice", description: "Free StateCourse lesson and formative-practice previews for states currently in development.", body: freePracticeBody, scripts: '<script type="module" src="../free-practice.js?v=20260907-practice-repair"></script>' }));
+write("free-practice/index.html", document({ title: "Free Course Practice", description: "Free real estate and mortgage foundation lessons, calculations and formative practice, before, during and after enrollment.", active: "practice", body: freePracticeBody, scripts: '<script type="module" src="../free-practice.js?v=20261001-pe-evidence-lab"></script>' }));
 
 const getLicensedBody = `${pageHero("Get Licensed", "Build your state licensing path.", "Start with your jurisdiction and license goal. StateCourse will show verified requirements, available education, examinations, application milestones, and the next action.")}<section class="page-body"><div style="max-width:820px;margin:auto">${finderForm()}</div><div class="content-grid" style="margin-top:55px"><article class="content-card"><p class="overline">Step 1</p><h2>Choose your state</h2><p>Licensing titles, required education, regulators, exams, and application procedures are jurisdiction-specific.</p><a href="../state-requirements/">Compare requirements →</a></article><article class="content-card"><p class="overline">Step 2</p><h2>Review your path</h2><p>See education, examination, application, background-check, and renewal information before choosing a product.</p><a href="../courses/">View current programs →</a></article><article class="content-card"><p class="overline">Step 3</p><h2>Enroll only when approved</h2><p>Regulated course enrollment stays disabled until the exact approval record and required disclosures are active.</p><a href="${studentPortalUrl}">Returning student sign in →</a></article></div></section>`;
 write("get-licensed/index.html", document({ title: "Get Licensed", description: "Build a state-specific real estate licensing path.", active: "licensed", body: getLicensedBody, scripts: '<script src="../national.js?v=20260906-state-status" defer></script>' }));
@@ -274,7 +276,7 @@ for (const area of serviceAreas) {
   const areaCourses = (category?.programs ?? []).flatMap((program) => program.courses ?? []);
   const areaRecord = deriveJurisdictionRecord(areaCourses);
   const availability = area.service === "exam"
-    ? `Free lesson and formative-practice previews are available for ${freePracticeSamples.length} states currently in development. They are not licensing-exam questions and create no enrollment, credit, or certificate.`
+    ? `Free lesson and formative-practice previews are available in ${practiceManifest.samples.length} course collections currently in development. They are not licensing-exam questions and create no enrollment, credit, or certificate.`
     : !areaRecord.hasCourseRecord
     ? `StateCourse does not offer ${area.product} in any jurisdiction yet. No course record exists, so nothing on this page is an offer, and no enrollment, credit, or certificate is available here.`
     : areaRecord.enrollmentOpen
@@ -330,6 +332,7 @@ const mortgageAvailability = !mortgageRecord.hasCourseRecord
     : `StateCourse has a national mortgage curriculum for training only. Free training availability is checked against the current course decision when you sign in. It is not approved NMLS continuing education, and it awards no licensing credit, certificate or completion reporting.${mortgageTarget ? ` ${esc(mortgageTarget.label)} remains a build target, not an approval date.` : ""}`;
 
 const mortgageCards = [
+  ["SAFE prelicensure foundations", "Study PE01–PE08: mortgage foundations, borrower qualification, programs, federal law, ethics, nontraditional products and integrated file decisions. Eight draft modules from a planned 20-hour course, still in development; no NMLS approval or credit.", "pre-license/", "Read and practice free →"],
   ["National mortgage training", "Study federal mortgage laws, ethics, nontraditional lending and mortgage-file integrity. State-specific CE supplements are not included in this national training curriculum.", "../student/", "Open My Courses →"],
   ["Approval runs through NMLS", "A mortgage continuing-education course carries its own NMLS course approval, and the provider carries its own approval as well. No real estate approval StateCourse holds or seeks extends to a mortgage course.", "../approvals/", "Check StateCourse approval records →"],
   ["Separate from real estate", "Real estate pre-license education, exam preparation, and real estate renewal stay on their own pages. Nothing here counts toward a real estate licence, and nothing there counts toward a mortgage licence.", "../get-licensed/", "Go to real estate licensing →"],
@@ -357,6 +360,29 @@ const mortgageBody = `${pageHero("Mortgage / NMLS", "Mortgage education and prac
     <div class="source-box"><h2>What this page does not claim</h2><p>StateCourse holds no NMLS provider approval and no NMLS course approval. This page publishes no continuing-education hour requirement, renewal deadline, or claim that this training satisfies a state's CE requirements. The course contains source-linked teaching materials, but approved course hours, independent subject-matter review and regulatory release are separate requirements. Nothing here substitutes for NMLS or for your state regulator's current instructions.</p></div>
   </section>`;
 write("mortgage/index.html", document({ title: "Mortgage / NMLS", description: "National mortgage training with source-linked lessons and saved progress. Training only: no NMLS credit, certificate or payment.", active: "mortgage", body: mortgageBody }));
+
+// This is a public foundation collection, not an approved course offering or an
+// enrollment record. It deliberately leaves CE identity, commerce, and timers alone.
+const pePracticeUrl = "../../free-practice/?course=national-safe-pe-foundations";
+const peBody = `${pageHero("Prelicensure foundations · In development", "Start learning the mortgage foundations.", "Read PE01 through PE08, work through realistic decisions and calculations, and check your reasoning. These eight draft modules cover the planned national SAFE PE curriculum; qualifying course delivery remains in development.")}
+<section class="page-body" data-pe-foundations>
+  <div class="notice"><strong>Eight draft modules available. Qualifying course under construction.</strong> This is free, non-credit practice, not a complete 20-hour course. StateCourse holds no NMLS provider or course approval. No licensing credit, course certificate or completion reporting is available.</div>
+  <p><a class="cta-button" href="${pePracticeUrl}">Start free foundations →</a> <a href="../../free-practice/">Browse all free practice</a></p>
+  <div class="content-grid" style="margin-top:34px">
+    <article class="content-card"><p class="overline">PE01</p><h2>Industry Roles and SAFE Foundations</h2><p>Follow a file through its decision owners, distinguish licensing from registration, and connect primary and secondary markets to a consumer question.</p><p>Practice role decisions, licensing-record interpretation, responsible routing and source lookup.</p><a href="${pePracticeUrl}&amp;lesson=module-01&amp;mode=read">Read PE01 and practice →</a></article>
+    <article class="content-card"><p class="overline">PE02</p><h2>Mortgage Mathematics and Security Instruments</h2><p>Work through interest, payment allocation, points, LTV and CLTV. Separate the note, property security, ownership deed and unresolved lien questions.</p><p>Use fictional cases, numeric feedback and written self-review. State-specific legal questions remain separate.</p><a href="${pePracticeUrl}&amp;lesson=module-02&amp;mode=read">Read PE02 and practice →</a></article>
+    <article class="content-card"><p class="overline">PE03</p><h2>Application and Borrower Qualification</h2><p>Build a traceable application record, evaluate income and debt evidence, and distinguish received documents from accepted conditions.</p><p>Practice fictional file decisions, DTI calculations and precise follow-up requests.</p><a href="${pePracticeUrl}&amp;lesson=module-03&amp;mode=read">Read PE03 and practice →</a><p><a href="${pePracticeUrl}&amp;lesson=module-03&amp;mode=lab">Open the document evidence lab →</a></p></article>
+    <article class="content-card"><p class="overline">PE04</p><h2>Mortgage Programs, Closing and Servicing</h2><p>Compare loan-program categories, reconcile cash to close, and follow the file through servicing transfers, escrow and payoff questions.</p><p>Use stated case assumptions and review feedback for every answer choice.</p><a href="${pePracticeUrl}&amp;lesson=module-04&amp;mode=read">Read PE04 and practice →</a></article>
+    <article class="content-card"><p class="overline">PE05</p><h2>Federal Mortgage Law</h2><p>Identify the covered transaction before applying disclosure, application, credit-information and servicing rules.</p><p>Practice scoped legal questions and fictional file decisions with source-linked explanations.</p><a href="${pePracticeUrl}&amp;lesson=module-05&amp;mode=read">Read PE05 and practice →</a></article>
+    <article class="content-card"><p class="overline">PE06</p><h2>Ethics and Consumer Protection</h2><p>Analyze fair treatment, truthful communication, information protection and fraud concerns through fictional scenarios.</p><p>Separate documented facts from assumptions, then review your proposed next steps.</p><a href="${pePracticeUrl}&amp;lesson=module-06&amp;mode=read">Read PE06 and practice →</a></article>
+    <article class="content-card"><p class="overline">PE07</p><h2>Nontraditional Mortgage Products</h2><p>Trace ARM resets, interest-only transitions, balloons and balance growth, then connect repayment evidence to an honest explanation.</p><p>Practice product calculations, coverage decisions and source-linked risk analysis.</p><a href="${pePracticeUrl}&amp;lesson=module-07&amp;mode=read">Read PE07 and practice →</a></article>
+    <article class="content-card"><p class="overline">PE08</p><h2>Integrated Mortgage File Decisions</h2><p>Work through a fictional purchase file and later refinance, reconciling evidence, calculations, disclosure events and responsible decisions.</p><p>Practice versioned file review, closing figures and clear consumer communication.</p><a href="${pePracticeUrl}&amp;lesson=module-08&amp;mode=read">Read PE08 and practice →</a></article>
+  </div>
+  <div class="source-box"><h2>Practice that stays free</h2><p>The available lessons and formative practice remain free before, during and after paid enrollment. No account, tuition or subscription is required. Your practice responses stay in this browser. Use fictional information only.</p><p>Multiple-choice and numeric responses receive automatic explanations. Written work uses self-review criteria; no instructor response or grade is promised. These activities do not create regulated study time, course passage or access to a protected final examination.</p></div>
+  <div class="source-box"><h2>What remains before the complete course</h2><p>The eight draft modules still require independent subject-matter acceptance, genuine instructor and peer interaction, validated delivery and timing, protected assessment, and applicable provider and course approvals before qualifying-course delivery. This self-guided foundation collection is not the instructor-led qualifying course.</p><p>Student manuscripts adapted September 30, 2026, with sources linked in each lesson. The CE training curriculum remains a separate <a href="../">mortgage training experience</a>.</p></div>
+</section>`;
+write("mortgage/pre-license/index.html", document({ title: "SAFE PE Foundations: PE01–PE08", description: "Eight free draft mortgage modules with casework and calculations. Planned 20-hour SAFE PE course in development; no NMLS credit.", prefix: "../../", active: "mortgage", body: peBody }));
+
 
 write("my-statecourse/index.html", document({ title: "My StateCourse", description: "Return to your StateCourse licensing path and courses.", body: `${pageHero("Returning student", "Continue where you left off.", "Sign in to view active courses, progress, assessments, instructor support, payments, and certificates tied to your exact course version.")}<section class="page-body"><div class="content-grid"><article class="content-card"><p class="overline">My Licensing Path</p><h2>See the next required action</h2><p>Your education, exam preparation, application milestones, and renewal path remain organized in one account.</p><a href="${studentPortalUrl}">Student sign in →</a></article><article class="content-card"><p class="overline">My Courses</p><h2>Return to active education</h2><p>Continue only the courses connected to your verified enrollment record.</p><a href="${studentPortalUrl}">Open course dashboard →</a></article><article class="content-card"><p class="overline">Records</p><h2>Preserve completed education</h2><p>Eligible certificates always point to the exact approved course and version completed.</p><a href="${studentPortalUrl}">View my records →</a></article></div></section>` }));
 

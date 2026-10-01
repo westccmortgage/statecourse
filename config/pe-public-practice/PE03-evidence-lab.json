@@ -1,0 +1,1888 @@
+{
+  "schema_version": "1.0.0",
+  "id": "pe03-evidence-lab",
+  "title": "PE03 Borrower Evidence Reading Lab",
+  "version": "2026-10-01.4",
+  "verified_date": "2026-10-01",
+  "language": "en-US",
+  "module": "PE03",
+  "placement": "Supplemental public practice within existing PE03 Units 3A–3C; not a ninth module",
+  "access_and_scope": [
+    "Free public self-guided practice before, during, and after paid enrollment. No account or payment is required.",
+    "Under construction. Not NMLS approved. No credit, education hours, certificate, license, SAFE test result, or course-completion determination is awarded. This lab adds no proposed or earned minutes.",
+    "All case records, entities, labels, amounts, tasks, and case decisions are original fictional teaching material. Do not enter or upload real borrower records or identifying information.",
+    "These are simplified training records, not complete underwriting evidence, lender forms, or legal advice. No real account numbers, Social Security numbers, logos, or copied lender forms are used.",
+    "Every answer, derivation, and rubric is intentionally public formative feedback. No protected examination, private instructor guide, private case key, or protected item bank was used.",
+    "The fictional case reviewer is an authored role in the case, not a course instructor. This lab provides no instructor replies, simulated peer exchanges, or actual online instructor led (OIL) delivery. Self-review does not satisfy the genuine interaction and instructor-feedback requirements of a future OIL offering."
+  ],
+  "learning_goals": [
+    "Extract facts from the actual fields of a training record before using a summary.",
+    "Separate reported amounts, arithmetic estimates, and accepted case inputs.",
+    "Read payment frequency, gross and net earnings, variable earnings, period coverage, and missing pages.",
+    "Reconcile asset balances without counting an inter-account transfer as new money.",
+    "Distinguish requested, received, reviewed, and accepted evidence.",
+    "Preserve source facts and prior answers when a later record changes the analysis."
+  ],
+  "working_instructions": [
+    "Keep an offline response sheet. For each task save the task ID, branch, version, source IDs and fields, first answer, revised answer, and reason for revision. Do not overwrite the first answer.",
+    "Work through the five releases in order. All releases and public feedback are visible; the sequence is a reading discipline, not a timed or credit-bearing gate. Try a task before reading its feedback.",
+    "At Release 2 choose Branch R (missing page later received) or Branch U (page still unavailable). Both are valid case paths. Keep that choice throughout; compare the other path only as a separately labeled alternative.",
+    "Branch R alone receives E06. Branch U must not borrow E06 evidence. Both paths receive E07–E10. E07 states separate asset inputs for each path. The later debt change applies to both paths.",
+    "Use the reviewer’s accepted inputs for qualification calculations and funds-availability decisions. Other tasks expressly ask for arithmetic on reported, observed, estimated, or provisional facts; perform that arithmetic and label its source and status clearly without presenting it as accepted. Do not infer an approval, denial, or universal program limit from an answer.",
+    "Use dollars and cents for currency. Keep full precision until the final operation; display percentages to two decimals. A change between percentages is reported in percentage points. There are 12 months in the annual-to-monthly conversions.",
+    "Dates within the fictional file describe its chronology. Release numbers describe when the learner sees a record, so an earlier-dated record can appear in a later release."
+  ],
+  "reading_aids": [
+    {
+      "title": "Read a pay record in this order",
+      "text": "Identify the creator and the person it concerns, the pay period, payment date, stated pay frequency, current base and additional earnings, gross total, deductions, net amount, and year-to-date columns. Current and year-to-date columns measure different periods. A bank deposit is usually a net cash receipt; do not substitute it for gross qualifying income."
+    },
+    {
+      "title": "Read a bank record in this order",
+      "text": "Locate the holder, symbolic account label, statement period, page count, opening and closing balances, and transaction details. A missing page is a specific evidence gap even when the displayed totals balance. Add ending balances from the same date; do not then add the transfers already reflected in them."
+    },
+    {
+      "title": "Four states answer four different questions",
+      "text": "Requested: what was asked for? Received: what arrived and when? Reviewed: who examined it, and for what purpose? Accepted: who had authority to decide that a stated requirement was met? A completeness review can identify a missing page without accepting the assets. Track these events separately, not as interchangeable labels."
+    },
+    {
+      "title": "Separate three kinds of statement",
+      "text": "A source fact is a field in an exhibit. A derived result is arithmetic using identified fields. An accepted input is a case-specific decision expressly supplied by the fictional reviewer. The source notes below contain legal or program concepts; they do not turn a fictional reviewer choice into a rule."
+    }
+  ],
+  "sources": [
+    {
+      "id": "S01",
+      "authority": "Fannie Mae Selling Guide",
+      "classification": "program guidance",
+      "section": "B3-3.2-01",
+      "title": "Standards for Employment and Income Documentation",
+      "url": "https://selling-guide.fanniemae.com/sel/b3-3.2-01/standards-employment-and-income-documentation",
+      "page_date": "2026-03-04",
+      "verified_date": "2026-10-01",
+      "scope": "Fannie Mae employment-income documentation; not a universal legal rule or a complete checklist.",
+      "concept": "Borrower-provided employment records must identify their third-party source and be complete and legible. A paystub needs enough information for the income calculation, including year-to-date earnings. A borrower upload does not change who originated the record."
+    },
+    {
+      "id": "S02",
+      "authority": "Fannie Mae Selling Guide",
+      "classification": "program guidance",
+      "section": "B3-3.3-01",
+      "title": "Base Income",
+      "url": "https://selling-guide.fanniemae.com/sel/b3-3.3-01/base-income",
+      "page_date": "2026-03-04",
+      "verified_date": "2026-10-01",
+      "scope": "Fannie Mae base-income treatment. Overtime is a separate income category; this lab supplies no overtime-eligibility method.",
+      "concept": "For fixed base pay, biweekly gross pay is converted using 26 payments divided by 12 months; twice-monthly pay uses two payments per month. The Guide also distinguishes fixed from variable base income and calls for consistency with year-to-date base earnings. This calculation alone does not establish eligibility."
+    },
+    {
+      "id": "S03",
+      "authority": "Fannie Mae Selling Guide",
+      "classification": "program guidance",
+      "section": "B3-4.2-02",
+      "title": "Depository Accounts",
+      "url": "https://selling-guide.fanniemae.com/sel/b3-4.2-02/depository-accounts",
+      "page_date": "2022-12-14",
+      "verified_date": "2026-10-01",
+      "scope": "Fannie Mae depository assets. This lab does not teach large-deposit thresholds, all verification alternatives, or an account-exclusion rule.",
+      "concept": "Funds used for a down payment, closing costs, or reserves must be verified. A transfer whose source is identifiable on statements between verified accounts can be treated differently from an unexplained deposit. Indications of borrowed funds still require attention."
+    },
+    {
+      "id": "S04",
+      "authority": "CFPB Regulation Z and official interpretations",
+      "classification": "federal regulation with covered-transaction scope",
+      "section": "12 CFR 1026.43(c)(3), (c)(4), and (c)(7)",
+      "title": "Minimum standards for transactions secured by a dwelling",
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/43/",
+      "page_date": null,
+      "verified_date": "2026-10-01",
+      "scope": "Covered ability-to-repay determinations; the regulation contains exceptions and requirements not reproduced here.",
+      "concept": "For covered transactions, income or assets relied on must be verified with reasonably reliable third-party records, subject to the regulation. The official interpretation of paragraph (c)(7) does not prescribe one specific DTI limit. A computed ratio alone therefore does not decide this case."
+    }
+  ],
+  "source_scope_note": "The linked primary pages were read on October 1, 2026. Page revision dates differ from this verification date and from any applicable effective date. Check current law, program instructions, transaction coverage, and lender authority before using a real file. The concise concepts above support document-reading habits; they are not a whole underwriting policy. All amounts and reviewer decisions below are fictional case facts, not facts taken from these sources.",
+  "branches": [
+    {
+      "id": "R",
+      "title": "Missing page received",
+      "condition": "The checking transaction page E06 arrives on September 18.",
+      "exclusive_exhibit_ids": [
+        "E06"
+      ],
+      "asset_input_exhibit": "E07",
+      "accepted_assets": "27000.00"
+    },
+    {
+      "id": "U",
+      "title": "Missing page unavailable",
+      "condition": "The checking transaction page has not arrived at any point in this path.",
+      "excluded_exhibit_ids": [
+        "E06"
+      ],
+      "asset_input_exhibit": "E07",
+      "accepted_assets": "10000.00"
+    }
+  ],
+  "stages": [
+    {
+      "id": "release-1",
+      "title": "Read the original packet",
+      "exhibit_ids": [
+        "E01",
+        "E02",
+        "E03",
+        "E04"
+      ],
+      "task_ids": [
+        "T01",
+        "T02",
+        "T03",
+        "T04",
+        "T05",
+        "T06"
+      ],
+      "response_version": "V1",
+      "instruction": "Use only E01–E04. No acceptance decision has yet been supplied."
+    },
+    {
+      "id": "release-2",
+      "title": "Request the exact missing evidence",
+      "exhibit_ids": [
+        "E05"
+      ],
+      "task_ids": [
+        "T07",
+        "T08"
+      ],
+      "response_version": "V1",
+      "instruction": "Choose R or U now and record the choice. The page is still missing in both paths at this release."
+    },
+    {
+      "id": "release-3",
+      "title": "Reconcile and calculate under supplied decisions",
+      "exhibit_ids": [
+        "E06",
+        "E07",
+        "E08"
+      ],
+      "task_ids": [
+        "T09",
+        "T10",
+        "T11",
+        "T12",
+        "T13"
+      ],
+      "response_version": "V1-reviewed",
+      "instruction": "Read E06 only in R. Read the correct R or U asset instruction in E07. Save the resulting V1-reviewed analysis before continuing."
+    },
+    {
+      "id": "release-4",
+      "title": "Receive a changed debt fact",
+      "exhibit_ids": [
+        "E09"
+      ],
+      "task_ids": [
+        "T14"
+      ],
+      "response_version": "V2-pending",
+      "instruction": "Preserve V1-reviewed. Record the new evidence without pretending it was known or accepted earlier."
+    },
+    {
+      "id": "release-5",
+      "title": "Recalculate after the case review",
+      "exhibit_ids": [
+        "E10"
+      ],
+      "task_ids": [
+        "T15",
+        "T16"
+      ],
+      "response_version": "V2-reviewed",
+      "instruction": "Use E10 only now. Save the revised calculation beside the original and explain the change."
+    }
+  ],
+  "exhibits": [
+    {
+      "id": "E01",
+      "title": "Application extract A1",
+      "stage": "release-1",
+      "kind": "borrower-reported application",
+      "fictional": true,
+      "warning": "FICTIONAL EXCERPT — Simplified training record, not complete underwriting evidence.",
+      "created_date": "2026-09-16",
+      "received_date": "2026-09-16",
+      "origin": "Case Applicant Rowan; applicant-originated statement",
+      "applicable_branches": [
+        "R",
+        "U"
+      ],
+      "fields": {
+        "record_version": "A1 — preserve this original",
+        "applicant": "Case Applicant Rowan — fictional label",
+        "property": "TRAIN-HOME — symbolic property only",
+        "purpose": "Purchase; principal-residence intent reported by applicant",
+        "employment": "Fixed salary at Training Workshop — fictional employer",
+        "reported_base_monthly": "6000.00",
+        "reported_overtime_monthly": "600.00",
+        "reported_total_monthly_income": "6600.00",
+        "reported_checking": "17000.00",
+        "reported_savings": "10000.00",
+        "reported_transfer_as_extra_funds": "4000.00",
+        "reported_total_funds": "31000.00",
+        "applicant_explanation": "I get paid every other Friday. I counted two salary checks each month. I added my August savings transfer to the two account balances.",
+        "reported_existing_nonhousing_payments": "700.00"
+      },
+      "notes": [
+        "This is a limited application extract, not a complete loan application or a legal application-trigger exercise. No identifying numbers or real address are supplied.",
+        "No income, assets, occupancy classification, or loan decision is accepted merely because it appears in A1."
+      ]
+    },
+    {
+      "id": "E02",
+      "title": "Employer pay statement P1",
+      "stage": "release-1",
+      "kind": "simplified employer payroll record",
+      "fictional": true,
+      "warning": "FICTIONAL EXCERPT — Simplified training record, not complete underwriting evidence.",
+      "created_date": "2026-09-11",
+      "received_date": "2026-09-16",
+      "origin": "Training Workshop payroll; downloaded and uploaded by the fictional applicant",
+      "applicable_branches": [
+        "R",
+        "U"
+      ],
+      "fields": {
+        "employee": "Case Applicant Rowan",
+        "employer": "Training Workshop",
+        "pay_period_start": "2026-08-24",
+        "pay_period_end": "2026-09-06",
+        "pay_date": "2026-09-11",
+        "frequency": "Biweekly, every other Friday",
+        "annual_pay_periods": 26,
+        "pay_type": "Fixed salary plus separately listed overtime",
+        "pages_supplied": [
+          1,
+          2
+        ],
+        "pages_expected": 2,
+        "current_base_gross": "3000.00",
+        "current_overtime": "240.00",
+        "current_total_gross": "3240.00",
+        "current_tax_deductions": "800.00",
+        "current_benefit_deductions": "200.00",
+        "current_retirement_deductions": "140.00",
+        "current_total_deductions": "1140.00",
+        "current_net": "2100.00",
+        "ytd_pay_events": 18,
+        "ytd_base_gross": "54000.00",
+        "ytd_overtime": "3600.00",
+        "ytd_total_gross": "57600.00",
+        "ytd_total_deductions": "19800.00",
+        "ytd_net": "37800.00"
+      },
+      "notes": [
+        "The page-1 current column and page-2 year-to-date column are presented together here as one simplified excerpt. Its modeled page set is complete; this is still not a full underwriting packet.",
+        "The earnings history, checks of employment, and other requirements needed for a real decision are outside this packet. No overtime acceptance decision is supplied here.",
+        "The September pay record is not an August bank transaction; matching amounts alone would not prove that it is.",
+        "The provided year-to-date column totals 18 pay events through September 11. No first current-year pay date or complete employment history is supplied. Do not infer continuous employment for the entire year from this count; the later M1 income acceptance is a separate supplied case assumption."
+      ]
+    },
+    {
+      "id": "E03",
+      "title": "Checking statement C1 with a missing page",
+      "stage": "release-1",
+      "kind": "incomplete simplified depository statement",
+      "fictional": true,
+      "warning": "FICTIONAL EXCERPT — Simplified training record, not complete underwriting evidence.",
+      "created_date": "2026-08-31",
+      "received_date": "2026-09-16",
+      "origin": "Training Depository; applicant-supplied record",
+      "applicable_branches": [
+        "R",
+        "U"
+      ],
+      "fields": {
+        "holder": "Case Applicant Rowan",
+        "account_label": "TRAIN-CHECK — symbolic, not an account number",
+        "period_start": "2026-08-01",
+        "period_end": "2026-08-31",
+        "pages_expected": 3,
+        "pages_supplied": [
+          1,
+          3
+        ],
+        "missing_pages": [
+          2
+        ],
+        "opening_balance": "16000.00",
+        "total_credits": "8200.00",
+        "total_debits": "7200.00",
+        "ending_balance": "17000.00",
+        "page_1": "Holder, period, page count, and the summary amounts above",
+        "page_2": "NOT RECEIVED: transaction details",
+        "page_3": "Modeled notice page; no transaction detail"
+      },
+      "notes": [
+        "The page-1 equation can be checked, but the absence of page 2 prevents inspection of the individual checking transactions.",
+        "Receipt of pages 1 and 3 is not receipt of a complete modeled statement and is not acceptance of the ending balance for qualification."
+      ]
+    },
+    {
+      "id": "E04",
+      "title": "Savings statement S1",
+      "stage": "release-1",
+      "kind": "simplified depository statement",
+      "fictional": true,
+      "warning": "FICTIONAL EXCERPT — Simplified training record, not complete underwriting evidence.",
+      "created_date": "2026-08-31",
+      "received_date": "2026-09-16",
+      "origin": "Training Depository; applicant-supplied record",
+      "applicable_branches": [
+        "R",
+        "U"
+      ],
+      "fields": {
+        "holder": "Case Applicant Rowan",
+        "account_label": "TRAIN-SAVE — symbolic, not an account number",
+        "period_start": "2026-08-01",
+        "period_end": "2026-08-31",
+        "pages_expected": 2,
+        "pages_supplied": [
+          1,
+          2
+        ],
+        "opening_balance": "14000.00",
+        "total_credits": "0.00",
+        "total_debits": "4000.00",
+        "ending_balance": "10000.00",
+        "transactions": [
+          {
+            "date": "2026-08-20",
+            "description": "Transfer to TRAIN-CHECK",
+            "direction": "debit",
+            "amount": "4000.00"
+          }
+        ]
+      },
+      "notes": [
+        "Page 1 contains the holder, dates, page count, and balances. Page 2 contains the one transaction listed. No other modeled transactions or interest appear.",
+        "The savings-side transfer is visible now. The matching checking transaction is not yet available."
+      ]
+    },
+    {
+      "id": "E05",
+      "title": "Evidence request and intake review log Q1",
+      "stage": "release-2",
+      "kind": "fictional processing record",
+      "fictional": true,
+      "warning": "FICTIONAL EXCERPT — Simplified training record, not complete underwriting evidence.",
+      "created_date": "2026-09-17",
+      "received_date": "2026-09-17",
+      "origin": "Case Intake Clerk; fictional completeness review only",
+      "applicable_branches": [
+        "R",
+        "U"
+      ],
+      "fields": {
+        "review_scope": "Completeness and consistency; no underwriting acceptance authority exercised",
+        "pay_review": "E02 pages 1 and 2 received; current and year-to-date columns legible; conflict with A1 monthly base flagged",
+        "checking_review": "E03 pages 1 and 3 received; page 2 absent",
+        "savings_review": "E04 modeled pages 1 and 2 received",
+        "requests": [
+          {
+            "id": "Q-ASSET",
+            "requested_date": "2026-09-17",
+            "item": "Page 2 of August 2026 TRAIN-CHECK statement, or an acceptable alternative selected by the responsible reviewer",
+            "received_at_this_release": false,
+            "accepted_at_this_release": false
+          },
+          {
+            "id": "Q-BASE",
+            "requested_date": "2026-09-17",
+            "item": "Reconcile A1 twice-monthly calculation with P1 biweekly pay frequency",
+            "received_at_this_release": false,
+            "accepted_at_this_release": false
+          },
+          {
+            "id": "Q-OT",
+            "requested_date": "2026-09-17",
+            "item": "Program-appropriate overtime history and review; no acceptable history has yet been supplied",
+            "received_at_this_release": false,
+            "accepted_at_this_release": false
+          }
+        ]
+      },
+      "notes": [
+        "Both branches have the same evidence at this point. A request is not a received document. A clerk checking legibility has not accepted qualifying income or assets.",
+        "The fictional evidence channel is a secure portal. This practice has no borrower upload function and asks you to send nothing."
+      ]
+    },
+    {
+      "id": "E06",
+      "title": "Missing checking transaction page C1 page 2",
+      "stage": "release-3",
+      "kind": "supplement to E03, Branch R only",
+      "fictional": true,
+      "warning": "FICTIONAL EXCERPT — Simplified training record, not complete underwriting evidence.",
+      "created_date": "2026-08-31",
+      "received_date": "2026-09-18",
+      "origin": "Training Depository; applicant-supplied record",
+      "applicable_branches": [
+        "R"
+      ],
+      "fields": {
+        "holder": "Case Applicant Rowan",
+        "account_label": "TRAIN-CHECK",
+        "period_start": "2026-08-01",
+        "period_end": "2026-08-31",
+        "page_number": 2,
+        "pages_expected": 3,
+        "transactions": [
+          {
+            "date": "2026-08-03",
+            "description": "Current housing payment",
+            "direction": "debit",
+            "amount": "1600.00"
+          },
+          {
+            "date": "2026-08-07",
+            "description": "Household payments",
+            "direction": "debit",
+            "amount": "1500.00"
+          },
+          {
+            "date": "2026-08-14",
+            "description": "Training Workshop payroll",
+            "direction": "credit",
+            "amount": "2100.00"
+          },
+          {
+            "date": "2026-08-17",
+            "description": "Vehicle payment",
+            "direction": "debit",
+            "amount": "450.00"
+          },
+          {
+            "date": "2026-08-20",
+            "description": "Transfer from TRAIN-SAVE",
+            "direction": "credit",
+            "amount": "4000.00"
+          },
+          {
+            "date": "2026-08-22",
+            "description": "Revolving account payment",
+            "direction": "debit",
+            "amount": "100.00"
+          },
+          {
+            "date": "2026-08-28",
+            "description": "Training Workshop payroll",
+            "direction": "credit",
+            "amount": "2100.00"
+          },
+          {
+            "date": "2026-08-30",
+            "description": "Other household outflows",
+            "direction": "debit",
+            "amount": "3550.00"
+          }
+        ]
+      },
+      "notes": [
+        "R only: combine with the preserved E03 pages; do not replace E03 or pretend this page was received September 16.",
+        "U only: do not inspect or use these transaction details as evidence for your path. They exist only in the alternative R file.",
+        "The August housing payment is a cash-flow observation, not the proposed qualifying housing payment in E07. The bank page is not a complete debt inventory."
+      ]
+    },
+    {
+      "id": "E07",
+      "title": "Supplied case reviewer input memo M1",
+      "stage": "release-3",
+      "kind": "fictional accepted-input assumptions",
+      "fictional": true,
+      "warning": "FICTIONAL EXCERPT — Simplified training record, not complete underwriting evidence.",
+      "created_date": "2026-09-18",
+      "received_date": "2026-09-18",
+      "origin": "Case Reviewer R — fictional lender-review role, not a course instructor",
+      "applicable_branches": [
+        "R",
+        "U"
+      ],
+      "fields": {
+        "decision_scope": "Inputs for this exercise only; no approval, denial, or funding authorization",
+        "accepted_base_monthly": "6500.00",
+        "accepted_overtime_monthly": "0.00",
+        "overtime_status": "Unresolved and excluded from this calculation; not a permanent rejection of overtime income",
+        "acceptance_basis": "For the exercise, assume authorized review of other necessary employment and income evidence outside these excerpts; E02 alone is not sufficient proof of that review",
+        "housing_components": {
+          "principal_and_interest": "1900.00",
+          "property_taxes": "300.00",
+          "property_insurance": "100.00",
+          "mortgage_insurance": "80.00",
+          "association_dues": "70.00"
+        },
+        "accepted_assets_by_branch": {
+          "R": {
+            "checking": "17000.00",
+            "savings": "10000.00",
+            "total": "27000.00",
+            "status": "Assume authorized acceptance after E03, E04, E06 and other necessary verification outside this packet"
+          },
+          "U": {
+            "checking": "0.00",
+            "savings": "10000.00",
+            "total": "10000.00",
+            "status": "For this exercise accept only savings; checking remains unresolved pending its missing page and review"
+          }
+        },
+        "remaining_cash_to_close": "22000.00",
+        "case_reserve_target": "3000.00",
+        "other_asset_deductions": "0.00",
+        "debt_instruction": "Use all three E08 monthly payments. No other original nonhousing obligations are included in the exercise.",
+        "dti_limit": null
+      },
+      "notes": [
+        "Every acceptance, housing component, debt inclusion, cash requirement, reserve target, and exclusion in this memo is a stipulated fictional case assumption, not a legal or Fannie Mae rule.",
+        "The cash-to-close amount is already net of any prior deposit or credits. Do not subtract them again. The reserve target is a dollar amount invented for this exercise, not a prescribed number of months.",
+        "R and U are mutually exclusive. Never add their asset totals, or carry the R checking acceptance into U.",
+        "No DTI approval threshold is supplied. Resolving these selected arithmetic inputs does not resolve every requirement for a real loan."
+      ]
+    },
+    {
+      "id": "E08",
+      "title": "Original debt record D1",
+      "stage": "release-3",
+      "kind": "simplified fictional creditor-record extract",
+      "fictional": true,
+      "warning": "FICTIONAL EXCERPT — Simplified training record, not complete underwriting evidence.",
+      "created_date": "2026-09-17",
+      "received_date": "2026-09-17",
+      "origin": "Training Credit Record Service — fictional third-party source",
+      "applicable_branches": [
+        "R",
+        "U"
+      ],
+      "fields": {
+        "subject": "Case Applicant Rowan",
+        "as_of_date": "2026-09-17",
+        "obligations": [
+          {
+            "label": "TRAIN-VEHICLE",
+            "kind": "Vehicle loan",
+            "monthly_payment": "450.00"
+          },
+          {
+            "label": "TRAIN-STUDENT",
+            "kind": "Student loan",
+            "monthly_payment": "150.00"
+          },
+          {
+            "label": "TRAIN-REVOLVING",
+            "kind": "Revolving minimum payment",
+            "monthly_payment": "100.00"
+          }
+        ],
+        "new_installment_listed": false
+      },
+      "notes": [
+        "E07 expressly includes these supplied payments. The student-loan amount is an assumption, not a method for deciding a real student-loan payment.",
+        "This excerpt has no real bureau format, score, identifying number, or account number. It is not a full credit report.",
+        "A September 17 record cannot establish the absence of a later obligation."
+      ]
+    },
+    {
+      "id": "E09",
+      "title": "New installment record D2",
+      "stage": "release-4",
+      "kind": "simplified fictional creditor agreement extract",
+      "fictional": true,
+      "warning": "FICTIONAL EXCERPT — Simplified training record, not complete underwriting evidence.",
+      "created_date": "2026-09-21",
+      "received_date": "2026-09-22",
+      "origin": "Training Appliance Finance — fictional creditor",
+      "applicable_branches": [
+        "R",
+        "U"
+      ],
+      "fields": {
+        "borrower": "Case Applicant Rowan",
+        "obligation_label": "TRAIN-APPLIANCE",
+        "agreement_date": "2026-09-21",
+        "new_monthly_payment": "180.00",
+        "down_payment": "0.00",
+        "cash_paid_from_case_accounts": "0.00",
+        "first_payment_date": "2026-10-21",
+        "receipt_log": "September 22: received and awaiting authorized re-review",
+        "applicant_update": "Please add this new appliance financing to my application. It was opened after the earlier debt record."
+      },
+      "notes": [
+        "At this release, receipt is established; a new accepted-input decision is not. Route the changed fact and label any impact calculation provisional.",
+        "For this exercise, the new debt replaces none of the three E08 debts. No payoff, closing payment, or asset adjustment is implied."
+      ]
+    },
+    {
+      "id": "E10",
+      "title": "Versioned application update and re-review memo M2",
+      "stage": "release-5",
+      "kind": "fictional update record and supplied review decision",
+      "fictional": true,
+      "warning": "FICTIONAL EXCERPT — Simplified training record, not complete underwriting evidence.",
+      "created_date": "2026-09-23",
+      "received_date": "2026-09-23",
+      "origin": "A2 borrower update plus Case Reviewer R decision; both fictional",
+      "applicable_branches": [
+        "R",
+        "U"
+      ],
+      "fields": {
+        "application_version": "A2 — amendment linked to preserved A1",
+        "supersedes_original": false,
+        "application_corrections": {
+          "base_monthly": "6500.00",
+          "reported_overtime_monthly": "600.00",
+          "combined_account_balances": "27000.00",
+          "transfer_as_extra_funds": "0.00",
+          "new_installment_monthly": "180.00"
+        },
+        "review_date": "2026-09-23",
+        "accepted_base_monthly": "6500.00",
+        "accepted_overtime_monthly": "0.00",
+        "new_installment_included": "180.00",
+        "original_E08_debts_still_included": true,
+        "housing_components_unchanged": true,
+        "assets_by_branch_unchanged": true,
+        "remaining_cash_to_close_unchanged": true,
+        "reserve_target_unchanged": true,
+        "decision_scope": "New installment included for the revised calculation; all broader qualification decisions remain outside the exercise"
+      },
+      "notes": [
+        "The report of overtime remains $600 in A2; the reviewer still includes $0. Correcting base pay does not accept overtime.",
+        "R retains E07 R assets. U retains E07 U assets and its unresolved checking condition, even though A2 reports combined balances of $27,000.",
+        "The new creditor record is accepted as an included $180 payment solely by this supplied September 23 memo. It was not accepted in the September 22 receipt log.",
+        "The amendment corrects the report and records a new event; it does not erase the original application, evidence dates, or V1 calculation."
+      ]
+    }
+  ],
+  "tasks": [
+    {
+      "id": "T01",
+      "title": "Build the reported borrower snapshot",
+      "stage": "release-1",
+      "activity_type": "short-answer",
+      "source_exhibit_ids": [
+        "E01"
+      ],
+      "prompt": "Before reading any reviewer memo, write a six-line snapshot naming the applicant label, transaction purpose and reported occupancy intent, employment source, reported base and overtime, reported assets, and reported nonhousing payments. Recompute the reported income and funds totals. Label each line reported rather than verified or accepted.",
+      "public_self_review": {
+        "intentionally_public": true,
+        "explanation": "A1 reports a purchase with principal-residence intent, fixed salary from Training Workshop, $6,000 base plus $600 overtime, and $700 nonhousing payments. Its income total is $6,600. Its funds total is $31,000 only because it adds a $4,000 transfer to $17,000 checking and $10,000 savings; that is the applicant’s report to investigate, not an accepted asset amount.",
+        "rubric": [
+          "Names E01 as an applicant-originated source",
+          "Labels intent and amounts reported",
+          "Reproduces the transfer as part of the original report without endorsing it"
+        ],
+        "numeric_expectations": [
+          {
+            "key": "reported_income",
+            "expected": "6600.00",
+            "unit": "USD/month",
+            "derivation": "6000 + 600",
+            "source_field_paths": [
+              "E01.fields.reported_base_monthly",
+              "E01.fields.reported_overtime_monthly"
+            ],
+            "applicable_branches": [
+              "R",
+              "U"
+            ]
+          },
+          {
+            "key": "reported_funds",
+            "expected": "31000.00",
+            "unit": "USD",
+            "derivation": "17000 + 10000 + 4000",
+            "source_field_paths": [
+              "E01.fields.reported_checking",
+              "E01.fields.reported_savings",
+              "E01.fields.reported_transfer_as_extra_funds"
+            ],
+            "applicable_branches": [
+              "R",
+              "U"
+            ]
+          }
+        ]
+      },
+      "response_fields": [
+        "branch",
+        "response_version",
+        "source_fields_used",
+        "original_response",
+        "revised_response",
+        "reason_for_revision"
+      ]
+    },
+    {
+      "id": "T02",
+      "title": "Read the pay statement columns",
+      "stage": "release-1",
+      "activity_type": "short-answer",
+      "source_exhibit_ids": [
+        "E02"
+      ],
+      "prompt": "Extract the pay period, pay date, frequency, current base, overtime, gross, deductions, net, and year-to-date base. Identify the record creator and uploader separately. Check the current gross-to-net arithmetic and the year-to-date base against the number of pay events. Explain why the net column is not the same measure as gross base pay.",
+      "public_self_review": {
+        "intentionally_public": true,
+        "explanation": "P1 covers August 24–September 6 and pays September 11, biweekly. Payroll created it; the applicant uploaded it. Current base $3,000 plus overtime $240 gives $3,240 gross. Deductions of $800, $200, and $140 total $1,140, leaving $2,100 net. Eighteen base payments of $3,000 reconcile to $54,000 year-to-date base. These cross-checks inspect internal consistency; they do not establish full income eligibility.",
+        "rubric": [
+          "Keeps pay period distinct from payment date",
+          "Separates base, overtime, gross, deductions, and net",
+          "Uses the current column for the current check and the year-to-date column for cumulative pay",
+          "Does not describe applicant upload as applicant-created payroll"
+        ],
+        "numeric_expectations": [
+          {
+            "key": "current_gross",
+            "expected": "3240.00",
+            "unit": "USD/pay period",
+            "derivation": "3000 + 240",
+            "source_field_paths": [
+              "E02.fields.current_base_gross",
+              "E02.fields.current_overtime"
+            ],
+            "applicable_branches": [
+              "R",
+              "U"
+            ]
+          },
+          {
+            "key": "current_deductions",
+            "expected": "1140.00",
+            "unit": "USD/pay period",
+            "derivation": "800 + 200 + 140",
+            "source_field_paths": [
+              "E02.fields.current_tax_deductions",
+              "E02.fields.current_benefit_deductions",
+              "E02.fields.current_retirement_deductions"
+            ],
+            "applicable_branches": [
+              "R",
+              "U"
+            ]
+          },
+          {
+            "key": "current_net",
+            "expected": "2100.00",
+            "unit": "USD/pay period",
+            "derivation": "3240 - 1140",
+            "source_field_paths": [
+              "E02.fields.current_total_gross",
+              "E02.fields.current_total_deductions"
+            ],
+            "applicable_branches": [
+              "R",
+              "U"
+            ]
+          },
+          {
+            "key": "ytd_base",
+            "expected": "54000.00",
+            "unit": "USD/year to date",
+            "derivation": "3000 * 18",
+            "source_field_paths": [
+              "E02.fields.current_base_gross",
+              "E02.fields.ytd_pay_events"
+            ],
+            "applicable_branches": [
+              "R",
+              "U"
+            ]
+          }
+        ]
+      },
+      "response_fields": [
+        "branch",
+        "response_version",
+        "source_fields_used",
+        "original_response",
+        "revised_response",
+        "reason_for_revision"
+      ]
+    },
+    {
+      "id": "T03",
+      "title": "Resolve the pay-frequency mismatch",
+      "stage": "release-1",
+      "activity_type": "computation",
+      "source_exhibit_ids": [
+        "E01",
+        "E02"
+      ],
+      "prompt": "Convert only P1 fixed gross base pay to a monthly arithmetic estimate using its stated frequency. Compare it with A1 reported base. Then calculate the monthly figure someone would obtain by mistakenly using P1 net pay with the same frequency. Label that second answer a net-cash extrapolation, not accepted qualifying income. State what still requires review.",
+      "public_self_review": {
+        "intentionally_public": true,
+        "explanation": "Base conversion: $3,000 × 26 ÷ 12 = $6,500, which is $500 above A1 base. Using two payments every month would reproduce A1’s $6,000 and miss two annual payments. Net extrapolation gives $4,550, but it mixes take-home cash with the gross-income calculation. Frequency and base arithmetic can be reconciled; actual income acceptance awaits the appropriate review.",
+        "rubric": [
+          "Uses 26, not 24, annual pay periods",
+          "Excludes overtime from the base conversion",
+          "Distinguishes an arithmetic estimate from a qualifying-income decision",
+          "Keeps the original $6,000 report visible"
+        ],
+        "numeric_expectations": [
+          {
+            "key": "monthly_base_estimate",
+            "expected": "6500.00",
+            "unit": "USD/month",
+            "derivation": "3000 * 26 / 12",
+            "source_field_paths": [
+              "E02.fields.current_base_gross",
+              "E02.fields.annual_pay_periods"
+            ],
+            "applicable_branches": [
+              "R",
+              "U"
+            ]
+          },
+          {
+            "key": "base_report_difference",
+            "expected": "500.00",
+            "unit": "USD/month",
+            "derivation": "(3000 * 26 / 12) - 6000",
+            "source_field_paths": [
+              "E02.fields.current_base_gross",
+              "E02.fields.annual_pay_periods",
+              "E01.fields.reported_base_monthly"
+            ],
+            "applicable_branches": [
+              "R",
+              "U"
+            ]
+          },
+          {
+            "key": "net_cash_extrapolation",
+            "expected": "4550.00",
+            "unit": "USD/month",
+            "derivation": "2100 * 26 / 12",
+            "source_field_paths": [
+              "E02.fields.current_net",
+              "E02.fields.annual_pay_periods"
+            ],
+            "applicable_branches": [
+              "R",
+              "U"
+            ]
+          }
+        ]
+      },
+      "response_fields": [
+        "branch",
+        "response_version",
+        "source_fields_used",
+        "original_response",
+        "revised_response",
+        "reason_for_revision"
+      ]
+    },
+    {
+      "id": "T04",
+      "title": "Keep variable earnings unresolved",
+      "stage": "release-1",
+      "activity_type": "computation",
+      "source_exhibit_ids": [
+        "E01",
+        "E02"
+      ],
+      "prompt": "A colleague proposes multiplying the current $240 overtime by 26 and dividing by 12. Compute that figure, compare it with the $600 report, and write two sentences explaining why neither amount has yet become accepted overtime. Identify a focused next evidence-and-review need without inventing a required history length.",
+      "public_self_review": {
+        "intentionally_public": true,
+        "explanation": "The one-check extrapolation is $520 per month, $80 below the report. That difference is not evidence that either number is a supported qualifying amount. The packet has a current payment and a cumulative year-to-date total, but no supplied decision accepting a representative overtime history. Request the history and applicable income review; do not choose the larger figure merely to lower DTI. This lab intentionally does not teach a complete overtime policy.",
+        "rubric": [
+          "Labels $520 an extrapolation only",
+          "Separates overtime from fixed base pay",
+          "Requests program-appropriate history and analysis without inventing a universal period",
+          "Does not infer accepted overtime from a single check"
+        ],
+        "numeric_expectations": [
+          {
+            "key": "overtime_one_check_extrapolation",
+            "expected": "520.00",
+            "unit": "USD/month",
+            "derivation": "240 * 26 / 12",
+            "source_field_paths": [
+              "E02.fields.current_overtime",
+              "E02.fields.annual_pay_periods"
+            ],
+            "applicable_branches": [
+              "R",
+              "U"
+            ]
+          },
+          {
+            "key": "reported_minus_extrapolated_overtime",
+            "expected": "80.00",
+            "unit": "USD/month",
+            "derivation": "600 - (240 * 26 / 12)",
+            "source_field_paths": [
+              "E01.fields.reported_overtime_monthly",
+              "E02.fields.current_overtime",
+              "E02.fields.annual_pay_periods"
+            ],
+            "applicable_branches": [
+              "R",
+              "U"
+            ]
+          }
+        ]
+      },
+      "response_fields": [
+        "branch",
+        "response_version",
+        "source_fields_used",
+        "original_response",
+        "revised_response",
+        "reason_for_revision"
+      ]
+    },
+    {
+      "id": "T05",
+      "title": "Audit the received packet",
+      "stage": "release-1",
+      "activity_type": "short-answer",
+      "source_exhibit_ids": [
+        "E02",
+        "E03",
+        "E04"
+      ],
+      "prompt": "Create one inventory line for each record: period, expected pages, received pages, exact gap, and present review status. Check the checking-summary and savings-summary equations. Explain why a balanced summary and an uploaded file do not establish acceptance. Do not invent a requested or reviewed date that has not appeared yet.",
+      "public_self_review": {
+        "intentionally_public": true,
+        "explanation": "P1 supplies modeled pages 1–2; C1 supplies 1 and 3 of 3 and lacks page 2; S1 supplies 1–2. All were received September 16. At Release 1 no review or acceptance event has been supplied. Checking: $16,000 + $8,200 − $7,200 = $17,000. Savings: $14,000 − $4,000 = $10,000. Equations can agree while transaction evidence remains missing.",
+        "rubric": [
+          "Names C1 page 2 and August 2026 specifically",
+          "Separates complete modeled page sets from complete underwriting evidence",
+          "Marks review and acceptance not yet established",
+          "Does not fill missing transaction detail by assumption"
+        ],
+        "numeric_expectations": [
+          {
+            "key": "checking_summary_end",
+            "expected": "17000.00",
+            "unit": "USD",
+            "derivation": "16000 + 8200 - 7200",
+            "source_field_paths": [
+              "E03.fields.opening_balance",
+              "E03.fields.total_credits",
+              "E03.fields.total_debits"
+            ],
+            "applicable_branches": [
+              "R",
+              "U"
+            ]
+          },
+          {
+            "key": "savings_summary_end",
+            "expected": "10000.00",
+            "unit": "USD",
+            "derivation": "14000 + 0 - 4000",
+            "source_field_paths": [
+              "E04.fields.opening_balance",
+              "E04.fields.total_credits",
+              "E04.fields.total_debits"
+            ],
+            "applicable_branches": [
+              "R",
+              "U"
+            ]
+          }
+        ]
+      },
+      "response_fields": [
+        "branch",
+        "response_version",
+        "source_fields_used",
+        "original_response",
+        "revised_response",
+        "reason_for_revision"
+      ]
+    },
+    {
+      "id": "T06",
+      "title": "Inventory balances without inventing availability",
+      "stage": "release-1",
+      "activity_type": "computation",
+      "source_exhibit_ids": [
+        "E01",
+        "E03",
+        "E04"
+      ],
+      "prompt": "Add the two August 31 ending balances once. Compare the result with A1 reported funds. Explain the likely double-counting issue while stating which matching transfer evidence is still missing. Can this calculation yet be called accepted funds to close?",
+      "public_self_review": {
+        "intentionally_public": true,
+        "explanation": "The displayed balances total $27,000, $4,000 below A1’s $31,000. Adding a transfer as extra funds on top of ending balances risks counting the same money again. S1 shows a transfer out, but the matching checking transaction page is still absent. The $27,000 is a combined displayed balance, not accepted funds at this release.",
+        "rubric": [
+          "Uses balances with the same August 31 date",
+          "Does not add the transfer to ending balances",
+          "States the checking-side evidence gap",
+          "Keeps displayed balances distinct from eligible or accepted assets"
+        ],
+        "numeric_expectations": [
+          {
+            "key": "combined_displayed_balances",
+            "expected": "27000.00",
+            "unit": "USD",
+            "derivation": "17000 + 10000",
+            "source_field_paths": [
+              "E03.fields.ending_balance",
+              "E04.fields.ending_balance"
+            ],
+            "applicable_branches": [
+              "R",
+              "U"
+            ]
+          },
+          {
+            "key": "report_excess",
+            "expected": "4000.00",
+            "unit": "USD",
+            "derivation": "31000 - (17000 + 10000)",
+            "source_field_paths": [
+              "E01.fields.reported_total_funds",
+              "E03.fields.ending_balance",
+              "E04.fields.ending_balance"
+            ],
+            "applicable_branches": [
+              "R",
+              "U"
+            ]
+          }
+        ]
+      },
+      "response_fields": [
+        "branch",
+        "response_version",
+        "source_fields_used",
+        "original_response",
+        "revised_response",
+        "reason_for_revision"
+      ]
+    },
+    {
+      "id": "T07",
+      "title": "Track four evidence states",
+      "stage": "release-2",
+      "activity_type": "short-answer",
+      "source_exhibit_ids": [
+        "E02",
+        "E03",
+        "E04",
+        "E05"
+      ],
+      "prompt": "Choose Branch R or U and record it. At the end of Release 2, make a four-state log for P1, C1 missing page 2, and the overtime history. For each, distinguish request, receipt, review purpose, and acceptance. Replace the inaccurate label “all uploads verified” with one accurate sentence.",
+      "public_self_review": {
+        "intentionally_public": true,
+        "explanation": "P1 was received September 16 and checked September 17 for completeness and a frequency conflict; qualifying income is not yet accepted. C1 page 2 was requested September 17 but is not yet received in either path. Overtime history was requested September 17 and remains unreceived and unaccepted. A defensible status says: “Original records received; checking page 2 and overtime history remain requested, and qualification review remains outstanding.”",
+        "rubric": [
+          "Records R or U explicitly",
+          "Does not advance R receipt to September 17",
+          "Names the limited completeness review rather than calling it underwriting acceptance",
+          "Uses separate requested and received states"
+        ],
+        "numeric_expectations": []
+      },
+      "response_fields": [
+        "branch",
+        "response_version",
+        "source_fields_used",
+        "original_response",
+        "revised_response",
+        "reason_for_revision"
+      ]
+    },
+    {
+      "id": "T08",
+      "title": "Write a precise evidence request",
+      "stage": "release-2",
+      "activity_type": "short-answer",
+      "source_exhibit_ids": [
+        "E03",
+        "E05"
+      ],
+      "prompt": "Draft a two- or three-sentence request to the fictional applicant about the missing bank page. Identify the account label, period, received pages, missing page, purpose, and secure channel. Avoid asking again for pages already received or promising an approval. This is writing practice; send nothing.",
+      "public_self_review": {
+        "intentionally_public": true,
+        "explanation": "Example: “We have pages 1 and 3 of your August 2026 TRAIN-CHECK statement. Please provide page 2 through the secure portal so the complete record can be reviewed; if that page is unavailable, let the review team know so it can identify an acceptable alternative.” Equivalent neutral wording is welcome. A precise request explains the evidence gap without claiming a credit outcome.",
+        "rubric": [
+          "Identifies August 2026 TRAIN-CHECK page 2",
+          "Acknowledges pages 1 and 3 already received",
+          "Uses the fictional secure portal, with no real upload",
+          "Routes alternatives to the responsible reviewer and makes no approval promise"
+        ],
+        "numeric_expectations": []
+      },
+      "response_fields": [
+        "branch",
+        "response_version",
+        "source_fields_used",
+        "original_response",
+        "revised_response",
+        "reason_for_revision"
+      ]
+    },
+    {
+      "id": "T09",
+      "title": "Build the source-to-fact map",
+      "stage": "release-3",
+      "activity_type": "short-answer",
+      "source_exhibit_ids": [
+        "E01",
+        "E02",
+        "E03",
+        "E04",
+        "E05",
+        "E06",
+        "E07",
+        "E08"
+      ],
+      "prompt": "For your selected branch, build eight rows: pay frequency, reported base, accepted base, reported overtime, included overtime, checking funds, savings funds, and original nonhousing payments. Record the exact exhibit field, period or decision date, receipt date, review or acceptance scope, current value, and open question. Keep the original report beside the accepted input. In U do not cite E06 as received evidence.",
+      "public_self_review": {
+        "intentionally_public": true,
+        "explanation": "A useful map separates A1’s $6,000 report from M1’s accepted $6,500 and separates reported overtime $600 from included overtime $0 with history unresolved. Checking is a displayed $17,000 in both paths; M1 accepts $17,000 only in R and $0 in U. M1 accepts savings $10,000 in either path. E08 lists the three original debt payments, and M1 supplies their inclusion. The public map below gives one model; equivalent source-linked records are acceptable.",
+        "rubric": [
+          "Includes all eight facts with sources and dates",
+          "Preserves report versus accepted input",
+          "Attributes acceptance to fictional M1, not the learner or an instructor",
+          "Carries the branch-specific checking condition",
+          "Uses an open question instead of an invented resolution"
+        ],
+        "numeric_expectations": []
+      },
+      "response_fields": [
+        "branch",
+        "response_version",
+        "source_fields_used",
+        "original_response",
+        "revised_response",
+        "reason_for_revision"
+      ]
+    },
+    {
+      "id": "T10",
+      "title": "Trace the transfer on the chosen path",
+      "stage": "release-3",
+      "activity_type": "computation",
+      "source_exhibit_ids": [
+        "E03",
+        "E04",
+        "E06",
+        "E07"
+      ],
+      "prompt": "R: total E06 credits and debits, match its transfer to E04, and reconcile the combined account opening and closing balances using only external inflows and outflows. U: state which transaction-level reconciliation cannot be done, then calculate the gap between combined displayed balances and M1 accepted assets. If you compare paths, keep two separately labeled answers.",
+      "public_self_review": {
+        "intentionally_public": true,
+        "explanation": "R credits are $2,100 + $4,000 + $2,100 = $8,200. Debits total $7,200. Across both accounts, the $4,000 transfer out and in cancel; $30,000 opening balances + $4,200 external payroll − $7,200 external outflows = $27,000 closing balances. U lacks E06 and cannot verify the checking transaction match. U displayed balances of $27,000 exceed supplied accepted assets of $10,000 by $17,000; that gap is unresolved checking, not proof that the money disappeared.",
+        "rubric": [
+          "R matches date, amount, and symbolic account labels on both sides",
+          "R excludes the internal transfer from new external funds",
+          "U does not use E06",
+          "Keeps asset acceptance sourced to M1"
+        ],
+        "numeric_expectations": [
+          {
+            "key": "R_checking_credits",
+            "expected": "8200.00",
+            "unit": "USD",
+            "derivation": "2100 + 4000 + 2100",
+            "source_field_paths": [
+              "E06.fields.transactions[2].amount",
+              "E06.fields.transactions[4].amount",
+              "E06.fields.transactions[6].amount"
+            ],
+            "applicable_branches": [
+              "R"
+            ]
+          },
+          {
+            "key": "R_checking_debits",
+            "expected": "7200.00",
+            "unit": "USD",
+            "derivation": "1600 + 1500 + 450 + 100 + 3550",
+            "source_field_paths": [
+              "E06.fields.transactions[0].amount",
+              "E06.fields.transactions[1].amount",
+              "E06.fields.transactions[3].amount",
+              "E06.fields.transactions[5].amount",
+              "E06.fields.transactions[7].amount"
+            ],
+            "applicable_branches": [
+              "R"
+            ]
+          },
+          {
+            "key": "R_combined_opening",
+            "expected": "30000.00",
+            "unit": "USD",
+            "derivation": "16000 + 14000",
+            "source_field_paths": [
+              "E03.fields.opening_balance",
+              "E04.fields.opening_balance"
+            ],
+            "applicable_branches": [
+              "R"
+            ]
+          },
+          {
+            "key": "R_external_inflows",
+            "expected": "4200.00",
+            "unit": "USD",
+            "derivation": "2100 + 2100",
+            "source_field_paths": [
+              "E06.fields.transactions[2].amount",
+              "E06.fields.transactions[6].amount"
+            ],
+            "applicable_branches": [
+              "R"
+            ]
+          },
+          {
+            "key": "R_combined_closing",
+            "expected": "27000.00",
+            "unit": "USD",
+            "derivation": "16000 + 14000 + 2100 + 2100 - 1600 - 1500 - 450 - 100 - 3550",
+            "source_field_paths": [
+              "E03.fields.opening_balance",
+              "E04.fields.opening_balance",
+              "E06.fields.transactions"
+            ],
+            "applicable_branches": [
+              "R"
+            ]
+          },
+          {
+            "key": "U_displayed_minus_accepted",
+            "expected": "17000.00",
+            "unit": "USD",
+            "derivation": "17000 + 10000 - 10000",
+            "source_field_paths": [
+              "E03.fields.ending_balance",
+              "E04.fields.ending_balance",
+              "E07.fields.accepted_assets_by_branch.U.total"
+            ],
+            "applicable_branches": [
+              "U"
+            ]
+          }
+        ]
+      },
+      "response_fields": [
+        "branch",
+        "response_version",
+        "source_fields_used",
+        "original_response",
+        "revised_response",
+        "reason_for_revision"
+      ]
+    },
+    {
+      "id": "T11",
+      "title": "Calculate the original qualification measures",
+      "stage": "release-3",
+      "activity_type": "computation",
+      "source_exhibit_ids": [
+        "E01",
+        "E02",
+        "E06",
+        "E07",
+        "E08"
+      ],
+      "prompt": "For V1-reviewed, total all five M1 housing components and all three D1 payments. Use M1 accepted income, show the numerator and denominator, and calculate the housing ratio and total DTI. In R only, use E06 to explain why its existing $1,600 housing outflow does not replace M1 proposed qualifying housing. In U, do not use E06; explain generally why a bank outflow, if later documented, would not by itself replace an accepted M1 input. In either path, explain why net pay and reported overtime do not replace the supplied income. Both paths use the same accepted income and debt inputs here.",
+      "public_self_review": {
+        "intentionally_public": true,
+        "explanation": "M1 housing totals $2,450. D1 other payments total $700. Accepted income is $6,500 base plus $0 overtime = $6,500. Housing ratio is $2,450 ÷ $6,500 × 100 = 37.69%. Total DTI is ($2,450 + $700) ÷ $6,500 × 100 = 48.46%. In R, E06’s $1,600 bank outflow describes prior cash movement; M1 specifies proposed qualifying housing. U cannot cite that missing page or its transaction amount; it can explain that a cash-flow observation alone would not change the accepted M1 housing input. In either path, net cash and unresolved reported overtime are different measures. No threshold has been supplied.",
+        "rubric": [
+          "Lists all five housing components and all three debt payments",
+          "Uses $6,500 accepted income",
+          "Shows the full DTI numerator",
+          "Does not turn the percentage into approval or denial",
+          "Uses E06 and the $1,600 observation only in R; U gives a general explanation without claiming receipt of that page"
+        ],
+        "numeric_expectations": [
+          {
+            "key": "housing_total",
+            "expected": "2450.00",
+            "unit": "USD/month",
+            "derivation": "1900 + 300 + 100 + 80 + 70",
+            "source_field_paths": [
+              "E07.fields.housing_components"
+            ],
+            "applicable_branches": [
+              "R",
+              "U"
+            ]
+          },
+          {
+            "key": "original_other_debt",
+            "expected": "700.00",
+            "unit": "USD/month",
+            "derivation": "450 + 150 + 100",
+            "source_field_paths": [
+              "E08.fields.obligations"
+            ],
+            "applicable_branches": [
+              "R",
+              "U"
+            ]
+          },
+          {
+            "key": "accepted_income",
+            "expected": "6500.00",
+            "unit": "USD/month",
+            "derivation": "6500 + 0",
+            "source_field_paths": [
+              "E07.fields.accepted_base_monthly",
+              "E07.fields.accepted_overtime_monthly"
+            ],
+            "applicable_branches": [
+              "R",
+              "U"
+            ]
+          },
+          {
+            "key": "original_dti_numerator",
+            "expected": "3150.00",
+            "unit": "USD/month",
+            "derivation": "1900 + 300 + 100 + 80 + 70 + 450 + 150 + 100",
+            "source_field_paths": [
+              "E07.fields.housing_components",
+              "E08.fields.obligations"
+            ],
+            "applicable_branches": [
+              "R",
+              "U"
+            ]
+          },
+          {
+            "key": "housing_ratio",
+            "expected": "37.69",
+            "unit": "percent",
+            "derivation": "(1900 + 300 + 100 + 80 + 70) / (6500 + 0) * 100",
+            "source_field_paths": [
+              "E07.fields.housing_components",
+              "E07.fields.accepted_base_monthly",
+              "E07.fields.accepted_overtime_monthly"
+            ],
+            "applicable_branches": [
+              "R",
+              "U"
+            ]
+          },
+          {
+            "key": "original_total_dti",
+            "expected": "48.46",
+            "unit": "percent",
+            "derivation": "(1900 + 300 + 100 + 80 + 70 + 450 + 150 + 100) / (6500 + 0) * 100",
+            "source_field_paths": [
+              "E07.fields.housing_components",
+              "E08.fields.obligations",
+              "E07.fields.accepted_base_monthly",
+              "E07.fields.accepted_overtime_monthly"
+            ],
+            "applicable_branches": [
+              "R",
+              "U"
+            ]
+          }
+        ]
+      },
+      "response_fields": [
+        "branch",
+        "response_version",
+        "source_fields_used",
+        "original_response",
+        "revised_response",
+        "reason_for_revision"
+      ],
+      "source_exhibit_ids_by_branch": {
+        "R": [
+          "E01",
+          "E02",
+          "E06",
+          "E07",
+          "E08"
+        ],
+        "U": [
+          "E01",
+          "E02",
+          "E07",
+          "E08"
+        ]
+      }
+    },
+    {
+      "id": "T12",
+      "title": "Separate funds to close from reserves",
+      "stage": "release-3",
+      "activity_type": "computation",
+      "source_exhibit_ids": [
+        "E07"
+      ],
+      "prompt": "For your chosen path, compare M1 accepted assets with the remaining $22,000 needed to close and the separate $3,000 case reserve target. R: calculate funds left after closing and surplus above the reserve target. U: calculate the cash-to-close shortfall and the total additional eligible funds needed to cover both closing and the target. Do not call a negative balance reserves. Describe the other path separately if you compare it.",
+      "public_self_review": {
+        "intentionally_public": true,
+        "explanation": "R: $27,000 − $22,000 = $5,000 left; subtract the $3,000 target and the surplus is $2,000. U: $22,000 − $10,000 = $12,000 needed just to cover closing; covering closing plus $3,000 reserves needs $15,000 additional eligible funds. U cannot complete the assumed closing with current accepted assets, so a negative “reserve balance” is misleading. These outcomes address the supplied cash assumptions only.",
+        "rubric": [
+          "Uses only the selected branch asset total",
+          "Does not reuse closing funds as reserves",
+          "Labels U $12,000 as closing shortfall and $15,000 as combined funding gap",
+          "States that $3,000 is a fictional case target"
+        ],
+        "numeric_expectations": [
+          {
+            "key": "R_funds_after_closing",
+            "expected": "5000.00",
+            "unit": "USD",
+            "derivation": "27000 - 22000",
+            "source_field_paths": [
+              "E07.fields.accepted_assets_by_branch.R.total",
+              "E07.fields.remaining_cash_to_close"
+            ],
+            "applicable_branches": [
+              "R"
+            ]
+          },
+          {
+            "key": "R_surplus_above_target",
+            "expected": "2000.00",
+            "unit": "USD",
+            "derivation": "27000 - 22000 - 3000",
+            "source_field_paths": [
+              "E07.fields.accepted_assets_by_branch.R.total",
+              "E07.fields.remaining_cash_to_close",
+              "E07.fields.case_reserve_target"
+            ],
+            "applicable_branches": [
+              "R"
+            ]
+          },
+          {
+            "key": "U_closing_shortfall",
+            "expected": "12000.00",
+            "unit": "USD",
+            "derivation": "22000 - 10000",
+            "source_field_paths": [
+              "E07.fields.remaining_cash_to_close",
+              "E07.fields.accepted_assets_by_branch.U.total"
+            ],
+            "applicable_branches": [
+              "U"
+            ]
+          },
+          {
+            "key": "U_combined_funding_gap",
+            "expected": "15000.00",
+            "unit": "USD",
+            "derivation": "22000 + 3000 - 10000",
+            "source_field_paths": [
+              "E07.fields.remaining_cash_to_close",
+              "E07.fields.case_reserve_target",
+              "E07.fields.accepted_assets_by_branch.U.total"
+            ],
+            "applicable_branches": [
+              "U"
+            ]
+          }
+        ]
+      },
+      "response_fields": [
+        "branch",
+        "response_version",
+        "source_fields_used",
+        "original_response",
+        "revised_response",
+        "reason_for_revision"
+      ]
+    },
+    {
+      "id": "T13",
+      "title": "Explain the limited decision",
+      "stage": "release-3",
+      "activity_type": "short-answer",
+      "source_exhibit_ids": [
+        "E05",
+        "E07",
+        "E08"
+      ],
+      "prompt": "Write a three-sentence status for the fictional applicant. Include one accepted input, the result under your branch, one unresolved issue, and the responsible review function. Correct the statement “The DTI result proves this loan is approved.” Distinguish a case assumption from a program or legal fact.",
+      "public_self_review": {
+        "intentionally_public": true,
+        "explanation": "A strong R answer can say that the supplied review uses $6,500 income and $27,000 assets, with $5,000 left after the assumed closing and a 48.46% DTI calculation; the overtime request remains unresolved, and this packet gives no final loan decision. A strong U answer uses only $10,000 accepted assets and identifies the missing checking page and review, a $12,000 closing shortfall, and no final decision. The fictional reviewer owns acceptance; the learner reports and routes. The reserve target is a case choice. S04 explains why its covered rule does not itself supply one universal DTI cutoff.",
+        "rubric": [
+          "Makes the selected branch unambiguous",
+          "Names a real open issue in the fictional file",
+          "Separates mathematical results from loan approval",
+          "Does not invent instructor assessment or a program threshold"
+        ],
+        "numeric_expectations": []
+      },
+      "response_fields": [
+        "branch",
+        "response_version",
+        "source_fields_used",
+        "original_response",
+        "revised_response",
+        "reason_for_revision"
+      ]
+    },
+    {
+      "id": "T14",
+      "title": "Record a changed fact before acceptance",
+      "stage": "release-4",
+      "activity_type": "short-answer",
+      "source_exhibit_ids": [
+        "E08",
+        "E09"
+      ],
+      "prompt": "Start a changed-fact log without altering V1-reviewed. Record the old fact and its source date, the new obligation and its source/receipt dates, what could change, present status, next decision owner, and your preserved response version. Calculate the provisional new nonhousing-payment total, clearly labeled pending review. Explain why the earlier debt record does not cancel the newer evidence.",
+      "public_self_review": {
+        "intentionally_public": true,
+        "explanation": "D1 as of September 17 supports the original $700. D2 dated September 21, received September 22, adds a $180 payment and replaces none of the old debts. The potential total is $880, pending the supplied authorized review. Mark V2-pending; preserve V1-reviewed and the original 48.46% result as historical. Route income/debt calculation effects to the authorized underwriting review function. Receipt alone does not yet establish the new accepted-input decision.",
+        "rubric": [
+          "Separates source date, receipt date, and decision date",
+          "Keeps the first calculation unchanged as historical",
+          "Labels $880 provisional",
+          "Identifies re-review without assuming it already occurred"
+        ],
+        "numeric_expectations": [
+          {
+            "key": "provisional_other_debt",
+            "expected": "880.00",
+            "unit": "USD/month",
+            "derivation": "450 + 150 + 100 + 180",
+            "source_field_paths": [
+              "E08.fields.obligations",
+              "E09.fields.new_monthly_payment"
+            ],
+            "applicable_branches": [
+              "R",
+              "U"
+            ]
+          }
+        ]
+      },
+      "response_fields": [
+        "branch",
+        "response_version",
+        "source_fields_used",
+        "original_response",
+        "revised_response",
+        "reason_for_revision"
+      ]
+    },
+    {
+      "id": "T15",
+      "title": "Recalculate from the versioned decision",
+      "stage": "release-5",
+      "activity_type": "computation",
+      "source_exhibit_ids": [
+        "E07",
+        "E08",
+        "E09",
+        "E10"
+      ],
+      "prompt": "After reading M2, finish V2-reviewed: recompute accepted total nonhousing payments, total DTI numerator, and DTI. Calculate the percentage-point change from V1 using unrounded ratios. Add the acceptance date and source to the changed-fact log. State whether the cash analysis changes under the supplied assumptions and whether A2 reported overtime is now accepted.",
+      "public_self_review": {
+        "intentionally_public": true,
+        "explanation": "M2 on September 23 includes $180 in addition to the original $700, giving $880 nonhousing payments. $2,450 + $880 = $3,330; $3,330 ÷ $6,500 × 100 = 51.23%. Compared with $3,150 ÷ $6,500 × 100, the increase is 2.77 percentage points. M2 expressly keeps the branch assets, cash-to-close, reserve target, housing, and accepted income unchanged. The cash analysis remains the same; $600 reported overtime still contributes $0 to qualifying income. No new loan approval follows from this arithmetic.",
+        "rubric": [
+          "Uses September 23 as the supplied acceptance date",
+          "Includes both old and new debt",
+          "Calculates percentage-point change from unrounded values",
+          "Keeps U checking unresolved and both branches separate",
+          "Preserves reported versus included overtime"
+        ],
+        "numeric_expectations": [
+          {
+            "key": "revised_other_debt",
+            "expected": "880.00",
+            "unit": "USD/month",
+            "derivation": "450 + 150 + 100 + 180",
+            "source_field_paths": [
+              "E08.fields.obligations",
+              "E10.fields.new_installment_included"
+            ],
+            "applicable_branches": [
+              "R",
+              "U"
+            ]
+          },
+          {
+            "key": "revised_dti_numerator",
+            "expected": "3330.00",
+            "unit": "USD/month",
+            "derivation": "1900 + 300 + 100 + 80 + 70 + 450 + 150 + 100 + 180",
+            "source_field_paths": [
+              "E07.fields.housing_components",
+              "E08.fields.obligations",
+              "E10.fields.new_installment_included"
+            ],
+            "applicable_branches": [
+              "R",
+              "U"
+            ]
+          },
+          {
+            "key": "revised_total_dti",
+            "expected": "51.23",
+            "unit": "percent",
+            "derivation": "(1900 + 300 + 100 + 80 + 70 + 450 + 150 + 100 + 180) / (6500 + 0) * 100",
+            "source_field_paths": [
+              "E07.fields.housing_components",
+              "E08.fields.obligations",
+              "E10.fields.new_installment_included",
+              "E10.fields.accepted_base_monthly",
+              "E10.fields.accepted_overtime_monthly"
+            ],
+            "applicable_branches": [
+              "R",
+              "U"
+            ]
+          },
+          {
+            "key": "dti_increase",
+            "expected": "2.77",
+            "unit": "percentage points",
+            "derivation": "((3330 / 6500) - (3150 / 6500)) * 100",
+            "source_field_paths": [
+              "E07.fields.housing_components",
+              "E08.fields.obligations",
+              "E10.fields.new_installment_included",
+              "E10.fields.accepted_base_monthly",
+              "E10.fields.accepted_overtime_monthly"
+            ],
+            "applicable_branches": [
+              "R",
+              "U"
+            ]
+          }
+        ]
+      },
+      "response_fields": [
+        "branch",
+        "response_version",
+        "source_fields_used",
+        "original_response",
+        "revised_response",
+        "reason_for_revision"
+      ]
+    },
+    {
+      "id": "T16",
+      "title": "Write and revise an evidence handoff",
+      "stage": "release-5",
+      "activity_type": "short-answer",
+      "source_exhibit_ids": [
+        "E01",
+        "E02",
+        "E03",
+        "E04",
+        "E05",
+        "E06",
+        "E07",
+        "E08",
+        "E09",
+        "E10"
+      ],
+      "prompt": "Write a 120–180-word handoff for the responsible fictional review team using your branch. Cite at least four exhibit IDs. Explain the corrected base-pay frequency, reported versus included overtime, the transfer and branch asset status, the changed debt and revised DTI, and the unresolved decision boundary. Name one linked primary-source concept and one fictional case assumption separately. Compare your handoff with the public rubric, retain the first version, and write a revision plus one sentence explaining what changed or why no change was warranted.",
+      "public_self_review": {
+        "intentionally_public": true,
+        "explanation": "There is no single required wording. A complete handoff makes the evidence trail reproducible and keeps limits visible: $6,500 accepted base; $600 reported overtime with $0 included; balances $27,000 without an extra transfer; branch R accepted $27,000 or branch U accepted $10,000 with checking unresolved; $880 current nonhousing payments; DTI revised from 48.46% to 51.23% following M2. It distinguishes legal/program guidance from the fictional $3,000 reserve target and closes with the actual open review need, not a funding promise. Self-review and revision are learning activities, not a pass result or instructor assessment.",
+        "rubric": [
+          "Cites at least four relevant exhibits rather than relying on an unsupported summary",
+          "Explains frequency, gross versus net, and unresolved overtime",
+          "Maintains one branch and the source-to-fact trail",
+          "Preserves the old calculation and explains the new record",
+          "Correctly labels one primary-source concept and one case assumption",
+          "Identifies an executable next step and an honest decision boundary",
+          "Keeps first response, revision, and reason without claiming completion or credit"
+        ],
+        "numeric_expectations": []
+      },
+      "response_fields": [
+        "branch",
+        "response_version",
+        "source_fields_used",
+        "original_response",
+        "revised_response",
+        "reason_for_revision"
+      ]
+    }
+  ],
+  "source_map_template": {
+    "columns": [
+      "fact",
+      "reported_value",
+      "current_input_or_observation",
+      "source_exhibit_and_field",
+      "period_or_as_of_date",
+      "received_date",
+      "review_or_acceptance_date_and_scope",
+      "open_question"
+    ],
+    "minimum_rows": 8
+  },
+  "source_map_public_example": [
+    {
+      "fact": "Pay frequency",
+      "reported_value": "Every other Friday; A1 nevertheless counted two per month",
+      "current_input_or_observation": "Biweekly, 26 annual periods",
+      "source_exhibit_and_field": "E01.applicant_explanation; E02.frequency and annual_pay_periods",
+      "period_or_as_of_date": "Pay period Aug 24–Sep 6; pay date Sep 11",
+      "received_date": "Sep 16",
+      "review_or_acceptance_date_and_scope": "Sep 17 completeness conflict flagged; Sep 18 M1 supplies base acceptance",
+      "open_question": "No additional frequency question after M1; real-file sufficiency is outside packet"
+    },
+    {
+      "fact": "Reported base",
+      "reported_value": "$6,000/month in A1",
+      "current_input_or_observation": "Preserve original; A2 later corrects report to $6,500",
+      "source_exhibit_and_field": "E01.reported_base_monthly; later E10.application_corrections.base_monthly",
+      "period_or_as_of_date": "A1 Sep 16; A2 Sep 23",
+      "received_date": "Sep 16; amendment Sep 23",
+      "review_or_acceptance_date_and_scope": "Report correction is not itself acceptance",
+      "open_question": "Keep original A1 linked to amendment"
+    },
+    {
+      "fact": "Accepted base",
+      "reported_value": "Original report $6,000",
+      "current_input_or_observation": "$6,500/month",
+      "source_exhibit_and_field": "E02.current_base_gross and frequency; E07.accepted_base_monthly",
+      "period_or_as_of_date": "M1 Sep 18",
+      "received_date": "P1 Sep 16; M1 Sep 18",
+      "review_or_acceptance_date_and_scope": "M1 fictional authorized review, Sep 18; unchanged by M2 Sep 23",
+      "open_question": "No broader approval decision supplied"
+    },
+    {
+      "fact": "Reported overtime",
+      "reported_value": "$600/month",
+      "current_input_or_observation": "Still $600 reported in A2",
+      "source_exhibit_and_field": "E01.reported_overtime_monthly; E10.application_corrections.reported_overtime_monthly",
+      "period_or_as_of_date": "A1 Sep 16; A2 Sep 23",
+      "received_date": "Sep 16; Sep 23",
+      "review_or_acceptance_date_and_scope": "Applicant report only",
+      "open_question": "Program-appropriate history and review"
+    },
+    {
+      "fact": "Included overtime",
+      "reported_value": "$600/month",
+      "current_input_or_observation": "$0 included; unresolved",
+      "source_exhibit_and_field": "E05 Q-OT; E07.accepted_overtime_monthly; E10.accepted_overtime_monthly",
+      "period_or_as_of_date": "M1 Sep 18; M2 Sep 23",
+      "received_date": "Request Sep 17; no requested history received",
+      "review_or_acceptance_date_and_scope": "M1 and M2 exclude from arithmetic, not a permanent rejection",
+      "open_question": "History remains requested"
+    },
+    {
+      "fact": "Checking funds",
+      "reported_value": "$17,000 balance plus separately reported transfer",
+      "current_input_or_observation": "R $17,000 accepted; U $0 accepted with $17,000 displayed",
+      "source_exhibit_and_field": "E03.ending_balance; R-only E06; E07.accepted_assets_by_branch",
+      "period_or_as_of_date": "Statement Aug 1–31; memo Sep 18",
+      "received_date": "Pages 1,3 Sep 16; R page 2 Sep 18; U page 2 absent",
+      "review_or_acceptance_date_and_scope": "M1 accepts R only; U unresolved; unchanged by M2",
+      "open_question": "U missing page and review; R broader loan decision remains outside case"
+    },
+    {
+      "fact": "Savings funds",
+      "reported_value": "$10,000",
+      "current_input_or_observation": "$10,000 accepted in either path",
+      "source_exhibit_and_field": "E04.ending_balance; E07.accepted_assets_by_branch",
+      "period_or_as_of_date": "Statement Aug 1–31; memo Sep 18",
+      "received_date": "Sep 16",
+      "review_or_acceptance_date_and_scope": "M1 supplied acceptance Sep 18, unchanged M2",
+      "open_question": "Do not count the $4,000 transfer again"
+    },
+    {
+      "fact": "Original nonhousing payments",
+      "reported_value": "$700/month",
+      "current_input_or_observation": "V1 $700/month; later V2 adds $180",
+      "source_exhibit_and_field": "E08.obligations; E07.debt_instruction; later E09 and E10",
+      "period_or_as_of_date": "D1 Sep 17; new obligation Sep 21",
+      "received_date": "D1 Sep 17; D2 Sep 22",
+      "review_or_acceptance_date_and_scope": "M1 Sep 18 original inclusion; M2 Sep 23 new inclusion",
+      "open_question": "Preserve V1 and route later facts instead of treating D1 as current forever"
+    }
+  ],
+  "changed_fact_log_template": {
+    "columns": [
+      "change_id",
+      "prior_value_and_source",
+      "new_fact_and_source",
+      "event_date",
+      "received_date",
+      "review_decision_date",
+      "branch",
+      "affected_calculation",
+      "old_response_version",
+      "new_response_version",
+      "status_and_next_action"
+    ]
+  },
+  "changed_fact_log_public_example": [
+    {
+      "change_id": "CHG-BASE",
+      "prior_value_and_source": "A1 base $6,000/month, E01",
+      "new_fact_and_source": "P1 $3,000 biweekly; M1 accepts $6,500/month; A2 corrects report",
+      "event_date": "Pay Sep 11; A1 report Sep 16",
+      "received_date": "P1 Sep 16",
+      "review_decision_date": "M1 Sep 18",
+      "branch": "R or U, keep selected branch",
+      "affected_calculation": "Monthly income denominator",
+      "old_response_version": "V1 reported snapshot",
+      "new_response_version": "V1-reviewed; A2 correction linked Sep 23",
+      "status_and_next_action": "Preserve A1 and the frequency explanation; never silently replace original report"
+    },
+    {
+      "change_id": "CHG-ASSET",
+      "prior_value_and_source": "A1 funds $31,000 with extra transfer",
+      "new_fact_and_source": "Displayed balances $27,000; M1 R accepts $27,000, U accepts $10,000",
+      "event_date": "Statements Aug 31",
+      "received_date": "E03/E04 Sep 16; R-only E06 Sep 18",
+      "review_decision_date": "M1 Sep 18",
+      "branch": "R or U, not both together",
+      "affected_calculation": "Funds to close and reserves",
+      "old_response_version": "V1 reported snapshot",
+      "new_response_version": "V1-reviewed",
+      "status_and_next_action": "R matching transfer received and case acceptance supplied; U checking remains unresolved"
+    },
+    {
+      "change_id": "CHG-DEBT",
+      "prior_value_and_source": "D1 $700 nonhousing; V1 DTI 48.46%",
+      "new_fact_and_source": "D2 $180 additional monthly debt; M2 total $880; V2 DTI 51.23%",
+      "event_date": "Agreement Sep 21",
+      "received_date": "Sep 22",
+      "review_decision_date": "Sep 23, E10",
+      "branch": "Either path; assets unchanged within that path",
+      "affected_calculation": "DTI numerator rises from $3,150 to $3,330",
+      "old_response_version": "V1-reviewed, retain original",
+      "new_response_version": "V2-pending at receipt; V2-reviewed after M2",
+      "status_and_next_action": "Record the supplied re-review and updated ratio; no final loan decision supplied"
+    }
+  ],
+  "counts": {
+    "stages": 5,
+    "mutually_exclusive_branches": 2,
+    "fictional_excerpts": 10,
+    "formative_tasks": 16,
+    "numeric_expectations": 36,
+    "primary_sources": 4,
+    "source_map_example_rows": 8,
+    "changed_fact_example_rows": 3
+  },
+  "metadata": {
+    "public_formative": true,
+    "self_guided": true,
+    "credit_bearing": false,
+    "official_final_exam": false,
+    "duration_validated": false,
+    "oil_delivery_implemented": false
+  }
+}

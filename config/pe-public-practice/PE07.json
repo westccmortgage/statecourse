@@ -1,0 +1,468 @@
+{
+  "schema_version": "1.0",
+  "module_id": "PE07",
+  "title": "Nontraditional Mortgage Products",
+  "as_of": "2026-09-30",
+  "status": "public_self_guided_noncredit",
+  "public_formative": true,
+  "credit_bearing": false,
+  "official_final_exam": false,
+  "repeatable_practice": true,
+  "implementation_note": "Free ongoing public practice before, during, and after paid enrollment. Not NMLS approved; no PE/CE credit, education hours, or certificate. Use the lesson selector for current availability. These source files do not implement access, time tracking, enrollment, instructor service, or completion. All facts and policies are fictional; option feedback is intentionally public.",
+  "items": [
+    {
+      "id": "PE07-P01",
+      "module_id": "PE07",
+      "unit_id": "7A",
+      "objective_id": "PE07-A",
+      "type": "single_choice",
+      "prompt": "A fully amortizing ARM is held in a lender’s portfolio. Which conclusion can be drawn from those two labels alone?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "It is automatically non-QM and exempt from the ability-to-repay rule.",
+          "feedback": "Neither the rate structure nor the fact that a lender holds the loan establishes QM classification or legal coverage."
+        },
+        {
+          "id": "B",
+          "text": "The rate can adjust under its terms, and portfolio describes how the loan is held; legal coverage still needs a separate analysis.",
+          "feedback": "Correct. Payment mechanics, ownership or funding, and legal classification answer different questions. A fully amortizing ARM does not inherently defer principal."
+        },
+        {
+          "id": "C",
+          "text": "It must add unpaid interest to principal every month.",
+          "feedback": "A fully amortizing payment is designed to repay principal and interest. Negative amortization requires a payment shortfall and capitalization under the applicable terms."
+        },
+        {
+          "id": "D",
+          "text": "Its payment can never increase because the lender retains it.",
+          "feedback": "Holding a loan in portfolio does not cancel the ARM adjustment provisions."
+        }
+      ],
+      "correct_choice_id": "B",
+      "source_ids": [
+        "P7-03",
+        "P7-04",
+        "P7-07"
+      ],
+      "skill": "classification",
+      "assessment_role": "public_formative",
+      "credit_bearing": false
+    },
+    {
+      "id": "PE07-P02",
+      "module_id": "PE07",
+      "unit_id": "7A",
+      "objective_id": "PE07-A",
+      "type": "single_choice",
+      "prompt": "A fictional ARM starts at 5.50%. At its first reset the observed index is 5.00% and the margin is 2.25 percentage points. The first-reset increase is capped at 1.00 percentage point. No floor, lifetime cap, rounding, or other term further limits this reset. What is the new contract rate?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "7.25%.",
+          "feedback": "Index plus margin is 7.25%, but that exceeds the stipulated first-reset ceiling of 5.50% + 1.00 percentage point."
+        },
+        {
+          "id": "B",
+          "text": "5.00%.",
+          "feedback": "The index is only one component. The contract also applies the margin and the applicable cap."
+        },
+        {
+          "id": "C",
+          "text": "5.555%.",
+          "feedback": "A one-percentage-point cap adds 1.00 to the stated percentage rate; it is not a 1% relative increase of 5.50%."
+        },
+        {
+          "id": "D",
+          "text": "6.50%.",
+          "feedback": "Correct. Index plus margin is 7.25%; the first-reset ceiling is 6.50%. Under the supplied terms, 6.50% applies. This calculation does not establish a lifetime maximum payment."
+        }
+      ],
+      "correct_choice_id": "D",
+      "source_ids": [
+        "P7-07",
+        "P7-08"
+      ],
+      "skill": "arm_rate_caps",
+      "assessment_role": "public_formative",
+      "credit_bearing": false
+    },
+    {
+      "id": "PE07-P03",
+      "module_id": "PE07",
+      "unit_id": "7A",
+      "objective_id": "PE07-A",
+      "type": "single_choice",
+      "prompt": "A fictional $210,000 loan has a 6.00% fixed annual rate and 36 interest-only monthly payments, using annual rate divided by 12. No principal is paid or added. Which pair is correct: monthly interest payment and principal after payment 36?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "$1,050 and $210,000.",
+          "feedback": "Correct. $210,000 × 0.06 ÷ 12 = $1,050. Paying all accrued interest without paying principal leaves the original principal unchanged."
+        },
+        {
+          "id": "B",
+          "text": "$1,050 and $172,200.",
+          "feedback": "The $37,800 paid over 36 months is interest, not a principal reduction."
+        },
+        {
+          "id": "C",
+          "text": "$1,260 and $210,000.",
+          "feedback": "$1,260 would use a 7.20% annual rate. The stated 6.00% annual rate produces $1,050 monthly interest."
+        },
+        {
+          "id": "D",
+          "text": "$5,833.33 and zero.",
+          "feedback": "Dividing principal by 36 treats the loan as equal principal repayment, which is not the stipulated interest-only structure."
+        }
+      ],
+      "correct_choice_id": "A",
+      "source_ids": [
+        "P7-19"
+      ],
+      "skill": "interest_only_balance",
+      "assessment_role": "public_formative",
+      "credit_bearing": false
+    },
+    {
+      "id": "PE07-P04",
+      "module_id": "PE07",
+      "unit_id": "7A",
+      "objective_id": "PE07-A",
+      "type": "single_choice",
+      "prompt": "A 30-year loan has 36 initial interest-only payments. Immediately afterward it begins equal monthly amortizing payments through the original maturity, with no extension. Which number of payments belongs in the new amortization calculation?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "360.",
+          "feedback": "Using 360 at this point would extend repayment by three years and understate the payment under the stated maturity."
+        },
+        {
+          "id": "B",
+          "text": "36.",
+          "feedback": "Thirty-six is the completed interest-only period, not the remaining amortization period."
+        },
+        {
+          "id": "C",
+          "text": "324.",
+          "feedback": "Correct. Thirty years gives 360 monthly payments; 360 − 36 = 324 remain. The balance and applicable rate must also be established."
+        },
+        {
+          "id": "D",
+          "text": "396.",
+          "feedback": "Adding the interest-only period to the original term invents an extension not provided by the contract."
+        }
+      ],
+      "correct_choice_id": "C",
+      "source_ids": [
+        "P7-09",
+        "P7-19"
+      ],
+      "skill": "remaining_amortization_term",
+      "assessment_role": "public_formative",
+      "credit_bearing": false
+    },
+    {
+      "id": "PE07-P05",
+      "module_id": "PE07",
+      "unit_id": "7A",
+      "objective_id": "PE07-A",
+      "type": "single_choice",
+      "prompt": "A fictional $75,000 balance accrues 6.00% annual interest at 0.50% per month. The required monthly payment is $250, and unpaid interest is capitalized. There are no fees or other changes. What is the ending balance after month 1?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "$74,750.",
+          "feedback": "Subtracting the payment without first accruing interest ignores the $375 of interest for the month."
+        },
+        {
+          "id": "B",
+          "text": "$75,125.",
+          "feedback": "Correct. Interest is $75,000 × 0.005 = $375. The $250 payment leaves $125 unpaid; $75,000 + $125 = $75,125."
+        },
+        {
+          "id": "C",
+          "text": "$75,000.",
+          "feedback": "The balance would stay unchanged if the payment covered all $375 of interest. It covers only $250 here."
+        },
+        {
+          "id": "D",
+          "text": "$75,375.",
+          "feedback": "This capitalizes all the accrued interest but fails to credit the $250 payment."
+        }
+      ],
+      "correct_choice_id": "B",
+      "source_ids": [
+        "P7-20",
+        "P7-11"
+      ],
+      "skill": "negative_amortization",
+      "assessment_role": "public_formative",
+      "credit_bearing": false
+    },
+    {
+      "id": "PE07-P06",
+      "module_id": "PE07",
+      "unit_id": "7A",
+      "objective_id": "PE07-A",
+      "type": "single_choice",
+      "prompt": "A separate fictional four-year interest-only balloon loan starts at $150,000 and charges 4.80% annually. All monthly interest is paid, with no principal reductions or additions. Immediately after the final interest payment, how much principal is due at the stated maturity?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "$121,200.",
+          "feedback": "The $28,800 of interest paid over 48 months does not reduce principal."
+        },
+        {
+          "id": "B",
+          "text": "$600.",
+          "feedback": "$600 is one month’s interest, calculated as $150,000 × 0.048 ÷ 12. It is not the principal due at maturity."
+        },
+        {
+          "id": "C",
+          "text": "Nothing, because timely interest payments extend the loan automatically.",
+          "feedback": "The stated contract contains no automatic extension. Timely payments do not erase the balloon."
+        },
+        {
+          "id": "D",
+          "text": "$150,000.",
+          "feedback": "Correct. No principal was repaid. The full $150,000 is due as principal at maturity; other amounts would depend on actual contract and payoff terms. Refinancing is not guaranteed."
+        }
+      ],
+      "correct_choice_id": "D",
+      "source_ids": [
+        "P7-10",
+        "P7-19"
+      ],
+      "skill": "balloon_maturity",
+      "assessment_role": "public_formative",
+      "credit_bearing": false
+    },
+    {
+      "id": "PE07-P07",
+      "module_id": "PE07",
+      "unit_id": "7B",
+      "objective_id": "PE07-B",
+      "type": "single_choice",
+      "prompt": "Assume a consumer-purpose closed-end dwelling-secured loan is covered by the general ATR rule and no exemption applies. The proposed program is called non-QM. Which statement is accurate?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "The creditor must still make the required reasonable, good-faith repayment determination under the applicable rule.",
+          "feedback": "Correct. Non-QM is a classification, not an exception from an expressly applicable ATR requirement. It also does not by itself mean the loan is unlawful."
+        },
+        {
+          "id": "B",
+          "text": "The non-QM label makes a signed income estimate sufficient in every case.",
+          "feedback": "A program label does not replace the applicable verification requirements for information relied upon."
+        },
+        {
+          "id": "C",
+          "text": "All non-QM loans are prohibited.",
+          "feedback": "A loan can be outside a QM definition without being categorically prohibited. The applicable law, evidence, and program conditions still matter."
+        },
+        {
+          "id": "D",
+          "text": "A signed acknowledgment of payment risk waives the lender’s repayment duty.",
+          "feedback": "Acknowledgment can document communication; it cannot waive this stipulated underwriting obligation or create missing evidence."
+        }
+      ],
+      "correct_choice_id": "A",
+      "source_ids": [
+        "P7-04"
+      ],
+      "skill": "non_qm_coverage",
+      "assessment_role": "public_formative",
+      "credit_bearing": false
+    },
+    {
+      "id": "PE07-P08",
+      "module_id": "PE07",
+      "unit_id": "7B",
+      "objective_id": "PE07-B",
+      "type": "single_choice",
+      "prompt": "For arithmetic only, a reviewer accepts these fictional twelve-month records: $150,000 total business deposits, including $30,000 of transfers from another owned account and $12,000 of loan proceeds; $72,000 accepted expenses; 100% ownership; no other adjustments. What monthly net amount follows from those stipulations?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "$12,500.",
+          "feedback": "This divides all deposits by 12 and treats transfers, borrowing, and amounts needed for business expenses as repayment income."
+        },
+        {
+          "id": "B",
+          "text": "$9,000.",
+          "feedback": "This excludes transfers and borrowing but stops at gross receipts: ($150,000 − $30,000 − $12,000) ÷ 12. The accepted expenses still must be subtracted."
+        },
+        {
+          "id": "C",
+          "text": "$3,000.",
+          "feedback": "Correct. ($150,000 − $30,000 − $12,000 − $72,000) ÷ 12 = $3,000. The stipulated arithmetic does not approve a real income analysis or a loan."
+        },
+        {
+          "id": "D",
+          "text": "$6,500.",
+          "feedback": "Subtracting expenses from all deposits leaves transfers and borrowed money misclassified as receipts: ($150,000 − $72,000) ÷ 12."
+        }
+      ],
+      "correct_choice_id": "C",
+      "source_ids": [
+        "P7-04"
+      ],
+      "skill": "classify_repayment_evidence",
+      "assessment_role": "public_formative",
+      "credit_bearing": false
+    },
+    {
+      "id": "PE07-P09",
+      "module_id": "PE07",
+      "unit_id": "7B",
+      "objective_id": "PE07-B",
+      "type": "single_choice",
+      "prompt": "For a covered interest-only loan under §1026.43(c)(5)(ii)(B), which description matches the general ATR payment method? Assume the required inputs and the applicability of this method have been established.",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Use only the first interest-only payment because it is the amount initially due.",
+          "feedback": "The contractual first payment is not the required amortizing payment used by this interest-only ATR method."
+        },
+        {
+          "id": "B",
+          "text": "Use the greater of the fully indexed or introductory rate and substantially equal monthly P&I that repays the loan amount over the term remaining at recast.",
+          "feedback": "Correct. This is the feature-specific interest-only method. It does not automatically supply the method for a balloon or negative-amortization loan."
+        },
+        {
+          "id": "C",
+          "text": "Use the consumer’s predicted refinance payment three years from now.",
+          "feedback": "A hoped-for future refinance is not a substitute for the required payment calculation."
+        },
+        {
+          "id": "D",
+          "text": "Use any payment that makes the DTI meet a preferred target.",
+          "feedback": "The required inputs and method determine the calculation; a desired ratio does not authorize selecting a lower payment."
+        }
+      ],
+      "correct_choice_id": "B",
+      "source_ids": [
+        "P7-09",
+        "P7-04"
+      ],
+      "skill": "interest_only_atr_method",
+      "assessment_role": "public_formative",
+      "credit_bearing": false
+    },
+    {
+      "id": "PE07-P10",
+      "module_id": "PE07",
+      "unit_id": "7B",
+      "objective_id": "PE07-B",
+      "type": "single_choice",
+      "prompt": "A creditor is evaluating a covered first-lien loan under the general ATR rule and knows that a simultaneous HELOC secured by the same dwelling will be drawn at consummation. Which statement best addresses the HELOC?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Ignore it because a HELOC is excluded from §1026.43’s direct coverage.",
+          "feedback": "The exclusion for the HELOC itself does not remove the separate duty to consider a known simultaneous loan when evaluating the covered first-lien transaction."
+        },
+        {
+          "id": "B",
+          "text": "Ignore it because both loans are secured by one property.",
+          "feedback": "Shared collateral does not eliminate a separate payment obligation."
+        },
+        {
+          "id": "C",
+          "text": "Treat the entire credit limit as verified monthly income.",
+          "feedback": "A credit limit is neither income nor a monthly payment. It cannot be inserted as a repayment-income figure."
+        },
+        {
+          "id": "D",
+          "text": "Use the simultaneous-loan rule to consider its payment under the plan and the amount to be drawn at or before consummation.",
+          "feedback": "Correct. Section 1026.43(c)(6)(ii) specifies this treatment. Direct HELOC coverage and its effect on the covered first loan are separate questions."
+        }
+      ],
+      "correct_choice_id": "D",
+      "source_ids": [
+        "P7-04",
+        "P7-14"
+      ],
+      "skill": "simultaneous_heloc",
+      "assessment_role": "public_formative",
+      "credit_bearing": false
+    },
+    {
+      "id": "PE07-P11",
+      "module_id": "PE07",
+      "unit_id": "7B",
+      "objective_id": "PE07-B",
+      "type": "single_choice",
+      "prompt": "A consumer dwelling-secured loan is advertised as a bridge loan but has an initial contractual term of 18 months. No other exception has been established. Can the product name alone establish the 12-month-or-less temporary/bridge exclusion from §1026.43(c) through (f)?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "No; the label does not satisfy the specified term condition, and other applicable coverage must be reviewed.",
+          "feedback": "Correct. Section 1026.43(a)(3)(ii) describes a temporary or bridge loan with a term of 12 months or less. This stated 18-month term does not establish that exception."
+        },
+        {
+          "id": "B",
+          "text": "Yes; all loans named bridge are outside every part of Regulation Z.",
+          "feedback": "This both ignores the term condition and overstates the scope of the exclusion."
+        },
+        {
+          "id": "C",
+          "text": "Yes; the borrower’s planned sale in six months rewrites the 18-month contract.",
+          "feedback": "An expected sale does not change the stipulated contractual term."
+        },
+        {
+          "id": "D",
+          "text": "Yes; a signed risk statement automatically grants the exception.",
+          "feedback": "A risk acknowledgment does not satisfy or replace the statutory and regulatory coverage conditions."
+        }
+      ],
+      "correct_choice_id": "A",
+      "source_ids": [
+        "P7-04"
+      ],
+      "skill": "bridge_scope",
+      "assessment_role": "public_formative",
+      "credit_bearing": false
+    },
+    {
+      "id": "PE07-P12",
+      "module_id": "PE07",
+      "unit_id": "7C",
+      "objective_id": "PE07-C",
+      "type": "single_choice",
+      "prompt": "A consumer asks whether choosing an FHA HECM means there will be no home-related bills and the loan can never become due while anyone in the family lives there. Which response is best supported?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Yes; government insurance permanently cancels taxes, insurance, and repayment conditions.",
+          "feedback": "FHA insurance does not eliminate property charges, maintenance, occupancy obligations, or applicable repayment conditions."
+        },
+        {
+          "id": "B",
+          "text": "Yes; every reverse mortgage guarantees identical rights for every relative.",
+          "feedback": "Household and non-borrowing-spouse protections require their actual legal and program conditions; family occupancy alone does not establish a universal guarantee."
+        },
+        {
+          "id": "C",
+          "text": "Explain the remaining property and occupancy duties and obtain specialized review of HECM eligibility, counseling, repayment triggers, and relevant household protections.",
+          "feedback": "Correct. A HECM has a specialized framework. The absence of a usual monthly mortgage payment is not the absence of obligations or circumstances that can make the loan due."
+        },
+        {
+          "id": "D",
+          "text": "Apply the conventional interest-only example unchanged and promise a $900 payment.",
+          "feedback": "The loan type and legal framework have changed. A conventional teaching illustration cannot become a HECM quote."
+        }
+      ],
+      "correct_choice_id": "C",
+      "source_ids": [
+        "P7-15",
+        "P7-18",
+        "P7-21"
+      ],
+      "skill": "specialized_product_explanation",
+      "assessment_role": "public_formative",
+      "credit_bearing": false
+    }
+  ]
+}

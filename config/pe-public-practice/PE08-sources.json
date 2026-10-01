@@ -1,0 +1,244 @@
+{
+  "PE08": {
+    "P8-01": {
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/2/",
+      "reference": "P8-01: CFPB Regulation Z \u00a71026.2(a)(3), (6), (13): six-element application, business days and consummation",
+      "authority_type": "law",
+      "scope_note": "Coverage and distinct event/clock definitions; state law determines contractual obligation",
+      "checked_on": "2026-09-30",
+      "verification_status": "official_primary_source_opened"
+    },
+    "P8-02": {
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/19/",
+      "reference": "P8-02: CFPB Regulation Z \u00a71026.19(e) and (f), with interpretations: integrated disclosure timing, good faith, revisions and corrections",
+      "authority_type": "law",
+      "scope_note": "Initial LE delivery and seven-day wait; CD receipt and three-day wait; tolerance categories and restart scope",
+      "checked_on": "2026-09-30",
+      "verification_status": "official_primary_source_opened"
+    },
+    "P8-03": {
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/43/",
+      "reference": "P8-03: CFPB Regulation Z \u00a71026.43(a), (c) and (e): ATR coverage, general factors, verification, payments and QM distinctions",
+      "authority_type": "law",
+      "scope_note": "The file expressly assumes general ATR coverage; company DTI screen and ARM illustration do not replace required determination",
+      "checked_on": "2026-09-30",
+      "verification_status": "official_primary_source_opened"
+    },
+    "P8-04": {
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1002/2/",
+      "reference": "P8-04: CFPB Regulation B \u00a71002.2(f): application and completed application; related definitions",
+      "authority_type": "law",
+      "scope_note": "Different from the six-element TRID definition; creditor actual practices and reasonable diligence matter",
+      "checked_on": "2026-09-30",
+      "verification_status": "official_primary_source_opened"
+    },
+    "P8-05": {
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1002/6/",
+      "reference": "P8-05: CFPB Regulation B \u00a71002.6(a) and (b)(5): current evaluation standards and income",
+      "authority_type": "law",
+      "scope_note": "Individual amount/continuance review; no automatic pension discount; current effects-test boundary",
+      "checked_on": "2026-09-30",
+      "verification_status": "official_primary_source_opened"
+    },
+    "P8-06": {
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1002/4/",
+      "reference": "P8-06: CFPB Regulation B \u00a71002.4(a), (b), and current interpretations: treatment and discouragement",
+      "authority_type": "law",
+      "scope_note": "Current directed-statement formulation and concrete disparate-treatment concerns",
+      "checked_on": "2026-09-30",
+      "verification_status": "official_primary_source_opened"
+    },
+    "P8-07": {
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-04-22/pdf/2026-07804.pdf",
+      "reference": "P8-07: Federal Register 91 FR 21620\u201321670, April 22 2026 Regulation B final rule, effective July 21 2026",
+      "authority_type": "law",
+      "scope_note": "Official GovInfo final-rule PDF corroborates effective date and amended scope; no assumption about all other law or court orders",
+      "checked_on": "2026-09-30",
+      "verification_status": "official_primary_source_opened"
+    },
+    "P8-08": {
+      "url": "https://selling-guide.fanniemae.com/sel/b2-1.2-01/loan-value-ltv-ratios",
+      "reference": "P8-08: Fannie Mae Selling Guide B2-1.2-01: Loan-to-Value Ratios",
+      "authority_type": "program",
+      "scope_note": "Ordinary purchase method uses lower of price or current appraised value; case supplies no exception. Guide truncates the calculated ratio to two decimal places, then rounds up to the nearest whole percent for delivery. For 360000/440000, mathematical classroom display is 81.82%; truncation is 81.81%; delivery is 82%.",
+      "checked_on": "2026-09-30",
+      "verification_status": "official_primary_source_opened"
+    },
+    "P8-09": {
+      "url": "https://selling-guide.fanniemae.com/sel/b3-4.3-17/personal-unsecured-loans",
+      "reference": "P8-09: Fannie Mae Selling Guide B3-4.3-17: Personal Unsecured Loans",
+      "authority_type": "program",
+      "scope_note": "Unsecured personal-loan proceeds not acceptable for down payment, closing costs or financial reserves",
+      "checked_on": "2026-09-30",
+      "verification_status": "official_primary_source_opened"
+    },
+    "P8-10": {
+      "url": "https://selling-guide.fanniemae.com/sel/b3-6-01/general-information-liabilities",
+      "reference": "P8-10: Fannie Mae Selling Guide B3-6-01: General Information on Liabilities",
+      "authority_type": "program",
+      "scope_note": "Verify relevant liabilities, including those absent from report, and recalculate for discovered debt through closing",
+      "checked_on": "2026-09-30",
+      "verification_status": "official_primary_source_opened"
+    },
+    "P8-11": {
+      "url": "https://selling-guide.fanniemae.com/sel/b3-6-07/debts-paid-or-prior-closing",
+      "reference": "P8-11: Fannie Mae Selling Guide B3-6-07: Debts Paid Off At or Prior to Closing",
+      "authority_type": "program",
+      "scope_note": "Careful evaluation of payoff/paydown for qualification; actual exclusion in case stipulated accepted after review",
+      "checked_on": "2026-09-30",
+      "verification_status": "official_primary_source_opened"
+    },
+    "P8-12": {
+      "url": "https://selling-guide.fanniemae.com/sel/b3-3.1-01/general-income-information",
+      "reference": "P8-12: Fannie Mae Selling Guide B3-3.1-01: General Income Information",
+      "authority_type": "program",
+      "scope_note": "Income history, stability and continuance; accepted amounts in this fictional file are stipulated",
+      "checked_on": "2026-09-30",
+      "verification_status": "official_primary_source_opened"
+    },
+    "P8-13": {
+      "url": "https://selling-guide.fanniemae.com/sel/b3-6-05/monthly-debt-obligations",
+      "reference": "P8-13: Fannie Mae Selling Guide B3-6-05: Monthly Debt Obligations, page dated August 5 2026",
+      "authority_type": "program",
+      "scope_note": "Installment obligations and program-specific debt treatment; no universal student-loan amount inferred",
+      "checked_on": "2026-09-30",
+      "verification_status": "official_primary_source_opened"
+    },
+    "P8-14": {
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/42/",
+      "reference": "P8-14: CFPB Regulation Z \u00a71026.42: valuation independence and permitted requests",
+      "authority_type": "law",
+      "scope_note": "Relevant correction requests distinguished from pressure for target value",
+      "checked_on": "2026-09-30",
+      "verification_status": "official_primary_source_opened"
+    },
+    "P8-15": {
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1002/14/",
+      "reference": "P8-15: CFPB Regulation B \u00a71002.14: appraisal and valuation notices and copies",
+      "authority_type": "law",
+      "scope_note": "Copy compliance distinct from collateral acceptance; lesson stipulates applicable notice/copy requirements satisfied",
+      "checked_on": "2026-09-30",
+      "verification_status": "official_primary_source_opened"
+    },
+    "P8-16": {
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/23/",
+      "reference": "P8-16: CFPB Regulation Z \u00a71026.23(a), (c), (e), (f), and interpretations: rescission",
+      "authority_type": "law",
+      "scope_note": "Last trigger, ordinary period, delay of performance, exceptions and acquisition exemption; later refinance coverage stipulated",
+      "checked_on": "2026-09-30",
+      "verification_status": "official_primary_source_opened"
+    },
+    "P8-17": {
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1024/33/",
+      "reference": "P8-17: CFPB Regulation X \u00a71024.33: mortgage servicing transfers",
+      "authority_type": "law",
+      "scope_note": "Actual transfer notices and timely old-servicer payments during 60-day protection; not a payment holiday",
+      "checked_on": "2026-09-30",
+      "verification_status": "official_primary_source_opened"
+    },
+    "P8-18": {
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1024/17/",
+      "reference": "P8-18: CFPB Regulation X \u00a71024.17: escrow accounts, analyses and applicable balances",
+      "authority_type": "law",
+      "scope_note": "Escrow changes distinguished from rate changes; actual analysis and amounts govern",
+      "checked_on": "2026-09-30",
+      "verification_status": "official_primary_source_opened"
+    },
+    "P8-19": {
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1024/14/",
+      "reference": "P8-19: CFPB Regulation X \u00a71024.14: kickbacks, unearned fees, referral agreements and permissible payments",
+      "authority_type": "law",
+      "scope_note": "Separate lawful consumer correction from proposed referral bargain",
+      "checked_on": "2026-09-30",
+      "verification_status": "official_primary_source_opened"
+    },
+    "P8-20": {
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/36/",
+      "reference": "P8-20: CFPB Regulation Z \u00a71026.36(e): steering and compensation-related restrictions",
+      "authority_type": "law",
+      "scope_note": "Compensation-driven steering analysis; lower teaser payment alone is not the full comparison",
+      "checked_on": "2026-09-30",
+      "verification_status": "official_primary_source_opened"
+    },
+    "P8-21": {
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1002/9/",
+      "reference": "P8-21: CFPB Regulation B \u00a71002.9: notifications and incomplete applications",
+      "authority_type": "law",
+      "scope_note": "Actual status, decision and notices require review; operational hold not automatically a denial",
+      "checked_on": "2026-09-30",
+      "verification_status": "official_primary_source_opened"
+    },
+    "P8-22": {
+      "url": "https://selling-guide.fanniemae.com/sel/b3-2-01/general-information-du",
+      "reference": "P8-22: Fannie Mae Selling Guide B3-2-01: General Information on DU, page dated April 1 2026",
+      "authority_type": "program",
+      "scope_note": "Accurate data and lender responsibilities persist despite automated recommendation",
+      "checked_on": "2026-09-30",
+      "verification_status": "official_primary_source_opened"
+    },
+    "P8-23": {
+      "url": "https://www.hud.gov/stat/fheo/rights-obligations",
+      "reference": "P8-23: HUD Fair Housing Rights and Obligations",
+      "authority_type": "law_overview",
+      "scope_note": "Fair Housing framework distinct from ECOA; do not infer that a Reg B amendment removes other protections",
+      "checked_on": "2026-09-30",
+      "verification_status": "official_primary_source_opened"
+    },
+    "P8-24": {
+      "url": "https://files.consumerfinance.gov/f/documents/cfpb_charm_booklet.pdf",
+      "reference": "P8-24: CFPB Consumer Handbook on Adjustable Rate Mortgages",
+      "authority_type": "official_consumer_education",
+      "scope_note": "ARM index, margin, caps and payment-change concepts; all lesson rates and computations are original assumptions",
+      "checked_on": "2026-09-30",
+      "verification_status": "official_primary_source_opened"
+    },
+    "P8-25": {
+      "url": "https://www.ftc.gov/business-guidance/resources/ftc-safeguards-rule-what-your-business-needs-know",
+      "reference": "P8-25: FTC Safeguards Rule What Your Business Needs to Know",
+      "authority_type": "official_regulatory_guidance",
+      "scope_note": "Covered institutions and appropriate safeguards; no incident-reporting deadline invented",
+      "checked_on": "2026-09-30",
+      "verification_status": "official_primary_source_opened"
+    },
+    "P8-26": {
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/36/",
+      "reference": "P8-26: CFPB Regulation Z \u00a71026.36(c)(3): payoff statements",
+      "authority_type": "law",
+      "scope_note": "Accurate payoff for a specified date; exercise daily-interest convention and numbers expressly stipulated",
+      "checked_on": "2026-09-30",
+      "verification_status": "official_primary_source_opened"
+    },
+    "P8-27": {
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1002/12/",
+      "reference": "P8-27: CFPB Regulation B \u00a71002.12: record retention",
+      "authority_type": "law",
+      "scope_note": "Preserve applicable application evidence and honor extended requirements; lesson supplies no universal destruction date",
+      "checked_on": "2026-09-30",
+      "verification_status": "official_primary_source_opened"
+    },
+    "P8-28": {
+      "url": "https://www.consumerfinance.gov/archive/blog/mortgage-closing-scams-how-protect-yourself-and-your-closing-funds/",
+      "reference": "P8-28: CFPB Mortgage Closing Scams How to Protect Yourself and Your Closing Funds, archived official education",
+      "authority_type": "official_consumer_education",
+      "scope_note": "Independently established contact channel for wire verification; no outdated statistics reused",
+      "checked_on": "2026-09-30",
+      "verification_status": "official_primary_source_opened"
+    },
+    "P8-29": {
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/22/",
+      "reference": "P8-29: CFPB Regulation Z \u00a71026.22: APR determination and accuracy",
+      "authority_type": "law",
+      "scope_note": "APR distinguished from note rate and payment calculation; no hand-calculated APR offered",
+      "checked_on": "2026-09-30",
+      "verification_status": "official_primary_source_opened"
+    },
+    "P8-30": {
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1024/34/",
+      "reference": "P8-30: CFPB Regulation X \u00a71024.34(b): escrow balances upon payoff",
+      "authority_type": "law",
+      "scope_note": "Actual post-payoff escrow disposition is separate from money available now; no refund amount or timing is promised in the case",
+      "checked_on": "2026-09-30",
+      "verification_status": "official_primary_source_opened"
+    }
+  }
+}
