@@ -15,7 +15,7 @@ test('CI proposal uses read-only checkout permissions and only isolated acceptan
   const workflow=await fs.readFile(new URL('../.github/workflows/pe03-isolated-acceptance.yml',import.meta.url),'utf8');
   assert.match(workflow,/contents: read/);assert.match(workflow,/persist-credentials: false/);
   assert.doesNotMatch(workflow,/secrets\.|pull_request_target|netlify deploy|supabase db push|git push|workflow_dispatch/);
-  assert.match(workflow,/tests\/pe03-cohort.test.mjs tests\/pe03-staff-boundary.test.mjs/);assert.match(workflow,/tests\/integration\/pe03-native.test.mjs/);assert.match(workflow,/xvfb-run --auto-servernum node tests\/browser\/pe03-local-browser.mjs/);
+  assert.match(workflow,/tests\/pe03-cohort.test.mjs tests\/pe03-staff-boundary.test.mjs/);assert.match(workflow,/tests\/integration\/pe03-native.test.mjs/);assert.match(workflow,/xvfb-run --auto-servernum bash/);assert.match(workflow,/node tests\/browser\/pe03-local-browser.mjs/);assert.match(workflow,/openbox/);
   assert.match(workflow,/PE_CHROMIUM_HEADED: '1'/);assert.match(workflow,/retention-days: 3/);
 });
 

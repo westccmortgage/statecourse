@@ -63,6 +63,7 @@ jobs:
           echo "PE_PLAYWRIGHT_MODULE=$package/node_modules/playwright" >> "$GITHUB_ENV"
           echo "PE_PGLITE_MODULE=$package/node_modules/@electric-sql/pglite/dist/index.js" >> "$GITHUB_ENV"
           "$package/node_modules/.bin/playwright" install --with-deps chromium
+          sudo apt-get install --yes --no-install-recommends openbox
       - name: Verify localhost-only CI and staff client contracts
         run: node --test tests/pe03-ci-contract.test.mjs
       - name: Verify cohort boundaries and actual staff proof binding
@@ -71,7 +72,13 @@ jobs:
         run: node --test tests/integration/pe03-native.test.mjs
       - name: Render local UI against the disposable native PostgreSQL fixture
         # A virtual display gives real focus/visibility transitions across tabs.
-        run: xvfb-run --auto-servernum node tests/browser/pe03-local-browser.mjs
+        run: |
+          xvfb-run --auto-servernum bash -c '
+            openbox > "$RUNNER_TEMP/pe03-openbox.log" 2>&1 &
+            window_manager_pid=$!
+            trap "kill $window_manager_pid" EXIT
+            node tests/browser/pe03-local-browser.mjs
+          '
         env:
           PE_CHROMIUM_HEADED: '1'
       - name: Retain only synthetic test reports, evidence and screenshots
