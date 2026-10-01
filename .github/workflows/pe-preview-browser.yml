@@ -1,0 +1,44 @@
+name: PE preview browser acceptance
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+    paths:
+      - ".github/workflows/pe-preview-browser.yml"
+      - "tests/browser/pe-preview-browser.mjs"
+
+permissions:
+  contents: read
+
+jobs:
+  preview-browser:
+    if: github.event.pull_request.number == 23 && github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    env:
+      PE_BROWSER_PACKAGE: ${{ runner.temp }}/statecourse-pe-browser
+    steps:
+      - name: Check out only the public preview acceptance script
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+          sparse-checkout-cone-mode: false
+          sparse-checkout: tests/browser/pe-preview-browser.mjs
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Install pinned browser test dependency outside the repository
+        run: npm install --prefix "$PE_BROWSER_PACKAGE" --no-save --package-lock=false playwright@1.63.0
+      - name: Install Chromium on the isolated runner
+        run: '"$PE_BROWSER_PACKAGE/node_modules/.bin/playwright" install --with-deps chromium'
+      - name: Verify the existing public noncredit preview
+        run: node tests/browser/pe-preview-browser.mjs
+      - name: Retain public fictional screenshots and verification report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pe-preview-browser-${{ github.run_id }}
+          path: artifacts/pe-preview/
+          if-no-files-found: warn
+          retention-days: 3
