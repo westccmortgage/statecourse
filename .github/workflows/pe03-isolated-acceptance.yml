@@ -42,8 +42,11 @@ jobs:
     env:
       PE03_NATIVE_CI: '1'
       PE_POSTGRES_HOST: 127.0.0.1
-      PE_POSTGRES_PORT: ${{ job.services.postgres.ports[5432] }}
     steps:
+      - name: Record the disposable service port after job initialization
+        run: echo "PE_POSTGRES_PORT=$PE_SERVICE_PORT" >> "$GITHUB_ENV"
+        env:
+          PE_SERVICE_PORT: ${{ job.services.postgres.ports[5432] }}
       - name: Check out the reviewed local-only trial
         uses: actions/checkout@v4
         with:
