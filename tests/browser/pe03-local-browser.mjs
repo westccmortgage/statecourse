@@ -4,16 +4,14 @@ import assert from 'node:assert/strict';
 import { createServer } from 'node:http';
 import fs from 'node:fs/promises';
 import path from 'node:path';
-import { createRequire } from 'node:module';
+import { launchPe03BrowserDriver } from '../helpers/pe03-browser-driver.mjs';
 import { nativePe03Fixture } from '../helpers/pe03-native-fixture.mjs';
 import { pe03Fixture, ids } from '../helpers/pe03-fixture.mjs';
 import { createPe03Handler } from '../../netlify/functions/_lib/nmls-pe-http.mjs';
-const require=createRequire(import.meta.url);
-const {chromium}=require(process.env.PE_PLAYWRIGHT_MODULE||'/opt/codex/cua_node/lib/node_modules/playwright');
 const out=path.resolve('artifacts/pe-cohort/browser');await fs.mkdir(out,{recursive:true});
 const f=process.env.PE03_NATIVE_CI==='1'?await nativePe03Fixture():await pe03Fixture();await f.enable();
 await f.db.exec("update pe03_cohorts set timezone='UTC',opens_at=date_trunc('day',clock_timestamp() at time zone 'UTC') at time zone 'UTC',closes_at=(date_trunc('day',clock_timestamp() at time zone 'UTC')+interval '14 days') at time zone 'UTC'; create or replace function pe03_now() returns timestamptz language sql volatile set search_path=public,pg_temp as $$select clock_timestamp()$$;");
-let origin,dropSubmission=false,browser;const report={completed:false,engine:f.metadata?.engine||'embedded PGlite',database:f.metadata||null,scope:'Local UI → actual HTTP handler → PostgreSQL function. Synthetic auth provider, modeled schema prerequisites.',checks:[],errors:[],realTiming:[],productionTouched:false};
+let origin,dropSubmission=false;const drivers=[];const report={completed:false,engine:f.metadata?.engine||'embedded PGlite',database:f.metadata||null,scope:'Local UI → actual HTTP handler → PostgreSQL function. Synthetic auth provider, modeled schema prerequisites.',checks:[],errors:[],realTiming:[],productionTouched:false};
 const handler=role=>createPe03Handler(role,{enabled:()=>true,rpc:f.rpc,authenticate:async event=>{
  const token=event.headers.cookie?.match(/pe-fixture-actor=([a-z]+)/)?.[1];const actor=ids[token];
  if(!actor)throw new Error('student_auth_required');return {student:{id:actor}};
@@ -37,21 +35,27 @@ const server=createServer(async(req,res)=>{try{
  }catch(e){report.errors.push(e.message);res.writeHead(500).end('local harness error');}});
 try{
  await new Promise((resolve,reject)=>server.once('error',reject).listen(0,'127.0.0.1',resolve));origin=`http://127.0.0.1:${server.address().port}`;process.env.STATECOURSE_BASE_URL=origin;
- browser=await chromium.launch({headless:process.env.PE_CHROMIUM_HEADED!=='1',...(process.env.PE_CHROMIUM?{executablePath:process.env.PE_CHROMIUM}:{}),args:['--no-sandbox']});
- report.browser={version:browser.version(),headed:process.env.PE_CHROMIUM_HEADED==='1',focusEmulation:false,screenshotBackend:process.env.PLAYWRIGHT_LEGACY_SCREENSHOT?'legacy':'new-surface'};
- const newLearner=async actor=>{const context=await browser.newContext({viewport:{width:1100,height:900}});await context.addCookies([{name:'pe-fixture-actor',value:actor,url:origin}]);await context.route('**/*',route=>new URL(route.request().url()).origin===origin?route.continue():route.abort());const page=await context.newPage();const cdp=await context.newCDPSession(page);await cdp.send('Emulation.setFocusEmulationEnabled',{enabled:false});page.on('pageerror',e=>report.errors.push(e.message));await page.goto(`${origin}/student/pe03/?cohort=${ids.cohort}${actor==='instructor'?'&role=instructor':''}`);await page.locator('#activity').waitFor({state:'visible'});await page.bringToFront();await page.waitForFunction(()=>document.visibilityState==='visible'&&document.hasFocus(),{},{timeout:10000});return {context,page};};
+ report.browsers=[];
+ const newLearner=async actor=>{
+  const driver=await launchPe03BrowserDriver({origin,viewport:{width:1100,height:900},artifactDir:out});drivers.push(driver);
+  const {context}=driver;await context.addCookies([{name:'pe-fixture-actor',value:actor,url:origin}]);
+  const page=await driver.newPage();page.on('pageerror',e=>report.errors.push(e.message));
+  await page.goto(`${origin}/student/pe03/?cohort=${ids.cohort}${actor==='instructor'?'&role=instructor':''}`);await page.locator('#activity').waitFor({state:'visible'});await driver.focus(page);
+  report.browsers.push({actor,version:driver.browser.version(),headed:true,connection:'CDP noDefaults, isolated default context',screenshotBackend:process.env.PLAYWRIGHT_LEGACY_SCREENSHOT?'legacy':'new-surface'});
+  return {context,page,driver};
+ };
  const a=await newLearner('a');
  assert.equal(await a.page.locator('#send').isEnabled(),false);
  await a.page.screenshot({path:path.join(out,'01-initial-desktop.png')});
  const qualify=async(page,actor)=>{await page.bringToFront();await page.locator('#study').click();const start=Date.now();await page.waitForFunction(()=>document.getElementById('progress').textContent.includes('initial-submission'),{},{timeout:60000});await page.locator('#study').click();await page.waitForFunction(()=>!document.getElementById('study').disabled);const s=await f.state(ids[actor]);report.realTiming.push({actor,wallMs:Date.now()-start,observedMs:s.observedMs});assert.ok(s.observedMs>=30000);assert.ok(s.observedMs<=Date.now()-start+1000);};
- // Playwright enables focus emulation by default. Disable it above so actual browser tab visibility/focus, not an always-focused page, drives the lifecycle.
+ // The supported noDefaults connection never enables Playwright focus emulation. Each actor has an isolated fresh browser/default context.
  // No synthetic visibility events: actual offline transport and tab switches.
  await a.page.locator('#study').click();await a.page.waitForFunction(()=>document.getElementById('study').textContent==='Take a break'&&!document.getElementById('study').disabled);
  await a.context.setOffline(true);await a.page.waitForTimeout(1200);await a.context.setOffline(false);
  assert.equal(await a.page.locator('#study').innerText(),'Start observed work');assert.equal((await f.state(ids.a)).observedMs,0);
  await a.page.locator('#study').click();await a.page.waitForFunction(()=>document.getElementById('study').textContent==='Take a break'&&!document.getElementById('study').disabled);
- const away=await a.context.newPage();await away.goto(origin+'/away');await away.bringToFront();
- await a.page.waitForFunction(()=>document.visibilityState==='hidden',{},{timeout:10000});await a.page.waitForTimeout(1200);await a.page.bringToFront();await away.close();
+ const away=await a.driver.newPage();await away.goto(origin+'/away');await away.bringToFront();
+ await a.page.waitForFunction(()=>document.visibilityState==='hidden',{},{polling:100,timeout:10000});await a.page.waitForTimeout(1200);await a.page.bringToFront();await away.close();
  await a.page.waitForFunction(()=>document.getElementById('study').textContent==='Start observed work'&&!document.getElementById('study').disabled);
  assert.equal((await f.state(ids.a)).observedMs,0);report.checks.push('Actual Chromium offline/reconnect and hidden/background tab transitions earn no gap time and do not auto-resume');
  await qualify(a.page,'a');
@@ -80,8 +84,8 @@ try{
  report.checks.push('Observed initial preparation is closed after submission; dialogue waiting cannot earn time');
  // Add evidence in another cohort through the real RPC so scope checks have an exclusion witness.
  const other=await f.call(ids.b,'student',f.request('observe',{cohortId:ids.other,tabId:ids.tabB,mode:'paused'}));
- const downloadEvidence=async(page,filename)=>{await page.bringToFront();const pending=page.waitForEvent('download');await page.locator('#export').click();const downloaded=await pending;await downloaded.saveAs(path.join(out,filename));return JSON.parse(await fs.readFile(path.join(out,filename),'utf8'));};
- const state=await downloadEvidence(teacher.page,'synthetic-cohort-evidence.json');
+ const downloadEvidence=async(learner,filename)=>{await learner.driver.focus(learner.page);await learner.driver.saveDownload(learner.page,()=>learner.page.locator('#export').click(),path.join(out,filename));return JSON.parse(await fs.readFile(path.join(out,filename),'utf8'));};
+ const state=await downloadEvidence(teacher,'synthetic-cohort-evidence.json');
  assert.equal(state.role,'instructor');assert.equal(state.actorId,ids.instructor);assert.equal(state.cohort.id,ids.cohort);
  assert.equal(state.cohort.assignedInstructorId,ids.instructor);assert.equal(state.definition.contentHash,state.cohort.contentHash);
  const initial=state.evidence.filter(e=>e.kind==='submit'&&e.actorId===ids.a);assert.equal(initial.length,1);
@@ -91,10 +95,10 @@ try{
  assert.ok(initial[0].sequence<peers[0].sequence&&peers[0].sequence<feedback[0].sequence&&feedback[0].sequence<revision[0].sequence);
  assert.equal(initial[0].body.text,'E01 is borrower-reported. E03 has a missing page; request it before treating the balance as verified. E04 is separately documented savings.');
  const stored=await f.state(ids.instructor);assert.deepEqual(state.evidence,stored.evidence);assert.equal(state.evidence.some(e=>e.id===other.receiptId),false);
- const studentExport=await downloadEvidence(a.page,'synthetic-learner-evidence.json');assert.equal(studentExport.role,'student');assert.equal(studentExport.actorId,ids.a);assert.equal(studentExport.cohort.id,ids.cohort);
+ const studentExport=await downloadEvidence(a,'synthetic-learner-evidence.json');assert.equal(studentExport.role,'student');assert.equal(studentExport.actorId,ids.a);assert.equal(studentExport.cohort.id,ids.cohort);
  assert.deepEqual(studentExport.evidence,state.evidence.filter(e=>e.actorId===ids.a||e.kind==='submit'||(['peer','feedback'].includes(e.kind)&&e.targetId===initial[0].id)));
  assert.ok(state.evidence.some(e=>e.actorId===ids.b&&e.kind==='observe'));assert.equal(studentExport.evidence.some(e=>e.actorId===ids.b&&e.kind==='observe'),false);assert.equal(studentExport.evidence.some(e=>e.id===other.receiptId),false);
  for(const exported of [state,studentExport])for(const flag of ['creditEligible','certificateEligible','bankingEligible','durationValidated'])assert.equal(exported[flag],false);
  report.checks.push('Actual instructor/learner JSON downloads match stored initial → distinct peer → assigned feedback → revision lineage, preserve original text, exclude other-cohort evidence and other-learner observations, and retain false credit flags');
  assert.deepEqual(report.errors,[]);report.completed=true;
-}catch(error){report.failure={name:error.name,message:error.message};throw error;}finally{await browser?.close();await new Promise(resolve=>server.close(resolve));await f.db.close();report.finished=new Date().toISOString();await fs.writeFile(path.join(out,'report.json'),JSON.stringify(report,null,2));console.log(JSON.stringify(report,null,2));}
+}catch(error){report.failure={name:error.name,message:error.message};throw error;}finally{for(const driver of drivers.reverse())await driver.close();await new Promise(resolve=>server.close(resolve));await f.db.close();report.finished=new Date().toISOString();await fs.writeFile(path.join(out,'report.json'),JSON.stringify(report,null,2));console.log(JSON.stringify(report,null,2));}

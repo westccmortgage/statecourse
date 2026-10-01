@@ -15,6 +15,7 @@ on:
       - 'tests/pe03-*.test.mjs'
       - 'tests/integration/pe03-native.test.mjs'
       - 'tests/browser/pe03-local-browser.mjs'
+      - 'tests/browser/pe03-driver-diagnostic.mjs'
 
 permissions:
   contents: read
@@ -64,6 +65,17 @@ jobs:
           echo "PE_PGLITE_MODULE=$package/node_modules/@electric-sql/pglite/dist/index.js" >> "$GITHUB_ENV"
           "$package/node_modules/.bin/playwright" install --with-deps chromium
           sudo apt-get install --yes --no-install-recommends openbox
+      - name: Prove native browser visibility, screenshots and downloads first
+        run: |
+          xvfb-run --auto-servernum bash -c '
+            openbox > "$RUNNER_TEMP/pe03-driver-openbox.log" 2>&1 &
+            window_manager_pid=$!
+            trap "kill $window_manager_pid" EXIT
+            node tests/browser/pe03-driver-diagnostic.mjs
+          '
+        env:
+          PE_CHROMIUM_HEADED: '1'
+          PLAYWRIGHT_LEGACY_SCREENSHOT: '1'
       - name: Verify localhost-only CI and staff client contracts
         run: node --test tests/pe03-ci-contract.test.mjs
       - name: Verify cohort boundaries and actual staff proof binding
@@ -89,6 +101,7 @@ jobs:
         with:
           name: pe03-isolated-acceptance-${{ github.run_id }}
           path: |
+            artifacts/pe-cohort/driver/
             artifacts/pe-cohort/native/
             artifacts/pe-cohort/browser/
           if-no-files-found: warn
