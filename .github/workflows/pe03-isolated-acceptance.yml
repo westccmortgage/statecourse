@@ -1,0 +1,83 @@
+name: PE03 isolated native and browser acceptance
+
+on:
+  pull_request:
+    branches: [codex/pe-foundations-free-practice-20260930]
+    types: [opened, synchronize, reopened]
+    paths:
+      - '.github/workflows/pe03-isolated-acceptance.yml'
+      - 'database/drafts/pe03-cohort-evidence.sql'
+      - 'config/nmls/pe-oil-definition.mjs'
+      - 'netlify/functions/*pe03.mts'
+      - 'netlify/functions/_lib/nmls-pe-*.mjs'
+      - 'public/statecourse/student/pe03/**'
+      - 'tests/helpers/pe03-*.mjs'
+      - 'tests/pe03-*.test.mjs'
+      - 'tests/integration/pe03-native.test.mjs'
+      - 'tests/browser/pe03-local-browser.mjs'
+
+permissions:
+  contents: read
+
+jobs:
+  isolated-acceptance:
+    if: github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    services:
+      postgres:
+        image: postgres:17
+        env:
+          # Synthetic, disposable service credentials. No repository secret values are used.
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: pe03_local_only
+          POSTGRES_DB: pe03_ci_bootstrap
+        ports:
+          - 5432/tcp
+        options: >-
+          --health-cmd "pg_isready -U postgres -d pe03_ci_bootstrap"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
+    env:
+      PE03_NATIVE_CI: '1'
+      PE_POSTGRES_HOST: 127.0.0.1
+      PE_POSTGRES_PORT: ${{ job.services.postgres.ports[5432] }}
+    steps:
+      - name: Check out the reviewed local-only trial
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install isolated pinned verification dependencies
+        run: |
+          package="$RUNNER_TEMP/pe03-verification"
+          npm install --prefix "$package" --no-save --package-lock=false pg@8.23.1 playwright@1.63.0 @electric-sql/pglite@0.5.8
+          echo "PE_PG_MODULE=$package/node_modules/pg" >> "$GITHUB_ENV"
+          echo "PE_PLAYWRIGHT_MODULE=$package/node_modules/playwright" >> "$GITHUB_ENV"
+          echo "PE_PGLITE_MODULE=$package/node_modules/@electric-sql/pglite/dist/index.js" >> "$GITHUB_ENV"
+          "$package/node_modules/.bin/playwright" install --with-deps chromium
+      - name: Verify localhost-only CI and staff client contracts
+        run: node --test tests/pe03-ci-contract.test.mjs
+      - name: Verify cohort boundaries and actual staff proof binding
+        run: node --test --test-concurrency=1 tests/pe03-cohort.test.mjs tests/pe03-staff-boundary.test.mjs
+      - name: Verify separate native PostgreSQL connections and lock waits
+        run: node --test tests/integration/pe03-native.test.mjs
+      - name: Render local UI against the disposable native PostgreSQL fixture
+        # A virtual display gives real focus/visibility transitions across tabs.
+        run: xvfb-run --auto-servernum node tests/browser/pe03-local-browser.mjs
+        env:
+          PE_CHROMIUM_HEADED: '1'
+      - name: Retain only synthetic test reports, evidence and screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pe03-isolated-acceptance-${{ github.run_id }}
+          path: |
+            artifacts/pe-cohort/native/
+            artifacts/pe-cohort/browser/
+          if-no-files-found: warn
+          retention-days: 3

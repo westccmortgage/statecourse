@@ -74,3 +74,15 @@ See [PE07/PE08 integration record](../../engineering/pe-product-file-expansion-2
 The candidate is limited to the existing PR23 preview and includes the explicit Read-mode link correction. Qualifying OIL delivery, actual timing, human acceptance, protected final assessment and regulatory approval remain separate open gates. Production, CE, owner OAuth, payments and all credit authority remain unchanged. Aggregate tests retain the same 57 known failures and 27 skips; full CI is not green.
 
 See [PE03 evidence-lab implementation and remaining OIL work](../../engineering/pe-evidence-lab-2026-10-01.md). This entry closes no regulated-launch gate above.
+
+## PE03 private cohort evidence — local-only trial, 2026-10-01
+
+**SOURCE PRESENT / LOCAL PASS / DISABLED / NONCREDIT.** A separate PE03 definition, default-off private cohort/API, server observation sample and immutable learner → distinct peer → assigned instructor → learner revision chain are available for parent review. Draft SQL was executed only in embedded PGlite with synthetic identities and modeled prerequisites. Twenty focused tests and the JSDOM/local-HTTP/PGlite flow pass. Technical samples of approximately 39 seconds per learner do not validate lesson duration or a 20-hour course.
+
+No publication, live migration, approval, credit, certificate or banking authority is established. Real rendered Chromium was blocked by the local socket sandbox; actual-schema/hosted-auth verification, native concurrent PostgreSQL acceptance, cumulative OIL policy, timing study, human SME, protected PE final and regulatory gates remain open. Public free practice, CE/OSS and the owner-OAuth overlay are unchanged. Aggregate failures remain the same 57 known identities; full CI is not green.
+
+See [local cohort implementation and acceptance limits](../../engineering/pe03-private-cohort-local-2026-10-01.md). This entry closes no regulated-launch gate above.
+
+### PE03 instructor correction and isolated CI proposal — 2026-10-01
+
+The initial local cohort candidate is **superseded/local-incomplete**: it failed closed when real staff fresh-action authentication lacked required request metadata/client integration. The narrow new-handler/page correction passes 27 focused tests, including consumed-proof rejection and instructor lost-response recovery with a fresh proof and one immutable feedback event. Existing auth/OAuth and CE code were not changed. The isolated native PostgreSQL/Chromium workflow is prepared but has **not run**; neither environment-limited gate is closed. All enablement and credit flags remain off. See [correction evidence and CI review scope](../../engineering/pe03-isolated-ci-proposal-2026-10-01.md).
