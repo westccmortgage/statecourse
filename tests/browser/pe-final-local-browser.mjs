@@ -43,8 +43,8 @@ try{
  const fillAnswers=async(page,form,count)=>{for(const [id,choice] of Object.entries(f.answers(form,count)))await page.locator(`input[name="${id}"][value="${choice}"]`).check();};
  await fillAnswers(a.page,firstForm,17);await a.page.reload();await a.page.locator('#examForm').waitFor({state:'visible'});assert.equal(await a.page.locator('#questions input:checked').count(),25);await a.page.screenshot({path:path.join(out,'02-protected-form-desktop.png')});
  await a.page.goto(`${origin}/away`);assert.equal(await a.page.title(),'Away');
- await a.page.goBack();await a.page.locator('#examForm').waitFor({state:'visible'});await idle(a.page);assert.equal(await a.page.locator('#questions input:checked').count(),25);
- await a.page.goForward();assert.equal(await a.page.title(),'Away');await a.page.goBack();await a.page.locator('#examForm').waitFor({state:'visible'});await idle(a.page);
+ await a.page.goBack();await focusPage(a);await a.page.locator('#examForm').waitFor({state:'visible'});await idle(a.page);assert.equal(await a.page.locator('#questions input:checked').count(),25);
+ await a.page.goForward();assert.equal(await a.page.title(),'Away');await a.page.goBack();await focusPage(a);await a.page.locator('#examForm').waitFor({state:'visible'});await idle(a.page);
  assert.equal(await a.page.locator('#questions input:checked').count(),25);assert.equal((await f.state(ids.a)).attempt.attemptId,firstId);assert.equal((await f.db.query('select count(*)::int n from pe_final_attempts')).rows[0].n,1);
  assert.equal(await a.page.locator('#decision').isVisible(),false);assert.equal(await a.page.locator('#grade').innerText(),'');
  report.checks.push('Back/Forward navigation restores the same active attempt and all answer drafts without a new form or instructor controls');
