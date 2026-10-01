@@ -31,7 +31,7 @@ test('publishes only eight substantive, source-linked student modules and format
   assert.equal(payload.operating_mode, 'free_practice');
   assert.match(payload.availability_notice, /Eight draft modules are available/);
   assert.match(payload.access, /before, during and after paid enrollment/);
-  assert.equal(files.size, 9);
+  assert.equal(files.size, 10);
   for (const [name, text] of files) {
     assert.ok(name.startsWith('free-practice/'));
     assert.doesNotMatch(name, /instructor|answer-key|final|assessment/);
@@ -133,6 +133,10 @@ test('generator and browser routes keep public practice distinct from CE and reg
   assert.match(generator, /not a complete 20-hour course/);
   assert.match(generator, /No account, tuition or subscription is required/);
   assert.match(generator, /genuine instructor and peer interaction/);
+  for (let lessonNumber = 1; lessonNumber <= 8; lessonNumber++) {
+    const id = String(lessonNumber).padStart(2, '0');
+    assert.ok(generator.includes(`&amp;lesson=module-${id}&amp;mode=read">Read PE${id} and practice`));
+  }
   assert.match(generator, /class="cta-button" href="\$\{pePracticeUrl\}">Start free foundations/);
   assert.match(read('public/statecourse/national.css'), /\.cta-button\s*\{[^}]*display:\s*inline-block/);
   assert.match(generator, /Free Practice", "free-practice\//);

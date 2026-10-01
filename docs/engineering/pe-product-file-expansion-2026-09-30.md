@@ -45,3 +45,7 @@ The verification above records the local checkpoint before publication. Exact up
 Review has authorized publication only to the existing PR23 branch and preview, followed by exact-head build/privacy checks and rendered PE07/PE08 acceptance. Main remains unmerged. Production publication is still blocked on exact preservation of manual live deploy `6abbf3242b9d9e605eda349e`, its owner-OAuth overlay, function/Edge artifacts and routing. The separate marker-withheld artifact-reuse request is not permission for production or a completed independent deployment; this task has made no probe POST or production mutation.
 
 Human SME/legal acceptance, validated OIL delivery and timing, accessibility and regulatory approval remain separate gates. Continuing free practice for every course remains an ongoing requirement.
+
+## Rendered Read-link correction
+
+The first eight-module preview at `7c2d6ecc0159e455b16b5ad9f02dc7ad46a8dbe9` passed the exercised quiz, numeric/written case, retry, reload and course-switch flows. Review found that a landing link labelled Read could reopen the saved Casework mode. All eight explicit Read links now include `mode=read`; the existing client already honors that requested mode. Saved answers and casework remain intact, and ordinary course switching retains its existing behavior. The warm-session Read path is covered by a DOM regression and requires final preview readback. No instructional or backend changes.

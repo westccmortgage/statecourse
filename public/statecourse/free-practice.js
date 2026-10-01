@@ -1,14 +1,17 @@
 import { renderLessonMarkdown, escapeHtml as esc } from './student/course/blocks/lesson-markdown.mjs';
 import { splitSections, presentedChoices, gradePractice, practiceSummary, restorePractice } from './practice-core.mjs';
 import { renderPracticeActivities } from './practice-activities.mjs';
+import { renderEvidenceLab } from './evidence-lab.mjs';
 const base=new URL('./',import.meta.url), $=id=>document.getElementById(id);
 const stateSelect=$('practiceStateSelect'), courseSelect=$('practiceCourseSelect'), lessonSelect=$('practiceLessonSelect');
 const content=$('practiceContent'), quiz=$('practiceQuiz'), message=$('practiceMessage');
 const activitiesView=$('practiceActivities');
+const labView=$('practiceEvidenceLab');
 let samples=[], sample=null, course=null, sections=[], sectionIndex=0, questionIndex=0, mode='read', answers={}, position={}, pending=null, requestId=0;
-const storageKey=()=> 'statecourse:free-practice:v2:'+sample.course_id+':'+sample.revision;
+const storageKey=()=> 'statecourse:free-practice:v2:'+sample.course_id+':'+(sample.progress_revision??sample.revision);
 const currentQuestions=()=>course?.questions.filter(q=>q.lesson_id===lessonSelect.value)??[];
 const currentActivities=()=>course?.activities?.filter(a=>a.lesson_id===lessonSelect.value)??[];
+const currentLab=()=>course?.supplemental_labs?.find(lab=>lab.lesson_id===lessonSelect.value);
 function save(){
   if(!sample||!course)return;
   position={lesson:lessonSelect.value,section:sectionIndex,question:questionIndex,mode};
@@ -42,10 +45,11 @@ function renderQuestion(){
 }
 function render(){
   if(!course||!sections.length)return;
+  const lab=currentLab();if(mode==='lab'&&!lab)mode='read';
   sectionIndex=Math.max(0,Math.min(sectionIndex,sections.length-1));
   const section=sections[sectionIndex];
   content.innerHTML='<h2>'+esc(section.title)+'</h2>'+renderLessonMarkdown(section.body);
-  content.hidden=mode!=='read';quiz.hidden=mode!=='quiz';activitiesView.hidden=mode!=='activities';$('practiceSectionNav').hidden=mode!=='read';
+  content.hidden=mode!=='read';quiz.hidden=mode!=='quiz';activitiesView.hidden=mode!=='activities';labView.hidden=mode!=='lab';$('practiceSectionNav').hidden=mode!=='read';
   $('practiceSectionLabel').textContent='Section '+(sectionIndex+1)+' of '+sections.length;
   $('practicePrevious').disabled=sectionIndex===0;$('practiceNext').disabled=sectionIndex===sections.length-1;
   $('practiceReadMode').setAttribute('aria-pressed',String(mode==='read'));$('practiceQuizMode').setAttribute('aria-pressed',String(mode==='quiz'));
@@ -53,16 +57,19 @@ function render(){
   $('practiceActivitiesMode').hidden=!course.activities?.length;
   $('practiceActivitiesMode').setAttribute('aria-pressed',String(mode==='activities'));
   $('practiceActivitiesMode').textContent='Casework ('+currentActivities().length+')';
+  $('practiceEvidenceMode').hidden=!lab;
+  $('practiceEvidenceMode').setAttribute('aria-pressed',String(mode==='lab'));
   const i=course.lessons.findIndex(l=>l.id===lessonSelect.value);
   $('practicePreviousLesson').disabled=i===0;$('practiceNextLesson').disabled=i===course.lessons.length-1;
   $('practiceBottomNav').hidden=false;$('practiceMode').hidden=false;
   if(mode==='quiz')renderQuestion();progress();save();updateUrl();
   if(mode==='activities')renderPracticeActivities(activitiesView,currentActivities(),storageKey()+':activities');
+  if(mode==='lab')renderEvidenceLab(labView,lab,'statecourse:free-practice:lab:'+sample.course_id);
 }
 async function openLesson(id,restore=false){
   const lesson=course?.lessons.find(l=>l.id===id);if(!lesson)return;
   const token=++requestId;pending?.abort();pending=new AbortController();
-  lessonSelect.value=id;message.textContent='Loading lesson…';content.replaceChildren();quiz.replaceChildren();activitiesView.replaceChildren();
+  lessonSelect.value=id;message.textContent='Loading lesson…';content.replaceChildren();quiz.replaceChildren();activitiesView.replaceChildren();labView.replaceChildren();
   for(const id of ['practiceSectionNav','practiceMode','practiceBottomNav'])$(id).hidden=true;
   try{
     const lessonUrl=new URL(lesson.content_url,base);lessonUrl.searchParams.set('v',lesson.sha256);
@@ -78,7 +85,7 @@ async function openCourse(id,requestedLesson=null,requestedMode=null){
   const token=++requestId;pending?.abort();pending=new AbortController();sample=entry;course=null;answers={};position={};sections=[];
   courseSelect.value=id;lessonSelect.disabled=true;lessonSelect.replaceChildren();
   for(const id of ['practiceSectionNav','practiceMode','practiceBottomNav'])$(id).hidden=true;
-  content.replaceChildren();quiz.replaceChildren();activitiesView.replaceChildren();$('practiceProgress').textContent='';
+  content.replaceChildren();quiz.replaceChildren();activitiesView.replaceChildren();labView.replaceChildren();$('practiceProgress').textContent='';
   $('practiceStateLabel').textContent=sample.state_name+' · In development · Free practice';$('practiceCourseTitle').textContent=sample.course_title;
   message.textContent='Loading course…';
   $('practiceRecord').innerHTML='<div><dt>Access</dt><dd>Free · no account required</dd></div><div><dt>Material</dt><dd>'+sample.lesson_count+' lessons · '+sample.question_count+' questions</dd></div><div><dt>Credit</dt><dd>None — practice only</dd></div>';
@@ -92,7 +99,7 @@ async function openCourse(id,requestedLesson=null,requestedMode=null){
     for(const [i,l] of course.lessons.entries())lessonSelect.add(new Option((i+1)+'. '+l.title,l.id));
     lessonSelect.disabled=false;
     const preferredMode=requestedMode??position.mode;
-    mode=preferredMode==='activities'&&course.activities?.length?'activities':preferredMode==='quiz'?'quiz':'read';
+    mode=preferredMode==='lab'&&course.supplemental_labs?.length?'lab':preferredMode==='activities'&&course.activities?.length?'activities':preferredMode==='quiz'?'quiz':'read';
     const lessonId=course.lessons.find(l=>l.id===requestedLesson)?.id??course.lessons.find(l=>l.id===position.lesson)?.id??course.lessons[0].id;
     await openLesson(lessonId,true);document.title=sample.course_title+' — Free Practice | StateCourse';
   }catch(error){if(error.name!=='AbortError')message.textContent='Could not load this course. Select it again to retry.';}
@@ -109,6 +116,7 @@ lessonSelect.addEventListener('change',()=>openLesson(lessonSelect.value));
 $('practiceReadMode').addEventListener('click',()=>{mode='read';render();});
 $('practiceQuizMode').addEventListener('click',()=>{mode='quiz';render();});
 $('practiceActivitiesMode').addEventListener('click',()=>{mode='activities';render();activitiesView.querySelector('h2').focus({preventScroll:true});});
+$('practiceEvidenceMode').addEventListener('click',()=>{mode='lab';render();labView.querySelector('h2').focus({preventScroll:true});});
 $('practicePrevious').addEventListener('click',()=>{sectionIndex--;render();content.focus({preventScroll:true});});
 $('practiceNext').addEventListener('click',()=>{sectionIndex++;render();content.focus({preventScroll:true});});
 for(const [id,d] of [['practicePreviousLesson',-1],['practiceNextLesson',1]])$(id).addEventListener('click',()=>{const i=course.lessons.findIndex(l=>l.id===lessonSelect.value);openLesson(course.lessons[i+d]?.id);});

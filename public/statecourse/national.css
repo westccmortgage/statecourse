@@ -154,6 +154,19 @@ button, select, summary, a { -webkit-tap-highlight-color: transparent; }
 .practice-sources, .practice-question-count { font-size: 14px; line-height: 1.6; }
 .practice-content { overflow-wrap: anywhere; }
 .practice-content table { display: block; max-width: 100%; overflow-x: auto; }
+.evidence-lab { min-width: 0; }
+.evidence-navigation { display: flex; flex-wrap: wrap; gap: 16px; margin: 20px 0; }
+.evidence-navigation label { flex: 1 1 240px; min-width: 0; font-weight: 700; }
+.evidence-navigation select { display: block; width: 100%; max-width: 100%; margin-top: 8px; padding: 12px; min-height: 44px; font: inherit; }
+.evidence-navigation button { padding: 12px 16px; min-height: 44px; font: inherit; cursor: pointer; }
+.evidence-lab details { margin: 16px 0; padding: 12px 16px; border: 1px solid var(--rule); border-radius: 4px; }
+.evidence-lab summary { cursor: pointer; padding: 8px 0; font-weight: 700; }
+.evidence-fields { display: grid; grid-template-columns: minmax(100px, 1fr) minmax(0, 2fr); gap: 10px 20px; }
+.evidence-fields dt { font-weight: 700; }
+.evidence-fields dd { margin: 0; min-width: 0; }
+.evidence-release-title { scroll-margin-top: 104px; }
+.evidence-history dd { margin: 0 0 16px; white-space: pre-wrap; }
+@media (max-width: 760px) { .evidence-fields { display: block; } .evidence-fields dd { margin: 4px 0 16px; } .evidence-lab details { padding: 10px; } }
 .practice-case { margin: 28px 0; padding: 24px 0; border-top: 1px solid var(--rule); overflow-wrap: anywhere; }
 .practice-case-context, .practice-case-facts { font-size: 16px; line-height: 1.75; margin: 20px 0; }
 .practice-page .practice-case-task { margin: 28px 0; }

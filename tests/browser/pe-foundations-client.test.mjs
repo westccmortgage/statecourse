@@ -13,6 +13,7 @@ const { JSDOM } = require(process.env.JSDOM_MODULE_PATH || 'jsdom');
 const root = fileURLToPath(new URL('../..', import.meta.url));
 const publicRoot = path.join(root, 'public/statecourse');
 const payload = JSON.parse(fs.readFileSync(path.join(publicRoot, 'free-practice/courses/national-safe-pe-foundations.json')));
+const sample = JSON.parse(fs.readFileSync(path.join(publicRoot, 'data/free-practice-catalog.json'))).samples.find(item => item.course_id === payload.course_id);
 const waitFor = async predicate => {
   for (let i = 0; i < 100; i++) {
     if (predicate()) return;
@@ -27,6 +28,13 @@ test('PE public client supports questions, retries, casework, state switching an
     pretendToBeVisual: true,
   });
   const scrolled = [];
+  const priorQuestion = payload.questions.find(question => question.lesson_id === 'module-02');
+  const priorWrong = (priorQuestion.solution + 1) % 4;
+  const priorProgressKey = 'statecourse:free-practice:v2:' + payload.course_id + ':' + sample.progress_revision;
+  dom.window.localStorage.setItem(priorProgressKey, JSON.stringify({
+    answers: { [priorQuestion.id]: { selected: priorWrong, firstSelected: priorWrong, attempts: 1 } },
+    position: { lesson: 'module-02', section: 0, question: 0, mode: 'read' },
+  }));
   dom.window.HTMLElement.prototype.scrollIntoView = function (options) { scrolled.push({ element: this, options }); };
   const previous = new Map();
   for (const name of ['window', 'document', 'location', 'history', 'localStorage', 'Option', 'FormData']) {
@@ -60,6 +68,8 @@ test('PE public client supports questions, retries, casework, state switching an
   assert.equal($('practiceStateSelect').value, 'US');
   assert.equal($('practiceStatePath').pathname, '/mortgage/pre-license/');
   assert.match($('practiceMessage').textContent, /Eight draft modules/);
+  assert.match($('practiceProgress').textContent, /Course practice: 1\/100 answered/);
+  assert.equal($('practiceEvidenceMode').hidden, true);
 
   $('practiceQuizMode').click();
   let form = $('practiceAnswerForm');
@@ -138,6 +148,84 @@ test('PE public client supports questions, retries, casework, state switching an
     assert.match(activeCase().textContent, /not course passage or an instructor assessment/);
   }
 
+  // Supplemental lab uses the same public practice shell and case checker.
+  // Its path/release navigation must neither mix evidence nor lose old work.
+  change($('practiceLessonSelect'), 'module-03');
+  await waitFor(() => !$('practiceMode').hidden && $('practiceLessonSelect').value === 'module-03');
+  assert.equal($('practiceEvidenceMode').hidden, false);
+  $('practiceEvidenceMode').click();
+  const lab = payload.supplemental_labs[0], labView = $('practiceEvidenceLab');
+  assert.equal(labView.hidden, false);
+  assert.equal(new URL(dom.window.location.href).searchParams.get('mode'), 'lab');
+  assert.equal(labView.querySelectorAll('[data-exhibit]').length, 4);
+  assert.equal(labView.querySelector('[data-exhibit=E06]'), null);
+  assert.equal(labView.querySelector('[data-exhibit=E09]'), null);
+  const selectRelease = index => change(labView.querySelector('[data-lab-stage]'), String(index));
+  const selectBranch = value => change(labView.querySelector('[data-lab-branch]'), value);
+  const fillLabActivity = (branch, taskId, wrongKey = null) => {
+    const activity = lab.activities_by_branch[branch].find(item => item.lab_task_id === taskId);
+    const element = labView.querySelector(`[data-case="${activity.id}"]`);
+    const form = element.querySelector('form');
+    for (const task of activity.tasks) input(form.elements.namedItem(task.id), task.type === 'computation'
+      ? task.id.endsWith(wrongKey ?? '__none') ? task.solution + 1 : task.solution
+      : 'Fictional evidence analysis: preserve the original version, cite the source and route unresolved facts.');
+    form.querySelector('button[type=submit]').click();
+    return labView.querySelector(`[data-case="${activity.id}"]`);
+  };
+  selectRelease(2);
+  assert.ok(labView.querySelector('[data-exhibit=E06]'));
+  selectBranch('U');
+  assert.equal(labView.querySelector('[data-exhibit=E06]'), null);
+  assert.equal(labView.querySelector('[data-exhibit=E09]'), null);
+  assert.equal(labView.querySelector('input[name$="R_checking_credits"]'), null);
+  fillLabActivity('U', 'T12');
+  const uField = lab.activities_by_branch.U.find(item => item.lab_task_id === 'T12').tasks[0].id;
+  assert.equal(labView.querySelector(`[name="${uField}"]`).value, '12000');
+  selectBranch('R');
+  const rField = lab.activities_by_branch.R.find(item => item.lab_task_id === 'T12').tasks[0].id;
+  assert.equal(labView.querySelector(`[name="${rField}"]`).value, '');
+  fillLabActivity('R', 'T12');
+  selectBranch('U');
+  assert.equal(labView.querySelector(`[name="${uField}"]`).value, '12000');
+  selectRelease(3);
+  assert.ok(labView.querySelector('[data-exhibit=E09]'));
+  assert.equal(labView.querySelector('[data-exhibit=E10]'), null);
+  selectRelease(4);
+  assert.ok(labView.querySelector('[data-exhibit=E10]'));
+  let submitted = fillLabActivity('U', 'T15', '-revised_total_dti');
+  assert.ok(submitted.querySelector('.is-incorrect'));
+  submitted = fillLabActivity('U', 'T15');
+  assert.equal(submitted.querySelector('.is-incorrect'), null);
+  const historyKey = Object.keys(dom.window.localStorage).find(key => key.includes(':lab:pe03-evidence-lab:') && key.endsWith(':history'));
+  const history = JSON.parse(dom.window.localStorage.getItem(historyKey));
+  const revisions = history.filter(item => item.activity.endsWith('PEEL-U-T15'));
+  assert.equal(revisions.length, 2);
+  const ratioId = lab.activities_by_branch.U.find(item => item.lab_task_id === 'T15').tasks.find(item => item.id.endsWith('-revised_total_dti')).id;
+  assert.equal(revisions[0].answers[ratioId], 52.23);
+  assert.equal(revisions[1].answers[ratioId], 51.23);
+  assert.ok(labView.querySelector('[data-lab-next]').disabled);
+  const preservedHistory = dom.window.localStorage.getItem(historyKey);
+  $('practiceReadMode').click();
+  $('practiceEvidenceMode').click();
+  assert.equal(labView.querySelector('[data-lab-branch]').value, 'U');
+  assert.equal(labView.querySelector('[data-lab-stage]').value, '4');
+  assert.equal(labView.querySelector(`[name="${ratioId}"]`).value, '51.23');
+  assert.equal(dom.window.localStorage.getItem(historyKey), preservedHistory);
+  const storagePrototype = Object.getPrototypeOf(dom.window.localStorage);
+  const originalSetItem = storagePrototype.setItem;
+  storagePrototype.setItem = function (name, value) {
+    if (name.endsWith(':answers')) throw new dom.window.DOMException('Storage unavailable', 'QuotaExceededError');
+    return originalSetItem.call(this, name, value);
+  };
+  labView.querySelector(`[data-case="${lab.activities_by_branch.U.find(item => item.lab_task_id === 'T15').id}"] button[type=submit]`).click();
+  assert.match(labView.querySelector('.evidence-save-status').textContent, /could not save/);
+  storagePrototype.setItem = originalSetItem;
+  change($('practiceLessonSelect'), 'module-04');
+  await waitFor(() => !$('practiceMode').hidden && $('practiceLessonSelect').value === 'module-04');
+  assert.equal($('practiceEvidenceMode').hidden, true);
+  assert.equal(labView.hidden, true);
+  assert.equal($('practiceReadMode').getAttribute('aria-pressed'), 'true');
+
   change($('practiceStateSelect'), 'CA');
   change($('practiceStateSelect'), 'US');
   await waitFor(() => !$('practiceMode').hidden && $('practiceCourseSelect').value === 'national-safe-pe-foundations');
@@ -153,5 +241,14 @@ test('PE public client supports questions, retries, casework, state switching an
   dom.window.dispatchEvent(new dom.window.PopStateEvent('popstate'));
   await waitFor(() => !$('practiceMode').hidden && $('practiceLessonSelect').value === 'module-08');
   assert.equal($('practiceActivities').hidden, false);
+  const savedCasework = dom.window.localStorage.getItem(key + ':activities');
+  assert.ok(savedCasework, 'The explicit Read link must preserve existing casework');
+  dom.window.history.replaceState({}, '', '/free-practice/?course=national-safe-pe-foundations&lesson=module-08&mode=read');
+  dom.window.dispatchEvent(new dom.window.PopStateEvent('popstate'));
+  await waitFor(() => !$('practiceMode').hidden && $('practiceReadMode').getAttribute('aria-pressed') === 'true');
+  assert.equal($('practiceContent').hidden, false);
+  assert.equal($('practiceActivities').hidden, true);
+  assert.equal(dom.window.localStorage.getItem(key + ':activities'), savedCasework);
+  assert.equal(dom.window.localStorage.getItem(historyKey), preservedHistory);
   assert.ok(requests.every(url => !url.startsWith('/api/') && !url.includes('/.netlify/functions/')));
 });

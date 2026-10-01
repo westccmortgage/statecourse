@@ -25,7 +25,7 @@ export function checkPracticeTask(task, answer) {
 const sourceLinks = sources => (sources ?? []).filter(s => /^https:\/\//.test(s.url)).map(s =>
   '<a href="' + esc(s.url) + '" target="_blank" rel="noopener noreferrer">' + esc(s.reference || 'Official source') + '</a>').join(' · ');
 
-export function renderPracticeActivities(container, activities, key) {
+export function renderPracticeActivities(container, activities, key, { onCommit, onSaveError } = {}) {
   const known = new Map(activities.flatMap(a => a.tasks.map(t => [t.id, t])));
   let saved = {};
   try { saved = JSON.parse(localStorage.getItem(key) || '{}'); } catch {}
@@ -41,7 +41,7 @@ export function renderPracticeActivities(container, activities, key) {
     try { all = JSON.parse(localStorage.getItem(key) || '{}'); } catch {}
     if (!all || typeof all !== 'object' || Array.isArray(all)) all = {};
     for (const id of known.keys()) delete all[id];
-    try { localStorage.setItem(key, JSON.stringify({ ...all, ...records })); } catch {}
+    try { localStorage.setItem(key, JSON.stringify({ ...all, ...records })); } catch { onSaveError?.(); }
   }
   function draw() {
     container.innerHTML = '<h2 tabindex="-1">Casework and understanding checks</h2><p>Free, non-credit practice. Numerical and multiple-choice feedback is automatic. Written responses are self-review only: no instructor grade, course passage, regulated study time, or certificate is recorded. Work is saved only in this browser.</p>' +
@@ -95,7 +95,9 @@ export function renderPracticeActivities(container, activities, key) {
       }
       records[task.id] = { answer, checked: true };
     }
-    save(); draw();
+    save();
+    onCommit?.(activity, Object.fromEntries(activity.tasks.map(task => [task.id, { ...records[task.id] }])));
+    draw();
     [...container.querySelectorAll('[data-case]')].find(el => el.dataset.case === activity.id)?.querySelector('.practice-case-summary')?.focus({ preventScroll: true });
   };
   container.onclick = event => {

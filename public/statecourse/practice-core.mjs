@@ -42,6 +42,6 @@ export function restorePractice(saved,questions) {
     if(gradePractice(q,value.selected))answers[q.id].selected=value.selected;
   }
   const p=saved?.position;
-  const position={lesson:typeof p?.lesson==='string'?p.lesson:null,section:Number.isSafeInteger(p?.section)&&p.section>=0?p.section:0,question:Number.isSafeInteger(p?.question)&&p.question>=0?p.question:0,mode:['quiz','activities'].includes(p?.mode)?p.mode:'read'};
+  const position={lesson:typeof p?.lesson==='string'?p.lesson:null,section:Number.isSafeInteger(p?.section)&&p.section>=0?p.section:0,question:Number.isSafeInteger(p?.question)&&p.question>=0?p.question:0,mode:['quiz','activities','lab'].includes(p?.mode)?p.mode:'read'};
   return {answers,position};
 }

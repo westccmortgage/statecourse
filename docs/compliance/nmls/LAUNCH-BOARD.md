@@ -66,3 +66,11 @@ PE07 and PE08 each have 100 proposed, unvalidated minutes. The eight-module desi
 The preceding six-module public preview is `5ce2e3aff619721b73910453708390ba0f20a2ce`. The eight-module update is authorized only for the same PR23 preview; exact updated-head/deploy and rendered acceptance are retained in the release evidence. The eight-module candidate passes 91 focused Node tests, two DOM tests, both builds and the privacy scan. Aggregate tests still have the same 57 baseline/fixture failures and 27 skips; full CI is not green. No auth, backend, CE, Netlify configuration, payment or completion-authority changes. Production remains held on preserving the separate manual owner-OAuth deployment. This entry closes no regulated-launch gate above.
 
 See [PE07/PE08 integration record](../../engineering/pe-product-file-expansion-2026-09-30.md) for exact scope, source integrity, privacy boundaries and validation limits.
+
+## PE03 document evidence lab — preview candidate, 2026-10-01
+
+**BUILT / PUBLIC PREVIEW CANDIDATE.** A supplemental PE03 lab adds ten fictional source excerpts, sixteen evidence tasks, thirty-six distinct numeric checks and two alternative evidence paths to the existing eight-module public practice. It adds no module or proposed instructional minutes. Original lessons, quizzes and cases remain unchanged. Browser-local submitted versions support learner revision; no instructor, peer, timing, identity or completion service is represented.
+
+The candidate is limited to the existing PR23 preview and includes the explicit Read-mode link correction. Qualifying OIL delivery, actual timing, human acceptance, protected final assessment and regulatory approval remain separate open gates. Production, CE, owner OAuth, payments and all credit authority remain unchanged. Aggregate tests retain the same 57 known failures and 27 skips; full CI is not green.
+
+See [PE03 evidence-lab implementation and remaining OIL work](../../engineering/pe-evidence-lab-2026-10-01.md). This entry closes no regulated-launch gate above.

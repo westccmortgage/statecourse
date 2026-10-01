@@ -4,6 +4,7 @@ import { createHash } from 'node:crypto';
 import { PE_FOUNDATIONS, TOPIC_QUIZZES, SCENARIOS } from '../../config/pe-foundations-practice.mjs';
 import { PUBLIC_ITEM_COUNTS, isReviewedSourcelessCase } from '../../config/pe-application-practice.mjs';
 import { projectPracticeActivities } from './free-practice-activities.mjs';
+import { buildPeEvidenceLab } from '../../config/pe-evidence-lab.mjs';
 
 // Explicitly public, newly authored formative material. Never load the CE
 // review loader, final banks, instructor guide, or an aggregate NMLS source tree.
@@ -47,7 +48,7 @@ function validatePeScenarios(scenarios) {
   }
 }
 
-export function buildPeFoundationsPractice({ root, write, quizzes = TOPIC_QUIZZES, scenarios = SCENARIOS }) {
+export function buildPeFoundationsPractice({ root, write, quizzes = TOPIC_QUIZZES, scenarios = SCENARIOS, labBundle }) {
   const source = PE_FOUNDATIONS;
   const lessons = lessonFiles.map(file => {
     const markdown = fs.readFileSync(path.join(root, source.curriculumDir, file), 'utf8');
@@ -100,10 +101,22 @@ export function buildPeFoundationsPractice({ root, write, quizzes = TOPIC_QUIZZE
     providerApproval: null, courseApproval: null, access: 'Free before, during and after paid enrollment. No account or payment required.',
     lessons: lessons.map(({ id, title, content_url, sha256 }) => ({ id, title, content_url, sha256 })), questions, activities,
   };
+  // Existing questions and cases retain their progress key when only a new
+  // supplemental lab changes. Content changes still invalidate the core key.
+  const progress_revision = digest(JSON.stringify(payload, null, 2) + '\n').slice(0, 16);
+  const lab = buildPeEvidenceLab({ bundle: labBundle, courseId: source.courseId });
+  const labMarkdown = fs.readFileSync(path.join(root, 'nmls/pe-foundations/practice/pe03-evidence-lab.md'), 'utf8');
+  if (protectedText.test(labMarkdown) || !/Not NMLS approved/.test(labMarkdown) || !/No credit/.test(labMarkdown))
+    throw new Error('Invalid public PE evidence lab manuscript');
+  lab.content_url = `free-practice/lessons/${source.courseId}/pe03-evidence-lab.md`;
+  lab.sha256 = digest(labMarkdown);
+  lab.revision = digest(JSON.stringify(lab)).slice(0, 16);
+  payload.supplemental_labs = [lab];
   const encoded = JSON.stringify(payload, null, 2) + '\n';
   if (protectedText.test(encoded)) throw new Error('Protected PE practice output');
   // Validate every input before making any output writes.
   for (const lesson of lessons) write(lesson.content_url, lesson.markdown);
+  write(lab.content_url, labMarkdown);
   const practice_url = `free-practice/courses/${source.courseId}.json`;
   write(practice_url, encoded);
   return {
@@ -111,6 +124,7 @@ export function buildPeFoundationsPractice({ root, write, quizzes = TOPIC_QUIZZE
     public_status: 'In Development', record_url: source.recordUrl, content_url: lessons[0].content_url, practice_url,
     lesson_count: lessons.length, question_count: questions.length, activity_count: activities.length,
     activity_task_count: activities.reduce((count, a) => count + a.tasks.length, 0), coverage: source.coverage,
-    creditEligible: false, completeCourse: false, revision: digest(encoded).slice(0, 16),
+    creditEligible: false, completeCourse: false, revision: digest(encoded).slice(0, 16), progress_revision,
+    supplemental_lab_count: 1,
   };
 }
