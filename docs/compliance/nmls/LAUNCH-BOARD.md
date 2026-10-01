@@ -93,3 +93,10 @@ The initial local cohort candidate is **superseded/local-incomplete**: it failed
 The earlier PE03 native/browser pending entries above are superseded for the bounded PE03 slice by successful isolated run36853453698 at147cfe8faddd7308cdc56e64af0bfb354f575200. That result remains default-disabled/noncredit and does not close hosted Auth, timing, human review or regulated-launch gates.
 
 A separate private25-unit teaching workbench now passes local embedded PostgreSQL/service/HTTP and DOM acceptance. It preserves the eight lesson manuscripts, links course-wide roster authority and per-unit teaching chains, and reconciles scoped time/category exports. The protected final remains locked and all credit/certificate/banking flags remain false. Native/rendered acceptance for this new extension is PENDING; no full20-hour readiness or production change is established. See [scope, evidence and remaining completion path](../../engineering/pe-course-workbench-2026-10-01.md).
+
+
+### 25-unit isolated technical acceptance — October 1, 2026
+
+**SCOPED NATIVE/RENDERED PASS; PRIVATE DRAFT; DISABLED; NONCREDIT.** Application commit `44a9a942ad770639aba82645228b97fa864dabc8` passed [isolated run 36915541534](https://github.com/westccmortgage/statecourse/actions/runs/36915541534). All 25-unit teaching chains and scoped timing/category exports pass native PostgreSQL acceptance; rendered Chromium verifies actual lifecycle interruptions, recovery, adverse-order dialogue, navigation and downloaded evidence. Desktop/mobile captures were inspected. Upstream Auth is synthetic; accelerated test clocks do not validate proposed duration. The previous extension-native/rendered pending entry above is superseded for this bounded scope only.
+
+Protected PE assessment, check-response/teaching-quality acceptance, cumulative OIL timing policy, lesson chunking, representative timing, human SME review, hosted identity/ROCS, real roster operations, reporting, external approval and the owner-OAuth-preserving release remain open. No merge, preview, deployment, live migration, filing, payment or credit authority is established.

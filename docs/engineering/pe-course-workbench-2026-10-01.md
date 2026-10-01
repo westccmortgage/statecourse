@@ -1,6 +1,6 @@
 # Private 25-unit PE teaching workbench
 
-Status: local acceptance passed; private draft only; native and rendered acceptance pending for this extension. No deployment or migration is authorized by this document.
+Status: isolated native and rendered acceptance passed at application commit `44a9a942ad770639aba82645228b97fa864dabc8`, [run 36915541534](https://github.com/westccmortgage/statecourse/actions/runs/36915541534). Private draft only. No deployment or migration is authorized by this document.
 
 ## What this adds
 
@@ -39,7 +39,7 @@ The prior accepted PE03 evidence remains tied to commit `147cfe8faddd7308cdc56e6
 
 ## Remaining course completion path
 
-1. Pass exact-head native/rendered tests and inspect desktop/mobile captures; resolve any actual failures
+1. Closed for this bounded workbench: exact-head native/rendered tests pass and desktop/mobile captures are inspected. Hosted acceptance and full-course gaps below remain open
 2. Complete the full protected PE final bank and server assessment integration with reviewed item provenance; passing teaching records alone must never grant exam/credit authority
 3. Complete explicit check-response/teaching-quality disposition and cumulative OIL session/day/break policy against current source requirements
 4. Perform representative learner timing and human SME/teaching/source signoff; do not relabel proposed minutes as measured
@@ -47,3 +47,7 @@ The prior accepted PE03 evidence remains tied to commit `147cfe8faddd7308cdc56e6
 6. Resolve provider/course scope and external approval gates, then obtain scoped release authorization preserving the production owner-OAuth overlay
 
 No filing, payment, outside communication, paid enablement, regulatory approval, live database write or production release is performed here. Implementation and tests are AI-assisted and require the human/regulatory reviews above.
+
+## Exact isolated acceptance, October 1
+
+The native PostgreSQL 17.11 course lifecycle and rendered Chromium workbench passed with synthetic upstream identities. Real foreground sample: 9,504 observed milliseconds over 12,588 wall milliseconds; accelerated clocks separately test the proposed teaching thresholds. Actual downloaded learner/instructor evidence was validated for all 25 canonical units, actor/role/course authority, immutable lineage, privacy and closed final/credit flags. The initial run passed application tests but failed a harness-only download-event wait; the retry uses the existing owned-CDP download helper and validates the actual saved bytes. Application/SQL bytes were unchanged between these runs. Prior PE03 acceptance and both run artifacts are preserved. This closes no regulatory or protected-final gate.
