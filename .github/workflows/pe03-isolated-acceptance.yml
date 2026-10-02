@@ -20,9 +20,15 @@ on:
       - 'config/nmls/pe-course-definition.mjs'
       - 'database/drafts/pe-course-workbench.sql'
       - 'netlify/functions/*pe-course.mts'
+      - 'netlify/functions/*pe-readiness.mts'
+      - 'netlify/functions/*pe-course-setup.mts'
       - 'public/statecourse/student/pe-course/**'
+      - 'public/statecourse/student/pe-readiness/**'
+      - 'public/statecourse/admin/pe-course-setup/**'
       - 'tests/helpers/pe-course-*.mjs'
       - 'tests/pe-course-*.test.mjs'
+      - 'tests/pe-readiness-*.test.mjs'
+      - 'tests/browser/pe-readiness-local-browser.mjs'
       - 'tests/pe03-readback-evidence.test.mjs'
       - 'tests/browser/pe-course-local-browser.mjs'
       - 'config/nmls/pe-final/**'
@@ -125,7 +131,7 @@ jobs:
         env:
           PE_COURSE_NATIVE_CI: '1'
       - name: Verify PE restriction accounting and preserved reading
-        run: node --test --test-concurrency=1 tests/pe-oil-policy.test.mjs tests/pe-oil-controls.test.mjs tests/pe-course-reading.test.mjs tests/pe-course-reading-dom.test.mjs
+        run: node --test --test-concurrency=1 tests/pe-oil-policy.test.mjs tests/pe-oil-controls.test.mjs tests/pe-course-reading.test.mjs tests/pe-course-reading-dom.test.mjs tests/pe-course-onboarding.test.mjs tests/pe-readiness-dom.test.mjs
       - name: Verify native actor-wide PE policy and lock-wait expiry
         run: node --test --test-concurrency=1 tests/pe-oil-policy.test.mjs tests/integration/pe-oil-native.test.mjs
         env:
@@ -142,6 +148,8 @@ jobs:
           PE_COURSE_NATIVE_CI: '1'
           PE_CHROMIUM_HEADED: '1'
           PLAYWRIGHT_LEGACY_SCREENSHOT: '1'
+      - name: Verify readiness desktop and mobile navigation
+        run: node tests/browser/pe-readiness-local-browser.mjs
       - name: Verify protected PE bank boundaries and local assessment flow
         run: node --test --test-concurrency=1 tests/pe-final-privacy.test.mjs tests/pe-final-assessment.test.mjs tests/pe-final-staff-boundary.test.mjs
       - name: Verify native protected assessment and real lock waits
@@ -175,4 +183,3 @@ jobs:
             artifacts/pe-final/browser/
           if-no-files-found: warn
           retention-days: 3
-

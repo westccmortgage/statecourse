@@ -80,6 +80,11 @@ test -f dist/student/nmls-training/nmls-training.mjs
 test -f dist/student/nmls-training/training-client.mjs
 test -f dist/student/nmls-review/lesson-markdown.mjs
 test -f dist/student/nmls-review/question-presentation.mjs
+test -f dist/student/pe-readiness/index.html
+test -f dist/student/pe-readiness/readiness.mjs
+test -f dist/student/pe-readiness/readiness.css
+test -f dist/admin/pe-course-setup/index.html
+test -f dist/admin/pe-course-setup/setup.mjs
 ! test -d dist/nmls
 ! test -d dist/content/nmls
 test -f dist/student/course/index.html

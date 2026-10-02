@@ -5,19 +5,24 @@ const uuid = value => typeof value === 'string' && /^[0-9a-f]{8}-[0-9a-f]{4}-[0-
 const invalid = () => { throw new Error('pe_course_invalid_request'); };
 export function validatePeCourseRequest(input, role) {
   if (!input || Object.getPrototypeOf(input) !== Object.prototype || !['student','instructor'].includes(role)) invalid();
-  const reads=['snapshot','export','course-snapshot','course-export','policy-snapshot'];
-  const operations=role==='instructor'?[...reads,'feedback']:[...reads,'observe','submit','peer','revise','policy-break','policy-resume'];
+  const readiness=['readiness-snapshot','present-rocs','accept-rocs','decline-rocs','save-self-reported-id'];
+  const reads=['snapshot','export','course-snapshot','course-export','policy-snapshot','readiness-snapshot'];
+  const operations=role==='instructor'?[...reads.filter(x=>x!=='readiness-snapshot'),'feedback']:[...reads,'observe','submit','peer','revise','policy-break','policy-resume',...readiness.slice(1)];
   if(!operations.includes(input.operation))invalid();
   const keys=['operation','courseId'];
-  if(!input.operation.startsWith('course-')&&!input.operation.startsWith('policy-'))keys.push('unitId');
-  if(!reads.includes(input.operation))keys.push('actorId','requestId',...(!input.operation.startsWith('policy-')?['expectedRevision']:[]));
+  if(!input.operation.startsWith('course-')&&!input.operation.startsWith('policy-')&&!readiness.includes(input.operation))keys.push('unitId');
+  if(!reads.includes(input.operation))keys.push('actorId','requestId',...(!input.operation.startsWith('policy-')&&!readiness.includes(input.operation)?['expectedRevision']:[]));
   if(input.operation==='observe')keys.push('tabId','mode');
   if(['submit','peer','feedback','revise'].includes(input.operation))keys.push('text');
   if(['peer','feedback','revise'].includes(input.operation))keys.push('targetId');
+  if(['accept-rocs','decline-rocs'].includes(input.operation))keys.push('presentationId');
+  if(input.operation==='save-self-reported-id')keys.push('nmlsId');
   if(Reflect.ownKeys(input).length!==keys.length||keys.some(k=>!Object.hasOwn(input,k))||!uuid(input.courseId))invalid();
   if(keys.includes('unitId')&&!PE_COURSE_UNITS.some(u=>u.unit===input.unitId))invalid();
-  if(!reads.includes(input.operation)&&(!uuid(input.actorId)||!uuid(input.requestId)||(!input.operation.startsWith('policy-')&&(!Number.isSafeInteger(input.expectedRevision)||input.expectedRevision<0||input.expectedRevision>2147483647))))invalid();
+  if(!reads.includes(input.operation)&&(!uuid(input.actorId)||!uuid(input.requestId)||(!input.operation.startsWith('policy-')&&!readiness.includes(input.operation)&&(!Number.isSafeInteger(input.expectedRevision)||input.expectedRevision<0||input.expectedRevision>2147483647))))invalid();
   if(keys.includes('targetId')&&!uuid(input.targetId))invalid();
+  if(keys.includes('presentationId')&&!uuid(input.presentationId))invalid();
+  if(keys.includes('nmlsId')&&(typeof input.nmlsId!=='string'||input.nmlsId.trim().length<1||input.nmlsId.length>64))invalid();
   if(input.operation==='observe'&&(!uuid(input.tabId)||!['active','paused'].includes(input.mode)))invalid();
   if(keys.includes('text')&&(typeof input.text!=='string'||input.text.trim().length<20||input.text.length>8000))invalid();
   return {...input,courseHash:PE_COURSE_DEFINITION.contentHash};
@@ -28,6 +33,7 @@ export async function executePeCourse(input,actorId,role,{rpc}) {
   const {actorId:expectedActor,...request}=validatePeCourseRequest(input,role);
   if(expectedActor&&expectedActor!==actorId)throw new Error('pe_course_access_denied');
   const result=await rpc('pe_course_dispatch',{p_actor_id:actorId,p_role:role,p_request:request});
+  if(['readiness-snapshot','present-rocs','accept-rocs','decline-rocs','save-self-reported-id'].includes(request.operation))return validatePeReadinessState(result,actorId,request.courseId);
   if(request.operation.startsWith('policy-')){validatePeOilDelivery(result,actorId,request.courseId,role);return result;}
   if(request.operation.startsWith('course-')) {
     if(!result||Object.keys(result).length!==(request.operation==='course-export'?7:6)||!Array.isArray(result.units)||result.units.length!==25||
@@ -44,6 +50,16 @@ export async function executePeCourse(input,actorId,role,{rpc}) {
   const unit=PE_COURSE_UNITS.find(u=>u.unit===request.unitId);
   validatePeCourseState(result,actorId,role,request.courseId,unit);
   return {...publicUnitState(result,unit,role),definition:PE_COURSE_DEFINITION,lessonText:role==='instructor'||result.delivery.allowed?lessons[unit.module]:''};
+}
+
+export function validatePeReadinessState(state,actorId,courseId){
+ const fail=()=>{throw new Error('pe_course_unavailable');};
+ if(!state||state.schemaVersion!==1||state.actorId!==actorId||state.courseId!==courseId||!['private_noncredit','prerequisite_bound'].includes(state.mode)||typeof state.ready!=='boolean'||!Array.isArray(state.holds)||state.creditEligible!==false||state.certificateEligible!==false||state.bankingEligible!==false)fail();
+ if(state.mode==='private_noncredit'){if(!state.ready||state.holds.length)fail();return state;}
+ if(!state.course||!uuid(state.course.assignedInstructorId)||!state.identity||!['pending','verified','revoked'].includes(state.identity.status)||!state.rocs||typeof state.rocs.available!=='boolean'||typeof state.rocs.version!=='string'||!Number.isFinite(Date.parse(state.serverAt)))fail();
+ if(state.rocs.available&&(!/^[a-f0-9]{64}$/.test(state.rocs.documentHash)||!/^[a-f0-9]{64}$/.test(state.rocs.renderedHash)))fail();
+ if(state.ready&&state.holds.length)fail();
+ return state;
 }
 
 function publicUnitState(state,unit,role){const allowed=role==='instructor'||state.delivery.allowed;return {...state,evidence:allowed?state.evidence:[],unit:allowed?unit:{...unit,task:'',peer:'',probe:'',revision:'',read:'',evidence:''}};}
@@ -158,6 +174,6 @@ export function peCoursePublicError(error) {
     : ['origin_not_allowed','pe_course_access_denied','staff_binding_required','staff_role_not_authorized','staff_mfa_required','staff_session_required','staff_step_up_required','fresh_action_authorization_required'].includes(code) ? 403
     : code === 'pe_course_invalid_request' ? 400
     : code === 'pe_course_disabled' ? 404
-    : ['pe_course_delivery_paused','pe_course_window_closed','pe_course_observation_closed','pe_course_clock_regressed','pe_course_content_changed','pe_course_revision_conflict','pe_course_idempotency_conflict','pe_course_tab_conflict','pe_course_already_recorded','pe_course_observation_required','pe_course_peer_required','pe_course_feedback_required'].includes(code) ? 409 : 503;
+    : ['pe_course_delivery_paused','pe_course_window_closed','pe_course_observation_closed','pe_course_clock_regressed','pe_course_content_changed','pe_course_revision_conflict','pe_course_idempotency_conflict','pe_course_tab_conflict','pe_course_already_recorded','pe_course_observation_required','pe_course_peer_required','pe_course_feedback_required','pe_course_readiness_required','pe_course_rocs_unavailable','pe_course_rocs_presentation_invalid'].includes(code) ? 409 : 503;
   return { status, body: { error: status === 503 ? 'pe_course_unavailable' : code } };
 }

@@ -8,7 +8,11 @@ create table pe_course_rosters (
  id uuid primary key default gen_random_uuid(), title text not null,
  content_hash text not null check(content_hash ~ '^[a-f0-9]{64}$'),
  timezone text not null, opens_at timestamptz not null, closes_at timestamptz not null,
- assigned_instructor_id uuid not null references students(id), enabled boolean not null default false
+ assigned_instructor_id uuid not null references students(id), enabled boolean not null default false,
+ offering_mode text not null default 'private_noncredit' check(offering_mode in ('private_noncredit','prerequisite_bound')),
+ rocs_version text, rocs_document_hash text check(rocs_document_hash is null or rocs_document_hash ~ '^[a-f0-9]{64}$'),
+ rocs_rendered_hash text check(rocs_rendered_hash is null or rocs_rendered_hash ~ '^[a-f0-9]{64}$'),
+ check(offering_mode='private_noncredit' or (rocs_version is not null and rocs_document_hash is not null and rocs_rendered_hash is not null))
 );
 create table pe_course_roster_members (
  course_id uuid not null references pe_course_rosters(id), actor_id uuid not null references students(id),
@@ -56,6 +60,106 @@ create function pe_course_now() returns timestamptz language sql volatile set se
 create function pe_course_immutable() returns trigger language plpgsql set search_path=public,pg_temp as $$begin raise exception 'pe_course_immutable'; end$$;
 create trigger pe_course_events_immutable before update or delete on pe_course_events for each row execute function pe_course_immutable();
 create trigger pe_course_receipts_immutable before update or delete on pe_course_receipts for each row execute function pe_course_immutable();
+
+-- Verified ROCS artifacts are imported through a separately reviewed evidence process.
+-- Setup may only pin an already-verified exact version/hash; no learner or operator
+-- checkbox can manufacture source verification.
+create table pe_course_rocs_documents (
+ version text not null, document_hash text not null check(document_hash ~ '^[a-f0-9]{64}$'),
+ rendered_hash text not null check(rendered_hash ~ '^[a-f0-9]{64}$'), full_text text not null,
+ source_reference text not null, source_verified_at timestamptz not null,
+ revoked_at timestamptz, primary key(version,document_hash,rendered_hash),
+ check(length(full_text)>0 and length(source_reference)>0)
+);
+create function pe_course_rocs_document_guard() returns trigger language plpgsql set search_path=public,pg_temp as $$begin
+ if tg_op='DELETE' or old.revoked_at is not null or new.revoked_at is null or
+  (new.version,new.document_hash,new.rendered_hash,new.full_text,new.source_reference,new.source_verified_at)
+  is distinct from (old.version,old.document_hash,old.rendered_hash,old.full_text,old.source_reference,old.source_verified_at)
+ then raise exception 'pe_course_rocs_document_immutable';end if;return new;end$$;
+create trigger pe_course_rocs_documents_immutable before update or delete on pe_course_rocs_documents for each row execute function pe_course_rocs_document_guard();
+create table pe_course_identity_evidence (
+ course_id uuid not null references pe_course_rosters(id), actor_id uuid not null references students(id),
+ status text not null check(status in ('pending','verified','revoked')), self_reported_nmls_id text,
+ evidence_reference text, verified_at timestamptz, revoked_at timestamptz,
+ primary key(course_id,actor_id),
+ check(status<>'verified' or (evidence_reference is not null and verified_at is not null and revoked_at is null))
+);
+create table pe_course_rocs_presentations (
+ id uuid primary key default gen_random_uuid(), course_id uuid not null references pe_course_rosters(id),
+ actor_id uuid not null references students(id), version text not null, document_hash text not null,
+ rendered_hash text not null, presented_at timestamptz not null, unique(course_id,actor_id,id)
+);
+create table pe_course_rocs_acceptances (
+ course_id uuid not null references pe_course_rosters(id), actor_id uuid not null references students(id),
+ presentation_id uuid not null references pe_course_rocs_presentations(id), decision text not null check(decision in ('accepted','declined')),
+ version text not null, document_hash text not null, rendered_hash text not null, decided_at timestamptz not null,
+ primary key(course_id,actor_id,presentation_id)
+);
+create table pe_course_readiness_receipts (
+ course_id uuid not null references pe_course_rosters(id), actor_id uuid not null references students(id),
+ request_id uuid not null, operation text not null, request jsonb not null, response jsonb not null,
+ primary key(course_id,actor_id,request_id)
+);
+create trigger pe_course_rocs_presentations_immutable before update or delete on pe_course_rocs_presentations for each row execute function pe_course_immutable();
+create trigger pe_course_rocs_acceptances_immutable before update or delete on pe_course_rocs_acceptances for each row execute function pe_course_immutable();
+create trigger pe_course_readiness_receipts_immutable before update or delete on pe_course_readiness_receipts for each row execute function pe_course_immutable();
+
+create function pe_course_readiness(actor uuid,cid uuid,include_document boolean default false) returns jsonb
+language plpgsql security invoker set search_path=public,pg_temp as $$
+declare r pe_course_rosters;m pe_course_roster_members;doc pe_course_rocs_documents;identity pe_course_identity_evidence;accepted pe_course_rocs_acceptances;holds jsonb:='[]'::jsonb;now_at timestamptz:=pe_course_now();
+begin
+ select * into r from pe_course_rosters where id=cid for share;
+ if not found then raise exception 'pe_course_access_denied';end if;
+ select * into m from pe_course_roster_members where course_id=cid and actor_id=actor and role='student' for share;
+ if not found or not m.active then raise exception 'pe_course_access_denied';end if;
+ if r.offering_mode='private_noncredit' then return jsonb_build_object('schemaVersion',1,'actorId',actor,'courseId',cid,'mode',r.offering_mode,'ready',true,'holds',holds,'creditEligible',false,'certificateEligible',false,'bankingEligible',false);end if;
+ select * into doc from pe_course_rocs_documents where version=r.rocs_version and document_hash=r.rocs_document_hash and rendered_hash=r.rocs_rendered_hash and revoked_at is null;
+ if not found then holds:=holds||'"rocs_document_unavailable"'::jsonb;end if;
+ select * into identity from pe_course_identity_evidence where course_id=cid and actor_id=actor;
+ if identity.status is distinct from 'verified' or identity.revoked_at is not null then holds:=holds||'"identity_verification_required"'::jsonb;end if;
+ select a.* into accepted from pe_course_rocs_acceptances a join pe_course_rocs_presentations p on p.id=a.presentation_id and p.course_id=a.course_id and p.actor_id=a.actor_id
+ where a.course_id=cid and a.actor_id=actor and a.decision='accepted' and a.version=r.rocs_version and a.document_hash=r.rocs_document_hash and a.rendered_hash=r.rocs_rendered_hash order by a.decided_at desc limit 1;
+ if accepted.presentation_id is null then holds:=holds||'"rocs_acceptance_required"'::jsonb;end if;
+ return jsonb_build_object('schemaVersion',1,'actorId',actor,'courseId',cid,'mode',r.offering_mode,'ready',jsonb_array_length(holds)=0,'holds',holds,
+  'course',jsonb_build_object('title',r.title,'opensAt',r.opens_at,'closesAt',r.closes_at,'assignedInstructorId',r.assigned_instructor_id),
+  'identity',jsonb_build_object('status',coalesce(identity.status,'pending'),'selfReportedNmlsId',identity.self_reported_nmls_id,'verifiedAt',identity.verified_at),
+  'rocs',jsonb_build_object('available',doc.version is not null,'version',r.rocs_version,'documentHash',r.rocs_document_hash,'renderedHash',r.rocs_rendered_hash,'acceptedAt',accepted.decided_at,'text',case when include_document and doc.version is not null then doc.full_text else null end),
+  'serverAt',now_at,'creditEligible',false,'certificateEligible',false,'bankingEligible',false);
+end$$;
+
+create function pe_course_assert_ready(actor uuid,cid uuid) returns timestamptz
+language plpgsql security invoker set search_path=public,pg_temp as $$declare state jsonb;begin state:=pe_course_readiness(actor,cid,false);if not coalesce((state->>'ready')::boolean,false) then raise exception 'pe_course_readiness_required';end if;return pe_course_now()+interval '20 seconds';end$$;
+
+create function pe_course_readiness_command(actor uuid,input jsonb) returns jsonb
+language plpgsql security invoker set search_path=public,pg_temp as $$
+declare cid uuid;rid uuid;op text;prior pe_course_readiness_receipts;state jsonb;r pe_course_rosters;presentation pe_course_rocs_presentations;now_at timestamptz:=pe_course_now();
+begin
+ if jsonb_typeof(input)<>'object' then raise exception 'pe_course_invalid_request';end if;op:=input->>'operation';
+ begin cid:=(input->>'courseId')::uuid;if input ? 'requestId' then rid:=(input->>'requestId')::uuid;end if;exception when others then raise exception 'pe_course_invalid_request';end;
+ if op='readiness-snapshot' and (select count(*) from jsonb_object_keys(input))=3 and input ? 'courseHash' then return pe_course_readiness(actor,cid,false);end if;
+ if op not in ('present-rocs','accept-rocs','decline-rocs','save-self-reported-id') or rid is null then raise exception 'pe_course_invalid_request';end if;
+ perform pg_advisory_xact_lock(hashtextextended(actor::text,0));
+ select * into prior from pe_course_readiness_receipts where course_id=cid and actor_id=actor and request_id=rid;
+ if found then if prior.operation<>op or prior.request<>input then raise exception 'pe_course_idempotency_conflict';end if;return prior.response;end if;
+ select * into r from pe_course_rosters where id=cid and offering_mode='prerequisite_bound' for share;if not found then raise exception 'pe_course_access_denied';end if;
+ perform 1 from pe_course_roster_members m join students s on s.id=m.actor_id where m.course_id=cid and m.actor_id=actor and m.role='student' and m.active and s.account_status='active' for share;if not found then raise exception 'pe_course_access_denied';end if;
+ if op='save-self-reported-id' then
+  if (select count(*) from jsonb_object_keys(input))<>5 or jsonb_typeof(input->'nmlsId') is distinct from 'string' or length(btrim(input->>'nmlsId')) not between 1 and 64 then raise exception 'pe_course_invalid_request';end if;
+  insert into pe_course_identity_evidence(course_id,actor_id,status,self_reported_nmls_id) values(cid,actor,'pending',btrim(input->>'nmlsId')) on conflict(course_id,actor_id) do update set self_reported_nmls_id=excluded.self_reported_nmls_id where pe_course_identity_evidence.status='pending';
+ elsif op='present-rocs' then
+  if (select count(*) from jsonb_object_keys(input))<>4 then raise exception 'pe_course_invalid_request';end if;
+  perform 1 from pe_course_rocs_documents where version=r.rocs_version and document_hash=r.rocs_document_hash and rendered_hash=r.rocs_rendered_hash and revoked_at is null;if not found then raise exception 'pe_course_rocs_unavailable';end if;
+  insert into pe_course_rocs_presentations(course_id,actor_id,version,document_hash,rendered_hash,presented_at) values(cid,actor,r.rocs_version,r.rocs_document_hash,r.rocs_rendered_hash,now_at) returning * into presentation;
+ else
+  if (select count(*) from jsonb_object_keys(input))<>5 then raise exception 'pe_course_invalid_request';end if;
+  begin select * into presentation from pe_course_rocs_presentations where id=(input->>'presentationId')::uuid and course_id=cid and actor_id=actor;exception when others then raise exception 'pe_course_invalid_request';end;
+  if not found or (presentation.version,presentation.document_hash,presentation.rendered_hash) is distinct from (r.rocs_version,r.rocs_document_hash,r.rocs_rendered_hash) then raise exception 'pe_course_rocs_presentation_invalid';end if;
+  insert into pe_course_rocs_acceptances values(cid,actor,presentation.id,case when op='accept-rocs' then 'accepted' else 'declined' end,presentation.version,presentation.document_hash,presentation.rendered_hash,now_at);
+ end if;
+ state:=pe_course_readiness(actor,cid,op='present-rocs');
+ if presentation.id is not null then state:=state||jsonb_build_object('presentationId',presentation.id);end if;
+ insert into pe_course_readiness_receipts values(cid,actor,rid,op,input,state);return state;
+end$$;
 -- PE-specific conservative provider-choice restriction accounting. Reservations
 -- limit possible instructional exposure; they NEVER award observed seat time.
 create table pe_course_policy_actors (
@@ -79,7 +183,7 @@ create function pe_course_policy_access(actor uuid,cid uuid,control text default
 language plpgsql security invoker set search_path=public,pg_temp as $$
 declare s pe_course_policy_actors;r pe_course_rosters;now_at timestamptz;since_break bigint;rolling bigint;
  horizon timestamptz;new_start timestamptz;new_end timestamptz;resume_at timestamptz;code text:='allowed';allowed boolean:=false;last_interval pe_course_policy_intervals;
- result jsonb;
+ result jsonb;prerequisite_deadline timestamptz;
 begin
  if actor is null or cid is null or control not in ('grant','snapshot','break','resume') then raise exception 'pe_course_invalid_request';end if;
  perform pg_advisory_xact_lock(hashtextextended(actor::text,0));
@@ -87,6 +191,7 @@ begin
  if not found then raise exception 'pe_course_access_denied';end if;
  perform 1 from students a join pe_course_roster_members m on m.actor_id=a.id where a.id=actor and a.account_status='active' and m.course_id=cid and m.active and m.role='student' for share of a,m;
  if not found then raise exception 'pe_course_access_denied';end if;
+ prerequisite_deadline:=pe_course_assert_ready(actor,cid);
  select * into s from pe_course_policy_actors where actor_id=actor for update;
  now_at:=pe_course_now();if now_at<r.opens_at or now_at>=r.closes_at then raise exception 'pe_course_window_closed';end if;
  if s.actor_id is null then
@@ -116,7 +221,7 @@ begin
  elsif since_break>=12000000 and now_at>=s.last_exposure_end then code:='mandatory_break_required';
  elsif rolling>=36000000 and now_at>=s.last_exposure_end then code:='rolling_day_limit';select min(ends_at)+interval '24 hours' into resume_at from pe_course_policy_intervals where actor_id=actor and ends_at>now_at-interval '24 hours';
  else
-  horizon:=least(now_at+interval '20 seconds',s.session_started_at+interval '12 hours',r.closes_at);
+  horizon:=least(now_at+interval '20 seconds',s.session_started_at+interval '12 hours',r.closes_at,prerequisite_deadline);
   new_start:=greatest(now_at,s.last_exposure_end);
   new_end:=least(horizon,new_start+(greatest(0,least(12000000-since_break,36000000-rolling))*interval '1 millisecond'));
   if control in ('grant','resume') and new_end>new_start and s.last_exposure_end<now_at+interval '10 seconds' then
@@ -178,8 +283,9 @@ begin
 end$$;
 create function pe_course_roster_pin() returns trigger language plpgsql set search_path=public,pg_temp as $$
 begin
- if (new.content_hash,new.timezone,new.opens_at,new.closes_at,new.assigned_instructor_id)
- is distinct from (old.content_hash,old.timezone,old.opens_at,old.closes_at,old.assigned_instructor_id)
+ if new.offering_mode is distinct from old.offering_mode then raise exception 'pe_course_mode_immutable';end if;
+ if (new.content_hash,new.timezone,new.opens_at,new.closes_at,new.assigned_instructor_id,new.rocs_version,new.rocs_document_hash,new.rocs_rendered_hash)
+ is distinct from (old.content_hash,old.timezone,old.opens_at,old.closes_at,old.assigned_instructor_id,old.rocs_version,old.rocs_document_hash,old.rocs_rendered_hash)
  and (exists(select 1 from pe_course_events e join pe_course_cohorts c on c.id=e.cohort_id where c.course_id=old.id) or exists(select 1 from pe_course_policy_intervals where course_id=old.id))
  then raise exception 'pe_course_cohort_evidence_pinned'; end if;
  return new;
@@ -316,8 +422,17 @@ begin
 end$$;
 alter table pe_course_rosters enable row level security;
 alter table pe_course_roster_members enable row level security;
+alter table pe_course_rocs_documents enable row level security;
+alter table pe_course_identity_evidence enable row level security;
+alter table pe_course_rocs_presentations enable row level security;
+alter table pe_course_rocs_acceptances enable row level security;
+alter table pe_course_readiness_receipts enable row level security;
 revoke all on pe_course_rosters,pe_course_roster_members from public,anon,authenticated;
+revoke all on pe_course_rocs_documents,pe_course_identity_evidence,pe_course_rocs_presentations,pe_course_rocs_acceptances,pe_course_readiness_receipts from public,anon,authenticated,service_role;
 grant select on pe_course_rosters,pe_course_roster_members to service_role;
+grant select on pe_course_rocs_documents to service_role;
+grant select,insert,update(self_reported_nmls_id) on pe_course_identity_evidence to service_role;
+grant select,insert on pe_course_rocs_presentations,pe_course_rocs_acceptances,pe_course_readiness_receipts to service_role;
 -- PostgreSQL requires UPDATE privilege for FOR SHARE; limit it to revocation flags.
 grant update(enabled) on pe_course_rosters to service_role;
 grant update(active) on pe_course_roster_members to service_role;
@@ -335,8 +450,8 @@ grant select,update on pe_course_members to service_role;
 grant select,insert,update on pe_course_leases to service_role;
 grant select,insert on pe_course_events,pe_course_receipts to service_role;
 grant usage,select on sequence pe_course_events_sequence_seq to service_role;
-revoke all on function pe_course_now(),pe_course_immutable(),pe_course_validate_cohort(),pe_course_command(uuid,text,jsonb) from public,anon,authenticated;
-grant execute on function pe_course_now(),pe_course_command(uuid,text,jsonb) to service_role;
+revoke all on function pe_course_now(),pe_course_immutable(),pe_course_rocs_document_guard(),pe_course_validate_cohort(),pe_course_command(uuid,text,jsonb),pe_course_readiness(uuid,uuid,boolean),pe_course_assert_ready(uuid,uuid),pe_course_readiness_command(uuid,jsonb) from public,anon,authenticated;
+grant execute on function pe_course_now(),pe_course_command(uuid,text,jsonb),pe_course_readiness(uuid,uuid,boolean),pe_course_assert_ready(uuid,uuid),pe_course_readiness_command(uuid,jsonb) to service_role;
 
 create function pe_course_dispatch(p_actor_id uuid,p_role text,p_request jsonb) returns jsonb
 language plpgsql security invoker set search_path=public,pg_temp as $$
@@ -345,6 +460,7 @@ begin
  if jsonb_typeof(p_request)<>'object' then raise exception 'pe_course_invalid_request'; end if;
  begin cid:=(p_request->>'courseId')::uuid; exception when others then raise exception 'pe_course_invalid_request'; end;
  op:=p_request->>'operation';
+ if op in ('readiness-snapshot','present-rocs','accept-rocs','decline-rocs','save-self-reported-id') then return pe_course_readiness_command(p_actor_id,p_request);end if;
  if op in ('policy-snapshot','policy-break','policy-resume') then return pe_course_policy_control(p_actor_id,p_role,p_request);end if;
  perform pg_advisory_xact_lock(hashtextextended(p_actor_id::text,0));
  if op in ('course-snapshot','course-export') then
@@ -368,5 +484,62 @@ end$$;
 revoke all on function pe_course_roster_pin(),pe_course_dispatch(uuid,text,jsonb) from public,anon,authenticated;
 grant execute on function pe_course_dispatch(uuid,text,jsonb) to service_role;
 
-commit;
+create table pe_course_setup_receipts(actor_id uuid not null references students(id),request_id uuid not null,request jsonb not null,response jsonb not null,primary key(actor_id,request_id));
+create table pe_course_setup_events(id bigint generated always as identity primary key,course_id uuid not null references pe_course_rosters(id),actor_id uuid not null references students(id),kind text not null,occurred_at timestamptz not null,body jsonb not null);
+create trigger pe_course_setup_receipts_immutable before update or delete on pe_course_setup_receipts for each row execute function pe_course_immutable();
+create trigger pe_course_setup_events_immutable before update or delete on pe_course_setup_events for each row execute function pe_course_immutable();
+alter table pe_course_setup_receipts enable row level security;alter table pe_course_setup_events enable row level security;
+revoke all on pe_course_setup_receipts,pe_course_setup_events from public,anon,authenticated,service_role;
+grant select,insert on pe_course_setup_receipts,pe_course_setup_events to service_role;grant usage,select on sequence pe_course_setup_events_id_seq to service_role;
+grant insert on pe_course_rosters,pe_course_roster_members,pe_course_cohorts,pe_course_members to service_role;
 
+create function pe_course_setup_command(p_actor uuid,p_role text,input jsonb) returns jsonb
+language plpgsql security invoker set search_path=public,pg_temp as $$
+declare op text;cid uuid;rid uuid;instructor uuid;learner_text text;learner uuid;unit jsonb;cohort_id uuid;prior pe_course_setup_receipts;r pe_course_rosters;result jsonb;now_at timestamptz:=pe_course_now();
+begin
+ if p_actor is null or p_role not in ('owner','administrator','instructor') or jsonb_typeof(input)<>'object' then raise exception 'pe_course_setup_invalid_request';end if;
+ op:=input->>'operation';begin cid:=(input->>'courseId')::uuid;if input ? 'requestId' then rid:=(input->>'requestId')::uuid;end if;exception when others then raise exception 'pe_course_setup_invalid_request';end;
+ if not exists(select 1 from current_staff_actor_bindings where auth_user_id=p_actor and actor_role=p_role and scope_state is null and binding_status='active' and (effective_at is null or effective_at<=now_at) and (expires_at is null or expires_at>now_at)) then raise exception 'pe_course_setup_access_denied';end if;
+ if op='snapshot' then
+  if (select count(*) from jsonb_object_keys(input))<>2 then raise exception 'pe_course_setup_invalid_request';end if;
+  select * into r from pe_course_rosters where id=cid;if not found or (p_role='instructor' and r.assigned_instructor_id<>p_actor) then raise exception 'pe_course_setup_access_denied';end if;
+  return jsonb_build_object('schemaVersion',1,'courseId',cid,'title',r.title,'mode',r.offering_mode,'enabled',r.enabled,'assignedInstructorId',r.assigned_instructor_id,
+   'unitCount',(select count(*) from pe_course_cohorts where course_id=cid),'members',(select coalesce(jsonb_agg(jsonb_build_object('actorId',actor_id,'role',role,'active',active) order by role,actor_id),'[]'::jsonb) from pe_course_roster_members where course_id=cid),
+   'creditEligible',false,'certificateEligible',false,'bankingEligible',false);
+ end if;
+ if op not in ('create','revoke-member') or rid is null then raise exception 'pe_course_setup_invalid_request';end if;
+ perform pg_advisory_xact_lock(hashtextextended(p_actor::text,0));select * into prior from pe_course_setup_receipts where actor_id=p_actor and request_id=rid;
+ if found then if prior.request<>input then raise exception 'pe_course_setup_idempotency_conflict';end if;return prior.response;end if;
+ if op='create' then
+  if p_role not in ('owner','administrator') or (select count(*) from jsonb_object_keys(input))<>15 or jsonb_typeof(input->'units')<>'array' or jsonb_array_length(input->'units')<>25 or jsonb_typeof(input->'learners')<>'array' or jsonb_array_length(input->'learners')<1 then raise exception 'pe_course_setup_invalid_request';end if;
+  begin instructor:=(input->>'instructorId')::uuid;exception when others then raise exception 'pe_course_setup_invalid_request';end;
+  if not exists(select 1 from students s join current_staff_actor_bindings b on b.auth_user_id=s.id and b.actor_role='instructor' and b.scope_state is null and b.binding_status='active' and (b.effective_at is null or b.effective_at<=now_at) and (b.expires_at is null or b.expires_at>now_at) where s.id=instructor and s.account_status='active') then raise exception 'pe_course_setup_instructor_required';end if;
+  if not exists(select 1 from pe_course_rocs_documents where version=input->>'rocsVersion' and document_hash=input->>'rocsDocumentHash' and rendered_hash=input->>'rocsRenderedHash' and revoked_at is null) then raise exception 'pe_course_setup_rocs_required';end if;
+  if (select count(distinct x->>'unitId') from jsonb_array_elements(input->'units') x)<>25 then raise exception 'pe_course_setup_invalid_request';end if;
+  insert into pe_course_rosters(id,title,content_hash,timezone,opens_at,closes_at,assigned_instructor_id,offering_mode,rocs_version,rocs_document_hash,rocs_rendered_hash)
+   values(cid,input->>'title',input->>'courseHash',input->>'timezone',(input->>'opensAt')::timestamptz,(input->>'closesAt')::timestamptz,instructor,'prerequisite_bound',input->>'rocsVersion',input->>'rocsDocumentHash',input->>'rocsRenderedHash');
+  insert into pe_course_roster_members values(cid,instructor,'instructor',true);
+  for learner_text in select jsonb_array_elements_text(input->'learners') loop begin learner:=learner_text::uuid;exception when others then raise exception 'pe_course_setup_invalid_request';end;
+   if not exists(select 1 from students where id=learner and account_status='active') then raise exception 'pe_course_setup_learner_required';end if;
+   insert into pe_course_roster_members values(cid,learner,'student',true);insert into pe_course_identity_evidence(course_id,actor_id,status) values(cid,learner,'pending');
+  end loop;
+  for unit in select * from jsonb_array_elements(input->'units') loop
+   if (select count(*) from jsonb_object_keys(unit))<>6 then raise exception 'pe_course_setup_invalid_request';end if;cohort_id:=gen_random_uuid();
+   insert into pe_course_cohorts(id,title,course_id,unit_id,category,initial_min_ms,planned_ms,definition_id,content_hash,timezone,opens_at,closes_at,assigned_instructor_id)
+    values(cohort_id,unit->>'title',cid,unit->>'unitId',unit->>'category',(unit->>'initialMinimumMs')::bigint,(unit->>'plannedMs')::bigint,input->>'definitionId',unit->>'contentHash',input->>'timezone',(input->>'opensAt')::timestamptz,(input->>'closesAt')::timestamptz,instructor);
+   insert into pe_course_members(cohort_id,actor_id,role,active) values(cohort_id,instructor,'instructor',true);
+   for learner_text in select jsonb_array_elements_text(input->'learners') loop insert into pe_course_members(cohort_id,actor_id,role,active) values(cohort_id,learner_text::uuid,'student',true);end loop;
+  end loop;
+  insert into pe_course_setup_events(course_id,actor_id,kind,occurred_at,body) values(cid,p_actor,'created',now_at,jsonb_build_object('mode','prerequisite_bound','unitCount',25,'learnerCount',jsonb_array_length(input->'learners')));
+ else
+  if (select count(*) from jsonb_object_keys(input))<>4 then raise exception 'pe_course_setup_invalid_request';end if;begin learner:=(input->>'learnerId')::uuid;exception when others then raise exception 'pe_course_setup_invalid_request';end;
+  select * into r from pe_course_rosters where id=cid for update;if not found or (p_role='instructor' and r.assigned_instructor_id<>p_actor) then raise exception 'pe_course_setup_access_denied';end if;
+  update pe_course_roster_members set active=false where course_id=cid and actor_id=learner and role='student';if not found then raise exception 'pe_course_setup_learner_required';end if;
+  update pe_course_members pm set active=false where pm.actor_id=learner and pm.cohort_id in(select c.id from pe_course_cohorts c where c.course_id=cid);update pe_course_leases l set mode='paused' where l.actor_id=learner;
+  insert into pe_course_setup_events(course_id,actor_id,kind,occurred_at,body) values(cid,p_actor,'member_revoked',now_at,jsonb_build_object('learnerId',learner));
+ end if;
+ result:=pe_course_setup_command(p_actor,p_role,jsonb_build_object('operation','snapshot','courseId',cid));insert into pe_course_setup_receipts values(p_actor,rid,input,result);return result;
+end$$;
+revoke all on function pe_course_setup_command(uuid,text,jsonb) from public,anon,authenticated;grant execute on function pe_course_setup_command(uuid,text,jsonb) to service_role;
+
+commit;

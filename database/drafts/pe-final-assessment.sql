@@ -65,7 +65,7 @@ create trigger pe_final_receipts_immutable before update or delete on pe_final_r
 
 create function pe_final_holds(cid uuid,p_actor uuid,settings pe_final_settings,roster pe_course_rosters,current_attempt pe_final_attempts,now_at timestamptz,full_check boolean) returns jsonb
 language plpgsql security invoker set search_path=public,pg_temp as $$
-declare holds jsonb:='[]';prerequisite pe_final_prerequisites;complete_units integer;missing integer;
+declare holds jsonb:='[]';prerequisite pe_final_prerequisites;complete_units integer;missing integer;readiness jsonb;
 begin
  perform 1 from pe_course_cohorts c join pe_course_members m on m.cohort_id=c.id and m.actor_id=p_actor where c.course_id=cid order by c.unit_id for share of c,m;
  perform 1 from students i join pe_course_roster_members m on m.actor_id=i.id and m.course_id=cid where i.id=roster.assigned_instructor_id for share of i,m;
@@ -79,9 +79,14 @@ begin
  if not settings.human_sme_verified or coalesce(length(settings.human_sme_reference),0)=0 then holds:=holds||'"human_sme_required"'::jsonb;end if;
  if not settings.regulatory_release_verified or coalesce(length(settings.regulatory_release_reference),0)=0 then holds:=holds||'"regulatory_release_required"'::jsonb;end if;
  if (select count(*) from pe_final_bank_items where bank_digest=settings.bank_digest)<>50 then holds:=holds||'"bank_incomplete"'::jsonb;end if;
- if prerequisite.actor_id is null or not prerequisite.identity_verified or coalesce(length(prerequisite.identity_reference),0)=0 then holds:=holds||'"identity_required"'::jsonb;end if;
- if prerequisite.rocs_version is distinct from '4' or prerequisite.rocs_document_hash is distinct from settings.rocs_document_hash or prerequisite.rocs_document_hash!~'^[a-f0-9]{64}$' or prerequisite.rocs_document_hash is null or prerequisite.rocs_accepted_at is null or prerequisite.rocs_accepted_at>now_at or prerequisite.rocs_accepted_at>(select min(e.occurred_at) from pe_course_events e join pe_course_cohorts c on c.id=e.cohort_id where c.course_id=cid and e.actor_id=p_actor) then holds:=holds||'"rocs_required"'::jsonb;end if;
- if prerequisite.delivery_policy_verified is distinct from true or prerequisite.delivery_policy_id is distinct from 'pe-oil-restriction-draft-v1' or coalesce(length(prerequisite.delivery_policy_reference),0)=0 then holds:=holds||'"delivery_policy_required"'::jsonb;end if;
+ if roster.offering_mode='prerequisite_bound' then
+  readiness:=pe_course_readiness(p_actor,cid,false);
+  if not coalesce((readiness->>'ready')::boolean,false) then holds:=holds||(readiness->'holds');end if;
+ else
+  if prerequisite.actor_id is null or not prerequisite.identity_verified or coalesce(length(prerequisite.identity_reference),0)=0 then holds:=holds||'"identity_required"'::jsonb;end if;
+  if prerequisite.rocs_version is distinct from '4' or prerequisite.rocs_document_hash is distinct from settings.rocs_document_hash or prerequisite.rocs_document_hash!~'^[a-f0-9]{64}$' or prerequisite.rocs_document_hash is null or prerequisite.rocs_accepted_at is null or prerequisite.rocs_accepted_at>now_at or prerequisite.rocs_accepted_at>(select min(e.occurred_at) from pe_course_events e join pe_course_cohorts c on c.id=e.cohort_id where c.course_id=cid and e.actor_id=p_actor) then holds:=holds||'"rocs_required"'::jsonb;end if;
+  if prerequisite.delivery_policy_verified is distinct from true or prerequisite.delivery_policy_id is distinct from 'pe-oil-restriction-draft-v1' or coalesce(length(prerequisite.delivery_policy_reference),0)=0 then holds:=holds||'"delivery_policy_required"'::jsonb;end if;
+ end if;
  select count(distinct c.unit_id) into complete_units from pe_course_cohorts c join pe_course_events e on e.cohort_id=c.id and e.actor_id=p_actor and e.kind='revise' join pe_course_members m on m.cohort_id=c.id and m.actor_id=p_actor and m.active and m.role='student' where c.course_id=cid and c.enabled;
  if complete_units<>25 or (select count(*) from pe_course_cohorts where course_id=cid)<>25 then holds:=holds||'"teaching_required"'::jsonb;end if;
  select count(*) into missing from pe_course_cohorts c where c.course_id=cid and not exists(
