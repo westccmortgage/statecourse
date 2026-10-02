@@ -9,6 +9,7 @@ Status: source candidate on PR 24, based on exact accepted head `007d9bdda712d9a
 - Verified-source ROCS registry boundary with exact source-document and rendered-text hashes, actor/course-bound presentation receipts, explicit accept/decline records, and original-request recovery.
 - Self-reported NMLS ID remains visibly unverified. Only a separately supplied trusted evidence reference can satisfy identity readiness; no format check or learner action creates verification.
 - One shared current-readiness evaluator runs before the first policy reservation or instructional grant and is reused by protected-final holds. Assignment, identity, or ROCS-source revocation closes subsequent access.
+- Learner revocation serializes on the same actor lock as material issuance. A completed response may remain visible only until its pre-existing bounded delivery deadline (at most 20 seconds); revocation prevents every new grant, renewal, or instructional response. Browser bytes already returned cannot be remotely erased.
 - Private learner readiness and staff setup pages, with no-store/noindex endpoints, stale-response protection, Back/Forward cleanup, interrupted-request recovery, and mobile-safe layouts.
 
 Every new response keeps credit, certificate, and banking eligibility false. Course and unit enablement remain false at setup. The implementation does not change existing public practice, completed 25-unit teaching/final/OIL logic, payments, account security, or hosted configuration.

@@ -113,12 +113,12 @@ begin
  select * into m from pe_course_roster_members where course_id=cid and actor_id=actor and role='student' for share;
  if not found or not m.active then raise exception 'pe_course_access_denied';end if;
  if r.offering_mode='private_noncredit' then return jsonb_build_object('schemaVersion',1,'actorId',actor,'courseId',cid,'mode',r.offering_mode,'ready',true,'holds',holds,'creditEligible',false,'certificateEligible',false,'bankingEligible',false);end if;
- select * into doc from pe_course_rocs_documents where version=r.rocs_version and document_hash=r.rocs_document_hash and rendered_hash=r.rocs_rendered_hash and revoked_at is null;
+ select * into doc from pe_course_rocs_documents where version=r.rocs_version and document_hash=r.rocs_document_hash and rendered_hash=r.rocs_rendered_hash and revoked_at is null and source_verified_at<=now_at;
  if not found then holds:=holds||'"rocs_document_unavailable"'::jsonb;end if;
  select * into identity from pe_course_identity_evidence where course_id=cid and actor_id=actor;
- if identity.status is distinct from 'verified' or identity.revoked_at is not null then holds:=holds||'"identity_verification_required"'::jsonb;end if;
+ if identity.status is distinct from 'verified' or identity.revoked_at is not null or identity.verified_at>now_at then holds:=holds||'"identity_verification_required"'::jsonb;end if;
  select a.* into accepted from pe_course_rocs_acceptances a join pe_course_rocs_presentations p on p.id=a.presentation_id and p.course_id=a.course_id and p.actor_id=a.actor_id
- where a.course_id=cid and a.actor_id=actor and a.decision='accepted' and a.version=r.rocs_version and a.document_hash=r.rocs_document_hash and a.rendered_hash=r.rocs_rendered_hash order by a.decided_at desc limit 1;
+ where a.course_id=cid and a.actor_id=actor and a.decision='accepted' and a.version=r.rocs_version and a.document_hash=r.rocs_document_hash and a.rendered_hash=r.rocs_rendered_hash and p.presented_at<=a.decided_at and a.decided_at<=now_at order by a.decided_at desc limit 1;
  if accepted.presentation_id is null then holds:=holds||'"rocs_acceptance_required"'::jsonb;end if;
  return jsonb_build_object('schemaVersion',1,'actorId',actor,'courseId',cid,'mode',r.offering_mode,'ready',jsonb_array_length(holds)=0,'holds',holds,
   'course',jsonb_build_object('title',r.title,'opensAt',r.opens_at,'closesAt',r.closes_at,'assignedInstructorId',r.assigned_instructor_id),
@@ -514,7 +514,7 @@ begin
   if p_role not in ('owner','administrator') or (select count(*) from jsonb_object_keys(input))<>15 or jsonb_typeof(input->'units')<>'array' or jsonb_array_length(input->'units')<>25 or jsonb_typeof(input->'learners')<>'array' or jsonb_array_length(input->'learners')<1 then raise exception 'pe_course_setup_invalid_request';end if;
   begin instructor:=(input->>'instructorId')::uuid;exception when others then raise exception 'pe_course_setup_invalid_request';end;
   if not exists(select 1 from students s join current_staff_actor_bindings b on b.auth_user_id=s.id and b.actor_role='instructor' and b.scope_state is null and b.binding_status='active' and (b.effective_at is null or b.effective_at<=now_at) and (b.expires_at is null or b.expires_at>now_at) where s.id=instructor and s.account_status='active') then raise exception 'pe_course_setup_instructor_required';end if;
-  if not exists(select 1 from pe_course_rocs_documents where version=input->>'rocsVersion' and document_hash=input->>'rocsDocumentHash' and rendered_hash=input->>'rocsRenderedHash' and revoked_at is null) then raise exception 'pe_course_setup_rocs_required';end if;
+  if not exists(select 1 from pe_course_rocs_documents where version=input->>'rocsVersion' and document_hash=input->>'rocsDocumentHash' and rendered_hash=input->>'rocsRenderedHash' and revoked_at is null and source_verified_at<=now_at) then raise exception 'pe_course_setup_rocs_required';end if;
   if (select count(distinct x->>'unitId') from jsonb_array_elements(input->'units') x)<>25 then raise exception 'pe_course_setup_invalid_request';end if;
   insert into pe_course_rosters(id,title,content_hash,timezone,opens_at,closes_at,assigned_instructor_id,offering_mode,rocs_version,rocs_document_hash,rocs_rendered_hash)
    values(cid,input->>'title',input->>'courseHash',input->>'timezone',(input->>'opensAt')::timestamptz,(input->>'closesAt')::timestamptz,instructor,'prerequisite_bound',input->>'rocsVersion',input->>'rocsDocumentHash',input->>'rocsRenderedHash');
@@ -533,6 +533,11 @@ begin
   insert into pe_course_setup_events(course_id,actor_id,kind,occurred_at,body) values(cid,p_actor,'created',now_at,jsonb_build_object('mode','prerequisite_bound','unitCount',25,'learnerCount',jsonb_array_length(input->'learners')));
  else
   if (select count(*) from jsonb_object_keys(input))<>4 then raise exception 'pe_course_setup_invalid_request';end if;begin learner:=(input->>'learnerId')::uuid;exception when others then raise exception 'pe_course_setup_invalid_request';end;
+  -- Material issuance and revocation share the learner advisory lock. If a
+  -- grant wins, only that already-returned bounded response can remain visible;
+  -- revocation blocks every later renewal/response. If revocation wins, the
+  -- waiting grant rechecks active membership and returns no instruction.
+  perform pg_advisory_xact_lock(hashtextextended(learner::text,0));
   select * into r from pe_course_rosters where id=cid for update;if not found or (p_role='instructor' and r.assigned_instructor_id<>p_actor) then raise exception 'pe_course_setup_access_denied';end if;
   update pe_course_roster_members set active=false where course_id=cid and actor_id=learner and role='student';if not found then raise exception 'pe_course_setup_learner_required';end if;
   update pe_course_members pm set active=false where pm.actor_id=learner and pm.cohort_id in(select c.id from pe_course_cohorts c where c.course_id=cid);update pe_course_leases l set mode='paused' where l.actor_id=learner;

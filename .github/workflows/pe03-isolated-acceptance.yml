@@ -28,6 +28,7 @@ on:
       - 'tests/helpers/pe-course-*.mjs'
       - 'tests/pe-course-*.test.mjs'
       - 'tests/pe-readiness-*.test.mjs'
+      - 'tests/pe-setup-*.test.mjs'
       - 'tests/browser/pe-readiness-local-browser.mjs'
       - 'tests/pe03-readback-evidence.test.mjs'
       - 'tests/browser/pe-course-local-browser.mjs'
@@ -125,7 +126,7 @@ jobs:
           # Playwright's supported capture backend; keep real page focus/visibility.
           PLAYWRIGHT_LEGACY_SCREENSHOT: '1'
       - name: Verify PE03 evidence readback and full course with embedded PostgreSQL
-        run: node --test --test-concurrency=1 tests/pe03-readback-evidence.test.mjs tests/pe-course-workbench.test.mjs tests/pe-course-dom.test.mjs tests/pe-course-staff-boundary.test.mjs
+        run: node --test --test-concurrency=1 tests/pe03-readback-evidence.test.mjs tests/pe-course-workbench.test.mjs tests/pe-course-dom.test.mjs tests/pe-course-staff-boundary.test.mjs tests/pe-setup-staff-boundary.test.mjs
       - name: Verify full course with native PostgreSQL and unchanged production prerequisites
         run: node --test --test-concurrency=1 tests/pe-course-workbench.test.mjs tests/pe-course-dom.test.mjs tests/pe-course-staff-boundary.test.mjs
         env:
