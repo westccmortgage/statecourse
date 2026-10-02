@@ -95,7 +95,7 @@ test("the existing live-payments-off gate remains authoritative", async t => {
   assert.deepEqual(calls, []);
 });
 
-for (const key of ["pk_test_" + "0".repeat(16), "unknown", "sk_test_", "sk_test_" + "0".repeat(16) + "\n"]) {
+for (const key of ["pk_test_" + "0".repeat(16), "unknown", "sk_test_"]) {
   test("runtime rejects malformed or non-secret API key " + JSON.stringify(key.slice(0, 9)), async t => {
     const calls = sandbox(t, { STRIPE_SECRET_KEY_TEST: key });
     await assert.rejects(stripeRequest("/checkout/sessions", { method: "POST" }),
@@ -103,6 +103,18 @@ for (const key of ["pk_test_" + "0".repeat(16), "unknown", "sk_test_", "sk_test_
     assert.deepEqual(calls, []);
   });
 }
+
+test("runtime preserves the existing trim-only handling for a correctly scoped secret", async t => {
+  sandbox(t, { STRIPE_SECRET_KEY_TEST: `  ${defaults.STRIPE_SECRET_KEY_TEST}\n` });
+  const calls = [];
+  globalThis.fetch = async (url, options) => {
+    calls.push({ url, options });
+    return new Response(JSON.stringify({ id: "cs_synthetic" }), { status: 200 });
+  };
+  await stripeRequest("/checkout/sessions", { method: "POST" });
+  assert.equal(calls.length, 1);
+  assert.equal(calls[0].options.headers.authorization, `Bearer ${defaults.STRIPE_SECRET_KEY_TEST}`);
+});
 
 for (const prefix of ["sk_test_", "rk_test_"]) {
   test("runtime preserves correctly scoped " + prefix + " keys and request idempotency", async t => {

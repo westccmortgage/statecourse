@@ -8,6 +8,15 @@ const INSTRUCTOR_ID = "22222222-2222-4222-8222-222222222222";
 const STUDENT_ID = "33333333-3333-4333-8333-333333333333";
 const ENROLLMENT_ID = "44444444-4444-4444-8444-444444444444";
 const SUBMISSION_ID = "55555555-5555-4555-8555-555555555555";
+const SESSION_ID = "66666666-6666-4666-8666-666666666666";
+const NAMED_SESSION = `header.${Buffer.from(JSON.stringify({
+  sub: STAFF_ID,
+  session_id: SESSION_ID,
+  aal: "aal2",
+  exp: 4102444800,
+})).toString("base64url")}.signature`;
+const STAFF_PROOF = "p".repeat(43);
+const FUTURE_BINDING_EXPIRY = new Date(Date.now() + 366 * 24 * 60 * 60 * 1000).toISOString();
 
 function json(data, status = 200) {
   return new Response(JSON.stringify(data), {
@@ -30,10 +39,26 @@ async function withSupabaseMock({ role = "instructor" } = {}, action) {
     const call = { url, init, body: init.body ? JSON.parse(init.body) : null };
     calls.push(call);
     if (url.pathname === "/auth/v1/user") {
-      assert.equal(init.headers.authorization, "Bearer named-session-token");
-      return json({ id: STAFF_ID, email: "named.staff@example.test", user_metadata: {} });
+      assert.equal(init.headers.authorization, `Bearer ${NAMED_SESSION}`);
+      return json({
+        id: STAFF_ID,
+        email: "named.staff@example.test",
+        email_confirmed_at: "2026-08-01T00:00:00.000Z",
+        user_metadata: {},
+      });
     }
     if (url.pathname === "/rest/v1/students") return json(null);
+    if (url.pathname === "/rest/v1/current_staff_actor_bindings") {
+      return json([{
+        auth_user_id: STAFF_ID,
+        actor_role: role,
+        scope_state: "MI",
+        binding_status: "active",
+        effective_at: "2026-08-01T00:00:00.000Z",
+        expires_at: FUTURE_BINDING_EXPIRY,
+        recorded_at: "2026-08-01T00:00:00.000Z",
+      }]);
+    }
     if (url.pathname === "/rest/v1/michigan_current_staff_actor_bindings") {
       return json([{
         auth_user_id: STAFF_ID,
@@ -41,13 +66,17 @@ async function withSupabaseMock({ role = "instructor" } = {}, action) {
         instructor_id: role === "instructor" ? INSTRUCTOR_ID : null,
         binding_status: "active",
         effective_at: "2026-08-01T00:00:00.000Z",
-        expires_at: "2027-08-01T00:00:00.000Z",
+        expires_at: FUTURE_BINDING_EXPIRY,
       }]);
     }
     if (url.pathname === "/rest/v1/enrollments") {
       return json([{ id: ENROLLMENT_ID, student_id: STUDENT_ID }]);
     }
-    if (url.pathname.startsWith("/rest/v1/rpc/")) return json({ ok: true });
+    if (url.pathname === "/rest/v1/rpc/statecourse_staff_security") return json({ ok: true });
+    if ([
+      "/rest/v1/rpc/review_michigan_applied_memo",
+      "/rest/v1/rpc/record_michigan_identity_verification",
+    ].includes(url.pathname)) return json({ ok: true });
     throw new Error(`unexpected_mock_request:${url.pathname}${url.search}`);
   };
   try {
@@ -64,8 +93,9 @@ async function withSupabaseMock({ role = "instructor" } = {}, action) {
 function postEvent(body) {
   return {
     httpMethod: "POST",
+    path: "/.netlify/functions/admin-michigan-course",
     headers: {
-      cookie: "__Host-sc_access=named-session-token",
+      cookie: `__Host-sc_access=${NAMED_SESSION}; __Host-sc_staff=${STAFF_PROOF}`,
       origin: "https://statecourse.test",
     },
     queryStringParameters: {},
@@ -111,7 +141,8 @@ test("browser-supplied actor identities are rejected before staff lookup or RPC"
     assert.equal(response.statusCode, 400);
     assert.deepEqual(JSON.parse(response.body), { error: "browser_actor_identity_not_accepted" });
     assert.equal(calls.some((call) => call.url.pathname.includes("michigan_current_staff_actor_bindings")), false);
-    assert.equal(calls.some((call) => call.url.pathname.includes("/rpc/")), false);
+    assert.equal(calls.some((call) => call.url.pathname.includes("/rpc/")
+      && !call.url.pathname.endsWith("/rpc/statecourse_staff_security")), false);
   });
 });
 
@@ -144,6 +175,7 @@ test("an administrator account cannot act as the memo-review instructor", { conc
     }));
     assert.equal(response.statusCode, 403);
     assert.deepEqual(JSON.parse(response.body), { error: "michigan_named_staff_binding_required" });
-    assert.equal(calls.some((call) => call.url.pathname.includes("/rpc/")), false);
+    assert.equal(calls.some((call) => call.url.pathname.includes("/rpc/")
+      && !call.url.pathname.endsWith("/rpc/statecourse_staff_security")), false);
   });
 });
