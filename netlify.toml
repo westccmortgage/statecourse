@@ -2,6 +2,12 @@
   command = "bash site/build.sh"
   publish = "dist"
 
+[build.environment]
+  # Production deploy 6abbf324 runs every retained Function on nodejs24.x.
+  # Keep local/CI candidate metadata in the same runtime family.
+  NODE_VERSION = "24"
+  AWS_LAMBDA_JS_RUNTIME = "nodejs24.x"
+
 [functions]
   included_files = [
     # Protected transcripts. These are served only to an authorised enrollment by the stream

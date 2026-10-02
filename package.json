@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "engines": {
-    "node": ">=22.13.0"
+    "node": "24.x"
   },
   "scripts": {
     "install:ci": "bash scripts/install-ci.sh",
@@ -14,6 +14,7 @@
     "test:netlify": "bash site/build.sh && node scripts/test-california-documents.mjs tests/*.test.mjs",
     "prepare:california": "node scripts/test-california-documents.mjs --prepare",
     "test:sites": "npm run build",
+    "build:functions:candidate": "node scripts/build-netlify-function-candidate.mjs",
     "validate:artifact": "bash scripts/validate-artifact.sh",
     "lint": "bash scripts/sites-env.sh -- eslint . --ignore-pattern dist --ignore-pattern .next",
     "db:generate": "bash scripts/sites-env.sh -- drizzle-kit generate"
@@ -26,6 +27,7 @@
   },
   "devDependencies": {
     "@cloudflare/vite-plugin": "1.37.1",
+    "@netlify/zip-it-and-ship-it": "14.7.0",
     "@tailwindcss/postcss": "4.2.1",
     "@types/node": "22.19.19",
     "@types/react": "19.2.14",
@@ -33,8 +35,10 @@
     "@vitejs/plugin-react": "6.0.2",
     "@vitejs/plugin-rsc": "0.5.26",
     "drizzle-kit": "0.31.10",
+    "esbuild": "0.28.0",
     "eslint": "9.39.4",
     "eslint-config-next": "16.2.6",
+    "netlify-cli": "26.1.0",
     "react-server-dom-webpack": "19.2.6",
     "tailwindcss": "4.2.1",
     "typescript": "5.9.3",

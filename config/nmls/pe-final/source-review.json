@@ -1,0 +1,18 @@
+{
+  "kind": "independent_ai_source_math_review",
+  "status": "passed",
+  "candidateContentDigest": "fcc9c4389b7e61d0a3e0fbb2fd391634f5b8bfa47cdfa2b9f3731afeac351ab1",
+  "candidateFileSha256": "e151abc123d816762a0c40fd9612dccc81aa83ec4e60fcebb2521798e8221565",
+  "evidenceSha256": "8f22775490600faf26d4b31d005616ce32c4677ec9c020662cf1edf3b7be52c1",
+  "evidenceFile": "source-review-evidence.json",
+  "holds": [],
+  "humanSmeApproved": false,
+  "regulatoryApproved": false,
+  "limitations": [
+    "Unchanged PE-FIN-5D-02 live operative eCFR retrieval caveat remains. Official annual CFR/FinCEN corroboration does not claim successful live retrieval; final current-rule recheck remains.",
+    "The46 unchanged items rely on prior independent review; they were not substantively re-reviewed in this bounded pass.",
+    "Human mortgage SME, accessibility/reading-level, representative learner timing, psychometric performance and equivalent form difficulty remain unvalidated.",
+    "This pass is not NMLS/provider approval, delivery authorization, publication, banking, certificate or credit eligibility.",
+    "Author200-form/schema report was inspected but not independently rerun; no operational/security certification is made."
+  ]
+}

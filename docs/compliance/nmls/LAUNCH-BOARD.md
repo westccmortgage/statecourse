@@ -74,3 +74,43 @@ See [PE07/PE08 integration record](../../engineering/pe-product-file-expansion-2
 The candidate is limited to the existing PR23 preview and includes the explicit Read-mode link correction. Qualifying OIL delivery, actual timing, human acceptance, protected final assessment and regulatory approval remain separate open gates. Production, CE, owner OAuth, payments and all credit authority remain unchanged. Aggregate tests retain the same 57 known failures and 27 skips; full CI is not green.
 
 See [PE03 evidence-lab implementation and remaining OIL work](../../engineering/pe-evidence-lab-2026-10-01.md). This entry closes no regulated-launch gate above.
+
+## PE03 private cohort evidence — local-only trial, 2026-10-01
+
+**SOURCE PRESENT / LOCAL PASS / DISABLED / NONCREDIT.** A separate PE03 definition, default-off private cohort/API, server observation sample and immutable learner → distinct peer → assigned instructor → learner revision chain are available for parent review. Draft SQL was executed only in embedded PGlite with synthetic identities and modeled prerequisites. Twenty focused tests and the JSDOM/local-HTTP/PGlite flow pass. Technical samples of approximately 39 seconds per learner do not validate lesson duration or a 20-hour course.
+
+No publication, live migration, approval, credit, certificate or banking authority is established. Real rendered Chromium was blocked by the local socket sandbox; actual-schema/hosted-auth verification, native concurrent PostgreSQL acceptance, cumulative OIL policy, timing study, human SME, protected PE final and regulatory gates remain open. Public free practice, CE/OSS and the owner-OAuth overlay are unchanged. Aggregate failures remain the same 57 known identities; full CI is not green.
+
+See [local cohort implementation and acceptance limits](../../engineering/pe03-private-cohort-local-2026-10-01.md). This entry closes no regulated-launch gate above.
+
+### PE03 instructor correction and isolated CI proposal — 2026-10-01
+
+The initial local cohort candidate is **superseded/local-incomplete**: it failed closed when real staff fresh-action authentication lacked required request metadata/client integration. The narrow new-handler/page correction passes 27 focused tests, including consumed-proof rejection and instructor lost-response recovery with a fresh proof and one immutable feedback event. Existing auth/OAuth and CE code were not changed. The isolated native PostgreSQL/Chromium workflow is prepared but has **not run**; neither environment-limited gate is closed. All enablement and credit flags remain off. See [correction evidence and CI review scope](../../engineering/pe03-isolated-ci-proposal-2026-10-01.md).
+
+
+### Verified PE03 acceptance and 25-unit extension — 2026-10-01
+
+The earlier PE03 native/browser pending entries above are superseded for the bounded PE03 slice by successful isolated run36853453698 at147cfe8faddd7308cdc56e64af0bfb354f575200. That result remains default-disabled/noncredit and does not close hosted Auth, timing, human review or regulated-launch gates.
+
+A separate private25-unit teaching workbench now passes local embedded PostgreSQL/service/HTTP and DOM acceptance. It preserves the eight lesson manuscripts, links course-wide roster authority and per-unit teaching chains, and reconciles scoped time/category exports. The protected final remains locked and all credit/certificate/banking flags remain false. Native/rendered acceptance for this new extension is PENDING; no full20-hour readiness or production change is established. See [scope, evidence and remaining completion path](../../engineering/pe-course-workbench-2026-10-01.md).
+
+
+### 25-unit isolated technical acceptance — October 1, 2026
+
+**SCOPED NATIVE/RENDERED PASS; PRIVATE DRAFT; DISABLED; NONCREDIT.** Application commit `44a9a942ad770639aba82645228b97fa864dabc8` passed [isolated run 36915541534](https://github.com/westccmortgage/statecourse/actions/runs/36915541534). All 25-unit teaching chains and scoped timing/category exports pass native PostgreSQL acceptance; rendered Chromium verifies actual lifecycle interruptions, recovery, adverse-order dialogue, navigation and downloaded evidence. Desktop/mobile captures were inspected. Upstream Auth is synthetic; accelerated test clocks do not validate proposed duration. The previous extension-native/rendered pending entry above is superseded for this bounded scope only.
+
+Protected PE assessment, check-response/teaching-quality acceptance, cumulative OIL timing policy, lesson chunking, representative timing, human SME review, hosted identity/ROCS, real roster operations, reporting, external approval and the owner-OAuth-preserving release remain open. No merge, preview, deployment, live migration, filing, payment or credit authority is established.
+
+### 2026-10-01 protected PE final candidate
+
+Private default-disabled implementation adds 50 protected items / 25-question server forms, 18/25 threshold, complementary retake after fresh accepted remediation checks, immutable attempt/receipt history and current-eligibility rechecks. Exact bank `e151abc123d816762a0c40fd9612dccc81aa83ec4e60fcebb2521798e8221565` has scoped independent AI source/math review; human SME and regulatory release remain separate false gates. Local focused tests are available; exact-head native/concurrency/Chromium acceptance is pending. See [bounded engineering status](../../engineering/pe-final-assessment-2026-10-01.md). This does not alter the accepted 25-unit application evidence at `44a9a942ad770639aba82645228b97fa864dabc8` or establish full 20-hour, approval, hosted, certificate or banking readiness.
+
+### PE delivery and preserved-reading continuation
+
+Protected final exact head `0ec1a528182afe91dc15ca5fae722c6e6628d27f` passed isolated native/Chromium run `36927200796`; human SME/regulatory/hosted release remains unestablished. The next local candidate connects actor-wide PE restriction reservations, break/rest controls and bounded display to teaching/final delivery, plus lossless chunked reading. Provider threshold interpretation remains explicitly unapproved; planned 1,000 minutes remain unvalidated. Its native/rendered acceptance is pending. [Scope, normative sources and remaining gates](../../engineering/pe-oil-delivery-2026-10-01.md).
+
+### Private onboarding and prerequisite gate continuation — October 2, 2026
+
+**LOCAL SOURCE PASS; EXACT-HEAD NATIVE CI PENDING; DISABLED; NONCREDIT.** A PR 24 continuation based on accepted head `007d9bdda712d9a2a475bf1733775fb7f97895f1` adds transactional disabled roster setup, immutable legacy/new offering identity, scoped assigned-instructor inspection/revocation, verified-source ROCS presentation/acceptance receipts, and a shared fail-closed gate before policy reservation, instruction, or protected-final eligibility. Embedded PostgreSQL tests cover two learners, original-request recovery, exact version/hash/time, rollback, revocation, and no pre-readiness reservation. Local real Chrome desktop/mobile readiness navigation passes. Existing focused teaching/final/OIL regressions remain green.
+
+No genuine ROCS artifact, trusted hosted identity/BioSig evidence, migration, enablement, deployment, representative timing, human review, provider-policy adoption, or regulatory authority is established. All credit/certificate/banking and release gates remain false. Exact-head native CI and the hosted acceptance gates listed in the [bounded engineering record](../../engineering/pe-onboarding-readiness-2026-10-02.md) remain open.

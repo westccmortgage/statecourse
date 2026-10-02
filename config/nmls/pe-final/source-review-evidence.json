@@ -1,0 +1,1020 @@
+{
+  "kind": "independent_ai_source_math_review_evidence",
+  "bankFileSha256": "e151abc123d816762a0c40fd9612dccc81aa83ec4e60fcebb2521798e8221565",
+  "reports": [
+    {
+      "name": "pe-independent-content-review.json",
+      "sha256": "22909589eb7f9c7f6cf6e3643f79281e3e6db16fa7a330d16f13e4194c0fe001",
+      "review": {
+        "schema": "pe-independent-content-review-v1",
+        "reviewedAt": "2026-10-01T20:18:00Z",
+        "originalBankSha256": "e4edec7fe9566229483c347223ca1feb51140f008cdab9d78e2202870c5d43cb",
+        "reviewedBankSha256": "f75a8517e4b09b5f172a5bb507a699c48d4c206ef48d07ea7dd4b2689458dc65",
+        "scope": "Independent AI content/source/arithmetic review; protected local packet only, no publication or approval flags changed. Not human SME, legal or NMLS approval.",
+        "findingSummary": {
+          "keyErrorsRemaining": 0,
+          "confirmedDefectsFound": 1,
+          "confirmedDefectsClosed": 1,
+          "reviewedItemCount": 50,
+          "independentlyRecomputedNumericAndClockCases": 18,
+          "originalSourceUrlCount": 38,
+          "revisedSourceUrlCount": 39,
+          "bankEditedByReviewer": false,
+          "allCurrentSourceUrlsSuccessfullyRetrieved": false,
+          "humanReviewed": false,
+          "creditEligible": false
+        },
+        "closedFindings": [
+          {
+            "itemId": "PE-FIN-5A-01",
+            "original": "Thursday distractor falsely attributed to Mon-Fri schedule; that schedule would also produce Wednesday, same as original correct key.",
+            "correction": "Saturday receipt; correct Thursday, wrong Mon-Fri/precise Wednesday, calendar Tuesday, fourth creditor day Friday.",
+            "verified": "Only this item changed; other49 and top-level fields unchanged. Recomputed from stated schedule and CFPB current 1026.19(e)(1)(iii), comment1 and1026.2(a)(6)."
+          }
+        ],
+        "sourceAccessCaveat": {
+          "itemId": "PE-FIN-5D-02",
+          "liveOperativeUrl": "https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1029#p-1029.320(d)",
+          "result": "Access-check redirect or internal retrieval error; do not claim successful live eCFR verification. No substantive contradiction found. Preserve final current-rule recheck before release.",
+          "corroboration": [
+            {
+              "url": "https://www.govinfo.gov/content/pkg/CFR-2025-title31-vol3/pdf/CFR-2025-title31-vol3-sec1029-320.pdf",
+              "locator": "2025 official annual CFR, PDF pages2-3,1029.320(d)"
+            },
+            {
+              "url": "https://www.fincen.gov/system/files/2025-09/Crossborderguidance-508C.pdf",
+              "locator": "FIN-2025-G001 pp1-2; FinCEN catalog lists Mortgage Co/Broker; disclosure of existence/non-existence restricted"
+            },
+            {
+              "url": "https://www.federalreserve.gov/supervisionreg/srletters/SR2605.htm",
+              "locator": "September2,2026 joint statement; current corroboration of existence confidentiality in bank context, not substitute for mortgage-company operative text"
+            }
+          ]
+        },
+        "structureAndForms": {
+          "units": 25,
+          "itemsPerUnit": 2,
+          "categoryBankCounts": {
+            "elective": 30,
+            "federal_law": 8,
+            "ethics": 6,
+            "nontraditional": 6
+          },
+          "onePerUnitFormCounts": {
+            "elective": 15,
+            "federal_law": 4,
+            "ethics": 3,
+            "nontraditional": 3
+          },
+          "lessonModuleCategoryAndHashAlignment": true,
+          "formMechanismObserved": "drawPeFinalAttempt chooses one per unit; a failed first attempt excludes all25 previous items, giving complementary second form. Review of mechanism only, not an end-to-end security certification.",
+          "limits": [
+            "Two items per unit sample different objectives and are not empirically equated.",
+            "Coverage does not prove NMLS blueprint adequacy or measured educational minutes.",
+            "Complementary retake uses all remaining25; after two forms pool exhausted.",
+            "Human SME, psychometric/accessibility/reading-level/timing checks and operational controls remain required."
+          ]
+        },
+        "independence": {
+          "ceItemsCompared": 64,
+          "exactNormalizedCeStemMatches": 0,
+          "exactNormalizedCeOptionMatches": 0,
+          "exactPublicFullStemOrNontrivialOptionMatches": 0,
+          "method": "Independent normalization comparison against all64 CE stems/choices and public8 lesson manuscripts plus PE03lab; CE scenarios inspected. Relevant public worked examples inspected for conceptual similarity.",
+          "interpretation": "No CE copying found. Shared legal concepts/formulas are expected. Do not equate lexical independence with proof of authorship or novel scenario independence.",
+          "publicNumericalVariantCautions": {
+            "PE-FIN-4B-01": "Very close structure to public Worked example4B; new figures",
+            "PE-FIN-7C-02": "Very close structure to public W7C HELOC IO-to-amortizing transition; new balance/rate/term",
+            "PE-FIN-3B-02": "Same public River-file remaining-reserves method; new amounts/months",
+            "PE-FIN-7A-02": "Same public negative-amortization recurrence; new inputs and horizon"
+          },
+          "decision": "Not automatic content holds under no-CE-copy criterion; redesign if required originality rule excludes numerical variants of public examples."
+        },
+        "calculationResults": {
+          "2A-01": "634.59",
+          "2A-02": "2880cost;2560savings;320unrecovered;45months",
+          "2B-01": "80%CLTV;90%HCLTV",
+          "3A-02": "23000",
+          "3B-01": "6825income;48.79%DTI",
+          "3B-02": "8600remaining;9150required;550shortfall",
+          "4B-01": "37500",
+          "4C-01": "176596.50",
+          "5A-01": "revised:Tue/Wed/Thu; original:Sat/Tue/Wed",
+          "6C-02": "2520vs2515",
+          "7A-01": "6.75%",
+          "7A-02": "132481.20",
+          "7B-01": "4500",
+          "7B-02": "240months",
+          "7C-02": "364.00IO;574.34amortizing",
+          "8A-01": "5900income;45.76%DTI",
+          "8B-01": "48.06%",
+          "8B-02": "36900CTC;1100remaining;900shortfall"
+        },
+        "items": [
+          {
+            "id": "PE-FIN-1A-01",
+            "keyReviewed": "B",
+            "verdict": "no_remaining_content_error_found",
+            "review": "Servicer is the appropriate escrow-administration contact; ownership, origination and settlement roles remain distinct.",
+            "sources": [
+              {
+                "url": "https://www.consumerfinance.gov/ask-cfpb/whats-the-difference-between-a-mortgage-lender-and-a-mortgage-servicer-en-198/",
+                "locator": "Lender and servicer definitions; day-to-day loan administration"
+              }
+            ]
+          },
+          {
+            "id": "PE-FIN-1A-02",
+            "keyReviewed": "C",
+            "verdict": "no_remaining_content_error_found",
+            "review": "New creditor has no decision in the facts; another lender's decision cannot alone bind it. Generic underwriting source supports process, while this is a stipulated authority scenario.",
+            "sources": [
+              {
+                "url": "https://myhome.freddiemac.com/blog/homebuying/mortgage-underwriting",
+                "locator": "What Is Underwriting; Gathering and Verifying; Putting It All Together"
+              }
+            ]
+          },
+          {
+            "id": "PE-FIN-1B-01",
+            "keyReviewed": "D",
+            "verdict": "no_remaining_content_error_found",
+            "review": "Course-final certificate does not establish licensing-test passage or origination authority; Regulation H 1008.105 requires separate testing and other licensing conditions.",
+            "sources": [
+              {
+                "url": "https://www.consumerfinance.gov/rules-policy/regulations/1008/105/",
+                "locator": "12 CFR 1008.105(a)"
+              },
+              {
+                "url": "https://www.consumerfinance.gov/rules-policy/regulations/1008/103/",
+                "locator": "12 CFR 1008.103(a), (b), (d), (e)"
+              }
+            ]
+          },
+          {
+            "id": "PE-FIN-1B-02",
+            "keyReviewed": "D",
+            "verdict": "no_remaining_content_error_found",
+            "review": "1008.103(d) expressly addresses independent-contractor clerical/support processing; exception review is preserved.",
+            "sources": [
+              {
+                "url": "https://www.consumerfinance.gov/rules-policy/regulations/1008/103/",
+                "locator": "12 CFR 1008.103(a), (b), (d), (e)"
+              }
+            ]
+          },
+          {
+            "id": "PE-FIN-1C-01",
+            "keyReviewed": "B",
+            "verdict": "no_remaining_content_error_found",
+            "review": "Existing-loan sale replenishing lender funds is secondary-market activity; facts preserve servicer and contract.",
+            "sources": [
+              {
+                "url": "https://www.fhfa.gov/about-fannie-mae-freddie-mac",
+                "locator": "About Fannie Mae and Freddie Mac"
+              },
+              {
+                "url": "https://www.consumerfinance.gov/ask-cfpb/how-can-i-tell-who-owns-my-mortgage-en-214/",
+                "locator": "Mortgage owner and servicer discussion"
+              }
+            ]
+          },
+          {
+            "id": "PE-FIN-1C-02",
+            "keyReviewed": "B",
+            "verdict": "no_remaining_content_error_found",
+            "review": "Separate purchaser condition is explicitly stipulated; neither government law nor universal ineligibility follows.",
+            "sources": [
+              {
+                "url": "https://www.fhfa.gov/about-fannie-mae-freddie-mac",
+                "locator": "About Fannie Mae and Freddie Mac"
+              },
+              {
+                "url": "https://myhome.freddiemac.com/blog/homebuying/mortgage-underwriting",
+                "locator": "What Is Underwriting; Gathering and Verifying; Putting It All Together"
+              }
+            ]
+          },
+          {
+            "id": "PE-FIN-2A-01",
+            "keyReviewed": "C",
+            "verdict": "no_remaining_content_error_found",
+            "review": "634.59 using actual/365. Final-only rounding and fixed convention remove usual ambiguity.",
+            "sources": [
+              {
+                "url": "https://www.consumerfinance.gov/ask-cfpb/what-is-a-payoff-amount-and-is-it-the-same-as-my-current-balance-en-205/",
+                "locator": "Payoff amount versus current balance"
+              }
+            ]
+          },
+          {
+            "id": "PE-FIN-2A-02",
+            "keyReviewed": "A",
+            "verdict": "no_remaining_content_error_found",
+            "review": "2880 points cost versus 2560 savings; 320 unrecovered, nominal breakeven 45 months. Excluded factors expressly scoped.",
+            "sources": [
+              {
+                "url": "https://www.consumerfinance.gov/ask-cfpb/how-should-i-use-lender-credits-and-points-also-called-discount-points-en-136/",
+                "locator": "Points; Lender credits; Compare loan offers"
+              }
+            ]
+          },
+          {
+            "id": "PE-FIN-2B-01",
+            "keyReviewed": "D",
+            "verdict": "no_remaining_content_error_found",
+            "review": "Fannie CLTV drawn portion gives 80%; HCLTV full line gives 90%; accepted value basis stipulated.",
+            "sources": [
+              {
+                "url": "https://selling-guide.fanniemae.com/sel/b2-1.2-02/combined-loan-value-cltv-ratios",
+                "locator": "B2-1.2-02, Calculation of the CLTV Ratio"
+              },
+              {
+                "url": "https://selling-guide.fanniemae.com/sel/b2-1.2-03/home-equity-combined-loan-value-hcltv-ratios",
+                "locator": "B2-1.2-03, Calculation of the HCLTV Ratio"
+              }
+            ]
+          },
+          {
+            "id": "PE-FIN-2B-02",
+            "keyReviewed": "B",
+            "verdict": "no_remaining_content_error_found",
+            "review": "APR does not determine ARM maximum future payments. Sources distinguish APR, index/margin, caps.",
+            "sources": [
+              {
+                "url": "https://www.consumerfinance.gov/ask-cfpb/what-is-the-difference-between-a-mortgage-interest-rate-and-an-apr-en-135/",
+                "locator": "Mortgage APR; adjustable-rate comparison warning"
+              },
+              {
+                "url": "https://www.consumerfinance.gov/ask-cfpb/for-an-adjustable-rate-mortgage-arm-what-are-the-index-and-margin-and-how-do-they-work-en-1949/",
+                "locator": "Index and margin; rate cap explanation"
+              }
+            ]
+          },
+          {
+            "id": "PE-FIN-2C-01",
+            "keyReviewed": "A",
+            "verdict": "no_remaining_content_error_found",
+            "review": "Security instrument collateral description must be reconciled; correct note/deed does not amend it.",
+            "sources": [
+              {
+                "url": "https://www.consumerfinance.gov/ask-cfpb/im-about-to-close-on-a-real-estate-purchase-transaction-with-a-mortgage-what-can-expect-in-the-mortgage-closing-process-en-1905/",
+                "locator": "Documents signed at closing"
+              },
+              {
+                "url": "https://files.consumerfinance.gov/f/documents/cfpb_buying-a-house_closing-forms_guide.pdf",
+                "locator": "Mortgage Closing Documents, PDF pages 2-3: note section 6(C) and security-instrument illustration"
+              }
+            ]
+          },
+          {
+            "id": "PE-FIN-2C-02",
+            "keyReviewed": "A",
+            "verdict": "no_remaining_content_error_found",
+            "review": "Fictional default acceleration provision concerns maturity, not rate or lien priority. No universal enforcement rule asserted.",
+            "sources": [
+              {
+                "url": "https://files.consumerfinance.gov/f/documents/cfpb_buying-a-house_closing-forms_guide.pdf",
+                "locator": "Mortgage Closing Documents, PDF pages 2-3: note section 6(C) and security-instrument illustration"
+              }
+            ]
+          },
+          {
+            "id": "PE-FIN-3A-01",
+            "keyReviewed": "B",
+            "verdict": "no_remaining_content_error_found",
+            "review": "Comment 43(c)(3)-2 permits reasonably reliable applicant-specific third-party records obtained directly from consumer; upload neither proves nor negates reliability.",
+            "sources": [
+              {
+                "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/43/",
+                "locator": "12 CFR 1026.43(c)(2)-(4), including comments 43(c)(3)-2 through -6"
+              }
+            ]
+          },
+          {
+            "id": "PE-FIN-3A-02",
+            "keyReviewed": "A",
+            "verdict": "no_remaining_content_error_found",
+            "review": "Time-aligned account balances total 23000; same 7000 transfer cannot be counted twice.",
+            "sources": [
+              {
+                "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/43/",
+                "locator": "12 CFR 1026.43(c)(2)-(4), including comments 43(c)(3)-2 through -6"
+              }
+            ]
+          },
+          {
+            "id": "PE-FIN-3B-01",
+            "keyReviewed": "A",
+            "verdict": "no_remaining_content_error_found",
+            "review": "Biweekly annualization gives 6825 monthly income and 48.79% total DTI; no approval implied.",
+            "sources": [
+              {
+                "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/43/",
+                "locator": "12 CFR 1026.43(c)(2)-(4), including comments 43(c)(3)-2 through -6"
+              },
+              {
+                "url": "https://myhome.freddiemac.com/blog/homebuying/mortgage-underwriting",
+                "locator": "What Is Underwriting; Gathering and Verifying; Putting It All Together"
+              }
+            ]
+          },
+          {
+            "id": "PE-FIN-3B-02",
+            "keyReviewed": "D",
+            "verdict": "no_remaining_content_error_found",
+            "review": "8600 remains versus 9150 required, 550 shortfall under invented reserve rule.",
+            "sources": [
+              {
+                "url": "https://myhome.freddiemac.com/blog/homebuying/mortgage-underwriting",
+                "locator": "What Is Underwriting; Gathering and Verifying; Putting It All Together"
+              }
+            ]
+          },
+          {
+            "id": "PE-FIN-3C-01",
+            "keyReviewed": "A",
+            "verdict": "no_remaining_content_error_found",
+            "review": "Fannie DU recommendation does not itself satisfy documentation conditions; lender retains responsibility.",
+            "sources": [
+              {
+                "url": "https://selling-guide.fanniemae.com/sel/b3-2-01/general-information-du",
+                "locator": "B3-2-01, General Information on DU"
+              },
+              {
+                "url": "https://myhome.freddiemac.com/blog/homebuying/mortgage-underwriting",
+                "locator": "What Is Underwriting; Gathering and Verifying; Putting It All Together"
+              }
+            ]
+          },
+          {
+            "id": "PE-FIN-3C-02",
+            "keyReviewed": "B",
+            "verdict": "no_remaining_content_error_found",
+            "review": "Lease conflicts with proposed occupancy, warranting factual clarification without unsupported fraud finding or alternative approval.",
+            "sources": [
+              {
+                "url": "https://myhome.freddiemac.com/blog/homebuying/mortgage-underwriting",
+                "locator": "What Is Underwriting; Gathering and Verifying; Putting It All Together"
+              }
+            ]
+          },
+          {
+            "id": "PE-FIN-4A-01",
+            "keyReviewed": "C",
+            "verdict": "no_remaining_content_error_found",
+            "review": "HUD says FHA insures approved-lender loans against covered lender loss; borrower duty continues.",
+            "sources": [
+              {
+                "url": "https://www.hud.gov/aboutus/fhahistory",
+                "locator": "Our Role; What We Do"
+              }
+            ]
+          },
+          {
+            "id": "PE-FIN-4A-02",
+            "keyReviewed": "A",
+            "verdict": "no_remaining_content_error_found",
+            "review": "Below-limit amount alone does not prove conforming status; remaining purchaser standards matter.",
+            "sources": [
+              {
+                "url": "https://www.consumerfinance.gov/ask-cfpb/what-is-a-conventional-loan-en-117/",
+                "locator": "Conventional-loan definition"
+              },
+              {
+                "url": "https://www.consumerfinance.gov/ask-cfpb/what-is-a-conforming-loan-en-115/",
+                "locator": "Conforming-loan definition"
+              }
+            ]
+          },
+          {
+            "id": "PE-FIN-4B-01",
+            "keyReviewed": "C",
+            "verdict": "no_remaining_content_error_found",
+            "review": "37500 cash to bring after each credit and deposit is applied once. Inputs explicitly avoid double-net ambiguity.",
+            "sources": [
+              {
+                "url": "https://www.consumerfinance.gov/owning-a-home/closing-disclosure/",
+                "locator": "Cash to Close; Calculating Cash to Close; projected payments"
+              }
+            ]
+          },
+          {
+            "id": "PE-FIN-4B-02",
+            "keyReviewed": "D",
+            "verdict": "no_remaining_content_error_found",
+            "review": "Disclosure timing is distinct from unaccepted insurance/title decisions; no automatic denial or clearance.",
+            "sources": [
+              {
+                "url": "https://myhome.freddiemac.com/blog/homebuying/mortgage-underwriting",
+                "locator": "What Is Underwriting; Gathering and Verifying; Putting It All Together"
+              },
+              {
+                "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/19/",
+                "locator": "12 CFR 1026.19(e)(1)-(3), (f)(1)-(2) and applicable interpretations"
+              }
+            ]
+          },
+          {
+            "id": "PE-FIN-4C-01",
+            "keyReviewed": "B",
+            "verdict": "no_remaining_content_error_found",
+            "review": "Expressly authorized six-day extension adds 164.40; total 176596.50. No universal payoff-extension permission.",
+            "sources": [
+              {
+                "url": "https://www.consumerfinance.gov/ask-cfpb/what-is-a-payoff-amount-and-is-it-the-same-as-my-current-balance-en-205/",
+                "locator": "Payoff amount versus current balance"
+              }
+            ]
+          },
+          {
+            "id": "PE-FIN-4C-02",
+            "keyReviewed": "B",
+            "verdict": "no_remaining_content_error_found",
+            "review": "Forbearance does not erase missed/reduced payments; no universal lump-sum repayment promise.",
+            "sources": [
+              {
+                "url": "https://www.consumerfinance.gov/ask-cfpb/what-is-mortgage-forbearance-en-289/",
+                "locator": "What is mortgage forbearance; repayment options"
+              }
+            ]
+          },
+          {
+            "id": "PE-FIN-5A-01",
+            "keyReviewed": "D",
+            "verdict": "no_remaining_content_error_found",
+            "review": "Original key was correct but A rationale false; corrected Saturday-receipt version independently verified Tue/Wed/Thu, D Thursday. All revised distractor clocks check.",
+            "sources": [
+              {
+                "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/2/",
+                "locator": "12 CFR 1026.2(a)(6), first sentence, and comment 2(a)(6)-1"
+              },
+              {
+                "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/19/",
+                "locator": "12 CFR 1026.19(e)(1)(iii)(A) and comment 19(e)(1)(iii)-1"
+              }
+            ]
+          },
+          {
+            "id": "PE-FIN-5A-02",
+            "keyReviewed": "D",
+            "verdict": "no_remaining_content_error_found",
+            "review": "1026.23(a)(1), comment 23(a)(1)-2 supports rescission rights for non-note owner whose principal-dwelling interest is encumbered.",
+            "sources": [
+              {
+                "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/23/",
+                "locator": "12 CFR 1026.23(a)(1), (b), (f)(1)"
+              }
+            ]
+          },
+          {
+            "id": "PE-FIN-5B-01",
+            "keyReviewed": "A",
+            "verdict": "no_remaining_content_error_found",
+            "review": "Comment 19(e)(3)(iv)-2 limits baseline revision to affected charge. Informational redisclosure and good-faith baseline are distinct; key accurately speaks to baseline.",
+            "sources": [
+              {
+                "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/19/",
+                "locator": "12 CFR 1026.19(e)(1)-(3), (f)(1)-(2) and applicable interpretations"
+              }
+            ]
+          },
+          {
+            "id": "PE-FIN-5B-02",
+            "keyReviewed": "B",
+            "verdict": "no_remaining_content_error_found",
+            "review": "1024.14(b),(d),(e),(g)(1)(vi) excludes referral-conditioned registration expense reward from education exception.",
+            "sources": [
+              {
+                "url": "https://www.consumerfinance.gov/rules-policy/regulations/1024/14/",
+                "locator": "12 CFR 1024.14(b), (d)-(g)"
+              }
+            ]
+          },
+          {
+            "id": "PE-FIN-5C-01",
+            "keyReviewed": "C",
+            "verdict": "no_remaining_content_error_found",
+            "review": "1002.14(a)(1) timing waiver does not waive copies; nonconsummation has 30-day deadline. Correct option intentionally avoids incomplete deadline calculation facts.",
+            "sources": [
+              {
+                "url": "https://www.consumerfinance.gov/rules-policy/regulations/1002/14/",
+                "locator": "12 CFR 1002.14(a)(1), including comment 14(a)(1)-4"
+              }
+            ]
+          },
+          {
+            "id": "PE-FIN-5C-02",
+            "keyReviewed": "B",
+            "verdict": "no_remaining_content_error_found",
+            "review": "1002.9(c)(2) requires specific needed information, reasonable period and nonresponse consequence; vague request is defective.",
+            "sources": [
+              {
+                "url": "https://www.consumerfinance.gov/rules-policy/regulations/1002/9/",
+                "locator": "12 CFR 1002.9(a), (b), (c) and official interpretations"
+              }
+            ]
+          },
+          {
+            "id": "PE-FIN-5D-01",
+            "keyReviewed": "C",
+            "verdict": "no_remaining_content_error_found",
+            "review": "HOEPA points/fees is separate from HPML APR-spread analysis; omission is not automatic positive classification.",
+            "sources": [
+              {
+                "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/32/",
+                "locator": "12 CFR 1026.32(a)(1)"
+              },
+              {
+                "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/35/",
+                "locator": "12 CFR 1026.35(a), (b), (c)"
+              }
+            ]
+          },
+          {
+            "id": "PE-FIN-5D-02",
+            "keyReviewed": "C",
+            "verdict": "no_content_error_found_with_source_access_caveat",
+            "review": "SAR and its existence protected; route to compliance without confirming or falsely denying. Official current eCFR retrieval unavailable; official 2025 CFR and FinCEN guidance substantively corroborate narrow rule.",
+            "sources": [
+              {
+                "url": "https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1029#p-1029.320(d)",
+                "locator": "31 CFR 1029.320(d)(1)"
+              }
+            ]
+          },
+          {
+            "id": "PE-FIN-6A-01",
+            "keyReviewed": "C",
+            "verdict": "no_remaining_content_error_found",
+            "review": "1002.6(b)(5) forbids blanket part-time income discount, while individual amount/continuance assessment remains allowed.",
+            "sources": [
+              {
+                "url": "https://www.consumerfinance.gov/rules-policy/regulations/1002/6/",
+                "locator": "12 CFR 1002.6(b)(3), (b)(5) and comments 6(b)(5)-1 through -4"
+              }
+            ]
+          },
+          {
+            "id": "PE-FIN-6A-02",
+            "keyReviewed": "D",
+            "verdict": "no_remaining_content_error_found",
+            "review": "1002.5(d)(3) prohibits childbearing/rearing-intention inquiry even uniformly; actual dependent obligations are distinguished.",
+            "sources": [
+              {
+                "url": "https://www.consumerfinance.gov/rules-policy/regulations/1002/5/",
+                "locator": "12 CFR 1002.5(d)(2)-(3)"
+              }
+            ]
+          },
+          {
+            "id": "PE-FIN-6B-01",
+            "keyReviewed": "A",
+            "verdict": "no_remaining_content_error_found",
+            "review": "1026.42(c)(3) permits factual information and error-correction requests; target-value pressure or unauthorized alteration does not qualify.",
+            "sources": [
+              {
+                "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/42/",
+                "locator": "12 CFR 1026.42(c)(1)-(3)"
+              }
+            ]
+          },
+          {
+            "id": "PE-FIN-6B-02",
+            "keyReviewed": "D",
+            "verdict": "no_remaining_content_error_found",
+            "review": "FTC current guide requires periodic access-control/business-need review; MFA/encryption do not justify stale permissions.",
+            "sources": [
+              {
+                "url": "https://www.ftc.gov/business-guidance/resources/ftc-safeguards-rule-what-your-business-needs-know",
+                "locator": "Reasonable security program, item c.1: access controls and legitimate business need"
+              }
+            ]
+          },
+          {
+            "id": "PE-FIN-6C-01",
+            "keyReviewed": "B",
+            "verdict": "no_remaining_content_error_found",
+            "review": "Rate-linked lender credit trades upfront payment for higher subsequent cost; matching principal does not make refinancing free.",
+            "sources": [
+              {
+                "url": "https://www.consumerfinance.gov/ask-cfpb/how-should-i-use-lender-credits-and-points-also-called-discount-points-en-136/",
+                "locator": "Points; Lender credits; Compare loan offers"
+              },
+              {
+                "url": "https://www.consumerfinance.gov/ask-cfpb/what-is-the-difference-between-a-mortgage-interest-rate-and-an-apr-en-135/",
+                "locator": "Mortgage APR; adjustable-rate comparison warning"
+              }
+            ]
+          },
+          {
+            "id": "PE-FIN-6C-02",
+            "keyReviewed": "A",
+            "verdict": "no_remaining_content_error_found",
+            "review": "2520 versus 2515 full monthly housing totals, including directly paid dues; no whole-loan superiority claim.",
+            "sources": [
+              {
+                "url": "https://www.consumerfinance.gov/owning-a-home/closing-disclosure/",
+                "locator": "Cash to Close; Calculating Cash to Close; projected payments"
+              }
+            ]
+          },
+          {
+            "id": "PE-FIN-7A-01",
+            "keyReviewed": "C",
+            "verdict": "no_remaining_content_error_found",
+            "review": "min(7.65,6.75,10.25)=6.75%; first reset cap controls; explicitly not ATR rate question.",
+            "sources": [
+              {
+                "url": "https://www.consumerfinance.gov/ask-cfpb/for-an-adjustable-rate-mortgage-arm-what-are-the-index-and-margin-and-how-do-they-work-en-1949/",
+                "locator": "Index and margin; rate cap explanation"
+              }
+            ]
+          },
+          {
+            "id": "PE-FIN-7A-02",
+            "keyReviewed": "B",
+            "verdict": "no_remaining_content_error_found",
+            "review": "Two recurrence steps produce 132481.20; month-two interest includes capitalized month-one shortfall.",
+            "sources": [
+              {
+                "url": "https://www.consumerfinance.gov/ask-cfpb/what-is-negative-amortization-en-103/",
+                "locator": "Negative amortization definition"
+              }
+            ]
+          },
+          {
+            "id": "PE-FIN-7B-01",
+            "keyReviewed": "B",
+            "verdict": "no_remaining_content_error_found",
+            "review": "Net business earnings 72000 times 75% /12 gives 4500; accepted expense/ownership method expressly hypothetical.",
+            "sources": [
+              {
+                "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/43/",
+                "locator": "12 CFR 1026.43(c)(2)-(4), including comments 43(c)(3)-2 through -6"
+              },
+              {
+                "url": "https://selling-guide.fanniemae.com/sel/b3-3.1-01/general-income-information",
+                "locator": "B3-3.1-01, Stable and Predictable Income; Continuity of Income"
+              }
+            ]
+          },
+          {
+            "id": "PE-FIN-7B-02",
+            "keyReviewed": "A",
+            "verdict": "no_remaining_content_error_found",
+            "review": "1026.43(c)(5)(ii)(B) uses remaining term at IO recast: 20 years/240 months, not fresh 30 years.",
+            "sources": [
+              {
+                "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/43/",
+                "locator": "12 CFR 1026.43(c)(5)(i), (c)(5)(ii)(B)"
+              }
+            ]
+          },
+          {
+            "id": "PE-FIN-7C-01",
+            "keyReviewed": "C",
+            "verdict": "no_remaining_content_error_found",
+            "review": "CFPB reverse-mortgage explanation retains tax, insurance, residence and maintenance duties; no full HECM eligibility claim.",
+            "sources": [
+              {
+                "url": "https://www.consumerfinance.gov/ask-cfpb/what-is-a-reverse-mortgage-en-224/",
+                "locator": "How reverse mortgages work; borrower obligations"
+              }
+            ]
+          },
+          {
+            "id": "PE-FIN-7C-02",
+            "keyReviewed": "C",
+            "verdict": "no_remaining_content_error_found",
+            "review": "IO 364.00 becomes amortizing 574.34 for 144 months at same rate; principal repayment explains increase.",
+            "sources": [
+              {
+                "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/40/",
+                "locator": "12 CFR 1026.40(d)(5), (d)(12)"
+              },
+              {
+                "url": "https://www.consumerfinance.gov/ask-cfpb/how-does-paying-down-a-mortgage-work-en-1943/",
+                "locator": "How mortgage amortization works"
+              }
+            ]
+          },
+          {
+            "id": "PE-FIN-8A-01",
+            "keyReviewed": "D",
+            "verdict": "no_remaining_content_error_found",
+            "review": "Semimonthly 24-pay income plus pension =5900; 2700/5900=45.76%, projection excluded pending acceptance.",
+            "sources": [
+              {
+                "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/43/",
+                "locator": "12 CFR 1026.43(c)(2)-(4), including comments 43(c)(3)-2 through -6"
+              },
+              {
+                "url": "https://www.consumerfinance.gov/rules-policy/regulations/1002/6/",
+                "locator": "12 CFR 1002.6(b)(3), (b)(5) and comments 6(b)(5)-1 through -4"
+              }
+            ]
+          },
+          {
+            "id": "PE-FIN-8A-02",
+            "keyReviewed": "C",
+            "verdict": "no_remaining_content_error_found",
+            "review": "Arrival acceptance does not establish gift/debt eligibility. Explicit scope makes one best answer.",
+            "sources": [
+              {
+                "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/43/",
+                "locator": "12 CFR 1026.43(c)(2)-(4), including comments 43(c)(3)-2 through -6"
+              },
+              {
+                "url": "https://myhome.freddiemac.com/blog/homebuying/mortgage-underwriting",
+                "locator": "What Is Underwriting; Gathering and Verifying; Putting It All Together"
+              }
+            ]
+          },
+          {
+            "id": "PE-FIN-8B-01",
+            "keyReviewed": "A",
+            "verdict": "no_remaining_content_error_found",
+            "review": "Updated income 7200, obligations 3460, DTI48.06%; exceeds stipulated47% screen without deciding formal denial.",
+            "sources": [
+              {
+                "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/43/",
+                "locator": "12 CFR 1026.43(c)(2)-(4), including comments 43(c)(3)-2 through -6"
+              },
+              {
+                "url": "https://myhome.freddiemac.com/blog/homebuying/mortgage-underwriting",
+                "locator": "What Is Underwriting; Gathering and Verifying; Putting It All Together"
+              }
+            ]
+          },
+          {
+            "id": "PE-FIN-8B-02",
+            "keyReviewed": "D",
+            "verdict": "no_remaining_content_error_found",
+            "review": "Credit reduction increases cash-to-close36900; residual1100 leaves900 reserve shortfall.",
+            "sources": [
+              {
+                "url": "https://www.consumerfinance.gov/owning-a-home/closing-disclosure/",
+                "locator": "Cash to Close; Calculating Cash to Close; projected payments"
+              },
+              {
+                "url": "https://myhome.freddiemac.com/blog/homebuying/mortgage-underwriting",
+                "locator": "What Is Underwriting; Gathering and Verifying; Putting It All Together"
+              }
+            ]
+          },
+          {
+            "id": "PE-FIN-8C-01",
+            "keyReviewed": "A",
+            "verdict": "no_remaining_content_error_found",
+            "review": "1026.19(f)(2)(ii)(C) newly added penalty triggers corrected CD and receipt-based new wait; legal permissibility stipulated separately.",
+            "sources": [
+              {
+                "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/19/",
+                "locator": "12 CFR 1026.19(e)(1)-(3), (f)(1)-(2) and applicable interpretations"
+              }
+            ]
+          },
+          {
+            "id": "PE-FIN-8C-02",
+            "keyReviewed": "D",
+            "verdict": "no_remaining_content_error_found",
+            "review": "Preserve historical hold and current acceptance, route final release to expressly designated officer; no inferred backdating or delegated authority.",
+            "sources": [
+              {
+                "url": "https://myhome.freddiemac.com/blog/homebuying/mortgage-underwriting",
+                "locator": "What Is Underwriting; Gathering and Verifying; Putting It All Together"
+              },
+              {
+                "url": "https://www.consumerfinance.gov/ask-cfpb/im-about-to-close-on-a-real-estate-purchase-transaction-with-a-mortgage-what-can-expect-in-the-mortgage-closing-process-en-1905/",
+                "locator": "Documents signed at closing"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "pe-independent-content-review-v2.json",
+      "sha256": "2cd3b027b97a4b881a841b14b93bbc284d73db109e888ff4f565d25fc005270f",
+      "review": {
+        "schema": "pe-independent-content-review-v2",
+        "reviewedAt": "2026-10-01T21:00:37.086739+00:00",
+        "reviewerRole": "Independent AI reviewer, not human SME",
+        "verdict": "scoped_pass_for_four_item_revision",
+        "blockingRevisedItemIds": [],
+        "baselineBankSha256": "f75a8517e4b09b5f172a5bb507a699c48d4c206ef48d07ea7dd4b2689458dc65",
+        "reviewedBankSha256": "e151abc123d816762a0c40fd9612dccc81aa83ec4e60fcebb2521798e8221565",
+        "changedItemIds": [
+          "PE-FIN-3B-02",
+          "PE-FIN-4B-01",
+          "PE-FIN-7A-02",
+          "PE-FIN-7C-02"
+        ],
+        "unchangedItemCount": 46,
+        "unchangedItemOrder": true,
+        "unchangedTopLevelMetadata": true,
+        "allKeysUnchanged": true,
+        "lessonModuleCategoryHashAlignment": true,
+        "revisedDistinctSourceUrlCount": 38,
+        "freshSourceUrlsChecked": [
+          "https://myhome.freddiemac.com/blog/homebuying/mortgage-underwriting",
+          "https://www.consumerfinance.gov/owning-a-home/closing-disclosure/",
+          "https://www.consumerfinance.gov/ask-cfpb/what-is-negative-amortization-en-103/",
+          "https://www.consumerfinance.gov/rules-policy/regulations/1026/40/"
+        ],
+        "sourceAssessment": "Four official URLs reopened and relevant concepts read independently. Numeric assumptions are explicitly hypothetical; sources support underlying concepts, not invented program terms.",
+        "items": [
+          {
+            "id": "PE-FIN-3B-02",
+            "key": "D",
+            "keyValue": 30000,
+            "independentArithmetic": {
+              "monthlyHousingBase": 3200,
+              "reserveRequirement": 12800,
+              "closingCapacity": 30000,
+              "substitutionResidual": 12800
+            },
+            "distractors": {
+              "A": {
+                "value": 33000,
+                "error": "Four months of P&I only"
+              },
+              "B": {
+                "value": 30520,
+                "error": "Excludes dues"
+              },
+              "C": {
+                "value": 39600,
+                "error": "One reserve month only"
+              }
+            },
+            "ambiguityReview": "One best answer. All eligible funds, reserve months, included housing components and absence of other uses are explicit hypothetical facts. No universal reserve rule or approval inferred.",
+            "taughtScope": "PE03 Unit3B Assets and debts answer different questions; C3B reserves and full housing expense. Reverse-solving is a transfer of taught arithmetic, with no new program condition asserted.",
+            "scenarioIndependence": "Improved: dependent variable is maximum closing capacity under a binding reserve constraint, rather than residual funds/shortfall given a cash-to-close amount. Housing-base assembly adds a separate diagnostic step.",
+            "verdict": "scoped_pass",
+            "allDistractorExplanationsVerified": true,
+            "sources": [
+              {
+                "url": "https://myhome.freddiemac.com/blog/homebuying/mortgage-underwriting",
+                "locator": "What Is Underwriting; Gathering and Verifying; Putting It All Together",
+                "supports": "Underwriting evaluates documented assets and lender requirements; the four-month reserve rule and every eligible-funds input are explicitly fictional exercise assumptions.",
+                "checkedOn": "2026-10-01",
+                "verificationStatus": "author_verified_official_source"
+              }
+            ]
+          },
+          {
+            "id": "PE-FIN-4B-01",
+            "key": "C",
+            "keyValue": 37200,
+            "independentArithmetic": {
+              "correctNetLedger": 37200,
+              "erroneousDraft": 35400,
+              "understatement": 1800,
+              "grossUses": 431400,
+              "grossSources": 431400
+            },
+            "distractors": {
+              "A": {
+                "value": 35400,
+                "error": "Subtracts already-netted lender credit twice"
+              },
+              "B": {
+                "value": 49200,
+                "error": "Omits paid deposit, overstates correct total by12000"
+              },
+              "D": {
+                "value": 39000,
+                "error": "Restores gross cost but denies lender credit as source"
+              }
+            },
+            "ambiguityReview": "Net label and separate seller credit explicitly prevent gross/net uncertainty. All prepaids/escrow and usable credits stipulated. Correct amount and stated1800 discrepancy both verified.",
+            "taughtScope": "PE04 Unit4B worked sources/uses reconciliation and credits/deposit once. Audit of net representation is within taught concepts.",
+            "scenarioIndependence": "Improved: detects an existing artifact error and reconciles net and gross ledgers, rather than directly calculating a public-style gross worksheet. Unlike CE F12, no tolerance baseline or nonoverlapping-credit aggregation issue.",
+            "verdict": "scoped_pass",
+            "allDistractorExplanationsVerified": true,
+            "sources": [
+              {
+                "url": "https://www.consumerfinance.gov/owning-a-home/closing-disclosure/",
+                "locator": "Cash to Close; Total Closing Costs; Lender Credits; Paid Already by or on Behalf of Borrower at Closing",
+                "supports": "Closing costs, lender credits, prior deposits and the remaining borrower contribution are distinct; the net-subtotal arithmetic is supplied by the fictional worksheet.",
+                "checkedOn": "2026-10-01",
+                "verificationStatus": "author_verified_official_source"
+              }
+            ]
+          },
+          {
+            "id": "PE-FIN-7A-02",
+            "key": "B",
+            "keyValue": [
+              700,
+              1506
+            ],
+            "independentArithmetic": {
+              "firstInterest": "1500.0000",
+              "capitalizedShortfall": 800,
+              "missingPayment": "700.0000",
+              "nextInterest": "1506.0000",
+              "nextEndIfPaid1506": "200800.0000"
+            },
+            "distractors": {
+              "A": {
+                "impliedFirstEnd": "200700.0000",
+                "error": "Confuses800 increase with payment and retains old interest base"
+              },
+              "C": {
+                "impliedFirstEnd": "200000.0000",
+                "error": "Contradicts observed200800 ending balance"
+              },
+              "D": {
+                "nextUnpaidInterest": "6.0000",
+                "error": "Correct inferred payment but next threshold understates interest by6"
+              }
+            },
+            "ambiguityReview": "Monthly opening balance, payment order and no other transactions specified. Exactly1506 stops further growth without repaying previously capitalized amount; no legal minimum-payment requirement is asserted.",
+            "taughtScope": "PE07 Unit7A negative-amortization recurrence and interest on capitalized balance. Algebraic inversion and no-growth threshold follow from the same taught model.",
+            "scenarioIndependence": "Improved: inverse ledger inference plus next-period threshold replaces forward balance projection. No CE qualifying-rate or ATR-payment calculation reused.",
+            "verdict": "scoped_pass",
+            "allDistractorExplanationsVerified": true,
+            "sources": [
+              {
+                "url": "https://www.consumerfinance.gov/ask-cfpb/what-is-negative-amortization-en-103/",
+                "locator": "Negative amortization definition",
+                "supports": "Unpaid interest can be capitalized and itself bear interest; paying all current interest prevents further interest-driven growth under the stated no-other-transactions assumptions.",
+                "checkedOn": "2026-10-01",
+                "verificationStatus": "author_verified_official_source"
+              }
+            ]
+          },
+          {
+            "id": "PE-FIN-7C-02",
+            "key": "C",
+            "keyValue": [
+              40000,
+              250
+            ],
+            "independentArithmetic": {
+              "priorPayment": "270.00",
+              "newDrawnBalance": 40000,
+              "newPayment": "250.000",
+              "balanceChange": 4000,
+              "paymentChange": -20
+            },
+            "distractors": {
+              "A": {
+                "payment": "300.00",
+                "error": "Keeps obsolete rate"
+              },
+              "B": {
+                "balance": 30000,
+                "payment": "187.500",
+                "error": "Omits new draw"
+              },
+              "D": {
+                "balance": 60000,
+                "payment": "375.000",
+                "error": "Uses undrawn credit limit as balance"
+              }
+            },
+            "ambiguityReview": "All movements precede next period, prior interest paid, no within-period changes and explicit payment method eliminate timing/day-count ambiguity. New draw is expressly permitted. No contract-general or mandated disclosure formula claimed.",
+            "taughtScope": "PE07 Unit7C W7C discusses interest-only calculation, variable rates and drawn balance versus limit. Reconciliation and payment/debt explanation apply those concepts without a new amortizing-payment formula.",
+            "scenarioIndependence": "Improved: no phase transition at all; three changed inputs cause payment/debt to move oppositely. Distinct from public unchanged-rate amortization transition.",
+            "verdict": "scoped_pass",
+            "allDistractorExplanationsVerified": true,
+            "sources": [
+              {
+                "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/40/",
+                "locator": "12 CFR 1026.40(d)(5)(ii), comment 40(d)(5)(iii)-2.i, and 1026.40(d)(12)(i)",
+                "supports": "HELOC payment methods are plan-specific; interest-only draw-period payments and payment changes from variable rates are recognized. The transaction sequence and monthly method are fictional, not a mandated disclosure calculation.",
+                "checkedOn": "2026-10-01",
+                "verificationStatus": "author_verified_official_source"
+              }
+            ]
+          }
+        ],
+        "independence": {
+          "ceReferenceCount": 64,
+          "revisedItemExactCeOrPublicMatches": [],
+          "scope": "Exact comparison plus direct conceptual comparison with preserved relevant public lessons and previously reviewed CE cases.",
+          "conclusion": "Each revision changes a decision, variable to solve, representation to audit or input sequence; earlier just-new-numbers concern is resolved within these four items. Shared taught formulas remain intentional. This is not a guarantee of global novelty or author provenance."
+        },
+        "preservedLimitations": [
+          "Unchanged PE-FIN-5D-02 live operative eCFR retrieval caveat remains. Official annual CFR/FinCEN corroboration does not claim successful live retrieval; final current-rule recheck remains.",
+          "The46 unchanged items rely on prior independent review; they were not substantively re-reviewed in this bounded pass.",
+          "Human mortgage SME, accessibility/reading-level, representative learner timing, psychometric performance and equivalent form difficulty remain unvalidated.",
+          "This pass is not NMLS/provider approval, delivery authorization, publication, banking, certificate or credit eligibility.",
+          "Author200-form/schema report was inspected but not independently rerun; no operational/security certification is made."
+        ],
+        "approvalFlagsObserved": {
+          "humanReviewed": false,
+          "sourceReviewComplete": false,
+          "creditEligible": false,
+          "bankApproval": false
+        },
+        "reviewerChangedBank": false,
+        "reviewerActivatedBank": false
+      }
+    }
+  ]
+}
