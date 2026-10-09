@@ -41,5 +41,18 @@ Ramp assumption: 25 students in the first quarter after approval, then 25 per qu
 - Capture date: 2026-09-02
 - SHA-256: `a6280d059945426dee0318ea44a1e6a13021492bfc0d2d8362f83bbd740465cf`
 
-Before filing, the budget must use the same base forecast and the final approved tuition. If course approvals are staggered, replace 600 with the sum of expected enrollments for each course's actual months on sale.
+## Freshness control
 
+**The retained numeric snapshot was captured 2026-09-02 and has not been replaced with a newer numeric export as of 2026-10-09.** TREC calculates provider passage-rate information on a recurring basis, so this draft is adequate for internal planning but must not be represented as a same-day market verification.
+
+Before the TREC provider filing:
+
+1. recapture the current official TREC provider-passage dataset;
+2. record the new coverage period, capture date and hash;
+3. compare the annual market proxy and concentration figures to this draft;
+4. revise the 100-student / 600-enrollment forecast only if the refreshed data materially changes the planning basis;
+5. carry any forecast change through `10-first-year-operating-budget.md`.
+
+The 100/600 base case remains a planning assumption, not a claim that StateCourse is approved or that those enrollments will occur.
+
+Before filing, the budget must use the same base forecast and the final approved tuition. If course approvals are staggered, replace 600 with the sum of expected enrollments for each course's actual months on sale.
