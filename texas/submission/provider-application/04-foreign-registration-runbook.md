@@ -1,25 +1,51 @@
-# Texas foreign-LLC registration runbook
+# Texas foreign-LLC registration status and runbook
 
-StateCourse LLC is a California LLC. The TREC checklist asks a corporation or LLC chartered in another state for a Texas Certificate of Fact. The clean filing path is to register the company to transact business in Texas first.
+**Applicant:** StateCourse LLC  
+**Status as of 2026-10-09:** **REGISTERED / ACTIVE FILING ACCEPTED**. A city-field correction has been requested from the filing service; do not order the final TREC-use Certificate of Fact until that correction is resolved.
 
-## Order of operations
+## Confirmed Texas filing
 
-1. Select a Texas registered agent who has consented to serve and provides a physical Texas street address.
-2. Confirm that `StateCourse LLC` is available for use in Texas; if it is not, select and register a compliant assumed name before making the TREC packet final.
-3. File Texas Secretary of State Form 304, Application for Registration of a Foreign Limited Liability Company.
-4. Use California as the jurisdiction, August 18, 2026 as the formation date, and the principal office shown in `01-prefill-facts.md`.
-5. Enter the EIN only in the private filing, never in this repository.
-6. List the actual governing person or persons and use business/mailing addresses where legally permitted, because the filing becomes public.
-7. Pay the **$750** filing fee. The SOS instructions state that card payments carry a 2.7% convenience fee.
-8. Preserve the filed evidence and file-stamped copy.
-9. Order a **Certificate of Fact — Status** through SOSDirect. The published fee is **$15**.
-10. Time the certificate so it is dated no more than 30 days before the TREC provider filing.
+- Legal name: **StateCourse LLC**
+- Entity type: Foreign Limited Liability Company
+- Texas SOS file number: **6000011119**
+- Tracking number: **15032039960001**
+- Filing date: **October 5, 2026**
+- Effective date: **October 5, 2026**
+- Formation jurisdiction: California
+- California formation date: August 18, 2026
+- Assumed/fictitious name: **none**
+- Registered agent: **Registered Agents Inc.**
+- Registered office: **5900 Balcones Dr Ste 100, Austin, TX 78731-4298**
+- Governing person: Anatoliy Kanevsky
+- Texas business start date stated on Form 304: October 5, 2026
 
-## Two Texas roles are not automatically the same
+## Principal-office correction in progress
 
-The Texas corporate registered agent receives service for the LLC. TREC's out-of-state-provider requirement also calls for a Texas resident attorney-in-fact who accepts service and acts as custodian of required Texas records under a notarized power of attorney. One provider may be able to supply both functions, but do not assume the corporate registered-agent appointment alone satisfies TREC.
+The California company record and StateCourse application facts use:
 
-## Stop conditions
+**150 E Olive Ave, Unit 112, Burbank, CA 91502**
 
-Do not submit Form 304 until the registered agent has consented and the exact public address information has been reviewed. Do not order the Certificate of Fact too early; it can expire for packet purposes before TREC receives the application.
+The filed Texas Form 304 shows the same street, unit, state and ZIP but lists the **city as Los Angeles**. The filing service was asked on 2026-10-09 to correct the city to **Burbank** at no additional charge because the submitted order information used Burbank.
 
+Until the correction is returned:
+
+- treat the Texas registration itself as accepted and effective;
+- keep **Burbank** as the canonical StateCourse principal-office city in provider materials;
+- do not copy the erroneous city into TREC forms;
+- do not order the time-sensitive Certificate of Fact for the final TREC packet.
+
+## EIN handling
+
+The public Form 304 states that the FEIN was not available at filing time. The actual EIN remains an owner-controlled/private fact supported by the IRS letter and should be entered from that evidence where TREC requests it. Do not place the EIN in this repository.
+
+## Next entity step
+
+After the city correction is confirmed, order a Texas **Certificate of Fact — Status** close enough to the TREC provider filing to satisfy the packet freshness rule. Preserve both the corrected filing evidence and the certificate outside Git.
+
+## Texas corporate agent vs. TREC resident role
+
+The Texas corporate registered agent receives service for the LLC. TREC's out-of-state-provider requirement separately calls for a Texas resident attorney-in-fact who accepts service and acts as custodian of required Texas records under a notarized power of attorney.
+
+A request was sent to the registered-agent service on 2026-10-09 asking whether it can provide a specific Texas-resident individual for that TREC role. **Pending response.**
+
+Do not assume the corporate registered-agent appointment alone satisfies the TREC attorney-in-fact / records-custodian requirement.
