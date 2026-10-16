@@ -1,6 +1,6 @@
 # Texas QE provider — final filing checklist
 
-**As of:** 2026-10-09
+**As of:** 2026-10-16
 
 Nothing is marked complete merely because a template exists. A checked item means the underlying evidence is confirmed. Items labeled **PREPARED** still require final filing review; **EXTERNAL BLOCKER** requires owner/private/vendor evidence.
 
@@ -11,15 +11,16 @@ Nothing is marked complete merely because a template exists. A checked item mean
 - [ ] Filed California Articles attached.
 - [ ] IRS EIN letter attached privately.
 - [x] Texas Form 304 registration accepted — Texas SOS File No. **6000011119**, effective **2026-10-05**.
-- [ ] Texas principal-office city correction confirmed — filed Form 304 says Los Angeles; canonical company city is Burbank; filing service correction requested 2026-10-09.
+- [ ] Texas principal-office city correction confirmed — filed Form 304 says Los Angeles; canonical company city is Burbank; filing service correction requested 2026-10-09 and follow-up sent 2026-10-16.
 - [ ] Texas Certificate of Fact — Status is no more than 30 days old — wait until city correction is resolved and filing window is close.
 - [ ] Every 10%+ owner identified; Principal Information Form attached for each required person.
 - [ ] Legal/background questions completed; supporting forms attached for every “yes”.
-- [ ] Operations Manager designated and required Principal Information Form attached.
-- [ ] Records Manager designated.
-- [ ] Authorized education-credit signer named.
-- [ ] Texas attorney-in-fact/records custodian selected — request to registered-agent service sent 2026-10-09; response pending.
-- [ ] TREC-acceptable notarized power of attorney executed.
+- [x] Operations Manager designated internally — Anatoliy Kanevsky; filing form/signature still pending.
+- [x] Records Manager designated internally — Anatoliy Kanevsky; filing form/signature still pending.
+- [x] Authorized education-credit signer designated internally — Anatoliy Kanevsky; no credit may be issued before approval.
+- [x] Texas attorney-in-fact / records custodian selected internally — **Katerina Titenko**, 4627 Wild Indigo St., Unit 613, Houston, TX 77027.
+- [x] Internal appointment / acceptance record prepared.
+- [ ] Any TREC-required power-of-attorney attachment, signature or notarization completed exactly as required by the live filing instructions.
 
 ## Financial
 
@@ -36,9 +37,9 @@ Nothing is marked complete merely because a template exists. A checked item mean
 - [ ] Tuition and every fee finalized.
 - [ ] Refund, withdrawal and dismissal policy finalized and implementable by checkout.
 - [ ] Attendance, makeup, re-exam and time limits finalized.
-- [ ] Proctoring disclosure says **not required as StateCourse policy; no proctoring fee**, unless the final application review requires a different approved method.
-- [ ] Fitness Determination notice included.
-- [ ] Provider and student signature/acceptance fields included.
+- [ ] Proctoring disclosure finalized from the live TREC application/rule set; no provider policy is to be represented as a TREC mandate.
+- [ ] Fitness Determination notice finalized.
+- [ ] Provider and student signature/acceptance fields finalized.
 - [ ] Sample advertisement names StateCourse LLC, course title and hours and makes no approval claim.
 - [ ] Instructor determination and evidence completed for each first-filed course.
 
@@ -56,7 +57,10 @@ Nothing is marked complete merely because a template exists. A checked item mean
 
 - [ ] Provider approval number received.
 - [ ] Law of Agency course application completed.
-- [ ] LOA-1 page/timestamp crosswalk, 1,500-minute outline, instructor manual, quiz/SBL evidence, four exam forms, 120-item bank, identity controls, evaluation and reviewer access assembled.
+- [x] Law of Agency submission manifest prepared.
+- [ ] LOA-1 page/timestamp crosswalk, 1,500-minute outline, instructor manual, quiz/SBL evidence, four exam forms, confidential bank, identity controls, evaluation and reviewer access assembled into the final regulator export.
+- [ ] Course-specific instructor determination finalized.
+- [ ] Protected final-exam package receives substantive human review.
 - [ ] Course fee reconciled in the live filing channel.
 - [ ] Written course approval received before the course is offered.
 
@@ -69,6 +73,7 @@ The provider package cannot be called filing-ready until the following external/
 3. operating-account evidence;
 4. separate reserve evidence showing at least $10,000;
 5. executed original $20,000 TREC bond;
-6. Texas-resident attorney-in-fact / records custodian and notarized power of attorney;
+6. any TREC-required power-of-attorney filing formalities;
 7. corrected Texas principal-office city and then a fresh Certificate of Fact;
-8. final tuition/refund/business terms needed to complete the enrollment agreement and budget.
+8. final tuition/refund/business terms needed to complete the enrollment agreement and budget;
+9. final owner/background/application signatures and review.
