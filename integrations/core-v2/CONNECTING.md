@@ -1,8 +1,10 @@
 # Connecting the prepared read-only integration
 
-The integration remains a server library, disabled by default and absent from deployed StateCourse routes. No working StateCourse schema, application/Coach code, provider account, secret, payment, progress, exam, certificate or production deployment is changed by this PR. Original Core code/services remain intact.
+The integration now includes a disabled-by-default [standalone server bridge](server/README.md), absent from deployed StateCourse routes. Its isolated SQL connector and executable assembly replace the pool placeholders below when using that service. No working StateCourse schema, application/Coach code, provider account, secret, payment, progress, exam, certificate or production deployment is changed by this PR. Original Core code/services remain intact.
 
 ## Server assembly
+
+For the runnable server, installation, configuration, cookie boundary and later proxy setup, use [server/README.md](server/README.md). The following remains the library embedding interface; it does not install a StateCourse route.
 
 Use two independently configured pools: an existing authorized **StateCourse read** source and an isolated **Core write** backend. Each lease must be exclusive, TLS-verified, and expose `query(sql, parameters): Promise<{rows, rowCount?}>` plus `release()`. Source BIGINT values must be preserved as decimal strings. Never use the copied local trust-only PostgreSQL wire transport for a hosted connection.
 
@@ -56,7 +58,7 @@ The factory reuses the existing prompt compiler, material verification, provider
 
 ## API and idempotency
 
-The [OpenAPI 1.1 contract](statecourse/openapi.json) adds UUID `Idempotency-Key` for durable POST and `GET /v1/statecourse/observations/{runId}` for saved results/status. The body still accepts only course/enrollment scope, not SQL, actor, organization, provider, model or budget.
+The [OpenAPI 1.2 contract](statecourse/openapi.json) adds UUID `Idempotency-Key` for durable POST and `GET /v1/statecourse/observations/{runId}` for saved results/status. The body still accepts only course/enrollment scope, not SQL, actor, organization, provider, model or budget.
 
 POST commits an immutable snapshot before provider execution. Completed requests save the explanation, exact field/record anchors and Core trace atomically. Repeating a completed key returns that historical result without re-reading business data or invoking providers. The same key with different scope conflicts; pending/interrupted keys are never automatically replayed. A new key is a deliberate new analysis and may incur another approved cost. GET returns only the original actor's result in the configured organization after current StateCourse reauthorization. It is not a source refresh or a human signoff.
 
@@ -66,7 +68,7 @@ The host still needs an appropriate bounded request duration and cross-replica r
 
 ## Existing StateCourse authentication boundary
 
-The future server bridge retains the existing staff/session/MFA flow and forwards the original bearer plus existing HttpOnly staff proof as `x-statecourse-staff-proof`, with the fixed configured `Origin`. Never expose the proof to browser JavaScript, local storage or logs. No CORS allowance is added.
+The prepared server bridge retains the existing staff/session/MFA flow and forwards the original bearer plus existing HttpOnly staff proof as `x-statecourse-staff-proof`, with the fixed configured `Origin`. Never expose the proof to browser JavaScript, local storage or logs. No CORS allowance is added.
 
 `createSupabaseVerifier` uses only GET `/auth/v1/user` at the fixed configured HTTPS auth origin, then consumes verified user/session/AAL/expiry claims. Authorization independently reads the current StateCourse ledger, exact-session proof and CA role using existing `statecourse_staff_private.proof_active`. It does not call mutating `statecourse_staff_security('check')`, mint/consume proofs, refresh last-seen or create audit rows. Existing authenticated flows remain responsible for proof freshness; stale/revoked/expired sessions deny both analysis and saved-result access.
 
@@ -86,4 +88,4 @@ Admin Console remains the home for StateCourse operational tasks/history, review
 
 Launch Control and regulatory/commerce readiness stay in their existing workflows. Neither a Core `completed` run nor `verified_observations` approves a course, awards credit, authorizes an exam, issues a certificate or changes a launch board.
 
-No merge/deployment is included. Branch commits and the PR title retain `[skip netlify]` per [Netlify documentation](https://docs.netlify.com/deploy/manage-deploys/manage-deploys-overview/). The added CI workflow has read-only repository permissions and only executes local tests/type checks, without deployment secrets or hosted databases. Site build/routing/deployment files and dependencies remain unchanged. Do not run copied historical rollback scripts to remove this library or its records; any future data retention/removal procedure requires its own review.
+No merge/deployment is included. Branch commits and the PR title retain `[skip netlify]` per [Netlify documentation](https://docs.netlify.com/deploy/manage-deploys/manage-deploys-overview/). The added CI workflow has read-only repository permissions and only executes local tests/type checks, without deployment secrets or hosted databases. Site build/routing/deployment files and root dependencies remain unchanged; the separate server subpackage pins its own SQL driver. Do not run copied historical rollback scripts to remove this library or its records; any future data retention/removal procedure requires its own review.

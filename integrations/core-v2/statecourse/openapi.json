@@ -2,8 +2,8 @@
   "openapi": "3.1.0",
   "info": {
     "title": "StateCourse Core V2 read-only observations",
-    "version": "1.1.0",
-    "description": "Prepared internal server contract with optional durable Core storage and gated provider runtime. Disabled by default; no production route is installed. StateCourse source remains read-only."
+    "version": "1.2.0",
+    "description": "Prepared internal server contract with optional durable Core storage and gated provider runtime. Disabled by default; no production route is installed. StateCourse source remains read-only. The prepared cookie bridge exposes the same operations under /api/admin/core/observations after a separately approved same-origin server proxy is installed."
   },
   "paths": {
     "/v1/statecourse/observations": {
@@ -279,6 +279,281 @@
           }
         }
       }
+    },
+    "/api/admin/core/observations": {
+      "post": {
+        "operationId": "explainEnrollmentObservationsThroughCookieBridge",
+        "security": [
+          {
+            "statecourseAccessCookie": [],
+            "statecourseStaffCookie": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "Origin",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Exact configured StateCourse server origin; no CORS allowance."
+          },
+          {
+            "in": "header",
+            "name": "Idempotency-Key",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            },
+            "description": "Mandatory when the durable result store is configured. Scoped to the authenticated actor and server-configured organization. Same key/scope returns the original stored result; a different scope conflicts. Pending/interrupted requests never automatically replay."
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "description": "At most 1024 bytes. Authority, tenant and SQL are never accepted in the body.",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Scope"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Point-in-time observations; inspect each verification status. no_observations is not a compliance or launch approval.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Result"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid JSON, unknown authority fields or unsupported scope",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Missing or invalid bearer/proof",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Wrong origin, expired/revoked MFA/session, role or CA scope denied",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Unknown route or enrollment outside the fixed course",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "405": {
+            "description": "POST required",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "413": {
+            "description": "Body exceeds 1024 bytes",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "415": {
+            "description": "application/json required",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Incomplete bounded source or integrity/finding limit refusal",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "429": {
+            "description": "One analysis already active in this process",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "Disabled, independent executors unavailable, source/provider failure or reauthorization unavailable",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "409": {
+            "description": "Idempotency scope conflict or existing non-replayable reserved/running/interrupted run",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "error"
+                  ],
+                  "properties": {
+                    "error": {
+                      "type": "string"
+                    },
+                    "runId": {
+                      "type": "string",
+                      "format": "uuid"
+                    },
+                    "status": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "description": "Same-origin cookie bridge. Original HttpOnly cookies only; browser-supplied Authorization and identity/proof headers are ignored. Origin is mandatory for GET and POST. No query parameters. Disabled by default; no production route installed."
+      }
+    },
+    "/api/admin/core/observations/{runId}": {
+      "get": {
+        "operationId": "getStoredObservationThroughCookieBridge",
+        "security": [
+          {
+            "statecourseAccessCookie": [],
+            "statecourseStaffCookie": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "Origin",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Exact configured StateCourse server origin; no CORS allowance."
+          },
+          {
+            "in": "path",
+            "name": "runId",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "description": "Same-origin cookie bridge. Original HttpOnly cookies only; browser-supplied Authorization and identity/proof headers are ignored. Origin is mandatory for GET and POST. No query parameters. Disabled by default; no production route installed.",
+        "responses": {
+          "200": {
+            "description": "Point-in-time observations; inspect each verification status. no_observations is not a compliance or launch approval.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Result"
+                }
+              }
+            }
+          },
+          "202": {
+            "description": "Run exists but has no completed result; no automatic retry is initiated.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RunState"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Missing or invalid bearer/proof",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Wrong origin, expired/revoked MFA/session, role or CA scope denied",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Unknown route or enrollment outside the fixed course",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "Disabled, independent executors unavailable, source/provider failure or reauthorization unavailable",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
     }
   },
   "components": {
@@ -293,6 +568,16 @@
         "in": "header",
         "name": "x-statecourse-staff-proof",
         "description": "Original 43-character HttpOnly exact-session MFA proof, forwarded only by the server bridge. Never browser storage or logs."
+      },
+      "statecourseAccessCookie": {
+        "type": "apiKey",
+        "in": "cookie",
+        "name": "__Host-sc_access"
+      },
+      "statecourseStaffCookie": {
+        "type": "apiKey",
+        "in": "cookie",
+        "name": "__Host-sc_staff"
       }
     },
     "schemas": {

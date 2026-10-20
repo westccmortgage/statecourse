@@ -5,15 +5,19 @@ Verified in the isolated PR #26 checkout with Node 22.22.3, PGlite 0.3.14 and Ty
 | Executed check | Observed result |
 | --- | --- |
 | `node integrations/core-v2/scripts/verify-upstream.mjs` | All 364 copied files match their locked SHA-256. |
-| `STATECOURSE_TEST_PGLITE=/absolute/test/tool/path bash integrations/core-v2/scripts/test.sh` | 27 adapter/API/source-SQL/storage/provider integration tests passed, 0 failed/skipped; all 20 listed upstream kernel suites completed with `ALL OK`. |
+| `STATECOURSE_TEST_PGLITE=/absolute/test/tool/path bash integrations/core-v2/scripts/test.sh` | 34 adapter/API/source-SQL/storage/provider/server integration tests passed, 0 failed/skipped; all 20 listed upstream kernel suites completed with `ALL OK`. |
 | `bash integrations/core-v2/scripts/typecheck-pack.sh` with pinned `tsc` | Passed. |
 | `bash integrations/core-v2/upstream/workers/core-v2-runner/tests/typecheck-doors.sh` with pinned `tsc` | Copied Core function/runtime imports passed. |
 | TypeScript application discovery with a negative control | Independent Core remains excluded; removing the existing boundary exposes it. |
-| Actual root ESLint configuration against integration source/scripts | Passed with no errors/warnings; unchanged upstream copy remains excluded. |
+| Actual root ESLint configuration against integration source/scripts/server | Passed with no errors/warnings; unchanged upstream copy remains excluded. |
 | Diff whitespace check scoped to new/changed integration files | Passed; upstream bytes remain unchanged. |
+
+Install the separately locked server driver first: `npm ci --prefix integrations/core-v2/server --ignore-scripts --no-audit --no-fund`. Loopback socket tests require permission to bind a local port; the initial sandbox-only HTTP attempt was denied with EPERM and was rerun successfully with local socket permission.
 
 ## Executed behavior
 
+- `npm start --prefix integrations/core-v2/server` was executed with its default disabled configuration. A real loopback HTTP request returned 503, `cache-control: no-store` and `{"error":"integration_disabled"}`; the process was then stopped.
+- The cookie bridge strips client identity headers, rejects missing/duplicate cookies and cross-site/origin/path/method violations. Actual source SQL → bridge → isolated Core storage produces saved evidence and replay without another execution; revoked proof denies retrieval. Full server assembly with separate SQL adapters records an interrupted run and returns `provider_network_disabled` without a paid call. Disabled assembly consults neither keys nor pools. A real loopback HTTP server returns the disabled no-store response. The pinned real pg driver sends only PostgreSQL SSL negotiation and refuses an endpoint declining TLS before any credential exchange. Connector tests verify strict SSL configuration, source read-only startup settings, lazy/exclusive leases and wrong-target refusal.
 - Actual StateCourse migration SQL and existing exact-session MFA/ledger functions are exercised locally. Wrong actor/session/jurisdiction, revoked/expired/stale proof, missing verified factor/session and reviewer elevation are denied. A deliberate UPDATE inside the source reader's transaction is rejected by PostgreSQL and observed enrollment rows remain unchanged.
 - A separate Core PGlite database applies the complete copied original Core migration history and new storage migration. The API then runs from **actual StateCourse SQL/MFA** through a durable snapshot, actual Core SQL orchestration, actual provider protocols with local HTTP answers, atomic budget reservations, independent critic assessment and immutable saved explanation/anchors/trace. Revoking the source proof afterwards denies GET of the saved result. Passing the source connection accidentally as the Core writer is refused, with no additional provider call or enrollment change.
 - A file-backed database is actually closed and reopened. A fresh store/API instance retrieves the identical result, evidence, digest and lifecycle. Repeating the same key does not recapture source data or call providers; a changed scope conflicts. Cross-actor/organization reads are denied. Interrupted work stays non-replayable.

@@ -21,6 +21,8 @@ jobs:
           node-version: '22'
       - name: Install isolated test tooling (no runtime dependency change)
         run: npm install --prefix "$RUNNER_TEMP/core-v2-tests" --ignore-scripts --no-audit --no-fund @electric-sql/pglite@0.3.14 typescript@5.9.3
+      - name: Install isolated Core server SQL driver
+        run: npm ci --prefix integrations/core-v2/server --ignore-scripts --no-audit --no-fund
       - name: Verify copy and read-only integration against local PostgreSQL
         env:
           STATECOURSE_TEST_PGLITE: ${{ runner.temp }}/core-v2-tests/node_modules/@electric-sql/pglite/dist/index.js
