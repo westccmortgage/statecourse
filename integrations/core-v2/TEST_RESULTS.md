@@ -62,3 +62,7 @@ The exact 79-file package was additionally executed on disposable native Postgre
 ## Approved hosted installation — separate from test fixtures
 
 After explicit approval, the exact package was applied to hkzhburprkwtnoeqbinh only. Managed migration history and live read-only catalogs confirm the initial schema, private forced RLS and role attributes, with zero workflows/budgets/organizations and no configured runner. Security/performance advisors were executed and their RPC-permission findings block activation. No hosted fixture/business writes, source changes, worker enablement, provider calls or deployment were performed. See [APPLIED.md](installation/APPLIED.md).
+
+## Final hosted transport release
+
+The complete background release is published through standard remote Netlify build 6ad6f4cd2748d0262e01f1cb / deploy 6ad6f4cd2748d0262e01f1cd from source 174e4a0. CI [39372064383](https://github.com/westccmortgage/statecourse/actions/runs/39372064383) passed for that exact source. After merging the latest published Coach UI change unchanged, 86 existing DOM/SQL tests passed with no skips using isolated linkedom/PGlite tooling. Live HTTP/API evidence and the incomplete hosted credential/activation requirements are in [DEPLOYMENT.md](server/DEPLOYMENT.md). The current receipt supersedes earlier hosting/failure snapshots; no earlier failed publication counts as success.
