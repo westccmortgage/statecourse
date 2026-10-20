@@ -2,7 +2,7 @@ import { stripeSecretKeyMode } from "../../../lib/stripe-contract.mjs";
 
 export function stripeEnvironment() {
   const mode = process.env.STRIPE_MODE === "live" ? "live" : "test";
-  const secretKey = String(mode === "live" ? process.env.STRIPE_SECRET_KEY_LIVE : process.env.STRIPE_SECRET_KEY_TEST || "").trim();
+  const secretKey = String(mode === "live" ? process.env.STRIPE_SECRET_KEY_LIVE : process.env.STRIPE_SECRET_KEY_TEST || "");
   const webhookSecret = String(mode === "live" ? process.env.STRIPE_WEBHOOK_SECRET_LIVE : process.env.STRIPE_WEBHOOK_SECRET_TEST || "").trim();
 
   if (mode === "live" && process.env.STATECOURSE_LIVE_PAYMENTS_ENABLED !== "true") {

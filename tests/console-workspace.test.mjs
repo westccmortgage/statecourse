@@ -1,3 +1,4 @@
+import { STAFF_COOKIE as CURRENT_TEST_COOKIE } from './fixtures/admin-console/harness.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { createStore, withConsoleMock, STAFF_ID } from './fixtures/admin-console/harness.mjs';
@@ -8,7 +9,7 @@ import { baseFingerprint, validateDraft, contentHash, overlayText, contentForEnr
 const COURSE='ca-real-estate-principles-45';
 const structure=courseStructure(COURSE), unit=structure.units[0], screen=unit.blocks[0].screens.find(s=>s.type==='instruction');
 const draft=()=>({baseFingerprint:baseFingerprint(COURSE),overrides:[{deliveryId:unit.id,screenId:screen.id,title:'Updated instruction',bodyMarkdown:'The reviewed teaching text for this instruction screen.'}]});
-const request=(view,{body,cookie=true,origin='https://statecourse.test'}={})=>new Request('https://statecourse.test/api/admin/workspace?'+new URLSearchParams(view),{method:body?'POST':'GET',headers:{...(cookie?{cookie:'__Host-sc_access=named-session-token'}:{}),origin,'content-type':'application/json'},...(body?{body:JSON.stringify(body)}:{})});
+const request=(view,{body,cookie=true,origin='https://statecourse.test'}={})=>new Request('https://statecourse.test/api/admin/workspace?'+new URLSearchParams(view),{method:body?'POST':'GET',headers:{...(cookie?{cookie:CURRENT_TEST_COOKIE}:{}),origin,'content-type':'application/json'},...(body?{body:JSON.stringify(body)}:{})});
 async function mock(store,action){const previous=globalThis.Netlify;globalThis.Netlify={env:{get:k=>process.env[k]}};try{return await withConsoleMock(store,action);}finally{globalThis.Netlify=previous;}}
 
 test('workspace rejects unauthenticated requests without revealing any datasets',async()=>{

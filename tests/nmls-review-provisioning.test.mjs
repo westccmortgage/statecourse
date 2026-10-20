@@ -21,15 +21,15 @@ function api({ existing = null, missingAccount = false, missingStudent = false, 
   } };
 }
 test('review grant dry run makes zero network calls and needs no credentials', async () => {
-  const plan = await provisionReviewGrant(options(), { now, env: {}, fetcher: () => { throw new Error('must not call'); } });
+  const plan = await provisionReviewGrant(options(), { now, clock: () => now, env: {}, fetcher: () => { throw new Error('must not call'); } });
   assert.equal(plan.operation, 'plan_only_no_network'); assert.equal(plan.grant.access_mode, 'non_credit_review');
   assert.match(plan.grant.content_digest, /^[a-f0-9]{64}$/); assert.match(plan.studyUrl, /^https:\/\/statecourse.com\/student\/nmls-review\//);
 });
 test('grant apply requires explicit authority confirmation and verified project before network', async () => {
   const input = options(); let calls = 0;
   const fetcher = () => { calls++; throw new Error('unexpected'); };
-  await assert.rejects(() => provisionReviewGrant({ ...input, apply: true }, { now, env, fetcher }), /apply_confirmation_required/);
-  await assert.rejects(() => provisionReviewGrant({ ...input, apply: true, 'confirm-private-review-grant': true }, { now, env: { ...env, SUPABASE_URL: 'https://attacker.test' }, fetcher }), /project_mismatch/);
+  await assert.rejects(() => provisionReviewGrant({ ...input, apply: true }, { now, clock: () => now, env, fetcher }), /apply_confirmation_required/);
+  await assert.rejects(() => provisionReviewGrant({ ...input, apply: true, 'confirm-private-review-grant': true }, { now, clock: () => now, env: { ...env, SUPABASE_URL: 'https://attacker.test' }, fetcher }), /project_mismatch/);
   assert.equal(calls, 0);
 });
 test('expired and indefinite/over90-day grants are rejected', async () => {
@@ -39,7 +39,7 @@ test('expired and indefinite/over90-day grants are rejected', async () => {
 });
 test('apply verifies existing identities and students, writes one grant and reads it back', async () => {
   const fixture = api(); const input = { ...options(), apply: true, 'confirm-private-review-grant': true };
-  const receipt = await provisionReviewGrant(input, { now, env, fetcher: fixture.fetcher });
+  const receipt = await provisionReviewGrant(input, { now, clock: () => now, env, fetcher: fixture.fetcher });
   assert.equal(receipt.result, 'private_grant_created_and_verified'); assert.equal(fixture.created.student_id, input['student-id']);
   const writes = fixture.calls.filter((c) => c.method === 'POST' && !c.path.includes('/rpc/'));
   assert.equal(writes.length, 1); assert.equal(writes[0].path, '/rest/v1/nmls_review_access_grants');
@@ -48,7 +48,7 @@ test('apply verifies existing identities and students, writes one grant and read
 test('missing/mismatched account or missing student prevents all grant writes', async () => {
   for (const fixtureOptions of [{ missingAccount: true }, { wrongIdentity: true }, { missingStudent: true }]) {
     const fixture = api(fixtureOptions);
-    await assert.rejects(() => provisionReviewGrant({ ...options(), apply: true, 'confirm-private-review-grant': true }, { now, env, fetcher: fixture.fetcher }), /existing_verified_account_required|student_record_required/);
+    await assert.rejects(() => provisionReviewGrant({ ...options(), apply: true, 'confirm-private-review-grant': true }, { now, clock: () => now, env, fetcher: fixture.fetcher }), /existing_verified_account_required|student_record_required/);
     assert.equal(fixture.created, undefined);
   }
 });
@@ -56,7 +56,7 @@ test('identical duplicate is safe; changed/revoked/content-mismatched grant is n
   const input = options(); const plan = await provisionReviewGrant(input, { now });
   for (const changed of [{}, { status: 'revoked' }, { content_digest: 'e'.repeat(64) }, { student_id: randomUUID() }, { evidence: 'Different authority' }]) {
     const fixture = api({ existing: { ...plan.grant, ...changed } });
-    const operation = provisionReviewGrant({ ...input, apply: true, 'confirm-private-review-grant': true }, { now, env, fetcher: fixture.fetcher });
+    const operation = provisionReviewGrant({ ...input, apply: true, 'confirm-private-review-grant': true }, { now, clock: () => now, env, fetcher: fixture.fetcher });
     if (!Object.keys(changed).length) assert.equal((await operation).result, 'existing_identical_grant_verified');
     else await assert.rejects(() => operation, /existing_grant_conflict/);
     assert.equal(fixture.created, undefined);
@@ -64,7 +64,7 @@ test('identical duplicate is safe; changed/revoked/content-mismatched grant is n
 });
 test('read-back failure is not reported as success and raw errors never expose secrets', async () => {
   const fixture = api({ brokenReadback: true });
-  await assert.rejects(() => provisionReviewGrant({ ...options(), apply: true, 'confirm-private-review-grant': true }, { now, env, fetcher: fixture.fetcher }), /grant_readback_failed/);
+  await assert.rejects(() => provisionReviewGrant({ ...options(), apply: true, 'confirm-private-review-grant': true }, { now, clock: () => now, env, fetcher: fixture.fetcher }), /grant_readback_failed/);
   assert.equal(publicProvisionError(new Error('password=private host=10.0.0.1')), 'review_provision_unavailable');
 });
 

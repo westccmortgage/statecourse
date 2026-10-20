@@ -295,7 +295,7 @@ test("a replacement naming the wrong asset is refused", { concurrency: false }, 
 
 test("a state-scoped viewer cannot read another state's screens by editing course_id", { concurrency: false }, async () => {
   const store = createStore();
-  store.bindings[0] = { ...store.bindings[0], actor_role: "regulator_reviewer", scope_state: "MI" };
+  store.bindings[0] = { ...store.bindings[0], actor_role: "administrator", scope_state: "MI" };
   await withConsoleMock(store, async () => {
     const response = await videoHandler(getEvent({ course_id: COURSE_ID }));
     assert.equal(response.statusCode, 403);
@@ -317,16 +317,16 @@ test("an unscoped viewer still gets the screen structure", { concurrency: false 
 test("one role holds two state scopes at once", { concurrency: false }, async () => {
   const store = createStore();
   store.bindings = [
-    { auth_user_id: STAFF_ID, actor_role: "regulator_reviewer", scope_state: "TX",
+    { auth_user_id: STAFF_ID, actor_role: "administrator", scope_state: "TX",
       binding_status: "active", effective_at: "2026-01-01T00:00:00.000Z", expires_at: null,
       recorded_at: "2026-01-01T00:00:00.000Z" },
     /* Granted later. Under the old key this replaced Texas outright and nobody was told. */
-    { auth_user_id: STAFF_ID, actor_role: "regulator_reviewer", scope_state: "MI",
+    { auth_user_id: STAFF_ID, actor_role: "administrator", scope_state: "MI",
       binding_status: "active", effective_at: "2026-02-01T00:00:00.000Z", expires_at: null,
       recorded_at: "2026-02-01T00:00:00.000Z" },
   ];
   await withConsoleMock(store, async () => {
-    const staff = await requireStaff(getEvent(), ["regulator_reviewer"]);
+    const staff = await requireStaff(getEvent(), ["administrator"]);
     assert.deepEqual([...staff.scopeStates].sort(), ["MI", "TX"]);
     const body = JSON.parse((await catalogHandler(getEvent())).body);
     assert.deepEqual([...body.viewer.scopeStates].sort(), ["MI", "TX"]);
@@ -337,18 +337,18 @@ test("one role holds two state scopes at once", { concurrency: false }, async ()
 test("revoking one state scope leaves the other standing", { concurrency: false }, async () => {
   const store = createStore();
   store.bindings = [
-    { auth_user_id: STAFF_ID, actor_role: "regulator_reviewer", scope_state: "TX",
+    { auth_user_id: STAFF_ID, actor_role: "administrator", scope_state: "TX",
       binding_status: "active", effective_at: "2026-01-01T00:00:00.000Z", expires_at: null,
       recorded_at: "2026-01-01T00:00:00.000Z" },
-    { auth_user_id: STAFF_ID, actor_role: "regulator_reviewer", scope_state: "MI",
+    { auth_user_id: STAFF_ID, actor_role: "administrator", scope_state: "MI",
       binding_status: "active", effective_at: "2026-02-01T00:00:00.000Z", expires_at: null,
       recorded_at: "2026-02-01T00:00:00.000Z" },
-    { auth_user_id: STAFF_ID, actor_role: "regulator_reviewer", scope_state: "MI",
+    { auth_user_id: STAFF_ID, actor_role: "administrator", scope_state: "MI",
       binding_status: "revoked", effective_at: "2026-03-01T00:00:00.000Z", expires_at: null,
       recorded_at: "2026-03-01T00:00:00.000Z" },
   ];
   await withConsoleMock(store, async () => {
-    const staff = await requireStaff(getEvent(), ["regulator_reviewer"]);
+    const staff = await requireStaff(getEvent(), ["administrator"]);
     assert.deepEqual(staff.scopeStates, ["TX"]);
   });
 });

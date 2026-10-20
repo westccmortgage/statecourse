@@ -289,7 +289,7 @@ test("a generic network failure cannot borrow a manual reading to appear locked"
     const testLock = {
       jurisdiction: "Georgia",
       version: "GA-PHASE0-2026-09-02-v997",
-      verified_as_of: "2026-09-02",
+      verified_as_of: new Date().toISOString().slice(0, 10),
       maximum_age_days: 45,
       allowed_domains: ["127.0.0.1"],
       release_gates: { filing: "CLOSED", enrollment: "CLOSED" },
@@ -300,7 +300,7 @@ test("a generic network failure cannot borrow a manual reading to appear locked"
         url: "https://127.0.0.1:1/unreachable",
         kind: "html",
         expected: { minimumBytes: 1, mimeTypes: ["text/html"], requiredPhrases: ["one", "two"] },
-        manualVerification: { status: "verified", date: "2026-09-02", method: "test fixture" },
+        manualVerification: { status: "verified", date: new Date().toISOString().slice(0, 10), method: "test fixture" },
         materialClaims: [{ id: "test-network-claim", locator: "test", claim: "test", reliedOnBy: ["georgia/PHASE-0-REPORT.md"] }],
       }],
     };
@@ -323,7 +323,7 @@ test("a binary final URL outside the official allowlist breaks the lock", () => 
     const testLock = {
       jurisdiction: "Georgia",
       version: "GA-PHASE0-2026-09-02-v996",
-      verified_as_of: "2026-09-02",
+      verified_as_of: new Date().toISOString().slice(0, 10),
       maximum_age_days: 45,
       allowed_domains: ["grec.state.ga.us"],
       release_gates: { filing: "CLOSED", enrollment: "CLOSED" },
@@ -335,7 +335,7 @@ test("a binary final URL outside the official allowlist breaks the lock", () => 
         finalUrl: "https://example.com/test.pdf",
         kind: "binary",
         expected: { sha256: "0".repeat(64), bytes: 1, minimumBytes: 1, mimeTypes: ["application/pdf"], magicHex: "25" },
-        manualVerification: { status: "verified", date: "2026-09-02", method: "test fixture" },
+        manualVerification: { status: "verified", date: new Date().toISOString().slice(0, 10), method: "test fixture" },
         materialClaims: [{ id: "test-redirect-claim", locator: "test", claim: "test", reliedOnBy: ["georgia/PHASE-0-REPORT.md"] }],
       }],
     };
@@ -360,7 +360,7 @@ test("content drift produces BROKEN and leaves filing/commerce gates closed", ()
     const testLock = {
       jurisdiction: "Georgia",
       version: "GA-PHASE0-2026-09-02-v999",
-      verified_as_of: "2026-09-02",
+      verified_as_of: new Date().toISOString().slice(0, 10),
       maximum_age_days: 45,
       allowed_domains: ["grec.state.ga.us"],
       release_gates: { filing: "CLOSED", enrollment: "CLOSED" },
@@ -372,7 +372,7 @@ test("content drift produces BROKEN and leaves filing/commerce gates closed", ()
         finalUrl: "https://grec.state.ga.us/test-fixture.pdf",
         kind: "binary",
         expected: { sha256: "0".repeat(64), bytes: fixture.length, minimumBytes: 1, mimeTypes: ["application/pdf"], magicHex: "25504446" },
-        manualVerification: { status: "verified", date: "2026-09-02", method: "test fixture" },
+        manualVerification: { status: "verified", date: new Date().toISOString().slice(0, 10), method: "test fixture" },
         materialClaims: [{ id: "test-claim", locator: "test", claim: "test", reliedOnBy: ["georgia/PHASE-0-REPORT.md"] }],
       }],
     };
@@ -397,7 +397,7 @@ test("soft-404 HTML produces BROKEN even when HTTP and phrases appear valid", ()
     const testLock = {
       jurisdiction: "Georgia",
       version: "GA-PHASE0-2026-09-02-v998",
-      verified_as_of: "2026-09-02",
+      verified_as_of: new Date().toISOString().slice(0, 10),
       maximum_age_days: 45,
       allowed_domains: ["grec.state.ga.us"],
       release_gates: { filing: "CLOSED", enrollment: "CLOSED" },
@@ -408,7 +408,7 @@ test("soft-404 HTML produces BROKEN even when HTTP and phrases appear valid", ()
         url: "https://grec.state.ga.us/test-fixture",
         kind: "html",
         expected: { minimumBytes: 1, mimeTypes: ["text/html"], requiredPhrases: ["Page", "Not Found"] },
-        manualVerification: { status: "verified", date: "2026-09-02", method: "test fixture" },
+        manualVerification: { status: "verified", date: new Date().toISOString().slice(0, 10), method: "test fixture" },
         materialClaims: [{ id: "test-claim", locator: "test", claim: "test", reliedOnBy: ["georgia/PHASE-0-REPORT.md"] }],
       }],
     };

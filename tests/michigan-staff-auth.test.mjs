@@ -1,3 +1,4 @@
+import { NAMED_SESSION, STAFF_COOKIE } from './fixtures/admin-console/harness.mjs';
 import assert from "node:assert/strict";
 import test from "node:test";
 
@@ -30,9 +31,11 @@ async function withSupabaseMock({ role = "instructor" } = {}, action) {
     const call = { url, init, body: init.body ? JSON.parse(init.body) : null };
     calls.push(call);
     if (url.pathname === "/auth/v1/user") {
-      assert.equal(init.headers.authorization, "Bearer named-session-token");
-      return json({ id: STAFF_ID, email: "named.staff@example.test", user_metadata: {} });
+      assert.equal(init.headers.authorization, `Bearer ${NAMED_SESSION}`);
+      return json({ id: STAFF_ID, email: "named.staff@example.test", email_confirmed_at: "2026-01-01T00:00:00Z", user_metadata: {} });
     }
+    if (url.pathname === "/rest/v1/rpc/statecourse_staff_security") return json({ok:true});
+    if (url.pathname === "/rest/v1/current_staff_actor_bindings") return json([{auth_user_id:STAFF_ID,actor_role:role,scope_state:'MI',binding_status:'active'}]);
     if (url.pathname === "/rest/v1/students") return json(null);
     if (url.pathname === "/rest/v1/michigan_current_staff_actor_bindings") {
       return json([{
@@ -64,8 +67,10 @@ async function withSupabaseMock({ role = "instructor" } = {}, action) {
 function postEvent(body) {
   return {
     httpMethod: "POST",
+    path: "/api/admin/michigan-course",
     headers: {
-      cookie: "__Host-sc_access=named-session-token",
+      cookie: STAFF_COOKIE,
+      "x-statecourse-action-proof":"a".repeat(43),
       origin: "https://statecourse.test",
     },
     queryStringParameters: {},
@@ -111,7 +116,7 @@ test("browser-supplied actor identities are rejected before staff lookup or RPC"
     assert.equal(response.statusCode, 400);
     assert.deepEqual(JSON.parse(response.body), { error: "browser_actor_identity_not_accepted" });
     assert.equal(calls.some((call) => call.url.pathname.includes("michigan_current_staff_actor_bindings")), false);
-    assert.equal(calls.some((call) => call.url.pathname.includes("/rpc/")), false);
+    assert.equal(calls.some((call) => call.url.pathname.includes("/rpc/") && !call.url.pathname.endsWith("/statecourse_staff_security")), false);
   });
 });
 
@@ -144,6 +149,6 @@ test("an administrator account cannot act as the memo-review instructor", { conc
     }));
     assert.equal(response.statusCode, 403);
     assert.deepEqual(JSON.parse(response.body), { error: "michigan_named_staff_binding_required" });
-    assert.equal(calls.some((call) => call.url.pathname.includes("/rpc/")), false);
+    assert.equal(calls.some((call) => call.url.pathname.includes("/rpc/") && !call.url.pathname.endsWith("/statecourse_staff_security")), false);
   });
 });

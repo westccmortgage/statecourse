@@ -1,5 +1,9 @@
 # Real Estate State Rollout Board
 
+## Uploaded DRE evidence — 2026-10-20
+
+All three uploaded California application volumes contain course-specific college-equivalence letters on page 14, with letterhead and visible signatures checked. Historical “letters absent” statements are superseded; acceptance is unverified. Uploaded copies retain pre-filing access/signature/date completion instructions and do not establish the final mailed set. Owner-reported DRE and separate NMLS submissions remain under review. See [package review](../../audits/DRE-UPLOADED-PACKAGES-2026-10-20.md). No launch or approval flags changed.
+
 ## Owner update — 2026-10-19 (supersedes submission entries below)
 
 The owner confirms California DRE is the **only submitted Real Estate state package** and is **under review**. Submission date, application numbers and receipt have not been supplied in this task. Record this as **OWNER-REPORTED SUBMITTED / UNDER REVIEW**, not regulator-verified approval. Florida is waiting on the owner's **personal broker application**; no school/course approval follows from that statement. Other historical state rows remain repository evidence, not a fresh regulator check.

@@ -195,7 +195,7 @@ test("the report counts what it found and does not round it into a headline", { 
   });
 });
 
-test("nothing in the catalog path writes to the database", { concurrency: false }, async () => {
+test("catalog path writes only session, audit and security accounting, never catalog records", { concurrency: false }, async () => {
   await withConsoleMock(createStore(), async (calls) => {
     await catalogHandler(getEvent());
     const writes = calls.filter((call) => call.url.pathname.startsWith("/rest/v1/")
@@ -203,7 +203,8 @@ test("nothing in the catalog path writes to the database", { concurrency: false 
       /* The session upsert and the audit row are the two writes the request makes, and
          neither touches a catalog record. */
       && !call.url.pathname.endsWith("/students")
-      && !call.url.pathname.endsWith("/admin_console_actions"));
+      && !call.url.pathname.endsWith("/admin_console_actions")
+      && !(call.url.pathname.endsWith("/rpc/statecourse_staff_security") && ["rate","check","audit"].includes(call.body?.op)));
     assert.deepEqual(writes.map((call) => `${call.method} ${call.url.pathname}`), []);
   });
 });

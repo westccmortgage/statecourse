@@ -1,5 +1,9 @@
 # StateCourse Master Launch Dashboard
 
+## Uploaded DRE evidence — 2026-10-20
+
+All three uploaded California application volumes contain course-specific college-equivalence letters on page 14, with letterhead and visible signatures checked. Historical “letters absent” statements are superseded; acceptance is unverified. Uploaded copies retain pre-filing access/signature/date completion instructions and do not establish the final mailed set. Owner-reported DRE and separate NMLS submissions remain under review. See [package review](../audits/DRE-UPLOADED-PACKAGES-2026-10-20.md). No launch or approval flags changed.
+
 ## Current owner-reported update — 2026-10-19
 
 California DRE and the separate NMLS package are **submitted / under review**, as confirmed by the owner in this task. This supersedes historical "not submitted" and "waiting for initial access" assumptions below; no regulator approval was verified. Florida is waiting on the owner's personal broker application, distinct from school/course authorization. Dates/IDs/receipts remain to be recorded.

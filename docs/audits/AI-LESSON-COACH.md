@@ -100,3 +100,7 @@ LEARNING_COACH_TEST_PLAYWRIGHT=/absolute/path/to/playwright/index.mjs node scrip
 ```
 
 The local helper always disables AI calls. The browser verifier tests the real unavailable handler first, then intercepts the coach route with a visibly labelled synthetic UI fixture; it cannot establish live provider quality. Screenshots are written to `work/coach-browser/` and contain no real learner data.
+
+## Provider comparison extension — 2026-10-20
+
+An isolated [OpenAI/Gemini comparison project](../../experiments/lesson-coach/README.md) now reuses the pilot response schema and identical system instructions for both providers. Twelve synthetic cases cover misconceptions, arithmetic, refusals, unsupported jurisdictions, injection and Russian explanations. The public coach remains disabled and OpenAI-only; the Gemini adapter is confined to this local experiment. No live provider response has yet been obtained: both keys are present, but the environment proxy rejects API connectivity. See [continuation record](CONTINUATION-2026-10-20.md).
