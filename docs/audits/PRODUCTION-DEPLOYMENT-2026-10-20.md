@@ -2,12 +2,13 @@
 
 ## Current result — functional pilot verified, broader gates remain open
 
-Production code commit **`bf0433a4d7cc1fafa2f370fc43ced76142fcf36c`** is published in Netlify deploy **`6ad6e8e5ebf75c110bf19d98`**, main/production, ready, published **2026-10-20T04:07:37.481Z**. Netlify published-deploy UI and connector agree. This includes the settings fix f042f4d, source-distinction/refusal prompt correction8209b03 and current Gemini thinking-control compatibility. The latest protected `/admin/console/build.json` redirects to staff sign-in after MFA expiry; direct JSON verification of this new revision remains unverified. The older bd8319e JSON readback below is historical.
+Production code commit **`bf0433a4d7cc1fafa2f370fc43ced76142fcf36c`** is published in Netlify deploy **`6ad6e8e5ebf75c110bf19d98`**, main/production, ready, published **2026-10-20T04:07:37.481Z**. Netlify published-deploy UI and connector agree. This includes the settings fix f042f4d, source-distinction/refusal prompt correction8209b03 and current Gemini thinking-control compatibility. After the owner restored staff access at approximately21:26 Los Angeles, authenticated `/admin/console/build.json` directly confirmed commit `bf0433a4d7cc1fafa2f370fc43ced76142fcf36c`, branch `main`, context `production`, builtAt `2026-10-20T04:07:15Z`. This closes the direct protected-build verification gate. The older bd8319e JSON readback below is historical.
 
 The coach is enabled with **OpenAI / gpt-4.1-mini as the restored default**, exact origin https://statecourse.com, conservative input/output reservation ceilings $0.40/$1.60 per million, and a **shared $1/day cap (UTC accounting day)**. Configuration is in the RLS-protected service-only settings row, avoiding extra Lambda environment entries. Existing OpenAI/Gemini credentials are unchanged and real generation authenticated both. Gemini/gemini-3.5-flash-lite also succeeded, temporarily using input0.4/output2.5 ceilings before restoring OpenAI/output1.6. Official standard Gemini 3.5 Flash-Lite rates are $0.30/$2.50 per million: https://ai.google.dev/gemini-api/docs/pricing. No account/key creation or connection change was needed.
 
 | Production acceptance | Observed result |
 | --- | --- |
+| Authenticated served build | Protected build.json directly matches bf0433a / main / production, builtAt2026-10-20T04:07:15Z, after owner reauthentication |
 | Real Estate OpenAI | Genuine fixture/personal-property and joint-tenancy explanations; source disclosures expand to the matching current lesson text |
 | Mortgage OpenAI | Genuine answer in the existing owner's first non-credit unit; manual review detected a legal-term conflation, prompting a shared instruction correction and repeated sample |
 | Gemini current model | Genuine source-grounded Real Estate concurrent-ownership and Mortgage application/TRID explanations; original Mortgage question distinguishes the two triggers without the earlier conflation |
@@ -22,7 +23,7 @@ The coach is enabled with **OpenAI / gpt-4.1-mini as the restored default**, exa
 
 Validation of the final code: 43 targeted settings/coach/provider/private-endpoint tests plus the real embedded PGlite SQL test passed (**44 targeted, 0 skipped**). Negative cases reject forbidden settings/credential overrides, invalid budgets/types/SQL keys, unauthorized or changed contexts and revoked access in isolation. `bash site/build.sh` passed with 284 public lessons, 45 private units, 6,666 chunks, zero private artifact violations and all 5 answer-key protection tests; `git diff --check` passed. **Lint remains unverified: eslint is absent.** No dependency was installed or changed.
 
-**Remaining unverified:** latest protected build.json after staff MFA reauthentication; revocation of an actual production enrollment (isolated revocation/late-answer suppression tests passed; the owner's enrollment was not revoked); portfolio-wide semantic quality, learning effectiveness and regulatory acceptance. Responses are manually reviewed samples, not proof every generated statement is correct. Old Gemini2.5 failure's upstream cause is not identified; current3.5 succeeds with the same existing key. No regulated launch readiness or provider/course approval is inferred.
+**Remaining unverified:** revocation of an actual production enrollment (isolated revocation/late-answer suppression tests passed; the owner's enrollment was not revoked); portfolio-wide semantic quality, learning effectiveness and regulatory acceptance. Responses are manually reviewed samples, not proof every generated statement is correct. Old Gemini2.5 failure's upstream cause is not identified; current3.5 succeeds with the same existing key. No regulated launch readiness or provider/course approval is inferred.
 
 Evidence files remain in `work/coach-browser/`: `live-coach-results.json`, `live-openai-real-estate-final-desktop.jpg`, `live-gemini-mortgage-mobile.jpg`, and `live-gemini-real-estate-mobile.png`. The wrongly scaled Real Estate .jpg is superseded by the exact390×844 .png. Previous configuration/scope/fingerprints and rollback records follow below. Rollback disables only the coach settings row, preserves accounting and leaves unrelated production configuration unchanged; protected originals are recoverable outside Git.
 
@@ -172,3 +173,8 @@ Next bounded compatibility check uses gemini-3.5-flash-lite, the official curren
 
 
 Publication used the connected GitHub API with an expected-parent lease because local .git is read-only. Local HEAD remains bd8319e; the working files contain the published patches and this evidence. This is a local checkout metadata limitation, not an unpublished production fix.
+
+
+### Staff access restoration — October19,2026,21:26 Los Angeles
+
+Owner restored the existing staff session. The console visibly identifies the owner role. Direct authenticated build.json readback now matches the published coach code commit and production context, with the JSON and screenshot retained in `work/coach-browser/production-build-authenticated-20261020.txt` and `.jpg`. This was a read-only verification; no enrollment, user access, payment, approval or production setting changed. ESLint is still absent in the checkout and test-tools directory; lint remains unverified. Actual enrollment revocation and portfolio-wide response quality remain open.
