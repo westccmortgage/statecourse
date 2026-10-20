@@ -51,3 +51,7 @@ For Core, apply the ordered existing Core schema prerequisites and then the isol
 ## Verification
 
 The common test command in [TEST_RESULTS.md](../TEST_RESULTS.md) now also installs this subpackage and exercises cookie/header isolation, SQL target refusal, the disabled application, complete source → Core storage flow, revoked proof denial, the assembled no-paid-call path, real loopback HTTP, and the real pg driver's refusal of an endpoint declining TLS. SQL fixtures are local PGlite databases. This does not prove successful TLS/authentication or source grants on a hosted database, real provider quality, or production proxy behavior.
+
+## Read-only catalog preflight
+
+`npm run check:connections --prefix integrations/core-v2/server` refuses unless the operator explicitly sets `CORE_V2_PREFLIGHT_ALLOW_NETWORK=true`, supplies both approved database targets and organization, and keeps both provider/paid gates off. It uses read-only transactions and EXPLAIN without ANALYZE, emits sanitized named checks and never migrates or grants. A passing catalog report is not an RLS completeness, session authorization or provider-worker permission test; it always reports activation unverified. See [ACTIVATION_REVIEW.md](../ACTIVATION_REVIEW.md) for observed inventory, source-ledger RLS blockers and the proposed separate Supabase target. Do not run it on hosted targets before access/binding approval.

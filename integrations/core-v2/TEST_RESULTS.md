@@ -5,7 +5,7 @@ Verified in the isolated PR #26 checkout with Node 22.22.3, PGlite 0.3.14 and Ty
 | Executed check | Observed result |
 | --- | --- |
 | `node integrations/core-v2/scripts/verify-upstream.mjs` | All 364 copied files match their locked SHA-256. |
-| `STATECOURSE_TEST_PGLITE=/absolute/test/tool/path bash integrations/core-v2/scripts/test.sh` | 34 adapter/API/source-SQL/storage/provider/server integration tests passed, 0 failed/skipped; all 20 listed upstream kernel suites completed with `ALL OK`. |
+| `STATECOURSE_TEST_PGLITE=/absolute/test/tool/path bash integrations/core-v2/scripts/test.sh` | 37 adapter/API/source-SQL/storage/provider/server integration tests passed, 0 failed/skipped; all 20 listed upstream kernel suites completed with `ALL OK`. |
 | `bash integrations/core-v2/scripts/typecheck-pack.sh` with pinned `tsc` | Passed. |
 | `bash integrations/core-v2/upstream/workers/core-v2-runner/tests/typecheck-doors.sh` with pinned `tsc` | Copied Core function/runtime imports passed. |
 | TypeScript application discovery with a negative control | Independent Core remains excluded; removing the existing boundary exposes it. |
@@ -15,6 +15,8 @@ Verified in the isolated PR #26 checkout with Node 22.22.3, PGlite 0.3.14 and Ty
 Install the separately locked server driver first: `npm ci --prefix integrations/core-v2/server --ignore-scripts --no-audit --no-fund`. Loopback socket tests require permission to bind a local port; the initial sandbox-only HTTP attempt was denied with EPERM and was rerun successfully with local socket permission.
 
 ## Executed behavior
+
+- Added catalog preflight tests: reject an unsafe source admin role and missing Core prerequisites; a local SELECT-only principal can plan every query yet actual staff authorization is denied by ledger RLS; revoking one table grant produces a named failure while later checks continue; CLI refuses network access by default without reading/reporting secrets.
 
 - `npm start --prefix integrations/core-v2/server` was executed with its default disabled configuration. A real loopback HTTP request returned 503, `cache-control: no-store` and `{"error":"integration_disabled"}`; the process was then stopped.
 - The cookie bridge strips client identity headers, rejects missing/duplicate cookies and cross-site/origin/path/method violations. Actual source SQL → bridge → isolated Core storage produces saved evidence and replay without another execution; revoked proof denies retrieval. Full server assembly with separate SQL adapters records an interrupted run and returns `provider_network_disabled` without a paid call. Disabled assembly consults neither keys nor pools. A real loopback HTTP server returns the disabled no-store response. The pinned real pg driver sends only PostgreSQL SSL negotiation and refuses an endpoint declining TLS before any credential exchange. Connector tests verify strict SSL configuration, source read-only startup settings, lazy/exclusive leases and wrong-target refusal.

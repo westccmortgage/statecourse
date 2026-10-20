@@ -3,6 +3,9 @@
   "private": true,
   "type": "module",
   "engines": {"node": ">=22.13.0"},
-  "scripts": {"start": "node --experimental-strip-types --no-warnings start.mjs"},
+  "scripts": {
+    "start": "node --experimental-strip-types --no-warnings start.mjs",
+    "check:connections": "node --experimental-strip-types --no-warnings check-connections.mjs"
+  },
   "dependencies": {"pg": "8.23.1"}
 }
