@@ -6,18 +6,20 @@ import {join} from 'node:path';
 import {spawnSync} from 'node:child_process';
 import {createServer} from 'node:net';
 import pg from '../server/node_modules/pg/lib/index.js';
+import {createDatabaseConnections} from '../server/database.mjs';
 import {coreClient} from '../statecourse/core-client.mjs';
 import {PostgresOrchestrationRepository} from '../upstream/workers/core-v2/postgres/repository.ts';
 import {applyLocalHardening} from '../hardening/apply.mjs';
 import {verifiedInstallation} from '../installation/package.mjs';
 import {PostgresResultStore} from '../statecourse/store.mjs';
 import {explainSnapshot} from '../statecourse/engine.mjs';
-import {snapshot,ACTOR,OTHER,ORGANIZATION} from '../statecourse/tests/fixtures.mjs';
+import {createBackgroundApi} from '../statecourse/background.mjs';
+import {snapshot,ACTOR,SESSION,PROOF,OTHER,ORGANIZATION} from '../statecourse/tests/fixtures.mjs';
 import {executors} from '../statecourse/tests/executors.mjs';
 
 const bin=process.argv[2];if(!bin)throw new Error('Pass an absolute directory containing native initdb, pg_ctl and postgres; no hosted URL is supported.');
 const dir=await mkdtemp(join(tmpdir(),'statecourse-core-native-')),data=join(dir,'data');
-let started=false,client;
+let started=false,client,workerDb;
 function command(file,args) {const result=spawnSync(file,args,{encoding:'utf8',timeout:30000});if(result.status!==0)throw new Error(`${file.split('/').at(-1)} failed: ${result.stderr||result.error||result.stdout}`);return result.stdout;}
 const listener=createServer();await new Promise(resolve=>listener.listen(0,'127.0.0.1',resolve));const port=listener.address().port;await new Promise(resolve=>listener.close(resolve));
 const ctl=(...args)=>command(join(bin,'pg_ctl'),['-D',data,...args]);
@@ -88,17 +90,55 @@ try {
  if(runtime){assert.equal(result.status,'verified_observations');await client.query('reset role');}
  await store.complete(ctx,result);const before=await store.get(ctx);
  await assert.rejects(()=>client.query('delete from core_readonly.events'),/immutable/);
+ await client.query("create role core_worker_fixture login noinherit nosuperuser nobypassrls password 'local-worker-only'; grant service_role,statecourse_core_store to core_worker_fixture");
+ const queued=await store.reserve({...context,idempotencyKey:'77777777-7777-4777-8777-777777777777',scope:issue.scope});
+ const queuedContext={...context,runId:queued.run.id};await store.capture(queuedContext,issue);
+ const reserved=await store.reserve({...context,idempotencyKey:'88888888-8888-4888-8888-888888888888',scope:issue.scope});
+ const reservedContext={...context,runId:reserved.run.id};
  await client.end();client=null;ctl('-m','fast','-w','stop');started=false;
  ctl('-l',join(dir,'postgres.log'),'-o',options,'-w','start');started=true;client=await open();
  store=new PostgresResultStore({connect,expectedDatabaseName:'postgres'});const after=await store.get(ctx);
  assert.equal(after.resultHash,before.resultHash);assert.deepEqual(after.result,before.result);
  await assert.rejects(()=>store.get({...ctx,actorId:OTHER}),/result_not_found/);
+ const ca=await readFile(join(dir,'cert.pem'),'utf8');
+ class VerifiedLocalPool extends pg.Pool {constructor(config){assert.equal(config.ssl.rejectUnauthorized,true);super({...config,ssl:{...config.ssl,ca}});}}
+ workerDb=createDatabaseConnections({Pool:VerifiedLocalPool,sourceUrl:'postgres://reader:local-fixture@source.invalid/source',sourceDatabase:'source',
+  coreUrl:`postgres://core_worker_fixture:local-worker-only@127.0.0.1:${port}/postgres`,coreDatabase:'postgres'});
+ const workerSession=await workerDb.connectCoreWorker();
+ assert.deepEqual((await workerSession.query("select current_user as role,current_setting('request.jwt.claim.role',true) as claim")).rows[0],{role:'service_role',claim:'service_role'});
+ await workerSession.release();
+ const backgroundStore=new PostgresResultStore({connect:workerDb.connectCore,expectedDatabaseName:'postgres'});
+ assert.equal((await backgroundStore.getCaptured(queuedContext)).snapshotHash,issue.snapshotHash,'queued snapshot survives real postmaster restart');
+ assert.equal((await backgroundStore.get(reservedContext)).run.status,'reserved');
+ let backgroundExecutions=0,backgroundReads=0;
+ const workerRuntime=process.argv.includes('--hardening')?async world=>{
+  backgroundExecutions++;const connection=await workerDb.connectCoreWorker();
+  const c=await coreClient(connection,'postgres');
+  return{repo:new PostgresOrchestrationRepository(c,{organizationId:ORGANIZATION}),registry:await executors()(world.resolver),close:()=>c.close()};
+ }:undefined;
+ const worker=createBackgroundApi({enabled:true,allowedOrigin:'https://statecourse.invalid',organizationId:ORGANIZATION,
+  reader:{reauthorize:async()=>true,read:async()=>{backgroundReads++;return issue;}},verifyAccessToken:async()=>({userId:ACTOR,sessionId:SESSION}),store:backgroundStore,
+  createExecutors:executors(),createRuntime:workerRuntime});
+ const delivered=(runId=queued.run.id)=>new Request('https://statecourse.invalid/api/admin/core/background',{method:'POST',
+  headers:{origin:'https://statecourse.invalid',authorization:'Bearer local-fixture','x-statecourse-staff-proof':PROOF,'content-type':'application/json'},body:JSON.stringify({runId})});
+ const deliveries=await Promise.all([worker(delivered()),worker(delivered())]);
+ assert.deepEqual(deliveries.map(r=>r.status).sort(),[200,409],await Promise.all(deliveries.map(r=>r.clone().text())));
+ if(workerRuntime)assert.equal(backgroundExecutions,1);
+ assert.equal((await backgroundStore.get(queuedContext)).result.status,'verified_observations');
+ assert.equal((await worker(delivered())).status,409);
+ assert.equal(backgroundReads,0,'a captured retry must never recapture source');
+ assert.equal((await worker(delivered(reserved.run.id))).status,200);
+ assert.equal((await worker(delivered(reserved.run.id))).status,409);
+ assert.equal(backgroundReads,1);
+ if(workerRuntime)assert.equal(backgroundExecutions,2);
+ assert.equal((await backgroundStore.get(reservedContext)).result.status,'verified_observations');
+
  console.log(JSON.stringify({nativePostgres:version,tlsCertificateVerified:true,migrationCount:manifest.migrationCount,bundleSha256:manifest.bundleSha256,
-  checks:['source target refused','complete installation rollback after injected failure','full atomic install','nonempty rerun refused','private forced RLS/API role denial','public tables have RLS under broad default grants','watchdog dormant','immutable lifecycle','result survives actual database server restart','cross-actor denied'],platformAuthStorage:'modeled; not a hosted Supabase installation',hardeningTested:process.argv.includes('--hardening'),hostedChanges:false},null,2));
+  checks:['source target refused','complete installation rollback after injected failure','full atomic install','nonempty rerun refused','private forced RLS/API role denial','public tables have RLS under broad default grants','watchdog dormant','immutable lifecycle','result survives actual database server restart','queued capture and reservation survive actual database restart','dedicated NOINHERIT login assumes backend session role and claim','concurrent background delivery claims exactly once','cross-actor denied'],platformAuthStorage:'modeled; not a hosted Supabase installation',hardeningTested:process.argv.includes('--hardening'),hostedChanges:false},null,2));
 } catch(error) {
  const log=await readFile(join(dir,'postgres.log'),'utf8').catch(()=> '');
  process.stderr.write(log.split('\n').filter(line=>/FATAL|PANIC/.test(line)).join('\n')+'\n');
  throw error;
 } finally {
- try{await client?.end();}finally{if(started)ctl('-m','fast','-w','stop');await rm(dir,{recursive:true,force:true});}
+ try{await workerDb?.close();await client?.end();}finally{if(started)ctl('-m','fast','-w','stop');await rm(dir,{recursive:true,force:true});}
 }

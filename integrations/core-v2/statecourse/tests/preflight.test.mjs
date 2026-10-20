@@ -27,6 +27,7 @@ test('catalog preflight reports unsafe source role and missing Core prerequisite
 test('existing least-privilege local source role passes plans; denied table remains a named blocker',async()=>{
  const source=await createSourceDatabase(),core=new PGlite();try {
   await installCore(core);await installResultStore(core);
+  await core.exec('alter role service_role bypassrls; grant select on public.organizations to service_role'); // Supabase backend substrate, local fixture only
   await core.query("insert into organizations(id,name) values($1,'fixture')",[ORGANIZATION]);
   // Role/grants are fixture-only; no source migration or hosted grant is generated.
   await source.exec('create role fixture_core_reader; grant usage on schema public,statecourse_staff_private to fixture_core_reader');

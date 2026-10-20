@@ -13,7 +13,7 @@ npm start --prefix integrations/core-v2/server
 
 Node 22.13+ is required for the original TypeScript runtime. The service binds only `127.0.0.1:8789`; `CORE_V2_PORT` can select another unprivileged port. With no configuration, every request returns 503 `integration_disabled`; startup opens no DB socket, reads no provider declaration or credentials, and performs no auth/provider call.
 
-A later approved StateCourse **server-side same-origin reverse proxy** must forward only `/api/admin/core/observations` and `/api/admin/core/observations/{runId}` to this loopback service (or an equivalently protected service boundary). Preserve the original Cookie, Origin, Content-Type and Idempotency-Key; disable caching, POST retries and request/response header logging. Do not expose this listener as a public standalone domain or forward all StateCourse paths. Existing Netlify hosting cannot access another machine's loopback; choosing and securing its concrete service/proxy hosting is an activation prerequisite. The Netlify profile routes directly to the application in process; it does not call this standalone loopback listener. Do not run the synchronous 120-second provider workflow in a 60-second Netlify Function or a retrying Background Function.
+For the optional standalone deployment, a separately approved same-origin server proxy must forward only the two observation endpoints, preserve original cookies/Origin, disable caching/POST retries and avoid credential logging. The selected existing Netlify host instead calls the application in process and uses its own [background transport](BACKGROUND.md); no external Node host/proxy or Render server is needed. The synchronous Netlify handler never runs the long scheduler.
 
 The browser uses its existing HttpOnly `__Host-sc_access` and `__Host-sc_staff` cookies. It does not read them or supply authority headers. The bridge rejects missing/duplicate cookies, cross-site requests, missing/wrong Origin, query strings, unknown paths and methods. Client Authorization, proof, actor and organization headers are discarded. POST requires JSON scope and UUID Idempotency-Key as in the existing contract. GET callers must explicitly send `Origin: <StateCourse origin>` as well; a plain navigation without Origin is rejected. Use same-origin credentialed fetch and the fixed endpoint; no CORS is enabled.
 
@@ -24,6 +24,7 @@ Internally the bridge calls the existing Core API in process, forwarding only th
 | Variable | Purpose |
 | --- | --- |
 | `CORE_V2_BRIDGE_ENABLED` | Must equal `true` to enable requests; default closed |
+| `CORE_V2_BACKGROUND_ENABLED` | Netlify submission/worker activation; default closed, independent of provider authorization |
 | `STATECOURSE_ORIGIN` | Exact HTTPS site origin, without path/trailing slash |
 | `SUPABASE_URL`, `SUPABASE_ANON_KEY` | Existing source auth origin and public server auth key; never the service-role key |
 | `STATECOURSE_READ_DATABASE_URL` | Existing authorized source SQL read credential, server-only |
@@ -46,7 +47,7 @@ Source sessions start with `default_transaction_read_only=on`; every source oper
 
 Existing source read permissions must cover all allowlisted tables, current-binding view prerequisites and private proof validation; missing permissions fail closed. This PR does not grant them, create a source account or substitute a Supabase service-role key. The read-only session option is defense in depth, not a substitute for least-privilege existing DB credentials. If such a credential does not exist, activation remains blocked pending separate approval.
 
-For Core, apply the ordered existing Core schema prerequisites and then the isolated result-store migration described in [STORAGE.md](../STORAGE.md), only to the separately approved Core target. Confirm organization and dedicated writer membership in `statecourse_core_store` without introducing source writes. The initial schema package is now installed only in the separately approved Core project; remote runtime/permission setup is not complete. Native PostgreSQL role/RLS/TLS behavior and account/hosting configuration still require approved target verification.
+For Core, apply the ordered existing Core schema prerequisites and then the isolated result-store migration described in [STORAGE.md](../STORAGE.md), only to the separately approved Core target. Confirm organization and a dedicated NOINHERIT writer login with approved membership in `statecourse_core_store` and `service_role` without introducing source writes. The initial schema package is now installed only in the separately approved Core project; remote runtime/permission setup is not complete. Native PostgreSQL role/RLS/TLS behavior and account/hosting configuration still require approved target verification.
 
 ## Verification
 
@@ -58,6 +59,8 @@ The common test command in [TEST_RESULTS.md](../TEST_RESULTS.md) now also instal
 
 ## Existing Netlify hosting
 
-The production attempts failed runtime verification and were rolled back. Current observed status and remaining blockers are in [DEPLOYMENT.md](DEPLOYMENT.md).
+The standard remote source build succeeded after the earlier local-publication attempts were rolled back. Current observed status and remaining data-access blockers are in [DEPLOYMENT.md](DEPLOYMENT.md).
 
 The additive hosting adapter and its current activation limits are documented in [NETLIFY.md](NETLIFY.md). It reuses StateCourse's existing host and cookies; no separate Render server is required.
+
+Core store leases retain the dedicated login and assume `statecourse_core_store` only inside scoped transactions. Separate worker leases explicitly assume `service_role` and set the existing `request.jwt.claim.role` session context required by original Core RPCs. Both use isolated verified-TLS Core connections and destroy every released session; source connections never assume a Core role. The real target auth.role definition and backend role attributes were read-only verified. Native tests exercise this through a dedicated NOINHERIT login rather than an administrative worker connection. Runtime role/bootstrap permissions remain unconfigured on hosted Core.

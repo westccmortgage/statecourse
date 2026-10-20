@@ -38,7 +38,17 @@ export async function inspectConnections({connectSource,connectCore,organization
    const names=['public.organizations','public.intelligence_workflows','public.workflow_sources','public.workflow_tasks','public.agent_attempts','public.evidence_claims','public.claim_assessments','public.workflow_cost_budgets','public.attempt_cost_reservations'];
    return (await c.query('select bool_and(to_regclass(name) is not null) as present from unnest($1::text[]) t(name)',[names])).rows[0]?.present===true;
   }],
-  ['configured_core_organization_exists',async c=>(await c.query('select exists(select 1 from public.organizations where id=$1::uuid) as present',[organizationId])).rows[0]?.present===true],
+  ['configured_core_organization_exists',async c=>{
+   await c.query('SET LOCAL ROLE service_role');
+   const present=(await c.query('select exists(select 1 from public.organizations where id=$1::uuid) as present',[organizationId])).rows[0]?.present===true;
+   await c.query('RESET ROLE');return present;
+  }],
+  ['backend_worker_role_and_claim_context_available',async c=>{
+   await c.query('SET LOCAL ROLE service_role');
+   await c.query("select set_config('request.jwt.claim.role','service_role',true)");
+   const {rows}=await c.query("select current_user='service_role' and current_setting('request.jwt.claim.role',true)='service_role' as allowed");
+   await c.query('RESET ROLE');return rows[0]?.allowed===true;
+  }],
   ['scoped_result_store_role_and_tables_readable',async c=>{
    await c.query('SET LOCAL ROLE statecourse_core_store');
    await c.query("select set_config('core_readonly.organization_id',$1,true),set_config('core_readonly.actor_id',$2,true)",[organizationId,EMPTY]);

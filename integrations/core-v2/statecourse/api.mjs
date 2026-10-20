@@ -1,6 +1,7 @@
 import { authenticate } from './auth.mjs';
 import { IntegrationError, requestInput, UUID, VERSION } from './contract.mjs';
 import { explainSnapshot } from './engine.mjs';
+import { readJson } from './request.mjs';
 
 const BASE='/v1/statecourse/observations';
 function storedBody(saved) {
@@ -10,8 +11,9 @@ function storedBody(saved) {
   persistence:{runId:run.id,resultHash,createdAt:run.created_at},events};
 }
 // Source connections are read-only. Optional store/runtime connections are isolated Core writers.
-export function createReadOnlyApi({ reader, verifyAccessToken, organizationId, createExecutors, createRuntime, store, routing, allowedOrigin, enabled=false }) {
+export function createReadOnlyApi({ reader, verifyAccessToken, organizationId, createExecutors, createRuntime, store, routing, dispatch, allowedOrigin, enabled=false }) {
  if(!UUID.test(organizationId??'') || !allowedOrigin || new URL(allowedOrigin).origin!==allowedOrigin) throw new Error('fixed_host_configuration_required');
+ if(dispatch && !store) throw new Error('background_dispatch_requires_durable_results');
  if(createRuntime && !store) throw new Error('provider_runtime_requires_durable_results');
  let busy=false;
  return async request=>{
@@ -26,7 +28,7 @@ export function createReadOnlyApi({ reader, verifyAccessToken, organizationId, c
   if(!isStored && !request.headers.get('content-type')?.toLowerCase().startsWith('application/json')) return reply(415,{error:'json_required'});
   if(!isStored && busy) return reply(429,{error:'analysis_in_progress'});
   if(!isStored) busy=true;
-  let context=null;
+  let context=null,handoff=false;
   try {
    const identity=await authenticate(request.headers,verifyAccessToken);
    if(isStored) {
@@ -36,13 +38,7 @@ export function createReadOnlyApi({ reader, verifyAccessToken, organizationId, c
     await reader.reauthorize(identity);
     return reply(saved.result?200:202,storedBody(saved));
    }
-   const contentLength=request.headers.get('content-length');
-   if(contentLength && (!/^\d+$/.test(contentLength) || Number(contentLength)>1024)) throw new IntegrationError('request_too_large',413);
-   const stream=request.body?.getReader();let text='',size=0;
-   if(stream) {const decoder=new TextDecoder();try{while(true){const next=await stream.read();if(next.done)break;size+=next.value.byteLength;
-    if(size>1024){await stream.cancel();throw new IntegrationError('request_too_large',413);}text+=decoder.decode(next.value,{stream:true});}text+=decoder.decode();}finally{stream.releaseLock();}}
-   let body;try{body=JSON.parse(text);}catch{throw new IntegrationError('invalid_json');}
-   const scope=requestInput(body);
+   const scope=requestInput(await readJson(request));
    if(store) {
     // No Core write or cache read occurs until CURRENT StateCourse authority is checked.
     await reader.reauthorize(identity);
@@ -55,6 +51,13 @@ export function createReadOnlyApi({ reader, verifyAccessToken, organizationId, c
     }
     context={organizationId,actorId:identity.userId,runId:reserved.run.id};
    }
+   if(dispatch){
+    // The reservation is durable before any HTTP handoff. An uncertain handoff must never
+    // interrupt a worker that may already own the run, or resubmit paid work.
+    handoff=true;await dispatch({context,headers:request.headers});
+    await reader.reauthorize(identity);
+    return reply(202,storedBody(await store.get(context)));
+   }
    const snapshot=await reader.read(identity,scope);
    if(store){await store.capture(context,snapshot);await store.start(context);}
    const result=await explainSnapshot(snapshot,{organizationId,createExecutors,createRuntime,routing,workflowId:context?.runId});
@@ -64,8 +67,8 @@ export function createReadOnlyApi({ reader, verifyAccessToken, organizationId, c
    return reply(200,{contractVersion:VERSION,scope,...result});
   } catch(error) {
    // A crash/unknown response is held for review. Never automatically repeat a paid run.
-   if(store && context) {try{await store.interrupt(context);}catch{/* an unavailable store leaves a non-replayable running record */}}
-   return reply(error instanceof IntegrationError?error.status:503,{error:error instanceof IntegrationError?error.code:'analysis_unavailable'});
+   if(store && context && !handoff) {try{await store.interrupt(context);}catch{/* an unavailable store leaves a non-replayable running record */}}
+   return reply(error instanceof IntegrationError?error.status:503,{error:error instanceof IntegrationError?error.code:'analysis_unavailable',...(handoff&&context?{runId:context.runId}:{})});
   } finally {if(!isStored)busy=false;}
  };
 }

@@ -11,7 +11,7 @@ import {createSupabaseVerifier} from '../auth.mjs';
 import {PGlite,installResultStore,connect} from './core-database.mjs';
 import {createSourceDatabase} from './source-database.mjs';
 import {executors} from './executors.mjs';
-import {ACTOR,SESSION,ENROLLMENT,ORGANIZATION,PROOF} from './fixtures.mjs';
+import {ACTOR,SESSION,ENROLLMENT,OTHER,ORGANIZATION,PROOF} from './fixtures.mjs';
 import {COURSE_ID} from '../contract.mjs';
 const ORIGIN='https://statecourse.invalid';
 const TOKEN='eyJhbGciOiJmaXh0dXJlIn0.'+Buffer.from(JSON.stringify({sub:ACTOR,session_id:SESSION,aal:'aal2',exp:Math.floor(Date.now()/1000)+600})).toString('base64url')+'.fixture';
@@ -106,4 +106,47 @@ test('real pg driver refuses a PostgreSQL endpoint that declines TLS before send
  const db=createDatabaseConnections({Pool:pg.Pool,sourceUrl:`postgres://reader:fixture@127.0.0.1:${endpoint.address().port}/source`,sourceDatabase:'source',coreUrl:'postgres://writer:fixture@core.invalid/core',coreDatabase:'core'});
  try {await assert.rejects(()=>db.connectSource(),/database_connection_unavailable/);assert.equal(packets,1);}
  finally{await db.close();await new Promise(resolve=>endpoint.close(resolve));}
+});
+
+test('Core worker sessions explicitly assume backend role/claim; denied membership closes the lease',async()=>{
+ const statements=[];let released=0,deny=false,sourceOpens=0;
+ class Pool {
+  constructor(config){this.config=config;}on(){}async end(){}
+  async connect(){if(this.config.host==='source.invalid')sourceOpens++;return{
+   query:async sql=>{statements.push(sql);if(deny&&sql==='SET ROLE service_role')throw Error('private connection detail');return{rows:[{database_name:'core',source_present:false}]};},
+   release:destroy=>{assert.equal(destroy,true);released++;},
+  };}
+ }
+ const db=createDatabaseConnections({Pool,sourceUrl:'postgres://reader:fixture@source.invalid/source',sourceDatabase:'source',coreUrl:'postgres://worker:fixture@core.invalid/core',coreDatabase:'core'});
+ const c=await db.connectCoreWorker();assert.equal(statements[1],'SET ROLE service_role');assert.match(statements[2],/set_config\('request.jwt.claim.role','service_role',false\)/);await c.release();
+ deny=true;await assert.rejects(()=>db.connectCoreWorker(),error=>error.code==='core_worker_role_unavailable'&&!error.message.includes('private'));
+ assert.equal(released,2);assert.equal(sourceOpens,0);await db.close();
+});
+
+test('actual Netlify front/worker assembly uses source SQL, durable reservation and closed provider gates',async()=>{
+ const {createNetlifyHandler,createNetlifyBackgroundHandler}=await import('../../server/netlify.mjs');
+ const source=await createSourceDatabase(),core=new PGlite();try {
+  await installResultStore(core);const before=(await source.query('select * from enrollments')).rows;
+  class Pool{constructor(c){this.db=c.host==='source.invalid'?source:core;}on(){}async end(){}async connect(){const db=this.db;return{query:(sql,p)=>db.query(sql,p),release:()=>{}};}}
+  const environment={CORE_V2_BRIDGE_ENABLED:'true',CORE_V2_BACKGROUND_ENABLED:'true',STATECOURSE_ORIGIN:ORIGIN,SUPABASE_URL:'https://auth.invalid',SUPABASE_ANON_KEY:'public-fixture',
+   STATECOURSE_READ_DATABASE_URL:'postgres://reader:fixture@source.invalid/template1',STATECOURSE_DATABASE_NAME:'template1',CORE_DATABASE_URL:'postgres://writer:fixture@core.invalid/template1',CORE_DATABASE_NAME:'template1',CORE_ORGANIZATION_ID:ORGANIZATION,
+   CORE_V2_PROVIDER_NETWORK_ENABLED:'true',CORE_V2_ALLOW_PAID_CALLS:'true'};
+  const deliveries=[];const transport=async(url,options)=>{
+   const target=new URL(url);
+   if(target.origin==='https://auth.invalid'){assert.equal(target.pathname,'/auth/v1/user');assert.equal(options.method,'GET');return Response.json({id:ACTOR});}
+   assert.equal(target.href,ORIGIN+'/api/admin/core/background');assert.equal(options.redirect,'error');
+   assert.equal(options.headers.get('authorization'),'Bearer '+TOKEN);assert.equal(options.headers.get('x-statecourse-staff-proof'),PROOF);assert.equal(options.headers.get('cookie'),null);
+   deliveries.push(new Request(url,{method:'POST',headers:options.headers,body:options.body}));return new Response(null,{status:202});
+  };
+  const front=createNetlifyHandler({environment,Pool,fetch:transport}),worker=createNetlifyBackgroundHandler({environment,Pool,fetch:transport});
+  const queued=await front(request());assert.equal(queued.status,202,await queued.clone().text());const firstId=(await queued.json()).runId;
+  assert.equal((await core.query('select status from core_readonly.runs where id=$1',[firstId])).rows[0].status,'reserved');
+  const done=await worker(deliveries.shift());assert.equal(done.status,200,await done.clone().text());
+  const saved=await front(request('/'+firstId,{},'GET'));assert.equal(saved.status,200);assert.equal((await saved.json()).status,'no_observations');
+  await source.query('delete from access_grants');
+  const next=await front(request('',{'idempotency-key':OTHER}));assert.equal(next.status,202);const nextId=(await next.json()).runId;
+  const rejected=await worker(deliveries.shift());assert.equal(rejected.status,503);assert.equal((await rejected.json()).error,'provider_network_disabled');
+  assert.equal((await core.query('select status from core_readonly.runs where id=$1',[nextId])).rows[0].status,'interrupted');
+  assert.deepEqual((await source.query('select * from enrollments')).rows,before);
+ }finally{await source.close();await core.close();}
 });

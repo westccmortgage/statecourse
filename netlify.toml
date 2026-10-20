@@ -35,6 +35,9 @@
 [functions."core-readonly"]
   node_bundler = "esbuild"
 
+[functions."core-readonly-background"]
+  node_bundler = "esbuild"
+
 [[headers]]
   for = "/*"
   [headers.values]

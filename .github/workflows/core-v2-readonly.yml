@@ -4,7 +4,7 @@ on:
     paths:
       - 'integrations/core-v2/**'
       - 'database/**'
-      - 'netlify/functions/core-readonly.mjs'
+      - 'netlify/functions/core-readonly*.mjs'
       - 'netlify.toml'
       - 'site/build.sh'
       - 'tsconfig.json'

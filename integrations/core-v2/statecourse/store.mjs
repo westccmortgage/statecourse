@@ -51,6 +51,18 @@ export class PostgresResultStore {
    return freeze({run:row,events,result:result?JSON.parse(result.canonical_text):null,resultHash:result?.content_hash??null});
   });
  }
+ // Internal worker access only; snapshots are never returned by the public API.
+ async getCaptured(context) {
+  return this.transaction(context.organizationId,context.actorId,async c=>{
+   const run=await this.lock(c,context);
+   if(run.status!=='captured')throw new IntegrationError('run_not_available_for_execution',409);
+   const row=(await c.query("select canonical_text,content_hash from core_readonly.artifacts where organization_id=$1 and run_id=$2 and kind='snapshot'",[context.organizationId,context.runId])).rows[0];
+   if(!row || digest(row.canonical_text)!==row.content_hash)throw new IntegrationError('snapshot_integrity_failed',503);
+   const snapshot=JSON.parse(row.canonical_text);verifySnapshot(snapshot);
+   if(snapshot.scope.courseId!==run.course_id || snapshot.scope.enrollmentId!==run.enrollment_id)throw new IntegrationError('snapshot_scope_conflict',409);
+   return freeze(snapshot);
+  });
+ }
  async capture(context,snapshot) {
   verifySnapshot(snapshot);
   return this.transaction(context.organizationId,context.actorId,async c=>{

@@ -1,5 +1,16 @@
 # Local verification — 2026-10-19
 
+## Durable background release — current verification
+
+56 integration tests passed with 0 failures/skips; all 20 original Core suites passed. The complete Netlify front/worker assembly was executed against real repository source SQL and an isolated Core result store: valid source records produced a durable no-observations result without provider access; a real finding reached the closed provider gate and became an interrupted hold, even when both injected provider flags were true. Cookie/source proof revocation, invalid authority, cross-actor/org access, unknown HTTP dispatch outcomes and delivery races are exercised. Source fixture enrollments remain identical.
+
+Native PostgreSQL 17.10 executes the actual server connection initializer through a dedicated LOGIN/NOINHERIT/NOSUPERUSER/NOBYPASSRLS fixture account with separately granted original Core/store-role memberships. Original Core RPC execution receives the real service_role session and auth.role claim. Pending reserved/captured work survives an actual postmaster restart; two concurrent deliveries over separate verified-TLS sessions produce one success and one rejection. The original SQL repository/scheduler persists accepted observations; completed/interrupted work never reexecutes. Only disposable fixture roles/data are created; hosted roles/data are unchanged.
+
+The standard offline Netlify production build completed with 41 functions, existing admin-boundary edge protection and an actual `background` invocation mode/runtime API v2 manifest for the new worker. Scoped lint, DomainPack/door type checks and the root compiler boundary passed. The 364 original files and reviewed migration bytes remain unchanged. No new migration, remote role/bootstrap, source permission, provider key, model call or runtime environment variable is added.
+
+Hosting was independently deployed successfully through Netlify's standard remote source-build operation; its [receipt](server/deployed-receipt.json) records observed HTTP/API checks. The background extension is prepared after that first successful hosting snapshot and receives its own publication/read-back record. Full hosted source/Core credential/RLS and provider execution remain unverified; absent server credentials are not treated as a code test success.
+
+
 ## Existing Netlify adapter verification — 2026-10-19 (America/Los_Angeles)
 
 44 Core integration tests and all 20 original Core suites passed. Four new Netlify cases cover non-sensitive health, no secret/network/SQL access while closed, forced provider flags OFF, application reuse and redacted initialization errors. The final packaged handler executed outside the repository with health 200, analysis POST 503 and disabled saved-run GET 503. Correct root pg declaration is required for Netlify’s modern function tracer; the exact same 8.23.1 driver version is retained. Root lock consistency passed `npm ci --dry-run --ignore-scripts --no-audit --no-fund`.

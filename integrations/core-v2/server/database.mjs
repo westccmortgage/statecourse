@@ -31,5 +31,17 @@ export function createDatabaseConnections({Pool,sourceUrl,sourceDatabase,coreUrl
    return {query:(sql,params)=>connection.query(sql,params),release:()=>connection.release(true)};
   } catch {connection?.release(true);throw new IntegrationError('database_connection_unavailable',503);}
  };
- return {connectSource:lease(pools[0],source,true),connectCore:lease(pools[1],core,false),close:()=>Promise.all(pools.map(pool=>pool.end()))};
+ const connectCore=lease(pools[1],core,false);
+ const connectCoreWorker=async()=>{
+  const connection=await connectCore();
+  try {
+   // Original Core RPCs are backend-only and inspect auth.role(). The dedicated
+   // login must be NOINHERIT with explicitly approved service_role membership.
+   // This context is confined to an isolated, exclusively leased Core session.
+   await connection.query('SET ROLE service_role');
+   await connection.query("select set_config('request.jwt.claim.role','service_role',false)");
+   return connection;
+  } catch {await connection.release();throw new IntegrationError('core_worker_role_unavailable',503);}
+ };
+ return {connectSource:lease(pools[0],source,true),connectCore,connectCoreWorker,close:()=>Promise.all(pools.map(pool=>pool.end()))};
 }
