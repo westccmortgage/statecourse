@@ -9,9 +9,9 @@
     "context": "production",
     "publishedAt": "2026-10-20T04:59:03.604Z",
     "functions": 41,
-    "coreFunctions": [],
     "edgeFunctionsPresent": true,
-    "commitRef": null
+    "commitRef": null,
+    "coreRoutesVerifiedByHttp": true
   },
   "sourceArchive": {
     "commit": "174e4a0654c0c2f5da9a253442c966ae51908ee6",
