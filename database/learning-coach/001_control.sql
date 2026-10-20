@@ -9,6 +9,22 @@ create table if not exists public.learning_coach_requests (
 );
 alter table public.learning_coach_requests enable row level security;
 revoke all on public.learning_coach_requests from public, anon, authenticated;
+-- Keep optional coach settings out of every legacy Lambda environment (4 KB cap).
+-- This script is explicitly reapplied; it never overwrites an existing configuration.
+create table if not exists public.learning_coach_settings (
+ singleton boolean primary key default true check (singleton),
+ configuration jsonb not null check (
+  jsonb_typeof(configuration)='object' and
+  configuration - array['LEARNING_COACH_ENABLED','LEARNING_COACH_PROVIDER',
+   'LEARNING_COACH_MODEL','LEARNING_COACH_ORIGIN','LEARNING_COACH_HASH_SECRET',
+   'LEARNING_COACH_INPUT_USD_PER_MILLION','LEARNING_COACH_OUTPUT_USD_PER_MILLION',
+   'LEARNING_COACH_DAILY_BUDGET_USD']::text[] = '{}'::jsonb
+ )
+);
+alter table public.learning_coach_settings enable row level security;
+revoke all on public.learning_coach_settings from public, anon, authenticated;
+insert into public.learning_coach_settings(singleton,configuration)
+ values(true,'{"LEARNING_COACH_ENABLED":"false"}') on conflict(singleton) do nothing;
 create or replace function public.learning_coach_control(op text,payload jsonb) returns jsonb
 language plpgsql security definer set search_path=pg_catalog,public as $$
 declare
@@ -19,6 +35,10 @@ declare
  day_start timestamptz := date_trunc('day',clock_timestamp() at time zone 'UTC') at time zone 'UTC';
  charge bigint; budget bigint;
 begin
+ if op='settings' then
+  return coalesce((select configuration from public.learning_coach_settings where singleton),
+   '{"LEARNING_COACH_ENABLED":"false"}'::jsonb);
+ end if;
  if ident !~ '^[a-f0-9]{64}$' or ph !~ '^[a-f0-9]{64}$' or ident is null or ph is null or rid is null then raise exception 'invalid_request'; end if;
  -- Serialize admission across ALL workers, including budget and duplicate checks.
  perform pg_advisory_xact_lock(7751042026);

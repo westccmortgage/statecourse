@@ -8,6 +8,13 @@ test('durable SQL admission, deduplication, retention, IP/global budget and perm
  try{
  await db.exec('create role anon; create role authenticated; create role service_role;');
  await db.exec(fs.readFileSync(new URL('../database/learning-coach/001_control.sql',import.meta.url),'utf8'));
+ assert.deepEqual((await db.query("select public.learning_coach_control('settings','{}'::jsonb) as settings")).rows[0].settings,{LEARNING_COACH_ENABLED:'false'});
+ await assert.rejects(db.query("insert into public.learning_coach_settings values(false,'{}')"));
+ await assert.rejects(db.query("update public.learning_coach_settings set configuration='{\"OPENAI_API_KEY\":\"forbidden\"}'"));
+ await db.exec("update public.learning_coach_settings set configuration='{\"LEARNING_COACH_ENABLED\":\"true\",\"LEARNING_COACH_DAILY_BUDGET_USD\":\"1\"}'");
+ await db.exec(fs.readFileSync(new URL('../database/learning-coach/001_control.sql',import.meta.url),'utf8'));
+ assert.equal((await db.query("select public.learning_coach_control('settings','{}'::jsonb) as settings")).rows[0].settings.LEARNING_COACH_ENABLED,'true','reapplying the explicit script must not overwrite existing settings');
+ assert.deepEqual((await db.query("select has_table_privilege('anon','public.learning_coach_settings','select') as anon,has_table_privilege('authenticated','public.learning_coach_settings','select') as authenticated,relrowsecurity as rls from pg_class where oid='public.learning_coach_settings'::regclass")).rows[0],{anon:false,authenticated:false,rls:true});
  const payload={requestId:'11111111-1111-4111-8111-111111111111',identity:'a'.repeat(64),payloadHash:'b'.repeat(64),reserveMicros:1000,budgetMicros:10000};
  const call=async(op,p=payload)=>(await db.query('select public.learning_coach_control($1,$2::jsonb) as result',[op,JSON.stringify(p)])).rows[0].result;
  assert.equal((await call('reserve')).status,'reserved');assert.equal((await call('reserve')).status,'already_reserved');

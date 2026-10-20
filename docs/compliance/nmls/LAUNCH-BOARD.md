@@ -1,5 +1,14 @@
 # NMLS Launch Board
 
+## Authorized AI activation continuation — October 19, 2026 (Los Angeles)
+
+Owner approved the production coach with a shared $1/day cap. The original coach ledger/control function is installed in the existing production database and passed SQL admission, replay, conflict, cross-identity budget and permission checks. Both same-commit redeploys then failed before publication due to the legacy Lambda 4 KB environment limit. All new coach environment entries were removed; the original ready deployment remains published and AI remains disabled. A targeted local patch moves only coach settings to the service-role-only, RLS-protected database configuration; 43 targeted tests and the Netlify build/protection checks pass. Lint is unavailable because eslint is missing. This patch is unpublished and needs a new commit rather than the originally specified exact revision. Real provider responses, citations/refusals and generated-answer production E2E remain **BLOCKED / UNVERIFIED**. No grade, progression, enrollment, payment, approval or regulatory-credit control was modified. See the production verification report linked below.
+
+
+## Production deployment verification — October 19, 2026 (Los Angeles)
+
+The expected commit `bd8319ec758b0f6e08aaf178704064984954d833` is Netlify's published production revision and now matches authenticated `build.json` readback. The existing Mortgage enrollment was exercised at desktop/mobile sizes: named consent is required, actual requests display unavailable, and pausing removes the coach. No answers were submitted and counts remained 0/45 units, 0/8 module practices; ordinary non-credit session/activity bookkeeping occurred. Mortgage coaching acceptance remains **BLOCKED**: runtime coach disabled, required coach settings absent, production durable admission unverified, and no live provider response/citation/refusal or generated-answer logout evidence. Anonymous and cross-origin coach requests returned 401 and 403 respectively. [Production verification](../../audits/PRODUCTION-DEPLOYMENT-2026-10-20.md). No NMLS approval, payment, regulated progress or credit control changed; this board update is local only.
+
 ## AI teaching and technical update — October 19, 2026 (Los Angeles)
 
 Local implementation now covers 284 Real Estate lessons across 30 catalog courses and 45 authenticated national Mortgage teaching units, with shared OpenAI/Gemini adapters and versioned lesson chunks. Student reading surfaces are connected; assessment and regulator-review boundaries are retained. Local HTTP/SQL/DOM/browser evidence is documented in [AI coverage](../../audits/AI-COVERAGE-2026-10-19.md). Provider authentication, live model quality, production migration/deployment and student production E2E remain unverified. No approval, credit, commerce or launch enablement flag changed.
