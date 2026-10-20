@@ -8,7 +8,7 @@ export async function requestGemini({apiKey,model,input,fetcher=fetch}){
    generationConfig:{maxOutputTokens:800,responseMimeType:'application/json',responseJsonSchema:schema,
     thinkingConfig:model.startsWith('gemini-2.5-')?{thinkingBudget:0}:{thinkingLevel:'minimal'}}})
  });
- if(!response.ok)throw Error('provider_unavailable');
+ if(!response.ok)throw Error('provider_http_'+response.status);
  const result=await response.json(),candidate=result.candidates?.[0];
  if(candidate?.finishReason!=='STOP')throw Error('provider_incomplete');
  const text=(candidate.content?.parts??[]).filter(p=>!p.thought&&typeof p.text==='string').map(p=>p.text).join('');

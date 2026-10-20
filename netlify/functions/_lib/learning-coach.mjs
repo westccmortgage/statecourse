@@ -66,6 +66,8 @@ export async function coach(body,{env,ip,origin,store,provider,allowPrivate=fals
   await store('complete',{requestId:body.requestId,identity,payloadHash,response:result});
   return result;
  }catch(error){
+  const reason=String(error?.message||'');
+  if(/^(?:provider_(?:http_[0-9]{3}|incomplete)|invalid_provider_evidence_(?:shape|quote|text|citations))$/.test(reason))console.warn('learning_coach_provider_failure',reason);
   // Never release the reservation: provider timeouts can still be billable.
   await store('failed',{requestId:body.requestId,identity,payloadHash}).catch(()=>{});
   if(error.status)throw error;

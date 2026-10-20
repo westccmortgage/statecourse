@@ -5,7 +5,7 @@ export const schema={type:'object',additionalProperties:false,properties:{status
 // Exact quotation/citation checks establish provenance, not semantic entailment.
 const normalized=text=>text.replace(/\s+/gu,' ').trim();
 export function groundedAnswer(answer,input){
- const invalid=()=>{throw Error('invalid_provider_evidence');};
+ const invalid=(reason='shape')=>{throw Error('invalid_provider_evidence_'+reason);};
  if(!answer||Object.keys(answer).sort().join(',')!=='evidence,explanation,nextStep,sourceIds,status'||
   !Array.isArray(answer.evidence)||!Array.isArray(answer.sourceIds)||typeof answer.explanation!=='string')invalid();
  if(answer.status==='insufficient_sources'){
@@ -16,11 +16,11 @@ export function groundedAnswer(answer,input){
    if(!item||Object.keys(item).sort().join(',')!=='quote,sourceId,text'||typeof item.text!=='string'||!item.text.trim()||
     typeof item.quote!=='string'||normalized(item.quote).length<20||item.quote.length>400)invalid();
    const source=input?.sources?.find(source=>source.id===item.sourceId);
-   if(!source||typeof source.excerpt!=='string'||!normalized(source.excerpt).includes(normalized(item.quote)))invalid();
+   if(!source||typeof source.excerpt!=='string'||!normalized(source.excerpt).includes(normalized(item.quote)))invalid('quote');
   }
-  if(normalized(answer.explanation)!==normalized(answer.evidence.map(item=>item.text).join(' ')))invalid();
+  if(normalized(answer.explanation)!==normalized(answer.evidence.map(item=>item.text).join(' ')))invalid('text');
   const ids=[...new Set(answer.evidence.map(item=>item.sourceId))];
-  if(answer.sourceIds.length!==ids.length||ids.some(id=>!answer.sourceIds.includes(id)))invalid();
+  if(answer.sourceIds.length!==ids.length||ids.some(id=>!answer.sourceIds.includes(id)))invalid('citations');
  }else invalid();
  return {status:answer.status,explanation:answer.explanation,sourceIds:answer.sourceIds,nextStep:answer.nextStep};
 }
@@ -32,7 +32,7 @@ export async function requestCoach({apiKey,model,input,fetcher=fetch}) {
    instructions:instructions,
    input:JSON.stringify(input),text:{format:{type:'json_schema',name:'lesson_coach',strict:true,schema}}})
  });
- if(!response.ok)throw Error('provider_unavailable');
+ if(!response.ok)throw Error('provider_http_'+response.status);
  const result=await response.json();
  if(result.status!=='completed')throw Error('provider_incomplete');
  const text=(result.output??[]).filter(x=>x.type==='message').flatMap(x=>x.content??[]).filter(x=>x.type==='output_text').map(x=>x.text).join('');
