@@ -5,7 +5,7 @@ Verified in the isolated PR #26 checkout with Node 22.22.3, PGlite 0.3.14 and Ty
 | Executed check | Observed result |
 | --- | --- |
 | `node integrations/core-v2/scripts/verify-upstream.mjs` | All 364 copied files match their locked SHA-256. |
-| `STATECOURSE_TEST_PGLITE=/absolute/test/tool/path bash integrations/core-v2/scripts/test.sh` | 37 adapter/API/source-SQL/storage/provider/server integration tests passed, 0 failed/skipped; all 20 listed upstream kernel suites completed with `ALL OK`. |
+| `STATECOURSE_TEST_PGLITE=/absolute/test/tool/path bash integrations/core-v2/scripts/test.sh` | 40 adapter/API/source-SQL/storage/provider/server/package integration tests passed, 0 failed/skipped; all 20 listed upstream kernel suites completed with `ALL OK`. |
 | `bash integrations/core-v2/scripts/typecheck-pack.sh` with pinned `tsc` | Passed. |
 | `bash integrations/core-v2/upstream/workers/core-v2-runner/tests/typecheck-doors.sh` with pinned `tsc` | Copied Core function/runtime imports passed. |
 | TypeScript application discovery with a negative control | Independent Core remains excluded; removing the existing boundary exposes it. |
@@ -34,3 +34,7 @@ All HTTP answers and credentials used by the provider tests are synthetic. Sourc
 Not verified: live StateCourse migration state or complete source SELECT grants/RLS; real Supabase token validation/provider MFA behavior; hosted Core installation, organization and worker grants/advisors; native PostgreSQL pool/TLS/concurrent-process/crash behavior; live model availability, quality, actual pricing or account/key validity; global rate/spending limits; retention/backup operations; rendered Admin UI or full StateCourse application builds. The disabled host/server connection and eventual schema installation require the independent checks/approval described in CONNECTING.md and STORAGE.md.
 
 Records and completed results are durable in the prepared code. Automatic background resume/reconciliation is not installed. A crash/unknown submission cannot be safely resolved by assuming it was not charged, and the adapter does not do so. This PR changes no course approval, credit, signoff, payment, progress, exam, certificate or Launch Control state.
+
+## Native initial-install verification
+
+The exact 79-file package was additionally executed on disposable native PostgreSQL 17.10 with actual pgcrypto, verified TLS/SCRAM, forced RLS, broad public default-grant modeling, full rollback after an injected failure, source/nonempty target refusal, immutable results and actual database server restart. No hosted schema was changed. Auth/Storage substrate remains modeled; target Supabase is 17.11. Reproduction, hash and scope are in [installation/README.md](installation/README.md). The ordinary CI suite does not provision a native cluster.
