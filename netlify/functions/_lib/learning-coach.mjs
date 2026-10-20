@@ -21,9 +21,11 @@ export function validateAnswer(answer,c){
  if(!Array.isArray(answer.sourceIds)||answer.sourceIds.length>c.sources.length||answer.sourceIds.some(id=>!c.sources.some(s=>s.id===id))||(answer.status==='answer'&&!answer.sourceIds.length))fail('invalid_provider_sources',502);
  return answer;
 }
+const providerKey=env=>env.LEARNING_COACH_API_KEY||env.OPENAI_API_KEY;
 export function settings(env){
  if(env.LEARNING_COACH_ENABLED!=='true')fail('coach_unavailable',503);
- for(const key of ['LEARNING_COACH_API_KEY','LEARNING_COACH_MODEL','LEARNING_COACH_ORIGIN','LEARNING_COACH_HASH_SECRET'])if(!env[key])fail('coach_unavailable',503);
+ for(const key of ['LEARNING_COACH_MODEL','LEARNING_COACH_ORIGIN','LEARNING_COACH_HASH_SECRET'])if(!env[key])fail('coach_unavailable',503);
+ if(!providerKey(env))fail('coach_unavailable',503);
  if(env.LEARNING_COACH_HASH_SECRET.length<32)fail('coach_unavailable',503);
  const inputRate=Number(env.LEARNING_COACH_INPUT_USD_PER_MILLION),outputRate=Number(env.LEARNING_COACH_OUTPUT_USD_PER_MILLION),budget=Number(env.LEARNING_COACH_DAILY_BUDGET_USD);
  if(![inputRate,outputRate,budget].every(x=>Number.isFinite(x)&&x>0)||budget>10)fail('coach_unavailable',503);
@@ -42,7 +44,7 @@ export async function coach(body,{env,ip,origin,store,provider=requestCoach}){
    practice:question?{prompt:question.prompt,selected:question.choices[body.selected],correct:body.selected===question.solution,correctAnswer:question.choices[question.solution],explanation:question.explanation}:null,
    ...(c.id==='ltv'?{workedExample:{propertyValue:400000,loan:320000,ltvPercent:320000/400000*100,downPaymentPercent:(400000-320000)/400000*100,note:'Arithmetic computed by code; value assumes purchase price and appraisal are both $400,000.'}}:{})};
   if(Buffer.byteLength(JSON.stringify(input))>14000)fail('context_too_large');
-  const {answer,usage}=await provider({apiKey:env.LEARNING_COACH_API_KEY,model:env.LEARNING_COACH_MODEL,input});
+  const {answer,usage}=await provider({apiKey:providerKey(env),model:env.LEARNING_COACH_MODEL,input});
   validateAnswer(answer,c);
   const next=c.questions.find(q=>q.id!==question?.id);
   const result={requestId:body.requestId,version:c.version,digest:c.digest,status:answer.status,explanation:answer.explanation,nextStep:answer.nextStep,

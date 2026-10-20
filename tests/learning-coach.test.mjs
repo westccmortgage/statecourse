@@ -55,3 +55,20 @@ test('HTTP invalid method, malformed/oversized body and feature disabled return 
  for(const text of ['{','x'.repeat(6001)])assert.equal((await handler({httpMethod:'POST',headers:{'content-type':'application/json'},body:text})).statusCode,400);
  const result=await handler({httpMethod:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(body())});assert.equal(result.statusCode,503);assert(!result.body.includes('isolated-test'));
 });
+
+test('Netlify OPENAI_API_KEY works without renaming and legacy scoped key keeps precedence',async()=>{
+ for(const legacy of [undefined,'legacy-synthetic']){
+  let received;const d=deps(async args=>{received=args.apiKey;return {answer,usage:{}};});
+  d.env={...env,LEARNING_COACH_API_KEY:legacy,OPENAI_API_KEY:'netlify-synthetic',GEMINI_API_KEY:'different-provider-synthetic'};
+  const result=await coach(body(),d);
+  assert.equal(received,legacy||'netlify-synthetic');
+  assert(!JSON.stringify(result).includes('synthetic'));
+  assert(!JSON.stringify(d.calls).includes('synthetic'));
+ }
+});
+test('Gemini key alone cannot authenticate the OpenAI coach; disabled feature still makes no call',async()=>{
+ for(const config of [{...env,LEARNING_COACH_API_KEY:undefined,GEMINI_API_KEY:'synthetic'},{...env,LEARNING_COACH_ENABLED:'false',OPENAI_API_KEY:'synthetic'}]){
+  const d=deps(()=>assert.fail('provider must not run'));d.env=config;
+  await assert.rejects(coach(body(),d),/coach_unavailable/);assert.equal(d.calls.length,0);
+ }
+});

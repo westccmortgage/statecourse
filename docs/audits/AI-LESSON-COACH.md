@@ -104,3 +104,9 @@ The local helper always disables AI calls. The browser verifier tests the real u
 ## Provider comparison extension — 2026-10-20
 
 An isolated [OpenAI/Gemini comparison project](../../experiments/lesson-coach/README.md) now reuses the pilot response schema and identical system instructions for both providers. Twelve synthetic cases cover misconceptions, arithmetic, refusals, unsupported jurisdictions, injection and Russian explanations. The public coach remains disabled and OpenAI-only; the Gemini adapter is confined to this local experiment. No live provider response has yet been obtained: both keys are present, but the environment proxy rejects API connectivity. See [continuation record](CONTINUATION-2026-10-20.md).
+
+## Netlify variable compatibility — October 19, 2026 (Los Angeles)
+
+The guarded OpenAI handler now accepts the existing Netlify `OPENAI_API_KEY` when the older dedicated `LEARNING_COACH_API_KEY` is unset. An existing dedicated key retains precedence. `GEMINI_API_KEY` is never sent to OpenAI; it remains the comparison adapter's credential. Both providers' secrets were visible as masked entries with Functions scope in the owner's Netlify screenshot, but the selected deploy contexts, deployed function version and provider authentication remain unverified.
+
+Thirty focused coach/comparison tests pass, including credential selection, no secret disclosure in responses/store arguments, wrong-provider rejection and disabled-feature behavior. Presence of a key does not enable the coach: the model, origin, hash secret, prices, budget, durable SQL store and enable flag still apply. No Netlify environment setting or production deployment was changed. This session has no Netlify account binding/token/connector, and read-only requests to the site and Netlify API are also rejected by the environment proxy. Runtime deployment/E2E remains externally blocked.
