@@ -20,7 +20,7 @@ async function handler(event){
   const env=await loadCoachEnvironment({env:process.env,store});
   const result=await coach(body,{env,ip:event.headers['x-nf-client-connection-ip'],origin:event.headers.origin,store});
   return {statusCode:200,headers,body:JSON.stringify(result)};
- }catch(e){return {statusCode:e instanceof SyntaxError?400:(e.status??503),headers,body:JSON.stringify({error:e.status?e.message:'coach_unavailable'})};}
+ }catch(e){if(/^(?:provider_(?:http_[0-9]{3}|incomplete|timeout|format|other)|invalid_provider_evidence_(?:shape|quote|text|citations))$/.test(e.coachFailureReason??''))headers['x-statecourse-coach-diagnostic']=e.coachFailureReason;return {statusCode:e instanceof SyntaxError?400:(e.status??503),headers,body:JSON.stringify({error:e.status?e.message:'coach_unavailable'})};}
 }
 
 // Keep the existing Lambda handler contract on the modern Netlify runtime.

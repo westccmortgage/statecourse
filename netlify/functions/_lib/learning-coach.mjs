@@ -71,6 +71,7 @@ export async function coach(body,{env,ip,origin,store,provider,allowPrivate=fals
   // Never release the reservation: provider timeouts can still be billable.
   await store('failed',{requestId:body.requestId,identity,payloadHash}).catch(()=>{});
   if(error.status)throw error;
-  fail('coach_unavailable',503);
+  const diagnostic=/^(?:provider_(?:http_[0-9]{3}|incomplete)|invalid_provider_evidence_(?:shape|quote|text|citations))$/.test(reason)?reason:(error?.name==='TimeoutError'?'provider_timeout':error instanceof SyntaxError?'provider_format':'provider_other');
+  throw Object.assign(Error('coach_unavailable'),{status:503,coachFailureReason:diagnostic});
  }
 }
