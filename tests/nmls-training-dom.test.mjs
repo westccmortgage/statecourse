@@ -72,7 +72,11 @@ test('NMLS training learner DOM, controller and existing portal cards', {
     const r = await setup();
     assert.equal(r.calls.length, 1); assert.equal(r.calls[0].operation, 'snapshot');
     assert.equal(r.document.getElementById('resumePanel').hidden, false);
-    await openFirst(r);
+    await r.click(r.document.getElementById('resumeTraining'));
+    assert.equal(r.api.client.view.snapshot.progress.currentUnitId, null);
+    assert.equal(Boolean(r.document.querySelector('.learning-coach')), false, 'Do not offer lesson coaching before a lesson is open');
+    await r.click(r.document.getElementById('nextAction'));
+    assert.ok(r.document.querySelector('.learning-coach'), 'Opening the lesson enables its coach');
     assert.ok(r.document.getElementById('lesson').textContent.includes('Learner reading'));
     assert.equal(r.document.getElementById('unitForm').querySelectorAll('input[type="radio"]').length, 4);
     assert.equal(r.document.getElementById('nextAction').disabled, true);

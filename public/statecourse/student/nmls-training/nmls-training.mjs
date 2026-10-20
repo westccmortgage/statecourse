@@ -43,7 +43,7 @@ export function mountTrainingWorkspace({ document: doc = globalThis.document, wi
   const canAct = () => ready() && !client.view.foregroundPending;
   const allUnits = p => p.modules.flatMap(m => m.units.map(u => ({ ...u, moduleId: m.id })));
   const visible = () => ready() && active() && Boolean(progress()?.quiz || progress()?.currentUnitId && selected === progress().currentUnitId);
-  const assistant=mountPrivateCoach({document:doc,window:win,anchor:el('lesson'),getContext:()=>{const s=snapshot(),p=progress();return ready()&&active()&&s?.phase==='source'&&!p?.quiz&&!s.assessment&&selected===p.currentUnitId?{enrollmentId:s.enrollmentId,unitId:p.currentUnitId,sessionId:p.sessionId}:null;}});
+  const assistant=mountPrivateCoach({document:doc,window:win,anchor:el('lesson'),getContext:()=>{const s=snapshot(),p=progress();return ready()&&active()&&s?.phase==='source'&&Boolean(p?.currentUnitId)&&!p.quiz&&!s.assessment&&selected===p.currentUnitId?{enrollmentId:s.enrollmentId,unitId:p.currentUnitId,sessionId:p.sessionId}:null;}});
   function resetIdle() {
     clearTimer(idleTimer);
     if (active() && !paused) idleTimer = setTimer(() => pause('idle'), 360000);
