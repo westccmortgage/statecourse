@@ -2,6 +2,10 @@
   command = "bash site/build.sh"
   publish = "dist"
 
+[build.environment]
+  # Netlify serves site/build.sh output; Next/Vinext belongs to the separate Sites artifact.
+  NETLIFY_NEXT_PLUGIN_SKIP = "true"
+
 [functions]
   included_files = [
     # Protected transcripts. These are served only to an authorised enrollment by the stream
