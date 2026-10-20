@@ -42,7 +42,9 @@ test('private mortgage coach uses authenticated current source, durable admissio
    return denied?json({message:'nmls_training_access_denied'},403):json(snapshot);
   }
   if(target.pathname==='/rest/v1/rpc/learning_coach_control'){
-   const {op,payload:p}=JSON.parse(options.body);assert.match(p.identity,/^[a-f0-9]{64}$/);assert.notEqual(p.identity,actor);
+   const {op,payload:p}=JSON.parse(options.body);
+   if(op==='settings')return json(Object.fromEntries(Object.entries(env).filter(([key])=>key.startsWith('LEARNING_COACH_')&&key!=='LEARNING_COACH_API_KEY')));
+   assert.match(p.identity,/^[a-f0-9]{64}$/);assert.notEqual(p.identity,actor);
    if(op==='reserve')return json(cache.has(p.requestId)?{status:'cached',response:cache.get(p.requestId)}:{status:'reserved'});
    if(op==='complete')cache.set(p.requestId,p.response);
    return json({status:'ok'});
@@ -73,5 +75,16 @@ test('private mortgage coach uses authenticated current source, durable admissio
  await t.test('regulator read-only role cannot use the student coach',async()=>{
   snapshot.reviewRole='regulator_reviewer';const count=modelCalls;
   try{assert.equal((await handler(request())).status,403);assert.equal(modelCalls,count);}finally{snapshot.reviewRole=null;}
+ });
+ await t.test('database-configured coach uses existing provider keys with no coach Lambda variables',async()=>{
+  const keys=Object.keys(env).filter(key=>key.startsWith('LEARNING_COACH_'));
+  for(const key of keys)delete process.env[key];
+  const count=modelCalls;
+  try{
+   const response=await handler(request());assert.equal(response.status,200);
+   const answer=await response.json();assert.equal(answer.provider,'openai');assert.equal(modelCalls,count+1);
+   assert.doesNotMatch(JSON.stringify(answer),/synthetic-model-key|synthetic-service|HASH_SECRET/);
+   assert.equal(JSON.stringify(snapshot.runtime),originalState);assert.equal(snapshot.revision,originalRevision);
+  }finally{for(const key of keys)process.env[key]=env[key];}
  });
 });

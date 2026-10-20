@@ -1,5 +1,14 @@
 # Real Estate State Rollout Board
 
+## Authorized AI activation continuation — October 19, 2026 (Los Angeles)
+
+Owner approved the production coach with a shared $1/day cap. The original coach ledger/control function is installed in the existing production database and passed SQL admission, replay, conflict, cross-identity budget and permission checks. Both same-commit redeploys then failed before publication due to the legacy Lambda 4 KB environment limit. All new coach environment entries were removed; the original ready deployment remains published and AI remains disabled. A targeted local patch moves only coach settings to the service-role-only, RLS-protected database configuration; 43 targeted tests and the Netlify build/protection checks pass. Lint is unavailable because eslint is missing. This patch is unpublished and needs a new commit rather than the originally specified exact revision. Real provider responses, citations/refusals and generated-answer production E2E remain **BLOCKED / UNVERIFIED**. No grade, progression, enrollment, payment, approval or regulatory-credit control was modified. See the production verification report linked below.
+
+
+## Production deployment verification — October 19, 2026 (Los Angeles)
+
+Netlify has published `bd8319ec758b0f6e08aaf178704064984954d833`; authenticated production `build.json` now confirms that exact revision. Real Estate practice coach UI was inspected at desktop/mobile widths; named consent and lesson-change clearing worked, ordinary formative grading continued, and actual AI requests displayed unavailable (503). Runtime enablement is false; required coach settings and verified production durable admission are missing from the acceptance evidence. No live OpenAI/Gemini answer or citation/refusal acceptance is established. [Production verification](../../audits/PRODUCTION-DEPLOYMENT-2026-10-20.md). No state approval, regulated enrollment, payment or credit control changed. This board update is local only.
+
 ## Uploaded DRE evidence — 2026-10-20
 
 All three uploaded California application volumes contain course-specific college-equivalence letters on page 14, with letterhead and visible signatures checked. Historical “letters absent” statements are superseded; acceptance is unverified. Uploaded copies retain pre-filing access/signature/date completion instructions and do not establish the final mailed set. Owner-reported DRE and separate NMLS submissions remain under review. See [package review](../../audits/DRE-UPLOADED-PACKAGES-2026-10-20.md). No launch or approval flags changed.

@@ -4,6 +4,7 @@ import {rpc} from './_lib/db.mjs';
 import {authorizeNmlsCoach,nmlsTrainingPublicError} from './_lib/nmls-training-service.mjs';
 import {coach,providerName} from './_lib/learning-coach.mjs';
 import {store} from './learning-coach.mjs';
+import {loadCoachEnvironment} from './_lib/learning-coach-settings.mjs';
 import library from '../../config/learning-coach/library.json' with {type:'json'};
 export const config={path:'/api/student/nmls/coach'};
 export default async function handler(request:Request):Promise<Response>{
@@ -23,9 +24,10 @@ export default async function handler(request:Request):Promise<Response>{
   const lesson=library.lessons.find(l=>l.access==='authenticated_training'&&l.courseId===access.courseId&&l.lessonId===access.unitId&&l.version===access.courseVersion&&l.courseDigest===access.courseDigest);
   if(!lesson)return reply(409,{error:'course_context_changed'});
   const body={requestId:input.requestId,courseId:lesson.courseId,state:lesson.state,lessonId:lesson.lessonId,version:lesson.version,digest:lesson.digest,conceptId:lesson.id,questionId:null,selected:null,message:input.message,consent:input.consent,consentProvider:input.consentProvider};
-  const name=providerName(process.env);
+  const env=await loadCoachEnvironment({env:process.env,store});
+  const name=providerName(env);
   if(input.consentProvider!==name)return reply(409,{error:'provider_consent_changed'});
-  const result=await coach(body,{env:process.env,origin:request.headers.get('origin'),ip:`student:${auth.student.id}:${input.enrollmentId}`,store,allowPrivate:true});
+  const result=await coach(body,{env,origin:request.headers.get('origin'),ip:`student:${auth.student.id}:${input.enrollmentId}`,store,allowPrivate:true});
   // A revoked enrollment, changed unit, quiz or stolen lease cannot expose a late answer.
   await authorizeNmlsCoach(input,auth.student.id,{rpc});
   return reply(200,result);
