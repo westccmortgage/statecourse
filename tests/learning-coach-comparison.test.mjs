@@ -4,11 +4,23 @@ import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
 import {requestGemini} from '../experiments/lesson-coach/providers.mjs';
+import {requestGemini as requestProductionGemini} from '../netlify/functions/_lib/learning-coach-gemini.mjs';
 import {instructions} from '../netlify/functions/_lib/learning-coach-provider.mjs';
 import {run,makeInput,assess} from '../experiments/lesson-coach/compare.mjs';
 import {cases} from '../experiments/lesson-coach/cases.mjs';
 import {portfolioCases} from '../experiments/lesson-coach/portfolio-cases.mjs';
 const answer={status:'answer',explanation:'Review attachment to land.',sourceIds:['property-lesson'],nextStep:'Read the source.'};
+test('production Gemini uses the model-compatible thinking control while retaining the token cap and schema',async()=>{
+ for(const [model,thinkingConfig] of [['gemini-2.5-flash-lite',{thinkingBudget:0}],['gemini-3.5-flash-lite',{thinkingLevel:'minimal'}]]){
+  const result=await requestProductionGemini({apiKey:'synthetic',model,input:{learnerMessage:'test'},fetcher:async(url,options)=>{
+   assert.equal(url,`https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`);
+   const body=JSON.parse(options.body);assert.deepEqual(body.generationConfig.thinkingConfig,thinkingConfig);
+   assert.equal(body.generationConfig.maxOutputTokens,800);assert.equal(body.generationConfig.responseJsonSchema.additionalProperties,false);
+   assert.equal(options.headers['x-goog-api-key'],'synthetic');assert.doesNotMatch(options.body,/synthetic/);
+   return {ok:true,json:async()=>({candidates:[{finishReason:'STOP',content:{parts:[{text:JSON.stringify(answer)}]}}]})};
+  }});assert.deepEqual(result.answer,answer);
+ }
+});
 test('Gemini sends key only in header, bounded generation and shared instructions; parses usage',async()=>{
  const result=await requestGemini({apiKey:'synthetic',model:'gemini-2.5-flash',input:{learnerMessage:'test'},fetcher:async(url,options)=>{
   assert.equal(url,'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent');

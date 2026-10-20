@@ -5,7 +5,8 @@ export async function requestGemini({apiKey,model,input,fetcher=fetch}){
  const response=await fetcher(`https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`,{
   method:'POST',headers:{'x-goog-api-key':apiKey,'content-type':'application/json'},signal:AbortSignal.timeout(15000),
   body:JSON.stringify({systemInstruction:{parts:[{text:instructions}]},contents:[{role:'user',parts:[{text:JSON.stringify(input)}]}],
-   generationConfig:{maxOutputTokens:800,responseMimeType:'application/json',responseJsonSchema:schema,thinkingConfig:{thinkingBudget:0}}})
+   generationConfig:{maxOutputTokens:800,responseMimeType:'application/json',responseJsonSchema:schema,
+    thinkingConfig:model.startsWith('gemini-2.5-')?{thinkingBudget:0}:{thinkingLevel:'minimal'}}})
  });
  if(!response.ok)throw Error('provider_unavailable');
  const result=await response.json(),candidate=result.candidates?.[0];
