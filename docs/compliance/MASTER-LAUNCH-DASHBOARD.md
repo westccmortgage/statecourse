@@ -1,15 +1,14 @@
 # StateCourse Master Launch Dashboard
 
-## Authorized AI activation continuation — October 19, 2026 (Los Angeles)
+## Production AI pilot verification — October 19, 2026 (Los Angeles)
 
-The owner-approved coach settings fix `f042f4d1b1cfa07a1afc87642666a5f6dca53121` is published (production deploy `6ad6e6529023cf2be35e93ec`), runtime enabled with a shared $1/day cap. Service-only RLS settings avoid the Lambda environment limit; original provider keys are unchanged. Real OpenAI answers were observed in Real Estate and Mortgage, named consent is required, and Real Estate lesson changes clear a generated answer. Manual review found an application/completed-application conflation and an over-attributed refusal; a targeted shared-prompt correction is being verified. Gemini/mobile generation, provider switching, logout and live revocation remain unverified. 43 targeted tests and the production build pass; lint unavailable (eslint absent). No grade, completion, payment, approval or regulatory-credit control changed. The older deployment snapshots below are historical; use the current production verification report for acceptance status.
+Production coach pilot is enabled on code `bf0433a4d7cc1fafa2f370fc43ced76142fcf36c` (ready deploy `6ad6e8e5ebf75c110bf19d98`). Real OpenAI and current Gemini 3.5 Flash-Lite answers were observed in Real Estate and authenticated Mortgage, with matching lesson excerpts, named consent, refusal samples and desktop/mobile inspection. Lesson change, pause and sign-out cleared generated answers; revisit after sign-out rejected the private session. OpenAI/gpt-4.1-mini is restored as default. Service-only RLS configuration preserves the shared $1/day cap without extra Lambda variables; existing provider keys are unchanged. Production ledger:11 complete,2 failed, $0.095761 conservatively reserved.44 targeted tests and the production build pass; lint unavailable (eslint absent). Latest protected build.json after MFA expiry, actual enrollment revocation and portfolio-wide semantic/learning quality remain unverified. No knowledge-check answer graded, unit completed, payment or regulatory-credit/approval control changed; Mortgage remains 0/45 units, 0/8 practices. This is functional non-credit pilot evidence, not regulatory launch approval.
 
-
-## Production deployment verification — October 19, 2026 (Los Angeles)
+## Historical deployment snapshot — before coach activation
 
 Netlify's current production deploy `6ad6d1fbefcea6ce2fecda4a` identifies the requested commit `bd8319ec758b0f6e08aaf178704064984954d833`; authenticated production `build.json` readback now independently confirms it. The exact checkout passes `bash site/build.sh`. Staff access and an existing enrolled Mortgage student session were exercised. Both coaches' desktop/mobile requests show unavailable; named consent and Mortgage pause removal work. Live AI acceptance remains **BLOCKED**: runtime disabled, required coach settings absent, production durable storage unverified, and no real OpenAI/Gemini response. [Observed results and precise remaining gates](../audits/PRODUCTION-DEPLOYMENT-2026-10-20.md). No production setting, payment, approval or credit control changed. This evidence update is local and has not been deployed.
 
-## AI teaching and technical update — October 19, 2026 (Los Angeles)
+## Historical local implementation snapshot — October 19, 2026
 
 Local implementation now covers 284 Real Estate lessons across 30 catalog courses and 45 authenticated national Mortgage teaching units, with shared OpenAI/Gemini adapters and versioned lesson chunks. Student reading surfaces are connected; assessment and regulator-review boundaries are retained. Local HTTP/SQL/DOM/browser evidence is documented in [AI coverage](../audits/AI-COVERAGE-2026-10-19.md). Provider authentication, live model quality, production migration/deployment and student production E2E remain unverified. No approval, credit, commerce or launch enablement flag changed.
 
@@ -23,7 +22,7 @@ All three uploaded California application volumes contain course-specific colleg
 
 California DRE and the separate NMLS package are **submitted / under review**, as confirmed by the owner in this task. This supersedes historical "not submitted" and "waiting for initial access" assumptions below; no regulator approval was verified. Florida is waiting on the owner's personal broker application, distinct from school/course authorization. Dates/IDs/receipts remain to be recorded.
 
-[Portfolio audit and 51-jurisdiction inventory](../audits/STATECOURSE-AUDIT-2026-10-19.md): 30 catalog Real Estate courses in 14 states, additional Florida development and Illinois structural work; one national non-credit NMLS offering; 24 state-supplement plans not yet authored in the blueprint. AI Lesson Coach has the local course coverage described above; production activation and learning effectiveness remain unverified. No commerce, approval or credit flags changed.
+[Portfolio audit and 51-jurisdiction inventory](../audits/STATECOURSE-AUDIT-2026-10-19.md): 30 catalog Real Estate courses in 14 states, additional Florida development and Illinois structural work; one national non-credit NMLS offering; 24 state-supplement plans not yet authored in the blueprint. AI Lesson Coach production pilot activation is verified above; portfolio-wide learning effectiveness remains unverified. No commerce, approval or credit flags changed.
 
 Last verified: 2026-09-19. Target: **NMLS launch in October 2026**. This is an operational control board, not regulatory evidence.
 
