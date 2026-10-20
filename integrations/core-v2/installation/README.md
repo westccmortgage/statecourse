@@ -1,6 +1,6 @@
 # Prepared initial installation — Core database only
 
-Status: **prepared and locally verified; NOT applied to hosted Supabase**.
+Status: **applied after explicit approval** to the named Core project. See [APPLIED.md](APPLIED.md) and [applied-receipt.json](applied-receipt.json) for the managed migration, live read-back and advisor blockers. Do not replay this initial package. The original preparation instructions below describe its reviewed contents.
 
 The only proposed target is [StateCourse Core](https://supabase.com/dashboard/project/hkzhburprkwtnoeqbinh): project `hkzhburprkwtnoeqbinh`, organization `tusgtiwudezeofsxleet`, region `us-west-1`, database `postgres`. Existing approval covered creating an empty project only. Applying this package changes that remote schema and requires a new explicit approval under repository AGENTS.md. It does not authorize source DB changes, deployment, credentials changes, provider spending or background runners.
 
@@ -39,7 +39,7 @@ The authenticated connector verified this exact new project, before any applicat
 - pgcrypto `1.3` is installed in `extensions`; `extensions.digest(text,text)` exists, public.digest does not. Upstream 065 explicitly includes extensions on its function path; no extension relocation/wrapper was added.
 - Existing public-schema default grants include anon/authenticated/service_role for tables, sequences and functions. Those settings were read, not modified. The native test models the relevant broad grants and verifies no public base table is readable by anon without RLS after installation. Private result-schema usage is denied to all three API roles.
 
-No hosted DDL, DML, migration, grant, secret read or service configuration change was performed. Source access/RLS and host selection blockers in [ACTIVATION_REVIEW.md](../ACTIVATION_REVIEW.md) remain unresolved and do not have to be bypassed to install an isolated Core schema later.
+At baseline capture no hosted DDL, DML, migration, grant, secret read or service configuration change had been performed; the subsequent approved installation is recorded in APPLIED.md. Source access/RLS and host selection blockers in [ACTIVATION_REVIEW.md](../ACTIVATION_REVIEW.md) remain unresolved and do not have to be bypassed to use the now-installed Core schema later.
 
 ## Native local verification
 
@@ -62,9 +62,9 @@ node --experimental-strip-types --no-warnings integrations/core-v2/scripts/test-
 
 The harness accepts only a local binary directory, creates its own temporary cluster and TLS fixture, and stops/removes only that cluster afterwards. It accepts no hosted URL. The executed macOS binary came from the isolated temporary `@embedded-postgres/darwin-arm64@17.10.0-beta.17` package; this is not an added application/CI runtime dependency. Native verification is a separate optional local command; CI's normal suite verifies package integrity and the existing offline integration behavior.
 
-Not yet verified: actual hosted installation under Supabase's managed migration identity, hosted Auth/Storage ownership/default-policy details beyond the read-only baseline, security advisors after DDL, native Supabase worker grants and live source authorization. Local PostgreSQL 17.10 is not the target's exact 17.11 build. No provider is contacted by these installation checks.
+Hosted installation and post-DDL advisors are now verified in APPLIED.md. Still unverified: hosted functional worker/RLS operations, complete managed Auth/Storage policy behavior, native Supabase worker grants and live source authorization. Local PostgreSQL 17.10 is not the target's exact 17.11 build. No provider is contacted by these installation checks.
 
-## After separate approval
+## Installation follow-up scope (schema approval now fulfilled)
 
 1. Recheck project identity, empty schemas and empty migration history immediately before applying this exact hash.
 2. Apply only this reviewed initial package to the named Core project, retaining the original source/Core projects unchanged. If any outcome is uncertain, inspect managed migration history/schema before a retry.

@@ -1,6 +1,6 @@
 # StateCourse → Core server bridge
 
-This is an isolated Node service, not a new StateCourse application dependency or an installed Netlify route. It is disabled by default. No provisioning, secrets, source DB grants, migrations, reverse proxy settings or deployment are applied by the PR. The original Core stays intact. Do not run this service against hosted targets without separate approval.
+This is an isolated Node service, not a new StateCourse application dependency or an installed Netlify route. It is disabled by default. The server performs no automatic provisioning, migrations, source grants, proxy changes or deployment. Separately approved Core provisioning/schema actions and remaining permission blockers are recorded in [APPLIED.md](../installation/APPLIED.md). The original Core stays intact. Do not run this service against hosted targets without separate approval.
 
 ## Local installation and disabled startup
 
@@ -46,7 +46,7 @@ Source sessions start with `default_transaction_read_only=on`; every source oper
 
 Existing source read permissions must cover all allowlisted tables, current-binding view prerequisites and private proof validation; missing permissions fail closed. This PR does not grant them, create a source account or substitute a Supabase service-role key. The read-only session option is defense in depth, not a substitute for least-privilege existing DB credentials. If such a credential does not exist, activation remains blocked pending separate approval.
 
-For Core, apply the ordered existing Core schema prerequisites and then the isolated result-store migration described in [STORAGE.md](../STORAGE.md), only to the separately approved Core target. Confirm organization and dedicated writer membership in `statecourse_core_store` without introducing source writes. No additional schema migration is needed for this bridge; none has been applied remotely. Native PostgreSQL role/RLS/TLS behavior and account/hosting configuration still require approved target verification.
+For Core, apply the ordered existing Core schema prerequisites and then the isolated result-store migration described in [STORAGE.md](../STORAGE.md), only to the separately approved Core target. Confirm organization and dedicated writer membership in `statecourse_core_store` without introducing source writes. The initial schema package is now installed only in the separately approved Core project; remote runtime/permission setup is not complete. Native PostgreSQL role/RLS/TLS behavior and account/hosting configuration still require approved target verification.
 
 ## Verification
 

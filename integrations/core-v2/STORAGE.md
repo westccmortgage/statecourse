@@ -6,7 +6,7 @@ StateCourse is the source of enrollment, content, progress, payment and regulato
 
 The new migration is `storage/supabase/migrations/20261020021909_statecourse_readonly_results.sql`, generated locally with the official Supabase CLI's `migration new` command. It is not added to StateCourse `database/`, root `supabase/migrations/` or the byte-locked upstream history. No migration is automatically applied by the application or CI to any hosted database.
 
-Only an independently approved Core target may receive it. It checks for `public.enrollments` **before creating anything** and refuses if that StateCourse source table exists. Both writer connectors also check the expected database name and absence of that table before writes. Database names alone are not unique Supabase project identities: an operator must independently confirm the actual TLS host/project and credentials before any future application. The separately approved empty StateCourse Core project now exists; it is not linked or enabled by this PR. The [reviewed initial installation package](installation/README.md) fixes its target and constituent hashes; it has not been applied.
+Only an independently approved Core target may receive it. It checks for `public.enrollments` **before creating anything** and refuses if that StateCourse source table exists. Both writer connectors also check the expected database name and absence of that table before writes. Database names alone are not unique Supabase project identities: an operator must independently confirm the actual TLS host/project and credentials before any future application. The separately approved empty StateCourse Core project now exists; it is not linked or enabled by this PR. The [reviewed initial installation package](installation/README.md) fixes its target and constituent hashes; it has now been applied after explicit approval; [APPLIED.md](installation/APPLIED.md) records live verification and remaining advisor blockers.
 
 ## Schema
 
@@ -24,7 +24,7 @@ The store opens a transaction, sets the restricted role and transaction-local or
 
 Core worker credentials need approved membership in that storage role. The provider worker also needs the existing Core orchestration/budget privileges in its own database. Neither credential belongs in a client or in this repository. Do not reuse a StateCourse source service-role key as the Core writer or assume a table grant bypasses RLS.
 
-## Ordered installation plan — not executed here
+## Ordered installation plan — initial schema now applied; activation remains closed
 
 1. Confirm an approved **isolated Core** database/TLS endpoint and intended server SQL roles; run a read-only identity/source-table preflight before applying any SQL. Historical upstream migrations do not contain the new StateCourse guard, so the preflight must precede that history too. Provisioning, schema installation and grants require separate approval.
 2. For the provider runtime, use the actual Core schema/migration history: the copied original chain in filename order through 076 and the later voice migrations. Core 058/059 requires earlier organization/project/evidence prerequisites; applying only those two files is insufficient. Existing Supabase auth/storage substrate is required. Do not deploy the test substrate to a real database.
@@ -50,4 +50,4 @@ The source keeps its statement timeouts/1000-row bound, observations remain capp
 
 Tests exercise actual SQL, RLS/immutability, budget reservations and provider protocols locally, including an actual file-backed database close/reopen. Hosted Supabase advisors, native PostgreSQL concurrency, real credentials/model availability/prices, production privileges, retention/backup operations and deployment are not verified. Data retention/deletion has no API here; any future policy must preserve required audit evidence and be reviewed separately. No business readiness, credit, signoff or launch state changes are claimed.
 
-The exact 79-file initial package and native PostgreSQL rollback/TLS/restart evidence are in [installation/README.md](installation/README.md). Installing it is a separate remote schema approval, not part of the earlier empty-project approval.
+The exact 79-file initial package and native PostgreSQL rollback/TLS/restart evidence are in [installation/README.md](installation/README.md). Its separate remote schema approval was received and installation was completed; this did not authorize further activation or remediation.

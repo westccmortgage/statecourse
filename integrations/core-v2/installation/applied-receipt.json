@@ -1,0 +1,122 @@
+{
+  "formatVersion": 1,
+  "localDate": "2026-10-19",
+  "timezone": "America/Los_Angeles",
+  "target": {
+    "projectId": "hkzhburprkwtnoeqbinh",
+    "organizationId": "tusgtiwudezeofsxleet",
+    "name": "StateCourse Core",
+    "region": "us-west-1",
+    "database": "postgres",
+    "postgresVersion": "17.11"
+  },
+  "authorization": "Explicit user approval to apply the reviewed package; no other activation/permission changes authorized.",
+  "package": {
+    "migrationCount": 79,
+    "sha256": "01c0a165b54840b225fcb16b68ad8956111d99f516bab3aa35ae2f037b656c15",
+    "reviewCommit": "4753788bc83e852d45f1a2562fd2e62cad94b70f",
+    "upstreamCommit": "ec287c5d0d3e6dcc401026ac43691a054f0f43da"
+  },
+  "migration": {
+    "version": "20261020033109",
+    "name": "statecourse_core_initial_install_v1",
+    "success": true
+  },
+  "verification": {
+    "publicTables": 88,
+    "privateResultTables": 3,
+    "privateForcedRlsTables": 3,
+    "sourceAbsent": true,
+    "workflowsPresent": true,
+    "budgetsPresent": true,
+    "workflows": 0,
+    "budgets": 0,
+    "organizations": 0,
+    "resultRuns": 0,
+    "runnerSettings": 0,
+    "anonymousPublicTablesWithoutRls": 0,
+    "privateSchemaUsage": {
+      "anon": false,
+      "authenticated": false,
+      "service_role": false
+    },
+    "storeRole": {
+      "canlogin": false,
+      "superuser": false,
+      "createdb": false,
+      "createrole": false,
+      "inherit": false,
+      "bypassrls": false
+    }
+  },
+  "advisors": {
+    "security": [
+      {
+        "name": "rls_enabled_no_policy",
+        "title": "RLS Enabled No Policy",
+        "level": "INFO",
+        "count": 21,
+        "remediation": "https://supabase.com/docs/guides/database/database-linter?lint=0008_rls_enabled_no_policy"
+      },
+      {
+        "name": "function_search_path_mutable",
+        "title": "Function Search Path Mutable",
+        "level": "WARN",
+        "count": 63,
+        "remediation": "https://supabase.com/docs/guides/database/database-linter?lint=0011_function_search_path_mutable"
+      },
+      {
+        "name": "anon_security_definer_function_executable",
+        "title": "Public Can Execute SECURITY DEFINER Function",
+        "level": "WARN",
+        "count": 21,
+        "remediation": "https://supabase.com/docs/guides/database/database-linter?lint=0028_anon_security_definer_function_executable"
+      },
+      {
+        "name": "authenticated_security_definer_function_executable",
+        "title": "Signed-In Users Can Execute SECURITY DEFINER Function",
+        "level": "WARN",
+        "count": 66,
+        "remediation": "https://supabase.com/docs/guides/database/database-linter?lint=0029_authenticated_security_definer_function_executable"
+      }
+    ],
+    "performance": [
+      {
+        "name": "unindexed_foreign_keys",
+        "title": "Unindexed foreign keys",
+        "level": "INFO",
+        "count": 195,
+        "remediation": "https://supabase.com/docs/guides/database/database-linter?lint=0001_unindexed_foreign_keys"
+      },
+      {
+        "name": "auth_rls_initplan",
+        "title": "Auth RLS Initialization Plan",
+        "level": "WARN",
+        "count": 7,
+        "remediation": "https://supabase.com/docs/guides/database/database-linter?lint=0003_auth_rls_initplan"
+      },
+      {
+        "name": "unused_index",
+        "title": "Unused Index",
+        "level": "INFO",
+        "count": 113,
+        "remediation": "https://supabase.com/docs/guides/database/database-linter?lint=0005_unused_index"
+      },
+      {
+        "name": "multiple_permissive_policies",
+        "title": "Multiple Permissive Policies",
+        "level": "WARN",
+        "count": 42,
+        "remediation": "https://supabase.com/docs/guides/database/database-linter?lint=0006_multiple_permissive_policies"
+      }
+    ]
+  },
+  "activation": "blocked_pending_RPC_permissions_and_runtime_access_review",
+  "exclusions": [
+    "No source StateCourse or original Core changes",
+    "No organization/user/login/credential bootstrap",
+    "No provider calls or budgets",
+    "No host/proxy/deployment changes",
+    "No remediation DDL beyond approved package"
+  ]
+}
