@@ -1,11 +1,23 @@
-# Production deployment verification — October 19, 2026, Los Angeles
+# Production coach verification — October 19, 2026, Los Angeles
+
+## Current result
+
+Owner-approved settings fix `f042f4d1b1cfa07a1afc87642666a5f6dca53121` is published in production deploy `6ad6e6529023cf2be35e93ec` (ready, main, published 2026-10-20T03:56:38.937Z). Runtime GET returns OpenAI/enabled=true. The RLS-protected, service-only coach settings row supplies the existing guarded runtime without adding Lambda environment entries. Existing provider credentials remain unchanged. The shared daily reservation cap is $1 (UTC accounting day), input/output ceilings $0.40/$1.60 per million, OpenAI model gpt-4.1-mini. Previous row was disabled with the other fields unset; rollback disables this row while preserving accounting. The hashing original remains protected outside Git; current fingerprint and execution details appear below.
+
+Real OpenAI requests succeeded in California Real Estate Principles and the owner's existing free Mortgage training enrollment at desktop width. Real Estate citations expand to the corresponding current lesson; changing lessons cleared the generated answer, question and consent. Consentless submission is blocked in both UIs. Mortgage completion remains 0/45 units and 0/8 practices; no answers were graded or units completed. Normal non-credit resume/activity bookkeeping occurred.
+
+Manual review found two quality defects: the first Mortgage explanation conflated a Regulation B application with a completed application, contrary to the cited lesson and CFPB §1002.2(f) (https://www.consumerfinance.gov/rules-policy/regulations/1002/2/). A protected-exam/approval request was refused without granting anything, but the explanation wrongly attributed the coach's own boundary to the lesson. A follow-up shared-prompt patch preserves exact legal distinctions, separates coach refusals from lesson claims and keeps opaque source IDs out of prose. This patch requires real repeated acceptance; passing adapter tests alone does not establish response quality.
+
+Validation: 42 targeted settings/coach/provider/private-endpoint tests plus the real embedded SQL test passed, zero skipped. `bash site/build.sh` passed with zero private artifact violations and five answer-key protection checks. Lint remains unverified because eslint is absent. Gemini, mobile generated responses, provider-switch consent, generated-answer logout, live enrollment revocation and the latest protected build.json remain pending. Earlier observations below are historical snapshots, not the current state.
+
+## Historical execution record
 
 ## Publication authorized — October 19, 2026, 20:52 Los Angeles
 
 The owner authorized publishing the reviewed fix in a new commit, replacing the original exact-revision constraint. Scope remains the coach settings loader, two coach endpoints, the explicit control-script update, tests and evidence/Launch Control documentation. The shared $1/day cap and existing provider keys are preserved. Production application settings table/row must be checked before applying the script; prior control-function source is recoverable from the original commit and prior script record. New configuration is disabled until the guarded generation test is ready; rollback sets its enabled value false and preserves the ledger. No other environment setting or production function is modified.
 
 
-## Latest state — activation attempt and reviewed local fix
+## Historical snapshot — activation attempt before publication
 
 **Production still serves `bd8319ec758b0f6e08aaf178704064984954d833` from deploy `6ad6d1fbefcea6ce2fecda4a`; generation remains disabled.** Two authorized same-commit activation deploys (`6ad6df229e7e156f60f6ba3d`, `6ad6e0265dded3ad1620e6bf`) built successfully but failed before publication because the legacy Lambda environment exceeded 4 KB. The second used only the seven required coach variables and a 32-character random secret; it failed for the same reason. All newly added coach variables were removed to restore their original unset baseline, including the provider override. Existing credentials and other settings were not changed. The original coach budget ledger/control function remains installed and SQL-tested; one synthetic failed reservation of 1 micro is retained, with no model call or provider charge.
 
@@ -120,3 +132,15 @@ The durable probe finalization returned `recorded`; its single 1-micro ledger en
 
 
 The bounded correction is applied to configuration only: provider override removed (OpenAI remains the default); hashing secret is 32 random base64url characters / 192 bits. Current SHA-256 fingerprint: `e5eca58f20783193ea44df4d22ca4761f49680d0b7a313fdce6a3714a0d52e83`. Previous 96-character original is recoverable in protected `.env.local`. Functions-only / production-only scope and secret masking were confirmed by the Netlify UI after saving. All required caps and checks are retained; no unrelated variable changed. Seven coach variables now remain. A second same-commit rebuild is pending.
+
+
+## Approved publication execution — October 19, 2026, after 20:52 Los Angeles
+
+New reviewed candidate commit: `f042f4d1b1cfa07a1afc87642666a5f6dca53121`, parent `bd8319ec758b0f6e08aaf178704064984954d833`; remote main was verified at that parent before creation. The tree contains only the eleven reviewed coach SQL/source/test/evidence files. No branch/preview environment is created.
+
+Fresh production SQL baseline: settings table NULL, ledger rows 1, prior control function MD5 `356cc7f414139e0b2fab39f6b2154b35`. Previous non-secret function definition is recoverable from the original script/commit. The dedicated HMAC secret remains recoverable from protected ignored `.env.local`; current fingerprint `e5eca58f20783193ea44df4d22ca4761f49680d0b7a313fdce6a3714a0d52e83`. Planned change scope is only the new coach settings table and existing coach control function. Reapply reviewed script, verify seeded disabled row/roles, publish new code through main with an expected-SHA lease, then set the row to the approved $1/day configuration. Rollback first disables the settings row (service role only); preserve request accounting and restore the prior function source if code is intentionally restored later. No unrelated credentials or configuration are touched.
+
+
+Schema revision applied successfully. Seeded settings row is disabled; RLS=true, anon read=false, authenticated read=false, anon RPC execute=false, service_role RPC execute=true. Main advanced with an expected-SHA lease to `f042f4d1b1cfa07a1afc87642666a5f6dca53121`. No preview or branch environment created.
+
+Preconfiguration row has only `LEARNING_COACH_ENABLED=false`; all other coach row fields are unset. Set the reviewed row to disabled/OpenAI/gpt-4.1-mini/origin statecourse.com, positive $0.40/$1.60 per-million-token ceilings, $1 daily budget and the protected HMAC secret already fingerprinted above. A later explicit activation changes enabled=false to true for guarded testing. Provider-specific tests may switch row provider/model only; the same conservative ceilings and shared ledger cover both. Rollback is enabled=false (no secret retrieval required); preserve all request reservations. No provider key is stored in the row or returned to a browser.
