@@ -1,5 +1,7 @@
 # AI Lesson Coach: decision, implementation and acceptance
 
+Current implementation: [all-course coverage and dual-provider integration, October 19, 2026](AI-COVERAGE-2026-10-19.md). The initial three-concept pilot below is retained as design history; coverage now includes all 30 catalog Real Estate courses and the 45 authenticated national Mortgage teaching units.
+
 ## Решение для владельца
 
 **Рекомендация: ограниченный измеряемый пилот, не полномасштабное внедрение.** Контекстный разбор ошибки имеет разумную учебную цель: показать, где ломается рассуждение, сослаться на текст и предложить перенос знания на другой вопрос. Но для StateCourse ещё нет измеренного эффекта, реальных ответов выбранной модели или данных удержания знаний. Обещать проценты улучшения, экономию преподавателей или рост сдачи экзамена сейчас нельзя.
@@ -8,7 +10,7 @@
 
 Предпочтительная следующая функция после пилота — **очередь повторения ошибочных понятий**: deterministic scheduling, другие проверенные задания, повтор через 2–7 дней, AI только для объяснения. Она дешевле бесконечного чата и позволяет измерить перенос знаний. Ещё полезнее для команды — единая очередь source freshness / SME / application / runtime blockers; текущий audit generator уже даёт её исходный инвентарь. Векторная база и несколько моделей на каждый ответ сейчас не нужны.
 
-## Pilot scope
+## Initial pilot scope (superseded by the coverage report)
 
 The existing Netlify free-practice route remains anonymous. The optional UI covers only California Real Estate Principles and three pinned concepts:
 
@@ -62,7 +64,7 @@ For this branch:
 
 - 25 new tests passed, including actual isolated PGlite execution of the migration, durable quota/budget/duplicate behavior and role permissions. Core/provider tests use synthetic responses and explicitly do not prove model quality.
 - 71 targeted tests passed: free-practice regressions, public answer-key protection and new core tests. Netlify build and its 5 public artifact/privacy gates passed.
-- Chromium desktop 1440×1000 and mobile 390×844: ordinary wrong-answer feedback, actual disabled backend response, optional coach UI with **labelled synthetic fixture**, next existing question graded by the original code, and hidden coach on unsupported course. No page errors or horizontal overflow. Screenshots retained under ignored `work/coach-qa/`; they are not live-AI evidence.
+- Chromium desktop 1440×1000 and mobile 390×844: ordinary wrong-answer feedback, actual disabled backend response, optional coach UI with **labelled synthetic fixture**, next existing question graded by the original code, and clearing stale answers on course changes; the expanded coverage report supersedes the original unsupported-course behavior. No page errors or horizontal overflow. Screenshots retained under ignored `work/coach-qa/`; they are not live-AI evidence.
 - Three context pins and canonical lesson/bank correspondence checked; malformed fields, foreign scopes, arbitrary source IDs, provider errors, timeouts, malformed output and replays tested.
 - Real provider smoke: **NOT RUN**. Actual latency, token cost, response quality, two genuinely different reasoning responses, meaningful refusal and adversarial source/prompt behavior are **unverified**. Full deployed learner E2E and production migration are unverified.
 
@@ -103,10 +105,10 @@ The local helper always disables AI calls. The browser verifier tests the real u
 
 ## Provider comparison extension — 2026-10-20
 
-An isolated [OpenAI/Gemini comparison project](../../experiments/lesson-coach/README.md) now reuses the pilot response schema and identical system instructions for both providers. Twelve synthetic cases cover misconceptions, arithmetic, refusals, unsupported jurisdictions, injection and Russian explanations. The public coach remains disabled and OpenAI-only; the Gemini adapter is confined to this local experiment. No live provider response has yet been obtained: both keys are present, but the environment proxy rejects API connectivity. See [continuation record](CONTINUATION-2026-10-20.md).
+An isolated [OpenAI/Gemini comparison project](../../experiments/lesson-coach/README.md) now reuses the pilot response schema and identical system instructions for both providers. Twelve synthetic cases cover misconceptions, arithmetic, refusals, unsupported jurisdictions, injection and Russian explanations. The application now supports both adapters server-side; production activation and runtime behavior remain unverified. No live provider response has yet been obtained: both keys are present, but the environment proxy rejects API connectivity. See [continuation record](CONTINUATION-2026-10-20.md).
 
 ## Netlify variable compatibility — October 19, 2026 (Los Angeles)
 
-The guarded OpenAI handler now accepts the existing Netlify `OPENAI_API_KEY` when the older dedicated `LEARNING_COACH_API_KEY` is unset. An existing dedicated key retains precedence. `GEMINI_API_KEY` is never sent to OpenAI; it remains the comparison adapter's credential. Both providers' secrets were visible as masked entries with Functions scope in the owner's Netlify screenshot, but the selected deploy contexts, deployed function version and provider authentication remain unverified.
+The guarded OpenAI handler now accepts the existing Netlify `OPENAI_API_KEY` when the older dedicated `LEARNING_COACH_API_KEY` is unset. An existing dedicated key retains precedence. `GEMINI_API_KEY` is never sent to OpenAI; it is used only when the application or comparison selects Gemini. Both providers' secrets were visible as masked entries with Functions scope in the owner's Netlify screenshot, but the selected deploy contexts, deployed function version and provider authentication remain unverified.
 
 Thirty focused coach/comparison tests pass, including credential selection, no secret disclosure in responses/store arguments, wrong-provider rejection and disabled-feature behavior. Presence of a key does not enable the coach: the model, origin, hash secret, prices, budget, durable SQL store and enable flag still apply. No Netlify environment setting or production deployment was changed. This session has no Netlify account binding/token/connector, and read-only requests to the site and Netlify API are also rejected by the environment proxy. Runtime deployment/E2E remains externally blocked.

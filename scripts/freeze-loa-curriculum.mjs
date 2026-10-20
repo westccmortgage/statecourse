@@ -29,7 +29,7 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const HOME = path.join(root, "texas/tx-law-of-agency-30-v1");
 const OUT = path.join(HOME, "content-freeze.json");
 const COURSE_ID = "tx-law-of-agency-30-v1";
-const FREEZE_ID = "LOA-CONTENT-FREEZE-2026-09-13-v19";
+const FREEZE_ID = "LOA-CONTENT-FREEZE-2026-10-19-v20";
 
 /**
  * FREEZE HISTORY. A freeze that is broken and silently re-taken teaches nothing. Every break is
@@ -37,6 +37,20 @@ const FREEZE_ID = "LOA-CONTENT-FREEZE-2026-09-13-v19";
  * than requiring someone to reconstruct it from git.
  */
 const BREAK_HISTORY = Object.freeze([
+  Object.freeze({
+  "brokeFreeze": "LOA-CONTENT-FREEZE-2026-09-13-v19",
+  "on": "2026-10-19",
+  "module": "NONE \u2014 no authored curriculum, questions or answer keys changed.",
+  "change": "Update dependency pointer to video freeze 2026-10-19-v16 after reviewing shared Netlify AI route/cache additions and optional public-source reading coach in the shared player host. Assessment and reviewer modes suppress the coach. Update exported contentFreeze identifier.",
+  "reason": "Restore versioned dependency integrity after explicit comparison against the exact historical netlify.toml; preserve unchanged Texas Stream routes/CSP and existing approval gates.",
+  "previousFreezeSha256": "da18e4f962567a87efdb54d10511b7871620adfe16e9f2a672e6ff29f1d9228f",
+  "auditsReRun": [
+    "node scripts/validate-loa-video-packages.mjs",
+    "node scripts/freeze-loa-video-plan.mjs --write",
+    "node scripts/freeze-loa-curriculum.mjs --write",
+    "node --test tests/cloudflare-stream-security.test.mjs tests/texas-video-integration.test.mjs tests/texas-law-of-agency.test.mjs tests/video-portfolio.test.mjs"
+  ]
+}),
   Object.freeze({
     brokeFreeze: "LOA-CONTENT-FREEZE-2026-09-12-v18",
     on: "2026-09-13",

@@ -373,7 +373,7 @@ export function nmlsTrainingPublicError(error) {
   const descriptor = error && typeof error === 'object' ? Object.getOwnPropertyDescriptor(error, 'message') : null;
   const code = descriptor && Object.hasOwn(descriptor, 'value') && typeof descriptor.value === 'string' ? descriptor.value : '';
   const unauthorized = ['nmls_training_authentication_required', 'student_auth_required', 'invalid_student_session'];
-  const forbidden = ['origin_not_allowed', 'nmls_training_access_denied', 'nmls_training_access_revoked', 'nmls_training_gate_closed', 'nmls_training_read_only'];
+  const forbidden = ['origin_not_allowed', 'nmls_training_access_denied', 'nmls_training_access_revoked', 'nmls_training_gate_closed', 'nmls_training_read_only', 'nmls_training_coach_access_denied'];
   const conflicts = ['nmls_training_revision_conflict', 'nmls_training_idempotency_conflict', 'nmls_training_content_changed',
     'nmls_training_phase_conflict', 'nmls_training_assessment_scope', 'nmls_training_resume_required', 'nmls_training_clock_refresh_required',
     'nmls_training_event_conflict', 'nmls_training_phase_closed', 'nmls_training_scope_mismatch',
@@ -381,4 +381,18 @@ export function nmlsTrainingPublicError(error) {
   const status = unauthorized.includes(code) ? 401 : code === 'nmls_training_invalid_request' || code === 'nmls_final_invalid_answers' ? 400
     : forbidden.includes(code) ? 403 : conflicts.includes(code) ? 409 : 503;
   return { status, body: { error: status === 503 ? 'nmls_training_unavailable' : code } };
+}
+
+// Read-only AI authorization. Reuses the full runtime integrity validation; it
+// cannot acquire a lease, record time, grade an answer or change progress.
+export async function authorizeNmlsCoach({enrollmentId,unitId,sessionId},studentId,{rpc,courseFor=getNmlsReviewCourse,definitionFor=trainingDefinition}={}) {
+  if(!uuid(enrollmentId)||!uuid(sessionId)||typeof unitId!=='string'||unitId.length>100)fail('invalid_request');
+  const course=courseFor(NMLS_TRAINING_SOURCE_KEY),definition=definitionFor(NMLS_TRAINING_SOURCE_KEY);
+  const c=await rpc('nmls_training_context',{p_student_id:studentId,p_enrollment_id:enrollmentId.toLowerCase(),p_event_id:null});
+  const {state}=contextState(c,studentId,enrollmentId.toLowerCase(),course,definition);
+  const study=state?.source;
+  if(c.reviewRole==='regulator_reviewer'||state?.phase!=='source'||study?.status!=='active'||study.sessionId!==sessionId.toLowerCase()||study.current?.unitId!==unitId||study.quiz||c.serverTimeMs-study.lastActivityMs>=REVIEW_POLICY.idleLogoutMs)fail('coach_access_denied');
+  const unit=course.modules.flatMap(m=>m.units).find(u=>u.id===unitId);
+  if(!unit)fail('coach_access_denied');
+  return {courseId:c.courseId,courseVersion:c.courseVersion,courseDigest:course.digest,unitId};
 }

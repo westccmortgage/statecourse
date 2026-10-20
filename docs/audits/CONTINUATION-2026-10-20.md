@@ -51,3 +51,27 @@
 `node --test --test-concurrency=2 tests/*.test.mjs` с PGlite и DOM зависимостями: **2628 tests; 2624 passed; 4 failed; 0 skipped**, 291.18 секунд. Включены ранее пропускавшиеся изолированные SQL/DOM проверки. Это не полностью зелёный набор.
 
 Оставшиеся ошибки: Georgia offline verifier возвращает BROKEN из-за реального возраста источников вместо ожидавшегося OFFLINE_UNVERIFIED; две Washington проверки обнаруживают просроченные source readings; Texas Law of Agency video freeze обнаруживает несовпадение хеша routing/CSP (`netlify.toml`). Настоящие проверки и условия закрытия gates сохранены. В прежнем baseline было 48 ошибок и 27 пропусков; объём финального набора больше благодаря включённым SQL/DOM сценариям и новым проверкам сравнения AI.
+
+
+## Продолжение — 19 октября 2026, Los Angeles: общее подключение учебного AI
+
+Текущий результат описан в [AI coverage](AI-COVERAGE-2026-10-19.md). Подключены общая практика и чтение Real Estate в личном кабинете, а также текущий учебный раздел национального Mortgage. Библиотека: 30 курсов / 284 урока Real Estate + 45 Mortgage units, всего 6 666 фрагментов. Неподготовленные штаты и неавторизованные state supplements этим не становятся готовыми курсами.
+
+OpenAI и Gemini теперь используют общие серверные ограничения. В интерфейсе указан провайдер, согласие привязано к нему; при смене урока или доступа прежний ответ очищается. Mortgage дополнительно проверяет действующую сессию/текущий раздел до и после генерации. Прогресс, учебное время, оценки и кредит этим API не записываются. Полный серверный корпус отделён от публичного индекса; защищённые экзамены и загруженные filing PDFs в корпус не включены.
+
+Texas video freeze сверён с точной исторической версией `f0e9ddc6e79ee1e09990f5d8868a95d35802456c`, сохранены прежние SHA и причины нового freeze. Совместно зафиксированы routing/cache additions и необязательная помощь на экранах чтения. Video freeze v16 / content freeze v20 валидны. Авторские тексты, банки вопросов, Stream authorization и регуляторный статус не менялись. Acceptance report по-прежнему NO-GO и не служит утверждением о запуске.
+
+Проверено в новой изолированной копии исходников:
+
+- Полный Node suite с реальными изолированными PGlite и DOM зависимостями: **2 642 tests; 2 639 passed; 3 failed; 0 skipped**, 295.27 секунд. Остались Georgia offline verifier и две Washington freshness/offline проверки из-за реального возраста источников. Ошибка Texas hash исправлена через описанный versioned freeze.
+- Последующие проверки расширенного 50-case benchmark и каждого из 329 model inputs: **11 passed**, без реальных API calls. Это дополнение к полному прогону, не новый полный прогон.
+- Финальный целевой coach/HTTP/DOM/PostgreSQL набор: **44 passed, 0 skipped**.
+- Netlify build/privacy gates: passed. Обе функции AI собираются в отдельные серверные bundles. `config/learning-coach/library.json` в статический `dist` не копируется.
+- Chromium 1440 и 390: общая практика и оба учебных кабинета; оригинальный grading, сброс ответа при смене курса, скрытие AI на retrieval screen, Mortgage pause, отсутствие ошибок страницы/горизонтального переполнения. Ответы явно синтетические.
+- PostgreSQL coach admission / deduplication / budgets / permissions: passed. Mortgage HTTP tests выполняют настоящий auth/provider transport с синтетическими ответами; отзыв доступа во время генерации и повтор cached response не раскрывают текст.
+- Stream/security/video regressions: **21 passed**; validators **8/8**. Texas вместе с SQL coach и поздними regressions также проверен отдельно.
+- ESLint: **0 errors, 116 warnings**. Sites build ранее passed; изменяемая часть этой итерации — Netlify platform.
+
+Сравнение моделей расширено до **50 сценариев на провайдера**, с прежним пределом $0.50 на провайдера за один запуск и обязательными проверенными ценами. Подготовка и ограничения проверены. Реальные ответы, стоимость, задержка и преимущество модели **не установлены**: внешний proxy блокировал оба API до авторизации. Production deployment, применение coach SQL migration и реальный student E2E также не проверены. Ключи остаются в защищённых переменных; секреты в Git не добавлены. No production setting or regulatory/credit/commerce flag changed.
+
+Журналы последнего прогона: `work/ai-validation/`; изображения — `work/coach-browser/`. Старые baseline counts выше остаются историей и заменены текущими результатами для этой ветки.

@@ -51,7 +51,7 @@ test('provider malformed JSON, HTTP failure and truncation fail closed',async()=
  for(const response of [Response.json({}, {status:429}),Response.json({status:'incomplete'}),Response.json({status:'completed',output:[{type:'message',content:[{type:'output_text',text:'invalid'}]}]})])await assert.rejects(requestCoach({apiKey:'test',model:'test',input:{},fetcher:async()=>response}));
 });
 test('HTTP invalid method, malformed/oversized body and feature disabled return honest errors',async()=>{
- assert.equal((await handler({httpMethod:'GET'})).statusCode,405);
+ assert.equal((await handler({httpMethod:'PUT'})).statusCode,405);
  for(const text of ['{','x'.repeat(6001)])assert.equal((await handler({httpMethod:'POST',headers:{'content-type':'application/json'},body:text})).statusCode,400);
  const result=await handler({httpMethod:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(body())});assert.equal(result.statusCode,503);assert(!result.body.includes('isolated-test'));
 });

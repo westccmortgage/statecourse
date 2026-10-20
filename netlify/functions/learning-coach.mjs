@@ -1,5 +1,5 @@
-import {coach} from './_lib/learning-coach.mjs';
-async function store(op,payload){
+import {coach,providerName} from './_lib/learning-coach.mjs';
+export async function store(op,payload){
  const url=process.env.SUPABASE_URL,key=process.env.SUPABASE_SERVICE_ROLE_KEY;
  if(!url||!key)throw Error('store_unavailable');
  const r=await fetch(`${url.replace(/\/$/,'')}/rest/v1/rpc/learning_coach_control`,{method:'POST',signal:AbortSignal.timeout(4000),headers:{apikey:key,...(key.startsWith('sb_')?{}:{authorization:`Bearer ${key}`}), 'content-type':'application/json'},body:JSON.stringify({op,payload})});
@@ -7,6 +7,7 @@ async function store(op,payload){
 }
 export async function handler(event){
  const headers={'content-type':'application/json','cache-control':'no-store','x-content-type-options':'nosniff'};
+ if(event.httpMethod==='GET')return {statusCode:200,headers,body:JSON.stringify({provider:['openai','gemini'].includes(providerName(process.env))?providerName(process.env):null,enabled:process.env.LEARNING_COACH_ENABLED==='true'})};
  if(event.httpMethod!=='POST')return {statusCode:405,headers:{...headers,allow:'POST'},body:JSON.stringify({error:'method_not_allowed'})};
  try{
   if(event.isBase64Encoded||Buffer.byteLength(event.body??'')>6000||!event.headers?.['content-type']?.startsWith('application/json'))return {statusCode:400,headers,body:JSON.stringify({error:'invalid_request'})};

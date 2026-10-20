@@ -1,3 +1,4 @@
+import {mountPrivateCoach} from '../../learning-coach-private.js';
 import { TrainingClient } from './training-client.mjs';
 import { escapeHtml as esc, renderLessonMarkdown } from '../nmls-review/lesson-markdown.mjs';
 import { presentOptions } from '../nmls-review/question-presentation.mjs';
@@ -42,11 +43,13 @@ export function mountTrainingWorkspace({ document: doc = globalThis.document, wi
   const canAct = () => ready() && !client.view.foregroundPending;
   const allUnits = p => p.modules.flatMap(m => m.units.map(u => ({ ...u, moduleId: m.id })));
   const visible = () => ready() && active() && Boolean(progress()?.quiz || progress()?.currentUnitId && selected === progress().currentUnitId);
+  const assistant=mountPrivateCoach({document:doc,window:win,anchor:el('lesson'),getContext:()=>{const s=snapshot(),p=progress();return ready()&&active()&&s?.phase==='source'&&!p?.quiz&&!s.assessment&&selected===p.currentUnitId?{enrollmentId:s.enrollmentId,unitId:p.currentUnitId,sessionId:p.sessionId}:null;}});
   function resetIdle() {
     clearTimer(idleTimer);
     if (active() && !paused) idleTimer = setTimer(() => pause('idle'), 360000);
   }
   function clearPrivate() {
+    assistant.reset();
     contentKey = ''; outlineKey = ''; feedbackKey = ''; selected = null;
     for (const id of ['lesson', 'questionArea', 'quizArea', 'assessmentArea', 'feedbackArea', 'outline']) el(id).replaceChildren();
     for (const id of ['unitMeta', 'questionArea', 'quizArea', 'assessmentArea', 'feedbackArea', 'nextArea', 'phasePanel', 'readOnlyPanel', 'resumePanel']) el(id).hidden = true;
@@ -104,6 +107,7 @@ export function mountTrainingWorkspace({ document: doc = globalThis.document, wi
     else area.innerHTML = `<h2>${feedback.correct ? 'Correct — activity saved' : 'Review the explanation and try again'}</h2><p>${esc(feedback.rationale)}</p><p>${sources(feedback)}</p>`;
   }
   function render(view) {
+    assistant.update();
     const s = view.snapshot, p = s?.progress;
     syncPolling(Boolean(p) && teachingPhases.includes(s.phase) && !['auth', 'denied', 'recover'].includes(view.phase));
     if (['uncertain', 'recover', 'auth', 'denied'].includes(view.phase)) { paused = true; clearTimer(idleTimer); }
@@ -143,6 +147,7 @@ export function mountTrainingWorkspace({ document: doc = globalThis.document, wi
     const units = allUnits(p), current = units.find(u => u.id === p.currentUnitId);
     const firstIncomplete = units.find(u => !p.completedUnitIds.includes(u.id));
     if (!selected || !p.completedUnitIds.includes(selected) && selected !== p.currentUnitId) selected = p.currentUnitId;
+    assistant.update();
     el('savedSummary').textContent = `${p.completedUnitIds.length} of ${units.length} units saved · ${p.passedModuleIds.length} of ${p.modules.length} module practices passed${s.phase === 'remediation' ? ' · targeted review' : ''}`;
     const navKey = JSON.stringify([p.completedUnitIds, p.passedModuleIds, p.currentUnitId, selected, s.phase, paused, ['ready', 'busy'].includes(view.phase), view.foregroundPending]);
     if (outlineKey !== navKey) {
@@ -279,6 +284,6 @@ export function mountTrainingWorkspace({ document: doc = globalThis.document, wi
   on(win, 'pagehide', () => pause('pagehide'));
   client.open(new URLSearchParams(win.location.search).get('enrollment_id'));
   return { client, render: () => render(client.view), pause, resume,
-    destroy() { clearTimer(idleTimer); clearPoll(poll); listeners.forEach(remove => remove()); client.stop(); clearPrivate(); } };
+    destroy() { assistant.destroy(); clearTimer(idleTimer); clearPoll(poll); listeners.forEach(remove => remove()); client.stop(); clearPrivate(); } };
 }
 if (typeof document !== 'undefined' && typeof window !== 'undefined') mountTrainingWorkspace();

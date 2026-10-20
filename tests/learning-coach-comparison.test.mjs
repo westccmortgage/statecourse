@@ -7,6 +7,7 @@ import {requestGemini} from '../experiments/lesson-coach/providers.mjs';
 import {instructions} from '../netlify/functions/_lib/learning-coach-provider.mjs';
 import {run,makeInput,assess} from '../experiments/lesson-coach/compare.mjs';
 import {cases} from '../experiments/lesson-coach/cases.mjs';
+import {portfolioCases} from '../experiments/lesson-coach/portfolio-cases.mjs';
 const answer={status:'answer',explanation:'Review attachment to land.',sourceIds:['property-lesson'],nextStep:'Read the source.'};
 test('Gemini sends key only in header, bounded generation and shared instructions; parses usage',async()=>{
  const result=await requestGemini({apiKey:'synthetic',model:'gemini-2.5-flash',input:{learnerMessage:'test'},fetcher:async(url,options)=>{
@@ -32,4 +33,10 @@ test('offline run never requires credentials; paid runs require prices and canno
   const live=await run({live:true,output:path.join(dir,'guarded.json'),env:{OPENAI_API_KEY:'synthetic',GEMINI_API_KEY:'synthetic',COMPARE_OPENAI_MODEL:'test',COMPARE_GEMINI_MODEL:'test'}});
   assert.ok(live.results.every(r=>r.status==='missing_verified_prices'&&r.items.length===0));
  }finally{fs.rmSync(dir,{recursive:true,force:true});}
+});
+test('portfolio comparison covers every catalog course and national mortgage module with bounded teaching-only input',()=>{
+ assert.equal(portfolioCases.length,50);const inputs=portfolioCases.map(item=>makeInput(item));
+ assert.equal(new Set(inputs.map(x=>x.context.courseId)).size,31);
+ assert.equal(portfolioCases.filter(c=>c.contextId?.includes('nmls')).length,8);
+ for(const {input}of inputs){assert.ok(Buffer.byteLength(JSON.stringify(input))<=14000);assert.ok(input.sources.length);assert.doesNotMatch(JSON.stringify(input),/"correctChoice"\s*:|"actionQuestion"\s*:|N26-FIN-/);}
 });

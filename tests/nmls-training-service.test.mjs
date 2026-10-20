@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { randomUUID } from 'node:crypto';
-import { executeNmlsTraining, validateNmlsTrainingInput, nmlsTrainingPublicError,
+import { executeNmlsTraining, authorizeNmlsCoach, validateNmlsTrainingInput, nmlsTrainingPublicError,
   NMLS_TRAINING_COURSE_ID, NMLS_TRAINING_COURSE_VERSION, NMLS_TRAINING_SOURCE_KEY } from '../netlify/functions/_lib/nmls-training-service.mjs';
 import { getNmlsReviewCourse } from '../netlify/functions/_lib/nmls-review-content.mjs';
 import { getNmlsDraftFinalDefinition } from '../lib/nmls-final-authoring-content.mjs';
@@ -274,4 +274,17 @@ test('UUID case canonicalization preserves the same event and never changes call
   const original=structuredClone(upper);
   await executeNmlsTraining(upper,h.actor.toUpperCase(),{rpc:h.rpc});assert.deepEqual(upper,original);
   const replay=await executeNmlsTraining(input,h.actor,{rpc:h.rpc});assert.equal(replay.body.replayed,true);assert.equal(h.events.size,1);
+});
+
+test('AI reads require current source lease, unit and full runtime integrity without changing time or progress',async()=>{
+ const h=fixture(),unitId=course.modules[0].units[0].id;
+ await assert.rejects(authorizeNmlsCoach({enrollmentId:h.enrollment,unitId,sessionId:randomUUID()},h.actor,{rpc:h.rpc}));
+ await h.teaching('resume');h.tick();await h.teaching('open_unit',{unitId});
+ const input={enrollmentId:h.enrollment,unitId,sessionId:h.runtime.source.sessionId};
+ const before=JSON.stringify(h.runtime),start=h.calls.length;
+ const result=await authorizeNmlsCoach(input,h.actor,{rpc:h.rpc});assert.equal(result.unitId,unitId);assert.equal(result.courseDigest,course.digest);
+ assert.equal(JSON.stringify(h.runtime),before);assert.deepEqual(h.calls.slice(start).map(c=>c.name),['nmls_training_context']);
+ for(const bad of [{sessionId:randomUUID()},{unitId:'F01-U99'}])await assert.rejects(authorizeNmlsCoach({...input,...bad},h.actor,{rpc:h.rpc}));
+ h.tick(360001);await assert.rejects(authorizeNmlsCoach(input,h.actor,{rpc:h.rpc}));
+ h.revoke();await assert.rejects(authorizeNmlsCoach(input,h.actor,{rpc:h.rpc}));
 });

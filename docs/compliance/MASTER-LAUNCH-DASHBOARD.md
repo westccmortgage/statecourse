@@ -1,5 +1,11 @@
 # StateCourse Master Launch Dashboard
 
+## AI teaching and technical update — October 19, 2026 (Los Angeles)
+
+Local implementation now covers 284 Real Estate lessons across 30 catalog courses and 45 authenticated national Mortgage teaching units, with shared OpenAI/Gemini adapters and versioned lesson chunks. Student reading surfaces are connected; assessment and regulator-review boundaries are retained. Local HTTP/SQL/DOM/browser evidence is documented in [AI coverage](../audits/AI-COVERAGE-2026-10-19.md). Provider authentication, live model quality, production migration/deployment and student production E2E remain unverified. No approval, credit, commerce or launch enablement flag changed.
+
+Texas Law of Agency shared routing/player dependency drift was reviewed and recorded in video freeze v16 and content freeze v20. Stream regression checks and freeze validators pass; Texas submission/operational acceptance remains NO-GO. Georgia and Washington source readings remain stale and their gates stay closed.
+
 ## Uploaded DRE evidence — 2026-10-20
 
 All three uploaded California application volumes contain course-specific college-equivalence letters on page 14, with letterhead and visible signatures checked. Historical “letters absent” statements are superseded; acceptance is unverified. Uploaded copies retain pre-filing access/signature/date completion instructions and do not establish the final mailed set. Owner-reported DRE and separate NMLS submissions remain under review. See [package review](../audits/DRE-UPLOADED-PACKAGES-2026-10-20.md). No launch or approval flags changed.
@@ -8,7 +14,7 @@ All three uploaded California application volumes contain course-specific colleg
 
 California DRE and the separate NMLS package are **submitted / under review**, as confirmed by the owner in this task. This supersedes historical "not submitted" and "waiting for initial access" assumptions below; no regulator approval was verified. Florida is waiting on the owner's personal broker application, distinct from school/course authorization. Dates/IDs/receipts remain to be recorded.
 
-[Portfolio audit and 51-jurisdiction inventory](../audits/STATECOURSE-AUDIT-2026-10-19.md): 30 catalog Real Estate courses in 14 states, additional Florida development and Illinois structural work; one national non-credit NMLS offering; 24 state-supplement plans not yet authored in the blueprint. AI Lesson Coach is a disabled local pilot, not a launched or learning-effectiveness-validated feature. No commerce, approval or credit flags changed.
+[Portfolio audit and 51-jurisdiction inventory](../audits/STATECOURSE-AUDIT-2026-10-19.md): 30 catalog Real Estate courses in 14 states, additional Florida development and Illinois structural work; one national non-credit NMLS offering; 24 state-supplement plans not yet authored in the blueprint. AI Lesson Coach has the local course coverage described above; production activation and learning effectiveness remain unverified. No commerce, approval or credit flags changed.
 
 Last verified: 2026-09-19. Target: **NMLS launch in October 2026**. This is an operational control board, not regulatory evidence.
 
