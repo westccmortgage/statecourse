@@ -1,3 +1,4 @@
+import {withLambda} from '@netlify/aws-lambda-compat';
 import { randomUUID } from "node:crypto";
 import { getAiPlan } from "../../config/ai-plans.mjs";
 import { baseUrl, stripeEnvironment } from "./_lib/env.mjs";
@@ -8,7 +9,7 @@ import { requireStudentSession } from "./_lib/student-session.mjs";
 
 const safe = (value) => encodeURIComponent(String(value));
 
-export const handler = async (event) => {
+const handler = async (event) => {
   let attemptId;
   let reservedFounding=false;
   let diagnosticForSmoke=false;
@@ -94,3 +95,7 @@ export const handler = async (event) => {
     return handleError(error);
   }
 };
+
+// Keep the existing Lambda handler contract on the modern Netlify runtime.
+export {handler as legacyHandler};
+export default withLambda(handler);

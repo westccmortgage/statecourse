@@ -1,3 +1,4 @@
+import {withLambda} from '@netlify/aws-lambda-compat';
 /**
  * CA-BLOCK-1 — the learning-block delivery endpoint.
  *
@@ -446,7 +447,7 @@ async function blocksPayload(ctx, assignmentId) {
   };
 }
 
-export const handler = async (event) => {
+const handler = async (event) => {
   try {
     const auth = await requireStudentSession(event);
     const cookies = auth.refreshedSession ? sessionCookies(auth.refreshedSession) : [];
@@ -472,3 +473,7 @@ export const handler = async (event) => {
     return sessionResponse(status, { error: status >= 500 ? "student_blocks_unavailable" : error.message });
   }
 };
+
+// Keep the existing Lambda handler contract on the modern Netlify runtime.
+export {handler as legacyHandler};
+export default withLambda(handler);

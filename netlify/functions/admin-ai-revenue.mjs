@@ -1,3 +1,4 @@
+import {withLambda} from '@netlify/aws-lambda-compat';
 import { requireAdmin } from "./_lib/auth.mjs";
 import { dbRequest } from "./_lib/db.mjs";
 import { handleError, method, response } from "./_lib/http.mjs";
@@ -5,7 +6,7 @@ import { handleError, method, response } from "./_lib/http.mjs";
 const price={ai_pro_monthly:3900,ai_pro_annual:39000,ai_provider_monthly:49900,ai_provider_annual:499000,ai_founding_provider_monthly:29900};
 const monthly=(key)=>key.endsWith("_annual")?Math.round((price[key]||0)/12):(price[key]||0);
 
-export const handler=async(event)=>{
+const handler=async(event)=>{
   try{
     method(event,"GET");await requireAdmin(event);
     const today=new Date();today.setUTCHours(0,0,0,0);
@@ -42,3 +43,7 @@ export const handler=async(event)=>{
     },customers,recentPayments:(payments||[]).slice(0,100)});
   }catch(error){return handleError(error);}
 };
+
+// Keep the existing Lambda handler contract on the modern Netlify runtime.
+export {handler as legacyHandler};
+export default withLambda(handler);

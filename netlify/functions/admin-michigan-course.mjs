@@ -1,3 +1,4 @@
+import {withLambda} from '@netlify/aws-lambda-compat';
 import { requireStaff } from "./_lib/staff-session.mjs";
 import { dbRequest, rpc } from "./_lib/db.mjs";
 import { parseJson, requireSameOrigin } from "./_lib/http.mjs";
@@ -146,7 +147,7 @@ async function studentForEnrollment(enrollmentId) {
   return enrollment.student_id;
 }
 
-export const handler = async (event) => {
+const handler = async (event) => {
   let cookies = [];
   try {
     const { auth } = await requireStaff(event, ["owner", "administrator", "instructor"], {state:"MI"});
@@ -276,3 +277,7 @@ export const handler = async (event) => {
   }
 };
 
+
+// Keep the existing Lambda handler contract on the modern Netlify runtime.
+export {handler as legacyHandler};
+export default withLambda(handler);

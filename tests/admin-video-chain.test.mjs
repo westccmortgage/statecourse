@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 
-import { handler as videoHandler } from "../netlify/functions/admin-video.mjs";
+import { legacyHandler as videoHandler } from "../netlify/functions/admin-video.mjs";
 import { authorizeStreamMedia } from "../netlify/functions/_lib/stream-delivery.mjs";
 import {
   COURSE_ID, DELIVERY_ID, GATE_DEFINITIONS, MACHINE_GATES, REVIEW_GATES, SCREEN_ID, STAFF_ID,

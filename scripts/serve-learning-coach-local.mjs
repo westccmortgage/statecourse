@@ -1,4 +1,4 @@
-import http from 'node:http';import fs from 'node:fs';import path from 'node:path';import {handler} from '../netlify/functions/learning-coach.mjs';
+import http from 'node:http';import fs from 'node:fs';import path from 'node:path';import {legacyHandler as handler} from '../netlify/functions/learning-coach.mjs';
 // This validation harness always disables model calls; it is not a deployment server.
 process.env.LEARNING_COACH_ENABLED='false';
 const root=path.resolve(process.env.LEARNING_COACH_LOCAL_DIST??'dist');

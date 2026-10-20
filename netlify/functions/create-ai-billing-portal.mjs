@@ -1,10 +1,11 @@
+import {withLambda} from '@netlify/aws-lambda-compat';
 import { baseUrl } from "./_lib/env.mjs";
 import { dbRequest } from "./_lib/db.mjs";
 import { stripeRequest } from "./_lib/stripe.mjs";
 import { handleError, method, requireSameOrigin, response } from "./_lib/http.mjs";
 import { requireStudentSession } from "./_lib/student-session.mjs";
 
-export const handler=async(event)=>{
+const handler=async(event)=>{
   try{
     method(event,"POST");
     requireSameOrigin(event);
@@ -19,3 +20,7 @@ export const handler=async(event)=>{
     return response(200,{url:portal.url});
   }catch(error){return handleError(error);}
 };
+
+// Keep the existing Lambda handler contract on the modern Netlify runtime.
+export {handler as legacyHandler};
+export default withLambda(handler);

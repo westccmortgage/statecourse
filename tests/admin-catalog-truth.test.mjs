@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 
-import { handler as catalogHandler } from "../netlify/functions/admin-catalog.mjs";
+import { legacyHandler as catalogHandler } from "../netlify/functions/admin-catalog.mjs";
 import { assessCourseRow, buildCatalogTruth } from "../netlify/functions/_lib/catalog-truth.mjs";
 import { COURSE_ID, createStore, getEvent, postEvent, withConsoleMock } from "./fixtures/admin-console/harness.mjs";
 

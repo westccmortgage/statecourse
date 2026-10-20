@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { createStore, withConsoleMock, STAFF_ID, OTHER_STAFF_ID } from './fixtures/admin-console/harness.mjs';
 import { snapshot } from '../netlify/functions/_lib/console-operations.mjs';
-import { handler as paymentConfig } from '../netlify/functions/payment-config.mjs';
+import { legacyHandler as paymentConfig } from '../netlify/functions/payment-config.mjs';
 
 const CA = 'ca-real-estate-principles-45', TX = 'tx-law-of-agency-30-v1';
 const json = (body, status = 200) => new Response(JSON.stringify(body), { status, headers: {'content-type':'application/json'} });

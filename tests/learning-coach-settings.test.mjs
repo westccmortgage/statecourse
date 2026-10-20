@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {loadCoachEnvironment} from '../netlify/functions/_lib/learning-coach-settings.mjs';
 import {settings} from '../netlify/functions/_lib/learning-coach.mjs';
-import {handler} from '../netlify/functions/learning-coach.mjs';
+import {legacyHandler as handler} from '../netlify/functions/learning-coach.mjs';
 
 const configuration={LEARNING_COACH_ENABLED:'true',LEARNING_COACH_PROVIDER:'openai',LEARNING_COACH_MODEL:'synthetic-model',LEARNING_COACH_ORIGIN:'https://coach.test',LEARNING_COACH_HASH_SECRET:'synthetic-hash-secret-32-characters',LEARNING_COACH_INPUT_USD_PER_MILLION:'0.4',LEARNING_COACH_OUTPUT_USD_PER_MILLION:'1.6',LEARNING_COACH_DAILY_BUDGET_USD:'1'};
 test('database settings enable guarded generation without adding Lambda variables or copying credentials',async()=>{

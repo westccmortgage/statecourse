@@ -1,9 +1,9 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 
-import { handler as sessionHandler } from "../netlify/functions/admin-session.mjs";
-import { handler as videoHandler } from "../netlify/functions/admin-video.mjs";
-import { handler as catalogHandler } from "../netlify/functions/admin-catalog.mjs";
+import { legacyHandler as sessionHandler } from "../netlify/functions/admin-session.mjs";
+import { legacyHandler as videoHandler } from "../netlify/functions/admin-video.mjs";
+import { legacyHandler as catalogHandler } from "../netlify/functions/admin-catalog.mjs";
 import {
   COURSE_ID, DELIVERY_ID, OTHER_STAFF_ID, SCREEN_ID, STAFF_ID,
   createStore, getEvent, postEvent, withConsoleMock,

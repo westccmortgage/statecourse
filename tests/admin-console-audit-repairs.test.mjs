@@ -2,8 +2,8 @@ import assert from "node:assert/strict";
 import test from "node:test";
 import { readFile } from "node:fs/promises";
 
-import { handler as videoHandler } from "../netlify/functions/admin-video.mjs";
-import { handler as catalogHandler } from "../netlify/functions/admin-catalog.mjs";
+import { legacyHandler as videoHandler } from "../netlify/functions/admin-video.mjs";
+import { legacyHandler as catalogHandler } from "../netlify/functions/admin-catalog.mjs";
 import { requireStaff } from "../netlify/functions/_lib/staff-session.mjs";
 import { readProtectedTranscript } from "../netlify/functions/_lib/stream-delivery.mjs";
 import {

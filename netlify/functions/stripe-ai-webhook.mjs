@@ -1,6 +1,7 @@
-import { handler as sharedStripeWebhook } from "./stripe-webhook.mjs";
+import {withLambda} from '@netlify/aws-lambda-compat';
+import { legacyHandler as sharedStripeWebhook } from "./stripe-webhook.mjs";
 
-export const handler = async (event) => {
+const handler = async (event) => {
   const mode=process.env.STRIPE_MODE==="live"?"live":"test";
   const secret=mode==="live"
     ? process.env.STRIPE_AI_WEBHOOK_SECRET_LIVE
@@ -12,3 +13,7 @@ export const handler = async (event) => {
   else process.env.STRIPE_WEBHOOK_SECRET_TEST=secret;
   return sharedStripeWebhook(event);
 };
+
+// Keep the existing Lambda handler contract on the modern Netlify runtime.
+export {handler as legacyHandler};
+export default withLambda(handler);

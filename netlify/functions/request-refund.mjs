@@ -1,3 +1,4 @@
+import {withLambda} from '@netlify/aws-lambda-compat';
 import { randomUUID } from "node:crypto";
 import { requireAdmin } from "./_lib/auth.mjs";
 import { dbRequest, rpc } from "./_lib/db.mjs";
@@ -22,7 +23,7 @@ import { refundInstruction } from "../../lib/stripe-contract.mjs";
  * database and no Stripe in it and is therefore testable directly; this function fetches
  * facts, calls it, and executes the result.
  */
-export const handler = async (event) => {
+const handler = async (event) => {
   try {
     method(event, "POST");
     await requireAdmin(event);
@@ -136,3 +137,7 @@ export const handler = async (event) => {
 
 export const REFUND_ENDPOINT_POLICY_VERSION = REFUND_POLICY_VERSION;
 
+
+// Keep the existing Lambda handler contract on the modern Netlify runtime.
+export {handler as legacyHandler};
+export default withLambda(handler);

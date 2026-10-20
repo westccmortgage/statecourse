@@ -1,9 +1,10 @@
+import {withLambda} from '@netlify/aws-lambda-compat';
 import { parseJson, requireSameOrigin } from './_lib/http.mjs';
 import { clearSessionCookies, requireStudentSession, sessionCookies, sessionResponse, signInStudent, signOutStudent } from './_lib/student-session.mjs';
 import { requireStaff } from './_lib/staff-session.mjs';
 import { ADMIN_ROLES, audit, digest, limit, proofCookie, security, staffContext } from './_lib/staff-security.mjs';
 
-export const handler = async event => {
+const handler = async event => {
   try {
     if (event.httpMethod === 'GET') {
       const staff = await requireStaff(event, ADMIN_ROLES);
@@ -35,3 +36,7 @@ export const handler = async event => {
     return sessionResponse(status,{error:status >= 500 ? 'admin_session_unavailable' : error.message});
   }
 };
+
+// Keep the existing Lambda handler contract on the modern Netlify runtime.
+export {handler as legacyHandler};
+export default withLambda(handler);

@@ -1,8 +1,9 @@
+import {withLambda} from '@netlify/aws-lambda-compat';
 import { stripeRequest } from "./_lib/stripe.mjs";
 import { dbRequest } from "./_lib/db.mjs";
 import { handleError, method, response } from "./_lib/http.mjs";
 
-export const handler = async (event) => {
+const handler = async (event) => {
   try {
     method(event, "GET");
     const sessionId = event.queryStringParameters?.session_id || "";
@@ -28,3 +29,7 @@ export const handler = async (event) => {
     return handleError(error);
   }
 };
+
+// Keep the existing Lambda handler contract on the modern Netlify runtime.
+export {handler as legacyHandler};
+export default withLambda(handler);

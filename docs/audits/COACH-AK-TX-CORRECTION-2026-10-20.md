@@ -7,3 +7,15 @@ Both existing provider adapters now require 1–3 evidence entries, each pairing
 Prepublication validation:66 coach/provider/library/DOM/private-endpoint/SQL tests passed, zero skipped, including real embedded SQL. Lint827 files, zero errors,116 existing warnings; site build/private artifact scan and5 answer-key protection checks passed. Negative regression cases reject unsupported Alaska duty quotations and an ungrounded Texas prohibition. Provider HTTP fixtures were updated to the new internal evidence protocol. This patch is based on main aaf5885, preserving the newer Core integration and documentation.
 
 Real generation and source review on the published release remain to be completed. Reg B semantic finding is separate and remains open. No course approval, assessed answer, grade, completion or regulated launch is changed.
+
+## Deployment continuation
+
+Code commit b2a5ff8fae63a98178b1eb8a0127c1f556587f3a was written to main with an expected-head lease on aaf5885. Git CD deploy6ad6fbab7d58668aad240af4 completed build and bundling, then failed function upload because the existing Lambda environment exceeded4KB. No failed artifact published; af6608a stayed live. No environment variable or credential was changed. A standard createSiteBuild request of the exact tracked Git source ZIP is used next, matching the already successful Core publication method; no function ZIP mutation or runtime migration is included.
+
+## Required hosting repair
+
+The exact-source standard build6ad6fcc020c9c99c666113d2 also failed the existing Lambda environment limit. No failed release published and no environment/secret was changed. The safe forward repair uses official @netlify/aws-lambda-compat2.0.2:28 legacy entrypoints now export a modern default wrapper and expose the original function as legacyHandler for internal callers/tests. Original implementation text is preserved, with only the named export and one cross-handler import renamed; a mechanical comparison confirmed all28. No financial rule, authorization check, webhook behavior or deployment environment value is changed. Existing modern Core/private training handlers retain their format.
+
+The official Netlify bundler packaged all41 functions as runtime API2. Three dedicated regressions verify every migrated endpoint's method denial without network requests, signed JSON bytes/auth/cookies/query parameters/multiple Set-Cookie headers, and binary request/response preservation. The expanded324-test suite passes with no skips, including payment/Stripe/admin/student/stream/coach/DOM/SQL coverage. Lint828 files,0 errors/116 warnings; site build/privacy scan and5 protection checks pass. The new dependency is pinned and existing dependency versions retained.
+
+Official guidance: https://developers.netlify.com/guides/migrating-to-the-modern-netlify-functions/ . This repairs the observed deployment failure; hosted behavior and AK/TX semantic samples still require verification after the forward release.

@@ -1,3 +1,4 @@
+import {withLambda} from '@netlify/aws-lambda-compat';
 import { requireStaff, logConsoleAction } from "./_lib/staff-session.mjs";
 import { buildCatalogTruth } from "./_lib/catalog-truth.mjs";
 import { sessionCookies, sessionResponse } from "./_lib/student-session.mjs";
@@ -9,7 +10,7 @@ import { sessionCookies, sessionResponse } from "./_lib/student-session.mjs";
  * move when a regulator moves them; a console that could set them would let the catalog be
  * made to say anything, which is the opposite of what this endpoint is for.
  */
-export const handler = async (event) => {
+const handler = async (event) => {
   try {
     if (event.httpMethod !== "GET") throw Object.assign(new Error("method_not_allowed"), { statusCode: 405 });
     const staff = await requireStaff(event, ["owner", "administrator", "regulator_reviewer", "support"]);
@@ -53,3 +54,7 @@ export const handler = async (event) => {
     return sessionResponse(status, { error: status >= 500 ? "admin_catalog_unavailable" : error.message });
   }
 };
+
+// Keep the existing Lambda handler contract on the modern Netlify runtime.
+export {handler as legacyHandler};
+export default withLambda(handler);

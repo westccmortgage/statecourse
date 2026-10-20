@@ -4,8 +4,8 @@ import assert from 'node:assert/strict';
 import { LAW_OF_AGENCY_TRAINING_RUNTIME as definition } from '../config/texas/law-of-agency-training-runtime.mjs';
 import { verifiedTrainingReadiness } from '../netlify/functions/_lib/training-readiness.mjs';
 import { availableTraining } from '../netlify/functions/_lib/training-access.mjs';
-import { handler as courseHandler } from '../netlify/functions/student-course.mjs';
-import { handler as blocksHandler } from '../netlify/functions/student-blocks.mjs';
+import { legacyHandler as courseHandler } from '../netlify/functions/student-course.mjs';
+import { legacyHandler as blocksHandler } from '../netlify/functions/student-blocks.mjs';
 import { createStore, withConsoleMock, STAFF_ID, ENROLLMENT_ID } from './fixtures/admin-console/harness.mjs';
 
 const json=(value,status=200)=>new Response(JSON.stringify(value),{status,headers:{'content-type':'application/json'}});

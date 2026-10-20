@@ -1,8 +1,9 @@
+import {withLambda} from '@netlify/aws-lambda-compat';
 import { getCourseCatalog, evaluateCheckoutEligibility } from "../../config/course-catalog.mjs";
 import { availableTraining } from "./_lib/training-access.mjs";
 import { response } from "./_lib/http.mjs";
 
-export const handler = async () => {
+const handler = async () => {
   const mode = process.env.STRIPE_MODE === "live" ? "live" : "test";
   const courses = getCourseCatalog().map((course) => {
     const eligibility = evaluateCheckoutEligibility(course, mode);
@@ -27,3 +28,7 @@ export const handler = async () => {
     training: await availableTraining(),
   });
 };
+
+// Keep the existing Lambda handler contract on the modern Netlify runtime.
+export {handler as legacyHandler};
+export default withLambda(handler);

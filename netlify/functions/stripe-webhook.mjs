@@ -1,3 +1,4 @@
+import {withLambda} from '@netlify/aws-lambda-compat';
 import { stripeEnvironment } from "./_lib/env.mjs";
 import { dbRequest, rpc } from "./_lib/db.mjs";
 import { rawBody, stripeRequest, verifyStripeSignature } from "./_lib/stripe.mjs";
@@ -255,7 +256,7 @@ async function reconcileAgainstRecord(event, object) {
   });
 }
 
-export const handler = async (event) => {
+const handler = async (event) => {
   let stripeEvent;
   try {
     method(event, "POST");
@@ -311,3 +312,7 @@ export const handler = async (event) => {
    handled: an event missing from the switch leaves the database believing something Stripe
    has already moved on from. */
 export const WEBHOOK_HANDLED_EVENTS = Object.freeze([...new Set([...HANDLED_STRIPE_EVENTS,...AI_EVENT_TYPES])]);
+
+// Keep the existing Lambda handler contract on the modern Netlify runtime.
+export {handler as legacyHandler};
+export default withLambda(handler);

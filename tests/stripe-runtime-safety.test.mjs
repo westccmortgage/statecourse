@@ -3,7 +3,7 @@ import assert from "node:assert/strict";
 import { createHmac } from "node:crypto";
 import { stripeEnvironment } from "../netlify/functions/_lib/env.mjs";
 import { stripeRequest } from "../netlify/functions/_lib/stripe.mjs";
-import { handler } from "../netlify/functions/stripe-webhook.mjs";
+import { legacyHandler as handler } from "../netlify/functions/stripe-webhook.mjs";
 
 // Synthetic, process-local configuration and intercepted transport only. No account,
 // live Stripe endpoint, actual database or stored host credential is used by these tests.

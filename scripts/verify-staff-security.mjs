@@ -5,7 +5,7 @@ import fs from 'node:fs/promises';
 import {pathToFileURL} from 'node:url';
 import {createHash} from 'node:crypto';
 import securityHandler from '../netlify/functions/staff-security.mjs';
-import {handler as adminSession} from '../netlify/functions/admin-session.mjs';
+import {legacyHandler as adminSession} from '../netlify/functions/admin-session.mjs';
 import {requireStaff} from '../netlify/functions/_lib/staff-session.mjs';
 import {requestIntent, proofCookie} from '../netlify/functions/_lib/staff-security.mjs';
 const {PGlite}=await import(pathToFileURL(process.argv[2]));

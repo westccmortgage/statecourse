@@ -2,7 +2,7 @@ import { NAMED_SESSION, STAFF_COOKIE } from './fixtures/admin-console/harness.mj
 import assert from "node:assert/strict";
 import test from "node:test";
 
-import { handler as adminHandler } from "../netlify/functions/admin-michigan-course.mjs";
+import { legacyHandler as adminHandler } from "../netlify/functions/admin-michigan-course.mjs";
 
 const STAFF_ID = "11111111-1111-4111-8111-111111111111";
 const INSTRUCTOR_ID = "22222222-2222-4222-8222-222222222222";

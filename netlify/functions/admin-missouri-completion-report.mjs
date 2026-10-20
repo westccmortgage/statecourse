@@ -1,10 +1,11 @@
+import {withLambda} from '@netlify/aws-lambda-compat';
 import { requireAdmin } from "./_lib/auth.mjs";
 import { rpc } from "./_lib/db.mjs";
 import { handleError, method, response } from "./_lib/http.mjs";
 
 const isoDate = /^\d{4}-\d{2}-\d{2}$/;
 
-export const handler = async (event) => {
+const handler = async (event) => {
   try {
     method(event, "POST");
     await requireAdmin(event);
@@ -22,3 +23,7 @@ export const handler = async (event) => {
   }
 };
 
+
+// Keep the existing Lambda handler contract on the modern Netlify runtime.
+export {handler as legacyHandler};
+export default withLambda(handler);

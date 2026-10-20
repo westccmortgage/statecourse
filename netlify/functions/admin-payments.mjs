@@ -1,10 +1,11 @@
+import {withLambda} from '@netlify/aws-lambda-compat';
 import { requireAdmin } from "./_lib/auth.mjs";
 import { dbRequest } from "./_lib/db.mjs";
 import { handleError, method, response } from "./_lib/http.mjs";
 
 const safe = (value) => encodeURIComponent(String(value).replace(/[,*()]/g, ""));
 
-export const handler = async (event) => {
+const handler = async (event) => {
   try {
     method(event, "GET");
     await requireAdmin(event);
@@ -24,3 +25,7 @@ export const handler = async (event) => {
   }
 };
 
+
+// Keep the existing Lambda handler contract on the modern Netlify runtime.
+export {handler as legacyHandler};
+export default withLambda(handler);

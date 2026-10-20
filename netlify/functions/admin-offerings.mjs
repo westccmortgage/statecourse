@@ -1,3 +1,4 @@
+import {withLambda} from '@netlify/aws-lambda-compat';
 import { parseJson, requireSameOrigin } from "./_lib/http.mjs";
 import { requireStaff } from "./_lib/staff-session.mjs";
 import { sessionCookies, sessionResponse } from "./_lib/student-session.mjs";
@@ -15,7 +16,7 @@ import {
 const READERS = ["owner", "administrator", "regulator_reviewer", "support"];
 const WRITERS = ["owner", "administrator"];
 
-export const handler = async (event) => {
+const handler = async (event) => {
   let cookies = [];
   try {
     if (event.httpMethod === "GET") {
@@ -59,3 +60,7 @@ export const handler = async (event) => {
     }, cookies);
   }
 };
+
+// Keep the existing Lambda handler contract on the modern Netlify runtime.
+export {handler as legacyHandler};
+export default withLambda(handler);

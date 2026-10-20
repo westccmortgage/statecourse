@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import test from 'node:test';
 import { readFileSync } from 'node:fs';
 import vm from 'node:vm';
-import { handler } from '../netlify/functions/student-session.mjs';
+import { legacyHandler as handler } from '../netlify/functions/student-session.mjs';
 import { requireStudentSession } from '../netlify/functions/_lib/student-session.mjs';
 
 const user = { id: 'existing-user', email: 'existing@example.test' };

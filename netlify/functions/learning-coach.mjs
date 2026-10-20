@@ -1,3 +1,4 @@
+import {withLambda} from '@netlify/aws-lambda-compat';
 import {coach,providerName} from './_lib/learning-coach.mjs';
 import {loadCoachEnvironment} from './_lib/learning-coach-settings.mjs';
 export async function store(op,payload){
@@ -6,7 +7,7 @@ export async function store(op,payload){
  const r=await fetch(`${url.replace(/\/$/,'')}/rest/v1/rpc/learning_coach_control`,{method:'POST',signal:AbortSignal.timeout(4000),headers:{apikey:key,...(key.startsWith('sb_')?{}:{authorization:`Bearer ${key}`}), 'content-type':'application/json'},body:JSON.stringify({op,payload})});
  if(!r.ok)throw Error('store_unavailable');return r.json();
 }
-export async function handler(event){
+async function handler(event){
  const headers={'content-type':'application/json','cache-control':'no-store','x-content-type-options':'nosniff'};
  if(!['GET','POST'].includes(event.httpMethod))return {statusCode:405,headers:{...headers,allow:'GET, POST'},body:JSON.stringify({error:'method_not_allowed'})};
  try{
@@ -21,3 +22,7 @@ export async function handler(event){
   return {statusCode:200,headers,body:JSON.stringify(result)};
  }catch(e){return {statusCode:e instanceof SyntaxError?400:(e.status??503),headers,body:JSON.stringify({error:e.status?e.message:'coach_unavailable'})};}
 }
+
+// Keep the existing Lambda handler contract on the modern Netlify runtime.
+export {handler as legacyHandler};
+export default withLambda(handler);

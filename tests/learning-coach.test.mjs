@@ -5,7 +5,7 @@ import {createHash} from 'node:crypto';
 import contexts from '../config/learning-coach/context.json' with {type:'json'};
 import {coach,validateAnswer} from '../netlify/functions/_lib/learning-coach.mjs';
 import {requestCoach} from '../netlify/functions/_lib/learning-coach-provider.mjs';
-import {handler} from '../netlify/functions/learning-coach.mjs';
+import {legacyHandler as handler} from '../netlify/functions/learning-coach.mjs';
 const c=contexts.contexts[0];
 const env={LEARNING_COACH_ENABLED:'true',LEARNING_COACH_API_KEY:'isolated-test',LEARNING_COACH_MODEL:'configured-test-model',LEARNING_COACH_ORIGIN:'https://example.test',LEARNING_COACH_HASH_SECRET:'a'.repeat(32),LEARNING_COACH_INPUT_USD_PER_MILLION:'1',LEARNING_COACH_OUTPUT_USD_PER_MILLION:'4',LEARNING_COACH_DAILY_BUDGET_USD:'1'};
 const body=(context=c)=>({requestId:'11111111-1111-4111-8111-111111111111',courseId:context.courseId,state:context.state,lessonId:context.lessonId,version:context.version,digest:context.digest,conceptId:context.id,questionId:context.questions[0].id,selected:1,message:'I thought movable furniture was always personal property.',consent:true});

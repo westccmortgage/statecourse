@@ -1,3 +1,4 @@
+import {withLambda} from '@netlify/aws-lambda-compat';
 import { requireAdmin } from "./_lib/auth.mjs";
 import { dbRequest, rpc } from "./_lib/db.mjs";
 import { handleError, method, parseJson, response } from "./_lib/http.mjs";
@@ -21,7 +22,7 @@ import { REFUND_POLICY_VERSION, evaluateRefund } from "../../lib/refund-policy.m
  * POST — assess the unassessed. Computes each entitlement from the same engine the refund path
  *        uses, so "what we would have allowed" is a comparable number and not a second opinion.
  */
-export const handler = async (event) => {
+const handler = async (event) => {
   try {
     await requireAdmin(event);
 
@@ -109,3 +110,7 @@ export const handler = async (event) => {
   }
 };
 
+
+// Keep the existing Lambda handler contract on the modern Netlify runtime.
+export {handler as legacyHandler};
+export default withLambda(handler);

@@ -1,3 +1,4 @@
+import {withLambda} from '@netlify/aws-lambda-compat';
 import { randomUUID } from "node:crypto";
 import { evaluateCheckoutEligibility, getCourse, getPackage, packageAllocation } from "../../config/course-catalog.mjs";
 import { baseUrl, stripeEnvironment } from "./_lib/env.mjs";
@@ -8,7 +9,7 @@ import { handleError, method, parseJson, requireSameOrigin, response } from "./_
 import { resolveCheckoutStudent } from "./_lib/student-auth.mjs";
 import { asStripeParams, checkoutMetadata } from "../../lib/stripe-contract.mjs";
 
-export const handler = async (event) => {
+const handler = async (event) => {
   try {
     method(event, "POST");
     requireSameOrigin(event);
@@ -139,3 +140,7 @@ export const handler = async (event) => {
     return handleError(error);
   }
 };
+
+// Keep the existing Lambda handler contract on the modern Netlify runtime.
+export {handler as legacyHandler};
+export default withLambda(handler);
