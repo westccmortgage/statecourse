@@ -1,0 +1,488 @@
+{
+  "formatVersion": 1,
+  "target": {
+    "projectId": "hkzhburprkwtnoeqbinh",
+    "organizationId": "tusgtiwudezeofsxleet",
+    "database": "postgres",
+    "region": "us-west-1"
+  },
+  "upstreamCommit": "ec287c5d0d3e6dcc401026ac43691a054f0f43da",
+  "migrationCount": 79,
+  "entries": [
+    {
+      "order": 1,
+      "path": "upstream/supabase/migrations/001_spatial_studio.sql",
+      "sha256": "d4d41af29e646226356522f0a6d4ffc72bc44955773d9419f2f140406979506a",
+      "bytes": 10048
+    },
+    {
+      "order": 2,
+      "path": "upstream/supabase/migrations/002_evidence_management.sql",
+      "sha256": "b5703b8e090b4f6309ce755aab28dcf3cc1dc17011819b4a7a6bb973525b8f18",
+      "bytes": 526
+    },
+    {
+      "order": 3,
+      "path": "upstream/supabase/migrations/003_evidence_deletion.sql",
+      "sha256": "1b6849f73b59d7715c3f8e8ac3d1e74de2cb3ccd9176ef2bdf0de0f7e1c6daf5",
+      "bytes": 661
+    },
+    {
+      "order": 4,
+      "path": "upstream/supabase/migrations/004_workspace_onboarding.sql",
+      "sha256": "6cf21c1c03abd3a150415772074c8c700f955c3c2e03cb724f355b79d8815ee4",
+      "bytes": 1755
+    },
+    {
+      "order": 5,
+      "path": "upstream/supabase/migrations/005_plan_intelligence.sql",
+      "sha256": "59a4b0156872c20d949713076cc4f6af82117b2e45084d12f34eb044eac9bfea",
+      "bytes": 19433
+    },
+    {
+      "order": 6,
+      "path": "upstream/supabase/migrations/006_external_object_storage.sql",
+      "sha256": "6ea67183224fb1d0f23605559bb93589ba67c403a42dc6215ad845b90b38d2fc",
+      "bytes": 3682
+    },
+    {
+      "order": 7,
+      "path": "upstream/supabase/migrations/007_field_operations.sql",
+      "sha256": "74e55c4cdd72e219498bbed147fa15102045319cd28ad2320b57e5bb26aeec77",
+      "bytes": 8125
+    },
+    {
+      "order": 8,
+      "path": "upstream/supabase/migrations/008_background_plan_analysis.sql",
+      "sha256": "7b1a05919114ff7443f652379d45d57112e79ce126b52a6b3010ed3ca69cfd24",
+      "bytes": 1091
+    },
+    {
+      "order": 9,
+      "path": "upstream/supabase/migrations/009_governing_plan_attestation.sql",
+      "sha256": "f94e6611393c7da63200c0eb3224a36d97086ef0e7bfc8a72c8a1f4825a42b77",
+      "bytes": 7262
+    },
+    {
+      "order": 10,
+      "path": "upstream/supabase/migrations/010_field_email_observability.sql",
+      "sha256": "809ea9dba27684e49e13a5039c672a711cdd4d5d663964dbe871f28781f1c5d2",
+      "bytes": 643
+    },
+    {
+      "order": 11,
+      "path": "upstream/supabase/migrations/011_capture_sessions.sql",
+      "sha256": "9c20fd81a8c9c5f67f4de61821c2109897e066146ac84597b355018864f1119e",
+      "bytes": 11416
+    },
+    {
+      "order": 12,
+      "path": "upstream/supabase/migrations/012_simple_project_intake.sql",
+      "sha256": "aff0f92c06dd6cdd2047022968a466a6e8a3f956442f9d3a1ce0d13cec2a679a",
+      "bytes": 3146
+    },
+    {
+      "order": 13,
+      "path": "upstream/supabase/migrations/013_insta360_processing_pipeline.sql",
+      "sha256": "0bfd4aaebfdca14f0fc0704762360684b5f30118b6875232d5ef7eb6e82be4c7",
+      "bytes": 4987
+    },
+    {
+      "order": 14,
+      "path": "upstream/supabase/migrations/014_backfill_insta360_capture_groups.sql",
+      "sha256": "c86b942978cc900cb4552b42164fe0190864ad86973b1a1ed27229c87f18f83d",
+      "bytes": 272
+    },
+    {
+      "order": 15,
+      "path": "upstream/supabase/migrations/015_prestitched_360_mvp.sql",
+      "sha256": "be9023f7a58162a195a324d723700efdf37457dbaa3151bd113168d9060ecba9",
+      "bytes": 4126
+    },
+    {
+      "order": 16,
+      "path": "upstream/supabase/migrations/016_space_identity_across_baselines.sql",
+      "sha256": "81b791c3090e39274656a67d25e5783a6074b8746c0821935990668c409e15a0",
+      "bytes": 5802
+    },
+    {
+      "order": 17,
+      "path": "upstream/supabase/migrations/017_worker_machine_status.sql",
+      "sha256": "77df6417406aa655f9e0eb15fa57069358f5e6fdd2564a153b67cb39c7996910",
+      "bytes": 2445
+    },
+    {
+      "order": 18,
+      "path": "upstream/supabase/migrations/018_evidence_provenance_and_audit.sql",
+      "sha256": "9ee8928dac4ec05d90ed6449148c2a48e0a483fede6444951f42554085bfa917",
+      "bytes": 20689
+    },
+    {
+      "order": 19,
+      "path": "upstream/supabase/migrations/019_rbac_roles.sql",
+      "sha256": "0ba59b8186c7633ae5797b920faae0697873ebc688781b0f72e36db85fb795e6",
+      "bytes": 825
+    },
+    {
+      "order": 20,
+      "path": "upstream/supabase/migrations/020_project_scoped_access.sql",
+      "sha256": "8a0018ed7fd8a71b110e4450fd653f7c6b4b9cf9a792f47d52ee3f19fa16816b",
+      "bytes": 3672
+    },
+    {
+      "order": 21,
+      "path": "upstream/supabase/migrations/021_project_and_space_protection.sql",
+      "sha256": "5559a102d450e165ab06e927b2875fbc6090df006bca8f3fdcfc4e5e843953ac",
+      "bytes": 9084
+    },
+    {
+      "order": 22,
+      "path": "upstream/supabase/migrations/022_tighten_function_surface.sql",
+      "sha256": "78ed978beb59d9c9d1c2b67d016b405a901485a516c4a495335b2000d9c0fe6e",
+      "bytes": 3432
+    },
+    {
+      "order": 23,
+      "path": "upstream/supabase/migrations/023_capture_waivers.sql",
+      "sha256": "9f77d837d6b94eb447bb3191d48e95d16861827b0b289abbe9da1d7e010864aa",
+      "bytes": 8650
+    },
+    {
+      "order": 24,
+      "path": "upstream/supabase/migrations/024_machine_wake.sql",
+      "sha256": "aa62b4ae4010d12c05ec89ea39f58cca90c0d21016318be933d996c0b10c6ba0",
+      "bytes": 2448
+    },
+    {
+      "order": 25,
+      "path": "upstream/supabase/migrations/025_search_the_record.sql",
+      "sha256": "0a47c83e6c48e27784ad0e4bef9edc617556d1b81370074e31c7b2360c84f055",
+      "bytes": 7434
+    },
+    {
+      "order": 26,
+      "path": "upstream/supabase/migrations/026_walking_the_plan.sql",
+      "sha256": "a7ed6dede9852b341fd0f7ba17aaf38e811b968f39e1aedebaf8305c245eb102",
+      "bytes": 13216
+    },
+    {
+      "order": 27,
+      "path": "upstream/supabase/migrations/027_a_capture_belongs_to_a_room.sql",
+      "sha256": "71a17e685201973cc766b2f4693c6f8667f37eee8a8ef38dc09854046f6e4f26",
+      "bytes": 5174
+    },
+    {
+      "order": 28,
+      "path": "upstream/supabase/migrations/028_move_evidence_between_rooms.sql",
+      "sha256": "d08360f63e91cf7915f235e8ab4c9f053fd8a16a66605ccebbdadfb7152e3e9c",
+      "bytes": 7703
+    },
+    {
+      "order": 29,
+      "path": "upstream/supabase/migrations/029_wood_takeoff.sql",
+      "sha256": "15b8132a6b300e70566e4f3a7643bf9d3ffef24371de0c369c0eba6ce65806a0",
+      "bytes": 6094
+    },
+    {
+      "order": 30,
+      "path": "upstream/supabase/migrations/030_a_person_answers_what_the_sheets_did_not.sql",
+      "sha256": "a615c66a9c1b1483e9b3bf3d3020a96ac52bb0b7eb7ae4db63a241507ee0bd78",
+      "bytes": 5457
+    },
+    {
+      "order": 31,
+      "path": "upstream/supabase/migrations/031_the_ai_gets_glasses.sql",
+      "sha256": "c742e1b2a55f2ea6aa2a6ec9e636e2576cae8c644a24970fde025c55108a2e7d",
+      "bytes": 2629
+    },
+    {
+      "order": 32,
+      "path": "upstream/supabase/migrations/032_the_owner_report.sql",
+      "sha256": "50e9997a7b981c5baaf5441cfde1cc09c481745fb865a995fd0fad06a40d0607",
+      "bytes": 6845
+    },
+    {
+      "order": 33,
+      "path": "upstream/supabase/migrations/033_expert_review_of_the_takeoff.sql",
+      "sha256": "87bddee8a57f62a2882428fb484f19359671529209b64d5b7277b83650c6d06c",
+      "bytes": 5919
+    },
+    {
+      "order": 34,
+      "path": "upstream/supabase/migrations/034_project_intelligence_core.sql",
+      "sha256": "4fe6cef0387b6b4e0ae1c3963af08c1f1f05a10d4cfbf6a43309e8279f1bb503",
+      "bytes": 21631
+    },
+    {
+      "order": 35,
+      "path": "upstream/supabase/migrations/035_the_channels_fill_themselves.sql",
+      "sha256": "0bbe7347a3f1ba5e087ec48c5ad48b2394b7c55840caa5fb4f3347cb37643382",
+      "bytes": 9266
+    },
+    {
+      "order": 36,
+      "path": "upstream/supabase/migrations/036_the_camera_learns_to_count.sql",
+      "sha256": "faa9450b0d292442483a782ef6629fd316facde7535c2522884dfea03d7dbbaa",
+      "bytes": 3788
+    },
+    {
+      "order": 37,
+      "path": "upstream/supabase/migrations/037_a_pdf_declares_itself.sql",
+      "sha256": "5b5b5a5036b3785c4bd38f0914587cc50501c4fd491947dedaa1a55aaf4dfae2",
+      "bytes": 1653
+    },
+    {
+      "order": 38,
+      "path": "upstream/supabase/migrations/038_a_large_set_is_read_in_chunks.sql",
+      "sha256": "76d65c46d978cf1d175c5ca8a0036c691b10fb7a7c363f9f3e0196b78e1b1952",
+      "bytes": 2215
+    },
+    {
+      "order": 39,
+      "path": "upstream/supabase/migrations/039_the_anonymous_door_closes.sql",
+      "sha256": "a9aabca591b78f958045193cc9560ddcec6f0e385fcec7464722d84f1643ab55",
+      "bytes": 4893
+    },
+    {
+      "order": 40,
+      "path": "upstream/supabase/migrations/040_the_owner_gets_a_key_to_one_door.sql",
+      "sha256": "90dc852cd315ba5b81c39afe79ce699156b49ea66ab8aefd7d89673d5398f41a",
+      "bytes": 8573
+    },
+    {
+      "order": 41,
+      "path": "upstream/supabase/migrations/041_the_vocabulary_grows.sql",
+      "sha256": "4fbb7ac2f6361acef67aa7ec54728635925ccce25ac8a933d598c866688d8e87",
+      "bytes": 7657
+    },
+    {
+      "order": 42,
+      "path": "upstream/supabase/migrations/042_one_mark_one_requirement.sql",
+      "sha256": "7fc8707fd6869697a9e77dd4798a2e8407e4c5911c9f008c67836d9f35bc4c04",
+      "bytes": 9182
+    },
+    {
+      "order": 43,
+      "path": "upstream/supabase/migrations/043_how_long_it_took.sql",
+      "sha256": "b888baa084e9ab3c2a1948aa9723a2492ad0a6d843d5d54e673c3616a6f7031f",
+      "bytes": 2511
+    },
+    {
+      "order": 44,
+      "path": "upstream/supabase/migrations/044_the_period_pass.sql",
+      "sha256": "4dbe6d5fb640648866f8109bd20e5854c7cb0613ff368eacb0c812bbd401078f",
+      "bytes": 7465
+    },
+    {
+      "order": 45,
+      "path": "upstream/supabase/migrations/045_money_joins_the_record.sql",
+      "sha256": "59d31f6e0f0d7760dabd1aaa09b7102edc1f2eebc080b009a3bdc4a0077ccc6e",
+      "bytes": 9388
+    },
+    {
+      "order": 46,
+      "path": "upstream/supabase/migrations/046_stacked_is_a_seen_thing.sql",
+      "sha256": "d339fd0975d8e27f3d960f0328f4b9d606a565adf47d965dac917cf5b4f0cc3e",
+      "bytes": 14578
+    },
+    {
+      "order": 47,
+      "path": "upstream/supabase/migrations/047_the_register_of_what_could_not_be_read.sql",
+      "sha256": "194410e31a550ca9b29a3b17197dd525e66caab31c39bb25dc8708105c121719",
+      "bytes": 24086
+    },
+    {
+      "order": 48,
+      "path": "upstream/supabase/migrations/048_ai_cost_guard.sql",
+      "sha256": "3ca25373e3c1eb5b84b44e72adb4c90140b52e3c29ac84e768a034e97888a7a1",
+      "bytes": 14202
+    },
+    {
+      "order": 49,
+      "path": "upstream/supabase/migrations/049_ask_this_project.sql",
+      "sha256": "f6b122b0037bb89c1bd6b34a0039ec226569145e7b9071fef374e2421b9a8193",
+      "bytes": 17131
+    },
+    {
+      "order": 50,
+      "path": "upstream/supabase/migrations/050_project_search_repair.sql",
+      "sha256": "f6d1e227ee94985f995a65eecaf33ea104c0ba01ec3e19126bb10748f5045a3b",
+      "bytes": 11042
+    },
+    {
+      "order": 51,
+      "path": "upstream/supabase/migrations/051_the_unknown_outcome.sql",
+      "sha256": "0c2dd0e3283473500bb357336166ada403ef21438f419c5bf9932f6c870f32c4",
+      "bytes": 16528
+    },
+    {
+      "order": 52,
+      "path": "upstream/supabase/migrations/052_the_field_check_that_could_not_be_repeated.sql",
+      "sha256": "153ff4a9f610011cbaf1b9d1e2ea530bcf722999c0050be161488ac54c0c84db",
+      "bytes": 2083
+    },
+    {
+      "order": 53,
+      "path": "upstream/supabase/migrations/053_the_structural_vocabulary.sql",
+      "sha256": "d3b99bfbb75fc7fe1a3fad4dbf1e5b38ad7336300dbdc26f9f0c01dc6b84c89b",
+      "bytes": 12151
+    },
+    {
+      "order": 54,
+      "path": "upstream/supabase/migrations/054_what_the_number_counts.sql",
+      "sha256": "e58073120612616ff40c637892cac10098134bd2b8d1a515b14499dba91f7191",
+      "bytes": 13390
+    },
+    {
+      "order": 55,
+      "path": "upstream/supabase/migrations/055_three_readers.sql",
+      "sha256": "4ea794f4db34fed537ee6fec552568900337fdd60f4c97d3b9413e5308e96792",
+      "bytes": 2981
+    },
+    {
+      "order": 56,
+      "path": "upstream/supabase/migrations/056_the_same_kit_for_every_reader.sql",
+      "sha256": "58a8c36257832ea739cf7ba87327b487d9ec4614ca01b04a6883f1218b6787bf",
+      "bytes": 1759
+    },
+    {
+      "order": 57,
+      "path": "upstream/supabase/migrations/057_the_comparison_of_readings.sql",
+      "sha256": "5b2a4ea82435282e5d9855c2b7f71c0e6eec455b79abdc16ae42c6e04c6c3fdb",
+      "bytes": 6965
+    },
+    {
+      "order": 58,
+      "path": "upstream/supabase/migrations/058_core_v2_schema.sql",
+      "sha256": "631a2e31e6b925fcbcd6b9c31eabc115893fa65cb6b01d43b6b888c5b6de977e",
+      "bytes": 165195
+    },
+    {
+      "order": 59,
+      "path": "upstream/supabase/migrations/059_core_v2_execution_layer.sql",
+      "sha256": "fdb6e86fd06fcf513441232872a27327cae39af3b9ac78ceeeb02344e2fccedd",
+      "bytes": 41225
+    },
+    {
+      "order": 60,
+      "path": "upstream/supabase/migrations/060_the_workflow_wakes_itself.sql",
+      "sha256": "7d9c0e0ed34a4ec1235e57ad881046cac62f4986e2f0b8c51d606ed247668716",
+      "bytes": 25723
+    },
+    {
+      "order": 61,
+      "path": "upstream/supabase/migrations/061_a_settled_workflow_can_still_be_cancelled.sql",
+      "sha256": "880177822493ade3cc274e54d55952f7b66ae2176531adbbd969b01f0bc2c4d7",
+      "bytes": 7076
+    },
+    {
+      "order": 62,
+      "path": "upstream/supabase/migrations/062_a_stop_is_one_write.sql",
+      "sha256": "d8a11c7b8bf79e88071bd54918676f2c53433dcd004b534b1d90006e3aca0079",
+      "bytes": 9981
+    },
+    {
+      "order": 63,
+      "path": "upstream/supabase/migrations/063_an_analysis_of_the_owners_own_files.sql",
+      "sha256": "5575034e57c3de4c251bbe266436df463616f04f5c8ed7581bce57ab83830d25",
+      "bytes": 14837
+    },
+    {
+      "order": 64,
+      "path": "upstream/supabase/migrations/064_what_gets_compared_with_what.sql",
+      "sha256": "9e845578de5c8f2b2a8f2f339cc6d646ba1125ab06d2469399f460d53ddb87b5",
+      "bytes": 3069
+    },
+    {
+      "order": 65,
+      "path": "upstream/supabase/migrations/065_the_watchdog_and_the_door_share_one_secret.sql",
+      "sha256": "64561c8532acd9f903a018871361b70b57e90310936f4ea5a6e763d99a56e035",
+      "bytes": 3404
+    },
+    {
+      "order": 66,
+      "path": "upstream/supabase/migrations/066_one_column_two_names.sql",
+      "sha256": "afbe745fa43c4b651dd3446297f9dac13079d13a6d7b200057c840b3d576ef88",
+      "bytes": 2882
+    },
+    {
+      "order": 67,
+      "path": "upstream/supabase/migrations/067_existing_plans_join_the_analysis.sql",
+      "sha256": "1e657e99c8913be1c4a39d6bc943ee6c764df1081f4fdcee2c7ce23c58698dbd",
+      "bytes": 2643
+    },
+    {
+      "order": 68,
+      "path": "upstream/supabase/migrations/068_the_rows_another_system_holds.sql",
+      "sha256": "aad3ce779cbfeb513d3784c8fda14c1f27e8e78caef0042d58cb4179b4ad6df4",
+      "bytes": 11924
+    },
+    {
+      "order": 69,
+      "path": "upstream/supabase/migrations/069_an_incident_that_survives_a_restart.sql",
+      "sha256": "9b05e8b8bb3fadadc857ef40f988dd1396535f4630fa50ac77ab6a16b6ebde8d",
+      "bytes": 30871
+    },
+    {
+      "order": 70,
+      "path": "upstream/supabase/migrations/070_delivered_is_a_fact_the_database_refuses_to_invent.sql",
+      "sha256": "64a8e43903b57fb53396a000f4a56cb970bd778023656e95c3ee75aa2a5e44ce",
+      "bytes": 15834
+    },
+    {
+      "order": 71,
+      "path": "upstream/supabase/migrations/071_a_proof_that_cannot_be_deleted.sql",
+      "sha256": "5198ee31b3654d4cd8962e352cf0b91e88821500570d790a623ab102c2314c02",
+      "bytes": 8412
+    },
+    {
+      "order": 72,
+      "path": "upstream/supabase/migrations/072_ceo_admin_external_human_decision.sql",
+      "sha256": "9c3c0fd2430fb0acd18c4aafb1ef64df43f0c5ca67ec1f70f1aa4636f00ba56c",
+      "bytes": 31254
+    },
+    {
+      "order": 73,
+      "path": "upstream/supabase/migrations/073_completion_requires_measured_evidence.sql",
+      "sha256": "a2a8402338b5f3dc1fb7aebedbe3b286e88ffc070ba681925114103c24e680f9",
+      "bytes": 2759
+    },
+    {
+      "order": 74,
+      "path": "upstream/supabase/migrations/074_shared_work_orders.sql",
+      "sha256": "1c3d186da308399b60cd8bfe6ee9bd9be4d97d6592881a640c1170f5079bc599",
+      "bytes": 4455
+    },
+    {
+      "order": 75,
+      "path": "upstream/supabase/migrations/075_bounded_routing_history_index.sql",
+      "sha256": "16054fe6bc1fcde752c5a51236994970379ca2950c8721facfb4cd18c2ac3dd2",
+      "bytes": 312
+    },
+    {
+      "order": 76,
+      "path": "upstream/supabase/migrations/076_a_confirmation_is_never_overwritten.sql",
+      "sha256": "333ebb783ae57cee32c83ce0035febb2929c0c32ce18d12cd804afacc58e6a9a",
+      "bytes": 18952
+    },
+    {
+      "order": 77,
+      "path": "upstream/supabase/migrations/20261002215547_core_v2_voice_durable_runtime.sql",
+      "sha256": "d0f8f3dd206322a79b98a932419f05505b9434500312e48c6823b2534c9a764c",
+      "bytes": 39362
+    },
+    {
+      "order": 78,
+      "path": "upstream/supabase/migrations/20261006121456_core_v2_voice_relay.sql",
+      "sha256": "f5a7771755e17779e947214bf7b405d3707a0b379bdd0f0c506bcb2f97fad6e0",
+      "bytes": 22148
+    },
+    {
+      "order": 79,
+      "path": "storage/supabase/migrations/20261020021909_statecourse_readonly_results.sql",
+      "sha256": "85579ab97de02bd51a8e5ee9d83b3ac6dbabcd5c076afe8cde9e34c4eeb9205b",
+      "bytes": 7249
+    }
+  ],
+  "bundleSha256": "01c0a165b54840b225fcb16b68ad8956111d99f516bab3aa35ae2f037b656c15"
+}

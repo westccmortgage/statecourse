@@ -1,0 +1,79 @@
+project_id = "hbqlhplgqwuesrovbiye"
+
+[functions.spatial-analyze]
+verify_jwt = true
+
+[functions.plan-analyze]
+verify_jwt = true
+
+[functions.object-storage]
+verify_jwt = false
+
+[functions.capture-session]
+verify_jwt = false
+
+[functions.project-intake]
+verify_jwt = false
+
+[functions.field-workflow]
+verify_jwt = false
+
+[functions.field-quality-check]
+verify_jwt = false
+
+[functions.vision-release]
+verify_jwt = true
+
+[functions.document-evidence]
+verify_jwt = true
+
+[functions.document-classify]
+verify_jwt = true
+
+[functions.compare-readings]
+verify_jwt = true
+
+# Production Runner V1. Two doors, because there are two kinds of caller.
+#
+# The human door takes start, cancel and status, and the platform verifies
+# every caller's token before the code runs.
+[functions.core-v2-runner]
+verify_jwt = true
+
+# The machine door takes one operation — tick — from a watchdog on a schedule
+# or from the previous invocation handing on. Neither has a user token, so the
+# platform cannot check one; the function proves the caller with a shared
+# secret of its own instead, and refuses to open at all until that secret is
+# set. It is dormant until deployed AND armed: see docs/core-v2-runner.md.
+[functions.core-v2-runner-tick]
+verify_jwt = false
+
+# The owner's own analyses. Create, estimate, run, watch, stop, and open the
+# evidence behind a result. Every caller is a signed-in person, so the platform
+# checks the token before the code runs. Uploads deliberately do NOT come
+# through here — the browser puts bytes straight into storage under RLS.
+[functions.core-v2-analysis]
+verify_jwt = true
+
+# The CEO Admin door. Its only caller is the administrative application's
+# backend, in another Supabase project, so no token this platform issues can
+# identify it — and the only JWT that would verify here is one signed with
+# this project's own secret, which can mint any role. So the platform check
+# is off and the function proves the caller itself, with an HMAC over the
+# body using a secret shared for this door alone (CEO_ADMIN_DOOR_SECRET),
+# and refuses to open at all until that secret and the submitter it acts as
+# (CORE_V2_CEO_ADMIN_SUBMITTER) are set.
+[functions.core-v2-ceo-admin]
+verify_jwt = false
+
+# Dedicated server-to-server factory bridge; refuses all requests until its
+# separate HMAC secret, fixed organization and member submitter are configured.
+[functions.core-v2-factory]
+verify_jwt = false
+
+# Dedicated server-to-server voice door. Supabase JWT verification is off
+# because its only caller is the separately deployed voice service; the
+# function authenticates every request with its own timestamped HMAC and a
+# durable nonce claim, and stays disabled until explicitly armed.
+[functions.core-v2-voice-turn]
+verify_jwt = false

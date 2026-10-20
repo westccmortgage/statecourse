@@ -1,0 +1,213 @@
+{
+  "localDate": "2026-10-19",
+  "timezone": "America/Los_Angeles",
+  "deployment": {
+    "siteId": "b514a8f8-782b-448c-8881-a914ee42c69b",
+    "publishedDeploy": "6ad6edabcc6a4d9fc208b96b",
+    "deployId": "6ad6edabcc6a4d9fc208b96b",
+    "buildId": "6ad6edabcc6a4d9fc208b969",
+    "state": "ready",
+    "context": "production",
+    "commitRef": null,
+    "branch": "main",
+    "publishedAt": "2026-10-20T04:28:28.760Z",
+    "availableFunctions": 40,
+    "edgeFunctionsPresent": true,
+    "buildDone": true,
+    "buildError": false,
+    "buildKeys": [
+      "sha"
+    ]
+  },
+  "sourceArchive": {
+    "commit": "5599ae93421bef0ad4d729a774bab250353c2787",
+    "sha256": "b3ac79b7aa4f4c3ce881f1b655292e746dbd17f1ddd6b364fecfc50c2cf4ea42",
+    "method": "official Netlify createSiteBuild raw source ZIP; no function archive mutation"
+  },
+  "runtimeChecks": [
+    {
+      "path": "/api/admin/core/health",
+      "method": "GET",
+      "status": 200,
+      "json": true,
+      "cacheControl": "no-store,private",
+      "body": {
+        "service": "statecourse-core",
+        "hosting": "existing-netlify",
+        "analysisEnabled": false,
+        "providerCallsEnabled": false,
+        "sourceAccess": "not_verified",
+        "coreConnection": "not_verified"
+      }
+    },
+    {
+      "path": "/api/admin/core/observations",
+      "method": "POST",
+      "status": 503,
+      "json": true,
+      "cacheControl": "no-store,private",
+      "body": {
+        "error": "analysis_disabled_pending_background_execution"
+      }
+    },
+    {
+      "path": "/api/admin/core/observations/00000000-0000-4000-8000-000000000001",
+      "method": "GET",
+      "status": 503,
+      "json": true,
+      "cacheControl": "no-store",
+      "body": {
+        "error": "integration_disabled"
+      }
+    },
+    {
+      "path": "/api/student/nmls/coach",
+      "method": "GET",
+      "status": 405,
+      "json": true,
+      "cacheControl": "no-store,private",
+      "body": {
+        "error": "method_not_allowed"
+      }
+    }
+  ],
+  "staticChecks": [
+    {
+      "path": "/",
+      "status": 200,
+      "sha256": "1b761eca76d6ba164f45d484b2cf22b969662b8d704780f2f02297c06b828900",
+      "matchesBuild": true
+    },
+    {
+      "path": "/learning-coach.js",
+      "status": 200,
+      "sha256": "dc00b51c150464217dd42d8a99c60cb52659758a5da3f19cae62c0ca5b7c5412",
+      "matchesBuild": true
+    },
+    {
+      "path": "/learning-coach-reading.js",
+      "status": 200,
+      "sha256": "207c44cf10690affdb85f6c6f458fda841c3210a9abff05d20a4dd35fbad0568",
+      "matchesBuild": true
+    },
+    {
+      "path": "/student/course/student-course.js",
+      "status": 200,
+      "sha256": "51f1ca2f35646b966251c030c685eb76f3cd35d70fd42024afdc568ba61426b9",
+      "matchesBuild": true
+    },
+    {
+      "path": "/admin/console/",
+      "status": 303,
+      "staffBoundaryPreserved": true
+    },
+    {
+      "path": "/api/admin/core/health",
+      "method": "POST",
+      "status": 405
+    },
+    {
+      "path": "/api/admin/core/health?unexpected=1",
+      "method": "GET",
+      "status": 404
+    }
+  ],
+  "activationConfiguration": {
+    "scope": "production/functions site and inherited account",
+    "sharedReadable": true,
+    "configuration": {
+      "CORE_V2_BRIDGE_ENABLED": {
+        "declared": false,
+        "nonempty": false
+      },
+      "STATECOURSE_READ_DATABASE_URL": {
+        "declared": false,
+        "nonempty": false
+      },
+      "STATECOURSE_DATABASE_NAME": {
+        "declared": false,
+        "nonempty": false
+      },
+      "CORE_DATABASE_URL": {
+        "declared": false,
+        "nonempty": false
+      },
+      "CORE_DATABASE_NAME": {
+        "declared": false,
+        "nonempty": false
+      },
+      "CORE_ORGANIZATION_ID": {
+        "declared": false,
+        "nonempty": false
+      },
+      "SUPABASE_URL": {
+        "declared": true,
+        "nonempty": true
+      },
+      "SUPABASE_ANON_KEY": {
+        "declared": true,
+        "nonempty": true
+      },
+      "OPENAI_API_KEY": {
+        "declared": true,
+        "nonempty": true
+      },
+      "ANTHROPIC_API_KEY": {
+        "declared": false,
+        "nonempty": false
+      },
+      "GEMINI_API_KEY": {
+        "declared": true,
+        "nonempty": true
+      }
+    },
+    "sourceAuthProject": "gdldvjefibssxnrpsxja",
+    "valuesRecorded": false,
+    "variablesChanged": false
+  },
+  "coreDatabase": {
+    "projectId": "hkzhburprkwtnoeqbinh",
+    "organizations": 0,
+    "workflows": 0,
+    "resultRuns": 0,
+    "clientExecutableDefiners": 0,
+    "securityWarnings": 0,
+    "securityErrors": 0,
+    "retainedInfo": {
+      "name": "rls_enabled_no_policy",
+      "count": 21
+    }
+  },
+  "remaining": [
+    "Production source/Core SQL credentials and verified dedicated roles",
+    "Core organization/bootstrap",
+    "Background transport release is prepared after this hosting snapshot",
+    "Explicit approved provider declaration and spending authorization; no paid calls performed"
+  ],
+  "secretsChanged": false,
+  "sourceDatabaseChanged": false,
+  "providerCallsPerformed": false,
+  "originalCoreChanged": false,
+  "buildConfigurationChange": {
+    "name": "NETLIFY_NEXT_PLUGIN_SKIP",
+    "previousTomlOverride": "unset",
+    "value": "true",
+    "scope": "Netlify build only; Functions variables unchanged"
+  },
+  "additionalRuntimeMetadata": {
+    "additionalFlags": {
+      "CORE_V2_BACKGROUND_ENABLED": {
+        "declared": false,
+        "nonempty": false
+      },
+      "STATECOURSE_ORIGIN": {
+        "declared": false,
+        "nonempty": false
+      }
+    },
+    "userConfiguredFunctionEnvironmentJsonBytes": 1168,
+    "excludesPlatformInternalVariables": true,
+    "valuesRecorded": false,
+    "variablesChanged": false
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "@measured-decision/core-v2-voice",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "bash tests/run.sh",
+    "test:postgres": "bash tests/run-postgres-migration-test.sh"
+  },
+  "dependencies": {}
+}

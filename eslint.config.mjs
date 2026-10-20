@@ -18,6 +18,8 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Byte-preserved upstream runtime has its own checks under integrations/core-v2/.
+    "integrations/core-v2/upstream/**",
     "work/**", "outputs/**", ".sites-runtime/**", ".wrangler/**", "dist/**",
   ]),
 ]);

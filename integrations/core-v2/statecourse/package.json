@@ -1,0 +1,8 @@
+{
+  "name": "@statecourse/core-v2-readonly",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22.13.0" },
+  "scripts": { "test": "node --experimental-strip-types --no-warnings --test tests/*.test.mjs" },
+  "dependencies": {}
+}

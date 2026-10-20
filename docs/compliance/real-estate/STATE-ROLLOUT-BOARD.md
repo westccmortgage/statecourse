@@ -1,3 +1,5 @@
+> October 19, 2026, Los Angeles: approved source reconciliation preserves the newer PR #26 Core transport and the published lesson-open coach guard on main. Paid Core calls remain OFF. Lint and actual entitlement restoration are verified; AK/TX coach quality findings remain open. See `docs/audits/COACH-CORE-PRESERVATION-2026-10-20.md`.
+
 # Real Estate State Rollout Board
 
 ## Production AI pilot verification — October 19, 2026 (Los Angeles)

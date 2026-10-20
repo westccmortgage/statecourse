@@ -1,0 +1,44 @@
+name: Core V2 StateCourse read-only integration
+on:
+  pull_request:
+    paths:
+      - 'integrations/core-v2/**'
+      - 'database/**'
+      - 'netlify/functions/core-readonly*.mjs'
+      - 'netlify.toml'
+      - 'site/build.sh'
+      - 'tsconfig.json'
+      - 'eslint.config.mjs'
+      - '.github/workflows/core-v2-readonly.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  offline-integration:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install isolated test tooling (no runtime dependency change)
+        run: npm install --prefix "$RUNNER_TEMP/core-v2-tests" --ignore-scripts --no-audit --no-fund @electric-sql/pglite@0.3.14 typescript@5.9.3
+      - name: Install isolated Core server SQL driver
+        run: npm ci --prefix integrations/core-v2/server --ignore-scripts --no-audit --no-fund
+      - name: Verify copy and read-only integration against local PostgreSQL
+        env:
+          STATECOURSE_TEST_PGLITE: ${{ runner.temp }}/core-v2-tests/node_modules/@electric-sql/pglite/dist/index.js
+        run: bash integrations/core-v2/scripts/test.sh
+      - name: Verify application compiler boundary
+        run: node integrations/core-v2/scripts/verify-app-boundary.mjs "$RUNNER_TEMP/core-v2-tests/node_modules/typescript/lib/typescript.js"
+      - name: Typecheck StateCourse DomainPack
+        run: PATH="$RUNNER_TEMP/core-v2-tests/node_modules/.bin:$PATH" bash integrations/core-v2/scripts/typecheck-pack.sh
+      - name: Typecheck the copied Core runtime doors
+        run: PATH="$RUNNER_TEMP/core-v2-tests/node_modules/.bin:$PATH" bash integrations/core-v2/upstream/workers/core-v2-runner/tests/typecheck-doors.sh
+      - name: Verify hardened Core on disposable native PostgreSQL 17
+        run: |
+          npm install --prefix "$RUNNER_TEMP/core-v2-native" --ignore-scripts --no-audit --no-fund @embedded-postgres/linux-x64@17.10.0-beta.17
+          native="$RUNNER_TEMP/core-v2-native/node_modules/@embedded-postgres/linux-x64"
+          (cd "$native" && node scripts/hydrate-symlinks.js)
+          node --experimental-strip-types --no-warnings integrations/core-v2/scripts/test-native-install.mjs "$native/native/bin" --hardening

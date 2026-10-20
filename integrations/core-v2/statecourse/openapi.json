@@ -1,0 +1,1002 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "StateCourse Core V2 read-only observations",
+    "version": "1.3.0",
+    "description": "StateCourse read-only observation contract. Existing Netlify hosting exposes the cookie-authenticated bridge and a durable background handoff; deployment alone does not activate source access or provider spending. Original standalone synchronous mode is retained. Source operations remain read-only."
+  },
+  "paths": {
+    "/v1/statecourse/observations": {
+      "post": {
+        "operationId": "explainEnrollmentObservations",
+        "security": [
+          {
+            "statecourseBearer": [],
+            "staffProof": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "Origin",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Exact configured StateCourse server origin; no CORS allowance."
+          },
+          {
+            "in": "header",
+            "name": "Idempotency-Key",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            },
+            "description": "Mandatory when the durable result store is configured. Scoped to the authenticated actor and server-configured organization. Same key/scope returns the original stored result; a different scope conflicts. Pending/interrupted requests never automatically replay."
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "description": "At most 1024 bytes. Authority, tenant and SQL are never accepted in the body.",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Scope"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Point-in-time observations; inspect each verification status. no_observations is not a compliance or launch approval.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Result"
+                }
+              }
+            }
+          },
+          "202": {
+            "description": "Durably reserved request accepted for background delivery; not proof of completion. Poll the scoped GET run endpoint. A 409 retry never resubmits pending or interrupted work.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "oneOf": [
+                    {
+                      "$ref": "#/components/schemas/RunState"
+                    },
+                    {
+                      "$ref": "#/components/schemas/Result"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid JSON, unknown authority fields or unsupported scope",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Missing or invalid bearer/proof",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Wrong origin, expired/revoked MFA/session, role or CA scope denied",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Unknown route or enrollment outside the fixed course",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "405": {
+            "description": "POST required",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "409": {
+            "description": "Idempotency scope conflict or existing non-replayable reserved/running/interrupted run",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "error"
+                  ],
+                  "properties": {
+                    "error": {
+                      "type": "string"
+                    },
+                    "runId": {
+                      "type": "string",
+                      "format": "uuid"
+                    },
+                    "status": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "413": {
+            "description": "Body exceeds 1024 bytes",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "415": {
+            "description": "application/json required",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Incomplete bounded source or integrity/finding limit refusal",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "429": {
+            "description": "One analysis already active in this process",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "Disabled, independent executors unavailable, source/provider failure or reauthorization unavailable",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/statecourse/observations/{runId}": {
+      "get": {
+        "operationId": "getStoredObservation",
+        "security": [
+          {
+            "statecourseBearer": [],
+            "staffProof": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "Origin",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Exact configured StateCourse server origin; no CORS allowance."
+          },
+          {
+            "in": "path",
+            "name": "runId",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "description": "Return the immutable stored result only to its original actor within the configured organization, after current StateCourse MFA/role/CA reauthorization. Does not recapture source data or call providers. Historical evidence is explicitly point-in-time.",
+        "responses": {
+          "200": {
+            "description": "Point-in-time observations; inspect each verification status. no_observations is not a compliance or launch approval.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Result"
+                }
+              }
+            }
+          },
+          "202": {
+            "description": "Run exists but has no completed result; no automatic retry is initiated.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RunState"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Missing or invalid bearer/proof",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Wrong origin, expired/revoked MFA/session, role or CA scope denied",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Unknown route or enrollment outside the fixed course",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "Disabled, independent executors unavailable, source/provider failure or reauthorization unavailable",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/admin/core/observations": {
+      "post": {
+        "operationId": "explainEnrollmentObservationsThroughCookieBridge",
+        "security": [
+          {
+            "statecourseAccessCookie": [],
+            "statecourseStaffCookie": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "Origin",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Exact configured StateCourse server origin; no CORS allowance."
+          },
+          {
+            "in": "header",
+            "name": "Idempotency-Key",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            },
+            "description": "Mandatory when the durable result store is configured. Scoped to the authenticated actor and server-configured organization. Same key/scope returns the original stored result; a different scope conflicts. Pending/interrupted requests never automatically replay."
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "description": "At most 1024 bytes. Authority, tenant and SQL are never accepted in the body.",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Scope"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Point-in-time observations; inspect each verification status. no_observations is not a compliance or launch approval.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Result"
+                }
+              }
+            }
+          },
+          "202": {
+            "description": "Durably reserved request accepted for background delivery; not proof of completion. Poll the scoped GET run endpoint. A 409 retry never resubmits pending or interrupted work.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "oneOf": [
+                    {
+                      "$ref": "#/components/schemas/RunState"
+                    },
+                    {
+                      "$ref": "#/components/schemas/Result"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid JSON, unknown authority fields or unsupported scope",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Missing or invalid bearer/proof",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Wrong origin, expired/revoked MFA/session, role or CA scope denied",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Unknown route or enrollment outside the fixed course",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "405": {
+            "description": "POST required",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "409": {
+            "description": "Idempotency scope conflict or existing non-replayable reserved/running/interrupted run",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "error"
+                  ],
+                  "properties": {
+                    "error": {
+                      "type": "string"
+                    },
+                    "runId": {
+                      "type": "string",
+                      "format": "uuid"
+                    },
+                    "status": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "413": {
+            "description": "Body exceeds 1024 bytes",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "415": {
+            "description": "application/json required",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Incomplete bounded source or integrity/finding limit refusal",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "429": {
+            "description": "One analysis already active in this process",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "Disabled, independent executors unavailable, source/provider failure or reauthorization unavailable",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "description": "Same-origin cookie bridge. Original HttpOnly cookies only; browser-supplied Authorization and identity/proof headers are ignored. Origin is mandatory for GET and POST. No query parameters. Disabled by default; no production route installed."
+      }
+    },
+    "/api/admin/core/observations/{runId}": {
+      "get": {
+        "operationId": "getStoredObservationThroughCookieBridge",
+        "security": [
+          {
+            "statecourseAccessCookie": [],
+            "statecourseStaffCookie": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "Origin",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Exact configured StateCourse server origin; no CORS allowance."
+          },
+          {
+            "in": "path",
+            "name": "runId",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "description": "Same-origin cookie bridge. Original HttpOnly cookies only; browser-supplied Authorization and identity/proof headers are ignored. Origin is mandatory for GET and POST. No query parameters. Disabled by default; no production route installed.",
+        "responses": {
+          "200": {
+            "description": "Point-in-time observations; inspect each verification status. no_observations is not a compliance or launch approval.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Result"
+                }
+              }
+            }
+          },
+          "202": {
+            "description": "Run exists but has no completed result; no automatic retry is initiated.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RunState"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Missing or invalid bearer/proof",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Wrong origin, expired/revoked MFA/session, role or CA scope denied",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Unknown route or enrollment outside the fixed course",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "Disabled, independent executors unavailable, source/provider failure or reauthorization unavailable",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/admin/core/background": {
+      "x-internal": true,
+      "post": {
+        "operationId": "executeCapturedObservation",
+        "description": "Server-to-server Netlify Background Function. Original bearer and staff proof are validated again, actor/org scope is server-owned and only a durably reserved request can be captured and atomically claimed. Never call this endpoint as a browser submission. Netlify replies 202 before worker authorization: that platform response is not permission, completion or a result.",
+        "security": [
+          {
+            "statecourseBearer": [],
+            "staffProof": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "Origin",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Exact configured HTTPS StateCourse origin."
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "description": "At most 1024 bytes; no actor, tenant, token, SQL or snapshot fields.",
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "runId"
+                ],
+                "properties": {
+                  "runId": {
+                    "type": "string",
+                    "format": "uuid"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "202": {
+            "description": "Netlify platform delivery acknowledgment only. The worker rechecks current source authority and atomically claims captured -> running; retries cannot repeat running, interrupted or completed work. Read the authenticated run endpoint for results."
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "securitySchemes": {
+      "statecourseBearer": {
+        "type": "http",
+        "scheme": "bearer",
+        "bearerFormat": "StateCourse Supabase JWT"
+      },
+      "staffProof": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "x-statecourse-staff-proof",
+        "description": "Original 43-character HttpOnly exact-session MFA proof, forwarded only by the server bridge. Never browser storage or logs."
+      },
+      "statecourseAccessCookie": {
+        "type": "apiKey",
+        "in": "cookie",
+        "name": "__Host-sc_access"
+      },
+      "statecourseStaffCookie": {
+        "type": "apiKey",
+        "in": "cookie",
+        "name": "__Host-sc_staff"
+      }
+    },
+    "schemas": {
+      "Scope": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "courseId",
+          "enrollmentId"
+        ],
+        "properties": {
+          "courseId": {
+            "const": "ca-real-estate-principles-45"
+          },
+          "enrollmentId": {
+            "type": "string",
+            "format": "uuid"
+          }
+        }
+      },
+      "Hash": {
+        "type": "string",
+        "pattern": "^[0-9a-f]{64}$"
+      },
+      "Evidence": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "table",
+          "key",
+          "field",
+          "value",
+          "snapshotHash"
+        ],
+        "properties": {
+          "table": {
+            "type": "string",
+            "enum": [
+              "enrollments",
+              "courses",
+              "regulatory_course_versions",
+              "access_grants",
+              "lms_compliance_state",
+              "lms_assignment_state",
+              "lms_block_progress",
+              "payment_enrollments",
+              "payments",
+              "console_course_releases",
+              "console_course_reviews",
+              "console_tasks",
+              "console_task_events",
+              "console_evidence_events",
+              "console_review_findings"
+            ]
+          },
+          "key": {
+            "type": [
+              "object",
+              "null"
+            ],
+            "additionalProperties": {
+              "type": [
+                "string",
+                "number",
+                "boolean",
+                "null"
+              ]
+            }
+          },
+          "field": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "value": {
+            "type": [
+              "string",
+              "number",
+              "boolean",
+              "null"
+            ]
+          },
+          "snapshotHash": {
+            "$ref": "#/components/schemas/Hash"
+          },
+          "recordHash": {
+            "$ref": "#/components/schemas/Hash"
+          },
+          "resultHash": {
+            "$ref": "#/components/schemas/Hash"
+          },
+          "rowCount": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 1000
+          },
+          "scope": {
+            "$ref": "#/components/schemas/Scope"
+          }
+        }
+      },
+      "Observation": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "candidateId",
+          "code",
+          "explanation",
+          "evidence",
+          "verification",
+          "acceptedClaimIds"
+        ],
+        "properties": {
+          "candidateId": {
+            "type": "string"
+          },
+          "code": {
+            "type": "string"
+          },
+          "explanation": {
+            "type": "string"
+          },
+          "evidence": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "$ref": "#/components/schemas/Evidence"
+            }
+          },
+          "verification": {
+            "enum": [
+              "accepted",
+              "needs_human_review"
+            ]
+          },
+          "acceptedClaimIds": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        }
+      },
+      "Result": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "contractVersion",
+          "scope",
+          "snapshotHash",
+          "capturedAt",
+          "status",
+          "observations",
+          "limitations"
+        ],
+        "properties": {
+          "contractVersion": {
+            "const": "statecourse.readonly.1"
+          },
+          "scope": {
+            "$ref": "#/components/schemas/Scope"
+          },
+          "snapshotHash": {
+            "$ref": "#/components/schemas/Hash"
+          },
+          "capturedAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "workflowId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "status": {
+            "enum": [
+              "no_observations",
+              "verified_observations",
+              "needs_human_review"
+            ]
+          },
+          "observations": {
+            "type": "array",
+            "maxItems": 32,
+            "items": {
+              "$ref": "#/components/schemas/Observation"
+            }
+          },
+          "trace": {
+            "type": "object",
+            "description": "Existing Core V2 claim/assessment/attempt contracts. With createProviderRuntimeFactory these records and budget reservations are persisted by the existing Core PostgreSQL repository/ledger; snapshots/results live in the separate private Core store.",
+            "required": [
+              "workflowState",
+              "claims",
+              "assessments",
+              "attempts"
+            ],
+            "properties": {
+              "workflowState": {
+                "type": "string"
+              },
+              "claims": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              },
+              "assessments": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              },
+              "attempts": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            },
+            "additionalProperties": false
+          },
+          "limitations": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "persistence": {
+            "$ref": "#/components/schemas/Persistence"
+          },
+          "events": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Event"
+            }
+          }
+        }
+      },
+      "Error": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "error"
+        ],
+        "properties": {
+          "error": {
+            "type": "string"
+          },
+          "runId": {
+            "type": "string",
+            "format": "uuid",
+            "description": "Present on uncertain background handoff after durable reservation. Poll this run; never automatically submit again."
+          }
+        }
+      },
+      "Event": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "kind",
+          "recorded_at"
+        ],
+        "properties": {
+          "kind": {
+            "enum": [
+              "reserved",
+              "captured",
+              "running",
+              "completed",
+              "interrupted"
+            ]
+          },
+          "recorded_at": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      },
+      "Persistence": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "runId",
+          "resultHash",
+          "createdAt"
+        ],
+        "properties": {
+          "runId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "resultHash": {
+            "$ref": "#/components/schemas/Hash"
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      },
+      "RunState": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "contractVersion",
+          "runId",
+          "status",
+          "events"
+        ],
+        "properties": {
+          "contractVersion": {
+            "const": "statecourse.readonly.1"
+          },
+          "runId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "status": {
+            "enum": [
+              "reserved",
+              "captured",
+              "running",
+              "interrupted"
+            ]
+          },
+          "events": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Event"
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,3 +1,30 @@
+# Current source reconciliation — October 19, 2026, Los Angeles
+
+The owner approved the combined production publication. A fresh prepublication check found newer Core source `174e4a0654c0c2f5da9a253442c966ae51908ee6`, already published manually as deploy `6ad6f4cd2748d0262e01f1cd`. It already includes the exact lesson-open coach fix and its regression test. The new source integration preserves this newer durable Core transport and both histories on main; the older combined candidate `4480b63` is superseded. Paid analysis/provider network remain forced OFF; existing coach settings and $1/day cap are unchanged. Final Git/Netlify publication and hosted checks will be recorded after completion. See COACH-CORE-PRESERVATION-2026-10-20.md.
+
+## Coach acceptance completed before source reconciliation
+
+The following snapshot describes c20b8ec before the newer concurrent Core publication; its technical and quality findings remain relevant.
+
+## Historical coach snapshot — technical checks pass; preservation and quality issues remain
+
+Current code publication is **c20b8ec00b53632a54fa4a1d8e66e29fdd2b59a7**, Netlify deploy **6ad6f11cbd44ee44eab9d24e**, published2026-10-20T04:42:53.717Z. The coach is enabled, OpenAI/gpt-4.1-mini default, shared $1/day cap. Live ledger after acceptance:22 requests,20 complete,2 failed,164,881 micros ($0.164881) conservatively reserved; this is not a provider bill. Existing provider keys/settings were not changed in this continuation.
+
+**Publication preservation issue:** a concurrent manual production deploy6ad6edabcc6a4d9fc208b96b (source5599ae9, PR#26) had included the Core read-only function, while GitHub main did not. Publishing c20b8ec replaced that artifact and omitted core-readonly. All39 common function digests are identical; core-readonly is the missing function. Its previous immutable deployment health returns200 with analysisEnabled:false/providerCallsEnabled:false; current custom-domain Core health returns404. A normal Publish deploy rollback was attempted, but automatic approval review rejected it for missing explicit rollback authorization. No workaround or further publication was attempted. Current source is preserved; a combined candidate is prepared and tested. See COACH-CORE-PRESERVATION-2026-10-20.md. Core paid analysis remains disabled; no environment, secret, source database or Core configuration was changed.
+
+**Closed technical checks:**
+
+- Actual owner-only free Mortgage entitlement revoke removed private lesson and coach UI and displayed the unavailable/inactive notice. The exact grant was restored to active/revoked_atNULL; its full-row md5 matches the baseline2f1f33ad3c5254bb5640fd781d90c31e. Reload restored0/45 units,0/8 practices, and training was left paused. No grades, completion, payment, credit or staff binding changed. This is actual entitlement/UI evidence; a separate raw cached-coach response after revocation was not captured.
+- Found and fixed a coach panel appearing after resume before a unit was open, sending unitId:null and receiving400. Current deployed UI has no coach before opening a unit and shows it after opening Two application tests. The actual DOM/controller regression failed before the guard and passed afterwards.55 related tests passed,0 skipped. Netlify production build and5 protection checks passed.
+- Pinned ESLint9.39.4 with exact repository config/dependency versions checked785 files:0 errors,116 existing warnings, no coach-file warnings. Dependencies were installed only in temporary tooling directories; project dependencies/lockfile were not changed for lint.
+
+**Expanded quality sample:** eight additional public course lessons (AK,AZ,CO,NC,TX,VA,WA,WI) generated real OpenAI answers. Six samples correspond to their cited lesson excerpts. Alaska's answer added represented-person duty examples absent from its displayed citations. Texas's final sentence contradicted its earlier explanation that a sponsored sales agent may perform broker acts. These two samples do not pass quality acceptance. All eight answers and expanded citation text are retained in work/coach-browser/expanded-quality-20261020.json. This is a bounded sample, not portfolio-wide regulatory or educational approval. Further model/prompt evaluation is still required.
+
+Original OpenAI/Gemini real-response, refusal, consent-switch and desktop/mobile evidence below remains historical acceptance evidence. The original authenticated build.json matched bf0433a after owner reauthentication; a later read for c20b8ec again redirected to staff verification after the proof expired. c20b8ec publication metadata and live guard behavior were observed, but its protected JSON was not read. Hosted combined-candidate behavior remains unverified until explicitly approved publication.
+
+
+## Prior Core and coach record
+
 # Production coach verification — October 19, 2026, Los Angeles
 
 ## Current result — functional pilot verified, broader gates remain open
