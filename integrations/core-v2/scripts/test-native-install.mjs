@@ -6,6 +6,9 @@ import {join} from 'node:path';
 import {spawnSync} from 'node:child_process';
 import {createServer} from 'node:net';
 import pg from '../server/node_modules/pg/lib/index.js';
+import {coreClient} from '../statecourse/core-client.mjs';
+import {PostgresOrchestrationRepository} from '../upstream/workers/core-v2/postgres/repository.ts';
+import {applyLocalHardening} from '../hardening/apply.mjs';
 import {verifiedInstallation} from '../installation/package.mjs';
 import {PostgresResultStore} from '../statecourse/store.mjs';
 import {explainSnapshot} from '../statecourse/engine.mjs';
@@ -55,6 +58,15 @@ try {
  await assert.rejects(()=>client.query(sql),/initial_core_install_requires_empty_application_schema/);await client.query('ROLLBACK');
  const exposedWithoutRls=(await client.query("select c.relname from pg_class c join pg_namespace n on n.oid=c.relnamespace where n.nspname='public' and c.relkind='r' and not c.relrowsecurity and has_table_privilege('anon',c.oid,'SELECT') order by c.relname")).rows.map(r=>r.relname);
  assert.deepEqual(exposedWithoutRls,[],'public tables readable by anon must have RLS');
+ if(process.argv.includes('--hardening')) {
+  await applyLocalHardening(client);
+  const state=(await client.query("select count(*) filter(where p.prosecdef and (has_function_privilege('anon',p.oid,'EXECUTE') or has_function_privilege('authenticated',p.oid,'EXECUTE')))::int exposed,count(*) filter(where not exists(select 1 from unnest(coalesce(p.proconfig,'{}')) c where c like 'search_path=%'))::int mutable from pg_proc p join pg_namespace n on n.oid=p.pronamespace where n.nspname='public'")).rows[0];
+  assert.deepEqual(state,{exposed:0,mutable:0});
+  await client.query('set role anon');await assert.rejects(()=>client.query('select public.core_v2_tick_due_continuations(1)'),/permission denied/);await client.query('reset role');
+  await client.query('set role authenticated');await assert.rejects(()=>client.query('select public.core_v2_tick_due_continuations(1)'),/permission denied/);await client.query('reset role');
+  await client.query('set role service_role');assert.equal((await client.query('select public.core_v2_tick_due_continuations(1) as r')).rows[0].r.armed,false);await client.query('reset role');
+  await assert.rejects(()=>applyLocalHardening(client),/reviewed_function_catalog_changed/);await client.query('rollback');
+ }
  const privateTables=(await client.query("select count(*)::int n from pg_class c join pg_namespace n on n.oid=c.relnamespace where n.nspname='core_readonly' and c.relkind='r' and c.relrowsecurity and c.relforcerowsecurity")).rows[0].n;
  assert.equal(privateTables,3);
  for(const role of ['anon','authenticated','service_role'])assert.equal((await client.query("select has_schema_privilege($1,'core_readonly','USAGE') as allowed",[role])).rows[0].allowed,false);
@@ -65,7 +77,15 @@ try {
  let store=new PostgresResultStore({connect,expectedDatabaseName:'postgres'});
  const {run}=await store.reserve({...context,idempotencyKey:OTHER,scope:issue.scope}),ctx={...context,runId:run.id};
  await store.capture(ctx,issue);await store.start(ctx);
- const result=await explainSnapshot(issue,{organizationId:ORGANIZATION,createExecutors:executors(),workflowId:run.id});
+ let runtime;
+ if(process.argv.includes('--hardening')) {
+  await client.query("insert into public.organizations(id,name) values($1,'native-fixture')",[ORGANIZATION]);
+  await client.query("select set_config('request.jwt.claim.role','service_role',false)");
+  await client.query('set role service_role');
+  runtime=async world=>{const c=await coreClient({query:(s,p)=>client.query(s,p),release:async()=>{}},'postgres');return {repo:new PostgresOrchestrationRepository(c,{organizationId:ORGANIZATION}),registry:await executors()(world.resolver),close:()=>c.close()};};
+ }
+ const result=await explainSnapshot(issue,{organizationId:ORGANIZATION,createExecutors:executors(),createRuntime:runtime,workflowId:run.id});
+ if(runtime){assert.equal(result.status,'verified_observations');await client.query('reset role');}
  await store.complete(ctx,result);const before=await store.get(ctx);
  await assert.rejects(()=>client.query('delete from core_readonly.events'),/immutable/);
  await client.end();client=null;ctl('-m','fast','-w','stop');started=false;
@@ -74,7 +94,7 @@ try {
  assert.equal(after.resultHash,before.resultHash);assert.deepEqual(after.result,before.result);
  await assert.rejects(()=>store.get({...ctx,actorId:OTHER}),/result_not_found/);
  console.log(JSON.stringify({nativePostgres:version,tlsCertificateVerified:true,migrationCount:manifest.migrationCount,bundleSha256:manifest.bundleSha256,
-  checks:['source target refused','complete installation rollback after injected failure','full atomic install','nonempty rerun refused','private forced RLS/API role denial','public tables have RLS under broad default grants','watchdog dormant','immutable lifecycle','result survives actual database server restart','cross-actor denied'],platformAuthStorage:'modeled; not a hosted Supabase installation',hostedChanges:false},null,2));
+  checks:['source target refused','complete installation rollback after injected failure','full atomic install','nonempty rerun refused','private forced RLS/API role denial','public tables have RLS under broad default grants','watchdog dormant','immutable lifecycle','result survives actual database server restart','cross-actor denied'],platformAuthStorage:'modeled; not a hosted Supabase installation',hardeningTested:process.argv.includes('--hardening'),hostedChanges:false},null,2));
 } catch(error) {
  const log=await readFile(join(dir,'postgres.log'),'utf8').catch(()=> '');
  process.stderr.write(log.split('\n').filter(line=>/FATAL|PANIC/.test(line)).join('\n')+'\n');

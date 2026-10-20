@@ -33,3 +33,9 @@ jobs:
         run: PATH="$RUNNER_TEMP/core-v2-tests/node_modules/.bin:$PATH" bash integrations/core-v2/scripts/typecheck-pack.sh
       - name: Typecheck the copied Core runtime doors
         run: PATH="$RUNNER_TEMP/core-v2-tests/node_modules/.bin:$PATH" bash integrations/core-v2/upstream/workers/core-v2-runner/tests/typecheck-doors.sh
+      - name: Verify hardened Core on disposable native PostgreSQL 17
+        run: |
+          npm install --prefix "$RUNNER_TEMP/core-v2-native" --ignore-scripts --no-audit --no-fund @embedded-postgres/linux-x64@17.10.0-beta.17
+          native="$RUNNER_TEMP/core-v2-native/node_modules/@embedded-postgres/linux-x64"
+          (cd "$native" && node scripts/hydrate-symlinks.js)
+          node --experimental-strip-types --no-warnings integrations/core-v2/scripts/test-native-install.mjs "$native/native/bin" --hardening

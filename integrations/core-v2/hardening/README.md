@@ -1,0 +1,19 @@
+# StateCourse Core backend-only permissions
+
+This additive migration applies only to the new Core project `hkzhburprkwtnoeqbinh`, after the approved initial installation and before organizational/workflow data. The user authorized fixing the reported security findings and deployment. StateCourse's working database and the original Measured Decision backend are excluded. No original source file/body is edited.
+
+The existing adapter uses authenticated server SQL and source StateCourse Auth. It has no Core browser/member RPC client. Therefore this new database uses a backend-only profile: all 129 public SECURITY DEFINER functions deny effective EXECUTE to PUBLIC, anon and authenticated. Existing service_role privileges are preserved exactly (127 executable, 2 intentionally inaccessible); the migration never broadens the effective server allowlist. Public non-definer helpers retain their previous grants and table RLS still applies. Private result/voice schemas remain private.
+
+The 63 public functions lacking a fixed search path get `pg_catalog, public, extensions, pg_temp`; existing explicitly configured paths are retained. anon/authenticated cannot CREATE in public in the observed target. The migration checks all 192 exact function signatures/flags/server privileges against the observed baseline before changes. It refuses changed catalogs, a source marker, wrong DB or already-activated Core. It is atomic and intentionally refuses replay.
+
+`baseline.json` records prior non-secret ACLs and missing-path status for review/recovery; it contains no credential values. Original defaults/bodies are not rewritten and no global default privileges, permissive RLS policies, login identities or source grants are added. Future new privileged functions must explicitly restrict client EXECUTE in their own migrations; this initial hardening is not a claim that future arbitrary DDL inherits safe defaults.
+
+The focused `core_readonly.events(organization_id,run_id,id)` index covers the composite FK and the existing scoped ordered history lookup. Historical unused indexes are retained. Service-only tables with RLS/no policies retain their intended default denial; INFO findings are not silenced by creating permissive policies. Original performance policy/init-plan warnings require separate workload-specific review rather than a blanket policy rewrite.
+
+## Verification
+
+Executed the exact migration on disposable native PostgreSQL 17.10 with real pgcrypto, verified TLS/SCRAM and the target's broad public default-grant model. Effective anon/authenticated definer execution becomes zero; all 63 missing paths are fixed; per-function server privileges remain identical. Native negative calls under each client role fail with permission denied. A service-role call to the existing dormant-watchdog function succeeds without posting. A replay is refused.
+
+The actual original Core SQL repository/scheduler then runs the StateCourse DomainPack with independent scripted executors under service_role and produces accepted evidence. No provider/network call is made. Result storage, immutability, actor isolation and an actual PostgreSQL restart still pass after hardening. Reproduce with the existing native harness plus `--hardening`; CI installs an isolated pinned native PostgreSQL test binary and runs it too. No runtime dependency is added to StateCourse.
+
+Remote application/read-back and advisor results will be recorded in `applied.json` after execution. A deployment does not by itself establish source credential/RLS access or enable provider spending.
