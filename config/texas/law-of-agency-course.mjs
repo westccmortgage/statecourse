@@ -49,7 +49,7 @@ export const COURSE = Object.freeze({
   approvalForm: FORM.formNumber,
   approvalFormRevision: FORM.revision,
   curriculumDir: "texas/tx-law-of-agency-30-v1/curriculum",
-  contentFreeze: "LOA-CONTENT-FREEZE-2026-09-13-v19",
+  contentFreeze: "LOA-CONTENT-FREEZE-2026-10-19-v20",
   enrollmentEnabled: false,
   paymentEnabled: false,
   creditReportingEnabled: false,

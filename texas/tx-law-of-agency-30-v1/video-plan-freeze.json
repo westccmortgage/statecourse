@@ -1,5 +1,5 @@
 {
-  "freezeId": "LOA-VIDEO-PLAN-FREEZE-2026-09-13-v15",
+  "freezeId": "LOA-VIDEO-PLAN-FREEZE-2026-10-19-v16",
   "courseId": "tx-law-of-agency-30-v1",
   "frozenOn": "2026-09-13",
   "generatedBy": "scripts/freeze-loa-video-plan.mjs",
@@ -12,10 +12,10 @@
     "doNotSay": "'production-ready'. It collapses distinct asset, placement, course-approval and provider-approval layers into one."
   },
   "previousFreeze": {
-    "freezeId": "LOA-VIDEO-PLAN-FREEZE-2026-09-12-v14",
-    "sha256": "2499d5c669ee7d0a4fb8ea4ffbebd6b849c3514f9a898c958b69c1db93f250cf",
-    "on": "2026-09-13",
-    "change": "Shared Netlify packaging now includes private NMLS course, assessment and retained-evidence inputs, and duplicate student cache headers were removed. The shared content-release overlay refuses edits for versioned read-only training sources. No Texas instruction, answer key, video asset, placement, private Stream authorization or approval status changed. This is a dependency history update, not course or provider approval."
+    "freezeId": "LOA-VIDEO-PLAN-FREEZE-2026-09-13-v15",
+    "sha256": "f0716a159d10a0732221bdf91922a3d225fc8c0e42a44ed06a3a75312c7494fd",
+    "on": "2026-10-19",
+    "change": "Reconcile shared netlify.toml additions since exact frozen commit f0e9ddc: AI commerce routes/cache rules and disabled lesson-coach route. Existing Texas Stream routes and CSP remain unchanged. The shared block-player host also gains an optional public-source lesson coach on instruction/review screens, suppressed for assessment/remediation/reviewer modes; it does not alter Stream authorization, playback, progress or grading. Other frozen video dependency bytes match the prior freeze. No Texas authored instruction, answer keys, media assets, course approval or enrollment status changes. Stream/security/integration tests and video validator rerun before re-freezing."
   },
   "supersedes": {
     "artifact": "texas/tx-law-of-agency-30-v1/video-instruction-plan.md",
@@ -376,8 +376,8 @@
     },
     "private Stream production routing and CSP": {
       "path": "netlify.toml",
-      "sha256": "bd36f29443760e806db40522a9702a749c17475df814ca77c310ae426a833214",
-      "bytes": 7549
+      "sha256": "c5e50a59ff6a06e53b51188bf4b5198dc4070991066df3a08162661e5580ff95",
+      "bytes": 8612
     },
     "private Stream player": {
       "path": "public/statecourse/student/course/blocks/course-video.mjs",
@@ -411,8 +411,8 @@
     },
     "private Stream player host": {
       "path": "public/statecourse/student/course/blocks/block-player.js",
-      "sha256": "b88a97d8feb418f3c41a1adf07d008d86d9f614263f1202c4dbb30a59bd7b340",
-      "bytes": 35131
+      "sha256": "37023c4cf80f9aebb92b9d3166fe92a77a78a063b0ae1c735cf8cdccbee7d84e",
+      "bytes": 35869
     },
     "private Stream security tests": {
       "path": "tests/cloudflare-stream-security.test.mjs",

@@ -1,0 +1,176 @@
+{
+  "contexts": [
+    {
+      "id": "property",
+      "title": "Real and personal property",
+      "courseId": "ca-real-estate-principles-45",
+      "state": "CA",
+      "lessonId": "lesson-01",
+      "version": "1.0",
+      "pilotVersion": "coach-pilot-v1",
+      "lessonDigest": "9f7686f02dbf4258fd37661f1f7c6ebdcc307f3181176a9a54006a631a8510e9",
+      "bankDigest": "2cae6e93401c3b7a96e300a33bbd94c90d57785402e52a93b5804ab387e5ea9b",
+      "sources": [
+        {
+          "id": "property-lesson",
+          "label": "lesson-01: Real and personal property",
+          "excerpt": "### 1.4 Real property versus real estate versus land\n\nThe terms are used loosely in conversation and precisely in documents.\n\n**Land** is the surface, what lies beneath it, and the airspace above it, within legal limits. **Real estate** is land plus permanent improvements. **Real property** is real estate plus the bundle of legal rights in it.\n\nThe distinction that matters in practice is between real property and **personal property**, because they transfer differently, are financed differently, and are described differently. Lesson 02 takes that up in detail.",
+          "url": "/free-practice/?state=CA&course=ca-real-estate-principles-45&lesson=lesson-01&mode=read",
+          "file": "california/ca-real-estate-principles-45-v1/curriculum/lesson-01.md",
+          "sha256": "9f7686f02dbf4258fd37661f1f7c6ebdcc307f3181176a9a54006a631a8510e9"
+        },
+        {
+          "id": "property-practice-1",
+          "label": "Authored formative explanation",
+          "excerpt": "The distinction rests on permanence of attachment to land and the rights that run with it. Sale, documentation, and use do not determine the classification.",
+          "url": "/free-practice/?state=CA&course=ca-real-estate-principles-45&lesson=lesson-01&mode=read"
+        },
+        {
+          "id": "property-practice-2",
+          "label": "Authored formative explanation",
+          "excerpt": "Attachment is the operative fact, with the parties free to agree otherwise. The listing description and the identity of the builder do not determine classification, and the function of an item does not override how it is affixed.",
+          "url": "/free-practice/?state=CA&course=ca-real-estate-principles-45&lesson=lesson-01&mode=read"
+        }
+      ],
+      "questions": [
+        {
+          "id": "ca-real-estate-principles-45:2",
+          "lesson_id": "lesson-01",
+          "prompt": "What distinguishes real property from personal property?",
+          "choices": [
+            "Real property is land and what is permanently affixed to or appurtenant to it, together with the bundle of rights in it; personal property is movable property not so affixed.",
+            "Real property is property that can be sold, while personal property is property that is kept for use.",
+            "Real property is property with recorded title, while personal property is property without documentation.",
+            "Real property is property used for business, while personal property is property used for personal purposes."
+          ],
+          "solution": 0,
+          "explanation": "The distinction rests on permanence of attachment to land and the rights that run with it. Sale, documentation, and use do not determine the classification.",
+          "sources": []
+        },
+        {
+          "id": "ca-real-estate-principles-45:7",
+          "lesson_id": "lesson-01",
+          "prompt": "A licensee describes a home's built-in bookshelves as 'included in the sale.' On what basis are they most likely real property?",
+          "choices": [
+            "They are affixed to the structure in a way indicating permanence, which makes them part of the real property unless the parties agree otherwise.",
+            "They are included because the listing described them as included.",
+            "They are personal property, because shelving is furniture regardless of how it is attached.",
+            "They are real property only if the seller built them himself."
+          ],
+          "solution": 0,
+          "explanation": "Attachment is the operative fact, with the parties free to agree otherwise. The listing description and the identity of the builder do not determine classification, and the function of an item does not override how it is affixed.",
+          "sources": []
+        }
+      ],
+      "digest": "a9a9f36a8d82fc08342398d00f091fa9669ebb9f3b3cb99b968fdf808f7d9a3f"
+    },
+    {
+      "id": "dre",
+      "title": "What California DRE does",
+      "courseId": "ca-real-estate-principles-45",
+      "state": "CA",
+      "lessonId": "lesson-01",
+      "version": "1.0",
+      "pilotVersion": "coach-pilot-v1",
+      "lessonDigest": "9f7686f02dbf4258fd37661f1f7c6ebdcc307f3181176a9a54006a631a8510e9",
+      "bankDigest": "2cae6e93401c3b7a96e300a33bbd94c90d57785402e52a93b5804ab387e5ea9b",
+      "sources": [
+        {
+          "id": "dre-lesson",
+          "label": "lesson-01: What California DRE does",
+          "excerpt": "### 2.1 What the Department does\n\nThe California Department of Real Estate administers the state's real estate license law. Its functions include examining and licensing applicants, setting and enforcing standards of conduct, investigating complaints, taking disciplinary action against licensees, and approving the education that supports licensure — including the course you are reading.\n\nThe Department is led by the Real Estate Commissioner, who is responsible for enforcing the license law and who issues the regulations that implement it.",
+          "url": "/free-practice/?state=CA&course=ca-real-estate-principles-45&lesson=lesson-01&mode=read",
+          "file": "california/ca-real-estate-principles-45-v1/curriculum/lesson-01.md",
+          "sha256": "9f7686f02dbf4258fd37661f1f7c6ebdcc307f3181176a9a54006a631a8510e9"
+        },
+        {
+          "id": "dre-practice-1",
+          "label": "Authored formative explanation",
+          "excerpt": "The Department's mandate is consumer protection through licensing, regulation, and enforcement. It does not set prices or contract terms, adjudicate private contract disputes, or certify valuations.",
+          "url": "/free-practice/?state=CA&course=ca-real-estate-principles-45&lesson=lesson-01&mode=read"
+        },
+        {
+          "id": "dre-practice-2",
+          "label": "Authored formative explanation",
+          "excerpt": "Licensing authority rests with the Department. Trade associations enforce membership rules rather than licensure, escrow can decline business but not discipline, and civil courts award remedies without revoking licenses.",
+          "url": "/free-practice/?state=CA&course=ca-real-estate-principles-45&lesson=lesson-01&mode=read"
+        }
+      ],
+      "questions": [
+        {
+          "id": "ca-real-estate-principles-45:3",
+          "lesson_id": "lesson-01",
+          "prompt": "Which best describes the Department of Real Estate's primary function?",
+          "choices": [
+            "Administering the Real Estate Law to protect the public, including licensing, regulation, and enforcement against licensees.",
+            "Setting commission rates and standard contract terms for California real estate transactions.",
+            "Resolving contract disputes between buyers and sellers in California transactions.",
+            "Certifying property values and approving appraisals for California properties."
+          ],
+          "solution": 0,
+          "explanation": "The Department's mandate is consumer protection through licensing, regulation, and enforcement. It does not set prices or contract terms, adjudicate private contract disputes, or certify valuations.",
+          "sources": []
+        },
+        {
+          "id": "ca-real-estate-principles-45:8",
+          "lesson_id": "lesson-01",
+          "prompt": "A consumer complains that a licensee misrepresented a property. Which body has authority to discipline the licensee's license?",
+          "choices": [
+            "The Department of Real Estate, which may suspend, revoke, or restrict the license after its process.",
+            "The local association of realtors, which controls licensure in its market area.",
+            "The escrow company, which may refuse to handle the licensee's future transactions.",
+            "The civil court, which may revoke the license as part of a damages award."
+          ],
+          "solution": 0,
+          "explanation": "Licensing authority rests with the Department. Trade associations enforce membership rules rather than licensure, escrow can decline business but not discipline, and civil courts award remedies without revoking licenses.",
+          "sources": []
+        }
+      ],
+      "digest": "870bcff1568022f8358622fd7210f73f6ab4f59e83372a651bb68f9323611675"
+    },
+    {
+      "id": "ltv",
+      "title": "Loan-to-value versus down payment",
+      "courseId": "ca-real-estate-principles-45",
+      "state": "CA",
+      "lessonId": "lesson-11",
+      "version": "1.0",
+      "pilotVersion": "coach-pilot-v1",
+      "lessonDigest": "529cb4052b8da1c6df500d79377a77f2d36cc47e0068b0b4cf20f44701df328d",
+      "bankDigest": "2cae6e93401c3b7a96e300a33bbd94c90d57785402e52a93b5804ab387e5ea9b",
+      "sources": [
+        {
+          "id": "ltv-lesson",
+          "label": "lesson-11: Loan-to-value versus down payment",
+          "excerpt": "### 5.1 Loan-to-value\n\n**LTV = loan amount ÷ value**, where value is the **lower of appraised value and purchase price.**\n\n> **A $920,000 purchase with a $736,000 loan:** 736,000 ÷ 920,000 = **80% LTV.**\n>\n> **If the appraisal comes in at $900,000**, the lender lends against $900,000. At 80%: 900,000 × 0.80 = **$720,000** — $16,000 less than planned.\n\n**That single rule — lenders lend against the lower of value or price — explains every consequence of a low appraisal**, and it is worth memorizing in exactly that form.\n\nThe buyer's options are then: bring the additional funds, renegotiate the price, negotiate another resolution, or cancel if a contingency permits and its procedure is followed.\n\n**What does not happen automatically:** the price does not adjust to the appraised value by operation of any loan program, the loan is not denied, and **no one is entitled to a second appraisal as of right.**",
+          "url": "/free-practice/?state=CA&course=ca-real-estate-principles-45&lesson=lesson-11&mode=read",
+          "file": "california/ca-real-estate-principles-45-v1/curriculum/lesson-11.md",
+          "sha256": "529cb4052b8da1c6df500d79377a77f2d36cc47e0068b0b4cf20f44701df328d"
+        },
+        {
+          "id": "ltv-practice-1",
+          "label": "Authored formative explanation",
+          "excerpt": "80 percent of $600,000 is $480,000. The second option inverts the ratio, and the others confuse it with a debt-to-income ratio and an appraisal standard.",
+          "url": "/free-practice/?state=CA&course=ca-real-estate-principles-45&lesson=lesson-11&mode=read"
+        }
+      ],
+      "questions": [
+        {
+          "id": "ca-real-estate-principles-45:118",
+          "lesson_id": "lesson-11",
+          "prompt": "What does a loan-to-value ratio of 80 percent mean on a property valued at $600,000?",
+          "choices": [
+            "The loan amount is $480,000, leaving $120,000 of the value not covered by the loan.",
+            "The loan amount is $120,000, with the borrower financing the remaining 80 percent separately.",
+            "The borrower's monthly debt equals 80 percent of his income.",
+            "The property must appraise at 80 percent of the purchase price."
+          ],
+          "solution": 0,
+          "explanation": "80 percent of $600,000 is $480,000. The second option inverts the ratio, and the others confuse it with a debt-to-income ratio and an appraisal standard.",
+          "sources": []
+        }
+      ],
+      "digest": "3054e4e6d961f814cbecb21b5c3a64d8dad8bcee1c8a6017fdd41ce87f225753"
+    }
+  ]
+}

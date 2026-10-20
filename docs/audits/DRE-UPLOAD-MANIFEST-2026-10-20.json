@@ -1,0 +1,97 @@
+{
+  "note": "Fingerprints only. Original personal documents and protected examinations are not published.",
+  "files": [
+    {
+      "file": "Mortgage_Loan_Brokering_and_Lending/00_READ_ME_FIRST_RU.pdf",
+      "sha256": "49407c3a78d23d87802060f34087c6836255191c6a2c461c3988f0843195b2eb",
+      "bytes": 50423
+    },
+    {
+      "file": "Mortgage_Loan_Brokering_and_Lending/01_APPLICATION_AND_EXHIBITS.pdf",
+      "sha256": "2baf1a75dffb73ce5cdb979ddcb9c7435959232a318b40f338bd2f39151f1270",
+      "bytes": 11854461
+    },
+    {
+      "file": "Mortgage_Loan_Brokering_and_Lending/02_FULL_COURSE_TEXT.pdf",
+      "sha256": "826b1f405e894ffa8375a8c8705d90beef88978052b8b2bbf0d060fc0a1723df",
+      "bytes": 1527886
+    },
+    {
+      "file": "Mortgage_Loan_Brokering_and_Lending/03_SECURE_FINAL_EXAMS_AND_KEYS.pdf",
+      "sha256": "57e2152a312f5892043e46f14217b71523787ed75e8603c1327449e91b2eb9dc",
+      "bytes": 261553
+    },
+    {
+      "file": "Real_Estate_Practice/00_READ_ME_FIRST_RU.pdf",
+      "sha256": "01204b032ee4bc78d44e82ac202b0fb160c513a23caa2d2268a13a1e4a8c6590",
+      "bytes": 50403
+    },
+    {
+      "file": "Real_Estate_Practice/01_APPLICATION_AND_EXHIBITS.pdf",
+      "sha256": "185868248b4e960cd9ddd7b0961a72e99c46235561d4ac40de691d6e6fa52bb4",
+      "bytes": 11872348
+    },
+    {
+      "file": "Real_Estate_Practice/02_FULL_COURSE_TEXT.pdf",
+      "sha256": "dd50e2493746cc86730d3cf8744af4eb266d607aee5a0b956d648f8cd55563b9",
+      "bytes": 1579971
+    },
+    {
+      "file": "Real_Estate_Practice/03_SECURE_FINAL_EXAMS_AND_KEYS.pdf",
+      "sha256": "85d24763bf101709e085e6f2c2f01baace35915f33b682e1bf0e59f14f05348a",
+      "bytes": 288733
+    },
+    {
+      "file": "Real_Estate_Principles/00_READ_ME_FIRST_RU.pdf",
+      "sha256": "7ef76d3d24e5a9d7789dabf429057025e6f552db0204fbfad032268fe81d28ff",
+      "bytes": 50404
+    },
+    {
+      "file": "Real_Estate_Principles/01_APPLICATION_AND_EXHIBITS.pdf",
+      "sha256": "e7195dc93bb2e9fd5528bec0659219e3aa49dd25b281397da5b7c4a5873e1610",
+      "bytes": 11802257
+    },
+    {
+      "file": "Real_Estate_Principles/02_FULL_COURSE_TEXT.pdf",
+      "sha256": "f9968a7d2fad6bec8e4d233541912bcbca24c7cdcabddaa6997f7bbab8eab4ef",
+      "bytes": 6441134
+    },
+    {
+      "file": "Real_Estate_Principles/03_SECURE_FINAL_EXAMS_AND_KEYS.pdf",
+      "sha256": "ed912adb9c23855c0c026abd53f04f7a2b06139b8483e15e00f5a24a83f25f6d",
+      "bytes": 280086
+    }
+  ],
+  "courseTextComparison": [
+    {
+      "course": "ca-real-estate-principles-45-v1",
+      "uploadedPages": 458,
+      "currentPages": 524,
+      "uploadedWords": 173023,
+      "currentWords": 173231,
+      "uploaded5gramsFoundInCurrentPercent": 99.79,
+      "current5gramsFoundInUploadPercent": 99.67,
+      "note": "Extraction-sensitive comparison; identifies a need for version reconciliation, not a definitive semantic diff."
+    },
+    {
+      "course": "ca-real-estate-practice-45-v1",
+      "uploadedPages": 383,
+      "currentPages": 444,
+      "uploadedWords": 150184,
+      "currentWords": 150291,
+      "uploaded5gramsFoundInCurrentPercent": 99.84,
+      "current5gramsFoundInUploadPercent": 99.77,
+      "note": "Extraction-sensitive comparison; identifies a need for version reconciliation, not a definitive semantic diff."
+    },
+    {
+      "course": "ca-mortgage-loan-brokering-lending-45-v1",
+      "uploadedPages": 380,
+      "currentPages": 434,
+      "uploadedWords": 135778,
+      "currentWords": 135868,
+      "uploaded5gramsFoundInCurrentPercent": 99.78,
+      "current5gramsFoundInUploadPercent": 99.72,
+      "note": "Extraction-sensitive comparison; identifies a need for version reconciliation, not a definitive semantic diff."
+    }
+  ]
+}

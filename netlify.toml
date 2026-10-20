@@ -338,3 +338,9 @@
   from = "/api/enroll/training"
   to = "/.netlify/functions/enroll-training"
   status = 200
+
+[[redirects]]
+  from = "/api/learning/coach"
+  to = "/.netlify/functions/learning-coach"
+  status = 200
+  force = true

@@ -487,3 +487,15 @@ button, select, summary, a { -webkit-tap-highlight-color: transparent; }
 .verify-note{margin:0 0 14px;font-size:13px;color:#4b5a66}
 .verify-reviewed{margin:10px 0 0;font-size:11px;color:#64717c}
 @media(max-width:760px){.approval-block{padding:18px 16px}.approval-block h2{font-size:23px}}
+
+/* Optional coach follows the existing practice surface and remains usable on mobile. */
+.learning-coach label { display: block; margin: 14px 0; }
+.learning-coach textarea, .learning-coach select { display: block; width: 100%; max-width: 100%; box-sizing: border-box; padding: 12px; font: inherit; font-size: 16px; color: var(--navy); border: 1px solid var(--gold-deep); border-radius: 4px; background: #fff; }
+.learning-coach textarea { min-height: 120px; margin-top: 8px; resize: vertical; }
+.learning-coach button { margin: 8px 8px 0 0; }
+.learning-coach .learning-coach-consent { display: flex; align-items: flex-start; gap: 10px; }
+.learning-coach-consent input { flex: 0 0 auto; width: 20px; height: 20px; margin-top: 5px; }
+.learning-coach details { overflow-wrap: anywhere; }
+.learning-coach summary { cursor: pointer; min-height: 44px; }
+.learning-coach blockquote { margin: 12px 0; padding-left: 12px; border-left: 2px solid var(--gold-deep); white-space: pre-wrap; }
+.learning-coach textarea:focus-visible { outline: 3px solid #836114; outline-offset: 3px; }

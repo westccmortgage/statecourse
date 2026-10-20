@@ -195,11 +195,13 @@ function setupSectionTracking(){
 }
 async function renderLesson(){
   const selected=page.data.selectedAssignment,displayTitle=titleCaseHeading(selected.title);$("#assignmentNumber").textContent=`Lesson assignment ${String(selected.sequence).padStart(2,"0")} of 15`;$("#assignmentTitle").textContent=displayTitle;document.title=displayTitle+" | StateCourse";
-  const response=await fetch(selected.contentPath,{headers:{accept:"text/markdown"},cache:"no-store"});if(!response.ok)throw new Error("lesson_content_unavailable");$("#lessonBody").innerHTML=renderMarkdown(await response.text());setupSectionTracking();renderAssessments();
+  const response=await fetch(selected.contentPath,{headers:{accept:"text/markdown"},cache:"no-store"});if(!response.ok)throw new Error("lesson_content_unavailable");const lessonText=await response.text();$("#lessonBody").innerHTML=renderMarkdown(lessonText);setupSectionTracking();renderAssessments();
+  if(page.data.mode==='student'&&page.data.course.courseId)try{const {attachReadingCoach}=await import('/learning-coach-reading.js');page.coach=await attachReadingCoach({anchor:$("#lessonBody"),courseId:page.data.course.courseId,lessonId:selected.contentPath.split('/').at(-1).replace(/\.md$/,''),lessonText,getEligible:()=>page.data?.mode==='student'?page.data.selectedAssignment.id:null});await page.coach.update();}catch{/* Optional help must not interrupt study. */}
   const previous=page.data.assignments[selected.sequence-2],next=page.data.assignments[selected.sequence];$("#previousAssignment").disabled=!previous?.accessible;$("#previousAssignment").dataset.assignment=previous?.id||"";$("#nextAssignment").disabled=!next?.accessible;$("#nextAssignment").dataset.assignment=next?.id||"";
 }
 function renderMode(){const banner=$("#reviewBanner");banner.hidden=!page.data.reviewNotice;banner.textContent=page.data.reviewNotice||"";$("#requestHelp").hidden=page.data.mode!=="student";if(page.data.enrollment.qaOnly)actionMessage.textContent="QA non-credit enrollment. Activity is test data and cannot award California pre-license credit.";}
 async function loadCourse(assignment=page.assignment){
+  page.coach?.destroy();page.coach=null;
   if(!page.enrollmentId){location.replace("/student/");return;}message.hidden=false;message.classList.remove("error");message.textContent="Opening your course record…";shell.hidden=true;
   try{const url="/api/student/course?enrollment_id="+encodeURIComponent(page.enrollmentId)+(assignment?"&assignment="+encodeURIComponent(assignment):"");const response=await fetch(url,{credentials:"same-origin",headers:{accept:"application/json"}});if(response.status===401){location.replace("/student/sign-in/?return_to="+encodeURIComponent(location.pathname+location.search));return;}const data=await response.json().catch(()=>({}));if(!response.ok)throw new Error(data.error||"course_unavailable");page.data=data;page.assignment=data.selectedAssignment.id;
     /* CA-BLOCK-1: assignments delivered as learning blocks open in the block player — one
@@ -227,8 +229,9 @@ $("#assignmentToggle").addEventListener("click",(event)=>openDrawer("assignments
 $("#assignmentList").addEventListener("click",(event)=>navigateAssignment(event.target.closest("[data-assignment]:not(:disabled)")?.dataset.assignment));$("#previousAssignment").addEventListener("click",(event)=>navigateAssignment(event.currentTarget.dataset.assignment));$("#nextAssignment").addEventListener("click",(event)=>navigateAssignment(event.currentTarget.dataset.assignment));
 $("#remediationViewed").addEventListener("click",async()=>{try{await post("remediation_content_viewed");await loadCourse(page.assignment);}catch(error){actionMessage.textContent="We could not record the remediation review. Please try again.";}});
 $("#requestHelp").addEventListener("click",async()=>{try{await post("help_requested",{concept:page.data.selectedAssignment.title});actionMessage.textContent="Your help request is now in the instructor remediation queue.";$("#requestHelp").disabled=true;}catch(error){actionMessage.textContent="We could not send the help request. Please try again.";}});
-$("#signOut").addEventListener("click",async()=>{await fetch("/api/student/session",{method:"DELETE",credentials:"same-origin"}).catch(()=>null);location.replace("/student/sign-in/");});
+$("#signOut").addEventListener("click",async()=>{page.coach?.reset();await fetch("/api/student/session",{method:"DELETE",credentials:"same-origin"}).catch(()=>null);location.replace("/student/sign-in/");});
 for(const eventName of["pointerdown","keydown","scroll","touchstart"])addEventListener(eventName,()=>{page.lastInteraction=Date.now();},{passive:true});
 addEventListener("keydown",(event)=>{if(event.key==="Escape"&&!$("#drawerScrim").hidden)closeDrawers();});
 document.addEventListener("visibilitychange",sendHeartbeat);addEventListener("focus",()=>{page.lastInteraction=Date.now();sendHeartbeat();});addEventListener("blur",sendHeartbeat);
+document.addEventListener('visibilitychange',()=>page.coach?.update());
 loadCourse();

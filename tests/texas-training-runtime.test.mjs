@@ -1,3 +1,4 @@
+import { STAFF_COOKIE as CURRENT_TEST_COOKIE } from './fixtures/admin-console/harness.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { LAW_OF_AGENCY_TRAINING_RUNTIME as definition } from '../config/texas/law-of-agency-training-runtime.mjs';
@@ -8,7 +9,7 @@ import { handler as blocksHandler } from '../netlify/functions/student-blocks.mj
 import { createStore, withConsoleMock, STAFF_ID, ENROLLMENT_ID } from './fixtures/admin-console/harness.mjs';
 
 const json=(value,status=200)=>new Response(JSON.stringify(value),{status,headers:{'content-type':'application/json'}});
-const event=(input)=>({httpMethod:input?'POST':'GET',headers:{cookie:'__Host-sc_access=named-session-token',origin:'https://statecourse.test'},queryStringParameters:{enrollment_id:ENROLLMENT_ID,assignment:'module-01'},...(input?{body:JSON.stringify({enrollmentId:ENROLLMENT_ID,assignmentId:'module-01',...input})}:{})});
+const event=(input)=>({httpMethod:input?'POST':'GET',headers:{cookie:CURRENT_TEST_COOKIE,origin:'https://statecourse.test'},queryStringParameters:{enrollment_id:ENROLLMENT_ID,assignment:'module-01'},...(input?{body:JSON.stringify({enrollmentId:ENROLLMENT_ID,assignmentId:'module-01',...input})}:{})});
 async function fixture(run,options={}) {
   return withConsoleMock(createStore(),async()=>{
     const original=globalThis.fetch,calls=[];

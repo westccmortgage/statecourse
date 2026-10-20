@@ -3,6 +3,7 @@ set -euo pipefail
 
 node scripts/generate-national-platform.mjs
 node scripts/generate-console-course-evidence.mjs
+node scripts/generate-learning-coach-library.mjs
 
 rm -rf dist
 mkdir -p dist/content/curriculum dist/content/reference dist/content/california

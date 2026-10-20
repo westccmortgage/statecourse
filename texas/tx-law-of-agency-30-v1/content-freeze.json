@@ -1,9 +1,23 @@
 {
-  "freezeId": "LOA-CONTENT-FREEZE-2026-09-13-v19",
+  "freezeId": "LOA-CONTENT-FREEZE-2026-10-19-v20",
   "courseId": "tx-law-of-agency-30-v1",
   "approvalForm": "LOA-1 rev 09/11/2024",
   "frozenOn": "2026-09-13",
   "breakHistory": [
+    {
+      "brokeFreeze": "LOA-CONTENT-FREEZE-2026-09-13-v19",
+      "on": "2026-10-19",
+      "module": "NONE — no authored curriculum, questions or answer keys changed.",
+      "change": "Update dependency pointer to video freeze 2026-10-19-v16 after reviewing shared Netlify AI route/cache additions and optional public-source reading coach in the shared player host. Assessment and reviewer modes suppress the coach. Update exported contentFreeze identifier.",
+      "reason": "Restore versioned dependency integrity after explicit comparison against the exact historical netlify.toml; preserve unchanged Texas Stream routes/CSP and existing approval gates.",
+      "previousFreezeSha256": "da18e4f962567a87efdb54d10511b7871620adfe16e9f2a672e6ff29f1d9228f",
+      "auditsReRun": [
+        "node scripts/validate-loa-video-packages.mjs",
+        "node scripts/freeze-loa-video-plan.mjs --write",
+        "node scripts/freeze-loa-curriculum.mjs --write",
+        "node --test tests/cloudflare-stream-security.test.mjs tests/texas-video-integration.test.mjs tests/texas-law-of-agency.test.mjs tests/video-portfolio.test.mjs"
+      ]
+    },
     {
       "brokeFreeze": "LOA-CONTENT-FREEZE-2026-09-12-v18",
       "on": "2026-09-13",
@@ -587,8 +601,8 @@
     },
     "video plan freeze (LOA-VIDEO-PLAN-FREEZE-2026-09-08-v8 — hashes the plan and every render and delivery dependency)": {
       "path": "texas/tx-law-of-agency-30-v1/video-plan-freeze.json",
-      "sha256": "f0716a159d10a0732221bdf91922a3d225fc8c0e42a44ed06a3a75312c7494fd",
-      "bytes": 29443
+      "sha256": "1e4536fe9a3765a5cdddf76670385d1ca0a772e567554100d119c96307062e46",
+      "bytes": 29690
     }
   },
   "reproduce": [

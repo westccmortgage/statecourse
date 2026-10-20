@@ -21,6 +21,7 @@ const state = {
   sessionId: crypto.randomUUID(),
   lastInteraction: Date.now(),
   heartbeat: null,
+  coach: null,
 };
 
 const $ = (selector) => document.querySelector(selector);
@@ -51,7 +52,13 @@ const postCourse = (body) => api("/api/student/course", {
 async function loadLesson(contentPath) {
   const response = await fetch(contentPath, { headers: { accept: "text/markdown" }, cache: "no-store" });
   if (!response.ok) throw new Error("lesson_content_unavailable");
-  state.lessonLines = (await response.text()).replace(/\r/g, "").split("\n");
+  const lessonText=await response.text();
+  state.lessonLines = lessonText.replace(/\r/g, "").split("\n");
+  if(state.data.course.courseId)try{
+    const {attachReadingCoach}=await import('/learning-coach-reading.js');
+    state.coach=await attachReadingCoach({anchor:$("#screenCard"),courseId:state.data.course.courseId,lessonId:contentPath.split('/').at(-1).replace(/\.md$/,''),lessonText,
+      getEligible:()=>state.data.mode==='student'&&state.view&&!state.view.remediation&&['instruction','review','document','video'].includes(currentScreen().type)?currentScreen().id:null});
+  }catch{/* Optional help must not block the existing study path. */}
 }
 
 function sliceRange(range) {
@@ -123,6 +130,7 @@ function renderTrainingModule() {
 
 /* ── screen rendering: exactly one screen in the DOM ─────────────────────────────────────── */
 function renderScreen() {
+  state.coach?.update();
   renderHeader();
   const block = currentBlock();
   const screen = currentScreen();
@@ -532,6 +540,7 @@ function goPrevious() {
 
 /* ── load & refresh ──────────────────────────────────────────────────────────────────────── */
 async function refresh({ keepView = false } = {}) {
+  state.coach?.reset();
   const previousView = state.view;
   state.data = await getBlocks();
   if (!state.lessonLines) await loadLesson(state.data.assignment.contentPath);
@@ -587,6 +596,7 @@ async function sendHeartbeat() {
 $("#continueScreen").addEventListener("click", advance);
 $("#previousScreen").addEventListener("click", goPrevious);
 $("#signOut").addEventListener("click", async () => {
+  state.coach?.reset();
   await fetch("/api/student/session", { method: "DELETE", credentials: "same-origin" }).catch(() => null);
   location.replace("/student/sign-in/");
 });
@@ -594,6 +604,7 @@ for (const eventName of ["pointerdown", "keydown", "scroll", "touchstart"]) {
   addEventListener(eventName, () => { state.lastInteraction = Date.now(); }, { passive: true });
 }
 document.addEventListener("visibilitychange", sendHeartbeat);
+document.addEventListener("visibilitychange", () => state.coach?.update());
 addEventListener("focus", () => { state.lastInteraction = Date.now(); sendHeartbeat(); });
 addEventListener("blur", sendHeartbeat);
 

@@ -38,13 +38,13 @@ const PROD = path.join(HOME, "video-production");
 const OUT = path.join(HOME, "video-plan-freeze.json");
 
 const COURSE_ID = "tx-law-of-agency-30-v1";
-const FREEZE_ID = "LOA-VIDEO-PLAN-FREEZE-2026-09-13-v15";
+const FREEZE_ID = "LOA-VIDEO-PLAN-FREEZE-2026-10-19-v16";
 
 const PREVIOUS_FREEZE = Object.freeze({
-  "freezeId": "LOA-VIDEO-PLAN-FREEZE-2026-09-12-v14",
-  "sha256": "2499d5c669ee7d0a4fb8ea4ffbebd6b849c3514f9a898c958b69c1db93f250cf",
-  "on": "2026-09-13",
-  "change": "Shared Netlify packaging now includes private NMLS course, assessment and retained-evidence inputs, and duplicate student cache headers were removed. The shared content-release overlay refuses edits for versioned read-only training sources. No Texas instruction, answer key, video asset, placement, private Stream authorization or approval status changed. This is a dependency history update, not course or provider approval."
+  "freezeId": "LOA-VIDEO-PLAN-FREEZE-2026-09-13-v15",
+  "sha256": "f0716a159d10a0732221bdf91922a3d225fc8c0e42a44ed06a3a75312c7494fd",
+  "on": "2026-10-19",
+  "change": "Reconcile shared netlify.toml additions since exact frozen commit f0e9ddc: AI commerce routes/cache rules and disabled lesson-coach route. Existing Texas Stream routes and CSP remain unchanged. The shared block-player host also gains an optional public-source lesson coach on instruction/review screens, suppressed for assessment/remediation/reviewer modes; it does not alter Stream authorization, playback, progress or grading. Other frozen video dependency bytes match the prior freeze. No Texas authored instruction, answer keys, media assets, course approval or enrollment status changes. Stream/security/integration tests and video validator rerun before re-freezing."
 });
 
 /**

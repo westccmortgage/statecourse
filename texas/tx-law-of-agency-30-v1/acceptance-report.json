@@ -2,12 +2,12 @@
   "course": "Texas Law of Agency",
   "courseId": "tx-law-of-agency-30-v1",
   "approvalForm": "LOA-1 rev. 09/11/2024",
-  "contentFreeze": "LOA-CONTENT-FREEZE-2026-09-13-v19",
+  "contentFreeze": "LOA-CONTENT-FREEZE-2026-10-19-v20",
   "generatedBy": "scripts/loa-acceptance-report.mjs",
-  "generatedAt": "2026-09-13T10:35:02.808Z",
+  "generatedAt": "2026-10-20T01:58:08.868Z",
   "confidentiality": "Counts, hashes, percentages and behaviour outcomes only. No item text, choice, key or rationale from the secure bank appears in this report.",
   "verdicts": {
-    "contentAndAssessment": "GO",
+    "contentAndAssessment": "NO-GO",
     "completeOperationalCourse": "NO-GO",
     "submissionReadiness": "NO-GO",
     "overall": "NO-GO"
@@ -16,12 +16,12 @@
     {
       "label": "1. frozen curriculum",
       "ok": true,
-      "detail": "LOA-CONTENT-FREEZE-2026-09-13-v19; all 12 hashed artifacts match the freeze"
+      "detail": "LOA-CONTENT-FREEZE-2026-10-19-v20; all 12 hashed artifacts match the freeze"
     },
     {
       "label": "2. video plan frozen, and the curriculum freeze points at the freeze rather than the plan",
       "ok": true,
-      "detail": "LOA-VIDEO-PLAN-FREEZE-2026-09-13-v15 over 41 artifacts, following LOA-VIDEO-PLAN-FREEZE-2026-09-12-v14; package validator passes"
+      "detail": "LOA-VIDEO-PLAN-FREEZE-2026-10-19-v16 over 41 artifacts, following LOA-VIDEO-PLAN-FREEZE-2026-09-13-v15; package validator passes"
     },
     {
       "label": "3. twelve-topic and 57-unit coverage",
@@ -145,8 +145,8 @@
     },
     {
       "label": "23. full regression suite",
-      "ok": true,
-      "detail": "2573 passing, 0 failing"
+      "ok": false,
+      "detail": "2625 passing, 3 failing"
     },
     {
       "label": "24. submission-readiness blockers recorded",
@@ -155,7 +155,8 @@
     }
   ],
   "failed": [
-    "22a. production training and progress integration"
+    "22a. production training and progress integration",
+    "23. full regression suite"
   ],
   "blockers": [
     "TX_PROVIDER_RULE_SOURCE_LOCK is FAIL — trec-qe-provider-application, sos-tac-22-535",

@@ -1,5 +1,15 @@
 # Real Estate State Rollout Board
 
+## Uploaded DRE evidence — 2026-10-20
+
+All three uploaded California application volumes contain course-specific college-equivalence letters on page 14, with letterhead and visible signatures checked. Historical “letters absent” statements are superseded; acceptance is unverified. Uploaded copies retain pre-filing access/signature/date completion instructions and do not establish the final mailed set. Owner-reported DRE and separate NMLS submissions remain under review. See [package review](../../audits/DRE-UPLOADED-PACKAGES-2026-10-20.md). No launch or approval flags changed.
+
+## Owner update — 2026-10-19 (supersedes submission entries below)
+
+The owner confirms California DRE is the **only submitted Real Estate state package** and is **under review**. Submission date, application numbers and receipt have not been supplied in this task. Record this as **OWNER-REPORTED SUBMITTED / UNDER REVIEW**, not regulator-verified approval. Florida is waiting on the owner's **personal broker application**; no school/course approval follows from that statement. Other historical state rows remain repository evidence, not a fresh regulator check.
+
+Current all-state inventory and discrepancies: [2026-10-19 portfolio audit](../../audits/STATECOURSE-AUDIT-2026-10-19.md). No enrollment, payment, credit or public approval flags changed.
+
 Last verified: 2026-09-19. This track is separate from NMLS.
 
 Status key: **E** evidence identifies regulator; **P** partial research; **RR** RESEARCH REQUIRED; **B(n)** catalog course builds (count); **B\*** repository curriculum exists but catalog/registry reconciliation is required; **T** tests exist; **PKG** draft application/submission material exists; **U** unverified/absent; **NS** not submitted; **NA** no approval evidence; **HIST** historical Stripe test-object record only; **OFF** not live.
@@ -12,7 +22,7 @@ A folder, draft package, test, price object, or public route does not mean submi
 | AK — Alaska | P | E | P | P | P | RR | P | B (1) | T | PKG | **NS** | **NA** | HIST / price TBD | U | **OFF** | `alaska/`; submission drafts; tests | Approval/package/E2E | Finish evidence/package; regulator review only after owner approval | Official-source research, regulator response, and owner authorization | 2026-09-19 repository review |
 | AZ — Arizona | P | E | P | P | P | RR | P | B (2) | T | U | **NS** | **NA** | HIST / price TBD | U | **OFF** | `arizona/`; tests | Approval/package/E2E | Finish evidence/package; regulator review only after owner approval | Official-source research, regulator response, and owner authorization | 2026-09-19 repository review |
 | AR — Arkansas | RR | RR | RR | RR | RR | RR | RR | — | U | U | **NS** | **NA** | U / TBD | U | **OFF** | `public/statecourse/data/state-registry.json` | RESEARCH REQUIRED | Identify regulator and requirements | Official-source research, regulator response, and owner authorization | 2026-09-19 repository review |
-| CA — California | P | E | P | P | P | RR | P | B (3) | T | PKG | **NS** | **NA** | HIST / price TBD | U | **OFF** | `california/`; submission drafts; tests | Approval/package/E2E | Finish evidence/package; regulator review only after owner approval | Official-source research, regulator response, and owner authorization | 2026-09-19 repository review |
+| CA — California | P | E | P | P | P | RR | P | B (3) | T | PKG | **OWNER-REPORTED SUBMITTED / UNDER REVIEW** | **NA** | HIST / price TBD | U | **OFF** | `california/`; submission drafts; tests | Receipt details, regulator decision, acceptance/E2E | Finish evidence/package; regulator review only after owner approval | Official-source research, regulator response, and owner authorization | 2026-09-19 repository review |
 | CO — Colorado | P | E | P | P | P | RR | RR | B (6) | T | U | **NS** | **NA** | HIST / price TBD | U | **OFF** | `colorado/`; submission drafts; tests | Approval/package/E2E | Finish evidence/package; regulator review only after owner approval | Official-source research, regulator response, and owner authorization | 2026-09-19 repository review |
 | CT — Connecticut | RR | RR | RR | RR | RR | RR | RR | — | U | U | **NS** | **NA** | U / TBD | U | **OFF** | `public/statecourse/data/state-registry.json` | RESEARCH REQUIRED | Identify regulator and requirements | Official-source research, regulator response, and owner authorization | 2026-09-19 repository review |
 | DE — Delaware | RR | RR | RR | RR | RR | RR | RR | — | U | U | **NS** | **NA** | U / TBD | U | **OFF** | `public/statecourse/data/state-registry.json` | RESEARCH REQUIRED | Identify regulator and requirements | Official-source research, regulator response, and owner authorization | 2026-09-19 repository review |

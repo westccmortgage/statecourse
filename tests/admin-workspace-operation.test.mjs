@@ -1,3 +1,4 @@
+import { STAFF_COOKIE as CURRENT_TEST_COOKIE } from './fixtures/admin-console/harness.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { createStore, withConsoleMock, STAFF_ID, postEvent } from './fixtures/admin-console/harness.mjs';
@@ -45,7 +46,7 @@ async function fixture(run,{enrollments=[],grants=[],governance=[]}={}){
 }
 const staff={auth:{student:{id:STAFF_ID}},roles:['owner'],matching:[{actor_role:'owner',scope_state:null}],actorRole:'owner',scopeStates:null};
 const decision={offeringId:CA,state:'CA',discipline:'real_estate',offeringKind:'course',approvalStatus:'none',paymentMode:'sandbox',trainingAccessEnabled:true,note:'Open free non-credit training as requested by the owner.'};
-const request=body=>new Request('https://statecourse.test/api/admin/workspace',{method:'POST',headers:{cookie:'__Host-sc_access=named-session-token',origin:'https://statecourse.test','content-type':'application/json'},body:JSON.stringify(body)});
+const request=body=>new Request('https://statecourse.test/api/admin/workspace',{method:'POST',headers:{cookie:CURRENT_TEST_COOKIE,origin:'https://statecourse.test','content-type':'application/json'},body:JSON.stringify(body)});
 
 test('owner can create an actual task through the enabled endpoint',async()=>fixture(async r=>{
   const result=await workspaceHandler(request({action:'task_create',courseId:CA,title:'Verify the saved lesson'}));
@@ -82,7 +83,7 @@ test('training catalogue exposes only enabled courses whose actual learning engi
   const list=await availableTraining();assert.deepEqual(list.courses.map(c=>c.id),[CA]);assert.equal(trainingReadiness(TX).ready,false);
 },{governance:[{offering_id:CA,state:'CA',discipline:'real_estate',offering_kind:'course',training_access_enabled:true},{offering_id:TX,state:'TX',discipline:'real_estate',offering_kind:'course',training_access_enabled:true}]}));
 test('student portal returns training choices with enrollment origins',async()=>fixture(async()=>{
-  const result=await portal({httpMethod:'GET',headers:{cookie:'__Host-sc_access=named-session-token'}});assert.equal(result.statusCode,200);assert.equal(JSON.parse(result.body).enrollments[0].enrollment_origin,'training');
+  const result=await portal({httpMethod:'GET',headers:{cookie:CURRENT_TEST_COOKIE}});assert.equal(result.statusCode,200);assert.equal(JSON.parse(result.body).enrollments[0].enrollment_origin,'training');
 },{enrollments:[{id:STAFF_ID,student_id:STAFF_ID,enrollment_origin:'training'}]}));
 test('training and sandbox can be recorded without fabricating an approval',async()=>fixture(async r=>{
   await recordGovernance({staff,input:decision});assert.equal(r.governance[0].approval_status,'none');assert.equal(r.governance[0].payment_mode,'sandbox');assert.equal(r.governance[0].recorded_by,STAFF_ID);

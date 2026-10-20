@@ -1,3 +1,4 @@
+import { createLearningCoach } from './learning-coach.js';
 import { renderLessonMarkdown, escapeHtml as esc } from './student/course/blocks/lesson-markdown.mjs';
 import { splitSections, presentedChoices, gradePractice, practiceSummary, restorePractice } from './practice-core.mjs';
 import { renderPracticeActivities } from './practice-activities.mjs';
@@ -9,6 +10,7 @@ let samples=[], sample=null, course=null, sections=[], sectionIndex=0, questionI
 const storageKey=()=> 'statecourse:free-practice:v2:'+sample.course_id+':'+sample.revision;
 const currentQuestions=()=>course?.questions.filter(q=>q.lesson_id===lessonSelect.value)??[];
 const currentActivities=()=>course?.activities?.filter(a=>a.lesson_id===lessonSelect.value)??[];
+const coach=createLearningCoach({anchor:quiz,getContext:()=>({courseId:sample?.course_id,lessonId:lessonSelect.value,lessonDigest:course?.lessons.find(l=>l.id===lessonSelect.value)?.sha256,question:mode==='quiz'?currentQuestions()[questionIndex]:null,selected:mode==='quiz'?answers[currentQuestions()[questionIndex]?.id]?.selected:null}),goToQuestion:id=>{const index=currentQuestions().findIndex(q=>q.id===id);if(index<0)return;questionIndex=index;mode='quiz';render();quiz.scrollIntoView({block:'start'});}});
 function save(){
   if(!sample||!course)return;
   position={lesson:lessonSelect.value,section:sectionIndex,question:questionIndex,mode};
@@ -27,6 +29,7 @@ function renderQuestion(){
   const questions=currentQuestions();
   if(!questions.length){quiz.innerHTML='<p>This lesson has no separate quiz. Continue to the next lesson for more practice.</p>';return;}
   questionIndex=Math.max(0,Math.min(questionIndex,questions.length-1));
+  coach.update();
   const q=questions[questionIndex], answer=answers[q.id], result=answer&&gradePractice(q,answer.selected), s=practiceSummary(questions,answers);
   quiz.innerHTML='<p class="practice-question-count">Question '+(questionIndex+1)+' of '+questions.length+'</p>'+
     '<form id="practiceAnswerForm"><fieldset '+(result?'disabled':'')+'><legend>'+esc(q.prompt)+'</legend>'+
@@ -55,13 +58,13 @@ function render(){
   const i=course.lessons.findIndex(l=>l.id===lessonSelect.value);
   $('practicePreviousLesson').disabled=i===0;$('practiceNextLesson').disabled=i===course.lessons.length-1;
   $('practiceBottomNav').hidden=false;$('practiceMode').hidden=false;
-  if(mode==='quiz')renderQuestion();progress();save();updateUrl();
+  if(mode==='quiz')renderQuestion();else coach.update();progress();save();updateUrl();
   if(mode==='activities')renderPracticeActivities(activitiesView,currentActivities(),storageKey()+':activities');
 }
 async function openLesson(id,restore=false){
   const lesson=course?.lessons.find(l=>l.id===id);if(!lesson)return;
   const token=++requestId;pending?.abort();pending=new AbortController();
-  lessonSelect.value=id;message.textContent='Loading lesson…';content.replaceChildren();quiz.replaceChildren();activitiesView.replaceChildren();
+  lessonSelect.value=id;coach.update();message.textContent='Loading lesson…';content.replaceChildren();quiz.replaceChildren();activitiesView.replaceChildren();
   for(const id of ['practiceSectionNav','practiceMode','practiceBottomNav'])$(id).hidden=true;
   try{
     const lessonUrl=new URL(lesson.content_url,base);lessonUrl.searchParams.set('v',lesson.sha256);
@@ -75,7 +78,7 @@ async function openLesson(id,restore=false){
 async function openCourse(id,requestedLesson=null,requestedMode=null){
   const entry=samples.find(s=>s.course_id===id);if(!entry)return;
   const token=++requestId;pending?.abort();pending=new AbortController();sample=entry;course=null;answers={};position={};sections=[];
-  courseSelect.value=id;lessonSelect.disabled=true;lessonSelect.replaceChildren();
+  coach.update();courseSelect.value=id;lessonSelect.disabled=true;lessonSelect.replaceChildren();
   for(const id of ['practiceSectionNav','practiceMode','practiceBottomNav'])$(id).hidden=true;
   content.replaceChildren();quiz.replaceChildren();activitiesView.replaceChildren();$('practiceProgress').textContent='';
   $('practiceStateLabel').textContent=sample.state_name+' · In development · Free practice';$('practiceCourseTitle').textContent=sample.course_title;

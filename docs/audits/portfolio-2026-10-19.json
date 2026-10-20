@@ -1,0 +1,2253 @@
+{
+  "ownerReportedNmls": "Package submitted, under review; owner confirmed 2026-10-19; scope, dates and identifiers not supplied; no approval established",
+  "asOf": "2026-10-19",
+  "timezone": "America/Los_Angeles",
+  "sourceCommit": "84c38a6d7cea4644cbf1cab528a75c52375d0aa7",
+  "scope": "repository evidence only; no regulator/live acceptance verification; CE requirements are retained 2026 research, not newly verified legal advice",
+  "rows": [
+    {
+      "state": "AL",
+      "name": "Alabama",
+      "registryStatus": "Coming Soon",
+      "providerApproval": null,
+      "courses": [],
+      "authoredLessonFiles": 0,
+      "researchFiles": 0,
+      "submissionFiles": 0,
+      "stage": "no_state_course_evidence",
+      "mortgageAgencies": [
+        {
+          "id": "AL",
+          "plannedTotalHours": 8,
+          "plannedStateHours": 0,
+          "source": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/testingHbk/education/mlo_testing/state_specificReqs/mloTestingHbkStatespecificAl.html",
+          "sourceChecked": "2026-09-10",
+          "salesAuthorized": false,
+          "approval": null,
+          "authoredSupplement": false
+        }
+      ],
+      "ownerReportedSubmission": null,
+      "regulatedLaunch": "not_verified",
+      "evidence": [
+        "public/statecourse/data/state-registry.json"
+      ]
+    },
+    {
+      "state": "AK",
+      "name": "Alaska",
+      "registryStatus": "In Development",
+      "providerApproval": null,
+      "courses": [
+        {
+          "id": "ak-salesperson-prelicense-40-v1",
+          "title": "Alaska Real Estate Salesperson Prelicense Education",
+          "version": "1.0-draft",
+          "approval": null,
+          "approvalStatus": "In Development / Preparing Submission",
+          "enrollmentEnabled": false,
+          "lessons": 8,
+          "questions": 88,
+          "activities": 0,
+          "coverage": "authored curriculum",
+          "localTraining": {
+            "ready": false,
+            "reason": "student_renderer_not_registered"
+          },
+          "evidence": {
+            "stateCode": "AK",
+            "courseId": "ak-salesperson-prelicense-40-v1",
+            "curriculumDir": "alaska/ak-salesperson-prelicense-40-v1/curriculum",
+            "bankPath": "config/alaska/module-question-bank.mjs",
+            "coverage": "authored curriculum"
+          }
+        }
+      ],
+      "authoredLessonFiles": 8,
+      "researchFiles": 1,
+      "submissionFiles": 2,
+      "stage": "catalog_and_formative_material",
+      "mortgageAgencies": [
+        {
+          "id": "AK",
+          "plannedTotalHours": 8,
+          "plannedStateHours": 0,
+          "source": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/testingHbk/education/mlo_testing/state_specificReqs/mloTestingHbkStatespecificak.html",
+          "sourceChecked": "2026-09-10",
+          "salesAuthorized": false,
+          "approval": null,
+          "authoredSupplement": false
+        }
+      ],
+      "ownerReportedSubmission": null,
+      "regulatedLaunch": "not_verified",
+      "evidence": [
+        "public/statecourse/data/state-registry.json",
+        "alaska/"
+      ]
+    },
+    {
+      "state": "AZ",
+      "name": "Arizona",
+      "registryStatus": "In Development",
+      "providerApproval": null,
+      "courses": [
+        {
+          "id": "az-salesperson-prelicense-90",
+          "title": "Arizona Salesperson Pre-License",
+          "version": "1.0",
+          "approval": null,
+          "approvalStatus": "In Development",
+          "enrollmentEnabled": false,
+          "lessons": 13,
+          "questions": 143,
+          "activities": 0,
+          "coverage": "authored curriculum",
+          "localTraining": {
+            "ready": false,
+            "reason": "student_renderer_not_registered"
+          },
+          "evidence": {
+            "stateCode": "AZ",
+            "courseId": "az-salesperson-prelicense-90",
+            "curriculumDir": "arizona/az-salesperson-prelicense-90-v1/curriculum",
+            "bankPath": "config/arizona/prelicense-90-question-bank.mjs",
+            "coverage": "authored curriculum"
+          }
+        },
+        {
+          "id": "az-contract-writing-6",
+          "title": "Arizona Contract Writing",
+          "version": "1.0",
+          "approval": null,
+          "approvalStatus": "In Development",
+          "enrollmentEnabled": false,
+          "lessons": 2,
+          "questions": 22,
+          "activities": 0,
+          "coverage": "authored curriculum",
+          "localTraining": {
+            "ready": false,
+            "reason": "student_renderer_not_registered"
+          },
+          "evidence": {
+            "stateCode": "AZ",
+            "courseId": "az-contract-writing-6",
+            "curriculumDir": "arizona/az-contract-writing-6-v1/curriculum",
+            "bankPath": "config/arizona/contract-writing-6-question-bank.mjs",
+            "coverage": "authored curriculum"
+          }
+        }
+      ],
+      "authoredLessonFiles": 15,
+      "researchFiles": 1,
+      "submissionFiles": 0,
+      "stage": "catalog_and_formative_material",
+      "mortgageAgencies": [
+        {
+          "id": "AZ",
+          "plannedTotalHours": 8,
+          "plannedStateHours": 1,
+          "source": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/testingHbk/education/mlo_testing/state_specificReqs/mloTestingHbkStatespecificAz.html",
+          "sourceChecked": "2026-09-10",
+          "salesAuthorized": false,
+          "approval": null,
+          "authoredSupplement": false
+        }
+      ],
+      "ownerReportedSubmission": null,
+      "regulatedLaunch": "not_verified",
+      "evidence": [
+        "public/statecourse/data/state-registry.json",
+        "arizona/"
+      ]
+    },
+    {
+      "state": "AR",
+      "name": "Arkansas",
+      "registryStatus": "Coming Soon",
+      "providerApproval": null,
+      "courses": [],
+      "authoredLessonFiles": 0,
+      "researchFiles": 0,
+      "submissionFiles": 0,
+      "stage": "no_state_course_evidence",
+      "mortgageAgencies": [
+        {
+          "id": "AR",
+          "plannedTotalHours": 8,
+          "plannedStateHours": 0,
+          "source": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/testingHbk/education/mlo_testing/state_specificReqs/mlo_testing_hbk_stateSpecific_AR.html",
+          "sourceChecked": "2026-09-10",
+          "salesAuthorized": false,
+          "approval": null,
+          "authoredSupplement": false
+        }
+      ],
+      "ownerReportedSubmission": null,
+      "regulatedLaunch": "not_verified",
+      "evidence": [
+        "public/statecourse/data/state-registry.json"
+      ]
+    },
+    {
+      "state": "CA",
+      "name": "California",
+      "registryStatus": "In Development",
+      "providerApproval": null,
+      "courses": [
+        {
+          "id": "ca-real-estate-principles-45",
+          "title": "Real Estate Principles",
+          "version": "1.0",
+          "approval": null,
+          "approvalStatus": "In Development",
+          "enrollmentEnabled": false,
+          "lessons": 15,
+          "questions": 165,
+          "activities": 0,
+          "coverage": "authored curriculum",
+          "localTraining": {
+            "ready": true,
+            "reason": null
+          },
+          "evidence": {
+            "stateCode": "CA",
+            "courseId": "ca-real-estate-principles-45",
+            "curriculumDir": "california/ca-real-estate-principles-45-v1/curriculum",
+            "bankPath": "config/california/principles-question-bank.mjs",
+            "coverage": "authored curriculum"
+          }
+        },
+        {
+          "id": "ca-real-estate-practice-45",
+          "title": "Real Estate Practice",
+          "version": "1.0",
+          "approval": null,
+          "approvalStatus": "In Development",
+          "enrollmentEnabled": false,
+          "lessons": 15,
+          "questions": 165,
+          "activities": 0,
+          "coverage": "authored curriculum",
+          "localTraining": {
+            "ready": true,
+            "reason": null
+          },
+          "evidence": {
+            "stateCode": "CA",
+            "courseId": "ca-real-estate-practice-45",
+            "curriculumDir": "california/ca-real-estate-practice-45-v1/curriculum",
+            "bankPath": "config/california/practice-question-bank.mjs",
+            "coverage": "authored curriculum"
+          }
+        },
+        {
+          "id": "ca-mortgage-loan-brokering-lending-45",
+          "title": "Mortgage Loan Brokering and Lending",
+          "version": "1.0",
+          "approval": null,
+          "approvalStatus": "In Development",
+          "enrollmentEnabled": false,
+          "lessons": 15,
+          "questions": 165,
+          "activities": 0,
+          "coverage": "authored curriculum",
+          "localTraining": {
+            "ready": true,
+            "reason": null
+          },
+          "evidence": {
+            "stateCode": "CA",
+            "courseId": "ca-mortgage-loan-brokering-lending-45",
+            "curriculumDir": "california/ca-mortgage-loan-brokering-lending-45-v1/curriculum",
+            "bankPath": "config/california/mortgage-question-bank.mjs",
+            "coverage": "authored curriculum"
+          }
+        }
+      ],
+      "authoredLessonFiles": 45,
+      "researchFiles": 1,
+      "submissionFiles": 52,
+      "stage": "catalog_and_formative_material",
+      "mortgageAgencies": [
+        {
+          "id": "CA-DFPI",
+          "plannedTotalHours": 8,
+          "plannedStateHours": 1,
+          "source": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/testingHbk/education/mlo_testing/state_specificReqs/mlo_testing_hbk_stateSpecific_CA_dfpi.html",
+          "sourceChecked": "2026-09-10",
+          "salesAuthorized": false,
+          "approval": null,
+          "authoredSupplement": false
+        },
+        {
+          "id": "CA-DRE",
+          "plannedTotalHours": 8,
+          "plannedStateHours": 0,
+          "source": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/testingHbk/education/mlo_testing/state_specificReqs/mlo_testing_hbk_stateSpecific_CAdre.html",
+          "sourceChecked": "2026-09-10",
+          "salesAuthorized": false,
+          "approval": null,
+          "authoredSupplement": false
+        }
+      ],
+      "ownerReportedSubmission": "California DRE submitted, under review; owner confirmed 2026-10-19; dates and identifiers not supplied",
+      "regulatedLaunch": "not_verified",
+      "evidence": [
+        "public/statecourse/data/state-registry.json",
+        "california/"
+      ]
+    },
+    {
+      "state": "CO",
+      "name": "Colorado",
+      "registryStatus": "In Development",
+      "providerApproval": null,
+      "courses": [
+        {
+          "id": "co-real-estate-law-practice-48",
+          "title": "Colorado Real Estate Law and Practice",
+          "version": "1.0",
+          "approval": null,
+          "approvalStatus": "In Development",
+          "enrollmentEnabled": false,
+          "lessons": 5,
+          "questions": 55,
+          "activities": 0,
+          "coverage": "authored curriculum",
+          "localTraining": {
+            "ready": false,
+            "reason": "student_renderer_not_registered"
+          },
+          "evidence": {
+            "stateCode": "CO",
+            "courseId": "co-real-estate-law-practice-48",
+            "curriculumDir": "colorado/co-real-estate-law-and-practice-48-v1/curriculum",
+            "bankPath": "config/colorado/law-and-practice-48-question-bank.mjs",
+            "coverage": "authored curriculum"
+          }
+        },
+        {
+          "id": "co-contracts-regulations-48",
+          "title": "Colorado Contracts and Regulations",
+          "version": "1.0",
+          "approval": null,
+          "approvalStatus": "In Development",
+          "enrollmentEnabled": false,
+          "lessons": 5,
+          "questions": 55,
+          "activities": 0,
+          "coverage": "authored curriculum",
+          "localTraining": {
+            "ready": false,
+            "reason": "student_renderer_not_registered"
+          },
+          "evidence": {
+            "stateCode": "CO",
+            "courseId": "co-contracts-regulations-48",
+            "curriculumDir": "colorado/co-contracts-and-regulations-48-v1/curriculum",
+            "bankPath": "config/colorado/contracts-and-regulations-48-question-bank.mjs",
+            "coverage": "authored curriculum"
+          }
+        },
+        {
+          "id": "co-trust-accounts-recordkeeping-8",
+          "title": "Colorado Trust Accounts and Record-Keeping",
+          "version": "1.0",
+          "approval": null,
+          "approvalStatus": "In Development",
+          "enrollmentEnabled": false,
+          "lessons": 4,
+          "questions": 44,
+          "activities": 0,
+          "coverage": "authored curriculum",
+          "localTraining": {
+            "ready": false,
+            "reason": "student_renderer_not_registered"
+          },
+          "evidence": {
+            "stateCode": "CO",
+            "courseId": "co-trust-accounts-recordkeeping-8",
+            "curriculumDir": "colorado/co-trust-accounts-and-record-keeping-8-v1/curriculum",
+            "bankPath": "config/colorado/trust-accounts-8-question-bank.mjs",
+            "coverage": "authored curriculum"
+          }
+        },
+        {
+          "id": "co-current-legal-issues-8",
+          "title": "Colorado Current Legal Issues",
+          "version": "1.0",
+          "approval": null,
+          "approvalStatus": "In Development",
+          "enrollmentEnabled": false,
+          "lessons": 3,
+          "questions": 33,
+          "activities": 0,
+          "coverage": "authored curriculum",
+          "localTraining": {
+            "ready": false,
+            "reason": "student_renderer_not_registered"
+          },
+          "evidence": {
+            "stateCode": "CO",
+            "courseId": "co-current-legal-issues-8",
+            "curriculumDir": "colorado/co-current-legal-issues-8-v1/curriculum",
+            "bankPath": "config/colorado/current-legal-issues-8-question-bank.mjs",
+            "coverage": "authored curriculum"
+          }
+        },
+        {
+          "id": "co-real-estate-closings-24",
+          "title": "Colorado Real Estate Closings",
+          "version": "1.0",
+          "approval": null,
+          "approvalStatus": "In Development",
+          "enrollmentEnabled": false,
+          "lessons": 5,
+          "questions": 55,
+          "activities": 0,
+          "coverage": "authored curriculum",
+          "localTraining": {
+            "ready": false,
+            "reason": "student_renderer_not_registered"
+          },
+          "evidence": {
+            "stateCode": "CO",
+            "courseId": "co-real-estate-closings-24",
+            "curriculumDir": "colorado/co-closings-24-v1/curriculum",
+            "bankPath": "config/colorado/closings-24-question-bank.mjs",
+            "coverage": "authored curriculum"
+          }
+        },
+        {
+          "id": "co-practical-applications-32",
+          "title": "Colorado Practical Applications",
+          "version": "1.0",
+          "approval": null,
+          "approvalStatus": "In Development",
+          "enrollmentEnabled": false,
+          "lessons": 7,
+          "questions": 77,
+          "activities": 0,
+          "coverage": "authored curriculum",
+          "localTraining": {
+            "ready": false,
+            "reason": "student_renderer_not_registered"
+          },
+          "evidence": {
+            "stateCode": "CO",
+            "courseId": "co-practical-applications-32",
+            "curriculumDir": "colorado/co-practical-applications-32-v1/curriculum",
+            "bankPath": "config/colorado/practical-applications-32-question-bank.mjs",
+            "coverage": "authored curriculum"
+          }
+        }
+      ],
+      "authoredLessonFiles": 29,
+      "researchFiles": 1,
+      "submissionFiles": 0,
+      "stage": "catalog_and_formative_material",
+      "mortgageAgencies": [
+        {
+          "id": "CO",
+          "plannedTotalHours": 8,
+          "plannedStateHours": 0,
+          "source": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/testingHbk/education/mlo_testing/state_specificReqs/mlo_testing_hbk_stateSpecific_CO.html",
+          "sourceChecked": "2026-09-10",
+          "salesAuthorized": false,
+          "approval": null,
+          "authoredSupplement": false
+        }
+      ],
+      "ownerReportedSubmission": null,
+      "regulatedLaunch": "not_verified",
+      "evidence": [
+        "public/statecourse/data/state-registry.json",
+        "colorado/"
+      ]
+    },
+    {
+      "state": "CT",
+      "name": "Connecticut",
+      "registryStatus": "Coming Soon",
+      "providerApproval": null,
+      "courses": [],
+      "authoredLessonFiles": 0,
+      "researchFiles": 0,
+      "submissionFiles": 0,
+      "stage": "no_state_course_evidence",
+      "mortgageAgencies": [
+        {
+          "id": "CT",
+          "plannedTotalHours": 8,
+          "plannedStateHours": 1,
+          "source": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/testingHbk/education/mlo_testing/state_specificReqs/mlo_testing_hbk_stateSpecific_CT.html",
+          "sourceChecked": "2026-09-10",
+          "salesAuthorized": false,
+          "approval": null,
+          "authoredSupplement": false
+        }
+      ],
+      "ownerReportedSubmission": null,
+      "regulatedLaunch": "not_verified",
+      "evidence": [
+        "public/statecourse/data/state-registry.json"
+      ]
+    },
+    {
+      "state": "DE",
+      "name": "Delaware",
+      "registryStatus": "Coming Soon",
+      "providerApproval": null,
+      "courses": [],
+      "authoredLessonFiles": 0,
+      "researchFiles": 0,
+      "submissionFiles": 0,
+      "stage": "no_state_course_evidence",
+      "mortgageAgencies": [
+        {
+          "id": "DE",
+          "plannedTotalHours": 8,
+          "plannedStateHours": 0,
+          "source": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/testingHbk/education/mlo_testing/state_specificReqs/mlo_testing_hbk_DE.html",
+          "sourceChecked": "2026-09-10",
+          "salesAuthorized": false,
+          "approval": null,
+          "authoredSupplement": false
+        }
+      ],
+      "ownerReportedSubmission": null,
+      "regulatedLaunch": "not_verified",
+      "evidence": [
+        "public/statecourse/data/state-registry.json"
+      ]
+    },
+    {
+      "state": "FL",
+      "name": "Florida",
+      "registryStatus": "Coming Soon",
+      "providerApproval": null,
+      "courses": [],
+      "authoredLessonFiles": 19,
+      "researchFiles": 1,
+      "submissionFiles": 22,
+      "stage": "uncatalogued_material",
+      "mortgageAgencies": [
+        {
+          "id": "FL",
+          "plannedTotalHours": 8,
+          "plannedStateHours": 1,
+          "source": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/testingHbk/education/mlo_testing/state_specificReqs/mlo_testing_hbk_stateSpecific_FL.html",
+          "sourceChecked": "2026-09-10",
+          "salesAuthorized": false,
+          "approval": null,
+          "authoredSupplement": false
+        }
+      ],
+      "ownerReportedSubmission": "Owner personal broker application pending; school/course approval not established",
+      "regulatedLaunch": "not_verified",
+      "evidence": [
+        "public/statecourse/data/state-registry.json",
+        "florida/"
+      ]
+    },
+    {
+      "state": "GA",
+      "name": "Georgia",
+      "registryStatus": "Coming Soon",
+      "providerApproval": null,
+      "courses": [],
+      "authoredLessonFiles": 0,
+      "researchFiles": 3,
+      "submissionFiles": 10,
+      "stage": "research_only",
+      "mortgageAgencies": [
+        {
+          "id": "GA",
+          "plannedTotalHours": 8,
+          "plannedStateHours": 1,
+          "source": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/testingHbk/education/mlo_testing/state_specificReqs/mlo_testing_hbk_stateSpecific_GA.html",
+          "sourceChecked": "2026-09-10",
+          "salesAuthorized": false,
+          "approval": null,
+          "authoredSupplement": false
+        }
+      ],
+      "ownerReportedSubmission": null,
+      "regulatedLaunch": "not_verified",
+      "evidence": [
+        "public/statecourse/data/state-registry.json",
+        "georgia/"
+      ]
+    },
+    {
+      "state": "HI",
+      "name": "Hawaii",
+      "registryStatus": "Coming Soon",
+      "providerApproval": null,
+      "courses": [],
+      "authoredLessonFiles": 0,
+      "researchFiles": 0,
+      "submissionFiles": 0,
+      "stage": "no_state_course_evidence",
+      "mortgageAgencies": [
+        {
+          "id": "HI",
+          "plannedTotalHours": 8,
+          "plannedStateHours": 1,
+          "source": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/testingHbk/education/mlo_testing/state_specificReqs/mlo_testing_hbk_stateSpecific_HI.html",
+          "sourceChecked": "2026-09-10",
+          "salesAuthorized": false,
+          "approval": null,
+          "authoredSupplement": false
+        }
+      ],
+      "ownerReportedSubmission": null,
+      "regulatedLaunch": "not_verified",
+      "evidence": [
+        "public/statecourse/data/state-registry.json"
+      ]
+    },
+    {
+      "state": "ID",
+      "name": "Idaho",
+      "registryStatus": "In Research",
+      "providerApproval": null,
+      "courses": [],
+      "authoredLessonFiles": 0,
+      "researchFiles": 0,
+      "submissionFiles": 0,
+      "stage": "research_only",
+      "mortgageAgencies": [
+        {
+          "id": "ID",
+          "plannedTotalHours": 8,
+          "plannedStateHours": 1,
+          "source": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/testingHbk/education/mlo_testing/state_specificReqs/mlo_testing_hbk_stateSpecific_ID.html",
+          "sourceChecked": "2026-09-10",
+          "salesAuthorized": false,
+          "approval": null,
+          "authoredSupplement": false
+        }
+      ],
+      "ownerReportedSubmission": null,
+      "regulatedLaunch": "not_verified",
+      "evidence": [
+        "public/statecourse/data/state-registry.json"
+      ]
+    },
+    {
+      "state": "IL",
+      "name": "Illinois",
+      "registryStatus": "Coming Soon",
+      "providerApproval": null,
+      "courses": [],
+      "authoredLessonFiles": 0,
+      "researchFiles": 23,
+      "submissionFiles": 7,
+      "stage": "structural_foundation",
+      "mortgageAgencies": [
+        {
+          "id": "IL",
+          "plannedTotalHours": 8,
+          "plannedStateHours": 0,
+          "source": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/testingHbk/education/mlo_testing/state_specificReqs/mlo_testing_hbk_stateSpecific_IL.html",
+          "sourceChecked": "2026-09-10",
+          "salesAuthorized": false,
+          "approval": null,
+          "authoredSupplement": false
+        }
+      ],
+      "ownerReportedSubmission": null,
+      "regulatedLaunch": "not_verified",
+      "evidence": [
+        "public/statecourse/data/state-registry.json",
+        "illinois/"
+      ]
+    },
+    {
+      "state": "IN",
+      "name": "Indiana",
+      "registryStatus": "Coming Soon",
+      "providerApproval": null,
+      "courses": [],
+      "authoredLessonFiles": 0,
+      "researchFiles": 0,
+      "submissionFiles": 0,
+      "stage": "no_state_course_evidence",
+      "mortgageAgencies": [
+        {
+          "id": "IN-DFI",
+          "plannedTotalHours": 8,
+          "plannedStateHours": 0,
+          "source": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/testingHbk/education/mlo_testing/state_specificReqs/mlo_testing_hbk_stateSpecific_IN-dfi.html",
+          "sourceChecked": "2026-09-10",
+          "salesAuthorized": false,
+          "approval": null,
+          "authoredSupplement": false
+        },
+        {
+          "id": "IN-SOS",
+          "plannedTotalHours": 8,
+          "plannedStateHours": 0,
+          "source": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/testingHbk/education/mlo_testing/state_specificReqs/mlo_testing_hbk_stateSpecific_IN-SOS.html",
+          "sourceChecked": "2026-09-10",
+          "salesAuthorized": false,
+          "approval": null,
+          "authoredSupplement": false
+        }
+      ],
+      "ownerReportedSubmission": null,
+      "regulatedLaunch": "not_verified",
+      "evidence": [
+        "public/statecourse/data/state-registry.json"
+      ]
+    },
+    {
+      "state": "IA",
+      "name": "Iowa",
+      "registryStatus": "In Research",
+      "providerApproval": null,
+      "courses": [],
+      "authoredLessonFiles": 0,
+      "researchFiles": 0,
+      "submissionFiles": 0,
+      "stage": "research_only",
+      "mortgageAgencies": [
+        {
+          "id": "IA",
+          "plannedTotalHours": 8,
+          "plannedStateHours": 0,
+          "source": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/testingHbk/education/mlo_testing/state_specificReqs/mlo_testing_hbk_stateSpecific_IA.html",
+          "sourceChecked": "2026-09-10",
+          "salesAuthorized": false,
+          "approval": null,
+          "authoredSupplement": false
+        }
+      ],
+      "ownerReportedSubmission": null,
+      "regulatedLaunch": "not_verified",
+      "evidence": [
+        "public/statecourse/data/state-registry.json"
+      ]
+    },
+    {
+      "state": "KS",
+      "name": "Kansas",
+      "registryStatus": "In Research",
+      "providerApproval": null,
+      "courses": [],
+      "authoredLessonFiles": 0,
+      "researchFiles": 1,
+      "submissionFiles": 0,
+      "stage": "research_only",
+      "mortgageAgencies": [
+        {
+          "id": "KS",
+          "plannedTotalHours": 8,
+          "plannedStateHours": 0,
+          "source": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/testingHbk/education/mlo_testing/state_specificReqs/mlo_testing_hbk_stateSpecific_KS.html",
+          "sourceChecked": "2026-09-10",
+          "salesAuthorized": false,
+          "approval": null,
+          "authoredSupplement": false
+        }
+      ],
+      "ownerReportedSubmission": null,
+      "regulatedLaunch": "not_verified",
+      "evidence": [
+        "public/statecourse/data/state-registry.json",
+        "kansas/"
+      ]
+    },
+    {
+      "state": "KY",
+      "name": "Kentucky",
+      "registryStatus": "Coming Soon",
+      "providerApproval": null,
+      "courses": [],
+      "authoredLessonFiles": 0,
+      "researchFiles": 0,
+      "submissionFiles": 0,
+      "stage": "no_state_course_evidence",
+      "mortgageAgencies": [
+        {
+          "id": "KY",
+          "plannedTotalHours": 8,
+          "plannedStateHours": 1,
+          "source": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/testingHbk/education/mlo_testing/state_specificReqs/mlo_testing_hbk_stateSpecific_KY.html",
+          "sourceChecked": "2026-09-10",
+          "salesAuthorized": false,
+          "approval": null,
+          "authoredSupplement": false
+        }
+      ],
+      "ownerReportedSubmission": null,
+      "regulatedLaunch": "not_verified",
+      "evidence": [
+        "public/statecourse/data/state-registry.json"
+      ]
+    },
+    {
+      "state": "LA",
+      "name": "Louisiana",
+      "registryStatus": "Coming Soon",
+      "providerApproval": null,
+      "courses": [],
+      "authoredLessonFiles": 0,
+      "researchFiles": 0,
+      "submissionFiles": 0,
+      "stage": "no_state_course_evidence",
+      "mortgageAgencies": [
+        {
+          "id": "LA",
+          "plannedTotalHours": 8,
+          "plannedStateHours": 0,
+          "source": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/testingHbk/education/mlo_testing/state_specificReqs/mlo_testing_hbk_stateSpecific_LA.html",
+          "sourceChecked": "2026-09-10",
+          "salesAuthorized": false,
+          "approval": null,
+          "authoredSupplement": false
+        }
+      ],
+      "ownerReportedSubmission": null,
+      "regulatedLaunch": "not_verified",
+      "evidence": [
+        "public/statecourse/data/state-registry.json"
+      ]
+    },
+    {
+      "state": "ME",
+      "name": "Maine",
+      "registryStatus": "In Development",
+      "providerApproval": null,
+      "courses": [
+        {
+          "id": "me-sales-agent-v1",
+          "title": "Maine Real Estate Sales Agent Pre-License",
+          "version": "1.0-draft",
+          "approval": null,
+          "approvalStatus": "In Development",
+          "enrollmentEnabled": false,
+          "lessons": 9,
+          "questions": 99,
+          "activities": 0,
+          "coverage": "authored curriculum",
+          "localTraining": {
+            "ready": false,
+            "reason": "student_renderer_not_registered"
+          },
+          "evidence": {
+            "stateCode": "ME",
+            "courseId": "me-sales-agent-v1",
+            "curriculumDir": "maine/curriculum",
+            "bankPath": "config/maine/module-question-bank.mjs",
+            "coverage": "authored curriculum"
+          }
+        }
+      ],
+      "authoredLessonFiles": 9,
+      "researchFiles": 1,
+      "submissionFiles": 0,
+      "stage": "catalog_and_formative_material",
+      "mortgageAgencies": [
+        {
+          "id": "ME",
+          "plannedTotalHours": 8,
+          "plannedStateHours": 0,
+          "source": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/testingHbk/education/mlo_testing/state_specificReqs/mlo_testing_hbk_stateSpecific_ME.html",
+          "sourceChecked": "2026-09-10",
+          "salesAuthorized": false,
+          "approval": null,
+          "authoredSupplement": false
+        }
+      ],
+      "ownerReportedSubmission": null,
+      "regulatedLaunch": "not_verified",
+      "evidence": [
+        "public/statecourse/data/state-registry.json",
+        "maine/"
+      ]
+    },
+    {
+      "state": "MD",
+      "name": "Maryland",
+      "registryStatus": "Coming Soon",
+      "providerApproval": null,
+      "courses": [],
+      "authoredLessonFiles": 0,
+      "researchFiles": 0,
+      "submissionFiles": 0,
+      "stage": "no_state_course_evidence",
+      "mortgageAgencies": [
+        {
+          "id": "MD",
+          "plannedTotalHours": 8,
+          "plannedStateHours": 1,
+          "source": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/testingHbk/education/mlo_testing/state_specificReqs/mlo_testing_hbk_stateSpecific_MD.html",
+          "sourceChecked": "2026-09-10",
+          "salesAuthorized": false,
+          "approval": null,
+          "authoredSupplement": false
+        }
+      ],
+      "ownerReportedSubmission": null,
+      "regulatedLaunch": "not_verified",
+      "evidence": [
+        "public/statecourse/data/state-registry.json"
+      ]
+    },
+    {
+      "state": "MA",
+      "name": "Massachusetts",
+      "registryStatus": "In Research",
+      "providerApproval": null,
+      "courses": [],
+      "authoredLessonFiles": 0,
+      "researchFiles": 0,
+      "submissionFiles": 0,
+      "stage": "research_only",
+      "mortgageAgencies": [
+        {
+          "id": "MA",
+          "plannedTotalHours": 8,
+          "plannedStateHours": 1,
+          "source": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/testingHbk/education/mlo_testing/state_specificReqs/mlo_testing_hbk_stateSpecific_MA.html",
+          "sourceChecked": "2026-09-10",
+          "salesAuthorized": false,
+          "approval": null,
+          "authoredSupplement": false
+        }
+      ],
+      "ownerReportedSubmission": null,
+      "regulatedLaunch": "not_verified",
+      "evidence": [
+        "public/statecourse/data/state-registry.json"
+      ]
+    },
+    {
+      "state": "MI",
+      "name": "Michigan",
+      "registryStatus": "In Development",
+      "providerApproval": null,
+      "courses": [
+        {
+          "id": "mi-salesperson-prelicensure-40-v1",
+          "title": "Principles of Real Estate - Michigan Salesperson Prelicensure",
+          "version": "1.0-submission-draft",
+          "approval": null,
+          "approvalStatus": "In Development / Preparing Submission",
+          "enrollmentEnabled": false,
+          "lessons": 10,
+          "questions": 110,
+          "activities": 0,
+          "coverage": "authored curriculum",
+          "localTraining": {
+            "ready": false,
+            "reason": "student_renderer_not_registered"
+          },
+          "evidence": {
+            "stateCode": "MI",
+            "courseId": "mi-salesperson-prelicensure-40-v1",
+            "curriculumDir": "michigan/mi-salesperson-prelicensure-40-v1/curriculum",
+            "bankPath": "config/michigan/module-question-bank.mjs",
+            "coverage": "authored curriculum"
+          }
+        }
+      ],
+      "authoredLessonFiles": 10,
+      "researchFiles": 2,
+      "submissionFiles": 39,
+      "stage": "catalog_and_formative_material",
+      "mortgageAgencies": [
+        {
+          "id": "MI",
+          "plannedTotalHours": 8,
+          "plannedStateHours": 0,
+          "source": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/testingHbk/education/mlo_testing/state_specificReqs/mlo_testing_hbk_stateSpecific_MI.html",
+          "sourceChecked": "2026-09-10",
+          "salesAuthorized": false,
+          "approval": null,
+          "authoredSupplement": false
+        }
+      ],
+      "ownerReportedSubmission": null,
+      "regulatedLaunch": "not_verified",
+      "evidence": [
+        "public/statecourse/data/state-registry.json",
+        "michigan/"
+      ]
+    },
+    {
+      "state": "MN",
+      "name": "Minnesota",
+      "registryStatus": "Coming Soon",
+      "providerApproval": null,
+      "courses": [],
+      "authoredLessonFiles": 0,
+      "researchFiles": 0,
+      "submissionFiles": 0,
+      "stage": "no_state_course_evidence",
+      "mortgageAgencies": [
+        {
+          "id": "MN",
+          "plannedTotalHours": 8,
+          "plannedStateHours": 1,
+          "source": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/testingHbk/education/mlo_testing/state_specificReqs/mlo_testing_hbk_stateSpecific_MN.html",
+          "sourceChecked": "2026-09-10",
+          "salesAuthorized": false,
+          "approval": null,
+          "authoredSupplement": false
+        }
+      ],
+      "ownerReportedSubmission": null,
+      "regulatedLaunch": "not_verified",
+      "evidence": [
+        "public/statecourse/data/state-registry.json"
+      ]
+    },
+    {
+      "state": "MS",
+      "name": "Mississippi",
+      "registryStatus": "In Research",
+      "providerApproval": null,
+      "courses": [],
+      "authoredLessonFiles": 0,
+      "researchFiles": 0,
+      "submissionFiles": 0,
+      "stage": "research_only",
+      "mortgageAgencies": [
+        {
+          "id": "MS",
+          "plannedTotalHours": 8,
+          "plannedStateHours": 0,
+          "source": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/testingHbk/education/mlo_testing/state_specificReqs/mlo_testing_hbk_stateSpecific_MS.html",
+          "sourceChecked": "2026-09-10",
+          "salesAuthorized": false,
+          "approval": null,
+          "authoredSupplement": false
+        }
+      ],
+      "ownerReportedSubmission": null,
+      "regulatedLaunch": "not_verified",
+      "evidence": [
+        "public/statecourse/data/state-registry.json"
+      ]
+    },
+    {
+      "state": "MO",
+      "name": "Missouri",
+      "registryStatus": "In Development",
+      "providerApproval": null,
+      "courses": [
+        {
+          "id": "mo-salesperson-preexam-48",
+          "title": "Missouri Salesperson Pre-Exam Course",
+          "version": "1.0",
+          "approval": null,
+          "approvalStatus": "In Development",
+          "enrollmentEnabled": false,
+          "lessons": 9,
+          "questions": 99,
+          "activities": 0,
+          "coverage": "authored curriculum",
+          "localTraining": {
+            "ready": false,
+            "reason": "student_renderer_not_registered"
+          },
+          "evidence": {
+            "stateCode": "MO",
+            "courseId": "mo-salesperson-preexam-48",
+            "curriculumDir": "missouri/mo-salesperson-preexam-48-v1/curriculum",
+            "bankPath": "config/missouri/preexam-48-question-bank.mjs",
+            "coverage": "authored curriculum"
+          }
+        },
+        {
+          "id": "mo-real-estate-practice-24",
+          "title": "Missouri Real Estate Practice Course",
+          "version": "1.0",
+          "approval": null,
+          "approvalStatus": "In Development",
+          "enrollmentEnabled": false,
+          "lessons": 6,
+          "questions": 66,
+          "activities": 0,
+          "coverage": "authored curriculum",
+          "localTraining": {
+            "ready": false,
+            "reason": "student_renderer_not_registered"
+          },
+          "evidence": {
+            "stateCode": "MO",
+            "courseId": "mo-real-estate-practice-24",
+            "curriculumDir": "missouri/mo-real-estate-practice-24-v1/curriculum",
+            "bankPath": "config/missouri/mrep-24-question-bank.mjs",
+            "coverage": "authored curriculum"
+          }
+        }
+      ],
+      "authoredLessonFiles": 15,
+      "researchFiles": 1,
+      "submissionFiles": 0,
+      "stage": "catalog_and_formative_material",
+      "mortgageAgencies": [
+        {
+          "id": "MO",
+          "plannedTotalHours": 8,
+          "plannedStateHours": 1,
+          "source": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/testingHbk/education/mlo_testing/state_specificReqs/mlo_testing_hbk_stateSpecific_MO.html",
+          "sourceChecked": "2026-09-10",
+          "salesAuthorized": false,
+          "approval": null,
+          "authoredSupplement": false
+        }
+      ],
+      "ownerReportedSubmission": null,
+      "regulatedLaunch": "not_verified",
+      "evidence": [
+        "public/statecourse/data/state-registry.json",
+        "missouri/"
+      ]
+    },
+    {
+      "state": "MT",
+      "name": "Montana",
+      "registryStatus": "In Research",
+      "providerApproval": null,
+      "courses": [],
+      "authoredLessonFiles": 0,
+      "researchFiles": 0,
+      "submissionFiles": 0,
+      "stage": "research_only",
+      "mortgageAgencies": [
+        {
+          "id": "MT",
+          "plannedTotalHours": 8,
+          "plannedStateHours": 0,
+          "source": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/testingHbk/education/mlo_testing/state_specificReqs/mlo_testing_hbk_stateSpecific_MT.html",
+          "sourceChecked": "2026-09-10",
+          "salesAuthorized": false,
+          "approval": null,
+          "authoredSupplement": false
+        }
+      ],
+      "ownerReportedSubmission": null,
+      "regulatedLaunch": "not_verified",
+      "evidence": [
+        "public/statecourse/data/state-registry.json"
+      ]
+    },
+    {
+      "state": "NE",
+      "name": "Nebraska",
+      "registryStatus": "In Research",
+      "providerApproval": null,
+      "courses": [],
+      "authoredLessonFiles": 0,
+      "researchFiles": 0,
+      "submissionFiles": 0,
+      "stage": "research_only",
+      "mortgageAgencies": [
+        {
+          "id": "NE",
+          "plannedTotalHours": 8,
+          "plannedStateHours": 0,
+          "source": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/testingHbk/education/mlo_testing/state_specificReqs/mlo_testing_hbk_stateSpecific_NE.html",
+          "sourceChecked": "2026-09-10",
+          "salesAuthorized": false,
+          "approval": null,
+          "authoredSupplement": false
+        }
+      ],
+      "ownerReportedSubmission": null,
+      "regulatedLaunch": "not_verified",
+      "evidence": [
+        "public/statecourse/data/state-registry.json"
+      ]
+    },
+    {
+      "state": "NV",
+      "name": "Nevada",
+      "registryStatus": "Coming Soon",
+      "providerApproval": null,
+      "courses": [],
+      "authoredLessonFiles": 0,
+      "researchFiles": 0,
+      "submissionFiles": 0,
+      "stage": "no_state_course_evidence",
+      "mortgageAgencies": [
+        {
+          "id": "NV",
+          "plannedTotalHours": 8,
+          "plannedStateHours": 0,
+          "source": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/testingHbk/education/mlo_testing/state_specificReqs/mlo_testing_hbk_stateSpecific_NV.html",
+          "sourceChecked": "2026-09-10",
+          "salesAuthorized": false,
+          "approval": null,
+          "authoredSupplement": false
+        }
+      ],
+      "ownerReportedSubmission": null,
+      "regulatedLaunch": "not_verified",
+      "evidence": [
+        "public/statecourse/data/state-registry.json"
+      ]
+    },
+    {
+      "state": "NH",
+      "name": "New Hampshire",
+      "registryStatus": "In Research",
+      "providerApproval": null,
+      "courses": [],
+      "authoredLessonFiles": 0,
+      "researchFiles": 0,
+      "submissionFiles": 0,
+      "stage": "research_only",
+      "mortgageAgencies": [
+        {
+          "id": "NH",
+          "plannedTotalHours": 8,
+          "plannedStateHours": 0,
+          "source": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/testingHbk/education/mlo_testing/state_specificReqs/mlo_testing_hbk_stateSpecific_NH.html",
+          "sourceChecked": "2026-09-10",
+          "salesAuthorized": false,
+          "approval": null,
+          "authoredSupplement": false
+        }
+      ],
+      "ownerReportedSubmission": null,
+      "regulatedLaunch": "not_verified",
+      "evidence": [
+        "public/statecourse/data/state-registry.json"
+      ]
+    },
+    {
+      "state": "NJ",
+      "name": "New Jersey",
+      "registryStatus": "Coming Soon",
+      "providerApproval": null,
+      "courses": [],
+      "authoredLessonFiles": 0,
+      "researchFiles": 0,
+      "submissionFiles": 0,
+      "stage": "no_state_course_evidence",
+      "mortgageAgencies": [
+        {
+          "id": "NJ",
+          "plannedTotalHours": 12,
+          "plannedStateHours": 2,
+          "source": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/testingHbk/education/mlo_testing/state_specificReqs/mlo_testing_hbk_stateSpecific_NJ.html",
+          "sourceChecked": "2026-09-10",
+          "salesAuthorized": false,
+          "approval": null,
+          "authoredSupplement": false
+        }
+      ],
+      "ownerReportedSubmission": null,
+      "regulatedLaunch": "not_verified",
+      "evidence": [
+        "public/statecourse/data/state-registry.json"
+      ]
+    },
+    {
+      "state": "NM",
+      "name": "New Mexico",
+      "registryStatus": "In Research",
+      "providerApproval": null,
+      "courses": [],
+      "authoredLessonFiles": 0,
+      "researchFiles": 0,
+      "submissionFiles": 0,
+      "stage": "research_only",
+      "mortgageAgencies": [
+        {
+          "id": "NM",
+          "plannedTotalHours": 8,
+          "plannedStateHours": 1,
+          "source": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/testingHbk/education/mlo_testing/state_specificReqs/mlo_testing_hbk_stateSpecific_NM.html",
+          "sourceChecked": "2026-09-10",
+          "salesAuthorized": false,
+          "approval": null,
+          "authoredSupplement": false
+        }
+      ],
+      "ownerReportedSubmission": null,
+      "regulatedLaunch": "not_verified",
+      "evidence": [
+        "public/statecourse/data/state-registry.json"
+      ]
+    },
+    {
+      "state": "NY",
+      "name": "New York",
+      "registryStatus": "Coming Soon",
+      "providerApproval": null,
+      "courses": [],
+      "authoredLessonFiles": 0,
+      "researchFiles": 0,
+      "submissionFiles": 0,
+      "stage": "no_state_course_evidence",
+      "mortgageAgencies": [
+        {
+          "id": "NY",
+          "plannedTotalHours": 11,
+          "plannedStateHours": 3,
+          "source": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/testingHbk/education/mlo_testing/state_specificReqs/mlo_testing_hbk_stateSpecific_NY.html",
+          "sourceChecked": "2026-09-10",
+          "salesAuthorized": false,
+          "approval": null,
+          "authoredSupplement": false
+        }
+      ],
+      "ownerReportedSubmission": null,
+      "regulatedLaunch": "not_verified",
+      "evidence": [
+        "public/statecourse/data/state-registry.json"
+      ]
+    },
+    {
+      "state": "NC",
+      "name": "North Carolina",
+      "registryStatus": "In Development",
+      "providerApproval": null,
+      "courses": [
+        {
+          "id": "nc-broker-prelicensing-75",
+          "title": "North Carolina Broker Prelicensing",
+          "version": "1.0",
+          "approval": null,
+          "approvalStatus": "In Development",
+          "enrollmentEnabled": false,
+          "lessons": 16,
+          "questions": 176,
+          "activities": 0,
+          "coverage": "authored curriculum",
+          "localTraining": {
+            "ready": false,
+            "reason": "student_renderer_not_registered"
+          },
+          "evidence": {
+            "stateCode": "NC",
+            "courseId": "nc-broker-prelicensing-75",
+            "curriculumDir": "north-carolina/curriculum",
+            "bankPath": "config/north-carolina/module-question-bank.mjs",
+            "coverage": "authored curriculum"
+          }
+        }
+      ],
+      "authoredLessonFiles": 16,
+      "researchFiles": 515,
+      "submissionFiles": 24,
+      "stage": "catalog_and_formative_material",
+      "mortgageAgencies": [
+        {
+          "id": "NC",
+          "plannedTotalHours": 8,
+          "plannedStateHours": 1,
+          "source": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/testingHbk/education/mlo_testing/state_specificReqs/mlo_testing_hbk_stateSpecific_NC.html",
+          "sourceChecked": "2026-09-10",
+          "salesAuthorized": false,
+          "approval": null,
+          "authoredSupplement": false
+        }
+      ],
+      "ownerReportedSubmission": null,
+      "regulatedLaunch": "not_verified",
+      "evidence": [
+        "public/statecourse/data/state-registry.json",
+        "north-carolina/"
+      ]
+    },
+    {
+      "state": "ND",
+      "name": "North Dakota",
+      "registryStatus": "Coming Soon",
+      "providerApproval": null,
+      "courses": [],
+      "authoredLessonFiles": 0,
+      "researchFiles": 0,
+      "submissionFiles": 0,
+      "stage": "no_state_course_evidence",
+      "mortgageAgencies": [
+        {
+          "id": "ND",
+          "plannedTotalHours": 8,
+          "plannedStateHours": 0,
+          "source": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/testingHbk/education/mlo_testing/state_specificReqs/mlo_testing_hbk_stateSpecific_ND.html",
+          "sourceChecked": "2026-09-10",
+          "salesAuthorized": false,
+          "approval": null,
+          "authoredSupplement": false
+        }
+      ],
+      "ownerReportedSubmission": null,
+      "regulatedLaunch": "not_verified",
+      "evidence": [
+        "public/statecourse/data/state-registry.json"
+      ]
+    },
+    {
+      "state": "OH",
+      "name": "Ohio",
+      "registryStatus": "Coming Soon",
+      "providerApproval": null,
+      "courses": [],
+      "authoredLessonFiles": 0,
+      "researchFiles": 0,
+      "submissionFiles": 0,
+      "stage": "no_state_course_evidence",
+      "mortgageAgencies": [
+        {
+          "id": "OH",
+          "plannedTotalHours": 8,
+          "plannedStateHours": 0,
+          "source": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/testingHbk/education/mlo_testing/state_specificReqs/mlo_testing_hbk_stateSpecific_OH.html",
+          "sourceChecked": "2026-09-10",
+          "salesAuthorized": false,
+          "approval": null,
+          "authoredSupplement": false
+        }
+      ],
+      "ownerReportedSubmission": null,
+      "regulatedLaunch": "not_verified",
+      "evidence": [
+        "public/statecourse/data/state-registry.json"
+      ]
+    },
+    {
+      "state": "OK",
+      "name": "Oklahoma",
+      "registryStatus": "In Development",
+      "providerApproval": null,
+      "courses": [
+        {
+          "id": "ok-basic-prelicense-90",
+          "title": "Oklahoma Basic Pre-License",
+          "version": "1.0",
+          "approval": null,
+          "approvalStatus": "In Development",
+          "enrollmentEnabled": false,
+          "lessons": 16,
+          "questions": 176,
+          "activities": 0,
+          "coverage": "authored curriculum",
+          "localTraining": {
+            "ready": false,
+            "reason": "student_renderer_not_registered"
+          },
+          "evidence": {
+            "stateCode": "OK",
+            "courseId": "ok-basic-prelicense-90",
+            "curriculumDir": "oklahoma/curriculum",
+            "bankPath": "config/oklahoma/module-question-bank.mjs",
+            "coverage": "authored curriculum"
+          }
+        }
+      ],
+      "authoredLessonFiles": 16,
+      "researchFiles": 1,
+      "submissionFiles": 0,
+      "stage": "catalog_and_formative_material",
+      "mortgageAgencies": [
+        {
+          "id": "OK",
+          "plannedTotalHours": 8,
+          "plannedStateHours": 0,
+          "source": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/testingHbk/education/mlo_testing/state_specificReqs/mlo_testing_hbk_stateSpecific_OK.html",
+          "sourceChecked": "2026-09-10",
+          "salesAuthorized": false,
+          "approval": null,
+          "authoredSupplement": false
+        }
+      ],
+      "ownerReportedSubmission": null,
+      "regulatedLaunch": "not_verified",
+      "evidence": [
+        "public/statecourse/data/state-registry.json",
+        "oklahoma/"
+      ]
+    },
+    {
+      "state": "OR",
+      "name": "Oregon",
+      "registryStatus": "Coming Soon",
+      "providerApproval": null,
+      "courses": [],
+      "authoredLessonFiles": 0,
+      "researchFiles": 0,
+      "submissionFiles": 0,
+      "stage": "no_state_course_evidence",
+      "mortgageAgencies": [
+        {
+          "id": "OR",
+          "plannedTotalHours": 10,
+          "plannedStateHours": 2,
+          "source": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/testingHbk/education/mlo_testing/state_specificReqs/mlo_testing_hbk_stateSpecific_OR.html",
+          "sourceChecked": "2026-09-10",
+          "salesAuthorized": false,
+          "approval": null,
+          "authoredSupplement": false
+        }
+      ],
+      "ownerReportedSubmission": null,
+      "regulatedLaunch": "not_verified",
+      "evidence": [
+        "public/statecourse/data/state-registry.json"
+      ]
+    },
+    {
+      "state": "PA",
+      "name": "Pennsylvania",
+      "registryStatus": "In Development",
+      "providerApproval": null,
+      "courses": [
+        {
+          "id": "pa-real-estate-fundamentals-30",
+          "title": "Pennsylvania Real Estate Fundamentals",
+          "version": "1.0",
+          "approval": null,
+          "approvalStatus": "In Development",
+          "enrollmentEnabled": false,
+          "lessons": 6,
+          "questions": 66,
+          "activities": 0,
+          "coverage": "authored curriculum",
+          "localTraining": {
+            "ready": false,
+            "reason": "student_renderer_not_registered"
+          },
+          "evidence": {
+            "stateCode": "PA",
+            "courseId": "pa-real-estate-fundamentals-30",
+            "curriculumDir": "pennsylvania/pa-real-estate-fundamentals-30-v1/curriculum",
+            "bankPath": "config/pennsylvania/fundamentals-30-question-bank.mjs",
+            "coverage": "authored curriculum"
+          }
+        },
+        {
+          "id": "pa-real-estate-practice-45",
+          "title": "Pennsylvania Real Estate Practice",
+          "version": "1.0",
+          "approval": null,
+          "approvalStatus": "In Development",
+          "enrollmentEnabled": false,
+          "lessons": 9,
+          "questions": 99,
+          "activities": 0,
+          "coverage": "authored curriculum",
+          "localTraining": {
+            "ready": false,
+            "reason": "student_renderer_not_registered"
+          },
+          "evidence": {
+            "stateCode": "PA",
+            "courseId": "pa-real-estate-practice-45",
+            "curriculumDir": "pennsylvania/pa-real-estate-practice-45-v1/curriculum",
+            "bankPath": "config/pennsylvania/practice-45-question-bank.mjs",
+            "coverage": "authored curriculum"
+          }
+        }
+      ],
+      "authoredLessonFiles": 15,
+      "researchFiles": 1,
+      "submissionFiles": 0,
+      "stage": "catalog_and_formative_material",
+      "mortgageAgencies": [
+        {
+          "id": "PA",
+          "plannedTotalHours": 8,
+          "plannedStateHours": 1,
+          "source": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/testingHbk/education/mlo_testing/state_specificReqs/mlo_testing_hbk_stateSpecific_PA.html",
+          "sourceChecked": "2026-09-10",
+          "salesAuthorized": false,
+          "approval": null,
+          "authoredSupplement": false
+        }
+      ],
+      "ownerReportedSubmission": null,
+      "regulatedLaunch": "not_verified",
+      "evidence": [
+        "public/statecourse/data/state-registry.json",
+        "pennsylvania/"
+      ]
+    },
+    {
+      "state": "RI",
+      "name": "Rhode Island",
+      "registryStatus": "Coming Soon",
+      "providerApproval": null,
+      "courses": [],
+      "authoredLessonFiles": 0,
+      "researchFiles": 0,
+      "submissionFiles": 0,
+      "stage": "no_state_course_evidence",
+      "mortgageAgencies": [
+        {
+          "id": "RI",
+          "plannedTotalHours": 8,
+          "plannedStateHours": 1,
+          "source": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/testingHbk/education/mlo_testing/state_specificReqs/mlo_testing_hbk_stateSpecific_RI.html",
+          "sourceChecked": "2026-09-10",
+          "salesAuthorized": false,
+          "approval": null,
+          "authoredSupplement": false
+        }
+      ],
+      "ownerReportedSubmission": null,
+      "regulatedLaunch": "not_verified",
+      "evidence": [
+        "public/statecourse/data/state-registry.json"
+      ]
+    },
+    {
+      "state": "SC",
+      "name": "South Carolina",
+      "registryStatus": "Coming Soon",
+      "providerApproval": null,
+      "courses": [],
+      "authoredLessonFiles": 0,
+      "researchFiles": 0,
+      "submissionFiles": 0,
+      "stage": "no_state_course_evidence",
+      "mortgageAgencies": [
+        {
+          "id": "SC-BFI",
+          "plannedTotalHours": 8,
+          "plannedStateHours": 1,
+          "source": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/testingHbk/education/mlo_testing/state_specificReqs/mlo_testing_hbk_stateSpecific_SC_BFI.html",
+          "sourceChecked": "2026-09-10",
+          "salesAuthorized": false,
+          "approval": null,
+          "authoredSupplement": false
+        },
+        {
+          "id": "SC-DCA",
+          "plannedTotalHours": 8,
+          "plannedStateHours": 1,
+          "source": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/testingHbk/education/mlo_testing/state_specificReqs/mlo_testing_hbk_stateSpecific_SC_DCA.html",
+          "sourceChecked": "2026-09-10",
+          "salesAuthorized": false,
+          "approval": null,
+          "authoredSupplement": false
+        }
+      ],
+      "ownerReportedSubmission": null,
+      "regulatedLaunch": "not_verified",
+      "evidence": [
+        "public/statecourse/data/state-registry.json"
+      ]
+    },
+    {
+      "state": "SD",
+      "name": "South Dakota",
+      "registryStatus": "In Research",
+      "providerApproval": null,
+      "courses": [],
+      "authoredLessonFiles": 0,
+      "researchFiles": 0,
+      "submissionFiles": 0,
+      "stage": "research_only",
+      "mortgageAgencies": [
+        {
+          "id": "SD",
+          "plannedTotalHours": 8,
+          "plannedStateHours": 0,
+          "source": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/testingHbk/education/mlo_testing/state_specificReqs/mlo_testing_hbk_stateSpecific_SD.html",
+          "sourceChecked": "2026-09-10",
+          "salesAuthorized": false,
+          "approval": null,
+          "authoredSupplement": false
+        }
+      ],
+      "ownerReportedSubmission": null,
+      "regulatedLaunch": "not_verified",
+      "evidence": [
+        "public/statecourse/data/state-registry.json"
+      ]
+    },
+    {
+      "state": "TN",
+      "name": "Tennessee",
+      "registryStatus": "Coming Soon",
+      "providerApproval": null,
+      "courses": [],
+      "authoredLessonFiles": 0,
+      "researchFiles": 0,
+      "submissionFiles": 0,
+      "stage": "no_state_course_evidence",
+      "mortgageAgencies": [
+        {
+          "id": "TN",
+          "plannedTotalHours": 8,
+          "plannedStateHours": 0,
+          "source": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/testingHbk/education/mlo_testing/state_specificReqs/mlo_testing_hbk_stateSpecific_TN.html",
+          "sourceChecked": "2026-09-10",
+          "salesAuthorized": false,
+          "approval": null,
+          "authoredSupplement": false
+        }
+      ],
+      "ownerReportedSubmission": null,
+      "regulatedLaunch": "not_verified",
+      "evidence": [
+        "public/statecourse/data/state-registry.json"
+      ]
+    },
+    {
+      "state": "TX",
+      "name": "Texas",
+      "registryStatus": "In Development",
+      "providerApproval": null,
+      "courses": [
+        {
+          "id": "tx-principles-real-estate-i-30",
+          "title": "Texas Principles of Real Estate I",
+          "version": "1.0",
+          "approval": null,
+          "approvalStatus": "In Development",
+          "enrollmentEnabled": false,
+          "lessons": 9,
+          "questions": 64,
+          "activities": 0,
+          "coverage": "authored curriculum",
+          "localTraining": {
+            "ready": false,
+            "reason": "student_renderer_not_registered"
+          },
+          "evidence": {
+            "stateCode": "TX",
+            "courseId": "tx-principles-real-estate-i-30",
+            "curriculumDir": "texas/tx-principles-real-estate-i-30-v1/curriculum",
+            "bankPath": "config/texas/principles-i-question-bank.mjs",
+            "coverage": "authored curriculum"
+          }
+        },
+        {
+          "id": "tx-principles-real-estate-ii-30",
+          "title": "Texas Principles of Real Estate II",
+          "version": "1.0",
+          "approval": null,
+          "approvalStatus": "In Development",
+          "enrollmentEnabled": false,
+          "lessons": 9,
+          "questions": 88,
+          "activities": 0,
+          "coverage": "authored curriculum",
+          "localTraining": {
+            "ready": false,
+            "reason": "student_renderer_not_registered"
+          },
+          "evidence": {
+            "stateCode": "TX",
+            "courseId": "tx-principles-real-estate-ii-30",
+            "curriculumDir": "texas/tx-principles-real-estate-ii-30-v1/curriculum",
+            "bankPath": "config/texas/principles-ii-question-bank.mjs",
+            "coverage": "authored curriculum"
+          }
+        },
+        {
+          "id": "tx-law-of-agency-30",
+          "title": "Texas Law of Agency",
+          "version": "1.0",
+          "approval": null,
+          "approvalStatus": "In Development",
+          "enrollmentEnabled": false,
+          "lessons": 12,
+          "questions": 116,
+          "activities": 0,
+          "coverage": "authored curriculum",
+          "localTraining": {
+            "ready": false,
+            "reason": "student_renderer_not_registered"
+          },
+          "evidence": {
+            "stateCode": "TX",
+            "courseId": "tx-law-of-agency-30",
+            "curriculumDir": "texas/tx-law-of-agency-30-v1/curriculum",
+            "bankPath": "config/texas/law-of-agency-question-bank.mjs",
+            "coverage": "authored curriculum"
+          }
+        },
+        {
+          "id": "tx-law-of-contracts-30",
+          "title": "Texas Law of Contracts",
+          "version": "1.0",
+          "approval": null,
+          "approvalStatus": "In Development",
+          "enrollmentEnabled": false,
+          "lessons": 11,
+          "questions": 162,
+          "activities": 12,
+          "coverage": "full authored non-credit curriculum",
+          "localTraining": {
+            "ready": false,
+            "reason": "student_renderer_not_registered"
+          },
+          "evidence": {
+            "stateCode": "TX",
+            "courseId": "tx-law-of-contracts-30",
+            "curriculumDir": "texas/tx-law-of-contracts-30-v1/curriculum",
+            "bankPath": "config/texas/law-of-contracts-question-bank.mjs",
+            "bankExports": [
+              "TOPIC_QUIZZES",
+              "REPLACEMENTS"
+            ],
+            "scenarioPath": "config/texas/law-of-contracts-scenarios.mjs",
+            "misconceptionPath": "config/texas/law-of-contracts-misconception-checks.mjs",
+            "coverage": "full authored non-credit curriculum",
+            "lessonCount": 11,
+            "scenarioCount": 6,
+            "scenarioTaskCount": 30,
+            "misconceptionCount": 6
+          }
+        },
+        {
+          "id": "tx-promulgated-contract-forms-30",
+          "title": "Texas Promulgated Contract Forms",
+          "version": "1.0",
+          "approval": null,
+          "approvalStatus": "In Development",
+          "enrollmentEnabled": false,
+          "lessons": 9,
+          "questions": 130,
+          "activities": 4,
+          "coverage": "full authored non-credit curriculum",
+          "localTraining": {
+            "ready": false,
+            "reason": "student_renderer_not_registered"
+          },
+          "evidence": {
+            "stateCode": "TX",
+            "courseId": "tx-promulgated-contract-forms-30",
+            "curriculumDir": "texas/tx-promulgated-contract-forms-30-v1/curriculum",
+            "bankPath": "config/texas/promulgated-contract-forms-question-bank.mjs",
+            "bankExports": [
+              "TOPIC_QUIZZES",
+              "REPLACEMENTS"
+            ],
+            "scenarioPath": "config/texas/promulgated-contract-forms-scenarios.mjs",
+            "misconceptionPath": null,
+            "coverage": "full authored non-credit curriculum",
+            "lessonCount": 9,
+            "scenarioCount": 4,
+            "scenarioTaskCount": 24,
+            "misconceptionCount": 0
+          }
+        },
+        {
+          "id": "tx-real-estate-finance-30",
+          "title": "Texas Real Estate Finance",
+          "version": "1.0",
+          "approval": null,
+          "approvalStatus": "In Development",
+          "enrollmentEnabled": false,
+          "lessons": 10,
+          "questions": 148,
+          "activities": 4,
+          "coverage": "full authored non-credit curriculum",
+          "localTraining": {
+            "ready": false,
+            "reason": "student_renderer_not_registered"
+          },
+          "evidence": {
+            "stateCode": "TX",
+            "courseId": "tx-real-estate-finance-30",
+            "curriculumDir": "texas/tx-real-estate-finance-30-v1/curriculum",
+            "bankPath": "config/texas/real-estate-finance-question-bank.mjs",
+            "bankExports": [
+              "TOPIC_QUIZZES",
+              "REPLACEMENTS"
+            ],
+            "scenarioPath": "config/texas/real-estate-finance-scenarios.mjs",
+            "misconceptionPath": null,
+            "coverage": "full authored non-credit curriculum",
+            "lessonCount": 10,
+            "scenarioCount": 4,
+            "scenarioTaskCount": 20,
+            "misconceptionCount": 0
+          }
+        }
+      ],
+      "authoredLessonFiles": 72,
+      "researchFiles": 1,
+      "submissionFiles": 18,
+      "stage": "catalog_and_formative_material",
+      "mortgageAgencies": [
+        {
+          "id": "TX-OCCC",
+          "plannedTotalHours": 8,
+          "plannedStateHours": 0,
+          "source": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/testingHbk/education/mlo_testing/state_specificReqs/mlo_testing_hbk_stateSpecific_TX_occc.html",
+          "sourceChecked": "2026-09-10",
+          "salesAuthorized": false,
+          "approval": null,
+          "authoredSupplement": false
+        },
+        {
+          "id": "TX-SML",
+          "plannedTotalHours": 8,
+          "plannedStateHours": 0,
+          "source": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/testingHbk/education/mlo_testing/state_specificReqs/mlo_testing_hbk_stateSpecific_TX_SML.html",
+          "sourceChecked": "2026-09-10",
+          "salesAuthorized": false,
+          "approval": null,
+          "authoredSupplement": false
+        }
+      ],
+      "ownerReportedSubmission": null,
+      "regulatedLaunch": "not_verified",
+      "evidence": [
+        "public/statecourse/data/state-registry.json",
+        "texas/"
+      ]
+    },
+    {
+      "state": "UT",
+      "name": "Utah",
+      "registryStatus": "Coming Soon",
+      "providerApproval": null,
+      "courses": [],
+      "authoredLessonFiles": 0,
+      "researchFiles": 0,
+      "submissionFiles": 0,
+      "stage": "no_state_course_evidence",
+      "mortgageAgencies": [
+        {
+          "id": "UT-DFI",
+          "plannedTotalHours": 8,
+          "plannedStateHours": 0,
+          "source": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/testingHbk/education/mlo_testing/state_specificReqs/mlo_testing_hbk_UT_DFI.html",
+          "sourceChecked": "2026-09-10",
+          "salesAuthorized": false,
+          "approval": null,
+          "authoredSupplement": false
+        },
+        {
+          "id": "UT-DRE",
+          "plannedTotalHours": 9,
+          "plannedStateHours": 1,
+          "source": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/testingHbk/education/mlo_testing/state_specificReqs/mlo_testing_hbk_stateSepcific_UT-DRE.html",
+          "sourceChecked": "2026-09-10",
+          "salesAuthorized": false,
+          "approval": null,
+          "authoredSupplement": false
+        }
+      ],
+      "ownerReportedSubmission": null,
+      "regulatedLaunch": "not_verified",
+      "evidence": [
+        "public/statecourse/data/state-registry.json"
+      ]
+    },
+    {
+      "state": "VT",
+      "name": "Vermont",
+      "registryStatus": "In Research",
+      "providerApproval": null,
+      "courses": [],
+      "authoredLessonFiles": 0,
+      "researchFiles": 0,
+      "submissionFiles": 0,
+      "stage": "research_only",
+      "mortgageAgencies": [
+        {
+          "id": "VT",
+          "plannedTotalHours": 8,
+          "plannedStateHours": 0,
+          "source": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/testingHbk/education/mlo_testing/state_specificReqs/mlo_testing_hbk_stateSpecific_VT.html",
+          "sourceChecked": "2026-09-10",
+          "salesAuthorized": false,
+          "approval": null,
+          "authoredSupplement": false
+        }
+      ],
+      "ownerReportedSubmission": null,
+      "regulatedLaunch": "not_verified",
+      "evidence": [
+        "public/statecourse/data/state-registry.json"
+      ]
+    },
+    {
+      "state": "VA",
+      "name": "Virginia",
+      "registryStatus": "In Development",
+      "providerApproval": null,
+      "courses": [
+        {
+          "id": "va-principles-practices-v1",
+          "title": "Principles & Practices of Real Estate",
+          "version": "1.0-draft",
+          "approval": null,
+          "approvalStatus": "In Development / Preparing Submission",
+          "enrollmentEnabled": false,
+          "lessons": 15,
+          "questions": 165,
+          "activities": 0,
+          "coverage": "authored curriculum",
+          "localTraining": {
+            "ready": false,
+            "reason": "student_renderer_not_registered"
+          },
+          "evidence": {
+            "stateCode": "VA",
+            "courseId": "va-principles-practices-v1",
+            "curriculumDir": "virginia/curriculum",
+            "bankPath": "config/virginia/module-question-bank.mjs",
+            "coverage": "authored curriculum"
+          }
+        }
+      ],
+      "authoredLessonFiles": 15,
+      "researchFiles": 3,
+      "submissionFiles": 4,
+      "stage": "catalog_and_formative_material",
+      "mortgageAgencies": [
+        {
+          "id": "VA",
+          "plannedTotalHours": 8,
+          "plannedStateHours": 0,
+          "source": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/testingHbk/education/mlo_testing/state_specificReqs/mlo_testing_hbk_stateSpecific_VA.html",
+          "sourceChecked": "2026-09-10",
+          "salesAuthorized": false,
+          "approval": null,
+          "authoredSupplement": false
+        }
+      ],
+      "ownerReportedSubmission": null,
+      "regulatedLaunch": "not_verified",
+      "evidence": [
+        "public/statecourse/data/state-registry.json",
+        "virginia/"
+      ]
+    },
+    {
+      "state": "WA",
+      "name": "Washington",
+      "registryStatus": "In Development",
+      "providerApproval": null,
+      "courses": [
+        {
+          "id": "wa-real-estate-fundamentals-60",
+          "title": "Washington Real Estate Fundamentals",
+          "version": "1.0",
+          "approval": null,
+          "approvalStatus": "In Development",
+          "enrollmentEnabled": false,
+          "lessons": 12,
+          "questions": 132,
+          "activities": 0,
+          "coverage": "authored curriculum",
+          "localTraining": {
+            "ready": false,
+            "reason": "student_renderer_not_registered"
+          },
+          "evidence": {
+            "stateCode": "WA",
+            "courseId": "wa-real-estate-fundamentals-60",
+            "curriculumDir": "washington/wa-real-estate-fundamentals-60-v1/curriculum",
+            "bankPath": "config/washington/fundamentals-60-question-bank.mjs",
+            "coverage": "authored curriculum"
+          }
+        },
+        {
+          "id": "wa-real-estate-practices-30",
+          "title": "Washington Real Estate Practices",
+          "version": "1.0",
+          "approval": null,
+          "approvalStatus": "In Development",
+          "enrollmentEnabled": false,
+          "lessons": 6,
+          "questions": 66,
+          "activities": 0,
+          "coverage": "authored curriculum",
+          "localTraining": {
+            "ready": false,
+            "reason": "student_renderer_not_registered"
+          },
+          "evidence": {
+            "stateCode": "WA",
+            "courseId": "wa-real-estate-practices-30",
+            "curriculumDir": "washington/wa-real-estate-practices-30-v1/curriculum",
+            "bankPath": "config/washington/practices-30-question-bank.mjs",
+            "coverage": "authored curriculum"
+          }
+        }
+      ],
+      "authoredLessonFiles": 18,
+      "researchFiles": 13,
+      "submissionFiles": 3,
+      "stage": "catalog_and_formative_material",
+      "mortgageAgencies": [
+        {
+          "id": "WA",
+          "plannedTotalHours": 9,
+          "plannedStateHours": 1,
+          "source": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/testingHbk/education/mlo_testing/state_specificReqs/mlo_testing_hbk_stateSpecific_WA.html",
+          "sourceChecked": "2026-09-10",
+          "salesAuthorized": false,
+          "approval": null,
+          "authoredSupplement": false
+        }
+      ],
+      "ownerReportedSubmission": null,
+      "regulatedLaunch": "not_verified",
+      "evidence": [
+        "public/statecourse/data/state-registry.json",
+        "washington/"
+      ]
+    },
+    {
+      "state": "WV",
+      "name": "West Virginia",
+      "registryStatus": "Coming Soon",
+      "providerApproval": null,
+      "courses": [],
+      "authoredLessonFiles": 0,
+      "researchFiles": 0,
+      "submissionFiles": 0,
+      "stage": "no_state_course_evidence",
+      "mortgageAgencies": [
+        {
+          "id": "WV",
+          "plannedTotalHours": 9,
+          "plannedStateHours": 2,
+          "source": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/testingHbk/education/mlo_testing/state_specificReqs/mlo_testing_hbk_stateSpecific_WV.html",
+          "sourceChecked": "2026-09-10",
+          "salesAuthorized": false,
+          "approval": null,
+          "authoredSupplement": false
+        }
+      ],
+      "ownerReportedSubmission": null,
+      "regulatedLaunch": "not_verified",
+      "evidence": [
+        "public/statecourse/data/state-registry.json"
+      ]
+    },
+    {
+      "state": "WI",
+      "name": "Wisconsin",
+      "registryStatus": "In Development",
+      "providerApproval": null,
+      "courses": [
+        {
+          "id": "wi-salesperson",
+          "title": "Wisconsin Salesperson Pre-License",
+          "version": "1.0",
+          "approval": null,
+          "approvalStatus": "In Development",
+          "enrollmentEnabled": false,
+          "lessons": 13,
+          "questions": 143,
+          "activities": 0,
+          "coverage": "authored curriculum",
+          "localTraining": {
+            "ready": false,
+            "reason": "student_renderer_not_registered"
+          },
+          "evidence": {
+            "stateCode": "WI",
+            "courseId": "wi-salesperson",
+            "curriculumDir": "wisconsin/curriculum",
+            "bankPath": "config/wisconsin/module-question-bank.mjs",
+            "coverage": "authored curriculum"
+          }
+        }
+      ],
+      "authoredLessonFiles": 13,
+      "researchFiles": 2,
+      "submissionFiles": 0,
+      "stage": "catalog_and_formative_material",
+      "mortgageAgencies": [
+        {
+          "id": "WI",
+          "plannedTotalHours": 8,
+          "plannedStateHours": 0,
+          "source": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/testingHbk/education/mlo_testing/state_specificReqs/mlo_testing_hbk_stateSpecific_WI.html",
+          "sourceChecked": "2026-09-10",
+          "salesAuthorized": false,
+          "approval": null,
+          "authoredSupplement": false
+        }
+      ],
+      "ownerReportedSubmission": null,
+      "regulatedLaunch": "not_verified",
+      "evidence": [
+        "public/statecourse/data/state-registry.json",
+        "wisconsin/"
+      ]
+    },
+    {
+      "state": "DC",
+      "name": "District of Columbia",
+      "registryStatus": "Coming Soon",
+      "providerApproval": null,
+      "courses": [],
+      "authoredLessonFiles": 0,
+      "researchFiles": 0,
+      "submissionFiles": 0,
+      "stage": "no_state_course_evidence",
+      "mortgageAgencies": [
+        {
+          "id": "DC",
+          "plannedTotalHours": 8,
+          "plannedStateHours": 1,
+          "source": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/testingHbk/education/mlo_testing/state_specificReqs/mlo_testing_hbk_stateSpecific_DC.html",
+          "sourceChecked": "2026-09-10",
+          "salesAuthorized": false,
+          "approval": null,
+          "authoredSupplement": false
+        }
+      ],
+      "ownerReportedSubmission": null,
+      "regulatedLaunch": "not_verified",
+      "evidence": [
+        "public/statecourse/data/state-registry.json"
+      ]
+    },
+    {
+      "state": "WY",
+      "name": "Wyoming",
+      "registryStatus": "In Research",
+      "providerApproval": null,
+      "courses": [],
+      "authoredLessonFiles": 0,
+      "researchFiles": 0,
+      "submissionFiles": 0,
+      "stage": "research_only",
+      "mortgageAgencies": [
+        {
+          "id": "WY",
+          "plannedTotalHours": 8,
+          "plannedStateHours": 0,
+          "source": "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/testingHbk/education/mlo_testing/state_specificReqs/mlo_testing_hbk_WY.html",
+          "sourceChecked": "2026-09-10",
+          "salesAuthorized": false,
+          "approval": null,
+          "authoredSupplement": false
+        }
+      ],
+      "ownerReportedSubmission": null,
+      "regulatedLaunch": "not_verified",
+      "evidence": [
+        "public/statecourse/data/state-registry.json"
+      ]
+    }
+  ],
+  "counts": {
+    "jurisdictions": 51,
+    "catalogRECourses": 30,
+    "catalogREStates": 14,
+    "practiceLessons": 284,
+    "practiceQuestions": 3172,
+    "mortgageAgencyRows": 56,
+    "stateModules": 24,
+    "authoredStateModules": 0
+  },
+  "sourceDates": {
+    "registry": "2026-08-19",
+    "mortgage": "2026-09-10"
+  }
+}

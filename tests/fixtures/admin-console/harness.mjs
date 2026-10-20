@@ -8,8 +8,8 @@
  */
 
 export const STAFF_ID = "11111111-1111-4111-8111-111111111111";
-const NAMED_SESSION = 'header.'+Buffer.from(JSON.stringify({sub:STAFF_ID, session_id:'22222222-2222-4222-8222-222222222222',aal:'aal2',exp:4102444800})).toString('base64url')+'.signature';
-const STAFF_COOKIE='__Host-sc_access='+NAMED_SESSION+'; __Host-sc_staff='+'p'.repeat(43);
+export const NAMED_SESSION = 'header.'+Buffer.from(JSON.stringify({sub:STAFF_ID, session_id:'22222222-2222-4222-8222-222222222222',aal:'aal2',exp:4102444800})).toString('base64url')+'.signature';
+export const STAFF_COOKIE='__Host-sc_access='+NAMED_SESSION+'; __Host-sc_staff='+'p'.repeat(43);
 export const OTHER_STAFF_ID = "99999999-9999-4999-8999-999999999999";
 export const COURSE_ID = "tx-law-of-agency-30-v1";
 export const DELIVERY_ID = "module-03";

@@ -1,3 +1,4 @@
+import { STAFF_COOKIE as CURRENT_TEST_COOKIE } from './fixtures/admin-console/harness.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { randomUUID } from 'node:crypto';
@@ -42,7 +43,7 @@ async function fixture(run,options={}) {
   });
 }
 const request=(body={courseId:identity.id},headers={})=>new Request('https://statecourse.test/api/enroll/training',{method:'POST',headers:{
-  origin:'https://statecourse.test','content-type':'application/json',cookie:'__Host-sc_access=named-session-token',...headers},body:JSON.stringify(body)});
+  origin:'https://statecourse.test','content-type':'application/json',cookie:CURRENT_TEST_COOKIE,...headers},body:JSON.stringify(body)});
 
 test('NMLS readiness requires an exact real source manifest, not just a matching label',async()=>fixture(async calls=>{
   assert.equal(trainingReadiness(identity.id).ready,false);
@@ -113,7 +114,7 @@ test('authentication is mandatory and browser-supplied student identity cannot r
   assert.equal((await response.json()).creditEligible,false);
 }));
 test('student portal projects real zero-progress NMLS context with 45 lessons and no raw runtime',async()=>fixture(async calls=>{
-  const response=await portalHandler(new Request('https://statecourse.test/api/student/portal',{headers:{cookie:'__Host-sc_access=named-session-token'}}));
+  const response=await portalHandler(new Request('https://statecourse.test/api/student/portal',{headers:{cookie:CURRENT_TEST_COOKIE}}));
   assert.equal(response.status,200);const item=(await response.json()).enrollments[0];
   assert.equal(item.assignment_count,45);assert.equal(item.assignments_completed,0);assert.equal(item.training_phase,'not_started');
   assert.equal(item.training_completed,false);assert.equal(item.nmls_training.available,true);assert.equal(item.completed_at,null);
