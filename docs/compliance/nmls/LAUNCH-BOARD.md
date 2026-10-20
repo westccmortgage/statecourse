@@ -1,4 +1,4 @@
-> October 19, 2026, Los Angeles: approved source reconciliation preserves the newer PR #26 Core transport and the published lesson-open coach guard on main. Paid Core calls remain OFF. Lint and actual entitlement restoration are verified; AK/TX coach quality findings remain open. See `docs/audits/COACH-CORE-PRESERVATION-2026-10-20.md`.
+> October 19, 2026, Los Angeles: approved source reconciliation preserves the newer PR #26 Core transport and the published lesson-open coach guard on main. Paid Core calls remain OFF. Lint and actual entitlement restoration are verified; AK/TX citation/sponsorship findings passed four repeated source-reviewed samples on f770fad; broader coach quality and the separate Mortgage Reg B finding remain open. See `docs/audits/COACH-AK-TX-CORRECTION-2026-10-20.md`. See `docs/audits/COACH-CORE-PRESERVATION-2026-10-20.md`.
 
 # NMLS Launch Board
 

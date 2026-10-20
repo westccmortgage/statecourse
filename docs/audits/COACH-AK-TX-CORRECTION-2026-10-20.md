@@ -1,3 +1,19 @@
+# Alaska and Texas coach correction — verified production result
+
+Published code: `f770fad7b6484a96a93a91a57027b0b09430b2d5`, main/production, deploy `6ad701cd0afe1300714ffcb4`, ready and published `2026-10-20T05:53:55.711Z` (October19,22:53 Los Angeles). Netlify's UI and API agree; all41 functions use runtime API2.
+
+Four fresh OpenAI/gpt-4.1-mini samples succeeded and were manually compared against all expanded cited excerpts: Alaska original generic distinction/example request; Texas direct sponsorship-permission question; Alaska unrepresented-buyer/AS08.88.620 boundary question; Texas original generic request. The observed Alaska claims now match the cited duties/relationship passages, and Texas retains permission for sponsored sales agents acting for the broker instead of claiming they need their own broker license for those acts. These four targeted source-fidelity findings pass; this is not a portfolio-wide educational/regulatory acceptance. Some responses remain longer than requested. The separate Mortgage Reg B application/completed-application semantic finding remains open.
+
+The final provider protocol supplies server-generated paragraph IDs and asks the model to select an existing source+passage for each statement. The server checks those choices, assembles explanation/citation IDs, and refuses invented evidence. It does not ask the model to transcribe a quotation. Initial stricter quote-copy protocols returned503 and are superseded: the allowlisted diagnostic header identified quote mismatches. One retry pair after deployment returned409 because the client retained earlier request IDs; fresh page loads produced the four successful samples. No failed attempt is counted as passing acceptance. No semantic theorem/proof is inferred from passage-ID membership; the factual review was manual.
+
+Validation:326 relevant tests pass,0 skipped, including coach, SQL/DOM, access, Stripe/payment, admin, student and stream regressions. Pinned lint828 files,0 errors/116 existing warnings. Native bundler identifies all41 functions as API2. Site build/privacy scan and all5 answer-key protection checks pass. Provider input for all329 teaching contexts with a near-limit synthetic question remained below14,000 bytes (maximum11,478).
+
+Hosted checks after runtime repair: Core health200 with paid analysis/provider calls false; public coach config200 openai/enabled; private coach GET405; invalid-method student/admin/checkout/webhook requests405; Admin Console303 to staff verification. Public payment configuration still reports mode live / productionPaymentsEnabled true /10 courses, matching existing deployment variables. No transaction was created. Existing provider keys, environment variables, $1/day coach cap, source permissions, grades, completions and regulated-course gates were not changed. Protected build.json was not reverified because staff proof expired.
+
+Evidence: `work/coach-browser/ak-tx-corrected-samples-20261020.json` (four answers and all disclosed sources), `texas-coach-corrected-20261020.jpg`, `ak-tx-hosted-transport-20261020.json`, `ak-tx-release-20261020.json`. The temporary test/lint logs are listed in the release receipt. Production implementation is f770fad; this verification-only documentation update skips rebuilding an identical code tree.
+
+## Historical implementation and deployment record
+
 # Alaska and Texas coach correction — October 19, 2026, Los Angeles
 
 Requested scope: correct the real coach samples that attributed Alaska representation duties to citations not containing them and contradicted Texas broker sponsorship permissions. Authored curricula and source text are unchanged.
