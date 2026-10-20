@@ -1,0 +1,412 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "StateCourse Core V2 read-only observations",
+    "version": "1.0.0",
+    "description": "Prepared internal server contract. Disabled by default and not registered as a deployed route. No side-effect, signoff, progress, payment, exam, certificate or launch operations."
+  },
+  "paths": {
+    "/v1/statecourse/observations": {
+      "post": {
+        "operationId": "explainEnrollmentObservations",
+        "security": [
+          {
+            "statecourseBearer": [],
+            "staffProof": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "Origin",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Exact configured StateCourse server origin; no CORS allowance."
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "description": "At most 1024 bytes. Authority, tenant and SQL are never accepted in the body.",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Scope"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Point-in-time observations; inspect each verification status. no_observations is not a compliance or launch approval.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Result"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid JSON, unknown authority fields or unsupported scope",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Missing or invalid bearer/proof",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Wrong origin, expired/revoked MFA/session, role or CA scope denied",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Unknown route or enrollment outside the fixed course",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "405": {
+            "description": "POST required",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "413": {
+            "description": "Body exceeds 1024 bytes",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "415": {
+            "description": "application/json required",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Incomplete bounded source or integrity/finding limit refusal",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "429": {
+            "description": "One analysis already active in this process",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "Disabled, independent executors unavailable, source/provider failure or reauthorization unavailable",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "securitySchemes": {
+      "statecourseBearer": {
+        "type": "http",
+        "scheme": "bearer",
+        "bearerFormat": "StateCourse Supabase JWT"
+      },
+      "staffProof": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "x-statecourse-staff-proof",
+        "description": "Original 43-character HttpOnly exact-session MFA proof, forwarded only by the server bridge. Never browser storage or logs."
+      }
+    },
+    "schemas": {
+      "Scope": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "courseId",
+          "enrollmentId"
+        ],
+        "properties": {
+          "courseId": {
+            "const": "ca-real-estate-principles-45"
+          },
+          "enrollmentId": {
+            "type": "string",
+            "format": "uuid"
+          }
+        }
+      },
+      "Hash": {
+        "type": "string",
+        "pattern": "^[0-9a-f]{64}$"
+      },
+      "Evidence": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "table",
+          "key",
+          "field",
+          "value",
+          "snapshotHash"
+        ],
+        "properties": {
+          "table": {
+            "type": "string",
+            "enum": [
+              "enrollments",
+              "courses",
+              "regulatory_course_versions",
+              "access_grants",
+              "lms_compliance_state",
+              "lms_assignment_state",
+              "lms_block_progress",
+              "payment_enrollments",
+              "payments",
+              "console_course_releases",
+              "console_course_reviews",
+              "console_tasks",
+              "console_task_events",
+              "console_evidence_events",
+              "console_review_findings"
+            ]
+          },
+          "key": {
+            "type": [
+              "object",
+              "null"
+            ],
+            "additionalProperties": {
+              "type": [
+                "string",
+                "number",
+                "boolean",
+                "null"
+              ]
+            }
+          },
+          "field": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "value": {
+            "type": [
+              "string",
+              "number",
+              "boolean",
+              "null"
+            ]
+          },
+          "snapshotHash": {
+            "$ref": "#/components/schemas/Hash"
+          },
+          "recordHash": {
+            "$ref": "#/components/schemas/Hash"
+          },
+          "resultHash": {
+            "$ref": "#/components/schemas/Hash"
+          },
+          "rowCount": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 1000
+          },
+          "scope": {
+            "$ref": "#/components/schemas/Scope"
+          }
+        }
+      },
+      "Observation": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "candidateId",
+          "code",
+          "explanation",
+          "evidence",
+          "verification",
+          "acceptedClaimIds"
+        ],
+        "properties": {
+          "candidateId": {
+            "type": "string"
+          },
+          "code": {
+            "type": "string"
+          },
+          "explanation": {
+            "type": "string"
+          },
+          "evidence": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "$ref": "#/components/schemas/Evidence"
+            }
+          },
+          "verification": {
+            "enum": [
+              "accepted",
+              "needs_human_review"
+            ]
+          },
+          "acceptedClaimIds": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        }
+      },
+      "Result": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "contractVersion",
+          "scope",
+          "snapshotHash",
+          "capturedAt",
+          "status",
+          "observations",
+          "limitations"
+        ],
+        "properties": {
+          "contractVersion": {
+            "const": "statecourse.readonly.1"
+          },
+          "scope": {
+            "$ref": "#/components/schemas/Scope"
+          },
+          "snapshotHash": {
+            "$ref": "#/components/schemas/Hash"
+          },
+          "capturedAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "workflowId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "status": {
+            "enum": [
+              "no_observations",
+              "verified_observations",
+              "needs_human_review"
+            ]
+          },
+          "observations": {
+            "type": "array",
+            "maxItems": 32,
+            "items": {
+              "$ref": "#/components/schemas/Observation"
+            }
+          },
+          "trace": {
+            "type": "object",
+            "description": "Existing Core V2 claim/assessment/attempt contracts; see upstream/workers/core-v2/kernel/contracts.ts. Present when candidates were run. Not a durable-history identifier.",
+            "required": [
+              "workflowState",
+              "claims",
+              "assessments",
+              "attempts"
+            ],
+            "properties": {
+              "workflowState": {
+                "type": "string"
+              },
+              "claims": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              },
+              "assessments": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              },
+              "attempts": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            },
+            "additionalProperties": false
+          },
+          "limitations": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "Error": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "error"
+        ],
+        "properties": {
+          "error": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

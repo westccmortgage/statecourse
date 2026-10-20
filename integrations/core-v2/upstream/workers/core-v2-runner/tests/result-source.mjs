@@ -1,0 +1,14 @@
+import assert from 'node:assert/strict';
+import { sourceSnapshot,reviewKind } from '../ceo-admin/result-source.ts';
+import { sha256 } from '../../core-v2/kernel/ids.ts';
+const content='subject: Synthetic: commitment\nwaiting_on: Mock supplier';
+const row={external_subject_key:'email:a:b',segment_kind:'record_fields',content,content_sha256:sha256(content),record_version:'v1'};
+assert.equal(sourceSnapshot([row],'email:a:b').fields.subject,'Synthetic: commitment');
+assert.equal(sourceSnapshot([row],'email:other'),null);
+assert.equal(sourceSnapshot([{...row,content:'altered'}],'email:a:b'),null);
+assert.equal(sourceSnapshot([row,row],'email:a:b'),null);
+const duplicate='subject: One\nsubject: Two';
+assert.equal(sourceSnapshot([{...row,content:duplicate,content_sha256:sha256(duplicate)}],'email:a:b'),null);
+assert.equal(reviewKind({reason:'independence_unavailable'}),'technical_recovery');
+assert.equal(reviewKind({predicate:'commitment'}),'human_decision');
+console.log('ALL OK: source revision and technical review boundaries');

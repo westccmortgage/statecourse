@@ -1,0 +1,13 @@
+import assert from 'node:assert/strict';
+import {readFile} from 'node:fs/promises';
+import {fileURLToPath,pathToFileURL} from 'node:url';
+const toolPath=process.argv[2];
+if(!toolPath) throw new Error('Pass an absolute path to the installed TypeScript module.');
+const ts=(await import(pathToFileURL(toolPath))).default;
+const root=fileURLToPath(new URL('../../../',import.meta.url));
+const config=JSON.parse(await readFile(new URL('../../../tsconfig.json',import.meta.url),'utf8'));
+const discovery=ts.parseJsonConfigFileContent(config,ts.sys,root);
+assert.equal(discovery.fileNames.some(path=>path.includes('/integrations/core-v2/')),false,'Application compilation includes the independent Core runtime');
+const withoutBoundary=ts.parseJsonConfigFileContent({...config,exclude:config.exclude.filter(p=>p!=='integrations/core-v2')},ts.sys,root);
+assert.ok(withoutBoundary.fileNames.some(path=>path.includes('/integrations/core-v2/upstream/')),'Negative control did not expose the copied runtime');
+console.log('Root TypeScript discovery excludes Core; removing the boundary demonstrably includes it.');

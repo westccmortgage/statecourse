@@ -1,0 +1,448 @@
+{
+  "qa_after": {
+    "application": "markevita",
+    "artifacts": [
+      {
+        "digest": "2612f6fed3226b36bdc547111d9f6376ce2807a8ef2c93c62123e70451c3e12f",
+        "kind": "master"
+      },
+      {
+        "digest": "c637a461cb0892bd341d56a4ce6e669229311474de397714128abe328a76ac95",
+        "kind": "poster"
+      },
+      {
+        "digest": "7608642c4217986b44d3b0157898b71de84b93ce546db60a44e0e8c9feb45e12",
+        "kind": "master_metadata"
+      },
+      {
+        "digest": "f5db49a26299819926117f652244ccaf4426441493bd11a265ef20c4c5b89ebb",
+        "kind": "master_manifest"
+      },
+      {
+        "digest": "f245e61f8bdec0e4265ad586366741f1912520857806bf9bb6c6a2804bd62f5d",
+        "kind": "qa_report"
+      },
+      {
+        "digest": "287b499417f2957bf768ecce07024f4f3ed8ff52e4dbeade267ca437338c9ebf",
+        "kind": "scene_final:sc01"
+      },
+      {
+        "digest": "287b499417f2957bf768ecce07024f4f3ed8ff52e4dbeade267ca437338c9ebf",
+        "kind": "scene_final:sc02"
+      }
+    ],
+    "checkpoint": "series/fixture_series",
+    "checkpointDigest": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+    "completedStages": [
+      "intake",
+      "direction",
+      "references",
+      "keyframes",
+      "video",
+      "voice",
+      "lipsync",
+      "assemble",
+      "qa"
+    ],
+    "continuationStages": [
+      "deliver",
+      "publish"
+    ],
+    "engineVersion": "markevita.serial.1",
+    "errorCode": "none",
+    "exceptionClass": "none",
+    "failingStage": "deliver",
+    "ledger": {
+      "authority": 50.0,
+      "held": 0.0,
+      "reserved": 0.0,
+      "settled": 4.0
+    },
+    "paidStages": [
+      "direction",
+      "references",
+      "keyframes",
+      "video",
+      "voice",
+      "lipsync"
+    ],
+    "policyVersion": "runtime-incident.policy.1",
+    "probes": {
+      "all_scene_artifacts_present": true,
+      "artifact_absent_from_storage": false,
+      "artifact_digest_known": true,
+      "artifact_digest_matches": true,
+      "artifact_present": true,
+      "audio_measured": "measurable",
+      "audio_peak_db": -9.9,
+      "checkpoint_decodes": true,
+      "container_valid": true,
+      "cost_known": true,
+      "decode_ok": true,
+      "delivery_recorded": false,
+      "dialogue_count": 0,
+      "dimensions_expected": true,
+      "duration_expected": true,
+      "duration_measured": 16.0,
+      "lease_expired_or_free": false,
+      "lease_held": true,
+      "master_decodes": true,
+      "master_digest_recorded": true,
+      "master_exists": true,
+      "music": "off",
+      "paid_assets_immutable": true,
+      "qa_passed": true,
+      "qa_report_written": true,
+      "required_bed_present": false
+    },
+    "providerCalls": [],
+    "qaState": "passed",
+    "selectedTakes": [
+      {
+        "digest": "287b499417f2957bf768ecce07024f4f3ed8ff52e4dbeade267ca437338c9ebf",
+        "subject": "sc01:video_take",
+        "takeId": "sc01_take"
+      },
+      {
+        "digest": "287b499417f2957bf768ecce07024f4f3ed8ff52e4dbeade267ca437338c9ebf",
+        "subject": "sc02:video_take",
+        "takeId": "sc02_take"
+      }
+    ],
+    "stage": "deliver",
+    "workflowId": "fixture_series/s01e01"
+  },
+  "qa_before": {
+    "application": "markevita",
+    "artifacts": [
+      {
+        "digest": "4bb203f95874dd79b0b935152e504f1697d6540170657284035620cb97aec846",
+        "kind": "master"
+      },
+      {
+        "digest": "c637a461cb0892bd341d56a4ce6e669229311474de397714128abe328a76ac95",
+        "kind": "poster"
+      },
+      {
+        "digest": "56d0bcde321e2dde28131cadbbae5ccd833db36f39d8149934c79a37ce3c9b09",
+        "kind": "master_metadata"
+      },
+      {
+        "digest": "612362b5ee3c1339bec09557954453bc01447fe4a828fdf33347312b95aa937b",
+        "kind": "master_manifest"
+      },
+      {
+        "digest": "287b499417f2957bf768ecce07024f4f3ed8ff52e4dbeade267ca437338c9ebf",
+        "kind": "scene_final:sc01"
+      },
+      {
+        "digest": "287b499417f2957bf768ecce07024f4f3ed8ff52e4dbeade267ca437338c9ebf",
+        "kind": "scene_final:sc02"
+      }
+    ],
+    "checkpoint": "series/fixture_series",
+    "checkpointDigest": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+    "completedStages": [
+      "intake",
+      "direction",
+      "references",
+      "keyframes",
+      "video",
+      "voice",
+      "lipsync",
+      "assemble"
+    ],
+    "continuationStages": [
+      "qa",
+      "deliver",
+      "publish"
+    ],
+    "engineVersion": "markevita.serial.1",
+    "errorCode": "quality_gate_failed",
+    "exceptionClass": "none",
+    "failingStage": "qa",
+    "ledger": {
+      "authority": 50.0,
+      "held": 0.0,
+      "reserved": 0.0,
+      "settled": 4.0
+    },
+    "paidStages": [
+      "direction",
+      "references",
+      "keyframes",
+      "video",
+      "voice",
+      "lipsync"
+    ],
+    "policyVersion": "runtime-incident.policy.1",
+    "probes": {
+      "all_scene_artifacts_present": true,
+      "artifact_absent_from_storage": false,
+      "artifact_digest_known": true,
+      "artifact_digest_matches": true,
+      "artifact_present": true,
+      "audio_measured": "measurable",
+      "audio_peak_db": -13.7,
+      "checkpoint_decodes": true,
+      "container_valid": true,
+      "cost_known": true,
+      "decode_ok": true,
+      "delivery_recorded": false,
+      "dialogue_count": 0,
+      "dimensions_expected": true,
+      "duration_expected": true,
+      "duration_measured": 16.0,
+      "lease_expired_or_free": false,
+      "lease_held": true,
+      "master_decodes": true,
+      "master_digest_recorded": true,
+      "master_exists": true,
+      "music": "off",
+      "paid_assets_immutable": true,
+      "qa_passed": false,
+      "qa_report_written": false,
+      "required_bed_present": false
+    },
+    "providerCalls": [],
+    "qaState": "unmeasured",
+    "selectedTakes": [
+      {
+        "digest": "287b499417f2957bf768ecce07024f4f3ed8ff52e4dbeade267ca437338c9ebf",
+        "subject": "sc01:video_take",
+        "takeId": "sc01_take"
+      },
+      {
+        "digest": "287b499417f2957bf768ecce07024f4f3ed8ff52e4dbeade267ca437338c9ebf",
+        "subject": "sc02:video_take",
+        "takeId": "sc02_take"
+      }
+    ],
+    "stage": "qa",
+    "workflowId": "fixture_series/s01e01"
+  },
+  "unknown_paid_outcome": {
+    "application": "markevita",
+    "artifacts": [
+      {
+        "digest": "4bb203f95874dd79b0b935152e504f1697d6540170657284035620cb97aec846",
+        "kind": "master"
+      },
+      {
+        "digest": "c637a461cb0892bd341d56a4ce6e669229311474de397714128abe328a76ac95",
+        "kind": "poster"
+      },
+      {
+        "digest": "56d0bcde321e2dde28131cadbbae5ccd833db36f39d8149934c79a37ce3c9b09",
+        "kind": "master_metadata"
+      },
+      {
+        "digest": "612362b5ee3c1339bec09557954453bc01447fe4a828fdf33347312b95aa937b",
+        "kind": "master_manifest"
+      },
+      {
+        "digest": "287b499417f2957bf768ecce07024f4f3ed8ff52e4dbeade267ca437338c9ebf",
+        "kind": "scene_final:sc01"
+      },
+      {
+        "digest": "287b499417f2957bf768ecce07024f4f3ed8ff52e4dbeade267ca437338c9ebf",
+        "kind": "scene_final:sc02"
+      }
+    ],
+    "checkpoint": null,
+    "checkpointDigest": null,
+    "completedStages": [
+      "intake",
+      "direction",
+      "references",
+      "keyframes",
+      "video",
+      "voice",
+      "lipsync",
+      "assemble"
+    ],
+    "continuationStages": [
+      "qa",
+      "deliver",
+      "publish"
+    ],
+    "engineVersion": "markevita.serial.1",
+    "errorCode": "provider_outcome_unknown",
+    "exceptionClass": "none",
+    "failingStage": "video",
+    "ledger": {
+      "authority": 50.0,
+      "held": 1.75,
+      "reserved": 0.0,
+      "settled": 4.0
+    },
+    "paidStages": [
+      "direction",
+      "references",
+      "keyframes",
+      "video",
+      "voice",
+      "lipsync"
+    ],
+    "policyVersion": "runtime-incident.policy.1",
+    "probes": {
+      "all_scene_artifacts_present": true,
+      "artifact_absent_from_storage": false,
+      "artifact_digest_known": true,
+      "artifact_digest_matches": true,
+      "artifact_present": true,
+      "audio_measured": "measurable",
+      "audio_peak_db": -13.7,
+      "checkpoint_decodes": false,
+      "container_valid": true,
+      "cost_known": true,
+      "decode_ok": true,
+      "delivery_recorded": false,
+      "dialogue_count": 0,
+      "dimensions_expected": true,
+      "duration_expected": true,
+      "duration_measured": 16.0,
+      "lease_expired_or_free": true,
+      "lease_held": false,
+      "master_decodes": true,
+      "master_digest_recorded": true,
+      "master_exists": true,
+      "music": "off",
+      "paid_assets_immutable": true,
+      "qa_passed": false,
+      "qa_report_written": false,
+      "required_bed_present": false
+    },
+    "providerCalls": [
+      {
+        "provider": "fal.ai",
+        "requestId": "",
+        "state": "outcome_unknown"
+      }
+    ],
+    "qaState": "unmeasured",
+    "selectedTakes": [
+      {
+        "digest": "287b499417f2957bf768ecce07024f4f3ed8ff52e4dbeade267ca437338c9ebf",
+        "subject": "sc01:video_take",
+        "takeId": "sc01_take"
+      },
+      {
+        "digest": "287b499417f2957bf768ecce07024f4f3ed8ff52e4dbeade267ca437338c9ebf",
+        "subject": "sc02:video_take",
+        "takeId": "sc02_take"
+      }
+    ],
+    "stage": "qa",
+    "workflowId": "fixture_series/s01e01"
+  },
+  "valid_silence": {
+    "application": "markevita",
+    "artifacts": [
+      {
+        "digest": "ac2dfbe170c1cc0622895563d45e97165ddb8241e4a16bd1d2dd6cc05bc42f01",
+        "kind": "master"
+      },
+      {
+        "digest": "c637a461cb0892bd341d56a4ce6e669229311474de397714128abe328a76ac95",
+        "kind": "poster"
+      },
+      {
+        "digest": "56d0bcde321e2dde28131cadbbae5ccd833db36f39d8149934c79a37ce3c9b09",
+        "kind": "master_metadata"
+      },
+      {
+        "digest": "612362b5ee3c1339bec09557954453bc01447fe4a828fdf33347312b95aa937b",
+        "kind": "master_manifest"
+      },
+      {
+        "digest": "287b499417f2957bf768ecce07024f4f3ed8ff52e4dbeade267ca437338c9ebf",
+        "kind": "scene_final:sc01"
+      },
+      {
+        "digest": "287b499417f2957bf768ecce07024f4f3ed8ff52e4dbeade267ca437338c9ebf",
+        "kind": "scene_final:sc02"
+      }
+    ],
+    "checkpoint": null,
+    "checkpointDigest": null,
+    "completedStages": [
+      "intake",
+      "direction",
+      "references",
+      "keyframes",
+      "video",
+      "voice",
+      "lipsync",
+      "assemble"
+    ],
+    "continuationStages": [
+      "qa",
+      "deliver",
+      "publish"
+    ],
+    "engineVersion": "markevita.serial.1",
+    "errorCode": "audio_normalization_unmeasurable",
+    "exceptionClass": "none",
+    "failingStage": "assemble",
+    "ledger": {
+      "authority": 50.0,
+      "held": 0.0,
+      "reserved": 0.0,
+      "settled": 4.0
+    },
+    "paidStages": [
+      "direction",
+      "references",
+      "keyframes",
+      "video",
+      "voice",
+      "lipsync"
+    ],
+    "policyVersion": "runtime-incident.policy.1",
+    "probes": {
+      "all_scene_artifacts_present": true,
+      "artifact_absent_from_storage": false,
+      "artifact_digest_known": true,
+      "artifact_digest_matches": false,
+      "artifact_present": true,
+      "audio_measured": "silent",
+      "audio_peak_db": -91.0,
+      "checkpoint_decodes": false,
+      "container_valid": true,
+      "cost_known": true,
+      "decode_ok": true,
+      "delivery_recorded": false,
+      "dialogue_count": 0,
+      "dimensions_expected": true,
+      "duration_expected": true,
+      "duration_measured": 16.0,
+      "lease_expired_or_free": false,
+      "lease_held": true,
+      "master_decodes": true,
+      "master_digest_recorded": true,
+      "master_exists": true,
+      "music": "off",
+      "paid_assets_immutable": true,
+      "qa_passed": false,
+      "qa_report_written": false,
+      "required_bed_present": false
+    },
+    "providerCalls": [],
+    "qaState": "unmeasured",
+    "selectedTakes": [
+      {
+        "digest": "287b499417f2957bf768ecce07024f4f3ed8ff52e4dbeade267ca437338c9ebf",
+        "subject": "sc01:video_take",
+        "takeId": "sc01_take"
+      },
+      {
+        "digest": "287b499417f2957bf768ecce07024f4f3ed8ff52e4dbeade267ca437338c9ebf",
+        "subject": "sc02:video_take",
+        "takeId": "sc02_take"
+      }
+    ],
+    "stage": "qa",
+    "workflowId": "fixture_series/s01e01"
+  }
+}
