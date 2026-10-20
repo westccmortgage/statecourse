@@ -97,3 +97,10 @@ test('API refuses oversize bodies and unsupported methods without analysis',asyn
  assert.equal((await api()(request({courseId:COURSE_ID,enrollmentId:ENROLLMENT,padding:'x'.repeat(2000)}))).status,413);
  const get=new Request('https://core.invalid/v1/statecourse/observations');assert.equal((await api()(get)).status,405);
 });
+test('process-local executor seam cannot accidentally run a paid provider adapter',async()=>{
+ await assert.rejects(()=>explainSnapshot(issue(),{organizationId:ORGANIZATION,createExecutors:async resolver=>{
+  const registry=await executors()(resolver);
+  Object.defineProperty(registry.resolve('reader-family-one').executor,'providerId',{value:'openai'});
+  return registry;
+ }}),/durable_provider_runtime_required/);
+});

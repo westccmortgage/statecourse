@@ -2,8 +2,8 @@
   "openapi": "3.1.0",
   "info": {
     "title": "StateCourse Core V2 read-only observations",
-    "version": "1.0.0",
-    "description": "Prepared internal server contract. Disabled by default and not registered as a deployed route. No side-effect, signoff, progress, payment, exam, certificate or launch operations."
+    "version": "1.1.0",
+    "description": "Prepared internal server contract with optional durable Core storage and gated provider runtime. Disabled by default; no production route is installed. StateCourse source remains read-only."
   },
   "paths": {
     "/v1/statecourse/observations": {
@@ -24,6 +24,16 @@
               "type": "string"
             },
             "description": "Exact configured StateCourse server origin; no CORS allowance."
+          },
+          {
+            "in": "header",
+            "name": "Idempotency-Key",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            },
+            "description": "Mandatory when the durable result store is configured. Scoped to the authenticated actor and server-configured organization. Same key/scope returns the original stored result; a different scope conflicts. Pending/interrupted requests never automatically replay."
           }
         ],
         "requestBody": {
@@ -130,6 +140,125 @@
           },
           "429": {
             "description": "One analysis already active in this process",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "Disabled, independent executors unavailable, source/provider failure or reauthorization unavailable",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "409": {
+            "description": "Idempotency scope conflict or existing non-replayable reserved/running/interrupted run",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "error"
+                  ],
+                  "properties": {
+                    "error": {
+                      "type": "string"
+                    },
+                    "runId": {
+                      "type": "string",
+                      "format": "uuid"
+                    },
+                    "status": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/statecourse/observations/{runId}": {
+      "get": {
+        "operationId": "getStoredObservation",
+        "security": [
+          {
+            "statecourseBearer": [],
+            "staffProof": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "Origin",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Exact configured StateCourse server origin; no CORS allowance."
+          },
+          {
+            "in": "path",
+            "name": "runId",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "description": "Return the immutable stored result only to its original actor within the configured organization, after current StateCourse MFA/role/CA reauthorization. Does not recapture source data or call providers. Historical evidence is explicitly point-in-time.",
+        "responses": {
+          "200": {
+            "description": "Point-in-time observations; inspect each verification status. no_observations is not a compliance or launch approval.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Result"
+                }
+              }
+            }
+          },
+          "202": {
+            "description": "Run exists but has no completed result; no automatic retry is initiated.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RunState"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Missing or invalid bearer/proof",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Wrong origin, expired/revoked MFA/session, role or CA scope denied",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Unknown route or enrollment outside the fixed course",
             "content": {
               "application/json": {
                 "schema": {
@@ -355,7 +484,7 @@
           },
           "trace": {
             "type": "object",
-            "description": "Existing Core V2 claim/assessment/attempt contracts; see upstream/workers/core-v2/kernel/contracts.ts. Present when candidates were run. Not a durable-history identifier.",
+            "description": "Existing Core V2 claim/assessment/attempt contracts. With createProviderRuntimeFactory these records and budget reservations are persisted by the existing Core PostgreSQL repository/ledger; snapshots/results live in the separate private Core store.",
             "required": [
               "workflowState",
               "claims",
@@ -392,6 +521,15 @@
             "items": {
               "type": "string"
             }
+          },
+          "persistence": {
+            "$ref": "#/components/schemas/Persistence"
+          },
+          "events": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Event"
+            }
           }
         }
       },
@@ -404,6 +542,84 @@
         "properties": {
           "error": {
             "type": "string"
+          }
+        }
+      },
+      "Event": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "kind",
+          "recorded_at"
+        ],
+        "properties": {
+          "kind": {
+            "enum": [
+              "reserved",
+              "captured",
+              "running",
+              "completed",
+              "interrupted"
+            ]
+          },
+          "recorded_at": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      },
+      "Persistence": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "runId",
+          "resultHash",
+          "createdAt"
+        ],
+        "properties": {
+          "runId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "resultHash": {
+            "$ref": "#/components/schemas/Hash"
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      },
+      "RunState": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "contractVersion",
+          "runId",
+          "status",
+          "events"
+        ],
+        "properties": {
+          "contractVersion": {
+            "const": "statecourse.readonly.1"
+          },
+          "runId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "status": {
+            "enum": [
+              "reserved",
+              "captured",
+              "running",
+              "interrupted"
+            ]
+          },
+          "events": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Event"
+            }
           }
         }
       }

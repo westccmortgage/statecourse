@@ -1,17 +1,30 @@
 # Local verification — 2026-10-19
 
-Verified in an isolated StateCourse checkout based on `84c38a6d7cea4644cbf1cab528a75c52375d0aa7`, with Node 22.22.3, PGlite 0.3.14 and TypeScript 5.9.3. No production service, paid model, email, payment, progress update, exam or certificate operation was exercised.
+Verified in the isolated PR #26 checkout with Node 22.22.3, PGlite 0.3.14 and TypeScript 5.9.3. The source contract remains StateCourse `84c38a6d7cea4644cbf1cab528a75c52375d0aa7`; the 364-file Core copy remains `ec287c5d0d3e6dcc401026ac43691a054f0f43da`. Existing server keys were selected for future host wiring; no key was created/read into test prompts, no live provider or hosted database was contacted and no production deployment was executed.
 
 | Executed check | Observed result |
 | --- | --- |
-| `node integrations/core-v2/scripts/verify-upstream.mjs` | All 364 copied files match their locked SHA-256, source commit `ec287c5d0d3e6dcc401026ac43691a054f0f43da`. |
-| `STATECOURSE_TEST_PGLITE=/absolute/test/tool/path bash integrations/core-v2/scripts/test.sh` | 16 adapter/API/PostgreSQL integration tests passed; 0 failed, 0 skipped. All 20 listed upstream kernel suites completed with `ALL OK`. |
-| `bash integrations/core-v2/scripts/typecheck-pack.sh` with pinned `tsc` on PATH | Passed; no type errors. |
-| `bash integrations/core-v2/upstream/workers/core-v2-runner/tests/typecheck-doors.sh` with pinned `tsc` on PATH | Passed against copied function/runtime imports. |
-| TypeScript application file discovery, including a negative control with the exclusion removed | Copied Core is excluded; removing the boundary demonstrably includes it. |
-| Actual root ESLint configuration against new integration source/scripts/config | 14 files, 0 errors, 0 warnings; upstream copy ignored, new DomainPack included. |
-| `git diff --cached --check` scoped to new adapter, docs, scripts, lock and workflow | Passed. Copied upstream bytes are preserved rather than reformatted. |
+| `node integrations/core-v2/scripts/verify-upstream.mjs` | All 364 copied files match their locked SHA-256. |
+| `STATECOURSE_TEST_PGLITE=/absolute/test/tool/path bash integrations/core-v2/scripts/test.sh` | 27 adapter/API/source-SQL/storage/provider integration tests passed, 0 failed/skipped; all 20 listed upstream kernel suites completed with `ALL OK`. |
+| `bash integrations/core-v2/scripts/typecheck-pack.sh` with pinned `tsc` | Passed. |
+| `bash integrations/core-v2/upstream/workers/core-v2-runner/tests/typecheck-doors.sh` with pinned `tsc` | Copied Core function/runtime imports passed. |
+| TypeScript application discovery with a negative control | Independent Core remains excluded; removing the existing boundary exposes it. |
+| Actual root ESLint configuration against integration source/scripts | Passed with no errors/warnings; unchanged upstream copy remains excluded. |
+| Diff whitespace check scoped to new/changed integration files | Passed; upstream bytes remain unchanged. |
 
-The SQL test uses the actual StateCourse migrations and real proof/ledger functions with the external Supabase auth substrate modeled; exact exclusions are documented in README.md. A deliberately injected UPDATE was rejected by PostgreSQL's read-only transaction guard, and the observed enrollment rows were unchanged. The end-to-end local chain returned a verified observation about a revoked access grant with exact record/field anchors and a supporting independent critic assessment. Silence, invented readings and aliased reader executors failed closed.
+## Executed behavior
 
-Not verified: live StateCourse migration state, production SELECT grants/RLS or a dedicated reader principal, actual Supabase token/session/MFA provider behavior, native PostgreSQL pool/TLS/concurrency, real model quality/cost/provider configuration, durable snapshot/restart storage, rendered Admin UI or full StateCourse application builds. The integration is inactive and adds no application/UI/routing changes; its narrow TypeScript/ESLint exclusions isolate the separate runtime; activation requirements are in CONNECTING.md. These limitations do not imply approval to connect or deploy.
+- Actual StateCourse migration SQL and existing exact-session MFA/ledger functions are exercised locally. Wrong actor/session/jurisdiction, revoked/expired/stale proof, missing verified factor/session and reviewer elevation are denied. A deliberate UPDATE inside the source reader's transaction is rejected by PostgreSQL and observed enrollment rows remain unchanged.
+- A separate Core PGlite database applies the complete copied original Core migration history and new storage migration. The API then runs from **actual StateCourse SQL/MFA** through a durable snapshot, actual Core SQL orchestration, actual provider protocols with local HTTP answers, atomic budget reservations, independent critic assessment and immutable saved explanation/anchors/trace. Revoking the source proof afterwards denies GET of the saved result. Passing the source connection accidentally as the Core writer is refused, with no additional provider call or enrollment change.
+- A file-backed database is actually closed and reopened. A fresh store/API instance retrieves the identical result, evidence, digest and lifecycle. Repeating the same key does not recapture source data or call providers; a changed scope conflicts. Cross-actor/organization reads are denied. Interrupted work stays non-replayable.
+- Artifact/history UPDATE/DELETE, run-identity changes and illegal transitions are rejected. Unscoped restricted-role reads return no rows. Both migration and connection preflights refuse the StateCourse source database.
+- The exact provider attempt has a committed durable reservation before its HTTP transport is invoked. Reservations settle from simulated provider usage; insufficient budget sends nothing. Missing actual environment gate/keys/prices or aliased providers fail closed. Unknown submissions retain holds and send once only. The process-local executor seam refuses paid-provider executors.
+- Two explicitly distinct runs can analyze byte-identical captured material without source-id collisions. Whole SQL transactions serialize across scheduler lanes; a failed transaction rolls back rather than leaking writes.
+
+## Scope of evidence and remaining deployment verification
+
+All HTTP answers and credentials used by the provider tests are synthetic. Source tests use real StateCourse 001–024, 027 and 028 migrations with documented 020 rollback/025/029 exclusions. External Supabase auth/storage substrate is modeled. PGlite provides UUID generation, and the original Core pgcrypto text SHA-256 call is modeled with built-in SHA-256; native cryptography/extension installation is not tested.
+
+Not verified: live StateCourse migration state or complete source SELECT grants/RLS; real Supabase token validation/provider MFA behavior; hosted Core installation, organization and worker grants/advisors; native PostgreSQL pool/TLS/concurrent-process/crash behavior; live model availability, quality, actual pricing or account/key validity; global rate/spending limits; retention/backup operations; rendered Admin UI or full StateCourse application builds. The disabled host/server connection and eventual schema installation require the independent checks/approval described in CONNECTING.md and STORAGE.md.
+
+Records and completed results are durable in the prepared code. Automatic background resume/reconciliation is not installed. A crash/unknown submission cannot be safely resolved by assuming it was not charged, and the adapter does not do so. This PR changes no course approval, credit, signoff, payment, progress, exam, certificate or Launch Control state.

@@ -1,72 +1,89 @@
-# Connecting the prepared read-only adapter
+# Connecting the prepared read-only integration
 
-## Current integration boundary
+The integration remains a server library, disabled by default and absent from deployed StateCourse routes. No working StateCourse schema, application/Coach code, provider account, secret, payment, progress, exam, certificate or production deployment is changed by this PR. Original Core code/services remain intact.
 
-The adapter is prepared as a server library, not enabled in the StateCourse application. Implementation stays in `integrations/core-v2/` plus its isolated test workflow. Two narrow root TypeScript/ESLint exclusions keep the copied runtime out of the unrelated application checks; no application code is changed, so the Lesson Coach and StateCourse application work can continue independently. The original Measured Decision repository and its deployed services are not used or modified by this change.
+## Server assembly
 
-The first slice is synchronous and process-local. Snapshot bytes remain immutable for the analysis and the evidence/trace is returned inline. A `workflowId` in that response is not a durable job, a resumable task or an Admin Console history record. An interrupted request must be rerun against a new snapshot. Do not wire the copied runner to this API and claim restart recovery: the adapter has not installed durable snapshot material or start/continuation persistence.
-
-## Host assembly
-
-A later, separately approved host change imports `createReadOnlyApi` from `statecourse/api.mjs` and supplies these server-owned capabilities:
+Use two independently configured pools: an existing authorized **StateCourse read** source and an isolated **Core write** backend. Each lease must be exclusive, TLS-verified, and expose `query(sql, parameters): Promise<{rows, rowCount?}>` plus `release()`. Source BIGINT values must be preserved as decimal strings. Never use the copied local trust-only PostgreSQL wire transport for a hosted connection.
 
 ```js
-import { createReadOnlyApi } from './integrations/core-v2/statecourse/api.mjs';
-import { StateCourseReader } from './integrations/core-v2/statecourse/adapter.mjs';
-import { createSupabaseVerifier } from './integrations/core-v2/statecourse/auth.mjs';
+import {createReadOnlyApi} from './integrations/core-v2/statecourse/api.mjs';
+import {StateCourseReader} from './integrations/core-v2/statecourse/adapter.mjs';
+import {createSupabaseVerifier} from './integrations/core-v2/statecourse/auth.mjs';
+import {PostgresResultStore} from './integrations/core-v2/statecourse/store.mjs';
+import {createProviderRuntimeFactory} from './integrations/core-v2/statecourse/providers.mjs';
 
+const store = new PostgresResultStore({
+  connect: leaseCoreWriteConnection,
+  expectedDatabaseName: configuredCoreDatabaseName,
+});
+const createRuntime = createProviderRuntimeFactory({
+  config: approvedCoreRuntimeConfig,
+  familyProviders: {
+    'reader-family-one': existingCoreRegistry.routing['reader-family-one'],
+    'reader-family-two': existingCoreRegistry.routing['reader-family-two'],
+    'critic-family-one': existingCoreRegistry.routing['critic-family-one'],
+  },
+  connectCore: leaseCoreWriteConnection,
+  expectedDatabaseName: configuredCoreDatabaseName,
+  environment: process.env,
+  networkEnabled: false,
+  maximumAttempts: 128,
+  maximumConcurrentAttempts: 8,
+  deadlineMs: 120000,
+});
 const handler = createReadOnlyApi({
-  enabled: false, // turn on only after the access, provider and runtime gates below pass
+  enabled: false,
   allowedOrigin: configuredStateCourseOrigin,
   organizationId: configuredCoreOrganizationId,
-  reader: new StateCourseReader({ connect: leaseExclusiveStateCourseReadConnection }),
+  reader: new StateCourseReader({connect: leaseStateCourseReadConnection}),
   verifyAccessToken: createSupabaseVerifier({
     url: configuredStateCourseAuthOrigin,
     publishableKey: configuredPublicAuthKey,
   }),
-  createExecutors: resolver => buildApprovedCoreExecutorsWithMaterialResolver(resolver),
-  routing: approvedCoreRouting,
+  store,
+  createRuntime,
 });
 ```
 
-The capitalized/configured names represent required host capabilities, not existing deployed configuration or supplied secrets. `connect()` must lease a separate TLS-verified PostgreSQL connection and return `{ query(text, parameters): Promise<{rows}>, release() }`. It must preserve BIGINT as decimal strings and dates as ISO values. The adapter owns BEGIN/COMMIT/ROLLBACK; never share that connection concurrently or supply a connection already in a transaction. The copied trust-only local PostgreSQL wire client is for the original local harness and is not a production StateCourse connector. No new database driver is introduced here.
+Names in this assembly example are explicit host requirements, not claims that a pool, organization, model, key or deployment has already been configured. There are no default live models, production rates, authorities or endpoints in the new adapter. Retain the false gates in ordinary local/CI runs. Do not supply StateCourse's source pool to either writer argument.
 
-`createSupabaseVerifier` sends only GET `/auth/v1/user` to the fixed configured HTTPS auth origin, then consumes the verified token's user/session/AAL/expiry. Provider or database errors return a generic failure. Neither identity claims from a request body, `user_metadata`, email patterns nor a shared admin credential grants access.
+The existing operator declaration can be read using `upstream/workers/core-v2-canary/operator-registry.ts::loadOperatorRegistry`. It validates declared models/capabilities/pricing and returns a registry whose paid authorization is **closed**. The host must separately supply an explicitly approved workflow authorization in `approvedCoreRuntimeConfig`, preserving the existing Core gates/allowlists/currency/ceiling. Never turn a declaration or a browser role into spending approval.
 
-The future StateCourse server bridge must keep using its existing staff authentication/session flow. It forwards the original bearer and the existing HttpOnly staff proof as `x-statecourse-staff-proof`, with the fixed `Origin`, to the internal handler. Never expose the proof to browser JavaScript or log it. The handler performs a read-only independent check with `statecourse_staff_private.proof_active` and the current staff ledger. It deliberately does not call the mutating `statecourse_staff_security('check')` RPC. It neither refreshes last-seen nor consumes/mints an action proof. Existing session/MFA flows remain responsible for keeping the proof fresh; expired/stale proofs fail closed.
+Use existing server key variables named by that declaration. No new key or env-file write is needed. The factory additionally checks the actual `CORE_V2_ALLOW_PAID_CALLS` server environment gate and explicit `networkEnabled`; it refuses missing credentials, pricing or independent providers before a Core connection/provider is used. Two distinct readers and a third independent critic must be configured. Reusing one provider under multiple families is refused. The critic must meet its unchanged Core role capability requirements; the adapter does not infer them from a model name. If the existing deployment has only two usable providers, keep it disabled and resolve that configuration separately rather than inventing a third capability/key.
 
-Do not add browser CORS access. Before exposing a route, enforce the existing host request limiter across replicas and a bounded server request duration/cancellation policy. The library provides a 1024-byte body bound, a single-flight guard per process, SQL statement timeouts, 1000 rows per query and 32 observations; it does not replace a distributed limiter or host timeout. The API contract is in `statecourse/openapi.json`; no request can choose SQL, roles, an organization or another course.
+The factory reuses the existing prompt compiler, material verification, provider protocols, SSRF/TLS-protected HTTPS transport, PostgreSQL orchestration repository and atomic metered budget ledger. Known paid provider executors are refused by the process-local executor seam. Every actual model attempt requires a durable reservation in the same transaction as its submission. Single-send transport policy, configured attempt/concurrency/deadline/cost limits and unknown-outcome holds are preserved. Real keys, rates, account access and paid calls are not tested or enabled here.
 
-Use the existing Core provider adapters, registry, material verifier, budget controls and approved provider configuration; do not build a second AI stack or use Lesson Coach credentials by assumption. A registry needs two distinct approved reader domains and a critic domain distinct from the reader domains. Aliases of one executor are insufficient. Material resolves solely from the captured snapshot, with hash/source/segment checks. The API supplies no arbiter route. Missing providers or independence configuration fail closed. Provider calls, credentials and costs have not been activated or tested by this PR.
+## API and idempotency
 
-## Migration dependencies and activation gates
+The [OpenAPI 1.1 contract](statecourse/openapi.json) adds UUID `Idempotency-Key` for durable POST and `GET /v1/statecourse/observations/{runId}` for saved results/status. The body still accepts only course/enrollment scope, not SQL, actor, organization, provider, model or budget.
 
-| Area | Existing dependency | This PR / connection requirement |
-| --- | --- | --- |
-| StateCourse enrollment/payment | 001–014, especially package allocations 011 and course versions 003/004 | Queries existing rows only; no new StateCourse migration. |
-| Staff authority | 019 plus scope-key repair 020 and exact-session MFA 028 | Read existing proof/current binding state; owner/administrator CA scope only. 029 belongs to the existing owner OAuth/MCP flow and is not invoked. |
-| Offering/training/content/tasks | 021, 022, 023 | Existing origin, release pins, hash reviews, tasks and events are reused. |
-| Regulatory/reviewer evidence | 027 after the existing console prerequisites | Existing event-order history is read. No findings, signoffs or legal approval are generated. |
-| Copied Core engine SQL | Upstream 058 onward depends on upstream earlier org/project/evidence schema; runner/source/continuation changes continue through 076, with later voice migrations | Historical SQL is preserved under `upstream/supabase/`. None is applied, copied into StateCourse `database/` or root `supabase/migrations/`, or required for this process-local adapter. |
-| Dedicated source reader privileges | A production-approved read principal or a separately approved read gateway/replica | Not provisioned here. Validate SELECT access/RLS on every query in `statecourse/adapter.mjs`, private proof schema/function access and the security-invoker staff view's underlying ledger. Do not use a browser key or assume table grants bypass RLS. |
-| Future durable Core storage | An isolated Core database/schema plan and immutable snapshot-material store tied to the existing atomic start + continuation mechanism | Requires a separate reviewed migration/dependency plan. Do not install historical Core SQL in the StateCourse working database or reuse the original Core production database. |
+POST commits an immutable snapshot before provider execution. Completed requests save the explanation, exact field/record anchors and Core trace atomically. Repeating a completed key returns that historical result without re-reading business data or invoking providers. The same key with different scope conflicts; pending/interrupted keys are never automatically replayed. A new key is a deliberate new analysis and may incur another approved cost. GET returns only the original actor's result in the configured organization after current StateCourse reauthorization. It is not a source refresh or a human signoff.
 
-A dedicated login must have no DML, DDL or role-management authority. Audit inherited `PUBLIC` EXECUTE rights on existing security-definer mutators: granting SELECT does not by itself make a login read-only. RLS policies and schema/function grants must be designed and tested for that principal before activation. The per-transaction `READ ONLY` guard is tested, but it is not proof that a proposed production principal cannot start a different transaction. Do not work around denied reads by supplying the StateCourse service-role key. Any required production grants, policies or source gateway are a separate approval and are not performed here.
+The store records incomplete work as lifecycle status; the existing Core tables retain durable orchestration and budget details in provider mode. Background restart/resubmission is not installed. The generic copied runner/watchdog has not been registered for this StateCourse DomainPack/material store and must not be enabled for it by assumption. Unknown attempts or a crash after completion but before result insertion require reconciliation of persisted Core records, not a paid rerun. See [STORAGE.md](STORAGE.md).
 
-The native StateCourse source migrations have two 005 files and both a 020 repair and a 020 rollback; preserve their existing intended order and never run a glob that includes the rollback. The integration's local test names its exclusions explicitly. Do not renumber either project's migration history to resolve the two unrelated number sequences.
+The host still needs an appropriate bounded request duration and cross-replica request/rate controls. The API has a 1024-byte body limit, a per-process single-flight guard for POST, source statement/row limits, 32 observations, 16 MiB artifacts and database idempotency across replicas. Those do not replace a global rate/spending policy. The Core SQL adapter serializes entire transactions on its leased connection; do not concurrently share raw connections with code outside the adapter.
 
-Before activation, verify the actual StateCourse schema, TLS/pool behavior, grants/RLS, token validation, revoked-session behavior, approved provider material/budget configuration and host timeout under an authorized environment. A repository SHA is not evidence of the live migration state. Local tests do not establish those live facts.
+## Existing StateCourse authentication boundary
 
-## Existing StateCourse workflows
+The future server bridge retains the existing staff/session/MFA flow and forwards the original bearer plus existing HttpOnly staff proof as `x-statecourse-staff-proof`, with the fixed configured `Origin`. Never expose the proof to browser JavaScript, local storage or logs. No CORS allowance is added.
 
-Admin Console remains the home for operational tasks/history and human review/signoff. Display the returned observation and its snapshot/record anchors beside existing tasks/findings if the host UI is added later. A machine `accepted` observation is not a human signoff. This PR does not append a console event or close an existing task.
+`createSupabaseVerifier` uses only GET `/auth/v1/user` at the fixed configured HTTPS auth origin, then consumes verified user/session/AAL/expiry claims. Authorization independently reads the current StateCourse ledger, exact-session proof and CA role using existing `statecourse_staff_private.proof_active`. It does not call mutating `statecourse_staff_security('check')`, mint/consume proofs, refresh last-seen or create audit rows. Existing authenticated flows remain responsible for proof freshness; stale/revoked/expired sessions deny both analysis and saved-result access.
 
-Published content is addressed by the enrollment's `console_content_release_id`, stored content hash and `course_version`; never move an enrollment to the newest version during diagnosis. The adapter does not reconstruct the original JSON serialization from JSONB to claim the release hash was recalculated. A latest matching review status is a separate recorded fact.
+Neither user metadata, email conventions, shared bearer strings nor client-supplied roles grant access. Current authority is checked before any Core cache read/write and again before delivery, including cached results. SQL/driver/provider exceptions return generic API errors; keys, SQL connection strings and request authorization headers are not returned or logged.
 
-Repository Launch Control boards and the existing deployment/launch controls remain authoritative for readiness reporting. They are not imported as proof of live approval. This adapter reports existing evidence statuses and inconsistencies only; it changes no readiness flag or launch board. No readiness claim is made by this change.
+## Migration and activation requirements
 
-## PR/deployment handling
+[STORAGE.md](STORAGE.md) provides the ordered, unapplied Core migration plan, dedicated role/RLS scope and guards. The full existing Core prerequisites are required for real provider execution; do not copy them into StateCourse `database/` or root `supabase/migrations/`. The new migration is isolated under `storage/supabase/migrations/`; it was exercised only against local test databases.
 
-No production deployment or merge is included. The branch commit and PR title use `[skip netlify]` to skip branch builds and Deploy Previews per [Netlify deployment documentation](https://docs.netlify.com/deploy/manage-deploys/manage-deploys-overview/). The added GitHub workflow only runs local tests and type checks; it has read-only repository permissions and no deployment steps or production secrets. Existing site build/routing/deployment files and root dependencies are unchanged. Root TypeScript excludes the independently checked integration, and root ESLint excludes its byte-preserved upstream copy. Before a future merge, confirm the PR is still additive and that the concurrently developed Lesson Coach/application changes do not change the source contract.
+StateCourse source dependencies remain its existing 001–014, 019/020 authority, 021–023 origin/content/tasks, 027 evidence and 028 MFA. The source read principal/gateway must already have appropriate complete SELECT access and private proof-function/schema permissions. Existing grants/RLS and the security-invoker staff view's ledger prerequisites need independent verification. This PR does not alter any source grants, policies, schema or accounts and does not substitute a service-role key when reads are denied. If the current source cannot be safely read under these constraints, activation remains blocked until an independently authorized source-access solution exists.
 
-Rollback of this inactive integration is simply to stop importing/using the library if a host later connected it. Database or service rollback is not required for this PR because it applies no schema/configuration changes. Do not run the copied historical rollback scripts as a removal procedure.
+Before any future enablement, confirm the actual isolated Core target, migration/organization state, worker role membership, TLS/pool semantics, scoped storage access, StateCourse source permissions and current MFA revocation behavior, provider model/capability/pricing declarations, credentials, cost approval, request limits and runtime timing. Hosted Supabase advisors/native PostgreSQL behavior, real provider quality/availability and production account bindings remain unverified. Nothing here authorizes provisioning, live schema changes, paid calls or deployment.
+
+## Existing workflows and PR handling
+
+Admin Console remains the home for StateCourse operational tasks/history, review and human signoff. Display saved observations/anchors beside those records if a UI bridge is added later; the Core persistence lifecycle does not create Console tasks or close findings. Historical enrollment versions/releases remain pinned, and a stored published hash is not claimed to have been recomputed from JSONB.
+
+Launch Control and regulatory/commerce readiness stay in their existing workflows. Neither a Core `completed` run nor `verified_observations` approves a course, awards credit, authorizes an exam, issues a certificate or changes a launch board.
+
+No merge/deployment is included. Branch commits and the PR title retain `[skip netlify]` per [Netlify documentation](https://docs.netlify.com/deploy/manage-deploys/manage-deploys-overview/). The added CI workflow has read-only repository permissions and only executes local tests/type checks, without deployment secrets or hosted databases. Site build/routing/deployment files and dependencies remain unchanged. Do not run copied historical rollback scripts to remove this library or its records; any future data retention/removal procedure requires its own review.
