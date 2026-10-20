@@ -14,5 +14,7 @@ export async function loadCoachEnvironment({env,store}) {
      Object.entries(stored).some(([key,value]) => !coachSettingKeys.includes(key) || typeof value !== 'string')) {
   throw Error('coach_unavailable');
  }
- return {...env, ...stored};
+ // Runtime credentials may be lazy/non-enumerable on the modern platform.
+ // Keep the approved settings overlay separate and read deployment keys on demand.
+ return new Proxy({...stored},{get:(settings,key)=>Object.hasOwn(settings,key)?settings[key]:env[key]});
 }

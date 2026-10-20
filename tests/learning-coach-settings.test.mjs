@@ -40,3 +40,14 @@ test('public configuration route exposes only provider/enabled when settings inc
  globalThis.fetch=async()=>Response.json({}, {status:403});
  const failed=await handler({httpMethod:'GET'});assert.equal(failed.statusCode,503);assert.deepEqual(JSON.parse(failed.body),{error:'coach_unavailable'});
 });
+
+test('lazy runtime credentials survive configuration loading without enumeration or copying',async()=>{
+ let enumerated=0;const credentials={OPENAI_API_KEY:'lazy-synthetic-openai',GEMINI_API_KEY:'lazy-synthetic-gemini'};
+ const env=new Proxy({}, {get:(_target,key)=>credentials[key],ownKeys:()=>{enumerated++;return [];}});
+ const effective=await loadCoachEnvironment({env,store:async()=>configuration});
+ assert.equal(effective.OPENAI_API_KEY,credentials.OPENAI_API_KEY);
+ assert.equal(effective.GEMINI_API_KEY,credentials.GEMINI_API_KEY);
+ assert.deepEqual(settings(effective),{reserveMicros:7680,budgetMicros:1000000});
+ assert.equal(enumerated,0,'Configuration loading must read runtime keys lazily.');
+ assert.ok(!Object.keys(effective).includes('OPENAI_API_KEY'));
+});
