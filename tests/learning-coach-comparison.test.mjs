@@ -17,7 +17,7 @@ test('production Gemini uses the model-compatible thinking control while retaini
    const body=JSON.parse(options.body);assert.deepEqual(body.generationConfig.thinkingConfig,thinkingConfig);
    assert.equal(body.generationConfig.maxOutputTokens,800);assert.equal(body.generationConfig.responseJsonSchema.additionalProperties,false);
    assert.equal(options.headers['x-goog-api-key'],'synthetic');assert.doesNotMatch(options.body,/synthetic/);
-   return {ok:true,json:async()=>({candidates:[{finishReason:'STOP',content:{parts:[{text:JSON.stringify({status:answer.status,refusal:'',nextStep:answer.nextStep,evidence:[{text:answer.explanation,sourceId:'property-lesson',quote:answer.explanation}]})}]}}]})};
+   return {ok:true,json:async()=>({candidates:[{finishReason:'STOP',content:{parts:[{text:JSON.stringify({status:answer.status,refusal:'',nextStep:answer.nextStep,evidence:[{text:answer.explanation,sourceId:'property-lesson',passageId:'p0'}]})}]}}]})};
   }});assert.deepEqual(result.answer,answer);
  }
 });
@@ -26,7 +26,7 @@ test('Gemini sends key only in header, bounded generation and shared instruction
   assert.equal(url,'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent');
   assert.equal(options.headers['x-goog-api-key'],'synthetic');assert.ok(options.signal);
   const b=JSON.parse(options.body);assert.equal(b.systemInstruction.parts[0].text,instructions);assert.equal(b.generationConfig.maxOutputTokens,800);assert.equal(b.generationConfig.thinkingConfig.thinkingBudget,0);
-  return {ok:true,json:async()=>({candidates:[{finishReason:'STOP',content:{parts:[{text:JSON.stringify({status:answer.status,refusal:'',nextStep:answer.nextStep,evidence:[{text:answer.explanation,sourceId:'property-lesson',quote:answer.explanation}]})}]}}],usageMetadata:{promptTokenCount:100,candidatesTokenCount:30}})};
+  return {ok:true,json:async()=>({candidates:[{finishReason:'STOP',content:{parts:[{text:JSON.stringify({status:answer.status,refusal:'',nextStep:answer.nextStep,evidence:[{text:answer.explanation,sourceId:'property-lesson',passageId:'p0'}]})}]}}],usageMetadata:{promptTokenCount:100,candidatesTokenCount:30}})};
  }});assert.deepEqual(result,{answer,usage:{inputTokens:100,outputTokens:30}});
 });
 test('Gemini rejects truncation, blocked requests, malformed JSON and unsafe model paths',async()=>{
