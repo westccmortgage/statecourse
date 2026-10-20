@@ -32,7 +32,7 @@ test('private mortgage coach uses authenticated current source, durable admissio
    assert.equal(input.context.course,identity.id);assert.equal(input.context.lesson,unitId);assert.equal(input.practice,null);
    assert.ok(input.sources.length<=5);assert.doesNotMatch(payload.input,/correctChoice|N26-FIN-|"answers"|studentId|training@example|synthetic-service/);
    afterModel?.();
-   return json({status:'completed',output:[{type:'message',content:[{type:'output_text',text:JSON.stringify({status:'answer',explanation:'Synthetic explanation grounded in this lesson.',nextStep:'Review the source.',sourceIds:[input.sources[0].id]})}]}],usage:{input_tokens:100,output_tokens:40}});
+   return json({status:'completed',output:[{type:'message',content:[{type:'output_text',text:JSON.stringify({status:'answer',explanation:'Synthetic explanation grounded in this lesson.',nextStep:'Review the source.',sourceIds:[input.sources[0].id],evidence:[{text:'Synthetic explanation grounded in this lesson.',sourceId:input.sources[0].id,quote:input.sources[0].excerpt.slice(0,100)}]})}]}],usage:{input_tokens:100,output_tokens:40}});
   }
   assert.equal(target.origin,'https://coach-db.invalid');
   if(target.pathname==='/auth/v1/user')return options.headers.authorization==='Bearer rejected'?json({},401):json({id:actor,email:'training@example.test',user_metadata:{}});

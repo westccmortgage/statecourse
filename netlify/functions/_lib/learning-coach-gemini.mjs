@@ -1,5 +1,5 @@
 // Server-only Gemini adapter; uses the same bounded response contract as OpenAI.
-import {schema, instructions} from './learning-coach-provider.mjs';
+import {schema, instructions, groundedAnswer} from './learning-coach-provider.mjs';
 export async function requestGemini({apiKey,model,input,fetcher=fetch}){
  if(!/^[a-zA-Z0-9._-]+$/.test(model))throw Error('invalid_model');
  const response=await fetcher(`https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`,{
@@ -12,5 +12,5 @@ export async function requestGemini({apiKey,model,input,fetcher=fetch}){
  const result=await response.json(),candidate=result.candidates?.[0];
  if(candidate?.finishReason!=='STOP')throw Error('provider_incomplete');
  const text=(candidate.content?.parts??[]).filter(p=>!p.thought&&typeof p.text==='string').map(p=>p.text).join('');
- return {answer:JSON.parse(text),usage:{inputTokens:result.usageMetadata?.promptTokenCount??null,outputTokens:result.usageMetadata?.candidatesTokenCount??null}};
+ return {answer:groundedAnswer(JSON.parse(text),input),usage:{inputTokens:result.usageMetadata?.promptTokenCount??null,outputTokens:result.usageMetadata?.candidatesTokenCount??null}};
 }
