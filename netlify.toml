@@ -28,6 +28,9 @@
     "nmls/evidence/2026-09-13/acquisitions/2026-09-13T09-49-48-993Z-5f1d5dc2-b86c-4b0b-9b61-67e7a849776b/*.html",
   ]
 
+[functions."core-readonly"]
+  node_bundler = "esbuild"
+
 [[headers]]
   for = "/*"
   [headers.values]

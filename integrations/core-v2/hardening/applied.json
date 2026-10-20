@@ -1,0 +1,36 @@
+{
+  "localDate": "2026-10-19",
+  "timezone": "America/Los_Angeles",
+  "projectId": "hkzhburprkwtnoeqbinh",
+  "authorization": "User authorized security fixes and deployment",
+  "migration": {
+    "version": "20261020035251",
+    "name": "statecourse_backend_rpc_hardening",
+    "sha256": "88d6647cec5dc84edd6e2982d8c88e14849e57089ca6aaeb169b9629ca9bebdf",
+    "success": true
+  },
+  "liveReadBack": {
+    "securityDefinerFunctions": 129,
+    "anonExecutableDefiners": 0,
+    "authenticatedExecutableDefiners": 0,
+    "serviceRoleExecutableDefiners": 127,
+    "functionsWithoutFixedSearchPath": 0,
+    "resultHistoryIndexPresent": true,
+    "organizations": 0,
+    "workflows": 0,
+    "resultRuns": 0,
+    "runnerSettings": 0,
+    "sourceEnrollmentsAbsent": true
+  },
+  "securityAdvisors": {
+    "errors": 0,
+    "warnings": 0,
+    "info": [{"name":"rls_enabled_no_policy","count":21,"remediation":"https://supabase.com/docs/guides/database/database-linter?lint=0008_rls_enabled_no_policy"}]
+  },
+  "limitations": [
+    "No StateCourse source database or original Core change",
+    "No hosted business workflow execution or provider calls",
+    "Hosted source credentials, RLS completeness and Core organization bootstrap remain unverified",
+    "Performance advisors are not claimed resolved"
+  ]
+}

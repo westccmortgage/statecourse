@@ -55,3 +55,7 @@ The common test command in [TEST_RESULTS.md](../TEST_RESULTS.md) now also instal
 ## Read-only catalog preflight
 
 `npm run check:connections --prefix integrations/core-v2/server` refuses unless the operator explicitly sets `CORE_V2_PREFLIGHT_ALLOW_NETWORK=true`, supplies both approved database targets and organization, and keeps both provider/paid gates off. It uses read-only transactions and EXPLAIN without ANALYZE, emits sanitized named checks and never migrates or grants. A passing catalog report is not an RLS completeness, session authorization or provider-worker permission test; it always reports activation unverified. See [ACTIVATION_REVIEW.md](../ACTIVATION_REVIEW.md) for observed inventory, source-ledger RLS blockers and the proposed separate Supabase target. Do not run it on hosted targets before access/binding approval.
+
+## Existing Netlify hosting
+
+The additive hosting adapter and its current activation limits are documented in [NETLIFY.md](NETLIFY.md). It reuses StateCourse's existing host and cookies; no separate Render server is required.

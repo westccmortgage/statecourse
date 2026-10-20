@@ -32,7 +32,11 @@ No organization/member/user/login, worker credential, source DB connection, envi
 
 Read-back verifies hosted installation, catalogs and permissions. It does not establish the full hosted worker/RLS execution path: no fixture records were inserted to test hosted business operations. The earlier disposable native PostgreSQL tests remain the execution evidence for immutability, scope and server-restart persistence.
 
-## Advisors: activation remains blocked
+## Original installation advisor snapshot
+
+**Subsequent update:** the separately authorized [hardening migration](../hardening/README.md) is now applied and its live security advisor report has zero WARN/ERROR findings. The findings below preserve the original installation snapshot; they are not the current security status. Runtime/source access and provider activation remain unverified.
+
+### Findings before hardening
 
 Both security and performance advisors completed. Their output is a review signal, not proof that every flagged object is exploitable. No extra remediation DDL was applied beyond the approved hash.
 
