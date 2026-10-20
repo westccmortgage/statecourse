@@ -1,5 +1,8 @@
 # PR #26 activation review — 2026-10-19
 
+**Current hosting decision (2026-10-19, America/Los_Angeles):** the owner selected the existing StateCourse Netlify host. No Render server was created. The [Netlify adapter](server/NETLIFY.md) keeps analysis and paid calls OFF. The separately authorized [Core hardening](hardening/README.md) is applied with zero security WARN/ERROR findings. The earlier review below records the original proposal; its dedicated-host/security-review items are superseded by these updates. Source access, hosted Core worker/bootstrap and durable background execution remain unresolved.
+
+
 Reviewed PR head `b985232cf87ac0e2a20381fdfba362f6fb89db8c` and current StateCourse main `bd8319ec758b0f6e08aaf178704064984954d833`. This is a code/readiness review, not an independent human approval or authorization to migrate/deploy/spend. The subsequent narrowly approved empty-project creation is recorded below.
 
 ## Source compatibility

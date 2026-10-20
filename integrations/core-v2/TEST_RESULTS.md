@@ -1,5 +1,14 @@
 # Local verification — 2026-10-19
 
+## Existing Netlify adapter verification — 2026-10-19 (America/Los_Angeles)
+
+44 Core integration tests and all 20 original Core suites passed. Four new Netlify cases cover non-sensitive health, no secret/network/SQL access while closed, forced provider flags OFF, application reuse and redacted initialization errors. The final packaged handler executed outside the repository with health 200, analysis POST 503 and disabled saved-run GET 503. Correct root pg declaration is required for Netlify’s modern function tracer; the exact same 8.23.1 driver version is retained. Root lock consistency passed `npm ci --dry-run --ignore-scripts --no-audit --no-fund`.
+
+The current StateCourse production site built successfully with privacy gates. Selected existing Coach/admin/NMLS tests: 73 passed, 0 failed, 2 existing conditional tests skipped (DOM module and separate Coach SQL fixture environment absent). These skips are not evidence for Coach DOM/SQL behavior. The latest published Coach provider changes are merged unchanged. Main public/Coach/student static assets matched production before publication; Admin Console retained its expected unauthenticated sign-in redirect. No authenticated production workflow or paid provider execution was exercised.
+
+CI [39367760189](https://github.com/westccmortgage/statecourse/actions/runs/39367760189) passed including native PostgreSQL hardening, actual Core repository/scheduler execution and restart persistence. Later merges only preserve subsequent deployed Lesson Coach changes; the selected existing tests were rerun for those changes. Hosted deployment did not pass verification and was rolled back. [Deployment evidence](server/DEPLOYMENT.md) records both failures and the confirmed restored production state. CI also passed for exact source revision bbd1bc5 in run [39367958506](https://github.com/westccmortgage/statecourse/actions/runs/39367958506).
+
+
 Verified in the isolated PR #26 checkout with Node 22.22.3, PGlite 0.3.14 and TypeScript 5.9.3. The source contract remains StateCourse `84c38a6d7cea4644cbf1cab528a75c52375d0aa7`; the 364-file Core copy remains `ec287c5d0d3e6dcc401026ac43691a054f0f43da`. Existing server keys were selected for future host wiring; no key was created/read into test prompts, no live provider or hosted database was contacted and no production deployment was executed.
 
 | Executed check | Observed result |
