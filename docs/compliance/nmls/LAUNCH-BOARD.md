@@ -1,5 +1,11 @@
 # NMLS Launch Board
 
+## Owner update — 2026-10-19 (supersedes initial-access/submission assumptions below)
+
+The owner confirms the **NMLS package has been submitted and is under review**, separately from California DRE. Record **OWNER-REPORTED SUBMITTED / UNDER REVIEW**. Exact provider/course application scope, date, IDs and receipt were not supplied. Do not continue to describe initial account access as the only progress, and do not infer provider or course approval. Remaining acceptance gates require current evidence; older statements below are historical, not live observations.
+
+See the [current portfolio audit](../../audits/STATECOURSE-AUDIT-2026-10-19.md). No NMLS runtime, migration, credit, course version, payment or approval flag changed.
+
 Last verified: 2026-09-19. Launch target: October 2026. Baseline: [CURRENT-STATE.md](CURRENT-STATE.md).
 
 The initial NMLS account/access request was submitted approximately 24 hours before this board was created. NMLS advised that temporary login/password information may take approximately 48 hours. Account access is therefore **WAITING EXTERNAL**, not missing. This request is **not** provider approval and **not** course approval.

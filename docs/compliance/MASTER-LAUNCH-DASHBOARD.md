@@ -1,5 +1,11 @@
 # StateCourse Master Launch Dashboard
 
+## Current owner-reported update — 2026-10-19
+
+California DRE and the separate NMLS package are **submitted / under review**, as confirmed by the owner in this task. This supersedes historical "not submitted" and "waiting for initial access" assumptions below; no regulator approval was verified. Florida is waiting on the owner's personal broker application, distinct from school/course authorization. Dates/IDs/receipts remain to be recorded.
+
+[Portfolio audit and 51-jurisdiction inventory](../audits/STATECOURSE-AUDIT-2026-10-19.md): 30 catalog Real Estate courses in 14 states, additional Florida development and Illinois structural work; one national non-credit NMLS offering; 24 state-supplement plans not yet authored in the blueprint. AI Lesson Coach is a disabled local pilot, not a launched or learning-effectiveness-validated feature. No commerce, approval or credit flags changed.
+
 Last verified: 2026-09-19. Target: **NMLS launch in October 2026**. This is an operational control board, not regulatory evidence.
 
 | Track | Current phase | Status | Critical blockers | External dependencies | This week's priorities | Waiting outside StateCourse | Evidence basis | Detail | Last verified |

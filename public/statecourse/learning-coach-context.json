@@ -1,0 +1,45 @@
+{
+  "contexts": [
+    {
+      "id": "property",
+      "title": "Real and personal property",
+      "courseId": "ca-real-estate-principles-45",
+      "state": "CA",
+      "lessonId": "lesson-01",
+      "version": "1.0",
+      "digest": "a9a9f36a8d82fc08342398d00f091fa9669ebb9f3b3cb99b968fdf808f7d9a3f",
+      "lessonDigest": "9f7686f02dbf4258fd37661f1f7c6ebdcc307f3181176a9a54006a631a8510e9",
+      "questionIds": [
+        "ca-real-estate-principles-45:2",
+        "ca-real-estate-principles-45:7"
+      ]
+    },
+    {
+      "id": "dre",
+      "title": "What California DRE does",
+      "courseId": "ca-real-estate-principles-45",
+      "state": "CA",
+      "lessonId": "lesson-01",
+      "version": "1.0",
+      "digest": "870bcff1568022f8358622fd7210f73f6ab4f59e83372a651bb68f9323611675",
+      "lessonDigest": "9f7686f02dbf4258fd37661f1f7c6ebdcc307f3181176a9a54006a631a8510e9",
+      "questionIds": [
+        "ca-real-estate-principles-45:3",
+        "ca-real-estate-principles-45:8"
+      ]
+    },
+    {
+      "id": "ltv",
+      "title": "Loan-to-value versus down payment",
+      "courseId": "ca-real-estate-principles-45",
+      "state": "CA",
+      "lessonId": "lesson-11",
+      "version": "1.0",
+      "digest": "3054e4e6d961f814cbecb21b5c3a64d8dad8bcee1c8a6017fdd41ce87f225753",
+      "lessonDigest": "529cb4052b8da1c6df500d79377a77f2d36cc47e0068b0b4cf20f44701df328d",
+      "questionIds": [
+        "ca-real-estate-principles-45:118"
+      ]
+    }
+  ]
+}
