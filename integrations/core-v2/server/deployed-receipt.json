@@ -3,34 +3,28 @@
   "timezone": "America/Los_Angeles",
   "deployment": {
     "siteId": "b514a8f8-782b-448c-8881-a914ee42c69b",
-    "publishedDeploy": "6ad6edabcc6a4d9fc208b96b",
-    "deployId": "6ad6edabcc6a4d9fc208b96b",
-    "buildId": "6ad6edabcc6a4d9fc208b969",
+    "deployId": "6ad6f4cd2748d0262e01f1cd",
+    "buildId": "6ad6f4cd2748d0262e01f1cb",
     "state": "ready",
     "context": "production",
-    "commitRef": null,
-    "branch": "main",
-    "publishedAt": "2026-10-20T04:28:28.760Z",
-    "availableFunctions": 40,
+    "publishedAt": "2026-10-20T04:59:03.604Z",
+    "functions": 41,
+    "coreFunctions": [],
     "edgeFunctionsPresent": true,
-    "buildDone": true,
-    "buildError": false,
-    "buildKeys": [
-      "sha"
-    ]
+    "commitRef": null
   },
   "sourceArchive": {
-    "commit": "5599ae93421bef0ad4d729a774bab250353c2787",
-    "sha256": "b3ac79b7aa4f4c3ce881f1b655292e746dbd17f1ddd6b364fecfc50c2cf4ea42",
-    "method": "official Netlify createSiteBuild raw source ZIP; no function archive mutation"
+    "commit": "174e4a0654c0c2f5da9a253442c966ae51908ee6",
+    "sha256": "4192777a8340d5b0d71112663167c2e49464a094c32457cba6ee914970f4b6e0",
+    "bytes": 407461469,
+    "preservesPublishedMainCommit": "c20b8ec00b53632a54fa4a1d8e66e29fdd2b59a7",
+    "method": "official Netlify createSiteBuild raw tracked Git source ZIP; no modified function archives"
   },
   "runtimeChecks": [
     {
       "path": "/api/admin/core/health",
       "method": "GET",
       "status": 200,
-      "json": true,
-      "cacheControl": "no-store,private",
       "body": {
         "service": "statecourse-core",
         "hosting": "existing-netlify",
@@ -38,40 +32,66 @@
         "providerCallsEnabled": false,
         "sourceAccess": "not_verified",
         "coreConnection": "not_verified"
-      }
+      },
+      "noStore": true,
+      "corsAllowed": false
     },
     {
       "path": "/api/admin/core/observations",
       "method": "POST",
       "status": 503,
-      "json": true,
-      "cacheControl": "no-store,private",
       "body": {
         "error": "analysis_disabled_pending_background_execution"
-      }
+      },
+      "noStore": true,
+      "corsAllowed": false
     },
     {
       "path": "/api/admin/core/observations/00000000-0000-4000-8000-000000000001",
       "method": "GET",
       "status": 503,
-      "json": true,
-      "cacheControl": "no-store",
       "body": {
         "error": "integration_disabled"
-      }
+      },
+      "noStore": true,
+      "corsAllowed": false
     },
     {
       "path": "/api/student/nmls/coach",
       "method": "GET",
       "status": 405,
-      "json": true,
-      "cacheControl": "no-store,private",
       "body": {
         "error": "method_not_allowed"
-      }
-    }
-  ],
-  "staticChecks": [
+      },
+      "noStore": true,
+      "corsAllowed": false
+    },
+    {
+      "path": "/api/admin/core/health",
+      "method": "POST",
+      "status": 405,
+      "body": {
+        "error": "method_not_allowed"
+      },
+      "noStore": true,
+      "corsAllowed": false
+    },
+    {
+      "path": "/api/admin/core/health?unexpected=1",
+      "method": "GET",
+      "status": 404,
+      "body": {
+        "error": "not_found"
+      },
+      "noStore": true,
+      "corsAllowed": false
+    },
+    {
+      "path": "/api/admin/core/background",
+      "method": "POST",
+      "status": 202,
+      "meaning": "platform acknowledgment only; no authorization or data execution claimed"
+    },
     {
       "path": "/",
       "status": 200,
@@ -97,19 +117,15 @@
       "matchesBuild": true
     },
     {
+      "path": "/student/nmls-training/nmls-training.mjs",
+      "status": 200,
+      "sha256": "5c6ee85b9df8e714d1c7e1c2f06d3062aaf1043c0bdbde31949b6c653f5daf3a",
+      "matchesBuild": true
+    },
+    {
       "path": "/admin/console/",
       "status": 303,
       "staffBoundaryPreserved": true
-    },
-    {
-      "path": "/api/admin/core/health",
-      "method": "POST",
-      "status": 405
-    },
-    {
-      "path": "/api/admin/core/health?unexpected=1",
-      "method": "GET",
-      "status": 404
     }
   ],
   "activationConfiguration": {
@@ -176,13 +192,15 @@
     "retainedInfo": {
       "name": "rls_enabled_no_policy",
       "count": 21
-    }
+    },
+    "budgets": 0,
+    "runnerSettings": 0
   },
   "remaining": [
-    "Production source/Core SQL credentials and verified dedicated roles",
-    "Core organization/bootstrap",
-    "Background transport release is prepared after this hosting snapshot",
-    "Explicit approved provider declaration and spending authorization; no paid calls performed"
+    "Main merge approval required to retain Core through future main deployments",
+    "Existing authorized source SQL credential/private-proof and ledger RLS visibility",
+    "Dedicated isolated Core worker SQL credential/organization bootstrap",
+    "Approved provider declaration and separate spending authorization; paid calls remain clamped OFF"
   ],
   "secretsChanged": false,
   "sourceDatabaseChanged": false,
@@ -208,6 +226,22 @@
     "userConfiguredFunctionEnvironmentJsonBytes": 1168,
     "excludesPlatformInternalVariables": true,
     "valuesRecorded": false,
-    "variablesChanged": false
+    "variablesChanged": false,
+    "notALambdaEnvironmentSizeGuarantee": true
+  },
+  "previousSuccessfulHosting": {
+    "deployId": "6ad6edabcc6a4d9fc208b96b",
+    "buildId": "6ad6edabcc6a4d9fc208b969",
+    "sourceCommit": "5599ae93421bef0ad4d729a774bab250353c2787"
+  },
+  "verification": {
+    "coreTests": 56,
+    "originalCoreSuites": 20,
+    "existingStateCourseTests": 86,
+    "skippedTests": 0,
+    "nativePostgres": "17.10",
+    "dedicatedWorkerLoginTested": true,
+    "serverRestartAndConcurrentDeliveriesTested": true,
+    "ciRun": "https://github.com/westccmortgage/statecourse/actions/runs/39372064383"
   }
 }
