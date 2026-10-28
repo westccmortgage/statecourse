@@ -61,7 +61,7 @@ export const PROVIDER_FACTS = Object.freeze({
   secretaryOfStateFileNumber: "B20260376786",
   secretaryOfStateFiledOn: "2026-08-18",
   principalOffice: "150 E Olive Avenue, Suite 112, Burbank, CA 91502",
-  address: "407 N Pacific Coast Highway, Unit 1028, Redondo Beach, CA 90277",
+  address: "150 E Olive Ave, Unit 112, Burbank, CA 91502",
   managementStructure: "Member-managed",
   agentForServiceOfProcess: "Anatoliy Kanevsky",
   principal: "Anatoliy Kanevsky, Founder",
