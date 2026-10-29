@@ -1006,8 +1006,8 @@
         },
         {
           "path": "texas/tx-real-estate-finance-30-v1/curriculum/module-03.md",
-          "sha256": "b127b1afe850b038fafff2bee45408676d8abab61a40693e6d7b494b0bc57586",
-          "bytes": 39816
+          "sha256": "0829634908994e5c79a8e18ffadcb5824b7753ad8bbd28a0b92eac148e69067b",
+          "bytes": 41766
         },
         {
           "path": "texas/tx-real-estate-finance-30-v1/curriculum/module-04.md",
@@ -1021,8 +1021,8 @@
         },
         {
           "path": "texas/tx-real-estate-finance-30-v1/curriculum/module-06.md",
-          "sha256": "1e8b5d3160e061fdc47cce21bb517430c15e67c723d89e66bfd18b76ad494fae",
-          "bytes": 27834
+          "sha256": "50526b83b66e23e9c7cc8d76875fdbb72c10f85a84051ec674752a57772fb338",
+          "bytes": 29576
         },
         {
           "path": "texas/tx-real-estate-finance-30-v1/curriculum/module-07.md",
@@ -1041,8 +1041,8 @@
         },
         {
           "path": "texas/tx-real-estate-finance-30-v1/curriculum/module-10.md",
-          "sha256": "7d43ce2c10d39e93638225bc7da9ba260d00965a6a09f9a60c224a8016ced6d2",
-          "bytes": 12258
+          "sha256": "1277b8dc7c51dddf3b7d657f863ff67b62c7a217038b1aa39635e8971013d559",
+          "bytes": 14047
         }
       ],
       "curriculumStatus": "authored_material_present_review_required",

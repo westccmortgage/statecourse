@@ -46,6 +46,20 @@ Read Property Code §51.002(a)–(e), (g)–(i) and Regulation X §1024.41(f). M
 
 Feedback: notice mechanics, cure opportunity, authority, contractual conditions, federal coverage, and court orders must all be considered. The statute's first-Tuesday rule has express exceptions; a generic calendar calculation should not be used as legal advice.
 
+### Applied exercise: A85 — Auction buyer's question list
+
+An investor client wants to bid at a Texas nonjudicial foreclosure sale of an occupied house. The posted notice names the sale date and the trustee. The investor says, "If I win, I get the keys that afternoon and every lien is gone." Separate that sentence into its claims. For each claim, write the question that must be answered before bidding and who can answer it. Questions to cover:
+- what interest is actually being sold and which senior or surviving liens remain;
+- whether the sale is being conducted under the instrument and Property Code §51.002, and whether a court order is required for this lien type;
+- whether any federal restriction, bankruptcy stay or military-service issue could affect the sale;
+- what separate process may be needed to obtain possession from the occupant.
+
+Then explain why a correct first-Tuesday date and a 21-day notice period still do not establish that the bidder will receive clear title and immediate possession.
+
+Feedback: "keys that afternoon" conflates foreclosure with lawful possession, which may require separate process. "Every lien is gone" ignores the sale's actual subject: a junior foreclosure does not ordinarily eliminate a senior lien, and other interests can survive. Notice timing is one requirement among several: authority under the instrument, the residential cure notice, the lien type's requirements, federal coverage and court orders all matter.
+
+Additional feedback: the agent's role is to surface these questions and to route title and legal review before money is committed. It is not to certify a sale as valid or to promise a vacant, lien-free property. Keep the bidder's assumptions in writing next to the evidence that answers or contradicts each one.
+
 ## T10U4 — Deficiency Judgments
 
 A deficiency is an amount remaining after applying foreclosure proceeds and required credits to the debt, but a shortfall is not automatically an enforceable judgment. Texas Property Code §51.003 generally requires an action following a §51.002 sale within two years and permits the defendant to request a fair-market-value determination. The statutory offset considers value and surviving secured claims as specified. Applicable nonrecourse protections, defenses, agreements, and insurance credits can change the result.

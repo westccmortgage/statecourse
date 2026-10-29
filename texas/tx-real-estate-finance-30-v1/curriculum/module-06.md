@@ -90,6 +90,16 @@ On a $500,000 value basis, calculate first LTV for a $375,000 first mortgage and
 
 Feedback: first LTV is 75% and combined outstanding-balance LTV is 85%. A program may also require a ratio using the full credit line: ($375,000 + $90,000) ÷ $500,000 = 93%. Use the program's defined ratios, not an invented universal rule.
 
+### Applied exercise: A84 — Refinance priority check
+
+An owner is refinancing a $240,000 existing first mortgage into a new $255,000 first mortgage. A $40,000 second lien (a home-improvement loan) will stay in place. The new lender's instructions require that its loan be first in priority. The second lienholder has sent a draft subordination agreement that limits subordination to a replacement first loan "not exceeding $245,000."
+
+Identify the priority problem and explain why the old first lender's release does not solve it. Calculate combined outstanding-balance LTV on a $400,000 value before and after the refinance. Then draft a short exception note for the closing file. Name the document term that conflicts with the proposed loan, the party who must resolve it, and the two alternatives the parties could ask about: revising the subordination limit or reducing the new loan amount.
+
+Feedback: the proposed $255,000 loan exceeds the $245,000 limit in the subordination draft, so the agreement as written would not deliver the priority the new lender requires. Paying off and releasing the old first removes that lien but does not rank the new first above the surviving second. Combined LTV is ($240,000 + $40,000) ÷ $400,000 = 70% before and ($255,000 + $40,000) ÷ $400,000 = 73.75% after.
+
+Additional feedback: the exception note should quote the limiting term and state the mismatch. It should then route the issue to the lender, the title professional and, where enforceability is in question, counsel. It should not predict that an equitable doctrine will repair the priority. Check any other limits in the subordination terms as well, such as rate, future advances or later modifications, against the actual loan terms.
+
 ## T06U6 — Special Provisions in Mortgage Lending Instruments
 
 Acceleration makes the remaining debt due after the conditions for that remedy are satisfied. An alienation or due-on-sale clause addresses specified transfers. A prepayment clause addresses early repayment, which is a different event. An assumption provision concerns whether another person may take responsibility subject to lender and program requirements. Taking title “subject to” debt does not by itself release the seller or create the same personal promise as an approved assumption.

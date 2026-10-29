@@ -88,6 +88,16 @@ Offer A supplies a hypothetical $9,000 deferred repayable second due at sale, wi
 
 Feedback: A saves $9,000 now but leaves $9,000 due later; B saves $6,000 and leaves no assistance debt under the stipulated facts. Actual program documents, eligibility determination, funding reservation, and lender approval are necessary. Do not convert a conditional forgiveness program into an unconditional grant.
 
+### Applied exercise: A83 — Closing ledger and exit ledger
+
+A hypothetical buyer is offered $12,000 of assistance as a deferred second lien with no periodic payment. Under the stipulated document terms, the full balance is due on sale, refinance, transfer, or loss of owner occupancy, and 20% of the original amount is forgiven at the end of each full year of continued owner occupancy. Build the two ledgers this unit describes. In the closing ledger, show the funds available at closing and list who must accept the source. In the exit ledger, calculate the amount payable if the owner sells after exactly two full years of occupancy, and again if the owner refinances after eighteen months.
+
+Then write two sentences a buyer could misread: one that overstates the benefit and one that understates the obligation. Rewrite each so it states the condition instead of the hoped-for result. Finally, list the milestones that must each be confirmed separately before a contract deadline: program terms, funding reservation, underwriting approval, and first-lender acceptance of the subordinate financing.
+
+Feedback: the closing ledger shows $12,000 available now, subject to program eligibility, reservation and the first lender's acceptance of the source. After two full years, 40% ($4,800) is forgiven and $7,200 is payable at sale. A refinance after eighteen months comes after only one full year, so 20% ($2,400) is forgiven and $9,600 is payable. "No monthly payment" is accurate; "free money" is not.
+
+Additional feedback: forgiveness is a condition, not an entitlement at closing. The exit amount depends on the actual document's trigger events, counting convention and occupancy definition, so the classroom schedule must not be quoted as a program's terms. Each milestone can expire or change independently. A status statement naming what is complete and what is outstanding is more useful to the buyer than an earlier eligibility estimate.
+
 ## T03U4 — Agricultural Lending
 
 Agricultural credit evaluates an operating business as well as land. Revenue can depend on seasonal production, commodity prices, weather, input costs, water access, leases, and management. Repayment schedules may align with production cycles instead of a household's monthly wages. A loan to buy farmland differs from a line financing seed, feed, inventory, or equipment; the term and collateral should fit the use of proceeds and cash-flow cycle.
