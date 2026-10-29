@@ -834,9 +834,9 @@
       "title": "Mortgage / NMLS",
       "status": "in_development",
       "launch_target": {
-        "label": "October 2026",
-        "iso": "2026-10",
-        "basis": "StateCourse build schedule. A target date for the product, not a regulatory approval date and not an NMLS course-approval record."
+        "label": "Coming soon",
+        "iso": null,
+        "basis": "Owner decision 2026-10-29: no public launch date while the owner-reported NMLS submission is under review. Not a regulatory approval date and not an NMLS course-approval record."
       },
       "programs": [{
         "program_id": "nmls-ce-2026-national-training",

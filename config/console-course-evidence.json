@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "source": "repository build inspection; file presence is not curriculum approval or runtime acceptance",
-  "catalogSha256": "e6fda4400d804dc1e383a0f1c8aa36ab2060fc942219af49163916f5bd7e4b36",
+  "catalogSha256": "8fb3bb3239f797323496f1393674a64b035d8d6aa0ffd4a6d609f53c09a46ebd",
   "courses": [
     {
       "courseId": "va-salesperson",
