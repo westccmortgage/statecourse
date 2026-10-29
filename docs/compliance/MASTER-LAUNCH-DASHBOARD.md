@@ -16,6 +16,10 @@ Local implementation now covers 284 Real Estate lessons across 30 catalog course
 
 Texas Law of Agency shared routing/player dependency drift was reviewed and recorded in video freeze v16 and content freeze v20. Stream regression checks and freeze validators pass; Texas submission/operational acceptance remains NO-GO. Georgia and Washington source readings remain stale and their gates stay closed.
 
+## Public approval page — 2026-10-29
+
+Owner reconfirmed California DRE is submitted / under review and directed the public Approval Verification page to say so. `PROVIDER_FACTS.applicationStatus` now states the three California course applications are submitted and under review, and that no approval has been issued. Receipt, date and DRE file numbers are still not recorded; add them when the owner supplies them. No approval, enrollment, payment or credit control changed.
+
 ## Uploaded DRE evidence — 2026-10-20
 
 All three uploaded California application volumes contain course-specific college-equivalence letters on page 14, with letterhead and visible signatures checked. Historical “letters absent” statements are superseded; acceptance is unverified. Uploaded copies retain pre-filing access/signature/date completion instructions and do not establish the final mailed set. Owner-reported DRE and separate NMLS submissions remain under review. See [package review](../audits/DRE-UPLOADED-PACKAGES-2026-10-20.md). No launch or approval flags changed.

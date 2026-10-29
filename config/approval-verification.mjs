@@ -67,7 +67,9 @@ export const PROVIDER_FACTS = Object.freeze({
   principal: "Anatoliy Kanevsky, Founder",
   principalLicense: "California real estate broker licence 01385024",
   sponsorNumber: null,
-  applicationStatus: "No course application has been filed with the California Department of Real Estate."
+  /* Owner-reported 2026-10-19 and reconfirmed 2026-10-29: the three California course
+     applications are submitted and under DRE review. Receipt/date not yet recorded. */
+  applicationStatus: "Applications for StateCourse's three California courses have been submitted to the California Department of Real Estate and are under review. No approval has been issued yet."
 });
 
 export function verificationFor(stateCode) {

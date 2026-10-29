@@ -15,7 +15,8 @@ const registry = JSON.parse(fs.readFileSync(path.join(publicRoot, "data/state-re
 
 test("the page states the absence of approval as plainly as it would state its presence", () => {
   assert.match(page, /No approval record/);
-  assert.match(page, /No course application has been filed/);
+  assert.match(page, /submitted to the California Department of Real Estate and are under review/);
+  assert.match(page, /No approval has been issued yet/);
   assert.match(page, /Not yet issued/);
   /* The failure this guards against is a page that reads as reassurance. Every
      jurisdiction with a course record must carry its own absence statement, not one
