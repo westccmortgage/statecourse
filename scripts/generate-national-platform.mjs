@@ -5,6 +5,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { deriveJurisdictionRecord, JURISDICTION_APPROVAL_LABELS } from "../config/jurisdiction-record.mjs";
 import { PROVIDER_FACTS, VERIFICATION_PROCEDURES } from "../config/approval-verification.mjs";
+import { PUBLIC_PRICES, NMLS_PRICE } from "../config/public-prices.mjs";
 import { NMLS_TRAINING_COURSE } from "../config/nmls-course-identity.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
@@ -77,6 +78,7 @@ function header(prefix, active = "") {
     ["Mortgage / NMLS", "mortgage/", "mortgage"],
     ["State Requirements", "state-requirements/", "requirements"],
     ["Resources", "resources/", "resources"],
+    ["Pricing", "pricing/", "pricing"],
     ["Blog", "blog/", "blog"],
   ];
   const links = nav.map(([label, href, key]) => `<a href="${prefix}${href}"${active === key ? ' aria-current="page"' : ""}>${label}</a>`).join("");
@@ -84,7 +86,7 @@ function header(prefix, active = "") {
 }
 
 function footer(prefix) {
-  return `<footer class="national-footer"><div class="footer-shell"><div><a class="national-brand inverse" href="${prefix}"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 44 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M22 2 40 8v14c0 12-7.5 20-18 24C11.5 42 4 34 4 22V8Z"/><g stroke-width="1.6" stroke-linecap="round"><path d="M13 16.5h18M14.5 15 22 10.5 29.5 15M15.5 19v11M22 19v11M28.5 19v11M13 32.5h18"/></g></svg></span><span><strong>StateCourse</strong><small>National Academy</small></span></a><p>Real estate licensing, state by state.</p><p class="footer-contact"><a href="tel:+13106865053">310-686-5053</a> &middot; <a href="mailto:support@statecourse.com">support@statecourse.com</a></p></div><nav aria-label="Footer navigation"><a href="${prefix}about/">About</a><a href="${prefix}get-licensed/">Get Licensed</a><a href="${prefix}state-requirements/">State Requirements</a><a href="${prefix}mortgage/">Mortgage / NMLS</a><a href="${prefix}courses/">Courses</a><a href="${prefix}resources/">Resources</a><a href="${prefix}approvals/">Approval Verification</a><a href="${studentPortalUrl}">My Courses</a></nav><p class="footer-disclosure">Programs shown as In Development are not approved enrollment offers and cannot award regulatory credit.</p></div></footer>`;
+  return `<footer class="national-footer"><div class="footer-shell"><div><a class="national-brand inverse" href="${prefix}"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 44 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M22 2 40 8v14c0 12-7.5 20-18 24C11.5 42 4 34 4 22V8Z"/><g stroke-width="1.6" stroke-linecap="round"><path d="M13 16.5h18M14.5 15 22 10.5 29.5 15M15.5 19v11M22 19v11M28.5 19v11M13 32.5h18"/></g></svg></span><span><strong>StateCourse</strong><small>National Academy</small></span></a><p>Real estate licensing, state by state.</p><p class="footer-contact"><a href="tel:+13106865053">310-686-5053</a> &middot; <a href="mailto:support@statecourse.com">support@statecourse.com</a></p></div><nav aria-label="Footer navigation"><a href="${prefix}about/">About</a><a href="${prefix}pricing/">Pricing</a><a href="${prefix}get-licensed/">Get Licensed</a><a href="${prefix}state-requirements/">State Requirements</a><a href="${prefix}mortgage/">Mortgage / NMLS</a><a href="${prefix}courses/">Courses</a><a href="${prefix}resources/">Resources</a><a href="${prefix}approvals/">Approval Verification</a><a href="${studentPortalUrl}">My Courses</a></nav><p class="footer-disclosure">Programs shown as In Development are not approved enrollment offers and cannot award regulatory credit.</p></div></footer>`;
 }
 
 function document({ title, description, prefix = "../", active = "", body, scripts = "" }) {
@@ -241,6 +243,14 @@ const aboutBody = `${pageHero("About StateCourse", "Built by a working broker.",
 <div class="source-box"><h2>Talk to us</h2><p>StateCourse LLC, Los Angeles, California.<br/>Phone: <a href="tel:+13106865053">310-686-5053</a><br/>Email: <a href="mailto:support@statecourse.com">support@statecourse.com</a></p></div>
 </section>`;
 write("about/index.html", document({ title: "About", description: "StateCourse is an online real estate and mortgage licensing school founded by Anatoliy Kanevsky, a broker since 2004.", body: aboutBody }));
+
+const priceCards = PUBLIC_PRICES.map((p) => `<article class="content-card price-card"><p class="overline">${esc(p.state)}</p><h2>$${p.price}</h2><p>${esc(p.course)} &middot; ${p.hours} hours</p><p class="price-status">Coming soon &middot; available after state approval</p></article>`).join("");
+const pricingBody = `${pageHero("Pricing", "One price per state. Everything required included.", "Each price covers the full pre-license education your state requires: every lesson, practice question, AI study coach and final examination. No upsell needed to finish.")}<section class="page-body">
+<div class="notice"><strong>Enrollment is not open yet.</strong> Prices apply once each state approves its course. Until then, every course with free practice can be tried without an account or payment.</div>
+<div class="content-grid price-grid">${priceCards}<article class="content-card price-card"><p class="overline">Mortgage / NMLS</p><h2>$${NMLS_PRICE.price}<small> + NMLS fee</small></h2><p>${esc(NMLS_PRICE.course)} &middot; ${NMLS_PRICE.hours} hours</p><p class="price-status">Coming soon &middot; awaiting approval</p></article></div>
+<div class="source-box"><h2>Try it before you pay</h2><p>Read real StateCourse lessons and answer practice questions with explanations in 14 states. No account, no payment. Practice is non-credit.</p><p><a href="../free-practice/">Start free practice &rarr;</a></p><p>Questions about pricing: <a href="tel:+13106865053">310-686-5053</a> &middot; <a href="mailto:support@statecourse.com">support@statecourse.com</a></p></div>
+</section>`;
+write("pricing/index.html", document({ title: "Pricing", description: "StateCourse real estate pre-license course prices by state and NMLS continuing education pricing.", active: "pricing", body: pricingBody }));
 
 const serviceAreas = [
   {

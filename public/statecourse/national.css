@@ -501,3 +501,7 @@ button, select, summary, a { -webkit-tap-highlight-color: transparent; }
 .learning-coach summary { cursor: pointer; min-height: 44px; }
 .learning-coach blockquote { margin: 12px 0; padding-left: 12px; border-left: 2px solid var(--gold-deep); white-space: pre-wrap; }
 .learning-coach textarea:focus-visible { outline: 3px solid #836114; outline-offset: 3px; }
+
+.price-card h2 { font-size: clamp(34px,3.4vw,44px); margin: 6px 0 4px; }
+.price-card h2 small { font: 500 14px/1 var(--sans, inherit); color: var(--muted); margin-left: 6px; }
+.price-card .price-status { margin-top: auto; padding-top: 10px; font-size: 12px; color: var(--muted); }
