@@ -308,6 +308,8 @@ button, select, summary, a { -webkit-tap-highlight-color: transparent; }
 .national-brand.inverse { color: #fff; }
 .national-brand.inverse small { color: var(--gold); }
 .footer-shell > div > p { color: #9aa5ba; }
+.footer-contact a { color: #fff; }
+.footer-contact a:hover { text-decoration: underline; }
 .footer-shell nav { display: grid; grid-template-columns: repeat(2,auto); gap: 11px 32px; font-size: 12px; }
 .footer-shell nav a:hover { color: #fff; }
 .footer-disclosure { grid-column: 1/-1; padding-top: 24px; border-top: 1px solid rgba(255,255,255,.14); color: #8b97ae; font-size: 11px; }
