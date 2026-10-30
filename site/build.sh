@@ -72,6 +72,7 @@ test -f dist/ai/plans/plans.js
 test -f dist/student/ai-account.js
 test -f dist/student/index.html
 test -f dist/student/sign-in/index.html
+test -f dist/student/google-signin.css
 test -f dist/student/register/index.html
 test -f dist/student/register/student-register.js
 test -f dist/student/student-portal.js

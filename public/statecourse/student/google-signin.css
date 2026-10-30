@@ -1,0 +1,20 @@
+/* "Continue with Google" — shared by /student/sign-in/ and /admin/console/.
+   The button is served hidden+disabled; auth-entry.js reveals it only after the
+   server confirms the Google provider is enabled. The divider follows the button
+   (hidden whenever the button is hidden), so nothing Google-related shows while
+   the provider is off. */
+.google-signin { --gs-navy: var(--navy, #172536); --gs-gold: var(--gold, #c7a259); --gs-sand: #f0ebdf; --gs-rule: var(--rule, #e7e4de); display: flex; flex-direction: column-reverse; gap: 18px; margin: 22px 0 6px; }
+.google-signin-button { position: relative; display: flex; align-items: stretch; width: 100%; min-height: 54px; margin: 0; padding: 0; border: 1px solid var(--gs-navy); border-radius: 2px; overflow: hidden; background: #fff; color: var(--gs-navy); font: inherit; font-size: 15px; font-weight: 750; letter-spacing: .01em; text-align: left; cursor: pointer; transition: background .15s, box-shadow .15s; }
+.google-signin-button[hidden] { display: none; }
+.google-signin-button::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 3px; background: var(--gs-gold); transform: scaleX(0); transform-origin: left; transition: transform .18s ease-out; }
+.google-signin-button:hover, .google-signin-button:focus-visible { background: var(--gs-sand); }
+.google-signin-button:hover::after, .google-signin-button:focus-visible::after { transform: scaleX(1); }
+.google-signin-button:focus-visible { outline: 3px solid #c68a32; outline-offset: 3px; }
+.google-signin-button:disabled { cursor: wait; opacity: .72; }
+.google-signin-button:disabled::after { transform: scaleX(0); }
+.google-signin-logo { display: grid; place-items: center; flex: 0 0 54px; border-right: 1px solid var(--gs-navy); background: #fff; }
+.google-signin-logo svg { width: 22px; height: 22px; display: block; }
+.google-signin-label { display: flex; align-items: center; flex: 1 1 auto; padding: 0 18px; }
+.google-signin-divider { display: flex; align-items: center; gap: 14px; margin: 0; color: var(--muted, #5d6a75); font-size: 11px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; }
+.google-signin-divider::before, .google-signin-divider::after { content: ""; flex: 1 1 auto; height: 1px; background: var(--gs-rule); }
+.google-signin-button[hidden] + .google-signin-divider { display: none; }
