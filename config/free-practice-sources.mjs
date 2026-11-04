@@ -1,3 +1,4 @@
+import { pennsylvaniaPracticeQuestion } from './free-practice/pennsylvania.mjs';
 import { TEXAS_FULL_PRACTICE_SOURCES } from '../scripts/lib/free-practice-activities.mjs';
 // Public practice publishes student curriculum and formative exercises only.
 // Each course is explicitly mapped; protected examinations are never source inputs.
@@ -26,9 +27,18 @@ export const PRACTICE_SOURCES = [
   ['TX','tx-principles-real-estate-ii-30','texas/tx-principles-real-estate-ii-30-v1/curriculum','texas/principles-ii'],
   ['TX','tx-law-of-agency-30','texas/tx-law-of-agency-30-v1/curriculum','texas/law-of-agency'],
   ['VA','va-principles-practices-v1','virginia/curriculum','virginia/module'],
-  ['WA','wa-real-estate-fundamentals-60','washington/wa-real-estate-fundamentals-60-v1/curriculum','washington/fundamentals-60'],
-  ['WA','wa-real-estate-practices-30','washington/wa-real-estate-practices-30-v1/curriculum','washington/practices-30'],
   ['WI','wi-salesperson','wisconsin/curriculum','wisconsin/module'],
 ].map(([stateCode,courseId,curriculumDir,bank]) => ({stateCode,courseId,curriculumDir,bankPath:`config/${bank}-question-bank.mjs`,coverage:'authored curriculum'}));
 
+const paFundamentals = PRACTICE_SOURCES.find(source => source.courseId === 'pa-real-estate-fundamentals-30');
+paFundamentals.lessonOverrides = {'module-01.md':'config/free-practice/pennsylvania-licensing.md'};
+paFundamentals.questionOverride = pennsylvaniaPracticeQuestion;
+
 PRACTICE_SOURCES.push(...TEXAS_FULL_PRACTICE_SOURCES);
+
+// The inherited Washington courses and banks are retained for remediation.
+// Public practice uses the separately verified Washington collection.
+export const WITHHELD_PRACTICE_COURSES = [
+  'wa-real-estate-fundamentals-60',
+  'wa-real-estate-practices-30',
+];

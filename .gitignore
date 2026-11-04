@@ -86,3 +86,5 @@ __pycache__/
 # Print-ready course volumes: 13 MB of generated PDFs, rebuilt by
 # scripts/build-california-print-volume.mjs. The HTML is tracked; the PDFs are not.
 california/print/*.pdf
+
+/public/statecourse/sitemap.xml

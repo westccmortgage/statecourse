@@ -11,7 +11,7 @@ const lessons=[];
 for(const source of PRACTICE_SOURCES){
  const course=catalog.find(c=>c.course_id===source.courseId);if(!course)throw Error('missing_catalog_course');
  for(const file of fs.readdirSync(path.join(root,source.curriculumDir)).filter(f=>/^(module|lesson)-\d+\.md$/.test(f)).sort()){
-  const sourcePath=`${source.curriculumDir}/${file}`,text=fs.readFileSync(path.join(root,sourcePath),'utf8');
+  const sourcePath=source.lessonOverrides?.[file] ?? `${source.curriculumDir}/${file}`,text=fs.readFileSync(path.join(root,sourcePath),'utf8');
   if(/instructor version and answer key|Items, with the material reference for each answer|__statecourse_private_export|^##\s*Answer key/im.test(text))throw Error(`protected_source:${sourcePath}`);
   const lessonId=file.slice(0,-3);const body={id:`lesson:${course.course_id}:${lessonId}`,access:'public_practice',discipline:'real_estate',courseId:course.course_id,state:source.stateCode,version:course.course_version,lessonId,title:text.match(/^#{1,2}\s+(.+)$/m)?.[1]??lessonId,sourcePath,lessonDigest:digest(text),chunks:chunkLesson(text)};
   lessons.push({...body,digest:digest(JSON.stringify(body))});

@@ -3,7 +3,8 @@ import fs from 'node:fs';
 import path from 'node:path';
 import {createHash} from 'node:crypto';
 import test from 'node:test';
-import {PRACTICE_SOURCES} from '../config/free-practice-sources.mjs';
+import {PRACTICE_COLLECTIONS} from '../config/free-practice/collections.mjs';
+import {PRACTICE_SOURCES,WITHHELD_PRACTICE_COURSES} from '../config/free-practice-sources.mjs';
 import {splitSections,presentedChoices,gradePractice,practiceSummary,restorePractice} from '../public/statecourse/practice-core.mjs';
 import {renderLessonMarkdown} from '../public/statecourse/student/course/blocks/lesson-markdown.mjs';
 const root=path.resolve(new URL('..',import.meta.url).pathname);
@@ -13,10 +14,12 @@ const catalog=JSON.parse(read('public/statecourse/data/course-catalog.json'));
 const allCourses=catalog.categories.filter(c=>c.category_id==='real-estate').flatMap(c=>c.programs??[]).flatMap(p=>p.courses??[]);
 const manifest=JSON.parse(read('public/statecourse/data/free-practice-catalog.json'));
 const protectedText=/final-exam-form-[ab]-answer-key|##\s*Answer key|\bcorrectChoice\b|module-question-bank|final-exam-bank|instructor version and answer key|Items, with the material reference for each answer|__statecourse_private_export/i;
-test('all real-estate catalog courses have distinct explicit non-credit practice sources; mortgage is protected',()=>{
+test('catalog practice is explicit, collections have no paid-course entry, and mortgage is protected',()=>{
  assert.equal(manifest.schema_version,'2.0');
- assert.deepEqual(manifest.samples.map(s=>s.course_id).sort(),allCourses.map(c=>c.course_id).sort());
- assert.equal(new Set(manifest.samples.map(s=>s.practice_url)).size,allCourses.length);
+ const expected = allCourses.map(c=>c.course_id).filter(id=>!WITHHELD_PRACTICE_COURSES.includes(id))
+  .concat(PRACTICE_COLLECTIONS.map(c=>c.id));
+ assert.deepEqual(manifest.samples.map(s=>s.course_id).sort(),expected.sort());
+ assert.equal(new Set(manifest.samples.map(s=>s.practice_url)).size,expected.length);
  assert.equal(manifest.samples.some(s=>s.course_id==='nmls-ce-2026-comprehensive-8'),false);
  assert.match(manifest.disclosure,/No enrollment.*licensing credit.*certificate.*final examination/i);
  for(const category of catalog.categories)for(const program of category.programs??[])for(const c of program.courses??[])assert.equal(c.state_id,program.state_code);
@@ -24,15 +27,19 @@ test('all real-estate catalog courses have distinct explicit non-credit practice
 for(const sample of manifest.samples)test(sample.course_id+': every lesson and every answer choice is usable',()=>{
  const source=PRACTICE_SOURCES.find(s=>s.courseId===sample.course_id);
  const course=JSON.parse(read('public/statecourse/'+sample.practice_url));
- const files=fs.readdirSync(path.join(root,source.curriculumDir)).filter(f=>/^(module|lesson)-\d+\.md$/.test(f)).sort();
- assert.deepEqual(course.lessons.map(l=>l.id+'.md'),files);
+ const collection=PRACTICE_COLLECTIONS.find(c=>c.id===sample.course_id);
+ const expectedLessons=source
+  ? fs.readdirSync(path.join(root,source.curriculumDir)).filter(f=>/^(module|lesson)-\d+\.md$/.test(f)).sort()
+  : collection.topics.map(topic=>topic.slug+'.md');
+ assert.deepEqual(course.lessons.map(l=>l.id+'.md'),expectedLessons);
  assert.equal(course.questions.length,sample.question_count);
  assert.equal(course.lessons.length,sample.lesson_count);
  assert.equal(new Set(course.questions.map(q=>q.id)).size,course.questions.length);
  const answers={};
  for(const lesson of course.lessons){
   const text=read('public/statecourse/'+lesson.content_url);
-  assert.equal(text,read(source.curriculumDir+'/'+lesson.id+'.md'));
+  if(source)assert.equal(text,read(source.lessonOverrides?.[lesson.id+'.md'] ?? source.curriculumDir+'/'+lesson.id+'.md'));
+  else assert.ok(text.includes(collection.topics.find(t=>t.slug===lesson.id).review));
   assert.equal(createHash('sha256').update(text).digest('hex'),lesson.sha256);
   assert.doesNotMatch(text,protectedText);
   for(const section of splitSections(text))assert.ok(renderLessonMarkdown(section.body).length>0,lesson.id+'/'+section.title);
@@ -54,12 +61,14 @@ for(const sample of manifest.samples)test(sample.course_id+': every lesson and e
 test('every course page links to its own practice; each built state has a working route',()=>{
  for(const sample of manifest.samples){
   const c=allCourses.find(c=>c.course_id===sample.course_id);
-  const route=c.route.replace(/^\//,'');
-  const coursePage=read('public/statecourse/'+route+'index.html');
-  assert.ok(coursePage.includes('free-practice/?state='+sample.state_code+'&amp;course='+sample.course_id),sample.course_id+' links to the wrong practice');
+  if(c){
+   const route=c.route.replace(/^\//,'');
+   const coursePage=read('public/statecourse/'+route+'index.html');
+   assert.ok(coursePage.includes('free-practice/?state='+sample.state_code+'&amp;course='+sample.course_id),sample.course_id+' links to the wrong practice');
+  }
   const stateSlug=sample.state_name.toLowerCase().replaceAll(/[^a-z0-9]+/g,'-');
   const state=read('public/statecourse/real-estate/'+stateSlug+'/index.html');
-  assert.ok(state.includes('free-practice/?state='+sample.state_code));
+  assert.ok(state.includes('free-practice/'+stateSlug+'/'));
  }
 });
 test('invalid saved data cannot crash or manufacture progress',()=>{

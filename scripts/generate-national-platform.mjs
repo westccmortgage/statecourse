@@ -1,6 +1,6 @@
 import fs from "node:fs";
 import { buildFreePractice } from "./generate-free-practice.mjs";
-import { PRACTICE_SOURCES } from "../config/free-practice-sources.mjs";
+import { WITHHELD_PRACTICE_COURSES } from "../config/free-practice-sources.mjs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { deriveJurisdictionRecord, JURISDICTION_APPROVAL_LABELS } from "../config/jurisdiction-record.mjs";
@@ -15,8 +15,6 @@ const catalog = JSON.parse(fs.readFileSync(path.join(publicRoot, "data/course-ca
 const catalogCourses = catalog.categories.flatMap((category) => category.programs ?? []).flatMap((program) => program.courses ?? []);
 const studentPortalUrl = "https://statecourse.com/student/sign-in/";
 const studentRegisterUrl = "https://statecourse.com/student/register/";
-const freePracticeSamples = PRACTICE_SOURCES;
-const freePracticeByState = new Map(freePracticeSamples.map((sample) => [sample.stateCode, sample]));
 
 const dc = {
   state_name: "District of Columbia",
@@ -70,7 +68,7 @@ const write = (relativePath, content) => {
 };
 const relativeRoute = (prefix, route) => `${prefix}${String(route).replace(/^\//, "")}`;
 
-function header(prefix, active = "") {
+function header(prefix, active = "", practice = false) {
   const nav = [
     ["Get Licensed", "get-licensed/", "licensed"],
     ["Exam Prep", "exam-prep/", "exam"],
@@ -82,15 +80,15 @@ function header(prefix, active = "") {
     ["Blog", "blog/", "blog"],
   ];
   const links = nav.map(([label, href, key]) => `<a href="${prefix}${href}"${active === key ? ' aria-current="page"' : ""}>${label}</a>`).join("");
-  return `<a class="skip-link" href="#main-content">Skip to main content</a><header class="national-header"><div class="header-shell"><a class="national-brand" href="${prefix}" aria-label="StateCourse home"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 44 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M22 2 40 8v14c0 12-7.5 20-18 24C11.5 42 4 34 4 22V8Z"/><g stroke-width="1.6" stroke-linecap="round"><path d="M13 16.5h18M14.5 15 22 10.5 29.5 15M15.5 19v11M22 19v11M28.5 19v11M13 32.5h18"/></g></svg></span><span><strong>StateCourse</strong><small>National Academy</small></span></a><nav class="desktop-nav" aria-label="Primary navigation">${links}</nav><div class="header-actions"><a class="account-link" href="${studentRegisterUrl}">Create Account</a><a class="account-link" href="${studentPortalUrl}">My Courses</a><a class="state-button" href="${prefix}get-licensed/">Choose Your State</a></div><details class="mobile-menu"><summary aria-label="Open navigation">Menu</summary><nav>${links}<a href="${studentRegisterUrl}">Create Account</a><a href="${studentPortalUrl}">My Courses</a></nav></details></div></header>`;
+  return `<a class="skip-link" href="#main-content">Skip to main content</a><header class="national-header"><div class="header-shell"><a class="national-brand" href="${prefix}" aria-label="StateCourse home"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 44 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M22 2 40 8v14c0 12-7.5 20-18 24C11.5 42 4 34 4 22V8Z"/><g stroke-width="1.6" stroke-linecap="round"><path d="M13 16.5h18M14.5 15 22 10.5 29.5 15M15.5 19v11M22 19v11M28.5 19v11M13 32.5h18"/></g></svg></span><span><strong>StateCourse</strong><small>National Academy</small></span></a><nav class="desktop-nav" aria-label="Primary navigation">${links}</nav><div class="header-actions">${practice ? "" : `<a class="account-link" href="${studentRegisterUrl}">Create Account</a><a class="account-link" href="${studentPortalUrl}">My Courses</a>`}<a class="state-button" href="${prefix}get-licensed/">Choose Your State</a></div><details class="mobile-menu"><summary aria-label="Open navigation">Menu</summary><nav>${links}${practice ? "" : `<a href="${studentRegisterUrl}">Create Account</a><a href="${studentPortalUrl}">My Courses</a>`}</nav></details></div></header>`;
 }
 
-function footer(prefix) {
-  return `<footer class="national-footer"><div class="footer-shell"><div><a class="national-brand inverse" href="${prefix}"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 44 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M22 2 40 8v14c0 12-7.5 20-18 24C11.5 42 4 34 4 22V8Z"/><g stroke-width="1.6" stroke-linecap="round"><path d="M13 16.5h18M14.5 15 22 10.5 29.5 15M15.5 19v11M22 19v11M28.5 19v11M13 32.5h18"/></g></svg></span><span><strong>StateCourse</strong><small>National Academy</small></span></a><p>Real estate licensing, state by state.</p><p class="footer-contact"><a href="tel:+13106865053">310-686-5053</a> &middot; <a href="mailto:support@statecourse.com">support@statecourse.com</a></p></div><nav aria-label="Footer navigation"><a href="${prefix}about/">About</a><a href="${prefix}pricing/">Pricing</a><a href="${prefix}get-licensed/">Get Licensed</a><a href="${prefix}state-requirements/">State Requirements</a><a href="${prefix}mortgage/">Mortgage / NMLS</a><a href="${prefix}courses/">Courses</a><a href="${prefix}resources/">Resources</a><a href="${prefix}approvals/">Approval Verification</a><a href="${studentPortalUrl}">My Courses</a></nav><p class="footer-disclosure">Programs shown as In Development are not approved enrollment offers and cannot award regulatory credit.</p></div></footer>`;
+function footer(prefix, practice = false) {
+  return `<footer class="national-footer"><div class="footer-shell"><div><a class="national-brand inverse" href="${prefix}"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 44 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M22 2 40 8v14c0 12-7.5 20-18 24C11.5 42 4 34 4 22V8Z"/><g stroke-width="1.6" stroke-linecap="round"><path d="M13 16.5h18M14.5 15 22 10.5 29.5 15M15.5 19v11M22 19v11M28.5 19v11M13 32.5h18"/></g></svg></span><span><strong>StateCourse</strong><small>National Academy</small></span></a><p>Real estate licensing, state by state.</p><p class="footer-contact"><a href="tel:+13106865053">310-686-5053</a> &middot; <a href="mailto:support@statecourse.com">support@statecourse.com</a></p></div><nav aria-label="Footer navigation"><a href="${prefix}about/">About</a><a href="${prefix}pricing/">Pricing</a><a href="${prefix}get-licensed/">Get Licensed</a><a href="${prefix}state-requirements/">State Requirements</a><a href="${prefix}mortgage/">Mortgage / NMLS</a><a href="${prefix}courses/">Courses</a><a href="${prefix}resources/">Resources</a>${practice ? `<a href="${prefix}free-practice/">Free Practice</a>` : `<a href="${prefix}approvals/">Approval Verification</a><a href="${studentPortalUrl}">My Courses</a>`}</nav>${practice ? "" : `<p class="footer-disclosure">Programs shown as In Development are not approved enrollment offers and cannot award regulatory credit.</p>`}</div></footer>`;
 }
 
-function document({ title, description, prefix = "../", active = "", body, scripts = "" }) {
-  return `<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><meta name="description" content="${esc(description)}"/><meta name="theme-color" content="#08102b"/><title>${esc(title)} | StateCourse</title><link rel="icon" href="${prefix}favicon.svg" type="image/svg+xml"/><link rel="stylesheet" href="${prefix}national.css?v=20260911-verticals"/></head><body>${header(prefix, active)}<main id="main-content">${body}</main>${footer(prefix)}${scripts}</body></html>`;
+function document({ title, description, prefix = "../", active = "", body, scripts = "", canonical = "", practice = false }) {
+  return `<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><meta name="description" content="${esc(description)}"/><meta name="theme-color" content="#08102b"/><title>${esc(title)} | StateCourse</title>${canonical ? `<link rel="canonical" href="${esc(canonical)}"/>` : ""}<link rel="icon" href="${prefix}favicon.svg" type="image/svg+xml"/><link rel="stylesheet" href="${prefix}national.css?v=20260911-verticals"/></head><body>${header(prefix, active, practice)}<main id="main-content">${body}</main>${footer(prefix, practice)}${scripts}</body></html>`;
 }
 
 function pageHero(overline, title, lede, state = false) {
@@ -98,24 +96,35 @@ function pageHero(overline, title, lede, state = false) {
 }
 
 function finderForm() {
-  return `<form class="licensing-finder" id="licensing-finder"><fieldset class="intent-tabs"><legend>What do you need to do?</legend><label><input type="radio" name="intent" value="licensed" checked/><span><strong>Get Licensed</strong><small>I need pre-license education</small></span></label><label><input type="radio" name="intent" value="exam"/><span><strong>Pass My Exam</strong><small>I need exam preparation</small></span></label><label><input type="radio" name="intent" value="renew"/><span><strong>Renew My License</strong><small>I need continuing education</small></span></label></fieldset><div class="finder-fields"><label><span>Start with your state</span><select id="homeStateSelect" aria-describedby="finderStatusGuide finderMessage" required><option value="">Choose your state</option></select></label><label><span>Licensing goal</span><select id="homeGoalSelect"><option value="first-license">First real estate license</option><option value="broker">Broker education</option><option value="requirements">Understand requirements</option></select></label><button type="submit">View My Licensing Path <span aria-hidden="true">→</span></button></div><div class="finder-status-guide" id="finderStatusGuide" aria-label="State availability key"><span class="status-key status-available">Available</span><span class="status-key status-development">In development · Free practice</span><span class="status-key status-coming">Coming soon</span></div><p id="finderMessage" class="finder-message" aria-live="polite">Choose an Available or In development state. Coming soon states are listed but cannot be selected.</p></form>`;
+  return `<form class="licensing-finder" id="licensing-finder"><fieldset class="intent-tabs"><legend>What do you need to do?</legend><label><input type="radio" name="intent" value="licensed" checked/><span><strong>Get Licensed</strong><small>I need pre-license education</small></span></label><label><input type="radio" name="intent" value="exam"/><span><strong>Pass My Exam</strong><small>I need exam preparation</small></span></label><label><input type="radio" name="intent" value="renew"/><span><strong>Renew My License</strong><small>I need continuing education</small></span></label></fieldset><div class="finder-fields"><label><span>Start with your state</span><select id="homeStateSelect" aria-describedby="finderStatusGuide finderMessage" required><option value="">Choose your state</option></select></label><label><span>Licensing goal</span><select id="homeGoalSelect"><option value="first-license">First real estate license</option><option value="broker">Broker education</option><option value="requirements">Understand requirements</option></select></label><button type="submit">View My Licensing Path <span aria-hidden="true">→</span></button></div><div class="finder-status-guide" id="finderStatusGuide" aria-label="State availability key"><span class="status-key status-available">Available</span><span class="status-key status-development">Free practice available</span><span class="status-key status-coming">Coming soon</span></div><p id="finderMessage" class="finder-message" aria-live="polite">Choose a state with available education or free practice.</p></form>`;
 }
 
 const practiceManifest = await buildFreePractice({root,states,catalogCourses,write});
 
-const freePracticeBody = `${pageHero("Free practice", "Practice with real StateCourse lesson material.", "Choose a state that is already in development. Choose a course, read its lessons, and answer practice questions with instant explanations. Free to use while courses are in development.")}<section class="page-body practice-page" data-free-practice>
-  <div class="notice"><strong>Practice-only access:</strong> This preview is free and does not create enrollment, regulated study time, licensing credit, a completion certificate, or access to any protected course final examination.</div>
+const freePracticeByState = new Map(practiceManifest.states.map(state => [state.state_code, state]));
+const practiceTitle = state => state ? `Free ${state.state_name} Real Estate Practice Questions` : "Free Real Estate Practice by State";
+const practiceDescription = state => state
+  ? `Try ${state.question_count} original ${state.state_name} real estate practice questions with explanations. Free and no account required.`
+  : "Choose a state and work through original StateCourse real estate practice questions with explanations. Free and no account required.";
+const practiceCards = `<section class="page-body" aria-labelledby="practice-states"><h2 id="practice-states">Practice by state</h2><div class="content-grid">${practiceManifest.states.map(state =>
+  `<article class="content-card"><p class="overline">Free practice</p><h3>${esc(state.state_name)}</h3><p>${state.question_count} questions with explanations.</p><a href="../${state.route}">Start ${esc(state.state_name)} practice →</a></article>`
+).join("")}</div></section>`;
+
+const freePracticeBody = (state, prefix) => `${pageHero("Free practice", practiceTitle(state), practiceDescription(state))}
+<section class="page-body practice-page" data-free-practice${state ? ` data-state="${state.state_code}"` : ""}>
+  <div class="notice"><strong>Free practice. No account required.</strong> These are original StateCourse educational questions. This is not an official state exam. Practice does not create enrollment, regulated study time, licensing credit, a completion certificate, or access to any protected course final examination.</div>
   <div class="practice-layout">
     <aside class="practice-controls">
       <label for="practiceStateSelect">Choose a state</label>
       <select id="practiceStateSelect" aria-describedby="practiceDisclosure"><option value="">Choose a state</option></select>
-      <label for="practiceCourseSelect">Choose a course</label>
+      <label for="practiceCourseSelect">Choose a practice set</label>
       <select id="practiceCourseSelect" disabled><option value="">Choose a state first</option></select>
       <label for="practiceLessonSelect">Choose a lesson</label>
-      <select id="practiceLessonSelect" disabled><option value="">Choose a course first</option></select>
+      <select id="practiceLessonSelect" disabled><option value="">Choose a practice set first</option></select>
       <p id="practiceDisclosure">Free practice. Your place and answers are saved on this device only.</p>
-      <dl id="practiceRecord"><div><dt>Status</dt><dd>Choose a state to begin</dd></div></dl>
-      <a class="cta-secondary" id="practiceStatePath" href="../state-requirements/" hidden>View state licensing path</a>
+      <dl id="practiceRecord"><div><dt>Access</dt><dd>Free · no account required</dd></div></dl>
+      ${state ? `<a href="../">Browse all practice states</a>` : ""}
+      <a class="cta-secondary" id="practiceStatePath" href="${prefix}state-requirements/" hidden>View state licensing path</a>
     </aside>
     <article class="practice-reader">
       <p class="overline" id="practiceStateLabel">Free lesson and formative practice</p>
@@ -134,11 +143,26 @@ const freePracticeBody = `${pageHero("Free practice", "Practice with real StateC
       <div class="practice-bottom-nav" id="practiceBottomNav" hidden><button type="button" id="practicePreviousLesson">← Previous lesson</button><button type="button" id="practiceNextLesson">Next lesson →</button></div>
     </article>
   </div>
-</section>`;
-write("free-practice/index.html", document({ title: "Free Real Estate Practice", description: "Free StateCourse lesson and formative-practice previews for states currently in development.", body: freePracticeBody, scripts: '<script type="module" src="../free-practice.js?v=20260907-practice-repair"></script>' }));
+</section>${state ? `<section class="page-body"><h2>${esc(state.state_name)} practice topics</h2><ul>${state.topics.map(topic => `<li>${esc(topic)}</li>`).join("")}</ul></section>` : practiceCards}`;
+
+for (const state of [null, ...practiceManifest.states]) {
+  const route = state?.route ?? "free-practice/";
+  const prefix = state ? "../../" : "../";
+  write(`${route}index.html`, document({
+    title: practiceTitle(state), description: practiceDescription(state), prefix,
+    canonical: `https://statecourse.com/${route}`, practice: true, body: freePracticeBody(state, prefix),
+    scripts: `<script type="module" src="${prefix}free-practice.js?v=multi-state-practice"></script>`,
+  }));
+}
+write("sitemap.xml", `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${["", "free-practice/", ...practiceManifest.states.map(state => state.route)].map(route =>
+  `  <url><loc>https://statecourse.com/${route}</loc></url>`).join("\n")}
+</urlset>
+`);
 
 const getLicensedBody = `${pageHero("Get Licensed", "Build your state licensing path.", "Start with your jurisdiction and license goal. StateCourse will show verified requirements, available education, examinations, application milestones, and the next action.")}<section class="page-body"><div style="max-width:820px;margin:auto">${finderForm()}</div><div class="content-grid" style="margin-top:55px"><article class="content-card"><p class="overline">Step 1</p><h2>Choose your state</h2><p>Licensing titles, required education, regulators, exams, and application procedures are jurisdiction-specific.</p><a href="../state-requirements/">Compare requirements →</a></article><article class="content-card"><p class="overline">Step 2</p><h2>Review your path</h2><p>See education, examination, application, background-check, and renewal information before choosing a product.</p><a href="../courses/">View current programs →</a></article><article class="content-card"><p class="overline">Step 3</p><h2>Enroll only when approved</h2><p>Regulated course enrollment stays disabled until the exact approval record and required disclosures are active.</p><a href="${studentPortalUrl}">Returning student sign in →</a></article></div></section>`;
-write("get-licensed/index.html", document({ title: "Get Licensed", description: "Build a state-specific real estate licensing path.", active: "licensed", body: getLicensedBody, scripts: '<script src="../national.js?v=20260906-state-status" defer></script>' }));
+write("get-licensed/index.html", document({ title: "Get Licensed", description: "Build a state-specific real estate licensing path.", active: "licensed", body: getLicensedBody, scripts: '<script src="../national.js?v=multi-state-practice" defer></script>' }));
 
 const requirementRows = states.map((state) => `<tr data-state="${esc(`${state.state_name} ${state.state_code}`.toLowerCase())}" data-status="${esc(state.public_status)}" data-online="${state.asynchronous_online_allowed === true ? "yes" : state.asynchronous_online_allowed === false ? "no" : "pending"}"><td><a href="../real-estate/${slugify(state.state_name)}/">${esc(state.state_name)}</a><br/><small>${esc(state.state_code)}</small></td><td>${esc(state.regulator_name)}</td><td>${state.prelicense_hours ?? '<span class="empty-value">Pending verification</span>'}</td><td>${state.asynchronous_online_allowed === true ? "Yes — subject to approval" : state.asynchronous_online_allowed === false ? "No" : '<span class="empty-value">Pending verification</span>'}</td><td>${esc(state.final_exam_rules ?? "Pending official-source research")}</td><td><span class="status-text${state.public_status === "Approved" ? " status-approved" : ""}">${esc(state.public_status)}</span></td><td>${state.regulator_url ? officialRegulatorLinks(state) : '<span class="empty-value">Research pending</span>'}</td></tr>`).join("");
 const requirementsBody = `${pageHero("National regulatory directory", "State requirements, compared carefully.", "Search 50 states and Washington, D.C. Requirements are published only after official-source review and remain separate from StateCourse product approval status.")}<section class="page-body"><div class="page-tools"><label>Search state<input id="requirementsSearch" type="search" placeholder="State name or code"/></label><label>Status<select id="requirementsStatus"><option value="all">All statuses</option>${registry.statuses.map((status) => `<option>${esc(status)}</option>`).join("")}</select></label><label>Online education<select id="requirementsOnline"><option value="all">All</option><option value="yes">Allowed / approval-based</option><option value="pending">Pending verification</option><option value="no">Not allowed</option></select></label></div><p class="summary-line" id="requirementsSummary">${states.length} jurisdictions shown</p><div class="table-wrap"><table class="requirements-table"><thead><tr><th>State</th><th>Regulator</th><th>Pre-license hours</th><th>Online education</th><th>Final examination</th><th>StateCourse status</th><th>Official source</th></tr></thead><tbody id="requirementsRows">${requirementRows}</tbody></table></div><div class="source-box"><h2>Regulatory data rule</h2><p>Official regulators, statutes, regulations, forms, and regulator guidance control this database. “In Development” describes StateCourse work only; it does not mean a course is approved or available for enrollment.</p></div></section>`;
@@ -248,7 +272,7 @@ const priceCards = PUBLIC_PRICES.map((p) => `<article class="content-card price-
 const pricingBody = `${pageHero("Pricing", "One price per state. Everything required included.", "Each price covers the full pre-license education your state requires: every lesson, practice question, AI study coach and final examination. No upsell needed to finish.")}<section class="page-body">
 <div class="notice"><strong>Enrollment is not open yet.</strong> Prices apply once each state approves its course. Until then, every course with free practice can be tried without an account or payment.</div>
 <div class="content-grid price-grid">${priceCards}<article class="content-card price-card"><p class="overline">Mortgage / NMLS</p><h2>$${NMLS_PRICE.price}<small> + NMLS fee</small></h2><p>${esc(NMLS_PRICE.course)} &middot; ${NMLS_PRICE.hours} hours</p><p class="price-status">Coming soon &middot; awaiting approval</p></article></div>
-<div class="source-box"><h2>Try it before you pay</h2><p>Read real StateCourse lessons and answer practice questions with explanations in 14 states. No account, no payment. Practice is non-credit.</p><p><a href="../free-practice/">Start free practice &rarr;</a></p><p>Questions about pricing: <a href="tel:+13106865053">310-686-5053</a> &middot; <a href="mailto:support@statecourse.com">support@statecourse.com</a></p></div>
+<div class="source-box"><h2>Try it before you pay</h2><p>Read real StateCourse lessons and answer practice questions with explanations in ${practiceManifest.states.length} states. No account, no payment. Practice is non-credit.</p><p><a href="../free-practice/">Start free practice &rarr;</a></p><p>Questions about pricing: <a href="tel:+13106865053">310-686-5053</a> &middot; <a href="mailto:support@statecourse.com">support@statecourse.com</a></p></div>
 </section>`;
 write("pricing/index.html", document({ title: "Pricing", description: "StateCourse real estate pre-license course prices by state and NMLS continuing education pricing.", active: "pricing", body: pricingBody }));
 
@@ -294,7 +318,7 @@ for (const area of serviceAreas) {
   const areaCourses = (category?.programs ?? []).flatMap((program) => program.courses ?? []);
   const areaRecord = deriveJurisdictionRecord(areaCourses);
   const availability = area.service === "exam"
-    ? `Free lesson and formative-practice previews are available for ${freePracticeSamples.length} states currently in development. They are not licensing-exam questions and create no enrollment, credit, or certificate.`
+    ? `Free lesson and formative-practice previews are available in ${practiceManifest.states.length} states. They are not licensing-exam questions and create no enrollment, credit, or certificate.`
     : !areaRecord.hasCourseRecord
     ? `StateCourse does not offer ${area.product} in any jurisdiction yet. No course record exists, so nothing on this page is an offer, and no enrollment, credit, or certificate is available here.`
     : areaRecord.enrollmentOpen
@@ -316,7 +340,7 @@ for (const area of serviceAreas) {
     <div class="content-grid" style="margin-top:34px">${cards}</div>
     <div class="source-box"><h2>${esc(area.sourceHeading)}</h2><p>${esc(area.sourceCopy)} Compare every jurisdiction on the <a href="../state-requirements/">State Requirements</a> directory.</p></div>
   </section>`;
-  write(`${area.route}/index.html`, document({ title: area.overline, description: area.lede, active: area.active, body, scripts: '<script src="../service-area.js?v=20260907-practice-repair" defer></script>' }));
+  write(`${area.route}/index.html`, document({ title: area.overline, description: area.lede, active: area.active, body, scripts: '<script src="../service-area.js?v=multi-state-practice" defer></script>' }));
 }
 
 /* ── Mortgage / NMLS vertical ────────────────────────────────────────────────────────────────
@@ -410,10 +434,10 @@ for (const state of states) {
   const practiceSample = freePracticeByState.get(state.state_code);
   const accountAction = practiceSample
     ? ctaPanel(
-        `Start a free ${esc(state.state_name)} lesson and practice preview.`,
-        `Read a complete sample lesson from ${esc(catalogCourses.find((course) => course.course_id === practiceSample.courseId)?.course_title)} and work through its examples and formative practice without payment or enrollment.`,
+        `Start free ${esc(state.state_name)} real estate practice.`,
+        `Try ${practiceSample.question_count} original StateCourse practice questions with explanations. No account or payment is required.`,
         "Open Free Practice →",
-        `${prefix}free-practice/?state=${encodeURIComponent(state.state_code)}`,
+        `${prefix}${practiceSample.route}`,
         "Practice access is non-credit. It does not create enrollment, regulated study time, a completion certificate, or access to a protected course final examination.")
     : isMichigan
     ? michiganStatusPanel()
@@ -433,9 +457,9 @@ for (const state of states) {
   const closingAction = practiceSample
     ? ctaPanel(
         "Continue with free practice.",
-        `Return to the ${esc(state.state_name)} sample lesson whenever you want. No account or payment is required.`,
+        `Return to ${esc(state.state_name)} practice whenever you want. No account or payment is required.`,
         "Open Free Practice →",
-        `${prefix}free-practice/?state=${encodeURIComponent(state.state_code)}`,
+        `${prefix}${practiceSample.route}`,
         "This public practice preview is separate from regulated enrollment and cannot award licensing credit.")
     : isMichigan
     ? michiganStatusPanel()
@@ -447,7 +471,7 @@ for (const state of states) {
         registerHref,
         "Account creation and public previews are separate from enrollment, study time, course credit, and certificates.")
     : `<section class="state-cta"><div><p class="overline">Next step</p><h2>Compare requirements across states.</h2><p>See verified entry education, delivery rules, and regulator information for every jurisdiction while ${esc(state.state_name)} remains in development.</p><p class="cta-note">Requirement research is informational and is not a substitute for the regulator's official published requirements.</p></div><div class="cta-actions"><a class="cta-button" href="${prefix}state-requirements/">Compare State Requirements →</a><a class="cta-secondary" href="${registerHref}">Create a free account</a></div></section>`;
-  const body = `${pageHero(`${state.state_code} · ${state.public_status}`, `${state.state_name} Real Estate Licensing`, `Regulator: ${state.regulator_name}. Review the state path, current education research, and StateCourse availability before taking the next step.`, true)}<section class="page-body">${accountAction}<div class="state-summary"><aside class="state-record"><p class="overline">Jurisdiction record</p><dl><div><dt>Required education</dt><dd>${state.prelicense_hours ? `${esc(state.prelicense_hours)} hours` : "Pending verification"}</dd></div><div><dt>Examination</dt><dd>${esc(state.final_exam_rules ?? "Pending official-source research")}</dd></div><div><dt>Delivery format</dt><dd>${state.allowed_delivery_methods?.length ? esc(state.allowed_delivery_methods.join(" · ")) : state.asynchronous_online_allowed === true ? "Online delivery allowed subject to approval" : state.asynchronous_online_allowed === false ? "Online delivery not allowed" : "Pending verification"}</dd></div><div><dt>StateCourse status</dt><dd>${esc(state.public_status)}</dd></div><div><dt>Course approval</dt><dd>${courseApprovalLine}</dd></div><div><dt>Course availability</dt><dd>${esc(enrollmentLine)}</dd></div><div><dt>Last regulatory review</dt><dd>${esc(stateReviewDate)}</dd></div></dl></aside><div><p class="overline">Your licensing path</p><ol class="license-path">${genericPath.map(([heading, copy]) => `<li><h3>${esc(heading)}</h3><p>${esc(copy)}</p></li>`).join("")}</ol></div></div><section class="course-list"><p class="overline">StateCourse programs</p><h2>${stateCourses.length ? `Programs currently in development for ${esc(state.state_name)}.` : "No approved StateCourse program yet."}</h2>${courseRows}</section><div class="source-box"><h2>Official source and verification</h2><p>${official}<br/>Last internal regulatory review: ${esc(stateReviewDate)}. StateCourse status is independent from regulator approval. <a href="${prefix}approvals/">Check our approval record in the regulator's own database →</a></p></div>${closingAction}</section>`;
+  const body = `${pageHero(`${state.state_code} · ${practiceSample ? "Free practice available" : state.public_status}`, `${state.state_name} Real Estate Licensing`, `Regulator: ${state.regulator_name}. Review the state path, current education research, and StateCourse availability before taking the next step.`, true)}<section class="page-body">${accountAction}<div class="state-summary"><aside class="state-record"><p class="overline">Jurisdiction record</p><dl><div><dt>Required education</dt><dd>${state.prelicense_hours ? `${esc(state.prelicense_hours)} hours` : "Pending verification"}</dd></div><div><dt>Examination</dt><dd>${esc(state.final_exam_rules ?? "Pending official-source research")}</dd></div><div><dt>Delivery format</dt><dd>${state.allowed_delivery_methods?.length ? esc(state.allowed_delivery_methods.join(" · ")) : state.asynchronous_online_allowed === true ? "Online delivery allowed subject to approval" : state.asynchronous_online_allowed === false ? "Online delivery not allowed" : "Pending verification"}</dd></div><div><dt>Paid course status</dt><dd>${esc(state.public_status)}</dd></div><div><dt>Course approval</dt><dd>${courseApprovalLine}</dd></div><div><dt>Course availability</dt><dd>${esc(enrollmentLine)}</dd></div><div><dt>Last regulatory review</dt><dd>${esc(stateReviewDate)}</dd></div></dl></aside><div><p class="overline">Your licensing path</p><ol class="license-path">${genericPath.map(([heading, copy]) => `<li><h3>${esc(heading)}</h3><p>${esc(copy)}</p></li>`).join("")}</ol></div></div><section class="course-list"><p class="overline">StateCourse programs</p><h2>${stateCourses.length ? `Programs currently in development for ${esc(state.state_name)}.` : "No approved StateCourse program yet."}</h2>${courseRows}</section><div class="source-box"><h2>Official source and verification</h2><p>${official}<br/>Last internal regulatory review: ${esc(stateReviewDate)}. StateCourse status is independent from regulator approval. <a href="${prefix}approvals/">Check our approval record in the regulator's own database →</a></p></div>${closingAction}</section>`;
   write(`real-estate/${slugify(state.state_name)}/index.html`, document({ title: `${state.state_name} Real Estate Licensing`, description: `${state.state_name} real estate licensing requirements and StateCourse program status.`, prefix, body }));
 }
 
@@ -480,7 +504,9 @@ for (const course of catalogCourses) {
           <li><h3>Choose the available access</h3><p>Free training enrolls you without checkout or payment. Paid education requires the course approval and payment controls to be enabled separately.</p></li>
           <li><h3>Open your course</h3><p>Your course, version and saved progress appear in My Courses. Free training does not earn regulatory credit.</p></li>
         </ol></div>`;
-  const practiceUrl = `${prefix}free-practice/?state=${encodeURIComponent(course.state_id)}&amp;course=${encodeURIComponent(course.course_id)}`;
+  const practiceUrl = WITHHELD_PRACTICE_COURSES.includes(course.course_id)
+    ? `${prefix}${freePracticeByState.get(course.state_id).route}`
+    : `${prefix}free-practice/?state=${encodeURIComponent(course.state_id)}&amp;course=${encodeURIComponent(course.course_id)}`;
   const courseActions = isMichigan
     ? `<div class="content-grid">
         <article class="content-card"><p class="overline">Free practice</p><h2>Open Michigan lessons and practice</h2><p>Read lessons and answer questions with explanations. Free practice, with no account or payment required.</p><a href="${practiceUrl}">Start Free Practice →</a></article>

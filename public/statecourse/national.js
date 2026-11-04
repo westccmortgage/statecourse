@@ -28,8 +28,8 @@ const STATE_ACCESS = Object.freeze({
     message: (state) => `${state.state_name}: Available. Review the current approved offering and enrollment status.`,
   },
   development: {
-    optionLabel: "In development · Free practice",
-    message: (state) => `${state.state_name}: In development — free practice access only. No payment, enrollment, licensing credit, or certificate.`,
+    optionLabel: "Free practice available",
+    message: (state) => `${state.state_name}: Free practice available. No payment, enrollment, licensing credit, or certificate.`,
   },
   coming: {
     optionLabel: "Coming soon",
@@ -37,9 +37,9 @@ const STATE_ACCESS = Object.freeze({
   },
 });
 
-function classifyStateAccess(state, catalogStateCodes) {
+function classifyStateAccess(state, practiceStateCodes) {
   if (state.public_status === "Approved") return "available";
-  if (catalogStateCodes.has(state.state_code)) return "development";
+  if (practiceStateCodes.has(state.state_code)) return "development";
   return "coming";
 }
 
@@ -176,22 +176,17 @@ function updateGoalOptions(intent) {
 
 async function loadStates() {
   try {
-    const [registryResponse, catalogResponse] = await Promise.all([
+    const [registryResponse, practiceResponse] = await Promise.all([
       fetch(new URL("data/state-registry.json", platformRoot)),
-      fetch(new URL("data/course-catalog.json", platformRoot)),
+      fetch(new URL("data/free-practice-catalog.json", platformRoot), {cache:"no-store"}),
     ]);
-    if (!registryResponse.ok || !catalogResponse.ok) throw new Error("State availability unavailable");
+    if (!registryResponse.ok || !practiceResponse.ok) throw new Error("State availability unavailable");
     const { states } = await registryResponse.json();
-    const catalog = await catalogResponse.json();
-    const catalogStateCodes = new Set(
-      (catalog.categories || [])
-        .filter((category) => category.category_id === 'real-estate')
-        .flatMap((category) => category.programs || [])
-        .flatMap((program) => (program.courses || []).map((course) => course.state_id || program.state_code))
-    );
+    const practice = await practiceResponse.json();
+    const practiceStateCodes = new Set(practice.states.map((state) => state.state_code));
     const jurisdictions = [...states].sort((a, b) => a.state_name.localeCompare(b.state_name));
     for (const state of jurisdictions) {
-      const access = classifyStateAccess(state, catalogStateCodes);
+      const access = classifyStateAccess(state, practiceStateCodes);
       const option = document.createElement("option");
       option.value = state.state_code;
       option.dataset.slug = slugify(state.state_name);
@@ -211,7 +206,7 @@ stateSelect?.addEventListener("change", () => {
   const selected = stateSelect.selectedOptions[0];
   const access = selected?.dataset.access;
   if (!selected?.value || !STATE_ACCESS[access]) {
-    setFinderMessage("Choose an Available or In development state. Coming soon states are listed but cannot be selected.");
+    setFinderMessage("Choose a state with available education or free practice.");
     return;
   }
   setFinderMessage(STATE_ACCESS[access].message({ state_name: selected.dataset.stateName }), access);
@@ -223,7 +218,7 @@ finder?.addEventListener("submit", (event) => {
   event.preventDefault();
   const selected = stateSelect.selectedOptions[0];
   if (!selected?.value) {
-    setFinderMessage("Choose an Available or In development state to continue.");
+    setFinderMessage("Choose a state with available education or free practice.");
     stateSelect.focus();
     return;
   }

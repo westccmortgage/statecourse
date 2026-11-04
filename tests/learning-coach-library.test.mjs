@@ -6,6 +6,7 @@ import library from '../config/learning-coach/library.json' with {type:'json'};
 import {resolveContext,coach} from '../netlify/functions/_lib/learning-coach.mjs';
 import {getNmlsReviewCourse} from '../netlify/functions/_lib/nmls-review-content.mjs';
 import {NMLS_TRAINING_COURSE} from '../config/nmls-course-identity.mjs';
+import {PRACTICE_SOURCES,WITHHELD_PRACTICE_COURSES} from '../config/free-practice-sources.mjs';
 const publicLessons=library.lessons.filter(l=>l.access==='public_practice'),privateLessons=library.lessons.filter(l=>l.access==='authenticated_training');
 const body=l=>({requestId:'11111111-1111-4111-8111-111111111111',courseId:l.courseId,state:l.state,lessonId:l.lessonId,version:l.version,digest:l.digest,conceptId:l.id,questionId:null,selected:null,message:'Explain this lesson.',consent:true});
 test('chunking preserves every normalized character and enforces hard bounds',()=>{
@@ -15,10 +16,15 @@ test('chunking preserves every normalized character and enforces hard bounds',()
  assert.ok(chunks.every(c=>c.excerpt.isWellFormed()));
 });
 test('all authored practice lessons and mortgage teaching units are separately pinned',()=>{
- assert.equal(publicLessons.length,284);assert.equal(privateLessons.length,45);assert.equal(new Set(publicLessons.map(l=>l.courseId)).size,30);
+ const expected = PRACTICE_SOURCES.flatMap(source =>
+  fs.readdirSync(source.curriculumDir).filter(file=>/^(module|lesson)-\d+\.md$/.test(file)).map(file=>
+   `lesson:${source.courseId}:${file.slice(0,-3)}`));
+ assert.deepEqual(publicLessons.map(lesson=>lesson.id).sort(),expected.sort());
+ assert.equal(privateLessons.length,45);
+ for(const courseId of WITHHELD_PRACTICE_COURSES)assert.ok(publicLessons.every(lesson=>lesson.courseId!==courseId));
  for(const l of library.lessons){const {digest:hash,...data}=l;assert.equal(hash,digest(JSON.stringify(data)));assert.ok(l.chunks.length);assert.ok(l.chunks.every(c=>c.excerpt.length<=1800));if(l.access==='public_practice')assert.equal(digest(fs.readFileSync(l.sourcePath,'utf8')),l.lessonDigest);}
  const publicIndex=JSON.parse(fs.readFileSync('public/statecourse/learning-coach-library.json','utf8'));
- assert.equal(publicIndex.contexts.length,284);assert.ok(publicIndex.contexts.every(c=>!c.courseId.startsWith('nmls')));
+ assert.deepEqual(publicIndex.contexts.map(entry=>entry.id).sort(),expected);assert.ok(publicIndex.contexts.every(c=>!c.courseId.startsWith('nmls')));
  assert.doesNotMatch(JSON.stringify(publicIndex),/"excerpt"|"correctChoice"|"solution"/);
  assert.doesNotMatch(JSON.stringify(library),/"correctChoice"\s*:|"actionQuestion"\s*:|"bank"\s*:/);
  const national=getNmlsReviewCourse(NMLS_TRAINING_COURSE.contentKey),units=national.modules.flatMap(m=>m.units);

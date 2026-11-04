@@ -9,6 +9,8 @@ import {instructions} from '../netlify/functions/_lib/learning-coach-provider.mj
 import {run,makeInput,assess} from '../experiments/lesson-coach/compare.mjs';
 import {cases} from '../experiments/lesson-coach/cases.mjs';
 import {portfolioCases} from '../experiments/lesson-coach/portfolio-cases.mjs';
+import {PRACTICE_SOURCES} from '../config/free-practice-sources.mjs';
+import {NMLS_TRAINING_COURSE} from '../config/nmls-course-identity.mjs';
 const answer={status:'answer',explanation:'Review attachment to land.',sourceIds:['property-lesson'],nextStep:'Read the source.'};
 test('production Gemini uses the model-compatible thinking control while retaining the token cap and schema',async()=>{
  for(const [model,thinkingConfig] of [['gemini-2.5-flash-lite',{thinkingBudget:0}],['gemini-3.5-flash-lite',{thinkingLevel:'minimal'}]]){
@@ -46,9 +48,11 @@ test('offline run never requires credentials; paid runs require prices and canno
   assert.ok(live.results.every(r=>r.status==='missing_verified_prices'&&r.items.length===0));
  }finally{fs.rmSync(dir,{recursive:true,force:true});}
 });
-test('portfolio comparison covers every catalog course and national mortgage module with bounded teaching-only input',()=>{
- assert.equal(portfolioCases.length,50);const inputs=portfolioCases.map(item=>makeInput(item));
- assert.equal(new Set(inputs.map(x=>x.context.courseId)).size,31);
+test('portfolio comparison covers each public coach source and national mortgage module with bounded teaching-only input',()=>{
+ assert.equal(portfolioCases.length,cases.length+PRACTICE_SOURCES.length+8);
+ const inputs=portfolioCases.map(item=>makeInput(item));
+ assert.deepEqual([...new Set(inputs.map(x=>x.context.courseId))].sort(),
+  [...PRACTICE_SOURCES.map(source=>source.courseId),NMLS_TRAINING_COURSE.id].sort());
  assert.equal(portfolioCases.filter(c=>c.contextId?.includes('nmls')).length,8);
  for(const {input}of inputs){assert.ok(Buffer.byteLength(JSON.stringify(input))<=14000);assert.ok(input.sources.length);assert.doesNotMatch(JSON.stringify(input),/"correctChoice"\s*:|"actionQuestion"\s*:|N26-FIN-/);}
 });

@@ -8,6 +8,6 @@ for(const lesson of library.lessons){
  }
 }
 const sample=(lesson,index)=>({id:`portfolio-${index}-${lesson.courseId}-${lesson.lessonId}`,contextId:lesson.id,message:`Explain one important distinction from "${lesson.title}" using only this lesson. Give a short, clearly hypothetical application. State if the sources do not support an answer.`,expected:'review'});
-// 30 catalog courses, all eight national mortgage modules, plus the 12 targeted
+// Public coach-enabled courses, all eight national mortgage modules, plus the 12 targeted
 // misconception/refusal/injection/language cases. No learner or exam records.
 export const portfolioCases=[...cases,...[...courses.values(),...modules.values()].map(sample)];

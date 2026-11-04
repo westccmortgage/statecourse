@@ -30,7 +30,7 @@ for (const area of areas) {
   test(`${area.route} states availability from the catalog, not from copy`, () => {
     const html = read(`${area.route}/index.html`);
     if (area.service === "exam") {
-      assert.match(html, new RegExp(`available for ${practiceCatalog.samples.length} states currently in development`));
+      assert.match(html, new RegExp(`available in ${practiceCatalog.states.length} states`));
       assert.match(html, /not licensing-exam questions/i);
       return;
     }

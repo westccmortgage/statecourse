@@ -6,11 +6,13 @@ const base=new URL('./',import.meta.url), $=id=>document.getElementById(id);
 const stateSelect=$('practiceStateSelect'), courseSelect=$('practiceCourseSelect'), lessonSelect=$('practiceLessonSelect');
 const content=$('practiceContent'), quiz=$('practiceQuiz'), message=$('practiceMessage');
 const activitiesView=$('practiceActivities');
+const landingState=document.querySelector('[data-free-practice]').dataset.state;
+let practiceStates=[];
 let samples=[], sample=null, course=null, sections=[], sectionIndex=0, questionIndex=0, mode='read', answers={}, position={}, pending=null, requestId=0;
 const storageKey=()=> 'statecourse:free-practice:v2:'+sample.course_id+':'+sample.revision;
 const currentQuestions=()=>course?.questions.filter(q=>q.lesson_id===lessonSelect.value)??[];
 const currentActivities=()=>course?.activities?.filter(a=>a.lesson_id===lessonSelect.value)??[];
-const coach=createLearningCoach({anchor:quiz,getContext:()=>({courseId:sample?.course_id,lessonId:lessonSelect.value,lessonDigest:course?.lessons.find(l=>l.id===lessonSelect.value)?.sha256,question:mode==='quiz'?currentQuestions()[questionIndex]:null,selected:mode==='quiz'?answers[currentQuestions()[questionIndex]?.id]?.selected:null}),goToQuestion:id=>{const index=currentQuestions().findIndex(q=>q.id===id);if(index<0)return;questionIndex=index;mode='quiz';render();quiz.scrollIntoView({block:'start'});}});
+const coach=createLearningCoach({anchor:quiz,getContext:()=>sample?.practice_only||!course||!lessonSelect.value?null:({courseId:sample?.course_id,lessonId:lessonSelect.value,lessonDigest:course?.lessons.find(l=>l.id===lessonSelect.value)?.sha256,question:mode==='quiz'?currentQuestions()[questionIndex]:null,selected:mode==='quiz'?answers[currentQuestions()[questionIndex]?.id]?.selected:null}),goToQuestion:id=>{const index=currentQuestions().findIndex(q=>q.id===id);if(index<0)return;questionIndex=index;mode='quiz';render();quiz.scrollIntoView({block:'start'});}});
 function save(){
   if(!sample||!course)return;
   position={lesson:lessonSelect.value,section:sectionIndex,question:questionIndex,mode};
@@ -71,31 +73,33 @@ async function openLesson(id,restore=false){
     const response=await fetch(lessonUrl,{signal:pending.signal});if(!response.ok)throw Error('Lesson unavailable');
     const markdown=await response.text();if(token!==requestId)return;
     sections=splitSections(markdown);sectionIndex=restore&&position.lesson===id?position.section??0:0;questionIndex=restore&&position.lesson===id?position.question??0:0;
-    message.textContent=(course.coverage==='practice collection'?'Focused practice collection; the full qualifying course is still being written.':'Read the available curriculum at your own pace.')+' These exercises are formative practice, not a licensing examination.';
+    message.textContent=(course.practice_only?'Review the topic or start with the questions.':course.coverage==='practice collection'?'Focused practice collection; the full qualifying course is still being written.':'Read the available curriculum at your own pace.')+' These exercises are formative practice, not a licensing examination.';
     render();
   }catch(error){if(error.name!=='AbortError')message.textContent='Could not load this lesson. Select it again to retry.';}
 }
 async function openCourse(id,requestedLesson=null,requestedMode=null){
-  const entry=samples.find(s=>s.course_id===id);if(!entry)return;
+  const entry=samples.find(s=>s.course_id===id&&s.state_code===stateSelect.value);if(!entry)return;
   const token=++requestId;pending?.abort();pending=new AbortController();sample=entry;course=null;answers={};position={};sections=[];
   coach.update();courseSelect.value=id;lessonSelect.disabled=true;lessonSelect.replaceChildren();
   for(const id of ['practiceSectionNav','practiceMode','practiceBottomNav'])$(id).hidden=true;
   content.replaceChildren();quiz.replaceChildren();activitiesView.replaceChildren();$('practiceProgress').textContent='';
-  $('practiceStateLabel').textContent=sample.state_name+' · In development · Free practice';$('practiceCourseTitle').textContent=sample.course_title;
+  $('practiceStateLabel').textContent=sample.state_name+' · Free practice';$('practiceCourseTitle').textContent=sample.course_title;
   message.textContent='Loading course…';
   $('practiceRecord').innerHTML='<div><dt>Access</dt><dd>Free · no account required</dd></div><div><dt>Material</dt><dd>'+sample.lesson_count+' lessons · '+sample.question_count+' questions</dd></div><div><dt>Credit</dt><dd>None — practice only</dd></div>';
   $('practiceStatePath').href=new URL('real-estate/'+sample.state_name.toLowerCase().replace(/[^a-z0-9]+/g,'-')+'/',base);$('practiceStatePath').hidden=false;
   try{
     const courseUrl=new URL(sample.practice_url,base);courseUrl.searchParams.set('v',sample.revision);
     const response=await fetch(courseUrl,{signal:pending.signal});if(!response.ok)throw Error('Course unavailable');
-    const data=await response.json();if(token!==requestId)return;course=data;
+    const data=await response.json();if(token!==requestId)return;
+    if(data.state_code!==entry.state_code||data.course_id!==entry.course_id)throw Error('Practice set identity mismatch');
+    course=data;
     try{({answers,position}=restorePractice(JSON.parse(localStorage.getItem(storageKey())||'{}'),course.questions));}catch{answers={};position={};}
     for(const [i,l] of course.lessons.entries())lessonSelect.add(new Option((i+1)+'. '+l.title,l.id));
     lessonSelect.disabled=false;
     const preferredMode=requestedMode??position.mode;
     mode=preferredMode==='activities'&&course.activities?.length?'activities':preferredMode==='quiz'?'quiz':'read';
     const lessonId=course.lessons.find(l=>l.id===requestedLesson)?.id??course.lessons.find(l=>l.id===position.lesson)?.id??course.lessons[0].id;
-    await openLesson(lessonId,true);document.title=sample.course_title+' — Free Practice | StateCourse';
+    await openLesson(lessonId,true);
   }catch(error){if(error.name!=='AbortError')message.textContent='Could not load this course. Select it again to retry.';}
 }
 async function selectState(code,courseId=null,lessonId=null,requestedMode=null){
@@ -104,7 +108,15 @@ async function selectState(code,courseId=null,lessonId=null,requestedMode=null){
   available.forEach(s=>courseSelect.add(new Option(s.course_title,s.course_id)));
   await openCourse(available.find(s=>s.course_id===courseId)?.course_id??available[0].course_id,lessonId,requestedMode);
 }
-stateSelect.addEventListener('change',()=>selectState(stateSelect.value));
+stateSelect.addEventListener('change',()=>{
+  const code=stateSelect.value;
+  if(landingState&&code!==landingState){
+    const target=practiceStates.find(state=>state.state_code===code);
+    if(target)location.assign(new URL(target.route,base));
+    return;
+  }
+  selectState(code);
+});
 courseSelect.addEventListener('change',()=>openCourse(courseSelect.value));
 lessonSelect.addEventListener('change',()=>openLesson(lessonSelect.value));
 $('practiceReadMode').addEventListener('click',()=>{mode='read';render();});
@@ -115,6 +127,7 @@ $('practiceNext').addEventListener('click',()=>{sectionIndex++;render();content.
 for(const [id,d] of [['practicePreviousLesson',-1],['practiceNextLesson',1]])$(id).addEventListener('click',()=>{const i=course.lessons.findIndex(l=>l.id===lessonSelect.value);openLesson(course.lessons[i+d]?.id);});
 quiz.addEventListener('submit',event=>{
   event.preventDefault();const raw=new FormData(event.target).get('answer'),q=currentQuestions()[questionIndex];
+  if(!q)return;
   const result=gradePractice(q,raw===null?null:Number(raw));
   if(!result){$('practiceFeedback').textContent='Choose an answer before checking.';return;}
   const prior=answers[q.id];answers[q.id]={selected:result.selected,firstSelected:prior?.firstSelected??result.selected,attempts:(prior?.attempts??0)+1};
@@ -129,14 +142,19 @@ quiz.addEventListener('click',event=>{
   render();
   const focusTarget=action==='read'?content:quiz.querySelector('legend');if(focusTarget){focusTarget.tabIndex=-1;focusTarget.focus({preventScroll:true});}
 });
-async function restoreUrl(){const p=new URL(location.href).searchParams,byCourse=samples.find(s=>s.course_id===p.get('course')),code=byCourse?.state_code??p.get('state')?.toUpperCase();if(code)await selectState(code,p.get('course'),p.get('lesson'),p.get('mode'));}
+async function restoreUrl(){
+  const params=new URL(location.href).searchParams;
+  const courseId=params.get('course');
+  const code=landingState??params.get('state')?.toUpperCase()??samples.find(s=>s.course_id===courseId)?.state_code;
+  if(code)await selectState(code,courseId,params.get('lesson'),params.get('mode')??(landingState?'quiz':null));
+}
 window.addEventListener('popstate',restoreUrl);
 async function load(){
   try{
     const response=await fetch(new URL('data/free-practice-catalog.json',base),{cache:'no-store'});if(!response.ok)throw Error('Catalog unavailable');
-    ({samples}=await response.json());const states=[...new Map(samples.map(s=>[s.state_code,s])).values()].sort((a,b)=>a.state_name.localeCompare(b.state_name));
+    ({samples,states:practiceStates}=await response.json());
     stateSelect.options[0].disabled=true;
-    states.forEach(s=>stateSelect.add(new Option(s.state_name+' — In development · Free practice',s.state_code)));await restoreUrl();
+    practiceStates.forEach(s=>stateSelect.add(new Option(s.state_name,s.state_code)));await restoreUrl();
   }catch{message.textContent='Free practice could not load. Refresh the page to retry.';}
 }
 load();

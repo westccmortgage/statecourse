@@ -30,7 +30,7 @@ const fieldSets = {
   exam: (state) => [
     ["Regulator", escapeHtml(state.regulator_name)],
     ["Required pre-license education", state.prelicense_hours ? `${escapeHtml(state.prelicense_hours)} hours before the licensing examination` : "Pending verification"],
-    ["StateCourse free practice", practiceStates.has(state.state_code) ? "Free lesson and formative-practice preview" : "Coming soon"],
+    ["StateCourse free practice", practiceStates.has(state.state_code) ? "Available · no account required" : "No public practice available"],
     ["StateCourse education status", escapeHtml(state.public_status)],
   ],
   renew: (state) => [
@@ -47,7 +47,7 @@ const followUp = {
 };
 
 let jurisdictions = [];
-let practiceStates = new Set();
+let practiceStates = new Map();
 
 function renderState(stateCode) {
   const state = jurisdictions.find((entry) => entry.state_code === stateCode);
@@ -70,7 +70,7 @@ function renderState(stateCode) {
       ? `<a class="cta-button" href="${escapeHtml(state.regulator_url)}" target="_blank" rel="noopener">Open the ${escapeHtml(state.state_name)} regulator ↗</a>`
       : "";
     const practice = service === "exam" && practiceStates.has(state.state_code)
-      ? `<a class="cta-button" href="${platformRoot.href}free-practice/?state=${encodeURIComponent(state.state_code)}">Start free ${escapeHtml(state.state_name)} practice →</a>`
+      ? `<a class="cta-button" href="${platformRoot.href}${practiceStates.get(state.state_code).route}">Start free ${escapeHtml(state.state_name)} practice →</a>`
       : "";
     links.innerHTML = `${practice}${official}<a class="cta-secondary" href="${platformRoot.href}real-estate/${slugify(state.state_name)}/">See the ${escapeHtml(state.state_name)} licensing path</a>`;
   }
@@ -86,12 +86,12 @@ async function loadJurisdictions() {
   try {
     const [registryResponse, practiceResponse] = await Promise.all([
       fetch(new URL("data/state-registry.json", platformRoot)),
-      fetch(new URL("data/free-practice-catalog.json", platformRoot)),
+      fetch(new URL("data/free-practice-catalog.json", platformRoot), {cache:"no-store"}),
     ]);
     if (!registryResponse.ok || !practiceResponse.ok) throw new Error("State registry unavailable");
     const { states } = await registryResponse.json();
     const practiceCatalog = await practiceResponse.json();
-    practiceStates = new Set((practiceCatalog.samples || []).map((sample) => sample.state_code));
+    practiceStates = new Map(practiceCatalog.states.map((state) => [state.state_code, state]));
     jurisdictions = [...states].sort((a, b) => a.state_name.localeCompare(b.state_name));
     stateSelect.insertAdjacentHTML("beforeend", jurisdictions
       .map((state) => `<option value="${escapeHtml(state.state_code)}">${escapeHtml(state.state_name)}</option>`)
