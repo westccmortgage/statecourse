@@ -91,7 +91,7 @@ async function openCourse(id,requestedLesson=null,requestedMode=null){
     const courseUrl=new URL(sample.practice_url,base);courseUrl.searchParams.set('v',sample.revision);
     const response=await fetch(courseUrl,{signal:pending.signal});if(!response.ok)throw Error('Course unavailable');
     const data=await response.json();if(token!==requestId)return;
-    if(data.state_code!==entry.state_code||data.course_id!==entry.course_id)throw Error('Practice set identity mismatch');
+    if(data.state_code!==entry.state_code||data.course_id!==entry.course_id||data.questions.some(q=>q.state_code!==entry.state_code))throw Error('Practice set identity mismatch');
     course=data;
     try{({answers,position}=restorePractice(JSON.parse(localStorage.getItem(storageKey())||'{}'),course.questions));}catch{answers={};position={};}
     for(const [i,l] of course.lessons.entries())lessonSelect.add(new Option((i+1)+'. '+l.title,l.id));

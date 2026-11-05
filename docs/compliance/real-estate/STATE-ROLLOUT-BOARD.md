@@ -2,6 +2,10 @@
 
 # Real Estate State Rollout Board
 
+## Public-practice verification follow-up — November 4, 2026
+
+The existing `codex/multi-state-free-practice-expansion` implementation is preserved, including Pennsylvania's current-law public overrides and Washington's narrower 100-question collection. Nine priority states have 1,933 public questions. Current NC syllabus/rules and WA objective PDFs match retained bytes. Added strict state/provenance/answer and no-account/no-credit/no-certificate validation, negative checks and responsive header corrections. 79 focused tests, both builds and local Chrome acceptance pass; the broad suite retains the same 27 main-baseline failures, with no new failures. No paid approval, filing, completion, commerce, production setting, merge or deployment changed. Washington paid conformity remains NO-GO. [Readiness](../../free-practice/MULTI-STATE-READINESS.md), [sources](../../free-practice/SOURCE-REVIEW.md), [validation](../../free-practice/VALIDATION.md).
+
 ## Public free practice expansion — November 3, 2026
 
 Nine priority-state collections are prepared on the review branch. Public practice uses original questions with no account, qualifying credit or certificate. Washington uses a separate, source-checked collection while its inherited paid-course work remains NO-GO. Pennsylvania’s public licensing lesson follows the current 75-hour and five-year guidance. See the [state readiness and evidence](../../free-practice/MULTI-STATE-READINESS.md). Production deployment and paid-course approval are separate decisions.

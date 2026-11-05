@@ -42,6 +42,7 @@ next-env.d.ts
 /.netlify/
 __pycache__/
 /outputs/
+/reports/free-practice-expansion/*.png
 /work/
 
 # Review renders and handoff archives are reproducible local delivery artifacts.

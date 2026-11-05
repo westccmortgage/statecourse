@@ -2,6 +2,10 @@
 
 # StateCourse Master Launch Dashboard
 
+## Public-practice verification — November 4, 2026
+
+The existing expansion branch now has additional source, payload, state-isolation and mobile verification. TX/FL/CO/AZ/NC/GA/PA/WA/NY total 1,933 bounded public-practice questions; the inherited Washington draft remains withheld and paid conformity remains NO-GO. Local acceptance and baseline comparison are recorded in [validation](../free-practice/VALIDATION.md). No production deployment, merge, regulator filing, spending, paid approval, enrollment or credit control changed.
+
 ## Production AI pilot verification — October 19, 2026 (Los Angeles)
 
 Production coach pilot is enabled on code `bf0433a4d7cc1fafa2f370fc43ced76142fcf36c` (ready deploy `6ad6e8e5ebf75c110bf19d98`). Real OpenAI and current Gemini 3.5 Flash-Lite answers were observed in Real Estate and authenticated Mortgage, with matching lesson excerpts, named consent, refusal samples and desktop/mobile inspection. Lesson change, pause and sign-out cleared generated answers; revisit after sign-out rejected the private session. OpenAI/gpt-4.1-mini is restored as default. Service-only RLS configuration preserves the shared $1/day cap without extra Lambda variables; existing provider keys are unchanged. Production ledger:11 complete,2 failed, $0.095761 conservatively reserved.44 targeted tests and the production build pass; lint unavailable (eslint absent). Authenticated protected build.json now independently confirms bf0433a / main / production, builtAt2026-10-20T04:07:15Z, after owner reauthentication at approximately21:26 Los Angeles. Actual enrollment revocation and portfolio-wide semantic/learning quality remain unverified. No knowledge-check answer graded, unit completed, payment or regulatory-credit/approval control changed; Mortgage remains 0/45 units, 0/8 practices. This is functional non-credit pilot evidence, not regulatory launch approval.

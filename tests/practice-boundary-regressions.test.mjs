@@ -17,6 +17,7 @@ const load = relative => import(pathToFileURL(path.join(root, relative)));
 const { checkPracticeTask } = await load('public/statecourse/practice-activities.mjs');
 const { createTexasReviewerEngine } = await load('config/texas/complete-course-reviewer-engine.mjs');
 const { TEXAS_FULL_PRACTICE_SOURCES, loadTexasPracticeActivities } = await load('scripts/lib/free-practice-activities.mjs');
+const { STATE_REFERENCES } = await load('config/free-practice/references.mjs');
 const at = '2026-09-07T12:00:00.000Z';
 
 const decimalCases = [
@@ -121,7 +122,8 @@ test('actual generated TX3 payloads equal explicit formative sources and revisio
       if (seenPrompts.has(promptKey)) continue; seenPrompts.add(promptKey);
       const lesson = item.module ?? 'module-' + group.match(/\d+/)[0].padStart(2, '0');
       const projected = { id: `${source.courseId}:${item.id}`, lesson_id: lesson, prompt: item.prompt,
-        choices: [...item.choices], solution: item.correctChoice, explanation: item.rationale, sources: item.sources ?? [] };
+        choices: [...item.choices], solution: item.correctChoice, explanation: item.rationale, sources: item.sources?.length ? item.sources : STATE_REFERENCES.TX,
+        state_code:'TX',category:payload.lessons.find(l=>l.id===lesson).title,curriculum_reference:`${source.curriculumDir}/${lesson}.md` };
       known.set(projected.id, projected);
     }
     assert.equal(payload.questions.length, known.size, source.courseId + ': omitted or foreign formative questions');

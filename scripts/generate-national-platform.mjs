@@ -112,7 +112,7 @@ const practiceCards = `<section class="page-body" aria-labelledby="practice-stat
 
 const freePracticeBody = (state, prefix) => `${pageHero("Free practice", practiceTitle(state), practiceDescription(state))}
 <section class="page-body practice-page" data-free-practice${state ? ` data-state="${state.state_code}"` : ""}>
-  <div class="notice"><strong>Free practice. No account required.</strong> These are original StateCourse educational questions. This is not an official state exam. Practice does not create enrollment, regulated study time, licensing credit, a completion certificate, or access to any protected course final examination.</div>
+  <div class="notice"><strong>Free practice. No account required.</strong> These are original StateCourse educational questions. This is not an official state exam. Practice does not create enrollment, regulated study time, licensing credit, a completion certificate, or access to any protected course final examination. No regulator approval or endorsement is claimed.</div>
   <div class="practice-layout">
     <aside class="practice-controls">
       <label for="practiceStateSelect">Choose a state</label>

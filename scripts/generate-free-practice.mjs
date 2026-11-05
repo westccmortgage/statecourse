@@ -5,6 +5,8 @@ import { createHash } from 'node:crypto';
 import { PRACTICE_COLLECTIONS } from '../config/free-practice/collections.mjs';
 import { PRACTICE_SOURCES, WITHHELD_PRACTICE_COURSES } from '../config/free-practice-sources.mjs';
 import { loadTexasPracticeActivities } from './lib/free-practice-activities.mjs';
+import { STATE_REFERENCES, PRACTICE_DISCLOSURE } from '../config/free-practice/references.mjs';
+import { validatePracticePayload } from './lib/validate-free-practice.mjs';
 
 const digest = text => createHash('sha256').update(text).digest('hex');
 
@@ -59,12 +61,12 @@ export async function buildFreePractice({root,states,catalogCourses,write}) {
       const groupNumber = String(group).match(/\d+/)?.[0];
       const lessonId = item.module ?? (groupNumber ? `${files[0].startsWith('lesson')?'lesson':'module'}-${groupNumber.padStart(2,'0')}` : lessons[0].id);
       if (!lessons.some(l => l.id === lessonId)) throw new Error(`Question has no lesson: ${source.courseId}/${lessonId}`);
-      return {id:`${source.courseId}:${item.id ?? index+1}`,lesson_id:lessonId,prompt:item.prompt,choices:[...item.choices],solution:item.correctChoice,explanation:item.rationale,sources:item.sources ?? []};
+      return {id:`${source.courseId}:${item.id ?? index+1}`,lesson_id:lessonId,prompt:item.prompt,choices:[...item.choices],solution:item.correctChoice,explanation:item.rationale,sources:item.sources?.length ? item.sources : STATE_REFERENCES[state.state_code] ?? [],state_code:state.state_code,category:item.category ?? lessons.find(l=>l.id===lessonId).title,curriculum_reference:source.lessonOverrides?.[lessonId+'.md'] ?? `${source.curriculumDir}/${lessonId}.md`};
     }).filter(Boolean);
     if (!questions.length) throw new Error(`No formative questions: ${source.courseId}`);
     const activities = source.scenarioPath ? await loadTexasPracticeActivities({root,courseId:source.courseId,lessonIds:lessons.map(l=>l.id)}) : [];
     const practice_url = `free-practice/courses/${course.course_id}.json`;
-    const payload = {course_id:course.course_id,course_title:course.course_title,state_code:state.state_code,state_name:state.state_name,coverage:source.coverage,lessons,questions,activities};
+    const payload = validatePracticePayload({course_id:course.course_id,course_title:course.course_title,state_code:state.state_code,state_name:state.state_name,coverage:source.coverage,lessons,questions,activities,account_required:false,credit_eligible:false,certificate_available:false,disclosure:PRACTICE_DISCLOSURE});
     write(practice_url,JSON.stringify(payload,null,2)+'\n');
     samples.push({state_code:state.state_code,state_name:state.state_name,course_id:course.course_id,course_title:course.course_title,public_status:state.public_status,content_url:lessons[0].content_url,practice_url,lesson_count:lessons.length,question_count:questions.length,activity_count:activities.length,activity_task_count:activities.reduce((n,a)=>n+a.tasks.length,0),coverage:source.coverage,revision:digest(JSON.stringify(payload)).slice(0,16)});
   }
@@ -92,12 +94,13 @@ export async function buildFreePractice({root,states,catalogCourses,write}) {
         questions.push({
           id: `${id}:${slug}:${index + 1}`, lesson_id: slug, category: title, prompt, choices,
           solution: 0, explanation, sources: reference ? [reference] : sources,
+          state_code:state.state_code,curriculum_reference:`config/free-practice/${{FL:'florida',GA:'georgia',WA:'washington',NY:'new-york'}[state.state_code]}.mjs`,
         });
       }
       return {id:slug,title,content_url,sha256:digest(markdown)};
     });
     const practice_url = `free-practice/courses/${id}.json`;
-    const payload = {course_id:id,course_title:collection.title,state_code:state.state_code,state_name:state.state_name,practice_only:true,lessons,questions};
+    const payload = validatePracticePayload({course_id:id,course_title:collection.title,state_code:state.state_code,state_name:state.state_name,practice_only:true,lessons,questions,account_required:false,credit_eligible:false,certificate_available:false,disclosure:PRACTICE_DISCLOSURE});
     write(practice_url, JSON.stringify(payload, null, 2) + '\n');
     samples.push({
       state_code:state.state_code,state_name:state.state_name,course_id:id,course_title:collection.title,practice_only:true,

@@ -1,0 +1,79 @@
+{
+  "browser": "Chrome headless",
+  "localOnly": true,
+  "states": [
+    {
+      "state": "TX",
+      "noAccount": true,
+      "graded": true,
+      "explanation": true,
+      "restored": true
+    },
+    {
+      "state": "FL",
+      "noAccount": true,
+      "graded": true,
+      "explanation": true,
+      "restored": true
+    },
+    {
+      "state": "CO",
+      "noAccount": true,
+      "graded": true,
+      "explanation": true,
+      "restored": true
+    },
+    {
+      "state": "AZ",
+      "noAccount": true,
+      "graded": true,
+      "explanation": true,
+      "restored": true
+    },
+    {
+      "state": "NC",
+      "noAccount": true,
+      "graded": true,
+      "explanation": true,
+      "restored": true
+    },
+    {
+      "state": "GA",
+      "noAccount": true,
+      "graded": true,
+      "explanation": true,
+      "restored": true
+    },
+    {
+      "state": "PA",
+      "noAccount": true,
+      "graded": true,
+      "explanation": true,
+      "restored": true
+    },
+    {
+      "state": "WA",
+      "noAccount": true,
+      "graded": true,
+      "explanation": true,
+      "restored": true
+    },
+    {
+      "state": "NY",
+      "noAccount": true,
+      "graded": true,
+      "explanation": true,
+      "restored": true
+    }
+  ],
+  "widths": [
+    1280,
+    320,
+    390,
+    1100
+  ],
+  "conflictingStateCourseLink": "TX retained",
+  "pageErrors": [],
+  "missingResources": [],
+  "postRequests": []
+}

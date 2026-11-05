@@ -1,6 +1,6 @@
 # Multi-state free-practice readiness
 
-Review date: November 3, 2026. Counts are from the built public manifest. Readiness applies to the non-credit practice release. The paid-course catalog and approval records are separate.
+Review date: November 4, 2026. Counts are from the built public manifest. Readiness applies to the non-credit practice release. The paid-course catalog and approval records are separate. The existing branch implementation and its Pennsylvania/Washington corrections are preserved. This follow-up adds strict payload validation, explicit non-credit/no-account flags, per-question state/topic/provenance metadata, mobile header fixes and repeatable browser evidence. Current NC syllabus/rules and both WA objective PDFs match the retained official-source bytes exactly; [source checks](SOURCE-CHECKS.json) and [review limits](SOURCE-REVIEW.md) record the November 4 follow-up. Total public questions across the nine priority states: **1,933**. The 198 inherited Washington items remain in the repository and are withheld from public exports and the coach.
 
 | State | Existing assets | Missing pieces | Current regulatory-source freshness | Free-practice readiness | Exact work completed in this branch |
 | --- | --- | --- | --- | --- | --- |
