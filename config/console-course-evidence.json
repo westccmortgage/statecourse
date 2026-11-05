@@ -1210,8 +1210,8 @@
       "curriculumFiles": [
         {
           "path": "pennsylvania/pa-real-estate-fundamentals-30-v1/curriculum/module-01.md",
-          "sha256": "5d69601dd65bf95e6799d27ebd3cc76afa015df569418c33ca9ab9c923f81404",
-          "bytes": 18385
+          "sha256": "1476634fbc23242ae9c271014c978abe5dddc4c4260d7b315f23a73a9421aa14",
+          "bytes": 18387
         },
         {
           "path": "pennsylvania/pa-real-estate-fundamentals-30-v1/curriculum/module-02.md",
@@ -1247,7 +1247,7 @@
         "status": "state_definition_loaded",
         "file": "config/pennsylvania-course-engine.mjs",
         "authoredCourseId": "pa-real-estate-fundamentals-30-v1",
-        "authoredVersion": "1.0-submission-draft",
+        "authoredVersion": "1.1-current-law-submission-draft",
         "studentCompatible": false,
         "missing": "State engine can describe/score authored material but has no registered student delivery, authenticated persistence and version bridge for this offering."
       },
@@ -1275,8 +1275,8 @@
         },
         {
           "path": "pennsylvania/pa-real-estate-practice-45-v1/curriculum/module-03.md",
-          "sha256": "74518ed30a764b7cdda6c504b57e0207b49bed2ca9929cc53f054044602b701e",
-          "bytes": 12129
+          "sha256": "6a8f1a489a019d8a7cebcc914db1dd66be079c7d7d7af3ac3a7e0a2eb0e2be1e",
+          "bytes": 12242
         },
         {
           "path": "pennsylvania/pa-real-estate-practice-45-v1/curriculum/module-04.md",
@@ -1295,8 +1295,8 @@
         },
         {
           "path": "pennsylvania/pa-real-estate-practice-45-v1/curriculum/module-07.md",
-          "sha256": "32e7eafffcc40c7a101d5668fae5a96608b2a5ab815d4cfb16e707ae548cb6c8",
-          "bytes": 13341
+          "sha256": "72f1dfc9867c27be0951f83a0c8838fa347c759c827aa6933d963a1790b43d14",
+          "bytes": 16771
         },
         {
           "path": "pennsylvania/pa-real-estate-practice-45-v1/curriculum/module-08.md",
@@ -1317,7 +1317,7 @@
         "status": "state_definition_loaded",
         "file": "config/pennsylvania-course-engine.mjs",
         "authoredCourseId": "pa-real-estate-practice-45-v1",
-        "authoredVersion": "1.0-submission-draft",
+        "authoredVersion": "1.1-current-law-submission-draft",
         "studentCompatible": false,
         "missing": "State engine can describe/score authored material but has no registered student delivery, authenticated persistence and version bridge for this offering."
       },
@@ -1450,8 +1450,8 @@
         },
         {
           "path": "colorado/co-real-estate-law-and-practice-48-v1/curriculum/module-03.md",
-          "sha256": "bce918a46475c2b8f6d34ad2fa4959ef9463c24723dfcfbe729d9b3185ada9fe",
-          "bytes": 24801
+          "sha256": "3431eacf8585cc51ac031b8459d20862dc92eb9e6093871094f183aa0f364d79",
+          "bytes": 25215
         },
         {
           "path": "colorado/co-real-estate-law-and-practice-48-v1/curriculum/module-04.md",
@@ -1460,8 +1460,8 @@
         },
         {
           "path": "colorado/co-real-estate-law-and-practice-48-v1/curriculum/module-05.md",
-          "sha256": "fecdeb0b3396eb4539d03ba25121f678254a7a35d19077dbfac80ec05afe6e63",
-          "bytes": 20132
+          "sha256": "d77445529a51c6ad8fd67c79e1fd0c9d9ad6c82fb786f5713bc8059facf84c12",
+          "bytes": 20668
         }
       ],
       "curriculumStatus": "authored_material_present_review_required",
@@ -1495,13 +1495,13 @@
         },
         {
           "path": "colorado/co-contracts-and-regulations-48-v1/curriculum/module-02.md",
-          "sha256": "d1185733bd255565494999b46d4d3246ba84d60d917aa0028e41a04c8571bffd",
-          "bytes": 36041
+          "sha256": "893e604124fae2b8d6557313d81bad09b49702f8e0d695fab89ffab98f22415c",
+          "bytes": 35707
         },
         {
           "path": "colorado/co-contracts-and-regulations-48-v1/curriculum/module-03.md",
-          "sha256": "5252881d4978eab2078d30e0e902b2fc0163b2ac579c33512ddd2055cb5e1691",
-          "bytes": 19814
+          "sha256": "cc572e8efa02a30e687f2220d8a082e3523cd8ed9079549a420c3f357faa9884",
+          "bytes": 19867
         },
         {
           "path": "colorado/co-contracts-and-regulations-48-v1/curriculum/module-04.md",
@@ -1545,8 +1545,8 @@
         },
         {
           "path": "colorado/co-trust-accounts-and-record-keeping-8-v1/curriculum/module-02.md",
-          "sha256": "ba16425603a4e1e790b5bc55f8a768357bb6feb1870167fd53cb0f0fde2c5d9e",
-          "bytes": 21470
+          "sha256": "63cd0e2e45d5179f862f3edcc00690e2ede48e0cec9022b14846aa9bb581b881",
+          "bytes": 21876
         },
         {
           "path": "colorado/co-trust-accounts-and-record-keeping-8-v1/curriculum/module-03.md",
@@ -1585,8 +1585,8 @@
       "curriculumFiles": [
         {
           "path": "colorado/co-current-legal-issues-8-v1/curriculum/module-01.md",
-          "sha256": "97058cc3a4997dad43cc6336a44e81d116c2a678670447d759444ae0b82465ca",
-          "bytes": 17033
+          "sha256": "b812746c31bf6a5be4c8969084784c490e736a74ebf9eeb80236496acd75df85",
+          "bytes": 17398
         },
         {
           "path": "colorado/co-current-legal-issues-8-v1/curriculum/module-02.md",
@@ -1595,8 +1595,8 @@
         },
         {
           "path": "colorado/co-current-legal-issues-8-v1/curriculum/module-03.md",
-          "sha256": "b051aec41bb35c8579df2276435b4cd1898d97e7804a75e59f2ee62448d632ff",
-          "bytes": 17287
+          "sha256": "262712864286cfd8ad8ca4db0b566b04a2c69ceeac3c823eb44deb847a4c2924",
+          "bytes": 17619
         }
       ],
       "curriculumStatus": "authored_material_present_review_required",
@@ -1645,8 +1645,8 @@
         },
         {
           "path": "colorado/co-closings-24-v1/curriculum/module-05.md",
-          "sha256": "dfd681c5ac70fbb6c3ebd17e542e9134eeb042bcf60a4f28b732fa041498e3d6",
-          "bytes": 18614
+          "sha256": "08ec6348f6c43a613946413ab708814701feafb33f9f24bdf5215a957a92d9ca",
+          "bytes": 19366
         }
       ],
       "curriculumStatus": "authored_material_present_review_required",
@@ -1680,18 +1680,18 @@
         },
         {
           "path": "colorado/co-practical-applications-32-v1/curriculum/module-02.md",
-          "sha256": "a0ef5ea2473be526efeaa06708994e3cd35fd74a64bc6e6124993c1246738bc1",
-          "bytes": 23548
+          "sha256": "bed0b816476a1c74fee21da0d4b205ab3490cd73d68caf63f76066ed45dd9694",
+          "bytes": 24194
         },
         {
           "path": "colorado/co-practical-applications-32-v1/curriculum/module-03.md",
-          "sha256": "61c16680e4004c80bc34950f0f852812e95c1b954c033084b89fc846a0ef0d4d",
-          "bytes": 19833
+          "sha256": "bed431e0e65fffedacf68a7c70c2ded8abbdd5f176cf64700fd7198beb5ad047",
+          "bytes": 20455
         },
         {
           "path": "colorado/co-practical-applications-32-v1/curriculum/module-04.md",
-          "sha256": "e9c099e8177f1be7f4986f467b9ecfaacbf796068b5465a002addb83ee6fb121",
-          "bytes": 17472
+          "sha256": "081ef204af2547f5adb7aa55e88f855097d283bdfcae88053592efd13715cafa",
+          "bytes": 17837
         },
         {
           "path": "colorado/co-practical-applications-32-v1/curriculum/module-05.md",

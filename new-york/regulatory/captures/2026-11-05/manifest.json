@@ -1,0 +1,37 @@
+{
+  "scope": "official source acquisition; not full content/form review or approval",
+  "sources": [
+    {
+      "file": "salesperson-77-hour-curriculum.pdf",
+      "url": "https://dos.ny.gov/real-estate-salesperson-77-hour-curriculum",
+      "final_url": "https://dos.ny.gov/system/files/documents/2024/10/res-syllabus-2022.pdf",
+      "retrieved_at": "2026-11-05",
+      "bytes": 748332,
+      "sha256": "cac8b5b6ad4a5a439090a74fbd711f2693a3d2eef82bfae11e5e944e7530609e"
+    },
+    {
+      "file": "real-estate-license-law-march-2026.pdf",
+      "url": "https://dos.ny.gov/system/files/documents/2026/03/real-estate-license-law_03.2026.pdf",
+      "final_url": "https://dos.ny.gov/system/files/documents/2026/03/real-estate-license-law_03.2026.pdf",
+      "retrieved_at": "2026-11-05",
+      "bytes": 746738,
+      "sha256": "85dd154355bd63880f4219a77e76f6b2847ef1490b277a8b8d1960daa41dc3a3"
+    },
+    {
+      "file": "qualifying-course-application.pdf",
+      "url": "https://dos.ny.gov/real-estate-qualifying-course-approval-application",
+      "final_url": "https://dos.ny.gov/system/files/documents/2022/01/1503-f-a.pdf",
+      "retrieved_at": "2026-11-05",
+      "bytes": 218834,
+      "sha256": "2f0056e1b27cfdc0ada11f9cf54ce65b3f0b38e3e32d893d3a870dff25342f3e"
+    },
+    {
+      "file": "instructor-application.pdf",
+      "url": "https://dos.ny.gov/real-estate-instructor-application",
+      "final_url": "https://dos.ny.gov/system/files/documents/2022/12/dos-1501-f-a-real-estate-instructor-application_12.2022.pdf",
+      "retrieved_at": "2026-11-05",
+      "bytes": 846112,
+      "sha256": "5bbee7a48b28a38f1708042f75ebedb330b7fcc4454b60a82f0f8a31eee79a6f"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "decisionDate": "2026-11-05",
+  "decision": "Owner deferred instructor selection for all nine expansion jurisdictions. Do not assume the owner has the credentials to instruct in every state.",
+  "scope": "Course and application preparation continues. Assignment, qualification evidence and required regulator authorization must be verified before an application that requires them can be released.",
+  "assignments": [
+    { "state": "TX", "status": "DEFERRED_BY_OWNER", "instructors": [] },
+    { "state": "FL", "status": "DEFERRED_BY_OWNER", "instructors": [] },
+    { "state": "CO", "status": "DEFERRED_BY_OWNER", "instructors": [] },
+    { "state": "AZ", "status": "DEFERRED_BY_OWNER", "instructors": [] },
+    { "state": "NC", "status": "DEFERRED_BY_OWNER", "instructors": [] },
+    { "state": "GA", "status": "DEFERRED_BY_OWNER", "instructors": [] },
+    { "state": "PA", "status": "DEFERRED_BY_OWNER", "instructors": [] },
+    { "state": "WA", "status": "DEFERRED_BY_OWNER", "instructors": [] },
+    { "state": "NY", "status": "DEFERRED_BY_OWNER", "instructors": [] }
+  ]
+}

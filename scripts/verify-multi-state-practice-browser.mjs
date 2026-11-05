@@ -56,6 +56,21 @@ try{
       if(code==='FL'&&width===390){await page.locator('#practiceFeedback').scrollIntoViewIfNeeded();await page.screenshot({path:path.join(out,'florida-mobile.png')});}
     }
   }
+  // Exercise the corrected current-law question through the actual anonymous player.
+  const co=catalog.samples.find(sample=>sample.course_id==='co-contracts-regulations-48');
+  const coCourse=JSON.parse(fs.readFileSync(path.join(dist,'free-practice/courses',co.course_id+'.json'),'utf8'));
+  const coQuestion=coCourse.questions.find(question=>question.prompt.startsWith('Under current C.R.S. § 12-10-403(2)'));
+  assert.ok(coQuestion,'current Colorado relationship question missing');
+  const coLessonQuestions=coCourse.questions.filter(question=>question.lesson_id===coQuestion.lesson_id);
+  await page.goto(`${origin}/free-practice/colorado/?course=${co.course_id}&lesson=${coQuestion.lesson_id}&mode=quiz`);
+  await page.locator('#practiceQuiz legend').waitFor();
+  for(let index=0;index<coLessonQuestions.findIndex(question=>question.id===coQuestion.id);index++)await page.locator('[data-action="next-question"]').click();
+  assert.equal(await page.locator('#practiceQuiz legend').innerText(),coQuestion.prompt);
+  await page.locator(`#practiceAnswerForm input[value="${coQuestion.solution}"]`).check();
+  await page.locator('#practiceAnswerForm button').click();
+  assert.match(await page.locator('#practiceFeedback').innerText(),/HB26-1426/);
+  assert.ok(coQuestion.sources.some(source=>source.url==='https://leg.colorado.gov/bills/hb26-1426'));
+  assert.match(await page.locator('#practiceFeedback').getAttribute('class'),/is-correct/);
   const ny=catalog.samples.find(s=>s.state_code==='NY');
   await page.goto(`${origin}/free-practice/?state=TX&course=${ny.course_id}&mode=quiz`);
   await page.locator('#practiceQuiz legend').waitFor();assert.equal(await page.locator('#practiceStateSelect').inputValue(),'TX');assert.ok((await page.locator('#practiceCourseSelect').inputValue()).startsWith('tx-'));
@@ -66,6 +81,6 @@ try{
   assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);
   await page.locator('#practice-states').scrollIntoViewIfNeeded();await page.screenshot({path:path.join(out,'directory-mobile.png')});
   assert.deepEqual(errors,[]);assert.deepEqual(missing,[]);assert.deepEqual(posts,[]);
-  const report={browser:'Chrome headless',localOnly:true,states:results,widths:[1280,320,390,1100],conflictingStateCourseLink:'TX retained',pageErrors:errors,missingResources:missing,postRequests:posts};
+  const report={browser:'Chrome headless',localOnly:true,currentColoradoRelationship:'written agreement correction graded correctly',states:results,widths:[1280,320,390,1100],conflictingStateCourseLink:'TX retained',pageErrors:errors,missingResources:missing,postRequests:posts};
   fs.writeFileSync(path.join(out,'browser-results.json'),JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report));
 }finally{await browser?.close();await new Promise(resolve=>server.close(resolve));}

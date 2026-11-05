@@ -6,19 +6,7 @@
 **Course version:** 1.0 submission draft
 **Regulatory status:** Development. Not approved. No Pennsylvania prelicensing credit is available.
 
-> ### A submission gate stated at the top of this module
->
-> **§ 35.335a sets out, in full inside the regulation, the minimum disclosures a seller's property disclosure
-> statement must contain** — an itemised list running through the roof, the structure, the systems, water and
-> sewer, hazardous substances and much else.
->
-> **This project read § 35.335a's opening statements and its definition of a material defect, both transcribed
-> below. It did NOT transcribe the itemised disclosures, and no document in this build reproduces, describes
-> or paraphrases any of them.**
->
-> **68 Pa.C.S. Chapter 73, the Real Estate Seller Disclosure Law itself, was NOT obtained.** Every statement
-> below about what the Law requires is drawn from **§ 35.284a and § 35.292(a)(4)**, which cite it. **Obtaining
-> Chapter 73 and the full § 35.335a itemisation is a submission gate.**
+The complete section 35.335a disclosure itemization and 68 Pa.C.S. Chapter 73 were obtained from their official publishers on November 5, 2026. This module's new source-guided application below supplements the retained material. Act 74 of 2026 is enacted but its 60-day effective-date period has not elapsed as of this review; do not treat newly inserted consolidated text as already operative solely because the website displays it. Independent content and form review remain open.
 
 ## Learning objectives
 
@@ -221,23 +209,31 @@ Eleven items, delivered as in Module PA-P-01. The **80 percent** engagement thre
 applied threshold are **StateCourse standards**.
 
 **No item asks a student to recall or reproduce any itemised disclosure from § 35.335a, or any provision of
-68 Pa.C.S. Chapter 73**, because this project obtained neither. Items test the **definition of a material
+68 Pa.C.S. Chapter 73** in the inherited bank. The new workshop now adds source-guided application of both. Existing items test the **definition of a material
 defect**, the **useful-life sentence**, the **four denials**, the **meets-or-exceeds standard**, the **separation
 of the seller's obligation from the licensee's**, and the **material defect exception to confidentiality** — all
 of which were read.
 
 ---
 
-## Instructor source note for Module PA-P-07
+## F. Complete disclosure work from the actual source
 
-Drawn from **49 Pa. Code §§ 35.284a, 35.286, 35.292, 35.312, 35.314 and 35.335a**, read on 2026-08-20, current
-through **56 Pa.B. 3438 (June 6, 2026)**. The **seller's disclosure obligation**, the **definition of a material
-defect**, the **useful-life sentence** and the **four denials** are **transcribed verbatim from § 35.335a.**
+Read every item in the retained section 35.335a, not only its introduction. Its subjects are seller expertise and occupancy; roof; basement/crawl spaces; pests and rot; structural condition; additions and remodeling; water and sewage; plumbing; heating/air conditioning; electrical equipment; included appliances; land and drainage; hazardous substances; association interests; storm-water facilities; and miscellaneous legal, title and other defect questions. The statutory list in section 7304 and the regulatory form organize some of these differently. A matching topic label is not a completed response: follow each actual question, explain required affirmative answers, preserve an honest unknown and never invent the seller's knowledge.
 
-**Not obtained, and therefore reproduced, described or paraphrased NOWHERE in this build:** **68 Pa.C.S.
-Chapter 73, the Real Estate Seller Disclosure Law**; the **itemised disclosures in § 35.335a**; the **federal
-lead-based paint regulations**; and Pennsylvania's **mining, subsidence, wetlands, septic and well** statutes
-and programmes.
+The form asks about repairs as well as current conditions. A repaired condition may still require explaining known history where the question asks it. Water and sewage questions distinguish public, community and private systems and ask about shared systems and known problems. The storm-water section separately asks location/condition and maintenance responsibility. Association interests can require additional resale documents; a checked box on this statement does not replace them.
 
-**No exemption from the Seller Disclosure Law, no itemised disclosure, no notice period, no radon action level,
-no testing protocol and no remediation standard is stated in this module.**
+Chapter 73 supplies the legal workflow. Under sections 7303 and 7305, deliver the signed and dated statement by a permitted method before the seller and buyer sign the agreement of transfer. Check applicability and exceptions under section 7302 before assuming every residential transfer follows the same path. For unavailable information, section 7306 permits the best information available; section 7308 does not require a specific investigation but prohibits knowingly or reason-to-know false, deceptive or misleading representations and omission of a known material defect. These are not permission to guess.
+
+Section 7307 requires notifying the buyer when subsequent events before final settlement render disclosed information inaccurate. Section 7312 separately allows written amendment before the agreement is signed. Keep the original, the factual change, the written update and proof of delivery. Section 7310 does not immunize an agent with actual knowledge of an undisclosed material defect or a defect-related misrepresentation. Section 7313 preserves other disclosure obligations and requires a seller's agent to advise the seller and supply the form. A Chapter 73 exception does not erase separate licensee duties.
+
+Complete workshop files 5–8 in [the disclosure workshop](../activities/disclosure-workshop.md). Submit a topic-by-topic source checklist, a fictional seller narrative that does not invent facts, an applicability analysis, an update record and an effective-date analysis. The model feedback follows each student task for review after an attempt. These are formative activities, not secure examination items.
+
+## G. Enacted flood amendment: separate the events
+
+Act 74 was approved October 22, 2026. Section 5 states a 60-day effective-date period. Section 4 directs the Commission to revise the property disclosure statement within 18 months of that section's effective date. The new section 7305.2 insurance notice is tied to the Insurance Department posting specified information under section 7305.1. Enactment, effective date, website posting and promulgation of the revised form are different events. None proves the others occurred.
+
+As of November 5, 2026, teach the existing form and known-defect duties as current. Explain Act 74 as an upcoming amendment and recheck all implementation events before a later content freeze or filing. The amendment adds flood-risk indicators to the land item and defines them in section 7102; it does not authorize treating every basement leak as a natural flood event without applying the definition. Existing form questions already address flood-zone knowledge, drainage and flooding. The new-law change does not justify concealing those existing facts while waiting for a revised form.
+
+## Instructor source note
+
+Official section 35.335a, the complete Chapter 73 consolidated display and the enrolled Act 74 are retained with hashes in `pennsylvania/regulatory/captures/2026-11-05/`. The Act's effective-date and implementation provisions qualify the consolidated display. The full consolidated RELRA beyond the education amendment has not been read. Separate condominium/cooperative statutes, all other referenced property statutes, the complete official curriculum conformity assessment, independent review and operational student delivery remain unverified. No fixed instructional duration is established by these pages.

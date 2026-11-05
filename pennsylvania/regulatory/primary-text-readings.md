@@ -51,33 +51,18 @@ document says so by name.
 
 > ***"A prelicensure course must be assigned one credit for every 15 clock hours of instruction."***
 
-### The finding, stated plainly
+### Current-law reconciliation — November 5, 2026
 
-**The regulation's minimum is 4 credits = 60 hours of instruction.** It is *not* 75.
+The quoted 60-hour/ten-year regulation wording above is historical source text, not the controlling standard for the ordinary new salesperson applicant. **RELRA § 521 as amended by Act 75 of 2018 requires 75 qualifying hours**, subject to its narrow transitional provision. The Commission's current standard-method instructions use a **five-year education window before successful examination completion**.
 
-**The two courses the Commission names by title in § 35.272(b)(2) — *Real Estate Fundamentals* and
-*Real Estate Practice* — are named without hours.** The regulation this project read **does not state
-how many hours or credits either course carries**, and **does not state a 30/45 split.**
+Both official Commission outlines were obtained and hashed on November 5. Page 1 of each was visually reviewed: **Fundamentals 30 hours**, **Practice 45 hours**. These totals are official outline figures. Full objective-level conformity remains open; acquisition is not conformity. See `captures/2026-11-05/manifest.json`.
 
-The **75-hour** figure in general circulation is the two named courses as providers commonly deliver
-them: **Real Estate Fundamentals at 30 hours (2 credits) and Real Estate Practice at 45 hours (3
-credits) = 5 credits / 75 hours**, which **exceeds** the regulatory minimum of 4 credits / 60 hours.
-
-**This project has NOT obtained any Commission document assigning hours to either named course.**
-Accordingly this build:
-
-- states the **60-hour / 4-credit minimum as the regulation's own figure**, transcribed above;
-- builds **75 hours** across the two named courses **as a StateCourse proposal**, which satisfies the
-  minimum with margin; and
-- records the **30/45 split as a StateCourse decision requiring Commission confirmation**, not as a
-  regulatory requirement.
-
-**Obtaining the Commission's own hour assignment for *Real Estate Fundamentals* and *Real Estate
-Practice* is a submission gate.**
+- [Act 75 of 2018, § 2](https://www.legis.state.pa.us/WU01/LI/LI/US/HTM/2018/0/0075..HTM)
+- [Current Commission guide](https://www.pa.gov/agencies/dos/resources/professional-licensing-resources/licensure-processing-guides-and-timelines/real-estate-commission-guide)
 
 ---
 
-## 2. What the Commission prescribes about course content — and the outline this project does NOT have
+## 2. Course-content and delivery requirements — outlines obtained, conformity pending
 
 ### 49 Pa. Code § 35.358 — Administration of curriculum
 
@@ -112,11 +97,7 @@ Practice* is a submission gate.**
 
 ### Two hard gates this creates for an online Pennsylvania course
 
-1. **§ 35.358(a)(2) — the Commission develops content outlines for Commission-required courses, and
-   instruction "shall conform" to them.** **This project has NOT obtained any Commission-developed
-   content outline for *Real Estate Fundamentals* or *Real Estate Practice*.** The curriculum in this
-   build is written from **49 Pa. Code Chapter 35 itself** and must be **conformed to the Commission's
-   outline before submission.** **Submission gate.**
+1. **Section 35.358(a)(2): conformity to the Commission's outlines remains required.** Both complete official outlines were obtained November 5, 2026. Their page-one titles confirm 30-hour Fundamentals and 45-hour Practice. Provisional OCR supports the detailed gap crosswalk; source images control. Holding the outlines does not establish instruction, activities, assessment or duration conformity.
 
 2. **§ 35.358(a)(4) — a distance education delivery method must be approved by ARELLO or another
    certifying body approved by the Commission.** **No such approval is held.** **Submission gate.**
@@ -317,10 +298,7 @@ parties.**
 > signed acknowledgment under § 35.286. **If a consumer refuses to sign the acknowledgment, the refusal
 > shall be noted on the acknowledgment.**"*
 
-**Four different disclosure summaries for four different situations**, and the rule sets each out in
-full text. **This project read that §§ 35.336 to 35.339 exist and set out the summaries verbatim; it
-did NOT transcribe their full text into this build, and no document here reproduces any of them.**
-Delivering the correct summary, in the Commission's own words, is a **submission gate.**
+Sections 35.336–35.339 were obtained in full on November 5, 2026. The [source appendix](disclosure-source-appendix.md) retains the prescribed notice text for study, while the original HTML preserves the authoritative format. Practice module 03 and its eight-file workshop now teach notice selection, both written-notice outer limits, refusal documentation and the limited commercial-entity exception. Source acquisition is complete; independent review and verified student delivery remain open.
 
 ---
 
@@ -595,42 +573,15 @@ course delivers it.
 
 ---
 
-## 13. What was NOT read, and is therefore stated NOWHERE in this build
+## 13. Source boundary after the November 5 acquisition
 
-**Obtained and read:** 49 Pa. Code Chapter 35, in full, current through 56 Pa.B. 3438 (June 6, 2026).
+The original August 20 Chapter 35 reading remains historical evidence. Newly retained sources are the two official course outlines, provider/distance application forms, Act 75 of 2018 section 2, the current Commission licensure guide, full sections 35.284 and 35.335a–35.339, Chapter 73 and Act 74 of 2026. The captures manifest records URLs, dates, bytes and hashes. Retained forms and provisional outline OCR are acquisition evidence; they do not by themselves certify full layout or curriculum review.
 
-**NOT obtained. No rule, figure, deadline, form provision, fee or penalty in this build comes from any
-of these:**
+Act 75 supports the standard new-applicant 75-hour/five-credit education requirement; current instructions use a five-year window before successful examination. The narrow historical transition must not be auto-applied. Act 74 was enacted October 22, 2026 with a 60-day effective-date clause, a separate 18-month form-revision direction and a website-posting condition for its insurance notice. As of November 5 the new law is not yet effective. The consolidated display already includes future text, so it must be read with the enrolled Act. Recheck before any later freeze or filing.
 
-- The **Real Estate Licensing and Registration Act, 63 P.S. §§ 455.101—455.902 (RELRA)**, in its own
-  text — including **§ 455.201 (definitions), § 455.604 (prohibited acts), § 455.606.1—.606f (business
-  relationships), § 455.608 (information to consumers), § 455.608f (broker price opinions)** and the
-  **Real Estate Recovery Fund** provisions. Every RELRA citation printed above is **the regulation's
-  citation, reproduced so a reader knows where to go**, not a claim that the statute was read.
-- **68 Pa.C.S. Chapter 73 — the Real Estate Seller Disclosure Law** — in its own text.
-- **The Commission's content outlines for *Real Estate Fundamentals* and *Real Estate Practice*.**
-  § 35.358(a)(2) requires instruction in a Commission-required course to **conform** to them. **Not
-  obtained. Submission gate.**
-- **The full verbatim text of the four consumer disclosure summaries** — §§ 35.336, 35.337, 35.338 and
-  the § 35.339 oral disclosure. Their existence, their triggers and their timing are recorded above from
-  § 35.284; **their text is not reproduced anywhere in this build.**
-- **The full verbatim text of the § 35.335a seller property disclosure statement.** Its opening
-  statement and its definition of a material defect are transcribed above; **the itemised disclosures
-  are not reproduced.**
-- **The Pennsylvania Landlord and Tenant Act (68 P.S. § 250.101 et seq.)**, including **§ 250.511b** on
-  escrow interest, cited by § 35.325(c).
-- **Pennsylvania's realty transfer tax statutes**, local transfer tax ordinances, and any **rate**.
-- **Pennsylvania zoning, subdivision and land use statutes (the Municipalities Planning Code)**.
-- **ARELLO's distance education certification standards.**
-- **Any Commission-published examination content outline or candidate handbook**, and any figure for the
-  **licensing examination's item count, passing score or time limit.**
-- Federal law in its own text: **TILA/Regulation Z, RESPA/Regulation X, the Fair Housing Act, ECOA,
-  federal lead-based paint regulations**.
+Still **not read** in their own complete controlling texts: the full consolidated RELRA beyond the education amendment; the Pennsylvania Landlord and Tenant Act; transfer-tax and local ordinances; the Municipalities Planning Code; recording, probate, foreclosure, tax-sale, lien, condominium and planned-community statutes; ARELLO's certification standards; current examination candidate handbook; USPAP/appraiser rules; and the listed federal mortgage/fair-housing/lead-paint laws. Older source-limit statements in unremediated modules remain local warnings about those modules and do not negate the newly held sources.
 
-**Consequently this build states no Pennsylvania licensing examination passing score, no examination
-item count, no realty transfer tax rate, no application fee, no Recovery Fund payment limit, and no
-provision of any consumer notice or seller disclosure form.** Where one is needed, the curriculum names
-the source and routes there.
+No Pennsylvania licensing examination score, item count, transfer-tax rate, application fee or Recovery Fund payment limit is newly asserted. The original prescribed notices and seller-disclosure questions are now available for course development, but no delivery approval, provider approval, actual student delivery or measured hour conformity is claimed.
 
 ---
 

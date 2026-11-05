@@ -1,5 +1,7 @@
 # Colorado Real Estate Law and Practice — Module 03
 
+**Current-law correction — November 5, 2026.** The August 12, 2026 amendment supersedes the former automatic transaction-broker rule. Complete the [written relationship workshop](../../activities/2026-written-relationship-workshop.md). Other source-scope and submission limitations in this module remain open.
+
 ## Contracts, agency relationships with buyers and sellers, and federal requirements
 
 **Course:** Real Estate Law and Practice (48 classroom hours) · **Instructional hours: 12.0** of 48.0
@@ -24,7 +26,7 @@ Requirements**, allocated **12 hours**
 >
 > | General rule taught here | Colorado's own rule |
 > |---|---|
-> | Agency arises from the relationship, often by default | **§ 12-10-403(2): a broker is a TRANSACTION-BROKER unless single agency is established through a WRITTEN agreement** |
+> | Agency arises from the relationship, often by default | **Current section 12-10-403(2): both transaction brokerage and single agency require a written relationship agreement with conspicuous compensation before the specified activities** |
 > | Dual agency is permitted with informed consent | **§ 12-10-406: "A broker shall not establish dual agency with any seller, landlord, buyer, or tenant."** |
 > | An agent's acts bind the principal and the firm | **§ 12-10-403(6)(b): the relationship does NOT extend to the employing broker or to the firm** — though § 12-10-408(2)(e)(II) preserves supervision and vicarious liability |
 >
@@ -207,11 +209,7 @@ does not represent.**
 This is the point of putting the general account in a national course, and a student who leaves this module
 carrying only the general account into a Colorado transaction will be wrong three times over.
 
-**First — the default.** **§ 12-10-403(2)**: *"**A broker shall be considered a transaction-broker unless a
-single agency relationship is established through a written agreement** between the broker and the party or
-parties to be represented by the broker."* Agency in Colorado is **opt-in and in writing.** A broker who
-signs nothing is a **transaction-broker**, and **§ 12-10-407(1)** says a transaction-broker *"**is not an
-agent for either party.**"*
+**Current section 12-10-403(2), effective August 12, 2026:** establish either transaction brokerage or single agency through a written agreement, conspicuously disclose the amount or rate of compensation, and complete the agreement before the specified section 12-10-201(6)(a) activities. A transaction-broker is still a nonagent under section 12-10-407(1); there is no automatic transaction-broker default. See the [current-law workshop](../../activities/2026-written-relationship-workshop.md).
 
 **Second — dual agency.** **§ 12-10-406** in its entirety: *"**A broker shall not establish dual agency
 with any seller, landlord, buyer, or tenant.**"* No consent cures it, because the statute offers no consent

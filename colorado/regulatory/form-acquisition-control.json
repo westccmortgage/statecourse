@@ -1,0 +1,36 @@
+{
+  "reviewedOn": "2026-11-05",
+  "scope": "Official current form headers located via official PDF search results; complete local form acquisition and field/layout review remain open",
+  "forms": [
+    {
+      "id": "CBS1",
+      "title": "Contract to Buy and Sell Real Estate (Residential)",
+      "adoptedOn": "2025-08-05",
+      "mandatoryUseOn": "2026-01-01",
+      "pages": 20,
+      "url": "https://dre.colorado.gov/sites/dre/files/documents/Contract%20to%20Buy%20and%20Sell%20Real%20Estate%20%28Residential%29%20V2%20%28fillable%29_for%20use%20on%20or%20after%20January%201%2C%202026.pdf",
+      "localCopy": null,
+      "localFetchResult": "HTTP 403"
+    },
+    {
+      "id": "CBS2",
+      "title": "Contract to Buy and Sell Real Estate (Income-Residential)",
+      "adoptedOn": "2025-08-05",
+      "mandatoryUseOn": "2026-01-01",
+      "pages": 22,
+      "url": "https://dre.colorado.gov/sites/dre/files/documents/Contract%20to%20Buy%20and%20Sell%20Real%20Estate%20%28Income-Residential%29%20%28fillable%29_%28for%20use%20on%20or%20after%20January%201%2C%202026%29.pdf",
+      "localCopy": null,
+      "localFetchResult": "Not attempted; official web header located"
+    },
+    {
+      "id": "BC60",
+      "title": "Exclusive Right-to-Buy Listing Contract",
+      "adoptedOn": "2025-10-07",
+      "mandatoryUseOn": "2026-01-01",
+      "pages": 7,
+      "url": "https://dre.colorado.gov/sites/dre/files/documents/Exclusive%20Right%20To%20Buy%20Listing%20Contract%20%28fillable%29_for%20use%20on%20or%20after%20January%201%2C%202026.pdf",
+      "localCopy": null,
+      "localFetchResult": "Not attempted; official web header located"
+    }
+  ]
+}

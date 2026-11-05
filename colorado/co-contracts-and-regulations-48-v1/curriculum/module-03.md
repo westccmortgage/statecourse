@@ -56,15 +56,9 @@
 A listing contract or buyer brokerage contract is a contract of **employment**. It **conveys nothing** and
 it is **not an offer to sell.**
 
-**In Colorado it does one further thing that matters more than anything else in this module.**
-**§ 12-10-403(2)**: *"**A broker shall be considered a transaction-broker UNLESS a single agency
-relationship is established through a WRITTEN AGREEMENT** between the broker and the party or parties to be
-represented."*
+**Current section 12-10-403(2), effective August 12, 2026:** establish either transaction brokerage or single agency through a written agreement, conspicuously disclose the amount or rate of compensation, and complete the agreement before the specified section 12-10-201(6)(a) activities. A transaction-broker is still a nonagent under section 12-10-407(1); there is no automatic transaction-broker default. See the [current-law workshop](../../activities/2026-written-relationship-workshop.md).
 
-**The agreement is what creates agency.** Without it there is a relationship — the transaction-broker
-relationship — but not an agency one. That is why **§ 12-10-408(2)(b)** requires a broker intending single
-agency to **enter into a written agency agreement before engaging in any licensed activity**, and why the
-agreement must **disclose the § 12-10-404 or § 12-10-405 duties.**
+The agreement now establishes either permitted relationship. A broker cannot proceed under the old theory that no signed agency agreement means automatic transaction brokerage. The applicable disclosure and designated-broker advice remain separate requirements.
 
 **And § 12-10-408(2)(e)(I)** requires every such written agreement to advise the party that the relationship
 **exists only with the designated broker**, does **not** extend to the employing broker or other

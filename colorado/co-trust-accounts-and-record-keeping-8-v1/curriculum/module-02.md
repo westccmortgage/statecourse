@@ -25,6 +25,8 @@
 > (a) through (d). **This course delivers all four and records each separately**, because the Commission
 > describes four and a student who has done two has done half of what the outline sets out.
 
+Complete the [four-exercise trust workbook](../activities/trust-account-workbook.md), which now supplies full numeric journal/ledger files, eight-property rental and security-deposit records, sample statements, an intentional lease-liability discrepancy, a title-company comparison and a backup/restore task. Current completed contract/form evidence, actual student work, review and duration remain open.
+
 ## Learning objectives
 
 1. State what a journal records and every field each entry must contain.

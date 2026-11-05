@@ -1,81 +1,21 @@
-/**
- * Pennsylvania salesperson prelicensing — course engine.
- *
- * ONE ENGINE, TWO COURSES, because 49 Pa. Code § 35.272(b)(2) names two by title: "Credits will be
- * allowed for Real Estate Fundamentals and Real Estate Practice and all acceptable basic real estate
- * courses" — and assigns hours to NEITHER.
- *
- * THE NUMBER THIS PROJECT HAD TO CORRECT, and it is the most important thing in this file.
- * § 35.272(a)(2) requires "four credits, or 60 hours of instruction, in basic real estate courses."
- * § 35.201: "Credit — A period of 15 hours of instruction."
- * § 35.358(b)(1): "A prelicensure course must be assigned one credit for every 15 clock hours."
- *
- *   THE REGULATORY MINIMUM IS 60 HOURS / 4 CREDITS. IT IS NOT 75.
- *
- * The 75-hour figure in general circulation is the two named courses as providers commonly deliver them
- * — Fundamentals at 30 (2 credits) and Practice at 45 (3 credits) — which EXCEEDS the minimum by one
- * credit. This engine therefore asserts BOTH: that the delivered total is 75 / 5 credits, and that it
- * satisfies the 60 / 4 minimum with margin. The 30/45 split is recorded as a StateCourse decision
- * requiring Commission confirmation, NOT as a regulatory requirement, and a test asserts that the
- * payload keeps the two apart.
- *
- * TWO SUBMISSION GATES, BOTH IN § 35.358 AND BOTH UNSATISFIED IN THIS BUILD:
- *   (a)(2) "Instruction in a Commission required course shall conform to the content or the outline
- *          developed by the Commission for the course." THE COMMISSION'S OUTLINE WAS NOT OBTAINED.
- *   (a)(4) A distance education course "must have the delivery method approved by the Association of
- *          Real Estate License Law Officials or another certifying body with similar approval standards
- *          approved by the Commission." NO SUCH APPROVAL IS HELD.
- * SUBMISSION_GATES carries both into the payload so they travel with the course.
- *
- * A PENNSYLVANIA CLOCK HOUR. § 35.358(a)(1): "a clock hour is defined as a 60-minute period comprising
- * 50 minutes of instruction and a 10-minute break." Missouri's structure, not Maine's. The same
- * subsection caps instructor-led learning at 7.5 clock hours per day and forbids requiring attendance
- * for more than 90 consecutive minutes without a break.
- *
- * GRADING IS PROCTORED AND THE THRESHOLDS ARE NOT THE COMMISSION'S. § 35.358(b)(2): "A prelicensure
- * course must be graded by proctored examination." Chapter 35 prescribes NO in-module assessment and NO
- * in-module passing score, and — unlike Maine, Wisconsin, Missouri, Oklahoma and North Carolina — it
- * prescribes NO PASSING PERCENTAGE FOR THE COURSE EXAMINATION EITHER. So every percentage in this file
- * is a StateCourse standard, and the payload says so explicitly rather than leaving a reader to assume
- * a regulator set them.
- *
- * THE EDUCATION EXPIRES, AND THE ANCHOR IS UNUSUAL. § 35.272(b)(3): "Courses shall have been completed
- * within 10 years prior to the date of SUCCESSFUL COMPLETION OF THE LICENSING EXAMINATION." Not the
- * application, not the licence issue. pennsylvaniaEducationValidity computes it against that anchor.
- *
- * ATTENDANCE. § 35.358(a)(3) sets 80% physical presence for a classroom prelicensure course "unless the
- * course is taught by means of distance education" — and the text read states NO equivalent distance
- * standard. This engine therefore asserts none: attendanceMet is an input the provider sets under
- * whatever standard the Commission approves, and CLASSROOM_ATTENDANCE_PERCENT is recorded as applying
- * to classroom delivery only.
- *
- * WHAT WAS NOT READ. 49 Pa. Code Chapter 35 was read in full on 2026-08-20, current through 56 Pa.B.
- * 3438 (June 6, 2026). NOT obtained: the Real Estate Licensing and Registration Act (63 P.S.
- * §§ 455.101—455.902); 68 Pa.C.S. Chapter 73; the Commission's course content outlines; the verbatim
- * text of the §§ 35.336—35.339 consumer disclosure summaries; the itemised disclosures in § 35.335a;
- * the Pennsylvania Landlord and Tenant Act; the realty transfer tax statutes; the Municipalities
- * Planning Code; ARELLO's standards; any Commission examination content outline or candidate handbook;
- * USPAP; and TILA, RESPA, TRID, ECOA and the federal Fair Housing Act. Every RELRA citation in this file
- * is THE REGULATION'S citation, reproduced so a reader knows where to go — not a claim it was read.
- * UNREAD_SOURCES carries the list into the payload.
- *
- * Course version 1.0 submission draft — NOT APPROVED. No Pennsylvania prelicensing credit is available.
- */
+/** Pennsylvania standard salesperson program: 75 qualifying hours, 30-hour Fundamentals plus 45-hour Practice. Current RELRA section 521 and Commission instructions control the ordinary new-applicant five-year education window. Historical regulation wording and transition exceptions must not replace that standard. Source acquisition, curriculum conformity, delivery approval and provider approval remain separate gates; no approval or credit is enabled. */
 
 import FUNDAMENTALS_BANK from "./pennsylvania/fundamentals-30-question-bank.mjs";
 import PRACTICE_BANK from "./pennsylvania/practice-45-question-bank.mjs";
+import { PA_CURRENT_REQUIREMENTS } from './pennsylvania/current-requirements.mjs';
+import { parseCalendarDate, addCalendarMonths } from './calendar-date.mjs';
 
 /* The Commission's figures. */
 const HOURS_PER_CREDIT = 15;                      /* § 35.201 and § 35.358(b)(1) */
-const MINIMUM_CREDITS = 4;                        /* § 35.272(a)(2) */
-const MINIMUM_HOURS = MINIMUM_CREDITS * HOURS_PER_CREDIT;  /* 60 — the regulation's floor */
+const MINIMUM_CREDITS = PA_CURRENT_REQUIREMENTS.minimumCredits;
+const MINIMUM_HOURS = PA_CURRENT_REQUIREMENTS.minimumHours;
 const MINUTES_PER_CLOCK_HOUR = 60;                /* § 35.358(a)(1) */
 const MAX_BREAK_MINUTES_PER_CLOCK_HOUR = 10;
 const MIN_INSTRUCTION_MINUTES_PER_CLOCK_HOUR = MINUTES_PER_CLOCK_HOUR - MAX_BREAK_MINUTES_PER_CLOCK_HOUR;
 const MAX_INSTRUCTOR_LED_CLOCK_HOURS_PER_DAY = 7.5;
 const MAX_CONSECUTIVE_MINUTES_WITHOUT_BREAK = 90;
 const CLASSROOM_ATTENDANCE_PERCENT = 80;          /* § 35.358(a)(3) — classroom delivery only */
-const EDUCATION_VALIDITY_YEARS = 10;              /* § 35.272(b)(3) */
+const EDUCATION_VALIDITY_YEARS = PA_CURRENT_REQUIREMENTS.educationValidityYears;
 const MINIMUM_AGE = 18;                           /* § 35.272(a)(1) */
 const TRANSCRIPT_DEADLINE_DAYS = 30;              /* § 35.359(a) */
 const PROVIDER_RECORD_RETENTION_YEARS = 10;       /* § 35.360(e)(2) */
@@ -127,11 +67,11 @@ const COURSES = Object.freeze({
     modules: Object.freeze([
       { id: "module-01", sequence: 1, title: "Duties owed to every consumer — § 35.292", hours: 5 },
       { id: "module-02", sequence: 2, title: "Permitted relationships — §§ 35.311 to 35.316", hours: 5 },
-      { id: "module-03", sequence: 3, title: "Disclosure of business relationships — §§ 35.284, 35.336 to 35.339", hours: 5 },
+      { id: "module-03", sequence: 3, title: "Disclosure of business relationships — §§ 35.284, 35.336 to 35.339", hours: 5, requiredStudyMaterials: ["pennsylvania/regulatory/disclosure-source-appendix.md", "pennsylvania/pa-real-estate-practice-45-v1/activities/disclosure-workshop.md"] },
       { id: "module-04", sequence: 4, title: "Written agreements and listing agreements — §§ 35.281, 35.331, 35.332", hours: 5 },
       { id: "module-05", sequence: 5, title: "Agreements of sale and statements of estimated cost — §§ 35.333, 35.334", hours: 5 },
       { id: "module-06", sequence: 6, title: "Escrow — §§ 35.321 to 35.328", hours: 5 },
-      { id: "module-07", sequence: 7, title: "Seller disclosure and material defects — §§ 35.284a, 35.335a", hours: 5 },
+      { id: "module-07", sequence: 7, title: "Seller disclosure and material defects — §§ 35.284a, 35.335a", hours: 5, requiredStudyMaterials: ["pennsylvania/pa-real-estate-practice-45-v1/activities/disclosure-workshop.md"] },
       { id: "module-08", sequence: 8, title: "Advertising, solicitation and prohibited practices — §§ 35.282, 35.283, 35.288, 35.301 to 35.308", hours: 5 },
       { id: "module-09", sequence: 9, title: "Valuation products, property management, records and risk management", hours: 5 }
     ].map((item) => Object.freeze(item)))
@@ -158,20 +98,16 @@ const TRANSACTION_LICENSEE_LIMITED_CONFIDENTIALITY = Object.freeze([
 ]);
 
 const SUBMISSION_GATES = Object.freeze([
-  { id: "commission-content-outline", rule: "49 Pa. Code § 35.358(a)(2)", requirement: "Instruction in a Commission required course shall conform to the content or the outline developed by the Commission for the course.", satisfied: false, blockedBy: "The Commission's content outlines for Real Estate Fundamentals and Real Estate Practice have not been obtained by this project. The curriculum is written from 49 Pa. Code Chapter 35 itself and must be conformed to the Commission's outline before submission." },
+  { id: "commission-content-outline", rule: "49 Pa. Code § 35.358(a)(2)", requirement: "Instruction in a Commission required course shall conform to the content or the outline developed by the Commission for the course.", sourceAcquired:true, satisfied: false, blockedBy: "Both current Commission outlines were obtained on November 5, 2026. Objective-level curriculum, activity and examination alignment remains to be completed; source possession alone does not prove conformity." },
   { id: "arello-distance-approval", rule: "49 Pa. Code § 35.358(a)(4)", requirement: "Courses delivered by distance education must have the delivery method approved by the Association of Real Estate License Law Officials or another certifying body with similar approval standards approved by the Commission.", satisfied: false, blockedBy: "No ARELLO or equivalent distance-delivery approval is held. This is a precondition to the course counting at all." },
   { id: "provider-approval", rule: "49 Pa. Code § 35.341", requirement: "Approval of the real estate education provider by the Commission.", satisfied: false, blockedBy: "No Commission approval of a real estate education provider is recorded." },
-  { id: "consumer-disclosure-summaries", rule: "49 Pa. Code §§ 35.336 to 35.339", requirement: "Delivery of the four consumer disclosure summaries in the Commission's own words.", satisfied: false, blockedBy: "The verbatim text of the disclosure summaries and of the § 35.339 oral disclosure has not been obtained. No document in this build reproduces, describes or paraphrases any of them." },
-  { id: "seller-disclosure-itemisation", rule: "49 Pa. Code § 35.335a and 68 Pa.C.S. Chapter 73", requirement: "The itemised disclosures a seller property disclosure statement must contain, and the Seller Disclosure Law itself.", satisfied: false, blockedBy: "Neither the itemised disclosures in § 35.335a nor 68 Pa.C.S. Chapter 73 has been obtained. The definition of a material defect and the four denials WERE read and are transcribed in the curriculum." },
-  { id: "course-hour-assignment", rule: "49 Pa. Code § 35.272(b)(2)", requirement: "The Commission's own hour assignment for Real Estate Fundamentals and Real Estate Practice.", satisfied: false, blockedBy: "The rule names both courses and assigns hours to neither. The 30/45 split delivered here is a StateCourse decision requiring Commission confirmation." }
+  { id: "consumer-disclosure-summaries", rule: "49 Pa. Code §§ 35.336 to 35.339", requirement: "Delivery of the four consumer disclosure summaries in the Commission's own words.", sourceAcquired: true, satisfied: false, blockedBy: "Full official sections 35.336–35.339, a source appendix and an eight-file disclosure workshop are held. Independent notice-format review and verified student delivery remain open." },
+  { id: "seller-disclosure-itemisation", rule: "49 Pa. Code § 35.335a and 68 Pa.C.S. Chapter 73", requirement: "The itemised disclosures a seller property disclosure statement must contain, and the Seller Disclosure Law itself.", sourceAcquired: true, satisfied: false, blockedBy: "Full official section 35.335a, Chapter 73 and Act 74 of 2026 are held; module 07 and the workshop teach their application. Independent content/form review and the upcoming flood amendment implementation review remain open." },
+  { id: "course-hour-assignment", rule: "Commission Fundamentals and Practice outlines, page 1 of each", requirement: "The Commission's own hour assignment for Real Estate Fundamentals and Real Estate Practice.", satisfied:true, evidence:['pennsylvania/regulatory/captures/2026-11-05/fundamentals-outline.pdf#page=1','pennsylvania/regulatory/captures/2026-11-05/practice-outline.pdf#page=1'] }
 ].map((item) => Object.freeze(item)));
 
 const UNREAD_SOURCES = Object.freeze([
-  "The Real Estate Licensing and Registration Act, 63 P.S. §§ 455.101—455.902 (RELRA), including § 455.201, § 455.604, §§ 455.606.1—455.606f, § 455.608, § 455.608f and the Real Estate Recovery Fund provisions",
-  "68 Pa.C.S. Chapter 73 — the Real Estate Seller Disclosure Law",
-  "The Commission's content outlines for Real Estate Fundamentals and Real Estate Practice",
-  "The verbatim text of the consumer disclosure summaries in §§ 35.336, 35.337 and 35.338, and the oral disclosure in § 35.339",
-  "The itemised disclosures set out in § 35.335a",
+  "The complete consolidated Real Estate Licensing and Registration Act (RELRA), except § 521 as amended by Act 75 of 2018, which was read for the current 75-hour/five-year standard",
   "The Pennsylvania Landlord and Tenant Act (68 P.S. § 250.101 et seq.), including section 511.2",
   "Pennsylvania's realty transfer tax statutes and every local transfer tax ordinance",
   "The Municipalities Planning Code and every local zoning, subdivision and building ordinance",
@@ -228,14 +164,13 @@ for (const courseId of COURSE_IDS) {
   deliveredCredits += course.credits;
 }
 
-/* THE ASSERTION THAT MATTERS MOST IN THIS FILE. The delivered total must SATISFY the regulatory
-   minimum — it need not equal it, and it does not. A build that silently dropped below 60 hours would
-   put every student's examination eligibility at risk. */
+/* Both required courses must total at least the current statutory 75-hour/five-credit floor.
+   Scheduled allocations do not by themselves establish delivered instruction or approval. */
 if (deliveredHours < MINIMUM_HOURS) {
-  throw new Error(`Pennsylvania course engine: the two courses total ${deliveredHours} hours, below the ${MINIMUM_HOURS} hours (${MINIMUM_CREDITS} credits) § 35.272(a)(2) requires.`);
+  throw new Error(`Pennsylvania course engine: the two courses total ${deliveredHours} hours, below the ${MINIMUM_HOURS} hours (${MINIMUM_CREDITS} credits) RELRA § 521 requires.`);
 }
 if (deliveredCredits < MINIMUM_CREDITS) {
-  throw new Error(`Pennsylvania course engine: the two courses total ${deliveredCredits} credits, below the ${MINIMUM_CREDITS} § 35.272(a)(2) requires.`);
+  throw new Error(`Pennsylvania course engine: the two courses total ${deliveredCredits} credits, below the ${MINIMUM_CREDITS} RELRA § 521 requires.`);
 }
 if (deliveredHours !== deliveredCredits * HOURS_PER_CREDIT) {
   throw new Error(`Pennsylvania course engine: ${deliveredHours} hours and ${deliveredCredits} credits are inconsistent with § 35.201's ${HOURS_PER_CREDIT}-hour credit.`);
@@ -314,7 +249,7 @@ export function getPennsylvaniaCourse(courseId) {
   return Object.freeze({
     courseId: course.courseId,
     title: course.title,
-    version: "1.0-submission-draft",
+    version: "1.1-current-law-submission-draft",
     state: "PA",
     regulator: "Pennsylvania State Real Estate Commission",
     hours: course.hours,
@@ -335,13 +270,14 @@ export function getPennsylvaniaCourse(courseId) {
     transactionLicenseeLimitedConfidentiality: TRANSACTION_LICENSEE_LIMITED_CONFIDENTIALITY,
     submissionGates: SUBMISSION_GATES,
     unreadSources: UNREAD_SOURCES,
+    durationEvidence: Object.freeze({ status: "UNVERIFIED", hoursAreDesignAllocation: true, observedInstructionMinutes: null }),
     /* What the Commission fixes. */
     commissionRequirements: Object.freeze([
-      `§ 35.272(a)(2): an examination candidate must have successfully completed four credits, or ${MINIMUM_HOURS} hours of instruction, in basic real estate courses. THE REGULATORY MINIMUM IS ${MINIMUM_HOURS} HOURS, NOT 75.`,
+      `RELRA § 521, as amended by Act 75 of 2018: the standard new applicant must complete ${MINIMUM_HOURS} qualifying hours. The older 60-hour regulation is not the controlling standard for that applicant.`,
       `§ 35.201: "Credit — A period of ${HOURS_PER_CREDIT} hours of instruction."`,
       `§ 35.358(b)(1): a prelicensure course must be assigned one credit for every ${HOURS_PER_CREDIT} clock hours of instruction.`,
       "§ 35.272(b)(2): credits will be allowed for Real Estate Fundamentals and Real Estate Practice and all acceptable basic real estate courses, when offered by an accredited college or a provider approved under § 35.341. The rule assigns hours to neither named course.",
-      `§ 35.272(b)(3): courses shall have been completed within ${EDUCATION_VALIDITY_YEARS} years prior to the DATE OF SUCCESSFUL COMPLETION OF THE LICENSING EXAMINATION.`,
+      `RELRA § 521 and current Commission standard-method instructions: coursework must be completed within ${EDUCATION_VALIDITY_YEARS} years before successful completion of the licensing examination.`,
       `§ 35.272(a)(1): the candidate must be ${MINIMUM_AGE} years of age or older.`,
       `§ 35.358(a)(1): a clock hour is a ${MINUTES_PER_CLOCK_HOUR}-minute period comprising ${MIN_INSTRUCTION_MINUTES_PER_CLOCK_HOUR} minutes of instruction and a ${MAX_BREAK_MINUTES_PER_CLOCK_HOUR}-minute break; instructor-led learning may not exceed ${MAX_INSTRUCTOR_LED_CLOCK_HOURS_PER_DAY} clock hours per day; and a student may not be required to attend for more than ${MAX_CONSECUTIVE_MINUTES_WITHOUT_BREAK} consecutive minutes without a break.`,
       "§ 35.358(a)(2): instruction in a Commission required course shall conform to the content or the outline developed by the Commission for the course.",
@@ -355,8 +291,8 @@ export function getPennsylvaniaCourse(courseId) {
     ]),
     /* What this school decided. */
     stateCourseDecisions: Object.freeze([
-      `Delivering ${deliveredHours} hours / ${deliveredCredits} credits across the two courses the rule names, which EXCEEDS the ${MINIMUM_HOURS}-hour / ${MINIMUM_CREDITS}-credit minimum by one credit.`,
-      "The 30/45 split between Real Estate Fundamentals and Real Estate Practice. § 35.272(b)(2) names both courses and assigns hours to neither, so the split requires Commission confirmation.",
+      `Delivering ${deliveredHours} hours / ${deliveredCredits} credits across Fundamentals and Practice meets the standard new-applicant ${MINIMUM_HOURS}-hour requirement. Module grouping and teaching methods remain provider design choices.`,
+      "The grouping of the Commission's 30-hour Fundamentals and 45-hour Practice outlines into this provider's modules; those course totals themselves come from the official outlines.",
       "The grouping of 49 Pa. Code Chapter 35 into fifteen five-hour modules.",
       `The ${ENGAGEMENT_PASSING_PERCENT} percent in-module engagement threshold and the ${APPLIED_PASSING_PERCENT} percent applied threshold. Chapter 35 prescribes no in-module assessment and no in-module passing score.`,
       `The ${COURSE_EXAM_PASSING_PERCENT} percent course examination passing grade. § 35.358(b)(2) requires the examination to be PROCTORED and prescribes NO passing percentage — so unlike several other states in this project, every percentage in this build is a StateCourse standard.`
@@ -377,7 +313,7 @@ export function getPennsylvaniaProgram() {
   return Object.freeze({
     state: "PA",
     regulator: "Pennsylvania State Real Estate Commission",
-    version: "1.0-submission-draft",
+    version: "1.1-current-law-submission-draft",
     courses: Object.freeze(COURSE_IDS.map((id) => getPennsylvaniaCourse(id))),
     deliveredHours,
     deliveredCredits,
@@ -386,10 +322,13 @@ export function getPennsylvaniaProgram() {
     hoursPerCredit: HOURS_PER_CREDIT,
     exceedsMinimumBy: Object.freeze({ hours: deliveredHours - MINIMUM_HOURS, credits: deliveredCredits - MINIMUM_CREDITS }),
     minimumIsRegulatory: true,
-    deliveredTotalIsStateCourseDecision: true,
-    note: `§ 35.272(a)(2) requires four credits, or ${MINIMUM_HOURS} hours. These two courses deliver ${deliveredCredits} credits / ${deliveredHours} hours, exceeding the minimum by one credit. The 75-hour figure in general circulation is the two named courses as commonly delivered, NOT a regulatory requirement, and the 30/45 split requires Commission confirmation.`,
+    deliveredTotalIsStateCourseDecision: false,
+    currentRequirementSources:PA_CURRENT_REQUIREMENTS.sources,
+    legacyException:PA_CURRENT_REQUIREMENTS.legacyException,
+    note: `RELRA § 521, as amended by Act 75 of 2018, requires ${MINIMUM_HOURS} hours for the standard new applicant. These two courses deliver ${deliveredCredits} credits / ${deliveredHours} hours. The statutory transitional exception is not automatically applied.`,
     submissionGates: SUBMISSION_GATES,
     unreadSources: UNREAD_SOURCES,
+    durationEvidence: Object.freeze({ status: "UNVERIFIED", hoursAreDesignAllocation: true, observedInstructionMinutes: null }),
     approvalStatus: "Not approved. No Pennsylvania prelicensing credit is available."
   });
 }
@@ -555,7 +494,7 @@ export function pennsylvaniaEducationReadiness(courseCredits = [], options = {})
     determinationIsTheCommissions: true,
     blockedBy: (() => {
       if (!meetsHourRequirement) {
-        return `§ 35.272(a)(2) requires four credits, or ${MINIMUM_HOURS} hours of instruction. The school's records show ${credits} credits / ${hours} hours completed.`;
+        return `RELRA § 521 requires ${MINIMUM_HOURS} qualifying hours for the standard new applicant. The school's records show ${credits} credits / ${hours} hours completed.`;
       }
       if (ageMet === false) {
         return `§ 35.272(a)(1) requires the candidate to be ${MINIMUM_AGE} years of age or older.`;
@@ -566,27 +505,23 @@ export function pennsylvaniaEducationReadiness(courseCredits = [], options = {})
 }
 
 /**
- * § 35.272(b)(3): "Courses shall have been completed within 10 years prior to the DATE OF SUCCESSFUL
- * COMPLETION OF THE LICENSING EXAMINATION."
+ * Current Commission standard-method guidance: complete qualifying coursework within five years before successful completion of the licensing examination.
  *
  * The anchor is the examination, not the application and not the licence. completedOn and
  * examinationDate are ISO date strings.
  */
 export function pennsylvaniaEducationValidity(completedOn, examinationDate = null) {
-  if (typeof completedOn !== "string") return null;
-  const completed = new Date(completedOn);
-  if (Number.isNaN(completed.valueOf())) return null;
-
-  const expiresOn = new Date(completed);
-  expiresOn.setFullYear(expiresOn.getFullYear() + EDUCATION_VALIDITY_YEARS);
+  const completed = parseCalendarDate(completedOn);
+  if (!completed) return null;
+  const expiresOn = addCalendarMonths(completed,EDUCATION_VALIDITY_YEARS*12);
 
   let withinWindow = null;
   let examination = null;
   if (typeof examinationDate === "string") {
-    const parsed = new Date(examinationDate);
-    if (!Number.isNaN(parsed.valueOf())) {
+    const parsed = parseCalendarDate(examinationDate);
+    if (parsed) {
       examination = parsed;
-      withinWindow = parsed <= expiresOn;
+      withinWindow = parsed >= completed && parsed <= expiresOn;
     }
   }
 
@@ -596,9 +531,9 @@ export function pennsylvaniaEducationValidity(completedOn, examinationDate = nul
     expiresOn: expiresOn.toISOString().slice(0, 10),
     examinationDate: examination ? examination.toISOString().slice(0, 10) : null,
     withinWindow,
-    measuredTo: "the date of successful completion of the licensing examination — 49 Pa. Code § 35.272(b)(3)",
+    measuredTo: "the date of successful completion of the licensing examination — current Commission standard-method instructions and RELRA § 521",
     blockedBy: withinWindow === false
-      ? `The course was completed on ${completed.toISOString().slice(0, 10)}. Under § 35.272(b)(3) it counts only towards an examination successfully completed by ${expiresOn.toISOString().slice(0, 10)}.`
+      ? `The examination must follow course completion on ${completed.toISOString().slice(0, 10)} and fall within the standard five-year window ending ${expiresOn.toISOString().slice(0, 10)}. The Commission determines any alternate or transitional route.`
       : null
   };
 }

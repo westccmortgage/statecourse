@@ -1,0 +1,46 @@
+{
+  "baseline": "43c96b0 (previous review-branch verification)",
+  "baselineCounts": {
+    "tests": 2397,
+    "pass": 2341,
+    "fail": 27,
+    "skip": 29
+  },
+  "currentCounts": {
+    "tests": 2407,
+    "pass": 2351,
+    "fail": 27,
+    "skip": 29
+  },
+  "newFailureNames": [],
+  "resolvedFailureNames": [],
+  "unchangedFailureNames": [
+    "RE 306 carries the school, the course and the examination as the manifest states them",
+    "item 23A answers yes for the practice course and no for the other two",
+    "15A names the arrangement the regulation names",
+    "15B claims in-person proctoring only because the platform actually does it in person",
+    "RE 306 leaves the sponsor number, both dates and every signature empty",
+    "RE 336 leaves the instructor's own question for the instructor",
+    "RE 336 leaves the place of execution to be written with the date",
+    "neither form carries a DRE sponsor id",
+    "every filled field is legible and fits its field on the page",
+    "every course has a built print volume",
+    "the first filing's volume meets the Department's page benchmark",
+    "the built volume matches the page count recorded for it, or the local render is wrong",
+    "the page count a reviewer is told is the page count they receive",
+    "RE 313 carries the volume's real page count, not an instruction to count it",
+    "the printing instructions state the page count of the volume that will be printed",
+    "the traceability matrix regenerates cleanly from the course",
+    "tests/dre-examination-review.test.mjs",
+    "offline verification is explicitly unverified and cannot open a gate",
+    "Michigan is visible in production while approval and enrollment remain closed",
+    "tests/nmls-coach-endpoint.test.mjs",
+    "tests/nmls-learning-endpoint.test.mjs",
+    "tests/nmls-review-endpoint.test.mjs",
+    "tests/nmls-training-endpoint.test.mjs",
+    "tests/nmls-training-enrollment.test.mjs",
+    "the video freeze names itself, supersedes plan v1 by hash, and still hashes every render dependency",
+    "all source readings are fresh and staleness cannot be hidden",
+    "offline lock skips network and does not describe a live URL check as passed"
+  ]
+}

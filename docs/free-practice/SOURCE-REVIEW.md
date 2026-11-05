@@ -1,3 +1,9 @@
+# November 5 follow-up: current-law remediation
+
+Full-course preparation found and corrected the superseded Colorado automatic transaction-broker rule in five formative items, associated teaching and the course engine. HB26-1426 section 87 and DRE's August 12, 2026 advisory are now in the internal public-item references. All 319 Colorado items remain; the current-law question passed actual anonymous-player grading. PA's underlying paid-course layer is now corrected to the current ordinary 75-hour/five-year path as well; its public override remains compatible. The complete nine-state count remains 1,933.
+
+The new course-preparation scope does not imply paid-course conformity, filing readiness or approval. NY/GA work is now authorized at task level, subject to their actual legal prerequisites. See [preparation record](../submission/PRIORITY-STATE-PACKAGES.md). The dated November 4 account below remains historical evidence and is superseded on those points by this follow-up.
+
 # Public-practice source follow-up — November 4, 2026
 
 The existing branch's state banks, Pennsylvania corrections and Washington public-content restriction are retained. This review supplements the [readiness matrix](MULTI-STATE-READINESS.md); it does not replace the prior state source manifests or certify a paid curriculum. [SOURCE-CHECKS.json](SOURCE-CHECKS.json) records direct retrieval outcomes, hashes and byte comparisons. A successful fetch alone is not a substantive review.

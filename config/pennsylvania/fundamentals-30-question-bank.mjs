@@ -1,76 +1,174 @@
-/**
- * Pennsylvania Real Estate Fundamentals (30 hours / 2 credits) — module question bank.
- *
- * ONE OF THE TWO COURSES 49 Pa. Code § 35.272(b)(2) NAMES BY TITLE. The rule provides that "credits will
- * be allowed for Real Estate Fundamentals and Real Estate Practice and all acceptable basic real estate
- * courses" — naming both courses and assigning hours to NEITHER.
- *
- * THE NUMBER THIS PROJECT HAD TO CORRECT. § 35.272(a)(2) requires "four credits, or 60 hours of
- * instruction, in basic real estate courses." § 35.201: "Credit — A period of 15 hours of instruction."
- * § 35.358(b)(1): "A prelicensure course must be assigned one credit for every 15 clock hours of
- * instruction." THE REGULATORY MINIMUM IS 60 HOURS, NOT 75. This course (30) and its companion (45)
- * total 5 credits / 75 hours, which EXCEEDS the minimum. The 30/45 split is a StateCourse decision
- * requiring Commission confirmation, recorded as such in
- * pennsylvania/regulatory/primary-text-readings.md.
- *
- * THE CONTENT OUTLINE THIS PROJECT DOES NOT HAVE. § 35.358(a)(2): "Instruction in a Commission required
- * course shall conform to the content or the outline developed by the Commission for the course." THE
- * COMMISSION'S OUTLINE WAS NOT OBTAINED. Everything here is authored from 49 Pa. Code Chapter 35 itself,
- * read on 2026-08-20, current through 56 Pa.B. 3438 (June 6, 2026). Conforming to the Commission's
- * outline is a submission gate.
- *
- * THESE ITEMS ARE NOT THE COURSE EXAMINATION. § 35.358(b)(2): "A prelicensure course must be graded by
- * proctored examination." The items here gate progression through a module and are visible to the student
- * by design. The 80 percent engagement threshold is a StateCourse standard; Chapter 35 prescribes no
- * in-module assessment and no in-module score.
- *
- * Each module carries one applied item, five engagement items and five remediation items. The correct
- * answer is authored at index 0 and permuted deterministically per item id at delivery, so a recorded
- * selection keeps its meaning permanently. The public delivery path strips correctChoice and rationale,
- * and a test proves it.
- *
- * WHAT WAS NOT READ. The Real Estate Licensing and Registration Act (63 P.S. §§ 455.101—455.902); 68
- * Pa.C.S. Chapter 73; the Pennsylvania Landlord and Tenant Act; the Municipalities Planning Code;
- * Pennsylvania's recording, intestacy, foreclosure, tax sale, adverse possession, mechanics' lien,
- * condominium and planned community statutes; Pennsylvania's realty transfer tax statutes; USPAP; and
- * TILA, RESPA, TRID, ECOA and the federal Fair Housing Act. NO ITEM asks a student to recall a figure,
- * deadline or provision from any of them. Every figure in an item is one 49 Pa. Code Chapter 35 states
- * itself, or is supplied inside the item as a given.
- *
- * Course version 1.0 submission draft — NOT APPROVED. No Pennsylvania prelicensing credit is available.
- */
-
+/** Pennsylvania formative bank. Current standard-applicant licensing items were reconciled on 2026-11-05 to RELRA section 521 as amended by Act 75 of 2018 and current Commission instructions. Older regulation text does not override the current 75-hour/five-year standard. These are formative exercises, not the protected course final. */
 const modules = {
   "module-01": {
-    subject: "Pennsylvania licensure and the regulatory framework",
-    hours: 5.0,
-    applied: {
-      prompt: "A student finishing this course asks you three things: whether the 75 hours she is completing is what the regulation requires, whether her course transcript matters once she has it, and whether she can wait a few years before taking the licensing examination because 'the education never expires.'",
-      choices: [
-        "Correct all three from the rule: § 35.272(a)(2) requires FOUR CREDITS, OR 60 HOURS — 75 exceeds the minimum rather than meeting it; the transcript matters permanently because § 35.359(a) requires it within 30 days and it carries the completion date and hours the Commission will measure against; and § 35.272(b)(3) requires courses to have been completed WITHIN 10 YEARS PRIOR TO THE DATE OF SUCCESSFUL COMPLETION OF THE LICENSING EXAMINATION, so the clock is running and it runs to the examination, not to her application.",
-        "Confirm that 75 hours is the regulatory requirement, that the transcript is a formality, and that the education does not expire.",
-        "Tell her the requirement is 60 hours, that the transcript may be discarded once the licence issues, and that the ten years runs to her licence application.",
-        "Tell her the requirement is 75 hours and the ten-year clock runs from the date she enrolled."
-      ],
-      correctChoice: 0,
-      rationale: "Three separate figures, all transcribed from 49 Pa. Code Chapter 35. The anchor of the ten-year window is the unusual part: it runs to the date of SUCCESSFUL COMPLETION OF THE LICENSING EXAMINATION, not to enrolment, application or licence issue."
-    },
-    engagement: [
-      { prompt: "What does 49 Pa. Code § 35.272(a)(2) require of a salesperson examination candidate?", choices: ["Four credits, or 60 hours of instruction, in basic real estate courses as determined by the Commission.", "Five credits, or 75 hours of instruction.", "Seventy-five hours of instruction in Commission-required courses only.", "Sixty hours of instruction plus a proctored examination in each course."], correctChoice: 0, rationale: "§ 35.201 supplies the arithmetic: 'Credit — A period of 15 hours of instruction.' Four credits is sixty hours. The 75-hour figure in general circulation is the two named courses as providers commonly deliver them, which exceeds the minimum." },
-      { prompt: "How does § 35.358(a)(1) define a clock hour for a Pennsylvania prelicensure course?", choices: ["A 60-minute period comprising 50 minutes of instruction and a 10-minute break — and instructor-led learning may not exceed 7½ clock hours per day.", "A full 60 minutes of instruction with breaks taken outside the hour.", "A 50-minute period with no break requirement.", "Whatever period the provider designates in its approved course outline."], correctChoice: 0, rationale: "The same subsection adds that a student may not be required to attend class for more than 90 consecutive minutes without a break. All three limits fall on the provider, not the student." },
-      { prompt: "Under § 35.272(b)(3), the ten-year education window is measured to what date?", choices: ["The date of successful completion of the licensing examination.", "The date the licence application is submitted.", "The date the licence is issued.", "The date the candidate enrolled in the course."], correctChoice: 0, rationale: "A candidate whose coursework is eleven years old and who passes the examination today has education the rule does not count, whatever else is in order." },
-      { prompt: "What does § 35.358(b)(2) require of a prelicensure course?", choices: ["That it be graded by proctored examination, except where a student's handicap or disability would make grading by examination impractical.", "That it be graded by open-book examination administered by the provider.", "That it be graded by the Commission.", "That it include at least one proctored assessment per credit."], correctChoice: 0, rationale: "The in-module checks in this course are not that examination. They gate progression and are visible to the student by design; the graded event is separate and is watched." },
-      { prompt: "What does § 35.358(a)(4) require of a course delivered by distance education?", choices: ["That its delivery method be approved by the Association of Real Estate License Law Officials or another certifying body with similar approval standards approved by the Commission — in addition to meeting the content requirements.", "That the provider verify identity by proctored login.", "That the course also be offered in a classroom format.", "Nothing beyond the content requirements."], correctChoice: 0, rationale: "No such approval is held for this build. It is one of two submission gates recorded at the head of Module PA-F-01, and it is a precondition to the course counting at all." }
+  "subject": "Pennsylvania licensure and the regulatory framework",
+  "hours": 5,
+  "applied": {
+    "prompt": "A first-time Pennsylvania salesperson candidate plans to rely on a 60-hour course advertised using older regulatory text. What should the candidate verify?",
+    "choices": [
+      "The standard path calls for 75 qualifying hours under RELRA § 521 and current Commission instructions.",
+      "Any 60 hours qualifies for a new applicant.",
+      "Public practice counts toward the missing hours.",
+      "The 75-hour requirement applies only after licensure."
     ],
-    remediation: [
-      { prompt: "Three degrees deem the education requirement satisfied under § 35.272(b)(1). Which set?", choices: ["A bachelor's degree with a major in real estate from an accredited college; a bachelor's degree from such a college with coursework equivalent to a major in real estate; or a juris doctor degree from an accredited law school.", "Any bachelor's degree, any master's degree, or a juris doctor.", "An associate degree in real estate, a bachelor's degree in business, or a juris doctor.", "A bachelor's degree with a major in real estate only."], correctChoice: 0, rationale: "A candidate holding one of the three 'will not be required to show completion of coursework in specific areas of study.' The rule's own words." },
-      { prompt: "What must a real estate education provider give a student within 30 days after a course has been taught?", choices: ["An official course transcript containing the § 35.360(a)(5) information and signed by the director.", "A certificate of attendance signed by the instructor.", "A grade report and a copy of the course outline.", "Nothing, unless the student requests it."], correctChoice: 0, rationale: "§ 35.359(a). The transcript carries the provider's Commission approval number, the completion date, the hours, the final grade, and the statement that the course will be accepted towards the education requirement. § 35.360(e)(2) requires the provider to retain such records for 10 years, matching the ten-year education window exactly." },
-      { prompt: "What must a student enrolment agreement contain under § 35.357?", choices: ["Itemised tuition and fees; the provider's refund policy on withdrawal, dismissal or termination of operations; and the Bureau's toll-free telephone number, (800) 822-2113, for information about filing a complaint against the provider.", "Itemised tuition and the course schedule only.", "The refund policy and the instructor's qualifications.", "The Commission's telephone number and the course outline."], correctChoice: 0, rationale: "The complaint number is in the rule so that a student being mistreated by a school has somewhere to go that is not the school." },
-      { prompt: "A salesperson's licence in Pennsylvania operates how?", choices: ["In affiliation with a broker holding either a reciprocal or a standard licence issued by the Commission — it does not stand on its own.", "Independently, once issued.", "In affiliation with a broker only for the first two years.", "In affiliation with an education provider approved under § 35.341."], correctChoice: 0, rationale: "That affiliation shapes almost everything in the companion course — escrow, advertising, agency and supervision all run through the employing broker." },
-      { prompt: "What does the Real Estate Recovery Fund actually cover?", choices: ["A final civil judgment against a Pennsylvania licensee for fraud, misrepresentation or deceit in a real estate transaction, where the claimant has been unable to collect after exhausting legal and equitable remedies.", "Any consumer loss caused by a licensee's error.", "Losses arising from a licensee's negligence in a transaction.", "Any complaint the Commission substantiates against a licensee."], correctChoice: 0, rationale: "Five conditions, every one a hurdle. It is not insurance and it is not a complaint remedy — it is a payer of last resort behind an uncollectable judgment. No payment limit is stated in this build, because RELRA was not read for this project." }
+    "correctChoice": 0,
+    "rationale": "For a new standard-method candidate without an applicable exception, the current Commission guide implements the 75-hour statute. The older rule language is not current application guidance.",
+    "sources": [
+      {
+        "reference": "Pennsylvania Real Estate Commission · Salesperson standard method",
+        "url": "https://www.pa.gov/agencies/dos/resources/professional-licensing-resources/licensure-processing-guides-and-timelines/real-estate-commission-guide"
+      },
+      {
+        "reference": "Pennsylvania Act 75 of 2018 · RELRA § 521",
+        "url": "https://www.legis.state.pa.us/WU01/LI/LI/US/HTM/2018/0/0075..HTM"
+      }
     ]
   },
-
+  "engagement": [
+    {
+      "prompt": "Which two subjects does the Pennsylvania Commission identify for standard salesperson prelicensing education?",
+      "choices": [
+        "Real Estate Fundamentals and Real Estate Practice",
+        "Brokerage Management and Commercial Appraisal",
+        "Real Estate Finance and Mortgage Origination",
+        "Property Inspection and Land Surveying"
+      ],
+      "correctChoice": 0,
+      "rationale": "The Commission identifies Fundamentals and Practice as the two basic courses. This practice does not award credit.",
+      "sources": [
+        {
+          "reference": "Pennsylvania Real Estate Commission · Salesperson standard method",
+          "url": "https://www.pa.gov/agencies/dos/resources/professional-licensing-resources/licensure-processing-guides-and-timelines/real-estate-commission-guide"
+        },
+        {
+          "reference": "Pennsylvania Act 75 of 2018 · RELRA § 521",
+          "url": "https://www.legis.state.pa.us/WU01/LI/LI/US/HTM/2018/0/0075..HTM"
+        }
+      ]
+    },
+    {
+      "prompt": "How does § 35.358(a)(1) define a clock hour for a Pennsylvania prelicensure course?",
+      "choices": [
+        "A 60-minute period comprising 50 minutes of instruction and a 10-minute break — and instructor-led learning may not exceed 7½ clock hours per day.",
+        "A full 60 minutes of instruction with breaks taken outside the hour.",
+        "A 50-minute period with no break requirement.",
+        "Whatever period the provider designates in its approved course outline."
+      ],
+      "correctChoice": 0,
+      "rationale": "The same subsection adds that a student may not be required to attend class for more than 90 consecutive minutes without a break. All three limits fall on the provider, not the student."
+    },
+    {
+      "prompt": "How does the Pennsylvania Commission measure the ordinary five-year prelicensing education window?",
+      "choices": [
+        "From course completion to successful completion of the licensing examination",
+        "From course enrollment to license renewal",
+        "From the date the broker signs an affiliation agreement",
+        "From the first practice session to the license application"
+      ],
+      "correctChoice": 0,
+      "rationale": "The current guide says the qualifying coursework must be completed within five years before successful completion of the licensing examination.",
+      "sources": [
+        {
+          "reference": "Pennsylvania Real Estate Commission · Salesperson standard method",
+          "url": "https://www.pa.gov/agencies/dos/resources/professional-licensing-resources/licensure-processing-guides-and-timelines/real-estate-commission-guide"
+        },
+        {
+          "reference": "Pennsylvania Act 75 of 2018 · RELRA § 521",
+          "url": "https://www.legis.state.pa.us/WU01/LI/LI/US/HTM/2018/0/0075..HTM"
+        }
+      ]
+    },
+    {
+      "prompt": "What does § 35.358(b)(2) require of a prelicensure course?",
+      "choices": [
+        "That it be graded by proctored examination, except where a student's handicap or disability would make grading by examination impractical.",
+        "That it be graded by open-book examination administered by the provider.",
+        "That it be graded by the Commission.",
+        "That it include at least one proctored assessment per credit."
+      ],
+      "correctChoice": 0,
+      "rationale": "The in-module checks in this course are not that examination. They gate progression and are visible to the student by design; the graded event is separate and is watched."
+    },
+    {
+      "prompt": "What does § 35.358(a)(4) require of a course delivered by distance education?",
+      "choices": [
+        "That its delivery method be approved by the Association of Real Estate License Law Officials or another certifying body with similar approval standards approved by the Commission — in addition to meeting the content requirements.",
+        "That the provider verify identity by proctored login.",
+        "That the course also be offered in a classroom format.",
+        "Nothing beyond the content requirements."
+      ],
+      "correctChoice": 0,
+      "rationale": "No such approval is held for this build. It is one of two submission gates recorded at the head of Module PA-F-01, and it is a precondition to the course counting at all."
+    }
+  ],
+  "remediation": [
+    {
+      "prompt": "Three degrees deem the education requirement satisfied under § 35.272(b)(1). Which set?",
+      "choices": [
+        "A bachelor's degree with a major in real estate from an accredited college; a bachelor's degree from such a college with coursework equivalent to a major in real estate; or a juris doctor degree from an accredited law school.",
+        "Any bachelor's degree, any master's degree, or a juris doctor.",
+        "An associate degree in real estate, a bachelor's degree in business, or a juris doctor.",
+        "A bachelor's degree with a major in real estate only."
+      ],
+      "correctChoice": 0,
+      "rationale": "A candidate holding one of the three 'will not be required to show completion of coursework in specific areas of study.' The rule's own words."
+    },
+    {
+      "prompt": "Why should a Pennsylvania applicant retain the official transcript from the education provider?",
+      "choices": [
+        "It documents qualifying coursework and the completion date for licensing review.",
+        "It creates active authority to perform brokerage.",
+        "It replaces the Commission’s exam record.",
+        "It creates a credit record for public practice."
+      ],
+      "correctChoice": 0,
+      "rationale": "An official transcript documents education. The Commission determines whether that education qualifies and whether its timing meets the current application requirements.",
+      "sources": [
+        {
+          "reference": "Pennsylvania Real Estate Commission · Salesperson standard method",
+          "url": "https://www.pa.gov/agencies/dos/resources/professional-licensing-resources/licensure-processing-guides-and-timelines/real-estate-commission-guide"
+        },
+        {
+          "reference": "Pennsylvania Act 75 of 2018 · RELRA § 521",
+          "url": "https://www.legis.state.pa.us/WU01/LI/LI/US/HTM/2018/0/0075..HTM"
+        }
+      ]
+    },
+    {
+      "prompt": "What must a student enrolment agreement contain under § 35.357?",
+      "choices": [
+        "Itemised tuition and fees; the provider's refund policy on withdrawal, dismissal or termination of operations; and the Bureau's toll-free telephone number, (800) 822-2113, for information about filing a complaint against the provider.",
+        "Itemised tuition and the course schedule only.",
+        "The refund policy and the instructor's qualifications.",
+        "The Commission's telephone number and the course outline."
+      ],
+      "correctChoice": 0,
+      "rationale": "The complaint number is in the rule so that a student being mistreated by a school has somewhere to go that is not the school."
+    },
+    {
+      "prompt": "A salesperson's licence in Pennsylvania operates how?",
+      "choices": [
+        "In affiliation with a broker holding either a reciprocal or a standard licence issued by the Commission — it does not stand on its own.",
+        "Independently, once issued.",
+        "In affiliation with a broker only for the first two years.",
+        "In affiliation with an education provider approved under § 35.341."
+      ],
+      "correctChoice": 0,
+      "rationale": "That affiliation shapes almost everything in the companion course — escrow, advertising, agency and supervision all run through the employing broker."
+    },
+    {
+      "prompt": "What does the Real Estate Recovery Fund actually cover?",
+      "choices": [
+        "A final civil judgment against a Pennsylvania licensee for fraud, misrepresentation or deceit in a real estate transaction, where the claimant has been unable to collect after exhausting legal and equitable remedies.",
+        "Any consumer loss caused by a licensee's error.",
+        "Losses arising from a licensee's negligence in a transaction.",
+        "Any complaint the Commission substantiates against a licensee."
+      ],
+      "correctChoice": 0,
+      "rationale": "Five conditions, every one a hurdle. It is not insurance and it is not a complaint remedy — it is a payer of last resort behind an uncollectable judgment. No payment limit is stated in this build, because RELRA was not read for this project."
+    }
+  ]
+},
   "module-02": {
     subject: "Real property, estates and interests",
     hours: 5.0,

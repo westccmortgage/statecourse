@@ -28,7 +28,7 @@ export const REFERENCES = {
 export const STATE_REFERENCES = {
   TX: [ref('https://www.trec.texas.gov/become-licensed/sales-agent','TREC sales agent education; six-course topic structure'),ref('https://www.trec.texas.gov/agency-information/rules-and-laws/trec-rules','Current TREC rules; read the question’s curriculum pinpoint')],
   FL: [REFERENCES['fl-syllabus']],
-  CO: [ref('https://dre.colorado.gov/division-programs/real-estate-broker/education/broker-qualifying-education','Colorado DRE six qualifying education outlines; course/topic structure')],
+  CO: [ref('https://dre.colorado.gov/division-programs/real-estate-broker/education/broker-qualifying-education','Colorado DRE six qualifying education outlines; course/topic structure'), ref('https://leg.colorado.gov/bills/hb26-1426','HB26-1426 section 87, effective August 12, 2026; written relationships and compensation'), ref('https://content.govdelivery.com/accounts/CODORA/bulletins/424a45a','DRE written relationship agreement advisory, August 12, 2026')],
   AZ: [ref('https://azre.gov/resources/exam-curriculum-real-estate-salesperson','ADRE salesperson exam curriculum effective January 1, 2026; topic alignment')],
   NC: [ref('https://www.ncrec.gov/Forms/Education/Prelicense_Course_Syllabus.pdf','NCREC prelicensing syllabus; March 2024 edition amended May 2026; current bytes match retained source'),ref('https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/ByChapter/Chapter_93A.html','North Carolina Chapter 93A; broker terminology and licensure')],
   GA: [REFERENCES['ga-education']],

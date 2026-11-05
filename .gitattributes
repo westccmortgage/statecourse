@@ -1,0 +1,3 @@
+# Official HTML captures retain publisher bytes, including CRLF/trailing whitespace.
+# Validate their manifests and read the source appendices; never normalize the archive.
+**/regulatory/captures/**/*.html -text -diff

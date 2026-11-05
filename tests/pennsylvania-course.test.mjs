@@ -1,20 +1,7 @@
-/**
- * Pennsylvania salesperson prelicensing — tests.
- *
- * The single most important thing these tests hold is the NUMBER. 49 Pa. Code § 35.272(a)(2) requires
- * "four credits, or 60 hours of instruction" — the regulatory minimum is 60 HOURS, NOT 75. This build
- * delivers 75 across the two courses § 35.272(b)(2) names by title, which EXCEEDS the minimum by one
- * credit. A test here fails if the payload ever presents 75 as the requirement, or if the delivered
- * total ever drops below the floor.
- *
- * They also hold the build to what Chapter 35 does NOT prescribe. Unlike Maine, Wisconsin, Missouri,
- * Oklahoma and North Carolina, Pennsylvania sets NO passing percentage for a prelicensure course — it
- * requires PROCTORED grading and stops. So every percentage in this build is a StateCourse standard, and
- * a test asserts the payload labels them that way.
- *
- * And they hold it to what it did not read: RELRA, 68 Pa.C.S. Chapter 73, the Commission's content
- * outlines, the verbatim consumer disclosure summaries and the § 35.335a itemisation.
- */
+/** Pennsylvania prelicensing: the current statute controls the standard 75-hour/five-credit
+ * pathway and five-year education window. The older regulation is retained as historical evidence;
+ * transitional eligibility is never inferred. Acquiring official outlines does not establish
+ * conformity, delivery approval, provider approval, or observed instructional duration. */
 
 import test from "node:test";
 import assert from "node:assert/strict";
@@ -68,51 +55,52 @@ const allText = PENNSYLVANIA_COURSE_IDS
 
 /* ---- THE NUMBER ---- */
 
-test("the regulatory minimum is 60 hours / 4 credits, and the build says so", () => {
-  assert.equal(PENNSYLVANIA_MINIMUM_HOURS, 60);
-  assert.equal(PENNSYLVANIA_MINIMUM_CREDITS, 4);
+test("the current standard-applicant requirement is 75 hours / 5 credits", () => {
+  assert.equal(PENNSYLVANIA_MINIMUM_HOURS, 75);
+  assert.equal(PENNSYLVANIA_MINIMUM_CREDITS, 5);
   assert.equal(PENNSYLVANIA_HOURS_PER_CREDIT, 15);
   assert.equal(PENNSYLVANIA_MINIMUM_CREDITS * PENNSYLVANIA_HOURS_PER_CREDIT, PENNSYLVANIA_MINIMUM_HOURS);
   const program = getPennsylvaniaProgram();
-  assert.equal(program.minimumHours, 60);
+  assert.equal(program.minimumHours, 75);
   assert.equal(program.minimumIsRegulatory, true);
 });
 
-test("the delivered total is 75 hours / 5 credits and EXCEEDS the minimum rather than meeting it", () => {
+test("the delivered total is 75 hours / 5 credits and meets the standard requirement", () => {
   assert.equal(PENNSYLVANIA_DELIVERED_HOURS, 75);
   assert.equal(PENNSYLVANIA_DELIVERED_CREDITS, 5);
   const program = getPennsylvaniaProgram();
   assert.equal(program.deliveredHours, 75);
   assert.equal(program.deliveredCredits, 5);
-  assert.equal(program.exceedsMinimumBy.hours, 15);
-  assert.equal(program.exceedsMinimumBy.credits, 1);
-  assert.ok(program.deliveredHours > program.minimumHours);
-  assert.equal(program.deliveredTotalIsStateCourseDecision, true);
+  assert.equal(program.exceedsMinimumBy.hours, 0);
+  assert.equal(program.exceedsMinimumBy.credits, 0);
+  assert.equal(program.deliveredHours,program.minimumHours);
+  assert.equal(program.deliveredTotalIsStateCourseDecision, false);
 });
 
-test("the payload never presents 75 hours as the regulatory requirement", () => {
+test("the later statute controls the current path and transitional exceptions are not auto-applied", () => {
   const program = getPennsylvaniaProgram();
-  assert.match(program.note, /requires four credits, or 60 hours/i);
-  assert.match(program.note, /NOT a regulatory requirement/i);
+  assert.match(program.note, /requires 75 hours/i);
+  assert.match(program.note, /transitional exception is not automatically applied/i);
   for (const courseId of PENNSYLVANIA_COURSE_IDS) {
     const course = getPennsylvaniaCourse(courseId);
-    /* The Commission requirements list must state the 60-hour minimum and must not claim 75. */
+    /* The payload must identify the controlling current requirement and authority hierarchy. */
     const commission = course.commissionRequirements.join(" | ");
-    assert.match(commission, /60 hours/);
-    assert.match(commission, /NOT 75/i);
-    assert.doesNotMatch(commission, /requires .{0,20}75 hours/i);
-    /* The 75 belongs in the school's decisions, not the regulator's requirements. */
+    assert.match(commission, /standard new applicant must complete 75 qualifying hours/);
+    assert.match(commission, /older 60-hour regulation is not the controlling standard/i);
+    assert.ok(getPennsylvaniaProgram().currentRequirementSources.length>=2);
+    /* The provider's course design must remain consistent with that requirement. */
     assert.ok(course.stateCourseDecisions.some((line) => /75 hours/.test(line)), courseId);
   }
 });
 
-test("the 30/45 split is recorded as a StateCourse decision requiring Commission confirmation", () => {
+test("the 30/45 split is confirmed by held official outlines without claiming full conformity", () => {
   const course = getPennsylvaniaCourse(FUNDAMENTALS);
-  assert.ok(course.stateCourseDecisions.some((line) => /30\/45 split/.test(line) && /Commission confirmation/i.test(line)));
+  assert.ok(course.stateCourseDecisions.some((line) => /30-hour Fundamentals and 45-hour Practice/.test(line)));
   const gate = PENNSYLVANIA_SUBMISSION_GATES.find((g) => g.id === "course-hour-assignment");
   assert.ok(gate);
-  assert.equal(gate.satisfied, false);
-  assert.match(gate.blockedBy, /assigns hours to neither/i);
+  assert.equal(gate.satisfied, true);
+  assert.equal(gate.evidence.length,2);
+  assert.equal(PENNSYLVANIA_SUBMISSION_GATES.find(g=>g.id==='commission-content-outline').satisfied,false);
 });
 
 test("each course's hours divide into whole 15-hour credits", () => {
@@ -261,7 +249,7 @@ test("examination readiness is computed across BOTH courses, not either alone", 
   const oneOnly = pennsylvaniaEducationReadiness([fundamentals], { age: 30 });
   assert.equal(oneOnly.completedCredits, 2);
   assert.equal(oneOnly.meetsHourRequirement, false);
-  assert.match(oneOnly.blockedBy, /requires four credits, or 60 hours/i);
+  assert.match(oneOnly.blockedBy, /requires 75 qualifying hours/i);
 
   const both = pennsylvaniaEducationReadiness([fundamentals, practice], { age: 30 });
   assert.equal(both.completedHours, 75);
@@ -279,17 +267,21 @@ test("age below 18 blocks readiness under § 35.272(a)(1)", () => {
   assert.match(young.blockedBy, /18 years of age or older/);
 });
 
-test("the ten-year window is measured to the licensing EXAMINATION date", () => {
-  const inside = pennsylvaniaEducationValidity("2026-08-20", "2036-01-15");
-  assert.equal(inside.validityYears, 10);
-  assert.equal(PENNSYLVANIA_EDUCATION_VALIDITY_YEARS, 10);
-  assert.equal(inside.expiresOn, "2036-08-20");
+test("the current five-year window is measured to the licensing EXAMINATION date", () => {
+  const inside = pennsylvaniaEducationValidity("2026-08-20", "2031-01-15");
+  assert.equal(inside.validityYears, 5);
+  assert.equal(PENNSYLVANIA_EDUCATION_VALIDITY_YEARS, 5);
+  assert.equal(inside.expiresOn, "2031-08-20");
   assert.equal(inside.withinWindow, true);
   assert.match(inside.measuredTo, /successful completion of the licensing examination/i);
 
-  const outside = pennsylvaniaEducationValidity("2026-08-20", "2036-09-01");
+  const outside = pennsylvaniaEducationValidity("2026-08-20", "2031-09-01");
   assert.equal(outside.withinWindow, false);
-  assert.match(outside.blockedBy, /2036-08-20/);
+  assert.match(outside.blockedBy, /2031-08-20/);
+  assert.equal(pennsylvaniaEducationValidity('2026-08-20','2026-08-19').withinWindow,false);
+  assert.equal(pennsylvaniaEducationValidity('2026-02-31'),null);
+  assert.equal(pennsylvaniaEducationValidity('2024-02-29','2029-02-28').withinWindow,true);
+  assert.equal(pennsylvaniaEducationValidity('2024-02-29','2029-03-01').withinWindow,false);
 
   assert.equal(pennsylvaniaEducationValidity(null), null);
   assert.equal(pennsylvaniaEducationValidity("not a date"), null);
@@ -413,11 +405,12 @@ test("no module claims approval or offers credit", () => {
   assert.doesNotMatch(allText, /\bEnroll Now\b/i);
 });
 
-test("the 60-hour minimum is stated in the curriculum, not just the engine", () => {
+test("current statute and five-year window are reconciled in the curriculum and source readings", () => {
   const first = readModule(FUNDAMENTALS, "module-01");
-  assert.match(first, /four credits, or 60 hours of instruction/i);
-  assert.match(first, /regulation's minimum is 60 hours, not 75/i);
-  assert.match(readings, /THE REGULATORY MINIMUM IS 60 HOURS, NOT 75|regulation's minimum is 4 credits = 60 hours/i);
+  assert.match(first, /75 qualifying education hours/i);
+  assert.match(first, /five years/i);
+  assert.match(readings, /requires 75 qualifying hours/i);
+  assert.match(readings,/historical source text, not the controlling standard/i);
 });
 
 test("the twelve § 35.292 duties and their unwaivability are stated", () => {
@@ -487,11 +480,12 @@ test("the BPO permitted and prohibited uses are stated, including the originatio
 
 test("the readings file names what was not obtained and the engine carries the same list", () => {
   assert.match(readings, /NOT obtained|not read/i);
-  assert.ok(PENNSYLVANIA_UNREAD_SOURCES.length >= 10);
+  assert.ok(PENNSYLVANIA_UNREAD_SOURCES.length >= 8);
   const joined = PENNSYLVANIA_UNREAD_SOURCES.join(" | ");
-  for (const source of ["Real Estate Licensing and Registration Act", "68 Pa.C.S. Chapter 73", "content outlines", "35.336", "35.335a", "ARELLO"]) {
+  for (const source of ["Real Estate Licensing and Registration Act", "Landlord and Tenant Act", "ARELLO"]) {
     assert.ok(joined.includes(source), `unread list does not name ${source}`);
   }
+  assert.equal(PENNSYLVANIA_SUBMISSION_GATES.find(g=>g.id==='commission-content-outline').sourceAcquired,true);
 });
 
 test("every module names what it did not read", () => {
@@ -503,10 +497,19 @@ test("every module names what it did not read", () => {
   }
 });
 
-test("no consumer disclosure summary text is reproduced anywhere in the build", () => {
+test("newly acquired prescribed disclosures are connected to source-guided teaching while review stays open", () => {
   const text = readModule(PRACTICE, "module-03");
-  assert.match(text, /did NOT transcribe their text/i);
-  assert.match(text, /reproduces, describes or paraphrases the wording of any of them/i);
+  assert.match(text, /source appendix/i);
+  assert.match(text, /earlier of.*first in-person meeting.*first showing/i);
+  const module = getPennsylvaniaModule(PRACTICE, "module-03");
+  assert.equal(module.requiredStudyMaterials.length, 2);
+  for (const material of module.requiredStudyMaterials) assert.ok(readFileSync(new URL(`../${material}`,import.meta.url),"utf8").length>1000);
+  for (const id of ["consumer-disclosure-summaries", "seller-disclosure-itemisation"]) {
+    const gate=PENNSYLVANIA_SUBMISSION_GATES.find(item=>item.id===id);
+    assert.equal(gate.sourceAcquired,true);
+    assert.equal(gate.satisfied,false);
+    assert.match(gate.blockedBy,/review/i);
+  }
 });
 
 test("no item states a period Chapter 35 does not itself state", () => {

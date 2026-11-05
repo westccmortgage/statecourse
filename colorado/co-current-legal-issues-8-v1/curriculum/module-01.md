@@ -1,5 +1,7 @@
 # Colorado Current Legal Issues — Module 01
 
+**Current-law correction — November 5, 2026.** The August 12, 2026 amendment supersedes the former automatic transaction-broker rule. Complete the [written relationship workshop](../../activities/2026-written-relationship-workshop.md). Other source-scope and submission limitations in this module remain open.
+
 ## Colorado rules, regulations, policies, position statements and instructive disciplinary proceedings
 
 **Course:** Current Legal Issues (8.0 classroom hours) · **Instructional hours: 3.0** of 8.0
@@ -216,7 +218,7 @@ that a licensee touches most often — and therefore the ones whose currency mat
 
 | Rule or section | What it governs |
 |---|---|
-| **§ 12-10-403(2)** | **Transaction-broker by default** unless single agency is established **in writing** |
+| **§ 12-10-403(2)** | **Written agreement for transaction brokerage or single agency, with conspicuous compensation before the specified licensed activities** |
 | **§ 12-10-406** | **Dual agency prohibited** |
 | **§§ 12-10-404, 12-10-405, 12-10-407** | The three duty lists |
 | **§ 12-10-408** and **Rule 6.5** | The disclosures, and that they come **before eliciting or discussing confidential information** |

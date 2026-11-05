@@ -10,25 +10,13 @@ title for the salesperson's education requirement.
 **Course version:** 1.0 submission draft
 **Regulatory status:** Development. Not approved. No Pennsylvania prelicensing credit is available.
 
-> ### Three things about this course, stated before anything else
->
-> **1. The regulation's minimum is 60 hours, not 75.** **§ 35.272(a)(2)** requires an examination
-> candidate to have *"successfully completed **four credits, or 60 hours of instruction**, in basic real
-> estate courses."* **§ 35.201** defines a credit: *"**A period of 15 hours of instruction.**"* Four
-> credits is sixty hours. That is the floor the Commission set.
->
-> **2. This course and its companion together run 75 hours, which exceeds that floor.** *Real Estate
-> Fundamentals* here is **30 hours / 2 credits**; *Real Estate Practice* is **45 hours / 3 credits**;
-> together **5 credits / 75 hours.** **The regulation names both courses by title and assigns hours to
-> neither.** The 30/45 split is a **StateCourse decision requiring Commission confirmation**, not a
-> regulatory requirement, and it is recorded as such in
-> `pennsylvania/regulatory/primary-text-readings.md`.
->
-> **3. This course has not yet been conformed to the Commission's own outline.** **§ 35.358(a)(2)**
-> provides: *"**Instruction in a Commission required course shall conform to the content or the outline
-> developed by the Commission for the course.**"* **This project has NOT obtained the Commission's
-> content outline for either named course.** Everything here is written from **49 Pa. Code Chapter 35
-> itself**, read on 2026-08-20. **Conforming it to the Commission's outline is a submission gate.**
+## Current qualification standard — reviewed November 5, 2026
+
+For the **standard new salesperson applicant**, RELRA § 521 as amended by Act 75 of 2018 requires **75 qualifying education hours**. Current Commission instructions require qualifying coursework completed **within five years** before successful completion of the licensing examination. The statute preserves a limited transitional 60-hour exception for qualifying pre-amendment coursework; this course does not elect that exception for a learner.
+
+The Commission's own outlines identify **30 hours of Real Estate Fundamentals** and **45 hours of Real Estate Practice**. Both official PDFs were obtained on November 5, 2026. Their first pages confirm these totals; a complete objective-to-content conformity review remains a submission gate.
+
+Older wording in 49 Pa. Code § 35.272 still describes 60 hours and ten years. That text is useful to identify the source conflict, but it must not be presented as the current standard for a new applicant. Use the later statute and current Commission instructions.
 
 ## Learning objectives
 
@@ -44,13 +32,15 @@ title for the salesperson's education requirement.
 
 ## A. What the Commission requires before you may sit the examination
 
-### A.1 § 35.272(a) — the three conditions
+### A.1 Legacy regulation wording — read with the later statute
 
 > **(1)** *"Be **18 years of age or older**."*
 > **(2)** *"Have successfully completed **four credits, or 60 hours of instruction, in basic real estate
 > courses** as determined by the Commission under subsection (b)."*
 > **(3)** *"Submit a completed examination application to the Commission or its designee with the
 > examination fee."*
+
+**Current-law control:** for the ordinary new applicant, the education amount in the older quotation is superseded by RELRA § 521's **75 qualifying hours**. The older text is not a 60-hour qualification shortcut.
 
 **This course states no examination fee**, because the fee schedule in § 35.203 was read only as a list
 of headings and fees change; the current fee comes from the Commission.
@@ -74,15 +64,9 @@ acceptable basic real estate courses** when offered by:
   that the course is approved by the licensing authority of the jurisdiction where the real estate
   education provider is located**."*
 
-### A.3 The ten-year clock — § 35.272(b)(3)
+### A.3 The current five-year education window
 
-> ***"Courses shall have been completed within 10 years prior to the date of successful completion of
-> the licensing examination."***
-
-Read the anchor carefully, because it is unusual. The ten years does **not** run to the application, and
-does **not** run to the day the licence issues. **It runs to the date the candidate successfully
-completes the licensing examination.** A candidate who took this course eleven years ago and passes the
-examination today has education the rule does not count — even if everything else is in order.
+Current Commission standard-method instructions require qualifying coursework completed within **five years before successful completion of the licensing examination**. The relevant completion date is documented by the official provider transcript. A learner should not assume that an old rule quotation, exam application or practice score extends that window. The Commission determines any alternate education or transitional route.
 
 ### A.4 Reciprocal conversion — § 35.272(c)
 
@@ -123,8 +107,7 @@ hour is **fifty minutes of instruction inside a sixty-minute period** — so thi
 > by the **course title and course description**. **Instruction in a Commission required course shall
 > conform to the content or the outline developed by the Commission for the course.**"*
 
-This is the sentence behind the submission gate at the head of this module. The Commission develops
-outlines; instruction **shall conform** to them; **this project does not have the outline.**
+The current Commission outlines are retained in the November 5 source capture. Instruction must conform to them; obtaining the PDFs does not by itself prove that every required objective is taught and assessed.
 
 ### B.3 Attendance — § 35.358(a)(3)
 
@@ -166,13 +149,12 @@ The transcript must carry — among other things — the provider's **Commission
 fact that the course **will be accepted by the Commission** towards fulfillment of the education
 requirement."*
 
-**Keep it.** § 35.272(b)(3)'s ten-year clock is measured against a date that appears on that document.
+**Keep it.** The current five-year education window is measured using the completion date documented on the transcript.
 
 > § 35.360(e): *"Continuing education records must be maintained for **4 years**. **All other records
 > must be retained for 10 years.**"*
 
-Ten years for prelicensure records, which matches the ten-year education window exactly. That is not a
-coincidence.
+The provider retention period is a separate obligation. It must not be confused with the current five-year education eligibility window.
 
 ### B.7 Your enrolment agreement — § 35.357
 
@@ -197,8 +179,7 @@ knowing because they show what a *credit* buys:
 
 - **Campground Membership Sales** — *"the **one-credit (15 hours)**, Commission-developed course."*
 - **Time Share Sales** — *"the **two-credit (30 hours)**, Commission-developed course."*
-- **Salesperson, cemetery broker and rental listing referral agent** — **four credits, or 60 hours**, in
-  basic real estate courses.
+- **Salesperson — standard new applicant:** **75 hours** under current RELRA § 521. Cemetery-broker and rental-listing-referral qualifications are separate routes and are not determined by this salesperson program.
 
 Note the phrase that recurs: **Commission-developed course.** The Commission writes courses itself. That
 is the same fact § 35.358(a)(2) states from the provider's side.
@@ -309,16 +290,12 @@ Drawn from **49 Pa. Code Chapter 35**, read on 2026-08-20 from the official Penn
 database, **current through 56 Pa.B. 3438 (June 6, 2026)** — specifically **§§ 35.201, 35.203, 35.223,
 35.243, 35.272, 35.290, 35.291, 35.331, 35.333, 35.341, 35.356, 35.357, 35.358, 35.359 and 35.360.**
 
-**Not read in its own text, and therefore the source of nothing here:** the **Real Estate Licensing and
-Registration Act, 63 P.S. §§ 455.101—455.902**, including the Real Estate Recovery Fund provisions; the
-**Commission's content outlines** for *Real Estate Fundamentals* and *Real Estate Practice*; any
-**Commission examination content outline or candidate handbook**; and **ARELLO's distance education
-certification standards.**
+**Current sources added November 5, 2026:** Act 75 of 2018, section 2 amending RELRA § 521; the Commission's current standard-method licensure guide; and the official Fundamentals/Practice outlines (first-page course-hour review). These support the **75-hour standard**, **five-year window** and **30/45-hour course totals**. Full curriculum conformity remains open.
 
-**No examination passing score, examination item count, application fee, examination fee, Recovery Fund
-limit or distance-education attendance standard is stated in this module**, because the sources setting
-them were not obtained. The **60-hour / four-credit minimum**, the **10-year education window**, the
-**15-hour credit**, the **50-minute clock hour**, the **7½-hour daily cap**, the **90-minute break
-rule**, the **80 percent classroom attendance standard**, the **30-day transcript deadline**, the
-**10-year and 4-year retention periods**, the **30-day reporting deadlines**, and both telephone numbers
-are **transcribed from 49 Pa. Code Chapter 35 itself.**
+**Not read in full:** the consolidated RELRA beyond the cited amendment, the complete Recovery Fund provisions, the current examination vendor handbook and ARELLO certification standards. These gaps are not represented as resolved. Record-retention periods, credit conversion and provider controls are distinct from the current statutory applicant-education requirement.
+
+## Current official references
+
+- [Act 75 of 2018, amending RELRA § 521](https://www.legis.state.pa.us/WU01/LI/LI/US/HTM/2018/0/0075..HTM)
+- [Commission standard-method instructions](https://www.pa.gov/agencies/dos/resources/professional-licensing-resources/licensure-processing-guides-and-timelines/real-estate-commission-guide)
+- [Commission education outlines](https://www.pa.gov/agencies/dos/department-and-offices/bpoa/boards-commissions/real-estate-commission/education-information)

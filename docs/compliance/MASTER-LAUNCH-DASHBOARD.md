@@ -2,6 +2,15 @@
 
 # StateCourse Master Launch Dashboard
 
+## Full-course and submission preparation — November 5, 2026
+
+The owner expanded scope from public practice to full course/application preparation in the nine priority states. All nine remain **NOT FILING READY**, with no approval or operational activation. Instructor selection is **DEFERRED BY OWNER**; no universal assignment or credential is inferred. The local review inventory covers 22 planned course workstreams, 20 with manuscript files of varying completeness; GA and NY full manuscripts remain absent.
+
+Implemented current PA 75-hour/five-year remediation, official outline/notice/disclosure acquisition and an eight-file workshop; corrected Colorado's repealed transaction-broker default and added five closing problems, five current-law cases and four concrete trust exercises; expanded Florida Section 4 and protected all authored manuscripts from generator overwrite; prepared a Georgia methodology dossier and New York source/application controls. GA needs prior methodology authorization under current 520-2-.04(10)(b); NY provider/course independence under 176.1 needs a determination on actual ownership/control facts. These are distinct from instructor selection.
+
+Both builds, 121 focused checks and local nine-state Chrome acceptance pass. The broad suite is 2,407 tests with the same 27 existing baseline failures and no new failure names; lint has zero errors/115 existing warnings. Course content, independent review, duration, finals, forms, institutional evidence and actual operating controls still have material open work. [Nine-state preparation record](../../docs/submission/PRIORITY-STATE-PACKAGES.md), [validation](../../docs/submission/VALIDATION-2026-11-05.md). No submission, signature, payment, merge, deployment or paid approval/credit/commerce control changed.
+
+
 ## Public-practice verification — November 4, 2026
 
 The existing expansion branch now has additional source, payload, state-isolation and mobile verification. TX/FL/CO/AZ/NC/GA/PA/WA/NY total 1,933 bounded public-practice questions; the inherited Washington draft remains withheld and paid conformity remains NO-GO. Local acceptance and baseline comparison are recorded in [validation](../free-practice/VALIDATION.md). No production deployment, merge, regulator filing, spending, paid approval, enrollment or credit control changed.

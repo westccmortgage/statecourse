@@ -1,5 +1,7 @@
 # Colorado Practical Applications — Module 02
 
+**Current-law correction — November 5, 2026.** The August 12, 2026 amendment supersedes the former automatic transaction-broker rule. Complete the [written relationship workshop](../../activities/2026-written-relationship-workshop.md). Other source-scope and submission limitations in this module remain open.
+
 ## Residential competency
 
 **Course:** Practical Applications (32 hours) · **Instructional hours: 4.0** of 32.0
@@ -63,8 +65,7 @@ meets them in order.
 | **On changing from single agent for one to transaction-broker for both** | The Commission-approved **"Change of Status"** form, **at the time the broker begins to assist both** and **not later than when the consumer signs the contract** | **Rule 6.9** |
 | **Continuously** | Any **known conflict of interest**, in writing; and that the broker is licensed if buying, selling or leasing **on their own account** | **Rule 6.17.A and B** |
 
-**And the default that stands behind all of it:** **§ 12-10-403(2)** — a broker is a **transaction-broker**
-unless single agency is established **in writing**.
+**Current section 12-10-403(2), effective August 12, 2026:** establish either transaction brokerage or single agency through a written agreement, conspicuously disclose the amount or rate of compensation, and complete the agreement before the specified section 12-10-201(6)(a) activities. A transaction-broker is still a nonagent under section 12-10-407(1); there is no automatic transaction-broker default. See the [current-law workshop](../../activities/2026-written-relationship-workshop.md).
 
 ### A.2 Approved commission forms — II.A.2
 

@@ -373,19 +373,11 @@ these six courses delivered by distance learning.
 This is where Colorado differs most sharply from the other states in this project, and the differences are
 in the statute's own sentences.
 
-### 3.1 The default is TRANSACTION-BROKER — § 12-10-403(1) and (2)
+### 3.1 Current written relationship requirement — section 12-10-403(2)
 
-> **(1)** *"When engaged in any of the activities enumerated in section 12-10-201(6), a broker may act in
-> any transaction as a **single agent or transaction-broker**."*
->
-> **(2)** *"**A broker shall be considered a transaction-broker unless a single agency relationship is
-> established through a written agreement between the broker and the party or parties to be represented by
-> the broker.**"*
+November 5, 2026 correction: HB26-1426 section 87, effective August 12, 2026, replaced the former automatic transaction-broker language. Establish transaction brokerage or single agency through a written agreement with conspicuous compensation amount or rate before the specified section 12-10-201(6)(a) activities. The signed Act and DRE's August 12 advisory are retained with hashes in `captures/2026-11-05/`.
 
-**Agency in Colorado is opt-in, in writing.** A broker who signs nothing is a transaction-broker. Compare
-**Washington**, where RCW 18.86.020(1) makes **buyer agency the default** arising from performing services;
-**Colorado's default is the non-agency relationship**, and a student who arrives with another state's
-assumption has it backwards.
+DRE distinguishes a current listing contract establishing the relationship from a compensation-only disclosure, which it says is insufficient. The new workshop and revised formative items replace the old default instruction. Other August source readings below remain historical scope records; this targeted remediation does not claim that all current law or all forms have been recertified.
 
 ### 3.2 DUAL AGENCY IS PROHIBITED — § 12-10-406, in a single sentence
 

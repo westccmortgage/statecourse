@@ -1,5 +1,7 @@
 # Colorado Practical Applications — Module 04
 
+**Current-law correction — November 5, 2026.** The August 12, 2026 amendment supersedes the former automatic transaction-broker rule. Complete the [written relationship workshop](../../activities/2026-written-relationship-workshop.md). Other source-scope and submission limitations in this module remain open.
+
 ## Commercial competency
 
 **Course:** Practical Applications (32 hours) · **Instructional hours: 2.0** of 32.0
@@ -51,7 +53,7 @@ build states one.**
 
 | Provision | In a commercial transaction |
 |---|---|
-| **§ 12-10-403(2)** | **Transaction-broker by default** unless single agency is established **in writing** |
+| **§ 12-10-403(2)** | **Written agreement for transaction brokerage or single agency, with conspicuous compensation before the specified licensed activities** |
 | **§ 12-10-406** | **Dual agency prohibited** — and **Rule 6.7**'s three lawful configurations |
 | **§§ 12-10-404 / 405 / 407** | The duty lists, including **presenting all offers regardless** of an existing contract **or LETTER OF INTENT** |
 | **§ 12-10-408** and **Rule 6.5** | The disclosures, **before eliciting or discussing confidential information** |

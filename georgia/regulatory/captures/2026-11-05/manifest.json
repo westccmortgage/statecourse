@@ -1,0 +1,15 @@
+{
+  "scope": "Reuse of verified November 4 official capture; targeted 520-2-.04(10)(b) reading November 5, not a whole-code recertification",
+  "sources": [
+    {
+      "file": "department-520-retained-2026-11-04.pdf",
+      "url": "https://rules.sos.ga.gov/download_pdf.aspx?dept=Departments&pdf=Department+520+GEORGIA+REAL+ESTATE+COMMISSION&st=GASOS&year=2026",
+      "final_url": "https://rules.sos.ga.gov/download_pdf.aspx?dept=Departments&pdf=Department+520+GEORGIA+REAL+ESTATE+COMMISSION&st=GASOS&year=2026",
+      "retrieved_at": "2026-11-04",
+      "reviewed_at": "2026-11-05",
+      "bytes": 1471156,
+      "sha256": "530d5b1cbb17867b934378d82e120109d132eabdfafd89cc4948b5c87e176e63"
+    }
+  ],
+  "freshBinaryFetchOnNovember5": "HTTP 403; no claim of a successful new binary download. Current official web text was separately read."
+}

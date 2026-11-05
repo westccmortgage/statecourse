@@ -1,5 +1,7 @@
 # Colorado Current Legal Issues — Module 03
 
+**Current-law correction — November 5, 2026.** The August 12, 2026 amendment supersedes the former automatic transaction-broker rule. Complete the [written relationship workshop](../../activities/2026-written-relationship-workshop.md). Other source-scope and submission limitations in this module remain open.
+
 ## The representative areas, and the outline's appendices
 
 **Course:** Current Legal Issues (8.0 classroom hours) · **Instructional hours: 2.0** of 8.0
@@ -46,7 +48,7 @@ project did not read the governing law, and therefore states none of it anywhere
 ### 1. Brokerage relationships
 
 **Delivered in full elsewhere in this build.** **§§ 12-10-402 to 12-10-411** were **read in full** and are
-the subject of **Contracts and Regulations Module 02**. The transaction-broker default (§ 12-10-403(2)), the
+the subject of **Contracts and Regulations Module 02**. The written relationship requirement (current section 12-10-403(2)), the
 dual agency prohibition (§ 12-10-406), designated brokerage (§ 12-10-403(6)), the three duty lists, the
 disclosures, duration and compensation — all stated from primary text.
 

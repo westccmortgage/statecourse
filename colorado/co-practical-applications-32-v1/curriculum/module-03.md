@@ -1,5 +1,7 @@
 # Colorado Practical Applications — Module 03
 
+**Current-law correction — November 5, 2026.** The August 12, 2026 amendment supersedes the former automatic transaction-broker rule. Complete the [written relationship workshop](../../activities/2026-written-relationship-workshop.md). Other source-scope and submission limitations in this module remain open.
+
 ## Property management competency
 
 **Course:** Practical Applications (32 hours) · **Instructional hours: 3.0** of 32.0
@@ -40,14 +42,9 @@
 
 ## A. Broker relationships and overview of practice — outline Topic III.A
 
-**Property management in Colorado is a brokerage relationship like any other.** **§§ 12-10-404 and
-12-10-405** speak of *"seller **or landlord**"* and *"buyer **or tenant**"* throughout, so the duty lists run
-to a management relationship in their own terms — and **§ 12-10-403(2)** applies: a broker is a
-**transaction-broker unless single agency is established through a WRITTEN agreement.**
+**Current section 12-10-403(2), effective August 12, 2026:** establish either transaction brokerage or single agency through a written agreement, conspicuously disclose the amount or rate of compensation, and complete the agreement before the specified section 12-10-201(6)(a) activities. A transaction-broker is still a nonagent under section 12-10-407(1); there is no automatic transaction-broker default. See the [current-law workshop](../../activities/2026-written-relationship-workshop.md). The seller/landlord and buyer/tenant duty lists continue to matter in management work.
 
-**What that means at the outset.** A property manager engaged by an owner who signs a management agreement
-establishing single agency is the **landlord's agent** under § 12-10-404. One who signs nothing establishing
-agency is a **transaction-broker** — **not an agent for either party**, under § 12-10-407(1).
+**What that means at the outset.** The written management relationship agreement must establish the selected role and conspicuously disclose compensation before the specified licensed activities. An agreement establishing landlord agency invokes the applicable section 12-10-404 duties. A properly established transaction-broker relationship remains nonagency under section 12-10-407; signing nothing is not a compliant way to select it.
 
 **And the disclosure timing is the same:** **Rule 6.5.A** requires the written § 12-10-408 disclosure
 **before eliciting or discussing confidential information**, which in a management context arrives early —

@@ -6,17 +6,7 @@
 **Course version:** 1.0 submission draft
 **Regulatory status:** Development. Not approved. No Pennsylvania prelicensing credit is available.
 
-> ### A submission gate stated at the top of this module
->
-> **§§ 35.336, 35.337 and 35.338 set out four consumer disclosure summaries in full, verbatim, inside the
-> regulation**, and **§ 35.339** sets out the **oral disclosure** for a non-in-person initial interview.
->
-> **This project read that those sections exist and print those summaries. It did NOT transcribe their text
-> into this build, and no document here reproduces, describes or paraphrases the wording of any of them.**
->
-> What this module teaches is **which summary applies, when it must be given, in what form, and what
-> happens to the acknowledgement afterwards** — all of which § 35.284 and § 35.286 state, and all of which
-> was read. **Obtaining and delivering the summaries in the Commission's own words is a submission gate.**
+The complete prescribed notices in sections 35.336–35.339 were obtained from the official Pennsylvania Code on November 5, 2026. Read the [source appendix](../../regulatory/disclosure-source-appendix.md) and retained original HTML. Then complete the [eight-file disclosure workshop](../activities/disclosure-workshop.md). Source acquisition is complete; independent content/layout review and verified student delivery remain open.
 
 ## Learning objectives
 
@@ -78,11 +68,9 @@ talked has protected nobody.
 **converts** it into an oral disclosure **now** plus the written statement **shortly after**. The licensee who
 says "I'll email you the form" has done half the rule.
 
-**The text of the § 35.339 oral disclosure was not obtained by this project and appears nowhere in this
-build.** Nor are the two alternative outer limits in § 35.284(a)(2) stated here as specific events, because
-reproducing them accurately requires the section's own words, which this project did not transcribe.
-**Delivering the oral disclosure in the Commission's words, and meeting the correct outer limit, is part of
-this module's submission gate.**
+Under section 35.284(a)(2), the written section 35.336 disclosure is due no later than the earlier of (i) the first in-person meeting with the consumer after the initial interview or (ii) the first showing of property by the licensee or anyone working with the licensee. Read the complete section 35.339 oral disclosure in the source appendix; do not substitute an improvised warning.
+
+Section 35.284(e) provides a limited exception to subsections (a) and (b) for transactions involving the sale or lease of commercial property, as defined in the Act, to consumers who are not individuals. Both elements matter; an individual commercial buyer does not fit merely because the property is commercial. This exception does not erase the licensee's other duties.
 
 ---
 
@@ -197,29 +185,14 @@ presentation of all offers, and the duty to be told when a question is beyond th
 
 ---
 
-## Module PA-P-03 engagement check
+## Source-guided application and formative assessment
 
-Eleven items, delivered as in Module PA-P-01. The **80 percent** engagement threshold and the **100 percent**
-applied threshold are **StateCourse standards**.
+Complete workshop files 1–4 and inspect all prescribed notice text in the source appendix. The existing eleven-item module bank remains formative. Its 80 percent engagement and 100 percent applied thresholds are StateCourse choices. The workshop adds document selection, verbatim oral delivery practice, an actual written-notice deadline and an acknowledgment/refusal record; these cannot be satisfied merely by recognizing a relationship label in a multiple-choice question.
 
-**No item in this module asks a student to recall or reproduce any wording from § 35.336, § 35.337, § 35.338
-or § 35.339**, because this project did not obtain their text. Items test which summary applies, when it must
-be given, the oral-plus-written rule for a non-in-person interview, the refusal-noting rule, and the
-retention periods — all of which are stated in § 35.284 and § 35.286, which were read.
+## Retention reconciliation
 
----
+The current section 35.336(b) separately states six months for signed/refused acknowledgments. Section 35.286 requires consummated transaction records for at least three years, with specified six-month categories. StateCourse directs keeping the completed sale's acknowledgment with the three-year transaction file rather than destroying it on a shorter acknowledgment schedule. This conservative handling instruction does not delete or rewrite either provision. Preserve records longer when another applicable obligation or legal hold requires it.
 
-## Instructor source note for Module PA-P-03
+## Instructor source note
 
-Drawn from **49 Pa. Code §§ 35.246, 35.281, 35.284, 35.286, 35.292, 35.315, 35.336, 35.337, 35.338 and
-35.339**, read on 2026-08-20, current through **56 Pa.B. 3438 (June 6, 2026)**. **The existence, allocation,
-timing and retention of the four disclosure summaries are transcribed from §§ 35.284 and 35.286.**
-
-**Not obtained, and therefore reproduced, described or paraphrased NOWHERE in this build:** the **verbatim
-text of the disclosure summaries in §§ 35.336, 35.337 and 35.338**, and the **oral disclosure in § 35.339**;
-the two outer limits stated in **§ 35.284(a)(2)**; and **section 608 of the Real Estate Licensing and
-Registration Act.**
-
-**No wording from any consumer notice, and no § 35.284(a)(2) outer-limit event, is stated in this module.**
-The **3-year** and **6-month** retention periods and the **refusal-noting** rule are transcribed from
-§§ 35.286 and 35.284(d).
+Sections 35.284 and 35.335a–35.339 were obtained in full from the official Pennsylvania Code on November 5, 2026; local originals and hashes are in `pennsylvania/regulatory/captures/2026-11-05/manifest.json`. Earlier statements that these source texts were not obtained are superseded. The full consolidated RELRA beyond the specific amended education provision has not been read. Independent legal/content review, final notice formatting, the official curriculum crosswalk, course-hour evidence, qualified instructor assignment and approved distance delivery remain open. No approval or credit is claimed.

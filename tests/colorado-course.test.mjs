@@ -14,11 +14,9 @@
  * contracts and the whole 72-hour group. A test asserts the contracts course is in all three required sets
  * and that the set sizes are 6, 2 and 5.
  *
- * THREE: DUAL AGENCY IS PROHIBITED AND THE DEFAULT IS THE NON-AGENCY RELATIONSHIP. § 12-10-406 is one
- * sentence with no consent mechanism, and § 12-10-403(2) makes a broker a transaction-broker unless single
- * agency is established in writing. This project has built for Washington, which permits limited dual agency
- * with separately initialed consent and makes buyer agency the default, and for Arizona, which permits dual
- * representation with prior written consent. Tests assert Colorado is recorded as neither.
+ * THREE: DUAL AGENCY STAYS PROHIBITED; BOTH PERMITTED RELATIONSHIPS REQUIRE WRITING. The
+ * August 12, 2026 amendment to section 12-10-403(2) repealed the automatic transaction-broker rule.
+ * Tests require the current writing, conspicuous compensation and prior-completion policy.
  *
  * FOUR: THE COMMISSION'S COMPLETION REQUIREMENTS ARE NOT SATISFIED BY READING. Six brokerage relationship
  * families and four sales contract families with related forms and three financing structures; eight closing
@@ -234,7 +232,7 @@ test("a degree with a major course of study in real estate is an alternative to 
   assert.equal(readiness.blockedBy, null);
 });
 
-/* ---- Dual agency prohibited; the default is the non-agency relationship ---- */
+/* ---- Dual agency prohibited; the current relationship writing is required ---- */
 
 test("dual agency is recorded as prohibited outright", () => {
   assert.equal(COLORADO_DUAL_AGENCY_PROHIBITED, true);
@@ -245,13 +243,16 @@ test("dual agency is recorded as prohibited outright", () => {
   assert.ok(!COLORADO_STATUTORY_RELATIONSHIPS.some((r) => r.id === "dual-agent"));
 });
 
-test("the transaction-broker is the single default and is not an agent", () => {
-  assert.equal(COLORADO_DEFAULT_RELATIONSHIP, "transaction-broker");
-  const defaults = COLORADO_STATUTORY_RELATIONSHIPS.filter((r) => r.isDefault);
-  assert.equal(defaults.length, 1);
-  assert.equal(defaults[0].id, "transaction-broker");
-  assert.equal(defaults[0].isAgent, false);
-  assert.match(defaults[0].arisesBy, /12-10-403\(2\)/);
+test("both relationships require writing after the August 2026 amendment; no default is asserted", () => {
+  assert.equal(COLORADO_DEFAULT_RELATIONSHIP, null);
+  assert.equal(COLORADO_STATUTORY_RELATIONSHIPS.filter(r=>r.isDefault).length,0);
+  const tb=COLORADO_STATUTORY_RELATIONSHIPS.find(r=>r.id==='transaction-broker');
+  assert.equal(tb.isAgent,false);
+  assert.match(tb.arisesBy,/written agreement/);
+  const policy=getColoradoProgram().relationshipPolicy;
+  assert.equal(policy.conspicuousCompensationRequired,true);
+  assert.equal(policy.mustCompleteBeforeLicensedActivities,true);
+  assert.equal(policy.compensationOnlyDisclosureSufficient,false);
 });
 
 test("the transaction-broker's confidential list is six and each single agent's is five", () => {

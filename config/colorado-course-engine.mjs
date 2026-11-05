@@ -57,8 +57,13 @@
  * entry is EVERY COMMISSION-APPROVED FORM — which § 12-10-403(4)(c) and Rule 7.1.A require a broker to USE
  * and which the Contracts outline requires students to COMPLETE.
  *
- * Course version 1.0 submission draft — NOT APPROVED. No Colorado qualifying education hours are available.
+ * November 5, 2026 remediation: HB26-1426 section 87 and the August 12 DRE advisory supersede
+ * the former automatic transaction-broker rule. Other source-scope limitations remain open.
+ *
+ * Course version 1.1 submission draft — NOT APPROVED. No Colorado qualifying education hours are available.
  */
+
+import { COLORADO_RELATIONSHIP_POLICY, validateColoradoRelationshipPolicy } from "./colorado/current-relationships.mjs";
 
 import LAW_AND_PRACTICE_BANK from "./colorado/law-and-practice-48-question-bank.mjs";
 import CONTRACTS_BANK from "./colorado/contracts-and-regulations-48-question-bank.mjs";
@@ -78,7 +83,7 @@ const BROKERAGE_ADMINISTRATION_HOURS = 24;           /* § 12-10-203(5)(c)(II); 
 const RELATIONSHIP_BACKSTOP_YEARS = 1;               /* § 12-10-409(1)(b)(III) */
 const COMPENSATION_SHARING_NOT_AGENCY = true;        /* § 12-10-410(2) */
 const DUAL_AGENCY_PROHIBITED = true;                 /* § 12-10-406 */
-const DEFAULT_RELATIONSHIP = "transaction-broker";   /* § 12-10-403(2) */
+const DEFAULT_RELATIONSHIP = COLORADO_RELATIONSHIP_POLICY.defaultRelationship; /* HB26-1426 section 87 */
 const OTHER_MONEY_DEPOSIT_BUSINESS_DAYS = 3;         /* Rule 5.7.B */
 const PROPERTY_MANAGEMENT_DEPOSIT_BUSINESS_DAYS = 5; /* Rule 5.7.A */
 const DEPOSIT_STATUS_DISCLOSURE_DAYS = 30;           /* Rule 5.8.B */
@@ -141,7 +146,7 @@ const REQUIRED_PRACTICAL_EXERCISES = Object.freeze([
 /* §§ 12-10-403 to 12-10-407 recognise two relationships and PROHIBIT a third. Recorded structurally so a
    payload cannot present Colorado as permitting dual agency. */
 const STATUTORY_RELATIONSHIPS = Object.freeze([
-  { id: "transaction-broker", name: "Transaction-broker", statute: "§ 12-10-407", isAgent: false, isDefault: true, arisesBy: "operation of § 12-10-403(2) unless single agency is established through a written agreement", confidentialItems: 6, survivesTermination: "accounting only — § 12-10-409(3)" },
+  { id: "transaction-broker", name: "Transaction-broker", statute: "§ 12-10-407", isAgent: false, isDefault: false, arisesBy: "a written agreement establishing transaction brokerage and conspicuously disclosing compensation before the specified licensed activities — § 12-10-403(2), amended effective August 12, 2026", confidentialItems: 6, survivesTermination: "accounting only — § 12-10-409(3)" },
   { id: "sellers-agent", name: "Single agent engaged by seller or landlord", statute: "§ 12-10-404", isAgent: true, isDefault: false, arisesBy: "a written agreement establishing single agency — § 12-10-403(2) and § 12-10-408(2)(b)", confidentialItems: 5, survivesTermination: "accounting and confidentiality — § 12-10-409(2)(b)" },
   { id: "buyers-agent", name: "Single agent engaged by buyer or tenant", statute: "§ 12-10-405", isAgent: true, isDefault: false, arisesBy: "a written agreement establishing single agency — § 12-10-403(2) and § 12-10-408(2)(b)", confidentialItems: 5, survivesTermination: "accounting and confidentiality — § 12-10-409(2)(b)" }
 ].map((item) => Object.freeze(item)));
@@ -212,7 +217,7 @@ const COURSES = Object.freeze({
       { id: "module-02", sequence: 2, title: "Introduction to a six-column worksheet", hours: 2.0, commissionTopic: "II" },
       { id: "module-03", sequence: 3, title: "Closing to a prepared contract", hours: 4.0, commissionTopic: "III" },
       { id: "module-04", sequence: 4, title: "Legal documents", hours: 1.0, commissionTopic: "IV" },
-      { id: "module-05", sequence: 5, title: "Preparation of a minimum of eight closing problems", hours: 16.0, commissionTopic: "V" }
+      { id: "module-05", sequence: 5, title: "Preparation of a minimum of eight closing problems", hours: 16.0, commissionTopic: "V", requiredStudyMaterials: ["colorado/co-closings-24-v1/activities/additional-closing-workbook.md"] }
     ].map((item) => Object.freeze(item)))
   }),
   "co-trust-accounts-and-record-keeping-8-v1": Object.freeze({
@@ -232,7 +237,7 @@ const COURSES = Object.freeze({
     bank: TRUST_ACCOUNTS_BANK,
     modules: Object.freeze([
       { id: "module-01", sequence: 1, title: "Legal requirements", hours: 0.5, commissionTopic: "I" },
-      { id: "module-02", sequence: 2, title: "Recordkeeping", hours: 6.0, commissionTopic: "II" },
+      { id: "module-02", sequence: 2, title: "Recordkeeping", hours: 6.0, commissionTopic: "II", requiredStudyMaterials: ["colorado/co-trust-accounts-and-record-keeping-8-v1/activities/trust-account-workbook.md"] },
       { id: "module-03", sequence: 3, title: "Special areas of concern", hours: 1.0, commissionTopic: "III" },
       { id: "module-04", sequence: 4, title: "Termination of brokerage relationship", hours: 0.5, commissionTopic: "IV" }
     ].map((item) => Object.freeze(item)))
@@ -425,7 +430,7 @@ if (computeRequiredCourses("none").length !== 6) {
   throw new Error("Colorado course engine: an applicant with no out-of-state licence completes all six courses.");
 }
 
-/* DUAL AGENCY IS PROHIBITED AND THE DEFAULT IS THE NON-AGENCY RELATIONSHIP. */
+/* Dual agency stays prohibited; the 2026 amendment requires a writing for both permitted roles. */
 if (DUAL_AGENCY_PROHIBITED !== true) {
   throw new Error('Colorado course engine: § 12-10-406 provides, in its entirety, "A broker shall not establish dual agency with any seller, landlord, buyer, or tenant."');
 }
@@ -435,12 +440,9 @@ if (STATUTORY_RELATIONSHIPS.length !== 3) {
 if (STATUTORY_RELATIONSHIPS.some((relationship) => relationship.id === "dual-agent")) {
   throw new Error("Colorado course engine: § 12-10-406 prohibits dual agency, so no dual agency relationship may be recorded.");
 }
-const defaults = STATUTORY_RELATIONSHIPS.filter((relationship) => relationship.isDefault);
-if (defaults.length !== 1 || defaults[0].id !== DEFAULT_RELATIONSHIP) {
-  throw new Error('Colorado course engine: § 12-10-403(2) makes the TRANSACTION-BROKER the single default — "A broker shall be considered a transaction-broker unless a single agency relationship is established through a written agreement."');
-}
-if (defaults[0].isAgent !== false) {
-  throw new Error('Colorado course engine: § 12-10-407(1) provides that "a broker engaged as a transaction-broker is not an agent for either party."');
+const relationshipPolicyErrors = validateColoradoRelationshipPolicy(COLORADO_RELATIONSHIP_POLICY);
+if (relationshipPolicyErrors.length || STATUTORY_RELATIONSHIPS.some(item => item.isDefault)) {
+  throw new Error(`Colorado course engine: ${relationshipPolicyErrors.join(" ") || "No automatic relationship may be asserted after HB26-1426."}`);
 }
 const transactionBroker = STATUTORY_RELATIONSHIPS.find((relationship) => relationship.id === "transaction-broker");
 if (transactionBroker.confidentialItems !== 6) {
@@ -609,6 +611,7 @@ export function getColoradoCourse(courseId) {
     }),
     dualAgencyProhibited: DUAL_AGENCY_PROHIBITED,
     defaultRelationship: DEFAULT_RELATIONSHIP,
+    relationshipPolicy: COLORADO_RELATIONSHIP_POLICY,
     statutoryRelationships: STATUTORY_RELATIONSHIPS,
     submissionGates: SUBMISSION_GATES,
     unreadSources: UNREAD_SOURCES,
@@ -622,7 +625,7 @@ export function getColoradoCourse(courseId) {
       `4 CCR 725-1, Rule 2.2: the Real Estate Licensing Examination is administered and developed by a third party testing service and consists of a national part and a Colorado part; educational requirements must be COMPLETED AND PROOF FILED BEFORE taking it; and a passing score for either part is valid for ${EXAMINATION_SCORE_VALIDITY_YEARS} year.`,
       "C.R.S. § 12-10-203(5)(a): the examination for a broker's license shall also include the preparation of a real estate closing statement, and the Commission has authority to set the minimum passing score.",
       `C.R.S. § 12-10-203(5)(c): a broker who did not hold a current and valid licence on 31 December 1996 shall not engage in an independent brokerage practice without at least ${INDEPENDENT_PRACTICE_YEARS} years serving actively as a real estate broker, shall not employ another broker without first completing ${BROKERAGE_ADMINISTRATION_HOURS} clock hours in brokerage administration, and from 1 January 2019 shall not act as an employing broker without demonstrating sufficient experience and knowledge.`,
-      'C.R.S. § 12-10-403(2): "A broker shall be considered a TRANSACTION-BROKER unless a single agency relationship is established through a WRITTEN AGREEMENT between the broker and the party or parties to be represented by the broker."',
+      "C.R.S. § 12-10-403(2), amended effective August 12, 2026: establish either transaction brokerage or single agency through a written agreement, conspicuously disclose compensation amount or rate, and complete it before the specified § 12-10-201(6)(a) activities.",
       'C.R.S. § 12-10-406, in its entirety: "A broker shall not establish dual agency with any seller, landlord, buyer, or tenant."',
       "C.R.S. § 12-10-403(6)(b): the brokerage relationship with a designated broker SHALL NOT EXTEND to the employing broker, to other non-designated brokers, or to the firm — and § 12-10-408(2)(e)(II) provides that nothing in it limits the employing broker's or firm's responsibility to SUPERVISE licensees nor shields them from VICARIOUS LIABILITY.",
       "C.R.S. §§ 12-10-404(1)(c)(II) and 12-10-405(1)(c)(II): all offers presented in a timely manner REGARDLESS of whether the property is subject to a contract for sale — while (c)(I) provides the broker is not obligated to SEEK additional offers.",
@@ -685,6 +688,7 @@ export function getColoradoProgram() {
     contractsCourseRequiredOfEveryApplicant: true,
     dualAgencyProhibited: DUAL_AGENCY_PROHIBITED,
     defaultRelationship: DEFAULT_RELATIONSHIP,
+    relationshipPolicy: COLORADO_RELATIONSHIP_POLICY,
     stateExaminationPassingPercent: STATE_EXAMINATION_PASSING_PERCENT,
     note: `C.R.S. § 12-10-203(4)(a) requires 48 + 48 + a total of 72 hours from four named subjects, allocating none among the four; 4 CCR 725-1 Rule 2.1.A.2 makes that allocation, stating the first two courses as EXACT figures and the other four as FLOORS — "not less than" 24, 8, 8 and 32 — which add to exactly the 72 the statute requires. § 12-10-203(4)(b) and (4)(c) waive courses for an applicant licensed elsewhere, but EVERY APPLICANT COMPLETES THE COLORADO CONTRACTS COURSE.`,
     submissionGates: SUBMISSION_GATES,

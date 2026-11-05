@@ -1,0 +1,434 @@
+{
+  "scope": "Major-section gap crosswalk only; not a complete objective/subordinate-topic conformity matrix",
+  "reviewedOn": "2026-11-05",
+  "sources": {
+    "Fundamentals": "captures/2026-11-05/fundamentals-outline.pdf",
+    "Practice": "captures/2026-11-05/practice-outline.pdf"
+  },
+  "ocrStatus": "Provisional Apple Vision transcription; original page images control. No claim that all OCR lines were manually verified.",
+  "courseConformityVerified": false,
+  "hourAllocationsVerifiedByStudy": false,
+  "records": [
+    {
+      "id": "F-P1-I",
+      "course": "Fundamentals",
+      "officialMajorSection": "Land, real estate and property",
+      "pdfPages": [
+        2,
+        3
+      ],
+      "candidateExistingEvidence": [
+        "pennsylvania/pa-real-estate-fundamentals-30-v1/curriculum/module-02.md"
+      ],
+      "status": "PARTIAL_REVIEW_REQUIRED",
+      "remainingWork": "Verify every fixture, severance, manufactured housing and ownership-right subtopic; topic similarity is partial evidence only.",
+      "subordinateObjectivesReviewed": false,
+      "observedMinutes": null,
+      "assessmentAlignmentVerified": false
+    },
+    {
+      "id": "F-P1-II",
+      "course": "Fundamentals",
+      "officialMajorSection": "Public and private land use controls",
+      "pdfPages": [
+        3
+      ],
+      "candidateExistingEvidence": [
+        "pennsylvania/pa-real-estate-fundamentals-30-v1/curriculum/module-03.md"
+      ],
+      "status": "PARTIAL_REVIEW_REQUIRED",
+      "remainingWork": "Add source-verified Pennsylvania/local procedures and the complete subordinate controls.",
+      "subordinateObjectivesReviewed": false,
+      "observedMinutes": null,
+      "assessmentAlignmentVerified": false
+    },
+    {
+      "id": "F-P1-III",
+      "course": "Fundamentals",
+      "officialMajorSection": "Environmental issues",
+      "pdfPages": [
+        3,
+        4
+      ],
+      "candidateExistingEvidence": [
+        "pennsylvania/pa-real-estate-fundamentals-30-v1/curriculum/module-03.md"
+      ],
+      "status": "PARTIAL_REVIEW_REQUIRED",
+      "remainingWork": "Complete each named hazard, current primary-law application and source task, including fracking and moisture issues.",
+      "subordinateObjectivesReviewed": false,
+      "observedMinutes": null,
+      "assessmentAlignmentVerified": false
+    },
+    {
+      "id": "F-P1-IV",
+      "course": "Fundamentals",
+      "officialMajorSection": "Legal descriptions",
+      "pdfPages": [
+        4
+      ],
+      "candidateExistingEvidence": [
+        "pennsylvania/pa-real-estate-fundamentals-30-v1/curriculum/module-03.md"
+      ],
+      "status": "PARTIAL_REVIEW_REQUIRED",
+      "remainingWork": "Complete survey and condominium-description applications with reviewed source support.",
+      "subordinateObjectivesReviewed": false,
+      "observedMinutes": null,
+      "assessmentAlignmentVerified": false
+    },
+    {
+      "id": "F-P1-V",
+      "course": "Fundamentals",
+      "officialMajorSection": "Interests in real estate",
+      "pdfPages": [
+        4,
+        5,
+        6
+      ],
+      "candidateExistingEvidence": [
+        "pennsylvania/pa-real-estate-fundamentals-30-v1/curriculum/module-02.md"
+      ],
+      "status": "PARTIAL_REVIEW_REQUIRED",
+      "remainingWork": "Complete lease principles and types, state landlord/tenant law, encumbrances and water-right subtopics.",
+      "subordinateObjectivesReviewed": false,
+      "observedMinutes": null,
+      "assessmentAlignmentVerified": false
+    },
+    {
+      "id": "F-P1-VI",
+      "course": "Fundamentals",
+      "officialMajorSection": "Forms of ownership",
+      "pdfPages": [
+        6
+      ],
+      "candidateExistingEvidence": [
+        "pennsylvania/pa-real-estate-fundamentals-30-v1/curriculum/module-02.md"
+      ],
+      "status": "PARTIAL_REVIEW_REQUIRED",
+      "remainingWork": "Complete business entities, trusts, condominium/cooperative, timeshare and campground interests.",
+      "subordinateObjectivesReviewed": false,
+      "observedMinutes": null,
+      "assessmentAlignmentVerified": false
+    },
+    {
+      "id": "F-P1-VII",
+      "course": "Fundamentals",
+      "officialMajorSection": "Transfer of title",
+      "pdfPages": [
+        6,
+        7,
+        8
+      ],
+      "candidateExistingEvidence": [
+        "pennsylvania/pa-real-estate-fundamentals-30-v1/curriculum/module-04.md"
+      ],
+      "status": "PARTIAL_REVIEW_REQUIRED",
+      "remainingWork": "Complete source-verified deed, probate, involuntary transfer and tax procedures; general concepts alone are insufficient.",
+      "subordinateObjectivesReviewed": false,
+      "observedMinutes": null,
+      "assessmentAlignmentVerified": false
+    },
+    {
+      "id": "F-P1-VIII",
+      "course": "Fundamentals",
+      "officialMajorSection": "Title records",
+      "pdfPages": [
+        8
+      ],
+      "candidateExistingEvidence": [
+        "pennsylvania/pa-real-estate-fundamentals-30-v1/curriculum/module-04.md"
+      ],
+      "status": "PARTIAL_REVIEW_REQUIRED",
+      "remainingWork": "Complete title search, policy coverage, remedies and Uniform Commercial Code applications.",
+      "subordinateObjectivesReviewed": false,
+      "observedMinutes": null,
+      "assessmentAlignmentVerified": false
+    },
+    {
+      "id": "F-P2-I",
+      "course": "Fundamentals",
+      "officialMajorSection": "Principles of contract law",
+      "pdfPages": [
+        8,
+        9
+      ],
+      "candidateExistingEvidence": [
+        "pennsylvania/pa-real-estate-fundamentals-30-v1/curriculum/module-05.md"
+      ],
+      "status": "PARTIAL_REVIEW_REQUIRED",
+      "remainingWork": "Complete every formation, enforceability, statutory and remedy subtopic with actual examples and reviewed sources.",
+      "subordinateObjectivesReviewed": false,
+      "observedMinutes": null,
+      "assessmentAlignmentVerified": false
+    },
+    {
+      "id": "F-P2-II",
+      "course": "Fundamentals",
+      "officialMajorSection": "Principles of financing",
+      "pdfPages": [
+        9,
+        10,
+        11
+      ],
+      "candidateExistingEvidence": [
+        "pennsylvania/pa-real-estate-fundamentals-30-v1/curriculum/module-06.md"
+      ],
+      "status": "PARTIAL_REVIEW_REQUIRED",
+      "remainingWork": "Complete current federal/state primary-source support, instruments, priority, foreclosure and redemption applications.",
+      "subordinateObjectivesReviewed": false,
+      "observedMinutes": null,
+      "assessmentAlignmentVerified": false
+    },
+    {
+      "id": "F-P2-III",
+      "course": "Fundamentals",
+      "officialMajorSection": "Real estate license law/rules",
+      "pdfPages": [
+        11,
+        12,
+        13
+      ],
+      "candidateExistingEvidence": [
+        "pennsylvania/pa-real-estate-fundamentals-30-v1/curriculum/module-01.md"
+      ],
+      "status": "PARTIAL_REVIEW_REQUIRED",
+      "remainingWork": "Current education correction is present. Full consolidated RELRA, operation, discipline, recovery-fund and subordinate objectives remain to be conformed.",
+      "subordinateObjectivesReviewed": false,
+      "observedMinutes": null,
+      "assessmentAlignmentVerified": false
+    },
+    {
+      "id": "P-P1-I",
+      "course": "Practice",
+      "officialMajorSection": "Real estate business",
+      "pdfPages": [
+        2
+      ],
+      "candidateExistingEvidence": [],
+      "status": "NO_COMPLETE_COURSE_LOCAL_UNIT",
+      "remainingWork": "Add actual brokerage business, compensation/contractor/tax/recordkeeping instruction and brokerage math; the current legal-duty modules do not cover this whole part.",
+      "subordinateObjectivesReviewed": false,
+      "observedMinutes": null,
+      "assessmentAlignmentVerified": false
+    },
+    {
+      "id": "P-P2-I",
+      "course": "Practice",
+      "officialMajorSection": "Ethics and law",
+      "pdfPages": [
+        3
+      ],
+      "candidateExistingEvidence": [
+        "pennsylvania/pa-real-estate-practice-45-v1/curriculum/module-01.md"
+      ],
+      "status": "PARTIAL_REVIEW_REQUIRED",
+      "remainingWork": "Develop explicit ethics-versus-law applications, not just statutory duty lists.",
+      "subordinateObjectivesReviewed": false,
+      "observedMinutes": null,
+      "assessmentAlignmentVerified": false
+    },
+    {
+      "id": "P-P2-II",
+      "course": "Practice",
+      "officialMajorSection": "RELRA and Commission rules",
+      "pdfPages": [
+        3
+      ],
+      "candidateExistingEvidence": [
+        "pennsylvania/pa-real-estate-practice-45-v1/curriculum/module-01.md",
+        "pennsylvania/pa-real-estate-practice-45-v1/curriculum/module-08.md"
+      ],
+      "status": "PARTIAL_REVIEW_REQUIRED",
+      "remainingWork": "Acquire and review the full current consolidated Act and conform all relevant conduct instruction.",
+      "subordinateObjectivesReviewed": false,
+      "observedMinutes": null,
+      "assessmentAlignmentVerified": false
+    },
+    {
+      "id": "P-P2-III",
+      "course": "Practice",
+      "officialMajorSection": "Antitrust",
+      "pdfPages": [
+        3
+      ],
+      "candidateExistingEvidence": [],
+      "status": "NO_COMPLETE_COURSE_LOCAL_UNIT",
+      "remainingWork": "Build substantive source-verified instruction and applications for price fixing, boycott, tying, territory and enforcement.",
+      "subordinateObjectivesReviewed": false,
+      "observedMinutes": null,
+      "assessmentAlignmentVerified": false
+    },
+    {
+      "id": "P-P2-IV",
+      "course": "Practice",
+      "officialMajorSection": "Fair housing",
+      "pdfPages": [
+        3
+      ],
+      "candidateExistingEvidence": [],
+      "status": "NO_COMPLETE_COURSE_LOCAL_UNIT",
+      "remainingWork": "Build full federal/state/local coverage, classes, advertising, prohibited conduct and complaint/remedy applications.",
+      "subordinateObjectivesReviewed": false,
+      "observedMinutes": null,
+      "assessmentAlignmentVerified": false
+    },
+    {
+      "id": "P-P2-V",
+      "course": "Practice",
+      "officialMajorSection": "Agency",
+      "pdfPages": [
+        3,
+        4,
+        5
+      ],
+      "candidateExistingEvidence": [
+        "pennsylvania/pa-real-estate-practice-45-v1/curriculum/module-01.md",
+        "pennsylvania/pa-real-estate-practice-45-v1/curriculum/module-02.md",
+        "pennsylvania/pa-real-estate-practice-45-v1/curriculum/module-03.md"
+      ],
+      "status": "PARTIAL_REVIEW_REQUIRED",
+      "remainingWork": "The newly held notices/workshop remediate a source gap. Complete all common-law/statutory subtopics and independent form/teaching review.",
+      "subordinateObjectivesReviewed": false,
+      "observedMinutes": null,
+      "assessmentAlignmentVerified": false
+    },
+    {
+      "id": "P-P3-I",
+      "course": "Practice",
+      "officialMajorSection": "Home ownership",
+      "pdfPages": [
+        5
+      ],
+      "candidateExistingEvidence": [],
+      "status": "NO_COMPLETE_COURSE_LOCAL_UNIT",
+      "remainingWork": "Build housing, ownership factors, insurance and investment/tax applications, including flood and mine-subsidence distinctions.",
+      "subordinateObjectivesReviewed": false,
+      "observedMinutes": null,
+      "assessmentAlignmentVerified": false
+    },
+    {
+      "id": "P-P3-II",
+      "course": "Practice",
+      "officialMajorSection": "Listing property",
+      "pdfPages": [
+        5,
+        6,
+        7
+      ],
+      "candidateExistingEvidence": [
+        "pennsylvania/pa-real-estate-practice-45-v1/curriculum/module-04.md",
+        "pennsylvania/pa-real-estate-practice-45-v1/curriculum/module-07.md",
+        "pennsylvania/pa-real-estate-practice-45-v1/curriculum/module-08.md"
+      ],
+      "status": "PARTIAL_REVIEW_REQUIRED",
+      "remainingWork": "Add complete listing, pricing/CMA, marketing/technology and reviewed actual document work.",
+      "subordinateObjectivesReviewed": false,
+      "observedMinutes": null,
+      "assessmentAlignmentVerified": false
+    },
+    {
+      "id": "P-P3-III",
+      "course": "Practice",
+      "officialMajorSection": "Buyer/broker relationship",
+      "pdfPages": [
+        7,
+        8
+      ],
+      "candidateExistingEvidence": [
+        "pennsylvania/pa-real-estate-practice-45-v1/curriculum/module-02.md",
+        "pennsylvania/pa-real-estate-practice-45-v1/curriculum/module-03.md"
+      ],
+      "status": "PARTIAL_REVIEW_REQUIRED",
+      "remainingWork": "Complete buyer agreement types, compensation and cooperating/FSBO/in-house applied workflows.",
+      "subordinateObjectivesReviewed": false,
+      "observedMinutes": null,
+      "assessmentAlignmentVerified": false
+    },
+    {
+      "id": "P-P3-IV",
+      "course": "Practice",
+      "officialMajorSection": "Liability and risk reduction",
+      "pdfPages": [
+        8,
+        9
+      ],
+      "candidateExistingEvidence": [
+        "pennsylvania/pa-real-estate-practice-45-v1/curriculum/module-07.md",
+        "pennsylvania/pa-real-estate-practice-45-v1/curriculum/module-09.md"
+      ],
+      "status": "PARTIAL_REVIEW_REQUIRED",
+      "remainingWork": "Complete each liability category, factual documentation and red-flag application.",
+      "subordinateObjectivesReviewed": false,
+      "observedMinutes": null,
+      "assessmentAlignmentVerified": false
+    },
+    {
+      "id": "P-P3-V",
+      "course": "Practice",
+      "officialMajorSection": "Agreement of sale",
+      "pdfPages": [
+        9,
+        10
+      ],
+      "candidateExistingEvidence": [
+        "pennsylvania/pa-real-estate-practice-45-v1/curriculum/module-05.md",
+        "pennsylvania/pa-real-estate-practice-45-v1/curriculum/module-06.md"
+      ],
+      "status": "PARTIAL_REVIEW_REQUIRED",
+      "remainingWork": "Complete sample form, UETA, contingencies, performance and remedies with actual reviewed source support.",
+      "subordinateObjectivesReviewed": false,
+      "observedMinutes": null,
+      "assessmentAlignmentVerified": false
+    },
+    {
+      "id": "P-P3-VI",
+      "course": "Practice",
+      "officialMajorSection": "Financing the single-family residence",
+      "pdfPages": [
+        10,
+        11,
+        12
+      ],
+      "candidateExistingEvidence": [],
+      "status": "NO_COMPLETE_COURSE_LOCAL_UNIT",
+      "remainingWork": "Substantive Practice course instruction, lender/process/product and federal/state law coverage plus borrower-cost/qualifying calculations are missing as a complete course-local unit.",
+      "subordinateObjectivesReviewed": false,
+      "observedMinutes": null,
+      "assessmentAlignmentVerified": false
+    },
+    {
+      "id": "P-P3-VII",
+      "course": "Practice",
+      "officialMajorSection": "Valuation/appraisal",
+      "pdfPages": [
+        12,
+        13,
+        14
+      ],
+      "candidateExistingEvidence": [
+        "pennsylvania/pa-real-estate-practice-45-v1/curriculum/module-09.md"
+      ],
+      "status": "PARTIAL_REVIEW_REQUIRED",
+      "remainingWork": "Add complete value/approaches/reconciliation and worked cost/income/multiplier calculations; product labels and license restrictions alone are insufficient.",
+      "subordinateObjectivesReviewed": false,
+      "observedMinutes": null,
+      "assessmentAlignmentVerified": false
+    },
+    {
+      "id": "P-P3-VIII",
+      "course": "Practice",
+      "officialMajorSection": "Closing the residential transaction",
+      "pdfPages": [
+        14,
+        15
+      ],
+      "candidateExistingEvidence": [
+        "pennsylvania/pa-real-estate-practice-45-v1/curriculum/module-05.md"
+      ],
+      "status": "PARTIAL_REVIEW_REQUIRED",
+      "remainingWork": "Build full loan/title/settlement, LE/CD timing and comparison, tax reporting, cyber-risk and settlement math instruction with current sources.",
+      "subordinateObjectivesReviewed": false,
+      "observedMinutes": null,
+      "assessmentAlignmentVerified": false
+    }
+  ]
+}

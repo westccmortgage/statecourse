@@ -1,0 +1,29 @@
+{
+  "scope": "Targeted Section 4 relationship authorities; no whole-code recertification",
+  "sources": [
+    {
+      "file": "section-475.274.html",
+      "url": "https://www.flsenate.gov/Laws/Statutes/2026/475.274",
+      "final_url": "https://www.flsenate.gov/Laws/Statutes/2026/475.274",
+      "retrieved_at": "2026-11-05",
+      "bytes": 44142,
+      "sha256": "e0f774fb67947420cab0db2b805f5b0f46f23e3e654360a6a78e502dafec5587"
+    },
+    {
+      "file": "section-475.278.html",
+      "url": "https://www.flsenate.gov/Laws/Statutes/2026/475.278",
+      "final_url": "https://www.flsenate.gov/Laws/Statutes/2026/475.278",
+      "retrieved_at": "2026-11-05",
+      "bytes": 65613,
+      "sha256": "6ee75ef2ca537613f16f453660c1fac153226d19dfe53650e3bcdc9b420f36d4"
+    },
+    {
+      "file": "section-475.2755.html",
+      "url": "https://www.flsenate.gov/Laws/Statutes/2026/475.2755",
+      "final_url": "https://www.flsenate.gov/Laws/Statutes/2026/475.2755",
+      "retrieved_at": "2026-11-05",
+      "bytes": 46121,
+      "sha256": "1193bca7cd24210fe0213619b5159df230f5deed964a9b3cb20dc6387a21e8d3"
+    }
+  ]
+}

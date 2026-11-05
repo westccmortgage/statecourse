@@ -58,20 +58,18 @@ writing."*** A charge the parties agreed to informally is amended in first, or i
 
 ## B. The eight problems
 
-The Commission specifies a **mix**, not a list. This module delivers eight that cover every element the
-outline names, and **at least three are worked from samples of prepared contracts** as the outline
-requires.
+The Commission specifies a **mix**, not a list. The eight planned structures cover the stated mix. All eight now have numeric instructional examples, but **the three prepared-current-contract exercises are still open**; the numeric examples do not satisfy that separate requirement.
 
 | # | Structure | Elements it exercises | From a prepared contract? |
 |---|---|---|---|
 | **1** | **Cash** | The worksheet with no loan on either side | |
-| **2** | **New loan — conventional** | Loan proceeds, loan costs, prepaid interest, prepaid taxes | **Yes** |
+| **2** | **New loan — conventional** | Loan proceeds, loan costs, prepaid interest, prepaid taxes | **Required; not yet held** |
 | **3** | **New loan — FHA** | The same, on FHA terms as given, with mortgage insurance | |
 | **4** | **New loan — VA** | The same, on VA terms as given | |
-| **5** | **Assumption — conventional** | Loan assumed, balance as of closing, interest proration, release | **Yes** |
+| **5** | **Assumption — conventional** | Loan assumed, balance as of closing, interest proration, release | **Required; not yet held** |
 | **6** | **Assumption — FHA or VA** | The same, on the terms given | |
 | **7** | **Owner carry** | Seller-carried note, security instrument, what the seller has become | |
-| **8** | **Multi-family** | Rents, security deposits, partial month, Chapter 5 consequences | **Yes** |
+| **8** | **Multi-family** | Rents, security deposits, partial month, Chapter 5 consequences | **Required; not yet held** |
 
 **Every rate, term, fee, premium and figure in every problem is supplied inside the problem as a given.**
 **No Colorado tax rate, assessment ratio, billing cycle, insurance premium, loan limit, FHA or VA
@@ -79,6 +77,10 @@ requirement or proration convention is stated anywhere in this course**, because
 primary source.
 
 ---
+
+## Additional complete numeric cases
+
+Problems 2, 3, 4, 6 and 7 now have full supplied facts, six-column worked feedback and an independent follow-up in the [additional closing workbook](../activities/additional-closing-workbook.md). Together with the three existing worked examples below, the course has eight numeric instructional cases. **No additional case is represented as a prepared current Commission contract.** The three contract-based problems, independent review, actual student work, comprehensive final and observed duration remain open. Reading a worked solution cannot complete a student's required problem.
 
 ## C. Problem 1 worked in full — a cash closing
 

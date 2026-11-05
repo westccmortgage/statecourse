@@ -33,7 +33,7 @@
 
 ## Learning objectives
 
-1. State the default relationship § 12-10-403(2) establishes and what displaces it.
+1. Apply the current written relationship and conspicuous compensation requirements in section 12-10-403(2).
 2. State § 12-10-406 in its own words.
 3. State the designated brokerage rule and the savings clause that follows it.
 4. List the single agent duties and identify the tension between two of them.
@@ -65,28 +65,11 @@ broker assists without a relationship. **Rule 6.8** turns on that distinction, a
 
 ## B. Relationships between brokers and the public — § 12-10-403
 
-### B.1 The two relationships, and the default
+### B.1 Both relationships require a written agreement
 
-> **(1)** *"When engaged in any of the activities enumerated in section 12-10-201(6), a broker **may act in
-> any transaction as a single agent or transaction-broker.** The broker's general duties and obligations
-> arising from that relationship **shall be disclosed to the seller and the buyer or to the landlord and the
-> tenant pursuant to section 12-10-408.**"*
->
-> **(2)** *"**A broker shall be considered a TRANSACTION-BROKER unless a single agency relationship is
-> established through a WRITTEN AGREEMENT between the broker and the party or parties to be represented by
-> the broker.**"*
+**Current section 12-10-403(2), effective August 12, 2026:** establish either transaction brokerage or single agency through a written agreement, conspicuously disclose the amount or rate of compensation, and complete the agreement before the specified section 12-10-201(6)(a) activities. A transaction-broker is still a nonagent under section 12-10-407(1); there is no automatic transaction-broker default. See the [current-law workshop](../../activities/2026-written-relationship-workshop.md).
 
-**Agency in Colorado is opt-in, and the opt-in is a writing.** A broker who signs nothing is a
-transaction-broker — and a transaction-broker **is not an agent for either party.**
-
-**Compare the other states this project has built for**, because a licensee arriving from one of them has
-the assumption backwards:
-
-| State | The default |
-|---|---|
-| **Colorado** | **Transaction-broker** — the NON-agency relationship — unless single agency is established in **writing** |
-| **Washington** | **Buyer agency arises by DEFAULT** from performing brokerage services for a buyer — RCW 18.86.020(1) |
-| **Arizona** | A licensee owes a **fiduciary duty to the client**; the relationship is established as the parties agree — A.A.C. R4-28-1101(A) |
+The August 12 DRE advisory distinguishes a listing contract establishing the relationship from a compensation-only disclosure. The latter does not establish the relationship or its duties and is insufficient. Complete the correct current relationship agreement; an acknowledgment of disclosure is not a substitute. The full workshop provides five applied cases and a document-review rubric.
 
 ### B.2 A broker may hold different relationships with the same party — (3)
 
@@ -348,9 +331,7 @@ Transaction-Broker relationship with the Customer being assisted.**"*
 > **(c)** Comply with article 10 and its rules; and
 > **(d)** Comply with applicable law **including fair housing and civil rights**.
 
-**Note (a): "written OR ORAL."** The transaction-broker relationship does not require a written agreement to
-exist — **§ 12-10-403(2) makes it the default** — and (a) binds the broker to whatever was agreed, however
-agreed.
+**Read subsection (a) together with the amended section 12-10-403(2).** A duty concerning terms of a written or oral agreement does not waive the current requirement to establish the brokerage relationship in writing before the specified activities. Do not revive the repealed default by reading that phrase in isolation.
 
 **Note (VI) and (VII) together.** The transaction-broker carries **both** single-agent disclosure duties at
 once: property facts to the buyer, buyer facts to the seller. **Not being an agent does not mean owing less

@@ -1,0 +1,21 @@
+{
+  "scope": "official enactment and agency guidance; not whole-code recertification",
+  "sources": [
+    {
+      "file": "hb26-1426-signed.pdf",
+      "url": "https://leg.colorado.gov/bill_files/117013/download",
+      "final_url": "https://leg.colorado.gov/bill_files/117013/download",
+      "retrieved_at": "2026-11-05",
+      "bytes": 3517852,
+      "sha256": "438f4b6d0f12e3c32fe2595b9d48e44853d67ba640af23d5eaf8ac69d726479a"
+    },
+    {
+      "file": "dre-written-agreement-advisory.html",
+      "url": "https://content.govdelivery.com/accounts/CODORA/bulletins/424a45a",
+      "final_url": "https://content.govdelivery.com/accounts/CODORA/bulletins/424a45a",
+      "retrieved_at": "2026-11-05",
+      "bytes": 43303,
+      "sha256": "7464b0a76052d7e23e87f912366f96a3637b7607da078944964088bef60278fc"
+    }
+  ]
+}

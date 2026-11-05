@@ -1,0 +1,117 @@
+{
+  "scope": "official source acquisition; page review separate",
+  "sources": [
+    {
+      "file": "fundamentals-outline.pdf",
+      "url": "https://www.pa.gov/content/dam/copapwp-pagov/en/dos/department-and-offices/bpoa/real-estate/Outline%20-%20RE%20Fundamentals.pdf",
+      "final_url": "https://www.pa.gov/content/dam/copapwp-pagov/en/dos/department-and-offices/bpoa/real-estate/Outline%20-%20RE%20Fundamentals.pdf",
+      "retrieved_at": "2026-11-05",
+      "bytes": 408811,
+      "sha256": "2af4425889397e5b5cdf39c407df3e160f6aa247de2618be134bcb9002d32ee7"
+    },
+    {
+      "file": "practice-outline.pdf",
+      "url": "https://www.pa.gov/content/dam/copapwp-pagov/en/dos/department-and-offices/bpoa/real-estate/Outline%20-%20RE%20Practice.pdf",
+      "final_url": "https://www.pa.gov/content/dam/copapwp-pagov/en/dos/department-and-offices/bpoa/real-estate/Outline%20-%20RE%20Practice.pdf",
+      "retrieved_at": "2026-11-05",
+      "bytes": 462527,
+      "sha256": "2cff6cd4c80557cb6730e0ccc8c0cab4684c793f0434b5337be44d8e1e947c9d"
+    },
+    {
+      "file": "initial-provider-application.pdf",
+      "url": "https://www.pa.gov/content/dam/copapwp-pagov/en/dos/department-and-offices/bpoa/real-estate/App%20-%20Approval%20Initial%20Provider.pdf",
+      "final_url": "https://www.pa.gov/content/dam/copapwp-pagov/en/dos/department-and-offices/bpoa/real-estate/App%20-%20Approval%20Initial%20Provider.pdf",
+      "retrieved_at": "2026-11-05",
+      "bytes": 240235,
+      "sha256": "b62d5becbbdeff77fc4a20b76d639ac00bc647c4763d38feebf55106182fc7cd"
+    },
+    {
+      "file": "distance-course-application.pdf",
+      "url": "https://www.pa.gov/content/dam/copapwp-pagov/en/dos/department-and-offices/bpoa/real-estate/App%20-%20Approval%20Course%20Distance%20Ed.pdf",
+      "final_url": "https://www.pa.gov/content/dam/copapwp-pagov/en/dos/department-and-offices/bpoa/real-estate/App%20-%20Approval%20Course%20Distance%20Ed.pdf",
+      "retrieved_at": "2026-11-05",
+      "bytes": 217549,
+      "sha256": "485115bf79ccca915f7c99fc7217f1bda3c4afd920bc9e7bebea5fff16fa53c0"
+    },
+    {
+      "file": "act-75-2018.html",
+      "url": "https://www.legis.state.pa.us/WU01/LI/LI/US/HTM/2018/0/0075..HTM",
+      "final_url": "https://www.legis.state.pa.us/WU01/LI/LI/US/HTM/2018/0/0075..HTM",
+      "retrieved_at": "2026-11-05",
+      "bytes": 35113,
+      "sha256": "a4b17483e10cffe8349e3232b86213aa4ad82492fbe2f3eee2f20119418855f5"
+    },
+    {
+      "file": "commission-licensure-guide.html",
+      "url": "https://www.pa.gov/agencies/dos/resources/professional-licensing-resources/licensure-processing-guides-and-timelines/real-estate-commission-guide",
+      "final_url": "https://www.pa.gov/agencies/dos/resources/professional-licensing-resources/licensure-processing-guides-and-timelines/real-estate-commission-guide",
+      "retrieved_at": "2026-11-05",
+      "bytes": 291732,
+      "sha256": "198b0704a058a43f7ffb4f32a394e93dee3cf3746197cec58c703307c1a8bb3f"
+    },
+    {
+      "file": "seller-disclosure-law.html",
+      "url": "https://legis.state.pa.us/WU01/LI/LI/CT/HTM/68/00.073..HTM",
+      "final_url": "https://legis.state.pa.us/WU01/LI/LI/CT/HTM/68/00.073..HTM",
+      "retrieved_at": "2026-11-05",
+      "bytes": 45443,
+      "sha256": "8a9b5cb935560857deabe5bab5dc21a9e7ab3a0262e38ced6c9223da92caed7a"
+    },
+    {
+      "file": "act-74-2026.html",
+      "url": "https://www.legis.state.pa.us/WU01/LI/LI/US/HTM/2026/0/0074..HTM",
+      "final_url": "https://www.legis.state.pa.us/WU01/LI/LI/US/HTM/2026/0/0074..HTM",
+      "retrieved_at": "2026-11-05",
+      "bytes": 18215,
+      "sha256": "f36b76200fe96cbdc358cce5481c865a62bfa93d72128605052a32d467866a59"
+    },
+    {
+      "file": "section-35.284.html",
+      "url": "https://www.pacodeandbulletin.gov/secure/pacode/data/049/chapter35/s35.284.html",
+      "final_url": "https://www.pacodeandbulletin.gov/secure/pacode/data/049/chapter35/s35.284.html",
+      "retrieved_at": "2026-11-05",
+      "bytes": 5697,
+      "sha256": "d7b51b8c13c90945a8aff24446c7908733d9c42866756f74b6dd4efe1ed18b0d"
+    },
+    {
+      "file": "section-35.335a.html",
+      "url": "https://www.pacodeandbulletin.gov/secure/pacode/data/049/chapter35/s35.335a.html",
+      "final_url": "https://www.pacodeandbulletin.gov/secure/pacode/data/049/chapter35/s35.335a.html",
+      "retrieved_at": "2026-11-05",
+      "bytes": 24479,
+      "sha256": "9eeaa03fec2b41efbbd23d690b99f4ace440b07e59607d7ce8bc448be2b08d7b"
+    },
+    {
+      "file": "section-35.336.html",
+      "url": "https://www.pacodeandbulletin.gov/secure/pacode/data/049/chapter35/s35.336.html",
+      "final_url": "https://www.pacodeandbulletin.gov/secure/pacode/data/049/chapter35/s35.336.html",
+      "retrieved_at": "2026-11-05",
+      "bytes": 11250,
+      "sha256": "91bfc0a0819bf75539ef8b309be7c9625c4a9d8e81ed2b7fff5e71a6ccdab71c"
+    },
+    {
+      "file": "section-35.337.html",
+      "url": "https://www.pacodeandbulletin.gov/secure/pacode/data/049/chapter35/s35.337.html",
+      "final_url": "https://www.pacodeandbulletin.gov/secure/pacode/data/049/chapter35/s35.337.html",
+      "retrieved_at": "2026-11-05",
+      "bytes": 4183,
+      "sha256": "f522a66528cc9956ee0d810de7d5573a45d6d98b4e6ad72bddbaff9ea904ead5"
+    },
+    {
+      "file": "section-35.338.html",
+      "url": "https://www.pacodeandbulletin.gov/secure/pacode/data/049/chapter35/s35.338.html",
+      "final_url": "https://www.pacodeandbulletin.gov/secure/pacode/data/049/chapter35/s35.338.html",
+      "retrieved_at": "2026-11-05",
+      "bytes": 3869,
+      "sha256": "c7248e8d596036520834d47216ba4bb6f136464a8284751d76d7deb56a58691e"
+    },
+    {
+      "file": "section-35.339.html",
+      "url": "https://www.pacodeandbulletin.gov/secure/pacode/data/049/chapter35/s35.339.html",
+      "final_url": "https://www.pacodeandbulletin.gov/secure/pacode/data/049/chapter35/s35.339.html",
+      "retrieved_at": "2026-11-05",
+      "bytes": 3241,
+      "sha256": "f090a36a55c9851af65fe379583c038af14c380013226876b3eabdc7a801fb45"
+    }
+  ]
+}

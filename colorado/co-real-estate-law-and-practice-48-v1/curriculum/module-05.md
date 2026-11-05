@@ -1,5 +1,7 @@
 # Colorado Real Estate Law and Practice — Module 05
 
+**Current-law correction — November 5, 2026.** The August 12, 2026 amendment supersedes the former automatic transaction-broker rule. Complete the [written relationship workshop](../../activities/2026-written-relationship-workshop.md). Other source-scope and submission limitations in this module remain open.
+
 ## Property management, leases and rents
 
 **Course:** Real Estate Law and Practice (48 classroom hours) · **Instructional hours: 7.0** of 48.0
@@ -187,10 +189,7 @@ Marketing and leasing space; screening applicants against consistent criteria; c
 maintaining the property; controlling operating costs; keeping records and reporting to the owner; and
 complying with the law applicable to the tenancy.
 
-**In Colorado the relationship is a brokerage relationship like any other.** **§ 12-10-403(2)** applies: a
-broker is a **transaction-broker** unless single agency is established in **writing**. **§§ 12-10-404 and
-12-10-405** speak of *"seller **or landlord**"* and *"buyer **or tenant**"* throughout, so the duty lists
-run to management relationships in their own terms.
+**Current section 12-10-403(2), effective August 12, 2026:** establish either transaction brokerage or single agency through a written agreement, conspicuously disclose the amount or rate of compensation, and complete the agreement before the specified section 12-10-201(6)(a) activities. A transaction-broker is still a nonagent under section 12-10-407(1); there is no automatic transaction-broker default. See the [current-law workshop](../../activities/2026-written-relationship-workshop.md). The seller/landlord and buyer/tenant duty lists must also be applied to the management relationship.
 
 ### D.3 The Colorado money rules that apply specifically to property management
 

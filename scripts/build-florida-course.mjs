@@ -1,12 +1,13 @@
 #!/usr/bin/env node
 /** Deterministically render the authored Florida curriculum and reviewer submission artifacts. */
 import fs from "node:fs";
+import { validateFloridaManuscript } from "./lib/florida-manuscripts.mjs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { SECTION_PLANS, TOTALS, verifyCurriculumPlan } from "../config/florida/course-i-curriculum.mjs";
 import { PERIODIC_ASSESSMENTS } from "../config/florida/periodic-assessment-bank.mjs";
 import { BANK_STATUS, SECURE_FINAL_DRAFT_ITEMS } from "../config/florida/secure-final-bank-draft.mjs";
-import { ANTI_RECRUITING_STATEMENT, CERTIFICATION_STATEMENT, COMPLETION_CERTIFICATE_STATEMENT } from "../config/florida/course-i-requirements.mjs";
+import { CERTIFICATION_STATEMENT, COMPLETION_CERTIFICATE_STATEMENT } from "../config/florida/course-i-requirements.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const courseRoot = path.join(root, "florida/fl-sales-associate-course-i-63-v1");
@@ -18,40 +19,21 @@ for (const dir of [curriculumDir, assessmentDir, submissionDir]) fs.mkdirSync(di
 const result = verifyCurriculumPlan();
 if (!result.ok) throw new Error(result.failures.join("\n"));
 
-const action = (objective) => {
-  const text = objective.text.replace(/\.$/, "");
-  return `Apply objective ${objective.n}: ${text}. Record the governing concept, material facts, conclusion, and the curriculum page used. For a calculation, show inputs, formula, result, and independent check.`;
-};
-
 const pageMap = [];
 let page = 1;
 for (const section of SECTION_PLANS) {
   const filename = `${String(section.number).padStart(2, "0")}-${section.slug}.md`;
-  const sectionPage = page++;
-  const objectiveRows = section.learningObjectives.map((o) => {
-    const objectivePage = page++;
-    pageMap.push({ objective: `${section.number}.${o.n}`, curriculumPage: objectivePage, syllabusPage: o.page, file: filename });
-    return `### Objective ${section.number}.${o.n} — curriculum page ${objectivePage}\n\n${o.text}.\n\n**Required application.** ${action(o)}\n`;
-  }).join("\n");
-  const a = PERIODIC_ASSESSMENTS.filter((q) => q.section === section.number);
-  const body = `# FREC Course I — Section ${section.number}: ${section.title}\n\n` +
-    `**Canonical curriculum page:** ${sectionPage}  \n**Syllabus source page:** ${section.syllabusPage}  \n` +
-    `**Designed instructional time:** ${section.plannedMinutes} minutes — StateCourse allocation, not a Florida per-section minimum.  \n` +
-    `**Regulatory status:** curriculum draft; not approved; no Florida credit or enrolment is available.\n\n` +
-    `${section.number === 1 ? `## Required opening statement\n\n> ${ANTI_RECRUITING_STATEMENT}\n\nThe learner must acknowledge that this statement was displayed and read before instructional work begins.\n\n` : ""}` +
-    `## Learning objectives\n\n${section.learningObjectives.map((o) => `- **${section.number}.${o.n}** ${o.text} *(FREC syllabus p. ${o.page})*`).join("\n")}\n\n` +
-    `## Required workflow\n\n| Component | Minutes | Completion evidence |\n|---|---:|---|\n` +
-    `| Authored reading and worked examples | ${section.components.reading} | reading segments and engagement checks |\n` +
-    `| Guided primary-source work | ${section.components.sourceWork} | source citation and finding submitted |\n` +
-    `| Application lab | ${section.components.application} | scenario/calculation response |\n` +
-    `| Periodic assessment and remediation | ${section.components.assessment} | first attempt, feedback, remediation if needed |\n` +
-    `| **Total** | **${section.plannedMinutes}** | elapsed time alone never completes a component |\n\n` +
-    `## Core lesson\n\n${section.lesson}\n\n` +
-    `## Primary-source reading\n\n${section.authorities.map((x) => `- ${x}`).join("\n")}\n\n` +
-    `## Objective-level application pages\n\n${objectiveRows}\n` +
-    `## Periodic assessment\n\nComplete all ${a.length} formative items assigned to this section. Each item requires an application or worked response, not recognition alone. The module mastery threshold is StateCourse policy, not a Florida passing-score rule. Below-threshold work receives a new fact pattern; the first attempt remains in the record.\n\n` +
-    `## Section completion attestation\n\nI certify that I personally completed the assigned reading, source work, applications and periodic assessment for this section. Completion of this section is not a license, course approval or authorization to practice.\n`;
-  fs.writeFileSync(path.join(curriculumDir, filename), body);
+  page++;
+  for (const objective of section.learningObjectives) {
+    pageMap.push({ objective: `${section.number}.${objective.n}`, curriculumPage: page++, syllabusPage: objective.page, file: filename });
+  }
+  // These tracked Markdown files are the authored source. Never replace expanded manuscripts
+  // with the former generated objective/application stubs.
+  const target = path.join(curriculumDir, filename);
+  if (!fs.existsSync(target)) throw new Error(`Missing authored Florida manuscript: ${filename}`);
+  const failures = validateFloridaManuscript(section, fs.readFileSync(target, "utf8"));
+  if (failures.length) throw new Error(`${filename}: ${failures.join(" ")}`);
+
 }
 
 fs.writeFileSync(path.join(courseRoot, "curriculum-page-map.json"), `${JSON.stringify({ generatedBy: "scripts/build-florida-course.mjs", totalPages: page - 1, pages: pageMap }, null, 2)}\n`);
@@ -88,4 +70,4 @@ const certificate = `# Course-completion certificate template — inactive\n\n` 
   `Completion certification required before the final: “${CERTIFICATION_STATEMENT}”\n`;
 fs.writeFileSync(path.join(submissionDir, "completion-certificate-template.md"), certificate);
 
-console.log(`built ${SECTION_PLANS.length} Florida curriculum sections, ${PERIODIC_ASSESSMENTS.length} periodic items, ${SECURE_FINAL_DRAFT_ITEMS.length} secure final-item drafts, ${TOTALS.instructionMinutes} instructional minutes`);
+console.log(`validated ${SECTION_PLANS.length} preserved Florida draft manuscripts; refreshed metadata for ${PERIODIC_ASSESSMENTS.length} formative prompts and ${SECURE_FINAL_DRAFT_ITEMS.length} secure draft items; ${TOTALS.instructionMinutes} DESIGN minutes, observed duration unverified`);

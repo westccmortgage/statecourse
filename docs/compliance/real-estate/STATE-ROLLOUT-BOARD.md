@@ -2,6 +2,15 @@
 
 # Real Estate State Rollout Board
 
+## Full-course and submission preparation — November 5, 2026
+
+The owner expanded scope from public practice to full course/application preparation in the nine priority states. All nine remain **NOT FILING READY**, with no approval or operational activation. Instructor selection is **DEFERRED BY OWNER**; no universal assignment or credential is inferred. The local review inventory covers 22 planned course workstreams, 20 with manuscript files of varying completeness; GA and NY full manuscripts remain absent.
+
+Implemented current PA 75-hour/five-year remediation, official outline/notice/disclosure acquisition and an eight-file workshop; corrected Colorado's repealed transaction-broker default and added five closing problems, five current-law cases and four concrete trust exercises; expanded Florida Section 4 and protected all authored manuscripts from generator overwrite; prepared a Georgia methodology dossier and New York source/application controls. GA needs prior methodology authorization under current 520-2-.04(10)(b); NY provider/course independence under 176.1 needs a determination on actual ownership/control facts. These are distinct from instructor selection.
+
+Both builds, 121 focused checks and local nine-state Chrome acceptance pass. The broad suite is 2,407 tests with the same 27 existing baseline failures and no new failure names; lint has zero errors/115 existing warnings. Course content, independent review, duration, finals, forms, institutional evidence and actual operating controls still have material open work. [Nine-state preparation record](../../../docs/submission/PRIORITY-STATE-PACKAGES.md), [validation](../../../docs/submission/VALIDATION-2026-11-05.md). No submission, signature, payment, merge, deployment or paid approval/credit/commerce control changed.
+
+
 ## Public-practice verification follow-up — November 4, 2026
 
 The existing `codex/multi-state-free-practice-expansion` implementation is preserved, including Pennsylvania's current-law public overrides and Washington's narrower 100-question collection. Nine priority states have 1,933 public questions. Current NC syllabus/rules and WA objective PDFs match retained bytes. Added strict state/provenance/answer and no-account/no-credit/no-certificate validation, negative checks and responsive header corrections. 79 focused tests, both builds and local Chrome acceptance pass; the broad suite retains the same 27 main-baseline failures, with no new failures. No paid approval, filing, completion, commerce, production setting, merge or deployment changed. Washington paid conformity remains NO-GO. [Readiness](../../free-practice/MULTI-STATE-READINESS.md), [sources](../../free-practice/SOURCE-REVIEW.md), [validation](../../free-practice/VALIDATION.md).

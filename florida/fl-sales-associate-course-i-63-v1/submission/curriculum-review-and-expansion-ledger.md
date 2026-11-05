@@ -2,7 +2,7 @@
 
 **Current judgment:** architecture and objective coverage GO; regulator-ready 3,000-minute course NO-GO.
 
-The 19 curriculum files total roughly 20,000 words and currently combine short substantive summaries with generic objective-level application stubs. That is a useful authoring foundation, not honest evidence of 60 fifty-minute hours. The synthetic curriculum-page map is an authoring coordinate system, not final stable pagination for exam keys.
+The 19 curriculum files now total roughly 34,000 raw words after the November 5 Section 4 expansion (the export report recomputes the exact count) and currently combine short substantive summaries with generic objective-level application stubs. That is a useful authoring foundation, not honest evidence of 60 fifty-minute hours. The synthetic curriculum-page map is an authoring coordinate system, not final stable pagination for exam keys.
 
 ## Ordered gates
 
@@ -33,4 +33,4 @@ The current build preserves these constraints automatically:
 
 ## Immediate authoring tranche
 
-The next curriculum work starts with sections 1-3 as a full vertical standard: expand explanations, add worked Florida scenarios, convert generic source work into named primary-source tasks, audit each objective for a teachable proposition, then use that reviewed standard for sections 4-19. Optional video remains outside instructional time and cannot be used to cure missing course substance.
+Sections 1–3 already contain expanded authored teaching. Section 4 now replaces its ten generic objective stubs with explanations, worked Florida scenarios, exact statutory tasks, changed-fact applications, notice/consent analysis and an integrated lab. These are authored drafts, not independently accepted 170-minute instruction. Its termination subtopic still needs additional source-specific review. Continue substantive expansion through sections 5–19, then complete independent review, time study and final pagination. The build now reads and validates the tracked manuscripts without overwriting them with generated stubs; a local regeneration preserved all nineteen byte hashes. Optional video remains outside instructional time and cannot be used to cure missing course substance.
