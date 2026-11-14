@@ -4,7 +4,7 @@
 
 Owner authorized continued Spanish free-practice correction and publication on the existing site. Branch: `codex/real-estate-es-semantic-review-20261114`. Baseline: `574f467ebbc01d74943c91c6334b098c4da5965d`.
 
-This continuation corrects **752 distinct source translations / 832 course entries across all 30 courses**. It does **not** complete a sentence-by-sentence semantic review of the entire corpus. All courses retain full-semantic-review OPEN in the coverage ledger. Human linguistic review, qualified state SME review, learner validation/duration and regulatory approval remain OPEN.
+This continuation corrects **807 distinct source translations / 888 course entries across all 30 courses**. It does **not** complete a sentence-by-sentence semantic review of the entire corpus. All courses retain full-semantic-review OPEN in the coverage ledger. Human linguistic review, qualified state SME review, learner validation/duration and regulatory approval remain OPEN.
 
 Corrections include duties incorrectly rendered as rights, lost negations, omitted clauses, unrelated EU text hallucinated by the original machine translation, land surveying confused with opinion surveys, boundary/legal-description vocabulary, missing directions in a worked land description, acres/feet/yards incorrectly rendered as metric units without conversion, and eight Alaska lesson titles. Whole-sentence rewrites restore selected scenarios and explanations. Terminology-only changes are not represented as certification of the rest of those paragraphs. Ordinary participant/occupancy surveys remain surveys. Wrong answer options preserve their English meaning even where that meaning is legally incorrect.
 

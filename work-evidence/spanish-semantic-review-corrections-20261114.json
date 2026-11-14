@@ -325,6 +325,15 @@
   },
   {
     "course_id": "az-salesperson-prelicense-90",
+    "source_sha256": "489335e24bf5723669a985083d72505e4d29d29dd9c96c879afaa78a2b5dc706",
+    "source": "43,560 square yards.",
+    "before": "43,560 metros cuadrados.",
+    "after": "43,560 yardas cuadradas.",
+    "target_sha256": "8532eb614d136e2f68c03b3d23d7b69102eedc2201c96fd7bacb70fffe417bbc",
+    "review_scope": "targeted source comparison and terminology correction; not full lesson certification"
+  },
+  {
+    "course_id": "az-salesperson-prelicense-90",
     "source_sha256": "2672113eb743046276970cf0ffe5cd6fc58dbd83c0ff8d3096961660ddc582dc",
     "source": "640 acres",
     "before": "640 hectáreas",
@@ -514,11 +523,29 @@
   },
   {
     "course_id": "ca-mortgage-loan-brokering-lending-45",
+    "source_sha256": "c4cb10dbdd9ca5cb0cca4b2adf2d8708239c33c5d2d0d653e030c90aa5be9d33",
+    "source": "An automated recommendation evaluates the data it was given, not facts that surface afterward in the appraisal or the verification. Unpermitted square footage affects the collateral's value and marketability, and a very short tenure after a long gap affects income stability — both are underwriting questions, not clerical ones.",
+    "before": "Una recomendación automatizada evalúa los datos que se le dieron, no los hechos que aparecen después en la evaluación o la verificación. Los metros cuadrados no permitidos afectan el valor y la comercialización de la garantía, y una duración muy corta después de una larga brecha afecta la estabilidad de los ingresos —ambos son preguntas de suscripción, no de oficina.",
+    "after": "Una recomendación automatizada evalúa los datos recibidos, no los hechos que aparecen después en la tasación o la verificación. La superficie construida sin permiso afecta al valor y comerciabilidad de la garantía, y una antigüedad laboral muy breve después de una larga interrupción afecta a la estabilidad de ingresos. Ambas son cuestiones de evaluación crediticia, no simples trámites administrativos.",
+    "target_sha256": "91f7220fdff18fa02fa5baf585dd70ce4ad88b174768947385cdb96147d55139",
+    "review_scope": "targeted source comparison and terminology correction; not full lesson certification"
+  },
+  {
+    "course_id": "ca-mortgage-loan-brokering-lending-45",
     "source_sha256": "a05d822cbaf089fe28ab3b5746ca4d7f83475ebdc0d9c0b779b2f1960199b25b",
     "source": "Appraisal, credit report, title, escrow, recording, pest, survey",
     "before": "Evaluación, informe de crédito, título, garantía bloqueada, registro, plaga, encuesta",
     "after": "Tasación, informe de crédito, título, escrow, inscripción, inspección de plagas, mensura",
     "target_sha256": "b258162021122bdc5bf40bf4f44b57bc5e9f0d27e5d32e2cd93e2b618cc01833",
+    "review_scope": "targeted source comparison and terminology correction; not full lesson certification"
+  },
+  {
+    "course_id": "ca-mortgage-loan-brokering-lending-45",
+    "source_sha256": "9253478eb1ee85bb960b44b16f1d139d1833762a6a4dd5f7afea5ecde24e7c3b",
+    "source": "Bedroom and bath count, square footage, lot size, garage, year built",
+    "before": "Cuenta de dormitorio y baño, metros cuadrados, tamaño del lote, garaje, año de construcción",
+    "after": "Cuenta de dormitorio y baño, pies cuadrados, tamaño del lote, garaje, año de construcción",
+    "target_sha256": "461de72193abf75e9a9b058742dc835e6fa19048651403486a4fc4e940f4d807",
     "review_scope": "targeted source comparison and terminology correction; not full lesson certification"
   },
   {
@@ -564,6 +591,15 @@
     "before": "La preocupación es una obligación oculta que se disfraza de activos. No se trata de necesidad, no de una regla universal de sazonamiento, y no de un deber de declaración de impuestos del asegurador.",
     "after": "El problema es una obligación oculta presentada como si fueran activos. No se trata de la necesidad de fondos, de una regla universal sobre su antigüedad ni de una obligación del evaluador crediticio de presentar declaraciones fiscales.",
     "target_sha256": "979f08a223ce4b0452db52d8d86d9344a7d265749820a4c3a235546c60487e6b",
+    "review_scope": "targeted source comparison and terminology correction; not full lesson certification"
+  },
+  {
+    "course_id": "ca-mortgage-loan-brokering-lending-45",
+    "source_sha256": "b1e2d237e277a78d51d8c12d6f9aefcdef45b91a8890201f29162e8624ef879b",
+    "source": "To confirm the property's square footage and physical characteristics.",
+    "before": "Para confirmar los metros cuadrados y las características físicas de la propiedad.",
+    "after": "Para confirmar los pies cuadrados y las características físicas de la propiedad.",
+    "target_sha256": "7df1ff2ae97e5e4af26aa81266a4794d1ebde3b44a5212e8ffb5b86e4500c218",
     "review_scope": "targeted source comparison and terminology correction; not full lesson certification"
   },
   {
@@ -622,6 +658,24 @@
   },
   {
     "course_id": "ca-real-estate-practice-45",
+    "source_sha256": "c8d562525d331ffec91707eda8f9272d85f7281b32c27c3b221575b1a6b259f1",
+    "source": ", and square footage is exactly the number Section 3.6 of Lesson 03 warns about. The answer comes from the records, not from Diane's recollection of her father's work.",
+    "before": ", y los metros cuadrados es exactamente el número Sección 3.6 de la lección 03 advierte sobre. La respuesta viene de los registros, no del recuerdo de Diane del trabajo de su padre.",
+    "after": ", y la superficie en pies cuadrados es precisamente la cifra sobre la que advierte la sección 3.6 de la lección 03. La respuesta procede de los registros, no del recuerdo de Diane sobre el trabajo de su padre.",
+    "target_sha256": "b59b4e228e268722f4c78711b02359365b3b40900d85110fa006860b1a00cd49",
+    "review_scope": "targeted source comparison and terminology correction; not full lesson certification"
+  },
+  {
+    "course_id": "ca-real-estate-practice-45",
+    "source_sha256": "c9fae5cfbd610b5cf7142a1cb891d14ef3a05c1499cb51c674e51cd58010011b",
+    "source": ", because the licensee repeats a bedroom count or a square footage figure that the records do not support. Section 1.2 requires a source, and the source here is the public record rather than the seller's description or the prior listing.",
+    "before": ", porque el licenciatario repite un recuento de dormitorios o una cifra de metros cuadrados que los registros no soportan. La sección 1.2 requiere una fuente, y la fuente aquí es el registro público en lugar de la descripción del vendedor o la captación inmobiliaria anterior.",
+    "after": ", porque el licenciatario repite un recuento de dormitorios o una cifra de pies cuadrados que los registros no soportan. La sección 1.2 requiere una fuente, y la fuente aquí es el registro público en lugar de la descripción del vendedor o la captación inmobiliaria anterior.",
+    "target_sha256": "6d7af89b4e902c090659a6c2364195a8dca51934841b6822cf24e8910078581c",
+    "review_scope": "targeted source comparison and terminology correction; not full lesson certification"
+  },
+  {
+    "course_id": "ca-real-estate-practice-45",
     "source_sha256": "e14aa4612e960358cf51bb1165f9d838de566c3eb433f5f19e0364862fe69bac",
     "source": ", including the exceptions it would take. Not a guarantee, not the policy, not a survey.",
     "before": ", incluyendo las excepciones que tomaría. No es una garantía, no es la política, no es una encuesta.",
@@ -631,11 +685,47 @@
   },
   {
     "course_id": "ca-real-estate-practice-45",
+    "source_sha256": "5da9c9bd705d64c7b284a30684ae88bf6ffd95745bd81ec5b0c7413b787a0627",
+    "source": ", which also bears on legal square footage. Pool equipment and safety compliance. Insurance availability and cost if the property is in a mapped fire, flood, or seismic area — obtained",
+    "before": ", que también lleva en los metros cuadrados legales. Equipo de piscina y cumplimiento de seguridad. Disponibilidad y costo del seguro si la propiedad se encuentra en un área de incendio, inundación o sísmica — obtenida",
+    "after": ", lo que también afecta a la superficie legal en pies cuadrados. Equipos de piscina y cumplimiento de requisitos de seguridad. Disponibilidad y costo del seguro si la propiedad está en una zona cartografiada de incendios, inundaciones o riesgo sísmico, obtenidos",
+    "target_sha256": "7714ab576862da4e80f4c4332df0f784c87bfefc84d293c6141ad57ee8e69fec",
+    "review_scope": "targeted source comparison and terminology correction; not full lesson certification"
+  },
+  {
+    "course_id": "ca-real-estate-practice-45",
     "source_sha256": "f5d0b6475d65bb696d379e011a71515cea48024f80d1172f2077f5c26cf588b3",
     "source": "A disability-related request is evaluated under the accommodation standard rather than routine policy, which is what makes ordinary waiting-list and lease-term answers inadequate. Reasonableness is still part of the assessment, so it is not automatic either.",
     "before": "Una solicitud relacionada con la discapacidad se evalúa con arreglo a la norma de alojamiento en lugar de la política habitual, que es lo que hace inadecuadas las respuestas ordinarias a la lista de espera y al contrato de arrendamiento. La razonabilidad sigue siendo parte de la evaluación, por lo que tampoco es automática.",
     "after": "Una solicitud relacionada con una discapacidad se evalúa conforme al criterio de adaptación razonable, no solo conforme a la política habitual; por eso no bastan las respuestas ordinarias sobre listas de espera o plazos de arrendamiento. La razonabilidad sigue formando parte de la evaluación, de modo que la aprobación tampoco es automática.",
     "target_sha256": "ea37e5b873f5f45ae0642c42d3c3ce825afc83acc1d8639da12cf8ba311ba5ac",
+    "review_scope": "targeted source comparison and terminology correction; not full lesson certification"
+  },
+  {
+    "course_id": "ca-real-estate-practice-45",
+    "source_sha256": "a409fa8100a115010f22fca8ea886244782bb1c9620f8c5401618ff9c8327589",
+    "source": "A licensee realizes she transposed two digits reporting square footage. The buyer relied on it in setting his offer. Escrow closes in four days. Her manager suggests waiting: the buyer has an inspection report, the figure came from a public record, and raising it now may kill the transaction.",
+    "before": "Un licenciatario se da cuenta de que transfirió dos dígitos informando de los metros cuadrados. El comprador se basó en ella para fijar su oferta. Escrow cierra en cuatro días. Su gerente sugiere esperar: el comprador tiene un informe de inspección, la cifra proviene de un registro público, y elevarlo ahora puede matar la transacción.",
+    "after": "Una licenciataria descubre que invirtió dos dígitos al informar la superficie en pies cuadrados. El comprador se basó en esa cifra para fijar su oferta. El cierre de escrow está previsto dentro de cuatro días. Su gerente propone esperar: el comprador tiene un informe de inspección, la cifra procedía de un registro público y plantearlo ahora podría hacer fracasar la transacción.",
+    "target_sha256": "4791debf2e50daed9f57f61a1442799575d56e947b85b894cd10a7c34d3cf7d2",
+    "review_scope": "targeted source comparison and terminology correction; not full lesson certification"
+  },
+  {
+    "course_id": "ca-real-estate-practice-45",
+    "source_sha256": "bb13fde938935f49977dbec2bbfa486c569599e7044c9f102a61ac8dc3900e61",
+    "source": "A licensee realizes she transposed two digits reporting square footage. The buyer relied on it in setting his offer. Escrow closes in four days. Her manager tells her to say nothing: the buyer has his own inspection report, the figure came from a public record, and raising it now may kill the transaction.",
+    "before": "Un licenciatario se da cuenta de que transfirió dos dígitos informando de los metros cuadrados. El comprador se basó en ella para fijar su oferta. Escrow cierra en cuatro días. Su gerente le dice que no diga nada: el comprador tiene su propio informe de inspección, la cifra proviene de un registro público, y elevarlo ahora puede matar la transacción.",
+    "after": "Una licenciataria descubre que invirtió dos dígitos al informar la superficie en pies cuadrados. El comprador se basó en esa cifra para fijar su oferta. El cierre de escrow está previsto dentro de cuatro días. Su gerente le dice que no diga nada: el comprador tiene su propio informe de inspección, la cifra procedía de un registro público y plantearlo ahora podría hacer fracasar la transacción.",
+    "target_sha256": "ced53ac94dae4be0752c320133bd3458f197b7680268fe441b67814eb2bfad32",
+    "review_scope": "targeted source comparison and terminology correction; not full lesson certification"
+  },
+  {
+    "course_id": "ca-real-estate-practice-45",
+    "source_sha256": "e204c68fff7f84d503f8ac0a18049414f696b33612d61ea0d89dd734b48900cb",
+    "source": "A licensee realizes she transposed two digits when she reported the square footage in the listing, and the buyer relied on it in setting his offer. Escrow closes in four days. Her manager suggests waiting: the buyer has an inspection report, the figure came from a public record, and raising it now may kill the transaction. What should she do?",
+    "before": "Un licenciatario se da cuenta de que transfirió dos dígitos cuando informó de los metros cuadrados en la captación inmobiliaria, y el comprador se basó en ella para establecer su oferta. Escrow cierra en cuatro días. Su gerente sugiere esperar: el comprador tiene un informe de inspección, la cifra proviene de un registro público, y elevarlo ahora puede matar la transacción. ¿Qué debería hacer?",
+    "after": "Una licenciataria descubre que invirtió dos dígitos al indicar la superficie en pies cuadrados en el anuncio, y el comprador se basó en ella para fijar su oferta. El cierre de escrow está previsto dentro de cuatro días. Su gerente propone esperar: el comprador tiene un informe de inspección, la cifra procedía de un registro público y plantearlo ahora podría hacer fracasar la transacción. ¿Qué debe hacer?",
+    "target_sha256": "eef7c63f1d32804fde0d47e55387b840423bb4b05c46b63dfcab6bce63a95aaa",
     "review_scope": "targeted source comparison and terminology correction; not full lesson certification"
   },
   {
@@ -703,11 +793,47 @@
   },
   {
     "course_id": "ca-real-estate-practice-45",
+    "source_sha256": "c41d87cf18cd1e360b6751026fec5d07a92f40ed346e4cfea11d78b2fe767d44",
+    "source": "The photographs and the square footage",
+    "before": "Las fotografías y los metros cuadrados",
+    "after": "Las fotografías y los pies cuadrados",
+    "target_sha256": "f573265155eb9fc571daa32790c1a7ba67f681e7c0d6549fcd6a7e15799a09cb",
+    "review_scope": "targeted source comparison and terminology correction; not full lesson certification"
+  },
+  {
+    "course_id": "ca-real-estate-practice-45",
+    "source_sha256": "f9d1bb1f6feaa1ae6c5e41ff639b1f63d7af0e0ac5067373a0ca941f4fe4f45f",
+    "source": "Verification of what may be advertised, before a square footage or a room count is published — Lesson 06, Section 1.7",
+    "before": "Verificación de lo que se puede anunciar, antes de que se publique un conteo de salas o de metros cuadrados — Lección 06, Sección 1.7",
+    "after": "Verificar qué puede anunciarse antes de publicar una superficie en pies cuadrados o un número de habitaciones — lección 06, sección 1.7",
+    "target_sha256": "cced4154fc2c442cb48dd702ac94a0fcc55a0dad899a8ec9488d45acc52ac23d",
+    "review_scope": "targeted source comparison and terminology correction; not full lesson certification"
+  },
+  {
+    "course_id": "ca-real-estate-practice-45",
+    "source_sha256": "84edbb88523b0db84dfd0b2d22f25abc288d7bd6dcf9f65f15b3dbd49d4c8ff8",
+    "source": "are useful for ownership, sale history, and characteristics, but assessor square footage and the licensee's measurement frequently disagree, and the assessor's parcel record is not a boundary determination.",
+    "before": "son útiles para la propiedad, historial de venta, y características, pero el evaluador de metros cuadrados y la medición del licenciatario con frecuencia no están de acuerdo, y el registro de terrenos del evaluador no es una determinación de límites.",
+    "after": "son útiles para conocer la titularidad, el historial de ventas y las características, pero la superficie del asesor fiscal y la medición del licenciatario suelen diferir. El registro fiscal de la parcela no determina los linderos.",
+    "target_sha256": "fb0e28e196c0c48e897d9734d850e1ae4d077e104d34effe57770aef6fcd6068",
+    "review_scope": "targeted source comparison and terminology correction; not full lesson certification"
+  },
+  {
+    "course_id": "ca-real-estate-practice-45",
     "source_sha256": "696b2ada40dfbf1aad17edc24f7234764a28426e7d066a9802f68bf2f31b3fc5",
     "source": "disclose it, recommend the seller obtain legal advice about it before listing, recommend a survey, document the conversation the day it happens, and do not characterize the boundary yourself.",
     "before": "revelarlo, recomendar al vendedor obtener asesoramiento legal sobre él antes de la captación inmobiliaria, recomendar una encuesta, documentar la conversación el día que sucede, y no caracterizar el límite usted mismo.",
     "after": "revelarlo, recomendar al vendedor obtener asesoramiento legal sobre él antes de la captación inmobiliaria, recomendar una mensura, documentar la conversación el día que sucede, y no caracterizar el límite usted mismo.",
     "target_sha256": "6af1ed0110dd75029fa94ae144fddc400156b2f39c274968f2962b23ab05b5b7",
+    "review_scope": "targeted source comparison and terminology correction; not full lesson certification"
+  },
+  {
+    "course_id": "ca-real-estate-practice-45",
+    "source_sha256": "2c419229876d2e1a96316bb014c84457f8ec7c4fbe16f110b513cbfa9501bf19",
+    "source": "is the primary source and is generally reliable on price and dates, less reliable on square footage, lot size, and condition descriptions written to sell.",
+    "before": "es la fuente principal y es generalmente confiable en el precio y fechas, menos confiable en metros cuadrados, tamaño del lote, y descripciones de condiciones escritas para vender.",
+    "after": "es la fuente principal y es generalmente confiable en el precio y fechas, menos confiable en pies cuadrados, tamaño del lote, y descripciones de condiciones escritas para vender.",
+    "target_sha256": "ab8f0b7fd30e458f380f921c781e2c89f13d23c4c223dec69786574f92aac929",
     "review_scope": "targeted source comparison and terminology correction; not full lesson certification"
   },
   {
@@ -919,6 +1045,15 @@
   },
   {
     "course_id": "ca-real-estate-principles-45",
+    "source_sha256": "23f8a528cc74e122c89407f0742fc715aa5b0423388bd635101a5f86b435a2c9",
+    "source": "8.9 cubic yards.",
+    "before": "8.9 metros cúbicos.",
+    "after": "8.9 yardas cúbicas.",
+    "target_sha256": "fada357682f9695e71c4f74dbd4cb74e13d8ef1d5444acc11ae327e212da3a94",
+    "review_scope": "targeted source comparison and terminology correction; not full lesson certification"
+  },
+  {
+    "course_id": "ca-real-estate-principles-45",
     "source_sha256": "1a5071ab95dad1ebeab02efc712551cf2aea4356004e896f6d3f5285511a638a",
     "source": "; (e) a boundary claim — refer, and recommend a survey; (f) a prediction about a discretionary decision — refer to the jurisdiction, which publishes its process.",
     "before": "; e) una reclamación de límites —remítase y recomiende una encuesta; f) una predicción sobre una decisión discrecional— se refiere a la jurisdicción, que publica su proceso.",
@@ -978,6 +1113,15 @@
     "before": "Un licenciatario que encuentra \"Gobierno Lote 3\" en una descripción está mirando un terreno real con una superficie real que debe ser leída de la encuesta, no calculada a partir de fracciones.",
     "after": "Un licenciatario que encuentra \"Gobierno Lote 3\" en una descripción está mirando un terreno real con una superficie real que debe ser leída de la mensura, no calculada a partir de fracciones.",
     "target_sha256": "1a67149b68fc2caf9274756b2f9919ca7753a5fc56839b046c8f22ce3a43fc65",
+    "review_scope": "targeted source comparison and terminology correction; not full lesson certification"
+  },
+  {
+    "course_id": "ca-real-estate-principles-45",
+    "source_sha256": "8cf3118bae3e837442f171e760a9c401a20fc31f86212a4bd9f4b963788f491e",
+    "source": "A licensee who repeats an unverified square footage figure, misses a contingency deadline, fails to deliver a disclosure, or does not perform the visual inspection has breached this duty without lying to anyone.",
+    "before": "Un licenciatario que repite una cifra de metros cuadrados no verificada, no cumple un plazo de contingencia, no entrega una revelación o no realiza la inspección visual ha incumplido este deber sin mentir a nadie.",
+    "after": "Un licenciatario que repite una cifra de pies cuadrados no verificada, no cumple un plazo de contingencia, no entrega una revelación o no realiza la inspección visual ha incumplido este deber sin mentir a nadie.",
+    "target_sha256": "e610236e4e7e4050d791768ce831669aef678f9eeb3cfa6f9f469cfc6785e409",
     "review_scope": "targeted source comparison and terminology correction; not full lesson certification"
   },
   {
@@ -1171,11 +1315,29 @@
   },
   {
     "course_id": "ca-real-estate-principles-45",
+    "source_sha256": "9cdb87d5aa0ee96ef251b20bd0611630204ca134adde00ce1443bec915ad8c4d",
+    "source": "Disclose, recommend permit research and a legalization inquiry, keep it out of advertised square footage without disclosure, and never characterize the risk.",
+    "before": "Divulgar, recomendar la investigación de permisos y una investigación de legalización, mantenerlo fuera de los metros cuadrados anunciados sin divulgación, y nunca caracterizar el riesgo.",
+    "after": "Divulgar, recomendar la investigación de permisos y una investigación de legalización, mantenerlo fuera de los pies cuadrados anunciados sin divulgación, y nunca caracterizar el riesgo.",
+    "target_sha256": "12995b9d2940f8fc112e9355590b7be46059b353df1c250f43975f938243b06d",
+    "review_scope": "targeted source comparison and terminology correction; not full lesson certification"
+  },
+  {
+    "course_id": "ca-real-estate-principles-45",
     "source_sha256": "1a197b25c7f9aa8c36f99643f02a08f21741b3ab950dfd8123b8baf69a335f1f",
     "source": "Distinguish record boundaries from occupied boundaries, and identify what a survey does that a title policy does not.",
     "before": "Distinguir los límites de registro de los límites ocupados, e identificar lo que una encuesta hace que una política de título no lo hace.",
     "after": "Distinguir los linderos registrales de los límites de ocupación e identificar qué determina una mensura que no determina una póliza de seguro de título.",
     "target_sha256": "557327b1823139b7dbac6fc25c318394271d3a5ef0e02b3daefcba373f199c96",
+    "review_scope": "targeted source comparison and terminology correction; not full lesson certification"
+  },
+  {
+    "course_id": "ca-real-estate-principles-45",
+    "source_sha256": "6d202089df4776850dd4d417241bfe2b2bbe063d06518ec9045574a685303d8c",
+    "source": "Do not include unpermitted area in advertised square footage",
+    "before": "No incluir el área no autorizada en los metros cuadrados anunciados",
+    "after": "No incluir el área no autorizada en los pies cuadrados anunciados",
+    "target_sha256": "3d560db77f9d9a9b64b70de7f6cff3df75afcf46206f6d3f6d88d6c69acf6ec1",
     "review_scope": "targeted source comparison and terminology correction; not full lesson certification"
   },
   {
@@ -1306,6 +1468,15 @@
   },
   {
     "course_id": "ca-real-estate-principles-45",
+    "source_sha256": "08c6b4ac056a2d1a0d5d332d2a4d3358d89157a941bfc793b8aeffcf2dca12d3",
+    "source": "Section 6.4 covers unit errors and Section 6.5 covers the square footage problem. This section connects the arithmetic to the consequence, because a principles course can make measurement feel like an exam topic when it is a liability topic.",
+    "before": "La sección 6.4 cubre los errores de unidad y la sección 6.5 cubre el problema de los metros cuadrados. Esta sección conecta la aritmética a la consecuencia, porque un curso de principios puede hacer que la medición se sienta como un tema de examen cuando es un tema de responsabilidad.",
+    "after": "La sección 6.4 cubre los errores de unidad y la sección 6.5 cubre el problema de los pies cuadrados. Esta sección conecta la aritmética a la consecuencia, porque un curso de principios puede hacer que la medición se sienta como un tema de examen cuando es un tema de responsabilidad.",
+    "target_sha256": "fe19b093a1c4b84aa85539fb5efdfb8d5a94134e982e004b1792ad54ff59e6ec",
+    "review_scope": "targeted source comparison and terminology correction; not full lesson certification"
+  },
+  {
+    "course_id": "ca-real-estate-principles-45",
     "source_sha256": "74e49f7bc3fc6deff96b7adfeaeddc3d20aa48d62f9162415fcc92b9fbe520db",
     "source": "Several rows breach two duties at once",
     "before": "Varias filas infringen dos derechos a la vez",
@@ -1414,11 +1585,29 @@
   },
   {
     "course_id": "ca-real-estate-principles-45",
+    "source_sha256": "6cfbab9a30a1cf04362bbd454f925020bedcb947d872b9d80c2cf53d1ccce584",
+    "source": "The square footage is wrong.",
+    "before": "Los metros cuadrados están equivocados.",
+    "after": "Los pies cuadrados están equivocados.",
+    "target_sha256": "7a11b1f71ce172610e3a51ab83a6a5dd3f2f100405c971ce0cb68ad26a5b4fc2",
+    "review_scope": "targeted source comparison and terminology correction; not full lesson certification"
+  },
+  {
+    "course_id": "ca-real-estate-principles-45",
     "source_sha256": "c366cf2b874762f4f9b3165a97e9b528642c200035954bdd1bd5dfbce8f6b400",
     "source": "The standard title policy's exception for matters a survey would disclose — meaning the policy does",
     "before": "La excepción de la política de títulos estándar para asuntos que una encuesta revelaría — significa que la política hace",
     "after": "La excepción de la póliza estándar de seguro de título para cuestiones que revelaría una mensura — lo que significa que la póliza",
     "target_sha256": "de5da1f41f1a0a4eba3f61e5afc0498a57eff90d6a98d6dbb66601bd0e00ccea",
+    "review_scope": "targeted source comparison and terminology correction; not full lesson certification"
+  },
+  {
+    "course_id": "ca-real-estate-principles-45",
+    "source_sha256": "c7099b17eb8fb2d4f69434771d00c91fdce1e36e822ae22416b5bd72fad822bf",
+    "source": "They are genuinely useful within their limits: identifying the parcel for research, locating it on a parcel map, finding the assessed value and tax history, and finding characteristics such as year built and recorded square footage.",
+    "before": "Son realmente útiles dentro de sus límites: identificar el terreno para la investigación, ubicarlo en un mapa de paquetería, encontrar el valor estimado y la historia fiscal, y encontrar características como el año construido y grabado en metros cuadrados.",
+    "after": "Son útiles dentro de sus límites: identificar la parcela para investigarla, ubicarla en un plano parcelario, consultar su valor fiscal e historial tributario y encontrar características como el año de construcción y la superficie registrada en pies cuadrados.",
+    "target_sha256": "ad832c30e110f7989eabb4deabaed2e4ed91d9f73dad79fd8228a985e20939e9",
     "review_scope": "targeted source comparison and terminology correction; not full lesson certification"
   },
   {
@@ -1473,6 +1662,15 @@
     "before": "revelar lo que se observa; recomendar una encuesta cuando los hechos lo requieran; recomendar un abogado en caso de que exista una reclamación; documentar; y asegurarse de que ocurra antes de que expire la contingencia.",
     "after": "revelar lo que se observa; recomendar una mensura cuando los hechos lo requieran; recomendar un abogado en caso de que exista una reclamación; documentar; y asegurarse de que ocurra antes de que expire la contingencia.",
     "target_sha256": "186d7395f5e1abc83a64b57c67215740e62222ffcf2fa981293609d11c187256",
+    "review_scope": "targeted source comparison and terminology correction; not full lesson certification"
+  },
+  {
+    "course_id": "ca-real-estate-principles-45",
+    "source_sha256": "5755e06f8e88ce7d9b558ff145caf200f05332629e0b820147ffc3e2756a345b",
+    "source": "each of those raises a permit question that is larger than the square footage question.",
+    "before": "cada uno de ellos plantea una pregunta de permiso que es más grande que la cuestión de los metros cuadrados.",
+    "after": "cada uno de ellos plantea una pregunta de permiso que es más grande que la cuestión de los pies cuadrados.",
+    "target_sha256": "390a4d7ceebc325303cd48d70cbdfbc5e5d60e658b36bef04abcf8691dd53c80",
     "review_scope": "targeted source comparison and terminology correction; not full lesson certification"
   },
   {
@@ -1635,6 +1833,15 @@
     "before": "la excepción de encuesta de la póliza estándar significa que el asegurador de títulos se ha negado expresamente a cubrirla.",
     "after": "la excepción de mensura de la póliza estándar significa que el asegurador de títulos se ha negado expresamente a cubrirla.",
     "target_sha256": "da51315068b3ac52fbcb9fc23e7325f82f0c2d2fbbed8fbed67d378b8525473c",
+    "review_scope": "targeted source comparison and terminology correction; not full lesson certification"
+  },
+  {
+    "course_id": "ca-real-estate-principles-45",
+    "source_sha256": "d307a7618adb9e6656bbdef26332157c52b87c80672e1343e0c9253691a61744",
+    "source": "— and square footage carries its source most of all.",
+    "before": "— y los metros cuadrados llevan su fuente sobre todo.",
+    "after": "— y la superficie en pies cuadrados exige especialmente identificar su fuente.",
+    "target_sha256": "5323b86db73af68ed539580ad6d9134e039f85c28ca671a8d53943e93d6e68a5",
     "review_scope": "targeted source comparison and terminology correction; not full lesson certification"
   },
   {
@@ -1837,6 +2044,15 @@
   },
   {
     "course_id": "co-practical-applications-32",
+    "source_sha256": "cf5cb0951670baaff6f9e86911c8a3e3ce37d9cd315b0594d6d38ec95dd44d4a",
+    "source": "And the square footage rule a residential broker meets on every listing.",
+    "before": "Y la regla de los metros cuadrados es que un corredor residencial se reúne en cada captación inmobiliaria.",
+    "after": "Y la regla sobre superficie en pies cuadrados que encuentra el bróker residencial en cada encargo de venta.",
+    "target_sha256": "f5096583493e59d11b3e8b71d8273cde8cd0a579b0fb84d10128bc463288b37c",
+    "review_scope": "targeted source comparison and terminology correction; not full lesson certification"
+  },
+  {
+    "course_id": "co-practical-applications-32",
     "source_sha256": "5ea2fc6d9172cbb842c818e1c84a6a0ca67358e3ff5e3d4a340e1c9c1793d99d",
     "source": "It is the Commission's own statement of why competency is a rule and not an aspiration, and it is why these four are competency modules rather than surveys.",
     "before": "Es la propia declaración de la Comisión de por qué la competencia es una norma y no una aspiración, y es la razón por la que estos cuatro son módulos de competencia en lugar de encuestas.",
@@ -1896,6 +2112,42 @@
     "before": "Tres oportunidades llegan la misma semana: un dueño de restaurante quiere que vendas el negocio, incluyendo el local arrendado; un comprador residencial pregunta si los minerales debajo de la casa que está comprando vienen con él; y un ranchero te pide que enumeres 340 hectáreas de riego con un pozo, una zanja y un plan de aumento.",
     "after": "La misma semana surgen tres oportunidades: el dueño de un restaurante quiere que venda el negocio, incluidos sus derechos sobre el local arrendado; una compradora de vivienda pregunta si la compra incluye los minerales del subsuelo; y un ranchero le pide poner en venta 340 acres de regadío con un pozo, una participación en una acequia y un plan de reposición de agua.",
     "target_sha256": "1a1772c39daf3d83f02ad9dd10177e6775814e93501d6920dcaf0b2818afa9d1",
+    "review_scope": "targeted source comparison and terminology correction; not full lesson certification"
+  },
+  {
+    "course_id": "co-practical-applications-32",
+    "source_sha256": "49481460c0daf0130c638e51048c9427206e8509328638f1b373e349e9baa306",
+    "source": "What does Rule 6.11 require when a broker advertises the square footage of a residential property?",
+    "before": "¿Qué requiere la Regla 6.11 cuando un corredor anuncia los metros cuadrados de una propiedad residencial?",
+    "after": "¿Qué requiere la Regla 6.11 cuando un corredor anuncia los pies cuadrados de una propiedad residencial?",
+    "target_sha256": "2c04a3454294ebdc9aa966e2167611e2c45bb87d3e6c5bd9c8bdb9797efefa88",
+    "review_scope": "targeted source comparison and terminology correction; not full lesson certification"
+  },
+  {
+    "course_id": "co-practical-applications-32",
+    "source_sha256": "d98ab9d76612be4d4c3b8b38a1aa2ec6c6503da50d83ae98921a6206f25411fd",
+    "source": "advertises the square footage",
+    "before": "anuncia los metros cuadrados",
+    "after": "anuncia los pies cuadrados",
+    "target_sha256": "1d795a4bb2137c9b9d954f74802d21911f107d83f381b510bbfac0ba3d76020f",
+    "review_scope": "targeted source comparison and terminology correction; not full lesson certification"
+  },
+  {
+    "course_id": "co-practical-applications-32",
+    "source_sha256": "06f0885560aa640440caa54dbac3de21e216b720b6496712bc0d2b372ed1a758",
+    "source": "square footage",
+    "before": "metros cuadrados",
+    "after": "pies cuadrados",
+    "target_sha256": "076ecc7b69bd27222983e8af49dcb44a3719ed60bad6e2cbc2dd0d30bf11ccc5",
+    "review_scope": "targeted source comparison and terminology correction; not full lesson certification"
+  },
+  {
+    "course_id": "co-practical-applications-32",
+    "source_sha256": "66ddb9d5cca628288ef948f50a0423bb45e29394baa1b149bb1461f240716fbb",
+    "source": "square footage and its SOURCE",
+    "before": "Los metros cuadrados y su fuente",
+    "after": "Los pies cuadrados y su fuente",
+    "target_sha256": "ea2fca9f36f0ca32c7023c738f86def470313f105e607f5e17fef99ed554aca0",
     "review_scope": "targeted source comparison and terminology correction; not full lesson certification"
   },
   {
@@ -2103,6 +2355,15 @@
     "before": "Un agente vendedor debe los siete derechos en el § 13272 y las obligaciones específicas en el § 13273, sobre",
     "after": "Un agente del vendedor tiene las siete obligaciones de § 13272 y las obligaciones específicas de § 13273, sobre una base",
     "target_sha256": "f4d68198a65164bc1a67c7539dc5fa15d83e27c9a2f6aa1b86ff143a32f6458c",
+    "review_scope": "targeted source comparison and terminology correction; not full lesson certification"
+  },
+  {
+    "course_id": "me-sales-agent-v1",
+    "source_sha256": "dd04104e1fd0284f18685a33f93ff28d98d640840b486d9f413844212a0e4c47",
+    "source": "Area adj. at $95/sq ft",
+    "before": "Área adj. a 95 dólares por metro cuadrado",
+    "after": "Ajuste de superficie a $95 por pie cuadrado",
+    "target_sha256": "e5029e1d7406f533e63ca481db40f8c6037cb1169f09858316c0c648ac656e7e",
     "review_scope": "targeted source comparison and terminology correction; not full lesson certification"
   },
   {
@@ -2476,6 +2737,15 @@
   },
   {
     "course_id": "mi-salesperson-prelicensure-40-v1",
+    "source_sha256": "359686b7436885d1b4194a542fa5fc77a9a97c82c2d6b193fb96b133fbcbb4d2",
+    "source": "Restrictive covenants recorded against a subdivision or a parcel limit what owners may do: minimum square footage, setbacks, materials, outbuildings, fences, vehicles, short-term rentals, business use. They are private agreements running with the land, enforced by other owners or by an association — not by the municipality.",
+    "before": "Pactos restrictivos registrados contra una subdivisión o un límite de parcela lo que los propietarios pueden hacer: mínimos metros cuadrados, contratiempos, materiales, dependencias, cercas, vehículos, alquileres a corto plazo, uso de negocios. Se trata de acuerdos privados que funcionan con la tierra, aplicados por otros propietarios o por una asociación, no por el municipio.",
+    "after": "Los pactos restrictivos inscritos sobre una subdivisión o parcela limitan lo que pueden hacer los propietarios: superficie mínima en pies cuadrados, distancias de separación, materiales, construcciones accesorias, cercas, vehículos, alquileres de corta duración y uso comercial. Son acuerdos privados que vinculan al terreno, exigibles por otros propietarios o por una asociación, no por el municipio.",
+    "target_sha256": "1f110ed1465643f4af2acef8eaaf640cb4ce626aded4642a824613aed00bf293",
+    "review_scope": "targeted source comparison and terminology correction; not full lesson certification"
+  },
+  {
+    "course_id": "mi-salesperson-prelicensure-40-v1",
     "source_sha256": "de07d6ef4830221489d8a934971ba4597141284cbe8bf14791afc237de9ea808",
     "source": "Standard exclusions include defects the buyer created or knew about and did not disclose, governmental regulation including zoning, eminent domain, and — unless a survey exception is removed — matters an accurate survey would show. Title insurance is not an inspection, not a survey, and not a guarantee of value.",
     "before": "Las exclusiones estándar incluyen defectos que el comprador creó o conoció y que no reveló, la regulación gubernamental incluyendo la zonificación, dominio eminente, y — a menos que se elimine una excepción de la encuesta — asuntos que una encuesta exacta mostraría. El seguro de títulos no es una inspección, ni una encuesta, ni una garantía de valor.",
@@ -2557,6 +2827,24 @@
   },
   {
     "course_id": "mo-real-estate-practice-24",
+    "source_sha256": "7ff38c1ff04ab73b9848e53e5794a7157a9dbf1c53c61ac3732d3f8c373f22d6",
+    "source": "Area adj. at $58/sq ft",
+    "before": "Área adj. a 58 dólares por metro cuadrado",
+    "after": "Ajuste de superficie a $58 por pie cuadrado",
+    "target_sha256": "55b33659eb4f7ba3f9792cc9df73fae3c1fce7f6590b240917e277e7bb881a40",
+    "review_scope": "targeted source comparison and terminology correction; not full lesson certification"
+  },
+  {
+    "course_id": "mo-real-estate-practice-24",
+    "source_sha256": "3118496da6656195a704da5137d6db2693015b06a4185f18e64f2c36f14d16f8",
+    "source": "Correct every one of them in writing immediately, tell your designated broker, and reissue: state the square footage with its source and offer measurement, say the roof was replaced in 2019, route the school assignment to the district, and disclose the reported 2022 flooding — because you now know it and § 339.730.3 requires disclosure to any customer of adverse material facts actually known or that should have been known.",
+    "before": "Corrija cada uno de ellos por escrito inmediatamente, dígale a su corredor designado, y vuelva a publicar: indique los metros cuadrados con su fuente y medición de la oferta, diga que el techo fue reemplazado en 2019, dirija la asignación de la escuela al distrito, y revele la inundación de 2022 reportada, porque usted ahora lo sabe y § 339.730.3 requiere la revelación a cualquier cliente de hechos materiales adversos realmente conocidos o que deberían haber sido conocidos.",
+    "after": "Corrija inmediatamente cada dato por escrito, informe a su bróker designado y emita de nuevo la información: indique la superficie en pies cuadrados y su fuente, y ofrezca medirla; señale que el techo fue sustituido en 2019; remita al distrito escolar la asignación de escuela; y revele la inundación comunicada de 2022. Ahora la conoce, y § 339.730.3 exige revelar a cualquier persona atendida los hechos relevantes adversos que se conocen o deberían haberse conocido.",
+    "target_sha256": "f6d127e9b9572f16cd351e55f20a634f1e8858552d6872375892776c12b66ce8",
+    "review_scope": "targeted source comparison and terminology correction; not full lesson certification"
+  },
+  {
+    "course_id": "mo-real-estate-practice-24",
     "source_sha256": "dccf5ecb841ce8c5dbeabfbacf6d1de22d0eeb70326e729ccd95675eb3d82470",
     "source": "Correct the square footage and the roof but leave the school and the basement, since neither is your statement.",
     "before": "Corrija los metros cuadrados y el techo, pero salga de la escuela y el sótano, ya que tampoco es su declaración.",
@@ -2575,6 +2863,15 @@
   },
   {
     "course_id": "mo-real-estate-practice-24",
+    "source_sha256": "442c071f97d3b97c4033cb746148fb048bb80a18931552988e541920dd185f9d",
+    "source": "Four separate misrepresentations, three of them by repeating rather than lying. 'New roof' for a 2019 replacement, tax-record square footage asserted as fact, a school assignment that changed, and — once the neighbour told you — flooding that is now actually known. Correcting in writing immediately is the only response; quietly fixing it and hoping converts an error into a concealment.",
+    "before": "Cuatro tergiversaciones separadas, tres de ellas repitiendo en lugar de mentir. 'Techo nuevo' para un reemplazo de 2019, el registro de impuestos de los metros cuadrados afirmó como un hecho, una asignación escolar que cambió, y - una vez que el vecino le dijo - inundaciones que ahora se conoce realmente. Corregir por escrito inmediatamente es la única respuesta; fijarla silenciosamente y esperar convierte un error en un ocultamiento.",
+    "after": "Cuatro tergiversaciones separadas, tres de ellas repitiendo en lugar de mentir. 'Techo nuevo' para un reemplazo de 2019, el registro de impuestos de los pies cuadrados afirmó como un hecho, una asignación escolar que cambió, y - una vez que el vecino le dijo - inundaciones que ahora se conoce realmente. Corregir por escrito inmediatamente es la única respuesta; fijarla silenciosamente y esperar convierte un error en un ocultamiento.",
+    "target_sha256": "601b7122f5b33497044fbd9ab603c39652d35aa0b52d9fc167869a9c4723dee8",
+    "review_scope": "targeted source comparison and terminology correction; not full lesson certification"
+  },
+  {
+    "course_id": "mo-real-estate-practice-24",
     "source_sha256": "3486e8252f51faa4c28b7ade5a99d55e755e4db40ca329ddfe295829a902bb0c",
     "source": "It is a specific list of five things that stay in, plus confidential information. A material fact about the property does not become unmentionable because the licensee is a dual agent — and in fact the adverse material fact duties under §§ 339.730 and 339.740 continue to apply on both sides.",
     "before": "Es una lista específica de cinco cosas que permanecen adentro, más información confidencial. Un hecho material sobre la propiedad no se convierte en unmentionable porque el licenciatario es un agente dual — y de hecho los derechos de hecho material adversos bajo §§ 339.730 y 339.740 siguen aplicándose en ambos lados.",
@@ -2589,6 +2886,15 @@
     "before": "Política de titularidad del prestamista y política del propietario si el comprador está pagando por ella; cuota de liquidación o cierre; honorarios de registro; y una encuesta si se obtiene.",
     "after": "Póliza de seguro de título del prestamista y la del propietario si la paga el comprador; honorarios de cierre; tasas de inscripción; y mensura si se obtiene.",
     "target_sha256": "18d0151cea6ad8e1b68e3fe61efca41d723c24a9c0dd79eb9b4aafe769ee477f",
+    "review_scope": "targeted source comparison and terminology correction; not full lesson certification"
+  },
+  {
+    "course_id": "mo-real-estate-practice-24",
+    "source_sha256": "ec6a6bbd5ee8c4ff968ed189b52a831a848d4b714bf93929a567af4b94c80a2a",
+    "source": "Missouri practice on square footage: what must a licensee do?",
+    "before": "Missouri practica en metros cuadrados: ¿qué debe hacer un licenciatario?",
+    "after": "En la práctica de Missouri, ¿qué debe hacer el licenciatario respecto de la superficie en pies cuadrados?",
+    "target_sha256": "1944765068ec0e5f8e5b4a61dd8a3adb58b6bf885313b87af5c259bc228c8386",
     "review_scope": "targeted source comparison and terminology correction; not full lesson certification"
   },
   {
@@ -2643,6 +2949,15 @@
     "before": "— una lista de mejoras con fechas y costes, una encuesta, una bandeja, la divulgación del vendedor, ventas comparables que el licenciatario considere pertinentes. Suministrar hechos es legítimo. Proveer un objetivo no lo es.",
     "after": "— una lista de mejoras con fechas y costos, una mensura, un plano parcelario, la divulgación del vendedor y ventas comparables que el licenciatario considere relevantes. Aportar hechos es legítimo; indicar un valor objetivo no lo es.",
     "target_sha256": "6fdf54967ac847dc9bf1352486110e43a806f5691ed4f3503b594c9a616047ad",
+    "review_scope": "targeted source comparison and terminology correction; not full lesson certification"
+  },
+  {
+    "course_id": "mo-real-estate-practice-24",
+    "source_sha256": "280936f631ae7a026d12eccdcb8bd1f07a4898c441d10f58a3dd178a54a0380c",
+    "source": "— wrong square footage, wrong bedroom count, a comparable",
+    "before": "— número de metros cuadrados equivocados, número de dormitorios equivocados,",
+    "after": "— superficie incorrecta en pies cuadrados, número incorrecto de dormitorios, un comparable",
+    "target_sha256": "16f930d1a06902110b9c61d1c59b12cc65728d0a3f0f30562d6f56f9f8b4b4c1",
     "review_scope": "targeted source comparison and terminology correction; not full lesson certification"
   },
   {
@@ -2935,6 +3250,15 @@
   },
   {
     "course_id": "nc-broker-prelicensing-75",
+    "source_sha256": "9b118dc2dd36dc1392921fbc4ea5e34813c053bb87d7bc28e44037a079662689",
+    "source": "\"In NC, the square footage of residential living area is calculated on exterior measurements.\"",
+    "before": "\"En NC, los metros cuadrados de la superficie habitable residencial se calculan con medidas exteriores\".",
+    "after": "\"En NC, los pies cuadrados de la superficie habitable residencial se calculan con medidas exteriores\".",
+    "target_sha256": "c692bf12ae243e3d5a72740ca74dfccf6ed0b7df4e10cb0a426e79a758b29d7b",
+    "review_scope": "targeted source comparison and terminology correction; not full lesson certification"
+  },
+  {
+    "course_id": "nc-broker-prelicensing-75",
     "source_sha256": "3ac73c492cda1e00eb50aef53035fc81a1ad0771fadfb245e2739e750e222052",
     "source": "\"Provide a copy of a residential property survey. Ideally the survey will show setbacks for buildings, utility easements, and possibly an encroachment from an adjacent parcel.\"",
     "before": "\"Proporcionar una copia de una encuesta de propiedades residenciales. Lo ideal sería que la encuesta mostrara contratiempos para edificios, servidumbres de servicios públicos y posiblemente una invasión de una parcela adyacente\".",
@@ -2980,6 +3304,15 @@
   },
   {
     "course_id": "nc-broker-prelicensing-75",
+    "source_sha256": "e2a8d09164ddae5a4917b509ef1cbbb969d6a687b72f269635cbfb77c140a7ab",
+    "source": "**Analyse a disclosure problem — stigmatized property, caveat emptor, square footage, streets,",
+    "before": "** Analizar un problema de revelación — propiedad estigmatizada, advertencia emptor, metros cuadrados, calles,",
+    "after": "**Analizar un problema de divulgación — propiedad estigmatizada, caveat emptor, superficie en pies cuadrados, calles,",
+    "target_sha256": "c625fd5022c5aca50226b1ec7f3980374755b14647d005857b2b4988701d5032",
+    "review_scope": "targeted source comparison and terminology correction; not full lesson certification"
+  },
+  {
+    "course_id": "nc-broker-prelicensing-75",
     "source_sha256": "69b76ad167c4f62f3b6ba6c6ae85cc733b581b68eebdefaf2e15e21a90b824c0",
     "source": "**Duties of the broker to the property owner (principal) and to third persons (tenants and",
     "before": "** Derechos del agente al propietario de la propiedad (principal) y a terceras personas (clientes y",
@@ -3012,6 +3345,24 @@
     "before": "1.5 hectáreas.",
     "after": "1.5 acres.",
     "target_sha256": "6e87000cfa0178343eebbf7f6a41eadaf47be593f9dd48609ba39ab6a464938b",
+    "review_scope": "targeted source comparison and terminology correction; not full lesson certification"
+  },
+  {
+    "course_id": "nc-broker-prelicensing-75",
+    "source_sha256": "dc3061cf92a9f4f05d7b166d3ea8835130ba238160858851286f733101595e3c",
+    "source": "A buyer asks whether a former occupant died in the house, whether the MLS heated living area is accurate, and who maintains the street that the plat labels public. You know about the death, the listing broker copied the square footage from a tax record, and no one verified street acceptance.",
+    "before": "Un comprador pregunta si un ex ocupante murió en la casa, si la zona de estar calefactada del MLS es exacta, y quién mantiene la calle que el plato etiqueta públicamente. Usted sabe sobre la muerte, el corredor del vendedor copió los metros cuadrados de un registro de impuestos, y nadie verificó la aceptación de la calle.",
+    "after": "Un comprador pregunta si murió un antiguo ocupante en la casa, si es exacta la superficie habitable calefaccionada del MLS y quién mantiene la calle que el plano identifica como pública. Usted conoce la muerte, el bróker del vendedor copió la superficie en pies cuadrados de un registro fiscal y nadie verificó si la autoridad aceptó formalmente la calle.",
+    "target_sha256": "9bdccbfc83b937945e5c56470ac072cbc244827fb5580ab58688f38ce2a90b37",
+    "review_scope": "targeted source comparison and terminology correction; not full lesson certification"
+  },
+  {
+    "course_id": "nc-broker-prelicensing-75",
+    "source_sha256": "6d31dc944b3ca86b429b95ba0e33d8d6855df02c92f777a16d478b3816e780f9",
+    "source": "A buyer's agent may generally rely on a listing broker's reported figure unless the error is obvious. A red flag triggers verification and prompt communication. The listing broker must investigate, correct an error, and notify parties who previously received the bad figure. Reporting square footage is not mandatory, but",
+    "before": "Generalmente, el agente de un comprador puede confiar en la cifra reportada por un corredor a menos que el error sea obvio. Una bandera roja activa la verificación y la comunicación rápida. El corredor del vendedor debe investigar, corregir un error, y notificar a las partes que previamente recibieron la cifra mala. No es obligatorio informar de los metros cuadrados, pero",
+    "after": "Generalmente, el agente de un comprador puede confiar en la cifra reportada por un corredor a menos que el error sea obvio. Una bandera roja activa la verificación y la comunicación rápida. El corredor del vendedor debe investigar, corregir un error, y notificar a las partes que previamente recibieron la cifra mala. No es obligatorio informar de los pies cuadrados, pero",
+    "target_sha256": "8c29a24727ff1c50e8e90d38999920cc0e5c483f56dacef860d8948fd7f6a632",
     "review_scope": "targeted source comparison and terminology correction; not full lesson certification"
   },
   {
@@ -3097,6 +3448,15 @@
   },
   {
     "course_id": "nc-broker-prelicensing-75",
+    "source_sha256": "e9e451071c8fccacbe9d7d0dab5e2744db04c3a4b663f1932562b92d35edca99",
+    "source": "Answer only the stigma question because neither square footage nor street maintenance is material.",
+    "before": "Responda sólo a la pregunta del estigma porque ni los metros cuadrados ni el mantenimiento de la calle son materiales.",
+    "after": "Responda sólo a la pregunta del estigma porque ni los pies cuadrados ni el mantenimiento de la calle son materiales.",
+    "target_sha256": "ad3c8d92b203eda4eb908d1be51460b6ebd7a52c95f831ff71a2d08889db5ee9",
+    "review_scope": "targeted source comparison and terminology correction; not full lesson certification"
+  },
+  {
+    "course_id": "nc-broker-prelicensing-75",
     "source_sha256": "afc6f5e1f92463cdca26b2dad15329fbc5c6fee2a368b371059903f20ed10f64",
     "source": "Appraisal. Property survey.",
     "before": "Evaluación. Encuesta de propiedades.",
@@ -3124,6 +3484,15 @@
   },
   {
     "course_id": "nc-broker-prelicensing-75",
+    "source_sha256": "f287361137d9d66f2b1df43b66df1a6dc20a64b18c264fe74b364aca89a9d4c4",
+    "source": "Brokers are expected to possess the expertise necessary to accurately measure, calculate, and   report the square footage of most buildings.",
+    "before": "Se espera que los corredores posean la experiencia necesaria para medir, calcular e informar con precisión los metros cuadrados de la mayoría de los edificios.",
+    "after": "Se espera que los corredores posean la experiencia necesaria para medir, calcular e informar con precisión los pies cuadrados de la mayoría de los edificios.",
+    "target_sha256": "e63cead6a3c14533fb7bcea258da47363186cbd3eeed479b203ffdf6487a900a",
+    "review_scope": "targeted source comparison and terminology correction; not full lesson certification"
+  },
+  {
+    "course_id": "nc-broker-prelicensing-75",
     "source_sha256": "030b75ab30363934e26746a75dd8d839555db70b39f5e0038a22088a939846f8",
     "source": "Compare and contrast duties owed to clients versus third parties",
     "before": "Derechos de comparación y contraste adeudados a clientes frente a terceros",
@@ -3147,6 +3516,24 @@
     "before": "Compárese y contraste de los derechos adeudados a los clientes frente a terceros.",
     "after": "Comparar las obligaciones hacia los clientes con las obligaciones hacia terceros, señalando sus semejanzas y diferencias.",
     "target_sha256": "c700a3f91fdc076caeb7372be43004e03ad67ad3d9219ef4e09cdc1b92096f6f",
+    "review_scope": "targeted source comparison and terminology correction; not full lesson certification"
+  },
+  {
+    "course_id": "nc-broker-prelicensing-75",
+    "source_sha256": "fae0cbf320cbc629f35eff4acf3f9a98a68a27a733c4b0c550393783466bf75a",
+    "source": "Decline the stigma question, confirm the square footage because tax records are official, and call the street public from the plat.",
+    "before": "Disminuir la pregunta del estigma, confirmar los metros cuadrados porque los registros de impuestos son oficiales, y llamar al público de la calle desde la plataforma.",
+    "after": "Rechazar la pregunta sobre el estigma, confirmar la superficie en pies cuadrados porque los registros fiscales son oficiales y declarar pública la calle basándose en el plano.",
+    "target_sha256": "6904ad86cb6a21bc9566f6e26ef13675dc9c8845cc21c4a5d71d418f7c7a66cb",
+    "review_scope": "targeted source comparison and terminology correction; not full lesson certification"
+  },
+  {
+    "course_id": "nc-broker-prelicensing-75",
+    "source_sha256": "a853ad57de419227260bf377e187af4c0c4a2787e4af9c0875cc7090bf4d9bbe",
+    "source": "Determine square footage and acreage.",
+    "before": "Determine los metros cuadrados y la superficie.",
+    "after": "Determinar la superficie en pies cuadrados y en acres.",
+    "target_sha256": "4dbbe80bea30ca6328fe020b9954ca875b07fe1ef2a7e47933eaa9565c1621b8",
     "review_scope": "targeted source comparison and terminology correction; not full lesson certification"
   },
   {
@@ -3264,6 +3651,15 @@
     "before": "Por lo general, se detecta mediante una encuesta actualizada.",
     "after": "Por lo general, se detecta mediante una mensura actualizada.",
     "target_sha256": "5385fecab5e2c71703f0d66c5bb9f5f5e0e0d99a10923d1bb2583d42c7631dc4",
+    "review_scope": "targeted source comparison and terminology correction; not full lesson certification"
+  },
+  {
+    "course_id": "nc-broker-prelicensing-75",
+    "source_sha256": "31827581a92cfce01651d4065dd0ebf861f7002603fd5a2b83e733b5ae0eb0a7",
+    "source": "can reasonably rely on the listing agent's reported square footage   unless there is an error that would be obvious to a prudent broker",
+    "before": "puede razonablemente confiar en el informe del agente del vendedor de metros cuadrados a menos que haya un error que sería obvio para un agente prudente",
+    "after": "puede razonablemente confiar en el informe del agente del vendedor de pies cuadrados a menos que haya un error que sería obvio para un agente prudente",
+    "target_sha256": "54a40b55aae5d41941acac4d8f5dd68e3c15362debb5e9797cf0a0f48c029dbc",
     "review_scope": "targeted source comparison and terminology correction; not full lesson certification"
   },
   {
@@ -3718,6 +4114,15 @@
   },
   {
     "course_id": "ok-basic-prelicense-90",
+    "source_sha256": "d3c161b21a96b052a87d88fc037e408f9e3543042fccc931cd8b0f66f407b814",
+    "source": "— wrong square footage, wrong bedroom count, a comparable that",
+    "before": "— el número de metros cuadrados equivocados, el número de dormitorios equivocados,",
+    "after": "— superficie incorrecta en pies cuadrados, número incorrecto de dormitorios, un comparable que",
+    "target_sha256": "2984913fe0a860825c4c45680a82964f2c422e31fe01faed223609b3b3298614",
+    "review_scope": "targeted source comparison and terminology correction; not full lesson certification"
+  },
+  {
+    "course_id": "ok-basic-prelicense-90",
     "source_sha256": "c4b43701cc9e5e7b3beadc99aa57fd77de49dc33ffd82bfd12793439bd707b2a",
     "source": "— § 858-355.1(D) — and the full duty set applies to both.",
     "before": "— § 858-355.1(D) — y el conjunto completo de derechos se aplica a ambos.",
@@ -3943,6 +4348,15 @@
   },
   {
     "course_id": "tx-law-of-agency-30",
+    "source_sha256": "1acc5bb1418b5ff2244a318892e6f809a6c5cd204404aaadcbe595fb755d9b23",
+    "source": "A buyer represented by a different brokerage, who signed nothing with you and paid you nothing, sues you over your listing's square footage entry. Does § 17.45(4) give her standing?",
+    "before": "Un comprador representado por un corredor diferente, que no firmó nada con usted y no le pagó nada, le demanda por la entrada de su captación inmobiliaria de metros cuadrados. ¿El § 17.45(4) la pone en pie?",
+    "after": "Una compradora representada por otra firma, que no firmó nada con usted ni le pagó, lo demanda por la superficie en pies cuadrados indicada en su anuncio. ¿Le reconoce legitimación para demandar § 17.45(4)?",
+    "target_sha256": "7386510dd27b79eaf58a7bf8045035c9e9ad78687213808f9af936b1425dfe86",
+    "review_scope": "targeted source comparison and terminology correction; not full lesson certification"
+  },
+  {
+    "course_id": "tx-law-of-agency-30",
     "source_sha256": "996b72504df06440a63b9c21970e31cba9821ef36825fffe00eff2fc6bdacfa8",
     "source": "A sales agent's independent contractor status for federal tax or unemployment compensation purposes does not reduce the broker's supervision duty by one line, and does not reduce the broker's responsibility for the agent's authorized acts.",
     "before": "El estatus de contratista independiente de un agente de ventas para fines de impuestos federales o compensación por desempleo no reduce el deber de supervisión del agente en una sola línea, y no reduce la responsabilidad del agente por los actos autorizados del agente.",
@@ -3970,6 +4384,15 @@
   },
   {
     "course_id": "tx-law-of-agency-30",
+    "source_sha256": "68674fc6b4b60a9e5dd4832605436467599932fc1c181d23a25942126d3b80d5",
+    "source": "Correct the record in writing, and correct it toward everyone who relied on it. Rule 535.156 imposes an affirmative duty to keep the principal informed of significant information applicable to the transaction and a duty to convey accurate information to members of the public with whom you deal. If you quoted the wrong square footage in an advertisement, the fix is a corrected writing to the people who saw it, not a quiet edit.",
+    "before": "Corrija el registro por escrito, y corrijalo hacia todos los que confiaron en él. La Regla 535.156 impone el deber afirmativo de mantener al principal informado de la información significativa aplicable a la transacción y el deber de transmitir información precisa a los miembros del público con los que usted trata. Si usted citó los metros cuadrados equivocados en un anuncio, la solución es una escritura corregida para la gente que lo vio, no una edición silenciosa.",
+    "after": "Corrija la información por escrito y comunique la corrección a todas las personas que se basaron en ella. La regla 535.156 impone la obligación de mantener informado al representado de los datos relevantes para la transacción y de transmitir información exacta a los miembros del público con quienes trate. Si anunció una superficie incorrecta en pies cuadrados, debe enviar una corrección escrita a quienes la vieron, no editarla silenciosamente.",
+    "target_sha256": "4ca5e2e5cde9b040c58af9a40bed232b8006d325c5516cb3cd74db042b5f580c",
+    "review_scope": "targeted source comparison and terminology correction; not full lesson certification"
+  },
+  {
+    "course_id": "tx-law-of-agency-30",
     "source_sha256": "84ae8b3862797f1eb1ec6a4a5aea20251a90e5feac14885c4a5212326da5003e",
     "source": "Duties imposed by",
     "before": "Derechos impuestos por",
@@ -3993,6 +4416,15 @@
     "before": "Para fines fiscales federales la disposición que rige es 26 U.S.C. § 3508, \"Tratamiento de agentes inmobiliarios y vendedores directos\". La subsección (a) establece la regla general: \"A los efectos de este título, en el caso de servicios realizados como un agente inmobiliario calificado o como un vendedor directo-\" entonces \"(1) la persona que realiza tales servicios no será tratada como un empleado, y (2) la persona para quien se realizan tales servicios no será tratada como un empleador.\" obligaciones federales de retención y correspondencia de impuestos sobre el empleo. Y sus palabras iniciales son un límite: \"A los efectos de este título\" limita la sección al Título 26, por lo que § 3508 decide el tratamiento fiscal federal y nada más — no el deber de supervisión de su corredor, no su estatus bajo el Código Laboral capítulo 21, ni la responsabilidad de nadie a nadie.",
     "after": "A efectos fiscales federales rige 26 U.S.C. § 3508, «Tratamiento de agentes inmobiliarios y vendedores directos». El apartado (a) establece la regla general: «A los efectos de este título, cuando se presten servicios como agente inmobiliario cualificado o vendedor directo», «(1) la persona que presta dichos servicios no será considerada empleada y (2) la persona para quien se prestan no será considerada empleadora». La regla opera en ambos sentidos: elimina la condición de empleadora de la firma y, con ella, las obligaciones federales de retener impuestos sobre el empleo y aportar la parte correspondiente del empleador. Sus palabras iniciales delimitan su alcance: «A los efectos de este título» limita la disposición al título 26. Por tanto, § 3508 determina únicamente el tratamiento fiscal federal, no la obligación de supervisión del bróker, la condición de la persona conforme al capítulo 21 del Código Laboral ni la responsabilidad de una persona frente a otra.",
     "target_sha256": "556e42c1ca85296743ec0a2da81d6fdab4c71d9f7be9606056c1bc156edb81ca",
+    "review_scope": "targeted source comparison and terminology correction; not full lesson certification"
+  },
+  {
+    "course_id": "tx-law-of-agency-30",
+    "source_sha256": "57fce2cc2814bf6d7d370084b7eee2aec0a7ea166a376bc3ba0b83b6ab57e7aa",
+    "source": "Hosting your own brokerage's open house, you confirm the square footage and the HOA dues to an unrepresented visitor, then tell him the sellers “need to be done by the end of the month,” suggest he offer $318,000 because “they'll take it,” and help him fill in an option fee and a closing date. Which of those acts stayed inside what the law permits?",
+    "before": "Al acoger la casa abierta de su propio corredor, usted confirma los metros cuadrados y las cuotas de HOA a un visitante no representado, luego dígale que los vendedores “deben hacerse antes de fin de mes”, sugiere que ofrece $318,000 porque “lo tomarán”, y lo ayudan a llenar una tarifa de opción y una fecha de cierre. ¿Cuál de esos actos permaneció dentro de lo que la ley permite?",
+    "after": "Durante una jornada de puertas abiertas de su propia firma, confirma la superficie en pies cuadrados y las cuotas de HOA a un visitante no representado. Después le dice que los vendedores «necesitan cerrar antes de fin de mes», le propone ofrecer $318,000 porque «lo aceptarán» y lo ayuda a completar la contraprestación de la opción y una fecha de cierre. ¿Cuáles de esos actos están dentro de lo que permite la ley?",
+    "target_sha256": "ce7d452ad7ddc1e5c70243b6dc7d8a416b067192c06b24e2c895d1eb841739fc",
     "review_scope": "targeted source comparison and terminology correction; not full lesson certification"
   },
   {
@@ -4060,6 +4492,15 @@
   },
   {
     "course_id": "tx-law-of-agency-30",
+    "source_sha256": "64478f5234d175ed9f1ac0e1aaa398325d5f223f35dca71ef1c0cddfc149e2e9",
+    "source": "Only the square footage and the HOA dues. Section 1101.562(c) permits a broker to confirm information regarding size, price and terms; the motivation, the offer strategy and the help drafting are outside (a)(3) and (a)(4), and they build the record § 1101.652(b)(7) is made of.",
+    "before": "Sólo los metros cuadrados y las cuotas de HOA. La sección 1101.562(c) permite a un bróker confirmar información sobre el tamaño, el precio y los términos; la motivación, la estrategia de oferta y la redacción de la ayuda están fuera (a) (3) y (a) (4), y construyen el registro de § 1101.652(b)(7).",
+    "after": "Solo confirmar la superficie en pies cuadrados y las cuotas de HOA. El artículo 1101.562(c) permite confirmar información sobre tamaño, precio y condiciones; revelar la motivación, proponer una estrategia de oferta y ayudar a redactar quedan fuera de (a)(3) y (a)(4), y generan los hechos contemplados por § 1101.652(b)(7).",
+    "target_sha256": "a28de6cacacbe0e94f7805d7d7f2a171ead3b55dcd76dac403ac4ff1f02918b9",
+    "review_scope": "targeted source comparison and terminology correction; not full lesson certification"
+  },
+  {
+    "course_id": "tx-law-of-agency-30",
     "source_sha256": "57439c0797a581ac341bc7d89404b1b6ec9908f5f1e443ce042388412162aab1",
     "source": "Section 21.002(8) defines the term to include \"(A) a person who is engaged in an industry affecting commerce and who has 15 or more employees for each working day in each of 20 or more calendar weeks in the current or preceding calendar year\" and \"(B) an agent of a person described by Paragraph (A).\" Most Texas brokerages never reach that threshold in",
     "before": "La sección 21.002(8) define el término para incluir \"(A) a una persona que se dedica a una industria que afecta al comercio y que tiene 15 o más empleados por cada día laborable en cada una de las 20 o más semanas naturales en el año civil actual o anterior\" y \"(B) a un agente de una persona descrita en el párrafo (A)\".",
@@ -4083,6 +4524,15 @@
     "before": "Bajo § 1101.652(b)(22), ¿qué puede hacer Priya con respecto a Sofía? Citar la subdivisión y",
     "after": "Conforme a § 1101.652(b)(22), ¿qué no puede hacer Priya respecto de Sofia? Cite el apartado y",
     "target_sha256": "42ebe74f3ee00e6ee336de2e61dcdcc0ec25927a85d1f67fcbe3cc442cf44453",
+    "review_scope": "targeted source comparison and terminology correction; not full lesson certification"
+  },
+  {
+    "course_id": "tx-law-of-agency-30",
+    "source_sha256": "1693059db8639654e5413feab14109b347572a83eb521a336c2346bd5a4ebe5a",
+    "source": "You are a sales agent sponsored by an Austin broker. You hold the listing on a condominium unit on Guadalupe Street at $329,000. On Sunday you host an open house. A visitor, Mr. Whitfield, tells you he is not working with an agent. Over forty minutes you confirm the square footage and the HOA dues, tell him the sellers have already bought in Cedar Park and \"need to be done by the end of the month,\" suggest he offer $318,000 because \"they'll take it,\" and help him fill in an option fee and a closing date on a contract form. He signs nothing with you. He submits the offer; the sellers accept at $321,500.",
+    "before": "Usted es un agente de ventas patrocinado por un agente de Austin. Usted mantiene la captación inmobiliaria en una unidad de condominio en la calle Guadalupe en $ 329,000. El domingo tienes una casa abierta. Un visitante, Sr. Whitfield, le dice que no está trabajando con un agente. Más de cuarenta minutos se confirman los metros cuadrados y las cuotas de HOA, le dicen que los vendedores ya han comprado en Cedar Park y \"necesitan que se haga a finales de mes\", sugieren que ofrece $ 318,000 porque \"lo tomarán\", y le ayudan a llenar una tarifa de opción y una fecha de cierre en un formulario de contrato. No firma nada contigo. Presenta la oferta; los vendedores aceptan un total de 321,500 dólares.",
+    "after": "Usted es agente de ventas patrocinado por un bróker de Austin y representa la venta de un condominio en Guadalupe Street por $329,000. El domingo organiza una jornada de puertas abiertas. Un visitante, el señor Whitfield, dice que no trabaja con un agente. Durante cuarenta minutos usted confirma la superficie en pies cuadrados y las cuotas de HOA, le dice que los vendedores ya compraron en Cedar Park y «necesitan cerrar antes de fin de mes», propone que ofrezca $318,000 porque «lo aceptarán» y lo ayuda a completar la contraprestación de la opción y una fecha de cierre en un formulario contractual. No firma nada con usted. Presenta la oferta y los vendedores aceptan $321,500.",
+    "target_sha256": "2f162afaab45d1c657ab9c63d89e2878d808d677a331241bb7823f533b93c803",
     "review_scope": "targeted source comparison and terminology correction; not full lesson certification"
   },
   {
@@ -4353,6 +4803,15 @@
     "before": "Las contingencias también son distintas de una opción de terminación general. Una opción puede permitir la rescisión dentro de su plazo declarado sin una razón de hecho especificada si se han cumplido los requisitos contractuales. Una provisión de financiación, título, encuesta o venta de otra propiedad puede ser más limitada, vinculada a eventos y avisos particulares. Un informe de inspección no prorroga automáticamente un período de opción. Una negociación de reparación pendiente no necesariamente la suspende. Una parte debe tomar decisiones antes de que expire la protección aplicable.",
     "after": "Las contingencias también son distintas de una opción de terminación general. Una opción puede permitir la rescisión dentro de su plazo declarado sin una razón de hecho especificada si se han cumplido los requisitos contractuales. Una provisión de financiación, título, mensura o venta de otra propiedad puede ser más limitada, vinculada a eventos y avisos particulares. Un informe de inspección no prorroga automáticamente un período de opción. Una negociación de reparación pendiente no necesariamente la suspende. Una parte debe tomar decisiones antes de que expire la protección aplicable.",
     "target_sha256": "3dabf8652559bfe9d6e233d1db7f3a9e6bd503bf5dc78fec6be5c92bf4c75316",
+    "review_scope": "targeted source comparison and terminology correction; not full lesson certification"
+  },
+  {
+    "course_id": "tx-law-of-contracts-30",
+    "source_sha256": "68674fc6b4b60a9e5dd4832605436467599932fc1c181d23a25942126d3b80d5",
+    "source": "Correct the record in writing, and correct it toward everyone who relied on it. Rule 535.156 imposes an affirmative duty to keep the principal informed of significant information applicable to the transaction and a duty to convey accurate information to members of the public with whom you deal. If you quoted the wrong square footage in an advertisement, the fix is a corrected writing to the people who saw it, not a quiet edit.",
+    "before": "Corrija el registro por escrito, y corrijalo hacia todos los que confiaron en él. La Regla 535.156 impone el deber afirmativo de mantener al principal informado de la información significativa aplicable a la transacción y el deber de transmitir información precisa a los miembros del público con los que usted trata. Si usted citó los metros cuadrados equivocados en un anuncio, la solución es una escritura corregida para la gente que lo vio, no una edición silenciosa.",
+    "after": "Corrija la información por escrito y comunique la corrección a todas las personas que se basaron en ella. La regla 535.156 impone la obligación de mantener informado al representado de los datos relevantes para la transacción y de transmitir información exacta a los miembros del público con quienes trate. Si anunció una superficie incorrecta en pies cuadrados, debe enviar una corrección escrita a quienes la vieron, no editarla silenciosamente.",
+    "target_sha256": "4ca5e2e5cde9b040c58af9a40bed232b8006d325c5516cb3cd74db042b5f580c",
     "review_scope": "targeted source comparison and terminology correction; not full lesson certification"
   },
   {
@@ -5500,6 +5959,15 @@
   },
   {
     "course_id": "tx-principles-real-estate-ii-30",
+    "source_sha256": "866822c207895ff192b6c240bca4640dbe18966296c7065908d4214cabde4643",
+    "source": ": square footage, finishes, schools by name and distance, and no adjectives about who would fit in.",
+    "before": ": metros cuadrados, acabados, escuelas por nombre y distancia, y sin adjetivos sobre quién encajaría.",
+    "after": ": pies cuadrados, acabados, escuelas por nombre y distancia, y sin adjetivos sobre quién encajaría.",
+    "target_sha256": "96012c7402c5d6eb7dd0b8bd1815991400a710072a41462f8390103072b729d9",
+    "review_scope": "targeted source comparison and terminology correction; not full lesson certification"
+  },
+  {
+    "course_id": "tx-principles-real-estate-ii-30",
     "source_sha256": "427a22a51f0166928df79296d9954a1dcae3a8601c825e0be53f72c052c3627d",
     "source": "After completing this module you will be able to: distinguish depository from non-depository sources of mortgage money and identify which party originates, funds, and services a loan; explain why a secondary mortgage market exists and describe the standardizing function the statutes themselves acknowledge; identify the disclosures a Texas home loan applicant must receive at application and state what the Equal Credit Opportunity Act forbids a creditor to consider; compute a fully amortizing monthly payment and the first months of its amortization schedule, and explain how negative amortization arises; distinguish the structural difference between a conventional loan, an FHA-insured loan, and a VA-guaranteed loan without misstating program figures; state what Texas Finance Code chapter 343 requires and prohibits for home loans and high-cost home loans; state the debts for which the Texas Constitution, article XVI, section 50 permits a homestead to be subjected to forced sale, and state the conditions section 50(a)(6) imposes on a Texas home equity loan; identify the coverage tests and the prohibited terms that 12 C.F.R. § 1026.32 applies to a federal high-cost mortgage and explain how the federal and Texas high-cost regimes fit together; explain in economic terms how central bank policy and government-sponsored enterprise activity influence mortgage rates and credit availability; identify the notice, disclosure, recording, and equity-protection duties Texas Property Code chapter 5, subchapter D imposes on a seller who finances by executory contract; and apply 12 U.S.C. § 2607 to a proposed referral-fee arrangement involving a Texas license holder.",
     "before": "Después de completar este módulo usted será capaz de: distinguir el depositario de fuentes no depositarias de dinero hipotecario e identificar qué parte origina, fondos y servicios un préstamo; explicar por qué existe un mercado hipotecario secundario y describir la función de estandarización que los propios estatutos reconocen; identificar las revelaciones que un solicitante de préstamo hipotecario de Texas debe recibir en la solicitud y declarar lo que la Ley de Igualdad de Oportunidades de Crédito prohíbe a un acreedor considerar; calcular un pago mensual plenamente amortizante y los primeros meses de su Programa de amortización, y explicar cómo surge la amortización negativa; distinguir la diferencia estructural entre un préstamo convencional, un préstamo asegurado por la FHA y un préstamo garantizado por el VA sin errores en las cifras del programa; indicar qué capítulo del Código Financiero de Texas 343 requiere y prohíbe préstamos hipotecarios y préstamos hipotecarios de alto costo; declara las deudas para las cuales la Constitución de Texas, artículo XVI, sección 50 permite que una casa sea sometida a venta forzada, y establece las condiciones de la sección 50a)6) impone a un préstamo de vivienda de Texas; identificar las pruebas de cobertura y los términos prohibidos que 12 C.F.R. § 1026.32 aplica a una hipoteca federal de alto costo y explica cómo los regímenes federal y de alto costo de Texas encajan; explica en términos económicos cómo la política del banco central y la actividad empresarial patrocinada por el gobierno influyen en las tasas de hipoteca y la disponibilidad de crédito; identifica el aviso, divulgación, registro y derechos de protección de la propiedad Texas Property Code capítulo 5, el subcapítulo D impone a un vendedor que financia mediante contrato pendiente de cumplimiento; y aplicar 12 U.S.C. § 2607 a un acuerdo propuesto de remisión-tasa que involucra a un titular de licencia de Texas.",
@@ -5730,6 +6198,15 @@
     "before": "a más tardar el séptimo día después de la fecha de facturación de cada inquilino",
     "after": "a más tardar el séptimo día después de cada fecha de cambio de arrendatario",
     "target_sha256": "01b830da1f2d7b04bb0be2da12ee2287e6ab8ae0b7e7fac09e36731b472ae263",
+    "review_scope": "targeted source comparison and terminology correction; not full lesson certification"
+  },
+  {
+    "course_id": "tx-principles-real-estate-ii-30",
+    "source_sha256": "fb1ae2acc387475bddb6614b2e19d950819ce56d790bfd92b34c2f1c20ad8425",
+    "source": "— school district and campus accountability reports, published crime statistics from the relevant law enforcement agency, census data, municipal and appraisal district records, HOA documents, and the property's own disclosures. Then show every property meeting their stated objective criteria, in every area those criteria cover, and let them draw the conclusions. A useful habit, again practice and not law, is to write down the client's objective criteria — price, bedrooms, square footage, commute, school district, lot size — at intake and run every showing decision back through that written list. It keeps your service consistent and leaves a record that it was.",
+    "before": "— informes de rendición de cuentas en los distritos escolares y en las universidades, estadísticas publicadas sobre delitos procedentes de los organismos pertinentes encargados de hacer cumplir la ley, datos censales, registros municipales y de distrito de evaluación, documentos HOA y las propias revelaciones de la propiedad. A continuación, mostrar cada propiedad que cumple sus criterios objetivos declarados, en cada área que cubren esos criterios, y dejar que saquen las conclusiones. Un hábito útil, otra vez la práctica y no la ley, es escribir los criterios objetivos del cliente —precio, dormitorios, metros cuadrados, viajes, distrito escolar, tamaño del lote— en la admisión y ejecutar cada decisión de mostrar de nuevo a través de esa lista escrita. Mantiene su servicio consistente y deja un registro de que lo fue.",
+    "after": "— informes de resultados del distrito escolar y de cada escuela, estadísticas de delincuencia publicadas por la autoridad competente, datos censales, registros municipales y del distrito de tasación, documentos de HOA y divulgaciones del inmueble. Después muestre todas las propiedades que cumplan sus criterios objetivos, en todas las zonas comprendidas por ellos, y deje que el cliente saque sus conclusiones. Un hábito útil —práctica, no ley— es registrar al inicio sus criterios objetivos: precio, dormitorios, superficie en pies cuadrados, desplazamiento, distrito escolar y tamaño del lote, y cotejar con esa lista cada decisión sobre qué mostrar. Así mantiene un servicio coherente y deja constancia de ello.",
+    "target_sha256": "0dc47f7fe500ff8a57b25b425b91fd7f89a10880d20dd51cbe2eb134c4d1c552",
     "review_scope": "targeted source comparison and terminology correction; not full lesson certification"
   },
   {
@@ -6580,6 +7057,15 @@
   },
   {
     "course_id": "va-principles-practices-v1",
+    "source_sha256": "a43d7a3612619ff7080671f3fd54ae161f3705f0ac89f6bae150a998217f1a8f",
+    "source": "Comparable sold at $455,000. It has a 3-car garage; the subject has 2. Garage bay contributes $9,000. It has 1,850 sq ft; the subject has 1,975, at $70 per sq ft. It sold 4 months ago in a market rising 0.3% per month.",
+    "before": "Comparable vendido a 455,000 dólares. Cuenta con un garaje de 3 coches; el sujeto tiene 2. Garage bay contribuye $9,000. Tiene 1,850 pies cuadrados; el sujeto tiene 1,975 dólares, 70 dólares por metro cuadrado. Se vendió hace 4 meses en un mercado que aumenta 0.3% por mes.",
+    "after": "El comparable se vendió por $455,000. Tiene garaje para 3 vehículos; el inmueble objeto de tasación tiene espacio para 2. Cada plaza aporta $9,000. El comparable tiene 1,850 pies cuadrados y el inmueble objeto tiene 1,975, a $70 por pie cuadrado. Se vendió hace 4 meses en un mercado que sube un 0.3% mensual.",
+    "target_sha256": "a1c90beab6c4851bee5c8b5b23bf717b46e3799e693c5990910e0da95f382287",
+    "review_scope": "targeted source comparison and terminology correction; not full lesson certification"
+  },
+  {
+    "course_id": "va-principles-practices-v1",
     "source_sha256": "7086a67388f7c21f46ba0d0a6dffab72ab38bef848bb00ecc8c2a3040b333667",
     "source": "Hour 09 — Legal descriptions, plats, and surveys — 9.1 Why the address will not do",
     "before": "Hora 09 — Descripción legal, plataformas y encuestas — 9.1 ¿Por qué la dirección no va a hacer",
@@ -7021,6 +7507,15 @@
   },
   {
     "course_id": "wa-real-estate-practices-30",
+    "source_sha256": "817aee33eaf7188f4fe49e3ba565bc2e9227baac75598f36869802cdc0e41126",
+    "source": "The county assessor's square footage, attributed to the assessor.",
+    "before": "Los metros cuadrados del asesor del condado, atribuidos al evaluador.",
+    "after": "La superficie en pies cuadrados del asesor fiscal del condado, identificándolo como fuente.",
+    "target_sha256": "cdd9ecf1128237f7467056bad46fcb54d74d2bbed5aef48604aeefc2d2d6d981",
+    "review_scope": "targeted source comparison and terminology correction; not full lesson certification"
+  },
+  {
+    "course_id": "wa-real-estate-practices-30",
     "source_sha256": "346a8d61e36796c4b48b2caaa9c4137dc46dac8f8213c3da1f6410e6956f1f65",
     "source": "The duty list is",
     "before": "La lista de derechos es",
@@ -7053,6 +7548,15 @@
     "before": "¿A quiénes se deben los derechos RCW 18.86.030(1), y se les puede renunciar?",
     "after": "¿Frente a quién se tienen las obligaciones de RCW 18.86.030(1) y puede renunciarse a ellas?",
     "target_sha256": "7b5db96ecf83e83ebf5926abc19c9e9deb403131960929a2a1d903530af6cf3c",
+    "review_scope": "targeted source comparison and terminology correction; not full lesson certification"
+  },
+  {
+    "course_id": "wa-real-estate-practices-30",
+    "source_sha256": "8beb9fecbeb8fe75a4bd8a842e570333e6f4139685b15f46de3e51042fc33966",
+    "source": "Which duty applies to a claim about square footage in a listing?",
+    "before": "¿Qué deber se aplica a una reclamación sobre los metros cuadrados en una captación inmobiliaria?",
+    "after": "¿Qué obligación se aplica a una afirmación sobre la superficie en pies cuadrados de un anuncio?",
+    "target_sha256": "12a20e6b34f2a7c0f9188a3581092db7eaa5cc4d18120ea7b82bb9845cf46c54",
     "review_scope": "targeted source comparison and terminology correction; not full lesson certification"
   },
   {
