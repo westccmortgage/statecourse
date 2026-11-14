@@ -1,8 +1,10 @@
+import { createPracticeLocale } from './practice-locale.mjs';
 import { createLearningCoach } from './learning-coach.js';
 import { renderLessonMarkdown, escapeHtml as esc } from './student/course/blocks/lesson-markdown.mjs';
 import { splitSections, presentedChoices, gradePractice, practiceSummary, restorePractice } from './practice-core.mjs';
 import { renderPracticeActivities } from './practice-activities.mjs';
 const base=new URL('./',import.meta.url), $=id=>document.getElementById(id);
+const practiceLocale=createPracticeLocale({base});
 const stateSelect=$('practiceStateSelect'), courseSelect=$('practiceCourseSelect'), lessonSelect=$('practiceLessonSelect');
 const content=$('practiceContent'), quiz=$('practiceQuiz'), message=$('practiceMessage');
 const activitiesView=$('practiceActivities');
@@ -78,6 +80,9 @@ async function openLesson(id,restore=false){
 async function openCourse(id,requestedLesson=null,requestedMode=null){
   const entry=samples.find(s=>s.course_id===id);if(!entry)return;
   const token=++requestId;pending?.abort();pending=new AbortController();sample=entry;course=null;answers={};position={};sections=[];
+  await practiceLocale.ready;
+  await practiceLocale.loadCourse(entry);
+  if(token!==requestId)return;
   coach.update();courseSelect.value=id;lessonSelect.disabled=true;lessonSelect.replaceChildren();
   for(const id of ['practiceSectionNav','practiceMode','practiceBottomNav'])$(id).hidden=true;
   content.replaceChildren();quiz.replaceChildren();activitiesView.replaceChildren();$('practiceProgress').textContent='';

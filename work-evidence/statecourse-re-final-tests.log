@@ -1,0 +1,316 @@
+TAP version 13
+# Subtest: all real-estate catalog courses have distinct explicit non-credit practice sources; mortgage is protected
+ok 1 - all real-estate catalog courses have distinct explicit non-credit practice sources; mortgage is protected
+  ---
+  duration_ms: 0.795416
+  type: 'test'
+  ...
+# Subtest: ak-salesperson-prelicense-40-v1: every lesson and every answer choice is usable
+ok 2 - ak-salesperson-prelicense-40-v1: every lesson and every answer choice is usable
+  ---
+  duration_ms: 8.266459
+  type: 'test'
+  ...
+# Subtest: az-salesperson-prelicense-90: every lesson and every answer choice is usable
+ok 3 - az-salesperson-prelicense-90: every lesson and every answer choice is usable
+  ---
+  duration_ms: 6.7045
+  type: 'test'
+  ...
+# Subtest: az-contract-writing-6: every lesson and every answer choice is usable
+ok 4 - az-contract-writing-6: every lesson and every answer choice is usable
+  ---
+  duration_ms: 1.632666
+  type: 'test'
+  ...
+# Subtest: ca-real-estate-principles-45: every lesson and every answer choice is usable
+ok 5 - ca-real-estate-principles-45: every lesson and every answer choice is usable
+  ---
+  duration_ms: 23.295958
+  type: 'test'
+  ...
+# Subtest: ca-real-estate-practice-45: every lesson and every answer choice is usable
+ok 6 - ca-real-estate-practice-45: every lesson and every answer choice is usable
+  ---
+  duration_ms: 17.317958
+  type: 'test'
+  ...
+# Subtest: ca-mortgage-loan-brokering-lending-45: every lesson and every answer choice is usable
+ok 7 - ca-mortgage-loan-brokering-lending-45: every lesson and every answer choice is usable
+  ---
+  duration_ms: 15.72725
+  type: 'test'
+  ...
+# Subtest: co-real-estate-law-practice-48: every lesson and every answer choice is usable
+ok 8 - co-real-estate-law-practice-48: every lesson and every answer choice is usable
+  ---
+  duration_ms: 2.881
+  type: 'test'
+  ...
+# Subtest: co-contracts-regulations-48: every lesson and every answer choice is usable
+ok 9 - co-contracts-regulations-48: every lesson and every answer choice is usable
+  ---
+  duration_ms: 2.852167
+  type: 'test'
+  ...
+# Subtest: co-trust-accounts-recordkeeping-8: every lesson and every answer choice is usable
+ok 10 - co-trust-accounts-recordkeeping-8: every lesson and every answer choice is usable
+  ---
+  duration_ms: 1.956791
+  type: 'test'
+  ...
+# Subtest: co-current-legal-issues-8: every lesson and every answer choice is usable
+ok 11 - co-current-legal-issues-8: every lesson and every answer choice is usable
+  ---
+  duration_ms: 1.280333
+  type: 'test'
+  ...
+# Subtest: co-real-estate-closings-24: every lesson and every answer choice is usable
+ok 12 - co-real-estate-closings-24: every lesson and every answer choice is usable
+  ---
+  duration_ms: 2.26
+  type: 'test'
+  ...
+# Subtest: co-practical-applications-32: every lesson and every answer choice is usable
+ok 13 - co-practical-applications-32: every lesson and every answer choice is usable
+  ---
+  duration_ms: 3.242166
+  type: 'test'
+  ...
+# Subtest: me-sales-agent-v1: every lesson and every answer choice is usable
+ok 14 - me-sales-agent-v1: every lesson and every answer choice is usable
+  ---
+  duration_ms: 5.7105
+  type: 'test'
+  ...
+# Subtest: mi-salesperson-prelicensure-40-v1: every lesson and every answer choice is usable
+ok 15 - mi-salesperson-prelicensure-40-v1: every lesson and every answer choice is usable
+  ---
+  duration_ms: 5.180583
+  type: 'test'
+  ...
+# Subtest: mo-salesperson-preexam-48: every lesson and every answer choice is usable
+ok 16 - mo-salesperson-preexam-48: every lesson and every answer choice is usable
+  ---
+  duration_ms: 4.091458
+  type: 'test'
+  ...
+# Subtest: mo-real-estate-practice-24: every lesson and every answer choice is usable
+ok 17 - mo-real-estate-practice-24: every lesson and every answer choice is usable
+  ---
+  duration_ms: 2.594125
+  type: 'test'
+  ...
+# Subtest: nc-broker-prelicensing-75: every lesson and every answer choice is usable
+ok 18 - nc-broker-prelicensing-75: every lesson and every answer choice is usable
+  ---
+  duration_ms: 9.587167
+  type: 'test'
+  ...
+# Subtest: ok-basic-prelicense-90: every lesson and every answer choice is usable
+ok 19 - ok-basic-prelicense-90: every lesson and every answer choice is usable
+  ---
+  duration_ms: 6.992958
+  type: 'test'
+  ...
+# Subtest: pa-real-estate-fundamentals-30: every lesson and every answer choice is usable
+ok 20 - pa-real-estate-fundamentals-30: every lesson and every answer choice is usable
+  ---
+  duration_ms: 1.945542
+  type: 'test'
+  ...
+# Subtest: pa-real-estate-practice-45: every lesson and every answer choice is usable
+ok 21 - pa-real-estate-practice-45: every lesson and every answer choice is usable
+  ---
+  duration_ms: 3.015042
+  type: 'test'
+  ...
+# Subtest: tx-principles-real-estate-i-30: every lesson and every answer choice is usable
+ok 22 - tx-principles-real-estate-i-30: every lesson and every answer choice is usable
+  ---
+  duration_ms: 4.167292
+  type: 'test'
+  ...
+# Subtest: tx-principles-real-estate-ii-30: every lesson and every answer choice is usable
+ok 23 - tx-principles-real-estate-ii-30: every lesson and every answer choice is usable
+  ---
+  duration_ms: 8.961334
+  type: 'test'
+  ...
+# Subtest: tx-law-of-agency-30: every lesson and every answer choice is usable
+ok 24 - tx-law-of-agency-30: every lesson and every answer choice is usable
+  ---
+  duration_ms: 9.962959
+  type: 'test'
+  ...
+# Subtest: va-principles-practices-v1: every lesson and every answer choice is usable
+ok 25 - va-principles-practices-v1: every lesson and every answer choice is usable
+  ---
+  duration_ms: 7.641125
+  type: 'test'
+  ...
+# Subtest: wa-real-estate-fundamentals-60: every lesson and every answer choice is usable
+ok 26 - wa-real-estate-fundamentals-60: every lesson and every answer choice is usable
+  ---
+  duration_ms: 3.667459
+  type: 'test'
+  ...
+# Subtest: wa-real-estate-practices-30: every lesson and every answer choice is usable
+ok 27 - wa-real-estate-practices-30: every lesson and every answer choice is usable
+  ---
+  duration_ms: 2.196375
+  type: 'test'
+  ...
+# Subtest: wi-salesperson: every lesson and every answer choice is usable
+ok 28 - wi-salesperson: every lesson and every answer choice is usable
+  ---
+  duration_ms: 6.675291
+  type: 'test'
+  ...
+# Subtest: tx-law-of-contracts-30: every lesson and every answer choice is usable
+ok 29 - tx-law-of-contracts-30: every lesson and every answer choice is usable
+  ---
+  duration_ms: 10.079
+  type: 'test'
+  ...
+# Subtest: tx-promulgated-contract-forms-30: every lesson and every answer choice is usable
+ok 30 - tx-promulgated-contract-forms-30: every lesson and every answer choice is usable
+  ---
+  duration_ms: 4.10175
+  type: 'test'
+  ...
+# Subtest: tx-real-estate-finance-30: every lesson and every answer choice is usable
+ok 31 - tx-real-estate-finance-30: every lesson and every answer choice is usable
+  ---
+  duration_ms: 3.680417
+  type: 'test'
+  ...
+# Subtest: every course page links to its own practice; each built state has a working route
+ok 32 - every course page links to its own practice; each built state has a working route
+  ---
+  duration_ms: 1.418
+  type: 'test'
+  ...
+# Subtest: invalid saved data cannot crash or manufacture progress
+ok 33 - invalid saved data cannot crash or manufacture progress
+  ---
+  duration_ms: 0.19475
+  type: 'test'
+  ...
+# Subtest: introductory text survives, but a heading-only preamble does not create an empty screen
+ok 34 - introductory text survives, but a heading-only preamble does not create an empty screen
+  ---
+  duration_ms: 0.052917
+  type: 'test'
+  ...
+# Subtest: interactive practice retains the no-credit boundary and cache revisions
+ok 35 - interactive practice retains the no-credit boundary and cache revisions
+  ---
+  duration_ms: 0.1605
+  type: 'test'
+  ...
+# Subtest: only the three explicit non-credit course mappings are accepted
+ok 36 - only the three explicit non-credit course mappings are accepted
+  ---
+  duration_ms: 0.769042
+  type: 'test'
+  ...
+# Subtest: context, separate facts, keys, inherited sources and mixed rubric formats survive projection
+ok 37 - context, separate facts, keys, inherited sources and mixed rubric formats survive projection
+  ---
+  duration_ms: 0.478208
+  type: 'test'
+  ...
+# Subtest: all three authored numeric aliases normalize without losing zero
+ok 38 - all three authored numeric aliases normalize without losing zero
+  ---
+  duration_ms: 0.2265
+  type: 'test'
+  ...
+# Subtest: capstone is available at the final lesson, with malformed placement refused
+ok 39 - capstone is available at the final lesson, with malformed placement refused
+  ---
+  duration_ms: 0.149875
+  type: 'test'
+  ...
+# Subtest: unknown, incomplete, duplicated and unsafe task inputs fail instead of disappearing
+ok 40 - unknown, incomplete, duplicated and unsafe task inputs fail instead of disappearing
+  ---
+  duration_ms: 0.74075
+  type: 'test'
+  ...
+# Subtest: numeric parsing refuses accidental zero and nonfinite input
+ok 41 - numeric parsing refuses accidental zero and nonfinite input
+  ---
+  duration_ms: 0.123042
+  type: 'test'
+  ...
+# Subtest: activity edits change the content revision when included in the payload
+ok 42 - activity edits change the content revision when included in the payload
+  ---
+  duration_ms: 0.353416
+  type: 'test'
+  ...
+# Subtest: translation inventory is exactly the existing public practice catalog
+ok 43 - translation inventory is exactly the existing public practice catalog
+  ---
+  duration_ms: 244.254958
+  type: 'test'
+  ...
+# Subtest: publisher rejects stale, incomplete and extra source content
+ok 44 - publisher rejects stale, incomplete and extra source content
+  ---
+  duration_ms: 106.424667
+  type: 'test'
+  ...
+# Subtest: language changes preserve input nodes, unsubmitted answers and source hrefs; missing/stale Spanish fails closed
+ok 45 - language changes preserve input nodes, unsubmitted answers and source hrefs; missing/stale Spanish fails closed
+  ---
+  duration_ms: 42.931333
+  type: 'test'
+  ...
+# Subtest: every requested course has a complete Spanish draft and choices stay distinguishable
+ok 46 - every requested course has a complete Spanish draft and choices stay distinguishable
+  ---
+  duration_ms: 69.768667
+  type: 'test'
+  ...
+# Subtest: public checker: positive decimal boundary is inclusive and zero tolerance stays exact
+ok 47 - public checker: positive decimal boundary is inclusive and zero tolerance stays exact
+  ---
+  duration_ms: 0.4035
+  type: 'test'
+  ...
+# Subtest: private checker: all numeric aliases preserve the same decimal and exact-zero boundaries
+ok 48 - private checker: all numeric aliases preserve the same decimal and exact-zero boundaries
+  ---
+  duration_ms: 3.686667
+  type: 'test'
+  ...
+# Subtest: actual TX3 public/projection imports execute under a native protected-module guard
+ok 49 - actual TX3 public/projection imports execute under a native protected-module guard
+  ---
+  duration_ms: 56.274875
+  type: 'test'
+  ...
+# Subtest: actual generated TX3 payloads equal explicit formative sources and revision includes activities
+ok 50 - actual generated TX3 payloads equal explicit formative sources and revision includes activities
+  ---
+  duration_ms: 14.118834
+  type: 'test'
+  ...
+# Subtest: actual generated TX3 public item IDs and prompts exclude every protected final-bank item
+ok 51 - actual generated TX3 public item IDs and prompts exclude every protected final-bank item
+  ---
+  duration_ms: 25.61875
+  type: 'test'
+  ...
+1..51
+# tests 51
+# suites 0
+# pass 51
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 498.947125

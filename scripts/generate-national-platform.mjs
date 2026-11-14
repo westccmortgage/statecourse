@@ -1,4 +1,5 @@
 import fs from "node:fs";
+import { publishPracticeLocales } from "./generate-free-practice-locales.mjs";
 import { buildFreePractice } from "./generate-free-practice.mjs";
 import { PRACTICE_SOURCES } from "../config/free-practice-sources.mjs";
 import path from "node:path";
@@ -102,9 +103,12 @@ function finderForm() {
 }
 
 const practiceManifest = await buildFreePractice({root,states,catalogCourses,write});
+publishPracticeLocales(root,practiceManifest,write);
 
 const freePracticeBody = `${pageHero("Free practice", "Practice with real StateCourse lesson material.", "Choose a state that is already in development. Choose a course, read its lessons, and answer practice questions with instant explanations. Free to use while courses are in development.")}<section class="page-body practice-page" data-free-practice>
   <div class="notice"><strong>Practice-only access:</strong> This preview is free and does not create enrollment, regulated study time, licensing credit, a completion certificate, or access to any protected course final examination.</div>
+  <label for="practiceLanguage">Language / Idioma</label> <select id="practiceLanguage" aria-label="Language / Idioma"><option value="en" lang="en">English</option><option value="es" lang="es">Español</option></select>
+  <p id="practiceTranslationNotice" role="status" hidden></p>
   <div class="practice-layout">
     <aside class="practice-controls">
       <label for="practiceStateSelect">Choose a state</label>
@@ -135,7 +139,7 @@ const freePracticeBody = `${pageHero("Free practice", "Practice with real StateC
     </article>
   </div>
 </section>`;
-write("free-practice/index.html", document({ title: "Free Real Estate Practice", description: "Free StateCourse lesson and formative-practice previews for states currently in development.", body: freePracticeBody, scripts: '<script type="module" src="../free-practice.js?v=20260907-practice-repair"></script>' }));
+write("free-practice/index.html", document({ title: "Free Real Estate Practice", description: "Free StateCourse lesson and formative-practice previews for states currently in development.", body: freePracticeBody, scripts: '<link rel="stylesheet" href="../practice-locale.css?v=20261114-es2"><script type="module" src="../free-practice.js?v=20261114-es"></script>' }));
 
 const getLicensedBody = `${pageHero("Get Licensed", "Build your state licensing path.", "Start with your jurisdiction and license goal. StateCourse will show verified requirements, available education, examinations, application milestones, and the next action.")}<section class="page-body"><div style="max-width:820px;margin:auto">${finderForm()}</div><div class="content-grid" style="margin-top:55px"><article class="content-card"><p class="overline">Step 1</p><h2>Choose your state</h2><p>Licensing titles, required education, regulators, exams, and application procedures are jurisdiction-specific.</p><a href="../state-requirements/">Compare requirements →</a></article><article class="content-card"><p class="overline">Step 2</p><h2>Review your path</h2><p>See education, examination, application, background-check, and renewal information before choosing a product.</p><a href="../courses/">View current programs →</a></article><article class="content-card"><p class="overline">Step 3</p><h2>Enroll only when approved</h2><p>Regulated course enrollment stays disabled until the exact approval record and required disclosures are active.</p><a href="${studentPortalUrl}">Returning student sign in →</a></article></div></section>`;
 write("get-licensed/index.html", document({ title: "Get Licensed", description: "Build a state-specific real estate licensing path.", active: "licensed", body: getLicensedBody, scripts: '<script src="../national.js?v=20260906-state-status" defer></script>' }));

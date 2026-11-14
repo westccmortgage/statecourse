@@ -9,6 +9,13 @@ Production coach pilot is enabled on code `bf0433a4d7cc1fafa2f370fc43ced76142fcf
 ## Historical deployment snapshot — before coach activation
 
 Netlify has published `bd8319ec758b0f6e08aaf178704064984954d833`; authenticated production `build.json` now confirms that exact revision. Real Estate practice coach UI was inspected at desktop/mobile widths; named consent and lesson-change clearing worked, ordinary formative grading continued, and actual AI requests displayed unavailable (503). Runtime enablement is false; required coach settings and verified production durable admission are missing from the acceptance evidence. No live OpenAI/Gemini answer or citation/refusal acceptance is established. [Production verification](../../audits/PRODUCTION-DEPLOYMENT-2026-10-20.md). No state approval, regulated enrollment, payment or credit control changed. This board update is local only.
+## Spanish public practice — November 14, 2026 (complete local machine draft)
+
+Dedicated branch `work/real-estate-practice-es-20261114` covers the existing public practice catalog: AK, AZ, CA, CO, ME, MI, MO, NC, OK, PA, TX, VA, WA and WI; 30 courses, 284 lessons, 3,172 formative questions and existing Texas casework. English sources, grading, access and approval controls are unchanged. Spanish companions are source-revision bound and must pass completeness, number/math notation and official-reference checks before the local build exposes them.
+
+**Verified local evidence:** all 30 course companions are `draft-complete`, covering 111,871 unique public source strings with zero remaining numeric/reference mismatches. Netlify artifact build passed, including its 5 protected-assessment tests; 51 focused practice/source-boundary/locale tests and 3 sentence-coverage tests passed. Negative fixtures reject stale source versions, missing/extra/duplicate text, changed numbers and references. Chrome localhost checks observed Spanish Arizona questions/feedback, Texas lessons/casework, selected-answer and written-answer preservation across English/Spanish, and unchanged official source links. Spanish navigation wraps without horizontal page overflow at the observed 1110-pixel viewport. These checks establish functional draft coverage, not human translation quality.
+
+**OPEN:** full human bilingual review, state-specific SME review, real learner acceptance and production acceptance. No state submission, approval, enrollment, credit, certificate or commerce status changed. No push, merge or deployment occurred. See [Spanish practice scope](../../../locales/es/free-practice/README.md).
 
 ## Uploaded DRE evidence — 2026-10-20
 

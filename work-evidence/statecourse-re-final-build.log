@@ -1,0 +1,45 @@
+Generated national platform: 51 jurisdiction hubs, 31 course records, and core service routes.
+Preserved 6 hand-authored course pages: real-estate/virginia/pre-license/principles-and-practices/index.html, real-estate/maine/pre-license/sales-agent/index.html, real-estate/wisconsin/pre-license/salesperson/index.html, real-estate/missouri/pre-license/salesperson-pre-exam/index.html, real-estate/missouri/pre-license/real-estate-practice/index.html, real-estate/oklahoma/pre-license/basic/index.html
+Recorded curriculum evidence for 30 Real Estate courses; no course activated.
+{"courses":31,"publicLessons":284,"privateUnits":45,"chunks":6666}
+{"ok":true,"scannedFiles":644,"scannedTextFiles":634,"privateItemCount":187,"violations":[]}
+TAP version 13
+# Subtest: no build step copies course source into a published directory
+ok 1 - no build step copies course source into a published directory
+  ---
+  duration_ms: 1.626292
+  type: 'test'
+  ...
+# Subtest: no script targets a published directory as an export destination
+ok 2 - no script targets a published directory as an export destination
+  ---
+  duration_ms: 5.217209
+  type: 'test'
+  ...
+# Subtest: nothing resembling an answer key is present in public/ or dist/
+ok 3 - nothing resembling an answer key is present in public/ or dist/
+  ---
+  duration_ms: 214.330667
+  type: 'test'
+  ...
+# Subtest: the export script writes outside every published directory
+ok 4 - the export script writes outside every published directory
+  ---
+  duration_ms: 0.24825
+  type: 'test'
+  ...
+# Subtest: public-answer scan detects embedded numeric keys but permits a renderer property access
+ok 5 - public-answer scan detects embedded numeric keys but permits a renderer property access
+  ---
+  duration_ms: 0.063583
+  type: 'test'
+  ...
+1..5
+# tests 5
+# suites 0
+# pass 5
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 253.984041

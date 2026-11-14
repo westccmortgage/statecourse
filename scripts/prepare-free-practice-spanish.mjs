@@ -1,0 +1,13 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+import { collectPracticeTranslation,sha } from './free-practice-translation-source.mjs';
+const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
+const workspace=path.resolve(process.argv[2]||'/tmp/statecourse-real-estate-spanish-work');
+fs.mkdirSync(workspace,{recursive:true});
+const catalog=JSON.parse(fs.readFileSync(path.join(root,'public/statecourse/data/free-practice-catalog.json')));
+const courses=catalog.samples.map(s=>collectPracticeTranslation(root,s));
+const strings=[...new Set(courses.flatMap(c=>c.strings))];
+fs.writeFileSync(path.join(workspace,'sources.json'),JSON.stringify(courses));
+fs.writeFileSync(path.join(workspace,'segments.json'),JSON.stringify(strings.map(text=>({id:sha(text),text}))));
+console.log(JSON.stringify({workspace,states:new Set(catalog.samples.map(s=>s.state_code)).size,courses:courses.length,segments:strings.length,characters:strings.reduce((n,s)=>n+s.length,0)}));

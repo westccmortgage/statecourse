@@ -1,0 +1,212 @@
+[
+  {
+    "course": "ak-salesperson-prelicense-40-v1",
+    "translated": 3975,
+    "total": 3975,
+    "numeric_review": 0,
+    "status": "draft-complete"
+  },
+  {
+    "course": "az-salesperson-prelicense-90",
+    "translated": 4202,
+    "total": 4202,
+    "numeric_review": 0,
+    "status": "draft-complete"
+  },
+  {
+    "course": "az-contract-writing-6",
+    "translated": 684,
+    "total": 684,
+    "numeric_review": 0,
+    "status": "draft-complete"
+  },
+  {
+    "course": "ca-real-estate-principles-45",
+    "translated": 14275,
+    "total": 14275,
+    "numeric_review": 0,
+    "status": "draft-complete"
+  },
+  {
+    "course": "ca-real-estate-practice-45",
+    "translated": 10266,
+    "total": 10266,
+    "numeric_review": 0,
+    "status": "draft-complete"
+  },
+  {
+    "course": "ca-mortgage-loan-brokering-lending-45",
+    "translated": 11453,
+    "total": 11453,
+    "numeric_review": 0,
+    "status": "draft-complete"
+  },
+  {
+    "course": "co-real-estate-law-practice-48",
+    "translated": 2415,
+    "total": 2415,
+    "numeric_review": 0,
+    "status": "draft-complete"
+  },
+  {
+    "course": "co-contracts-regulations-48",
+    "translated": 2546,
+    "total": 2546,
+    "numeric_review": 0,
+    "status": "draft-complete"
+  },
+  {
+    "course": "co-trust-accounts-recordkeeping-8",
+    "translated": 1545,
+    "total": 1545,
+    "numeric_review": 0,
+    "status": "draft-complete"
+  },
+  {
+    "course": "co-current-legal-issues-8",
+    "translated": 1149,
+    "total": 1149,
+    "numeric_review": 0,
+    "status": "draft-complete"
+  },
+  {
+    "course": "co-real-estate-closings-24",
+    "translated": 1749,
+    "total": 1749,
+    "numeric_review": 0,
+    "status": "draft-complete"
+  },
+  {
+    "course": "co-practical-applications-32",
+    "translated": 3100,
+    "total": 3100,
+    "numeric_review": 0,
+    "status": "draft-complete"
+  },
+  {
+    "course": "me-sales-agent-v1",
+    "translated": 4877,
+    "total": 4877,
+    "numeric_review": 0,
+    "status": "draft-complete"
+  },
+  {
+    "course": "mi-salesperson-prelicensure-40-v1",
+    "translated": 3123,
+    "total": 3123,
+    "numeric_review": 0,
+    "status": "draft-complete"
+  },
+  {
+    "course": "mo-salesperson-preexam-48",
+    "translated": 3177,
+    "total": 3177,
+    "numeric_review": 0,
+    "status": "draft-complete"
+  },
+  {
+    "course": "mo-real-estate-practice-24",
+    "translated": 2000,
+    "total": 2000,
+    "numeric_review": 0,
+    "status": "draft-complete"
+  },
+  {
+    "course": "nc-broker-prelicensing-75",
+    "translated": 7628,
+    "total": 7628,
+    "numeric_review": 0,
+    "status": "draft-complete"
+  },
+  {
+    "course": "ok-basic-prelicense-90",
+    "translated": 5791,
+    "total": 5791,
+    "numeric_review": 0,
+    "status": "draft-complete"
+  },
+  {
+    "course": "pa-real-estate-fundamentals-30",
+    "translated": 1936,
+    "total": 1936,
+    "numeric_review": 0,
+    "status": "draft-complete"
+  },
+  {
+    "course": "pa-real-estate-practice-45",
+    "translated": 2884,
+    "total": 2884,
+    "numeric_review": 0,
+    "status": "draft-complete"
+  },
+  {
+    "course": "tx-principles-real-estate-i-30",
+    "translated": 3021,
+    "total": 3021,
+    "numeric_review": 0,
+    "status": "draft-complete"
+  },
+  {
+    "course": "tx-principles-real-estate-ii-30",
+    "translated": 4196,
+    "total": 4196,
+    "numeric_review": 0,
+    "status": "draft-complete"
+  },
+  {
+    "course": "tx-law-of-agency-30",
+    "translated": 3912,
+    "total": 3912,
+    "numeric_review": 0,
+    "status": "draft-complete"
+  },
+  {
+    "course": "va-principles-practices-v1",
+    "translated": 6570,
+    "total": 6570,
+    "numeric_review": 0,
+    "status": "draft-complete"
+  },
+  {
+    "course": "wa-real-estate-fundamentals-60",
+    "translated": 3443,
+    "total": 3443,
+    "numeric_review": 0,
+    "status": "draft-complete"
+  },
+  {
+    "course": "wa-real-estate-practices-30",
+    "translated": 1974,
+    "total": 1974,
+    "numeric_review": 0,
+    "status": "draft-complete"
+  },
+  {
+    "course": "wi-salesperson",
+    "translated": 6199,
+    "total": 6199,
+    "numeric_review": 0,
+    "status": "draft-complete"
+  },
+  {
+    "course": "tx-law-of-contracts-30",
+    "translated": 5387,
+    "total": 5387,
+    "numeric_review": 0,
+    "status": "draft-complete"
+  },
+  {
+    "course": "tx-promulgated-contract-forms-30",
+    "translated": 1822,
+    "total": 1822,
+    "numeric_review": 0,
+    "status": "draft-complete"
+  },
+  {
+    "course": "tx-real-estate-finance-30",
+    "translated": 1825,
+    "total": 1825,
+    "numeric_review": 0,
+    "status": "draft-complete"
+  }
+]

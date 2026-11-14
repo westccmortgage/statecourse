@@ -1,0 +1,1625 @@
+{
+  "status": "draft",
+  "translations": [
+    [
+      "Free practice",
+      "Práctica gratuita"
+    ],
+    [
+      "Free Real Estate Practice | StateCourse",
+      "Práctica inmobiliaria gratuita | StateCourse"
+    ],
+    [
+      "Practice with real StateCourse lesson material.",
+      "Practique con el material de las lecciones de StateCourse."
+    ],
+    [
+      "Choose a state that is already in development. Choose a course, read its lessons, and answer practice questions with instant explanations. Free to use while courses are in development.",
+      "Seleccione un estado y un curso en desarrollo. Lea las lecciones y responda preguntas de práctica con explicaciones inmediatas. El acceso es gratuito mientras los cursos están en desarrollo."
+    ],
+    [
+      "Practice-only access:",
+      "Acceso solo para practicar:"
+    ],
+    [
+      "This preview is free and does not create enrollment, regulated study time, licensing credit, a completion certificate, or access to any protected course final examination.",
+      "Esta vista previa es gratuita y no genera una inscripción, tiempo de estudio regulado, créditos para licencias, certificados de finalización ni acceso a exámenes finales protegidos."
+    ],
+    [
+      "Choose a state",
+      "Seleccione un estado"
+    ],
+    [
+      "Choose a course",
+      "Seleccione un curso"
+    ],
+    [
+      "Choose a lesson",
+      "Seleccione una lección"
+    ],
+    [
+      "Choose a state first",
+      "Primero seleccione un estado"
+    ],
+    [
+      "Choose a course first",
+      "Primero seleccione un curso"
+    ],
+    [
+      "Free practice. Your place and answers are saved on this device only.",
+      "Práctica gratuita. Su posición y sus respuestas se guardan solo en este dispositivo."
+    ],
+    [
+      "Status",
+      "Estado"
+    ],
+    [
+      "Choose a state to begin",
+      "Seleccione un estado para comenzar"
+    ],
+    [
+      "View state licensing path",
+      "Ver el proceso de licencia del estado"
+    ],
+    [
+      "Free lesson and formative practice",
+      "Lección gratuita y práctica formativa"
+    ],
+    [
+      "Choose a state to open its practice lesson.",
+      "Seleccione un estado para abrir sus lecciones de práctica."
+    ],
+    [
+      "No account or payment is required.",
+      "No se requiere una cuenta ni un pago."
+    ],
+    [
+      "← Previous",
+      "← Anterior"
+    ],
+    [
+      "Next →",
+      "Siguiente →"
+    ],
+    [
+      "Read lesson",
+      "Leer la lección"
+    ],
+    [
+      "Practice questions",
+      "Preguntas de práctica"
+    ],
+    [
+      "Casework",
+      "Casos prácticos"
+    ],
+    [
+      "← Previous lesson",
+      "← Lección anterior"
+    ],
+    [
+      "Next lesson →",
+      "Lección siguiente →"
+    ],
+    [
+      "Practice lesson sections",
+      "Secciones de la lección"
+    ],
+    [
+      "Study mode",
+      "Modo de estudio"
+    ],
+    [
+      "Practice casework",
+      "Casos de práctica"
+    ],
+    [
+      "Access",
+      "Acceso"
+    ],
+    [
+      "Free · no account required",
+      "Gratis · no se requiere una cuenta"
+    ],
+    [
+      "Material",
+      "Material"
+    ],
+    [
+      "Credit",
+      "Créditos"
+    ],
+    [
+      "None — practice only",
+      "Ninguno — solo práctica"
+    ],
+    [
+      "Loading lesson…",
+      "Cargando la lección…"
+    ],
+    [
+      "Loading course…",
+      "Cargando el curso…"
+    ],
+    [
+      "Read the available curriculum at your own pace. These exercises are formative practice, not a licensing examination.",
+      "Estudie el material disponible a su propio ritmo. Estos ejercicios son práctica formativa, no un examen para obtener una licencia."
+    ],
+    [
+      "Focused practice collection; the full qualifying course is still being written. These exercises are formative practice, not a licensing examination.",
+      "Colección de práctica específica; el curso completo aún se está redactando. Estos ejercicios son práctica formativa, no un examen para obtener una licencia."
+    ],
+    [
+      "Could not load this lesson. Select it again to retry.",
+      "No se pudo cargar esta lección. Selecciónela de nuevo para reintentar."
+    ],
+    [
+      "Could not load this course. Select it again to retry.",
+      "No se pudo cargar este curso. Selecciónelo de nuevo para reintentar."
+    ],
+    [
+      "Free practice could not load. Refresh the page to retry.",
+      "No se pudo cargar la práctica gratuita. Actualice la página para reintentar."
+    ],
+    [
+      "This lesson has no separate quiz. Continue to the next lesson for more practice.",
+      "Esta lección no tiene un cuestionario separado. Continúe con la siguiente lección para practicar más."
+    ],
+    [
+      "Check answer",
+      "Comprobar respuesta"
+    ],
+    [
+      "Correct.",
+      "Correcto."
+    ],
+    [
+      "Review this answer.",
+      "Revise esta respuesta."
+    ],
+    [
+      "Correct answer:",
+      "Respuesta correcta:"
+    ],
+    [
+      "Try again",
+      "Intentar de nuevo"
+    ],
+    [
+      "Sources:",
+      "Fuentes:"
+    ],
+    [
+      "Official source",
+      "Fuente oficial"
+    ],
+    [
+      "← Previous question",
+      "← Pregunta anterior"
+    ],
+    [
+      "Review lesson",
+      "Repasar la lección"
+    ],
+    [
+      "Next question →",
+      "Pregunta siguiente →"
+    ],
+    [
+      "Practice round complete",
+      "Ronda de práctica completada"
+    ],
+    [
+      "Restart this lesson’s questions",
+      "Reiniciar las preguntas de esta lección"
+    ],
+    [
+      "Choose an answer before checking.",
+      "Seleccione una respuesta antes de comprobarla."
+    ],
+    [
+      "Casework and understanding checks",
+      "Casos prácticos y comprobaciones de comprensión"
+    ],
+    [
+      "Free, non-credit practice. Numerical and multiple-choice feedback is automatic. Written responses are self-review only: no instructor grade, course passage, regulated study time, or certificate is recorded. Work is saved only in this browser.",
+      "Práctica gratuita sin créditos. La corrección de respuestas numéricas y de opción múltiple es automática. Las respuestas escritas requieren autoevaluación: no se registra una calificación del instructor, aprobación del curso, tiempo de estudio regulado ni certificado. El trabajo se guarda solo en este navegador."
+    ],
+    [
+      "No separate casework is placed after this lesson. Its reading exercises and practice questions remain available.",
+      "Esta lección no incluye casos separados. Sus ejercicios de lectura y preguntas de práctica siguen disponibles."
+    ],
+    [
+      "Your answer",
+      "Su respuesta"
+    ],
+    [
+      "Your written analysis (self-review, not an instructor grade)",
+      "Su análisis escrito (autoevaluación, sin calificación del instructor)"
+    ],
+    [
+      "Compare your response — no automatic grade.",
+      "Compare su respuesta — sin calificación automática."
+    ],
+    [
+      "Review this result.",
+      "Revise este resultado."
+    ],
+    [
+      "Check practice and review reasoning",
+      "Comprobar la práctica y revisar el razonamiento"
+    ],
+    [
+      "Start this activity again",
+      "Reiniciar esta actividad"
+    ],
+    [
+      "Complete each response, then check your work.",
+      "Complete todas las respuestas y luego compruebe su trabajo."
+    ],
+    [
+      "Optional reflection — not graded",
+      "Reflexión opcional — sin calificación"
+    ],
+    [
+      "Your response changed. Check this activity again to refresh the results.",
+      "Su respuesta ha cambiado. Compruebe de nuevo la actividad para actualizar los resultados."
+    ],
+    [
+      "Choose an answer.",
+      "Seleccione una respuesta."
+    ],
+    [
+      "Enter a finite number.",
+      "Introduzca un número finito."
+    ],
+    [
+      "Write your analysis before revealing the self-review criteria.",
+      "Escriba su análisis antes de consultar los criterios de autoevaluación."
+    ],
+    [
+      "Introduction",
+      "Introducción"
+    ],
+    [
+      "Lesson",
+      "Lección"
+    ],
+    [
+      "Skip to main content",
+      "Ir al contenido principal"
+    ],
+    [
+      "Primary navigation",
+      "Navegación principal"
+    ],
+    [
+      "StateCourse home",
+      "Inicio de StateCourse"
+    ],
+    [
+      "National Academy",
+      "Academia nacional"
+    ],
+    [
+      "Get Licensed",
+      "Obtener una licencia"
+    ],
+    [
+      "Exam Prep",
+      "Preparación para el examen"
+    ],
+    [
+      "Renew / CE",
+      "Renovación / Educación continua"
+    ],
+    [
+      "Mortgage / NMLS",
+      "Hipotecas / NMLS"
+    ],
+    [
+      "State Requirements",
+      "Requisitos estatales"
+    ],
+    [
+      "Resources",
+      "Recursos"
+    ],
+    [
+      "Pricing",
+      "Precios"
+    ],
+    [
+      "Blog",
+      "Blog"
+    ],
+    [
+      "Create Account",
+      "Crear una cuenta"
+    ],
+    [
+      "My Courses",
+      "Mis cursos"
+    ],
+    [
+      "Choose Your State",
+      "Seleccione su estado"
+    ],
+    [
+      "Open navigation",
+      "Abrir navegación"
+    ],
+    [
+      "Menu",
+      "Menú"
+    ],
+    [
+      "Real estate licensing, state by state.",
+      "Licencias inmobiliarias, estado por estado."
+    ],
+    [
+      "Footer navigation",
+      "Navegación del pie de página"
+    ],
+    [
+      "Courses",
+      "Cursos"
+    ],
+    [
+      "Approval Verification",
+      "Verificación de aprobaciones"
+    ],
+    [
+      "Programs shown as In Development are not approved enrollment offers and cannot award regulatory credit.",
+      "Los programas indicados como «En desarrollo» no constituyen ofertas de inscripción aprobadas ni pueden otorgar créditos para licencias."
+    ],
+    [
+      "AI lesson coach",
+      "Asistente de la lección con IA"
+    ],
+    [
+      "AI lesson coach — optional pilot",
+      "Asistente de la lección con IA — programa piloto opcional"
+    ],
+    [
+      "Lesson concept",
+      "Concepto de la lección"
+    ],
+    [
+      "Ask about this lesson",
+      "Preguntar sobre esta lección"
+    ],
+    [
+      "Help me understand",
+      "Ayúdeme a comprender"
+    ],
+    [
+      "Ask about this concept, or explain your reasoning. Do not include personal or client information.",
+      "Pregunte sobre este concepto o explique su razonamiento. No incluya información personal ni de clientes."
+    ],
+    [
+      "Your question / Why did you choose this answer? (optional reasoning)",
+      "Su pregunta / ¿Por qué eligió esta respuesta? (razonamiento opcional)"
+    ],
+    [
+      "I agree to send my question, selected practice answer and relevant lesson excerpts to the AI provider named above. Do not send client documents, SSNs, bank details or borrower information. No account/profile or earlier conversation is sent.",
+      "Acepto enviar mi pregunta, la respuesta de práctica seleccionada y los fragmentos pertinentes de la lección al proveedor de IA indicado arriba. No envíe documentos de clientes, números de Seguro Social, datos bancarios ni información de prestatarios. No se envían datos de la cuenta o del perfil ni conversaciones anteriores."
+    ],
+    [
+      "Send to AI coach",
+      "Enviar al asistente de IA"
+    ],
+    [
+      "Retry same request",
+      "Reintentar la misma solicitud"
+    ],
+    [
+      "Practice only. AI can be wrong; check the cited lesson. It cannot grant credit or change your score.",
+      "Solo práctica. La IA puede equivocarse; verifique la lección citada. No puede otorgar créditos ni cambiar su puntuación."
+    ],
+    [
+      "Enter a question and agree to the disclosure first.",
+      "Primero escriba una pregunta y acepte el aviso."
+    ],
+    [
+      "Asking the AI coach…",
+      "Consultando al asistente de IA…"
+    ],
+    [
+      "The coach is busy or its pilot limit was reached. Continue ordinary practice.",
+      "El asistente está ocupado o se alcanzó el límite del programa piloto. Continúe con la práctica."
+    ],
+    [
+      "The AI coach is unavailable. Ordinary practice still works.",
+      "El asistente de IA no está disponible. Puede continuar con la práctica."
+    ],
+    [
+      "The lesson changed. Reload before using the coach.",
+      "La lección ha cambiado. Actualice la página antes de usar el asistente."
+    ],
+    [
+      "AI explanation — check the sources",
+      "Explicación de IA — verifique las fuentes"
+    ],
+    [
+      "The available sources are insufficient",
+      "Las fuentes disponibles son insuficientes"
+    ],
+    [
+      "Read source lesson",
+      "Leer la lección fuente"
+    ],
+    [
+      "Try the next practice question",
+      "Intentar la siguiente pregunta de práctica"
+    ],
+    [
+      "The coach timed out. Ordinary practice still works.",
+      "Se agotó el tiempo de espera del asistente. Puede continuar con la práctica."
+    ],
+    [
+      "AI provider: Google Gemini",
+      "Proveedor de IA: Google Gemini"
+    ],
+    [
+      "AI provider: OpenAI",
+      "Proveedor de IA: OpenAI"
+    ],
+    [
+      "North Carolina",
+      "Carolina del Norte"
+    ],
+    [
+      "Pennsylvania",
+      "Pensilvania"
+    ],
+    [
+      "Real and personal property",
+      "Bienes inmuebles y bienes muebles"
+    ],
+    [
+      "What California DRE does",
+      "Funciones del Departamento de Bienes Raíces de California (DRE)"
+    ],
+    [
+      "Loan-to-value versus down payment",
+      "Relación préstamo-valor frente al pago inicial"
+    ],
+    [
+      "Alaska Real Estate Salesperson Prelicense - Module 01",
+      "Alaska Real Estate Salesper Prelicense - Módulo 01"
+    ],
+    [
+      "Alaska Real Estate Salesperson Prelicense - Module 02",
+      "Presicencia de vendedor de bienes raíces de Alaska - Módulo 02"
+    ],
+    [
+      "Alaska Real Estate Salesperson Prelicense - Module 03",
+      "Presicencia de vendedor inmobiliario de Alaska - Módulo 03"
+    ],
+    [
+      "Alaska Real Estate Salesperson Prelicense - Module 04",
+      "Presicencia de vendedor inmobiliario de Alaska - Módulo 04"
+    ],
+    [
+      "Alaska Real Estate Salesperson Prelicense - Module 05",
+      "Presicencia de vendedor inmobiliario de Alaska - Módulo 05"
+    ],
+    [
+      "Alaska Real Estate Salesperson Prelicense - Module 06",
+      "Venta de bienes raíces de Alaska Prelicence - Módulo 06"
+    ],
+    [
+      "Alaska Real Estate Salesperson Prelicense - Module 07",
+      "Presicencia de vendedor inmobiliario de Alaska - Módulo 07"
+    ],
+    [
+      "Alaska Real Estate Salesperson Prelicense - Module 08",
+      "Presicencia de vendedor de bienes raíces de Alaska - Módulo 08"
+    ],
+    [
+      "Arizona Real Estate Salesperson Prelicense — Module AZ-01",
+      "Prelicence de vendedor inmobiliario de Arizona — Módulo AZ-01"
+    ],
+    [
+      "Arizona Real Estate Salesperson Prelicense — Module AZ-02",
+      "Prelicence de vendedor inmobiliario de Arizona — Módulo AZ-02"
+    ],
+    [
+      "Arizona Real Estate Salesperson Prelicense — Module AZ-03",
+      "Prelicencia de vendedor inmobiliario de Arizona — Módulo AZ-03"
+    ],
+    [
+      "Arizona Real Estate Salesperson Prelicense — Module AZ-04",
+      "Prelicence de vendedor inmobiliario de Arizona — Módulo AZ-04"
+    ],
+    [
+      "Arizona Real Estate Salesperson Prelicense — Module AZ-05",
+      "Prelicence de vendedor inmobiliario de Arizona — Módulo AZ-05"
+    ],
+    [
+      "Arizona Real Estate Salesperson Prelicense — Module AZ-06",
+      "Prelicence de vendedor inmobiliario de Arizona — Módulo AZ-06"
+    ],
+    [
+      "Arizona Real Estate Salesperson Prelicense — Module AZ-07",
+      "Prelicencia de vendedor inmobiliario de Arizona — Módulo AZ-07"
+    ],
+    [
+      "Arizona Real Estate Salesperson Prelicense — Module AZ-08",
+      "Plástico de vendedor inmobiliario de Arizona — Módulo AZ-08"
+    ],
+    [
+      "Arizona Real Estate Salesperson Prelicense — Module AZ-09",
+      "Prelicencia de vendedor inmobiliario de Arizona — Módulo AZ-09"
+    ],
+    [
+      "Arizona Real Estate Salesperson Prelicense — Module AZ-10",
+      "Plástico de vendedor de bienes raíces de Arizona — Módulo AZ-10"
+    ],
+    [
+      "Arizona Real Estate Salesperson Prelicense — Module AZ-11",
+      "Prelicence de vendedor inmobiliario de Arizona — Módulo AZ-11"
+    ],
+    [
+      "Arizona Real Estate Salesperson Prelicense — Module AZ-12",
+      "Prelicence de vendedor inmobiliario de Arizona — Módulo AZ-12"
+    ],
+    [
+      "Arizona Real Estate Salesperson Prelicense — Module AZ-13",
+      "Prelicence de vendedor inmobiliario de Arizona — Módulo AZ-13"
+    ],
+    [
+      "Arizona Real Estate Contract Law and Contract Writing — Module CW-01",
+      "Ley de contratos inmobiliarios de Arizona y escritura de contratos — Módulo CW-01"
+    ],
+    [
+      "Arizona Real Estate Contract Law and Contract Writing — Module CW-02",
+      "Ley de contratos inmobiliarios de Arizona y escritura de contratos — Módulo CW-02"
+    ],
+    [
+      "Real Estate Principles - Lesson Assignment 01",
+      "Principios inmobiliarios - Lección Asignación 01"
+    ],
+    [
+      "Real Estate Principles - Lesson Assignment 02",
+      "Principios inmobiliarios - Lección Asignación 02"
+    ],
+    [
+      "Real Estate Principles - Lesson Assignment 03",
+      "Principios inmobiliarios - Lección Asignación 03"
+    ],
+    [
+      "Real Estate Principles - Lesson Assignment 04",
+      "Principios inmobiliarios - Lección Asignación 04"
+    ],
+    [
+      "Real Estate Principles - Lesson Assignment 05",
+      "Principios inmobiliarios - Lección Asignación 05"
+    ],
+    [
+      "Real Estate Principles - Lesson Assignment 06",
+      "Principios inmobiliarios - Lección Asignación 06"
+    ],
+    [
+      "Real Estate Principles - Lesson Assignment 07",
+      "Principios inmobiliarios - Lección Asignación 07"
+    ],
+    [
+      "Real Estate Principles - Lesson Assignment 08",
+      "Principios inmobiliarios - Lección Asignación 08"
+    ],
+    [
+      "Real Estate Principles - Lesson Assignment 09",
+      "Principios inmobiliarios - Lección Asignación 09"
+    ],
+    [
+      "Real Estate Principles - Lesson Assignment 10",
+      "Principios inmobiliarios - Lección Asignación 10"
+    ],
+    [
+      "Real Estate Principles - Lesson Assignment 11",
+      "Principios inmobiliarios - Lección Asignación 11"
+    ],
+    [
+      "Real Estate Principles - Lesson Assignment 12",
+      "Principios inmobiliarios - Lección Asignación 12"
+    ],
+    [
+      "Real Estate Principles - Lesson Assignment 13",
+      "Principios inmobiliarios - Lección Asignación 13"
+    ],
+    [
+      "Real Estate Principles - Lesson Assignment 14",
+      "Principios inmobiliarios - Lección Asignación 14"
+    ],
+    [
+      "Real Estate Principles - Lesson Assignment 15",
+      "Principios inmobiliarios - Lección Asignación 15"
+    ],
+    [
+      "Real Estate Practice - Lesson Assignment 01",
+      "Práctica Inmobiliaria - Lección Asignación 01"
+    ],
+    [
+      "Real Estate Practice - Lesson Assignment 02",
+      "Práctica Inmobiliaria - Lección Asignación 02"
+    ],
+    [
+      "Real Estate Practice - Lesson Assignment 03",
+      "Práctica Inmobiliaria - Asignación de Lección 03"
+    ],
+    [
+      "Real Estate Practice - Lesson Assignment 04",
+      "Práctica Inmobiliaria - Lección Asignación 04"
+    ],
+    [
+      "Real Estate Practice - Lesson Assignment 05",
+      "Práctica Inmobiliaria - Lección Asignación 05"
+    ],
+    [
+      "Real Estate Practice - Lesson Assignment 06",
+      "Práctica Inmobiliaria - Lección Asignación 06"
+    ],
+    [
+      "Real Estate Practice - Lesson Assignment 07",
+      "Práctica Inmobiliaria - Lección Asignación 07"
+    ],
+    [
+      "Real Estate Practice - Lesson Assignment 08",
+      "Práctica Inmobiliaria - Lección Asignación 08"
+    ],
+    [
+      "Real Estate Practice - Lesson Assignment 09",
+      "Práctica Inmobiliaria - Lección Asignación 09"
+    ],
+    [
+      "Real Estate Practice - Lesson Assignment 10",
+      "Práctica inmobiliaria - Lección Asignación 10"
+    ],
+    [
+      "Real Estate Practice - Lesson Assignment 11",
+      "Práctica inmobiliaria - Lección Asignación 11"
+    ],
+    [
+      "Real Estate Practice - Lesson Assignment 12",
+      "Práctica inmobiliaria - Lección Asignación 12"
+    ],
+    [
+      "Real Estate Practice - Lesson Assignment 13",
+      "Práctica inmobiliaria - Lección Asignación 13"
+    ],
+    [
+      "Real Estate Practice - Lesson Assignment 14",
+      "Práctica inmobiliaria - Lección Asignación 14"
+    ],
+    [
+      "Real Estate Practice - Lesson Assignment 15",
+      "Práctica inmobiliaria - Lección Asignación 15"
+    ],
+    [
+      "Mortgage Loan Brokering and Lending - Lesson Assignment 01",
+      "Préstamos hipotecarios y préstamos - Lección Asignación 01"
+    ],
+    [
+      "Mortgage Loan Brokering and Lending - Lesson Assignment 02",
+      "Préstamos hipotecarios y préstamos - Lección Asignación 02"
+    ],
+    [
+      "Mortgage Loan Brokering and Lending - Lesson Assignment 03",
+      "Préstamos hipotecarios y préstamos hipotecarios - Lección Asignación 03"
+    ],
+    [
+      "Mortgage Loan Brokering and Lending - Lesson Assignment 04",
+      "Préstamos hipotecarios y préstamos hipotecarios - Lección Asignación 04"
+    ],
+    [
+      "Mortgage Loan Brokering and Lending - Lesson Assignment 05",
+      "Préstamos hipotecarios y préstamos - Lección Asignación 05"
+    ],
+    [
+      "Mortgage Loan Brokering and Lending - Lesson Assignment 06",
+      "Préstamos hipotecarios y préstamos - Lección Asignación 06"
+    ],
+    [
+      "Mortgage Loan Brokering and Lending - Lesson Assignment 07",
+      "Intermediación y préstamo hipotecario - Lección Asignación 07"
+    ],
+    [
+      "Mortgage Loan Brokering and Lending - Lesson Assignment 08",
+      "Intermediación y préstamo hipotecario - Lección Asignación 08"
+    ],
+    [
+      "Mortgage Loan Brokering and Lending - Lesson Assignment 09",
+      "Préstamos hipotecarios y préstamos - Lección Asignación 09"
+    ],
+    [
+      "Mortgage Loan Brokering and Lending - Lesson Assignment 10",
+      "Intermediación y préstamos hipotecarios - Lección Asignación 10"
+    ],
+    [
+      "Mortgage Loan Brokering and Lending - Lesson Assignment 11",
+      "Préstamos hipotecarios y préstamos hipotecarios - Lección Asignación 11"
+    ],
+    [
+      "Mortgage Loan Brokering and Lending - Lesson Assignment 12",
+      "Intermediación y préstamos hipotecarios - Lección Asignación 12"
+    ],
+    [
+      "Mortgage Loan Brokering and Lending - Lesson Assignment 13",
+      "Intermediación y préstamos hipotecarios - Lección Asignación 13"
+    ],
+    [
+      "Mortgage Loan Brokering and Lending - Lesson Assignment 14",
+      "Intermediación y préstamos hipotecarios - Lección Asignación 14"
+    ],
+    [
+      "Mortgage Loan Brokering and Lending - Lesson Assignment 15",
+      "Intermediación y préstamos hipotecarios - Lección Asignación 15"
+    ],
+    [
+      "Colorado Real Estate Law and Practice — Module 01",
+      "Ley y práctica inmobiliaria de Colorado — Módulo 01"
+    ],
+    [
+      "Colorado Real Estate Law and Practice — Module 02",
+      "Ley y práctica inmobiliaria de Colorado — Módulo 02"
+    ],
+    [
+      "Colorado Real Estate Law and Practice — Module 03",
+      "Ley y práctica inmobiliaria de Colorado — Módulo 03"
+    ],
+    [
+      "Colorado Real Estate Law and Practice — Module 04",
+      "Ley y práctica inmobiliaria de Colorado — Módulo 04"
+    ],
+    [
+      "Colorado Real Estate Law and Practice — Module 05",
+      "Ley y práctica inmobiliaria de Colorado — Módulo 05"
+    ],
+    [
+      "Colorado Contracts and Regulations — Module 01",
+      "Contratos y Reglamentos de Colorado — Módulo 01"
+    ],
+    [
+      "Colorado Contracts and Regulations — Module 02",
+      "Contratos y Reglamentos de Colorado — Módulo 02"
+    ],
+    [
+      "Colorado Contracts and Regulations — Module 03",
+      "Contratos y Reglamentos de Colorado — Módulo 03"
+    ],
+    [
+      "Colorado Contracts and Regulations — Module 04",
+      "Contratos y Reglamentos de Colorado — Módulo 04"
+    ],
+    [
+      "Colorado Contracts and Regulations — Module 05",
+      "Contratos y Reglamentos de Colorado — Módulo 05"
+    ],
+    [
+      "Colorado Record Keeping and Trust Accounts — Module 01",
+      "Registro de Colorado y cuentas fiduciarias — Módulo 01"
+    ],
+    [
+      "Colorado Record Keeping and Trust Accounts — Module 02",
+      "Colorado Recording Keeping and Trust Accounts — Módulo 02"
+    ],
+    [
+      "Colorado Record Keeping and Trust Accounts — Module 03",
+      "Registro de Colorado y cuentas fiduciarias — Módulo 03"
+    ],
+    [
+      "Colorado Record Keeping and Trust Accounts — Module 04",
+      "Registro de Colorado y cuentas fiduciarias — Módulo 04"
+    ],
+    [
+      "Colorado Current Legal Issues — Module 01",
+      "Problemas legales actuales de Colorado — Módulo 01"
+    ],
+    [
+      "Colorado Current Legal Issues — Module 02",
+      "Problemas legales actuales de Colorado — Módulo 02"
+    ],
+    [
+      "Colorado Current Legal Issues — Module 03",
+      "Problemas legales actuales de Colorado — Módulo 03"
+    ],
+    [
+      "Colorado Closings — Module 01",
+      "Cerramientos en Colorado — Módulo 01"
+    ],
+    [
+      "Colorado Closings — Module 02",
+      "Cerramientos de Colorado — Módulo 02"
+    ],
+    [
+      "Colorado Closings — Module 03",
+      "Cerramientos de Colorado — Módulo 03"
+    ],
+    [
+      "Colorado Closings — Module 04",
+      "Los cierres de Colorado — Módulo 04"
+    ],
+    [
+      "Colorado Closings — Module 05",
+      "Cerramientos en Colorado — Módulo 05"
+    ],
+    [
+      "Colorado Practical Applications — Module 01",
+      "Aplicaciones prácticas de Colorado — Módulo 01"
+    ],
+    [
+      "Colorado Practical Applications — Module 02",
+      "Aplicaciones prácticas de Colorado — Módulo 02"
+    ],
+    [
+      "Colorado Practical Applications — Module 03",
+      "Aplicaciones prácticas de Colorado — Módulo 03"
+    ],
+    [
+      "Colorado Practical Applications — Module 04",
+      "Aplicaciones prácticas de Colorado — Módulo 04"
+    ],
+    [
+      "Colorado Practical Applications — Module 05",
+      "Aplicaciones prácticas de Colorado — Módulo 05"
+    ],
+    [
+      "Colorado Practical Applications — Module 06",
+      "Aplicaciones prácticas de Colorado — Módulo 06"
+    ],
+    [
+      "Colorado Practical Applications — Module 07",
+      "Aplicaciones prácticas de Colorado — Módulo 07"
+    ],
+    [
+      "Maine Sales Agent Course — Module 01",
+      "Curso de Agente de Ventas de Maine — Módulo 01"
+    ],
+    [
+      "Maine Sales Agent Course — Module 02",
+      "Curso de Agente de Ventas de Maine — Módulo 02"
+    ],
+    [
+      "Maine Sales Agent Course — Module 03",
+      "Curso de Agente de Ventas de Maine — Módulo 03"
+    ],
+    [
+      "Maine Sales Agent Course — Module 04",
+      "Curso de Agente de Ventas de Maine — Módulo 04"
+    ],
+    [
+      "Maine Sales Agent Course — Module 05",
+      "Curso de Agente de Ventas de Maine — Módulo 05"
+    ],
+    [
+      "Maine Sales Agent Course — Module 06",
+      "Curso de Agente de Ventas de Maine — Módulo 06"
+    ],
+    [
+      "Maine Sales Agent Course — Module 07",
+      "Curso de Agente de Ventas de Maine — Módulo 07"
+    ],
+    [
+      "Maine Sales Agent Course — Module 08",
+      "Curso de Agente de Ventas de Maine — Módulo 08"
+    ],
+    [
+      "Maine Sales Agent Course — Module 09",
+      "Curso de Agente de Ventas de Maine — Módulo 09"
+    ],
+    [
+      "Principles of Real Estate - Michigan Salesperson Prelicensure — Module 01",
+      "Principios de propiedad inmobiliaria - Michigan Salsperson Prelicensure — Módulo 01"
+    ],
+    [
+      "Principles of Real Estate - Michigan Salesperson Prelicensure — Module 02",
+      "Principios de propiedad inmobiliaria - Michigan Salsperson Prelicensure — Módulo 02"
+    ],
+    [
+      "Principles of Real Estate - Michigan Salesperson Prelicensure — Module 03",
+      "Principios de propiedad inmobiliaria - Michigan Saleper Prelicensure — Módulo 03"
+    ],
+    [
+      "Principles of Real Estate - Michigan Salesperson Prelicensure — Module 04",
+      "Principios de la propiedad inmobiliaria - Michigan Saleper Prelicensure — Módulo 04"
+    ],
+    [
+      "Principles of Real Estate - Michigan Salesperson Prelicensure — Module 05",
+      "Principios de propiedad inmobiliaria - Michigan Saleper Prelicensure — Módulo 05"
+    ],
+    [
+      "Principles of Real Estate - Michigan Salesperson Prelicensure — Module 06",
+      "Principios de propiedad inmobiliaria - Michigan Saleper Prelicensure — Módulo 06"
+    ],
+    [
+      "Principles of Real Estate - Michigan Salesperson Prelicensure — Module 07",
+      "Principios de propiedad inmobiliaria - Michigan Saleper Prelicensure — Módulo 07"
+    ],
+    [
+      "Principles of Real Estate - Michigan Salesperson Prelicensure — Module 08",
+      "Principios de propiedad inmobiliaria - Michigan Salsperson Prelicensure — Módulo 08"
+    ],
+    [
+      "Principles of Real Estate - Michigan Salesperson Prelicensure — Module 09",
+      "Principios de propiedad inmobiliaria - Michigan Saleper Prelicensure — Módulo 09"
+    ],
+    [
+      "Principles of Real Estate - Michigan Salesperson Prelicensure — Module 10",
+      "Principios de propiedad inmobiliaria - Michigan Salesper Person Prelicensure — Módulo 10"
+    ],
+    [
+      "Missouri Salesperson Pre-Examination Course — Module MO-01",
+      "Curso de preexamen de vendedor de Missouri — Módulo MO-01"
+    ],
+    [
+      "Missouri Salesperson Pre-Examination Course — Module MO-02",
+      "Curso de preexamen de vendedor de Missouri — Módulo MO-02"
+    ],
+    [
+      "Missouri Salesperson Pre-Examination Course — Module MO-03",
+      "Curso de preexamen de vendedor de Missouri — Módulo MO-03"
+    ],
+    [
+      "Missouri Salesperson Pre-Examination Course — Module MO-04",
+      "Curso de preexamen para vendedores de Missouri — Módulo MO-04"
+    ],
+    [
+      "Missouri Salesperson Pre-Examination Course — Module MO-05",
+      "Curso de preexamen de vendedor de Missouri — Módulo MO-05"
+    ],
+    [
+      "Missouri Salesperson Pre-Examination Course — Module MO-06",
+      "Curso de preexamen de vendedor de Missouri — Módulo MO-06"
+    ],
+    [
+      "Missouri Salesperson Pre-Examination Course — Module MO-07",
+      "Curso de preexamen para vendedores de Missouri — Módulo MO-07"
+    ],
+    [
+      "Missouri Salesperson Pre-Examination Course — Module MO-08",
+      "Curso de preexamen para vendedores de Missouri — Módulo MO-08"
+    ],
+    [
+      "Missouri Salesperson Pre-Examination Course — Module MO-09",
+      "Curso de preexamen de vendedor de Missouri — Módulo MO-09"
+    ],
+    [
+      "Missouri Real Estate Practice Course — Module MREP-01",
+      "Curso de práctica inmobiliaria de Missouri — Módulo MREP-01"
+    ],
+    [
+      "Missouri Real Estate Practice Course — Module MREP-02",
+      "Curso de práctica inmobiliaria de Missouri — Módulo MREP-02"
+    ],
+    [
+      "Missouri Real Estate Practice Course — Module MREP-03",
+      "Curso de práctica inmobiliaria de Missouri — Módulo MREP-03"
+    ],
+    [
+      "Missouri Real Estate Practice Course — Module MREP-04",
+      "Curso de práctica inmobiliaria de Missouri — Módulo MREP-04"
+    ],
+    [
+      "Missouri Real Estate Practice Course — Module MREP-05",
+      "Curso de práctica inmobiliaria de Missouri — Módulo MREP-05"
+    ],
+    [
+      "Missouri Real Estate Practice Course — Module MREP-06",
+      "Curso de práctica inmobiliaria de Missouri — Módulo MREP-06"
+    ],
+    [
+      "North Carolina Broker Prelicensing Course — Module NC-01",
+      "Curso de Prelicencia de Corredores de Carolina del Norte — Módulo NC-01"
+    ],
+    [
+      "North Carolina Broker Prelicensing Course — Module NC-02",
+      "Curso de Prelicencia de Corredores de Carolina del Norte — Módulo NC-02"
+    ],
+    [
+      "North Carolina Broker Prelicensing Course — Module NC-03",
+      "Curso de prelicencia para corredores de Carolina del Norte — Módulo NC-03"
+    ],
+    [
+      "North Carolina Broker Prelicensing Course — Module NC-04",
+      "Curso de Prelicencia de Corredores de Carolina del Norte — Módulo NC-04"
+    ],
+    [
+      "North Carolina Broker Prelicensing Course — Module NC-05",
+      "Curso de Prelicencia de Corredores de Carolina del Norte — Módulo NC-05"
+    ],
+    [
+      "North Carolina Broker Prelicensing Course — Module NC-06",
+      "Curso de Prelicencia de Corredores de Carolina del Norte — Módulo NC-06"
+    ],
+    [
+      "North Carolina Broker Prelicensing Course — Module NC-07",
+      "Curso de Prelicencia de Corredores de Carolina del Norte — Módulo NC-07"
+    ],
+    [
+      "North Carolina Broker Prelicensing Course — Module NC-08",
+      "Curso de Prelicencia de Corredores de Carolina del Norte — Módulo NC-08"
+    ],
+    [
+      "North Carolina Broker Prelicensing Course — Module NC-09",
+      "Curso de prelicencia para corredores de Carolina del Norte — Módulo NC-09"
+    ],
+    [
+      "North Carolina Broker Prelicensing Course — Module NC-10",
+      "Curso de Prelicencia de Corredores de Carolina del Norte — Módulo NC-10"
+    ],
+    [
+      "North Carolina Broker Prelicensing Course — Module NC-11",
+      "Curso de Prelicencia de Corredores de Carolina del Norte — Módulo NC-11"
+    ],
+    [
+      "North Carolina Broker Prelicensing Course — Module NC-12",
+      "Curso de Prelicencia de Corredores de Carolina del Norte — Módulo NC-12"
+    ],
+    [
+      "North Carolina Broker Prelicensing Course — Module NC-13",
+      "Curso de Prelicencia de Corredores de Carolina del Norte — Módulo NC-13"
+    ],
+    [
+      "North Carolina Broker Prelicensing Course — Module NC-14",
+      "Curso de Prelicencia de Corredores de Carolina del Norte — Módulo NC-14"
+    ],
+    [
+      "North Carolina Broker Prelicensing Course — Module NC-15",
+      "Curso de Prelicencia de Corredores de Carolina del Norte — Módulo NC-15"
+    ],
+    [
+      "North Carolina Broker Prelicensing Course — Module NC-16",
+      "Curso de Prelicencia de Corredores de Carolina del Norte — Módulo NC-16"
+    ],
+    [
+      "Oklahoma Basic Course of Real Estate, Part I of II — Module OK-01",
+      "Curso básico de bienes raíces de Oklahoma, Parte I de II — Módulo OK-01"
+    ],
+    [
+      "Oklahoma Basic Course of Real Estate, Part I of II — Module OK-02",
+      "Curso básico de bienes raíces de Oklahoma, Parte I de II — Módulo OK-02"
+    ],
+    [
+      "Oklahoma Basic Course of Real Estate, Part I of II — Module OK-03",
+      "Curso básico de bienes raíces de Oklahoma, Parte I de II — Módulo OK-03"
+    ],
+    [
+      "Oklahoma Basic Course of Real Estate, Part I of II — Module OK-04",
+      "Curso básico de bienes raíces de Oklahoma, Parte I de II — Módulo OK-04"
+    ],
+    [
+      "Oklahoma Basic Course of Real Estate, Part I of II — Module OK-05",
+      "Curso básico de bienes raíces de Oklahoma, Parte I de II — Módulo OK-05"
+    ],
+    [
+      "Oklahoma Basic Course of Real Estate, Part I of II — Module OK-06",
+      "Curso básico de bienes raíces de Oklahoma, Parte I de II — Módulo OK-06"
+    ],
+    [
+      "Oklahoma Basic Course of Real Estate, Part I of II — Module OK-07",
+      "Curso básico de bienes raíces de Oklahoma, Parte I de II — Módulo OK-07"
+    ],
+    [
+      "Oklahoma Basic Course of Real Estate, Part I of II — Module OK-08",
+      "Curso básico de bienes raíces de Oklahoma, Parte I de II — Módulo OK-08"
+    ],
+    [
+      "Oklahoma Basic Course of Real Estate, Part I of II — Module OK-09",
+      "Curso básico de bienes raíces de Oklahoma, Parte I de II — Módulo OK-09"
+    ],
+    [
+      "Oklahoma Basic Course of Real Estate, Part I of II — Module OK-10",
+      "Curso básico de bienes raíces de Oklahoma, Parte I de II — Módulo OK-10"
+    ],
+    [
+      "Oklahoma Basic Course of Real Estate, Part I of II — Module OK-11",
+      "Curso básico de bienes raíces de Oklahoma, Parte I de II — Módulo OK-11"
+    ],
+    [
+      "Oklahoma Basic Course of Real Estate, Part I of II — Module OK-12",
+      "Curso básico de bienes raíces de Oklahoma, Parte I de II — Módulo OK-12"
+    ],
+    [
+      "Oklahoma Basic Course of Real Estate, Part I of II — Module OK-13",
+      "Curso básico de bienes raíces de Oklahoma, Parte I de II — Módulo OK-13"
+    ],
+    [
+      "Oklahoma Basic Course of Real Estate, Part I of II — Module OK-14",
+      "Curso básico de bienes raíces de Oklahoma, Parte I de II — Módulo OK-14"
+    ],
+    [
+      "Oklahoma Basic Course of Real Estate, Part I of II — Module OK-15",
+      "Curso básico de bienes raíces de Oklahoma, Parte I de II — Módulo OK-15"
+    ],
+    [
+      "Oklahoma Basic Course of Real Estate, Part I of II — Module OK-16",
+      "Curso básico de bienes raíces de Oklahoma, Parte I de II — Módulo OK-16"
+    ],
+    [
+      "Pennsylvania Real Estate Fundamentals — Module PA-F-01",
+      "Pennsylvania Real Estate Fundamentals — Módulo PA-F-01"
+    ],
+    [
+      "Pennsylvania Real Estate Fundamentals — Module PA-F-02",
+      "Pennsylvania Real Estate Fundamentals — Módulo PA-F-02"
+    ],
+    [
+      "Pennsylvania Real Estate Fundamentals — Module PA-F-03",
+      "Pennsylvania Real Estate Fundamentals — Módulo PA-F-03"
+    ],
+    [
+      "Pennsylvania Real Estate Fundamentals — Module PA-F-04",
+      "Fundamentos inmobiliarios de Pennsylvania — Módulo PA-F-04"
+    ],
+    [
+      "Pennsylvania Real Estate Fundamentals — Module PA-F-05",
+      "Pennsylvania Real Estate Fundamentals — Módulo PA-F-05"
+    ],
+    [
+      "Pennsylvania Real Estate Fundamentals — Module PA-F-06",
+      "Pennsylvania Real Estate Fundamentals — Módulo PA-F-06"
+    ],
+    [
+      "Pennsylvania Real Estate Practice — Module PA-P-01",
+      "Práctica inmobiliaria de Pennsylvania — Módulo PA-P-01"
+    ],
+    [
+      "Pennsylvania Real Estate Practice — Module PA-P-02",
+      "La práctica inmobiliaria de Pennsylvania — Módulo PA-P-02"
+    ],
+    [
+      "Pennsylvania Real Estate Practice — Module PA-P-03",
+      "La práctica inmobiliaria de Pennsylvania — Módulo PA-P-03"
+    ],
+    [
+      "Pennsylvania Real Estate Practice — Module PA-P-04",
+      "La práctica inmobiliaria de Pennsylvania — Módulo PA-P-04"
+    ],
+    [
+      "Pennsylvania Real Estate Practice — Module PA-P-05",
+      "La práctica inmobiliaria de Pennsylvania — Módulo PA-P-05"
+    ],
+    [
+      "Pennsylvania Real Estate Practice — Module PA-P-06",
+      "Pennsylvania Real Estate Practice — Módulo PA-P-06"
+    ],
+    [
+      "Pennsylvania Real Estate Practice — Module PA-P-07",
+      "Pennsylvania Real Estate Practice — Módulo PA-P-07"
+    ],
+    [
+      "Pennsylvania Real Estate Practice — Module PA-P-08",
+      "Práctica inmobiliaria de Pennsylvania — Módulo PA-P-08"
+    ],
+    [
+      "Pennsylvania Real Estate Practice — Module PA-P-09",
+      "La práctica inmobiliaria de Pennsylvania — Módulo PA-P-09"
+    ],
+    [
+      "Texas Principles of Real Estate I — Module 01",
+      "Principios de Bienes Raíces de Texas I — Módulo 01"
+    ],
+    [
+      "Texas Principles of Real Estate I — Module 02",
+      "Principios de Bienes Raíces de Texas I — Módulo 02"
+    ],
+    [
+      "Texas Principles of Real Estate I — Module 03",
+      "Principios de Bienes Raíces de Texas I — Módulo 03"
+    ],
+    [
+      "Texas Principles of Real Estate I — Module 04",
+      "Principios de Bienes Raíces de Texas I — Módulo 04"
+    ],
+    [
+      "Texas Principles of Real Estate I — Module 05",
+      "Principios de Bienes Raíces de Texas I — Módulo 05"
+    ],
+    [
+      "Texas Principles of Real Estate I — Module 06",
+      "Principios de Bienes Raíces de Texas I — Módulo 06"
+    ],
+    [
+      "Texas Principles of Real Estate I — Module 07",
+      "Principios de Bienes Raíces de Texas I — Módulo 07"
+    ],
+    [
+      "Texas Principles of Real Estate I — Module 08",
+      "Principios de Bienes Raíces de Texas I — Módulo 08"
+    ],
+    [
+      "Texas Principles of Real Estate I — Module 09",
+      "Principios de Bienes Raíces de Texas I — Módulo 09"
+    ],
+    [
+      "Texas Principles of Real Estate II — Module 01",
+      "Principios de Bienes Raíces de Texas II — Módulo 01"
+    ],
+    [
+      "Texas Principles of Real Estate II — Module 02",
+      "Principios de Bienes Raíces de Texas II — Módulo 02"
+    ],
+    [
+      "Texas Principles of Real Estate II — Module 03",
+      "Principios de Bienes Raíces de Texas II — Módulo 03"
+    ],
+    [
+      "Texas Principles of Real Estate II — Module 04",
+      "Principios de Bienes Raíces de Texas II — Módulo 04"
+    ],
+    [
+      "Texas Principles of Real Estate II — Module 05",
+      "Tejas Principios de Bienes Raíces II — Módulo 05"
+    ],
+    [
+      "Texas Principles of Real Estate II — Module 06",
+      "Principios de Bienes Raíces de Texas II — Módulo 06"
+    ],
+    [
+      "Texas Principles of Real Estate II — Module 07",
+      "Principios de Bienes Raíces de Texas II — Módulo 07"
+    ],
+    [
+      "Texas Principles of Real Estate II — Module 08",
+      "Principios de Bienes Raíces de Texas II — Módulo 08"
+    ],
+    [
+      "Texas Principles of Real Estate II — Module 09",
+      "Principios de Bienes Raíces de Texas II — Módulo 09"
+    ],
+    [
+      "Texas Law of Agency — Module 01",
+      "Ley de la Agencia de Texas — Módulo 01"
+    ],
+    [
+      "Texas Law of Agency — Module 02",
+      "Ley de la Agencia de Texas — Módulo 02"
+    ],
+    [
+      "Texas Law of Agency — Module 03",
+      "Ley de la Agencia de Texas — Módulo 03"
+    ],
+    [
+      "Texas Law of Agency — Module 04",
+      "Ley de Agencia de Texas — Módulo 04"
+    ],
+    [
+      "Texas Law of Agency — Module 05",
+      "Ley de la Agencia de Texas — Módulo 05"
+    ],
+    [
+      "Texas Law of Agency — Module 06",
+      "Ley de la Agencia de Texas — Módulo 06"
+    ],
+    [
+      "Texas Law of Agency — Module 07",
+      "Ley de Agencia de Texas — Módulo 07"
+    ],
+    [
+      "Texas Law of Agency — Module 08",
+      "Ley de la Agencia de Texas — Módulo 08"
+    ],
+    [
+      "Texas Law of Agency — Module 09",
+      "Ley de la Agencia de Texas — Módulo 09"
+    ],
+    [
+      "Texas Law of Agency — Module 10",
+      "Ley de Agencia de Texas — Módulo 10"
+    ],
+    [
+      "Texas Law of Agency — Module 11",
+      "Ley de la Agencia de Texas — Módulo 11"
+    ],
+    [
+      "Texas Law of Agency — Module 12",
+      "Ley de la Agencia de Texas — Módulo 12"
+    ],
+    [
+      "Virginia Principles and Practices of Real Estate — Module 01",
+      "Principios y prácticas de Virginia sobre bienes raíces — Módulo 01"
+    ],
+    [
+      "Virginia Principles and Practices of Real Estate — Module 02",
+      "Principios y prácticas de Virginia sobre bienes raíces — Módulo 02"
+    ],
+    [
+      "Virginia Principles and Practices of Real Estate — Module 03",
+      "Principios y prácticas de Virginia sobre bienes raíces — Módulo 03"
+    ],
+    [
+      "Virginia Principles and Practices of Real Estate — Module 04",
+      "Principios y prácticas de Virginia sobre bienes raíces — Módulo 04"
+    ],
+    [
+      "Virginia Principles and Practices of Real Estate — Module 05",
+      "Principios y prácticas de Virginia sobre bienes raíces — Módulo 05"
+    ],
+    [
+      "Virginia Principles and Practices of Real Estate — Module 06",
+      "Principios y prácticas de Virginia sobre bienes raíces — Módulo 06"
+    ],
+    [
+      "Virginia Principles and Practices of Real Estate — Module 07",
+      "Principios y prácticas de Virginia sobre bienes raíces — Módulo 07"
+    ],
+    [
+      "Virginia Principles and Practices of Real Estate — Module 08",
+      "Principios y prácticas de Virginia sobre bienes raíces — Módulo 08"
+    ],
+    [
+      "Virginia Principles and Practices of Real Estate — Module 09",
+      "Principios y prácticas de Virginia sobre bienes raíces — Módulo 09"
+    ],
+    [
+      "Virginia Principles and Practices of Real Estate — Module 10",
+      "Principios y prácticas de Virginia sobre bienes raíces — Módulo 10"
+    ],
+    [
+      "Virginia Principles and Practices of Real Estate — Module 11",
+      "Principios y prácticas de Virginia sobre bienes raíces — Módulo 11"
+    ],
+    [
+      "Virginia Principles and Practices of Real Estate — Module 12",
+      "Principios y prácticas de Virginia sobre bienes raíces — Módulo 12"
+    ],
+    [
+      "Virginia Principles and Practices of Real Estate — Module 13",
+      "Principios y prácticas de Virginia sobre bienes raíces — Módulo 13"
+    ],
+    [
+      "Virginia Principles and Practices of Real Estate — Module 14",
+      "Principios y prácticas de Virginia sobre bienes raíces — Módulo 14"
+    ],
+    [
+      "Virginia Principles and Practices of Real Estate — Module 15",
+      "Principios y prácticas de Virginia sobre bienes raíces — Módulo 15"
+    ],
+    [
+      "Washington Real Estate Fundamentals — Module WA-F-01",
+      "Fundamentos inmobiliarios de Washington — Módulo WA-F-01"
+    ],
+    [
+      "Washington Real Estate Fundamentals — Module WA-F-02",
+      "Fundamentos inmobiliarios de Washington — Módulo WA-F-02"
+    ],
+    [
+      "Washington Real Estate Fundamentals — Module WA-F-03",
+      "Fundamentos inmobiliarios de Washington — Módulo WA-F-03"
+    ],
+    [
+      "Washington Real Estate Fundamentals — Module WA-F-04",
+      "Los fundamentos inmobiliarios de Washington — Módulo WA-F-04"
+    ],
+    [
+      "Washington Real Estate Fundamentals — Module WA-F-05",
+      "Fundamentos inmobiliarios de Washington — Módulo WA-F-05"
+    ],
+    [
+      "Washington Real Estate Fundamentals — Module WA-F-06",
+      "Fundamentos inmobiliarios de Washington — Módulo WA-F-06"
+    ],
+    [
+      "Washington Real Estate Fundamentals — Module WA-F-07",
+      "Bases inmobiliarias de Washington — Módulo WA-F-07"
+    ],
+    [
+      "Washington Real Estate Fundamentals — Module WA-F-08",
+      "Fundamentos inmobiliarios de Washington — Módulo WA-F-08"
+    ],
+    [
+      "Washington Real Estate Fundamentals — Module WA-F-09",
+      "Fundamentos inmobiliarios de Washington — Módulo WA-F-09"
+    ],
+    [
+      "Washington Real Estate Fundamentals — Module WA-F-10",
+      "Los fundamentos inmobiliarios de Washington — Módulo WA-F-10"
+    ],
+    [
+      "Washington Real Estate Fundamentals — Module WA-F-11",
+      "Fundamentos inmobiliarios de Washington — Módulo WA-F-11"
+    ],
+    [
+      "Washington Real Estate Fundamentals — Module WA-F-12",
+      "Fundamentos inmobiliarios de Washington — Módulo WA-F-12"
+    ],
+    [
+      "Washington Real Estate Practices — Module WA-P-01",
+      "Prácticas inmobiliarias de Washington — Módulo WA-P-01"
+    ],
+    [
+      "Washington Real Estate Practices — Module WA-P-02",
+      "Prácticas inmobiliarias de Washington — Módulo WA-P-02"
+    ],
+    [
+      "Washington Real Estate Practices — Module WA-P-03",
+      "Prácticas inmobiliarias de Washington — Módulo WA-P-03"
+    ],
+    [
+      "Washington Real Estate Practices — Module WA-P-04",
+      "Prácticas inmobiliarias de Washington — Módulo WA-P-04"
+    ],
+    [
+      "Washington Real Estate Practices — Module WA-P-05",
+      "Prácticas inmobiliarias de Washington — Módulo WA-P-05"
+    ],
+    [
+      "Washington Real Estate Practices — Module WA-P-06",
+      "Prácticas inmobiliarias de Washington — Módulo WA-P-06"
+    ],
+    [
+      "Wisconsin Salesperson Pre-License — Module WI-01",
+      "Wisconsin Salesper Pre-Licencia — Módulo WI-01"
+    ],
+    [
+      "Wisconsin Salesperson Pre-License — Module WI-02",
+      "Prelicencia de vendedor de Wisconsin — Módulo WI-02"
+    ],
+    [
+      "Wisconsin Salesperson Pre-License — Module WI-03",
+      "Prelicencia de vendedor de Wisconsin — Módulo WI-03"
+    ],
+    [
+      "Wisconsin Salesperson Pre-License — Module WI-04",
+      "Wisconsin Salesper Pre-Licencia — Módulo WI-04"
+    ],
+    [
+      "Wisconsin Salesperson Pre-License — Module WI-05",
+      "Wisconsin Salesper Pre-Licencia — Módulo WI-05"
+    ],
+    [
+      "Wisconsin Salesperson Pre-License — Module WI-06",
+      "Wisconsin Salesper Pre-Licencia — Módulo WI-06"
+    ],
+    [
+      "Wisconsin Salesperson Pre-License — Module WI-07",
+      "Wisconsin Salesper Pre-Licencia — Módulo WI-07"
+    ],
+    [
+      "Wisconsin Salesperson Pre-License — Module WI-08",
+      "Prelicencia de vendedor de Wisconsin — Módulo WI-08"
+    ],
+    [
+      "Wisconsin Salesperson Pre-License — Module WI-09",
+      "Wisconsin Salesper Pre-Licencia — Módulo WI-09"
+    ],
+    [
+      "Wisconsin Salesperson Pre-License — Module WI-10",
+      "Prelicencia de vendedor de Wisconsin — Módulo WI-10"
+    ],
+    [
+      "Wisconsin Salesperson Pre-License — Module WI-11",
+      "Prelicencia de vendedor de Wisconsin — Módulo WI-11"
+    ],
+    [
+      "Wisconsin Salesperson Pre-License — Module WI-12",
+      "Wisconsin Salesper Pre-Licencia — Módulo WI-12"
+    ],
+    [
+      "Wisconsin Salesperson Pre-License — Module WI-13",
+      "Prelicencia de vendedor de Wisconsin — Módulo WI-13"
+    ],
+    [
+      "Texas Law of Contracts — Module 01",
+      "Ley de Contratos de Texas — Módulo 01"
+    ],
+    [
+      "Texas Law of Contracts — Module 02",
+      "Ley de Contratos de Texas — Módulo 02"
+    ],
+    [
+      "Texas Law of Contracts — Module 03",
+      "Ley de Contratos de Texas — Módulo 03"
+    ],
+    [
+      "Texas Law of Contracts — Module 04",
+      "Ley de Contratos de Texas — Módulo 04"
+    ],
+    [
+      "Texas Law of Contracts — Module 05",
+      "Ley de Contratos de Texas — Módulo 05"
+    ],
+    [
+      "Texas Law of Contracts — Module 06",
+      "Ley de Contratos de Texas — Módulo 06"
+    ],
+    [
+      "Texas Law of Contracts — Module 07",
+      "Ley de Contratos de Texas — Módulo 07"
+    ],
+    [
+      "Texas Law of Contracts — Module 08",
+      "Ley de Contratos de Texas — Módulo 08"
+    ],
+    [
+      "Texas Law of Contracts — Module 09",
+      "Ley de Contratos de Texas — Módulo 09"
+    ],
+    [
+      "Texas Law of Contracts — Module 10",
+      "Ley de Contratos de Texas — Módulo 10"
+    ],
+    [
+      "Texas Law of Contracts — Module 11",
+      "Ley de Contratos de Texas — Módulo 11"
+    ],
+    [
+      "Texas Promulgated Contract Forms — Module 01",
+      "Formularios de contrato promulgados en Texas — Módulo 01"
+    ],
+    [
+      "Texas Promulgated Contract Forms — Module 02",
+      "Formularios de Contrato Promulgados en Texas — Módulo 02"
+    ],
+    [
+      "Texas Promulgated Contract Forms — Module 03",
+      "Formularios de contrato promulgados en Texas — Módulo 03"
+    ],
+    [
+      "Texas Promulgated Contract Forms — Module 04",
+      "Formularios de Contrato Promulgados en Texas — Módulo 04"
+    ],
+    [
+      "Texas Promulgated Contract Forms — Module 05",
+      "Formularios de Contrato Promulgados en Texas — Módulo 05"
+    ],
+    [
+      "Texas Promulgated Contract Forms — Module 06",
+      "Formularios de contrato promulgados en Texas — Módulo 06"
+    ],
+    [
+      "Texas Promulgated Contract Forms — Module 07",
+      "Formularios de Contrato Promulgados en Texas — Módulo 07"
+    ],
+    [
+      "Texas Promulgated Contract Forms — Module 08",
+      "Formularios de contrato promulgados en Texas — Módulo 08"
+    ],
+    [
+      "Texas Promulgated Contract Forms — Module 09",
+      "Formularios de contrato promulgados en Texas — Módulo 09"
+    ],
+    [
+      "Module 01: The Nature & Cycle of Real Estate Finance",
+      "Módulo 01: La naturaleza y el ciclo de la financiación inmobiliaria"
+    ],
+    [
+      "Module 02: Money & the Monetary System",
+      "Módulo 02: El dinero y el sistema monetario"
+    ],
+    [
+      "Module 03: Additional Government Influence",
+      "Módulo 03: Influencia adicional del gobierno"
+    ],
+    [
+      "Module 04: The Secondary Mortgage Market",
+      "Módulo 04: El mercado hipotecario secundario"
+    ],
+    [
+      "Module 05: Sources of Funds",
+      "Módulo 05: Fuentes de fondos"
+    ],
+    [
+      "Module 06: Instruments of Real Estate Finance",
+      "Módulo 06: Instrumentos de Financiación Inmobiliaria"
+    ],
+    [
+      "Module 07: Loan Types, Terms & Issues",
+      "Módulo 07: Tipos de préstamos, términos y problemas"
+    ],
+    [
+      "Module 08: Government Loans",
+      "Módulo 08: Préstamos públicos"
+    ],
+    [
+      "Module 09: Lender Loan Processes",
+      "Módulo 09: Procesos de préstamo de prestamistas"
+    ],
+    [
+      "Module 10: Defaults & Foreclosures",
+      "Módulo 10: Predeterminados y Foreclosures"
+    ]
+  ]
+}

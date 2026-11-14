@@ -20,8 +20,8 @@ export function createLearningCoach({anchor,getContext,goToQuestion}){
  function clear(){sequence++;abort?.abort();last=null;output.replaceChildren();status.textContent='';retry.hidden=true;question.value='';consent.checked=false;send.disabled=false;}
  function choose(){active=contexts.find(c=>c.id===topic.value);clear();const current=getContext();help.hidden=!Number.isInteger(current.selected)||!active.questionIds.includes(current.question?.id);}
  topic.addEventListener('change',choose);
- ask.addEventListener('click',()=>{question.value='Please explain '+active.title+' using this lesson.';question.focus();});
- help.addEventListener('click',()=>{question.value='Help me understand my selected answer. My reasoning was: ';question.focus();});
+ ask.addEventListener('click',()=>{question.value=document.documentElement.lang==='es'?'Explique este concepto utilizando esta lección.':'Please explain '+active.title+' using this lesson.';question.focus();});
+ help.addEventListener('click',()=>{question.value=document.documentElement.lang==='es'?'Ayúdeme a comprender la respuesta que seleccioné. Mi razonamiento fue: ':'Help me understand my selected answer. My reasoning was: ';question.focus();});
  async function submit(reuse=false){
   if(!active||!currentProvider||!consent.checked||!question.value.trim()){status.textContent='Enter a question and agree to the disclosure first.';return;}
   const current=getContext();
