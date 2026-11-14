@@ -1,0 +1,1109 @@
+{
+  "course_id": "wa-real-estate-practices-30",
+  "full_semantic_review": "OPEN",
+  "reviewed_sections": [
+    {
+      "lesson": "module-01",
+      "section_indexes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    }
+  ],
+  "questions_reviewed": [
+    "wa-real-estate-practices-30:1",
+    "wa-real-estate-practices-30:2",
+    "wa-real-estate-practices-30:3",
+    "wa-real-estate-practices-30:4",
+    "wa-real-estate-practices-30:5",
+    "wa-real-estate-practices-30:6",
+    "wa-real-estate-practices-30:7",
+    "wa-real-estate-practices-30:8",
+    "wa-real-estate-practices-30:9",
+    "wa-real-estate-practices-30:10",
+    "wa-real-estate-practices-30:11",
+    "wa-real-estate-practices-30:12",
+    "wa-real-estate-practices-30:13",
+    "wa-real-estate-practices-30:14",
+    "wa-real-estate-practices-30:15",
+    "wa-real-estate-practices-30:16",
+    "wa-real-estate-practices-30:17",
+    "wa-real-estate-practices-30:18",
+    "wa-real-estate-practices-30:19",
+    "wa-real-estate-practices-30:20",
+    "wa-real-estate-practices-30:21",
+    "wa-real-estate-practices-30:22",
+    "wa-real-estate-practices-30:23",
+    "wa-real-estate-practices-30:24",
+    "wa-real-estate-practices-30:25",
+    "wa-real-estate-practices-30:26",
+    "wa-real-estate-practices-30:27",
+    "wa-real-estate-practices-30:28",
+    "wa-real-estate-practices-30:29",
+    "wa-real-estate-practices-30:30",
+    "wa-real-estate-practices-30:31",
+    "wa-real-estate-practices-30:32",
+    "wa-real-estate-practices-30:33",
+    "wa-real-estate-practices-30:34",
+    "wa-real-estate-practices-30:35",
+    "wa-real-estate-practices-30:36",
+    "wa-real-estate-practices-30:37",
+    "wa-real-estate-practices-30:38",
+    "wa-real-estate-practices-30:39",
+    "wa-real-estate-practices-30:40",
+    "wa-real-estate-practices-30:41",
+    "wa-real-estate-practices-30:42",
+    "wa-real-estate-practices-30:43",
+    "wa-real-estate-practices-30:44",
+    "wa-real-estate-practices-30:45",
+    "wa-real-estate-practices-30:46",
+    "wa-real-estate-practices-30:47",
+    "wa-real-estate-practices-30:48",
+    "wa-real-estate-practices-30:49",
+    "wa-real-estate-practices-30:50",
+    "wa-real-estate-practices-30:51",
+    "wa-real-estate-practices-30:52",
+    "wa-real-estate-practices-30:53",
+    "wa-real-estate-practices-30:54",
+    "wa-real-estate-practices-30:55",
+    "wa-real-estate-practices-30:56",
+    "wa-real-estate-practices-30:57",
+    "wa-real-estate-practices-30:58",
+    "wa-real-estate-practices-30:59",
+    "wa-real-estate-practices-30:60",
+    "wa-real-estate-practices-30:61",
+    "wa-real-estate-practices-30:62",
+    "wa-real-estate-practices-30:63",
+    "wa-real-estate-practices-30:64",
+    "wa-real-estate-practices-30:65",
+    "wa-real-estate-practices-30:66"
+  ],
+  "corrections": [
+    {
+      "source": "\"A broker owes the following duties",
+      "before": "\"Un corredor debe las siguientes obligaciones:",
+      "after": "«Un bróker tiene las siguientes obligaciones",
+      "source_sha256": "5e3ad6904256299a24f1f0af1ed6d6179b5b1d8c40fff511ac1cf42a4c73173d",
+      "target_sha256": "36de9932a5286887ef1aededa4659d5de2c81aa6671e8dc92a4ad35c3427c998"
+    },
+    {
+      "source": "\"To",
+      "before": "\"A",
+      "after": "«",
+      "source_sha256": "136de30b3491a8417b82acb1d43f39d8665f1c480ab060d1715858ce240bdb66",
+      "target_sha256": "a6810a42adaa4d55edd7915679db356f83be076d068a27828f73e3c8001e0a6d"
+    },
+    {
+      "source": "\"To exercise",
+      "before": "\"Hacer ejercicio",
+      "after": "«Actuar con",
+      "source_sha256": "ab8db93ebe7e998e025191c276843995287a0fd05eb38e241875e92fd616555e",
+      "target_sha256": "2e03ea439262024b725eb927cbc079f6ca30a10bee8d2671a33e36a400f83a1a"
+    },
+    {
+      "source": "### The sentence this whole course is built on",
+      "before": "### La frase de todo este curso se basa en",
+      "after": "### La frase en la que se basa todo este curso",
+      "source_sha256": "f6ebf02d484c42385ae6631f178cd257e3213356e3dbebbfbe7ff45fe439baf1",
+      "target_sha256": "5336e7205830d75fb73e6e8726f030e00883139c044b9cbc2703c55f806e09bc"
+    },
+    {
+      "source": ", and owes",
+      "before": ", y debe",
+      "after": ", y no tiene",
+      "source_sha256": "7174afbb4de0f7991e9e619db9106145941cdea542be993ff54a0cc74764af9f",
+      "target_sha256": "5e46b52ca0ef49a3056340dadbb69cd4a6a972aad3ecd2f283a9cff0e6ea9742"
+    },
+    {
+      "source": "A broker who walks a crawl space and sees water has not inspected —",
+      "before": "Un corredor que camina un espacio de arrastre y ve que el agua no ha inspeccionado...",
+      "after": "Un bróker que recorre el espacio de acceso bajo el inmueble y ve agua no ha realizado una inspección formal: ",
+      "source_sha256": "adec890815d71ba79fe56ca9c3e7c03588325ee59e6433c38ce8b79493f88fc9",
+      "target_sha256": "59a362c65ba465d9394179754ffaf3f2e7e4c11cf970a38f199782f79386615f"
+    },
+    {
+      "source": "An offer the broker thinks is insulting still goes to the principal. The principal decides what to do with it; the broker decides nothing.",
+      "before": "Una oferta que el corredor piensa que es insultante todavía va al mandante. El mandante decide qué hacer con él; el corredor no decide nada.",
+      "after": "Una oferta que el bróker considere ofensiva también debe presentarse a su representado. El representado decide qué hacer con ella; el bróker no toma esa decisión.",
+      "source_sha256": "640b036199d1f656c1faba214f6eb654dc82b1a8cfad5ebd5ce4676f7511f92b",
+      "target_sha256": "b0e0f0a3e12507a462d46fb009ac8c74710685d33f6247d0344e97a4514c0b4c"
+    },
+    {
+      "source": "And the verification shelter turns on \"reasonably believed ... to be reliable.\"",
+      "before": "Y el refugio de verificación se vuelve \"razonablemente creído... para ser confiable\".",
+      "after": "Además, la exención de verificar depende de que la fuente se considere «razonablemente ... fiable».",
+      "source_sha256": "bdc0356373839642456d3b53625ecbc29326c55cb3a241efea18ba3ead9342e6",
+      "target_sha256": "bca616fca32cbe9873375a885c9019cfa499dc13a73931b3bfd5192345e2abaf"
+    },
+    {
+      "source": "Apply the presentation duty, and explain the \"regardless\" clause.",
+      "before": "Aplicar el deber de presentación, y explicar la cláusula \"independiente\".",
+      "after": "Aplicar la obligación de presentar las comunicaciones y explicar la cláusula «independientemente de que».",
+      "source_sha256": "877c2fe13ec9f79939f754a5d30a275a66388aaaeac49404c2b59cdeb1f54b38",
+      "target_sha256": "c25d1e571e77b2586a31cba38ba5ec41eeeb16807a5b15cfb29a6f3e4c6af731"
+    },
+    {
+      "source": "B.2 Note What It Is Expressed in Terms Of",
+      "before": "B.2 Note lo que se expresa en términos de",
+      "after": "B.2 Observe a qué tipo de comunicaciones se refiere",
+      "source_sha256": "871357b096d088c35483b3b57cac6e774131a6d9c4724d58c04ef1f6cb03ea13",
+      "target_sha256": "0a2964b70de0229bd8b4e56369fcf11cb1642213e26a4d21b8c3ce5e55cce44d"
+    },
+    {
+      "source": "Be waived.",
+      "before": "Serán renunciados.",
+      "after": "dejarse sin efecto mediante renuncia.",
+      "source_sha256": "2443d8d9d4c3ecc9e3e8c7d890c78b84e1b28ae2af1188a72a93f11546533abb",
+      "target_sha256": "4519d41facb506ab6aaac62000a1c234004e94df09c372272118774a5c48a3a6"
+    },
+    {
+      "source": "C.1 the Words \"Has Not Agreed to\" Are Doing Work",
+      "before": "C.1 las palabras \"no está de acuerdo\" están haciendo el trabajo",
+      "after": "C.1 Las palabras «no haya aceptado» son determinantes",
+      "source_sha256": "31add25b3683db1d09a32f640921e79c419c825998fa0a9104d4c83183496430",
+      "target_sha256": "7ea9aeaf43d3384e3c42c0d76164447d2c1fccb153d9e9135e524397515b45ce"
+    },
+    {
+      "source": "D.1 What the Shelters Do Not Excuse",
+      "before": "D.1 Lo que los refugios no excusan",
+      "after": "D.1 Lo que estos límites no eximen de hacer",
+      "source_sha256": "8fe54e043fbbe32ef6ba88598c161a5e98bb89af4f90663a3545db7a462919e4",
+      "target_sha256": "71ea0e9aa7bf5a77162f5643e281539582296e2c84917eda4e66a6fb2045952a"
+    },
+    {
+      "source": "In many states a listing broker's duty to present offers softens once the property is under contract, or requires the seller's written waiver to stop.",
+      "before": "En muchos estados el deber de un corredor de captación inmobiliaria de presentar ofertas se suaviza una vez que la propiedad está bajo contrato, o requiere que la renuncia por escrito del vendedor se detenga.",
+      "after": "En muchos estados, la obligación del bróker que representa al vendedor de presentar ofertas se atenúa cuando el inmueble ya está bajo contrato, o se requiere una renuncia escrita del vendedor para dejar de presentarlas.",
+      "source_sha256": "32b32666f481ff095b3ac0da54f221ce8ea9fef6bb0d2d4092988e0559768cd7",
+      "target_sha256": "333acc12bb4521b922dc0d170a8d38f29b24981f6965ae83299a1b6e296f6ff2"
+    },
+    {
+      "source": "So a broker who agrees to investigate something has taken it on.",
+      "before": "Así que un corredor que acepta investigar algo lo ha aceptado.",
+      "after": "Por tanto, un bróker que acepta investigar un asunto asume esa obligación.",
+      "source_sha256": "7a06fc65b2afa581a83f8ee5af878f18e9c5593056d5b940dad0bb8ece4bad05",
+      "target_sha256": "a53e85c7a43081f49e0f9ffb467adc53dd23dfdf35934895741a7cc980bd52a6"
+    },
+    {
+      "source": "Three shelters:",
+      "before": "Tres refugios:",
+      "after": "Tres límites de responsabilidad:",
+      "source_sha256": "b42474e674174bfe268d80448dae31530b45285dbe24799230f5f20efe20b369",
+      "target_sha256": "b679f31d5fd821fdcf4a9726b30d9bc798bbfa5aa2fef4efd7ff69aa27464f82"
+    },
+    {
+      "source": "Washington superseded by statute.",
+      "before": "Washington fue reemplazado por un estatuto.",
+      "after": "que Washington sustituyó mediante ley.",
+      "source_sha256": "ea70a165e24264bc3d8431bd31064bebb5c65e9552b992ee75e90d0ca87deecf",
+      "target_sha256": "3cf11647915f6328dcb004710f276d492e474477b989f0935a76e1a9531b7e72"
+    },
+    {
+      "source": "account in a timely manner for all money and property received from or on behalf of either party",
+      "before": "contabilizar oportunamente todo el dinero y los bienes recibidos de cualquiera de las partes o en su nombre",
+      "after": "rendir cuentas oportunamente de todo el dinero y los bienes recibidos de cualquiera de las partes o en su nombre",
+      "source_sha256": "73f406b457bc25645d9d28471813c02d941040c2c4d2a658d5c77a9eaf1fd68c",
+      "target_sha256": "21bad35559f2e1a8f8e142aa89dbd241d30c9d5c74e8e7bd4271cc17fe0cf0de"
+    },
+    {
+      "source": "all written offers, written notices and other written communications to and from either party in a timely manner, REGARDLESS OF whether the property is subject to an existing contract for sale or the buyer is already a party to an existing contract to purchase",
+      "before": "todas las ofertas escritas, notificaciones escritas y otras comunicaciones escritas a y de una de las partes de manera oportuna, RESPECTO de si la propiedad está sujeta a un contrato de venta existente o el comprador ya es parte en un contrato de compra existente",
+      "after": "todas las ofertas escritas, notificaciones escritas y demás comunicaciones escritas dirigidas a cualquiera de las partes o procedentes de ellas, de manera oportuna, INDEPENDIENTEMENTE DE QUE el inmueble esté sujeto a un contrato de venta vigente o de que el comprador ya sea parte de un contrato de compra vigente",
+      "source_sha256": "df1ff5786d71d1095238076758ba0725a0d430b5f82ecdf96ad6aa52047a7bbb",
+      "target_sha256": "eccdaf62348c138c7c70127985b6f03ecca1c7b9d2c954e6957a53207ea52800"
+    },
+    {
+      "source": "communications. The statutory duty is stated in terms of writings.",
+      "before": "comunicaciones. El deber estatutario se establece en términos de escritura.",
+      "after": "comunicaciones. La obligación legal se refiere a comunicaciones por escrito.",
+      "source_sha256": "a487baad27aa6c1311f72270767c16e591506dc36ceb0ce84441e498b0aae076",
+      "target_sha256": "6fc53885165dd60db60d19a2b615d3c87f3dbc2e3b407c25a054279f6b86e613"
+    },
+    {
+      "source": "may not be waived.",
+      "before": "no puede ser renunciado.",
+      "after": "no pueden dejarse sin efecto mediante renuncia.",
+      "source_sha256": "99de12d1f49c7b57e4c8e9869724c5ddb303246d977202b4995593bb4dfd059f",
+      "target_sha256": "766493c6019a9d637b514434c6d27d481f93eaab79cb3a64df403051e162cb60"
+    },
+    {
+      "source": "no duty to",
+      "before": "obligación de no",
+      "after": "no existe obligación de",
+      "source_sha256": "3cb7abf0f580d6fc6de11173fc5923ab651e1a6ad23adad130447a31ea9d5eef",
+      "target_sha256": "f7f64030d1110fc401a342aa7429c601b20e2ef09e119719032e92b211582e9d"
+    },
+    {
+      "source": "no duty to independently verify the accuracy or completeness of any statement made by either party or by any source reasonably believed by the broker to be reliable",
+      "before": "ninguna obligación de verificar independientemente la exactitud o exhaustividad de cualquier declaración hecha por cualquiera de las partes o por cualquier fuente que el intermediario considere razonablemente fiable",
+      "after": "obligación alguna de verificar de forma independiente la exactitud o integridad de las declaraciones de cualquiera de las partes o de una fuente que el bróker considere razonablemente fiable",
+      "source_sha256": "242596dfc3cee23e81fc209edcc59e0a0561449df9ecbabce3a60291ed8e6232",
+      "target_sha256": "82e4ac85b2504c6df9a7b455e971c18bcdfe591b869286ea45a330b4a36fbc25"
+    },
+    {
+      "source": "offers,",
+      "before": "ofrece,",
+      "after": "ofertas,",
+      "source_sha256": "7f49c4323570c951d0e364c73ff183d9f82bae28c08abdeb7dae8a920f1612e8",
+      "target_sha256": "6c1efcc7820510745888d6e85f0887b98e5fe0f52e7dec0458b94f9dca18dd55"
+    },
+    {
+      "source": "one as to matters the broker",
+      "before": "uno en cuanto a los asuntos del corredor",
+      "after": "tal obligación respecto de asuntos que el bróker",
+      "source_sha256": "e22825fbc91c2f0e198f621d20444a7b169a94207f5caea6b090936f2819b928",
+      "target_sha256": "5e878a94e5d3a0887c8151770b0c1722aaf2d2b1a8d24ae43f62d044fd1f50f4"
+    },
+    {
+      "source": "to their principal and to all parties in a transaction, which may not be waived",
+      "before": "a su principal y a todas las partes en una transacción, a la que no podrá renunciarse",
+      "after": "frente a su representado y a todas las partes de una transacción, sin que pueda renunciarse a ellas",
+      "source_sha256": "3ad936b8273d10e45b60081e8fdbd5cc0ea164c6ed710e729bda3dd8f8bf8405",
+      "target_sha256": "9e0f42a3f43f46bb30b6d69620605a00b497bf103afa37f9346de4c8a06f8b1a"
+    },
+    {
+      "source": "— has an account",
+      "before": "— tiene una cuenta",
+      "after": "— conoce una explicación",
+      "source_sha256": "74bee1c7cc214ea2cf8fa889e3fb67910e2c43a640e8833fc00894f18b415857",
+      "target_sha256": "d748583c05ebb602b8e51f0dddf347cbd32b2619c0c0b5296c85a5ee123b96d7"
+    },
+    {
+      "source": "\"Information from or concerning a principal that:",
+      "before": "\"Información procedente de un obligado principal o relativa a éste:",
+      "after": "«Información procedente de un representado o relativa a él que:",
+      "source_sha256": "622561f351e5f5c9e799aa5dd9a0f7f2065a69546cca54ae19c731c79bcdfc71",
+      "target_sha256": "b6404ceee4480bd1ea96b034e2b462c39692234b62a449769fc5ddad1daf8051"
+    },
+    {
+      "source": "(e) fails",
+      "before": "e) Fracases",
+      "after": "no se cumple el requisito (e)",
+      "source_sha256": "2d42dba7b7b864c93872d6f5bcfb49146d470f00485d8aa39c69bd37d8476621",
+      "target_sha256": "fd419e1783be0f8cf4afb86a18d9e26865a5df32253f6a2af4576f32d1bd04ba"
+    },
+    {
+      "source": ", not merely a private wrong.",
+      "before": ", no sólo un error privado.",
+      "after": ", no simplemente un ilícito de carácter privado.",
+      "source_sha256": "a588b1420afe7ec67dea58c783d67d958bd2e3b45114cbb9a1c7fbf1a24f61b4",
+      "target_sha256": "035b7dd201040aa8b75c186732c66c3f47cd820544fc35dec9de40e14a224d7e"
+    },
+    {
+      "source": ", read in full on 2026-08-20 from the Washington State Legislature's official site — specifically",
+      "before": ", lea en su totalidad el 2026-08-20 del sitio oficial de la Legislatura del Estado de Washington — específicamente",
+      "after": ", consultado íntegramente el 2026-08-20 en el sitio oficial de la Legislatura del Estado de Washington; concretamente",
+      "source_sha256": "12eaa3c789d417db8e22a25f6dc21092473b9bee1c70f41ed4f07431af4a7cb7",
+      "target_sha256": "1af582ca4c3a67238e39265d32e29ccaf0bc2212b971ae2ab9d9b070a149d63d"
+    },
+    {
+      "source": "A broker asked directly answers truthfully or declines to answer — and never invents.",
+      "before": "Un corredor pidió respuestas directas veraces o se niega a responder... y nunca inventa.",
+      "after": "Ante una pregunta directa, el bróker responde con veracidad o se abstiene de responder; nunca inventa una respuesta.",
+      "source_sha256": "c49cafa173304e783956adc7b6d13880b82357d5b90f7e6eecd2badac9633020",
+      "target_sha256": "ed317fc64fe4383fb5a32e6d2080cb5d08d21689fe1e4ddfdacb45b70ea44409"
+    },
+    {
+      "source": "Account for every dollar and every item of property.",
+      "before": "Cuenta por cada dólar y cada elemento de propiedad.",
+      "after": "Rinda cuentas de cada dólar y de cada bien recibido.",
+      "source_sha256": "693ed241d6ac4ead52d1a14a6a67bbcf65cabf3b252b6f9a3f60620a64645fde",
+      "target_sha256": "7abc77e80660a14586e2c2a37760b6b316f320aa97232cbfa6b3892fb25d3fca"
+    },
+    {
+      "source": "All five parts. Not any one of them.",
+      "before": "Las cinco partes. Ninguno de ellos.",
+      "after": "Deben cumplirse los cinco requisitos; no basta con uno solo.",
+      "source_sha256": "562b6498f83d5d2dee68622060d3d024539a0dfb9a515b6d776e7766ab33f5aa",
+      "target_sha256": "d4d4cabc466274a9147b9060ff4810861e753e606a78ad3ea2e8136482a3fe79"
+    },
+    {
+      "source": "Drawn from",
+      "before": "Dibujado de",
+      "after": "Basado en",
+      "source_sha256": "69cbd66213a8469bbb987d77837ca67c9aac620fe84860edfe64616d271f94bb",
+      "target_sha256": "c59c0b367a54465c3bf67c1ebcb1dc03ee9d3b6342b8a64380e0a347f48ce0d9"
+    },
+    {
+      "source": "Eleven items — one applied scenario, five engagement items and five remediation items. The",
+      "before": "Once artículos: una hipótesis aplicada, cinco elementos de compromiso y cinco elementos de rehabilitación. Los",
+      "after": "Once preguntas: un caso práctico, cinco preguntas de participación y cinco de refuerzo. El",
+      "source_sha256": "5ab3d32d89038b4e49f445d8af711087eb0fae4fddb69ff92206fd893259a122",
+      "target_sha256": "5bf680d5a394cd9dff9cf976edd935d885b21819a6f986a4aa12aafbbce571a2"
+    },
+    {
+      "source": "Give the pamphlet and get the acknowledgment.",
+      "before": "Da el panfleto y consigue el reconocimiento.",
+      "after": "Entregue el folleto y obtenga el acuse de recibo.",
+      "source_sha256": "2bfe32294110b43dd6ab78cb27f99d6136af487fd2d3dbde46cc2246cb7dc58a",
+      "target_sha256": "380368dcda2b2ce0b27303e1d237b1ce9eff2c97a00381ebc6852b3bf53c2f24"
+    },
+    {
+      "source": "Not being obliged to volunteer something is not permission to misstate it.",
+      "before": "No estar obligado a ofrecerse como voluntario algo no es permiso para equivocarlo.",
+      "after": "No estar obligado a revelar espontáneamente una información no autoriza a falsearla.",
+      "source_sha256": "dbd11124090cdbe10d75048bcf4b767c1515d7f103803bfa0908422205fe01d5",
+      "target_sha256": "e4ddb923f12f7248bfc7e744869c861c5b00a30db2fc1e991a471afd7fcba832"
+    },
+    {
+      "source": "Not read, and therefore the source of nothing here:",
+      "before": "No leer, y por lo tanto la fuente de nada aquí:",
+      "after": "No se consultaron y, por tanto, no sustentan el contenido de este módulo:",
+      "source_sha256": "153bc08c5c51f73bb6397aea8260b627959d8dc284d3527143f7c4c073339a66",
+      "target_sha256": "004dc1d576c818d990908596cedfb704afa07180f8ef27611404bf0ea9ad2157"
+    },
+    {
+      "source": "Present everything written, both directions, timely — regardless.",
+      "before": "Presente todo lo escrito, ambas direcciones, oportuno — a pesar de todo.",
+      "after": "Presente oportunamente todas las comunicaciones escritas en ambas direcciones, aunque ya exista un contrato.",
+      "source_sha256": "0522227d61cf82b746150d3774870f06f942cc96474615e5fe7bf935cb7e2509",
+      "target_sha256": "ddf721a9a1338104aa2778b7fa30ad63af282c200993239f07e582b1e7e205f0"
+    },
+    {
+      "source": "StateCourse standards.",
+      "before": "Estandartes del Estado.",
+      "after": "estándares de StateCourse.",
+      "source_sha256": "1ec039c3d80ee16903dd34603bb69c3eca42825a6b24621fa9adc3e96edc1535",
+      "target_sha256": "bbb5fb9731637925db1dd9693e3f07c6e2453beb707fcc09b597d8212bae9c67"
+    },
+    {
+      "source": "affected the",
+      "before": "afectados por la",
+      "after": "afectó al",
+      "source_sha256": "cbf55d9bf728e456c28e93302d75f91c6b2d2ccf1633f9d2335b46d3a8b67f3e",
+      "target_sha256": "0f1acc0636dde03bf6c85ba07d1c870744c85743ff663f799008ba6655c45d8e"
+    },
+    {
+      "source": "at least 90 items.",
+      "before": "al menos 90 artículos.",
+      "after": "al menos 90 preguntas.",
+      "source_sha256": "2b7ab4ba9d441d5fdb344397c7ffdb367439be83e3aa7d633084b121157081cc",
+      "target_sha256": "483186611ab1e74c327b608d794bc8420524ad7bb7880cc4fc15bc41690d8c9e"
+    },
+    {
+      "source": "before the broker's principal signs an offer",
+      "before": "antes de que el principal del corredor firme una oferta",
+      "after": "antes de que el representado del bróker firme una oferta",
+      "source_sha256": "3a394f0c93b69757a58a17e1145bc56d9d65f63a767ec6c10b1fdfadb7ffbf2c",
+      "target_sha256": "637e09e657afff08d50fbc4c5cda0ee31d2ad92602c5e7664bc49e385968af1d"
+    },
+    {
+      "source": "by the party.\"",
+      "before": "por el partido.\"",
+      "after": "por la parte.»",
+      "source_sha256": "ad1b79353eeeec2ba14e0b2e79679cb970c668cb3bc733124bee0627586987b8",
+      "target_sha256": "8dcbaeb8a690c5edfb3ac2d2da96500182b6999efce4aa221b82438dd3e8a224"
+    },
+    {
+      "source": "contaminated the structure",
+      "before": "contaminado la estructura",
+      "after": "contaminó la estructura",
+      "source_sha256": "4eb3847b2588024ab3a699a695803e3e213c111253be32b88ccf973beced5060",
+      "target_sha256": "ac65636ec5fd91208f817c5faaf2b39356c4d912b8340abaa6df0c1a1f871a67"
+    },
+    {
+      "source": "covers the compensation half.",
+      "before": "cubre la mitad de la compensación.",
+      "after": "explica la parte relativa a la remuneración.",
+      "source_sha256": "aabf7eef5101b393bb5197712d4c7e8f1cb8a0eb1e9fe8054e102033834dd0a5",
+      "target_sha256": "3365729d5ae605552edccc9d419eec5ee9f15997016bf07e76eaf53b6562c4df"
+    },
+    {
+      "source": "covers the timing, which differs depending on whether the party is being served or is unrepresented.",
+      "before": "cubre el momento, que difiere dependiendo de si la parte está siendo o no está representada.",
+      "after": "explica los plazos, que difieren según se presten servicios a la parte o esta carezca de representación.",
+      "source_sha256": "255a2b2a9c11a074d18a7d343a76ecdb03ca16348c9030dcd08a396fbb738b56",
+      "target_sha256": "cd449c6566bd84b769bf696118df9d9ba5b4e99689cce21ffa306abe7e27b68f"
+    },
+    {
+      "source": "substantially adversely affects the value of the property or a party's ability to perform its obligations",
+      "before": "afecta considerablemente al valor de los bienes o a la capacidad de una parte para cumplir sus obligaciones",
+      "after": "afecta negativamente de manera sustancial al valor del inmueble o a la capacidad de una parte para cumplir sus obligaciones",
+      "source_sha256": "af3f03953fb970c08c0336beb3809642b3a5e47059b4b3056ab24272554157d1",
+      "target_sha256": "6ab33e33517461c184c68598318761fd97a7d6476a5952437b6f67177af76e10"
+    },
+    {
+      "source": "It must be made before the broker's principal signs an offer, or as soon as reasonably practical, but before the parties reach mutual agreement — and it also carries any terms of compensation offered by a party or firm to a firm representing another party.",
+      "before": "Debe hacerse antes de que el agente principal firme una oferta, o tan pronto como sea razonablemente práctico, pero antes de que las partes lleguen a un acuerdo mutuo, y también conlleva cualesquiera condiciones de compensación ofrecidas por una parte o empresa a una empresa que represente a otra parte.",
+      "after": "Debe realizarse antes de que el representado del bróker firme una oferta, o tan pronto como sea razonablemente posible, pero siempre antes de que las partes lleguen a un acuerdo mutuo. También debe incluir las condiciones de remuneración que una parte o una firma ofrezca a la firma que representa a otra parte.",
+      "source_sha256": "7cc3450d0699527924be6f789730f3df186c6af07ff45db41629d13fa88f266f",
+      "target_sha256": "1ead2ea4594617c641fd53fe7e76a29d82f3f0de9cce3824878924e56b98b022"
+    },
+    {
+      "source": "It requires presentation of all written offers, notices and communications in a timely manner REGARDLESS OF whether the property is subject to an existing contract for sale or the buyer is already a party to an existing contract to purchase — with no waiver available.",
+      "before": "Requiere la presentación de todas las ofertas, avisos y comunicaciones por escrito de manera oportuna RESPECTO de si la propiedad está sujeta a un contrato de venta existente o el comprador ya es parte en un contrato de compra existente, sin ninguna renuncia disponible.",
+      "after": "Exige presentar oportunamente todas las ofertas, notificaciones y comunicaciones escritas INDEPENDIENTEMENTE DE QUE el inmueble esté sujeto a un contrato de venta vigente o de que el comprador ya sea parte de un contrato de compra vigente, sin posibilidad de renunciar a esa obligación.",
+      "source_sha256": "eee4f2f40374d5f96bc77faaf4fe1f69b951cef299085d975301731aef4d34e1",
+      "target_sha256": "1d128090441519c760c696f281cafa1c4ad2647f3dcdbf4f2ca90c87bf3f3888"
+    },
+    {
+      "source": "No duty to inspect, to investigate a party's financial condition, or to verify statements reasonably believed reliable — all opened by the words 'unless otherwise agreed.'",
+      "before": "No hay obligación de inspeccionar, de investigar la situación financiera de una parte, o de verificar declaraciones razonablemente creíbles — todo abierto por las palabras 'a menos que se acuerde otra cosa.'",
+      "after": "No existe obligación de inspeccionar, investigar la situación financiera de una parte ni verificar declaraciones consideradas razonablemente fiables; las tres exenciones pueden dejar de aplicarse por las palabras «salvo pacto en contrario».",
+      "source_sha256": "66e3eb1f0325dc6f4866fb8c3b261d171da88511ce28cf81198e162c6f56525d",
+      "target_sha256": "f5fbdc9d185a36bd905d6440d7a82e81ee1ef656e620310ca468f9a29c7aad52"
+    },
+    {
+      "source": "None of it holds: RCW 18.86.030(1) owes its duties 'to their principal and to all parties in a transaction, WHICH MAY NOT BE WAIVED,' so a written waiver of the presentation duty is ineffective; (1)(c) requires presentation of all written offers, notices and communications REGARDLESS of an existing contract, with no waiver in the subsection at all; and (1)(d) requires disclosure of known material facts not apparent or readily ascertainable, so the drainage instruction is refused with the reason given.",
+      "before": "Ninguno de ellos sostiene: RCW 18.86.030(1) debe sus obligaciones 'a su principal y a todas las partes en una transacción, QUE NO PUEDE ESPERAR,' por lo que una renuncia por escrito a la obligación de presentación es ineficaz; (1) c) requiere la presentación de todas las ofertas, avisos y comunicaciones por escrito RESPECTO de un contrato existente, sin renuncia alguna en la subsección; y (1) d) requiere la divulgación de hechos materiales conocidos no aparentes o fácilmente determinables, por lo que la instrucción de drenaje se rechaza con la razón dada.",
+      "after": "Ninguna instrucción es válida: RCW 18.86.030(1) establece obligaciones «frente al representado y a todas las partes de una transacción, A LAS QUE NO PUEDE RENUNCIARSE», por lo que la renuncia escrita a la obligación de presentar ofertas carece de efecto; (1)(c) exige presentar todas las ofertas, notificaciones y comunicaciones escritas INDEPENDIENTEMENTE de que exista un contrato, sin prever renuncia alguna; y (1)(d) exige revelar los hechos relevantes conocidos que no sean evidentes ni fácilmente averiguables, por lo que debe rechazarse la instrucción sobre el drenaje y explicar el motivo.",
+      "source_sha256": "378f479c52e27c7c957c3048c59664525db4c325e2dec557f22267c0675e42df",
+      "target_sha256": "fe36eea2f45099d3dbb3656c394075348d0011906921460fff8e43272f3ddc30"
+    },
+    {
+      "source": "RCW 18.86.130 is the only other provision carrying that consequence. RCW 18.85.361 was not read for this project, and no penalty, sanction or procedure is stated in this build.",
+      "before": "El RCW 18.86.130 es la única otra disposición que tiene esa consecuencia. RCW 18.85.361 no fue leído para este proyecto, y no se establece ninguna sanción, sanción o procedimiento en este edificio.",
+      "after": "RCW 18.86.130 es la única otra disposición que conlleva esa consecuencia. No se consultó RCW 18.85.361 para este proyecto; por ello, esta versión del curso no especifica penas, sanciones ni procedimientos.",
+      "source_sha256": "6d0dc0307e20bbc9b2fea242e12639b4390e0a151ee2fa6ed7893ba33c35afd7",
+      "target_sha256": "ed36c3f5b14d64ad62aac653d2cc60d62172f245fe99ab5a83f2effeba092758"
+    },
+    {
+      "source": "Shelters available only to a buyer's agent.",
+      "before": "Refugios disponibles sólo para el agente de un comprador.",
+      "after": "Exenciones disponibles únicamente para el agente de un comprador.",
+      "source_sha256": "f58fbfcf6d19aa4c69d41ae4e0f69192025b2981e66fc1af1cd5d1cc258495bb",
+      "target_sha256": "314733f85990fce0bbbae2864d49f72ab6dec60d16c4e43d8a2bd51292d39845"
+    },
+    {
+      "source": "Shelters that also remove the duty to disclose known material facts.",
+      "before": "Los refugios que también eliminan la obligación de revelar hechos materiales conocidos.",
+      "after": "Exenciones que también eliminan la obligación de revelar hechos relevantes conocidos.",
+      "source_sha256": "7c0579bc043381ed410e0974598863a013b6d7be1b65b1e88b156ddeb7d077ff",
+      "target_sha256": "a1394f69cb4a65405b9a20324fd06d7cd1eed7d19dca4362933b55699902d45c"
+    },
+    {
+      "source": "Structural contamination from former drug manufacturing.",
+      "before": "Contaminación estructural de la antigua industria farmacéutica.",
+      "after": "Contaminación de la estructura por la fabricación de drogas que tuvo lugar anteriormente.",
+      "source_sha256": "94d88c3b88e20fa319c078111a9e9eb6c8bf9c557edbaf3b4c32fd51208bb7d0",
+      "target_sha256": "0b89af297244335e4e7a3539726aa60fd56e370c2fd80f5c42d0b5cc8d444c73"
+    },
+    {
+      "source": "That definition decides when several of the chapter's duties attach. Note also that RCW 18.86.030(1)(c) is expressed in terms of WRITTEN offers, notices and communications.",
+      "before": "Esta definición decide cuándo se imponen varios de los deberes del capítulo. Nótese también que RCW 18.86.030(1)(c) se expresa en términos de ofertas, avisos y comunicaciones WRITTEN.",
+      "after": "Esta definición determina cuándo nacen varias obligaciones del capítulo. Observe también que RCW 18.86.030(1)(c) se refiere a ofertas, notificaciones y comunicaciones POR ESCRITO.",
+      "source_sha256": "8ecabf92b2d4fed6ce6fdbd79f22ba9122d117310d2a0d93057cedecf5afb4a7",
+      "target_sha256": "7eb89d9ceb595d6fb397c5c7f5dd7f923a5efb173d2121fad2c5404997f94c84"
+    },
+    {
+      "source": "The list's limiting clause is 'not adversely affecting the physical condition of or title to the property.' The exclusion does not authorise a lie: duty (b) is owed to all parties and cannot be waived, so a broker asked directly answers truthfully or declines — and never invents.",
+      "before": "La cláusula de limitación de la lista \"no afecta negativamente a la condición física o la titularidad de la propiedad\". La exclusión no autoriza una mentira: deber (b) se debe a todas las partes y no se puede renunciar, por lo que un agente pidió directamente respuestas veraz o declina — y nunca inventa.",
+      "after": "La cláusula que limita la lista exige que la circunstancia «no afecte negativamente al estado físico ni a la titularidad del inmueble». La exclusión no autoriza a mentir: la obligación (b) se tiene frente a todas las partes y es irrenunciable. Por ello, ante una pregunta directa, el bróker responde con veracidad o se abstiene de responder; nunca inventa.",
+      "source_sha256": "5ed3eea9b42f8aed131ddaab7c8fe80373e1f83b44c690590af18d64702b7ad2",
+      "target_sha256": "3135ea16f2831efb54a3e2461b9c85c7b4d852a1dc5f0d955f535a10c986946b"
+    },
+    {
+      "source": "The signature documents the relationship; it does not create it. Buyer agency arises by DEFAULT from performing services, while seller agency requires an appointment under a services agreement — that asymmetry is what RCW 18.86.020(1) establishes.",
+      "before": "La firma documenta la relación; no la crea. La agencia compradora surge por DEFAULT de la prestación de servicios, mientras que la agencia vendedora requiere un nombramiento en virtud de un acuerdo de servicios, que la asimetría es lo que RCW 18.86.020(1) establece.",
+      "after": "La firma documenta la relación; no la crea. La representación del comprador surge POR DEFECTO al prestar servicios, mientras que la representación del vendedor requiere una designación conforme a un acuerdo de servicios. Esa asimetría es lo que establece RCW 18.86.020(1).",
+      "source_sha256": "8b3b461fb02febae4e20c3be98c1e3d6e8d09742253fbcc7394ca807bd6815bc",
+      "target_sha256": "3fb9d44dceec56c4e4597181453e9fe4d9ccc8e4d129de66270298faa192eee6"
+    },
+    {
+      "source": "They remove duties to LOOK. They do not remove the duty to disclose what you saw, and they do not license a statement of your own — RCW 18.86.030(1)(b) is unwaivable and owed to all parties.",
+      "before": "Se quitan los deberes de LOOK. Ellos no eliminan el deber de revelar lo que usted vio, y no licencian una declaración de su propio — RCW 18.86.030(1)(b) es irrenunciable y se debe a todas las partes.",
+      "after": "Eliminan la obligación de INVESTIGAR. No eliminan la obligación de revelar lo que se ha observado ni autorizan a hacer afirmaciones propias sin fundamento: la obligación de RCW 18.86.030(1)(b) es irrenunciable y se tiene frente a todas las partes.",
+      "source_sha256": "395706f7cb4563dc2f53537f9a97451b6a13289b26f971955424b2b4e63b9ac1",
+      "target_sha256": "c61187beb6fedf60b9d713d66220d62d7de1fd3a89174ecd88b1604a14ad80b2"
+    },
+    {
+      "source": "Washington kept the word 'agent' and replaced what stands behind it. A student arriving with a national textbook's account of fiduciary duty has an account Washington superseded. The chapter also 'shall be construed broadly.'",
+      "before": "Washington mantuvo la palabra \"agente\" y reemplazó lo que había detrás. Un estudiante que llega con un libro de texto nacional cuenta de deber fiduciario tiene una cuenta de Washington sustituida. El capítulo también «se interpretará en sentido amplio».",
+      "after": "Washington conservó la palabra «agente», pero sustituyó su contenido jurídico. La explicación de los deberes fiduciarios que un estudiante haya aprendido en un manual nacional corresponde a un régimen que Washington sustituyó. Además, el capítulo «se interpretará en sentido amplio».",
+      "source_sha256": "b5d526f560da6a882b003a2471c713808351c0c7716894a5131e6baa674b1415",
+      "target_sha256": "06e9b630b44f0ac81caf8e31b8e9ba3e47a3df5c2b0fcea0c011aa7775c505b0"
+    },
+    {
+      "source": "What three shelters does RCW 18.86.030(2) provide, and what opens all three?",
+      "before": "¿Qué tres refugios ofrece RCW 18.86.030(2), y qué abre los tres?",
+      "after": "¿Qué tres exenciones de obligaciones establece RCW 18.86.030(2) y qué permite que dejen de aplicarse las tres?",
+      "source_sha256": "9fb0c92201c57c9f1f5489eeec2699a72bb7b7688dd814d9eec43652ca12d483",
+      "target_sha256": "92f39366b28b42e0c8f86a2e87198b5b5b62e85d992aff6f7dbb03ddecbf088d"
+    },
+    {
+      "source": "Which of these falls INSIDE RCW 18.86.010(11)'s negative list and is therefore not a material fact?",
+      "before": "¿Cuál de estas caídas dentro RCW 18.86.010(11) de la lista negativa y por lo tanto no es un hecho material?",
+      "after": "¿Cuál de las siguientes circunstancias está INCLUIDA en la lista de exclusiones de RCW 18.86.010(11) y, por tanto, no constituye un hecho relevante?",
+      "source_sha256": "b2276840a6cba09dbffb2ce99561648a17ebe89d2ac083abe08cd97959878646",
+      "target_sha256": "0956d9ccf218c1355705c59b536e72a6aca10e372a8defde95621e536d6c3052"
+    },
+    {
+      "source": "You have shown a buyer four properties over two weekends. Nothing is signed. Your designated broker says you owe the buyer nothing yet, that you can hand her the pamphlet whenever she is ready to make an offer, and that the unrepresented seller of your listing does not need one because he is not your client.",
+      "before": "Usted ha mostrado a un comprador cuatro propiedades durante dos fines de semana. Nada está firmado. Su corredor designado dice que usted no debe nada al comprador todavía, que usted puede entregarle el folleto cuando ella está captación inmobiliaria para hacer una oferta, y que el vendedor no representado de su captación inmobiliaria no necesita uno porque él no es su cliente.",
+      "after": "Usted ha mostrado cuatro inmuebles a una compradora durante dos fines de semana. No se ha firmado nada. Su bróker designado afirma que usted todavía no tiene obligaciones frente a la compradora, que puede entregarle el folleto cuando esté lista para presentar una oferta y que el vendedor no representado del inmueble que usted tiene en venta no necesita recibirlo porque no es su cliente.",
+      "source_sha256": "b1e01efa5aed3d98e57d2954b0bef250fc0ad1e0be5abb7f0c24c444131e99ed",
+      "target_sha256": "ccaabe576b02d3ff5fc104b7df30488c825ae0fbce1bd3c550eeee3eff3b6df0"
+    },
+    {
+      "source": "Your seller-principal signs a written instruction telling you to stop presenting offers below a figure she names, to say nothing about the drainage problem she mentioned to you last month, and confirming she waives your obligation to bring her offers she would not accept. The property is not under contract.",
+      "before": "Su vendedor-principal firma una instrucción escrita diciéndole que deje de presentar ofertas debajo de una figura que ella nombra, para no decir nada sobre el problema de drenaje que le mencionó el mes pasado, y confirmando que renuncia a su obligación de traer sus ofertas que no aceptaría. La propiedad no está bajo contrato.",
+      "after": "La vendedora a la que usted representa firma instrucciones escritas para que deje de presentarle ofertas inferiores a una cifra que ella indica, no revele el problema de drenaje que le comentó el mes pasado y quede eximido de presentarle ofertas que ella no aceptaría. El inmueble no está bajo contrato.",
+      "source_sha256": "bd9e07b4338d34e9ac6d598bb5e9d51688815c983b933951a823ab82c84cb399",
+      "target_sha256": "d6f4da54da92de7114c75c6a5ee5786019c0d547adcab89b2d8fdc4539d2bf3c"
+    },
+    {
+      "source": "60 days, with the option of a longer term.",
+      "before": "60 días, con la opción de un largo plazo.",
+      "after": "60 días, con la opción de pactar un plazo mayor.",
+      "source_sha256": "62b430e1a7e4b40df407bb3bc8f9ff41f1f53d11156c9366bb5c485b2d1e77bc",
+      "target_sha256": "3b097858dcb23399162ea9b754871c2989a8d05e801a7968f16325b22a7f1573"
+    },
+    {
+      "source": "A buyer is not signed to an indefinite arrangement, and a broker proposing a longer term is proposing a departure from the statutory default that the buyer should understand. (2)(b)(iii) separately requires CHECKBOX OPTIONS for a buyer to select exclusive or nonexclusive.",
+      "before": "Un comprador no está firmado a un acuerdo indefinido, y un bróker que propone un plazo más largo está proponiendo una desviación del incumplimiento legal que el comprador debe entender. 2) b) iii) por separado requiere CHECKBOX OPTIONS para que un comprador seleccione exclusiva o no exclusiva.",
+      "after": "El comprador no suscribe un acuerdo de duración indefinida. Si el bróker propone un plazo mayor, propone apartarse del plazo legal por defecto, y el comprador debe comprenderlo. Por separado, (2)(b)(iii) exige CASILLAS DE SELECCIÓN para que el comprador elija entre representación exclusiva y no exclusiva.",
+      "source_sha256": "fef980ad744d6545a2e633da5d20e0fc4bdaa3c3edec251e143240422330d087",
+      "target_sha256": "afcb23f155ec8b495c25762c67f3be8a2133c3ac307574fecf2f548398ee8b4e"
+    },
+    {
+      "source": "A limited dual agent cannot advocate for one side against the other, so the statute does not ask for a loyalty it could not deliver. RCW 18.86.020(2)(b)(iv) requires the principal to acknowledge exactly that, in separately initialed writing.",
+      "before": "Un agente dual limitado no puede abogar por una parte contra la otra, por lo que el estatuto no pide una lealtad que no podría cumplir. RCW 18.86.020(2)(b)(iv) requiere que el mandante reconozca exactamente eso, en escritura separadamente inicializada.",
+      "after": "Un agente dual limitado no puede defender a una parte contra la otra, por lo que la ley no exige una lealtad que no podría cumplir. RCW 18.86.020(2)(b)(iv) exige que el representado reconozca precisamente esa limitación por escrito, poniendo sus iniciales por separado.",
+      "source_sha256": "6bdbdf5cf965ba4e2d380ae9eaacc228a1b998fee01c0a8dc218bf9eebd3abb3",
+      "target_sha256": "9b2abad1f1f4739b2140ab03fd46b2e3f9c632c64207677cac4c2c54458c6409"
+    },
+    {
+      "source": "Confidentiality is not named; the material fact duty stands in its place.",
+      "before": "La confidencialidad no se menciona; el deber material está en su lugar.",
+      "after": "No se menciona la confidencialidad; la obligación de revelar hechos relevantes ocupa su lugar.",
+      "source_sha256": "62294865b42bb39cbe488a4fb1633a2e3a77b5e590071d4203c09bc6ca3e1256",
+      "target_sha256": "7f62c8e33b78d3bce54d5e6f4b1e54598a392106f0c288af244d110bc0146d7d"
+    },
+    {
+      "source": "Correct two things: under RCW 18.86.060(5) the designated broker, and any managing broker supervising both brokers, IS a limited dual agent by operation of the statute — she does have a role and did not choose it; and because she is a limited dual agent she must take no action adverse or detrimental to EITHER party, so relaying one side's position to the other broker is exactly what that forbids. The consent needed is the one in RCW 18.86.020(2)(b)(v), which is a SECOND consent distinct from (iv).",
+      "before": "Corregir dos cosas: bajo RCW 18.86.060(5) el bróker designado, y cualquier bróker gerente que supervise a ambos brókers, ES un agente dual limitado por la operación del estatuto — ella tiene un papel y no lo eligió; y debido a que ella es un agente dual limitado ella debe tomar ninguna acción adversa o perjudicial para ETIQUETA parte, por lo que transmitir la posición de una parte al otro bróker es exactamente lo que prohíbe. El consentimiento necesario es el de RCW 18.86.020(2)(b)(v), que es un segundo consentimiento distinto del iv).",
+      "after": "Deben corregirse dos puntos: conforme a RCW 18.86.060(5), el bróker designado y todo bróker gerente que supervise a ambos brókers SON agentes duales limitados por disposición legal; ella sí tiene una función y no la eligió. Como agente dual limitado, no puede realizar actos adversos o perjudiciales para NINGUNA de las partes; transmitir la posición de una parte al otro bróker es precisamente lo que se prohíbe. Se necesita el consentimiento de RCW 18.86.020(2)(b)(v), que es un SEGUNDO consentimiento distinto del previsto en (iv).",
+      "source_sha256": "9909603a9e32e453222a66989ab2d9f5b5e7489710ffaa53ff49211d3343ef00",
+      "target_sha256": "1fbeae3375f4ffe05cd7596e7fef068587736275328a173e707afdfe1f5ba37d"
+    },
+    {
+      "source": "Loyalty is not named — in its place stands the duty to take no action that is adverse or detrimental to EITHER party's interest.",
+      "before": "La lealtad no se nombra, en su lugar está el deber de no tomar ninguna acción que sea adversa o perjudicial para los intereses de OTRO partido.",
+      "after": "No se menciona la lealtad; en su lugar se establece la obligación de no realizar actos adversos o perjudiciales para los intereses de NINGUNA de las dos partes.",
+      "source_sha256": "c3a4d33ba838369f52cc91428f5ebd338329987dc310d708f1efa3d62075b04b",
+      "target_sha256": "073c12a7d361dcb05836570350c7ddef48ed586fbc0e1b82144909e26e91f301"
+    },
+    {
+      "source": "No default; the term is whatever the parties negotiate.",
+      "before": "Sin incumplimiento; el término es cualquiera que las partes negocien.",
+      "after": "No hay plazo por defecto; el plazo es el que negocien las partes.",
+      "source_sha256": "48b22af04662f36123d4733733fe5137e5ac1c03fc588398e656d5ebff8d01be",
+      "target_sha256": "774c98f1a851386bf95fdf5c0e0da4b02aff0496dd1afe8e16743177c89e2600"
+    },
+    {
+      "source": "Only where the buyer pays the firm's compensation.",
+      "before": "Sólo cuando el comprador paga la indemnización de la empresa.",
+      "after": "Solo cuando el comprador paga la remuneración de la firma.",
+      "source_sha256": "6eb8d3a7be88d3ecd94df714d7ccc49760729b95c8326a576f216a62dcaa115f",
+      "target_sha256": "d5e40e014c3cb9541cdf31a38e505e1839af646b2ba8f591bd59111d12994ec1"
+    },
+    {
+      "source": "RCW 18.86.060(5) assigns three positions at once: each appointed broker SOLELY represents their own party, and the designated and managing brokers are limited dual agents. A firm that obtained only the (iv) consent has consent to the wrong thing.",
+      "before": "RCW 18.86.060(5) asigna tres posiciones a la vez: cada bróker designado SOLELY representa a su propio partido, y los brókers designados y gestores son agentes duales limitados. Una empresa que obtuvo sólo el (iv) consentimiento tiene consentimiento para lo incorrecto.",
+      "after": "RCW 18.86.060(5) establece tres funciones simultáneas: cada bróker nombrado representa EXCLUSIVAMENTE a su propia parte, mientras que el bróker designado y los brókers gerentes son agentes duales limitados. Si la firma solo obtuvo el consentimiento de (iv), obtuvo consentimiento para una situación distinta.",
+      "source_sha256": "44545c8f4f0e7be9c20e2e358ac635ee38db17f79de4c444bf57b8497ec6af29",
+      "target_sha256": "44b327b0640f15e99251f8849e99098ccd24677c4780885f0f1a95fdca59a6e9"
+    },
+    {
+      "source": "Seller agency, by contrast, requires an appointment under a services agreement between the FIRM and the seller. Note that the firm is the contracting party and the firm appoints the broker as agent.",
+      "before": "La agencia vendedora, por el contrario, requiere un nombramiento en virtud de un acuerdo de servicios entre el FIRM y el vendedor. Tenga en cuenta que la firma es la parte contratante y la firma nombra al agente como agente.",
+      "after": "La representación del vendedor, en cambio, requiere una designación conforme a un acuerdo de servicios entre la FIRMA y el vendedor. La firma es la parte contratante y designa al bróker como agente.",
+      "source_sha256": "e360a802099f9f3adf84653790f9fd898e8bce07b112741eb68dd7a99ca95bbc",
+      "target_sha256": "f29d5e86e8411977747da6bcf3d4427f18bbab55907ca124e87503bd34d191d5"
+    },
+    {
+      "source": "Set forth in the services agreement, SEPARATELY INITIALED by the principal, and including an acknowledgment that a limited dual agent may not advocate terms favorable to one principal to the detriment of the other.",
+      "before": "Establecen en el acuerdo de servicios, SEPARADAMENTE INICIALMENTE por el mandante, e incluyendo el reconocimiento de que un agente dual limitado no puede abogar por términos favorables a un principal en detrimento del otro.",
+      "after": "Debe constar en el acuerdo de servicios, con las INICIALES DEL REPRESENTADO POR SEPARADO, e incluir el reconocimiento de que un agente dual limitado no puede promover condiciones favorables a un representado en perjuicio del otro.",
+      "source_sha256": "db10038c22dfd682085670ad69e0229e68a73a0c68990533e2a53ddcb619a497",
+      "target_sha256": "32628514465a854995dc2cd0d4b53d83336e128872a020b42ad7cb2ce536b0df"
+    },
+    {
+      "source": "The structural fact — showing alternative or competing properties, and representation of more than one principal by different brokers in the same firm in competing transactions — 'does not IN AND OF ITSELF' breach loyalty or create a conflict.",
+      "before": "El hecho estructural —que muestra propiedades alternativas o competidoras, y la representación de más de un principal por diferentes corredores en la misma empresa en transacciones competidoras— 'no EN Y DEL MISMO' infringe la lealtad o crea un conflicto.",
+      "after": "La circunstancia en sí —mostrar inmuebles alternativos o competidores y que distintos brókers de una misma firma representen a varios clientes en transacciones competidoras— «no constituye POR SÍ SOLA» un incumplimiento de la lealtad ni crea un conflicto.",
+      "source_sha256": "99ef7cafa00b2f880eb0f48d2746378a25c98254299b2da6b46e6dbcaca6c49b",
+      "target_sha256": "18557b950754ff9ca04c8a8639f70af602e41fdd4640550115038561fedfb9e9"
+    },
+    {
+      "source": "What default term does RCW 18.86.020(2)(b)(i) prescribe for a BUYER's services agreement?",
+      "before": "¿Qué término predeterminado prescribe RCW 18.86.020(2)(b)(i) para un acuerdo de servicios de COMPRAR?",
+      "after": "¿Qué plazo por defecto establece RCW 18.86.020(2)(b)(i) para el acuerdo de servicios de un COMPRADOR?",
+      "source_sha256": "9c3264667a314a4d1f002bef2f026327e72f3bbbad4dfb0ca209c39d81c199a6",
+      "target_sha256": "d1b8d0cb7970df7bf3c91f6c2ed7488fbaf60688a453b099a4c7ac8a7a6ded9e"
+    },
+    {
+      "source": "What duty does RCW 18.86.060 NOT name for a limited dual agent, and what stands in its place?",
+      "before": "¿Qué deber hace RCW 18.86.060 NO nombre para un agente dual limitado, y lo que se encuentra en su lugar?",
+      "after": "¿Qué obligación NO menciona RCW 18.86.060 para un agente dual limitado y qué obligación ocupa su lugar?",
+      "source_sha256": "1e67a9c3d38d06a05bf81866fb61e2accde05f1a094d1eb760e15b48c3088b48",
+      "target_sha256": "d71e339772aa323939c9c912dfdb669207146dfab3afb040ee86ff665656d70d"
+    },
+    {
+      "source": "When a broker performs real estate brokerage services as a buyer's agent SOLELY FOR COMMERCIAL REAL ESTATE — RCW 18.86.020(3).",
+      "before": "Cuando un bróker realiza servicios de corretaje inmobiliario como agente de un comprador SOLEMENTE PARA EL ESTATO COMERCIAL REAL — RCW 18.86.020(3).",
+      "after": "Cuando un bróker presta servicios de corretaje como agente de un comprador EXCLUSIVAMENTE RESPECTO DE INMUEBLES COMERCIALES — RCW 18.86.020(3).",
+      "source_sha256": "fbeca61019a1f5154be6ef10f369279144037e8a00ae346ddac3b3c5ccef3c24",
+      "target_sha256": "4f70b49bd8f0f69a0916bb1b1e61b9801e8849849943319c9833ba5e6cc61c27"
+    },
+    {
+      "source": "At the earliest of completion of performance, expiration of the agreed term, termination by mutual agreement, or termination by notice from either party — though such a termination does not otherwise affect the contractual rights of either party.",
+      "before": "A la mayor brevedad posible, la expiración del plazo convenido, la rescisión por mutuo acuerdo o la rescisión por notificación de cualquiera de las partes, aunque esa rescisión no afecte de otro modo a los derechos contractuales de ninguna de las partes.",
+      "after": "Cuando ocurra primero cualquiera de estos hechos: cumplimiento de lo pactado, vencimiento del plazo acordado, terminación por mutuo acuerdo o terminación mediante aviso de cualquiera de las partes. No obstante, esa terminación no afecta por sí misma a los derechos contractuales de ninguna de las partes.",
+      "source_sha256": "c8ab49c508d63862d08377fdf878a4d27990aad3cb03de95538ead84eaff731c",
+      "target_sha256": "7a0e820132d92c955ac464ee3b262b74859d5deb3c1263d3c0a27e742451e662"
+    },
+    {
+      "source": "Because it explains that Washington places responsibility where the conduct was — with the broker, through RCW 18.86.031 and the licence law — and because a client who asks 'am I on the hook for what you do?' is asking about it.",
+      "before": "Porque explica que Washington coloca la responsabilidad donde estaba la conducta —con el corredor, a través de RCW 18.86.031 y la ley de licencias— y porque un cliente que pregunta '¿estoy en el gancho por lo que haces?' está preguntando por ello.",
+      "after": "Porque explica que Washington atribuye la responsabilidad a quien realizó la conducta —el bróker, mediante RCW 18.86.031 y la ley de licencias— y porque eso es lo que pregunta un cliente cuando dice: «¿Respondo yo por lo que usted haga?».",
+      "source_sha256": "21b83b64a8c250642db49e794fcc044abe5fa2ff906f8758d6261fb7551f07ce",
+      "target_sha256": "44199ec4ca1118f9a56772d2d7720103d56fedb8e489c3d575c12757616d6b95"
+    },
+    {
+      "source": "Decline to show the property, since no one is offering to compensate the firm.",
+      "before": "Declinar para mostrar la propiedad, ya que nadie está ofreciendo para compensar a la empresa.",
+      "after": "Negarse a mostrar el inmueble porque nadie ofrece remunerar a la firma.",
+      "source_sha256": "f6a1107ee32cefbffb2507a9814ea8a60583864362b9106edf516ce4f60b55ec",
+      "target_sha256": "fdb9adef6c4d4fe093d47d87567765029bca1cb60421848dfe88af963a8eb8ac"
+    },
+    {
+      "source": "Each appointed broker SOLELY represents the party with whom the appointed broker has an agency relationship — the dual agency sits above them at the supervisory level.",
+      "before": "Cada agente designado SOLELY representa a la parte con la que el agente designado tiene una relación de agencia — la agencia dual se sienta por encima de ellos a nivel de supervisión.",
+      "after": "Cada bróker nombrado representa EXCLUSIVAMENTE a la parte con la que mantiene una relación de agencia; la representación dual corresponde al nivel de supervisión superior.",
+      "source_sha256": "af4e613608f75e3ab999e464495f81c3d0c798dd4fd93db92a2483df41d6bc0b",
+      "target_sha256": "2706b589d22b2a0de72415f38caa7a7ef85991dc6dd727390210fe9de5762304"
+    },
+    {
+      "source": "Payment of compensation creates a subagency.",
+      "before": "El pago de la indemnización crea un suborganismo.",
+      "after": "El pago de remuneración crea una relación de subagencia.",
+      "source_sha256": "41c3287bd3d09d76150b6e3dfad10d701661b23dfd6e6f3a2e618f976f76ef38",
+      "target_sha256": "43f8acdacb6777f22385e34ba6a93add84bb96c9e232ca62b9ab2119920dec18"
+    },
+    {
+      "source": "RCW 18.86.060(1). Not a separate form produced at the last moment — set forth in the services agreement, and under (2)(b)(iv) separately initialed with the acknowledgment.",
+      "before": "RCW 18.86.060(1). No se trata de una forma separada producida en el último momento, establecida en el acuerdo de servicios, y con arreglo a lo dispuesto en el inciso iv) de la letra b) del apartado 2 inicializada por separado con el reconocimiento.",
+      "after": "RCW 18.86.060(1). El consentimiento debe constar en el acuerdo de servicios, no en un formulario separado presentado a última hora. Además, conforme a (2)(b)(iv), el representado debe poner sus iniciales por separado junto al reconocimiento correspondiente.",
+      "source_sha256": "642290395c7088840ed716b42325fcf1e57113c050a4c2db2bbce909337519f3",
+      "target_sha256": "ccac816740380e0b7b00104995c4d5f4432cc28e0bfe1c21a0cc7891802fedf3"
+    },
+    {
+      "source": "Take the referral fee, since the buyer has not signed anything committing her to compensate the firm.",
+      "before": "Toma la tarifa de remisión, ya que el comprador no ha firmado nada comprometiéndola a indemnizar a la empresa.",
+      "after": "Aceptar la comisión por remisión, ya que la compradora no ha firmado nada que la obligue a remunerar a la firma.",
+      "source_sha256": "494944522a47a0b00e1b023428d1654da009f5a862d2bf5dcea34d8e36b83787",
+      "target_sha256": "04c6ca8174d792786235bf513385a8934e37ff2fe66bb80fce77b9b6e5a82d79"
+    },
+    {
+      "source": "The seller, the buyer, a third party, or firms sharing the compensation between them.",
+      "before": "El vendedor, el comprador, un tercero o empresas que compartan la indemnización entre ellos.",
+      "after": "El vendedor, el comprador, un tercero o varias firmas que se repartan la remuneración.",
+      "source_sha256": "9a471e64100098f4328890ad012f19c93cd99dbd08f5c86fefba2dd9845b6745",
+      "target_sha256": "07b9f5f3a24ea643288bd6a2755cd257592c5b5e0cd4c4a4b6f7ffd1d692d0dd"
+    },
+    {
+      "source": "The structural fact — showing properties, listing competing properties, showing the buyer's property of interest to others, and presenting additional offers while the property is under a transaction — none of which 'in and of itself' constitutes adverse or detrimental action.",
+      "before": "El hecho estructural —que muestra propiedades, enumera las propiedades competidoras, muestra los bienes del comprador de interés para otros y presenta ofertas adicionales mientras el bien se encuentra en una transacción— ninguno de los cuales «en sí» constituye una acción adversa o perjudicial.",
+      "after": "La circunstancia en sí: mostrar inmuebles, aceptar encargos de venta de inmuebles competidores, mostrar a otras personas el inmueble que interesa al comprador y presentar ofertas adicionales mientras el inmueble está sujeto a una transacción. Ninguna de estas circunstancias constituye «por sí sola» una actuación adversa o perjudicial.",
+      "source_sha256": "b50cd6dc64aa55e1226ad5c290c8cdd9c34a877cc5b7d892051d2c8fa75952f8",
+      "target_sha256": "db864a3a54685fb0ea8a4c1e93359195bea7e70bbb54cc620a487da714ad6ae5"
+    },
+    {
+      "source": "Together with RCW 18.86.100 it says: the principal is not charged with the broker's knowledge and is generally not liable for the broker's acts. The honest answer to the client's question ends with 'ask your attorney about your own situation' — which RCW 18.86.040(1)(c) makes a duty.",
+      "before": "Junto con RCW 18.86.100 dice: el mandante no está encargado de los conocimientos del corredor y por lo general no es responsable de los actos del corredor. La respuesta honesta a la pregunta del cliente termina con \"preguntar a su abogado sobre su propia situación\", que RCW 18.86.040(1)(c) hace un deber.",
+      "after": "Junto con RCW 18.86.100, establece que no se imputa al representado el conocimiento del bróker y que, por regla general, no responde por los actos de este. La respuesta honesta al cliente termina con «consulte a su abogado sobre su situación particular», recomendación que RCW 18.86.040(1)(c) exige.",
+      "source_sha256": "059fa2161fc855455b5540ddd19ee6553d0d0bf08342c96a59111b1835da1136",
+      "target_sha256": "3c7a9cd25ec605e4928ba47196016303c47176d11339554bd7f04e4c9dec46db"
+    },
+    {
+      "source": "Under RCW 18.86.100, is a principal charged with facts known to their agent?",
+      "before": "Bajo RCW 18.86.100, es un principal acusado de hechos conocidos por su agente?",
+      "after": "Conforme a RCW 18.86.100, ¿se imputa al representado el conocimiento de los hechos que conoce su agente?",
+      "source_sha256": "5bd247ba1b57cfd93b4d1f7e1e83d659e828852731f1deae3815d7db0b9faf4b",
+      "target_sha256": "e2dc556ce4be4788e65dfeca65df5abb7e082f90a89cd9c3cd2345765e6927a6"
+    },
+    {
+      "source": "Washington does not prescribe a source. Subsection (5) adds that a firm may be compensated by more than one party, and (6) that a firm may receive compensation based on the purchase price without breaching any duty.",
+      "before": "Washington no prescribe una fuente. El párrafo 5) añade que una empresa puede ser indemnizada por más de una parte, y 6) que una empresa puede recibir una indemnización basada en el precio de compra sin incumplir ningún derecho.",
+      "after": "Washington no impone una fuente concreta de pago. El apartado (5) añade que una firma puede recibir remuneración de más de una parte; el (6), que puede recibir una remuneración basada en el precio de compra sin incumplir ninguna obligación.",
+      "source_sha256": "409efa203485b000ee89cd90ea1c9f07ab861d30e3237f966d285b6ccc41bdfa",
+      "target_sha256": "9b01264c2a0a7e56e0c1a56ef7e7b94b5ac4dc6c1fe78570966dfa3caef20511"
+    },
+    {
+      "source": "Whenever the agent is unable to satisfy a judgment.",
+      "before": "Cuando el agente es incapaz de satisfacer un juicio.",
+      "after": "Siempre que el agente no pueda pagar lo ordenado en una sentencia.",
+      "source_sha256": "0fc059ca83cafc0acb8a4d1b8b6be70da3d931a574861244512496d7671d1bb3",
+      "target_sha256": "c4672dc4cffc6671fe004e614c50eea148ad9d4d5851eba1a249e91d4eba61c4"
+    },
+    {
+      "source": "Whichever party the firm represents.",
+      "before": "Cualquiera que sea el partido que represente la firma.",
+      "after": "La parte a la que represente la firma.",
+      "source_sha256": "5161be3fe940e5ae6426f275f76b601b76a5baf03339bd3cc99a467c95b2594d",
+      "target_sha256": "ed8bd6430280878b04b7dfad0ece1a18737e299e7ea96d509fac18058060f193"
+    },
+    {
+      "source": "Who may pay a firm's compensation under RCW 18.86.080(1)?",
+      "before": "¿Quién puede pagar la indemnización de una empresa con arreglo a RCW 18.86.080(1)?",
+      "after": "¿Quién puede pagar la remuneración de una firma conforme a RCW 18.86.080(1)?",
+      "source_sha256": "717dcb443ff439c6ccffc9e4916af9254f28077703b9e31f44bdbfb4a4e9c034",
+      "target_sha256": "6e6365cbf5a19ac7ec4c6b89587e94c8878b2299eb00c930438ac7772e71fe62"
+    },
+    {
+      "source": "A written disclosure, before the buyer signs an offer, of the sources and amounts of any compensation the broker has or expects to receive — set out in a separate paragraph titled 'Compensation Disclosure' or in a separate writing so titled.",
+      "before": "Una divulgación por escrito, antes de que el comprador firme una oferta, de las fuentes y las cantidades de cualquier compensación que el bróker tiene o espera recibir —establecida en un párrafo separado titulado \"Divulgación de la compensación\" o en un escrito separado así titulado.",
+      "after": "Una comunicación escrita, antes de que el comprador firme una oferta, de las fuentes e importes de toda remuneración que el bróker haya recibido o espere recibir, en un párrafo separado titulado «Compensation Disclosure» (divulgación de remuneración) o en un documento separado con ese título.",
+      "source_sha256": "7cf445f76f4647442f43ba7e5209b18fe71d8311b777d79652415a9536b59faf",
+      "target_sha256": "83bb12ece88d7c4335951f6d3708a114f21b91164ddfe8cff55a8aab541a7047"
+    },
+    {
+      "source": "Any transaction under a stated dollar amount.",
+      "before": "Cualquier transacción con un importe en dólares.",
+      "after": "Cualquier transacción por debajo de una cantidad determinada en dólares.",
+      "source_sha256": "eddeda69791b587e270734abf8f3f571477d5ef786204d3d42884d58fc65ae0c",
+      "target_sha256": "df67ecc1d0123794e5490a27eeec232499d59f93b0d19ea26de3de37e46118ff"
+    },
+    {
+      "source": "Decline the listing, since her requirements cannot be met.",
+      "before": "Disminuir la captación inmobiliaria, ya que sus requisitos no se pueden cumplir.",
+      "after": "Rechazar el encargo de venta porque no pueden cumplirse sus requisitos.",
+      "source_sha256": "d7cbbd0892974a30e8c7b8733f61371176a7c580e9124e699ed1e93b48d4ca6d",
+      "target_sha256": "6bea8a5a49c653daad743377d408af1709ec1997a08d353c3a6ac66938007a5f"
+    },
+    {
+      "source": "It forecloses the objection sellers actually raise. A broker who tells a seller 'we can't market it publicly because you don't want showings' has misstated the statute — controlled access and public marketing are different things.",
+      "before": "Exceptua las objeciones que los vendedores plantean en realidad. Un bróker que le dice a un vendedor 'no podemos comercializarlo públicamente porque no quieres shows' ha fallado el estatuto: el acceso controlado y el marketing público son cosas diferentes.",
+      "after": "Resuelve la objeción que suelen plantear los vendedores. Un bróker que afirma «no podemos promocionarlo públicamente porque usted no quiere visitas» describe incorrectamente la ley: controlar el acceso y hacer publicidad al público son cuestiones distintas.",
+      "source_sha256": "f038a09025e1d014b50d9867318864766b0ec45f2670822d3c4f7991da3d992b",
+      "target_sha256": "d86cd1b1fa3ea6ad5a30d0e774adeadc98d355ccab1869718b0081902bcb6f6f"
+    },
+    {
+      "source": "It is easy to invert. The broker discloses to their OWN principal what is being offered to the OTHER side's firm — because the seller is usually funding it and the buyer's obligation under (7)(b) turns on it.",
+      "before": "Es fácil de invertir. El bróker revela a su OWN principal lo que se ofrece a la empresa de la otra parte - porque el vendedor por lo general está financiando y la obligación del comprador en virtud de (7) b) se convierte en ella.",
+      "after": "Es fácil invertir la dirección. El bróker informa a su PROPIO representado de lo que se ofrece a la firma de la OTRA parte, porque normalmente el vendedor lo financia y la obligación del comprador conforme a (7)(b) depende de ello.",
+      "source_sha256": "92733c03fc229d41712bd838d2a0570b9a843d54975aa21eec086b8e59cdd553",
+      "target_sha256": "dfa9fcf526875515137b8e3002734e7b2b4ad94e13ceb9c048085083267523f1"
+    },
+    {
+      "source": "Market privately as she asks, since her children's presence is a safety concern, and stop presenting offers once she accepts.",
+      "before": "Mercado privado como ella pide, ya que la presencia de sus hijos es una preocupación de seguridad, y dejar de presentar ofertas una vez que ella acepta.",
+      "after": "Promocionar el inmueble de forma privada como solicita, porque la presencia de sus hijos plantea una cuestión de seguridad, y dejar de presentar ofertas cuando acepte una.",
+      "source_sha256": "c39a06fc7181071445f535787fcc314b8bee153bc15957f06c80ad72f4f687a9",
+      "target_sha256": "9383373496db4827b526a7c9cee3607484f44050b697ae65b1a8606560f685d5"
+    },
+    {
+      "source": "Market publicly but agree to stop presenting offers after acceptance.",
+      "before": "Mercado público, pero acuerdan dejar de presentar ofertas después de la aceptación.",
+      "after": "Promocionar el inmueble públicamente, pero acordar dejar de presentar ofertas después de la aceptación.",
+      "source_sha256": "6ff37fc9beb00444bc4c663955edd2a062ba2f498078f72372ed91d2e6ee8f18",
+      "target_sha256": "c2f708610113e6ec0f937be90487d73d4e123ba05311bd8273ea666765ed8a07"
+    },
+    {
+      "source": "RCW 18.85.361 was not read for this project, and no penalty, sanction or procedure is stated in this build.",
+      "before": "RCW 18.85.361 no fue leído para este proyecto, y no se establece ninguna sanción, sanción o procedimiento en este edificio.",
+      "after": "No se consultó RCW 18.85.361 para este proyecto; por ello, esta versión del curso no especifica penas, sanciones ni procedimientos.",
+      "source_sha256": "98e31a154b3099e684e4e37b2c84ce78bc5f5b7782a723ed45032bf043230175",
+      "target_sha256": "ee01cc55180b84ce65605581b9fe5e57f6bbaa1524a532889eacc72198687f95"
+    },
+    {
+      "source": "RCW 18.86.080(7), and 'must have' is the operative phrase. It reaches compensation 'from any party or firm,' so a buyer's firm cannot rely on a listing firm's offer in place of its own agreement with the buyer.",
+      "before": "RCW 18.86.080(7), y \"debe tener\" es la frase operativa. Llega a una compensación \"de cualquier parte o empresa\", por lo que la empresa de un comprador no puede confiar en la oferta de una empresa que cotiza en bolsa en lugar de su propio acuerdo con el comprador.",
+      "after": "RCW 18.86.080(7); la expresión decisiva es «debe tener». Se aplica a la remuneración «de cualquier parte o firma», por lo que la firma que representa al comprador no puede sustituir su propio acuerdo con este por la oferta de remuneración de la firma que representa al vendedor.",
+      "source_sha256": "9487c67f14c1cd91227ffde2c270ae02024832c8f031d26f6beb22a9daaf8cf7",
+      "target_sha256": "fb2236933f2023fd6f8e1f8b259a014767e60661ed89ff4636653da3ba2172bc"
+    },
+    {
+      "source": "RCW 18.86.080(8). The heading is prescribed, exactly as RCW 18.86.030(1)(g) prescribes 'Agency Disclosure' — Washington names its headings, and a disclosure under a different heading has not complied.",
+      "before": "RCW 18.86.080(8). El encabezamiento está prescrito, exactamente como RCW 18.86.030(1)(g) prescribe 'Divulgación de la Agencia' — Washington nombra sus encabezados, y una revelación bajo un encabezamiento diferente no ha cumplido.",
+      "after": "RCW 18.86.080(8). El título está prescrito, al igual que RCW 18.86.030(1)(g) prescribe «Agency Disclosure» (divulgación de representación). Washington establece los títulos concretos, y una comunicación con otro título no cumple lo exigido.",
+      "source_sha256": "edcf5b06a81b1e0b4977222baebac49dd773a429c4361ef8b6cc55be6100a5aa",
+      "target_sha256": "2457f6416ce53caa03d9b146a4012ef795b6bf46fb15c892e36f8fdfe5eddc22"
+    },
+    {
+      "source": "Separate what she actually wants from what RCW 18.86.130 forbids: a broker may not market residential real estate to a limited or exclusive group of buyers or brokers unless it is CONCURRENTLY marketed to the general public and all other brokers, except as reasonably necessary to protect health or safety — and the statute's last sentence says marketing to the general public does NOT require an owner to allow access onto the property, so she can have controlled access without concealed marketing; and RCW 18.86.030(1)(c) requires presentation of all written offers REGARDLESS of an existing contract, a duty that may not be waived.",
+      "before": "Separar lo que realmente quiere de lo que RCW 18.86.130 prohíbe: un corredor no puede comercializar bienes inmuebles residenciales a un grupo limitado o exclusivo de compradores o corredores a menos que sea CONCURRENTEMENTE comercializado al público en general y a todos los demás corredores, excepto cuando sea razonablemente necesario para proteger la salud o la seguridad — y la última frase de la ley dice que la comercialización al público en general NO requiere que un propietario permita el acceso a la propiedad, para que pueda tener acceso controlado sin comercialización oculta; y RCW 18.86.030(1)(c) requiere la presentación de todas las ofertas escritas RESPECTO DE un contrato existente, un deber que no puede ser renunciado.",
+      "after": "Distinga lo que la vendedora realmente desea de lo que prohíbe RCW 18.86.130: un bróker no puede promocionar un inmueble residencial ante un grupo limitado o exclusivo de compradores o brókers sin promocionarlo SIMULTÁNEAMENTE ante el público general y todos los demás brókers, salvo que sea razonablemente necesario para proteger la salud o seguridad. La última frase aclara que la promoción pública NO obliga al propietario a permitir el acceso al inmueble; por tanto, puede controlar el acceso sin ocultar la comercialización. Además, RCW 18.86.030(1)(c) exige presentar todas las ofertas escritas INDEPENDIENTEMENTE de que exista un contrato, obligación a la que no puede renunciarse.",
+      "source_sha256": "a758d98a3c58262977399d3eeffa7ee93b8eb9a7345fe592299decd9e020080c",
+      "target_sha256": "428c9b46cc4a3b8a6da2fb7572ef257da5e8044cfec332d349caeff4c36b6bb7"
+    },
+    {
+      "source": "The amount the principal agrees to compensate the firm; the principal's consent, if any, and its terms, to compensation sharing between firms and parties; the principal's consent, if any, and its terms, to compensation by more than one party; for a buyer, whether the broker will show properties where no party or firm is offering to pay the firm; and any other agreements between the parties.",
+      "before": "La cantidad que el principal acuerda indemnizar a la empresa; el consentimiento del principal, en su caso, y sus términos, a la compensación compartida entre empresas y partes; el consentimiento del principal, en su caso, y sus términos, a la indemnización por parte de más de una parte; para un comprador, si el corredor mostrará propiedades donde ninguna parte o empresa está ofreciendo pagar a la empresa; y cualquier otro acuerdo entre las partes.",
+      "after": "El importe que el representado acepta pagar a la firma; su consentimiento, si lo hay, y las condiciones para repartir la remuneración entre firmas y partes; su consentimiento, si lo hay, y las condiciones para recibir remuneración de más de una parte; en el caso de un comprador, si el bróker mostrará inmuebles por los que ninguna parte ni firma ofrezca remunerar a la firma; y cualquier otro acuerdo entre las partes.",
+      "source_sha256": "9c2ae94304e6b6f56c31b344c94e2a9c450ebba94d6ac6758457c268b4925dc8",
+      "target_sha256": "c1e5d534d6588cea16f8508c104ab7d82b03d84223dc59467a20901fc9406d48"
+    },
+    {
+      "source": "Voidability of the listing agreement.",
+      "before": "Cancelación del contrato de representación para la venta.",
+      "after": "Posibilidad de anular el contrato de representación para la venta.",
+      "source_sha256": "93ed352bc675cdbddeee3d46fae10e35718cc3e48455dd733e7898cb9ed1373c",
+      "target_sha256": "eb2539aab535a0d81a3dc970e9ef2ab68451cd9dc6f3f87ff510f991cfc00c96"
+    },
+    {
+      "source": "What does RCW 18.86.130's final sentence provide?",
+      "before": "¿Qué proporciona la sentencia final de RCW 18.86.130?",
+      "after": "¿Qué establece la última frase de RCW 18.86.130?",
+      "source_sha256": "ce657829a37c8d010854c6932cade274567dd555f4d59a6b0d48dd150a86e347",
+      "target_sha256": "031541b67cb6a3e20b7df55af9d210fb84b00a7c0c532e5fc0f87e8cf74783ad"
+    },
+    {
+      "source": "'Walking distance to the light rail.'",
+      "before": "Caminando a la distancia hasta el riel ligero.",
+      "after": "«A una distancia que puede recorrerse a pie del tren ligero».",
+      "source_sha256": "9ce113efa8ec87797345a814292c7a232d002d3cb8c4c5d7af487a0a4a1d5183",
+      "target_sha256": "ed12b3f149cd12680ed5b36c1e4b778926e28717cb4cedbaf75d107f6c7431ef"
+    },
+    {
+      "source": "Because WAC 308-124 and the remainder of RCW 18.85 were not obtained by this project — no firm-name requirement, disclosure format, sign rule, internet rule or penalty is stated anywhere in this build.",
+      "before": "Debido a que WAC 308-124 y el resto de RCW 18.85 no fueron obtenidos por este proyecto — ningún requisito de nombre de firma, formato de divulgación, regla de signos, regla de Internet o penalización se establece en cualquier parte de este edificio.",
+      "after": "Porque este proyecto no obtuvo WAC 308-124 ni el resto de RCW 18.85. Esta versión no especifica requisitos sobre el nombre de la firma, formatos de divulgación, reglas para letreros o publicidad en internet, ni sanciones.",
+      "source_sha256": "21cbf00bba603505cd560adc36f91e774e312f9d30498508f5d66aae88314ff1",
+      "target_sha256": "dc9bb6a079960496b76e8e9662715d5b5b40f74bc086d874e9b0620acccaad0b"
+    },
+    {
+      "source": "Decline to share terms, stop presenting after acceptance, and hold the deposit until the parties agree.",
+      "before": "Disminuir para compartir términos, dejar de presentar después de la aceptación, y mantener el depósito hasta que las partes acuerden.",
+      "after": "Negarse a compartir las condiciones, dejar de presentar ofertas tras la aceptación y conservar el depósito hasta que las partes acuerden su destino.",
+      "source_sha256": "2f3fab1c9a705a0f171ff4927f2e970d2fc1c0305d2411c866d8ffa743b1bb00",
+      "target_sha256": "6d8b9f65bf57cd58f29406b4e86ceceaf48cd25f9fe295738108b29e72bf3c3e"
+    },
+    {
+      "source": "Duty (b) reaches every person who reads the advertisement, not merely the parties to a transaction. Square footage, lot size, bedroom count, year built and zoning are all assertions.",
+      "before": "Deber (b) llega a toda persona que lee el anuncio, no sólo a las partes en una transacción. Metrajes cuadrados, tamaño del lote, recuento de dormitorios, año construido y zonificación son todas afirmaciones.",
+      "after": "La obligación (b) se extiende a toda persona que lea el anuncio, no solo a las partes de una transacción. La superficie en pies cuadrados, el tamaño del terreno, el número de dormitorios, el año de construcción y la zonificación son afirmaciones de hecho.",
+      "source_sha256": "d40d236c7e13916a8286acc2a4114d74b30cc04018d3c3ecfe35401273662273",
+      "target_sha256": "3fadaf792f10cfd189ac72b24de1086700f8d2df4698756486085ef9370236db"
+    },
+    {
+      "source": "Handle each separately: do not disclose the terms of one offer without the seller's authority, and apply RCW 18.86.010(9)'s five-part test to decide whether the information is confidential in the first place; present the late offer, because RCW 18.86.030(1)(c) requires presentation REGARDLESS of an existing contract and the duty may not be waived; and do not disburse the earnest money on your own judgement where entitlement is disputed — RCW 18.86.030(1)(e) requires accounting in a timely manner, and the mechanics are in WAC 308-124, which this course does not state.",
+      "before": "Tratar cada uno por separado: no revelar las condiciones de una oferta sin la autorización del vendedor, y aplicar RCW 18.86.010(9) prueba de cinco partes para decidir si la información es confidencial en primer lugar; presentar la oferta tardía, porque RCW 18.86.030(1)(c) requiere la presentación RESPECTO de un contrato existente y no se puede renunciar a la obligación; y no desembolsar el dinero en serio en su propio juicio cuando se impugne el derecho — RCW 18.86.030(1)(e) requiere contabilidad de manera oportuna, y los mecánicos están en WAC 308-124, que este curso no indica.",
+      "after": "Trate cada asunto por separado: no revele las condiciones de una oferta sin autorización del vendedor y aplique los cinco requisitos de RCW 18.86.010(9) para determinar si la información es confidencial. Presente la oferta posterior, porque RCW 18.86.030(1)(c) exige hacerlo INDEPENDIENTEMENTE de que exista contrato y la obligación es irrenunciable. No desembolse el depósito de buena fe por decisión propia si se disputa quién tiene derecho a él: RCW 18.86.030(1)(e) exige rendir cuentas oportunamente; los procedimientos están en WAC 308-124 y no se especifican en este curso.",
+      "source_sha256": "01050bfa20199f96f0151eb4286e33bbe15c2ef2c88b9fc2c4e07d579c0a2ee6",
+      "target_sha256": "e25c492a40010b3f2245890d3e31cf8d82280cc492d05444b256709be6e38684"
+    },
+    {
+      "source": "None; marketing statements are puffing.",
+      "before": "Ninguno; las declaraciones de marketing están hinchando.",
+      "after": "Ninguna; las afirmaciones publicitarias son meras exageraciones promocionales.",
+      "source_sha256": "a2490703ee0664170b91a1a1116b248fa890c269c0f3e087c3d0ac1a2ce75d4f",
+      "target_sha256": "8f3e474062a3f51031350204691d3f00ca7d198bcf1646c9566fec91a746d885"
+    },
+    {
+      "source": "Not disburse it on the broker's own judgement — the broker holds and the parties or a court decide, and RCW 18.86.030(1)(e) requires accounting in a timely manner for all money received.",
+      "before": "No desembolsarlo por decisión propia del corredor — el corredor tiene y las partes o un tribunal deciden, y RCW 18.86.030(1)(e) requiere contabilidad de manera oportuna para todo el dinero recibido.",
+      "after": "No desembolsarlo por decisión propia: el bróker conserva los fondos y las partes o un tribunal deciden. RCW 18.86.030(1)(e) exige rendir cuentas oportunamente de todo el dinero recibido.",
+      "source_sha256": "66730bf13e21fe2c03ead2e79548bbe75b07a2296d61d3d0f3f9dbb3f5bfa0e8",
+      "target_sha256": "d527f93f6c6a7e7c3306769ab5fd0bbf95b5399c8d7d706af4e5a6942b3fee44"
+    },
+    {
+      "source": "Obtaining WAC 308-124 and completing this module from its own text is a submission gate. What the module does teach is RCW 18.86.130 and the RCW 18.86.030 duties as they apply to marketing.",
+      "before": "Obtener WAC 308-124 y completar este módulo a partir de su propio texto es una puerta de envío. Lo que el módulo enseña es RCW 18.86.130 y el RCW 18.86.030 deberes como se aplican a la comercialización.",
+      "after": "Obtener WAC 308-124 y completar este módulo a partir de su texto es un requisito pendiente para presentar el curso. El módulo sí enseña RCW 18.86.130 y las obligaciones de RCW 18.86.030 aplicables a la comercialización.",
+      "source_sha256": "1746421e7b503353d1f2288ad89264dc42cde77a2259f3a5bade97825051875d",
+      "target_sha256": "27e32023678aa8c9f0ecf34259a5ce9941fdd1e99544536d3b78f7f83700f02b"
+    },
+    {
+      "source": "Only the material fact duty in (1)(d).",
+      "before": "Solo el derecho de hecho material en el punto 1) d).",
+      "after": "Únicamente la obligación de revelar hechos relevantes de (1)(d).",
+      "source_sha256": "32646b1121fb292f345748d19356495885714beba0ea209ac1a6900375c5c6af",
+      "target_sha256": "32cd68b5b40626561cafb17b3faebb914a557cc1d71bb7f1c755171ffa004fc7"
+    },
+    {
+      "source": "RCW 18.86.030(1)(b) — to deal honestly and in good faith — owed to all parties, unwaivable, and the sentence every violation in these courses is a failure of underneath.",
+      "before": "RCW 18.86.030(1)(b) —para tratar con honestidad y de buena fe— debe a todas las partes, indeclinables, y la sentencia cada violación en estos cursos es un fracaso de debajo.",
+      "after": "RCW 18.86.030(1)(b): actuar con honestidad y de buena fe. Es una obligación frente a todas las partes, irrenunciable, cuyo incumplimiento subyace a todas las infracciones tratadas en estos cursos.",
+      "source_sha256": "06d039c8f611b335ba8e5b12ff3917178ef834ade1277417b2e4f9129e239351",
+      "target_sha256": "165a214628ea2d55259c9eea20a24fb4c668c2ef6b13e4a70ec3c6ad99a8a0cd"
+    },
+    {
+      "source": "RCW 18.86.040(1)(e). And the existing-contract exception relieves a broker of the duty to SEEK — it is not permission to stop presenting, because RCW 18.86.030(1)(c) requires presentation 'regardless.'",
+      "before": "RCW 18.86.040(1)(e). Y la excepción del contrato existente exime a un corredor de la obligación de SEEK — no es permiso para dejar de presentar, porque RCW 18.86.030(1)(c) requiere presentación \"independientemente\".",
+      "after": "RCW 18.86.040(1)(e). La excepción por contrato vigente libera al bróker de la obligación de BUSCAR nuevas ofertas, pero no le permite dejar de presentar las que reciba: RCW 18.86.030(1)(c) exige presentarlas «independientemente» de que exista contrato.",
+      "source_sha256": "1e55e66d7734f8a72421a0c6be096acd5206217afc450db84c3c9e59c744723d",
+      "target_sha256": "44f454a62b65aed9201b4a223bc1fe3d0334e619a211a011129d351ca1219c06"
+    },
+    {
+      "source": "That the property will appraise, or what the market will do.",
+      "before": "Que la propiedad valorará, o lo que el mercado hará.",
+      "after": "Que la tasación del inmueble alcanzará el valor esperado, o cómo evolucionará el mercado.",
+      "source_sha256": "1f5a82b83092f5d23173fd649a58624b4e649702531df09e195f2e92176275e9",
+      "target_sha256": "e9954d1bf8be57a2a609c4e3f265304a3c20d9769941f4c3226c0aee6704cf81"
+    },
+    {
+      "source": "The Agency Disclosure paragraph.",
+      "before": "El párrafo de divulgación de información del Organismo.",
+      "after": "El párrafo «Agency Disclosure» (divulgación de representación).",
+      "source_sha256": "9ede3a42aa0a9181b50194b63f6cebec8a3c4c0ddc2d05267c94fe948c8d1c61",
+      "target_sha256": "da6365544add4760133367388fcf7ea46e9d163c28ba557b63eab84e329bb791"
+    },
+    {
+      "source": "The last three attribute and limit. The first two items in the correct answer are predictions about a third party's future opinion and about the future — neither is a fact about the property, and no shelter in RCW 18.86.030(2) covers an affirmative statement of the broker's own.",
+      "before": "El último tres atributo y límite. Los dos primeros ítems en la respuesta correcta son predicciones sobre la opinión futura de un tercero y sobre el futuro — tampoco lo es un hecho sobre la propiedad, y ningún refugio en RCW 18.86.030(2) cubre una declaración afirmativa de la propia bróker.",
+      "after": "Las otras tres opciones identifican la fuente y limitan la afirmación. Las dos afirmaciones de la respuesta correcta predicen la opinión futura de un tercero y la evolución futura del mercado. Ninguna es un hecho sobre el inmueble, y ninguna exención de RCW 18.86.030(2) ampara una afirmación propia del bróker.",
+      "source_sha256": "1dd7afb7e8baf71585c4e68527856b13e38f03909d79351b796a0137b186445b",
+      "target_sha256": "3b60b6357887c19ab0531199d70205386734ea20ac2c9cde746a7445129d4857"
+    },
+    {
+      "source": "The other three are real and important. But every marketing violation, every disclosure failure, every compensation dispute and every agency breach is, underneath, a failure of honesty and good faith owed to somebody.",
+      "before": "Los otros tres son reales e importantes. Pero cada violación de la comercialización, cada falla de la revelación, cada disputa de la compensación y cada violación de la agencia es, debajo, un fracaso de la honestidad y la buena fe se debe a alguien.",
+      "after": "Las otras tres disposiciones existen y son importantes. Pero toda infracción de comercialización, omisión de divulgación, disputa sobre remuneración e incumplimiento de representación implica, en el fondo, faltar a la honestidad y buena fe debidas a alguien.",
+      "source_sha256": "aa2f7e66a81579b7a0a9f6f873a9d5fd195f56537a38957648616c07d484e230",
+      "target_sha256": "8993badfb3878bff1fff216921895a4b4efaa57c42e0643ac42fec79e2c800c6"
+    },
+    {
+      "source": "The pamphlet acknowledgment, for every party it was owed to — including unrepresented parties.",
+      "before": "El acuse de recibo del folleto, por cada parte a la que se debía, incluidos los partidos no representados.",
+      "after": "El acuse de recibo del folleto de cada parte a la que debía entregarse, incluidas las partes sin representación.",
+      "source_sha256": "065cb8afd378c7debcd9a6a47ae2cef9ca46df8b0ad797785dc731ac36925dae",
+      "target_sha256": "402d9f263554bae2aad0219fc8f93e6d013126cfb45fff8c433e2e7fe0a683cd"
+    },
+    {
+      "source": "The pamphlet acknowledgment.",
+      "before": "El agradecimiento del panfleto.",
+      "after": "El acuse de recibo del folleto.",
+      "source_sha256": "994889e48ec0d6bc992c5027ee467bbbb82d35932753f2732dc27cb22c3e4715",
+      "target_sha256": "bfd61d191bbcb2859deec8809ddfed7ba4df1208d1005c38c4067cd7b529d3af"
+    },
+    {
+      "source": "The recorded lot dimensions, attributed to the plat.",
+      "before": "Las dimensiones de lote registradas, atribuidas a la placa.",
+      "after": "Las dimensiones inscritas del terreno, citando el plano de subdivisión como fuente.",
+      "source_sha256": "19f8161aa9dd1120a6338cea1157e277b26b75009aeb5e3ec335f6b72ac9e4bc",
+      "target_sha256": "7a94d1859a44fd7504f668cd1c231eec9425cda10723ae88290d763b6677b1f9"
+    },
+    {
+      "source": "To the district's own published data — answering from the broker's characterisation is both a steering risk and an opinion presented as fact.",
+      "before": "Para los propios datos publicados del distrito, responder a partir de la caracterización del corredor es tanto un riesgo de dirección como una opinión presentada como un hecho.",
+      "after": "A los datos publicados por el propio distrito escolar. Responder con la valoración personal del bróker implica tanto un riesgo de orientación discriminatoria (steering) como presentar una opinión como si fuera un hecho.",
+      "source_sha256": "329b58db7eb437541a1b401cbca2968aec9147f4dd58f805c12fc8d23c42fb6a",
+      "target_sha256": "d850f66526f69c3f6a9d7d88752a6fe059924fd8a94cfa833164f1917fb95274"
+    },
+    {
+      "source": "What is the seller's agent's marketing duty, and what are its two qualifications?",
+      "before": "¿Cuál es el deber de comercialización del agente del vendedor, y cuáles son sus dos calificaciones?",
+      "after": "¿Cuál es la obligación de comercialización del agente del vendedor y cuáles son sus dos limitaciones?",
+      "source_sha256": "784bc904e85d2a196f7354588eb804c52e5fc7a540cea9cce3c95db80e019830",
+      "target_sha256": "11ec1c97830d27f75cb901a9fdeff869bd39e049a2a1a823911a88d574d57a7e"
+    },
+    {
+      "source": "What must a broker do about the earnest money where entitlement is disputed?",
+      "before": "¿Qué debe hacer un corredor con respecto al dinero en serio donde se discute el derecho?",
+      "after": "¿Qué debe hacer un bróker con el depósito de buena fe cuando se disputa quién tiene derecho a recibirlo?",
+      "source_sha256": "6b0841aee46e4f49f9c0ed3e00731eec37681597aaebe80c7ee3f8b89012babb",
+      "target_sha256": "5a5d44e847e0fc35e37b27cf7b068c5f33e413067c0df02a7f8cabd0f465be30"
+    },
+    {
+      "source": "Yes — it reaches marketing 'the sale OR LEASE' of residential real estate.",
+      "before": "Sí — llega a la comercialización 'la venta O LEASE' de bienes raíces residenciales.",
+      "after": "Sí: se aplica a la comercialización de «la venta O EL ARRENDAMIENTO» de inmuebles residenciales.",
+      "source_sha256": "3c45bb9268262c3e6839f9b55fe640ef33f2fa6695921b9f78e5e9c71b7dd3f3",
+      "target_sha256": "ad9a76dcb32213bdd48cb223321c4be0d58bb570983d128ece68260ea3526bb8"
+    },
+    {
+      "source": "\"To their principal AND TO ALL PARTIES in a transaction.\"",
+      "before": "\"A sus principales y a todas las partes en una transacción.\"",
+      "after": "«Frente a su representado Y A TODAS LAS PARTES de una transacción».",
+      "source_sha256": "9af0204ab5311ddf0366f33f3f120dea8adb4df184caeff6d60a059d701eacdd",
+      "target_sha256": "d062d70bb839f0b20a31f47451e7be3082e4dbe660e5b784b53cbc58d0408eb2"
+    },
+    {
+      "source": "\"Which may not be waived.\"",
+      "before": "\"Que no se puede renunciar.\"",
+      "after": "«A las que no puede renunciarse».",
+      "source_sha256": "6d88128af2261995b0196de13c9ad008155abed14319ba2b3caad15667174cc7",
+      "target_sha256": "4f451a2b2dbbf2905c7b568430655cae11c08977ebf8fe21c35eb4c829624023"
+    },
+    {
+      "source": "A student arriving with a national textbook's account of fiduciary duty — loyalty, obedience, disclosure, confidentiality, accounting and reasonable care as",
+      "before": "Un estudiante que llega con un libro de texto nacional cuenta de deber fiduciario — lealtad, obediencia, divulgación, confidencialidad, contabilidad y cuidado razonable como",
+      "after": "Un estudiante que haya aprendido en un manual nacional que los deberes de lealtad, obediencia, divulgación, confidencialidad, rendición de cuentas y diligencia razonable son",
+      "source_sha256": "b2bd076171fbba71482f69d4365d0008fcb634e72fc4a3a169cffe79404935e3",
+      "target_sha256": "bb989f3086a540a042811d93f558824f0021aba973f27a5e637c3a89819a17bf"
+    },
+    {
+      "source": "Disclose your role in writing, under that heading, before your principal signs an offer.",
+      "before": "Divulgue su papel por escrito, bajo ese título, antes de que su principal firme una oferta.",
+      "after": "Informe por escrito de su función, bajo el título indicado, antes de que su representado firme una oferta.",
+      "source_sha256": "2a25cd0d845b72a7182b643455a86e9cb67730290e0a243de4c5ede27522bc4e",
+      "target_sha256": "50ab9c55a1e6dd0b2a32c69f188efa604ec4aeb6030c5803fa558a8d333782c4"
+    },
+    {
+      "source": "F. Duties (f) and (g), previewed",
+      "before": "F. Deberes f) y g), previstos",
+      "after": "F. Introducción a las obligaciones (f) y (g)",
+      "source_sha256": "784d3e8ee8dd8bfe2af8ce68000ae752abca56cf926d7dd3ae5d40df38a7dc3c",
+      "target_sha256": "e810134fcfc19ef980c55300b4d3c5129af3c2173e327f923fa9f8854278e35a"
+    },
+    {
+      "source": "No agreement, no signature, no disclosure, no instruction from a principal removes any of the seven. A broker asked to set one aside has been asked to do something the statute forecloses, and the answer does not depend on how the request is phrased.",
+      "before": "Ningún acuerdo, ninguna firma, ninguna revelación, ninguna instrucción de un mandante elimina cualquiera de los siete. Se ha pedido a un bróker que deje uno de lado que haga algo que el estatuto impide, y la respuesta no depende de cómo se formule la petición.",
+      "after": "Ningún acuerdo, firma, divulgación o instrucción del representado elimina ninguna de las siete obligaciones. Pedir al bróker que omita una de ellas equivale a pedirle algo que la ley prohíbe; la respuesta no depende de cómo se formule la petición.",
+      "source_sha256": "bf2eade404c737d6a959e097f6733357ac89d40c9c6a2d30ae546848b5c4b3dd",
+      "target_sha256": "0c5aa470fe34940e7f6f64e1be4ab4a3080f2e11c49947fcb585dc67659d7616"
+    },
+    {
+      "source": "Real Estate Practices — the second of the two courses",
+      "before": "Prácticas inmobiliarias: el segundo de los dos cursos",
+      "after": "Prácticas inmobiliarias: el segundo de los dos cursos que",
+      "source_sha256": "743153e5f3c2926f7ad6449b4a56d0af619cc0f0a6b491d55f1951e94ec3618e",
+      "target_sha256": "b9da7105d1ef7167e180397f2d9157f090ca85bc329ec7e3a2ead9cfa379bbc8"
+    },
+    {
+      "source": "The fact or suspicion that the property, or any neighboring property, is or was the site of a murder, suicide or other death, rape or other sex crime, assault or other violent crime, robbery or burglary, illegal drug activity, gang-related activity, political or religious activity, or other act, occurrence, or use NOT ADVERSELY AFFECTING THE PHYSICAL CONDITION OF OR TITLE TO THE PROPERTY is not a material fact.",
+      "before": "El hecho o la sospecha de que la propiedad, o cualquier propiedad vecina, es o fue el sitio de un asesinato, suicidio u otra muerte, violación u otro delito sexual, agresión u otro delito violento, robo o robo, actividad ilícita de drogas, actividad relacionada con pandillas, actividad política o religiosa, u otro acto, ocurrencia o uso NO AFECTAR ADVERSO A LA CONDICIÓN FÍSICA O TÍTULO A LA PROPIEDAD no es un hecho material.",
+      "after": "No constituye un hecho relevante el hecho o la sospecha de que el inmueble o uno vecino sea o haya sido escenario de un asesinato, suicidio u otra muerte, violación u otro delito sexual, agresión u otro delito violento, robo con violencia o entrada ilícita para robar, actividades ilícitas relacionadas con drogas, pandillas, actividades políticas o religiosas, u otro acto, suceso o uso que NO AFECTE NEGATIVAMENTE AL ESTADO FÍSICO NI A LA TITULARIDAD DEL INMUEBLE.",
+      "source_sha256": "6fac9b941d0a6f8b6cdfac2cdd6f296dc725e825e8b11d4c96b7d3c179ceb5d3",
+      "target_sha256": "0782071704aad2d6398244ac1e6fbfef86329de3652f953f67780521ce17a538"
+    },
+    {
+      "source": "What remains is the list in RCW 18.86.030, owed to ALL PARTIES, plus the relationship-specific lists in .040, .050 and .060 — and nothing else.",
+      "before": "Lo que queda es la lista en RCW 18.86.030, debida a TODAS LAS PARTES, más las listas específicas de relaciones en 040, 050 y 060 — y nada más.",
+      "after": "Rigen las obligaciones de RCW 18.86.030 frente a TODAS LAS PARTES, más las obligaciones específicas de cada relación previstas en .040, .050 y .060, y nada más.",
+      "source_sha256": "38a2c28920958a055fbbcc10d7eb36b0cb6adf0a45b9daaceeb3c6e75617258d",
+      "target_sha256": "98087ca1b49cdb76a1719f952a1ff72b17be404fa6fb465b6de9a06015d8811a"
+    },
+    {
+      "source": "before the broker's principal signs an offer, or as soon as reasonably practical, but before the parties reach mutual agreement ...\"",
+      "before": "antes de que el agente principal firme una oferta, o tan pronto como sea razonablemente práctico, pero antes de que las partes lleguen a un acuerdo mutuo ...\"",
+      "after": "antes de que el representado del bróker firme una oferta, o tan pronto como sea razonablemente posible, pero siempre antes de que las partes lleguen a un acuerdo mutuo...»",
+      "source_sha256": "3fa252009edf57c8f6accbe5695fd0b37c10afa7d9e1dab252d8961a3e2d3820",
+      "target_sha256": "131e281a993e8f1e934deb694e5b70fdb126e3f319673af7e637ef5ea9a412c7"
+    },
+    {
+      "source": "is an agreement. Having made it, the broker either does it or corrects the record — and duty (a), reasonable skill and care, now attaches to how it is done.",
+      "before": "es un acuerdo. Después de haberlo hecho, el corredor lo hace o corrige el registro... y el deber (a), habilidad y cuidado razonables, ahora se adhiere a cómo se hace.",
+      "after": "es un compromiso. Una vez asumido, el bróker debe cumplirlo o aclarar que no lo hará; la obligación (a), de competencia y diligencia razonables, se aplica a cómo lo lleve a cabo.",
+      "source_sha256": "0811159f824db0dfec05c00639a7056d1c30ee2611c17f9390680aa9fc7b8df7",
+      "target_sha256": "06b19694000a27e9995c0ae33c3208ef654e290bba73be3cbd593c8b792c9d19"
+    },
+    {
+      "source": "names.",
+      "before": "nombres.",
+      "after": "menciona.",
+      "source_sha256": "62455288ec3bc3935662fe42fb496de71f1b34e29e34eab3f22962f0b7c6b295",
+      "target_sha256": "2cf7afb12f4fde15fa2126ea9f87c5002b306bfd5a2b9e98e70ca1df65daec54"
+    },
+    {
+      "source": "— the buyer your seller-principal is negotiating against, the unrepresented seller across the table, the tenant your landlord-principal is screening.",
+      "before": "— el comprador su vendedor-principal está negociando contra, el vendedor no representado en la mesa, el inquilino su propietario-principal está cribando.",
+      "after": "— el comprador con quien negocia el vendedor al que usted representa, el vendedor sin representación de la otra parte y el posible inquilino al que está evaluando el arrendador que usted representa.",
+      "source_sha256": "90bd6fa9b8ba59b1866500fb8959ff453cea07eeadd5b42883800db396b90222",
+      "target_sha256": "4281529f59f987786b40ffe5322cb831998c2042c6d0162e6b40c053cdab95e4"
+    }
+  ],
+  "note": "Module-01 bilingual text read; corrections ongoing, not a complete course sign-off."
+}

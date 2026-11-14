@@ -2,6 +2,10 @@
 
 # Real Estate State Rollout Board
 
+## Spanish parallel bilingual review checkpoint — November 14, 2026
+
+1,454 additional course-entry corrections across 14 courses; 932 question blocks and 102 lesson sections actually compared. Full 30-course semantic signoff remains OPEN, together with human linguistic/SME and duration validation. Existing free-practice/non-credit boundaries retained. Build and 51 focused tests plus three sentence tests passed; corrected WA question rendered in local Chrome. Owner-authorized publication acceptance pending. [Coverage, source defects and recovery](../../audits/REAL-ESTATE-SPANISH-PARALLEL-REVIEW-2026-11-14.md).
+
 ## Spanish semantic correction continuation — November 14, 2026
 
 Owner-authorized correction release: 807 distinct translations / 888 entries across all 30 courses. Corrects obligations, negations, omissions, surveying and units; preserves public draft/non-credit boundaries. Build, 51 focused tests and 3 sentence tests passed; actual Chrome local Alaska rendering checked. **Full sentence-by-sentence semantic review remains OPEN for every course**, as do human linguistic/SME review and learner validation. Publication VERIFIED for commit c038924, ready deploy 6af8e7f93f27637b14a59cfb at 2026-11-14T23:00:49.023Z: HTTPS hashes matched 30 companions and Chrome opened all 30 courses across 14 states. The full-review gates remain OPEN. [Scope, coverage ledger and recovery](../../audits/REAL-ESTATE-SPANISH-SEMANTIC-REVIEW-2026-11-14.md).
