@@ -1,0 +1,1572 @@
+{
+  "status": "EDITORIAL_REVIEW_REQUIRED",
+  "scope": "Lexical candidates only; not an exhaustive semantic audit",
+  "courses": 30,
+  "unique_candidates": 140,
+  "counts": {
+    "deed-as-fact-or-action": 20,
+    "trust-as-confidence": 0,
+    "conveyance-as-transport": 0,
+    "executory-terminology": 0,
+    "email-verb-or-noun-review": 18,
+    "listing-terminology": 18,
+    "severance-as-dismissal": 0,
+    "consideration-terminology": 82,
+    "earnest-money-literal": 2,
+    "principal-as-director": 0,
+    "parcel-as-package": 0,
+    "client-customer-collapsed": 0,
+    "void-as-empty": 0
+  },
+  "human_linguistic_review": "OPEN",
+  "state_sme_review": "OPEN",
+  "findings": [
+    {
+      "id": "3c31675dfb958efbdc54e63628dbecb6cb6ef7bf04b2c51df49060bc8fba68b8",
+      "source": "Note that the text names communications. Your emails and messages about a transaction are transaction records.",
+      "target": "Tenga en cuenta que el texto nombra comunicaciones. Sus correos electrónicos y mensajes sobre una transacción son registros de transacciones.",
+      "flags": [
+        "email-verb-or-noun-review"
+      ],
+      "courses": [
+        "ak-salesperson-prelicense-40-v1"
+      ]
+    },
+    {
+      "id": "3f34407fcfec8aca6205890877c3eab702d806988919f80323dc31d2ab252a24",
+      "source": "makes it grounds for revocation or suspension to accept as earnest money anything other than cash",
+      "target": "hace que sea motivo de revocación o suspensión aceptar como depósito de buena fe cualquier cosa que no sea dinero en efectivo",
+      "flags": [
+        "earnest-money-literal"
+      ],
+      "courses": [
+        "ak-salesperson-prelicense-40-v1"
+      ]
+    },
+    {
+      "id": "14f5bba7251cbc285b74631169c7fa9ebc88cb7d38970cd431b63f04560439f3",
+      "source": "when a sale is made by a trustee under a deed of trust as authorised by AS 34.20.070 – 34.20.130, \"no other or further action or proceeding may be taken nor judgment entered against the maker or the surety or guarantor of the maker, on the obligation secured by the deed of trust",
+      "target": "cuando una venta es hecha por un fideicomisario bajo una escritura de fideicomiso autorizada por AS 34.20.070 – 34.20.130, \"no se podrá tomar ninguna otra acción o procedimiento ulterior ni se podrá dictar sentencia contra el fabricante o la fianza o garante del fabricante, sobre la obligación garantizada por la escritura de fideicomiso",
+      "flags": [
+        "deed-as-fact-or-action"
+      ],
+      "courses": [
+        "ak-salesperson-prelicense-40-v1"
+      ]
+    },
+    {
+      "id": "578c10e0b065a4e469c9c8125991b7eeb70a78bc74ed44891e28502a6e49cb35",
+      "source": "Reconcile by weighted consideration, not simple averaging.",
+      "target": "Reconciliar por consideración ponderada, no por promedio simple.",
+      "flags": [
+        "consideration-terminology"
+      ],
+      "courses": [
+        "az-salesperson-prelicense-90"
+      ]
+    },
+    {
+      "id": "e74871ec6a4f1d7de4abafcd428ba65040d999e51d77fe2b88875d3153d6b2a7",
+      "source": ", because most tax considerations in a financing decision close when the transaction does.",
+      "target": ", porque la mayoría de las consideraciones fiscales en una decisión de financiación cierran cuando la transacción lo hace.",
+      "flags": [
+        "consideration-terminology"
+      ],
+      "courses": [
+        "ca-mortgage-loan-brokering-lending-45"
+      ]
+    },
+    {
+      "id": "3f7851fb3e58bb5689f79186f815cc937aeea3edf589097a55b75abf5ccca079",
+      "source": ", use the reconsideration channel, and evidence the borrower's copy.",
+      "target": ", utilice el canal de reconsideración, y la prueba de la copia del prestatario.",
+      "flags": [
+        "consideration-terminology"
+      ],
+      "courses": [
+        "ca-mortgage-loan-brokering-lending-45"
+      ]
+    },
+    {
+      "id": "34d43bd3f49ccb5e76316877c08d4ca0b10762c6885eea7b45acfbcd4d477368",
+      "source": "2.5 The Reconsideration of Value",
+      "target": "2.5 Reconsideración del valor",
+      "flags": [
+        "consideration-terminology"
+      ],
+      "courses": [
+        "ca-mortgage-loan-brokering-lending-45"
+      ]
+    },
+    {
+      "id": "61b1a9076844c3db7c9e8d4ca1aca2c6d48e9a640390013d60faf1b472d58fbd",
+      "source": "3.4 The Reconsideration Process",
+      "target": "3.4 El proceso de reconsideración",
+      "flags": [
+        "consideration-terminology"
+      ],
+      "courses": [
+        "ca-mortgage-loan-brokering-lending-45"
+      ]
+    },
+    {
+      "id": "89dceb144dc3bde788dbfaef7e0c0848ca3c3806838e4c9466a90e36ad2e5c98",
+      "source": "3.7 Other Collateral Considerations",
+      "target": "3.7 Otras consideraciones sobre garantías reales",
+      "flags": [
+        "consideration-terminology"
+      ],
+      "courses": [
+        "ca-mortgage-loan-brokering-lending-45"
+      ]
+    },
+    {
+      "id": "5abc1ebf5416805c4853a1ffd7e6bf28c0cdbd117ba8054ce388c782653b26e5",
+      "source": "A defined reinstatement window exists and then closes, which is why timing is the critical fact for a borrower in default. It is neither impossible from the outset, nor available right up to delivery of the deed, nor purely discretionary.",
+      "target": "Existe una ventana de reincorporación definida y luego se cierra, por lo que el momento es el hecho crítico para un prestatario por defecto. No es imposible desde el principio, ni está disponible hasta la entrega de la escritura, ni es puramente discrecional.",
+      "flags": [
+        "deed-as-fact-or-action"
+      ],
+      "courses": [
+        "ca-mortgage-loan-brokering-lending-45"
+      ]
+    },
+    {
+      "id": "e9f41689f49d0f9e27815268245b83aabfe2dc6aec3bd6008480bc4b9eec120f",
+      "source": "An originator has, over two emails and a phone call, obtained a prospect's name, income, Social Security number, property address, an estimate of value, and the requested loan amount. He has not sent a form. His manager says the disclosure clock does not start \"until she signs the application,\" and suggests holding off on asking for the property address on future files \"so we get more time.\"",
+      "target": "Un iniciador ha obtenido, a través de dos correos electrónicos y una llamada telefónica, el nombre de un prospecto, ingresos, número de Seguro Social, dirección de la propiedad, una estimación del valor, y la cantidad del préstamo solicitado. No ha enviado un formulario. Su gerente dice que el reloj de divulgación no se inicia \"hasta que firme la solicitud\", y sugiere que no pida la dirección de la propiedad en futuros archivos \"para que tengamos más tiempo\".",
+      "flags": [
+        "email-verb-or-noun-review"
+      ],
+      "courses": [
+        "ca-mortgage-loan-brokering-lending-45"
+      ]
+    },
+    {
+      "id": "f7163046b4379aa207c0d7b36fb7da529024a8c85d10c3c36413445daa56631a",
+      "source": "And what is not a reconsideration:",
+      "target": "Y lo que no es una reconsideración:",
+      "flags": [
+        "consideration-terminology"
+      ],
+      "courses": [
+        "ca-mortgage-loan-brokering-lending-45"
+      ]
+    },
+    {
+      "id": "f7e06759efee25a66619d0d609a1b4ca9168b36a707820a0caccd970e0059340",
+      "source": "Federal and California disclosures are delivered on their own timing, and the products under consideration are presented on a common basis.",
+      "target": "Las revelaciones federales y de California se entregan en su propio momento, y los productos bajo consideración se presentan sobre una base común.",
+      "flags": [
+        "consideration-terminology"
+      ],
+      "courses": [
+        "ca-mortgage-loan-brokering-lending-45"
+      ]
+    },
+    {
+      "id": "24c5f505b1edce3c547ece8ad53d7d614d2877f5c4a008c114277aaed7a6537f",
+      "source": "It may support a reconsideration through the prescribed channel with additional data, or it may end the transaction at that price. It does not support pressure.",
+      "target": "Puede apoyar una reconsideración a través del canal prescrito con datos adicionales, o puede terminar la transacción a ese precio. No soporta la presión.",
+      "flags": [
+        "consideration-terminology"
+      ],
+      "courses": [
+        "ca-mortgage-loan-brokering-lending-45"
+      ]
+    },
+    {
+      "id": "4f07d8064c1fce6f35ad0af7cd5744be2be75b3fea0c4ae5ee54720647367439",
+      "source": "Read a valuation critically and request a reconsideration correctly.",
+      "target": "Lea una valoración crítica y solicite una reconsideración correctamente.",
+      "flags": [
+        "consideration-terminology"
+      ],
+      "courses": [
+        "ca-mortgage-loan-brokering-lending-45"
+      ]
+    },
+    {
+      "id": "32acd36d5e71dfcc1dbffb1f64fa4f7442ca4c3f6b4e3037d1147bbd3bf4f7c0",
+      "source": "Reconsideration of value",
+      "target": "Reconsideración del valor",
+      "flags": [
+        "consideration-terminology"
+      ],
+      "courses": [
+        "ca-mortgage-loan-brokering-lending-45"
+      ]
+    },
+    {
+      "id": "c0be2a206efa1ef454a70e7fee9fda6a89958ca76ede2d61df528ffb6c210643",
+      "source": "The correct process is a reconsideration of value through the lender's defined channel",
+      "target": "El proceso correcto es una reconsideración del valor a través del canal definido del prestamista",
+      "flags": [
+        "consideration-terminology"
+      ],
+      "courses": [
+        "ca-mortgage-loan-brokering-lending-45"
+      ]
+    },
+    {
+      "id": "3ed5eaefaf69d64c60fbdb9c705e1a0359f164f5268d279ca98ae4ee39fb29d7",
+      "source": "What is not a reconsideration:",
+      "target": "Lo que no es una reconsideración:",
+      "flags": [
+        "consideration-terminology"
+      ],
+      "courses": [
+        "ca-mortgage-loan-brokering-lending-45"
+      ]
+    },
+    {
+      "id": "f20fec3638410c94b9fba4f5b3bd3798f647ccfe9bcd9cbed858e1ad4202b2bb",
+      "source": "You are the responsible broker. A post-closing audit of one originator's last twenty files finds: four Loan Estimates dated after the earliest email identifying all six items, six files with no California mortgage loan disclosure statement, two condition letters written on brokerage letterhead in the originator's phrasing, three product comparisons referenced in emails but absent from the files, and one compensation figure that does not match the ledger.",
+      "target": "Tú eres el agente responsable. Una auditoría posterior a la clausura de los últimos veinte archivos de un iniciador encuentra: cuatro estimaciones de préstamos fechadas después del correo electrónico más temprano identificando los seis elementos, seis archivos sin declaración de la declaración de préstamo hipotecario de California, dos cartas de condición escritas en membrete de corretaje en el fraseo del iniciador, tres comparaciones de productos referenciados en correos electrónicos pero ausentes de los archivos, y una cifra de compensación que no coincide con el libro mayor.",
+      "flags": [
+        "email-verb-or-noun-review"
+      ],
+      "courses": [
+        "ca-mortgage-loan-brokering-lending-45"
+      ]
+    },
+    {
+      "id": "234c3d62a08cff9a1d381dd6deaadb4a0f3b31b8f2bc54c7364e79ff78a90b0c",
+      "source": "You should be able to read a report for factual accuracy, state the adjustment direction rule, explain what a low value produces, and describe a correct reconsideration request.",
+      "target": "Usted debe ser capaz de leer un informe para la exactitud de los hechos, indicar la regla de dirección de ajuste, explicar lo que produce un valor bajo, y describir una solicitud de reconsideración correcta.",
+      "flags": [
+        "consideration-terminology"
+      ],
+      "courses": [
+        "ca-mortgage-loan-brokering-lending-45"
+      ]
+    },
+    {
+      "id": "61a3a75fb4d439d9ca6a857f0d4353ac5f0b5e6f74cee77f8bb028c400620a8c",
+      "source": "You should be able to state the lower-of-value-or-price rule, distinguish supplying information from supplying a target, and describe a correct reconsideration request.",
+      "target": "Usted debe ser capaz de indicar la regla de menor valor o precio, distinguir el suministro de información del suministro de un objetivo, y describir una solicitud de reconsideración correcta.",
+      "flags": [
+        "consideration-terminology"
+      ],
+      "courses": [
+        "ca-mortgage-loan-brokering-lending-45"
+      ]
+    },
+    {
+      "id": "b69c8696290ef13b28c2c742f22a50fa61d2570e7123999a059e9ccc7963d0e1",
+      "source": "a reconsideration: an assertion that the value is wrong because the contract price is higher or because the transaction fails without a different number.",
+      "target": "una reconsideración: una afirmación de que el valor es erróneo porque el precio del contrato es más alto o porque la transacción falla sin un número diferente.",
+      "flags": [
+        "consideration-terminology"
+      ],
+      "courses": [
+        "ca-mortgage-loan-brokering-lending-45"
+      ]
+    },
+    {
+      "id": "56ebca43ac739e5db02799f289b6183ab6453d1f4a4ca53c98ff605c9a2090a8",
+      "source": "decline all three, put the reconsideration through the prescribed channel with data rather than a target, and escalate the appraiser-selection instruction, because it describes a practice rather than a single transaction.",
+      "target": "Declinar los tres, poner la reconsideración a través del canal prescrito con datos en lugar de un objetivo, y escalar la instrucción de evaluación-selección, porque describe una práctica en lugar de una sola transacción.",
+      "flags": [
+        "consideration-terminology"
+      ],
+      "courses": [
+        "ca-mortgage-loan-brokering-lending-45"
+      ]
+    },
+    {
+      "id": "71fdb5758d216b6ff0a717cc0dd68052320686ca292bd252a40853bf26f128b6",
+      "source": "draft the note and deed of trust from a form and call it done; advise on the tax treatment; predict whether the buyer will pay; characterize the arrangement as safe; or tell a seller that a subordination clause is standard.",
+      "target": "redactar la nota y escritura de fideicomiso de un formulario y llamarlo hecho; asesorar sobre el tratamiento fiscal; predecir si el comprador pagará; caracterizar el acuerdo como seguro; o decirle a un vendedor que una cláusula de subordinación es estándar.",
+      "flags": [
+        "deed-as-fact-or-action"
+      ],
+      "courses": [
+        "ca-mortgage-loan-brokering-lending-45"
+      ]
+    },
+    {
+      "id": "d8615d90396ddd1612641ae350d27bbd3e6afd8aebcf7b4f8b65d7044feb8536",
+      "source": "reconsideration",
+      "target": "reconsideración",
+      "flags": [
+        "consideration-terminology"
+      ],
+      "courses": [
+        "ca-mortgage-loan-brokering-lending-45"
+      ]
+    },
+    {
+      "id": "e147bdb0d2cffe0dc904a2a480c3c4a5eb27b2d2087fe93758f2f133ba6b3dae",
+      "source": "reconsideration of value",
+      "target": "reconsideración del valor",
+      "flags": [
+        "consideration-terminology"
+      ],
+      "courses": [
+        "ca-mortgage-loan-brokering-lending-45",
+        "ok-basic-prelicense-90",
+        "tx-principles-real-estate-ii-30",
+        "wi-salesperson"
+      ]
+    },
+    {
+      "id": "a28b4ef057734334337abdb66f52d3d58f4c140ee5e6dbce20db28067e788880",
+      "source": "reconsideration of value through the lender's defined channel",
+      "target": "reconsideración del valor a través del canal definido del prestamista",
+      "flags": [
+        "consideration-terminology"
+      ],
+      "courses": [
+        "ca-mortgage-loan-brokering-lending-45"
+      ]
+    },
+    {
+      "id": "8c0b9b16946da8ff06211fd81cc8dbaaaa2d7960defdf165e7c1e35afe6ad3e3",
+      "source": "reconsideration through the prescribed channel",
+      "target": "reconsideración a través del canal prescrito",
+      "flags": [
+        "consideration-terminology"
+      ],
+      "courses": [
+        "ca-mortgage-loan-brokering-lending-45"
+      ]
+    },
+    {
+      "id": "1c697a130e8c5d4b5e6f16c395459eae246b84cae395508bb7577c50139a9735",
+      "source": "record every finding with its file and date; preserve everything, including emails and drafts; escalate the authored letters to counsel; cure the compensation discrepancy on the framework's terms; change the three processes that produced the recurring items; retrain and re-examine this originator's files going back further, because twenty files is a sample; and document the audit itself, because",
+      "target": "registrar cada hallazgo con su archivo y fecha; preservar todo, incluyendo correos electrónicos y borradores; escalar las cartas de autor a los abogados; curar la discrepancia de compensación en los términos del marco; cambiar los tres procesos que produjeron los elementos recurrentes; reentrenar y reexaminar los archivos de este iniciador va más allá, porque veinte archivos es una muestra; y documentar la auditoría misma, porque",
+      "flags": [
+        "email-verb-or-noun-review"
+      ],
+      "courses": [
+        "ca-mortgage-loan-brokering-lending-45"
+      ]
+    },
+    {
+      "id": "a4fb67d02490fb76b746a9265ed0dc5aed6a25d4838c4f3f083e525cd6a801ad",
+      "source": "request a reconsideration with data and factual corrections and no number.",
+      "target": "solicitar una reconsideración con datos y correcciones fácticas y ningún número.",
+      "flags": [
+        "consideration-terminology"
+      ],
+      "courses": [
+        "ca-mortgage-loan-brokering-lending-45"
+      ]
+    },
+    {
+      "id": "788b304c2971845674e6add4a9fe792b8d913926dc1000a2c4b0176a0689b5d7",
+      "source": "such as an omitted permitted addition. Those are exactly what a reconsideration is built from.",
+      "target": "como una adición permitida omitida. Eso es exactamente de lo que se construye una reconsideración.",
+      "flags": [
+        "consideration-terminology"
+      ],
+      "courses": [
+        "ca-mortgage-loan-brokering-lending-45"
+      ]
+    },
+    {
+      "id": "96d20ff92f9b1f45a066e9483aa53ea311e3ecc346b534aa9191e69f0878625e",
+      "source": "touches sex and familial considerations and has no legitimate place in the evaluation.",
+      "target": "toca las consideraciones sexuales y familiares y no tiene lugar legítimo en la evaluación.",
+      "flags": [
+        "consideration-terminology"
+      ],
+      "courses": [
+        "ca-mortgage-loan-brokering-lending-45"
+      ]
+    },
+    {
+      "id": "aa5a4738d225928682a60b2a451f6b8dd51a3526179669915a757e5ee108f259",
+      "source": "A lender's appraisal comes in $30,000 below the contract price. The listing agent emails the appraiser a list of three sales she believes were overlooked and asks him to \"take another look — we need $920,000 to make this work.\"",
+      "target": "La tasación solicitada por el prestamista resulta $30,000 inferior al precio contractual. El agente del vendedor envía por correo electrónico al tasador una lista de tres ventas que considera omitidas y le pide que «lo revise otra vez: necesitamos $920,000 para que esta operación funcione».",
+      "flags": [
+        "listing-terminology"
+      ],
+      "courses": [
+        "ca-real-estate-practice-45"
+      ]
+    },
+    {
+      "id": "5156cf73f6721480bf6e5a1cb6614bbfc9468680db00126f1276d2b73513ef97",
+      "source": "All records relating to the matter, including drafts, texts, and emails.",
+      "target": "Todos los registros relacionados con el asunto, incluyendo borradores, textos y correos electrónicos.",
+      "flags": [
+        "email-verb-or-noun-review"
+      ],
+      "courses": [
+        "ca-real-estate-practice-45"
+      ]
+    },
+    {
+      "id": "6ab65635c5995fa14776603716e6d89ef67751387dba48bad0bb44f2c0718c5b",
+      "source": "Register visitors consistently, and be accurate with them about what registering means for future contact — that consent is what governs later texts and emails.",
+      "target": "Inscribir a los visitantes de manera consistente, y ser exacto con ellos acerca de lo que el registro significa para el contacto futuro - que el consentimiento es lo que rige los textos y correos electrónicos posteriores.",
+      "flags": [
+        "email-verb-or-noun-review"
+      ],
+      "courses": [
+        "ca-real-estate-practice-45"
+      ]
+    },
+    {
+      "id": "8c5f35d001294838f8c164dae10004857d7365cbd609ed8559ff9223708a6984",
+      "source": "Run the list at the listing appointment and again at the ending.",
+      "target": "Ejecute la lista en la reunión de captación y de nuevo en el final.",
+      "flags": [
+        "listing-terminology"
+      ],
+      "courses": [
+        "ca-real-estate-practice-45"
+      ]
+    },
+    {
+      "id": "fb53417c07fcd1dc83a0a69bc5e1181390a7a9fe785f8ed70786986f2cfb7500",
+      "source": "Section 5.3. The file, the emails, the texts, the listing service history including prior versions, the photographs, the advertising archive, the seller's disclosures, the licensee's own visual inspection note, and the delivery records.",
+      "target": "Sección 5.3. El archivo, los correos electrónicos, los textos, el historial del servicio de listado incluyendo versiones anteriores, las fotografías, el archivo de publicidad, las revelaciones del vendedor, la propia nota de inspección visual del licenciatario, y los registros de entrega.",
+      "flags": [
+        "email-verb-or-noun-review"
+      ],
+      "courses": [
+        "ca-real-estate-practice-45"
+      ]
+    },
+    {
+      "id": "058881620e6ca994416aa7d68ca8759edbef0dd610b04730d6eb11a75973938b",
+      "source": "and delivered to escrow. Agent emails, verbal agreements, and escrow instructions alone do not amend.",
+      "target": "y entregado a depósito. Los correos electrónicos de los agentes, los acuerdos verbales y las instrucciones de custodia no modifican por sí solos.",
+      "flags": [
+        "email-verb-or-noun-review"
+      ],
+      "courses": [
+        "ca-real-estate-practice-45"
+      ]
+    },
+    {
+      "id": "51107171ec23151377099759fd14a4a67864ba0b70425f41382f6678fce2a3dc",
+      "source": "— written notice, within its terms, with evidence. Extensions are signed amendments, not agent emails, and the deposit question belongs to the parties, their contract, and if necessary the courts.",
+      "target": "— notificación por escrito, en sus términos, con pruebas. Las extensiones son enmiendas firmadas, no correos electrónicos del agente, y la pregunta del depósito pertenece a las partes, su contrato, y si es necesario los tribunales.",
+      "flags": [
+        "email-verb-or-noun-review"
+      ],
+      "courses": [
+        "ca-real-estate-practice-45"
+      ]
+    },
+    {
+      "id": "62e18b0367ec0cc50ee07769f7ea2bf3195e202c3c1cb739548401041663b5e4",
+      "source": "\"He gave it to me\" describes a belief. A deed found in a drawer after death is a different fact pattern from a deed handed over with intent, and the difference determines whether title passed at all or whether the property is part of the estate.",
+      "target": "\"Él me lo dio\" describe una creencia. Una escritura encontrada en un cajón después de la muerte es un patrón de hecho diferente de una escritura entregada con intención, y la diferencia determina si el título pasó en absoluto o si la propiedad es parte de la herencia.",
+      "flags": [
+        "deed-as-fact-or-action"
+      ],
+      "courses": [
+        "ca-real-estate-principles-45"
+      ]
+    },
+    {
+      "id": "1b3610c99fb15c5c955726ca144137b7e632e22323426581ddce119647928945",
+      "source": ", Section 6.5 governs: it is a fact, not a problem to solve. It may support a reconsideration through the prescribed channel with additional data, and the appraiser remains free to reject it.",
+      "target": ", la Sección 6.5 gobierna: es un hecho, no un problema que resolver. Puede apoyar una reconsideración a través del canal prescrito con datos adicionales, y el tasador sigue siendo libre de rechazarlo.",
+      "flags": [
+        "consideration-terminology"
+      ],
+      "courses": [
+        "ca-real-estate-principles-45"
+      ]
+    },
+    {
+      "id": "9ff6145fd554e839d9444c30e9557fcc512fe55507d5314792f8542ef7be5b4c",
+      "source": ", and escalate a suspected biased appraisal through the broker and the lender's reconsideration process.",
+      "target": ", y escalar una supuesta evaluación sesgada a través del corredor y el proceso de reconsideración del prestamista.",
+      "flags": [
+        "consideration-terminology"
+      ],
+      "courses": [
+        "ca-real-estate-principles-45"
+      ]
+    },
+    {
+      "id": "fd645adeb66c85589d06855f50e05389c4f104b5c6cd2da0ab312ff6cc32ea09",
+      "source": "A borrower who believes an appraisal is inaccurate may request reconsideration through the lender, supported by specific comparable sales.",
+      "target": "Un prestatario que crea que una evaluación es inexacta puede solicitar una reconsideración a través del prestamista, apoyado por ventas comparables específicas.",
+      "flags": [
+        "consideration-terminology"
+      ],
+      "courses": [
+        "ca-real-estate-principles-45"
+      ]
+    },
+    {
+      "id": "14a118870a35200d5a36e0e9499547aa89a140a2889bd9eec4d41d70b5427b96",
+      "source": "A seller who says a loan was paid off in 2016 has stated a fact about the debt and nothing about the title, and an unreleased deed of trust in a preliminary report requires a document — the same point Lessons 05 and 09 make from the title side.",
+      "target": "Un vendedor que dice que un préstamo fue pagado en 2016 ha declarado un hecho sobre la deuda y nada sobre el título, y una escritura de fideicomiso no liberada en un informe preliminar requiere un documento — el mismo punto Lecciones 05 y 09 hacen desde el lado del título.",
+      "flags": [
+        "deed-as-fact-or-action"
+      ],
+      "courses": [
+        "ca-real-estate-principles-45"
+      ]
+    },
+    {
+      "id": "c9781573c574b0f91e08caea408ab55fc10727a111acfa77a1f8291533d3a8bf",
+      "source": "A seller who says a loan was paid off years ago has stated a fact about the debt and nothing about the title, and an unreleased deed of trust in a preliminary report requires a document.",
+      "target": "Un vendedor que dice que un préstamo fue pagado hace años ha declarado un hecho acerca de la deuda y nada sobre el título, y una escritura no liberada de confianza en un informe preliminar requiere un documento.",
+      "flags": [
+        "deed-as-fact-or-action"
+      ],
+      "courses": [
+        "ca-real-estate-principles-45"
+      ]
+    },
+    {
+      "id": "3729cb2a4e207f90e0fecbac610a18674f688a507d6cd32bb2083213cd48ebf2",
+      "source": "Agent emails, verbal agreements, and escrow instructions alone change nothing.",
+      "target": "Los correos electrónicos de los agentes, los acuerdos verbales y las instrucciones de custodia no cambian nada.",
+      "flags": [
+        "email-verb-or-noun-review"
+      ],
+      "courses": [
+        "ca-real-estate-principles-45"
+      ]
+    },
+    {
+      "id": "914f27942a5e5415a4c76475d5c089e2501f53ff63ba517b27e79a62856c927e",
+      "source": "Do know that a reconsideration process exists.",
+      "target": "Sabe que existe un proceso de reconsideración.",
+      "flags": [
+        "consideration-terminology"
+      ],
+      "courses": [
+        "ca-real-estate-principles-45"
+      ]
+    },
+    {
+      "id": "b03531a7334d24b38333944c5ca75e47a24fda59b453fe234f86720c3ba16b79",
+      "source": "Sales, dates, addresses, distances, and why each is comparable. A request that says the value is wrong without offering data is not a reconsideration; it is pressure with a form attached.",
+      "target": "Ventas, fechas, direcciones, distancias, y por qué cada uno es comparable. Una solicitud que dice que el valor es incorrecto sin ofrecer datos no es una reconsideración; es presión con un formulario adjunto.",
+      "flags": [
+        "consideration-terminology"
+      ],
+      "courses": [
+        "ca-real-estate-principles-45"
+      ]
+    },
+    {
+      "id": "fc547cb176fd135d0eae01a8148cd1f3fe9fe44aa853848dcdb2e2f51259f2c9",
+      "source": "The only thing that changes a contract term. Agent emails, verbal agreements, and escrow instructions alone change nothing.",
+      "target": "Lo único que cambia el término del contrato. Los correos electrónicos de los agentes, los acuerdos verbales y las instrucciones de custodia no cambian nada.",
+      "flags": [
+        "email-verb-or-noun-review"
+      ],
+      "courses": [
+        "ca-real-estate-principles-45"
+      ]
+    },
+    {
+      "id": "42b84f6c96e2203a0daa5b8f799c1610d75ed8c7ddf2615b982aeec580b2b6dd",
+      "source": "The reconsideration is a factual submission, not an argument.",
+      "target": "La reconsideración es una suposición fáctica, no un argumento.",
+      "flags": [
+        "consideration-terminology"
+      ],
+      "courses": [
+        "ca-real-estate-principles-45"
+      ]
+    },
+    {
+      "id": "ff1a732ad21789accac2cab80f8d4c57d480d03dabdd922bd379efd817a889e7",
+      "source": "a reconsideration of value, requested through the lender, supported by specific comparable sales the appraiser may not have considered.",
+      "target": "una reconsideración del valor, solicitada a través del prestamista, respaldada por ventas comparables específicas que el evaluador no haya considerado.",
+      "flags": [
+        "consideration-terminology"
+      ],
+      "courses": [
+        "ca-real-estate-principles-45"
+      ]
+    },
+    {
+      "id": "1b3686261e88512b80b1f2da13b3f47d0d4cae82ebed598161cd68a2dcc871f3",
+      "source": "and follow the reconsideration process available through the lender — not confront the appraiser and not advise the client on a claim.",
+      "target": "y seguir el proceso de reconsideración disponible a través del prestamista — no confrontar al tasador y no asesorar al cliente sobre una reclamación.",
+      "flags": [
+        "consideration-terminology"
+      ],
+      "courses": [
+        "ca-real-estate-principles-45"
+      ]
+    },
+    {
+      "id": "351ae4232679b5265f8974422a80c0ffedd87fe5c9a6cbd6a6581c79bff2a64c",
+      "source": "escalate to the broker and follow the reconsideration process available through the lender.",
+      "target": "escalar al bróker y seguir el proceso de reconsideración disponible a través del prestamista.",
+      "flags": [
+        "consideration-terminology"
+      ],
+      "courses": [
+        "ca-real-estate-principles-45"
+      ]
+    },
+    {
+      "id": "b54ef325e926a0156197441613d0ffb91f115593a8fe5c0fd07b41b2e84abc4d",
+      "source": "follow the reconsideration process available through the lender.",
+      "target": "seguir el proceso de reconsideración disponible a través del prestamista.",
+      "flags": [
+        "consideration-terminology"
+      ],
+      "courses": [
+        "ca-real-estate-principles-45"
+      ]
+    },
+    {
+      "id": "e7735b72a768c793a31f4a434b495c054955197efa717c003d975215351041dc",
+      "source": "— a recorded clearing document does. A seller who says a loan was paid off years ago has stated a fact about the debt, not about the title, and an unreleased deed of trust in the preliminary report must be cleared by document.",
+      "target": "— un documento registrado de compensación lo hace. Un vendedor que dice que un préstamo fue pagado hace años ha declarado un hecho sobre la deuda, no sobre el título, y una escritura no liberada de confianza en el informe preliminar debe ser liquidada por documento.",
+      "flags": [
+        "deed-as-fact-or-action"
+      ],
+      "courses": [
+        "ca-real-estate-principles-45"
+      ]
+    },
+    {
+      "id": "d5cbbac37c70021dd10707283b1035c1cadf81b15abf48bf746abfc52aa0a132",
+      "source": "Other considerations in real estate contracting",
+      "target": "Otras consideraciones en la contratación de bienes raíces",
+      "flags": [
+        "consideration-terminology"
+      ],
+      "courses": [
+        "co-contracts-regulations-48"
+      ]
+    },
+    {
+      "id": "d86170d393008d456918fbd3af0e6234fbe4ff09cbd8555d1f6515d961f28527",
+      "source": "V — Other Considerations in Real Estate Contracting",
+      "target": "V. Otras consideraciones en materia de contratación de bienes inmuebles",
+      "flags": [
+        "consideration-terminology"
+      ],
+      "courses": [
+        "co-contracts-regulations-48"
+      ]
+    },
+    {
+      "id": "f8a9480b9965789f65d4c5398954165e931e2cea84cb995bd315646aec3ab213",
+      "source": "| | 05 | V. Other Considerations in Real Estate Contracting | 4 | | |",
+      "target": "05 V. Otras consideraciones en la contratación inmobiliaria  4",
+      "flags": [
+        "consideration-terminology"
+      ],
+      "courses": [
+        "co-contracts-regulations-48"
+      ]
+    },
+    {
+      "id": "9c5b743f86b303cff770d47783e689f17517035a58011ea820a9d4747661b979",
+      "source": "What does Rule 5.13 require of a promissory note received as earnest money, and Rule 5.18 of anything taken in lieu of cash?",
+      "target": "¿Qué requiere la Regla 5.13 de un pagaré recibido como depósito de buena fe, y la Regla 5.18 de cualquier cosa tomada en lugar de dinero en efectivo?",
+      "flags": [
+        "earnest-money-literal"
+      ],
+      "courses": [
+        "co-trust-accounts-recordkeeping-8"
+      ]
+    },
+    {
+      "id": "01c3a606bee8fe588e13cf7211dc451253fbc9c7ad68003b759f785708b813ca",
+      "source": "Blanks are information. A blank water test date, a heating age of \"unknown\", an installation date of \"approximately\", a septic servicing contractor left empty — each is a line for the buyer's investigation list and, on the listing side, a question the seller may want answered before marketing rather than during a contingency period.",
+      "target": "Los espacios en blanco son información. Una fecha de prueba de agua en blanco, una edad de calentamiento de \"desconocido\", una fecha de instalación de \"aproximadamente\", un contratista de servicio séptico dejado vacío - cada uno es una línea para la lista de investigación del comprador y, en el lado del vendedor, una pregunta que el vendedor puede querer respuesta antes de la comercialización en lugar de durante un período de contingencia.",
+      "flags": [
+        "listing-terminology"
+      ],
+      "courses": [
+        "me-sales-agent-v1"
+      ]
+    },
+    {
+      "id": "086649c3b1cef7766c8391e35a9ab8707cec69eb62ae2c64ac70e2fe5e36fc96",
+      "source": "Reconsideration window closes",
+      "target": "Se cierra la ventana de reconsideración",
+      "flags": [
+        "consideration-terminology"
+      ],
+      "courses": [
+        "me-sales-agent-v1",
+        "wi-salesperson"
+      ]
+    },
+    {
+      "id": "f0bc08924cd6f3c348a7f4d975af3602417d3511ea369fe2afae6bb797e3984b",
+      "source": "Then work backwards. Application within the contract's period. Documentation to the lender immediately. Appraisal ordered early enough that a reconsideration of value is possible. Conditions chased",
+      "target": "Entonces trabajar hacia atrás. Aplicación dentro del plazo del contrato. Documentación al prestamista inmediatamente. La evaluación ordenada lo suficientemente pronto como para que sea posible una reconsideración del valor. Condiciones perseguidas",
+      "flags": [
+        "consideration-terminology"
+      ],
+      "courses": [
+        "me-sales-agent-v1"
+      ]
+    },
+    {
+      "id": "f0fb65557049724c685b1f1093fa94a047e3c36645f90fbe864f694dfcd16cf6",
+      "source": "This calculation is the whole reason the appraisal contingency exists. The gap must be closed by the buyer, by a price reduction, by a successful reconsideration, or by termination under the contract's terms.",
+      "target": "Este cálculo es la razón por la que existe la contingencia de la evaluación. La brecha debe ser cerrada por el comprador, por una reducción de precio, por una reconsideración exitosa, o por la rescisión en virtud de las condiciones del contrato.",
+      "flags": [
+        "consideration-terminology"
+      ],
+      "courses": [
+        "me-sales-agent-v1"
+      ]
+    },
+    {
+      "id": "1e221b4b6abe3a5a7cf7d0ef3519997a37caae6bd332eb48025b1af08015281a",
+      "source": "is stated as the structural fact it is, and the hour translates the deed-of-trust vocabulary a student may have met elsewhere.",
+      "target": "se declara como el hecho estructural que es, y la hora traduce el vocabulario de la escritura de fideicomiso que un estudiante puede haber conocido en otro lugar.",
+      "flags": [
+        "deed-as-fact-or-action"
+      ],
+      "courses": [
+        "me-sales-agent-v1"
+      ]
+    },
+    {
+      "id": "4bdce451a707291295f6f0e40975fc4cff03422cbb5c0761b84c6cc667182391",
+      "source": "Neither, unqualified. The discrepancy is itself the finding, and it goes to the title company and probably to a surveyor. If the property is advertised at all before it is resolved, the acreage should be described by its source — \"tax record shows 2.5 acres; survey recommended\" — rather than asserted. Publishing 2.5 as fact after seeing the deed is a representation the licensee knows is doubtful.",
+      "target": "Ninguno, no calificado. La discrepancia es en sí misma el hallazgo, y va a la compañía titular y probablemente a un topógrafo. Si la propiedad se anuncia en absoluto antes de que se resuelva, la superficie debe ser descrito por su fuente — \"el registro fiscal muestra 2.5 acres; encuesta recomendada\" — en lugar de afirmarse. Publicar 2.5 como hecho después de ver la escritura es una representación que el licenciatario sabe que es dudoso.",
+      "flags": [
+        "deed-as-fact-or-action"
+      ],
+      "courses": [
+        "mi-salesperson-prelicensure-40-v1"
+      ]
+    },
+    {
+      "id": "c68e4df0f581438e8027fa6a03f60d065516aa251606852fedf79a55ac002178",
+      "source": "Obtain the legal description from the deed and use it; record the acreage discrepancy and route it to the title company and a surveyor; deliver the easement exception with the recorded document to the buyer; and stop advertising an acreage figure as fact until it is resolved.",
+      "target": "Obtener la descripción legal de la escritura y utilizarla; registrar la discrepancia de superficie y dirigirla a la empresa titular y a un topógrafo; entregar la excepción de servidumbre con el documento registrado al comprador; y dejar de anunciar una cifra de superficie como hecho hasta que se resuelva.",
+      "flags": [
+        "deed-as-fact-or-action"
+      ],
+      "courses": [
+        "mi-salesperson-prelicensure-40-v1"
+      ]
+    },
+    {
+      "id": "5a40c769055eafc81dd5d27b9619c0579f7aa2a8916c0a5257763c7a248775c4",
+      "source": "Selling, offering to sell, buying, offering to buy, listing, offering to list, renting, leasing, offering to rent or lease, negotiating a purchase, sale or exchange, negotiating a mortgage, providing or offering to provide a market analysis, or being engaged in the business of leasing or managing for others. If the conduct is not on the list, the analysis stops.",
+      "target": "Vender, ofrecer vender, comprar, ofrecer comprar, cotizar, ofrecer cotizar, alquilar, arrendar, ofrecer alquilar o arrendar, negociar una compra, venta o intercambio, negociar una hipoteca, proporcionar u ofrecer proporcionar un análisis de mercado, o estar involucrado en el negocio de arrendar o gestionar para otros. Si la conducta no está en la lista, el análisis se detiene.",
+      "flags": [
+        "listing-terminology"
+      ],
+      "courses": [
+        "mi-salesperson-prelicensure-40-v1"
+      ]
+    },
+    {
+      "id": "f0df4496ba86e25995b84124affe5b825c729c67379b9c7bd857fe55c4c50d46",
+      "source": "The line is not about difficulty and it does not move with experience. A twenty-year licensee who tells a buyer that a deed restriction is unenforceable has practised law; a first-week salesperson who says \"that is a question for a lawyer, and here is why it matters to your deadline\" has done the job correctly.",
+      "target": "La línea no se trata de dificultad y no se mueve con la experiencia. Un licenciatario de veinte años que le dice a un comprador que una restricción de escritura es inaplicable ha practicado la ley; un vendedor de primera semana que dice \"eso es una pregunta para un abogado, y aquí es por qué le importa a su fecha límite\" ha hecho el trabajo correctamente.",
+      "flags": [
+        "deed-as-fact-or-action"
+      ],
+      "courses": [
+        "mi-salesperson-prelicensure-40-v1"
+      ]
+    },
+    {
+      "id": "37d5875e18187d1eb4b73e09e467ea4af67acc566691b2201d464dde891eab0c",
+      "source": ", and reading that list tells you what it is for. Broker disclosure form. Listing a property. Buyer representation. Dual agent or transaction broker. Termination of brokerage relationships. Compensation. Cooperating with other licensees. Obligations of agents to clients and customers. Pricing property. Role of the appraiser. Types of financing. Estimating closing costs. Contracts. Earnest money. Avoiding misrepresentation. Types of construction.",
+      "target": ", y la lectura de esa lista te dice para qué es. Formulario de divulgación de broker. Listando una propiedad. Representación del comprador. Agente dual o corredor de transacciones. Terminación de relaciones de corretaje. Compensación. Cooperación con otros licenciatarios. Obligaciones de los agentes a los clientes y clientes. Precios de la propiedad. El papel del tasador. Tipos de financiación. Estimación de los costos de cierre. Contratos. Dinero earnest. Evitando la tergiversación. Tipos de construcción.",
+      "flags": [
+        "listing-terminology"
+      ],
+      "courses": [
+        "mo-real-estate-practice-24"
+      ]
+    },
+    {
+      "id": "69d9497b71701e258f71f2ea2f0b175fd2df8e0a7fae4b5198b63c3eb5d5a4b7",
+      "source": "Providing facts is legitimate; providing a target is not, and pressure on an appraiser to reach a number is misconduct that engages appraiser independence rules directly in a federally related transaction. A request for reconsideration of value goes through the lender, on factual errors.",
+      "target": "Proporcionar hechos es legítimo; proporcionar un objetivo no lo es, y la presión sobre un tasador para llegar a un número es mala conducta que involucra reglas de independencia del tasador directamente en una transacción relacionada federalmente. Una solicitud de reconsideración del valor pasa por el prestamista, en caso de errores de hecho.",
+      "flags": [
+        "consideration-terminology"
+      ],
+      "courses": [
+        "mo-real-estate-practice-24"
+      ]
+    },
+    {
+      "id": "cc446990d182624d990eacd935edce536741bff4f9e6fb7ce49b0c55e2056f4f",
+      "source": "Read the appraisal contingency and its deadline first; identify the square footage as a factual error and submit a request for reconsideration of value THROUGH THE LENDER with the supporting measurement; present the options to your buyer neutrally and route the decision to them; and decline to call the appraiser to argue the market, because pressure on an appraiser to reach a number is misconduct.",
+      "target": "Lea primero la contingencia de la evaluación y su plazo de vencimiento; identifique las imágenes cuadradas como un error de hecho y presente una solicitud de reconsideración del valor A TRAVÉS DEL PRESTADOR con la medición de soporte; presente las opciones a su comprador neutralmente y encamine la decisión hacia ellos; y no llame al tasador para argumentar el mercado, porque la presión sobre un tasador para llegar a un número es mala conducta.",
+      "flags": [
+        "consideration-terminology"
+      ],
+      "courses": [
+        "mo-real-estate-practice-24"
+      ]
+    },
+    {
+      "id": "3849ce6d65092fe017f3e03e29ea76963e1cbc454d9586d360c9221294bb2b28",
+      "source": "That is not comparable, a missed permit. Factual errors are the legitimate basis for a reconsideration of value, and they are submitted",
+      "target": "Eso no es comparable, un permiso perdido. Los errores de hecho son la base legítima para una reconsideración del valor, y se presentan",
+      "flags": [
+        "consideration-terminology"
+      ],
+      "courses": [
+        "mo-real-estate-practice-24"
+      ]
+    },
+    {
+      "id": "eac8c0887d673ed23f5c5c8789880793d8c038ea1b27ee05c83b312aded4fede",
+      "source": "\"All 4 criteria must be present to indicate that an item is a fixture. Most standard listing agreements and sales contracts include a list of common items that will be considered fixtures for the transaction unless otherwise addressed in the document.\"",
+      "target": "\"Los 4 criterios deben estar presentes para indicar que un artículo es un accesorio. La mayoría de los acuerdos estándar de listado y contratos de venta incluyen una lista de artículos comunes que se considerarán accesorios para la transacción, a menos que se indique lo contrario en el documento.\"",
+      "flags": [
+        "listing-terminology"
+      ],
+      "courses": [
+        "nc-broker-prelicensing-75"
+      ]
+    },
+    {
+      "id": "b3166503b2263892f3a37532f82532cf607bfe1d4ef89e33c197c2c6a1235330",
+      "source": ". Use the completed form pages after the CFPB cover page: page 1 for loan terms, projected payments and costs at closing; page 2 for loan costs, other costs and calculating cash to close; page 3 for the comparison table, other considerations and contacts. Have the student identify the note rate and APR, rate-lock status, estimated closing costs, cash to close and whether taxes/insurance are escrowed.",
+      "target": ". Utilice las páginas de formulario cumplimentadas después de la página de cubierta del CFPB: página 1 para términos de préstamo, pagos proyectados y costos al cierre; página 2 para costos de préstamo, otros costos y cálculo de efectivo para cerrar; página 3 para la tabla de comparación, otras consideraciones y contactos. Haga que el estudiante identifique la tasa de notas y APR, estado de bloqueo de tarifas, costos de cierre estimados, efectivo para cerrar y si los impuestos/seguros están en depósito.",
+      "flags": [
+        "consideration-terminology"
+      ],
+      "courses": [
+        "nc-broker-prelicensing-75"
+      ]
+    },
+    {
+      "id": "a03fd8adaaf30d5a8fd8d0ff7afb887057da6cc0ba840485640bb859cb943db8",
+      "source": "96,000 ÷ 0.08 = 1,200,000. At the same income, a higher cap rate produces a lower indicated value because the rate is the divisor. The Syllabus links a higher rate with higher risk; a live market-derived rate reflects the required return and multiple risk and growth considerations.",
+      "target": "96,000 ÷ 0.08 = 1,200,000. En el mismo ingreso, una tasa de tope más alta produce un valor indicado menor porque la tasa es el divisor. El Syllabus vincula una tasa más alta con un mayor riesgo; una tasa derivada del mercado en vivo refleja el rendimiento requerido y múltiples consideraciones de riesgo y crecimiento.",
+      "flags": [
+        "consideration-terminology"
+      ],
+      "courses": [
+        "nc-broker-prelicensing-75"
+      ]
+    },
+    {
+      "id": "b85136f34fde41ca0f032a7bd8b8d06a2370da28c9a84fe0bf340c7679a30e01",
+      "source": "I. Other disclosure considerations in NC *(Level 3 except as noted)*",
+      "target": "I. Otras consideraciones relativas a la divulgación de información en la NC * (nivel 3 excepto como se ha señalado)*",
+      "flags": [
+        "consideration-terminology"
+      ],
+      "courses": [
+        "nc-broker-prelicensing-75"
+      ]
+    },
+    {
+      "id": "ffa014afb66eea00f87e6ef5f0be4969f27e25f2d836234ebc4c1a7210082bc6",
+      "source": "Other Disclosure Considerations in NC (Part I)",
+      "target": "Otras consideraciones sobre la divulgación de información en la NC (Parte I)",
+      "flags": [
+        "consideration-terminology"
+      ],
+      "courses": [
+        "nc-broker-prelicensing-75"
+      ]
+    },
+    {
+      "id": "4898409bd508fd1001e661ce6555a2b1ce9115e49b472cce2dc1dee438587b42",
+      "source": "The Syllabus's “3-4” figure is also a course exercise baseline, not a universal form limit. Fannie Mae's official completed SF5 sample displays five settled-sale comparables after a reconsideration of value, and identifies another settled sale as analyzed but not used. The defensible rule is",
+      "target": "La figura “3-4” del Syllabus es también una línea de base del ejercicio del curso, no un límite de forma universal. La muestra oficial de SF5 completada por Fannie Mae muestra cinco comparables de venta sellada después de una reconsideración del valor, e identifica otra venta sellada como analizada pero no utilizada. La regla defensa es",
+      "flags": [
+        "consideration-terminology"
+      ],
+      "courses": [
+        "nc-broker-prelicensing-75"
+      ]
+    },
+    {
+      "id": "bc8277e729ae3d3a99aa37de64aa35048bd4a3d7881793bb9c423817dc486141",
+      "source": "The borrower-initiated reconsideration of value",
+      "target": "Reconsideración del valor iniciada por el prestatario",
+      "flags": [
+        "consideration-terminology"
+      ],
+      "courses": [
+        "nc-broker-prelicensing-75"
+      ]
+    },
+    {
+      "id": "74c0e26885c6a825212db0930902cabdc6ab087ff2cfbe7fea2d82182940d1bc",
+      "source": "Weighted consideration is preferable to averaging",
+      "target": "Consideración ponderada es preferible al promedio",
+      "flags": [
+        "consideration-terminology"
+      ],
+      "courses": [
+        "nc-broker-prelicensing-75"
+      ]
+    },
+    {
+      "id": "2acfcc04aef58aa915ae9bde35a53f15e8754fe2a0d5161aa1e474520b84166c",
+      "source": "value. That falls straight out of the formula below — the cap rate is the divisor. For the Syllabus exercise, “higher rate, higher risk” is the required shorthand; in live valuation a market-derived cap rate reflects the market's required return and multiple property, income, growth, liquidity and risk considerations. It is not a standalone risk score.",
+      "target": "valor. Que cae directamente de la fórmula de abajo — la tasa de tope es el divisor. Para el ejercicio de Syllabus, “tasa más alta, mayor riesgo” es la taquigrafía requerida; en la valoración en vivo, una tasa máxima derivada del mercado refleja el rendimiento requerido del mercado y las múltiples consideraciones de propiedad, ingresos, crecimiento, liquidez y riesgo. No es una puntuación de riesgo independiente.",
+      "flags": [
+        "consideration-terminology"
+      ],
+      "courses": [
+        "nc-broker-prelicensing-75"
+      ]
+    },
+    {
+      "id": "0159f7f77f7af685d3bcfb65f411c4431a4964f659c17dcc46aacde9d1b21b13",
+      "source": "Read the appraisal contingency and its deadline first; submit the square footage error as a request for reconsideration of value THROUGH THE LENDER with the supporting measurement; decline to call the appraiser to argue the market; and refuse the fee outright, because § 858-312(13) makes accepting compensation for appraising real estate contingent upon reporting a predetermined value a ground for suspension or revocation.",
+      "target": "Lea primero la contingencia de la evaluación y su plazo de vencimiento; presente el error de la superficie cuadrada como una solicitud de reconsideración del valor A TRAVÉS DEL PRESTADOR con la medición de soporte; no llame al tasador para argumentar el mercado; y rechace la tarifa directamente, porque § 858-312(13) hace que aceptar compensación por evaluar bienes raíces dependa de informar de un valor predeterminado un motivo para la suspensión o revocación.",
+      "flags": [
+        "consideration-terminology"
+      ],
+      "courses": [
+        "ok-basic-prelicense-90"
+      ]
+    },
+    {
+      "id": "ebba6ae2acbc7e34f07ce615c6a7f35eedf5e6deef44133638fc4c34ebc49b38",
+      "source": "A quiet title action is the lawsuit to resolve one, and a quitclaim deed is often the instrument used to clear it — which is exactly the use it is right for.",
+      "target": "Una acción judicial para aclarar la titularidad resuelve ese defecto, y una escritura de cesión de derechos sin garantías suele ser el instrumento utilizado para subsanarlo: precisamente el uso para el que resulta adecuada.",
+      "flags": [
+        "deed-as-fact-or-action"
+      ],
+      "courses": [
+        "pa-real-estate-fundamentals-30"
+      ]
+    },
+    {
+      "id": "0115f31ff53ae3fdd90ac4c1cbf2463ab29fe0f5ae82315c33bf301c317adf11",
+      "source": "D. Environmental considerations",
+      "target": "D. Consideraciones ambientales",
+      "flags": [
+        "consideration-terminology"
+      ],
+      "courses": [
+        "pa-real-estate-fundamentals-30"
+      ]
+    },
+    {
+      "id": "66382e8d98af8b00cda7139f220b3c2d210989bd04665484261e07c6b93ed233",
+      "source": "Four corrections: drop the two active listings, because a listing is what a seller hopes for rather than what a buyer paid; adjust the COMPARABLES rather than the subject, subtracting from the superior ones; present a RANGE reconciled by weighted consideration rather than a single averaged figure; and replace the note with § 35.340's exact statement, which must appear CONSPICUOUSLY AND WITHOUT CHANGE ON THE FIRST PAGE.",
+      "target": "Cuatro correcciones: soltar los dos listados activos, porque un listado es lo que un vendedor espera en lugar de lo que un comprador pagó; ajustar los COMPARABLES en lugar de la materia, restando de los superiores; presentar un rango reconciliado por consideración ponderada en lugar de una sola cifra media; y reemplazar la nota con § 35.340 declaración exacta, que debe aparecer CONSPICUOSA Y SIN CAMBIO EN LA PRIMERA PÁGINA.",
+      "flags": [
+        "consideration-terminology"
+      ],
+      "courses": [
+        "pa-real-estate-fundamentals-30"
+      ]
+    },
+    {
+      "id": "f1f2efe2ee424ececb8ed669c56ac5cf3ba3e94c6fc9c51f399d782a512a20d6",
+      "source": "Legal descriptions, land use control and environmental considerations",
+      "target": "Descripciones jurídicas, control del uso de la tierra y consideraciones ambientales",
+      "flags": [
+        "consideration-terminology"
+      ],
+      "courses": [
+        "pa-real-estate-fundamentals-30"
+      ]
+    },
+    {
+      "id": "d9ab391187f38c05d103c6f319ae81b4382fe8534d5e77a97084038fa14146cd",
+      "source": "Treat each as a question rather than a fact: the shutters are adapted and are almost certainly a fixture, so name them in writing either way; a tenant's walk-in cooler is a trade fixture removable before the term ends and the lease governs; 'fifty-fifty with survivorship' describes two different things and only the deed shows which she has; and easements do not expire because time passed — route the ownership and the easement to a title examination and counsel, which § 35.292(a)(8) makes a duty rather than a courtesy.",
+      "target": "Tratar a cada uno como una pregunta en lugar de un hecho: las persianas están adaptadas y son casi seguro un accesorio, por lo que nombrarlos por escrito de cualquier manera; el walk-in refrigerador de un inquilino es un dispositivo de comercio extraíble antes de que termine el plazo y el contrato de arrendamiento gobierna; \"cincuenta y cinco con la supervivencia\" describe dos cosas diferentes y sólo los espectáculos de escritura que tiene; y las servidumbres no expiran porque pasó el tiempo — ruta la propiedad y la servidumbre a un examen de título y abogado, que § 35.292(a)(8) hace un deber más bien que una cortesía.",
+      "flags": [
+        "deed-as-fact-or-action"
+      ],
+      "courses": [
+        "pa-real-estate-fundamentals-30"
+      ]
+    },
+    {
+      "id": "e564ac0908f296c4c56942d834c74f32ecc8dd837fb8b9ee154b43ecb1e82dbf",
+      "source": "weighted consideration",
+      "target": "consideración ponderada",
+      "flags": [
+        "consideration-terminology"
+      ],
+      "courses": [
+        "pa-real-estate-fundamentals-30"
+      ]
+    },
+    {
+      "id": "19ba1911a44e1fc632c0c764db5587705c21085509665dc6c8d855dcaeeac6bb",
+      "source": ", which means the texts and emails and not just the signed forms, so that a departing sales agent who wipes a phone has destroyed the broker's records; and",
+      "target": ", lo que significa los textos y correos electrónicos y no sólo los formularios firmados, de modo que un agente de ventas saliente que borra un teléfono ha destruido los registros del corredor; y",
+      "flags": [
+        "email-verb-or-noun-review"
+      ],
+      "courses": [
+        "tx-law-of-agency-30"
+      ]
+    },
+    {
+      "id": "870fa241797bf175f4c73a4d669f7e993acdfe7dd3ab820d05961af0d63fc820",
+      "source": ". It is not about you, if you are studying for a sales agent licence. TRELA's architecture is that the broker is the agent of the party and the sales agent is the agent of the broker. Section 1101.002(7) defines a sales agent as \"a person who is sponsored by a licensed broker for the purpose of performing an act described by Subdivision (1)\" — Subdivision (1) being the long list of brokerage acts in the definition of \"broker.\" Section 1101.351(c) drives it home: \"A licensed sales agent may not engage or attempt to engage in real estate brokerage unless the sales agent is sponsored by a licensed broker and is acting for that broker.\" And § 1101.002(4) defines a license holder as \"a broker or sales agent licensed under this chapter,\" which is why the Commission's rules so often speak to \"license holders\" generally when a duty falls on both. When a seller in Amarillo signs a listing agreement, the client is the broker's client. You service that client, you owe that client the duties this module will spend forty minutes on, and you can be disciplined personally for breaching them — but the representation relationship the statute recognises is between the seller and the broker.",
+      "target": ". No se trata de usted, si usted está estudiando para una licencia de agente de ventas. La arquitectura de TRELA es que el bróker es el agente del partido y el agente de ventas es el agente del bróker. La sección 1101.002(7) define a un agente de ventas como \"una persona patrocinada por un corredor autorizado con el propósito de realizar un acto descrito por la Subdivisión (1)\" — la Subdivisión (1) es la larga lista de los actos de corretaje en la definición de \"broker\". La sección 1101.351(c) lo conduce a casa: \"Un agente de ventas autorizado no puede participar o tratar de participar en el corretaje de bienes raíces a menos que el agente de ventas esté patrocinado por un corredor autorizado y esté actuando para ese corredor.\" Y § 1101.002(4) define a un titular de licencia como \"un corredor o agente de ventas licenciado\". bajo este capítulo,\" razón por la cual las normas de la Comisión hablan tan a menudo a los \"titulares de licencias\" en general cuando un deber recae en ambos. Cuando un vendedor en Amarillo firma un contrato de representación para la venta, el cliente es el cliente del bróker. Usted atiende a ese cliente, le debe a ese cliente las tareas en las que este módulo pasará cuarenta minutos, y usted puede ser disciplinado personalmente por violarlas, pero la relación de representación que la ley reconoce es entre el vendedor y el corredor.",
+      "flags": [
+        "listing-terminology"
+      ],
+      "courses": [
+        "tx-law-of-agency-30"
+      ]
+    },
+    {
+      "id": "2afcf6158ec0e030a13853e23815882394c8e033c6d9a6b74265bcd963dbcf8a",
+      "source": "22 TAC § 535.2(h) requires the broker to maintain the listed records “in a format that is readily available to the Commission for at least four years from the date of closing, termination of the contract, or end of a real estate transaction” — three triggers, so a listing that expires unsold starts its own clock that day. One of the eight categories is “substantive communications with parties to the transaction,” which is where the texts and emails live; an app that deletes them is a decision not to keep records the broker is required to hold. The only excuse the rule recognises is destruction by an Act of God such as a natural disaster or fire not intentionally caused by the broker, and the four years line up with the Commission's four-year complaint window in § 1101.204(c).",
+      "target": "22 TAC § 535.2(h) requiere que el bróker mantenga los registros enumerados “en un formato que esté fácilmente disponible para la Comisión durante al menos cuatro años a partir de la fecha de cierre, terminación del contrato o fin de una transacción inmobiliaria” — tres desencadenantes, por lo que una captación inmobiliaria que expira sin vender comienza su propio reloj ese día. Una de las ocho categorías es “comunicaciones sustantivas con las partes en la transacción”, que es donde viven los textos y correos electrónicos; una aplicación que los elimina es una decisión de no mantener registros que el bróker debe mantener. La única excusa que la regla reconoce es la destrucción por un acto de Dios como un desastre natural o un incendio no causado intencionalmente por el corredor, y los cuatro años se alinean con la ventana de quejas de cuatro años de la Comisión en § 1101.204(c).",
+      "flags": [
+        "email-verb-or-noun-review"
+      ],
+      "courses": [
+        "tx-law-of-agency-30"
+      ]
+    },
+    {
+      "id": "f92c730dffb833cc233f971dd09cbd1c1179bebd22804761c93f67a03ac3312c",
+      "source": "A prospective buyer emails you asking about a specific listing. You reply and attach the",
+      "target": "Un posible comprador le envía correos electrónicos preguntando acerca de un listado específico. Usted responde y adjunta el",
+      "flags": [
+        "email-verb-or-noun-review"
+      ],
+      "courses": [
+        "tx-law-of-agency-30"
+      ]
+    },
+    {
+      "id": "59b1e3dc036f22e955e46349adaab6a5bbcfdaba75849394ad7eaecef7bf997e",
+      "source": "Maintain the listing agreement and the substantive communications with the parties? Give the date, and name two other categories on that rule's list that must be kept for the same period.",
+      "target": "¿Mantener el acuerdo de inclusión y las comunicaciones sustantivas con las partes? Indica la fecha y nombra otras dos categorías en la lista de esa regla que deben mantenerse durante el mismo período.",
+      "flags": [
+        "listing-terminology"
+      ],
+      "courses": [
+        "tx-law-of-agency-30"
+      ]
+    },
+    {
+      "id": "9fb9afde4fe49c30228900f644c6575a39a5dfa82e8bdc0bfdc8fd2e584bbb6c",
+      "source": "Record retention is taught in Module 09 with the rest of broker responsibility. What this module needs is the measuring point: 22 TAC § 535.2 requires the listed brokerage records to be kept \"for at least four years from the date of closing, termination of the contract, or end of a real estate transaction\" — so a listing that terminates without a sale on August 31, 2026 starts its own clock to August 31, 2030 even though nothing closed. Two entries on that list bite hardest at the end of a relationship:",
+      "target": "La retención de registros se enseña en el Módulo 09 con el resto de la responsabilidad del bróker. Lo que este módulo necesita es el punto de medición: 22 TAC § 535.2 requiere que los registros de corretaje listados se mantengan \"durante al menos cuatro años a partir de la fecha de cierre, terminación del contrato o final de una transacción inmobiliaria\" — por lo que un listado que termina sin venta el 31 de agosto de 2026 comienza su propio reloj hasta el 31 de agosto de 2030, aunque nada cerrado. Dos entradas en esa lista pican más fuerte al final de una relación:",
+      "flags": [
+        "listing-terminology"
+      ],
+      "courses": [
+        "tx-law-of-agency-30"
+      ]
+    },
+    {
+      "id": "e8beba5d3e6a90f4146035f540575ab250b744099c98d1d8bf9c6fa8b2f94447",
+      "source": "TRELA contains no single list of required listing terms; you assemble it from the prohibitions in § 1101.652 — a definite termination date not subject to prior notice, with a property-management carve-out ((b)(12)); authorized price and terms ((b)(19) and (20)); written consent for the sign ((b)(18)) — together with the negotiability statement § 1101.155(c)(1) requires in any listing contract form the Commission adopts, intermediary authorization under § 1101.559(b), and retention of the file under 22 TAC § 535.2(h). The listing types — exclusive right to sell, exclusive agency, open — are practice vocabulary the held statutes do not define; the difference between the first two is exactly the fee the seller keeps by producing the buyer alone, which on a $350,000 Waco sale at 5.5 percent is $19,250. Procuring cause doctrine was not held for this course and is not taught.",
+      "target": "TRELA no contiene una lista única de términos de la captación inmobiliaria requerida; usted la ensambla de las prohibiciones en § 1101.652 — una fecha definitiva de terminación no sujeta a preaviso, con una retirada de la administración de bienes (b)12)); precio autorizado y condiciones (b)19) y (20)); consentimiento por escrito para el signo (b)18)) — junto con la declaración de negociabilidad § 1101.155(c)(1) requiere en cualquier forma de contrato de representación para la venta que adopte la Comisión, autorización intermedia en virtud de § 1101.559(b), y la retención del archivo en 22 TAC § 535.2(h). Los tipos de captación inmobiliaria —derecho exclusivo de venta, agencia exclusiva, abierto— son vocabulario de la práctica que los estatutos mantenidos no definen; la diferencia entre los dos primeros es exactamente la tarifa que el vendedor mantiene al producir el comprador solo, que en un $350,000 Venta de Waco en 5.5 porcentaje es $19,250. Procurar la doctrina de la causa no se llevó a cabo para este curso y no se enseña.",
+      "flags": [
+        "listing-terminology"
+      ],
+      "courses": [
+        "tx-law-of-agency-30"
+      ]
+    },
+    {
+      "id": "e2c9e5c2516882e88784fc7128024dffdd21fe4a1617130e8a8363aac1524fcd",
+      "source": "TRELA does not contain a single enumerated list of the essential terms of a seller's listing agreement.",
+      "target": "TRELA no contiene una sola lista enumerada de los términos esenciales del contrato de representación para la venta de un vendedor.",
+      "flags": [
+        "listing-terminology"
+      ],
+      "courses": [
+        "tx-law-of-agency-30",
+        "tx-law-of-contracts-30"
+      ]
+    },
+    {
+      "id": "efa19dad2327a32d211d227c34bc80ef8c021bda8ba22dea584d6060ebea404d",
+      "source": "The other considerations.",
+      "target": "Las otras consideraciones.",
+      "flags": [
+        "consideration-terminology"
+      ],
+      "courses": [
+        "tx-law-of-agency-30"
+      ]
+    },
+    {
+      "id": "5089c30e392b2b3e7b3a851dc4b504ebf1705e2ac0b6b9f08e503c3a176f4987",
+      "source": "The records were required for at least four years from the date of closing, termination of the contract, or end of a real estate transaction — so from September 2026 for this file — and “substantive communications with parties to the transaction” is one of the named categories, which covers texts and emails and not only signed forms.",
+      "target": "Los registros fueron requeridos durante al menos cuatro años a partir de la fecha de cierre, terminación del contrato, o el final de una transacción inmobiliaria —así que a partir de septiembre de 2026 para este archivo— y “comunicaciones sustantivas con las partes en la transacción” es una de las categorías mencionadas, que abarca textos y correos electrónicos y no sólo formularios firmados.",
+      "flags": [
+        "email-verb-or-noun-review"
+      ],
+      "courses": [
+        "tx-law-of-agency-30"
+      ]
+    },
+    {
+      "id": "c6b48291e56dfd449d49c24da91e2ca6ac3b1eead2085d6f52aa726f7b1c354d",
+      "source": "There is no section headed \"required contents of a listing.\" What Texas does instead is scatter the requirements through prohibitions and rule-making provisions, and you assemble the list by reading them together. That is worth knowing on its own, because it tells you where to look when a question arises that no checklist answers.",
+      "target": "No hay ninguna sección titulada \"contenido requerido de un listado\". Lo que Texas hace en su lugar es dispersar los requisitos a través de prohibiciones y disposiciones para la elaboración de reglas, y usted ensambla la lista leyéndolas juntas. Eso vale la pena saber por sí solo, porque te dice dónde mirar cuando surge una pregunta que no hay respuestas de lista de verificación.",
+      "flags": [
+        "listing-terminology"
+      ],
+      "courses": [
+        "tx-law-of-agency-30",
+        "tx-law-of-contracts-30"
+      ]
+    },
+    {
+      "id": "1e25722450af6b62df0ee7b6016e97d35aad46a5db0483c530cf7e7185ef9a90",
+      "source": "This unit invites promotional writing, and promotional writing is exactly what a license holder cannot afford to rely on. A seller who chooses representation is buying a set of legally enforceable obligations. If you cannot name them and point to where they are written, you are selling a feeling. So set the brochure aside. What follows is an inventory of entitlements, each with its source; the sources are taught in the modules named, and the point of the unit is that you can recite the list at a listing appointment.",
+      "target": "Esta unidad invita a la escritura promocional, y la escritura promocional es exactamente lo que un titular de la licencia no puede permitirse confiar. Un vendedor que elige representación está comprando un conjunto de obligaciones legalmente ejecutables. Si usted no puede nombrarlos y señalar a donde están escritos, usted está vendiendo un sentimiento. Así que deja de lado el folleto. Lo que sigue es un inventario de derechos, cada uno con su fuente; las fuentes se enseñan en los módulos nombrados, y el punto de la unidad es que se puede recitar la lista en una reunión de captación.",
+      "flags": [
+        "listing-terminology"
+      ],
+      "courses": [
+        "tx-law-of-agency-30"
+      ]
+    },
+    {
+      "id": "5f3a6e43073aa5306709076ace5b6842ad60a1d2fa23961aac80c7e510cc661f",
+      "source": "Three details students lose. The four years run from the triggers the rule names as they apply — closing, termination of the contract, or end of the transaction — not from the date the file was opened, so a listing that expires unsold in September 2026 starts its four years then. \"[S]ubstantive communications with parties to the transaction\" includes texts and emails. And the last category means the written agreement § 201.072(1)(D) demands is itself a record the broker must keep for four years.",
+      "target": "Tres detalles que los estudiantes pierden. Los cuatro años corren desde los desencadenantes los nombres de las reglas según se aplican —cierre, rescisión del contrato o final de la transacción— no desde la fecha en que se abrió el archivo, por lo que una captación inmobiliaria que expira sin vender en septiembre 2026 comienza sus cuatro años entonces. \"Las comunicaciones mantenidas con las partes en la transacción\" incluyen textos y correos electrónicos. Y la última categoría significa que el acuerdo escrito § 201.072(1)(D) exige es en sí mismo un registro que el bróker debe mantener durante cuatro años.",
+      "flags": [
+        "email-verb-or-noun-review"
+      ],
+      "courses": [
+        "tx-law-of-agency-30"
+      ]
+    },
+    {
+      "id": "9d58ffc0bd809e4ac62e85bd77607704ad40779bb89f99fb342484e6871e6be4",
+      "source": "Unit: Other Considerations",
+      "target": "Unidad: Otras consideraciones",
+      "flags": [
+        "consideration-terminology"
+      ],
+      "courses": [
+        "tx-law-of-agency-30"
+      ]
+    },
+    {
+      "id": "71aac3c3081f58c0a7aeb80c41e4057f12ea53becee4623bc67d26ab2139cf64",
+      "source": "— a power of attorney and a property management agreement. A listing agreement is not on that list. Sections 1101.652(b)(19) and (20) confirm the same limit from the disciplinary side: you may not offer property for sale without the owner's knowledge and consent, and you may not offer it on terms other than those the owner authorised. An agent who could bind the seller would not need the seller's authorisation for the terms. So: you market, you solicit, you negotiate, you present, you advise. Your client signs. That is special agency, and it is what almost every relationship you will ever have as a residential license holder is.",
+      "target": "— un poder notarial y un acuerdo de gestión de bienes. Un contrato de representación para la venta no está en esa lista. Las secciones 1101.652(b)(19) y (20) confirman el mismo límite desde el punto de vista disciplinario: no podrá ofrecer propiedades para la venta sin el conocimiento y consentimiento del propietario, y no podrá ofrecerlas en términos distintos de los autorizados por el propietario. Un agente que pudiera obligar al vendedor no necesitaría la autorización del vendedor para las condiciones. Así que: comercializas, solicitas, negocias, presentas, aconsejas. Su cliente firma. Esa es una agencia especial, y es lo que casi todas las relaciones que usted tendrá como titular de una licencia residencial es.",
+      "flags": [
+        "listing-terminology"
+      ],
+      "courses": [
+        "tx-law-of-agency-30"
+      ]
+    },
+    {
+      "id": "1ec120d77bb12fdcde1299d7297fb48569abd5eb40ca66aacf6c0c7fe4eef753",
+      "source": "A worked timeline illustrates the difference between negotiation and agreement. The buyer requests an option extension at noon; the seller says at 2 p.m. that the request is under consideration; the existing option ends later that day. At 6 p.m. a draft amendment is emailed without signatures. The request, discussion, and draft do not by themselves establish a completed extension. The agent must promptly explain the status accurately and help the client obtain timely advice and make an informed choice under the actual contract. An agent should never represent a pending request as granted.",
+      "target": "Un cronograma trabajado ilustra la diferencia entre negociación y acuerdo. El comprador solicita una extensión de opción al mediodía; el vendedor dice en 2 p.m. que la solicitud está en consideración; la opción existente termina más tarde ese día. En 6 p.m. un proyecto de enmienda es enviado por correo electrónico sin firmas. La solicitud, el debate y el proyecto no establecen por sí mismos una prórroga completa. El agente debe explicar rápidamente el estado con precisión y ayudar al cliente a obtener asesoramiento oportuno y hacer una elección informada bajo el contrato real. Un agente nunca debe representar una solicitud pendiente según lo concedido.",
+      "flags": [
+        "consideration-terminology"
+      ],
+      "courses": [
+        "tx-law-of-contracts-30"
+      ]
+    },
+    {
+      "id": "e36e908fc2127127accbc832c47851f89a7689a3e1a97ebc8dc8b549e3ba57ae",
+      "source": "An issue can remain unresolved despite repeated communication. Several emails asking whether a repair is finished do not prove performance. Repeated lender updates do not establish property approval. A promise to provide a release is not the release itself. Close a task only when the required evidence exists and the proper participant has accepted it where acceptance is relevant. Administrative optimism should not change the status from pending to complete.",
+      "target": "Una cuestión puede seguir sin resolverse a pesar de las reiteradas comunicaciones. Varios correos electrónicos que preguntan si una reparación está terminada no prueban el rendimiento. Actualizaciones de prestamistas repetidas no establecen la aprobación de la propiedad. Una promesa para proporcionar una liberación no es la liberación en sí. Cerrar una tarea sólo cuando exista la evidencia requerida y el participante apropiado la haya aceptado cuando la aceptación sea pertinente. El optimismo administrativo no debe cambiar la situación de pendiente a completa.",
+      "flags": [
+        "email-verb-or-noun-review"
+      ],
+      "courses": [
+        "tx-law-of-contracts-30"
+      ]
+    },
+    {
+      "id": "37c31ccc8e0757e28a543248fd1294aa3ba7419cf9fb1e86cfb915f5c7c756e9",
+      "source": "Cooperative interests require attention to the entity and occupancy agreement. A buyer may need approval, a transfer of shares or membership, and a new or assigned proprietary lease. The fact that the unit is used as a residence does not turn the transaction automatically into an ordinary deed conveyance. A lender’s willingness to finance a condominium is not evidence that the same loan product finances a cooperative interest. Refer legal document selection and nonstandard transfers to counsel while coordinating factual information and deadlines.",
+      "target": "Los intereses cooperativos requieren atención a la entidad y al acuerdo de ocupación. Un comprador puede necesitar aprobación, una transferencia de escrituras o membresía, y un nuevo contrato de arrendamiento o cesión de propiedad. El hecho de que la unidad se utilice como residencia no convierte automáticamente la transacción en una escritura ordinaria de traspaso. La disposición de un prestamista a financiar un condominio no es prueba de que el mismo producto de préstamo financie un interés cooperativo. Remitir la selección de documentos legales y las transferencias no estándar a un abogado, al tiempo que coordina la información fáctica y los plazos.",
+      "flags": [
+        "deed-as-fact-or-action"
+      ],
+      "courses": [
+        "tx-law-of-contracts-30"
+      ]
+    },
+    {
+      "id": "61692f8f7064d77178d7c23c592f8be84053aed64ef6285e3184c42b3d1d7def",
+      "source": "Feedback: Section 26.01 covers the sale and the lease longer than one year. Section 1101.806(c) addresses the real-estate sale/purchase commission action; § 26.01(b)(7) separately names specified mineral commissions. Section 5.021 addresses conveyance. These are overlapping but distinct inquiries. A signature on the deed does not retroactively prove that every separate fee or earlier promise satisfied its own requirement.",
+      "target": "Comentarios: La sección 26.01 cubre la venta y el arrendamiento por más de un año. La sección 1101.806(c) se refiere a la acción de la comisión de venta/compra inmobiliaria; § 26.01(b)(7) designa por separado las comisiones minerales especificadas. La sección 5.021 se refiere a la transmisión. Se trata de investigaciones superpuestas pero distintas. Una firma en la escritura no prueba retroactivamente que cada comisión separada o promesa anterior satisficiera su propio requisito.",
+      "flags": [
+        "deed-as-fact-or-action"
+      ],
+      "courses": [
+        "tx-law-of-contracts-30"
+      ]
+    },
+    {
+      "id": "4ba76b8c631eccf1d7ac6668ff09e91884232cfe408e6162f0837cfe2b1a2758",
+      "source": "The deed of trust proves every payment has been made.",
+      "target": "La escritura de fideicomiso demuestra que cada pago ha sido hecho.",
+      "flags": [
+        "deed-as-fact-or-action"
+      ],
+      "courses": [
+        "tx-law-of-contracts-30"
+      ]
+    },
+    {
+      "id": "3b5e11f343605519f7a04c5692414c54154337ce605324902c8348acf4279daa",
+      "source": "The writing must reflect the necessary agreement, not merely prove that people were talking. A stack of emails may require analysis of whether the documents concern the same transaction and contain the essential terms. A description such as “my land” can create serious identification questions. Do not invent omitted terms or a property description after a dispute arises. Counsel must evaluate legal sufficiency; the agent should establish complete, accurate documentation at the outset.",
+      "target": "El documento escrito debe reflejar el acuerdo necesario, no solo demostrar que hubo conversaciones. Un conjunto de correos electrónicos puede exigir analizar si se refiere a la misma operación y contiene las condiciones esenciales. Una descripción como «mi terreno» puede plantear problemas importantes de identificación. No invente condiciones omitidas ni una descripción del inmueble una vez surgida la disputa. Un abogado debe evaluar la suficiencia jurídica; el agente debe procurar documentación completa y exacta desde el principio.",
+      "flags": [
+        "email-verb-or-noun-review"
+      ],
+      "courses": [
+        "tx-law-of-contracts-30"
+      ]
+    },
+    {
+      "id": "52d6b04535b658ee821fe5ff00edacd08151a77b04bd65a83880c5dd42893533",
+      "source": "states (the borrower keeps title; the lender holds only a lien). Texas practice runs on the deed of trust precisely because the instrument pairs naturally with a power of sale: the borrower conveys the lien interest with the sale power to the trustee at origination, so on default the machinery is already in place — no court needed to create the remedy, only § 51.002's notices to exercise it. What the theory question changes day to day is almost nothing — the borrower occupies, enjoys and (subject to the due-on-sale covenant) transfers the property either way — but the vocabulary appears in national coursework and exams, and a Texas licence holder should be able to say accurately: the operative Texas fact is not a theory label but an instrument, the deed of trust, and a statute, § 51.002, that together make non-judicial sale the default residential remedy.",
+      "target": "estados (el prestatario mantiene el título; el prestamista sólo tiene un embargo). La práctica de Texas se basa en la escritura de fideicomiso precisamente porque el instrumento se empareja naturalmente con un poder de venta: el prestatario transmite el interés del gravamen con el poder de venta al fideicomisario en la originación, por lo que por defecto la maquinaria ya está en marcha — ningún tribunal necesario para crear el remedio, sólo los avisos de § 51.002 para ejercerlo. Lo que la pregunta teórica cambia día a día es casi nada —el prestatario ocupa, disfruta y (sujeto al pacto de la debida venta) transfiere la propiedad de cualquier manera— pero el vocabulario aparece en los cursos y exámenes nacionales, y el titular de una licencia de Texas debería poder decir con exactitud: el hecho operativo de Texas no es una etiqueta teórica sino un instrumento, la escritura de fideicomiso, y una ley, § 51.002, que juntos hacen la venta no judicial el remedio residencial por defecto.",
+      "flags": [
+        "deed-as-fact-or-action"
+      ],
+      "courses": [
+        "tx-law-of-contracts-30",
+        "tx-principles-real-estate-i-30"
+      ]
+    },
+    {
+      "id": "8c3877e61af9c9f491cadc165fdf9c981af77974ecc3544ec93e2574703b0232",
+      "source": "\"Nothing in this subchapter prohibits a person engaged in the business of furnishing appraisals of real property to take into consideration factors other than race, color, religion, national origin, sex, handicap, or familial status.\" Read what this does and does not say. It is permissive and it is bounded: an appraiser may consider",
+      "target": "\"Nada en este subcapítulo prohíbe que una persona que se dedica al negocio de proporcionar evaluaciones de bienes raíces tome en consideración factores distintos de la raza, color, religión, origen nacional, sexo, discapacidad o estado familiar.\" Lea lo que esto hace y no dice. Es permisivo y está limitado: un tasador puede considerar",
+      "flags": [
+        "consideration-terminology"
+      ],
+      "courses": [
+        "tx-principles-real-estate-ii-30"
+      ]
+    },
+    {
+      "id": "0b3220ae03ea3c707d5cb1a84d16a3223bda385155f97c0fadb4b213d7030934",
+      "source": ". Section 1101.509(b) requires an original applicant to complete \"at least 16 classroom hours\" of approved coursework in \"the law of eminent domain, including the rights of property owners,\" professionalism in negotiating with property owners, and \"ethical considerations in the performance of right-of-way acquisition services.\"",
+      "target": ". La sección 1101.509(b) requiere que un solicitante original complete \"al menos 16 horas de clase\" de los cursos aprobados en \"la ley de dominio eminente, incluyendo los derechos de los propietarios\", profesionalismo en la negociación con los propietarios, y \"consideraciones éticas en el desempeño de los servicios de adquisición de derecho de paso\".",
+      "flags": [
+        "consideration-terminology"
+      ],
+      "courses": [
+        "tx-principles-real-estate-ii-30"
+      ]
+    },
+    {
+      "id": "7c7ef18fa493f610bd7206a2f98ddf4b61a9f67bf5b60143d38a088022814514",
+      "source": "Submit a reconsideration of value through the proper channel identifying specific factual errors — a comparable that was not arm's length, a gross living area measurement that omitted a permitted addition, a superior sale in the same subdivision that closed after the data pull — each supported by documents.",
+      "target": "Presentar una reconsideración del valor a través del canal adecuado identificando errores fácticos específicos — un comparable que no era la longitud del brazo, una medición del área de vida bruta que omitió una adición permitida, una venta superior en la misma subdivisión que se cerró después de la extracción de datos — cada uno apoyado por documentos.",
+      "flags": [
+        "consideration-terminology"
+      ],
+      "courses": [
+        "tx-principles-real-estate-ii-30"
+      ]
+    },
+    {
+      "id": "5dc756e55a0a225cc4cade2ad109605b37392e1edc67c32863768a02d59a50df",
+      "source": "Unit: Management Considerations",
+      "target": "Dependencia: Consideraciones de la administración",
+      "flags": [
+        "consideration-terminology"
+      ],
+      "courses": [
+        "tx-principles-real-estate-ii-30"
+      ]
+    },
+    {
+      "id": "d111e1be3066f234e09912e0f899acad826968069a6b354286371e4b9191a300",
+      "source": "You are not without options when the number disappoints, but the options are factual. A reconsideration of value is a request to correct identified errors of fact, supported by documents, submitted through the channel the lender provides. What you may not do is argue that the number should be higher because the deal needs it. The distinction is not cosmetic: § 1101.652(b)(2) authorizes discipline for conduct that is dishonest or in bad faith or that demonstrates untrustworthiness, and pressure on a valuation professional is squarely within that language.",
+      "target": "No está sin opciones cuando el número decepciona, pero las opciones son fácticas. Una reconsideración del valor es una solicitud para corregir los errores de hecho identificados, apoyados por documentos, presentados a través del canal que el prestamista proporciona. Lo que no puede hacer es argumentar que el número debe ser más alto porque el acuerdo lo necesita. La distinción no es cosmética: § 1101.652(b)(2) autoriza la disciplina para conductas que sean deshonestas o de mala fe o que demuestren falta de fiabilidad, y la presión sobre un profesional de valoración está directamente dentro de ese lenguaje.",
+      "flags": [
+        "consideration-terminology"
+      ],
+      "courses": [
+        "tx-principles-real-estate-ii-30"
+      ]
+    },
+    {
+      "id": "612a61b826a546a610c7761f04a2c43c5e3f868d30401052d5ae7dc8ffa40014",
+      "source": "from § 301.022, the advertising prohibition. Where the federal Act makes that point with a parenthesis (\"other than subsection (c)\"), Texas makes it by listing the sections the exemption reaches and leaving the advertising section off the list. Both then repeat the point as a condition: § 301.041(a)(1)(B)(ii) requires the house to be sold or rented without \"the publication, posting, or mailing of a notice, statement, or advertisement prohibited by Section 301.022,\" just as § 3603(b)(1)(B) requires it to be sold without an advertisement \"in violation of section 3604(c).\" Texas likewise removes the exemption where the owner uses \"the sales or rental facilities or services of a broker, agent, or salesperson licensed under Chapter 1101, Occupations Code\" (§ 301.041(a)(1)(B)(i)) — the state version of the federal no-broker condition, pinned to a Texas licence. Texas caps ownership at \"more than three single-family houses at any one time,\" and § 301.041(b) limits the exemption to \"one sale in a 24-month period if the owner was not the most recent resident of the house at the time of the sale.\" The Texas owner-occupied exemption uses the same \"not more than four families living independently of each other\" formula and requires that \"the owner maintains and occupies one of the living quarters as the owner's residence.\"",
+      "target": "del § 301.022, la prohibición de publicidad. Cuando la Ley federal hace ese punto con un paréntesis (\"distinto de la subsección (c)\"), Texas lo hace al enumerar las secciones a las que llega la exención y dejando la sección de publicidad fuera de la lista. A continuación, repetir el punto como una condición: § 301.041(a)(1)(B)(ii) requiere que la casa sea vendida o alquilada sin \"la publicación, publicación o envío de un aviso, declaración o anuncio prohibido por la Sección 301.022\", tal como § 3603(b)(1)(B) requiere que se venda sin un anuncio \"en violación de la sección 3604(c)\". Texas también elimina la exención cuando el propietario utiliza \"las instalaciones o servicios de venta o alquiler de un corredor, agente o vendedor licenciado bajo el Capítulo 1101, Ocupaciones Código\" (§ 301.041(a)(1)(B)(i)) — la versión estatal de la condición federal de no corredor, sujeta a una licencia de Texas. Texas limita la propiedad a \"más de tres casas unifamiliares en cualquier momento\", y § 301.041(b) limita la exención a \"una venta en un período de 24 meses si el propietario no era el residente más reciente de la casa en el momento de la venta\".La exención ocupada por el propietario de Texas usa la misma fórmula \"no más de cuatro familias que viven independientes unas de otras\" y requiere que \"el propietario mantenga y ocupe una de las viviendas como residencia del propietario\".",
+      "flags": [
+        "listing-terminology"
+      ],
+      "courses": [
+        "tx-principles-real-estate-ii-30"
+      ]
+    },
+    {
+      "id": "0d68e7fb9fb19269c32ed324395e72a1c2ce54fec3dcfe0433f93043522b8e76",
+      "source": "— no one may deny another access to or participation in \"a multiple-listing service, real estate brokers' organization, or other service, organization, or facility relating to the business of selling or renting dwellings,\" or discriminate in the terms of that access, on the seven bases. The federal Act has a brokerage-services section of its own at 42 U.S.C. § 3606, and it was held and read for this course; the two texts are close enough to set side by side. Section 3606 provides: \"After December 31, 1968, it shall be unlawful to deny any person access to or membership or participation in any multiple-listing service, real estate brokers' organization or other service, organization, or facility relating to the business of selling or renting dwellings, or to discriminate against him in the terms or conditions of such access, membership, or participation, on account of race, color, religion, sex, handicap, familial status, or national origin.\" Section 301.027 uses the same list of covered bodies — \"a multiple-listing service, real estate brokers' organization, or other service, organization, or facility relating to the business of selling or renting dwellings\" — and the same two-stage prohibition of denying access and of discriminating \"in the terms or conditions of access, membership, or participation.\" Three differences and no more: Texas says",
+      "target": "— nadie puede negar a otro el acceso o la participación en \"un servicio de múltiples listas, una organización de agentes inmobiliarios u otro servicio, organización o instalación relacionados con el negocio de vender o alquilar viviendas\", ni discriminar en los términos de ese acceso, en las siete bases. La Ley federal tiene una sección de servicios de corretaje propia en 42 U.S.C. § 3606, y se celebró y leyó para este curso; los dos textos están lo suficientemente cerca como para poner lado a lado. El artículo 3606 dispone: \"Después del 31 de diciembre de 1968, será ilegal negar a cualquier persona el acceso o la afiliación o participación en cualquier servicio de listas múltiples, organización de agentes inmobiliarios u otro servicio, organización o instalación relacionada con el negocio de vender o alquilar viviendas, o discriminar contra él en los términos o condiciones de dicho acceso, afiliación o participación, por motivos de raza, color, religión, sexo, discapacidad, estado familiar u origen nacional\". El artículo 301.027 utiliza la misma lista de organismos cubiertos: \"un servicio de listas múltiples, bienes raíces organización de corredores, u otro servicio, organización o instalación relacionada con el negocio de vender o alquilar viviendas\" — y la misma prohibición en dos etapas de negar el acceso y de discriminar \"en los términos o condiciones de acceso, membresía o participación\". Tres diferencias y nada más: Texas dice",
+      "flags": [
+        "listing-terminology"
+      ],
+      "courses": [
+        "tx-principles-real-estate-ii-30"
+      ]
+    },
+    {
+      "id": "3d1bfab5639bf8ea174c5859b535df342bc776011fe620ba59058f5814960a00",
+      "source": "A farm workshop file contains an existing hunting lease. The agent copies a resale checklist listing no leases because the property is not a rental house. What is wrong?",
+      "target": "Un archivo del taller agrícola contiene un contrato de caza existente. El agente copia una lista de verificación de reventa en la que no se enumeran los arrendamientos porque la propiedad no es una casa de alquiler. ¿Qué pasa?",
+      "flags": [
+        "listing-terminology"
+      ],
+      "courses": [
+        "tx-promulgated-contract-forms-30"
+      ]
+    },
+    {
+      "id": "44e4055df80695bf581173e2ffde8b88e53c30c3c52f423559ef83a0fa3543ae",
+      "source": "For each, identify a fact that would force reconsideration, such as condominium ownership, a commercial purpose, or closing before completion. Explain the difference between a form's date and the 2016 course-outline date. Check the matrix directly against the source before continuing.",
+      "target": "Para cada uno, identificar un hecho que forzaría la reconsideración, como la propiedad de condominio, un propósito comercial, o el cierre antes de completar. Explicar la diferencia entre la fecha de un formulario y la fecha del curso-esquema de 2016. Compruebe la matriz directamente contra la fuente antes de continuar.",
+      "flags": [
+        "consideration-terminology"
+      ],
+      "courses": [
+        "tx-promulgated-contract-forms-30"
+      ]
+    },
+    {
+      "id": "5dd1416430c8b9a6eda985f8500c02498b5b04c3386f0970a886a683565bebdd",
+      "source": "The section includes exceptions where state or federal fair-housing law requires a higher rate and for the specified temporary sanctuary from family violence for no more than one month. Read the whole provision before applying a number. Other building/safety standards, actual dwelling configuration, fair-housing considerations, and local rules may matter. A familiar “two per bedroom” practice is not a universal safe harbor that overrides all facts and law.",
+      "target": "La sección incluye excepciones cuando la ley estatal o federal de vivienda justa requiere una tasa más alta y para el santuario temporal especificado de la violencia familiar no más de un mes. Lea toda la disposición antes de aplicar un número. Otros estándares de construcción/seguridad, configuración real de la vivienda, consideraciones de vivienda justa, y las reglas locales pueden importar. Una práctica familiar de “dos por dormitorio” no es un puerto seguro universal que anula todos los hechos y leyes.",
+      "flags": [
+        "consideration-terminology"
+      ],
+      "courses": [
+        "tx-promulgated-contract-forms-30"
+      ]
+    },
+    {
+      "id": "ef2242f2cbd988c41b96a901b6811bfee52d1c4496723b365ba094ec45befd74",
+      "source": "A borrower lists $80,000 in a retirement plan as cash to close but has no distribution approval. Write an evidence request identifying vested balance, access terms, tax/penalty considerations, timing, and any repayment duty. Explain why the closing agent should not assume an $80,000 wire is available.",
+      "target": "Un prestatario enumera $80,000 en un plan de jubilación como efectivo para cerrar, pero no tiene aprobación de distribución. Escribe una solicitud de evidencia identificando el saldo invertido, las condiciones de acceso, las consideraciones de impuestos/penas, el momento y cualquier derecho de reembolso. Explique por qué el agente de cierre no debe asumir que un cable de 80,000 dólares está disponible.",
+      "flags": [
+        "consideration-terminology"
+      ],
+      "courses": [
+        "tx-real-estate-finance-30"
+      ]
+    },
+    {
+      "id": "20f941fa4d60f3a42fa54fb5b11aba2130c4fcc090c8185297920d267dba281a",
+      "source": "Distinguish an administered rate from a market yield. An administered rate is set for an identified facility or balance under the Federal Reserve's operating framework. A market yield emerges from trading and expectations about future cash flows and risk. Even when they move together, they are not the same contractual number. A lender funding a long-term mortgage must also consider the possibility that borrowers refinance early, the cost of hedging a pipeline, and what investors will pay for the resulting asset. Those considerations help explain why a retail quote can move before an announced policy decision or move differently afterward.",
+      "target": "Distinguir una tasa administrada de un rendimiento de mercado. Se establece una tasa administrada para una instalación o saldo identificado bajo el marco operativo de la Reserva Federal. El rendimiento del mercado surge de la negociación y de las expectativas sobre los flujos de efectivo y el riesgo futuros. Incluso cuando se mueven juntos, no son el mismo número contractual. Un prestamista que financia una hipoteca a largo plazo también debe considerar la posibilidad de que los prestatarios refinancian temprano, el costo de cobertura de una tubería, y lo que los inversores pagarán por el activo resultante. Estas consideraciones ayudan a explicar por qué una cotización al por menor puede moverse antes de una decisión política anunciada o moverse de manera diferente después.",
+      "flags": [
+        "consideration-terminology"
+      ],
+      "courses": [
+        "tx-real-estate-finance-30"
+      ]
+    },
+    {
+      "id": "ddee32bf3ca7bf8f597dd98a7de53813e68d9df887e1ffe833360a2113dd2bf0",
+      "source": "Page two separates loan costs from other costs and shows lender credits. Origination charges, services the consumer cannot shop for, and services the consumer can shop for deserve separate attention. Prepaid interest and initial escrow deposits are not the same as an origination fee. Cash to close combines down payment and closing costs with financed amounts, deposits, seller credits, and other adjustments. Page three supplies comparisons and other considerations, including APR and total interest percentage. APR incorporates covered finance charges and is not the note rate or a simple sum of fees divided by one year's payments.",
+      "target": "La página dos separa los costos de préstamo de otros costos y muestra créditos de prestamista. Los gastos de origen, los servicios que el consumidor no puede comprar, y los servicios que el consumidor puede comprar merecen atención separada. Los intereses pagados por adelantado y los depósitos de garantía inicial no son los mismos que una comisión de origen. Efectivo para cerrar combina el pago inicial y los costos de cierre con cantidades financiadas, depósitos, créditos del vendedor, y otros ajustes. En la página tres se comparan los suministros y se tienen en cuenta otras consideraciones, incluido el TAE y el porcentaje de interés total. APR incorpora cargas financieras cubiertas y no es el tipo de cambio o una simple suma de tasas divididas por los pagos de un año.",
+      "flags": [
+        "consideration-terminology"
+      ],
+      "courses": [
+        "tx-real-estate-finance-30"
+      ]
+    },
+    {
+      "id": "126a8b0a9da1cd6d9fc9ce258faab6905b9d599e7b02bf7ce314da372b522371",
+      "source": "When asking for reconsideration, provide specific factual concerns through the lender's permitted process. Examples include an incorrect room count, an omitted relevant sale, an inconsistent legal description, or an unsupported assumption about condition. Explain the evidence without demanding that the appraiser reach the contract price or threatening future work. A corrected fact may change value, leave it unchanged, or require further analysis. The consumer's right to a copy of a valuation and the appraiser's independent judgment are compatible: access to the report is not authority to dictate the result.",
+      "target": "Al solicitar una reconsideración, proporcione preocupaciones concretas de hecho a través del proceso permitido por el prestamista. Ejemplos incluyen un conteo incorrecto de habitaciones, una venta relevante omitida, una descripción legal inconsistente, o una suposición no justificada sobre la condición. Explique la evidencia sin exigir que el tasador alcance el precio del contrato o amenace el trabajo futuro. Un hecho corregido puede cambiar el valor, dejarlo sin cambios, o requerir más análisis. El derecho del consumidor a una copia de una valoración y la sentencia independiente del tasador son compatibles: el acceso al informe no es autoridad para dictar el resultado.",
+      "flags": [
+        "consideration-terminology"
+      ],
+      "courses": [
+        "tx-real-estate-finance-30"
+      ]
+    },
+    {
+      "id": "759567f983eb8665af3b2140db0e67879d65f0857270c2862878ad11ec10067e",
+      "source": ", ordered early enough that a reconsideration of value is possible.",
+      "target": ", ordenado lo suficientemente pronto como para que una reconsideración de valor es posible.",
+      "flags": [
+        "consideration-terminology"
+      ],
+      "courses": [
+        "va-principles-practices-v1"
+      ]
+    },
+    {
+      "id": "540d16617cd0340c9f7fac708fe0646a85347c0351373972e4cb7ff44701cd5f",
+      "source": ". The professional consequence is that the appraisal contingency now controls: the gap must be closed by the buyer, by a price reduction, by a successful reconsideration of value, or by termination under the contract's terms.",
+      "target": ". La consecuencia profesional es que la contingencia de la evaluación ahora controla: la brecha debe ser cerrada por el comprador, por una reducción de precio, por una reconsideración exitosa del valor, o por la rescisión bajo las condiciones del contrato.",
+      "flags": [
+        "consideration-terminology"
+      ],
+      "courses": [
+        "va-principles-practices-v1"
+      ]
+    },
+    {
+      "id": "dd64502eb02b70f4e19a91323794d461309b272548b10b8860dac3d1d241967d",
+      "source": "The gap must be closed by the buyer, by a price reduction, by reconsideration, or by termination under the contract's terms. The licensee computes the gap, states the options, and refers the legal question of what the contract permits.",
+      "target": "La brecha debe ser cerrada por el comprador, por una reducción de precio, por reconsideración, o por rescisión en virtud de las condiciones del contrato. El licenciatario calcula la brecha, indica las opciones y se refiere a la cuestión jurídica de lo que el contrato permite.",
+      "flags": [
+        "consideration-terminology"
+      ],
+      "courses": [
+        "va-principles-practices-v1"
+      ]
+    },
+    {
+      "id": "8879f12dd8e3031996105470f16c032c4e7c22d74ff28d496fd47f65080013ec",
+      "source": "Then work backwards. Application within the contract's period. Documentation to the lender immediately. Appraisal ordered early enough for a reconsideration to be possible. Conditions chased weekly, in writing, with a written record of each request and response. Escalate to the principal broker the moment a deadline is at risk.",
+      "target": "Entonces trabajar hacia atrás. Aplicación dentro del plazo del contrato. Documentación al prestamista inmediatamente. La evaluación se ordenó lo suficientemente pronto como para que fuera posible una reconsideración. Las condiciones persiguieron semanalmente, por escrito, con un registro escrito de cada solicitud y respuesta. Escaléese al corredor principal en el momento en que un plazo está en riesgo.",
+      "flags": [
+        "consideration-terminology"
+      ],
+      "courses": [
+        "va-principles-practices-v1"
+      ]
+    },
+    {
+      "id": "88900c67a8e124abb6e4c5f6b3959c0f15004f4c23ac484028a844cd3661f6cc",
+      "source": "This calculation is the reason the appraisal contingency exists. The gap must be closed by the buyer, by a price reduction, by a successful reconsideration of value, or by termination under the contract's terms.",
+      "target": "Este cálculo es la razón por la que existe la contingencia de la evaluación. La brecha debe ser cerrada por el comprador, por una reducción de precio, por una reconsideración exitosa del valor, o por la rescisión en las condiciones del contrato.",
+      "flags": [
+        "consideration-terminology"
+      ],
+      "courses": [
+        "va-principles-practices-v1"
+      ]
+    },
+    {
+      "id": "a9a0dba10e76993424367d1baecfb65cb5e8e3fc48ea25e443cec7a2373bb4bc",
+      "source": "A quiet title action is the lawsuit to resolve one. And a deed of trust paid off but never reconveyed of record is still a cloud.",
+      "target": "Una acción judicial para aclarar la titularidad resuelve ese defecto. Y una escritura de fideicomiso cuya deuda se pagó, pero cuya cancelación no se inscribió, sigue constituyendo un defecto en la titularidad.",
+      "flags": [
+        "deed-as-fact-or-action"
+      ],
+      "courses": [
+        "wa-real-estate-fundamentals-60"
+      ]
+    },
+    {
+      "id": "89470b5fa47d5c416e08da46b1ec474bd2edc84fcc3f77d56cb55284aa0e69d6",
+      "source": "Four corrections: drop the two active listings, because a listing is what a seller hopes for rather than what a buyer paid; adjust the COMPARABLES rather than the subject, subtracting from the superior ones; present a RANGE reconciled by weighted consideration rather than a single averaged figure; and decline to predict an appraisal at all — that is a representation, and RCW 18.86.030(1)(b), owed to all parties and unwaivable, is what it would be measured against.",
+      "target": "Cuatro correcciones: soltar las dos publicaciones inmobiliarias activas, porque una publicación inmobiliaria es lo que un vendedor espera más que lo que un comprador pagó; ajustar las COMPARABLES en lugar de la materia, restando de las superiores; presentar un RANGE reconciliado por consideración ponderada en lugar de una sola cifra media; y negarse a predecir una evaluación en absoluto, es decir, una representación, y RCW 18.86.030(1)(b), debido a todas las partes e indeclinable, es con lo que se mediría.",
+      "flags": [
+        "consideration-terminology"
+      ],
+      "courses": [
+        "wa-real-estate-fundamentals-60"
+      ]
+    },
+    {
+      "id": "da46194432f334221ec213e20152eafaacf26dcd36297a44bc93582179a7b69c",
+      "source": "Weighted consideration, not simple averaging.",
+      "target": "Consideración ponderada, no un simple promedio.",
+      "flags": [
+        "consideration-terminology"
+      ],
+      "courses": [
+        "wa-real-estate-fundamentals-60"
+      ]
+    },
+    {
+      "id": "ea3698fd49b21a831254f87e7bdf8f9c850d369ad511f987b98352a0f952a792",
+      "source": ", sometimes inside the financing contingency and sometimes separate. If value comes in below the price, the lender lends against the lower figure and the gap must be closed by the buyer, by a price reduction, by reconsideration, or by termination.",
+      "target": ", a veces dentro de la contingencia financiera y a veces separado. Si el valor es inferior al precio, el prestamista presta contra la cifra más baja y la brecha debe ser cerrada por el comprador, mediante una reducción del precio, mediante reconsideración o por rescisión.",
+      "flags": [
+        "consideration-terminology"
+      ],
+      "courses": [
+        "wi-salesperson"
+      ]
+    },
+    {
+      "id": "77e24b5d943017bbeea980953e101fce8d1429f869213fc0998e3c0caaae3537",
+      "source": "4.1 Investment Considerations — REEB 25.033(1)(I)",
+      "target": "4.1 Consideraciones sobre inversiones — REEB 25.033(1)I",
+      "flags": [
+        "consideration-terminology"
+      ],
+      "courses": [
+        "wi-salesperson"
+      ]
+    },
+    {
+      "id": "9dece54d917d657cad46239364f3ff60a91c0599913177b34511f1f6c96332d6",
+      "source": "66.4 Management Considerations and the Operating Statement — REEB 25.033(16)(C)",
+      "target": "66.4 Consideraciones de la administración y la declaración de funcionamiento — REEB 25.033(16)(C)",
+      "flags": [
+        "consideration-terminology"
+      ],
+      "courses": [
+        "wi-salesperson"
+      ]
+    },
+    {
+      "id": "6b6c2d250afc117e4ac8f9612d9bb53036d3c08773635b8d92ea97bb51bbc099",
+      "source": "Investment considerations; tax benefits; homeowner's insurance",
+      "target": "Consideraciones relativas a la inversión; beneficios fiscales; seguro de vivienda",
+      "flags": [
+        "consideration-terminology"
+      ],
+      "courses": [
+        "wi-salesperson"
+      ]
+    },
+    {
+      "id": "d0ece7b5a648743ddc3e8d3ce580516f21d449560c0d9dcfaa6bd7b006e770fc",
+      "source": "Property management: functions, agreement, considerations, risk",
+      "target": "Administración de bienes: funciones, acuerdo, consideraciones, riesgo",
+      "flags": [
+        "consideration-terminology"
+      ],
+      "courses": [
+        "wi-salesperson"
+      ]
+    },
+    {
+      "id": "4f0970baf8b71f79c3b064a884f3beda0e9df2bdbf1725efa0a385e0c2b37aa4",
+      "source": "That a spouse may hold an interest and may need to sign even where not on the deed is the fact a listing licensee must act on, and the hour routes the determination to the title company, the closing agent and counsel. It states no classification rule, no presumption's operation, and no exception. Any instructor supplementing this hour must read ch. 766 first and date the reading.",
+      "target": "Que un cónyuge puede tener un interés y puede tener que firmar incluso cuando no en la escritura es el hecho de que un licenciatario de la captación inmobiliaria debe actuar en, y el recorrido de la hora la determinación a la empresa titular, el agente de cierre y el abogado. No establece ninguna regla de clasificación, ninguna operación de presunción, y ninguna excepción. Cualquier instructor que complemente esta hora debe leer cap. 766 primero y fechar la lectura.",
+      "flags": [
+        "deed-as-fact-or-action"
+      ],
+      "courses": [
+        "wi-salesperson"
+      ]
+    },
+    {
+      "id": "ed87b0790a197e5e0078bf1154ef12ebff4d5e4920ac088e53ed834c1feee26f",
+      "source": "is stated as the structural fact it is, and Hour 46.2 translates the deed-of-trust vocabulary a student may have met elsewhere.",
+      "target": "se presenta como el hecho estructural que es, y la Hora 46.2 explica el vocabulario de la escritura de fideicomiso que el estudiante puede haber encontrado en otros contextos.",
+      "flags": [
+        "deed-as-fact-or-action"
+      ],
+      "courses": [
+        "wi-salesperson"
+      ]
+    },
+    {
+      "id": "7633383723ad22654ae4d8748d192b6e84e425268630dd48a0a2c08152f5883f",
+      "source": "that recur at listing and belong on the investigation list:",
+      "target": "que se repiten en la captación inmobiliaria y pertenecen a la lista de investigación:",
+      "flags": [
+        "listing-terminology"
+      ],
+      "courses": [
+        "wi-salesperson"
+      ]
+    }
+  ]
+}

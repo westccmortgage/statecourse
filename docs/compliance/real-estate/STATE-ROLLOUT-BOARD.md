@@ -2,6 +2,10 @@
 
 # Real Estate State Rollout Board
 
+## Spanish public free-practice release — November 14, 2026
+
+Prepared for owner-authorized publication as a visibly labelled non-credit draft: 14 states, 30 courses, 284 lessons, 3,172 formative questions. 4,244 unique translated strings corrected and 19 current-source additions translated. Build, 51 focused Node tests, 3 Python tests, generated Spanish entry links for all states, and Chrome loading of all 30 courses passed. Human linguistic review, state SME review, learner duration and regulatory approval remain OPEN; exhaustive semantic correctness is not certified. Prior HOLD snapshots below are historical. Production publication/acceptance is pending observation. [Release scope, evidence and recovery](../../audits/REAL-ESTATE-SPANISH-RELEASE-2026-11-14.md).
+
 ## Spanish editorial correction pass — November 14, 2026: HOLD remains
 
 1,100 unique public strings received scoped editorial corrections; all 30 companions build and 51 focused Node tests plus 3 Python tests pass. The original queue is resolved apart from two documented false positives, but expanded inspection identifies 2,641 contextual candidates and confirmed deed/conveyance meaning errors. Neither scan is exhaustive. Full bilingual and state-SME review, learner validation and production acceptance remain OPEN. No deployment or external status change. [Correction evidence and remaining blockers](../../audits/REAL-ESTATE-SPANISH-EDITORIAL-CORRECTIONS-2026-11-14.md).

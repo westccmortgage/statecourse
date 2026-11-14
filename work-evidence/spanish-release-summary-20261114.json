@@ -1,0 +1,13 @@
+{
+  "baseline": "ef2c7dd",
+  "changed_unique_source_strings": 4244,
+  "new_current_source_strings": 19,
+  "states": 14,
+  "courses": 30,
+  "lessons": 284,
+  "questions": 3172,
+  "human_linguistic_review": "OPEN",
+  "state_sme_review": "OPEN",
+  "learner_duration": "OPEN",
+  "semantic_review_scope": "Targeted terminology and contextual corrections; not exhaustive human certification"
+}

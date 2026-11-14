@@ -1,0 +1,242 @@
+[
+  {
+    "course": "ak-salesperson-prelicense-40-v1",
+    "lang": "es",
+    "lessons": 8,
+    "ready": "ready",
+    "state": "AK",
+    "visible": true
+  },
+  {
+    "course": "az-salesperson-prelicense-90",
+    "lang": "es",
+    "lessons": 13,
+    "ready": "ready",
+    "state": "AZ",
+    "visible": true
+  },
+  {
+    "course": "az-contract-writing-6",
+    "lang": "es",
+    "lessons": 2,
+    "ready": "ready",
+    "state": "AZ",
+    "visible": true
+  },
+  {
+    "course": "ca-real-estate-principles-45",
+    "lang": "es",
+    "lessons": 15,
+    "ready": "ready",
+    "state": "CA",
+    "visible": true
+  },
+  {
+    "course": "ca-real-estate-practice-45",
+    "lang": "es",
+    "lessons": 15,
+    "ready": "ready",
+    "state": "CA",
+    "visible": true
+  },
+  {
+    "course": "ca-mortgage-loan-brokering-lending-45",
+    "lang": "es",
+    "lessons": 15,
+    "ready": "ready",
+    "state": "CA",
+    "visible": true
+  },
+  {
+    "course": "co-real-estate-law-practice-48",
+    "lang": "es",
+    "lessons": 5,
+    "ready": "ready",
+    "state": "CO",
+    "visible": true
+  },
+  {
+    "course": "co-contracts-regulations-48",
+    "lang": "es",
+    "lessons": 5,
+    "ready": "ready",
+    "state": "CO",
+    "visible": true
+  },
+  {
+    "course": "co-trust-accounts-recordkeeping-8",
+    "lang": "es",
+    "lessons": 4,
+    "ready": "ready",
+    "state": "CO",
+    "visible": true
+  },
+  {
+    "course": "co-current-legal-issues-8",
+    "lang": "es",
+    "lessons": 3,
+    "ready": "ready",
+    "state": "CO",
+    "visible": true
+  },
+  {
+    "course": "co-real-estate-closings-24",
+    "lang": "es",
+    "lessons": 5,
+    "ready": "ready",
+    "state": "CO",
+    "visible": true
+  },
+  {
+    "course": "co-practical-applications-32",
+    "lang": "es",
+    "lessons": 7,
+    "ready": "ready",
+    "state": "CO",
+    "visible": true
+  },
+  {
+    "course": "me-sales-agent-v1",
+    "lang": "es",
+    "lessons": 9,
+    "ready": "ready",
+    "state": "ME",
+    "visible": true
+  },
+  {
+    "course": "mi-salesperson-prelicensure-40-v1",
+    "lang": "es",
+    "lessons": 10,
+    "ready": "ready",
+    "state": "MI",
+    "visible": true
+  },
+  {
+    "course": "mo-salesperson-preexam-48",
+    "lang": "es",
+    "lessons": 9,
+    "ready": "ready",
+    "state": "MO",
+    "visible": true
+  },
+  {
+    "course": "mo-real-estate-practice-24",
+    "lang": "es",
+    "lessons": 6,
+    "ready": "ready",
+    "state": "MO",
+    "visible": true
+  },
+  {
+    "course": "nc-broker-prelicensing-75",
+    "lang": "es",
+    "lessons": 16,
+    "ready": "ready",
+    "state": "NC",
+    "visible": true
+  },
+  {
+    "course": "ok-basic-prelicense-90",
+    "lang": "es",
+    "lessons": 16,
+    "ready": "ready",
+    "state": "OK",
+    "visible": true
+  },
+  {
+    "course": "pa-real-estate-fundamentals-30",
+    "lang": "es",
+    "lessons": 6,
+    "ready": "ready",
+    "state": "PA",
+    "visible": true
+  },
+  {
+    "course": "pa-real-estate-practice-45",
+    "lang": "es",
+    "lessons": 9,
+    "ready": "ready",
+    "state": "PA",
+    "visible": true
+  },
+  {
+    "course": "tx-principles-real-estate-i-30",
+    "lang": "es",
+    "lessons": 9,
+    "ready": "ready",
+    "state": "TX",
+    "visible": true
+  },
+  {
+    "course": "tx-principles-real-estate-ii-30",
+    "lang": "es",
+    "lessons": 9,
+    "ready": "ready",
+    "state": "TX",
+    "visible": true
+  },
+  {
+    "course": "tx-law-of-agency-30",
+    "lang": "es",
+    "lessons": 12,
+    "ready": "ready",
+    "state": "TX",
+    "visible": true
+  },
+  {
+    "course": "tx-law-of-contracts-30",
+    "lang": "es",
+    "lessons": 11,
+    "ready": "ready",
+    "state": "TX",
+    "visible": true
+  },
+  {
+    "course": "tx-promulgated-contract-forms-30",
+    "lang": "es",
+    "lessons": 9,
+    "ready": "ready",
+    "state": "TX",
+    "visible": true
+  },
+  {
+    "course": "tx-real-estate-finance-30",
+    "lang": "es",
+    "lessons": 10,
+    "ready": "ready",
+    "state": "TX",
+    "visible": true
+  },
+  {
+    "course": "va-principles-practices-v1",
+    "lang": "es",
+    "lessons": 15,
+    "ready": "ready",
+    "state": "VA",
+    "visible": true
+  },
+  {
+    "course": "wa-real-estate-fundamentals-60",
+    "lang": "es",
+    "lessons": 12,
+    "ready": "ready",
+    "state": "WA",
+    "visible": true
+  },
+  {
+    "course": "wa-real-estate-practices-30",
+    "lang": "es",
+    "lessons": 6,
+    "ready": "ready",
+    "state": "WA",
+    "visible": true
+  },
+  {
+    "course": "wi-salesperson",
+    "lang": "es",
+    "lessons": 13,
+    "ready": "ready",
+    "state": "WI",
+    "visible": true
+  }
+]
