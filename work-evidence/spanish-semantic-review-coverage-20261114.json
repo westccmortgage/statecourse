@@ -1,0 +1,308 @@
+{
+  "baseline_commit": "574f467ebbc01d74943c91c6334b098c4da5965d",
+  "method": "Targeted bilingual review of obligations, negation/omission candidates, survey terminology and units. Candidate scanning covers all courses; it is not exhaustive semantic review. Wrong answer choices retain their original truth value. No human certification.",
+  "courses": [
+    {
+      "course_id": "ak-salesperson-prelicense-40-v1",
+      "source_revision": "d484d3ed319a818e",
+      "total_source_strings": 3975,
+      "changed_source_strings": 32,
+      "full_semantic_review": "OPEN",
+      "human_linguistic_review": "OPEN",
+      "human_sme_review": "OPEN",
+      "learner_duration_validation": "OPEN"
+    },
+    {
+      "course_id": "az-contract-writing-6",
+      "source_revision": "2c5e6e7ed3e44ede",
+      "total_source_strings": 684,
+      "changed_source_strings": 1,
+      "full_semantic_review": "OPEN",
+      "human_linguistic_review": "OPEN",
+      "human_sme_review": "OPEN",
+      "learner_duration_validation": "OPEN"
+    },
+    {
+      "course_id": "az-salesperson-prelicense-90",
+      "source_revision": "567b0981a53b7ab9",
+      "total_source_strings": 4202,
+      "changed_source_strings": 20,
+      "full_semantic_review": "OPEN",
+      "human_linguistic_review": "OPEN",
+      "human_sme_review": "OPEN",
+      "learner_duration_validation": "OPEN"
+    },
+    {
+      "course_id": "ca-mortgage-loan-brokering-lending-45",
+      "source_revision": "927e670475acafd4",
+      "total_source_strings": 11453,
+      "changed_source_strings": 16,
+      "full_semantic_review": "OPEN",
+      "human_linguistic_review": "OPEN",
+      "human_sme_review": "OPEN",
+      "learner_duration_validation": "OPEN"
+    },
+    {
+      "course_id": "ca-real-estate-practice-45",
+      "source_revision": "530a1506f9c5305b",
+      "total_source_strings": 10266,
+      "changed_source_strings": 10,
+      "full_semantic_review": "OPEN",
+      "human_linguistic_review": "OPEN",
+      "human_sme_review": "OPEN",
+      "learner_duration_validation": "OPEN"
+    },
+    {
+      "course_id": "ca-real-estate-principles-45",
+      "source_revision": "1c00ba9b1093c117",
+      "total_source_strings": 14275,
+      "changed_source_strings": 104,
+      "full_semantic_review": "OPEN",
+      "human_linguistic_review": "OPEN",
+      "human_sme_review": "OPEN",
+      "learner_duration_validation": "OPEN"
+    },
+    {
+      "course_id": "co-contracts-regulations-48",
+      "source_revision": "ef1c759c974e6ef9",
+      "total_source_strings": 2546,
+      "changed_source_strings": 17,
+      "full_semantic_review": "OPEN",
+      "human_linguistic_review": "OPEN",
+      "human_sme_review": "OPEN",
+      "learner_duration_validation": "OPEN"
+    },
+    {
+      "course_id": "co-current-legal-issues-8",
+      "source_revision": "c68aaf657befdb6d",
+      "total_source_strings": 1149,
+      "changed_source_strings": 2,
+      "full_semantic_review": "OPEN",
+      "human_linguistic_review": "OPEN",
+      "human_sme_review": "OPEN",
+      "learner_duration_validation": "OPEN"
+    },
+    {
+      "course_id": "co-practical-applications-32",
+      "source_revision": "096303347a207ba5",
+      "total_source_strings": 3100,
+      "changed_source_strings": 9,
+      "full_semantic_review": "OPEN",
+      "human_linguistic_review": "OPEN",
+      "human_sme_review": "OPEN",
+      "learner_duration_validation": "OPEN"
+    },
+    {
+      "course_id": "co-real-estate-closings-24",
+      "source_revision": "25bb100805ce67f9",
+      "total_source_strings": 1749,
+      "changed_source_strings": 6,
+      "full_semantic_review": "OPEN",
+      "human_linguistic_review": "OPEN",
+      "human_sme_review": "OPEN",
+      "learner_duration_validation": "OPEN"
+    },
+    {
+      "course_id": "co-real-estate-law-practice-48",
+      "source_revision": "d7def473b0265e5a",
+      "total_source_strings": 2415,
+      "changed_source_strings": 10,
+      "full_semantic_review": "OPEN",
+      "human_linguistic_review": "OPEN",
+      "human_sme_review": "OPEN",
+      "learner_duration_validation": "OPEN"
+    },
+    {
+      "course_id": "co-trust-accounts-recordkeeping-8",
+      "source_revision": "60feb4255cec318e",
+      "total_source_strings": 1545,
+      "changed_source_strings": 1,
+      "full_semantic_review": "OPEN",
+      "human_linguistic_review": "OPEN",
+      "human_sme_review": "OPEN",
+      "learner_duration_validation": "OPEN"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "source_revision": "3feba0be832584fb",
+      "total_source_strings": 4877,
+      "changed_source_strings": 30,
+      "full_semantic_review": "OPEN",
+      "human_linguistic_review": "OPEN",
+      "human_sme_review": "OPEN",
+      "learner_duration_validation": "OPEN"
+    },
+    {
+      "course_id": "mi-salesperson-prelicensure-40-v1",
+      "source_revision": "eaed9d6a2ed5fbcb",
+      "total_source_strings": 3123,
+      "changed_source_strings": 26,
+      "full_semantic_review": "OPEN",
+      "human_linguistic_review": "OPEN",
+      "human_sme_review": "OPEN",
+      "learner_duration_validation": "OPEN"
+    },
+    {
+      "course_id": "mo-real-estate-practice-24",
+      "source_revision": "b38ce594bc157d61",
+      "total_source_strings": 2000,
+      "changed_source_strings": 10,
+      "full_semantic_review": "OPEN",
+      "human_linguistic_review": "OPEN",
+      "human_sme_review": "OPEN",
+      "learner_duration_validation": "OPEN"
+    },
+    {
+      "course_id": "mo-salesperson-preexam-48",
+      "source_revision": "11cf53fa61c66133",
+      "total_source_strings": 3177,
+      "changed_source_strings": 30,
+      "full_semantic_review": "OPEN",
+      "human_linguistic_review": "OPEN",
+      "human_sme_review": "OPEN",
+      "learner_duration_validation": "OPEN"
+    },
+    {
+      "course_id": "nc-broker-prelicensing-75",
+      "source_revision": "6e5bcc75f704b51f",
+      "total_source_strings": 7628,
+      "changed_source_strings": 41,
+      "full_semantic_review": "OPEN",
+      "human_linguistic_review": "OPEN",
+      "human_sme_review": "OPEN",
+      "learner_duration_validation": "OPEN"
+    },
+    {
+      "course_id": "ok-basic-prelicense-90",
+      "source_revision": "cb95a3a477d3d0c8",
+      "total_source_strings": 5791,
+      "changed_source_strings": 49,
+      "full_semantic_review": "OPEN",
+      "human_linguistic_review": "OPEN",
+      "human_sme_review": "OPEN",
+      "learner_duration_validation": "OPEN"
+    },
+    {
+      "course_id": "pa-real-estate-fundamentals-30",
+      "source_revision": "d1b21aaa0f00119e",
+      "total_source_strings": 1936,
+      "changed_source_strings": 11,
+      "full_semantic_review": "OPEN",
+      "human_linguistic_review": "OPEN",
+      "human_sme_review": "OPEN",
+      "learner_duration_validation": "OPEN"
+    },
+    {
+      "course_id": "pa-real-estate-practice-45",
+      "source_revision": "e9a65dc719a5ac36",
+      "total_source_strings": 2884,
+      "changed_source_strings": 8,
+      "full_semantic_review": "OPEN",
+      "human_linguistic_review": "OPEN",
+      "human_sme_review": "OPEN",
+      "learner_duration_validation": "OPEN"
+    },
+    {
+      "course_id": "tx-law-of-agency-30",
+      "source_revision": "a2ec6bdaf2fe8295",
+      "total_source_strings": 3912,
+      "changed_source_strings": 26,
+      "full_semantic_review": "OPEN",
+      "human_linguistic_review": "OPEN",
+      "human_sme_review": "OPEN",
+      "learner_duration_validation": "OPEN"
+    },
+    {
+      "course_id": "tx-law-of-contracts-30",
+      "source_revision": "a4e329f3a7ed3796",
+      "total_source_strings": 5387,
+      "changed_source_strings": 94,
+      "full_semantic_review": "OPEN",
+      "human_linguistic_review": "OPEN",
+      "human_sme_review": "OPEN",
+      "learner_duration_validation": "OPEN"
+    },
+    {
+      "course_id": "tx-principles-real-estate-i-30",
+      "source_revision": "8df82f649a1ae625",
+      "total_source_strings": 3021,
+      "changed_source_strings": 57,
+      "full_semantic_review": "OPEN",
+      "human_linguistic_review": "OPEN",
+      "human_sme_review": "OPEN",
+      "learner_duration_validation": "OPEN"
+    },
+    {
+      "course_id": "tx-principles-real-estate-ii-30",
+      "source_revision": "514d6badcab5b0f4",
+      "total_source_strings": 4196,
+      "changed_source_strings": 27,
+      "full_semantic_review": "OPEN",
+      "human_linguistic_review": "OPEN",
+      "human_sme_review": "OPEN",
+      "learner_duration_validation": "OPEN"
+    },
+    {
+      "course_id": "tx-promulgated-contract-forms-30",
+      "source_revision": "ba85b3aa2d7e7968",
+      "total_source_strings": 1822,
+      "changed_source_strings": 66,
+      "full_semantic_review": "OPEN",
+      "human_linguistic_review": "OPEN",
+      "human_sme_review": "OPEN",
+      "learner_duration_validation": "OPEN"
+    },
+    {
+      "course_id": "tx-real-estate-finance-30",
+      "source_revision": "0859259fff966aee",
+      "total_source_strings": 1844,
+      "changed_source_strings": 12,
+      "full_semantic_review": "OPEN",
+      "human_linguistic_review": "OPEN",
+      "human_sme_review": "OPEN",
+      "learner_duration_validation": "OPEN"
+    },
+    {
+      "course_id": "va-principles-practices-v1",
+      "source_revision": "a428b27dc101faeb",
+      "total_source_strings": 6570,
+      "changed_source_strings": 39,
+      "full_semantic_review": "OPEN",
+      "human_linguistic_review": "OPEN",
+      "human_sme_review": "OPEN",
+      "learner_duration_validation": "OPEN"
+    },
+    {
+      "course_id": "wa-real-estate-fundamentals-60",
+      "source_revision": "a0c5160b05612d29",
+      "total_source_strings": 3443,
+      "changed_source_strings": 23,
+      "full_semantic_review": "OPEN",
+      "human_linguistic_review": "OPEN",
+      "human_sme_review": "OPEN",
+      "learner_duration_validation": "OPEN"
+    },
+    {
+      "course_id": "wa-real-estate-practices-30",
+      "source_revision": "16a48fd27b1334d1",
+      "total_source_strings": 1974,
+      "changed_source_strings": 10,
+      "full_semantic_review": "OPEN",
+      "human_linguistic_review": "OPEN",
+      "human_sme_review": "OPEN",
+      "learner_duration_validation": "OPEN"
+    },
+    {
+      "course_id": "wi-salesperson",
+      "source_revision": "14d95c09f3f430fc",
+      "total_source_strings": 6199,
+      "changed_source_strings": 45,
+      "full_semantic_review": "OPEN",
+      "human_linguistic_review": "OPEN",
+      "human_sme_review": "OPEN",
+      "learner_duration_validation": "OPEN"
+    }
+  ],
+  "unique_corrected_sources": 752,
+  "corrected_course_entries": 832
+}
