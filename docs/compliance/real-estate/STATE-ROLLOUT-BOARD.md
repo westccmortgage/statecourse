@@ -2,6 +2,10 @@
 
 # Real Estate State Rollout Board
 
+## Spanish editorial correction pass — November 14, 2026: HOLD remains
+
+1,100 unique public strings received scoped editorial corrections; all 30 companions build and 51 focused Node tests plus 3 Python tests pass. The original queue is resolved apart from two documented false positives, but expanded inspection identifies 2,641 contextual candidates and confirmed deed/conveyance meaning errors. Neither scan is exhaustive. Full bilingual and state-SME review, learner validation and production acceptance remain OPEN. No deployment or external status change. [Correction evidence and remaining blockers](../../audits/REAL-ESTATE-SPANISH-EDITORIAL-CORRECTIONS-2026-11-14.md).
+
 ## Spanish publication review — November 14, 2026: HOLD
 
 Publication is owner-authorized but withheld for confirmed semantic translation errors. Draft integrated locally onto current production main d3970e6; 19 new Texas Finance strings translated and 23 selected editorial corrections applied. Build, 51 focused Node tests and 3 Python tests pass. Corpus scan identifies 1,098 contextual review candidates; samples across all 14 states and Chrome Texas casework inspection do not support linguistic release readiness. Full bilingual review, state SME review, learner validation and live Spanish acceptance remain OPEN. Production remains unchanged; no new approval, enrollment, payment, certificate or credit status. [Detailed review](../../audits/REAL-ESTATE-SPANISH-PUBLICATION-REVIEW-2026-11-14.md).

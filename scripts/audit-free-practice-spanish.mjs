@@ -7,6 +7,14 @@ import { sha } from './free-practice-translation-source.mjs';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const dir=path.join(root,'locales/es/free-practice');
 const rules=[
+ ['deed-as-fact-or-action', /\bdeed\b/i, /\bhecho\b|\bacci[oó]n\b/i],
+ ['trust-as-confidence', /\btrust\b/i, /cuenta de confianza|libro de confianza/i],
+ ['conveyance-as-transport', /convey/i, /transport/i],
+ ['executory-terminology', /executory/i, /ejecutable|ejecuto|ejecutori/i],
+ ['email-verb-or-noun-review', /\bemails\b/i, /correos electr[oó]nicos/i],
+ ['listing-terminology', /\blisting\b/i, /\blista\b|cotizaci/i],
+ ['severance-as-dismissal', /severance/i, /despid/i],
+ ['consideration-terminology', /consideration/i, /consideraci[oó]n/i],
  ['earnest-money-literal', /\bearnest money\b/i, /dinero serio|earnest dinero|dinero en efectivo/i],
  ['principal-as-director', /\bprincipals?\b/i, /\bdirector(?:es)?\b/i],
  ['parcel-as-package', /\bparcels?\b/i, /\bpaquetes?\b/i],
