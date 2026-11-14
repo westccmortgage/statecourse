@@ -1,0 +1,114 @@
+[
+  {
+    "course": "ak-salesperson-prelicense-40-v1",
+    "lang": "es",
+    "lessons": 8,
+    "ready": "ready",
+    "state": "AK",
+    "visible": true
+  },
+  {
+    "course": "az-salesperson-prelicense-90",
+    "lang": "es",
+    "lessons": 13,
+    "ready": "ready",
+    "state": "AZ",
+    "visible": true
+  },
+  {
+    "course": "ca-real-estate-principles-45",
+    "lang": "es",
+    "lessons": 15,
+    "ready": "ready",
+    "state": "CA",
+    "visible": true
+  },
+  {
+    "course": "co-real-estate-law-practice-48",
+    "lang": "es",
+    "lessons": 5,
+    "ready": "ready",
+    "state": "CO",
+    "visible": true
+  },
+  {
+    "course": "me-sales-agent-v1",
+    "lang": "es",
+    "lessons": 9,
+    "ready": "ready",
+    "state": "ME",
+    "visible": true
+  },
+  {
+    "course": "mi-salesperson-prelicensure-40-v1",
+    "lang": "es",
+    "lessons": 10,
+    "ready": "ready",
+    "state": "MI",
+    "visible": true
+  },
+  {
+    "course": "mo-salesperson-preexam-48",
+    "lang": "es",
+    "lessons": 9,
+    "ready": "ready",
+    "state": "MO",
+    "visible": true
+  },
+  {
+    "course": "nc-broker-prelicensing-75",
+    "lang": "es",
+    "lessons": 16,
+    "ready": "ready",
+    "state": "NC",
+    "visible": true
+  },
+  {
+    "course": "ok-basic-prelicense-90",
+    "lang": "es",
+    "lessons": 16,
+    "ready": "ready",
+    "state": "OK",
+    "visible": true
+  },
+  {
+    "course": "pa-real-estate-fundamentals-30",
+    "lang": "es",
+    "lessons": 6,
+    "ready": "ready",
+    "state": "PA",
+    "visible": true
+  },
+  {
+    "course": "tx-principles-real-estate-i-30",
+    "lang": "es",
+    "lessons": 9,
+    "ready": "ready",
+    "state": "TX",
+    "visible": true
+  },
+  {
+    "course": "va-principles-practices-v1",
+    "lang": "es",
+    "lessons": 15,
+    "ready": "ready",
+    "state": "VA",
+    "visible": true
+  },
+  {
+    "course": "wa-real-estate-fundamentals-60",
+    "lang": "es",
+    "lessons": 12,
+    "ready": "ready",
+    "state": "WA",
+    "visible": true
+  },
+  {
+    "course": "wi-salesperson",
+    "lang": "es",
+    "lessons": 13,
+    "ready": "ready",
+    "state": "WI",
+    "visible": true
+  }
+]

@@ -1,0 +1,233 @@
+{
+  "origin": "https://statecourse.com/",
+  "states": [
+    "AK",
+    "AZ",
+    "CA",
+    "CO",
+    "ME",
+    "MI",
+    "MO",
+    "NC",
+    "OK",
+    "PA",
+    "TX",
+    "VA",
+    "WA",
+    "WI"
+  ],
+  "courses": [
+    {
+      "course": "ak-salesperson-prelicense-40-v1",
+      "state": "AK",
+      "status": 200,
+      "sha256": "b9bbc24082a2ace6a8bf2a57c6bf6de7f983991e6ebeb48ba055bb1e0bf3bbb2",
+      "strings": 3975
+    },
+    {
+      "course": "az-salesperson-prelicense-90",
+      "state": "AZ",
+      "status": 200,
+      "sha256": "ecea27796a75c73dcc457979b8f975f3c8c17f23dcf4ca701e8e4269dbe20082",
+      "strings": 4202
+    },
+    {
+      "course": "az-contract-writing-6",
+      "state": "AZ",
+      "status": 200,
+      "sha256": "7289ff90002aeb73d00ac5b4dc8fa34ea99768dd830e1ff7926c3eca3db90823",
+      "strings": 684
+    },
+    {
+      "course": "ca-real-estate-principles-45",
+      "state": "CA",
+      "status": 200,
+      "sha256": "111adaf451a0e0ec99999924845aee7d1779915a47fc8c212126c82f5daac4ee",
+      "strings": 14275
+    },
+    {
+      "course": "ca-real-estate-practice-45",
+      "state": "CA",
+      "status": 200,
+      "sha256": "a78b4a05218d110dae73e70ca53956f8ebd9852ddf6e9286abc50585619cd7e6",
+      "strings": 10266
+    },
+    {
+      "course": "ca-mortgage-loan-brokering-lending-45",
+      "state": "CA",
+      "status": 200,
+      "sha256": "c44e4e40e85bb2cadb607d2fd54e8758b4dc693b870e4f50af6761d753e0da8b",
+      "strings": 11453
+    },
+    {
+      "course": "co-real-estate-law-practice-48",
+      "state": "CO",
+      "status": 200,
+      "sha256": "6f3ca38d5a4dab059d02fae98065622c2044c08382ee87a06ceab12b1fa4b3a3",
+      "strings": 2415
+    },
+    {
+      "course": "co-contracts-regulations-48",
+      "state": "CO",
+      "status": 200,
+      "sha256": "e48154c79fbe1971bdbb2147644c0da6bdf681b976f6198059420c0c6fb3a385",
+      "strings": 2546
+    },
+    {
+      "course": "co-trust-accounts-recordkeeping-8",
+      "state": "CO",
+      "status": 200,
+      "sha256": "e62e48b089a785c73628e39598156f6645dffc9a6435f0d4f5657e6ec1d70b1a",
+      "strings": 1545
+    },
+    {
+      "course": "co-current-legal-issues-8",
+      "state": "CO",
+      "status": 200,
+      "sha256": "e1e4fe16b5027aa3f4849427b1258501d0d4a9d157a40cb4bfcca17181db87f0",
+      "strings": 1149
+    },
+    {
+      "course": "co-real-estate-closings-24",
+      "state": "CO",
+      "status": 200,
+      "sha256": "b0374c46cddfddbd032e7e9ef028a5a525355465e8310faf96fdc09ce13d6794",
+      "strings": 1749
+    },
+    {
+      "course": "co-practical-applications-32",
+      "state": "CO",
+      "status": 200,
+      "sha256": "febc0e67f0f086a45aed8d76709c51ab30949d9163618d88b50703649a28872f",
+      "strings": 3100
+    },
+    {
+      "course": "me-sales-agent-v1",
+      "state": "ME",
+      "status": 200,
+      "sha256": "d773ba08bd432736c21fcca3710a5014b2104f0963259624e23274aa102b48e1",
+      "strings": 4877
+    },
+    {
+      "course": "mi-salesperson-prelicensure-40-v1",
+      "state": "MI",
+      "status": 200,
+      "sha256": "257fd5a9e48208ffb44d60c30a360be1ca1571f7a47376521fc47dcc6dd4afd5",
+      "strings": 3123
+    },
+    {
+      "course": "mo-salesperson-preexam-48",
+      "state": "MO",
+      "status": 200,
+      "sha256": "e5ba7305f5f0a2bc4eb72b81c34c982861b407fe0272a2b0948633583e13007a",
+      "strings": 3177
+    },
+    {
+      "course": "mo-real-estate-practice-24",
+      "state": "MO",
+      "status": 200,
+      "sha256": "9ec15ad93f3bd8d36be0f7e7ec8f8674495a3a5f59f0ff6b12616a5a3eb79e20",
+      "strings": 2000
+    },
+    {
+      "course": "nc-broker-prelicensing-75",
+      "state": "NC",
+      "status": 200,
+      "sha256": "225b182921fb5c2683fc24dd33dcc28c6a4a502f9291e8b2e68ad82197a8f47b",
+      "strings": 7628
+    },
+    {
+      "course": "ok-basic-prelicense-90",
+      "state": "OK",
+      "status": 200,
+      "sha256": "2e33cd9e4fb4e93c3f1fe7f779b1315103a0d887457ab7d44c5bfa5bbca28348",
+      "strings": 5791
+    },
+    {
+      "course": "pa-real-estate-fundamentals-30",
+      "state": "PA",
+      "status": 200,
+      "sha256": "92bc3a37e8dc657b5aff753ce4c175bc1438479997edfc1eb69aa11f3891cb6b",
+      "strings": 1936
+    },
+    {
+      "course": "pa-real-estate-practice-45",
+      "state": "PA",
+      "status": 200,
+      "sha256": "35f89dd7828a6642247f4a1bcf5bb8b48e588fd51816ef1de96f2d814440791b",
+      "strings": 2884
+    },
+    {
+      "course": "tx-principles-real-estate-i-30",
+      "state": "TX",
+      "status": 200,
+      "sha256": "53f05c10aa142db2fa68c2a9b0285626dec33711bf4a0789fdcfa50e23e0b693",
+      "strings": 3021
+    },
+    {
+      "course": "tx-principles-real-estate-ii-30",
+      "state": "TX",
+      "status": 200,
+      "sha256": "6facf6fbb97a2878f35c18523ef437f373d4f7347a703ec14b5ec177f4d467ee",
+      "strings": 4196
+    },
+    {
+      "course": "tx-law-of-agency-30",
+      "state": "TX",
+      "status": 200,
+      "sha256": "af89028c47b1534c8253b198d799e3c05558f8333ee4204115511a2d0a31eba8",
+      "strings": 3912
+    },
+    {
+      "course": "va-principles-practices-v1",
+      "state": "VA",
+      "status": 200,
+      "sha256": "7c0ce7f9a77945e73df5567105588a9efd58a3404df9ad461bd6e32a91eada12",
+      "strings": 6570
+    },
+    {
+      "course": "wa-real-estate-fundamentals-60",
+      "state": "WA",
+      "status": 200,
+      "sha256": "fbdbd820291097ccaef1c721c072cf4f2f345d1d435e6cdc2944a3e96504473d",
+      "strings": 3443
+    },
+    {
+      "course": "wa-real-estate-practices-30",
+      "state": "WA",
+      "status": 200,
+      "sha256": "ec9016f5d4194007908e1c5a0f5691e0a1033ab8edbfeb5c1db2df1378830d9b",
+      "strings": 1974
+    },
+    {
+      "course": "wi-salesperson",
+      "state": "WI",
+      "status": 200,
+      "sha256": "a8dc0c9a27a4580677b1afc54b821cc668d4bb9e1e477937c5725a16893f56e2",
+      "strings": 6199
+    },
+    {
+      "course": "tx-law-of-contracts-30",
+      "state": "TX",
+      "status": 200,
+      "sha256": "23b8f553a0841e69fa4f0f21aac2eceeb457192c598bc0f8694f0cb4cdc77183",
+      "strings": 5387
+    },
+    {
+      "course": "tx-promulgated-contract-forms-30",
+      "state": "TX",
+      "status": 200,
+      "sha256": "0865440182d6fc60a9c7f1f54246597aa5c04d1ab074c223917c8d7920c13a8f",
+      "strings": 1822
+    },
+    {
+      "course": "tx-real-estate-finance-30",
+      "state": "TX",
+      "status": 200,
+      "sha256": "01b0d6c654baa0e33f51964089c5ba32163e317996d3c2fd400844b4f1f1f929",
+      "strings": 1844
+    }
+  ],
+  "state_spanish_entry_links": 14,
+  "reviewed_translation_hashes_match": true
+}

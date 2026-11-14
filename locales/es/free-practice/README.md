@@ -1,6 +1,6 @@
 # Spanish Real Estate Free Practice — corrected public-practice draft
 
-**Current release:** owner-authorized, visibly labelled free-practice draft for all 14 states. See [release record](../../../docs/audits/REAL-ESTATE-SPANISH-RELEASE-2026-11-14.md). The HOLD notes below are retained historical snapshots, superseded for public draft publication only. Human linguistic/SME review and learner validation remain OPEN; not every sentence has been semantically certified.
+**Current release:** published and runtime-verified at https://statecourse.com/free-practice/?lang=es — owner-authorized, visibly labelled free-practice draft for all 14 states. See [release record](../../../docs/audits/REAL-ESTATE-SPANISH-RELEASE-2026-11-14.md). The HOLD notes below are retained historical snapshots, superseded for public draft publication only. Human linguistic/SME review and learner validation remain OPEN; not every sentence has been semantically certified.
 
 **Latest correction pass: publication still on HOLD.** 1,100 unique strings corrected; expanded review finds 2,641 contextual candidates and confirmed additional meaning errors. See [current correction report](../../../docs/audits/REAL-ESTATE-SPANISH-EDITORIAL-CORRECTIONS-2026-11-14.md). Historical counts below describe earlier snapshots.
 

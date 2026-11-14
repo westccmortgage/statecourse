@@ -32,3 +32,16 @@ Existing site only: `statecourse.com`, Netlify site `b514a8f8-782b-448c-8881-a91
 Recovery is a new reviewed forward commit restoring affected public-practice files from the baseline and rebuilding; no reset, force push or historic Netlify deploy restoration. Existing credentials and service settings are untouched.
 
 Live deploy and production browser acceptance will be recorded after publication. Until observed, they are not verified.
+
+## Observed production acceptance
+
+Published commit `f59db05b18d29c56f4a06573188f446815b8badc`, Netlify ready production deploy `6af8a233e74cf2fd82e07d88`, published at `2026-11-14T18:03:14.979Z`.
+
+- Public HTTPS GETs returned all 30 Spanish companions with SHA-256 identical to the reviewed local build. Catalog also matched, and all 14 state pages contained the state-specific Spanish entry link. Evidence: `work-evidence/spanish-production-http-20261114.json`.
+- Actual Chrome production UI opened Spanish practice in all 14 states; ready readers and expected lesson counts were observed. Evidence: `work-evidence/spanish-production-browser-states-20261114.json`.
+- Actual production Wisconsin public practice: selected answer survived Español → English → Español; Check answer returned `Correcto.`, the corrected explanation and 1/143 first-attempt progress. This writes only public practice browser-local state. No regulated student record, completion or credit was created.
+- The displayed optional AI coach retained its prior named-provider consent interface; no consent or AI submission was made and no paid generation was invoked.
+- Desktop viewport measured 1496 pixels with scroll width 1496, with no horizontal overflow. Screenshot: `work-evidence/spanish-production-practice-20261114.jpg`.
+- Public entry: https://statecourse.com/free-practice/?lang=es . The Spanish practice tab was left open in Chrome.
+
+Publication and the stated runtime checks are verified. Human bilingual/SME review, exhaustive sentence-level semantic correctness, every question end to end, mobile devices and real learner duration remain unverified/OPEN. This publication does not assert state approval, regulated enrollment, course completion, certificates or licensing credit.
