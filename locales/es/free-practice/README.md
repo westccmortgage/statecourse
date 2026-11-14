@@ -1,5 +1,7 @@
 # Spanish Real Estate Free Practice — local authoring draft
 
+**2026-11-14 publication review: HOLD.** The user has now authorized publication, superseding the historical authorization note below. The current draft is not ready for publication: confirmed semantic errors and 1,098 lexical review candidates remain. See [review](../../../docs/audits/REAL-ESTATE-SPANISH-PUBLICATION-REVIEW-2026-11-14.md). Current publication branch is `work/real-estate-es-publish-20261114`, based on production main `d3970e6`; it includes 19 new Texas Finance translations and 23 selected editorial corrections.
+
 Scope is the existing explicit public Real Estate practice catalog: **14 states, 30 courses, 284 lessons and 3,172 formative questions**, plus the existing Texas casework. This does not add states absent from that catalog, protected final examinations, enrollment, regulated hours, certificates or licensing credit.
 
 | State | Courses | Lessons | Questions |
