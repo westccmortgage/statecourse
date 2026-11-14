@@ -24,3 +24,15 @@ Existing site `statecourse.com`, Netlify `b514a8f8-782b-448c-8881-a914ee42c69b`.
 Recovery: a new forward commit restoring only affected locale/evidence files from the baseline, rebuild, then publish through the same path. No history rewriting or historical deploy restoration.
 
 Live acceptance is pending until the new deploy is ready and public hashes/rendering are observed. Every lesson/question end to end, all remaining meanings, human/SME review and mobile acceptance are **not verified**.
+
+## Observed production acceptance
+
+Content commit `c03892426e85349a4b121d39f515af2aa704932c`, ready production deploy `6af8e7f93f27637b14a59cfb`, published `2026-11-14T23:00:49.023Z`. Prior continuation commit `e94f5a4` also reached ready before the additional measurement corrections.
+
+- Public HTTPS catalog and all 30 Spanish companions match the reviewed local build byte-for-byte by SHA-256; all 14 state entry links are present. Evidence: `work-evidence/spanish-semantic-production-http-20261114.json`.
+- Actual Chrome production selection opened all 30 courses across all 14 states, observing Spanish, ready translation state, visible readers and expected lesson counts. Evidence: `work-evidence/spanish-semantic-production-browser-20261114.json`.
+- Actual live Alaska objectives and all eight lesson titles display the corrected translation. Screenshot: `work-evidence/spanish-semantic-production-20261114.png`.
+- Baseline comparison verifies unchanged source strings/order, revisions, source evidence and human review flags in all 30 authored companions.
+- No AI prompt was submitted. The pre-existing optional coach displayed a stale Wisconsin concept label after switching to Alaska; coach context correctness is not verified by this translation release and no paid call was made to test it.
+
+**Remaining:** full sentence-by-sentence bilingual review of every lesson/question/explanation, including remaining grammar and semantic errors; qualified human/SME acceptance; learner duration and mobile acceptance. Functional loading and targeted corrections are verified, not exhaustive semantic accuracy. No complete-course semantic signoff is claimed.

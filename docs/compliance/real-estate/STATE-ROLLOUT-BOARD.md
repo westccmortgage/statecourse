@@ -4,7 +4,7 @@
 
 ## Spanish semantic correction continuation — November 14, 2026
 
-Owner-authorized correction release: 807 distinct translations / 888 entries across all 30 courses. Corrects obligations, negations, omissions, surveying and units; preserves public draft/non-credit boundaries. Build, 51 focused tests and 3 sentence tests passed; actual Chrome local Alaska rendering checked. **Full sentence-by-sentence semantic review remains OPEN for every course**, as do human linguistic/SME review and learner validation. Publication acceptance pending. [Scope, coverage ledger and recovery](../../audits/REAL-ESTATE-SPANISH-SEMANTIC-REVIEW-2026-11-14.md).
+Owner-authorized correction release: 807 distinct translations / 888 entries across all 30 courses. Corrects obligations, negations, omissions, surveying and units; preserves public draft/non-credit boundaries. Build, 51 focused tests and 3 sentence tests passed; actual Chrome local Alaska rendering checked. **Full sentence-by-sentence semantic review remains OPEN for every course**, as do human linguistic/SME review and learner validation. Publication VERIFIED for commit c038924, ready deploy 6af8e7f93f27637b14a59cfb at 2026-11-14T23:00:49.023Z: HTTPS hashes matched 30 companions and Chrome opened all 30 courses across 14 states. The full-review gates remain OPEN. [Scope, coverage ledger and recovery](../../audits/REAL-ESTATE-SPANISH-SEMANTIC-REVIEW-2026-11-14.md).
 
 ## Spanish public free-practice release — November 14, 2026
 
