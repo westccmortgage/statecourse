@@ -1,0 +1,245 @@
+{
+  "commit": "4a616ede7c848da953a601567f5615c7a959ef92",
+  "courses": [
+    {
+      "course": "ak-salesperson-prelicense-40-v1",
+      "lang": "es",
+      "lessons": 8,
+      "reader": 1464,
+      "state": "AK",
+      "translation": "ready"
+    },
+    {
+      "course": "az-salesperson-prelicense-90",
+      "lang": "es",
+      "lessons": 13,
+      "reader": 2736,
+      "state": "AZ",
+      "translation": "ready"
+    },
+    {
+      "course": "az-contract-writing-6",
+      "lang": "es",
+      "lessons": 2,
+      "reader": 3096,
+      "state": "AZ",
+      "translation": "ready"
+    },
+    {
+      "course": "ca-real-estate-principles-45",
+      "lang": "es",
+      "lessons": 15,
+      "reader": 685,
+      "state": "CA",
+      "translation": "ready"
+    },
+    {
+      "course": "ca-real-estate-practice-45",
+      "lang": "es",
+      "lessons": 15,
+      "reader": 665,
+      "state": "CA",
+      "translation": "ready"
+    },
+    {
+      "course": "ca-mortgage-loan-brokering-lending-45",
+      "lang": "es",
+      "lessons": 15,
+      "reader": 708,
+      "state": "CA",
+      "translation": "ready"
+    },
+    {
+      "course": "co-real-estate-law-practice-48",
+      "lang": "es",
+      "lessons": 5,
+      "reader": 2859,
+      "state": "CO",
+      "translation": "ready"
+    },
+    {
+      "course": "co-contracts-regulations-48",
+      "lang": "es",
+      "lessons": 5,
+      "reader": 2289,
+      "state": "CO",
+      "translation": "ready"
+    },
+    {
+      "course": "co-trust-accounts-recordkeeping-8",
+      "lang": "es",
+      "lessons": 4,
+      "reader": 2037,
+      "state": "CO",
+      "translation": "ready"
+    },
+    {
+      "course": "co-current-legal-issues-8",
+      "lang": "es",
+      "lessons": 3,
+      "reader": 3821,
+      "state": "CO",
+      "translation": "ready"
+    },
+    {
+      "course": "co-real-estate-closings-24",
+      "lang": "es",
+      "lessons": 5,
+      "reader": 2459,
+      "state": "CO",
+      "translation": "ready"
+    },
+    {
+      "course": "co-practical-applications-32",
+      "lang": "es",
+      "lessons": 7,
+      "reader": 3300,
+      "state": "CO",
+      "translation": "ready"
+    },
+    {
+      "course": "me-sales-agent-v1",
+      "lang": "es",
+      "lessons": 9,
+      "reader": 996,
+      "state": "ME",
+      "translation": "ready"
+    },
+    {
+      "course": "mi-salesperson-prelicensure-40-v1",
+      "lang": "es",
+      "lessons": 10,
+      "reader": 800,
+      "state": "MI",
+      "translation": "ready"
+    },
+    {
+      "course": "mo-salesperson-preexam-48",
+      "lang": "es",
+      "lessons": 9,
+      "reader": 1376,
+      "state": "MO",
+      "translation": "ready"
+    },
+    {
+      "course": "mo-real-estate-practice-24",
+      "lang": "es",
+      "lessons": 6,
+      "reader": 1225,
+      "state": "MO",
+      "translation": "ready"
+    },
+    {
+      "course": "nc-broker-prelicensing-75",
+      "lang": "es",
+      "lessons": 16,
+      "reader": 1729,
+      "state": "NC",
+      "translation": "ready"
+    },
+    {
+      "course": "ok-basic-prelicense-90",
+      "lang": "es",
+      "lessons": 16,
+      "reader": 1481,
+      "state": "OK",
+      "translation": "ready"
+    },
+    {
+      "course": "pa-real-estate-fundamentals-30",
+      "lang": "es",
+      "lessons": 6,
+      "reader": 2449,
+      "state": "PA",
+      "translation": "ready"
+    },
+    {
+      "course": "pa-real-estate-practice-45",
+      "lang": "es",
+      "lessons": 9,
+      "reader": 1243,
+      "state": "PA",
+      "translation": "ready"
+    },
+    {
+      "course": "tx-principles-real-estate-i-30",
+      "lang": "es",
+      "lessons": 9,
+      "reader": 1711,
+      "state": "TX",
+      "translation": "ready"
+    },
+    {
+      "course": "tx-principles-real-estate-ii-30",
+      "lang": "es",
+      "lessons": 9,
+      "reader": 1942,
+      "state": "TX",
+      "translation": "ready"
+    },
+    {
+      "course": "tx-law-of-agency-30",
+      "lang": "es",
+      "lessons": 12,
+      "reader": 3370,
+      "state": "TX",
+      "translation": "ready"
+    },
+    {
+      "course": "tx-law-of-contracts-30",
+      "lang": "es",
+      "lessons": 11,
+      "reader": 1670,
+      "state": "TX",
+      "translation": "ready"
+    },
+    {
+      "course": "tx-promulgated-contract-forms-30",
+      "lang": "es",
+      "lessons": 9,
+      "reader": 1493,
+      "state": "TX",
+      "translation": "ready"
+    },
+    {
+      "course": "tx-real-estate-finance-30",
+      "lang": "es",
+      "lessons": 10,
+      "reader": 998,
+      "state": "TX",
+      "translation": "ready"
+    },
+    {
+      "course": "va-principles-practices-v1",
+      "lang": "es",
+      "lessons": 15,
+      "reader": 951,
+      "state": "VA",
+      "translation": "ready"
+    },
+    {
+      "course": "wa-real-estate-fundamentals-60",
+      "lang": "es",
+      "lessons": 12,
+      "reader": 2923,
+      "state": "WA",
+      "translation": "ready"
+    },
+    {
+      "course": "wa-real-estate-practices-30",
+      "lang": "es",
+      "lessons": 6,
+      "reader": 1973,
+      "state": "WA",
+      "translation": "ready"
+    },
+    {
+      "course": "wi-salesperson",
+      "lang": "es",
+      "lessons": 13,
+      "reader": 1019,
+      "state": "WI",
+      "translation": "ready"
+    }
+  ]
+}

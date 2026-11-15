@@ -4,7 +4,7 @@
 
 ## Spanish bilingual review second checkpoint — November 14, 2026
 
-Cumulative3,165 corrected entries across24courses;2,041 question blocks actually compared plus the lesson coverage recorded in the audit. Build,51 focused tests,3 sentence tests and5 protected-assessment checks passed. Second-checkpoint production acceptance pending. Full30-course semantic, human linguistic/SME and learner-duration gates remain OPEN; free-practice/non-credit boundaries unchanged. [Exact coverage and source issues](../../audits/REAL-ESTATE-SPANISH-PARALLEL-REVIEW-2026-11-14.md).
+Cumulative3,165 corrected entries across24courses;2,041 question blocks actually compared plus the lesson coverage recorded in the audit. Build,51 focused tests,3 sentence tests and5 protected-assessment checks passed. Second-checkpoint production acceptance VERIFIED: commit4a616ed, ready deploy6af8f8f0af5d12856398a242; all30 live companion hashes and Chrome readers plus14state links passed. Full30-course semantic, human linguistic/SME and learner-duration gates remain OPEN; free-practice/non-credit boundaries unchanged. [Exact coverage and source issues](../../audits/REAL-ESTATE-SPANISH-PARALLEL-REVIEW-2026-11-14.md).
 
 ## Spanish parallel bilingual review checkpoint — November 14, 2026
 
