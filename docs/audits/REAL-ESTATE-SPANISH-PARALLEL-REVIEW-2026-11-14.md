@@ -21,6 +21,7 @@ Evidence: `work-evidence/spanish-full-review-{west,central,texas,root,root-me}.j
 
 ## Source issues still OPEN
 
+- Alaska module 06 section 6.1: English bank reconciliation subtracts deposits in transit and adds outstanding checks; bank-side reconciliation normally does the reverse. Source/SME correction OPEN.
 - Maine question 60: English option gives the correct $80,000 down payment, but says a $15,000 appraisal gap is added to $68,000 planned. The actual increase is $12,000; no Spanish-only numeric alteration was made.
 - TX Principles II T01Q1R: English calculator explanation pairs 194 with subtraction of .06; source arithmetic needs correction.
 - TX Agency LOA-T03U4-Q: English explanation appears to invert the quoted nondisclosure condition.
@@ -31,3 +32,7 @@ Evidence: `work-evidence/spanish-full-review-{west,central,texas,root,root-me}.j
 Existing production: statecourse.com, Netlify site `b514a8f8-782b-448c-8881-a914ee42c69b`; prior ready deploy `6af8e86b93c340525ddacc62` at baseline above. Publish through existing Git CD, with no settings, credentials, database, infrastructure, paid API, commerce or regulated enrollment changes. Recovery is a new forward commit restoring affected files from this baseline, rebuild and publish; no history rewrite or historical-deploy restoration.
 
 Live acceptance pending this checkpoint deployment. Full review continues after integration. Every lesson/question rendered end to end, exhaustive semantic accuracy, qualified SME acceptance, mobile and learner validation remain unverified.
+
+## Observed checkpoint production acceptance
+
+Commit `174c012091b2130928c702b79a51da975066a0b6`, Netlify deploy `6af8f5cfc6143a04fda0ed5c`, ready and published `2026-11-14T23:59:51.038Z`. Public HTTPS SHA-256 matched all 30 generated Spanish companions; 14 state Spanish entry links verified. Actual Chrome opened every course in Spanish with ready translation and visible reader; corrected WA scenario/choice observed on production. Evidence: `spanish-parallel-production-http-20261114.json`, `spanish-parallel-production-browser-20261114.json`, `spanish-parallel-production-20261114.png` in work-evidence. The optional AI coach still showed a stale Alaska concept on WA after course changes; no paid call or consent was submitted, and coach correctness remains unverified. Reviewers resumed further edits after the checkpoint; uncommitted corrections are not included in this acceptance.

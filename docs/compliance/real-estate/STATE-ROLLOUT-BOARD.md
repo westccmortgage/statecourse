@@ -4,7 +4,7 @@
 
 ## Spanish parallel bilingual review checkpoint — November 14, 2026
 
-1,454 additional course-entry corrections across 14 courses; 932 question blocks and 102 lesson sections actually compared. Full 30-course semantic signoff remains OPEN, together with human linguistic/SME and duration validation. Existing free-practice/non-credit boundaries retained. Build and 51 focused tests plus three sentence tests passed; corrected WA question rendered in local Chrome. Owner-authorized publication acceptance pending. [Coverage, source defects and recovery](../../audits/REAL-ESTATE-SPANISH-PARALLEL-REVIEW-2026-11-14.md).
+1,454 additional course-entry corrections across 14 courses; 932 question blocks and 102 lesson sections actually compared. Full 30-course semantic signoff remains OPEN, together with human linguistic/SME and duration validation. Existing free-practice/non-credit boundaries retained. Build and 51 focused tests plus three sentence tests passed; corrected WA question rendered in local Chrome. Publication VERIFIED for commit174c012 / ready deploy6af8f5cfc6143a04fda0ed5c: all30 live Spanish companion hashes matched and all30 courses opened in Chrome across14states. Further review continues; later working edits are not part of this published checkpoint. [Coverage, source defects and recovery](../../audits/REAL-ESTATE-SPANISH-PARALLEL-REVIEW-2026-11-14.md).
 
 ## Spanish semantic correction continuation — November 14, 2026
 
