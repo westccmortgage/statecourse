@@ -36,3 +36,20 @@ Live acceptance pending this checkpoint deployment. Full review continues after 
 ## Observed checkpoint production acceptance
 
 Commit `174c012091b2130928c702b79a51da975066a0b6`, Netlify deploy `6af8f5cfc6143a04fda0ed5c`, ready and published `2026-11-14T23:59:51.038Z`. Public HTTPS SHA-256 matched all 30 generated Spanish companions; 14 state Spanish entry links verified. Actual Chrome opened every course in Spanish with ready translation and visible reader; corrected WA scenario/choice observed on production. Evidence: `spanish-parallel-production-http-20261114.json`, `spanish-parallel-production-browser-20261114.json`, `spanish-parallel-production-20261114.png` in work-evidence. The optional AI coach still showed a stale Alaska concept on WA after course changes; no paid call or consent was submitted, and coach correctness remains unverified. Reviewers resumed further edits after the checkpoint; uncommitted corrections are not included in this acceptance.
+
+## Second checkpoint — continued full review
+
+Cumulative baseline remains `173e07f`: 3,165 changed course entries / 3,087 distinct English strings across 24 courses. This adds 1,711 net changed entries beyond the first checkpoint; it is not full-course completion. Actual question coverage is now 2,041 blocks with choices and explanations.
+
+- West: AK all 8 modules / 105 sections and 88 questions; AZ Contract both lessons / 16 sections and 22 questions; AZ90 modules01–10, module11 sections0–4, first110 questions. CA/MI and remaining AZ90 OPEN.
+- Central: all CO319, MO165, PA165 questions and OK first24 (673 total). Only CO Current Issues module01 section0 has been reviewed among lessons; remaining lessons and OK questions OPEN.
+- Texas: all708 question blocks across6 courses; Finance lessons0–5 and lesson6 sections0–7. Remaining Finance, other50 lessons and separate activities OPEN.
+- Root: WA Practices66, Maine99, Wisconsin143 and WA Fundamentals132 questions (440 total). WA Practices module01's12 sections remain the only root-owned lesson coverage. NC/VA and remaining lessons OPEN.
+
+Additional corrections restore missing negations, nonwaivable duties, title insurance vs policy, foreclosure/assumption terminology, survey units, estates and tenancy distinctions, accrued vs prepaid interest, and lost negative exponents in amortization. English source, answer keys, metadata and source keys/order remain unchanged for all30 companions. Evidence: `spanish-parallel-review-checkpoint-2-20261114.json` and cumulative reviewer ledgers, including `spanish-full-review-root-wi.json` and `spanish-full-review-root-waf.json`.
+
+Build passed, including5 protected-assessment tests;51 focused tests and3 sentence tests passed. All234 WA Fundamentals corrections passed exact numeric/reference checks; reviewers validated their own changes. Tests do not establish complete semantic accuracy. Publication and rendered acceptance of this second checkpoint are pending.
+
+Additional English-source issues remain OPEN: AZ90 Q89 nearest-dollar rounding and Q104 exam context; MO Practice Q37 appraiser/client relationship; MO Preexam Q34 blanket deadline trigger vs clause-specific timing; PA Fundamentals Q23 zoning inference and retained unverified regulatory claims; PA Practice Q1 explanation denies the written waiver explicitly stated in its prompt. Exact reviewer notes retained. No translation-only numeric or legal source correction was made.
+
+Human linguistic/SME, all30 final semantic signoffs and learner-duration validation remain OPEN. Recovery uses a forward commit restoring the affected files to the previous verified checkpoint, followed by rebuild and normal Git CD; no settings, credentials or infrastructure changes.

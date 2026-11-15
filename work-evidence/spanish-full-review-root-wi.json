@@ -1,0 +1,1125 @@
+{
+  "course_id": "wi-salesperson",
+  "full_semantic_review": "OPEN",
+  "reviewed_sections": [],
+  "corrections": [
+    {
+      "source": "A trade fixture — it remains the tenant's personal property and must be removed before the term ends, after which it generally passes to the landlord by accession.",
+      "before": "Un accesorio comercial — sigue siendo propiedad personal del inquilino y debe ser eliminado antes de que termine el plazo, después de lo cual generalmente pasa al propietario por la adhesión.",
+      "after": "Un elemento instalado para la actividad comercial (trade fixture): sigue siendo un bien mueble del inquilino y debe retirarse antes de que termine el plazo; después, normalmente pasa al arrendador por accesión.",
+      "source_sha256": "c278da31208747a6c3befc4a5e75cfdad5932f04ff9428f4c6ea9ec20a3d4f0a",
+      "target_sha256": "38b90ebca4cdad10f040c1336d6c14a57b2a6976cfe01d0c79d77b5b66fab41d"
+    },
+    {
+      "source": "Both run with the land and are not separately owned by a person. Wisconsin's public trust doctrine holds navigable waters in trust for the public, and the ordinary high water mark separates private riparian ownership from public rights — a determination for the DNR and a surveyor, not a licensee.",
+      "before": "Ambos corren con la tierra y no son propiedad separada de una persona. La doctrina de la confianza pública de Wisconsin sostiene aguas navegables en confianza para el público, y la marca de alta calidad ordinaria separa la propiedad privada de los derechos públicos – una determinación para el DNR y un topógrafo, no un licenciatario.",
+      "after": "Ambos derechos se transmiten con el terreno y no pertenecen por separado a una persona. La doctrina de dominio público fiduciario de Wisconsin protege las aguas navegables para el público. La marca ordinaria de aguas altas separa la propiedad ribereña privada de los derechos públicos; su determinación corresponde al DNR y a un agrimensor, no al agente inmobiliario.",
+      "source_sha256": "1c09083645ac4873bc2bbd004e70a76e4f0faa95f055b8b52401cd3752f824cd",
+      "target_sha256": "54818692344d2ed0da8be5fa371a90c94c067cb822f9504844acb0575e9ec826"
+    },
+    {
+      "source": "Immobility is why location dominates value and why a national statistic is a poor description of any particular market. Uniqueness is why specific performance is available on a land contract; durability is why the stock is overwhelmingly built in the past.",
+      "before": "La inmovilidad es la razón por la que la ubicación domina el valor y por qué una estadística nacional es una mala descripción de cualquier mercado en particular. La singularidad es la razón por la que el rendimiento específico está disponible en un contrato de tierra; la durabilidad es la razón por la que el stock se construye abrumadoramente en el pasado.",
+      "after": "La inmovilidad explica por qué la ubicación determina el valor y por qué una estadística nacional describe mal un mercado concreto. La singularidad permite pedir judicialmente el cumplimiento específico de un contrato inmobiliario; la durabilidad explica que la mayor parte del parque existente se haya construido en el pasado.",
+      "source_sha256": "fd701b081f7bae9636b0bc0bb91431e8ca3f3f079b078e1e579373ab1b5a83b6",
+      "target_sha256": "2d7eee35dca413ae0cd11b612a87a70c45fb9d4de82f3937b9205847aa4acf1f"
+    },
+    {
+      "source": "Land abutting a flowing watercourse such as a river or stream; littoral rights attach to land abutting a lake or other still water, and both are appurtenant.",
+      "before": "Tierras que rodean un curso de agua que fluye, como un río o arroyo; los derechos litorales se aplican a las tierras que sobrevuelan un lago u otras aguas tranquilas, y ambas son pertinentes.",
+      "after": "A terrenos colindantes con un curso de agua corriente, como un río o arroyo. Los derechos litorales corresponden a terrenos colindantes con lagos u otras aguas quietas; ambos están vinculados al terreno.",
+      "source_sha256": "fd107cbfe79c57417a75fedb2b8779045d63c9b39549c31c31e860b13f5bc748",
+      "target_sha256": "cfa8bf7423c8ee3576c4b17a3122254aff0186a03fd00ddb6df2ca0c04c9bedc"
+    },
+    {
+      "source": "Land is physical; real estate is land plus permanent attachments; real property adds the legal interests. What a licensee markets is a set of rights, and the bundle separates — a seller may convey the surface and reserve the timber.",
+      "before": "La tierra es física; los bienes raíces son la tierra más los apegos permanentes; los bienes inmuebles agregan los intereses legales. Lo que un licenciatario comercializa es un conjunto de derechos, y el paquete se separa: un vendedor puede transmitir la superficie y reservar la madera.",
+      "after": "Land es el terreno físico; real estate añade las incorporaciones permanentes; real property incluye además los derechos jurídicos. El profesional comercializa un conjunto de derechos que pueden separarse: el vendedor puede transmitir el terreno y reservarse los derechos sobre la madera.",
+      "source_sha256": "a58b69c19da89089fb12bcb78bcfca96361cb6f50b06e675f7b05d7adf824c41",
+      "target_sha256": "143ddae7a0a0b73902f5641f80ef033bd661d75345034418096a8dac4ac0f2ff"
+    },
+    {
+      "source": "Other common exclusions are earth movement, ordinary wear and neglect, mould in many forms, intentional acts and business use. Ordinance or law coverage — rebuilding to current code — is usually an endorsement rather than standard.",
+      "before": "Otras exclusiones comunes son el movimiento de la tierra, el desgaste y la negligencia ordinarios, el moho en muchas formas, los actos intencionales y el uso de negocios. La cobertura de la ordenanza o la ley —reconstruir el código actual— suele ser una aprobación más que una norma.",
+      "after": "Otras exclusiones habituales son movimientos de tierra, desgaste y falta de mantenimiento, muchos tipos de moho, actos intencionales y uso comercial. La cobertura de ordenanzas o leyes —para reconstruir conforme al código vigente— suele añadirse mediante endoso, en lugar de estar incluida de serie.",
+      "source_sha256": "493282fc865a34e7b7a13a749e4822d59142eb583da0363f2959f0d4a0fed0dd",
+      "target_sha256": "811cd750ec3908a355d23c0d65ea63c5b0c0b4fa47001830cbeb62b450eaa908"
+    },
+    {
+      "source": "Real property — real estate plus the interests that may be possessed, used, transferred, encumbered or excluded.",
+      "before": "Bienes inmuebles: bienes inmuebles más los intereses que pueden poseerse, utilizarse, transferirse, gravarse o excluirse.",
+      "after": "Real property: el inmueble físico (real estate) más los derechos de posesión, uso, transmisión, gravamen y exclusión.",
+      "source_sha256": "ea2f9c44180e5b3b6dba3d4b9a689d5b0c3f67e3bf96f4a56fa78af22527182e",
+      "target_sha256": "4b8a010e858f2b7b8a8717a9f7c27cfbf476b12f217d3bbb39c18f13aa448bbf"
+    },
+    {
+      "source": "The right to remove is real and it expires. Severance runs the other way: standing timber is real estate, cut timber is personal property.",
+      "before": "El derecho a quitar es real y expira. Severance corre en sentido contrario: la madera de pie es inmobiliaria, la madera cortada es propiedad personal.",
+      "after": "El derecho a retirarlo existe, pero caduca. La separación (severance) opera en sentido inverso: los árboles en pie son inmuebles; la madera cortada es un bien mueble.",
+      "source_sha256": "13cae1282db32ee31be25b6a19cb7d7b5a3ea44f5e2130536843d56f0c67dfef",
+      "target_sha256": "c85fc85744f8124524d5c0a27524111422977e7a99a477ae7b60485ba6d3530e"
+    },
+    {
+      "source": "The substance is a classification question: a manufactured home may be personal property, titled and taxed as such, or may have become real property on a permanent foundation. Which it is decides how it conveys, whether it can be mortgaged as real estate, and how it is taxed — and the current treatment must be read from the statutes as they now stand.",
+      "before": "La sustancia es una pregunta de clasificación: una casa fabricada puede ser propiedad personal, titulada y gravada como tal, o puede haberse convertido en propiedad real en una fundación permanente. Que es lo que decide cómo se transmite, si se puede hipotecar como bienes raíces, y cómo se grava — y el tratamiento actual debe leerse de los estatutos en su forma actual.",
+      "after": "Es una cuestión de clasificación: una vivienda prefabricada puede ser un bien mueble, con título e impuestos propios, o convertirse en inmueble al instalarse sobre cimientos permanentes. La clasificación determina cómo se transmite, si puede hipotecarse como inmueble y cómo tributa. Debe consultarse el tratamiento previsto en las leyes vigentes.",
+      "source_sha256": "34811c3a530598b55ded4e77e250d94a8760463d23b69784038498c53228c6c3",
+      "target_sha256": "5e29a7b237d9dd96064ed9428fea67d7de87753da08c6f95accc2520abc1993b"
+    },
+    {
+      "source": "Uniqueness.",
+      "before": "Uniqueness.",
+      "after": "Singularidad.",
+      "source_sha256": "897e7e8ee9a34a267e843a83b360395d61b09fd1f4e893166ed5b92d464a6e21",
+      "target_sha256": "2ffcd87797333008a0c2f14ddae59a4bc720466f2c08b5cca31c479b0c90c468"
+    },
+    {
+      "source": "Which peril is excluded from a standard homeowners policy?",
+      "before": "¿Qué peligro está excluido de una política estándar de propietarios de viviendas?",
+      "after": "¿Qué riesgo queda excluido de una póliza estándar de seguro de vivienda?",
+      "source_sha256": "e919fcae209560741359214719d327cedd09a5c55460ea8a878191ff7f519bce",
+      "target_sha256": "0a318981216910189f39f9b4505d42e32430f3dc28ca5ba4c3da4cbfab82c87d"
+    },
+    {
+      "source": "And the Disclosure to Customers under § 452.135(1)(a) must be provided before the firm negotiates on behalf of a party who is not the firm's client. The customer disclosure is a plain-language summary of the § 452.133(1) duties, and the statute prints its text.",
+      "before": "Y la Divulgación a los Clientes en virtud de § 452.135(1)(a) debe ser proporcionada antes de que la firma negocie en nombre de una parte que no sea el cliente de la firma. La divulgación del cliente es un resumen en lenguaje simple de las obligaciones § 452.133(1), y el estatuto imprime su texto.",
+      "after": "La «Disclosure to Customers» de § 452.135(1)(a), destinada a personas no representadas como clientes, debe entregarse antes de que la firma negocie en nombre de una parte que no sea su cliente. Resume en lenguaje sencillo las obligaciones de § 452.133(1), y la ley reproduce su texto.",
+      "source_sha256": "290656b621dc7fa865403af78cfe43dc063f1a310d962116e0d37792f6d721e8",
+      "target_sha256": "ac8b58f3f8c961c1521313737e92e87c8d30e6c897b51706abea42dbe57899c1"
+    },
+    {
+      "source": "Exclusive agency — the seller may sell themselves without owing a commission.",
+      "before": "Agencia exclusiva: el vendedor puede venderse sin adeudarse una comisión.",
+      "after": "Agencia exclusiva: el vendedor puede vender por su cuenta sin deber comisión.",
+      "source_sha256": "92ec03d7f98e3566367319d3a47b80d02ae9af971cc7be7b38a9bfe8e3e5c42a",
+      "target_sha256": "187eac78ad75413ef23a9e1b07758f07c33c084775f15cb7e21d4e1701bcf98d"
+    },
+    {
+      "source": "Exclusive right to sell — the firm is owed on a sale during the term regardless of who procures the buyer, including the seller.",
+      "before": "Derecho exclusivo de venta — la empresa se adeuda en una venta durante el plazo, independientemente de quién contrate al comprador, incluido el vendedor.",
+      "after": "Derecho exclusivo de venta: la firma tiene derecho a comisión si se vende durante el plazo, independientemente de quién consiga al comprador, incluido el propio vendedor.",
+      "source_sha256": "de987ae2818d54c54017bf0eaad998134e9af19e1b0660fc01c0f6f357f635b2",
+      "target_sha256": "cdeebbc25daa068b34f5d9390615edc03909624de513625ab71c4fe0ce9fd972"
+    },
+    {
+      "source": "Give the § 452.135(1)(a) Disclosure to Customers before negotiating on their behalf; disclose the flooding in writing to the buyer under § 452.133(1)(c); keep the buyer's $12,000 confidential under § 452.133(1)(d) even from your seller client; disclose the inspection interest in writing under § 452.133(3)(c); and present the offer objectively under § 452.133(1)(g).",
+      "before": "Dar el § 452.135(1)(a) Divulgación a los clientes antes de negociar en su nombre; revelar la inundación por escrito al comprador bajo § 452.133(1)(c); mantener el $12,000 confidencial del comprador bajo § 452.133(1)(d) incluso de su cliente vendedor; revelar el interés de inspección en escribir bajo § 452.133(3)(c); y presentar la oferta objetivamente bajo § 452.133(1)(g).",
+      "after": "Entregar la «Disclosure to Customers» de § 452.135(1)(a), destinada a personas no representadas como clientes, antes de negociar en su nombre; revelar por escrito la inundación al comprador conforme a § 452.133(1)(c); mantener confidencial su margen de $12,000 conforme a § 452.133(1)(d), incluso frente al vendedor cliente; revelar por escrito la participación en la empresa de inspección conforme a § 452.133(3)(c); y presentar objetivamente la oferta conforme a § 452.133(1)(g).",
+      "source_sha256": "78aaeb7fac97655f4e64aa9bfd60327474cb8172d77a8ac9e89d967db16eac62",
+      "target_sha256": "f4aeba74435c1d37916f4137a104214df3561de37c0503748529403aaaf909d5"
+    },
+    {
+      "source": "How many duties does § 452.133(1) owe to EVERY party, and name three of them.",
+      "before": "¿Cuántos deberes § 452.133(1) debe a cada partido, y nombrar tres de ellos.",
+      "after": "¿Cuántas obligaciones establece § 452.133(1) frente a CADA parte? Nombre tres.",
+      "source_sha256": "641b436815565dee229c1cd9983709fd250faa4ada6d325a2e8a217a16d4d668",
+      "target_sha256": "d0bb6c6980f835547da859a71aa6723ba3695d1c61b405b8f9e3b1c9133f4653"
+    },
+    {
+      "source": "Open listing — only the procuring broker is paid.",
+      "before": "Listado abierto — sólo se paga al agente adjudicador.",
+      "after": "Encargo abierto: solo cobra el bróker que consiga al comprador.",
+      "source_sha256": "b63a24d5256a539b4ad9fb0c67b5f0e0a9481bef9ee07ab654c3f2217d5be630",
+      "target_sha256": "2223f20e26bc7deed13d387bf8e51c4967cdac453bc4c7b7d77e3de5a8655a9d"
+    },
+    {
+      "source": "Take the term and the exclusion into the Board-approved listing form as a written provision the seller and their counsel settle, decline to draft novel legal language yourself, put the pricing evidence in front of her in writing while making the price her decision, and tell her the roof history is a condition she must report on the ch. 709 report and that a patch by a non-roofer does not erase it.",
+      "before": "Tome el término y la exclusión en el formulario de captación inmobiliaria aprobado por la Junta como una disposición escrita que el vendedor y su abogado establecen, se niegue a redactar un nuevo lenguaje legal usted mismo, ponga las pruebas de precios delante de ella por escrito mientras toma el precio de su decisión, y dígale que la historia del techo es una condición que debe informar sobre el capítulo 709 informe y que un parche de un no-techo no lo borra.",
+      "after": "Incorporar el plazo y la exclusión al formulario de encargo de venta aprobado por la Junta mediante una disposición que acuerden por escrito la vendedora y su abogado; negarse a redactar cláusulas jurídicas nuevas por cuenta propia; presentar por escrito los datos de precios y dejar que ella decida el precio; y explicarle que debe declarar el historial de filtraciones en el informe del cap. 709, pues el arreglo hecho por alguien que no es techador no elimina ese historial.",
+      "source_sha256": "b70afa6df460206b8386a01916f8a1c7f5b2c99e957f32d4b506eaea54a55ac6",
+      "target_sha256": "d2c2209cc817024b6850d806f93e247bbdd9d09ca3d94f1437735ac9b4203756"
+    },
+    {
+      "source": "The consent must be from ALL parties and must be prior. § 452.133(3)(a) similarly requires the prior written consent of all parties before accepting compensation from anyone other than the licensee's client or firm.",
+      "before": "El consentimiento debe ser de TODAS las partes y debe ser previo. § 452.133(3)(a) igualmente requiere el consentimiento previo por escrito de todas las partes antes de aceptar la indemnización de cualquier otra persona que no sea el cliente o empresa del licenciatario.",
+      "after": "El consentimiento debe ser previo y proceder de TODAS las partes. Asimismo, § 452.133(3)(a) exige el consentimiento previo por escrito de todas las partes para aceptar remuneración de alguien distinto del cliente o la firma del profesional.",
+      "source_sha256": "b9927cd9c1403344e18a08522db0f4f9ffe2c8bf10128bc268324ac345955a27",
+      "target_sha256": "09e1e70ac0d32578d00d587f12c36d271edd77cf62483fab73eb0a4b34d11412"
+    },
+    {
+      "source": "The material adverse facts duty is suspended.",
+      "before": "Se suspende el derecho material sobre los hechos adversos.",
+      "after": "Se suspende la obligación de revelar hechos adversos relevantes.",
+      "source_sha256": "6a15d82b6705444ef779bf69ec48c666652afb5d1944b48552a534c2287e5fec",
+      "target_sha256": "1cb670fd68b81adb313cd1df5a393ace1fdc96a33791bfe36e7b33c69a6b9b91"
+    },
+    {
+      "source": "The § 452.135 Disclosure to Customers says the same to the consumer: an agent can answer questions about brokerage services, but for legal advice, tax advice or a professional home inspection, contact an attorney, tax advisor or home inspector.",
+      "before": "La § 452.135 Divulgación a los clientes dice lo mismo al consumidor: un agente puede responder preguntas sobre los servicios de corretaje, pero para asesoramiento legal, asesoramiento fiscal o una inspección profesional del hogar, póngase en contacto con un abogado, asesor fiscal o inspector del hogar.",
+      "after": "La «Disclosure to Customers» de § 452.135 comunica lo mismo a las personas no representadas como clientes: el agente puede responder sobre servicios de corretaje, pero para asesoramiento jurídico, fiscal o una inspección profesional de vivienda deben consultar a un abogado, asesor fiscal o inspector de viviendas.",
+      "source_sha256": "07ebffcfcbe09967811fb0b4d3e05c2b00d01b5a46e87bac0697d125fa19b861",
+      "target_sha256": "85fb6fc89fb1eaf39580e3095495b9d94346f301f2fefc3c216ef9c99537d9df"
+    },
+    {
+      "source": "When must the § 452.135(2)(a) Disclosure to Clients be provided?",
+      "before": "¿Cuándo se debe proporcionar la § 452.135(2)(a) Divulgación a los Clientes?",
+      "after": "¿Cuándo debe entregarse la «Disclosure to Clients» de § 452.135(2)(a), destinada a clientes representados?",
+      "source_sha256": "f16f4334c2c060145b782615d6b657fcacacb6c4f07366ca9b64e73cf1722be3",
+      "target_sha256": "938a26359231ce8e12b9b6558f516fdd385f13fe6af3833bbf20b4c78d1a81fd"
+    },
+    {
+      "source": "Which listing type gives the firm a commission however the property sells during the term?",
+      "before": "¿Qué tipo de captación inmobiliaria le da a la firma una comisión sin embargo la propiedad vende durante el plazo?",
+      "after": "¿Qué tipo de encargo da derecho a la firma a cobrar comisión cualquiera que sea la forma en que se venda el inmueble durante su vigencia?",
+      "source_sha256": "5e836a00ddfe5586cb9fb4673bda1265c35649021f68c356342295a68b5bc2e7",
+      "target_sha256": "32cee30c584b942dce3f79ae3f5ef4c8433beabc7010a6a91b90f4149e0542a7"
+    },
+    {
+      "source": "§ 452.135(1)(b) requires a subagent to provide the Disclosure to Customers to any person who is not the principal firm's client and who receives brokerage services from the subagent within the scope of the subagency agreement.",
+      "before": "§ 452.135(1)(b) requiere que un subagente proporcione la Divulgación a los Clientes a cualquier persona que no sea el cliente de la empresa principal y que reciba servicios de corretaje del subagente dentro del alcance del acuerdo subagencial.",
+      "after": "§ 452.135(1)(b) exige que el subagente entregue la «Disclosure to Customers» a toda persona que no sea cliente de la firma principal y reciba servicios del subagente dentro del alcance del acuerdo de subagencia.",
+      "source_sha256": "3cdbc68f41af8c966789731a5992a638e60cfc282cbad6460e39b80a42038312",
+      "target_sha256": "5249360d0085caa2aba7bcdfc7447a8cfdccfdb91c90ff9182e5b5f5ec5fcd3c"
+    },
+    {
+      "source": "A fee simple determinable.",
+      "before": "Una tarifa simple determinable.",
+      "after": "Un dominio pleno determinable (fee simple determinable).",
+      "source_sha256": "611919f1c61d82ac572686200699546e06734d4db3acb874e22b4eeea2e00e23",
+      "target_sha256": "946628ccca548d3f845ebdf91fb94c01f443445d2be1f8f5e2eacb819ae2a5ba"
+    },
+    {
+      "source": "A leasehold in the unit and a fee in the common elements.",
+      "before": "Un arrendamiento en la unidad y una tarifa en los elementos comunes.",
+      "after": "Un derecho de arrendamiento sobre la unidad y pleno dominio sobre los elementos comunes.",
+      "source_sha256": "7bd4d37041588566d25d965643921998da048629c48dc4e78be9f6b2abea274c",
+      "target_sha256": "615eaeda60cfc5a5b118aaf8c05ac06c07d2316e7e495826578e43231092e434"
+    },
+    {
+      "source": "A remainder.",
+      "before": "Un resto.",
+      "after": "Un derecho futuro a favor de un tercero (remainder).",
+      "source_sha256": "289c0b86d99f8fc04916881a6aa7cf570e3e1dfc769d6800fd23ad49b1602a09",
+      "target_sha256": "51c14eea2fd288666fba1f66c316b7ba719057d33e30e76f906193abbcd478c7"
+    },
+    {
+      "source": "A reversionary estate.",
+      "before": "Una finca reversionaria.",
+      "after": "Un derecho de reversión.",
+      "source_sha256": "48239b1ed52cab7d519124cbeba57e4103abc8c8ecc10fcdc7ec79395f598fe9",
+      "target_sha256": "3704dc1a888b0ce659af4d5b7a5dd8c9e263c2df412f29e207f74b3228f1f56a"
+    },
+    {
+      "source": "An easement appurtenant — it has a dominant and a servient tenement and runs with the land, passing to each new owner.",
+      "before": "Un empleado de servidumbre — tiene un piso dominante y servil y corre con la tierra, pasando a cada nuevo propietario.",
+      "after": "Una servidumbre predial (easement appurtenant): hay un predio dominante y otro sirviente; la servidumbre se transmite con los terrenos a sus nuevos propietarios.",
+      "source_sha256": "87e593790002c1a8ab54942c5f3326bef78eead3a4a6e62e9386fd1a2c676769",
+      "target_sha256": "21ba3ffc438d4a76c09b48776de3113ae47069df028ab6c33936775e25cdf799"
+    },
+    {
+      "source": "An easement in gross benefits a person or company — a utility line is the standard example. A licence is mere permission and is revocable; an encroachment is an unauthorised intrusion and is a survey question, not a permission question.",
+      "before": "Una servidumbre en los beneficios brutos de una persona o empresa — una línea de servicios públicos es el ejemplo estándar. Una licencia es un simple permiso y es revocable; una invasión es una intrusión no autorizada y es una pregunta de reconocimiento, no una pregunta de permiso.",
+      "after": "Una servidumbre personal (easement in gross) beneficia a una persona o empresa; una línea de servicios públicos es el ejemplo típico. Una licencia es un mero permiso revocable. Una invasión física (encroachment) es una intromisión no autorizada que plantea una cuestión de agrimensura, no de permiso.",
+      "source_sha256": "be8555ce158a183dd7ab714250d47a0105422aa4d6974dd54913a8efdfd2f517",
+      "target_sha256": "1a079e0e471e3292cd4deb947e6b3b06762ed75c04ad816f12edc2f150191433"
+    },
+    {
+      "source": "An estate pur autre vie.",
+      "before": "Una casa de campo.",
+      "after": "Un derecho vitalicio pur autre vie.",
+      "source_sha256": "6bbeccaf3ded9061fc1fba27042ead722553730994762b53f5c441f072370698",
+      "target_sha256": "118ca5bcaafb3db5873f156b9334e7d92db3f15270632e70bec65555b715d82b"
+    },
+    {
+      "source": "Attach the form to a firm-drafted contract.",
+      "before": "Adjuntar el formulario a un contrato firmado.",
+      "after": "Adjuntar el formulario a un contrato redactado por la firma.",
+      "source_sha256": "1643215d9f1b9a704151f441b2e4a1c397fa0fc1a5303ff2103b79607a988c53",
+      "target_sha256": "53efc31c735bdbf2858309a90aa85d2190d83d43857bb375296a30b95852494c"
+    },
+    {
+      "source": "Eminent domain — the taking power, exercised through condemnation and requiring just compensation.",
+      "before": "Eminente dominio — el tomar el poder, ejercido a través de la condenación y que requiere justa compensación.",
+      "after": "Expropiación (eminent domain): la facultad de adquirir forzosamente la propiedad mediante el procedimiento de expropiación, con indemnización justa.",
+      "source_sha256": "a5924b1d7a38ad7022823d7ce477450171e448e416eca3bd52f3b75c211fc32b",
+      "target_sha256": "70d76048b42bf1ca3078f42c660451322f6b4f5add72be1a49b4c192f80bd6fe"
+    },
+    {
+      "source": "Escheat.",
+      "before": "Escógete.",
+      "after": "Reversión al Estado por falta de herederos (escheat).",
+      "source_sha256": "2647b877afd361b88400a23c54d85bd0dbf74fa39349e1b3bdb5da9723164020",
+      "target_sha256": "2e858909b7dd1d116239533b487001d966a6316eab71b6928167f4f1aea9ba84"
+    },
+    {
+      "source": "Lot and block references a recorded plat and is the everyday urban description; the rectangular survey system uses principal meridians, base lines, townships, ranges and sections. A street address is never a legal description.",
+      "before": "El lote y el bloque hacen referencia a un plato registrado y es la descripción urbana cotidiana; el sistema de levantamiento rectangular utiliza meridianos principales, líneas de base, municipios, rangos y secciones. Una dirección nunca es una descripción legal.",
+      "after": "El sistema de lotes y manzanas remite a un plano de subdivisión inscrito y es habitual en zonas urbanas. El sistema rectangular de agrimensura utiliza meridianos principales, líneas base, townships, rangos y secciones. Una dirección postal nunca constituye una descripción jurídica.",
+      "source_sha256": "63c90854e2aeb55a7d35a696456c1cd796271000c0d1c1726a37147946adb774",
+      "target_sha256": "dcf163f0f65bb499a1f964a50be6e785c4383cd9575b704d2fe4ae7ae58ec028"
+    },
+    {
+      "source": "Metes and bounds — courses and distances from a point of beginning, closing back to it.",
+      "before": "Metes y límites — cursos y distancias desde un punto de inicio, acercándose a él.",
+      "after": "Metes and bounds: rumbos y distancias a partir de un punto inicial, con cierre del perímetro en ese mismo punto.",
+      "source_sha256": "73acfcb65831d6cd87d9b42a523b17e03a5f443a666076944b594ab89fb26362",
+      "target_sha256": "5f1619a4234214bda11ad9d7ddf3b3da0adf853d8a2e6fd4e7728c046315d278"
+    },
+    {
+      "source": "REEB 24.08 requires agreements in writing, and an unwritten exclusion is exactly the dispute that ends in a complaint. The concept — a carve-out from an exclusive right to sell — is ordinary; the discipline of writing it is the point.",
+      "before": "REEB 24.08 requiere acuerdos por escrito, y una exclusión no escrita es exactamente la disputa que termina en una queja. El concepto —un derecho exclusivo a vender— es ordinario; la disciplina de escribirlo es la cuestión.",
+      "after": "REEB 24.08 exige acuerdos por escrito. Una exclusión no documentada puede generar una disputa que termine en reclamación. Excluir a un comprador concreto del derecho exclusivo de venta es un pacto habitual; lo esencial es dejarlo por escrito.",
+      "source_sha256": "5d785aedb92bd60273e8eabf1bf3923c5c075683504a89b7d71fa81f072349a3",
+      "target_sha256": "a8600cf990cd9e5baf5a072f728a338219bc71c827935460aea0f14347b39d30"
+    },
+    {
+      "source": "Read the description backwards, dividing as you go. A section is one square mile and 640 acres; a township is six miles square and holds 36 sections. An acre is 43,560 square feet.",
+      "before": "Lee la descripción hacia atrás, dividiendo a medida que avanzas. Una sección es de una milla cuadrada y 640 acres; un municipio es de seis millas cuadradas y tiene 36 secciones. Un acre mide 43,560 pies cuadrados.",
+      "after": "Lea la descripción de atrás hacia delante y divida sucesivamente. Una sección mide una milla cuadrada y contiene 640 acres; un township es un cuadrado de seis millas de lado y contiene 36 secciones. Un acre equivale a 43,560 pies cuadrados.",
+      "source_sha256": "41a061a5ae6ffefa51694eac436f8e112282f81bb9729e7424f834e334a70960",
+      "target_sha256": "9b0d8d0771d270c9d408b28a60cec4f2c847359cfe2e93eb92f364fb91b368f3"
+    },
+    {
+      "source": "The four are police power, eminent domain, taxation and escheat. Police power regulates without compensating, which is why a downzoning that destroys value is usually not a taking; escheat returns property to the state when an owner dies with no heirs and no will.",
+      "before": "Los cuatro son el poder policial, los dominios eminentes, los impuestos y la evasión. El poder de la policía regula sin compensación, por lo que una deslocalización que destruye el valor no suele ser una toma; el escreat devuelve la propiedad al estado cuando un propietario muere sin herederos y sin voluntad.",
+      "after": "Las cuatro facultades son regulación por interés público, expropiación, tributación y reversión al Estado por falta de herederos. La potestad reguladora no requiere indemnización; por ello, restringir los usos mediante zonificación y reducir el valor normalmente no constituye expropiación. El escheat atribuye la propiedad al Estado si el propietario fallece sin herederos ni testamento.",
+      "source_sha256": "dfc092984f824370ddafdc6f3da12044aa244b542a079c6af8b92a0bb3b7e3fa",
+      "target_sha256": "8aa9be329f39139eaabd09f257a9089391a9c30afd44af8d8151e663dc047d09"
+    },
+    {
+      "source": "The holder of a life estate may use and profit from the property but may not commit waste, and what remains after the measuring life is either a reversion, back to the grantor, or a remainder, to a named third party.",
+      "before": "El titular de un patrimonio vitalicio puede utilizar y beneficiarse de los bienes, pero no puede despilfarrar, y lo que queda después de la vida de medición es una reversión, de vuelta al otorgante, o un resto, a un tercero nombrado.",
+      "after": "El titular vitalicio puede usar el inmueble y obtener sus frutos, pero no deteriorarlo perjudicando los derechos futuros (waste). Al fallecer la persona cuya vida determina la duración, el derecho revierte al otorgante (reversion) o pasa a un tercero designado (remainder).",
+      "source_sha256": "14d7011bc0cbf2a6921901979a6f29b91a1b084f016a9d0c5c4e3a9cf5808e7e",
+      "target_sha256": "871812568c1e427a5d16431eb953d41dc070eb6f966c236b5afc076458a5cd5e"
+    },
+    {
+      "source": "The lot and block or recorded plat system.",
+      "before": "El sistema de lote y bloque o plat grabado.",
+      "after": "El sistema de lotes y manzanas referido a un plano de subdivisión inscrito.",
+      "source_sha256": "b0353ac955a257b06c60ecca10d3685085e428a0ac7d5271de73a2d99db5a13d",
+      "target_sha256": "6484d67b75e445b84b710453346b57776a821b9d13e430818992de7bfa1916ce"
+    },
+    {
+      "source": "The parties, the property, the price, the term and its end date, the compensation and how it is earned, what is included and excluded, and the seller's authorisations for marketing and showings.",
+      "before": "Las partes, la propiedad, el precio, el plazo y su fecha final, la compensación y la forma en que se gana, lo que se incluye y excluye, y las autorizaciones del vendedor para la comercialización y espectáculos.",
+      "after": "Las partes, el inmueble, el precio, el plazo y su fecha de vencimiento, la remuneración y cómo se devenga, los elementos incluidos y excluidos, y las autorizaciones del vendedor para la publicidad y las visitas.",
+      "source_sha256": "6b52d656f375669f08a5e3869a12f85465f6d30607aea42e614aee80782deeb3",
+      "target_sha256": "c43cf132e419df032171d6f0582678d7adfe2b2ef1cae90b7efe037e0650d8e6"
+    },
+    {
+      "source": "The rectangular survey system.",
+      "before": "El sistema de reconocimiento rectangular.",
+      "after": "El sistema rectangular de agrimensura.",
+      "source_sha256": "50578f69500d5ac37583e7b684bd1e37d4650dbf0ac6a611846ef0fb4cd4caf5",
+      "target_sha256": "32d1ed0e2e5eb18d5c0dd6c965ad3be0ef5846e8298d7c5789b09542a5722b47"
+    },
+    {
+      "source": "The seller wants to cancel the listing three weeks in. What is the accurate answer?",
+      "before": "El vendedor quiere cancelar el listado dentro de tres semanas. ¿Cuál es la respuesta exacta?",
+      "after": "Tres semanas después de iniciar el encargo de venta, el vendedor quiere cancelarlo. ¿Cuál es la respuesta precisa?",
+      "source_sha256": "3ec4a168cc315353c91d1dca854b36146ec19caff2aab49f840395965013f45c",
+      "target_sha256": "282f0eaf0e766f9f9563371d02fc280406f256195b16179fde9daa9b72e6f6c9"
+    },
+    {
+      "source": "The unit in fee, plus an undivided interest in the common elements — governed by a declaration, bylaws and an association, which is a different structure from a cooperative.",
+      "before": "La unidad de tasa, más un interés indiviso en los elementos comunes — regidos por una declaración, estatutos y una asociación, que es una estructura diferente de una cooperativa.",
+      "after": "La unidad en pleno dominio y una participación indivisa en los elementos comunes, sujetos a una declaración, estatutos y una asociación. Esta estructura es distinta de una cooperativa.",
+      "source_sha256": "a69d47286364d4df60ac5223250ca2ec2001eab64861aafbfb5c203135a2d504",
+      "target_sha256": "cc7f79c7b0ffbcd235f665f8194ecf59ec4fe0c839db14cb50997e9908ba3576"
+    },
+    {
+      "source": "Use the applicable current form, complete the parties' instructions, and apply REEB 16.06: legible crossing-out is permitted and addenda or other changes must meet the specific rule conditions.",
+      "before": "Utilice el formulario actual aplicable, complete las instrucciones de las partes y aplique REEB 16.06: se permite el cruce legible y las adiciones u otros cambios deben cumplir las condiciones específicas de las reglas.",
+      "after": "Utilizar el formulario vigente aplicable, completarlo conforme a las instrucciones de las partes y aplicar REEB 16.06: se permiten tachaduras que dejen legible el texto, y los anexos u otros cambios deben cumplir las condiciones específicas de la norma.",
+      "source_sha256": "000a178ae3a80ecb76681fa6a0e3912d37e717a4cc96289078ffbb791b19b18d",
+      "target_sha256": "b0cb6474e0048b4ea019ef58a77460a64cd9f02e8c1443d4b48b550763d3a590"
+    },
+    {
+      "source": "What is a life estate measured by the life of someone other than the holder called?",
+      "before": "¿Qué es un estado vital medido por la vida de alguien que no es el titular llamado?",
+      "after": "¿Cómo se denomina un derecho vitalicio cuya duración depende de la vida de alguien distinto de su titular?",
+      "source_sha256": "69330d31434532a50cfeccd84158c360be2d21a8f432c93bfafdc698b052ee71",
+      "target_sha256": "ccb105a028abc87dc98cd2265126a713cd612c0f33250d08c34203e4680fad93"
+    },
+    {
+      "source": "A listing repeats the tax roll's acreage. What is the problem?",
+      "before": "Una captación inmobiliaria repite la superficie de impuestos. ¿Cuál es el problema?",
+      "after": "Un anuncio reproduce la superficie en acres que figura en el registro tributario. ¿Cuál es el problema?",
+      "source_sha256": "e0278c4c15ab0ac942cb6558dfd61b86fa6a74b701d930bfac608d0487c9e224",
+      "target_sha256": "ff9195b76aca60029ef0b488fec3034e7f3de7e0dba078f81278eb19c4a5e66a"
+    },
+    {
+      "source": "A property tax lien.",
+      "before": "Un impuesto sobre la propiedad.",
+      "after": "Un gravamen por impuesto inmobiliario.",
+      "source_sha256": "585b3676b2f347a4f94021fb7a6f6c107de6bfa58d50ca64967737e5f9bcb81b",
+      "target_sha256": "d4aa1e0c588f0428ca3ed46ab873f69e81a40ad4b3c280e482da6e16c0fd663c"
+    },
+    {
+      "source": "First in time, first in right is the general rule and the tax lien is the standard exception to it. Subordination agreements can also reorder priority by contract, which is why the title commitment rather than the recording dates is the operative document.",
+      "before": "Primero en el tiempo, primero en la derecha es la regla general y el gravamen fiscal es la excepción estándar a ella. Los acuerdos de subordinación también pueden reordenar la prioridad por contrato, por lo que el compromiso de titularidad en lugar de las fechas de registro es el documento operativo.",
+      "after": "La regla general es «primero en el tiempo, primero en el derecho», con el gravamen tributario como excepción habitual. Los acuerdos de subordinación también pueden cambiar contractualmente la prioridad. Por eso debe consultarse el compromiso de seguro de título y no solo las fechas de inscripción.",
+      "source_sha256": "3f728a85a479355468b6a11ce10a2890dbfc0ccfbc52fabbd93d2394af317df9",
+      "target_sha256": "7f774001c0ab9847241346a3612c676e95bb940a77311ed070c07d8b9d1fec66"
+    },
+    {
+      "source": "Joint tenants may hold unequal shares; tenants in common may not.",
+      "before": "Los inquilinos comunes pueden tener acciones desiguales; los inquilinos en común no pueden.",
+      "after": "Los copropietarios en joint tenancy pueden tener cuotas desiguales; los copropietarios en tenancy in common no.",
+      "source_sha256": "ba50e2b587848258f1d4c01579d4ef362cf5574b575206675b532246871192bd",
+      "target_sha256": "27d5e36e72fdfd51819a9da18fea3db6f5574562a83a40a0f29118b40debf8d5"
+    },
+    {
+      "source": "Liens are classified two ways at once — voluntary or involuntary, and general or specific. A mortgage is voluntary and specific; a judgment is involuntary and general; a property tax lien is involuntary and specific.",
+      "before": "Los mentirosos se clasifican de dos maneras a la vez: voluntaria o involuntaria, y general o específica. Una hipoteca es voluntaria y específica; un juicio es involuntario y general; un impuesto sobre la propiedad es involuntario y específico.",
+      "after": "Los gravámenes se clasifican simultáneamente como voluntarios o involuntarios y como generales o específicos. Una hipoteca es voluntaria y específica; un gravamen judicial es involuntario y general; un gravamen por impuesto inmobiliario es involuntario y específico.",
+      "source_sha256": "61679ffb06f4815d1af75a0a58e5688802f890dc079e7666abff250b1022cb87",
+      "target_sha256": "4f315a6bbc9737fbe5d8bce58b22fb2ef139c46618aec1c7cc635cd559f5901b"
+    },
+    {
+      "source": "Only joint tenancy may be created by will.",
+      "before": "Sólo la tenencia conjunta puede ser creada por voluntad.",
+      "after": "Solo la joint tenancy puede crearse mediante testamento.",
+      "source_sha256": "e0ef1143be95dd80a7052a7e640d7be28f6c0eb9efebebbc7f9a7d1eb3ca57cb",
+      "target_sha256": "6508957528007eb2b7ef1f215b7ffeecb46d26e0cfba188656a6f476e65d0fd0"
+    },
+    {
+      "source": "Rights appurtenant to land abutting a watercourse; the ordinary high water mark separating private ownership from the public trust is determined by the DNR and a surveyor, not by a licensee.",
+      "before": "Los derechos correspondientes a la tierra que atraviese un curso de agua; la marca ordinaria de alta calidad que separa la propiedad privada del fideicomiso público está determinada por el DNR y un agrimensor, no por un licenciatario.",
+      "after": "Derechos vinculados a terrenos colindantes con un curso de agua. La marca ordinaria de aguas altas, que separa la propiedad privada del dominio público fiduciario, la determinan el DNR y un agrimensor, no un agente inmobiliario.",
+      "source_sha256": "bdfe24c481b3be1af4e1e151babb5466f9a884ac0bfa1c2584f9fd82fa1b37f9",
+      "target_sha256": "f70b1204d3863d3def3065694960e62831fb716a630d66176fab5daefc32c5a4"
+    },
+    {
+      "source": "Rights to the centre of the lake, determined by the plat.",
+      "before": "Derechos al centro del lago, determinados por el plato.",
+      "after": "Derechos hasta el centro del lago, determinados por el plano de subdivisión.",
+      "source_sha256": "dc2f38b78e753590224ef2d3502b6cc1b789ead5e564b303eddba225c0def280",
+      "target_sha256": "2dddf019f466ffedfc8a40ef1829547b103441672fb283beb6c41f3461f86c72"
+    },
+    {
+      "source": "Tenants in common hold undivided interests, which may be unequal, and each interest passes by will or intestacy. Which form a deed creates is a drafting question for counsel, and the difference decides what happens at a death rather than at a sale.",
+      "before": "Los inquilinos en común tienen intereses indivisos, que pueden ser desiguales, y cada interés pasa por voluntad o intestación. Que forma crea una escritura es una pregunta de redacción para el abogado, y la diferencia decide lo que sucede en una muerte en lugar de una venta.",
+      "after": "En la tenancy in common, los copropietarios tienen participaciones indivisas que pueden ser desiguales; cada una se transmite por testamento o sucesión intestada. Determinar qué modalidad crea una escritura corresponde al abogado que la redacta. La diferencia decide qué ocurre al fallecer un titular, no al vender.",
+      "source_sha256": "4f7f024cb6bc3f747abf46b9a3235fda35c41ba37b0608be49173563dae8c24b",
+      "target_sha256": "4219f1395fa40b9ff43af67d7a7f047ffb8d5947e433ea33e87cb1d235a23e65"
+    },
+    {
+      "source": "That it will be the purchase price times the current mill rate.",
+      "before": "Que será el precio de compra veces la tasa actual del molino.",
+      "after": "Que será el precio de compra multiplicado por la tasa vigente expresada en milésimas.",
+      "source_sha256": "4d0cd0b3c2ed516e082d4df53016bf8a7ba898ea65194bc05a986d7d68ef1698",
+      "target_sha256": "c8c7d685b427e06611b143f5fc708ff16bc84fa864b2dae30edf13661a535a40"
+    },
+    {
+      "source": "That the current bill is a matter of record and can be shown, and that the future bill depends on assessment, equalization and the levies of several taxing jurisdictions — none of which the licensee controls or can predict.",
+      "before": "Que el proyecto de ley actual es una cuestión de registro y se puede mostrar, y que el proyecto de ley futuro depende de la evaluación, la igualación y los gravámenes de varias jurisdicciones tributarias — ninguna de las cuales el licenciatario controla o puede predecir.",
+      "after": "Puede mostrarse el recibo actual porque consta en los registros. El futuro depende de la valoración fiscal, su igualación y los impuestos fijados por varias administraciones; el agente no controla ni puede predecir esas decisiones.",
+      "source_sha256": "c3137482238344e49d9cd69f7801edab95fa0b691957aa7d6f9982d286fb806c",
+      "target_sha256": "2bf33b323e1a55e0b65de7c48f53d13a23edc3dad5d01b727736583fb089d78a"
+    },
+    {
+      "source": "The assessment roll is an assessment record, not a survey, and repeating it as fact is a representation about a measurement the licensee has not verified — route acreage and boundaries to a survey.",
+      "before": "El rollo de evaluación es un registro de evaluación, no una mensura, y repetirlo como hecho es una representación acerca de una medición que el licenciatario no ha verificado — la superficie de la ruta y los límites de una mensura.",
+      "after": "El registro de valoración fiscal no es una mensura. Repetir su superficie como un hecho equivale a afirmar una medición que el profesional no ha verificado; la superficie y los linderos deben determinarse mediante mensura.",
+      "source_sha256": "1ceac99ed030b8359825451b95c45fae2720b9f5f73c2aa7b00dc7cc88ca0261",
+      "target_sha256": "8ef959b2a2be1cb746402f0fb7c730659929869863554e04e3cdee2a9bcad02b"
+    },
+    {
+      "source": "The general real estate tax lien — property tax liens customarily hold a superior position regardless of recording order.",
+      "before": "El impuesto general sobre bienes inmuebles — los impuestos sobre la propiedad suelen tener una posición superior independientemente de la orden de registro.",
+      "after": "El gravamen por impuesto inmobiliario general: suele tener prioridad independientemente del orden de inscripción.",
+      "source_sha256": "2ddceda85b7b663845db04915c5b81cf5e9a988763190f7b4e1eed6fb632293c",
+      "target_sha256": "439b5da44dce7172dbe0107e0a5a46b6109a8052734fb4ea4a59a116bd88b0a2"
+    },
+    {
+      "source": "The right of survivorship — a joint tenant's interest passes to the surviving joint tenants rather than through the estate.",
+      "before": "El derecho de supervivencia — el interés de un inquilino conjunto pasa a los inquilinos conjuntos sobrevivientes en lugar de a través de la finca.",
+      "after": "El derecho de supervivencia: la participación de un copropietario en joint tenancy pasa a los copropietarios supervivientes, en lugar de integrarse en su sucesión.",
+      "source_sha256": "a7a1f1b4a7f0958bd3d27538224e283cd1efd4640cc915eb94374fac12d06168",
+      "target_sha256": "e3a4a0170156b9c1d83c3d1d709c4c943dcc8897b9ed35a677612dad8f0f23ea"
+    },
+    {
+      "source": "This course states no figure from ch. 74, which has not been read from primary text for this project. A licensee who states a future tax bill has made a prediction about several independent bodies' decisions.",
+      "before": "Este curso no indica ninguna cifra del cap. 74, que no ha sido leída del texto primario para este proyecto. Un licenciatario que declara un futuro proyecto de ley tributaria ha hecho una predicción sobre varias decisiones de organismos independientes.",
+      "after": "Este curso no indica ninguna cifra del cap. 74, cuyo texto primario no se consultó para el proyecto. Afirmar el importe de un impuesto futuro equivale a predecir las decisiones de varios organismos independientes.",
+      "source_sha256": "9deb4195494db6dc0b532284282b766021f97af36542fce9be63d889fd9bedc7",
+      "target_sha256": "6e9bd5c93214386526079aa88db825b688a9ec112b4f31d31dada618e6753d3b"
+    },
+    {
+      "source": "A buyer is in possession under an unrecorded deed. What notice does that give?",
+      "before": "Un comprador está en posesión de una escritura no registrada. ¿Qué aviso da eso?",
+      "after": "Un comprador ocupa el inmueble en virtud de una escritura no inscrita. ¿Qué efecto de conocimiento produce esa posesión?",
+      "source_sha256": "96b6150270e4b7f4c876befc239579cafaf72bb01faccf4d1940892aebe7aed7",
+      "target_sha256": "e2fc39a0eadc10f7635e182b89ac39c8f0db4598d92d8596d54fcaaf0bc60078"
+    },
+    {
+      "source": "A buyer is purchasing from an estate. The title commitment shows a 1978 deed with a missing spousal signature, an unreleased 1994 mortgage, and a fence that a survey shows sits four feet onto the neighbour's lot. The buyer asks whether the owner's title policy will take care of all three.",
+      "before": "Un comprador está comprando de una finca. El compromiso con el título muestra una escritura de 1978 con una firma esponsal faltante, una hipoteca de 1994 no liberada, y una cerca que una mensura muestra se sienta cuatro pies en el lote del vecino. El comprador pregunta si la política de titularidad del propietario se ocupará de los tres.",
+      "after": "Un comprador adquiere un inmueble de una sucesión. El compromiso de seguro de título muestra una escritura de 1978 sin la firma de un cónyuge, una hipoteca de 1994 sin cancelar y una cerca que, según una mensura, invade cuatro pies del terreno vecino. El comprador pregunta si su póliza de título resolverá los tres problemas.",
+      "source_sha256": "01c98873a1173268f94a1bd8c201dc25d2a4dcf65764200357ccd90d1581765d",
+      "target_sha256": "3026452ed4b9d0e5007ff30aa3c01fbe75e3502db38a422e08eae8a0c91fa34b"
+    },
+    {
+      "source": "A commitment is a conditional promise with requirements and exceptions, not a coverage summary. Characterising a policy a licensee has not read — and cannot bind — is a representation about another party's contract, and probate authority is a matter for counsel.",
+      "before": "Un compromiso es una promesa condicional con requisitos y excepciones, no un resumen de cobertura. Caracterizar una política que un licenciatario no ha leído —y no puede obligar— es una representación sobre el contrato de otra parte, y la autoridad de probación es una cuestión que compete a un abogado.",
+      "after": "El compromiso es una promesa condicionada a requisitos y excepciones, no un resumen de cobertura. Describir una póliza no leída y cuya cobertura el agente no puede comprometer equivale a hacer afirmaciones sobre el contrato de otra parte. La autoridad para transmitir desde una sucesión corresponde al abogado.",
+      "source_sha256": "c63aa848f85f9741a23c983de2e44689ad53d56776fc281df15620d77cfcfe9a",
+      "target_sha256": "ad7d2b08d1fb579479320483f1c7f8654f8f57be2154ce1bcd0e31afaa4b009c"
+    },
+    {
+      "source": "A quit claim conveys whatever interest the grantor has, if any, and warrants nothing — which makes it a clearing instrument rather than a sale instrument. Which deed is used is a legal decision for counsel and the closing agent.",
+      "before": "Una reclamación por renuncia expresa cualquier interés que tenga el otorgante, si lo hubiere, y no justifica nada, lo que lo convierte en un instrumento de compensación y no en un instrumento de venta. La escritura que se utiliza es una decisión legal para el abogado y el agente de cierre.",
+      "after": "Una escritura quitclaim transmite los derechos que tenga el otorgante, si tiene alguno, sin garantías. Por ello se utiliza para depurar la titularidad más que como escritura de venta. El abogado y el agente de cierre determinan jurídicamente qué escritura corresponde.",
+      "source_sha256": "b2da4de20349b1f4ef7171ef4781cdbd0814733aaf931e789d46c1a812f6c715",
+      "target_sha256": "b9648e1c628b272ad54ed3d6aedcc3286a2d6b00a198fcc8d9f4f31cfb319fce"
+    },
+    {
+      "source": "Constructive notice through possession — a party is charged with what a reasonable inspection of the property would reveal, which is why possession is checked and not only the records.",
+      "before": "Notificación constructiva por medio de la posesión: se acusa a una parte de lo que una inspección razonable de la propiedad revelaría, por lo que se verifica la posesión y no sólo los registros.",
+      "after": "Conocimiento imputado por la posesión: se considera que una parte conoce lo que revelaría una inspección razonable del inmueble; por eso se comprueba quién lo ocupa, no solo los registros.",
+      "source_sha256": "c420cc669be9d5689168ba06e96bdc2c70e4d38021efb624c4bf41c2a691ac62",
+      "target_sha256": "e1dd5478f511bf2e253009656870803c4fecf283e741c4830e94c32ba2d61193"
+    },
+    {
+      "source": "Explain that a commitment lists requirements and exceptions and that each of these three must be resolved or will appear as an exception, that survey matters and encroachments are commonly excepted unless a survey is provided and the exception removed, and that the estate's authority to convey is a probate question — routing every one of them to the title company and counsel rather than characterising coverage yourself.",
+      "before": "Explique que un compromiso enumera requisitos y excepciones y que cada uno de estos tres debe ser resuelto o aparecerá como una excepción, que los asuntos de la mensura y las intrusiones son comúnmente exceptuados a menos que se proporcione una mensura y se elimine la excepción, y que la autoridad de la finca para transmitir es una pregunta probable — encaminando cada uno de ellos a la compañía titular y el consejo en lugar de caracterizar la cobertura usted mismo.",
+      "after": "Explicar que el compromiso de seguro de título enumera requisitos y excepciones: cada problema deberá resolverse o figurará como excepción. Los asuntos de mensura y las invasiones suelen excluirse salvo que se aporte una mensura y se retire la excepción. La facultad de la sucesión para transmitir es una cuestión sucesoria. Deben remitirse todos los asuntos a la compañía de títulos y al abogado, sin afirmar por cuenta propia qué cubre la póliza.",
+      "source_sha256": "6bf26c4c7321a4024581391a1a37ff60711ab237bfcbaf0a838a61f9c3003dc3",
+      "target_sha256": "919a205b2e02ff02e071b4de3c175412bfa98aa73d7586fe0dfa54f7bc53dd44"
+    },
+    {
+      "source": "Give legal advice on specific rights or legal effects, make a separate form-completion charge, or alter a form outside the permitted methods. Legible crossing-out under REEB 16.06(3) is permitted.",
+      "before": "Prestar asesoramiento jurídico sobre derechos o efectos jurídicos específicos, hacer un cargo por terminación de formularios por separado, o modificar un formulario fuera de los métodos permitidos. Se permite el cruce legal con arreglo al REEB 16.06(3).",
+      "after": "Prestar asesoramiento jurídico sobre derechos concretos o efectos legales, cobrar por separado por completar un formulario o modificarlo fuera de los métodos permitidos. REEB 16.06(3) permite tachaduras que dejen legible el texto.",
+      "source_sha256": "57823781994d0c64f63375b0a4cb75eee27b4fa4bf3149ae301e72a284955331",
+      "target_sha256": "418f2df62bd5bb0fcaaf87a9ef0677478d64b81c54ea8bb6091eb375fcafedfb"
+    },
+    {
+      "source": "It leaves the original offer open alongside the counter.",
+      "before": "Deja la oferta original abierta junto al mostrador.",
+      "after": "Mantiene abierta la oferta original junto con la contraoferta.",
+      "source_sha256": "b57ee5a6a18cbd6c86d39ceba4c5f9d01865443b1e43179e229fab69e6978c14",
+      "target_sha256": "711410502f83f969dc6c1d072088cb395221448fed80350db454b8deac6635c3"
+    },
+    {
+      "source": "It suspends the original offer for the counter's response period.",
+      "before": "Se suspende la oferta original para el período de respuesta del contador.",
+      "after": "Suspende la oferta original durante el plazo de respuesta a la contraoferta.",
+      "source_sha256": "a9ea68a0b3b088b5b7233c50efdacc9d33817b247bb3c03e09731f221be2d7c1",
+      "target_sha256": "495d4f086361954288f30b4daec4143f043d1d9cf02a3da135efffd353e7ec56"
+    },
+    {
+      "source": "REEB 16.05(1) prohibits the legal advice; (2) permits general explanation and (4) prohibits a separate completion charge. REEB 16.06 controls reproduction, deletions, addenda, and specific conversions rather than banning every modification.",
+      "before": "REEB 16.05(1) prohíbe el asesoramiento legal; (2) permite la explicación general y (4) prohíbe un cargo por terminación separado. REEB 16.06 controla la reproducción, supresiones, adiciones y conversiones específicas en lugar de prohibir cualquier modificación.",
+      "after": "REEB 16.05(1) prohíbe el asesoramiento jurídico; (2) permite explicaciones generales y (4) prohíbe cobrar por separado por completar formularios. REEB 16.06 regula la reproducción, las supresiones, los anexos y determinadas conversiones; no prohíbe toda modificación.",
+      "source_sha256": "63e63430506f17792d358f72dab13c755357250a5764e2c858c3bce5f410379c",
+      "target_sha256": "41102f5bc3e259c5b1c0234e162c78921e3704764b9ff71ad1c849a0c3f71e26"
+    },
+    {
+      "source": "Specific performance — available in real estate because each parcel is unique, so damages may not make the injured party whole.",
+      "before": "Rendimiento específico — disponible en bienes raíces porque cada terreno es único, por lo que los daños no pueden hacer que la parte lesionada entero.",
+      "after": "Cumplimiento específico: se admite en materia inmobiliaria porque cada terreno es único y una indemnización puede no reparar íntegramente el perjuicio.",
+      "source_sha256": "105a20c656fa4b4ba63330a0bf2f82c8a5e521209db9b45e5ddbd03fe7e727b0",
+      "target_sha256": "04e6f160e8f34ce4a07f02e7153fd91e986a8903e86109e1dc1b63867a3a0504"
+    },
+    {
+      "source": "The four states are valid, void, voidable and unenforceable, and examinations test the difference. Executory and executed describe performance; bilateral and unilateral describe what was promised.",
+      "before": "Los cuatro estados son válidos, nulos, anulables e inaplicables, y los exámenes prueban la diferencia. Ejecutar y ejecutar describen el desempeño; bilateral y unilateral describen lo que se prometió.",
+      "after": "Los cuatro estados son válido, nulo, anulable y no exigible judicialmente; los exámenes evalúan sus diferencias. Executory y executed indican si el contrato está pendiente de cumplimiento o ya cumplido. Bilateral y unilateral describen las promesas asumidas.",
+      "source_sha256": "6a51aa248bbaa1f92c102badde6b96e7073880aa3e7393e3235c3eaf6faac4ae",
+      "target_sha256": "106ab08644003b9d4a7ec5c87ad8f7c0b1bc86a98a89b0421419f48fc027bbab"
+    },
+    {
+      "source": "Uniqueness, one of the physical characteristics of land, is the reason specific performance is available here and rarely elsewhere. Rescission unwinds the contract; liquidated damages fix an amount in advance.",
+      "before": "La singularidad, una de las características físicas de la tierra, es la razón por la cual el rendimiento específico está disponible aquí y rara vez en otros lugares. La rescisión de un contrato; los daños liquidados fijan una cantidad por adelantado.",
+      "after": "La singularidad, característica física del terreno, explica por qué puede exigirse el cumplimiento específico en este ámbito y rara vez en otros. La rescisión deshace el contrato; los daños liquidados fijan de antemano una indemnización.",
+      "source_sha256": "ca57d98abb44e5d950fbef89cc1d8f95625577e469fa8753c111b0f3185d1bb3",
+      "target_sha256": "f74c812962900c16d11c00f0a3d91f2f1bf5353b0fd8050f1599c7a4cf7d4b58"
+    },
+    {
+      "source": "Which deed gives the broadest covenants?",
+      "before": "¿Qué acto da los pactos más amplios?",
+      "after": "¿Qué escritura ofrece las garantías más amplias?",
+      "source_sha256": "202adc56d3cc5e1140f7d9d88320c6986fb4fae1cbc48121ce04b6bcd819ba1b",
+      "target_sha256": "6d84bf61da8f1a82d449824bd23a5a3cee5e8601b13fcdfa894fce6c67adcf4a"
+    },
+    {
+      "source": "A buyer purchases at $325,000 with 15 percent down. What is the loan-to-value ratio and the down payment?",
+      "before": "Un comprador compra a $325,000 con un 15% de descuento. ¿Cuál es la relación préstamo-valor y el pago inicial?",
+      "after": "Un comprador adquiere un inmueble por $325,000 con un pago inicial del 15 por ciento. ¿Cuáles son la relación préstamo-valor y el pago inicial?",
+      "source_sha256": "bf8ea7abe7a21e7cfb4f2abebc5ab2442489323626b72a899b367fe45c1b0690",
+      "target_sha256": "5813de2703a506e63cec88c818813f5aee212e73ebeae169234cc7676bfc326c"
+    },
+    {
+      "source": "A property is being sold by an estate. What does the licensee need to know?",
+      "before": "Una propiedad está siendo vendida por una finca. ¿Qué necesita saber el licenciatario?",
+      "after": "Un inmueble se vende como parte de una sucesión. ¿Qué debe saber el agente inmobiliario?",
+      "source_sha256": "1890cac034c58522af6d78f2d0f27e7b4f7338f35377db2259ccd36ddc6e1434",
+      "target_sha256": "ecf16ad3e5f4ec3f3865715546010b0175c94e6d0274686888109833de9b91b3"
+    },
+    {
+      "source": "Estate sales fail on authority and on timetable more than on price. Building a closing date around a probate step nobody has confirmed is the avoidable error.",
+      "before": "Las ventas inmobiliarias fallan en la autoridad y en el horario más que en el precio. Construir una fecha de cierre alrededor de un paso de sucesión nadie ha confirmado es el error evitable.",
+      "after": "Las ventas desde una sucesión tropiezan más por falta de autoridad o por los plazos que por el precio. Fijar el cierre en función de un trámite sucesorio que nadie ha confirmado es un error evitable.",
+      "source_sha256": "9ab00fd1d88afa757660ae6da6e6d42ac09d89d0a66228ae343890ee3195ffd0",
+      "target_sha256": "e16c45ccb33ad299c5c8c75dffbff0d823939d997a6ebca6852087193430d8fd"
+    },
+    {
+      "source": "Explain the categories and what each is designed for without recommending one, route programme selection and the payment figure to the lender because rate, term, mortgage insurance and escrow decide it and none of them are yours to set, and explain what a land contract is structurally — the vendee takes possession while the vendor keeps legal title — while routing the decision to counsel, because the vendee's protection on default is a legal question.",
+      "before": "Explique las categorías y lo que cada uno está diseñado para sin recomendar una, selección del programa de ruta y la cifra de pago al prestamista porque la tasa, el plazo, el seguro hipotecario y el fideicomiso lo deciden y ninguno de ellos son suyos para establecer, y explique lo que un contrato de la tierra es estructural — el vendedor toma posesión mientras que el vendedor mantiene el título legal — mientras que encamina la decisión a abogado, porque la protección del vendedor en caso de incumplimiento es una cuestión legal.",
+      "after": "Explicar las categorías de préstamos y su finalidad sin recomendar una; remitir la elección del programa y el cálculo de la cuota al prestamista, pues dependen del interés, el plazo, el seguro hipotecario y la cuenta para impuestos y seguros. Explicar la estructura del contrato de venta a plazos (land contract): el comprador toma posesión y el vendedor conserva el título legal. La decisión debe consultarse con un abogado, porque la protección del comprador ante el incumplimiento es una cuestión jurídica.",
+      "source_sha256": "23b0c1f1265ad26279c760e948b0362196b40be619e0254f740b3910de8f6c1f",
+      "target_sha256": "c6ee1be72b459a07e793b9869028714c5de077ebe26ef935f7690ff34ef4e057"
+    },
+    {
+      "source": "Foreclosure is faster because no court is involved.",
+      "before": "La prisión preventiva es más rápida porque ningún tribunal está involucrado.",
+      "after": "La ejecución hipotecaria es más rápida porque no interviene ningún tribunal.",
+      "source_sha256": "2195fe98aeb74c44a2069869e5ffdabdbba2b4ca619ca7a88e04ddd094bd1b23",
+      "target_sha256": "3b880ec984915d53d6d91b3f315b187c7b163a54082fccb349877d7730f4fd16"
+    },
+    {
+      "source": "Forged deeds in the chain.",
+      "before": "Hechos falsificados en la cadena.",
+      "after": "Escrituras falsificadas en la cadena de titularidad.",
+      "source_sha256": "3a7f4306c5d41b63a68f465076eeac92940e37c5e14e7a0e74bbde0327cb7e77",
+      "target_sha256": "82a72a5e27042578d5206739c670c229e75b67b7f3b53035cd7b67b6890aecdb"
+    },
+    {
+      "source": "Gaps arise from missing signatures, unreleased mortgages, name discrepancies and estates that never went through probate. Every one of them is resolved before closing rather than explained away at it.",
+      "before": "Las lagunas surgen de firmas faltantes, hipotecas no liberadas, discrepancias de nombres y propiedades que nunca pasaron por el testamento. Cada uno de ellos se resuelve antes de cerrar en lugar de explicarlo.",
+      "after": "Los defectos surgen por firmas faltantes, hipotecas sin cancelar, discrepancias de nombres y sucesiones no tramitadas. Deben resolverse antes del cierre, no justificarse en ese momento.",
+      "source_sha256": "7850b55b6b603160ad479c9055dd96a3e70ec5bf0b7e765066e5d631901e4534",
+      "target_sha256": "e0eba6bde3988db5d9a175521cfc0b59062da73b4d0df6acac52f856b2bf7a0c"
+    },
+    {
+      "source": "Matters listed as exceptions — commonly survey matters and encroachments absent a survey, rights of parties in possession, and defects the insured created or knew about and did not disclose.",
+      "before": "Asuntos que se enumeran como excepciones: normalmente se investigan asuntos e intrusiones sin una mensura, los derechos de las partes en posesión, y los defectos que el asegurado creó o conocía y no reveló.",
+      "after": "Los asuntos enumerados como excepciones: habitualmente cuestiones de mensura e invasiones si no se aporta una mensura, derechos de ocupantes y defectos creados por el asegurado o que conocía y no reveló.",
+      "source_sha256": "e9f47d9e4532424d729ba6666e0152e5a81c32488182f6972e33d8539f1d50ab",
+      "target_sha256": "866f494d6eb072fbb0cfd7045623581eed20b709556442428e4fdd77cfb92cbf"
+    },
+    {
+      "source": "Recording errors by the register of deeds.",
+      "before": "inscripción registral de errores por el registro de escrituras.",
+      "after": "Errores de inscripción cometidos por el Registro de Escrituras.",
+      "source_sha256": "fa83af18f2f1509d319c535713f57bfe6fc45b56eed030203f3efd98063a0db9",
+      "target_sha256": "659e4ab8108fe36bca0710132ebce63e7b32e37539feaaa2a26d5f46c2361617"
+    },
+    {
+      "source": "That authority to convey comes from the probate proceeding and the personal representative's appointment, which is a legal determination — and that probate timing can control the closing date.",
+      "before": "Esa autoridad para transmitir proviene del procedimiento de testamento y del nombramiento del representante personal, que es una determinación jurídica, y ese plazo de vencimiento puede controlar la fecha límite.",
+      "after": "Que la autoridad para transmitir procede del procedimiento sucesorio y del nombramiento del representante personal, cuestión jurídica; y que los plazos sucesorios pueden determinar la fecha del cierre.",
+      "source_sha256": "8e494d4fe0522665154d8f584ecfa25bc619f42d5306ccc9b52125c345fc013b",
+      "target_sha256": "d2295ced6f1b9211e60f40be8b05e368c0e6787a292b729061105faae0e96b14"
+    },
+    {
+      "source": "That structure is exactly why the vendee's position on default is the question that matters, and it is a legal question for counsel. Land contracts are used in Wisconsin where conventional financing is unavailable — rural parcels, unusual property, seller-financed sales — and the buyer is often the least advised party in the transaction.",
+      "before": "Esa estructura es exactamente la razón por la que la posición del vendedor sobre el incumplimiento es la cuestión que importa, y es una cuestión legal para el abogado. Los contratos de tierras se utilizan en Wisconsin, donde no se dispone de financiación convencional —terrenos rurales, propiedades inusuales, ventas financiadas por el vendedor— y el comprador suele ser la parte menos asesorada en la transacción.",
+      "after": "Precisamente por esa estructura, la situación del comprador ante el incumplimiento es la cuestión central y requiere asesoramiento jurídico. En Wisconsin se utilizan contratos de venta a plazos cuando no hay financiación convencional: terrenos rurales, inmuebles poco comunes o ventas financiadas por el vendedor. El comprador suele ser la parte con menos asesoramiento.",
+      "source_sha256": "71bc17cdf463a06651ce1f5984a707a8969b14865ab511b723eeaf81bd6b9b4c",
+      "target_sha256": "12388da0c03990e76503fcd140254a4ee930b56b30ddfc828fb32733f187a621"
+    },
+    {
+      "source": "The vendee, subject to the vendor's lien.",
+      "before": "El vendedor, sujeto al embargo del vendedor.",
+      "after": "El comprador, sujeto al gravamen del vendedor.",
+      "source_sha256": "71110d7d743a4b08ff2526d6b938dfe7e851dfad9b04963871358ebb6db0b3ce",
+      "target_sha256": "179f10b34300ab24967ba7efaf7d8dd4f28429486e4ea7d7594dd3cd0e8cd655"
+    },
+    {
+      "source": "The vendor — the vendee takes possession and equitable title, and legal title passes only on completion of the payments.",
+      "before": "El vendedor — el vendedor toma posesión y el título equitativo, y el título legal pasa sólo al completar los pagos.",
+      "after": "El vendedor: el comprador recibe la posesión y el título en equidad; el título legal se transmite solo cuando se completan los pagos.",
+      "source_sha256": "1d9d9ebb5962edc7bb27f3648babf982130a5431ad107b5e6087e3dc92c711c5",
+      "target_sha256": "03412b70aa079849f83ea2dfe0b807b84613f49fffb97078bb9d65345a5e2187"
+    },
+    {
+      "source": "What is the transfer return?",
+      "before": "¿Cuál es la devolución de la transferencia?",
+      "after": "¿Qué es la declaración de transmisión inmobiliaria (transfer return)?",
+      "source_sha256": "50a703ebd7bae64a7e37ffed3858a418b602dab814aeb48e9c267dbe982e307e",
+      "target_sha256": "43c02ae8950d5a163d67a50cc5d0eb29e22b350092d447a47170be2448644961"
+    },
+    {
+      "source": "Accrued depreciation — physical deterioration, functional obsolescence and external obsolescence — with the land value then added back.",
+      "before": "Depreciación bruta —deterioro físico, obsolescencia funcional y obsolescencia externa— con el valor de la tierra añadido.",
+      "after": "La depreciación acumulada —deterioro físico, obsolescencia funcional y obsolescencia externa—; después se suma el valor del terreno.",
+      "source_sha256": "77c392802c4d64bf156465905664f0506ad893c125f587f6aed3bed644d1170a",
+      "target_sha256": "0c78736a21085654288723212013dd940dcf6dd7f1a82cb719510a735a6cea1f"
+    },
+    {
+      "source": "All three are the same violation in three costumes: steering, discriminatory instruction, and discriminatory advertising. A client's instruction is not a defence, documenting an objection is not compliance, and 'young professional' signals familial status and age. The licensee describes the property, never the people.",
+      "before": "Los tres son la misma violación en tres trajes: dirección, instrucción discriminatoria y publicidad discriminatoria. La instrucción de un cliente no es una defensa, documentar una objeción no es cumplimiento, y \"joven profesional\" señala el estado familiar y la edad. El licenciatario describe la propiedad, nunca la gente.",
+      "after": "Son tres formas de la misma infracción: orientación discriminatoria (steering), instrucciones discriminatorias y publicidad discriminatoria. La instrucción del cliente no exime de responsabilidad; documentar una objeción no equivale a cumplir. «Joven profesional» expresa preferencias sobre situación familiar y edad. El agente describe el inmueble, no a las personas.",
+      "source_sha256": "27a61515f9cf0bb18907a514e141d7363d065cfb1e40727cb7dce03a8fe82657",
+      "target_sha256": "8263bfa4b6c680a7bc25e3e1cc23296323a2355217c4c81a4785efaf7db18a5c"
+    },
+    {
+      "source": "An appraisal is an opinion of value produced by an appraiser under their own licence and standards; a market analysis is a licensee's presentation of market evidence to support a pricing decision, and it must be labelled as what it is.",
+      "before": "Una evaluación es una opinión de valor producida por un tasador bajo su propia licencia y normas; un análisis de mercado es la presentación por un licenciatario de pruebas de mercado para apoyar una decisión de precios, y debe ser etiquetado como lo que es.",
+      "after": "La tasación es una opinión de valor elaborada por un tasador conforme a su propia licencia y normas. El análisis de mercado presenta datos para apoyar una decisión sobre el precio y debe identificarse como tal.",
+      "source_sha256": "d232c32618b926f50a87f209770e028d572630253ad5435b05fba3f8700049f6",
+      "target_sha256": "1fd9121259182d64bd2c2f54096e4fe474acc8fca27fb97b5df8cbcc9d426e2d"
+    },
+    {
+      "source": "An appraisal is required only for cash transactions.",
+      "before": "Sólo se requiere una evaluación para las transacciones en efectivo.",
+      "after": "Solo se requiere una tasación en las transacciones al contado.",
+      "source_sha256": "588529605914e1d8c8ac78a9b3ebe0c65cf219e00210a1e240bdc68eb0056839",
+      "target_sha256": "8756b004531bc7ce41c084342960fe09902792c16e1082727062839218f6d988"
+    },
+    {
+      "source": "Decline to confirm a figure you have not derived, present your own written analysis with the comparables and the adjustments shown as evidence supporting a range, explain that an automated valuation is a model output and a 2019 appraisal is a 2019 opinion, and make clear the price is her decision and that an appraisal is an appraiser's work under their own licence.",
+      "before": "Disminuir para confirmar una cifra que usted no ha derivado, presentar su propio análisis escrito con los comparables y los ajustes mostrados como evidencia que respalda una gama, explicar que una valoración automatizada es una producción modelo y una evaluación de 2019 es una opinión de 2019, y dejar claro que el precio es su decisión y que una evaluación es un trabajo de un tasador bajo su propia licencia.",
+      "after": "Negarse a confirmar una cifra que no haya calculado; presentar un análisis escrito propio con comparables y ajustes que justifiquen un intervalo; explicar que una valoración automática es el resultado de un modelo y que una tasación de 2019 expresa una opinión de 2019; y aclarar que la vendedora decide el precio y que la tasación corresponde a un tasador con su propia licencia.",
+      "source_sha256": "b5d14fc0e170dc615329a1ec99afc2de8a0a1bf5ad465606f798edadc97553cd",
+      "target_sha256": "66d60bff13947b35653a841c7eb689cbe23dcbff3d24bad99cc622f9dbc16b65"
+    },
+    {
+      "source": "Points are computed on the loan amount, not the price, and the distinction matters whenever the two differ. Discount points buy down the rate; origination points are a fee for making the loan.",
+      "before": "Los puntos se calculan sobre la cantidad del préstamo, no el precio, y la distinción importa cuando los dos difieren. Los puntos de descuento compran la tarifa; los puntos de origen son una tarifa por hacer el préstamo.",
+      "after": "Los puntos se calculan sobre el importe del préstamo, no sobre el precio; la diferencia importa cuando no coinciden. Los puntos de descuento reducen la tasa de interés; los de originación remuneran la concesión del préstamo.",
+      "source_sha256": "79d10379a7111a14a223816da3ddfc70e68e6475d672bf0f2ce4a4c34927da01",
+      "target_sha256": "97f84a37964b3c1efe8c61453ce2f50693e4ab3791967f0799273df3bd03a8bb"
+    },
+    {
+      "source": "Presenting a market analysis as an appraisal, or letting a client believe it is one, is a misleading market values problem under REEB 24.09 and a scope-of-licence problem besides. The label is not a formality.",
+      "before": "Presentar un análisis de mercado como una evaluación, o permitir que un cliente crea que es una, es un problema de valores de mercado engañoso bajo REEB 24.09 y un problema de alcance de licencia además. La etiqueta no es una formalidad.",
+      "after": "Presentar un análisis de mercado como una tasación, o permitir que el cliente lo crea, plantea un problema de valoración engañosa conforme a REEB 24.09 y otro de extralimitación de la licencia. La denominación no es una mera formalidad.",
+      "source_sha256": "fe43dafebe78e1548fa90e89e6046c5e1f74ccba1a6231b8ee154782e472b7e1",
+      "target_sha256": "c3c5ccf71d8334b2aea107541da362121c5ba490629bfa3f1aed1935ba6275f7"
+    },
+    {
+      "source": "Redirect the buyer to objective criteria you can research and provide — published data, price, commute, property characteristics — without characterising who lives anywhere; refuse the seller's instruction, state plainly that you cannot follow it and that you will withdraw from the representation if it stands; and pull the advertisement, because describing the buyer rather than the property signals a preference.",
+      "before": "Redirigir al comprador a criterios objetivos que usted puede investigar y proporcionar —datos publicados, precio, conmutaciones, características de la propiedad— sin caracterizar quién vive en cualquier lugar; rechazar la instrucción del vendedor, indicar claramente que usted no puede seguirla y que se retirará de la representación si se mantiene; y tirar del anuncio, porque la descripción del comprador en lugar de la propiedad señala una preferencia.",
+      "after": "Orientar al comprador hacia criterios objetivos que puedan investigarse y proporcionarse —datos publicados, precio, desplazamientos y características del inmueble— sin describir quién vive en cada zona. Rechazar claramente la instrucción del vendedor y advertir que se renunciará a representarlo si la mantiene. Retirar el anuncio, porque describir al comprador deseado en lugar del inmueble expresa una preferencia.",
+      "source_sha256": "bcc6a207ea169450280f723f6f50ae71501f92d18c90e099865338659bf3bdf3",
+      "target_sha256": "848c08d21cf7281927dd8edaa01c67b1185ab4e42f4e956a98a11582e173d3c0"
+    },
+    {
+      "source": "That the operating expenses understate the true cost, because the roof, the mechanicals and the parking will eventually need replacing — omitting reserves inflates net operating income and therefore the value the income approach produces.",
+      "before": "Que los gastos de funcionamiento subestiman el verdadero costo, porque el techo, los mecánicos y el estacionamiento eventualmente tendrá que reemplazar — omitir reservas infla los ingresos netos de explotación y, por lo tanto, el valor que el enfoque de ingresos produce.",
+      "after": "Que los gastos operativos infravaloran el costo real, porque en algún momento deberán sustituirse el techo, las instalaciones y el estacionamiento. Omitir reservas infla el ingreso operativo neto y, por tanto, el valor obtenido por el enfoque de ingresos.",
+      "source_sha256": "7542179e983d7920c33e905a7a044a18f1e1b6ef11c0634c7db8653c9944676e",
+      "target_sha256": "1e8ada90823eae1e80a24b78c084d826305c62a3afeb9cb99c153357159703c9"
+    },
+    {
+      "source": "The subject is what is being valued and has no price yet, so there is nothing on it to adjust. Getting the direction wrong is the single most common error in the grid and it moves the answer twice as far as leaving the adjustment out.",
+      "before": "El tema es lo que se está valorando y no tiene precio todavía, por lo que no hay nada en él para ajustar. Obtener la dirección equivocada es el error más común en la cuadrícula y mueve la respuesta dos veces más lejos que dejar el ajuste hacia fuera.",
+      "after": "El inmueble objeto de valoración aún no tiene un precio determinado que ajustar. Invertir el signo del ajuste es el error más común en la tabla y desvía el resultado el doble que omitir el ajuste.",
+      "source_sha256": "51f63ec57e6020ec60b5af16a17c7dd8851ccb7858163476e71ba4e44335c562",
+      "target_sha256": "6da90129463b16d61462de315f0bd94c71a80fd7507562bb9e49d557f3e5ea31"
+    },
+    {
+      "source": "To the comparable, never to the subject — a comparable superior to the subject is adjusted down and an inferior one is adjusted up.",
+      "before": "A lo comparable, nunca al sujeto — un superior comparable al sujeto se ajusta hacia abajo y uno inferior se ajusta hacia arriba.",
+      "after": "Se ajusta el comparable, nunca el inmueble que se valora: un comparable superior se ajusta a la baja y uno inferior al alza.",
+      "source_sha256": "a980c49c35eb31e0221bd0431b91bd5086f3b48981075804dab6f2dc394dd9e4",
+      "target_sha256": "296825397d395e3360e6b00888db038916a0586106b6bd5d157129ccde4f963b"
+    },
+    {
+      "source": "To the subject, so it matches the comparables.",
+      "before": "Al tema, por lo que coincide con los comparables.",
+      "after": "Se ajusta el inmueble que se valora para igualarlo a los comparables.",
+      "source_sha256": "c75cd083bf58c6da10f11a8d3a1b92c4e836e47150f21a1fb56fa35a57b22840",
+      "target_sha256": "57342235ae53db8d376ff6d06bf2d105e83dc1ed9ec52fc05cd360f00f4a75f2"
+    },
+    {
+      "source": "Value is the assessment, price is the list price, cost is the appraisal.",
+      "before": "El valor es la evaluación, el precio es el precio de la lista, el costo es la evaluación.",
+      "after": "El valor es la valoración fiscal, el precio es el precio anunciado y el costo es la tasación.",
+      "source_sha256": "96676224ecb4f662bd4e6beaf51fb6d762086b154ea3c8438c6660311d6e81ce",
+      "target_sha256": "6ed4a2b73f6b24d19e5a3d1c4e7097b8127531d661d09a2571282de6e035b5cc"
+    },
+    {
+      "source": "What is the difference between a licensee's market analysis and an appraisal?",
+      "before": "¿Cuál es la diferencia entre el análisis de mercado de un licenciatario y una evaluación?",
+      "after": "¿Qué diferencia hay entre el análisis de mercado de un agente inmobiliario y una tasación?",
+      "source_sha256": "626e1d838ed249fff77370a0cfb1bcfe637dfbea5cf4519a5c737e4aa6e451bd",
+      "target_sha256": "83e22abe686fcf018cd58ca7e92239f27828aa5495b8752df54bf83aca8922ce"
+    },
+    {
+      "source": "A periodic tenancy renews automatically until proper notice; a tenancy at will continues at the pleasure of both parties; a tenancy at sufferance is a holdover after the right to possess ended. Which one exists decides what notice, if any, is required.",
+      "before": "Un alquiler periódico se renueva automáticamente hasta la debida notificación; un alquiler a voluntad continúa a voluntad de ambas partes; un arrendamiento a su cargo es un aplazamiento después de terminado el derecho a poseer. Cuál existe decide qué aviso, si alguno, se requiere.",
+      "after": "El arrendamiento periódico se renueva automáticamente hasta que se notifica debidamente su terminación. El arrendamiento a voluntad continúa mientras ambas partes lo deseen. La tenancy at sufferance es la permanencia después de terminar el derecho a poseer. La modalidad determina si se requiere aviso y cuál.",
+      "source_sha256": "5f38cefe280e0b0049953f49ede0e581c7ba3e915df31aa12d667b31d310c313",
+      "target_sha256": "4212f072fbe33759c6899a374ffcaff2d5e160bd5a2c32af8e0f2f26e30b0290"
+    },
+    {
+      "source": "An assignment transfers the tenant's entire remaining interest; a sublease transfers less than all of it, leaving the original tenant as a landlord to the subtenant and still liable to the landlord.",
+      "before": "Una asignación transfiere todo el interés restante del inquilino; una subarrendamiento transfiere menos que todo, dejando al inquilino original como propietario al subarrendador y siendo aún responsable ante el propietario.",
+      "after": "La cesión transfiere la totalidad del derecho restante del inquilino. El subarrendamiento transfiere menos que la totalidad y deja al inquilino original como arrendador del subinquilino, manteniendo su responsabilidad frente al propietario.",
+      "source_sha256": "7e12c09da176fee1ea461449cec8504d145aba9a8727ded685b4e325b82ec1f7",
+      "target_sha256": "4a5aa8bd7d868b0bc6c7c5c4bd9c2e13026ad747ceec84e13f3305d144f8eb1d"
+    },
+    {
+      "source": "Directing prospects toward or away from areas on the basis of a protected characteristic — including by omitting areas from what is shown or discussed.",
+      "before": "Dirigir las perspectivas hacia o lejos de las zonas sobre la base de una característica protegida, incluso omitiendo las zonas de lo que se muestra o se discute.",
+      "after": "Orientar a posibles compradores hacia determinadas zonas o alejarlos de ellas por una característica protegida, incluso omitiendo zonas de lo que se muestra o se comenta.",
+      "source_sha256": "5dbc3a2e71bbf06039ec7c466a18dbbf2f773679a75d0042c8a5b2fcf6dab1dd",
+      "target_sha256": "e9a3b2ee616ffb5a7a5ee83317aa4e8a4b407fb6fd57d931bd68b9edb7b49738"
+    },
+    {
+      "source": "Estate for years — it ends on the stated date by its own terms.",
+      "before": "Estate por años — termina en la fecha indicada por sus propios términos.",
+      "after": "Arrendamiento por plazo determinado (estate for years): termina en la fecha pactada conforme a sus propios términos.",
+      "source_sha256": "4ab7af65cbc104372519e890520b80b3075c964d6d742257b5c43c0dbe127664",
+      "target_sha256": "850b580385eb646909055c62072247a03ca4d9a4d8e6777a4cf27588b68c6afa"
+    },
+    {
+      "source": "REEB 18.031(4) and (5) contain particular rental-owner-account provisions. A blanket statement that every owner account is forbidden is false, but those provisions do not authorize commingling with firm operating money.",
+      "before": "REEB 18.031(4) y (5) contienen disposiciones particulares sobre cuentas de alquiler. Una declaración general de que cada cuenta de propietario está prohibida es falsa, pero esas disposiciones no autorizan la combinación con dinero de operación firme.",
+      "after": "REEB 18.031(4) y (5) contienen reglas específicas para cuentas del propietario arrendador. Es falso afirmar que toda cuenta del propietario está prohibida, pero esas disposiciones no permiten mezclar los fondos con el dinero operativo de la firma.",
+      "source_sha256": "fddd376c29c8a499e19cdead12494c2d494ee949637ee0cd21b5571b481afac4",
+      "target_sha256": "bcffc1499418cc8f2e73c1d2d11f5e00f8eaed57746538b8b299c7e4245551e9"
+    },
+    {
+      "source": "Reject the firm-operating-account use; the actual REEB 18 rental-owner exceptions do not authorize that arrangement. Evaluate the cleaning fee under its actual terms and current rental law before charging it. Do not impose a disability-based relocation for others' convenience; that differs from a genuinely tenant-requested accommodation. The 2026-09-06 source review covers the specified ATCP and Wisconsin disability provisions, not every possible fee or exemption.",
+      "before": "Rechazar el uso de la empresa-operación-cuenta; las excepciones reales REEB 18 al arrendador-propietario no autorizan este acuerdo. Evalúe la tarifa de limpieza bajo sus términos reales y la ley de alquiler actual antes de cobrarla. No imponga una reubicación basada en la discapacidad para la conveniencia de otros; eso difiere de un alojamiento realmente solicitado por el inquilino. La revisión de fuente 2026-09-06 cubre las disposiciones específicas ATCP y Wisconsin sobre discapacidad, no todos los honorarios o exenciones posibles.",
+      "after": "Rechace el uso de la cuenta operativa de la firma: las excepciones de REEB 18 para cuentas del propietario arrendador no lo autorizan. Evalúe el cargo de limpieza según sus condiciones y la normativa vigente antes de cobrarlo. No imponga un traslado por discapacidad para comodidad de otros; eso difiere de una adaptación solicitada por el inquilino. La revisión de fuentes del 2026-09-06 cubre las disposiciones especificadas de ATCP y de Wisconsin sobre discapacidad, no todos los cargos ni las posibles exenciones.",
+      "source_sha256": "2ba4dfc56d2a3710c83677c3477fd6123f8592ef9ba2e36a2bc324b6398181ed",
+      "target_sha256": "cf016ae3710d4503e4a7fc750fcd4be9f24cb1c0a61e47dbf28e9b0b8831badc"
+    },
+    {
+      "source": "Safeguard and account for the funds under REEB 18, using the required trust handling or the specific rental-owner-account arrangement if its conditions are satisfied; do not use the firm's operating account.",
+      "before": "Salvaguardar y contabilizar los fondos con arreglo a la REEB 18, utilizando la gestión de confianza requerida o el acuerdo específico de alquiler-propietario-cuenta si se cumplen sus condiciones; no utilice la cuenta de explotación de la empresa.",
+      "after": "Proteger los fondos y rendir cuentas conforme a REEB 18, usando la custodia fiduciaria exigida o el sistema específico de cuenta del propietario arrendador cuando se cumplan sus condiciones; nunca la cuenta operativa de la firma.",
+      "source_sha256": "7da4d85620da26610d71b0fe22086875eeee8fda9f5a6cbff7c0d9d1b4f2bb6c",
+      "target_sha256": "c83692f8e83149ca783fb75c29cad35dacf31336a9c6add19e6d92550e8fe739"
+    },
+    {
+      "source": "Tenancy at sufferance.",
+      "before": "Tenencia en el sufrimiento.",
+      "after": "Permanencia tolerada tras vencer el derecho (tenancy at sufferance).",
+      "source_sha256": "5bbfb8ab783f0cba19b92d8ab652f7178cb3e73300fe28726a6e53e059d16ced",
+      "target_sha256": "d2b3ac4b1668539f752661148c0b4bc7e60f30fc4e08b13e1e5cd71af31a6d57"
+    },
+    {
+      "source": "The distinction between modification and accommodation is tested constantly and confused constantly. An assistance animal is not a pet and pet rules and pet fees do not apply to it.",
+      "before": "La distinción entre modificación y alojamiento se prueba constantemente y se confunde constantemente. Un animal de asistencia no es una mascota y las normas de mascotas y los honorarios de mascotas no se aplican a ella.",
+      "after": "La distinción entre modificación física y adaptación de reglas se evalúa y se confunde con frecuencia. Un animal de asistencia no es una mascota y no se le aplican las normas ni los cargos para mascotas.",
+      "source_sha256": "dd6ebb36c76192a2f0033d21e51f7dd49817bd62acd3da58b17d4b67a28b8dce",
+      "target_sha256": "8241877bddec82147ac15c7a576d21fa4c6615e7b525cd50780b2f3a524896bc"
+    },
+    {
+      "source": "The dual nature is why lease disputes can be framed either as breaches of contract or as interferences with possession, and why the covenant of quiet enjoyment matters as much as any written clause.",
+      "before": "La doble naturaleza es la razón por la que las disputas de arrendamiento se pueden enmarcar como incumplimientos de contrato o como interferencias con la posesión, y por qué el pacto de disfrute silencioso importa tanto como cualquier cláusula escrita.",
+      "after": "Esa doble naturaleza permite plantear una disputa de arrendamiento como incumplimiento contractual o como interferencia con la posesión. Por ello, la garantía de disfrute pacífico importa tanto como cualquier cláusula escrita.",
+      "source_sha256": "f8818e1f545e3d89c8b1762e23d3fefd530a4ed17e84544138493f11bf701071",
+      "target_sha256": "59794c571e373f2c1664003171c0451ef6d40901d58726771e00f724b8bcca76"
+    },
+    {
+      "source": "The specified condition on selling real estate owned or controlled by the licensee that the buyer also buy other real estate or list the buyer's real estate with the licensee, subject to the rule's stated builder provisions.",
+      "before": "La condición especificada para la venta de bienes inmuebles propiedad del licenciatario o bajo su control, de que el comprador también compre otros bienes inmuebles o enumere los bienes inmuebles del comprador con el licenciatario, con sujeción a las disposiciones establecidas del constructor de la norma.",
+      "after": "La condición de que, para comprar un inmueble propiedad del agente o bajo su control, el comprador adquiera también otro inmueble o le encargue la venta del suyo, sujeta a las disposiciones de la norma relativas a constructores.",
+      "source_sha256": "0aa9abfd520636ddc92806990ac445277a65a9a53a87b0c514673c2bd49ef2a9",
+      "target_sha256": "3a29dd9f856286f37ba1efe6c1120560053995ba328fb85c3c2c07b474707563"
+    },
+    {
+      "source": "What is steering, and what makes it easy to commit without intending to?",
+      "before": "¿Qué es la dirección, y qué hace que sea fácil comprometerse sin intención?",
+      "after": "¿Qué es la orientación discriminatoria (steering) y por qué puede cometerse fácilmente sin intención?",
+      "source_sha256": "c99616eaae59136d7d66e68ed152f73dbd182653da4dc55335f789c668f16efe",
+      "target_sha256": "1ec5eb7be270d0edcad2b509c97459232e5c1ad00a07a2d3f2d92d67f8cdc53c"
+    },
+    {
+      "source": "A use the zoning administrator has agreed not to enforce against.",
+      "before": "Un uso que el administrador de zonificación ha acordado no hacer cumplir.",
+      "after": "Un uso frente al cual el administrador de zonificación ha acordado no actuar para hacer cumplir la normativa.",
+      "source_sha256": "231a7f3d29ce5f8cb15d4556c761246e5e7d92141559e5fb7284920c5051f8a1",
+      "target_sha256": "7cd84617a99295d63c62bf48b0eae02c5f9a0e319f684dca6822cd61de6f4562"
+    },
+    {
+      "source": "Producing the owner's intended return while preserving the asset — marketing and leasing, collections, maintenance, budgeting and reporting, compliance, and risk management.",
+      "before": "Producción del rendimiento previsto del propietario mientras se preserva el activo: comercialización y arrendamiento financiero, cobros, mantenimiento, presupuestación y presentación de informes, cumplimiento y gestión de riesgos.",
+      "after": "Obtener el rendimiento que busca el propietario conservando el activo: publicidad y alquiler, cobros, mantenimiento, presupuestos e informes, cumplimiento normativo y gestión de riesgos.",
+      "source_sha256": "c225a27773da3827a920fdcfe52484fba247a2a009084606824a04d3077f3289",
+      "target_sha256": "4cda5bf70ee1f0c8f46dfecdf50b361358ed1db92a4b2e5ee087fca662813b89"
+    },
+    {
+      "source": "Tell the buyer a home occupation is generally allowed in residential zones.",
+      "before": "Dígale al comprador que generalmente se permite la ocupación de una casa en zonas residenciales.",
+      "after": "Decir al comprador que generalmente se permite desarrollar una actividad profesional desde una vivienda en zonas residenciales.",
+      "source_sha256": "09ce1525e931de7b61ab45155a91b22d06947c37a3e3c783a01189d663842cd6",
+      "target_sha256": "f98cd67b92a1c837cb62149160c5d2f3e8b9992128504fec43a876a715f97bb3"
+    },
+    {
+      "source": "Tell the buyer the wetland map is advisory and the renovation may proceed.",
+      "before": "Dígale al comprador que el mapa del humedal está avisado y que la renovación puede continuar.",
+      "after": "Decir al comprador que el mapa de humedales es meramente orientativo y que puede continuar la reforma.",
+      "source_sha256": "a4334413b62a1d5789b3059a849bcc97d41888ed34b3feee903260d23ad90300",
+      "target_sha256": "5dddd9260e84a4fdb17c2beb7d7f2efe03fed6d6c41356eac0c784fee6117f85"
+    },
+    {
+      "source": "The division of land into lots and the standards for the plat, the streets, the utilities and the dedications — a municipal and county process operating alongside the state's own plat requirements.",
+      "before": "La división de la tierra en lotes y los estándares para el plato, las calles, los servicios públicos y las dedicaciones — un proceso municipal y del condado que opera junto con los requisitos del propio plato del estado.",
+      "after": "La división del terreno en lotes y las normas para el plano de subdivisión, calles, servicios y cesiones para uso público: un procedimiento municipal y del condado que opera junto con los requisitos estatales del plano.",
+      "source_sha256": "649488d8da976296d5ae32a5f99ca26684ff8406430e35725844905c3d9005db",
+      "target_sha256": "0fda7aa4edba7aac14872bfba20ddb8a1fc520574d2207e3e3d8136e226f247d"
+    },
+    {
+      "source": "The federal lead-based paint disclosure regime for target housing built before 1978, plus the routing of asbestos and other age-related questions to qualified professionals.",
+      "before": "El régimen federal de divulgación de la pintura basada en plomo para viviendas destinadas a usos específicos construido antes de 1978, más el envío de amianto y otras cuestiones relacionadas con la edad a profesionales calificados.",
+      "after": "El régimen federal de divulgación sobre pintura con plomo para las viviendas comprendidas en la categoría target housing y construidas antes de 1978, además de remitir a profesionales cualificados las cuestiones sobre amianto y otros riesgos ligados a la antigüedad.",
+      "source_sha256": "30f062888787af8ed845901def98c4edc8bb7cabcd8187699c13080fd37afd75",
+      "target_sha256": "ee9957d19af30db67365a118989a33a4d2528c87485a077cf95ba9bd3316b1b5"
+    },
+    {
+      "source": "The rent roll and the maintenance schedule.",
+      "before": "El alquiler y el horario de mantenimiento.",
+      "after": "La relación de alquileres y el calendario de mantenimiento.",
+      "source_sha256": "a768cee8b743e0ba2943cd67aca4f84fc1ea2c23a95c218c2c981e52b0de3a11",
+      "target_sha256": "1d1e6ac1ca1424e3dc28551befb3182b8c7039723b7aa84f178dd3f2281afb40"
+    },
+    {
+      "source": "This course states no requirement from ch. 236, which has not been read from primary text for this project. A licensee working on raw land routes the plat questions to the municipality, the county and the surveyor before anything is marketed.",
+      "before": "Este curso no establece ningún requisito del cap. 236, que no ha sido leído del texto primario para este proyecto. Un licenciatario que trabaja en rutas de tierra en bruto la plataforma pregunta al municipio, el condado y el agrimensor antes de que nada se comercialice.",
+      "after": "Este curso no establece requisitos del cap. 236, cuyo texto primario no se consultó para el proyecto. Antes de comercializar terrenos sin urbanizar, el agente remite las cuestiones del plano de subdivisión al municipio, al condado y al agrimensor.",
+      "source_sha256": "90abe55ac54d7899348693901a77c47bcb195c9c52c7961fe9fbf7a26be50b37",
+      "target_sha256": "86efe346932255326ac2b9954a76675eb33010ccc24132e67a5be988a70e120c"
+    },
+    {
+      "source": "Whatever the owner prefers to record; industry custom supplies the rest.",
+      "before": "Sea lo que sea lo que el propietario prefiera grabar; la industria a la medida suministra el resto.",
+      "after": "Lo que el propietario prefiera dejar documentado; los usos del sector suplen el resto.",
+      "source_sha256": "7299961f5f1d4ee98b092337e7d1f82687b77280ab2962a09fd321e6319b5e03",
+      "target_sha256": "87e2a3ed90181573014ee9dbc6eb5da14ee6bb4f233a6591f5dbd326180c1753"
+    },
+    {
+      "source": "Wisconsin's shoreland and wetland regimes, its public trust doctrine and the ordinary high water mark all sit in the same territory, and all of it is routed. The licensee's contribution is noticing early enough that the buyer can investigate before their contingencies expire.",
+      "before": "Los regímenes costeros y de humedales de Wisconsin, su doctrina de confianza pública y la marca de alta mar ordinaria están todos en el mismo territorio, y todo está encallado. La contribución del licenciatario se está dando cuenta con suficiente antelación para que el comprador pueda investigar antes de que expiren sus contingencias.",
+      "after": "Los regímenes ribereños y de humedales de Wisconsin, la doctrina de dominio público fiduciario y la marca ordinaria de aguas altas están relacionados y deben remitirse a los profesionales competentes. El agente debe advertirlos con suficiente antelación para que el comprador pueda investigar antes de que venzan sus condiciones contractuales.",
+      "source_sha256": "73066a9c5c1e4b17e70812943dc6ba88d1021b017d0854a25033c1642594b4bb",
+      "target_sha256": "33a875eca88d9245aeefbd47537fb039a916de46b2e31c5142a9d41bafeebc73"
+    },
+    {
+      "source": "Assume the record owner may convey alone.",
+      "before": "Supongamos que el dueño de la grabación puede transmitir solo.",
+      "after": "Suponer que el titular inscrito puede transmitir por sí solo.",
+      "source_sha256": "5bd65ebcef3b3d6e3772724ec473698e13ea293cea96d2dd275750c61f950664",
+      "target_sha256": "18d96107a368bccbddb49be6e3118df01ccc51a84ab2bceaa0f55c6bd06f1418"
+    },
+    {
+      "source": "Cash, checks, or notes belonging to others received in connection with real-estate practice as defined by REEB 18.02; handling follows the applicable account rules and exceptions.",
+      "before": "Efectivo, cheques o billetes pertenecientes a otros recibidos en relación con la práctica inmobiliaria definida por la REEB 18.02; el manejo sigue las reglas de cuenta y excepciones aplicables.",
+      "after": "Efectivo, cheques o pagarés pertenecientes a terceros y recibidos en relación con la actividad inmobiliaria, según REEB 18.02; su gestión debe respetar las reglas y excepciones aplicables a las cuentas.",
+      "source_sha256": "7f43c44961690545315a204c7e46b86e4b5d64717e044bfe640fae76efec4b31",
+      "target_sha256": "c9a8b2f25b58fb4b00bd74dae887bb9574612d07aadea122e7a074e04cafdae4"
+    },
+    {
+      "source": "Everything this course could not read from primary text is named in wisconsin/regulatory/primary-text-readings.md and must be read in current text before it is relied on. This course is a version 1.0 submission draft, is not approved, and carries no Wisconsin pre-license credit.",
+      "before": "Todo lo que este curso no podía leer del texto primario se nombra en wisconsin/regular/primary-text-readings.md y debe leerse en el texto actual antes de que se confíe en él. Este curso es un borrador de presentación de la versión 1.0, no es aprobado, y no lleva crédito pre-licencia Wisconsin.",
+      "after": "Las fuentes primarias que no se consultaron se identifican en wisconsin/regulatory/primary-text-readings.md y deben leerse en su versión vigente antes de utilizarlas. Este curso es un borrador para presentación, versión 1.0; no está aprobado y no otorga crédito previo a la licencia de Wisconsin.",
+      "source_sha256": "8145ce59e9ba47d47605bd6c022860f7fb93d920016b6f5bc98b052f0340b6e1",
+      "target_sha256": "26a4edba827c5690c8fd1a93d5242c2334ddd004b8467ca6f24dd1b0fac6a707"
+    },
+    {
+      "source": "For the client-funds account in REEB 18.031(3)(a), the Department of Administration is beneficial owner after permitted charges; other trust funds have the separate written-authorization conditions in (3)(b), not a right to firm revenue.",
+      "before": "Para la cuenta cliente-fondos en REEB 18.031(3) a), el Departamento de Administración es beneficiario efectivo después de los cargos permitidos; otros fondos fiduciarios tienen las condiciones separadas de autorización por escrito en (3) b), no un derecho a ingresos firmes.",
+      "after": "En la cuenta de fondos de clientes de REEB 18.031(3)(a), el beneficiario es el Department of Administration, descontados los cargos permitidos. Los demás fondos de terceros están sujetos a las condiciones separadas de autorización escrita de (3)(b); no generan por ello un derecho a ingresos para la firma.",
+      "source_sha256": "696d4f2f122d305b8ff22817e35cdeeb143b4ef0abdb89d8cc6f1ff15d0760ee",
+      "target_sha256": "a35a88d5277dc193f3eb8604d1fb024df6f1b3084323c3829b8c31d1e44fcdbd"
+    },
+    {
+      "source": "Keep the check in the salesperson's drawer until the buyer says to deposit it, regardless of the firm's applicable duty.",
+      "before": "Mantenga el cheque en el cajón del vendedor hasta que el comprador le diga que lo deposite, independientemente del deber aplicable de la empresa.",
+      "after": "Guardar el cheque en el cajón del agente de ventas hasta que el comprador ordene depositarlo, sin atender a la obligación aplicable de la firma.",
+      "source_sha256": "bf756494a5b712a931954a3d29b8b87f1b4938d7204b885e905a98b92918e46d",
+      "target_sha256": "632d212cca787869cb124d07b902f1e80af2ba4a1258160f7adb468408ac71d1"
+    },
+    {
+      "source": "REEB 18.031 includes deposit timing and holiday/banking-closure provisions and a rule for nondepositable checks. An absent broker or a party request does not authorize personal-account use; not every check has the same permitted destination.",
+      "before": "REEB 18.031 incluye las disposiciones sobre el tiempo de depósito y el cierre de días festivos/bancarios y una regla para los controles no depositables. Un corredor ausente o una solicitud de parte no autoriza el uso de cuenta personal; no todos los cheques tienen el mismo destino permitido.",
+      "after": "REEB 18.031 incluye plazos de depósito, reglas para festivos y cierres bancarios, y una regla sobre cheques no depositables. La ausencia del bróker o la petición de una parte no autoriza a utilizar una cuenta personal; no todos los cheques tienen el mismo destino permitido.",
+      "source_sha256": "f464fa946996970fadacc829be927b0334d4101163e5fdc48acd8ac80335bf74",
+      "target_sha256": "30339a298aea9e20dccd6abd74e08e24b33117f3d54e37da69d4ad1c13b6edf4"
+    },
+    {
+      "source": "REEB 25.033(19)(h) names escrow agreement procedures as a required topic, and where a Board-approved form covers the situation the form is used. The lender's impound account is a related but different thing.",
+      "before": "REEB 25.033(19)(h) nombra los procedimientos de acuerdo de garantía bloqueada como un tema requerido, y cuando un formulario aprobado por la Junta cubre la situación se utiliza el formulario. La cuenta incautada del prestamista es una cosa relacionada pero diferente.",
+      "after": "REEB 25.033(19)(h) incluye los procedimientos de acuerdos de depósito en custodia (escrow) como tema obligatorio. Si un formulario aprobado por la Junta cubre la situación, se utiliza ese formulario. La cuenta del prestamista para impuestos y seguros es una figura relacionada, pero distinta.",
+      "source_sha256": "b1b181b82c7e75d3eb34cc3f268dabface0173ecb1772ea759e9946d1ba1ea11",
+      "target_sha256": "e777f6c57fadf55013e9c8bb3e4452e8cbe3e5983ca282c3fdadaf7ae901f8b6"
+    },
+    {
+      "source": "The lender's impound account for taxes and insurance.",
+      "before": "La cuenta incautada del prestamista para impuestos y seguros.",
+      "after": "La cuenta del prestamista destinada a impuestos y seguros (impound account).",
+      "source_sha256": "a404aeeb3fc67fcf08fc4b62de5cb11183568fd947e24e6c0a2d898dc427d8b2",
+      "target_sha256": "2f9dba8ea334961a067e0fed2b9b979f71c077cd1caa0b55a4d508ac41c5055d"
+    },
+    {
+      "source": "The rule requires prompt submission and supplies deposit timing, banking-closure, and nondepositable-check provisions. The salesperson cannot replace that process with personal convenience or a unilateral party request. Lawful authorized disbursement depends on its actual conditions; the former claim that no consent or exception could ever matter was overbroad.",
+      "before": "La norma requiere la pronta presentación y entrega de los depósitos, el cierre bancario y las disposiciones de verificación no depositable. El vendedor no puede sustituir ese proceso por conveniencia personal o una solicitud unilateral de parte. El desembolso autorizado por ley depende de sus condiciones reales; la primera afirmación de que no puede haber consentimiento o excepción es demasiado amplia.",
+      "after": "La norma exige entrega pronta y establece plazos de depósito, reglas para cierres bancarios y cheques no depositables. El agente de ventas no puede sustituir ese procedimiento por su conveniencia ni por la petición unilateral de una parte. El desembolso legalmente autorizado depende de sus condiciones; la afirmación anterior de que nunca podía importar el consentimiento o una excepción era demasiado amplia.",
+      "source_sha256": "6bce44dfad40d886cc797017b998c24388532300f2cfe6e02c122d3331c6a862",
+      "target_sha256": "8c100425f32e2fa2e40e8e9ed9d115f1d7150eb4f7f3b1202e20d072bb3912b0"
+    },
+    {
+      "source": "What does ch. REEB 16 govern?",
+      "before": "¿Qué hace ch. ¿Regístrate el REEB 16?",
+      "after": "¿Qué regula el cap. REEB 16?",
+      "source_sha256": "bff0084611b9f143a31b0f3b9c4d73026205fd4fd6ad4872b397b0a658485313",
+      "target_sha256": "eee80e48110bc58cf53d292ed548d3b221f00b29a68b4a42ebbc0d1c94102d52"
+    },
+    {
+      "source": "What does ch. REEB 24 govern?",
+      "before": "¿Qué hace ch. ¿Reeb 24 gobierna?",
+      "after": "¿Qué regula el cap. REEB 24?",
+      "source_sha256": "66e688f95549049c1ad5c40236c0b164f089c29a6cd75c19833550eb94df6759",
+      "target_sha256": "bb75ba7f55bea071b6e9401172869cfb09e486c9f22c2587fd070dcbf4cd7b89"
+    },
+    {
+      "source": "What is the licensee's obligation on receiving earnest money?",
+      "before": "¿Cuál es la obligación del licenciatario de recibir fondos serios?",
+      "after": "¿Qué obligación tiene el agente inmobiliario cuando recibe un depósito de buena fe?",
+      "source_sha256": "62260d4c1f249776bba7ef633a41fcd55e3333d63d642c745a5dd3f2cb427c54",
+      "target_sha256": "960f2feeff003bb0737b1912ca538fb82906f09ebf6e12537a2b23fd518edbc1"
+    },
+    {
+      "source": "You receive a $10,000 earnest money cheque on Friday afternoon. Your broker is away. The buyer asks you to hold it uncashed until their contingency clears, the seller asks for it to be released to them as a show of good faith, and a married seller in another file asks whether their spouse must sign the deed.",
+      "before": "Recibirás un cheque de $10,000 el viernes por la tarde. Tu agente está fuera. El comprador le pide que la mantenga intacta hasta que se aclare su contingencia, el vendedor le pide que se la dé a conocer como muestra de buena fe, y un vendedor casado en otro archivo le pregunta si su cónyuge debe firmar la escritura.",
+      "after": "Recibe un cheque de depósito de buena fe de $10,000 el viernes por la tarde. Su bróker está ausente. El comprador le pide conservarlo sin cobrar hasta que se cumpla su condición contractual; el vendedor pide que se le entregue como muestra de buena fe. En otro expediente, un vendedor casado pregunta si su cónyuge debe firmar la escritura.",
+      "source_sha256": "7530060cccf9405fe7de27b8b9ac6e84f2934447c1826f02818c648785f9faa3",
+      "target_sha256": "a47b84bcb4ddd1a4638cffc4d1bdc125bb2fab07bb54f22e70cf05e0f486171b"
+    }
+  ],
+  "questions_reviewed": [
+    "wi-salesperson:1",
+    "wi-salesperson:2",
+    "wi-salesperson:3",
+    "wi-salesperson:4",
+    "wi-salesperson:5",
+    "wi-salesperson:6",
+    "wi-salesperson:7",
+    "wi-salesperson:8",
+    "wi-salesperson:9",
+    "wi-salesperson:10",
+    "wi-salesperson:11",
+    "wi-salesperson:12",
+    "wi-salesperson:13",
+    "wi-salesperson:14",
+    "wi-salesperson:15",
+    "wi-salesperson:16",
+    "wi-salesperson:17",
+    "wi-salesperson:18",
+    "wi-salesperson:19",
+    "wi-salesperson:20",
+    "wi-salesperson:21",
+    "wi-salesperson:22",
+    "wi-salesperson:23",
+    "wi-salesperson:24",
+    "wi-salesperson:25",
+    "wi-salesperson:26",
+    "wi-salesperson:27",
+    "wi-salesperson:28",
+    "wi-salesperson:29",
+    "wi-salesperson:30",
+    "wi-salesperson:31",
+    "wi-salesperson:32",
+    "wi-salesperson:33",
+    "wi-salesperson:34",
+    "wi-salesperson:35",
+    "wi-salesperson:36",
+    "wi-salesperson:37",
+    "wi-salesperson:38",
+    "wi-salesperson:39",
+    "wi-salesperson:40",
+    "wi-salesperson:41",
+    "wi-salesperson:42",
+    "wi-salesperson:43",
+    "wi-salesperson:44",
+    "wi-salesperson:45",
+    "wi-salesperson:46",
+    "wi-salesperson:47",
+    "wi-salesperson:48",
+    "wi-salesperson:49",
+    "wi-salesperson:50",
+    "wi-salesperson:51",
+    "wi-salesperson:52",
+    "wi-salesperson:53",
+    "wi-salesperson:54",
+    "wi-salesperson:55",
+    "wi-salesperson:56",
+    "wi-salesperson:57",
+    "wi-salesperson:58",
+    "wi-salesperson:59",
+    "wi-salesperson:60",
+    "wi-salesperson:61",
+    "wi-salesperson:62",
+    "wi-salesperson:63",
+    "wi-salesperson:64",
+    "wi-salesperson:65",
+    "wi-salesperson:66",
+    "wi-salesperson:67",
+    "wi-salesperson:68",
+    "wi-salesperson:69",
+    "wi-salesperson:70",
+    "wi-salesperson:71",
+    "wi-salesperson:72",
+    "wi-salesperson:73",
+    "wi-salesperson:74",
+    "wi-salesperson:75",
+    "wi-salesperson:76",
+    "wi-salesperson:77",
+    "wi-salesperson:78",
+    "wi-salesperson:79",
+    "wi-salesperson:80",
+    "wi-salesperson:81",
+    "wi-salesperson:82",
+    "wi-salesperson:83",
+    "wi-salesperson:84",
+    "wi-salesperson:85",
+    "wi-salesperson:86",
+    "wi-salesperson:87",
+    "wi-salesperson:88",
+    "wi-salesperson:89",
+    "wi-salesperson:90",
+    "wi-salesperson:91",
+    "wi-salesperson:92",
+    "wi-salesperson:93",
+    "wi-salesperson:94",
+    "wi-salesperson:95",
+    "wi-salesperson:96",
+    "wi-salesperson:97",
+    "wi-salesperson:98",
+    "wi-salesperson:99",
+    "wi-salesperson:100",
+    "wi-salesperson:101",
+    "wi-salesperson:102",
+    "wi-salesperson:103",
+    "wi-salesperson:104",
+    "wi-salesperson:105",
+    "wi-salesperson:106",
+    "wi-salesperson:107",
+    "wi-salesperson:108",
+    "wi-salesperson:109",
+    "wi-salesperson:110",
+    "wi-salesperson:111",
+    "wi-salesperson:112",
+    "wi-salesperson:113",
+    "wi-salesperson:114",
+    "wi-salesperson:115",
+    "wi-salesperson:116",
+    "wi-salesperson:117",
+    "wi-salesperson:118",
+    "wi-salesperson:119",
+    "wi-salesperson:120",
+    "wi-salesperson:121",
+    "wi-salesperson:122",
+    "wi-salesperson:123",
+    "wi-salesperson:124",
+    "wi-salesperson:125",
+    "wi-salesperson:126",
+    "wi-salesperson:127",
+    "wi-salesperson:128",
+    "wi-salesperson:129",
+    "wi-salesperson:130",
+    "wi-salesperson:131",
+    "wi-salesperson:132",
+    "wi-salesperson:133",
+    "wi-salesperson:134",
+    "wi-salesperson:135",
+    "wi-salesperson:136",
+    "wi-salesperson:137",
+    "wi-salesperson:138",
+    "wi-salesperson:139",
+    "wi-salesperson:140",
+    "wi-salesperson:141",
+    "wi-salesperson:142",
+    "wi-salesperson:143"
+  ]
+}
