@@ -1,7 +1,24 @@
 {
   "course_id": "me-sales-agent-v1",
   "full_semantic_review": "OPEN",
-  "reviewed_sections": [],
+  "reviewed_sections": [
+    {
+      "lesson": "module-01",
+      "section_index": 0
+    },
+    {
+      "lesson": "module-01",
+      "section_index": 1
+    },
+    {
+      "lesson": "module-01",
+      "section_index": 2
+    },
+    {
+      "lesson": "module-01",
+      "section_index": 3
+    }
+  ],
   "corrections": [
     {
       "source": "Care, obedience, accounting, loyalty and disclosure — five duties.",
@@ -842,6 +859,83 @@
       "after": "Venta vinculada.",
       "source_sha256": "0419f15671ea31af899e14a804f72e08fbdb4edc189a34dc99362c99e8ddc073",
       "target_sha256": "a0f3d22dfe098b8646064189088310878b5f0561dd4e35fb8a34813c3cf14ed1"
+    },
+    {
+      "source": "1.2 Grading and Completion",
+      "before": "1.2 Clasificación y finalización",
+      "after": "1.2 Calificación y finalización",
+      "source_sha256": "20c24a9fec63e26f8a03e5a06b97e3873042fa8bca2f58235339a9e631a62e60",
+      "target_sha256": "b6754c54c3bc20f5d1cee27a7134a414754ecdfd59d44adb314919957c819142"
+    },
+    {
+      "source": "Assistance during an assessment, sharing items, and substitution of another person invalidate the attempt and are reportable to the Commission.",
+      "before": "La asistencia durante una evaluación, el intercambio de artículos y la sustitución de otra persona invalidan el intento y son informables a la Comisión.",
+      "after": "Recibir ayuda durante una evaluación, compartir preguntas y hacerse sustituir por otra persona invalidan el intento y pueden notificarse a la Comisión.",
+      "source_sha256": "511e548b959f3b974d83e2fb69fc7de55dce583ad6c4e8a72bf5271d84f3d1c4",
+      "target_sha256": "6f65d9d3078b81ce13cb4a3369802b38c43180c2acfd72462164385631a842ca"
+    },
+    {
+      "source": "Compensation, dual and appointed agency procedure, solicitation",
+      "before": "Remuneración, doble procedimiento de agencia designada, convocatoria",
+      "after": "Remuneración, procedimiento de representación dual y mediante agentes designados, captación de clientes",
+      "source_sha256": "457daca53a7248701d470957dd1d1c42af0e88f0475bfea863d712e5fe81f6b8",
+      "target_sha256": "ec82f6c6f1787c9dd3fa84d63bafae9ae47482bce11378869e4261b76499fae1"
+    },
+    {
+      "source": "Completion requires the instructional minutes, the case studies, the quizzes, and the final. The LMS records assessment minutes separately from instructional minutes;",
+      "before": "La finalización requiere los minutos de instrucción, los estudios de caso, los cuestionarios y la final. El SML registra las actas de evaluación por separado de las actas de instrucción;",
+      "after": "Para completar el curso se requieren los minutos de instrucción, los casos prácticos, los cuestionarios y el examen final. El LMS registra por separado los minutos de evaluación y los de instrucción;",
+      "source_sha256": "c7eac7228e6eda3a32de8181f501046789c5d8facf5275cf68f3c5790eecc576",
+      "target_sha256": "ae5096d86b9e7690e10f7bdc7935d2fd9c8853c1da2592756ea5d76022417a11"
+    },
+    {
+      "source": "Describe how the course operates, how it is graded, and what the Commission requires of the",
+      "before": "Describir cómo funciona el curso, cómo se clasifica, y lo que la Comisión requiere de la",
+      "after": "Describir cómo funciona el curso, cómo se califica y qué exige la Comisión respecto de la",
+      "source_sha256": "2d9bdf1b30998b1fd1feaf9a977ee271eff8205d2282f8ecfb6c805b11dc5b2b",
+      "target_sha256": "48d9e1eb4bb3a17ef113e93154dd6b5b714f465980f469f7dea873f38883e188"
+    },
+    {
+      "source": "Instructional minutes:",
+      "before": "Actas de instrucción:",
+      "after": "Minutos de instrucción:",
+      "source_sha256": "20df3ff1d97706d362b9203d64d3bf61d640cab12df05f494e9bf3bf2203f716",
+      "target_sha256": "477ba29c41ff49e6c746a50cdefaf25cac2ac9a4567622b0a3753b6e30580f82"
+    },
+    {
+      "source": "Introduction: how the course operates, grading, integrity, support",
+      "before": "Introducción: cómo funciona el curso, clasificación, integridad, apoyo",
+      "after": "Introducción: funcionamiento del curso, calificación, integridad y apoyo",
+      "source_sha256": "dbf2453baef093fb122b263c59a68360849e58b7a7bf4c097139f67464f81917",
+      "target_sha256": "cdbd7b7cf9906bb04cb2d9bb9e7d5f759af5ddfe528c7e137276059f5b780e60"
+    },
+    {
+      "source": "Minutes",
+      "before": "Actas",
+      "after": "Minutos",
+      "source_sha256": "4f846a84e7fc9ef6e68468c270c9153c20204641bd7b839ad4b8e5233e1c86d0",
+      "target_sha256": "634fd3c59ad054c59153611b9871241655d2b73981b2df9d870dce056ed60821"
+    },
+    {
+      "source": "Module engagement check",
+      "before": "Comprobación de la conexión del módulo",
+      "after": "Comprobación de participación en el módulo",
+      "source_sha256": "08abc03c5276d7f9c7ab529e725a424a42d00cbce2268a13012992535239794b",
+      "target_sha256": "1803cda32ad9ffc0fae7af848ae607103934e6afa4cb9c7b3a49761366fd74f0"
+    },
+    {
+      "source": "legislature.maine.gov",
+      "before": "Legislative.maine.gov",
+      "after": "legislature.maine.gov",
+      "source_sha256": "82db09f0545120efe7785c8c5929a5dce68285d450275242fe2c805644c3ab44",
+      "target_sha256": "82db09f0545120efe7785c8c5929a5dce68285d450275242fe2c805644c3ab44"
+    },
+    {
+      "source": "required of an applicant for a Maine real estate sales agent licence. It is 55 clock hours:",
+      "before": "el solicitante de una licencia de agente de venta de bienes raíces de Maine. Son 55 horas de reloj:",
+      "after": "exigido a quien solicita una licencia de agente de ventas inmobiliarias de Maine. Consta de 55 horas de reloj:",
+      "source_sha256": "665de4c13c167643aca2a819daba0035c68cb38655cfeda428ae7fec96ec3ef7",
+      "target_sha256": "59bcd7e37b63221b956af5fd886b77047e741ce799d4a3aa3f912037d8be6453"
     }
   ],
   "questions_reviewed": [

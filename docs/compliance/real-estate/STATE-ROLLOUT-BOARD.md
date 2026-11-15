@@ -126,3 +126,7 @@ A folder, draft package, test, price object, or public route does not mean submi
 ## Course-by-course learning coverage — 2026-09-19
 
 The unified console carries a build-generated [source manifest](../../../config/console-course-evidence.json) for all 30 catalog courses. The 26 unconnected courses have individually hashed curriculum files: 21 load a specific authored state-engine definition and 5 have separate Texas authoring/reviewer engines. These are not authenticated student runtimes. Each record identifies its authored identity, source directory, engine inspection and missing version/delivery/persistence connection. The four registered Real Estate runtimes remain separate; no additional course is activated. Florida, Georgia, Illinois, Kansas and research entries remain outside operational course totals. See [local acceptance record](../../admin/UNIFIED-ADMIN-ACCEPTANCE.md).
+
+## Spanish review checkpoint3 — 2026-11-14
+
+5,623 cumulative entries corrected across27courses; all30 full semantic final signoffs and human linguistic/SME/duration gates remain OPEN. Build5protected tests,51focused tests and3sentence tests passed. Production acceptance pending. Exact coverage and source issues: docs/audits/REAL-ESTATE-SPANISH-PARALLEL-REVIEW-2026-11-14.md. No regulatory approval, enrollment or credit status changed.

@@ -57,3 +57,16 @@ Human linguistic/SME, all30 final semantic signoffs and learner-duration validat
 ### Second checkpoint observed live acceptance
 
 Content commit `4a616ede7c848da953a601567f5615c7a959ef92`, deploy `6af8f8f0af5d12856398a242`, ready/published `2026-11-15T00:13:07.649Z`. All30 generated Spanish companion SHA-256 values matched production HTTPS; all14state Spanish entry links present. Actual Chrome opened all30courses with Spanish ready and visible lesson readers; corrected WA Fundamentals question1 choice observed on production and local preview. Evidence: `spanish-parallel-production-http-2-20261114.json`, `spanish-parallel-production-browser-2-20261114.json`, `spanish-parallel-production-2-20261114.png`. New edits after this content snapshot are not included in its live acceptance. Full semantic and SME gates remain OPEN; review continues.
+
+## Third checkpoint — continued review
+
+Cumulative baseline173e07f:5,623 changed entries /5,373 distinct sources across27courses, adding2,458 net entries since checkpoint2. This is not full30course completion. All metadata, source keys/order and answer keys preserved.
+
+- West: AK8modules/88questions, AZcontract2lessons/22questions, AZ9013modules/143questions fully read. MI modules01–09 read, questions0–87 read; module10 and questions88–109 remain. All3CA courses unread in this pass.
+- Central: all825questionblocks;13full lessons (COCurrent3,Trust4,Closings5,Contracts01) plus Contracts02sections0–3,120sections total. Remaining lessons OPEN.
+- Texas: all708questions,16full lessons (Finance10,PrinciplesI6), PrinciplesIlesson6sections0–3 and4Financeactivities.44lessons not fully read; other activities OPEN.
+- Root: all781questions across6courses (WA66+132,ME99,WI143,NC176,VA165), WA Practices01all12sections and Maine01sections0–3. Other lessons OPEN. VA231 and NC258 corrections pass numeric/reference checks.
+
+Evidence: checkpoint3 consolidated before/after ledger and reviewer ledgers. Build passed including5protected tests;51focused tests and3sentence tests passed; diff check passed. Publication/runtime acceptance pending.
+
+Additional English-source issues remain OPEN: VA101 appraisal-gap sum, VA150 intermediate acreage rounding, VA134 blanket title-insurance encroachment exclusion; TXPrinciplesI module06 expectation-damages formula reverses its own example. Preserve source until qualified review. Full semantic final signoff, human linguistic/SME review and learner duration remain OPEN. Recovery: forward commit restoring affected files to verified checkpoint2, build and normal Git CD. No infrastructure, credentials, DB, payments or regulatory activation changes.
