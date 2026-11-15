@@ -1,0 +1,1462 @@
+{
+  "status": "IN PROGRESS; exact assembled sentence review; human linguistic/SME/duration OPEN",
+  "corrections": [
+    {
+      "course_id": "me-sales-agent-v1",
+      "source": ", the burdened one the",
+      "before": ", el agobiado el",
+      "after": ", y la gravada es el",
+      "source_sha256": "ca7166ec0ebecdeb624972bcb5e78e7e9ad03636880ede334a2daa32a6063b4e",
+      "target_sha256": "861cf62194a704531f4e4c750959a0d2a30d8d64bba4087675e17c8abc9095e5"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "source": "Lot 7 as shown on a plan entitled \"…\", recorded in the ___ County Registry of Deeds in Plan Book __, Page __.",
+      "before": "Lote 7 como se muestra en un plan titulado \"...\", registrado en el ___ Registro del Condado de Acciones en el Libro del Plan __, Página __.",
+      "after": "Lote 7 según el plano titulado «…», inscrito en el Registro de Escrituras del Condado de ___, Libro de Planos __, Página __.",
+      "source_sha256": "ba3fcb86cb291948d8cd8e024f353abdf93b09241f976cc14d2189972cd37c87",
+      "target_sha256": "90da9493af4dd42a3c2b2a50d63b74057d354ab432805b863ee226e89dc121b7"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "source": "benefits a parcel: the benefited parcel is the",
+      "before": "beneficia a un terreno: la parcela beneficiada es la",
+      "after": "beneficia a una parcela: la beneficiada es el",
+      "source_sha256": "7a45aec6119f55dd358cb3c1874e3f937d7b8a41aff6c39e38e4ab6fab3a8391",
+      "target_sha256": "be87b01a2e20abdabf0452dfb4a0411c5993be5c62a1e782c10d0000bdbf267a"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "source": "easement appurtenant",
+      "before": "Acoplado de servidumbre",
+      "after": "servidumbre predial",
+      "source_sha256": "de2e5951c7ba3ef0cb4f182c57a39918a16bb7eeba242168e474396422db368f",
+      "target_sha256": "c857d5f024861dc27484190c4c9d540baca100f57d230a0e1dc6be1a088e0889"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "source": "ends",
+      "before": "fines",
+      "after": "se extingue",
+      "source_sha256": "b7a7513cd632f8a3c939c21d6bc4e184f0f00c92cebaec79572d6b8085d6c98b",
+      "target_sha256": "0d803dc84f35b67c415038ac85eff38edc80fc7a341a46847ccd295196f3e1e4"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "source": "estate",
+      "before": "bienes inmuebles",
+      "after": "derecho sobre el inmueble",
+      "source_sha256": "e62377847bbe2117fbea3a09ac72e59a12572c20ca18ee024fedeaa94ba8525a",
+      "target_sha256": "19690b06cf1688ab72b0e2566a2b642b4793995781669ef97168646bf7a1c8bd"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "source": "has full use and possession, may lease or convey what they have, and takes the income — but may not convey more than they own and may not commit",
+      "before": "tiene pleno uso y posesión, puede arrendar o transmitir lo que tienen, y toma los ingresos, pero no puede transmitir más de lo que poseen y no puede comprometerse",
+      "after": "tiene pleno uso y posesión, puede arrendar o transmitir su derecho y percibe los ingresos, pero no puede transmitir más de lo que posee ni causar",
+      "source_sha256": "6b8550ac33a31278c03ab7552852ac5277669237be774c21e8ec07141c94e88e",
+      "target_sha256": "c5e003c0e1b292f74595c4c8e9c84fc6ca311334dc0a329f5f1f3db38bf139da"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "source": "is a claim or right held by someone other than the owner that affects title or limits use. Those affecting",
+      "before": "es una reclamación o derecho en poder de otra persona que no sea el propietario que afecte a la titularidad o a los límites de uso. Afectantes",
+      "after": "es una reclamación o derecho de alguien distinto del propietario que afecta al título o limita el uso. Las que afectan al",
+      "source_sha256": "5419fdd59edd80fc2535088d8b1e396a96072784069ee1fe69e9c0927937504d",
+      "target_sha256": "920a5b8e9b73e258dbe81af6bb9b9cf3d4c2681795ad4b20dc26842966a34ac7"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "source": "is measured by a life. The",
+      "before": "se mide por una vida. Los",
+      "after": "dura lo que dure una vida. El",
+      "source_sha256": "5f1fd9f20f9175df0ae0de2f0198c7505bbad2bb215a4f9c9bbf43cfde17e1a0",
+      "target_sha256": "c8a75e739808684d6dc5a8b92fa24653d4cfd179aca3b71be14eafe110e25994"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "source": "is measured by someone else's life and is the one life estate that can be inherited — if the holder dies while the measuring life continues, the balance passes to the holder's heirs.",
+      "before": "se mide por la vida de otra persona y es la única propiedad de la vida que se puede heredar — si el titular muere mientras la vida de medición continúa, el equilibrio pasa a los herederos del titular.",
+      "after": "dura lo que dure la vida de otra persona y es el único derecho vitalicio que puede heredarse: si el titular fallece mientras sigue viva la persona de referencia, el derecho restante pasa a sus herederos.",
+      "source_sha256": "09f36d08a3aa281fc4e92366a0dbe2c4f50245df3ebaa87c4e331a4ddf5f3274",
+      "target_sha256": "752a9c68e5ad701d05fa7cfe4943625064060957fb8f013f85ffafe4460122d6"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "source": "possibility of reverter",
+      "before": "posibilidad de reversor",
+      "after": "posibilidad de reversión",
+      "source_sha256": "026135640628fb4b86f591069e44fec51a3589632331d633373861f704b3f454",
+      "target_sha256": "05fd42335bfba502e4ec73ceb7bdf35e1a90131cd8b23161bc61b0a003c07116"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "source": "title as security for money",
+      "before": "título como seguridad por dinero",
+      "after": "título como garantía de deudas",
+      "source_sha256": "c59fac22a4fac4b89c39f18ed950f59627424b1728461f01fa1a023f75a7a87c",
+      "target_sha256": "daa3e7edeee3b241efa1e7a2f08338ba4d5deead0f2bbd3cdd5b349927d45b0d"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "source": "usually stamped to say so",
+      "before": "por lo general estampado para decir así",
+      "after": "normalmente lleva un sello que lo advierte",
+      "source_sha256": "cf19f2d87207792bcd43154bcaaa7d4323b2334b1ec033b36a5eb30ce09e18e8",
+      "target_sha256": "63a2da10adcf1631896cbb149ad546790d6ae4c6f053bd89b4127d4db4391231"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "source": "A. The signature of the client to be charged.",
+      "before": "A. La firma del cliente obligado a pagar.",
+      "after": "A. La firma del cliente frente al cual se pretende hacer valer el acuerdo.",
+      "source_sha256": "dc92b97fcf129251a61deff7e8a1b88cd2b1fe48646f0994ebb6fa6bd36e01a7",
+      "target_sha256": "18323a5c72406c928e55af08bf133e5e327cc28f51f5bfaaaf41077c9063f020"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "source": "or recorded-plan description references a plan recorded at the Registry of Deeds:",
+      "before": "o la descripción del plan registrado hace referencia a un plan registrado en el Registro de escrituras:",
+      "after": "o mediante plano registrado remite a un plano inscrito en el Registro de Escrituras:",
+      "source_sha256": "80b903e98b5c758eea11d8c5ae2f4b71ee79a0bc57e0ce99a7d8157cb62f044e",
+      "target_sha256": "3ea3e5b64d6e17d25780922807cdc5e9fef5dcf8f475a4edd3cdf48d3db8faf9"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "source": "signature of the client to be charged",
+      "before": "firma del cliente a cobrar",
+      "after": "firma del cliente frente al cual se pretende hacer valer el acuerdo",
+      "source_sha256": "d4553e65f289425dbf24ca1349eb3f44ae4a712567b5bd007d80750632c6b1c9",
+      "target_sha256": "cab12d6f965411451adddbe6694a3f3cabdfd6116608b7e523c73cc26dc994cb"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "source": ", and the section they were made under — § 13273 1 B (3) to a client, or § 13283 2 B to a buyer as a transaction broker. The",
+      "before": ", y la sección que se hizo bajo - § 13273 1 B (3) a un cliente, o § 13283 2 B a un comprador como un corredor de transacciones. Los",
+      "after": ", y la disposición que las fundamenta: § 13273 1 B (3) para un cliente, o § 13283 2 B para un comprador atendido por un corredor de transacciones. Las",
+      "source_sha256": "a461f07bb0225f2410bb09c73560fb64f4e9dc8d18bed3bcd39b792ddcc96bad",
+      "target_sha256": "d5dbd641d9864f837debd5c3e177b24f5ce7bc8bd0e11973a7319459c743cdce"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "source": ", with an office named against every line.",
+      "before": ", con una oficina contra todas las líneas.",
+      "after": ", indicando junto a cada cuestión la oficina que puede responderla.",
+      "source_sha256": "cdbbd6d9a714ea22dbf71b4391f034002133989bf253faf0a6f77d468bed6a40",
+      "target_sha256": "bbcc5ee803fe07f66d8171ab93dc61751bd26adc55a9be76a0d43604595b9913"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "source": ", with the person or office and the date. And the",
+      "before": ", con la persona u oficina y la fecha. Y el",
+      "after": ", con la persona u oficina y la fecha. Y la",
+      "source_sha256": "58514df5c2d5ce6f8ed97936bf57f3c350e7e105811668c64328a721b5a8db0a",
+      "target_sha256": "cf0d18928a6a062284cd51076c5dcaa19d1e849e33e304c64645a2f0f87ee838"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "source": "A lender's policy does not protect the buyer",
+      "before": "La política de un prestamista no protege al comprador",
+      "after": "La póliza del prestamista no protege al comprador",
+      "source_sha256": "445acdbe9582db81107d3ae3bb4f3faf135f74588135e4ae8e933a71bbfd0eac",
+      "target_sha256": "25b060ab31750ce192e357d99a0e7d230c99e9854435529fa388ebafe6ba0fdd"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "source": "as furnished, with every blank identified. The",
+      "before": "como amueblado, con cada blanco identificado. Los",
+      "after": "tal como se entregó, identificando cada espacio en blanco. La",
+      "source_sha256": "34b146fd36adfbb3f202a941e5367df6d36cafc24a050a5a0d84452e13754a75",
+      "target_sha256": "9bf1794824822e854cb1e965a450b7fa25c99ac8b375b9664f1c8498b89df339"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "source": "communication to the buyer of each item, with the contingency deadline stated. The",
+      "before": "comunicación al comprador de cada artículo, con el plazo de contingencia establecido. Los",
+      "after": "comunicación al comprador de cada asunto, con el plazo de la condición contractual. Las",
+      "source_sha256": "72642d6c388382f01a258b1d749ec93bd14a75d359bfd57ef905c38ee404b1de",
+      "target_sha256": "94b9a6b40582eca03e48df9cf29f15f338603bc87d6eccc5ba705af7fcbe589e"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "source": "investigation prompt list",
+      "before": "lista rápida de investigación",
+      "after": "lista de cuestiones que deben investigarse",
+      "source_sha256": "2ca20ab1404d37dd7c380bbb74dfab897110fd5a0b7129e2e63604c81ecc3273",
+      "target_sha256": "ed00932b827e015fd25fcb0cef3f940eeb42bda9ead7dabc4910632b3230c736"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "source": "is a break — a conveyance out from someone who never appears as a grantee, often an unrecorded deed, an unrecorded probate, or a name change. A",
+      "before": "es una ruptura — una transmisión de alguien que nunca aparece como un adquirente, a menudo un instrumento de transmisión no registrado, un testamento no registrado, o un cambio de nombre. A",
+      "after": "es una ruptura en la cadena: transmite alguien que nunca figura como adquirente, a menudo por una escritura no inscrita, un procedimiento sucesorio no registrado o un cambio de nombre. Una",
+      "source_sha256": "edcafba2310a5d4911a20f5cce3c775a65aada34ce5c12394003c5362b300c52",
+      "target_sha256": "e4a9ba5c3226166d53e1282ce66d092610bd294c9771b9fcffa5f2210250d61b"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "source": "is a shared wall on a boundary, each owner typically owning to the centre with an easement of support in the other half.",
+      "before": "es un muro compartido en un límite, cada propietario típicamente es dueño del centro con una servidumbre de apoyo en la otra mitad.",
+      "after": "es un muro compartido situado sobre un lindero; normalmente, cada propietario es dueño hasta su línea central y tiene una servidumbre de apoyo sobre la otra mitad.",
+      "source_sha256": "352ffd2f26c1b397d75bf32d41b2cbec494673ad73d24c2db021587af64dbc1e",
+      "target_sha256": "1f135a37dc2a9e089db473982793a812cb481d4d7b176f87d8a69973ecfb06ea"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "source": "licensee's own disclosures",
+      "before": "Divulgación propia del licenciatario",
+      "after": "divulgaciones realizadas por el propio titular de licencia",
+      "source_sha256": "098c7037a2702d26c6ae3ee67d2dbba8392f5728b3422ac730f8c5de4f4a3997",
+      "target_sha256": "851ab54eed8c6d09616b694d00ffb30f68879889406c2493bb73d62a6140e4f3"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "source": "relieves a",
+      "before": "alivia a",
+      "after": "permite una excepción a un requisito",
+      "source_sha256": "c0e95af969d0aaeefe709dec7f3d43d6a4e6349ac71022ee8f41c318cb5c4f66",
+      "target_sha256": "79046a4c42ebc1246e8339d11bb7af35fffad2148b0e1d3daaf8ab3a1a6c2c76"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "source": "requirement",
+      "before": "Necesidades",
+      "after": "requisito",
+      "source_sha256": "f8dcb7a13bf4991a7d7969ea1c8add149e79b13ae91c0e6c13994da38eb3636a",
+      "target_sha256": "f6dbb9d893ed7079a82a8e7f292ab57432b7809b6877293867e6d6da74cb2123"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "source": "requirement where strict application causes an undue hardship arising from the property itself — shape, topography, soils. It is granted by the board of appeals.",
+      "before": "requisito cuando la aplicación estricta cause dificultades indebidas derivadas de la propia propiedad: forma, topografía, suelos. Es concedida por la junta de apelaciones.",
+      "after": "cuando su aplicación estricta causa una dificultad excesiva derivada del propio inmueble: forma, topografía o suelos. La concede la junta de apelaciones.",
+      "source_sha256": "d549f899b8d3ce277507928f20e08aab7878e19d51e046121753b8fa4f459ecf",
+      "target_sha256": "94bc2d7aec6d8631e8058caad7ae17a1859758940ebe8d73ba467929af7e4466"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "source": "— risks the insurer declines, commonly including rights of parties in possession and",
+      "before": "— riesgos de declinación del asegurador, incluidos habitualmente los derechos de las partes en posesión, y",
+      "after": "— riesgos que la aseguradora excluye, habitualmente los derechos de quienes poseen el inmueble y",
+      "source_sha256": "9d4fd954d773ed5d8d1cc0f9a713f92ed63cb3908f1206f5be02d987aa83ed0a",
+      "target_sha256": "eebdbc559fc0cf36c81877a259d1eb638ca15091ad8410a7fdb8e731449109e5"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "source": ", delivered and recorded, for every buyer and seller of one-to-four-unit residential property. The",
+      "before": ", entregado y registrado, por cada comprador y vendedor de una a cuatro unidades de propiedad residencial. Los",
+      "after": ", entregado y registrado para cada comprador y vendedor de vivienda residencial de una a cuatro unidades. El consentimiento sobre la",
+      "source_sha256": "4cd394841c51e1bd24e4ab4353b2aa278285be3222fc9b6f900ea668ebdf8069",
+      "target_sha256": "2cab137269733eddbacf6feb5aeec642113878d1cdce94d6a883df8fd3a90501"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "source": ", where the agency is on both sides. The",
+      "before": ", donde la agencia está en ambos lados. Los",
+      "after": ", cuando la agencia actúa en ambos lados. La",
+      "source_sha256": "62fb3eba1fe8efa4b634f3edd662ef009bed3281629524e3732e08925b5d7ccc",
+      "target_sha256": "d0a4a0fdbdea5211f5b4223d09f8591947ce050ae6b1c6d02ccae98b2f1913e6"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "source": ", with date and time and evidence of presentation. The",
+      "before": ", con fecha y hora y pruebas de presentación. Los",
+      "after": ", con fecha, hora y prueba de presentación. El",
+      "source_sha256": "ea25ab5f16811bde956124be927e7347a4a88ba02bedee1639ee4a9968fc9860",
+      "target_sha256": "87aabc183b8b0789e5f2550036b79fa39329a049373a252bde38bf7b47240305"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "source": ", with date and time — § 13273 1 B (2). The",
+      "before": ", con fecha y hora — § 13273 1 B (2). Los",
+      "after": ", con fecha y hora — § 13273 1 B (2). El",
+      "source_sha256": "a999f5530211f5ed859820f8cf6ddbaf6bc475715a70400c1fb882fa505a2148",
+      "target_sha256": "f2eba920e8fd1b99a7373d56b2334e73dbd6dbba5a0b68cda8c4ee09e05554fb"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "source": ", with its blanks identified. The",
+      "before": ", con sus espacios en blanco identificados. Los",
+      "after": ", con sus espacios en blanco identificados. El",
+      "source_sha256": "708538f147211bf0ef891ad7da1c2a5de4da3f88e2b224fd69de4db2f5eb7da4",
+      "target_sha256": "8a52666e33caaa61007917fd698a958e2dfcc1ad67a7cffe8948f39c2ef301e6"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "source": "Assessment minutes are recorded separately and count toward no topic allocation.",
+      "before": "Los minutos de evaluación se registran por separado y cuentan para ninguna asignación de temas.",
+      "after": "Los minutos de evaluación se registran por separado y no se imputan al tiempo asignado a ningún tema.",
+      "source_sha256": "c251712bfcd34a3253317db33be84841c4c8375f40aa20b60e5e970b3d2b3659",
+      "target_sha256": "37ffe729826390e5176229e8d4d58dbc99e07e6c86d1f0f62d6932633bbac8ce"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "source": "Title passes on delivery and acceptance",
+      "before": "Título pasa a la entrega y aceptación",
+      "after": "La titularidad se transmite con la entrega y la aceptación",
+      "source_sha256": "93fbcc009f9e0074cb35e027a38c0a5dae904fd7edbbe86e186fb242734a3a39",
+      "target_sha256": "70d2d3a311dcebd074038685408a387af160ba46bb2c24afa0709f8a0961cb6c"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "source": "actually appearing, in the agreed amount.",
+      "before": "realmente aparecer, en la cantidad acordada.",
+      "after": "debe aparecer realmente y por el importe acordado.",
+      "source_sha256": "ae07e285346826ff1c51719b0e23d2fb6ffd4bd0ccc9d01cc34943792faa3aee",
+      "target_sha256": "4b33c3b3e95de9f72b694841ccea54398982a20cd0600ec8b4b22d6e0bd6fece"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "source": "agreed by amendment reflected where the parties agreed they would be. The",
+      "before": "acuerdo por la enmienda refleja donde las partes acordaron que serían. Los",
+      "after": "acordadas mediante modificación contractual, reflejadas donde las partes acordaron. El",
+      "source_sha256": "c614740d4dd667d6b9f7b866a2e143bde5548507b459e003a28a7277fe1f949d",
+      "target_sha256": "73d55be18b886a909a62f88342d322c9e68b6dc1614ca6e10737f46b48435fa8"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "source": "and its good-through date on the seller's side.",
+      "before": "y su fecha final por parte del vendedor.",
+      "after": "y la fecha hasta la que es válido, en la parte correspondiente al vendedor.",
+      "source_sha256": "42e63a516496ab3039d313f218ed2fc4dab72a7845cf08bf452ad23185bb26fb",
+      "target_sha256": "8e4ca47f55d4dc350ce8b7d277947128eaa24d984f4782abab9116e38549d72f"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "source": "changes an existing contract and needs the assent of all parties. A",
+      "before": "modifica un contrato existente y necesita el consentimiento de todas las partes. A",
+      "after": "modifica un contrato existente y requiere el consentimiento de todas las partes. Una",
+      "source_sha256": "7a114a9d9783304d346f4eeec7bbbbbc164f1367d41c58c17166faa9c7d88031",
+      "target_sha256": "de6c157757c57238d4c52b2698f3d3f61f50a24d0537e4ffe9ad1f28b0ae059c"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "source": "consent, in writing and in advance, where the agency practises appointed agency. The",
+      "before": "el consentimiento, por escrito y por adelantado, cuando la agencia ejerza la agencia designada. Los",
+      "after": "debe constar por escrito y de antemano cuando la agencia practica la representación por agentes designados. El",
+      "source_sha256": "93862b3350824aa7561136aa41fea891833b71614413d1c71931bc5e1d911512",
+      "target_sha256": "45edbb6fac8bba286ea854a9be6ecdc014759ff7eff13995e945b2c47a74b3e9"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "source": "for the 1971 house, with the signed acknowledgment. The",
+      "before": "para la casa de 1971, con el reconocimiento firmado. Los",
+      "after": "para la vivienda de 1971, con el acuse firmado. La",
+      "source_sha256": "1df0f5e72a9f828fb8f0d85a3b1aa32b10c45b7f99b487eb97b426af009d46de",
+      "target_sha256": "219341841c0a7705c6179fb2ee0861126c1a0f7e997f392029c963557c6910ae"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "source": "is attached at the time of contracting and forms part of the original agreement. An",
+      "before": "se adjunta en el momento de la contratación y forma parte del acuerdo original. Un",
+      "after": "se adjunta al contratar y forma parte del acuerdo original. Una",
+      "source_sha256": "4712669b127c303ac5950ff30737056ee4d3815479baf108fb92b59e2eb8ff31",
+      "target_sha256": "9dee989c02d82838521d4781eb69c363262ed81b8951efd60ecc2ec5d7d84c5d"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "source": "is eighty questions, delivered across Hours 53, 54 and 55, after all instruction and both case studies are complete.",
+      "before": "son ochenta preguntas, entregadas a lo largo de las Horas 53, 54 y 55, después de toda instrucción y ambos estudios de caso están completos.",
+      "after": "consta de ochenta preguntas y se realiza durante las Horas 53, 54 y 55, después de completar toda la instrucción y ambos casos prácticos.",
+      "source_sha256": "130a733ec6bc0b8c8613132abbda891e079be74108350725046f03edb88a4b59",
+      "target_sha256": "54a7524af8f14eb02d6aaf9c610a5f6b9c81d315bd4e9c4ada1295127618c09b"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "source": "is older, narrower and in one respect stronger: it prohibits",
+      "before": "es más viejo, más estrecho y en un aspecto más fuerte: prohíbe",
+      "after": "es más antigua, tiene un alcance más limitado y, en un aspecto, es más estricta: prohíbe la",
+      "source_sha256": "91d9eb4ab7d8cdf3f30fe4d42361ecd55a2a16b8ee77beff4313cee5d408479f",
+      "target_sha256": "c71f70e0454f1753fb21163a7ffff5760a7e609ff9a303578004a4a6f48129fa"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "source": "is prepared by the attorney, executed by the seller, acknowledged before a notary, and delivered at closing.",
+      "before": "es preparado por el abogado, ejecutado por el vendedor, reconocido ante un notario, y entregado en el cierre.",
+      "after": "la prepara el abogado, la firma el vendedor, se reconoce la firma ante notario y se entrega al cierre.",
+      "source_sha256": "da43b51d0e099b9184177a9441808684703c056b265ccbf5b14d116b77b20f26",
+      "target_sha256": "fbc7305f1cd2baac0eb608e437fdb9e5d04d7b8a5e9823776353950d853acce3"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "source": "matching the convention the contract specified, including the municipal fiscal year. The",
+      "before": "que coincida con la convención especificada en el contrato, incluido el año fiscal municipal. Los",
+      "after": "que coincidan con el método especificado en el contrato, incluido el ejercicio fiscal municipal. El",
+      "source_sha256": "ead9e101020728a93f2093c0fff311a98eb7159935342b91095e6806b493b252",
+      "target_sha256": "d6b5d1303c8764c2b10c82c49fbbb8a13fecf3da722f6753bded4d8d205cea07"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "source": "no record of the licensee characterising",
+      "before": "no hay constancia de la caracterización del licenciatario",
+      "after": "ningún registro de que el titular de licencia haya explicado por su cuenta",
+      "source_sha256": "907042fce7087433f456923454302e5a05de2c3315294e6732beb61d9ecea1ad",
+      "target_sha256": "b94dcd086f2508d5c0b8f15b43759edc8dbb990afe7e1a2a0ba0016d4cc8f607"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "source": "on the disclosure against the ratified agreement and every amendment. The",
+      "before": "sobre la divulgación contra el acuerdo ratificado y todas las enmiendas. Los",
+      "after": "indicado en la divulgación, comparado con el acuerdo ratificado y cada modificación. El",
+      "source_sha256": "16f777e805fc4bcacb488362854737f4b6f6ed8664eeac7aeffdd770949a2e58",
+      "target_sha256": "0a0a2b2be626bd73c3651900ceb7dde502deed93d1c057a3d68ae4b5dbbf2be4"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "source": "receipt and evidence of delivery. A record showing that the",
+      "before": "recepción y prueba de la entrega. Un registro que muestra que el",
+      "after": "con su recibo y prueba de entrega. Un registro que demuestre que la",
+      "source_sha256": "ef9b2eaf4f5cd537ec4c62c452c523d3e15a7c2938b609507f1fe3c5adb049a7",
+      "target_sha256": "add63b5a939f35944e961e859f9ccba78f45d5048645cba25931996522cc5277"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "source": "received by the borrower a defined period before consummation",
+      "before": "recibido por el prestatario un período definido antes de la consumación",
+      "after": "recibida por el prestatario dentro del plazo definido antes de la consumación",
+      "source_sha256": "777bdd786d1331a7b9de1957cde5f14ee68ca65a1920fc6a610a3fd835e1294f",
+      "target_sha256": "e8bbbb14ae6bd893b86342fd52c760ed9f37f8851552de9d10a4c06dd2189a6b"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "source": "seller credit",
+      "before": "crédito por vendedor",
+      "after": "crédito concedido por el vendedor",
+      "source_sha256": "33d97f1c7a056679ed69470eefafda755e7020e60b5dbf2f6f8030a9697bb612",
+      "target_sha256": "f1bb44de0d3cfe1110ebf1ec459b8752a9459a8a3c5baeb123b7dcfc4110bbf0"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "source": "the consequences of Buyer B's waiver of the inspection contingency to Buyer B — because § 13283 3 B and 3 C prohibit exactly that.",
+      "before": "las consecuencias de la renuncia del comprador B de la contingencia de la inspección al comprador B — porque § 13283 3 B y 3 C prohíben exactamente eso.",
+      "after": "al Comprador B las consecuencias de su renuncia a la condición de inspección, porque § 13283 3 B y 3 C prohíben precisamente eso.",
+      "source_sha256": "5e89e519d9c986d4a0dc621edbcabe9164e0bb514aa1ade6d9e65db10844e366",
+      "target_sha256": "426c9cbb741a8abbe72153204d5cecfff6b5d2d27c29242afed23b5a585d945e"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "source": "with every addendum referenced and attached, initialled where changed. The",
+      "before": "con cada adición referenciada y adjuntada, rubricada cuando haya cambiado. Los",
+      "after": "con cada anexo citado y adjunto, e iniciales donde haya cambios. El",
+      "source_sha256": "dbbbd8965cb30604041c085a7592f382e3e4ed01491d6407ecf720bc1a3f3ef3",
+      "target_sha256": "bd7102f66315e507db3528d0b06278b5b13ddf60d1f8004f1b25aca1ef142a83"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "source": "with the seller, in date and satisfying all five components. The",
+      "before": "con el vendedor, vigente y con los cinco componentes exigidos. La",
+      "after": "con el vendedor, vigente y con los cinco componentes exigidos. El",
+      "source_sha256": "085ed93c68a088a2703094b5415ecb4149c47de8df6811e2c28f23a6ba74198a",
+      "target_sha256": "782cc4c16592eee7757f660a1a411abac9b59ae7173ff26f1f223dd575da705f"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "source": "§ 13279 relationship disclosure form",
+      "before": "§ 13279 formulario de revelación de la relación",
+      "after": "formulario de divulgación de relaciones de corretaje conforme a § 13279",
+      "source_sha256": "54cca7ca3cee3a3356dedf1b5a1c70b4d710d235bfb218872b7983a6c750b810",
+      "target_sha256": "19778f75d1144248afe49cd32a78de14032e4f4cea1ad1fa8f8e83c428eaebbe"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "source": ", it is",
+      "before": ", lo es",
+      "after": ", y",
+      "source_sha256": "6cebcb4c42add8b01d43b09ae3d1c9c30ec797c5adae47b8ebad35b6b767845a",
+      "target_sha256": "4389cdfb65d3db70c3b8b5ffefad307db0b716e8a0250e7c290dbd27cf7c82e4"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "source": ", sometimes called a mortgage inspection plan, is something else entirely: a limited drawing prepared for a lender to show, approximately, that the improvements sit within the apparent boundaries and outside easements. It is",
+      "before": ", a veces llamado un plan de inspección hipotecaria, es algo totalmente distinto: un dibujo limitado preparado para que un prestamista muestre, aproximadamente, que las mejoras se sitúan dentro de los límites aparentes y fuera de servidumbres. Lo es.",
+      "after": ", a veces llamada plano de inspección hipotecaria, es algo totalmente distinto: un dibujo limitado preparado para el prestamista que muestra aproximadamente si las construcciones están dentro de los linderos aparentes y fuera de las servidumbres.",
+      "source_sha256": "9beae5ada362d36dbea1653b6d3e0540500622b03f3d837a505cee5b70420140",
+      "target_sha256": "0d5a285df7d1bf94654c7a6417070af2240f4e420daac5005b8d6f20c4a44d9f"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "source": "is different and is frequently confused with an option. It gives the holder the right to match a",
+      "before": "es diferente y con frecuencia se confunde con una opción. Le da al titular el derecho de igualar un",
+      "after": "es diferente y suele confundirse con una opción. Otorga al titular el derecho a igualar una",
+      "source_sha256": "00dc2136521239de4aeec1cbd7f9b93149ee5921b9c646598763e120561793cf",
+      "target_sha256": "ffb43d549c15169669340f6eda645c045c9b5cd716ca7e2846d84df3cefd8701"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "source": ", and the grantor keeps a",
+      "before": ", y el otorgante mantiene un",
+      "after": ", y el otorgante conserva una",
+      "source_sha256": "a4c96fb32cd500ae55b3c5850824bfb020ed76ef8585c27210868506018b31a1",
+      "target_sha256": "cd18f761e661fbc05b5f1715e2290da879aef3eab58926d7969664e086767539"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "source": ", meaning they must not damage the property or let it deteriorate and must ordinarily pay taxes and interest on existing debt.",
+      "before": ", lo que significa que no deben dañar la propiedad o dejar que se deteriore y normalmente deben pagar impuestos e intereses sobre la deuda existente.",
+      "after": ", es decir, no debe dañar el inmueble ni dejarlo deteriorarse, y normalmente debe pagar los impuestos y los intereses de las deudas existentes.",
+      "source_sha256": "635bb2732e46831f0d37c073d6abb785c587d0eee03b14dcb83498e8a0533b2f",
+      "target_sha256": "1b076aa7352bdb151ecfbcbea84e2b3ee5d6d8b7f429f6cc3c23aacccef8d3ef"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "source": "The plan itself carries the metes and bounds, the easements, and the surveyor's certification.",
+      "before": "El plan mismo lleva los metes y límites, las servidumbres y la certificación del topógrafo.",
+      "after": "El propio plano contiene la descripción de rumbos y distancias, las servidumbres y la certificación del topógrafo.",
+      "source_sha256": "a645b34106695dbd37ecfc11d65c950e015b7b75f8d7c2ce963e056eb84a979f",
+      "target_sha256": "3ca668378f5382694f96dc04cb43277ad37e681c224ddcd98bb85427e3409706"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "source": "is a licensed surveyor's determination of where the lines are on the ground, and it is the only thing that answers a boundary question.",
+      "before": "es la determinación de un topógrafo autorizado de dónde están las líneas en el suelo, y es la única cosa que responde a una pregunta de frontera.",
+      "after": "es la determinación, por un topógrafo autorizado, de dónde se encuentran los linderos sobre el terreno y es lo que permite resolver una cuestión de límites de propiedad.",
+      "source_sha256": "00472e5ecd2446c551de5c336af0fc52addad10220a2167da27cecb86dcf9da1",
+      "target_sha256": "36a9ae01d90f7e3af143c763120f354d7dd3b050d49d26b9690bf9295390bd51"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "source": ", and self-created hardship and mere financial disadvantage are not grounds. Maine's undue-hardship standard is set by statute and is applied strictly; it is a legal question and this course states no element of it.",
+      "before": ", y las dificultades creadas por uno mismo y la mera desventaja financiera no son motivos. La norma de la dureza indebida de Maine está establecida por ley y se aplica estrictamente; es una cuestión jurídica y este curso no establece ningún elemento de ella.",
+      "after": ", y no bastan las dificultades creadas por el propio solicitante ni la mera desventaja económica. El criterio de dificultad excesiva de Maine lo establece la ley y se aplica estrictamente; es una cuestión jurídica y este curso no enuncia sus elementos.",
+      "source_sha256": "589a895cb42d8d02170bbcbf65522f1243fd5535199587ee2d9e5631005cf4c2",
+      "target_sha256": "211cde4f7b3afb9154575cdb61c9a43577d40677fbda47740a2427878b3414d5",
+      "reviewer": "west follow-up rendered context"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "source": ", and to remit it. The buyer — not the seller — is the withholding agent, which is why the buyer's side must know about it.",
+      "before": ", y remitirlo. El comprador —no el vendedor— es el agente de retención, razón por la cual la parte del comprador debe saberlo.",
+      "after": ", y a ingresarlo ante la autoridad tributaria. El comprador, no el vendedor, es el agente de retención; por eso debe conocer esta obligación.",
+      "source_sha256": "96c8dbb50f0cba408c84c7d3bf5afa9677de0cdb6754c618459ca7c48b88ae29",
+      "target_sha256": "d9b5fc677ccaa6204531e36ae0c61be28aba481b1522b0550469caff286c06e7",
+      "reviewer": "west follow-up rendered context"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "source": ", plantations, and townships — roughly half the state's land area. Where the LUPC has jurisdiction, it performs the functions a municipality would.",
+      "before": ", plantaciones y municipios, aproximadamente la mitad de la superficie del estado. Cuando el LUPC tiene jurisdicción, desempeña las funciones que un municipio desempeñaría.",
+      "after": ", de las plantations y de los townships: aproximadamente la mitad de la superficie del estado. Donde tiene jurisdicción, la LUPC desempeña las funciones que corresponderían a un municipio.",
+      "source_sha256": "b6996312967d00d7b84d8890bda486141be224b37772f74a0c14d4e4fb0b27e1",
+      "target_sha256": "3014a1571994b55b310ef4f4517e9048fbe854c9d15546ceb7686dd0a42a3195",
+      "reviewer": "west follow-up rendered context"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "source": "A variance does not authorise a use the district forbids",
+      "before": "Una varianza no autoriza un uso que el distrito prohíbe",
+      "after": "Una excepción de zonificación no autoriza un uso prohibido en el distrito",
+      "source_sha256": "3ddc312744e678526145ff3391bdb47b59accf626cadf99fcdcbb223b6020037",
+      "target_sha256": "97077d3b219b991458d9dd5bc0535701b0eab398f9aded7f74fb1138c95d3e5b",
+      "reviewer": "west follow-up rendered context"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "source": "are easements, restrictive covenants and encroachments; those affecting",
+      "before": "son servidumbres, pactos restrictivos e intrusiones;",
+      "after": "son servidumbres, pactos restrictivos e intrusiones; las que afectan al",
+      "source_sha256": "2295ebc4378bc062fa3418d4005bb0cb7db7668c3e18a355d13419e50a12fb11",
+      "target_sha256": "971dc79cfcb78900fb8c4287c7dbc7a150563f16a5f7366ecf0065bc16a59e17",
+      "reviewer": "west follow-up rendered context"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "source": "are liens, and they belong to Hour 25.",
+      "before": "son embargos, y pertenecen a la Hora 25.",
+      "after": "son gravámenes y se estudian en la Hora 25.",
+      "source_sha256": "2173c440bf6997cc14994a2a0be97c0956542e5c6805828ebdce3f592eef37ea",
+      "target_sha256": "5bb25b84d94e8413bcfa15d293e4e91fdd216a35b16014e8dd86c0b6c087d1ac",
+      "reviewer": "west follow-up rendered context"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "source": "insures the buyer for the purchase price; a",
+      "before": "asegura al comprador el precio de compra;",
+      "after": "asegura al comprador por el precio de compra; una",
+      "source_sha256": "32d4a2bdba4c50479823c919fdc9529bb6b9ba7e356e6c1c243d53bd667cf7b4",
+      "target_sha256": "dc379d9e12db5a2c57c7b6be7b3d9b621a94cb8c51bcd51462afda49fd3cbf78",
+      "reviewer": "west follow-up rendered context"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "source": "insures the lender for the loan amount and declines as it is repaid.",
+      "before": "asegura al prestamista por la cantidad del préstamo y se declina a medida que se reembolsa.",
+      "after": "asegura al prestamista por el importe del préstamo y su cobertura disminuye a medida que se amortiza.",
+      "source_sha256": "7eda2f82e7415dc9af4e13b80290fd6919c02a16947e543df429d7bdd9cdea8d",
+      "target_sha256": "a4a5d93e405b83475150a7b58590523871b560f085d28222f395b643e633f455",
+      "reviewer": "west follow-up rendered context"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "source": "insures the lender for the loan amount, declining as it is repaid.",
+      "before": "asegura al prestamista por el importe del préstamo, declinando a medida que se reembolsa.",
+      "after": "asegura al prestamista por el importe del préstamo, con cobertura que disminuye a medida que se amortiza.",
+      "source_sha256": "ca3d6a5c2347e70fe7bb8c5a4c1faae020427adf77c00be50e7796ba1ff5d319",
+      "target_sha256": "92db14f012900cf07bc12b71472d89d2d7ca5baa76d9cbc8c0584bab18557c56",
+      "reviewer": "west follow-up rendered context"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "source": "is an arrangement under which the seller receives a fixed amount and the agency keeps everything above it. It creates a direct conflict between the agency's interest and the client's, and it is prohibited or restricted in most jurisdictions. The agency's",
+      "before": "es un acuerdo en virtud del cual el vendedor recibe una cantidad fija y la agencia mantiene todo por encima de ella. Crea un conflicto directo entre los intereses de la agencia y los del cliente, y está prohibido o restringido en la mayoría de las jurisdicciones. La agencia",
+      "after": "es un acuerdo por el que el vendedor recibe una cantidad fija y la agencia conserva el excedente. Crea un conflicto directo entre sus intereses y los del cliente, y está prohibido o restringido en la mayoría de las jurisdicciones. La",
+      "source_sha256": "db189febf978a9a19a08d6d269d87c8019cbf0b30f779a4a7473829767953957",
+      "target_sha256": "811541dc313133b2f5895a119cd9e0d321dbf649c53710eb6ddb95a1435c3a7d",
+      "reviewer": "west follow-up rendered context"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "source": "is delivered shortly after application and sets out the loan terms, projected payments, costs at closing, and cash to close, with the sections a consumer can compare between lenders.",
+      "before": "se entrega poco después de la aplicación y establece las condiciones de préstamo, pagos proyectados, costos al cierre, y efectivo para cerrar, con las secciones un consumidor puede comparar entre los prestamistas.",
+      "after": "se entrega poco después de presentar la solicitud y detalla las condiciones del préstamo, los pagos previstos, los costos de cierre y los fondos necesarios para cerrar, con secciones que el consumidor puede comparar entre prestamistas.",
+      "source_sha256": "4c6104e8a1583a8c36d2f1257bf846259b723abeb98917981615126275b1fb43",
+      "target_sha256": "0bbe19266aff35059b3ca240c7a9b5937d2356231395ef9513e9e4b95fd011dc",
+      "reviewer": "west follow-up rendered context"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "source": "is the planning and zoning authority for Maine's",
+      "before": "es la autoridad de planificación y zonificación de Maine",
+      "after": "es la autoridad de planificación y zonificación de los territorios de Maine",
+      "source_sha256": "2d9a24d28d955f5617e44765c2b13f3157f3df70a88644f826fe877da6b8b0ef",
+      "target_sha256": "afd68df68f5a764cd94811260d75072690105e31d77862bb7478529cad6a8a95",
+      "reviewer": "west follow-up rendered context"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "source": "requires a buyer to",
+      "before": "requiere un comprador a",
+      "after": "exige que el comprador proceda a",
+      "source_sha256": "b240e21390ebc47ca77230614812ca73f3e87d3b6ae5e53eba510659ee298d6e",
+      "target_sha256": "e2600410df389bc168a2971635352af01592bc6322994c10cf5abc13b2f40a74",
+      "reviewer": "west follow-up rendered context"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "source": "unorganised and deorganised areas",
+      "before": "Zonas no organizadas y desorganizadas",
+      "after": "sin organización municipal o que la han perdido",
+      "source_sha256": "e87799438f2426417b5a9dccae8c53f5356daa197f3f2729160336b855e83d74",
+      "target_sha256": "f325ae41e7f193e964fcaaa1071f5483cef628e98fcf6c084f6bdfedb0b38326",
+      "reviewer": "west follow-up rendered context"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "source": "was lawful when established and became non-compliant on a later ordinance change. It may generally continue, typically may not be expanded, and may be lost on abandonment or destruction.",
+      "before": "era legal cuando se estableció y se convirtió en incumplimiento en un cambio posterior ordenanza. Por lo general, puede continuar, por lo general no se puede ampliar, y puede perderse por abandono o destrucción.",
+      "after": "era lícito al establecerse y dejó de ajustarse a la normativa tras una modificación posterior de la ordenanza. Generalmente puede continuar, pero no ampliarse, y la protección puede perderse por abandono o destrucción.",
+      "source_sha256": "cd239714db5740c73f2cbd9edf70a01b37accc11efa43024f03f65e1c295f6aa",
+      "target_sha256": "a717cd7dc0aed5dd51726f135071fc46aef46302332228da092e96df1e8c355a",
+      "reviewer": "west follow-up rendered context"
+    },
+    {
+      "course_id": "mo-salesperson-preexam-48",
+      "source": "Designated broker, to counsel, to the lender, to the title company, to the municipality, to a qualified professional, to the Commission.",
+      "before": "Agente designado, a abogado, al prestamista, a la sociedad titular, al municipio, a un profesional cualificado, a la Comisión.",
+      "after": "Al corredor designado, al abogado, al prestamista, a la compañía de títulos, al municipio, a un profesional cualificado o a la Comisión.",
+      "source_sha256": "df5d4890427eb34a920483478c08fd7c37ebe0a5496a85625393d01128b6f822",
+      "target_sha256": "7599023952416842658fe2bc2d0334e387922fc133a29ebafac35778462fce36"
+    },
+    {
+      "course_id": "mo-salesperson-preexam-48",
+      "source": "Legal description from the deed or the title company. Names from",
+      "before": "Descripción legal de la escritura o de la sociedad titular. Nombres de",
+      "after": "Descripción legal de la escritura o de la compañía de títulos. Nombres de",
+      "source_sha256": "69ca62bb75ba13c994931a86c4d356812488b1c8b9b5b5a2316a2754d039fc3c",
+      "target_sha256": "3b3e76f61aaa3e423f847169306ee8c82b8ac0570c2713bd90a0317dddc47634"
+    },
+    {
+      "course_id": "mi-salesperson-prelicensure-40-v1",
+      "source": "An operating agreement, corporate resolution, partnership agreement, or trust instrument answers it. The licensee obtains the document; the lawyer or title company reads it.",
+      "before": "Un acuerdo de operación, resolución corporativa, acuerdo de asociación, o instrumento de confianza lo responde. El licenciatario obtiene el documento; el abogado o la sociedad titular lo lee.",
+      "after": "La respuesta está en un acuerdo operativo, una resolución societaria, un contrato de sociedad o un instrumento de fideicomiso. El titular de la licencia obtiene el documento; el abogado o la compañía de títulos lo interpreta.",
+      "source_sha256": "02bea5660179a521824f33d48b7680e9a51d1c018c368bfe7f20eccb9250ae4a",
+      "target_sha256": "0401f059167193116bf57e7d0ba60e65d2f610cbb54081ed7b8664f367ab26dc"
+    },
+    {
+      "course_id": "mi-salesperson-prelicensure-40-v1",
+      "source": "No, on two grounds. Entireties property requires both signatures to convey, so a deed from one spouse conveys nothing. And the judgment question — whether the creditor can reach entireties property — is a legal question that belongs with the title company and counsel, not with the licensee. The transaction cannot proceed on one signature regardless of how the creditor question resolves.",
+      "before": "No, por dos motivos. Las propiedades enteras requieren ambas firmas para transmitir, por lo que una escritura de un cónyuge no transmite nada. Y la cuestión de la sentencia —si el acreedor puede llegar a la totalidad de la propiedad— es una cuestión jurídica que pertenece a la sociedad titular y al abogado, no al licenciatario. La operación no puede llevarse a cabo con una sola firma, independientemente de cómo se resuelva la cuestión del acreedor.",
+      "after": "No, por dos motivos. La propiedad conyugal por la totalidad (tenancy by the entirety) requiere ambas firmas para su transmisión, por lo que una escritura firmada por un solo cónyuge no transmite nada. Además, determinar si el acreedor puede ejecutar su sentencia contra esa propiedad es una cuestión jurídica que corresponde a la compañía de títulos y al abogado, no al titular de la licencia. La transacción no puede seguir adelante con una sola firma, independientemente de cómo se resuelva la cuestión del acreedor.",
+      "source_sha256": "b841427db5ef934027ab7f1cfa4589442f407b1d13dcd427de5a4eb6297274d0",
+      "target_sha256": "d865643ac28156fcd09857a220bc2d3270a80b9a4322d4433423059a2f908f54"
+    },
+    {
+      "course_id": "mi-salesperson-prelicensure-40-v1",
+      "source": "That it is a question for the buyer's lawyer and the title company, and that the licensee cannot advise on it — but also that the purchase agreement specifies the deed to be delivered, and a change to it is a change to the contract. The licensee's job is to notice that the seller is proposing a materially different instrument and to stop the substitution from happening quietly at the closing table.",
+      "before": "Que se trata de una cuestión para el abogado del comprador y la sociedad titular, y que el licenciatario no puede asesorar sobre ella, pero también que el acuerdo de compra especifica la escritura a entregar, y un cambio a ella es un cambio en el contrato. El trabajo del licenciatario es notar que el vendedor está proponiendo un instrumento materialmente diferente e impedir que la sustitución ocurra silenciosamente en la mesa de cierre.",
+      "after": "Que se trata de una cuestión para el abogado del comprador y la compañía de títulos, y que el licenciatario no puede asesorar sobre ella, pero también que el acuerdo de compra especifica la escritura a entregar, y un cambio a ella es un cambio en el contrato. El trabajo del licenciatario es notar que el vendedor está proponiendo un instrumento materialmente diferente e impedir que la sustitución ocurra silenciosamente en la mesa de cierre.",
+      "source_sha256": "9b9d46906adaffff7d5161f5e458112b68280581de66630358249cdff104623d",
+      "target_sha256": "7ec6c1ad7327adc428281e3ae6b8442b1dbf4c20795f3be7deb3a019e4a4a06f"
+    },
+    {
+      "course_id": "tx-law-of-contracts-30",
+      "source": "Suppose the tax account names a deceased owner, while a later recorded deed names a trust. The discrepancy is a reason to obtain and evaluate the title chain, not a reason for the agent to choose the more recent-looking screen. The relevant instruments and legal rules determine the ownership analysis. The title company and counsel may need probate, trust, or authority documents before accepting the proposed conveyance.",
+      "before": "Supongamos que la cuenta de impuestos nombra a un propietario fallecido, mientras que una escritura inscrita posteriormente identifica a un fideicomiso. La discrepancia es una razón para obtener y evaluar la cadena de título, no una razón para que el agente para elegir la pantalla de aspecto más reciente. Los instrumentos y normas jurídicas pertinentes determinan el análisis de la propiedad. La sociedad titular y el abogado pueden necesitar documentos sucesorios, del fideicomiso o de facultades antes de aceptar la transmisión propuesta.",
+      "after": "Supongamos que la cuenta de impuestos nombra a un propietario fallecido, mientras que una escritura inscrita posteriormente identifica a un fideicomiso. La discrepancia es una razón para obtener y evaluar la cadena de título, no una razón para que el agente elija la pantalla de aspecto más reciente. Los instrumentos y normas jurídicas pertinentes determinan el análisis de la propiedad. La compañía de títulos y el abogado pueden necesitar documentos sucesorios, del fideicomiso o de facultades antes de aceptar la transmisión propuesta.",
+      "source_sha256": "f0461bdabe975668c9151f0e635394c85457fec5ea4c9650c51f7466da7c0bae",
+      "target_sha256": "4e9a31b771df188f6fdf3e055a6dcfde3171a9fedeec1e336f93b964729f4c88"
+    },
+    {
+      "course_id": "tx-law-of-contracts-30",
+      "source": "is the party who contracts and conveys; the trustee's authority comes from the trust instrument, which the title company will want to see (or a certification of it); and recall from Principles I Module 01 that a person conducting a transaction",
+      "before": "es la parte que contrata y transmite; la autoridad del fideicomisario proviene del instrumento fiduciario, que la sociedad titular querrá ver (o una certificación de la misma); y recuerda de los Principios I Módulo 01 que una persona que realiza una transacción",
+      "after": "es la parte que contrata y transmite; las facultades del fiduciario provienen del instrumento de fideicomiso, que la compañía de títulos querrá examinar (o una certificación de este); recuerde, de Principios I Módulo 01, que una persona que realiza una transacción",
+      "source_sha256": "fb88a0aedf409cf922f3d4a6f673e3cedbbed77126021860c5ba50894cefc047",
+      "target_sha256": "e543660701131d6ab2f755095d88cbc52fa0a33fe6495fdc12c085c24d115a4a"
+    },
+    {
+      "course_id": "ok-basic-prelicense-90",
+      "source": "Every one of those is a legal determination for counsel and the title company. The licensee's contribution is asking 'who else has to sign?' at the listing appointment, where it is a five-minute conversation rather than a postponement.",
+      "before": "Cada uno de ellos es una determinación legal para el abogado y la sociedad titular. La contribución del licenciatario está preguntando \"¿quién más tiene que firmar?\" en la reunión de captación, donde se trata de una conversación de cinco minutos en lugar de un aplazamiento.",
+      "after": "Cada una de esas cuestiones exige una determinación jurídica del abogado y la compañía de títulos. La aportación del titular de la licencia consiste en preguntar «¿quién más debe firmar?» durante la reunión de captación: allí requiere una conversación de cinco minutos, en vez de provocar un aplazamiento.",
+      "source_sha256": "d7044f9b9b8f46a4416d80b8a435fadea2ded44f1c5ebd2d81f7b5f195ac181d",
+      "target_sha256": "c7dedce0a3dd6497983882e0be78d459d1885cd189529e949c1fba97db374432"
+    },
+    {
+      "course_id": "ok-basic-prelicense-90",
+      "source": "The closing agent or title company",
+      "before": "El agente de cierre o la sociedad titular",
+      "after": "El agente de cierre o la compañía de títulos",
+      "source_sha256": "02ad600d209fd6ea21718e41c7b22c3e03549806dba064d29fb9a463da775277",
+      "target_sha256": "3c66928db8e7f3d2f3be365cb01aa6a790cfa5381e3a87c1fc050951b6e849e0"
+    },
+    {
+      "course_id": "wi-salesperson",
+      "source": "Common-name judgments are routine and are resolved by the title company through affidavits and identity evidence — a process the licensee supports rather than conducts. Deciding it informally is how a real lien gets missed.",
+      "before": "Los juicios de nombre común son rutinarios y son resueltos por la sociedad titular a través de declaraciones juradas y pruebas de identidad, un proceso que el licenciatario apoya en lugar de conductas. Decidirlo informalmente es cómo se echa de menos un embargo real.",
+      "after": "Las sentencias contra personas con nombres comunes son habituales; la compañía de títulos aclara la identidad mediante declaraciones juradas y pruebas identificativas, en un proceso que el titular de la licencia apoya, pero no dirige. Resolverlo informalmente puede hacer que se pase por alto un gravamen real.",
+      "source_sha256": "ac25e8d265642fbe45550ae4bf6bcf8931e9685b3e50db51fcf8c7534770f90f",
+      "target_sha256": "8682547c4cf08f0dd5b017ce8cf3d7d519796b21ebd6eeae2cf31d989458a8d7"
+    },
+    {
+      "course_id": "ok-basic-prelicense-90",
+      "source": "Have the chandelier removed and replaced before any photograph, because it is a fixture and conveys unless expressly excluded; ask whether the tank is leased or financed, because leased equipment is not the seller's to convey and a buyer cannot discover that by looking; and tell her that under 59 O.S. § 858-302(A) the education is valid only three years from the date the school certified completion, so her nephew's no longer supports an application.",
+      "before": "Retirar la lámpara de araña y reemplazarla antes de cualquier fotografía, porque es un accesorio y transmite a menos que se excluya expresamente; preguntar si el tanque está arrendado o financiado, porque el equipo arrendado no es del vendedor para transmitir y un comprador no puede descubrirlo mirando; y decirle que bajo 59 O.S. § 858-302(A) la educación es válida sólo tres años a partir de la fecha de finalización de la escuela certificada, por lo que su sobrino ya no apoya una solicitud.",
+      "after": "Hacer que retiren y sustituyan la lámpara de araña antes de tomar fotografías, porque es un elemento incorporado al inmueble y se transmite con él salvo exclusión expresa; preguntar si el tanque está arrendado o financiado, porque el vendedor no puede transmitir equipos arrendados y el comprador no puede determinarlo con solo mirarlos; y explicarle que, según 59 O.S. § 858-302(A), la formación solo es válida durante tres años desde la fecha en que la escuela certificó su finalización, por lo que la formación de su sobrino ya no sirve para presentar una solicitud.",
+      "source_sha256": "3380a2f8d6388da8cb74f2c7098f299a51993899ed7f5a1ee5d037091934762b",
+      "target_sha256": "aa1039782d727209cbc38dcdef76404aca7971764f18e1bb2b43bcbcb80c1b9e"
+    }
+  ],
+  "reviewed_contexts": [
+    {
+      "course_id": "ca-mortgage-loan-brokering-lending-45",
+      "lesson": "lesson-01",
+      "source_sha256": "aa7fc5ebc7d624af7747d567ed9483b771a0c533274895aedc471c957738d103",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "ca-mortgage-loan-brokering-lending-45",
+      "lesson": "lesson-01",
+      "source_sha256": "846e296f787fd0b6fe2b55d908aa4f2e349872ffc4e7e5e3d4080938664c47e5",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "ca-mortgage-loan-brokering-lending-45",
+      "lesson": "lesson-01",
+      "source_sha256": "31fe4692f706ac2e22e9fb26905b7a9b820ffbeed17abfd54edb9201490ccee0",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "ca-mortgage-loan-brokering-lending-45",
+      "lesson": "lesson-02",
+      "source_sha256": "fe8e502586c96976b61dbb6ec33c98608b14c28db475437e3ed04ea8cada388c",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "ca-mortgage-loan-brokering-lending-45",
+      "lesson": "lesson-02",
+      "source_sha256": "b16303df84e0d42cdb356b80ddf5f1488f2f064be9ea0a9c692e6162818a25e2",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "ca-mortgage-loan-brokering-lending-45",
+      "lesson": "lesson-02",
+      "source_sha256": "2665300386f1dce5aba4a02f0af560dc6845acddff273d7e6ad136e9a754c1c2",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "ca-mortgage-loan-brokering-lending-45",
+      "lesson": "lesson-02",
+      "source_sha256": "0d565fe9845b7ca83c7b583322f3cc4bbb51a3ee0928b509c1c6db23f54ff76a",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "ca-mortgage-loan-brokering-lending-45",
+      "lesson": "lesson-03",
+      "source_sha256": "083c64c19d077b235a36299a83eebd7b54c6bd342b21e14187dceb01e99c0e5f",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "ca-mortgage-loan-brokering-lending-45",
+      "lesson": "lesson-03",
+      "source_sha256": "6d4de374814d1e8448301cb9f10a0c4fe3a2bd3923414e5b8ace0567f851fda9",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "ca-mortgage-loan-brokering-lending-45",
+      "lesson": "lesson-03",
+      "source_sha256": "7da63dad97f189eee10e2338393f6d540ab53823ce07a5839021d7c21c42bb58",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "ca-mortgage-loan-brokering-lending-45",
+      "lesson": "lesson-03",
+      "source_sha256": "27738568a2bc234f3d8d28853257777b95c07c1263aa5a77e0cd93cbc0834231",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "ca-mortgage-loan-brokering-lending-45",
+      "lesson": "lesson-03",
+      "source_sha256": "3608612d52a724d35580363f3575892bd9c7f7d42c31cb046ae5c28d0caba5cf",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "ca-mortgage-loan-brokering-lending-45",
+      "lesson": "lesson-03",
+      "source_sha256": "970c545ffab1f7f6719fcd16c4f516053338d59c0b10977c06e0481c5d5d8a9d",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "ca-mortgage-loan-brokering-lending-45",
+      "lesson": "lesson-03",
+      "source_sha256": "bd04a23d87811c764f66fe8b6a22eeb27331a6dcb53340a37420370ef144eda7",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "ca-mortgage-loan-brokering-lending-45",
+      "lesson": "lesson-03",
+      "source_sha256": "d2d04b810de244f4e3bafb64c0166310a958c03c3c1cdd39235052acf2f8e704",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "ca-mortgage-loan-brokering-lending-45",
+      "lesson": "lesson-04",
+      "source_sha256": "e8a2caf1b53790816f3ba4c250b1af7ad9adf9e0da82324019e4d3bd90ed6245",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "ca-mortgage-loan-brokering-lending-45",
+      "lesson": "lesson-05",
+      "source_sha256": "81248a296ea14d70f7f63860c23dac59f8f6d71d1a72935708c2b617e51a4abc",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "ca-mortgage-loan-brokering-lending-45",
+      "lesson": "lesson-05",
+      "source_sha256": "9d135ba166c3cf92b5f6620cec834a35a4acce2f73531c18dfe27d59ee1f7b04",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "ca-mortgage-loan-brokering-lending-45",
+      "lesson": "lesson-05",
+      "source_sha256": "8b105eeb78d9d5c915ebe613ea9b24086eabf37a8e56918e99096c034f924851",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "ca-mortgage-loan-brokering-lending-45",
+      "lesson": "lesson-05",
+      "source_sha256": "1a1df1254b0775537e4e91a127cdbe84dc609007a35f8aad6b7fa6259e6fcee9",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "ca-mortgage-loan-brokering-lending-45",
+      "lesson": "lesson-06",
+      "source_sha256": "168a3ba17c68436977bb366649ae6a53385af008d46b736e60013ccc327f96a6",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "ca-mortgage-loan-brokering-lending-45",
+      "lesson": "lesson-06",
+      "source_sha256": "292d7b69325bf1616a25da98bdb9fa1af53c6b44bcf6287bea77758f70928c1a",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "ca-mortgage-loan-brokering-lending-45",
+      "lesson": "lesson-06",
+      "source_sha256": "51fd56dbc98c1cfbe97ef6ecc29cac070e7ee8d0cc7a819c582a814c2168cef2",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "ca-mortgage-loan-brokering-lending-45",
+      "lesson": "lesson-06",
+      "source_sha256": "8d77cdfdbc86b612a5d6b7fdde96d98ba8fd63590b0d532c3da226bb9af812eb",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "ca-mortgage-loan-brokering-lending-45",
+      "lesson": "lesson-06",
+      "source_sha256": "6d1fe381e155dd579011c4239ab3799d86e3deabb8a90f8e1843dc56b493efec",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "ca-mortgage-loan-brokering-lending-45",
+      "lesson": "lesson-07",
+      "source_sha256": "15099a1ebc6a358cd46ce2e02fa286cfcb75798ce2c95efb7f459cc32566ca61",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "ca-mortgage-loan-brokering-lending-45",
+      "lesson": "lesson-07",
+      "source_sha256": "9f70ee4bd5fcae6f9cada94d6de55a3908d70dc0e0f9cead5216d2189fa733a9",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "ca-mortgage-loan-brokering-lending-45",
+      "lesson": "lesson-07",
+      "source_sha256": "fc6c750945a850562cbbd25f906f5b4c1f82ce42362a7bc832ccf16256d704dd",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "ca-mortgage-loan-brokering-lending-45",
+      "lesson": "lesson-09",
+      "source_sha256": "3f358b2f47f3d454d0a274ff9f7ef3712ee5e84e7a0159acd4aeb5f921d7c74a",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "ca-mortgage-loan-brokering-lending-45",
+      "lesson": "lesson-09",
+      "source_sha256": "8d700ca53ab4e57c88568e1e6e572ff7548a129ce00b0333192e57bf3c555029",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "ca-mortgage-loan-brokering-lending-45",
+      "lesson": "lesson-09",
+      "source_sha256": "cada0bb231a33652f19b91879ad2b47cde5f408b34de18b29f5504522576726c",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "ca-mortgage-loan-brokering-lending-45",
+      "lesson": "lesson-09",
+      "source_sha256": "c4e7e2f2a4211d700fa27087d328fc0a0f7eda77a57fd6e49cf6d52288b082cb",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "ca-mortgage-loan-brokering-lending-45",
+      "lesson": "lesson-10",
+      "source_sha256": "ae4a4bdfee276a45c1fb9e4e0de255dad484e9aed6040c2d73fe350ba20e0b8d",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "ca-mortgage-loan-brokering-lending-45",
+      "lesson": "lesson-10",
+      "source_sha256": "f0774a310dbec9be97862c8dcaf42e2fc3096923a4d5e67d24b143816f73ee5a",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "ca-mortgage-loan-brokering-lending-45",
+      "lesson": "lesson-10",
+      "source_sha256": "9b805892fc5a6f12d72162a606869198884562e0e96aa6ece984a1899bef8370",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "ca-mortgage-loan-brokering-lending-45",
+      "lesson": "lesson-11",
+      "source_sha256": "56e811b5eefa01980d33224063c6c9184285731e71ac36dbde284df29287e46f",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "ca-mortgage-loan-brokering-lending-45",
+      "lesson": "lesson-11",
+      "source_sha256": "e144520ae950dee11e829a0f51aeb3ef80518da295c2716642c2f6c3c1445f16",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "ca-mortgage-loan-brokering-lending-45",
+      "lesson": "lesson-11",
+      "source_sha256": "5ada6c88121a6d924163b08736980651cb2f105defe85c420ea35388cc04a476",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "ca-mortgage-loan-brokering-lending-45",
+      "lesson": "lesson-11",
+      "source_sha256": "4d949812b615470686f851d5607dc809d217d323726643b6ea90cb50a3207003",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "ca-mortgage-loan-brokering-lending-45",
+      "lesson": "lesson-13",
+      "source_sha256": "d920cfb975066a504691621c25882261fae91dee930370e957fdaf97a0d995b3",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "ca-mortgage-loan-brokering-lending-45",
+      "lesson": "lesson-13",
+      "source_sha256": "970c545ffab1f7f6719fcd16c4f516053338d59c0b10977c06e0481c5d5d8a9d",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "ca-mortgage-loan-brokering-lending-45",
+      "lesson": "lesson-13",
+      "source_sha256": "c69808259f2bf8fe1e614412d924ec1b3b676e25994f7a52c546513d2d2ad31c",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "ca-mortgage-loan-brokering-lending-45",
+      "lesson": "lesson-14",
+      "source_sha256": "f1e59f01de44e4617d9ec1fc911a0dd8b7b953aad5f190ff21d5aa9ac0f27555",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "ca-mortgage-loan-brokering-lending-45",
+      "lesson": "lesson-14",
+      "source_sha256": "62c14f6dcf99057166ce8247b8a9bcd4d8484ec3c93f9ad3f0a9d5d8817f8cea",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "ca-mortgage-loan-brokering-lending-45",
+      "lesson": "lesson-14",
+      "source_sha256": "5262658f7440e41732b1ac78eb888c05fc226f872425855a8ed769db82ef2830",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "ca-mortgage-loan-brokering-lending-45",
+      "lesson": "lesson-15",
+      "source_sha256": "a7894c5a48b42a32e2821a1c1ec522e0e3cc6e58a2bc5ae76d9692af94b70e37",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "ca-mortgage-loan-brokering-lending-45",
+      "lesson": "lesson-15",
+      "source_sha256": "4cc0df2b1a90fdcc03fd8d627f6c743bd186ffe7246e00f5e957ed840733cc46",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "lesson": "module-01",
+      "source_sha256": "d89b0efe56cd2d0a0f660210cf013e13a7ea698c389d1cdb482d836c811848e4",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "lesson": "module-01",
+      "source_sha256": "ec63a8a08277fc33a170cc7b4d8bfe484e67f535da59ac8d3e5526eed3f00f58",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "lesson": "module-01",
+      "source_sha256": "bba07094360518b0a6986201bdf415af8159b30ba74440faa1250372e6548e36",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "lesson": "module-01",
+      "source_sha256": "5e7712ba094d5b45c04e874723a1a160b45775d2a33e39da5eb9907610b59384",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "lesson": "module-02",
+      "source_sha256": "2a1ebf44cb8fabd5469bf6c3805958dd66b23d838eb1a49676a6716eaf8fadae",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "lesson": "module-03",
+      "source_sha256": "65ced8dd8ef96554331a59f6cd1458e5a07be86fbb904c3e5ef3077ee00449c2",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "lesson": "module-03",
+      "source_sha256": "fe86dbcc8f23f1f9ce33e6c20319ec36ec8cd87522c82a8d7e72d6d31c48e780",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "lesson": "module-03",
+      "source_sha256": "6077787474182ebfe1a84c01d3c53ccb3e0ac93634de96385f6a338bd4cceaee",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "lesson": "module-03",
+      "source_sha256": "ab8502eff4d49787b4ba697fded7834351f736257dce27c32416f4e861b9e62b",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "lesson": "module-03",
+      "source_sha256": "bd075d675417979c05da88e369e17c35b2ceceab0b23c7c7cf58939df0f0ae4a",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "lesson": "module-03",
+      "source_sha256": "82237c8d05b01322a02f26c24aad60c6e6bdef7115cea9b43e417d0fb96ce70a",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "lesson": "module-03",
+      "source_sha256": "9a19bf5cde19cf05136f5e43fbb010e5caf4f1c147f355546262da21bccc901e",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "lesson": "module-03",
+      "source_sha256": "378df697e09b92bfe9176b648b457bc5005ed9689d64e2853d13267bb76a9541",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "lesson": "module-03",
+      "source_sha256": "b110669fa919177c09ca9fb35931ef942b9ba24f0c115c981cf5a2e3041e31af",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "lesson": "module-03",
+      "source_sha256": "b546fbbaf082183a6e238322f9c2d576a60c5d8ae999a84880973f00d868213c",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "lesson": "module-03",
+      "source_sha256": "79f7a581114fabfbf3777983fc83b68b4363e49c7dfecda1105a0f21fcaac861",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "lesson": "module-03",
+      "source_sha256": "7e173a63e03378ecb8bca6017ecfa43f75eaffdb88faec68e15eb07b43667179",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "lesson": "module-03",
+      "source_sha256": "fd6def0b4bbae7f10d00e32160f4148957762ffa781bafe58c5863a399ff4b04",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "lesson": "module-03",
+      "source_sha256": "f46f2fe1feb1add4c55b5a2e35882bfe04bd6357d42c485292f6c10951020837",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "lesson": "module-03",
+      "source_sha256": "ab4c7d24de7fdd9a3cb71b16445377dcde7c693f49268eacd602aa473901933f",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "lesson": "module-03",
+      "source_sha256": "28e245d93d49755f607e372cb9194bf6125d373c7d480bbb7c740631b9f02306",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "lesson": "module-03",
+      "source_sha256": "4f3bbcc9d06bf5c07d8e09382e61b476ce7790616af49266c204e265b9f9ff0d",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "lesson": "module-03",
+      "source_sha256": "7a007a3b34e7279a4e48875a6816c611de33daa943ad88b38bf64d58ad03ff13",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "lesson": "module-03",
+      "source_sha256": "99de9446cd00be9d8f712bf728fa40bf2bc841483ac4fd55966c2bb7bd82e59b",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "lesson": "module-03",
+      "source_sha256": "0199f737eae68eae04d32b433407dac50231d7b0caa95c2014fee5b85517eb17",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "lesson": "module-03",
+      "source_sha256": "22c19d4fdcc434a8294b64541f670853c952fc8bbd5e5af048d0946a483ec73b",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "lesson": "module-03",
+      "source_sha256": "6d1cced9856b0c3dd160081cbde624239246a7e0455fa799c259c880e1d7981f",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "lesson": "module-03",
+      "source_sha256": "ba868852f5ea68f4b69d9183bc5db616b36092a5df03aee50b5db72030d8a89c",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "lesson": "module-04",
+      "source_sha256": "1bf1b53d1c21783c42fb4ca727af7292b3e5bf8ca2b951519b7aa4570d4d653a",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "lesson": "module-04",
+      "source_sha256": "5788752e9324c0fd8b561fdeeb36719ac03c95703c8903e3cbaf3c72c65b003e",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "lesson": "module-04",
+      "source_sha256": "5bae34ecf90231cba6659e50cac79322a2f8751d474192a8da5852eec403eac2",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "lesson": "module-04",
+      "source_sha256": "8eadcdb20b161c6fa710c398aea128256c0775e078ef4337958fc81631530580",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "lesson": "module-04",
+      "source_sha256": "3e2b5bbf3c0855a1982a446e9684f6174c88a7f0c6139964f39824b860dffaf8",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "lesson": "module-04",
+      "source_sha256": "30946f1aca324fd8fa9bae0ded87621d4f20956064f7780fec71ccfd80fe35fd",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "lesson": "module-04",
+      "source_sha256": "7064818a91616016f71599487ab085838fc6b62a6c6698b54dd5faf6b2550548",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "lesson": "module-06",
+      "source_sha256": "d59ede7eb576a589385e3f3bed8705fa347ccaab5981c316dde01adc49742667",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "lesson": "module-06",
+      "source_sha256": "937e8ca429d6d8e80d9090adc0314ee2d236cac8dfa16ad00850b0415c7acfed",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "lesson": "module-06",
+      "source_sha256": "de5be74e28f421ad83dda545afd34c105808304f6a03337b434fdf131030722a",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "lesson": "module-06",
+      "source_sha256": "bd826104e1b713ba70fe9e68a311ba6bd2d97e16bece5b378914f7be375d00a4",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "lesson": "module-06",
+      "source_sha256": "1513cab1d04fb44a623748d93f0ab9e3ae79cf3f531eccb6cc800971576d4e39",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "lesson": "module-06",
+      "source_sha256": "38868dfa4affaad4691cefeb97b3536b7fd0227101be6e66e8cc35d729f4906f",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "lesson": "module-06",
+      "source_sha256": "51fdf25b409a2096365b57a8f22c93b6303268775931eee1d7af7ecb049e04cb",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "lesson": "module-06",
+      "source_sha256": "1c5b67d92057ca0e654512ef276d5afe4ab33a345a07fd16366026dcb64c8065",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "lesson": "module-06",
+      "source_sha256": "9c695e291df319cbf82a25f86427a6e7d864f690de74df246a1b46142403da41",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "lesson": "module-07",
+      "source_sha256": "fa1169f2a3422b787fb8b6c224c2436d541ffe68f564933e9b1bd74fa6b6f503",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "lesson": "module-07",
+      "source_sha256": "5ac7a88d9346fb2e893855f9b5d6152be99c13e479a70e4c1af32dd6c59c8281",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "lesson": "module-07",
+      "source_sha256": "7948d432067f73bc56709cc7247d0942dcfe63cc9ea36eb0f2ef04e60c7bb18a",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "lesson": "module-07",
+      "source_sha256": "4d13a98d5ad2ef56028433d152ef2708f5601038c4588be6c34d951602845776",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "lesson": "module-07",
+      "source_sha256": "8f6c67a402860a3309858bef85088b580348e30a54cd07a52fa12a47e5eb8d89",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "lesson": "module-07",
+      "source_sha256": "6189b8a920ba27b5f279735c2e42cf05e5d0c4c3d7d66e18fe39dce7052e038f",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "lesson": "module-07",
+      "source_sha256": "9fd698c7946bafd35d88c915f736d0856e3a8ba9ec3ef01b072af7a3112272c9",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "lesson": "module-07",
+      "source_sha256": "7e2665544599644233a5dc55c3c4e3a172c3c49368abaa3d0a6c2d0ffc6328a2",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "lesson": "module-07",
+      "source_sha256": "21bb4f5f5400cdc7cbadfc6db4a12d67a958bf5ff3954fa622bb49666b1fad30",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "lesson": "module-07",
+      "source_sha256": "f16c045242e690b5bfdcf6004a9fcf61653f6f8f6795eaf6d9cc10da4249c344",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "lesson": "module-07",
+      "source_sha256": "f04f6112a792fe07c4ff58f208a40758be5f3923e51cfdf3660143a6033d1eb4",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "lesson": "module-07",
+      "source_sha256": "abb9a200055f6732c1338fa272ca05329c2cf0c881f8d73386c6e3f224ac28c3",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "lesson": "module-07",
+      "source_sha256": "cd1876a841251336af46f44940cf7beea10bdf12632c0c046098b272c27bdc41",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "lesson": "module-07",
+      "source_sha256": "2540b947437836c595af76fc5b73300391d1ac5457d087e89b3e99731f419055",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "lesson": "module-07",
+      "source_sha256": "9629a244e9e3dc75fa2fd093e20490fd7b962c0ea040b9b309e4afd334a73b2e",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "lesson": "module-07",
+      "source_sha256": "ac9e22beace2ede72b9ec67fd66f595ed98ed797b85c80759e6ff38a7eff7c18",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "lesson": "module-08",
+      "source_sha256": "181bb7ba11a841a324a6c81fe6a96c8f776fc33d02728151eed10d81302af994",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "lesson": "module-08",
+      "source_sha256": "3990506713289ab3f4ee0d7fe0e46d4fa79db0129fb607e4188ab49f1fc493be",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "lesson": "module-08",
+      "source_sha256": "43744b3e09a04867b836b5791bd1ce8cba707d0912986f7112851ee2b4428f0e",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "lesson": "module-08",
+      "source_sha256": "d510a459aa7c2527e86809c23787ade82297947a211aa886bdb829629ca10fde",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "lesson": "module-08",
+      "source_sha256": "5bb63e8ea6108fffcde7404e8551a4baae07a9043c85ddaaf17a779470af2594",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "lesson": "module-08",
+      "source_sha256": "eecf937e95cdc793dc32d3f71c22a572a2c3b7473a48b106a310215da12ddd06",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "lesson": "module-09",
+      "source_sha256": "a7da59087647db6ae4de2318cc00688187b0fd79324ef056042a6acc1f79e1b7",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "lesson": "module-09",
+      "source_sha256": "4e9771759630362a46b15a3c0d8a10b942ba5f27471c3a77f9af78e00b3e4797",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "lesson": "module-09",
+      "source_sha256": "db94e890764f6c83b52c4b9b31bf1d0cfbe9bf3b5e71d719a28f1a0a0cb3f097",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "lesson": "module-09",
+      "source_sha256": "717dbfea0dbfc05c5d7dd4ac068600a0e226aa5594b26915924dab9714091da7",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "lesson": "module-09",
+      "source_sha256": "aa469559bb066399cacc1de6b43715c795d4146f38f33937bf2650292accad2c",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "lesson": "module-09",
+      "source_sha256": "57150925b5f202136094b683e32b266f50046e7a09c68ec044cd7769c8f5d475",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "lesson": "module-09",
+      "source_sha256": "6cfccd28ed06a23a8c2e7f62a420ff8222aa596fd05c177c8d169ab36bdb6561",
+      "status": "Direct bilingual assembled-sentence inspection complete; corrections integrated or queued exact-parent overrides; final runtime verification OPEN"
+    }
+  ]
+}

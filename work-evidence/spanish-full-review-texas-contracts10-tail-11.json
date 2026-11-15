@@ -1,0 +1,1836 @@
+{
+  "course_id": "tx-law-of-contracts-30",
+  "scope": "lesson index9sections7–9 and index10all3sections; rootownsindex9sections0–6",
+  "baseline": "173e07f",
+  "changes": [
+    {
+      "source": ": the stakeholder disburses on the parties' signed agreement or prescribed process, never on one side's insistence, however righteous (Principles I Module 06's collapsed-deal triage arriving at the closing desk).",
+      "before": ": la parte interesada desembolsa el acuerdo firmado o el proceso prescrito de las partes, nunca por insistencia de una parte, por justo que sea (Principios I Módulo 06's colapse-deal triage llegando a la mesa de cierre).",
+      "after": ": el depositario desembolsa conforme al acuerdo firmado por las partes o al procedimiento prescrito, nunca por insistencia de una parte, por justo que sea (Principios I Módulo 06's colapse-deal triage llegando a la mesa de cierre).",
+      "source_sha256": "e2fb923d9e4918ed723559a971eff49d18bf4da2c48a46a1825a16d50c4b0579",
+      "before_sha256": "680a0240842f290ae332fbf1d35061df2709f85ba5fd9e92b5417345eb7a104d",
+      "after_sha256": "1a49c83ea70a4d90bf7063b09601805b8c88b7501637d69c732d9004fb8e72c0"
+    },
+    {
+      "source": "A reliable closing follows the contract’s actual calendar and documents. Track approval stages, inspections, title requirements, amendments, disclosure timing, and financial reconciliation separately. State proration assumptions before calculating. Confirm funding and possession through their proper sources, preserve remaining obligations, and retain the complete file whether the sale closes or terminates.",
+      "before": "Un cierre fiable sigue el calendario y los documentos reales del contrato. Seguimiento de las etapas de aprobación, inspecciones, requisitos de titularidad, enmiendas, calendario de divulgación y conciliación financiera por separado. Hipótesis de prorrateo del Estado antes de calcular. Confirmar la financiación y la posesión a través de sus fuentes adecuadas, preservar las obligaciones restantes, y conservar el archivo completo si la venta se cierra o termina.",
+      "after": "Un cierre fiable sigue el calendario y los documentos reales del contrato. Seguimiento de las etapas de aprobación, inspecciones, requisitos de titularidad, enmiendas, calendario de divulgación y conciliación financiera por separado. Indique los supuestos de prorrateo antes de calcular. Confirmar la financiación y la posesión a través de sus fuentes adecuadas, preservar las obligaciones restantes, y conservar el archivo completo si la venta se cierra o termina.",
+      "source_sha256": "f65030442691abedf89789cd4b821c63e94b5952e91ae510b83fe9077a41aed4",
+      "before_sha256": "a085221ebfe9e37d137acee7ede44d3cfcb1647e255a152299309db4cbb82355",
+      "after_sha256": "b0b88704edfa9d91458bf94f56f02be671a0359eab9e39daae7c35dc3e15b8ed"
+    },
+    {
+      "source": "A security deposit should remain distinct from rent. Its transfer concerns custody and obligations under the lease and applicable landlord-tenant law, not allocation of earned income. Obtain the ledger and actual deposit amount. An estimate copied from a rent roll can omit a later increase, deduction, or transfer. Accurate closing arithmetic begins with accurate source records.",
+      "before": "Un depósito de garantía debe ser distinto del alquiler. Su transferencia se refiere a la custodia y las obligaciones contraídas en virtud del contrato de arrendamiento y de la ley aplicable del propietario-teniente, no a la asignación de los ingresos devengados. Obtener el libro mayor y la cantidad de depósito real. Una estimación copiada de un rollo de alquiler puede omitir un aumento, deducción o transferencia posterior. La aritmética exacta de cierre comienza con registros fuente precisos.",
+      "after": "Un depósito de garantía debe ser distinto del alquiler. Su transferencia se refiere a la custodia y las obligaciones contraídas en virtud del contrato de arrendamiento y de la ley aplicable del arrendador e inquilino, no a la asignación de los ingresos devengados. Obtener el libro mayor y la cantidad de depósito real. Una estimación copiada de un registro de rentas puede omitir un aumento, deducción o transferencia posterior. La aritmética exacta de cierre comienza con registros fuente precisos.",
+      "source_sha256": "4997b5df2bb814054852bf29cd8efa12ab60e43a9ee3bb98ebb59dcf012a7c2e",
+      "before_sha256": "e5a6a305ef4c7c675ff756530dbc0474ec18ed9cecaf826ba9952b7d7e482fb5",
+      "after_sha256": "74c046f713240547c48fcf2f69df747f86b82a08a023db05dd3b36826cc7b351"
+    },
+    {
+      "source": "A worked final status might read: “Both parties signed the closing documents. The escrow officer confirms buyer funds and lender authorization have been received and disbursement is complete. Seller possession continues under the signed temporary lease through the stated date.” This identifies evidence and the remaining occupancy arrangement. It is more useful than “closed,” which can leave the client unsure about keys, money, or responsibilities.",
+      "before": "Una condición final trabajada podría decir: “Ambas partes firmaron los documentos de cierre. El oficial de garantía confirma que se han recibido fondos para el comprador y se ha autorizado al prestamista y se ha completado el desembolso. La posesión del vendedor continúa en virtud del contrato de arrendamiento temporal firmado hasta la fecha indicada.” Esto identifica las pruebas y el acuerdo de ocupación restante. Es más útil que \"cerrado\", lo que puede dejar al cliente inseguro sobre las llaves, el dinero o las responsabilidades.",
+      "after": "Una condición final trabajada podría decir: “Ambas partes firmaron los documentos de cierre. El oficial de garantía confirma que se han recibido los fondos del comprador y la autorización del prestamista y se ha completado el desembolso. La posesión del vendedor continúa en virtud del contrato de arrendamiento temporal firmado hasta la fecha indicada.” Esto identifica las pruebas y el acuerdo de ocupación restante. Es más útil que \"cerrado\", lo que puede dejar al cliente inseguro sobre las llaves, el dinero o las responsabilidades.",
+      "source_sha256": "68d56a2e9ef4e18172bbe546a1ca89f934aedde0b6a5c10f594c34ffd7f55e29",
+      "before_sha256": "4472ada1ee98a45ada3b04b83a0e5c992c5136078a973a89a528ea094417163a",
+      "after_sha256": "6e2983cf3c6f941019de42343d75c6d9ddaf2514d762d8ab3640716635246c3f"
+    },
+    {
+      "source": "Adapted Teaching: Debits, Credits, Taxes, Rents, Deposits, and Transparent Closing Arithmetic",
+      "before": "Enseñanza Adaptada: Deberes, Créditos, Impuestos, Rentas, Depósitos y Aritmética de Cierre Transparente",
+      "after": "Enseñanza Adaptada: Débitos, Créditos, Impuestos, Rentas, Depósitos y Aritmética de Cierre Transparente",
+      "source_sha256": "d4d91ada05740380ff62dfa5df2f1cd943bd6991f64565b69681a6c9202007d8",
+      "before_sha256": "19b3a0850806297324eb8736b5743620ad3fa55607a755df69a6092563c77fa7",
+      "after_sha256": "6615d432de83f933a9347c652cee10cf0a4d776fe4b4dd9613d68a182c2f6419"
+    },
+    {
+      "source": "Assume the buyer and seller sign on a Friday morning. The lender requests one corrected document before authorizing disbursement. The buyer’s funds are at the closing office, but lender funds are not yet authorized. The seller’s agent asks whether keys may be released because the buyer has a moving truck outside. The accurate status is that signing occurred and funding remains pending. The possession provision and any temporary lease must govern the next step.",
+      "before": "Supongamos que el comprador y el vendedor firman un viernes por la mañana. El prestamista solicita un documento corregido antes de autorizar el desembolso. Los fondos del comprador están en la oficina de cierre, pero los fondos del prestamista todavía no están autorizados. El agente del vendedor pregunta si las llaves pueden ser liberadas porque el comprador tiene un camión en movimiento fuera. La situación exacta es que la firma se produjo y la financiación sigue pendiente. La provisión de posesión y cualquier arrendamiento temporal debe regir el siguiente paso.",
+      "after": "Supongamos que el comprador y el vendedor firman un viernes por la mañana. El prestamista solicita un documento corregido antes de autorizar el desembolso. Los fondos del comprador están en la oficina de cierre, pero los fondos del prestamista todavía no están autorizados. El agente del vendedor pregunta si las llaves pueden ser liberadas porque el comprador tiene un camión de mudanzas fuera. La situación exacta es que la firma se produjo y la financiación sigue pendiente. La provisión de posesión y cualquier arrendamiento temporal debe regir el siguiente paso.",
+      "source_sha256": "da45b30fd4503471da20e9fb48f41e8c15263398143230b1d805b39aba286b15",
+      "before_sha256": "7e6728a7c245b4059375cd108658077589f336755d990c0aa6bc796212c24e9d",
+      "after_sha256": "c5f550e20f2286a338f9764416a1d25be20d7c32a8a7d1175aac716a0e96e4ab"
+    },
+    {
+      "source": "At completion, the parties should have their copies of the relevant documents and a clear record of remaining obligations. Temporary possession, agreed repairs or deliverables, tax adjustments, deposit transfers, and recorded releases may require follow-up. The broker’s record-retention duty under 22 TAC § 535.2 is separate from the parties’ legal claims and the lender’s document retention. Preserve the complete transaction file, including substantive communications and compensation records.",
+      "before": "Una vez finalizadas, las partes deben tener sus copias de los documentos pertinentes y un registro claro de las obligaciones restantes. La posesión temporal, las reparaciones acordadas o los entregables, los ajustes fiscales, las transferencias de depósitos y las liberaciones registradas pueden requerir seguimiento. El derecho de retención de registros del corredor con arreglo al 22 TAC § 535.2 es independiente de los créditos legales de las partes y de la retención de documentos del prestamista. Preservar el expediente completo de la transacción, incluidas las comunicaciones sustantivas y los registros de indemnización.",
+      "after": "Una vez finalizadas, las partes deben tener sus copias de los documentos pertinentes y un registro claro de las obligaciones restantes. La posesión temporal, las reparaciones acordadas o los entregables, los ajustes fiscales, las transferencias de depósitos y las liberaciones registradas pueden requerir seguimiento. El deber de conservación de registros del corredor con arreglo al 22 TAC § 535.2 es independiente de los reclamaciones jurídicas de las partes y de la retención de documentos del prestamista. Preservar el expediente completo de la transacción, incluidas las comunicaciones sustantivas y los registros de remuneración.",
+      "source_sha256": "34b8244f903b9d478c394b4f686af18aa48a79d46e285b7383a831304318e2e9",
+      "before_sha256": "9eb6bc4fd203f5dede56c557232927241c4f006b150bdf909a9316453a2bacef",
+      "after_sha256": "3cebb91672340cd4f10d7078ca8dd02069073cbb5c1143c4733f562be49c6e97"
+    },
+    {
+      "source": "Closing ends with a package, and clients call about it for years, so know what lands where: the buyer receives the recorded deed back from the county (the original returns to the grantee after recording), the owner's title policy issued after recording, and the settlement statement — the document their tax preparer will ask for. The lender holds the note; the deed of trust returns recorded to the lender's file; the seller keeps the statement and the payoff's release evidence (Principles I Module 07: an unreleased lien is a future title requirement with the seller's name on it). The brokerage retains its transaction file under the records practices the later courses detail. The agent's last professional act is a closing letter telling the parties exactly this — what they will receive, from whom, roughly when — because the cheapest client service in the industry is preventing the \"where's my deed?\" panic call six weeks out.",
+      "before": "El cierre termina con un paquete, y los clientes lo llaman durante años, así que sepan qué tierras donde: el comprador recibe la escritura registrada de vuelta del condado (las devoluciones originales al adquirente después de la inscripción registral), la política de título del propietario emitida después de la inscripción registral, y la declaración de liquidación — el documento que su preparador de impuestos pedirá. El prestamista tiene la nota; la escritura de la declaración de fideicomiso registrada en el archivo del prestamista; el vendedor guarda la declaración y la prueba de la liberación de la recompensa (Principios I Módulo 07: un gravamen no liberado es un requisito de título futuro con el nombre del vendedor en ella). El corredor conserva su archivo de transacciones bajo las prácticas de registros el detalle de los cursos posteriores. El último acto profesional del agente es una carta de cierre que dice a las partes exactamente esto —lo que recibirán, de quién, más o menos cuando— porque el servicio de cliente más barato en la industria está impidiendo la llamada de pánico de seis semanas.",
+      "after": "El cierre termina con un paquete de documentos y los clientes preguntan por él durante años; sepa qué recibe cada parte: el comprador recibe del condado la escritura inscrita (el original se devuelve al adquirente después de la inscripción), la póliza de título del propietario emitida tras la inscripción y el estado de liquidación, que solicitará su preparador de impuestos. El prestamista conserva el pagaré; la escritura de fideicomiso se devuelve inscrita al expediente del prestamista; el vendedor conserva el estado de liquidación y las pruebas de cancelación tras liquidar la deuda (Módulo 07 de Principios I: un gravamen sin cancelar se convierte en un futuro requisito del título vinculado al nombre del vendedor). La agencia conserva su expediente conforme a las prácticas documentales detalladas en cursos posteriores. La última actuación profesional del agente es una carta de cierre que explique exactamente qué recibirán las partes, de quién y aproximadamente cuándo; prevenir la llamada de pánico «¿dónde está mi escritura?» seis semanas después es un servicio al cliente de muy bajo costo.",
+      "source_sha256": "4d70de1260f18681aa7e4757a6e3a8fcef1931e08c4ad41817220fda0d91ec56",
+      "before_sha256": "c2d5fab068e253e5a688baa704f446758f5cba7dd85b41d38cc61fb063fd3ee2",
+      "after_sha256": "4c4c4ae1660c65f6efe0eeea6db934b07143f62415a0426fac7a24cd198d647f"
+    },
+    {
+      "source": "Closing is the coordinated completion of the transaction under the governing documents. Signing, lender authorization, funding, disbursement, delivery, recording, and possession are related events that can occur at different times. Use precise status language. “Documents signed” is not identical to “funds received and authorized for disbursement.” “Deed recorded” is not a complete statement about possession under a temporary lease.",
+      "before": "El cierre es la finalización coordinada de la transacción con arreglo a los documentos rectores. Firma, autorización del prestamista, financiación, desembolso, entrega, registro y posesión son eventos relacionados que pueden ocurrir en diferentes momentos. Utilice un lenguaje de estado preciso. Los “documentos firmados” no son idénticos a los “fondos recibidos y autorizados para su desembolso”.",
+      "after": "El cierre es la finalización coordinada de la transacción con arreglo a los documentos rectores. Firma, autorización del prestamista, financiación, desembolso, entrega, registro y posesión son eventos relacionados que pueden ocurrir en diferentes momentos. Utilice un lenguaje de estado preciso. Los “documentos firmados” no son idénticos a los “fondos recibidos y autorizados para su desembolso”. «Escritura inscrita» no describe por completo la situación de posesión bajo un arrendamiento temporal.",
+      "source_sha256": "23397fd7cf34ad44107c1e4f77a43892c450110d07f1966fd853a2b1632f2569",
+      "before_sha256": "b67f2f88b33f9bc7f7e7166af1ba1427540eac6664e48e1488a4e4d284deef44",
+      "after_sha256": "266f3e41f1fd5e33ce505e0ae75654cc8573fc0364e45bc17f7de4419acb5f25"
+    },
+    {
+      "source": "Deposits and prepaid rent also differ. A tenant’s security deposit may transfer to the purchaser with corresponding obligations; it is not earned rental income. Rent received for a period spanning closing may require allocation. A delinquent rent amount raises a different question from rent already collected. Obtain the lease and ledger and apply the actual agreement rather than assuming every tenant-related amount is prorated identically.",
+      "before": "Los depósitos y el alquiler prepago también difieren. El depósito de garantía del inquilino puede transferirse al comprador con las obligaciones correspondientes; no es ingreso de alquiler ganado. El alquiler recibido por un período que abarca el cierre puede requerir asignación. Una cantidad de alquiler del delincuente plantea una pregunta diferente de la renta ya cobrada. Obtener el arrendamiento y el libro mayor y aplicar el acuerdo real en lugar de suponer que cada cantidad relacionada con el inquilino se prorratea idénticamente.",
+      "after": "Los depósitos y el alquiler prepago también difieren. El depósito de garantía del inquilino puede transferirse al comprador con las obligaciones correspondientes; no es ingreso de alquiler ganado. El alquiler recibido por un período que abarca el cierre puede requerir asignación. Una cantidad de alquiler vencida y no pagada plantea una pregunta diferente de la renta ya cobrada. Obtener el arrendamiento y el libro mayor y aplicar el acuerdo real en lugar de suponer que cada cantidad relacionada con el inquilino se prorratea idénticamente.",
+      "source_sha256": "16e60c5c0a16477d37f4e1ab5a670fdff28c28f8a37c3f460e18e8f27d9c36f6",
+      "before_sha256": "230eaf1751e651bed0eba0f3cec25e4213218e0cde2bae593e29254c1b8fd2bc",
+      "after_sha256": "1f29071996a04fbd6526fc4a1198bbfdadf8bdf648cfb2499919dd7c90cf63d1"
+    },
+    {
+      "source": "For rental income, assume monthly rent of $1,500 has been received for a 30-day month and the agreement assigns 12 days to the seller. The daily amount is $50; the seller’s share is $600 and the buyer’s is $900. If the seller holds the entire payment, the buyer’s share requires the agreed credit or transfer. If the tenant has not paid, the issue includes who bears the receivable and collection risk. Do not credit collected rent that does not exist without a contractual basis.",
+      "before": "En cuanto a los ingresos por concepto de alquiler, se ha recibido un alquiler mensual de 1,500 dólares por un mes de 30 días y el acuerdo asigna 12 días al vendedor. La cantidad diaria es de $50; la parte del vendedor es de $600 y la del comprador es de $900. Si el vendedor tiene la totalidad del pago, la acción del comprador requiere el crédito o la transferencia acordados. Si el inquilino no ha pagado, la emisión incluye quién asume el riesgo de cobro y cobro. No acredite el alquiler recaudado que no existe sin una base contractual.",
+      "after": "En cuanto a los ingresos por concepto de alquiler, se ha recibido un alquiler mensual de 1,500 dólares por un mes de 30 días y el acuerdo asigna 12 días al vendedor. La cantidad diaria es de $50; la parte del vendedor es de $600 y la del comprador es de $900. Si el vendedor tiene la totalidad del pago, la parte del comprador requiere el crédito o la transferencia acordados. Si el inquilino no ha pagado, la cuestión incluye quién asume la cuenta por cobrar y el riesgo de recuperación. No acredite el alquiler recaudado que no existe sin una base contractual.",
+      "source_sha256": "9afe08c721754a45e39efbc0f1a7fac33231b474ce94bf9e4529b7e4bd8377c8",
+      "before_sha256": "d1954746045d10ecafe56fdc81c155272be9dd9b88f6c9053d3a887d571f4412",
+      "after_sha256": "0dfa251b9d2e95c8d10b8e4abdec396a5581b2394db3235f396d2896fcdb9838"
+    },
+    {
+      "source": "If a participant reports that funds were sent to a potentially fraudulent destination, the matter is urgent. Notify the broker and the relevant financial institution and closing participants through verified channels so they can take appropriate action. Preserve the original messages, headers, payment information, and chronology. The agent should not promise recovery or wait for a routine daily update before escalating. This is practical incident coordination; legal advice, financial-institution action, and any reporting obligations belong to the appropriate professionals.",
+      "before": "Si un participante informa de que se enviaron fondos a un destino potencialmente fraudulento, el asunto es urgente. Notificar al corredor y a la institución financiera pertinente y a los participantes en el cierre a través de canales verificados para que puedan tomar las medidas apropiadas. Preserva los mensajes originales, encabezados, información de pago y cronología. El agente no debe prometer la recuperación o esperar a una actualización diaria de rutina antes de aumentar. Se trata de una coordinación práctica de incidentes; el asesoramiento jurídico, la acción financiera-institucional y cualquier obligación de informar pertenecen a los profesionales apropiados.",
+      "after": "Si un participante informa de que se enviaron fondos a un destino potencialmente fraudulento, el asunto es urgente. Notificar al corredor y a la institución financiera pertinente y a los participantes en el cierre a través de canales verificados para que puedan tomar las medidas apropiadas. Preserva los mensajes originales, encabezados, información de pago y cronología. El agente no debe prometer la recuperación o esperar a una actualización diaria de rutina antes de comunicar urgentemente el incidente a los responsables. Se trata de una coordinación práctica de incidentes; el asesoramiento jurídico, la acción financiera-institucional y cualquier obligación de informar pertenecen a los profesionales apropiados.",
+      "source_sha256": "6196d8d2bdb242d97160bcb385055b86a6bc2d24c2005255ec605a54bd194a1d",
+      "before_sha256": "224b6be316b8c7c148cc35ab7e63622ebebc5912a0fa6636db9a94e013eca6f9",
+      "after_sha256": "423dc911bde667d477d018ea036fd4b3bbf8fb6f51e7145b34c70f9fa7824ed3"
+    },
+    {
+      "source": "Read 12 CFR § 1026.19(f)(1)(ii) and (f)(2). Identify the initial receipt timing and the specified changes that require a new waiting period. Explain why a minor fee correction and a loan-product change should be referred for different analyses rather than treated alike.",
+      "before": "Lea 12 CFR § 1026.19(f)(1)(ii) y (f) (2). Identificar el momento de recepción inicial y los cambios especificados que requieren un nuevo período de espera. Explique por qué una corrección de tasa menor y un cambio de préstamo-producto deben ser referidos para diferentes análisis en lugar de ser tratados por igual.",
+      "after": "Lea 12 CFR § 1026.19(f)(1)(ii) y (f) (2). Identificar el momento de recepción inicial y los cambios especificados que requieren un nuevo período de espera. Explique por qué una corrección menor de un cargo y un cambio de préstamo-producto deben ser referidos para diferentes análisis en lugar de ser tratados por igual.",
+      "source_sha256": "7bc9b32d224d947dcbef2d36cc987d4e592bd23e914968937610726f73d21285",
+      "before_sha256": "d4a17959395b21b2b8498a5dea70f42ee6a137b6739dfb47a029c9ba62e62756",
+      "after_sha256": "39e20176f87b2bd014a5602ff533d98de61573aa3e53a86ccf87813a675c130d"
+    },
+    {
+      "source": "The buyer signs at noon and asks for keys. The lender still needs proof of an agreed repair, and the escrow officer has not confirmed funding. The seller’s movers are waiting. Prepare an accurate status explanation and list the next steps.",
+      "before": "El comprador firma al mediodía y pide llaves. El prestamista todavía necesita la prueba de una reparación acordada, y el oficial de garantía no ha confirmado la financiación. Los vendedores de mudanzas están esperando. Prepare una explicación de estado precisa y enumere los siguientes pasos.",
+      "after": "El comprador firma al mediodía y pide llaves. El prestamista todavía necesita la prueba de una reparación acordada, y el oficial de garantía no ha confirmado la financiación. Los encargados de la mudanza del vendedor están esperando. Prepare una explicación de estado precisa y enumere los siguientes pasos.",
+      "source_sha256": "58a3c6809da5e2d87cc577754fd506e57df591aafa26bf32e21ec6487a373454",
+      "before_sha256": "7025484e59990308f5ed8c74f566bb4320358b6933e5fe2cad5d5ecf40ca7e78",
+      "after_sha256": "3cc6542867328e871c7a587fe41434a5a74800d6cd5cdf01cb2a0ca5f9034fff"
+    },
+    {
+      "source": "The buyer’s closing draft omits a $4,000 earnest-money deposit. The contract and escrow receipt show it was received. Identify the evidence and participants needed to correct the statement and explain why the agent should not change the buyer’s wire amount unilaterally.",
+      "before": "El borrador de cierre del comprador omite un depósito de $4,000 en efectivo. El contrato y el recibo de garantía muestran que fue recibido. Identificar la evidencia y los participantes necesarios para corregir la declaración y explicar por qué el agente no debe cambiar la cantidad de alambre del comprador unilateralmente.",
+      "after": "El borrador de cierre del comprador omite un depósito de garantía de $4,000. El contrato y el recibo de garantía muestran que fue recibido. Identificar la evidencia y los participantes necesarios para corregir la declaración y explicar por qué el agente no debe cambiar la importe de la transferencia bancaria del comprador unilateralmente.",
+      "source_sha256": "728be9a4d053f667692b8ebd1b0fedecef8e996e8554d003f2193bec208ee1da",
+      "before_sha256": "e20e13a81b0e5de25c6eeb4599b57f69392f09d4c84d43326705faa6592580e5",
+      "after_sha256": "0060b56c71c097dd48d063aabe79540906f667929435d5fde0a1b0ea7dfc2db3"
+    },
+    {
+      "source": "The deed (07); the note and deed of trust (08); the FIRPTA affidavit (08); the settlement statement (this module's last two units); the seller's affidavits (debts, liens, parties in possession — the title company's defence-in-depth against Principles I Module 03's off-record claims); tax certificates and prorations (03 and below). A licence holder who can say what each paper",
+      "before": "La escritura (07); la nota y escritura de fideicomiso (08); la declaración jurada de FIRPTA (08); la declaración de liquidación (las dos últimas unidades de este módulo); las declaraciones juradas del vendedor (deudas, gravámenes, partes en posesión — la defensa en profundidad de la empresa titular frente a las reclamaciones no registradas del Módulo 03 de Principios I); certificados fiscales y prorrateos (03 y siguientes). Un titular de la licencia que puede decir lo que cada papel",
+      "after": "La escritura (07); el pagaré y la escritura de fideicomiso (08); la declaración jurada de FIRPTA (08); la declaración de liquidación (las dos últimas unidades de este módulo); las declaraciones juradas del vendedor (deudas, gravámenes, partes en posesión — la defensa en profundidad de la empresa titular frente a las reclamaciones no registradas del Módulo 03 de Principios I); certificados fiscales y prorrateos (03 y siguientes). Un titular de la licencia que puede decir lo que cada papel",
+      "source_sha256": "2c820e856a88bf693e418045b5c607f227d993473cb51bb0cf8518f8604882f2",
+      "before_sha256": "91e00d99c6445d140a3af446eaee5bad3b8426a2ad1d082ff2e2f2ed6f36e723",
+      "after_sha256": "2e5750814c5bfc32318a39775eac59a2e089ec177d5a16211d3b2bf712413984"
+    },
+    {
+      "source": "The final record should include the operative contract and amendments, closing documents, settlement figures, funding and disbursement confirmation as appropriate, possession arrangements, and unresolved follow-up items. If a seller remains under a temporary lease, the file is not simply inactive until move-out. Calendar the agreed surrender and relevant obligations. If a release or correction will be recorded later, identify the responsible participant and expected evidence.",
+      "before": "El acta final debe incluir el contrato operativo y las enmiendas, los documentos de cierre, las cifras de liquidación, la confirmación de la financiación y los desembolsos, según proceda, los arreglos de posesión y los artículos de seguimiento no resueltos. Si un vendedor permanece bajo un contrato de arrendamiento temporal, el archivo no es simplemente inactivo hasta la salida. Calendario de la entrega acordada y las obligaciones pertinentes. Si una liberación o corrección se registrará más adelante, identifique al participante responsable y las pruebas esperadas.",
+      "after": "El acta final debe incluir el contrato operativo y las enmiendas, los documentos de cierre, las cifras de liquidación, la confirmación de la financiación y los desembolsos, según proceda, los arreglos de posesión y los artículos de seguimiento no resueltos. Si un vendedor permanece bajo un contrato de arrendamiento temporal, el archivo no es simplemente inactivo hasta la salida. Programe en el calendario la entrega acordada y las obligaciones pertinentes. Si una liberación o corrección se registrará más adelante, identifique al participante responsable y las pruebas esperadas.",
+      "source_sha256": "8c9f35e7fe19d97fef409dbd62c51163cbd31234c009ee2e03d5369ff93562c9",
+      "before_sha256": "da5c48a6cc461a0b9e706750ccafe32b092cdb51460f9b8183a49e5ea0c6ba87",
+      "after_sha256": "3ac51117eb8a316168f527dbb58030c36e24a9d7749ac3d86ce863a0e7ff808a"
+    },
+    {
+      "source": "When authorization arrives, obtain the appropriate confirmation of disbursement and completion rather than inferring it from an email saying the lender is satisfied. Different participants may use the word funded to describe different stages. Ask the closing officer what has actually occurred and what remains. A precise confirmation supports accurate instructions about keys and proceeds.",
+      "before": "Cuando llegue la autorización, obtenga la confirmación apropiada de desembolso y finalización en lugar de inferirlo de un correo electrónico diciendo que el prestamista está satisfecho. Diferentes participantes pueden utilizar la palabra financiado para describir diferentes etapas. Pregúntele al oficial de cierre qué ha ocurrido realmente y qué queda. Una confirmación precisa apoya instrucciones precisas sobre las claves y el producto.",
+      "after": "Cuando llegue la autorización, obtenga la confirmación apropiada de desembolso y finalización en lugar de inferirlo de un correo electrónico diciendo que el prestamista está satisfecho. Diferentes participantes pueden utilizar la palabra financiado para describir diferentes etapas. Pregúntele al oficial de cierre qué ha ocurrido realmente y qué queda. Una confirmación precisa apoya instrucciones precisas sobre las llaves y los fondos de la venta.",
+      "source_sha256": "7ba4e46b22b45cf6b4b8ea9acf6546adf611f60b738767a85afcff9922abec2c",
+      "before_sha256": "61b0c9ea7df92bed9122e50df92d337f063ad13ba5df03483d85cbb11406c97b",
+      "after_sha256": "416ec7d1332754fe28584d636ccdcf56c65dbe7a49b31aec9500024d2f37328e"
+    },
+    {
+      "source": "— payoffs to existing lienholders (Principles I Module 08's payoff quotes, good through a",
+      "before": "— pagos a titulares de derechos existentes (Principios I Módulo 08 cotizaciones de pago, bueno a través de un",
+      "after": "— liquidaciones a los titulares de gravámenes existentes (las cotizaciones de liquidación del Módulo 08 de Principios I, válidas hasta una",
+      "source_sha256": "656aefbffa8c136d289981fbe9fec0aa3f85c45ac388ebe9d93de7ae252e9b71",
+      "before_sha256": "76d88d21dd05e05accfcab7afef4cf3b632f1f96b318ab56b3b0355750d7440d",
+      "after_sha256": "011bf01d629c5366a11cd5c67913ece4c015e8fa82bd3dfdf2b554ff9cfd7a3f"
+    },
+    {
+      "source": "— the deed and deed of trust go to the county clerk. Principles I Module 07's law makes the",
+      "before": "— la escritura y la escritura de la confianza van al secretario del condado. Principios I Módulo 07 de la ley hace el",
+      "after": "— la escritura y la escritura de fideicomiso van al secretario del condado. Principios I Módulo 07 de la ley hace el",
+      "source_sha256": "96bed6896c40bd3ff7f28d1874ddfa48b9344fa9a2f5c609a8a9ad816953bbf4",
+      "before_sha256": "9b26e9cae114c735e9c62db75e0200b59ded8680df6eb28233e16328a9c3f7cb",
+      "after_sha256": "44f0397707a41ed7a655e35bf18086c16edc6138644c91fa83c73c7970debdbd"
+    },
+    {
+      "source": "— the owner's and loan title policies (Principles I Module 07), converting the",
+      "before": "— las políticas de propiedad y de títulos de préstamo (Principios I Módulo 07),",
+      "after": "— las pólizas de título del propietario y del prestamista (Módulo 07 de Principios I), que convierten el",
+      "source_sha256": "702858d2a2eee20f1b0e9fa902c8287cc04ce37c839bcbcc2eb85d6c784e83f7",
+      "before_sha256": "43f6ed4ab473e130eb621e8660efd2d0f3707e16ff38e1c12dc2852a267c6bb7",
+      "after_sha256": "d371e008d778e2772b8fa48778b58cc16243e4e40e719658a8f345ad85f16466"
+    },
+    {
+      "source": ", and the applicable current",
+      "before": ", y la corriente aplicable",
+      "after": ", y los vigentes y aplicables",
+      "source_sha256": "ab3e789b35df3580bebb2c3d923f5552de18570023dc9e0adb6bc37b493ff409",
+      "before_sha256": "5e42890f7120a688982f514f6df4d01db233c3e157d44fb4b0600af1ad30b073",
+      "after_sha256": "4d505755b22dfc7a9b9934b5e0c02f2fc81633a49cce8f897ff41fd94a4c5179"
+    },
+    {
+      "source": "A complete contract file combines accurate party and property identification, authorized documents, mutual agreement, a provision-based calendar, evidence of performance, and properly assigned decisions. Integrated examples demonstrate that financing, condition, title, possession, and legal remedies remain separate questions even when they arise on the same day. Common failures become easier to prevent when the agent distinguishes a fact from an assumption and a coordination task from legal advice.",
+      "before": "Un expediente de contrato completo combina la identificación precisa de las partes y los bienes, los documentos autorizados, el acuerdo mutuo, un calendario basado en la provisión, pruebas de cumplimiento y decisiones debidamente asignadas. Los ejemplos integrados demuestran que la financiación, la condición, la titularidad, la posesión y los recursos jurídicos siguen siendo cuestiones separadas, incluso cuando surgen el mismo día. Las fallas comunes se hacen más fáciles de prevenir cuando el agente distingue un hecho de una asunción y una tarea de coordinación del asesoramiento jurídico.",
+      "after": "Un expediente de contrato completo combina la identificación precisa de las partes y los bienes, los documentos autorizados, el acuerdo mutuo, un calendario basado en la provisión, pruebas de cumplimiento y decisiones debidamente asignadas. Los ejemplos integrados demuestran que la financiación, la condición, la titularidad, la posesión y los recursos jurídicos siguen siendo cuestiones separadas, incluso cuando surgen el mismo día. Las fallas comunes se hacen más fáciles de prevenir cuando el agente distingue un hecho de una suposición y una tarea de coordinación del asesoramiento jurídico.",
+      "source_sha256": "49c3558d50853e313c2f10afb2fe64420fbadc0b756a551c6d5ded210f7426dd",
+      "before_sha256": "0ae1d7510c50b18cb4d4bd8f67c47abbf1c776a47626169efb40e8509aaa6f88",
+      "after_sha256": "964c650e992ccd72bb6f4a02612d0c23c2048f81f7558ee573fd1852f4e1784d"
+    },
+    {
+      "source": "Another concern is the quiet loss of the operative document. Files can contain an initial offer, a counteroffer, unsigned revisions, a signed contract, several addenda, and an amendment. A participant may inadvertently work from the wrong attachment. Maintain a clear current set and retain the historical versions. Record which change was accepted and when. Do not delete prior versions to make the file look simpler; the chronology may be essential to understanding what happened.",
+      "before": "Otra preocupación es la pérdida silenciosa del documento operativo. Los archivos pueden contener una oferta inicial, una contraoferta, revisiones sin firmar, un contrato firmado, varias adiciones y una enmienda. Un participante puede trabajar inadvertidamente desde el apego incorrecto. Mantener un conjunto de corriente clara y conservar las versiones históricas. Recordar qué cambio fue aceptado y cuándo. No elimine versiones anteriores para hacer que el archivo parezca más simple; la cronología puede ser esencial para entender lo que pasó.",
+      "after": "Otra preocupación es la pérdida silenciosa del documento operativo. Los archivos pueden contener una oferta inicial, una contraoferta, revisiones sin firmar, un contrato firmado, varias adiciones y una enmienda. Un participante puede trabajar inadvertidamente con el archivo adjunto incorrecto. Mantener un conjunto claramente identificado de documentos vigentes y conservar las versiones históricas. Registrar qué cambio fue aceptado y cuándo. No elimine versiones anteriores para hacer que el archivo parezca más simple; la cronología puede ser esencial para entender lo que pasó.",
+      "source_sha256": "6b757e08c20a0bf476ff2b28854f699e983853114134e29c64d1778d0e88b349",
+      "before_sha256": "ff28302f3c6b3d18393a707f4f040843b0946b186440543cf31a369f7f2be021",
+      "after_sha256": "889bcc716182aec324fef862a58f4dddd8ac6f88d301466b6ca9e3c569b83629"
+    },
+    {
+      "source": "Applied Exercise: Closing Pressure and Unresolved Performance",
+      "before": "Ejercicio aplicado: Presión de cierre y rendimiento no resuelto",
+      "after": "Ejercicio aplicado: Presión de cierre y cumplimiento pendiente",
+      "source_sha256": "14ca92d03a6a8efe5d581eaf0f3f6cfe91cdedab24a67a57a73809f1a7ef3a88",
+      "before_sha256": "f4c63310dda2dec94e9cd9b903a1f68b7712f4025348caa428e0b2d780f28f1f",
+      "after_sha256": "606d24e5bf3de3f4c6449598a8b159da332e48d91c8dec8f33753ce89210d525"
+    },
+    {
+      "source": "Finally, distinguish a client’s informed choice from an agent’s substitution of judgment. The client may decide to accept a risk, negotiate a change, obtain additional investigation, or exercise an available right. The agent should communicate material information accurately and within the permitted role, document the decision, and carry out lawful instructions. The file should not suggest that the agent guaranteed a legal outcome or pressured the client to waive a protection to preserve a commission.",
+      "before": "Por último, distinguir la elección informada de un cliente de la sustitución de un agente de juicio. El cliente puede decidir aceptar un riesgo, negociar un cambio, obtener una investigación adicional o ejercer un derecho disponible. El agente debe comunicar la información material con exactitud y dentro de la función permitida, documentar la decisión y llevar a cabo instrucciones legales. El archivo no debe sugerir que el agente garantizó un resultado legal o presionó al cliente a renunciar a una protección para preservar una comisión.",
+      "after": "Por último, distinguir la elección informada de un cliente de que el agente sustituya el criterio del cliente por el suyo. El cliente puede decidir aceptar un riesgo, negociar un cambio, obtener una investigación adicional o ejercer un derecho disponible. El agente debe comunicar la información material con exactitud y dentro de la función permitida, documentar la decisión y llevar a cabo instrucciones legales. El archivo no debe sugerir que el agente garantizó un resultado legal o presionó al cliente a renunciar a una protección para preservar una comisión.",
+      "source_sha256": "492a7def727bcea40b34a83f6de9dd7eef9ee5a3ef6cddf612d37d5d7c68ebc2",
+      "before_sha256": "048f86891551f46b406c87abf16ff618b79fe3f27bb84919eb67f92d15bdb4ac",
+      "after_sha256": "37139b7af8567d1a9a76cd90ee8230a35927f07e8c7379d5d4e6738419a19cad"
+    },
+    {
+      "source": "In the fourth example, a conventional resale transaction approaches closing. The buyer completed inspections and agreed to proceed. A signed amendment specifies repairs, but the final walkthrough reveals that one listed item is unfinished. The seller has already moved, and the buyer’s moving truck is scheduled for the next morning. The lender has authorized documents but has not confirmed funding. The agent receives an email purporting to change the closing company’s wire instructions.",
+      "before": "En el cuarto ejemplo, una transacción convencional de reventa se aproxima al cierre. El comprador completó las inspecciones y convino en proceder. Una enmienda firmada especifica las reparaciones, pero la guía final revela que un elemento enumerado está inacabado. El vendedor ya se ha trasladado, y el camión móvil del comprador está programado para la mañana siguiente. El prestamista ha autorizado los documentos, pero no ha confirmado la financiación. El agente recibe un correo electrónico que pretende cambiar las instrucciones de giro bancario de la compañía de cierre.",
+      "after": "En el cuarto ejemplo, una transacción convencional de reventa se aproxima al cierre. El comprador completó las inspecciones y convino en proceder. Una enmienda firmada especifica las reparaciones, pero la inspección final de la propiedad revela que un elemento enumerado está inacabado. El vendedor ya se ha trasladado, y el camión de mudanzas del comprador está programado para la mañana siguiente. El prestamista ha autorizado los documentos, pero no ha confirmado la financiación. El agente recibe un correo electrónico que pretende cambiar las instrucciones de giro bancario de la compañía de cierre.",
+      "source_sha256": "bcecc67b1f9b65624477a592e5329173a7cece229d1654d7474b02198fb2d2c8",
+      "before_sha256": "0ff0b9ee110e099e94a70c0d2777628c3ec3be1ea079a5c8a8ea129d99ba54da",
+      "after_sha256": "a3af9ed2f7a7ed541b9a65cdae76b1fdc90db4d43af2c668a1036cd8499ceeb1"
+    },
+    {
+      "source": "Obtain the leases, amendments, relevant notices, deposit information, and income records through the authorized process. The lease term and possession rights may prevent the intended immediate occupancy. A security deposit is not seller income to be divided as rent. Prepaid rent and delinquent rent require different accounting treatment under the agreement. The parties should determine which interests and obligations transfer, how the closing figures address them, and what information and notices the law requires. The broker should not promise that a sale automatically ends a tenant’s lease.",
+      "before": "Obtener los arrendamientos, enmiendas, avisos pertinentes, información de depósito y registros de ingresos a través del proceso autorizado. La duración del arrendamiento y los derechos de posesión pueden impedir la ocupación inmediata prevista. Un depósito de garantía no es ingreso del vendedor para ser dividido como alquiler. El alquiler prepagado y el alquiler de delincuentes requieren un tratamiento contable diferente en virtud del acuerdo. Las partes deben determinar qué intereses y obligaciones transfieren, cómo las cifras finales las abordan y qué información y avisos requiere la ley. El corredor no debe prometer que una venta termina automáticamente el alquiler de un inquilino.",
+      "after": "Obtener los arrendamientos, enmiendas, avisos pertinentes, información de depósito y registros de ingresos a través del proceso autorizado. La duración del arrendamiento y los derechos de posesión pueden impedir la ocupación inmediata prevista. Un depósito de garantía no es ingreso del vendedor para ser dividido como alquiler. El alquiler prepagado y el alquiler vencido y no pagado requieren un tratamiento contable diferente en virtud del acuerdo. Las partes deben determinar qué intereses y obligaciones transfieren, cómo las cifras finales las abordan y qué información y avisos requiere la ley. El corredor no debe prometer que una venta termina automáticamente el alquiler de un inquilino.",
+      "source_sha256": "8d380e6bb84a8e8d1c23fff6c84014600727bd3c0f64b14b7e58505e9e1be00e",
+      "before_sha256": "bae8e2213f71c843732fd8023c97c68af33ffa925de2d629f49e6772fbf26007",
+      "after_sha256": "c2c3a3556f7dcb602a475b252c52d341c9d1eb3dda9a548d1ec3dcf93dc7de24"
+    },
+    {
+      "source": "Risk management in Texas brokerage is not a philosophy. It is the practice of knowing, in advance, which specific things go wrong, what the Commission does about them, what a court does about them, and what you are supposed to do on the day you realise you are the one who got it wrong. Almost all of the law in this unit belongs to other modules — the disciplinary catalogue and the penalty scheme to Law of Agency Module 10, the Recovery Trust Account and the DTPA to Law of Agency Module 11, the allocation of misrepresentation liability to Law of Agency Module 03. What is here is where each of them meets your file.",
+      "before": "La gestión de riesgos en el corredor de Texas no es una filosofía. Es la práctica de saber, de antemano, qué cosas específicas van mal, qué hace la Comisión al respecto, qué hace un tribunal al respecto y qué se supone que debe hacer el día que se da cuenta de que usted es el que se equivoca. Casi toda la ley de esta unidad pertenece a otros módulos: el catálogo disciplinario y el plan de sanciones al Módulo 10 de la Ley de la Agencia, la Cuenta de Fideicomiso de Recuperación y el Módulo 11 de la Ley de la Agencia, la asignación de responsabilidad por tergiversación al Módulo 03 de la Ley de la Agencia.",
+      "after": "La gestión de riesgos en el corredor de Texas no es una filosofía. Es la práctica de saber, de antemano, qué cosas específicas van mal, qué hace la Comisión al respecto, qué hace un tribunal al respecto y qué se supone que debe hacer el día que se da cuenta de que usted es el que se equivoca. Casi toda la ley de esta unidad pertenece a otros módulos: el catálogo disciplinario y el plan de sanciones al Módulo 10 de la Ley de la Agencia, la Cuenta Fiduciaria de Recuperación y la DTPA al Módulo 11 de Derecho de Agencia, la asignación de responsabilidad por tergiversación al Módulo 03 de la Ley de la Agencia. Aquí se explica cómo cada uno se aplica al expediente de la transacción.",
+      "source_sha256": "e48c040b2e8611638b381e128abc9d70625ea920e736f3b538f0407f1aead922",
+      "before_sha256": "bf6b99a59722b140c773797220151669138b19658c6eb0987c5e2e0b956c1c37",
+      "after_sha256": "74e1eeff7a1d3180cdab42315fc8c2d0652c9cd283750e085a94cb5da182ac26"
+    },
+    {
+      "source": "Section 1101.204, sets the frame: a signed, written, non-anonymous complaint, submitted within four years of the incident, with reasonable cause for an investigation, and prompt written notice to the license holder under investigation. Rule 535.141 then triages it.",
+      "before": "El artículo 1101.204 establece el marco: una denuncia firmada, escrita y no anónima, presentada dentro de los cuatro años siguientes al incidente, con causa razonable para una investigación, y una notificación por escrito al titular de la licencia bajo investigación. La regla 535.141 luego lo analiza.",
+      "after": "El artículo 1101.204 establece el marco: una denuncia firmada, escrita y no anónima, presentada dentro de los cuatro años siguientes al incidente, con causa razonable para una investigación, y una notificación pronta por escrito al titular de la licencia bajo investigación. La regla 535.141 luego lo analiza.",
+      "source_sha256": "470c30ef158457a32f23a9b730ef1af16b705df8b364a748afdd80a4821ba052",
+      "before_sha256": "1673021ac0bfefbc24a1715d9724e9ddc957c9f102d299e43d5b76ced8d87b5b",
+      "after_sha256": "fbeebf32c34189a703cfc04b747f04ae2f00bfe3e3d736373010d375da709b49"
+    },
+    {
+      "source": "Statute Reading Exercise: Separate Completion from Legal Drafting",
+      "before": "Ejercicio de lectura de estatutos: Terminación separada de redacción legal",
+      "after": "Ejercicio de lectura de la ley: distinga completar formularios de redactar cláusulas jurídicas",
+      "source_sha256": "45eba901b48420e15a2a4113488ddd9ae56952fc159565b95ca3783cded699d7",
+      "before_sha256": "a96fab05718b74fe750b9f527e92919e22fb87308af114ced0061a2fb58ee230",
+      "after_sha256": "604758365f4c4762993c00f3d3b22daa0c40f4d50857e51b88c85a2bfa8aae3e"
+    },
+    {
+      "source": "The agent should identify the existing debt, proposed payment flow, contemplated conveyance date, security arrangement, insurance, taxes, and default provisions. Existing financing may have restrictions that cannot be ignored merely because payments will continue. Seller-financing regulation and applicable loan-originator requirements also demand proper analysis. A familiar deed-of-trust structure, a wrap arrangement, and a contract for deed are not interchangeable products. They place title, debt, security, and default rights in different relationships.",
+      "before": "El agente debe identificar la deuda existente, el flujo de pagos propuesto, la fecha de transmisión prevista, el acuerdo de garantía, los seguros, los impuestos y las disposiciones por incumplimiento. La financiación existente puede tener restricciones que no pueden ser ignoradas simplemente porque los pagos continuarán. La regulación de la financiación de los vendedores y los requisitos aplicables de origen de préstamos también exigen un análisis adecuado. Una estructura de escritura de confianza familiar, un arreglo de envoltura y un contrato de escritura no son productos intercambiables. Colocan el título, la deuda, la seguridad y los derechos de incumplimiento en diferentes relaciones.",
+      "after": "El agente debe identificar la deuda existente, el flujo de pagos propuesto, la fecha de transmisión prevista, el acuerdo de garantía, los seguros, los impuestos y las disposiciones por incumplimiento. La financiación existente puede tener restricciones que no pueden ser ignoradas simplemente porque los pagos continuarán. La regulación de la financiación de los vendedores y los requisitos aplicables a los originadores de préstamos también exigen un análisis adecuado. Una estructura habitual de escritura de fideicomiso, una financiación envolvente y un contrato de compraventa a plazos con entrega diferida de escritura no son productos intercambiables. Colocan el título, la deuda, la garantía y los derechos de incumplimiento en diferentes relaciones.",
+      "source_sha256": "b171f23b2ad16b200bd132799d35fae1952856251f021d2f22392476cf6b8060",
+      "before_sha256": "01d3fd3c9125c7b38a2bb6fb4d6b32307b477955293d3adcd5ca0d1b14f9be6d",
+      "after_sha256": "0329ec48d811f5ae4abc94689c5f102150281cf447b66a783edc7e0b847b6ac6"
+    },
+    {
+      "source": "The buyer’s financing raises another issue. If the lender underwrites based on rental income, the lender needs accurate information about the actual leases and payment history. The agent should not omit the delinquent balance to preserve approval or treat the buyer’s future occupancy plan as irrelevant. Accurate transaction information should travel through authorized channels, with sensitive personal data protected. Whether the loan qualifies is the lender’s determination; whether the buyer wishes to proceed is the buyer’s decision under the agreement and applicable advice.",
+      "before": "La financiación del comprador plantea otra cuestión. Si el prestamista asegura basado en los ingresos de alquiler, el prestamista necesita información precisa sobre los arrendamientos reales y el historial de pago. El agente no debe omitir el saldo pendiente para preservar la aprobación o tratar el plan de ocupación futuro del comprador como irrelevante. La información precisa sobre transacciones debe viajar a través de canales autorizados, con datos personales confidenciales protegidos. Si el préstamo califica es la determinación del prestamista; si el comprador desea proceder es la decisión del comprador bajo el acuerdo y el asesoramiento aplicable.",
+      "after": "La financiación del comprador plantea otra cuestión. Si el prestamista evalúa el préstamo basándose en los ingresos de alquiler, el prestamista necesita información precisa sobre los arrendamientos reales y el historial de pago. El agente no debe omitir el saldo pendiente para preservar la aprobación o tratar el plan de ocupación futuro del comprador como irrelevante. La información precisa sobre transacciones debe viajar a través de canales autorizados, con datos personales confidenciales protegidos. Si el préstamo califica es la determinación del prestamista; si el comprador desea proceder es la decisión del comprador bajo el acuerdo y el asesoramiento aplicable.",
+      "source_sha256": "0b1711e2544fa5277e1c4983c070fe88d93e40cea00c0263d6a567332eb085fa",
+      "before_sha256": "af5764260d46ff685cd4ff36232bd33141387dc688ecdb4e696247a37e1d52a6",
+      "after_sha256": "7150f7caac9bfda94e5f89aebaca3476b75dfc4221520a4588975efc62a3a390"
+    },
+    {
+      "source": "Three exposures run alongside discipline, and all three are taught elsewhere. The Real Estate Recovery Trust Account, §§ 1101.601–.610 and Law of Agency Module 11, pays an aggrieved person's actual damages after a judgment goes unsatisfied, subject to the caps that module sets out, and then looks to you: it is your licence that answers for the reimbursement. The DTPA, Business & Commerce Code ch. 17 and Law of Agency Module 11, adds mental anguish and up to treble damages for knowing or intentional conduct, and the consumer's attorney's fees under § 17.50(d). And § 1101.805, taught in Law of Agency Module 03, allocates responsibility for misrepresentation between you and your client on two elements — knowledge of the falsity and failure to disclose that knowledge. The practical reading: you are not an insurer of your seller's statements, but the moment you know a statement is false, staying quiet makes it yours. Suit for fraud or breach of fiduciary duty must be brought within four years, Civil Practice and Remedies Code § 16.004(a) — the same four years for which your file must survive.",
+      "before": "Tres exposiciones van al lado de la disciplina, y las tres se enseñan en otros lugares. La cuenta fiduciaria de recuperación de bienes raíces, §§ 1101.601–.610 y el módulo 11 de la ley de la agencia, paga los daños reales de una persona agraviada después de que un juicio queda insatisfecho, sujeto a los límites que el módulo establece, y luego mira a usted: es su licencia que responde para el reembolso. El DTPA, Business & Commerce Code ch. 17 y Law of Agency Módulo 11, añade angustia mental y hasta daños triples por conocer o conducta intencional, y los honorarios del abogado del consumidor bajo § 17.50(d). Y § 1101.805, enseñado en el Módulo de Ley de la Agencia 03, asigna la responsabilidad de la tergiversación entre usted y su cliente en dos elementos: el conocimiento de la falsedad y la falta de revelar ese conocimiento. La lectura práctica: usted no es una aseguradora de las declaraciones de su vendedor, pero en el momento en que usted sabe que una declaración es falsa, permanecer callado lo hace suyo. La demanda por fraude o incumplimiento de obligaciones fiduciarias debe presentarse dentro de cuatro años, Código de Práctica Civil y Recursos § 16.004(a), los mismos cuatro años para los que su archivo debe sobrevivir.",
+      "after": "Tres exposiciones van al lado de la disciplina, y las tres se enseñan en otros lugares. La cuenta fiduciaria de recuperación de bienes raíces, §§ 1101.601–.610 y el módulo 11 de la ley de la agencia, paga los daños reales de una persona agraviada después de que un juicio queda insatisfecho, sujeto a los límites que el módulo establece, y luego mira a usted: es su licencia que responde para el reembolso. El DTPA, Business & Commerce Code ch. 17 y Law of Agency Módulo 11, añade angustia mental y hasta daños triples por conducta realizada a sabiendas o intencionalmente, y los honorarios del abogado del consumidor bajo § 17.50(d). Y § 1101.805, enseñado en el Módulo de Ley de la Agencia 03, asigna la responsabilidad de la tergiversación entre usted y su cliente en dos elementos: el conocimiento de la falsedad y la falta de revelar ese conocimiento. La lectura práctica: usted no es una aseguradora de las declaraciones de su vendedor, pero en el momento en que usted sabe que una declaración es falsa, permanecer callado lo hace suyo. La demanda por fraude o incumplimiento de obligaciones fiduciarias debe presentarse dentro de cuatro años, Código de Práctica Civil y Recursos § 16.004(a), los mismos cuatro años para los que su archivo debe sobrevivir.",
+      "source_sha256": "ea443550e0f506c20c22bac4b0a2448682dd26e802cb839ecff3e8a8c7f7d139",
+      "before_sha256": "7a40b213fb8e9cf90a8c8e19dbef832de51967900f856c97c57aa3cd4262cb34",
+      "after_sha256": "d47644b46e69e3f207dedce9c9ab623ac2e6e77b9e14dc14d1caada26e094b2b"
+    },
+    {
+      "source": "Two consequences to absorb now. A complaint that names a sales agent but not the sponsoring broker is, under 22 TAC § 535.141, also a complaint against that broker for the limited purpose of determining the broker's involvement and whether the broker met the broker's professional responsibilities — and § 1101.803, makes the broker liable to the Commission, the public and clients for your conduct. Your mistake is your broker's problem by operation of statute, which is why brokers write policies and why you follow them. Second, § 1101.652(a)(4) makes it an independent ground for discipline to fail to provide, within a reasonable time, information the Commission requests in connection with a complaint. Ignoring a request can create a separate disciplinary issue even when the underlying complaint is disputed.",
+      "before": "Dos consecuencias que absorber ahora. Una queja que nombra un agente de ventas pero no el bróker patrocinador es, bajo 22 TAC § 535.141, también una queja contra ese bróker con el propósito limitado de determinar la participación del bróker y si el bróker cumplió con las responsabilidades profesionales del bróker — y § 1101.803, hace que el bróker sea responsable ante la Comisión, el público y los clientes por su conducta. Su error es el problema de su bróker por la operación de la ley, que es por lo que los brókers escriben políticas y por qué usted las sigue. En segundo lugar, § 1101.652(a)(4) hace que sea un motivo independiente para que la disciplina no proporcione, en un plazo razonable, la información solicitada por la Comisión en relación con una denuncia. Ignorar una solicitud puede crear una cuestión disciplinaria separada incluso cuando la queja subyacente es cuestionada.",
+      "after": "Dos consecuencias que absorber ahora. Una queja que nombra un agente de ventas pero no el bróker patrocinador es, bajo 22 TAC § 535.141, también una queja contra ese bróker con el propósito limitado de determinar la participación del bróker y si el bróker cumplió con las responsabilidades profesionales del bróker — y § 1101.803, hace que el bróker sea responsable ante la Comisión, el público y los clientes por su conducta. Su error es el problema de su bróker por la operación de la ley, que es por lo que los brókers escriben políticas y por qué usted las sigue. En segundo lugar, § 1101.652(a)(4) hace que sea un motivo independiente de disciplina no proporcionar, en un plazo razonable, la información solicitada por la Comisión en relación con una denuncia. Ignorar una solicitud puede crear una cuestión disciplinaria separada incluso cuando la queja subyacente es cuestionada.",
+      "source_sha256": "2966505f47553858ddfef5187eefd93e82e985b446c948cc7e1fc0bc28df9e92",
+      "before_sha256": "05b62c59e322fe3d2fb54ebd49208e00c0fb5b9272c95231f8bfa1899f0325ae",
+      "after_sha256": "c06e48537e19c9c0732b94962e4559a252a613b9f022573f5af744d8c18e85cd"
+    },
+    {
+      "source": "— § 1101.652(b)(18) through (b)(22): a sign without written consent, offering property without the owner's knowledge and consent, offering on unauthorised terms, inducing a party to break a contract in order to substitute a new one, and negotiating with a party you know is under an exclusive agency with another broker. On that last one, 22 TAC § 535.153, taught in Law of Agency Module 04, draws the line precisely: soliciting a listing from an owner whose property is subject to another broker's exclusive listing is permitted; negotiating the present transaction is not.",
+      "before": "— § 1101.652(b)(18) a (b)(22): un signo sin consentimiento por escrito, ofreciendo bienes sin el conocimiento y consentimiento del propietario, ofreciendo en condiciones no autorizadas, induciendo a una parte a romper un contrato para sustituir uno nuevo, y negociando con una parte que usted sabe que está bajo una agencia exclusiva con otro corredor. En esa última, 22 TAC § 535.153, enseñada en el Módulo 04 de la Ley de Agencia, traza la línea con precisión: solicitar una captación inmobiliaria de un propietario cuya propiedad está sujeta a la captación inmobiliaria exclusiva de otro corredor está permitido; negociar la presente transacción no está permitido.",
+      "after": "— § 1101.652(b)(18) a (b)(22): un letrero sin consentimiento por escrito, ofreciendo bienes sin el conocimiento y consentimiento del propietario, ofreciendo en condiciones no autorizadas, induciendo a una parte a romper un contrato para sustituir uno nuevo, y negociando con una parte que usted sabe que está bajo una agencia exclusiva con otro corredor. En esa última, 22 TAC § 535.153, enseñada en el Módulo 04 de la Ley de Agencia, traza la línea con precisión: solicitar una captación inmobiliaria de un propietario cuya propiedad está sujeta a la captación inmobiliaria exclusiva de otro corredor está permitido; negociar la presente transacción no está permitido.",
+      "source_sha256": "99ad6cfe1b210caa0330f45f70abd6db01033f30be4b24de518628014a63cdad",
+      "before_sha256": "0661c576fd8a5339b1fa7fbce1465a055f10800e903be682fc5e4ecd30ead4f1",
+      "after_sha256": "ced086d421f391f53e07993d6972644ac2550d04caa62df02f5880800c31504e"
+    },
+    {
+      "source": "(charged to one, owed to the other); the seller's payoff is a seller",
+      "before": "(cargado a uno, adeudado a otro); el pago del vendedor es un vendedor",
+      "after": "(se carga a uno y se adeuda al otro); la liquidación del préstamo del vendedor figura para él como",
+      "source_sha256": "be1916350efae4c7d5ae2f7137fa00a30f4314ce231cb904f9342dfaac14a5ff",
+      "before_sha256": "f9c12e37a05f5dad705f1da4d891ad9f05d2b2f37bdd918fd4abdadd3849d902",
+      "after_sha256": "16e5d1f01866259abcab4b1d22a6208e67f62dbc7ae4f7954c94c4305fa2799b"
+    },
+    {
+      "source": "(it arrives on the buyer's behalf); the price is a buyer",
+      "before": "(llega en nombre del comprador); el precio es un comprador",
+      "after": "(se recibe por cuenta del comprador); el precio figura para el comprador como",
+      "source_sha256": "c6dbcfb98ff93eb04a0c7b73383c143e26042ad5c3e9320d7c9b779f45aa2dec",
+      "before_sha256": "da2405e3d538e579f216530fe860168d859127b434883bc573ab8737a671d4e5",
+      "after_sha256": "b38bea884cb2f8cb6e5e67b837b2539e4be84778b5c148ef3fd8609f26b0f9bd"
+    },
+    {
+      "source": ". Debits: payoff $187,400; commission $18,000; owner's premium $1,800; escrow fee $450; tax proration $2,952 →",
+      "before": ". Deberes: pago $ 187,400; comisión $ 18,000; prima del propietario $ 1,800; comisión de garantía $ 450; prorrateo de impuestos $ 2,952 →",
+      "after": ". Débitos: pago $ 187,400; comisión $ 18,000; prima del propietario $ 1,800; comisión de garantía $ 450; prorrateo de impuestos $ 2,952 →",
+      "source_sha256": "526303189861c45ba46425cb38de22c8148399baddb300039787f515bfe23edd",
+      "before_sha256": "b403c581be363a964c0a1adf5000c64990ea2cac1a16a9813b00f9a7275deccc",
+      "after_sha256": "9af586a555e4b1a1e77b001fba513d001e6c18205b6634b1bad539dfca37a733"
+    },
+    {
+      "source": ". The buyer's loan is a buyer",
+      "before": ". El préstamo del comprador es un comprador",
+      "after": ". El préstamo figura a favor del comprador como",
+      "source_sha256": "f62aca57419716f0feddc8746cc216bdeadbfb272e4baa8868f9b539a5a78284",
+      "before_sha256": "a7698a5e262b6a2cd5142bbbd33887f0735e8738c50b3a46527062f5997928e8",
+      "after_sha256": "960dbc2c0a76c1aeb5def6badcabbba4699b5b3afcc660ef25664b06f8502b8f"
+    },
+    {
+      "source": ": a party may sign through an attorney-in-fact under a power of attorney the title company approved",
+      "before": ": una parte puede firmar a través de un abogado-en-hecho bajo un poder de la compañía de título aprobado",
+      "after": ": una parte puede firmar mediante un apoderado conforme a un poder aprobado por la compañía de títulos",
+      "source_sha256": "e13b0d8538a640b3d6440016b203761c2a0310b4f12925741190de5582a19409",
+      "before_sha256": "c5544731c7884da0a55b4c49f517abf4f27bf2ea80c03f3bebee5fe696cf2637",
+      "after_sha256": "5f0c7d659bf15f0885b3e8863ea88b7ec173ce00cfcf5a5871c5b90d632a2237"
+    },
+    {
+      "source": ": the closer implements only what the contract, amendments and lender instructions authorise, which is why changes are papered as amendments rather than negotiated orally at the table. Understanding the neutral's constraints keeps the agent from asking for what cannot be given — and positions the agent as the person who gets the",
+      "before": ": la aplicación más cercana sólo lo autoriza el contrato, las enmiendas y las instrucciones del prestamista, por lo que los cambios se redactan como enmiendas en lugar de negociarse oralmente en la mesa. Entender las limitaciones de los neutrales evita que el agente pregunte por lo que no se puede dar — y posiciona al agente como la persona que recibe el",
+      "after": ": el encargado del cierre solo aplica lo autorizado por el contrato, sus modificaciones y las instrucciones del prestamista. Por eso los cambios se documentan como modificaciones, en lugar de negociarse verbalmente al firmar. Comprender estos límites evita pedir lo que no se puede hacer y permite al agente obtener correctamente la",
+      "source_sha256": "abd962a617f3128b6c44369fd3ea58635f396157151669aba0962d2a573a1cd9",
+      "before_sha256": "e072e3117bdec3125071287f42b2ad0278aae50e22088ae72ef726a49df487b4",
+      "after_sha256": "3032278419d9dcd62bc94b3eb102cffe9e72f0604fc22db487471936e1a6b515"
+    },
+    {
+      "source": "A party asks the closer \"should I sign this?\"",
+      "before": "Una fiesta pregunta más de cerca \"¿debería firmar esto?\"",
+      "after": "Una parte pregunta al encargado del cierre: «¿debo firmar esto?»",
+      "source_sha256": "bd0bd5727016e4829f73ec66835d764b211fb3f804bb8547f7ce221a786a2be9",
+      "before_sha256": "06ba35a29586c9fc883f439a6c976a6002243e13be67d926a304451596b5bd5b",
+      "after_sha256": "5f74e3f4815adf76a25334bc9861b10d20888404865673e7878c1a52bc2b2784"
+    },
+    {
+      "source": "Answer the Commission. Section 1101.652(a)(4) makes failure to provide requested information within a reasonable time its own ground for discipline, and § 1101.702(b) lists \"efforts to correct the violation\" among the factors that set the penalty amount. Prompt correction is not merely decent; it is statutorily relevant to what you will pay.",
+      "before": "Contesta a la Comisión. La sección 1101.652(a)(4) no proporciona la información solicitada dentro de un plazo razonable su propio motivo de disciplina, y § 1101.702(b) enumera \"esfuerzos para corregir la violación\" entre los factores que establecen el importe de la pena. La corrección pronta no es meramente decente; es estatutariamente relevante para lo que ustedes pagarán.",
+      "after": "Contesta a la Comisión. La sección 1101.652(a)(4) establece como motivo disciplinario independiente no proporcionar la información solicitada dentro de un plazo razonable, y § 1101.702(b) enumera \"esfuerzos para corregir la violación\" entre los factores que establecen el importe de la pena. La corrección pronta no es meramente decente; es estatutariamente relevante para lo que ustedes pagarán.",
+      "source_sha256": "bb947bb8b49b6f043eacc76092ed19f4889225efc76aaceadd687a41c6bc0e1c",
+      "before_sha256": "5cbfa5c85ef4c2cc492dd1e608629e4b2e82222f1d07e4aa33c428ce4d45fa55",
+      "after_sha256": "8b4023da804af3342b51ae9dafecff8fdceb36f13c3897d1d086dd3c9da5d70a"
+    },
+    {
+      "source": "Buyer debits",
+      "before": "Deudas del comprador",
+      "after": "Débitos del comprador",
+      "source_sha256": "f338d3e2ac28f396d857eb0cde80f8e5e0c95197a75b75b603dec4431499f51f",
+      "before_sha256": "43eef4474263d5607bcf08c3c2bf207d09aa338b09804d24a1c3885f93da52d7",
+      "after_sha256": "9c642a3c34ab3502337406f0b84b6dba28b9250c1dab4446843faa60b73f584d"
+    },
+    {
+      "source": "Date, with per-diem interest), taxing units if delinquencies exist, commissions, service providers, seller's proceeds.",
+      "before": "Fecha, con intereses per-diem), unidades tributarias si existen delinquencias, comisiones, proveedores de servicios, ingresos del vendedor.",
+      "after": "fecha, con intereses diarios), pagos a entidades tributarias si hay atrasos, comisiones, proveedores de servicios y fondos netos del vendedor.",
+      "source_sha256": "1aef0b2419213f62480fb05d5709599c0ecad29f747f28484f584c79f683952d",
+      "before_sha256": "74b2598429f57856b932a8f7e99d86e1b376e4808236a277c36ee1f3123950d6",
+      "after_sha256": "e2228a479e19f65ab0110da0cc99d0a71434f4c9ee848125a49bd75d1bcdd5da"
+    },
+    {
+      "source": "Do not touch the file except to add to it. Section 1101.652(a-1)(2) makes it a ground for discipline to fail or refuse to produce records for inspection; 22 TAC § 535.2 requires the broker to keep the eight listed record categories four years in a format readily available to the Commission; and the only excuse the rule recognises for missing records is destruction \"by an 'Act of God' such as a natural disaster or fire not intentionally caused by the broker\".",
+      "before": "No toque el archivo excepto para añadirlo. La sección 1101.652(a-1)(2) hace que sea un motivo para que la disciplina falle o se niegue a producir registros para la inspección; 22 TAC § 535.2 requiere que el corredor mantenga las ocho categorías de registros enumeradas cuatro años en un formato fácilmente accesible a la Comisión; y la única excusa que la norma reconoce para los registros faltantes es la destrucción \"por un 'acto de Dios' como un desastre natural o un incendio no causado intencionalmente por el intermediario\".",
+      "after": "No toque el archivo excepto para agregar información. La sección 1101.652(a-1)(2) convierte en motivo disciplinario no presentar o negarse a presentar registros para la inspección; 22 TAC § 535.2 requiere que el corredor mantenga las ocho categorías de registros enumeradas cuatro años en un formato fácilmente accesible a la Comisión; y la única excusa que la norma reconoce para los registros faltantes es la destrucción \"por un 'acto de Dios' como un desastre natural o un incendio no causado intencionalmente por el intermediario\".",
+      "source_sha256": "e3639145907685add69afe00704a892795d1ecc935dccfe5e5bd399b13b2a4db",
+      "before_sha256": "689c71e811899cfe9eaa204d630aa2d6ef9146fda983f728ac81f6f0022b6575",
+      "after_sha256": "a20b313d55441019d20ea14127db61649dbe4496bb18efc4119762b7d8b47087"
+    },
+    {
+      "source": "Facts: price $300,000; buyer's new loan $240,000; earnest money $3,000 held by the title company; seller's payoff $187,400; commission 6% split evenly; seller's escrow fee share $450, buyer's $450; owner's title premium $1,800 paid by seller per contract; buyer's lender charges $4,200; recording, buyer's instruments, $180; closing June 15, annual taxes $6,480 prorated on the 360-day method, seller through June 14 (share $2,952.00).",
+      "before": "Hechos: precio $300,000; nuevo préstamo del comprador $240,000; serio dinero $3,000 en manos de la compañía titular; pago del vendedor $187,400; comisión 6% dividido equitativamente; cuota de garantía bloqueada del vendedor $450, comprador $450; prima de título del propietario $1,800 pagado por el vendedor por contrato; el prestamista del comprador cobra $4,200; inscripción registral, instrumentos del comprador, $180; cierre de junio 15, impuestos anuales $6,480 prorrateado sobre el método 360-day, vendedor hasta junio 14 (participación $2,952.00).",
+      "after": "Hechos: precio $300,000; nuevo préstamo del comprador $240,000; depósito de buena fe $3,000 en manos de la compañía titular; pago del vendedor $187,400; comisión 6% dividido equitativamente; cuota de garantía bloqueada del vendedor $450, comprador $450; prima de título del propietario $1,800 pagado por el vendedor por contrato; el prestamista del comprador cobra $4,200; inscripción registral, instrumentos del comprador, $180; cierre de junio 15, impuestos anuales $6,480 prorrateado sobre el método 360-day, vendedor hasta junio 14 (participación $2,952.00).",
+      "source_sha256": "3a39a93d509956697b1537595733b51af7904b00434632a1e872fce224f15201",
+      "before_sha256": "603e27774377a6c57371b3a8be75b1336c6b435e4458c60850e9cab3ef8a4745",
+      "after_sha256": "d11e906016cc16da110bda18759eac33bc8f9826b44d412303b684bf4c6cf81a"
+    },
+    {
+      "source": "If money is involved, use the notice rules that already exist. Under 22 TAC § 535.146 a broker whose trust-money check is dishonoured \"shall immediately notify all parties to the transaction in writing\", must notify all parties in writing of any disbursement made on a written demand or a subsequent written agreement, and may interplead where entitlement genuinely cannot be determined.",
+      "before": "Si se trata de dinero, utilice las reglas de notificación que ya existen. Bajo 22 TAC § 535.146 un corredor cuyo cheque de fideicomiso-dinero es deshonroso \"notificará inmediatamente a todas las partes en la transacción por escrito\", debe notificar a todas las partes por escrito de cualquier desembolso realizado sobre una demanda escrita o un acuerdo escrito posterior, y puede interplegar cuando el derecho realmente no puede ser determinado.",
+      "after": "Si se trata de dinero, utilice las reglas de notificación que ya existen. Bajo 22 TAC § 535.146 un corredor cuyo cheque correspondiente a dinero fiduciario es rechazado \"notificará inmediatamente a todas las partes en la transacción por escrito\", debe notificar a todas las partes por escrito de cualquier desembolso realizado sobre una demanda escrita o un acuerdo escrito posterior, y puede consignar el dinero judicialmente para que se determine a quién corresponde cuando el derecho realmente no puede ser determinado.",
+      "source_sha256": "41434cdf5d74b12a27b79ff5b1a6f40515333cd6672dfda13dd1aa5be6f6b8f0",
+      "before_sha256": "fa4d03fbebb5caae04cdd070e421990cba1b8ccb1fcbb7ef18c9dd85e1dec636",
+      "after_sha256": "d7826f157766919e35daa9b31401cf4b80495b468edb30a7e6b9d6df9a37cdc5"
+    },
+    {
+      "source": "Instructed); the escrow officer confirms receipt against the settlement statement.",
+      "before": "Instruccionado); el oficial de garantía bloqueada confirma recibo contra la declaración de liquidación.",
+      "after": "instrucciones); el encargado de escrow confirma la recepción cotejándola con el estado de liquidación.",
+      "source_sha256": "c859653b8f11910bd03fe65d388fca2aefd9031e234d6b19f39381c06b704b8d",
+      "before_sha256": "6d6f0aed31060475515448de9cd1110fc9f7e5858087b13cac3ede0a40d86f97",
+      "after_sha256": "caeb4efbbe38b73eb1ebd6f218540bad16ca4ead17a50106cfa17c8175fd0e18"
+    },
+    {
+      "source": "Policies issue",
+      "before": "Cuestiones de política",
+      "after": "Emisión de las pólizas",
+      "source_sha256": "71fb0441d692b63f6c67b60a5a95f9b07304987d9860f9c92acb208ce04e4cdd",
+      "before_sha256": "4cf07c6929517548139a8213c171783e66a3b3297c2e639f9c8a0e68f082fdab",
+      "after_sha256": "e05c3bfb088fec399f0dcaec635d9e1bc73b672a790865bfd1c590b23a2dbb31"
+    },
+    {
+      "source": "Powers of attorney",
+      "before": "Facultades de abogado",
+      "after": "Poderes de representación",
+      "source_sha256": "2287d532f7ab94232e90daa5cec9d7be9faa380c30d74681e453bd51ed3f05ba",
+      "before_sha256": "88754bdbdb47a3d0f2538c4aca1c445f3258e56a16662421355710ba226110d9",
+      "after_sha256": "1185c87ca3a4683eea3d1001b2eef86a150cfaa1cc81d35aa1c81f4456bc7dfc"
+    },
+    {
+      "source": "Seller debits",
+      "before": "Deudas del vendedor",
+      "after": "Débitos del vendedor",
+      "source_sha256": "fc7c491e2660b976b43b2c7c1852661e2b8daa824c09ec59e6a1648b4bb14aa3",
+      "before_sha256": "2af565bffc9dec40bd965dcaa5af04ada464db6b438220eb8b2f85f0a8580e64",
+      "after_sha256": "71899b44cd504e4f78d58423150820ad3bb687e49a856456d2aa73ae6ed447bf"
+    },
+    {
+      "source": "Statements compute to the penny and state their rounding: per diems are carried to at least four decimal places before the final multiplication (the 365-day worked example's $17.7534 shows why — rounding the per diem first shifts the result by whole cents), and each final line item rounds to the cent. Small rules; real disputes prevented.",
+      "before": "Los estados calculan al centavo y declaran su redondeo: las dietas se llevan al menos a cuatro decimales antes de la multiplicación final (el ejemplo de 365 días trabajados $17.7534 muestra por qué — redondear las dietas primero cambia el resultado por centavos enteros), y cada línea final de partidas al céntimo. Pequeñas reglas; verdaderas disputas prevenidas.",
+      "after": "Los estados calculan al centavo y declaran su redondeo: los importes diarios se llevan al menos a cuatro decimales antes de la multiplicación final (el ejemplo de 365 días trabajados $17.7534 muestra por qué — redondear los importes diarios primero cambia el resultado por centavos enteros), y cada línea final de partidas al céntimo. Pequeñas reglas; verdaderas disputas prevenidas.",
+      "source_sha256": "fd2d5deab93dcbc49c70f90dd678b34f3a2913aa869fdd4f443d346779258232",
+      "before_sha256": "1cca55b32ccb6ad9c691d47913d195fde2b2db2c98f38e7ccf88c30049d4989a",
+      "after_sha256": "a86b4d7e120eebdcd0cf074cf39ced92fed7f5a5f882cb13ff76ad2302e907b6"
+    },
+    {
+      "source": "Tell your broker immediately. Rule 535.2 makes the broker responsible for your authorized acts and for trust funds, and § 1101.803 makes the broker liable to the Commission, the public and clients for your conduct; concealing a problem from the person who is legally answerable for it converts a mistake into a betrayal.",
+      "before": "Dile a tu agente inmediatamente. La Regla 535.2 hace al agente responsable de sus actos autorizados y de los fondos fiduciarios, y § 1101.803 hace al agente responsable ante la Comisión, el público y los clientes por su conducta; ocultar un problema a la persona que es legalmente responsable de ello convierte un error en una traición.",
+      "after": "Dile a tu corredor inmediatamente. La Regla 535.2 hace al corredor responsable de sus actos autorizados y de los fondos fiduciarios, y § 1101.803 hace al corredor responsable ante la Comisión, el público y los clientes por su conducta; ocultar un problema a la persona que es legalmente responsable de ello convierte un error en una traición.",
+      "source_sha256": "683a47783d4d599c660d4735472fd9f3153a61a2aadb1114fea3783efc134c36",
+      "before_sha256": "2395e6d502b64f3e8b9835e8391b583fa3afb20161cd44753088ff574695faae",
+      "after_sha256": "dcf2fbeb0295b469778acc17cf04f648338768ecaea53d4eb2825e83f57b527a"
+    },
+    {
+      "source": "abstract plant",
+      "before": "planta abstracta",
+      "after": "archivo de antecedentes de títulos",
+      "source_sha256": "1838b6f775eddae77da3d298ff261c76cd7853af014ddbfb044deeff4dcd3b72",
+      "before_sha256": "dafce936441b6f3f17456fc46589196e34934ae224755223a40845b9024023e0",
+      "after_sha256": "e6d7ada0966be9b86d7dffa8d8502b99d7661bcf87acf68712f2ec4f60201bb6"
+    },
+    {
+      "source": "and a seller",
+      "before": "y un vendedor",
+      "after": "y para el vendedor como",
+      "source_sha256": "b59c40e5dfc7e5f3d06346a81bd1e28dbfd688faca3f5d84cf03ef4f10306372",
+      "before_sha256": "9ca2a8a3fc4fffbe8897aff58ea92b6b2918c06a5598d887403c0a24b77d7174",
+      "after_sha256": "97fd7810d308ed028c63dce202da51f56dc490f08fac12ffb554165163b93413"
+    },
+    {
+      "source": "credit is money in a party's favour",
+      "before": "crédito es dinero a favor de un partido",
+      "after": "un crédito es dinero a favor de una parte",
+      "source_sha256": "05f5edeb0c61aff6919e7d633086cafc827793f7565b56c880d576ff6bf19c0a",
+      "before_sha256": "fdc812f8e45bcc8a9c36116c64ef82b6cc5e8d57a0fa52285731cd9842d7ac52",
+      "after_sha256": "4770e08a2c78d5d44fb265520c29810343b675ee8424453b0ad62bd8b96c576c"
+    },
+    {
+      "source": "defined functions — countersigning title forms, supervising preparation and delivery of forms, signing escrow cheques, closing the transaction — describe exactly what the parties watch happen at signing; and behind the closer stands § 2501.004's",
+      "before": "funciones definidas —contrafirmar formularios de titularidad, supervisar la preparación y entrega de formularios, firmar cheques de garantía bloqueada, cerrar la transacción— describir exactamente lo que las partes observan al firmar; y detrás de las posiciones más cercanas § 2501.004",
+      "after": "funciones definidas —contrafirmar formularios de titularidad, supervisar la preparación y entrega de formularios, firmar cheques de garantía bloqueada, cerrar la transacción— describir exactamente lo que las partes observan al firmar; y detrás del encargado del cierre está el archivo exigido por § 2501.004",
+      "source_sha256": "9c42f4c9e0b783d952c32068f2c6bb80f86127d45a2c8bcea22d87cf8c43c175",
+      "before_sha256": "a7a463577719b1fd06e2f5be859ae8954e3b539f611ac045a5690017fe95254b",
+      "after_sha256": "5341949271f65bd383d273e4fe38df819e29e806259ed8ac840ad38e781476ab"
+    },
+    {
+      "source": "paper",
+      "before": "papel",
+      "after": "documentación",
+      "source_sha256": "382635c9325bf3273d195ff1b8a44e5b11afd7d97addeb8863ea35feb98c1a07",
+      "before_sha256": "abd0f5b700fc5b56d8fd69397ba45b336d24e1ef0ac8db8ac5db9a68247311e1",
+      "after_sha256": "9fcf25d1ab2f0608e30ae4bc696880a785bb19f6562c9439e4259570bd0c4bb2"
+    },
+    {
+      "source": "per diem = $6,480 ÷ 360 = $18.00; seller's share = 5 months (Jan–May, 150 days) + 14 days = 164 days × $18.00 =",
+      "before": "= $6,480 ÷ 360 = $18.00; la parte del vendedor = 5 meses (enero-mayo, 150 días) + 14 días = 164 días × $18.00 =",
+      "after": "importe diario = $6,480 ÷ 360 = $18.00; parte del vendedor = 5 meses (enero–mayo, 150 días) + 14 días = 164 días × $18.00 =",
+      "source_sha256": "1a238e0206486e6f4a636a0e2909865581daa041cc2ef59f44aec7ec187d745d",
+      "before_sha256": "d64df74f42d632dcc17a1a939de96000dbb7d28ecc61b1cb51473050d52d4fcb",
+      "after_sha256": "02d2d4d1ce84c9205d395e98fd4e1c4e6f1888a112188153a101aae35ce88dbb"
+    },
+    {
+      "source": "right so the neutral can act.",
+      "before": "para que el neutral pueda actuar.",
+      "after": "para que el profesional neutral pueda actuar.",
+      "source_sha256": "4c927035efbf19d0f52865fc14f0a6c33d8101c010843743033befc04c95307a",
+      "before_sha256": "abb1bbcd906903101e9dfaa6a410a70e579b1e27026163b8fab7bb296ce4fa97",
+      "after_sha256": "a3c7f5fd4c559ba698579d8f58a72aa7414c342a5aa6a6087cd60b392800aac5"
+    },
+    {
+      "source": "— surprise powers presented at the table stop closings, because the instrument's sufficiency and recording needs are title questions, not courtesies.",
+      "before": "— los poderes sorpresa presentados en la mesa cierran, porque la suficiencia del instrumento y las necesidades de inscripción registral son cuestiones de título, no cortesías.",
+      "after": "— los poderes sorpresa presentados en la mesa detienen el cierre, porque la suficiencia del instrumento y las necesidades de inscripción registral son cuestiones de título, no cortesías.",
+      "source_sha256": "220a66e6d22e76d34a68e28cf9bf3d5eaf80a1216c262f31887d407caf8b49ee",
+      "before_sha256": "9db5089bb64239605c7ca40dddb64e393629b2852456a6d279d5c6852766e20d",
+      "after_sha256": "8cac03fb31893463a55a79c8f206540764bd0de6d7d0add661b32f2b763472df"
+    },
+    {
+      "source": "— the lender wires; the buyer delivers the cash to close (in collected funds, as",
+      "before": "— los alambres de prestamista; el comprador entrega el efectivo para cerrar (en fondos recaudados, como",
+      "after": "—el prestamista transfiere los fondos; el comprador aporta el efectivo necesario para cerrar (en fondos disponibles, según las",
+      "source_sha256": "2b7af6f7bbd2dbe65615092be89c7fdae7e846769c5145e51bc14b0b83f572b8",
+      "before_sha256": "c6e29af95d6550f40f62aaac79808a281b974b8a1079c33a370b415e58207dfb",
+      "after_sha256": "4805f89c75c20c9acc40c652ad4c0825d582fbfc2142cf7029e0f647c2466e72"
+    },
+    {
+      "source": "— the notarial acts that qualify instruments for",
+      "before": "— los actos notariales que pueden calificarse de instrumentos",
+      "after": "—actos notariales que permiten que los instrumentos accedan a la",
+      "source_sha256": "615f089f217d1125e7503eeb3d63e63e6e58ec2a2f1d7dcbcec0b529eee6ef30",
+      "before_sha256": "e37dff7e938aab08aa489517ebd5a6baeeca8e531a6f06126142337c903ad77a",
+      "after_sha256": "d3f31530283c05094aa1a3030674e5691df71b941c7d5873e702938d0943a5f5"
+    },
+    {
+      "source": "does",
+      "before": "- Sí.",
+      "after": "hace",
+      "source_sha256": "961eb43699731759fd0d04f177bb24f09971bddd41426702276e761269d0a5b9",
+      "before_sha256": "361c750df2225f8683b6980c7f2835ae15807045faf0120e0374ec1c9bdb948f",
+      "after_sha256": "bdef2a7f659a324eae75b0369e9e648f7e3c3f2c803d6b4e65667156a86ec422"
+    },
+    {
+      "source": ": the stakeholder disburses on the parties' signed agreement or prescribed process, never on one side's insistence, however righteous (Principles I Module 06's collapsed-deal triage arriving at the closing desk).",
+      "before": ": el depositario desembolsa conforme al acuerdo firmado por las partes o al procedimiento prescrito, nunca por insistencia de una parte, por justo que sea (Principios I Módulo 06's colapse-deal triage llegando a la mesa de cierre).",
+      "after": ": el depositario desembolsa conforme al acuerdo firmado por las partes o al procedimiento prescrito, nunca por la insistencia de una sola parte, por justificada que parezca (el análisis de una operación frustrada del Módulo 06 de Principios I aplicado en la mesa de cierre).",
+      "source_sha256": "e2fb923d9e4918ed723559a971eff49d18bf4da2c48a46a1825a16d50c4b0579",
+      "before_sha256": "1a49c83ea70a4d90bf7063b09601805b8c88b7501637d69c732d9004fb8e72c0",
+      "after_sha256": "6cea4d0813a953cc85ef4fa58964eb80ae142e06f7a4a7c5cfdf490df75b409e"
+    },
+    {
+      "source": "Three exposures run alongside discipline, and all three are taught elsewhere. The Real Estate Recovery Trust Account, §§ 1101.601–.610 and Law of Agency Module 11, pays an aggrieved person's actual damages after a judgment goes unsatisfied, subject to the caps that module sets out, and then looks to you: it is your licence that answers for the reimbursement. The DTPA, Business & Commerce Code ch. 17 and Law of Agency Module 11, adds mental anguish and up to treble damages for knowing or intentional conduct, and the consumer's attorney's fees under § 17.50(d). And § 1101.805, taught in Law of Agency Module 03, allocates responsibility for misrepresentation between you and your client on two elements — knowledge of the falsity and failure to disclose that knowledge. The practical reading: you are not an insurer of your seller's statements, but the moment you know a statement is false, staying quiet makes it yours. Suit for fraud or breach of fiduciary duty must be brought within four years, Civil Practice and Remedies Code § 16.004(a) — the same four years for which your file must survive.",
+      "before": "Tres exposiciones van al lado de la disciplina, y las tres se enseñan en otros lugares. La cuenta fiduciaria de recuperación de bienes raíces, §§ 1101.601–.610 y el módulo 11 de la ley de la agencia, paga los daños reales de una persona agraviada después de que un juicio queda insatisfecho, sujeto a los límites que el módulo establece, y luego mira a usted: es su licencia que responde para el reembolso. El DTPA, Business & Commerce Code ch. 17 y Law of Agency Módulo 11, añade angustia mental y hasta daños triples por conducta realizada a sabiendas o intencionalmente, y los honorarios del abogado del consumidor bajo § 17.50(d). Y § 1101.805, enseñado en el Módulo de Ley de la Agencia 03, asigna la responsabilidad de la tergiversación entre usted y su cliente en dos elementos: el conocimiento de la falsedad y la falta de revelar ese conocimiento. La lectura práctica: usted no es una aseguradora de las declaraciones de su vendedor, pero en el momento en que usted sabe que una declaración es falsa, permanecer callado lo hace suyo. La demanda por fraude o incumplimiento de obligaciones fiduciarias debe presentarse dentro de cuatro años, Código de Práctica Civil y Recursos § 16.004(a), los mismos cuatro años para los que su archivo debe sobrevivir.",
+      "after": "Hay otras tres vías de responsabilidad además de la disciplinaria, todas estudiadas en otras unidades. La Cuenta Fiduciaria de Recuperación Inmobiliaria, §§ 1101.601–.610 y Módulo 11 de Derecho de Agencia, paga los daños reales de una persona perjudicada cuando una sentencia queda sin satisfacer, dentro de los límites explicados en ese módulo; después exige el reembolso al titular de licencia, cuya licencia responde de él. La DTPA, capítulo 17 del Código de Negocios y Comercio y Módulo 11 de Derecho de Agencia, añade angustia mental y hasta el triple de los daños por conducta realizada a sabiendas o intencionalmente, así como los honorarios del abogado del consumidor conforme a § 17.50(d). Además, § 1101.805, estudiado en el Módulo 03 de Derecho de Agencia, distribuye la responsabilidad por tergiversación entre usted y su cliente según dos elementos: conocer la falsedad y no divulgar ese conocimiento. En la práctica, usted no garantiza las declaraciones del vendedor, pero desde que sabe que una declaración es falsa, guardar silencio le hace responsable. La demanda por fraude o incumplimiento del deber fiduciario debe interponerse dentro de cuatro años, Código de Práctica y Recursos Civiles § 16.004(a): los mismos cuatro años durante los que debe conservarse el expediente.",
+      "source_sha256": "ea443550e0f506c20c22bac4b0a2448682dd26e802cb839ecff3e8a8c7f7d139",
+      "before_sha256": "d47644b46e69e3f207dedce9c9ab623ac2e6e77b9e14dc14d1caada26e094b2b",
+      "after_sha256": "226c4e5b3f6ab4d14910fb87ac9b2691c1bd20bc5533afd7ddd421b43d8f476e"
+    }
+  ],
+  "human_sme_review": "OPEN",
+  "real_learner_duration_validation": "OPEN",
+  "fresh_unique_read_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119
+  ],
+  "file_after_sha256": "90b50d03eed0a312b77aca998d943a560782f274983ddf60c26b22b53afbcace",
+  "review_status": "All assigned6sections covered. Prior exactEnglish-source fullsemantic review reused; all120novelunique text and contextual does freshly read.",
+  "lesson_sections_read": {
+    "9": [
+      7,
+      8,
+      9
+    ],
+    "10": [
+      0,
+      1,
+      2
+    ]
+  },
+  "exact_source_reuse": [
+    {
+      "lesson_index": 9,
+      "section_index": 7,
+      "source_sha256": "c8339cd7b7448a59d964eee01af8508032cc484fc885fcb46c75f7194b120a18",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "16382d3902b1073d9d6c8117c83833a65703f0057961a8fc2715631214fcbaf9"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 7,
+      "source_sha256": "dd9acd485e0f4f87955f0eb1094adad860ed400059be4cd8a46c2fe619a52f62",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "622b7de39a9a069e42ddcb99391c9b1ad5bdf0e7923d648f7bbc28134662dd95"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 7,
+      "source_sha256": "676c0a57ddfb6f51e7792c9e73c53706db16794ef00071a94725d6bfbb558bc0",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "8a5b27e27ccc183a0ade2006ba923bcc4a2c82026d1a2f2cdf93f89c89ff97b5"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 7,
+      "source_sha256": "615f089f217d1125e7503eeb3d63e63e6e58ec2a2f1d7dcbcec0b529eee6ef30",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "d3f31530283c05094aa1a3030674e5691df71b941c7d5873e702938d0943a5f5"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 7,
+      "source_sha256": "e93df741ad323efdfca3f9a08236d6aa90476b2f3ca01c9b67f062209d4fa660",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "3dc72366599d60a316f6b275365150ccb6b182fa58e50fab737154b5a1512213"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 7,
+      "source_sha256": "2b7af6f7bbd2dbe65615092be89c7fdae7e846769c5145e51bc14b0b83f572b8",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "4805f89c75c20c9acc40c652ad4c0825d582fbfc2142cf7029e0f647c2466e72"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 7,
+      "source_sha256": "c859653b8f11910bd03fe65d388fca2aefd9031e234d6b19f39381c06b704b8d",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "caeb4efbbe38b73eb1ebd6f218540bad16ca4ead17a50106cfa17c8175fd0e18"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 7,
+      "source_sha256": "2a13df2b5680a595fd8f5d71f1a6698f19a6d2f6772502ec279bc31cfc92b284",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "3ee2a44d0271612d4dd1e1df1345439c2cfed55e513fed1f7bcdf250966be3bb"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 7,
+      "source_sha256": "1aef0b2419213f62480fb05d5709599c0ecad29f747f28484f584c79f683952d",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "e2228a479e19f65ab0110da0cc99d0a71434f4c9ee848125a49bd75d1bcdd5da"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 7,
+      "source_sha256": "80e8dd1a5a05f7071a7ff71bccab5ed94aef4ad940c86bee6d2034d458f3946c",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "a8a32a544ce5d6f856d37f398a000eb45d0a323cfd48fe167724d1448878ec96"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 7,
+      "source_sha256": "20bf1fa0f6f8cd5f73913b7d3218d35fa31ba40df6453a215b7e091e43717af8",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "900a861794dbde99e8e56d56faf48cdc8e71d78209b253d13ff462c0076d27ae"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 7,
+      "source_sha256": "d978e0e487928a68d48323006a8eca6e4925b3ea7e8ed50b326325668c93b2ac",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "fe980cac172987c4f6e9d81a46862141ec2f7b75c10714a2a0ef250be5683f01"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 7,
+      "source_sha256": "368050cce01fff139125a00e0ebc1a58d176186bb7af31e3a0287a719178d61b",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "be08feed6c781509eec7389163186bfa2bdde18738a45701d02ed57023cc8cc8"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 7,
+      "source_sha256": "71fb0441d692b63f6c67b60a5a95f9b07304987d9860f9c92acb208ce04e4cdd",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "e05c3bfb088fec399f0dcaec635d9e1bc73b672a790865bfd1c590b23a2dbb31"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 7,
+      "source_sha256": "fe84925d7fd0286259eaac55261c25148847ca7f7b328444bf5a8be08842fca1",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "210e9b3dd12d583ed774a4005a057891590b4720aa08ab6a0586923f4f2b74f7"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 7,
+      "source_sha256": "8dc86aec15ecdf77a22db4aca00d847830437e6fe0ad89ea61a1b4b4295d526f",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "0a0729e24b6575086caab32f98c047fdd7e9fb4063842d80795561f441b9fb50"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 7,
+      "source_sha256": "37a4d3faaa0653047ba0b4b1a43b39aea69e8c534bd7e03d3ad395efd65b8e09",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "bff071641b8c6712d620618ed6d4395e9a4e02ac94c2561c5dbd30fcd78b613f"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 7,
+      "source_sha256": "60b76b6c9e849a0fcc62bd1b1dc9c78cb7ee9f14db66e5eb4b165b677fd41cf5",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "9aaf2d66aa0b9400482f2112f4be26ff989cd60340bb182ad0a28d371cf32092"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 7,
+      "source_sha256": "ba0e90b230b6f26a02ad4506438813eecd649f0a477cf7778833a9a43056443c",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "3c0445b4c350d1344723fe2ded5556a3434152a55385517da36b002837a45c58"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 7,
+      "source_sha256": "2287d532f7ab94232e90daa5cec9d7be9faa380c30d74681e453bd51ed3f05ba",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "1185c87ca3a4683eea3d1001b2eef86a150cfaa1cc81d35aa1c81f4456bc7dfc"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 7,
+      "source_sha256": "e13b0d8538a640b3d6440016b203761c2a0310b4f12925741190de5582a19409",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "5f0c7d659bf15f0885b3e8863ea88b7ec173ce00cfcf5a5871c5b90d632a2237"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 7,
+      "source_sha256": "f410628ade69df5713ce97db3ce66fd1ea7058ce0521dc6d5498d355744c0f2a",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "ce47e84471239d9c67f5b70a7248e927bc343da173c90ceefb2e001039d2296a"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 7,
+      "source_sha256": "220a66e6d22e76d34a68e28cf9bf3d5eaf80a1216c262f31887d407caf8b49ee",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "8cac03fb31893463a55a79c8f206540764bd0de6d7d0add661b32f2b763472df"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 7,
+      "source_sha256": "5283de92a49c6ef23e5666aa406df7dbcea295c63ba7534ebbc25bdbeb66daca",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "10da407e6a8a3189b50eec015a83914f986016da437b4aada687d1b10577e205"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 7,
+      "source_sha256": "2e24be3f3d87d3dd0bd88af0432f22fd40f3d55be20aa2b344855e750b0b5a27",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "1e7b14af6b509fe8c4fb459812669af159052bd461dc45c258b259ddd0b84e1e"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 7,
+      "source_sha256": "9029c307bf4c8adba85c3eea39e94f987bbd30910ae868a7480ed944731b00f8",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "c7777170ec6992c9f73a21f8cde9590609ccac6954e80be5c0e0abeead840892"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 7,
+      "source_sha256": "f7923e45d86d9d454da06ab0afd4be07fb2bbf08dc7a744bd3527c27f0eb6fef",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "e3a15706dd8bd1fc2280db5d0755e6a6c8b793e12c2352bc60825a5af234a981"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 7,
+      "source_sha256": "bac21ed099010d46975e867e97ad2918f087a15f4c96907af5df00920d851241",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "cff67b8107a0bb31d4514183b8be3674308f2111e19e4e0adddd75fe6e110422"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 7,
+      "source_sha256": "049c21849d3ebe5e450c72be101fe4b2cc16e3244b83269f11c7c686974ab6ca",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "aa46a9b76753d70f9be06fdc67d8976ebd09175881ec1d9e1955de41e28e42b9"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 7,
+      "source_sha256": "553d84e1e99f182c0b1080a1549cc17bff1c982d17384305fa81799e934af734",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "a38d238bf4ec88c495f7028570eca7f1568b88e98f9c8733646f0a486699b13e"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 7,
+      "source_sha256": "bd0bd5727016e4829f73ec66835d764b211fb3f804bb8547f7ce221a786a2be9",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "5f74e3f4815adf76a25334bc9861b10d20888404865673e7878c1a52bc2b2784"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 7,
+      "source_sha256": "301032b33dd7b1002fcd429a656e9fef5426935ab4058f38b57eaa705e2280c7",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "19a6e6fb96195e75ef7cb963cdda05dcdb10015807fcbf659b05376a373c7451"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 7,
+      "source_sha256": "40b5dfd087119131f58f94d1b40fc290337449d789abd8d0f9f8e4416c6e7710",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "d618c8ebe940d3b0efb718872703b24600fe3859247ba17952cad10ac5a48ffc"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 7,
+      "source_sha256": "abd962a617f3128b6c44369fd3ea58635f396157151669aba0962d2a573a1cd9",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "3032278419d9dcd62bc94b3eb102cffe9e72f0604fc22db487471936e1a6b515"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 7,
+      "source_sha256": "382635c9325bf3273d195ff1b8a44e5b11afd7d97addeb8863ea35feb98c1a07",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "9fcf25d1ab2f0608e30ae4bc696880a785bb19f6562c9439e4259570bd0c4bb2"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 7,
+      "source_sha256": "4c927035efbf19d0f52865fc14f0a6c33d8101c010843743033befc04c95307a",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "a3c7f5fd4c559ba698579d8f58a72aa7414c342a5aa6a6087cd60b392800aac5"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 7,
+      "source_sha256": "7007711407a984e481d9330ce874137d0bb490aea7dd6ec7bc1bd2bd9ec4149c",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "a09939b99e31b4a5ee8ee6367bcd571bd87a580cc76cc6f4cfe8077b8e6809f9"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 7,
+      "source_sha256": "7b1abd6e9828a7895f5db4452b752016ad3ca68e4fd52620f94d26de60a65507",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "c9e2d0d142ef0bc062314723d39a036cadc2c7052d063de6deb5c73870d64f14"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 7,
+      "source_sha256": "1a5f4a1c2b8ec2ff60f4eba02018d896dfa694b03caf905ae798050746a8f3e0",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "2ac4e4c7ef003a12695a38a6606027aaccf385da42a41b55889afecbdc7e7584"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 7,
+      "source_sha256": "7080b465f1d534733fcfd4755f7afa4b56dfa53aac1bbee76b0fef8b5827d3d0",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "b8db356e3bf8805c0ebf1a9947d4d6c34d75b0a9efbb0731fa113e9024f107ea"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 7,
+      "source_sha256": "e83658fbac9ace70af02b69c825c27c8a43c3add292c4584d9dbfa7048ae2bb8",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "1288cac4a04eefc2df084150158fc63b99cfca89d417a5a8dc6038ed5923b67c"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 7,
+      "source_sha256": "9c42f4c9e0b783d952c32068f2c6bb80f86127d45a2c8bcea22d87cf8c43c175",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "5341949271f65bd383d273e4fe38df819e29e806259ed8ac840ad38e781476ab"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 7,
+      "source_sha256": "1838b6f775eddae77da3d298ff261c76cd7853af014ddbfb044deeff4dcd3b72",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "e6d7ada0966be9b86d7dffa8d8502b99d7661bcf87acf68712f2ec4f60201bb6"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 7,
+      "source_sha256": "8f2f29f36ece118ab01b9d94534ebb092018db45e112fea1c63e884994b0e159",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "e3f8781f306bd4d6e70fc6a95abfbe0937f245934db31a0dbc83c4b130e32bb6"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 8,
+      "source_sha256": "2c662bf8a27115db65eeb66a95a146aad42abd3aeffbc2fec1d16939e3d5fddd",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "4076ad23170144128267055ac8879585da68411c100f768ed8fa3819973c59fc"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 8,
+      "source_sha256": "162936532402f4984f51b3fd75cba6ff6b4294c815504486b0a77dca72d87bc0",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "d6d12c7e6583776210f30cfbfc6e41f3d32f98ab94c562420aa881f4fa56253c"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 8,
+      "source_sha256": "50e16bdd9480b5ca1847c7f21d87f7906d4b7f455d45fbd5d75c8bcfccd81f6e",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "e6950d6e3cf7f718243cf3511e5ffe19fafbc743a5418a2177bf849891e8444a"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 8,
+      "source_sha256": "1174cf8802520aa1b741bcf6236865fb780e82182f8e7b63dea0c9491917137f",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "409b3a4cab4fe2ccdae2ccd33281a3227c680d25bd053a6b4ea18a4961864fb2"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 8,
+      "source_sha256": "ecc4873a1694eb0de0b33d68f0df091d6816127c1422266399700d02599a8628",
+      "origin_course": "tx-principles-real-estate-ii-30",
+      "reviewed_target_sha256": "8b30fd842e6361be2c7172a4845b6f5eb94cca35ba4e9d6e1e4beae5d20660f9"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 8,
+      "source_sha256": "5e2692253c85641746238e4c90ec034a4e8cdc8ef114e3479e5532447cfeea45",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "f5be4195f17b4b16d6f3e5a4a443e313c23937260520670cce37d5f3a77a1fb3"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 8,
+      "source_sha256": "f338d3e2ac28f396d857eb0cde80f8e5e0c95197a75b75b603dec4431499f51f",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "9c642a3c34ab3502337406f0b84b6dba28b9250c1dab4446843faa60b73f584d"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 8,
+      "source_sha256": "f69903dbee66ee752ef624c58628dc9e4581662b0c107ba68705a18db7f4251b",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "9eae43230dc4685d26c3c45163f09c0acb58289b496000d6b809c0d55fad7ac9"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 8,
+      "source_sha256": "6ab9b064f8095c87780df8e06c40baded761fa7c55cc602dd1cd275ddac9140b",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "0416f94aea0ae43e571c1df3ff48ddf078c2f042cf1c6aad4b76ac7c1d7afd34"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 8,
+      "source_sha256": "cd6b2ee25979fde8ab8767d2f71d90301c4a5ecaedc1eebcca564a8b606fd068",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "b1fe2ec17f9edcb171013d3d2b1914361fce119e5baf39457275df7aaba4a262"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 8,
+      "source_sha256": "9fb00354f48adfea1dac143ffaa9eb6e87aee4f7dfd04d47fffe480e4cf53186",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "64bd31eef126ea3f3d0aeb809ee3c4fdfad1960b48a93a5452cf7d091faa3185"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 8,
+      "source_sha256": "dfd57e91554e69799ff0a969412cf13c6e3f5c9d410625f0a07df2100be1014d",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "8487e63410eeb4b4ea436819fbad7774d0a997f1a587652ec1383928193ee6ed"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 8,
+      "source_sha256": "fc7c491e2660b976b43b2c7c1852661e2b8daa824c09ec59e6a1648b4bb14aa3",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "71899b44cd504e4f78d58423150820ad3bb687e49a856456d2aa73ae6ed447bf"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 8,
+      "source_sha256": "ad64b7ffcb254d6cf7da0a5a240c06c1ff940e56e4fb14b0f8b3eccc603b93cc",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "bc8ac1859ea2e27c4c4f36592b5f6706a2fd1894a6aac931d12220b0eac6a0c7"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 8,
+      "source_sha256": "1162587e0116222e9e53e76fd1f80e363b473dc746afe4a75cf4c052373ee92d",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "583dc14fbfb9da198e70325e844c7c2037aabd480aa2fe659d1ebf9c1bbdff4a"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 8,
+      "source_sha256": "951642a9e5c7cc22ea26dca85b4b99209d4d091bc93cb8d65b2db5620ee603bf",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "6bce883d65796b0004e823744885f05b376d8c4f08d30327477de3e6686d2c04"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 8,
+      "source_sha256": "93161271408e21fd83c41285e036e69757cea20d791e417fdcecc568a833e556",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "f5dfbb103e50f0e518c5bbb99f6085ef578468b75d75acc4a37892bb6280f04c"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 8,
+      "source_sha256": "820baeb7f6cbefb1a8577c285af232a219909843dca7d6e12dfcc1817888b554",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "034f92c5e43f21ddc52ad3dc18d15ab834c2f0e9b504bf844d25feca0554165e"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 8,
+      "source_sha256": "711b5c6af51719b7fdbb63dcdaac05e3c50b79221ab1cf228d7eb79f3c3ab1cb",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "1a722f149bdfe79dc7cacbfeba25b19db2d591cc3877c2f8bd8da51c9224f576"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 8,
+      "source_sha256": "6201111b83a0cb5b0922cb37cc442b9a40e24e3b1ce100a4bb204f4c63fd2ac0",
+      "origin_course": "tx-promulgated-contract-forms-30",
+      "reviewed_target_sha256": "a1fce4363854ff888cff4b8e7875d600c2682390412a8cf79b37d0b11148b0fa"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 8,
+      "source_sha256": "6f9a48800d2f3095e8a310a4317e009a5dc222e11c45b34ec8d5544feebb8277",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "7450c776c02e9ac0d31eb600635042c2b78b9281aa184d8ecb51274ed65f8523"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 8,
+      "source_sha256": "83af016dbe32a9d799fdb746e112e3771706cb13950045cec2e62cc047bf9329",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "0974ede4160594dc943987de4a647ef64ff078354ecd560eab595e6df6326ee2"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 8,
+      "source_sha256": "e7e97eee0899801a21e693e247285dc272a77ceb4b12f7125e9f26e6d4bf30e8",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "e3f323adcfcd200608248081034765188107fa92917637da7fd2c620c2e0b1e6"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 8,
+      "source_sha256": "fd2d5deab93dcbc49c70f90dd678b34f3a2913aa869fdd4f443d346779258232",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "a86b4d7e120eebdcd0cf074cf39ced92fed7f5a5f882cb13ff76ad2302e907b6"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 8,
+      "source_sha256": "4b03510b5d46f3dfb74ca30d997d1a411b9586f5b63b0b4525cb234013e81ff4",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "4bbfa7a6e1939c6642f77c24b96a77825855dc4ea2028b4044d425b3659efc9c"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 8,
+      "source_sha256": "8f0ef2fdf8e390ee98f7b9e8bbb42bb644116eac80adad8e9daf989d3c8c9fa4",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "94f5863e7c984b74a94f35f81c11ecce8f753ddf1cacaf78b785b8bb4141507d"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 8,
+      "source_sha256": "b1b58fd6f162008cdf66cd98664c6e0b2d9e957bed27c6de75518e5b5494d203",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "50a653049115cb31e529ddabbc7f48726c160b64fdefde95a0a6c6e690b003c9"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 8,
+      "source_sha256": "3c2c898a70047b1ebbe903945475aafc1fb084e26d6f5cc5bf83d25bd89fa123",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "fd52f36aa682ba2f8076371d7a55d52b423135157cabecef50fe1104be662063"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 8,
+      "source_sha256": "05f5edeb0c61aff6919e7d633086cafc827793f7565b56c880d576ff6bf19c0a",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "4770e08a2c78d5d44fb265520c29810343b675ee8424453b0ad62bd8b96c576c"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 8,
+      "source_sha256": "f62aca57419716f0feddc8746cc216bdeadbfb272e4baa8868f9b539a5a78284",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "960dbc2c0a76c1aeb5def6badcabbba4699b5b3afcc660ef25664b06f8502b8f"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 8,
+      "source_sha256": "ecc4873a1694eb0de0b33d68f0df091d6816127c1422266399700d02599a8628",
+      "origin_course": "tx-principles-real-estate-ii-30",
+      "reviewed_target_sha256": "8b30fd842e6361be2c7172a4845b6f5eb94cca35ba4e9d6e1e4beae5d20660f9"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 8,
+      "source_sha256": "c6dbcfb98ff93eb04a0c7b73383c143e26042ad5c3e9320d7c9b779f45aa2dec",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "b38bea884cb2f8cb6e5e67b837b2539e4be84778b5c148ef3fd8609f26b0f9bd"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 8,
+      "source_sha256": "50e16bdd9480b5ca1847c7f21d87f7906d4b7f455d45fbd5d75c8bcfccd81f6e",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "e6950d6e3cf7f718243cf3511e5ffe19fafbc743a5418a2177bf849891e8444a"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 8,
+      "source_sha256": "b59c40e5dfc7e5f3d06346a81bd1e28dbfd688faca3f5d84cf03ef4f10306372",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "97fd7810d308ed028c63dce202da51f56dc490f08fac12ffb554165163b93413"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 8,
+      "source_sha256": "ecc4873a1694eb0de0b33d68f0df091d6816127c1422266399700d02599a8628",
+      "origin_course": "tx-principles-real-estate-ii-30",
+      "reviewed_target_sha256": "8b30fd842e6361be2c7172a4845b6f5eb94cca35ba4e9d6e1e4beae5d20660f9"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 8,
+      "source_sha256": "be1916350efae4c7d5ae2f7137fa00a30f4314ce231cb904f9342dfaac14a5ff",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "16e5d1f01866259abcab4b1d22a6208e67f62dbc7ae4f7954c94c4305fa2799b"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 8,
+      "source_sha256": "50e16bdd9480b5ca1847c7f21d87f7906d4b7f455d45fbd5d75c8bcfccd81f6e",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "e6950d6e3cf7f718243cf3511e5ffe19fafbc743a5418a2177bf849891e8444a"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 8,
+      "source_sha256": "4e8db27f378b045515e01dd94c3e4c2012c65a5c10724e58ab52cb2fcadc52fc",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "4ccb42bd11ff72e6b8591ab8f8947df435c00e7fea359c19ca24f3d04957fac9"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 8,
+      "source_sha256": "954a7004fb5a2b4790f894482bebfac49799447ef53de99f2e2ab4ef9ad8dd7b",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "c16d4216423527b6bffb0778f9c71fad71ee468f1b2295786ef1f1a9a9765f99"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 8,
+      "source_sha256": "ff9075f023bad54a8fd957ec1cb4adcae24fe22cd61119f8efc82a0ca18b344f",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "bf1ea3f16091d1daa14df427129f78ffbe300cd23c2aa5588b99924d5222857e"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 8,
+      "source_sha256": "9ca88749105a4411154b4b722202c10015c99db21bf39e64aff68f741c509665",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "14651310a65e39bd3ae8d1d67cc8878631a735effae12e3ae0747abe0f7729c3"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 8,
+      "source_sha256": "ba09d787a026d4c959717e94c02f0c1e497b0c160a8755e0607db3e4c6837adf",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "417d520230372a1408616eeb0822bf954ff53883fe81de4c1c039effb8a05a65"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 8,
+      "source_sha256": "67721e7a16cf136c99c69b126350a4269a909f2d9fb6c8f1563832b3ad79974e",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "a2c07e9ef2818fce50091600bb1a25af914ac4cc2ea56289469c8e9e544d329c"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 8,
+      "source_sha256": "03b45ae24303665967e04f35912defbe9de4325f84d815a286c6df46c86d0904",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "761f465ed681f9d4580fa04564505ff4c3110fc1bc0ffbc998cf907ffcbcae5f"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 8,
+      "source_sha256": "c8a6cfb27ce55aceb373912089407067620b6efe2f06294328893d6df171ca5e",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "2de34e188b3afcc516f7feac432a2122155829d93f9950481f10bcf31a879a13"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 8,
+      "source_sha256": "6cb7530aae9d08611a2749cb90a11b2a8843342e3ed7da3ccfb9d0b865550e26",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "0ec50fcfd5174b8d35e7e5478f4c0eda3be4cc83eb81d931bd82b47cd0b0eda7"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 8,
+      "source_sha256": "eceb75f282473740a6691a9cddb98bef37852f9a42421093cf4f38943ba025f7",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "b9ae36f3ee33549502801c270a8120edf224aa5cf3339e8cf3a32196247ac68d"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 8,
+      "source_sha256": "690dc8b45a06edfc2c89652feb5e3fdbd5b5406960dfd2cef2a4a1df453dab7e",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "3cb22db54655b1e8668ba443cdbb02d0e1eb129c00818a75125626e683f5ce5a"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 8,
+      "source_sha256": "b10702339129c987749896230cf36c36e5cc2425e11cae7029556405cb41468d",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "530c5c11b9922fe27cb1eb0d40dff20eef1dff56f550b02417029fb07a6a80ec"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 8,
+      "source_sha256": "6104a34d935c5c048c489d7e132e484d17c39264762f8646bcbd2f1212280e3a",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "469de534bba45bfd7c4e3a5451af8b2fd92e5c98601da68473676c5c7b2b1eaf"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 8,
+      "source_sha256": "ac2f97e9ab7df0417290ba9b29a1278c11890a48c1ab6b216404018109c13467",
+      "origin_course": "tx-law-of-agency-30",
+      "reviewed_target_sha256": "e2b574fa817ca9f896862d944c82754b59da16b4ab5a783a893fff4e35afc580"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 8,
+      "source_sha256": "1c2abe7a4b947a0207b0f5621e5c29df6244c9ec8b5a1f9c9fae49b537e292f8",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "31230bda8cea30a42b254b7c8e277a7a17ca757a63e9348f97fb8cd88443f0f4"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 8,
+      "source_sha256": "4f5c802c7078dcc82d660daa8b36f300381977b9629b6d9092f1460cbc58c020",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "30059f09f0fd097b8b67fb75433e14212b75549f5ca87e444b19b9ddfc455d63"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 8,
+      "source_sha256": "f36cb902953923fbc937d5ad18240b41a5326325352bdda48b3a1078c28f8d81",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "9c4cb979eb4d0ba89eedc0c9671522c8d81c570958c6506a1097373b60eb5d12"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 8,
+      "source_sha256": "ef685c4ea3820b85dd096ee0588f2cd98c7bd7c74a2a5eb874867a3e8fe25d91",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "19b485505ba1650cd0aba37fd08b9e5868ba30564b5725aa3acf3534a4eb8fed"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 8,
+      "source_sha256": "af18a738d85e514d9598a6d8417e4dca62a0d98308811bd2c5b846a736c48941",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "989954d356bc7fbc5f2964940e5408feb5ff99b0eee34c4c49d4d7d0f56ef063"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 8,
+      "source_sha256": "bc08d462f89284ed16b41e198442f43e6d0811d14b477a6a81e7b003c3b29758",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "789b2d45c96c2aa72efb42c007f9461345f41c3afe8cb1546e75f101021a6f56"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 8,
+      "source_sha256": "ef4c772595a9fe311a31507f422daf07eb5fb2c3f3df197b950f76cde3c5aa2e",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "bc7805996e589f0d659821b7c379de57ae2733ac762c87949e547abb523c9f03"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 8,
+      "source_sha256": "36eadef40d239b33230d9340d97b5e12387c340ce9a84e909645d738838c5eed",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "3d1fc1bffe7e74d6e589d8430fc269e7d06e9acb4cc9883ab0344141b8da23ce"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 8,
+      "source_sha256": "4e2eaa03c57327dde5b5253a35b89ef2cc59c52d6b671efbcfce7e76d3beff13",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "ce25121553010bd4d50a73168615524dd83595911703fcd4b74c33890391afcd"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 8,
+      "source_sha256": "4dbbfc11a85d523bd4d90c38b4a6a1164318b58f27af0959a05f83263ea022b8",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "81b96ec56059f4d0867ed2a0bd7966dab3a33381516dd489f27e1ef19637f0b4"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 8,
+      "source_sha256": "1a238e0206486e6f4a636a0e2909865581daa041cc2ef59f44aec7ec187d745d",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "02d2d4d1ce84c9205d395e98fd4e1c4e6f1888a112188153a101aae35ce88dbb"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 8,
+      "source_sha256": "fb089c0e4083d0da5423b7afe5790eabb951d74c8d655fc91b3b450d0d00a9c1",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "5eec1c87daefa2245c443a047027816aaf9ad772a0fe33f4bd80319d1c4bdc5d"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 8,
+      "source_sha256": "c96038aef91c501620f3b25ad555f917e2720fad1b2ce43412708a76544d0b9b",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "ab9a34152a60b00442f3aed3f8d0f56558d84e9f2dca64fcadbae38410840eef"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 8,
+      "source_sha256": "032ae81fa0ee98ff8e3f1da533532a07e7e1d8e46bc5ae3443a58438a6205c9a",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "4cd97a485b6bb19ddbc7bc5f5e4bfb19a82604c9dbcf07b3730ce5c144dbd20f"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 8,
+      "source_sha256": "614598454b660ba73b34c31b7786abd628a5c295b98e9c77a1c723a111544701",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "619aa8556bab3fca5687b560b57e999469c0371cefb5ff818839560cf2531d04"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 8,
+      "source_sha256": "b2f7932a53c50ad5d8787f19ab3a91035975e4c290685a8bc5289d2256e7626a",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "4e9e9e3ef51d364e612187d8ddae6614c0a15f838f493b409d197a61a3970d34"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 8,
+      "source_sha256": "a61139889bb3b47accf8f79b37ea96c6247c0a27bb5de6f8d57325e68f63fab6",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "306111386e8cee490f1686a47ae6eecdbe200627377b8e6762b7c5d7c58c0d88"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 8,
+      "source_sha256": "72042c6154f9060a5a716edb31a52156a58df0d3b457015b37e495ec9b32d983",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "924586da001553c77ca5881dba5c073af5b475a8d4edcbb9a1dcd82ac4cb1bf5"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 8,
+      "source_sha256": "0c5a1ae94d7a2a588c69de885e1a6da47e14aa10e64dee66b65f83f87d5b8e0b",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "75c66cbb616919a5e213021a49980bf65aa611387843a7920d37a9c73ebe3549"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 8,
+      "source_sha256": "3d61228acf1dbe0c76bd9fe8f4f79e33607cf659b2d18634bf5ae56228d951db",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "9360ae33e2596bf1d74cecd42a951166dd53143a51a430dcba5b8d35e5c951b2"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 8,
+      "source_sha256": "c5a3b133391bb2614a20f9674105a500e164ccd527cfda4342fb4168d6164c52",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "24fa62fe28926339121921f0dd6b2ccbd9774c178a59ec66593abecee7d15f9b"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 8,
+      "source_sha256": "766929d359646755e7a95d3a8562b719e05e7293b2587fa8977dd0e671ebc685",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "a5e20f4d780fc83e617f53c0556885820ad7e0515dbfcfbf50dc5f1b13d831ad"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 8,
+      "source_sha256": "0035812afac7e45f5d928622045f850039d6654a47abe118e2057d204c0484bc",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "b3f1bc53b70273bc5b88f7280cb0197c507ecfb295fe0470914b21564deee4ad"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 8,
+      "source_sha256": "cd429d744161e77a81e36c1966bb1bfa77ee76d3c5c6d2b17602ce00b52a9bba",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "3fc4676f8f0f4df48b84375ef9e58023c0e4aa076522962d5ea00cd6db18003c"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 8,
+      "source_sha256": "c4b460c1e28d31143ec03a0138b80aee2d2551ae78d13d76c516a460f8bd7387",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "943666f9e6f6481ff1ba9df682c4f101039f140f5e726e68b1cca9ebaef2b4dd"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 8,
+      "source_sha256": "efafc7d0adc80cc0ad5a025b1e87fee8201d279166b3c3a41bf8585eda59b354",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "e3cda04b461fc1c7fb577c6a76d8d0ebe6bcb0077b2d57e40d5a306c1d689c0f"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 8,
+      "source_sha256": "07e5e6dda5aac0607e0c678305203b2e4452a2e6ceb5742540782eeb3cab8228",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "449e022232efab438e2464233e436dba3d3885af24fea722a42e7ca4490d9d42"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 8,
+      "source_sha256": "828d35e2fa92c115e7c280490dad809fdbbc9c6af589732b2512920ba9204b11",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "307de8ca71b35fcb940070cbbee934b0e74b27b214f84cf7af041419375b2fa1"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 8,
+      "source_sha256": "0bc2a47a667fd2b2a2e62181dd9debb37c4af60ecc3385ad066e429b5a13e60e",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "dcc8ec727b95289b766cbedfd20478fa2ae05f5e4dce32ef01e6d1cc64b337d9"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 8,
+      "source_sha256": "201ce3f77464155c9c810b3d9e0756b2a0972cf5613ea0391100ac27486ab425",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "7e98cb4160f4a42bb08039aaedcf10c0a10d5fa5b56dac7c6dd5faba4f1898ee"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 8,
+      "source_sha256": "7e59b0d35b978244a5df303efd7f8ed4b9e1c1f4d4e364515afb253007a96c57",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "72dab9f11880825a21f7da1a7ab925f221dd91488063be4ea865c94af2625fd4"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 8,
+      "source_sha256": "3a39a93d509956697b1537595733b51af7904b00434632a1e872fce224f15201",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "d11e906016cc16da110bda18759eac33bc8f9826b44d412303b684bf4c6cf81a"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 8,
+      "source_sha256": "b77b623941399fd3b7f8e47e21954ef9bfbfb992d1584841e2902dce76f8e009",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "fac624dd6b298b0ffcd63d7b72b83838b4c83d9de120f9cdf8e50e775a20f2b4"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 8,
+      "source_sha256": "1c51a48369422cf3745686492d575f8d7db7f835ef02b030f5047199ffcc0f62",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "c71d09dbecc39f50d7598f6a7fc95d0a02f2448814854772cb6e4677b93e8d7d"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 8,
+      "source_sha256": "96f2a822b38fa22c8bb5e04c3284567435491d6ae47f8db62dbfc852621ed240",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "9025de1e866ffef715a3adcfb50c79856b32c319566ee85b4c3a6a6a9cf47ddc"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 8,
+      "source_sha256": "9f7b9090316bfd6277500236f2d1ebe319cead7bffda203bf52b056c5dea738a",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "f159d200de2f13f366480e138280e9f83cdc8dfadc2120189a436c943e716ff6"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 8,
+      "source_sha256": "8f9d6b9b515868fc58acead900418c51e364ea1a18e26b2747d0ba4db1ccdfb0",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "62295244583bcc0df457695216929af6923fe779acba7d7ef6a595b2e4f3bdc5"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 8,
+      "source_sha256": "510b9e27b98613c58a414161c0e2607f349fc47f7ef0157c9c88f300b013eecf",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "a1a524f164c65b083a53959871f00e5faba358cbe37375e7b15cf16ce9b173ef"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 8,
+      "source_sha256": "526303189861c45ba46425cb38de22c8148399baddb300039787f515bfe23edd",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "9af586a555e4b1a1e77b001fba513d001e6c18205b6634b1bad539dfca37a733"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 8,
+      "source_sha256": "6a40489f36caa4da777bca021a24373c514f64da4da6123c3a04f8b36949f273",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "1af2fc7ae7735cfffae15c002077785d2385cd82649eeae789f6e7c092f00ef4"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 8,
+      "source_sha256": "5ab8d0340d8c97ba781ce2cbce4a270654d9b678c7a01a0884b22ba68ce21b7b",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "71ceb06e76e8ad772ec0156440c42141e90abf4bbdca9fb0ea830d7d66774547"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 8,
+      "source_sha256": "38a84f3f670270206292268da0023b6ab5d6309b2e7efb3d9dd44de0ec4ba5e2",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "ce95886812a1d3a04028ba32d1d1617dabc07b0d32b61ebf2c8262f040029c8a"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 8,
+      "source_sha256": "2be23c585f15e5fd3279d0663036dd9f6e634f4225ef326fc83fb874dbb81a0f",
+      "origin_course": "tx-principles-real-estate-ii-30",
+      "reviewed_target_sha256": "f35131c5ac046a0949b6859ea78e63395500c4bc80a12a0e16798fdcda08eeaf"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 8,
+      "source_sha256": "4fe88762003d6c419dc6bc43f9b75cf5fe7157a0d07f20188a1e4cb571582194",
+      "origin_course": "tx-principles-real-estate-i-30",
+      "reviewed_target_sha256": "602c7ad8fd05fd09bff5c8b9f89d83a02b93798d7c82a60d7335dc67d0ddab4a"
+    },
+    {
+      "lesson_index": 9,
+      "section_index": 9,
+      "source_sha256": "132fa589804a1aa5943ab6ac5b6bbbc8abcf02a99eb8a66b14fdabe521fbe8f1",
+      "origin_course": "tx-promulgated-contract-forms-30",
+      "reviewed_target_sha256": "6478a63fd5c869b6faa6731c8047047ec9943ca66443e49f857d588bdf1625dd"
+    },
+    {
+      "lesson_index": 10,
+      "section_index": 2,
+      "source_sha256": "40127fc730baec9728f6f0b2ddb888494a223b13a214e25bdba34b342719376e",
+      "origin_course": "tx-law-of-agency-30",
+      "reviewed_target_sha256": "349747c161557d6f6ac64590610ff4ba82e3fa6036c9462cf89eb1f5d3539891"
+    },
+    {
+      "lesson_index": 10,
+      "section_index": 2,
+      "source_sha256": "acc1c1a4bd73a084dad05f92b5f84dc989c5049598422fdfd7f8f8e4170e4f31",
+      "origin_course": "tx-law-of-agency-30",
+      "reviewed_target_sha256": "ae241b16f864f2447d56492bab0d17641bd21c616aac170413e2c57ca9141d88"
+    },
+    {
+      "lesson_index": 10,
+      "section_index": 2,
+      "source_sha256": "2137ad8448b235201a32ca3b62147f737aefaa03502ccbeec93edfd2b5458795",
+      "origin_course": "tx-law-of-agency-30",
+      "reviewed_target_sha256": "734b7863710522d64bd4b9fbbe70d78fe2d4d4cc1489b256af8c315d4934c6d8"
+    },
+    {
+      "lesson_index": 10,
+      "section_index": 2,
+      "source_sha256": "aef9c9281f5ef58470929629f12cf0e856229631e8412988e477a8bc6b139061",
+      "origin_course": "tx-law-of-agency-30",
+      "reviewed_target_sha256": "a95c4e5f55b8c0982fa4e8499fbff97ecd5c1e1b6fa7adce51e40c03a3cf7633"
+    },
+    {
+      "lesson_index": 10,
+      "section_index": 2,
+      "source_sha256": "7c50f8a38a76f3e1389408aa461bb70fba5fffa03afd8cd40f2b269de5a4000c",
+      "origin_course": "tx-law-of-agency-30",
+      "reviewed_target_sha256": "29e7ac49b5f0360d467628b369299d59cca60ebabb419f9ced8deb1cc3b63c62"
+    },
+    {
+      "lesson_index": 10,
+      "section_index": 2,
+      "source_sha256": "5ccc2e8715d7a17c3110afe37b8561b84b450db8efcf187d90649f212201050f",
+      "origin_course": "tx-law-of-agency-30",
+      "reviewed_target_sha256": "3ce973018f53e0dd271d5a0b9ebcfdc16d24c992f9baf14bd790e6cd92d36d96"
+    },
+    {
+      "lesson_index": 10,
+      "section_index": 2,
+      "source_sha256": "6e2a77425793cf4521c17fcceb9bda6f3f154822ec5061525fe19101b8fb7cd5",
+      "origin_course": "tx-law-of-agency-30",
+      "reviewed_target_sha256": "659165d80bb1a1e524053d2da1c951af297f185c0b10d72315ef1794e85cf372"
+    },
+    {
+      "lesson_index": 10,
+      "section_index": 2,
+      "source_sha256": "153dac9b235f35cf04472a804ebe9e94ae27190830259c466c54d9ecba6550df",
+      "origin_course": "tx-law-of-agency-30",
+      "reviewed_target_sha256": "987b7427c936a3d9187614ff9d8d1c59823108bb61b208af42ae679d11a97c10"
+    },
+    {
+      "lesson_index": 10,
+      "section_index": 2,
+      "source_sha256": "58ad51e686e7a761df71ea45ea0c7097fa090c7fbcf78113320b5921e70cf5ac",
+      "origin_course": "tx-law-of-agency-30",
+      "reviewed_target_sha256": "86b76bb9016f403dfbe7894cd32dd2682b09c22c9e4d2d5f3b763201e1546ea4"
+    },
+    {
+      "lesson_index": 10,
+      "section_index": 2,
+      "source_sha256": "b3574498e1ea28b61a47aa258e5b919a54d345bc71c4d52ae8b706ec55a7384c",
+      "origin_course": "tx-law-of-agency-30",
+      "reviewed_target_sha256": "ba44c90af60fbea873725456c153eae8d18c048dc9b0051b5e389139a4fb5ada"
+    },
+    {
+      "lesson_index": 10,
+      "section_index": 2,
+      "source_sha256": "be04638cbdc807dedc55fa18434652612a553ab7638a3a7e9f5214f3b4549651",
+      "origin_course": "tx-law-of-agency-30",
+      "reviewed_target_sha256": "c182a60351cfea2d730b8cb94e338fa4f9c913c1d9e1e82292d4f8030aeb49d2"
+    },
+    {
+      "lesson_index": 10,
+      "section_index": 2,
+      "source_sha256": "d96a3142ff8cc2ab0700857b2cc2cbb98db226137335c3a70421b957bd02722d",
+      "origin_course": "tx-law-of-agency-30",
+      "reviewed_target_sha256": "0fb1e5146ccca8e86c91e644ea3efa2132bd3164245090b53c8bd0122616a74a"
+    },
+    {
+      "lesson_index": 10,
+      "section_index": 2,
+      "source_sha256": "7db68e7386782c48003d91b6a386007e388f68030a437f74629db10d5c29673a",
+      "origin_course": "tx-law-of-agency-30",
+      "reviewed_target_sha256": "a7f2c44de85987544a1b2f46e59c917fbc75d00a515e153d6e6b5ae8db6b1f02"
+    },
+    {
+      "lesson_index": 10,
+      "section_index": 2,
+      "source_sha256": "42f96415a0abf6d79137f78f4aac706df605bf6131ea15726f35864560bd0f92",
+      "origin_course": "tx-law-of-agency-30",
+      "reviewed_target_sha256": "eca68d8261bce27dd1d9d14c7744d90c3f1a532920a0a5a20e1ec7347842559e"
+    },
+    {
+      "lesson_index": 10,
+      "section_index": 2,
+      "source_sha256": "c7b0d4ef6428d4d2fc8a965607b667250706e79a9511f83a6b591cec216bffae",
+      "origin_course": "tx-law-of-agency-30",
+      "reviewed_target_sha256": "6bc3108ef0a834823013e2cf5cd009946911b5adde9f3b2aeff80b9d9b002d68"
+    },
+    {
+      "lesson_index": 10,
+      "section_index": 2,
+      "source_sha256": "7f274a879a061d664e11ac35b7437087b3ec7661eaf06d8f9a360b9bd3143a70",
+      "origin_course": "tx-law-of-agency-30",
+      "reviewed_target_sha256": "8d02723aa57da9508f0ccdad2ad1d173ad78838acbb5aa20edb00a5935d686fe"
+    },
+    {
+      "lesson_index": 10,
+      "section_index": 2,
+      "source_sha256": "683a47783d4d599c660d4735472fd9f3153a61a2aadb1114fea3783efc134c36",
+      "origin_course": "tx-law-of-agency-30",
+      "reviewed_target_sha256": "dcf2fbeb0295b469778acc17cf04f648338768ecaea53d4eb2825e83f57b527a"
+    },
+    {
+      "lesson_index": 10,
+      "section_index": 2,
+      "source_sha256": "68674fc6b4b60a9e5dd4832605436467599932fc1c181d23a25942126d3b80d5",
+      "origin_course": "tx-law-of-agency-30",
+      "reviewed_target_sha256": "4ca5e2e5cde9b040c58af9a40bed232b8006d325c5516cb3cd74db042b5f580c"
+    },
+    {
+      "lesson_index": 10,
+      "section_index": 2,
+      "source_sha256": "41434cdf5d74b12a27b79ff5b1a6f40515333cd6672dfda13dd1aa5be6f6b8f0",
+      "origin_course": "tx-law-of-agency-30",
+      "reviewed_target_sha256": "d7826f157766919e35daa9b31401cf4b80495b468edb30a7e6b9d6df9a37cdc5"
+    },
+    {
+      "lesson_index": 10,
+      "section_index": 2,
+      "source_sha256": "e3639145907685add69afe00704a892795d1ecc935dccfe5e5bd399b13b2a4db",
+      "origin_course": "tx-law-of-agency-30",
+      "reviewed_target_sha256": "a20b313d55441019d20ea14127db61649dbe4496bb18efc4119762b7d8b47087"
+    },
+    {
+      "lesson_index": 10,
+      "section_index": 2,
+      "source_sha256": "bb947bb8b49b6f043eacc76092ed19f4889225efc76aaceadd687a41c6bc0e1c",
+      "origin_course": "tx-law-of-agency-30",
+      "reviewed_target_sha256": "8b4023da804af3342b51ae9dafecff8fdceb36f13c3897d1d086dd3c9da5d70a"
+    },
+    {
+      "lesson_index": 10,
+      "section_index": 2,
+      "source_sha256": "01ca30748713a3efbcc3b8b15b2c393e8f5b7cb9de7c14a7805b13aec0bdbe88",
+      "origin_course": "tx-law-of-agency-30",
+      "reviewed_target_sha256": "5096507c8533924aab6e252f99cbfca1fe57aed30c1d8059e0348425ecd198eb"
+    },
+    {
+      "lesson_index": 10,
+      "section_index": 2,
+      "source_sha256": "132fa589804a1aa5943ab6ac5b6bbbc8abcf02a99eb8a66b14fdabe521fbe8f1",
+      "origin_course": "tx-promulgated-contract-forms-30",
+      "reviewed_target_sha256": "6478a63fd5c869b6faa6731c8047047ec9943ca66443e49f857d588bdf1625dd"
+    }
+  ],
+  "carry_changes": 29,
+  "fresh_changes": 39,
+  "numeric_reference_validation": "PASS executed on wholeContracts after finalfollowups",
+  "file_hash_note": "Concurrent root/centralothersections;eventhashesbindlocalchanges."
+}

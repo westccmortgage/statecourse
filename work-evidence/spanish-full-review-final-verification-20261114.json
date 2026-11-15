@@ -1,0 +1,166 @@
+{
+  "scope": "Final local verification; no production publication or acceptance",
+  "build": {
+    "command": "bash site/build.sh",
+    "exit_code": 0,
+    "protected_tests": 5
+  },
+  "focused_tests": {
+    "count": 55,
+    "passed": 55,
+    "context_fixtures": 753
+  },
+  "sentence_tests": {
+    "count": 3,
+    "passed": 3
+  },
+  "numeric_reference_preservation": {
+    "changed_entries": 21138,
+    "mismatches": 0
+  },
+  "source_metadata_keys_order": "unchanged against173e07f",
+  "local_http": "all30companion hashes and14state Spanish entry links PASS",
+  "browser": "all30readers plus sampled grading/answer retention, lastOKcorrection observed",
+  "human_linguistic_review": "OPEN",
+  "human_SME_review": "OPEN",
+  "learner_duration_validation": "OPEN",
+  "production_acceptance": "NOT VERIFIED; publication approval blocked",
+  "files": [
+    {
+      "path": "locales/es/free-practice/ak-salesperson-prelicense-40-v1.json",
+      "sha256": "2dee00cdf8fd2c39f8177e6c7246cf9dc8a03338a66a6b125cb6d9a137c35b9c"
+    },
+    {
+      "path": "locales/es/free-practice/az-contract-writing-6.json",
+      "sha256": "361a24ac3e04301ce5cff443c6201c14c95635186321c3ff579e6db34976fb5e"
+    },
+    {
+      "path": "locales/es/free-practice/az-salesperson-prelicense-90.json",
+      "sha256": "08ebea4660e35e686f2f596ee02137f6640472bf933a5275f7bae533a29fada6"
+    },
+    {
+      "path": "locales/es/free-practice/ca-mortgage-loan-brokering-lending-45.json",
+      "sha256": "de76458120a1a71a145a001efdfdb2fc0a325308ad7f77e2483e200274da4bc8"
+    },
+    {
+      "path": "locales/es/free-practice/ca-real-estate-practice-45.json",
+      "sha256": "8324d1f4a77b7b9a9a0d2f7a07ed24c4913cf46d277ff6a9389556247ba610c5"
+    },
+    {
+      "path": "locales/es/free-practice/ca-real-estate-principles-45.json",
+      "sha256": "f7ab269087656e83b627c15ffed183bb9ca2978c34a738e24d52a240cd1ffae2"
+    },
+    {
+      "path": "locales/es/free-practice/co-contracts-regulations-48.json",
+      "sha256": "a10f5d9b969cb0dd4e21d9e337354f5735e5a2309bc5ce8d9622be92e95de0fc"
+    },
+    {
+      "path": "locales/es/free-practice/co-current-legal-issues-8.json",
+      "sha256": "2737919c20fd68f7165c48ff144d92f364979b7f45cd5ac6649e1b3434e46042"
+    },
+    {
+      "path": "locales/es/free-practice/co-practical-applications-32.json",
+      "sha256": "86497ad78f1c86507102c24a2c764dfb40ebc24735556c22d9203513a283cb14"
+    },
+    {
+      "path": "locales/es/free-practice/co-real-estate-closings-24.json",
+      "sha256": "2c4380edbe636acaafaa846d94a1f0aaf45455ac91267170b49362729c2c0576"
+    },
+    {
+      "path": "locales/es/free-practice/co-real-estate-law-practice-48.json",
+      "sha256": "bf35c81cfb88ddebc4983a953ead413c841cfb3fd7efe0fe4b9c076c18440926"
+    },
+    {
+      "path": "locales/es/free-practice/co-trust-accounts-recordkeeping-8.json",
+      "sha256": "9f6401e463a7e28d3418a51f138745ce56e30533e043b1e065119899bcec32ea"
+    },
+    {
+      "path": "locales/es/free-practice/editorial-overrides.json",
+      "sha256": "b4e590ed4eb2eef437973f9d7e5fc76edad0ba9c5fe181ba4d8f1bfe69b9588a"
+    },
+    {
+      "path": "locales/es/free-practice/interface.json",
+      "sha256": "6c56e84764965a7a532bae53c2cdb239ad89e4cb846c7dd71c5503e159e326ed"
+    },
+    {
+      "path": "locales/es/free-practice/me-sales-agent-v1.json",
+      "sha256": "b0a38602f1be327382b5bd48728952154a00f2905bc087a160e7a8ef49891e5a"
+    },
+    {
+      "path": "locales/es/free-practice/mi-salesperson-prelicensure-40-v1.json",
+      "sha256": "ae27c9f0fcb3c79f304e032919c2d710edd1c193acffe3202c5cf85c0a580998"
+    },
+    {
+      "path": "locales/es/free-practice/mo-real-estate-practice-24.json",
+      "sha256": "a0b6c2fa3c5c1df895eab8edea680a3afb2f4388db102bdb9dad14709fd59e98"
+    },
+    {
+      "path": "locales/es/free-practice/mo-salesperson-preexam-48.json",
+      "sha256": "d528ef4421bb058ba74404b68ff9509c2aeee748adce62d288dcd783397b03b0"
+    },
+    {
+      "path": "locales/es/free-practice/nc-broker-prelicensing-75.json",
+      "sha256": "c27110bed89497f50eba9df55c4656efb85275106dff9ccdd803380a65453ca3"
+    },
+    {
+      "path": "locales/es/free-practice/ok-basic-prelicense-90.json",
+      "sha256": "2e533e479804bcb0b9e717a5f38b548aee1ca9d58f4f1d5963fde4b2e0397f32"
+    },
+    {
+      "path": "locales/es/free-practice/pa-real-estate-fundamentals-30.json",
+      "sha256": "91ffa6888e4be78b7aec9829b99aed6682f3d157438ce8067140bc4d8e18ccba"
+    },
+    {
+      "path": "locales/es/free-practice/pa-real-estate-practice-45.json",
+      "sha256": "21e8cd8536cf065009f47d648b8624d9943bf37399690c7ab07f890579c3765a"
+    },
+    {
+      "path": "locales/es/free-practice/tx-law-of-agency-30.json",
+      "sha256": "9c2b188a8759fd8d57b84c68d5d964b03bc1555ed45ce9c7a396398bb64748a8"
+    },
+    {
+      "path": "locales/es/free-practice/tx-law-of-contracts-30.json",
+      "sha256": "6ddd0ce4732d38ef5bf4b7510e30146345b4f899bf2eafd4aeea298a1fdeccd5"
+    },
+    {
+      "path": "locales/es/free-practice/tx-principles-real-estate-i-30.json",
+      "sha256": "32cca7bad1d2401759b603b8b00009927db84be9271095259feaeaf1184ddd6a"
+    },
+    {
+      "path": "locales/es/free-practice/tx-principles-real-estate-ii-30.json",
+      "sha256": "06a75f07cbd4c4ba79772934a203253526430fe5b92431b4af15f83443115e46"
+    },
+    {
+      "path": "locales/es/free-practice/tx-promulgated-contract-forms-30.json",
+      "sha256": "67f73878b148670111ac37aa687d1f702676c1cd69cccb882ac4881d1b5565fa"
+    },
+    {
+      "path": "locales/es/free-practice/tx-real-estate-finance-30.json",
+      "sha256": "c9d923479d7eaecb458589dc18c1eff8772bdbed56d48c13b0fef13f14d1b1ff"
+    },
+    {
+      "path": "locales/es/free-practice/va-principles-practices-v1.json",
+      "sha256": "6532c0db14977e8d3c338570f277ef46b45b8e211f9ba46fdb69527cb271b169"
+    },
+    {
+      "path": "locales/es/free-practice/wa-real-estate-fundamentals-60.json",
+      "sha256": "5a649ea0ea96feb83ea1620346aba109e85887b373109991fb6f1560bd0ee6a3"
+    },
+    {
+      "path": "locales/es/free-practice/wa-real-estate-practices-30.json",
+      "sha256": "4385202085bc68e69aa06745e460b5010e0cb754b29c6bffaa5ee45c75b77f23"
+    },
+    {
+      "path": "locales/es/free-practice/wi-salesperson.json",
+      "sha256": "a98fb8557272a90fe3715d098ee4f12592cd070b51a59196b5edcd6ab65190ec"
+    },
+    {
+      "path": "public/statecourse/practice-locale.mjs",
+      "sha256": "f46b51de2434defc06cd599db922db1965b1d7529286196b703aa735ca90dcec"
+    },
+    {
+      "path": "tests/fixtures/free-practice-semantic-contexts.json",
+      "sha256": "b96a9d23ea10b968bd0d514707c45c840c926b1ba5af979e28fbeb8ee820c2bf"
+    }
+  ]
+}

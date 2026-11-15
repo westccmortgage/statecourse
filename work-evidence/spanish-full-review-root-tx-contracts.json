@@ -1,0 +1,444 @@
+{
+  "status": "Root direct bilingual review complete for module10 sections0–6; remaining sections assigned Texas reviewer; human linguistic/SME/duration OPEN",
+  "corrections": [
+    {
+      "course_id": "tx-law-of-contracts-30",
+      "source": "\"Clear to close,\" tracked rather than assumed.",
+      "before": "\"Limpio para cerrar\", rastreado en lugar de supuesto.",
+      "after": "La autorización para cerrar se comprueba; no se da por supuesta.",
+      "source_sha256": "01b3f1680fd975bc3f4a2a3a1302c0940de32ecbfcd9d03d0171fa0266efc7a7",
+      "target_sha256": "15747363e2126b05819c391a0db0b116e88609d3895b35042fa91a86d98a8b27"
+    },
+    {
+      "course_id": "tx-law-of-contracts-30",
+      "source": "(The lender will not fund without it); utilities, HOA documents and resale certificates ordered where applicable.",
+      "before": "(El prestamista no financiará sin ella); utilidades, documentos de HOA y certificados de reventa ordenados cuando proceda.",
+      "after": "(el prestamista no desembolsará sin cobertura); solicitar, cuando corresponda, los servicios públicos, la documentación de la asociación de propietarios y los certificados de reventa.",
+      "source_sha256": "703bb3651b5a5b46c5e42ee61a62a41f5fa9cbd01bbe87d4795dd24a75d9b8f0",
+      "target_sha256": "bff791415e43082a3237900c094e9fc8cc30b13ba1e0fed69d3dfea9ba052223"
+    },
+    {
+      "course_id": "tx-law-of-contracts-30",
+      "source": "(whose document, due when); and final underwriting clearance — \"clear to close\" — before which no closing date is real, however confidently scheduled. The licence holder's technique is unglamorous: a standing weekly status call pattern among agent, lender and escrow officer, and a refusal to let \"we're fine\" substitute for a conditions list with names on it.",
+      "before": "(cuyo documento, fecha de vencimiento); y autorización de suscripción final — \"claro a cerrar\" — antes de la cual ninguna fecha de cierre es real, sin embargo con confianza programada. La técnica del titular de la licencia es poco glamorosa: un patrón semanal de llamada de estatus entre el agente, prestamista y oficial de fideicomiso, y la negativa a dejar que \"estamos bien\" sustituya a una lista de condiciones con nombres en ella.",
+      "after": "(qué documento debe aportar cada persona y cuándo); y la autorización final de evaluación crediticia para cerrar. Hasta entonces, la fecha de cierre no está asegurada, por mucha confianza con que se haya programado. El método profesional es sencillo: llamadas periódicas semanales entre agente, prestamista y responsable de escrow, sin aceptar «todo va bien» en lugar de una lista de condiciones con responsables.",
+      "source_sha256": "211d4241693ba39bb2727b218535e1c083ede604ef55c6ddc7b75cdacb94a58e",
+      "target_sha256": "0d4407b69e79dcbc59494883eaa3a5d4c7f3a7a72a5d935aad7ec49255a23b89"
+    },
+    {
+      "course_id": "tx-law-of-contracts-30",
+      "source": ", as tasks with dates: releases ordered, payoffs quoted, heirship documented, that pool contractor's lien resolved.",
+      "before": ", como tareas con fechas: liberaciones ordenadas, pagos cotizados, herencia documentada, que el embargo del contratista de la piscina resuelto.",
+      "after": ", mediante tareas con fechas: solicitar cancelaciones de gravámenes, obtener importes de liquidación, documentar la condición de heredero y resolver el gravamen del contratista de la piscina.",
+      "source_sha256": "8e8304f5fcf8b6570daea747a24ba253c4e16779c879aee32acbb2dd4deb41e8",
+      "target_sha256": "4ae0a6bfdb4b946d1403b0c89477fb337461d1e4739a400ca630f64e31ffc8e5"
+    },
+    {
+      "course_id": "tx-law-of-contracts-30",
+      "source": ": the buyer's final verification that the property's condition and the",
+      "before": ": la comprobación final del comprador de que la condición de la propiedad y el",
+      "after": ": la verificación final del comprador de que el estado del inmueble y las",
+      "source_sha256": "a74b3358a5bb68e136e7437bcf55746dea63281464f0cfc4f4647b3ff00c1135",
+      "target_sha256": "e8a27168583c9879d36ba78ad5575c62c0b7556d7af6caa6b14818b530977a5f"
+    },
+    {
+      "course_id": "tx-law-of-contracts-30",
+      "source": "Agreed repairs match the contract — the last, cheap moment to catch what would be expensive the day after funding.",
+      "before": "Las reparaciones acordadas coinciden con el contrato — el último y barato momento para capturar lo que sería caro el día después de la financiación.",
+      "after": "reparaciones acordadas coinciden con el contrato: la última oportunidad económica de detectar algo que resultaría costoso al día siguiente del desembolso.",
+      "source_sha256": "a1c338fd905ce28e981554e2803926c9b657ac6237aba9fe225cc767d0ba4c6a",
+      "target_sha256": "f9a36859e81b7a24ca90e7444aa975e43b2e443e0d70cb40b92059b3b132a269"
+    },
+    {
+      "course_id": "tx-law-of-contracts-30",
+      "source": "Application, appraisal, underwriting, and the approach of the financing",
+      "before": "Aplicación, evaluación, suscripción y enfoque de la financiación",
+      "after": "Solicitud, tasación, evaluación crediticia y seguimiento del",
+      "source_sha256": "a3d5add962cec5e66f742723372e347d441872dddcbe4e67a18d188d06af06a2",
+      "target_sha256": "e912332a860ff75eb3a4e78f458b273eee4e9478909c6e775d3d01946dae1d0a"
+    },
+    {
+      "course_id": "tx-law-of-contracts-30",
+      "source": "Assign each step to the person who must perform it. The buyer supplies financial documents and makes decisions; the seller supplies required property information and performs agreed obligations; the lender underwrites; the title and escrow participants handle their authorized functions; inspectors and other professionals evaluate their subjects; the broker coordinates within its role. An agent’s reminder does not replace the party’s performance, but it can prevent a missed step.",
+      "before": "Asignar cada paso a la persona que debe realizarlo. El comprador suministra documentos financieros y toma decisiones; el vendedor suministra información sobre la propiedad y cumple las obligaciones acordadas; el prestamista garantiza; los participantes en el título y el fideicomiso se encargan de sus funciones autorizadas; los inspectores y otros profesionales evalúan sus temas; el intermediario coordina en el marco de su función. El recordatorio de un agente no reemplaza la actuación de la parte, pero puede evitar que se pierda un paso.",
+      "after": "Asigne cada paso a quien debe realizarlo. El comprador aporta documentación financiera y decide; el vendedor proporciona la información exigida y cumple las obligaciones acordadas; el prestamista evalúa el crédito; los participantes de títulos y escrow ejercen sus funciones autorizadas; los inspectores y demás profesionales evalúan sus respectivas materias; y el corredor coordina dentro de su función. Un recordatorio del agente no sustituye el cumplimiento de la parte, pero puede evitar una omisión.",
+      "source_sha256": "babdf0f28fa095c3b5b875c9021c288aa24d98e83f5ebce725b013ef4fe82049",
+      "target_sha256": "49c3b1aa28dfd78b4b79d368f35d266794b0896715f846d9650f0c8cc25acf18"
+    },
+    {
+      "course_id": "tx-law-of-contracts-30",
+      "source": "At amendment, retain the signed change, update affected dates and amounts, and notify the appropriate participants. At closing readiness, compare the settlement figures with the contract, amendments, lender disclosures, payoffs, deposits, and invoices. Confirm identity and authority requirements, signing arrangements, funds, insurance, possession, and any final walkthrough. At completion, retain the final documents, confirmations, and remaining duties under the broker’s retention policy and rule.",
+      "before": "En el momento de la enmienda, conservar el cambio firmado, actualizar las fechas y cantidades afectadas, y notificar a los participantes pertinentes. Al cierre de la preparación, compare las cifras de liquidación con el contrato, enmiendas, revelaciones de prestamistas, pagos, depósitos y facturas. Confirme los requisitos de identidad y autoridad, los arreglos de firma, fondos, seguros, posesión y cualquier paso final. Al finalizar, retenga los documentos finales, confirmaciones y los deberes restantes bajo la política y regla de retención del bróker.",
+      "after": "Cuando se modifica el contrato, conserve el cambio firmado, actualice las fechas e importes afectados y avise a quienes corresponda. Antes del cierre, compare las cifras de liquidación con el contrato, sus modificaciones, las divulgaciones del prestamista, los importes de cancelación de deudas, los depósitos y las facturas. Confirme identidad y facultades, firma, fondos, seguro, posesión y visita final. Al terminar, conserve documentos finales, confirmaciones y obligaciones pendientes conforme a la política y las normas de conservación del corredor.",
+      "source_sha256": "b73bde785e0c72619b25741a8a3f622e6535153514a2f4f3f7684103ca6055d3",
+      "target_sha256": "00d9655e2e03de9598d23937443284ec4b4a3c66f3f2d22d9e6a6c0ac84bb7fe"
+    },
+    {
+      "course_id": "tx-law-of-contracts-30",
+      "source": "Contingency's deadline — with the agent tracking conditions (\"clear to close\") rather than assuming them.",
+      "before": "Plazo de contingencia — con las condiciones de seguimiento del agente (\"claro para cerrar\") en lugar de asumirlas.",
+      "after": "vencimiento de la condición de financiación, comprobando el agente los requisitos para la autorización de cierre en lugar de darlos por cumplidos.",
+      "source_sha256": "122ea558196da4594a099190c54f0eb9cbeddbfab4e9ee2c13eed204f8798cf7",
+      "target_sha256": "86e958cfbf192c3f7eb81ad5bebb4c44178eca7a22c126d1965a4f7bbbd21956"
+    },
+    {
+      "course_id": "tx-law-of-contracts-30",
+      "source": "Contract's window; cures are negotiated. Everything Principles I Module 03 taught about liens and Principles I Module 07 taught about chains of title happens",
+      "before": "La ventana del contrato; las curas se negocian. Todo Principios I Módulo 03 enseñado sobre derechos y principios I Módulo 07 enseñado sobre cadenas de título sucede",
+      "after": "plazo contractual y se negocian las subsanaciones. Todo lo estudiado sobre gravámenes en Principios I, Módulo 03, y sobre cadenas de titularidad en Principios I, Módulo 07, se aplica",
+      "source_sha256": "b474c51b77662e641fd342fb56c2a47223b32101b68b7c795437a524da9527a8",
+      "target_sha256": "07153c4835a34f41199536affc2a0ec81e00ca2169dabed37eaf034579d1e68b"
+    },
+    {
+      "course_id": "tx-law-of-contracts-30",
+      "source": "For the temporary lease, record its signed version, commencement and termination terms, rent or deposit obligations, possession responsibilities, and insurance referrals. Do not let the main closing date overwrite the later possession date. A key-release row should identify the actual agreement and required confirmation. The buyer’s moving-company reservation is not the source of the seller’s surrender duty.",
+      "before": "Para el arrendamiento temporal, anote su versión firmada, términos de inicio y terminación, obligaciones de alquiler o depósito, responsabilidades de posesión y remisiones de seguros. No deje que la fecha de cierre principal sobrescriba la fecha de posesión posterior. Una fila de liberación de claves debe identificar el acuerdo real y la confirmación requerida. La reserva de la empresa de mudanza del comprador no es la fuente de la obligación de entrega del vendedor.",
+      "after": "Para el arrendamiento temporal, registre la versión firmada, las condiciones de inicio y terminación, las obligaciones de renta o depósito, las responsabilidades de posesión y las consultas sobre seguro. La fecha principal de cierre no debe sustituir a la posterior fecha de posesión. La tarea de entrega de llaves debe identificar el acuerdo aplicable y la confirmación exigida. La reserva de la mudanza del comprador no determina cuándo debe entregar la posesión el vendedor.",
+      "source_sha256": "3508cf14b88e2a83290ea1832f9794f304ec58ceba81e41088c581fecaaea4d8",
+      "target_sha256": "e8131bd4c9d0dbcc6b3a25bea2da2ece839480898a8291bad728bcf871115bf3"
+    },
+    {
+      "course_id": "tx-law-of-contracts-30",
+      "source": "From effective date to closing date, the contract (Principles I Module 06) schedules everything; the licence holder's professional contribution is running that calendar so that no right lapses unnoticed. The standing critical path:",
+      "before": "Desde la fecha de entrada en vigor hasta la fecha de cierre, el contrato (Principios I Módulo 06) lo programa todo; la contribución profesional del titular de la licencia está ejecutando ese calendario de modo que ningún derecho fallece inadvertido. El camino crítico permanente:",
+      "after": "Desde la fecha efectiva hasta el cierre, el contrato (Principios I, Módulo 06) fija el calendario. La aportación profesional del titular de licencia consiste en gestionarlo para que ningún derecho venza inadvertidamente. La secuencia crítica habitual es:",
+      "source_sha256": "912235ebb39aa25e1cd9844cfd20f254550c77fdca00cd4b74a0dd89c486f888",
+      "target_sha256": "c0fafafcf4cc986b3ec6f277ce988584820447183324f9a6b5d2559004ede0f6"
+    },
+    {
+      "course_id": "tx-law-of-contracts-30",
+      "source": "In a worked file, the closing date is thirty days away, but the title company requests probate documents that are not yet available. The agent should notify the client and broker, identify the actual requirement, and coordinate with counsel. A promise that title will be ready because most transactions close in thirty days is not evidence. The parties may need a realistic negotiated amendment before the existing agreement reaches a crisis.",
+      "before": "En un archivo trabajado, la fecha de cierre es de treinta días, pero la empresa titular solicita documentos de testamento que aún no están disponibles. El agente debe notificar al cliente y al intermediario, identificar el requisito real y coordinar con el abogado. Una promesa de que el título estará listo porque la mayoría de las transacciones se cierran en treinta días no es evidencia. Las partes pueden necesitar una enmienda negociada realista antes de que el acuerdo existente llegue a una crisis.",
+      "after": "En un caso práctico faltan treinta días para el cierre, pero la compañía de títulos solicita documentos sucesorios todavía no disponibles. El agente debe avisar al cliente y al corredor, precisar el requisito y coordinarse con asesoría jurídica. Prometer que el título estará listo porque la mayoría de las operaciones cierran en treinta días no constituye prueba. Las partes quizá necesiten negociar una modificación realista antes de llegar a una crisis.",
+      "source_sha256": "623654d1204237ed8afc8195b6f812d0630a1d230c25468458f552d8ffeca2f1",
+      "target_sha256": "d44642162d12d41a2bad48b3c6dae8c1cb9d05bcd4ec40e09035858c8d2e7347"
+    },
+    {
+      "course_id": "tx-law-of-contracts-30",
+      "source": "T10U2 — Sample Check List",
+      "before": "T10U2 — Lista de verificación de muestras",
+      "after": "T10U2 — Ejemplo de lista de verificación",
+      "source_sha256": "337e2f550837a7fe3eca7b7a28778504fbae069cc15f283e211803f227af41c4",
+      "target_sha256": "685a8ff6c886061a83d992a1c1f3e9544ad2a2ab1970f8439fe8ff9cfe76c2ba"
+    },
+    {
+      "course_id": "tx-law-of-contracts-30",
+      "source": "The commitment issues; buyer and lender review; objections go out within the",
+      "before": "Las cuestiones relativas al compromiso; la revisión del comprador y el prestamista; las objeciones",
+      "after": "Se emite el compromiso de seguro de título; lo revisan comprador y prestamista; las objeciones se presentan dentro del",
+      "source_sha256": "72e0f47a97efc52408e64dfd539eca858a51df0b64e246822959195748b5b17b",
+      "target_sha256": "7458d1ead1c630cd6d31705679390c0f6489658c2f5dc8f7e24332afbc9add6c"
+    },
+    {
+      "course_id": "tx-law-of-contracts-30",
+      "source": "The walk-through",
+      "before": "El paso a través",
+      "after": "La visita final de comprobación",
+      "source_sha256": "940b61951c3d522d94a0a355fa3640310ccd1e44b1b5169af0727cc001232f85",
+      "target_sha256": "fa0157b88ca664c5b0d71864fad0864dbbc2c09ece502a892946cbd6e5fa3752"
+    },
+    {
+      "course_id": "tx-law-of-contracts-30",
+      "source": "Where a property sits in a mandatory owners' association, the contract's HOA machinery adds its own pre-closing thread: the association's documents and account statement are ordered (associations bill for them, and turnaround times are real), the buyer's review rights under the contract's terms run on their own clock, and the association's transfer and statement fees take their place on the settlement statement as the contract allocates them. The dues proration of the statements unit and Principles I Module 03's assessment-lien discussion both land in this thread — one more place where the file's earliest phone call prevents its latest crisis.",
+      "before": "Cuando una propiedad se encuentra en una asociación de propietarios obligatorios, la maquinaria HOA del contrato añade su propio hilo de cierre previo: los documentos de la asociación y el estado de cuenta se ordenan (la factura de las asociaciones para ellos, y los tiempos de entrega son reales), los derechos de revisión del comprador en virtud de los términos del contrato funcionan en su propio reloj, y la transferencia de la asociación y los honorarios de declaración toman su lugar en el estado de liquidación mientras el contrato los asigna. Las cuotas de la unidad de declaraciones y los Principios I Módulo 03 de evaluación-mentira discusión tanto en este hilo — un lugar más donde la primera llamada telefónica del archivo previene su última crisis.",
+      "after": "Si la propiedad pertenece obligatoriamente a una asociación de propietarios, el contrato añade tareas previas al cierre: solicitar sus documentos y estado de cuenta —la asociación cobra por ellos y necesita tiempo para entregarlos—, respetar los plazos de revisión del comprador y asignar en el estado de liquidación los cargos de transferencia y emisión de estados según el contrato. Aquí confluyen el prorrateo de cuotas tratado en la unidad de estados y los gravámenes por cuotas estudiados en Principios I, Módulo 03. Pedirlo pronto evita una crisis tardía.",
+      "source_sha256": "95338a7a85468e69a9d5a79ee20c2661bc7db04ebd952ccb84c6a5b266c8bf44",
+      "target_sha256": "a7028b354257d0e6a078346c94938496ff7e966eefee18c09ae6e54a9588fc7f"
+    },
+    {
+      "course_id": "tx-law-of-contracts-30",
+      "source": "listed and owned",
+      "before": "Listado y propiedad",
+      "after": "enumeradas y con responsables asignados",
+      "source_sha256": "d339eafc05ca5a59d67d16aed9128e59b55409b23f20d515d590be38ce0c8a01",
+      "target_sha256": "c49df94112283e7de655f0a85f42cb784023c695270bf200784d6f0843094b2d"
+    },
+    {
+      "course_id": "tx-law-of-contracts-30",
+      "source": "Borrower conditions can involve income, employment, credit, assets, debts, occupancy, source of funds, and other underwriting matters. Property conditions can involve appraisal, condition, insurance, title, and program standards. A change in either can affect approval. A buyer should not assume approval remains unconditional after taking new debt, changing employment, or receiving a property-related requirement.",
+      "before": "Las condiciones de los prestatarios pueden incluir ingresos, empleo, crédito, activos, deudas, ocupación, fuente de fondos y otros asuntos de suscripción. Las condiciones de propiedad pueden implicar evaluación, condición, seguro, título y estándares del programa. Un cambio en cualquiera de los dos puede afectar a la aprobación. Un comprador no debe asumir que la aprobación sigue siendo incondicional después de asumir una nueva deuda, cambiar de empleo o recibir un requisito relacionado con la propiedad.",
+      "after": "Las condiciones relativas al prestatario pueden referirse a ingresos, empleo, crédito, activos, deudas, ocupación, origen de fondos y otros aspectos de evaluación crediticia. Las relativas al inmueble pueden referirse a tasación, estado físico, seguro, título y requisitos del programa. Un cambio en cualquiera de ellas puede afectar a la aprobación. El comprador no debe suponer que esta sigue siendo incondicional tras contraer nuevas deudas, cambiar de empleo o recibir un requisito relativo al inmueble.",
+      "source_sha256": "6302626e4a9f976bddb8c7beb8e8c400161cd698503eff934fdd464f4907df46",
+      "target_sha256": "6c071ac912a7c3aacc53deffa4129994bf19f73c95a30c71d3fb2c3958bdafdc"
+    },
+    {
+      "course_id": "tx-law-of-contracts-30",
+      "source": "Consider a buyer who has supplied income and asset records but plans to use a gift for part of the required funds. The lender may need documentation of the gift and transfer. The agent can remind the buyer to communicate accurately with the lender and avoid unexplained last-minute changes. The agent should not coach the buyer to describe borrowed money as a gift or conceal a repayment arrangement. Truthful information is essential to both underwriting and a reliable transaction.",
+      "before": "Considere a un comprador que ha proporcionado ingresos y registros de activos, pero planea usar un regalo para parte de los fondos requeridos. El prestamista puede necesitar documentación del regalo y la transferencia. El agente puede recordarle al comprador que se comunique con precisión con el prestamista y evitar cambios inexplicables de última hora. El agente no debe inducir al comprador a describir el dinero prestado como un regalo u ocultar un acuerdo de reembolso. La información veraz es esencial tanto para la suscripción como para una transacción confiable.",
+      "after": "Considere a un comprador que aportó registros de ingresos y activos, pero utilizará una donación para parte de los fondos. El prestamista puede necesitar pruebas de la donación y su transferencia. El agente puede recordarle que comunique los hechos con exactitud y evite cambios de última hora sin explicación. No debe instruirlo para presentar dinero prestado como donación ni ocultar un acuerdo de devolución. La veracidad es esencial tanto para la evaluación crediticia como para una operación fiable.",
+      "source_sha256": "cefbee72b01c1ac23d1893173330e258f6ce92f3a2609cb41c5f920d5f85e8bc",
+      "target_sha256": "d702388e89208b5c01f1d9b962502b0ed1200c39bc8711e2a19f200471d7e85c"
+    },
+    {
+      "course_id": "tx-law-of-contracts-30",
+      "source": "Coordinating the Approval Path Without Becoming the Underwriter",
+      "before": "Coordinar el camino de aprobación sin convertirse en el subscritor",
+      "after": "Coordinar la aprobación sin asumir la función del evaluador crediticio",
+      "source_sha256": "61a268704fac2e5775684c25e44e9821ac8c9bbfc9d70ff2b1ad379cca292d58",
+      "target_sha256": "6a3ce9603ef5720eef6574ce8f8357da2830a7c52200b32fc59b99b7a2f55bef"
+    },
+    {
+      "course_id": "tx-law-of-contracts-30",
+      "source": "Finally, closing authorization and actual funding can be separate. A borrower may sign all documents while the lender still requires a final review or confirmation. The agent should obtain the appropriate closing and funding status from authorized participants before acting on possession or key-release instructions. Do not infer funding from the borrower’s signature completion.",
+      "before": "Por último, la autorización de cierre y la financiación real pueden ser independientes. Un prestatario puede firmar todos los documentos mientras que el prestamista todavía requiere una revisión final o confirmación. El agente debe obtener el estado de cierre y financiación apropiado de los participantes autorizados antes de actuar bajo instrucciones de posesión o liberación de claves. No infiere el financiamiento de la firma del prestatario.",
+      "after": "La autorización de cierre y el desembolso efectivo pueden ocurrir por separado. El prestatario puede firmar todos los documentos mientras el prestamista todavía exige una revisión o confirmación final. Antes de actuar conforme a las instrucciones de entrega de posesión o llaves, el agente debe confirmar con los participantes autorizados el estado del cierre y del desembolso. Haber terminado de firmar no demuestra que los fondos se hayan desembolsado.",
+      "source_sha256": "d17808b23750ea2188e51551ffce350a7864918d478c9aa21a326df0061588e4",
+      "target_sha256": "6af88eed4b60765754a2fd066cd02e5c1b0e005bdf1b8457f76083d105ea9feb"
+    },
+    {
+      "course_id": "tx-law-of-contracts-30",
+      "source": "In a worked file, the loan is conditionally approved subject to proof that a debt was paid and a roof repair was completed. The buyer supplies proof of payment, but the repair is pending. It is inaccurate to tell the seller financing is fully complete. State which condition is resolved and which remains. Coordinate the repair evidence, lender review, and the contract’s deadlines rather than guessing that the remaining condition is a formality.",
+      "before": "En un archivo trabajado, el préstamo es aprobado condicionalmente sujeto a la prueba de que una deuda fue pagada y una reparación del techo fue completada. El comprador aporta la prueba del pago, pero la reparación está pendiente. Es inexacto decir que la financiación del vendedor está completamente completa. Declare qué condición se resuelve y cuál permanece. Coordinar las pruebas de reparación, revisión del prestamista, y los plazos del contrato en lugar de adivinar que la condición restante es una formalidad.",
+      "after": "En un caso práctico, el préstamo está aprobado sujeto a demostrar que se liquidó una deuda y se reparó el techo. El comprador aporta prueba del pago, pero la reparación sigue pendiente. Sería inexacto decir al vendedor que la financiación está totalmente resuelta. Indique qué condición se cumplió y cuál queda. Coordine la prueba de reparación, la revisión del prestamista y los plazos contractuales, sin suponer que lo pendiente es una mera formalidad.",
+      "source_sha256": "b845c24d2d95b994afc8e049143c02d34449fd5a1dd11a95164fe5a7959c142a",
+      "target_sha256": "f24d2f33968e95cd7e98aebc028f122d0ca5d9eebb02dc10f96a9bd1ce6e2a3e"
+    },
+    {
+      "course_id": "tx-law-of-contracts-30",
+      "source": "Loan approval is a process with defined conditions. Prequalification, preapproval, underwriting approval, satisfaction of conditions, closing authorization, and funding are not synonyms. The lender’s terminology should be clarified for the actual file. The agent should ask what conditions remain and what evidence will establish readiness, while the buyer remains responsible for truthful, timely documentation and decisions.",
+      "before": "La aprobación de préstamos es un proceso con condiciones definidas. La precalificación, la preaprobación, la aprobación de la suscripción, la satisfacción de las condiciones, la autorización de cierre y la financiación no son sinónimos. La terminología del prestamista debe ser aclarada para el archivo real. El agente debe preguntar qué condiciones quedan y qué pruebas determinarán la disponibilidad, mientras que el comprador sigue siendo responsable de la documentación veraz y oportuna y las decisiones.",
+      "after": "La aprobación de un préstamo es un proceso con condiciones definidas. Precalificación, preaprobación, aprobación crediticia, cumplimiento de condiciones, autorización de cierre y desembolso no son sinónimos. Debe aclararse la terminología que utiliza el prestamista en ese expediente. El agente pregunta qué requisitos quedan y qué pruebas acreditarán que puede cerrarse; el comprador sigue siendo responsable de aportar documentación veraz y oportuna y de tomar decisiones.",
+      "source_sha256": "877cec6f50fef4e55942a8ffd7161ef7685d27823b6f5124b76b440cacb688ab",
+      "target_sha256": "962ad5f4f9e9caa68b85efc02211bdd653789ce593895857485213c46ce9adb6"
+    },
+    {
+      "course_id": "tx-law-of-contracts-30",
+      "source": "The appraisal is an opinion prepared for its defined purpose and intended use. It does not replace a home inspection or guarantee future resale value. Current appraisal delivery requirements can change, including the 2026 UAD transition identified by Fannie Mae. The lender determines whether the submitted appraisal meets the applicable loan requirements. The agent can provide accurate property information and comparable-sale information through permitted channels without pressuring an appraiser to reach a desired value.",
+      "before": "La evaluación es un dictamen preparado para su finalidad definida y su uso previsto. No sustituye una inspección nacional ni garantiza un valor de reventa futuro. Los requisitos actuales de la entrega de la evaluación pueden cambiar, incluyendo la transición de 2026 UAD identificada por Fannie Mae. El prestamista determina si la evaluación presentada cumple los requisitos de préstamo aplicables. El agente puede proporcionar información precisa sobre propiedades e información comparable de venta a través de canales permitidos sin presionar a un tasador para que alcance el valor deseado.",
+      "after": "La tasación es una opinión preparada para una finalidad y un uso definidos. No sustituye la inspección de la vivienda ni garantiza su valor futuro de reventa. Los requisitos de entrega pueden cambiar, incluida la transición UAD de 2026 señalada por Fannie Mae. El prestamista determina si la tasación presentada cumple los requisitos del préstamo. El agente puede aportar información exacta del inmueble y de ventas comparables por los canales permitidos, sin presionar al tasador para obtener un valor deseado.",
+      "source_sha256": "8967cd2219c44226071659c5a3756c9d0cc30a82104f7110bd116f1eb7c4b0c4",
+      "target_sha256": "d8cb3d17ef2940320d8b21bbdd4a0ad3c034248e0d34aed8538dddd6d4c4aea6"
+    },
+    {
+      "course_id": "tx-law-of-contracts-30",
+      "source": "\"protected from unnecessarily high settlement charges caused by certain abusive practices.\"",
+      "before": "\"protegido de cargos de liquidación innecesariamente altos causados por ciertas prácticas abusivas.\"",
+      "after": "«protegidos frente a cargos de cierre innecesariamente altos causados por determinadas prácticas abusivas».",
+      "source_sha256": "01f6d37a70ec77f413e610b6070dfe355add64e96752d66fb2a8226c70a3343a",
+      "target_sha256": "3449e365096402538694559a07ae1e13dfee6da9cbcbef8f5620ecadb282a869"
+    },
+    {
+      "course_id": "tx-law-of-contracts-30",
+      "source": "\"provided with greater and more timely information on the nature and costs of the settlement process\"",
+      "before": "\"proporcionó mayor y más oportuna información sobre la naturaleza y los costos del proceso de liquidación\"",
+      "after": "«reciban información más amplia y oportuna sobre la naturaleza y los costos del proceso de cierre»",
+      "source_sha256": "375683f2863a7933ec1756a286f69ea1792f7db50a9c7cc32cb9d5cf83b360f7",
+      "target_sha256": "9a6c750b2483572e3f40984f463d5e585c922a439a3f9095730ab6b29acebdd9"
+    },
+    {
+      "course_id": "tx-law-of-contracts-30",
+      "source": "RESPA addresses specified residential settlement processes and prohibits particular referral and unearned-fee practices. Coverage and exemptions matter. Integrated mortgage disclosures also involve TILA and Regulation Z; a modern Closing Disclosure should not be described as simply the old HUD-1 with a new title. Identify the actual loan and disclosure regime.",
+      "before": "La RESPA se ocupa de determinados procesos de asentamiento residencial y prohíbe determinadas prácticas de remisión y pago de honorarios. La cobertura y las exenciones importan. Las revelaciones hipotecarias integradas también implican TILA y el Reglamento Z; una Divulgación de Cierre moderna no debe describirse como simplemente el viejo HUD-1 con un nuevo título. Identificar el régimen real de préstamo y divulgación.",
+      "after": "RESPA regula determinados procesos de cierre residencial y prohíbe ciertas prácticas de pago por remisiones y honorarios no devengados. Importan su ámbito de aplicación y sus exenciones. Las divulgaciones hipotecarias integradas también se rigen por TILA y el Reglamento Z: una Divulgación de Cierre moderna no es simplemente el antiguo HUD-1 con otro nombre. Identifique el préstamo y el régimen de divulgación realmente aplicables.",
+      "source_sha256": "8d7639ad16f4f3e3cf616e58d4ef099ff750a97f950e2e392c2ed18b6090aa31",
+      "target_sha256": "a7461e105f0604eca15a0ea2fb51229eab746297f1606aed4f22e9644a48d7cf"
+    },
+    {
+      "course_id": "tx-law-of-contracts-30",
+      "source": "Section 2601's findings name the market the Act polices — consumers entering",
+      "before": "Las conclusiones del artículo 2601 nombran al mercado las políticas de la Ley — consumidores que entran en",
+      "after": "Las conclusiones del artículo 2601 identifican el mercado regulado por la Ley: consumidores que contratan",
+      "source_sha256": "e19137f50ca1cbcb31526c997473ce63d436e3a6712c0c66d1a9a84b392a5d00",
+      "target_sha256": "136cb2271e655182448e670ed5918cd03b62f5c1e8a3eed73a0ce8a9f181ec1c"
+    },
+    {
+      "course_id": "tx-law-of-contracts-30",
+      "source": "The Real Estate Settlement Procedures Act governs settlements involving",
+      "before": "La Ley de procedimientos de liquidación de bienes inmuebles regula los acuerdos que",
+      "after": "La Ley de Procedimientos de Liquidación de Bienes Inmuebles regula los cierres que incluyen",
+      "source_sha256": "ac3295df8b2842a9f8f8e65ac7745b511072a4ec015fa134186cf70ec7be6adf",
+      "target_sha256": "713a5d9fdef5465bd3c7a72a16caa3491036fdca59341e87fc84992044be7db9"
+    },
+    {
+      "course_id": "tx-law-of-contracts-30",
+      "source": "Use the current",
+      "before": "Usar la corriente",
+      "after": "Consulte las versiones vigentes de",
+      "source_sha256": "7bdcee19c04a79185e4004f2d2db79414d09a22e2c73f90df877f0d79615a034",
+      "target_sha256": "c1f68d6a9fb8d44f2692e8c00180034c7efb124c145e78399e3b6fc512850650"
+    },
+    {
+      "course_id": "tx-law-of-contracts-30",
+      "source": "and are",
+      "before": "y son",
+      "after": "y estén",
+      "source_sha256": "ea0b16ddac737b56cbfdda497c5f0b8e5ed73b3bc78f2c23e1ee6fa883d9b8fb",
+      "target_sha256": "657d4a737dc30a9e1bc1f4d3f10034b97ede8835153e4ba95a780ab09422d090"
+    },
+    {
+      "course_id": "tx-law-of-contracts-30",
+      "source": "— and the practical perimeter follows: the machinery of this unit attaches to the financed one-to-four family residential transaction, the same territory Texas's own consumer perimeter (Finance Code § 343.001) and the promulgated forms serve. Transactions outside it — the all-cash purchase, the true commercial deal — close under the same Texas escrow customs but without RESPA's federal disclosures attached. A licence holder does not adjudicate coverage; a licence holder notices the pattern: where a consumer, a dwelling and an institutional loan meet, assume the federal regime is in the room.",
+      "before": "— y el perímetro práctico sigue: la maquinaria de esta unidad se une a la transacción residencial familiar financiada de uno a cuatro, el perímetro de consumo propio del mismo territorio de Texas (Código Financiero § 343.001) y los formularios promulgados sirven. Las transacciones fuera de ella —la compra en efectivo, el verdadero acuerdo comercial— cierran bajo la misma aduana de fideicomiso de Texas, pero sin las revelaciones federales de RESPA adjuntas. El titular de la licencia no se ocupa de la cobertura; el titular de la licencia se da cuenta del patrón: cuando un consumidor, una vivienda y un préstamo institucional se reúnen, asumen que el régimen federal está en la sala.",
+      "after": "— de ahí su ámbito práctico: operaciones residenciales financiadas de una a cuatro viviendas, el mismo ámbito atendido por las normas de consumo de Texas (Código Financiero § 343.001) y los formularios promulgados. Las operaciones fuera de ese ámbito —compras íntegramente en efectivo u operaciones verdaderamente comerciales— siguen las mismas prácticas de escrow de Texas, pero sin las divulgaciones federales de RESPA. El titular de licencia no decide jurídicamente el ámbito de aplicación; reconoce que, cuando concurren un consumidor, una vivienda y financiación institucional, debe contar con la presencia del régimen federal.",
+      "source_sha256": "2f5f727d8e58facca0885e28959a72c53ad3ac1709362fe7635ff98f062b8fe8",
+      "target_sha256": "b38a3568cd095137094a85d397c58094419fd64a4219727391b686b7fb6830bc"
+    },
+    {
+      "course_id": "tx-law-of-contracts-30",
+      "source": "— which, in practice, means most institutionally financed one-to-four family residential transactions. Its declared purpose, from the text read for this course (12 U.S.C. § 2601): reforms so that consumers are",
+      "before": "— que, en la práctica, significa la mayor parte de las transacciones residenciales familiares financiadas institucionalmente. Su propósito declarado, del texto leído para este curso (12 U.S.C. § 2601): reformas para que los consumidores son",
+      "after": "— en la práctica, la mayoría de las operaciones residenciales de una a cuatro viviendas financiadas por entidades. Su objetivo declarado en el texto consultado para este curso (12 U.S.C. § 2601) es promover reformas para que los consumidores",
+      "source_sha256": "d3b2ed53a0a9571ce576058774220d8dee1c6d563c726aac89269d1692be67c3",
+      "target_sha256": "a3d76c02633b59b32d6cbeab053c5560a51f844853ec96f0771d9e7d2bd78ed3"
+    },
+    {
+      "course_id": "tx-law-of-contracts-30",
+      "source": "A final walkthrough is also distinct from an inspection. It can help confirm the property’s condition, included items, occupancy, and completion of agreed work immediately before closing. It does not necessarily waive or replace other rights or inspections. If a discrepancy appears, involve the broker and appropriate participants before closing and obtain legal advice where needed. Do not resolve a material issue by promising an undocumented post-closing fix.",
+      "before": "Una guía final también es distinta de una inspección. Puede ayudar a confirmar la condición de la propiedad, incluidos los artículos, la ocupación y la finalización de los trabajos acordados inmediatamente antes de cerrar. No renuncia necesariamente a otros derechos o inspecciones ni los reemplaza. Si aparece una discrepancia, involucrar al intermediario y a los participantes apropiados antes de cerrar y obtener asesoramiento legal cuando sea necesario. No resuelva un problema material prometiendo una solución de post-cierre indocumentada.",
+      "after": "El recorrido final también es distinto de una inspección. Puede ayudar a confirmar el estado de la propiedad, los elementos incluidos, la ocupación y la finalización de los trabajos acordados inmediatamente antes del cierre. No implica necesariamente una renuncia a otros derechos ni sustituye otras inspecciones. Si aparece una discrepancia, involucre al corredor y a los participantes apropiados antes del cierre y obtenga asesoramiento jurídico cuando sea necesario. No resuelva un problema importante prometiendo una reparación posterior al cierre que no quede documentada.",
+      "source_sha256": "ea98ebfe14e25ebc0ea9859e1ba10200bc6b1d5b96d1d8de6e21a7db388ccb9e",
+      "target_sha256": "35b83c9676127ec05fa59f99bd54d0182dca5d3b52342e8488763ceb04e2aeef"
+    },
+    {
+      "course_id": "tx-law-of-contracts-30",
+      "source": "In a worked inspection, the report notes foundation movement and recommends an engineer. The buyer’s option ends tomorrow. The agent should promptly notify the buyer, identify the report’s recommendation, coordinate available professional help, and clarify whether an extension has actually been agreed. The agent should not tell the buyer the condition is normal for the area as a substitute for evaluation or promise that a request for more time is already effective.",
+      "before": "En una inspección realizada, el informe señala el movimiento de la fundación y recomienda un ingeniero. La opción del comprador termina mañana. El agente debe notificar sin demora al comprador, identificar la recomendación del informe, coordinar la ayuda profesional disponible y aclarar si se ha acordado realmente una prórroga. El agente no debe decirle al comprador que la condición es normal para la zona como un sustituto de la evaluación o la promesa de que una solicitud de más tiempo ya es eficaz.",
+      "after": "En un ejemplo de inspección, el informe señala movimiento de los cimientos y recomienda consultar a un ingeniero. El período de opción del comprador termina mañana. El agente debe avisar cuanto antes al comprador, señalar la recomendación del informe, coordinar la asistencia profesional disponible y aclarar si realmente se ha acordado una prórroga. No debe sustituir la evaluación afirmando que la situación es normal en la zona ni prometer que una solicitud de más tiempo ya ha surtido efecto.",
+      "source_sha256": "577a725d6a3f1c2dde4808bfd74f05db6d1eb8ea859bb90b2636bef25219374e",
+      "target_sha256": "8bd1da703ac0faaf70c1425b040ab77f2084ca669ab0518db7045d0a17012503"
+    },
+    {
+      "course_id": "tx-law-of-contracts-30",
+      "source": "Inspections supply information for the buyer’s decisions. The scope, professional qualifications, engagement terms, timing, and limitations matter. A general home inspection is not a warranty and may recommend further evaluation by an engineer, roofer, electrician, pest professional, or other specialist. A lender’s appraisal is a different service with a different purpose.",
+      "before": "Las inspecciones proporcionan información para las decisiones del comprador. El alcance, las calificaciones profesionales, los términos de compromiso, el calendario y las limitaciones importan. Una inspección general del hogar no es una garantía y puede recomendar una evaluación adicional por parte de un ingeniero, techador, electricista, profesional de plagas u otro especialista. La evaluación de un prestamista es un servicio diferente con un propósito diferente.",
+      "after": "Las inspecciones proporcionan información para las decisiones del comprador. Importan el alcance, las cualificaciones profesionales, las condiciones de contratación, los plazos y las limitaciones. Una inspección general de la vivienda no es una garantía y puede recomendar una evaluación adicional por un ingeniero, un especialista en techos, un electricista, un profesional de control de plagas u otro especialista. La tasación solicitada por el prestamista es un servicio distinto con una finalidad diferente.",
+      "source_sha256": "d02e89e9037e0241590cb0906e995bb263d0d891098b794653622c1976d8dd65",
+      "target_sha256": "05d8aa8441e352cd4569f20a882dd4fdd5db762419686afc1089c4b55b935c29"
+    },
+    {
+      "course_id": "tx-law-of-contracts-30",
+      "source": "Read the report as information, not as a list of automatic seller obligations. The seller owes repairs only as required by the contract, applicable law, or a later proper agreement. The buyer may negotiate a repair, price change, credit, further investigation, or other lawful choice. An agent should not say the seller “must fix everything the inspector marks” unless the actual obligation supports it.",
+      "before": "Lea el informe como información, no como una lista de obligaciones de vendedor automático. El vendedor debe las reparaciones sólo como lo exige el contrato, la ley aplicable, o un acuerdo posterior adecuado. El comprador puede negociar una reparación, cambio de precio, crédito, investigación ulterior, u otra opción legal. Un agente no debe decir que el vendedor “debe arreglar todo lo que marca el inspector” a menos que la obligación real lo respalde.",
+      "after": "Lea el informe como información, no como una lista de obligaciones que surgen automáticamente para el vendedor. El vendedor solo está obligado a realizar las reparaciones exigidas por el contrato, la ley aplicable o un acuerdo posterior debidamente celebrado. El comprador puede negociar una reparación, un cambio de precio, un crédito, una investigación adicional u otra opción lícita. El agente no debe afirmar que el vendedor «tiene que reparar todo lo que señale el inspector», salvo que exista una obligación que lo exija.",
+      "source_sha256": "305a8066140d58fe13030ffb363f20c755a6dbe384e9e38f26a301adfe75bb07",
+      "target_sha256": "debb2d6866d0d1bc90d4d458e6ae16960b88de0363286d94734d492f8377fde3"
+    },
+    {
+      "course_id": "tx-law-of-contracts-30",
+      "source": "Record the difference between a report, a request, an agreement, and completed performance. These four documents or events can concern the same appliance but have different legal significance. A report may identify a defect; a request proposes a response; an amendment records the accepted duty; a receipt or professional confirmation supplies evidence of completion. Keeping them separate prevents a negotiation from being mistaken for an obligation or a promise from being mistaken for performance.",
+      "before": "Registra la diferencia entre un informe, una solicitud, un acuerdo y el rendimiento completado. Estos cuatro documentos o eventos pueden afectar al mismo aparato, pero tienen diferente significado legal. Un informe puede identificar un defecto; una solicitud propone una respuesta; una enmienda registra el deber aceptado; un recibo o confirmación profesional proporciona pruebas de la finalización. Mantenerlas separadas impide que una negociación se confunda con una obligación o una promesa que se confunda con la ejecución.",
+      "after": "Registre la diferencia entre un informe, una solicitud, un acuerdo y el cumplimiento efectivo. Estos cuatro documentos o acontecimientos pueden referirse al mismo aparato, pero tienen distinto significado jurídico. Un informe puede identificar un defecto; una solicitud propone una respuesta; una enmienda documenta la obligación aceptada; un recibo o una confirmación profesional aporta pruebas de su cumplimiento. Mantener estas diferencias evita confundir una negociación con una obligación o una promesa con su cumplimiento.",
+      "source_sha256": "497c9502e1bf229673139d762b21f24f261fc5158f02d1ccea8164c234863c98",
+      "target_sha256": "d73a9c320ddd2189ec932ea862f0b7a7442c736b55f87072c077e56277c58541"
+    },
+    {
+      "course_id": "tx-law-of-contracts-30",
+      "source": "Suppose the general inspector notes movement and recommends evaluation by an appropriate foundation professional. The agent should not reduce that recommendation to a cosmetic issue because similar houses have settled. Nor should the agent announce that the property is structurally unsound without a qualified basis. Deliver the report, identify the recommendation, help the buyer arrange the chosen evaluation, and keep the relevant contractual decision period visible.",
+      "before": "Supongamos que el inspector general toma nota del movimiento y recomienda la evaluación por un profesional de la fundación apropiado. El agente no debe reducir esa recomendación a un problema cosmético porque casas similares se han asentado. Tampoco debe el agente anunciar que la propiedad es estructuralmente insondable sin una base calificada. Entregar el informe, identificar la recomendación, ayudar al comprador a organizar la evaluación elegida, y mantener el período de decisión contractual pertinente visible.",
+      "after": "Suponga que el inspector general observa movimiento y recomienda una evaluación por un profesional especializado en cimientos. El agente no debe reducir esa recomendación a un problema estético porque otras casas similares se hayan asentado. Tampoco debe afirmar que la estructura de la propiedad es insegura sin una base profesional cualificada. Entregue el informe, señale la recomendación, ayude al comprador a organizar la evaluación elegida y mantenga presente el plazo contractual pertinente para decidir.",
+      "source_sha256": "cbe9090c68ed942a67a49b029b067cf3a36b3c40f9ec79478ccbe76bdd56006d",
+      "target_sha256": "7144f45382129b5b6e0922461d8c2af5903bb78f16c6ae1a1ab9d4231a27823b"
+    },
+    {
+      "course_id": "tx-law-of-contracts-30",
+      "source": "A third file involves an out-of-state seller signing under a power of attorney. Arrange review before the closing appointment. The document’s validity, scope, continued effectiveness, and acceptance for the transaction can require legal analysis. A notary’s availability does not answer those questions. If the authority is insufficient or unavailable, the parties may need different execution arrangements and a realistic schedule.",
+      "before": "Un tercer archivo involucra a un vendedor fuera del estado firmando bajo un poder notarial. Organizar la revisión antes de la cita de cierre. La validez, el alcance, la eficacia continua y la aceptación del documento para la transacción pueden requerir un análisis jurídico. La disponibilidad de un notario no responde a esas preguntas. Si la autoridad es insuficiente o no está disponible, las partes pueden necesitar diferentes arreglos de ejecución y un calendario realista.",
+      "after": "Un tercer expediente involucra a un vendedor ubicado fuera del estado que firma mediante un apoderado. Organice la revisión antes de la cita de cierre. La validez, el alcance, la vigencia y la aceptación del poder para la transacción pueden requerir análisis jurídico. La disponibilidad de un notario no resuelve esas cuestiones. Si las facultades son insuficientes o no pueden acreditarse, las partes pueden necesitar otras disposiciones para la firma y un calendario realista.",
+      "source_sha256": "2cd98404580ebc02c25054a16208e1b345bb696ab5212cbf6c397ea9b68f7f70",
+      "target_sha256": "3ac0398fe837efa4c943f3e46f53a2c23d389a9c23ca0265f65f4a2f3573d53e"
+    },
+    {
+      "course_id": "tx-law-of-contracts-30",
+      "source": "Another file contains a prior lien that the seller believes was paid years ago. Payment history and a recorded release are related but distinct evidence. The title company may require documentation or a curative process before removing the exception or satisfying the requirement. The agent should not assure the buyer that the lien can be ignored because the seller remembers paying it. Identify the creditor, available records, and appropriate legal or title steps early.",
+      "before": "Otro archivo contiene un gravamen previo que el vendedor cree que fue pagado hace años. El historial de pagos y una liberación registrada son pruebas relacionadas pero distintas. La sociedad de titularidad puede requerir documentación o un proceso curativo antes de eliminar la excepción o satisfacer el requisito. El agente no debe asegurar al comprador que el embargo puede ser ignorado porque el vendedor recuerda pagarlo. Identifique con antelación al acreedor, los registros disponibles y los pasos legales o de titularidad apropiados.",
+      "after": "Otro expediente contiene un gravamen anterior cuya deuda, según el vendedor, se pagó hace años. El historial de pagos y una cancelación inscrita son pruebas relacionadas, pero distintas. La compañía de títulos puede exigir documentación o un procedimiento de subsanación antes de eliminar la excepción o dar por cumplido el requisito. El agente no debe asegurar al comprador que puede ignorarse el gravamen porque el vendedor recuerde haber pagado la deuda. Identifique con antelación al acreedor, los registros disponibles y los pasos jurídicos o relativos al título que correspondan.",
+      "source_sha256": "9c79f5ed1dbecd42a09d89161cc42aa8209c060d40b55225ab459ce7014a59a8",
+      "target_sha256": "5a215f2dc227241470f4d34a45fc1d40903db8ad5b54391530d8d0c55efb2fab"
+    },
+    {
+      "course_id": "tx-law-of-contracts-30",
+      "source": "For example, the seller provides a mortgage statement showing the current monthly balance. The closing officer still requests an official payoff. The two documents serve different purposes. A payoff may account for accrued interest, fees, timing, and the creditor’s release process. The agent should help obtain the requested document through authorized channels and should not substitute the monthly statement simply because it shows a number that looks close.",
+      "before": "Por ejemplo, el vendedor proporciona un estado de la hipoteca que muestra el saldo mensual actual. El oficial de cierre todavía pide una recompensa oficial. Los dos documentos tienen diferentes propósitos. Una compensación puede tener en cuenta los intereses devengados, los honorarios, el momento y el proceso de liberación del acreedor. El agente debe ayudar a obtener el documento solicitado a través de canales autorizados y no debe sustituir la declaración mensual simplemente porque muestra un número que se ve cerca.",
+      "after": "Por ejemplo, el vendedor entrega un estado de cuenta hipotecario que muestra el saldo mensual actual. El encargado del cierre sigue solicitando una declaración oficial del importe de liquidación. Los dos documentos tienen finalidades diferentes. El importe de liquidación puede incluir intereses devengados, cargos, fechas y el proceso de cancelación del gravamen por el acreedor. El agente debe ayudar a obtener el documento solicitado por los canales autorizados y no sustituirlo por el estado de cuenta mensual solo porque muestre una cifra parecida.",
+      "source_sha256": "444823cdc05ffb37235465ac3b8e386e217baa18c50b5cb1b4c6f575afc5bc7d",
+      "target_sha256": "15f28b85b350074bfdcb8dfdc904924fd598f856690a7aa1470d02297de87743"
+    },
+    {
+      "course_id": "tx-law-of-contracts-30",
+      "source": "T10U6 — Title Work",
+      "before": "T10U6 — Título",
+      "after": "T10U6 — Examen y tramitación del título",
+      "source_sha256": "a9c5be74fda1605795b1ecafe691f5045f33d9776376d95a20e13f92dc971bf9",
+      "target_sha256": "8e9910de64b857feff518d9af98a50271716d01872e5497bc3d5ee0f77f68344"
+    },
+    {
+      "course_id": "tx-law-of-contracts-30",
+      "source": "The contract governs delivery, objection, cure, and related choices. A buyer who wants to object should obtain timely advice and follow the actual requirements. The agent should not decide that an exception is acceptable merely because it is common or that an objection is legally effective because an email was sent. The objection’s subject, specificity, timing, recipient, and contractual basis matter.",
+      "before": "El contrato rige la entrega, la objeción, la cura y las opciones relacionadas. Un comprador que quiera oponerse debe obtener asesoramiento oportuno y seguir los requisitos reales. El agente no debe decidir que una excepción es aceptable simplemente porque es común o que una objeción es legalmente efectiva porque un correo electrónico fue enviado. El tema de la objeción, la especificidad, el momento, el destinatario y la base contractual.",
+      "after": "El contrato rige la entrega, las objeciones, la subsanación y las opciones relacionadas. Un comprador que quiera formular una objeción debe obtener asesoramiento oportuno y cumplir los requisitos aplicables. El agente no debe decidir que una excepción es aceptable solo porque sea habitual ni que una objeción es jurídicamente eficaz solo porque se haya enviado un correo electrónico. Importan el objeto, la precisión, el plazo, el destinatario y el fundamento contractual de la objeción.",
+      "source_sha256": "4180d2836e43cbacfdf4ea929b46ea8b392cfa830ca6c71e08bdc67196497b85",
+      "target_sha256": "5163f91d4882f7fd9c51696d1ec31c86a77bddd383ec65e5d4eec3fcbd69b091"
+    },
+    {
+      "course_id": "tx-law-of-contracts-30",
+      "source": "The title company does not replace every professional. Tax consequences, contract disputes, unusual reservations, and the buyer’s business-use plans can require separate counsel or specialists. The agent’s coordination should help the client reach the correct person while maintaining the contractual calendar. “Title is handling it” is inadequate if nobody can identify the actual issue and next step.",
+      "before": "La compañía titular no sustituye a todos los profesionales. Las consecuencias fiscales, las disputas contractuales, las reservas inusuales y los planes de uso comercial del comprador pueden requerir un abogado o especialistas separados. La coordinación del agente debe ayudar al cliente a llegar a la persona correcta mientras mantiene el calendario contractual. “Título es manejarlo” es inadecuado si nadie puede identificar el problema real y el siguiente paso.",
+      "after": "La compañía de títulos no sustituye a todos los profesionales. Las consecuencias fiscales, las controversias contractuales, las reservas inusuales y los planes del comprador para usar el inmueble con fines comerciales pueden requerir asesoramiento jurídico o especialistas independientes. La coordinación del agente debe ayudar al cliente a contactar con la persona adecuada y a respetar el calendario contractual. Decir «la compañía de títulos se está encargando» es insuficiente si nadie puede identificar el problema concreto y el siguiente paso.",
+      "source_sha256": "c4f3b40004b44a18ffaad6488e82f8e02a85a7c31da868a3065ac5c8eef30223",
+      "target_sha256": "2258e4401e9807951029cdc24ba6c6c3abd0b39e753fc6a78888beee4c9bd2e2"
+    },
+    {
+      "course_id": "tx-law-of-contracts-30",
+      "source": "These examples show why title work belongs throughout the transaction, not only on the last day. The agent’s role is to recognize a pending requirement, preserve the relevant information, coordinate the responsible participant, and keep the client informed. The title professional and counsel make the determinations within their roles. An administrative checklist should expose legal dependencies without pretending to decide them.",
+      "before": "Estos ejemplos muestran por qué el trabajo de título pertenece a lo largo de la transacción, no sólo en el último día. El papel del agente es reconocer un requisito pendiente, preservar la información relevante, coordinar al participante responsable y mantener informado al cliente. El título profesional y el abogado hacen las determinaciones dentro de sus funciones. Una lista de verificación administrativa debe exponer las dependencias legales sin pretender decidirlas.",
+      "after": "Estos ejemplos muestran por qué el examen y la tramitación del título deben realizarse durante toda la transacción, no solo el último día. El agente debe reconocer los requisitos pendientes, conservar la información pertinente, coordinar a la persona responsable y mantener informado al cliente. El profesional de títulos y el abogado toman las decisiones que corresponden a sus respectivas funciones. Una lista de comprobación administrativa debe mostrar qué pasos dependen de cuestiones jurídicas sin pretender resolverlas.",
+      "source_sha256": "250ccda3bd753a012053fad37c9f4eca30cd9957cafa70c75ce3da74f12d44e7",
+      "target_sha256": "647aefd9cc58e41399d99d1015f038268c5008e6aca790d33d338f11b30a585c"
+    },
+    {
+      "course_id": "tx-law-of-contracts-30",
+      "source": "Title requirements can seem administrative because they arrive as a list, but each requirement addresses an identified obstacle or condition to the proposed transaction. A payoff request concerns discharge of debt. An authority document concerns the power to convey. A marital-status inquiry can concern rights affecting execution or homestead. A correction instrument can concern a defect in an earlier record. Ask what is required and who is responsible rather than assuming every item is a routine formality.",
+      "before": "Los requisitos de título pueden parecer administrativos porque llegan como una lista, pero cada requisito se refiere a un obstáculo o condición identificado para la transacción propuesta. Una solicitud de pago se refiere a la liquidación de la deuda. Un documento de autoridad se refiere al poder de transmitir. Una investigación sobre el estado civil puede referirse a los derechos que afectan a la ejecución o a la vivienda. Un instrumento de corrección puede referirse a un defecto en un registro anterior. Pregunte qué se requiere y quién es responsable en lugar de asumir que cada elemento es una formalidad de rutina.",
+      "after": "Los requisitos relativos al título pueden parecer administrativos porque llegan en forma de lista, pero cada uno aborda un obstáculo o una condición identificada para la transacción propuesta. Una solicitud de liquidación se refiere a la extinción de una deuda. Un documento que acredita facultades se refiere al poder de transmitir. Una consulta sobre el estado civil puede referirse a derechos que afectan a la firma o a la vivienda familiar protegida (homestead). Un instrumento de corrección puede referirse a un defecto en un asiento anterior. Pregunte qué se necesita y quién es responsable, en vez de suponer que todo es una formalidad rutinaria.",
+      "source_sha256": "c5856e006d3a8864102663889025462897b0894c0571ce24d671f564d725706b",
+      "target_sha256": "fa78a2e4a69c693489c18707af2525292a618ab094c23d81b6840a66282cb642"
+    },
+    {
+      "course_id": "tx-law-of-contracts-30",
+      "source": "Title work identifies the interests, requirements, exceptions, and insurance conditions relevant to the transaction. The title company’s request for documents is not an inconvenience to be postponed until closing day; it is evidence of what must be resolved for the proposed conveyance and coverage. Obtain and deliver materials promptly and keep the buyer’s contractual review period distinct from the title company’s production process.",
+      "before": "El trabajo del título identifica los intereses, requisitos, excepciones y condiciones de seguro relevantes para la transacción. La solicitud de documentos de la sociedad titular no es un inconveniente que se posponga hasta el día de cierre; es una prueba de lo que debe ser resuelto para el traspaso propuesto y la cobertura. Obtener y entregar materiales rápidamente y mantener el período de revisión contractual del comprador distinto del proceso de producción de la empresa titular.",
+      "after": "El examen y la tramitación del título identifican los derechos, requisitos, excepciones y condiciones del seguro pertinentes para la transacción. Una solicitud de documentos de la compañía de títulos no es una molestia que deba posponerse hasta el cierre: indica lo que debe resolverse para la transmisión y la cobertura propuestas. Obtenga y entregue los documentos con prontitud y distinga el plazo de revisión contractual del comprador del proceso de preparación de documentos de la compañía de títulos.",
+      "source_sha256": "08b659dc2c0912ed94d2e1475dd6ed1c3c77ee76c1d6934f7c491eb21e523211",
+      "target_sha256": "68eac559500891f43a7e75797de5837377695ef8ac8b1468787e5c35fe3eb69c"
+    }
+  ],
+  "reviewed_contexts": [],
+  "reviewed_sections": [
+    {
+      "course_id": "tx-law-of-contracts-30",
+      "lesson": "module-10",
+      "section_index": 0
+    },
+    {
+      "course_id": "tx-law-of-contracts-30",
+      "lesson": "module-10",
+      "section_index": 1
+    },
+    {
+      "course_id": "tx-law-of-contracts-30",
+      "lesson": "module-10",
+      "section_index": 2
+    },
+    {
+      "course_id": "tx-law-of-contracts-30",
+      "lesson": "module-10",
+      "section_index": 3
+    },
+    {
+      "course_id": "tx-law-of-contracts-30",
+      "lesson": "module-10",
+      "section_index": 4
+    },
+    {
+      "course_id": "tx-law-of-contracts-30",
+      "lesson": "module-10",
+      "section_index": 5
+    },
+    {
+      "course_id": "tx-law-of-contracts-30",
+      "lesson": "module-10",
+      "section_index": 6
+    }
+  ],
+  "course_id": "tx-law-of-contracts-30"
+}

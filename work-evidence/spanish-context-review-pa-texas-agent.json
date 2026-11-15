@@ -1,0 +1,840 @@
+{
+  "scope": "24PAshortfragmentparents;fullsourceandSpanishrenderdirectlyread",
+  "parent_count": 24,
+  "map_count": 24,
+  "runtime_verification": "PASS: executed actual current practice-locale DOM rendering over both PA courses; all24parent targets inspected after integration. All83contextual corrections observed; emphasis retained. Minor source-node punctuation spacing remains cosmetic.",
+  "human_sme_review": "OPEN",
+  "changes": [
+    {
+      "course": "pa-real-estate-fundamentals-30",
+      "parent_source_sha256": "7f0aede0a8b05468cbd1508291aa865e6973a05be1162d63a6e5c63e68a3d773",
+      "source": "A",
+      "before": "A",
+      "after": "Un",
+      "source_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "before_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "after_sha256": "d32a504100ef4cab53bfffd51fd31139aaf6c5ea5867074623c4a21b6466a7d7"
+    },
+    {
+      "course": "pa-real-estate-fundamentals-30",
+      "parent_source_sha256": "7f0aede0a8b05468cbd1508291aa865e6973a05be1162d63a6e5c63e68a3d773",
+      "source": "and",
+      "before": "y",
+      "after": "y deberá",
+      "source_sha256": "6201111b83a0cb5b0922cb37cc442b9a40e24e3b1ce100a4bb204f4c63fd2ac0",
+      "before_sha256": "a1fce4363854ff888cff4b8e7875d600c2682390412a8cf79b37d0b11148b0fa",
+      "after_sha256": "f9f16fc891f02ab3f0749fa17f408291478d2dad154a4bbfc1669cebbe911b55"
+    },
+    {
+      "course": "pa-real-estate-fundamentals-30",
+      "parent_source_sha256": "7f0aede0a8b05468cbd1508291aa865e6973a05be1162d63a6e5c63e68a3d773",
+      "source": ", main and branch.",
+      "before": ", principal y rama.",
+      "after": ", tanto la principal como las sucursales.",
+      "source_sha256": "ee2fd1f27be15b25db6b0a2c5abc28cff08b1f5a7a1a12562b4d990578a94be3",
+      "before_sha256": "b50c3d452e5ddf34be65c2285f23c57f886f293e040f39759ea073b2b8a3ed68",
+      "after_sha256": "810d7482642572ab279ff659f5dafeb78d55cb803541fa2701775ccd5a07ca3f"
+    },
+    {
+      "course": "pa-real-estate-fundamentals-30",
+      "parent_source_sha256": "7f0aede0a8b05468cbd1508291aa865e6973a05be1162d63a6e5c63e68a3d773",
+      "source": ", provided by the Commission,",
+      "before": ", facilitada por la Comisión,",
+      "after": ", proporcionado por la Comisión,",
+      "source_sha256": "2f7117ac8d1d0ba2ba7b6f7e771d8f0ccafac7bcac6369723ec4ae8803abadaf",
+      "before_sha256": "cb0e508eb587a7dac51647c7bbffbbe3d488ab266d7e7e258b3c764bbb571d5b",
+      "after_sha256": "d001fc50dba1096cc0584e02b6ac2b9910f676cd835199215ee6d999e737f5cc"
+    },
+    {
+      "course": "pa-real-estate-fundamentals-30",
+      "parent_source_sha256": "2d4a099632d93ce6bc644cde498cf7c9f4aaee3894ee032a0a12974dfea9ca19",
+      "source": "A",
+      "before": "A",
+      "after": "Un",
+      "source_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "before_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "after_sha256": "d32a504100ef4cab53bfffd51fd31139aaf6c5ea5867074623c4a21b6466a7d7"
+    },
+    {
+      "course": "pa-real-estate-fundamentals-30",
+      "parent_source_sha256": "2d4a099632d93ce6bc644cde498cf7c9f4aaee3894ee032a0a12974dfea9ca19",
+      "source": "fixture",
+      "before": "accesorio",
+      "after": "elemento fijo",
+      "source_sha256": "f16d05ec6b29248d2c61adb1e9263f78e4f7bace1b955014a2d17872cfe4064d",
+      "before_sha256": "28d5888a9cf45144a0d143590847e9c14dedd5b937ab5bf9e6b42b38cbab8991",
+      "after_sha256": "032d00614f18a6a3a98a441364158f994d35590b78e8a5ab1b855a4525abf479"
+    },
+    {
+      "course": "pa-real-estate-fundamentals-30",
+      "parent_source_sha256": "2d4a099632d93ce6bc644cde498cf7c9f4aaee3894ee032a0a12974dfea9ca19",
+      "source": "is personal property that has become real property by being attached. The tests, in the order they are usually applied:",
+      "before": "es propiedad personal que se ha convertido en propiedad real por ser adjuntado. Las pruebas, en el orden en que se aplican habitualmente:",
+      "after": "es un bien mueble que se ha convertido en inmueble por su incorporación. Los criterios, en el orden en que suelen aplicarse, son:",
+      "source_sha256": "8d002f912e56141c729b831fe1301be2dfc92367bb21f1575cbd90367686b558",
+      "before_sha256": "0ecf37805b4f6ba68d1bc0538cb26a8f685d04eb4793970b6b79aa5ef68e0ae8",
+      "after_sha256": "c7c7fc9b6d4f2a08c470123972d8bce12aa158aeb10143bf9a79d9a8e2541f11"
+    },
+    {
+      "course": "pa-real-estate-fundamentals-30",
+      "parent_source_sha256": "4fb746a71a779973cf810ab71c0b12de61634ce419d34a3a3a084109bf5cb0bf",
+      "source": "A",
+      "before": "A",
+      "after": "Un",
+      "source_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "before_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "after_sha256": "d32a504100ef4cab53bfffd51fd31139aaf6c5ea5867074623c4a21b6466a7d7"
+    },
+    {
+      "course": "pa-real-estate-fundamentals-30",
+      "parent_source_sha256": "4fb746a71a779973cf810ab71c0b12de61634ce419d34a3a3a084109bf5cb0bf",
+      "source": "life estate pur autre vie",
+      "before": "life estate pur autre vie",
+      "after": "derecho vitalicio pur autre vie",
+      "source_sha256": "5745abb4cc13dea77c7b492ac6b818b63b63ecd0d03d3000b4ae5be4d75875ca",
+      "before_sha256": "5745abb4cc13dea77c7b492ac6b818b63b63ecd0d03d3000b4ae5be4d75875ca",
+      "after_sha256": "c9f8358b6a5c231d96f1d8eb8019e3ad890d9876115fe9e4af55af92e5d71d6e"
+    },
+    {
+      "course": "pa-real-estate-practice-45",
+      "parent_source_sha256": "7eed6faf6ad3b6078ea85d4578c5051bcac7c95c86a7750062454c73f957456e",
+      "source": "A",
+      "before": "A",
+      "after": "Un",
+      "source_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "before_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "after_sha256": "d32a504100ef4cab53bfffd51fd31139aaf6c5ea5867074623c4a21b6466a7d7"
+    },
+    {
+      "course": "pa-real-estate-practice-45",
+      "parent_source_sha256": "1ba1893cde1163c96cb857c0888ce23a0fed83c4967c4751d963a68e65cc547d",
+      "source": "A",
+      "before": "A",
+      "after": "Un",
+      "source_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "before_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "after_sha256": "d32a504100ef4cab53bfffd51fd31139aaf6c5ea5867074623c4a21b6466a7d7"
+    },
+    {
+      "course": "pa-real-estate-practice-45",
+      "parent_source_sha256": "fff3955fb4b37062a3f119f41552d1112c31179303e20988e86720f8404f9f23",
+      "source": "A",
+      "before": "A",
+      "after": "Un",
+      "source_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "before_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "after_sha256": "d32a504100ef4cab53bfffd51fd31139aaf6c5ea5867074623c4a21b6466a7d7"
+    },
+    {
+      "course": "pa-real-estate-practice-45",
+      "parent_source_sha256": "a811c3195a0ff950802dd9b8a394fe170f704b51ecf6bd6859b65a1458d0f7df",
+      "source": "A",
+      "before": "A",
+      "after": "Un",
+      "source_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "before_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "after_sha256": "d32a504100ef4cab53bfffd51fd31139aaf6c5ea5867074623c4a21b6466a7d7"
+    },
+    {
+      "course": "pa-real-estate-fundamentals-30",
+      "parent_source_sha256": "07ea48b266ced9e1e82c662bcb60b9968069b317a3be9935d9b24877cd2cfb39",
+      "source": "An",
+      "before": "Un",
+      "after": "Una",
+      "source_sha256": "9f98b7c7f071714517d9a5e67c135b41fa3e91f20bac108158b33b073396f6e5",
+      "before_sha256": "d32a504100ef4cab53bfffd51fd31139aaf6c5ea5867074623c4a21b6466a7d7",
+      "after_sha256": "658116fe1ac33179f388cc6cb7a4a3f59b656a301d6d710e1ac87f38cc1e5a7e"
+    },
+    {
+      "course": "pa-real-estate-fundamentals-30",
+      "parent_source_sha256": "45cef4c319bdffe82d09cd3b59dfbc81f2cef3643427cc3bee7b5ab82ce657a8",
+      "source": "An",
+      "before": "Un",
+      "after": "Una",
+      "source_sha256": "9f98b7c7f071714517d9a5e67c135b41fa3e91f20bac108158b33b073396f6e5",
+      "before_sha256": "d32a504100ef4cab53bfffd51fd31139aaf6c5ea5867074623c4a21b6466a7d7",
+      "after_sha256": "658116fe1ac33179f388cc6cb7a4a3f59b656a301d6d710e1ac87f38cc1e5a7e"
+    },
+    {
+      "course": "pa-real-estate-fundamentals-30",
+      "parent_source_sha256": "45cef4c319bdffe82d09cd3b59dfbc81f2cef3643427cc3bee7b5ab82ce657a8",
+      "source": "identifies a mailbox. A",
+      "before": "identifica un buzón. A",
+      "after": "identifica un buzón. Un",
+      "source_sha256": "e200bf7adf7ff7c1aa4858d2c08c5af5fc858052390ac4e62923d2f58fbe1594",
+      "before_sha256": "fb3a56d179fe1bd1b5759f3eccef6634f2e5bb34c9a776c7a0888a6388332814",
+      "after_sha256": "db58791783928e8db47b59f13147021a29fc574609d54bfb89b375e03b2f3061"
+    },
+    {
+      "course": "pa-real-estate-fundamentals-30",
+      "parent_source_sha256": "45cef4c319bdffe82d09cd3b59dfbc81f2cef3643427cc3bee7b5ab82ce657a8",
+      "source": "tax parcel number",
+      "before": "Número de terreno fiscal",
+      "after": "número de parcela fiscal",
+      "source_sha256": "8315a45dba6ebdd943325e7607d0854d0021f6e5d41de5dba74b84448ad28ca3",
+      "before_sha256": "fb9dcfaf75cf42a81c0f9a1a4106529454b332fd9661babebab30282374878c2",
+      "after_sha256": "b3fa6f9cafd39c3b611746baa565637d093c7b207b228bfa8af278bbf917ac3c"
+    },
+    {
+      "course": "pa-real-estate-fundamentals-30",
+      "parent_source_sha256": "45cef4c319bdffe82d09cd3b59dfbc81f2cef3643427cc3bee7b5ab82ce657a8",
+      "source": ", and neither belongs in a deed as the description.",
+      "before": ", y ninguno de los dos pertenece en una escritura como la descripción.",
+      "after": ", y ninguno sirve como descripción del terreno en una escritura.",
+      "source_sha256": "cacf043b535f620cb92e45ea56f8221b6029ff350cb9a245d481c83375311c0f",
+      "before_sha256": "d9970a27fd8b8487170dc37972adea8c53ba369a630e1edf4dcf4fdae83d1832",
+      "after_sha256": "1b1c9c2e09176c721e8e27f89a1e8b0fa6a8e73ac676478f24e602074976d928"
+    },
+    {
+      "course": "pa-real-estate-fundamentals-30",
+      "parent_source_sha256": "e29dc3290cbe9ebef205f943dd4aec0273f477a69cc30ca7ad80c17d4c046ce7",
+      "source": "An",
+      "before": "Un",
+      "after": "Una",
+      "source_sha256": "9f98b7c7f071714517d9a5e67c135b41fa3e91f20bac108158b33b073396f6e5",
+      "before_sha256": "d32a504100ef4cab53bfffd51fd31139aaf6c5ea5867074623c4a21b6466a7d7",
+      "after_sha256": "658116fe1ac33179f388cc6cb7a4a3f59b656a301d6d710e1ac87f38cc1e5a7e"
+    },
+    {
+      "course": "pa-real-estate-fundamentals-30",
+      "parent_source_sha256": "e29dc3290cbe9ebef205f943dd4aec0273f477a69cc30ca7ad80c17d4c046ce7",
+      "source": "is a manifestation of willingness to be bound on stated terms. It may be",
+      "before": "es una manifestación de voluntad de obligarse en términos establecidos. Puede ser.",
+      "after": "es una manifestación de voluntad de quedar obligado según condiciones establecidas. Puede ser",
+      "source_sha256": "45119c27cda2f98f164dd2081f3eb72b9aee6a63a0e1d86180b01f971462709d",
+      "before_sha256": "f144b6955b6a41a05e51d1c48f000c6f23bf4050394be4f36bd99b0dac2c5d62",
+      "after_sha256": "3f3d82942375c03323577ba6182dd0a69ba314fbfd45e4c490c7d8207e8d76dd"
+    },
+    {
+      "course": "pa-real-estate-fundamentals-30",
+      "parent_source_sha256": "e29dc3290cbe9ebef205f943dd4aec0273f477a69cc30ca7ad80c17d4c046ce7",
+      "source": ", unless consideration was given to hold it open — which is what an",
+      "before": ", salvo que se haya dado una contraprestación para mantenerla vigente, que es precisamente lo que constituye una",
+      "after": ", salvo que se haya dado una contraprestación para mantenerla abierta; esto es lo que constituye una",
+      "source_sha256": "dfb356cbfb9baa06d9d00bff21faf32623f843310d633c1eedc4a3a7ca5cb113",
+      "before_sha256": "6384e0dd8c5369593af7388886fc72e26fe2fbaa89b5631b678af50b47ab11a8",
+      "after_sha256": "d7190b81690939c4ce8c26081d40c0749b6c8e0054bdf4450a61be8991beb317"
+    },
+    {
+      "course": "pa-real-estate-fundamentals-30",
+      "parent_source_sha256": "e29dc3290cbe9ebef205f943dd4aec0273f477a69cc30ca7ad80c17d4c046ce7",
+      "source": "is.",
+      "before": "Lo es.",
+      "after": ".",
+      "source_sha256": "b79adc38c36bb4cd151f1e6aa7c761099ec958d651e74e361a38eed97acf883b",
+      "before_sha256": "28842712b6fa466fe57075cd3e8d7c515bfb447bbb8643d326cd62321c1675ce",
+      "after_sha256": "cdb4ee2aea69cc6a83331bbe96dc2caa9a299d21329efb0336fc02a82e1839a8"
+    },
+    {
+      "course": "pa-real-estate-fundamentals-30",
+      "parent_source_sha256": "3ec335df571f75819de8868025081aae4de763311528096a590e6f71bd5b5211",
+      "source": "The",
+      "before": "Los",
+      "after": "El",
+      "source_sha256": "b344d80e24a3679999fa964450b34bc24d1578a35509f934c1418b0a20d21a67",
+      "before_sha256": "3d6a124622df7afc17de106f5a1b2142d18919cfff019cd43254651ef7714fcc",
+      "after_sha256": "5a61a575498e3522323de47b4f63c804da57f54516d04731f2d58e42fd4ed995"
+    },
+    {
+      "course": "pa-real-estate-fundamentals-30",
+      "parent_source_sha256": "3ec335df571f75819de8868025081aae4de763311528096a590e6f71bd5b5211",
+      "source": "is where a loan is",
+      "before": "es donde está un préstamo",
+      "after": "es donde un préstamo es",
+      "source_sha256": "a66fcc5b51e41b5a85d354d4dbb483aded312c5d95225bf8cc53c1eb4f584659",
+      "before_sha256": "b31944fb1af1a2ed2b1551856e9ac78cfd9b32234a954e8a2ef1a236a2694ab7",
+      "after_sha256": "aec589f3ac05c72b267e2f7eedda86bd73a78cb88f8a1a90a3af8a38c8191501"
+    },
+    {
+      "course": "pa-real-estate-fundamentals-30",
+      "parent_source_sha256": "3ec335df571f75819de8868025081aae4de763311528096a590e6f71bd5b5211",
+      "source": "made",
+      "before": "fabricada",
+      "after": "originado",
+      "source_sha256": "ea0890697a77af0a2e054cccec587c8a42feb5cf38e778c6c6e2a96bfb945c0b",
+      "before_sha256": "7b5409b144229f1bc6c463e3b94fa5f766f920205d3c3aa656556c20c92f4835",
+      "after_sha256": "87edd975814e944662782cd12511368637237027c2f6604f4aa55a8c580de709"
+    },
+    {
+      "course": "pa-real-estate-fundamentals-30",
+      "parent_source_sha256": "3ec335df571f75819de8868025081aae4de763311528096a590e6f71bd5b5211",
+      "source": "— banks, savings institutions, credit unions, mortgage banking companies and mortgage brokers. The",
+      "before": "— bancos, cajas de ahorros, cooperativas de crédito, compañías de banca hipotecaria y corredores de hipotecas. Los",
+      "after": "—bancos, entidades de ahorro, cooperativas de crédito, compañías de banca hipotecaria y brókeres hipotecarios—. El",
+      "source_sha256": "6aebf32bed196c6810efe3a43f1a7ebda81a86285cc8d33c1b4c1dc6bcd7777b",
+      "before_sha256": "c771764f516b361e0c2b93aab7fd62d0aca2aa00c15d91672151bb86550fc28d",
+      "after_sha256": "300ace4670bb6dfa3de36b09bfd4db1e94d4a17381a1ae2e8400b5e4a17b4eda"
+    },
+    {
+      "course": "pa-real-estate-fundamentals-30",
+      "parent_source_sha256": "3ec335df571f75819de8868025081aae4de763311528096a590e6f71bd5b5211",
+      "source": "is where a loan already made is",
+      "before": "es donde ya se ha hecho un préstamo",
+      "after": "es donde un préstamo ya originado es",
+      "source_sha256": "ca12eb5585ed729897d1b09806607129e1e332996868482b41a948d905eac744",
+      "before_sha256": "13d11c1544742f077ca243105100ee566bc2be57f2d4f210191f9a7bfb8709ac",
+      "after_sha256": "19c2d8425bbec2dfa71d278ea634d31575e0d1bb8e13494437688fd8fa4c4fb7"
+    },
+    {
+      "course": "pa-real-estate-practice-45",
+      "parent_source_sha256": "dc2723b8f9ac949eba211bee056da597b728ea04e7481f8598246f495dba5045",
+      "source": "The",
+      "before": "Los",
+      "after": "El",
+      "source_sha256": "b344d80e24a3679999fa964450b34bc24d1578a35509f934c1418b0a20d21a67",
+      "before_sha256": "3d6a124622df7afc17de106f5a1b2142d18919cfff019cd43254651ef7714fcc",
+      "after_sha256": "5a61a575498e3522323de47b4f63c804da57f54516d04731f2d58e42fd4ed995"
+    },
+    {
+      "course": "pa-real-estate-practice-45",
+      "parent_source_sha256": "a44451ba6533e364b6f5dd7994aeb9fc50467ba5afd25ce3a7ac52a0ead953b7",
+      "source": "The",
+      "before": "Los",
+      "after": "El",
+      "source_sha256": "b344d80e24a3679999fa964450b34bc24d1578a35509f934c1418b0a20d21a67",
+      "before_sha256": "3d6a124622df7afc17de106f5a1b2142d18919cfff019cd43254651ef7714fcc",
+      "after_sha256": "5a61a575498e3522323de47b4f63c804da57f54516d04731f2d58e42fd4ed995"
+    },
+    {
+      "course": "pa-real-estate-practice-45",
+      "parent_source_sha256": "a44451ba6533e364b6f5dd7994aeb9fc50467ba5afd25ce3a7ac52a0ead953b7",
+      "source": ", the",
+      "before": ", el",
+      "after": ",",
+      "source_sha256": "3538a0b69856ece9aeb2961477bc2a6bbded4578906bc2df63533cdfa17b2bc4",
+      "before_sha256": "f6a4add9542c2105ce1a9372e19d0ad772b0655695091e17c2a302a59fae4d58",
+      "after_sha256": "d03502c43d74a30b936740a9517dc4ea2b2ad7168caa0a774cefe793ce0b33e7"
+    },
+    {
+      "course": "pa-real-estate-practice-45",
+      "parent_source_sha256": "a44451ba6533e364b6f5dd7994aeb9fc50467ba5afd25ce3a7ac52a0ead953b7",
+      "source": "one-year maximum listing period",
+      "before": "Período máximo de captación inmobiliaria de un año",
+      "after": "período máximo de un año para el contrato de representación para la venta",
+      "source_sha256": "ef1cf79c655ac305772de4a76f28c036d51af58e0b32eca4803d21cb9dacd0fc",
+      "before_sha256": "f9e4acaa53b04a01b48e6d73fd2d71656a23560bcf472f08df594c4c0235513d",
+      "after_sha256": "21ccc66c3184d7cd57ace6f5ab6eed94ceea66233d8adbb1c3710173bfaa45b9"
+    },
+    {
+      "course": "pa-real-estate-practice-45",
+      "parent_source_sha256": "a44451ba6533e364b6f5dd7994aeb9fc50467ba5afd25ce3a7ac52a0ead953b7",
+      "source": "six prohibited provisions",
+      "before": "seis disposiciones prohibidas",
+      "after": "las seis cláusulas prohibidas",
+      "source_sha256": "78ac00b0285babb90288c26b5ca3481ad0cabd3db092346200ed78791e47a4d8",
+      "before_sha256": "0c6ff0e53883c1b31eb2d70b3fe519d607c6873741699c5c579e948d51c75448",
+      "after_sha256": "9e8d78002730ce23fc3cafa68d375e83f0bc274c921365fd6fa94f15563103ae"
+    },
+    {
+      "course": "pa-real-estate-practice-45",
+      "parent_source_sha256": "a44451ba6533e364b6f5dd7994aeb9fc50467ba5afd25ce3a7ac52a0ead953b7",
+      "source": "bold-face requirement",
+      "before": "Requisitos de cara en negrita",
+      "after": "el requisito de letra en negrita",
+      "source_sha256": "92d95bc97e27fcc4b73446b27d16b409f35517cf01aec34d0f4eef7fda2b2304",
+      "before_sha256": "0110af870f556611ce4272831a15c0228e5c0876c765ff31a227cd6f6b269554",
+      "after_sha256": "8566295867eb8db208dd0d4b47c8ec92392504c5c1a58f22b7d051468972b2b7"
+    },
+    {
+      "course": "pa-real-estate-practice-45",
+      "parent_source_sha256": "ac3e6faf0241f0e93792be91e102196fc2e7dcdf03eb683f719ac76025a5f2f7",
+      "source": "The",
+      "before": "Los",
+      "after": "El",
+      "source_sha256": "b344d80e24a3679999fa964450b34bc24d1578a35509f934c1418b0a20d21a67",
+      "before_sha256": "3d6a124622df7afc17de106f5a1b2142d18919cfff019cd43254651ef7714fcc",
+      "after_sha256": "5a61a575498e3522323de47b4f63c804da57f54516d04731f2d58e42fd4ed995"
+    },
+    {
+      "course": "pa-real-estate-practice-45",
+      "parent_source_sha256": "422ddc38555e6b3e93522549dba588a83fd8c08679c562db46151ce03781f78e",
+      "source": "The",
+      "before": "Los",
+      "after": "El",
+      "source_sha256": "b344d80e24a3679999fa964450b34bc24d1578a35509f934c1418b0a20d21a67",
+      "before_sha256": "3d6a124622df7afc17de106f5a1b2142d18919cfff019cd43254651ef7714fcc",
+      "after_sha256": "5a61a575498e3522323de47b4f63c804da57f54516d04731f2d58e42fd4ed995"
+    },
+    {
+      "course": "pa-real-estate-practice-45",
+      "parent_source_sha256": "99f10e9349420e533448c305187c8f99e19768753ae40201751c7dcc7a26dba6",
+      "source": "The",
+      "before": "Los",
+      "after": "El",
+      "source_sha256": "b344d80e24a3679999fa964450b34bc24d1578a35509f934c1418b0a20d21a67",
+      "before_sha256": "3d6a124622df7afc17de106f5a1b2142d18919cfff019cd43254651ef7714fcc",
+      "after_sha256": "5a61a575498e3522323de47b4f63c804da57f54516d04731f2d58e42fd4ed995"
+    },
+    {
+      "course": "pa-real-estate-practice-45",
+      "parent_source_sha256": "99f10e9349420e533448c305187c8f99e19768753ae40201751c7dcc7a26dba6",
+      "source": ", buyer having",
+      "before": ", comprador que",
+      "after": ", cuando el comprador ha recibido",
+      "source_sha256": "b54da73a6b3301b41430858fa5fc014454b99c9a14b139a38387959299945d79",
+      "before_sha256": "9a8ea01bda99eb3ffc41b83a87ad3cf4d4129203de3dd473d3b6ac34368bc39a",
+      "after_sha256": "bb83b13182b38c58d34e463e8652fb280746044d4b97e96708011a3f1f25bc07"
+    },
+    {
+      "course": "pa-real-estate-practice-45",
+      "parent_source_sha256": "99f10e9349420e533448c305187c8f99e19768753ae40201751c7dcc7a26dba6",
+      "source": "prior notice",
+      "before": "notificación previa",
+      "after": "aviso previo de que",
+      "source_sha256": "b8d1d45db9be6bb0a2e5ce36ecfbf4e12e8c7efc96f736a1bba2ab699cff9c10",
+      "before_sha256": "7ec8f528687bb3d003da6afa10d50e52e5b1562b4d66b8ebb5282a34fcae86b4",
+      "after_sha256": "e1adb5a48e83487590d3854be21d05a7c2ce256c60004079620c53aa949e6134"
+    },
+    {
+      "course": "pa-real-estate-practice-45",
+      "parent_source_sha256": "99f10e9349420e533448c305187c8f99e19768753ae40201751c7dcc7a26dba6",
+      "source": "it goes to the listing broker",
+      "before": "va al corredor del vendedor",
+      "after": "se entregará al bróker del vendedor",
+      "source_sha256": "f145643e2051d576186b63b26b056a11d4a35307a9cde03cedc003d9cb036b44",
+      "before_sha256": "4537010116dffabdc4a50494c5af6b2592ab8ba6c3dffe3959f05f132febd035",
+      "after_sha256": "3577d9702e68b2afa96a6f27df7ab81514c2f92c87f096cf33a694ec7fdfb82a"
+    },
+    {
+      "course": "pa-real-estate-practice-45",
+      "parent_source_sha256": "d719aac5add9617ea68c687b7d6f39b42396edde4f7a1b44275179199dd2656e",
+      "source": "The",
+      "before": "Los",
+      "after": "El",
+      "source_sha256": "b344d80e24a3679999fa964450b34bc24d1578a35509f934c1418b0a20d21a67",
+      "before_sha256": "3d6a124622df7afc17de106f5a1b2142d18919cfff019cd43254651ef7714fcc",
+      "after_sha256": "5a61a575498e3522323de47b4f63c804da57f54516d04731f2d58e42fd4ed995"
+    },
+    {
+      "course": "pa-real-estate-practice-45",
+      "parent_source_sha256": "d719aac5add9617ea68c687b7d6f39b42396edde4f7a1b44275179199dd2656e",
+      "source": "that prior notice",
+      "before": "que la notificación previa",
+      "after": "ese aviso previo",
+      "source_sha256": "61b0d14cc8b40ddb17079f759077d693125deaa8a867c2f6881ed5e3833cfc67",
+      "before_sha256": "ce4a34af7e288fffb09b4210f4e9cad5e8115bb41d9938252fb80198cd11e3b6",
+      "after_sha256": "f835bce7776c331f081e67ed26c3400a32fef6fe4eacc52c43ea8d3f968202c5"
+    },
+    {
+      "course": "pa-real-estate-practice-45",
+      "parent_source_sha256": "b566e970fa5551fc6c008959a6ce1ec9d9f2cf44af2dd9e5d0bfd7d1935d81d6",
+      "source": "The",
+      "before": "Los",
+      "after": "El",
+      "source_sha256": "b344d80e24a3679999fa964450b34bc24d1578a35509f934c1418b0a20d21a67",
+      "before_sha256": "3d6a124622df7afc17de106f5a1b2142d18919cfff019cd43254651ef7714fcc",
+      "after_sha256": "5a61a575498e3522323de47b4f63c804da57f54516d04731f2d58e42fd4ed995"
+    },
+    {
+      "course": "pa-real-estate-practice-45",
+      "parent_source_sha256": "b566e970fa5551fc6c008959a6ce1ec9d9f2cf44af2dd9e5d0bfd7d1935d81d6",
+      "source": "discloses. The",
+      "before": "revela. Los",
+      "after": "divulga. El",
+      "source_sha256": "28a9e271dddf9c8f5942669d00eadf8cbd66e6e22539e746cb812c80a4cfcc3b",
+      "before_sha256": "c2aa0fd5fd7fef7c9fa62cd5987ef33dbdaf5451f4588552f94e8af187ef83df",
+      "after_sha256": "2dc87d9feaa436f1170179a7c8c8777af1c88f50080d40090c0326c30d46bcdb"
+    },
+    {
+      "course": "pa-real-estate-practice-45",
+      "parent_source_sha256": "9b21ba4aa95150b46896e52131a454ec38f2883dfb6ba1261748364c1c4ce86b",
+      "source": "A",
+      "before": "A",
+      "after": "Un",
+      "source_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "before_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "after_sha256": "d32a504100ef4cab53bfffd51fd31139aaf6c5ea5867074623c4a21b6466a7d7"
+    },
+    {
+      "course": "pa-real-estate-practice-45",
+      "parent_source_sha256": "9b21ba4aa95150b46896e52131a454ec38f2883dfb6ba1261748364c1c4ce86b",
+      "source": "transaction licensee provides services without being anyone's agent.",
+      "before": "El licenciatario de transacción presta servicios sin ser agente de nadie.",
+      "after": "licenciatario de transacción presta servicios sin actuar como agente de ninguna de las partes.",
+      "source_sha256": "b69c7e8b7615de95cb22006b5e9d5679af8885def36912f7c7529b7e43285218",
+      "before_sha256": "01dffa1deac1ae93940a1518d0705ad8a3dd019674786979eedbac49be397077",
+      "after_sha256": "b8308696ccc8f1f0c75e577ad5e65d7344bb11e9488916557a8efb7927f281e9"
+    },
+    {
+      "course": "pa-real-estate-practice-45",
+      "parent_source_sha256": "9b21ba4aa95150b46896e52131a454ec38f2883dfb6ba1261748364c1c4ce86b",
+      "source": ", and general",
+      "before": ", y general",
+      "after": ", y la",
+      "source_sha256": "b0957115d2530f34686117fce9ccfe5da656a7127fa9a8b6cdbf5dbe04bcb623",
+      "before_sha256": "aea339836f84aa27190848cfa9f63530396bc46023697df623ebb2c45dd63dda",
+      "after_sha256": "61290db90bc3cc700ab8dd3de112b64e8bd439b7de0f02afeb7a5411cbaedd32"
+    },
+    {
+      "course": "pa-real-estate-practice-45",
+      "parent_source_sha256": "9b21ba4aa95150b46896e52131a454ec38f2883dfb6ba1261748364c1c4ce86b",
+      "source": "confidentiality",
+      "before": "confidencialidad",
+      "after": "confidencialidad general",
+      "source_sha256": "72c1683ffaaaf618fc9efe3f038046b64ed9118ba9a9dfda6e1a3f8c8dba690f",
+      "before_sha256": "7b066e27810a3805693c68b51b59eb6b6e32bc7d7e67b0672802856991952a35",
+      "after_sha256": "5a5c1237c0f746e8868aa5ca8c9bbbe36a75186e3cf33b6786082570daf3497f"
+    },
+    {
+      "course": "pa-real-estate-practice-45",
+      "parent_source_sha256": "cb7cae1a175051b7941aeb1de51d0d50e6472b7ec2667a1f30680b6e061bda7c",
+      "source": "The",
+      "before": "Los",
+      "after": "Los períodos de conservación de",
+      "source_sha256": "b344d80e24a3679999fa964450b34bc24d1578a35509f934c1418b0a20d21a67",
+      "before_sha256": "3d6a124622df7afc17de106f5a1b2142d18919cfff019cd43254651ef7714fcc",
+      "after_sha256": "3a11a659233b89ecad1a6f96160a713a0ee65133889abd5e77d7e97545ccbc44"
+    },
+    {
+      "course": "pa-real-estate-practice-45",
+      "parent_source_sha256": "cb7cae1a175051b7941aeb1de51d0d50e6472b7ec2667a1f30680b6e061bda7c",
+      "source": "retention periods and the",
+      "before": "los períodos de retención y la",
+      "after": "y la regla de",
+      "source_sha256": "15ed151b133370f713cdd4e6860ca4234a9c9c42dd972c47d94d5925787f678b",
+      "before_sha256": "1002da8e150d91ffb601eec420901a2721518f9e871a7f51216dc4a445201dde",
+      "after_sha256": "4dc2d34ef83b38f73c04e7feafbdb74e55fa052b42ed9ed4c89ed4a7a31ec28b"
+    },
+    {
+      "course": "pa-real-estate-practice-45",
+      "parent_source_sha256": "cb7cae1a175051b7941aeb1de51d0d50e6472b7ec2667a1f30680b6e061bda7c",
+      "source": "rule are transcribed from §§ 35.286 and 35.284(d).",
+      "before": "la regla se transcribe de §§ 35.286 y 35.284(d).",
+      "after": "están transcritos de §§ 35.286 y 35.284(d).",
+      "source_sha256": "f2b38e33d479f84904a1835dd6e67171bfb3e0e42d02a3104088b5b6e34145cc",
+      "before_sha256": "0a87b9873220b49870d7ffd8c6f3dd80a833babffc6ce052fcf1c993acfe3211",
+      "after_sha256": "6f7586f4a81efbcd3943ea238e4c0df3afa9c30996aec2e7909a089fd106da4f"
+    },
+    {
+      "course": "pa-real-estate-practice-45",
+      "parent_source_sha256": "022c27a648ab103a85616a54c09b46adb26b8b9a6419d98fe792efb2a5615766",
+      "source": "The",
+      "before": "Los",
+      "after": "La",
+      "source_sha256": "b344d80e24a3679999fa964450b34bc24d1578a35509f934c1418b0a20d21a67",
+      "before_sha256": "3d6a124622df7afc17de106f5a1b2142d18919cfff019cd43254651ef7714fcc",
+      "after_sha256": "25cd026529f36e2069ec56805faf32a3c05d444c910bbfec6c4eb0893d9dde20"
+    },
+    {
+      "course": "pa-real-estate-practice-45",
+      "parent_source_sha256": "022c27a648ab103a85616a54c09b46adb26b8b9a6419d98fe792efb2a5615766",
+      "source": "and the",
+      "before": "y el",
+      "after": "y la",
+      "source_sha256": "44359e21492d788147966d8c0bc5beb2f4f4d0d05dd36f3ff36a0cd36a349907",
+      "before_sha256": "3c21233b3d007ac2c5c8ddabeb9b783a06a5b1b6a65a6ea3916b8359f81e8364",
+      "after_sha256": "b6ca6ff82099e81383b2cf08d3fef9775e50cca8da3f3d325b33cb79d4145a72"
+    },
+    {
+      "course": "pa-real-estate-practice-45",
+      "parent_source_sha256": "1c5c422c273f2f5d66e30081ec0771a091c0ad1aa2096298ad95a733c27fcf6e",
+      "source": "\"The",
+      "before": "\"La",
+      "after": "\"",
+      "source_sha256": "797ef2965fdfa9677f3b6ec788b17155987bfdd0838cbfbb049e9fc5c1c0fcb2",
+      "before_sha256": "54ffe6c53880df151f1a004221e0f49116f1a0f72b094463e961bde96b406897",
+      "after_sha256": "8a331fdde7032f33a71e1b2e257d80166e348e00fcb17914f48bdb57a1c63007"
+    },
+    {
+      "course": "pa-real-estate-practice-45",
+      "parent_source_sha256": "1c5c422c273f2f5d66e30081ec0771a091c0ad1aa2096298ad95a733c27fcf6e",
+      "source": "date of the agreement",
+      "before": "Fecha del acuerdo",
+      "after": "La fecha del acuerdo",
+      "source_sha256": "e707d7ee60273c4888fae89d3d0c518eec2ce03907acab837aa56fd6ed08d13a",
+      "before_sha256": "88854f9b4edc8eb0473befbef8230108b91345b1fbdd22b39e26ab01dc2fdb01",
+      "after_sha256": "ed67227cdd5caaa7048f2c3707d610468a13827fa3b22bd29beaf8ceabdbc183"
+    },
+    {
+      "course": "pa-real-estate-practice-45",
+      "parent_source_sha256": "1c5c422c273f2f5d66e30081ec0771a091c0ad1aa2096298ad95a733c27fcf6e",
+      "source": "names of the buyer and seller",
+      "before": "nombres del comprador y del vendedor",
+      "after": "Los nombres del comprador y del vendedor",
+      "source_sha256": "9f4c6d5b65bd2324e89c18a21e0e2006d5dea4bc39c2d0b2c965313d2029ed58",
+      "before_sha256": "7e3baeb30bb13c3324233672715e0ae73ffd27a502bb2781e4e0023846f87287",
+      "after_sha256": "bba08c77a0587440ce9fc44219a25b26647ce049f7a65c624d0595020bca0b77"
+    },
+    {
+      "course": "pa-real-estate-practice-45",
+      "parent_source_sha256": "1c5c422c273f2f5d66e30081ec0771a091c0ad1aa2096298ad95a733c27fcf6e",
+      "source": "\"A",
+      "before": "\"A",
+      "after": "\"Una",
+      "source_sha256": "df275a68ef960aaaa0829b21a39a7fe1e9ccc0a72d77c63733c15b4edce511d8",
+      "before_sha256": "df275a68ef960aaaa0829b21a39a7fe1e9ccc0a72d77c63733c15b4edce511d8",
+      "after_sha256": "31db835ce82faea15d550a69fe85bfe46a9caf85ce4e12fb08b67631bbca113b"
+    },
+    {
+      "course": "pa-real-estate-practice-45",
+      "parent_source_sha256": "1c5c422c273f2f5d66e30081ec0771a091c0ad1aa2096298ad95a733c27fcf6e",
+      "source": "sale price",
+      "before": "precio de venta",
+      "after": "El precio de venta",
+      "source_sha256": "a290a97d241034f7d2b5cdab4c25b184f12525e6b03c2e56cb024dc36de9e2c5",
+      "before_sha256": "df2c19609234a3f0c1a2bf7e8c1a20987e2930865379e65a4022613a5b194715",
+      "after_sha256": "940bbc6e8abb769b4684edd36693e7f80799dbbd5edd3b0c2cd28ae3bff8df7f"
+    },
+    {
+      "course": "pa-real-estate-practice-45",
+      "parent_source_sha256": "1c5c422c273f2f5d66e30081ec0771a091c0ad1aa2096298ad95a733c27fcf6e",
+      "source": "dates for payment and conveyance",
+      "before": "Fechas de pago y traspaso",
+      "after": "Las fechas de pago y transmisión",
+      "source_sha256": "796d89d634d303475e6da03b31539b075b3f3e84176a4142492a0d23ff815f86",
+      "before_sha256": "eed8521f39bb0504138b1e7a7eca233382e5fb00cef7268fe4a59d663d53f930",
+      "after_sha256": "63b67c0eaebb5d6fd96d1f7f4870d7a039e2ac40a06ee1cb70fc18043e20facb"
+    },
+    {
+      "course": "pa-real-estate-practice-45",
+      "parent_source_sha256": "1c5c422c273f2f5d66e30081ec0771a091c0ad1aa2096298ad95a733c27fcf6e",
+      "source": "The",
+      "before": "Los",
+      "after": "La",
+      "source_sha256": "b344d80e24a3679999fa964450b34bc24d1578a35509f934c1418b0a20d21a67",
+      "before_sha256": "3d6a124622df7afc17de106f5a1b2142d18919cfff019cd43254651ef7714fcc",
+      "after_sha256": "25cd026529f36e2069ec56805faf32a3c05d444c910bbfec6c4eb0893d9dde20"
+    },
+    {
+      "course": "pa-real-estate-practice-45",
+      "parent_source_sha256": "1c5c422c273f2f5d66e30081ec0771a091c0ad1aa2096298ad95a733c27fcf6e",
+      "source": "zoning classification",
+      "before": "Clasificación de zonas",
+      "after": "clasificación de zonificación",
+      "source_sha256": "b19575f1697cab2c4d565e9ff6031158fc24e1d6d6846b1884e0951018afb138",
+      "before_sha256": "812db3858d6179b212e06a5b9eb2edd80ae67271dbd49a1efcb945c4c7fd0db1",
+      "after_sha256": "53c5f59d93452c3d3801aff3329343e21961b4cd3173bcde3db0bad948acf62c"
+    },
+    {
+      "course": "pa-real-estate-practice-45",
+      "parent_source_sha256": "1c5c422c273f2f5d66e30081ec0771a091c0ad1aa2096298ad95a733c27fcf6e",
+      "source": "identifying the capacity in which the broker, or a licensee employed by the broker is involved in the transaction and whether services have been provided to another party in the transaction",
+      "before": "identificación de la capacidad en la que el agente, o un licenciatario empleado por el agente, participa en la transacción y si se han prestado servicios a otra parte en la transacción",
+      "after": "que identifique en qué calidad participa el bróker o un licenciatario empleado por él en la transacción y si se han prestado servicios a otra parte de ella",
+      "source_sha256": "89b13688ba2c90ce4074a560a3460ca39a421968b9955d5fb9b5b52fc2b4043b",
+      "before_sha256": "88c6a1ba5a7109b8a9d750f3cc7de8e5afa066574034cb25fbf2c076e04233c0",
+      "after_sha256": "c7e93fce49ffa8913ab5a38f4a8e5b021de4d1847f0e3f5351db4ea7e63dca85"
+    },
+    {
+      "course": "pa-real-estate-practice-45",
+      "parent_source_sha256": "1c5c422c273f2f5d66e30081ec0771a091c0ad1aa2096298ad95a733c27fcf6e",
+      "source": "escrow provision",
+      "before": "Provisión de garantía bloqueada",
+      "after": "cláusula de depósito en garantía",
+      "source_sha256": "d8c114f77a1046bd1aed510f4d0a977548c9e32cba894e11c0b757047be1c75b",
+      "before_sha256": "547423e354d7ffd8f4585e467ae047a8095c98720c2000804cd72fb4a1b81a7f",
+      "after_sha256": "991f2fb32dde6644e6fc4fd6da018370b0b6c77f15d49cd8ecf88cbd0dced56b"
+    },
+    {
+      "course": "pa-real-estate-practice-45",
+      "parent_source_sha256": "1c5c422c273f2f5d66e30081ec0771a091c0ad1aa2096298ad95a733c27fcf6e",
+      "source": "For a",
+      "before": "Por una",
+      "after": "Para una",
+      "source_sha256": "d63cb50fa986ca09ff00656587e345cd77b844d208c8e4eb6baa93d1ff07b200",
+      "before_sha256": "2b22cf4c529c876f3c79bb74bc06fd23df47c0b061c3d424113f9d25549f71bb",
+      "after_sha256": "252d70563324af25700ad0e050e016e2c0f19f3c9fddcbe0a2410f51d580001b"
+    },
+    {
+      "course": "pa-real-estate-practice-45",
+      "parent_source_sha256": "1c5c422c273f2f5d66e30081ec0771a091c0ad1aa2096298ad95a733c27fcf6e",
+      "source": "time share or campground membership",
+      "before": "tiempo compartido o membresía del camping",
+      "after": "participación de tiempo compartido o membresía de camping",
+      "source_sha256": "8e79f54e26f1fcc571c82cb7ef013e152e828551d282111be975d35946267da7",
+      "before_sha256": "0d7160a971b7d11964f839f67d1e99ef825a28564eb7a6acad78bb49e3125840",
+      "after_sha256": "d1cc68a975bc0d79960d74f59d1c08ec2c86d16f13a365f653363a381b0c42bf"
+    },
+    {
+      "course": "pa-real-estate-practice-45",
+      "parent_source_sha256": "1c5c422c273f2f5d66e30081ec0771a091c0ad1aa2096298ad95a733c27fcf6e",
+      "source": ", the",
+      "before": ", el",
+      "after": ", la",
+      "source_sha256": "3538a0b69856ece9aeb2961477bc2a6bbded4578906bc2df63533cdfa17b2bc4",
+      "before_sha256": "f6a4add9542c2105ce1a9372e19d0ad772b0655695091e17c2a302a59fae4d58",
+      "after_sha256": "b55dc7ce6374a498653021d909783c5a4e3fe70dd68e4500d77a0d0ffd508c0c"
+    },
+    {
+      "course": "pa-real-estate-practice-45",
+      "parent_source_sha256": "ed54e8fd68f57566e01b8b9405b80ba5ad2730ab1343a163ea52d1adb8e32761",
+      "source": "The",
+      "before": "Los",
+      "after": "El plazo del",
+      "source_sha256": "b344d80e24a3679999fa964450b34bc24d1578a35509f934c1418b0a20d21a67",
+      "before_sha256": "3d6a124622df7afc17de106f5a1b2142d18919cfff019cd43254651ef7714fcc",
+      "after_sha256": "bff5a913acf964cdb12bbe9d7fea476077e49c1992096c738beefb00438b02db"
+    },
+    {
+      "course": "pa-real-estate-practice-45",
+      "parent_source_sha256": "ed54e8fd68f57566e01b8b9405b80ba5ad2730ab1343a163ea52d1adb8e32761",
+      "source": "next-business-day",
+      "before": "el próximo día de trabajo",
+      "after": "siguiente día hábil",
+      "source_sha256": "64b20aba8ba3267670849412791268035ae5368184a584353ee9baaff3e0df1e",
+      "before_sha256": "8439bb8ecfaf5a9954c9ee8385250329c7b83a8838513e933e38e454bc633a24",
+      "after_sha256": "c0ff82e3537bb5ffdd4791a46e147ad25071926ac6c7a7d6befafac8f2dc1640"
+    },
+    {
+      "course": "pa-real-estate-practice-45",
+      "parent_source_sha256": "ed54e8fd68f57566e01b8b9405b80ba5ad2730ab1343a163ea52d1adb8e32761",
+      "source": "deadline, the",
+      "before": "plazo, el",
+      "after": ", el plazo de",
+      "source_sha256": "121aef4a469dc48ab6936b78ada3a550a848989431f89d574a7db5e37bea5cee",
+      "before_sha256": "f53ea40565c8885657342f843c9ccc0c60a56c9ff6615db68e688bcaa1bc71a7",
+      "after_sha256": "2de45ac5f96e3712cfcfa7a32fcf31c032f15fdfa0f067694d9b0ae665450e37"
+    },
+    {
+      "course": "pa-real-estate-practice-45",
+      "parent_source_sha256": "ed54e8fd68f57566e01b8b9405b80ba5ad2730ab1343a163ea52d1adb8e32761",
+      "source": "post-acceptance deadline, the",
+      "before": "después de la aceptación, el plazo",
+      "after": "después de la aceptación, la recomendación de intereses a los",
+      "source_sha256": "74ed69ab9a0050628a135fadefc993f9cff712670ccd385ad3e515f5706cc548",
+      "before_sha256": "f440d84c5485eb613930a0cc73f59962db074004915a610e81d5f93c4f4c25d3",
+      "after_sha256": "e08224aaa193ec547880305455a21bc2ca1b5d652957d6ffa809525910f66025"
+    },
+    {
+      "course": "pa-real-estate-practice-45",
+      "parent_source_sha256": "ed54e8fd68f57566e01b8b9405b80ba5ad2730ab1343a163ea52d1adb8e32761",
+      "source": "interest recommendation and the",
+      "before": "la recomendación de intereses y la",
+      "after": "y el aviso con",
+      "source_sha256": "e0b77d37b7cbdad422c91aa6995562b912e8accf19ad41fff94a0945eafcb7a7",
+      "before_sha256": "555250a0f7b6b0413008c163f4966de99130387a8213009b072ad7b3fdb9b6eb",
+      "after_sha256": "1d2936ea86bdb27b9c8d532223e1350899c136bad41737d6b1b0eb2ad659db6e"
+    },
+    {
+      "course": "pa-real-estate-practice-45",
+      "parent_source_sha256": "ed54e8fd68f57566e01b8b9405b80ba5ad2730ab1343a163ea52d1adb8e32761",
+      "source": "before interpleader are all transcribed from Chapter 35.",
+      "before": "antes del interpleader se transcribieron todos del Capítulo 35.",
+      "after": "antes de la consignación judicial por reclamaciones contrapuestas están todos transcritos del Capítulo 35.",
+      "source_sha256": "795d2d7eb9701d79fdca952891b5306d91d6df5f0ac4fc90f042036131854e0f",
+      "before_sha256": "690466649d890b424b856a73bde2d3df46067ffbebe61034ac3a064e9544b127",
+      "after_sha256": "9d108169fd7e77b15c2109c5816f4a6f7c80bfc835de55fedd6fd7a98ba773fc"
+    },
+    {
+      "course": "pa-real-estate-practice-45",
+      "parent_source_sha256": "0099e183cd7e39af9469a4750718abd1ae94eb40caee767728555c38fa8b343a",
+      "source": "The",
+      "before": "Los",
+      "after": "El",
+      "source_sha256": "b344d80e24a3679999fa964450b34bc24d1578a35509f934c1418b0a20d21a67",
+      "before_sha256": "3d6a124622df7afc17de106f5a1b2142d18919cfff019cd43254651ef7714fcc",
+      "after_sha256": "5a61a575498e3522323de47b4f63c804da57f54516d04731f2d58e42fd4ed995"
+    },
+    {
+      "course": "pa-real-estate-practice-45",
+      "parent_source_sha256": "0099e183cd7e39af9469a4750718abd1ae94eb40caee767728555c38fa8b343a",
+      "source": "3-year active licence requirement",
+      "before": "Requisitos de licencia activa a 3 años",
+      "after": "requisito de 3 años de licencia activa",
+      "source_sha256": "54d798bb73cab6125b4f5fdc5335ed72caed78e395a01576dfa81755479a9744",
+      "before_sha256": "986c9142e814e07b2c1bf705d19c6ba22187d601cc1e6777f4d5a59d954f5dcf",
+      "after_sha256": "6f64ee3f883724a614275bb03ce1af84d8ac3c899184113851738a3eadf100ac"
+    },
+    {
+      "course": "pa-real-estate-practice-45",
+      "parent_source_sha256": "0099e183cd7e39af9469a4750718abd1ae94eb40caee767728555c38fa8b343a",
+      "source": ", the",
+      "before": ", el",
+      "after": ",",
+      "source_sha256": "3538a0b69856ece9aeb2961477bc2a6bbded4578906bc2df63533cdfa17b2bc4",
+      "before_sha256": "f6a4add9542c2105ce1a9372e19d0ad772b0655695091e17c2a302a59fae4d58",
+      "after_sha256": "d03502c43d74a30b936740a9517dc4ea2b2ad7168caa0a774cefe793ce0b33e7"
+    },
+    {
+      "course": "pa-real-estate-practice-45",
+      "parent_source_sha256": "0099e183cd7e39af9469a4750718abd1ae94eb40caee767728555c38fa8b343a",
+      "source": "3 hours",
+      "before": "3 horas",
+      "after": "las 3 horas",
+      "source_sha256": "508fe49743f3b7aac52e2f0c645cdc752bcf5e62c604a714a63589879afaeb6e",
+      "before_sha256": "471c6a69011bffbefaf6ee3932dbc892ae304390e79853229e4bf8c092e54170",
+      "after_sha256": "5cf3d30cc28aa0efbc7ca1ec500f91173081ebe1770e4776d1d6ba30bbd97bd4"
+    },
+    {
+      "course": "pa-real-estate-practice-45",
+      "parent_source_sha256": "0099e183cd7e39af9469a4750718abd1ae94eb40caee767728555c38fa8b343a",
+      "source": "of BPO continuing education, the",
+      "before": "de la educación continua de BPO, la",
+      "after": "de educación continua de BPO, el",
+      "source_sha256": "d3c57190126cee242c88e122e318305f3ca5453976d8b68b9b33f5f84e5e97a2",
+      "before_sha256": "a7f84013edb1091a635f310e732e36bb3613c1a865327064e987e15d19749dae",
+      "after_sha256": "7f711985311230df520a9170ec6fa941cc394b2f474f90e0244253d45493b836"
+    },
+    {
+      "course": "pa-real-estate-practice-45",
+      "parent_source_sha256": "0099e183cd7e39af9469a4750718abd1ae94eb40caee767728555c38fa8b343a",
+      "source": "2-year licence period",
+      "before": "Período de licencia de 2 años",
+      "after": "período de licencia de 2 años",
+      "source_sha256": "0948b2c085c48e31d7c413a62188d5006e6e08417a829dbb332463ac9cc750d2",
+      "before_sha256": "c6e6df611caa3b103ee770ac9f815efebec9aa8fd87af921ef828b811c9cfbda",
+      "after_sha256": "a0ee5a2f8c0d106d25b818537f1bc9bdb0ec6564ca063b83ecd4c22e3b1ef6f0"
+    },
+    {
+      "course": "pa-real-estate-practice-45",
+      "parent_source_sha256": "0099e183cd7e39af9469a4750718abd1ae94eb40caee767728555c38fa8b343a",
+      "source": "14 hours",
+      "before": "14 horas",
+      "after": "las 14 horas",
+      "source_sha256": "1bbefffb4c774a363b708dcc52f930170e0bceafe60ea9dfbdfe3403375aad9e",
+      "before_sha256": "a3a059717d0774f88018fd5c51c6b9b689328d337a24de476284dc7805e635ce",
+      "after_sha256": "714519d6319646424b84ba385b81d41fadb985c0267447abe3e8880c2462e189"
+    },
+    {
+      "course": "pa-real-estate-practice-45",
+      "parent_source_sha256": "0099e183cd7e39af9469a4750718abd1ae94eb40caee767728555c38fa8b343a",
+      "source": "of continuing education, the",
+      "before": "de la educación continua, de la",
+      "after": "de educación continua, el incremento mínimo de",
+      "source_sha256": "cb327b0b812ce17ec4e3822349968ec003ae819930457f200ce3a1e7da872c48",
+      "before_sha256": "794724d7f9eb966646c251ee172ae8dc9c338a7d67dce5ed77aade2065e57574",
+      "after_sha256": "5292dddd4d04b1406ed395a38e6a8ed249bb02afee54c58489ed0618bb49e62f"
+    },
+    {
+      "course": "pa-real-estate-practice-45",
+      "parent_source_sha256": "0099e183cd7e39af9469a4750718abd1ae94eb40caee767728555c38fa8b343a",
+      "source": "minimum increment, the",
+      "before": "incremento mínimo, el",
+      "after": ", los plazos de notificación de",
+      "source_sha256": "955d297eac9e22bf7637dcbea86fe6db6ea4281bdce3125cde048e1eb1656c6a",
+      "before_sha256": "984fbe921a44d0a6554c45b9357cae73b8feb2982ee857f1a3e952fbbfae68f6",
+      "after_sha256": "79b5bcea87e64355171933373d03b83ec3dfc988693bbd0ef167806ccbb6e469"
+    },
+    {
+      "course": "pa-real-estate-practice-45",
+      "parent_source_sha256": "0099e183cd7e39af9469a4750718abd1ae94eb40caee767728555c38fa8b343a",
+      "source": "reporting deadlines and every retention period are",
+      "before": "los plazos de notificación y cada período de retención son:",
+      "after": "y todos los períodos de conservación están",
+      "source_sha256": "78acedffd8b3a91c2ebe568dbe0832c4a1f5487ab0a5fec73740550f14dc709b",
+      "before_sha256": "0c9681f164c1bb97d8ebcba9f1410b8343070731dd5d18b4e5f8d58904618b7d",
+      "after_sha256": "c7fa913721afdd07f9f45152c6f9cba6ec970ee4ecf16acd44384ea111581bdf"
+    },
+    {
+      "course": "pa-real-estate-practice-45",
+      "parent_source_sha256": "0099e183cd7e39af9469a4750718abd1ae94eb40caee767728555c38fa8b343a",
+      "source": "transcribed from Chapter 35.",
+      "before": "Transcrito del capítulo 35.",
+      "after": "transcritos del Capítulo 35.",
+      "source_sha256": "b531ee680cc424a516919a433c5480280dccfa3c031016b88e7ada866e798015",
+      "before_sha256": "eedfe3ad747685e91ba99ce56a0226947541b94d943d67517b02672b28c86c5b",
+      "after_sha256": "cfee852f38b280d2658f020821cf698f869f787a9203dfe39c8e6852651ef38f"
+    },
+    {
+      "course": "pa-real-estate-practice-45",
+      "parent_source_sha256": "0099e183cd7e39af9469a4750718abd1ae94eb40caee767728555c38fa8b343a",
+      "source": "Not read, and therefore the source of nothing here:",
+      "before": "No leer, y por lo tanto la fuente de nada aquí:",
+      "after": "No se consultaron y, por tanto, no respaldan nada de lo expuesto aquí:",
+      "source_sha256": "153bc08c5c51f73bb6397aea8260b627959d8dc284d3527143f7c4c073339a66",
+      "before_sha256": "0cfad0d0c5efdb2b21fb1c68600107e41a4a3cff3c2e00e8ff58ea5180f4b2df",
+      "after_sha256": "849ed5777980932d08d02aecb60d7fb56ace5eee2c111efc7ec37ecbaeea99c5"
+    }
+  ],
+  "artifact_sha256": "96411fefdce6578bbe11892a120cf4d3cc59aff419e6f988ac4226278e8b67e6"
+}

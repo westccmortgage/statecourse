@@ -130,3 +130,13 @@ The unified console carries a build-generated [source manifest](../../../config/
 ## Spanish review checkpoint3 — 2026-11-14
 
 5,623 cumulative entries corrected across27courses; all30 full semantic final signoffs and human linguistic/SME/duration gates remain OPEN. Build5protected tests,51focused tests and3sentence tests passed. Production acceptance pending. Exact coverage and source issues: docs/audits/REAL-ESTATE-SPANISH-PARALLEL-REVIEW-2026-11-14.md. No regulatory approval, enrollment or credit status changed.
+
+
+## Spanish full-corpus review checkpoint4 — local, publication BLOCKED
+
+First bilingual reviewer pass covers all30courses/14states,284lessons/3,194sections and3,172public question blocks; repeated Texas passages use explicitly logged exact-source review reuse. Local authored snapshot21,137changedentries/18,856distinctsources. Numeric/reference preservation PASS; integrated build/browser acceptance pending final verification. Contextual sentence corrections preserve emphasis and answer inputs. Human linguistic acceptance, qualified state SME review, exhaustive semantic accuracy and learner duration remain OPEN. English-source issues retained for SME resolution.
+
+Production main push of26b103d was rejected by automatic approval review for lack of specific publication approval; no bypass/retry. Later checkpoint4 edits remain local. Last observed live content4a616ede. No new submission, approval, enrollment, payment, certificate or credit status. [Current audit and recovery](../../audits/REAL-ESTATE-SPANISH-PARALLEL-REVIEW-2026-11-14.md).
+
+
+Final local verification: `bash site/build.sh` PASS including5protected-assessment tests;55focused tests PASS including753exact-context fixtures;3sentence tests PASS; diff check PASS. Local HTTP matched all30generated companion hashes and14Spanish state links. Actual Chrome opened all30Spanish readers and verified sampled grading, explanation and selected-answer retention across language switches; the final Oklahoma choice correction was observed after rebuild. Final authored count21,138entries/18,857distinctsources. Evidence: `work-evidence/spanish-full-review-final-verification-20261114.json`, final coverage/changes ledgers, local HTTP/browser JSON and screenshot. No final production publication occurred; acceptance of this update on statecourse.com remains NOT VERIFIED. Human linguistic/SME/duration remain OPEN.

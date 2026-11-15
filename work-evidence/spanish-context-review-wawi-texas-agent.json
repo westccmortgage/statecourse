@@ -1,0 +1,1926 @@
+{
+  "scope": "WA/WI exact-parent short-fragment contextual review, root-rest rows92–186; not a repeat full-course review",
+  "parents_inspected": 95,
+  "parent_maps": 91,
+  "unchanged_parent_indices": [
+    21,
+    31,
+    62,
+    68
+  ],
+  "artifact_sha256": "abbf9c977c10ecf0a3305c0d07e3d4c3a85bfe9515dcb067b2d487512c4853f4",
+  "runtime_verification": "Executed current practice-locale DOM rendering over all3WA/WIcourses;95shortfragmentparents generated. Follow-up township gender, construction-lien word boundary, and quoted representation now observed correct. Contextual runtime integration verified; human linguistic/SME review remainsOPEN.",
+  "human_sme_review": "OPEN",
+  "changes": [
+    {
+      "course": "wa-real-estate-fundamentals-60",
+      "parent_source_sha256": "9281b84008d630d6b1cbd93f0831d1b675248153dcae18a9d66bde23322f7f1e",
+      "source": "A",
+      "before": "A",
+      "after": "Un",
+      "source_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "before_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "after_sha256": "d32a504100ef4cab53bfffd51fd31139aaf6c5ea5867074623c4a21b6466a7d7"
+    },
+    {
+      "course": "wa-real-estate-fundamentals-60",
+      "parent_source_sha256": "65be334ce785f839c34eb254fcfed97adf170996f71085ecf63d68371aac412f",
+      "source": "A",
+      "before": "A",
+      "after": "Un",
+      "source_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "before_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "after_sha256": "d32a504100ef4cab53bfffd51fd31139aaf6c5ea5867074623c4a21b6466a7d7"
+    },
+    {
+      "course": "wa-real-estate-fundamentals-60",
+      "parent_source_sha256": "2a276d687b61b4e18f6e11bb356de23d9fe2f0585c018a160b5f2fd3b8eb9ac5",
+      "source": "A",
+      "before": "A",
+      "after": "Un",
+      "source_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "before_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "after_sha256": "d32a504100ef4cab53bfffd51fd31139aaf6c5ea5867074623c4a21b6466a7d7"
+    },
+    {
+      "course": "wa-real-estate-fundamentals-60",
+      "parent_source_sha256": "4932b90acd8507df284e303be7c9024a58b8eda4e1e2148c3fe84e6fb2b231ed",
+      "source": "A",
+      "before": "A",
+      "after": "Un",
+      "source_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "before_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "after_sha256": "d32a504100ef4cab53bfffd51fd31139aaf6c5ea5867074623c4a21b6466a7d7"
+    },
+    {
+      "course": "wa-real-estate-fundamentals-60",
+      "parent_source_sha256": "6eaa20b2cefb81d31173a4db1d6e20cadccf9f3eeddb63a885b94f3bfcd7ef84",
+      "source": "A",
+      "before": "A",
+      "after": "Un",
+      "source_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "before_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "after_sha256": "d32a504100ef4cab53bfffd51fd31139aaf6c5ea5867074623c4a21b6466a7d7"
+    },
+    {
+      "course": "wa-real-estate-fundamentals-60",
+      "parent_source_sha256": "6eaa20b2cefb81d31173a4db1d6e20cadccf9f3eeddb63a885b94f3bfcd7ef84",
+      "source": "A",
+      "before": "A",
+      "after": "Un",
+      "source_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "before_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "after_sha256": "d32a504100ef4cab53bfffd51fd31139aaf6c5ea5867074623c4a21b6466a7d7"
+    },
+    {
+      "course": "wa-real-estate-fundamentals-60",
+      "parent_source_sha256": "72a3d8c26b98b9c718f0735e54a771f48098c45a738e41cf2576408236b08c11",
+      "source": "A",
+      "before": "A",
+      "after": "Un",
+      "source_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "before_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "after_sha256": "d32a504100ef4cab53bfffd51fd31139aaf6c5ea5867074623c4a21b6466a7d7"
+    },
+    {
+      "course": "wa-real-estate-fundamentals-60",
+      "parent_source_sha256": "72a3d8c26b98b9c718f0735e54a771f48098c45a738e41cf2576408236b08c11",
+      "source": ". A",
+      "before": ". A",
+      "after": ". Un",
+      "source_sha256": "ad1eadeb773a0b806593938abbf1d7190868ea0b0b5da7496f9eb0d6758d6ac4",
+      "before_sha256": "ad1eadeb773a0b806593938abbf1d7190868ea0b0b5da7496f9eb0d6758d6ac4",
+      "after_sha256": "ef6f2f0eac4c2c5c80ea6fbe9140732fcf7edec54a6da4c47b3d415515d10959"
+    },
+    {
+      "course": "wa-real-estate-fundamentals-60",
+      "parent_source_sha256": "72a3d8c26b98b9c718f0735e54a771f48098c45a738e41cf2576408236b08c11",
+      "source": "credit",
+      "before": "Crédito",
+      "after": "crédito",
+      "source_sha256": "ecc4873a1694eb0de0b33d68f0df091d6816127c1422266399700d02599a8628",
+      "before_sha256": "8b30fd842e6361be2c7172a4845b6f5eb94cca35ba4e9d6e1e4beae5d20660f9",
+      "after_sha256": "396739f30e4f1bb413e623297d3b6eafb3ef854132d331dd7b6191b23accdef4"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "2874520b7a552319c651a452f500409f13bc9f352ed043e3c6e23ed8297c9a01",
+      "source": "A",
+      "before": "A",
+      "after": "Un",
+      "source_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "before_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "after_sha256": "d32a504100ef4cab53bfffd51fd31139aaf6c5ea5867074623c4a21b6466a7d7"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "47be8f7f2ac4f70881ba1c86027cea3c9f4f04909ede9b2163b148af8f4b0e0c",
+      "source": "A",
+      "before": "A",
+      "after": "Un",
+      "source_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "before_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "after_sha256": "d32a504100ef4cab53bfffd51fd31139aaf6c5ea5867074623c4a21b6466a7d7"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "1bae8b8e53750d9e2a7bfa532204994faf05a22853727a272964a5e57bc11a82",
+      "source": "A",
+      "before": "A",
+      "after": "Un",
+      "source_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "before_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "after_sha256": "d32a504100ef4cab53bfffd51fd31139aaf6c5ea5867074623c4a21b6466a7d7"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "1bae8b8e53750d9e2a7bfa532204994faf05a22853727a272964a5e57bc11a82",
+      "source": "(2) Misrepresentation.",
+      "before": "2) Mal representación.",
+      "after": "(2) Tergiversación.",
+      "source_sha256": "80b569f9bb020192ee9b0055b356c6ff160209aa2918101d481a893bda83c957",
+      "before_sha256": "0359623245afeee49bc5c07f76c8173feb16769f6694330dc57653de191fc35e",
+      "after_sha256": "d36a6641354ef32effd8fcefdee128d8e51c0cf329d41b8ab17f889f7563238d"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "86baad65a3a5f719386431974a070eb0c2d1777bf5265b84233c0f6f2e75fb82",
+      "source": "A",
+      "before": "A",
+      "after": "Un",
+      "source_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "before_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "after_sha256": "d32a504100ef4cab53bfffd51fd31139aaf6c5ea5867074623c4a21b6466a7d7"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "a1beefe350a6f4ba832af6e430d967438859303952f349848cbf3375af4cb4c8",
+      "source": "A",
+      "before": "A",
+      "after": "Un",
+      "source_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "before_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "after_sha256": "d32a504100ef4cab53bfffd51fd31139aaf6c5ea5867074623c4a21b6466a7d7"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "a1beefe350a6f4ba832af6e430d967438859303952f349848cbf3375af4cb4c8",
+      "source": "is the agency agreement between a seller and a",
+      "before": "es el acuerdo de agencia entre un vendedor y un",
+      "after": "es el acuerdo de agencia entre un vendedor y una",
+      "source_sha256": "6b44913c5a3bedbcfb690180332576bb842260b3f73c6d847dae5f48c554416c",
+      "before_sha256": "4d3ea5d86097d69a4d9b06670e7995ba50bfb458836db09e25e1d6273fb0a858",
+      "after_sha256": "180dd8a3b176ec446fce32c400ea5996e7e5aae9d1dce6e70f0582754386d3fa"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "a1beefe350a6f4ba832af6e430d967438859303952f349848cbf3375af4cb4c8",
+      "source": ". It is what makes the seller a",
+      "before": ". Es lo que hace que el vendedor un",
+      "after": ". Es lo que convierte al vendedor en un",
+      "source_sha256": "01b1b6a56d567a80948dc1340f03135281432f305dce6779b0a2f631b709c360",
+      "before_sha256": "d5afb6f621271ff612767f011d5baf6c0a4a90e482d9f5e7a3fa647fd472e964",
+      "after_sha256": "56a76c9d3cc392a7b5bc345dad4c1a8662fc8ec57d73540ddea32a68c3a4b7bd"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "aad0f750951e6520ce36bc4c7c5659327492c4f5e6d61c878e76e86ab202cd18",
+      "source": "A",
+      "before": "A",
+      "after": "Un",
+      "source_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "before_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "after_sha256": "d32a504100ef4cab53bfffd51fd31139aaf6c5ea5867074623c4a21b6466a7d7"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "aad0f750951e6520ce36bc4c7c5659327492c4f5e6d61c878e76e86ab202cd18",
+      "source": "when the event occurs, and the grantor retains a",
+      "before": "cuando se produzca el hecho, y el otorgante retenga una",
+      "after": "cuando ocurre el hecho y el otorgante conserva una",
+      "source_sha256": "4bc4db2046ff35a56d51eb784c9047699bced502d68eda93f77badd4585a9a6a",
+      "before_sha256": "387fa1c9f4f487372eb7ec010cc5790f8124712a2b2e169cc0dc3d79877e15a0",
+      "after_sha256": "842981b1663c6fce6521595de8d221bbe5ef0111b49d78d1f917fa0404ed3a35"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "9a19bf5cde19cf05136f5e43fbb010e5caf4f1c147f355546262da21bccc901e",
+      "source": "A",
+      "before": "A",
+      "after": "Un",
+      "source_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "before_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "after_sha256": "d32a504100ef4cab53bfffd51fd31139aaf6c5ea5867074623c4a21b6466a7d7"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "11cbdc3cc687aa5a48392bb8f83dbc0d6f3d4c4cb447c6e28615ddb4b1c0e959",
+      "source": "A",
+      "before": "A",
+      "after": "Un",
+      "source_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "before_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "after_sha256": "d32a504100ef4cab53bfffd51fd31139aaf6c5ea5867074623c4a21b6466a7d7"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "11cbdc3cc687aa5a48392bb8f83dbc0d6f3d4c4cb447c6e28615ddb4b1c0e959",
+      "source": "life estate",
+      "before": "patrimonio vitalicio",
+      "after": "derecho vitalicio",
+      "source_sha256": "2f237090eaea366ec219af0d875f3e15882471f37bbe21ff8edcb1acf274fccb",
+      "before_sha256": "05ade2107cf2e3b5b41f02efd1d1d36deb59d0afd3379a624e9e5f48b5581308",
+      "after_sha256": "c98f7d8826e17ae09e710f9eb122f4d1abb6f889403fc531c721df17c733fff4"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "11cbdc3cc687aa5a48392bb8f83dbc0d6f3d4c4cb447c6e28615ddb4b1c0e959",
+      "source": "is a freehold measured by a life. The",
+      "before": "es un dominio medido por una vida. Los",
+      "after": "es un derecho de dominio cuya duración se mide por una vida. El",
+      "source_sha256": "f8f719c82fac6ff3b50db579f13c0498f80308ef8161e8464f9b83d3ad72cd8d",
+      "before_sha256": "2d0d0ca9c63b13a2027c1e599a88123a6fb1c52e68aff2d739696fb38e33e352",
+      "after_sha256": "aa624c47ab52b9796d98f6637970d96cb157c5fffc80a96b257c8d558daafe81"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "0286226baef615372dbcecbfa3d838b08bb8918cdcae40c0d5644a4adb4e92cc",
+      "source": "A",
+      "before": "A",
+      "after": "Un",
+      "source_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "before_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "after_sha256": "d32a504100ef4cab53bfffd51fd31139aaf6c5ea5867074623c4a21b6466a7d7"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "0286226baef615372dbcecbfa3d838b08bb8918cdcae40c0d5644a4adb4e92cc",
+      "source": "life estate pur autre vie",
+      "before": "life estate pur autre vie",
+      "after": "derecho vitalicio pur autre vie",
+      "source_sha256": "5745abb4cc13dea77c7b492ac6b818b63b63ecd0d03d3000b4ae5be4d75875ca",
+      "before_sha256": "5745abb4cc13dea77c7b492ac6b818b63b63ecd0d03d3000b4ae5be4d75875ca",
+      "after_sha256": "c9f8358b6a5c231d96f1d8eb8019e3ad890d9876115fe9e4af55af92e5d71d6e"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "28e245d93d49755f607e372cb9194bf6125d373c7d480bbb7c740631b9f02306",
+      "source": "A",
+      "before": "A",
+      "after": "Un",
+      "source_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "before_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "after_sha256": "d32a504100ef4cab53bfffd51fd31139aaf6c5ea5867074623c4a21b6466a7d7"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "774eb492c3854a67780ba0976bd8d1b694458cf3167e52d76dcc51e9cf1c2cf6",
+      "source": "A",
+      "before": "A",
+      "after": "Un",
+      "source_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "before_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "after_sha256": "d32a504100ef4cab53bfffd51fd31139aaf6c5ea5867074623c4a21b6466a7d7"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "774eb492c3854a67780ba0976bd8d1b694458cf3167e52d76dcc51e9cf1c2cf6",
+      "source": "In a",
+      "before": "En una",
+      "after": "En un",
+      "source_sha256": "cd7e14a97155920e6c47f28027437132fc7827e5f4aaf91f93e54142a004847d",
+      "before_sha256": "8c7bb8ba8ecf8dd68cc43a69e451b77a323df839d518e3dcb8a0bf7b6b616a2a",
+      "after_sha256": "2cb83998079b85346e56feffcb29eeddb3bda443be97612c3bc6edf0776040ef"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "f4c9c5635703d38acb623a9bffb685a2a738efa4e504b4b23a34a2b5c8dcfae7",
+      "source": "A",
+      "before": "A",
+      "after": "Un",
+      "source_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "before_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "after_sha256": "d32a504100ef4cab53bfffd51fd31139aaf6c5ea5867074623c4a21b6466a7d7"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "f4c9c5635703d38acb623a9bffb685a2a738efa4e504b4b23a34a2b5c8dcfae7",
+      "source": "township",
+      "before": "municipio",
+      "after": "township (cuadrícula de levantamiento)",
+      "source_sha256": "de121bf561e3f458532c2c6355dc9330cc18eb3d509eb6bd5079871c885640b3",
+      "before_sha256": "d718056712a1b3fbacab20ec0d81ae0746f198d32375d17066c059e6a2bd404b",
+      "after_sha256": "a6f1e2bb7c1d1934a056aefc22f6499782d2679fc43e37b95558789bab722cf7"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "f4c9c5635703d38acb623a9bffb685a2a738efa4e504b4b23a34a2b5c8dcfae7",
+      "source": "is the six-mile square where a tier and a range intersect —",
+      "before": "es el cuadrado de seis millas donde un nivel y un rango se cruzan —",
+      "after": "es el cuadrado de seis millas de lado en el que se cruzan una fila y una columna del sistema de levantamiento: ",
+      "source_sha256": "6f65356400173c85e34efa2263c9e88e7162e5a91287ece22e0594b5fb472e1d",
+      "before_sha256": "6558dc75151ad68415a8a2bba60a659aa4f81c9cd6f36f9c64700343bd3d92e0",
+      "after_sha256": "e12d351dd84467e63e53755f99c98a766079a228d457f1c842f002eafef765f4"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "936f197d9342b4c5a4d023cf757addcb3408f4ae40ee0a95dbd18def5b7b7d91",
+      "source": "A",
+      "before": "A",
+      "after": "Un",
+      "source_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "before_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "after_sha256": "d32a504100ef4cab53bfffd51fd31139aaf6c5ea5867074623c4a21b6466a7d7"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "d8b95eb0a4b4866256bcdcb860f4da70cc55e1a2b5f0da3f32d5f58844a26eff",
+      "source": "A",
+      "before": "A",
+      "after": "Un",
+      "source_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "before_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "after_sha256": "d32a504100ef4cab53bfffd51fd31139aaf6c5ea5867074623c4a21b6466a7d7"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "d8b95eb0a4b4866256bcdcb860f4da70cc55e1a2b5f0da3f32d5f58844a26eff",
+      "source": "voluntary",
+      "before": "voluntario",
+      "after": "gravamen voluntario",
+      "source_sha256": "347a5faf2ae6ce14e420853c869ad569069aa6c6cc65fc7ec23334be00d7dbee",
+      "before_sha256": "61f8dbbfa999afc698001c88da4621245a6596d17a7f5e1c5f0b0c37ec0c7d9f",
+      "after_sha256": "0575370b2b89301b435d0af6d81b2e370c18812c0326a2e3d246ec87530d7448"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "d8b95eb0a4b4866256bcdcb860f4da70cc55e1a2b5f0da3f32d5f58844a26eff",
+      "source": "lien is created deliberately by the owner — in Wisconsin, most commonly a",
+      "before": "es el gravamen creado deliberadamente por el propietario; en Wisconsin, suele ser una",
+      "after": "es creado deliberadamente por el propietario; en Wisconsin, suele ser una",
+      "source_sha256": "5ae201e8d96c0f294128154b34f667e824eb02b80ad5c61364c79ec63cd3bb23",
+      "before_sha256": "fcb03d063945a68059b1f20ca8d7e4fd13dcbff0b4d836a56dbcffd4d7193e39",
+      "after_sha256": "0001adbc4d4a286af688d80fe19fc9227ca8202a9990e68725afbf5e442c03ad"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "d8b95eb0a4b4866256bcdcb860f4da70cc55e1a2b5f0da3f32d5f58844a26eff",
+      "source": "involuntary",
+      "before": "involuntario",
+      "after": "gravamen involuntario",
+      "source_sha256": "146e5c6cd4cf9adc0cdfc8b8f904c12026d34df644be824cfdeb408c06c659a5",
+      "before_sha256": "245c38cec5f1c864e85ed62f990e3368c6e04a1a8b0bb9c8b53ec06933aaabe5",
+      "after_sha256": "15e0384198c6dbda3b2afb0a100a78fb4a1fe00e92bbc294d377278c56e6a02c"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "d8b95eb0a4b4866256bcdcb860f4da70cc55e1a2b5f0da3f32d5f58844a26eff",
+      "source": "lien arises by operation of law: tax liens, judgment liens, construction liens.",
+      "before": "es el gravamen que surge por efecto de la ley: gravámenes fiscales, judiciales o por obras.",
+      "after": "surge por disposición de la ley: gravámenes fiscales, judiciales y por obras.",
+      "source_sha256": "b762810dbbd74c5149531b544c33f7ed742bb769f1a2c33e066c8cb093c6a93f",
+      "before_sha256": "bf977bd180a9609415685359bee40192450536dc56afc686916d589724d5b3bc",
+      "after_sha256": "115125e6f749758c20ea5b7ef62251d51f6a3cacffec0e14ed724c5ea540395b"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "1bb452a885d0046e5ba53bad77da1c477ed6e9e8e135b4f77a1cd75c5c6322c8",
+      "source": "A",
+      "before": "A",
+      "after": "Un",
+      "source_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "before_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "after_sha256": "d32a504100ef4cab53bfffd51fd31139aaf6c5ea5867074623c4a21b6466a7d7"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "1bb452a885d0046e5ba53bad77da1c477ed6e9e8e135b4f77a1cd75c5c6322c8",
+      "source": "of the debtor's property within the jurisdiction — judgment liens, federal and state tax liens, estate tax liens. A",
+      "before": "los bienes del deudor dentro de la jurisdicción: gravámenes judiciales, fiscales federales y estatales, y sobre el caudal hereditario. Un",
+      "after": "los bienes del deudor dentro de la jurisdicción: gravámenes judiciales, fiscales federales y estatales y del impuesto sucesorio. Un",
+      "source_sha256": "50a22c9cf735bab0b62ec584506fd0fe858ec70c0452cd0a30ca3cdcc879e4d8",
+      "before_sha256": "c057a8856b1d8cc7f0db64df57e6520e6c613f2170e6e397f9c691c6adb0aa22",
+      "after_sha256": "b10f07f15859e0ba9c2d49b01491c759d98275530e4be6b57c7a74e9e71b0664"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "46d5808dbb3f1196a2955257c141ecaac635d78042050c78fab241ef14f634e2",
+      "source": "A",
+      "before": "A",
+      "after": "La prioridad de un",
+      "source_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "before_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "after_sha256": "bf6c50da923f55114280bf865034ddb142fed8d6fa79bab00b278dc6c3717956"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "46d5808dbb3f1196a2955257c141ecaac635d78042050c78fab241ef14f634e2",
+      "source": "'s priority is measured from a date tied to the commencement of the work rather than from filing, so a lien filed after closing can outrank a mortgage recorded before it. Hour 26.",
+      "before": "tiene una prioridad determinada por una fecha vinculada al comienzo de los trabajos, no a su presentación. Por ello, un gravamen presentado después del cierre puede tener prioridad sobre una hipoteca inscrita antes. Hora 26.",
+      "after": "se determina desde una fecha vinculada al comienzo de los trabajos, y no desde su presentación; por ello, un gravamen presentado después del cierre puede tener prioridad sobre una hipoteca inscrita antes. Hora 26.",
+      "source_sha256": "a7c06336e00155a649c4bc2cbe8441b400ca446294b2250b417dae3ee4b51394",
+      "before_sha256": "c27a2570eb66fe3381e6cca37b16cf86f74cfd86d5d30e90cc3e61cf2ac7db73",
+      "after_sha256": "ef76ef3c8ede9c02867ccb45f04d3a027930432fc89f0ff60f2b00ba54d871c6"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "46d5808dbb3f1196a2955257c141ecaac635d78042050c78fab241ef14f634e2",
+      "source": "Relation back.",
+      "before": "Relacion atrás.",
+      "after": "Retroacción de la prioridad.",
+      "source_sha256": "fb72ff2a9e40e837e3caf46a03cedbb800a92286c9d29b0eced763986e808211",
+      "before_sha256": "a4c8528f0dbc1f48be1bbf6e1cc8d5c9db42d725657f1d43a79f8910ecd655b9",
+      "after_sha256": "8fa9885932dbf1a7b22bca6376a6dd65f14e425f327830c00ce65865bafff920"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "4e424709acb5d083c2248f38253b5fa67cf5e6aba950f98d80e0343057e2dd01",
+      "source": "A",
+      "before": "A",
+      "after": "Un",
+      "source_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "before_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "after_sha256": "d32a504100ef4cab53bfffd51fd31139aaf6c5ea5867074623c4a21b6466a7d7"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "95ce7fea9024a0dfd02ee6133874684bcb00fc95d07c6b660a31231dca43ca10",
+      "source": "A",
+      "before": "A",
+      "after": "Un",
+      "source_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "before_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "after_sha256": "d32a504100ef4cab53bfffd51fd31139aaf6c5ea5867074623c4a21b6466a7d7"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "5e02d4e098134dc1a196758362738e2bbf21640080848e191605990bc6c48652",
+      "source": "A",
+      "before": "A",
+      "after": "Un",
+      "source_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "before_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "after_sha256": "d32a504100ef4cab53bfffd51fd31139aaf6c5ea5867074623c4a21b6466a7d7"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "7740dc242f5ee11a1dc08429b08ec0edb80e3ee896439d9455494b741463a3a1",
+      "source": "A",
+      "before": "A",
+      "after": "Un",
+      "source_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "before_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "after_sha256": "d32a504100ef4cab53bfffd51fd31139aaf6c5ea5867074623c4a21b6466a7d7"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "7740dc242f5ee11a1dc08429b08ec0edb80e3ee896439d9455494b741463a3a1",
+      "source": "is the agency agreement that makes a buyer a",
+      "before": "es el acuerdo de agencia que hace un comprador un",
+      "after": "es el acuerdo de agencia que convierte al comprador en un",
+      "source_sha256": "f2d4bd22106357659c608b2e7627c9ea9f7bc5e4eb92c7a7e94c34c4145d50ad",
+      "before_sha256": "3bd0560e7a0e400e2f33f0d7e8f00c6d03da4cf5692894d92fc882ba6132af80",
+      "after_sha256": "28b6103dd29c292ff60408105cfe208e1f4734c38d4053b7b8fd94f3d7006832"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "a7618ce00e475212e8c125c03f2394600fd2b05e30785f6a4d43c445bc4f47dc",
+      "source": "A",
+      "before": "A",
+      "after": "Un",
+      "source_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "before_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "after_sha256": "d32a504100ef4cab53bfffd51fd31139aaf6c5ea5867074623c4a21b6466a7d7"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "19c70297920f4527dff626efe2aa122c5ae16a8cefa53bae8912a973950bae00",
+      "source": "A",
+      "before": "A",
+      "after": "Un",
+      "source_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "before_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "after_sha256": "d32a504100ef4cab53bfffd51fd31139aaf6c5ea5867074623c4a21b6466a7d7"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "19c70297920f4527dff626efe2aa122c5ae16a8cefa53bae8912a973950bae00",
+      "source": "credit",
+      "before": "Crédito",
+      "after": "crédito",
+      "source_sha256": "ecc4873a1694eb0de0b33d68f0df091d6816127c1422266399700d02599a8628",
+      "before_sha256": "8b30fd842e6361be2c7172a4845b6f5eb94cca35ba4e9d6e1e4beae5d20660f9",
+      "after_sha256": "396739f30e4f1bb413e623297d3b6eafb3ef854132d331dd7b6191b23accdef4"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "19c70297920f4527dff626efe2aa122c5ae16a8cefa53bae8912a973950bae00",
+      "source": "is an amount in their favour. Each side's statement balances, and any",
+      "before": "es una cantidad a su favor. Saldos de estados de cuenta de cada lado, y cualquier",
+      "after": "es una cantidad a su favor. El estado de cuenta de cada parte debe cuadrar, y todo",
+      "source_sha256": "171b8768d4a6cf18110be5a86aa76f58a65d8a5f81f02b8bbbfecba18c4421e7",
+      "before_sha256": "18e7fd770a4d465a737ce42bd8ce385dc30654c607e29ef1e462373659bd1e14",
+      "after_sha256": "4f41cb4e300343316e7be4b9f0eaa0ab11f86adadc4efaaf7bba0d3671f82555"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "19c70297920f4527dff626efe2aa122c5ae16a8cefa53bae8912a973950bae00",
+      "source": "prorated amount appears on both statements, in opposite directions, to the penny.",
+      "before": "El monto prorrateado aparece en ambas declaraciones, en direcciones opuestas, al centavo.",
+      "after": "importe prorrateado aparece en ambos estados de cuenta, con efectos opuestos y exactitud al centavo.",
+      "source_sha256": "a1e5c16706d3907d5c8862a8d59c2f5951f4cc983a63dd65a53a5e18d8d5b36d",
+      "before_sha256": "2f6d4f36fafdb68308ed6dc01e45a7792e29966ee0584f5257f1b3a0c7d75e3b",
+      "after_sha256": "b377d3d1808c61d787e7048966e2f4e252dcee5be9fb0594975417389837359c"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "0c20cb8272e0ee2d05e7e8211f9c297500a8f085d3bc3834505d9c834b6a5c95",
+      "source": "A",
+      "before": "A",
+      "after": "Un",
+      "source_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "before_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "after_sha256": "d32a504100ef4cab53bfffd51fd31139aaf6c5ea5867074623c4a21b6466a7d7"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "0c20cb8272e0ee2d05e7e8211f9c297500a8f085d3bc3834505d9c834b6a5c95",
+      "source": "to a",
+      "before": "a a",
+      "after": "a un",
+      "source_sha256": "bcc5c3b5af8a603fa963fc1eeec95380d7f703234612e332fd256a1e4c84e0ff",
+      "before_sha256": "3d5fd6b1cde48def66c78708431808b9e2abb1363140a3c9f564a554f1ee9621",
+      "after_sha256": "16a3d243ef5c69dafae8fa2b6296ab44228a885f91b9550db799e11cb0ab2f46"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "a7f76358d0021607b7d1e713f51c186cc26559cc2849f13ebab9185f171ab794",
+      "source": "A",
+      "before": "A",
+      "after": "Un",
+      "source_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "before_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "after_sha256": "d32a504100ef4cab53bfffd51fd31139aaf6c5ea5867074623c4a21b6466a7d7"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "a7f76358d0021607b7d1e713f51c186cc26559cc2849f13ebab9185f171ab794",
+      "source": "— the rule gives it its own paragraph, and Wisconsin uses them substantially more than most states — is a financing structure in which the",
+      "before": "— la regla le da su propio párrafo, y Wisconsin los utiliza considerablemente más que la mayoría de los Estados — es una estructura de financiación en la que la",
+      "after": "—la norma le dedica un párrafo propio y Wisconsin los utiliza mucho más que la mayoría de los estados— es una estructura de financiación en la que el",
+      "source_sha256": "a70e53ca58f04ad6abc0c9f8f428a65670ea1d16f59e839c00521fe1f1e8705e",
+      "before_sha256": "750af9f7f668d4ddc1f2e50fef6d4e24f783ba675d3e9f2d1dcedff3ab089bf4",
+      "after_sha256": "4869ed73d668fbbba029abf3de90d6f43e32f112a84af7fcffd9af8997416735"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "8b25728168b84bc8990408e29ba27225dcc1f233b9e9a5dd891d0e1e7117f67f",
+      "source": "A",
+      "before": "A",
+      "after": "Un",
+      "source_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "before_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "after_sha256": "d32a504100ef4cab53bfffd51fd31139aaf6c5ea5867074623c4a21b6466a7d7"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "2d7f29733a0f99f1aed4b70e579fcc40dbd1c0576a6492de1f78bbf20dce3a00",
+      "source": "A",
+      "before": "A",
+      "after": "Un",
+      "source_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "before_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "after_sha256": "d32a504100ef4cab53bfffd51fd31139aaf6c5ea5867074623c4a21b6466a7d7"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "fdb5991386ac0ea20e80a0c14d50f892802587e92e30c9d8fec574d30d5902b7",
+      "source": "A",
+      "before": "A",
+      "after": "Un",
+      "source_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "before_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "after_sha256": "d32a504100ef4cab53bfffd51fd31139aaf6c5ea5867074623c4a21b6466a7d7"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "fdb5991386ac0ea20e80a0c14d50f892802587e92e30c9d8fec574d30d5902b7",
+      "source": "was lawful when established and became non-compliant on a later ordinance change. It may generally continue, typically may not be",
+      "before": "era legal cuando se estableció y se convirtió en incumplimiento en un cambio posterior ordenanza. Por lo general, puede continuar, por lo general puede no ser",
+      "after": "era legal cuando se estableció y dejó de ajustarse a la normativa tras una modificación posterior de la ordenanza. Generalmente puede continuar, pero normalmente no puede ser",
+      "source_sha256": "0d11c7b07c04f2b8dbdf59c100a1631b8d2061157bcd11fca8ee5bb711af07bd",
+      "before_sha256": "899c6cb1b2cd46529ef40dc5b1bcbc212339d296afb4537d94a2a2aa987827ff",
+      "after_sha256": "661dd1689609938866fe1eab80bc59d69acbca411ca5fe0ca9d846ed848eba63"
+    },
+    {
+      "course": "wa-real-estate-fundamentals-60",
+      "parent_source_sha256": "a5ca41898d2a86a6b00bde333905e9b0488d6b7a7e1fa93025a12f17cc0de39e",
+      "source": "A",
+      "before": "A",
+      "after": "Una",
+      "source_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "before_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "after_sha256": "658116fe1ac33179f388cc6cb7a4a3f59b656a301d6d710e1ac87f38cc1e5a7e"
+    },
+    {
+      "course": "wa-real-estate-fundamentals-60",
+      "parent_source_sha256": "0c385e8100b73b74f0c631f94c5ec488225d5baafc734333533beb0bce6e2aff",
+      "source": "A",
+      "before": "A",
+      "after": "Una",
+      "source_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "before_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "after_sha256": "658116fe1ac33179f388cc6cb7a4a3f59b656a301d6d710e1ac87f38cc1e5a7e"
+    },
+    {
+      "course": "wa-real-estate-fundamentals-60",
+      "parent_source_sha256": "013b0034b7b8a076e85f2d5382e9f7c1550b6aa7c23d2795fe6e6a7d2c547936",
+      "source": "A",
+      "before": "A",
+      "after": "Una",
+      "source_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "before_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "after_sha256": "658116fe1ac33179f388cc6cb7a4a3f59b656a301d6d710e1ac87f38cc1e5a7e"
+    },
+    {
+      "course": "wa-real-estate-fundamentals-60",
+      "parent_source_sha256": "013b0034b7b8a076e85f2d5382e9f7c1550b6aa7c23d2795fe6e6a7d2c547936",
+      "source": "asks for an exception; a",
+      "before": "pide una excepción; a",
+      "after": "solicita una excepción; un",
+      "source_sha256": "fd05dad3f1f7dd436ba3838447c212714ad51bd86d69b1d210e4751d927c7c05",
+      "before_sha256": "892930674615b7b7c770fe0373c333e467f657b9fbb80ae6af8677439798279f",
+      "after_sha256": "86a3f67a87c4e60471de9fac9b0125da5d239b546a6f42dbeb63713d028e33f6"
+    },
+    {
+      "course": "wa-real-estate-fundamentals-60",
+      "parent_source_sha256": "013b0034b7b8a076e85f2d5382e9f7c1550b6aa7c23d2795fe6e6a7d2c547936",
+      "source": "asks for something the rule already allows on conditions; a",
+      "before": "pide algo que la regla ya permite en condiciones; un",
+      "after": "solicita algo que la norma ya permite bajo condiciones; un",
+      "source_sha256": "7e830cbded0c5ba6a25cb8ddff67cdd2254708d87820e7af7c621a57ee197b30",
+      "before_sha256": "9a663017463944941c85d6ad2abf0e119eb05f93ae555ba098f89e34092b0b9b",
+      "after_sha256": "0eb79513d7f2a723b47ff20a7562623ec38b7261055ef69c5c1e86e151275b00"
+    },
+    {
+      "course": "wa-real-estate-fundamentals-60",
+      "parent_source_sha256": "655c91004e2fa38d021de2ef9e7e82f169de25c1b0f3f163b141beaa1956165c",
+      "source": "A",
+      "before": "A",
+      "after": "Una",
+      "source_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "before_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "after_sha256": "658116fe1ac33179f388cc6cb7a4a3f59b656a301d6d710e1ac87f38cc1e5a7e"
+    },
+    {
+      "course": "wa-real-estate-fundamentals-60",
+      "parent_source_sha256": "655c91004e2fa38d021de2ef9e7e82f169de25c1b0f3f163b141beaa1956165c",
+      "source": "VA release of liability does not by itself release the original borrower from liability to the lender** — that takes the lender's own release.",
+      "before": "La liberación de responsabilidad de VA no libera por sí misma al prestatario original de la responsabilidad al prestamista** — que toma la propia liberación del prestamista.",
+      "after": "exoneración de responsabilidad de VA no libera por sí sola al prestatario original de su responsabilidad ante el prestamista**; para ello se requiere la liberación otorgada por el propio prestamista.",
+      "source_sha256": "3b34cc7eefae84933e12fbb97a71484c38b573d080c66c5012cba20c3f5b96b3",
+      "before_sha256": "635d145c6e47f001636297671386eb22befc704cb475276ed670d1741d130633",
+      "after_sha256": "870a6f973a6dee4b3937646407eb1d7f37518ece58becc8fba3c10e0e94e1c8d"
+    },
+    {
+      "course": "wa-real-estate-fundamentals-60",
+      "parent_source_sha256": "d5c699755cc623b08f68ebcf1e3719910f3f01aa627ed4e52cba1158113969db",
+      "source": "A",
+      "before": "A",
+      "after": "Una",
+      "source_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "before_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "after_sha256": "658116fe1ac33179f388cc6cb7a4a3f59b656a301d6d710e1ac87f38cc1e5a7e"
+    },
+    {
+      "course": "wa-real-estate-fundamentals-60",
+      "parent_source_sha256": "d5c699755cc623b08f68ebcf1e3719910f3f01aa627ed4e52cba1158113969db",
+      "source": "; a",
+      "before": ";a",
+      "after": "; una",
+      "source_sha256": "eac5668a91b57ee54ef2c528536cadac6ec07af7312a00144a910af4707bae2e",
+      "before_sha256": "35c649e91b77ac0f3b57bd0405941249058712b06eccc94eabe0cbafd81547d2",
+      "after_sha256": "f855b4e59c0bdf3d8d37fe4258adcab4e581b8d30662b7e293db6da3632ea437"
+    },
+    {
+      "course": "wa-real-estate-fundamentals-60",
+      "parent_source_sha256": "d5c699755cc623b08f68ebcf1e3719910f3f01aa627ed4e52cba1158113969db",
+      "source": "pending sale has not yet survived appraisal, financing or inspection.",
+      "before": "la venta pendiente aún no ha sobrevivido a la evaluación, la financiación o la inspección.",
+      "after": "venta pendiente aún no ha superado la tasación, la financiación o la inspección.",
+      "source_sha256": "a6c1bdfc9ecf213b5acb9db87042f4dfaafb957c3822b912c4ea87ed8a83be49",
+      "before_sha256": "295ba23c2bf114676a353ec442eb7cfa403491424a4cfb29d51df531d3e710ce",
+      "after_sha256": "a0a847d5a52c57d8a9cb1b2742dcd6e374a6ff4652486980a22b71182c53f291"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "92279064491bcc741aaef137a20724735391ac9c239a1fc630cd949d7d51c8e0",
+      "source": "A",
+      "before": "A",
+      "after": "Una",
+      "source_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "before_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "after_sha256": "658116fe1ac33179f388cc6cb7a4a3f59b656a301d6d710e1ac87f38cc1e5a7e"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "7f02117b21dad71b151dea3b7b3d2883071f67ca1bf8c38117cb1888adfd8309",
+      "source": "A",
+      "before": "A",
+      "after": "Una",
+      "source_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "before_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "after_sha256": "658116fe1ac33179f388cc6cb7a4a3f59b656a301d6d710e1ac87f38cc1e5a7e"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "7f02117b21dad71b151dea3b7b3d2883071f67ca1bf8c38117cb1888adfd8309",
+      "source": "is revocable personal permission and is",
+      "before": "es un permiso personal revocable y es",
+      "after": "es un permiso personal revocable y",
+      "source_sha256": "7cec5dacda4e5ca00640c6ef461937fec44c88605d1896880c07b686c7c79c15",
+      "before_sha256": "eaff948ca421406e365808f992c0bf32e2d798d4349243d46d1f05afab324a4a",
+      "after_sha256": "755132ea6ed0cfa6f087eb6bae69dca2d80455770603b9fa31b7c226bd06a351"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "7f02117b21dad71b151dea3b7b3d2883071f67ca1bf8c38117cb1888adfd8309",
+      "source": "not",
+      "before": "no",
+      "after": "no constituye",
+      "source_sha256": "254bb97b57f12e1608fefc4517de768427b2fd6d2cffbbfcbc09f3c818198d5f",
+      "before_sha256": "9390298f3fb0c5b160498935d79cb139aef28e1c47358b4bbba61862b9c26e59",
+      "after_sha256": "52ec3f5c87f824d45895008555888f68dd64e048e2662320854067db802b18f1"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "c1b245ea0a0193dbc13b5ed40873193e9234622ffa98895f1b00322243521221",
+      "source": "A",
+      "before": "A",
+      "after": "Una",
+      "source_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "before_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "after_sha256": "658116fe1ac33179f388cc6cb7a4a3f59b656a301d6d710e1ac87f38cc1e5a7e"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "8f6c67a402860a3309858bef85088b580348e30a54cd07a52fa12a47e5eb8d89",
+      "source": "A",
+      "before": "A",
+      "after": "Una",
+      "source_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "before_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "after_sha256": "658116fe1ac33179f388cc6cb7a4a3f59b656a301d6d710e1ac87f38cc1e5a7e"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "91c3862fcbb62b6c96e886881045f38692dc8593287c3453972bfe3a9e823ea0",
+      "source": "A",
+      "before": "A",
+      "after": "Una",
+      "source_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "before_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "after_sha256": "658116fe1ac33179f388cc6cb7a4a3f59b656a301d6d710e1ac87f38cc1e5a7e"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "91c3862fcbb62b6c96e886881045f38692dc8593287c3453972bfe3a9e823ea0",
+      "source": "rejects the offer and makes a new one, incorporating the original by reference and changing stated terms. It has its own",
+      "before": "rechaza la oferta y hace una nueva, incorporando el original por referencia y cambiando los términos establecidos. Tiene su propia",
+      "after": "rechaza la oferta y formula una nueva, incorporando la original por referencia y modificando los términos indicados. Tiene su propio plazo de",
+      "source_sha256": "a3c8be7454c321acc9d9e630cf30de1d2320bcbeb96679c925358e2b21e0beb0",
+      "before_sha256": "76b22ae7b88376278c19e8c47db4bef045e57cb282a8cd0cbf3598b48c0eac31",
+      "after_sha256": "3de688c5350cd39de8cd7c6ede383167a4ed95086874bd7ae56eaf63c3be7852"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "91c3862fcbb62b6c96e886881045f38692dc8593287c3453972bfe3a9e823ea0",
+      "source": "deadline, and — this is the point students miss —",
+      "before": "plazo, y — este es el punto que los estudiantes pierden —",
+      "after": "y —este es el punto que suele pasarse por alto—",
+      "source_sha256": "a5a3d58b81c5c9c1eb08eb1537cc04006d7efd5122202c8378dc5ecf9bf4b4a9",
+      "before_sha256": "15c510863b770d022b923c9cbb7c3461c88f4b34e6f7f97ee0b8196324d84895",
+      "after_sha256": "7116a91c356622e5a6274a57255159c4401d972ea14bb4a7f765796e369bf999"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "265f49b62c79fa312401e57251559f28003b9030424fec3d9eac199e7b7594d3",
+      "source": "A",
+      "before": "A",
+      "after": "Una",
+      "source_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "before_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "after_sha256": "658116fe1ac33179f388cc6cb7a4a3f59b656a301d6d710e1ac87f38cc1e5a7e"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "3d3794359e7076373aac9a47e9cc3496635284c73942413bcfcfc1dddfb12eaa",
+      "source": "A",
+      "before": "A",
+      "after": "Una",
+      "source_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "before_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "after_sha256": "658116fe1ac33179f388cc6cb7a4a3f59b656a301d6d710e1ac87f38cc1e5a7e"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "fc27a21ba3c5fd31b474ba683732f6305227fc5a8740c47194da6a392d2ec429",
+      "source": "A",
+      "before": "A",
+      "after": "Una",
+      "source_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "before_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "after_sha256": "658116fe1ac33179f388cc6cb7a4a3f59b656a301d6d710e1ac87f38cc1e5a7e"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "687a0554417a62052e5eb8ef6f0c8d1f0e94d4eac93ac3d4fd37b1d895375611",
+      "source": "A",
+      "before": "A",
+      "after": "Una",
+      "source_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "before_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "after_sha256": "658116fe1ac33179f388cc6cb7a4a3f59b656a301d6d710e1ac87f38cc1e5a7e"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "86c276e165b961d44d66463cbb8410cc0c451d0b16a20d62ff7dc30b480f1d8b",
+      "source": "A",
+      "before": "A",
+      "after": "Una",
+      "source_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "before_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "after_sha256": "658116fe1ac33179f388cc6cb7a4a3f59b656a301d6d710e1ac87f38cc1e5a7e"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "86c276e165b961d44d66463cbb8410cc0c451d0b16a20d62ff7dc30b480f1d8b",
+      "source": "is an informal estimate from unverified information. A",
+      "before": "es una estimación oficiosa a partir de información no verificada. A",
+      "after": "es una estimación informal basada en información no verificada. Una",
+      "source_sha256": "4eb7fd66d4a5ab87066143e47fe9b96ac1832c0fab6fca2c3b5b22ac70dc660e",
+      "before_sha256": "1510d82c7371fe263b70e1b65ead16ac04c3e59f5dfe5cad4bdfba471d291364",
+      "after_sha256": "b94fbb9eff4143bd3f028ded19674fbdd35f429e70bdf9aaa06822c1cb75493f"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "3b5131525e4edaf2e236ce67a372eac0ace2aa68ed1031d783d62a91dbeb7dff",
+      "source": "A",
+      "before": "A",
+      "after": "Una",
+      "source_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "before_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "after_sha256": "658116fe1ac33179f388cc6cb7a4a3f59b656a301d6d710e1ac87f38cc1e5a7e"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "3b5131525e4edaf2e236ce67a372eac0ace2aa68ed1031d783d62a91dbeb7dff",
+      "source": "parties: the",
+      "before": "partes: la",
+      "after": "partes: el",
+      "source_sha256": "af492724e8da56547af4c517329fa5625603d404fa44870e0fbcdd62567ed53f",
+      "before_sha256": "2190b9af47f139f81d1e2955da5c17e666ef55674f2b6543ad6be86a2307bac8",
+      "after_sha256": "df7ebff05dbfbe7610977c7b53d51937a3edd8eb84dac0879a784a704fb21c6b"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "3703cce5ba588011ee43642188705e1bd7ec3502c5e24efeb0fbd09305054b72",
+      "source": "A",
+      "before": "A",
+      "after": "Una",
+      "source_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "before_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "after_sha256": "658116fe1ac33179f388cc6cb7a4a3f59b656a301d6d710e1ac87f38cc1e5a7e"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "de59574a4a893d1c7e2cf77bae0b1098e873f1b4f876e8343f3fbb7b7fa20739",
+      "source": "A",
+      "before": "A",
+      "after": "Una",
+      "source_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "before_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "after_sha256": "658116fe1ac33179f388cc6cb7a4a3f59b656a301d6d710e1ac87f38cc1e5a7e"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "de59574a4a893d1c7e2cf77bae0b1098e873f1b4f876e8343f3fbb7b7fa20739",
+      "source": "arising from the property itself — shape, topography, soils. It is granted by the",
+      "before": "emergido de la propiedad misma — forma, topografía, suelos. Es concedida por el",
+      "after": "que surgen de la propia propiedad: forma, topografía o suelos. La concede la",
+      "source_sha256": "39cf1e6e840fc9d78e931371abdef01f00b5f5738d3870943081715d60ef6fe3",
+      "before_sha256": "cd8d167bb495ba7e984ce149d19bf1a27c77864c70333549d5d9dfb7f3cfd5ad",
+      "after_sha256": "0cc30054c820179013b07dc0f9bd6ddcd8bf1b74d7b92b6ee3c6d65991be878c"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "a9b9fc79cc517dbba9e0038e090997a7e6f24579b268e9f0051d31749e55f0e2",
+      "source": "A",
+      "before": "A",
+      "after": "Una",
+      "source_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "before_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "after_sha256": "658116fe1ac33179f388cc6cb7a4a3f59b656a301d6d710e1ac87f38cc1e5a7e"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "a9b9fc79cc517dbba9e0038e090997a7e6f24579b268e9f0051d31749e55f0e2",
+      "source": "amends the ordinance itself and is a",
+      "before": "modifica la propia ordenanza y es un",
+      "after": "modifica la propia ordenanza y constituye un acto",
+      "source_sha256": "09b3168acf4c7714b0490cf7bf7f1feec2037dbf631e98c8059ecccf40ed6d6f",
+      "before_sha256": "a8ba83985f770d07c31fac39b6e532ea4e363c57f495685f33848db9da0c32c4",
+      "after_sha256": "c06b3618941a9b3261d753ba5721b3422f40ade0cc8218651af152e026c855a7"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "a9b9fc79cc517dbba9e0038e090997a7e6f24579b268e9f0051d31749e55f0e2",
+      "source": "legislative",
+      "before": "legislativa",
+      "after": "legislativo",
+      "source_sha256": "07f12cbc2ab5135c72ba7917d80a08c57f8759b21d3680904faf732ee3671c45",
+      "before_sha256": "dc3a85c4a2ea13b47b7c0cfbc4e0875b5e2b9c45a1b92335d885d581f54ed72e",
+      "after_sha256": "7c90ef9cc496f9b69891b27b43bf43768e96fc869525e1027762a76f3e74b69e"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "a9b9fc79cc517dbba9e0038e090997a7e6f24579b268e9f0051d31749e55f0e2",
+      "source": "act of the governing body.",
+      "before": "el acto del órgano de gobierno.",
+      "after": "del órgano de gobierno.",
+      "source_sha256": "47395ee6aac8aae4719b755d75d46356680edc81d3142f2613842d609d1bd24b",
+      "before_sha256": "bb96057059d89e59d685a80c91edc41bb6e7103af78e816eb6a67ae9d1344a69",
+      "after_sha256": "ad5cbff2145bb47c7daf5f9a579c66a9f38fa14c9c1c5c94a03930afecf00281"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "436a075f4035dd0112efe28fb6c2522134726f1850438a30b77e4354f4d52e02",
+      "source": "A",
+      "before": "A",
+      "after": "Una",
+      "source_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "before_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "after_sha256": "658116fe1ac33179f388cc6cb7a4a3f59b656a301d6d710e1ac87f38cc1e5a7e"
+    },
+    {
+      "course": "wa-real-estate-fundamentals-60",
+      "parent_source_sha256": "40de0598f7dcafba07f941741786d64af55d394da654138baec8eb1d0c495db0",
+      "source": "An",
+      "before": "Un",
+      "after": "Una",
+      "source_sha256": "9f98b7c7f071714517d9a5e67c135b41fa3e91f20bac108158b33b073396f6e5",
+      "before_sha256": "d32a504100ef4cab53bfffd51fd31139aaf6c5ea5867074623c4a21b6466a7d7",
+      "after_sha256": "658116fe1ac33179f388cc6cb7a4a3f59b656a301d6d710e1ac87f38cc1e5a7e"
+    },
+    {
+      "course": "wa-real-estate-fundamentals-60",
+      "parent_source_sha256": "40de0598f7dcafba07f941741786d64af55d394da654138baec8eb1d0c495db0",
+      "source": "identifies a mailbox. A",
+      "before": "identifica un buzón. A",
+      "after": "identifica un buzón. Un",
+      "source_sha256": "e200bf7adf7ff7c1aa4858d2c08c5af5fc858052390ac4e62923d2f58fbe1594",
+      "before_sha256": "fb3a56d179fe1bd1b5759f3eccef6634f2e5bb34c9a776c7a0888a6388332814",
+      "after_sha256": "db58791783928e8db47b59f13147021a29fc574609d54bfb89b375e03b2f3061"
+    },
+    {
+      "course": "wa-real-estate-fundamentals-60",
+      "parent_source_sha256": "631e46d31d6e9e675d1095577812297e9abd8d7fe09ed8f43ec605777e17edf4",
+      "source": "An",
+      "before": "Un",
+      "after": "Una",
+      "source_sha256": "9f98b7c7f071714517d9a5e67c135b41fa3e91f20bac108158b33b073396f6e5",
+      "before_sha256": "d32a504100ef4cab53bfffd51fd31139aaf6c5ea5867074623c4a21b6466a7d7",
+      "after_sha256": "658116fe1ac33179f388cc6cb7a4a3f59b656a301d6d710e1ac87f38cc1e5a7e"
+    },
+    {
+      "course": "wa-real-estate-fundamentals-60",
+      "parent_source_sha256": "631e46d31d6e9e675d1095577812297e9abd8d7fe09ed8f43ec605777e17edf4",
+      "source": "is a manifestation of willingness to be bound on stated terms. It may be",
+      "before": "es una manifestación de voluntad de obligarse en términos establecidos. Puede ser.",
+      "after": "es una manifestación de voluntad de quedar obligado según condiciones establecidas. Puede ser",
+      "source_sha256": "45119c27cda2f98f164dd2081f3eb72b9aee6a63a0e1d86180b01f971462709d",
+      "before_sha256": "f144b6955b6a41a05e51d1c48f000c6f23bf4050394be4f36bd99b0dac2c5d62",
+      "after_sha256": "3f3d82942375c03323577ba6182dd0a69ba314fbfd45e4c490c7d8207e8d76dd"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "c6bc180b8366d48d5e2783e6ccf513bc5606d30d4072307501ae8148d4265f04",
+      "source": "An",
+      "before": "Un",
+      "after": "Una",
+      "source_sha256": "9f98b7c7f071714517d9a5e67c135b41fa3e91f20bac108158b33b073396f6e5",
+      "before_sha256": "d32a504100ef4cab53bfffd51fd31139aaf6c5ea5867074623c4a21b6466a7d7",
+      "after_sha256": "658116fe1ac33179f388cc6cb7a4a3f59b656a301d6d710e1ac87f38cc1e5a7e"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "79f7a581114fabfbf3777983fc83b68b4363e49c7dfecda1105a0f21fcaac861",
+      "source": "An",
+      "before": "Un",
+      "after": "Una",
+      "source_sha256": "9f98b7c7f071714517d9a5e67c135b41fa3e91f20bac108158b33b073396f6e5",
+      "before_sha256": "d32a504100ef4cab53bfffd51fd31139aaf6c5ea5867074623c4a21b6466a7d7",
+      "after_sha256": "658116fe1ac33179f388cc6cb7a4a3f59b656a301d6d710e1ac87f38cc1e5a7e"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "23c6171938da5d22111f6e267100f6096c6d0c159290937392e615fb2d829cb4",
+      "source": "An",
+      "before": "Un",
+      "after": "Una",
+      "source_sha256": "9f98b7c7f071714517d9a5e67c135b41fa3e91f20bac108158b33b073396f6e5",
+      "before_sha256": "d32a504100ef4cab53bfffd51fd31139aaf6c5ea5867074623c4a21b6466a7d7",
+      "after_sha256": "658116fe1ac33179f388cc6cb7a4a3f59b656a301d6d710e1ac87f38cc1e5a7e"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "23c6171938da5d22111f6e267100f6096c6d0c159290937392e615fb2d829cb4",
+      "source": "benefits a parcel: the benefited parcel is the",
+      "before": "beneficia a un terreno: la parcela beneficiada es la",
+      "after": "beneficia a una parcela: la parcela beneficiada es el",
+      "source_sha256": "7a45aec6119f55dd358cb3c1874e3f937d7b8a41aff6c39e38e4ab6fab3a8391",
+      "before_sha256": "a77e85238beaca32d4e2eb91907818ab64efc12908873cb7e157490f27ef2a3c",
+      "after_sha256": "4cd759c413c405dbdbc4be84fe8cc384d888c591f9b606dcecc0ab1c5cf18cc6"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "976429f3fab76246e5a631f69bb8f99bcc261767eec242e29180cc6029620314",
+      "source": "An",
+      "before": "Un",
+      "after": "Una",
+      "source_sha256": "9f98b7c7f071714517d9a5e67c135b41fa3e91f20bac108158b33b073396f6e5",
+      "before_sha256": "d32a504100ef4cab53bfffd51fd31139aaf6c5ea5867074623c4a21b6466a7d7",
+      "after_sha256": "658116fe1ac33179f388cc6cb7a4a3f59b656a301d6d710e1ac87f38cc1e5a7e"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "976429f3fab76246e5a631f69bb8f99bcc261767eec242e29180cc6029620314",
+      "source": "benefits a person or entity rather than a parcel — utility easements being the common example, and commercial easements in gross being assignable.",
+      "before": "beneficia a una persona o entidad en lugar de a un terreno: las servidumbres de utilidad son el ejemplo común, y las servidumbres comerciales en bruto son asignables.",
+      "after": "beneficia a una persona o entidad en lugar de a una parcela; las servidumbres para servicios públicos son el ejemplo habitual y las servidumbres personales comerciales pueden cederse.",
+      "source_sha256": "76441a5792db2b14989513e6be321a1a9e8ba0662910322093c4a08df09f1e19",
+      "before_sha256": "a5757f039e5c00b7215c68881004214274441542ba8450e417b52a856ff23c74",
+      "after_sha256": "6fa64466303d45cf7f32c7552ebf6da3531e1b31a22d632f8537a050220144f8"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "a04f830e851e671ff09614a8bbb2a367a4a572ae0c4289205e0f53e7174a808b",
+      "source": "An",
+      "before": "Un",
+      "after": "Una",
+      "source_sha256": "9f98b7c7f071714517d9a5e67c135b41fa3e91f20bac108158b33b073396f6e5",
+      "before_sha256": "d32a504100ef4cab53bfffd51fd31139aaf6c5ea5867074623c4a21b6466a7d7",
+      "after_sha256": "658116fe1ac33179f388cc6cb7a4a3f59b656a301d6d710e1ac87f38cc1e5a7e"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "22d1298c0a231265a7e54b7536555e2e436d7282f70053d439bd97aeceab2542",
+      "source": "An",
+      "before": "Un",
+      "after": "Una",
+      "source_sha256": "9f98b7c7f071714517d9a5e67c135b41fa3e91f20bac108158b33b073396f6e5",
+      "before_sha256": "d32a504100ef4cab53bfffd51fd31139aaf6c5ea5867074623c4a21b6466a7d7",
+      "after_sha256": "658116fe1ac33179f388cc6cb7a4a3f59b656a301d6d710e1ac87f38cc1e5a7e"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "d90f8afd79eb5a8752309fd672c3a0180b0ad63fa78a7793815bdcb5e9b23b5e",
+      "source": "An",
+      "before": "Un",
+      "after": "Una",
+      "source_sha256": "9f98b7c7f071714517d9a5e67c135b41fa3e91f20bac108158b33b073396f6e5",
+      "before_sha256": "d32a504100ef4cab53bfffd51fd31139aaf6c5ea5867074623c4a21b6466a7d7",
+      "after_sha256": "658116fe1ac33179f388cc6cb7a4a3f59b656a301d6d710e1ac87f38cc1e5a7e"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "e916e5e8abcefc3300539ad9002f3673339875d46c4db97a4995eb3ad2ecba80",
+      "source": "An",
+      "before": "Un",
+      "after": "Una",
+      "source_sha256": "9f98b7c7f071714517d9a5e67c135b41fa3e91f20bac108158b33b073396f6e5",
+      "before_sha256": "d32a504100ef4cab53bfffd51fd31139aaf6c5ea5867074623c4a21b6466a7d7",
+      "after_sha256": "658116fe1ac33179f388cc6cb7a4a3f59b656a301d6d710e1ac87f38cc1e5a7e"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "e916e5e8abcefc3300539ad9002f3673339875d46c4db97a4995eb3ad2ecba80",
+      "source": ". It is",
+      "before": ". Lo es.",
+      "after": ". Es",
+      "source_sha256": "0593d3723218bd21b48484f3fdabc6c9afb7e7c1b330812d344779ad7a245b39",
+      "before_sha256": "369a17705a2e723d0356ac4bdd2278b2daeba29f7bf2d599267305018ddf421b",
+      "after_sha256": "cfc3db041f9d29ff7b9edbb62e99dcb5b1d113d5f42c9e79bff7179babe8c4e5"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "2bca8bb490fd271395375a00a9e03abd761c084c7177e86198a1b4a184d76eb1",
+      "source": "An",
+      "before": "Un",
+      "after": "Una",
+      "source_sha256": "9f98b7c7f071714517d9a5e67c135b41fa3e91f20bac108158b33b073396f6e5",
+      "before_sha256": "d32a504100ef4cab53bfffd51fd31139aaf6c5ea5867074623c4a21b6466a7d7",
+      "after_sha256": "658116fe1ac33179f388cc6cb7a4a3f59b656a301d6d710e1ac87f38cc1e5a7e"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "2bca8bb490fd271395375a00a9e03abd761c084c7177e86198a1b4a184d76eb1",
+      "source": "insures the buyer's interest for the purchase price, for as long as the insured or their heirs hold an interest. A",
+      "before": "asegura el interés del comprador por el precio de compra, mientras el asegurado o sus herederos tengan un interés. A",
+      "after": "asegura el interés del comprador por el precio de compra mientras el asegurado o sus herederos conserven un interés. Una",
+      "source_sha256": "955fd1069daa7f6cd281168a20c737c0038c5bc209ea2a5aae1918994f9a97e8",
+      "before_sha256": "12f54a8a75b7bd5dd99bda683521a14aed8a5dffed07aeda6560edd86d4c4a90",
+      "after_sha256": "145b6f5ad7467751e4691b50e6b270832def8ea98393b367fb1eaefe03e461e7"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "7c7567a6bed7db414c13f1291ac83574c56f3a1cb079852d6a55c35a7c55ced3",
+      "source": "An",
+      "before": "Un",
+      "after": "Una",
+      "source_sha256": "9f98b7c7f071714517d9a5e67c135b41fa3e91f20bac108158b33b073396f6e5",
+      "before_sha256": "d32a504100ef4cab53bfffd51fd31139aaf6c5ea5867074623c4a21b6466a7d7",
+      "after_sha256": "658116fe1ac33179f388cc6cb7a4a3f59b656a301d6d710e1ac87f38cc1e5a7e"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "7c7567a6bed7db414c13f1291ac83574c56f3a1cb079852d6a55c35a7c55ced3",
+      "source": "moves with an",
+      "before": "se mueve con una",
+      "after": "varía según un",
+      "source_sha256": "02cffa2bcd4579365e4b7a5233c134f07971b166f56c91b24f8543381e88ebc7",
+      "before_sha256": "6398f9b0477d75fa1d6e76c98eef23c978393fb7df3d4140e92b7f3ee4972200",
+      "after_sha256": "bc5e1e3ae0796697a0945990f4f87ede185cd325d02f201040214bbe7abd075c"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "7c7567a6bed7db414c13f1291ac83574c56f3a1cb079852d6a55c35a7c55ced3",
+      "source": "plus a fixed",
+      "before": "más un fijo",
+      "after": "más un",
+      "source_sha256": "d8ef18e5e9ac992440b7383e80587233a91463a21200e3dff4388168a8e28975",
+      "before_sha256": "bb9f6679b27ed41650118bad7ec069d4b1f2fd73b4b1db62d6b34c608def02b8",
+      "after_sha256": "ca5071c34df913f9f69aeedf8599acaab74dc21f5ee2f2ed697bfcddf14ac04e"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "7c7567a6bed7db414c13f1291ac83574c56f3a1cb079852d6a55c35a7c55ced3",
+      "source": "margin",
+      "before": "margen",
+      "after": "margen fijo",
+      "source_sha256": "34e39f662ff56641cc7349a80ede67d2ab405dc96524506d3d4df9bd5b9e01c9",
+      "before_sha256": "c92bb4da96214006c758bcee123e3738498cd6506d26083bfee3ac5fbde7ec86",
+      "after_sha256": "89787eacfe4181c4354f7390632b53d6cdbb1c85870f880d2d41523e039d213f"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "7c7567a6bed7db414c13f1291ac83574c56f3a1cb079852d6a55c35a7c55ced3",
+      "source": ", a",
+      "before": ", a",
+      "after": ", un",
+      "source_sha256": "a5c172abdd6ea1e886ffbda844ab1ea24af334c8fa53ddf7adf81ec6a15c8bac",
+      "before_sha256": "a5c172abdd6ea1e886ffbda844ab1ea24af334c8fa53ddf7adf81ec6a15c8bac",
+      "after_sha256": "5e780748f4d73df4e8606a0427a4069e7978438f03ab3b3841782d77a9849649"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "7c7567a6bed7db414c13f1291ac83574c56f3a1cb079852d6a55c35a7c55ced3",
+      "source": ", and a",
+      "before": ", y",
+      "after": ", y un",
+      "source_sha256": "d3e5bedfc0271592a9fa7ce3703c00dee490fdf02fb2be368e4103507a8f8e10",
+      "before_sha256": "4389cdfb65d3db70c3b8b5ffefad307db0b716e8a0250e7c290dbd27cf7c82e4",
+      "after_sha256": "61ffd66d2e99bee31b68a5363d54fb97cba1f7c1675e7976cca84a786624eeaa"
+    },
+    {
+      "course": "wa-real-estate-fundamentals-60",
+      "parent_source_sha256": "656f277a144bec9ac43226759989d34a8b48220cdc395f1686116648e69efaa2",
+      "source": "The",
+      "before": "Los",
+      "after": "El",
+      "source_sha256": "b344d80e24a3679999fa964450b34bc24d1578a35509f934c1418b0a20d21a67",
+      "before_sha256": "3d6a124622df7afc17de106f5a1b2142d18919cfff019cd43254651ef7714fcc",
+      "after_sha256": "5a61a575498e3522323de47b4f63c804da57f54516d04731f2d58e42fd4ed995"
+    },
+    {
+      "course": "wa-real-estate-fundamentals-60",
+      "parent_source_sha256": "656f277a144bec9ac43226759989d34a8b48220cdc395f1686116648e69efaa2",
+      "source": "made",
+      "before": "fabricada",
+      "after": "originado",
+      "source_sha256": "ea0890697a77af0a2e054cccec587c8a42feb5cf38e778c6c6e2a96bfb945c0b",
+      "before_sha256": "7b5409b144229f1bc6c463e3b94fa5f766f920205d3c3aa656556c20c92f4835",
+      "after_sha256": "87edd975814e944662782cd12511368637237027c2f6604f4aa55a8c580de709"
+    },
+    {
+      "course": "wa-real-estate-fundamentals-60",
+      "parent_source_sha256": "656f277a144bec9ac43226759989d34a8b48220cdc395f1686116648e69efaa2",
+      "source": "— banks, credit unions, savings institutions, mortgage banking companies and mortgage brokers. The",
+      "before": "— bancos, cooperativas de crédito, entidades de ahorro, compañías de banca hipotecaria y corredores de hipotecas. Los",
+      "after": "—bancos, cooperativas de crédito, entidades de ahorro, compañías de banca hipotecaria y brókeres hipotecarios—. El",
+      "source_sha256": "049efc2fbf83a8e59da40c438e3eb8a41ee4aafe2baae34794f918314272c7ba",
+      "before_sha256": "8e2feeece3bb8c0918baa8a9f5a0a2229cd166f7d684b1402de7f8d574318b0a",
+      "after_sha256": "a4157b99b2e18201700cd21f5632f0743eadc9cbda57e9636baba743a5962961"
+    },
+    {
+      "course": "wa-real-estate-fundamentals-60",
+      "parent_source_sha256": "656f277a144bec9ac43226759989d34a8b48220cdc395f1686116648e69efaa2",
+      "source": "is where a loan is",
+      "before": "es donde está un préstamo",
+      "after": "es donde un préstamo es",
+      "source_sha256": "a66fcc5b51e41b5a85d354d4dbb483aded312c5d95225bf8cc53c1eb4f584659",
+      "before_sha256": "b31944fb1af1a2ed2b1551856e9ac78cfd9b32234a954e8a2ef1a236a2694ab7",
+      "after_sha256": "aec589f3ac05c72b267e2f7eedda86bd73a78cb88f8a1a90a3af8a38c8191501"
+    },
+    {
+      "course": "wa-real-estate-fundamentals-60",
+      "parent_source_sha256": "656f277a144bec9ac43226759989d34a8b48220cdc395f1686116648e69efaa2",
+      "source": "is where a loan already made is",
+      "before": "es donde ya se ha hecho un préstamo",
+      "after": "es donde un préstamo ya originado es",
+      "source_sha256": "ca12eb5585ed729897d1b09806607129e1e332996868482b41a948d905eac744",
+      "before_sha256": "13d11c1544742f077ca243105100ee566bc2be57f2d4f210191f9a7bfb8709ac",
+      "after_sha256": "19c2d8425bbec2dfa71d278ea634d31575e0d1bb8e13494437688fd8fa4c4fb7"
+    },
+    {
+      "course": "wa-real-estate-fundamentals-60",
+      "parent_source_sha256": "28183d4155a37a80d691b2f2022c1f7000a8253386ad79278e8583b6af3e7d43",
+      "source": "The",
+      "before": "Los",
+      "after": "El umbral de",
+      "source_sha256": "b344d80e24a3679999fa964450b34bc24d1578a35509f934c1418b0a20d21a67",
+      "before_sha256": "3d6a124622df7afc17de106f5a1b2142d18919cfff019cd43254651ef7714fcc",
+      "after_sha256": "7b76dea32dc32875c26a63f5837474dbdceb47bae27dd3543937cf71623606a9"
+    },
+    {
+      "course": "wa-real-estate-fundamentals-60",
+      "parent_source_sha256": "28183d4155a37a80d691b2f2022c1f7000a8253386ad79278e8583b6af3e7d43",
+      "source": "engagement threshold and the",
+      "before": "umbral de compromiso y el",
+      "after": "de participación y el umbral de",
+      "source_sha256": "b7e88c85e352ace8f69863b20d8b806804c47627e92b582f60ac0741de7e5cbb",
+      "before_sha256": "8ab07ebf3ff84d9f76d17207b3f732fc8ce6cdbeebd6f32fc1e6a47f0e909a49",
+      "after_sha256": "85d02d69ad92d8962ee9b45e12f8036b6fad739a71c8d05f760fbe7ddd743072"
+    },
+    {
+      "course": "wa-real-estate-fundamentals-60",
+      "parent_source_sha256": "28183d4155a37a80d691b2f2022c1f7000a8253386ad79278e8583b6af3e7d43",
+      "source": "applied threshold are",
+      "before": "el umbral aplicado es",
+      "after": "de aplicación práctica son",
+      "source_sha256": "443d864ba56db739a881f7a794573771b542e8d2c2989240373e35e965b6da18",
+      "before_sha256": "6ca74d5ce79f5b680a8ad50fabb3fb93077307ebe232739f97cff70751b01a67",
+      "after_sha256": "ae96603ba2de6a5bdff84ce49ad75233305de6dfaf5de1168d0280a4c4ce3878"
+    },
+    {
+      "course": "wa-real-estate-practices-30",
+      "parent_source_sha256": "9ae0efd344cc119b94bab38f217b47e949747c3ae6ef87e9107bc8be0cbaa6f0",
+      "source": "The",
+      "before": "Los",
+      "after": "El",
+      "source_sha256": "b344d80e24a3679999fa964450b34bc24d1578a35509f934c1418b0a20d21a67",
+      "before_sha256": "3d6a124622df7afc17de106f5a1b2142d18919cfff019cd43254651ef7714fcc",
+      "after_sha256": "5a61a575498e3522323de47b4f63c804da57f54516d04731f2d58e42fd4ed995"
+    },
+    {
+      "course": "wa-real-estate-practices-30",
+      "parent_source_sha256": "9ae0efd344cc119b94bab38f217b47e949747c3ae6ef87e9107bc8be0cbaa6f0",
+      "source": ", the",
+      "before": ", el",
+      "after": ",",
+      "source_sha256": "3538a0b69856ece9aeb2961477bc2a6bbded4578906bc2df63533cdfa17b2bc4",
+      "before_sha256": "f6a4add9542c2105ce1a9372e19d0ad772b0655695091e17c2a302a59fae4d58",
+      "after_sha256": "d03502c43d74a30b936740a9517dc4ea2b2ad7168caa0a774cefe793ce0b33e7"
+    },
+    {
+      "course": "wa-real-estate-practices-30",
+      "parent_source_sha256": "9ae0efd344cc119b94bab38f217b47e949747c3ae6ef87e9107bc8be0cbaa6f0",
+      "source": "60-day buyer default term",
+      "before": "Término por defecto del comprador de 60 días",
+      "after": "plazo predeterminado de 60 días para el comprador",
+      "source_sha256": "47137e8fb90e4f546421c6f87a94fd047cfb20789bf6b526f620f2143619a792",
+      "before_sha256": "0ca0b49d3535dfca09ef7a3515bc32d994dd57ff5d8ffc851d0605d0e054407d",
+      "after_sha256": "bb4fa3bed117fc71d50d60fabf894ddc6c164fa70cb8d64cf98cbfec52ed380b"
+    },
+    {
+      "course": "wa-real-estate-practices-30",
+      "parent_source_sha256": "9ae0efd344cc119b94bab38f217b47e949747c3ae6ef87e9107bc8be0cbaa6f0",
+      "source": "checkbox requirement",
+      "before": "Requerimiento de casilla de verificación",
+      "after": "el requisito de marcar la casilla",
+      "source_sha256": "74cfcbb60db283672c6761c3e1c91f14d32d90f8435f95e47c14e41367edb239",
+      "before_sha256": "fb3aeaacf66918dca47e48684318a5c580fe82ea7281af865d2759d02f89811d",
+      "after_sha256": "9e9636ece06b176d0cfad29a13411b94e29fd22ff80238c67b762bed38421d95"
+    },
+    {
+      "course": "wa-real-estate-practices-30",
+      "parent_source_sha256": "9ae0efd344cc119b94bab38f217b47e949747c3ae6ef87e9107bc8be0cbaa6f0",
+      "source": "separately-initialed consent",
+      "before": "consentimiento rubricado por separado",
+      "after": "el consentimiento rubricado por separado",
+      "source_sha256": "8eb3caab399f766f9119f30900f09d3429e8633be553247b4729c867bd36634a",
+      "before_sha256": "b6294bf2bbbf02806d2f87e6efe5f5e841a65aac65eac3613d59e78a70e7c2c5",
+      "after_sha256": "e468adcaf946c2da1a83db5e097106b75fa7418bb82a60d21623d7681cbc069f"
+    },
+    {
+      "course": "wa-real-estate-practices-30",
+      "parent_source_sha256": "9ae0efd344cc119b94bab38f217b47e949747c3ae6ef87e9107bc8be0cbaa6f0",
+      "source": "\"Agency Disclosure\" heading",
+      "before": "encabezado «Agency Disclosure»",
+      "after": "el encabezado \"Agency Disclosure\"",
+      "source_sha256": "b083370db9f2b208fa469ca2f418cfdddfe5f0d84d5dd367b45a0d6b6672388a",
+      "before_sha256": "6105ba8b2637f78bb65c5e86b2de7a19de544b6400878012d41e896f9c52129c",
+      "after_sha256": "d61749b29bfd9fd1c0a949f8599c8ec4d3ccef01f424cc8fd3ac7877457d8862"
+    },
+    {
+      "course": "wa-real-estate-practices-30",
+      "parent_source_sha256": "9ae0efd344cc119b94bab38f217b47e949747c3ae6ef87e9107bc8be0cbaa6f0",
+      "source": ", both",
+      "before": ", ambos",
+      "after": ", ambas",
+      "source_sha256": "ae0ba11a2c9fad06d048e91afede6a31808c728f6da39ab8ef4af02e76b1c376",
+      "before_sha256": "094be06e4bccd05404b1c71ab5a6c940eb66865aa756100d3d6928ad5d6f4ca0",
+      "after_sha256": "a7515f85efad7a21e2b445316dceb91eab5ca9a13afcc8b2d5e3fa7c5f6b33e3"
+    },
+    {
+      "course": "wa-real-estate-practices-30",
+      "parent_source_sha256": "9ae0efd344cc119b94bab38f217b47e949747c3ae6ef87e9107bc8be0cbaa6f0",
+      "source": "and the",
+      "before": "y el",
+      "after": "y la",
+      "source_sha256": "44359e21492d788147966d8c0bc5beb2f4f4d0d05dd36f3ff36a0cd36a349907",
+      "before_sha256": "3c21233b3d007ac2c5c8ddabeb9b783a06a5b1b6a65a6ea3916b8359f81e8364",
+      "after_sha256": "b6ca6ff82099e81383b2cf08d3fef9775e50cca8da3f3d325b33cb79d4145a72"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "7565a2d3c93169945ac2662d575842fad1721163fde14b6b44924b4d2f8fdfe6",
+      "source": "The",
+      "before": "Los",
+      "after": "El",
+      "source_sha256": "b344d80e24a3679999fa964450b34bc24d1578a35509f934c1418b0a20d21a67",
+      "before_sha256": "3d6a124622df7afc17de106f5a1b2142d18919cfff019cd43254651ef7714fcc",
+      "after_sha256": "5a61a575498e3522323de47b4f63c804da57f54516d04731f2d58e42fd4ed995"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "7565a2d3c93169945ac2662d575842fad1721163fde14b6b44924b4d2f8fdfe6",
+      "source": "raise a different question:",
+      "before": "plantear una pregunta diferente:",
+      "after": "plantean una cuestión diferente:",
+      "source_sha256": "5c1be8e29b74a28ba37f207a5037a37dad4828f6c2fae783df6b8c8d12b03825",
+      "before_sha256": "9b55434fe61f3793a6fd391c087676f25fed312f8bae5fbfd49da72a37ce1d14",
+      "after_sha256": "3478c36f03936d91c98c37bb3cf765a4e59f6716676f223c2a474da95a03f9bb"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "7565a2d3c93169945ac2662d575842fad1721163fde14b6b44924b4d2f8fdfe6",
+      "source": ". Each is frequently",
+      "before": ". Cada uno es con frecuencia",
+      "after": ". Cada uno suele estar",
+      "source_sha256": "75578b22aaf22ede703db16ebf1bb93ab2877474a7a600ddf2ac42947d8addaf",
+      "before_sha256": "2d48752d70866a461a0c317cad2d2f9193798d0f6d6e8ac38e244f0cd82c28a7",
+      "after_sha256": "60279a883996191d83e916a70b4b61a01a31a61b14a25aa11247dab873cce271"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "7565a2d3c93169945ac2662d575842fad1721163fde14b6b44924b4d2f8fdfe6",
+      "source": "leased or rented",
+      "before": "arrendados o alquilados",
+      "after": "arrendado o alquilado",
+      "source_sha256": "b39843d8801ea6eb5c33779f45042124fa155bec54f7af728274be580f7b4c62",
+      "before_sha256": "3a0bd55dcc3bf1f69719de37d2e4d65e434bd98262b73ff3e1c86a3f18565a0d",
+      "after_sha256": "616f816e087991867fec1de48daf04504ada6766bd1d26887cc633a03fc25ee5"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "60756580faaf1f62e31313467c779eb069ee0f2d1b80f6d78df29c67439d7afd",
+      "source": "The",
+      "before": "Los",
+      "after": "El",
+      "source_sha256": "b344d80e24a3679999fa964450b34bc24d1578a35509f934c1418b0a20d21a67",
+      "before_sha256": "3d6a124622df7afc17de106f5a1b2142d18919cfff019cd43254651ef7714fcc",
+      "after_sha256": "5a61a575498e3522323de47b4f63c804da57f54516d04731f2d58e42fd4ed995"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "c4f4ae6513bcfbeae0d0e08274b1b8dc1a578193b79f9bb68489c1892727ca56",
+      "source": "The",
+      "before": "Los",
+      "after": "La",
+      "source_sha256": "b344d80e24a3679999fa964450b34bc24d1578a35509f934c1418b0a20d21a67",
+      "before_sha256": "3d6a124622df7afc17de106f5a1b2142d18919cfff019cd43254651ef7714fcc",
+      "after_sha256": "25cd026529f36e2069ec56805faf32a3c05d444c910bbfec6c4eb0893d9dde20"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "c4f4ae6513bcfbeae0d0e08274b1b8dc1a578193b79f9bb68489c1892727ca56",
+      "source": "under § 452.135(1)(a) and the",
+      "before": "bajo § 452.135(1)(a) y el",
+      "after": "conforme a § 452.135(1)(a) y la",
+      "source_sha256": "8fb386e4ebed7546fb377ff945278783a25b6723c4d1828397648119ec89ad20",
+      "before_sha256": "7982f19712f481cb74796975289b3b7193d252ed5866d8a6d0de36f5b168c8cb",
+      "after_sha256": "2820553d076799cc6c693d3f8a03ad7ccaabb064138b7dabb8bc70b58d003c36"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "1fd814ec713a6e3f481de91746c803bcfae197b834dc7fb8b9f864a901f18473",
+      "source": "The",
+      "before": "Los",
+      "after": "El",
+      "source_sha256": "b344d80e24a3679999fa964450b34bc24d1578a35509f934c1418b0a20d21a67",
+      "before_sha256": "3d6a124622df7afc17de106f5a1b2142d18919cfff019cd43254651ef7714fcc",
+      "after_sha256": "5a61a575498e3522323de47b4f63c804da57f54516d04731f2d58e42fd4ed995"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "0663df2a0fade7be09c854a63c53cfcdb2f51b96deea5005813cde7b261f049b",
+      "source": "The",
+      "before": "Los",
+      "after": "El",
+      "source_sha256": "b344d80e24a3679999fa964450b34bc24d1578a35509f934c1418b0a20d21a67",
+      "before_sha256": "3d6a124622df7afc17de106f5a1b2142d18919cfff019cd43254651ef7714fcc",
+      "after_sha256": "5a61a575498e3522323de47b4f63c804da57f54516d04731f2d58e42fd4ed995"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "0663df2a0fade7be09c854a63c53cfcdb2f51b96deea5005813cde7b261f049b",
+      "source": "against the offer and every amendment. Any",
+      "before": "contra la oferta y todas las enmiendas. Cualquier",
+      "after": "comparado con la oferta y todas las enmiendas. Todo",
+      "source_sha256": "db7cefa93454a7170aaf175ae1fd56831b5073b88d287c2e0db8fc2ab72c3a62",
+      "before_sha256": "9ea84a2d7f7d2c97e344572db1416e2ea9ff277a5137b2f7f1f4e522feb72f73",
+      "after_sha256": "ba8368d72a30e5a162fb92396379b0b580539ca66073c3ca300e59b646b035f2"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "0663df2a0fade7be09c854a63c53cfcdb2f51b96deea5005813cde7b261f049b",
+      "source": "actually appearing, in the agreed amount.",
+      "before": "realmente aparecer, en la cantidad acordada.",
+      "after": "debe aparecer efectivamente por el importe acordado.",
+      "source_sha256": "ae07e285346826ff1c51719b0e23d2fb6ffd4bd0ccc9d01cc34943792faa3aee",
+      "before_sha256": "34f1cc9f2637cce74163f8b0fac10a9ac92a7820139d646dfa769ecf33d42aa0",
+      "after_sha256": "e4c3d16546ccabc83553c22dab189f6c2e75989f1253eb31b74dbd38f3590c53"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "0663df2a0fade7be09c854a63c53cfcdb2f51b96deea5005813cde7b261f049b",
+      "source": "on the basis the offer specified. The",
+      "before": "sobre la base de la oferta especificada. Los",
+      "after": "según la base especificada en la oferta. El",
+      "source_sha256": "6bf3b88c063ee39303c1b9acd3688ca3847d6f57175a4f9964495be9965d1fdd",
+      "before_sha256": "6bad936fade819632d7641310cea7481ea72f590a6fd3be582cc6ef62ef5935f",
+      "after_sha256": "1cafe071ff7f978a69176de89b1b3830ec61402fa7eadd6f9c1933b826090459"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "0663df2a0fade7be09c854a63c53cfcdb2f51b96deea5005813cde7b261f049b",
+      "source": "reflected where the parties agreed they would be. The",
+      "before": "se reflejó donde las partes acordaron que estarían. Los",
+      "after": "reflejadas donde las partes acordaron. El",
+      "source_sha256": "08f74ae3695a630292674fff7ccb96a0e018e775bfadf9f6a0e8eeae8b84b1b9",
+      "before_sha256": "90cbdc5d07b9f92a9b2ce5e3fe3f18d26e4b8807a8bb42b91c95189f4e3385b9",
+      "after_sha256": "d5534763064fab2ee1f3e0f5c5728d55e6f7738df0c0964bee89b4f5bab30b8b"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "0663df2a0fade7be09c854a63c53cfcdb2f51b96deea5005813cde7b261f049b",
+      "source": "matching the financing contingency. The",
+      "before": "igualar la contingencia financiera. Los",
+      "after": "acordes con la condición de financiación. El",
+      "source_sha256": "a0ad3e6043639f8a2be0347dd5150ccf95541d0c01d9c4cc2821f8263b2ed4a9",
+      "before_sha256": "482f5323d6004761a29481bfa00648fed8c25076b6dd9be7fc243296742d967a",
+      "after_sha256": "e89aa935a8cfd3116d2516f8d9b6b673ccd04aeb11643abfa52e3df25b6e38ca"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "0663df2a0fade7be09c854a63c53cfcdb2f51b96deea5005813cde7b261f049b",
+      "source": "and its good-through date on the seller's side. And the",
+      "before": "y la fecha hasta la que es válido, en la parte del vendedor. Y los",
+      "after": "y la fecha hasta la que es válido en el lado del vendedor. Y los",
+      "source_sha256": "aafe23b649922faab700d7893839a8ffe475ca73f239e1ce3f2fcaa02d7a8527",
+      "before_sha256": "17c3b057f72b63cf224067af11fde98ffa0aeb91d4eb2ef59563204e18cecf10",
+      "after_sha256": "8db6b6f44e6c318445f8c7b223cd6871a7f66c0991cacac4e0ff7d16a322ba83"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "0663df2a0fade7be09c854a63c53cfcdb2f51b96deea5005813cde7b261f049b",
+      "source": "stated correctly.",
+      "before": "indicado correctamente.",
+      "after": "indicados correctamente.",
+      "source_sha256": "fd4f5b78134a9f35152b015f2b604ca59275b35c2cb40d956be873360855b4f4",
+      "before_sha256": "87d573228ead2b5a60d982c60676b555de80cb44e12687bf060acb155afa08fe",
+      "after_sha256": "a69105c8791b3f650464b2982903b6bda027f2ac1d2e579b805fc614932e2e30"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "0663df2a0fade7be09c854a63c53cfcdb2f51b96deea5005813cde7b261f049b",
+      "source": "seller credit",
+      "before": "crédito por vendedor",
+      "after": "crédito del vendedor",
+      "source_sha256": "33d97f1c7a056679ed69470eefafda755e7020e60b5dbf2f6f8030a9697bb612",
+      "before_sha256": "db71d3bc1b60d480cd1577b8e67ae6513e3131b99b54694925fecb827d758971",
+      "after_sha256": "3c9088a7b88152fd1fe0e490a5e7b993f9d1775fc7a9672c98d2bebbf9cdf53f"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "0663df2a0fade7be09c854a63c53cfcdb2f51b96deea5005813cde7b261f049b",
+      "source": "credited.",
+      "before": "Acreditado.",
+      "after": "acreditado.",
+      "source_sha256": "59aafc4fded7f588576cbf004fe3d0daf4e8c783724120c765323dbbf9a5bcdb",
+      "before_sha256": "bbc0adb33d5b03c9deb9a75adefe08a1a888b4732f4b63cb2a2d1dbb1737875b",
+      "after_sha256": "6e746e8db6b428e8d8a68bfc8b7f36831f982c918796d1eb0889dd405521de35"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "50e66c52ae8102f6a761b6b46a19686420ce98fcbd65f8cab547fa19d1d678ca",
+      "source": "The",
+      "before": "Los",
+      "after": "El",
+      "source_sha256": "b344d80e24a3679999fa964450b34bc24d1578a35509f934c1418b0a20d21a67",
+      "before_sha256": "3d6a124622df7afc17de106f5a1b2142d18919cfff019cd43254651ef7714fcc",
+      "after_sha256": "5a61a575498e3522323de47b4f63c804da57f54516d04731f2d58e42fd4ed995"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "f64d5f6f5844b1a17d0161dfe35ff2178b91124ff0b2e5f5a450e0b20d677995",
+      "source": "The",
+      "before": "Los",
+      "after": "El",
+      "source_sha256": "b344d80e24a3679999fa964450b34bc24d1578a35509f934c1418b0a20d21a67",
+      "before_sha256": "3d6a124622df7afc17de106f5a1b2142d18919cfff019cd43254651ef7714fcc",
+      "after_sha256": "5a61a575498e3522323de47b4f63c804da57f54516d04731f2d58e42fd4ed995"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "e456667af014f663af6d8c6db85bd740cdb300f469680e8cbd15eafbcad199a7",
+      "source": "The",
+      "before": "Los",
+      "after": "El",
+      "source_sha256": "b344d80e24a3679999fa964450b34bc24d1578a35509f934c1418b0a20d21a67",
+      "before_sha256": "3d6a124622df7afc17de106f5a1b2142d18919cfff019cd43254651ef7714fcc",
+      "after_sha256": "5a61a575498e3522323de47b4f63c804da57f54516d04731f2d58e42fd4ed995"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "e456667af014f663af6d8c6db85bd740cdb300f469680e8cbd15eafbcad199a7",
+      "source": "purchase conforming conventional loans;",
+      "before": "la adquisición de préstamos convencionales conformes;",
+      "after": "compran préstamos convencionales conformes;",
+      "source_sha256": "7e74af5226ebfd82a86d5f393e86b9cb2237e538e6160fa64c9c70c7b08624d5",
+      "before_sha256": "8347b0e67eae0e928d746beed838563b5ac022c3278e80903d6937b5aa247a4d",
+      "after_sha256": "258bbf4f1aeb4725485c4ea3ff56631ffb8392167e8fe0b8003e77b36f751d0f"
+    },
+    {
+      "course": "wa-real-estate-fundamentals-60",
+      "parent_source_sha256": "116374fdff879f94bd5fb2584af6215bfd6b2e85652835ee0f04e44754ae9faa",
+      "source": "The",
+      "before": "Los",
+      "after": "La",
+      "source_sha256": "b344d80e24a3679999fa964450b34bc24d1578a35509f934c1418b0a20d21a67",
+      "before_sha256": "3d6a124622df7afc17de106f5a1b2142d18919cfff019cd43254651ef7714fcc",
+      "after_sha256": "25cd026529f36e2069ec56805faf32a3c05d444c910bbfec6c4eb0893d9dde20"
+    },
+    {
+      "course": "wa-real-estate-fundamentals-60",
+      "parent_source_sha256": "116374fdff879f94bd5fb2584af6215bfd6b2e85652835ee0f04e44754ae9faa",
+      "source": "No setback, height limit, lot size, buffer width, slope threshold, shoreline designation, permit fee, approval deadline, title policy exception or premium is stated in this module.",
+      "before": "En este módulo no se indican contratiempos, límite de altura, tamaño del lote, anchura del buffer, umbral de pendiente, designación de la costa, cuota de permiso, fecha límite de aprobación, excepción o prima de la política de título.",
+      "after": "En este módulo no se especifican distancias mínimas a linderos, límites de altura, tamaños de lote, anchuras de franjas de protección, umbrales de pendiente, designaciones de ribera, tasas de permiso, plazos de aprobación, excepciones de pólizas de título ni primas.",
+      "source_sha256": "397fbeb9c383f2c1430101e9f93f01bffee1e2487e7208d4af27c16d116909fc",
+      "before_sha256": "b37c821f69d632cfa149af5f7ed5a186dd5e51953b28a25fad5bd9961516bad3",
+      "after_sha256": "38923eb938e3a23a16ddf7eaf757c55de4ace669cd619efe52835fe08071a833"
+    },
+    {
+      "course": "wa-real-estate-fundamentals-60",
+      "parent_source_sha256": "d5be6af39dad6964bd6282914c2ab64c4e7396a71d1ef510e414ee68a616be1b",
+      "source": "The",
+      "before": "Los",
+      "after": "La norma de",
+      "source_sha256": "b344d80e24a3679999fa964450b34bc24d1578a35509f934c1418b0a20d21a67",
+      "before_sha256": "3d6a124622df7afc17de106f5a1b2142d18919cfff019cd43254651ef7714fcc",
+      "after_sha256": "e3f2f02c5651f183b7715d7f225e37fc9e21e4e63817fd71f43aac92db8ce3ca"
+    },
+    {
+      "course": "wa-real-estate-fundamentals-60",
+      "parent_source_sha256": "d5be6af39dad6964bd6282914c2ab64c4e7396a71d1ef510e414ee68a616be1b",
+      "source": "TILA-RESPA Integrated Disclosure",
+      "before": "Divulgación integrada de TILA-RESPA",
+      "after": "divulgación integrada de TILA-RESPA",
+      "source_sha256": "5c4dbe24f7ed247f50b267f3041550447dd0fc1346f4f2197e41701876e7aee5",
+      "before_sha256": "9b6023a3c30bf0f024a68a01b918873c4136fc8b120dc16ed72aaae561719690",
+      "after_sha256": "42b78f327e29645da617c1f73717c37fbc84cecd64a5abe0b8795dccbb875045"
+    },
+    {
+      "course": "wa-real-estate-fundamentals-60",
+      "parent_source_sha256": "d5be6af39dad6964bd6282914c2ab64c4e7396a71d1ef510e414ee68a616be1b",
+      "source": "rule consolidated the duplicate disclosures the two statutes required into two forms: the",
+      "before": "es la norma que consolidó las revelaciones duplicadas exigidas por ambas leyes en dos formularios: el",
+      "after": "consolidó las divulgaciones duplicadas exigidas por ambas leyes en dos formularios: el",
+      "source_sha256": "41fcaadab47507c56b5f2089eb4ab7cb6edde036a196e8b2459fdc7a62985a47",
+      "before_sha256": "45c7f94ab08b051b61f886c2435918930029dca96c0d415f3a302a5f402ad6b2",
+      "after_sha256": "9188bd85a285031e334fa18d88ff83ae5463ff5673631c0e0d7fe96c0684ff43"
+    },
+    {
+      "course": "wa-real-estate-fundamentals-60",
+      "parent_source_sha256": "b24ecebea12d5210968432cccce40542dea0dde3cfb2040fdd56b3e4208c2561",
+      "source": "The",
+      "before": "Los",
+      "after": "La",
+      "source_sha256": "b344d80e24a3679999fa964450b34bc24d1578a35509f934c1418b0a20d21a67",
+      "before_sha256": "3d6a124622df7afc17de106f5a1b2142d18919cfff019cd43254651ef7714fcc",
+      "after_sha256": "25cd026529f36e2069ec56805faf32a3c05d444c910bbfec6c4eb0893d9dde20"
+    },
+    {
+      "course": "wa-real-estate-practices-30",
+      "parent_source_sha256": "81054147edf939f34d07459b091ffbeb910712f2faf32a01167bc58d590d27b6",
+      "source": "The",
+      "before": "Los",
+      "after": "La",
+      "source_sha256": "b344d80e24a3679999fa964450b34bc24d1578a35509f934c1418b0a20d21a67",
+      "before_sha256": "3d6a124622df7afc17de106f5a1b2142d18919cfff019cd43254651ef7714fcc",
+      "after_sha256": "25cd026529f36e2069ec56805faf32a3c05d444c910bbfec6c4eb0893d9dde20"
+    },
+    {
+      "course": "wa-real-estate-practices-30",
+      "parent_source_sha256": "81054147edf939f34d07459b091ffbeb910712f2faf32a01167bc58d590d27b6",
+      "source": "enters the agreement. The",
+      "before": "entra en el acuerdo. Los",
+      "after": "celebra el acuerdo. La",
+      "source_sha256": "c22ad8d1c6ff14a461474a186f596c0e73c18f327d6b1d80c121683f5caf04d0",
+      "before_sha256": "362fa50a3d8910624a8bbb0ca7ffa3028c48dc38318173ad60fe88161c4f12bc",
+      "after_sha256": "39ac17c88222feb966ba71ff925fea166bfdc916fd7371a6fb7d3a8b52b0a008"
+    },
+    {
+      "course": "wa-real-estate-practices-30",
+      "parent_source_sha256": "97d4182f51cc04003654a56f7ec9ca63207eb02851651eff44b7ef7ca356fbe5",
+      "source": "The",
+      "before": "Los",
+      "after": "La",
+      "source_sha256": "b344d80e24a3679999fa964450b34bc24d1578a35509f934c1418b0a20d21a67",
+      "before_sha256": "3d6a124622df7afc17de106f5a1b2142d18919cfff019cd43254651ef7714fcc",
+      "after_sha256": "25cd026529f36e2069ec56805faf32a3c05d444c910bbfec6c4eb0893d9dde20"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "5822d4743b7b6555bee3b5af8fac6f720428da971dd5d89e1d48721026870819",
+      "source": "The",
+      "before": "Los",
+      "after": "La",
+      "source_sha256": "b344d80e24a3679999fa964450b34bc24d1578a35509f934c1418b0a20d21a67",
+      "before_sha256": "3d6a124622df7afc17de106f5a1b2142d18919cfff019cd43254651ef7714fcc",
+      "after_sha256": "25cd026529f36e2069ec56805faf32a3c05d444c910bbfec6c4eb0893d9dde20"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "e9a4c8ef144cbdf5af7d21fe442e7c8e5b39522aa011134f0887c467ffd90e36",
+      "source": "The",
+      "before": "Los",
+      "after": "La",
+      "source_sha256": "b344d80e24a3679999fa964450b34bc24d1578a35509f934c1418b0a20d21a67",
+      "before_sha256": "3d6a124622df7afc17de106f5a1b2142d18919cfff019cd43254651ef7714fcc",
+      "after_sha256": "25cd026529f36e2069ec56805faf32a3c05d444c910bbfec6c4eb0893d9dde20"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "e9a4c8ef144cbdf5af7d21fe442e7c8e5b39522aa011134f0887c467ffd90e36",
+      "source": "is a fixture on the ordinary test — attached, adapted, and objectively intended to be permanent — so the seller's wish is not the test and it will convey unless it is expressly excluded. The professional answer is to have it removed and replaced",
+      "before": "es un elemento fijo del ensayo ordinario, unido, adaptado y objetivamente destinado a ser permanente, por lo que el deseo del vendedor no es el ensayo y se transmitirá a menos que esté expresamente excluido. La respuesta profesional es que la retiren y reemplacen.",
+      "after": "es un elemento fijo según los criterios habituales: está unida al inmueble, adaptada a él y destinada objetivamente a permanecer. El deseo del vendedor no determina su clasificación y se transmitirá salvo exclusión expresa. La respuesta profesional es retirarla y reemplazarla",
+      "source_sha256": "3ddd212b90dd211f22fa0ad4f87502df573fef190785da1ffddd7c399568d0d6",
+      "before_sha256": "0895471b0188e1a19663788abc8e112812bd6bb70d90ddc4656caf5138bf37d1",
+      "after_sha256": "2958f100c4d78321c40b9eed672cb6fca738398d474972d12b729c11987d1a2c"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "717dbfea0dbfc05c5d7dd4ac068600a0e226aa5594b26915924dab9714091da7",
+      "source": "The",
+      "before": "Los",
+      "after": "La",
+      "source_sha256": "b344d80e24a3679999fa964450b34bc24d1578a35509f934c1418b0a20d21a67",
+      "before_sha256": "3d6a124622df7afc17de106f5a1b2142d18919cfff019cd43254651ef7714fcc",
+      "after_sha256": "25cd026529f36e2069ec56805faf32a3c05d444c910bbfec6c4eb0893d9dde20"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "01bf372f9e06de0945fb76c4af9927fc2f65f6b155e1977300254ba329598712",
+      "source": "The",
+      "before": "Los",
+      "after": "La",
+      "source_sha256": "b344d80e24a3679999fa964450b34bc24d1578a35509f934c1418b0a20d21a67",
+      "before_sha256": "3d6a124622df7afc17de106f5a1b2142d18919cfff019cd43254651ef7714fcc",
+      "after_sha256": "25cd026529f36e2069ec56805faf32a3c05d444c910bbfec6c4eb0893d9dde20"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "01bf372f9e06de0945fb76c4af9927fc2f65f6b155e1977300254ba329598712",
+      "source": ", and locating a lender acquired twice since takes time. The",
+      "before": ", y la localización de un prestamista adquirido dos veces desde toma tiempo. Los",
+      "after": ", y localizar a un prestamista adquirido dos veces desde entonces lleva tiempo. El",
+      "source_sha256": "21564a0cb50e149acad4d568bfa3aaf9ffb03ed1926b4a3e007cb872b33dd000",
+      "before_sha256": "eb7403d36de396f2263cb730ae0cb57ea6ec2bfb352732aca7ea2c269fc62a81",
+      "after_sha256": "336e79c02f4cd72e485e35cdd62020ce3e460edf88fd73e96de8b68fc2c11993"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "01bf372f9e06de0945fb76c4af9927fc2f65f6b155e1977300254ba329598712",
+      "source": "needs a recorded",
+      "before": "necesita un registro",
+      "after": "necesita una",
+      "source_sha256": "997fb3ade41a24889a64ab76981116911073225bbdaa5cfffa98407c020dc66a",
+      "before_sha256": "06ccbe7ed51b4d930899438784d1edabd0ad3f33acfefdd67c567aab24f2851f",
+      "after_sha256": "1586bcb44d0dd160dd5e11798b5b329d248d0305d914af4dd6fecf2fd3da7f30"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "01bf372f9e06de0945fb76c4af9927fc2f65f6b155e1977300254ba329598712",
+      "source": "satisfaction",
+      "before": "cancelación",
+      "after": "cancelación inscrita",
+      "source_sha256": "bce2966c0b0d85327956be4ae3ba1a02c61aea7c0b2d9aaeb75f56be775468c4",
+      "before_sha256": "89eb11950a21bf706c5035ccde53cff45b88348b18d7aaf1a4ef0a490f417d34",
+      "after_sha256": "230f530ccdef1899705bfe03a4c0a1eec752e6432c13fa861a9e181f1938781d"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "a7da59087647db6ae4de2318cc00688187b0fd79324ef056042a6acc1f79e1b7",
+      "source": "The",
+      "before": "Los",
+      "after": "La",
+      "source_sha256": "b344d80e24a3679999fa964450b34bc24d1578a35509f934c1418b0a20d21a67",
+      "before_sha256": "3d6a124622df7afc17de106f5a1b2142d18919cfff019cd43254651ef7714fcc",
+      "after_sha256": "25cd026529f36e2069ec56805faf32a3c05d444c910bbfec6c4eb0893d9dde20"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "4e9771759630362a46b15a3c0d8a10b942ba5f27471c3a77f9af78e00b3e4797",
+      "source": "The",
+      "before": "Los",
+      "after": "La",
+      "source_sha256": "b344d80e24a3679999fa964450b34bc24d1578a35509f934c1418b0a20d21a67",
+      "before_sha256": "3d6a124622df7afc17de106f5a1b2142d18919cfff019cd43254651ef7714fcc",
+      "after_sha256": "25cd026529f36e2069ec56805faf32a3c05d444c910bbfec6c4eb0893d9dde20"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "4e9771759630362a46b15a3c0d8a10b942ba5f27471c3a77f9af78e00b3e4797",
+      "source": "is older, narrower and in one respect stronger: it prohibits",
+      "before": "es más viejo, más estrecho y en un aspecto más fuerte: prohíbe",
+      "after": "es más antigua, tiene un alcance más limitado y en un aspecto es más fuerte: prohíbe la discriminación",
+      "source_sha256": "91d9eb4ab7d8cdf3f30fe4d42361ecd55a2a16b8ee77beff4313cee5d408479f",
+      "before_sha256": "9c11ff01ca73b92bf38d5618c457f51da05a8c9b21568e0c0626126bb9478bf1",
+      "after_sha256": "fc8497964177bf37a979a1ba2a216449cb21ab59c2d31385af3357d52ec8e5bc"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "4e9771759630362a46b15a3c0d8a10b942ba5f27471c3a77f9af78e00b3e4797",
+      "source": "discrimination in the sale or lease of all property and, as the Supreme Court held in",
+      "before": "discriminación en la venta o el arrendamiento de todos los bienes y, como sostuvo el Tribunal Supremo en",
+      "after": "en la venta o arrendamiento de cualquier propiedad y, como sostuvo el Tribunal Supremo en",
+      "source_sha256": "ecf84387ee03965f1cfaa5c72dfc08fac750898aef0520c49eda00f8075dc921",
+      "before_sha256": "a991f6b9bac755d893e7e3772323d6934a53efb6330b86bf30521098df811ecd",
+      "after_sha256": "8d7b93ae9b69529b6905059b7be576ff9d52838d065d3f64905688ced06c832d"
+    },
+    {
+      "course": "wa-real-estate-fundamentals-60",
+      "parent_source_sha256": "690586597e25cc357270de0f66d5852df59be01114cef2966a602e6aef0a9ec3",
+      "source": "The",
+      "before": "Los",
+      "after": "Las",
+      "source_sha256": "b344d80e24a3679999fa964450b34bc24d1578a35509f934c1418b0a20d21a67",
+      "before_sha256": "3d6a124622df7afc17de106f5a1b2142d18919cfff019cd43254651ef7714fcc",
+      "after_sha256": "5ff96fe0a862d90a692d999e677b59cd0b7732365905b073c486d993150506e6"
+    },
+    {
+      "course": "wa-real-estate-fundamentals-60",
+      "parent_source_sha256": "690586597e25cc357270de0f66d5852df59be01114cef2966a602e6aef0a9ec3",
+      "source": ", the",
+      "before": ", el",
+      "after": ",",
+      "source_sha256": "3538a0b69856ece9aeb2961477bc2a6bbded4578906bc2df63533cdfa17b2bc4",
+      "before_sha256": "f6a4add9542c2105ce1a9372e19d0ad772b0655695091e17c2a302a59fae4d58",
+      "after_sha256": "d03502c43d74a30b936740a9517dc4ea2b2ad7168caa0a774cefe793ce0b33e7"
+    },
+    {
+      "course": "wa-real-estate-fundamentals-60",
+      "parent_source_sha256": "690586597e25cc357270de0f66d5852df59be01114cef2966a602e6aef0a9ec3",
+      "source": "three-hour fair housing and consumer protection block",
+      "before": "Bloque de tres horas para una vivienda justa y protección de los consumidores",
+      "after": "el bloque de tres horas de vivienda justa y protección del consumidor",
+      "source_sha256": "44fb3dfe85975889c371ae058fcd66f03fc393051e5244184eff288a5a363378",
+      "before_sha256": "2926db047a6b4d3794afa8eecb185388dd69f6b4a98f59593b8cdc9b049adfc3",
+      "after_sha256": "9b9a5132abc29d41a023d95139555a05224b57e9242652bd9e60b7eec7713445"
+    },
+    {
+      "course": "wa-real-estate-fundamentals-60",
+      "parent_source_sha256": "690586597e25cc357270de0f66d5852df59be01114cef2966a602e6aef0a9ec3",
+      "source": "two-year window",
+      "before": "ventana de dos años",
+      "after": "el plazo de dos años",
+      "source_sha256": "b2a9c1245448295f34b11fa4600278c5b22b150dd0e2e40f0336e1f747e9e5e3",
+      "before_sha256": "309bab798eb50655c4df305d1375a6715ef96c08fa5206c4f0a85ffa8301ac43",
+      "after_sha256": "becd6d3376c8bd5ce8cf78e55fd3502ee22cfbba46181a689505ff9f77ec3586"
+    },
+    {
+      "course": "wa-real-estate-fundamentals-60",
+      "parent_source_sha256": "690586597e25cc357270de0f66d5852df59be01114cef2966a602e6aef0a9ec3",
+      "source": "50-minute clock hour",
+      "before": "Hora de reloj de 50 minutos",
+      "after": "la hora lectiva de 50 minutos",
+      "source_sha256": "5dfe1cee2e9201d7fa3902c6d2e4a841338792ebb755a7dc1a112124521a86e8",
+      "before_sha256": "0573742d12b01831e6be20611bf27be2a9de7a4cf2f91d7200e725617228d3ae",
+      "after_sha256": "ff06c648b340dde66a58a05c2e3d7ba6390c52bafd799c8e12fba3373bfafd8a"
+    },
+    {
+      "course": "wa-real-estate-fundamentals-60",
+      "parent_source_sha256": "690586597e25cc357270de0f66d5852df59be01114cef2966a602e6aef0a9ec3",
+      "source": "three-questions-per-clock-hour",
+      "before": "tres preguntas por hora",
+      "after": "la regla de tres preguntas por hora lectiva",
+      "source_sha256": "0e532f5226da4d47615d4e39c6bfe7b6b42d624c4369d626d1c9ddb61385be5d",
+      "before_sha256": "db2085e56afd5a9a466a98e805092c269c136695dd4428001151a51138c85e18",
+      "after_sha256": "4c004e631d5d24738e04379f6862d5a2c025fe90d5ec9781c113708fc297336a"
+    },
+    {
+      "course": "wa-real-estate-fundamentals-60",
+      "parent_source_sha256": "690586597e25cc357270de0f66d5852df59be01114cef2966a602e6aef0a9ec3",
+      "source": "examination rule, the",
+      "before": "examen, la norma de",
+      "after": "en el examen, el",
+      "source_sha256": "db91855114560ed72c6fb6f8cb1e97d1da0e299d9e024b65205566b23d9a74d5",
+      "before_sha256": "4d04c34bc9a3a10cad52845cd97735fe8dff7c282fd09fd25fd92ee8f940a4cc",
+      "after_sha256": "3f7d15c4e283cb723010920e85b1f17cc75869f11b9c5383a0a7cb3d7dc3c5e8"
+    },
+    {
+      "course": "wa-real-estate-fundamentals-60",
+      "parent_source_sha256": "690586597e25cc357270de0f66d5852df59be01114cef2966a602e6aef0a9ec3",
+      "source": "passing grade and the",
+      "before": "el grado de aprobación y el",
+      "after": "como nota mínima de aprobación y los",
+      "source_sha256": "2bca8ce01b1e8c4bbd77cbe2f68a81278008f6c0b7fb8c23e1f57fb1ca7a4a64",
+      "before_sha256": "85408a9f08f0952af73b56e6de2b06dd7a1ed245684199e5eca96c923a92b5ac",
+      "after_sha256": "9eb312e9174dc2a99b5580a9d1651c3c68ae7e0a9830a1948b7e1e7f99342742"
+    },
+    {
+      "course": "wa-real-estate-fundamentals-60",
+      "parent_source_sha256": "690586597e25cc357270de0f66d5852df59be01114cef2966a602e6aef0a9ec3",
+      "source": "are all",
+      "before": "son todos",
+      "after": "están todos",
+      "source_sha256": "bad00c7e0f42e77cb4763235ea1b671d2aa5e4e4adea822f9f78e8a5edeb49d1",
+      "before_sha256": "29bb2bf384ce5e836ff8451677a0df60075c134673b8ba62eede42d5628a3ba6",
+      "after_sha256": "b010ae6e631e1f46c0fed6c53ff50aadfbe5bea5127d2da5966a7c2facf65b14"
+    },
+    {
+      "course": "wa-real-estate-fundamentals-60",
+      "parent_source_sha256": "690586597e25cc357270de0f66d5852df59be01114cef2966a602e6aef0a9ec3",
+      "source": "transcribed from RCW 18.85.101 and WAC 308-124H.",
+      "before": "Transcrito de RCW 18.85.101 y WAC 308-124H.",
+      "after": "transcritos de RCW 18.85.101 y WAC 308-124H.",
+      "source_sha256": "b40739709e8fc088b3bf5a9584e836e8d9b9256f31596c9d36b6574e13b26c39",
+      "before_sha256": "7ed568ccbc78b6682583224a2e34b662dfd6b0431ec8bee7c8bda213110bda5a",
+      "after_sha256": "dbdfeae1e093b15c2c924584cc2e488a638ed926720febd0c570cc78c577fcca"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "1e2c9d8b0f4ecd98ae7996be0531a4ab3aac0a8c63843ad53685781632fae155",
+      "source": "The",
+      "before": "Los",
+      "after": "Las disposiciones de",
+      "source_sha256": "b344d80e24a3679999fa964450b34bc24d1578a35509f934c1418b0a20d21a67",
+      "before_sha256": "3d6a124622df7afc17de106f5a1b2142d18919cfff019cd43254651ef7714fcc",
+      "after_sha256": "9d2a1b01bc8a39821be203b4fe982a6a13e08e62410b480a365d36951b565ac6"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "1e2c9d8b0f4ecd98ae7996be0531a4ab3aac0a8c63843ad53685781632fae155",
+      "source": "provisions make this particularly acute for the residence.",
+      "before": "las disposiciones hacen que esto sea particularmente grave para la residencia.",
+      "after": "hacen que esto sea especialmente importante para la vivienda.",
+      "source_sha256": "388f9c1ddf05ea491a452d66e026471ed77d0327bfb9748598d521b6a4f104c4",
+      "before_sha256": "e1b12e5d9d3c23bf84d71d7ff206e8706ed6f44f1102357c3799f4e4147c94c7",
+      "after_sha256": "7ee09bc77e430882380d176fcdf631caa5222a5e5f85fd5dc6d3f73b0b3e1ef8"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "05d5c6cfe78e4a282abf1ff84bbae4799c29e746584539f3d42127ea3e3eebfa",
+      "source": "The",
+      "before": "Los",
+      "after": "Las disposiciones de",
+      "source_sha256": "b344d80e24a3679999fa964450b34bc24d1578a35509f934c1418b0a20d21a67",
+      "before_sha256": "3d6a124622df7afc17de106f5a1b2142d18919cfff019cd43254651ef7714fcc",
+      "after_sha256": "9d2a1b01bc8a39821be203b4fe982a6a13e08e62410b480a365d36951b565ac6"
+    },
+    {
+      "course": "wi-salesperson",
+      "parent_source_sha256": "05d5c6cfe78e4a282abf1ff84bbae4799c29e746584539f3d42127ea3e3eebfa",
+      "source": "provisions make this particularly acute for a residence, and",
+      "before": "las disposiciones hacen que esto sea particularmente grave para una residencia, y",
+      "after": "hacen que esto sea especialmente importante para una vivienda, y",
+      "source_sha256": "ce49636e658d1d5b3241302e8e3c1c9d2cc31dc9b9314236e7337111ee4b6472",
+      "before_sha256": "496d53016b0cbe04880bd3e97e23ae5e0281efcf034f6e8666ca2e4e53baaa9d",
+      "after_sha256": "7dd1e71368fddf01862368cdf18654c21bcb4f15729c87c1d17a2e71ae6a7f14"
+    }
+  ]
+}

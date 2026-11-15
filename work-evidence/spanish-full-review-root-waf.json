@@ -1,7 +1,468 @@
 {
   "course_id": "wa-real-estate-fundamentals-60",
-  "full_semantic_review": "OPEN",
-  "reviewed_sections": [],
+  "full_semantic_review": "Direct bilingual first pass complete: all 12 lessons, 115 sections and 132 questions including choices and explanations. Contextual cleanup and human linguistic/SME review remain OPEN; duration validation remains OPEN.",
+  "reviewed_sections": [
+    {
+      "lesson": "module-01",
+      "section_index": 0
+    },
+    {
+      "lesson": "module-01",
+      "section_index": 1
+    },
+    {
+      "lesson": "module-01",
+      "section_index": 2
+    },
+    {
+      "lesson": "module-01",
+      "section_index": 3
+    },
+    {
+      "lesson": "module-01",
+      "section_index": 4
+    },
+    {
+      "lesson": "module-01",
+      "section_index": 5
+    },
+    {
+      "lesson": "module-01",
+      "section_index": 6
+    },
+    {
+      "lesson": "module-01",
+      "section_index": 7
+    },
+    {
+      "lesson": "module-01",
+      "section_index": 8
+    },
+    {
+      "lesson": "module-01",
+      "section_index": 9
+    },
+    {
+      "lesson": "module-01",
+      "section_index": 10
+    },
+    {
+      "lesson": "module-01",
+      "section_index": 11
+    },
+    {
+      "lesson": "module-01",
+      "section_index": 12
+    },
+    {
+      "lesson": "module-02",
+      "section_index": 0
+    },
+    {
+      "lesson": "module-02",
+      "section_index": 1
+    },
+    {
+      "lesson": "module-02",
+      "section_index": 2
+    },
+    {
+      "lesson": "module-02",
+      "section_index": 3
+    },
+    {
+      "lesson": "module-02",
+      "section_index": 4
+    },
+    {
+      "lesson": "module-02",
+      "section_index": 5
+    },
+    {
+      "lesson": "module-02",
+      "section_index": 6
+    },
+    {
+      "lesson": "module-02",
+      "section_index": 7
+    },
+    {
+      "lesson": "module-02",
+      "section_index": 8
+    },
+    {
+      "lesson": "module-02",
+      "section_index": 9
+    },
+    {
+      "lesson": "module-03",
+      "section_index": 0
+    },
+    {
+      "lesson": "module-03",
+      "section_index": 1
+    },
+    {
+      "lesson": "module-03",
+      "section_index": 2
+    },
+    {
+      "lesson": "module-03",
+      "section_index": 3
+    },
+    {
+      "lesson": "module-03",
+      "section_index": 4
+    },
+    {
+      "lesson": "module-03",
+      "section_index": 5
+    },
+    {
+      "lesson": "module-03",
+      "section_index": 6
+    },
+    {
+      "lesson": "module-03",
+      "section_index": 7
+    },
+    {
+      "lesson": "module-04",
+      "section_index": 0
+    },
+    {
+      "lesson": "module-04",
+      "section_index": 1
+    },
+    {
+      "lesson": "module-04",
+      "section_index": 2
+    },
+    {
+      "lesson": "module-04",
+      "section_index": 3
+    },
+    {
+      "lesson": "module-04",
+      "section_index": 4
+    },
+    {
+      "lesson": "module-04",
+      "section_index": 5
+    },
+    {
+      "lesson": "module-04",
+      "section_index": 6
+    },
+    {
+      "lesson": "module-04",
+      "section_index": 7
+    },
+    {
+      "lesson": "module-04",
+      "section_index": 8
+    },
+    {
+      "lesson": "module-04",
+      "section_index": 9
+    },
+    {
+      "lesson": "module-05",
+      "section_index": 0
+    },
+    {
+      "lesson": "module-05",
+      "section_index": 1
+    },
+    {
+      "lesson": "module-05",
+      "section_index": 2
+    },
+    {
+      "lesson": "module-05",
+      "section_index": 3
+    },
+    {
+      "lesson": "module-05",
+      "section_index": 4
+    },
+    {
+      "lesson": "module-05",
+      "section_index": 5
+    },
+    {
+      "lesson": "module-05",
+      "section_index": 6
+    },
+    {
+      "lesson": "module-05",
+      "section_index": 7
+    },
+    {
+      "lesson": "module-05",
+      "section_index": 8
+    },
+    {
+      "lesson": "module-05",
+      "section_index": 9
+    },
+    {
+      "lesson": "module-06",
+      "section_index": 0
+    },
+    {
+      "lesson": "module-06",
+      "section_index": 1
+    },
+    {
+      "lesson": "module-06",
+      "section_index": 2
+    },
+    {
+      "lesson": "module-06",
+      "section_index": 3
+    },
+    {
+      "lesson": "module-06",
+      "section_index": 4
+    },
+    {
+      "lesson": "module-06",
+      "section_index": 5
+    },
+    {
+      "lesson": "module-06",
+      "section_index": 6
+    },
+    {
+      "lesson": "module-06",
+      "section_index": 7
+    },
+    {
+      "lesson": "module-06",
+      "section_index": 8
+    },
+    {
+      "lesson": "module-06",
+      "section_index": 9
+    },
+    {
+      "lesson": "module-07",
+      "section_index": 0
+    },
+    {
+      "lesson": "module-07",
+      "section_index": 1
+    },
+    {
+      "lesson": "module-07",
+      "section_index": 2
+    },
+    {
+      "lesson": "module-07",
+      "section_index": 3
+    },
+    {
+      "lesson": "module-07",
+      "section_index": 4
+    },
+    {
+      "lesson": "module-07",
+      "section_index": 5
+    },
+    {
+      "lesson": "module-07",
+      "section_index": 6
+    },
+    {
+      "lesson": "module-07",
+      "section_index": 7
+    },
+    {
+      "lesson": "module-07",
+      "section_index": 8
+    },
+    {
+      "lesson": "module-07",
+      "section_index": 9
+    },
+    {
+      "lesson": "module-07",
+      "section_index": 10
+    },
+    {
+      "lesson": "module-08",
+      "section_index": 0
+    },
+    {
+      "lesson": "module-08",
+      "section_index": 1
+    },
+    {
+      "lesson": "module-08",
+      "section_index": 2
+    },
+    {
+      "lesson": "module-08",
+      "section_index": 3
+    },
+    {
+      "lesson": "module-08",
+      "section_index": 4
+    },
+    {
+      "lesson": "module-08",
+      "section_index": 5
+    },
+    {
+      "lesson": "module-08",
+      "section_index": 6
+    },
+    {
+      "lesson": "module-08",
+      "section_index": 7
+    },
+    {
+      "lesson": "module-08",
+      "section_index": 8
+    },
+    {
+      "lesson": "module-09",
+      "section_index": 0
+    },
+    {
+      "lesson": "module-09",
+      "section_index": 1
+    },
+    {
+      "lesson": "module-09",
+      "section_index": 2
+    },
+    {
+      "lesson": "module-09",
+      "section_index": 3
+    },
+    {
+      "lesson": "module-09",
+      "section_index": 4
+    },
+    {
+      "lesson": "module-09",
+      "section_index": 5
+    },
+    {
+      "lesson": "module-10",
+      "section_index": 0
+    },
+    {
+      "lesson": "module-10",
+      "section_index": 1
+    },
+    {
+      "lesson": "module-10",
+      "section_index": 2
+    },
+    {
+      "lesson": "module-10",
+      "section_index": 3
+    },
+    {
+      "lesson": "module-10",
+      "section_index": 4
+    },
+    {
+      "lesson": "module-10",
+      "section_index": 5
+    },
+    {
+      "lesson": "module-10",
+      "section_index": 6
+    },
+    {
+      "lesson": "module-10",
+      "section_index": 7
+    },
+    {
+      "lesson": "module-10",
+      "section_index": 8
+    },
+    {
+      "lesson": "module-11",
+      "section_index": 0
+    },
+    {
+      "lesson": "module-11",
+      "section_index": 1
+    },
+    {
+      "lesson": "module-11",
+      "section_index": 2
+    },
+    {
+      "lesson": "module-11",
+      "section_index": 3
+    },
+    {
+      "lesson": "module-11",
+      "section_index": 4
+    },
+    {
+      "lesson": "module-11",
+      "section_index": 5
+    },
+    {
+      "lesson": "module-11",
+      "section_index": 6
+    },
+    {
+      "lesson": "module-11",
+      "section_index": 7
+    },
+    {
+      "lesson": "module-12",
+      "section_index": 0
+    },
+    {
+      "lesson": "module-12",
+      "section_index": 1
+    },
+    {
+      "lesson": "module-12",
+      "section_index": 2
+    },
+    {
+      "lesson": "module-12",
+      "section_index": 3
+    },
+    {
+      "lesson": "module-12",
+      "section_index": 4
+    },
+    {
+      "lesson": "module-12",
+      "section_index": 5
+    },
+    {
+      "lesson": "module-12",
+      "section_index": 6
+    },
+    {
+      "lesson": "module-12",
+      "section_index": 7
+    },
+    {
+      "lesson": "module-12",
+      "section_index": 8
+    },
+    {
+      "lesson": "module-12",
+      "section_index": 9
+    },
+    {
+      "lesson": "module-12",
+      "section_index": 10
+    }
+  ],
   "corrections": [
     {
       "source": "A comprehensive examination and answer key of no fewer than three questions per clock hour with a minimum of 90 questions, and a passing course grade of at least 70 percent.",
@@ -1640,6 +2101,2736 @@
       "after": "¿Por qué este curso no especifica una tasa del impuesto especial sobre transmisiones inmobiliarias de Washington?",
       "source_sha256": "699657279840846579b5ae10fab6737fecb6e53aacde8f4ade82abb190444de6",
       "target_sha256": "4ef9b738a57f647497f2e47807b86eb540ca21f238750e70390e1a8e3b0f1406"
+    },
+    {
+      "source": "\"Has",
+      "before": "\"Has",
+      "after": "«Ha",
+      "source_sha256": "d19ca8fa98c42ec41b640688d7b8ccd21a88d0ad08cd2b2fdd33d8c1798f0797",
+      "target_sha256": "c0f523ba0cbddfd4e03f91a7c5350a423370ffb0080a6b0bf8957de46631ea75"
+    },
+    {
+      "source": "A. What RCW 18.85.101(1) requires of you",
+      "before": "R. Lo que RCW 18.85.101(1) requiere de usted",
+      "after": "A. Lo que RCW 18.85.101(1) le exige",
+      "source_sha256": "3007a24be2cf606a329e49bbb56acb6a7127248de49c1936fb9139e7202d2e6a",
+      "target_sha256": "458fa31302e8df1fddd41ab738ddd015c4685164929b10b9f86cc74c270451f9"
+    },
+    {
+      "source": "B. What a Washington clock hour is — WAC 308-124H-820(4)",
+      "before": "B. Qué hora es un reloj de Washington — WAC 308-124H-820(4)",
+      "after": "B. Qué es una hora lectiva de Washington — WAC 308-124H-820(4)",
+      "source_sha256": "b9dbb241a34c386be229f1bbc10559a896c41eac64beb74103967e18613648ef",
+      "target_sha256": "cc027848bc0dabc3ae58b5e0f0bb342f0a797a6f09435436ed46d111b88aba47"
+    },
+    {
+      "source": "Conforming them remains a submission gate.",
+      "before": "Conformarlos sigue siendo una puerta de sumisión.",
+      "after": "Adecuarlos sigue siendo un requisito pendiente para la presentación.",
+      "source_sha256": "80fda4d6d0a8f29c4a01d5ed3fcc44e0fea3a910cbfdfc4b82621a8787bc3d8a",
+      "target_sha256": "1d07ad19acbd7ac8c95bdbbe86fc54fb0a9f1a40f97d071f436796621cf52528"
+    },
+    {
+      "source": "Identify what a course may not be approved to teach for clock hours.",
+      "before": "Identifique lo que un curso puede no ser aprobado para enseñar por horas de reloj.",
+      "after": "Identificar los contenidos que no pueden aprobarse para otorgar horas lectivas.",
+      "source_sha256": "76dfc3697402ecae6307724756771bed20f7332bc33eb5b6c901c8df76e016b0",
+      "target_sha256": "a7e653fa3ad538691747878f1f780404d6eea85ef313be5d192c75e4d29b3a50"
+    },
+    {
+      "source": "a Washington clock hour is",
+      "before": "un reloj de Washington hora es",
+      "after": "una hora lectiva de Washington equivale a",
+      "source_sha256": "fe7bf4a69227e8d192324dc4b207437284392f2d01de11656aaf9c346b178023",
+      "target_sha256": "915348ff4ea23c12d46a9e5c476d1d48f4c150858b823403ea3df40c5596c8af"
+    },
+    {
+      "source": "and have not yet passed objective-level mapping to those DOL documents.",
+      "before": "y aún no han pasado la cartografía a nivel objetivo a esos documentos DOL.",
+      "after": "y todavía no se ha completado la correspondencia de sus objetivos con esos documentos del DOL.",
+      "source_sha256": "0af5ef29d0a34076d7852d5fe1bd6405f5935a0ecb6ecce71114e03575be03c7",
+      "target_sha256": "8168a08e5c2bfe7dbd9ddbb82787a99e3d35558ea11b6fd7f7f896440ef864c4"
+    },
+    {
+      "source": "and provides that instruction",
+      "before": "y proporciona esa instrucción",
+      "after": "y establece que la instrucción",
+      "source_sha256": "fe40388f11ea0d1c8be76f956f2c880faf5e3c2b74011a1aee7f50ebfa3d38a5",
+      "target_sha256": "f88ff191ca97825e460e59ecf5ec7ef6bdd83c707f3c0075c69670f4dced87f6"
+    },
+    {
+      "source": "designated broker",
+      "before": "Agente designado",
+      "after": "corredor designado (designated broker)",
+      "source_sha256": "5e2462a3ad1f45e79ef01a99f51e69b3f8d31d1da51aff1ea2c1ebc6ebab3e01",
+      "target_sha256": "4bf58d7ff6003d0b99213a93dab20ef5dcec8fc8925b77928a853c7636fafab6"
+    },
+    {
+      "source": "licensed to one firm at a time",
+      "before": "licencia a una empresa a la vez",
+      "after": "vinculado mediante su licencia a una sola empresa a la vez",
+      "source_sha256": "9069f6ca15b2c28ce96d8a6c12b2782a5fb51cec0d3e1052a14954e0aa8d827d",
+      "target_sha256": "ff83ffbfc9d93eb97a12f7361959f826c73816532fe929f3bd6804c0b05ae9c0"
+    },
+    {
+      "source": "managing broker",
+      "before": "gestionar el corredor",
+      "after": "corredor gestor (managing broker)",
+      "source_sha256": "bede679dda813218b363f0db9537f46a5a20758592c0501a3af2f51545731867",
+      "target_sha256": "b18f90fb65f682f10da564e987e28422727c1f45423ec92351979cc4a2f25e70"
+    },
+    {
+      "source": "names.",
+      "before": "nombres.",
+      "after": "menciona.",
+      "source_sha256": "62455288ec3bc3935662fe42fb496de71f1b34e29e34eab3f22962f0b7c6b295",
+      "target_sha256": "2cf7afb12f4fde15fa2126ea9f87c5002b306bfd5a2b9e98e70ca1df65daec54"
+    },
+    {
+      "source": "passed the broker's license examination",
+      "before": "aprobó el examen de licencia del corredor",
+      "after": "aprobado el examen para la licencia de corredor",
+      "source_sha256": "234a83ea412bfee33eced110e8654b2f5aca455a4ef922fe3fbe55f687fd3463",
+      "target_sha256": "68b6f964893db9d81b486cef3e3b833d2b164ae3000e0481ca2b17b973bba8b9"
+    },
+    {
+      "source": "— not the licence application and not the date the licence issues. A course finished twenty-six months before you apply to test is a course the statute does not count, however good it was.",
+      "before": "— no la solicitud de certificado y no la fecha de expedición del certificado. Un curso terminado veintiséis meses antes de solicitar la prueba es un curso que el estatuto no cuenta, por bueno que fuera.",
+      "after": "— no la solicitud de licencia ni la fecha en que se expide. Un curso terminado veintiséis meses antes de solicitar el examen no cuenta según la ley, por bueno que fuera.",
+      "source_sha256": "d7c3427bd04a80359f48fbfd9469aba3ccab3201977b7469206514cbec5ec7ce",
+      "target_sha256": "b4f6f20d52c7fd5ef2d43cd5c7d917581a4482207478aab92b23377236ab7657"
+    },
+    {
+      "source": "\"Clock hours shall not be awarded for any course time devoted to",
+      "before": "\"No se concederán horas extraordinarias por ningún tiempo de curso dedicado a",
+      "after": "«No se otorgarán horas lectivas por tiempo del curso dedicado a",
+      "source_sha256": "7aa94132151f313135a3195709a9407d0d8c3727e8191938765dcd2aa0c1973f",
+      "target_sha256": "038f802d28992ec8645c0431af9366e50e59703a267ed3ddef11cb27b7d564d0"
+    },
+    {
+      "source": "\"The provider's course application must",
+      "before": "\"La aplicación del curso del proveedor debe",
+      "after": "«La solicitud del proveedor para el curso debe",
+      "source_sha256": "2d48f986b0d45f8d822c98a65a824ab24f8962c7680ada599dd39a62e3618343",
+      "target_sha256": "5ea76aa4ad5568f52cadc83f77bb43d61d255e81bd52b3d53e76ded119364a8b"
+    },
+    {
+      "source": "\"real estate\" in the course title",
+      "before": "\"bienes raíces\" en el título del curso",
+      "after": "«real estate» (bienes raíces) en el título del curso",
+      "source_sha256": "e022310d3d10f2cdec93d8218135a17f3a2dd2b87338564adbf6fbcb2983efbb",
+      "target_sha256": "6d7c88cddae5d9e092dfe0b38f02573d15d805e77f00dfcb1ce5e0364828dff3"
+    },
+    {
+      "source": ", not this school's. The in-module checks you will meet throughout this course are",
+      "before": ", no de esta escuela. Los controles en el módulo que se reunirán a lo largo de este curso son",
+      "after": ", no de esta escuela. Las comprobaciones incluidas en los módulos de este curso",
+      "source_sha256": "a03556a9358de5071bb10f62877d4e97e5afdff36f674780c44da49497f6c6ea",
+      "target_sha256": "5639cdc977d6ba1b62db2ed8af3308553757941c0f03ad931681d637be1c8309"
+    },
+    {
+      "source": "D.2 and (G) Contains a Line Worth Noticing",
+      "before": "D.2 y (G) Contiene una línea que vale la pena Notice",
+      "after": "D.2 Además, (G) contiene una disposición que merece atención",
+      "source_sha256": "6b7fc45c52960627168b4f111d5cd5bd7f647d1db1a500e50025b7871bef55c4",
+      "target_sha256": "4df1814b4070de29f99477426118da9275a5f233eaba26204acaa12b37e0505d"
+    },
+    {
+      "source": "Passing Grade",
+      "before": "Aprobando grado",
+      "after": "Nota mínima de aprobación",
+      "source_sha256": "2303a3f7d29732feab22ad89c07cac6d4445a81f2927a1a90b002ee2e4cef8d9",
+      "target_sha256": "efe15ffe611f67777456b3a5224aed400da26fd64dcf18b380220747c41b71ff"
+    },
+    {
+      "source": "Services or products can be offered during nonclock hour time, such as breaks or lunchtime.",
+      "before": "Los servicios o productos se pueden ofrecer durante las horas no horarias, como descansos o almuerzos.",
+      "after": "Los servicios o productos pueden ofrecerse fuera del tiempo computable como horas lectivas, por ejemplo, durante los descansos o el almuerzo.",
+      "source_sha256": "6425ff3bdbe172a65c7dd3b3cac5060863fa5c8d11e0d57deae7ce28308e9f63",
+      "target_sha256": "1dae6c5b0d7e682e69ef909a73059fdf19ffe61a257ac390f17cb88f36ef53b9"
+    },
+    {
+      "source": "may not use",
+      "before": "puede no utilizar",
+      "after": "no puede utilizar",
+      "source_sha256": "25f3ea223707b24b2be33d27b98c7d8ecb1f27d3642719f506948f910e06633b",
+      "target_sha256": "949651af0ed6fc1b6bdcd31ba67bfbb49ef34fd6c3973e67c608e4c49d9923d2"
+    },
+    {
+      "source": "real estate fundamentals; real estate brokerage management; real estate law; advanced real estate law; business management; real estate practices; advanced real estate practices; and Washington real estate fair housing.",
+      "before": "bienes raíces fundamentales; gestión de corretaje de bienes raíces; ley de bienes raíces; ley de bienes raíces avanzada; gestión de negocios; prácticas inmobiliarias avanzadas; prácticas inmobiliarias avanzadas; y la vivienda de la feria de bienes raíces de Washington.",
+      "after": "real estate fundamentals (fundamentos inmobiliarios); real estate brokerage management (gestión de corretaje inmobiliario); real estate law (derecho inmobiliario); advanced real estate law (derecho inmobiliario avanzado); business management (gestión empresarial); real estate practices (prácticas inmobiliarias); advanced real estate practices (prácticas inmobiliarias avanzadas); y Washington real estate fair housing (vivienda justa en el sector inmobiliario de Washington).",
+      "source_sha256": "ebdb6972b1af4c8333fb6563599bbd0dd9e38e886ef1fbd69013b4c3209d002c",
+      "target_sha256": "3ef853073563e173432663484b575f0fb85d08f74627c7d1bd1b6d0424c1965e"
+    },
+    {
+      "source": "that examination — they gate progression, and their thresholds are StateCourse standards.",
+      "before": "que el examen — que puerta la progresión, y sus umbrales son normas StateCourse.",
+      "after": "constituyen ese examen: condicionan el avance, y sus umbrales son criterios de StateCourse.",
+      "source_sha256": "e9e085262016502cba6ff393bc80c570b7b9a6f568ebb68f57fd401f01883832",
+      "target_sha256": "a8c156bf1f8a26ae0bcaa228a36e7c4281892640e190a2a5913f4f337ec37453"
+    },
+    {
+      "source": "\"each appointed broker shall",
+      "before": "\"cada agente designado deberá:",
+      "after": "«cada corredor nombrado deberá",
+      "source_sha256": "d7199ae82a34268651aae90c9987ffb4f0b8f457b6da27cc8253181c7169b25d",
+      "target_sha256": "a5b2a1f7e32f6b7d589733490aa778a1b7faddb23f0ac027318c7274ad441a1d"
+    },
+    {
+      "source": "(b) submit questions or answer test items, and receive direct feedback",
+      "before": "(b) enviar preguntas o respuestas a los artículos de prueba, y recibir comentarios directos",
+      "after": "(b) plantear preguntas o responder preguntas de evaluación y recibir comentarios directos",
+      "source_sha256": "0fa8651177319668439324677eabb4fa8102a257a9d05d7a90e9f9e6fe0848b4",
+      "target_sha256": "a4462b8a0133d8334fee87fcb92cc411a52ef67eaad8b84d7ec15548da45b64c"
+    },
+    {
+      "source": "Designated broker",
+      "before": "Agente designado",
+      "after": "Corredor designado (designated broker)",
+      "source_sha256": "54fb835b67af4a853e2fd90559916343703905ea444c8fcd02228b3ae5ce321c",
+      "target_sha256": "ca5d382a332cbf7d2d0022c7819d78cdd6fd4f9661e912f39b5ea3b23db0673c"
+    },
+    {
+      "source": "Managing broker",
+      "before": "Intermediario gestor",
+      "after": "Corredor gestor (managing broker)",
+      "source_sha256": "7f43bd2635f152533499516e26f025c62b6e2522962b4b57fe15d9e49c7ac196",
+      "target_sha256": "868dc03696c068331791e4d0c4b1a5b61b89009466605489567c86c2df5f26a1"
+    },
+    {
+      "source": "No ARELLO certification and no delivery-method approval is held for this build. Submission gate.",
+      "before": "No hay certificación ARELLO y no hay aprobación de método de entrega para esta construcción. Puerta de entrega.",
+      "after": "Esta versión no dispone de certificación ARELLO ni de aprobación del método de impartición. Es un requisito pendiente para la presentación.",
+      "source_sha256": "85e14165117b14b62f9764ed9ff9c40c12d34528356592ab8f698b047cfa2246",
+      "target_sha256": "949d4f560a8d768adf94798603885a01a6fbcce781ab5e181fe968b480d32b6c"
+    },
+    {
+      "source": "RCW 18.86 assigns duties to the FIRM and to the individual broker differently.",
+      "before": "RCW 18.86 asigna funciones al FIRM y al agente individual de manera diferente.",
+      "after": "RCW 18.86 asigna de manera distinta las obligaciones de la EMPRESA y del corredor individual.",
+      "source_sha256": "6ab4edb085157c6d6eb3a58c0b53d573c705a901f92944b1c8cf31cbffa35422",
+      "target_sha256": "f9341462c9488f0652005d9350bb77f2fd75245c7e326d9944340d8dab7dc8b7"
+    },
+    {
+      "source": "a mechanism of individual remediation",
+      "before": "un mecanismo de rehabilitación individual",
+      "after": "un mecanismo de apoyo individual para subsanar dificultades de aprendizaje",
+      "source_sha256": "02cdef296bf394e9d5f2384a33c0d87ecdcb87a5bd30590429debc635dccf8fc",
+      "target_sha256": "9c3ee4c8924723d3c7a736ee7c845fe6e02a0ecd9aefdb888f46b0375d4d6c24"
+    },
+    {
+      "source": "means the course structure and technologies promote",
+      "before": "la estructura de los cursos y las tecnologías que promueven",
+      "after": "significa que la estructura y las tecnologías del curso fomentan la",
+      "source_sha256": "8195566aeff88a0b0d6ce8b91be50139d565d5b030df43e9c504fc1f6e042698",
+      "target_sha256": "4251aa1a0d6b10604f45373239b410d1e4abade9b41873b58b3d280d5eb35bc9"
+    },
+    {
+      "source": "of the delivery method need not apply separately,",
+      "before": "no será necesario aplicar por separado el método de entrega,",
+      "after": "del método de impartición no tiene que solicitar su aprobación por separado,",
+      "source_sha256": "b36667904368fc950be288d29467cb632ee7c947ba1fd962e43895ce7d6d4738",
+      "target_sha256": "70d3ba01a2dec38c6356aab23a1f9668a40bde72304b95931872b36adab734d0"
+    },
+    {
+      "source": "reasonable security",
+      "before": "garantía razonable",
+      "after": "medidas de seguridad razonables",
+      "source_sha256": "8295ff480463ad5d0de7bf802bbdabb8696c69300e2bc9c1baf0cab97f893929",
+      "target_sha256": "514526a5fedeaa9f4e74896f45784e87b3f229103f20b68406ca4f59af221a18"
+    },
+    {
+      "source": "solely represent",
+      "before": "únicamente representan",
+      "after": "representar exclusivamente a",
+      "source_sha256": "67cbcc3a0ad0537fb7041b603a510c3387e23431a4092fe47c8e5340d0dac5b4",
+      "target_sha256": "826c89f6ce58155ad5d4dccae450f841d313ded51d216fc48e64dbdea2ee5852"
+    },
+    {
+      "source": "the party with whom the appointed broker has an agency relationship.\"*",
+      "before": "la parte con la que el agente designado tiene una relación de agencia.\"*",
+      "after": "la parte con la que tenga una relación de agencia».*",
+      "source_sha256": "3e38cc5921bef0d2270451cc324b0668d9eda90dc5301ad27a719803e1c321aa",
+      "target_sha256": "4a5c30e74f8800c81773c5170a2a5685a4371cc906942eec5588cead35b98a6e"
+    },
+    {
+      "source": "90-question floor",
+      "before": "90 preguntas",
+      "after": "mínimo de 90 preguntas",
+      "source_sha256": "25e97fc98ba3e5562ccefd0068941a3d06d218f1c8e37d564156a99931202bb1",
+      "target_sha256": "91846ce44729c4ac4b6c90d1ad6466a655a9837c5062da00a96b6757f7878be6"
+    },
+    {
+      "source": "Drawn from",
+      "before": "Dibujado de",
+      "after": "Basado en",
+      "source_sha256": "69cbd66213a8469bbb987d77837ca67c9aac620fe84860edfe64616d271f94bb",
+      "target_sha256": "c59c0b367a54465c3bf67c1ebcb1dc03ee9d3b6342b8a64380e0a347f48ce0d9"
+    },
+    {
+      "source": "Eleven items — one applied scenario, five engagement items and five remediation items. The",
+      "before": "Once artículos: una hipótesis aplicada, cinco elementos de compromiso y cinco elementos de rehabilitación. Los",
+      "after": "Once preguntas: un caso aplicado, cinco preguntas de participación y cinco de refuerzo. El",
+      "source_sha256": "5ab3d32d89038b4e49f445d8af711087eb0fae4fddb69ff92206fd893259a122",
+      "target_sha256": "5f78e063162b66f9fefed88d4db25cfc744f900f19510a49f0843060b454bb95"
+    },
+    {
+      "source": "It.",
+      "before": "Sí.",
+      "after": "ella.",
+      "source_sha256": "530199208776914a6580d63b9bdc558e82e84155d93f3411999dabe9b91d0caf",
+      "target_sha256": "aa86bf11ae76e4832361e4b2c67ad29604f087e53bcb51e1f6cd7c4b37101c06"
+    },
+    {
+      "source": "Washington superseded by statute.",
+      "before": "Washington fue reemplazado por un estatuto.",
+      "after": "Washington sustituyó por ley.",
+      "source_sha256": "ea70a165e24264bc3d8431bd31064bebb5c65e9552b992ee75e90d0ca87deecf",
+      "target_sha256": "2a5a34be0c9ce525fbd5da3a48bdb3143e062d4203f60ced7894706ee89743b5"
+    },
+    {
+      "source": "at least 180 items",
+      "before": "al menos 180 artículos",
+      "after": "al menos 180 preguntas",
+      "source_sha256": "541a48fe5f85244bae9839d70ffac15a64f69399360e513785a7ba0996b9aac3",
+      "target_sha256": "02215bd73decb558392ea40f503a6a984e73adf41a5f37ed8013c2f61c4cffd3"
+    },
+    {
+      "source": "obligations — has an account",
+      "before": "obligaciones — tiene una cuenta",
+      "after": "obligaciones — maneja una descripción que",
+      "source_sha256": "866f7507732138edd8630e1410d82702a0a67d2c2ab2f2231883314f6da68efe",
+      "target_sha256": "719a9ebe99ed24f36cdaf845ba68228b0898946605d04e9a9d6b843218de40aa"
+    },
+    {
+      "source": ". The lease can change the default.",
+      "before": ". El arrendamiento puede cambiar el valor por defecto.",
+      "after": ". El contrato de arrendamiento puede modificar esta regla supletoria.",
+      "source_sha256": "ed43663a04a8c4ae50250e1314acc5997905261ef6c1f6e5bb681f8d5606a27c",
+      "target_sha256": "419ccd20d91c7295c8f943a7ca5a20c2188586b8a999cfce03557f7c16c2bffe"
+    },
+    {
+      "source": "A.2 Trade Fixtures and Emblements",
+      "before": "A.2 Equipamientos y montajes comerciales",
+      "after": "A.2 Elementos comerciales instalados por el inquilino y cultivos anuales",
+      "source_sha256": "df4dc6df47542be7028b3b55c6d95888f9d6715ff410c702c0956c4c9da858de",
+      "target_sha256": "fe40d9c76cf7cf15691bca3da123c0b5d4cab12da8c4ce453c49414a3f0f740c"
+    },
+    {
+      "source": "An article of personal property that has become real property by attachment. The tests, in order:",
+      "before": "Un artículo de propiedad personal que se ha convertido en propiedad real por apego. Las pruebas, en orden:",
+      "after": "Un bien mueble que se ha convertido en inmueble por su incorporación. Los criterios, por orden:",
+      "source_sha256": "7e844d0a08d495b7c85b0ac2d08fce903ac00de09d4ae4c7f888e641db36b6b6",
+      "target_sha256": "b9d8b61a20be32caf52f5e0f1f95f9f574f9516d4e3a6b72c6ab75901dfae045"
+    },
+    {
+      "source": "Distinguish freehold from leasehold estates.",
+      "before": "Distinguir la retención gratuita de las propiedades arrendadas.",
+      "after": "Distinguir los derechos de propiedad de duración indeterminada (freehold) de los derechos de arrendamiento (leasehold).",
+      "source_sha256": "6a5a2dcf86ab4bedbfe4f3f056c1f847c9fe81fde447adb029738119058b7893",
+      "target_sha256": "bb98ef404638d7a0337b2ec395dc31ca3dd495d4850b9622b65d824d1635c725"
+    },
+    {
+      "source": "Distinguish liens from non-lien encumbrances.",
+      "before": "Distinguir los privilegios de las cargas ajenas a la mentira.",
+      "after": "Distinguir los gravámenes que garantizan deudas de otras cargas sobre la propiedad.",
+      "source_sha256": "f353d56ddfdc9a03a62517283255cfb87d10a11bbcd870d9f5de4ec395141eaa",
+      "target_sha256": "4f9ea240a375cccdc5a1f43bcf1df477a4f0af651cc33aeca57fcc1cfa07d828"
+    },
+    {
+      "source": "Distinguish real from personal property and apply the fixture tests.",
+      "before": "Distinguir real de la propiedad personal y aplicar las pruebas de fijación.",
+      "after": "Distinguir los bienes inmuebles de los muebles y aplicar los criterios de incorporación permanente.",
+      "source_sha256": "d8ec7e9b7abffc8364e16217f3b5f6293e6f04cae61d8f0f41d2989233b7833d",
+      "target_sha256": "d968ef6a2dfa6482b786bf7f6c65644eea8292042253708c457aa4d870b626c6"
+    },
+    {
+      "source": "Emblements",
+      "before": "Emblemas",
+      "after": "Cultivos anuales (emblements)",
+      "source_sha256": "db6303edc3f82911d0c61de6a8d6e027d23018aa87f962f7be6b16c6d1430454",
+      "target_sha256": "4b78ee24fc566fd84f42ea24d1adb10c1de559df205818f2c42aa0db4bb98c45"
+    },
+    {
+      "source": "Name in writing what stays and what goes, item by item, before anyone signs. Every fixture dispute a broker ever sees was preventable by a sentence.",
+      "before": "Nombre por escrito lo que se queda y lo que va, artículo por artículo, antes de que nadie firma. Cada disputa de montaje que un bróker ve fue evitable por una sentencia.",
+      "after": "Indique por escrito qué se queda y qué se retira, elemento por elemento, antes de que nadie firme. Toda disputa sobre elementos incorporados que llegue a un corredor podría haberse evitado con una frase.",
+      "source_sha256": "5c3fadd56f78c433261d8fd245810c2d3e2cc6b2ee249b82b9290e522c7d8373",
+      "target_sha256": "b1bae50f895cc91daebeadb174e35abc20fefdaadb964c3fe7bbe1bc9cab738b"
+    },
+    {
+      "source": "Residential Landlord-Tenant Act (RCW 59.18)",
+      "before": "Ley de propietarios de viviendas (RCW 59.18)",
+      "after": "Ley de arrendadores y arrendatarios de viviendas (RCW 59.18)",
+      "source_sha256": "df2eb395cbabc4a29eb688bb3895a3147481f23543f6ff63c3f8f6911764290f",
+      "target_sha256": "1ac2dfc2fb3eebb5b2dc0b17aec29aa27366adf02bd93c11ca8bed2a2efae7f6"
+    },
+    {
+      "source": "accession",
+      "before": "adhesión",
+      "after": "accesión",
+      "source_sha256": "c6f6849fb422fc74963c546b93d3b0c5ca7c3c62c0742b76dd37ca87bfd09dba",
+      "target_sha256": "5bd88cdffeec8f20189d55e574b9d6066bee0369056296ee72b8d5606917f0f6"
+    },
+    {
+      "source": "before the term ends",
+      "before": "antes de que termine el mandato",
+      "after": "antes de que termine el plazo de arrendamiento",
+      "source_sha256": "014f7a929e08b51e994e360031b65c487830a897a9ac8bbeb4beb264064e666d",
+      "target_sha256": "69ddc78c4b7f0f133de2297d65269db2b363d26c2b945d9fd4616cc88be9d5b8"
+    },
+    {
+      "source": "deed of trust act (RCW 61.24)",
+      "before": "Ley de fideicomiso (RCW 61.24)",
+      "after": "Ley de escrituras de fideicomiso de garantía (RCW 61.24)",
+      "source_sha256": "9ec7ba8068027fba53b6ba874bea700934005a0f37ab9cf8b1d8f6bcace45358",
+      "target_sha256": "c087e91385f8ecf08ddd02211a8bce072aba5236c77ebf578ee4acd7b42822d5"
+    },
+    {
+      "source": "— a tenant's attachment reads differently from an owner's.",
+      "before": "— el embargo de un inquilino es distinto del de un propietario.",
+      "after": "— la incorporación de un elemento por un inquilino se interpreta de manera diferente a la realizada por un propietario.",
+      "source_sha256": "e2631cb7dc81395e5152fb7b911eb1b1f454727ae77810c8e24dece94a2e66bc",
+      "target_sha256": "bc4c3413d0be95c189fececc2e683960165fa50b921c80bd74b3684c370c1d46"
+    },
+    {
+      "source": "A holdover the landlord never agreed to.",
+      "before": "Una retención que el propietario nunca aceptó.",
+      "after": "Permanencia del inquilino después del vencimiento que el arrendador nunca consintió.",
+      "source_sha256": "c32885d259f12ab8bc9b6d95f6f12a339454694b12cbc8c73a0e35d67a2a9967",
+      "target_sha256": "45174e13e06af714930602c606ae9b8f15d6bc62dc0ba79730262f7f0a915ba9"
+    },
+    {
+      "source": "A landowner who grants a utility easement has sold a stick. One who leases has transferred possession and kept the rest. One who grants a deed of trust has pledged, not conveyed.",
+      "before": "Un terrateniente que concede una servidumbre de servicios públicos ha vendido un palo. Uno que alquila ha transferido la posesión y se ha quedado con el resto. El que concede un acto de confianza ha prometido, no transmitido.",
+      "after": "Un propietario que concede una servidumbre de servicios públicos ha transmitido uno de esos derechos. Quien arrienda transfiere la posesión y conserva el resto. Quien otorga una escritura de fideicomiso de garantía afecta el inmueble como garantía, sin transmitirlo.",
+      "source_sha256": "98b41b6169718093fd026c51d7ac843deff1e467aae4cb969ccb206f55485485",
+      "target_sha256": "8b1d70672b6c82151fe2ab0bc9c3137bb22a37ac8628105a23c21563ca41716c"
+    },
+    {
+      "source": "Assignment",
+      "before": "Asignación",
+      "after": "Cesión",
+      "source_sha256": "153cdaaec56103da0c71f1ff5a0786849d190d369ece1e63940081d8b3ecbd8d",
+      "target_sha256": "dfb9b69ec4394c4fd9a80e6fad51d67322d7ac5a3a76ad920b4c7ea8b66b2461"
+    },
+    {
+      "source": "Continues at the pleasure of both parties.",
+      "before": "Continúa con el placer de ambas partes.",
+      "after": "Continúa mientras ambas partes lo consientan.",
+      "source_sha256": "e1e2a6cf8595e640626f574fb4e066fc3d631a5eb803c0d68b0aefb42bf9c1d0",
+      "target_sha256": "01a9d3918f521088e29879c1acddf5fefdc53ccb050b794cbedef46810e26a50"
+    },
+    {
+      "source": "Determinable",
+      "before": "Decidible",
+      "after": "Determinable",
+      "source_sha256": "d38cf485aa9a390f0d83244214de43e8384b132b7f6a219f905f6660373b94cf",
+      "target_sha256": "d38cf485aa9a390f0d83244214de43e8384b132b7f6a219f905f6660373b94cf"
+    },
+    {
+      "source": "Escheat",
+      "before": "Esquema",
+      "after": "Sucesión a favor del Estado por falta de herederos (escheat)",
+      "source_sha256": "4f5a5d1e726a009e126f69695bcbfdf90b8a0e76325ccc9494aeb70d4e90da8a",
+      "target_sha256": "b7653e1e510b3d699152859c13c23f504332d28803408aa5466073add003c087"
+    },
+    {
+      "source": "Estate for years",
+      "before": "Estate durante años",
+      "after": "Arrendamiento por plazo determinado",
+      "source_sha256": "5340bc4fbdad3a5f4c02e64b807f96d7ce8c3dc016e13d55c4ceab6d290a83e2",
+      "target_sha256": "588a1149233219677e423e63a03219bf592b2f03e35aca3430db1bcee83f27b2"
+    },
+    {
+      "source": "Fee simple absolute",
+      "before": "Tasa simple absoluta",
+      "after": "Pleno dominio absoluto (fee simple absolute)",
+      "source_sha256": "8a0f0c9be22a84290f63c0d5ad90a2af3e0180ba770a065a87c5370dfa2771cb",
+      "target_sha256": "d97b2bb11c9e232b4165bff9373835bcf7dff85ea1e4e5375d586766729eeb00"
+    },
+    {
+      "source": "Fee simple defeasible",
+      "before": "Tarifa simple defecable",
+      "after": "Dominio sujeto a resolución (fee simple defeasible)",
+      "source_sha256": "4a217476924212920c4bd8484d7f7396a0cac68a712e3260e899b9e50b91e6d3",
+      "target_sha256": "9a20be2df131552047bff0d61607c46ea2fd1f89f48e726ca2dca8bfcae1669b"
+    },
+    {
+      "source": "Life estate",
+      "before": "Explotaciones",
+      "after": "Derecho de propiedad vitalicio (life estate)",
+      "source_sha256": "afa690e59f4daef05548127eaf9c738c44de7cec2584de6b4824311abe60ec72",
+      "target_sha256": "54bc606c4a6aa999bc74e081625ffa3bf2fb8d9cbc1fb462a5fe25df52d67132"
+    },
+    {
+      "source": "Police power",
+      "before": "Poder de la policía",
+      "after": "Potestad reguladora",
+      "source_sha256": "3d2bb427b793d702d5945ddf8913c753ad05d5559c5b3aff98f5326f542f5cd8",
+      "target_sha256": "7914a68723e78260bd8207964042199a3d9682b08dbe006c6ac4e7f7eb8bfbb1"
+    },
+    {
+      "source": "Tenancy at sufferance",
+      "before": "Arrendamiento en caso de sufrimiento",
+      "after": "Ocupación tras vencer el arrendamiento, sin consentimiento",
+      "source_sha256": "050f347ee0a0ed17bf9f8a522a4e54b199da65468a68bb579eecde515cea0f34",
+      "target_sha256": "21d1061021bcf1749e34c2362d82826ece8f14853dbed30b8c8b5ba8999cd479"
+    },
+    {
+      "source": "appurtenant easements",
+      "before": "Servidumbres adecuadas",
+      "after": "servidumbres vinculadas a un predio",
+      "source_sha256": "cc73ecfd3ace8993a1db48d74b29f0e9cba3ee2954effb6f1236535b1946c44f",
+      "target_sha256": "76256387fcfbc97432e218636576f4250c5614099efb26e395872ef1bef9962c"
+    },
+    {
+      "source": "condemnation",
+      "before": "condenación",
+      "after": "procedimiento de expropiación",
+      "source_sha256": "2efb4ae1a745be39ab9ebdd93f4b93ee0482eb629e5d6815abf29bdaf198e04e",
+      "target_sha256": "134a210f7526c3585642cd6f83f48e08833b841331540ee412bac95817e6ca54"
+    },
+    {
+      "source": "entire",
+      "before": "entero",
+      "after": "totalidad de su",
+      "source_sha256": "260b27ca3018bc10add7b5d45f85d3204f80753f7640bcc4966e62cab9193fba",
+      "target_sha256": "cad3f4f6296bae7d735593e70be7f4695c01f5859427f876f968297836d99fc3"
+    },
+    {
+      "source": "less than all",
+      "before": "menos que todos",
+      "after": "solo una parte",
+      "source_sha256": "07dd928f35f74e86f5315efd011e07ac1bf9534a6566a09854210b53ccbf3a86",
+      "target_sha256": "a0d610c8c2532a53dd7121f23cd681eabb75717ba98ee27d71674d06cda64e50"
+    },
+    {
+      "source": "life tenant",
+      "before": "inquilino de vida",
+      "after": "titular del derecho vitalicio",
+      "source_sha256": "5a15f8055f3d7a80f8622528c56fe5345b8ef79f3f2c8cea0364060248df877b",
+      "target_sha256": "463d0fd12cc381521206b1410a1df32fa3583e72bc8b54ecb8b34679d758c8cd"
+    },
+    {
+      "source": "remainderman",
+      "before": "Restoman",
+      "after": "titular del derecho remanente",
+      "source_sha256": "c3c98b033a60079ea0737c7de2072d27e1eb73daf8dbad10fdd1898508153db6",
+      "target_sha256": "a546d7c0a4bf68ceac99e1048bf7e4d18b5190d5b999ae00b4f35da9882cddb5"
+    },
+    {
+      "source": "remaining interest; a",
+      "before": "intereses restantes; una",
+      "after": "derecho restante; un",
+      "source_sha256": "8512885e9d3f29f4a82d58f0c0c2e29411a1ea646be0acdcf6372a0161c43aab",
+      "target_sha256": "30405e0b9cda524be0c2d16e236277857dd2b50e2b9ca276253dc123962d8799"
+    },
+    {
+      "source": "transfers",
+      "before": "transferencias",
+      "after": "transfiere",
+      "source_sha256": "cfa8b077a8f93871a09c09345d60faffba844d8cf47dfd9d27ee4ffd24574439",
+      "target_sha256": "a7d099c818185167e2f93b03dfc356e414581d9c7ff0779db52f43781a92db13"
+    },
+    {
+      "source": "transfers the tenant's",
+      "before": "transferencias del inquilino",
+      "after": "transfiere del inquilino la",
+      "source_sha256": "3e8ac4c96a375f09ba3d3d5ca8da69c16f43fb503c0e464b27376a0baab0d9b3",
+      "target_sha256": "4b9838d998e8597beca31d7e781244746002e4e6c8e2ec12a94e51f497aae698"
+    },
+    {
+      "source": "waste",
+      "before": "Residuos",
+      "after": "deterioro del inmueble (waste)",
+      "source_sha256": "0bb5e9329f190a4fa67fbd493b61a9257f35585e460a8be13a50a9cdf1823636",
+      "target_sha256": "bb745dbf2e0b4fbf9f6604a03909058362ded08250d63b56004a11274311606e"
+    },
+    {
+      "source": "— a fee that can end on a stated condition:",
+      "before": "— una tasa que puede terminar con una condición determinada:",
+      "after": "— un derecho de dominio que puede extinguirse si se cumple una condición determinada:",
+      "source_sha256": "4068cf78c92eb78f3a439f0fd98c0b060d7af0748be9d3c14399636890be9545",
+      "target_sha256": "34ead84f853be41d8a7ba99fcef4a5b374865e2811a257d2e9a5233b7d0b12bd"
+    },
+    {
+      "source": "— ends",
+      "before": "— fines",
+      "after": "— se extingue",
+      "source_sha256": "e309750ccf842e954c9432c7303f385ad81455bf99aedb8cad86f43557dc03f0",
+      "target_sha256": "7dcf6d4518d47eb75529fc659d28344b63f92c1aa5824ab91f9fc115daea3a17"
+    },
+    {
+      "source": "Appurtenant",
+      "before": "Apropiado",
+      "after": "Vinculadas a un predio (appurtenant):",
+      "source_sha256": "157373cef8d413c4ae1d468f8f09752266ae028ca6364ffeffd2059acf1d157e",
+      "target_sha256": "965e5666876fd6761ec012469d1022ce0dfc4724f3c5b2ff4fecb1efbdcf38a0"
+    },
+    {
+      "source": "E. Encumbrances",
+      "before": "E. Imposiciones",
+      "after": "E. Cargas sobre la propiedad",
+      "source_sha256": "c1344f03dc8f9a3c2878e0bb4699841f4eb6c16e019a58187c3a5a35c6b253c4",
+      "target_sha256": "781bd9a04de8a6f4f89658305c4fa99d0c857fa789ebc94d0cd1a4f97e808b66"
+    },
+    {
+      "source": "E.1 Liens — Money Claims",
+      "before": "E.1 Lienzos: reclamaciones de dinero",
+      "after": "E.1 Gravámenes que garantizan deudas",
+      "source_sha256": "651f77c275fc7f065046f6574d7faf27e58cba23936d8ac83f351dd1184d772d",
+      "target_sha256": "42de95c72effa7fc507ad4b69e161c3ed95b3dd936652a0746601d5cadcbd0ed"
+    },
+    {
+      "source": "E.2 Non-Lien Encumbrances — Use Claims",
+      "before": "E.2 Indemnizaciones no relacionadas con el extranjero - Reclamaciones por utilización",
+      "after": "E.2 Cargas que no garantizan deudas — Derechos sobre el uso",
+      "source_sha256": "2cc995d1c82e4e6411c975233a390b13ae8ed6c7ea88b8a61329df33e62285e0",
+      "target_sha256": "733fb35914c9f7b37316083aa05835da663ff2f5927de60d81f678607a9c05db"
+    },
+    {
+      "source": "Encroachment",
+      "before": "Acoplamiento",
+      "after": "Invasión física del terreno ajeno (encroachment)",
+      "source_sha256": "eaa783bd8c5255364973e29e0346a279c5b143249d51f9d7837eee223657529e",
+      "target_sha256": "c57a497ea80b00cf8c6111ed0ccbab2a68196ae0beea5ef47e8c2cb70320630f"
+    },
+    {
+      "source": "General liens",
+      "before": "Derechos generales",
+      "after": "Los gravámenes generales",
+      "source_sha256": "9b01ae185c8d301ff2b642db4b9457d48aae9c86f1226ee89f29076e40307106",
+      "target_sha256": "966b0633562f8516a629e94daa55ab52d98651a43d8fab89208ad79d548cd913"
+    },
+    {
+      "source": "Joint tenancy.",
+      "before": "Arrendamiento conjunto.",
+      "after": "Copropiedad con derecho de supervivencia (joint tenancy).",
+      "source_sha256": "01224b236e1190eb6fc1b4a41dd3fcaa4c0caa4c3ba684555f511004354cc28d",
+      "target_sha256": "9eaa21a593bd2e02ab0f6b0687cc993f60ac8a37f33ed063ea9540805c323cd9"
+    },
+    {
+      "source": "Judgment lien",
+      "before": "Decretación del fallo",
+      "after": "Gravamen derivado de sentencia",
+      "source_sha256": "c4f9a61368088a98793aad7741af739582ad0af82f75a43a82641fe7eee4d745",
+      "target_sha256": "d09989c8b58778be678477a9de7e8078dbdfc644a4959269048ccaf0eaba4a1e"
+    },
+    {
+      "source": "Land; easements",
+      "before": "Tierras; servidumbres",
+      "after": "terreno; las servidumbres",
+      "source_sha256": "ae6c25ac6b1ef33e215e08f04137e9144db653886edd77790a328598d4dc1308",
+      "target_sha256": "d2a00b3f5f6be2fe076b59b72d46bb808f1de5282ce838eb09616e07c448513a"
+    },
+    {
+      "source": "Mechanics' and materialmen's lien",
+      "before": "Derechos de los mecánicos y de los materiales",
+      "after": "Gravamen de contratistas y proveedores de materiales",
+      "source_sha256": "0eb56e7b628560c90cf1db5b583b60726f786fe26a04f79e7f26e657cf22e74d",
+      "target_sha256": "cb294385ec0392c44036b6196c2f8495e3ef417e9781e7e0309778ec2a5a986b"
+    },
+    {
+      "source": "Property tax lien",
+      "before": "Imposición del impuesto sobre la propiedad",
+      "after": "Gravamen por impuestos inmobiliarios",
+      "source_sha256": "3bad032f5cc2accfcae120bd7e6235ca122b9229d72fa8af5ded0214f0c516c9",
+      "target_sha256": "843019aa0d08e3a8376426059651e2d8cdec2239a0f8ba010f26c5da29a68abe"
+    },
+    {
+      "source": "Tenancy in common.",
+      "before": "Tenencia en común.",
+      "after": "Copropiedad por cuotas (tenancy in common).",
+      "source_sha256": "dfb511454c173a2977beb7f8f2e04f6498eb3d247ddc5eafc6cf08e639db27c8",
+      "target_sha256": "e81fd3926d9dc6a357279a885a3267a730c228740637ee7f1ca6e6a6e61eef3f"
+    },
+    {
+      "source": "attach to all a debtor's property;",
+      "before": "apegar a todos los bienes del deudor;",
+      "after": "afectan a todos los bienes de un deudor;",
+      "source_sha256": "f318c9244480549f7df24dc70ae2428fd381e96437b8fb32c9bb24006659518b",
+      "target_sha256": "bbfb33da0a101eaa09feffddeaa34124e2f73b1d5ae0598c3312b618620dd2a2"
+    },
+    {
+      "source": "easements benefit a dominant parcel and run with the",
+      "before": "las servidumbres benefician a un terreno dominante y se ejecutan con el",
+      "after": "las servidumbres benefician a un predio dominante y siguen vinculadas al",
+      "source_sha256": "1c1281dd13b5e7c8120b4c8e1dc9432083e8c7423bcd2f06cf1793d91561ce11",
+      "target_sha256": "658db5607427af917f1c4725071710dc4a80835732011d290f5d4ab709cdbd2f"
+    },
+    {
+      "source": "in gross",
+      "before": "en cifras brutas",
+      "after": "personales (in gross)",
+      "source_sha256": "6007803de9caa425b234a13e7e7e9374643dae194737098c8e92fb7448104f77",
+      "target_sha256": "6607ce9f02da5f0ceac1390ec69ac4a4d36709b3f8840b990ee28095c377f832"
+    },
+    {
+      "source": "on death, and what a will can and cannot do with it.",
+      "before": "en la muerte, y lo que una voluntad puede y no puede hacer con ella.",
+      "after": "al fallecer y qué puede y no puede disponer un testamento sobre ella.",
+      "source_sha256": "da57efd07d33dcff9f01d84cd1ef77a8ef134bf0b3bb13c728e1054043c9a915",
+      "target_sha256": "a7f2ab8962322badd1dd3d27b14a4a1907af05ddcf5e2110c8ba89f91ea9e350"
+    },
+    {
+      "source": "special assessments",
+      "before": "especiales",
+      "after": "contribuciones especiales",
+      "source_sha256": "2a8c094dd5b3b885f4171b231cee201bba570e743443753d8adc00304ffd9219",
+      "target_sha256": "e9348c05e80e0426e6bd78e40d0e4daf03d4f01c2eca4b3f9b309f0b9209069e"
+    },
+    {
+      "source": "specific liens",
+      "before": "derechos específicos",
+      "after": "los gravámenes específicos",
+      "source_sha256": "90c1826a65cf015de7be47ff849cd45578668239d15583a17c3c20f828f2f094",
+      "target_sha256": "063130487a9bff8d386040d0cfe4d8525bbeb1cdf2189ce69f683928fec7f6b9"
+    },
+    {
+      "source": "the more restrictive controls what the owner may actually do",
+      "before": "los controles más restrictivos lo que el propietario puede hacer realmente",
+      "after": "la norma más restrictiva determina lo que realmente puede hacer el propietario",
+      "source_sha256": "4d4d3957aff7f92342791e24f56823ede4b793890060c8ede263150bbb11f25f",
+      "target_sha256": "a0b80c4729736df830e42fd7f588f7f089f67c896166903d5ca57d3993534a68"
+    },
+    {
+      "source": "Not read, and therefore stated nowhere in this build:",
+      "before": "No leer, y por lo tanto no declaró en ninguna parte en este edificio:",
+      "after": "Fuentes no consultadas, cuyas disposiciones por ello no se exponen en esta versión:",
+      "source_sha256": "1cbfc4217a4caaca02c97626e48be3f1ffe25dc39990f7fb2b2673156c2d1465",
+      "target_sha256": "b62c814d59c9b2b1ffd8649c8257b9505a8465d8b52884b0ecba95e5c8ea9d6a"
+    },
+    {
+      "source": "mechanics' lien",
+      "before": "Mecanics' lien",
+      "after": "gravámenes de contratistas",
+      "source_sha256": "4f1262b7121e0a6f27d09f4914aa9ebd3228d1bfa03955f42964fa7e9af743bd",
+      "target_sha256": "89e4236afad436b207f7ccadc02c34802516a50a302acd33651e752c0dc592d5"
+    },
+    {
+      "source": "that is the director's applies to the comprehensive course examination WAC 308-124H-820(8) requires.",
+      "before": "que es la aplicación del director para el examen de curso completo WAC 308-124H-820(8) requiere.",
+      "after": "establecido por el director se aplica al examen integral del curso exigido por WAC 308-124H-820(8).",
+      "source_sha256": "fc4988e7e5bfa7ea806ab2f57287c54e13a52fb97b7c53bfa843157d30e3a20f",
+      "target_sha256": "9fbb1407a489480ec170860de4895a896650be46732447922a1b9b194df35c0a"
+    },
+    {
+      "source": ", calls",
+      "before": ", llamadas",
+      "after": ", identifica",
+      "source_sha256": "ad1963f20f01fd5618231ff9729451b5ea49565adedad6aa5e47f482a47edc81",
+      "target_sha256": "94f84fec51aeac917ac4d3566bee3f1ed50860fb63302d68be6750d0b66cae81"
+    },
+    {
+      "source": "1 township = 36 sections.",
+      "before": "1 municipio = 36 secciones.",
+      "after": "1 township = 36 secciones.",
+      "source_sha256": "61268ddb8141a5e99cabc2b3bcc8e9438134ec3bb283b75407af2d61674503bf",
+      "target_sha256": "e9528aab44210c7ccc2d636881c57cb1af1bcfaf16e353e41276f45e93b7f9b0"
+    },
+    {
+      "source": "A.2 Metes and Bounds",
+      "before": "A.2 Metes y enlaces",
+      "after": "A.2 Rumbos y distancias con linderos (metes and bounds)",
+      "source_sha256": "e98836699266eee2873ce463e541a340cb2cb718a1ab7f4aa831836515bcbe48",
+      "target_sha256": "ad2969a58ab6a59e16c89bdf59aacffff91b9cee6a6d3dac145e62c307f3d361"
+    },
+    {
+      "source": "A.3 Reference to a Recorded Plat",
+      "before": "A.3 Referencia a un plato grabado",
+      "after": "A.3 Referencia a un plano inscrito",
+      "source_sha256": "afe66d904dbc55dd0c376f69cdd513c71580aa6e3d140a93855744837700c2d9",
+      "target_sha256": "5a8d1dc3790829f06d9daa2c40e699d2b34343932b61c68214e7b296b9a41445"
+    },
+    {
+      "source": "Distinguish a legal description from an address, a tax parcel number and a plat reference.",
+      "before": "Distinguir una descripción legal de una dirección, un número de terreno fiscal y una referencia en bandeja.",
+      "after": "Distinguir una descripción legal de una dirección, un número de parcela fiscal y una referencia a un plano.",
+      "source_sha256": "9c594ca9d2e454cb3e362718dcd4aa94699e2cd7d8858a322f4814db387fc6c7",
+      "target_sha256": "2237791b9ef0940123228fd0fc964833bd9af03783fa66caa1d88db0facb8f7f"
+    },
+    {
+      "source": "The recorded plat supplies the description by reference, and",
+      "before": "La placa registrada proporciona la descripción por referencia, y",
+      "after": "El plano inscrito proporciona la descripción por referencia, y",
+      "source_sha256": "4637c1c2ac89227f4872c31d81859d166f8653de60115e8403a2cc698d0fafae",
+      "target_sha256": "3c204f6ed0dafbd69e0170032d5779360d4b67233af1462cc16b5288bacdebf6"
+    },
+    {
+      "source": "courses",
+      "before": "cursos",
+      "after": "rumbos",
+      "source_sha256": "936e5cc5021d8a075f91b7864bf0cec8099c220cc450bead14e2f25e8dba549f",
+      "target_sha256": "a465bc4522236616af352e27dc018f41f102229938b05917517d537c725f619d"
+    },
+    {
+      "source": "is six miles square and contains",
+      "before": "es de seis millas cuadradas y contiene",
+      "after": "es un cuadrado de seis millas de lado y contiene",
+      "source_sha256": "4658ad767daa0f93535588ef4bdd16e686d0520ccdbb2e939343fdb25ae34fb7",
+      "target_sha256": "4087b53cad8d26d9907ff1b41463ef69a40f71afacf458a3aca0a94a08e01994"
+    },
+    {
+      "source": "public land survey state",
+      "before": "Estado encargado de la prospección de tierras públicas",
+      "after": "estado que utiliza el sistema público de levantamiento de tierras",
+      "source_sha256": "5279f0cd39b90078a89dfbec4ab18811f0a1020ad7db4b81b8048a7be31826a3",
+      "target_sha256": "0f498f3998e793dcbea519676a5444ba0a0653bce1b6cec79ff3c5e8ed75df84"
+    },
+    {
+      "source": "the plat is only as good as its recording.",
+      "before": "el plato es sólo tan bueno como su inscripción registral.",
+      "after": "la validez de esa referencia depende de la inscripción del plano.",
+      "source_sha256": "cf27b0405b00909576ede776a544e94dcd6034d8fd18ef1e73d5f1d81fde61ec",
+      "target_sha256": "ee0c0e95aa3b869193afcb546eea278a6b5f6e00145d727096be58d2d7c74407"
+    },
+    {
+      "source": "township",
+      "before": "municipio",
+      "after": "township (cuadrícula de levantamiento)",
+      "source_sha256": "de121bf561e3f458532c2c6355dc9330cc18eb3d509eb6bd5079871c885640b3",
+      "target_sha256": "a6f1e2bb7c1d1934a056aefc22f6499782d2679fc43e37b95558789bab722cf7"
+    },
+    {
+      "source": "township, range and section",
+      "before": "municipio, área de distribución y sección",
+      "after": "township, rango y sección",
+      "source_sha256": "fe70a46dcd4268409eec9fc92c5b2bf1f8e37c723d9267a6de1ef81d684c17e4",
+      "target_sha256": "06815d45022d657a34f39716ce16e6fe180e70a6f9073574a1305e3bed19049e"
+    },
+    {
+      "source": "— start at the section, take the SE quarter, then the NW quarter of that. Each \"of\" divides.",
+      "before": "— empezar en la sección, tomar el trimestre SE, luego el trimestre NW de eso. Cada \"de\" se divide.",
+      "after": "— empiece por la sección, tome su cuarto SE y después el cuarto NW de este. Cada «de» implica dividir.",
+      "source_sha256": "f7420c9e98ab43c1c442493e2d0c3cb31d1a562d98f227ea9fa668623862a4e5",
+      "target_sha256": "ab0ab47bd82f01e9e6214135a5df92a0398f607e862543bbc10f078cd080626b"
+    },
+    {
+      "source": "\"Grandfathered\" is not a legal term and it is not a broker's conclusion.",
+      "before": "\"Abuelo\" no es un término legal y no es la conclusión de un corredor.",
+      "after": "«Grandfathered» (amparado por su preexistencia) no es un término jurídico ni una conclusión que deba formular el corredor.",
+      "source_sha256": "be8d9b8ab6e2a74539fe078cc2e806880655334a2b0087e4ff3d26169bc9a003",
+      "target_sha256": "697754af65b88422ab0fba614463fd301a961141cb85f61262b86c8046101ef2"
+    },
+    {
+      "source": "B. Encumbrances of record, and how they are found",
+      "before": "B. Imposiciones de los registros, y cómo se encuentran",
+      "after": "B. Cargas inscritas y cómo se descubren",
+      "source_sha256": "b608b149d0fc53b962c72cf8f6fe5f81542dc93eedc7d4b745401e75342cb973",
+      "target_sha256": "cf85a7b3c2ca73072237ef8fd4a1014f75971bebd6a67d5e702b1f527de87e1a"
+    },
+    {
+      "source": "C.2 the Four Relief Mechanisms",
+      "before": "C.2 Los cuatro mecanismos de socorro",
+      "after": "C.2 Los cuatro mecanismos para obtener excepciones o cambios",
+      "source_sha256": "d2699b67056626454ba0afffd57e19231f3713ff0fa829d10d9f09c35f79251a",
+      "target_sha256": "a0c4dc58c572fd56791ee9d97e438141836adecd9a76ea08a143b5c86cf6c1f0"
+    },
+    {
+      "source": "Setbacks, height, lot coverage, minimum lot area, frontage.",
+      "before": "Contratiempos, altura, cobertura de lote, área mínima de lote, fachada.",
+      "after": "Retranqueos, altura, ocupación del terreno, superficie mínima de parcela y frente.",
+      "source_sha256": "b51ebdd8be074c66f2cfbc2f07ef3db97764bcea7ad114cd342960186985a282",
+      "target_sha256": "a1bbad249556027ccd08471c366e64f6e23b7a71fb37bda8389d8474f194a2df"
+    },
+    {
+      "source": "So the shape is: no duty to dig, an absolute duty to disclose what you know, and a statutory duty to tell the party to get expert advice.",
+      "before": "Así que la forma es: no hay obligación de cavar, un deber absoluto de revelar lo que sabes, y un deber legal de decirle al partido que obtenga asesoramiento experto.",
+      "after": "El esquema es: no hay deber de investigar por iniciativa propia, sí un deber absoluto de revelar lo que se sabe y un deber legal de aconsejar a la parte que obtenga asesoramiento especializado.",
+      "source_sha256": "df6d84113e491eb1aceefb067a8bbcbd25f678c2fc117d8e6e16e266a27c39bc",
+      "target_sha256": "c1612b0175220caef03d99097b86a4f075617d78d2b74a3153e6f8493317addb"
+    },
+    {
+      "source": "Variance",
+      "before": "Diferencia",
+      "after": "Excepción de zonificación (variance)",
+      "source_sha256": "2a1237f61d2167d5e962b4c03b6a235391ef961ceecd228d1ebc35747474b708",
+      "target_sha256": "40ada6e4a5398e6ceb1456567efe42b12c80906f5f4d7d0052b9b9a7cbf25631"
+    },
+    {
+      "source": "bulk and dimensional controls",
+      "before": "Controles a granel y dimensionales",
+      "after": "controles de volumen y dimensiones",
+      "source_sha256": "930e914d3f595d8fb5cf75497473201cf099306a9a2694f57afe68fd0f4dec7b",
+      "target_sha256": "86a03593787045a876ad5e5551543320bd73b8ee736110c9eab900a9c377e3e5"
+    },
+    {
+      "source": "cover.",
+      "before": "Cubrid.",
+      "after": "cubrirá.",
+      "source_sha256": "ef6561547b884113cf9f87c841b2d13d30f6b8021dcdbfc000f3ef0525645136",
+      "target_sha256": "ca5884d6566b9c2f35cebf864219a57270c3ea73116ba887376726971f14bfd1"
+    },
+    {
+      "source": "deeds of trust and other liens",
+      "before": "actos de confianza y otros gravámenes",
+      "after": "escrituras de fideicomiso de garantía y otros gravámenes",
+      "source_sha256": "5ab18a65a05438cde2d6d943af4bd3dfb71daf9cc344f5fd327b2608be62509b",
+      "target_sha256": "e1ab0dc1ef017d5b1730d4eb65e0b4dca7e7b6f868c41f517fe6830ecf7ebe91"
+    },
+    {
+      "source": "lawfully predates",
+      "before": "predatos legales",
+      "after": "existía legalmente antes de",
+      "source_sha256": "89e3ef71af302b780694772f8fdc2527e250136402087b5823c3484516d28113",
+      "target_sha256": "ca6a946153c1bd2a961b85a58f5a60c3e750dcc38faa0dc9b2522b61780de127"
+    },
+    {
+      "source": "plat notes and dedications",
+      "before": "notas y dedicaciones",
+      "after": "notas del plano y cesiones al uso público",
+      "source_sha256": "982bfc66c355be4cb43d39cfb1390eeccbec677f10d583b92deadd9a84d0905a",
+      "target_sha256": "c6fae5624867ea2f7aacc97a1b0de8844e44a1c773f277567235deba3b0f8ecf"
+    },
+    {
+      "source": "substantially adversely affects the value of the property or a party's ability to perform its obligations",
+      "before": "afecta considerablemente al valor de los bienes o a la capacidad de una parte para cumplir sus obligaciones",
+      "after": "afecta de manera sustancial y adversa al valor de la propiedad o a la capacidad de una parte para cumplir sus obligaciones",
+      "source_sha256": "af3f03953fb970c08c0336beb3809642b3a5e47059b4b3056ab24272554157d1",
+      "target_sha256": "cb94b57c126e4ab0f76f5a41a3b4b8c8fdb0089ac3aed3a5a481f0b7c2690329"
+    },
+    {
+      "source": "substantially adversely affects value and may defeat the purpose of the transaction. If the broker",
+      "before": "que afecta considerablemente al valor y puede frustrar el propósito de la transacción. Si el corredor",
+      "after": "afecta sustancialmente de forma adversa al valor y puede frustrar el propósito de la transacción. Si el corredor",
+      "source_sha256": "1192b63d287488725931730484e2682c8a53e85627598472265d7118ede620fe",
+      "target_sha256": "c22250452bcbef622c219d8a32518726db432aec8130601698d76660fe95e04e"
+    },
+    {
+      "source": "— governs dividing land, short plats and full plats.",
+      "before": "— gobierne la división de las tierras, las bandejas cortas y las bandejas completas.",
+      "after": "— regula la división de terrenos y los planos de subdivisión simplificados y completos.",
+      "source_sha256": "3d100d82dd0d25b9b2d5e23bb8b2227e59992304883f6229e03e36bd1d427c12",
+      "target_sha256": "1a18e984fbd7b0103eb4a69228ee37135d0e995743467a9ebee620863d4fb34c"
+    },
+    {
+      "source": "— the matters the policy will",
+      "before": "— las cuestiones de la política",
+      "after": "— los asuntos que la póliza",
+      "source_sha256": "07d384fd6ac633317ffc4985796d3eba1ea4a3f5bce3f414156f3ac1eee4713b",
+      "target_sha256": "f3a42d7e1de972bcbb471a19b2ea1e9204e794cb03b1a719e0418f5a7b2a6317"
+    },
+    {
+      "source": "36-section township",
+      "before": "Municipio de 36 secciones",
+      "after": "township de 36 secciones",
+      "source_sha256": "7c564f7aaa2ea023afae77f66691f10e37344b589e299cb47561b8365168b61d",
+      "target_sha256": "44f52e7d89da64d84f0c639aa05dc7da06158fa2d2095be447c0ce1995d2197c"
+    },
+    {
+      "source": "43,560-square-foot acre",
+      "before": "43,560 pies cuadrados de acre",
+      "after": "acre de 43,560 pies cuadrados",
+      "source_sha256": "fcd6aa98e01d2986217e88231b6c2dc80268fdc29cf24bee52aa89faedd0615e",
+      "target_sha256": "b947ffcc24fc9ecfd5b0a4fa6d9852e4cc01d47df88a575943a8a43245fb66fa"
+    },
+    {
+      "source": "Distinguish deed types by the covenants each carries — including Washington's statutory warranty deed.",
+      "before": "Distinguir tipos de acciones por los pactos que cada uno lleva, incluyendo la escritura de garantía legal de Washington.",
+      "after": "Distinguir los tipos de escrituras por sus garantías, incluida la escritura de garantía prevista por la ley de Washington.",
+      "source_sha256": "59932df62ca6296017da4566a36a0b0ac3cbfb51dfd3f06d9314df3377b3e5e8",
+      "target_sha256": "2daadf52541dc446ed7cf1dddc2c025f7eeb5daec2c188dea0d3d371cf973615"
+    },
+    {
+      "source": "Distinguish owner's from lender's title insurance.",
+      "before": "Distinguir el dueño del seguro de título del prestamista.",
+      "after": "Distinguir el seguro de título del propietario del seguro de título del prestamista.",
+      "source_sha256": "df50669537e22b64c171a3f1e0e443226a86013949185ba6f78e8f73501c31b4",
+      "target_sha256": "e697afc07a217c3e875beb634768603555b243bea63797c3befd98807c7abfe5"
+    },
+    {
+      "source": "Distinguish voluntary from involuntary transfer.",
+      "before": "Distinguir el traslado voluntario.",
+      "after": "Distinguir la transmisión voluntaria de la involuntaria.",
+      "source_sha256": "8b42e088e570dfbc59588f698ade05162bed1d44beedbcf57fe5f6f06a93f700",
+      "target_sha256": "be235d9e760010b590587d5035ab29fd940f1a27aec052614c3bd2c3ec08c68a"
+    },
+    {
+      "source": "by dedication",
+      "before": "por dedicación",
+      "after": "por cesión al uso público",
+      "source_sha256": "7553717cf6095eb5db16b5d1ab03dce3a4a8ed0b35b6bb29b149f21c74e65e5b",
+      "target_sha256": "640ebad5daececa0bb083f149bee9d68ddcd36465d6ce96d19cedd53466a82e7"
+    },
+    {
+      "source": "by will",
+      "before": "por voluntad",
+      "after": "por testamento",
+      "source_sha256": "f72a2c96842217a860196def68353e983ba4f4f33bba9c6093841239a9a85dd6",
+      "target_sha256": "66fdd64e2f3a5ed7bada04275f622e020d500b962b76064cf737fca8e5df4788"
+    },
+    {
+      "source": "devise",
+      "before": "idear",
+      "after": "legado inmobiliario",
+      "source_sha256": "4d0f7f57107df31df742efd3964daf77762943746fe04f1673d50eb9269caa3f",
+      "target_sha256": "6a5e12b0a12e49fa8fa38881e2af14f52144e65d676c1f136ba74e37b2997d61"
+    },
+    {
+      "source": "A quitclaim deed is not a lesser-quality conveyance of good title. It conveys whatever the grantor happens to hold, warranting nothing",
+      "before": "Una escritura de renuncia no es una transmisión de calidad menor de buen título. Transmite lo que el otorgante tenga en su poder, no justifica nada",
+      "after": "Una escritura de cesión sin garantías no es una transmisión de calidad inferior de un título válido. Transmite cualquier derecho que tenga el otorgante, sin garantizar nada",
+      "source_sha256": "5a94b498af9bb7e4e4a03a3d4164e34b898d86afda84f4d363a70b95b725f0c9",
+      "target_sha256": "3a5b9a7e48a2bade6d0795aeff0318fc20058778880f525572b2edd1e77666a7"
+    },
+    {
+      "source": "Acknowledgement before a notary is required for recording.",
+      "before": "Agradecimiento ante un notario es necesario para la inscripción registral.",
+      "after": "Se requiere reconocimiento de la firma ante notario para la inscripción registral.",
+      "source_sha256": "69b74dddad047c63e5f64bee339cd0ab6dcdcdd88cb3eebdebe8c1bffea9ae47",
+      "target_sha256": "960404766478e3e763e9e05d04b0a1f1eb3cffb6b679933ec1531def76a491a2"
+    },
+    {
+      "source": "Bargain and sale deed",
+      "before": "Acciones de negociación y venta",
+      "after": "Escritura de compraventa (bargain and sale deed)",
+      "source_sha256": "18fb3f5e99aad755e04b265192dd71c654510d230bb61d7478e14127fd8f7dfb",
+      "target_sha256": "28858422b762f8b14b51ff59b158515a4f60550b01d691e147ebf71e81a29861"
+    },
+    {
+      "source": "Grantor",
+      "before": "Concesionario",
+      "after": "Otorgante",
+      "source_sha256": "e8005f9e98a3860033283eb4ee4a5c505727a55fe241d85a64bd6aae4dc688df",
+      "target_sha256": "062a229549539c50dc5bb79121bd343b8fc9903db5bf525a97a4e9e5888cdfcc"
+    },
+    {
+      "source": "Special-purpose deeds",
+      "before": "Actos para fines especiales",
+      "after": "Escrituras para fines específicos",
+      "source_sha256": "54d32b9d180b7b09b2792b27e7ee7df82dceb99d74f4b122cd52fa9408f3f5c5",
+      "target_sha256": "8e4f36ac2ab605656cb870bff1c21e96643366d1a8377eaade27e9883baa131e"
+    },
+    {
+      "source": "Tax foreclosure",
+      "before": "Exclusión fiscal",
+      "after": "Ejecución por impago de impuestos",
+      "source_sha256": "213fd99866dafca2aa58e804ba74a32bdb816301ed1321738a696ba0cb4e4810",
+      "target_sha256": "6f335ab8f98386d447d6e377ce1412c7211f0b0b9193087be3ef031b1c78ef92"
+    },
+    {
+      "source": "What It Warrants",
+      "before": "¿Qué es lo que ordena",
+      "after": "Qué garantiza",
+      "source_sha256": "38b4682760f5ba932c8523dd94d36bb3b584904a4e9eb06d5441506f9b3aeedd",
+      "target_sha256": "a815eeabea5ccfd91b6daa6180618e16e1d7a4e0c1df4647d3fb543b0aadc2c1"
+    },
+    {
+      "source": "— condemnation with just compensation.",
+      "before": "— condenación con justa compensación.",
+      "after": "— expropiación con indemnización justa.",
+      "source_sha256": "0a783e676b98ea6b33d97549f0b7c97b2693a0c1a9c37e8e0a58e76e0a0fefa4",
+      "target_sha256": "3580ab85635329b1f682111e24e7aea7ae471e1264032f90f16f33f8952099fa"
+    },
+    {
+      "source": "— no heirs and no will.",
+      "before": "— sin herederos ni voluntad.",
+      "after": "— sin herederos ni testamento.",
+      "source_sha256": "9f4e464a5dae3bf94e61047642e43416557d62da71f35f4c7d52a69c8d3718bb",
+      "target_sha256": "80bfeeb5ce72c61119c4d6b18afa2798beda7cf3cf8019756d88782e799ac393"
+    },
+    {
+      "source": "— no will.",
+      "before": "- No hay voluntad.",
+      "after": "— sin testamento.",
+      "source_sha256": "bbd2c87721c24834c3822c906256a1b06d8b05564f89521e5c3b417b46c6637b",
+      "target_sha256": "bb9bc0fcc9069df2a7e2d9b27d7a7b249300e64ac402db7c70a7c9ca521521c1"
+    },
+    {
+      "source": "— which is why it is the right instrument for clearing a cloud and the wrong one for a purchase.",
+      "before": "— por lo que es el instrumento adecuado para limpiar una nube y el equivocado para una compra.",
+      "after": "— por eso sirve para eliminar una incertidumbre sobre el título, pero no es el instrumento apropiado para una compra.",
+      "source_sha256": "89ea3170988293eb4277c4f80995f1495c25f55912c75bae259ecc475b64eb1b",
+      "target_sha256": "670fb11e060f023f0dfaccb61b25db29dc8ffcb55276d4287f94b2a8217241de"
+    },
+    {
+      "source": ", and no term, exception, endorsement or premium is stated in this course.",
+      "before": ", y ningún término, excepción, aprobación o prima se establece en este curso.",
+      "after": ", y en este curso no se especifican condiciones, exclusiones, endosos ni primas.",
+      "source_sha256": "8a19aa8f561b918aba58d6c8cd585fc3bca806ecbe22b12839e6d3f16552907e",
+      "target_sha256": "a366852e08bdba84b85d8a15e8424fb8cd89a808f7c6331a43f99f6f17d4c95e"
+    },
+    {
+      "source": "A seller is not charged with what their broker knew and did not tell them. Module WA-P-03 develops it; it appears here because it is a",
+      "before": "Un vendedor no es acusado de lo que su corredor sabía y no les dijo. Módulo WA-P-03 lo desarrolla; aparece aquí porque es un",
+      "after": "No se atribuye al vendedor lo que su corredor sabía y no le comunicó. El Módulo WA-P-03 lo desarrolla; aparece aquí porque es una regla de",
+      "source_sha256": "16dc9349e1774768578234b28ef9cc63c6f87ef0252e8499b6be79268099c0e7",
+      "target_sha256": "57c0cbf18b1d94843582e353f5dec9b84b1245bcef0925499fc70298b1514e0b"
+    },
+    {
+      "source": "E.1 Two Policies, Two Beneficiaries",
+      "before": "E.1 Dos políticas, dos beneficiarios",
+      "after": "E.1 Dos pólizas, dos beneficiarios",
+      "source_sha256": "978090814d4bf4d277743ce6aee02583ea9cc2ea66378b04fa04abc7998497c8",
+      "target_sha256": "ff01e0ff4dd6ef2bca9f3e523a12cef57005c31c70ae4843cebf809fe9784ce9"
+    },
+    {
+      "source": "Every policy has exceptions",
+      "before": "Todas las políticas tienen excepciones",
+      "after": "Toda póliza tiene exclusiones",
+      "source_sha256": "58147d79a96ecd0b98b594af39cf01a39baffd9cf350ca9050b3e838adefed63",
+      "target_sha256": "28c9b4c51175d4baa7bb470077c50ad287535a30ad7ebe84ed830bb528c976d3"
+    },
+    {
+      "source": "Lender's (mortgagee's) policy",
+      "before": "Política del prestamista (mortgagee)",
+      "after": "Póliza del prestamista hipotecario",
+      "source_sha256": "68b570dead69834993a63b66a1e08b980e31ad17c6432928300a7e0c87f4115f",
+      "target_sha256": "9e3b3d5afc861e6661cb92ff6e602450fddefbcf9e7500013ea45c22b5d79685"
+    },
+    {
+      "source": "No policy form or rate manual was read for this project",
+      "before": "No se leyó ningún formulario de política o manual de tarifas para este proyecto",
+      "after": "Para este proyecto no se consultó ningún formulario de póliza ni manual de tarifas",
+      "source_sha256": "c0601459ca8bbeb066cd31838daac8960991b5580bfbf6639f3d5cb4dd81b249",
+      "target_sha256": "70bd841adadd342128d0fb9568f903538217e4328b258be85d40149c53ae61f6"
+    },
+    {
+      "source": "Owner's policy",
+      "before": "Política del propietario",
+      "after": "Póliza del propietario",
+      "source_sha256": "8b0b71928e0ac76c2f059310ade9ee88d1ce8bcabbadd4bf75f9f1eddc26d650",
+      "target_sha256": "68d0424898478e8692e69636ca26bfda8934873345cac8900c4e1e52e36b3665"
+    },
+    {
+      "source": "Prompted investigation.",
+      "before": "Investigación inmediata.",
+      "after": "motivado una investigación.",
+      "source_sha256": "068b78c496ee72764219ddfa5a0140991857824984065995f0b2ea753b406e6d",
+      "target_sha256": "5346c04f0cbb1a187a5326926caa11788d9d613cdae066698632d847a972bae7"
+    },
+    {
+      "source": "Quiet title action",
+      "before": "Acción de título silencioso",
+      "after": "Acción judicial para aclarar la titularidad (quiet title)",
+      "source_sha256": "de6b5f91c57e57cf9a44f5bf974ad91a68b626a4f77651c4916d040516703148",
+      "target_sha256": "b39435343e8764aaf9f93c0b07f63f035b9f6940c555da50626c304d766c5a7b"
+    },
+    {
+      "source": "states no Washington recording priority rule and no recording deadline.",
+      "before": "declara que no hay ninguna regla de prioridad de registro en Washington y que no hay fecha límite de registro.",
+      "after": "no especifica ninguna regla de prioridad registral ni plazo de inscripción de Washington.",
+      "source_sha256": "7f20d0c6f70358920a736f4b64db5a2cb5b4f1318fdb581826551d60a1cde133",
+      "target_sha256": "cc7dac761e779d70581760f47146594885954f81dfbbead4651f9c019d7c3596"
+    },
+    {
+      "source": "— the lawsuit to resolve a cloud.",
+      "before": "— la demanda para resolver una nube.",
+      "after": "— la demanda para resolver una incertidumbre sobre el título.",
+      "source_sha256": "dc9c43fa12f74d7836c030117df8beba945a2f90c4b2942dd2a37c8cab42d9ea",
+      "target_sha256": "c3b5030293ad7629a088425d07ea419143e18039c05ea3a8901372cba427b19e"
+    },
+    {
+      "source": "F.3 Excise Tax",
+      "before": "F.3 Impuesto sobre los impuestos especiales",
+      "after": "F.3 Impuesto sobre transmisiones inmobiliarias",
+      "source_sha256": "566aea302968003f8dfda0e08e3dd94721e001075ca6431076b83e2c592e4749",
+      "target_sha256": "efd5fb1114ec5605a6510926884c88cbfe017f72c7d09841bda8191e10c38c0a"
+    },
+    {
+      "source": "Items paid in advance or in arrears are",
+      "before": "Artículos pagados por adelantado o en mora",
+      "after": "Las partidas pagadas por adelantado o a período vencido se",
+      "source_sha256": "247721d541a8c037f42e13ea667642bc133d228a8a82776d4a14999053c16701",
+      "target_sha256": "75932b3671b706c4af8f058cf9719e45d88e8307da93078f78320450a970e2b7"
+    },
+    {
+      "source": "No recording deadline, priority rule, statutory period, intestate share, foreclosure timeline, redemption right, excise tax rate, title premium, policy exception or proration convention is stated in this module.",
+      "before": "En este módulo no se establece ningún plazo de registro, regla de prioridad, período legal, cuota intestada, plazo de ejecución hipotecaria, derecho de reembolso, tasa de impuestos especiales, prima por título, excepción de política o convenio de prorrateo.",
+      "after": "En este módulo no se especifican plazos de inscripción, reglas de prioridad, períodos legales, cuotas de sucesión intestada, plazos de ejecución hipotecaria, derechos de redención, tasas del impuesto sobre transmisiones, primas de seguro de título, exclusiones de pólizas ni convenciones de prorrateo.",
+      "source_sha256": "e08037cb5ea5936e3449f98bdcedbe6038434f60929db6a339c4e41669bb3f5f",
+      "target_sha256": "8627d2308b5ea4bd8b3dab6c82f7688f91068cc37ebdfe058ff16a22c5d28f7d"
+    },
+    {
+      "source": "intestacy",
+      "before": "intestacy",
+      "after": "sucesión intestada",
+      "source_sha256": "d7efae2a7f316158b8d2b1763901a84613719cf49fa0cd26692fa97a8f35be68",
+      "target_sha256": "0f475a0c6ddea6e75098088d8ad364752ee597cbd48a5588bad011fce7265515"
+    },
+    {
+      "source": "real estate excise tax",
+      "before": "Impuesto sobre los bienes inmuebles",
+      "after": "impuesto sobre transmisiones inmobiliarias",
+      "source_sha256": "1c78ae18b6c2701ed75730f75db5ddb7b0eeaf5142d48768de57e41022d88d5a",
+      "target_sha256": "325bdebf11493bc6642e07b13ca2e1ac622f2d754db8b1aee70d7e17b8f30791"
+    },
+    {
+      "source": "tax foreclosure",
+      "before": "embargo de impuestos",
+      "after": "ejecución por impago de impuestos",
+      "source_sha256": "6eecfd20847b250649e8bd41cb27ed8174805c099d69a95411de96a9dfab1ca6",
+      "target_sha256": "db1a6bd433a0973c897c1bdc3679fbaee0e7affd978072b1e6d61973af5e97b3"
+    },
+    {
+      "source": ", unless consideration was given to hold it open — which is what an",
+      "before": ", a menos que se considerara la posibilidad de mantenerla abierta — que es lo que un",
+      "after": ", salvo que se haya dado una contraprestación para mantenerla abierta, que es lo que constituye una",
+      "source_sha256": "dfb356cbfb9baa06d9d00bff21faf32623f843310d633c1eedc4a3a7ca5cb113",
+      "target_sha256": "9142e949f2ee1413e92f7a4d433d83eb2e960aff3ab397d2c981cd1f0cdcfda5"
+    },
+    {
+      "source": "Conversations, showings and verbal indications do not start it.",
+      "before": "Las conversaciones, los espectáculos y las indicaciones verbales no la inician.",
+      "after": "Las conversaciones, las visitas a inmuebles y las indicaciones verbales no la inician.",
+      "source_sha256": "e7e5686a2682c331f07e53e0af3a1d145c0e68b4baf783b0dc0fda369f9a2ca7",
+      "target_sha256": "0ab036bd4e4cad4ffe9dab402312fc399b94465eecbec657e012e69d55a13a37"
+    },
+    {
+      "source": "Distinguish the remedies for breach and explain why specific performance is available.",
+      "before": "Distinguir los remedios en caso de incumplimiento y explicar por qué se dispone de un rendimiento específico.",
+      "after": "Distinguir los remedios por incumplimiento y explicar por qué puede exigirse el cumplimiento específico.",
+      "source_sha256": "91e3c67452985d98be5454e0ba3d96a3b8622280bb6f102ab48948298c3b1a30",
+      "target_sha256": "898de1c280f9d042d352c68a7797d830c016521707da45d4fbfa5e4493204108"
+    },
+    {
+      "source": "Note also what it reaches: WRITTEN offers, notices and communications, in BOTH directions.",
+      "before": "Tenga en cuenta también lo que alcanza: WRITTEN ofrece, avisos y comunicaciones, en ambas direcciones.",
+      "after": "Observe también su alcance: ofertas, avisos y comunicaciones POR ESCRITO, en AMBAS direcciones.",
+      "source_sha256": "2331d3492203c37da9a70be941a3ae742e177d20d7c7db188fa30a13de71ec02",
+      "target_sha256": "95b03a751d19b7eb5e2c690245f37fbfa60b80dbe5e7a408f705c9305e2475a3"
+    },
+    {
+      "source": "Voidable",
+      "before": "Vólido",
+      "after": "Anulable",
+      "source_sha256": "023109f2e9c31cce05d8857a7492855db4e934fcb6d739127adc1eb7539b16c0",
+      "target_sha256": "adc5f4e57daaaa871da8e1ce3a6f6c9d67ffebdea302d2f44fa614302e96fa38"
+    },
+    {
+      "source": "Work it through. A buyer offers Monday. The seller signs Tuesday but strikes the closing date and writes a new one. That is",
+      "before": "A trabajar. Un comprador ofrece el lunes. El vendedor firma el martes, pero llega a la fecha de cierre y escribe una nueva. Eso es.",
+      "after": "Veamos el caso. Un comprador presenta una oferta el lunes. El vendedor firma el martes, pero tacha la fecha de cierre y escribe otra. Eso",
+      "source_sha256": "5770cc924bf47f755f5a1b458e5718072c0425225a2cabab69c4882989dfd579",
+      "target_sha256": "6fd1af9f844721ce720fe191fefdbf51b9fab4fedb811ce8b59ea37cbce80469"
+    },
+    {
+      "source": "a writing",
+      "before": "una escritura",
+      "after": "un documento escrito",
+      "source_sha256": "0f7bcaf3042b71232e4eaf32c67cc812585032b6669c551c4cb30bef2eabf114",
+      "target_sha256": "6a4e80c60e40fc4c893bb7aba0ab821e76a570f3985a50035e6961ca959e7bf8"
+    },
+    {
+      "source": "changes any term is a counteroffer",
+      "before": "cambios cualquier término es una contraoferta",
+      "after": "cambia cualquier condición constituye una contraoferta",
+      "source_sha256": "0774d03f110ae7b2c96efdf8552dd8135e27fddeb02db7244a82a318144f68bb",
+      "target_sha256": "35c4f35013d59c78ded8f852ab0eb174ac7e29baf978856699b82e5ea14760e0"
+    },
+    {
+      "source": "mirror",
+      "before": "espejo",
+      "after": "reflejar exactamente",
+      "source_sha256": "00154761637ca746c354a6d9cfbf1da1a92e79afa6bb127bb8a1c434e9c73170",
+      "target_sha256": "8d33db45bec1350cae0b49d20be8381f477bc82724adc1ca4ed801007fc6d448"
+    },
+    {
+      "source": "unqualified",
+      "before": "no cualificados",
+      "after": "sin reservas",
+      "source_sha256": "a017d70c4dac55308fa98d4805058b5cf8bafa746e3e6b36d11fb9c99a29096d",
+      "target_sha256": "c903729d3050b1a3f759b668241a28de47faceddf4f15fa0fbb752e369a073e6"
+    },
+    {
+      "source": "until the party holding the power to avoid it elects to do so",
+      "before": "hasta que el partido que tiene el poder para evitar que elija hacerlo",
+      "after": "hasta que la parte facultada para anularlo decida hacerlo",
+      "source_sha256": "dd096d8e37592e0e71c1f6dbd25dda405257e8ddedfa7adbfabe6d34bf17883d",
+      "target_sha256": "0b8a8345cd33041ae7cf40afbf6a5e318557686eca9f609e3308972efdbd2b20"
+    },
+    {
+      "source": "— owed to the principal",
+      "before": "— Deudas con el principal",
+      "after": "— debido al mandante",
+      "source_sha256": "658896b1ce22e10db60f574c913ee75149a90091bd5e7110e7c13df8f5d48f7d",
+      "target_sha256": "d5cbaca66f9368724e2136c8a7d4cbe137b59a8c1d3a7706a117544235c21117"
+    },
+    {
+      "source": "\"2,400 square feet,\" \"the roof is five years old,\" \"the crawl space has never taken water.\"",
+      "before": "\"2,400 pies cuadrados\", \"el techo tiene cinco años\", \"el espacio de arrastre nunca ha tomado agua\".",
+      "after": "«2,400 pies cuadrados», «el techo tiene cinco años», «nunca ha entrado agua en la cámara bajo el piso».",
+      "source_sha256": "a511caf6d179ef4c7634ba0ce70d23f6ba70b2a25224a0ba19e1c4e284ea3fa9",
+      "target_sha256": "d581d63912b3c1bc8ee2051d30b138ba88c50b63a9c58c638afb4decf7929cff"
+    },
+    {
+      "source": "'Agency Disclosure'*",
+      "before": "«Divulgación de la Agencia»*",
+      "after": "«Agency Disclosure» (revelación de la relación de agencia)*",
+      "source_sha256": "5f957af4c6632e048dfa88079c1810d4472791c1c27b10f6075fe5593cb5ca05",
+      "target_sha256": "d93fca2b0f4e08a17943bdd9dbe6a4e69b56c9ac582a0a680237bae2816db0a6"
+    },
+    {
+      "source": "*must enter into a services agreement with the principal before, or as",
+      "before": "*deber celebrar un acuerdo de servicios con el principal antes, o como",
+      "after": "*debe celebrar un acuerdo de servicios con el mandante antes de que, o tan",
+      "source_sha256": "0a1bc3bd6c567b44e578391596d1577e0499fb057fcd015a316da6943cf48635",
+      "target_sha256": "a05c4807ae9054909002016e8dea4be650065648557ad01ed3629f784587bf8f"
+    },
+    {
+      "source": ", its appointed broker commences rendering real estate brokerage services.\"",
+      "before": ", su agente designado comienza a prestar servicios de corretaje de bienes raíces.\"",
+      "after": ", el corredor nombrado comience a prestar servicios de corretaje inmobiliario».",
+      "source_sha256": "9d53864d3ab060b8d6c2a176dec4b2264a43827a1fcb29834f108dddfa92ecc7",
+      "target_sha256": "5b4b2ded97648342a950026e8bcb8176dd0374c3fdecdac0eb276cca4e806957"
+    },
+    {
+      "source": "D.1 the Parol Evidence Rule",
+      "before": "D.1 La norma de la prueba de la libertad condicional",
+      "after": "D.1 Regla de exclusión de pruebas de acuerdos verbales (parol evidence rule)",
+      "source_sha256": "defdbf0764f338b9748625126febcb8896ff7b6b8d38ec51c8ad2a694fd1539c",
+      "target_sha256": "ac2b87d6b93d0e0ba79bb9267a4aa4b1b4791fa1853aa13cfbf0c5c129742fe0"
+    },
+    {
+      "source": "Soon as reasonably practical after*",
+      "before": "Tan pronto como sea razonablemente práctico después*",
+      "after": "pronto como sea razonablemente posible después de que*",
+      "source_sha256": "855f540cb3dec95a4f1b6640b4a179deae4b8280ce7efd87343618cf6d9cb455",
+      "target_sha256": "877e7e3af6029c9031b6f7f862df84a02451eae7902b3dd20dc98b74c925de86"
+    },
+    {
+      "source": "To receive compensation",
+      "before": "Recibir una indemnización",
+      "after": "Para recibir remuneración",
+      "source_sha256": "cbe100deb1d47cf5e882ee253c25f3ad723efd7c26739f0a30826d5363415baa",
+      "target_sha256": "bfa158364113d39f8442061a3ee51da7b582ebdc2159ba1b077540658a1e624f"
+    },
+    {
+      "source": "in writing and signed by the party to be charged",
+      "before": "por escrito y firmada por la parte a la que se imputan los cargos",
+      "after": "por escrito y firmados por la parte contra la que se pretende exigir su cumplimiento",
+      "source_sha256": "ea78426e58c4ea3f5723fad4de60c52f279ca9aa32abf136e6f91fe029593038",
+      "target_sha256": "848f8e431e632b3922e3977e12967cd3b99f66d3df96d601c15ef54b2027e12b"
+    },
+    {
+      "source": "is opinion a reasonable person would not rely on as fact —",
+      "before": "es la opinión de una persona razonable en la que no se basa como un hecho:",
+      "after": "es una opinión que una persona razonable no tomaría como un hecho:",
+      "source_sha256": "53d1e12a711607bf72b93dcd8ce5ccbc5809e9b6a6a670a403adcbd7fc3fb76d",
+      "target_sha256": "490998f0368d6deb88a5a34153b3a3924cae5ba71c69a4671d621605ff2c8a53"
+    },
+    {
+      "source": "to the",
+      "before": "al Consejo",
+      "after": "en la",
+      "source_sha256": "87b83637aa28e7f456d68df065838699179c66d117e8062f0be558e7da498d0f",
+      "target_sha256": "df16fa15dd03c57ef22f0ec39334133c5716fe662ae5a3a36ec09889d40b0114"
+    },
+    {
+      "source": "A contract discharges by",
+      "before": "Un contrato descarga por",
+      "after": "Las obligaciones de un contrato se extinguen por",
+      "source_sha256": "8f487a40382edf1e3dbd48dc492b75398cdd3e689c4a9fd8de11904fa80290ae",
+      "target_sha256": "886014ec7a21859a644c2e05e3aea037fc1f884b67b255e41504b7c6fe803344"
+    },
+    {
+      "source": "Specific performance is available in real estate because each parcel is unique",
+      "before": "El rendimiento específico está disponible en bienes raíces porque cada terreno es único",
+      "after": "Puede exigirse el cumplimiento específico en bienes raíces porque cada parcela es única",
+      "source_sha256": "a9867301dcf96b0089e22822aebf62a6f4558f2f2bf29ce0c84c5a2b07a2f149",
+      "target_sha256": "7634d55e1831115b1024aa2b56f474c478474b1ffd3f6a3a7c2e0694a3e4104e"
+    },
+    {
+      "source": "performance",
+      "before": "rendimiento",
+      "after": "cumplimiento",
+      "source_sha256": "4a1898716ef67796fcc80c7426c4f876d398de27da5c73a3accf425e42a7f412",
+      "target_sha256": "2faef1b26f75b6e6d02e75dea86821f2f2d3ce38b26d4d111a6c2f59188e34e8"
+    },
+    {
+      "source": "releases",
+      "before": "liberaciones",
+      "after": "libera a",
+      "source_sha256": "20195541dc5dea5603773149612ec32f159351afae65c7ee53a915acd2d8b8e9",
+      "target_sha256": "12a4708e75316e6a5041b0bd8963674e14b9399b042b7074154c31717baaf816"
+    },
+    {
+      "source": "specific performance",
+      "before": "rendimiento específico",
+      "after": "cumplimiento específico",
+      "source_sha256": "858b410b3b01e1e023073155eba856899acd9b5a34bea896d8d44aad83e871b2",
+      "target_sha256": "236333a56b452f1de4f1a1e96919c739d3cef62160deafd301935bbb05c81f95"
+    },
+    {
+      "source": "substitutes a new party and",
+      "before": "sustituye a un nuevo partido y",
+      "after": "sustituye una parte por otra y",
+      "source_sha256": "85a57cd02336f55635b672f76a80cc228f549b972437d5d834fd8c333a4e7cdf",
+      "target_sha256": "869eb7a94926f820172733db7d18649c054f8594f31ef7cda4ad0007ee1bbdf0"
+    },
+    {
+      "source": "the original — which is why it needs everyone's agreement. Confusing the two is how a seller discovers, after an assignment they approved, that they are still on the hook.",
+      "before": "el original, que es por lo que necesita el acuerdo de todos. Confundiendo los dos es cómo un vendedor descubre, después de una asignación que aprobaron, que todavía están en el gancho.",
+      "after": "la parte original, por lo que necesita el acuerdo de todos. Confundir ambas figuras puede llevar a un vendedor a descubrir, después de aprobar una cesión, que sigue obligado.",
+      "source_sha256": "7467ddc62ded24fda8eb553317fede6bdf21d35abc5d1804148aefdb6f44dcd4",
+      "target_sha256": "7e77669aa3a63f586159bd7da6060d67ebcc9f084e3f2ce7772952faa668a16e"
+    },
+    {
+      "source": "— owed to all parties, unwaivable:",
+      "before": "— adeudadas a todas las partes:",
+      "after": "— debido a todas las partes y no renunciable:",
+      "source_sha256": "d1c4bb8d21f615fcdf6b6970991ba817a354449ab68410f0e854296f132246f0",
+      "target_sha256": "657a21065e30dd22db6429cc582578255bd25479ba82709fad5d69f1164d7f99"
+    },
+    {
+      "source": ", and only the remainder touches principal. That is why early payments on a thirty-year amortisation barely move the balance.",
+      "before": ", y sólo el resto toca al capital. Es por ello que los pagos anticipados por una amortización de treinta años apenas mueven el saldo.",
+      "after": ", y solo el resto reduce el capital. Por eso los primeros pagos de una amortización a treinta años apenas reducen el saldo.",
+      "source_sha256": "279a881087ea37e8a11c3cce677ab046752c0d34b57122a775094f32a5b042e3",
+      "target_sha256": "56dbeae010bf97293205686d71eda0030682669e3b9c041a18bbcdc9c135031b"
+    },
+    {
+      "source": "A broker who negotiates a workout with a lender on a borrower's behalf has stepped outside brokerage, and",
+      "before": "Un corredor que negocia un entrenamiento con un prestamista en nombre de un prestatario ha salido de la corretaje, y",
+      "after": "Un corredor que negocia una reestructuración de deuda con un prestamista en nombre de un prestatario ha ido más allá del corretaje, y",
+      "source_sha256": "16d91b254f5e013d841f686c47e50b8f4c5cc17fabecfed4a00834024a3e4700",
+      "target_sha256": "a7b966c834bad62b3db276074f103e3e66f711f56b721229bd4a4bf9595c3554"
+    },
+    {
+      "source": "B. The note and the security instrument — two documents, two jobs",
+      "before": "B. La nota y el instrumento de seguridad: dos documentos, dos trabajos",
+      "after": "B. El pagaré y el instrumento de garantía: dos documentos, dos funciones",
+      "source_sha256": "038226b7789169bafb8cba1c7d2485d012c45c8b6a50d64ba003b6ad2f04f237",
+      "target_sha256": "28ab978bc05691063c152dd4c0dae208aaa81bec174e9523f33cc48176fcd11c"
+    },
+    {
+      "source": "Deed of Trust — Washington's Dominant Instrument",
+      "before": "Acto de confianza — El instrumento dominante de Washington",
+      "after": "Escritura de fideicomiso de garantía: instrumento predominante en Washington",
+      "source_sha256": "27c97e20b3dd591de86733a4daa84b8de6db1f8b776252708071b09d8a84cd2e",
+      "target_sha256": "1103e9836abbf95d0c0700f3f2e901873b6a014cf28c24ef5613c949f4013017"
+    },
+    {
+      "source": "Distinguish the note from the security instrument.",
+      "before": "Distinguir la nota del instrumento de seguridad.",
+      "after": "Distinguir el pagaré del instrumento de garantía.",
+      "source_sha256": "0492d7e6617a1c6ac8836e21b9271318ce09d5db5cf6283586142014c5462dc3",
+      "target_sha256": "d35bf5d8fa2d584b68457e04506f880095e96034bcb7d517dd329c34fc010ab3"
+    },
+    {
+      "source": "Due-on-sale (alienation) clause",
+      "before": "Cláusula de entrega (alienación)",
+      "after": "Cláusula de vencimiento por venta (enajenación)",
+      "source_sha256": "b33139a10bb688db1154f3257f44c04ab01205434ec87821df00fe9ed0cf162f",
+      "target_sha256": "f2279d2d628e1055cecdcbafaa852c702568eeeb968fd4f097377544fa81f6ca"
+    },
+    {
+      "source": "Foreclosure",
+      "before": "Precaución",
+      "after": "Ejecución hipotecaria",
+      "source_sha256": "8c28eceb206fbfb489d14070d473f05d3b99688158db6778a8ac78ce905ffce7",
+      "target_sha256": "17214b5f814b934a85b992d9ee5c8fd115f46eae127fea68e7ef1c189621ea22"
+    },
+    {
+      "source": "Grantor, Trustee, Beneficiary",
+      "before": "Concesionario, fideicomisario, beneficiario",
+      "after": "Otorgante, fiduciario, beneficiario",
+      "source_sha256": "291140e2328450de126d64844d483677d10b99baf49c0c43e9d40b69640cb6fa",
+      "target_sha256": "83a259b7740c6fe3a645575e62b8ee1e52d4854144293fda450f3cd7f0ad34aa"
+    },
+    {
+      "source": "Mortgagor, Mortgagee",
+      "before": "Mortgagor, Hipoteca",
+      "after": "Deudor hipotecario, acreedor hipotecario",
+      "source_sha256": "ee45ce130ea0f742c89b70c57c721949da76205c4c11c73ff6164e6c286e7117",
+      "target_sha256": "07bfcaa175e30b137c56392a01b07164e9e889b699a1ddb4730d9d75a11704a5"
+    },
+    {
+      "source": "Principal and interest. Amortization. Debt service. PITI. Equity. Loan-to-value ratio. Points. Yield.",
+      "before": "Principal e interés. Amortización. Servicio de la deuda. PITI. Equidad. Relación préstamo-valor. Puntos. Abandona.",
+      "after": "Capital e intereses. Amortización. Servicio de la deuda. PITI. Patrimonio neto. Relación préstamo-valor. Puntos. Rendimiento.",
+      "source_sha256": "4ee9db00da16dd51fcf6c6e5a2a78f3925fda27adafa2a600658b67c1e6d9a6f",
+      "target_sha256": "e2eefa84214a21998e8c80450e039f6b325fcd3f3023784ebcdb3870b56f1565"
+    },
+    {
+      "source": "The due-on-sale clause is why assumption is rare.",
+      "before": "La cláusula de vencimiento a la venta es la razón por la que la suposición es rara.",
+      "after": "La cláusula de vencimiento por venta explica por qué es poco frecuente asumir el préstamo existente.",
+      "source_sha256": "0e1be2cbaeb830af365dc49994534fbd0e3c375212e7c4e514429e6c8f66823e",
+      "target_sha256": "a047948c731c717607f05e1c95d43da90e3caf4c52e8501720cb49b35e71bb87"
+    },
+    {
+      "source": "Washington's Deeds of Trust Act is RCW 61.24, and it was not read for this project.",
+      "before": "La Ley de Acciones de Confianza de Washington es RCW 61.24, y no fue leída para este proyecto.",
+      "after": "La Ley de escrituras de fideicomiso de garantía de Washington es RCW 61.24, y no se consultó para este proyecto.",
+      "source_sha256": "07a0d7d4ddedb76d47bbc87f98e5a0bbeeaa212c40b29f0bd1fa2a39b8bd3b0a",
+      "target_sha256": "e2aacfecaffbdfe5945b4621d0c25fd58b40102a6c90f394180caf003c387614"
+    },
+    {
+      "source": "When a deed of trust is paid, the trustee reconveys, and",
+      "before": "Cuando se paga una escritura de fideicomiso, el fideicomisario realiza una revisión, y",
+      "after": "Cuando se paga la deuda garantizada por una escritura de fideicomiso, el fiduciario efectúa la retransmisión liberatoria, y",
+      "source_sha256": "55f09513bbedb5a31aa0ab663a1ba0ed4b076bace3b6c493f7a5e59b0287b4b5",
+      "target_sha256": "f6e9a516db33d5ec9b639ca1ca164f29a1d607e61776c9049e318108a208b9b7"
+    },
+    {
+      "source": "a deed of trust paid off but never reconveyed of record is still a cloud on title.",
+      "before": "Una escritura de fideicomiso que valió la pena pero que nunca volvió a transmitirse de registro sigue siendo una nube en el título.",
+      "after": "una escritura de fideicomiso cuya deuda se ha pagado pero cuya liberación nunca se inscribió sigue generando incertidumbre sobre el título.",
+      "source_sha256": "39baa63f4808ca20c09dfe17eb7354b25a1257a4eb07cd523c36d9faf45ddac9",
+      "target_sha256": "1096d52ecee9c5960921c6b9505fb197d68bcba408797a6d0f2c632c9c9fc1a9"
+    },
+    {
+      "source": "is the idea that ties them: the borrower pledges the property",
+      "before": "es la idea que los une: el prestatario promete la propiedad",
+      "after": "es el concepto que los une: el prestatario da la propiedad en garantía",
+      "source_sha256": "9146208b68204e59881954d28b7c13be27848d850d397c01db86c200fcf059f1",
+      "target_sha256": "07c2f1afe445b218f3451b0a4aab621d7228d7ecc3a00e927ad981a5734e50fb"
+    },
+    {
+      "source": "pledges the property",
+      "before": "promesas de la propiedad",
+      "after": "afecta la propiedad como garantía",
+      "source_sha256": "c50495ada8b514a7a3a3a74ded7d33f921b86d0cfe6777780892fc74c780a761",
+      "target_sha256": "bc7da1a384f584176e94725cfc8202f09a52541b6878b4928aa2b4d366b70aee"
+    },
+    {
+      "source": "A lender writes to those standards",
+      "before": "Un prestamista escribe a esas normas",
+      "after": "Un prestamista concede préstamos conforme a esos criterios",
+      "source_sha256": "befb98e4004106a8ffceda2e1cb8b121606c026b390dc26733fcbd9a87ba348e",
+      "target_sha256": "494821c7f12104fdf1b6ef243dbad76ed402cc5c3244997d3d28d3faed570314"
+    },
+    {
+      "source": "Conforming",
+      "before": "Conformando",
+      "after": "Conformes (conforming):",
+      "source_sha256": "884e57710bb7bc64ca80de8129e33064cae38f5dd02cd710aee7673937e965a0",
+      "target_sha256": "76e31052e96cc3f0574d6d6f50c0c9eeef2f673a8b78b1e4692a4e23db19464f"
+    },
+    {
+      "source": "Interest-only / term. Balloon (partially amortized). Graduated payment. Growing equity. Buydown",
+      "before": "Sólo interés / término. Globo (parcialmente amortizado). Pago graduado. Equidad creciente. Recompra",
+      "after": "Solo intereses / a plazo. Pago final global (amortización parcial). Pagos graduados. Acumulación acelerada de patrimonio. Reducción de la tasa mediante pago inicial (buydown)",
+      "source_sha256": "805d8cfb6bc62946fdebacce6bbef3d24cc975556e77c85fa5063cbdf6adc635",
+      "target_sha256": "36740f738993edf0d95271ee0adce61252e93cc425add8798016e2e672195541"
+    },
+    {
+      "source": "Programme document was read for this project",
+      "before": "Para este proyecto se leyó el documento del programa",
+      "after": "documento de programas de la Comisión para este proyecto",
+      "source_sha256": "2293de3910abad3de39552240ac8410daa895a5bc9e4bf706d7b92aab4d569a2",
+      "target_sha256": "aff394d474da15d6f395ca3ab3eb766fc099a9ba084ac94a04546e552be6cc10"
+    },
+    {
+      "source": "Standards;",
+      "before": "Normas;",
+      "after": ";",
+      "source_sha256": "d1b1f57668461e7fef71c9090b04a9505d64570747802a02c72499f240adda8f",
+      "target_sha256": "41b805ea7ac014e23556e98bb374702a08344268f92489a02f0880849394a1e4"
+    },
+    {
+      "source": "The link is conforming standards.",
+      "before": "El enlace se ajusta a las normas.",
+      "after": "El vínculo son los criterios de conformidad.",
+      "source_sha256": "860c1d34448ab1bbf7adf88579c6aab645be95da2208c5758d30c2f95fef3b14",
+      "target_sha256": "8178c652128f3f5bf641335a317133b6543a86e556844d4cba17eb430d960305"
+    },
+    {
+      "source": "blanket",
+      "before": "manta",
+      "after": "sobre varias propiedades (blanket)",
+      "source_sha256": "7cd0fc6ee61e2a57b030062d729f8b68705faab8fee6d727ada7a8c0329fab6e",
+      "target_sha256": "85d5c50fbf9d1bd343a8877c87c7238e7349d154806342da292b6cfaf2bf75dc"
+    },
+    {
+      "source": "exist for eligible buyers. **No Commission",
+      "before": "existen para los compradores elegibles. **No hay Comisión",
+      "after": "existen para compradores elegibles. **No se consultó ningún",
+      "source_sha256": "e95f54ac3d011966907f1757e0c70be7c6aa029035732883b350db0f6961302a",
+      "target_sha256": "791b98ca186e6281dd74b4a53103dfcee700a6c801c73e7fc82a85a9deee52d2"
+    },
+    {
+      "source": "guarantees",
+      "before": "garantías",
+      "after": "garantiza a los",
+      "source_sha256": "870e586efea39af229438e2fa46bbc6d4a40cb1c4d78884de06e7fb54847bbc1",
+      "target_sha256": "25c50140891c1259b7cc8d2cf8e5cfbc115f11a4f94a86b0bd68025404eb9dd7"
+    },
+    {
+      "source": "loans do not and are priced accordingly.",
+      "before": "los préstamos no se hacen y se cotizan en consecuencia.",
+      "after": "los préstamos no cumplen esas normas y sus precios reflejan esa diferencia.",
+      "source_sha256": "4c41d85fa2b5eb1f3de3bc1ebe1de66278d5a424e802324e87902159e3912a74",
+      "target_sha256": "6ee85316f3e9303a634848ae697f28d2e08a2c514bdf48b815796e62a7f541e3"
+    },
+    {
+      "source": "loans meet secondary-market",
+      "before": "préstamos para el mercado secundario",
+      "after": "los préstamos cumplen las normas del mercado secundario",
+      "source_sha256": "17acadca65830bc5ce2b3df5b25f635e917ff5b0238472d146812ebff1f5c14f",
+      "target_sha256": "61383c6e31dc3ffb78eb9cbce4f5646c03bbaa9c1f93d283fabffff716d69fc8"
+    },
+    {
+      "source": "periodic cap",
+      "before": "tapa periódica",
+      "after": "límite por período",
+      "source_sha256": "ee2c47d6ef46d18e489cbdaff699418bbaeaf297229a4f308a0a5cb4f6cebc41",
+      "target_sha256": "336e08460c2b6a79d1e0f2b5d22d4f178ffe0ee8a1ddc6fe91521c70a423640d"
+    },
+    {
+      "source": "purchase money deed of trust",
+      "before": "compra dinero escritura de fideicomiso",
+      "after": "escritura de fideicomiso de garantía para financiar la compra",
+      "source_sha256": "485104ce8aba632954f982aaafb9f225bf5e1afed2c1d764fde9cfa06d596653",
+      "target_sha256": "2131b920a67499f686ef1755fb7ccc93ad64cad840cd78fb0aa6dff1be88c381"
+    },
+    {
+      "source": "— and the balance grows.",
+      "before": "— y el equilibrio crece.",
+      "after": "— y el saldo aumenta.",
+      "source_sha256": "c1633690aba74844b8919dc5a3df5679ab333ed0ac9bfbbf0269a6f656351c77",
+      "target_sha256": "f2c08545b822eb11864e84cbfc684c4a58d0e1914b6f69f79188d760f0c92ab6"
+    },
+    {
+      "source": "\"Rates are coming down before your lock expires.\"",
+      "before": "\"Las tasas están bajando antes de que tu cerradura expire.\"",
+      "after": "«Las tasas bajarán antes de que venza su período de tasa garantizada».",
+      "source_sha256": "7c718ae46fa8eda07fd88e87615a4c556fa8587d9cdf01c4477cb0aff56ef0a6",
+      "target_sha256": "8e4884432339eda57baddcf194b662e93ac8886e916e46d0e9e2c41a042cbd7b"
+    },
+    {
+      "source": "\"That'll appraise.\"",
+      "before": "\"Eso valorará.\"",
+      "after": "«La tasación respaldará ese valor».",
+      "source_sha256": "4aea4a33ca45eec738cf871169a2d7347e632ea6cb1e5a32b130c669617e6b97",
+      "target_sha256": "7a00a9f6f5cf8970420f49d35063bd1b9ebff6566bc70ef9e1f2e0c785495d57"
+    },
+    {
+      "source": "\"You'll qualify.\"",
+      "before": "\"Te calificarás.\"",
+      "after": "«Usted cumplirá los requisitos del préstamo».",
+      "source_sha256": "0c16c8480c44b7969eab9a06d996a6d2435b6e892fcac8361be97629a4f00b1f",
+      "target_sha256": "fe0c210de01e02914bf4dab69be110b0d1d603e4c0d804be88ad18880a3d6518"
+    },
+    {
+      "source": "Every rate, factor and payment used in any item is supplied inside the item as a given.",
+      "before": "Cada tarifa, factor y pago utilizado en cualquier artículo se suministra dentro del artículo como un dado.",
+      "after": "Cada tasa, factor y pago utilizado en una pregunta se proporciona como dato dentro de ella.",
+      "source_sha256": "31cfeb989eba71625b318201a5f08f26a45ddf6b51c62f9e39d8822cf26fcfbd",
+      "target_sha256": "19a37b6afd9393b899d172dc8f0537a2f8ccf6d9c362e1c024b7b0460ae20df2"
+    },
+    {
+      "source": ", and a broker who presents one as another has made a representation the file will not support.",
+      "before": ", y un bróker que se presenta como otro ha hecho una representación que el archivo no soportará.",
+      "after": ", y un corredor que presenta una como si fuera la otra hace una afirmación que el expediente no respalda.",
+      "source_sha256": "b18b6be3623734324f0c9cba41130fb73768333744087727718552e5a1505e6b",
+      "target_sha256": "53669860babb5c0398a95a8d612972bf45ef8532dffad48f7f96715d8704a8b8"
+    },
+    {
+      "source": ", not lending advice.",
+      "before": ", no prestar asesoramiento.",
+      "after": ", no el asesoramiento sobre préstamos.",
+      "source_sha256": "2e14a28a8fe237dee5bcb5cd55cc019c15a7f800014bb6b36160a032358a14f5",
+      "target_sha256": "298cabe17162fd7294848ea86a8db47bdd411b300d10a4726f284aabd1dad1ee"
+    },
+    {
+      "source": "Application.",
+      "before": "Aplicación.",
+      "after": "Solicitud.",
+      "source_sha256": "a135a8dd76b0ad17a6eb34b5840f5ea8979d2b9b3647f8bcfc10333de456a273",
+      "target_sha256": "0246947bb4262553bdd4175dbb6d654c5125cb7cea6b8fe937e55fa2b9d4ffd8"
+    },
+    {
+      "source": "Closing disclosure and the waiting period the federal rule imposes.",
+      "before": "Cierre de la divulgación y el período de espera que impone la regla federal.",
+      "after": "Declaración de cierre y el período de espera que exige la norma federal.",
+      "source_sha256": "e483f829001dfa21fbed75619d4ff2f6aa712a60bbbd66d1e6661e509034e127",
+      "target_sha256": "9df06f1577a8749c8fa1393ac705dcf52da0fdecc9226dd7ff7fa81d90dda602"
+    },
+    {
+      "source": "Loan value is customarily the lower of contract price and appraised value.",
+      "before": "El valor del préstamo suele ser el precio más bajo del contrato y el valor tasado.",
+      "after": "El valor utilizado para el préstamo suele ser el menor entre el precio contractual y el valor de tasación.",
+      "source_sha256": "ad1961e1efb8f4d7fdd6147e506873a9c3d1bdb5e4156862232c61e0018869c0",
+      "target_sha256": "b6ecc7b3d59124a41aab30b647276be5083c1a9a3b238686587a1610c571562d"
+    },
+    {
+      "source": "TILA and Regulation Z, RESPA and Regulation X, the TRID rule, ECOA and the Fair Credit Reporting Act were NOT read for this project.",
+      "before": "TILA y el Reglamento Z, RESPA y el Reglamento X, la norma TRID, ECAA y la Ley de Información de Crédito Justo NO fueron leídos para este proyecto.",
+      "after": "Para este proyecto NO se consultaron TILA y el Reglamento Z, RESPA y el Reglamento X, la norma TRID, ECOA ni la Ley de informes de crédito justos.",
+      "source_sha256": "e501e54d9bad0f3aa0f764ca5e57e6069bc5a90995724c81032dc9f77487756c",
+      "target_sha256": "4d1f6b0ed4fd8539915f4f62073cd7b88202bf4bbda1017c8512ba45b8b513cc"
+    },
+    {
+      "source": "The binding constraint is whichever ratio produces the smaller figure",
+      "before": "La restricción de unión es la proporción que produce la cifra más pequeña",
+      "after": "El límite determinante es el de la proporción que produce la cifra menor",
+      "source_sha256": "5d7ea0db7120ab30523726e2d67f03d316f2fcf2617b12e4ea4c00b2c088651b",
+      "target_sha256": "aca48defb828ecbd3334b96be7a091389ee24bb5998b3d3c8a9c1309376e707c"
+    },
+    {
+      "source": "This course states no ratio figures",
+      "before": "Este curso dice que no hay cifras de proporción",
+      "after": "Este curso no especifica cifras para esas proporciones",
+      "source_sha256": "6a5002586c49f355f3c117a7f5bc24cdab60c7c168e14609fe37e97d024bce50",
+      "target_sha256": "42d8d34a527afae9b83d742edbf592bd40e8ba5ab7d704656e1acbc32158e372"
+    },
+    {
+      "source": "title work.",
+      "before": "título de obra.",
+      "after": "estudio del título.",
+      "source_sha256": "fdee637d00bafb9076137b6493785e65f881951c78f7ae26a9187d55af5bff68",
+      "target_sha256": "18eea6a5a9e5a611d343e3f7abd5e104a0d2c5e78d13e59a6681ad2de030e10b"
+    },
+    {
+      "source": "An agreement to pay or payment of compensation does not establish an agency relationship",
+      "before": "Un acuerdo de pago o pago de una indemnización no establece una relación de agencia",
+      "after": "Un acuerdo de pagar remuneración o su pago no establece una relación de agencia",
+      "source_sha256": "6d155ba68d37bb4c48e8f746dd7036632de4c261b709570393db65f18f43b996",
+      "target_sha256": "242d8773a006867e32aac2ac9e3188c9943607b301d77027eab6f8da0258d460"
+    },
+    {
+      "source": "Closing Disclosure",
+      "before": "Clausura de la divulgación",
+      "after": "Closing Disclosure (declaración de cierre)",
+      "source_sha256": "856261bd754c79d4204a654a11e7208ea67ddfe1918621bff9069fc563a6f23d",
+      "target_sha256": "bfccf13e681313ff72ec21f3ac737945b70c15d6b236cb5eff72828d32688626"
+    },
+    {
+      "source": "Loan Estimate",
+      "before": "Estimación de préstamos",
+      "after": "Loan Estimate (estimación del préstamo)",
+      "source_sha256": "5743f10e27d862b0bcfaa6e7eee0cd60ebcf602c9115e52413d6ee7482645783",
+      "target_sha256": "8247268dff0a06d486c97a89e914a1d506882780c19622ab4721cd7047ab5bc3"
+    },
+    {
+      "source": "This course states no trigger term list, no required disclosure and no penalty",
+      "before": "Este curso dice que no hay lista de activación, no se requiere divulgación y no hay penalidad",
+      "after": "Este curso no especifica listas de términos desencadenantes, revelaciones exigidas ni sanciones",
+      "source_sha256": "e85c8faffe6afb4a8bc754567c14d10fde720cfe8f68b4af315fe791f57c179c",
+      "target_sha256": "f1c3af0d4e5bff031ad7824a4b5f6e647c1ae05a9dd225c796a1fdaf7a9894c0"
+    },
+    {
+      "source": "Where a broker refers business to an entity in which the broker or the firm has an interest, federal law regulates the arrangement and requires disclosure.",
+      "before": "Cuando un bróker se refiere a una entidad en la que el bróker o la empresa tiene un interés, la ley federal regula el acuerdo y exige su divulgación.",
+      "after": "Cuando un corredor remite clientes a una entidad en la que él o su empresa tienen una participación, la ley federal regula el acuerdo y exige revelarlo.",
+      "source_sha256": "5fb68fd6530aa2595304d9d11374d31d1520955347de557637cd9a804a4d3f6d",
+      "target_sha256": "dda27b045e553f91310900c4038396709e69ec4c9c71ce2c08d8a7036af422c7"
+    },
+    {
+      "source": "in an advertisement pull in mandatory disclosures.",
+      "before": "en un anuncio tiran en revelaciones obligatorias.",
+      "after": "en un anuncio generan obligaciones de divulgación.",
+      "source_sha256": "237bdcc862c73e9937a595034aac830205e2361f71425c462baf835e2d95cf42",
+      "target_sha256": "cc36199284f895744cd90bfc7a9ba95940f4e8d94a0af306a188e154576f9120"
+    },
+    {
+      "source": "rule consolidated the duplicate disclosures the two statutes required into two forms: the",
+      "before": "los dos estatutos exigidos en dos formas:",
+      "after": "es la norma que consolidó las revelaciones duplicadas exigidas por ambas leyes en dos formularios: el",
+      "source_sha256": "41fcaadab47507c56b5f2089eb4ab7cb6edde036a196e8b2459fdc7a62985a47",
+      "target_sha256": "45c7f94ab08b051b61f886c2435918930029dca96c0d415f3a302a5f402ad6b2"
+    },
+    {
+      "source": "ECOA and its implementing regulation were not read for this project",
+      "before": "La ECEA y su reglamento de aplicación no fueron leídos para este proyecto",
+      "after": "Para este proyecto no se consultaron ECOA ni su reglamento de aplicación",
+      "source_sha256": "071d7a420741c52a5166b047c898406c5826d73e9d142fcb4edbd8d5ac72ee8a",
+      "target_sha256": "ded769715ad08bff15dabed32f35e6fba15c7a04db3ca6a5b62951c039bf6821"
+    },
+    {
+      "source": "F. Fair lending — ECOA in outline",
+      "before": "F. Préstamos equitativos: resumen de las actividades económicas y sociales",
+      "after": "F. Préstamos equitativos: resumen de ECOA",
+      "source_sha256": "9bd04def93e0207f523ff0cce2cf0e660c60cb21471f54473a85717ac4ecaedd",
+      "target_sha256": "5454142db5db3c91ca140610c559ced6f2d22369e93d9912e161408ee36a8be3"
+    },
+    {
+      "source": "no item requires a student to recall a federal disclosure deadline, tolerance or threshold",
+      "before": "ningún elemento requiere que un estudiante revoque un plazo de divulgación federal, tolerancia o umbral",
+      "after": "ninguna pregunta exige recordar un plazo federal de divulgación, una tolerancia o un umbral",
+      "source_sha256": "1f8b07d9a75d76e97da74fd6ee2f24e65cb1f2a063ac12547d4c208fd32cb1d2",
+      "target_sha256": "d5a0f63b57b397b44f3e40e690731ba8ed720fe48c19e4340a490b6f5c16877a"
+    },
+    {
+      "source": "— you need not audit a pre-approval letter.",
+      "before": "— no necesita una carta de preaprobación.",
+      "after": "— no tiene que auditar una carta de preaprobación.",
+      "source_sha256": "f88f5a46638d30e93fa473f4286b1a4e392868720a49801d6a8cf5d9ad47d402",
+      "target_sha256": "479e7e1c0a895732e0612eeda635f66587948fdb789cbf17cf2c966038a5f448"
+    },
+    {
+      "source": "Assessed value",
+      "before": "Valor evaluado",
+      "after": "Valor fiscal",
+      "source_sha256": "22dd7cf8b10e0f4fbf870cce72f33f15bac104964a69b0f7697b27ca4e12d78f",
+      "target_sha256": "4367dff02139e83230372d75417691acc4e3e4448534967faac58956b35cad2b"
+    },
+    {
+      "source": "Comparable A sold for $612,000 and has a finished basement the subject lacks; the market contribution of that basement, derived from paired sales, is $28,000. Comparable B sold for $574,000 and has one fewer bathroom than the subject; the market contribution of that bathroom is $12,000.",
+      "before": "Comparable A vendido por $612,000 y tiene un sótano terminado el tema carece; la contribución de mercado de ese sótano, derivado de las ventas emparejadas, es de $28,000. Comparable B vendido por $574,000 y tiene un baño menos que el tema; la contribución de mercado de ese baño es $12,000.",
+      "after": "El comparable A se vendió por $612,000 y tiene un sótano terminado del que carece el inmueble objeto de valoración; la contribución de ese sótano al valor de mercado, obtenida de ventas emparejadas, es de $28,000. El comparable B se vendió por $574,000 y tiene un baño menos que el inmueble objeto de valoración; la contribución de ese baño al valor de mercado es de $12,000.",
+      "source_sha256": "94d0915205c1dc511879d25d12fd583a076df075636a8f9f1b0c75f5cc33b251",
+      "target_sha256": "f1c8fab1bc3ad96fb3e329acb7be57123fd5f131ef8268944ada91d6e23646f5"
+    },
+    {
+      "source": "Distinguish value, cost, price and assessed value.",
+      "before": "Distinguir el valor, el costo, el precio y el valor estimado.",
+      "after": "Distinguir el valor, el costo, el precio y el valor fiscal.",
+      "source_sha256": "cb6b195f4fa8d8cbb057c7269bf8aa5f27fe69a8234dc4b3da3059b83dc3a0e1",
+      "target_sha256": "10f72d531bf20d574cc8483935359583933755c067b1bb9bc9a7a000a37daa21"
+    },
+    {
+      "source": "Plottage",
+      "before": "Tramitación",
+      "after": "Incremento de valor por unión de parcelas (plottage)",
+      "source_sha256": "41a9fe4d3961741848fb1091e0416223fd85ff90cbd043e97c0e8f3d0a74c4bf",
+      "target_sha256": "7a482f29eddcf4b8131d16551a7339b37facdbdcaa41d2006eb2d5a7e6595fcc"
+    },
+    {
+      "source": "Rule one: adjust the comparables, never the subject.",
+      "before": "Regla uno: ajustar los comparables, nunca el tema.",
+      "after": "Primera regla: ajuste los comparables, nunca el inmueble objeto de valoración.",
+      "source_sha256": "c2299178d68bb1e623771409e6f8403c71135078a80aa2a734b4071cb32c6ab9",
+      "target_sha256": "a6220fc53ad5a41b0ff3e530f28f8535773a39b24016d85ccac559431eb0fcdd"
+    },
+    {
+      "source": "The logic follows from rule one — you are making each comparable into the subject on paper. If the comparable has something the subject lacks, subtract, because the subject would not have brought that extra.",
+      "before": "La lógica se deriva de la regla uno — usted está haciendo cada uno comparable en el tema en el papel. Si lo comparable tiene algo que le falta al sujeto, resta, porque el sujeto no habría traído ese extra.",
+      "after": "La lógica deriva de la primera regla: sobre el papel, convierte cada comparable en el inmueble objeto de valoración. Si el comparable tiene algo que el inmueble valorado no tiene, reste su valor, porque este último no habría obtenido ese importe adicional.",
+      "source_sha256": "678da26219913268905dff82cf298e1bf3d1bc8c5a92d04aead81da8e4f99634",
+      "target_sha256": "2d1522e725002cd075647da3b8794a4ec3cc20a82ecff779c1a4f408575aab44"
+    },
+    {
+      "source": "The subject is the unknown. Adjusting it would be adjusting the answer.",
+      "before": "El sujeto es lo desconocido. Ajustarlo sería ajustar la respuesta.",
+      "after": "El valor del inmueble objeto de valoración es la incógnita. Ajustarlo sería ajustar la respuesta.",
+      "source_sha256": "804e772f963c21d27d32c32e9b660ecc998ce9500555efd610b3583f0d1a71b6",
+      "target_sha256": "e6673cda976d85a0a6962f2c8cf4a5255aeb60ccf05cc76431979543e4f871fe"
+    },
+    {
+      "source": "This is the principle a broker uses every time a seller asks whether to renovate before listing.",
+      "before": "Este es el principio que un bróker utiliza cada vez que un vendedor pregunta si debe renovarse antes de cotizar.",
+      "after": "Este es el principio que usa un corredor cuando un vendedor pregunta si conviene reformar antes de poner la propiedad en venta.",
+      "source_sha256": "aadb2df4a8e4c4d110f611ccc62d47ecf2af000ce49e4f449342d9ebb8047842",
+      "target_sha256": "da7022739945027e0e6d0eab42dde0774802fb9217ee32485417eef324d7fa3c"
+    },
+    {
+      "source": "(Before-tax cash flow = 158,240 − 104,000 = $54,240 — not the value.)",
+      "before": "(Función de efectivo antes de impuestos = 158,240 − 104,000 = 54,240 dólares, no el valor.)",
+      "after": "(Flujo de efectivo antes de impuestos = 158,240 − 104,000 = $54,240; no es el valor).",
+      "source_sha256": "7f5d1c5fc4f9468b1f62ba51adb0658f36411307bc3c01693fccfff4a4b04d24",
+      "target_sha256": "ac949828f5a39dc0ff368c72f3303cedeb19129254b3152314237f46331e1254"
+    },
+    {
+      "source": ". A subject renting for $5,500 monthly is indicated at 5,500 × 150 =",
+      "before": ". Un tema de alquiler por 5,500 dólares mensuales se indica en 5,500 × 150 =",
+      "after": ". Para un inmueble objeto de valoración que se alquila por $5,500 mensuales, el valor indicado es 5,500 × 150 =",
+      "source_sha256": "a9796fa4519214649762ee21f4567308fbe91a2a5daba5af4d348e520a2cab30",
+      "target_sha256": "e71f78cfd3f99ebd3fbcb03a30ef0995c60b27bbe87861df9fe55b72bb8246a5"
+    },
+    {
+      "source": "At the same income a",
+      "before": "A los mismos ingresosa",
+      "after": "Con los mismos ingresos, un nivel",
+      "source_sha256": "3c6a54fc23b7a2d1fc34f41b1d005cd1f5ffa62f56543a69d6eb5f27270ccb7b",
+      "target_sha256": "5f9fb0f4244e3749ef9414431ce77f874d6c8750444f41346f22a21fc85755de"
+    },
+    {
+      "source": "The cap rate measures risk, and it is inversely related to value.",
+      "before": "La tasa de tope mide el riesgo, y está inversamente relacionada con el valor.",
+      "after": "La tasa de capitalización mide el riesgo y tiene una relación inversa con el valor.",
+      "source_sha256": "aa740151121e9936f30da2c4dcacdc7c07a4e3c75e053d4176d15096f5335102",
+      "target_sha256": "7b43fec2684ad9bde6f94b30828663a67321db7548ad77f856363812f952dd14"
+    },
+    {
+      "source": "Value = subject's gross rent × GRM.",
+      "before": "Valor = alquiler bruto del sujeto × GRM.",
+      "after": "Valor = alquiler bruto del inmueble objeto de valoración × GRM.",
+      "source_sha256": "a341cfc62b241e2639396b2af83417d8538c21aa01e16292ff95f1d8820e3186",
+      "target_sha256": "e84a7e508fff54b30dd13455e2c89e51e9a752a8b455cd4b4a70fac81172969e"
+    },
+    {
+      "source": "cap rate gives a",
+      "before": "velocidad de la tapa da un",
+      "after": "de la tasa de capitalización produce un nivel",
+      "source_sha256": "75592cedc8235f09c8840740ab555f2732cbbcb5bbe520b56d0b197ebf3363cf",
+      "target_sha256": "2eb905596f06047cca7d266a50e81e6762fb742fcc12189c8fc583c357eb3f14"
+    },
+    {
+      "source": "earning power; two buyers could buy the same building with entirely different financing and the NOI is identical.",
+      "before": "poder adquisitivo; dos compradores podrían comprar el mismo edificio con financiación totalmente diferente y el NOI es idéntico.",
+      "after": "capacidad de generar ingresos; dos compradores podrían adquirir el mismo edificio con financiaciones totalmente distintas y el NOI sería idéntico.",
+      "source_sha256": "cbce78794675ef61b67d05b3b044e45345860f3028a1f8db7ca426c8811e5d3d",
+      "target_sha256": "9c9ccf0731712f3163036be95fb3ccad7fd61994499cba2f9e798ca068af66cc"
+    },
+    {
+      "source": "value, because it is the divisor.",
+      "before": "valor, porque es el divisor.",
+      "after": "del valor, porque la tasa es el divisor.",
+      "source_sha256": "2686a1d6c5fe5b76f47256f0d28fec971ce32e267174d756c7c740a3a31753cb",
+      "target_sha256": "4658a0bba211ca87799e711b073273c2522f688c89d218213a176eff2d63ab92"
+    },
+    {
+      "source": "\"This is my opinion of probable sales price, based on these four closed sales and these adjustments. It is not an appraisal. Your lender will order one, and it may come in differently.\"",
+      "before": "\"Esta es mi opinión del precio de venta probable, basado en estas cuatro ventas cerradas y estos ajustes. No es una evaluación. Su prestamista ordenará uno, y puede venir de manera diferente.\"",
+      "after": "«Esta es mi opinión sobre el precio probable de venta, basada en estas cuatro ventas cerradas y estos ajustes. No es una tasación. Su prestamista encargará una, y el resultado podría ser distinto».",
+      "source_sha256": "a86839c725003dc85ee8b8b700add7d41c260030a31ea842fee5fd77943d59f4",
+      "target_sha256": "e3d8ae976637b5cd607c5c06dccf5f58bbce3e4a34d174bb5520db215d310c65"
+    },
+    {
+      "source": "A broker is not an appraiser, and a CMA is not an appraisal.",
+      "before": "Un corredor no es un tasador, y un CMA no es una evaluación.",
+      "after": "Un corredor no es un tasador, y un análisis comparativo de mercado (CMA) no es una tasación.",
+      "source_sha256": "9b864fbc1fed41e909469be23d070d69395ea8940f9c73dd971fb9655a05b161",
+      "target_sha256": "8e26f975259b99a5ad0fe10332087205639ad39d1e5d1ee2c121062f00b39eb2"
+    },
+    {
+      "source": "Appraisal",
+      "before": "Evaluación",
+      "after": "Tasación",
+      "source_sha256": "d4e869d28b41ce3863e08433b88694f209afed38e3906f740e15d882145efb05",
+      "target_sha256": "d9eeb3e53798195954e32c3678f2c050e0cbd65a872856d34661ab32eb3c9ade"
+    },
+    {
+      "source": "Module WA-F-08 engagement check",
+      "before": "Module WA-F-08 engagement check",
+      "after": "Comprobación de participación del módulo WA-F-08",
+      "source_sha256": "a934209dced7f42922b3212e894ccb81d8ca1fb2f5c8c61a083aadc73f2f9e66",
+      "target_sha256": "42dd98916a836a57c66ddb804b0e8ead2011757f7a55ef5e8f717f23c78499f4"
+    },
+    {
+      "source": "Subsection (9) names",
+      "before": "Nombres de la subsección 9)",
+      "after": "El apartado (9) menciona",
+      "source_sha256": "48c9e99c4adf2230beb087658ecbfaba7cccef559631f1f58e06973f6bb6ea8b",
+      "target_sha256": "4ac00e952338c643fe17cd67fd633e3b5ab4f7037d74032d0183eca30e6eeefa"
+    },
+    {
+      "source": "Answering any of them from your own characterisation is steering, whoever asked.",
+      "before": "Responder a cualquiera de ellos de su propia caracterización es dirigir, quienquiera que lo haya pedido.",
+      "after": "Responder con su propia caracterización constituye orientación discriminatoria, independientemente de quién lo haya preguntado.",
+      "source_sha256": "43b3cab93b6bdf96ec9fbe9527b333fe80b017c17d041168d162b0fd25099e13",
+      "target_sha256": "c081db65251fee95af87db106a3d61937449586cf60f04204ae9d99900162033"
+    },
+    {
+      "source": "Blockbusting.",
+      "before": "Aplastando bloques.",
+      "after": "Inducción de ventas mediante prejuicios (blockbusting).",
+      "source_sha256": "e326c06d9641ee8d18f9254ad0765f9d9dab7ded34f4c45189c779a4fc7d3f3a",
+      "target_sha256": "011882d5a5b932765e3d0c832c3013061b3298fc06e82f9b183b156fcf996c09"
+    },
+    {
+      "source": "C. Steering, in the Form a Broker Actually Meets It",
+      "before": "C. Dirección, en la forma de un corredor realmente lo cumple",
+      "after": "C. Orientación discriminatoria tal como aparece en la práctica del corredor",
+      "source_sha256": "2a5cb5adc469c1426680ffe60b10ba097229295b7bea38eeb3839b0a077fa04a",
+      "target_sha256": "0027c56d1ba2bad819fee6400ca65339c6804baf7f0aa59b7a2bdfbdd22f3e4c"
+    },
+    {
+      "source": "D. Disability — Accommodation and Modification",
+      "before": "D. Discapacidad: alojamiento y modificación",
+      "after": "D. Discapacidad: ajustes y modificaciones",
+      "source_sha256": "41a579fdd3df18703f795102a66c402a588d3b9cd6548238c042d04cc63ec598",
+      "target_sha256": "f160c6ed4710c4fce984a2d70bbb1eadb36dcbf425520299ec69dc8bd9d90a55"
+    },
+    {
+      "source": "Directing prospects toward or away from areas on the basis of a personal characteristic —",
+      "before": "Dirigir las perspectivas hacia o fuera de las zonas sobre la base de una característica personal...",
+      "after": "Dirigir a posibles compradores o arrendatarios hacia determinadas zonas o alejarlos de ellas por una característica personal:",
+      "source_sha256": "c468b24ce35e1836dc7504b3dd5b78f72e7289d217c28ec6a3f0f82b4c6dc760",
+      "target_sha256": "fa4af7fdec5feae13d03613b4102fb886e6295e108f3b15ad398e3353d344e2b"
+    },
+    {
+      "source": "Recognise steering, and recognise the requests that invite it.",
+      "before": "Reconocer la dirección y reconocer las peticiones que la invitan.",
+      "after": "Reconocer la orientación discriminatoria y las solicitudes que pueden inducirla.",
+      "source_sha256": "72a4648b15fd4493b49e469bd2ca5b7187433367d3c610aa1cdd12981bc9a330",
+      "target_sha256": "9f4710e95b1156760e52fa752800f5dde7a9379af8e4e0ab5dccc98fbea65f46"
+    },
+    {
+      "source": "Steering by omission is still steering.",
+      "before": "La dirección por omisión sigue siendo la dirección.",
+      "after": "La orientación discriminatoria por omisión sigue siendo orientación discriminatoria.",
+      "source_sha256": "d0251837579e5ef6d0ebd5dd33044cf7bff88527c33d636642c64691f586a401",
+      "target_sha256": "d8a95bba50fcd61ba0bb7b16879c5b8c317cbe09496e60ec87a5ff36aaf9b2d4"
+    },
+    {
+      "source": "Steering.",
+      "before": "Dirección.",
+      "after": "Orientación discriminatoria (steering).",
+      "source_sha256": "42c77a6f83f781a99f31b228b814fd580c69206066ba4dc5bba6c904635cbb14",
+      "target_sha256": "1c1d93a0a4740411396566a34b80942d92a1477eec033bef9fd5967b6f3e8783"
+    },
+    {
+      "source": "The distinction is what is changed: a RULE or the PREMISES.",
+      "before": "La distinción es lo que se cambia: una REGLA o los PREMIOS.",
+      "after": "La diferencia está en qué se cambia: una NORMA o el INMUEBLE.",
+      "source_sha256": "4fdcc477b62626b01678f09237095481695c194dd55b7dcab460ab0af988e7c4",
+      "target_sha256": "803cd3d7cae2657a0f3a61f8816e18f5ed1db68f6ce93dfdea9ff44ac6e48b26"
+    },
+    {
+      "source": "Washington real estate fair housing",
+      "before": "La vivienda de la feria inmobiliaria de Washington",
+      "after": "Washington real estate fair housing (vivienda justa en el sector inmobiliario de Washington)",
+      "source_sha256": "8cfdbc6f4e0308d9269ab701400fa9cfff25b0445133d22e7664f6855cae2e7f",
+      "target_sha256": "49937aa6151304edf4aff149b74b9cac4f42273a2c46f3cc24143ce4183ed2f7"
+    },
+    {
+      "source": "is not only a steering risk, it is an",
+      "before": "no es sólo un riesgo de dirección, es un",
+      "after": "no solo entraña riesgo de orientación discriminatoria, sino que solicita una",
+      "source_sha256": "782d90e3fdba676aa2610d03ef14b94fa21af778f634e0480b8675279adb2b9b",
+      "target_sha256": "bb802b592feedb767ce05583bbd98c0e5361bcd475b9c20574902c32c08f44c8"
+    },
+    {
+      "source": "sets a floor.",
+      "before": "Pon un piso.",
+      "after": "establece un mínimo de protección.",
+      "source_sha256": "f7e59ac4066096dc7dc8b4994b2d2413f26da54fbe515fedeb1c5de56cc81882",
+      "target_sha256": "81dffa49ff94644db6aee8611d2e0312be0fae4f14fbd9bd51c0bc9db6ff5d88"
+    },
+    {
+      "source": "— a refusal does not have to be spoken.",
+      "before": "— no es necesario hacer uso de la palabra.",
+      "after": "— una negativa no tiene que expresarse verbalmente.",
+      "source_sha256": "967eb43fcfc49120649c2a93647830f9b407bd1a7a37482a776aa15e9ed9b8aa",
+      "target_sha256": "44226e338696b20e3c5304a4f0ff8c4461510c835af2b52589eb6d3bfbcc2101"
+    },
+    {
+      "source": "\"To exercise",
+      "before": "\"Hacer ejercicio",
+      "after": "«Actuar con",
+      "source_sha256": "ab8db93ebe7e998e025191c276843995287a0fd05eb38e241875e92fd616555e",
+      "target_sha256": "2e03ea439262024b725eb927cbc079f6ca30a10bee8d2671a33e36a400f83a1a"
+    },
+    {
+      "source": "Account for every dollar",
+      "before": "Cuenta por cada dólar",
+      "after": "Rinda cuentas de cada dólar que",
+      "source_sha256": "8bce7dbf7ed838d2e56ad7cdba62c7a899de41d8652827451ce4b30736cc3bd4",
+      "target_sha256": "c2faf792bc8d3a74d64bbbb0d5ece726516ec1fa562b93157ae87bf25d588cce"
+    },
+    {
+      "source": "F. the Duties RCW 18.86.030 Owes to EVERYONE",
+      "before": "F. Los deberes RCW 18.86.030 Deudas a TODOS",
+      "after": "F. Obligaciones frente a TODAS LAS PERSONAS conforme a RCW 18.86.030",
+      "source_sha256": "b279e2e96e5ac471ae73f83fc481026ebc501e16a4b7934664a77ef867c25d85",
+      "target_sha256": "f56d5e30ad890fc076e503fb2477f7b1ab457b7048277a68bbfbc9787a36b505"
+    },
+    {
+      "source": "Not being obliged to volunteer something is not permission to misstate it",
+      "before": "No estar obligado a ser voluntario algo no es permiso para equivocarlo.",
+      "after": "No estar obligado a comunicar algo por iniciativa propia no permite hacer afirmaciones falsas al respecto",
+      "source_sha256": "d0fc9877f49fc32164dc8cc9b57ce64a04b2ca697a9de02f5633e7d1062195e9",
+      "target_sha256": "0cd16609ca086a4247df2eef941c4a6bd6c240191922eb674db74c2e0f8eea62"
+    },
+    {
+      "source": "Present everything, to everyone, in time",
+      "before": "Presente todo, a todos, con el tiempo",
+      "after": "Presente todo, a todos, oportunamente",
+      "source_sha256": "ff6d1fb726c77fc5ed85ed7e2d83de2d46fe55f90d3e2d7b0eb215393b29a0b3",
+      "target_sha256": "4ed25762f0c19b84912cdc4659cb75bcf0e715006788aa17c9d45930c329c084"
+    },
+    {
+      "source": "account in a timely manner for all money and property received",
+      "before": "cuenta de manera oportuna para todo el dinero y los bienes recibidos",
+      "after": "rendir cuentas oportunamente de todo el dinero y los bienes recibidos",
+      "source_sha256": "6f25eb9211cff944f1caf404b9925991c2da571fdf50ccdc3b357917c05b445e",
+      "target_sha256": "83af4c38bcc6d559347f4b5b606021de7f565a6bcebf76b5b23f31e3dab7f23d"
+    },
+    {
+      "source": "separate paragraph titled 'Agency Disclosure'",
+      "before": "apartado separado titulado «Divulgación de información a través de la Agencia»",
+      "after": "párrafo separado titulado «Agency Disclosure» (revelación de la relación de agencia)",
+      "source_sha256": "c88473e1391e4642be91b02c3894d8d91a634286ee312942bca8f0d923f6a086",
+      "target_sha256": "35d3cb6a780ce0b50cd94dd07faf9089b2197adc342afa7de84bad4ca5f69c1a"
+    },
+    {
+      "source": "you touch.",
+      "before": "Tocas.",
+      "after": "maneje.",
+      "source_sha256": "6637b8727ffae734ad846808d919d2473c7dd43577be934bb973ca8abbcae473",
+      "target_sha256": "337ec4306c41262e16753de119c4a868fe380effccb98a95a2424b07d5ba9f8f"
+    },
+    {
+      "source": "A holdover the landlord never agreed to — possession without right.",
+      "before": "Una retención del propietario nunca estuvo de acuerdo... posesión sin derecho.",
+      "after": "Permanencia tras el vencimiento que el arrendador nunca consintió: posesión sin derecho.",
+      "source_sha256": "d554fab35c4f81e91e4c65fb4f143903c23095fe8ca89164f8b1df8fd5b89d31",
+      "target_sha256": "9395c211be7a477fec0b72ae18c18df77eb084ab2e8d3f15a9b402b9b5958e7f"
+    },
+    {
+      "source": "A. Leasehold estates — recap and application",
+      "before": "A. Sucesiones arrendadas: recapitulación y aplicación",
+      "after": "A. Derechos de arrendamiento: repaso y aplicación",
+      "source_sha256": "e382adc6301f239507864d36662720016dbeb46f9343778a61581c4882352e15",
+      "target_sha256": "11d7f5d5d9bc1369d20195dccc832c39fe16e4a2960cc3e563b5e18e73d47bca"
+    },
+    {
+      "source": "Nearly every operative rule in Washington landlord-tenant practice is in the",
+      "before": "Casi todas las reglas operativas en Washington terrateniente práctica está en el",
+      "after": "Casi todas las normas operativas de la relación entre arrendador e inquilino en Washington se encuentran en la",
+      "source_sha256": "29f6474b618d473fd09545296ca3128b2373a6eaf6c281430556f9cbf7f4c33c",
+      "target_sha256": "8624941a1cb34638eac74c1d3c9b229b74d94c7e521fcaa59d59fce8a5ef19b0"
+    },
+    {
+      "source": "No item asks a student to recall a protected class list, an exemption, a complaint deadline or a penalty",
+      "before": "Ningún artículo pide a un estudiante que revoque una lista de clases protegidas, una exención, un plazo de queja o una sanción",
+      "after": "Ninguna pregunta exige recordar una lista de clases protegidas, una exención, un plazo para presentar una reclamación ni una sanción",
+      "source_sha256": "8e9cda67484472fd9b1b21cf43be9caad4a29607c97036a0e5dffd44747af689",
+      "target_sha256": "1d812e1e98fff95dffe09b3687c510e5e8399356389ec5c52f66ed6427b40ea6"
+    },
+    {
+      "source": "Property management, leasing and landlord-tenant concepts",
+      "before": "Gestión de la propiedad, arrendamiento y conceptos de arrendador-teniente",
+      "after": "Administración de propiedades, arrendamiento y conceptos de la relación entre arrendador e inquilino",
+      "source_sha256": "81fd51861185ca4c78deea99a93a7d82c37d676045eaa003fc03e11d56acba24",
+      "target_sha256": "5528921f6e7bac2cd73bb950f3c360b4cf3ec30553f9f95f87f36bae3f81c5c2"
+    },
+    {
+      "source": "Residential Landlord-Tenant Act, RCW 59.18",
+      "before": "Ley de propietarios de viviendas, RCW 59.18",
+      "after": "Ley de arrendadores y arrendatarios de viviendas, RCW 59.18",
+      "source_sha256": "a11e0cbfce24b22691a40480e4909a3683165140b6203b7e6f7a41f43fd2a4e4",
+      "target_sha256": "0b2adc27152500120e6b03589317788ca783fb912fecb4c3773543b55ebd53e2"
+    },
+    {
+      "source": "accommodation/modification distinction",
+      "before": "alojamiento/distinción de modificación",
+      "after": "distinción entre ajustes y modificaciones",
+      "source_sha256": "9d33d56e19cda254f9570fcdb8d0c66fe124773d83e8176d30664abaff12f01a",
+      "target_sha256": "84b0bca2497ee6dfa1e30562a53dd071ba2d403172cb090acf0002fc61ce3520"
+    },
+    {
+      "source": "steering recognition",
+      "before": "reconocimiento de dirección",
+      "after": "reconocimiento de la orientación discriminatoria",
+      "source_sha256": "a992142b757939735112a16c87e6760474a9bdca947b66b817654b2b0b818ed9",
+      "target_sha256": "0970ec05cb0c54fa3f3ac5a16e012ceb2b42287865983caa14cfe9f103e487cf"
+    },
+    {
+      "source": "unlawful detainer",
+      "before": "detenido ilegal",
+      "after": "ocupación ilícita (unlawful detainer)",
+      "source_sha256": "fb530cbf1860825325995d2857b369836349adb737e962720712b541971d007b",
+      "target_sha256": "1df9dc59e609baeb9808a67afc6bcc4fafc416e524e45896d1d5011fbef0e7a4"
+    },
+    {
+      "source": ", whatever the mechanics turn out to require.",
+      "before": ", sea lo que sea que los mecánicos requirieran.",
+      "after": ", sean cuales sean los requisitos concretos del procedimiento.",
+      "source_sha256": "4950e63c41c6e0245dd3d02759e3cdc27f5aabe6ae251bf99caf3d32d798b63a",
+      "target_sha256": "ee69813ffb673fa67947e6a5c454364f9c753615cadb44c3457be076deefafb1"
+    },
+    {
+      "source": "Account to the owner",
+      "before": "Cuenta al propietario",
+      "after": "Rendir cuentas al propietario",
+      "source_sha256": "536d74ae18612de8305accbc9ca9843e96a19d86b1a490cc8c750f41f09e7387",
+      "target_sha256": "b26be391129e498184b71c3cd5bbc1921e47f72edb58d964ddc06e53310b2d0f"
+    },
+    {
+      "source": "B.2 Assignment and Sublease",
+      "before": "B.2 Asignación y subarrendamiento",
+      "after": "B.2 Cesión y subarrendamiento",
+      "source_sha256": "26cc8739806c06f5b87eac354436b2dd9a5873e88494e2433535e3031bcb25c9",
+      "target_sha256": "5a5288ae2ebe90fdc95a456381fc7934dfedaef32767aaafd2294debbe06749f"
+    },
+    {
+      "source": "Double and triple net* describe how many of the three.",
+      "before": "Doble y triple red* describen cuántos de los tres.",
+      "after": "doble y triple* indican cuántas de esas tres categorías asume.",
+      "source_sha256": "fb42b851cd2cbfee966367185621c32d1d94ec1ab879265b3c91c5087d3eb61d",
+      "target_sha256": "8754a92b5a5f36bbfa18a93fbe2c190a3433b0d80b4b3311ad3d2d7f4d7e6caf"
+    },
+    {
+      "source": "Market the space and screen applicants",
+      "before": "Comercialización del espacio y los solicitantes de pantalla",
+      "after": "Comercializar el espacio y evaluar a los solicitantes",
+      "source_sha256": "ccafb99fbb200539579e881dbbb4cb3ad0610fccf97ebcfd837daf941c16ed37",
+      "target_sha256": "1c88d3b4b6e7b82c0f420cc46b55fd111f80c690c06f9f7d0ded915291e5e8f8"
+    },
+    {
+      "source": "Parties. Premises. Term. Rent — amount, due date, method. Use. Maintenance and repair responsibilities. Deposits. Utilities. Rules. Default and remedies. Assignment and subletting. Notices — how and to where.",
+      "before": "Fiestas. Locales. Term. Alquiler: importe, fecha de vencimiento, método. Usa. Responsabilidades de mantenimiento y reparación. Depósitos. Utilidades. Reglas. Indebidos y remedios. Asignación y subarriendo. Avisos — cómo y dónde.",
+      "after": "Partes. Inmueble. Plazo. Alquiler: importe, vencimiento y método de pago. Uso. Responsabilidades de mantenimiento y reparación. Depósitos. Servicios públicos. Normas. Incumplimiento y remedios. Cesión y subarrendamiento. Notificaciones: cómo y a dónde.",
+      "source_sha256": "63aaa5f7fe45daa3fcd8cc3d1312a8e920ea9031b15ea972e191425bdc76fdf3",
+      "target_sha256": "6f09dd17fdbaaa531d543c2200bb45b8b98510d4e1fa0ddecb59dab5125238c0"
+    },
+    {
+      "source": "account for all moneys and property received during the relationship",
+      "before": "cuenta para todos los dineros y bienes recibidos durante la relación",
+      "after": "rendir cuentas de todo el dinero y los bienes recibidos durante la relación",
+      "source_sha256": "61eb3a9081b5f21a54a5f6977a4352cb15ab45596cab46e785b8300a12c8cac3",
+      "target_sha256": "f74aa5046e9900188a3bb50171c9f052b7627b3ee9961519ca9a2730472c4a5c"
+    },
+    {
+      "source": "of it, leaving the original tenant as a landlord to the subtenant.",
+      "before": "de ella, dejando al inquilino original como propietario al subteniente.",
+      "after": "de ese derecho, y el inquilino original se convierte en arrendador frente al subarrendatario.",
+      "source_sha256": "1561437d13de0d2abf9316b5421a764be9b79c8fb8c64adc29fa07e75b129c64",
+      "target_sha256": "e6c2f835f43af4bf2610ac590e34cf521929858443118febda56eeccadbbb238"
+    },
+    {
+      "source": "remaining interest.",
+      "before": "los intereses restantes.",
+      "after": "derecho restante.",
+      "source_sha256": "9c6d435afe98bb13d77b233ec98e62156839db4d550c17a010ed24adf7a4e37e",
+      "target_sha256": "cacda371a0eafae4afb0b5386a4304720c0c6c6b093c33a651a492843aae5ca9"
+    },
+    {
+      "source": "some or all of taxes, insurance and maintenance. *Single,",
+      "before": "algunos o todos los impuestos, seguros y mantenimiento. *Single,",
+      "after": "algunos o todos los impuestos, seguros y gastos de mantenimiento. *Neto simple,",
+      "source_sha256": "33008f1a7ade180ef813d3ae519ca59a4541fe229d4c71e2be44dcc0ac0d5c92",
+      "target_sha256": "6d86a8e4fe20479e4c760f47e084d0f6ae2afaf0ad4df08edd998c2a15da1b51"
+    },
+    {
+      "source": "Any accommodation or modification request.",
+      "before": "Cualquier solicitud de alojamiento o modificación.",
+      "after": "Cualquier solicitud de ajuste o modificación.",
+      "source_sha256": "93304f7855d2cd50a3bec4a7a1826e4abcf74ea19dca83572f09d89173f5c9ae",
+      "target_sha256": "f2d298b7ac0d53e6ff5b488b159d43ec1a317038ac21cd0d87903d89ea5a2dcf"
+    },
+    {
+      "source": "By statute, and an improperly served notice restarts the clock at best.",
+      "before": "Por ley, y un aviso mal servido reinicia el reloj como mucho.",
+      "after": "por ley, y una notificación defectuosa reinicia el cómputo del plazo en el mejor de los casos.",
+      "source_sha256": "1f4b51ae3ba97a50bf80fcfbb6a0be3d453749cb0a94b243ff719f764371fad8",
+      "target_sha256": "bec28511d7fe490bb217da5815280da5305b6d3baf3402f6ca45cf73a1f2d8b9"
+    },
+    {
+      "source": "Unlawful detainer is a court proceeding. **Self-help — changing locks, removing doors,",
+      "before": "El detenidor ilícito es un procedimiento judicial. ** Autoayuda: cambiar las cerraduras, quitar las puertas,",
+      "after": "El desalojo por ocupación ilícita es un procedimiento judicial. **Actuar por cuenta propia — cambiar cerraduras, retirar puertas,",
+      "source_sha256": "16db0bd4ccac68df2534c14baf0d893a01de35f0c5786e22807341f34fa91118",
+      "target_sha256": "4fd8267dc5b62a0f007862e2fbf084df6025bd75a23d2ace33fe5a39d2f475c3"
+    },
+    {
+      "source": "and assistance animal guidance.",
+      "before": "y asistencia en la orientación de los animales.",
+      "after": "y las directrices sobre animales de asistencia.",
+      "source_sha256": "c7d705c393082f59e672ab3a5df3981f1ca033bc1e02d5f577583c5e1d993523",
+      "target_sha256": "60250463e6ced2c64b7da270dc50e24a11984a5f31b0406c9c33bbaabcbe3c9c"
+    },
+    {
+      "source": "what a manager routes.",
+      "before": "Qué rutas de gerente.",
+      "after": "qué cuestiones debe remitir un administrador a un especialista.",
+      "source_sha256": "73302dc990e00b68ff28e6f4aa5d29ad002cdac14e3109e8aa43cd0d47713a0a",
+      "target_sha256": "9a9c1d8a5fb6a2fcc387bf9b4345a1d3f6519993c17f3041bc9b2ba466881887"
+    },
+    {
+      "source": "— rent not collected, including concessions and delinquency — is a different and usually larger figure than",
+      "before": "— el alquiler no recaudado, incluidas las concesiones y la delincuencia — es una cifra diferente y generalmente mayor que",
+      "after": "— alquiler no cobrado, incluidas concesiones y morosidad — es una cifra distinta y generalmente mayor que la",
+      "source_sha256": "61fed51d231d2305f83502cd919ae23c7b7f41c08b46ece89132e20f3b12fcaa",
+      "target_sha256": "8a855621975124b38156c2ed2ba0800a4fda0160bb91f6e6c0870ce664baaf27"
+    },
+    {
+      "source": "\"has not agreed to\"",
+      "before": "\"no está de acuerdo\"",
+      "after": "«no haya aceptado»",
+      "source_sha256": "26c54211276008ea819a6e1a6103c47bf85c522999ef58272a3779cb0520625c",
+      "target_sha256": "8a055f3a44e0eab771842e639f1c28ec3e1303fb7c31c574fbb709f41b2b0491"
+    },
+    {
+      "source": "A broker who walks a crawl space and sees standing water has not conducted an inspection —",
+      "before": "Un corredor que camina por un espacio de arrastre y ve el agua de pie no ha llevado a cabo una inspección —",
+      "after": "Un corredor que recorre la cámara bajo el piso y ve agua estancada no ha realizado una inspección:",
+      "source_sha256": "fe43260225ecfb84c91cf4c68ded6d7eb02480df4d40f4c0f7a1f27fc868594d",
+      "target_sha256": "705f44c00e2b69dee65fb437c346cdbc5d087d3a81048549a6335fe160cfcc27"
+    },
+    {
+      "source": "A statutory duty to send the party to someone who can answer.",
+      "before": "Un deber legal de enviar el partido a alguien que pueda responder.",
+      "after": "Un deber legal de remitir a la parte a alguien que pueda responder.",
+      "source_sha256": "79de1f272492db9bdfe923cdd851f582a51558b9f1535568bc75403d29818548",
+      "target_sha256": "da69a55c949829d85de56e7baab4e837041357426ce63c0ace833723dd3ca93a"
+    },
+    {
+      "source": "The duty — RCW 18.86.030(1)(d)",
+      "before": "El derecho — RCW 18.86.030(1)(d)",
+      "after": "La obligación — RCW 18.86.030(1)(d)",
+      "source_sha256": "8036a239e8a38689c1773533a7ed37909a14a1bdb7ab241d256b10c012b9f028",
+      "target_sha256": "cbb9eb192d6eb8bbe78579b2bc583e3dc82818afffbdbc9450af09e17c02eea0"
+    },
+    {
+      "source": "The routing duty — RCW 18.86.040(1)(c) and 18.86.050(1)(c):",
+      "before": "El servicio de enrutamiento — RCW 18.86.040(1)(c) y 18.86.050(1)(c):",
+      "after": "El deber de remitir a un especialista — RCW 18.86.040(1)(c) y 18.86.050(1)(c):",
+      "source_sha256": "7b8bf0913e01f34424f837dd733e103aa23c44f1da445d6746b40dd0af94267b",
+      "target_sha256": "e58580c29a2a181d89346cefccb09ce92cd323fb860eb14f6638544536e6155c"
+    },
+    {
+      "source": ", and this course states",
+      "before": ", y este curso dice",
+      "after": ", y este curso no especifica",
+      "source_sha256": "87e21a0d60499dd3ab6a4c0651681bbbec91c3ff39ba569e56f12b3e7da7183e",
+      "target_sha256": "339da7c392960034c8a8c90042e97f03077a104321db1f4763501b14439d2732"
+    },
+    {
+      "source": "A qualified inspector; a licensed abatement contractor before any renovation.",
+      "before": "Un inspector calificado; un contratista de reducción con licencia antes de cualquier renovación.",
+      "after": "Un inspector cualificado; antes de cualquier reforma, un contratista autorizado para eliminar amianto.",
+      "source_sha256": "65d1e9bc3f32eefc8296c02a45ca8de0e8dcfb331e9ff443cd0a5c7e622c035e",
+      "target_sha256": "6e2e227dbfe35550e9eb1780deb3bd30dd70846668c15eba7f0eb7a5d66ea812"
+    },
+    {
+      "source": "In much of western Washington this is the most frequently raised condition of all. The useful question is almost never \"is there mould\" but",
+      "before": "En gran parte del oeste de Washington esta es la condición más frecuentemente elevada de todas. La pregunta útil es casi nunca \"hay molde\" pero",
+      "after": "En gran parte del oeste de Washington, es el problema del estado del inmueble que más se plantea. La pregunta útil casi nunca es «¿hay moho?», sino",
+      "source_sha256": "3df1f9d88674833202c87dc89b6dd6c637f2319398f36fae9e4d808c2d6b7f52",
+      "target_sha256": "61241766467de747e99a9431cfe5cf0c4bfdc3f90869e5285807a73dedd10d31"
+    },
+    {
+      "source": "no notice period, no acknowledgment requirement and no record retention period",
+      "before": "sin plazo de preaviso, sin requisito de reconocimiento y sin período de retención de registros",
+      "after": "plazos de notificación, requisitos de acuse de recibo ni períodos de conservación de registros",
+      "source_sha256": "c40e7afef46051e0708288f921bd1eeced250d02af934f807bbc1af4d488b859",
+      "target_sha256": "4cce8075ecf5c7976867fd223a271e3bfb42b97baf5d41ba19b913c8c1db86b1"
+    },
+    {
+      "source": "other act, occurrence, or use NOT ADVERSELY AFFECTING THE PHYSICAL CONDITION OF OR TITLE TO THE PROPERTY",
+      "before": "otro acto, ocurrencia o uso NO AFECTAMENTE A LA CONDICIÓN FÍSICA DE LA PROPIEDAD O TÍTULO A LA PROPIEDAD",
+      "after": "otro acto, suceso o uso QUE NO AFECTE NEGATIVAMENTE AL ESTADO FÍSICO DEL INMUEBLE NI A SU TITULARIDAD",
+      "source_sha256": "49841182816b47dd6b4f9b2d70c9deb3bd4ac4aa9a1eddaf5fa90eaba25ce119",
+      "target_sha256": "0bbff764c62e917a8c8cb48b4a00891bf0578598bab792089ac5ddf2710214d4"
+    },
+    {
+      "source": "right",
+      "before": "derecha",
+      "after": "derecho",
+      "source_sha256": "27042f4e6eca7d0b2a7ee4026df2ecfa51d3339e6d122aa099118ecd8563bad9",
+      "target_sha256": "bf11f5652fbf62ba920488eaace5272779f774eee97aab5fc60fefa85407afb7"
+    },
+    {
+      "source": "to use the water. →",
+      "before": "usar el agua. →",
+      "after": "a usar el agua. →",
+      "source_sha256": "a6f6d2115080c8cd3c8cb18e2b020546906453bde279fce6459521ab03bfc245",
+      "target_sha256": "62218a18d755b57cf26d54aa4ae09af880bfb1225a19dfba44c623592a139abd"
+    },
+    {
+      "source": "\"Don't test — what you don't know you don't have to disclose\"",
+      "before": "\"No pruebes lo que no sabes que no tienes que revelar\"",
+      "after": "«No haga pruebas: lo que no sabe no tiene que revelarlo»",
+      "source_sha256": "b4b688b517fd22e2191afcb11efd84f4d33004394e5dffd3c666846af8eaf3e2",
+      "target_sha256": "9d687390ce073ce077dcb4641d02731ea6aea7c9e1cce754b368376e46295d05"
+    },
+    {
+      "source": "\"There was standing water in the crawl space when I was there in March.\"",
+      "before": "\"Había agua de pie en el espacio de arrastre cuando yo estaba allí en marzo.\"",
+      "after": "«Había agua estancada en la cámara bajo el piso cuando estuve allí en marzo».",
+      "source_sha256": "41c21acc3c6f1d08db9d51eb10d60dd834cb6226b140d4cf952c2e21f8a53d25",
+      "target_sha256": "c403d5b95f0a118b2f5f29ed0cd98f5b5a2dfb44dcb447535f05da1361b6a071"
+    },
+    {
+      "source": "NOT obtained, and therefore reproduced, described or paraphrased NOWHERE in this build:",
+      "before": "NO obtuvo, y por lo tanto reprodujo, describió o parafraseó NOWHERE en este edificio:",
+      "after": "Fuentes NO obtenidas y, por tanto, no reproducidas, descritas ni parafraseadas EN NINGUNA PARTE de esta versión:",
+      "source_sha256": "3df099becea0403b71e8990f7cf58fe7fa4816cb7375ded8a8de36977039a936",
+      "target_sha256": "104d92ecc5c770fc4ee8e2d5723338c6de17c9140b9c29142cced227cd597867"
+    },
+    {
+      "source": "knowledge, signed on a date. A broker who completes it has made it partly their own.",
+      "before": "conocimiento, firmado en una fecha. Un corredor que lo completa lo ha hecho en parte suyo.",
+      "after": "conocimientos, firmada en una fecha. Un corredor que la completa la convierte parcialmente en su propia declaración.",
+      "source_sha256": "52c4ced1113c42703a50178887e25b252277dee5b2035a0e664639c9ef8340a0",
+      "target_sha256": "38079ff42deddcfbf02775ca97e025ff2ffe61864ad269b0f66607f3e77e39d9"
+    },
+    {
+      "source": "statement of the",
+      "before": "Declaración de la Comisión",
+      "after": "declaración sobre los",
+      "source_sha256": "9e69b580a5f1e26c56f570fbf3cb52e3389a87e96f5f558efe724047202c2d86",
+      "target_sha256": "548f6a0e3f3cd4a526ed97e4c5b08a287eeeba0b30a7b0f9baeb1f37a2637074"
+    },
+    {
+      "source": ", which gives $268,919.50 — short by more than $800.",
+      "before": ", que da 268,919.50 dólares, menos de 800 dólares.",
+      "after": ", lo que da $268,919.50: faltan más de $800.",
+      "source_sha256": "f08eceab0da9413adb144607e6a1651dc1d84a1cc15a47187cfb1aca7d7e839a",
+      "target_sha256": "bb24eae09ecd7856d188f29b1adac8577736aa98268ac7bbbdb68fbb940676a6"
+    },
+    {
+      "source": "A lot is a rectangle 120 ft × 210 ft with a right-triangular extension 120 ft × 60 ft.",
+      "before": "Un lote es un rectángulo de 120 pies × 210 pies con una extensión triangular derecha 120 pies × 60 pies.",
+      "after": "Un lote es un rectángulo de 120 pies × 210 pies con una extensión en forma de triángulo rectángulo de 120 pies × 60 pies.",
+      "source_sha256": "08bb2d0239e5bd1fcb02b6048a363f9a315ad8df5ec8e43c340b7840b424906a",
+      "target_sha256": "1fc4e634321945cedbffacede02f7b2917c71bcd8a54c9fff4ae1882e22292f4"
+    },
+    {
+      "source": "Adding a percentage to the net is not the same as taking a percentage from the price.",
+      "before": "Añadir un porcentaje a la red no es lo mismo que tomar un porcentaje del precio.",
+      "after": "Añadir un porcentaje al neto no equivale a restar un porcentaje del precio.",
+      "source_sha256": "a2ed1350fd3c58bca3812feec2656d4a0ddbc664858a8b11ec59c11febac259b",
+      "target_sha256": "ae1b9850c62ec8acf076776c82f43006d755a39ee2ddbe7d27671bd3013ac129"
+    },
+    {
+      "source": "B.1 a Straightforward Commission",
+      "before": "B.1 una Comisión de Derecho Internacional",
+      "after": "B.1 Cálculo sencillo de una comisión",
+      "source_sha256": "d701b902fa1588b900c5e47690ec46cd5c47c14f4def709a75001b2751612446",
+      "target_sha256": "711d12ac72503d8249d69f6c92e55a65056866c770f473fd0ce1b2899445d8bd"
+    },
+    {
+      "source": "Compute commissions, splits and net-to-seller — including the price needed to net a required sum.",
+      "before": "Calcular comisiones, escisiones y red a la venta, incluido el precio necesario para obtener una suma necesaria.",
+      "after": "Calcular comisiones, repartos e importe neto para el vendedor, incluido el precio necesario para obtener una suma neta determinada.",
+      "source_sha256": "d938669cef89feedcd31ccee40f269ea787b1a908c93a6f6b2b51728fd98e1c0",
+      "target_sha256": "0d4f07e6d414f34ab74c2534981f779672677572d6f54c050b1421b2a11152c3"
+    },
+    {
+      "source": "Let",
+      "before": "Vamos.",
+      "after": "Sea",
+      "source_sha256": "e947a3d4f4a1b23611f8aa204b2bb149785cfb02f5ccc687d1eb10b059e0d5aa",
+      "target_sha256": "76b3af333dbac074dc755fbde33b8bc05a3306fa3d169762466437fd97740c87"
+    },
+    {
+      "source": "Shared with selling firm = 37,675 ÷ 2 =",
+      "before": "Compartido con la empresa vendedora = 37,675 ÷ 2 =",
+      "after": "Compartido con la empresa que aporta al comprador = 37,675 ÷ 2 =",
+      "source_sha256": "759b1e9d1ca3fd4cb365f5bb37388bbb54c80911c7b1301865b89670efd496aa",
+      "target_sha256": "48b1a97ee6a4d0639311ee57f51de5911bb59c4094fec03164ebafda20a45a83"
+    },
+    {
+      "source": "This course states no commission rate, split or minimum.",
+      "before": "Este curso dice que no hay tasa de comisión, escindido o mínimo.",
+      "after": "Este curso no fija tasas de comisión, repartos ni mínimos.",
+      "source_sha256": "55f6f983916e832062e39a437e5d16b3214f889d83ceed9bcff7680575c9b680",
+      "target_sha256": "e0454d2487d347cc9db33e94c7fe229d866e8428d0206f729d4b17778dc0fa5a"
+    },
+    {
+      "source": "be the price. Then",
+      "before": "Sé el precio. Entonces",
+      "after": "el precio. Entonces",
+      "source_sha256": "638e7ac1d1bc6acf3c47b0ab2baa4ec24311fca94b8433d61729816a792a9f18",
+      "target_sha256": "bfb74e406b6e525b80a6eaa8ecadb025ae4da7af035509034ca6aa6ce5964234"
+    },
+    {
+      "source": "each. Listing broker's share = 18,837.50 × 0.60 =",
+      "before": "cada uno. Compartir con el corredor = 18,837.50 × 0.60 =",
+      "after": "para cada empresa. Parte del corredor del vendedor = 18,837.50 × 0.60 =",
+      "source_sha256": "b327c28c8f0e28161927e413ca03ac08a1f3d430d94da438c16d6d64056fd8b5",
+      "target_sha256": "6bd18f09b746b902fb0a25b893448a48641448d19fe8fee1597b1da4bdb3fc2d"
+    },
+    {
+      "source": "8.9412 mills",
+      "before": "8.9412 molinos",
+      "after": "8.9412 mills",
+      "source_sha256": "5132984322ef5eef4ab302e41871c93061b85c9f7c19dba67253d1318fe18cd8",
+      "target_sha256": "5132984322ef5eef4ab302e41871c93061b85c9f7c19dba67253d1318fe18cd8"
+    },
+    {
+      "source": "Assessed value $624,000; the combined levy rate in this problem is $8.9412 per $1,000.",
+      "before": "Valor prorrateado 624,000 dólares; el tipo de gravamen combinado en este problema es de 8.9412 dólares por 1,000 dólares.",
+      "after": "Valor fiscal de $624,000; la tasa combinada del impuesto en este ejercicio es de $8.9412 por cada $1,000.",
+      "source_sha256": "40de0d51dcc438bc070b0571abd6ac305f5a2eb349afeea2010824976f36d09d",
+      "target_sha256": "1c4db591f599581ab7a56e7056c62725e672abdc21816396834fe37119b38362"
+    },
+    {
+      "source": "Before delivery, replace these problems with the current statutory brackets and local additions, and add at least one problem that requires the student to apply more than one bracket.",
+      "before": "Antes del parto, reemplace estos problemas con los corchetes legales actuales y adiciones locales, y agregue al menos un problema que requiera que el estudiante aplique más de un paréntesis.",
+      "after": "Antes de impartir el curso, sustituya estos ejercicios por otros que utilicen los tramos legales vigentes y los recargos locales, e incluya al menos uno que exija aplicar más de un tramo.",
+      "source_sha256": "4f279fed9ef66a697a0a2b0ca0b352e6adb2645d87ccf83e42d8e5662c11e24f",
+      "target_sha256": "4285820be51ebc5117eec8dc8d332bc00d6a31c6c58e25c27b28c07fa1ff8bd0"
+    },
+    {
+      "source": "D. Real estate excise tax",
+      "before": "D. Impuesto sobre los impuestos especiales sobre bienes inmuebles",
+      "after": "D. Impuesto sobre transmisiones inmobiliarias",
+      "source_sha256": "4aa8f99461e71e339f6613ae01d1b464ba72c2b878dd6267110ae13b2ca21171",
+      "target_sha256": "56024a38655b7945026545b6d37cc5bbd34493a37348f7fe5b212fe334634a64"
+    },
+    {
+      "source": "One mill is one-thousandth of a dollar — $1 per $1,000 of assessed value.",
+      "before": "Un molino es una milésima parte de un dólar: 1 dólar por cada 1,000 dólares del valor prorrateado.",
+      "after": "Un mill es la milésima parte de un dólar: $1 por cada $1,000 de valor fiscal.",
+      "source_sha256": "310aa55686a059aa6c21aef524a69036fcbc3d448bab2a336a167140347e63fc",
+      "target_sha256": "f1f912fda812e274cc5d7e5389fb123eef1bdb738090b6b0b7250030e5651786"
+    },
+    {
+      "source": "assessed value",
+      "before": "valor estimado",
+      "after": "valor fiscal",
+      "source_sha256": "de110df6e15c1728a22959c243ee5adb75f2b62ee51faaab919808e44c0f5c6c",
+      "target_sha256": "21534b528e4698e5f5fef0cabc2b7796964b5fea396945fc157074e1bf74ab15"
+    },
+    {
+      "source": "on the sale of real property. It appears on every Washington closing statement, and it is customarily the",
+      "before": "en la venta de bienes inmuebles. Aparece en cada declaración de cierre de Washington, y es",
+      "after": "sobre la venta de inmuebles. Figura en toda liquidación de cierre de Washington y normalmente es un cargo",
+      "source_sha256": "b0d354afa4eb1687b11185a19ccfca2d84a39ac728e37c086282c1a56ac8497e",
+      "target_sha256": "307296daa3dfa259c212cf8aa5334389256b70d9117fce3f649ee98b14a80686"
+    },
+    {
+      "source": "per $1,000 of assessed value",
+      "before": "por 1,000 dólares del valor de las cuotas",
+      "after": "por cada $1,000 de valor fiscal",
+      "source_sha256": "b87c32561337226d03eb39eda609e4d0a1bb562da7f5e43cbd25868b9b9682de",
+      "target_sha256": "7493daf9bb4aede59381a6ec413c29e03b3325b2e3aac6d8c04a06bf02d2019d"
+    },
+    {
+      "source": "360-Day / 30-day-month method",
+      "before": "Método de 360 días / 30 días-mes",
+      "after": "Método de año de 360 días / meses de 30 días",
+      "source_sha256": "513fb82f1325417f6ef706aa491a038175210a65b683f88eb2e3fb8d34a4a08c",
+      "target_sha256": "ca2250fb26093d2fe1fa35ad5568aac6a64cff0d5d17df12bce04476bad3863e"
+    },
+    {
+      "source": "A proration is always a DOUBLE ENTRY.",
+      "before": "Un prorrateo es siempre una ENTRADA DOBLE.",
+      "after": "Un prorrateo siempre requiere una DOBLE ANOTACIÓN.",
+      "source_sha256": "b2b9e89d0c99c9383fb4c2c35c984a0609fb37657868d022f30e516f6baaf9d7",
+      "target_sha256": "0c9a2c6e46bd716c1e544a85eb97d443bede484a55a0917398f49ebfaf954beb"
+    },
+    {
+      "source": "Credits: earnest money 10,000 + loan 468,000 =",
+      "before": "Créditos: arraigo 10,000 + préstamo 468,000 =",
+      "after": "Abonos: depósito de buena fe 10,000 + préstamo 468,000 =",
+      "source_sha256": "ded3f0c8566d7fed185b1cd6b0ced19174864e7abc95449bba373938fd123667",
+      "target_sha256": "dd4d46e6e2ca490c0a0f1c82568e162a272680ac0257debc405c5511b1dbcd08"
+    },
+    {
+      "source": "Daily = 6,000 ÷ 360 = $16.667; monthly = $500. Seller's period = 1 January through 1 October = 9 months + 1 day = 4,500 + 16.67 =",
+      "before": "Diaria = 6,000 ÷ 360 = $16.667; mensual = $500. Período del vendedor = 1 Enero a octubre 1 = 9 meses + día 1 = 4,500 + 16.67 =",
+      "after": "Importe diario = 6,000 ÷ 360 = $16.667; mensual = $500. Período del vendedor = del 1 de enero al 1 de octubre = 9 meses + 1 día = 4,500 + 16.67 =",
+      "source_sha256": "ccebfa559b010c0ee17e1d38d6909e5abe5159db3cb7416b8f4b165f5b3f4b1d",
+      "target_sha256": "61b4841ab2e329aedc780010bb698c1e2f53230b3ca0aba7a7adadf6bfcd5390"
+    },
+    {
+      "source": "Debits: commission (585,000 × 0.055) 32,175 + excise tax (585,000 × 0.0178) 10,413 + payoff 301,500 + other 1,150 =",
+      "before": "Deberes: comisión (585,000 × 0.055) 32,175 + impuesto especial (585,000 × 0.0178) 10,413 + pago 301,500 + otros 1,150 =",
+      "after": "Cargos: comisión (585,000 × 0.055) 32,175 + impuesto sobre transmisiones inmobiliarias (585,000 × 0.0178) 10,413 + cancelación del préstamo 301,500 + otros 1,150 =",
+      "source_sha256": "ab0ee0cfd00937bdebdda9dcb194e047814143c837627ba1e2b999acd7abe764",
+      "target_sha256": "ec040017013a8c9f22f629410cd87fbf055471d4c3931b14ed55ddcdaff37f27"
+    },
+    {
+      "source": "Debits: price 585,000 + lender charges 6,240 + title/escrow/recording 2,180 + tax proration 1,483.33 =",
+      "before": "Débitos: precio 585,000 + los cargos del prestamista 6,240 + título/crédito/inscripción registral 2,180 + prorrateo fiscal 1,483.33 =",
+      "after": "Cargos: precio 585,000 + cargos del prestamista 6,240 + título/escrow/inscripción registral 2,180 + prorrateo del impuesto 1,483.33 =",
+      "source_sha256": "ac276f1b6da43ee66c4d0e45813d98f5802b33dc7ac7a643b500e5f7bd3f2422",
+      "target_sha256": "68946e3f5cfe85f2d1109c2f3326c72e9731a0e4f1fa594c91a136a8a677e85e"
+    },
+    {
+      "source": "Double entry. ✓",
+      "before": "Entrada doble.",
+      "after": "Doble anotación. ✓",
+      "source_sha256": "889d1b7fc7781df97bf725bccab28dc35a56945ea2aaf576e0a581cbc1b6f9f9",
+      "target_sha256": "7bc7520088054523b21ac76e285c2dc5a77b810ef6f5d6e663b2c5471b598c7c"
+    },
+    {
+      "source": "E.2 Worked Example — Rent Collected in Advance, 365-Day Method",
+      "before": "E.2 Ejemplo de trabajo — Renta recogida por adelantado, método de 365 días",
+      "after": "E.2 Ejemplo resuelto — Alquiler cobrado por adelantado, método de 365 días",
+      "source_sha256": "15446434b7be8bafe3312bbdd5f29f73d01a4aa1df593d54237814abf137ecdf",
+      "target_sha256": "d988d51230616f7d95b0ca6f952f3aea1c46188ed6839278669fbd4a7abc1b9a"
+    },
+    {
+      "source": "F.1 Debits and Credits, from First Principles",
+      "before": "F.1 Deberes y créditos, de los primeros principios",
+      "after": "F.1 Cargos y abonos: conceptos básicos",
+      "source_sha256": "a38733de97f74c2351602300747fa75da481d9630f193604dc7a894aa66c2694",
+      "target_sha256": "a911e72198be01b0a02fb93fead3a44bd2df575ba6e59cc1f22dc359c0399743"
+    },
+    {
+      "source": "F.2 Worked Example — a Complete Transaction, All Figures Given",
+      "before": "F.2 Ejemplo trabajado: una transacción completa, todas las figuras dadas",
+      "after": "F.2 Ejemplo resuelto — Transacción completa con todas las cifras dadas",
+      "source_sha256": "a004c35e4e886fbc34b250b10440fc363419026f54c1ba11b7bce747e4f67e1d",
+      "target_sha256": "2a28ed9071604218d4406f40bde4287d8ae4acd36d40521bc47bf514730258bb"
+    },
+    {
+      "source": "For the",
+      "before": "Por la Comisión",
+      "after": "Para el",
+      "source_sha256": "fd5909d550ec178bede2fe5377c5cca32e1d66ad78d5d67aa079eb07f0b3edae",
+      "target_sha256": "dcbb57ef61aec0027a14eefc2fdb9691e728f203cddf285fa42086a0a8c35cef"
+    },
+    {
+      "source": "Items paid in advance or in arrears are divided between the parties as of closing:",
+      "before": "Los artículos pagados por adelantado o en mora se dividen entre las partes a la fecha de cierre:",
+      "after": "Los conceptos pagados por adelantado o a período vencido se reparten entre las partes a la fecha del cierre:",
+      "source_sha256": "6fc7777e789682b24a3154dacdd5364607f87edb111e69bbad709194793c7e68",
+      "target_sha256": "1f1d92771a97b4d77a0019f5cd9545e21f93cdd7c8d467c6b93690f5f8c3106d"
+    },
+    {
+      "source": "Notice the direction reverses between the two examples",
+      "before": "Observe los reversos de dirección entre los dos ejemplos",
+      "after": "Observe que la dirección del cargo y del abono se invierte entre los dos ejemplos",
+      "source_sha256": "a37fb276653163cb537483cb946cc125694d84957ee9a3ffce42818ede819ea5",
+      "target_sha256": "24319923f6e56b9c778c7db526f7383ebbb71dd9f9e3c56a3e2aaf2b3568d3fe"
+    },
+    {
+      "source": "Prepaid by the seller for a period the buyer will own → the buyer reimburses. Collected by the seller for a period the buyer will own → the seller hands it over.",
+      "before": "Prepago por el vendedor por un período el comprador será propietario → el comprador reembolsa. Recogedo por el vendedor por un período de tiempo el comprador será dueño → el vendedor lo entrega.",
+      "after": "Si el vendedor pagó por adelantado un período que corresponde al comprador, el comprador se lo reembolsa. Si el vendedor cobró por adelantado un período que corresponde al comprador, entrega ese importe al comprador.",
+      "source_sha256": "950f300dfda4dd312cd99e75f6571ca1eb7702b4333eececd7cc50a91578960d",
+      "target_sha256": "ff7255c33f8d728aa50f3d03eb6928bf3662f247b7cd94ec1e4d2d97aa20bad7"
+    },
+    {
+      "source": "Prorated item appearing once has been done wrong.**",
+      "before": "El ítem prorrateado que aparece una vez ha sido hecho mal.**",
+      "after": "concepto prorrateado que aparece una sola vez está mal contabilizado.**",
+      "source_sha256": "c6bfaf90cea290b523f704a8df32e15309eef70f2c1fd498a21f34f9a90992db",
+      "target_sha256": "70b60deea1da9519f204dd1ffc6a3bf85f217d662151b5f11a1150aca8337ecf"
+    },
+    {
+      "source": "Sale price $585,000. Earnest money $10,000 held in escrow. New loan $468,000. Buyer's loan origination and other lender charges $6,240. Buyer's title, escrow and recording charges $2,180. Seller's commission 5.5 percent. Excise tax at 1.78 percent (seller). Seller's loan payoff $301,500. Seller's escrow and other charges $1,150. Property tax of $6,000 for the year was paid in full by the seller; closing 1 October; 360-day method; the SELLER owns the day of closing.",
+      "before": "Precio de venta $585,000. Depósito de buena fe $10,000 mantenido en depósito. Nuevo préstamo $468,000. La originación del préstamo del comprador y otros cargos de prestamista $ 6,240. El título del comprador, depósito y cargos de registro $ 2,180. Comisión del vendedor 5.5 por ciento. Impuesto sobre los impuestos especiales al 1.78 por ciento (vendedor). Pago del préstamo del vendedor $ 301,500. Depósito del vendedor y otros cargos $ 1,150. El impuesto sobre la propiedad de $6,000 para el año fue pagado en su totalidad por el vendedor; cierre 1 octubre; método de 360 días; el vendedor posee el día de cierre.",
+      "after": "Precio de venta: $585,000. Depósito de buena fe de $10,000 en custodia (escrow). Nuevo préstamo: $468,000. Cargos del comprador por originación y otros cargos del prestamista: $6,240. Cargos del comprador por título, escrow e inscripción registral: $2,180. Comisión a cargo del vendedor: 5.5 por ciento. Impuesto sobre transmisiones inmobiliarias: 1.78 por ciento (vendedor). Saldo para cancelar el préstamo del vendedor: $301,500. Cargos de escrow y otros cargos del vendedor: $1,150. El vendedor pagó íntegramente el impuesto anual sobre la propiedad de $6,000; cierre el 1 de octubre; método de 360 días; el día del cierre se atribuye al VENDEDOR.",
+      "source_sha256": "d9e32569a3dc0c99ed9f0b94de8c9bbca034baf05edbbf76e1ad1a4a223605ee",
+      "target_sha256": "6c39f0b2801d52bec0da791452146a41b242a07377cca3ef36f9bf949eaa365b"
+    },
+    {
+      "source": "Two conventions, and every problem must say which it uses:",
+      "before": "Dos convenciones, y cada problema debe decir que utiliza:",
+      "after": "Hay dos convenciones; cada ejercicio debe indicar cuál utiliza:",
+      "source_sha256": "2db047ff4ea3297da7c10345b0fd8c0a56dfd1f1150c6abcc135054cb8fe5d42",
+      "target_sha256": "2e7a34c1051729c34b45c6af1eae1343514cb482c959fd27906aee45e292d45c"
+    },
+    {
+      "source": "Whatever is credited to one party is debited to the other. **A",
+      "before": "Todo lo que se acredita a una parte se carga a la otra. **A",
+      "after": "Lo que se abona a una parte se carga a la otra. **Un",
+      "source_sha256": "f7969060517860bda082623c117c479d5b51072b18ced3b62c89d7f2f3db8784",
+      "target_sha256": "f9b264accde7e59b489dedf0632c8abf7cfd54e5441dbcabc21963fb307b023a"
+    },
+    {
+      "source": "Which party owns it",
+      "before": "¿A qué partido pertenece?",
+      "after": "a qué parte se atribuye ese día",
+      "source_sha256": "684cb91c7e063b2678d13c03fc6aa54d623c99c243abc29d66531ac4545be826",
+      "target_sha256": "1373a3b3deadea5749783a611f59cfc7d1f495a51be1c9f0b9ae77e56ff56221"
+    },
+    {
+      "source": "Whichever party \"owns\" the day of closing must be stated.",
+      "before": "Cualquiera que sea el partido \"propietario\" del día de cierre debe ser declarado.",
+      "after": "Debe indicarse a qué parte se atribuye el día del cierre.",
+      "source_sha256": "7e7e3d0a8587ac2df91c1b12535d523fd8a03c7db5d875c817b832513ccd2a3b",
+      "target_sha256": "b1e740ee9aa15e6ab2b1c6039cba191f2eab343fd366eebf495c15373c9a2ebd"
+    },
+    {
+      "source": "assessments",
+      "before": "evaluaciones",
+      "after": "contribuciones especiales",
+      "source_sha256": "f887c6af08daaa18b3e1b081db3571d065fd300e9fb86652aa5eaad9b960e161",
+      "target_sha256": "e9348c05e80e0426e6bd78e40d0e4daf03d4f01c2eca4b3f9b309f0b9209069e"
+    },
+    {
+      "source": "credit seller, debit buyer.",
+      "before": "vendedor de crédito, comprador de débito.",
+      "after": "abono al vendedor y cargo al comprador.",
+      "source_sha256": "a8412d357cc7638c60438ebf2d60ca8165152994af0309e3e35d6e2e7a8ccf0b",
+      "target_sha256": "3b84bb9804e2682ca1153d8739871364fc1d68831e7d8dc1026da3d46aa2d401"
+    },
+    {
+      "source": "excise tax",
+      "before": "impuestos especiales",
+      "after": "impuesto sobre transmisiones inmobiliarias",
+      "source_sha256": "1d3f21a59ea959ec51c804ff4bc56d835ab04b305f945d42c7ffb9e75b9bf2d1",
+      "target_sha256": "325bdebf11493bc6642e07b13ca2e1ac622f2d754db8b1aee70d7e17b8f30791"
+    },
+    {
+      "source": "has coming",
+      "before": "ha llegado",
+      "after": "tiene derecho a recibir",
+      "source_sha256": "9cb49fadd7be39869d8f49c0f6c78e98ebe5c5214ac66289ed0b014a39888d4d",
+      "target_sha256": "90f77258599d98ee5682ef8f5e601aaeed1c57106f703f05b93581c0e79a9802"
+    },
+    {
+      "source": "make routing the rest a statutory duty.",
+      "before": "que el encaminamiento del resto sea una obligación legal.",
+      "after": "establecen la obligación legal de remitir las demás cuestiones a especialistas.",
+      "source_sha256": "75b7d5451fd17cb61ae8ada80f7dc8d940b1ea49cb8c053491d8062e9b5eee11",
+      "target_sha256": "1bbb65cad85a5ed3dfb6deef0e2a198555f8ca1462b507cead3a7bf53754514d"
+    },
+    {
+      "source": "— it is what they have coming. The",
+      "before": "— es lo que tienen que venir. Los",
+      "after": "— es lo que tiene derecho a recibir. El",
+      "source_sha256": "33aef5c11608aa23866de0fbe5c591b267264e7fc5ed196e427207f0dcbb23ed",
+      "target_sha256": "d6b8912bb65cd31b26beb9780647df97fe9fe32c495a5d2d211040524615e750"
+    },
+    {
+      "source": "— it is what they owe. The",
+      "before": "- Es lo que deben. Los",
+      "after": "— es lo que debe pagar. El",
+      "source_sha256": "451d7b75e97785c68a8835fba56fd344e332c7ed24b775ce782ee8a46aa87a0d",
+      "target_sha256": "39803a474ff337dffe5fb952a4fe6ba53d6c142289460001162cb47e47704baa"
+    },
+    {
+      "source": ", including assessment, levy, revaluation, exemption and deferral provisions; the",
+      "before": ", incluidas las disposiciones en materia de evaluación, exacción reguladora, revalorización, exención y aplazamiento;",
+      "after": ", incluidas las disposiciones sobre valoración fiscal, gravámenes, revaluación, exenciones y aplazamientos; el",
+      "source_sha256": "cd9ab2fcb6370139b622149d06df26878a78e8d12a71c83f79c57124e0f55675",
+      "target_sha256": "ccc47525595c3f983ab1bbfd6b8830eeb3c3b555e0c31673faa0969efbd07961"
+    },
+    {
+      "source": "Eleven items, delivered as in Module WA-F-01, and",
+      "before": "Once artículos entregados con arreglo al módulo WA-F-01, y",
+      "after": "Once preguntas, presentadas como en el módulo WA-F-01, y",
+      "source_sha256": "05df3027a1850c0048972a2245705dcb07e8484794a6f75f88fda02b83792dd8",
+      "target_sha256": "1bd1321727b6d5e8b9b7d001ca8f9b536bb5e58afca946db7d9429e2beaffaba"
+    },
+    {
+      "source": "Every figure in every worked example is supplied inside the example, and",
+      "before": "Cada figura en cada ejemplo trabajado se suministra dentro del ejemplo, y",
+      "after": "Todas las cifras de los ejemplos resueltos se proporcionan en el propio ejemplo, y",
+      "source_sha256": "0c3796fe392f0ad34e8fbb00a7a7962ae55c220878ce30fef29f6bf02cd4aab2",
+      "target_sha256": "9e38eb7fce6d972e792d5879ee87782c8cb2730d3ce38426c09135092986544a"
+    },
+    {
+      "source": "Every rate, levy, multiplier and convention is supplied inside the item as a given",
+      "before": "Cada tipo, tasa, multiplicador y convenio se suministra dentro de la partida como un determinado",
+      "after": "Cada tasa, gravamen, multiplicador y convención se proporciona como dato en la propia pregunta",
+      "source_sha256": "7091ffbcb54e4696b937117d2461b7ec85f9d9796b8107408910bdc3ba1aa27a",
+      "target_sha256": "6fa1d010c003175b9e5a7345c4c7466edc00d12e5b3ba13f93c1cf330370bb5b"
+    },
+    {
+      "source": "Not read, and therefore the source of no figure in this build:",
+      "before": "No leído, y por lo tanto la fuente de ninguna figura en este edificio:",
+      "after": "No se consultaron las siguientes fuentes y, por tanto, ninguna cifra de esta versión procede de ellas:",
+      "source_sha256": "685a60296c3915cf0a550c740cb66b6b6109626c0d8b3f49a9cbefab94ce9368",
+      "target_sha256": "1db3f9a50e94690a324676d29fadff8f7fa66b7129c0b8394b1cb4b1aa6b8b80"
+    },
+    {
+      "source": "committing — that is compliance information and it is useful. A broker who says",
+      "before": "comprometiéndose, es decir, información sobre el cumplimiento y es útil. Un corredor que dice",
+      "after": "de comprometerse: eso informa sobre el cumplimiento y resulta útil. Un corredor que dice",
+      "source_sha256": "8575c7b7c136e86b4b7e89911ba30c07ceb1929b62709463df4f1268b758b1b5",
+      "target_sha256": "43f5d4308d2d1586bf4a63cde2fc33ff11cc06c48c51dcc6d496f1b42ed715c9"
+    },
+    {
+      "source": "every one of them is a calculation or a settlement statement placement.",
+      "before": "cada uno de ellos es un cálculo o una colocación de la declaración de liquidación.",
+      "after": "cada una exige un cálculo o identificar dónde registrar un concepto en la liquidación de cierre.",
+      "source_sha256": "99dd97fe18b2e691e2cebe645cbed14d72ec7e4fafe8e8ea661fbf53faf137ac",
+      "target_sha256": "fc1699be673cfc3491fcb6949602ce3a48ff4ff01561cfc21507878c2f60f97d"
+    },
+    {
+      "source": "leaves the practice-of-law boundary exactly where the courts put it.",
+      "before": "deja el límite de la práctica de la ley exactamente donde los tribunales lo ponen.",
+      "after": "mantiene el límite del ejercicio de la abogacía exactamente donde lo han establecido los tribunales.",
+      "source_sha256": "2e9c5a75df8dbf4aac0fc1b8a8e1e544bcac80c2586470d29f960b474bf3df9d",
+      "target_sha256": "8a8a3e88f8fab97944cf4fa5e5bf49c53ce19e3b6357adb2b25c32ee242462bb"
+    },
+    {
+      "source": "local real estate excise tax ordinance",
+      "before": "Ordenanza local sobre impuestos especiales sobre bienes raíces",
+      "after": "ordenanza local del impuesto sobre transmisiones inmobiliarias",
+      "source_sha256": "df1af90bc57c8f30b0719bfdffe9a63b46636b9371b3ad192edf1e5c3baa1c60",
+      "target_sha256": "8aea6310c2a327d744803c87bace718b9dd5ee4fb7ae8fdcf735cf25a50007ef"
+    },
+    {
+      "source": "no item requires a student to recall a Washington or federal tax rate, bracket, threshold or exemption.",
+      "before": "ningún artículo requiere que un estudiante revoque una tasa de impuestos federal o de Washington, un tramo, un umbral o una exención.",
+      "after": "ninguna pregunta exige recordar una tasa, tramo, umbral o exención fiscal de Washington o federal.",
+      "source_sha256": "7fb76c8a67a213056814c99da7adb721409b9cafdccfa771c394d155f0973395",
+      "target_sha256": "6c42d8dd98f86533c9a7516a1be5c30a6346e622e28f215c41daab61a3003f66"
+    },
+    {
+      "source": "replacing the flat excise tax rate with the current statutory brackets is a submission gate.",
+      "before": "sustituir el tipo fijo del impuesto especial por los tramos reglamentarios actuales es una puerta de presentación.",
+      "after": "sustituir la tasa única del impuesto sobre transmisiones inmobiliarias por los tramos legales vigentes es un requisito previo a la presentación del curso.",
+      "source_sha256": "6e249095be6c552fe1049570c5187a0f1876c0f0aa0e3e114b9dcddedf186fce",
+      "target_sha256": "360e3f34baa9d525c6575133a6afc17314203ba4eba27a87d88076dd3afa2e3b"
     }
   ],
   "questions_reviewed": [
@@ -1775,5 +4966,12 @@
     "wa-real-estate-fundamentals-60:130",
     "wa-real-estate-fundamentals-60:131",
     "wa-real-estate-fundamentals-60:132"
+  ],
+  "source_issues": [
+    {
+      "status": "OPEN",
+      "location": "module-01 instructor source note vs opening",
+      "issue": "English end note says DOL prescribed curriculum not obtained, while opening says both DOL PDFs obtained 2026-09-04. Resolve source-evidence consistency in English; Spanish preserves source meaning."
+    }
   ]
 }

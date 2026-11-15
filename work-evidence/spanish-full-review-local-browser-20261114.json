@@ -1,0 +1,279 @@
+{
+  "scope": "Local Chrome: all30 Spanish course readers, sampled quiz grading and selected-answer language roundtrip, final Oklahoma correction observed after rebuild",
+  "courses": [
+    {
+      "state": "AK",
+      "course": "ak-salesperson-prelicense-40-v1",
+      "language": "es",
+      "lessonCount": 8,
+      "readerLength": 2241,
+      "ready": "ready",
+      "title": "Formación previa a la licencia de agente inmobiliario de Alaska"
+    },
+    {
+      "state": "AZ",
+      "course": "az-salesperson-prelicense-90",
+      "language": "es",
+      "lessonCount": 13,
+      "readerLength": 3508,
+      "ready": "ready",
+      "title": "Formación previa a la licencia de agente inmobiliario de Arizona"
+    },
+    {
+      "state": "AZ",
+      "course": "az-contract-writing-6",
+      "language": "es",
+      "lessonCount": 2,
+      "readerLength": 7051,
+      "ready": "ready",
+      "title": "Redacción de contratos de Arizona"
+    },
+    {
+      "state": "CA",
+      "course": "ca-real-estate-principles-45",
+      "language": "es",
+      "lessonCount": 15,
+      "readerLength": 1468,
+      "ready": "ready",
+      "title": "Principios de bienes raíces"
+    },
+    {
+      "state": "CA",
+      "course": "ca-real-estate-practice-45",
+      "language": "es",
+      "lessonCount": 15,
+      "readerLength": 1476,
+      "ready": "ready",
+      "title": "Práctica inmobiliaria"
+    },
+    {
+      "state": "CA",
+      "course": "ca-mortgage-loan-brokering-lending-45",
+      "language": "es",
+      "lessonCount": 15,
+      "readerLength": 1491,
+      "ready": "ready",
+      "title": "Intermediación y concesión de préstamos hipotecarios"
+    },
+    {
+      "state": "CO",
+      "course": "co-real-estate-law-practice-48",
+      "language": "es",
+      "lessonCount": 5,
+      "readerLength": 3619,
+      "ready": "ready",
+      "title": "Derecho y práctica inmobiliaria de Colorado"
+    },
+    {
+      "state": "CO",
+      "course": "co-contracts-regulations-48",
+      "language": "es",
+      "lessonCount": 5,
+      "readerLength": 3061,
+      "ready": "ready",
+      "title": "Contratos y normativa de Colorado"
+    },
+    {
+      "state": "CO",
+      "course": "co-trust-accounts-recordkeeping-8",
+      "language": "es",
+      "lessonCount": 4,
+      "readerLength": 2850,
+      "ready": "ready",
+      "title": "Cuentas fiduciarias y conservación de registros de Colorado"
+    },
+    {
+      "state": "CO",
+      "course": "co-current-legal-issues-8",
+      "language": "es",
+      "lessonCount": 3,
+      "readerLength": 4588,
+      "ready": "ready",
+      "title": "Cuestiones jurídicas actuales de Colorado"
+    },
+    {
+      "state": "CO",
+      "course": "co-real-estate-closings-24",
+      "language": "es",
+      "lessonCount": 5,
+      "readerLength": 3230,
+      "ready": "ready",
+      "title": "Cierres inmobiliarios de Colorado"
+    },
+    {
+      "state": "CO",
+      "course": "co-practical-applications-32",
+      "language": "es",
+      "lessonCount": 7,
+      "readerLength": 4091,
+      "ready": "ready",
+      "title": "Aplicaciones prácticas de Colorado"
+    },
+    {
+      "state": "ME",
+      "course": "me-sales-agent-v1",
+      "language": "es",
+      "lessonCount": 9,
+      "readerLength": 1781,
+      "ready": "ready",
+      "title": "Formación previa a la licencia de agente inmobiliario de Maine"
+    },
+    {
+      "state": "MI",
+      "course": "mi-salesperson-prelicensure-40-v1",
+      "language": "es",
+      "lessonCount": 10,
+      "readerLength": 1583,
+      "ready": "ready",
+      "title": "Principios de bienes raíces: formación previa a la licencia de agente inmobiliario de Michigan"
+    },
+    {
+      "state": "MO",
+      "course": "mo-salesperson-preexam-48",
+      "language": "es",
+      "lessonCount": 9,
+      "readerLength": 2161,
+      "ready": "ready",
+      "title": "Curso previo al examen de agente inmobiliario de Missouri"
+    },
+    {
+      "state": "MO",
+      "course": "mo-real-estate-practice-24",
+      "language": "es",
+      "lessonCount": 6,
+      "readerLength": 2089,
+      "ready": "ready",
+      "title": "Curso de práctica inmobiliaria de Missouri"
+    },
+    {
+      "state": "NC",
+      "course": "nc-broker-prelicensing-75",
+      "language": "es",
+      "lessonCount": 16,
+      "readerLength": 2482,
+      "ready": "ready",
+      "title": "Formación previa a la licencia de corredor inmobiliario de Carolina del Norte"
+    },
+    {
+      "state": "OK",
+      "course": "ok-basic-prelicense-90",
+      "language": "es",
+      "lessonCount": 16,
+      "readerLength": 2264,
+      "ready": "ready",
+      "title": "Formación básica previa a la licencia de Oklahoma"
+    },
+    {
+      "state": "PA",
+      "course": "pa-real-estate-fundamentals-30",
+      "language": "es",
+      "lessonCount": 6,
+      "readerLength": 3234,
+      "ready": "ready",
+      "title": "Fundamentos de bienes raíces de Pensilvania"
+    },
+    {
+      "state": "PA",
+      "course": "pa-real-estate-practice-45",
+      "language": "es",
+      "lessonCount": 9,
+      "readerLength": 2033,
+      "ready": "ready",
+      "title": "Práctica inmobiliaria de Pensilvania"
+    },
+    {
+      "state": "TX",
+      "course": "tx-principles-real-estate-i-30",
+      "language": "es",
+      "lessonCount": 9,
+      "readerLength": 2513,
+      "ready": "ready",
+      "title": "Principios de bienes raíces de Texas I"
+    },
+    {
+      "state": "TX",
+      "course": "tx-principles-real-estate-ii-30",
+      "language": "es",
+      "lessonCount": 9,
+      "readerLength": 2720,
+      "ready": "ready",
+      "title": "Principios de bienes raíces de Texas II"
+    },
+    {
+      "state": "TX",
+      "course": "tx-law-of-agency-30",
+      "language": "es",
+      "lessonCount": 12,
+      "readerLength": 4244,
+      "ready": "ready",
+      "title": "Derecho de representación inmobiliaria de Texas"
+    },
+    {
+      "state": "TX",
+      "course": "tx-law-of-contracts-30",
+      "language": "es",
+      "lessonCount": 11,
+      "readerLength": 6207,
+      "ready": "ready",
+      "title": "Derecho contractual de Texas"
+    },
+    {
+      "state": "TX",
+      "course": "tx-promulgated-contract-forms-30",
+      "language": "es",
+      "lessonCount": 9,
+      "readerLength": 2287,
+      "ready": "ready",
+      "title": "Formularios contractuales promulgados de Texas"
+    },
+    {
+      "state": "TX",
+      "course": "tx-real-estate-finance-30",
+      "language": "es",
+      "lessonCount": 10,
+      "readerLength": 1761,
+      "ready": "ready",
+      "title": "Financiación inmobiliaria de Texas"
+    },
+    {
+      "state": "VA",
+      "course": "va-principles-practices-v1",
+      "language": "es",
+      "lessonCount": 15,
+      "readerLength": 1737,
+      "ready": "ready",
+      "title": "Principios y prácticas de bienes raíces"
+    },
+    {
+      "state": "WA",
+      "course": "wa-real-estate-fundamentals-60",
+      "language": "es",
+      "lessonCount": 12,
+      "readerLength": 5028,
+      "ready": "ready",
+      "title": "Fundamentos de bienes raíces de Washington"
+    },
+    {
+      "state": "WA",
+      "course": "wa-real-estate-practices-30",
+      "language": "es",
+      "lessonCount": 6,
+      "readerLength": 4057,
+      "ready": "ready",
+      "title": "Prácticas inmobiliarias de Washington"
+    },
+    {
+      "state": "WI",
+      "course": "wi-salesperson",
+      "language": "es",
+      "lessonCount": 13,
+      "readerLength": 3746,
+      "ready": "ready",
+      "title": "Formación previa a la licencia de agente inmobiliario de Wisconsin"
+    }
+  ],
+  "finalOklahomaCorrectionObserved": true,
+  "spanishEnglishSpanishSelectedAnswerRetained": true,
+  "allLessonsEndToEnd": false,
+  "productionVerified": false
+}

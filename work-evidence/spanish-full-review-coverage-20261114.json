@@ -1,0 +1,435 @@
+{
+  "scope": "Evidence coverage only; does not certify zero semantic errors. Exact-source reuse is explicitly recorded in reviewer ledgers.",
+  "courses": [
+    {
+      "course_id": "ak-salesperson-prelicense-40-v1",
+      "lessons": 8,
+      "sections": 105,
+      "reviewed_sections": 105,
+      "questions": 88,
+      "reviewed_questions": 88,
+      "missing_sections": [],
+      "missing_questions": [],
+      "evidence": [
+        "work-evidence/spanish-full-review-final-20261114.json",
+        "work-evidence/spanish-full-review-west.json"
+      ]
+    },
+    {
+      "course_id": "az-contract-writing-6",
+      "lessons": 2,
+      "sections": 16,
+      "reviewed_sections": 16,
+      "questions": 22,
+      "reviewed_questions": 22,
+      "missing_sections": [],
+      "missing_questions": [],
+      "evidence": [
+        "work-evidence/spanish-full-review-final-20261114.json",
+        "work-evidence/spanish-full-review-west.json"
+      ]
+    },
+    {
+      "course_id": "az-salesperson-prelicense-90",
+      "lessons": 13,
+      "sections": 115,
+      "reviewed_sections": 115,
+      "questions": 143,
+      "reviewed_questions": 143,
+      "missing_sections": [],
+      "missing_questions": [],
+      "evidence": [
+        "work-evidence/spanish-full-review-final-20261114.json",
+        "work-evidence/spanish-full-review-west.json"
+      ]
+    },
+    {
+      "course_id": "ca-mortgage-loan-brokering-lending-45",
+      "lessons": 15,
+      "sections": 225,
+      "reviewed_sections": 225,
+      "questions": 165,
+      "reviewed_questions": 165,
+      "missing_sections": [],
+      "missing_questions": [],
+      "evidence": [
+        "work-evidence/spanish-full-review-central-cam.json",
+        "work-evidence/spanish-full-review-final-20261114.json",
+        "work-evidence/spanish-full-review-root-cam.json"
+      ]
+    },
+    {
+      "course_id": "ca-real-estate-practice-45",
+      "lessons": 15,
+      "sections": 225,
+      "reviewed_sections": 225,
+      "questions": 165,
+      "reviewed_questions": 165,
+      "missing_sections": [],
+      "missing_questions": [],
+      "evidence": [
+        "work-evidence/spanish-full-review-final-20261114.json",
+        "work-evidence/spanish-full-review-west.json"
+      ]
+    },
+    {
+      "course_id": "ca-real-estate-principles-45",
+      "lessons": 15,
+      "sections": 225,
+      "reviewed_sections": 225,
+      "questions": 165,
+      "reviewed_questions": 165,
+      "missing_sections": [],
+      "missing_questions": [],
+      "evidence": [
+        "work-evidence/spanish-full-review-final-20261114.json",
+        "work-evidence/spanish-full-review-west.json"
+      ]
+    },
+    {
+      "course_id": "co-contracts-regulations-48",
+      "lessons": 5,
+      "sections": 51,
+      "reviewed_sections": 51,
+      "questions": 55,
+      "reviewed_questions": 55,
+      "missing_sections": [],
+      "missing_questions": [],
+      "evidence": [
+        "work-evidence/spanish-full-review-central.json",
+        "work-evidence/spanish-full-review-final-20261114.json"
+      ]
+    },
+    {
+      "course_id": "co-current-legal-issues-8",
+      "lessons": 3,
+      "sections": 25,
+      "reviewed_sections": 25,
+      "questions": 33,
+      "reviewed_questions": 33,
+      "missing_sections": [],
+      "missing_questions": [],
+      "evidence": [
+        "work-evidence/spanish-full-review-central.json",
+        "work-evidence/spanish-full-review-final-20261114.json"
+      ]
+    },
+    {
+      "course_id": "co-practical-applications-32",
+      "lessons": 7,
+      "sections": 72,
+      "reviewed_sections": 72,
+      "questions": 77,
+      "reviewed_questions": 77,
+      "missing_sections": [],
+      "missing_questions": [],
+      "evidence": [
+        "work-evidence/spanish-full-review-central.json",
+        "work-evidence/spanish-full-review-final-20261114.json"
+      ]
+    },
+    {
+      "course_id": "co-real-estate-closings-24",
+      "lessons": 5,
+      "sections": 48,
+      "reviewed_sections": 48,
+      "questions": 55,
+      "reviewed_questions": 55,
+      "missing_sections": [],
+      "missing_questions": [],
+      "evidence": [
+        "work-evidence/spanish-full-review-central.json",
+        "work-evidence/spanish-full-review-final-20261114.json"
+      ]
+    },
+    {
+      "course_id": "co-real-estate-law-practice-48",
+      "lessons": 5,
+      "sections": 47,
+      "reviewed_sections": 47,
+      "questions": 55,
+      "reviewed_questions": 55,
+      "missing_sections": [],
+      "missing_questions": [],
+      "evidence": [
+        "work-evidence/spanish-full-review-central.json",
+        "work-evidence/spanish-full-review-final-20261114.json"
+      ]
+    },
+    {
+      "course_id": "co-trust-accounts-recordkeeping-8",
+      "lessons": 4,
+      "sections": 35,
+      "reviewed_sections": 35,
+      "questions": 44,
+      "reviewed_questions": 44,
+      "missing_sections": [],
+      "missing_questions": [],
+      "evidence": [
+        "work-evidence/spanish-full-review-central.json",
+        "work-evidence/spanish-full-review-final-20261114.json"
+      ]
+    },
+    {
+      "course_id": "me-sales-agent-v1",
+      "lessons": 9,
+      "sections": 103,
+      "reviewed_sections": 103,
+      "questions": 99,
+      "reviewed_questions": 99,
+      "missing_sections": [],
+      "missing_questions": [],
+      "evidence": [
+        "work-evidence/spanish-full-review-final-20261114.json",
+        "work-evidence/spanish-full-review-root-me.json"
+      ]
+    },
+    {
+      "course_id": "mi-salesperson-prelicensure-40-v1",
+      "lessons": 10,
+      "sections": 152,
+      "reviewed_sections": 152,
+      "questions": 110,
+      "reviewed_questions": 110,
+      "missing_sections": [],
+      "missing_questions": [],
+      "evidence": [
+        "work-evidence/spanish-full-review-final-20261114.json",
+        "work-evidence/spanish-full-review-west.json"
+      ]
+    },
+    {
+      "course_id": "mo-real-estate-practice-24",
+      "lessons": 6,
+      "sections": 49,
+      "reviewed_sections": 49,
+      "questions": 66,
+      "reviewed_questions": 66,
+      "missing_sections": [],
+      "missing_questions": [],
+      "evidence": [
+        "work-evidence/spanish-full-review-central.json",
+        "work-evidence/spanish-full-review-final-20261114.json"
+      ]
+    },
+    {
+      "course_id": "mo-salesperson-preexam-48",
+      "lessons": 9,
+      "sections": 84,
+      "reviewed_sections": 84,
+      "questions": 99,
+      "reviewed_questions": 99,
+      "missing_sections": [],
+      "missing_questions": [],
+      "evidence": [
+        "work-evidence/spanish-full-review-central.json",
+        "work-evidence/spanish-full-review-final-20261114.json"
+      ]
+    },
+    {
+      "course_id": "nc-broker-prelicensing-75",
+      "lessons": 16,
+      "sections": 168,
+      "reviewed_sections": 168,
+      "questions": 176,
+      "reviewed_questions": 176,
+      "missing_sections": [],
+      "missing_questions": [],
+      "evidence": [
+        "work-evidence/spanish-full-review-central-nc-lessons.json",
+        "work-evidence/spanish-full-review-final-20261114.json",
+        "work-evidence/spanish-full-review-root-nc.json"
+      ]
+    },
+    {
+      "course_id": "ok-basic-prelicense-90",
+      "lessons": 16,
+      "sections": 178,
+      "reviewed_sections": 178,
+      "questions": 176,
+      "reviewed_questions": 176,
+      "missing_sections": [],
+      "missing_questions": [],
+      "evidence": [
+        "work-evidence/spanish-full-review-central.json",
+        "work-evidence/spanish-full-review-final-20261114.json"
+      ]
+    },
+    {
+      "course_id": "pa-real-estate-fundamentals-30",
+      "lessons": 6,
+      "sections": 57,
+      "reviewed_sections": 57,
+      "questions": 66,
+      "reviewed_questions": 66,
+      "missing_sections": [],
+      "missing_questions": [],
+      "evidence": [
+        "work-evidence/spanish-full-review-central.json",
+        "work-evidence/spanish-full-review-final-20261114.json"
+      ]
+    },
+    {
+      "course_id": "pa-real-estate-practice-45",
+      "lessons": 9,
+      "sections": 99,
+      "reviewed_sections": 99,
+      "questions": 99,
+      "reviewed_questions": 99,
+      "missing_sections": [],
+      "missing_questions": [],
+      "evidence": [
+        "work-evidence/spanish-full-review-central.json",
+        "work-evidence/spanish-full-review-final-20261114.json"
+      ]
+    },
+    {
+      "course_id": "tx-law-of-agency-30",
+      "lessons": 12,
+      "sections": 76,
+      "reviewed_sections": 76,
+      "questions": 116,
+      "reviewed_questions": 116,
+      "missing_sections": [],
+      "missing_questions": [],
+      "evidence": [
+        "work-evidence/spanish-full-review-final-20261114.json",
+        "work-evidence/spanish-full-review-texas.json"
+      ]
+    },
+    {
+      "course_id": "tx-law-of-contracts-30",
+      "lessons": 11,
+      "sections": 91,
+      "reviewed_sections": 91,
+      "questions": 162,
+      "reviewed_questions": 162,
+      "missing_sections": [],
+      "missing_questions": [],
+      "evidence": [
+        "work-evidence/spanish-full-review-central-tx-contracts.json",
+        "work-evidence/spanish-full-review-final-20261114.json",
+        "work-evidence/spanish-full-review-root-tx-contracts.json",
+        "work-evidence/spanish-full-review-texas-contracts08-09.json",
+        "work-evidence/spanish-full-review-texas-contracts10-tail-11.json",
+        "work-evidence/spanish-full-review-texas.json"
+      ]
+    },
+    {
+      "course_id": "tx-principles-real-estate-i-30",
+      "lessons": 9,
+      "sections": 55,
+      "reviewed_sections": 55,
+      "questions": 64,
+      "reviewed_questions": 64,
+      "missing_sections": [],
+      "missing_questions": [],
+      "evidence": [
+        "work-evidence/spanish-full-review-final-20261114.json",
+        "work-evidence/spanish-full-review-texas.json"
+      ]
+    },
+    {
+      "course_id": "tx-principles-real-estate-ii-30",
+      "lessons": 9,
+      "sections": 53,
+      "reviewed_sections": 53,
+      "questions": 88,
+      "reviewed_questions": 88,
+      "missing_sections": [],
+      "missing_questions": [],
+      "evidence": [
+        "work-evidence/spanish-full-review-final-20261114.json",
+        "work-evidence/spanish-full-review-texas.json"
+      ]
+    },
+    {
+      "course_id": "tx-promulgated-contract-forms-30",
+      "lessons": 9,
+      "sections": 73,
+      "reviewed_sections": 73,
+      "questions": 130,
+      "reviewed_questions": 130,
+      "missing_sections": [],
+      "missing_questions": [],
+      "evidence": [
+        "work-evidence/spanish-full-review-final-20261114.json",
+        "work-evidence/spanish-full-review-texas.json"
+      ]
+    },
+    {
+      "course_id": "tx-real-estate-finance-30",
+      "lessons": 10,
+      "sections": 84,
+      "reviewed_sections": 84,
+      "questions": 148,
+      "reviewed_questions": 148,
+      "missing_sections": [],
+      "missing_questions": [],
+      "evidence": [
+        "work-evidence/spanish-full-review-final-20261114.json",
+        "work-evidence/spanish-full-review-texas.json"
+      ]
+    },
+    {
+      "course_id": "va-principles-practices-v1",
+      "lessons": 15,
+      "sections": 376,
+      "reviewed_sections": 376,
+      "questions": 165,
+      "reviewed_questions": 165,
+      "missing_sections": [],
+      "missing_questions": [],
+      "evidence": [
+        "work-evidence/spanish-full-review-central-va-lessons.json",
+        "work-evidence/spanish-full-review-final-20261114.json",
+        "work-evidence/spanish-full-review-root-va.json"
+      ]
+    },
+    {
+      "course_id": "wa-real-estate-fundamentals-60",
+      "lessons": 12,
+      "sections": 115,
+      "reviewed_sections": 115,
+      "questions": 132,
+      "reviewed_questions": 132,
+      "missing_sections": [],
+      "missing_questions": [],
+      "evidence": [
+        "work-evidence/spanish-full-review-final-20261114.json",
+        "work-evidence/spanish-full-review-root-waf.json"
+      ]
+    },
+    {
+      "course_id": "wa-real-estate-practices-30",
+      "lessons": 6,
+      "sections": 64,
+      "reviewed_sections": 64,
+      "questions": 66,
+      "reviewed_questions": 66,
+      "missing_sections": [],
+      "missing_questions": [],
+      "evidence": [
+        "work-evidence/spanish-full-review-final-20261114.json",
+        "work-evidence/spanish-full-review-root.json"
+      ]
+    },
+    {
+      "course_id": "wi-salesperson",
+      "lessons": 13,
+      "sections": 128,
+      "reviewed_sections": 128,
+      "questions": 143,
+      "reviewed_questions": 143,
+      "missing_sections": [],
+      "missing_questions": [],
+      "evidence": [
+        "work-evidence/spanish-full-review-final-20261114.json",
+        "work-evidence/spanish-full-review-root-wi.json"
+      ]
+    }
+  ],
+  "human_linguistic_review": "OPEN",
+  "human_SME_review": "OPEN",
+  "learner_duration_validation": "OPEN"
+}

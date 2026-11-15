@@ -1,0 +1,718 @@
+{
+  "scope": "64 Oklahoma paragraph occurrences,62distinct exact parents: directly compared full English/current Spanish and each DOM text fragment; corrected and freshly inspected rendered output.",
+  "status": "PASS for inspected contexts; not a zero-error guarantee",
+  "contexts": [
+    {
+      "course_id": "ok-basic-prelicense-90",
+      "source": "A fixture is personal property attached to real estate so as to have become part of it. Once it is a fixture it conveys unless expressly excluded, and the buyer is entitled to find it there at closing.",
+      "target": "Un elemento incorporado permanentemente al inmueble es un bien mueble adherido al inmueble de tal forma que ha pasado a ser parte de él. Una vez incorporado de ese modo, se transmite con el inmueble salvo exclusión expresa, y el comprador tiene derecho a que esté allí en el cierre.",
+      "source_sha256": "d8b513f795d211f2b5dab343acea9c1b8fe9aa9dba219407ac41ef47a2adf394",
+      "target_sha256": "8200b8e157ed7a5d8ffe4b54f5132f028192dd3ad1d377c3ed61d49ab3ea8203",
+      "fragments": {
+        "A": "Un",
+        "fixture": "elemento incorporado permanentemente al inmueble",
+        "is personal property attached to real estate so as to have become part of it. Once it is a fixture it conveys unless expressly excluded, and the buyer is entitled to find it there at closing.": "es un bien mueble adherido al inmueble de tal forma que ha pasado a ser parte de él. Una vez incorporado de ese modo, se transmite con el inmueble salvo exclusión expresa, y el comprador tiene derecho a que esté allí en el cierre."
+      }
+    },
+    {
+      "course_id": "ok-basic-prelicense-90",
+      "source": "A trade fixture is an item a tenant attaches for the conduct of their business — a walk-in cooler, a hydraulic lift, shelving fitted to a shop floor. 60 O.S. 334 allows a tenant, during the term, to remove qualifying items affixed for trade, manufacture, ornament or domestic use if removal can occur without injury to the premises and the item has not become an integral part of them. An agreement permitting removal or an owner's permission can also matter. Do not assume every attached business item is removable or that leaving it behind automatically proves a gift. Review the lease, attachment, damage and timing; refer disputed ownership or removal rights to counsel.",
+      "target": "Una instalación comercial del arrendatario es un elemento que el arrendatario instala para desarrollar su negocio: una cámara frigorífica, un elevador hidráulico o estanterías fijadas en una tienda. 60 O.S. 334 permite al arrendatario, durante el plazo del arrendamiento, retirar determinados elementos incorporados para uso comercial, manufacturero, ornamental o doméstico, siempre que no se dañe el inmueble y que el elemento no se haya convertido en parte integrante de este. También pueden importar un acuerdo que permita retirarlo o el permiso del propietario. No suponga que todo elemento comercial incorporado puede retirarse ni que dejarlo allí demuestra automáticamente una donación. Revise el arrendamiento, la incorporación, los daños y el momento de la retirada; remita al abogado las disputas sobre la propiedad o el derecho a retirar elementos.",
+      "source_sha256": "6aa9c13ae1afa331944cd3cc5aee8983fadd775f373f237107f91cd16a230a70",
+      "target_sha256": "22410bc559045e62cae96aea7f5bd025f7d6b2f22557231b8bb751d9f60a460c",
+      "fragments": {
+        "A": "Una",
+        "trade fixture": "instalación comercial del arrendatario",
+        "is an item a tenant attaches for the conduct of their business — a walk-in cooler, a hydraulic lift, shelving fitted to a shop floor.": "es un elemento que el arrendatario instala para desarrollar su negocio: una cámara frigorífica, un elevador hidráulico o estanterías fijadas en una tienda."
+      }
+    },
+    {
+      "course_id": "ok-basic-prelicense-90",
+      "source": "The state licensing examination, provisional sales associate / sales associate",
+      "target": "El examen de licencia estatal para asociado de ventas provisional / asociado de ventas",
+      "source_sha256": "f83f465ce31285acb1ab12fae1e29af81de4e80e1bd5e965bc457fbfd3d1ced0",
+      "target_sha256": "7f3c2b38b1dab82ace56799de16ae3fbb8ccbd3dbb253a338bebff37c6515d8e",
+      "fragments": {
+        "The": "El examen",
+        "state licensing": "de licencia estatal",
+        "examination, provisional sales associate / sales associate": "para asociado de ventas provisional / asociado de ventas"
+      }
+    },
+    {
+      "course_id": "ok-basic-prelicense-90",
+      "source": "An instructor applicant's qualifying examination",
+      "target": "El examen de aptitud de un solicitante a instructor",
+      "source_sha256": "c19a99bcaf91ee7cccad8dd1108e6faa5c72fb1175d0d274aca68ad349657513",
+      "target_sha256": "22d0594b273b6cbf60fcf40fe947734a913841162fb544ea1ec4f7e01d55675f",
+      "fragments": {
+        "An": "El examen de aptitud de un solicitante a",
+        "instructor": "instructor",
+        "applicant's qualifying examination": ""
+      }
+    },
+    {
+      "course_id": "ok-basic-prelicense-90",
+      "source": "An estate is the degree, quantity, nature and extent of a person's interest in land. Freehold estates are of indefinite duration and involve ownership; leasehold estates are of determinable duration and involve possession without ownership — Module OK-16's business.",
+      "target": "Un derecho sobre el inmueble (estate) es el grado, la cantidad, la naturaleza y el alcance del interés de una persona en la tierra. Los derechos de propiedad (freehold) tienen duración indefinida e implican titularidad; los derechos de arrendamiento (leasehold) tienen duración determinable e implican posesión sin titularidad: el tema del Módulo OK-16.",
+      "source_sha256": "9550432528539288cc599b0333e667f24acdbdfd4ea0c0799bd55168f3abedf3",
+      "target_sha256": "f089bfbd7fcf3e638a574749037c4f9d8cb63d6b8777bc4af9b8b2928e23d963",
+      "fragments": {
+        "Freehold": "Los derechos de propiedad (freehold)",
+        "estates are of indefinite duration and involve ownership;": "tienen duración indefinida e implican titularidad;",
+        "leasehold": "los derechos de arrendamiento (leasehold)",
+        "estates are of determinable duration and involve possession without ownership — Module OK-16's business.": "tienen duración determinable e implican posesión sin titularidad: el tema del Módulo OK-16."
+      }
+    },
+    {
+      "course_id": "ok-basic-prelicense-90",
+      "source": "An easement is a right to use another's land for a particular purpose.",
+      "target": "Una servidumbre es un derecho a utilizar la tierra de otro para un propósito particular.",
+      "source_sha256": "5b769d74c5ded0879241f11969eb5cf1c67c6dc64f502820b34c08680046df6e",
+      "target_sha256": "fa700e8016c07ce41b65fed28cab798bd752969ff6b36bc93f46963b64fbb1d8",
+      "fragments": {
+        "An": "Una"
+      }
+    },
+    {
+      "course_id": "ok-basic-prelicense-90",
+      "source": "A licence is mere permission to enter for a purpose. It is personal, revocable at will, and does not run with the land. Permission to hunt on a section is a licence; a recorded right of access is an easement. They look identical on the ground and are entirely different in law, which is why the question is answered from the records.",
+      "target": "Una licencia es un simple permiso para entrar con un propósito. Es personal, revocable a voluntad, y no se transmite con el inmueble. El permiso para cazar en una sección de terreno es una licencia; un derecho de acceso inscrito es una servidumbre. Pueden parecer idénticos sobre el terreno, pero son totalmente distintos jurídicamente; por eso la respuesta se obtiene de los registros.",
+      "source_sha256": "37814deb9cad9d6e90f940906936f46e3e8ed91a8ebec49411a3042d6174882d",
+      "target_sha256": "5d2ad5caa939eb6b1e8a1951f5912010b61a398904bd9059d9dbb05879e1541a",
+      "fragments": {
+        "A": "Una",
+        ", and does not run with the land. Permission to hunt on a section is a licence; a recorded right of access is an easement. They look identical on the ground and are entirely different in law, which is why the question is answered from the records.": ", y no se transmite con el inmueble. El permiso para cazar en una sección de terreno es una licencia; un derecho de acceso inscrito es una servidumbre. Pueden parecer idénticos sobre el terreno, pero son totalmente distintos jurídicamente; por eso la respuesta se obtiene de los registros."
+      }
+    },
+    {
+      "course_id": "ok-basic-prelicense-90",
+      "source": "An encroachment is an unauthorised physical intrusion of an improvement onto adjoining land — a fence, a shed, an eave, a drive. It is not permission of any kind; it is a trespass that has been built.",
+      "target": "Una intrusión es una invasión física no autorizada del terreno colindante por una construcción: una cerca, un cobertizo, un alero o un acceso vehicular. No supone permiso alguno; es una ocupación no autorizada materializada en una construcción.",
+      "source_sha256": "93dfe6fc295d403de73d51689b6cdb75f2daa63624d47380e4778f00fe1a996a",
+      "target_sha256": "5d6c0bf3813be4a5de4d24a2243abf9d8d091a90b665641f4765440ef6f01966",
+      "fragments": {
+        "An": "Una",
+        "is an unauthorised physical intrusion of an improvement onto adjoining land — a fence, a shed, an eave, a drive. It is not permission of any kind; it is a trespass that has been built.": "es una invasión física no autorizada del terreno colindante por una construcción: una cerca, un cobertizo, un alero o un acceso vehicular. No supone permiso alguno; es una ocupación no autorizada materializada en una construcción."
+      }
+    },
+    {
+      "course_id": "ok-basic-prelicense-90",
+      "source": "A lien is a charge against property securing a debt or obligation. It affects title; it does not by itself dispossess. Every lien is classified twice:",
+      "target": "Un gravamen es un cargo contra bienes que garantizan una deuda u obligación. Afecta al título; no desposee por sí mismo. Cada gravamen se clasifica dos veces:",
+      "source_sha256": "126859b9f147df55ecc385d28984d4dd4b77940452ef00717b75dc363b406c10",
+      "target_sha256": "f244b67c3fd87292ab4da64b57b6e2cc6e2937faa7092672d3211e678c414799",
+      "fragments": {
+        "A": "Un"
+      }
+    },
+    {
+      "course_id": "ok-basic-prelicense-90",
+      "source": "A title search is an examination of the public records to determine the condition of title: who owns the property, what interests burden it, and whether anything in the record casts doubt on the owner's ability to convey what the contract says they will convey.",
+      "target": "Una búsqueda de título es un examen de los registros públicos para determinar la condición del título: quién es el propietario de la propiedad, qué intereses le pesan, y si cualquier cosa en el registro pone en duda la capacidad del propietario para transmitir lo que el contrato dice que van a transmitir.",
+      "source_sha256": "1e03ac1275faaa52a9e2a81fc3262a4a0955abf0f7469ac6f50b3c671bc446c7",
+      "target_sha256": "7e4dcc19217d807ee2922edc67454b87e07dbd639d62a92115c3819b8518215c",
+      "fragments": {
+        "A": "Una"
+      }
+    },
+    {
+      "course_id": "ok-basic-prelicense-90",
+      "source": "The chain of title is the successive record of conveyances from an accepted starting point to the present owner. Each link should connect: the grantee of one deed is the grantor of the next.",
+      "target": "La cadena de título es el registro sucesivo de los traspasos desde un punto de partida aceptado hasta el propietario actual. Cada enlace debe conectarse: el adquirente de una escritura es el otorgante de la siguiente.",
+      "source_sha256": "d9556a483c13c9f126c27e81df58aad4af1b157c5d61a7968d0e237bb52675a6",
+      "target_sha256": "631da4fca7e3988d7e7cb60a88923b40ed42563ec2fab00d1f800d7623d55acc",
+      "fragments": {
+        "The": "La"
+      }
+    },
+    {
+      "course_id": "ok-basic-prelicense-90",
+      "source": "A gap in the chain — a missing conveyance, an estate that never went through probate, a name that does not match, a signature that is absent — is a cloud, and clouds are resolved before closing rather than explained away at it.",
+      "target": "Una brecha en la cadena —una transmisión faltante, una herencia que nunca pasó por el procedimiento sucesorio, un nombre que no coincide o una firma ausente— constituye un defecto que pone en duda el título, y estos defectos se resuelven antes del cierre, en vez de intentar justificarlos durante él.",
+      "source_sha256": "df9fa9450fbabcc952ee3c308c94556b6faaa1426e67aec414ab5c14d05d2510",
+      "target_sha256": "fa35076c11af840911d75b782f0445c97efa212d80b9d35c9d733785fd229a16",
+      "fragments": {
+        "A": "Una",
+        "in the chain — a missing conveyance, an estate that never went through probate, a name that does not match, a signature that is absent — is a": "en la cadena —una transmisión faltante, una herencia que nunca pasó por el procedimiento sucesorio, un nombre que no coincide o una firma ausente— constituye un",
+        "cloud": "defecto que pone en duda el título",
+        ", and clouds are resolved before closing rather than explained away at it.": ", y estos defectos se resuelven antes del cierre, en vez de intentar justificarlos durante él."
+      }
+    },
+    {
+      "course_id": "ok-basic-prelicense-90",
+      "source": "An abstract of title is a compiled history of the recorded instruments affecting a parcel. Oklahoma practice retains a real role for abstracts, and an abstract that is brought current and examined by an attorney produces an attorney's title opinion. Title insurance is the other route, and the two coexist. Which form of title evidence a transaction uses is settled in the contract, which is one more reason the contract is read before it is signed.",
+      "target": "Un resumen del título es un historial recopilado de los instrumentos inscritos que afectan a una parcela. Los resúmenes del título siguen teniendo una función importante en la práctica de Oklahoma. Cuando se actualizan y un abogado los examina, dan lugar a una opinión jurídica sobre el título. El seguro de título es la otra ruta, y los dos coexisten. La forma de acreditar el título que se utilizará en la transacción se determina en el contrato, que es una razón más por la que el contrato se lee antes de su firma.",
+      "source_sha256": "7df08717b9dd57ade75af960a52f3ecf5526f0c4e9d139f4c1f3cb65c4179501",
+      "target_sha256": "8f6350ff7c91103ce4a2ed47fb8754a8bdb604dc85187cba5bcd6af1ebde575d",
+      "fragments": {
+        "is a compiled history of the recorded instruments affecting a parcel. Oklahoma practice retains a real role for abstracts, and an abstract that is brought current and examined by an attorney produces an": "es un historial recopilado de los instrumentos inscritos que afectan a una parcela. Los resúmenes del título siguen teniendo una función importante en la práctica de Oklahoma. Cuando se actualizan y un abogado los examina, dan lugar a una",
+        "attorney's title opinion": "opinión jurídica sobre el título",
+        "Which form of title evidence a transaction uses is settled in the contract": "La forma de acreditar el título que se utilizará en la transacción se determina en el contrato"
+      }
+    },
+    {
+      "course_id": "ok-basic-prelicense-90",
+      "source": "A title commitment is the title company's conditional promise to insure. It is not a title opinion, not a coverage summary, and not a guarantee that anything is clear. It says: on these facts, if these requirements are satisfied, we will issue a policy subject to these exceptions.",
+      "target": "Un compromiso de seguro de título es la promesa condicional de una compañía de títulos de emitir un seguro. No se trata de una opinión sobre el título, no de un resumen de la cobertura y no de una garantía de que todo esté claro. Dice: con estos datos, si se satisfacen estos requisitos, emitiremos una póliza sujeta a estas excepciones.",
+      "source_sha256": "a2ad569e3bcedb7e44112308f30a0112781c4bbde99c58bf054bb3c528ddda86",
+      "target_sha256": "3c4622b05d27bdbaa9c66959834750b3862a06d2d33bea544e207a838ac6c46a",
+      "fragments": {
+        "A": "Un",
+        "title commitment": "compromiso de seguro de título",
+        "is the title company's": "es la",
+        "conditional promise to insure": "promesa condicional de una compañía de títulos de emitir un seguro"
+      }
+    },
+    {
+      "course_id": "ok-basic-prelicense-90",
+      "source": "An owner's policy insures the owner against loss from covered title defects existing at the date of policy — forged instruments, undisclosed heirs, incompetent grantors, recording errors, defective deeds, undisclosed liens. Coverage is retrospective: it insures the past, not future events.",
+      "target": "Una póliza del propietario asegura al propietario frente a pérdidas por defectos del título cubiertos existentes en la fecha de la póliza —instrumentos falsificados, herederos no revelados, otorgantes sin capacidad jurídica, errores de inscripción, escrituras defectuosas o gravámenes no revelados—. La cobertura es retrospectiva: asegura el pasado, no los acontecimientos futuros.",
+      "source_sha256": "4c6d2f0ebf04b86406265d499ced8045b22a88448b7f8b93d49129644369d439",
+      "target_sha256": "7970b2988acdf866776e669fe5f317c4c2cf42bc328bae24508a59fd0a59cc9c",
+      "fragments": {
+        "An": "Una",
+        "insures the owner against loss from covered title defects": "asegura al propietario frente a pérdidas por defectos del título cubiertos",
+        "existing at the date of policy": "existentes en la fecha de la póliza",
+        "— forged instruments, undisclosed heirs, incompetent grantors, recording errors, defective deeds, undisclosed liens. Coverage is": "—instrumentos falsificados, herederos no revelados, otorgantes sin capacidad jurídica, errores de inscripción, escrituras defectuosas o gravámenes no revelados—. La cobertura es"
+      }
+    },
+    {
+      "course_id": "ok-basic-prelicense-90",
+      "source": "A lender's policy insures the lender's lien position in the amount of the loan and decreases as the loan is repaid. A lender's policy does not protect the buyer, and buyers regularly believe that it does. Say so, plainly, every time.",
+      "target": "Una póliza del prestamista asegura al prestamista su prioridad del gravamen por el importe del préstamo, y la cobertura disminuye a medida que se amortiza. La póliza del prestamista no protege al comprador, y los compradores regularmente creen que lo hace. Dilo, claramente, cada vez.",
+      "source_sha256": "fa591b203ec865ce0ac599945d83dd5120cc5df2a021281af38adedcd85a855a",
+      "target_sha256": "b4e4e7d46afbf3a03d38ee8cf8a8259a27979951a27e0ce613173ccc8d04c1ec",
+      "fragments": {
+        "A": "Una",
+        "in the amount of the loan and decreases as the loan is repaid.": "por el importe del préstamo, y la cobertura disminuye a medida que se amortiza.",
+        "A lender's policy does not protect the buyer": "La póliza del prestamista no protege al comprador"
+      }
+    },
+    {
+      "course_id": "ok-basic-prelicense-90",
+      "source": "An unreleased mortgage long since paid. Payment alone does not clear the record.",
+      "target": "Una hipoteca sin cancelación inscrita pagada desde hace mucho tiempo. El pago por sí solo no cancela la inscripción.",
+      "source_sha256": "2de459ef85a5d697f917ba951f96de8a5a2f2bc06d058df62aca82bd3a6fb663",
+      "target_sha256": "823f8feed6a94080732c434011d79b50cd8fbb9488842df6b1851fd8f141e404",
+      "fragments": {
+        "An": "Una",
+        "unreleased mortgage": "hipoteca sin cancelación inscrita"
+      }
+    },
+    {
+      "course_id": "ok-basic-prelicense-90",
+      "source": "A missing signature — a spouse, a co-owner, a person whose interest nobody noticed.",
+      "target": "Una firma faltante — un cónyuge, un copropietario, una persona cuyo interés nadie haya notado.",
+      "source_sha256": "b85a179c7d7de2f8b168a1b669c5fa24ec9a6004ad6c30737a6205348a5ab00b",
+      "target_sha256": "843c915af9ca3dcd7b03f31216c355e12146bc56d55209a79d84aef5f2c40a80",
+      "fragments": {
+        "A": "Una",
+        "missing signature": "firma faltante"
+      }
+    },
+    {
+      "course_id": "ok-basic-prelicense-90",
+      "source": "A name discrepancy — the grantee took as one name and conveyed as another.",
+      "target": "Una discrepancia de nombre —el adquirente recibió la propiedad con un nombre y la transmitió con otro.",
+      "source_sha256": "ee261d0df9bebc958bbcb70e9eed7d33568fd3294b5fc967d8dff2d51cee5d80",
+      "target_sha256": "506622a2fafde62a265e56cab7177c8c4d7db8ba2d0bd08f0ac25dd731b4218d",
+      "fragments": {
+        "A": "Una",
+        "— the grantee took as one name and conveyed as another.": "—el adquirente recibió la propiedad con un nombre y la transmitió con otro."
+      }
+    },
+    {
+      "course_id": "ok-basic-prelicense-90",
+      "source": "An estate that never went through probate, so the heirs' interests were never established.",
+      "target": "Una herencia que nunca pasó por un procedimiento sucesorio, por lo que los intereses de los herederos nunca se establecieron.",
+      "source_sha256": "a29b72d0730c8fae4f7fc2c7b52ebe0be4cb2fbcdbb2fa6463a82f008c96e6f7",
+      "target_sha256": "1159b20966fbdd45ebec2190dec50a728035dccf0c7879c2d74cc19ceb1c8ee1",
+      "fragments": {
+        "An": "Una"
+      }
+    },
+    {
+      "course_id": "ok-basic-prelicense-90",
+      "source": "A judgment against someone with the seller's name.",
+      "target": "Una sentencia contra alguien con el nombre del vendedor.",
+      "source_sha256": "14d0a52bc6285b72011336fd8b6a1539391fc48f686c298f23842eaaea0b3b2d",
+      "target_sha256": "18fb4b0d9d69f01dafadd290cfbb5e2eec282911e946c52a289bdd3765d4ea71",
+      "fragments": {
+        "A": "Una"
+      }
+    },
+    {
+      "course_id": "ok-basic-prelicense-90",
+      "source": "A defective legal description in an earlier deed.",
+      "target": "Una descripción legal deficiente en una escritura anterior.",
+      "source_sha256": "1106e1c65ded76eaced9fd1e401725a2528e8c128c010b8e4525af278966ae61",
+      "target_sha256": "aa93ac09ab3b0b3d71826da59a08cf170ad3f4767a57dbf86f5846c13a955a1a",
+      "fragments": {
+        "A": "Una",
+        "in an earlier deed.": "en una escritura anterior."
+      }
+    },
+    {
+      "course_id": "ok-basic-prelicense-90",
+      "source": "An unreleased oil and gas lease or a severed mineral interest whose owner cannot be located.",
+      "target": "Un arrendamiento de derechos de petróleo y gas sin cancelación inscrita o un derecho minero separado de la propiedad superficial cuyo propietario no puede ser localizado.",
+      "source_sha256": "e2be0a06fc4622493282578b59d4599f1d97023056af9e9ca7a2234035ca129f",
+      "target_sha256": "ff084b0f7d1ef67540c160f8b3aea9d5430857e4619a4761d9a9756eb733bb03",
+      "fragments": {
+        "An": "Un",
+        "unreleased oil and gas lease": "arrendamiento de derechos de petróleo y gas sin cancelación inscrita",
+        "or a": "o un",
+        "severed mineral interest": "derecho minero separado de la propiedad superficial"
+      }
+    },
+    {
+      "course_id": "ok-basic-prelicense-90",
+      "source": "A release or satisfaction, recorded.",
+      "target": "Una cancelación del gravamen o constancia de pago de la deuda, inscrita.",
+      "source_sha256": "49333ead3bcd48aabf5aff1d0910c1f73e45363c5c4d2ef09ae089d4c0154cdc",
+      "target_sha256": "ff9b16572efed89dab7747ff19c6e20290a14cae9a74ccea6de6d1e4a9dc7aa6",
+      "fragments": {
+        "A": "Una",
+        "release": "cancelación del gravamen",
+        "satisfaction": "constancia de pago de la deuda",
+        ", recorded.": ", inscrita."
+      }
+    },
+    {
+      "course_id": "ok-basic-prelicense-90",
+      "source": "A corrective deed, to fix a description or a name.",
+      "target": "Una escritura correctiva, para corregir una descripción o un nombre.",
+      "source_sha256": "bcb23aa9546a87b2919877b3e233ab4df3ffece36a8967b1f69492760b84aa02",
+      "target_sha256": "7d1a7eb2e356a6e247742ba800822143c6f732a9af4cbdf8e51cb433b1a02428",
+      "fragments": {
+        "A": "Una",
+        ", to fix a description or a name.": ", para corregir una descripción o un nombre."
+      }
+    },
+    {
+      "course_id": "ok-basic-prelicense-90",
+      "source": "A quit claim deed, to convey away a possible interest.",
+      "target": "Una escritura de cesión de derechos sin garantías, para transmitir un posible interés.",
+      "source_sha256": "4ea841320e57a118eb5b6ed76659877dca980067babfa989e8ccea60d54a9b83",
+      "target_sha256": "d282304811d59aa550421cc5e8e04073607420264659233cd03fb9dd2b662aba",
+      "fragments": {
+        "A": "Una"
+      }
+    },
+    {
+      "course_id": "ok-basic-prelicense-90",
+      "source": "An affidavit — of identity, of heirship, of scrivener's error — where the title company will",
+      "target": "Una declaración jurada — sobre identidad, herederos o error de transcripción— cuando la compañía de títulos",
+      "source_sha256": "06f9ee7ebb56138ef5a37202528586c905a9a41653a7bd46f42de80328bedff0",
+      "target_sha256": "68f633549470af269dbe66d6340608441ce3351b7c6a579aee03780c522dffa2",
+      "fragments": {
+        "An": "Una",
+        "affidavit": "declaración jurada"
+      }
+    },
+    {
+      "course_id": "ok-basic-prelicense-90",
+      "source": "A probate proceeding, where an estate must be administered.",
+      "target": "Un procedimiento sucesorio, donde se debe administrar un patrimonio.",
+      "source_sha256": "699ab881161ea72e3b286b6b2c9a62d5288f3322065e42f5eeee08462bf2f7f3",
+      "target_sha256": "7a9ed4e56000bbea4e53f84fac2450045085b6d4a380dda1e13fd837f9840401",
+      "fragments": {
+        "A": "Un"
+      }
+    },
+    {
+      "course_id": "ok-basic-prelicense-90",
+      "source": "A suit to quiet title, where nothing else will do. It is a lawsuit, it takes months, and a closing",
+      "target": "Una acción judicial para aclarar la titularidad (quiet title), cuando no hay otra solución. Es un proceso judicial, tarda meses, y un cierre",
+      "source_sha256": "731575e47bbcf72d43b4d68b768ee496d2ba37463f71924db60fb37a9a624df3",
+      "target_sha256": "12610cf9b50cf3c3def2d1688c0cf2092e775372482218b1b4bbc87c6c062b3c",
+      "fragments": {
+        "A": "Una",
+        ", where nothing else will do. It is a lawsuit, it takes months, and a closing": ", cuando no hay otra solución. Es un proceso judicial, tarda meses, y un cierre"
+      }
+    },
+    {
+      "course_id": "ok-basic-prelicense-90",
+      "source": "The comprehensive plan is a municipality's long-range policy document. Zoning is meant to implement it, dividing a jurisdiction into districts and regulating use and dimension — setbacks, height, lot coverage, density, parking.",
+      "target": "El plan integral es el documento de política de largo alcance de un municipio. La zonificación busca aplicarlo dividiendo una jurisdicción en distritos y regulando el uso y las dimensiones — distancias mínimas a los linderos, altura, ocupación del lote, densidad y estacionamiento.",
+      "source_sha256": "39ef18cf7f75b1bc63d509ebe2fe71e7757d1330a982f0403ab8300f0c433141",
+      "target_sha256": "1af57bdda49e78e970ec3895ef2867a835360a215b555988a6076554e3de482c",
+      "fragments": {
+        "The": "El",
+        "Zoning": "La zonificación",
+        "is meant to implement it, dividing a jurisdiction into districts and regulating": "busca aplicarlo dividiendo una jurisdicción en distritos y regulando el",
+        "use": "uso",
+        "and": "y las",
+        "dimension": "dimensiones"
+      }
+    },
+    {
+      "course_id": "ok-basic-prelicense-90",
+      "source": "A deed is the instrument that conveys an interest in real estate. To be valid it needs:",
+      "target": "Una escritura es el instrumento que transmite un derecho sobre un inmueble. Para ser válida necesita:",
+      "source_sha256": "f7652cc33ad0e2340bc95da6ebf858ce1e0407f6206a34e7f3ef8298d1da2920",
+      "target_sha256": "3c99053f9e60a3377eedc1fdd476d866c320316f9fed091d82aaf69f26d3ad65",
+      "fragments": {
+        "A": "Una",
+        "is the instrument that conveys an interest in real estate. To be valid it needs:": "es el instrumento que transmite un derecho sobre un inmueble. Para ser válida necesita:"
+      }
+    },
+    {
+      "course_id": "ok-basic-prelicense-90",
+      "source": "A grantor with legal capacity;",
+      "target": "Un otorgante con capacidad jurídica;",
+      "source_sha256": "34ac621f49b4bbab1e798b90061345ab15f26dafef06d76a851f2be5eef372f6",
+      "target_sha256": "794a59aa07e0cda7a08018508cc6b5b9926c99c429d249f74f3538049499d2aa",
+      "fragments": {
+        "A": "Un"
+      }
+    },
+    {
+      "course_id": "ok-basic-prelicense-90",
+      "source": "A grantee identified with certainty;",
+      "target": "Un adquirente identificado con certeza;",
+      "source_sha256": "5dd77cdd9310ede4a4c697363536a6976bfd6aeefcacae60ff6fe33253c394bf",
+      "target_sha256": "41eb176dc9652a15f420a56a9d4f606be06683fed637a2369596048170f7aa81",
+      "fragments": {
+        "A": "Un"
+      }
+    },
+    {
+      "course_id": "ok-basic-prelicense-90",
+      "source": "An adequate legal description;",
+      "target": "Una descripción jurídica adecuada;",
+      "source_sha256": "7ec4c499d087bd6c05ea542122c2f2da4a6cfb3fa6e989a2b9c5fb22d191aa28",
+      "target_sha256": "845de2cc09ae8c99475da6f295e922aab4bba952baa1341882a1582e249b56c2",
+      "fragments": {
+        "An": "Una"
+      }
+    },
+    {
+      "course_id": "ok-basic-prelicense-90",
+      "source": "The grantor's signature, and in practice acknowledgement before a notary so the instrument may",
+      "target": "La firma del otorgante, y en la práctica reconocimiento de la firma ante un notario para que el instrumento pueda",
+      "source_sha256": "0e61712f7513cbbc668023ec39e70d8d4e8007719ebe5a979968d6c3ad9e49ce",
+      "target_sha256": "243b902d8459599f22cc9f89521c709eae15c609d93f440d5d04f2a733bad9ae",
+      "fragments": {
+        "The": "La",
+        ", and in practice": ", y en la práctica"
+      }
+    },
+    {
+      "course_id": "ok-basic-prelicense-90",
+      "source": "A net arrangement is one in which the owner receives a fixed net amount and the broker keeps whatever is above it.",
+      "target": "Un acuerdo de remuneración neta es aquel en que el propietario recibe una suma neta fija y el corredor conserva lo que exceda de esa suma.",
+      "source_sha256": "67d41aec9b219ad89cd963c317ceca06036079ef00453c27b14713e511b6e12c",
+      "target_sha256": "107ee374211bd1223d363179793c164428ef31437b1f2f2818330d417b455bee",
+      "fragments": {
+        "A": "Un acuerdo de remuneración",
+        "net": "neta",
+        "arrangement is one in which the owner receives a fixed net amount and the broker keeps whatever is above it.": "es aquel en que el propietario recibe una suma neta fija y el corredor conserva lo que exceda de esa suma."
+      }
+    },
+    {
+      "course_id": "ok-basic-prelicense-90",
+      "source": "A credit to a party is money in their favour. A debit is money against them.",
+      "target": "Un crédito a una parte es dinero a su favor. Un débito es dinero a su cargo.",
+      "source_sha256": "bb55e254a7df2bba53d88905e29e0416595fcecad7009b17f07e22cb0b1b09c8",
+      "target_sha256": "a0d6219f7b2694afa5191a77780da050a4b75d1722ec9cc0866ec12260103181",
+      "fragments": {
+        "A": "Un",
+        "credit": "crédito",
+        "to a party is money in their favour. A": "a una parte es dinero a su favor. Un",
+        "is money against them.": "es dinero a su cargo."
+      }
+    },
+    {
+      "course_id": "ok-basic-prelicense-90",
+      "source": "The mutual promises: the buyer promises to pay, the seller promises to convey. Earnest money is not the consideration.",
+      "target": "Las promesas mutuas: el comprador promete pagar, el vendedor promete transmitir. El depósito de buena fe no es la contraprestación.",
+      "source_sha256": "c62f2332819485b89723bd88879a7ea947a40a28ad79a8f8d70ce5bad57ef9e5",
+      "target_sha256": "5283566506815be4f1513803d5dffca8d887c2310f634293ed58854d2c032beb",
+      "fragments": {
+        "The": "Las",
+        "Earnest money is not the consideration.": "El depósito de buena fe no es la contraprestación."
+      }
+    },
+    {
+      "course_id": "ok-basic-prelicense-90",
+      "source": "A definite proposal, communicated to the offeree, showing an intention to be bound on acceptance.",
+      "target": "Una propuesta concreta, comunicada a su destinatario, que muestra la intención de quedar obligado si se acepta.",
+      "source_sha256": "5af49eb768e1ababae1e0008d7c69d0bfc3321c9fc5c2fed34abd8b6640adeb5",
+      "target_sha256": "b1b91b1f657909ead02a388255478472c52d908a81c2b4719dc21da830688b25",
+      "fragments": {
+        "A": "Una",
+        "definite proposal, communicated to the offeree, showing an intention to be bound on acceptance.": "propuesta concreta, comunicada a su destinatario, que muestra la intención de quedar obligado si se acepta."
+      }
+    },
+    {
+      "course_id": "ok-basic-prelicense-90",
+      "source": "An offer or counter-offer proposes terms before there is a contract.",
+      "target": "Una oferta o contraoferta propone condiciones antes de que exista un contrato.",
+      "source_sha256": "110f04d5e57780b9640cc60824cc4a448fd8199db3076d1b9aab8516125bc53b",
+      "target_sha256": "b29ac171b9fdb75b7ae95274f8d1b8d7a648dc2e27178c19253554e69b95b36a",
+      "fragments": {
+        "An": "Una",
+        "proposes terms": "propone condiciones",
+        "before": "antes de que",
+        "there is a contract.": "exista un contrato."
+      }
+    },
+    {
+      "course_id": "ok-basic-prelicense-90",
+      "source": "An amendment changes a contract that already exists and requires the agreement of all parties.",
+      "target": "Una enmienda cambia un contrato que ya existe y requiere el acuerdo de todas las partes.",
+      "source_sha256": "96e4d5fa38badf30105a53638e34cdd237370914c064d2882f0c14fede92b0ed",
+      "target_sha256": "adf0c231d04ea25c2217de87a7446002ce10c29d974e536dca53e6a0837ec1e2",
+      "fragments": {
+        "An": "Una"
+      }
+    },
+    {
+      "course_id": "ok-basic-prelicense-90",
+      "source": "A notice exercises a right the contract already gives — removing a contingency, giving notice of",
+      "target": "Una notificación permite ejercer un derecho que el contrato ya concede —eliminar una condición contractual, notificar",
+      "source_sha256": "bcc1f9361e52be07ee02a79b4b6fb7285b98147bf2b09767cbbfc040ad09ac1f",
+      "target_sha256": "cd64dcbc51b9ef638ce3305b3d77bc67b9046c369c580ba654ddb6e65c806c28",
+      "fragments": {
+        "A": "Una",
+        "exercises a right the contract": "permite ejercer un derecho que el contrato",
+        "already gives": "ya concede",
+        "— removing a contingency, giving notice of": "—eliminar una condición contractual, notificar"
+      }
+    },
+    {
+      "course_id": "ok-basic-prelicense-90",
+      "source": "A contingency is a condition that must be satisfied or waived before a party is obliged to perform. It is not a general right to change one's mind.",
+      "target": "Una contingencia contractual es una condición que debe cumplirse o a la que debe renunciarse antes de que una parte quede obligada a cumplir. No es un derecho general a cambiar de opinión.",
+      "source_sha256": "197a8b7305ec0a02afb50011cc92c6852073658a5a601745f2570748f9c76eb6",
+      "target_sha256": "3191fcca030920cd3017530034032ccaada8c1d0be6e608b27d97252ad357af7",
+      "fragments": {
+        "A": "Una",
+        "contingency": "contingencia contractual",
+        "is a condition that must be satisfied or waived before a party is obliged to perform.": "es una condición que debe cumplirse o a la que debe renunciarse antes de que una parte quede obligada a cumplir.",
+        "It is not a general right to change one's mind.": "No es un derecho general a cambiar de opinión."
+      }
+    },
+    {
+      "course_id": "ok-basic-prelicense-90",
+      "source": "§ 858-353(A)(4) is the controlling provision, and it is a closed list. The only confidential information in an Oklahoma transaction is:",
+      "target": "§ 858-353(A)(4) es la disposición de control, y es una lista cerrada. La única información confidencial en una transacción de Oklahoma es:",
+      "source_sha256": "24333add7ffc56d1a7c01c091149cb569dd9ceb97fc411d6161318e505124225",
+      "target_sha256": "e8ee17eccec1244460c7d66d7203b82032c03cbd3e81e0cf05018bfbbf99b483",
+      "fragments": {
+        "The": "La",
+        "only": "única",
+        "confidential information in an Oklahoma transaction is:": "información confidencial en una transacción de Oklahoma es:"
+      }
+    },
+    {
+      "course_id": "ok-basic-prelicense-90",
+      "source": "The promissory note is the borrower's promise to repay — the debt. Amount, rate, term, payment, consequences of default.",
+      "target": "El pagaré es la promesa del prestatario de pagar — la deuda. Cantidad, tasa, plazo, pago, consecuencias de incumplimiento.",
+      "source_sha256": "77fb616e3148055a3b9978977e2eca8afa3da4e94941cca64be8f9a014e793b4",
+      "target_sha256": "6dad200057df186a98a890338a84270a9d74f929f393416a792126006d7f1111",
+      "fragments": {
+        "The": "El"
+      }
+    },
+    {
+      "course_id": "ok-basic-prelicense-90",
+      "source": "The security instrument pledges the property as security — the lien. Without it the lender has a promise and no property; without the note, a lien securing nothing.",
+      "target": "El instrumento de garantía afecta la propiedad como garantía — el gravamen. Sin él, el prestamista tiene una promesa sin garantía inmobiliaria; sin el pagaré, un gravamen que no garantiza ninguna deuda.",
+      "source_sha256": "b638297a884ed9df9e6427e38db1b8c7d641a4eaf4788c9d0762e6d5cde24ef0",
+      "target_sha256": "caca1b8224f1970d02ad38740db9b1ee62968f1a9b9417a044efdfee90e6b782",
+      "fragments": {
+        "The": "El",
+        "pledges the property as security —": "afecta la propiedad como garantía —"
+      }
+    },
+    {
+      "course_id": "ok-basic-prelicense-90",
+      "source": "Adjustable rate. An index plus a margin, adjusting on a schedule, with caps on the periodic adjustment and on the lifetime rate.",
+      "target": "Tasa ajustable. Un índice más un margen, con ajustes según un calendario y límites para cada ajuste periódico y para la tasa durante toda la vigencia del préstamo .",
+      "source_sha256": "a25318934c3130ca66eed5565c9c1599397563ec58ff9755b6aa212fd60d20e0",
+      "target_sha256": "8326669aff4f44aa3b674c1205b43d61df71ab28ef0479b1313d3680d23e3910",
+      "fragments": {
+        ", adjusting on a schedule, with": ", con ajustes según un calendario y",
+        "on the periodic adjustment and on the": "para cada ajuste periódico y para la tasa durante toda la",
+        "lifetime": "vigencia del préstamo",
+        "rate.": "."
+      }
+    },
+    {
+      "course_id": "ok-basic-prelicense-90",
+      "source": "The primary market is where loans are made. The secondary market is where they are bought and sold after origination.",
+      "target": "El mercado primario es donde se conceden los préstamos. El mercado secundario es donde se compran y venden después de la originación.",
+      "source_sha256": "866019aefe7caf10b89773093c2dc388aced79abccb76930768dd442c228aab3",
+      "target_sha256": "08824d4ad396bc747651f969af0b21c63ba2f61f392b87e432942d1d89c304c1",
+      "fragments": {
+        "The": "El",
+        "is where loans are made. The": "es donde se conceden los préstamos. El"
+      }
+    },
+    {
+      "course_id": "ok-basic-prelicense-90",
+      "source": "The Real Estate Settlement Procedures Act governs settlement services on most federally related residential mortgage loans. Two prohibitions matter directly:",
+      "target": "La Ley de procedimientos de liquidación de bienes inmuebles regula los servicios de liquidación en la mayoría de los préstamos hipotecarios residenciales relacionados federalmente. Dos prohibiciones importan directamente:",
+      "source_sha256": "45c46f8ef8369eb7adca4392c59de040990b670481cd16dfeb6cad675643e1cf",
+      "target_sha256": "04a3771b4927b36acb7b5feed0d40209e3c06ab76e5d7a781a59161578e921ee",
+      "fragments": {
+        "The": "La"
+      }
+    },
+    {
+      "course_id": "ok-basic-prelicense-90",
+      "source": "The TILA-RESPA Integrated Disclosure rule requires:",
+      "target": "La regla de divulgación integrada TILA-RESPA exige:",
+      "source_sha256": "ba744352fc1cac129733ff6f3ac33c3c6214e88d4df6d0baa0a5cf413f9f3ac3",
+      "target_sha256": "fd5feb6c568980e5d7ef4c9c5bb3c9c19ecf1bfbfa7c14dc86b17abdb88e0da6",
+      "fragments": {
+        "The": "La regla de",
+        "TILA-RESPA Integrated Disclosure": "divulgación integrada TILA-RESPA",
+        "rule requires:": "exige:"
+      }
+    },
+    {
+      "course_id": "ok-basic-prelicense-90",
+      "source": "The Loan Estimate, delivered within three business days of application; and",
+      "target": "La Estimación del Préstamo, entregada dentro de los tres días hábiles desde la solicitud; y",
+      "source_sha256": "6befadea11a8427b5dfa5aa2a68ff0a0c08c0c418f7fb04ccc7c26f651e3ddc7",
+      "target_sha256": "531e71994ba6feb45903324e239f21ed8736f1f5394cde4d06c12e7f7aaa51cb",
+      "fragments": {
+        "The": "La",
+        "Loan Estimate": "Estimación del Préstamo",
+        ", delivered within": ", entregada dentro de los"
+      }
+    },
+    {
+      "course_id": "ok-basic-prelicense-90",
+      "source": "The Closing Disclosure, which the consumer must receive **at least three business days before",
+      "target": "La Declaración de Cierre, que el consumidor debe recibir ** al menos tres días hábiles antes",
+      "source_sha256": "60a536cb565d607f8c77d494f954814f97a5e3793612a12e3d1d3fe5a730b63e",
+      "target_sha256": "619175d34916ae25b1cd812a0f66d31a47d38446252fe4b047bf353f4f12eeba",
+      "fragments": {
+        "The": "La"
+      }
+    },
+    {
+      "course_id": "ok-basic-prelicense-90",
+      "source": "A complaint may be filed with HUD, generally within one year of the alleged act, or a civil action brought in federal court within two years. Remedies include actual and punitive damages, injunctive relief, civil penalties and attorney's fees. The Department of Justice may bring a pattern-or-practice action.",
+      "target": "Se puede presentar una denuncia ante HUD, en general dentro de un año desde el acto denunciado, o interponer una acción civil ante un tribunal federal dentro de dos años. Los recursos incluyen: indemnizaciones compensatorias y punitivas, órdenes judiciales, sanciones civiles y honorarios de abogados. El Departamento de Justicia puede presentar una demanda por un patrón o una práctica de discriminación.",
+      "source_sha256": "42cfac899a72a0e1737d5d6d190788dcc85dc62666252121ea0d4ba11fe947ab",
+      "target_sha256": "2e3a4a31220e69e6245e32f2e00fe8dc642d7d196bfe0413dbb3d8f9aec06dee",
+      "fragments": {
+        "of the alleged act, or a": "desde el acto denunciado, o interponer una",
+        "brought in federal court within": "ante un tribunal federal dentro de",
+        "actual and punitive damages, injunctive relief, civil penalties and attorney's fees.": "indemnizaciones compensatorias y punitivas, órdenes judiciales, sanciones civiles y honorarios de abogados.",
+        "The": "El",
+        "may bring a pattern-or-practice action.": "puede presentar una demanda por un patrón o una práctica de discriminación."
+      }
+    },
+    {
+      "course_id": "ok-basic-prelicense-90",
+      "source": "The Equal Credit Opportunity Act prohibits discrimination in credit on the basis of race, colour, religion, national origin, sex, marital status, age (provided the applicant can contract), because income derives from a public assistance programme, or because the applicant exercised a right under the Consumer Credit Protection Act.",
+      "target": "La Ley de igualdad de oportunidades de crédito prohíbe la discriminación en el crédito por motivos de raza, color, religión, origen nacional, sexo, estado civil, edad (siempre que el solicitante pueda contratar), porque los ingresos se derivan de un programa de asistencia pública, o porque el solicitante ejerció un derecho en virtud de la Ley de protección del crédito al consumo.",
+      "source_sha256": "b7e021511ef87dc2a124a7944ff2a0f9fcf803b6a7d8d2312e894758f556dd7e",
+      "target_sha256": "1c8d89ad107da7e8db38d4784031801c60a22de2ed3095706fa190eabea09af6",
+      "fragments": {
+        "The": "La",
+        "prohibits discrimination in": "prohíbe la discriminación en el",
+        "credit": "crédito",
+        "public assistance programme": "programa de asistencia pública"
+      }
+    },
+    {
+      "course_id": "ok-basic-prelicense-90",
+      "source": "The Americans with Disabilities Act governs places of public accommodation and commercial facilities — Title III — and employment — Title I. In a real estate context it reaches offices, retail, restaurants and other commercial premises, requiring removal of architectural barriers where readily achievable.",
+      "target": "La Ley de Estadounidenses con Discapacidad regula los establecimientos abiertos al público y las instalaciones comerciales —Título III—, así como el empleo —Título I—. En el ámbito inmobiliario abarca oficinas, tiendas, restaurantes y otros locales comerciales, y exige eliminar las barreras arquitectónicas cuando sea fácilmente realizable.",
+      "source_sha256": "e0965749ce5a95c351bed4eb74380c0b86dd25dda88ca68cce3f825bc66cb74d",
+      "target_sha256": "cf2868b6692ddaf5f2b8e31f8ae7f325ef83292d4c455c4c99f0f8c5cb887c53",
+      "fragments": {
+        "The": "La",
+        "governs": "regula los",
+        "and commercial facilities — Title III — and employment — Title I. In a real estate context it reaches offices, retail, restaurants and other commercial premises, requiring removal of architectural barriers": "y las instalaciones comerciales —Título III—, así como el empleo —Título I—. En el ámbito inmobiliario abarca oficinas, tiendas, restaurantes y otros locales comerciales, y exige eliminar las barreras arquitectónicas",
+        "where readily achievable.": "cuando sea fácilmente realizable."
+      }
+    },
+    {
+      "course_id": "ok-basic-prelicense-90",
+      "source": "The Oklahoma Real Estate Commission consists of seven members. It is, by statute, the sole governmental entity — state, county or municipal — with authority to regulate and issue real estate licences in Oklahoma.",
+      "target": "La Comisión de Bienes Raíces de Oklahoma se compone de siete miembros. Es, por ley, la única entidad gubernamental —Estado, condado o municipio— con autoridad para regular y emitir licencias inmobiliarias en Oklahoma.",
+      "source_sha256": "1ae2e7162c3c703e7529bbf079ef686c6497b8a233447f6c8b57c80c1c5d92de",
+      "target_sha256": "6129f439d431bb03c33ac8542dd3f5310e2b70201706d1a6e0c3a52e1ee986c7",
+      "fragments": {
+        "The": "La",
+        "consists of": "se compone de"
+      }
+    },
+    {
+      "course_id": "ok-basic-prelicense-90",
+      "source": "The state licensing examination for provisional sales associate / sales associate",
+      "target": "El examen de licencia estatal para asociado de ventas provisional / asociado de ventas",
+      "source_sha256": "2853b44a1fcbfe56d40185ed0ca3bdd6d09348d0e83a2f56e0f75a002dcbb723",
+      "target_sha256": "7f3c2b38b1dab82ace56799de16ae3fbb8ccbd3dbb253a338bebff37c6515d8e",
+      "fragments": {
+        "The": "El examen",
+        "state licensing": "de licencia estatal",
+        "examination for provisional sales associate / sales associate": "para asociado de ventas provisional / asociado de ventas"
+      }
+    },
+    {
+      "course_id": "ok-basic-prelicense-90",
+      "source": "The Telephone Consumer Protection Act and the National Do Not Call Registry govern telemarketing calls, and the rules on autodialled calls and text messages are stricter than most licensees assume. Firms must maintain an internal do-not-call list and honour requests.",
+      "target": "La Ley de protección de los consumidores telefónicos y el Registro Nacional No Llamar regulan las llamadas de telemercadeo, y las reglas sobre llamadas automáticas y mensajes de texto son más estrictos de lo que la mayoría de los licenciatarios asumen. Las empresas deben mantener una lista interna de no llamadas y respetar las solicitudes de no recibir llamadas.",
+      "source_sha256": "3e3b7ba2d9415c2acc292fe9ceda9fd4c47a756c7dbc681ae4675217683fbc8a",
+      "target_sha256": "f54dd9aa6e5fe38b0c9fd1f44d4bf06c87c837cb5db12556596e144cb49a718d",
+      "fragments": {
+        "The": "La",
+        "govern telemarketing calls, and the rules on": "regulan las llamadas de telemercadeo, y las reglas sobre",
+        "Firms must maintain an": "Las empresas deben mantener una"
+      }
+    },
+    {
+      "course_id": "ok-basic-prelicense-90",
+      "source": "A ten-day opportunity for the purchaser to conduct a risk assessment or inspection, which the parties",
+      "target": "Una oportunidad de diez días para que el comprador lleve a cabo una evaluación o inspección de riesgos, que las partes",
+      "source_sha256": "0433ccac4c718096612ca861174a73b0ffe1fe84c1604afa5bd8d065000e6477",
+      "target_sha256": "9e6dd4b511568ba65416e66a5d8ee4f4b322e6fe20da5d6a08dca95b9f874876",
+      "fragments": {
+        "A": "Una"
+      }
+    },
+    {
+      "course_id": "ok-basic-prelicense-90",
+      "source": "A disclosure form signed by the parties AND by the agent; and",
+      "target": "Un formulario de divulgación firmado por las partes Y por el agente; y",
+      "source_sha256": "e0c837958b9d8d8f1115e1c34f0ddff25c2193db221a625e7f976835bd60cf34",
+      "target_sha256": "856bef965436f3440841f8499ed89f2ae393f15c79d0d52da927d5ba577c5baf",
+      "fragments": {
+        "A": "Un"
+      }
+    },
+    {
+      "course_id": "ok-basic-prelicense-90",
+      "source": "Tenancy at sufferance. A holdover — the tenant remains after the right to possess has ended. Not a tenancy the landlord agreed to.",
+      "target": "Tenencia por permanencia sin consentimiento tras vencer el arrendamiento (tenancy at sufferance). Un ocupante que permanece después del vencimiento — el inquilino permanece después de que haya terminado el derecho de posesión. No es un alquiler que el propietario aceptó.",
+      "source_sha256": "27d01e876c3864b36aca57fbc6d64a5424555d71a6caefab198a92cba70818c9",
+      "target_sha256": "aa5232f2b9eb72c8de0ac648652e47de822ff269e143ffb40a5b1dd07a62ce69",
+      "fragments": {
+        "A": "Un"
+      }
+    },
+    {
+      "course_id": "ok-basic-prelicense-90",
+      "source": "A conveyance of a possessory interest for a term, and a contract of covenants between the parties.",
+      "target": "Un traspaso de un derecho de posesión por un plazo, y un contrato de los pactos entre las partes.",
+      "source_sha256": "cfadef91a8640df03cf561913adbfc951e96d13aac528a53d115f1f38d2fbad7",
+      "target_sha256": "1258341753799e4b88268dcae8eaa43aa8691c15640e99e15bfe6140b04f3a47",
+      "fragments": {
+        "A": "Un",
+        "of a possessory interest for a term, and a": "de un derecho de posesión por un plazo, y un"
+      }
+    }
+  ],
+  "human_linguistic_review": "OPEN",
+  "human_SME_review": "OPEN",
+  "learner_duration_validation": "OPEN"
+}

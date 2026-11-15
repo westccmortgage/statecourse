@@ -4,20 +4,259 @@
   "reviewed_sections": [
     {
       "lesson": "module-01",
-      "section_indexes": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        9,
-        10,
-        11
-      ]
+      "section_index": 0
+    },
+    {
+      "lesson": "module-01",
+      "section_index": 1
+    },
+    {
+      "lesson": "module-01",
+      "section_index": 2
+    },
+    {
+      "lesson": "module-01",
+      "section_index": 3
+    },
+    {
+      "lesson": "module-01",
+      "section_index": 4
+    },
+    {
+      "lesson": "module-01",
+      "section_index": 5
+    },
+    {
+      "lesson": "module-01",
+      "section_index": 6
+    },
+    {
+      "lesson": "module-01",
+      "section_index": 7
+    },
+    {
+      "lesson": "module-01",
+      "section_index": 8
+    },
+    {
+      "lesson": "module-01",
+      "section_index": 9
+    },
+    {
+      "lesson": "module-01",
+      "section_index": 10
+    },
+    {
+      "lesson": "module-01",
+      "section_index": 11
+    },
+    {
+      "lesson": "module-02",
+      "section_index": 0
+    },
+    {
+      "lesson": "module-02",
+      "section_index": 1
+    },
+    {
+      "lesson": "module-02",
+      "section_index": 2
+    },
+    {
+      "lesson": "module-02",
+      "section_index": 3
+    },
+    {
+      "lesson": "module-02",
+      "section_index": 4
+    },
+    {
+      "lesson": "module-02",
+      "section_index": 5
+    },
+    {
+      "lesson": "module-02",
+      "section_index": 6
+    },
+    {
+      "lesson": "module-02",
+      "section_index": 7
+    },
+    {
+      "lesson": "module-02",
+      "section_index": 8
+    },
+    {
+      "lesson": "module-02",
+      "section_index": 9
+    },
+    {
+      "lesson": "module-03",
+      "section_index": 0
+    },
+    {
+      "lesson": "module-03",
+      "section_index": 1
+    },
+    {
+      "lesson": "module-03",
+      "section_index": 2
+    },
+    {
+      "lesson": "module-03",
+      "section_index": 3
+    },
+    {
+      "lesson": "module-03",
+      "section_index": 4
+    },
+    {
+      "lesson": "module-03",
+      "section_index": 5
+    },
+    {
+      "lesson": "module-03",
+      "section_index": 6
+    },
+    {
+      "lesson": "module-03",
+      "section_index": 7
+    },
+    {
+      "lesson": "module-03",
+      "section_index": 8
+    },
+    {
+      "lesson": "module-03",
+      "section_index": 9
+    },
+    {
+      "lesson": "module-04",
+      "section_index": 0
+    },
+    {
+      "lesson": "module-04",
+      "section_index": 1
+    },
+    {
+      "lesson": "module-04",
+      "section_index": 2
+    },
+    {
+      "lesson": "module-04",
+      "section_index": 3
+    },
+    {
+      "lesson": "module-04",
+      "section_index": 4
+    },
+    {
+      "lesson": "module-04",
+      "section_index": 5
+    },
+    {
+      "lesson": "module-04",
+      "section_index": 6
+    },
+    {
+      "lesson": "module-04",
+      "section_index": 7
+    },
+    {
+      "lesson": "module-04",
+      "section_index": 8
+    },
+    {
+      "lesson": "module-04",
+      "section_index": 9
+    },
+    {
+      "lesson": "module-04",
+      "section_index": 10
+    },
+    {
+      "lesson": "module-04",
+      "section_index": 11
+    },
+    {
+      "lesson": "module-05",
+      "section_index": 0
+    },
+    {
+      "lesson": "module-05",
+      "section_index": 1
+    },
+    {
+      "lesson": "module-05",
+      "section_index": 2
+    },
+    {
+      "lesson": "module-05",
+      "section_index": 3
+    },
+    {
+      "lesson": "module-05",
+      "section_index": 4
+    },
+    {
+      "lesson": "module-05",
+      "section_index": 5
+    },
+    {
+      "lesson": "module-05",
+      "section_index": 6
+    },
+    {
+      "lesson": "module-05",
+      "section_index": 7
+    },
+    {
+      "lesson": "module-05",
+      "section_index": 8
+    },
+    {
+      "lesson": "module-05",
+      "section_index": 9
+    },
+    {
+      "lesson": "module-06",
+      "section_index": 0
+    },
+    {
+      "lesson": "module-06",
+      "section_index": 1
+    },
+    {
+      "lesson": "module-06",
+      "section_index": 2
+    },
+    {
+      "lesson": "module-06",
+      "section_index": 3
+    },
+    {
+      "lesson": "module-06",
+      "section_index": 4
+    },
+    {
+      "lesson": "module-06",
+      "section_index": 5
+    },
+    {
+      "lesson": "module-06",
+      "section_index": 6
+    },
+    {
+      "lesson": "module-06",
+      "section_index": 7
+    },
+    {
+      "lesson": "module-06",
+      "section_index": 8
+    },
+    {
+      "lesson": "module-06",
+      "section_index": 9
     }
   ],
   "questions_reviewed": [
@@ -1103,7 +1342,1076 @@
       "after": "— el comprador con quien negocia el vendedor al que usted representa, el vendedor sin representación de la otra parte y el posible inquilino al que está evaluando el arrendador que usted representa.",
       "source_sha256": "90bd6fa9b8ba59b1866500fb8959ff453cea07eeadd5b42883800db396b90222",
       "target_sha256": "4281529f59f987786b40ffe5322cb831998c2042c6d0162e6b40c053cdab95e4"
+    },
+    {
+      "source": "A firm must enter into a services agreement with the principal before, or as soon as reasonably practical after, its appointed broker commences rendering real estate brokerage services",
+      "before": "Una empresa debe celebrar un acuerdo de servicios con el principal antes, o tan pronto como sea razonablemente práctico después, su agente designado comienza a prestar servicios de corretaje de bienes raíces",
+      "after": "La firma debe celebrar un acuerdo de servicios con el cliente antes de que su corredor designado comience a prestar servicios de corretaje inmobiliario, o tan pronto como sea razonablemente posible después de que comience a prestarlos",
+      "source_sha256": "37b7a3d422c722598287b3b90952f9fd2dbcd9a9e4170cdf24ab85b612f98b23",
+      "target_sha256": "b7007caa10de007f62092cf0b182f0a8e1159d6ff3f25f03fa83fa9ca1def95b"
+    },
+    {
+      "source": "Agency relationships, services agreements and the pamphlet",
+      "before": "Relaciones con los organismos, acuerdos de servicios y el folleto",
+      "after": "Relaciones de representación, acuerdos de servicios y el folleto",
+      "source_sha256": "7fdb9590506ba63835f7b267e73c04bb57374847078bd597c84040ddec563fd1",
+      "target_sha256": "a5a3ad6e8e9437cb46527c3d68a88192d1d885a266f12e22a9808ce5de9d5837"
+    },
+    {
+      "source": "Buyer agency arises by DEFAULT, from performing services.",
+      "before": "La agencia compradora surge de DEFAULT, de la prestación de servicios.",
+      "after": "La representación del comprador surge POR DEFECTO al prestar servicios.",
+      "source_sha256": "f645f2fd743674c17a5203423849367550e67f3978e4aae5bd7da3dcae2e46ad",
+      "target_sha256": "1a5d4b1a9c015a17165b0d63b9606f08492ec346c943357a842fd5841f3873ed"
+    },
+    {
+      "source": "firm appoints",
+      "before": "nombre de la empresa",
+      "after": "firma designa",
+      "source_sha256": "cc08ffb707abc234ee312666ade1e2f2f5e3efecac542e5b72b2fb987cb46a66",
+      "target_sha256": "01b568a75cf55a52d92bdb2296ba34f13c14f05dd6ff643c9a0200f44346cffc"
+    },
+    {
+      "source": "submission gate.",
+      "before": "Puerta de sumisión.",
+      "after": "requisito previo a la presentación.",
+      "source_sha256": "76c4643beb99b49198cbbbe7bd19740bbd2273f14425d09c5fd4c800fee3b73c",
+      "target_sha256": "d58e407481a1635658bb75217abe16625bf4eb2c640feacb92fea785f334dc6b"
+    },
+    {
+      "source": "\"Compensation Disclosure.\"",
+      "before": "\"Divulgación de indemnización\".",
+      "after": "«Divulgación de la remuneración».",
+      "source_sha256": "8e2cb696a79c7ae6e95ff1d3aa0765f8c8625bb2ad10840a53c10db6cf0fc49a",
+      "target_sha256": "6cf5d23b629bac7f2ebad7f17b9858ae500ed7311b0bb1b2069e13c038c3c82a"
+    },
+    {
+      "source": "(I) — the 60-day buyer default.",
+      "before": "(I) — el incumplimiento del comprador de 60 días.",
+      "after": "(I) — el plazo predeterminado de 60 días para el comprador.",
+      "source_sha256": "22555d3cfba697913af1033d697b4cb00e1e6848ca97ffa7a3f3d0274bd57813",
+      "target_sha256": "1051212ccdccdef1b2287ff34a91d7c6ed0d988aeae229199ee928144930f8a8"
+    },
+    {
+      "source": "(Iii) — checkbox options, for buyers.",
+      "before": "ii) — opciones de casilla de verificación, para los compradores.",
+      "after": "(Iii) — casillas de selección para los compradores.",
+      "source_sha256": "94605c9c422b0a6ba902e3f7d9257cca056598debec001d028af9efa6d2a734a",
+      "target_sha256": "133b2ae04f0a40ce37ee0a37097a8234945f89e481b45529a0eedbdb9fe586af"
+    },
+    {
+      "source": "(iv) is about",
+      "before": "(iv) es aproximadamente",
+      "after": "(iv) se refiere a",
+      "source_sha256": "c8ecf87ab5c39fb3e27fa96891ddfa9a6ae0db51d2aeb906a1020808a1374bec",
+      "target_sha256": "a15548a48eb5b20122eda6baa225cf83d1d871b151d0366ac5f96f4bed671156"
+    },
+    {
+      "source": ", and a broker proposing a longer term is proposing a departure from the statutory default that the buyer should understand.",
+      "before": ", y un bróker que propone un plazo más largo está proponiendo una desviación del incumplimiento legal que el comprador debe entender.",
+      "after": ", y un corredor que propone un plazo más largo se aparta del plazo legal predeterminado, algo que el comprador debe comprender.",
+      "source_sha256": "3c67166f102841621671d05ecc2d5e439a7db39d33688979284e4bf88494df24",
+      "target_sha256": "42f473b4064d21a6d5150c641b54e504e7185bc42fba2d228f3fff8b42cd7ff2"
+    },
+    {
+      "source": "consents to the broker appointed as an agent for the principal to act as a limited dual agent",
+      "before": "consiente al agente designado como agente para que el principal actúe como agente dual limitado",
+      "after": "autoriza que el corredor designado para representarlo actúe como agente dual limitado",
+      "source_sha256": "61b4cf952be2a7d6ce707ff1df397a36d8d2e2d7f5b36517e9cba6e65e4b6963",
+      "target_sha256": "58b0b1b53e1c90ed2fae3f1c325055a33df79d5cec2119769a0366b9bf700f7f"
+    },
+    {
+      "source": "separately initialed",
+      "before": "inicializada por separado",
+      "after": "rubricado por separado",
+      "source_sha256": "f20d0baddc3ce64fbbad42b6951ef96edff0894abece9d5f2a6eed66843092fb",
+      "target_sha256": "05df7fcb465205cb372191cfe80ae791166c52f62e1647e5dd5ac835f72561e8"
+    },
+    {
+      "source": "which consent must be separately initialed by the principal and include an acknowledgment from the principal that a limited dual agent may not advocate terms favorable to one principal to the detriment of the other principal",
+      "before": "que el consentimiento debe ser separado inicializado por el principal e incluir un reconocimiento del principal de que un agente dual limitado no puede abogar por términos favorables a un principal en detrimento del otro principal",
+      "after": "consentimiento que el cliente debe rubricar por separado y que debe incluir su reconocimiento de que un agente dual limitado no puede defender condiciones favorables a un cliente en perjuicio del otro",
+      "source_sha256": "84b4b0d8d44c0a8ddcf82e4d3264d90d7b47cc1fc8bee7940fab88132764b71c",
+      "target_sha256": "63dedad94175e1f4bc8c32f801c84497954063ba4221c8b48dc12e61473bbe8d"
+    },
+    {
+      "source": "A party you are rendering services to",
+      "before": "Una fiesta a la que usted está prestando servicios",
+      "after": "Una parte a la que presta servicios",
+      "source_sha256": "cc90670f5091bbe633562ff97d141f0113024be4804bbe8e0f97300a54304ac9",
+      "target_sha256": "582899d2167666b169a103ddfc4d732253d945dac6c501d95ee4202e6e0060dc"
+    },
+    {
+      "source": "Delivering it in the prescribed form is a submission gate.",
+      "before": "Entregarlo en la forma prescrita es una puerta de sumisión.",
+      "after": "Entregarlo en la forma prescrita es un requisito previo a la presentación.",
+      "source_sha256": "1e3b1d6490b4ae1867bb9f68ea6f61d51e6315adbee42a6589d5869d7afb5967",
+      "target_sha256": "3c1a241bb168a244b8d968f401d941fbba2461e6de5effc4341771836571a4fd"
+    },
+    {
+      "source": "agency relationships",
+      "before": "Relaciones con los organismos",
+      "after": "relaciones de representación",
+      "source_sha256": "752978ac20a451226874ebbc69a21ee979701f06f23c8a65425d77e0b0dc28de",
+      "target_sha256": "1a0ccb44cc343e459d1c7386d5ebeac2bf701601ae80a4ac18e61a35dca6327e"
+    },
+    {
+      "source": "A broker who learned a seller's bottom line does not become free to mention it when the listing expires.",
+      "before": "Un corredor que aprendió el resultado final de un vendedor no se hace libre de mencionarlo cuando la captación inmobiliaria expira.",
+      "after": "Un corredor que conoce el precio mínimo que aceptaría un vendedor no queda libre para revelarlo cuando vence el encargo de venta.",
+      "source_sha256": "15140fbc9be43da197cb259d94bf7544e248d02493cd75b6b0dc657151e7a3b8",
+      "target_sha256": "33409f2316a6c9fd32c7c55cc564546cef2764a4387fd1e2763f6f5c5c47c678"
+    },
+    {
+      "source": "E. Seller's agent and buyer's agent duties — RCW 18.86.040 and .050",
+      "before": "E. Funciones de agente del vendedor y agente del comprador — RCW 18.86.040 y 050",
+      "after": "E. Deberes del agente del vendedor y del comprador — RCW 18.86.040 y .050",
+      "source_sha256": "b983795b2cf4c99c0244e47667d217b39e575e1269442af06090799709e49dc4",
+      "target_sha256": "f5098d420f3d53dcd67a2be0a8112988defe2909fc1cd0338b3e075f8c570297"
+    },
+    {
+      "source": "In a separate paragraph titled \"Agency Disclosure\"",
+      "before": "En un párrafo separado titulado \"Divulgación de la Agencia\"",
+      "after": "En un párrafo separado titulado «Agency Disclosure» (divulgación de la representación)",
+      "source_sha256": "4e4bdcf0d68663662ad643377f9b9e2b428c99b492a2b3b224b7e07acad13f03",
+      "target_sha256": "5ac1b629111bed60f49f77c5d0b81ff5cdc2aa140d913b1121c948d383ca58f1"
+    },
+    {
+      "source": "The disclosure shall be set forth in a separate paragraph titled 'Agency Disclosure' in the agreement between the buyer and seller or in a separate writing titled 'Agency Disclosure'",
+      "before": "La divulgación se establecerá en un párrafo separado titulado \"Divulgación de la Agencia\" en el acuerdo entre el comprador y el vendedor o en un escrito separado titulado \"Divulgación de la Agencia\"",
+      "after": "La divulgación debe constar en un párrafo separado titulado «Agency Disclosure» (divulgación de la representación) en el acuerdo entre comprador y vendedor, o en un escrito separado titulado «Agency Disclosure»",
+      "source_sha256": "8d711b5a4036250c3c456f0d6019e8d61fa0001d1c33c569636c7c8b19f87142",
+      "target_sha256": "4146b993dbd53140f7ccaeceda7477dc9ec0d3c3647f78379af38a5e85b48ccb"
+    },
+    {
+      "source": "disclose in writing BEFORE the broker's principal signs an offer, or as soon as reasonably practical, but BEFORE THE PARTIES REACH MUTUAL AGREEMENT",
+      "before": "revelar por escrito ANTES de que el corredor principal firme una oferta, o tan pronto como sea razonablemente práctico, pero ANTES DE QUE LAS PARTES ALCANCE EL ACUERDO MUTUO",
+      "after": "divulgar por escrito ANTES de que el cliente del corredor firme una oferta, o tan pronto como sea razonablemente posible, pero ANTES DE QUE LAS PARTES LLEGUEN A UN ACUERDO MUTUO",
+      "source_sha256": "47af1df4295b81dace87da9e37d22449239c9ea09f0a8cebe8448875c677470f",
+      "target_sha256": "035ea2f93595f06a6302a6fe984fce8ed14461b4a3a637406c59befb32ec9961"
+    },
+    {
+      "source": "— a broker who actually uses one principal's confidential information to advantage another has done something the safe harbour never reached.",
+      "before": "— un corredor que utiliza realmente la información confidencial de un mandante para beneficiarse de otro ha hecho algo que el puerto seguro nunca ha alcanzado.",
+      "after": "— el corredor que utiliza información confidencial de un cliente para favorecer a otro realiza una conducta que esta protección legal nunca amparó.",
+      "source_sha256": "aec190424d105d246859ad2670361ff7877ca38808f973ccebf3141e411e1a81",
+      "target_sha256": "86a07a722de9fc915e30f9f6c556493d4864abf88a46d08c882e431d49b70c35"
+    },
+    {
+      "source": "\"Agency Disclosure\" heading",
+      "before": "Título de \"Divulgación de la Agencia\"",
+      "after": "encabezado «Agency Disclosure»",
+      "source_sha256": "b083370db9f2b208fa469ca2f418cfdddfe5f0d84d5dd367b45a0d6b6672388a",
+      "target_sha256": "6105ba8b2637f78bb65c5e86b2de7a19de544b6400878012d41e896f9c52129c"
+    },
+    {
+      "source": "\"Agency Disclosure,\"",
+      "before": "\"Divulgación de la Agencia,\"",
+      "after": "«Agency Disclosure»,",
+      "source_sha256": "70b9c9b07fff57eeb463df5aaec82337e49e8603934dee96b44d4b9e334d22d7",
+      "target_sha256": "de25f9d2e1fb119ab6fb493e06f994be5aa25de18a3cc96b932779bbbca06351"
+    },
+    {
+      "source": "Disclose the role in writing",
+      "before": "Divulgar el papel en la escritura",
+      "after": "Divulgar por escrito el papel de representación",
+      "source_sha256": "4ef3190f4dcc512eaaa2e5b4f25e4b1497160bdd56526fbcb8a1e1994e3be05e",
+      "target_sha256": "e631a9434a946d932db076e3d8896674de071f46316f5729ec6f68bb810f379c"
+    },
+    {
+      "source": "Not obtained, and therefore reproduced NOWHERE in this build:",
+      "before": "No obtenido, y por lo tanto reproducido NOWHERE en este edificio:",
+      "after": "No se obtuvo y, por tanto, no se reproduce EN NINGÚN LUGAR de esta versión:",
+      "source_sha256": "ca40f8bb99db8d9ac14abaebff400ad9e61f297e3b9069f0ec272cb65e410787",
+      "target_sha256": "532b7cf566ba0b35b694608c94a9ba20425239e8a46b3446558517a10edce11a"
+    },
+    {
+      "source": "Unrepresented party before they sign an offer.",
+      "before": "Partido no representado antes de que firmen una oferta.",
+      "after": "parte no representada antes de que firme una oferta.",
+      "source_sha256": "62b165c003c44573933f80fa7a8a700eb97efa4b150e3d2dc53963e0c73f1d78",
+      "target_sha256": "4a2025ba36895e7a26fa3d3014242cee9e45bc26d7b725fdab28b1347ab48258"
+    },
+    {
+      "source": "before the principal signs",
+      "before": "antes de los signos principales",
+      "after": "antes de que el cliente firme",
+      "source_sha256": "04bc5fa104a324e9344756b3be570a2ba0725f73a9dee0c5f0a75ca8cb240922",
+      "target_sha256": "8a848b7ed468e955371e52f619499617a4fefacd7ec1796a2e5fcb2335807ba7"
+    },
+    {
+      "source": "separately initialed.",
+      "before": "por separado, inicializada.",
+      "after": "rubricado por separado.",
+      "source_sha256": "5b05157e870c41ed2bf6d2b82e0ffd2fbb59744df02d77f7d406f3588486f81e",
+      "target_sha256": "abec906ee94b1eba33eaf81194a4cbf5a483b96c51e8c50431fe44a86171ae92"
+    },
+    {
+      "source": "separately-initialed consent",
+      "before": "Consentimiento por separado inicial",
+      "after": "consentimiento rubricado por separado",
+      "source_sha256": "8eb3caab399f766f9119f30900f09d3429e8633be553247b4729c867bd36634a",
+      "target_sha256": "b6294bf2bbbf02806d2f87e6efe5f5e841a65aac65eac3613d59e78a70e7c2c5"
+    },
+    {
+      "source": "the 60-day buyer default",
+      "before": "el impago del comprador de 60 días",
+      "after": "el plazo predeterminado de 60 días para el comprador",
+      "source_sha256": "a54e34dff45434df1d238628b3bd21aa2421db82507df26036b5410f0d9241d5",
+      "target_sha256": "b2ea1761b8b3b12df78218b1886aa2f20bc2b959944198563856b10d900f24fe"
+    },
+    {
+      "source": "the five services agreement contents",
+      "before": "el contenido del acuerdo de cinco servicios",
+      "after": "los cinco contenidos del acuerdo de servicios",
+      "source_sha256": "c3ae80c9104d501296c0805ff79d990a336f80bdbd996b514e1c63726d8abb7e",
+      "target_sha256": "7739c44e049acd89f046e67e80407d678cd9cdcaf63816e8ed0d44448990853a"
+    },
+    {
+      "source": "the separately-initialed consent",
+      "before": "el consentimiento por separado inicial",
+      "after": "el consentimiento rubricado por separado",
+      "source_sha256": "1e49dd2629b6387d6017e91ba7dafc2b8f4fef5814b50baab9f0a76c6078b06c",
+      "target_sha256": "e468adcaf946c2da1a83db5e097106b75fa7418bb82a60d21623d7681cbc069f"
+    },
+    {
+      "source": "A limited dual agent holds two sets of confidences and may use neither.",
+      "before": "Un agente dual limitado posee dos conjuntos de confidencias y puede no utilizar ninguna de las dos.",
+      "after": "Un agente dual limitado conserva información confidencial de ambas partes y no puede utilizar la de ninguna de ellas.",
+      "source_sha256": "7d01b63edd732c457da7be86d5669b0b5b5b1c3b7e662e023bcc493c1677e53d",
+      "target_sha256": "733292c96a3850fa7a4dca373dd0ded0035f545b51a7d21b88a7341249bb370d"
+    },
+    {
+      "source": "A. Limited dual agency — RCW 18.86.060",
+      "before": "A. Organismo dual limitado - RCW 18.86.060",
+      "after": "A. Representación dual limitada — RCW 18.86.060",
+      "source_sha256": "d96e4339c9d05ea72fde93f7954cb15ddd77ef344e406a68d43b8f1c9ef3bd20",
+      "target_sha256": "64100b8a85c58b4067bdd74cbb8eb319e39f5b4aea4d051ab2ba8ae479a407b1"
+    },
+    {
+      "source": "Limited dual agency, duration, imputed knowledge and vicarious liability",
+      "before": "Organismo dual limitado, duración, conocimiento imputado y responsabilidad subsidiaria",
+      "after": "Representación dual limitada, duración, conocimiento imputado y responsabilidad por actos ajenos",
+      "source_sha256": "fbfcbfb93a4e8854abf0d19262de69b78981665a148c4e32e9fd432e5460594e",
+      "target_sha256": "6930d283342539381919a0b1278ab3844d431cf9b5aad287a3e89c4779558540"
+    },
+    {
+      "source": "The principal must acknowledge, in writing they separately initial, what they are giving up.",
+      "before": "El mandante debe reconocer, por escrito ellos por separado inicial, lo que están renunciando.",
+      "after": "El cliente debe reconocer a qué renuncia mediante un escrito que rubrique por separado.",
+      "source_sha256": "f8d5a595bdba12e3f992e10d38ff36381e457914645743b7273e995e615d6dba",
+      "target_sha256": "087abc6856ea60df48481723213072f948cf8a764c3a643d253f189453d0998c"
+    },
+    {
+      "source": "no action that is adverse or detrimental to EITHER party's interest",
+      "before": "ninguna acción que sea adversa o perjudicial para los intereses de OTRA Parte",
+      "after": "ninguna medida adversa o perjudicial para los intereses de NINGUNA DE LAS DOS partes",
+      "source_sha256": "3ccd257321ac7b44f3868027a5a521c8fa72ce6f6bfc9e32f02815cbce04c842",
+      "target_sha256": "1cb4bcf8f01dfd8012e08b2722a74b07564dee7bfdfec488ef93162a3dc5dd01"
+    },
+    {
+      "source": "not disclose any confidential information from or about EITHER party, except under subpoena or court order, even after termination",
+      "before": "no revelar ninguna información confidencial de o sobre OTRA Parte, excepto en virtud de citación judicial o orden judicial, incluso después de la terminación",
+      "after": "no divulgar información confidencial de o sobre NINGUNA DE LAS DOS partes, salvo por citación u orden judicial, incluso después de terminar",
+      "source_sha256": "fecd4ec909c50843db389ab7e349d82cab9bfa059e5f6b16759379c7d134839d",
+      "target_sha256": "07abf8bb60e93b64d6e333e96fb9000b1e2c2f09bd466222810e5b96caac6143"
+    },
+    {
+      "source": "only with the written consent of both parties to the transaction, SET FORTH IN THE SERVICES AGREEMENT",
+      "before": "Únicamente con el consentimiento por escrito de ambas partes en la transacción, PRESENTACIÓN EN EL ACUERDO DE SERVICIOS",
+      "after": "solo con el consentimiento escrito de ambas partes de la transacción, CONSIGNADO EN EL ACUERDO DE SERVICIOS",
+      "source_sha256": "526b511f089f30eb97d49d00f5977cd4d8386d621ab304aea63fd9b2733e2c8e",
+      "target_sha256": "1c82c1b426c48eefc00dc9999a2a3b42fa79634563a3bc95134bb576606b5bb6"
+    },
+    {
+      "source": "separately initialed by the principal",
+      "before": "por separado inicializada por el principal",
+      "after": "rubricado por separado por el cliente",
+      "source_sha256": "0c018e0e00acb752d65270908e02f345484d53bfdc289b1a261a89d548357eaf",
+      "target_sha256": "833aad33b7cb7e279c36d427daa2052fe265818f6c6ee6f14fef735414d0cc92"
+    },
+    {
+      "source": "B. RCW 18.86.060(5) — the provision that catches every firm",
+      "before": "B. RCW 18.86.060(5): la disposición que permite capturar a todas las empresas",
+      "after": "B. RCW 18.86.060(5) — la disposición que afecta a toda firma",
+      "source_sha256": "e40f2f9ce021dd5e5b37a36b8cd9a8bb6c812fb46f4480dccead51c6502af8a9",
+      "target_sha256": "877c75230619ea63f38d0c4ec337ae9118bae04db0e34c0f8ae50767ea7fe18c"
+    },
+    {
+      "source": "The selling broker",
+      "before": "El corredor vendedor",
+      "after": "El corredor que aporta al comprador (selling broker)",
+      "source_sha256": "b59b3ea6f6eda1a1cfb0177dc844eac870ac7695bfe607733c7dcb2afb155e87",
+      "target_sha256": "7b088c26fa9dc0b00c610e2984ee6145730748e9ae2514d519c00990a6e9ea9e"
+    },
+    {
+      "source": "convert the two brokers into dual agents.",
+      "before": "convertir los dos corredores en agentes duales.",
+      "after": "convierte a los dos corredores en agentes duales.",
+      "source_sha256": "229093abe78356b7f42e651759ba51368be64dd180af77c6e2f59e0dae91fa19",
+      "target_sha256": "9a8b00f2f7c23022de4d4ad2a3a623dcc69525f9f00a610f7c368f4d8b29c70c"
+    },
+    {
+      "source": "their own party. The in-house transaction does",
+      "before": "su propia fiesta. La transacción interna lo hace",
+      "after": "a su propio cliente. La operación dentro de la misma firma",
+      "source_sha256": "71fd3ef3267855fd6c0316ca422f7cd6e04d852c4ed487f8a65f1e684fc62c6e",
+      "target_sha256": "808c47d8ac46dc4b4087f40ee7742e3dbe343993805e814709e2dcf752dedd83"
+    },
+    {
+      "source": ", the seller could be charged with the broker's knowledge.",
+      "before": ", el vendedor podría ser acusado de los conocimientos del corredor.",
+      "after": ", podría imputarse al vendedor el conocimiento de su corredor.",
+      "source_sha256": "b37be7eb0fff2d457959d324c4d6d08866f6173ea38e5dd7b7d978870ab45602",
+      "target_sha256": "372b5773cae86c4481b317d20c3a3cf4441a8cb6cba9689321bcf09b3b7cc8b6"
+    },
+    {
+      "source": "Seller did not",
+      "before": "El vendedor no.",
+      "after": "vendedor no",
+      "source_sha256": "732e41e2c61d11ad0ed167449cec91bc76832e0b4cf315e4776bd513e6e162e4",
+      "target_sha256": "ac3e330c1489e869697bafe2c297305cb1ed69a513b7a0bcca9055bc0d5456ac"
+    },
+    {
+      "source": "The parties can contract into imputation. Almost nobody does, but the door is open.",
+      "before": "Las partes pueden contratar en imputación. Casi nadie lo hace, pero la puerta está abierta.",
+      "after": "Las partes pueden pactar por contrato la imputación de conocimiento. Casi nadie lo hace, pero esa posibilidad existe.",
+      "source_sha256": "90a6bef2515b2642d5fa45836ea9c1ab164342dfaf8d3bd7fa1073bab990c957",
+      "target_sha256": "5a4823b833f6ebf83576b5e5660d80595f4fb34d011a9901c2a1ce345bfd3298"
+    },
+    {
+      "source": "The seller is not charged with what their broker knew and did not tell them.",
+      "before": "El vendedor no es acusado de lo que su corredor sabía y no les dijo.",
+      "after": "No se imputa al vendedor lo que su corredor sabía y no le comunicó.",
+      "source_sha256": "691c1a0c543560b74026036c57c13e0b8eff055db940bcc0ec61d4ef94223028",
+      "target_sha256": "b7c3f909a52ac37105afe67beb2b116bd845f40be98a53b9635f9bf41231ee17"
+    },
+    {
+      "source": "a former client's confidences are still confidences.",
+      "before": "las confianzas de un ex cliente siguen siendo confianzas.",
+      "after": "la información confidencial de un antiguo cliente sigue siendo confidencial.",
+      "source_sha256": "80a7aeb0603ef22a8d13d4e8525e318d67bed71d906ce1ff1d8cc30b033e4fd7",
+      "target_sha256": "c9ce465324c2469685e231e764970a7b4304ed44298bcc40ab810bae023ee5d9"
+    },
+    {
+      "source": "account for all moneys and property received during the relationship",
+      "before": "cuenta para todos los dineros y bienes recibidos durante la relación",
+      "after": "rendir cuentas de todo el dinero y los bienes recibidos durante la relación",
+      "source_sha256": "61eb3a9081b5f21a54a5f6977a4352cb15ab45596cab46e785b8300a12c8cac3",
+      "target_sha256": "f74aa5046e9900188a3bb50171c9f052b7627b3ee9961519ca9a2730472c4a5c"
+    },
+    {
+      "source": "actually",
+      "before": "En realidad",
+      "after": "conocía realmente",
+      "source_sha256": "e4c05c565b8cac5ea25494e0abca7751fae5d5e17457de07f03f247b65666b0e",
+      "target_sha256": "275b2090cec9f7359a76997facdfd4f402e298a22973a3184efad8848085fb1c"
+    },
+    {
+      "source": "agency relationship",
+      "before": "Relaciones con los organismos",
+      "after": "relación de representación",
+      "source_sha256": "fb7bc37daf6d756ebb343978a3e72338f51fd069085b2e08ee83bc20b856a38c",
+      "target_sha256": "a0bb5f6648fbef92db0c9d098b3988fefebd19cf5a91d234ee817dad1613f0b8"
+    },
+    {
+      "source": "does not",
+      "before": "No lo hace",
+      "after": "no tiene",
+      "source_sha256": "0320fb3682ad23a28a13fb4a3ca2bac2013708853b1c299d72b6a1703ffece5a",
+      "target_sha256": "a49bfcfb08c6eda64a9201d638ea53de08e3dd9c29988573485855fdfc129d22"
+    },
+    {
+      "source": "have knowledge or notice of a fact the broker knew and the",
+      "before": "tener conocimiento o aviso de un hecho que el agente sabía y el",
+      "after": "conocimiento ni aviso de un hecho que el corredor conocía y que el",
+      "source_sha256": "5696f7d423e1b507d90951f79acdd80eb7c4fbb409ef6c94ba9f1f8e6a5ac536",
+      "target_sha256": "f4ece1c3e5e468c902565d227fe8b7885d70a58ef573f3a989fb65979c64872f"
+    },
+    {
+      "source": "know.",
+      "before": "Lo sé.",
+      "after": ".",
+      "source_sha256": "d986d5ed0e45e60b5cc5d1fe9fd70c776202bb18533d3476e04d62e9a8cdec3d",
+      "target_sha256": "cdb4ee2aea69cc6a83331bbe96dc2caa9a299d21329efb0336fc02a82e1839a8"
+    },
+    {
+      "source": "other than the duty",
+      "before": "con excepción del derecho",
+      "after": "salvo el deber de",
+      "source_sha256": "620582ab9ddcf15816538c5bb066a7634006333f5a0bda44c8e6c203e3a98995",
+      "target_sha256": "174defbcf7a617a182a78875f8640bc95b4e34edb38818116813c8220bcc05cb"
+    },
+    {
+      "source": "\"am I on the hook for what you do?\"",
+      "before": "\"¿Estoy en el gancho por lo que haces?\"",
+      "after": "«¿respondo yo por lo que usted haga?»",
+      "source_sha256": "c6dba48bca240b4198276bbe9845413d4899bb364d3b8c38aca010119be2c0ef",
+      "target_sha256": "24cd7e007dba1e90ee5341de8b573d7c9619fc4afd18a1ebaa24f4ceeea91629"
+    },
+    {
+      "source": ", and it makes exit two a genuine last resort — available where the agent is judgment-proof and the principal kept the benefit.",
+      "before": ", y hace de la salida dos un verdadero último recurso — disponible cuando el agente es a prueba de juicio y el principal mantuvo el beneficio.",
+      "after": ", y convierte la segunda excepción en un verdadero último recurso: se aplica cuando no puede cobrarse del agente una sentencia y el cliente conservó el beneficio.",
+      "source_sha256": "ae4051e1aa64bfc5dad79bf4594a59ac75bc6c812d9b445a271189b7330881db",
+      "target_sha256": "aebdbf592770bf3df5bc3f4a6d5a45dc9ab02d85437361c3b33f1e534fbf87aa"
+    },
+    {
+      "source": "benefited",
+      "before": "beneficiados",
+      "after": "se benefició",
+      "source_sha256": "1c138d80be61319c8c94b2dd438c2847c60016b31d370ca1039d89be2a0c1f26",
+      "target_sha256": "80e6df8e77b704d620ba75a261c90e499fa7f3675126e3dec61e1f02fbb8814e"
+    },
+    {
+      "source": "designated and managing brokers are limited dual agents",
+      "before": "brókers designados y gestionados son agentes duales limitados",
+      "after": "corredores designados y supervisores son agentes duales limitados",
+      "source_sha256": "7f208b92d28dcb2626495cea659817e896f0f52ed4bab821db2be866b8af7b77",
+      "target_sha256": "6142be3341ab42859b6526bbbf77a38f75067cb880b0590c5837c57fccc79014"
+    },
+    {
+      "source": "is not charged with the broker's knowledge.",
+      "before": "no está acusado de los conocimientos del corredor.",
+      "after": "no recibe por imputación el conocimiento del corredor.",
+      "source_sha256": "ce0dad21f233fc5c80ea092d3a9026eee63eeb7813144ed92fe5ebb2e436d179",
+      "target_sha256": "64e79d9d3f7af0dfae47bbe837a8738144e7f3d041cc71dca1cb81d55f1e0575"
+    },
+    {
+      "source": "the agent is effectively judgment-proof.",
+      "before": "el agente es efectivamente a prueba de juicios.",
+      "after": "no sea efectivamente posible cobrar del agente una sentencia.",
+      "source_sha256": "06811a739b2489853e56bb68e01e66e89a6534315a0f9066701b8b7d81236cdd",
+      "target_sha256": "4e27b856dcb2e5afa23bce0db2dfa1e8fb2bc44f52fd4383a9a35ce4a562a5ce"
+    },
+    {
+      "source": "the principal is not charged with the broker's knowledge, and is generally not liable for the broker's acts.",
+      "before": "el mandante no está encargado de los conocimientos del corredor, y por lo general no es responsable de los actos del corredor.",
+      "after": "al cliente no se le imputa el conocimiento del corredor y, en general, no responde por sus actos.",
+      "source_sha256": "ba370addb971ec5d5d86306a771ae02ba5260922bce56a777dec19fa0a1139c0",
+      "target_sha256": "a1973af2bbe57422163b0a3bdf5888deb80024e5925ae9d20f5716a9f31d190f"
+    },
+    {
+      "source": "their party; the",
+      "before": "su partido; el",
+      "after": "a su cliente; los",
+      "source_sha256": "efe5d147a6cad9be0925513b1f838f9b30e08f89bff6e486f8de682ab19ea430",
+      "target_sha256": "a6f75c2da9dfee0deb5b04290ea58aa628f77e27308c4e2d09c6ecde0db37325"
+    },
+    {
+      "source": "written consent in the services agreement, separately initialed.",
+      "before": "consentimiento por escrito en el acuerdo de servicios, inicializado por separado.",
+      "after": "consentimiento escrito de ambas partes en el acuerdo de servicios, rubricado por separado.",
+      "source_sha256": "9b0a95a995968d70f4d49017f9868e8c9e560e46f5531288c0d561aa3cd5dd61",
+      "target_sha256": "5626645a35cb909b1ed3c9fdc0f58fa28cc3e6590e3c1be964f6cdc6304bf3e3"
+    },
+    {
+      "source": "entry condition and its separately-initialed acknowledgment",
+      "before": "condición de entrada y su reconocimiento por separado inicial",
+      "after": "condición inicial y su reconocimiento rubricado por separado",
+      "source_sha256": "63fbb3c4b1f95fbeb8739cde102d8f9a6798b177ebe2eb5c4f20c718d0482312",
+      "target_sha256": "6146a4f71734fd541444b18c50c0ee5115601ca4d69aafce2f9314d5df4e2d6d"
+    },
+    {
+      "source": "— with both parties'",
+      "before": "— con las dos partes»",
+      "after": "— con el",
+      "source_sha256": "19abb81d0aa3cbff6df1cf1e213d9ae1e6538ed896579d6cfc78cba824a9f54d",
+      "target_sha256": "785a4d2df001bd3c55923fe7bd35311309106a1ad4123b8fd31656e49ebcd768"
+    },
+    {
+      "source": "Compensation is negotiated between a firm and its principal, and",
+      "before": "La indemnización se negocia entre una empresa y su principal, y",
+      "after": "La remuneración se negocia entre la firma y su cliente, y",
+      "source_sha256": "84f2e34090d661f74ae49120723e1d504429c47b2461a4461e074d1ed29c7ced",
+      "target_sha256": "4b06afaeb2d962504ef83526b8cf4a9e3c17c5432b3762d33494437304a60b88"
+    },
+    {
+      "source": "More than one party may compensate the same firm",
+      "before": "Más de una parte puede indemnizar a la misma empresa",
+      "after": "Más de una parte puede remunerar a la misma firma",
+      "source_sha256": "267ab2500479354fd8a6adaadbf129837c57f55adc940c9b72732789c161681a",
+      "target_sha256": "570ba35d695651ad66a87849f6aaf81aac2687cb34b23d06469ac8e25e712a5f"
+    },
+    {
+      "source": "Percentage compensation does not breach a duty",
+      "before": "Porcentaje de indemnización que no incumple una obligación",
+      "after": "La remuneración porcentual no incumple un deber",
+      "source_sha256": "867ea2dacd7ad8623dfb2ebcc5834855579f90e5c45e6f87ec4b1cfd6229ac38",
+      "target_sha256": "f757f2987c8d6df204f95b44e4fc00e68d033acd5d01eab2aa63b188d8bf1af4"
+    },
+    {
+      "source": "State the commercial real estate alternative and its heading.",
+      "before": "Indicar la alternativa inmobiliaria comercial y su rumbo.",
+      "after": "Indicar la alternativa para inmuebles comerciales y el encabezado requerido.",
+      "source_sha256": "69ad493d8702ab3eef6507ce28a7e0d0bbf0a3090cc677cc24a77bf7536333de",
+      "target_sha256": "da2cdae78a3e14d664827bdfcb6e4ddb035276350a03770a3a3519c7128f9e40"
+    },
+    {
+      "source": "State the rule that compensation does not create agency, and apply it.",
+      "before": "Indicar la regla de que la indemnización no crea agencia, y aplicarla.",
+      "after": "Exponer y aplicar la regla de que pagar remuneración no crea representación.",
+      "source_sha256": "a347a331373f74d3bd9d1f59c6a1f284d235f2dbf9dc59c9c4420216f607a154",
+      "target_sha256": "e98c67291640c873c680370c9d4252d90a551909f5925e2755fdabe77507077c"
+    },
+    {
+      "source": "State who may pay a firm's compensation.",
+      "before": "Estado que puede pagar la indemnización de una empresa.",
+      "after": "Indicar quién puede pagar la remuneración de la firma.",
+      "source_sha256": "f593043bd6d812d1711ca3d89d2825837be3657ecdd0f24b38281afc3bb3a71a",
+      "target_sha256": "c451a068a8cf54c9657f06640e7af1d838158be6048c871bb78b2a3e521a2fd2"
+    },
+    {
+      "source": "may be compensated by more than one party",
+      "before": "puede ser indemnizado por más de una parte",
+      "after": "puede recibir remuneración de más de una parte",
+      "source_sha256": "98414765770a6c17a7fca0aa004ae97afee714f8e24a50540ae5d3e0d099eb44",
+      "target_sha256": "d7a2689692b0f0689eb64ed9bb38497a1043b174bbfc1f4b0e69cdd766fa5a05"
+    },
+    {
+      "source": "may receive compensation based on the purchase price without breaching any duty",
+      "before": "puede recibir una compensación basada en el precio de compra sin incumplir ningún derecho",
+      "after": "puede recibir remuneración basada en el precio de compra sin incumplir ningún deber",
+      "source_sha256": "adef1923e3cfebf0904b49888787236d33fbe8d286f520b966c59f46c970590f",
+      "target_sha256": "c6353f58013a6abf7c90fe57d4b5b14619cd85952f583851297c8ac9a1d1c51c"
+    },
+    {
+      "source": "term of the services agreement",
+      "before": "plazo del acuerdo de servicios",
+      "after": "estipulación del acuerdo de servicios",
+      "source_sha256": "9ca63bce6db3fc147b2786d99aa9f07df2e630443d4fd37b6e5277c5b9042d53",
+      "target_sha256": "38354dd3ea549c400381e8140ac99ad3f2e7d889c6cc541c1584e02fbff17858"
+    },
+    {
+      "source": "the compensation paid by the buyer.\"",
+      "before": "la indemnización abonada por el comprador.\"",
+      "after": "la remuneración pagada por el comprador».",
+      "source_sha256": "dfa223c72059a93834f686f5f820c7bb186765901f93c44566232ac6968d9461",
+      "target_sha256": "239a0240fbb24b9012cb783c6b407cf7243002d5955dcf1d6cd74210643f0894"
+    },
+    {
+      "source": "the compensation paid by the seller.\"",
+      "before": "la indemnización pagada por el vendedor.\"",
+      "after": "la remuneración pagada por el vendedor».",
+      "source_sha256": "008184ac82b3523de5d15ac040326b2904e40a115d87265a4156a9eee39ded1b",
+      "target_sha256": "ffbd36695157f0852ba96e9a92abb70d0323eb5a86b43f524fc7c9840c0a04d6"
+    },
+    {
+      "source": "An agreement to pay or payment of compensation does not establish an agency relationship between the party who paid the compensation and the broker.",
+      "before": "Un acuerdo para pagar o pagar una indemnización no establece una relación de agencia entre la parte que pagó la indemnización y el intermediario.",
+      "after": "Un acuerdo para pagar remuneración o su pago no establece una relación de representación entre quien la paga y el corredor.",
+      "source_sha256": "b054b3bcc109eeda3cde37e5b4f9e5871787bc0b8fcc8f6656edc6f003cfe499",
+      "target_sha256": "3602b1c92bf0c712e151d801985d9b79fa39d612b27f758857c0f03a07ffbb01"
+    },
+    {
+      "source": "If the principal consents to sharing, the agreement states the consent and its terms. If the principal does",
+      "before": "Si el principal consiente en compartir, el acuerdo establece el consentimiento y sus términos. Si el mandante lo hace",
+      "after": "Si el cliente consiente en compartir la remuneración, el acuerdo indica ese consentimiento y sus condiciones. Si el cliente",
+      "source_sha256": "83b8ca2c314e12f9f01a406278e3f8aaa581a345c6176a681959719448ea71a4",
+      "target_sha256": "089feafb9e0ad9fab8bd261301a9395797f23ced960a83263e42127b5da70943"
+    },
+    {
+      "source": "In a services agreement with a buyer, whether the appointed broker agrees to show the buyer properties if there is no agreement or offer by any party or firm to pay compensation to the firm",
+      "before": "En un acuerdo de servicios con un comprador, si el agente designado acepta mostrar las propiedades del comprador si no hay acuerdo u oferta de cualquier parte o empresa para pagar una indemnización a la empresa",
+      "after": "En un acuerdo de servicios con un comprador, si el corredor designado acepta mostrarle inmuebles cuando ninguna parte o firma ha acordado u ofrecido remunerar a la firma",
+      "source_sha256": "d908f9e47905b757c9fbf2226c62aa4c219378206803b89e87a6a42be8c56a48",
+      "target_sha256": "4b409863d8334e1631d46c7ab3a8c722f12e9d56f2400bdc25e7f6a2c6f4be11"
+    },
+    {
+      "source": "The consent is optional; addressing it is not.",
+      "before": "El consentimiento es opcional; no lo es.",
+      "after": "Dar consentimiento es opcional; dejar constancia de si se da o no, es obligatorio.",
+      "source_sha256": "96c90be948c361f55726460e785cb83381eed1958fc1a2af28b3db4876263e94",
+      "target_sha256": "1e7f6f9f519e86101c090b5df9f12fe7da129245b7b090834dc4a04a3cf9b3ac"
+    },
+    {
+      "source": "consent,",
+      "before": "el consentimiento,",
+      "after": "consiente,",
+      "source_sha256": "b7cc9d0548c4b4d5533591ce1d26a960377760b1987b563eb7e92ff8a0052a88",
+      "target_sha256": "d3651ddf3418b3f1ef39febb928eaa88c79318520b3dda2a47f42c1e66370933"
+    },
+    {
+      "source": "terms of compensation",
+      "before": "condiciones de la indemnización",
+      "after": "condiciones de remuneración",
+      "source_sha256": "18b6772d96eb2e492fc906dbe1bb1e09c9178b420e455d2f6ccdbd5cac429711",
+      "target_sha256": "bd2b6d9fcc6442b3df1e12e3c4e229b306d6890182c23b07263a604de527a8e8"
+    },
+    {
+      "source": "the firm may not share.",
+      "before": "la empresa puede no compartir.",
+      "after": "la firma no puede compartirla.",
+      "source_sha256": "eb200625aeacc4da0c49ab5e1e361a7ce7c33b16e2b2c47e771f0ef09a405ed8",
+      "target_sha256": "4e9e90ed3fb1fcc9b3e48b18ca1dea6cd9b956260b1e53311e65484ec312647d"
+    },
+    {
+      "source": "whether the appointed broker agrees to show the buyer properties if there is no agreement or offer by any party or firm to pay compensation to the firm",
+      "before": "si el agente designado se compromete a mostrar las propiedades del comprador si no hay acuerdo u oferta de cualquier parte o empresa para pagar una indemnización a la empresa",
+      "after": "si el corredor designado acepta mostrar al comprador inmuebles cuando ninguna parte o firma ha acordado u ofrecido remunerar a la firma",
+      "source_sha256": "78088a251b9f8e6d024bf311cdf60ffe3f797314b635f93681bf4a6f3e652cd3",
+      "target_sha256": "6e830adda16de61c031661fa9141e46ca64a54049d86769d361ba28fabb414d9"
+    },
+    {
+      "source": "— including a share offered by the other side's firm. A buyer's firm cannot rely on a listing firm's offer of compensation in place of its own services agreement with the buyer.",
+      "before": "— incluyendo una parte ofrecida por la empresa de la otra parte. La empresa compradora no puede confiar en la oferta de compensación de una empresa que cotiza en bolsa en lugar de su propio acuerdo de servicios con el comprador.",
+      "after": "— incluida una parte de la remuneración ofrecida por la firma de la otra parte. La firma del comprador no puede sustituir su propio acuerdo de servicios con el comprador por la oferta de remuneración de la firma del vendedor.",
+      "source_sha256": "486616dc647f9ba3d19ac8b2321eb06846beb8c72250741eab17c41b8da97bee",
+      "target_sha256": "b4ed7af7fbbd8171b4b6271a584d3dca929e8e966213852ba27a3ab3e3cdce8a"
+    },
+    {
+      "source": "\"Agency Disclosure.\"",
+      "before": "\"Divulgación de la Agencia\".",
+      "after": "«Agency Disclosure».",
+      "source_sha256": "04dc79aeefadc2b80894dc19680fe0ad369acf4246cb5a13282df4dff09fb38a",
+      "target_sha256": "cc0fac23cc6f675cc9b45dbea2b19966a2369a28d17cbe7fc26898e4c90e1324"
+    },
+    {
+      "source": "In a separate paragraph titled \"Compensation Disclosure,\"",
+      "before": "En un párrafo separado titulado \"Divulgación de la indemnización,\"",
+      "after": "En un párrafo separado titulado «Compensation Disclosure» (divulgación de la remuneración),",
+      "source_sha256": "3281b70593386ea40f6aa447c736bc255387c6ba9cae5e4c15dd67ff5f0bd2b4",
+      "target_sha256": "73e2b56d8c84ce455eea2418d471733cb04ed2abf30a5f09ae66b6a8313ffa45"
+    },
+    {
+      "source": "The disclosure shall be set forth in a separate paragraph titled 'Compensation Disclosure' in the agreement between the buyer and seller or in a separate writing titled 'Compensation Disclosure.'",
+      "before": "La divulgación se establecerá en un párrafo separado titulado \"Divulgación de la indemnización\" en el acuerdo entre el comprador y el vendedor o en un escrito separado titulado \"Divulgación de la indemnización\".",
+      "after": "La divulgación debe constar en un párrafo separado titulado «Compensation Disclosure» (divulgación de la remuneración) en el acuerdo entre comprador y vendedor, o en un escrito separado titulado «Compensation Disclosure».",
+      "source_sha256": "433c146dc58d1ad7cedffa0c9ca75f9e0382509f63907c07ea2d529f8fab2e19",
+      "target_sha256": "e6818842efc5e86bbcbdbb24ee5b7d4b9df0155d9d48faa8c4580decbde0f9ce"
+    },
+    {
+      "source": "\"A firm may receive compensation",
+      "before": "\"Una empresa puede recibir una indemnización",
+      "after": "«Una firma puede recibir remuneración",
+      "source_sha256": "421898bed2748a03cfec1c57c7622c32661169a40e77787fb111d10dd14ad66d",
+      "target_sha256": "094934affac00410695cd81c41050290e8dfe7eff9781d6ec28f0f2c3050ad5b"
+    },
+    {
+      "source": "A seller is entitled to know what is being offered to the buyer's firm, because the seller is usually funding it. A buyer is entitled to know what a listing firm is offering their firm, because it bears on their own compensation obligation under (7)(b).",
+      "before": "Un vendedor tiene derecho a saber lo que se ofrece a la empresa del comprador, porque el vendedor por lo general lo financia. Un comprador tiene derecho a saber lo que una empresa que cotiza en bolsa está ofreciendo a su empresa, porque tiene su propia obligación de compensación en virtud de (7) b).",
+      "after": "El vendedor tiene derecho a saber qué se ofrece a la firma del comprador, porque normalmente lo financia. El comprador tiene derecho a saber qué ofrece la firma del vendedor a su propia firma, porque afecta a su obligación de remuneración conforme a (7)(b).",
+      "source_sha256": "c08a2ef534b6018ca6191f198de0bbe35a0e6179636eda04f623d8f5764f6557",
+      "target_sha256": "f735b4ec5fc5c2bbd41be506636240d5f63c7b51b7d04e2185ba6eb4c2392285"
+    },
+    {
+      "source": "It goes in the \"Agency Disclosure\" paragraph",
+      "before": "Va en el párrafo \"Divulgación de la Agencia\"",
+      "after": "Se incluye en el párrafo «Agency Disclosure»",
+      "source_sha256": "e263b2d34d82abab9301b1b6a7db906a67c0c2d34ad0698d184967e2feedee29",
+      "target_sha256": "7a447f20349b1986b5fdf019260c28d63f0429439172c018ab1ae9f1d711707e"
+    },
+    {
+      "source": "Price $742,000; compensation as in G.1 ($37,100 total); excise tax at a combined 1.78 percent given in this problem; payoff $388,400; other seller charges $2,650.",
+      "before": "Precio $742,000; compensación como en G.1 (37,100 dólares en total); impuestos especiales en un 1.78 por ciento combinado dado en este problema; pago $388,400; otro vendedor cobra $2,650.",
+      "after": "Precio $742,000; remuneración como en G.1 ($37,100 en total); impuesto de transmisión a una tasa combinada del 1.78 por ciento indicada en este problema; liquidación del préstamo $388,400; otros cargos del vendedor $2,650.",
+      "source_sha256": "48a037fb763bb8c56f551947bd30473a50c1c39ba5885209e861235b3d009234",
+      "target_sha256": "eb857e411912d3287722555ccadc1bf64d1a3322247b3b14f1b344211ea09ffd"
+    },
+    {
+      "source": "for:",
+      "before": "donde dice:",
+      "after": "por:",
+      "source_sha256": "fa597cf028148079bda0725a83b2a2bb6948695ecc261dcf14f1e6d67892d9bd",
+      "target_sha256": "1906b3794208d40a705f05469d942fd1b5d88d1e78053c98206176692ef00245"
+    },
+    {
+      "source": "— owed to",
+      "before": "— Deudas con",
+      "after": "— deber frente a",
+      "source_sha256": "a5fe21072404c268ffd5a257b11d182b2affecabf98b88d0b5212c32c224853a",
+      "target_sha256": "85e3799fcfb19d8dbe1903719ddfed536ab3cf405f092868a3741b53a4df6b26"
+    },
+    {
+      "source": "\"Agency Disclosure\"",
+      "before": "\"Divulgación de la Agencia\"",
+      "after": "«Agency Disclosure»",
+      "source_sha256": "62d116223a0fc8f05a10ae044bfed8e2e32b6532d1343c419c4c88b9baae2945",
+      "target_sha256": "edad81b9709e0729fe92c85eba68316b5c95e1c21edb18cca52d8bc54dd7099b"
+    },
+    {
+      "source": "\"Compensation Disclosure\"",
+      "before": "\"Divulgación de indemnización\"",
+      "after": "«Compensation Disclosure» (divulgación de la remuneración)",
+      "source_sha256": "529917e14643580fa66b957f9511b3afa4f73eaa6fb6be3584d091447a3426cc",
+      "target_sha256": "9c74751ae561d3d9520c23e72ccf4ef39a94bcb9e86b4ddafae1cd1fe54c3eac"
+    },
+    {
+      "source": "Consent to compensation by more than one party",
+      "before": "Consentimiento a indemnización por más de una parte",
+      "after": "Consentimiento para recibir remuneración de más de una parte",
+      "source_sha256": "f153681e375f28b7ec18be5c1026e4782402f5ea81e9d0b7e7eadb4b8269b17f",
+      "target_sha256": "8dc6d9537a417086d8b5f1bad13d7f9582960959b474127ec28a06047e6dacf9"
+    },
+    {
+      "source": "Module WA-P-04 engagement check",
+      "before": "Module WA-P-04 engagement check",
+      "after": "Comprobación de aprendizaje del módulo WA-P-04",
+      "source_sha256": "320fac43f5a709cf3f6d7996e2055ba54e72be573e6f201700813a531fbfcf01",
+      "target_sha256": "18e42c799c628f0f9186eb5162a228b5880eb713a69c0b5f3d7d317b50c55b82"
+    },
+    {
+      "source": "as anything other than a given. Items test",
+      "before": "como cualquier otra cosa que no sea un dado. Ensayo de elementos",
+      "after": "como algo distinto de un dato proporcionado para el ejercicio. Las preguntas evalúan",
+      "source_sha256": "f10dea815c0f16f81ce46799811ca3ee50fa057b3c31fa81f0e35b22ca7e98d2",
+      "target_sha256": "2767ea56430126bfdc14156393adbe5c1be127d663d9175c9b2780538fb42f7a"
+    },
+    {
+      "source": "the buyer's show-without-compensation term",
+      "before": "el plazo de presentación del comprador sin compensación",
+      "after": "la estipulación sobre mostrar inmuebles al comprador sin oferta de remuneración",
+      "source_sha256": "c5fd5e4b5d9d058339458655a38bf225ae08cac53bc12a1d0a7a62c6302e5de8",
+      "target_sha256": "970c6287e6825eee17f30fb59573cf3f5321ae82724f9e52828ba7792a1fe804"
+    },
+    {
+      "source": "the commercial exception and its heading",
+      "before": "la excepción comercial y su partida",
+      "after": "la excepción comercial y su encabezado",
+      "source_sha256": "bebc52c7c120cb73e8f452308c931c26bf745fc805fcbf993e79b46c1025b015",
+      "target_sha256": "8f627d4e1d3fd0670adcf5cff27b911be0c77231b43cf791238f7abd14a05579"
+    },
+    {
+      "source": "A limited or exclusive group of prospective buyers OR BROKERS.",
+      "before": "Un grupo limitado o exclusivo de posibles compradores O HERMANOS.",
+      "after": "Un grupo limitado o exclusivo de posibles compradores O CORREDORES.",
+      "source_sha256": "81224d5363958d603b9355916f7e89473b920eca08da2eba045b86e86d7da30f",
+      "target_sha256": "b48015702f0cfcdcf6d017d3578f6bbe6e6788da05b967f822419e2c45d8981f"
+    },
+    {
+      "source": "Accordingly this module states NO advertising rule from them — no firm-name requirement, no disclosure format, no sign rule, no internet or social media rule and no penalty.",
+      "before": "En consecuencia, este módulo no establece ninguna regla de publicidad de ellos — ningún requisito de nombre de empresa, ningún formato de divulgación, ninguna regla de signos, ninguna regla de Internet o redes sociales y ninguna sanción.",
+      "after": "Por ello, este módulo NO enuncia reglas publicitarias de esas fuentes: ni requisitos sobre el nombre de la firma, formato de divulgación, carteles, internet o redes sociales, ni sanciones.",
+      "source_sha256": "82762de1c4fa777e7cfa3fd0fb3744964715717bb6b1f1344b229c24feecdf7d",
+      "target_sha256": "96e5f844a06eab379958898134da6f96d115b08cdf97b554180465ab14600d4e"
+    },
+    {
+      "source": "Both. Not one or the other, and",
+      "before": "Ambas cosas. Ni uno ni el otro, y",
+      "after": "Ambos, no solo uno de ellos, y",
+      "source_sha256": "907037bdb987956da06fa8152450db337827d80d541b017ab76e7665ea6a7cff",
+      "target_sha256": "7db48c48fe35b857ec5021d23f7314bb413a4e5ce2e93995e33a9ef30ce0dfc2"
+    },
+    {
+      "source": "Marketing publicly and controlling access are different things, and the statute says so expressly. A broker who tells a seller \"we can't market it publicly because you don't want showings\" has misstated the statute.",
+      "before": "La comercialización pública y el control del acceso son cosas diferentes, y el estatuto lo dice expresamente. Un bróker que le dice a un vendedor \"no podemos comercializarlo públicamente porque no quieres shows\" ha fallado el estatuto.",
+      "after": "La promoción pública y el control del acceso son distintos, y la ley lo dice expresamente. El corredor que dice al vendedor «no podemos promocionarlo públicamente porque usted no quiere visitas» describe incorrectamente la ley.",
+      "source_sha256": "fbc8a95a0bf2be8595a73c84bc9793e1438deb517921a33a98de38ca59c51d3e",
+      "target_sha256": "261a020aad3ac7ff187be9f8b614aff01b56bcc27d5d83a17d59c92c8c261361"
+    },
+    {
+      "source": "Obtaining WAC 308-124 and completing this module from its own text is a submission gate.",
+      "before": "Obtener WAC 308-124 y completar este módulo a partir de su propio texto es una puerta de envío.",
+      "after": "Obtener WAC 308-124 y completar este módulo con su texto es un requisito previo a la presentación.",
+      "source_sha256": "0672c00c9afab105a03b9ca716af50299de043c239f5d9a4f02f1a5aa8c30b48",
+      "target_sha256": "662a911344847cfad4152201337a70ccb055e9a135506bea15acd45f6e86edf3"
+    },
+    {
+      "source": "no penalty, sanction or procedure is stated in this build.",
+      "before": "En este edificio no se establece ninguna sanción, sanción o procedimiento.",
+      "after": "esta versión no indica ninguna pena, sanción ni procedimiento.",
+      "source_sha256": "4439a3c0429dd78f35dc132d53f1187fd4f827239c50ccd80cc89ed22592a313",
+      "target_sha256": "ce0fb86e70ed64a069508fd6a9e8d08eec096719fff10b7c48e7dd2a5422c7d5"
+    },
+    {
+      "source": "A broker neither volunteers them",
+      "before": "Un corredor ni los voluntarios",
+      "after": "El corredor ni comunica esos datos por iniciativa propia",
+      "source_sha256": "c989d225b1cdcbe24a278a6e210b526a64fbad20db6599a9b51a53f8a736521f",
+      "target_sha256": "6dcf1e63f447e7b599325956ff454a4e2d9d635f931ede54593a735bd38810fb"
+    },
+    {
+      "source": "Deaths, crimes, drug activity and",
+      "before": "Muertes, delitos, actividad",
+      "after": "Muertes, delitos, actividades relacionadas con drogas y",
+      "source_sha256": "12db0d9ad112fde3303d0f0c087f7102acdb35bfd7b09eb6a66d539677722af6",
+      "target_sha256": "a74f04ae25f51a23cd48889e32c7cf44eee9835207d472df71cfddac91bd9169"
+    },
+    {
+      "source": "Marketing is where several of the seven bite hardest.",
+      "before": "La comercialización es donde varios de los siete mordedura más difícil.",
+      "after": "En la promoción inmobiliaria, varios de los siete deberes tienen especial importancia.",
+      "source_sha256": "510f7935d44e07ee534dfa50b5ae4d7436c448e5edf986ecc8bd81110a41fecd",
+      "target_sha256": "7e5c1336605c3f6441b86035138e970edbd918cb2f4b0210b91db15b9f75bbda"
+    },
+    {
+      "source": "That is a relief from an obligation to SEEK — it is not permission to stop presenting.",
+      "before": "Eso es un alivio de una obligación de SEEK — no es permiso para dejar de presentar.",
+      "after": "Esto elimina la obligación de BUSCAR ofertas, pero no permite dejar de presentarlas.",
+      "source_sha256": "c6e88479f36279678eac1a3cddbc470bf3d6718238ddc975dfb728b491004a2c",
+      "target_sha256": "3c819deba98ffcd7c8de762148baa68f295ab90c73540b0befc9fd1350be0cc7"
+    },
+    {
+      "source": "\"Walking distance to the light rail\"",
+      "before": "\"A la distancia del carril ligero\"",
+      "after": "«A poca distancia a pie del tren ligero»",
+      "source_sha256": "a63b25ea024007772e9ab8dad91dc3bde6941cfd1d1d8b9ff9e4b0721a9fad55",
+      "target_sha256": "9063b8900f0cdca639614850097b43c5a919233e70ea7e82f2cedd50ee6a0302"
+    },
+    {
+      "source": "A broker who summarises them has (a) risked steering and (b) made an assertion under duty (a) and duty (b).",
+      "before": "Un corredor que los resuma ha: a) puesto en riesgo la dirección y b) hecho una afirmación en virtud de los deberes a) y b).",
+      "after": "El corredor que resume esos datos (a) corre el riesgo de direccionamiento discriminatorio y (b) hace una afirmación sujeta a los deberes (a) y (b).",
+      "source_sha256": "d7980c6782485669ea4f4d375425dc78b3a18586d6c6b0bcb7a336ba2402417a",
+      "target_sha256": "980b4309dba8d670a494b6db1fa50b97e52a371c298c31684d3b79553e8521c8"
+    },
+    {
+      "source": "An advertisement shown to some people and not others, on characteristics or on proxies for them, is a distribution decision — and distribution decisions are exactly what fair housing law has always reached.",
+      "before": "Un anuncio que se muestra a unas personas y no a otras, sobre las características o los poderes para ellas, es una decisión de distribución, y las decisiones de distribución son exactamente lo que la ley de vivienda justa siempre ha alcanzado.",
+      "after": "Mostrar un anuncio a unas personas y no a otras según características personales o indicadores que las sustituyen es una decisión de distribución; esas decisiones siempre han estado sujetas a la legislación de vivienda justa.",
+      "source_sha256": "69da44e385d96b6a996a48771c59e0bb6c26bc8e53782398562ff8d2c787cbef",
+      "target_sha256": "8cb5c0e04506a62e05d341e211b975746c2f9cf5103d14472903e0fec0e80d86"
+    },
+    {
+      "source": "Appraisal.",
+      "before": "Evaluación.",
+      "after": "tasación.",
+      "source_sha256": "453eab2795eccd262ee0cee337df7649c4308c258f92b9a9ccdf234c97da3fde",
+      "target_sha256": "a16e16dc8ec0742101920029fbd5de0b93413d5d38fe8faf1f9eb028c9ec04fb"
+    },
+    {
+      "source": "Never your own estimate published as fact.",
+      "before": "Nunca publicaste tu propia estimación como un hecho.",
+      "after": "Nunca publique su propia estimación como si fuera un hecho.",
+      "source_sha256": "bcd99ee09886fa63a361ec38230399fb265ee42757c6faea11bd67ae158b31e3",
+      "target_sha256": "da60325a04e4756290d59f7477067b598959ac129063788ef2ba15c7eacb8c78"
+    },
+    {
+      "source": "Whether an addition or outbuilding was permitted",
+      "before": "Si se permite una adición o un edificio anexo",
+      "after": "Si una ampliación o construcción anexa contó con permiso",
+      "source_sha256": "ed26079957758ca463e4e47bd45296d8cfe0a1074b4249460aa205f7e3840479",
+      "target_sha256": "f7425dbe8243d0d97dd97a242a37072e7ab95a5bef9af19113e8ad8687c4bdd9"
+    },
+    {
+      "source": "Whether the property will appraise",
+      "before": "Si la propiedad va a evaluar",
+      "after": "Si la tasación respaldará el valor del inmueble",
+      "source_sha256": "c64ea1dd17454c11796a5765c0d0f06f3ac00453dc26bd53b4e862010ca62bf7",
+      "target_sha256": "81237b97c968b7edbeec890a7bcd89ec5a1351dbdf0a862d099c52de8905270c"
+    },
+    {
+      "source": "Module WA-P-05 engagement check",
+      "before": "Module WA-P-05 engagement check",
+      "after": "Comprobación de aprendizaje del módulo WA-P-05",
+      "source_sha256": "dbba9166cf06f60b224154bf42449af15361cd41ff2d204f7b31983cf79de4c9",
+      "target_sha256": "67c673e83e147143b0217d677746e080bcb9d802e6dfa0fa7d1617d1ae1f91dd"
+    },
+    {
+      "source": "RCW 18.86.130's prohibition, condition, exception and final sentence",
+      "before": "Prohibición, condición, excepción y sentencia final de la RCW 18.86.130",
+      "after": "la prohibición, condición, excepción y oración final de RCW 18.86.130",
+      "source_sha256": "39c4c40cfd0b75ccbad610c00aa56dd63197ecc72e4feb6359dfc2dd8751e6c2",
+      "target_sha256": "685ffaf24aedc5c77571f5a0d916ef940f01ddfd39d80d232000fc2baf83740e"
+    },
+    {
+      "source": "multiple listing service rule or policy.",
+      "before": "múltiples reglas o políticas de servicio de listado.",
+      "after": "regla o política de un servicio de listado múltiple (MLS).",
+      "source_sha256": "f1c01d7b78a451a382d90b152616ddd57c20ef3614a62de6bbc5f6d5d6fdfa6c",
+      "target_sha256": "610076cfeabc82c561aa9c306023d32ea920cf52110f756fb6dce2f76ba08ad9"
+    },
+    {
+      "source": "what a broker routes.",
+      "before": "que rutas de un corredor.",
+      "after": "qué cuestiones remite el corredor a especialistas.",
+      "source_sha256": "91ccdb5b746286e54193688cd36ba8fa44fcbb8bf8d5da4a641977dde8ff25dd",
+      "target_sha256": "827245665ffd2b54d62b96dcf9104fa62a28b55eb8e347e8380946b0e67ae6a1"
+    },
+    {
+      "source": ", before or as soon as reasonably practical after services commence —",
+      "before": ", antes de que comiencen los servicios o tan pronto como resulte razonablemente práctico —",
+      "after": ", antes de comenzar los servicios o tan pronto como sea razonablemente posible después de comenzarlos —",
+      "source_sha256": "42cc5e6d836defbabb7106de7064211075d2c452838e7f660c1abc7742290b99",
+      "target_sha256": "e9b2665cdb0be8320d3da9f904ba6df62531f735cdc882bf0f626b4e0f2856a8"
+    },
+    {
+      "source": "60-day buyer default",
+      "before": "Incumplimiento del comprador de 60 días",
+      "after": "plazo predeterminado de 60 días para el comprador",
+      "source_sha256": "c99fb20cb8b9c11b99eb6341f19377c09cc8556324ad5dc1f14a0a15c34e1f00",
+      "target_sha256": "bb4fa3bed117fc71d50d60fabf894ddc6c164fa70cb8d64cf98cbfec52ed380b"
+    },
+    {
+      "source": "Accordingly this module states NO account requirement, NO deposit deadline, NO reconciliation interval, NO record retention period and NO penalty.",
+      "before": "En consecuencia, este módulo establece NO requisito de cuenta, NO plazo de depósito, NO intervalo de conciliación, NO período de retención de registro y NO penalización.",
+      "after": "Por ello, este módulo NO indica requisitos de cuenta, plazos para depositar fondos, intervalos de conciliación, períodos de conservación de registros ni sanciones.",
+      "source_sha256": "90c3b64bd8d0dab48af7906fbc3e261cc212b1ad248d636476e7953041d10933",
+      "target_sha256": "80f92d178b92e2a059fb8921933245d68b0578801e045811e1487f40529003d3"
+    },
+    {
+      "source": "Account in a timely manner for all money and property received.",
+      "before": "Cuenta oportunamente todo el dinero y los bienes recibidos.",
+      "after": "Rendir cuentas oportunamente de todo el dinero y los bienes recibidos.",
+      "source_sha256": "32b5559c11ad5bf2b00b1b8f133c0de6bfcd588e2553dac1294430e65225b865",
+      "target_sha256": "8cdfb23c75936e2f5d3e2574739d7c532073ef1f3de79ac92fac829006b7fd44"
+    },
+    {
+      "source": "Confirm the closing statement against the agreement.",
+      "before": "Confirme la declaración de clausura en contra del acuerdo.",
+      "after": "Contrastar el estado de cierre con el acuerdo.",
+      "source_sha256": "16318d7bed109ea845ad001cbceffcc2ebd9c8e480e03288210c785e68e48695",
+      "target_sha256": "dcc5d86cd631f0e75705e698d4ec4fb6f3a5de6539aeda1f6aa149bbeec7398d"
+    },
+    {
+      "source": "The FIRM enters a services agreement with the principal",
+      "before": "El FIRM firma un acuerdo de servicios con el principal",
+      "after": "La FIRMA celebra un acuerdo de servicios con el cliente",
+      "source_sha256": "bbc8c21df9e1e08eb069fb4773e0dcfd0ce53b219faabbb27f3e7fab7be07869",
+      "target_sha256": "c92a2b8fd1ac319c91dd1f0149da50fc943a4206138cd7023d73c8ddbef0dba5"
+    },
+    {
+      "source": "A broker who is unsure what to do with money in a dispute asks the designated broker and counsel — before moving it.",
+      "before": "Un corredor que no está seguro de qué hacer con el dinero en una disputa le pregunta al corredor designado y al consejo — antes de trasladarlo.",
+      "after": "El corredor que no sabe qué hacer con fondos en disputa consulta al corredor designado y a un abogado antes de moverlos.",
+      "source_sha256": "3439a696888d9bb6f8089a70b289577019d875108979ca147fdc8d4e834efcec",
+      "target_sha256": "93e1cc2dd05ce0297ed43e7d00dec956d8cc00f1172f93b4042412cb66f71abf"
+    },
+    {
+      "source": "B. Money — the duty, and where the mechanics live",
+      "before": "B. El dinero — el deber, y donde viven los mecánicos",
+      "after": "B. Dinero: el deber y dónde se regulan los procedimientos",
+      "source_sha256": "3bb7c8d996b8c3fd69d7b7093790500dfd299c7cb8300ee56c222ca39c418842",
+      "target_sha256": "95fb3037c685c05af6e70f3fb68626de8ed8394516593996584a173c816d36b9"
+    },
+    {
+      "source": "Each appointed broker SOLELY represents their own party.",
+      "before": "Cada corredor designado SOLELY representa a su propio partido.",
+      "after": "Cada corredor designado representa ÚNICAMENTE a su propio cliente.",
+      "source_sha256": "5ab92f6c779a8e7674ed05bbbbf2de67a3970e87c5be5c3e3052d3a0e8c98b9f",
+      "target_sha256": "d7d33ea7ae76c761fa6e022f19ad7dcc95d02ace3fdea88ad8c958d2656543c2"
+    },
+    {
+      "source": "— owed to the principal",
+      "before": "— Deudas con el principal",
+      "after": "— deber frente al cliente",
+      "source_sha256": "658896b1ce22e10db60f574c913ee75149a90091bd5e7110e7c13df8f5d48f7d",
+      "target_sha256": "888c6c0067426737b87e4147cbaec6db62fc14c0096602f33769944457449840"
+    },
+    {
+      "source": "(RCW 18.86.010(9), .040(1)(d), .050(1)(d), .060(2)(d))*",
+      "before": "(RCW 18.86.010(9), 040(1)(d), 050(1)(d), 060(2)(d))*",
+      "after": "(RCW 18.86.010(9), .040(1)(d), .050(1)(d), .060(2)(d))*",
+      "source_sha256": "72d78975f8e789b1fc328182de5cf7b722ceb18b777a781a28b0db92a8fec7a8",
+      "target_sha256": "72d78975f8e789b1fc328182de5cf7b722ceb18b777a781a28b0db92a8fec7a8"
+    },
+    {
+      "source": "A broker with no record has no answer.",
+      "before": "Un corredor sin antecedentes no tiene respuesta.",
+      "after": "Un corredor sin documentación no puede demostrar lo sucedido.",
+      "source_sha256": "f963a48dd29ab7803e03da083ab4a398fa02f4b0e9ac5222d9ad5b3bf456cf89",
+      "target_sha256": "d9ef5d9d67494b97b706b3472b7cc94ffb9586806273307a8d98456c9decbf5b"
+    },
+    {
+      "source": "Answer the compensation questions in the agreement",
+      "before": "Responda a las cuestiones de indemnización del acuerdo",
+      "after": "Resolver en el acuerdo las cuestiones de remuneración",
+      "source_sha256": "3629478260f666a9a2c1f8b37b859f2f664d6805ab4d4925bdc44c5eab02757f",
+      "target_sha256": "a37dd51b4591daf312ca9c983e4c9d03801b9fd52d4df581384a33ce9ff034d8"
+    },
+    {
+      "source": "Keep confidences",
+      "before": "Mantener confianzas",
+      "after": "Preservar la información confidencial",
+      "source_sha256": "227eb1efda66578e035e5b11e0103f4ec5d00dd520bab102a159017b13de9b9d",
+      "target_sha256": "b3edef05068bfee5f4d5df3a6166d2d80308dced8effeda7abb737b00628c835"
+    },
+    {
+      "source": "Route what is beyond you",
+      "before": "Ruta lo que está más allá de ti",
+      "after": "Remitir a especialistas las cuestiones que excedan sus conocimientos",
+      "source_sha256": "2e6e97f9cf90ed1985beb5c6e7af6e411ec988457613aa123f346e797f224984",
+      "target_sha256": "440341c10222cc7e6377bcf274aadc5894f1e574748551b860e2e01c16dcac3f"
+    },
+    {
+      "source": "The Agency Disclosure",
+      "before": "Divulgación de la Agencia",
+      "after": "La divulgación «Agency Disclosure»",
+      "source_sha256": "90d7f89078e531d3975b6644a15cfea23548ed558df7eabfb0178938a95cbbbe",
+      "target_sha256": "90bcbee91c9a54930a8b427ad284416e94b247f464117a07292dccaa6e315d63"
+    },
+    {
+      "source": "The pamphlet acknowledgment",
+      "before": "El folleto de reconocimiento",
+      "after": "El acuse de recibo del folleto",
+      "source_sha256": "b49f6245e83a2f6ee30d17c92b98b65af77ff6b59ceb2b2f1c7fab39c72c32c5",
+      "target_sha256": "7660b35b7647b606f2e319b3191e41cb40dcbc47a33a3768fbf40ee22fef7755"
+    },
+    {
+      "source": "parties.",
+      "before": "fiestas.",
+      "after": "partes.",
+      "source_sha256": "ef209cf231d333e6c160c0cd6e25a03e39f315183003db66c14c3f0b19a78433",
+      "target_sha256": "a1263383bfe38e9e7ddf7365e918dcc3dcfcd0eb9a621c61439ce9a8058411ca"
+    },
+    {
+      "source": "— including to unrepresented parties.",
+      "before": "— incluidos los partidos no representados.",
+      "after": "— también a las partes no representadas.",
+      "source_sha256": "c8a5f65096893cf753dcba9f4391c894fe2bbd20265ada7e14c0b7aa44f500c7",
+      "target_sha256": "7cb21b6b47fe0534d88d0fdb59d94ad020914424605a4134d6a7401fbee0d20f"
+    },
+    {
+      "source": ", the Deeds of Trust Act; Washington's",
+      "before": ", la Ley de Acciones de Confianza; la Ley de Washington",
+      "after": ", la Ley de Escrituras de Fideicomiso; las normas de Washington sobre",
+      "source_sha256": "d29bfde8c65533b377bcce42436e506933ce94a100c6bc3dbf37e7aff6fb9421",
+      "target_sha256": "0eae412ce26ecc605d8a1113e565d5f5a7290947dd4dec780a23074798b421d9"
+    },
+    {
+      "source": ", the Residential Landlord-Tenant Act, and the unlawful detainer statutes.",
+      "before": ", la Ley de propietarios de viviendas y los estatutos de los detenidos ilegales.",
+      "after": ", la Ley de Arrendamientos Residenciales y las normas sobre desalojo por ocupación indebida.",
+      "source_sha256": "1375dc72ffabd892a54240e8bcd38dd768395ef66c2bf6ef314d5564c330788f",
+      "target_sha256": "7b2e727a7fe0ce82956ae4bf9c2edba802341f67a489e692bed46411eebbba4e"
+    },
+    {
+      "source": "School to use it.",
+      "before": "Escuela para usarlo.",
+      "after": "lo utilice.",
+      "source_sha256": "45e7d876472c76869ce65f339d0edd52ad6631eb7ace3117af054fee0daecfec",
+      "target_sha256": "b8d63bab23ea96d534c38a3de78505668aea15c417951555c2dcf13553f7c9d4"
+    },
+    {
+      "source": "TILA, RESPA, TRID and ECOA",
+      "before": "TILA, RESPA, TRID y ECAA",
+      "after": "TILA, RESPA, TRID y ECOA",
+      "source_sha256": "6040200c21a43ed1df57a851e79aad4633a8815a016fa29f74fecfba3b0b69de",
+      "target_sha256": "d29565f95535ab487acb7aa50cab6fd3c090235ad5b3a2dc9eb3ab5e543c840a"
+    },
+    {
+      "source": "community property",
+      "before": "propiedad de la comunidad",
+      "after": "bienes gananciales",
+      "source_sha256": "01fcf78e77d29707b41b5d262096c75170128893931c9f10e8f4c792fd0fc527",
+      "target_sha256": "32cf3410999b434cb188a3e329e3ff8ff182c1a93f591fa00bc83f3a64e1f7be"
+    },
+    {
+      "source": "intestacy",
+      "before": "intestacy",
+      "after": "sucesión intestada",
+      "source_sha256": "d7efae2a7f316158b8d2b1763901a84613719cf49fa0cd26692fa97a8f35be68",
+      "target_sha256": "0f475a0c6ddea6e75098088d8ad364752ee597cbd48a5588bad011fce7265515"
+    },
+    {
+      "source": "mechanics' lien",
+      "before": "Mecanics' lien",
+      "after": "gravamen de contratistas y proveedores",
+      "source_sha256": "4f1262b7121e0a6f27d09f4914aa9ebd3228d1bfa03955f42964fa7e9af743bd",
+      "target_sha256": "04bc519af9d6a0717dfc72b00d9a6aa15e382d1fe2aad242407fa18c4fc62442"
+    },
+    {
+      "source": "requires an approved",
+      "before": "requiere una autorización",
+      "after": "exige que una escuela autorizada",
+      "source_sha256": "776a40258474211b380516091af9017940ebe936992f1688b0d0160e5f8e771e",
+      "target_sha256": "69109879385525eb7b65fd614078bb1cc28bd1900b8b550e7937a62c3250b2e9"
     }
   ],
-  "note": "Module-01 bilingual text read; corrections ongoing, not a complete course sign-off."
+  "note": "All six lesson manuscripts (64 sections) and all 66 question sets directly compared bilingually; human linguistic/SME sign-off and duration validation remain OPEN.",
+  "coverage": {
+    "lessons_directly_compared": 6,
+    "lesson_sections_directly_compared": 64,
+    "question_sets_directly_compared": 66
+  }
 }

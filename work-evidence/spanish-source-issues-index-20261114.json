@@ -1,0 +1,528 @@
+{
+  "scope": "Preserved English-source concerns, not silently corrected through Spanish translation. Qualified official-source SME resolution remains OPEN.",
+  "groups": [
+    {
+      "evidence_file": "work-evidence/spanish-full-review-root-wi.json",
+      "location": "/source_issues",
+      "reviewer_notes": [
+        {
+          "location": "module-06, Hours 30.3, 33.1, 39 and extended examples",
+          "status": "OPEN — human SME verification required",
+          "issue": "English repeatedly says every deadline runs from binding acceptance, while also requiring the actual form’s terms to control. Verify this absolute claim against the applicable forms; translation preserves source and does not independently validate the legal claim."
+        },
+        {
+          "location": "module-07 Hour 40.4 vs module-06 Hour 32.3",
+          "status": "OPEN — human SME verification required",
+          "issue": "English blanket statement says a licensee does not prepare deeds, while preceding module distinguishes broker-approved additional conveyance forms from salesperson restrictions. Reconcile scope in English before claiming legal accuracy; source unchanged."
+        },
+        {
+          "location": "module-08 Hour 51.1",
+          "status": "OPEN — English arithmetic correction required",
+          "issue": "English correct down payment $73,600 is then described as planned $62,400 plus $13,600; actual additional cash is $11,200. Original numbers retained in Spanish."
+        },
+        {
+          "location": "module-08 Hour 51.6",
+          "status": "OPEN — English formula correction required",
+          "issue": "English cash-to-close formula begins with down payment but also subtracts loan amount already counted, double-counting financing. Worked example correctly does not subtract loan again. Source unchanged."
+        }
+      ],
+      "status": "OPEN; reviewer concern, not verified current-law determination"
+    },
+    {
+      "evidence_file": "work-evidence/spanish-full-review-central-va-lessons.json",
+      "location": "/source_issues",
+      "reviewer_notes": [
+        {
+          "lesson_id": "module-01",
+          "status": "OPEN",
+          "issue": "Section 9 labels ratio list-to-sale while defining closed price / list price; source terminology inverted. Section 2 says unit quiz follows Hour 5 though lesson ends Hour 4. Translation preserves source; author SME reconciliation required."
+        },
+        {
+          "lesson_id": "module-04",
+          "status": "OPEN",
+          "issue": "Proration arithmetic: source says 257 × 9.7808 = 2,513.67, but multiplication yields 2,513.6656 (rounds 2,513.67); valid for rounded daily amount. General lien description says judgment liens cover real and personal property, then specific subsection restricts to real property; source SME scope check needed. Tax priority asserted despite final source note saying statutory formulation unread."
+        },
+        {
+          "lesson_id": "module-07",
+          "status": "OPEN",
+          "issue": "Section 11 says all advertising remains prohibited under exemptions, while context/statute discussion concerns discriminatory advertising; source overbroad phrasing retained pending SME. Section 7 automatically calls operating-account deposit both commingling and conversion without separate evidence of use; source SME distinction needs review."
+        },
+        {
+          "lesson_id": "module-08",
+          "status": "OPEN",
+          "issue": "Section 23 claims management statute shares promotion-of-client-interests duty; module 06 section 7 explicitly says management statute has no such subdivision. Reconcile English source."
+        },
+        {
+          "lesson_id": "module-09",
+          "status": "OPEN",
+          "issue": "Section 3 repeats management promote-interests duty inconsistent with module06section7. Section13 distribution omits senior tax liens while section14 says those survive and module04 activity says paid first; author SME reconcile."
+        },
+        {
+          "lesson_id": "module-10",
+          "status": "OPEN",
+          "issue": "Section38.1 arithmetic: source says required$92,000 equals planned$80,000 plus$15,000 appraisal gap; additional cash is$12,000, raw price/appraisal gap$15,000. Source numbers retained. Section37.3 RESPA8(b) excess-market-value blanket legal conclusion requires primary-source SME review."
+        }
+      ],
+      "status": "OPEN; reviewer concern, not verified current-law determination"
+    },
+    {
+      "evidence_file": "work-evidence/spanish-full-review-central-va-lessons.json",
+      "location": "/additional_source_issues",
+      "reviewer_notes": [
+        "OPEN module11 section18: English says Comp C needed only physical adjustments, but section17 includes time/market adjustment +$1,700.",
+        "OPEN module13 section26: note says no coinsurance percentage given, although section4 gives commonly80%.",
+        "OPEN module14 section25: English annual tax4,015/365=11 times75days=825, but answer824.79. Numbers retained pending source correction."
+      ],
+      "status": "OPEN; reviewer concern, not verified current-law determination"
+    },
+    {
+      "evidence_file": "work-evidence/spanish-full-review-central-cam.json",
+      "location": "/source_issues",
+      "reviewer_notes": [
+        "OPEN lesson08: three-way reconciliation of totals alone cannot detect an allocation to a wrong beneficiary when totals match, despite repeated source assertion.",
+        "OPEN lesson09 practice6: quoted payment figures use full30year amortization although scenario includes interest-only period and shorter remaining term. Practice7 computes points breakeven on140 difference despite source explicitly mixing PITI and P&I, and introduces400000 principal only in answer. Source numbers preserved for SME.",
+        "OPEN lesson11 section6: source treats a check held over a weekend as necessarily a trust-handling problem without dates or applicable timing context.",
+        "OPEN lesson11 practice2: source equates payment after appraisal review with value-based coercion without additional facts. Practice8 assumes rescission eligibility without specifying principal-dwelling/different-lender facts.",
+        "OPEN lesson12 practice2: a lease on an owner-occupied duplex is treated as necessarily contradicting occupancy, without identifying the leased unit. Lesson12 repeats the three-way-total allocation detection issue noted in lesson08.",
+        "Lesson15 practice1 English weekday/day counts conflict (Tuesday to following Friday described as nine days; Thursday intake described as eight days; answer later states nine-day application delay). Preserve anchors pending SME correction.",
+        "Lesson15 section8 worked audit infers all six application items from email described with only property/amount/income; legal trigger inference needs source review.",
+        "Lesson15 question162 equates missing retained copy with nondelivery and says a current-dated late disclosure misrepresents delivery; distinguish evidence gap, late delivery, and fabricated chronology in SME review.",
+        "Lesson15 question164 says advertising does not belong in each borrower file, while lesson text says advertisement is part of the file; source consistency OPEN."
+      ],
+      "status": "OPEN; reviewer concern, not verified current-law determination"
+    },
+    {
+      "evidence_file": "work-evidence/spanish-full-review-root-me.json",
+      "location": "/source_issues",
+      "reviewer_notes": [
+        {
+          "question": "me-sales-agent-v1:60",
+          "status": "OPEN",
+          "finding": "English correct option gives correct $80,000 down payment but incorrectly describes $15,000 appraisal gap on top of $68,000 planned; actual increase in down payment is $12,000. Source numeric claims retained pending correction/review.",
+          "also_in_lesson": "module-06 section 6, Hour 38.1; same arithmetic contradiction retained"
+        }
+      ],
+      "status": "OPEN; reviewer concern, not verified current-law determination"
+    },
+    {
+      "evidence_file": "work-evidence/spanish-full-review-central.json",
+      "location": "/source_issues",
+      "reviewer_notes": [
+        {
+          "course": "mo-real-estate-practice-24",
+          "question": 37,
+          "issue": "English wording reverses client relationship: Whose client is the appraiser, while intended answer identifies lender as appraiser client. Source clarification OPEN; not silently corrected in translation."
+        },
+        {
+          "course": "mo-salesperson-preexam-48",
+          "question": 34,
+          "issue": "Source answer/explanation claims acceptance anchors every deadline, conflicting with clause-specific rule in MO practice q62. Cousin identified as lawyer but source treats inserting cousin clause as licensee composing it. Source/SME clarification OPEN; translation preserves source."
+        },
+        {
+          "course": "pa-real-estate-fundamentals-30",
+          "question": 23,
+          "issue": "Source infers zoning exception unavailable solely from two-unit building; actual zoning classification may differ from existing use. Source clarification OPEN."
+        },
+        {
+          "course": "pa-real-estate-fundamentals-30",
+          "question": [
+            1,
+            2,
+            4,
+            66
+          ],
+          "issue": "Inherited English education60vs75hours, ten-year window, and BPO regulatory claims require current official-source review; translation review is not legal verification."
+        },
+        {
+          "course": "pa-real-estate-practice-45",
+          "question": 1,
+          "issue": "Prompt explicitly includes written waiver, but answer/explanation assert neither contract nor written waiver present. Contract absent supports intended outcome, but English reasoning self-contradictory. Source clarification OPEN."
+        },
+        {
+          "course": "ok-basic-prelicense-90",
+          "question": 89,
+          "issue": "Same English source problem as MOpreexam34: every deadline from acceptance and lawyer-relative clause insertion conflated with drafting. Source/SME clarification OPEN."
+        },
+        {
+          "course": "ok-basic-prelicense-90",
+          "question": 141,
+          "issue": "English absolute statement that all Fair Housing exemptions vanish with licensee involvement needs official-source/SME review. Translation preserves source; substantive verification OPEN."
+        },
+        {
+          "course": "ok-basic-prelicense-90",
+          "question": 174,
+          "issue": "English explanation says confidentiality survives and the rest does not, contradicting correct answer that accounting also survives. Source clarification OPEN."
+        },
+        {
+          "course_id": "co-contracts-regulations-48",
+          "location": "module03 section3",
+          "issue": "English says Four and five are opposite sides but the immediately contrasted Exclusive Right-to-Lease and Exclusive Tenant are numbered five and six. Source preserved; author/SME correction OPEN."
+        },
+        {
+          "course_id": "co-contracts-regulations-48",
+          "location": "module04 section5 inspection notice",
+          "issue": "English absolutely states objection by email is not contract-required notice, while no actual Commission contract was read. Delivery methods must be verified against applicable contract; source preserved, SME OPEN."
+        },
+        {
+          "course_id": "co-real-estate-law-practice-48",
+          "location": "module04 section5 D.6",
+          "issue": "English assigns buyer financial ability disclosure to seller agent and cites12-10-404(3)(a), while earlier source teaches buyer-agent duty12-10-405(3)(a); official SME review OPEN, source preserved."
+        },
+        {
+          "course_id": "mo-real-estate-practice-24",
+          "location": "module-01 section 7; section 4",
+          "status": "OPEN — English source / SME review",
+          "issue": "English says confidentiality outlives relationship and the rest does not, despite preceding accounting-survival list. Earlier absolute nobody ever disciplined for early disclosure and ministerial-acts/no-substantial-contact inference are unsupported by reviewed source evidence. Translation retained source meaning; legal validation not claimed."
+        },
+        {
+          "course_id": "mo-salesperson-preexam-48",
+          "location": "module-03 section 8",
+          "status": "OPEN — English source / SME review",
+          "issue": "English says confidentiality survives and the rest does not, although adjacent statutory list expressly retains accounting too. Same contradiction as MO Practice; source meaning retained, no legal verification claimed."
+        },
+        {
+          "course_id": "mo-salesperson-preexam-48",
+          "location": "module-04 section 6",
+          "issue": "English tells learners to compute every deadline from acceptance, contradicting section 4 clause-specific trigger instruction. Spanish preserves source pending English/SME resolution.",
+          "status": "OPEN"
+        },
+        {
+          "course_id": "mo-salesperson-preexam-48",
+          "location": "module-06 section 3",
+          "issue": "English labels parcel assembly as plottage and increment as assemblage value; technical terminology appears inverted. Source/SME review OPEN.",
+          "status": "OPEN"
+        },
+        {
+          "course_id": "mo-salesperson-preexam-48",
+          "location": "module-06 section 4",
+          "issue": "English says fewer and larger adjustments weaken comparable; fewer conflicts with usual fewer-adjustments principle. Preserved pending source correction.",
+          "status": "OPEN"
+        },
+        {
+          "course_id": "mo-salesperson-preexam-48",
+          "location": "module-09 section 6",
+          "issue": "English claims course hour figures equal actual time material takes. No genuine learner duration evidence reviewed. Human duration validation remains OPEN; source claim must not be treated as validation.",
+          "status": "OPEN"
+        },
+        {
+          "course_id": "pa-real-estate-fundamentals-30",
+          "location": "module-03 section 4",
+          "issue": "English says every duplex/subdividable tract needs zoning classification, ignoring quoted zoning-based single-family exception. Same source defect as previously logged question 23; source/SME review OPEN.",
+          "status": "OPEN"
+        },
+        {
+          "course_id": "pa-real-estate-practice-45",
+          "location": "module-02 section 7",
+          "issue": "English explanatory sentence says consumer should not be provided with confidential information, reversing licensee as recipient in actual rule quoted immediately above. Source correction OPEN.",
+          "status": "OPEN"
+        },
+        {
+          "course_id": "pa-real-estate-practice-45",
+          "location": "module-05 section 3",
+          "issue": "English repeats zoning-exemption overgeneralization for duplex/subdividable tracts despite zoning-based exception. Same PA Fundamentals source issue; OPEN.",
+          "status": "OPEN"
+        },
+        {
+          "course_id": "ok-basic-prelicense-90",
+          "location": "module-07 section 4",
+          "issue": "English reverses plottage and assemblage: describes assembling as plottage and increment as assemblage value. Spanish preserves labels; needs source-author/SME correction.",
+          "status": "OPEN"
+        },
+        {
+          "course_id": "ok-basic-prelicense-90",
+          "location": "module-09 section 6",
+          "issue": "English repeatedly says every deadline runs from contract formation/acceptance; this overgeneralizes contractual anchors and conflicts with the supplement instruction to use actual contract provisions.",
+          "status": "OPEN"
+        },
+        {
+          "course_id": "ok-basic-prelicense-90",
+          "location": "module-11 section0",
+          "status": "OPEN",
+          "issue": "English calls eight hours the largest allocation after Law of Agency, although agency has seven hours. Source-author correction needed."
+        },
+        {
+          "course_id": "ok-basic-prelicense-90",
+          "location": "module-13 section4",
+          "status": "OPEN",
+          "issue": "English says every Fair Housing exemption disappears with licensee involvement; same overgeneralization already logged for question141. Source/SME resolution needed."
+        }
+      ],
+      "status": "OPEN; reviewer concern, not verified current-law determination"
+    },
+    {
+      "evidence_file": "work-evidence/spanish-full-review-root-waf.json",
+      "location": "/source_issues",
+      "reviewer_notes": [
+        {
+          "status": "OPEN",
+          "location": "module-01 instructor source note vs opening",
+          "issue": "English end note says DOL prescribed curriculum not obtained, while opening says both DOL PDFs obtained 2026-09-04. Resolve source-evidence consistency in English; Spanish preserves source meaning."
+        }
+      ],
+      "status": "OPEN; reviewer concern, not verified current-law determination"
+    },
+    {
+      "evidence_file": "work-evidence/spanish-full-review-west.json",
+      "location": "/source_issues",
+      "reviewer_notes": [
+        {
+          "course_id": "ak-salesperson-prelicense-40-v1",
+          "lesson": "module-06",
+          "section": 8,
+          "issue": "English reconciliation example subtracts deposits in transit and adds outstanding checks from bank-statement ending balance; conventional bank-side adjustment is opposite. English untouched; escalate to source/SME review."
+        },
+        {
+          "course_id": "ca-real-estate-principles-45",
+          "lesson": "lesson-02",
+          "section": 3,
+          "issue": "Annual crops: section2.10 says agreed severance needed and silence leaves strawberries with land; section4.3 teaches annual crops generally personal while growing, not automatically conveyed. Preserved English meaning; source/SME reconciliation OPEN."
+        },
+        {
+          "course_id": "ca-real-estate-principles-45",
+          "lesson": "lesson-05",
+          "section": 7,
+          "issue": "Payment-waterfall alternative says judgment88,000 paid in full and contractor receives1,700 if work begins2025. Only62,700 remains after taxes and two senior loans, so arithmetic contradicts claim. Also mechanics lien called last-recorded of five though tax lien dated2026 after2025 mechanics lien. English untouched; source/SME repair OPEN."
+        },
+        {
+          "course_id": "ca-real-estate-principles-45",
+          "lesson": "lesson-08",
+          "section": 7,
+          "issue": "English explicitly says contingencies do not expire automatically, but later timeline says contingency expires with unread specialist reports. Preserved English meaning; source/SME terminology reconciliation OPEN."
+        },
+        {
+          "course_id": "ca-real-estate-principles-45",
+          "lesson": "lesson-08",
+          "section": 8,
+          "issue": "English worked liquidated-damages example says deposit available immediately without litigation, while same lesson teaches mutual escrow instructions and deposit retained pending resolution. Unqualified worked-example claim requires source/SME review; no English amendment."
+        },
+        {
+          "course_id": "ca-real-estate-principles-45",
+          "lesson": "lesson-11",
+          "section": 4,
+          "issue": "English says a borrower signing subordination in seller-carried note may find their security behind construction loan; security belongs to lender/seller, not borrower. Source untouched; SME review OPEN."
+        },
+        {
+          "course_id": "ca-real-estate-principles-45",
+          "lesson": "lesson-11",
+          "section": 8,
+          "issue": "English states principal pays protected purchase-money portion first and says this preserves protection as long as possible; paying protected portion first instead reduces protected balance sooner. Also worked example continues calling full original 640,000 protected after principal payments. Source untouched; SME clarification OPEN."
+        },
+        {
+          "course_id": "ca-real-estate-principles-45",
+          "lesson": "lesson-11",
+          "section": 10,
+          "issue": "Practice problem 2 states a transfer to adult son triggers due-on-sale clause without discussing protected family-transfer exceptions. Potential overbroad legal claim requires official-source/SME review; translation preserves source, no legal verification claimed."
+        },
+        {
+          "course_id": "ca-real-estate-principles-45",
+          "question": "ca-real-estate-principles-45:133",
+          "issue": "English answer/explanation says both properties have 6.5% cap rate, but A $56,000 / $800,000 equals7%; B $42,250/$650,000 equals6.5%. Numbers and keyed answer preserved; source correction OPEN."
+        },
+        {
+          "course_id": "ca-real-estate-principles-45",
+          "lesson": "lesson-13",
+          "issue": "English transfer-tax worked arithmetic for500001 appears inconsistent with rounded500/1000 units; preserve source and refer to SME. English untouched; human SME review OPEN."
+        },
+        {
+          "course_id": "ca-real-estate-principles-45",
+          "lesson": "lesson-13",
+          "issue": "English cash-on-cash/negative leverage conclusion needs SME arithmetic review; translation does not independently establish investment claim. English untouched; human SME review OPEN."
+        },
+        {
+          "course_id": "ca-real-estate-practice-45",
+          "lesson": "lesson-02",
+          "issue": "Reserve example calls three months a90–120day period; source arithmetic/wording requires review. English untouched; human SME review OPEN."
+        },
+        {
+          "course_id": "ca-real-estate-practice-45",
+          "lesson": "lesson-03",
+          "issue": "Written buyer agreement before visit described broadly as policy rather than legal duty; reconcile current official source and related lesson07 question66 before regulatory reliance. English untouched; human SME review OPEN."
+        },
+        {
+          "course_id": "ca-real-estate-practice-45",
+          "lesson": "lesson-06",
+          "issue": "Assistance animal example names two protected characteristics but appears to establish only disability. Fair-housing advertising categorical school/family-friendly claims require SME review. English untouched; human SME review OPEN."
+        },
+        {
+          "course_id": "ca-real-estate-practice-45",
+          "lesson": "lesson-09",
+          "issue": "Problem4 calls early investigation a preventable failure despite source teaching early investigation as good practice; source explanation needs reconciliation. English untouched; human SME review OPEN."
+        },
+        {
+          "course_id": "ca-real-estate-practice-45",
+          "lesson": "lesson-11",
+          "issue": "English says preliminary report is superseded by policy, not replaced by it; apparent synonym distinction remains unclear. English untouched; human SME review OPEN."
+        },
+        {
+          "course_id": "ca-real-estate-practice-45",
+          "lesson": "lesson-12",
+          "issue": "Trust-account discussion implies misallocation among individual ledgers is detectable through three-way aggregate totals; totals alone cannot establish individual-account accuracy. Source/SME review OPEN. English untouched; human SME review OPEN."
+        },
+        {
+          "course_id": "ca-real-estate-practice-45",
+          "lesson": "lesson-15",
+          "issue": "Problem5 timeline refers to period ending on17/18 and fourdaysremaining inconsistently; source unchanged. English untouched; human SME review OPEN."
+        },
+        {
+          "course_id": "ca-real-estate-practice-45",
+          "lesson": "lesson-15",
+          "issue": "Problem6 says parties agreed by email while explanation describes unauthorized/nonparty agreement; source contradiction remains. English untouched; human SME review OPEN."
+        }
+      ],
+      "status": "OPEN; reviewer concern, not verified current-law determination"
+    },
+    {
+      "evidence_file": "work-evidence/spanish-full-review-root-cam.json",
+      "location": "/source_issues",
+      "reviewer_notes": [
+        {
+          "status": "OPEN",
+          "location": "lesson-02 section10 problem3",
+          "issue": "English states deed transfer to a son triggers due-on-sale clause without addressing protected family transfers or loan/property scope. Retained faithfully; official-source SME review required before treating as categorical law."
+        },
+        {
+          "status": "OPEN",
+          "location": "lesson-05 section7 5.3",
+          "issue": "English says using take-home/net income produces ratio wrong in borrower favor. Lower denominator increases DTI, ordinarily opposite. Spanish preserves source direction; SME correction required."
+        },
+        {
+          "status": "OPEN",
+          "location": "lesson-05 section3 1.3 and section4 opening",
+          "issue": "English generalizes six-item application definition across federal obligations and says verification distinguishes application from conversation. Reconcile TRID vs ECOA definitions and verification timing with official sources; translation does not certify these claims."
+        },
+        {
+          "status": "OPEN",
+          "location": "lesson-05 section10 problem7",
+          "issue": "English prompt lists four borrower actions but solution says all five. Translation preserves source; reconcile exercise count."
+        },
+        {
+          "status": "OPEN",
+          "location": "lesson-07 section5 3.4 and repeated glossary/problems",
+          "issue": "English describes dwelling-secured credit applications generally as requiring ethnicity/race/sex monitoring collection; precise Regulation B/HMDA scope and exceptions require official-source SME check before treating blanket statement as verified."
+        }
+      ],
+      "status": "OPEN; reviewer concern, not verified current-law determination"
+    },
+    {
+      "evidence_file": "work-evidence/spanish-full-review-texas.json",
+      "location": "/additional_courses/tx-principles-real-estate-ii-30/english_source_issues",
+      "reviewer_notes": [
+        {
+          "source_sha256_prefix": "e4253c2b",
+          "issue": "English says $69,000 nearly doubles actual percentage rent, but preceding worked example yields $21,000. Preserved source claim; SME correction remains OPEN."
+        },
+        {
+          "source_sha256_prefix": "2823f96f",
+          "issue": "English states 30-hour course cannot be reported complete in enrollment week although quoted elapsed-time rule is >60 hours, which can occur within a week. English rule/claim preserved; SME OPEN."
+        },
+        {
+          "source_sha256_prefix": "092745c3",
+          "issue": "English says course being read is half of 60-hour qualifying requirement, despite module disclaimer that this course has no TREC approval/qualifying credit. Source preserved; clarify source wording under SME review."
+        },
+        {
+          "source_sha256_prefix": "612a61b8",
+          "issue": "English says Texas caps ownership at more than three houses; wording conflicts with explanatory cap elsewhere. Source preserved; English-source/SME clarification OPEN."
+        },
+        {
+          "source_sha256_prefix": "593e6cfb",
+          "issue": "English describes $10,000 penalty tier as a prior discriminatory practice, then $25,000 for one prior practice. Potential missing negation in source; source preserved and SME clarification OPEN."
+        }
+      ],
+      "status": "OPEN; reviewer concern, not verified current-law determination"
+    },
+    {
+      "evidence_file": "work-evidence/spanish-full-review-texas.json",
+      "location": "/english_source_issues",
+      "reviewer_notes": [
+        {
+          "course_id": "tx-principles-real-estate-i-30",
+          "lesson_index": 5,
+          "section_index": 3,
+          "source_hash_prefix": "cf569380",
+          "issue": "Buyer expectation damages formula says contract price minus market value, but following paragraph uses market430000 minus contract400000 for positive30000; source inconsistency retained for SME. No legal correction made."
+        },
+        {
+          "course_id": "tx-principles-real-estate-ii-30",
+          "source_hash_prefix": "6d28caf9",
+          "issue": "Exercise asks holdover status on morning of August 31 although fixed lease term runs through August 31. Preserved source; SME review OPEN."
+        },
+        {
+          "course_id": "tx-law-of-agency-30",
+          "lesson_index": 2,
+          "source_sha256_prefixes": [
+            "fb59ad13",
+            "e4f7e771"
+          ],
+          "issue": "English says disclosing/correcting knowledge satisfies the second condition of 1101.805(e), although quoted second condition is failure to disclose. Same inconsistency previously flagged in question LOA-T03U4-Q. Translation retains English proposition; SME resolution OPEN."
+        },
+        {
+          "course": "tx-law-of-agency-30",
+          "location": "lesson 6 section 4 optional exercise, source 06deaf37/021d5d56/8c3ce7b8",
+          "issue": "English states listing expires July 15, then property sells within listing term yet closes September 4. Could refer to sale contract execution before expiration but chronology is ambiguous; preserved source. SME clarification OPEN."
+        },
+        {
+          "course": "tx-law-of-agency-30",
+          "location": "lesson 10 section 3, 59b53b20 / 17270de0 / f25a24d6",
+          "issue": "English statutory quote says may award not more than three times damages; worked examples add a further three times to base. Source numbers retained; legal interpretation and damages arithmetic require human SME reconciliation. OPEN."
+        },
+        {
+          "course_id": "tx-law-of-agency-30",
+          "lesson_index": 11,
+          "source_id_prefix": "bfdff1da",
+          "status": "OPEN — human SME reconciliation",
+          "issue": "English recap says ten days to register or stop using a name; earlier section 4 states registration before use, and ten-day notification after ceasing use. Translation preserves the English claim; no legal rule silently changed."
+        }
+      ],
+      "status": "OPEN; reviewer concern, not verified current-law determination"
+    },
+    {
+      "evidence_file": "work-evidence/spanish-full-review-central-nc-lessons.json",
+      "location": "/source_issues",
+      "reviewer_notes": [
+        {
+          "location": "module05 sections3/4",
+          "status": "OPEN",
+          "issue": "English section4 still requires state-licensed asbestos contractor, contradicting corrected section3 accreditation terminology. Source-author correction needed; Spanish preserves each source."
+        },
+        {
+          "lesson_id": "module-08",
+          "status": "OPEN",
+          "issue": "English sections 2/10 say WWREA capture/page review outstanding, while sections 3/12 say retained and reviewed; section 7 says square footage guidelines not obtained, section 12 says retained/applied. Requires source-owner reconciliation; translated meaning preserved."
+        },
+        {
+          "lesson_id": "module-11",
+          "status": "OPEN",
+          "issue": "English states Commission forms not obtained, conflicting with Module 08/10 retained/reviewed statements. English due-diligence structural statements cannot be reconciled against current Form 2-T, explicitly unavailable. No legal certification claimed."
+        },
+        {
+          "lesson_id": "module-15",
+          "status": "OPEN",
+          "issue": "English pure-race section says second buyer takes against the world without qualification; stigma section uses physical=material/history=not shorthand contrary to Module 10 warning; Good Funds section equates statutory settlement/closing vocabulary contrary to Module 11 distinction. Translation preserves source; legal-source reconciliation remains human SME work."
+        }
+      ],
+      "status": "OPEN; reviewer concern, not verified current-law determination"
+    },
+    {
+      "evidence_file": "work-evidence/spanish-full-review-root-va.json",
+      "location": "/source_issues",
+      "reviewer_notes": [
+        {
+          "question": 101,
+          "status": "OPEN",
+          "issue": "Correct down payment is $92,000; English says $15,000 appraisal gap on top of planned $80,000, which would sum $95,000. Actual increase $12,000. Preserve source figures pending SME correction."
+        },
+        {
+          "question": 150,
+          "status": "OPEN",
+          "issue": "English rounds acres to 1.398 before multiplying to $109,044; exact acreage yields about $109,049.59. Rounding convention needs clarification."
+        },
+        {
+          "question": 134,
+          "status": "OPEN",
+          "issue": "Blanket assertion that title insurance never responds to encroachment requires policy-specific SME review."
+        }
+      ],
+      "status": "OPEN; reviewer concern, not verified current-law determination"
+    }
+  ]
+}
