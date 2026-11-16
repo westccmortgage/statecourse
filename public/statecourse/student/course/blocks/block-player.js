@@ -21,6 +21,10 @@ const state = {
   sessionId: crypto.randomUUID(),
   lastInteraction: Date.now(),
   heartbeat: null,
+  visualTimer: null,
+  visualElapsedSeconds: 0,
+  lastVisualTick: Date.now(),
+  heartbeatPending: false,
 };
 
 const $ = (selector) => document.querySelector(selector);
@@ -95,6 +99,31 @@ function formatCountdown(seconds) {
 
 function currentStudyGateRemaining() {
   return Math.max(0, Number(currentScreen()?.studyGateRemainingSeconds || 0));
+}
+
+function clockIsActive() {
+  const idleSeconds = Math.floor((Date.now() - state.lastInteraction) / 1000);
+  return document.visibilityState === "visible" && document.hasFocus() && idleSeconds < 120;
+}
+
+function visualGateRemaining() {
+  return Math.max(0, currentStudyGateRemaining() - state.visualElapsedSeconds);
+}
+
+function tickVisualTimer() {
+  const now = Date.now();
+  const elapsed = Math.floor((now - state.lastVisualTick) / 1000);
+  if (elapsed < 1) return;
+  state.lastVisualTick += elapsed * 1000;
+  if (!state.data || state.data.mode !== "student" || !clockIsActive()) {
+    if (state.data) applyStudyGate();
+    return;
+  }
+  state.visualElapsedSeconds += elapsed;
+  applyStudyGate();
+  /* The display may count provisionally, but only the server can unlock navigation. Ask for an
+     immediate authoritative heartbeat at zero instead of making the student wait for refresh. */
+  if (visualGateRemaining() === 0 && currentStudyGateRemaining() > 0) sendHeartbeat();
 }
 
 /* ── header ──────────────────────────────────────────────────────────────────────────────── */
@@ -193,8 +222,9 @@ function renderNav() {
 }
 
 function applyStudyGate() {
-  const remaining = currentStudyGateRemaining();
-  const gated = state.data?.mode === "student" && remaining > 0;
+  const serverRemaining = currentStudyGateRemaining();
+  const remaining = visualGateRemaining();
+  const gated = state.data?.mode === "student" && serverRemaining > 0;
   for (const button of document.querySelectorAll("#screenActivity button")) {
     if (gated && !button.disabled) {
       button.disabled = true;
@@ -213,7 +243,9 @@ function applyStudyGate() {
         ? `Study timer paused. Return to this page to unlock Continue (${formatCountdown(remaining)} remaining).`
         : idleSeconds >= 120
           ? `Study timer paused after inactivity. Interact to continue (${formatCountdown(remaining)} remaining).`
-          : `Continue unlocks after ${formatCountdown(remaining)} of active study on the required timeline.`)
+          : remaining > 0
+            ? `Continue unlocks after ${formatCountdown(remaining)} of active study on the required timeline.`
+            : "Confirming recorded study time…")
     : (!visible || !focused
         ? "Paused while this page is not active."
         : idleSeconds >= 120
@@ -585,6 +617,8 @@ function goPrevious() {
 async function refresh({ keepView = false } = {}) {
   const previousView = state.view;
   state.data = await getBlocks();
+  state.visualElapsedSeconds = 0;
+  state.lastVisualTick = Date.now();
   if (!state.lessonLines) await loadLesson(state.data.assignment.contentPath);
   state.view = keepView && previousView
     ? {
@@ -607,7 +641,8 @@ async function refresh({ keepView = false } = {}) {
 
 /* ── time: the existing heartbeat pipeline, with screen context ──────────────────────────── */
 async function sendHeartbeat() {
-  if (!state.data) return;
+  if (!state.data || state.heartbeatPending) return;
+  state.heartbeatPending = true;
   const idleSeconds = Math.floor((Date.now() - state.lastInteraction) / 1000);
   const visible = document.visibilityState === "visible";
   const focused = document.hasFocus();
@@ -617,15 +652,17 @@ async function sendHeartbeat() {
       eventType: "heartbeat", sessionId: state.sessionId, visible, focused, idleSeconds,
       userAgent: navigator.userAgent, blockId: currentBlock()?.id, screenId: currentScreen()?.id,
     });
-    if (result?.creditedSeconds && state.data.mode === "student") {
-      state.data.header.studyTimeSeconds += result.creditedSeconds;
+    const creditedSeconds = Math.max(0, Number(result?.creditedSeconds || 0));
+    if (creditedSeconds && state.data.mode === "student") {
+      state.data.header.studyTimeSeconds += creditedSeconds;
       const expectedMinutes = Number(state.data.assignment.expectedMinutes || 0);
       $("#studyTime").textContent = expectedMinutes > 0
         ? `${formatMinutes(state.data.header.studyTimeSeconds)} / ${expectedMinutes} min required`
         : formatMinutes(state.data.header.studyTimeSeconds);
       const screen = currentScreen();
-      screen.studyGateRemainingSeconds = Math.max(0, Number(screen.studyGateRemainingSeconds || 0) - result.creditedSeconds);
+      screen.studyGateRemainingSeconds = Math.max(0, Number(screen.studyGateRemainingSeconds || 0) - creditedSeconds);
       screen.studyGateReady = screen.studyGateRemainingSeconds === 0;
+      state.visualElapsedSeconds = Math.max(0, state.visualElapsedSeconds - creditedSeconds);
       applyStudyGate();
       if(state.data.trainingModule) {
         state.data.trainingModule.remainingStudySeconds=Math.max(0,state.data.trainingModule.remainingStudySeconds-result.creditedSeconds);
@@ -635,6 +672,8 @@ async function sendHeartbeat() {
     if(result.moduleCompleted && state.data.trainingModule && !state.data.trainingModule.completed)await refresh({keepView:true});
   } catch {
     $("#timerState").textContent = "Connection interrupted. Study time is paused until the record reconnects.";
+  } finally {
+    state.heartbeatPending = false;
   }
 }
 
@@ -659,6 +698,8 @@ addEventListener("blur", sendHeartbeat);
     clearInterval(state.heartbeat);
     sendHeartbeat();
     state.heartbeat = setInterval(sendHeartbeat, 15000);
+    clearInterval(state.visualTimer);
+    state.visualTimer = setInterval(tickVisualTimer, 1000);
   } catch (error) {
     console.error(error);
     message.textContent = error.message === "block_delivery_not_available"

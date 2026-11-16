@@ -88,6 +88,9 @@ test("client and both server completion paths enforce the same time gate", async
     fs.readFile("netlify/functions/student-course.mjs", "utf8"),
   ]);
   assert.match(client, /Continue unlocks after/);
+  assert.match(client, /setInterval\(tickVisualTimer, 1000\)/);
+  assert.match(client, /visualGateRemaining\(\) === 0 && currentStudyGateRemaining\(\) > 0/);
+  assert.match(client, /Confirming recorded study time/);
   assert.match(client, /next\.disabled = needsAction \|\| currentStudyGateRemaining\(\) > 0/);
   assert.match(blocksApi, /assertStudyGate\(ctx, delivery, nav, regulatory, screen\)/);
   assert.match(blocksApi, /assertStudyGate\(ctx, delivery, nav, regulatory, retrievalScreen\)/);
