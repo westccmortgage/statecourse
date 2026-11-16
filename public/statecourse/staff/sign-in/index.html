@@ -4,7 +4,8 @@
 <body class="staff-verification"><main><p>StateCourse</p><h1>Staff verification</h1>
 <p>Use your staff account and authenticator to continue.</p>
 <form id="login"><label>Email<input name="email" type="email" autocomplete="username" required></label>
-<label>Password<input name="password" type="password" autocomplete="current-password" required></label><button>Sign in</button></form>
+<label>Password<input name="password" type="password" autocomplete="current-password" required></label>
+<button id="togglePassword" class="secondary" type="button" aria-pressed="false">Show password</button><button>Sign in</button></form>
 <form id="mfa" hidden><label>Authenticator<select name="factor"></select></label>
 <label>Verification code<input name="code" inputmode="numeric" autocomplete="one-time-code" pattern="[0-9]{6}" maxlength="6" required></label>
 <p id="purpose">Verify staff access</p><button>Verify and continue</button></form>

@@ -1,4 +1,5 @@
 const status = document.querySelector('#status'), login=document.querySelector('#login'), mfa=document.querySelector('#mfa');
+const password=login.elements.password, togglePassword=document.querySelector('#togglePassword');
 const params=new URLSearchParams(location.search);
 const ownerKeys=['client_id','agent_id','vault_id','nonce','code_challenge'];
 const ownerConnect=params.get('connect')==='owner' ? Object.fromEntries(ownerKeys.map(k=>[k,params.get(k)])) : null;
@@ -16,6 +17,13 @@ async function factors() {
   for(const factor of data.factors) { const option=document.createElement('option');option.value=factor.id;option.textContent=factor.name;select.append(option); }
   if(ownerConnect) document.querySelector('#purpose').textContent='Approve the existing StateCourse Command Center OAuth connection. No payment or regulatory submission is performed.';
 }
+togglePassword.addEventListener('click',()=>{
+  const visible=password.type==='text';
+  password.type=visible?'password':'text';
+  togglePassword.textContent=visible?'Show password':'Hide password';
+  togglePassword.setAttribute('aria-pressed',String(!visible));
+  password.focus();
+});
 login.addEventListener('submit',async e=>{e.preventDefault();status.textContent='Signing in…';
   try {await json('/api/admin/session',{email:login.elements.email.value,password:login.elements.password.value});login.elements.password.value='';await factors();status.textContent='Enter your authenticator code.';}
   catch(e){login.elements.password.value='';status.textContent=e.message;}

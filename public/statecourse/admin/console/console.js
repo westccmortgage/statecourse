@@ -99,6 +99,15 @@ function signInError(error) {
   return "Sign-in is temporarily unavailable. Please try again shortly.";
 }
 
+$("#showSignInPassword").addEventListener("click", (event) => {
+  const password = $("#signInPassword");
+  const show = password.type === "password";
+  password.type = show ? "text" : "password";
+  event.currentTarget.textContent = show ? "Hide password" : "Show password";
+  event.currentTarget.setAttribute("aria-pressed", String(show));
+  password.focus();
+});
+
 $("#signInForm").addEventListener("submit", async (event) => {
   event.preventDefault();
   const button = $("#signInForm button[type='submit']");
