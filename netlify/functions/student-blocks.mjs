@@ -25,6 +25,11 @@ import {
   publicBlockQuestion, scoreBlockQuestion, sectionsEvidenced,
 } from "../../config/california-block-engine.mjs";
 import { getCourseDelivery, getCourseQuestion as getBlockQuestion } from "../../config/course-registry.mjs";
+import {
+  earlierDeliveryPosition,
+  firstUnmetStudyGate,
+  screenStudyGate,
+} from "../../config/california-block-study-gates.mjs";
 import { applyConsoleVideos, consoleVideosForDelivery } from "./_lib/console-video-overlay.mjs";
 import { contentForEnrollment, overlayText } from "./_lib/console-content.mjs";
 
@@ -102,10 +107,15 @@ function deriveAll(delivery, progress, attempts, regulatory) {
 
 /** The browser's view of a block: structure, derived status, and — for its retrieval screens —
     the answerable question in public (keyless) form. */
-function publicBlocks(ctx, delivery, derived) {
+function publicBlocks(ctx, delivery, derived, activeSeconds) {
+  const assignment = ctx.course.assignments.find((item) => item.id === delivery.assignmentId);
   return delivery.blocks.map((block) => {
     const status = derived.statusByBlock.get(block.id);
     const completed = new Set(derived.completedByBlock.get(block.id));
+    const lastTimedScreen = [...block.screens].reverse().find((screen) => screen.type !== "completion");
+    const blockTimeReady = !(ctx.mode === "student" && ctx.course.state === "CA" && !ctx.trainingRuntime)
+      || !lastTimedScreen
+      || screenStudyGate(delivery, assignment?.expectedMinutes, lastTimedScreen.id, activeSeconds).ready;
     return {
       id: block.id,
       sequence: block.sequence,
@@ -113,22 +123,31 @@ function publicBlocks(ctx, delivery, derived) {
       learningObjective: block.learningObjective,
       required: block.required !== false,
       regulatoryMastery: Boolean(block.regulatoryMastery),
-      status: status.status,
+      status: status.status === "MASTERED" && !blockTimeReady ? "IN_PROGRESS" : status.status,
       activeRemediation: status.activeRemediation,
-      screens: block.screens.map((screen) => ({
-        id: screen.id,
-        sequence: screen.sequence,
-        type: screen.type,
-        title: screen.title,
-        content: screen.content || null,
-        practiceProblem: screen.practiceProblem || null,
-        videos: screen.videos || null,
-        documents: screen.documents || null,
-        completed: completed.has(screen.id),
-        ...(screen.type === "retrieval" ? {
-          question: publicBlockQuestion(getBlockQuestion(ctx.course.courseId, screen.questionId)),
-        } : {}),
-      })),
+      screens: block.screens.map((screen) => {
+        const gate = ctx.mode === "student" && ctx.course.state === "CA" && !ctx.trainingRuntime
+          ? screenStudyGate(delivery, assignment?.expectedMinutes, screen.id, activeSeconds)
+          : { requiredCumulativeSeconds: 0, allocatedSeconds: 0, remainingSeconds: 0, ready: true };
+        return {
+          id: screen.id,
+          sequence: screen.sequence,
+          type: screen.type,
+          title: screen.title,
+          content: screen.content || null,
+          practiceProblem: screen.practiceProblem || null,
+          videos: screen.videos || null,
+          documents: screen.documents || null,
+          completed: completed.has(screen.id),
+          minimumStudySeconds: gate.allocatedSeconds,
+          requiredCumulativeStudySeconds: gate.requiredCumulativeSeconds,
+          studyGateRemainingSeconds: gate.remainingSeconds,
+          studyGateReady: gate.ready,
+          ...(screen.type === "retrieval" ? {
+            question: publicBlockQuestion(getBlockQuestion(ctx.course.courseId, screen.questionId)),
+          } : {}),
+        };
+      }),
     };
   });
 }
@@ -248,6 +267,19 @@ function assertReachable(delivery, derived, block, screen) {
   }
 }
 
+function assertStudyGate(ctx, delivery, assignment, regulatory, screen) {
+  if (ctx.course.state !== "CA" || ctx.trainingRuntime || ctx.mode !== "student") return;
+  const gate = screenStudyGate(delivery, assignment?.expectedMinutes, screen.id, regulatory?.activeSeconds);
+  if (!gate.ready) {
+    const error = Object.assign(new Error("study_time_required"), {
+      statusCode: 409,
+      remainingSeconds: gate.remainingSeconds,
+      requiredCumulativeSeconds: gate.requiredCumulativeSeconds,
+    });
+    throw error;
+  }
+}
+
 async function handleEvent(ctx, input) {
   const assignmentId = String(input.assignmentId || "");
   const delivery = deliveryFor(ctx, assignmentId);
@@ -272,6 +304,7 @@ async function handleEvent(ctx, input) {
     const screen = findScreen(block, String(input.screenId || ""));
     if (screen.type === "retrieval") fail("retrieval_screens_complete_by_evidence", 409);
     assertReachable(delivery, derived, block, screen);
+    assertStudyGate(ctx, delivery, nav, regulatory, screen);
     const completed = new Set(derived.completedByBlock.get(block.id));
     if (!completed.has(screen.id)) {
       completed.add(screen.id);
@@ -291,6 +324,7 @@ async function handleEvent(ctx, input) {
     const screen = findScreen(block, String(input.screenId || ""));
     if (screen.type !== "practice") fail("not_a_practice_screen", 409);
     assertReachable(delivery, derived, block, screen);
+    assertStudyGate(ctx, delivery, nav, regulatory, screen);
     /* Writing an analysis is OPTIONAL (owner decision 2026-08-28). This event exists for the
        student who chooses to save one: the only refusal is an empty save, because there is
        nothing to record — revealing the solution without writing goes through screen_completed
@@ -318,6 +352,7 @@ async function handleEvent(ctx, input) {
     const retrievalScreen = block.screens.find((screen) => screen.type === "retrieval" &&
       (screen.questionId===questionId || getBlockQuestion(ctx.course.courseId,screen.questionId)?.replacementId===questionId));
     if (!retrievalScreen) fail("block_has_no_retrieval", 409);
+    assertStudyGate(ctx, delivery, nav, regulatory, retrievalScreen);
     const blockState = derived.statusByBlock.get(block.id);
 
     if (question.role === "primary") {
@@ -403,8 +438,13 @@ async function blocksPayload(ctx, assignmentId) {
     contentForEnrollment(ctx.enrollment),
   ]);
   const derived = deriveAll(delivery, progress, attempts, regulatory);
+  const timeGatePosition = ctx.mode === "student" && ctx.course.state === "CA" && !ctx.trainingRuntime
+    ? firstUnmetStudyGate(delivery, nav.expectedMinutes, nav.activeSeconds)
+    : null;
+  const position = earlierDeliveryPosition(delivery, derived.position, timeGatePosition);
+  const publicBlockRows = publicBlocks(ctx, delivery, derived, Number(nav.activeSeconds || 0));
   const completedAssignments = assignments.filter((item) => item.status === "completed").length;
-  const masteredBlocks = delivery.blocks.filter((block) => derived.statusByBlock.get(block.id).status === "MASTERED").length;
+  const masteredBlocks = publicBlockRows.filter((block) => block.status === "MASTERED").length;
   return {
     mode: ctx.mode,
     reviewNotice: ctx.mode === "student" ? null
@@ -428,6 +468,7 @@ async function blocksPayload(ctx, assignmentId) {
       sequence: nav.sequence,
       title: nav.title,
       of: ctx.course.assignmentCount,
+      expectedMinutes: nav.expectedMinutes,
       contentPath: delivery.contentPath,
       regulatory,
     },
@@ -439,10 +480,10 @@ async function blocksPayload(ctx, assignmentId) {
     /* Block-map structure first, then whatever the console has released for this delivery
        unit laid over it. Read every time, so a withdrawal takes effect on the next load. */
     blocks: applyConsoleVideos(
-      overlayText(publicBlocks(ctx, delivery, derived), publishedText, assignmentId),
+      overlayText(publicBlockRows, publishedText, assignmentId),
       await consoleVideosForDelivery(ctx.course.courseId, assignmentId),
     ),
-    position: derived.position,
+    position,
     spacedRetrieval: [],
   };
 }

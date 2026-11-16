@@ -86,6 +86,17 @@ function formatMinutes(seconds) {
   return `${minutes} min`;
 }
 
+function formatCountdown(seconds) {
+  const value = Math.max(0, Math.ceil(Number(seconds || 0)));
+  const minutes = Math.floor(value / 60);
+  const remainder = value % 60;
+  return `${minutes}:${String(remainder).padStart(2, "0")}`;
+}
+
+function currentStudyGateRemaining() {
+  return Math.max(0, Number(currentScreen()?.studyGateRemainingSeconds || 0));
+}
+
 /* ── header ──────────────────────────────────────────────────────────────────────────────── */
 function renderHeader() {
   const { course, assignment, header } = state.data;
@@ -100,7 +111,10 @@ function renderHeader() {
   $("#screenPosition").className = "current";
   $("#courseProgress").textContent = `${header.courseProgress.completed} / ${header.courseProgress.total} ${unit}s`;
   $("#blockProgress").textContent = `${header.currentAssignment.mastered} / ${header.currentAssignment.blocks} Blocks Mastered`;
-  $("#studyTime").textContent = formatMinutes(header.studyTimeSeconds);
+  const expectedMinutes = Number(assignment.expectedMinutes || 0);
+  $("#studyTime").textContent = expectedMinutes > 0
+    ? `${formatMinutes(header.studyTimeSeconds)} / ${expectedMinutes} min required`
+    : formatMinutes(header.studyTimeSeconds);
   renderTrainingModule();
   $("#blockOutline").innerHTML = blocks().map((item, index) => {
     const cls = item.status === "MASTERED" ? "outline-mastered" : index === state.view.blockIndex ? "outline-current" : "";
@@ -156,6 +170,7 @@ function renderScreen() {
     content.innerHTML = screenVideoHtml(screen) + renderLessonMarkdown(typeof screen.bodyMarkdown === "string" ? screen.bodyMarkdown : sliceRange(screen.content)) + screenDocumentsHtml(screen);
   }
   renderNav();
+  applyStudyGate();
   content.focus({ preventScroll: true });
   window.scrollTo({ top: 0 });
 }
@@ -172,9 +187,38 @@ function renderNav() {
     (screen.type === "applied" && !state.data.assignment.regulatory?.appliedComplete) ||
     (screen.type === "mastery" && !state.data.assignment.regulatory?.engagementComplete) ||
     Boolean(state.view.remediation);
-  next.disabled = needsAction;
+  next.disabled = needsAction || currentStudyGateRemaining() > 0;
   const last = state.view.blockIndex === blocks().length - 1 && state.view.screenIndex === block.screens.length - 1;
   next.textContent = last ? "Finish" : "Continue";
+}
+
+function applyStudyGate() {
+  const remaining = currentStudyGateRemaining();
+  const gated = state.data?.mode === "student" && remaining > 0;
+  for (const button of document.querySelectorAll("#screenActivity button")) {
+    if (gated && !button.disabled) {
+      button.disabled = true;
+      button.dataset.studyGateDisabled = "true";
+    } else if (!gated && button.dataset.studyGateDisabled === "true") {
+      button.disabled = false;
+      delete button.dataset.studyGateDisabled;
+    }
+  }
+  renderNav();
+  const idleSeconds = Math.floor((Date.now() - state.lastInteraction) / 1000);
+  const visible = document.visibilityState === "visible";
+  const focused = document.hasFocus();
+  $("#timerState").textContent = gated
+    ? (!visible || !focused
+        ? `Study timer paused. Return to this page to unlock Continue (${formatCountdown(remaining)} remaining).`
+        : idleSeconds >= 120
+          ? `Study timer paused after inactivity. Interact to continue (${formatCountdown(remaining)} remaining).`
+          : `Continue unlocks after ${formatCountdown(remaining)} of active study on the required timeline.`)
+    : (!visible || !focused
+        ? "Paused while this page is not active."
+        : idleSeconds >= 120
+          ? "Paused after inactivity. Interact with the screen to resume."
+          : "Required study time for this screen is complete.");
 }
 
 /* Supplementary video attached to an instruction screen. Optional viewing: it gates nothing —
@@ -506,9 +550,15 @@ function renderCompletionStatus(activity) {
 async function advance() {
   const block = currentBlock();
   const screen = currentScreen();
+  if (currentStudyGateRemaining() > 0) {
+    applyStudyGate();
+    return;
+  }
   if (["instruction", "review", "applied", "mastery", "completion"].includes(screen.type) && !screen.completed) {
     try { await postBlocks({ eventType: "screen_completed", blockId: block.id, screenId: screen.id }); }
-    catch (error) { /* surfaced via refresh */ }
+    catch (error) {
+      if (error.message === "study_time_required") applyStudyGate();
+    }
     return refresh();
   }
   /* already-complete screen: move forward locally without re-posting */
@@ -561,10 +611,7 @@ async function sendHeartbeat() {
   const idleSeconds = Math.floor((Date.now() - state.lastInteraction) / 1000);
   const visible = document.visibilityState === "visible";
   const focused = document.hasFocus();
-  $("#timerState").textContent = !visible || !focused
-    ? "Paused while this page is not active."
-    : idleSeconds >= 120 ? "Paused after inactivity. Interact with the screen to resume."
-    : "Active study is being recorded.";
+  applyStudyGate();
   try {
     const result = await postCourse({
       eventType: "heartbeat", sessionId: state.sessionId, visible, focused, idleSeconds,
@@ -572,7 +619,14 @@ async function sendHeartbeat() {
     });
     if (result?.creditedSeconds && state.data.mode === "student") {
       state.data.header.studyTimeSeconds += result.creditedSeconds;
-      $("#studyTime").textContent = formatMinutes(state.data.header.studyTimeSeconds);
+      const expectedMinutes = Number(state.data.assignment.expectedMinutes || 0);
+      $("#studyTime").textContent = expectedMinutes > 0
+        ? `${formatMinutes(state.data.header.studyTimeSeconds)} / ${expectedMinutes} min required`
+        : formatMinutes(state.data.header.studyTimeSeconds);
+      const screen = currentScreen();
+      screen.studyGateRemainingSeconds = Math.max(0, Number(screen.studyGateRemainingSeconds || 0) - result.creditedSeconds);
+      screen.studyGateReady = screen.studyGateRemainingSeconds === 0;
+      applyStudyGate();
       if(state.data.trainingModule) {
         state.data.trainingModule.remainingStudySeconds=Math.max(0,state.data.trainingModule.remainingStudySeconds-result.creditedSeconds);
         renderTrainingModule();

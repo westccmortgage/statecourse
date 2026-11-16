@@ -4,7 +4,8 @@ import { parseJson, requireSameOrigin } from "./_lib/http.mjs";
 import { requireStudentSession, sessionCookies, sessionResponse } from "./_lib/student-session.mjs";
 import { SB1495 } from "../../config/california/regulatory-manifest.mjs";
 import { getCaliforniaAssessment, getCaliforniaCourse, publicAssessment, scoreCaliforniaAssessment } from "../../config/california-course-engine.mjs";
-import { getCourseConfiguration, hasCourseDelivery } from "../../config/course-registry.mjs";
+import { getCourseConfiguration, getCourseDelivery, hasCourseDelivery } from "../../config/course-registry.mjs";
+import { screenStudyGate } from "../../config/california-block-study-gates.mjs";
 import { verifiedTrainingReadiness } from './_lib/training-readiness.mjs';
 import { LAW_OF_AGENCY_TRAINING_RUNTIME } from '../../config/texas/law-of-agency-training-runtime.mjs';
 
@@ -313,6 +314,7 @@ export async function finishIfReady(ctx,assignmentId) {
   const assignment = ctx.course.assignments.find((item) => item.id === assignmentId);
   const viewed = Array.isArray(row.viewed_sections) ? row.viewed_sections : [];
   const remediationSatisfied = row.remediation_status === "not_required" || row.remediation_status === "satisfied";
+  const activeTimeSatisfied = Number(row.active_seconds || 0) >= Number(assignment?.expectedMinutes || 0) * 60;
   /* SB 1495: the practicum assignment needs both roles taken as well. Reading the answer from
      the submissions rather than from a flag on the assignment row is the whole point — a flag
      is something a code path can set, and a submission is something a student wrote. */
@@ -325,6 +327,7 @@ export async function finishIfReady(ctx,assignmentId) {
     && row.applied_exercise_complete
     && row.engagement_check_complete
     && remediationSatisfied
+    && activeTimeSatisfied
     && participatory;
   if (ready && row.status !== "completed") {
     const completedAt=isoNow();
@@ -340,13 +343,31 @@ export async function finishIfReady(ctx,assignmentId) {
     });
     await audit(ctx,assignmentId,"assignment_completed",{
       automatic:true,
-      requirements:["sections","applied_exercise","engagement_check","remediation"].concat(
+      requirements:["sections","applied_exercise","engagement_check","remediation","active_study_time"].concat(
         ctx.course.courseId===SB1495.courseId && assignmentId===SB1495.assignmentId ? ["sb1495_both_roles"] : []
       )
     });
   }
   await rpc("refresh_california_eligibility",{p_enrollment_id:ctx.enrollment.id});
   return ready;
+}
+
+function assertAssessmentStudyGate(ctx, assignmentId, row, kind) {
+  if (ctx.mode !== "student" || ctx.course.state !== "CA" || ctx.trainingRuntime) return;
+  const delivery = getCourseDelivery(ctx.course.courseId, assignmentId);
+  const assignment = ctx.course.assignments.find((item) => item.id === assignmentId);
+  if (!delivery || !assignment) return;
+  const screenType = kind === "applied" ? "applied" : "mastery";
+  const screen = delivery.blocks.flatMap((block) => block.screens).find((item) => item.type === screenType);
+  if (!screen) return;
+  const gate = screenStudyGate(delivery, assignment.expectedMinutes, screen.id, row.active_seconds);
+  if (!gate.ready) {
+    throw Object.assign(new Error("study_time_required"), {
+      statusCode: 409,
+      remainingSeconds: gate.remainingSeconds,
+      requiredCumulativeSeconds: gate.requiredCumulativeSeconds,
+    });
+  }
 }
 
 async function handleStudentEvent(ctx,input) {
@@ -447,6 +468,7 @@ async function handleStudentEvent(ctx,input) {
 
   const kind=ANSWER_EVENTS.get(eventType);
   if (!kind) fail("invalid_course_event");
+  assertAssessmentStudyGate(ctx, assignmentId, row, kind);
   const viewedCount=Array.isArray(row.viewed_sections)?row.viewed_sections.length:0;
   if (kind==="applied" && viewedCount<6) fail("complete_instructional_sections_first",409);
   if (kind==="engagement" && !row.applied_exercise_complete) fail("complete_applied_exercise_first",409);
