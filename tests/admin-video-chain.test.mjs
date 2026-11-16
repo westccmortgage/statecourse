@@ -329,6 +329,33 @@ test("a second asset cannot be reserved under an asset key already in use", { co
   });
 });
 
+test("a failed browser transfer can rotate only the pending Cloudflare upload slot", { concurrency: false }, async () => {
+  const store = createStore();
+  await withConsoleMock(store, async (calls) => {
+    const first = await videoHandler(postEvent(reserve));
+    assert.equal(first.statusCode, 200, first.body);
+    const originalReservation = store.assets[0].reservation_id;
+    const retried = await videoHandler(postEvent({ action: "retry_upload", assetKey: ASSET }));
+    assert.equal(retried.statusCode, 200, retried.body);
+    assert.equal(store.assets.length, 1);
+    assert.notEqual(store.assets[0].reservation_id, originalReservation);
+    assert.equal(
+      calls.filter((call) => call.url.pathname.endsWith("/stream/direct_upload")).length,
+      2,
+    );
+  });
+});
+
+test("a confirmed Stream video cannot be rotated into another pending upload", { concurrency: false }, async () => {
+  const store = createStore();
+  await withConsoleMock(store, async () => {
+    await reserveAndConfirm();
+    const response = await videoHandler(postEvent({ action: "retry_upload", assetKey: ASSET }));
+    assert.equal(response.statusCode, 409);
+    assert.equal(JSON.parse(response.body).error, "video_asset_upload_already_confirmed");
+  });
+});
+
 test("every release condition in the database is one the console can report on", { concurrency: false }, async () => {
   const store = createStore();
   await withConsoleMock(store, async () => {

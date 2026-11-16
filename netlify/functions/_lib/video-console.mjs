@@ -368,6 +368,59 @@ export async function reserveUpload({ staff, input }) {
   };
 }
 
+/*
+ * A direct-upload URL is intentionally one-time and short-lived. If the browser loses its
+ * connection after the reservation was recorded, the asset row remains visible but the URL
+ * cannot be recovered. Retrying therefore rotates only the pending Cloudflare upload slot;
+ * it does not create another StateCourse asset, placement target or replacement decision.
+ */
+export async function retryUpload({ staff, input }) {
+  const asset = await assetInScope(staff, String(input.assetKey || "").trim());
+  if (asset.stream_uid) fail("video_asset_upload_already_confirmed", 409);
+
+  const allowedOrigins = productionOrigins();
+  const reservationId = randomUUID();
+  const upload = await cloudflare("/direct_upload", {
+    method: "POST",
+    body: {
+      maxDurationSeconds: Math.min(7200, Math.ceil(Number(asset.duration_seconds)) + 120),
+      requireSignedURLs: true,
+      allowedOrigins,
+      creator: "StateCourse",
+      meta: {
+        name: asset.asset_key,
+        courseId: asset.course_id,
+        deliveryId: asset.delivery_id,
+        screenId: asset.screen_id,
+        reservationId,
+      },
+    },
+  });
+  if (!upload?.uploadURL || !UID.test(upload?.uid || "")) fail("cloudflare_stream_upload_not_created", 502);
+
+  const previousUploadId = asset.stream_upload_id || null;
+  await dbRequest(`video_assets?asset_key=eq.${encodeURIComponent(asset.asset_key)}`, {
+    method: "PATCH",
+    prefer: "return=minimal",
+    body: {
+      stream_upload_id: upload.uid,
+      reservation_id: reservationId,
+      updated_at: new Date().toISOString(),
+    },
+  });
+  await logConsoleAction(staff, "video.retry_upload", asset.asset_key, {
+    previousUploadId,
+    uploadId: upload.uid,
+  });
+
+  return {
+    assetKey: asset.asset_key,
+    allowedOrigins,
+    uploadUrl: upload.uploadURL,
+    uploadId: upload.uid,
+  };
+}
+
 /* ── step two: confirm what Cloudflare actually has ────────────────────────────────────── */
 
 /*

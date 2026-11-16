@@ -270,7 +270,14 @@ function assetCard(asset) {
             Check what Cloudflare received
           </button>
           <small>Records the upload, signed-playback and origin conditions from the API response.</small>
-        </div>`}
+        </div>
+        <form class="retry-upload-form" data-asset="${esc(asset.asset_key)}">
+          <label class="file-field"><span>Retry video file</span>
+            <input name="file" type="file" accept="video/mp4,video/*" required>
+          </label>
+          <button type="submit">Retry upload to Cloudflare</button>
+          <small>Use this only when the original browser upload failed. It rotates the one-time upload address without creating another asset.</small>
+        </form>`}
     <details class="file-assets"><summary>Captions and transcript</summary>
       <form class="text-assets-form" data-asset="${esc(asset.asset_key)}">
         <label>Captions (.vtt)<input name="captions" type="file" accept=".vtt,text/vtt" required></label>
@@ -463,6 +470,33 @@ $("#assetList").addEventListener("submit", async (event) => {
   const form = event.target;
   event.preventDefault();
   const data = new FormData(form, event.submitter);
+  if (form.classList.contains("retry-upload-form")) {
+    const button = event.submitter; button.disabled = true;
+    const file = data.get("file");
+    try {
+      $("#videoMessage").textContent = "Creating a fresh one-time upload address…";
+      const reservation = await send(VIDEO, { action: "retry_upload", assetKey: form.dataset.asset });
+      const digest = await sha256Hex(file);
+      await putToCloudflare(reservation.uploadUrl, file, (percent) => {
+        $("#videoMessage").textContent = `Retrying upload to Cloudflare… ${percent}%`;
+      });
+      $("#videoMessage").textContent = "Upload sent. Asking Cloudflare what it received…";
+      const confirmation = await send(VIDEO, {
+        action: "confirm_upload",
+        assetKey: form.dataset.asset,
+        sourceSha256: digest,
+      });
+      $("#videoMessage").textContent = confirmation.uploadState === "ready"
+        ? "Cloudflare reports ready."
+        : `Cloudflare is still encoding (${words(confirmation.uploadState)}).`;
+      await loadVideo($("#reserveCourse").value || undefined);
+    } catch (error) {
+      $("#videoMessage").textContent = `Retry refused: ${words(error.message)}.`;
+    } finally {
+      button.disabled = false;
+    }
+    return;
+  }
   if (form.classList.contains("text-assets-form")) {
     const button = event.submitter; button.disabled = true;
     try {

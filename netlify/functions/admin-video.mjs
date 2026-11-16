@@ -4,7 +4,7 @@ import { requireStaff } from "./_lib/staff-session.mjs";
 import { sessionCookies, sessionResponse } from "./_lib/student-session.mjs";
 import {
   confirmUpload, placeAsset, placeableCourseIds, placementTargets, reconcileUploads,
-  recordGate, reserveUpload, uploadTextAssets, videoInventory, withdrawAsset,
+  recordGate, reserveUpload, retryUpload, uploadTextAssets, videoInventory, withdrawAsset,
 } from "./_lib/video-console.mjs";
 
 /*
@@ -98,6 +98,7 @@ const handler = async (event) => {
 
     let result;
     if (action === "reserve_upload") result = await reserveUpload({ staff, input });
+    else if (action === "retry_upload") result = await retryUpload({ staff, input });
     else if (action === "confirm_upload") result = await confirmUpload({ staff, input });
     else if (action === "upload_text_assets") result = await uploadTextAssets({ staff, input });
     else if (action === "record_gate") result = await recordGate({ staff, input });
