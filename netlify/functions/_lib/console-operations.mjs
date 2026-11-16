@@ -215,7 +215,7 @@ export async function studentDetail(staff, enrollmentId) {
   const progress = blocks.available && !blocks.truncated && required.length
     ? { completed: required.filter(id => completed.has(id)).length, total: required.length, definition: 'Mastered required blocks / registered required blocks. Course completion is evaluated separately.', source: 'current_registered_structure', historicalVersionVerified: false }
     : null;
-  const assessments = await readRows(`lms_block_assessment_attempts?enrollment_id=eq.${enrollmentId}&select=assignment_id,block_id,kind,correct&limit=1001`);
+  const assessments = await readRows(`lms_block_assessment_attempts?enrollment_id=eq.${enrollmentId}&select=assignment_id,block_id,kind,correct,created_at&limit=1001`);
   const finals=enrollment.state==='CA'?await readRows(`final_exam_sessions?enrollment_id=eq.${enrollmentId}&select=attempt_number,status,correct_count,question_count,passed,submitted_at&limit=1001`):null;
   const learning = realEstateLearning(enrollment, structure, blocks, assignments, assessments,finals);
   return { enrollment, student: student.rows[0] || null, discipline: disciplineForEnrollment(enrollment), classification: enrollmentClassification(enrollment),

@@ -18,6 +18,22 @@ export async function readNmlsLearning(enrollment, readRows) {
   catch { return { adapter: 'nmls_training', available: false, reason: 'NMLS enrollment identity, pinned version or runtime history does not validate.', creditEligible: false, certificateEligible: false }; }
 }
 
+function latestRecordedActivity(enrollment, blocks, assignments, assessments, finals) {
+  const candidates = [enrollment?.last_course_accessed_at];
+  for (const row of blocks?.rows || []) {
+    if (row.status !== 'NOT_STARTED') candidates.push(row.last_activity_at, row.mastered_at, row.started_at);
+  }
+  for (const row of assignments?.rows || []) {
+    if (row.status !== 'not_started' || Number(row.active_seconds || 0) > 0)
+      candidates.push(row.updated_at, row.completed_at, row.started_at);
+  }
+  for (const row of assessments?.rows || []) candidates.push(row.created_at);
+  for (const row of finals?.rows || []) candidates.push(row.submitted_at);
+  return candidates
+    .filter(value => value && Number.isFinite(Date.parse(value)))
+    .sort((left, right) => Date.parse(right) - Date.parse(left))[0] || null;
+}
+
 export function realEstateLearning(enrollment, structure, blocks, assignments, assessments, finals) {
   const required = structure.units.flatMap(u => u.blocks.filter(b => b.required !== false).map(b => `${u.id}:${b.id}`));
   const mastered = new Set(blocks.rows.filter(b => b.status === 'MASTERED').map(b => `${b.assignment_id}:${b.block_id}`));
@@ -35,6 +51,7 @@ export function realEstateLearning(enrollment, structure, blocks, assignments, a
     creditEligible: enrollmentClassification(enrollment).nonCredit ? false : null,
     enrollmentCreditFlag: enrollment.compliance_credit_eligible??null,
     certificateEligible: enrollmentClassification(enrollment).nonCredit ? false : null,
+    lastActivity: latestRecordedActivity(enrollment, blocks, assignments, assessments, finals),
     source: 'lms_block_progress / lms_assignment_state / lms_block_assessment_attempts',
   };
 }

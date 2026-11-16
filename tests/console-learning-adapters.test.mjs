@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { nmlsAdministrativeProgress } from '../netlify/functions/_lib/nmls-training-service.mjs';
-import { enrollmentClassification, readNmlsLearning } from '../netlify/functions/_lib/console-learning.mjs';
+import { enrollmentClassification, readNmlsLearning, realEstateLearning } from '../netlify/functions/_lib/console-learning.mjs';
 import { NMLS_TRAINING_COURSE as course } from '../config/nmls-course-identity.mjs';
 import { getNmlsReviewCourse } from '../netlify/functions/_lib/nmls-review-content.mjs';
 import { getNmlsDraftFinalDefinition } from '../lib/nmls-final-authoring-content.mjs';
@@ -46,4 +46,28 @@ test('training, reviewer, QA, paid and expired classifications remain independen
   assert.equal(enrollmentClassification({...enrollment,status:'qa_non_credit'}).kind,'qa');
   assert.equal(enrollmentClassification({...enrollment,enrollment_origin:'checkout',checkout_attempt_id:'paid'}).kind,'paid');
   assert.equal(enrollmentClassification({...enrollment,expires_at:'2000-01-01'}).status,'expired');
+});
+
+test('real-estate admin reports the latest recorded learner activity',()=>{
+  const realEstateEnrollment={...enrollment,course_id:'ca-mortgage-loan-brokering-lending-45',course_version:'1.0',state:'CA',last_course_accessed_at:'2026-11-15T20:00:00Z'};
+  const structure={available:true,rules:{version:'1.0'},units:[{id:'assignment-01',blocks:[{id:'a1-b1'}]}]};
+  const learning=realEstateLearning(realEstateEnrollment,structure,
+    {available:true,truncated:false,rows:[{assignment_id:'assignment-01',block_id:'a1-b1',status:'MASTERED',last_activity_at:'2026-11-15T21:18:00Z'}]},
+    {available:true,truncated:false,rows:[
+      {assignment_id:'assignment-01',status:'in_progress',active_seconds:215,updated_at:'2026-11-15T21:19:24Z'},
+      {assignment_id:'assignment-02',status:'not_started',active_seconds:0,updated_at:'2026-11-15T22:00:00Z'},
+    ]},
+    {available:true,truncated:false,rows:[{created_at:'2026-11-15T21:19:00Z'}]},
+    {available:true,truncated:false,rows:[]});
+  assert.equal(learning.lastActivity,'2026-11-15T21:19:24Z');
+});
+
+test('real-estate activity ignores initialized untouched modules and falls back to enrollment access',()=>{
+  const realEstateEnrollment={...enrollment,course_id:'ca-mortgage-loan-brokering-lending-45',course_version:'1.0',state:'CA',last_course_accessed_at:'2026-11-15T20:00:00Z'};
+  const structure={available:true,rules:{version:'1.0'},units:[{id:'assignment-01',blocks:[{id:'a1-b1'}]}]};
+  const learning=realEstateLearning(realEstateEnrollment,structure,
+    {available:true,truncated:false,rows:[{assignment_id:'assignment-01',block_id:'a1-b1',status:'NOT_STARTED',last_activity_at:null}]},
+    {available:true,truncated:false,rows:[{assignment_id:'assignment-01',status:'not_started',active_seconds:0,updated_at:'2026-11-15T22:00:00Z'}]},
+    {available:true,truncated:false,rows:[]},null);
+  assert.equal(learning.lastActivity,'2026-11-15T20:00:00Z');
 });
