@@ -11,6 +11,8 @@
  * calling layer and never earns student credit.
  */
 
+import { MORTGAGE_SCREEN_STUDY_METRICS } from './california/mortgage-screen-study-metrics.mjs';
+
 function finiteNonNegative(value, fallback = 0) {
   const number = Number(value);
   return Number.isFinite(number) && number >= 0 ? number : fallback;
@@ -20,7 +22,12 @@ export function timedScreens(delivery) {
   return (delivery?.blocks || []).flatMap((block) =>
     (block.screens || [])
       .filter((screen) => screen.type !== "completion")
-      .map((screen) => ({ blockId: block.id, screenId: screen.id, screenType: screen.type })),
+      .map((screen) => ({
+        blockId: block.id,
+        screenId: screen.id,
+        screenType: screen.type,
+        ...(MORTGAGE_SCREEN_STUDY_METRICS[screen.id] || {}),
+      })),
   );
 }
 
@@ -37,28 +44,41 @@ const SCREEN_WEIGHTS = Object.freeze({
   mastery: 5,
 });
 
+function fixedScreenSeconds(screen) {
+  if (screen.screenType === 'retrieval') return RETRIEVAL_SECONDS;
+  if (Object.hasOwn(screen, 'words') && screen.screenType === 'applied') return 3 * 60;
+  if (Object.hasOwn(screen, 'words') && screen.screenType === 'mastery') return 10 * 60;
+  return null;
+}
+
+function screenEffort(screen) {
+  const words = finiteNonNegative(screen.words);
+  if (Object.hasOwn(screen, 'words')) {
+    if (screen.screenType === 'instruction') return Math.max(words, 150);
+    if (screen.screenType === 'practice') return Math.max(words + 400, 600);
+    if (screen.screenType === 'review') return Math.max(words + 100, 300);
+    if (screen.screenType === 'applied') return 1500;
+    if (screen.screenType === 'mastery') return 600;
+  }
+  return (SCREEN_WEIGHTS[screen.screenType] || 4) * 100;
+}
+
 function screenAllocations(delivery, expectedMinutes) {
   const screens = timedScreens(delivery);
   const totalSeconds = Math.round(finiteNonNegative(expectedMinutes) * 60);
   if (!screens.length || totalSeconds <= 0) return screens.map(() => 0);
 
-  const retrievals = screens.filter((screen) => screen.screenType === "retrieval").length;
-  const fixedRetrievalTotal = Math.min(totalSeconds, retrievals * RETRIEVAL_SECONDS);
-  const retrievalBase = retrievals ? Math.floor(fixedRetrievalTotal / retrievals) : 0;
-  let retrievalRemainder = retrievals ? fixedRetrievalTotal % retrievals : 0;
-  const flexibleTotal = totalSeconds - fixedRetrievalTotal;
+  const fixedTotal = screens.reduce((sum, screen) => sum + (fixedScreenSeconds(screen) || 0), 0);
+  const flexibleTotal = Math.max(0, totalSeconds - fixedTotal);
   const totalWeight = screens.reduce((sum, screen) =>
-    sum + (screen.screenType === "retrieval" ? 0 : (SCREEN_WEIGHTS[screen.screenType] || 4)), 0);
+    sum + (fixedScreenSeconds(screen) !== null ? 0 : screenEffort(screen)), 0);
 
   /* Largest-remainder allocation keeps every screen on an integer second while preserving the
      exact assignment total. Equal fractional remainders resolve in screen order, deterministically. */
   const allocations = screens.map((screen, index) => {
-    if (screen.screenType === "retrieval") {
-      const seconds = retrievalBase + (retrievalRemainder > 0 ? 1 : 0);
-      retrievalRemainder = Math.max(0, retrievalRemainder - 1);
-      return { index, seconds, remainder: -1 };
-    }
-    const weight = SCREEN_WEIGHTS[screen.screenType] || 4;
+    const fixedSeconds = fixedScreenSeconds(screen);
+    if (fixedSeconds !== null) return { index, seconds: fixedSeconds, remainder: -1 };
+    const weight = screenEffort(screen);
     const exact = totalWeight ? (flexibleTotal * weight) / totalWeight : 0;
     return { index, seconds: Math.floor(exact), remainder: exact - Math.floor(exact) };
   });

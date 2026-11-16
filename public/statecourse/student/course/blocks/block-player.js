@@ -659,9 +659,12 @@ async function sendHeartbeat() {
       $("#studyTime").textContent = expectedMinutes > 0
         ? `${formatMinutes(state.data.header.studyTimeSeconds)} / ${expectedMinutes} min required`
         : formatMinutes(state.data.header.studyTimeSeconds);
-      const screen = currentScreen();
-      screen.studyGateRemainingSeconds = Math.max(0, Number(screen.studyGateRemainingSeconds || 0) - creditedSeconds);
-      screen.studyGateReady = screen.studyGateRemainingSeconds === 0;
+      /* Every screen gate uses cumulative assignment time. Refresh all future countdowns too,
+         otherwise a later page asks for minutes the server already recorded on earlier pages. */
+      for (const block of blocks()) for (const screen of block.screens) {
+        screen.studyGateRemainingSeconds = Math.max(0, Number(screen.studyGateRemainingSeconds || 0) - creditedSeconds);
+        screen.studyGateReady = screen.studyGateRemainingSeconds === 0;
+      }
       state.visualElapsedSeconds = Math.max(0, state.visualElapsedSeconds - creditedSeconds);
       applyStudyGate();
       if(state.data.trainingModule) {

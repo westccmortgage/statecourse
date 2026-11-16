@@ -44,6 +44,18 @@ test("two minutes cannot unlock instruction, and each reached retrieval check ne
   );
 });
 
+test("mortgage pages use measured reading and task effort instead of equal time by screen type", () => {
+  const first = screenStudyGate(A1_BLOCKS, 180, "a1-b1-s1", 0);
+  const short = screenStudyGate(A1_BLOCKS, 180, "a1-b2-s2", 0);
+  const current = screenStudyGate(A1_BLOCKS, 180, "a1-b1-s3", 0);
+  const long = screenStudyGate(A1_BLOCKS, 180, "a1-b6-s4", 0);
+  assert.ok(short.allocatedSeconds < first.allocatedSeconds);
+  assert.ok(current.allocatedSeconds >= 195 && current.allocatedSeconds <= 215);
+  assert.ok(long.allocatedSeconds > current.allocatedSeconds);
+  assert.equal(screenStudyGate(A1_BLOCKS, 180, "a1-b7-s3", 0).allocatedSeconds, 180);
+  assert.equal(screenStudyGate(A1_BLOCKS, 180, "a1-b7-s4", 0).allocatedSeconds, 600);
+});
+
 test("the next screen opens only when its cumulative active-study threshold is reached", () => {
   const first = screenStudyGate(A1_BLOCKS, 180, "a1-b1-s1", 0);
   const firstAtThreshold = screenStudyGate(A1_BLOCKS, 180, "a1-b1-s1", first.allocatedSeconds);
@@ -91,6 +103,7 @@ test("client and both server completion paths enforce the same time gate", async
   assert.match(client, /setInterval\(tickVisualTimer, 1000\)/);
   assert.match(client, /visualGateRemaining\(\) === 0 && currentStudyGateRemaining\(\) > 0/);
   assert.match(client, /Confirming recorded study time/);
+  assert.match(client, /for \(const block of blocks\(\)\) for \(const screen of block\.screens\)/);
   assert.match(client, /next\.disabled = needsAction \|\| currentStudyGateRemaining\(\) > 0/);
   assert.match(blocksApi, /assertStudyGate\(ctx, delivery, nav, regulatory, screen\)/);
   assert.match(blocksApi, /assertStudyGate\(ctx, delivery, nav, regulatory, retrievalScreen\)/);
