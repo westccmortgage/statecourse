@@ -8,7 +8,7 @@ function authConfig() {
   /* trim() for the same reason as db.mjs: pasted values with trailing whitespace make invalid
      HTTP headers and fetch throws before any request is sent. */
   const url = String(process.env.SUPABASE_URL || "").trim().replace(/\/$/, "");
-  const anonKey = String(process.env.SUPABASE_ANON_KEY || "").trim();
+  const anonKey = String(process.env.SUPABASE_PUBLISHABLE_KEY || process.env.SUPABASE_ANON_KEY || "").trim();
   if (!url || !anonKey) throw Object.assign(new Error("student_auth_not_configured"), { statusCode: 503 });
   return { url, anonKey };
 }
