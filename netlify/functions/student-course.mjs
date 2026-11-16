@@ -394,7 +394,8 @@ async function handleStudentEvent(ctx,input) {
            additive detail for screen → block → assignment roll-up; the crediting rule and the RPC
            are unchanged, and a legacy page simply omits the fields. */
         ...(typeof input.blockId === "string" && input.blockId.length <= 40 ? {block_id:input.blockId} : {}),
-        ...(typeof input.screenId === "string" && input.screenId.length <= 60 ? {screen_id:input.screenId} : {})}
+        ...(typeof input.screenId === "string" && input.screenId.length <= 60 ? {screen_id:input.screenId} : {}),
+        ...(typeof input.transition === "string" && input.transition.length <= 40 ? {transition:input.transition} : {})}
     });
     return {ok:true,creditedSeconds:Number(result || 0),noStudentCredit:ctx.mode!=="student" || ctx.trainingRuntime,
       ...(ctx.trainingRuntime ? {moduleCompleted:await finishIfReady(ctx,assignmentId)} : {})};

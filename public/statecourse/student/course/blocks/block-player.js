@@ -25,6 +25,7 @@ const state = {
   visualElapsedSeconds: 0,
   lastVisualTick: Date.now(),
   heartbeatPending: false,
+  lastKnownActive: false,
 };
 
 const $ = (selector) => document.querySelector(selector);
@@ -46,9 +47,10 @@ const postBlocks = (body) => api("/api/student/blocks", {
   method: "POST", headers: { "content-type": "application/json" },
   body: JSON.stringify({ enrollmentId: state.enrollmentId, assignmentId: state.assignmentId, ...body }),
 });
-const postCourse = (body) => api("/api/student/course", {
+const postCourse = (body, requestOptions = {}) => api("/api/student/course", {
   method: "POST", headers: { "content-type": "application/json" },
   body: JSON.stringify({ enrollmentId: state.enrollmentId, assignmentId: state.assignmentId, ...body }),
+  ...requestOptions,
 });
 
 /* ── lesson content ──────────────────────────────────────────────────────────────────────── */
@@ -115,7 +117,8 @@ function tickVisualTimer() {
   const elapsed = Math.floor((now - state.lastVisualTick) / 1000);
   if (elapsed < 1) return;
   state.lastVisualTick += elapsed * 1000;
-  if (!state.data || state.data.mode !== "student" || !clockIsActive()) {
+  state.lastKnownActive = Boolean(state.data && state.data.mode === "student" && clockIsActive());
+  if (!state.lastKnownActive) {
     if (state.data) applyStudyGate();
     return;
   }
@@ -694,6 +697,29 @@ async function flushHeartbeat() {
   return sendHeartbeat();
 }
 
+/* A normal heartbeat describes the page at the instant it arrives. On blur/visibility loss that
+   instant is already inactive, so using it alone discards the active seconds accumulated since
+   the previous heartbeat. Close the active interval explicitly with a keepalive request, then
+   rotate the session. The next focus starts a fresh session and therefore cannot credit time
+   spent in the background. */
+async function closeActiveStudyInterval(transition) {
+  if (!state.data || state.data.mode !== "student" || !state.lastKnownActive) return null;
+  const closingSessionId = state.sessionId;
+  state.sessionId = crypto.randomUUID();
+  state.lastKnownActive = false;
+  const idleSeconds = Math.floor((Date.now() - state.lastInteraction) / 1000);
+  try {
+    return await postCourse({
+      eventType: "heartbeat", sessionId: closingSessionId,
+      visible: true, focused: true, idleSeconds,
+      transition, userAgent: navigator.userAgent,
+      blockId: currentBlock()?.id, screenId: currentScreen()?.id,
+    }, { keepalive: true });
+  } catch {
+    return null;
+  }
+}
+
 /* ── wiring ──────────────────────────────────────────────────────────────────────────────── */
 $("#continueScreen").addEventListener("click", advance);
 $("#previousScreen").addEventListener("click", goPrevious);
@@ -707,14 +733,27 @@ $("#signOut").addEventListener("click", async () => {
 for (const eventName of ["pointerdown", "keydown", "scroll", "touchstart"]) {
   addEventListener(eventName, () => { state.lastInteraction = Date.now(); }, { passive: true });
 }
-document.addEventListener("visibilitychange", sendHeartbeat);
-addEventListener("focus", () => { state.lastInteraction = Date.now(); sendHeartbeat(); });
-addEventListener("blur", sendHeartbeat);
+document.addEventListener("visibilitychange", () => {
+  if (document.visibilityState === "hidden") closeActiveStudyInterval("visibility_hidden");
+  else if (document.hasFocus()) {
+    state.lastInteraction = Date.now();
+    state.lastKnownActive = true;
+    sendHeartbeat();
+  }
+});
+addEventListener("pagehide", () => closeActiveStudyInterval("pagehide"));
+addEventListener("focus", () => {
+  state.lastInteraction = Date.now();
+  state.lastKnownActive = document.visibilityState === "visible";
+  sendHeartbeat();
+});
+addEventListener("blur", () => closeActiveStudyInterval("blur"));
 
 (async function start() {
   if (!state.enrollmentId) { location.replace("/student/"); return; }
   try {
     await refresh();
+    state.lastKnownActive = clockIsActive();
     clearInterval(state.heartbeat);
     sendHeartbeat();
     state.heartbeat = setInterval(sendHeartbeat, 15000);

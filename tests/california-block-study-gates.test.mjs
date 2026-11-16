@@ -106,6 +106,12 @@ test("client and both server completion paths enforce the same time gate", async
   assert.match(client, /for \(const block of blocks\(\)\) for \(const screen of block\.screens\)/);
   assert.match(client, /if \(state\.heartbeatPending\) return state\.heartbeatPending/);
   assert.ok(client.indexOf("await flushHeartbeat();") < client.indexOf('fetch("/api/student/session"'));
+  assert.match(client, /closeActiveStudyInterval/);
+  assert.match(client, /keepalive: true/);
+  assert.match(client, /state\.sessionId = crypto\.randomUUID\(\)/);
+  assert.match(client, /addEventListener\("pagehide"/);
+  assert.match(client, /closeActiveStudyInterval\("blur"\)/);
+  assert.match(courseApi, /transition:input\.transition/);
   assert.match(client, /next\.disabled = needsAction \|\| currentStudyGateRemaining\(\) > 0/);
   assert.match(blocksApi, /assertStudyGate\(ctx, delivery, nav, regulatory, screen\)/);
   assert.match(blocksApi, /assertStudyGate\(ctx, delivery, nav, regulatory, retrievalScreen\)/);
