@@ -20,17 +20,66 @@ export function timedScreens(delivery) {
   return (delivery?.blocks || []).flatMap((block) =>
     (block.screens || [])
       .filter((screen) => screen.type !== "completion")
-      .map((screen) => ({ blockId: block.id, screenId: screen.id })),
+      .map((screen) => ({ blockId: block.id, screenId: screen.id, screenType: screen.type })),
   );
+}
+
+/* A one-question retrieval check is evidence that the student studied the preceding material;
+   it is not six more minutes of instruction. Keep those checks to two minutes and put the
+   remaining assignment time where the learning actually happens. The weights are relative,
+   not minutes: the allocator below always preserves the assignment's regulator-facing total. */
+const RETRIEVAL_SECONDS = 2 * 60;
+const SCREEN_WEIGHTS = Object.freeze({
+  instruction: 5,
+  practice: 4,
+  review: 3,
+  applied: 8,
+  mastery: 5,
+});
+
+function screenAllocations(delivery, expectedMinutes) {
+  const screens = timedScreens(delivery);
+  const totalSeconds = Math.round(finiteNonNegative(expectedMinutes) * 60);
+  if (!screens.length || totalSeconds <= 0) return screens.map(() => 0);
+
+  const retrievals = screens.filter((screen) => screen.screenType === "retrieval").length;
+  const fixedRetrievalTotal = Math.min(totalSeconds, retrievals * RETRIEVAL_SECONDS);
+  const retrievalBase = retrievals ? Math.floor(fixedRetrievalTotal / retrievals) : 0;
+  let retrievalRemainder = retrievals ? fixedRetrievalTotal % retrievals : 0;
+  const flexibleTotal = totalSeconds - fixedRetrievalTotal;
+  const totalWeight = screens.reduce((sum, screen) =>
+    sum + (screen.screenType === "retrieval" ? 0 : (SCREEN_WEIGHTS[screen.screenType] || 4)), 0);
+
+  /* Largest-remainder allocation keeps every screen on an integer second while preserving the
+     exact assignment total. Equal fractional remainders resolve in screen order, deterministically. */
+  const allocations = screens.map((screen, index) => {
+    if (screen.screenType === "retrieval") {
+      const seconds = retrievalBase + (retrievalRemainder > 0 ? 1 : 0);
+      retrievalRemainder = Math.max(0, retrievalRemainder - 1);
+      return { index, seconds, remainder: -1 };
+    }
+    const weight = SCREEN_WEIGHTS[screen.screenType] || 4;
+    const exact = totalWeight ? (flexibleTotal * weight) / totalWeight : 0;
+    return { index, seconds: Math.floor(exact), remainder: exact - Math.floor(exact) };
+  });
+  let unallocated = totalSeconds - allocations.reduce((sum, item) => sum + item.seconds, 0);
+  for (const item of [...allocations]
+    .filter((entry) => entry.remainder >= 0)
+    .sort((left, right) => right.remainder - left.remainder || left.index - right.index)) {
+    if (unallocated <= 0) break;
+    item.seconds += 1;
+    unallocated -= 1;
+  }
+  return allocations.sort((left, right) => left.index - right.index).map((item) => item.seconds);
 }
 
 export function screenStudyGate(delivery, expectedMinutes, screenId, activeSeconds) {
   const screens = timedScreens(delivery);
-  const totalSeconds = Math.round(finiteNonNegative(expectedMinutes) * 60);
+  const allocations = screenAllocations(delivery, expectedMinutes);
   const elapsedSeconds = Math.floor(finiteNonNegative(activeSeconds));
   const index = screens.findIndex((item) => item.screenId === screenId);
 
-  if (!screens.length || totalSeconds <= 0 || index < 0) {
+  if (!screens.length || !allocations.length || index < 0) {
     return Object.freeze({
       requiredCumulativeSeconds: 0,
       allocatedSeconds: 0,
@@ -39,8 +88,8 @@ export function screenStudyGate(delivery, expectedMinutes, screenId, activeSecon
     });
   }
 
-  const previousRequired = index === 0 ? 0 : Math.ceil((totalSeconds * index) / screens.length);
-  const requiredCumulativeSeconds = Math.ceil((totalSeconds * (index + 1)) / screens.length);
+  const previousRequired = allocations.slice(0, index).reduce((sum, seconds) => sum + seconds, 0);
+  const requiredCumulativeSeconds = previousRequired + allocations[index];
   const remainingSeconds = Math.max(0, requiredCumulativeSeconds - elapsedSeconds);
   return Object.freeze({
     requiredCumulativeSeconds,
@@ -54,7 +103,7 @@ export function firstUnmetStudyGate(delivery, expectedMinutes, activeSeconds) {
   const screens = timedScreens(delivery);
   for (const item of screens) {
     const gate = screenStudyGate(delivery, expectedMinutes, item.screenId, activeSeconds);
-    if (!gate.ready) return Object.freeze({ ...item, ...gate });
+    if (!gate.ready) return Object.freeze({ blockId: item.blockId, screenId: item.screenId, ...gate });
   }
   return null;
 }
