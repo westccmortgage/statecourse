@@ -104,6 +104,8 @@ test("client and both server completion paths enforce the same time gate", async
   assert.match(client, /visualGateRemaining\(\) === 0 && currentStudyGateRemaining\(\) > 0/);
   assert.match(client, /Confirming recorded study time/);
   assert.match(client, /for \(const block of blocks\(\)\) for \(const screen of block\.screens\)/);
+  assert.match(client, /if \(state\.heartbeatPending\) return state\.heartbeatPending/);
+  assert.ok(client.indexOf("await flushHeartbeat();") < client.indexOf('fetch("/api/student/session"'));
   assert.match(client, /next\.disabled = needsAction \|\| currentStudyGateRemaining\(\) > 0/);
   assert.match(blocksApi, /assertStudyGate\(ctx, delivery, nav, regulatory, screen\)/);
   assert.match(blocksApi, /assertStudyGate\(ctx, delivery, nav, regulatory, retrievalScreen\)/);

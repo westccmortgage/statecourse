@@ -641,13 +641,15 @@ async function refresh({ keepView = false } = {}) {
 
 /* ── time: the existing heartbeat pipeline, with screen context ──────────────────────────── */
 async function sendHeartbeat() {
-  if (!state.data || state.heartbeatPending) return;
-  state.heartbeatPending = true;
-  const idleSeconds = Math.floor((Date.now() - state.lastInteraction) / 1000);
-  const visible = document.visibilityState === "visible";
-  const focused = document.hasFocus();
-  applyStudyGate();
-  try {
+  if (!state.data) return null;
+  /* A caller that is about to navigate away must be able to await the heartbeat already in
+     flight instead of silently skipping it. This is especially important for Sign Out. */
+  if (state.heartbeatPending) return state.heartbeatPending;
+  const request = (async () => {
+    const idleSeconds = Math.floor((Date.now() - state.lastInteraction) / 1000);
+    const visible = document.visibilityState === "visible";
+    const focused = document.hasFocus();
+    applyStudyGate();
     const result = await postCourse({
       eventType: "heartbeat", sessionId: state.sessionId, visible, focused, idleSeconds,
       userAgent: navigator.userAgent, blockId: currentBlock()?.id, screenId: currentScreen()?.id,
@@ -673,17 +675,32 @@ async function sendHeartbeat() {
       }
     }
     if(result.moduleCompleted && state.data.trainingModule && !state.data.trainingModule.completed)await refresh({keepView:true});
+    return result;
+  })();
+  state.heartbeatPending = request;
+  try {
+    return await request;
   } catch {
     $("#timerState").textContent = "Connection interrupted. Study time is paused until the record reconnects.";
+    return null;
   } finally {
-    state.heartbeatPending = false;
+    if (state.heartbeatPending === request) state.heartbeatPending = null;
   }
+}
+
+async function flushHeartbeat() {
+  const pending = state.heartbeatPending;
+  if (pending) await pending;
+  return sendHeartbeat();
 }
 
 /* ── wiring ──────────────────────────────────────────────────────────────────────────────── */
 $("#continueScreen").addEventListener("click", advance);
 $("#previousScreen").addEventListener("click", goPrevious);
 $("#signOut").addEventListener("click", async () => {
+  /* Finish any active request, then send one last authoritative observation before the session
+     cookie is deleted. Navigation happens only after the final study receipt is acknowledged. */
+  await flushHeartbeat();
   await fetch("/api/student/session", { method: "DELETE", credentials: "same-origin" }).catch(() => null);
   location.replace("/student/sign-in/");
 });
