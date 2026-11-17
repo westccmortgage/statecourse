@@ -11,8 +11,10 @@ may be offered for NMLS credit, and no course may be described as NMLS-approved.
 approval notice directs the provider to submit courses separately. Course submission is
 now the binding NMLS gate; production launch stays blocked. Independent confirmation on
 the NMLS Approved Course Provider List is pending its monthly refresh and is not possible
-on the approval date. Evidence is the owner-supplied SRR notice. BioSig Integration /
-Provider Application 90788 is open with three answers outstanding from the owner. No
+on the approval date. Evidence is two owner-supplied notices: the SRR approval notice and a CSBS
+confirmation from Paula Lindsay, Senior Program Manager, Mortgage Education Compliance,
+who is the named provider contact. BioSig Integration / Provider Application 90788 is
+open with three answers outstanding from the owner. No
 enrollment, payment, completion, certificate, credit or public approval claim changed.
 See [NMLS Launch Board](nmls/LAUNCH-BOARD.md).
 
