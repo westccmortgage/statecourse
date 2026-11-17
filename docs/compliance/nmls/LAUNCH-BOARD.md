@@ -2,6 +2,35 @@
 
 # NMLS Launch Board
 
+## Provider approval — 2026-11-17 (supersedes the 2026-10-19 owner update below)
+
+State Regulatory Registry LLC has **approved StateCourse LLC as an NMLS course provider**.
+
+| Field | Value |
+| --- | --- |
+| Provider Organization Name | StateCourse LLC |
+| NMLS Course Provider ID | 1405133 |
+| Approval Date | 2026-11-17 |
+| Renewal Date | 2028-11-01 |
+
+**This is provider approval, not course approval.** The approval notice itself heads its
+next section "Submitting Courses for NMLS Approval" and directs the provider to the
+*User Guide: NMLS Course Approval Application Process* and the *NMLS Functional
+Specifications for All NMLS Approved Courses* before any course is submitted. No
+StateCourse course carries an NMLS course number. Nothing here permits offering a
+course for NMLS credit, enabling enrollment, or describing any course as NMLS-approved.
+Gate 6 is now the binding gate and Gate 14 remains **BLOCKED**.
+
+Evidence is the owner-supplied SRR approval notice addressed to Anatoliy Kanevsky, read
+on 2026-11-17. Independent confirmation against the NMLS Approved Course Provider List is
+**not yet possible**: that list is refreshed monthly, so an approval issued on the
+approval date cannot appear in it yet, and its absence today neither confirms nor
+contradicts the notice. Retain the original email and confirm the listing at the next
+monthly refresh. The 2028-11-01 renewal is a hard date and is otherwise untracked.
+
+No course was submitted, no enrollment, payment, completion, certificate or credit
+control changed, and no public page was changed by this board update.
+
 ## Production AI pilot verification — October 19, 2026 (Los Angeles)
 
 Production coach pilot is enabled on code `bf0433a4d7cc1fafa2f370fc43ced76142fcf36c` (ready deploy `6ad6e8e5ebf75c110bf19d98`). Real OpenAI and current Gemini 3.5 Flash-Lite answers were observed in Real Estate and authenticated Mortgage, with matching lesson excerpts, named consent, refusal samples and desktop/mobile inspection. Lesson change, pause and sign-out cleared generated answers; revisit after sign-out rejected the private session. OpenAI/gpt-4.1-mini is restored as default. Service-only RLS configuration preserves the shared $1/day cap without extra Lambda variables; existing provider keys are unchanged. Production ledger:11 complete,2 failed, $0.095761 conservatively reserved.44 targeted tests and the production build pass; lint unavailable (eslint absent). Authenticated protected build.json now independently confirms bf0433a / main / production, builtAt2026-10-20T04:07:15Z, after owner reauthentication at approximately21:26 Los Angeles. Actual enrollment revocation and portfolio-wide semantic/learning quality remain unverified. No knowledge-check answer graded, unit completed, payment or regulatory-credit/approval control changed; Mortgage remains 0/45 units, 0/8 practices. This is functional non-credit pilot evidence, not regulatory launch approval.
@@ -30,12 +59,12 @@ Status key: **VERIFIED** = narrowly verified evidence; **BUILT** = repository im
 
 | Gate | Status | Already built | Verified | Missing | External dependency | Evidence | Next action | Launch blocking | Last verified |
 | ---: | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1. NMLS account/access | **WAITING EXTERNAL** | Access request submitted | Owner-confirmed request and NMLS 48-hour guidance | Temporary login/password and account read-back | NMLS account team | Owner confirmation, 2026-09-19; no approval artifact | Wait through stated window, then verify credentials/account identity | **YES** | 2026-09-19 |
-| 2. Provider application package | **PARTIAL / MISSING** | Official-source archive, engineering contracts, research, supporting policy work | Audit evidence-integrity checks | Assembled current forms, signed attestations, applicant/instructor dossier, fee receipt, final operational policies | Gate 1; later NMLS review | CURRENT-STATE §§1–2, 20–22 | Build one reviewable package; do not submit without owner approval | **YES** | 2026-09-19 |
-| 3. BioSig access and integration | **WAITING EXTERNAL / MISSING** | Identity and session-control concepts; authenticated actor binding | Local actor-binding tests only | BioSig access, BioSig ID, vendor authentication, runtime checkpoints, acceptance evidence | NMLS account/access first; BioSig | CURRENT-STATE §§6, 8, 21–22 | After Gate 1, obtain BioSig ID; then implement and test runtime integration | **YES** | 2026-09-19 |
+| 1. NMLS account/access | **CLOSED** | Provider account in NMLS | Issuance of provider ID 1405133 presupposes account access | Nothing outstanding | None | SRR approval notice, 2026-11-17 (owner-supplied) | None; superseded by Gate 2 | No | 2026-11-17 |
+| 2. Provider application package | **APPROVED** | Submitted provider application | SRR notice: StateCourse LLC, NMLS Course Provider ID 1405133, approved 2026-11-17, renewal 2028-11-01 | Independent read-back from the NMLS Approved Course Provider List | NMLS public list, refreshed monthly | SRR approval notice, 2026-11-17 (owner-supplied) | Retain the original notice; confirm the public listing at the next monthly refresh; calendar the 2028-11-01 renewal | No | 2026-11-17 |
+| 3. BioSig access and integration | **WAITING EXTERNAL / MISSING** | Identity and session-control concepts; authenticated actor binding; verified stack facts for the vendor questionnaire | Local actor-binding tests only; LMS stack read from the repository on 2026-11-17 (Node.js ESM serverless functions, plain HTML/JS student pages, PostgreSQL, REST-only integrations, no SCORM/LTI, no staging environment) | BioSig ID, vendor authentication, runtime checkpoints, acceptance evidence | BioSig Integration / Provider Application 90788 | CURRENT-STATE §§6, 8, 21–22; vendor email, 2026-11-17 | Gate 1 no longer blocks this. Owner to return the three outstanding answers (LMS language, staging URI, technical contact), then schedule the integration call | **YES** | 2026-11-17 |
 | 4. ROCS / learner agreement | **PARTIAL / MISSING** | Session-policy contract and receipt-bound agreement model | Retained evidence checks identify unresolved originals | Genuine current ROCS/FAQ originals, complete presentation, affirmative consent, per-course retained agreement/export | NMLS source availability and accountable review | CURRENT-STATE §2 | Acquire official originals; finalize presentation, consent, retention, and export design | **YES** | 2026-09-19 |
 | 5. Course content / human review / duration validation | **BUILT / MISSING ACCEPTANCE** | 8 modules, 45 lessons, assessment banks, 400 provisional minutes, traceability | Structure/content-loader tests; audit totals | Human SME/item signoff and representative learner duration study | Qualified reviewers and test learners | CURRENT-STATE §§3–5, 7, 21 | Assign reviewers; execute documented content, item, legal, and duration acceptance | **YES** | 2026-09-19 |
-| 6. Course submission and approval | **NOT SUBMITTED / NOT APPROVED** | Draft course portfolio and planning records | Null provider/course IDs and closed enrollment verified | Final approved version, submission receipt, NMLS course number, approval decision | Gates 1–5; NMLS review | CURRENT-STATE §§3, 20–22 | Freeze approved candidate only after prior gates; owner approves submission separately | **YES** | 2026-09-19 |
+| 6. Course submission and approval | **NOT SUBMITTED / NOT APPROVED — BINDING GATE** | Draft course portfolio and planning records | Null course IDs and closed enrollment verified; the provider ID is no longer null | Final approved version, submission receipt, NMLS course number, approval decision | Gates 3–5; NMLS course review | CURRENT-STATE §§3, 20–22; SRR approval notice, 2026-11-17 | Read the User Guide and the NMLS Functional Specifications named in the approval notice, then prepare one course for submission; owner approves submission separately | **YES** | 2026-11-17 |
 | 7. Regulated LMS delivery compliance | **PARTIAL / MISSING** | Free non-credit learner path; private CE-policy engines; timing/progression controls | Narrow local unit/service tests | Integrated approved-course browser flow, eligibility/history checks, genuine identity/ROCS, production acceptance | Gates 3–6 | CURRENT-STATE §§5–9, 19 | Build regulated path only after IDs/policies exist; keep free training separate | **YES** | 2026-09-19 |
 | 8. Student NMLS ID / identity handling | **PARTIAL / MISSING** | Authenticated session actor binding | Endpoint tests with mocked auth/DB | Individual NMLS ID validation, BioSig binding, retained identity evidence, operational exception handling | Gate 3 | CURRENT-STATE §8 | Define verified NMLS-ID intake and BioSig-linked audit record | **YES** | 2026-09-19 |
 | 9. Assessment / completion authority | **BUILT / MISSING AUTHORITY** | Formative/final/remediation engines and private policy chain | Local assessment tests | Authorized regulatory completion decision, terminal-failure adjudication, approved rules and deployed persistence evidence | Course approval; human policy approval | CURRENT-STATE §§7, 11 | Define accountable completion authority and exception workflow; validate against approved course | **YES** | 2026-09-19 |

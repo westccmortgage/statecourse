@@ -2,6 +2,20 @@
 
 # StateCourse Master Launch Dashboard
 
+## NMLS provider approval — 2026-11-17
+
+State Regulatory Registry LLC approved **StateCourse LLC** as an NMLS course provider:
+**NMLS Course Provider ID 1405133**, approved 2026-11-17, renewal 2028-11-01. This is
+**provider** approval only. No StateCourse course has an NMLS course number, no course
+may be offered for NMLS credit, and no course may be described as NMLS-approved. The
+approval notice directs the provider to submit courses separately. Course submission is
+now the binding NMLS gate; production launch stays blocked. Independent confirmation on
+the NMLS Approved Course Provider List is pending its monthly refresh and is not possible
+on the approval date. Evidence is the owner-supplied SRR notice. BioSig Integration /
+Provider Application 90788 is open with three answers outstanding from the owner. No
+enrollment, payment, completion, certificate, credit or public approval claim changed.
+See [NMLS Launch Board](nmls/LAUNCH-BOARD.md).
+
 ## Production AI pilot verification — October 19, 2026 (Los Angeles)
 
 Production coach pilot is enabled on code `bf0433a4d7cc1fafa2f370fc43ced76142fcf36c` (ready deploy `6ad6e8e5ebf75c110bf19d98`). Real OpenAI and current Gemini 3.5 Flash-Lite answers were observed in Real Estate and authenticated Mortgage, with matching lesson excerpts, named consent, refusal samples and desktop/mobile inspection. Lesson change, pause and sign-out cleared generated answers; revisit after sign-out rejected the private session. OpenAI/gpt-4.1-mini is restored as default. Service-only RLS configuration preserves the shared $1/day cap without extra Lambda variables; existing provider keys are unchanged. Production ledger:11 complete,2 failed, $0.095761 conservatively reserved.44 targeted tests and the production build pass; lint unavailable (eslint absent). Authenticated protected build.json now independently confirms bf0433a / main / production, builtAt2026-10-20T04:07:15Z, after owner reauthentication at approximately21:26 Los Angeles. Actual enrollment revocation and portfolio-wide semantic/learning quality remain unverified. No knowledge-check answer graded, unit completed, payment or regulatory-credit/approval control changed; Mortgage remains 0/45 units, 0/8 practices. This is functional non-credit pilot evidence, not regulatory launch approval.
@@ -34,7 +48,7 @@ Last verified: 2026-09-19. Target: **NMLS launch in October 2026**. This is an o
 
 | Track | Current phase | Status | Critical blockers | External dependencies | This week's priorities | Waiting outside StateCourse | Evidence basis | Detail | Last verified |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| A. NMLS / Mortgage Education | Account access and provider-package preparation | **WAITING EXTERNAL / LAUNCH BLOCKED** | Temporary NMLS credentials; BioSig access/ID and integration; provider and course approval; genuine ROCS/learner agreement; human review and duration validation; regulated completion, certificate, reporting, banking, and E2E acceptance | NMLS account team; BioSig availability after NMLS access; later NMLS provider/course decisions | Receive credentials; finish reviewable provider package; close ROCS/BioSig design gaps; schedule human content/time review; keep free training explicitly non-credit | NMLS temporary login/password, advised at approximately 48 hours after request | CURRENT-STATE audit and NMLS board | [NMLS Launch Board](nmls/LAUNCH-BOARD.md) | 2026-09-19 |
+| A. NMLS / Mortgage Education | Provider approved; course submission preparation | **PROVIDER APPROVED / LAUNCH BLOCKED** | Course approval; BioSig ID and integration; genuine ROCS/learner agreement; human review and duration validation; regulated completion, certificate, reporting, banking, and E2E acceptance | BioSig application 90788; later NMLS course decisions | Answer BioSig's three outstanding questions; read the User Guide and NMLS Functional Specifications named in the approval notice; prepare one course for submission; keep free training explicitly non-credit and every course un-enrollable | NMLS course approval decision; BioSig integration call | SRR approval notice 2026-11-17; CURRENT-STATE audit and NMLS board | [NMLS Launch Board](nmls/LAUNCH-BOARD.md) | 2026-11-17 |
 | B. Stripe / Commerce | Re-verify existing test infrastructure; live mode remains off | **VERIFY / NOT LIVE** | Correct account and current test configuration unverified; product/price mapping incomplete; no current sandbox purchase/refund/duplicate-webhook E2E evidence; no approved sellable NMLS product | Authorized Stripe test-account access; owner pricing decisions; regulator approvals before any regulated sale | Read-only account verification; reconcile catalog to test products/prices; run approved sandbox E2E later; preserve payment/education-state separation | Current Stripe account/session/config evidence | Payment architecture plus historical sandbox record | [Stripe Readiness](commerce/STRIPE-READINESS.md) | 2026-09-19 |
 | C. Real Estate Education | Research, course build, and draft application packages by state | **DEVELOPMENT / NO APPROVALS EVIDENCED** | Requirements incomplete in many states; packages are drafts; no submission, approval, commerce E2E, or live evidence | State regulators; approved instructors/reviewers; owner filing and pricing decisions | Reconcile registry with repository work; finish highest-priority state packages; keep enrollment/payment/live off | Regulator answers and future application decisions | State registry, catalog, state folders, and tests | [State Rollout Board](real-estate/STATE-ROLLOUT-BOARD.md) | 2026-09-19 |
 
