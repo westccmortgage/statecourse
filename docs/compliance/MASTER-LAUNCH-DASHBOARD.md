@@ -6,17 +6,18 @@
 
 State Regulatory Registry LLC approved **StateCourse LLC** as an NMLS course provider:
 **NMLS Course Provider ID 1405133**, approved 2026-11-17, renewal 2028-11-01. This is
-**provider** approval only. No StateCourse course has an NMLS course number, no course
-may be offered for NMLS credit, and no course may be described as NMLS-approved. The
-approval notice directs the provider to submit courses separately. Course submission is
-now the binding NMLS gate; production launch stays blocked. Independent confirmation on
-the NMLS Approved Course Provider List is pending its monthly refresh and is not possible
-on the approval date. Evidence is two owner-supplied notices: the SRR approval notice and a CSBS
-confirmation from Paula Lindsay, Senior Program Manager, Mortgage Education Compliance,
-who is the named provider contact. BioSig Integration / Provider Application 90788 is
-open with three answers outstanding from the owner. No
-enrollment, payment, completion, certificate, credit or public approval claim changed.
-See [NMLS Launch Board](nmls/LAUNCH-BOARD.md).
+**provider** approval only. It does not approve `nmls-ce-2026-comprehensive-8` or any
+other course, and authorizes no sales, credit, certificates or banking. No StateCourse
+course has an NMLS course number and none may be described as NMLS-approved. Course
+submission is now the binding NMLS gate; production launch stays blocked. Independent
+confirmation on the NMLS Approved Course Provider List is pending its monthly refresh and
+is not possible on the approval date. Evidence is two owner-supplied notices: the SRR
+approval notice and a CSBS confirmation from Paula Lindsay, Senior Program Manager,
+Mortgage Education Compliance, who is the named provider contact. The immediate external
+dependency is BioSig-ID onboarding (that vendor's application 90788, which is BioSig's
+number and not an NMLS one); the vendor is waiting on the LMS technical profile before
+scheduling. No enrollment, payment, completion, certificate, credit or public approval
+claim changed. See [NMLS Launch Board](nmls/LAUNCH-BOARD.md).
 
 ## Production AI pilot verification — October 19, 2026 (Los Angeles)
 
@@ -50,7 +51,7 @@ Last verified: 2026-09-19. Target: **NMLS launch in October 2026**. This is an o
 
 | Track | Current phase | Status | Critical blockers | External dependencies | This week's priorities | Waiting outside StateCourse | Evidence basis | Detail | Last verified |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| A. NMLS / Mortgage Education | Provider approved; course submission preparation | **PROVIDER APPROVED / LAUNCH BLOCKED** | Course approval; BioSig ID and integration; genuine ROCS/learner agreement; human review and duration validation; regulated completion, certificate, reporting, banking, and E2E acceptance | BioSig application 90788; later NMLS course decisions | Answer BioSig's three outstanding questions; read the User Guide and NMLS Functional Specifications named in the approval notice; prepare one course for submission; keep free training explicitly non-credit and every course un-enrollable | NMLS course approval decision; BioSig integration call | SRR approval notice 2026-11-17; CURRENT-STATE audit and NMLS board | [NMLS Launch Board](nmls/LAUNCH-BOARD.md) | 2026-11-17 |
+| A. NMLS / Mortgage Education | Provider approved; BioSig onboarding and course submission preparation | **PROVIDER APPROVED / COURSE LAUNCH BLOCKED** | BioSig integration; course approval; genuine ROCS/learner agreement; human review and duration validation; regulated completion, certificate, reporting, banking, and E2E acceptance | BioSig-ID; later NMLS course decision | Return BioSig's outstanding answers and confirm whether its integration must precede submission; read the User Guide and NMLS Functional Specifications named in the approval notice; finish review and timing evidence; submit the exact course only with owner approval | BioSig onboarding meeting/interface; later NMLS course approval | Provider ID 1405133; SRR approval notice and CSBS confirmation 2026-11-17; NMLS board | [NMLS Launch Board](nmls/LAUNCH-BOARD.md) | 2026-11-17 |
 | B. Stripe / Commerce | Re-verify existing test infrastructure; live mode remains off | **VERIFY / NOT LIVE** | Correct account and current test configuration unverified; product/price mapping incomplete; no current sandbox purchase/refund/duplicate-webhook E2E evidence; no approved sellable NMLS product | Authorized Stripe test-account access; owner pricing decisions; regulator approvals before any regulated sale | Read-only account verification; reconcile catalog to test products/prices; run approved sandbox E2E later; preserve payment/education-state separation | Current Stripe account/session/config evidence | Payment architecture plus historical sandbox record | [Stripe Readiness](commerce/STRIPE-READINESS.md) | 2026-09-19 |
 | C. Real Estate Education | Research, course build, and draft application packages by state | **DEVELOPMENT / NO APPROVALS EVIDENCED** | Requirements incomplete in many states; packages are drafts; no submission, approval, commerce E2E, or live evidence | State regulators; approved instructors/reviewers; owner filing and pricing decisions | Reconcile registry with repository work; finish highest-priority state packages; keep enrollment/payment/live off | Regulator answers and future application decisions | State registry, catalog, state folders, and tests | [State Rollout Board](real-estate/STATE-ROLLOUT-BOARD.md) | 2026-09-19 |
 

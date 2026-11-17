@@ -8,7 +8,7 @@ export function nmlsTrainingDefinition() {
  if(course.digest!==identity.contentDigest || final.contentDigest!==course.digest) throw new Error('nmls_content_pin_mismatch');
  return {course_id:identity.id,course_version:identity.version,content_digest:course.digest,definition_digest:final.digest,
  manifest:{schema:'nmls-training-definition-v1',purpose:'free_training',sourceCourseKey:course.id,
-  discipline:'mortgage',jurisdiction:'US',creditEligible:false,providerApprovalId:null,courseApprovalId:null,
+  discipline:'mortgage',jurisdiction:'US',creditEligible:false,providerApprovalId:identity.providerId,courseApprovalId:identity.courseApprovalId,
   allocation:{federal:3,ethics:2,nontraditional:2,general:1},allocationStatus:'provisional_design_not_awarded_credit',
   modules:course.modules.map(m=>({id:m.id,title:m.title,units:m.units.map(u=>({id:u.id,title:u.title,requiredSeconds:u.requiredSeconds}))})),
   assessment:{questionCount:final.questionCount,bankCount:final.items.length,maxAutomaticAttempts:2,passCount:18,remediationRequired:true},

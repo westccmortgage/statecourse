@@ -16,10 +16,11 @@ State Regulatory Registry LLC has **approved StateCourse LLC as an NMLS course p
 **This is provider approval, not course approval.** The approval notice itself heads its
 next section "Submitting Courses for NMLS Approval" and directs the provider to the
 *User Guide: NMLS Course Approval Application Process* and the *NMLS Functional
-Specifications for All NMLS Approved Courses* before any course is submitted. No
-StateCourse course carries an NMLS course number. Nothing here permits offering a
-course for NMLS credit, enabling enrollment, or describing any course as NMLS-approved.
-Gate 6 is now the binding gate and Gate 14 remains **BLOCKED**.
+Specifications for All NMLS Approved Courses* before any course is submitted. It is not
+approval of `nmls-ce-2026-comprehensive-8`, no StateCourse course carries an NMLS course
+number, and nothing here authorizes NMLS credit, opens enrollment or payments, or permits
+describing any course as NMLS-approved. Gate 6 is now the binding gate and Gate 14
+remains **BLOCKED**.
 
 Evidence is two owner-supplied notices, both read on 2026-11-17: the State Regulatory
 Registry LLC approval notice addressed to Anatoliy Kanevsky carrying the ID, approval and
@@ -27,11 +28,25 @@ renewal dates, and a separate confirmation from **Paula Lindsay, Senior Program 
 Mortgage Education Compliance, Conference of State Bank Supervisors** (plindsay@csbs.org),
 copied to Anatoliy Kanevsky and Jessica Esquina, which directs the provider to the NMLS
 Approved Course Provider Resource Center for the governing policies and procedures. SRR
-operates NMLS under CSBS, so the two are corroborating rather than independent regulators. Independent confirmation against the NMLS Approved Course Provider List is
-**not yet possible**: that list is refreshed monthly, so an approval issued on the
-approval date cannot appear in it yet, and its absence today neither confirms nor
-contradicts the notice. Retain the original email and confirm the listing at the next
-monthly refresh. The 2028-11-01 renewal is a hard date and is otherwise untracked.
+operates NMLS under CSBS, so the two are corroborating rather than independent regulators.
+Independent confirmation against the NMLS Approved Course Provider List is **not yet
+possible**: that list is refreshed monthly, so an approval issued on the approval date
+cannot appear in it yet, and its absence today neither confirms nor contradicts the
+notices. Retain both original emails and confirm the listing at the next monthly refresh.
+The 2028-11-01 renewal is a hard date and is otherwise untracked.
+
+**Number discipline.** 1405133 is the NMLS Course Provider ID, from the SRR notice.
+**90788 is BioSig-ID's own Integration / Provider Application number**, taken from that
+vendor's subject line; neither NMLS notice states an NMLS application number. Do not
+present 90788 as an NMLS application.
+
+BioSig-ID asked for the LMS programming language, production URI, optional staging URI,
+technical contact, company email, provider name and provider ID before scheduling
+onboarding. Repository-derived answers: Node.js/JavaScript (ESM) serverless functions
+with a generated HTML/CSS/JavaScript frontend and PostgreSQL, integrated over REST, not
+SCORM or LTI; `https://statecourse.com`; no staging environment exists or is requested;
+Anatoliy Kanevsky. BioSig onboarding, ROCS, human review and duration acceptance, course
+submission and course approval all remain launch blockers.
 
 No course was submitted, no enrollment, payment, completion, certificate or credit
 control changed, and no public page was changed by this board update.
@@ -64,9 +79,9 @@ Status key: **VERIFIED** = narrowly verified evidence; **BUILT** = repository im
 
 | Gate | Status | Already built | Verified | Missing | External dependency | Evidence | Next action | Launch blocking | Last verified |
 | ---: | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1. NMLS account/access | **CLOSED** | Provider account in NMLS | Issuance of provider ID 1405133 presupposes account access | Nothing outstanding | None | SRR approval notice, 2026-11-17 (owner-supplied) | None; superseded by Gate 2 | No | 2026-11-17 |
-| 2. Provider application package | **APPROVED** | Submitted provider application | SRR notice: StateCourse LLC, NMLS Course Provider ID 1405133, approved 2026-11-17, renewal 2028-11-01 | Independent read-back from the NMLS Approved Course Provider List | NMLS public list, refreshed monthly | SRR approval notice and CSBS confirmation (P. Lindsay), both 2026-11-17 (owner-supplied) | Retain both original emails; confirm the public listing at the next monthly refresh; calendar the 2028-11-01 renewal | No | 2026-11-17 |
-| 3. BioSig access and integration | **WAITING EXTERNAL / MISSING** | Identity and session-control concepts; authenticated actor binding; verified stack facts for the vendor questionnaire | Local actor-binding tests only; LMS stack read from the repository on 2026-11-17 (Node.js ESM serverless functions, plain HTML/JS student pages, PostgreSQL, REST-only integrations, no SCORM/LTI, no staging environment) | BioSig ID, vendor authentication, runtime checkpoints, acceptance evidence | BioSig Integration / Provider Application 90788 | CURRENT-STATE §§6, 8, 21–22; vendor email, 2026-11-17 | Gate 1 no longer blocks this. Owner to return the three outstanding answers (LMS language, staging URI, technical contact), then schedule the integration call | **YES** | 2026-11-17 |
+| 1. NMLS account/access | **CLOSED** | Provider account in NMLS | Issuance of provider ID 1405133 presupposes account access | Retain the approval artifact in controlled records | None | SRR approval notice and CSBS confirmation, 2026-11-17 (owner-supplied) | None; superseded by Gate 2 | No | 2026-11-17 |
+| 2. Provider application package | **APPROVED — OWNER-SUPPLIED EVIDENCE** | Submitted provider application | SRR notice: StateCourse LLC, NMLS Course Provider ID 1405133, approved 2026-11-17, renewal 2028-11-01 | Independent read-back from the NMLS Approved Course Provider List; archived original decision artifact | NMLS public list, refreshed monthly | SRR approval notice and CSBS confirmation (P. Lindsay), both 2026-11-17 | Retain both original emails; confirm the public listing at the next monthly refresh; calendar the 2028-11-01 renewal; do not treat this as course approval | No | 2026-11-17 |
+| 3. BioSig access and integration | **IN ONBOARDING / MISSING** | Identity and session-control concepts; authenticated actor binding; verified stack facts for the vendor questionnaire | Local actor-binding tests only; LMS stack read from the repository on 2026-11-17 (Node.js ESM serverless functions, plain HTML/JS student pages, PostgreSQL, REST-only integrations, no SCORM/LTI, no staging environment) | Named technical contact, meeting, sandbox credentials, runtime checkpoints, acceptance evidence | BioSig-ID Integration / Provider Application 90788 | BioSig email and CURRENT-STATE §§6, 8, 21–22 | Gate 1 no longer blocks this. Return the outstanding answers, confirm whether BioSig integration must precede course submission, then implement against the supplied interface | **YES** | 2026-11-17 |
 | 4. ROCS / learner agreement | **PARTIAL / MISSING** | Session-policy contract and receipt-bound agreement model | Retained evidence checks identify unresolved originals | Genuine current ROCS/FAQ originals, complete presentation, affirmative consent, per-course retained agreement/export | NMLS source availability and accountable review | CURRENT-STATE §2 | Acquire official originals; finalize presentation, consent, retention, and export design | **YES** | 2026-09-19 |
 | 5. Course content / human review / duration validation | **BUILT / MISSING ACCEPTANCE** | 8 modules, 45 lessons, assessment banks, 400 provisional minutes, traceability | Structure/content-loader tests; audit totals | Human SME/item signoff and representative learner duration study | Qualified reviewers and test learners | CURRENT-STATE §§3–5, 7, 21 | Assign reviewers; execute documented content, item, legal, and duration acceptance | **YES** | 2026-09-19 |
 | 6. Course submission and approval | **NOT SUBMITTED / NOT APPROVED — BINDING GATE** | Draft course portfolio and planning records | Null course IDs and closed enrollment verified; the provider ID is no longer null | Final approved version, submission receipt, NMLS course number, approval decision | Gates 3–5; NMLS course review | CURRENT-STATE §§3, 20–22; SRR approval notice and CSBS confirmation, 2026-11-17 | Work from the NMLS Approved Course Provider Resource Center, the User Guide and the NMLS Functional Specifications; Paula Lindsay (CSBS) is the named provider contact for questions, including whether BioSig integration must precede submission; then prepare one course. Owner approves submission separately | **YES** | 2026-11-17 |
