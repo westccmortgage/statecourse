@@ -1,5 +1,7 @@
 # NMLS / Mortgage Education — current-state audit
 
+> Superseded provider-status note — 2026-11-17: the owner confirms StateCourse LLC received NMLS provider approval, Provider ID **1405133**, application **90788**. The historical audit below remains the record of the 2026-09-19 checkout. The exact 8-hour course remains unapproved and unavailable for regulated sale.
+
 Audit date: 2026-09-19 (America/Los_Angeles). Repository revision: `42b0474b4235037e45e4096df2207823171443b1`. Branch: `audit/nmls-current-state`. Repository root: `statecourse/` inside the supplied workspace. The working tree was clean before this audit.
 
 The repository contains one integrated **free, non-credit national mortgage training course**, substantial private CE-policy/review-engine work, course manuscripts, assessments, and automated checks. It does **not** establish NMLS education-provider or course approval, submission, regulatory completion, certificates, credit banking, or current deployed acceptance. The free-training engine and the private policy-bound CE engine are different paths; evidence for one must not be attributed to the other.

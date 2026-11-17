@@ -50,6 +50,9 @@ test('NMLS readiness requires an exact real source manifest, not just a matching
   assert.deepEqual(await verifiedTrainingReadiness(identity.id),{ready:true,reason:null});
   assert.deepEqual(calls.at(-1).body,{p_course_id:identity.id});
   assert.equal(definition.manifest.modules.length,8);assert.equal(definition.manifest.modules.flatMap(m=>m.units).length,45);
+  assert.equal(definition.manifest.providerApprovalId, identity.providerId);
+  assert.equal(definition.manifest.courseApprovalId, null);
+  assert.equal(definition.manifest.creditEligible, false);
 }));
 test('missing NMLS definition fails closed and performs no enrollment write',async()=>fixture(async calls=>{
   assert.equal((await verifiedTrainingReadiness(identity.id)).reason,'nmls_training_database_runtime_unavailable');

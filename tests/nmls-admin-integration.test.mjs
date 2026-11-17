@@ -36,7 +36,7 @@ test('one exact national identity links the public course to actual comprehensiv
   assert.equal(courses[0].course_version, identity.version);
   assert.equal(courses[0].student_route, identity.studentRoute);
   assert.equal(courses[0].approval_number, null);
-  assert.equal(courses[0].provider_approval_number, null);
+  assert.equal(courses[0].provider_approval_number, identity.providerId);
   assert.equal(courses[0].approved_hours, null);
   assert.equal(courses[0].enrollment_enabled, false);
   assert.equal(courses[0].price, null);
@@ -69,13 +69,13 @@ test('database plus public identity and real curriculum clear missing-record onl
   assert.equal(readiness.courseRecordConnected, true);
   assert.equal(readiness.definitionVerified, true);
   assert.equal(readiness.freeTrainingAvailable, true);
-  assert.equal(readiness.providerApprovalVerified, false);
+  assert.equal(readiness.providerApprovalVerified, true);
   assert.equal(readiness.courseApprovalEffective, false);
   assert.equal(readiness.livePaymentsActivated, false);
   assert.equal(readiness.creditIssuanceAllowed, false);
   assert.equal(readiness.reportingEnabled, false);
   assert.ok(!readiness.findings.some(finding => finding.code === 'nmls_course_record_missing'));
-  assert.ok(readiness.findings.some(finding => finding.code === 'nmls_provider_approval_unverified'));
+  assert.ok(!readiness.findings.some(finding => finding.code === 'nmls_provider_approval_unverified'));
   assert.ok(readiness.findings.some(finding => finding.code === 'nmls_human_review_pending'));
 });
 
@@ -109,11 +109,11 @@ test('wrong-state, wrong-discipline and duplicate governance decisions never ena
   }
 });
 
-test('a generic offering approval cannot manufacture provider approval or activate live payments', () => {
+test('a generic offering approval cannot erase the recorded provider approval or activate live payments', () => {
   const data = fixture(); Object.assign(data.datasets.governance.rows[0], { approval_status: 'approved', approval_currently_effective: true, live_charging_permitted: true, payment_mode: 'live' });
   const readiness = buildNmlsReadiness(data);
   assert.equal(readiness.courseApprovalEffective, true);
-  assert.equal(readiness.providerApprovalVerified, false);
+  assert.equal(readiness.providerApprovalVerified, true);
   assert.equal(readiness.livePaymentPermissionRecorded, true);
   assert.equal(readiness.livePaymentsActivated, false);
 });
@@ -164,7 +164,8 @@ test('weekly check replaces missing source with remaining real blockers, not a f
   const data = fixture(); data.nmls = buildNmlsReadiness(data);
   const report = assessSnapshot(data, { stripeTestConnected: true, googleConnected: true });
   assert.ok(!report.findings.some(finding => ['nmls_course_record_missing', 'renderer_missing'].includes(finding.code)));
-  assert.ok(report.findings.some(finding => finding.code === 'nmls_provider_approval_unverified'));
+  assert.ok(!report.findings.some(finding => finding.code === 'nmls_provider_approval_unverified'));
+  assert.ok(report.findings.some(finding => finding.code === 'nmls_course_approval_not_effective'));
   assert.ok(report.findings.some(finding => finding.code === 'delivery_checks_pending'));
 });
 
@@ -226,7 +227,8 @@ test('existing admin renderer consumes current readiness and escapes hostile rec
   assert.match(html, /Formative questions[\s\S]*?<strong>123<\/strong>/);
   assert.match(html, /&lt;img src=x onerror=alert\(1\)&gt;/);
   assert.doesNotMatch(html, /<img|workstream must be recovered|no published NMLS course record/);
-  assert.match(html, /Not independently verified/);
+  assert.match(html, /NMLS provider approval[\s\S]*?<td>Verified<\/td>/);
+  assert.match(html, /NMLS course approval[\s\S]*?No effective approval recorded/);
   assert.match(html,/19 of 19 verified against retained hashes/);
   assert.match(html,/19 bodies reviewed; record matches this acquisition/);
   assert.match(html,/2 PDF originals remain missing/);

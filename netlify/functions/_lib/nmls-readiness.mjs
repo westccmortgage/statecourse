@@ -86,8 +86,8 @@ export function buildNmlsReadiness({ inventory, datasets }, curriculum = nmlsCur
   if (!governance) add('nmls_governance_unverified', 'The exact national mortgage offering has no unambiguous readable governance decision.');
   else if (!governance.training_access_enabled) add('nmls_training_closed', 'Free training is closed by the current offering decision.');
   const approval = governance?.approval_status === 'approved' && governance.approval_currently_effective === true;
-  // Generic offering approval is not proof of a distinct NMLS provider approval.
-  add('nmls_provider_approval_unverified', 'NMLS education-provider approval evidence has not been independently verified for this curriculum.');
+  const providerApprovalRecorded = /^\d+$/.test(identity.providerId || '') && identity.providerApprovalDate === '2026-11-17';
+  if (!providerApprovalRecorded) add('nmls_provider_approval_unverified', 'NMLS education-provider approval is not recorded for StateCourse.');
   if (!approval) add('nmls_course_approval_not_effective', 'No currently effective NMLS course approval is recorded for this exact offering.');
   if (!curriculum.representativeTimingVerified) add('nmls_representative_timing_pending', 'Representative-learner timing is not verified; 400 minutes remains a provisional design budget.');
   if (!curriculum.humanAssessmentReviewed) add('nmls_human_review_pending', 'Independent human subject-matter and assessment review is not recorded.');
@@ -101,7 +101,7 @@ export function buildNmlsReadiness({ inventory, datasets }, curriculum = nmlsCur
     identity, curriculum, officialEvidence, courseRecordConnected, definitionVerified,
     freeTrainingAvailable: Boolean(ready && governance?.training_access_enabled === true),
     governanceAvailable: Boolean(governance), courseApprovalEffective: Boolean(approval),
-    providerApprovalVerified: false, creditIssuanceAllowed: false, reportingEnabled: false,
+    providerApprovalVerified: providerApprovalRecorded, creditIssuanceAllowed: false, reportingEnabled: false,
     paymentMode: governance?.payment_mode || 'disabled',
     livePaymentPermissionRecorded: governance?.live_charging_permitted === true,
     livePaymentsActivated: false,

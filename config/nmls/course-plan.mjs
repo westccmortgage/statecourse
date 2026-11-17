@@ -23,12 +23,13 @@ for (const row of requirements.rows) {
 // approval. The 7h core cannot be sold as a partial completion of the 8h course.
 export const NMLS_CE_YEAR = 2026;
 export const NMLS_DELIVERY_FORMAT = 'OSS';
+export const NMLS_PROVIDER_ID = '1405133';
 
 function draft(id, title, hours, credit, contentFamilies) {
   return Object.freeze({
     id, title, year: NMLS_CE_YEAR, format: NMLS_DELIVERY_FORMAT, hours,
     credit: Object.freeze(credit), contentFamilies: Object.freeze(contentFamilies),
-    status: 'authoring', providerId: null, nmlsCourseId: null,
+    status: 'authoring', providerId: NMLS_PROVIDER_ID, nmlsCourseId: null,
     approvedFrom: null, approvedThrough: null,
   });
 }
