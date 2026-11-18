@@ -2,6 +2,48 @@
 
 # NMLS Launch Board
 
+## BioSig-ID interface requirements — 2026-11-18
+
+Received from Ron Kerkenaar, Chief Technology Analyst, Biometric Signature ID
+(ron.kerkenaar@biosig-id.com), in thread "StateCourse LLC — NMLS BioSig-ID Integration /
+Provider Application 90788", with Rachel Lane. Vendor-supplied, not independently tested.
+
+**Transport.** A **SOAP XML** interface reached over a **public HTTPS endpoint**. BioSig
+supplies NodeJS interface code inside a custom-code ZIP referenced in **the API
+documentation NMLS provides** — that documentation sits behind the NMLS provider login
+and has not been read. The sample code is generic and must still be made to satisfy NMLS
+requirements, the vendor naming **Resuming** as the hard part. BioSig will supply an
+NMLS-compliant development endpoint **at the intro meeting**; that meeting is therefore
+the gate on all integration work.
+
+**Environments.** BioSig connects `statecourse.com` to **BioSig's own staging sandbox**.
+No StateCourse staging environment is required, which leaves the no-staging policy intact.
+A localhost target would need a public HTTPS tunnel; none is planned.
+
+**Checkpoints.** A `d3` parameter names the point in the course: `Enrollment`, `Begin`,
+`Middle#1`, `Resuming`, `FinalExam`. Per BioSig's published NMLS enrolment article, the
+first authentication occurs **after the Rules of Conduct and immediately before the course
+starts** — so Gate 4 (ROC) is a prerequisite of this gate, not a parallel track. Student
+credential is a four-character pattern drawn with mouse, stylus, touchpad or touchscreen,
+enrolled by drawing it three times and validating once.
+
+**Acceptance.** A review meeting after development verifies eight items: first-time
+enrolment UX and whether enrolment is a separate course (`d3=Enrollment`) or precedes
+`d3=Begin`; flow and parameter values at `Begin` and `FinalExam` on a one-hour course;
+`Middle#1` on longer courses; `Resuming` across a new LMS session after browser close or
+sign-out; SOAP XML error handling that tells the student to contact support and logs
+enough to diagnose; refusal of access on failed validation **with retry allowed**; a way
+for the student to correct a mistyped NMLS agent ID held on their profile; and routing all
+support to the **NMLS help desk** — BioSig is explicit that students must not contact BSI.
+
+**Repository gap, read 2026-11-18.** No NMLS agent-ID field exists anywhere in the
+functions, database or student pages. No `d3` checkpoint model exists. No SOAP client
+exists: every integration in this codebase is REST over `fetch`, so SOAP is a new
+transport here. Nothing in this paragraph is a defect; it is the scope of the work.
+
+No gate closed, and no enrollment, payment, completion, certificate or credit control
+changed.
+
 ## Provider approval — 2026-11-17 (supersedes the 2026-10-19 owner update below)
 
 State Regulatory Registry LLC has **approved StateCourse LLC as an NMLS course provider**.
@@ -81,12 +123,12 @@ Status key: **VERIFIED** = narrowly verified evidence; **BUILT** = repository im
 | ---: | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 1. NMLS account/access | **CLOSED** | Provider account in NMLS | Issuance of provider ID 1405133 presupposes account access | Retain the approval artifact in controlled records | None | SRR approval notice and CSBS confirmation, 2026-11-17 (owner-supplied) | None; superseded by Gate 2 | No | 2026-11-17 |
 | 2. Provider application package | **APPROVED — OWNER-SUPPLIED EVIDENCE** | Submitted provider application | SRR notice: StateCourse LLC, NMLS Course Provider ID 1405133, approved 2026-11-17, renewal 2028-11-01 | Independent read-back from the NMLS Approved Course Provider List; archived original decision artifact | NMLS public list, refreshed monthly | SRR approval notice and CSBS confirmation (P. Lindsay), both 2026-11-17 | Retain both original emails; confirm the public listing at the next monthly refresh; calendar the 2028-11-01 renewal; do not treat this as course approval | No | 2026-11-17 |
-| 3. BioSig access and integration | **IN ONBOARDING / MISSING** | Identity and session-control concepts; authenticated actor binding; verified stack facts for the vendor questionnaire | Local actor-binding tests only; LMS stack read from the repository on 2026-11-17 (Node.js ESM serverless functions, plain HTML/JS student pages, PostgreSQL, REST-only integrations, no SCORM/LTI, no staging environment) | Named technical contact, meeting, sandbox credentials, runtime checkpoints, acceptance evidence | BioSig-ID Integration / Provider Application 90788 | BioSig email and CURRENT-STATE §§6, 8, 21–22 | Gate 1 no longer blocks this. Return the outstanding answers, confirm whether BioSig integration must precede course submission, then implement against the supplied interface | **YES** | 2026-11-17 |
+| 3. BioSig access and integration | **INTERFACE SPECIFIED / NOT BUILT** | Identity and session-control concepts; authenticated actor binding | Local actor-binding tests only; vendor requirements recorded above, none tested | Intro meeting, NMLS-compliant development endpoint, sandbox credentials, SOAP client, the five `d3` checkpoints, agent-ID profile field, error/retry and support routing, acceptance evidence | BioSig-ID (application 90788); NMLS API documentation behind the provider login | BioSig email 2026-11-17 and published enrolment article; repository read 2026-11-18 | Book the intro meeting — it is what releases the development endpoint. Download the NMLS API documentation and its custom-code ZIP. Build ROC first, since enrolment follows it | **YES** | 2026-11-18 |
 | 4. ROCS / learner agreement | **PARTIAL / MISSING** | Session-policy contract and receipt-bound agreement model | Retained evidence checks identify unresolved originals | Genuine current ROCS/FAQ originals, complete presentation, affirmative consent, per-course retained agreement/export | NMLS source availability and accountable review | CURRENT-STATE §2 | Acquire official originals; finalize presentation, consent, retention, and export design | **YES** | 2026-09-19 |
 | 5. Course content / human review / duration validation | **BUILT / MISSING ACCEPTANCE** | 8 modules, 45 lessons, assessment banks, 400 provisional minutes, traceability | Structure/content-loader tests; audit totals | Human SME/item signoff and representative learner duration study | Qualified reviewers and test learners | CURRENT-STATE §§3–5, 7, 21 | Assign reviewers; execute documented content, item, legal, and duration acceptance | **YES** | 2026-09-19 |
 | 6. Course submission and approval | **NOT SUBMITTED / NOT APPROVED — BINDING GATE** | Draft course portfolio and planning records | Null course IDs and closed enrollment verified; the provider ID is no longer null | Final approved version, submission receipt, NMLS course number, approval decision | Gates 3–5; NMLS course review | CURRENT-STATE §§3, 20–22; SRR approval notice and CSBS confirmation, 2026-11-17 | Work from the NMLS Approved Course Provider Resource Center, the User Guide and the NMLS Functional Specifications; Paula Lindsay (CSBS) is the named provider contact for questions, including whether BioSig integration must precede submission; then prepare one course. Owner approves submission separately | **YES** | 2026-11-17 |
 | 7. Regulated LMS delivery compliance | **PARTIAL / MISSING** | Free non-credit learner path; private CE-policy engines; timing/progression controls | Narrow local unit/service tests | Integrated approved-course browser flow, eligibility/history checks, genuine identity/ROCS, production acceptance | Gates 3–6 | CURRENT-STATE §§5–9, 19 | Build regulated path only after IDs/policies exist; keep free training separate | **YES** | 2026-09-19 |
-| 8. Student NMLS ID / identity handling | **PARTIAL / MISSING** | Authenticated session actor binding | Endpoint tests with mocked auth/DB | Individual NMLS ID validation, BioSig binding, retained identity evidence, operational exception handling | Gate 3 | CURRENT-STATE §8 | Define verified NMLS-ID intake and BioSig-linked audit record | **YES** | 2026-09-19 |
+| 8. Student NMLS ID / identity handling | **MISSING** | Authenticated session actor binding | Repository read 2026-11-18: no NMLS agent-ID field exists in the functions, database or student pages | Agent-ID intake, storage on the student profile, a correction path for a mistyped ID, validation, BioSig binding, retained identity evidence, exception handling | Gate 3 | CURRENT-STATE §8; BioSig acceptance item 7 | Add the agent ID to the student profile with an edit path, then bind it to the BioSig record | **YES** | 2026-11-18 |
 | 9. Assessment / completion authority | **BUILT / MISSING AUTHORITY** | Formative/final/remediation engines and private policy chain | Local assessment tests | Authorized regulatory completion decision, terminal-failure adjudication, approved rules and deployed persistence evidence | Course approval; human policy approval | CURRENT-STATE §§7, 11 | Define accountable completion authority and exception workflow; validate against approved course | **YES** | 2026-09-19 |
 | 10. Certificate / reporting / credit banking | **MISSING** | Generic reporting/database concepts | No NMLS regulatory issuance/banking acceptance | NMLS certificate, reporting export, credit banking, reconciliation, accepted operational evidence | Course/provider approval and NMLS reporting access | CURRENT-STATE §§12–13, 22 | Design after official IDs/rules; test reconciliation before launch | **YES** | 2026-09-19 |
 | 11. Records / retention / operational procedures | **PARTIAL / MISSING ACCEPTANCE** | Event/audit concepts and draft contracts | Some local immutability/trace checks | NMLS-specific retention/retrieval, backup/restore proof, complaints/support, exception and incident procedures | Accountable operations review | CURRENT-STATE §§2, 7, 14, 16, 22 | Consolidate SOPs and perform retrieval/restore tabletop acceptance | **YES** | 2026-09-19 |
