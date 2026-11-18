@@ -38,6 +38,25 @@
         </form>
       </section>
 
+      <!-- The learner's own NMLS Unique Identifier. Shown to every student rather than
+           only to mortgage students: the number belongs to the person, not to a course,
+           and a learner who has one should be able to enter and correct it before an
+           enrollment depends on it. -->
+      <section class="profile-completion" id="nmlsIdentity" hidden aria-labelledby="nmlsIdentityTitle">
+        <div>
+          <p class="eyebrow">Mortgage licensing</p>
+          <h2 id="nmlsIdentityTitle">Your NMLS ID</h2>
+          <p id="nmlsIdentityIntro">If you hold an NMLS Unique Identifier, add it here. Mortgage education is reported to NMLS under this number, so it must match your own NMLS record exactly. You can correct it yourself at any time.</p>
+        </div>
+        <form id="nmlsIdentityForm">
+          <label for="nmlsIdInput">NMLS ID</label>
+          <input id="nmlsIdInput" name="nmlsId" inputmode="numeric" autocomplete="off"
+                 maxlength="12" aria-describedby="nmlsIdentityIntro nmlsIdentityMessage" />
+          <button type="submit" id="nmlsIdentitySubmit">Save my NMLS ID</button>
+          <p class="profile-form-message" id="nmlsIdentityMessage" aria-live="polite"></p>
+        </form>
+      </section>
+
       <p class="portal-message" id="portalMessage" aria-live="polite">Loading your student record…</p>
 
       <section class="course-group" id="activeGroup" hidden>

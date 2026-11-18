@@ -3,6 +3,8 @@ import { parseJson, requireSameOrigin } from "./http.mjs";
 import { requireStudentSession, sessionCookies, sessionResponse, updateStudentProfile } from "./student-session.mjs";
 import { availableTraining } from './training-access.mjs';
 import { withNmlsTrainingSummary } from './nmls-training-portal.mjs';
+import { saveStudentNmlsId } from './student-nmls-identity.mjs';
+import { nmlsIdProfileState } from '../../../config/nmls/student-identifier.mjs';
 
 const EVENT_TYPES = new Set(["portal_opened","course_resume_clicked","certificate_viewed","receipt_viewed","profile_viewed"]);
 
@@ -19,14 +21,18 @@ export const handleStudentPortal = async (event) => {
 
     if (event.httpMethod === "GET") {
       const [profiles,enrollments,origins,training] = await Promise.all([
-        dbRequest(`students?id=eq.${encodeURIComponent(auth.student.id)}&select=id,email,first_name,last_name,preferred_name,locale,timezone,account_status&limit=1`),
+        dbRequest(`students?id=eq.${encodeURIComponent(auth.student.id)}&select=id,email,first_name,last_name,preferred_name,locale,timezone,account_status,nmls_id&limit=1`),
         dbRequest(`student_portal_enrollments?student_id=eq.${encodeURIComponent(auth.student.id)}&order=enrollment_date.desc`),
         dbRequest(`enrollments?student_id=eq.${encodeURIComponent(auth.student.id)}&select=id,enrollment_origin`),
         availableTraining(),
       ]);
       await dbRequest("student_portal_events",{ method:"POST",prefer:"return=minimal",body:{ student_id:auth.student.id,event_type:"portal_opened",metadata:{ source:"student_portal" } } });
       const summaries=await Promise.all((enrollments||[]).map(row=>withNmlsTrainingSummary(auth.student.id,{...row,enrollment_origin:origins?.find(item=>item.id===row.enrollment_id)?.enrollment_origin||null})));
-      return sessionResponse(200,{ student:profiles?.[0] || auth.student,enrollments:summaries,training,serverTime:new Date().toISOString() },cookies);
+      const profile=profiles?.[0] || auth.student;
+      /* Stated separately from the raw column so the portal can tell "never entered" from
+         "entered", and never shows an empty box as though it held a saved number. */
+      const nmlsIdentity=nmlsIdProfileState(profile?.nmls_id ?? null);
+      return sessionResponse(200,{ student:profile,nmlsIdentity,enrollments:summaries,training,serverTime:new Date().toISOString() },cookies);
     }
 
     if (event.httpMethod === "POST") {
@@ -46,13 +52,41 @@ export const handleStudentPortal = async (event) => {
     if (event.httpMethod === "PATCH") {
       requireSameOrigin(event);
       const input = parseJson(event);
-      const student = await updateStudentProfile(auth.accessToken,input);
-      await dbRequest("student_portal_events",{
-        method:"POST",
-        prefer:"return=minimal",
-        body:{ student_id:auth.student.id,event_type:"profile_viewed",metadata:{ source:"student_portal",action:"name_updated" } }
-      });
-      return sessionResponse(200,{ ok:true,student },cookies);
+      /* Name and NMLS number are corrected independently. A learner fixing a mistyped
+         identifier must not have to resend their name, and vice versa, so neither field
+         is required by the presence of the other. */
+      const wantsName = input.firstName !== undefined || input.lastName !== undefined;
+      const wantsNmlsId = input.nmlsId !== undefined;
+      if (!wantsName && !wantsNmlsId) throw Object.assign(new Error("invalid_student_profile"),{ statusCode:400 });
+
+      let student = null;
+      if (wantsName) {
+        student = await updateStudentProfile(auth.accessToken,input);
+        await dbRequest("student_portal_events",{
+          method:"POST",
+          prefer:"return=minimal",
+          body:{ student_id:auth.student.id,event_type:"profile_viewed",metadata:{ source:"student_portal",action:"name_updated" } }
+        });
+      }
+
+      let nmlsIdentity = null;
+      if (wantsNmlsId) {
+        const saved = await saveStudentNmlsId(auth.student.id,input.nmlsId);
+        nmlsIdentity = nmlsIdProfileState(saved.nmlsId);
+        /* Logged only when the number actually moved. The authoritative history is
+           student_nmls_id_changes; this event exists so the portal timeline matches it. */
+        if (saved.changed) {
+          await dbRequest("student_portal_events",{
+            method:"POST",
+            prefer:"return=minimal",
+            /* The identifier itself is deliberately absent from the metadata: it already
+               lives in the identity log, and portal events are a looser store. */
+            body:{ student_id:auth.student.id,event_type:"profile_viewed",metadata:{ source:"student_portal",action:"nmls_id_updated" } }
+          });
+        }
+      }
+
+      return sessionResponse(200,{ ok:true,student,nmlsIdentity },cookies);
     }
 
     throw Object.assign(new Error("method_not_allowed"),{ statusCode:405 });

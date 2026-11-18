@@ -6,6 +6,29 @@ const otherGroup = document.querySelector("#otherGroup");
 const profileCompletion = document.querySelector("#profileCompletion");
 const profileNameForm = document.querySelector("#profileNameForm");
 const profileFormMessage = document.querySelector("#profileFormMessage");
+const nmlsIdentity = document.querySelector("#nmlsIdentity");
+const nmlsIdentityForm = document.querySelector("#nmlsIdentityForm");
+const nmlsIdInput = document.querySelector("#nmlsIdInput");
+const nmlsIdentityMessage = document.querySelector("#nmlsIdentityMessage");
+const nmlsIdentitySubmit = document.querySelector("#nmlsIdentitySubmit");
+
+/* One sentence per refusal the server can return, so a learner is told what to change
+   rather than that something went wrong. Keys match config/nmls/student-identifier.mjs. */
+const NMLS_ID_MESSAGES = {
+  nmls_id_empty: "Enter your NMLS ID, or leave this section if you do not have one yet.",
+  nmls_id_not_digits: "An NMLS ID is digits only. Remove any letters, spaces or punctuation.",
+  nmls_id_too_long: "That is longer than any NMLS ID. Check the number on your NMLS record.",
+};
+
+function showNmlsIdentity(state) {
+  if (!nmlsIdentity) return;
+  nmlsIdentity.hidden = false;
+  const present = Boolean(state?.present);
+  /* The saved number is placed in the field itself, so correcting a typo means editing
+     what is there rather than retyping it from memory. */
+  nmlsIdInput.value = present ? String(state.value ?? "") : "";
+  nmlsIdentitySubmit.textContent = present ? "Update my NMLS ID" : "Save my NMLS ID";
+}
 
 function escapeHtml(value) {
   return String(value ?? "").replace(/[&<>'"]/g,(character) => ({ "&":"&amp;", "<":"&lt;", ">":"&gt;", "'":"&#39;", '"':"&quot;" })[character]);
@@ -101,6 +124,7 @@ function render(data) {
     document.querySelector('#trainingCourses').innerHTML=available.map(c=>`<article class="course-card"><div class="course-main"><p class="status">${escapeHtml(c.state)} · Free training</p><h3>${escapeHtml(c.name)}</h3><p>No payment and no licensing credit.</p></div><div class="course-actions"><button type="button" data-training-course="${escapeHtml(c.id)}">Start free training</button></div></article>`).join('');
   }
   personalize(data.student);
+  showNmlsIdentity(data.nmlsIdentity);
   document.querySelector("#activeCount").textContent = current.length;
   document.querySelector("#completedCount").textContent = completed.length;
   document.querySelector("#certificateCount").textContent = certificateCount;
@@ -152,6 +176,37 @@ profileNameForm.addEventListener("submit",async(event) => {
     profileFormMessage.textContent = "We could not save your name. Please check both fields and try again.";
   } finally {
     button.disabled = false;
+  }
+});
+
+nmlsIdentityForm?.addEventListener("submit",async(event) => {
+  event.preventDefault();
+  nmlsIdentityMessage.textContent = "Saving your NMLS ID…";
+  nmlsIdentitySubmit.disabled = true;
+  try {
+    const response = await fetch("/api/student/portal",{
+      method:"PATCH",
+      credentials:"same-origin",
+      headers:{ "content-type":"application/json",accept:"application/json" },
+      /* Only the identifier is sent. The name is a separate correction and resending it
+         here would overwrite it with whatever happens to be on screen. */
+      body:JSON.stringify({ nmlsId:nmlsIdInput.value })
+    });
+    const result = await response.json().catch(() => ({}));
+    if (!response.ok) {
+      /* A refusal the learner can act on is shown as such; anything else is a fault on
+         our side and must not be dressed up as their mistake. */
+      nmlsIdentityMessage.textContent = NMLS_ID_MESSAGES[result.error]
+        || "We could not save your NMLS ID just now. Please try again shortly.";
+      return;
+    }
+    showNmlsIdentity(result.nmlsIdentity);
+    nmlsIdentityMessage.textContent = "Your NMLS ID has been saved.";
+  } catch (error) {
+    console.error(error);
+    nmlsIdentityMessage.textContent = "We could not save your NMLS ID just now. Please try again shortly.";
+  } finally {
+    nmlsIdentitySubmit.disabled = false;
   }
 });
 
