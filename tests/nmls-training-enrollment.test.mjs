@@ -2,6 +2,7 @@ import { STAFF_COOKIE as CURRENT_TEST_COOKIE } from './fixtures/admin-console/ha
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { randomUUID } from 'node:crypto';
+import { readFileSync } from 'node:fs';
 import { createStore, withConsoleMock, STAFF_ID, ENROLLMENT_ID } from './fixtures/admin-console/harness.mjs';
 import { NMLS_TRAINING_COURSE as identity } from '../config/nmls-course-identity.mjs';
 import { nmlsTrainingDefinition } from '../config/nmls-training-definition.mjs';
@@ -50,10 +51,18 @@ test('NMLS readiness requires an exact real source manifest, not just a matching
   assert.deepEqual(await verifiedTrainingReadiness(identity.id),{ready:true,reason:null});
   assert.deepEqual(calls.at(-1).body,{p_course_id:identity.id});
   assert.equal(definition.manifest.modules.length,8);assert.equal(definition.manifest.modules.flatMap(m=>m.units).length,45);
-  assert.equal(definition.manifest.providerApprovalId, identity.providerId);
+  assert.equal(definition.manifest.providerApprovalId, null);
   assert.equal(definition.manifest.courseApprovalId, null);
   assert.equal(definition.manifest.creditEligible, false);
 }));
+test('authored NMLS definition equals the immutable row stored by migration 025',()=>{
+  // Production compares these two exactly; any drift closes the student portal.
+  const sql=readFileSync(new URL('../database/025_nmls_free_training.sql',import.meta.url),'utf8');
+  const stored=sql.match(/insert into nmls_training_definitions\([^)]*\)\s*values\('([^']*)','([^']*)','([a-f0-9]{64})','([a-f0-9]{64})','(.*)'::jsonb\);/);
+  assert.ok(stored,'migration 025 definition row not found');
+  assert.deepEqual({course_id:stored[1],course_version:stored[2],content_digest:stored[3],definition_digest:stored[4],
+    manifest:JSON.parse(stored[5].replaceAll("''","'"))},nmlsTrainingDefinition());
+});
 test('missing NMLS definition fails closed and performs no enrollment write',async()=>fixture(async calls=>{
   assert.equal((await verifiedTrainingReadiness(identity.id)).reason,'nmls_training_database_runtime_unavailable');
   await assert.rejects(()=>ensureTrainingEnrollment(STAFF_ID,course),/nmls_training_database_runtime_unavailable/);

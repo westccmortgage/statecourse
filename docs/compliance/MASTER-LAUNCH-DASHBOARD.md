@@ -2,6 +2,17 @@
 
 # StateCourse Master Launch Dashboard
 
+## NMLS course application 109386 — 2026-11-19
+
+The owner opened NMLS course application **109386**, "8 Hour SAFE Comprehensive: 2026
+Mortgage Continuing Education" (status Awaiting Documents; materials milestone
+2026-11-24). This is not course approval and no course number is assigned. SRR requires
+working access to two student versions and one open version. The student portal was
+refusing to open the course because of a definition mismatch introduced on 2026-11-17;
+a code repair is on branch `claude/inspiring-lamport-wjsuvn`, not yet deployed or
+verified in production. No enrollment, payment or credit control changed. See
+[NMLS Launch Board](nmls/LAUNCH-BOARD.md).
+
 ## NMLS provider approval — 2026-11-17
 
 State Regulatory Registry LLC approved **StateCourse LLC** as an NMLS course provider:
