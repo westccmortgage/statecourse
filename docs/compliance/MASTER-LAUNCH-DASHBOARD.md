@@ -2,6 +2,14 @@
 
 # StateCourse Master Launch Dashboard
 
+## BioSig-ID interface built, switched off — 2026-11-20
+
+The BioSig-ID interface for the reviewers' credit course is built from BSI's own sample on
+branch `claude/inspiring-lamport-wjsuvn`. It is off by default, holds no BSI value, has
+never contacted BSI, and needs a database table that is not applied. BioSig remains an
+open gate until BSI's values arrive and a sandbox check passes. See
+[NMLS Launch Board](nmls/LAUNCH-BOARD.md).
+
 ## NMLS reviewer version and free-training split — 2026-11-20
 
 Built on branch `claude/inspiring-lamport-wjsuvn`, not deployed: free training moved to

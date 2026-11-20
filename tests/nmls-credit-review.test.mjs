@@ -54,10 +54,12 @@ test('the course endpoint refuses a non-reviewer at the first database read', as
   assert.throws(() => creditReviewPresentation({ accessMode: 'student' }), /nmls_course_review_access_required/);
 });
 
-test('checkpoint placeholders are off by default and there is no live mode', () => {
+test('checkpoints are off by default; only the two exact values turn anything on', () => {
   assert.equal(nmlsCheckpointMode({}), 'off');
-  for (const value of ['', 'on', 'true', '1', 'live', 'production', 'PLACEHOLDER', 'biosig']) assert.equal(nmlsCheckpointMode({ NMLS_CREDIT_CHECKPOINTS: value }), 'off');
+  for (const value of ['', 'on', 'true', '1', 'live', 'production', 'PLACEHOLDER', 'BioSig', 'biosig ']) assert.equal(nmlsCheckpointMode({ NMLS_CREDIT_CHECKPOINTS: value }), 'off');
   assert.equal(nmlsCheckpointMode({ NMLS_CREDIT_CHECKPOINTS: 'placeholder' }), 'placeholder');
+  assert.equal(nmlsCheckpointMode({ NMLS_CREDIT_CHECKPOINTS: 'biosig' }), 'biosig');
+  assert.equal(creditReviewPresentation({ accessMode: 'student_reviewer' }, { NMLS_CREDIT_CHECKPOINTS: 'biosig' }).creditReview.checkpoints.connected, true);
   const closed = creditReviewPresentation({ accessMode: 'student_reviewer' }, {});
   assert.equal(closed.creditReview.version, 'closed'); assert.equal(closed.creditReview.checkpoints.mode, 'off'); assert.equal(closed.creditReview.checkpoints.connected, false);
   assert.equal(creditReviewPresentation({ accessMode: 'regulator_reviewer' }, { NMLS_CREDIT_CHECKPOINTS: 'placeholder' }).creditReview.checkpoints.mode, 'placeholder');
@@ -77,10 +79,9 @@ test('the checkpoint sequence is Rules of Conduct, Begin, Middle#1, Middle#2, Fi
   assert.deepEqual(checkpointsBeforeFinal(NMLS_CREDIT_CHECKPOINTS), ['final_exam']);
 });
 
-test('placeholders say that nothing was verified, and no BioSig-ID call, key or address exists', () => {
+test('placeholders say that nothing was verified, and the placeholder path contacts nobody', () => {
   for (const step of NMLS_CREDIT_CHECKPOINTS) assert.match(placeholderCopy(step).status, /^Placeholder\..*(no acceptance|No identity check)/i);
-  for (const path of ['config/nmls/credit-review.mjs', 'netlify/functions/_lib/nmls-credit-review.mjs', 'netlify/functions/student-nmls-course.mts',
-    'public/statecourse/student/nmls-course/checkpoint-flow.mjs', 'public/statecourse/student/nmls-course/nmls-course.mjs', 'public/statecourse/student/nmls-course/index.html']) {
+  for (const path of ['config/nmls/credit-review.mjs', 'netlify/functions/_lib/nmls-credit-review.mjs', 'public/statecourse/student/nmls-course/checkpoint-flow.mjs']) {
     const source = read(path);
     assert.doesNotMatch(source, /https?:\/\/|soap|wsdl|api[_-]?key|secret|biosig-id\.com|verified\s*[:=]\s*true/i, path);
   }
