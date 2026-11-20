@@ -40,7 +40,7 @@ test("the helper reproduces BSI's own sample byte for byte", () => {
 test('without every BSI value the integration is unavailable, and it never echoes a value', () => {
   assert.deepEqual(biosigConfig({}), { ready: false, missing: BIOSIG_REQUIRED });
   for (const name of BIOSIG_REQUIRED) {
-    const { [name]: _removed, ...rest } = SAMPLE;
+    const rest = Object.fromEntries(Object.entries(SAMPLE).filter(([key]) => key !== name));
     assert.deepEqual(biosigConfig(rest), { ready: false, missing: [name] });
     assert.deepEqual(biosigConfig({ ...SAMPLE, [name]: '[FROM BSI]' }), { ready: false, missing: [name] }, 'a placeholder left in place is not a value');
     assert.deepEqual(biosigConfig({ ...SAMPLE, [name]: '   ' }), { ready: false, missing: [name] });
