@@ -33,7 +33,7 @@ function showNmlsIdentity(state) {
   /* The saved number is placed in the field itself, so correcting a typo means editing
      what is there rather than retyping it from memory. */
   nmlsIdInput.value = present ? String(state.value ?? "") : "";
-  nmlsIdentitySubmit.textContent = present ? "Update my NMLS ID" : "Save my NMLS ID";
+  nmlsIdentitySubmit.textContent = present ? "Update" : "Save";
 }
 
 function escapeHtml(value) {
