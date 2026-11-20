@@ -36,7 +36,7 @@ async function fixture(run,options={}) {
       if(name==='rpc/nmls_training_enroll')return options.revoked?json({message:'nmls_training_access_denied'},403):json(options.result||{enrollment,existing:true});
       if(name==='rpc/nmls_training_context')return options.contextUnavailable?json({message:'SECRET'},503):json(options.context||context());
       if(name==='student_portal_enrollments')return json([row]);
-      if(name==='enrollments')return json([{id:ENROLLMENT_ID,enrollment_origin:'training'}]);
+      if(name==='enrollments')return json([{id:ENROLLMENT_ID,enrollment_origin:'training',review_role:options.reviewRole||null}]);
       if(name==='student_portal_events')return json(null);
       return fallback(input,init);
     };
@@ -126,7 +126,7 @@ test('authentication is mandatory and browser-supplied student identity cannot r
   assert.equal((await response.json()).creditEligible,false);
 }));
 test('student portal projects real zero-progress NMLS context with 45 lessons and no raw runtime',async()=>fixture(async calls=>{
-  const response=await portalHandler(new Request('https://statecourse.test/api/student/portal',{headers:{cookie:CURRENT_TEST_COOKIE}}));
+  const response=await portalHandler(new Request('https://statecourse.test/api/student/portal?section=free-training',{headers:{cookie:CURRENT_TEST_COOKIE}}));
   assert.equal(response.status,200);const item=(await response.json()).enrollments[0];
   assert.equal(item.assignment_count,45);assert.equal(item.assignments_completed,0);assert.equal(item.training_phase,'not_started');
   assert.equal(item.training_completed,false);assert.equal(item.nmls_training.available,true);assert.equal(item.completed_at,null);
@@ -135,6 +135,36 @@ test('student portal projects real zero-progress NMLS context with 45 lessons an
   assert.ok(portalConfig.path.includes('/api/student/portal'));
   assert.equal(calls.some(c=>c.name==='rpc/nmls_training_commit'),false);
 }));
+test('free training is absent from My StateCourse and intact in its own section',async()=>fixture(async calls=>{
+  const get=async query=>(await (await portalHandler(new Request(`https://statecourse.test/api/student/portal${query}`,{headers:{cookie:CURRENT_TEST_COOKIE}}))).json());
+  const main=await get('');
+  assert.equal(main.section,'main');assert.deepEqual(main.enrollments,[]);
+  assert.deepEqual(main.freeTraining,{enrollmentCount:1,href:'/student/free-training/'});
+  assert.equal(main.training,undefined,'the main dashboard offers no free training to start');
+  const free=await get('?section=free-training');
+  assert.equal(free.section,'free-training');assert.equal(free.enrollments.length,1);
+  const item=free.enrollments[0];
+  // The same enrollment, the same saved progress, the same training route: nothing reset.
+  assert.equal(item.enrollment_id,ENROLLMENT_ID);assert.equal(item.nmls_training.available,true);assert.equal(item.assignment_count,45);
+  assert.equal(item.resume_path,`${identity.studentRoute}?enrollment_id=${ENROLLMENT_ID}`);assert.equal(item.credit_review,undefined);
+  assert.equal(free.training.available,true);
+  assert.equal(calls.some(c=>['PATCH','DELETE'].includes(c.method)),false,'reading either section changes no record');
+  assert.equal(calls.some(c=>c.name==='rpc/nmls_training_commit'||c.name==='rpc/nmls_training_enroll'),false);
+}));
+for(const [reviewRole,version] of [['student_reviewer','closed'],['regulator_reviewer','open']])
+test(`${reviewRole} sees the credit version in My StateCourse, without free-training labels`,async()=>fixture(async()=>{
+  const get=async query=>(await (await portalHandler(new Request(`https://statecourse.test/api/student/portal${query}`,{headers:{cookie:CURRENT_TEST_COOKIE}}))).json());
+  const main=await get('');
+  assert.equal(main.enrollments.length,1);const item=main.enrollments[0];
+  assert.deepEqual(item.credit_review,{version,applicationId:'109386'});
+  assert.equal(item.course_name,'8 Hour SAFE Comprehensive: 2026 Mortgage Continuing Education');
+  assert.equal(item.resume_path,`/student/nmls-course/?enrollment_id=${ENROLLMENT_ID}`);
+  assert.doesNotMatch(JSON.stringify([item.course_name,item.remaining_requirements,item.credit_review]),/free|training|non-credit|no nmls|practice/i);
+  // Still no credit, certificate or payment is asserted for it.
+  assert.equal(item.compliance_credit_eligible,false);assert.equal(item.certificate_status,'not_applicable');assert.equal(item.payment_status,'not_applicable');
+  assert.equal(main.freeTraining.enrollmentCount,0);
+  assert.deepEqual((await get('?section=free-training')).enrollments,[],'a reviewer enrollment is not also listed as free practice');
+},{reviewRole,context:{...context(),reviewRole}}));
 test('missing/denied/wrong-owner progress is unavailable, never a false empty course',async()=>{
   for(const get of [async()=>{throw Error('unavailable SECRET');},async()=>({...context(),studentId:randomUUID()}),async()=>({...context(),contentDigest:'0'.repeat(64)})]){
     const item=await withNmlsTrainingSummary(STAFF_ID,row,{callRpc:get});

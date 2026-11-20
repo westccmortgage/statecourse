@@ -41,6 +41,24 @@ main { width:min(100%,var(--max)); min-height:calc(100vh - 144px); margin:0 auto
 .profile-completion button:hover { background:#713029; }
 .profile-completion button:focus-visible { outline:3px solid #c68a32; outline-offset:2px; }
 .profile-completion button:disabled { cursor:wait; opacity:.7; }
+/* Desktop only. The form is a three-column grid and auto-placement wrapped its children
+   in source order, putting a label beside a field and the button under the wrong one.
+   Labels are pinned to the first row, controls to the second, the message to the third.
+   The single-column rule at 760px and below is unchanged. */
+@media (min-width: 761px) {
+  .profile-completion form > label { grid-row: 1; }
+  .profile-completion form > input,
+  .profile-completion form > button { grid-row: 2; }
+  .profile-completion form > p { grid-row: 3; grid-column: 1 / -1; }
+  #nmlsIdentityForm > label,
+  #nmlsIdentityForm > input { grid-column: 1 / 3; }
+  #nmlsIdentityForm > button { grid-column: 3; }
+}
+.free-training-link { display:flex; flex-wrap:wrap; gap:16px 32px; align-items:center; justify-content:space-between; margin-top:44px; padding:22px 26px; border:1px solid var(--rule); background:#fff; }
+.free-training-link h2 { margin:0; color:var(--navy); font-family:"Playfair Display",Georgia,serif; font-size:21px; font-weight:500; }
+.free-training-link p:not(.eyebrow) { margin:6px 0 0; color:var(--muted); font-size:13px; }
+.free-training-link a { color:var(--burgundy); font-size:12px; font-weight:800; }
+.portal-intro a { color:var(--burgundy); font-weight:700; }
 .profile-form-message { grid-column:1/-1; min-height:18px; margin:2px 0 0; color:#5c5348; font-size:11px; }
 .course-group { margin-top:44px; }
 .section-heading { display:flex; align-items:end; justify-content:space-between; gap:30px; margin-bottom:15px; }

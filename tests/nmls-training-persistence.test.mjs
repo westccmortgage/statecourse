@@ -269,21 +269,25 @@ test('real main001-024 plus generated025: free-training SQL authorization and tr
 
 test('real existing-auth provisioning: isolated regulator reads and sample-student non-credit writes', {skip}, async t=>{
  const db=await createDatabase(t);await db.exec(migration);
- const regulator=randomUUID(),sample=randomUUID();
- const regulatorEmail=`regulator-${regulator}@example.invalid`,sampleEmail=`sample-${sample}@example.invalid`;
+ const regulator=randomUUID(),sample=randomUUID(),second=randomUUID();
+ const regulatorEmail=`regulator-${regulator}@example.invalid`,sampleEmail=`sample-${sample}@example.invalid`,secondEmail=`second-${second}@example.invalid`;
  const sql=reviewProvision.replaceAll('REPLACE_WITH_EXISTING_REGULATOR_EMAIL',regulatorEmail)
-  .replaceAll('REPLACE_WITH_EXISTING_SAMPLE_STUDENT_EMAIL',sampleEmail);
- await assert.rejects(db.exec(reviewProvision),/Replace both distinct/);await db.exec('rollback');
+  .replaceAll('REPLACE_WITH_EXISTING_SAMPLE_STUDENT_EMAIL',sampleEmail)
+  .replaceAll('REPLACE_WITH_EXISTING_SECOND_SAMPLE_STUDENT_EMAIL',secondEmail);
+ await assert.rejects(db.exec(reviewProvision),/Replace all three distinct/);await db.exec('rollback');
+ // The two closed reviewers must be different people.
+ await assert.rejects(db.exec(sql.replaceAll(secondEmail,sampleEmail)),/Replace all three distinct/);await db.exec('rollback');
  await assert.rejects(db.exec(sql),/exactly one existing Supabase Auth/);await db.exec('rollback');
- await db.query('insert into auth.users(id,email) values($1,$2),($3,$4)',[regulator,regulatorEmail,sample,sampleEmail]);
+ await db.query('insert into auth.users(id,email) values($1,$2),($3,$4),($5,$6)',[regulator,regulatorEmail,sample,sampleEmail,second,secondEmail]);
  await db.exec(sql);
  const bindings=(await db.query("select * from enrollments where course_id='nmls-ce-2026-comprehensive-8' order by review_role")).rows;
- assert.equal(bindings.length,2);
+ assert.equal(bindings.length,3); // one open reviewer, two closed reviewers
  const reg=bindings.find(e=>e.student_id===regulator),student=bindings.find(e=>e.student_id===sample);
  assert.equal(reg.review_role,'regulator_reviewer');assert.equal(student.review_role,'student_reviewer');
+ assert.equal(bindings.find(e=>e.student_id===second).review_role,'student_reviewer');
  for(const e of bindings){assert.equal(e.enrollment_origin,'training');assert.equal(e.compliance_credit_eligible,false);assert.equal(e.checkout_attempt_id,null);assert.ok(e.expires_at);}
- await db.exec(sql);assert.equal((await db.query('select count(*)::int n from admin_console_actions where action=$1',['nmls_review_scope_provisioned'])).rows[0].n,2);
- assert.equal((await db.query('select count(*)::int n from auth.users')).rows[0].n,3); // provisioning never creates Auth identities
+ await db.exec(sql);assert.equal((await db.query('select count(*)::int n from admin_console_actions where action=$1',['nmls_review_scope_provisioned'])).rows[0].n,3);
+ assert.equal((await db.query('select count(*)::int n from auth.users')).rows[0].n,4); // provisioning never creates Auth identities
  for(const table of ['checkout_attempts','payments','course_completion_events','course_certificates','regulatory_reports'])
   assert.equal((await db.query(`select count(*)::int n from ${table}`)).rows[0].n,0,table);
  const context=(actor,id)=>rpc(db,'nmls_training_context',{p_student_id:actor,p_enrollment_id:id,p_event_id:null});

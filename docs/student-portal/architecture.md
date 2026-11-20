@@ -27,6 +27,15 @@ The dashboard contract includes:
 - a server-controlled resume path;
 - a separate non-credit licensing navigator.
 
+## Sections
+
+The portal has two sections, split by the server (`netlify/functions/_lib/portal-sections.mjs`):
+
+- **My StateCourse** (`/student/`): credit courses, purchases, review access to a credit course, progress and certificates.
+- **Free practice** (`/student/free-training/`): every enrollment whose origin is `training`. Labelled "Free practice, no licensing credit". It has its own entry point and is where new free training is started.
+
+Every enrollment appears in exactly one section. The one exception to the origin rule is the NMLS reviewers' credit version: an NMLS training enrollment provisioned with a reviewer role is shown in My StateCourse as the submitted course and opens at `/student/nmls-course/`.
+
 ## California readiness
 
 California enrollments may use the same portal while retaining California-only configuration for 15 assignments per 45-hour course, calendar eligibility, three separate regulatory course records, instructor support, and licensing navigator steps. These rules are not defaults for other states.

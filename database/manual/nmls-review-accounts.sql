@@ -1,6 +1,7 @@
 -- MANUAL, AFTER 025. Not an automatic schema migration.
--- Replace the two email placeholders with two DISTINCT, EXISTING Supabase Auth
--- users dedicated to these roles. This script creates no Auth account, password,
+-- Replace the three email placeholders with three DISTINCT, EXISTING Supabase Auth
+-- users dedicated to these roles: one open (read-only) reviewer and two closed
+-- (student-experience) reviewers, as NMLS course review requires. This script creates no Auth account, password,
 -- checkout, payment, approval, certificate, credit, or global staff binding.
 -- It is atomic and safe to repeat for the same active scopes; it never reopens
 -- expired/revoked access or promotes an existing ordinary training enrollment.
@@ -9,12 +10,14 @@ do $provision_nmls_review$
 declare
  regulator_email text := 'REPLACE_WITH_EXISTING_REGULATOR_EMAIL';
  student_email text := 'REPLACE_WITH_EXISTING_SAMPLE_STUDENT_EMAIL';
+ second_student_email text := 'REPLACE_WITH_EXISTING_SECOND_SAMPLE_STUDENT_EMAIL';
  owner_id uuid; actor uuid; role_spec record; student students%rowtype;
  enrollment enrollments%rowtype; existing_count integer; created boolean;
 begin
- if regulator_email like 'REPLACE_%' or student_email like 'REPLACE_%'
- or lower(regulator_email)=lower(student_email) then
-  raise exception 'Replace both distinct existing-auth reviewer email placeholders';end if;
+ if regulator_email like 'REPLACE_%' or student_email like 'REPLACE_%' or second_student_email like 'REPLACE_%'
+ or lower(regulator_email) in (lower(student_email),lower(second_student_email))
+ or lower(student_email)=lower(second_student_email) then
+  raise exception 'Replace all three distinct existing-auth reviewer email placeholders';end if;
  if to_regprocedure('public.nmls_training_context(uuid,uuid,uuid)') is null then
   raise exception 'Apply verified NMLS025 before provisioning review scopes';end if;
  select u.id into owner_id from auth.users u join current_staff_actor_bindings b on b.auth_user_id=u.id
@@ -23,7 +26,8 @@ begin
  and (b.expires_at is null or b.expires_at>clock_timestamp()) order by b.recorded_at desc limit 1;
  if owner_id is null then raise exception 'Active verified owner binding required for review provisioning';end if;
  for role_spec in select * from (values
-   (lower(regulator_email),'regulator_reviewer'),(lower(student_email),'student_reviewer')
+   (lower(regulator_email),'regulator_reviewer'),(lower(student_email),'student_reviewer'),
+   (lower(second_student_email),'student_reviewer')
  ) as roles(email,review_role) order by email loop
   select count(*) into existing_count from auth.users where lower(email)=role_spec.email;
   if existing_count<>1 then raise exception 'Each reviewer must resolve to exactly one existing Supabase Auth user';end if;
@@ -73,7 +77,7 @@ commit;
 
 -- Verify bindings and hand each account its own route. No credentials returned.
 select s.email,e.review_role,e.status,e.expires_at,e.compliance_credit_eligible,
- '/student/nmls-training/?enrollment_id='||e.id as course_path
+ '/student/nmls-course/?enrollment_id='||e.id as course_path
 from enrollments e join students s on s.id=e.student_id
 where e.course_id='nmls-ce-2026-comprehensive-8' and e.review_role in('regulator_reviewer','student_reviewer')
 order by e.review_role,s.email;

@@ -1,3 +1,9 @@
+/* One script, two pages. /student/ is My StateCourse: credit courses, purchases, progress
+   and certificates. /student/free-training/ is the separate free-practice section. The
+   server decides which enrollments belong to which; this script only draws them. */
+const section = document.body.dataset.portalSection === "free-training" ? "free-training" : "main";
+const portalApi = section === "free-training" ? "/api/student/portal?section=free-training" : "/api/student/portal";
+const portalPath = section === "free-training" ? "/student/free-training/" : "/student/";
 const message = document.querySelector("#portalMessage");
 const emptyState = document.querySelector("#emptyState");
 const activeGroup = document.querySelector("#activeGroup");
@@ -72,14 +78,39 @@ function displayName(student = {}) {
 
 function personalize(student = {}) {
   const name = displayName(student);
-  document.querySelector("#studentGreeting").textContent = name ? `Welcome back, ${name}.` : "Welcome back.";
+  const greeting = document.querySelector("#studentGreeting");
+  if (greeting) greeting.textContent = name ? `Welcome back, ${name}.` : "Welcome back.";
   const accountName = document.querySelector("#studentAccountName");
   accountName.textContent = name;
   accountName.hidden = !name;
-  profileCompletion.hidden = Boolean(name);
+  if (profileCompletion) profileCompletion.hidden = Boolean(name);
+}
+
+/* The NMLS reviewers' credit version. It carries none of the free-training labels, and
+   it states nothing about credit, certificates or payment either way. */
+function creditReviewCard(enrollment) {
+  const open = enrollment.credit_review.version === "open";
+  const progress = Math.max(0,Math.min(100,Number(enrollment.progress_percent || 0)));
+  const available = enrollment.nmls_training?.available === true;
+  const resumePath = sameOriginPath(enrollment.resume_path);
+  const completed = !open && enrollment.training_completed === true;
+  const action = enrollment.access_status === "active" && resumePath && available
+    ? `<a class="resume-course" href="${escapeHtml(encodeURI(resumePath))}" data-enrollment="${safeText(enrollment.enrollment_id)}">${open ? "Open course" : completed ? "View course result" : "Resume course"} →</a>` : "";
+  return `<article class="course-card" data-credit-review="${open ? "open" : "closed"}">
+    <div class="course-state"><strong>${safeText(enrollment.state)}</strong><small>${safeText(enrollment.enrollment_status)}</small></div>
+    <div class="course-main">
+      <p class="status">NMLS reviewer access · ${open ? "open version" : "student version"} · application ${safeText(enrollment.credit_review.applicationId)}</p>
+      <h3>${safeText(enrollment.course_name)}</h3>
+      <p class="version">Course version ${safeText(enrollment.course_version)} · Enrollment ${safeText(enrollment.enrollment_id)}</p>
+      ${!available ? "<p>Saved course progress is temporarily unavailable. This does not mean your work was lost. Reload to check again.</p>" : open ? "<p>Every lesson and module quiz can be opened in any order. No study time or completion is recorded.</p>" : `<div class="progress-track" role="progressbar" aria-label="Course progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="${progress}"><span style="width:${progress}%"></span></div>
+      <div class="progress-label"><span>${progress}% complete</span><span>${safeText(enrollment.assignments_completed,0)}/${safeText(enrollment.assignment_count,0)} lessons</span></div>`}
+    </div>
+    <div class="course-actions">${action}<div class="course-meta"><span><strong>Registered:</strong> ${date(enrollment.enrollment_date,"Not recorded")}</span>${open || !available ? "" : `<span><strong>Module quizzes:</strong> ${safeText(enrollment.nmls_training.passedModules,0)}/${safeText(enrollment.nmls_training.totalModules,0)} passed</span>`}<span><strong>Remaining:</strong> ${remainingRequirements(enrollment)}</span></div></div>
+  </article>`;
 }
 
 function card(enrollment) {
+  if (enrollment.credit_review) return creditReviewCard(enrollment);
   const training=enrollment.enrollment_origin==='training';
   const mortgageTraining=training&&enrollment.course_id==='nmls-ce-2026-comprehensive-8';
   const mortgageProgress=enrollment.nmls_training;
@@ -109,7 +140,7 @@ function card(enrollment) {
 function render(data) {
   const enrollments = data.enrollments || [];
   const active = enrollments.filter((item) => item.enrollment_status === "active" || item.enrollment_status === "qa_non_credit");
-  const completed = enrollments.filter((item) => item.course_id==='nmls-ce-2026-comprehensive-8'&&item.enrollment_origin==='training'?item.training_completed===true:item.completed_at || item.regulatory_credit_status === "earned");
+  const completed = enrollments.filter((item) => item.course_id==='nmls-ce-2026-comprehensive-8'&&item.enrollment_origin==='training'?item.training_completed===true&&item.credit_review?.version!=='open':item.completed_at || item.regulatory_credit_status === "earned");
   const completedIds = new Set(completed.map((item) => item.enrollment_id));
   const current = active.filter((item) => !completedIds.has(item.enrollment_id));
   const other = enrollments.filter((item) => !completedIds.has(item.enrollment_id) && !active.includes(item));
@@ -121,28 +152,35 @@ function render(data) {
   if(group){
     group.hidden=training?.available!==false&&!available.length;
     document.querySelector('#trainingMessage').textContent=training?.available===false?'Available training courses could not be checked. Reload to try again.':'';
-    document.querySelector('#trainingCourses').innerHTML=available.map(c=>`<article class="course-card"><div class="course-main"><p class="status">${escapeHtml(c.state)} · Free training</p><h3>${escapeHtml(c.name)}</h3><p>No payment and no licensing credit.</p></div><div class="course-actions"><button type="button" data-training-course="${escapeHtml(c.id)}">Start free training</button></div></article>`).join('');
+    document.querySelector('#trainingCourses').innerHTML=available.map(c=>`<article class="course-card"><div class="course-state"><strong>${escapeHtml(c.state)}</strong><small>Free practice</small></div><div class="course-main"><p class="status">Free training · no licensing credit</p><h3>${escapeHtml(c.name)}</h3><p>No payment and no licensing credit.</p></div><div class="course-actions"><button type="button" data-training-course="${escapeHtml(c.id)}">Start free training</button></div></article>`).join('');
   }
   personalize(data.student);
-  showNmlsIdentity(data.nmlsIdentity);
+  if (section === "main") {
+    showNmlsIdentity(data.nmlsIdentity);
+    document.querySelector("#certificateCount").textContent = certificateCount;
+    /* The link to the free section is always shown; the count says whether anything is there. */
+    const count = Number(data.freeTraining?.enrollmentCount || 0);
+    document.querySelector("#freeTrainingSummary").textContent = count
+      ? `You have ${count} free practice ${count === 1 ? "course" : "courses"} in progress or on record.`
+      : "Free practice courses are listed separately from your credit courses.";
+  }
   document.querySelector("#activeCount").textContent = current.length;
   document.querySelector("#completedCount").textContent = completed.length;
-  document.querySelector("#certificateCount").textContent = certificateCount;
   document.querySelector("#activeCourses").innerHTML = current.map(card).join("");
   document.querySelector("#completedCourses").innerHTML = completed.map(card).join("");
   document.querySelector("#otherCourses").innerHTML = other.map(card).join("");
   activeGroup.hidden = !current.length;
   completedGroup.hidden = !completed.length;
   otherGroup.hidden = !other.length;
-  emptyState.hidden = Boolean(enrollments.length);
+  emptyState.hidden = Boolean(enrollments.length) || (section === "free-training" && available.length > 0);
   message.hidden = true;
 }
 
 async function loadPortal() {
   try {
-    const response = await fetch("/api/student/portal",{ credentials:"same-origin",headers:{ accept:"application/json" } });
+    const response = await fetch(portalApi,{ credentials:"same-origin",headers:{ accept:"application/json" } });
     if (response.status === 401) {
-      location.replace("/student/sign-in/?return_to=%2Fstudent%2F");
+      location.replace(`/student/sign-in/?return_to=${encodeURIComponent(portalPath)}`);
       return;
     }
     if (!response.ok) throw new Error("portal_unavailable");
@@ -154,7 +192,7 @@ async function loadPortal() {
   }
 }
 
-profileNameForm.addEventListener("submit",async(event) => {
+profileNameForm?.addEventListener("submit",async(event) => {
   event.preventDefault();
   profileFormMessage.textContent = "Saving your name…";
   const button = profileNameForm.querySelector("button");

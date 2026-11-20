@@ -2,6 +2,50 @@
 
 # NMLS Launch Board
 
+## Free training separated; reviewers' credit version built — 2026-11-20
+
+Branch `claude/inspiring-lamport-wjsuvn`. Not deployed. No database change, no production
+setting changed, no reviewer account provisioned.
+
+**Portal fix of 2026-11-19 is live.** PR #28 was merged and the owner reports the student
+portal working. That report is the evidence; the production site was not reachable from
+the work session.
+
+**Free training has its own section.** My StateCourse (`/student/`) now lists credit
+courses, purchases, progress and certificates only. Free training, including the national
+mortgage training, is at `/student/free-training/`, labelled "Free practice, no licensing
+credit", and linked from `/free-practice/` and `/mortgage/`. The split is made by the
+server from `enrollment_origin`; every enrollment is placed in exactly one section and no
+enrollment or progress row is written, moved or reset by it.
+
+**Credit version for NMLS reviewers (application 109386).** `/student/nmls-course/` and
+`/api/student/nmls/course` present the same pinned course as "8 Hour SAFE Comprehensive:
+2026 Mortgage Continuing Education", without free-training labels, inside My StateCourse.
+Access is limited to enrollments the owner provisions with a reviewer role: one open
+version (`regulator_reviewer`, read-only, free navigation) and two closed versions
+(`student_reviewer`, the student experience). The endpoint refuses any other enrollment
+at its first database read. `database/manual/nmls-review-accounts.sql` now takes one open
+and two closed reviewer emails; **it has not been run**, so no reviewer can see this
+version until the owner provisions the three accounts.
+
+The credit version changes labels and adds checkpoint structure only. It cannot issue
+credit, a certificate or a report, `courseApprovalId` stays null, payments stay disabled,
+and public pages still say the course is not approved NMLS continuing education.
+
+**Checkpoints are placeholders, off by default (Gates 3 and 4 not closed).** The sequence
+is Rules of Conduct, BioSig-ID `Begin`, `Middle#1` (after module F03), `Middle#2` (after
+module E02), `FinalExam`, and `Resuming` on return. They appear only when the Netlify
+variable `NMLS_CREDIT_CHECKPOINTS` is exactly `placeholder`; there is no value that turns
+on real verification. Each placeholder states that nothing is verified or recorded. No
+BioSig-ID call, key, endpoint or SOAP client exists in the repository, per the CSBS
+instruction to wait for the BSI meeting of 2026-11-23 and BSI's keys. The Rules of Conduct
+text is not loaded: the genuine ROCS original is still not retained. `Middle#2` is added
+at the owner's instruction; BioSig's own list of 2026-11-18 named `Middle#1` only, so
+confirm the second middle checkpoint with BSI.
+
+**Open against SRR's access requirement:** provisioning the three reviewer accounts;
+BioSig-ID and Rules of Conduct (placeholders only); human review and duration validation.
+
 ## Course application 109386 opened; student portal defect found — 2026-11-19
 
 **Submission status changed.** The owner initiated a course application in the NMLS
@@ -179,7 +223,7 @@ Status key: **VERIFIED** = narrowly verified evidence; **BUILT** = repository im
 | ---: | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 1. NMLS account/access | **CLOSED** | Provider account in NMLS | Issuance of provider ID 1405133 presupposes account access | Retain the approval artifact in controlled records | None | SRR approval notice and CSBS confirmation, 2026-11-17 (owner-supplied) | None; superseded by Gate 2 | No | 2026-11-17 |
 | 2. Provider application package | **APPROVED — OWNER-SUPPLIED EVIDENCE** | Submitted provider application | SRR notice: StateCourse LLC, NMLS Course Provider ID 1405133, approved 2026-11-17, renewal 2028-11-01 | Independent read-back from the NMLS Approved Course Provider List; archived original decision artifact | NMLS public list, refreshed monthly | SRR approval notice and CSBS confirmation (P. Lindsay), both 2026-11-17 | Retain both original emails; confirm the public listing at the next monthly refresh; calendar the 2028-11-01 renewal; do not treat this as course approval | No | 2026-11-17 |
-| 3. BioSig access and integration | **INTERFACE SPECIFIED / NOT BUILT** | Identity and session-control concepts; authenticated actor binding | Local actor-binding tests only; vendor requirements recorded above, none tested | Intro meeting, NMLS-compliant development endpoint, sandbox credentials, SOAP client, the five `d3` checkpoints, agent-ID profile field, error/retry and support routing, acceptance evidence | BioSig-ID (application 90788); NMLS API documentation behind the provider login | BioSig email 2026-11-17 and published enrolment article; repository read 2026-11-18 | Book the intro meeting — it is what releases the development endpoint. Download the NMLS API documentation and its custom-code ZIP. Build ROC first, since enrolment follows it | **YES** | 2026-11-18 |
+| 3. BioSig access and integration | **INTERFACE SPECIFIED / NOT BUILT — checkpoint placeholders only, off by default (2026-11-20)** | Identity and session-control concepts; authenticated actor binding | Local actor-binding tests only; vendor requirements recorded above, none tested | Intro meeting, NMLS-compliant development endpoint, sandbox credentials, SOAP client, the five `d3` checkpoints, agent-ID profile field, error/retry and support routing, acceptance evidence | BioSig-ID (application 90788); NMLS API documentation behind the provider login | BioSig email 2026-11-17 and published enrolment article; repository read 2026-11-18 | Book the intro meeting — it is what releases the development endpoint. Download the NMLS API documentation and its custom-code ZIP. Build ROC first, since enrolment follows it | **YES** | 2026-11-18 |
 | 4. ROCS / learner agreement | **PARTIAL / MISSING** | Session-policy contract and receipt-bound agreement model | Retained evidence checks identify unresolved originals | Genuine current ROCS/FAQ originals, complete presentation, affirmative consent, per-course retained agreement/export | NMLS source availability and accountable review | CURRENT-STATE §2 | Acquire official originals; finalize presentation, consent, retention, and export design | **YES** | 2026-09-19 |
 | 5. Course content / human review / duration validation | **BUILT / MISSING ACCEPTANCE** | 8 modules, 45 lessons, assessment banks, 400 provisional minutes, traceability | Structure/content-loader tests; audit totals | Human SME/item signoff and representative learner duration study | Qualified reviewers and test learners | CURRENT-STATE §§3–5, 7, 21 | Assign reviewers; execute documented content, item, legal, and duration acceptance | **YES** | 2026-09-19 |
 | 6. Course submission and approval | **APPLICATION 109386 OPEN — AWAITING DOCUMENTS / NOT APPROVED — BINDING GATE** (see 2026-11-19 section) | Draft course portfolio and planning records | Null course IDs and closed enrollment verified; the provider ID is no longer null | Final approved version, submission receipt, NMLS course number, approval decision | Gates 3–5; NMLS course review | CURRENT-STATE §§3, 20–22; SRR approval notice and CSBS confirmation, 2026-11-17 | Work from the NMLS Approved Course Provider Resource Center, the User Guide and the NMLS Functional Specifications; Paula Lindsay (CSBS) is the named provider contact for questions, including whether BioSig integration must precede submission; then prepare one course. Owner approves submission separately | **YES** | 2026-11-17 |
@@ -189,7 +233,7 @@ Status key: **VERIFIED** = narrowly verified evidence; **BUILT** = repository im
 | 10. Certificate / reporting / credit banking | **MISSING** | Generic reporting/database concepts | No NMLS regulatory issuance/banking acceptance | NMLS certificate, reporting export, credit banking, reconciliation, accepted operational evidence | Course/provider approval and NMLS reporting access | CURRENT-STATE §§12–13, 22 | Design after official IDs/rules; test reconciliation before launch | **YES** | 2026-09-19 |
 | 11. Records / retention / operational procedures | **PARTIAL / MISSING ACCEPTANCE** | Event/audit concepts and draft contracts | Some local immutability/trace checks | NMLS-specific retention/retrieval, backup/restore proof, complaints/support, exception and incident procedures | Accountable operations review | CURRENT-STATE §§2, 7, 14, 16, 22 | Consolidate SOPs and perform retrieval/restore tabletop acceptance | **YES** | 2026-09-19 |
 | 12. Stripe commerce readiness | **VERIFY / NOT LIVE** | Shared checkout, signed webhook, ledger, entitlement, refund architecture | Local code tests only; historical sandbox report | Current account/config read-back, NMLS product/price, full sandbox E2E, refund/duplicate evidence | Authorized Stripe test access; owner price; Gate 6 before sale | [Stripe Readiness](../commerce/STRIPE-READINESS.md); CURRENT-STATE §10 | Reconcile test objects and run approved sandbox acceptance; keep live off | **YES** for paid launch | 2026-09-19 |
-| 13. Learner / reviewer end-to-end acceptance | **MISSING — portal readiness defect repaired in code 2026-11-19, not deployed or verified** | Learner and reviewer surfaces | Service tests and source artifact scan | Real browser learner/reviewer flow, auth/recovery, persistence, accessibility, deployment/schema evidence | Test accounts, approved environment, completed gates | CURRENT-STATE §§15, 17, 19, 21 | Execute scripted learner and reviewer acceptance with observed evidence | **YES** | 2026-09-19 |
+| 13. Learner / reviewer end-to-end acceptance | **MISSING — portal working per owner after PR #28; reviewer credit version built 2026-11-20, not deployed, reviewer accounts not provisioned** | Learner and reviewer surfaces | Service tests and source artifact scan | Real browser learner/reviewer flow, auth/recovery, persistence, accessibility, deployment/schema evidence | Test accounts, approved environment, completed gates | CURRENT-STATE §§15, 17, 19, 21 | Execute scripted learner and reviewer acceptance with observed evidence | **YES** | 2026-09-19 |
 | 14. Production launch | **BLOCKED** | Non-credit training capability exists | No commercial credit-bearing launch acceptance | All prior blocking gates, owner launch approval, verified production readiness | NMLS/BioSig/Stripe decisions and owner authorization | This board and CURRENT-STATE | Keep regulated enrollment, payment, completion, certificate, and credit off | **YES** | 2026-09-19 |
 
 ## Required state separation

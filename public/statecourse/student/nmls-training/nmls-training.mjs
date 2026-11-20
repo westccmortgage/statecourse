@@ -21,13 +21,49 @@ const messages = {
   enrollment_required: 'Open this training from My StateCourse using your own enrollment.',
 };
 const teachingPhases = ['not_started', 'source', 'remediation'];
+// Every sentence that names what this workspace is. Free training keeps the wording
+// below; the reviewers' course page (../nmls-course/) supplies its own, so neither
+// version can show the other's labels.
+export const TRAINING_WORDING = Object.freeze({
+  route: '/student/nmls-training/',
+  messages: Object.freeze({}),
+  resumePrompt: 'Saved progress loaded. Choose “Start or resume training” to continue on this device.',
+  saved: 'Progress saved. Practice time is provisional until the unit is completed.',
+  loading: 'Loading your saved training…', saving: 'Saving training activity…',
+  offline: 'You are offline. Practice is paused. Reconnect, reconcile any pending action, then resume explicitly.',
+  loggedOut: 'Training paused. Saved units remain available.',
+  passedStatus: 'Training completed and saved. No NMLS credit or certificate has been issued.',
+  staffStatus: 'Your practice results are saved. Staff review is required before any further attempt.',
+  readOnlyStatus: 'Read-only regulator review. Browsing does not change training progress or award credit.',
+  readOnlyNotice: null, // null shows the server's own notice
+  rulesLabel: 'Training assessment rules',
+  resumeButton: 'Start or resume training', resumeAssessmentButton: 'Continue practice assessment',
+  modulesPassed: 'module practices passed', remediationTag: 'targeted review', unitMinutes: 'min practice',
+  moduleLine: 'Module practice',
+  quizHeading: 'Module practice', quizIntro: 'An 80% practice score is required to continue. This is not a licensing examination.', quizSubmit: 'Submit module practice',
+  assessmentHeading: 'Practice assessment', assessmentIntro: 'Submission is final. This assessment does not award NMLS credit or certification.', assessmentSubmit: 'Submit practice assessment',
+  unitClock: 'practice · provisional',
+  completeUnit: 'Complete unit practice',
+  unitReady: 'The activity and provisional practice time are recorded. Save this unit to continue.',
+  unitPending: 'Practice time remains provisional until completion.',
+  quizPassed: 'Module practice passed',
+  resultLabel: 'Practice result',
+  sourceDoneTitle: 'Lessons and module practices finished',
+  sourceDoneHelp: 'Your work is saved. Continue to the practice assessment. This remains non-credit training.',
+  startAssessment: 'Start practice assessment', startSecondAssessment: 'Start second practice assessment',
+  passedTitle: 'Training completed',
+  passedHelp: 'Your lessons, module practices and passing practice result are saved. This is not completion of an approved CE course; no NMLS credit, certificate or reporting has been issued.',
+  staffHelp: 'Two practice assessments have been submitted. A third attempt is not available. Contact StateCourse through My StateCourse for help; your work remains saved. No NMLS credit or certificate was issued.',
+});
 const time = ms => `${Math.floor(ms / 60000)}:${String(Math.floor(ms / 1000) % 60).padStart(2, '0')}`;
 const questionHtml = (q, name, index = '') => `<fieldset><legend>${index ? `${index}. ` : ''}${esc(q.stem)}</legend>${presentOptions(q.options).map(o =>
   `<label class="answer"><input type="radio" name="${esc(name)}" value="${esc(o.id)}" required><span>${esc(o.displayLabel)}. ${esc(o.text)}</span></label>`).join('')}</fieldset>`;
 
 export function mountTrainingWorkspace({ document: doc = globalThis.document, window: win = globalThis.window,
   transport, newId, setTimer = globalThis.setTimeout, clearTimer = globalThis.clearTimeout,
-  setPoll = globalThis.setInterval, clearPoll = globalThis.clearInterval } = {}) {
+  setPoll = globalThis.setInterval, clearPoll = globalThis.clearInterval,
+  wording = {}, title = null, onView = () => {}, beforePhaseAction = () => true } = {}) {
+  const w = { ...TRAINING_WORDING, ...wording }, text = { ...messages, ...w.messages };
   const el = id => doc.getElementById(id), listeners = [];
   const on = (target, kind, fn, options) => { target.addEventListener(kind, fn, options); listeners.push(() => target.removeEventListener(kind, fn, options)); };
   let selected = null, contentKey = '', outlineKey = '', feedbackKey = '', paused = true, pauseEpoch = 0, idleTimer, poll = null, lastGesture = 0, next = null, phaseAction = null;
@@ -63,9 +99,9 @@ export function mountTrainingWorkspace({ document: doc = globalThis.document, wi
     for (const id of ['resumePanel', 'phasePanel', 'unitMeta', 'quizArea', 'assessmentArea', 'feedbackArea', 'nextArea', 'formError', 'savedSummary', 'timingNotice']) el(id).hidden = true;
     for (const id of ['quizArea', 'assessmentArea', 'feedbackArea']) el(id).replaceChildren();
     el('readOnlyPanel').hidden = false;
-    el('readOnlyNotice').textContent = s.review.notice;
+    el('readOnlyNotice').textContent = w.readOnlyNotice ?? s.review.notice;
     const rules = s.review.assessmentRules;
-    el('readOnlyRules').textContent = `Training assessment rules: ${rules.questionCount} questions per attempt from a ${rules.bankCount}-question bank; ${rules.requiredCorrect} correct required. Maximum ${rules.maxAutomaticAttempts} automatic attempts, with mandatory targeted remediation after an unsuccessful first attempt.`;
+    el('readOnlyRules').textContent = `${w.rulesLabel}: ${rules.questionCount} questions per attempt from a ${rules.bankCount}-question bank; ${rules.requiredCorrect} correct required. Maximum ${rules.maxAutomaticAttempts} automatic attempts, with mandatory targeted remediation after an unsuccessful first attempt.`;
     const modules = s.review.modules, lessons = modules.flatMap(m => m.lessons);
     if (!selected || !lessons.some(l => l.id === selected) && !modules.some(m => `questions:${m.id}` === selected)) selected = lessons[0].id;
     const navKey = `read-only:${s.enrollmentId}:${s.revision}:${selected}`;
@@ -100,58 +136,59 @@ export function mountTrainingWorkspace({ document: doc = globalThis.document, wi
     if (!feedback) { area.replaceChildren(); return; }
     const sources = item => (item.sourceUrls || []).filter(url => /^https:\/\//.test(url)).map((url, i) =>
       `<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">Source ${i + 1}</a>`).join(' · ');
-    if (feedback.kind === 'module_quiz') area.innerHTML = `<h2>${feedback.passed ? 'Module practice passed' : 'Review and try again'}: ${feedback.correct} of ${feedback.total} correct</h2><ol>${feedback.items.map(item => `<li><strong>${item.correct ? 'Correct' : 'Needs review'}.</strong> ${esc(item.rationale)}<p>${sources(item)}</p></li>`).join('')}</ol>`;
+    if (feedback.kind === 'module_quiz') area.innerHTML = `<h2>${feedback.passed ? w.quizPassed : 'Review and try again'}: ${feedback.correct} of ${feedback.total} correct</h2><ol>${feedback.items.map(item => `<li><strong>${item.correct ? 'Correct' : 'Needs review'}.</strong> ${esc(item.rationale)}<p>${sources(item)}</p></li>`).join('')}</ol>`;
     else area.innerHTML = `<h2>${feedback.correct ? 'Correct — activity saved' : 'Review the explanation and try again'}</h2><p>${esc(feedback.rationale)}</p><p>${sources(feedback)}</p>`;
   }
   function render(view) {
     const s = view.snapshot, p = s?.progress;
+    onView(view);
     syncPolling(Boolean(p) && teachingPhases.includes(s.phase) && !['auth', 'denied', 'recover'].includes(view.phase));
     if (['uncertain', 'recover', 'auth', 'denied'].includes(view.phase)) { paused = true; clearTimer(idleTimer); }
     if (p && teachingPhases.includes(s.phase) && p.status !== 'review_complete' && !p.sessionId) paused = true;
-    let status = paused ? 'Saved progress loaded. Choose “Start or resume training” to continue on this device.' : 'Progress saved. Practice time is provisional until the unit is completed.';
-    if (view.phase === 'loading') status = 'Loading your saved training…';
-    if (view.phase === 'busy') status = 'Saving training activity…';
-    if (view.error) status = messages[view.error] || 'The last action could not be completed. Reload saved progress or contact StateCourse if this continues.';
+    let status = paused ? w.resumePrompt : w.saved;
+    if (view.phase === 'loading') status = w.loading;
+    if (view.phase === 'busy') status = w.saving;
+    if (view.error) status = text[view.error] || 'The last action could not be completed. Reload saved progress or contact StateCourse if this continues.';
     if (view.phase === 'auth') status = 'Your account session ended. Sign in again. Private lesson content has been cleared.';
-    if (win.navigator.onLine === false) status = 'You are offline. Practice is paused. Reconnect, reconcile any pending action, then resume explicitly.';
-    if (view.code === 'course_logged_out') status = 'Training paused. Saved units remain available.';
-    if (s?.phase === 'passed') status = 'Training completed and saved. No NMLS credit or certificate has been issued.';
-    if (s?.phase === 'staff_review_required') status = 'Your practice results are saved. Staff review is required before any further attempt.';
-    if (s?.readOnly === true) status = 'Read-only regulator review. Browsing does not change training progress or award credit.';
+    if (win.navigator.onLine === false) status = w.offline;
+    if (view.code === 'course_logged_out') status = w.loggedOut;
+    if (s?.phase === 'passed') status = w.passedStatus;
+    if (s?.phase === 'staff_review_required') status = w.staffStatus;
+    if (s?.readOnly === true) status = w.readOnlyStatus;
     el('syncStatus').textContent = status;
     el('syncStatus').parentElement.dataset.error = String(Boolean(view.error));
     el('retryCommand').hidden = view.phase !== 'uncertain';
     el('reloadTraining').hidden = !['recover', 'denied', 'uncertain', 'render_error'].includes(view.phase);
     el('studySignIn').hidden = view.phase !== 'auth';
-    el('studySignIn').href = `/student/sign-in/?return_to=${encodeURIComponent(`/student/nmls-training/${win.location.search}`)}`;
+    el('studySignIn').href = `/student/sign-in/?return_to=${encodeURIComponent(`${w.route}${win.location.search}`)}`;
     el('missingEnrollment').hidden = view.error !== 'enrollment_required';
     el('workspace').hidden = !p;
     el('pauseTraining').hidden = !s || paused || ['passed', 'staff_review_required'].includes(s.phase);
     el('pauseTraining').disabled = view.phase !== 'ready';
     if (s?.readOnly === true && !['auth', 'denied', 'recover'].includes(view.phase)) {
-      el('courseTitle').textContent = s.course.title; renderReadOnly(s); return;
+      el('courseTitle').textContent = title || s.course.title; renderReadOnly(s); return;
     }
     if (!p || ['auth', 'denied', 'recover'].includes(view.phase)) { clearPrivate(); return; }
     el('readOnlyPanel').hidden = true; el('savedSummary').hidden = false; el('timingNotice').hidden = false;
-    el('courseTitle').textContent = s.course.title;
+    el('courseTitle').textContent = title || s.course.title;
     const terminal = ['passed', 'staff_review_required'].includes(s.phase);
     el('resumePanel').hidden = !paused || terminal;
     el('resumeTraining').disabled = view.phase !== 'ready' || doc.hidden || win.navigator.onLine === false;
-    el('resumeTraining').textContent = s.assessment ? 'Continue practice assessment' : 'Start or resume training';
+    el('resumeTraining').textContent = s.assessment ? w.resumeAssessmentButton : w.resumeButton;
     el('resumeHelp').textContent = s.assessment ? 'The same saved question set will continue. Answers already submitted cannot be changed. Unsubmitted choices are kept only on this page.'
       : 'Saved units remain available. Resume explicitly to use this device; another active study session is replaced. Unfinished work may need to restart.';
     const units = allUnits(p), current = units.find(u => u.id === p.currentUnitId);
     const firstIncomplete = units.find(u => !p.completedUnitIds.includes(u.id));
     if (!selected || !p.completedUnitIds.includes(selected) && selected !== p.currentUnitId) selected = p.currentUnitId;
-    el('savedSummary').textContent = `${p.completedUnitIds.length} of ${units.length} units saved · ${p.passedModuleIds.length} of ${p.modules.length} module practices passed${s.phase === 'remediation' ? ' · targeted review' : ''}`;
+    el('savedSummary').textContent = `${p.completedUnitIds.length} of ${units.length} units saved · ${p.passedModuleIds.length} of ${p.modules.length} ${w.modulesPassed}${s.phase === 'remediation' ? ` · ${w.remediationTag}` : ''}`;
     const navKey = JSON.stringify([p.completedUnitIds, p.passedModuleIds, p.currentUnitId, selected, s.phase, paused, ['ready', 'busy'].includes(view.phase), view.foregroundPending]);
     if (outlineKey !== navKey) {
       outlineKey = navKey;
       el('outline').innerHTML = p.modules.map(m => `<h2>${esc(m.title)}</h2><ol>${m.units.map(u => {
         const done = p.completedUnitIds.includes(u.id), opened = p.currentUnitId === u.id;
         const allowed = canAct() && active() && !p.quiz && (done || opened || firstIncomplete?.id === u.id);
-        return `<li><button type="button" data-unit="${esc(u.id)}" ${selected === u.id ? 'aria-current="step"' : ''} ${allowed ? '' : 'disabled'}>${esc(u.title)}<small>${done ? 'Saved' : opened ? 'In progress' : 'Not completed'} · ${Math.ceil(u.requiredSeconds / 60)} min practice</small></button></li>`;
-      }).join('')}</ol><p class="fine-print">Module practice: ${p.passedModuleIds.includes(m.id) ? 'Passed' : 'After all units'}</p>`).join('');
+        return `<li><button type="button" data-unit="${esc(u.id)}" ${selected === u.id ? 'aria-current="step"' : ''} ${allowed ? '' : 'disabled'}>${esc(u.title)}<small>${done ? 'Saved' : opened ? 'In progress' : 'Not completed'} · ${Math.ceil(u.requiredSeconds / 60)} ${w.unitMinutes}</small></button></li>`;
+      }).join('')}</ol><p class="fine-print">${w.moduleLine}: ${p.passedModuleIds.includes(m.id) ? 'Passed' : 'After all units'}</p>`).join('');
     }
     const lesson = p.lessons.find(item => item.id === selected);
     const showQuiz = teaching() && Boolean(p.quiz), showFinal = Boolean(s.assessment);
@@ -164,9 +201,9 @@ export function mountTrainingWorkspace({ document: doc = globalThis.document, wi
       el('questionArea').hidden = showQuiz || showFinal || !lesson || lesson.id !== p.currentUnitId;
       el('questionArea').innerHTML = !el('questionArea').hidden ? `<h2>Apply what you read</h2><form id="unitForm">${questionHtml(lesson.question, 'choice')}<button type="submit">Check my answer</button></form>` : '';
       el('quizArea').hidden = !showQuiz;
-      el('quizArea').innerHTML = showQuiz ? `<h2>Module practice</h2><p>Answer all ${p.quiz.questions.length} questions. An 80% practice score is required to continue. This is not a licensing examination.</p><form id="quizForm">${p.quiz.questions.map((q, i) => questionHtml(q, q.id, i + 1)).join('')}<button type="submit">Submit module practice</button></form>` : '';
+      el('quizArea').innerHTML = showQuiz ? `<h2>${w.quizHeading}</h2><p>Answer all ${p.quiz.questions.length} questions. ${w.quizIntro}</p><form id="quizForm">${p.quiz.questions.map((q, i) => questionHtml(q, q.id, i + 1)).join('')}<button type="submit">${w.quizSubmit}</button></form>` : '';
       el('assessmentArea').hidden = !showFinal;
-      el('assessmentArea').innerHTML = showFinal ? `<h2>Practice assessment ${s.assessment.number} of 2</h2><p>Answer all 25 questions; 18 correct are required. Submission is final. This assessment does not award NMLS credit or certification.</p><p>Unsubmitted choices are kept on this page only. If you reload or switch devices, the same questions return but you must select your unsubmitted answers again.</p><form id="assessmentForm">${s.assessment.questions.map((q, i) => questionHtml(q, q.id, i + 1)).join('')}<button type="submit">Submit practice assessment</button></form>` : '';
+      el('assessmentArea').innerHTML = showFinal ? `<h2>${w.assessmentHeading} ${s.assessment.number} of 2</h2><p>Answer all 25 questions; 18 correct are required. ${w.assessmentIntro}</p><p>Unsubmitted choices are kept on this page only. If you reload or switch devices, the same questions return but you must select your unsubmitted answers again.</p><form id="assessmentForm">${s.assessment.questions.map((q, i) => questionHtml(q, q.id, i + 1)).join('')}<button type="submit">${w.assessmentSubmit}</button></form>` : '';
       if (previous && !paused) {
         const heading = (showFinal ? el('assessmentArea') : showQuiz ? el('quizArea') : el('lesson')).querySelector('h2, h3');
         if (heading) { heading.tabIndex = -1; heading.focus?.(); }
@@ -175,7 +212,7 @@ export function mountTrainingWorkspace({ document: doc = globalThis.document, wi
     el('unitMeta').hidden = !lesson || showQuiz || showFinal;
     if (lesson) {
       el('unitPosition').textContent = `Unit ${units.findIndex(u => u.id === lesson.id) + 1} of ${units.length}`;
-      el('unitTime').textContent = lesson.id === p.currentUnitId ? `${time(p.provisionalPracticeMs)} / ${time((current?.requiredSeconds || 0) * 1000)} practice · provisional` : 'Completed unit · saved';
+      el('unitTime').textContent = lesson.id === p.currentUnitId ? `${time(p.provisionalPracticeMs)} / ${time((current?.requiredSeconds || 0) * 1000)} ${w.unitClock}` : 'Completed unit · saved';
     }
     for (const fieldset of doc.querySelectorAll('.question-area fieldset')) fieldset.disabled = !ready() || view.foregroundPending;
     for (const button of doc.querySelectorAll('.question-area button[type="submit"]')) button.disabled = !canAct();
@@ -184,8 +221,8 @@ export function mountTrainingWorkspace({ document: doc = globalThis.document, wi
     if (!el('nextArea').hidden) {
       if (current) {
         const enough = p.provisionalPracticeMs >= current.requiredSeconds * 1000 && p.currentUnitActionComplete;
-        el('nextAction').textContent = 'Complete unit practice';
-        el('nextHelp').textContent = enough ? 'The activity and provisional practice time are recorded. Save this unit to continue.' : `Work through the lesson and its question. ${p.currentUnitActionComplete ? 'Activity saved.' : 'Activity still required.'} Practice time remains provisional until completion.`;
+        el('nextAction').textContent = w.completeUnit;
+        el('nextHelp').textContent = enough ? w.unitReady : `Work through the lesson and its question. ${p.currentUnitActionComplete ? 'Activity saved.' : 'Activity still required.'} ${w.unitPending}`;
         if (enough) next = { kind: 'complete_unit' };
       } else {
         const module = p.modules.find(m => !p.passedModuleIds.includes(m.id));
@@ -199,21 +236,21 @@ export function mountTrainingWorkspace({ document: doc = globalThis.document, wi
     const completeSource = teaching() && p.status === 'review_complete';
     el('phasePanel').hidden = !completeSource && !['remediation_required', 'passed', 'staff_review_required'].includes(s.phase);
     el('phaseAction').hidden = true; el('finishedLink').hidden = !terminal;
-    el('assessmentResult').textContent = s.result ? `Practice result: ${s.result.correct} of ${s.result.total} correct. Passing threshold: ${s.result.requiredCorrect}.` : '';
+    el('assessmentResult').textContent = s.result ? `${w.resultLabel}: ${s.result.correct} of ${s.result.total} correct. Passing threshold: ${s.result.requiredCorrect}.` : '';
     if (completeSource) {
-      el('phaseTitle').textContent = s.phase === 'remediation' ? 'Targeted review finished' : 'Lessons and module practices finished';
-      el('phaseHelp').textContent = 'Your work is saved. Continue to the practice assessment. This remains non-credit training.';
-      phaseAction = 'issue_assessment'; el('phaseAction').textContent = s.phase === 'remediation' ? 'Start second practice assessment' : 'Start practice assessment';
+      el('phaseTitle').textContent = s.phase === 'remediation' ? 'Targeted review finished' : w.sourceDoneTitle;
+      el('phaseHelp').textContent = w.sourceDoneHelp;
+      phaseAction = 'issue_assessment'; el('phaseAction').textContent = s.phase === 'remediation' ? w.startSecondAssessment : w.startAssessment;
     } else if (s.phase === 'remediation_required') {
       el('phaseTitle').textContent = 'Targeted review is required';
       el('phaseHelp').textContent = 'Review the lessons linked to your missed topics and complete their activities before a second assessment. Its 25 questions will not repeat the first set.';
       phaseAction = 'start_remediation'; el('phaseAction').textContent = 'Start targeted review';
     } else if (s.phase === 'passed') {
-      el('phaseTitle').textContent = 'Training completed';
-      el('phaseHelp').textContent = 'Your lessons, module practices and passing practice result are saved. This is not completion of an approved CE course; no NMLS credit, certificate or reporting has been issued.';
+      el('phaseTitle').textContent = w.passedTitle;
+      el('phaseHelp').textContent = w.passedHelp;
     } else if (s.phase === 'staff_review_required') {
       el('phaseTitle').textContent = 'Staff review is needed';
-      el('phaseHelp').textContent = 'Two practice assessments have been submitted. A third attempt is not available. Contact StateCourse through My StateCourse for help; your work remains saved. No NMLS credit or certificate was issued.';
+      el('phaseHelp').textContent = w.staffHelp;
     }
     el('phaseAction').hidden = !phaseAction; el('phaseAction').disabled = !canAct();
   }
@@ -253,7 +290,7 @@ export function mountTrainingWorkspace({ document: doc = globalThis.document, wi
   on(el('resumeTraining'), 'click', resume);
   on(el('pauseTraining'), 'click', () => pause());
   on(el('nextAction'), 'click', () => { if (next && canAct()) { const { kind, ...fields } = next; selected = null; client.teach(kind, fields); } });
-  on(el('phaseAction'), 'click', () => { if (phaseAction && canAct()) client.send(phaseAction); });
+  on(el('phaseAction'), 'click', () => { if (phaseAction && canAct() && beforePhaseAction(phaseAction) !== false) client.send(phaseAction); });
   on(el('retryCommand'), 'click', () => client.retry());
   on(el('reloadTraining'), 'click', () => { paused = true; clearTimer(idleTimer); clearPrivate(); client.open(client.view.enrollmentId); });
   on(el('signOut'), 'click', async () => {
@@ -281,4 +318,5 @@ export function mountTrainingWorkspace({ document: doc = globalThis.document, wi
   return { client, render: () => render(client.view), pause, resume,
     destroy() { clearTimer(idleTimer); clearPoll(poll); listeners.forEach(remove => remove()); client.stop(); clearPrivate(); } };
 }
-if (typeof document !== 'undefined' && typeof window !== 'undefined') mountTrainingWorkspace();
+// The reviewers' course page mounts this workspace itself, with its own wording.
+if (typeof document !== 'undefined' && typeof window !== 'undefined' && !document.querySelector('[data-nmls-course]')) mountTrainingWorkspace();

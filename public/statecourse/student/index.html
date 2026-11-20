@@ -7,7 +7,7 @@
     <meta name="theme-color" content="#172b3d" />
     <title>My StateCourse | Student Portal</title>
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="student-portal.css?v=20260818-personalized" />
+    <link rel="stylesheet" href="student-portal.css?v=20261120-sections" />
   </head>
   <body>
     <a class="skip-link" href="#portal-main">Skip to courses</a>
@@ -18,7 +18,7 @@
 
     <main id="portal-main">
       <section class="portal-intro">
-        <div><p class="eyebrow">My StateCourse</p><h1 id="studentGreeting">Welcome back.</h1><p>Your courses, progress, payments, certificates, and licensing records are organized here.</p></div>
+        <div><p class="eyebrow">My StateCourse</p><h1 id="studentGreeting">Welcome back.</h1><p>Your credit courses, purchases, progress and certificates are organized here.</p></div>
         <dl class="portal-summary">
           <div><dt>Active</dt><dd id="activeCount">—</dd></div>
           <div><dt>Completed</dt><dd id="completedCount">—</dd></div>
@@ -75,20 +75,20 @@
       </section>
 
       <section class="empty-state" id="emptyState" hidden>
-        <p class="eyebrow">No enrollments</p>
+        <p class="eyebrow">No credit courses yet</p>
         <h2>Your courses will appear here.</h2>
-        <p>Choose an available free training course below, or return to the course finder.</p>
+        <p>Courses you purchase appear here with their progress and certificates.</p>
         <a href="../">Find a state course →</a>
       </section>
-      <section class="course-group" id="trainingGroup" hidden aria-labelledby="trainingHeading">
-        <div class="section-heading"><span>Free study</span><h2 id="trainingHeading">Courses for training purposes</h2></div>
-        <p>Study without payment. These enrollments do not earn licensing or continuing education credit.</p>
-        <p id="trainingMessage" role="status" aria-live="polite"></p>
-        <div class="course-list" id="trainingCourses"></div>
+      <!-- Free practice is a separate section with its own page. It is linked from here
+           and never listed among credit courses. -->
+      <section class="free-training-link" id="freeTrainingLink" aria-labelledby="freeTrainingLinkTitle">
+        <div><p class="eyebrow">Separate section</p><h2 id="freeTrainingLinkTitle">Free practice, no licensing credit</h2><p id="freeTrainingSummary">Free practice courses are listed separately from your credit courses.</p></div>
+        <a href="/student/free-training/">Open free practice →</a>
       </section>
     </main>
 
     <footer><span>StateCourse student records are course- and version-specific.</span><small>Portal visits do not count as instructional time.</small></footer>
-    <script src="student-portal.js?v=20260818-personalized" defer></script>
+    <script src="student-portal.js?v=20261120-sections" defer></script>
   </body>
 </html>
