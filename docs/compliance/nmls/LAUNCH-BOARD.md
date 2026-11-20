@@ -2,6 +2,63 @@
 
 # NMLS Launch Board
 
+## BioSig-ID interface built, switched off, not connected — 2026-11-20
+
+Branch `claude/inspiring-lamport-wjsuvn`. **Not deployed. No BSI value exists anywhere. No
+request has been sent to BSI. Gate 3 is not closed.** Built ahead of the BSI meeting of
+2026-11-23 at the owner's instruction, from BSI's NodeJS sample (`custom.code.zip`,
+`Samples/NodeJS/`) and the owner's build specification of 2026-11-20. Earlier instruction
+recorded on this board: per CSBS, no BioSig calls before that meeting and BSI's keys. That
+still holds in effect: the code cannot build a request without all seven BSI values, and
+it is off unless `NMLS_CREDIT_CHECKPOINTS=biosig`.
+
+**What exists.**
+
+| Piece | Where | Note |
+| --- | --- | --- |
+| BSI's helper, unchanged | `netlify/functions/_lib/biosig/interface-helper.mjs` | Class body identical to BSI's file; key is SHA-1 twice over pass+salt, 16 bytes. Output pinned against BSI's original. Do not modify. |
+| Configuration | `config/nmls/biosig.mjs` | Environment only. Unavailable if any value is missing, left as a placeholder, or malformed. |
+| Launch request | `netlify/functions/_lib/biosig/sso.mjs` | Argument string -> AES -> URL-encode -> `SSOInbound.aspx?args=`. No Base64 before encryption. NMLS fields `ls as d1 d2 d3 d4 d5` appended after `uid`. |
+| Start a check | `POST /api/student/nmls/identity-check` | Closed reviewer enrollments only. Server chooses the checkpoint. |
+| BSI callback | `GET/POST /api/biosig/callback` | Returns 404 while off. The only place a check is marked passed. Replies with `SSO_RESPONSE` XML. |
+| Enforcement | `netlify/functions/_lib/biosig/checkpoints.mjs`, course endpoint | The course will not continue past a checkpoint without a check BSI verified; each verified check is used once. |
+| Table | `database/031_nmls_identity_challenges.sql` | **Not applied.** Required before switching on. |
+
+**Checkpoints (`d3`).** `Begin` before the first lesson; `Middle#1` after module F03
+(3 of 8); `Middle#2` after module E02 (5 of 8); `FinalExam` at entry to each final
+examination form; `Resuming` on every later return to study. The build specification
+suggests Middle#2 near module 6 of 8; it is at 5 of 8 (250 of 400 minutes) as built.
+Confirm the spacing with BSI and change `config/nmls/credit-review.mjs` if needed.
+
+**To switch on, after BSI supplies the values (each step is a production change needing
+the owner's approval):**
+
+1. Apply `database/031_nmls_identity_challenges.sql` in the Supabase SQL editor.
+2. Set in Netlify, values from BSI only: `BIOSIG_SYSTEM_ID`, `BIOSIG_CUSTOMER_ID`,
+   `BIOSIG_SHARED_CODE`, `BIOSIG_PASS`, `BIOSIG_SALT`, `BIOSIG_VECTOR` (16 characters),
+   `BIOSIG_PARTNER`. Optional: `BIOSIG_KEY_SIZE` (only 128 works), `BIOSIG_ENVIRONMENT`
+   (`sandbox` default, or `production`), `BIOSIG_REVIEWER_UIDS`
+   (`student-uuid=reviewer,student-uuid=reviewer2`).
+3. Give BSI the callback address `https://statecourse.com/api/biosig/callback`.
+4. Allow BSI's callback server through Cloudflare (the specification names `23.100.25.17`;
+   confirm it is current).
+5. Set `NMLS_CREDIT_CHECKPOINTS=biosig` and redeploy.
+6. Compare our encryption with BSI's test vector before any student check.
+
+**Not verified, and not verifiable before BSI's values exist:** any exchange with BSI;
+the sandbox and production addresses; that BSI returns our `statecourse_ref` argument in
+its callback (its README says prefixed custom arguments are returned unchanged; the
+callback is refused without it); whether BSI's callback carries `ts`; that reviewer
+identifiers `reviewer` / `reviewer2` and `d2=109386` are accepted; the callback IP; TLS
+negotiation; Cloudflare behaviour.
+
+**Known gaps.** The Rules of Conduct step is still a placeholder: the official text is
+not in the repository, so `Begin` is not preceded by a real acceptance. A student already
+inside a final examination who leaves and returns is not re-checked before submitting.
+`Resuming` is sent as plain `Resuming`, without the optional context suffix. BSI's sample
+reads the XML with `fast-xml-parser`; this build reads the four elements directly to
+avoid a new dependency.
+
 ## Free training separated; reviewers' credit version built — 2026-11-20
 
 Branch `claude/inspiring-lamport-wjsuvn`. Not deployed. No database change, no production
@@ -223,7 +280,7 @@ Status key: **VERIFIED** = narrowly verified evidence; **BUILT** = repository im
 | ---: | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 1. NMLS account/access | **CLOSED** | Provider account in NMLS | Issuance of provider ID 1405133 presupposes account access | Retain the approval artifact in controlled records | None | SRR approval notice and CSBS confirmation, 2026-11-17 (owner-supplied) | None; superseded by Gate 2 | No | 2026-11-17 |
 | 2. Provider application package | **APPROVED — OWNER-SUPPLIED EVIDENCE** | Submitted provider application | SRR notice: StateCourse LLC, NMLS Course Provider ID 1405133, approved 2026-11-17, renewal 2028-11-01 | Independent read-back from the NMLS Approved Course Provider List; archived original decision artifact | NMLS public list, refreshed monthly | SRR approval notice and CSBS confirmation (P. Lindsay), both 2026-11-17 | Retain both original emails; confirm the public listing at the next monthly refresh; calendar the 2028-11-01 renewal; do not treat this as course approval | No | 2026-11-17 |
-| 3. BioSig access and integration | **INTERFACE SPECIFIED / NOT BUILT — checkpoint placeholders only, off by default (2026-11-20)** | Identity and session-control concepts; authenticated actor binding | Local actor-binding tests only; vendor requirements recorded above, none tested | Intro meeting, NMLS-compliant development endpoint, sandbox credentials, SOAP client, the five `d3` checkpoints, agent-ID profile field, error/retry and support routing, acceptance evidence | BioSig-ID (application 90788); NMLS API documentation behind the provider login | BioSig email 2026-11-17 and published enrolment article; repository read 2026-11-18 | Book the intro meeting — it is what releases the development endpoint. Download the NMLS API documentation and its custom-code ZIP. Build ROC first, since enrolment follows it | **YES** | 2026-11-18 |
+| 3. BioSig access and integration | **INTERFACE BUILT FROM BSI SAMPLE / SWITCHED OFF / NEVER CONNECTED — no BSI values, table not applied (2026-11-20)** | Identity and session-control concepts; authenticated actor binding | Local actor-binding tests only; vendor requirements recorded above, none tested | Intro meeting, NMLS-compliant development endpoint, sandbox credentials, SOAP client, the five `d3` checkpoints, agent-ID profile field, error/retry and support routing, acceptance evidence | BioSig-ID (application 90788); NMLS API documentation behind the provider login | BioSig email 2026-11-17 and published enrolment article; repository read 2026-11-18 | Book the intro meeting — it is what releases the development endpoint. Download the NMLS API documentation and its custom-code ZIP. Build ROC first, since enrolment follows it | **YES** | 2026-11-18 |
 | 4. ROCS / learner agreement | **PARTIAL / MISSING** | Session-policy contract and receipt-bound agreement model | Retained evidence checks identify unresolved originals | Genuine current ROCS/FAQ originals, complete presentation, affirmative consent, per-course retained agreement/export | NMLS source availability and accountable review | CURRENT-STATE §2 | Acquire official originals; finalize presentation, consent, retention, and export design | **YES** | 2026-09-19 |
 | 5. Course content / human review / duration validation | **BUILT / MISSING ACCEPTANCE** | 8 modules, 45 lessons, assessment banks, 400 provisional minutes, traceability | Structure/content-loader tests; audit totals | Human SME/item signoff and representative learner duration study | Qualified reviewers and test learners | CURRENT-STATE §§3–5, 7, 21 | Assign reviewers; execute documented content, item, legal, and duration acceptance | **YES** | 2026-09-19 |
 | 6. Course submission and approval | **APPLICATION 109386 OPEN — AWAITING DOCUMENTS / NOT APPROVED — BINDING GATE** (see 2026-11-19 section) | Draft course portfolio and planning records | Null course IDs and closed enrollment verified; the provider ID is no longer null | Final approved version, submission receipt, NMLS course number, approval decision | Gates 3–5; NMLS course review | CURRENT-STATE §§3, 20–22; SRR approval notice and CSBS confirmation, 2026-11-17 | Work from the NMLS Approved Course Provider Resource Center, the User Guide and the NMLS Functional Specifications; Paula Lindsay (CSBS) is the named provider contact for questions, including whether BioSig integration must precede submission; then prepare one course. Owner approves submission separately | **YES** | 2026-11-17 |

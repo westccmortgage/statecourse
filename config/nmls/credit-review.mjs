@@ -18,8 +18,8 @@ export const NMLS_CREDIT_REVIEW = Object.freeze({
 });
 
 // Identity and conduct checkpoints, in course order. `d3` is BioSig-ID's name for the
-// point in the course. Nothing here calls BioSig-ID: there is no endpoint, key or
-// client in this repository, and none may be added before BSI supplies them.
+// point in the course. This list is sequence only; the BioSig-ID interface itself is in
+// netlify/functions/_lib/biosig/ and config/nmls/biosig.mjs.
 export const NMLS_CREDIT_CHECKPOINTS = Object.freeze([
   Object.freeze({ id: 'rules_of_conduct', kind: 'rules_of_conduct', when: 'before_course', label: 'NMLS Rules of Conduct' }),
   Object.freeze({ id: 'begin', kind: 'biosig', d3: 'Begin', when: 'before_course', label: 'Identity verification before the course' }),
@@ -29,8 +29,11 @@ export const NMLS_CREDIT_CHECKPOINTS = Object.freeze([
   Object.freeze({ id: 'resuming', kind: 'biosig', d3: 'Resuming', when: 'on_return', label: 'Identity verification when you return' }),
 ]);
 
-// Off unless the environment says exactly "placeholder". There is deliberately no value
-// that turns on real verification; that is separate work after BSI onboarding.
+// "off" (default), "placeholder" (describes each checkpoint, verifies nothing) or
+// "biosig" (real BioSig-ID checks). Any other value is "off". "biosig" on its own opens
+// nothing: without every BSI value the checks report themselves unavailable and the
+// course stays closed at each checkpoint rather than skipping it.
 export function nmlsCheckpointMode(env = process.env) {
-  return env?.NMLS_CREDIT_CHECKPOINTS === 'placeholder' ? 'placeholder' : 'off';
+  const value = env?.NMLS_CREDIT_CHECKPOINTS;
+  return value === 'placeholder' || value === 'biosig' ? value : 'off';
 }

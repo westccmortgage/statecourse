@@ -46,11 +46,12 @@ export function reviewerOnlyRpc(callRpc) {
   };
 }
 
-// Added to every course response. `mode` is "off" or "placeholder"; there is no live mode.
+// Added to every course response. `mode` is "off", "placeholder" or "biosig". `connected`
+// says whether real BioSig-ID checks are in force for this response.
 export function creditReviewPresentation(body, env = process.env) {
   if (!body || typeof body !== 'object' || body.error) return body;
   const role = nmlsCreditReviewRole(body.accessMode);
   if (role === null) fail('nmls_course_review_access_required', 403);
   return { ...body, creditReview: { applicationId: NMLS_CREDIT_REVIEW.applicationId, title: NMLS_CREDIT_REVIEW.title, version: role,
-    checkpoints: { mode: nmlsCheckpointMode(env), connected: false, sequence: NMLS_CREDIT_CHECKPOINTS } } };
+    checkpoints: { mode: nmlsCheckpointMode(env), connected: nmlsCheckpointMode(env) === 'biosig', sequence: NMLS_CREDIT_CHECKPOINTS } } };
 }
