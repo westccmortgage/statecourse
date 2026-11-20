@@ -10,8 +10,8 @@ if(sections.length){
       if(!enabled.has(section.dataset.trainingOffering))continue;
       const heading=document.createElement('h2');heading.textContent='Study this course for training purposes';
       const copy=document.createElement('p');copy.textContent='Full course access with saved progress, without payment. This enrollment does not earn licensing or continuing education credit.';
-      const link=document.createElement('a');link.href='/student/sign-in/';link.className='cta-button';link.textContent='Open free training →';
-      const account=document.createElement('a');account.href='/student/register/';account.textContent='Create an account';account.className='cta-secondary';
+      const link=document.createElement('a');link.href='/student/sign-in/?return_to=%2Fstudent%2Ffree-training%2F';link.className='cta-button';link.textContent='Open free training →';
+      const account=document.createElement('a');account.href='/student/register/?return_to=%2Fstudent%2Ffree-training%2F';account.textContent='Create an account';account.className='cta-secondary';
       section.replaceChildren(heading,copy,link,document.createTextNode(' '),account);section.hidden=false;
     }
   }catch{/* An unreadable or closed decision never becomes an offer of free enrollment. */}

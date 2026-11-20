@@ -7,7 +7,7 @@
     <meta name="theme-color" content="#172b3d" />
     <title>My StateCourse | Student Portal</title>
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="student-portal.css?v=20260818-personalized" />
+    <link rel="stylesheet" href="student-portal.css?v=20261120-profile" />
   </head>
   <body>
     <a class="skip-link" href="#portal-main">Skip to courses</a>
@@ -18,7 +18,7 @@
 
     <main id="portal-main">
       <section class="portal-intro">
-        <div><p class="eyebrow">My StateCourse</p><h1 id="studentGreeting">Welcome back.</h1><p>Your courses, progress, payments, certificates, and licensing records are organized here.</p></div>
+        <div><p class="eyebrow">My StateCourse</p><h1 id="studentGreeting">Welcome back.</h1><p>Your credit courses, purchases, progress and certificates are organized here.</p></div>
         <dl class="portal-summary">
           <div><dt>Active</dt><dd id="activeCount">—</dd></div>
           <div><dt>Completed</dt><dd id="completedCount">—</dd></div>
@@ -27,13 +27,13 @@
       </section>
 
       <section class="profile-completion" id="profileCompletion" hidden aria-labelledby="profileCompletionTitle">
-        <div><p class="eyebrow">Complete your student profile</p><h2 id="profileCompletionTitle">What should we call you?</h2><p>Add your name once so your StateCourse account and future education records are clearly identified.</p></div>
+        <div><h2 id="profileCompletionTitle">Your name</h2><p>Used on your account and your education records.</p></div>
         <form id="profileNameForm">
           <label for="profileFirstName">First name</label>
           <input id="profileFirstName" name="firstName" autocomplete="given-name" required maxlength="100" />
           <label for="profileLastName">Last name</label>
           <input id="profileLastName" name="lastName" autocomplete="family-name" required maxlength="100" />
-          <button type="submit">Save my name</button>
+          <button type="submit">Save</button>
           <p class="profile-form-message" id="profileFormMessage" aria-live="polite"></p>
         </form>
       </section>
@@ -44,15 +44,14 @@
            enrollment depends on it. -->
       <section class="profile-completion" id="nmlsIdentity" hidden aria-labelledby="nmlsIdentityTitle">
         <div>
-          <p class="eyebrow">Mortgage licensing</p>
-          <h2 id="nmlsIdentityTitle">Your NMLS ID</h2>
-          <p id="nmlsIdentityIntro">If you hold an NMLS Unique Identifier, add it here. Mortgage education is reported to NMLS under this number, so it must match your own NMLS record exactly. You can correct it yourself at any time.</p>
+          <h2 id="nmlsIdentityTitle">NMLS ID <span class="optional">(optional)</span></h2>
+          <p id="nmlsIdentityIntro">For mortgage licensees. Mortgage education is reported to NMLS under this number, so it must match your NMLS record exactly. You can change it at any time.</p>
         </div>
         <form id="nmlsIdentityForm">
           <label for="nmlsIdInput">NMLS ID</label>
           <input id="nmlsIdInput" name="nmlsId" inputmode="numeric" autocomplete="off"
                  maxlength="12" aria-describedby="nmlsIdentityIntro nmlsIdentityMessage" />
-          <button type="submit" id="nmlsIdentitySubmit">Save my NMLS ID</button>
+          <button type="submit" id="nmlsIdentitySubmit">Save</button>
           <p class="profile-form-message" id="nmlsIdentityMessage" aria-live="polite"></p>
         </form>
       </section>
@@ -75,20 +74,20 @@
       </section>
 
       <section class="empty-state" id="emptyState" hidden>
-        <p class="eyebrow">No enrollments</p>
+        <p class="eyebrow">No credit courses yet</p>
         <h2>Your courses will appear here.</h2>
-        <p>Choose an available free training course below, or return to the course finder.</p>
+        <p>Courses you purchase appear here with their progress and certificates.</p>
         <a href="../">Find a state course →</a>
       </section>
-      <section class="course-group" id="trainingGroup" hidden aria-labelledby="trainingHeading">
-        <div class="section-heading"><span>Free study</span><h2 id="trainingHeading">Courses for training purposes</h2></div>
-        <p>Study without payment. These enrollments do not earn licensing or continuing education credit.</p>
-        <p id="trainingMessage" role="status" aria-live="polite"></p>
-        <div class="course-list" id="trainingCourses"></div>
+      <!-- Free practice is a separate section with its own page. It is linked from here
+           and never listed among credit courses. -->
+      <section class="free-training-link" id="freeTrainingLink" aria-labelledby="freeTrainingLinkTitle">
+        <div><p class="eyebrow">Separate section</p><h2 id="freeTrainingLinkTitle">Free practice, no licensing credit</h2><p id="freeTrainingSummary">Free practice courses are listed separately from your credit courses.</p></div>
+        <a href="/student/free-training/">Open free practice →</a>
       </section>
     </main>
 
     <footer><span>StateCourse student records are course- and version-specific.</span><small>Portal visits do not count as instructional time.</small></footer>
-    <script src="student-portal.js?v=20260818-personalized" defer></script>
+    <script src="student-portal.js?v=20261120-profile" defer></script>
   </body>
 </html>

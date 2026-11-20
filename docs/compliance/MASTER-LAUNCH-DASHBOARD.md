@@ -2,6 +2,15 @@
 
 # StateCourse Master Launch Dashboard
 
+## NMLS reviewer version and free-training split — 2026-11-20
+
+Built on branch `claude/inspiring-lamport-wjsuvn`, not deployed: free training moved to
+its own section (`/student/free-training/`), and a reviewer-only credit version of the
+national mortgage course for application 109386 inside My StateCourse. BioSig-ID and
+Rules of Conduct checkpoints are placeholders, off by default; nothing calls BioSig-ID.
+Reviewer accounts are not provisioned. Course approval, enrollment, payment and credit
+controls are unchanged. See [NMLS Launch Board](nmls/LAUNCH-BOARD.md).
+
 ## NMLS course application 109386 — 2026-11-19
 
 The owner opened NMLS course application **109386**, "8 Hour SAFE Comprehensive: 2026

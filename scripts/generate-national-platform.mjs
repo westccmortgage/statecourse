@@ -107,6 +107,7 @@ publishPracticeLocales(root,practiceManifest,write);
 
 const freePracticeBody = `${pageHero("Free practice", "Practice with real StateCourse lesson material.", "Choose a state that is already in development. Choose a course, read its lessons, and answer practice questions with instant explanations. Free to use while courses are in development.")}<section class="page-body practice-page" data-free-practice>
   <div class="notice"><strong>Practice-only access:</strong> This preview is free and does not create enrollment, regulated study time, licensing credit, a completion certificate, or access to any protected course final examination.</div>
+  <p class="cta-note">Have an account? Your free training courses, with saved progress, are in <a href="../student/free-training/">the free practice section of your account</a>. Free practice, no licensing credit.</p>
   <label for="practiceLanguage">Language / Idioma</label> <select id="practiceLanguage" aria-label="Language / Idioma"><option value="en" lang="en">English</option><option value="es" lang="es">Español</option></select>
   <p id="practiceTranslationNotice" role="status" hidden></p>
   <div class="practice-layout">
@@ -354,7 +355,7 @@ const mortgageAvailability = !mortgageRecord.hasCourseRecord
     : `StateCourse has a national mortgage curriculum for training only. Free training availability is checked against the current course decision when you sign in. It is not approved NMLS continuing education, and it awards no licensing credit, certificate or completion reporting.${mortgageTarget ? ` ${esc(mortgageTarget.label)} remains a build target, not an approval date.` : ""}`;
 
 const mortgageCards = [
-  ["National mortgage training", "Study federal mortgage laws, ethics, nontraditional lending and mortgage-file integrity. State-specific CE supplements are not included in this national training curriculum.", "../student/", "Open My Courses →"],
+  ["National mortgage training", "Study federal mortgage laws, ethics, nontraditional lending and mortgage-file integrity. State-specific CE supplements are not included in this national training curriculum.", "../student/free-training/", "Open free training →"],
   ["Approval runs through NMLS", "A mortgage continuing-education course carries its own NMLS course approval, and the provider carries its own approval as well. No real estate approval StateCourse holds or seeks extends to a mortgage course.", "../approvals/", "Check StateCourse approval records →"],
   ["Separate from real estate", "Real estate pre-license education, exam preparation, and real estate renewal stay on their own pages. Nothing here counts toward a real estate licence, and nothing there counts toward a mortgage licence.", "../get-licensed/", "Go to real estate licensing →"],
 ].map(([heading, copy, href, label], index) => `<article class="content-card"><p class="overline">${String(index + 1).padStart(2, "0")}</p><h2>${esc(heading)}</h2><p>${esc(copy)}</p>${href ? `<a href="${href}">${esc(label)}</a>` : ""}</article>`).join("");
@@ -366,13 +367,13 @@ const mortgageStatusRow = mortgageTarget
 const mortgageBody = `${pageHero("Mortgage / NMLS", "Mortgage education and practice.", "Explore the national mortgage curriculum in training-only mode. Mortgage education has its own regulatory and approval system, separate from real estate licensing.")}<section class="page-body" data-service="mortgage">
     <div class="notice"><strong>Availability:</strong> ${mortgageAvailability}</div>
     <div class="state-summary">
-      <aside class="state-record"><p class="overline">Program record</p><dl><div><dt>Program</dt><dd>National mortgage training</dd></div><div><dt>Approval route</dt><dd>Separate NMLS provider and course approvals</dd></div><div><dt>Course records</dt><dd>${mortgageCourses.length === 0 ? "None yet" : String(mortgageCourses.length)}</dd></div><div><dt>Approval held</dt><dd>${esc(JURISDICTION_APPROVAL_LABELS[mortgageRecord.approvalState] ?? mortgageRecord.approvalState)}</dd></div><div><dt>Free training</dt><dd>Current availability shown in My Courses</dd></div><div><dt>Credit enrollment</dt><dd>${esc(mortgageRecord.enrollmentLine)}</dd></div>${mortgageStatusRow}</dl></aside>
+      <aside class="state-record"><p class="overline">Program record</p><dl><div><dt>Program</dt><dd>National mortgage training</dd></div><div><dt>Approval route</dt><dd>Separate NMLS provider and course approvals</dd></div><div><dt>Course records</dt><dd>${mortgageCourses.length === 0 ? "None yet" : String(mortgageCourses.length)}</dd></div><div><dt>Approval held</dt><dd>${esc(JURISDICTION_APPROVAL_LABELS[mortgageRecord.approvalState] ?? mortgageRecord.approvalState)}</dd></div><div><dt>Free training</dt><dd>Current availability shown in the free practice section of your account</dd></div><div><dt>Credit enrollment</dt><dd>${esc(mortgageRecord.enrollmentLine)}</dd></div>${mortgageStatusRow}</dl></aside>
       <div>
         <p class="overline">Training only · no payment</p>
         <h2>${esc(NMLS_TRAINING_COURSE.title)}</h2>
         <p>Read the lessons, work through guided decisions and module quizzes, and continue from saved progress in your StateCourse account. The curriculum is designed as national content; it does not replace required state-specific education.</p>
         <p>Training completion is recorded only as <strong>Course training completed</strong>. It is not NMLS credit earned. No tuition is charged for free training, and no Stripe checkout is required.</p>
-        <p><a class="primary-button" href="../student/">Sign in to view free training →</a> <a href="../student/register/?return_to=%2Fstudent%2F">Create an account</a></p>
+        <p><a class="primary-button" href="../student/free-training/">Sign in to view free training →</a> <a href="../student/register/?return_to=%2Fstudent%2Ffree-training%2F">Create an account</a></p>
         <p class="cta-note">Version ${esc(NMLS_TRAINING_COURSE.version)} · ${esc(NMLS_TRAINING_COURSE.id)}. Access may be closed or withdrawn by the current course decision.</p>
         <p class="cta-note">Reading this page does not create an account, an enrollment, study time, or regulatory credit.</p>
       </div>
@@ -482,7 +483,7 @@ for (const course of catalogCourses) {
           <li><h3>Create or sign in to your StateCourse account</h3><p>Your student identity and course records remain separate from marketing and preview activity.</p></li>
           <li><h3>Review required disclosures</h3><p>The current state, course, refund, cancellation, and regulatory acknowledgment versions are recorded before checkout.</p></li>
           <li><h3>Choose the available access</h3><p>Free training enrolls you without checkout or payment. Paid education requires the course approval and payment controls to be enabled separately.</p></li>
-          <li><h3>Open your course</h3><p>Your course, version and saved progress appear in My Courses. Free training does not earn regulatory credit.</p></li>
+          <li><h3>Open your course</h3><p>Purchased courses appear in My Courses. Free training appears in the separate free practice section of your account and does not earn regulatory credit.</p></li>
         </ol></div>`;
   const practiceUrl = `${prefix}free-practice/?state=${encodeURIComponent(course.state_id)}&amp;course=${encodeURIComponent(course.course_id)}`;
   const courseActions = isMichigan
@@ -495,7 +496,7 @@ for (const course of catalogCourses) {
     : `<div class="content-grid">
         <article class="content-card"><p class="overline">Free practice</p><h2>Open lessons and practice</h2><p>Read lessons and answer questions with explanations. Free practice, with no account or payment required.</p><a href="${practiceUrl}">Start Free Practice →</a><p><a lang="es" href="${practiceUrl}&amp;lang=es">Práctica en español →</a></p></article>
         <article class="content-card"><p class="overline">Course review</p><h2>Inspect the course structure</h2><p>Review instructional organization without creating progress or regulatory credit.</p>${preview || `<a href="${prefix}courses/">Return to Course Catalog →</a>`}</article>
-        <article class="content-card"><p class="overline">Returning student</p><h2>Resume from your cabinet</h2><p>Sign in to view your training or purchased courses, progress and records.</p><a href="${studentPortalUrl}?return_to=${encodeURIComponent("/student/")}">Student Sign In →</a></article>
+        <article class="content-card"><p class="overline">Returning student</p><h2>Resume from your cabinet</h2><p>Sign in to view your purchased courses, progress and records. Free training is kept in a separate free practice section of your account.</p><a href="${studentPortalUrl}?return_to=${encodeURIComponent("/student/")}">Student Sign In →</a></article>
       </div>`;
   const body = `${pageHero(`${course.state_id} · ${course.approval_status}`, course.course_title, `${course.required_hours}-hour ${course.program_type} course record.`, true)}
     <section class="page-body">

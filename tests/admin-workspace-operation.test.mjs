@@ -83,7 +83,9 @@ test('training catalogue exposes only enabled courses whose actual learning engi
   const list=await availableTraining();assert.deepEqual(list.courses.map(c=>c.id),[CA]);assert.equal(trainingReadiness(TX).ready,false);
 },{governance:[{offering_id:CA,state:'CA',discipline:'real_estate',offering_kind:'course',training_access_enabled:true},{offering_id:TX,state:'TX',discipline:'real_estate',offering_kind:'course',training_access_enabled:true}]}));
 test('student portal returns training choices with enrollment origins',async()=>fixture(async()=>{
-  const result=await portal({httpMethod:'GET',headers:{cookie:CURRENT_TEST_COOKIE}});assert.equal(result.statusCode,200);assert.equal(JSON.parse(result.body).enrollments[0].enrollment_origin,'training');
+  // Free training is served by its own section and is absent from the main dashboard.
+  const result=await portal({httpMethod:'GET',headers:{cookie:CURRENT_TEST_COOKIE},queryStringParameters:{section:'free-training'}});assert.equal(result.statusCode,200);assert.equal(JSON.parse(result.body).enrollments[0].enrollment_origin,'training');
+  const main=JSON.parse((await portal({httpMethod:'GET',headers:{cookie:CURRENT_TEST_COOKIE}})).body);assert.deepEqual(main.enrollments,[]);assert.equal(main.freeTraining.enrollmentCount,1);assert.equal(main.training,undefined);
 },{enrollments:[{id:STAFF_ID,student_id:STAFF_ID,enrollment_origin:'training'}]}));
 test('training and sandbox can be recorded without fabricating an approval',async()=>fixture(async r=>{
   await recordGovernance({staff,input:decision});assert.equal(r.governance[0].approval_status,'none');assert.equal(r.governance[0].payment_mode,'sandbox');assert.equal(r.governance[0].recorded_by,STAFF_ID);

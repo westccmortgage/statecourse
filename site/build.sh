@@ -80,6 +80,10 @@ test -f dist/student/nmls-training/index.html
 test -f dist/student/nmls-training/nmls-training.css
 test -f dist/student/nmls-training/nmls-training.mjs
 test -f dist/student/nmls-training/training-client.mjs
+test -f dist/student/free-training/index.html
+test -f dist/student/nmls-course/index.html
+test -f dist/student/nmls-course/nmls-course.mjs
+test -f dist/student/nmls-course/checkpoint-flow.mjs
 test -f dist/student/nmls-review/lesson-markdown.mjs
 test -f dist/student/nmls-review/question-presentation.mjs
 ! test -d dist/nmls
