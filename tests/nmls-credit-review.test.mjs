@@ -136,7 +136,7 @@ test('course HTTP: a reviewer gets the course, an ordinary free-training student
     contentDigest: course.digest, definitionDigest: definition.digest, revision: 0, runtime: null, serverTimeMs: Date.UTC(2026, 10, 20), event: null };
   let calls = [];
   const json = (body, status = 200) => new Response(JSON.stringify(body), { status, headers: { 'content-type': 'application/json' } });
-  globalThis.fetch = async (url, options = {}) => {
+  globalThis.fetch = async url => {
     const target = new URL(url); assert.equal(target.origin, 'https://course-db.invalid', 'no host other than the database is contacted'); calls.push(target.pathname);
     if (target.pathname === '/auth/v1/user') return json(user);
     if (target.pathname === '/rest/v1/students') return new Response(null, { status: 204 });
