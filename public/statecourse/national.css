@@ -304,10 +304,16 @@ button, select, summary, a { -webkit-tap-highlight-color: transparent; }
 
 /* ── footer ──────────────────────────────────────────────────────────────────────────────── */
 .national-footer { background: var(--navy); color: #ccd4e2; border-top: 1px solid rgba(255,255,255,.1); }
-.footer-shell { display: grid; grid-template-columns: 1fr auto; gap: 50px; max-width: var(--max); margin: auto; padding: 58px 28px 34px; }
+.footer-shell { display: grid; grid-template-columns: minmax(220px,.95fr) minmax(320px,1.1fr) minmax(260px,.95fr); align-items: start; column-gap: 44px; row-gap: 28px; max-width: var(--max); margin: auto; padding: 42px 28px 24px; }
 .national-brand.inverse { color: #fff; }
 .national-brand.inverse small { color: var(--gold); }
-.footer-shell > div > p { color: #9aa5ba; }
+.footer-brand p { margin: 18px 0 0; color: #9aa5ba; font-size: 14px; line-height: 1.65; }
+.footer-contact h2, .footer-nav h2 { margin: 3px 0 20px; color: var(--gold); font: 600 11px/1.3 var(--sans); letter-spacing: .13em; text-transform: uppercase; }
+.footer-phone-lines { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 20px; }
+.footer-phone-lines > div { display: grid; align-content: start; gap: 8px; }
+.footer-label { color: #9aa5ba; font-size: 11px; line-height: 1.4; }
+.footer-number, .footer-phone-lines .phone-vanity { width: max-content; font-size: 20px; line-height: 1.35; font-weight: 500; font-variant-numeric: tabular-nums; }
+.footer-email { display: inline-block; margin-top: 18px; font-size: 14px; }
 .footer-contact a { color: #fff; }
 .footer-contact a:hover { text-decoration: underline; }
 .phone-vanity { display: inline-grid; grid-template-columns: auto auto; column-gap: .3em; align-items: baseline; vertical-align: top; white-space: nowrap; line-height: 1.35; }
@@ -316,9 +322,9 @@ button, select, summary, a { -webkit-tap-highlight-color: transparent; }
 .footer-contact .phone-vanity-letters small { color: #aeb8cb; }
 .source-box a.phone-vanity { text-decoration: none; }
 .phone-vanity:hover strong { text-decoration: underline; }
-.footer-shell nav { display: grid; grid-template-columns: repeat(2,auto); gap: 11px 32px; font-size: 12px; }
-.footer-shell nav a:hover { color: #fff; }
-.footer-disclosure { grid-column: 1/-1; padding-top: 24px; border-top: 1px solid rgba(255,255,255,.14); color: #8b97ae; font-size: 11px; }
+.footer-links { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); align-content: start; gap: 11px 22px; font-size: 12px; line-height: 1.45; }
+.footer-links a:hover { color: #fff; }
+.footer-disclosure { grid-column: 1/-1; margin: 0; padding-top: 18px; border-top: 1px solid rgba(255,255,255,.14); color: #8b97ae; font-size: 11px; line-height: 1.6; }
 
 /* ── shared inner pages ──────────────────────────────────────────────────────────────────── */
 .page-hero { background: var(--surface); border-bottom: 1px solid var(--rule); }
@@ -400,6 +406,8 @@ button, select, summary, a { -webkit-tap-highlight-color: transparent; }
 }
 
 @media (max-width: 1080px) {
+  .footer-shell { grid-template-columns: minmax(0,1fr) minmax(0,1fr); column-gap: 44px; }
+  .footer-brand { grid-column: 1/-1; }
   .desktop-nav { display: none; }
   .header-shell { grid-template-columns: 1fr auto auto; }
   .mobile-menu { display: block; position: relative; }
@@ -470,7 +478,13 @@ button, select, summary, a { -webkit-tap-highlight-color: transparent; }
   .transcript-body { max-height: 270px; padding: 16px; font-size: 13px; }
   .student-return { display: grid; padding: 62px 18px; }
   .student-return > a { width: 100%; text-align: center; }
-  .footer-shell { grid-template-columns: 1fr; padding: 50px 18px 30px; }
+  .footer-shell { grid-template-columns: minmax(0,1fr); gap: 28px; padding: 34px 22px 22px; }
+  .footer-brand { grid-column: auto; }
+  .footer-brand p { margin-top: 14px; }
+  .footer-contact h2, .footer-nav h2 { margin: 0 0 16px; }
+  .footer-phone-lines { max-width: 360px; gap: 16px; }
+  .footer-number, .footer-phone-lines .phone-vanity { font-size: 18px; }
+  .footer-links { max-width: 420px; gap: 12px 24px; font-size: 13px; }
   .page-intro { padding: 50px 18px 42px; }
   .page-tools { grid-template-columns: 1fr; }
   .content-grid { grid-template-columns: 1fr; }
