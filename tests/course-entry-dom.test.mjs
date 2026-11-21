@@ -154,6 +154,19 @@ test('signup shows the BioSig course sequence only for Mortgage Renewal, without
   const returnTo=entryPath({vertical,goal,state:'CA'});
   vm.runInNewContext(source,{document,location:{search:'?return_to='+encodeURIComponent(returnTo)},URL,URLSearchParams});
   assert.equal(document.getElementById('renewalRegistrationPlan').hidden,!(vertical==='mortgage'&&goal==='renew'));
+  assert.equal(document.getElementById('accountCourseFinder').getAttribute('href'),vertical==='mortgage'?'/mortgage/':'/get-licensed/');
   assert.equal(document.querySelectorAll('input[name="nmlsId"],input[name="biosig"]').length,0);
+ }
+});
+test('sign-in Course Finder retains the selected mortgage vertical',async()=>{
+ const source=readFileSync(new URL('../public/statecourse/student/sign-in/student-signin.js',import.meta.url),'utf8');
+ for(const vertical of ['mortgage','real-estate']){
+  const {document}=parseHTML(readFileSync(new URL('../public/statecourse/student/sign-in/index.html',import.meta.url),'utf8'));
+  const form=document.getElementById('studentSignIn');
+  Object.defineProperty(form,'elements',{value:Object.fromEntries([...form.querySelectorAll('input[name]')].map(el=>[el.name,el]))});
+  const returnTo=entryPath({vertical,goal:'renew',state:'CA'});
+  vm.runInNewContext(source,{document,location:{search:'?return_to='+encodeURIComponent(returnTo)},URL,URLSearchParams,fetch:async()=>new Response(null,{status:401})});
+  await settle();
+  assert.equal(document.getElementById('accountCourseFinder').getAttribute('href'),vertical==='mortgage'?'/mortgage/':'/get-licensed/');
  }
 });

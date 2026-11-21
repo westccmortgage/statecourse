@@ -33,6 +33,8 @@ function deriveReturnPath() {
 }
 
 const returnTo = deriveReturnPath();
+const accountFinder=document.querySelector('#accountCourseFinder');
+if(accountFinder){const finderContext=new URL(returnTo,'https://statecourse.com');accountFinder.href=finderContext.searchParams.get('vertical')==='mortgage'||finderContext.pathname.startsWith('/student/nmls-')?'/mortgage/':'/get-licensed/';}
 const pathSummary=document.querySelector('#registerPathSummary');
 if(pathSummary&&returnTo.startsWith('/student/start/?')){
   const selection=new URL(returnTo,'https://statecourse.com').searchParams;

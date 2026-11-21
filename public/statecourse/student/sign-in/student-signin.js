@@ -16,6 +16,8 @@ function returnPath() {
 
 const registrationUrl = `../register/?return_to=${encodeURIComponent(returnPath())}`;
 createAccountLinks.forEach((link) => { link.href = registrationUrl; });
+const accountFinder=document.querySelector('#accountCourseFinder');
+if(accountFinder){const finderContext=new URL(returnPath(),'https://statecourse.com');accountFinder.href=finderContext.searchParams.get('vertical')==='mortgage'||finderContext.pathname.startsWith('/student/nmls-')?'/mortgage/':'/get-licensed/';}
 
 function setError(field, errorElement, text = "") {
   field.setAttribute("aria-invalid", text ? "true" : "false");

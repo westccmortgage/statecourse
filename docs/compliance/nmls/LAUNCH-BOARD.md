@@ -2,6 +2,33 @@
 
 # NMLS Launch Board
 
+## Course-entry publication observed — 2026-11-21
+
+Production publication succeeded: revision `8e11c5287af7488f0bc124fbaf8886d5dc8096cc`,
+Netlify deploy `6b01cb2c93d6b0a286fe2f1c`, published 2026-11-21 08:48:32 Pacific
+at `https://statecourse.com` (site `b514a8f8-782b-448c-8881-a914ee42c69b`).
+The GitHub source tree equals the validated local tree.
+
+Observed in the production browser: the homepage's two destinations, three goal
+cards in both verticals, Mortgage Renewal/CA navigation into signup with its
+selection and BioSig sequence retained, and Real Estate Free Practice/CA signup
+without renewal identity requirements. No account was submitted. The new learning
+path endpoint responds `method_not_allowed` to GET; the BSI callback is inactive
+(`Not Found`). Public payment configuration reports zero available non-QA credit
+offers and successful training discovery. No payment or identity flag was changed.
+
+A final navigation correction follows this first successful publication: Course
+Finder in signup and sign-in now returns Mortgage visitors to Mortgage rather
+than Real Estate, using their existing continuation context. Targeted interaction
+and sign-in recovery tests cover this correction before its production build.
+
+Unverified: complete email-confirmation/account creation, authenticated notification
+and NMLS-ID persistence, actual practice enrollment, mobile/tablet layout, real BSI
+round trips and ordinary credit-student admission. Direct command-line HTTP probes
+received 403; the rendered browser routes above worked. This publication does not
+close regulatory or commercial credit-launch gates. No production SQL or secrets
+were applied; BSI activation still awaits the vendor secrets expected November 23.
+
 ## Course-entry publication authorized — 2026-11-21
 
 The owner explicitly authorized publishing the prepared homepage, vertical entry,
