@@ -28,7 +28,7 @@ export function buildNmlsArgumentString(config, { email, firstName, lastName, ui
 
 export function buildInboundUrl(config, argumentString) {
   const encrypted = biosigHelper(config).encrypt(argumentString, config.vector, config.keySize);
-  return `${config.baseUrl}SSOInbound.aspx?args=${encodeURIComponent(encrypted)}`;
+  return `${config.inboundUrl}?args=${encodeURIComponent(encrypted)}`;
 }
 
 const entities = text => text.replace(/&(amp|lt|gt|quot|apos|#\d+|#x[0-9a-f]+);/gi, (_, name) => {

@@ -5,6 +5,7 @@ import { readFileSync, readdirSync } from 'node:fs';
 import { pathToFileURL } from 'node:url';
 import BioSigInterfaceHelper from '../netlify/functions/_lib/biosig/interface-helper.mjs';
 import { BIOSIG_REQUIRED, biosigConfig, nmlsBiosigCourseFields } from '../config/nmls/biosig.mjs';
+import { resolveBiosigUid } from '../netlify/functions/_lib/biosig/identifier.mjs';
 import { buildInboundUrl, buildNmlsArgumentString, buildSsoResponseXml, CHALLENGE_ARGUMENT, decryptCallbackArgs, parseSsoResponseXml,
   requestBiosigRedirect, validationSucceeded } from '../netlify/functions/_lib/biosig/sso.mjs';
 import { createChallengeStore, dueCheckpoint, dueStudyCheckpoint, identityGate, identityStatus, requirementFor,
@@ -48,21 +49,66 @@ test('without every BSI value the integration is unavailable, and it never echoe
   assert.deepEqual(ready({ BIOSIG_VECTOR: 'too-short' }).missing, ['BIOSIG_VECTOR']);
   assert.deepEqual(ready({ BIOSIG_KEY_SIZE: '256' }).missing, ['BIOSIG_KEY_SIZE'], 'the helper derives a 16-byte key, so only 128 can work');
   assert.deepEqual(ready({ BIOSIG_PARTNER: '../evil' }).missing, ['BIOSIG_PARTNER']);
-  assert.deepEqual(ready({ BIOSIG_ENVIRONMENT: 'staging' }).missing, ['BIOSIG_ENVIRONMENT']);
+  assert.deepEqual(ready({ BIOSIG_ENVIRONMENT: 'staging', BIOSIG_UID_MODE: 'nmls_id' }).missing, ['BIOSIG_ENVIRONMENT']);
   assert.doesNotMatch(JSON.stringify(ready({ BIOSIG_VECTOR: 'bad' })), /random-pass|random-salt/);
-  assert.equal(ready().baseUrl, 'https://sandbox.verifyexpress.com/interface/standard/partner/');
-  assert.equal(ready({ BIOSIG_ENVIRONMENT: 'production' }).baseUrl, 'https://verifyexpress.com/interface/standard/partner/');
+  assert.equal(ready().inboundUrl, 'https://sandbox.verifyexpress.com/interface/standard/partner/SSOInbound.aspx');
+  assert.equal(ready({ BIOSIG_ENVIRONMENT: 'production', BIOSIG_UID_MODE: 'nmls_id' }).inboundUrl, 'https://verifyexpress.com/interface/standard/partner/SSOInbound.aspx');
   const student = randomUUID();
   assert.deepEqual(ready({ BIOSIG_REVIEWER_UIDS: `${student}=reviewer, not-a-uuid=x, ${randomUUID()}=bad uid` }).reviewerUids, { [student]: 'reviewer' });
 });
 
+test('the interface address: a two-segment partner path, or the exact address BSI gave, on BSI\'s domain only', () => {
+  assert.equal(ready({ BIOSIG_PARTNER: 'program/school' }).inboundUrl, 'https://sandbox.verifyexpress.com/interface/standard/program/school/SSOInbound.aspx');
+  for (const bad of ['../x', 'a/../b', 'a//b', '/a', 'a/', 'a/.', 'a b', 'a?x=1', 'a#b', 'https://evil.example'])
+    assert.deepEqual(ready({ BIOSIG_PARTNER: bad }).missing, ['BIOSIG_PARTNER'], bad);
+  // BSI's analyst wrote the file name in lower case; an exact address is used as written.
+  const exact = 'https://sandbox.verifyexpress.com/interface/standard/program/school/ssoinbound.aspx';
+  assert.equal(ready({ BIOSIG_INBOUND_URL: exact }).inboundUrl, exact);
+  assert.match(buildInboundUrl(ready({ BIOSIG_INBOUND_URL: exact }), 'ts=x'), /\/program\/school\/ssoinbound\.aspx\?args=[A-Za-z0-9%]+$/);
+  for (const bad of ['http://sandbox.verifyexpress.com/a/ssoinbound.aspx', 'https://verifyexpress.com.evil.example/a/ssoinbound.aspx', 'https://evil.example/ssoinbound.aspx',
+    'https://user:pw@sandbox.verifyexpress.com/a/ssoinbound.aspx', 'https://sandbox.verifyexpress.com/a/ssoinbound.aspx?args=1', 'https://sandbox.verifyexpress.com:8443/a/ssoinbound.aspx',
+    'https://sandbox.verifyexpress.com/a/', 'not a url'])
+    assert.deepEqual(ready({ BIOSIG_INBOUND_URL: bad }).missing, ['BIOSIG_INBOUND_URL'], bad);
+});
+
+test('which identifier is sent as uid is one setting, and production has no default', async () => {
+  assert.equal(ready().uidMode, 'provider_prefixed', 'sandbox follows BSI\'s recommendation');
+  assert.deepEqual(ready({ BIOSIG_ENVIRONMENT: 'production' }).missing, ['BIOSIG_UID_MODE'], 'production stays closed until the confirmed convention is set');
+  assert.equal(ready({ BIOSIG_ENVIRONMENT: 'production', BIOSIG_UID_MODE: 'provider_prefixed' }).ready, true);
+  assert.deepEqual(ready({ BIOSIG_UID_MODE: 'email' }).missing, ['BIOSIG_UID_MODE']);
+  assert.deepEqual(ready({ BIOSIG_UID_PREFIX: 'State Course' }).missing, ['BIOSIG_UID_PREFIX']);
+
+  const numbers = new Map(), calls = [];
+  const request = async (path, { method = 'GET', body } = {}) => {
+    calls.push(method); assert.match(path, /^nmls_biosig_identifiers\?/);
+    if (method === 'POST') { if (!numbers.has(body.student_id)) numbers.set(body.student_id, numbers.size + 1); return null; }
+    const id = new URLSearchParams(path.split('?')[1]).get('student_id').replace('eq.', '');
+    return numbers.has(id) ? [{ sequence: numbers.get(id) }] : [];
+  };
+  const ana = randomUUID(), ben = randomUUID(), reviewer = randomUUID();
+  const prefixed = ready({ BIOSIG_REVIEWER_UIDS: `${reviewer}=reviewer2` });
+  assert.equal(await resolveBiosigUid(prefixed, { studentId: ana, nmlsId: '1234567' }, { request }), 'StateCourse-001', 'the NMLS ID is not used in this mode');
+  assert.equal(await resolveBiosigUid(prefixed, { studentId: ben, nmlsId: null }, { request }), 'StateCourse-002');
+  assert.equal(await resolveBiosigUid(prefixed, { studentId: ana, nmlsId: '1234567' }, { request }), 'StateCourse-001', 'the same person keeps the same identifier');
+  assert.equal(await resolveBiosigUid(ready({ BIOSIG_UID_PREFIX: 'SC' }), { studentId: ben }, { request }), 'SC-002');
+  calls.length = 0;
+  assert.equal(await resolveBiosigUid(prefixed, { studentId: reviewer, nmlsId: '5' }, { request }), 'reviewer2', 'a reviewer\'s assigned identifier wins');
+  const byNmlsId = ready({ BIOSIG_UID_MODE: 'nmls_id' });
+  assert.equal(await resolveBiosigUid(byNmlsId, { studentId: ana, nmlsId: '1234567' }, { request }), '1234567');
+  assert.equal(await resolveBiosigUid(byNmlsId, { studentId: ben, nmlsId: null }, { request }), null);
+  assert.deepEqual(calls, [], 'no number is assigned unless the prefixed convention is in use');
+  assert.equal(await resolveBiosigUid(prefixed, { studentId: randomUUID() }, { request: async () => [] }), null, 'no number, no identifier');
+});
+
 test('no BSI value is stored in the repository', () => {
   const files = ['config/nmls/biosig.mjs', 'config/nmls/credit-review.mjs', 'netlify/functions/student-nmls-identity.mts', 'netlify/functions/biosig-callback.mts',
-    'netlify/functions/student-nmls-course.mts', 'database/031_nmls_identity_challenges.sql',
+    'netlify/functions/student-nmls-course.mts', 'database/031_nmls_identity_challenges.sql', 'database/032_nmls_biosig_identifiers.sql', 'docs/compliance/nmls/LAUNCH-BOARD.md',
     ...readdirSync(new URL('../netlify/functions/_lib/biosig/', import.meta.url)).map(name => `netlify/functions/_lib/biosig/${name}`)];
   for (const path of files) {
     const source = read(path);
     assert.doesNotMatch(source, /random-pass-guid-code|random-salt-guid-code|random-vector-16/, path);
+    // The identifiers and address BSI issued for this account are kept out of the repository too.
+    assert.doesNotMatch(source, /nmls_statecourse|standard\/nmls\/statecourse/i, path);
     // Secrets are named only as environment variables, never assigned a literal.
     assert.doesNotMatch(source, /BIOSIG_(?:PASS|SALT|VECTOR|SHARED_CODE|SYSTEM_ID|CUSTOMER_ID)\s*[:=]\s*['"`][^'"`\s]/, path);
     assert.doesNotMatch(source, /console\.(?:log|error|warn)\([^)]*(?:pass|salt|vector|sharedCode|args\b)/i, path);
@@ -155,10 +201,16 @@ test('which checkpoint is owed', () => {
 
 // An in-memory stand-in for the one table, speaking the PostgREST subset the store uses.
 function fakeTable() {
-  const rows = [];
+  const rows = [], numbers = new Map();
   const filters = query => [...new URLSearchParams(query)].filter(([key]) => !['select', 'order', 'limit'].includes(key)).map(([key, value]) => [key, value.replace(/^eq\./, '')]);
   const request = async (path, { method = 'GET', body } = {}) => {
-    const [table, query = ''] = path.split('?'); assert.equal(table, 'nmls_identity_challenges');
+    const [table, query = ''] = path.split('?');
+    if (table === 'nmls_biosig_identifiers') {
+      const id = body?.student_id || new URLSearchParams(query).get('student_id')?.replace('eq.', '');
+      if (method === 'POST') { if (!numbers.has(id)) numbers.set(id, numbers.size + 1); return null; }
+      return numbers.has(id) ? [{ sequence: numbers.get(id) }] : [];
+    }
+    assert.equal(table, 'nmls_identity_challenges');
     if (method === 'POST') { rows.push({ created_at: new Date(Date.now() + rows.length).toISOString(), completed_at: null, consumed_at: null, ...body }); return null; }
     const hit = rows.filter(row => filters(query).every(([key, value]) => String(row[key]) === value));
     if (method === 'PATCH') { hit.forEach(row => Object.assign(row, body)); return hit.map(row => ({ ...row })); }
@@ -244,11 +296,11 @@ test('the course endpoint gate: no commit without a fresh passed check, and one 
 });
 
 test('HTTP: start a check, then BSI\'s simulated success and failure callbacks', async t => {
-  const names = ['STATECOURSE_BASE_URL', 'SUPABASE_URL', 'SUPABASE_ANON_KEY', 'SUPABASE_SERVICE_ROLE_KEY', 'NMLS_CREDIT_CHECKPOINTS', 'BIOSIG_REVIEWER_UIDS', ...Object.keys(SAMPLE)];
+  const names = ['STATECOURSE_BASE_URL', 'SUPABASE_URL', 'SUPABASE_ANON_KEY', 'SUPABASE_SERVICE_ROLE_KEY', 'NMLS_CREDIT_CHECKPOINTS', 'BIOSIG_REVIEWER_UIDS', 'BIOSIG_UID_MODE', 'BIOSIG_PARTNER', 'BIOSIG_INBOUND_URL', ...Object.keys(SAMPLE)];
   const before = Object.fromEntries(names.map(name => [name, process.env[name]])), originalFetch = globalThis.fetch, originalError = console.error;
   const origin = 'https://statecourse.test', db = 'https://biosig-db.invalid';
   const actor = randomUUID(), enrollmentId = randomUUID(), table = fakeTable(), logged = [];
-  Object.assign(process.env, { STATECOURSE_BASE_URL: origin, SUPABASE_URL: db, SUPABASE_ANON_KEY: 'synthetic-anon', SUPABASE_SERVICE_ROLE_KEY: 'synthetic-service', ...SAMPLE });
+  Object.assign(process.env, { STATECOURSE_BASE_URL: origin, SUPABASE_URL: db, SUPABASE_ANON_KEY: 'synthetic-anon', SUPABASE_SERVICE_ROLE_KEY: 'synthetic-service', ...SAMPLE, BIOSIG_UID_MODE: 'nmls_id' });
   delete process.env.NMLS_CREDIT_CHECKPOINTS; delete process.env.BIOSIG_REVIEWER_UIDS;
   console.error = (...parts) => logged.push(JSON.stringify(parts));
   t.after(() => { globalThis.fetch = originalFetch; console.error = originalError; for (const name of names) { if (before[name] === undefined) delete process.env[name]; else process.env[name] = before[name]; } });
@@ -261,7 +313,7 @@ test('HTTP: start a check, then BSI\'s simulated success and failure callbacks',
     assert.equal(target.origin, db, `unexpected host ${target.host}`);
     if (target.pathname === '/auth/v1/user') return json({ id: actor, email: 'closed-reviewer@example.test' });
     if (target.pathname === '/rest/v1/rpc/nmls_training_context') return json(context);
-    if (target.pathname === '/rest/v1/nmls_identity_challenges') return json(await table.request(`nmls_identity_challenges${target.search}`, { method: options.method || 'GET', body: options.body ? JSON.parse(options.body) : undefined }));
+    if (['/rest/v1/nmls_identity_challenges', '/rest/v1/nmls_biosig_identifiers'].includes(target.pathname)) return json(await table.request(`${target.pathname.replace('/rest/v1/', '')}${target.search}`, { method: options.method || 'GET', body: options.body ? JSON.parse(options.body) : undefined }));
     if (target.pathname === '/rest/v1/students') return options.method === 'POST' ? new Response(null, { status: 204 }) : json([{ email: 'closed-reviewer@example.test', first_name: 'Closed', last_name: 'Reviewer', nmls_id: nmlsId }]);
     throw new Error(`Unexpected mocked request ${target.pathname}`);
   };
@@ -349,6 +401,21 @@ test('HTTP: start a check, then BSI\'s simulated success and failure callbacks',
     assert.match(logged.join(' '), /biosig_refused:250/); assert.match(logged.join(' '), /Begin/);
     assert.doesNotMatch(logged.join(' '), /random-pass|random-salt|random-vector|1234567|closed-reviewer|args=/); assert.ok(fresh);
   });
+  await t.test('provider-prefixed convention with a two-segment partner path: BSI is sent StateCourse-001, not the NMLS ID', async () => {
+    process.env.BIOSIG_UID_MODE = 'provider_prefixed'; process.env.BIOSIG_PARTNER = 'program/school'; nmlsId = '1234567'; table.rows.length = 0;
+    bsiAnswer = () => buildSsoResponseXml('Success', '100', 'None', 'https://sandbox.verifyexpress.com/app/draw');
+    assert.equal((await start()).status, 200);
+    assert.equal(sent.pathname, '/interface/standard/program/school/SSOInbound.aspx');
+    const config = biosigConfig(process.env), keyed = decryptCallbackArgs(config, sent.searchParams.get('args'));
+    assert.equal(keyed.uid, 'StateCourse-001'); assert.equal(table.rows.at(-1).uid, 'StateCourse-001');
+    // BSI's answer must name that same identifier.
+    const row = table.rows.at(-1);
+    assert.equal(parseSsoResponseXml(await (await callback(`vs=True&uid=1234567&${CHALLENGE_ARGUMENT}=${row.id}`)).text()).status, 'Failure');
+    table.rows.length = 0; await start(); const again = table.rows.at(-1);
+    assert.equal(again.uid, 'StateCourse-001', 'the same reviewer keeps the same identifier');
+    assert.equal(parseSsoResponseXml(await (await callback(`vs=True&uid=StateCourse-001&${CHALLENGE_ARGUMENT}=${again.id}`)).text()).status, 'Success');
+    process.env.BIOSIG_UID_MODE = 'nmls_id'; process.env.BIOSIG_PARTNER = SAMPLE.BIOSIG_PARTNER;
+  });
   await t.test('reviewer accounts use the identifier assigned to them', async () => {
     process.env.BIOSIG_REVIEWER_UIDS = `${actor}=reviewer2`; nmlsId = null; table.rows.length = 0;
     bsiAnswer = () => buildSsoResponseXml('Success', '100', 'None', 'https://sandbox.verifyexpress.com/app/draw');
@@ -393,4 +460,14 @@ test('migration 031: forward-only transitions, service role only', { skip: proce
   const grants = (await db.query(`select grantee, string_agg(privilege_type, ',' order by privilege_type) p from information_schema.role_table_grants where table_name='nmls_identity_challenges' and grantee in ('service_role','anon','authenticated','PUBLIC') group by grantee`)).rows;
   assert.deepEqual(grants, [{ grantee: 'service_role', p: 'INSERT,SELECT,UPDATE' }]);
   assert.equal((await db.query(`select relrowsecurity from pg_class where relname='nmls_identity_challenges'`)).rows[0].relrowsecurity, true);
+
+  // 032: one number per student, assigned once, never changed or reused.
+  const identifiers = read('database/032_nmls_biosig_identifiers.sql'); await db.exec(identifiers); await db.exec(identifiers);
+  const other = randomUUID(); await db.query('insert into students values($1)', [other]);
+  const assign = who => db.query('insert into nmls_biosig_identifiers(student_id) values($1) on conflict(student_id) do nothing', [who]);
+  await assign(student); await assign(other); await assign(student);
+  assert.deepEqual((await db.query('select student_id, sequence::int from nmls_biosig_identifiers order by sequence')).rows, [{ student_id: student, sequence: 1 }, { student_id: other, sequence: 2 }]);
+  await assert.rejects(db.query('update nmls_biosig_identifiers set assigned_at=now()'), /nmls_biosig_identifier_immutable/);
+  await assert.rejects(db.query('delete from nmls_biosig_identifiers'), /nmls_biosig_identifier_immutable/);
+  await assert.rejects(db.query('insert into nmls_biosig_identifiers(student_id, sequence) values($1, 1)', [randomUUID()]), /non-DEFAULT|generated|identity/i, 'a number cannot be chosen by the caller');
 });

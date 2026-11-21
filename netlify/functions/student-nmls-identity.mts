@@ -4,6 +4,7 @@ import { dbRequest, rpc } from './_lib/db.mjs';
 import { reviewerOnlyRpc } from './_lib/nmls-credit-review.mjs';
 import { createChallengeStore, dueCheckpoint } from './_lib/biosig/checkpoints.mjs';
 import { buildNmlsArgumentString, requestBiosigRedirect } from './_lib/biosig/sso.mjs';
+import { resolveBiosigUid } from './_lib/biosig/identifier.mjs';
 import { biosigConfig } from '../../config/nmls/biosig.mjs';
 import { NMLS_CREDIT_CHECKPOINTS, nmlsCheckpointMode } from '../../config/nmls/credit-review.mjs';
 
@@ -47,10 +48,9 @@ export default async function handler(request: Request): Promise<Response> {
     if (store.usable(rows, due)) return reply(200, { ready: true, checkpoint: { id: due, d3: step.d3, label: step.label } });
 
     const profile = (await dbRequest(`students?id=eq.${encodeURIComponent(studentId)}&select=email,first_name,last_name,nmls_id&limit=1`))?.[0];
-    // BSI identifies the person by their own NMLS ID. Reviewer accounts use the identifier
-    // assigned to them instead.
-    const uid = bsi.reviewerUids[studentId] || profile?.nmls_id;
-    if (!uid) return reply(409, { error: 'nmls_id_required' });
+    // Which identifier BSI is given is a configured convention (see config/nmls/biosig.mjs).
+    const uid = await resolveBiosigUid(bsi, { studentId, nmlsId: profile?.nmls_id });
+    if (!uid) return reply(409, { error: bsi.uidMode === 'nmls_id' ? 'nmls_id_required' : 'nmls_identity_check_unavailable' });
 
     const challenge = await store.create({ enrollmentId, studentId, checkpoint: due, uid });
     try {
