@@ -20,6 +20,7 @@
   },
   "dependencies": {
     "@netlify/aws-lambda-compat": "2.0.2",
+    "@netlify/blobs": "11.1.9",
     "drizzle-orm": "0.45.2",
     "next": "16.2.6",
     "pg": "8.23.1",

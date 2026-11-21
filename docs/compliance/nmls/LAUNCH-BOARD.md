@@ -2,6 +2,15 @@
 
 # NMLS Launch Board
 
+## School call email delivery requested — 2026-11-21
+
+Owner requested all school assistant messages at `info@statecourse.com`, without
+CRM routing. A separate signed callback, school-only event checks, a Netlify Forms
+email route and tests are prepared; the recipient is confirmed. Production
+assignment and actual inbox delivery require the deployment/runtime checks in
+[the route record](../../student-portal/phone-email-routing.md). No course,
+credit, payment, student Auth or BioSig control changed.
+
 ## School phone receptionist and contact publication — 2026-11-21
 
 The owner authorized an AI school receptionist on `775-373-6657` and requested
