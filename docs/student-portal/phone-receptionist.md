@@ -96,6 +96,15 @@ CONFIRMED SCHOOL FACTS AND LIMITS
 | School email | Signed school-only post-call route to info@statecourse.com verified with QA conversation `conv_2101m7zq6qccf2w9xf03nyebp6bz`, HTTP 200, and actual inbox receipt at 10:52 Pacific. See `phone-email-routing.md`. |
 | Remaining scope | No SMS, live transfer, outbound sales call, account creation or credit enrollment configured. Actual paid specials require confirmed terms before publication. |
 
+## Published greeting and message delivery — 2026-11-21
+
+English, Russian, Spanish, Portuguese (Brazil) and Chinese greeting presets were
+read back and published with virtual-assistant wording, retaining recording and
+transcription disclosure. The system prompt explains automatic school inbox
+forwarding after calls without claiming immediate arrival or a promised callback.
+Fresh QA `conv_9301m7zqfvnnezsrr9zpvqkq7tzv` confirmed this response and actual
+email receipt with the extracted contact/message details at 10:57 Pacific.
+
 ## Website contact update
 
 Owner requested retaining the existing `310-686-5053` as **Live line** and adding
