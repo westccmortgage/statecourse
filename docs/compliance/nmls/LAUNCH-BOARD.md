@@ -2,6 +2,30 @@
 
 # NMLS Launch Board
 
+## School phone receptionist and contact publication — 2026-11-21
+
+The owner authorized an AI school receptionist on `775-373-6657` and requested
+that the website retain `310-686-5053` as **Live line** while adding the new number
+as **AI assistant line**. ElevenLabs/Twilio assignment is saved; the owner's real
+97-second inbound call completed and the owner confirmed normal operation.
+Five language/tool paths, structured message extraction and the free-practice
+registration CTA were checked in text conversations. Actual telephone audio in
+every supported language, automated email/SMS delivery, live transfer and paid
+promotion terms are not verified/enabled. This does not open course enrollment,
+credit, payments or BioSig-ID. No SQL or Netlify secrets changed.
+
+The inherited shared CRM post-call route was identified after three setup events
+were delivered. It is now overridden only for StateCourse using a dedicated
+disabled school webhook. A fresh v4 conversation retained its history/summary
+without a corresponding new outbound delivery. Other agents and the shared
+default were not modified. See [prompt, routing and test evidence](../../student-portal/phone-receptionist.md).
+
+Contact publication starts from production commit
+`2ed779c610e14de7bf5f2256542ddc7c7c12b6c8`, deploy
+`6b01d01312ff66be7973e6d0`. Build and 18 existing public-page checks plus five
+build privacy gates pass; both phone labels and dial links are present on all 90
+built pages containing the existing phone. Live site readback follows publication.
+
 ## Course-entry publication observed — 2026-11-21
 
 Production publication succeeded: revision `8e11c5287af7488f0bc124fbaf8886d5dc8096cc`,
