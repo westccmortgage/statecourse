@@ -7,7 +7,7 @@ const read = (path) => readFile(new URL(`../${path}`, import.meta.url), "utf8");
 test("state finder keeps built states usable and disables future states", async () => {
   const [script, homepage, generator] = await Promise.all([
     read("public/statecourse/national.js"),
-    read("public/statecourse/index.html"),
+    read("public/statecourse/get-licensed/index.html"),
     read("scripts/generate-national-platform.mjs"),
   ]);
 

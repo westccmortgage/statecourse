@@ -29,8 +29,9 @@
       <section class="registration-shell" aria-labelledby="register-title">
         <header class="registration-intro">
           <p class="eyebrow">Student Account</p>
-          <h1 id="register-title">Create your StateCourse account</h1>
-          <p>Keep your licensing path, courses, progress, payments, and certificates in one place.</p>
+          <h1 id="register-title">Create your free account</h1>
+          <p id="registrationBenefit">Start practising and keep your next learning step in one place.</p>
+          <p id="registerPathSummary"></p>
         </header>
 
         <div class="registration-card">
@@ -61,7 +62,7 @@
                 <button class="password-toggle" type="button" data-password-toggle="password" aria-controls="password" aria-pressed="false">Show</button>
               </div>
               <div class="password-guidance">
-                <span id="passwordHelp">At least 10 characters</span>
+                <span id="passwordHelp">At least 10 characters. A separate security check applies.</span>
                 <span id="passwordStrength" class="password-strength" aria-live="polite">Not entered</span>
               </div>
               <div class="strength-track" aria-hidden="true"><span id="strengthBar"></span></div>
@@ -84,14 +85,20 @@
         </div>
 
         <aside class="enrollment-callout" aria-labelledby="enrollment-note-title">
-          <h2 id="enrollment-note-title">Creating an account does not enroll you in a course.</h2>
-          <p>Your course enrollment begins only after you:</p>
+          <h2 id="enrollment-note-title">Your next step stays with you.</h2>
+          <p>Confirm your email, then continue to your selected practice or learning path.</p>
+          <p>Free practice is non-credit. Any credit course enrollment is separate, with current availability and required disclosures shown before payment.</p>
+        </aside>
+        <aside class="enrollment-callout" id="renewalRegistrationPlan" hidden aria-labelledby="renewalPlanTitle">
+          <h2 id="renewalPlanTitle">Your NMLS renewal course path</h2>
           <ol>
-            <li>select an eligible course,</li>
-            <li>review required disclosures,</li>
-            <li>complete checkout.</li>
+            <li>Create and confirm your account.</li>
+            <li>Provide your NMLS ID and enroll in an available CE course.</li>
+            <li>Read and accept the NMLS Rules of Conduct.</li>
+            <li>Verify your identity with BioSig-ID, then begin the course.</li>
           </ol>
-          <p>Creating an account alone does not start instructional time or award licensing credit.</p>
+          <p>Your NMLS ID is required for credit-course registration. BioSig-ID opens within the course after the Rules of Conduct, with further checks during study, on return and before the final examination.</p>
+          <p>Free practice does not require an NMLS ID or BioSig-ID.</p>
         </aside>
       </section>
     </main>
@@ -105,6 +112,6 @@
         <a href="../../accessibility/">Accessibility</a>
       </nav>
     </footer>
-    <script src="student-register.js?v=20260818-registration" defer></script>
+    <script src="student-register.js?v=20261121-renewal" defer></script>
   </body>
 </html>

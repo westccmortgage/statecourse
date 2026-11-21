@@ -10,6 +10,7 @@ const handler = async () => {
     return {
       id: course.id,
       state: course.state,
+      productType: course.productType,
       name: course.name,
       currency: course.currency,
       amount: course.price[mode],

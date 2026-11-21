@@ -7,6 +7,7 @@ import { dbRequest } from "./_lib/db.mjs";
 import { stripeRequest } from "./_lib/stripe.mjs";
 import { handleError, method, parseJson, requireSameOrigin, response } from "./_lib/http.mjs";
 import { resolveCheckoutStudent } from "./_lib/student-auth.mjs";
+import { requireCourseNmlsId } from './_lib/student-nmls-identity.mjs';
 import { asStripeParams, checkoutMetadata } from "../../lib/stripe-contract.mjs";
 
 const handler = async (event) => {
@@ -39,6 +40,7 @@ const handler = async (event) => {
     const amount = course.price[mode];
     const qaOnly = Boolean(eligibility.qaOnly);
     const student = await resolveCheckoutStudent(event, input, { qaOnly });
+    await requireCourseNmlsId(course, student.id);
     await dbRequest("checkout_attempts", {
       method: "POST",
       prefer: "return=minimal",

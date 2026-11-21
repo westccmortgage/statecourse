@@ -21,58 +21,26 @@ const read = (relativePath) => fs.readFileSync(path.join(publicRoot, relativePat
 const catalog = JSON.parse(read("data/course-catalog.json"));
 const mortgageCategory = catalog.categories.find((entry) => entry.category_id === "mortgage");
 
-test("the homepage offers two doors, and each one goes somewhere real", () => {
-  const html = read("index.html");
-  const doors = html.match(/<a class="vertical-door" href="([^"]+)"/g) ?? [];
-  assert.equal(doors.length, 2, "the homepage must offer exactly two vertical doors");
-  assert.match(html, /<a class="vertical-door" href="#licensing-finder"/, "no real estate door");
-  assert.match(html, /<a class="vertical-door" href="mortgage\/"/, "no mortgage door");
-  /* The real estate door points at an anchor. The anchor has to exist, or the door is a dead
-     control on the most prominent surface the site has. */
-  assert.match(html, /id="licensing-finder"/);
-  assert.ok(fs.existsSync(path.join(publicRoot, "mortgage/index.html")), "the mortgage door points at a page that does not exist");
+test("the homepage has two real destinations and no state form or approval warning in its hero",()=>{
+ const html=read('index.html'),hero=html.split('<section class="national-hero"')[1].split('</section>')[0];
+ assert.equal((hero.match(/class="vertical-door"/g)||[]).length,2);
+ assert.match(hero,/href="get-licensed\/"/);assert.match(hero,/href="mortgage\/"/);
+ assert.doesNotMatch(html,/id="homeStateSelect"|id="licensing-finder"/);
+ assert.doesNotMatch(hero,/waiting for approval|not available|coming soon/i);
 });
-
-test("splitting the hero did not cost the state finder any of its parts", () => {
-  const html = read("index.html");
-  /* The finder moved out of the hero and into its own band. Moving it is fine; losing a field
-     silently is not, and a partially copied form still renders as a form. */
-  for (const fragment of ['id="homeStateSelect"', 'id="homeGoalSelect"', 'id="finderMessage"', 'class="intent-tabs"', "</form>"]) {
-    assert.ok(html.includes(fragment), `the licensing finder lost ${fragment}`);
-  }
-  assert.equal((html.match(/<form/g) ?? []).length, (html.match(/<\/form>/g) ?? []).length, "unbalanced form tags");
+test("both verticals offer the same three explicit entry goals",()=>{
+ for(const [route,vertical] of [['get-licensed','real-estate'],['mortgage','mortgage']]){
+  const page=read(route+'/index.html');
+  for(const goal of ['practice','licensed','renew'])assert.ok(page.includes(`vertical=${vertical}&amp;goal=${goal}`));
+  assert.match(page,/Start Free Practice/);assert.match(page,/Explore Pre-Licensing/);assert.match(page,/Explore Continuing Education/);
+  assert.doesNotMatch(page.split('<details')[0],/waiting for approval|not available|coming soon/i);
+ }
 });
-
-test("the mortgage launch date is data, and the homepage repeats the catalog rather than inventing one", () => {
-  assert.ok(mortgageCategory, "catalog has no mortgage category");
-  const target = mortgageCategory.launch_target;
-  assert.ok(target?.label, "the mortgage category records no launch target");
-  const home = read("index.html");
-  const page = read("mortgage/index.html");
-  assert.ok(home.includes(target.label), `the homepage door does not carry the catalog's launch label ${target.label}`);
-  assert.ok(page.includes(target.label), "the mortgage page does not carry the catalog's launch label");
-  /* A date that appears in two places and is edited in one is the failure this guards. */
-  const otherMonths = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "November", "December"]
-    .filter((month) => !target.label.startsWith(month));
-  for (const month of otherMonths) {
-    assert.ok(!page.includes(`Launching ${month}`), `the mortgage page names a second launch month: ${month}`);
-  }
-});
-
-test("the mortgage page offers training discovery but claims no approval or credit enrollment", () => {
-  const page = read("mortgage/index.html");
-  const courses = (mortgageCategory.programs ?? []).flatMap((program) => program.courses ?? []);
-  if (courses.length === 0) {
-    assert.match(page, /StateCourse does not offer mortgage continuing education in any jurisdiction yet/);
-  }
-  assert.match(page, /holds no NMLS provider approval and no NMLS course approval/);
-  /* The launch date is a build target. It must never be worded as a regulatory date. */
-  assert.ok(!/approved (in|from|by) October/i.test(page), "the page implies approval arrives on the launch date");
-  assert.match(page, /not an approval date/);
-  assert.match(page, /Sign in to view free training/);
-  assert.match(page, /Course training completed/);
-  assert.match(page, /not NMLS credit earned/);
-  assert.doesNotMatch(page, /free-practice\/\?state=US|null-hour|null hours/);
+test("mortgage practice is explicitly non-credit without advertising licensing approval",()=>{
+ const page=read('mortgage/index.html');assert.match(page,/does not earn NMLS credit/);
+ assert.match(page,/Pre-licensing \(PE\).*continuing education \(CE\)/);
+ assert.match(page,/before any credit enrollment or payment/);
+ assert.doesNotMatch(page,/holds no NMLS provider approval|approved (in|from|by) October|free-practice\/\?state=US|null-hour|null hours/i);
 });
 
 /**

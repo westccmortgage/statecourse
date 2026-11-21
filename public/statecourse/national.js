@@ -153,7 +153,7 @@ function initializeIntroVideo() {
   document.querySelectorAll("[data-video-cta]").forEach((link) => link.addEventListener("click",(event) => {
     const action = link.dataset.videoCta;
     trackMarketingVideo(action === "choose-state" ? "choose_state_after_video" : "explore_requirements_after_video");
-    if (action === "choose-state") {
+    if (action === "choose-state" && finder && stateSelect) {
       event.preventDefault();
       finder.scrollIntoView({ behavior:window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth",block:"center" });
       window.setTimeout(() => stateSelect.focus(),300);
@@ -175,6 +175,7 @@ function updateGoalOptions(intent) {
 }
 
 async function loadStates() {
+  if (!stateSelect) return;
   try {
     const [registryResponse, catalogResponse] = await Promise.all([
       fetch(new URL("data/state-registry.json", platformRoot)),

@@ -33,6 +33,17 @@ function deriveReturnPath() {
 }
 
 const returnTo = deriveReturnPath();
+const pathSummary=document.querySelector('#registerPathSummary');
+if(pathSummary&&returnTo.startsWith('/student/start/?')){
+  const selection=new URL(returnTo,'https://statecourse.com').searchParams;
+  const vertical=selection.get('vertical')==='mortgage'?'Mortgage / NMLS':'Real Estate';
+  const goal={practice:'Free Practice',licensed:'Get Licensed',renew:'Renew My License / CE'}[selection.get('goal')];
+  if(goal)pathSummary.textContent=`${vertical} · ${goal} · ${selection.get('state')||''}`;
+  const renewalPlan=document.querySelector('#renewalRegistrationPlan');
+  const renewal=selection.get('vertical')==='mortgage'&&selection.get('goal')==='renew';
+  if(renewalPlan)renewalPlan.hidden=!renewal;
+  if(renewal)document.querySelector('#registrationBenefit').textContent='Your StateCourse account for mortgage continuing education and license renewal.';
+}
 const courseId = String(params.get("course") || "").replace(/[^a-z0-9-]/gi, "").slice(0, 100);
 const signInUrl = `../sign-in/?return_to=${encodeURIComponent(returnTo)}`;
 signInLinks.forEach((link) => { link.href = signInUrl; });
@@ -85,10 +96,10 @@ function updatePasswordStrength() {
     text = `${10 - length} more character${10 - length === 1 ? "" : "s"} needed`;
   } else if (length >= 10 && length < 14) {
     level = 2;
-    text = "Requirement met";
+    text = "Length requirement met";
   } else if (length >= 14) {
     level = 3;
-    text = "Strong length";
+    text = "Length requirement met";
   }
   bar.dataset.level = String(level);
   label.dataset.level = String(level);
@@ -142,11 +153,12 @@ form.addEventListener("submit", async (event) => {
         lastName: fields.lastName.value.trim(),
         email: fields.email.value.trim(),
         password: fields.password.value,
-        courseId
+        courseId,
+        returnTo
       })
     });
     const data = await response.json().catch(() => ({}));
-    if (!response.ok) throw new Error(data.error || "registration_failed");
+    if (!response.ok) throw Object.assign(new Error(data.error || "registration_failed"),{status:response.status});
     fields.password.value = "";
     fields.passwordConfirm.value = "";
     if (!data.confirmationRequired) {
@@ -161,10 +173,13 @@ form.addEventListener("submit", async (event) => {
     primarySignIn.textContent = "Continue to Student Sign In";
     primarySignIn.focus();
   } catch (error) {
-    console.error(error);
-    message.textContent = error.message === "invalid_registration"
-      ? "Review the highlighted information and try again."
-      : "We could not create your account. If this email is already registered, sign in instead.";
+    message.textContent = error.message === 'weak_password'
+      ? 'This password was rejected by the security check. Choose a different, unique password.'
+      : error.message === 'invalid_registration' ? 'Review the highlighted information and try again.'
+      : error.status === 429 ? 'Too many attempts. Please wait a few minutes and try again.'
+      : error.status >= 500 ? 'Account creation is temporarily unavailable. Please try again shortly or contact support@statecourse.com.'
+      : !error.status ? 'We could not connect. Check your connection and try again.'
+      : 'We could not create your account. Check the information or contact support@statecourse.com.';
     message.classList.add("error");
     submitButton.disabled = false;
     submitButton.textContent = "Create My Account";

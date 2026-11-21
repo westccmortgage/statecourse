@@ -7,7 +7,6 @@ import { fileURLToPath } from "node:url";
 import { deriveJurisdictionRecord, JURISDICTION_APPROVAL_LABELS } from "../config/jurisdiction-record.mjs";
 import { PROVIDER_FACTS, VERIFICATION_PROCEDURES } from "../config/approval-verification.mjs";
 import { PUBLIC_PRICES, NMLS_PRICE } from "../config/public-prices.mjs";
-import { NMLS_TRAINING_COURSE } from "../config/nmls-course-identity.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const publicRoot = path.join(root, "public/statecourse");
@@ -73,17 +72,13 @@ const relativeRoute = (prefix, route) => `${prefix}${String(route).replace(/^\//
 
 function header(prefix, active = "") {
   const nav = [
-    ["Get Licensed", "get-licensed/", "licensed"],
-    ["Exam Prep", "exam-prep/", "exam"],
-    ["Renew / CE", "continuing-education/", "renew"],
+    ["Real Estate", "get-licensed/", "licensed"],
     ["Mortgage / NMLS", "mortgage/", "mortgage"],
-    ["State Requirements", "state-requirements/", "requirements"],
     ["Resources", "resources/", "resources"],
-    ["Pricing", "pricing/", "pricing"],
-    ["Blog", "blog/", "blog"],
+    ["About", "about/", "about"],
   ];
   const links = nav.map(([label, href, key]) => `<a href="${prefix}${href}"${active === key ? ' aria-current="page"' : ""}>${label}</a>`).join("");
-  return `<a class="skip-link" href="#main-content">Skip to main content</a><header class="national-header"><div class="header-shell"><a class="national-brand" href="${prefix}" aria-label="StateCourse home"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 44 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M22 2 40 8v14c0 12-7.5 20-18 24C11.5 42 4 34 4 22V8Z"/><g stroke-width="1.6" stroke-linecap="round"><path d="M13 16.5h18M14.5 15 22 10.5 29.5 15M15.5 19v11M22 19v11M28.5 19v11M13 32.5h18"/></g></svg></span><span><strong>StateCourse</strong><small>National Academy</small></span></a><nav class="desktop-nav" aria-label="Primary navigation">${links}</nav><div class="header-actions"><a class="account-link" href="${studentRegisterUrl}">Create Account</a><a class="account-link" href="${studentPortalUrl}">My Courses</a><a class="state-button" href="${prefix}get-licensed/">Choose Your State</a></div><details class="mobile-menu"><summary aria-label="Open navigation">Menu</summary><nav>${links}<a href="${studentRegisterUrl}">Create Account</a><a href="${studentPortalUrl}">My Courses</a></nav></details></div></header>`;
+  return `<a class="skip-link" href="#main-content">Skip to main content</a><header class="national-header"><div class="header-shell"><a class="national-brand" href="${prefix}" aria-label="StateCourse home"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 44 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M22 2 40 8v14c0 12-7.5 20-18 24C11.5 42 4 34 4 22V8Z"/><g stroke-width="1.6" stroke-linecap="round"><path d="M13 16.5h18M14.5 15 22 10.5 29.5 15M15.5 19v11M22 19v11M28.5 19v11M13 32.5h18"/></g></svg></span><span><strong>StateCourse</strong><small>National Academy</small></span></a><nav class="desktop-nav" aria-label="Primary navigation">${links}</nav><div class="header-actions"><a class="account-link" href="${studentPortalUrl}">My Courses</a><a class="state-button" href="${prefix}student/start/?vertical=${active === "mortgage" ? "mortgage" : "real-estate"}&amp;goal=practice">Start Free Practice</a></div><details class="mobile-menu"><summary aria-label="Open navigation">Menu</summary><nav>${links}<a href="${studentRegisterUrl}">Create Account</a><a href="${studentPortalUrl}">My Courses</a></nav></details></div></header>`;
 }
 
 function footer(prefix) {
@@ -91,7 +86,7 @@ function footer(prefix) {
 }
 
 function document({ title, description, prefix = "../", active = "", body, scripts = "" }) {
-  return `<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><meta name="description" content="${esc(description)}"/><meta name="theme-color" content="#08102b"/><title>${esc(title)} | StateCourse</title><link rel="icon" href="${prefix}favicon.svg" type="image/svg+xml"/><link rel="stylesheet" href="${prefix}national.css?v=20260911-verticals"/></head><body>${header(prefix, active)}<main id="main-content">${body}</main>${footer(prefix)}${scripts}</body></html>`;
+  return `<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><meta name="description" content="${esc(description)}"/><meta name="theme-color" content="#08102b"/><title>${esc(title)} | StateCourse</title><link rel="icon" href="${prefix}favicon.svg" type="image/svg+xml"/><link rel="stylesheet" href="${prefix}national.css?v=20260911-verticals"/><link rel="stylesheet" href="${prefix}course-entry.css?v=20261121"/></head><body>${header(prefix, active)}<main id="main-content">${body}</main>${footer(prefix)}${scripts}</body></html>`;
 }
 
 function pageHero(overline, title, lede, state = false) {
@@ -125,7 +120,7 @@ const freePracticeBody = `${pageHero("Free practice", "Practice with real StateC
     <article class="practice-reader">
       <p class="overline" id="practiceStateLabel">Free lesson and formative practice</p>
       <h2 id="practiceCourseTitle">Choose a state to open its practice lesson.</h2>
-      <p class="practice-message" id="practiceMessage" role="status">No account or payment is required.</p>
+      <p class="practice-message" id="practiceMessage" role="status">Use your free StateCourse account. No payment is required.</p>
       <nav class="practice-section-nav" id="practiceSectionNav" aria-label="Practice lesson sections" hidden>
         <button id="practicePrevious" type="button">← Previous</button>
         <span id="practiceSectionLabel"></span>
@@ -140,10 +135,15 @@ const freePracticeBody = `${pageHero("Free practice", "Practice with real StateC
     </article>
   </div>
 </section>`;
-write("free-practice/index.html", document({ title: "Free Real Estate Practice", description: "Free StateCourse lesson and formative-practice previews for states currently in development.", body: freePracticeBody, scripts: '<link rel="stylesheet" href="../practice-locale.css?v=20261114-es2"><script type="module" src="../free-practice.js?v=20261114-es"></script>' }));
+write("free-practice/index.html", document({ title: "Free Real Estate Practice", description: "Free StateCourse lesson and formative-practice previews for states currently in development.", body: freePracticeBody, scripts: '<link rel="stylesheet" href="../practice-locale.css?v=20261114-es2"><script type="module" src="../free-practice.js?v=20261121-entry"></script>' }));
 
-const getLicensedBody = `${pageHero("Get Licensed", "Build your state licensing path.", "Start with your jurisdiction and license goal. StateCourse will show verified requirements, available education, examinations, application milestones, and the next action.")}<section class="page-body"><div style="max-width:820px;margin:auto">${finderForm()}</div><div class="content-grid" style="margin-top:55px"><article class="content-card"><p class="overline">Step 1</p><h2>Choose your state</h2><p>Licensing titles, required education, regulators, exams, and application procedures are jurisdiction-specific.</p><a href="../state-requirements/">Compare requirements →</a></article><article class="content-card"><p class="overline">Step 2</p><h2>Review your path</h2><p>See education, examination, application, background-check, and renewal information before choosing a product.</p><a href="../courses/">View current programs →</a></article><article class="content-card"><p class="overline">Step 3</p><h2>Enroll only when approved</h2><p>Regulated course enrollment stays disabled until the exact approval record and required disclosures are active.</p><a href="${studentPortalUrl}">Returning student sign in →</a></article></div></section>`;
-write("get-licensed/index.html", document({ title: "Get Licensed", description: "Build a state-specific real estate licensing path.", active: "licensed", body: getLicensedBody, scripts: '<script src="../national.js?v=20260906-state-status" defer></script>' }));
+function entryLanding(vertical, details) {
+ const mortgage=vertical==='mortgage',name=mortgage?'Mortgage / NMLS':'Real Estate';
+ const choices=[['practice','Free Practice','Try real lessons and practice questions.','Start Free Practice','Non-credit practice'],['licensed','Get Licensed',mortgage?'Plan your first mortgage loan originator license.':'Plan your first real estate license.','Explore Pre-Licensing','Your first license'],['renew','Renew My License / CE','Find your next continuing education step.','Explore Continuing Education','License renewal']];
+ return `<section class="entry-hero"><p class="overline">${name}</p><h1>Choose your path.<br/>Start with free practice.</h1><p>One free account. Real lessons, practice questions, and your next learning step.</p></section><section class="entry-actions" aria-label="Choose your learning goal">${choices.map(([goal,title,copy,cta,label])=>`<article class="entry-action"><small>${label}</small><h2>${title}</h2><p>${copy}</p><a class="cta-button" href="../student/start/?vertical=${vertical}&amp;goal=${goal}">${cta} →</a></article>`).join('')}</section><details class="entry-reassurance"><summary>Course details and state information</summary><div>${details}</div></details>`;
+}
+const getLicensedBody=entryLanding('real-estate',`<p>Choose your state within your selected learning path. Free practice is non-credit. Credit course availability and required disclosures are shown before enrollment or payment.</p><p><a href="../state-requirements/">Explore real estate state requirements →</a></p><div id="real-estate-state-finder">${finderForm()}</div>`);
+write("get-licensed/index.html",document({title:"Real Estate",description:"Start free real estate practice, plan your first license, or explore continuing education.",active:"licensed",body:getLicensedBody,scripts:'<script src="../national.js?v=20260906-state-status" defer></script>'}));
 
 const requirementRows = states.map((state) => `<tr data-state="${esc(`${state.state_name} ${state.state_code}`.toLowerCase())}" data-status="${esc(state.public_status)}" data-online="${state.asynchronous_online_allowed === true ? "yes" : state.asynchronous_online_allowed === false ? "no" : "pending"}"><td><a href="../real-estate/${slugify(state.state_name)}/">${esc(state.state_name)}</a><br/><small>${esc(state.state_code)}</small></td><td>${esc(state.regulator_name)}</td><td>${state.prelicense_hours ?? '<span class="empty-value">Pending verification</span>'}</td><td>${state.asynchronous_online_allowed === true ? "Yes — subject to approval" : state.asynchronous_online_allowed === false ? "No" : '<span class="empty-value">Pending verification</span>'}</td><td>${esc(state.final_exam_rules ?? "Pending official-source research")}</td><td><span class="status-text${state.public_status === "Approved" ? " status-approved" : ""}">${esc(state.public_status)}</span></td><td>${state.regulator_url ? officialRegulatorLinks(state) : '<span class="empty-value">Research pending</span>'}</td></tr>`).join("");
 const requirementsBody = `${pageHero("National regulatory directory", "State requirements, compared carefully.", "Search 50 states and Washington, D.C. Requirements are published only after official-source review and remain separate from StateCourse product approval status.")}<section class="page-body"><div class="page-tools"><label>Search state<input id="requirementsSearch" type="search" placeholder="State name or code"/></label><label>Status<select id="requirementsStatus"><option value="all">All statuses</option>${registry.statuses.map((status) => `<option>${esc(status)}</option>`).join("")}</select></label><label>Online education<select id="requirementsOnline"><option value="all">All</option><option value="yes">Allowed / approval-based</option><option value="pending">Pending verification</option><option value="no">Not allowed</option></select></label></div><p class="summary-line" id="requirementsSummary">${states.length} jurisdictions shown</p><div class="table-wrap"><table class="requirements-table"><thead><tr><th>State</th><th>Regulator</th><th>Pre-license hours</th><th>Online education</th><th>Final examination</th><th>StateCourse status</th><th>Official source</th></tr></thead><tbody id="requirementsRows">${requirementRows}</tbody></table></div><div class="source-box"><h2>Regulatory data rule</h2><p>Official regulators, statutes, regulations, forms, and regulator guidance control this database. “In Development” describes StateCourse work only; it does not mean a course is approved or available for enrollment.</p></div></section>`;
@@ -251,9 +251,9 @@ write("about/index.html", document({ title: "About", description: "StateCourse i
 
 const priceCards = PUBLIC_PRICES.map((p) => `<article class="content-card price-card"><p class="overline">${esc(p.state)}</p><h2>$${p.price}</h2><p>${esc(p.course)} &middot; ${p.hours} hours</p><p class="price-status">Coming soon &middot; available after state approval</p></article>`).join("");
 const pricingBody = `${pageHero("Pricing", "One price per state. Everything required included.", "Each price covers the full pre-license education your state requires: every lesson, practice question and final examination. No upsell needed to finish.")}<section class="page-body">
-<div class="notice"><strong>Enrollment is not open yet.</strong> Prices apply once each state approves its course. Until then, every course with free practice can be tried without an account or payment.</div>
+<div class="notice"><strong>Enrollment is not open yet.</strong> Prices apply once each state approves its course. Until then, every course with free practice can be tried with a free account and no payment.</div>
 <div class="content-grid price-grid">${priceCards}<article class="content-card price-card"><p class="overline">Mortgage / NMLS</p><h2>$${NMLS_PRICE.price}<small> + NMLS fee</small></h2><p>${esc(NMLS_PRICE.course)} &middot; ${NMLS_PRICE.hours} hours</p><p class="price-status">Coming soon &middot; awaiting approval</p></article></div>
-<div class="source-box"><h2>Try it before you pay</h2><p>Read real StateCourse lessons and answer practice questions with explanations in 14 states. No account, no payment. Practice is non-credit.</p><p><a href="../free-practice/">Start free practice &rarr;</a> · <a lang="es" href="../free-practice/?lang=es">Práctica en español &rarr;</a></p><p>Questions about pricing: <a href="tel:+13106865053">310-686-5053</a> &middot; <a href="mailto:support@statecourse.com">support@statecourse.com</a></p></div>
+<div class="source-box"><h2>Try it before you pay</h2><p>Read real StateCourse lessons and answer practice questions with explanations in 14 states. Create your free account. No payment. Practice is non-credit.</p><p><a href="../free-practice/">Start free practice &rarr;</a> · <a lang="es" href="../free-practice/?lang=es">Práctica en español &rarr;</a></p><p>Questions about pricing: <a href="tel:+13106865053">310-686-5053</a> &middot; <a href="mailto:support@statecourse.com">support@statecourse.com</a></p></div>
 </section>`;
 write("pricing/index.html", document({ title: "Pricing", description: "StateCourse real estate pre-license course prices by state and NMLS continuing education pricing.", active: "pricing", body: pricingBody }));
 
@@ -324,64 +324,11 @@ for (const area of serviceAreas) {
   write(`${area.route}/index.html`, document({ title: area.overline, description: area.lede, active: area.active, body, scripts: '<script src="../service-area.js?v=20260907-practice-repair" defer></script>' }));
 }
 
-/* ── Mortgage / NMLS vertical ────────────────────────────────────────────────────────────────
- *
- * WHY THIS IS A SEPARATE DOOR AND NOT A CARD ON THE RENEW/CE PAGE. Mortgage loan originator
- * education is a different regulatory system from real estate licensing: a different licence, a
- * different regulator in most states, and course approval that runs through NMLS rather than
- * through the state real estate commission. A visitor who needs mortgage CE and lands in the real
- * estate funnel is not slightly misrouted; they are being shown the wrong regulator entirely.
- *
- * WHY THERE IS NO JURISDICTION SELECTOR HERE. The selector on exam-prep and continuing-education is
- * driven by service-area.js, which prints the row from data/state-registry.json — and every row in
- * that registry is a REAL ESTATE regulator. Pointing it at a mortgage question would answer with the
- * wrong agency in all 51 rows. A selector is added here only once a mortgage registry exists.
- *
- * The national training course now has recovered, source-linked manuscripts.
- * Its provisional design minutes are not advertised as approved hours or as
- * fulfillment of every state's renewal requirements.
- *
- * THE LAUNCH DATE IS DATA, NOT COPY. It comes from the mortgage category's launch_target in
- * data/course-catalog.json so that it is changed in one place. It is a build-schedule target and is
- * labelled as one; it is never presented as an approval date. */
-const mortgageCategory = catalog.categories.find((entry) => entry.category_id === "mortgage");
-const mortgageCourses = (mortgageCategory?.programs ?? []).flatMap((program) => program.courses ?? []);
-const mortgageRecord = deriveJurisdictionRecord(mortgageCourses);
-const mortgageTarget = mortgageCategory?.launch_target ?? null;
-const mortgageAvailability = !mortgageRecord.hasCourseRecord
-  ? `StateCourse does not offer mortgage continuing education in any jurisdiction yet. No course record exists, so nothing on this page is an offer, and no enrollment, credit, or certificate is available here.${mortgageTarget ? ` The build is scheduled to complete in ${esc(mortgageTarget.label)}; that is a StateCourse target, not an approval date.` : ""}`
-  : mortgageRecord.enrollmentOpen
-    ? `StateCourse mortgage continuing education is open only where an approval record and an enabled enrollment are both recorded: ${mortgageRecord.approvedCourses.filter((entry) => entry.enrollmentEnabled).map((entry) => esc(entry.courseTitle)).join(", ")}.`
-    : `StateCourse has a national mortgage curriculum for training only. Free training availability is checked against the current course decision when you sign in. It is not approved NMLS continuing education, and it awards no licensing credit, certificate or completion reporting.${mortgageTarget ? ` ${esc(mortgageTarget.label)} remains a build target, not an approval date.` : ""}`;
-
-const mortgageCards = [
-  ["National mortgage training", "Study federal mortgage laws, ethics, nontraditional lending and mortgage-file integrity. State-specific CE supplements are not included in this national training curriculum.", "../student/free-training/", "Open free training →"],
-  ["Approval runs through NMLS", "A mortgage continuing-education course carries its own NMLS course approval, and the provider carries its own approval as well. No real estate approval StateCourse holds or seeks extends to a mortgage course.", "../approvals/", "Check StateCourse approval records →"],
-  ["Separate from real estate", "Real estate pre-license education, exam preparation, and real estate renewal stay on their own pages. Nothing here counts toward a real estate licence, and nothing there counts toward a mortgage licence.", "../get-licensed/", "Go to real estate licensing →"],
-].map(([heading, copy, href, label], index) => `<article class="content-card"><p class="overline">${String(index + 1).padStart(2, "0")}</p><h2>${esc(heading)}</h2><p>${esc(copy)}</p>${href ? `<a href="${href}">${esc(label)}</a>` : ""}</article>`).join("");
-
-const mortgageStatusRow = mortgageTarget
-  ? `<div><dt>Build target</dt><dd>${esc(mortgageTarget.label)}</dd></div>`
-  : "";
-
-const mortgageBody = `${pageHero("Mortgage / NMLS", "Mortgage education and practice.", "Explore the national mortgage curriculum in training-only mode. Mortgage education has its own regulatory and approval system, separate from real estate licensing.")}<section class="page-body" data-service="mortgage">
-    <div class="notice"><strong>Availability:</strong> ${mortgageAvailability}</div>
-    <div class="state-summary">
-      <aside class="state-record"><p class="overline">Program record</p><dl><div><dt>Program</dt><dd>National mortgage training</dd></div><div><dt>Approval route</dt><dd>Separate NMLS provider and course approvals</dd></div><div><dt>Course records</dt><dd>${mortgageCourses.length === 0 ? "None yet" : String(mortgageCourses.length)}</dd></div><div><dt>Approval held</dt><dd>${esc(JURISDICTION_APPROVAL_LABELS[mortgageRecord.approvalState] ?? mortgageRecord.approvalState)}</dd></div><div><dt>Free training</dt><dd>Current availability shown in the free practice section of your account</dd></div><div><dt>Credit enrollment</dt><dd>${esc(mortgageRecord.enrollmentLine)}</dd></div>${mortgageStatusRow}</dl></aside>
-      <div>
-        <p class="overline">Training only · no payment</p>
-        <h2>${esc(NMLS_TRAINING_COURSE.title)}</h2>
-        <p>Read the lessons, work through guided decisions and module quizzes, and continue from saved progress in your StateCourse account. The curriculum is designed as national content; it does not replace required state-specific education.</p>
-        <p>Training completion is recorded only as <strong>Course training completed</strong>. It is not NMLS credit earned. No tuition is charged for free training, and no Stripe checkout is required.</p>
-        <p><a class="primary-button" href="../student/free-training/">Sign in to view free training →</a> <a href="../student/register/?return_to=%2Fstudent%2Ffree-training%2F">Create an account</a></p>
-        <p class="cta-note">Version ${esc(NMLS_TRAINING_COURSE.version)} · ${esc(NMLS_TRAINING_COURSE.id)}. Access may be closed or withdrawn by the current course decision.</p>
-        <p class="cta-note">Reading this page does not create an account, an enrollment, study time, or regulatory credit.</p>
-      </div>
-    </div>
-    <div class="content-grid" style="margin-top:34px">${mortgageCards}</div>
-    <div class="source-box"><h2>What this page does not claim</h2><p>StateCourse holds no NMLS provider approval and no NMLS course approval. This page publishes no continuing-education hour requirement, renewal deadline, or claim that this training satisfies a state's CE requirements. The course contains source-linked teaching materials, but approved course hours, independent subject-matter review and regulatory release are separate requirements. Nothing here substitutes for NMLS or for your state regulator's current instructions.</p></div>
-  </section>`;
-write("mortgage/index.html", document({ title: "Mortgage / NMLS", description: "National mortgage training with source-linked lessons and saved progress. Training only: no NMLS credit, certificate or payment.", active: "mortgage", body: mortgageBody }));
+// Mortgage state selection records learner intent only. State names do not
+// imply the real-estate regulator governs mortgage education. Availability is
+// checked by the existing authenticated course/configuration endpoints.
+const mortgageBody=entryLanding('mortgage',`<p>Free practice uses national mortgage lessons. It does not earn NMLS credit, licensing hours or a certificate and does not replace state-specific education.</p><p>Pre-licensing (PE) and continuing education (CE) are separate learning goals. The selected course's current availability is checked after sign-in and before any credit enrollment or payment.</p><p>Training completion is recorded only as Course training completed, not NMLS credit earned. This page publishes no continuing-education hour requirement or renewal deadline.</p><p><a href="../approvals/">View current approval records →</a></p>`);
+write("mortgage/index.html",document({title:"Mortgage / NMLS",description:"Start free mortgage practice, explore pre-licensing, or plan your continuing education.",active:"mortgage",body:mortgageBody}));
 
 write("my-statecourse/index.html", document({ title: "My StateCourse", description: "Return to your StateCourse licensing path and courses.", body: `${pageHero("Returning student", "Continue where you left off.", "Sign in to view active courses, progress, assessments, instructor support, payments, and certificates tied to your exact course version.")}<section class="page-body"><div class="content-grid"><article class="content-card"><p class="overline">My Licensing Path</p><h2>See the next required action</h2><p>Your education, exam preparation, application milestones, and renewal path remain organized in one account.</p><a href="${studentPortalUrl}">Student sign in →</a></article><article class="content-card"><p class="overline">My Courses</p><h2>Return to active education</h2><p>Continue only the courses connected to your verified enrollment record.</p><a href="${studentPortalUrl}">Open course dashboard →</a></article><article class="content-card"><p class="overline">Records</p><h2>Preserve completed education</h2><p>Eligible certificates always point to the exact approved course and version completed.</p><a href="${studentPortalUrl}">View my records →</a></article></div></section>` }));
 
@@ -438,7 +385,7 @@ for (const state of states) {
   const closingAction = practiceSample
     ? ctaPanel(
         "Continue with free practice.",
-        `Return to the ${esc(state.state_name)} sample lesson whenever you want. No account or payment is required.`,
+        `Return to the ${esc(state.state_name)} sample lesson whenever you want. Use your free StateCourse account. No payment is required.`,
         "Open Free Practice →",
         `${prefix}free-practice/?state=${encodeURIComponent(state.state_code)}`,
         "This public practice preview is separate from regulated enrollment and cannot award licensing credit.")
@@ -488,13 +435,13 @@ for (const course of catalogCourses) {
   const practiceUrl = `${prefix}free-practice/?state=${encodeURIComponent(course.state_id)}&amp;course=${encodeURIComponent(course.course_id)}`;
   const courseActions = isMichigan
     ? `<div class="content-grid">
-        <article class="content-card"><p class="overline">Free practice</p><h2>Open Michigan lessons and practice</h2><p>Read lessons and answer questions with explanations. Free practice, with no account or payment required.</p><a href="${practiceUrl}">Start Free Practice →</a><p><a lang="es" href="${practiceUrl}&amp;lang=es">Práctica en español →</a></p></article>
+        <article class="content-card"><p class="overline">Free practice</p><h2>Open Michigan lessons and practice</h2><p>Read lessons and answer questions with explanations. Free practice with your StateCourse account. No payment required.</p><a href="${practiceUrl}">Start Free Practice →</a><p><a lang="es" href="${practiceUrl}&amp;lang=es">Práctica en español →</a></p></article>
         <article class="content-card"><p class="overline">Regulatory status</p><h2>Review the no-approval record</h2><p>No account is needed. StateCourse publishes the current Michigan status and direct agency links without representing approval or availability.</p><a href="${prefix}approvals/">Review Approval Status →</a></article>
         <article class="content-card"><p class="overline">Course review</p><h2>Review the proposed course record</h2><p>Inspect the instructional organization without creating progress, payment, enrollment, or regulatory credit.</p><a href="${prefix}courses/">Return to Course Catalog →</a></article>
         <article class="content-card"><p class="overline">Official sources</p><h2>Verify the Michigan path</h2><p>Compare the current education requirements and regulator identities before relying on any school claim.</p><a href="${prefix}state-requirements/">Review State Requirements →</a></article>
       </div>`
     : `<div class="content-grid">
-        <article class="content-card"><p class="overline">Free practice</p><h2>Open lessons and practice</h2><p>Read lessons and answer questions with explanations. Free practice, with no account or payment required.</p><a href="${practiceUrl}">Start Free Practice →</a><p><a lang="es" href="${practiceUrl}&amp;lang=es">Práctica en español →</a></p></article>
+        <article class="content-card"><p class="overline">Free practice</p><h2>Open lessons and practice</h2><p>Read lessons and answer questions with explanations. Free practice with your StateCourse account. No payment required.</p><a href="${practiceUrl}">Start Free Practice →</a><p><a lang="es" href="${practiceUrl}&amp;lang=es">Práctica en español →</a></p></article>
         <article class="content-card"><p class="overline">Course review</p><h2>Inspect the course structure</h2><p>Review instructional organization without creating progress or regulatory credit.</p>${preview || `<a href="${prefix}courses/">Return to Course Catalog →</a>`}</article>
         <article class="content-card"><p class="overline">Returning student</p><h2>Resume from your cabinet</h2><p>Sign in to view your purchased courses, progress and records. Free training is kept in a separate free practice section of your account.</p><a href="${studentPortalUrl}?return_to=${encodeURIComponent("/student/")}">Student Sign In →</a></article>
       </div>`;

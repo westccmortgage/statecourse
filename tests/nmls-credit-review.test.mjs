@@ -109,8 +109,8 @@ test('My StateCourse lists no free training; the free section is labelled and li
   const generator = read('scripts/generate-national-platform.mjs');
   assert.match(generator, /mortgage[\s\S]*href="\.\.\/student\/free-training\/"/);
   assert.match(generator, /Practice-only access[\s\S]{0,400}href="\.\.\/student\/free-training\/"/);
-  // Public statements and payment stay as they were.
-  assert.match(generator, /It is not approved NMLS continuing education/);
+  // The new entry cards preserve the non-credit practice boundary.
+  assert.match(generator, /Free practice uses national mortgage lessons\. It does not earn NMLS credit/);
 });
 
 test('profile forms: desktop rows are pinned and the mobile rule is unchanged', () => {

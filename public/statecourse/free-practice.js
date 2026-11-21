@@ -85,7 +85,7 @@ async function openCourse(id,requestedLesson=null,requestedMode=null){
   content.replaceChildren();quiz.replaceChildren();activitiesView.replaceChildren();$('practiceProgress').textContent='';
   $('practiceStateLabel').textContent=sample.state_name+' · In development · Free practice';$('practiceCourseTitle').textContent=sample.course_title;
   message.textContent='Loading course…';
-  $('practiceRecord').innerHTML='<div><dt>Access</dt><dd>Free · no account required</dd></div><div><dt>Material</dt><dd>'+sample.lesson_count+' lessons · '+sample.question_count+' questions</dd></div><div><dt>Credit</dt><dd>None — practice only</dd></div>';
+  $('practiceRecord').innerHTML='<div><dt>Access</dt><dd>Free practice · your StateCourse account</dd></div><div><dt>Material</dt><dd>'+sample.lesson_count+' lessons · '+sample.question_count+' questions</dd></div><div><dt>Credit</dt><dd>None — practice only</dd></div>';
   $('practiceStatePath').href=new URL('real-estate/'+sample.state_name.toLowerCase().replace(/[^a-z0-9]+/g,'-')+'/',base);$('practiceStatePath').hidden=false;
   try{
     const courseUrl=new URL(sample.practice_url,base);courseUrl.searchParams.set('v',sample.revision);
@@ -135,6 +135,9 @@ async function restoreUrl(){const p=new URL(location.href).searchParams,byCourse
 window.addEventListener('popstate',restoreUrl);
 async function load(){
   try{
+    const session=await fetch('/api/student/session',{credentials:'same-origin'});
+    if(session.status===401){location.replace('/student/register/?return_to='+encodeURIComponent(location.pathname+location.search));return;}
+    if(!session.ok)throw Error('Sign-in unavailable');
     const response=await fetch(new URL('data/free-practice-catalog.json',base),{cache:'no-store'});if(!response.ok)throw Error('Catalog unavailable');
     ({samples}=await response.json());const states=[...new Map(samples.map(s=>[s.state_code,s])).values()].sort((a,b)=>a.state_name.localeCompare(b.state_name));
     stateSelect.options[0].disabled=true;

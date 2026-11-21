@@ -74,4 +74,16 @@ export async function readStudentNmlsProfile(studentId) {
   return nmlsIdProfileState(rows?.[0]?.nmls_id ?? null);
 }
 
+// Real mortgage CE checkout uses the session-bound profile, never an identifier
+// supplied in a checkout request. Practice and real-estate products are separate.
+// This does not enable a product or establish that the number belongs to its user.
+export async function requireCourseNmlsId(course, studentId) {
+  if (course?.productType !== 'mortgage_continuing_education') return null;
+  const profile = await readStudentNmlsProfile(studentId);
+  if (!profile.present || !readStudentNmlsId(profile.value).ok) {
+    throw Object.assign(new Error('nmls_id_required'), { statusCode:409 });
+  }
+  return profile.value;
+}
+
 export { NMLS_ID_REJECTIONS };

@@ -5,12 +5,13 @@ import test from "node:test";
 
 const read = (path,encoding="utf8") => readFile(new URL(`../${path}`,import.meta.url),encoding);
 
-test("homepage keeps the licensing finder ahead of the introduction video",async()=>{
+test("homepage keeps the two direction choices ahead of the introduction video",async()=>{
   const html=await read("public/statecourse/index.html");
-  assert.ok(html.indexOf('id="licensing-finder"') < html.indexOf('id="statecourse-introduction"'));
+  assert.ok(html.indexOf('id="choose-path"') < html.indexOf('id="statecourse-introduction"'));
   assert.match(html,/Real Estate Licensing,/);
   assert.match(html,/Choose Your State/);
-  assert.match(html,/View My Licensing Path/);
+  assert.match(html,/Explore Real Estate/);
+  assert.doesNotMatch(html,/id="homeStateSelect"/);
   assert.match(html,/preload="none"/);
   assert.match(html,/playsinline/);
   assert.doesNotMatch(html,/<video[^>]+\ssrc=/);

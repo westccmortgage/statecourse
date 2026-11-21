@@ -1,4 +1,6 @@
 import { dbRequest } from "./db.mjs";
+import { entryFromReturnPath,entryPath } from '../../../public/statecourse/course-entry-context.mjs';
+import { saveCourseInterest } from './course-interest.mjs';
 
 const ACCESS_COOKIE = "__Host-sc_access";
 const REFRESH_COOKIE = "__Host-sc_refresh";
@@ -38,6 +40,9 @@ export async function authRequest(path, { method="GET", token, body }={}) {
   });
   const data = await response.json().catch(() => ({}));
   if (!response.ok) {
+    if (data.code === 'weak_password' || data.error_code === 'weak_password') {
+      throw Object.assign(new Error('weak_password'), { statusCode:422 });
+    }
     if (data.code === "invalid_credentials" || data.error_code === "invalid_credentials") {
       throw Object.assign(new Error("invalid_credentials"), { statusCode: 401 });
     }
@@ -79,11 +84,15 @@ export async function registerStudent(input = {}) {
   const firstName = String(input.firstName || "").trim().slice(0,100);
   const lastName = String(input.lastName || "").trim().slice(0,100);
   const intendedCourse = String(input.courseId || "").trim().slice(0,100);
+  const learningPath=entryFromReturnPath(input.returnTo);
+  const practiceReturn=typeof input.returnTo==='string'&&/^\/free-practice\/(?:\?|$)/.test(input.returnTo)&&!/[\\\u0000-\u001f]/.test(input.returnTo)?input.returnTo.slice(0,1500):null;
   if (!EMAIL.test(email) || password.length < 10 || password.length > 200 || !firstName || !lastName) {
     throw Object.assign(new Error("invalid_registration"), { statusCode: 400 });
   }
   const origin = String(process.env.STATECOURSE_BASE_URL || "").replace(/\/$/,"");
-  const redirect = origin.startsWith("https://") ? `?redirect_to=${encodeURIComponent(`${origin}/student/sign-in/`)}` : "";
+  const continuation=learningPath?entryPath(learningPath):practiceReturn;
+  const confirmationPath='/student/sign-in/'+(continuation?'?return_to='+encodeURIComponent(continuation):'');
+  const redirect = origin.startsWith("https://") ? `?redirect_to=${encodeURIComponent(origin+confirmationPath)}` : "";
   const result = await authRequest(`signup${redirect}`, {
     method:"POST",
     body:{
@@ -92,7 +101,8 @@ export async function registerStudent(input = {}) {
       data:{
         first_name:firstName,
         last_name:lastName,
-        intended_course:intendedCourse || null
+        intended_course:intendedCourse || null,
+        ...(learningPath?{learning_path:learningPath}:{})
       }
     }
   });
@@ -102,6 +112,9 @@ export async function registerStudent(input = {}) {
   const user = result.user?.id ? result.user : (result.id ? result : null);
   if (!user?.id) throw Object.assign(new Error("registration_unavailable"), { statusCode: 503 });
   const student = await syncStudent(user,{ signedIn:Boolean(result.access_token) });
+  // An Auth account may already exist if this non-credit preference write fails.
+  // Continue confirmation; /student/start/ retries before claiming anything saved.
+  if(learningPath)await saveCourseInterest(student.id,learningPath).catch(()=>null);
   return {
     student,
     session:result.access_token ? result : null,

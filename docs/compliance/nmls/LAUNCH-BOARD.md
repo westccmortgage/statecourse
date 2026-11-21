@@ -2,6 +2,92 @@
 
 # NMLS Launch Board
 
+## Course-entry publication authorized — 2026-11-21
+
+The owner explicitly authorized publishing the prepared homepage, vertical entry,
+registration/notification and Renewal/NMLS-ID changes to `https://statecourse.com`.
+Publication starts from the verified production main revision
+`ca139117e953b18a2bb6bdbc16e15761dc574a1e`, Netlify deploy
+`6b0136d8a66d1152a407f684`, site `b514a8f8-782b-448c-8881-a914ee42c69b`.
+The source changes are the reviewed `codex/course-entry-registration` work only.
+
+No SQL, secrets, payment/credit enablement, BSI activation or environment values
+are included in this publication. BioSig connection still awaits BSI's secrets
+expected 2026-11-23. This section records authorization, not deployment success;
+the following local-only sections describe prepublication verification. Production
+deploy identity and public navigation/auth refusals must be checked after publish.
+
+## Renewal registration and BioSig placement — 2026-11-21, local only
+
+Owner direction: require the learner's NMLS ID for real Renewal/CE registration;
+keep Free Practice separate. BSI secrets are expected Monday, 2026-11-23. None
+was entered, fetched, printed or sent, and no production setting or SQL changed.
+
+- The Mortgage Renewal signup page now explains: account confirmation, personal
+  NMLS ID and available CE enrollment, Rules of Conduct, BioSig-ID, first lesson.
+  The first BioSig step is within the course after ROC, not during free-account
+  creation. Existing Middle, Resuming and FinalExam checks are retained.
+- When a live, non-QA mortgage CE offer exists, the existing entry page requires
+  saving the NMLS ID through the authenticated profile endpoint before showing
+  its course-registration links. Checkout independently reads the authenticated
+  learner's stored ID before writing payment attempts or calling Stripe. Client
+  identifiers are not accepted as checkout authority. Saving a number is not
+  verification that it belongs to the learner.
+- Practice, availability notifications and account creation acquire no ID or
+  BioSig prerequisite. A real-estate renewal does not acquire an NMLS requirement.
+- **Activation remains incomplete.** The existing identity/course endpoints are
+  reviewer-only. Adding BSI secrets does not itself admit ordinary credit students,
+  supply course approval or enable CE commerce. Confirm migrations 030–033,
+  callback configuration, BSI activation and checkpoint/return behavior under
+  separate production authorization; regular credit-student admission and the
+  NMLS CE commerce path still need explicit implementation/acceptance before launch.
+- Verification: 149 targeted tests pass, plus 5 build privacy checks. One existing
+  migration-031 PGlite test is skipped because PGlite is unavailable; no SQL is
+  changed and no database acceptance is claimed. The actual signup page was
+  inspected in the managed desktop preview: the renewal sequence is visible for
+  Mortgage Renewal and absent for Free Practice. No account was submitted and
+  no BSI/network identity check was performed. Mobile and live end-to-end behavior
+  remain unverified.
+
+Primary sources read 2026-11-21:
+[BSI first-time enrollment](https://setup.biosig-id.com/portal/en/kb/articles/nmls-first-time-enrollment)
+and [NMLS Functional Specifications 5.6](https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/nmlsEdFuncSpec/education/funcSpec/maps/topics/nmlsFS_OSS_IDAuth.html).
+
+## Course entry and registration funnel — 2026-11-21, local only
+
+Branch `codex/course-entry-registration`, based on main `ca139117`. Built locally;
+not pushed, merged, deployed, or verified against production. No SQL or hosted
+configuration changed. This does not close a regulatory or production launch gate.
+
+- Homepage has two destinations: Real Estate and Mortgage / NMLS. The real-estate
+  state finder is inside Real Estate. Each vertical presents Free Practice,
+  Get Licensed, and Renew My License / CE before supplementary course details.
+- State/vertical/goal survives signup, email-confirmation continuation and sign-in.
+  A session-bound endpoint records the choice in existing `licensing_navigator_state`.
+  Only an explicit Notify Me action records versioned availability-email consent.
+  This change records notification requests; no availability mailing was sent or
+  automatic mailing worker introduced.
+- Public real-estate practice now directs anonymous visitors through signup.
+  Mortgage practice uses existing governed, non-credit training enrollment, with
+  no NMLS-ID prerequisite. Unknown service availability produces a retry message.
+  Credit offers require matching state/goal and live, non-QA checkout eligibility;
+  server approval, payment, identity and credit controls remain authoritative.
+- Local verification: 190 targeted backend, interaction and regression tests pass,
+  plus the 5 build privacy checks. The build scanned 656 files and found no private
+  assessment leakage. Interaction tests use mocked Auth/database/enrollment transports.
+- Desktop visual review subsequently **PASSED for the observed screens** through
+  the supported managed preview: homepage with two destinations, both verticals
+  with three goal cards, the state-selection form, and registration showing the
+  selected Mortgage/CE/CA context. Screenshots were captured from the actual built
+  pages. No form was submitted and no production service was contacted.
+  Mobile/tablet layout, real confirmation email, authenticated enrollment and the
+  separate automated browser suite remain unverified. The earlier direct Chromium
+  launch and arbitrary-loopback attempts failed; the supported managed preview
+  resolves only the desktop visual-review blocker.
+
+Next: inspect mobile/tablet screens and execute authenticated acceptance in an
+approved environment; obtain owner approval before production publication.
+
 ## BioSig-ID: BSI's answers to the eleven questions — 2026-11-21
 
 Source: reply from BSI's Chief Technology Analyst, 2026-11-20 5:14 PM Pacific, read from

@@ -10,7 +10,7 @@ const passwordError = document.querySelector("#passwordError");
 function returnPath() {
   const value = new URLSearchParams(location.search).get("return_to") || "/student/";
   const safePath = value.startsWith("/") && !value.startsWith("//") && !value.includes("\\") ? value : "/student/";
-  const protectedContinuations = ["/student/", "/student-course.html", "/enroll/"];
+  const protectedContinuations = ["/student/", "/student-course.html", "/enroll/", "/free-practice/"];
   return protectedContinuations.some((prefix) => safePath.startsWith(prefix)) ? safePath : "/student/";
 }
 

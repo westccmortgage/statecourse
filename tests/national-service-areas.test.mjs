@@ -51,7 +51,9 @@ for (const area of areas) {
   });
 
   test(`${area.route} promises no product that does not exist`, () => {
-    const html = read(`${area.route}/index.html`);
+    // Shared navigation can offer general practice; this area's body must not
+    // present it as a continuing-education product.
+    const html = read(`${area.route}/index.html`).split('<main id="main-content">')[1].split('</main>')[0];
     const impossiblePromises = area.service === "exam"
       ? [/representative licensing-exam questions/i, /retrieve eligible completion certificates/i]
       : [/representative practice questions/i, /free practice/i, /try .{0,20}practice/i, /retrieve eligible completion certificates/i];
