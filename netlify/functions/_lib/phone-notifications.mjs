@@ -5,6 +5,7 @@ export const SCHOOL_NUMBER = '+17753736657';
 export const PHONE_FORM = 'statecourse-phone-calls';
 export const PHONE_FORM_URL = 'https://statecourse.com/phone-notification-form/';
 export const PHONE_RECIPIENT = 'info@statecourse.com';
+export const SCHOOL_MESSAGE_ID = 'aitem_7701m7zm1m6dedmtk070hh26mcqx';
 const MAX_BYTES = 1_048_576;
 const ID = /^[a-zA-Z0-9_-]{1,128}$/;
 const clean = (value, max = 8000) => typeof value === 'string' ? value.replaceAll('\0', '').slice(0, max) : '';
@@ -28,7 +29,12 @@ export function schoolCallFields(event) {
   // call is present, only this school's inbound line may produce a notification.
   if (phone && (phone.direction !== 'inbound' || phone.agent_number !== SCHOOL_NUMBER)) return null;
   const summary = clean(data.analysis?.transcript_summary, 12000);
-  const message = clean(data.analysis?.data_collection_results?.statecourse_school_message?.value, 16000);
+  const results = data.analysis?.data_collection_results;
+  const messageResult = results?.statecourse_school_message || results?.[SCHOOL_MESSAGE_ID]
+    || Object.values(results || {}).find(result => ['statecourse_school_message', SCHOOL_MESSAGE_ID].includes(result?.data_collection_id))
+    || (Array.isArray(data.analysis?.data_collection_results_list) ? data.analysis.data_collection_results_list : [])
+      .find(result => ['statecourse_school_message', SCHOOL_MESSAGE_ID].includes(result?.data_collection_id));
+  const message = clean(messageResult?.value, 16000);
   const transcript = (Array.isArray(data.transcript) ? data.transcript : [])
     .filter(turn => ['agent', 'user'].includes(turn?.role) && typeof turn.message === 'string')
     .map(turn => `${turn.role === 'user' ? 'Caller' : 'StateCourse'}: ${clean(turn.message, 12000)}`)

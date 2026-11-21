@@ -19,13 +19,13 @@ Forms dashboard; this is not a CRM or a regulatory student record.
 
 - Baseline: Netlify form detection disabled, no forms or submission notifications.
   It is now enabled. The `info@statecourse.com` recipient was confirmed using the
-  specific confirmation email in the connected school's inbox. Once the form is
-  detected on deploy, scope the notification to this form only.
+  specific confirmation email in the connected school's inbox. The detected form is
+  `statecourse-phone-calls`; the notification is scoped to this form only.
 - Prior per-agent post-call webhook: disabled school profile
   `97b2ce047f7e4d4a8b50bc3c67c5345e`. It must remain disabled.
 - New school-only webhook: `f19eeca2e9164a75ae03add71ee980d8`, label
   `StateCourse — email info@statecourse.com`, target `/api/phone/post-call`.
-  Only transcript events should be enabled; retries should be enabled. Other
+  Only transcript events are enabled; retries are enabled. Other
   agents and the shared workspace default remain unchanged.
 - New environment variable: `STATECOURSE_ELEVENLABS_WEBHOOK_SECRET`. Original:
   unset. Created as secret, Functions scope, Production context only. New value
@@ -38,7 +38,7 @@ Forms dashboard; this is not a CRM or a regulatory student record.
 
 ## Verification and limits
 
-- Local build and 13 targeted tests pass, including seven signed-webhook tests;
+- Local build and 14 targeted tests pass, including eight signed-webhook tests;
   five public-build privacy checks also pass. Tests cover signature tampering,
   stale/future signatures, other agents/numbers, outbound calls, oversized and
   malformed bodies, retryable submission errors and sequential duplicate events.
@@ -49,9 +49,9 @@ Forms dashboard; this is not a CRM or a regulatory student record.
   concurrent deliveries or a network failure after acceptance can still produce
   duplicate mail. Forms spam filtering can hold a legitimate message; verify
   submissions/inbox before claiming delivery.
-- Function deployment, form registration, agent assignment and end-to-end inbox
-  delivery must be checked before declaring this route live. A saved notification
-  or a successful HTTP response alone is not proof of email receipt.
+- Production deploy `6b01e7661d286bc840f71769` (commit `6faa684eee427f09fcc470e8fe652d389c77656b`) registered form `6b01e7996a70e9555d0d96bd`.
+- QA conversation `conv_2101m7zq6qccf2w9xf03nyebp6bz` ended at 10:51 Pacific. Delivery `48c8ba42bd904ad2bbab66b623c0440f` returned HTTP 200 at 10:52:04, one attempt, 1.30 seconds. Forms accepted one submission. Actual message `1a1ff73950d25e3b`, subject `StateCourse — phone assistant message`, arrived in the school INBOX at 10:52:06 Pacific, addressed to `info@statecourse.com`; transcript, summary, conversation ID and protected link matched. This was a web preview delivery check, not a new telephone call.
+- The first email contained the summary and full transcript but omitted the separate extracted-message field. Compatibility now accepts the configured analysis-item ID and the documented result-list shape as well as the older named field; targeted regression coverage was added. A fresh runtime check will verify the extraction after deploy.
 - No SQL, student Auth, course approval, payment or BioSig control is changed.
 
 Security review rejected broad environment-variable retrieval before any values

@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { createHmac } from 'node:crypto';
 import { readFileSync } from 'node:fs';
-import { createPhoneNotificationHandler, SCHOOL_AGENT, SCHOOL_NUMBER, PHONE_FORM, PHONE_RECIPIENT, schoolCallFields } from '../netlify/functions/_lib/phone-notifications.mjs';
+import { createPhoneNotificationHandler, SCHOOL_AGENT, SCHOOL_NUMBER, SCHOOL_MESSAGE_ID, PHONE_FORM, PHONE_RECIPIENT, schoolCallFields } from '../netlify/functions/_lib/phone-notifications.mjs';
 
 const secret = 'local-test-signing-secret';
 const clock = 1795285800000;
@@ -54,6 +54,17 @@ test('missing configuration, signatures, tampering, stale/future requests and ma
   const headers = signed.headers;
   assert.equal((await handler(new Request(signed.url, { method: 'POST', headers, body: JSON.stringify({ ...event(), extra: 'changed' }) }))).status, 401);
   assert.equal(sent.length, 0);
+});
+
+test('school contact extraction survives analysis-item IDs and result-list payloads without forwarding unrelated data points', () => {
+  for (const shape of ['id-map', 'result-list']) {
+    const value = event();
+    const result = { data_collection_id: SCHOOL_MESSAGE_ID, value: 'Name: internal QA; email: info@statecourse.com; no callback.' };
+    value.data.analysis.data_collection_results = shape === 'id-map' ? { [SCHOOL_MESSAGE_ID]: result } : {};
+    if (shape === 'result-list') value.data.analysis.data_collection_results_list = [result, { data_collection_id: 'unrelated', value: 'do not forward this field' }];
+    assert.match(schoolCallFields(value).message, /email: info@statecourse.com/);
+    assert.doesNotMatch(schoolCallFields(value).message, /do not forward/);
+  }
 });
 
 test('other agents, numbers, outbound calls and other event types cannot reach the school email', async () => {

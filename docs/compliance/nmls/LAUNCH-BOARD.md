@@ -2,12 +2,13 @@
 
 # NMLS Launch Board
 
-## School call email delivery requested — 2026-11-21
+## School call email delivery verified — 2026-11-21
 
 Owner requested all school assistant messages at `info@statecourse.com`, without
-CRM routing. A separate signed callback, school-only event checks, a Netlify Forms
-email route and tests are prepared; the recipient is confirmed. Production
-assignment and actual inbox delivery require the deployment/runtime checks in
+CRM routing. A separate signed callback, school-only event checks and a Netlify Forms
+email route are published. The confirmed school inbox received the actual test
+message at 10:52 Pacific; ElevenLabs recorded HTTP 200 and Forms accepted it.
+The greeting and public number label now use Virtual assistant. Evidence is in
 [the route record](../../student-portal/phone-email-routing.md). No course,
 credit, payment, student Auth or BioSig control changed.
 
