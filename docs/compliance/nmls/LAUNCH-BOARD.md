@@ -2,6 +2,35 @@
 
 # NMLS Launch Board
 
+## BioSig-ID: BSI's answers to the eleven questions — 2026-11-21
+
+Source: reply from BSI's Chief Technology Analyst, 2026-11-20 5:14 PM Pacific, read from
+an owner-supplied screenshot of the email. Branch `claude/inspiring-lamport-wjsuvn`, not
+deployed. Still switched off, still never connected. **This section supersedes the
+"`uid` is unresolved" and `BIOSIG_UID_MODE` statements in the section below.**
+
+| # | Question | BSI's answer | Effect here |
+| --- | --- | --- | --- |
+| 1 | `uid` | A real licensee is identified by their NMLS ID, a plain number. Test accounts must never use an identifier that could be a real ID, so they carry a prefix; alternatively the provider ID as a numeric prefix (`1405133000000001`). Use the same approach on sandbox. | Built: licensee -> NMLS ID; test account -> `StateCourse-001`, or `1405133000000001` with `BIOSIG_TEST_UID_FORMAT=provider_numeric`. `BIOSIG_UID_MODE` is removed. |
+| 2 | Reviewer accounts' `uid` | "NMLS will tell you, we don't control that." | **Open, with NMLS (SRR).** Until NMLS names them, reviewer accounts are treated as test accounts. Set `BIOSIG_REVIEWER_UIDS` when NMLS answers. |
+| 3 | `d2` | Any value works on sandbox; what matters is that we control it and it is valid for production. | `d2=109386` kept until NMLS assigns a course number. |
+| 4 | Checkpoint spacing; `Resuming` | Spacing "sounds about right", a rough indicator only. `Resuming` after logout or time-out. A return at a point that also needs Middle or FinalExam may be one combined stop, e.g. `Resuming-FinalExam`. Begin is always Begin. | Spacing unchanged (after modules 3 and 5 of 8). Combined names built; needs `database/033_nmls_identity_combined_checkpoints.sql` (**not applied**). |
+| 5 | Custom argument returned in callback | Confirmed, as documented. | No change. Whether the callback carries `ts` was not answered; it is checked when present. |
+| 6 | One callback address for sandbox and production | Yes; the interfaces are separate and may point to the same address. | `https://statecourse.com/api/biosig/callback` for both. |
+| 7 | `SSOInbound.aspx` vs `ssoinbound.aspx` | The server is case-insensitive. | Either works. |
+| 8 | Key size | 128 confirmed; larger sizes planned with a TLS 1.3 upgrade next year. | No change. |
+| 9 | Test vector | None available; the interface account does not exist yet. The NodeJS sample is fully functional. BSI asks for logging on our side and can supply detailed logs from theirs. | One diagnostic line per check started and per callback: outcome, checkpoint and our check ID. Never arguments, identifiers, email or key material. |
+| 10 | Callback source | Addresses are static today but not guaranteed. Staging is `sandbox.verifyexpress.com`, production `verifyexpress.com`. | Allow both through Cloudflare; do not rely on one fixed IP. |
+| 11 | Secrets before the meeting | No. | Shared code, key, salt and vector arrive at the meeting of 2026-11-23. Nothing can be tested against BSI before then. |
+
+**Open after this reply:** question 2 goes to NMLS, not BSI. Production launch address
+was not stated explicitly (the host is `verifyexpress.com`). No test vector exists, so the
+first real proof is the live connection test at the meeting.
+
+**Switch-on steps, current:** apply migrations 031, 032 and 033; set the BSI values and
+`BIOSIG_PARTNER` (or `BIOSIG_INBOUND_URL`) in Netlify; register the callback address with
+BSI; allow BSI's hosts through Cloudflare; set `NMLS_CREDIT_CHECKPOINTS=biosig`; redeploy.
+
 ## BioSig-ID: BSI's first answers applied — 2026-11-21
 
 Branch `claude/inspiring-lamport-wjsuvn`, not deployed. Still switched off, still never

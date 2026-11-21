@@ -2,7 +2,7 @@ import { requireStudentSession, sessionCookies } from './_lib/student-session.mj
 import { requireSameOrigin } from './_lib/http.mjs';
 import { dbRequest, rpc } from './_lib/db.mjs';
 import { reviewerOnlyRpc } from './_lib/nmls-credit-review.mjs';
-import { createChallengeStore, dueCheckpoint } from './_lib/biosig/checkpoints.mjs';
+import { checkpointD3, createChallengeStore, dueCheckpoint } from './_lib/biosig/checkpoints.mjs';
 import { buildNmlsArgumentString, requestBiosigRedirect } from './_lib/biosig/sso.mjs';
 import { resolveBiosigUid } from './_lib/biosig/identifier.mjs';
 import { biosigConfig } from '../../config/nmls/biosig.mjs';
@@ -27,7 +27,7 @@ export default async function handler(request: Request): Promise<Response> {
     if (!/^application\/json(?:\s*;\s*charset="?utf-8"?)?\s*$/i.test(request.headers.get('content-type') || '')) return reply(415, { error: 'json_required' });
     const text = await request.text();
     if (text.length > MAX_BYTES) return reply(413, { error: 'request_too_large' });
-    let input: { enrollmentId?: unknown };
+    let input: { enrollmentId?: unknown; inSession?: unknown };
     try { input = JSON.parse(text); } catch { return reply(400, { error: 'invalid_json' }); }
     if (!input || typeof input !== 'object' || !uuid(input.enrollmentId)) return reply(400, { error: 'enrollment_required' });
     const enrollmentId = String(input.enrollmentId).toLowerCase();
@@ -48,20 +48,26 @@ export default async function handler(request: Request): Promise<Response> {
     if (store.usable(rows, due)) return reply(200, { ready: true, checkpoint: { id: due, d3: step.d3, label: step.label } });
 
     const profile = (await dbRequest(`students?id=eq.${encodeURIComponent(studentId)}&select=email,first_name,last_name,nmls_id&limit=1`))?.[0];
-    // Which identifier BSI is given is a configured convention (see config/nmls/biosig.mjs).
-    const uid = await resolveBiosigUid(bsi, { studentId, nmlsId: profile?.nmls_id });
-    if (!uid) return reply(409, { error: bsi.uidMode === 'nmls_id' ? 'nmls_id_required' : 'nmls_identity_check_unavailable' });
+    // Only reviewer accounts can open this course today, and a reviewer account is a test
+    // account: it is never sent to BSI under a number that could be a real NMLS ID.
+    const testAccount = context.reviewRole === 'student_reviewer';
+    const uid = await resolveBiosigUid(bsi, { studentId, nmlsId: profile?.nmls_id, testAccount });
+    if (!uid) return reply(409, { error: testAccount ? 'nmls_identity_check_unavailable' : 'nmls_id_required' });
+    // "Returning" labels the stop for BSI only; it opens nothing. The page says whether the
+    // student reached this checkpoint inside a running study session.
+    const d3 = checkpointD3(due, { returning: input.inSession !== true && passed.has('begin') });
 
-    const challenge = await store.create({ enrollmentId, studentId, checkpoint: due, uid });
+    const challenge = await store.create({ enrollmentId, studentId, checkpoint: due, uid, d3 });
     try {
       const args = buildNmlsArgumentString(bsi, { email: profile?.email || auth.student.email, firstName: profile?.first_name, lastName: profile?.last_name,
-        uid, d3: step.d3, challengeId: challenge.id });
+        uid, d3, challengeId: challenge.id });
       const redirect = await requestBiosigRedirect(bsi, args);
-      return reply(200, { ready: false, redirect, checkpoint: { id: due, d3: step.d3, label: step.label } });
+      console.info('BioSig-ID check started', { checkpoint: d3, challenge: challenge.id });
+      return reply(200, { ready: false, redirect, checkpoint: { id: due, d3, label: step.label } });
     } catch (error) {
       await store.fail(challenge.id).catch(() => null);
       // Enough to diagnose, nothing sensitive: the checkpoint and BSI's response code only.
-      console.error('BioSig-ID check could not start', { checkpoint: step.d3, reason: String((error as Error)?.message || 'unknown').slice(0, 40) });
+      console.error('BioSig-ID check could not start', { checkpoint: d3, challenge: challenge.id, reason: String((error as Error)?.message || 'unknown').slice(0, 40) });
       return reply(409, { error: 'nmls_identity_check_unavailable' });
     }
   } catch (error) {

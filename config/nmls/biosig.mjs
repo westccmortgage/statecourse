@@ -18,22 +18,24 @@ import { NMLS_CREDIT_REVIEW } from './credit-review.mjs';
 //   BIOSIG_KEY_SIZE       128 unless BSI says otherwise
 //   BIOSIG_ENVIRONMENT    "sandbox" (default) or "production"
 //   BIOSIG_INBOUND_URL    optional: the exact launch address BSI gave, used as written
-//   BIOSIG_UID_MODE       which identifier is sent as `uid` (see below)
-//   BIOSIG_UID_PREFIX     prefix for provider-prefixed identifiers, default "StateCourse"
-//   BIOSIG_REVIEWER_UIDS  optional "student-uuid=uid,student-uuid=uid" for reviewer accounts
+//   BIOSIG_TEST_UID_FORMAT  identifier format for test accounts (see below)
+//   BIOSIG_UID_PREFIX       prefix for "prefixed" test identifiers, default "StateCourse"
+//   BIOSIG_REVIEWER_UIDS    optional "student-uuid=uid,student-uuid=uid" for reviewer accounts
 //
-// `uid` is an open question with BSI (2026-11-20). The NMLS interface specification says it
-// is the student's own NMLS ID; BSI's analyst says production identifiers must be
-// provider-prefixed ("StateCourse-001"). Both are built and one setting chooses:
-//   BIOSIG_UID_MODE=provider_prefixed   "StateCourse-001", numbered per student
-//   BIOSIG_UID_MODE=nmls_id             the student's own NMLS ID
-// Sandbox defaults to provider_prefixed, as BSI recommended. Production has no default:
-// until the owner sets the mode BSI confirmed, the integration reports itself unavailable.
+// `uid`, as BSI's analyst confirmed on 2026-11-20:
+//   - A real licensee is identified by their own NMLS ID, a plain number.
+//   - A test account must NEVER use an identifier that could be a real person's NMLS ID,
+//     on sandbox or production, so it cannot take over a real user's BioSig-ID profile.
+//     Test accounts therefore get a provider-marked identifier:
+//       BIOSIG_TEST_UID_FORMAT=prefixed          "StateCourse-001"   (default)
+//       BIOSIG_TEST_UID_FORMAT=provider_numeric  "1405133000000001"  (provider ID + 9 digits)
+//   - NMLS, not BSI, says what its own reviewer accounts use. When NMLS names them, set
+//     BIOSIG_REVIEWER_UIDS; until then reviewer accounts are treated as test accounts.
 export const BIOSIG_REQUIRED = Object.freeze(['BIOSIG_SYSTEM_ID', 'BIOSIG_CUSTOMER_ID', 'BIOSIG_SHARED_CODE', 'BIOSIG_PASS', 'BIOSIG_SALT', 'BIOSIG_VECTOR', 'BIOSIG_PARTNER']);
 
 // Interface hosts as written in BSI's sample configuration. Confirm production with BSI.
 const HOSTS = Object.freeze({ sandbox: 'sandbox.verifyexpress.com', production: 'verifyexpress.com' });
-export const BIOSIG_UID_MODES = Object.freeze(['provider_prefixed', 'nmls_id']);
+export const BIOSIG_TEST_UID_FORMATS = Object.freeze(['prefixed', 'provider_numeric']);
 
 // An exact launch address is accepted only on BSI's own domain, over https, with no
 // query or credentials, so a mistyped or hostile value cannot send student data elsewhere.
@@ -69,16 +71,17 @@ export function biosigConfig(env = process.env) {
   const vector = clean(env.BIOSIG_VECTOR), partner = clean(env.BIOSIG_PARTNER);
   const keySize = clean(env.BIOSIG_KEY_SIZE) ? Number(clean(env.BIOSIG_KEY_SIZE)) : 128;
   const environment = clean(env.BIOSIG_ENVIRONMENT) || 'sandbox';
-  const exact = clean(env.BIOSIG_INBOUND_URL), uidMode = clean(env.BIOSIG_UID_MODE) || (environment === 'sandbox' ? 'provider_prefixed' : '');
+  const exact = clean(env.BIOSIG_INBOUND_URL), testUidFormat = clean(env.BIOSIG_TEST_UID_FORMAT) || 'prefixed';
   const uidPrefix = clean(env.BIOSIG_UID_PREFIX) || 'StateCourse';
   const invalid = [];
-  // The helper derives a 16-byte key whatever the key size says, so only 128 can work.
+  // BSI confirmed 128 (2026-11-20). The helper derives a 16-byte key whatever the key size
+  // says, so no other value can work.
   if (keySize !== 128) invalid.push('BIOSIG_KEY_SIZE');
   if (vector && Buffer.from(vector, 'latin1').length !== 16) invalid.push('BIOSIG_VECTOR');
   // One or more plain path segments: "partner" or "nmls/statecourse". No dots-only segments.
   if (partner && !/^[A-Za-z0-9_-][A-Za-z0-9._-]*(?:\/[A-Za-z0-9_-][A-Za-z0-9._-]*)*$/.test(partner)) invalid.push('BIOSIG_PARTNER');
   if (exact && !inboundUrl(exact)) invalid.push('BIOSIG_INBOUND_URL');
-  if (!BIOSIG_UID_MODES.includes(uidMode)) invalid.push('BIOSIG_UID_MODE');
+  if (!BIOSIG_TEST_UID_FORMATS.includes(testUidFormat)) invalid.push('BIOSIG_TEST_UID_FORMAT');
   if (!/^[A-Za-z0-9]{1,24}$/.test(uidPrefix)) invalid.push('BIOSIG_UID_PREFIX');
   if (!Object.hasOwn(HOSTS, environment)) invalid.push('BIOSIG_ENVIRONMENT');
   if (missing.length || invalid.length) return Object.freeze({ ready: false, missing: Object.freeze([...new Set([...missing, ...invalid])]) });
@@ -89,7 +92,7 @@ export function biosigConfig(env = process.env) {
     locale: 'en_US', newWindow: false,
     // The exact address when BSI gave one; otherwise built as in BSI's sample.
     inboundUrl: exact ? inboundUrl(exact) : `https://${HOSTS[environment]}/interface/standard/${partner}/SSOInbound.aspx`,
-    uidMode, uidPrefix,
+    testUidFormat, uidPrefix, providerId: NMLS_TRAINING_COURSE.providerId,
     reviewerUids: Object.freeze(Object.fromEntries(clean(env.BIOSIG_REVIEWER_UIDS).split(',').map(pair => pair.split('=').map(clean))
       .filter(([id, uid]) => /^[a-f0-9-]{36}$/i.test(id) && /^[A-Za-z0-9._-]{1,40}$/.test(uid || '')).map(([id, uid]) => [id.toLowerCase(), uid]))),
   });

@@ -49,9 +49,9 @@ export const COURSE_WORDING = Object.freeze({
 
 // Asks the server to start the BioSig-ID check that is owed. The server chooses the
 // checkpoint and returns where BSI wants the student sent; this page decides nothing.
-export async function startIdentityCheck(enrollmentId, fetcher = globalThis.fetch) {
+export async function startIdentityCheck(enrollmentId, inSession = false, fetcher = globalThis.fetch) {
   const response = await fetcher('/api/student/nmls/identity-check', { method: 'POST', credentials: 'same-origin', cache: 'no-store',
-    headers: { 'content-type': 'application/json', accept: 'application/json' }, body: JSON.stringify({ enrollmentId }), signal: AbortSignal.timeout(25000) });
+    headers: { 'content-type': 'application/json', accept: 'application/json' }, body: JSON.stringify({ enrollmentId, inSession }), signal: AbortSignal.timeout(25000) });
   return { status: response.status, body: await response.json().catch(() => ({})) };
 }
 
@@ -62,6 +62,9 @@ export function mountCourse({ document: doc = globalThis.document, window: win =
   const el = id => doc.getElementById(id);
   let mode = 'off', sequence = [], queue = [], opened = false, passedBefore = null, finalCleared = false, workspace = null;
   let identity = null, identityOwed = false, identityNote = '', enrollmentId = null, pausing = false;
+  // True once study has actually run on this page. A checkpoint reached after that is part
+  // of the sitting; one met on arrival is a return, which BSI is told as "Resuming-…".
+  let studiedHere = false;
   // Pausing redraws the workspace, which reports the same view again. Without this guard
   // a checkpoint raised during a redraw would pause, redraw and raise itself forever.
   const pauseStudy = () => { if (pausing) return; pausing = true; try { workspace?.pause(); } finally { pausing = false; } };
@@ -83,7 +86,7 @@ export function mountCourse({ document: doc = globalThis.document, window: win =
   async function beginIdentity() {
     el('identityStart').disabled = true; identityNote = 'Contacting BioSig-ID…'; showIdentity();
     try {
-      const { status, body } = await identityTransport(enrollmentId);
+      const { status, body } = await identityTransport(enrollmentId, studiedHere);
       if (status === 200 && body.ready === true) { identityOwed = false; identityNote = ''; showIdentity(); workspace?.client.open(enrollmentId); return; }
       if (status === 200 && typeof body.redirect === 'string' && body.redirect.startsWith('https://')) { win.location.assign(body.redirect); return; }
       identityNote = body.error === 'nmls_id_required' ? 'Add your NMLS ID in My StateCourse first. BioSig-ID identifies you by that number.'
@@ -111,6 +114,7 @@ export function mountCourse({ document: doc = globalThis.document, window: win =
   function onView(view) {
     if (pausing) return;
     const s = view.snapshot, review = s?.creditReview;
+    if (s?.progress?.sessionId) studiedHere = true;
     enrollmentId = view.enrollmentId || enrollmentId;
     if (mode === 'biosig' && IDENTITY_ERRORS.includes(view.error)) {
       identityOwed = true; if (view.error === 'nmls_identity_check_unavailable') identity = { ...identity, available: false };
