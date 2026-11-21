@@ -2,6 +2,41 @@
 
 # NMLS Launch Board
 
+## BioSig-ID: BSI's first answers applied — 2026-11-21
+
+Branch `claude/inspiring-lamport-wjsuvn`, not deployed. Still switched off, still never
+connected. From the owner's updated build specification, which reports an email from
+BSI's analyst of 2026-11-20 (not read here):
+
+- BSI has issued the System ID, the Customer ID and the sandbox launch address. They are
+  deliberately not written in this repository; they are in the owner's specification and
+  go into Netlify with the rest. The four secrets (shared code, pass phrase, salt,
+  vector) are to be handed over during the meeting of 2026-11-23, when BSI also
+  activates the interface account.
+- **Address.** The partner path has two segments, which the first build would have
+  rejected; `BIOSIG_PARTNER` now accepts `a/b`. BSI wrote the launch file name in lower
+  case while its sample uses `SSOInbound.aspx`; set `BIOSIG_INBOUND_URL` to the exact
+  address BSI gave to use it as written. It is accepted only over https on BSI's own
+  domain.
+- **`uid` is unresolved.** The NMLS interface specification says it is the student's own
+  NMLS ID. BSI's analyst says production identifiers must be provider-prefixed
+  (`StateCourse-001`). Both are built; `BIOSIG_UID_MODE` chooses (`provider_prefixed` or
+  `nmls_id`). Sandbox defaults to `provider_prefixed` as BSI recommended. **Production has
+  no default** and stays unavailable until the confirmed convention is set. Prefixed
+  numbers come from `database/032_nmls_biosig_identifiers.sql` (**not applied**): one
+  per student, assigned once, never changed or reused.
+- **Callback address filtering.** BSI says its callback IP is not guaranteed static, so
+  do not pin one address in Cloudflare long-term. A blocked callback shows up as a check
+  that stays pending and expires after 20 minutes; nothing alerts on that yet.
+
+To ask BSI on 2026-11-23: the `uid` convention for this NMLS course and for the reviewer
+accounts; `d2=109386` until a course number exists; Middle checkpoint spacing; key size;
+a test vector; the production launch address and callback source; whether the callback
+returns our `statecourse_ref` argument and carries `ts`.
+
+The switch-on steps in the section below now also include applying migration 032 (when
+`provider_prefixed` is used) and setting `BIOSIG_UID_MODE`.
+
 ## BioSig-ID interface built, switched off, not connected — 2026-11-20
 
 Branch `claude/inspiring-lamport-wjsuvn`. **Not deployed. No BSI value exists anywhere. No
