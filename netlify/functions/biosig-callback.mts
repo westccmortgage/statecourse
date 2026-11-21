@@ -22,26 +22,31 @@ export default async function handler(request: Request): Promise<Response> {
   const xml = (ok: boolean, redirect: string) => new Response(buildSsoResponseXml(ok ? 'Success' : 'Failure', ok ? '100' : '110', ok ? 'None' : 'Validation failed', redirect),
     { status: 200, headers: { 'content-type': 'text/xml; charset=utf-8', 'cache-control': 'no-store', 'x-robots-tag': 'noindex, nofollow' } });
   const course = (enrollmentId: string) => `${site}${NMLS_CREDIT_REVIEW.route}?enrollment_id=${encodeURIComponent(enrollmentId)}`;
-  const refused = () => xml(false, `${site}/student/`);
+  // BSI's analyst asked for logging on our side so the two logs can be matched. Each
+  // callback leaves one line: the outcome and the check it named. Never the arguments,
+  // the identifier, the email or any key material.
+  const note = (outcome: string, detail: Record<string, unknown> = {}) => console.info('BioSig-ID callback', { outcome, method: request.method, ...detail });
+  const refused = (outcome: string) => { note(outcome); return xml(false, `${site}/student/`); };
   try {
     const url = new URL(request.url);
     let args = url.searchParams.get('args');
     if (!args && request.method === 'POST') {
       const body = await request.text();
-      if (body.length > MAX_BYTES) return refused();
+      if (body.length > MAX_BYTES) return refused('too_large');
       args = new URLSearchParams(body).get('args');
     }
     const keyed = decryptCallbackArgs(bsi, args);
-    if (!keyed) return refused();
+    if (!keyed) return refused(args ? 'not_decryptable' : 'no_arguments');
     // A timestamp, when BSI sends one, must be recent. The waiting check's own expiry
     // bounds the callback either way.
-    if (keyed.ts !== undefined && !(Math.abs(Date.now() - Date.parse(keyed.ts)) <= CALLBACK_CLOCK_DRIFT_MS)) return refused();
+    if (keyed.ts !== undefined && !(Math.abs(Date.now() - Date.parse(keyed.ts)) <= CALLBACK_CLOCK_DRIFT_MS)) return refused('stale_timestamp');
     const verified = validationSucceeded(keyed);
     const row = await createChallengeStore().answer(keyed[CHALLENGE_ARGUMENT], { uid: keyed.uid, verified });
-    if (!row) return refused();
+    if (!row) return refused(keyed[CHALLENGE_ARGUMENT] ? 'no_waiting_check' : 'no_reference');
+    note(row.status, { checkpoint: row.d3, challenge: row.id });
     return xml(row.status === 'verified', course(row.enrollment_id));
   } catch {
     console.error('BioSig-ID callback could not be processed');
-    return refused();
+    return refused('error');
   }
 }

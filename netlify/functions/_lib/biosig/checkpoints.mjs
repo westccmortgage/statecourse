@@ -66,10 +66,10 @@ export function createChallengeStore({ request = dbRequest, now = () => Date.now
     usable(rows, checkpoint) {
       return rows.find(row => row.checkpoint === checkpoint && row.status === 'verified' && now() - Date.parse(row.completed_at) <= VERIFIED_LIFETIME_MS) || null;
     },
-    async create({ enrollmentId, studentId, checkpoint, uid }) {
+    async create({ enrollmentId, studentId, checkpoint, uid, d3 = step(checkpoint).d3 }) {
       // Only the newest check for an enrollment can be answered.
       await request(`${TABLE}?enrollment_id=eq.${encodeURIComponent(enrollmentId)}&status=eq.pending`, { method: 'PATCH', prefer: 'return=minimal', body: { status: 'expired' } });
-      const row = { id: newId(), enrollment_id: enrollmentId, student_id: studentId, course_id: NMLS_CREDIT_REVIEW.courseId, checkpoint, d3: step(checkpoint).d3, uid,
+      const row = { id: newId(), enrollment_id: enrollmentId, student_id: studentId, course_id: NMLS_CREDIT_REVIEW.courseId, checkpoint, d3, uid,
         status: 'pending', expires_at: iso(now() + CHALLENGE_LIFETIME_MS) };
       await request(TABLE, { method: 'POST', prefer: 'return=minimal', body: row });
       return row;
@@ -108,6 +108,14 @@ export function identityGate(callRpc, input, { store, config }) {
     }
     return callRpc(name, args);
   };
+}
+
+// The `d3` value BSI is sent. A student who comes back after leaving, at a point where a
+// Middle or FinalExam check is also due, makes one combined stop ("Resuming-FinalExam")
+// instead of two, as BSI's analyst described on 2026-11-20. Begin is always plain Begin.
+export function checkpointD3(checkpoint, { returning }) {
+  const base = step(checkpoint).d3;
+  return returning && ['middle_1', 'middle_2', 'final_exam'].includes(checkpoint) ? `Resuming-${base}` : base;
 }
 
 // For the course page: which check is owed, and how the last one ended.

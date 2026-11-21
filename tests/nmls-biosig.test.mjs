@@ -8,7 +8,7 @@ import { BIOSIG_REQUIRED, biosigConfig, nmlsBiosigCourseFields } from '../config
 import { resolveBiosigUid } from '../netlify/functions/_lib/biosig/identifier.mjs';
 import { buildInboundUrl, buildNmlsArgumentString, buildSsoResponseXml, CHALLENGE_ARGUMENT, decryptCallbackArgs, parseSsoResponseXml,
   requestBiosigRedirect, validationSucceeded } from '../netlify/functions/_lib/biosig/sso.mjs';
-import { createChallengeStore, dueCheckpoint, dueStudyCheckpoint, identityGate, identityStatus, requirementFor,
+import { checkpointD3, createChallengeStore, dueCheckpoint, dueStudyCheckpoint, identityGate, identityStatus, requirementFor,
   CHALLENGE_LIFETIME_MS, VERIFIED_LIFETIME_MS } from '../netlify/functions/_lib/biosig/checkpoints.mjs';
 import identityHandler, { config as identityConfig } from '../netlify/functions/student-nmls-identity.mts';
 import callbackHandler, { config as callbackConfig } from '../netlify/functions/biosig-callback.mts';
@@ -49,10 +49,10 @@ test('without every BSI value the integration is unavailable, and it never echoe
   assert.deepEqual(ready({ BIOSIG_VECTOR: 'too-short' }).missing, ['BIOSIG_VECTOR']);
   assert.deepEqual(ready({ BIOSIG_KEY_SIZE: '256' }).missing, ['BIOSIG_KEY_SIZE'], 'the helper derives a 16-byte key, so only 128 can work');
   assert.deepEqual(ready({ BIOSIG_PARTNER: '../evil' }).missing, ['BIOSIG_PARTNER']);
-  assert.deepEqual(ready({ BIOSIG_ENVIRONMENT: 'staging', BIOSIG_UID_MODE: 'nmls_id' }).missing, ['BIOSIG_ENVIRONMENT']);
+  assert.deepEqual(ready({ BIOSIG_ENVIRONMENT: 'staging' }).missing, ['BIOSIG_ENVIRONMENT']);
   assert.doesNotMatch(JSON.stringify(ready({ BIOSIG_VECTOR: 'bad' })), /random-pass|random-salt/);
   assert.equal(ready().inboundUrl, 'https://sandbox.verifyexpress.com/interface/standard/partner/SSOInbound.aspx');
-  assert.equal(ready({ BIOSIG_ENVIRONMENT: 'production', BIOSIG_UID_MODE: 'nmls_id' }).inboundUrl, 'https://verifyexpress.com/interface/standard/partner/SSOInbound.aspx');
+  assert.equal(ready({ BIOSIG_ENVIRONMENT: 'production' }).inboundUrl, 'https://verifyexpress.com/interface/standard/partner/SSOInbound.aspx');
   const student = randomUUID();
   assert.deepEqual(ready({ BIOSIG_REVIEWER_UIDS: `${student}=reviewer, not-a-uuid=x, ${randomUUID()}=bad uid` }).reviewerUids, { [student]: 'reviewer' });
 });
@@ -71,11 +71,9 @@ test('the interface address: a two-segment partner path, or the exact address BS
     assert.deepEqual(ready({ BIOSIG_INBOUND_URL: bad }).missing, ['BIOSIG_INBOUND_URL'], bad);
 });
 
-test('which identifier is sent as uid is one setting, and production has no default', async () => {
-  assert.equal(ready().uidMode, 'provider_prefixed', 'sandbox follows BSI\'s recommendation');
-  assert.deepEqual(ready({ BIOSIG_ENVIRONMENT: 'production' }).missing, ['BIOSIG_UID_MODE'], 'production stays closed until the confirmed convention is set');
-  assert.equal(ready({ BIOSIG_ENVIRONMENT: 'production', BIOSIG_UID_MODE: 'provider_prefixed' }).ready, true);
-  assert.deepEqual(ready({ BIOSIG_UID_MODE: 'email' }).missing, ['BIOSIG_UID_MODE']);
+test('uid: a real licensee is their NMLS ID; a test account is never a number that could be one', async () => {
+  assert.equal(ready().testUidFormat, 'prefixed'); assert.equal(ready({ BIOSIG_ENVIRONMENT: 'production' }).ready, true);
+  assert.deepEqual(ready({ BIOSIG_TEST_UID_FORMAT: 'nmls_id' }).missing, ['BIOSIG_TEST_UID_FORMAT']);
   assert.deepEqual(ready({ BIOSIG_UID_PREFIX: 'State Course' }).missing, ['BIOSIG_UID_PREFIX']);
 
   const numbers = new Map(), calls = [];
@@ -85,24 +83,38 @@ test('which identifier is sent as uid is one setting, and production has no defa
     const id = new URLSearchParams(path.split('?')[1]).get('student_id').replace('eq.', '');
     return numbers.has(id) ? [{ sequence: numbers.get(id) }] : [];
   };
-  const ana = randomUUID(), ben = randomUUID(), reviewer = randomUUID();
-  const prefixed = ready({ BIOSIG_REVIEWER_UIDS: `${reviewer}=reviewer2` });
-  assert.equal(await resolveBiosigUid(prefixed, { studentId: ana, nmlsId: '1234567' }, { request }), 'StateCourse-001', 'the NMLS ID is not used in this mode');
-  assert.equal(await resolveBiosigUid(prefixed, { studentId: ben, nmlsId: null }, { request }), 'StateCourse-002');
-  assert.equal(await resolveBiosigUid(prefixed, { studentId: ana, nmlsId: '1234567' }, { request }), 'StateCourse-001', 'the same person keeps the same identifier');
-  assert.equal(await resolveBiosigUid(ready({ BIOSIG_UID_PREFIX: 'SC' }), { studentId: ben }, { request }), 'SC-002');
-  calls.length = 0;
-  assert.equal(await resolveBiosigUid(prefixed, { studentId: reviewer, nmlsId: '5' }, { request }), 'reviewer2', 'a reviewer\'s assigned identifier wins');
-  const byNmlsId = ready({ BIOSIG_UID_MODE: 'nmls_id' });
-  assert.equal(await resolveBiosigUid(byNmlsId, { studentId: ana, nmlsId: '1234567' }, { request }), '1234567');
-  assert.equal(await resolveBiosigUid(byNmlsId, { studentId: ben, nmlsId: null }, { request }), null);
-  assert.deepEqual(calls, [], 'no number is assigned unless the prefixed convention is in use');
-  assert.equal(await resolveBiosigUid(prefixed, { studentId: randomUUID() }, { request: async () => [] }), null, 'no number, no identifier');
+  const licensee = randomUUID(), reviewerA = randomUUID(), reviewerB = randomUUID(), named = randomUUID();
+  const config = ready({ BIOSIG_REVIEWER_UIDS: `${named}=nmls-named-reviewer` });
+  // A real licensee: their own NMLS ID, and nothing is allocated.
+  assert.equal(await resolveBiosigUid(config, { studentId: licensee, nmlsId: '1234567', testAccount: false }, { request }), '1234567');
+  assert.equal(await resolveBiosigUid(config, { studentId: licensee, nmlsId: null, testAccount: false }, { request }), null, 'no NMLS ID, no check');
+  assert.equal(await resolveBiosigUid(config, { studentId: licensee, nmlsId: 'abc', testAccount: false }, { request }), null);
+  assert.deepEqual(calls, []);
+  // A test account: a provider-marked identifier even when a real-looking number sits in its profile.
+  assert.equal(await resolveBiosigUid(config, { studentId: reviewerA, nmlsId: '1234567', testAccount: true }, { request }), 'StateCourse-001');
+  assert.equal(await resolveBiosigUid(config, { studentId: reviewerB, nmlsId: null, testAccount: true }, { request }), 'StateCourse-002');
+  assert.equal(await resolveBiosigUid(config, { studentId: reviewerA, nmlsId: '7', testAccount: true }, { request }), 'StateCourse-001', 'the same account keeps the same identifier');
+  assert.equal(await resolveBiosigUid(ready({ BIOSIG_UID_PREFIX: 'SC' }), { studentId: reviewerB, testAccount: true }, { request }), 'SC-002');
+  // BSI's alternative: the provider ID followed by a number, e.g. 1405133000000001.
+  const numeric = ready({ BIOSIG_TEST_UID_FORMAT: 'provider_numeric' });
+  assert.equal(await resolveBiosigUid(numeric, { studentId: reviewerA, testAccount: true }, { request }), '1405133000000001');
+  assert.equal(await resolveBiosigUid(numeric, { studentId: reviewerB, testAccount: true }, { request }), '1405133000000002');
+  // An identifier NMLS names for a reviewer account wins over everything.
+  assert.equal(await resolveBiosigUid(config, { studentId: named, nmlsId: '5', testAccount: true }, { request }), 'nmls-named-reviewer');
+  assert.equal(await resolveBiosigUid(config, { studentId: randomUUID(), testAccount: true }, { request: async () => [] }), null, 'no number, no identifier');
+});
+
+test('a return at a Middle or FinalExam checkpoint is one combined stop; Begin is always Begin', () => {
+  for (const [checkpoint, plain] of [['middle_1', 'Middle#1'], ['middle_2', 'Middle#2'], ['final_exam', 'FinalExam']]) {
+    assert.equal(checkpointD3(checkpoint, { returning: false }), plain);
+    assert.equal(checkpointD3(checkpoint, { returning: true }), `Resuming-${plain}`);
+  }
+  for (const returning of [true, false]) { assert.equal(checkpointD3('begin', { returning }), 'Begin'); assert.equal(checkpointD3('resuming', { returning }), 'Resuming'); }
 });
 
 test('no BSI value is stored in the repository', () => {
   const files = ['config/nmls/biosig.mjs', 'config/nmls/credit-review.mjs', 'netlify/functions/student-nmls-identity.mts', 'netlify/functions/biosig-callback.mts',
-    'netlify/functions/student-nmls-course.mts', 'database/031_nmls_identity_challenges.sql', 'database/032_nmls_biosig_identifiers.sql', 'docs/compliance/nmls/LAUNCH-BOARD.md',
+    'netlify/functions/student-nmls-course.mts', 'database/031_nmls_identity_challenges.sql', 'database/032_nmls_biosig_identifiers.sql', 'database/033_nmls_identity_combined_checkpoints.sql', 'docs/compliance/nmls/LAUNCH-BOARD.md',
     ...readdirSync(new URL('../netlify/functions/_lib/biosig/', import.meta.url)).map(name => `netlify/functions/_lib/biosig/${name}`)];
   for (const path of files) {
     const source = read(path);
@@ -296,14 +308,15 @@ test('the course endpoint gate: no commit without a fresh passed check, and one 
 });
 
 test('HTTP: start a check, then BSI\'s simulated success and failure callbacks', async t => {
-  const names = ['STATECOURSE_BASE_URL', 'SUPABASE_URL', 'SUPABASE_ANON_KEY', 'SUPABASE_SERVICE_ROLE_KEY', 'NMLS_CREDIT_CHECKPOINTS', 'BIOSIG_REVIEWER_UIDS', 'BIOSIG_UID_MODE', 'BIOSIG_PARTNER', 'BIOSIG_INBOUND_URL', ...Object.keys(SAMPLE)];
+  const names = ['STATECOURSE_BASE_URL', 'SUPABASE_URL', 'SUPABASE_ANON_KEY', 'SUPABASE_SERVICE_ROLE_KEY', 'NMLS_CREDIT_CHECKPOINTS', 'BIOSIG_REVIEWER_UIDS', 'BIOSIG_TEST_UID_FORMAT', 'BIOSIG_PARTNER', 'BIOSIG_INBOUND_URL', ...Object.keys(SAMPLE)];
   const before = Object.fromEntries(names.map(name => [name, process.env[name]])), originalFetch = globalThis.fetch, originalError = console.error;
   const origin = 'https://statecourse.test', db = 'https://biosig-db.invalid';
   const actor = randomUUID(), enrollmentId = randomUUID(), table = fakeTable(), logged = [];
-  Object.assign(process.env, { STATECOURSE_BASE_URL: origin, SUPABASE_URL: db, SUPABASE_ANON_KEY: 'synthetic-anon', SUPABASE_SERVICE_ROLE_KEY: 'synthetic-service', ...SAMPLE, BIOSIG_UID_MODE: 'nmls_id' });
+  Object.assign(process.env, { STATECOURSE_BASE_URL: origin, SUPABASE_URL: db, SUPABASE_ANON_KEY: 'synthetic-anon', SUPABASE_SERVICE_ROLE_KEY: 'synthetic-service', ...SAMPLE });
   delete process.env.NMLS_CREDIT_CHECKPOINTS; delete process.env.BIOSIG_REVIEWER_UIDS;
+  const originalInfo = console.info; console.info = (...parts) => logged.push(JSON.stringify(parts));
   console.error = (...parts) => logged.push(JSON.stringify(parts));
-  t.after(() => { globalThis.fetch = originalFetch; console.error = originalError; for (const name of names) { if (before[name] === undefined) delete process.env[name]; else process.env[name] = before[name]; } });
+  t.after(() => { globalThis.fetch = originalFetch; console.error = originalError; console.info = originalInfo; for (const name of names) { if (before[name] === undefined) delete process.env[name]; else process.env[name] = before[name]; } });
   const context = { enrollmentId, studentId: actor, courseId: NMLS, courseVersion: '2026.3', reviewRole: 'student_reviewer', revision: 0, runtime: null };
   let hosts = [], bsiAnswer = () => buildSsoResponseXml('Success', '100', 'None', 'https://sandbox.verifyexpress.com/app/draw?session=abc'), nmlsId = '1234567', sent = null;
   const json = (body, status = 200) => new Response(JSON.stringify(body), { status, headers: { 'content-type': 'application/json' } });
@@ -332,7 +345,7 @@ test('HTTP: start a check, then BSI\'s simulated success and failure callbacks',
       if (value === undefined) delete process.env.NMLS_CREDIT_CHECKPOINTS; else process.env.NMLS_CREDIT_CHECKPOINTS = value;
       hosts = []; const response = await start();
       assert.equal(response.status, 409); assert.deepEqual(await response.json(), { error: 'nmls_identity_check_unavailable' });
-      assert.equal((await callback('vs=True&uid=1234567')).status, 404);
+      assert.equal((await callback('vs=True&uid=StateCourse-001')).status, 404);
       assert.equal(hosts.includes('sandbox.verifyexpress.com'), false); assert.equal(table.rows.length, 0);
     }
   });
@@ -348,9 +361,8 @@ test('HTTP: start a check, then BSI\'s simulated success and failure callbacks',
     context.reviewRole = null; hosts = [];
     assert.equal((await start()).status, 403, 'an ordinary free-training enrollment cannot start a check');
     context.reviewRole = 'regulator_reviewer'; assert.equal((await start()).status, 403, 'the open version has no checks');
-    context.reviewRole = 'student_reviewer'; nmlsId = null;
-    assert.deepEqual(await (await start()).json(), { error: 'nmls_id_required' });
-    assert.equal(hosts.includes('sandbox.verifyexpress.com'), false); assert.equal(table.rows.length, 0); nmlsId = '1234567';
+    context.reviewRole = 'student_reviewer';
+    assert.equal(hosts.includes('sandbox.verifyexpress.com'), false); assert.equal(table.rows.length, 0);
   });
   await t.test('start: the server picks Begin, records a pending check and returns BSI\'s address', async () => {
     hosts = []; const response = await start(), body = await response.json();
@@ -358,21 +370,22 @@ test('HTTP: start a check, then BSI\'s simulated success and failure callbacks',
     assert.deepEqual(body, { ready: false, redirect: 'https://sandbox.verifyexpress.com/app/draw?session=abc', checkpoint: { id: 'begin', d3: 'Begin', label: 'Identity verification before the course' } });
     assert.equal(sent.pathname, '/interface/standard/partner/SSOInbound.aspx');
     const keyed = decryptCallbackArgs(ready(), sent.searchParams.get('args'));
-    assert.equal(keyed.uid, '1234567'); assert.equal(keyed.d3, 'Begin'); assert.equal(keyed.ls, '1405133'); assert.equal(keyed.d2, '109386'); assert.equal(keyed.d5, '8');
+    assert.equal(keyed.uid, 'StateCourse-001', 'a reviewer is a test account: the real-looking NMLS ID in its profile is not sent');
+    assert.equal(table.rows[0].uid, 'StateCourse-001'); assert.equal(keyed.d3, 'Begin'); assert.equal(keyed.ls, '1405133'); assert.equal(keyed.d2, '109386'); assert.equal(keyed.d5, '8');
     assert.equal(keyed.em, 'closed-reviewer@example.test'); assert.equal(keyed.fn, 'Closed');
     assert.equal(table.rows.length, 1); assert.equal(table.rows[0].status, 'pending'); assert.equal(keyed[CHALLENGE_ARGUMENT], table.rows[0].id);
     assert.equal(response.headers.get('cache-control'), 'no-store, private');
     assert.doesNotMatch(JSON.stringify(body), /random-pass|random-salt|random-vector|args=/);
   });
   await t.test('simulate-failure: vs=False leaves the checkpoint closed and sends the student back', async () => {
-    const id = table.rows.at(-1).id, response = await callback(`vs=False&vl=1&uid=1234567&em=closed-reviewer@example.test&${CHALLENGE_ARGUMENT}=${id}`);
+    const id = table.rows.at(-1).id, response = await callback(`vs=False&vl=1&uid=StateCourse-001&em=closed-reviewer@example.test&${CHALLENGE_ARGUMENT}=${id}`);
     assert.equal(response.status, 200); assert.equal(response.headers.get('content-type'), 'text/xml; charset=utf-8');
     assert.deepEqual(parseSsoResponseXml(await response.text()), { status: 'Failure', code: '110', message: 'Validation failed', redirect: `${origin}/student/nmls-course/?enrollment_id=${enrollmentId}` });
     assert.equal(table.rows.at(-1).status, 'failed');
   });
   await t.test('simulate-success: a retry is allowed, and vs=True marks that one check passed', async () => {
     await start(); const id = table.rows.at(-1).id; assert.equal(table.rows.length, 2);
-    const response = await callback(`vs=True&vl=1&uid=1234567&em=closed-reviewer@example.test&${CHALLENGE_ARGUMENT}=${id}`, { method: 'POST' });
+    const response = await callback(`vs=True&vl=1&uid=StateCourse-001&em=closed-reviewer@example.test&${CHALLENGE_ARGUMENT}=${id}`, { method: 'POST' });
     assert.deepEqual(parseSsoResponseXml(await response.text()), { status: 'Success', code: '100', message: 'None', redirect: `${origin}/student/nmls-course/?enrollment_id=${enrollmentId}` });
     assert.equal(table.rows.at(-1).status, 'verified');
     assert.deepEqual(await (await start()).json(), { ready: true, checkpoint: { id: 'begin', d3: 'Begin', label: 'Identity verification before the course' } }, 'a passed, unused check is not asked for twice');
@@ -380,14 +393,14 @@ test('HTTP: start a check, then BSI\'s simulated success and failure callbacks',
   await t.test('callbacks that must not count', async () => {
     const id = table.rows.at(-1).id, refusedXml = { status: 'Failure', code: '110', message: 'Validation failed', redirect: `${origin}/student/` };
     const refused = async response => { assert.equal(response.status, 200); assert.deepEqual(parseSsoResponseXml(await response.text()), refusedXml); };
-    await refused(await callback(`vs=True&uid=1234567&${CHALLENGE_ARGUMENT}=${id}`)); // replay of an answered check
-    await refused(await callback(`vs=True&uid=1234567&${CHALLENGE_ARGUMENT}=${randomUUID()}`)); // unknown check
-    await refused(await callback('vs=True&uid=1234567')); // no reference at all
+    await refused(await callback(`vs=True&uid=StateCourse-001&${CHALLENGE_ARGUMENT}=${id}`)); // replay of an answered check
+    await refused(await callback(`vs=True&uid=StateCourse-001&${CHALLENGE_ARGUMENT}=${randomUUID()}`)); // unknown check
+    await refused(await callback('vs=True&uid=StateCourse-001')); // no reference at all
     await refused(await callbackHandler(new Request(`${origin}/api/biosig/callback?args=${encodeURIComponent('bm90IGVuY3J5cHRlZA==')}`))); // not our key
     await refused(await callbackHandler(new Request(`${origin}/api/biosig/callback`))); // nothing sent
     await start(); const pending = table.rows.at(-1).id; // (a pending check exists only if the last one was spent; force one)
-    const fresh = await createChallengeStore({ request: table.request }).create({ enrollmentId, studentId: actor, checkpoint: 'resuming', uid: '1234567' });
-    await refused(await callback(`ts=2020-01-01T00:00:00.000Z&vs=True&uid=1234567&${CHALLENGE_ARGUMENT}=${fresh.id}`)); // stale timestamp
+    const fresh = await createChallengeStore({ request: table.request }).create({ enrollmentId, studentId: actor, checkpoint: 'resuming', uid: 'StateCourse-001' });
+    await refused(await callback(`ts=2020-01-01T00:00:00.000Z&vs=True&uid=StateCourse-001&${CHALLENGE_ARGUMENT}=${fresh.id}`)); // stale timestamp
     assert.equal(table.rows.find(row => row.id === fresh.id).status, 'pending', 'a refused callback changes nothing');
     await refused(await callback(`vs=True&uid=9999999&${CHALLENGE_ARGUMENT}=${fresh.id}`)); // another person's identifier
     assert.equal(table.rows.find(row => row.id === fresh.id).status, 'failed'); assert.ok(pending);
@@ -399,25 +412,40 @@ test('HTTP: start a check, then BSI\'s simulated success and failure callbacks',
     const response = await start(); assert.equal(response.status, 409); assert.deepEqual(await response.json(), { error: 'nmls_identity_check_unavailable' });
     assert.equal(table.rows.at(-1).status, 'failed');
     assert.match(logged.join(' '), /biosig_refused:250/); assert.match(logged.join(' '), /Begin/);
-    assert.doesNotMatch(logged.join(' '), /random-pass|random-salt|random-vector|1234567|closed-reviewer|args=/); assert.ok(fresh);
+    assert.doesNotMatch(logged.join(' '), /random-pass|random-salt|random-vector|1234567|StateCourse-001|closed-reviewer|args=/); assert.ok(fresh);
   });
-  await t.test('provider-prefixed convention with a two-segment partner path: BSI is sent StateCourse-001, not the NMLS ID', async () => {
-    process.env.BIOSIG_UID_MODE = 'provider_prefixed'; process.env.BIOSIG_PARTNER = 'program/school'; nmlsId = '1234567'; table.rows.length = 0;
+  await t.test('each callback leaves one diagnostic line with its outcome and nothing sensitive', async () => {
+    logged.length = 0; table.rows.length = 0;
     bsiAnswer = () => buildSsoResponseXml('Success', '100', 'None', 'https://sandbox.verifyexpress.com/app/draw');
-    assert.equal((await start()).status, 200);
+    await start(); const row = table.rows.at(-1);
+    await callback('vs=True&uid=StateCourse-001'); await callbackHandler(new Request(`${origin}/api/biosig/callback?args=AAAA`));
+    await callback(`vs=True&uid=StateCourse-001&${CHALLENGE_ARGUMENT}=${row.id}`);
+    const lines = logged.join('\n');
+    for (const outcome of ['no_reference', 'not_decryptable', 'verified']) assert.match(lines, new RegExp(`"outcome":"${outcome}"`));
+    assert.match(lines, /BioSig-ID check started/); assert.match(lines, new RegExp(row.id)); assert.match(lines, /"checkpoint":"Begin"/);
+    assert.doesNotMatch(lines, /random-pass|random-salt|random-vector|1234567|StateCourse-001|closed-reviewer|args=|"vs"/);
+  });
+  await t.test('two-segment partner path, provider-numbered test identifier, and a combined return checkpoint', async () => {
+    process.env.BIOSIG_TEST_UID_FORMAT = 'provider_numeric'; process.env.BIOSIG_PARTNER = 'program/school'; table.rows.length = 0;
+    // Begin has been passed and used; lessons are finished; the reviewer comes back later.
+    table.rows.push({ id: randomUUID(), enrollment_id: enrollmentId, checkpoint: 'begin', status: 'consumed', created_at: '2026-11-20T00:00:00.000Z', completed_at: '2026-11-20T00:00:00.000Z' },
+      ...['middle_1', 'middle_2'].map(checkpoint => ({ id: randomUUID(), enrollment_id: enrollmentId, checkpoint, status: 'consumed', created_at: '2026-11-20T01:00:00.000Z', completed_at: '2026-11-20T01:00:00.000Z' })));
+    context.runtime = { phase: 'source', source: { passedModuleIds: ['F01', 'F02', 'F03', 'E01', 'E02', 'N01', 'N02', 'G01'], status: 'review_complete' } };
+    assert.equal((await (await start()).json()).checkpoint.d3, 'Resuming-FinalExam', 'returning to the door of the final examination is one stop');
     assert.equal(sent.pathname, '/interface/standard/program/school/SSOInbound.aspx');
-    const config = biosigConfig(process.env), keyed = decryptCallbackArgs(config, sent.searchParams.get('args'));
-    assert.equal(keyed.uid, 'StateCourse-001'); assert.equal(table.rows.at(-1).uid, 'StateCourse-001');
+    const keyed = decryptCallbackArgs(biosigConfig(process.env), sent.searchParams.get('args'));
+    assert.equal(keyed.uid, '1405133000000001'); assert.equal(keyed.d3, 'Resuming-FinalExam'); assert.equal(table.rows.at(-1).checkpoint, 'final_exam');
+    // Reaching the same door inside a running sitting is the plain checkpoint.
+    assert.equal((await (await start({ enrollmentId, inSession: true })).json()).checkpoint.d3, 'FinalExam');
     // BSI's answer must name that same identifier.
     const row = table.rows.at(-1);
     assert.equal(parseSsoResponseXml(await (await callback(`vs=True&uid=1234567&${CHALLENGE_ARGUMENT}=${row.id}`)).text()).status, 'Failure');
-    table.rows.length = 0; await start(); const again = table.rows.at(-1);
-    assert.equal(again.uid, 'StateCourse-001', 'the same reviewer keeps the same identifier');
-    assert.equal(parseSsoResponseXml(await (await callback(`vs=True&uid=StateCourse-001&${CHALLENGE_ARGUMENT}=${again.id}`)).text()).status, 'Success');
-    process.env.BIOSIG_UID_MODE = 'nmls_id'; process.env.BIOSIG_PARTNER = SAMPLE.BIOSIG_PARTNER;
+    await start({ enrollmentId, inSession: true }); const again = table.rows.at(-1);
+    assert.equal(parseSsoResponseXml(await (await callback(`vs=True&uid=1405133000000001&${CHALLENGE_ARGUMENT}=${again.id}`)).text()).status, 'Success');
+    delete process.env.BIOSIG_TEST_UID_FORMAT; process.env.BIOSIG_PARTNER = SAMPLE.BIOSIG_PARTNER; context.runtime = null;
   });
   await t.test('reviewer accounts use the identifier assigned to them', async () => {
-    process.env.BIOSIG_REVIEWER_UIDS = `${actor}=reviewer2`; nmlsId = null; table.rows.length = 0;
+    process.env.BIOSIG_REVIEWER_UIDS = `${actor}=reviewer2`; table.rows.length = 0;
     bsiAnswer = () => buildSsoResponseXml('Success', '100', 'None', 'https://sandbox.verifyexpress.com/app/draw');
     assert.equal((await start()).status, 200);
     assert.equal(decryptCallbackArgs(ready(), sent.searchParams.get('args')).uid, 'reviewer2'); assert.equal(table.rows.at(-1).uid, 'reviewer2');
@@ -456,10 +484,16 @@ test('migration 031: forward-only transitions, service role only', { skip: proce
   await assert.rejects(db.query(`update nmls_identity_challenges set uid='7654321' where id=$1`, [id]), /nmls_identity_challenge_immutable/);
   await set('consumed', ', consumed_at=now()');
   await assert.rejects(set('verified', ', consumed_at=null'), /nmls_identity_challenge_transition/, 'a spent check cannot be reused');
-  await assert.rejects(db.query('delete from nmls_identity_challenges'), /nmls_identity_challenge_immutable/);
+  await assert.rejects(db.query('delete from nmls_identity_challenges where id=$1', [id]), /nmls_identity_challenge_immutable/);
   const grants = (await db.query(`select grantee, string_agg(privilege_type, ',' order by privilege_type) p from information_schema.role_table_grants where table_name='nmls_identity_challenges' and grantee in ('service_role','anon','authenticated','PUBLIC') group by grantee`)).rows;
   assert.deepEqual(grants, [{ grantee: 'service_role', p: 'INSERT,SELECT,UPDATE' }]);
   assert.equal((await db.query(`select relrowsecurity from pg_class where relname='nmls_identity_challenges'`)).rows[0].relrowsecurity, true);
+
+  // 033: the combined return checkpoints become valid names; anything else is still refused.
+  await assert.rejects(insert({ checkpoint: 'final_exam', d3: 'Resuming-FinalExam' }), /check/, 'before 033 the combined name is refused');
+  const combined = read('database/033_nmls_identity_combined_checkpoints.sql'); await db.exec(combined); await db.exec(combined);
+  await insert({ checkpoint: 'final_exam', d3: 'Resuming-FinalExam' }); await insert({ checkpoint: 'middle_1', d3: 'Resuming-Middle#1' });
+  await assert.rejects(insert({ checkpoint: 'begin', d3: 'Resuming-Begin' }), /check/);
 
   // 032: one number per student, assigned once, never changed or reused.
   const identifiers = read('database/032_nmls_biosig_identifiers.sql'); await db.exec(identifiers); await db.exec(identifiers);
