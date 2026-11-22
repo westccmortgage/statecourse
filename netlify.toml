@@ -155,6 +155,11 @@
   status = 200
 
 [[redirects]]
+  from = "/admin/visitors"
+  to = "/admin/visitors/index.html"
+  status = 200
+
+[[redirects]]
   from = "/student"
   to = "/student/index.html"
   status = 200
@@ -297,6 +302,11 @@
 [[redirects]]
   from = "/api/admin/ai-revenue"
   to = "/.netlify/functions/admin-ai-revenue"
+  status = 200
+
+[[redirects]]
+  from = "/api/admin/site-report"
+  to = "/.netlify/functions/admin-site-report"
   status = 200
 
 [[redirects]]

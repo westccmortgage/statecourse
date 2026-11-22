@@ -10,6 +10,10 @@ mkdir -p dist/content/curriculum dist/content/reference dist/content/california
 
 cp -R public/statecourse/. dist/
 cp dist/student/course/index.html dist/student-course.html
+# Visit counting is added to the built public pages only; see the script for what is excluded.
+node scripts/inject-site-analytics.mjs dist
+test -f dist/analytics.js
+test -f dist/analytics.css
 
 if [[ -d virginia/curriculum ]]; then
   cp virginia/curriculum/module-*.md dist/content/curriculum/

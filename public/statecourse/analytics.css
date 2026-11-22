@@ -1,0 +1,10 @@
+/* Cookie choice notice. Kept in its own file because the site allows no inline styles. */
+.sc-cookie-notice { position: fixed; left: 16px; right: 16px; bottom: 16px; z-index: 2147483000; display: flex; flex-wrap: wrap; gap: 12px 24px; align-items: center; justify-content: space-between; max-width: 960px; margin: 0 auto; padding: 16px 20px; border: 1px solid #08102b; background: #fffdf8; color: #33424f; font: 14px/1.5 Inter, Arial, "Helvetica Neue", sans-serif; box-shadow: 0 6px 24px rgba(8, 16, 43, .18); }
+.sc-cookie-notice p { flex: 1 1 380px; margin: 0; }
+.sc-cookie-notice a { color: #08102b; font-weight: 700; text-decoration: underline; }
+.sc-cookie-actions { display: flex; gap: 10px; }
+.sc-cookie-button { min-width: 104px; height: 40px; padding: 0 18px; border: 1px solid #08102b; background: #fffdf8; color: #08102b; font: inherit; font-weight: 700; cursor: pointer; }
+.sc-cookie-button:hover, .sc-cookie-button:focus-visible { background: #08102b; color: #fff; }
+.sc-cookie-button:focus-visible { outline: 3px solid #c7a259; outline-offset: 2px; }
+@media (max-width: 520px) { .sc-cookie-actions { width: 100%; } .sc-cookie-button { flex: 1; } }
+@media print { .sc-cookie-notice { display: none; } }
