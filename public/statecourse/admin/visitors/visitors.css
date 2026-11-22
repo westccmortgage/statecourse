@@ -1,0 +1,4 @@
+.visitors-section { margin-top: 28px; }
+.visitors-section h2 { margin: 0 0 8px; font-size: 18px; }
+.visitors-note { color: #5d6a75; font-size: 13px; }
+#visitorsForm { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
