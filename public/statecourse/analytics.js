@@ -40,7 +40,7 @@
       /* text/plain keeps this a simple same-origin request; keepalive lets it finish if the
          visitor leaves the page straight away. */
       fetch("/api/collect", { method: "POST", keepalive: true, credentials: "omit", headers: { "content-type": "text/plain" }, body: body }).catch(function () {});
-    } catch (error) { /* counting a visit must never affect the page */ }
+    } catch { /* counting a visit must never affect the page */ }
   }
 
   function closeNotice() {

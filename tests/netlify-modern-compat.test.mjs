@@ -18,7 +18,7 @@ test('every migrated HTTP endpoint retains the same method rejection without ext
    for(const [key,value] of Object.entries(expected.headers??{}))assert.equal(actual.headers.get(key),String(value),name+': '+key);
    checked++;
   }
-  assert.equal(checked,28);assert.equal(calls,0);
+  assert.equal(checked,29);assert.equal(calls,0);
  }finally{globalThis.fetch=prior;}
 });
 test('transport preserves signed JSON bytes, auth/cookie headers, repeated queries and multiple response cookies',async()=>{
