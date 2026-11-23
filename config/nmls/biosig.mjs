@@ -52,7 +52,7 @@ function inboundUrl(value) {
 // application number, which BSI has been asked to confirm.
 export function nmlsBiosigCourseFields(now = new Date()) {
   return Object.freeze({
-    ls: NMLS_TRAINING_COURSE.providerId,
+    ls: 'NMLS#' + NMLS_TRAINING_COURSE.providerId,
     as: 'CE-course',
     d1: String(now.getUTCFullYear()),
     d2: NMLS_TRAINING_COURSE.courseApprovalId || NMLS_CREDIT_REVIEW.applicationId,
