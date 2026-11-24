@@ -131,7 +131,7 @@ test('the NMLS argument string: generic fields, then NMLS fields, then our refer
   const now = new Date('2026-11-23T18:00:00.000Z');
   const args = buildNmlsArgumentString(ready(), { email: 'ana@example.test', firstName: 'Ana', lastName: 'Lee', uid: '1234567', d3: 'Middle#1', challengeId: 'ref-1' }, now);
   assert.equal(args, 'ts=2026-11-23T18:00:00.000Z&sc=SC&sid=SID&cid=CID&lc=en_US&nw=false&em=ana@example.test&fn=Ana&ln=Lee&uid=1234567' +
-    '&ls=1405133&as=CE-course&d1=2026&d2=109386&d3=Middle#1&d4=8 Hour SAFE Comprehensive: 2026 Mortgage Continuing Education&d5=8&statecourse_ref=ref-1');
+    '&ls=NMLS#1405133&as=CE-course&d1=2026&d2=109386&d3=Middle#1&d4=8 Hour SAFE Comprehensive: 2026 Mortgage Continuing Education&d5=8&statecourse_ref=ref-1');
   assert.deepEqual(nmlsBiosigCourseFields(new Date('2027-01-02T00:00:00Z')).d1, '2027');
   // A value cannot smuggle in another field.
   const hostile = buildNmlsArgumentString(ready(), { email: 'a@b.c', firstName: 'Ana&vs=True', lastName: 'Lee=x', uid: '1', d3: 'Begin', challengeId: 'r' }, now);
@@ -371,7 +371,7 @@ test('HTTP: start a check, then BSI\'s simulated success and failure callbacks',
     assert.equal(sent.pathname, '/interface/standard/partner/SSOInbound.aspx');
     const keyed = decryptCallbackArgs(ready(), sent.searchParams.get('args'));
     assert.equal(keyed.uid, 'StateCourse-001', 'a reviewer is a test account: the real-looking NMLS ID in its profile is not sent');
-    assert.equal(table.rows[0].uid, 'StateCourse-001'); assert.equal(keyed.d3, 'Begin'); assert.equal(keyed.ls, '1405133'); assert.equal(keyed.d2, '109386'); assert.equal(keyed.d5, '8');
+    assert.equal(table.rows[0].uid, 'StateCourse-001'); assert.equal(keyed.d3, 'Begin'); assert.equal(keyed.ls, 'NMLS#1405133'); assert.equal(keyed.d2, '109386'); assert.equal(keyed.d5, '8');
     assert.equal(keyed.em, 'closed-reviewer@example.test'); assert.equal(keyed.fn, 'Closed');
     assert.equal(table.rows.length, 1); assert.equal(table.rows[0].status, 'pending'); assert.equal(keyed[CHALLENGE_ARGUMENT], table.rows[0].id);
     assert.equal(response.headers.get('cache-control'), 'no-store, private');

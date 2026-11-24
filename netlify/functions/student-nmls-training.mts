@@ -33,7 +33,15 @@ export default async function handler(request: Request): Promise<Response> {
     finally { reader?.releaseLock(); }
     const auth = await requireStudentSession(event);
     if (auth.refreshedSession) for (const cookie of sessionCookies(auth.refreshedSession)) headers.append('set-cookie', cookie);
-    const result = await executeNmlsTraining(input, auth.student.id, { rpc });
+    const trainingRpc: typeof rpc = async (name, args) => {
+      const result = await rpc(name, args);
+      // Closed reviewer sessions must use the course route with its identity checks.
+      if (name === 'nmls_training_context' && result?.reviewRole === 'student_reviewer') {
+        throw new Error('nmls_training_access_denied');
+      }
+      return result;
+    };
+    const result = await executeNmlsTraining(input, auth.student.id, { rpc: trainingRpc });
     return reply(result.status, await withNmlsMedia(result.body));
   } catch (error) {
     const result = nmlsTrainingPublicError(error); return reply(result.status, result.body);

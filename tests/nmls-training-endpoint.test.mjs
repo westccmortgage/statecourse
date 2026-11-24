@@ -68,6 +68,25 @@ test('free-training HTTP keeps actual student authentication and strict private 
       }
     } finally {snapshot.reviewRole=null;}
   });
+  await t.test('closed reviewers are refused before free-training content or writes', async () => {
+    snapshot.reviewRole = 'student_reviewer';
+    try {
+      const command = { enrollmentId, eventId: randomUUID(), expectedRevision: 0 };
+      for (const body of [
+        input,
+        { operation: 'teaching', command: { ...command, action: { kind: 'resume', sessionId: null } } },
+        { operation: 'issue_assessment', command },
+      ]) {
+        calls = [];
+        const denied = await handler(request(body));
+        assert.equal(denied.status, 403);
+        assert.deepEqual(await denied.json(), { error: 'nmls_training_access_denied' });
+        assert.deepEqual(calls, ['/auth/v1/user', '/rest/v1/students', '/rest/v1/rpc/nmls_training_context']);
+      }
+    } finally {
+      snapshot.reviewRole = null;
+    }
+  });
   await t.test('method, origin, type and malformed UTF8/JSON fail before auth', async () => {
     const headers = { origin, 'content-type': 'application/json', authorization: 'Bearer fixture' };
     for (const [req, status] of [
