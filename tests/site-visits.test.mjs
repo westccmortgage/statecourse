@@ -220,6 +220,7 @@ test('native school notifications use a detected form, bounded destination and r
   assert.equal(options.redirect, 'follow'); assert.equal(options.headers['content-type'], 'application/x-www-form-urlencoded');
   assert.equal(options.headers.authorization, undefined);
   assert.equal(fields.get('form-name'), 'statecourse-daily-reports');
+  assert.equal(fields.get('email'), 'info@statecourse.com');
   assert.equal(fields.get('bot-field'), ''); assert.equal(fields.get('day'), report.day);
   assert.match(fields.get('subject'), /17 visitors/); assert.match(fields.get('message'), /People\t17\t41/);
   assert.match(fields.get('message'), /google.com/); assert.doesNotMatch(fields.get('message'), /<table|<div|<td/);

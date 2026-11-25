@@ -123,7 +123,8 @@ export async function emailDailyReport(report, { env = process.env, fetcher = gl
       method: 'POST', redirect: 'follow', signal: AbortSignal.timeout(15000),
       headers: { 'content-type': 'application/x-www-form-urlencoded' },
       body: new URLSearchParams({ 'form-name': 'statecourse-daily-reports', 'bot-field': '',
-        name: `StateCourse daily report — ${report.day}`, subject, day: report.day, message: reportText(html) }).toString(),
+        name: `StateCourse daily report — ${report.day}`, email: 'info@statecourse.com', subject, day: report.day,
+        message: `This is the StateCourse daily visitor and student activity report. All times are Pacific.\n\n${reportText(html)}` }).toString(),
     });
     if (!response.ok) throw new Error(`report_email_failed:${response.status}`);
     return true;
