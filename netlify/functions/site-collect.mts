@@ -1,6 +1,6 @@
 import { createHmac } from 'node:crypto';
 import { dbRequest } from './_lib/db.mjs';
-import { buildVisit } from './_lib/site/visit.mjs';
+import { buildVisit, siteConfiguration, siteFailure } from './_lib/site/visit.mjs';
 
 // Records one page visit. Called by /analytics.js on public pages, and by a 1x1 image
 // for clients that do not run scripts. It never returns data, never sets a cookie, and
@@ -30,7 +30,10 @@ export default async function handler(request: Request, context: Context = {}): 
     } else { input = { p: url.searchParams.get('p'), r: request.headers.get('referer') }; scriptRan = false; }
 
     const database = String(process.env.SUPABASE_SERVICE_ROLE_KEY || '').trim();
-    if (!database) return done();
+    if (!database) {
+      console.error('Site visit storage failed', { reason: 'database_not_configured', ...siteConfiguration(process.env) });
+      return done();
+    }
     const visit = buildVisit(input, {
       userAgent: request.headers.get('user-agent') || '', ip: context.ip || '', geo: context.geo, siteHost: url.hostname.replace(/^www\./, ''), scriptRan,
       globalPrivacyControl: request.headers.get('sec-gpc') === '1',
@@ -39,6 +42,10 @@ export default async function handler(request: Request, context: Context = {}): 
       secret: createHmac('sha256', database).update('site-visit-day-hash').digest('hex'),
     });
     if (visit) await dbRequest('site_visits', { method: 'POST', prefer: 'return=minimal', body: visit });
-  } catch { /* counting visits must never break a page */ }
+  } catch (error) {
+    // Bad client input stays quiet. Storage failures are visible to the owner,
+    // while the page still gets no database detail or visitor data in response.
+    if (!(error instanceof SyntaxError)) console.error('Site visit storage failed', { reason: siteFailure(error), ...siteConfiguration(process.env) });
+  }
   return done();
 }

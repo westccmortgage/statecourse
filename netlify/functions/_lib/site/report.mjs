@@ -1,4 +1,5 @@
 import { dbRequest, rpc } from '../db.mjs';
+import { siteFailure } from './visit.mjs';
 
 // The daily visit report: one calendar day in Pacific time, built from the visit table
 // and from the account activity the site already records.
@@ -61,8 +62,8 @@ async function accountActivity({ from, to }, request) {
 export async function buildDailyReport(day, { request = dbRequest, call = rpc } = {}) {
   const window = pacificDayWindow(day);
   const [visits, accounts] = await Promise.all([
-    call('site_visit_report', { p_from: window.from.toISOString(), p_to: window.to.toISOString() }).then(data => ({ available: true, ...data }), () => ({ available: false })),
-    accountActivity(window, request).then(data => ({ available: true, ...data }), () => ({ available: false })),
+    call('site_visit_report', { p_from: window.from.toISOString(), p_to: window.to.toISOString() }).then(data => ({ available: true, ...data }), error => ({ available: false, error: siteFailure(error) })),
+    accountActivity(window, request).then(data => ({ available: true, ...data }), error => ({ available: false, error: siteFailure(error) })),
   ]);
   return { day, timeZone: ZONE, from: window.from.toISOString(), to: window.to.toISOString(), visits, accounts };
 }

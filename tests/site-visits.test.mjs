@@ -3,10 +3,11 @@ import assert from 'node:assert/strict';
 import { randomUUID } from 'node:crypto';
 import { readFileSync } from 'node:fs';
 import { pathToFileURL } from 'node:url';
-import { browserOf, buildVisit, classifyVisitor, dayHash, deviceOf, publicPath, sourceOf } from '../netlify/functions/_lib/site/visit.mjs';
+import { browserOf, buildVisit, classifyVisitor, dayHash, deviceOf, publicPath, sourceOf, siteConfiguration, siteFailure } from '../netlify/functions/_lib/site/visit.mjs';
 import { buildDailyReport, emailDailyReport, pacificDay, pacificDayWindow, previousPacificDay, renderDailyReport } from '../netlify/functions/_lib/site/report.mjs';
 import { countsVisits, injectInto, pagePath } from '../scripts/inject-site-analytics.mjs';
 import collect, { config as collectConfig } from '../netlify/functions/site-collect.mts';
+import dailyReport from '../netlify/functions/site-daily-report.mts';
 
 const read = path => readFileSync(new URL(`../${path}`, import.meta.url), 'utf8');
 const CHROME = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36';
@@ -171,8 +172,8 @@ test('the daily report joins visits with account activity, and says plainly when
   assert.doesNotMatch(hostile, /<img/); assert.match(hostile, /&lt;img src=x/);
 
   // Visit table not installed: the account half still arrives and the gap is stated.
-  const partial = await buildDailyReport('2026-11-21', { request, call: async () => { throw new Error('relation does not exist'); } });
-  assert.deepEqual(partial.visits, { available: false }); assert.equal(partial.accounts.available, true);
+  const partial = await buildDailyReport('2026-11-21', { request, call: async () => { throw new Error('relation site_visits does not exist'); } });
+  assert.deepEqual(partial.visits, { available: false, error: 'database_schema_missing' }); assert.equal(partial.accounts.available, true);
   const rendered = renderDailyReport(partial);
   assert.equal(rendered.subject, 'StateCourse 2026-11-21: visit counting not available'); assert.match(rendered.html, /Visit counting is not available/); assert.match(rendered.html, /Ana Lee/);
   const none = await buildDailyReport('2026-11-21', { request: async () => { throw new Error('down'); }, call: async () => { throw new Error('down'); } });
@@ -263,4 +264,60 @@ test('migration 034: the visit table and the report it produces', { skip: proces
   const grants = (await db.query(`select table_name t, grantee g, string_agg(privilege_type, ',' order by privilege_type) p from information_schema.role_table_grants where table_name in ('site_visits','site_daily_reports') and grantee in ('service_role','anon','authenticated','PUBLIC') group by 1,2 order by 1`)).rows;
   assert.deepEqual(grants, [{ t: 'site_daily_reports', g: 'service_role', p: 'INSERT,SELECT,UPDATE' }, { t: 'site_visits', g: 'service_role', p: 'DELETE,INSERT,SELECT' }]);
   assert.deepEqual((await db.query(`select relname, relrowsecurity from pg_class where relname in ('site_visits','site_daily_reports') order by 1`)).rows.map(x => x.relrowsecurity), [true, true]);
+});
+
+
+test('operational diagnostics expose configuration flags and safe failure categories, never credentials or request details', () => {
+  const env = { SUPABASE_URL: 'https://abcdefghijklmnopqrst.supabase.co', SUPABASE_SERVICE_ROLE_KEY: 'secret-database-value', RESEND_API_KEY: 'secret-mail-value' };
+  assert.deepEqual(siteConfiguration(env), { databaseProject: 'abcdefghijklmnopqrst', databaseUrlSet: true, databaseKeySet: true, mailKeySet: true, reportRecipient: 'data@statecourse.com' });
+  assert.doesNotMatch(JSON.stringify(siteConfiguration(env)), /secret-database|secret-mail/);
+  assert.equal(siteConfiguration({ SUPABASE_URL: 'https://user:secret@example.invalid/private?key=secret', SITE_REPORT_TO: 'not-an-address' }).databaseProject, null);
+  assert.equal(siteConfiguration({ SITE_REPORT_TO: 'not-an-address' }).reportRecipient, null);
+  assert.equal(siteFailure(new Error('database_not_configured')), 'database_not_configured');
+  assert.equal(siteFailure(new Error('permission denied for table site_visits')), 'database_permission_denied');
+  assert.equal(siteFailure(new Error('Could not find the table public.site_visits in the schema cache')), 'database_schema_missing');
+  assert.equal(siteFailure(new Error('private-token user@example.test 203.0.113.9')), 'database_unavailable');
+});
+
+test('a scheduled report fails visibly on missing mail, denied storage or provider failure, while retaining whichever half succeeds', async t => {
+  const keys = ['SUPABASE_URL', 'SUPABASE_SERVICE_ROLE_KEY', 'RESEND_API_KEY', 'SITE_REPORT_TO'];
+  const before = Object.fromEntries(keys.map(key => [key, process.env[key]]));
+  const originalFetch = globalThis.fetch, originalError = console.error;
+  t.after(() => {
+    globalThis.fetch = originalFetch; console.error = originalError;
+    for (const key of keys) { if (before[key] === undefined) delete process.env[key]; else process.env[key] = before[key]; }
+  });
+  const logs = []; console.error = (...args) => logs.push(args);
+  Object.assign(process.env, { SUPABASE_URL: 'https://abcdefghijklmnopqrst.supabase.co', SUPABASE_SERVICE_ROLE_KEY: 'synthetic-private-db', SITE_REPORT_TO: 'data@statecourse.com' });
+  for (const scenario of ['success', 'missing-mail', 'storage-denied', 'mail-denied']) {
+    if (scenario === 'missing-mail') delete process.env.RESEND_API_KEY;
+    else process.env.RESEND_API_KEY = 'synthetic-private-mail';
+    const saved = [], sent = [];
+    globalThis.fetch = async (url, options = {}) => {
+      const target = new URL(url);
+      if (target.origin === 'https://api.resend.com') {
+        sent.push(JSON.parse(options.body));
+        return new Response('{}', { status: scenario === 'mail-denied' ? 403 : 200 });
+      }
+      assert.equal(target.hostname, 'abcdefghijklmnopqrst.supabase.co');
+      if (target.pathname === '/rest/v1/rpc/site_visit_report') return Response.json(VISITS);
+      if (target.pathname === '/rest/v1/site_daily_reports') {
+        if (scenario === 'storage-denied') return Response.json({ message: 'permission denied for table site_daily_reports' }, { status: 403 });
+        saved.push(JSON.parse(options.body)); return new Response(null, { status: 201 });
+      }
+      if (target.pathname === '/rest/v1/students' || target.pathname === '/rest/v1/student_portal_events') return Response.json([]);
+      throw new Error('Unexpected test URL');
+    };
+    const response = await dailyReport();
+    assert.equal(response.status, scenario === 'success' ? 200 : 503, scenario);
+    const result = await response.json();
+    assert.equal(result.stored, scenario !== 'storage-denied', scenario);
+    assert.equal(result.emailed, scenario === 'success' || scenario === 'storage-denied', scenario);
+    assert.equal(sent.length, scenario === 'missing-mail' ? 0 : 1, scenario);
+    if (scenario !== 'storage-denied') assert.equal(Boolean(saved[0].emailed_at), result.emailed);
+  }
+  assert.ok(logs.some(args => args[0] === 'Daily site report email not configured'));
+  assert.ok(logs.some(args => args[1]?.reason === 'database_permission_denied'));
+  assert.ok(logs.some(args => args[1]?.reason === 'report_email_failed:403'));
+  assert.doesNotMatch(JSON.stringify(logs), /synthetic-private-db|synthetic-private-mail/);
 });

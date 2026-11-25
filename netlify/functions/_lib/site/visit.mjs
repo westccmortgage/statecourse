@@ -6,6 +6,28 @@ import { createHmac } from 'node:crypto';
 const clip = (value, max) => typeof value === 'string' ? value.replace(/[\u0000-\u001f\u007f]/g, '').trim().slice(0, max) : '';
 const label = (value, max = 80) => { const text = clip(value, max); return /^[\w .:+\-/]+$/.test(text) ? text : null; };
 
+// Safe operational diagnostics, never request data, addresses or credential values.
+export function siteFailure(error) {
+  const message = String(error?.message || '');
+  if (message === 'database_not_configured') return 'database_not_configured';
+  if (/permission denied|insufficient privilege/i.test(message)) return 'database_permission_denied';
+  if (/could not find (?:the )?(?:table|function)|relation .+ does not exist|function .+ does not exist/i.test(message)) return 'database_schema_missing';
+  return 'database_unavailable';
+}
+
+export function siteConfiguration(env = {}) {
+  let databaseProject = null;
+  try {
+    const host = new URL(String(env.SUPABASE_URL || '').trim()).hostname;
+    if (/^[a-z0-9]{20}\.supabase\.co$/.test(host)) databaseProject = host.split('.')[0];
+  } catch { /* only a public project identifier may be logged */ }
+  const recipient = String(env.SITE_REPORT_TO || '').trim() || 'data@statecourse.com';
+  return { databaseProject, databaseUrlSet: Boolean(String(env.SUPABASE_URL || '').trim()),
+    databaseKeySet: Boolean(String(env.SUPABASE_SERVICE_ROLE_KEY || '').trim()),
+    mailKeySet: Boolean(String(env.RESEND_API_KEY || '').trim()),
+    reportRecipient: /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(recipient) ? recipient : null };
+}
+
 // Clients that name themselves as automated. Order matters: the first match names the bot.
 const NAMED_BOTS = [
   ['Googlebot', /googlebot|google-inspectiontool|googleother|adsbot-google|mediapartners-google|google-extended|storebot-google/i],
