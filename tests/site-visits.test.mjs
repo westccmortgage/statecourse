@@ -4,7 +4,7 @@ import { randomUUID } from 'node:crypto';
 import { readFileSync } from 'node:fs';
 import { pathToFileURL } from 'node:url';
 import { browserOf, buildVisit, classifyVisitor, dayHash, deviceOf, publicPath, sourceOf, siteConfiguration, siteFailure } from '../netlify/functions/_lib/site/visit.mjs';
-import { buildDailyReport, emailDailyReport, pacificDay, pacificDayWindow, previousPacificDay, renderDailyReport } from '../netlify/functions/_lib/site/report.mjs';
+import { buildDailyReport, emailDailyReport, pacificDay, pacificDayWindow, previousPacificDay, renderDailyReport, reportMailConfigured } from '../netlify/functions/_lib/site/report.mjs';
 import { countsVisits, injectInto, pagePath } from '../scripts/inject-site-analytics.mjs';
 import collect, { config as collectConfig } from '../netlify/functions/site-collect.mts';
 import dailyReport from '../netlify/functions/site-daily-report.mts';
@@ -150,8 +150,8 @@ const VISITS = { people: { views: 41, visitors: 17 }, bots: { views: 230, client
 test('the daily report joins visits with account activity, and says plainly when a half is missing', async () => {
   const studentId = randomUUID();
   const request = async path => {
-    if (path.startsWith('student_portal_events?')) { assert.match(path, /created_at=gte\.2026-11-21T08%3A00%3A00\.000Z&created_at=lt\.2026-11-22T08%3A00%3A00\.000Z/);
-      return [{ student_id: studentId, event_type: 'portal_opened', created_at: '2026-11-21T18:00:00Z' }, { student_id: studentId, event_type: 'course_resume_clicked', created_at: '2026-11-21T18:05:00Z' }]; }
+    if (path.startsWith('student_portal_events?')) { assert.match(path, /occurred_at=gte\.2026-11-21T08%3A00%3A00\.000Z&occurred_at=lt\.2026-11-22T08%3A00%3A00\.000Z/); assert.match(path, /select=student_id,event_type,occurred_at&order=occurred_at.asc/); assert.doesNotMatch(path, /created_at/);
+      return [{ student_id: studentId, event_type: 'portal_opened', occurred_at: '2026-11-21T18:00:00Z' }, { student_id: studentId, event_type: 'course_resume_clicked', occurred_at: '2026-11-21T18:05:00Z' }]; }
     if (path.startsWith('students?created_at=')) return [{ id: randomUUID(), email: 'new@example.test', first_name: 'New', last_name: 'Student', created_at: '2026-11-21T20:00:00Z' }];
     if (path.startsWith('students?id=in.')) return [{ id: studentId, email: 'ana@example.test', first_name: 'Ana', last_name: 'Lee' }];
     throw new Error(`unexpected ${path}`);
@@ -197,13 +197,37 @@ test('counting is added to public pages and to nothing private', () => {
   for (const page of ['index.html', 'mortgage/index.html', 'free-practice/index.html', 'privacy/index.html', 'real-estate/california/index.html',
     'student/index.html', 'student/sign-in/index.html', 'student/register/index.html', 'student/free-training/index.html']) assert.equal(countsVisits(page), true, page);
   for (const page of ['admin/console/index.html', 'admin/visitors/index.html', 'staff/index.html', 'student/course/index.html', 'student/final-exam/index.html', 'student/nmls-course/index.html',
-    'student/nmls-training/index.html', 'student/password/index.html', 'student-course.html', 'content/x.html', 'analytics.js', 'data/x.json']) assert.equal(countsVisits(page), false, page);
+    'student/nmls-training/index.html', 'student/password/index.html', 'site-report-notification-form/index.html', 'student-course.html', 'content/x.html', 'analytics.js', 'data/x.json']) assert.equal(countsVisits(page), false, page);
   assert.equal(pagePath('index.html'), '/'); assert.equal(pagePath('mortgage/index.html'), '/mortgage/'); assert.equal(pagePath('a/b.html'), '/a/b.html');
   const page = '<!doctype html><html><head><title>x</title></head><body><main>y</main></body></html>', out = injectInto(page, 'mortgage/index.html');
   assert.match(out, /<link rel="stylesheet" href="\/analytics\.css"\/><script src="\/analytics\.js" defer><\/script><\/head>/);
   assert.match(out, /<noscript><img src="\/api\/collect\?p=%2Fmortgage%2F" width="1" height="1" alt=""\/><\/noscript><\/body>/);
   assert.equal(injectInto(out, 'mortgage/index.html'), out, 'adding twice changes nothing');
   assert.equal(injectInto('<p>fragment</p>', 'x.html'), '<p>fragment</p>');
+});
+
+test('native school notifications use a detected form, bounded destination and readable report, without a mail key', async () => {
+  const report = { day: '2026-11-21', visits: { available: true, ...VISITS }, accounts: { available: true, activeStudents: 0, students: [], registrations: [] } };
+  const env = { SITE_REPORT_DELIVERY: 'netlify-forms', SITE_REPORT_TO: 'info@statecourse.com' };
+  assert.equal(reportMailConfigured(env), true);
+  assert.equal(reportMailConfigured({}), false);
+  const sent = [];
+  assert.equal(await emailDailyReport(report, { env, fetcher: async (url, options) => {
+    sent.push([url, options]); return new Response('Thank you', { status: 200 });
+  } }), true);
+  const [url, options] = sent[0], fields = new URLSearchParams(options.body);
+  assert.equal(url, 'https://statecourse.com/site-report-notification-form/');
+  assert.equal(options.redirect, 'follow'); assert.equal(options.headers['content-type'], 'application/x-www-form-urlencoded');
+  assert.equal(options.headers.authorization, undefined);
+  assert.equal(fields.get('form-name'), 'statecourse-daily-reports');
+  assert.equal(fields.get('bot-field'), ''); assert.equal(fields.get('day'), report.day);
+  assert.match(fields.get('subject'), /17 visitors/); assert.match(fields.get('message'), /People\t17\t41/);
+  assert.match(fields.get('message'), /google.com/); assert.doesNotMatch(fields.get('message'), /<table|<div|<td/);
+  const skeleton = read('public/statecourse/site-report-notification-form/index.html');
+  assert.match(skeleton, /name="statecourse-daily-reports" method="POST" data-netlify="true"/);
+  for (const field of fields.keys()) assert.ok(skeleton.includes(`name="${field}"`), field);
+  assert.match(skeleton, /noindex,nofollow/);
+  await assert.rejects(() => emailDailyReport(report, { env, fetcher: async () => new Response('', { status: 500 }) }), /report_email_failed:500/);
 });
 
 test('the page script is first-party, sets nothing before a choice, and offers Decline as plainly as Accept', () => {
@@ -280,13 +304,14 @@ test('operational diagnostics expose configuration flags and safe failure catego
 });
 
 test('a scheduled report fails visibly on missing mail, denied storage or provider failure, while retaining whichever half succeeds', async t => {
-  const keys = ['SUPABASE_URL', 'SUPABASE_SERVICE_ROLE_KEY', 'RESEND_API_KEY', 'SITE_REPORT_TO'];
+  const keys = ['SUPABASE_URL', 'SUPABASE_SERVICE_ROLE_KEY', 'RESEND_API_KEY', 'SITE_REPORT_TO', 'SITE_REPORT_DELIVERY'];
   const before = Object.fromEntries(keys.map(key => [key, process.env[key]]));
   const originalFetch = globalThis.fetch, originalError = console.error;
   t.after(() => {
     globalThis.fetch = originalFetch; console.error = originalError;
     for (const key of keys) { if (before[key] === undefined) delete process.env[key]; else process.env[key] = before[key]; }
   });
+  delete process.env.SITE_REPORT_DELIVERY;
   const logs = []; console.error = (...args) => logs.push(args);
   Object.assign(process.env, { SUPABASE_URL: 'https://abcdefghijklmnopqrst.supabase.co', SUPABASE_SERVICE_ROLE_KEY: 'synthetic-private-db', SITE_REPORT_TO: 'data@statecourse.com' });
   for (const scenario of ['success', 'missing-mail', 'storage-denied', 'mail-denied']) {

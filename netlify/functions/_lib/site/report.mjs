@@ -34,17 +34,17 @@ const name = student => [student?.first_name, student?.last_name].filter(Boolean
 
 // Who signed in and what they did, from records the student portal already keeps.
 async function accountActivity({ from, to }, request) {
-  const range = `gte.${encodeURIComponent(from.toISOString())}&created_at=lt.${encodeURIComponent(to.toISOString())}`;
+  const range = column => `${column}=gte.${encodeURIComponent(from.toISOString())}&${column}=lt.${encodeURIComponent(to.toISOString())}`;
   const [events, registered] = await Promise.all([
-    request(`student_portal_events?created_at=${range}&select=student_id,event_type,created_at&order=created_at.asc&limit=5000`),
-    request(`students?created_at=${range}&select=id,email,first_name,last_name,created_at&order=created_at.asc&limit=500`),
+    request(`student_portal_events?${range('occurred_at')}&select=student_id,event_type,occurred_at&order=occurred_at.asc&limit=5000`),
+    request(`students?${range('created_at')}&select=id,email,first_name,last_name,created_at&order=created_at.asc&limit=500`),
   ]);
   const byStudent = new Map();
   for (const event of events || []) {
-    const entry = byStudent.get(event.student_id) || { studentId: event.student_id, visits: 0, coursesOpened: 0, last: event.created_at };
+    const entry = byStudent.get(event.student_id) || { studentId: event.student_id, visits: 0, coursesOpened: 0, last: event.occurred_at };
     if (event.event_type === 'portal_opened') entry.visits++;
     if (event.event_type === 'course_resume_clicked') entry.coursesOpened++;
-    entry.last = event.created_at; byStudent.set(event.student_id, entry);
+    entry.last = event.occurred_at; byStudent.set(event.student_id, entry);
   }
   const ids = [...byStudent.keys()].slice(0, 200);
   const profiles = ids.length ? await request(`students?id=in.(${ids.map(encodeURIComponent).join(',')})&select=id,email,first_name,last_name&limit=200`) : [];
@@ -102,11 +102,34 @@ export function renderDailyReport(report) {
   return { subject, html: `<div style="font-family:Arial,Helvetica,sans-serif;color:#33424f;max-width:720px">${body.join('')}</div>` };
 }
 
-// Sends through Resend. Returns false, without sending, when no key is configured.
+export function reportMailConfigured(env = process.env) {
+  return env.SITE_REPORT_DELIVERY === 'netlify-forms' || Boolean(String(env.RESEND_API_KEY || '').trim());
+}
+
+// Plain text for the school's existing Netlify email notifications. Input is the
+// controlled, escaped HTML above; only its table and paragraph formatting is removed.
+function reportText(html) {
+  return html.replace(/<\/(?:th|td)>/g, '\t').replace(/<\/(?:tr|h2|p)>/g, '\n')
+    .replace(/<[^>]*>/g, '').replace(/\t+\n/g, '\n')
+    .replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/&amp;/g, '&').trim();
+}
+
+// Explicit native delivery reuses the school's verified info@ notification; otherwise
+// retain the existing Resend transport. Recipients cannot be supplied by a visitor.
 export async function emailDailyReport(report, { env = process.env, fetcher = globalThis.fetch } = {}) {
+  const { subject, html } = renderDailyReport(report);
+  if (env.SITE_REPORT_DELIVERY === 'netlify-forms') {
+    const response = await fetcher('https://statecourse.com/site-report-notification-form/', {
+      method: 'POST', redirect: 'follow', signal: AbortSignal.timeout(15000),
+      headers: { 'content-type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams({ 'form-name': 'statecourse-daily-reports', 'bot-field': '',
+        name: `StateCourse daily report — ${report.day}`, subject, day: report.day, message: reportText(html) }).toString(),
+    });
+    if (!response.ok) throw new Error(`report_email_failed:${response.status}`);
+    return true;
+  }
   const key = String(env.RESEND_API_KEY || '').trim();
   if (!key) return false;
-  const { subject, html } = renderDailyReport(report);
   const response = await fetcher('https://api.resend.com/emails', { method: 'POST', signal: AbortSignal.timeout(15000),
     headers: { authorization: `Bearer ${key}`, 'content-type': 'application/json' },
     body: JSON.stringify({ from: String(env.SITE_REPORT_FROM || '').trim() || 'StateCourse Reports <reports@statecourse.com>',

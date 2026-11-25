@@ -13,6 +13,7 @@ const ACCOUNT_PAGES = new Set(['student/index.html', 'student/sign-in/index.html
 export function countsVisits(relative) {
   const file = relative.split(path.sep).join('/');
   if (!file.endsWith('.html')) return false;
+  if (file === 'site-report-notification-form/index.html') return false;
   if (/^(admin|staff|content)\//.test(file) || file === 'student-course.html') return false;
   return file.startsWith('student/') ? ACCOUNT_PAGES.has(file) : true;
 }

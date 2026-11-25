@@ -1,5 +1,5 @@
 import { dbRequest } from './_lib/db.mjs';
-import { buildDailyReport, emailDailyReport, previousPacificDay } from './_lib/site/report.mjs';
+import { buildDailyReport, emailDailyReport, previousPacificDay, reportMailConfigured } from './_lib/site/report.mjs';
 import { siteConfiguration, siteFailure } from './_lib/site/visit.mjs';
 
 // Every morning: build yesterday's report (Pacific time), keep a copy, and email it.
@@ -12,7 +12,7 @@ export default async function dailyReport() {
     const code = String((error as Error)?.message || '').match(/^report_email_failed:\d{3}$/)?.[0] || 'mail_provider_unavailable';
     console.error('Daily site report email failed', { day: report.day, reason: code });
   }
-  if (!emailed && !String(process.env.RESEND_API_KEY || '').trim()) console.error('Daily site report email not configured', { day: report.day });
+  if (!emailed && !reportMailConfigured()) console.error('Daily site report email not configured', { day: report.day });
   // A missing table must not stop the email, and a failed email must not lose the copy.
   await dbRequest('site_daily_reports?on_conflict=day', { method: 'POST', prefer: 'resolution=merge-duplicates,return=minimal',
     body: { day: report.day, report, emailed_at: emailed ? new Date().toISOString() : null } })
