@@ -41,10 +41,12 @@ staff pages (`scripts/inject-site-analytics.mjs`).
 
 1. Apply `database/034_site_visits.sql` in the Supabase SQL editor. Until then every
    visit is discarded and the report says visit counting is not available.
-2. In Netlify set `RESEND_API_KEY`. Optional: `SITE_REPORT_TO` (default
-   `data@statecourse.com`), `SITE_REPORT_FROM` (default
-   `StateCourse Reports <reports@statecourse.com>`; the sending domain must be verified
-   in Resend). Without the key no email is sent; the admin page still works.
+2. Configure one mail transport. Production uses `SITE_REPORT_DELIVERY=netlify-forms`
+   and the confirmed native `statecourse-daily-reports` notification to
+   `info@statecourse.com`. Alternatively set `RESEND_API_KEY` with optional
+   `SITE_REPORT_TO` (default `data@statecourse.com`) and `SITE_REPORT_FROM`
+   (default `StateCourse Reports <reports@statecourse.com>`; domain verified in Resend).
+   Without either transport the scheduled job returns 503; the admin page still works.
 3. Redeploy.
 
 ## Retention
@@ -78,5 +80,32 @@ Migration 034 applied successfully in the confirmed website database through its
 editor. Fourteen focused tests passed, including the SQL migration run twice, RLS/grants,
 Pacific day boundaries, account event timestamps, and both email transports/failures.
 
-Verification pending: native form detection/notification,
-controlled visit persisted, scheduled run stored, and actual email receipt.
+Production verification (November 25 UTC / November 24 Pacific):
+
+- Functional commit `843cfecfb9084ebd90c43b3e6dc3f42201252b10`, published deploy
+  `6b067c92baf4bd41ac2a71fa`, ready at 06:14:21 UTC; Netlify production build passed.
+- Catalog checks: both analytics tables have RLS enabled; anon/authenticated cannot
+  read reports; anon cannot execute the report; existing backend role can execute it.
+- Real collector request returned 200 and appeared in `site_visits`. At 06:15 UTC
+  four bot-classified visits were present; no fixture students or historical visits added.
+- Manual scheduled-function run at 06:14:47 UTC: `stored=true`, `emailed=true`,
+  `visits=true`, `accounts=true`. Stored report for Pacific November 23 has
+  `emailed_at=2026-11-25T06:14:47.305Z`. This is the expected previous completed day
+  when testing on Pacific November 24 evening, not the next morning's report.
+- New native form ID `6b067b54e38838b6b82d08f0`, new email hook
+  `6b067b7fcab4d704c0bd300b`, recipient confirmed. Hook is restricted to this form;
+  the pre-existing phone-call notification is unchanged.
+- First native report was spam-filtered and manually marked verified. Added the
+  real school sender field and a descriptive message. The second report passed
+  automatically and reached `info@statecourse.com` INBOX at 06:14:47 UTC, message
+  `1a21157ade236da3`; both report sections present, no missing-data warnings.
+- `GET /api/admin/site-report` without credentials returns 401. `/admin/visitors/`
+  redirects to staff sign-in; MFA remains required. Added Visitors to the existing
+  console navigation. Authenticated dashboard rendering was not exercised in this
+  browser because no owner staff session was present.
+- `NMLS_TEST_PGLITE_MODULE=/tmp/statecourse-visits-tests/node_modules/@electric-sql/pglite/dist/index.js node --test tests/site-visits.test.mjs`:
+  14 passed, 0 failed, 0 skipped, including migration execution and native mail failures.
+
+The next ordinary scheduled run is November 25 at 15:00 UTC (07:00 Pacific), covering
+Pacific November 24. Future delivery/traffic is not guaranteed by this one observed run;
+`emailed_at` records provider acceptance, and mailbox delivery was checked independently.
